@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <DebugType>Full</DebugType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <NoWarn>$(NoWarn);NU5125</NoWarn>
+    <LangVersion>8.0</LangVersion>
+    <EnableCentralPackageVersions>true</EnableCentralPackageVersions>
+    <CentralPackagesFile>$(MSBuildThisFileDirectory)/Packages.props</CentralPackagesFile>
+    <IsTestProject Condition=" $(MSBuildProjectName.EndsWith('.Tests')) ">true</IsTestProject>
+    <RootNamespace>PCSharpGen.$(MSBuildProjectName)</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(IsTestProject)' == 'true' ">
+    <PackageReference Include="FluentAssertions" />
+    <PackageReference Include="Microsoft.CodeCoverage" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Moq" />
+    <PackageReference Include="NUnit" />
+    <PackageReference Include="NUnit3TestAdapter">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
