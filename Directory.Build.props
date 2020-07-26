@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
   <PropertyGroup>
+    <ProjectRelativePath>$([MSBuild]::MakeRelative('$(MSBuildThisFileDirectory)', '$(MSBuildProjectDirectory)\$(MSBuildProjectName)\'))</ProjectRelativePath>
+
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)artifacts\obj\$(ProjectRelativePath)</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)artifacts\bin\$(ProjectRelativePath)</BaseOutputPath>
+
     <DebugType>Full</DebugType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <NoWarn>$(NoWarn);NU5125</NoWarn>
@@ -9,6 +14,9 @@
     <CentralPackagesFile>$(MSBuildThisFileDirectory)/Packages.props</CentralPackagesFile>
     <IsTestProject Condition=" $(MSBuildProjectName.EndsWith('.Tests')) ">true</IsTestProject>
     <RootNamespace>PCSharpGen.$(MSBuildProjectName)</RootNamespace>
+    <Deterministic>true</Deterministic>
+    <PathMap>$(MSBuildThisFileDirectory)=S:\</PathMap>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(IsTestProject)' == 'true' ">
