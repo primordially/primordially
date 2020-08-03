@@ -5,36 +5,6 @@ SetSource({
   SourceDate="2009-08",
 })
 DefineClass({
-  HitDie=12,
-  MaxLevel=20,
-  SkillPointsPerLevel=4,
-  ExClass="Ex-Barbarian",
-  Roles={
-    "Combat",
-    "Skill",
-  },
-  Types={
-    "Base",
-    "PC",
-  },
-  Facts={
-    ClassType="PC",
-    Abb="Brb",
-  },
-  Levels={
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Class",
-          Nature="AUTOMATIC",
-          Name="Barbarian",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-  },
   Name="Barbarian",
   Definitions={
     {
@@ -158,12 +128,10 @@ DefineClass({
       return count >= 1
     end,
   },
-})
-DefineClass({
   HitDie=12,
   MaxLevel=20,
   SkillPointsPerLevel=4,
-  Visible=false,
+  ExClass="Ex-Barbarian",
   Roles={
     "Combat",
     "Skill",
@@ -190,6 +158,8 @@ DefineClass({
       },
     },
   },
+})
+DefineClass({
   Name="Ex-Barbarian",
   Definitions={
     {
@@ -293,8 +263,194 @@ DefineClass({
   },
   WeaponBonusProficiencySelections={
   },
+  HitDie=12,
+  MaxLevel=20,
+  SkillPointsPerLevel=4,
+  Visible=false,
+  Roles={
+    "Combat",
+    "Skill",
+  },
+  Types={
+    "Base",
+    "PC",
+  },
+  Facts={
+    ClassType="PC",
+    Abb="Brb",
+  },
+  Levels={
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="Class",
+          Nature="AUTOMATIC",
+          Name="Barbarian",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+  },
 })
 DefineClass({
+  Name="Bard",
+  SpellStat="CHA",
+  Definitions={
+    {
+      Name="BardLVL",
+      InitialValue=0,
+    },
+    {
+      Name="CasterLevelBLBard",
+      InitialValue=0,
+    },
+  },
+  Bonuses={
+    {
+      Category="COMBAT",
+      Variables={
+        "BASEAB",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="SAVE",
+      Variables={
+        "BASE.Reflex",
+        "BASE.Will",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="SAVE",
+      Variables={
+        "BASE.Fortitude",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassBABModerate",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "BardLVL",
+      },
+      Formula="CL",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSavePoor_Fortitude",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSaveGood_Reflex",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSaveGood_Will",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_BL_Stripped_Bard",
+      },
+      Formula="Caster_Level_Bard-CasterLevelBLBard",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_Bard",
+      },
+      Formula="CL+Caster_Level_Bonus+CasterLevelBLBard",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "CasterLevelBL_x_Bard",
+      },
+      Formula="charbonusto(\"PCLEVEL\",\"Bard\")",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_Highest__Arcane",
+      },
+      Formula="Caster_Level_Bard",
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_Total__Arcane",
+      },
+      Formula="Caster_Level_Bard",
+    },
+    {
+      Category="CASTERLEVEL",
+      Variables={
+        "Bard",
+      },
+      Formula="Caster_Level_BL_Stripped_Bard",
+    },
+  },
+  WeaponBonusProficiencySelections={
+  },
+  SourcePage="p.34",
   HitDie=8,
   MaxLevel=20,
   SkillPointsPerLevel=6,
@@ -660,15 +816,21 @@ DefineClass({
       },
     },
   },
-  Name="Bard",
-  SpellStat="CHA",
+})
+DefineClass({
+  Name="Cleric",
+  SpellStat="WIS",
   Definitions={
     {
-      Name="BardLVL",
+      Name="ClericLVL",
       InitialValue=0,
     },
     {
-      Name="CasterLevelBLBard",
+      Name="ClericDomainCount",
+      InitialValue=0,
+    },
+    {
+      Name="CasterLevelBLCleric",
       InitialValue=0,
     },
   },
@@ -686,9 +848,16 @@ DefineClass({
       },
     },
     {
+      Category="DOMAIN",
+      Variables={
+        "NUMBER",
+      },
+      Formula="ClericDomainCount",
+    },
+    {
       Category="SAVE",
       Variables={
-        "BASE.Reflex",
+        "BASE.Fortitude",
         "BASE.Will",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
@@ -701,7 +870,7 @@ DefineClass({
     {
       Category="SAVE",
       Variables={
-        "BASE.Fortitude",
+        "BASE.Reflex",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
       Conditions={
@@ -725,14 +894,28 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "BardLVL",
+        "ClericLVL",
       },
       Formula="CL",
     },
     {
       Category="VAR",
       Variables={
-        "ClassSavePoor_Fortitude",
+        "DomainLVL",
+      },
+      Formula="ClericLVL",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClericDomainCount",
+      },
+      Formula="2",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSaveGood_Fortitude",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -744,7 +927,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ClassSaveGood_Reflex",
+        "ClassSavePoor_Reflex",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -768,30 +951,30 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "Caster_Level_BL_Stripped_Bard",
+        "Caster_Level_BL_Stripped_Cleric",
       },
-      Formula="Caster_Level_Bard-CasterLevelBLBard",
+      Formula="Caster_Level_Cleric-CasterLevelBLCleric",
     },
     {
       Category="VAR",
       Variables={
-        "Caster_Level_Bard",
+        "Caster_Level_Cleric",
       },
-      Formula="CL+Caster_Level_Bonus+CasterLevelBLBard",
+      Formula="CL+Caster_Level_Bonus+CasterLevelBLCleric",
     },
     {
       Category="VAR",
       Variables={
-        "CasterLevelBL_x_Bard",
+        "CasterLevelBL_x_Cleric",
       },
-      Formula="charbonusto(\"PCLEVEL\",\"Bard\")",
+      Formula="charbonusto(\"PCLEVEL\",\"Cleric\")",
     },
     {
       Category="VAR",
       Variables={
-        "Caster_Level_Highest__Arcane",
+        "Caster_Level_Highest__Divine",
       },
-      Formula="Caster_Level_Bard",
+      Formula="Caster_Level_Cleric",
       Type={
         Name="Base",
         Replace=false,
@@ -799,25 +982,16 @@ DefineClass({
       },
     },
     {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Total__Arcane",
-      },
-      Formula="Caster_Level_Bard",
-    },
-    {
       Category="CASTERLEVEL",
       Variables={
-        "Bard",
+        "Cleric",
       },
-      Formula="Caster_Level_BL_Stripped_Bard",
+      Formula="Caster_Level_BL_Stripped_Cleric",
     },
   },
   WeaponBonusProficiencySelections={
   },
-  SourcePage="p.34",
-})
-DefineClass({
+  SourcePage="p.38",
   HitDie=8,
   MaxLevel=20,
   SkillPointsPerLevel=2,
@@ -845,16 +1019,16 @@ DefineClass({
     SpellType="Divine",
   },
   AutomaticKnownSpells={
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
   },
   Levels={
     {
@@ -1177,19 +1351,17 @@ DefineClass({
       },
     },
   },
-  Name="Cleric",
+})
+DefineClass({
+  Name="Druid",
   SpellStat="WIS",
   Definitions={
     {
-      Name="ClericLVL",
+      Name="DruidLVL",
       InitialValue=0,
     },
     {
-      Name="ClericDomainCount",
-      InitialValue=0,
-    },
-    {
-      Name="CasterLevelBLCleric",
+      Name="CasterLevelBLDruid",
       InitialValue=0,
     },
   },
@@ -1205,13 +1377,6 @@ DefineClass({
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
-    },
-    {
-      Category="DOMAIN",
-      Variables={
-        "NUMBER",
-      },
-      Formula="ClericDomainCount",
     },
     {
       Category="SAVE",
@@ -1253,23 +1418,9 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ClericLVL",
+        "DruidLVL",
       },
       Formula="CL",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "DomainLVL",
-      },
-      Formula="ClericLVL",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClericDomainCount",
-      },
-      Formula="2",
     },
     {
       Category="VAR",
@@ -1310,30 +1461,30 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "Caster_Level_BL_Stripped_Cleric",
+        "Caster_Level_BL_Stripped_Druid",
       },
-      Formula="Caster_Level_Cleric-CasterLevelBLCleric",
+      Formula="Caster_Level_Druid-CasterLevelBLDruid",
     },
     {
       Category="VAR",
       Variables={
-        "Caster_Level_Cleric",
+        "Caster_Level_Druid",
       },
-      Formula="CL+Caster_Level_Bonus+CasterLevelBLCleric",
+      Formula="CL+Caster_Level_Bonus+CasterLevelBLDruid",
     },
     {
       Category="VAR",
       Variables={
-        "CasterLevelBL_x_Cleric",
+        "CasterLevelBL_x_Druid",
       },
-      Formula="charbonusto(\"PCLEVEL\",\"Cleric\")",
+      Formula="charbonusto(\"PCLEVEL\",\"Druid\")",
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Highest__Divine",
       },
-      Formula="Caster_Level_Cleric",
+      Formula="Caster_Level_Druid",
       Type={
         Name="Base",
         Replace=false,
@@ -1343,16 +1494,33 @@ DefineClass({
     {
       Category="CASTERLEVEL",
       Variables={
-        "Cleric",
+        "Druid",
       },
-      Formula="Caster_Level_BL_Stripped_Cleric",
+      Formula="Caster_Level_BL_Stripped_Druid",
     },
   },
   WeaponBonusProficiencySelections={
   },
-  SourcePage="p.38",
-})
-DefineClass({
+  SourcePage="p.48",
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        return character.Alignment == "NG" or character.Alignment == "LN" or character.Alignment == "TN" or character.Alignment == "CN" or character.Alignment == "NE"
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (character)
+        return (character.Variables["BypassClassAlignment_Druid"] == 1)
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
   HitDie=8,
   MaxLevel=20,
   SkillPointsPerLevel=4,
@@ -1379,16 +1547,16 @@ DefineClass({
     },
   },
   AutomaticKnownSpells={
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
   },
   Levels={
     {
@@ -1936,15 +2104,12 @@ DefineClass({
       },
     },
   },
-  Name="Druid",
-  SpellStat="WIS",
+})
+DefineClass({
+  Name="Fighter",
   Definitions={
     {
-      Name="DruidLVL",
-      InitialValue=0,
-    },
-    {
-      Name="CasterLevelBLDruid",
+      Name="FighterLVL",
       InitialValue=0,
     },
   },
@@ -1954,7 +2119,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -1965,7 +2130,6 @@ DefineClass({
       Category="SAVE",
       Variables={
         "BASE.Fortitude",
-        "BASE.Will",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
       Conditions={
@@ -1978,6 +2142,7 @@ DefineClass({
       Category="SAVE",
       Variables={
         "BASE.Reflex",
+        "BASE.Will",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
       Conditions={
@@ -1989,7 +2154,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ClassBABModerate",
+        "ClassBABFull",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -2001,7 +2166,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "DruidLVL",
+        "FighterLVL",
       },
       Formula="CL",
     },
@@ -2032,7 +2197,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ClassSaveGood_Will",
+        "ClassSavePoor_Will",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -2041,71 +2206,10 @@ DefineClass({
         end,
       },
     },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_BL_Stripped_Druid",
-      },
-      Formula="Caster_Level_Druid-CasterLevelBLDruid",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Druid",
-      },
-      Formula="CL+Caster_Level_Bonus+CasterLevelBLDruid",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "CasterLevelBL_x_Druid",
-      },
-      Formula="charbonusto(\"PCLEVEL\",\"Druid\")",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Highest__Divine",
-      },
-      Formula="Caster_Level_Druid",
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="CASTERLEVEL",
-      Variables={
-        "Druid",
-      },
-      Formula="Caster_Level_BL_Stripped_Druid",
-    },
   },
   WeaponBonusProficiencySelections={
   },
-  SourcePage="p.48",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        return character.Alignment == "NG" or character.Alignment == "LN" or character.Alignment == "TN" or character.Alignment == "CN" or character.Alignment == "NE"
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (character)
-        return (character.Variables["BypassClassAlignment_Druid"] == 1)
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-  },
-})
-DefineClass({
+  SourcePage="p.55",
   HitDie=10,
   MaxLevel=20,
   SkillPointsPerLevel=2,
@@ -2571,145 +2675,8 @@ DefineClass({
       },
     },
   },
-  Name="Fighter",
-  Definitions={
-    {
-      Name="FighterLVL",
-      InitialValue=0,
-    },
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-        "BASE.Will",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABFull",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "FighterLVL",
-      },
-      Formula="CL",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Fortitude",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Reflex",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Will",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-  },
-  WeaponBonusProficiencySelections={
-  },
-  SourcePage="p.55",
 })
 DefineClass({
-  HitDie=8,
-  MaxLevel=20,
-  SkillPointsPerLevel=4,
-  Roles={
-    "None",
-  },
-  Types={
-    "Base",
-    "PC",
-  },
-  Facts={
-    ClassType="PC",
-    Abb="Mnk",
-  },
-  Levels={
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Class",
-          Nature="AUTOMATIC",
-          Name="Monk",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      WeaponBonusProficiencySelections={
-      },
-    },
-  },
   Name="Monk",
   Definitions={
     {
@@ -2781,8 +2748,228 @@ DefineClass({
       return count >= 1
     end,
   },
+  HitDie=8,
+  MaxLevel=20,
+  SkillPointsPerLevel=4,
+  Roles={
+    "None",
+  },
+  Types={
+    "Base",
+    "PC",
+  },
+  Facts={
+    ClassType="PC",
+    Abb="Mnk",
+  },
+  Levels={
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="Class",
+          Nature="AUTOMATIC",
+          Name="Monk",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="1",
+      WeaponBonusProficiencySelections={
+      },
+    },
+  },
 })
 DefineClass({
+  Name="Paladin",
+  SpellStat="CHA",
+  Definitions={
+    {
+      Name="PaladinLVL",
+      InitialValue=0,
+    },
+    {
+      Name="PaladinDomainCount",
+      InitialValue=0,
+    },
+    {
+      Name="CasterLevelBLPaladin",
+      InitialValue=0,
+    },
+  },
+  Bonuses={
+    {
+      Category="COMBAT",
+      Variables={
+        "BASEAB",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="DOMAIN",
+      Variables={
+        "NUMBER",
+      },
+      Formula="PaladinDomainCount",
+    },
+    {
+      Category="SAVE",
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Will",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="SAVE",
+      Variables={
+        "BASE.Reflex",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassBABFull",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "PaladinLVL",
+      },
+      Formula="CL",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSaveGood_Fortitude",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSavePoor_Reflex",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSaveGood_Will",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_BL_Stripped_Paladin",
+      },
+      Formula="Caster_Level_Paladin-CasterLevelBLPaladin",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_Paladin",
+      },
+      Formula="CL+Caster_Level_Bonus-3+CasterLevelBLPaladin",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "CasterLevelBL_x_Paladin",
+      },
+      Formula="charbonusto(\"PCLEVEL\",\"Paladin\")",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_Highest__Divine",
+      },
+      Formula="Caster_Level_Paladin",
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+    },
+    {
+      Category="CASTERLEVEL",
+      Variables={
+        "Paladin",
+      },
+      Formula="Caster_Level_BL_Stripped_Paladin",
+      Conditions={
+        function (character)
+          return 1 <= #filter(ipairs(character.ClassLevels),
+          function (class, level)
+            return (class == "Paladin" and level >= 4)
+          end)
+        end,
+      },
+    },
+  },
+  WeaponBonusProficiencySelections={
+  },
+  SourcePage="p.60",
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        return character.Alignment == "LG"
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (character)
+        return (character.Variables["BypassClassAlignment_Paladin"] == 1)
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
   HitDie=10,
   MaxLevel=20,
   SkillPointsPerLevel=2,
@@ -2801,10 +2988,10 @@ DefineClass({
     SpellType="Divine",
   },
   AutomaticKnownSpells={
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
   },
   Levels={
     {
@@ -3308,19 +3495,12 @@ DefineClass({
       },
     },
   },
-  Name="Paladin",
-  SpellStat="CHA",
+})
+DefineClass({
+  Name="Ex-Paladin",
   Definitions={
     {
       Name="PaladinLVL",
-      InitialValue=0,
-    },
-    {
-      Name="PaladinDomainCount",
-      InitialValue=0,
-    },
-    {
-      Name="CasterLevelBLPaladin",
       InitialValue=0,
     },
   },
@@ -3336,13 +3516,6 @@ DefineClass({
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
-    },
-    {
-      Category="DOMAIN",
-      Variables={
-        "NUMBER",
-      },
-      Formula="PaladinDomainCount",
     },
     {
       Category="SAVE",
@@ -3424,79 +3597,9 @@ DefineClass({
         end,
       },
     },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_BL_Stripped_Paladin",
-      },
-      Formula="Caster_Level_Paladin-CasterLevelBLPaladin",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Paladin",
-      },
-      Formula="CL+Caster_Level_Bonus-3+CasterLevelBLPaladin",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "CasterLevelBL_x_Paladin",
-      },
-      Formula="charbonusto(\"PCLEVEL\",\"Paladin\")",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Highest__Divine",
-      },
-      Formula="Caster_Level_Paladin",
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="CASTERLEVEL",
-      Variables={
-        "Paladin",
-      },
-      Formula="Caster_Level_BL_Stripped_Paladin",
-      Conditions={
-        function (character)
-          return 1 <= #filter(ipairs(character.ClassLevels),
-          function (class, level)
-            return (class == "Paladin" and level >= 4)
-          end)
-        end,
-      },
-    },
   },
   WeaponBonusProficiencySelections={
   },
-  SourcePage="p.60",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        return character.Alignment == "LG"
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (character)
-        return (character.Variables["BypassClassAlignment_Paladin"] == 1)
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-  },
-})
-DefineClass({
   HitDie=10,
   MaxLevel=20,
   SkillPointsPerLevel=2,
@@ -3637,10 +3740,17 @@ DefineClass({
       },
     },
   },
-  Name="Ex-Paladin",
+})
+DefineClass({
+  Name="Ranger",
+  SpellStat="WIS",
   Definitions={
     {
-      Name="PaladinLVL",
+      Name="RangerLVL",
+      InitialValue=0,
+    },
+    {
+      Name="CasterLevelBLRanger",
       InitialValue=0,
     },
   },
@@ -3661,7 +3771,7 @@ DefineClass({
       Category="SAVE",
       Variables={
         "BASE.Fortitude",
-        "BASE.Will",
+        "BASE.Reflex",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
       Conditions={
@@ -3673,7 +3783,7 @@ DefineClass({
     {
       Category="SAVE",
       Variables={
-        "BASE.Reflex",
+        "BASE.Will",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
       Conditions={
@@ -3697,7 +3807,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "PaladinLVL",
+        "RangerLVL",
       },
       Formula="CL",
     },
@@ -3716,7 +3826,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ClassSavePoor_Reflex",
+        "ClassSaveGood_Reflex",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -3728,7 +3838,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ClassSaveGood_Will",
+        "ClassSavePoor_Will",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -3737,11 +3847,72 @@ DefineClass({
         end,
       },
     },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_BL_Stripped_Ranger",
+      },
+      Formula="Caster_Level_Ranger-CasterLevelBLRanger",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_Ranger",
+      },
+      Formula="CL+Caster_Level_Bonus-3+CasterLevelBLRanger",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "CasterLevelBL_x_Ranger",
+      },
+      Formula="charbonusto(\"PCLEVEL\",\"Ranger\")",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_Highest__Divine",
+      },
+      Formula="Caster_Level_Ranger",
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+    },
+    {
+      Category="CASTERLEVEL",
+      Variables={
+        "Ranger",
+      },
+      Formula="Caster_Level_Ranger",
+      Conditions={
+        function (character)
+          return 1 <= #filter(ipairs(character.ClassLevels),
+          function (class, level)
+            return (class == "Ranger" and level >= 4)
+          end)
+        end,
+      },
+    },
+  },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Name="Class Skills ~ Ranger",
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Archetype" and (ability.Type == "RangerClassSkills")
+          end))
+        end,
+      },
+    },
   },
   WeaponBonusProficiencySelections={
   },
-})
-DefineClass({
+  SourcePage="p.64",
   HitDie=10,
   MaxLevel=20,
   SkillPointsPerLevel=6,
@@ -3760,10 +3931,10 @@ DefineClass({
     SpellType="Divine",
   },
   AutomaticKnownSpells={
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
   },
   Levels={
     {
@@ -4197,220 +4368,8 @@ DefineClass({
       },
     },
   },
-  Name="Ranger",
-  SpellStat="WIS",
-  Definitions={
-    {
-      Name="RangerLVL",
-      InitialValue=0,
-    },
-    {
-      Name="CasterLevelBLRanger",
-      InitialValue=0,
-    },
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Reflex",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Will",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABFull",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "RangerLVL",
-      },
-      Formula="CL",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Fortitude",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Reflex",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Will",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_BL_Stripped_Ranger",
-      },
-      Formula="Caster_Level_Ranger-CasterLevelBLRanger",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Ranger",
-      },
-      Formula="CL+Caster_Level_Bonus-3+CasterLevelBLRanger",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "CasterLevelBL_x_Ranger",
-      },
-      Formula="charbonusto(\"PCLEVEL\",\"Ranger\")",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Highest__Divine",
-      },
-      Formula="Caster_Level_Ranger",
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="CASTERLEVEL",
-      Variables={
-        "Ranger",
-      },
-      Formula="Caster_Level_Ranger",
-      Conditions={
-        function (character)
-          return 1 <= #filter(ipairs(character.ClassLevels),
-          function (class, level)
-            return (class == "Ranger" and level >= 4)
-          end)
-        end,
-      },
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Name="Class Skills ~ Ranger",
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Archetype" and (ability.Type == "RangerClassSkills")
-          end))
-        end,
-      },
-    },
-  },
-  WeaponBonusProficiencySelections={
-  },
-  SourcePage="p.64",
 })
 DefineClass({
-  HitDie=8,
-  MaxLevel=20,
-  SkillPointsPerLevel=8,
-  Roles={
-    "Skill",
-  },
-  Types={
-    "Base",
-    "PC",
-    "Rogue",
-  },
-  Facts={
-    ClassType="PC",
-    Abb="Rog",
-  },
-  Levels={
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Weapon and Armor Proficiency ~ Rogue",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Class",
-          Nature="AUTOMATIC",
-          Name="Rogue",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-  },
   Name="Rogue",
   Definitions={
     {
@@ -4515,8 +4474,205 @@ DefineClass({
   WeaponBonusProficiencySelections={
   },
   SourcePage="p.67",
+  HitDie=8,
+  MaxLevel=20,
+  SkillPointsPerLevel=8,
+  Roles={
+    "Skill",
+  },
+  Types={
+    "Base",
+    "PC",
+    "Rogue",
+  },
+  Facts={
+    ClassType="PC",
+    Abb="Rog",
+  },
+  Levels={
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="Special Ability",
+          Nature="AUTOMATIC",
+          Name="Weapon and Armor Proficiency ~ Rogue",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="Class",
+          Nature="AUTOMATIC",
+          Name="Rogue",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+  },
 })
 DefineClass({
+  Name="Sorcerer",
+  SpellStat="CHA",
+  Definitions={
+    {
+      Name="SorcererLVL",
+      InitialValue=0,
+    },
+    {
+      Name="CasterLevelBLSorcerer",
+      InitialValue=0,
+    },
+  },
+  Bonuses={
+    {
+      Category="COMBAT",
+      Variables={
+        "BASEAB",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="SAVE",
+      Variables={
+        "BASE.Will",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="SAVE",
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Reflex",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassBABPoor",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "SorcererLVL",
+      },
+      Formula="CL",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSavePoor_Fortitude",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSavePoor_Reflex",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSaveGood_Will",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_BL_Stripped_Sorcerer",
+      },
+      Formula="Caster_Level_Sorcerer-CasterLevelBLSorcerer",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_Sorcerer",
+      },
+      Formula="CL+Caster_Level_Bonus+CasterLevelBLSorcerer",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "CasterLevelBL_x_Sorcerer",
+      },
+      Formula="charbonusto(\"PCLEVEL\",\"Sorcerer\")",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_Highest__Arcane",
+      },
+      Formula="Caster_Level_Sorcerer",
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_Total__Arcane",
+      },
+      Formula="Caster_Level_Sorcerer",
+    },
+    {
+      Category="CASTERLEVEL",
+      Variables={
+        "Sorcerer",
+      },
+      Formula="Caster_Level_BL_Stripped_Sorcerer",
+    },
+  },
+  WeaponBonusProficiencySelections={
+  },
+  SourcePage="p.70",
   HitDie=6,
   MaxLevel=20,
   SkillPointsPerLevel=2,
@@ -4814,15 +4970,29 @@ DefineClass({
       },
     },
   },
-  Name="Sorcerer",
-  SpellStat="CHA",
+})
+DefineClass({
+  Name="Wizard",
+  SpellStat="INT",
   Definitions={
     {
-      Name="SorcererLVL",
+      Name="DisallowWizardArcaneSchoolArchetype",
       InitialValue=0,
     },
     {
-      Name="CasterLevelBLSorcerer",
+      Name="WizardLVL",
+      InitialValue=0,
+    },
+    {
+      Name="SpellMasteryQualify",
+      InitialValue=0,
+    },
+    {
+      Name="Caster_Level_BL_Stripped_Wizard",
+      InitialValue=0,
+    },
+    {
+      Name="CasterLevelBLWizard",
       InitialValue=0,
     },
   },
@@ -4879,9 +5049,16 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "SorcererLVL",
+        "WizardLVL",
       },
       Formula="CL",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "SpellMasteryQualify",
+      },
+      Formula="1",
     },
     {
       Category="VAR",
@@ -4922,30 +5099,30 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "Caster_Level_BL_Stripped_Sorcerer",
+        "Caster_Level_BL_Stripped_Wizard",
       },
-      Formula="Caster_Level_Sorcerer-CasterLevelBLSorcerer",
+      Formula="Caster_Level_Wizard-CasterLevelBLWizard",
     },
     {
       Category="VAR",
       Variables={
-        "Caster_Level_Sorcerer",
+        "Caster_Level_Wizard",
       },
-      Formula="CL+Caster_Level_Bonus+CasterLevelBLSorcerer",
+      Formula="WizardLVL+Caster_Level_Bonus+CasterLevelBLWizard",
     },
     {
       Category="VAR",
       Variables={
-        "CasterLevelBL_x_Sorcerer",
+        "CasterLevelBL_x_Wizard",
       },
-      Formula="charbonusto(\"PCLEVEL\",\"Sorcerer\")",
+      Formula="charbonusto(\"PCLEVEL\",\"Wizard\")",
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Highest__Arcane",
       },
-      Formula="Caster_Level_Sorcerer",
+      Formula="Caster_Level_Wizard",
       Type={
         Name="Base",
         Replace=false,
@@ -4957,21 +5134,19 @@ DefineClass({
       Variables={
         "Caster_Level_Total__Arcane",
       },
-      Formula="Caster_Level_Sorcerer",
+      Formula="Caster_Level_Wizard",
     },
     {
       Category="CASTERLEVEL",
       Variables={
-        "Sorcerer",
+        "Wizard",
       },
-      Formula="Caster_Level_BL_Stripped_Sorcerer",
+      Formula="Caster_Level_BL_Stripped_Wizard",
     },
   },
   WeaponBonusProficiencySelections={
   },
-  SourcePage="p.70",
-})
-DefineClass({
+  SourcePage="p.77",
   HitDie=6,
   MaxLevel=20,
   SkillPointsPerLevel=2,
@@ -5636,27 +5811,12 @@ DefineClass({
       },
     },
   },
-  Name="Wizard",
-  SpellStat="INT",
+})
+DefineClass({
+  Name="Arcane Archer",
   Definitions={
     {
-      Name="DisallowWizardArcaneSchoolArchetype",
-      InitialValue=0,
-    },
-    {
-      Name="WizardLVL",
-      InitialValue=0,
-    },
-    {
-      Name="SpellMasteryQualify",
-      InitialValue=0,
-    },
-    {
-      Name="Caster_Level_BL_Stripped_Wizard",
-      InitialValue=0,
-    },
-    {
-      Name="CasterLevelBLWizard",
+      Name="ArcaneArcherLVL",
       InitialValue=0,
     },
   },
@@ -5666,7 +5826,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2",
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -5678,12 +5838,7 @@ DefineClass({
       Variables={
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
+      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
     },
     {
       Category="SAVE",
@@ -5691,17 +5846,12 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
+      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
     },
     {
       Category="VAR",
       Variables={
-        "ClassBABPoor",
+        "ClassBABFull",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -5713,21 +5863,14 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "WizardLVL",
+        "ArcaneArcherLVL",
       },
       Formula="CL",
     },
     {
       Category="VAR",
       Variables={
-        "SpellMasteryQualify",
-      },
-      Formula="1",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Fortitude",
+        "ClassSaveGood_Fortitude",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -5739,7 +5882,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ClassSavePoor_Reflex",
+        "ClassSaveGood_Reflex",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -5751,7 +5894,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ClassSaveGood_Will",
+        "ClassSavePoor_Will",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -5760,59 +5903,34 @@ DefineClass({
         end,
       },
     },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_BL_Stripped_Wizard",
-      },
-      Formula="Caster_Level_Wizard-CasterLevelBLWizard",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Wizard",
-      },
-      Formula="WizardLVL+Caster_Level_Bonus+CasterLevelBLWizard",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "CasterLevelBL_x_Wizard",
-      },
-      Formula="charbonusto(\"PCLEVEL\",\"Wizard\")",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Highest__Arcane",
-      },
-      Formula="Caster_Level_Wizard",
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Total__Arcane",
-      },
-      Formula="Caster_Level_Wizard",
-    },
-    {
-      Category="CASTERLEVEL",
-      Variables={
-        "Wizard",
-      },
-      Formula="Caster_Level_BL_Stripped_Wizard",
-    },
+  },
+  ClassSkills={
+    "Perception",
+    "Ride",
+    "Stealth",
+    "Survival",
   },
   WeaponBonusProficiencySelections={
   },
-  SourcePage="p.77",
-})
-DefineClass({
+  SourcePage="p.374",
+  Conditions={
+    function (character)
+      return 2 <= #filter(character.Abilities, function (ability)
+        return ability.Category == "FEAT" and (ability.Name == "Point-Blank Shot" or ability.Name == "Precise Shot")
+      end)
+    end,
+    function (character)
+      return 1 <= #filter(character.Abilities, function (ability)
+        return ability.Category == "FEAT" and (ability.Name == "Weapon Focus (Longbow)" or ability.Name == "Weapon Focus (Shortbow)")
+      end)
+    end,
+    function (character)
+      return (character.SpellCount("Arcane", 1)) >= 1
+    end,
+    function (character)
+      return character.TotalAttackBonus >= 6
+    end,
+  },
   HitDie=10,
   MaxLevel=10,
   SkillPointsPerLevel=4,
@@ -6009,10 +6127,12 @@ DefineClass({
       },
     },
   },
-  Name="Arcane Archer",
+})
+DefineClass({
+  Name="Arcane Trickster",
   Definitions={
     {
-      Name="ArcaneArcherLVL",
+      Name="ArcaneTricksterLVL",
       InitialValue=0,
     },
   },
@@ -6022,7 +6142,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2",
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -6032,22 +6152,22 @@ DefineClass({
     {
       Category="SAVE",
       Variables={
-        "BASE.Will",
+        "BASE.Fortitude",
       },
       Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
     },
     {
       Category="SAVE",
       Variables={
-        "BASE.Fortitude",
         "BASE.Reflex",
+        "BASE.Will",
       },
       Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
     },
     {
       Category="VAR",
       Variables={
-        "ClassBABFull",
+        "ClassBABPoor",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -6059,14 +6179,14 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ArcaneArcherLVL",
+        "ArcaneTricksterLVL",
       },
       Formula="CL",
     },
     {
       Category="VAR",
       Variables={
-        "ClassSaveGood_Fortitude",
+        "ClassSavePoor_Fortitude",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -6090,7 +6210,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ClassSavePoor_Will",
+        "ClassSaveGood_Will",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -6101,34 +6221,56 @@ DefineClass({
     },
   },
   ClassSkills={
+    "Acrobatics",
+    "Appraise",
+    "Bluff",
+    "Climb",
+    "Diplomacy",
+    "Disable Device",
+    "Disguise",
+    "Escape Artist",
+    "TYPE=Knowledge",
     "Perception",
-    "Ride",
+    "Sense Motive",
+    "Sleight of Hand",
+    "Spellcraft",
     "Stealth",
-    "Survival",
+    "Swim",
   },
   WeaponBonusProficiencySelections={
   },
-  SourcePage="p.374",
+  SourcePage="p.376",
   Conditions={
     function (character)
-      return 2 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "FEAT" and (ability.Name == "Point-Blank Shot" or ability.Name == "Precise Shot")
-      end)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        return character.Alignment == "NG" or character.Alignment == "TN" or character.Alignment == "NE" or character.Alignment == "CG" or character.Alignment == "CN" or character.Alignment == "CE"
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (character)
+        return (character.Variables["BypassClassAlignment_Arcane_Trickster"] == 1)
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
     end,
     function (character)
-      return 1 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "FEAT" and (ability.Name == "Weapon Focus (Longbow)" or ability.Name == "Weapon Focus (Shortbow)")
-      end)
+      return ((character.BestSkillOfType("Disable Device").ranks >= 4 and 1 or 0) + (character.BestSkillOfType("Escape Artist").ranks >= 4 and 1 or 0) + (character.BestSkillOfType("Knowledge (Arcana)").ranks >= 4 and 1 or 0)) >= 3
     end,
     function (character)
-      return (character.SpellCount("Arcane", 1)) >= 1
+      return (character.HasSpell("Mage Hand") and 1 or 0) >= 1
     end,
     function (character)
-      return character.TotalAttackBonus >= 6
+      return (character.SpellCount("Arcane", 2)) >= 1
+    end,
+    function (character)
+      return (character.Variables["SneakAttackDice"] >= 2)
     end,
   },
-})
-DefineClass({
   HitDie=6,
   MaxLevel=10,
   SkillPointsPerLevel=4,
@@ -6326,271 +6468,8 @@ DefineClass({
       },
     },
   },
-  Name="Arcane Trickster",
-  Definitions={
-    {
-      Name="ArcaneTricksterLVL",
-      InitialValue=0,
-    },
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2",
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-      },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-        "BASE.Will",
-      },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABPoor",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ArcaneTricksterLVL",
-      },
-      Formula="CL",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Fortitude",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Reflex",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Will",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-  },
-  ClassSkills={
-    "Acrobatics",
-    "Appraise",
-    "Bluff",
-    "Climb",
-    "Diplomacy",
-    "Disable Device",
-    "Disguise",
-    "Escape Artist",
-    "TYPE=Knowledge",
-    "Perception",
-    "Sense Motive",
-    "Sleight of Hand",
-    "Spellcraft",
-    "Stealth",
-    "Swim",
-  },
-  WeaponBonusProficiencySelections={
-  },
-  SourcePage="p.376",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        return character.Alignment == "NG" or character.Alignment == "TN" or character.Alignment == "NE" or character.Alignment == "CG" or character.Alignment == "CN" or character.Alignment == "CE"
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (character)
-        return (character.Variables["BypassClassAlignment_Arcane_Trickster"] == 1)
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-    function (character)
-      return ((character.BestSkillOfType("Disable Device").ranks >= 4 and 1 or 0) + (character.BestSkillOfType("Escape Artist").ranks >= 4 and 1 or 0) + (character.BestSkillOfType("Knowledge (Arcana)").ranks >= 4 and 1 or 0)) >= 3
-    end,
-    function (character)
-      return (character.HasSpell("Mage Hand") and 1 or 0) >= 1
-    end,
-    function (character)
-      return (character.SpellCount("Arcane", 2)) >= 1
-    end,
-    function (character)
-      return (character.Variables["SneakAttackDice"] >= 2)
-    end,
-  },
 })
 DefineClass({
-  HitDie=8,
-  MaxLevel=10,
-  SkillPointsPerLevel=4,
-  Types={
-    "PC",
-    "Prestige",
-  },
-  Facts={
-    ClassType="PC",
-    Abb="Asn",
-  },
-  Levels={
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Class",
-          Nature="AUTOMATIC",
-          Name="Assassin",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ Weapon and Armor Proficiency",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ Sneak Attack",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ Uncanny Dodge",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="4",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ True Death",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="6",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ Quiet Death",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="8",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ Hide in Plain Sight",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="9",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ Swift Death",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="10",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ Angel of Death",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-  },
   Name="Assassin",
   Definitions={
     {
@@ -6724,35 +6603,61 @@ DefineClass({
       return ((character.BestSkillOfType("Disguise").ranks >= 2 and 1 or 0) + (character.BestSkillOfType("Stealth").ranks >= 5 and 1 or 0)) >= 2
     end,
   },
-})
-DefineClass({
-  HitDie=12,
+  HitDie=8,
   MaxLevel=10,
-  SkillPointsPerLevel=2,
+  SkillPointsPerLevel=4,
   Types={
     "PC",
     "Prestige",
   },
   Facts={
     ClassType="PC",
-    Abb="DrD",
+    Abb="Asn",
   },
   Levels={
     {
-      Level="2",
-      AddedSpellCasterLevels={
+      Level="1",
+      Abilities={
         {
-          Type="Arcane",
+          Category="Class",
+          Nature="AUTOMATIC",
+          Name="Assassin",
         },
       },
       WeaponBonusProficiencySelections={
       },
     },
     {
-      Level="3",
-      AddedSpellCasterLevels={
+      Level="1",
+      Abilities={
         {
-          Type="Arcane",
+          Category="Assassin Class Feature",
+          Nature="AUTOMATIC",
+          Name="Assassin ~ Weapon and Armor Proficiency",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="Assassin Class Feature",
+          Nature="AUTOMATIC",
+          Name="Assassin ~ Sneak Attack",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="2",
+      Abilities={
+        {
+          Category="Assassin Class Feature",
+          Nature="AUTOMATIC",
+          Name="Assassin ~ Uncanny Dodge",
         },
       },
       WeaponBonusProficiencySelections={
@@ -6760,9 +6665,11 @@ DefineClass({
     },
     {
       Level="4",
-      AddedSpellCasterLevels={
+      Abilities={
         {
-          Type="Arcane",
+          Category="Assassin Class Feature",
+          Nature="AUTOMATIC",
+          Name="Assassin ~ True Death",
         },
       },
       WeaponBonusProficiencySelections={
@@ -6770,19 +6677,11 @@ DefineClass({
     },
     {
       Level="6",
-      AddedSpellCasterLevels={
+      Abilities={
         {
-          Type="Arcane",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="7",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
+          Category="Assassin Class Feature",
+          Nature="AUTOMATIC",
+          Name="Assassin ~ Quiet Death",
         },
       },
       WeaponBonusProficiencySelections={
@@ -6790,103 +6689,11 @@ DefineClass({
     },
     {
       Level="8",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="10",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
       Abilities={
         {
-          Category="Dragon Disciple Class Feature",
+          Category="Assassin Class Feature",
           Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Weapon and Armor Proficiency",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Dragon Disciple Class Feature",
-          Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Spells per Day",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Dragon Disciple Class Feature",
-          Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Natural Armor Increase",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Dragon Disciple Class Feature",
-          Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Bloodline Feat",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="3",
-      Abilities={
-        {
-          Category="Dragon Disciple Class Feature",
-          Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Breath Weapon",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="5",
-      Abilities={
-        {
-          Category="Dragon Disciple Class Feature",
-          Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Blindsense",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="7",
-      Abilities={
-        {
-          Category="Dragon Disciple Class Feature",
-          Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Dragon Form",
+          Name="Assassin ~ Hide in Plain Sight",
         },
       },
       WeaponBonusProficiencySelections={
@@ -6896,15 +6703,29 @@ DefineClass({
       Level="9",
       Abilities={
         {
-          Category="Dragon Disciple Class Feature",
+          Category="Assassin Class Feature",
           Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Wings",
+          Name="Assassin ~ Swift Death",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="10",
+      Abilities={
+        {
+          Category="Assassin Class Feature",
+          Nature="AUTOMATIC",
+          Name="Assassin ~ Angel of Death",
         },
       },
       WeaponBonusProficiencySelections={
       },
     },
   },
+})
+DefineClass({
   Name="Dragon Disciple",
   Definitions={
     {
@@ -7088,8 +6909,302 @@ DefineClass({
       return not (((any(character.Templates, function (template) return stringMatch(template.Name, "Half Dragon") end) and 1 or 0)) >= 1)
     end,
   },
+  HitDie=12,
+  MaxLevel=10,
+  SkillPointsPerLevel=2,
+  Types={
+    "PC",
+    "Prestige",
+  },
+  Facts={
+    ClassType="PC",
+    Abb="DrD",
+  },
+  Levels={
+    {
+      Level="2",
+      AddedSpellCasterLevels={
+        {
+          Type="Arcane",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="3",
+      AddedSpellCasterLevels={
+        {
+          Type="Arcane",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="4",
+      AddedSpellCasterLevels={
+        {
+          Type="Arcane",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="6",
+      AddedSpellCasterLevels={
+        {
+          Type="Arcane",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="7",
+      AddedSpellCasterLevels={
+        {
+          Type="Arcane",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="8",
+      AddedSpellCasterLevels={
+        {
+          Type="Arcane",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="10",
+      AddedSpellCasterLevels={
+        {
+          Type="Arcane",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="Dragon Disciple Class Feature",
+          Nature="AUTOMATIC",
+          Name="Dragon Disciple ~ Weapon and Armor Proficiency",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="Dragon Disciple Class Feature",
+          Nature="AUTOMATIC",
+          Name="Dragon Disciple ~ Spells per Day",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="Dragon Disciple Class Feature",
+          Nature="AUTOMATIC",
+          Name="Dragon Disciple ~ Natural Armor Increase",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="2",
+      Abilities={
+        {
+          Category="Dragon Disciple Class Feature",
+          Nature="AUTOMATIC",
+          Name="Dragon Disciple ~ Bloodline Feat",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="3",
+      Abilities={
+        {
+          Category="Dragon Disciple Class Feature",
+          Nature="AUTOMATIC",
+          Name="Dragon Disciple ~ Breath Weapon",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="5",
+      Abilities={
+        {
+          Category="Dragon Disciple Class Feature",
+          Nature="AUTOMATIC",
+          Name="Dragon Disciple ~ Blindsense",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="7",
+      Abilities={
+        {
+          Category="Dragon Disciple Class Feature",
+          Nature="AUTOMATIC",
+          Name="Dragon Disciple ~ Dragon Form",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="9",
+      Abilities={
+        {
+          Category="Dragon Disciple Class Feature",
+          Nature="AUTOMATIC",
+          Name="Dragon Disciple ~ Wings",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+  },
 })
 DefineClass({
+  Name="Duelist",
+  Definitions={
+    {
+      Name="DuelistLVL",
+      InitialValue=0,
+    },
+  },
+  Bonuses={
+    {
+      Category="COMBAT",
+      Variables={
+        "BASEAB",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="SAVE",
+      Variables={
+        "BASE.Reflex",
+      },
+      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
+    },
+    {
+      Category="SAVE",
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Will",
+      },
+      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassBABFull",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "DuelistLVL",
+      },
+      Formula="CL",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSavePoor_Fortitude",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSaveGood_Reflex",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSavePoor_Will",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+  },
+  ClassSkills={
+    "Acrobatics",
+    "Bluff",
+    "Escape Artist",
+    "Perception",
+    "TYPE=Perform",
+    "Sense Motive",
+  },
+  WeaponBonusProficiencySelections={
+  },
+  SourcePage="p.382",
+  Conditions={
+    function (character)
+      return 3 <= #filter(character.Abilities, function (ability)
+        return ability.Category == "FEAT" and (ability.Name == "Dodge" or ability.Name == "Mobility" or ability.Name == "Weapon Finesse")
+      end)
+    end,
+    function (character)
+      return ((character.BestSkillOfType("Acrobatics").ranks >= 2 and 1 or 0) + (character.Skill("(547,100): Perform").ranks >= 2 and 1 or 0)) >= 2
+    end,
+    function (character)
+      return character.TotalAttackBonus >= 6
+    end,
+  },
   HitDie=10,
   MaxLevel=10,
   SkillPointsPerLevel=4,
@@ -7223,10 +7338,12 @@ DefineClass({
       },
     },
   },
-  Name="Duelist",
+})
+DefineClass({
+  Name="Eldritch Knight",
   Definitions={
     {
-      Name="DuelistLVL",
+      Name="EldritchKnightLVL",
       InitialValue=0,
     },
   },
@@ -7246,14 +7363,14 @@ DefineClass({
     {
       Category="SAVE",
       Variables={
-        "BASE.Reflex",
+        "BASE.Fortitude",
       },
       Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
     },
     {
       Category="SAVE",
       Variables={
-        "BASE.Fortitude",
+        "BASE.Reflex",
         "BASE.Will",
       },
       Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
@@ -7273,14 +7390,14 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "DuelistLVL",
+        "EldritchKnightLVL",
       },
       Formula="CL",
     },
     {
       Category="VAR",
       Variables={
-        "ClassSavePoor_Fortitude",
+        "ClassSaveGood_Fortitude",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -7292,7 +7409,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ClassSaveGood_Reflex",
+        "ClassSavePoor_Reflex",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -7315,31 +7432,28 @@ DefineClass({
     },
   },
   ClassSkills={
-    "Acrobatics",
-    "Bluff",
-    "Escape Artist",
-    "Perception",
-    "TYPE=Perform",
+    "Climb",
+    "Knowledge (Arcana)",
+    "Knowledge (Nobility)",
+    "Linguistics",
+    "Ride",
     "Sense Motive",
+    "Spellcraft",
+    "Swim",
   },
   WeaponBonusProficiencySelections={
   },
-  SourcePage="p.382",
+  SourcePage="p.384",
   Conditions={
     function (character)
-      return 3 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "FEAT" and (ability.Name == "Dodge" or ability.Name == "Mobility" or ability.Name == "Weapon Finesse")
+      return 1 <= #filter(character.Abilities, function (ability)
+        return ability.Category == "Internal" and (ability.Name == "Weapon Prof ~ Martial")
       end)
     end,
     function (character)
-      return ((character.BestSkillOfType("Acrobatics").ranks >= 2 and 1 or 0) + (character.Skill("(547,100): Perform").ranks >= 2 and 1 or 0)) >= 2
-    end,
-    function (character)
-      return character.TotalAttackBonus >= 6
+      return (character.SpellCount("Arcane", 3)) >= 1
     end,
   },
-})
-DefineClass({
   HitDie=10,
   MaxLevel=10,
   SkillPointsPerLevel=2,
@@ -7467,10 +7581,12 @@ DefineClass({
       },
     },
   },
-  Name="Eldritch Knight",
+})
+DefineClass({
+  Name="Loremaster",
   Definitions={
     {
-      Name="EldritchKnightLVL",
+      Name="LoremasterLVL",
       InitialValue=0,
     },
   },
@@ -7480,7 +7596,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2",
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -7490,22 +7606,22 @@ DefineClass({
     {
       Category="SAVE",
       Variables={
-        "BASE.Fortitude",
+        "BASE.Will",
       },
       Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
     },
     {
       Category="SAVE",
       Variables={
+        "BASE.Fortitude",
         "BASE.Reflex",
-        "BASE.Will",
       },
       Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
     },
     {
       Category="VAR",
       Variables={
-        "ClassBABFull",
+        "ClassBABPoor",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -7517,14 +7633,14 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "EldritchKnightLVL",
+        "LoremasterLVL",
       },
       Formula="CL",
     },
     {
       Category="VAR",
       Variables={
-        "ClassSaveGood_Fortitude",
+        "ClassSavePoor_Fortitude",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -7548,7 +7664,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ClassSavePoor_Will",
+        "ClassSaveGood_Will",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -7559,30 +7675,40 @@ DefineClass({
     },
   },
   ClassSkills={
-    "Climb",
-    "Knowledge (Arcana)",
-    "Knowledge (Nobility)",
+    "Appraise",
+    "Diplomacy",
+    "Handle Animal",
+    "Heal",
+    "TYPE=Knowledge",
     "Linguistics",
-    "Ride",
-    "Sense Motive",
+    "TYPE=Perform",
     "Spellcraft",
-    "Swim",
+    "Use Magic Device",
   },
   WeaponBonusProficiencySelections={
   },
-  SourcePage="p.384",
+  SourcePage="p.385",
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "Internal" and (ability.Name == "Weapon Prof ~ Martial")
+        return ability.Category == "FEAT" and (ability.Name == "Skill Focus (Knowledge%)")
       end)
     end,
     function (character)
-      return (character.SpellCount("Arcane", 3)) >= 1
+      return 3 <= #filter(character.Abilities, function (ability)
+        return ability.Category == "FEAT" and (ability.Name == "TYPE=Metamagic" or ability.Name == "TYPE=ItemCreation")
+      end)
+    end,
+    function (character)
+      return ((character.Skill("(588,145): Knowledge").ranks >= 7 and 1 or 0) + (character.Skill("(588,162): Knowledge").ranks >= 7 and 1 or 0)) >= 2
+    end,
+    function (character)
+      return ((#filter(character.SpellsKnown, function (spell) return spell.School == "Divination" and spell.Level >= 3 end))) >= 1
+    end,
+    function (character)
+      return ((#filter(character.SpellsKnown, function (spell) return spell.School == "Divination" and spell.Level >= 0 end))) >= 7
     end,
   },
-})
-DefineClass({
   HitDie=6,
   MaxLevel=10,
   SkillPointsPerLevel=4,
@@ -7744,13 +7870,9 @@ DefineClass({
       },
     },
   },
-  Name="Loremaster",
-  Definitions={
-    {
-      Name="LoremasterLVL",
-      InitialValue=0,
-    },
-  },
+})
+DefineClass({
+  Name="Mystic Theurge",
   Bonuses={
     {
       Category="COMBAT",
@@ -7794,13 +7916,6 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "LoremasterLVL",
-      },
-      Formula="CL",
-    },
-    {
-      Category="VAR",
-      Variables={
         "ClassSavePoor_Fortitude",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
@@ -7836,42 +7951,25 @@ DefineClass({
     },
   },
   ClassSkills={
-    "Appraise",
-    "Diplomacy",
-    "Handle Animal",
-    "Heal",
-    "TYPE=Knowledge",
-    "Linguistics",
-    "TYPE=Perform",
+    "Knowledge (Arcana)",
+    "Knowledge (Religion)",
+    "Sense Motive",
     "Spellcraft",
-    "Use Magic Device",
   },
   WeaponBonusProficiencySelections={
   },
-  SourcePage="p.385",
+  SourcePage="p.387",
   Conditions={
     function (character)
-      return 1 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "FEAT" and (ability.Name == "Skill Focus (Knowledge%)")
-      end)
+      return ((character.BestSkillOfType("Knowledge (Arcana)").ranks >= 3 and 1 or 0) + (character.BestSkillOfType("Knowledge (Religion)").ranks >= 3 and 1 or 0)) >= 2
     end,
     function (character)
-      return 3 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "FEAT" and (ability.Name == "TYPE=Metamagic" or ability.Name == "TYPE=ItemCreation")
-      end)
+      return (character.SpellCount("Divine", 2)) >= 1
     end,
     function (character)
-      return ((character.Skill("(588,145): Knowledge").ranks >= 7 and 1 or 0) + (character.Skill("(588,162): Knowledge").ranks >= 7 and 1 or 0)) >= 2
-    end,
-    function (character)
-      return ((#filter(character.SpellsKnown, function (spell) return spell.School == "Divination" and spell.Level >= 3 end))) >= 1
-    end,
-    function (character)
-      return ((#filter(character.SpellsKnown, function (spell) return spell.School == "Divination" and spell.Level >= 0 end))) >= 7
+      return (character.SpellCount("Arcane", 2)) >= 1
     end,
   },
-})
-DefineClass({
   HitDie=6,
   MaxLevel=10,
   SkillPointsPerLevel=2,
@@ -8039,14 +8137,22 @@ DefineClass({
       },
     },
   },
-  Name="Mystic Theurge",
+})
+DefineClass({
+  Name="Pathfinder Chronicler",
+  Definitions={
+    {
+      Name="PathfinderChroniclerLVL",
+      InitialValue=0,
+    },
+  },
   Bonuses={
     {
       Category="COMBAT",
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2",
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -8063,15 +8169,15 @@ DefineClass({
     {
       Category="SAVE",
       Variables={
-        "BASE.Fortitude",
         "BASE.Reflex",
+        "BASE.Fortitude",
       },
       Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
     },
     {
       Category="VAR",
       Variables={
-        "ClassBABPoor",
+        "ClassBABModerate",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -8079,6 +8185,13 @@ DefineClass({
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "PathfinderChroniclerLVL",
+      },
+      Formula="CL",
     },
     {
       Category="VAR",
@@ -8118,27 +8231,30 @@ DefineClass({
     },
   },
   ClassSkills={
-    "Knowledge (Arcana)",
-    "Knowledge (Religion)",
+    "Appraise",
+    "Bluff",
+    "Diplomacy",
+    "Disguise",
+    "Escape Artist",
+    "Intimidate",
+    "TYPE=Knowledge",
+    "Linguistics",
+    "Perception",
+    "TYPE=Perform",
+    "Ride",
     "Sense Motive",
-    "Spellcraft",
+    "Sleight of Hand",
+    "Survival",
+    "Use Magic Device",
   },
   WeaponBonusProficiencySelections={
   },
-  SourcePage="p.387",
+  SourcePage="p.388",
   Conditions={
     function (character)
-      return ((character.BestSkillOfType("Knowledge (Arcana)").ranks >= 3 and 1 or 0) + (character.BestSkillOfType("Knowledge (Religion)").ranks >= 3 and 1 or 0)) >= 2
-    end,
-    function (character)
-      return (character.SpellCount("Divine", 2)) >= 1
-    end,
-    function (character)
-      return (character.SpellCount("Arcane", 2)) >= 1
+      return ((character.BestSkillOfType("Linguistics").ranks >= 3 and 1 or 0) + (character.BestSkillOfType("Perform (Oratory)").ranks >= 5 and 1 or 0) + (character.BestSkillOfType("Profession (Scribe)").ranks >= 5 and 1 or 0)) >= 3
     end,
   },
-})
-DefineClass({
   HitDie=8,
   MaxLevel=10,
   SkillPointsPerLevel=8,
@@ -8260,10 +8376,12 @@ DefineClass({
       },
     },
   },
-  Name="Pathfinder Chronicler",
+})
+DefineClass({
+  Name="Shadowdancer",
   Definitions={
     {
-      Name="PathfinderChroniclerLVL",
+      Name="ShadowdancerLVL",
       InitialValue=0,
     },
   },
@@ -8283,15 +8401,15 @@ DefineClass({
     {
       Category="SAVE",
       Variables={
-        "BASE.Will",
+        "BASE.Reflex",
       },
       Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
     },
     {
       Category="SAVE",
       Variables={
-        "BASE.Reflex",
         "BASE.Fortitude",
+        "BASE.Will",
       },
       Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
     },
@@ -8310,7 +8428,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "PathfinderChroniclerLVL",
+        "ShadowdancerLVL",
       },
       Formula="CL",
     },
@@ -8329,7 +8447,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ClassSavePoor_Reflex",
+        "ClassSaveGood_Reflex",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -8341,7 +8459,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ClassSaveGood_Will",
+        "ClassSavePoor_Will",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -8352,32 +8470,29 @@ DefineClass({
     },
   },
   ClassSkills={
-    "Appraise",
+    "Acrobatics",
     "Bluff",
     "Diplomacy",
     "Disguise",
     "Escape Artist",
-    "Intimidate",
-    "TYPE=Knowledge",
-    "Linguistics",
     "Perception",
     "TYPE=Perform",
-    "Ride",
-    "Sense Motive",
     "Sleight of Hand",
-    "Survival",
-    "Use Magic Device",
+    "Stealth",
   },
   WeaponBonusProficiencySelections={
   },
-  SourcePage="p.388",
+  SourcePage="p.391",
   Conditions={
     function (character)
-      return ((character.BestSkillOfType("Linguistics").ranks >= 3 and 1 or 0) + (character.BestSkillOfType("Perform (Oratory)").ranks >= 5 and 1 or 0) + (character.BestSkillOfType("Profession (Scribe)").ranks >= 5 and 1 or 0)) >= 3
+      return 3 <= #filter(character.Abilities, function (ability)
+        return ability.Category == "FEAT" and (ability.Name == "Combat Reflexes" or ability.Name == "Dodge" or ability.Name == "Mobility")
+      end)
+    end,
+    function (character)
+      return ((character.BestSkillOfType("Stealth").ranks >= 5 and 1 or 0) + (character.BestSkillOfType("Perform (Dance)").ranks >= 2 and 1 or 0)) >= 2
     end,
   },
-})
-DefineClass({
   HitDie=8,
   MaxLevel=10,
   SkillPointsPerLevel=6,
@@ -8523,10 +8638,21 @@ DefineClass({
       },
     },
   },
-  Name="Shadowdancer",
+})
+DefineClass({
+  Name="Adept",
+  SpellStat="WIS",
+  SpellListChoiceCount="1",
+  SpellListChoices={
+    "Adept",
+  },
   Definitions={
     {
-      Name="ShadowdancerLVL",
+      Name="AdeptLVL",
+      InitialValue=0,
+    },
+    {
+      Name="CasterLevelBLAdept",
       InitialValue=0,
     },
   },
@@ -8536,7 +8662,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2",
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -8546,22 +8672,32 @@ DefineClass({
     {
       Category="SAVE",
       Variables={
+        "BASE.Fortitude",
         "BASE.Reflex",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
     },
     {
       Category="SAVE",
       Variables={
-        "BASE.Fortitude",
         "BASE.Will",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
     },
     {
       Category="VAR",
       Variables={
-        "ClassBABModerate",
+        "ClassBABPoor",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -8573,7 +8709,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ShadowdancerLVL",
+        "AdeptLVL",
       },
       Formula="CL",
     },
@@ -8592,7 +8728,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ClassSaveGood_Reflex",
+        "ClassSavePoor_Reflex",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -8604,7 +8740,7 @@ DefineClass({
     {
       Category="VAR",
       Variables={
-        "ClassSavePoor_Will",
+        "ClassSaveGood_Will",
       },
       Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
       Conditions={
@@ -8613,33 +8749,59 @@ DefineClass({
         end,
       },
     },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_BL_Stripped_Adept",
+      },
+      Formula="Caster_Level_Adept-CasterLevelBLAdept",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_Adept",
+      },
+      Formula="AdeptLVL+Caster_Level_Bonus+CasterLevelBLAdept",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "CasterLevelBL_x_Adept",
+      },
+      Formula="charbonusto(\"PCLEVEL\",\"Adept\")",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "Caster_Level_Highest__Divine",
+      },
+      Formula="Caster_Level_Adept",
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+    },
+    {
+      Category="CASTERLEVEL",
+      Variables={
+        "Adept",
+      },
+      Formula="Caster_Level_BL_Stripped_Adept",
+    },
   },
   ClassSkills={
-    "Acrobatics",
-    "Bluff",
-    "Diplomacy",
-    "Disguise",
-    "Escape Artist",
-    "Perception",
-    "TYPE=Perform",
-    "Sleight of Hand",
-    "Stealth",
+    "TYPE=Craft",
+    "Handle Animal",
+    "Heal",
+    "TYPE=Knowledge",
+    "TYPE=Profession",
+    "Spellcraft",
+    "Survival",
   },
   WeaponBonusProficiencySelections={
   },
-  SourcePage="p.391",
-  Conditions={
-    function (character)
-      return 3 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "FEAT" and (ability.Name == "Combat Reflexes" or ability.Name == "Dodge" or ability.Name == "Mobility")
-      end)
-    end,
-    function (character)
-      return ((character.BestSkillOfType("Stealth").ranks >= 5 and 1 or 0) + (character.BestSkillOfType("Perform (Dance)").ranks >= 2 and 1 or 0)) >= 2
-    end,
-  },
-})
-DefineClass({
+  SourcePage="p.448",
   HitDie=6,
   MaxLevel=20,
   SkillPointsPerLevel=2,
@@ -8653,12 +8815,12 @@ DefineClass({
     SpellType="Divine",
   },
   AutomaticKnownSpells={
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
-    "LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
+    "PCSharpGen.LstToLua.KnownSpell",
   },
   Levels={
     {
@@ -9010,224 +9172,8 @@ DefineClass({
       },
     },
   },
-  Name="Adept",
-  SpellStat="WIS",
-  SpellListChoiceCount="1",
-  SpellListChoices={
-    "Adept",
-  },
-  Definitions={
-    {
-      Name="AdeptLVL",
-      InitialValue=0,
-    },
-    {
-      Name="CasterLevelBLAdept",
-      InitialValue=0,
-    },
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2",
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Reflex",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Will",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABPoor",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "AdeptLVL",
-      },
-      Formula="CL",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Fortitude",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Reflex",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Will",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_BL_Stripped_Adept",
-      },
-      Formula="Caster_Level_Adept-CasterLevelBLAdept",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Adept",
-      },
-      Formula="AdeptLVL+Caster_Level_Bonus+CasterLevelBLAdept",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "CasterLevelBL_x_Adept",
-      },
-      Formula="charbonusto(\"PCLEVEL\",\"Adept\")",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Highest__Divine",
-      },
-      Formula="Caster_Level_Adept",
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="CASTERLEVEL",
-      Variables={
-        "Adept",
-      },
-      Formula="Caster_Level_BL_Stripped_Adept",
-    },
-  },
-  ClassSkills={
-    "TYPE=Craft",
-    "Handle Animal",
-    "Heal",
-    "TYPE=Knowledge",
-    "TYPE=Profession",
-    "Spellcraft",
-    "Survival",
-  },
-  WeaponBonusProficiencySelections={
-  },
-  SourcePage="p.448",
 })
 DefineClass({
-  HitDie=8,
-  MaxLevel=20,
-  SkillPointsPerLevel=4,
-  Types={
-    "Base",
-    "NPC",
-  },
-  Facts={
-    ClassType="NPC",
-    Abb="Ari",
-  },
-  Levels={
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="All Martial Weapon Proficiencies",
-        },
-        {
-          Category="FEAT",
-          Nature="AUTOMATIC",
-          Name="Simple Weapon Proficiency",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="FEAT",
-          Nature="AUTOMATIC",
-          Name="Armor Proficiency (Medium)",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="FEAT",
-          Nature="AUTOMATIC",
-          Name="Tower Shield Proficiency",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-  },
   Name="Aristocrat",
   Definitions={
     {
@@ -9350,18 +9296,16 @@ DefineClass({
   WeaponBonusProficiencySelections={
   },
   SourcePage="p.449",
-})
-DefineClass({
-  HitDie=6,
+  HitDie=8,
   MaxLevel=20,
-  SkillPointsPerLevel=2,
+  SkillPointsPerLevel=4,
   Types={
     "Base",
     "NPC",
   },
   Facts={
     ClassType="NPC",
-    Abb="Com",
+    Abb="Ari",
   },
   Levels={
     {
@@ -9370,13 +9314,44 @@ DefineClass({
         {
           Category="Special Ability",
           Nature="AUTOMATIC",
-          Name="Weapon and Armor Proficiency ~ Commoner",
+          Name="All Martial Weapon Proficiencies",
+        },
+        {
+          Category="FEAT",
+          Nature="AUTOMATIC",
+          Name="Simple Weapon Proficiency",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="FEAT",
+          Nature="AUTOMATIC",
+          Name="Armor Proficiency (Medium)",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="FEAT",
+          Nature="AUTOMATIC",
+          Name="Tower Shield Proficiency",
         },
       },
       WeaponBonusProficiencySelections={
       },
     },
   },
+})
+DefineClass({
   Name="Commoner",
   Definitions={
     {
@@ -9481,18 +9456,16 @@ DefineClass({
       "TYPE=Simple", 
     }},
   SourcePage="p.449",
-})
-DefineClass({
-  HitDie=8,
+  HitDie=6,
   MaxLevel=20,
-  SkillPointsPerLevel=6,
+  SkillPointsPerLevel=2,
   Types={
     "Base",
     "NPC",
   },
   Facts={
     ClassType="NPC",
-    Abb="Exp",
+    Abb="Com",
   },
   Levels={
     {
@@ -9501,44 +9474,15 @@ DefineClass({
         {
           Category="Special Ability",
           Nature="AUTOMATIC",
-          Name="All Automatic Proficiencies",
-        },
-        {
-          Category="FEAT",
-          Nature="AUTOMATIC",
-          Name="Simple Weapon Proficiency",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="FEAT",
-          Nature="AUTOMATIC",
-          Name="Armor Proficiency (Light)",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Bonuses={
-        {
-          Category="ABILITYPOOL",
-          Variables={
-            "Expert Class Skills",
-          },
-          Formula="10",
+          Name="Weapon and Armor Proficiency ~ Commoner",
         },
       },
       WeaponBonusProficiencySelections={
       },
     },
   },
+})
+DefineClass({
   Name="Expert",
   Definitions={
     {
@@ -9643,4 +9587,60 @@ DefineClass({
   WeaponBonusProficiencySelections={
   },
   SourcePage="p.450",
+  HitDie=8,
+  MaxLevel=20,
+  SkillPointsPerLevel=6,
+  Types={
+    "Base",
+    "NPC",
+  },
+  Facts={
+    ClassType="NPC",
+    Abb="Exp",
+  },
+  Levels={
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="Special Ability",
+          Nature="AUTOMATIC",
+          Name="All Automatic Proficiencies",
+        },
+        {
+          Category="FEAT",
+          Nature="AUTOMATIC",
+          Name="Simple Weapon Proficiency",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="FEAT",
+          Nature="AUTOMATIC",
+          Name="Armor Proficiency (Light)",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+    {
+      Level="1",
+      Bonuses={
+        {
+          Category="ABILITYPOOL",
+          Variables={
+            "Expert Class Skills",
+          },
+          Formula="10",
+        },
+      },
+      WeaponBonusProficiencySelections={
+      },
+    },
+  },
 })

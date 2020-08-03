@@ -224,6 +224,7 @@ namespace PCSharpGen.LstToLua
 
         protected override void DumpMembers(LuaTextWriter output)
         {
+            base.DumpMembers(output);
             output.WriteKeyValue("HitDie", HitDie);
             output.WriteKeyValue("MaxLevel", MaxLevel);
             output.WriteKeyValue("SkillPointsPerLevel", SkillPointsPerLevel);
@@ -267,7 +268,6 @@ namespace PCSharpGen.LstToLua
 
             output.WriteList("Levels", Levels);
             output.WriteList("SubClasses", SubClasses);
-            base.DumpMembers(output);
         }
     }
 }
