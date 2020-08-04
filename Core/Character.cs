@@ -62,6 +62,13 @@ namespace PCSharpGen.Core
             return AddReferenceToVariable(name, name, referenceStatistic);
         }
 
+        public BonusBuilder DefineVariable(string name)
+        {
+            // This doesn't need to do anything, because "GetReference" will always create a variable that doesn't exist
+            // and set it to zero.  It's just a convenience to callers to get a BonusBuilder
+            return new BonusBuilder(this, name);
+        }
+
         public BonusBuilder AddReferenceToVariable(string name, string type, string referenceStatistic, ComputeValue computation)
         {
             GetVariable(name).Add(new ComputedValue(type, GetVariable(referenceStatistic), computation));

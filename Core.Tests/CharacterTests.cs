@@ -39,7 +39,7 @@ namespace PCSharpGen.Core.Tests
             Character c = _rules.CreateCharacter();
             c.SetVariableBase("Str", 16);
             c.SetVariableBase("BAB", 1);
-            c.AddReferenceToVariable("StrAttack", "BAB").AddReference("StrMod");
+            c.DefineVariable("StrAttack").AddReference("BAB").AddReference("StrMod");
             c.GetVariable("StrAttack").Value.Should().Be(4);
         }
 
