@@ -64,10 +64,24 @@ namespace PCSharpGen.Core.Tests
             c.SetVariableBase("BAB", 1);
             c.AddReferenceToVariable("StrAttack", "BAB")
                 .AddReference("StrBonus")
-                .Add("insight", 40)
-                .Add("insight", 600);
+                .Add("unstacked", 40)
+                .Add("unstacked", 600);
 
             c.GetVariable("StrAttack").Value.Should().Be(604);
+        }
+
+        [Test]
+        public void StackedBonusTypes()
+        {
+            var c = _rules.CreateCharacter();
+            c.SetVariableBase("Str", 16);
+            c.SetVariableBase("BAB", 1);
+            c.AddReferenceToVariable("StrAttack", "BAB")
+                .AddReference("StrBonus")
+                .Add("stacked", 40)
+                .Add("stacked", 600);
+
+            c.GetVariable("StrAttack").Value.Should().Be(644);
         }
     }
 }

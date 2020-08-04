@@ -25,7 +25,7 @@ namespace PCSharpGen.Core
             _values = values.ToList();
         }
 
-        public int Value => GetAppliedBonuses().Sum(v => v.Value);
+        public int Value => GetAppliedModifiers().Sum(v => v.Value);
 
         public CharacterVariable Replace(string ofType, GameValue newValue)
         {
@@ -40,7 +40,7 @@ namespace PCSharpGen.Core
             return this;
         }
 
-        public IEnumerable<GameValue> GetAppliedBonuses()
+        public IEnumerable<GameValue> GetAppliedModifiers()
         {
             var applied = new List<GameValue>();
             IEnumerable<IGrouping<string, GameValue>> groups = _values.GroupBy(v => v.Type);
