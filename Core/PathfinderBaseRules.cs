@@ -19,11 +19,11 @@ namespace PCSharpGen.Core
         {
             foreach (string abilityScore in s_abilityScores)
             {
-                character.SetStatisticBase(abilityScore, 10);
-                character.AddReferenceToStatistic(abilityScore + "Mod",
+                character.SetVariableBase(abilityScore, 10);
+                character.AddReferenceToVariable(abilityScore + "Mod",
                     abilityScore,
                     ValueComputation.AbilityScoreModifier);
-                character.AddReferenceToStatistic(abilityScore + "Bonus",
+                character.AddReferenceToVariable(abilityScore + "Bonus",
                     abilityScore + "Mod",
                     ValueComputation.WithMin(0));
             }

@@ -3,34 +3,34 @@ using System.Linq;
 
 namespace PCSharpGen.Core
 {
-    public class CharacterStatistic
+    public class CharacterVariable
     {
         private readonly Character _character;
 
-        public CharacterStatistic(Character character) : this(character, new List<GameValue>())
+        public CharacterVariable(Character character) : this(character, new List<GameValue>())
         {
         }
 
-        public CharacterStatistic(Character character, GameValue value)
+        public CharacterVariable(Character character, GameValue value)
         {
             _character = character;
             _values = new List<GameValue>{value};
         }
 
-        public CharacterStatistic(Character character, IEnumerable<GameValue> values)
+        public CharacterVariable(Character character, IEnumerable<GameValue> values)
         {
             _character = character;
             _values = values.ToList();
         }
 
-        public CharacterStatistic Replace(string ofType, GameValue newValue)
+        public CharacterVariable Replace(string ofType, GameValue newValue)
         {
             _values.RemoveAll(v => v.Type == ofType);
             _values.Add(newValue);
             return this;
         }
 
-        public CharacterStatistic Add(GameValue value)
+        public CharacterVariable Add(GameValue value)
         {
             _values.Add(value);
             return this;

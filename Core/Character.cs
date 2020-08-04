@@ -15,63 +15,63 @@ namespace PCSharpGen.Core
 
         public string Name { get; set; }
 
-        public Dictionary<string, CharacterStatistic> Statistics { get; } = new Dictionary<string, CharacterStatistic>(StringComparer.InvariantCultureIgnoreCase);
+        public Dictionary<string, CharacterVariable> Variables { get; } = new Dictionary<string, CharacterVariable>(StringComparer.InvariantCultureIgnoreCase);
 
-        public CharacterStatistic GetStatistic(string name)
+        public CharacterVariable GetVariable(string name)
         {
-            if (Statistics.TryGetValue(name, out var result))
+            if (Variables.TryGetValue(name, out var result))
                 return result;
-            result = new CharacterStatistic(this, new List<GameValue>());
-            Statistics.Add(name, result);
+            result = new CharacterVariable(this, new List<GameValue>());
+            Variables.Add(name, result);
             return result;
         }
 
-        public BonusBuilder SetStatisticBase(string name, int value)
+        public BonusBuilder SetVariableBase(string name, int value)
         {
             var fixedValue = new FixedValue("BASE", value);
-            if (Statistics.TryGetValue(name, out CharacterStatistic stat))
+            if (Variables.TryGetValue(name, out CharacterVariable stat))
             {
                 stat.Replace("BASE", fixedValue);
             }
             else
             {
-                Statistics.Add(name, new CharacterStatistic(this, fixedValue));
+                Variables.Add(name, new CharacterVariable(this, fixedValue));
             }
 
             return new BonusBuilder(this, name);
         }
 
-        public BonusBuilder AddToStatistic(string name, string type, int value)
+        public BonusBuilder AddToVariable(string name, string type, int value)
         {
-            GetStatistic(name).Add(new FixedValue(type, value));
+            GetVariable(name).Add(new FixedValue(type, value));
             return new BonusBuilder(this, name);
         }
 
-        public BonusBuilder AddToStatistic(string name, int value)
+        public BonusBuilder AddToVariable(string name, int value)
         {
-            return AddToStatistic(name, name, value);
+            return AddToVariable(name, name, value);
         }
 
-        public BonusBuilder AddReferenceToStatistic(string name, string type, string referenceStatistic)
+        public BonusBuilder AddReferenceToVariable(string name, string type, string referenceStatistic)
         {
-            GetStatistic(name).Add(new ComputedValue(type, GetStatistic(referenceStatistic)));
+            GetVariable(name).Add(new ComputedValue(type, GetVariable(referenceStatistic)));
             return new BonusBuilder(this, name);
         }
 
-        public BonusBuilder AddReferenceToStatistic(string name, string referenceStatistic)
+        public BonusBuilder AddReferenceToVariable(string name, string referenceStatistic)
         {
-            return AddReferenceToStatistic(name, name, referenceStatistic);
+            return AddReferenceToVariable(name, name, referenceStatistic);
         }
 
-        public BonusBuilder AddReferenceToStatistic(string name, string type, string referenceStatistic, ComputeValue computation)
+        public BonusBuilder AddReferenceToVariable(string name, string type, string referenceStatistic, ComputeValue computation)
         {
-            GetStatistic(name).Add(new ComputedValue(type, GetStatistic(referenceStatistic), computation));
+            GetVariable(name).Add(new ComputedValue(type, GetVariable(referenceStatistic), computation));
             return new BonusBuilder(this, name);
         }
 
-        public BonusBuilder AddReferenceToStatistic(string name, string referenceStatistic, ComputeValue computation)
+        public BonusBuilder AddReferenceToVariable(string name, string referenceStatistic, ComputeValue computation)
         {
-            return AddReferenceToStatistic(name, name, referenceStatistic, computation);
+            return AddReferenceToVariable(name, name, referenceStatistic, computation);
         }
 
         public struct BonusBuilder
@@ -92,7 +92,7 @@ namespace PCSharpGen.Core
 
             public BonusBuilder Add(string type, int value)
             {
-                _character.GetStatistic(_name).Add(new FixedValue(type, value));
+                _character.GetVariable(_name).Add(new FixedValue(type, value));
                 return this;
             }
 
@@ -103,7 +103,7 @@ namespace PCSharpGen.Core
 
             public BonusBuilder AddReference(string type, string referenceStatistic)
             {
-                _character.GetStatistic(_name).Add(new ComputedValue(type, _character.GetStatistic(referenceStatistic)));
+                _character.GetVariable(_name).Add(new ComputedValue(type, _character.GetVariable(referenceStatistic)));
                 return this;
             }
 
@@ -114,7 +114,7 @@ namespace PCSharpGen.Core
 
             public BonusBuilder AddReference(string type, string referenceStatistic, ComputeValue computation)
             {
-                _character.GetStatistic(_name).Add(new ComputedValue(type, _character.GetStatistic(referenceStatistic), computation));
+                _character.GetVariable(_name).Add(new ComputedValue(type, _character.GetVariable(referenceStatistic), computation));
                 return this;
             }
         }
