@@ -17,7 +17,7 @@ namespace PCSharpGen.Core.Tests
         }
 
         [Test]
-        public void AbilityScoreBonusComputation()
+        public void ComputedValue()
         {
             Character c = _rules.CreateCharacter();
             c.SetVariableBase("Str", 5);
@@ -26,15 +26,7 @@ namespace PCSharpGen.Core.Tests
         }
 
         [Test]
-        public void AbilityScoreModComputation()
-        {
-            Character c = _rules.CreateCharacter();
-            c.SetVariableBase("Str", 16);
-            c.GetVariable("StrMod").Value.Should().Be(3);
-        }
-
-        [Test]
-        public void CombinedValue()
+        public void MultipleValues()
         {
             Character c = _rules.CreateCharacter();
             c.SetVariableBase("Str", 16);
@@ -44,7 +36,7 @@ namespace PCSharpGen.Core.Tests
         }
 
         [Test]
-        public void OverlappedBonusTypes()
+        public void NonStackingBonuses()
         {
             Character c = _rules.CreateCharacter();
             c.SetVariableBase("Str", 16);
@@ -58,7 +50,7 @@ namespace PCSharpGen.Core.Tests
         }
 
         [Test]
-        public void StackedBonusTypes()
+        public void StackingBonuses()
         {
             Character c = _rules.CreateCharacter();
             c.SetVariableBase("Str", 16);
