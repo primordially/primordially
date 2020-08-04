@@ -7,6 +7,8 @@ namespace PCSharpGen.Core
     {
         private readonly Character _character;
 
+        private readonly List<GameValue> _values;
+
         public CharacterVariable(Character character) : this(character, new List<GameValue>())
         {
         }
@@ -14,7 +16,7 @@ namespace PCSharpGen.Core
         public CharacterVariable(Character character, GameValue value)
         {
             _character = character;
-            _values = new List<GameValue>{value};
+            _values = new List<GameValue> { value };
         }
 
         public CharacterVariable(Character character, IEnumerable<GameValue> values)
@@ -22,6 +24,8 @@ namespace PCSharpGen.Core
             _character = character;
             _values = values.ToList();
         }
+
+        public int Value => GetAppliedBonuses().Sum(v => v.Value);
 
         public CharacterVariable Replace(string ofType, GameValue newValue)
         {
@@ -36,14 +40,11 @@ namespace PCSharpGen.Core
             return this;
         }
 
-        private readonly List<GameValue> _values;
-
         public IEnumerable<GameValue> GetAppliedBonuses()
         {
-            List<GameValue> applied = new List<GameValue>();
-            var groups = _values.GroupBy(v => v.Type);
-            int value = 0;
-            foreach (var group in groups)
+            var applied = new List<GameValue>();
+            IEnumerable<IGrouping<string, GameValue>> groups = _values.GroupBy(v => v.Type);
+            foreach (IGrouping<string, GameValue> group in groups)
             {
                 if (_character.Rules.StackedBonuses.Contains(group.Key))
                 {
@@ -53,9 +54,9 @@ namespace PCSharpGen.Core
                 {
                     int maxValue = 0;
                     GameValue maxSource = null;
-                    foreach (var v in group)
+                    foreach (GameValue v in group)
                     {
-                        var part = v.Value;
+                        int part = v.Value;
                         if (part < 0)
                         {
                             applied.Add(v);
@@ -76,7 +77,5 @@ namespace PCSharpGen.Core
 
             return applied;
         }
-
-        public int Value => GetAppliedBonuses().Sum(v => v.Value);
     }
 }
