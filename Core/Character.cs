@@ -20,7 +20,7 @@ namespace PCSharpGen.Core
         {
             if (Variables.TryGetValue(name, out var result))
                 return result;
-            result = new CharacterVariable(this, new List<GameValue>());
+            result = new CharacterVariable(this, new List<Bonus>());
             Variables.Add(name, result);
             return result;
         }
@@ -45,7 +45,7 @@ namespace PCSharpGen.Core
 
             public BonusBuilder Add(int value)
             {
-                return Add(_name, value);
+                return Add("", value);
             }
 
             public BonusBuilder Add(string type, int value)
@@ -56,7 +56,7 @@ namespace PCSharpGen.Core
 
             public BonusBuilder AddReference(string referenceStatistic)
             {
-                return AddReference(referenceStatistic, referenceStatistic);
+                return AddReference("", referenceStatistic);
             }
 
             public BonusBuilder AddReference(string type, string referenceStatistic)
@@ -67,7 +67,7 @@ namespace PCSharpGen.Core
 
             public BonusBuilder AddReference(string referenceStatistic, ComputeValue computation)
             {
-                return AddReference(referenceStatistic, referenceStatistic, computation);
+                return AddReference("", referenceStatistic, computation);
             }
 
             public BonusBuilder AddReference(string type, string referenceStatistic, ComputeValue computation)

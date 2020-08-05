@@ -2,7 +2,7 @@
 {
     public delegate int ComputeValue(CharacterVariable stat);
 
-    public class ComputedValue : GameValue
+    public class ComputedValue : Bonus
     {
         public ComputedValue(string type, CharacterVariable source) : this(type, source, null)
         {

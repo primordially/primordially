@@ -1,6 +1,6 @@
 ﻿namespace PCSharpGen.Core
 {
-    public class FixedValue : GameValue
+    public class FixedValue : Bonus
     {
         public FixedValue(string type, int value)
         {

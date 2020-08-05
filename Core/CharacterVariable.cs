@@ -7,19 +7,19 @@ namespace PCSharpGen.Core
     {
         private readonly Character _character;
 
-        private readonly List<GameValue> _values;
+        private readonly List<Bonus> _values;
 
-        public CharacterVariable(Character character) : this(character, new List<GameValue>())
+        public CharacterVariable(Character character) : this(character, new List<Bonus>())
         {
         }
 
-        public CharacterVariable(Character character, GameValue value)
+        public CharacterVariable(Character character, Bonus value)
         {
             _character = character;
-            _values = new List<GameValue> { value };
+            _values = new List<Bonus> { value };
         }
 
-        public CharacterVariable(Character character, IEnumerable<GameValue> values)
+        public CharacterVariable(Character character, IEnumerable<Bonus> values)
         {
             _character = character;
             _values = values.ToList();
@@ -27,24 +27,24 @@ namespace PCSharpGen.Core
 
         public int Value => GetAppliedModifiers().Sum(v => v.Value);
 
-        public CharacterVariable Replace(string ofType, GameValue newValue)
+        public CharacterVariable Replace(string ofType, Bonus newValue)
         {
             _values.RemoveAll(v => v.Type == ofType);
             _values.Add(newValue);
             return this;
         }
 
-        public CharacterVariable Add(GameValue value)
+        public CharacterVariable Add(Bonus value)
         {
             _values.Add(value);
             return this;
         }
 
-        public IEnumerable<GameValue> GetAppliedModifiers()
+        public IEnumerable<Bonus> GetAppliedModifiers()
         {
-            var applied = new List<GameValue>();
-            IEnumerable<IGrouping<string, GameValue>> groups = _values.GroupBy(v => v.Type);
-            foreach (IGrouping<string, GameValue> group in groups)
+            var applied = new List<Bonus>();
+            IEnumerable<IGrouping<string, Bonus>> groups = _values.GroupBy(v => v.Type);
+            foreach (IGrouping<string, Bonus> group in groups)
             {
                 if (_character.Rules.StackedBonuses.Contains(group.Key))
                 {
@@ -53,8 +53,8 @@ namespace PCSharpGen.Core
                 else
                 {
                     int maxValue = 0;
-                    GameValue maxSource = null;
-                    foreach (GameValue v in group)
+                    Bonus maxSource = null;
+                    foreach (Bonus v in group)
                     {
                         int part = v.Value;
                         if (part < 0)
