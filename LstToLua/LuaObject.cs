@@ -2,7 +2,7 @@
 {
     internal class LuaObject : IDumpable
     {
-        public string SourcePage { get; protected set; }
+        public string? SourcePage { get; protected set; }
 
         public virtual void Dump(LuaTextWriter output)
         {

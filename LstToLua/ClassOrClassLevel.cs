@@ -105,20 +105,23 @@ namespace PCSharpGen.LstToLua
             output.WriteList("ClassSkills", ClassSkills);
             output.WriteList("AddedSpellCasterLevels", AddedSpellCasterLevels);
             output.WriteList("SpellLists", SpellLists);
-            output.WriteObjectValue("WeaponBonusProficiencySelections", () =>
+            if (WeaponBonusProficiencySelections.Any())
             {
-                foreach (var selection in WeaponBonusProficiencySelections)
+                output.WriteObjectValue("WeaponBonusProficiencySelections", () =>
                 {
-                    output.WriteStartObject();
-                    foreach (var option in selection)
+                    foreach (var selection in WeaponBonusProficiencySelections)
                     {
-                        output.WriteValue(option);
-                        output.Write(", ");
+                        output.WriteStartObject();
+                        foreach (var option in selection)
+                        {
+                            output.WriteValue(option);
+                            output.Write(", ");
+                        }
+                        output.WriteLine();
+                        output.WriteEndObject();
                     }
-                    output.WriteLine();
-                    output.WriteEndObject();
-                }
-            });
+                });
+            }
             base.DumpMembers(output);
         }
     }

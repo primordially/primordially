@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using LibGit2Sharp;
 
 namespace PCSharpGen.LstToLua
 {
@@ -16,9 +17,23 @@ namespace PCSharpGen.LstToLua
 
             var lines = ReadTsv(lstFile).ToList();
 
+            Console.WriteLine($"Converting File {lstFile} -> {luaFile}");
+            var dir = Path.GetDirectoryName(luaFile);
+            Directory.CreateDirectory(dir);
             using (var outputStream = new FileStream(luaFile, FileMode.Create, FileAccess.Write))
             using (var output = new StreamWriter(outputStream))
             {
+                var repoDir = Repository.Discover(lstFile);
+                if (string.IsNullOrEmpty(repoDir))
+                {
+                    throw new ArgumentException("LST file must be in a git repo.");
+                }
+                var repo = new Repository(repoDir);
+                var repoUrl = repo.Network.Remotes["upstream"]?.Url ?? repo.Network.Remotes["origin"]?.Url;
+                var sha = repo.Head.Tip.Sha;
+                var relativePath = Path.GetRelativePath(repo.Info.WorkingDirectory, lstFile);
+                output.WriteLine($"-- Converted From LST file {relativePath}");
+                output.WriteLine($"-- From repository {repoUrl} at commit {sha}");
                 var luaWriter = new LuaTextWriter(output);
                 string? state = null;
                 ClassDefinition? classDefinition = null;
@@ -75,7 +90,7 @@ namespace PCSharpGen.LstToLua
                 }
             }
 
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Done.");
         }
 
         private static IEnumerable<TsvLine> ReadTsv(string file)

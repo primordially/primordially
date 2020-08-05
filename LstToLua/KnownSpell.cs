@@ -1,6 +1,6 @@
 ﻿namespace PCSharpGen.LstToLua
 {
-    internal class KnownSpell
+    internal class KnownSpell : LuaObject
     {
         public KnownSpell(int? level, string? name, string? type)
         {
@@ -13,9 +13,8 @@
         public string? Name { get; }
         public string? Type { get; }
 
-        public void Dump(LuaTextWriter output)
+        protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteStartObject();
             if (Level != null)
             {
                 output.WriteKeyValue("Level", Level.Value);
@@ -28,7 +27,7 @@
             {
                 output.WriteKeyValue("Type", Type);
             }
-            output.WriteEndObject();
+            base.DumpMembers(output);
         }
 
         public static KnownSpell Parse(TextSpan value)

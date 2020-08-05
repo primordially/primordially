@@ -82,7 +82,6 @@ namespace PCSharpGen.LstToLua.Conditions
             else
             {
                 output.Write("return ");
-                bool first = true;
 
                 var conditions = RequiredClassLevels.Select(t => $"class == \"{t.Key}\" and level >= {t.Value}").Concat(
                     RequiredSpellCastingLevels.Select(t => $"GetSpellCastingType(class) == \"{t.Key}\" and level >= {t.Value}")).Concat(

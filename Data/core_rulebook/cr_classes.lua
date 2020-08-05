@@ -1,3 +1,5 @@
+-- Converted From LST file data\pathfinder\paizo\roleplaying_game\core_rulebook\cr_classes.lst
+-- From repository https://github.com/pcgen/pcgen at commit 11ceb52482855f2e5f0f6c108c3dc665b12af237
 SetSource({
   SourceLong="Core Rulebook",
   SourceShort="CR",
@@ -106,8 +108,6 @@ DefineClass({
       },
     },
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.31",
   Conditions={
     function (character)
@@ -153,8 +153,6 @@ DefineClass({
           Nature="AUTOMATIC",
           Name="Barbarian",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -261,8 +259,6 @@ DefineClass({
       },
     },
   },
-  WeaponBonusProficiencySelections={
-  },
   HitDie=12,
   MaxLevel=20,
   SkillPointsPerLevel=4,
@@ -288,8 +284,6 @@ DefineClass({
           Nature="AUTOMATIC",
           Name="Barbarian",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -448,8 +442,6 @@ DefineClass({
       Formula="Caster_Level_BL_Stripped_Bard",
     },
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.34",
   HitDie=8,
   MaxLevel=20,
@@ -476,8 +468,6 @@ DefineClass({
         0, 1, },
       SpellsKnown={
         4, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="2",
@@ -485,8 +475,6 @@ DefineClass({
         0, 2, },
       SpellsKnown={
         5, 3, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="3",
@@ -494,8 +482,6 @@ DefineClass({
         0, 3, },
       SpellsKnown={
         6, 4, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="4",
@@ -503,8 +489,6 @@ DefineClass({
         0, 3, 1, },
       SpellsKnown={
         6, 4, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="5",
@@ -512,8 +496,6 @@ DefineClass({
         0, 4, 2, },
       SpellsKnown={
         6, 4, 3, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="6",
@@ -521,8 +503,6 @@ DefineClass({
         0, 4, 3, },
       SpellsKnown={
         6, 4, 4, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="7",
@@ -530,8 +510,6 @@ DefineClass({
         0, 4, 3, 1, },
       SpellsKnown={
         6, 5, 4, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="8",
@@ -539,8 +517,6 @@ DefineClass({
         0, 4, 4, 2, },
       SpellsKnown={
         6, 5, 4, 3, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="9",
@@ -548,8 +524,6 @@ DefineClass({
         0, 5, 4, 3, },
       SpellsKnown={
         6, 5, 4, 4, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="10",
@@ -557,8 +531,6 @@ DefineClass({
         0, 5, 4, 3, 1, },
       SpellsKnown={
         6, 5, 5, 4, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="11",
@@ -566,8 +538,6 @@ DefineClass({
         0, 5, 4, 4, 2, },
       SpellsKnown={
         6, 6, 5, 4, 3, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="12",
@@ -575,8 +545,6 @@ DefineClass({
         0, 5, 5, 4, 3, },
       SpellsKnown={
         6, 6, 5, 4, 4, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="13",
@@ -584,8 +552,6 @@ DefineClass({
         0, 5, 5, 4, 3, 1, },
       SpellsKnown={
         6, 6, 5, 5, 4, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="14",
@@ -593,8 +559,6 @@ DefineClass({
         0, 5, 5, 4, 4, 2, },
       SpellsKnown={
         6, 6, 6, 5, 4, 3, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="15",
@@ -602,8 +566,6 @@ DefineClass({
         0, 5, 5, 5, 4, 3, },
       SpellsKnown={
         6, 6, 6, 5, 4, 4, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="16",
@@ -611,8 +573,6 @@ DefineClass({
         0, 5, 5, 5, 4, 3, 1, },
       SpellsKnown={
         6, 6, 6, 5, 5, 4, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="17",
@@ -620,8 +580,6 @@ DefineClass({
         0, 5, 5, 5, 4, 4, 2, },
       SpellsKnown={
         6, 6, 6, 6, 5, 4, 3, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="18",
@@ -629,8 +587,6 @@ DefineClass({
         0, 5, 5, 5, 5, 4, 3, },
       SpellsKnown={
         6, 6, 6, 6, 5, 4, 4, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="19",
@@ -638,8 +594,6 @@ DefineClass({
         0, 5, 5, 5, 5, 5, 4, },
       SpellsKnown={
         6, 6, 6, 6, 5, 5, 4, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="20",
@@ -647,8 +601,6 @@ DefineClass({
         0, 5, 5, 5, 5, 5, 5, },
       SpellsKnown={
         6, 6, 6, 6, 6, 5, 5, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -658,161 +610,6 @@ DefineClass({
           Nature="AUTOMATIC",
           Name="Bard",
         },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Bard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Bard ~ Bardic Knowledge",
-          Conditions={
-            function (character)
-              return (character.Variables["Bard_CF_BardicKnowledge"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Bard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Bard ~ Bardic Countersong",
-          Conditions={
-            function (character)
-              return (character.Variables["Bard_CF_CounterSong"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Bard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Bard ~ Bardic Performance",
-          Conditions={
-            function (character)
-              return (character.Variables["Bard_CF_BardicPerformance"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Bard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Bard ~ Armored Casting",
-          Conditions={
-            function (character)
-              return (character.Variables["Bard_CF_ArmoredCasting"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Bard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Bard ~ Cantrips",
-          Conditions={
-            function (character)
-              return (character.Variables["Bard_CF_Cantrips"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Bard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Bard ~ Versatile Performance",
-          Conditions={
-            function (character)
-              return (character.Variables["Bard_CF_VersatilePerformance"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Bard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Bard ~ Well-Versed",
-          Conditions={
-            function (character)
-              return (character.Variables["Bard_CF_WellVersed"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="5",
-      Abilities={
-        {
-          Category="Bard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Bard ~ Lore Master",
-          Conditions={
-            function (character)
-              return (character.Variables["Bard_CF_LoreMaster"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="10",
-      Abilities={
-        {
-          Category="Bard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Bard ~ Jack of All Trades",
-          Conditions={
-            function (character)
-              return (character.Variables["Bard_CF_JackOfAllTrades"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -989,8 +786,6 @@ DefineClass({
       Formula="Caster_Level_BL_Stripped_Cleric",
     },
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.38",
   HitDie=8,
   MaxLevel=20,
@@ -1019,16 +814,36 @@ DefineClass({
     SpellType="Divine",
   },
   AutomaticKnownSpells={
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
+    {
+      Level=0,
+    },
+    {
+      Level=1,
+    },
+    {
+      Level=2,
+    },
+    {
+      Level=3,
+    },
+    {
+      Level=4,
+    },
+    {
+      Level=5,
+    },
+    {
+      Level=6,
+    },
+    {
+      Level=7,
+    },
+    {
+      Level=8,
+    },
+    {
+      Level=9,
+    },
   },
   Levels={
     {
@@ -1043,8 +858,6 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -1057,8 +870,6 @@ DefineClass({
             end,
           },
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -1073,8 +884,6 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -1088,8 +897,6 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -1099,95 +906,6 @@ DefineClass({
           Nature="AUTOMATIC",
           Name="Cleric",
         },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Cleric ~ Weapon and Armor Proficiency",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Cleric Class Feature",
-          Nature="AUTOMATIC",
-          Name="Cleric ~ Aura",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Cleric Class Feature",
-          Nature="AUTOMATIC",
-          Name="Cleric ~ Channel Energy",
-          Conditions={
-            function (character)
-              return (character.Variables["Cleric_CF_ChannelEnergy"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Cleric Class Feature",
-          Nature="AUTOMATIC",
-          Name="Cleric ~ Orisons",
-          Conditions={
-            function (character)
-              return (character.Variables["Cleric_CF_Orisons"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Cleric Class Feature",
-          Nature="AUTOMATIC",
-          Name="Cleric ~ Spontaneous Casting",
-          Conditions={
-            function (character)
-              return (character.Variables["Cleric_CF_SpontaneousCasting"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Cleric Class Feature",
-          Nature="AUTOMATIC",
-          Name="Cleric ~ Domains",
-        },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -1207,148 +925,106 @@ DefineClass({
           Formula="ClericSkillPts",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
       SpellsPerDay={
         3, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="2",
       SpellsPerDay={
         4, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="3",
       SpellsPerDay={
         4, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="4",
       SpellsPerDay={
         4, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="5",
       SpellsPerDay={
         4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="6",
       SpellsPerDay={
         4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="7",
       SpellsPerDay={
         4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="8",
       SpellsPerDay={
         4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="9",
       SpellsPerDay={
         4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="10",
       SpellsPerDay={
         4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="11",
       SpellsPerDay={
         4, 4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="12",
       SpellsPerDay={
         4, 4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="13",
       SpellsPerDay={
         4, 4, 4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="14",
       SpellsPerDay={
         4, 4, 4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="15",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="16",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="17",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="18",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="19",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 4, 4, 3, 3, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="20",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 4, 4, 4, 4, },
-      WeaponBonusProficiencySelections={
-      },
     },
   },
 })
@@ -1499,8 +1175,6 @@ DefineClass({
       Formula="Caster_Level_BL_Stripped_Druid",
     },
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.48",
   Conditions={
     function (character)
@@ -1547,16 +1221,36 @@ DefineClass({
     },
   },
   AutomaticKnownSpells={
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
+    {
+      Level=0,
+    },
+    {
+      Level=1,
+    },
+    {
+      Level=2,
+    },
+    {
+      Level=3,
+    },
+    {
+      Level=4,
+    },
+    {
+      Level=5,
+    },
+    {
+      Level=6,
+    },
+    {
+      Level=7,
+    },
+    {
+      Level=8,
+    },
+    {
+      Level=9,
+    },
   },
   Levels={
     {
@@ -1567,8 +1261,6 @@ DefineClass({
           Nature="AUTOMATIC",
           Name="Druid",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -1583,8 +1275,6 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -1597,8 +1287,6 @@ DefineClass({
             end,
           },
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -1613,8 +1301,6 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -1627,207 +1313,6 @@ DefineClass({
             end,
           },
         },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Druid Class Feature",
-          Nature="AUTOMATIC",
-          Name="Druid ~ Orisons",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Druid Class Feature",
-          Nature="AUTOMATIC",
-          Name="Druid ~ Spontaneous Casting",
-          Conditions={
-            function (character)
-              return (character.Variables["Druid_CF_SpontaneousCasting"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Druid Class Feature",
-          Nature="AUTOMATIC",
-          Name="Druid ~ Nature Sense",
-          Conditions={
-            function (character)
-              return (character.Variables["Druid_CF_NatureSense"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Druid Class Feature",
-          Nature="AUTOMATIC",
-          Name="Druid ~ Wild Empathy",
-          Conditions={
-            function (character)
-              return (character.Variables["Druid_CF_WildEmpathy"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Druid Class Feature",
-          Nature="AUTOMATIC",
-          Name="Druid ~ Nature Bond",
-          Conditions={
-            function (character)
-              return (character.Variables["Druid_CF_NatureBond"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Druid Class Feature",
-          Nature="AUTOMATIC",
-          Name="Druid ~ Woodland Stride",
-          Conditions={
-            function (character)
-              return (character.Variables["Druid_CF_WoodlandStride"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="3",
-      Abilities={
-        {
-          Category="Druid Class Feature",
-          Nature="AUTOMATIC",
-          Name="Druid ~ Trackless Step",
-          Conditions={
-            function (character)
-              return (character.Variables["Druid_CF_TracklessStep"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="4",
-      Abilities={
-        {
-          Category="Druid Class Feature",
-          Nature="AUTOMATIC",
-          Name="Druid ~ Wild Shape",
-          Conditions={
-            function (character)
-              return (character.Variables["Druid_CF_WildShape"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="4",
-      Abilities={
-        {
-          Category="Druid Class Feature",
-          Nature="AUTOMATIC",
-          Name="Druid ~ Resist Nature's Lure",
-          Conditions={
-            function (character)
-              return (character.Variables["Druid_CF_ResistNaturesLure"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="9",
-      Abilities={
-        {
-          Category="Druid Class Feature",
-          Nature="AUTOMATIC",
-          Name="Druid ~ Venom Immunity",
-          Conditions={
-            function (character)
-              return (character.Variables["Druid_CF_VenomImmunity"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="13",
-      Abilities={
-        {
-          Category="Druid Class Feature",
-          Nature="AUTOMATIC",
-          Name="Druid ~ A Thousand Faces",
-          Conditions={
-            function (character)
-              return (character.Variables["Druid_CF_AThousandFaces"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="15",
-      Abilities={
-        {
-          Category="Druid Class Feature",
-          Nature="AUTOMATIC",
-          Name="Druid ~ Timeless Body",
-          Conditions={
-            function (character)
-              return (character.Variables["Druid_CF_TimelessBody"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -1846,8 +1331,6 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="0",
@@ -1864,8 +1347,6 @@ DefineClass({
             end,
           },
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -1884,8 +1365,6 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="0",
@@ -1902,8 +1381,6 @@ DefineClass({
             end,
           },
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -1922,8 +1399,6 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="0",
@@ -1940,8 +1415,6 @@ DefineClass({
             end,
           },
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -1960,148 +1433,106 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
       SpellsPerDay={
         3, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="2",
       SpellsPerDay={
         4, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="3",
       SpellsPerDay={
         4, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="4",
       SpellsPerDay={
         4, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="5",
       SpellsPerDay={
         4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="6",
       SpellsPerDay={
         4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="7",
       SpellsPerDay={
         4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="8",
       SpellsPerDay={
         4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="9",
       SpellsPerDay={
         4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="10",
       SpellsPerDay={
         4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="11",
       SpellsPerDay={
         4, 4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="12",
       SpellsPerDay={
         4, 4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="13",
       SpellsPerDay={
         4, 4, 4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="14",
       SpellsPerDay={
         4, 4, 4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="15",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="16",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="17",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="18",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="19",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 4, 4, 3, 3, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="20",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 4, 4, 4, 4, },
-      WeaponBonusProficiencySelections={
-      },
     },
   },
 })
@@ -2207,8 +1638,6 @@ DefineClass({
       },
     },
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.55",
   HitDie=10,
   MaxLevel=20,
@@ -2234,444 +1663,6 @@ DefineClass({
           Nature="AUTOMATIC",
           Name="Fighter",
         },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Fighter Class Feature",
-          Nature="AUTOMATIC",
-          Name="Weapon and Armor Proficiency ~ Fighter",
-          Conditions={
-            function (character)
-              return not (1 <= #filter(character.Abilities, function (ability)
-                return ability.Category == "Archetype" and (ability.Type == "FighterWeaponProficiencies" or ability.Type == "FighterArmorProficiencies" or ability.Type == "FighterHeavyArmorProficiency" or ability.Type == "FighterMediumArmorProficiency" or ability.Type == "FighterLightArmorProficiency" or ability.Type == "FighterShieldProficiency" or ability.Type == "FighterTowerShieldProficiency")
-              end))
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Internal",
-          Nature="AUTOMATIC",
-          Name="Weapon Prof ~ Simple",
-          Conditions={
-            function (character)
-              return not (1 <= #filter(character.Abilities, function (ability)
-                return ability.Category == "Archetype" and (ability.Type == "FighterWeaponProficiencies")
-              end))
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Internal",
-          Nature="AUTOMATIC",
-          Name="Armor Prof ~ Heavy",
-          Conditions={
-            function (character)
-              return not (1 <= #filter(character.Abilities, function (ability)
-                return ability.Category == "Archetype" and (ability.Type == "FighterArmorProficiencies" or ability.Type == "FighterHeavyArmorProficiency")
-              end))
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Internal",
-          Nature="AUTOMATIC",
-          Name="Armor Prof ~ Medium",
-          Conditions={
-            function (character)
-              return not (1 <= #filter(character.Abilities, function (ability)
-                return ability.Category == "Archetype" and (ability.Type == "FighterArmorProficiencies" or ability.Type == "FighterMediumArmorProficiency")
-              end))
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Internal",
-          Nature="AUTOMATIC",
-          Name="Armor Prof ~ Light",
-          Conditions={
-            function (character)
-              return not (1 <= #filter(character.Abilities, function (ability)
-                return ability.Category == "Archetype" and (ability.Type == "FighterArmorProficiencies" or ability.Type == "FighterLightArmorProficiency")
-              end))
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Internal",
-          Nature="AUTOMATIC",
-          Name="Shield Prof",
-          Conditions={
-            function (character)
-              return not (1 <= #filter(character.Abilities, function (ability)
-                return ability.Category == "Archetype" and (ability.Type == "FighterArmorProficiencies" or ability.Type == "FighterShieldProficiency")
-              end))
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Internal",
-          Nature="AUTOMATIC",
-          Name="Shield Prof ~ Tower",
-          Conditions={
-            function (character)
-              return not (1 <= #filter(character.Abilities, function (ability)
-                return ability.Category == "Archetype" and (ability.Type == "FighterArmorProficiencies" or ability.Type == "FighterTowerShieldProficiency")
-              end))
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Fighter Level Advanced Feat Tracker",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Weapon Specialization Qualify",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Disruptive Qualify",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Greater Shield Focus Qualify",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Greater Weapon Focus Qualify",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Spellbreaker Qualify",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Greater Weapon Specialization Qualify",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Penetrating Strike Qualify",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Critical Mastery Qualify",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Greater Penetrating Strike Qualify",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Bonuses={
-        {
-          Category="VAR",
-          Variables={
-            "BraveryLVL",
-          },
-          Formula="FighterLVL",
-          Type={
-            Name="Class",
-            Replace=false,
-            Stack=false,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="3",
-      Bonuses={
-        {
-          Category="VAR",
-          Variables={
-            "ArmorTrainingLVL",
-          },
-          Formula="FighterLVL",
-          Type={
-            Name="Class",
-            Replace=false,
-            Stack=false,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="5",
-      Bonuses={
-        {
-          Category="VAR",
-          Variables={
-            "FighterWeaponTrainingLVL",
-          },
-          Formula="FighterLVL",
-          Type={
-            Name="Class",
-            Replace=false,
-            Stack=false,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Bonuses={
-        {
-          Category="VAR",
-          Variables={
-            "FighterWeaponQualifyLVL",
-          },
-          Formula="FighterLVL",
-          Type={
-            Name="Class",
-            Replace=false,
-            Stack=false,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Fighter Class Feature",
-          Nature="AUTOMATIC",
-          Name="Fighter ~ Bonus Feats",
-          Conditions={
-            function (character)
-              return (character.Variables["Fighter_CF_BonusFeats"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Fighter Class Feature",
-          Nature="AUTOMATIC",
-          Name="Fighter ~ Bravery",
-          Conditions={
-            function (character)
-              return (character.Variables["Fighter_CF_Bravery"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="3",
-      Abilities={
-        {
-          Category="Fighter Class Feature",
-          Nature="AUTOMATIC",
-          Name="Fighter ~ Armor Training",
-          Conditions={
-            function (character)
-              return (character.Variables["Fighter_CF_ArmorTraining"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="5",
-      Abilities={
-        {
-          Category="Fighter Class Feature",
-          Nature="AUTOMATIC",
-          Name="Fighter ~ Weapon Training",
-          Conditions={
-            function (character)
-              return (character.Variables["Fighter_CF_WeaponTraining"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="19",
-      Abilities={
-        {
-          Category="Fighter Class Feature",
-          Nature="AUTOMATIC",
-          Name="Fighter ~ Armor Mastery",
-          Conditions={
-            function (character)
-              return (character.Variables["Fighter_CF_ArmorMastery"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="20",
-      Bonuses={
-        {
-          Category="ABILITYPOOL",
-          Variables={
-            "Weapon Mastery",
-          },
-          Formula="1",
-          Conditions={
-            function (character)
-              return (character.Variables["FighterWeaponMastery"] == 0)
-            end,
-            function (character)
-              return (character.Variables["Fighter_CF_WeaponMastery"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -2726,8 +1717,6 @@ DefineClass({
       Formula="1",
     },
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.56",
   Conditions={
     function (character)
@@ -2748,7 +1737,7 @@ DefineClass({
       return count >= 1
     end,
   },
-  HitDie=8,
+  HitDie=10,
   MaxLevel=20,
   SkillPointsPerLevel=4,
   Roles={
@@ -2772,13 +1761,9 @@ DefineClass({
           Name="Monk",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
-      WeaponBonusProficiencySelections={
-      },
     },
   },
 })
@@ -2948,8 +1933,6 @@ DefineClass({
       },
     },
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.60",
   Conditions={
     function (character)
@@ -2988,10 +1971,18 @@ DefineClass({
     SpellType="Divine",
   },
   AutomaticKnownSpells={
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
+    {
+      Level=1,
+    },
+    {
+      Level=2,
+    },
+    {
+      Level=3,
+    },
+    {
+      Level=4,
+    },
   },
   Levels={
     {
@@ -3003,496 +1994,91 @@ DefineClass({
           Name="Paladin",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Weapon and Armor Proficiency ~ Paladin",
-          Conditions={
-            function (character)
-              return not (1 <= #filter(character.Abilities, function (ability)
-                return ability.Category == "Archetype" and (ability.Type == "PaladinWeaponProficiencies" or ability.Type == "PaladinArmorProficiency" or ability.Type == "PaladinArmorProficiencyHeavy" or ability.Type == "PaladinArmorProficiencyLight" or ability.Type == "PaladinArmorProficiencyMedium" or ability.Type == "PaladinArmorProficiency" or ability.Type == "PaladinShieldProf" or ability.Type == "PaladinShieldProficiency")
-              end))
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Internal",
-          Nature="AUTOMATIC",
-          Name="Weapon Prof ~ Simple",
-          Conditions={
-            function (character)
-              return not (1 <= #filter(character.Abilities, function (ability)
-                return ability.Category == "Archetype" and (ability.Type == "PaladinWeaponProficiencies")
-              end))
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Internal",
-          Nature="AUTOMATIC",
-          Name="Armor Prof ~ Heavy",
-          Conditions={
-            function (character)
-              return not (1 <= #filter(character.Abilities, function (ability)
-                return ability.Category == "Archetype" and (ability.Type == "PaladinArmorProficiency" or ability.Type == "PaladinArmorProficiencyHeavy")
-              end))
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Internal",
-          Nature="AUTOMATIC",
-          Name="Armor Prof ~ Light",
-          Conditions={
-            function (character)
-              return not (1 <= #filter(character.Abilities, function (ability)
-                return ability.Category == "Archetype" and (ability.Type == "PaladinArmorProficiency" or ability.Type == "PaladinArmorProficiencyLight")
-              end))
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Internal",
-          Nature="AUTOMATIC",
-          Name="Armor Prof ~ Medium",
-          Conditions={
-            function (character)
-              return not (1 <= #filter(character.Abilities, function (ability)
-                return ability.Category == "Archetype" and (ability.Type == "PaladinArmorProficiency" or ability.Type == "PaladinArmorProficiencyMedium")
-              end))
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Internal",
-          Nature="AUTOMATIC",
-          Name="Shield Prof",
-          Conditions={
-            function (character)
-              return not (1 <= #filter(character.Abilities, function (ability)
-                return ability.Category == "Archetype" and (ability.Type == "PaladinArmorProficiency" or ability.Type == "PaladinShieldProf" or ability.Type == "PaladinShieldProficiency")
-              end))
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Paladin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Paladin ~ Aura of Good",
-          Conditions={
-            function (character)
-              return (character.Variables["Paladin_CF_AuraOfGood"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Paladin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Paladin ~ Detect Evil",
-          Conditions={
-            function (character)
-              return (character.Variables["Paladin_CF_DetectEvil"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Paladin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Paladin ~ Smite Evil",
-          Conditions={
-            function (character)
-              return (character.Variables["Paladin_CF_SmiteEvil"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Paladin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Paladin ~ Divine Grace",
-          Conditions={
-            function (character)
-              return (character.Variables["Paladin_CF_DivineGrace"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Paladin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Paladin ~ Lay on Hands",
-          Conditions={
-            function (character)
-              return (character.Variables["Paladin_CF_LayOnHands"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="3",
-      Abilities={
-        {
-          Category="Paladin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Paladin ~ Aura of Courage",
-          Conditions={
-            function (character)
-              return (character.Variables["Paladin_CF_AuraOfCourage"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="3",
-      Abilities={
-        {
-          Category="Paladin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Paladin ~ Divine Health",
-          Conditions={
-            function (character)
-              return (character.Variables["Paladin_CF_DivineHealth"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="3",
-      Abilities={
-        {
-          Category="Paladin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Paladin ~ Mercy",
-          Conditions={
-            function (character)
-              return (character.Variables["Paladin_CF_Mercy"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="4",
-      Abilities={
-        {
-          Category="Paladin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Paladin ~ Channel Positive Energy",
-          Conditions={
-            function (character)
-              return (character.Variables["Paladin_CF_ChannelPositiveEnergy"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="5",
-      Abilities={
-        {
-          Category="Paladin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Paladin ~ Divine Bond",
-          Conditions={
-            function (character)
-              return (character.Variables["Paladin_CF_DivineBond"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="8",
-      Abilities={
-        {
-          Category="Paladin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Paladin ~ Aura of Resolve",
-          Conditions={
-            function (character)
-              return (character.Variables["Paladin_CF_AuraOfResolve"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="11",
-      Abilities={
-        {
-          Category="Paladin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Paladin ~ Aura of Justice",
-          Conditions={
-            function (character)
-              return (character.Variables["Paladin_CF_AuraOfJustice"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="14",
-      Abilities={
-        {
-          Category="Paladin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Paladin ~ Aura of Faith",
-          Conditions={
-            function (character)
-              return (character.Variables["Paladin_CF_AuraOfFaith"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="17",
-      Abilities={
-        {
-          Category="Paladin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Paladin ~ Aura of Righteousness",
-          Conditions={
-            function (character)
-              return (character.Variables["Paladin_CF_AuraOfRighteousness"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="20",
-      Abilities={
-        {
-          Category="Paladin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Paladin ~ Holy Champion",
-          Conditions={
-            function (character)
-              return (character.Variables["Paladin_CF_HolyChampion"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="4",
       SpellsPerDay={
         0, 0, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="5",
       SpellsPerDay={
         0, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="6",
       SpellsPerDay={
         0, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="7",
       SpellsPerDay={
         0, 1, 0, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="8",
       SpellsPerDay={
         0, 1, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="9",
       SpellsPerDay={
         0, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="10",
       SpellsPerDay={
         0, 2, 1, 0, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="11",
       SpellsPerDay={
         0, 2, 1, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="12",
       SpellsPerDay={
         0, 2, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="13",
       SpellsPerDay={
         0, 3, 2, 1, 0, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="14",
       SpellsPerDay={
         0, 3, 2, 1, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="15",
       SpellsPerDay={
         0, 3, 2, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="16",
       SpellsPerDay={
         0, 3, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="17",
       SpellsPerDay={
         0, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="18",
       SpellsPerDay={
         0, 4, 3, 2, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="19",
       SpellsPerDay={
         0, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="20",
       SpellsPerDay={
         0, 4, 4, 3, 3, },
-      WeaponBonusProficiencySelections={
-      },
     },
   },
 })
@@ -3598,8 +2184,6 @@ DefineClass({
       },
     },
   },
-  WeaponBonusProficiencySelections={
-  },
   HitDie=10,
   MaxLevel=20,
   SkillPointsPerLevel=2,
@@ -3622,8 +2206,6 @@ DefineClass({
           Name="Paladin",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -3640,8 +2222,6 @@ DefineClass({
             end,
           },
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -3660,8 +2240,6 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -3678,8 +2256,6 @@ DefineClass({
             end,
           },
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -3698,8 +2274,6 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -3717,8 +2291,6 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -3735,8 +2307,6 @@ DefineClass({
             end,
           },
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -3910,8 +2480,6 @@ DefineClass({
       },
     },
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.64",
   HitDie=10,
   MaxLevel=20,
@@ -3931,10 +2499,18 @@ DefineClass({
     SpellType="Divine",
   },
   AutomaticKnownSpells={
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
+    {
+      Level=1,
+    },
+    {
+      Level=2,
+    },
+    {
+      Level=3,
+    },
+    {
+      Level=4,
+    },
   },
   Levels={
     {
@@ -3946,399 +2522,91 @@ DefineClass({
           Name="Ranger",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Ranger Class Feature",
-          Nature="AUTOMATIC",
-          Name="Ranger ~ Favored Enemy",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_FavoredEnemy"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Ranger Class Feature",
-          Nature="AUTOMATIC",
-          Name="Ranger ~ Favored Terrain",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_FavoredTerrain"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Ranger Class Feature",
-          Nature="AUTOMATIC",
-          Name="Ranger ~ Track",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_Track"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Ranger Class Feature",
-          Nature="AUTOMATIC",
-          Name="Ranger ~ Wild Empathy",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_WildEmpathy"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Ranger Class Feature",
-          Nature="AUTOMATIC",
-          Name="Ranger ~ Combat Style Feat",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_CombatStyleFeat"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="4",
-      Abilities={
-        {
-          Category="Ranger Class Feature",
-          Nature="AUTOMATIC",
-          Name="Ranger ~ Hunter's Bond",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_HuntersBond"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="7",
-      Abilities={
-        {
-          Category="Ranger Class Feature",
-          Nature="AUTOMATIC",
-          Name="Ranger ~ Woodland Stride",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_WoodlandStride"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="8",
-      Abilities={
-        {
-          Category="Ranger Class Feature",
-          Nature="AUTOMATIC",
-          Name="Ranger ~ Swift Tracker",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_SwiftTracker"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="9",
-      Abilities={
-        {
-          Category="Ranger Class Feature",
-          Nature="AUTOMATIC",
-          Name="Ranger ~ Evasion",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_Evasion"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="11",
-      Abilities={
-        {
-          Category="Ranger Class Feature",
-          Nature="AUTOMATIC",
-          Name="Ranger ~ Quarry",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_Quarry"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="12",
-      Abilities={
-        {
-          Category="Ranger Class Feature",
-          Nature="AUTOMATIC",
-          Name="Ranger ~ Camouflage",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_Camouflage"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="16",
-      Abilities={
-        {
-          Category="Ranger Class Feature",
-          Nature="AUTOMATIC",
-          Name="Ranger ~ Improved Evasion",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_Evasion"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="17",
-      Abilities={
-        {
-          Category="Ranger Class Feature",
-          Nature="AUTOMATIC",
-          Name="Ranger ~ Hide in Plain Sight",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_HideInPlainSight"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="19",
-      Abilities={
-        {
-          Category="Ranger Class Feature",
-          Nature="AUTOMATIC",
-          Name="Ranger ~ Improved Quarry",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_Quarry"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="20",
-      Abilities={
-        {
-          Category="Ranger Class Feature",
-          Nature="AUTOMATIC",
-          Name="Ranger ~ Master Hunter",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_MasterHunter"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="3",
-      Abilities={
-        {
-          Category="FEAT",
-          Nature="AUTOMATIC",
-          Name="Endurance",
-          Conditions={
-            function (character)
-              return (character.Variables["Ranger_CF_Endurance"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="4",
       SpellsPerDay={
         0, 0, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="5",
       SpellsPerDay={
         0, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="6",
       SpellsPerDay={
         0, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="7",
       SpellsPerDay={
         0, 1, 0, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="8",
       SpellsPerDay={
         0, 1, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="9",
       SpellsPerDay={
         0, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="10",
       SpellsPerDay={
         0, 2, 1, 0, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="11",
       SpellsPerDay={
         0, 2, 1, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="12",
       SpellsPerDay={
         0, 2, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="13",
       SpellsPerDay={
         0, 3, 2, 1, 0, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="14",
       SpellsPerDay={
         0, 3, 2, 1, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="15",
       SpellsPerDay={
         0, 3, 2, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="16",
       SpellsPerDay={
         0, 3, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="17",
       SpellsPerDay={
         0, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="18",
       SpellsPerDay={
         0, 4, 3, 2, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="19",
       SpellsPerDay={
         0, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="20",
       SpellsPerDay={
         0, 4, 4, 3, 3, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -4363,8 +2631,6 @@ DefineClass({
             end,
           },
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -4471,8 +2737,6 @@ DefineClass({
       },
     },
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.67",
   HitDie=8,
   MaxLevel=20,
@@ -4499,8 +2763,6 @@ DefineClass({
           Name="Weapon and Armor Proficiency ~ Rogue",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -4510,8 +2772,6 @@ DefineClass({
           Nature="AUTOMATIC",
           Name="Rogue",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -4670,8 +2930,6 @@ DefineClass({
       Formula="Caster_Level_BL_Stripped_Sorcerer",
     },
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.70",
   HitDie=6,
   MaxLevel=20,
@@ -4701,93 +2959,6 @@ DefineClass({
           Name="Sorcerer",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Sorcerer Class Feature",
-          Nature="AUTOMATIC",
-          Name="Sorcerer ~ Weapon and Armor Proficiency",
-          Conditions={
-            function (character)
-              return (character.Variables["Sorcerer_CF_WeaponProficiencies"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Sorcerer Class Feature",
-          Nature="AUTOMATIC",
-          Name="Sorcerer ~ Spells",
-          Conditions={
-            function (character)
-              return (character.Variables["Sorcerer_CF_Spells"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Sorcerer Class Feature",
-          Nature="AUTOMATIC",
-          Name="Sorcerer ~ Standard Bloodline",
-          Conditions={
-            function (character)
-              return (character.Variables["Sorcerer_CF_Bloodline"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Sorcerer Class Feature",
-          Nature="AUTOMATIC",
-          Name="Sorcerer ~ Cantrips",
-          Conditions={
-            function (character)
-              return (character.Variables["Sorcerer_CF_Cantrips"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Sorcerer Class Feature",
-          Nature="AUTOMATIC",
-          Name="Sorcerer ~ Eschew Materials",
-          Conditions={
-            function (character)
-              return (character.Variables["Sorcerer_CF_EschewMaterials"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -4795,8 +2966,6 @@ DefineClass({
         0, 3, },
       SpellsKnown={
         4, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="2",
@@ -4804,8 +2973,6 @@ DefineClass({
         0, 4, },
       SpellsKnown={
         5, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="3",
@@ -4813,8 +2980,6 @@ DefineClass({
         0, 5, },
       SpellsKnown={
         5, 3, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="4",
@@ -4822,8 +2987,6 @@ DefineClass({
         0, 6, 3, },
       SpellsKnown={
         6, 3, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="5",
@@ -4831,8 +2994,6 @@ DefineClass({
         0, 6, 4, },
       SpellsKnown={
         6, 4, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="6",
@@ -4840,8 +3001,6 @@ DefineClass({
         0, 6, 5, 3, },
       SpellsKnown={
         7, 4, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="7",
@@ -4849,8 +3008,6 @@ DefineClass({
         0, 6, 6, 4, },
       SpellsKnown={
         7, 5, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="8",
@@ -4858,8 +3015,6 @@ DefineClass({
         0, 6, 6, 5, 3, },
       SpellsKnown={
         8, 5, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="9",
@@ -4867,8 +3022,6 @@ DefineClass({
         0, 6, 6, 6, 4, },
       SpellsKnown={
         8, 5, 4, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="10",
@@ -4876,8 +3029,6 @@ DefineClass({
         0, 6, 6, 6, 5, 3, },
       SpellsKnown={
         9, 5, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="11",
@@ -4885,8 +3036,6 @@ DefineClass({
         0, 6, 6, 6, 6, 4, },
       SpellsKnown={
         9, 5, 5, 4, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="12",
@@ -4894,8 +3043,6 @@ DefineClass({
         0, 6, 6, 6, 6, 5, 3, },
       SpellsKnown={
         9, 5, 5, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="13",
@@ -4903,8 +3050,6 @@ DefineClass({
         0, 6, 6, 6, 6, 6, 4, },
       SpellsKnown={
         9, 5, 5, 4, 4, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="14",
@@ -4912,8 +3057,6 @@ DefineClass({
         0, 6, 6, 6, 6, 6, 5, 3, },
       SpellsKnown={
         9, 5, 5, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="15",
@@ -4921,8 +3064,6 @@ DefineClass({
         0, 6, 6, 6, 6, 6, 6, 4, },
       SpellsKnown={
         9, 5, 5, 4, 4, 4, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="16",
@@ -4930,8 +3071,6 @@ DefineClass({
         0, 6, 6, 6, 6, 6, 6, 5, 3, },
       SpellsKnown={
         9, 5, 5, 4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="17",
@@ -4939,8 +3078,6 @@ DefineClass({
         0, 6, 6, 6, 6, 6, 6, 6, 4, },
       SpellsKnown={
         9, 5, 5, 4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="18",
@@ -4948,8 +3085,6 @@ DefineClass({
         0, 6, 6, 6, 6, 6, 6, 6, 5, 3, },
       SpellsKnown={
         9, 5, 5, 4, 4, 4, 3, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="19",
@@ -4957,8 +3092,6 @@ DefineClass({
         0, 6, 6, 6, 6, 6, 6, 6, 6, 4, },
       SpellsKnown={
         9, 5, 5, 4, 4, 4, 3, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="20",
@@ -4966,8 +3099,6 @@ DefineClass({
         0, 6, 6, 6, 6, 6, 6, 6, 6, 6, },
       SpellsKnown={
         9, 5, 5, 4, 4, 4, 3, 3, 3, 3, },
-      WeaponBonusProficiencySelections={
-      },
     },
   },
 })
@@ -5144,8 +3275,6 @@ DefineClass({
       Formula="Caster_Level_BL_Stripped_Wizard",
     },
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.77",
   HitDie=6,
   MaxLevel=20,
@@ -5174,375 +3303,106 @@ DefineClass({
           Name="Wizard",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Wizard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Wizard ~ Class Skills",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_ClassSkills"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Wizard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Wizard ~ Weapon and Armor Proficiency",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_WeaponProficiencies"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Wizard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Wizard ~ Spells",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_Spells"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Wizard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Wizard ~ Bonus Languages",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_BonusLanguages"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Wizard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Wizard ~ Arcane Bond",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_ArcaneBond"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Wizard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Wizard ~ Arcane School",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Wizard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Wizard ~ Cantrips",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_Cantrips"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Wizard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Wizard ~ Scribe Scroll",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_ScribeScroll"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="5",
-      Abilities={
-        {
-          Category="Wizard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Wizard ~ Bonus Feats",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_BonusFeats"] == 0)
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Wizard Class Feature",
-          Nature="AUTOMATIC",
-          Name="Wizard ~ Spellbooks",
-          Conditions={
-            function (character)
-              local count = 0
-              local subCondition
-              subCondition = function (character)
-                local count = 0
-                local subCondition
-                subCondition = function (character)
-                  return character.Level <= 0
-                end
-                if subCondition(character) then
-                  count = count + 1
-                end
-                subCondition = function (character)
-                  return 1 <= #filter(ipairs(character.ClassLevels),
-                  function (class, level)
-                    return (class == "Wizard" and level >= 1)
-                  end)
-                end
-                if subCondition(character) then
-                  count = count + 1
-                end
-                return count >= 2
-              end
-              if subCondition(character) then
-                count = count + 1
-              end
-              subCondition = function (character)
-                local count = 0
-                local subCondition
-                subCondition = function (character)
-                  return not (1 <= #filter(ipairs(character.ClassLevels),
-                  function (class, level)
-                    return (ClassIsType(class, "Base") and level >= 0)
-                  end))
-                end
-                if subCondition(character) then
-                  count = count + 1
-                end
-                subCondition = function (character)
-                  return 1 <= #filter(ipairs(character.ClassLevels),
-                  function (class, level)
-                    return (class == "Wizard" and level >= 1)
-                  end)
-                end
-                if subCondition(character) then
-                  count = count + 1
-                end
-                return count >= 2
-              end
-              if subCondition(character) then
-                count = count + 1
-              end
-              subCondition = function (character)
-                return (character.Variables["Wizard_CF_SpellBook"] == 0)
-              end
-              if subCondition(character) then
-                count = count + 1
-              end
-              return count >= 1
-            end,
-          },
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
       SpellsPerDay={
         3, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="2",
       SpellsPerDay={
         4, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="3",
       SpellsPerDay={
         4, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="4",
       SpellsPerDay={
         4, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="5",
       SpellsPerDay={
         4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="6",
       SpellsPerDay={
         4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="7",
       SpellsPerDay={
         4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="8",
       SpellsPerDay={
         4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="9",
       SpellsPerDay={
         4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="10",
       SpellsPerDay={
         4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="11",
       SpellsPerDay={
         4, 4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="12",
       SpellsPerDay={
         4, 4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="13",
       SpellsPerDay={
         4, 4, 4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="14",
       SpellsPerDay={
         4, 4, 4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="15",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="16",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="17",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 4, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="18",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 4, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="19",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 4, 4, 3, 3, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="20",
       SpellsPerDay={
         4, 4, 4, 4, 4, 4, 4, 4, 4, 4, },
-      WeaponBonusProficiencySelections={
-      },
     },
   },
   SubClasses={
@@ -5562,8 +3422,6 @@ DefineClass({
               Name="Abjuration School",
             },
           },
-          WeaponBonusProficiencySelections={
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
@@ -5572,8 +3430,6 @@ DefineClass({
         },
       },
       Name="Abjurer",
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Choice={
@@ -5591,8 +3447,6 @@ DefineClass({
               Name="Conjuration School",
             },
           },
-          WeaponBonusProficiencySelections={
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
@@ -5601,8 +3455,6 @@ DefineClass({
         },
       },
       Name="Conjurer",
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Choice={
@@ -5620,8 +3472,6 @@ DefineClass({
               Name="Divination School",
             },
           },
-          WeaponBonusProficiencySelections={
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
@@ -5630,8 +3480,6 @@ DefineClass({
         },
       },
       Name="Diviner",
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Choice={
@@ -5649,8 +3497,6 @@ DefineClass({
               Name="Enchantment School",
             },
           },
-          WeaponBonusProficiencySelections={
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
@@ -5659,8 +3505,6 @@ DefineClass({
         },
       },
       Name="Enchanter",
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Choice={
@@ -5678,8 +3522,6 @@ DefineClass({
               Name="Evocation School",
             },
           },
-          WeaponBonusProficiencySelections={
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
@@ -5688,8 +3530,6 @@ DefineClass({
         },
       },
       Name="Evoker",
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Choice={
@@ -5707,8 +3547,6 @@ DefineClass({
               Name="Illusion School",
             },
           },
-          WeaponBonusProficiencySelections={
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
@@ -5717,8 +3555,6 @@ DefineClass({
         },
       },
       Name="Illusionist",
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Choice={
@@ -5736,8 +3572,6 @@ DefineClass({
               Name="Necromancy School",
             },
           },
-          WeaponBonusProficiencySelections={
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
@@ -5746,8 +3580,6 @@ DefineClass({
         },
       },
       Name="Necromancer",
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Choice={
@@ -5765,8 +3597,6 @@ DefineClass({
               Name="Transmutation School",
             },
           },
-          WeaponBonusProficiencySelections={
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
@@ -5775,8 +3605,6 @@ DefineClass({
         },
       },
       Name="Transmuter",
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Choice={
@@ -5802,13 +3630,9 @@ DefineClass({
               },
             },
           },
-          WeaponBonusProficiencySelections={
-          },
         },
       },
       Name="Universalist",
-      WeaponBonusProficiencySelections={
-      },
     },
   },
 })
@@ -5910,8 +3734,6 @@ DefineClass({
     "Stealth",
     "Survival",
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.374",
   Conditions={
     function (character)
@@ -5947,113 +3769,10 @@ DefineClass({
       Level="1",
       Abilities={
         {
-          Category="Special Ability",
+          Category="CLASS",
           Nature="AUTOMATIC",
-          Name="All Martial Weapon Proficiencies",
+          Name="Arcane Archer",
         },
-        {
-          Category="FEAT",
-          Nature="AUTOMATIC",
-          Name="Simple Weapon Proficiency",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="FEAT",
-          Nature="AUTOMATIC",
-          Name="Armor Proficiency (Medium)",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="FEAT",
-          Nature="AUTOMATIC",
-          Name="Shield Proficiency",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Arcane Archer ~ Enhance Arrow",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Arcane Archer ~ Imbue Arrow",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="4",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Arcane Archer ~ Seeker Arrow",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="6",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Arcane Archer ~ Phase Arrow",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="8",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Arcane Archer ~ Hail of Arrows",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="10",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Arcane Archer ~ Arrow of Death",
-        },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -6062,8 +3781,6 @@ DefineClass({
         {
           Type="Arcane",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -6073,8 +3790,6 @@ DefineClass({
           Type="Arcane",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="4",
@@ -6082,8 +3797,6 @@ DefineClass({
         {
           Type="Arcane",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -6093,8 +3806,6 @@ DefineClass({
           Type="Arcane",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="7",
@@ -6102,8 +3813,6 @@ DefineClass({
         {
           Type="Arcane",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -6113,8 +3822,6 @@ DefineClass({
           Type="Arcane",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="10",
@@ -6122,8 +3829,6 @@ DefineClass({
         {
           Type="Arcane",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -6237,8 +3942,6 @@ DefineClass({
     "Stealth",
     "Swim",
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.376",
   Conditions={
     function (character)
@@ -6290,8 +3993,6 @@ DefineClass({
           Any=true,
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="2",
@@ -6299,8 +4000,6 @@ DefineClass({
         {
           Any=true,
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -6310,8 +4009,6 @@ DefineClass({
           Any=true,
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="4",
@@ -6319,8 +4016,6 @@ DefineClass({
         {
           Any=true,
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -6330,8 +4025,6 @@ DefineClass({
           Any=true,
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="6",
@@ -6339,8 +4032,6 @@ DefineClass({
         {
           Any=true,
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -6350,8 +4041,6 @@ DefineClass({
           Any=true,
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="8",
@@ -6359,8 +4048,6 @@ DefineClass({
         {
           Any=true,
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -6370,8 +4057,6 @@ DefineClass({
           Any=true,
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="10",
@@ -6379,8 +4064,6 @@ DefineClass({
         {
           Any=true,
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -6391,80 +4074,6 @@ DefineClass({
           Nature="AUTOMATIC",
           Name="Arcane Trickster",
         },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Arcane Trickster ~ Ranged Legerdemain",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Arcane Trickster ~ Sneak Attack",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="3",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Arcane Trickster ~ Impromptu Sneak Attack",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="5",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Arcane Trickster ~ Tricky Spells",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="9",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Arcane Trickster ~ Invisible Thief",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="10",
-      Abilities={
-        {
-          Category="Special Ability",
-          Nature="AUTOMATIC",
-          Name="Arcane Trickster ~ Surprise Spells",
-        },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -6578,8 +4187,6 @@ DefineClass({
     "Swim",
     "Use Magic Device",
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.378",
   Conditions={
     function (character)
@@ -6623,104 +4230,6 @@ DefineClass({
           Nature="AUTOMATIC",
           Name="Assassin",
         },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ Weapon and Armor Proficiency",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ Sneak Attack",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ Uncanny Dodge",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="4",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ True Death",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="6",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ Quiet Death",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="8",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ Hide in Plain Sight",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="9",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ Swift Death",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="10",
-      Abilities={
-        {
-          Category="Assassin Class Feature",
-          Nature="AUTOMATIC",
-          Name="Assassin ~ Angel of Death",
-        },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -6825,8 +4334,6 @@ DefineClass({
     "Perception",
     "Spellcraft",
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.380",
   Conditions={
     function (character)
@@ -6928,8 +4435,6 @@ DefineClass({
           Type="Arcane",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="3",
@@ -6937,8 +4442,6 @@ DefineClass({
         {
           Type="Arcane",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -6948,8 +4451,6 @@ DefineClass({
           Type="Arcane",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="6",
@@ -6958,8 +4459,6 @@ DefineClass({
           Type="Arcane",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="7",
@@ -6967,8 +4466,6 @@ DefineClass({
         {
           Type="Arcane",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -6978,8 +4475,6 @@ DefineClass({
           Type="Arcane",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="10",
@@ -6988,103 +4483,15 @@ DefineClass({
           Type="Arcane",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
       Abilities={
         {
-          Category="Dragon Disciple Class Feature",
+          Category="Class",
           Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Weapon and Armor Proficiency",
+          Name="Dragon Disciple",
         },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Dragon Disciple Class Feature",
-          Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Spells per Day",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Dragon Disciple Class Feature",
-          Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Natural Armor Increase",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Dragon Disciple Class Feature",
-          Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Bloodline Feat",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="3",
-      Abilities={
-        {
-          Category="Dragon Disciple Class Feature",
-          Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Breath Weapon",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="5",
-      Abilities={
-        {
-          Category="Dragon Disciple Class Feature",
-          Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Blindsense",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="7",
-      Abilities={
-        {
-          Category="Dragon Disciple Class Feature",
-          Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Dragon Form",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="9",
-      Abilities={
-        {
-          Category="Dragon Disciple Class Feature",
-          Nature="AUTOMATIC",
-          Name="Dragon Disciple ~ Wings",
-        },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -7189,8 +4596,6 @@ DefineClass({
     "TYPE=Perform",
     "Sense Motive",
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.382",
   Conditions={
     function (character)
@@ -7199,7 +4604,7 @@ DefineClass({
       end)
     end,
     function (character)
-      return ((character.BestSkillOfType("Acrobatics").ranks >= 2 and 1 or 0) + (character.Skill("(547,100): Perform").ranks >= 2 and 1 or 0)) >= 2
+      return ((character.BestSkillOfType("Acrobatics").ranks >= 2 and 1 or 0) + (character.Skill("(400,100): Perform").ranks >= 2 and 1 or 0)) >= 2
     end,
     function (character)
       return character.TotalAttackBonus >= 6
@@ -7221,120 +4626,10 @@ DefineClass({
       Level="1",
       Abilities={
         {
-          Category="Duelist Class Feature",
+          Category="Class",
           Nature="AUTOMATIC",
-          Name="Duelist ~ Weapon and Armor Proficiency",
+          Name="Duelist",
         },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Duelist Class Feature",
-          Nature="AUTOMATIC",
-          Name="Duelist ~ Precise Strike",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Duelist Class Feature",
-          Nature="AUTOMATIC",
-          Name="Duelist ~ Parry",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="3",
-      Abilities={
-        {
-          Category="Duelist Class Feature",
-          Nature="AUTOMATIC",
-          Name="Duelist ~ Enhanced Mobility",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="4",
-      Abilities={
-        {
-          Category="Duelist Class Feature",
-          Nature="AUTOMATIC",
-          Name="Duelist ~ Grace",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="5",
-      Abilities={
-        {
-          Category="Duelist Class Feature",
-          Nature="AUTOMATIC",
-          Name="Duelist ~ Riposte",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="6",
-      Abilities={
-        {
-          Category="Duelist Class Feature",
-          Nature="AUTOMATIC",
-          Name="Duelist ~ Acrobatic Charge",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="7",
-      Abilities={
-        {
-          Category="Duelist Class Feature",
-          Nature="AUTOMATIC",
-          Name="Duelist ~ Elaborate Defense",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="9",
-      Abilities={
-        {
-          Category="Duelist Class Feature",
-          Nature="AUTOMATIC",
-          Name="Duelist ~ No Retreat",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="10",
-      Abilities={
-        {
-          Category="Duelist Class Feature",
-          Nature="AUTOMATIC",
-          Name="Duelist ~ Crippling Critical",
-        },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -7441,8 +4736,6 @@ DefineClass({
     "Spellcraft",
     "Swim",
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.384",
   Conditions={
     function (character)
@@ -7473,8 +4766,6 @@ DefineClass({
           Type="Arcane",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="3",
@@ -7482,8 +4773,6 @@ DefineClass({
         {
           Type="Arcane",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -7493,8 +4782,6 @@ DefineClass({
           Type="Arcane",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="5",
@@ -7502,8 +4789,6 @@ DefineClass({
         {
           Type="Arcane",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -7513,8 +4798,6 @@ DefineClass({
           Type="Arcane",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="7",
@@ -7522,8 +4805,6 @@ DefineClass({
         {
           Type="Arcane",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -7533,8 +4814,6 @@ DefineClass({
           Type="Arcane",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="9",
@@ -7543,8 +4822,6 @@ DefineClass({
           Type="Arcane",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="10",
@@ -7553,31 +4830,15 @@ DefineClass({
           Type="Arcane",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
       Abilities={
         {
-          Category="Eldritch Knight Class Feature",
+          Category="Class",
           Nature="AUTOMATIC",
-          Name="Eldritch Knight ~ Diverse Training",
+          Name="Eldritch Knight",
         },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="10",
-      Abilities={
-        {
-          Category="Eldritch Knight Class Feature",
-          Nature="AUTOMATIC",
-          Name="Eldritch Knight ~ Spell Critical",
-        },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -7685,8 +4946,6 @@ DefineClass({
     "Spellcraft",
     "Use Magic Device",
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.385",
   Conditions={
     function (character)
@@ -7700,7 +4959,7 @@ DefineClass({
       end)
     end,
     function (character)
-      return ((character.Skill("(588,145): Knowledge").ranks >= 7 and 1 or 0) + (character.Skill("(588,162): Knowledge").ranks >= 7 and 1 or 0)) >= 2
+      return ((character.Skill("(431,145): Knowledge").ranks >= 7 and 1 or 0) + (character.Skill("(431,162): Knowledge").ranks >= 7 and 1 or 0)) >= 2
     end,
     function (character)
       return ((#filter(character.SpellsKnown, function (spell) return spell.School == "Divination" and spell.Level >= 3 end))) >= 1
@@ -7728,8 +4987,6 @@ DefineClass({
           Any=true,
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="2",
@@ -7737,8 +4994,6 @@ DefineClass({
         {
           Any=true,
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -7748,8 +5003,6 @@ DefineClass({
           Any=true,
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="4",
@@ -7757,8 +5010,6 @@ DefineClass({
         {
           Any=true,
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -7768,8 +5019,6 @@ DefineClass({
           Any=true,
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="6",
@@ -7777,8 +5026,6 @@ DefineClass({
         {
           Any=true,
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -7788,8 +5035,6 @@ DefineClass({
           Any=true,
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="8",
@@ -7797,8 +5042,6 @@ DefineClass({
         {
           Any=true,
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -7808,8 +5051,6 @@ DefineClass({
           Any=true,
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="10",
@@ -7818,55 +5059,15 @@ DefineClass({
           Any=true,
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
       Abilities={
         {
-          Category="Loremaster Class Feature",
+          Category="Class",
           Nature="AUTOMATIC",
-          Name="Loremaster ~ Secret Lore",
+          Name="Loremaster",
         },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Loremaster Class Feature",
-          Nature="AUTOMATIC",
-          Name="Loremaster ~ Lore",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="6",
-      Abilities={
-        {
-          Category="Loremaster Class Feature",
-          Nature="AUTOMATIC",
-          Name="Loremaster ~ Greater Lore",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="10",
-      Abilities={
-        {
-          Category="Loremaster Class Feature",
-          Nature="AUTOMATIC",
-          Name="Loremaster ~ True Lore",
-        },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -7956,8 +5157,6 @@ DefineClass({
     "Sense Motive",
     "Spellcraft",
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.387",
   Conditions={
     function (character)
@@ -7992,8 +5191,6 @@ DefineClass({
           Type="Divine",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="2",
@@ -8004,8 +5201,6 @@ DefineClass({
         {
           Type="Divine",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -8018,8 +5213,6 @@ DefineClass({
           Type="Divine",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="4",
@@ -8030,8 +5223,6 @@ DefineClass({
         {
           Type="Divine",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -8044,8 +5235,6 @@ DefineClass({
           Type="Divine",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="6",
@@ -8056,8 +5245,6 @@ DefineClass({
         {
           Type="Divine",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -8070,8 +5257,6 @@ DefineClass({
           Type="Divine",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="8",
@@ -8082,8 +5267,6 @@ DefineClass({
         {
           Type="Divine",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -8096,8 +5279,6 @@ DefineClass({
           Type="Divine",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="10",
@@ -8109,31 +5290,15 @@ DefineClass({
           Type="Divine",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
       Abilities={
         {
-          Category="Mystic Theurge Class Feature",
+          Category="Class",
           Nature="AUTOMATIC",
-          Name="Mystic Theurge ~ Combined Spells",
+          Name="Mystic Theurge",
         },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="10",
-      Abilities={
-        {
-          Category="Mystic Theurge Class Feature",
-          Nature="AUTOMATIC",
-          Name="Mystic Theurge ~ Spell Synthesis",
-        },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -8247,8 +5412,6 @@ DefineClass({
     "Survival",
     "Use Magic Device",
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.388",
   Conditions={
     function (character)
@@ -8271,108 +5434,10 @@ DefineClass({
       Level="1",
       Abilities={
         {
-          Category="Pathfinder Chronicler Class Feature",
+          Category="Class",
           Nature="AUTOMATIC",
-          Name="Pathfinder Chronicler ~ Master Scribe",
+          Name="Pathfinder Chronicler",
         },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Pathfinder Chronicler Class Feature",
-          Nature="AUTOMATIC",
-          Name="Pathfinder Chronicler ~ Pathfinding",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="3",
-      Abilities={
-        {
-          Category="Pathfinder Chronicler Class Feature",
-          Nature="AUTOMATIC",
-          Name="Pathfinder Chronicler ~ Improved Aid",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="4",
-      Abilities={
-        {
-          Category="Pathfinder Chronicler Class Feature",
-          Nature="AUTOMATIC",
-          Name="Pathfinder Chronicler ~ Epic Tales",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="5",
-      Abilities={
-        {
-          Category="Pathfinder Chronicler Class Feature",
-          Nature="AUTOMATIC",
-          Name="Pathfinder Chronicler ~ Whispering Campaign",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="6",
-      Abilities={
-        {
-          Category="Pathfinder Chronicler Class Feature",
-          Nature="AUTOMATIC",
-          Name="Pathfinder Chronicler ~ Inspire Action",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="7",
-      Abilities={
-        {
-          Category="Pathfinder Chronicler Class Feature",
-          Nature="AUTOMATIC",
-          Name="Pathfinder Chronicler ~ Call down the Legends",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="8",
-      Abilities={
-        {
-          Category="Pathfinder Chronicler Class Feature",
-          Nature="AUTOMATIC",
-          Name="Pathfinder Chronicler ~ Greater Epic Tales",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="10",
-      Abilities={
-        {
-          Category="Pathfinder Chronicler Class Feature",
-          Nature="AUTOMATIC",
-          Name="Pathfinder Chronicler ~ Lay of the Exalted Dead",
-        },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -8480,8 +5545,6 @@ DefineClass({
     "Sleight of Hand",
     "Stealth",
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.391",
   Conditions={
     function (character)
@@ -8509,132 +5572,10 @@ DefineClass({
       Level="1",
       Abilities={
         {
-          Category="Shadowdancer Class Feature",
+          Category="Class",
           Nature="AUTOMATIC",
-          Name="Shadowdancer ~ Weapon and Armor Proficiency",
+          Name="Shadowdancer",
         },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Shadowdancer Class Feature",
-          Nature="AUTOMATIC",
-          Name="Shadowdancer ~ Hide in Plain Sight",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Shadowdancer Class Feature",
-          Nature="AUTOMATIC",
-          Name="Shadowdancer ~ Darkvision",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Shadowdancer Class Feature",
-          Nature="AUTOMATIC",
-          Name="Shadowdancer ~ Evasion",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="2",
-      Abilities={
-        {
-          Category="Shadowdancer Class Feature",
-          Nature="AUTOMATIC",
-          Name="Shadowdancer ~ Uncanny Dodge",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="3",
-      Abilities={
-        {
-          Category="Shadowdancer Class Feature",
-          Nature="AUTOMATIC",
-          Name="Shadowdancer ~ Summon Shadow",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="4",
-      Abilities={
-        {
-          Category="Shadowdancer Class Feature",
-          Nature="AUTOMATIC",
-          Name="Shadowdancer ~ Shadow Jump",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="5",
-      Abilities={
-        {
-          Category="Shadowdancer Class Feature",
-          Nature="AUTOMATIC",
-          Name="Shadowdancer ~ Defensive Roll",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="7",
-      Abilities={
-        {
-          Category="Shadowdancer Class Feature",
-          Nature="AUTOMATIC",
-          Name="Shadowdancer ~ Slippery Mind",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="8",
-      Abilities={
-        {
-          Category="Shadowdancer Class Feature",
-          Nature="AUTOMATIC",
-          Name="Shadowdancer ~ Shadow Power",
-        },
-      },
-      WeaponBonusProficiencySelections={
-      },
-    },
-    {
-      Level="10",
-      Abilities={
-        {
-          Category="Shadowdancer Class Feature",
-          Nature="AUTOMATIC",
-          Name="Shadowdancer ~ Shadow Master",
-        },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -8799,8 +5740,6 @@ DefineClass({
     "Spellcraft",
     "Survival",
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.448",
   HitDie=6,
   MaxLevel=20,
@@ -8815,12 +5754,24 @@ DefineClass({
     SpellType="Divine",
   },
   AutomaticKnownSpells={
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
-    "PCSharpGen.LstToLua.KnownSpell",
+    {
+      Level=0,
+    },
+    {
+      Level=1,
+    },
+    {
+      Level=2,
+    },
+    {
+      Level=3,
+    },
+    {
+      Level=4,
+    },
+    {
+      Level=5,
+    },
   },
   Levels={
     {
@@ -8847,8 +5798,6 @@ DefineClass({
             },
           },
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -8883,8 +5832,6 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -8915,8 +5862,6 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -8945,8 +5890,6 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -8968,8 +5911,6 @@ DefineClass({
             },
           },
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -8995,8 +5936,6 @@ DefineClass({
           },
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -9012,15 +5951,11 @@ DefineClass({
           Name="Simple Weapon Proficiency",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
       SpellsPerDay={
         3, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="2",
@@ -9042,134 +5977,96 @@ DefineClass({
           Name="Arcane Bond ~ Familiar",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="3",
       SpellsPerDay={
         3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="4",
       SpellsPerDay={
         3, 2, 0, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="5",
       SpellsPerDay={
         3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="6",
       SpellsPerDay={
         3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="7",
       SpellsPerDay={
         3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="8",
       SpellsPerDay={
         3, 3, 2, 0, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="9",
       SpellsPerDay={
         3, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="10",
       SpellsPerDay={
         3, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="11",
       SpellsPerDay={
         3, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="12",
       SpellsPerDay={
         3, 3, 3, 2, 0, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="13",
       SpellsPerDay={
         3, 3, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="14",
       SpellsPerDay={
         3, 3, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="15",
       SpellsPerDay={
         3, 3, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="16",
       SpellsPerDay={
         3, 3, 3, 3, 2, 0, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="17",
       SpellsPerDay={
         3, 3, 3, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="18",
       SpellsPerDay={
         3, 3, 3, 3, 2, 1, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="19",
       SpellsPerDay={
         3, 3, 3, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="20",
       SpellsPerDay={
         3, 3, 3, 3, 3, 2, },
-      WeaponBonusProficiencySelections={
-      },
     },
   },
 })
@@ -9293,8 +6190,6 @@ DefineClass({
     "Swim",
     "Survival",
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.449",
   HitDie=8,
   MaxLevel=20,
@@ -9322,8 +6217,6 @@ DefineClass({
           Name="Simple Weapon Proficiency",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -9334,8 +6227,6 @@ DefineClass({
           Name="Armor Proficiency (Medium)",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -9345,8 +6236,6 @@ DefineClass({
           Nature="AUTOMATIC",
           Name="Tower Shield Proficiency",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
@@ -9477,8 +6366,6 @@ DefineClass({
           Name="Weapon and Armor Proficiency ~ Commoner",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
   },
 })
@@ -9584,8 +6471,6 @@ DefineClass({
       },
     },
   },
-  WeaponBonusProficiencySelections={
-  },
   SourcePage="p.450",
   HitDie=8,
   MaxLevel=20,
@@ -9613,8 +6498,6 @@ DefineClass({
           Name="Simple Weapon Proficiency",
         },
       },
-      WeaponBonusProficiencySelections={
-      },
     },
     {
       Level="1",
@@ -9624,8 +6507,6 @@ DefineClass({
           Nature="AUTOMATIC",
           Name="Armor Proficiency (Light)",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
     {
@@ -9638,8 +6519,6 @@ DefineClass({
           },
           Formula="10",
         },
-      },
-      WeaponBonusProficiencySelections={
       },
     },
   },
