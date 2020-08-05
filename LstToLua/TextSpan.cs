@@ -1,0 +1,125 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace PCSharpGen.LstToLua
+{
+    internal struct TextSpan
+    {
+        public TextSpan(string file, int lineNumber, int linePosition, string value)
+        {
+            File = file;
+            LineNumber = lineNumber;
+            LinePosition = linePosition;
+            Value = value;
+        }
+
+        public string File { get; }
+        public int LineNumber { get; }
+        public int LinePosition { get; }
+        public string Value { get; }
+
+        public override string ToString()
+        {
+            return $"({LineNumber},{LinePosition}): {Value}";
+        }
+
+        public (TextSpan left, TextSpan right) SplitTuple(char c)
+        {
+            var idx = Value.IndexOf(c);
+            if (idx < 0)
+            {
+                throw new ParseFailedException(this, $"Expected '{c}' separator in value.");
+            }
+
+            var left = new TextSpan(File, LineNumber, LinePosition, Value.Substring(0, idx));
+            var right = new TextSpan(File, LineNumber, LinePosition + idx + 1, Value.Substring(idx + 1));
+
+            return (left, right);
+        }
+
+        public IEnumerable<TextSpan> Split(char splitOn, (char start, char end)? quotedBy = null)
+        {
+            var current = new StringBuilder();
+            var currentStartIndex = 0;
+            var quoteDepth = 0;
+            for (int i = 0; i < Value.Length; i++)
+            {
+                var c = Value[i];
+
+                if (quotedBy.HasValue && c == quotedBy.Value.start)
+                {
+                    quoteDepth++;
+                }
+
+                if (quotedBy.HasValue && c == quotedBy.Value.end)
+                {
+                    quoteDepth--;
+                }
+
+                if (c == splitOn && quoteDepth == 0)
+                {
+                    if (current.Length > 0)
+                    {
+                        yield return new TextSpan(File, LineNumber, LinePosition + currentStartIndex, current.ToString());
+                        current.Clear();
+                    }
+
+                    continue;
+                }
+
+                if (current.Length == 0)
+                {
+                    currentStartIndex = i;
+                }
+
+                current.Append(c);
+            }
+
+            if (current.Length > 0)
+            {
+                yield return new TextSpan(File, LineNumber, LinePosition + currentStartIndex, current.ToString());
+            }
+        }
+
+        public bool StartsWith(char value)
+        {
+            return Value.StartsWith(value);
+        }
+
+        public bool StartsWith(string value)
+        {
+            return Value.StartsWith(value);
+        }
+
+        public TextSpan Substring(int startIndex)
+        {
+            return new TextSpan(File, LineNumber, LinePosition + startIndex, Value.Substring(startIndex));
+        }
+
+        public TextSpan Substring(int startIndex, int length)
+        {
+            return new TextSpan(File, LineNumber, LinePosition + startIndex, Value.Substring(startIndex, length));
+        }
+
+        public int IndexOf(char c)
+        {
+            return Value.IndexOf(c);
+        }
+
+        public int IndexOf(string value)
+        {
+            return Value.IndexOf(value, StringComparison.Ordinal);
+        }
+
+        public bool EndsWith(char value)
+        {
+            return Value.EndsWith(value);
+        }
+
+        public bool EndsWith(string value)
+        {
+            return Value.EndsWith(value);
+        }
+    }
+}

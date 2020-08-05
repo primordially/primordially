@@ -1,0 +1,10 @@
+{
+  "Lua.diagnostics.globals": [
+    "DefineClass",
+    "SetSource",
+    "filter",
+    "any",
+    "stringMatch",
+    "contains",
+  ]
+}

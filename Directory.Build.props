@@ -10,6 +10,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <NoWarn>$(NoWarn);NU5125</NoWarn>
     <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
     <EnableCentralPackageVersions>true</EnableCentralPackageVersions>
     <CentralPackagesFile>$(MSBuildThisFileDirectory)/Packages.props</CentralPackagesFile>
     <IsTestProject Condition=" $(MSBuildProjectName.EndsWith('.Tests')) ">true</IsTestProject>
