@@ -25,59 +25,11 @@ namespace PCSharpGen.Core
             return result;
         }
 
-        public BonusBuilder SetVariableBase(string name, int value)
-        {
-            var fixedValue = new FixedValue("BASE", value);
-            if (Variables.TryGetValue(name, out CharacterVariable stat))
-            {
-                stat.Replace("BASE", fixedValue);
-            }
-            else
-            {
-                Variables.Add(name, new CharacterVariable(this, fixedValue));
-            }
-
-            return new BonusBuilder(this, name);
-        }
-
-        public BonusBuilder AddToVariable(string name, string type, int value)
-        {
-            GetVariable(name).Add(new FixedValue(type, value));
-            return new BonusBuilder(this, name);
-        }
-
-        public BonusBuilder AddToVariable(string name, int value)
-        {
-            return AddToVariable(name, name, value);
-        }
-
-        public BonusBuilder AddReferenceToVariable(string name, string type, string referenceStatistic)
-        {
-            GetVariable(name).Add(new ComputedValue(type, GetVariable(referenceStatistic)));
-            return new BonusBuilder(this, name);
-        }
-
-        public BonusBuilder AddReferenceToVariable(string name, string referenceStatistic)
-        {
-            return AddReferenceToVariable(name, name, referenceStatistic);
-        }
-
-        public BonusBuilder DefineVariable(string name)
+        public BonusBuilder ModifyVariable(string name)
         {
             // This doesn't need to do anything, because "GetReference" will always create a variable that doesn't exist
             // and set it to zero.  It's just a convenience to callers to get a BonusBuilder
             return new BonusBuilder(this, name);
-        }
-
-        public BonusBuilder AddReferenceToVariable(string name, string type, string referenceStatistic, ComputeValue computation)
-        {
-            GetVariable(name).Add(new ComputedValue(type, GetVariable(referenceStatistic), computation));
-            return new BonusBuilder(this, name);
-        }
-
-        public BonusBuilder AddReferenceToVariable(string name, string referenceStatistic, ComputeValue computation)
-        {
-            return AddReferenceToVariable(name, name, referenceStatistic, computation);
         }
 
         public struct BonusBuilder

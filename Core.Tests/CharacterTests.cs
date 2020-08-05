@@ -12,7 +12,7 @@ namespace PCSharpGen.Core.Tests
         public void BasicValue()
         {
             Character c = _rules.CreateCharacter();
-            c.SetVariableBase("BAB", 68);
+            c.ModifyVariable("BAB").Add(68);
             c.GetVariable("BAB").Value.Should().Be(68);
         }
 
@@ -20,7 +20,7 @@ namespace PCSharpGen.Core.Tests
         public void ComputedValue()
         {
             Character c = _rules.CreateCharacter();
-            c.SetVariableBase("Str", 5);
+            c.ModifyVariable("Str").Add(5);
             c.GetVariable("StrMod").Value.Should().Be(-3);
             c.GetVariable("StrBonus").Value.Should().Be(0);
         }
@@ -29,9 +29,9 @@ namespace PCSharpGen.Core.Tests
         public void MultipleValues()
         {
             Character c = _rules.CreateCharacter();
-            c.SetVariableBase("Str", 16);
-            c.SetVariableBase("BAB", 1);
-            c.DefineVariable("StrAttack").AddReference("BAB").AddReference("StrMod");
+            c.ModifyVariable("Str").Add(16);
+            c.ModifyVariable("BAB").Add(1);
+            c.ModifyVariable("StrAttack").AddReference("BAB").AddReference("StrMod");
             c.GetVariable("StrAttack").Value.Should().Be(4);
         }
 
@@ -39,9 +39,10 @@ namespace PCSharpGen.Core.Tests
         public void NonStackingBonuses()
         {
             Character c = _rules.CreateCharacter();
-            c.SetVariableBase("Str", 16);
-            c.SetVariableBase("BAB", 1);
-            c.AddReferenceToVariable("StrAttack", "BAB")
+            c.ModifyVariable("Str").Add(16);
+            c.ModifyVariable("BAB").Add(1);
+            c.ModifyVariable("StrAttack")
+                .AddReference("BAB")
                 .AddReference("StrBonus")
                 .Add("unstacked", 40)
                 .Add("unstacked", 600);
@@ -53,9 +54,10 @@ namespace PCSharpGen.Core.Tests
         public void StackingBonuses()
         {
             Character c = _rules.CreateCharacter();
-            c.SetVariableBase("Str", 16);
-            c.SetVariableBase("BAB", 1);
-            c.AddReferenceToVariable("StrAttack", "BAB")
+            c.ModifyVariable("Str").Add(16);
+            c.ModifyVariable("BAB").Add(1);
+            c.ModifyVariable("StrAttack")
+                .AddReference("BAB")
                 .AddReference("StrBonus")
                 .Add("stacked", 40)
                 .Add("stacked", 600);
@@ -73,8 +75,8 @@ namespace PCSharpGen.Core.Tests
             public override void InitializeCharacter(Character character)
             {
                 character.Name = "Sir Testy McTestington";
-                character.AddReferenceToVariable("StrMod", "Str", ValueComputation.AbilityScoreModifier);
-                character.AddReferenceToVariable("StrBonus", "StrMod", ValueComputation.WithMin(0));
+                character.ModifyVariable("StrMod").AddReference("Str", ValueComputation.AbilityScoreModifier);
+                character.ModifyVariable("StrBonus").AddReference("StrMod", ValueComputation.WithMin(0));
             }
         }
     }
