@@ -32,6 +32,11 @@ namespace PCSharpGen.Core
             return new BonusBuilder(this, name);
         }
 
+        /// <summary>
+        /// Used for multiple modifications of a single variable.
+        ///
+        /// All additions will be performed on the variable that was original chosen by <see cref="Character.ModifyVariable"/>
+        /// </summary>
         public struct BonusBuilder
         {
             private readonly Character _character;
@@ -53,26 +58,46 @@ namespace PCSharpGen.Core
                 _character.GetVariable(_name).Add(new FixedValue(type, value));
                 return this;
             }
-
-            public BonusBuilder AddReference(string referenceStatistic)
+            
+            /// <summary>
+            /// Add a bonus that is equivalent to the current value of some other character variable of the current character.
+            /// </summary>
+            /// <param name="referencedVariableName">The name of the variable to be added as a bonus</param>
+            public BonusBuilder AddReference(string referencedVariableName)
             {
-                return AddReference("", referenceStatistic);
+                return AddReference("", referencedVariableName);
             }
 
-            public BonusBuilder AddReference(string type, string referenceStatistic)
+            /// <summary>
+            /// Add a bonus that is equivalent to the current value of some other character variable of the current character.
+            /// </summary>
+            /// <param name="type">The type of this bonus. For untyped, call the overload without this parameter</param>
+            /// <param name="referencedVariableName">The name of the variable to be added as a bonus</param>
+            public BonusBuilder AddReference(string type, string referencedVariableName)
             {
-                _character.GetVariable(_name).Add(new ComputedValue(type, _character.GetVariable(referenceStatistic)));
+                _character.GetVariable(_name).Add(new ComputedValue(type, _character.GetVariable(referencedVariableName)));
                 return this;
             }
 
-            public BonusBuilder AddReference(string referenceStatistic, ComputeValue computation)
+            /// <summary>
+            /// Add a bonus that is equivalent to the current value of some other character variable of the current character, but with a particular computation
+            /// </summary>
+            /// <param name="computation">A supported computation to be performed on the referenced variable before using it as a bonus. <see cref="BonusComputation"/></param>
+            /// <param name="referencedVariableName">The name of the variable to be added as a bonus</param>
+            public BonusBuilder AddReference(string referencedVariableName, ComputeValue computation)
             {
-                return AddReference("", referenceStatistic, computation);
+                return AddReference("", referencedVariableName, computation);
             }
-
-            public BonusBuilder AddReference(string type, string referenceStatistic, ComputeValue computation)
+            
+            /// <summary>
+            /// Add a bonus that is equivalent to the current value of some other character variable of the current character, but with a particular computation
+            /// </summary>
+            /// <param name="type">The type of this bonus. For untyped, call the overload without this parameter</param>
+            /// <param name="computation">A supported computation to be performed on the referenced variable before using it as a bonus. <see cref="BonusComputation"/></param>
+            /// <param name="referencedVariableName">The name of the variable to be added as a bonus</param>
+            public BonusBuilder AddReference(string type, string referencedVariableName, ComputeValue computation)
             {
-                _character.GetVariable(_name).Add(new ComputedValue(type, _character.GetVariable(referenceStatistic), computation));
+                _character.GetVariable(_name).Add(new ComputedValue(type, _character.GetVariable(referencedVariableName), computation));
                 return this;
             }
         }

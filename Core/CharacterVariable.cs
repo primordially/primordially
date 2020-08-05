@@ -3,6 +3,14 @@ using System.Linq;
 
 namespace PCSharpGen.Core
 {
+    /// <summary>
+    /// A representation of any numeric value a character might have.
+    /// "Strength" is a variable, "Strength Bonus" is a variable.
+    ///
+    /// Most variables are computed values from several <see cref="Bonus"/>
+    /// objects.  Even static values are represented as a Bonus of type
+    /// "BASE".
+    /// </summary>
     public class CharacterVariable
     {
         private readonly Character _character;
@@ -25,22 +33,23 @@ namespace PCSharpGen.Core
             _values = values.ToList();
         }
 
-        public int Value => GetAppliedModifiers().Sum(v => v.Value);
-
-        public CharacterVariable Replace(string ofType, Bonus newValue)
-        {
-            _values.RemoveAll(v => v.Type == ofType);
-            _values.Add(newValue);
-            return this;
-        }
-
         public CharacterVariable Add(Bonus value)
         {
             _values.Add(value);
             return this;
         }
 
-        public IEnumerable<Bonus> GetAppliedModifiers()
+        /// <summary>
+        /// Get the current value of this variable, with all bonuses included.
+        /// </summary>
+        public int Value => GetAppliedBonuses().Sum(v => v.Value);
+
+        /// <summary>
+        /// Get a list of all of the bonuses that are currently effecting this variable.
+        /// For any non-stacking bonuses, only the highest is included.
+        /// </summary>
+        /// <returns>A list of all bonus objects that go into calculating the <see cref="Value"/> result</returns>
+        public IEnumerable<Bonus> GetAppliedBonuses()
         {
             var applied = new List<Bonus>();
             IEnumerable<IGrouping<string, Bonus>> groups = _values.GroupBy(v => v.Type);

@@ -75,8 +75,8 @@ namespace PCSharpGen.Core.Tests
             public override void InitializeCharacter(Character character)
             {
                 character.Name = "Sir Testy McTestington";
-                character.ModifyVariable("StrMod").AddReference("Str", ValueComputation.AbilityScoreModifier);
-                character.ModifyVariable("StrBonus").AddReference("StrMod", ValueComputation.WithMin(0));
+                character.ModifyVariable("StrMod").AddReference("Str", BonusComputation.AbilityScoreModifier);
+                character.ModifyVariable("StrBonus").AddReference("StrMod", BonusComputation.WithMin(0));
             }
         }
     }

@@ -28,9 +28,9 @@ namespace PCSharpGen.Core
             {
                 character.ModifyVariable(abilityScore).Add(10);
                 character.ModifyVariable(abilityScore + "Mod")
-                    .AddReference(abilityScore, ValueComputation.AbilityScoreModifier);
+                    .AddReference(abilityScore, BonusComputation.AbilityScoreModifier);
                 character.ModifyVariable(abilityScore + "Bonus")
-                    .AddReference(abilityScore + "Mod", ValueComputation.WithMin(0));
+                    .AddReference(abilityScore + "Mod", BonusComputation.WithMin(0));
             }
         }
 

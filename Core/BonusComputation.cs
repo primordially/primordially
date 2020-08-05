@@ -1,6 +1,6 @@
 ﻿namespace PCSharpGen.Core
 {
-    public static class ValueComputation
+    public static class BonusComputation
     {
         public static int AbilityScoreModifier(CharacterVariable abilityScore) => abilityScore.Value / 2 - 5;
         public static ComputeValue WithMax(int max) => b => b.Value > max ? max : b.Value;
