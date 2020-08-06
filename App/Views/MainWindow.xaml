@@ -10,15 +10,15 @@
 
     <NativeMenu.Menu>
         <NativeMenu>
-            <NativeMenuItem Header="_File">
+            <NativeMenuItem Header="File">
                 <NativeMenuItem.Menu>
                     <NativeMenu>
-                        <NativeMenuItem Header="_New" Gesture="Ctrl+N" Command="{Binding NewCommand}"/>
-                        <NativeMenuItem Header="_Open" Gesture="Ctrl+O"/>
-                        <NativeMenuItem Header="_Save" Gesture="Ctrl+S"/>
-                        <NativeMenuItem Header="_Close" Gesture="Ctrl+F4"/>
+                        <NativeMenuItem Header="New" Gesture="Cmd+N" Command="{Binding NewCommand}"/>
+                        <NativeMenuItem Header="Open" Gesture="Cmd+O"/>
+                        <NativeMenuItem Header="Save" Gesture="Cmd+S"/>
+                        <NativeMenuItem Header="Close" Gesture="Cmd+F4"/>
                         <NativeMenuItemSeperator />
-                        <NativeMenuItem Header="E_xit" Gesture="Ctrl+X"/>
+                        <NativeMenuItem Header="Exit" Gesture="Cmd+X"/>
                     </NativeMenu>
                 </NativeMenuItem.Menu>
             </NativeMenuItem>
@@ -29,7 +29,16 @@
         <viewModels:MainWindowViewModel />
     </Design.DataContext>
     <DockPanel>
-        <NativeMenuBar DockPanel.Dock="Top" />
+        <Menu DockPanel.Dock="Top" IsVisible="{Binding IsWindows}">
+          <MenuItem Header="_File">
+            <MenuItem Header="_New" HotKey="Ctrl+N" Command="{Binding NewCommand}"/>
+            <MenuItem Header="_Open" HotKey="Ctrl+O"/>
+            <MenuItem Header="_Save" HotKey="Ctrl+S"/>
+            <MenuItem Header="_Close" HotKey="Ctrl+F4"/>
+            <Separator/>
+            <MenuItem Header="E_xit" HotKey="Ctrl+X"/>
+          </MenuItem>
+        </Menu>
         <Border Background="Gray">
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Message}" />
         </Border>
