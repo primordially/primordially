@@ -1,4 +1,4 @@
-﻿namespace PCSharpGen.Core
+﻿namespace Primordially.Core
 {
     /// <summary>
     /// Represents a simple, fixed value bonus, for example, Weapon Focus, which gives a static +1 to attacks,

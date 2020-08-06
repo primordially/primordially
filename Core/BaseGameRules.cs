@@ -1,6 +1,6 @@
 ﻿using System.Collections.Immutable;
 
-namespace PCSharpGen.Core
+namespace Primordially.Core
 {
     public abstract class BaseGameRules
     {

@@ -1,4 +1,4 @@
-﻿namespace PCSharpGen.Core
+﻿namespace Primordially.Core
 {
     public delegate int ComputeValue(CharacterVariable stat);
 
@@ -8,7 +8,7 @@
         {
         }
 
-        public ComputedValue(string type, CharacterVariable source, ComputeValue computation)
+        public ComputedValue(string type, CharacterVariable source, ComputeValue? computation)
         {
             Type = type;
             Source = source;
@@ -16,7 +16,7 @@
         }
 
         public CharacterVariable Source { get; }
-        public ComputeValue Computation { get; }
+        public ComputeValue? Computation { get; }
         public override string Type { get; }
 
         public override int Value => Computation?.Invoke(Source) ?? Source.Value;

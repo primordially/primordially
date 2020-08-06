@@ -5,11 +5,26 @@
         xmlns:viewModels="clr-namespace:Primordially.App.ViewModels"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Primordially.App.Views.MainWindow"
-        Icon="/Assets/avalonia-logo.ico"
-        Title="App">
+        Icon="/resources/primordial.ly.ico"
+        Title="Primordial.ly Generated Character">
 
     <Design.DataContext>
-        <viewModels:MainWindowViewModel/>
+        <viewModels:MainWindowViewModel />
     </Design.DataContext>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New" HotKey="Ctrl+N" Command="{Binding NewCommand}"/>
+                <MenuItem Header="_Open..." />
+                <MenuItem Header="_Save" />
+                <MenuItem Header="_Close" />
+                <Separator />
+                <MenuItem Header="E_xit" />
+            </MenuItem>
+        </Menu>
+        <Border Background="Gray">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Message}" />
+        </Border>
+    </DockPanel>
 
 </Window>

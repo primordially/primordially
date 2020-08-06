@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Immutable;
 
-namespace PCSharpGen.Core
+namespace Primordially.Core
 {
     /// <summary>
     /// This should probably eventually be read from LUA/LST files,

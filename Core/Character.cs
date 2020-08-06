@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PCSharpGen.Core
+namespace Primordially.Core
 {
     public class Character
     {
@@ -12,7 +12,7 @@ namespace PCSharpGen.Core
 
         public BaseGameRules Rules { get; }
 
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         public Dictionary<string, CharacterVariable> Variables { get; } = new Dictionary<string, CharacterVariable>(StringComparer.InvariantCultureIgnoreCase);
 
