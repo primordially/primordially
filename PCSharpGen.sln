@@ -20,6 +20,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Tests", "Core.Tests\Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LstToLua", "LstToLua\LstToLua.csproj", "{18D329B7-B953-4E4A-A5D9-BD5CCDECC83F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GameModes", "GameModes", "{362CBD07-BEC8-4539-A1AB-013427D0E589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pathfinder", "GameModes\Pathfinder\Pathfinder.csproj", "{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,9 +46,16 @@ Global
 		{18D329B7-B953-4E4A-A5D9-BD5CCDECC83F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18D329B7-B953-4E4A-A5D9-BD5CCDECC83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18D329B7-B953-4E4A-A5D9-BD5CCDECC83F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673} = {362CBD07-BEC8-4539-A1AB-013427D0E589}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB743F20-D640-4340-9F2B-9E24F478D414}
