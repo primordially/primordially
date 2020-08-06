@@ -16,4 +16,18 @@
     <PackageReference Include="Avalonia.Desktop" />
     <PackageReference Include="NeoLua" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+  <Target Name="PublishPlugins"
+          BeforeTargets="Build">
+
+    <ItemGroup>
+      <PluginProject Include="..\GameModes\Pathfinder\Pathfinder.csproj" />
+    </ItemGroup>
+
+    <MSBuild Projects="@(PluginProject)"
+             Targets="Publish"
+             Properties="PublishDir=$(TargetDir)plugins\%(FileName)\" />
+  </Target>
 </Project>
