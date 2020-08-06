@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Immutable;
+using Primordially.Core;
 
-namespace Primordially.Core
+namespace Primordially.Pathfinder
 {
     /// <summary>
     /// This should probably eventually be read from LUA/LST files,

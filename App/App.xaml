@@ -1,7 +1,8 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:app="clr-namespace:Primordially.App"
-             x:Class="Primordially.App.App">
+             x:Class="Primordially.App.App"
+             Name="Primordial.ly Generated Character">
     <Application.DataTemplates>
         <app:ViewLocator/>
     </Application.DataTemplates>

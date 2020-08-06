@@ -4,9 +4,9 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.Loader;
 using Avalonia.Controls;
-using PCSharpGen.Core;
+using Primordially.Core;
 
-namespace PCSharpGen.App
+namespace Primordially.App
 {
     internal class PluginLoadContext : AssemblyLoadContext
     {

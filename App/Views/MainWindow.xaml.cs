@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
-using PCSharpGen.Core;
+using Primordially.Core;
 
 namespace Primordially.App.Views
 {

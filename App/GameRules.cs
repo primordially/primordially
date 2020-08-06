@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using PCSharpGen.Core;
+using Primordially.Core;
 
-namespace PCSharpGen.App
+namespace Primordially.App
 {
     internal class GameRules
     {

@@ -8,20 +8,28 @@
         Icon="/resources/primordial.ly.ico"
         Title="Primordial.ly Generated Character">
 
+    <NativeMenu.Menu>
+        <NativeMenu>
+            <NativeMenuItem Header="_File">
+                <NativeMenuItem.Menu>
+                    <NativeMenu>
+                        <NativeMenuItem Header="_New" Gesture="Ctrl+N" Command="{Binding NewCommand}"/>
+                        <NativeMenuItem Header="_Open" Gesture="Ctrl+O"/>
+                        <NativeMenuItem Header="_Save" Gesture="Ctrl+S"/>
+                        <NativeMenuItem Header="_Close" Gesture="Ctrl+F4"/>
+                        <NativeMenuItemSeperator />
+                        <NativeMenuItem Header="E_xit" Gesture="Ctrl+X"/>
+                    </NativeMenu>
+                </NativeMenuItem.Menu>
+            </NativeMenuItem>
+        </NativeMenu>
+    </NativeMenu.Menu>
+
     <Design.DataContext>
         <viewModels:MainWindowViewModel />
     </Design.DataContext>
     <DockPanel>
-        <Menu DockPanel.Dock="Top">
-            <MenuItem Header="_File">
-                <MenuItem Header="_New" HotKey="Ctrl+N" Command="{Binding NewCommand}"/>
-                <MenuItem Header="_Open..." />
-                <MenuItem Header="_Save" />
-                <MenuItem Header="_Close" />
-                <Separator />
-                <MenuItem Header="E_xit" />
-            </MenuItem>
-        </Menu>
+        <NativeMenuBar DockPanel.Dock="Top" />
         <Border Background="Gray">
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Message}" />
         </Border>

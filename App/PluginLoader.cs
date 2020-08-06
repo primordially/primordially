@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 
-namespace PCSharpGen.App
+namespace Primordially.App
 {
     internal class PluginLoader
     {
