@@ -7,6 +7,10 @@ namespace Primordially.App
 {
     public class ViewLocator : IDataTemplate
     {
+        public ViewLocator()
+        {
+        }
+
         public bool SupportsRecycling => false;
 
         public IControl Build(object data)

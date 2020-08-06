@@ -1,10 +1,12 @@
 ﻿using System.Reactive;
+using Primordially.Core;
 using ReactiveUI;
 
 namespace Primordially.App.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {
+        private readonly BaseGameRules _rules;
         private string _message = "You are no one";
 
         public string Message
@@ -15,6 +17,7 @@ namespace Primordially.App.ViewModels
 
         public MainWindowViewModel()
         {
+            _rules = GameRules.Load("Pathfinder");
             NewCommand = ReactiveCommand.Create(New);
         }
 
