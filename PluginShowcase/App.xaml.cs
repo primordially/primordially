@@ -1,11 +1,10 @@
-using System;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using Primordially.App.ViewModels;
-using Primordially.App.Views;
+using Primordially.PluginShowcase.ViewModels;
+using Primordially.PluginShowcase.Views;
 
-namespace Primordially.App
+namespace Primordially.PluginShowcase
 {
     public class App : Application
     {
@@ -26,7 +25,5 @@ namespace Primordially.App
 
             base.OnFrameworkInitializationCompleted();
         }
-
-        public static new App Current => (App) Application.Current;
     }
 }

@@ -2,41 +2,80 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using System.Runtime.Serialization;
+using JetBrains.Annotations;
+using Primordially.PluginCore;
 
 namespace Primordially.App
 {
-    internal class PluginLoader
+    internal static class PluginLoader
     {
         private static readonly string BasePath = Path.Join(AppContext.BaseDirectory, "plugins");
-        private static readonly Dictionary<string, Assembly> LoadedPlugins = new Dictionary<string, Assembly>();
+        private static readonly Dictionary<string, IPlugin> LoadedPlugins = new Dictionary<string, IPlugin>();
 
         public static IEnumerable<string> ListAvailable()
         {
             return Directory.EnumerateDirectories(BasePath);
         }
 
-        public static Assembly GetPluginAssembly(string name)
+        public static IPlugin LoadPlugin(string name)
         {
-            lock (LoadedPlugins)
+            if (LoadedPlugins.TryGetValue(name, out var loaded))
             {
-                if (LoadedPlugins.TryGetValue(name, out var result))
+                return loaded;
+            }
+
+            try
+            {
+                string path = Path.Join(BasePath, name, name + ".dll");
+                if (!File.Exists(path))
                 {
-                    return result;
+                    throw new FileNotFoundException("The plugin could not be found.", path);
                 }
 
-                return LoadedPlugins[name] = LoadPlugin(name);
+                var context = new PluginLoadContext(path);
+                Assembly assembly = context.LoadFromAssemblyName(new AssemblyName(name));
+                PluginEntryPointAttribute? entryPointAttribute = assembly.GetCustomAttribute<PluginEntryPointAttribute>();
+
+                if (entryPointAttribute == null)
+                {
+                    throw new PluginLoadException($"Plugin {name} does not have a PluginEntryPoint");
+                }
+
+                object? entryPoint = Activator.CreateInstance(entryPointAttribute.Plugin);
+
+                if (!(entryPoint is IPlugin plugin))
+                {
+                    throw new PluginLoadException($"Plugin {name} has an invalid entry point");
+                }
+
+                LoadedPlugins.Add(name, plugin);
+
+                return plugin;
+            }
+            catch (Exception e)
+            {
+                throw new PluginLoadException("Unexpected error loading plugin", e);
             }
         }
+    }
 
-        private static Assembly LoadPlugin(string name)
+    internal class PluginLoadException : Exception
+    {
+        public PluginLoadException()
         {
-            var path = Path.Join(BasePath, name, name + ".dll");
-            if (!File.Exists(path))
-            {
-                throw new FileNotFoundException("The plugin could not be found.", path);
-            }
-            var context = new PluginLoadContext(path);
-            return context.LoadFromAssemblyName(new AssemblyName(name));
+        }
+
+        protected PluginLoadException([NotNull] SerializationInfo info, StreamingContext context) : base(info, context)
+        {
+        }
+
+        public PluginLoadException([CanBeNull] string? message) : base(message)
+        {
+        }
+
+        public PluginLoadException([CanBeNull] string? message, [CanBeNull] Exception? innerException) : base(message, innerException)
+        {
         }
     }
 }

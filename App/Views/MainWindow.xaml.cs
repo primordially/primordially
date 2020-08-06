@@ -1,11 +1,12 @@
-using System;
 using System.Runtime.InteropServices;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
-using Primordially.Core;
+using Primordially.App.ViewModels;
+using Primordially.PluginCore;
 
 namespace Primordially.App.Views
 {
+    [ViewFor(typeof(MainWindowViewModel))]
     public class MainWindow : Window
     {
         public bool IsWindows { get; }

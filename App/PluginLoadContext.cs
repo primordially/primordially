@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.Loader;
-using Avalonia.Controls;
 using Primordially.Core;
+using Primordially.PluginCore;
 
 namespace Primordially.App
 {
@@ -19,8 +19,8 @@ namespace Primordially.App
 
         public static readonly IReadOnlyList<string> ContractAssemblyNames = new[]
         {
+            typeof(IPlugin).Assembly.GetName().Name!,
             typeof(BaseGameRules).Assembly.GetName().Name!,
-            typeof(Window).Assembly.GetName().Name!,
         };
 
         protected override Assembly? Load(AssemblyName assemblyName)

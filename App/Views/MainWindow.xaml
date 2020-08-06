@@ -29,6 +29,7 @@
   <Design.DataContext>
     <viewModels:MainWindowViewModel />
   </Design.DataContext>
+  
   <DockPanel>
     <!-- This is bound directly to the view because it's really a view only concept -->
     <Menu DockPanel.Dock="Top" IsVisible="{Binding RelativeSource={RelativeSource AncestorType=view:MainWindow}, Path=IsWindows}">
@@ -41,9 +42,7 @@
         <MenuItem Header="E_xit" HotKey="Ctrl+X" />
       </MenuItem>
     </Menu>
-    <Border Background="Gray">
-      <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Message}" />
-    </Border>
+    <ScrollViewer Content="{Binding CharacterViewModel}" />
   </DockPanel>
 
 </Window>

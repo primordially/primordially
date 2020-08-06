@@ -4,7 +4,6 @@
     <ApplicationIcon>resources\primordial.ly.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Compile Update="**\*.xaml.cs">
       <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
@@ -14,12 +13,20 @@
     <AvaloniaResource Include="resources\**" />
   </ItemGroup>
   <ItemGroup>
+    <AvaloniaResource Remove="Models\**" />
+    <AvaloniaXaml Remove="Models\**" />
+    <Compile Remove="Models\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Models\**" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Avalonia" />
     <PackageReference Include="Avalonia.Desktop" />
     <PackageReference Include="Avalonia.ReactiveUI" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\PluginCore\PluginCore.csproj" />
   </ItemGroup>
   <Target Name="PublishPlugins" BeforeTargets="Build">
 
