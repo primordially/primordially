@@ -21,15 +21,12 @@
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj" />
   </ItemGroup>
-  <Target Name="PublishPlugins"
-          BeforeTargets="Build">
+  <Target Name="PublishPlugins" BeforeTargets="Build">
 
     <ItemGroup>
       <PluginProject Include="..\GameModes\Pathfinder\Pathfinder.csproj" />
     </ItemGroup>
 
-    <MSBuild Projects="@(PluginProject)"
-             Targets="Publish"
-             Properties="PublishDir=$(TargetDir)plugins\%(FileName)\" />
+    <MSBuild Projects="@(PluginProject)" Targets="Publish" Properties="PublishDir=$(TargetDir)plugins\%(FileName)\" />
   </Target>
 </Project>

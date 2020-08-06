@@ -3,6 +3,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewModels="clr-namespace:Primordially.App.ViewModels"
+        xmlns:view="clr-namespace:Primordially.App.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Primordially.App.Views.MainWindow"
         Icon="/resources/primordial.ly.ico"
@@ -29,7 +30,8 @@
         <viewModels:MainWindowViewModel />
     </Design.DataContext>
     <DockPanel>
-        <Menu DockPanel.Dock="Top" IsVisible="{Binding IsWindows}">
+        <!-- This is bound directly to the view because it's really a view only concept -->
+        <Menu DockPanel.Dock="Top" IsVisible="{Binding RelativeSource={RelativeSource AncestorType=view:MainWindow}, Path=IsWindows}">
           <MenuItem Header="_File">
             <MenuItem Header="_New" HotKey="Ctrl+N" Command="{Binding NewCommand}"/>
             <MenuItem Header="_Open" HotKey="Ctrl+O"/>
