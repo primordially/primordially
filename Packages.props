@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
   <ItemGroup>
-    <PackageReference Update="Avalonia" Version="0.9.9" />
-    <PackageReference Update="Avalonia.Desktop" Version="0.9.9" />
+    <PackageReference Update="Avalonia" Version="0.9.12" />
+    <PackageReference Update="Avalonia.Desktop" Version="0.9.12" />
+    <PackageReference Update="Avalonia.ReactiveUI" Version="0.9.12" />
     <PackageReference Update="FluentAssertions" Version="5.10.3" />
     <PackageReference Update="LibGit2Sharp" Version="0.26.2" />
-    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="16.5.0" />
     <PackageReference Update="Microsoft.CodeCoverage" Version="16.5.0" />
+    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="16.5.0" />
     <PackageReference Update="Moq" Version="4.8.3" />
     <PackageReference Update="NeoLua" Version="1.3.11" />
     <PackageReference Update="NUnit" Version="3.12.0" />
     <PackageReference Update="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Update="ReactiveUI" Version="11.5.17" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,11 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="PCSharpGen.App.App">
+             xmlns:app="clr-namespace:Primordially.App"
+             x:Class="Primordially.App.App">
+    <Application.DataTemplates>
+        <app:ViewLocator/>
+    </Application.DataTemplates>
+
     <Application.Styles>
         <StyleInclude Source="avares://Avalonia.Themes.Default/DefaultTheme.xaml"/>
         <StyleInclude Source="avares://Avalonia.Themes.Default/Accents/BaseLight.xaml"/>

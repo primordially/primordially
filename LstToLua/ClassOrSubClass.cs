@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Linq;
 
-namespace PCSharpGen.LstToLua
+namespace Primordially.LstToLua
 {
     /// <summary>
     ///   Contains anything that can be on the class or subclass line(s)

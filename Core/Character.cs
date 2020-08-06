@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PCSharpGen.Core
+﻿namespace Primordially.Core
 {
     public class Character
     {

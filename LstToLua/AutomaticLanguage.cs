@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using PCSharpGen.LstToLua.Conditions;
+using Primordially.LstToLua.Conditions;
 
-namespace PCSharpGen.LstToLua
+namespace Primordially.LstToLua
 {
     internal class AutomaticLanguage : ConditionalObject
     {

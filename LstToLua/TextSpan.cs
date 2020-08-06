@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PCSharpGen.LstToLua
+namespace Primordially.LstToLua
 {
     internal struct TextSpan
     {

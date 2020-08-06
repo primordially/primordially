@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using NUnit.Framework;
 
-namespace PCSharpGen.Core.Tests
+namespace Primordially.Core.Tests
 {
     public class CharacterTests
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PCSharpGen.LstToLua
+namespace Primordially.LstToLua
 {
     internal static class Helpers
     {

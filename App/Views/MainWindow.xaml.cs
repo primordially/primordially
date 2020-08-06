@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace PCSharpGen.App
+namespace Primordially.App.Views
 {
     public class MainWindow : Window
     {

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using LibGit2Sharp;
 
-namespace PCSharpGen.LstToLua
+namespace Primordially.LstToLua
 {
     class Program
     {

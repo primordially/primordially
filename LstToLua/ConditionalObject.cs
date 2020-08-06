@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using PCSharpGen.LstToLua.Conditions;
+using Primordially.LstToLua.Conditions;
 
-namespace PCSharpGen.LstToLua
+namespace Primordially.LstToLua
 {
     internal class ConditionalObject : LuaObject
     {

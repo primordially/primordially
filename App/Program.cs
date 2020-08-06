@@ -1,10 +1,8 @@
-﻿using System;
-using Avalonia;
-using Avalonia.Controls;
-using Avalonia.Controls.ApplicationLifetimes;
+﻿using Avalonia;
 using Avalonia.Logging.Serilog;
+using Avalonia.ReactiveUI;
 
-namespace PCSharpGen.App
+namespace Primordially.App
 {
     class Program
     {
@@ -18,6 +16,7 @@ namespace PCSharpGen.App
         public static AppBuilder BuildAvaloniaApp()
             => AppBuilder.Configure<App>()
                 .UsePlatformDetect()
-                .LogToDebug();
+                .LogToDebug()
+                .UseReactiveUI();
     }
 }

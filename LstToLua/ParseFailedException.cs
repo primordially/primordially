@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PCSharpGen.LstToLua
+namespace Primordially.LstToLua
 {
     internal class ParseFailedException : Exception
     {

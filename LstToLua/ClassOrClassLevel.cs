@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using PCSharpGen.LstToLua.Conditions;
+using Primordially.LstToLua.Conditions;
 
-namespace PCSharpGen.LstToLua
+namespace Primordially.LstToLua
 {
     /// <summary>
     ///   Contains anything that can be on either a Class line, or a class level line
