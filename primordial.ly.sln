@@ -7,6 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App", "App\App.csproj", "{E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6C140597-4BBA-4F9E-ADC5-FCE6A5EB9FCE}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		.gitignore = .gitignore
 		Directory.Build.props = Directory.Build.props
 		Directory.Build.targets = Directory.Build.targets
@@ -22,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LstToLua", "LstToLua\LstToL
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GameModes", "GameModes", "{362CBD07-BEC8-4539-A1AB-013427D0E589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pathfinder", "GameModes\Pathfinder\Pathfinder.csproj", "{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pathfinder", "GameModes\Pathfinder\Pathfinder.csproj", "{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

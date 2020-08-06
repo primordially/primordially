@@ -9,41 +9,41 @@
         Icon="/resources/primordial.ly.ico"
         Title="Primordial.ly Generated Character">
 
-    <NativeMenu.Menu>
-        <NativeMenu>
-            <NativeMenuItem Header="File">
-                <NativeMenuItem.Menu>
-                    <NativeMenu>
-                        <NativeMenuItem Header="New" Gesture="Cmd+N" Command="{Binding NewCommand}"/>
-                        <NativeMenuItem Header="Open" Gesture="Cmd+O"/>
-                        <NativeMenuItem Header="Save" Gesture="Cmd+S"/>
-                        <NativeMenuItem Header="Close" Gesture="Cmd+F4"/>
-                        <NativeMenuItemSeperator />
-                        <NativeMenuItem Header="Exit" Gesture="Cmd+X"/>
-                    </NativeMenu>
-                </NativeMenuItem.Menu>
-            </NativeMenuItem>
-        </NativeMenu>
-    </NativeMenu.Menu>
+  <NativeMenu.Menu>
+    <NativeMenu>
+      <NativeMenuItem Header="File">
+        <NativeMenuItem.Menu>
+          <NativeMenu>
+            <NativeMenuItem Header="New" Gesture="Cmd+N" Command="{Binding NewCommand}" />
+            <NativeMenuItem Header="Open" Gesture="Cmd+O" />
+            <NativeMenuItem Header="Save" Gesture="Cmd+S" />
+            <NativeMenuItem Header="Close" Gesture="Cmd+F4" />
+            <NativeMenuItemSeperator />
+            <NativeMenuItem Header="Exit" Gesture="Cmd+X" />
+          </NativeMenu>
+        </NativeMenuItem.Menu>
+      </NativeMenuItem>
+    </NativeMenu>
+  </NativeMenu.Menu>
 
-    <Design.DataContext>
-        <viewModels:MainWindowViewModel />
-    </Design.DataContext>
-    <DockPanel>
-        <!-- This is bound directly to the view because it's really a view only concept -->
-        <Menu DockPanel.Dock="Top" IsVisible="{Binding RelativeSource={RelativeSource AncestorType=view:MainWindow}, Path=IsWindows}">
-          <MenuItem Header="_File">
-            <MenuItem Header="_New" HotKey="Ctrl+N" Command="{Binding NewCommand}"/>
-            <MenuItem Header="_Open" HotKey="Ctrl+O"/>
-            <MenuItem Header="_Save" HotKey="Ctrl+S"/>
-            <MenuItem Header="_Close" HotKey="Ctrl+F4"/>
-            <Separator/>
-            <MenuItem Header="E_xit" HotKey="Ctrl+X"/>
-          </MenuItem>
-        </Menu>
-        <Border Background="Gray">
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Message}" />
-        </Border>
-    </DockPanel>
+  <Design.DataContext>
+    <viewModels:MainWindowViewModel />
+  </Design.DataContext>
+  <DockPanel>
+    <!-- This is bound directly to the view because it's really a view only concept -->
+    <Menu DockPanel.Dock="Top" IsVisible="{Binding RelativeSource={RelativeSource AncestorType=view:MainWindow}, Path=IsWindows}">
+      <MenuItem Header="_File">
+        <MenuItem Header="_New" HotKey="Ctrl+N" Command="{Binding NewCommand}" />
+        <MenuItem Header="_Open" HotKey="Ctrl+O" />
+        <MenuItem Header="_Save" HotKey="Ctrl+S" />
+        <MenuItem Header="_Close" HotKey="Ctrl+F4" />
+        <Separator />
+        <MenuItem Header="E_xit" HotKey="Ctrl+X" />
+      </MenuItem>
+    </Menu>
+    <Border Background="Gray">
+      <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Message}" />
+    </Border>
+  </DockPanel>
 
 </Window>
