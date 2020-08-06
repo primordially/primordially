@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Immutable;
+using PCSharpGen.Core;
 
-namespace PCSharpGen.Core
+namespace PCSharpGen.Pathfinder
 {
     /// <summary>
     /// This should probably eventually be read from LUA/LST files,
