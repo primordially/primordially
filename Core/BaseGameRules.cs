@@ -15,6 +15,6 @@ namespace Primordially.Core
             return character;
         }
 
-        public abstract void InitializeCharacter(Character character);
+        protected abstract void InitializeCharacter(Character character);
     }
 }

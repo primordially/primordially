@@ -23,7 +23,7 @@ namespace Primordially.Pathfinder
 
         public override ImmutableDictionary<string, int> BonusOrdering { get; } = InitializeOrdering();
 
-        public override void InitializeCharacter(Character character)
+        protected override void InitializeCharacter(Character character)
         {
             foreach (string abilityScore in s_abilityScores)
             {

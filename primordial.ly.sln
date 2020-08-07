@@ -32,6 +32,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginCore", "PluginCore\Pl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginShowcase", "PluginShowcase\PluginShowcase.csproj", "{8E840A49-9E92-414E-AE2E-88A0F8951D3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pathfinder.Tests", "GameModes\Pathfinder.Tests\Pathfinder.Tests.csproj", "{A58FAF9B-2FC0-465A-B8AC-57D7F958CFCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,12 +68,17 @@ Global
 		{8E840A49-9E92-414E-AE2E-88A0F8951D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E840A49-9E92-414E-AE2E-88A0F8951D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E840A49-9E92-414E-AE2E-88A0F8951D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A58FAF9B-2FC0-465A-B8AC-57D7F958CFCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A58FAF9B-2FC0-465A-B8AC-57D7F958CFCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A58FAF9B-2FC0-465A-B8AC-57D7F958CFCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A58FAF9B-2FC0-465A-B8AC-57D7F958CFCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673} = {362CBD07-BEC8-4539-A1AB-013427D0E589}
+		{A58FAF9B-2FC0-465A-B8AC-57D7F958CFCE} = {362CBD07-BEC8-4539-A1AB-013427D0E589}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB743F20-D640-4340-9F2B-9E24F478D414}
