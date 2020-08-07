@@ -6,8 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Pathfinder\Pathfinder.csproj" />
-    <ProjectReference Include="..\..\PluginCore\PluginCore.csproj" />
-    <ProjectReference Include="..\..\Core\Core.csproj" />
   </ItemGroup>
 
 </Project>
