@@ -1,10 +1,12 @@
 ﻿using System.Reactive;
+using Primordially.App.Views;
 using Primordially.Core;
 using Primordially.PluginCore;
 using ReactiveUI;
 
 namespace Primordially.App.ViewModels
 {
+    [ModelFor(typeof(MainWindow))]
     public class MainWindowViewModel : ViewModelBase
     {
         private readonly IPlugin _plugin;

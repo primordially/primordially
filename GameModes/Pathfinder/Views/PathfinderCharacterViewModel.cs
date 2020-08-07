@@ -4,6 +4,7 @@ using ReactiveUI;
 
 namespace Primordially.Pathfinder.Views
 {
+    [ModelFor(typeof(PathfinderCharacterView))]
     public class PathfinderCharacterViewModel : PluginViewModelBase
     {
         public PathfinderCharacterViewModel(Character character)
