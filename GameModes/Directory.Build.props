@@ -16,16 +16,11 @@
       <Private>false</Private>
       <ExcludeAssets>runtime</ExcludeAssets>
     </ProjectReference>
-    <ProjectReference Include="$(MSBuildThisFileDirectory)..\Core\Core.csproj">
-      <Private>false</Private>
-      <ExcludeAssets>runtime</ExcludeAssets>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup Condition=" $(MSBuildProjectName.EndsWith('.Tests')) ">
     <PackageReference Include="Avalonia" />
     <PackageReference Include="ReactiveUI" />
     <ProjectReference Include="$(MSBuildThisFileDirectory)..\Core\Core.csproj" />
     <ProjectReference Include="$(MSBuildThisFileDirectory)..\PluginCore\PluginCore.csproj" />
-    <ProjectReference Include="$(MSBuildThisFileDirectory)..\Core\Core.csproj" />
   </ItemGroup>
 </Project>
