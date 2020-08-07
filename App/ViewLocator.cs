@@ -11,15 +11,22 @@ namespace Primordially.App
 {
     public class ViewLocator : IDataTemplate, IEnableLogger
     {
-        public bool SupportsRecycling => false;
-
         private readonly Dictionary<Type, Type?> _viewMapping = new Dictionary<Type, Type?>();
+        
+        private readonly IFullLogger _logger;
+
+        public ViewLocator()
+        {
+            _logger = this.Log();
+        }
+
+        public bool SupportsRecycling => false;
 
         public IControl Build(object data)
         {
             if (data == null)
             {
-                this.Log().Debug("data was null for ViewLocator");
+                _logger.Debug("data was null for ViewLocator");
                 return new TextBlock {Text = "Null data"};
             }
 
@@ -31,12 +38,12 @@ namespace Primordially.App
                     ModelForAttribute? modelForAttribute = viewModelType.GetCustomAttribute<ModelForAttribute>();
                     if (modelForAttribute == null)
                     {
-                        this.Log().Debug("data has no [ModelFor]");
+                        _logger.Debug("data has no [ModelFor]");
                         _viewMapping.Add(viewModelType, null);
                     }
                     else if (modelForAttribute.View == null)
                     {
-                        this.Log().Debug("data [ModelFor] has no ViewModel");
+                        _logger.Debug("data [ModelFor] has no ViewModel");
                         _viewMapping.Add(viewModelType, null);
                     }
                     else
@@ -44,22 +51,22 @@ namespace Primordially.App
                         var viewForAttribute = modelForAttribute.View.GetCustomAttribute<ViewForAttribute>();
                         if (viewForAttribute == null)
                         {
-                            this.Log().Debug("data has [ModelFor({0})], but {0} has no corresponding [ViewFor]", viewModelType.Name);
+                            _logger.Debug("data has [ModelFor({0})], but {0} has no corresponding [ViewFor]", viewModelType.Name);
                             _viewMapping.Add(viewModelType, null);
                         }
                         else if (viewForAttribute.ViewModel == null)
                         {
-                            this.Log().Debug("data has [ModelFor({0})], but {0} has [ViewFor] has no ViewModel", viewModelType.Name);
+                            _logger.Debug("data has [ModelFor({0})], but {0} has [ViewFor] has no ViewModel", viewModelType.Name);
                             _viewMapping.Add(viewModelType, null);
                         }
                         else if (viewForAttribute.ViewModel != viewModelType)
                         {
-                            this.Log().Debug("data has [ModelFor({0})], but {0} has mismatched [ViewFor({1}] ", viewModelType.Name, viewForAttribute.ViewModel.Name);
+                            _logger.Debug("data has [ModelFor({0})], but {0} has mismatched [ViewFor({1}] ", viewModelType.Name, viewForAttribute.ViewModel.Name);
                             _viewMapping.Add(viewModelType, null);
                         }
                         else
                         {
-                            this.Log().Debug("data has [ModelFor({0})] with matching ViewFor", viewModelType.Name);
+                            _logger.Debug("data has [ModelFor({0})] with matching ViewFor", viewModelType.Name);
                             _viewMapping.Add(viewModelType, modelForAttribute.View);
                         }
                     }
