@@ -1,4 +1,4 @@
-﻿namespace PCSharpGen.Core
+﻿namespace Primordially.Core
 {
     /// <summary>
     /// Represents a single bonus or penalty to a character variable

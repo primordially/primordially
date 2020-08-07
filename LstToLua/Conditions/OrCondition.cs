@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PCSharpGen.LstToLua.Conditions
+namespace Primordially.LstToLua.Conditions
 {
     internal class OrCondition : Condition
     {

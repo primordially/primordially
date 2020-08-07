@@ -14,7 +14,7 @@
     <EnableCentralPackageVersions>true</EnableCentralPackageVersions>
     <CentralPackagesFile>$(MSBuildThisFileDirectory)/Packages.props</CentralPackagesFile>
     <IsTestProject Condition=" $(MSBuildProjectName.EndsWith('.Tests')) ">true</IsTestProject>
-    <RootNamespace>PCSharpGen.$(MSBuildProjectName)</RootNamespace>
+    <RootNamespace>Primordially.$(MSBuildProjectName)</RootNamespace>
     <Deterministic>true</Deterministic>
     <PathMap>$(MSBuildThisFileDirectory)=S:\</PathMap>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>

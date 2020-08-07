@@ -1,18 +1,20 @@
+using System.Runtime.InteropServices;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
-using PCSharpGen.Core;
+using Primordially.App.ViewModels;
+using Primordially.PluginCore;
 
-namespace PCSharpGen.App
+namespace Primordially.App.Views
 {
+    [ViewFor(typeof(MainWindowViewModel))]
     public class MainWindow : Window
     {
-        private readonly BaseGameRules _rules;
+        public bool IsWindows { get; }
 
         public MainWindow()
         {
+            IsWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
             InitializeComponent();
-
-            _rules = GameRules.Load("Pathfinder");
         }
 
         private void InitializeComponent()

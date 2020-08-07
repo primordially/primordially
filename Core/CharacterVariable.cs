@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace PCSharpGen.Core
+namespace Primordially.Core
 {
     /// <summary>
     /// A representation of any numeric value a character might have.
@@ -62,7 +62,7 @@ namespace PCSharpGen.Core
                 else
                 {
                     int maxValue = 0;
-                    Bonus maxSource = null;
+                    Bonus? maxSource = null;
                     foreach (Bonus v in group)
                     {
                         int part = v.Value;

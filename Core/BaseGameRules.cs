@@ -1,6 +1,6 @@
 ﻿using System.Collections.Immutable;
 
-namespace PCSharpGen.Core
+namespace Primordially.Core
 {
     public abstract class BaseGameRules
     {
@@ -15,6 +15,6 @@ namespace PCSharpGen.Core
             return character;
         }
 
-        public abstract void InitializeCharacter(Character character);
+        protected abstract void InitializeCharacter(Character character);
     }
 }

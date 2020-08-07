@@ -4,9 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App", "App\App.csproj", "{EDDAEEFF-C5E5-4586-B7D4-0D27DC2E549A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673} = {C51CD460-E29E-4E0B-BAFC-5D6D18BEF673}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6C140597-4BBA-4F9E-ADC5-FCE6A5EB9FCE}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		.gitignore = .gitignore
 		Directory.Build.props = Directory.Build.props
 		Directory.Build.targets = Directory.Build.targets
@@ -21,8 +25,17 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LstToLua", "LstToLua\LstToLua.csproj", "{18D329B7-B953-4E4A-A5D9-BD5CCDECC83F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GameModes", "GameModes", "{362CBD07-BEC8-4539-A1AB-013427D0E589}"
+	ProjectSection(SolutionItems) = preProject
+		GameModes\Directory.Build.props = GameModes\Directory.Build.props
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pathfinder", "GameModes\Pathfinder\Pathfinder.csproj", "{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pathfinder", "GameModes\Pathfinder\Pathfinder.csproj", "{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginCore", "PluginCore\PluginCore.csproj", "{FA949F24-C4A6-4435-B0FD-8E1D04B1DCB4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginShowcase", "PluginShowcase\PluginShowcase.csproj", "{8E840A49-9E92-414E-AE2E-88A0F8951D3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pathfinder.Tests", "GameModes\Pathfinder.Tests\Pathfinder.Tests.csproj", "{A58FAF9B-2FC0-465A-B8AC-57D7F958CFCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,12 +63,25 @@ Global
 		{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA949F24-C4A6-4435-B0FD-8E1D04B1DCB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA949F24-C4A6-4435-B0FD-8E1D04B1DCB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA949F24-C4A6-4435-B0FD-8E1D04B1DCB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA949F24-C4A6-4435-B0FD-8E1D04B1DCB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E840A49-9E92-414E-AE2E-88A0F8951D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E840A49-9E92-414E-AE2E-88A0F8951D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E840A49-9E92-414E-AE2E-88A0F8951D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E840A49-9E92-414E-AE2E-88A0F8951D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A58FAF9B-2FC0-465A-B8AC-57D7F958CFCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A58FAF9B-2FC0-465A-B8AC-57D7F958CFCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A58FAF9B-2FC0-465A-B8AC-57D7F958CFCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A58FAF9B-2FC0-465A-B8AC-57D7F958CFCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C51CD460-E29E-4E0B-BAFC-5D6D18BEF673} = {362CBD07-BEC8-4539-A1AB-013427D0E589}
+		{A58FAF9B-2FC0-465A-B8AC-57D7F958CFCE} = {362CBD07-BEC8-4539-A1AB-013427D0E589}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB743F20-D640-4340-9F2B-9E24F478D414}

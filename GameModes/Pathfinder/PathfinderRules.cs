@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Immutable;
-using PCSharpGen.Core;
+using Primordially.Core;
 
-namespace PCSharpGen.Pathfinder
+namespace Primordially.Pathfinder
 {
     /// <summary>
     /// This should probably eventually be read from LUA/LST files,
@@ -23,7 +23,7 @@ namespace PCSharpGen.Pathfinder
 
         public override ImmutableDictionary<string, int> BonusOrdering { get; } = InitializeOrdering();
 
-        public override void InitializeCharacter(Character character)
+        protected override void InitializeCharacter(Character character)
         {
             foreach (string abilityScore in s_abilityScores)
             {

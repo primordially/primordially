@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace PCSharpGen.LstToLua
+namespace Primordially.LstToLua
 {
     internal class ClassLevel : ClassOrClassLevel
     {

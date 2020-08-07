@@ -1,4 +1,4 @@
-﻿namespace PCSharpGen.Core
+﻿namespace Primordially.Core
 {
     public static class BonusComputation
     {

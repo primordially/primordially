@@ -1,4 +1,4 @@
-﻿namespace PCSharpGen.LstToLua.Conditions
+﻿namespace Primordially.LstToLua.Conditions
 {
     internal class TotalAttackBonusCondition : Condition
     {

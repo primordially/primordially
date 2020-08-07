@@ -2,7 +2,7 @@
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace PCSharpGen.Core.Tests
+namespace Primordially.Core.Tests
 {
     public class CharacterTests
     {
@@ -72,7 +72,7 @@ namespace PCSharpGen.Core.Tests
             public override ImmutableDictionary<string, int> BonusOrdering { get; } =
                 ImmutableDictionary<string, int>.Empty;
 
-            public override void InitializeCharacter(Character character)
+            protected override void InitializeCharacter(Character character)
             {
                 character.Name = "Sir Testy McTestington";
                 character.ModifyVariable("StrMod").AddReference("Str", BonusComputation.AbilityScoreModifier);

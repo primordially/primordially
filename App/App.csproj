@@ -5,29 +5,27 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Update="**\*.xaml.cs">
-      <DependentUpon>%(Filename)</DependentUpon>
+      <DependentUpon>%(RelativeDir)\%(Filename)</DependentUpon>
     </Compile>
     <AvaloniaResource Include="**\*.xaml">
       <SubType>Designer</SubType>
     </AvaloniaResource>
+    <AvaloniaResource Include="resources\**" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" />
     <PackageReference Include="Avalonia.Desktop" />
-    <PackageReference Include="NeoLua" />
+    <PackageReference Include="Avalonia.ReactiveUI" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\PluginCore\PluginCore.csproj" />
   </ItemGroup>
-  <Target Name="PublishPlugins"
-          BeforeTargets="Build">
-
+  <Target Name="PublishPlugins" BeforeTargets="Build">
     <ItemGroup>
       <PluginProject Include="..\GameModes\Pathfinder\Pathfinder.csproj" />
     </ItemGroup>
 
-    <MSBuild Projects="@(PluginProject)"
-             Targets="Publish"
-             Properties="PublishDir=$(TargetDir)plugins\%(FileName)\" />
+    <MSBuild Projects="@(PluginProject)" Targets="Publish" Properties="PublishDir=$(TargetDir)plugins\%(FileName)\" />
   </Target>
 </Project>

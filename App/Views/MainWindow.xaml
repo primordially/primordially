@@ -1,0 +1,48 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:Primordially.App.ViewModels"
+        xmlns:view="clr-namespace:Primordially.App.Views"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Primordially.App.Views.MainWindow"
+        Icon="/resources/primordial.ly.ico"
+        Title="Primordial.ly Generated Character">
+
+  <NativeMenu.Menu>
+    <NativeMenu>
+      <NativeMenuItem Header="File">
+        <NativeMenuItem.Menu>
+          <NativeMenu>
+            <NativeMenuItem Header="New" Gesture="Cmd+N" Command="{Binding NewCommand}" />
+            <NativeMenuItem Header="Open" Gesture="Cmd+O" />
+            <NativeMenuItem Header="Save" Gesture="Cmd+S" />
+            <NativeMenuItem Header="Close" Gesture="Cmd+F4" />
+            <NativeMenuItemSeperator />
+            <NativeMenuItem Header="Exit" Gesture="Cmd+X" />
+          </NativeMenu>
+        </NativeMenuItem.Menu>
+      </NativeMenuItem>
+    </NativeMenu>
+  </NativeMenu.Menu>
+
+  <Design.DataContext>
+    <viewModels:MainWindowViewModel />
+  </Design.DataContext>
+  
+  <DockPanel>
+    <!-- This is bound directly to the view because it's really a view only concept -->
+    <Menu DockPanel.Dock="Top" IsVisible="{Binding RelativeSource={RelativeSource AncestorType=view:MainWindow}, Path=IsWindows}">
+      <MenuItem Header="_File">
+        <MenuItem Header="_New" HotKey="Ctrl+N" Command="{Binding NewCommand}" />
+        <MenuItem Header="_Open" HotKey="Ctrl+O" />
+        <MenuItem Header="_Save" HotKey="Ctrl+S" />
+        <MenuItem Header="_Close" HotKey="Ctrl+F4" />
+        <Separator />
+        <MenuItem Header="E_xit" HotKey="Ctrl+X" />
+      </MenuItem>
+    </Menu>
+    <ScrollViewer Content="{Binding CharacterViewModel}" />
+  </DockPanel>
+
+</Window>

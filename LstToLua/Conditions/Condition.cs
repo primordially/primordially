@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace PCSharpGen.LstToLua.Conditions
+namespace Primordially.LstToLua.Conditions
 {
     internal abstract class Condition : IDumpable
     {
