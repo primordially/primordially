@@ -83,7 +83,7 @@ namespace Primordially.App
 
         public bool Match(object data)
         {
-            return data is ViewModelBase || data is PluginViewModelBase;
+            return data is ViewModelBase || data is PluginViewModel;
         }
     }
 }

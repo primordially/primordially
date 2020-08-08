@@ -19,20 +19,26 @@ namespace Primordially.Pathfinder
         };
 
         public override ImmutableHashSet<string> StackedBonuses { get; } =
-            ImmutableHashSet.Create(StringComparer.OrdinalIgnoreCase, "", "dodge", "circumstance");
+            ImmutableHashSet.Create(StringComparer.OrdinalIgnoreCase, "", "dodge", "circumstance")!;
 
         public override ImmutableDictionary<string, int> BonusOrdering { get; } = InitializeOrdering();
 
-        protected override void InitializeCharacter(Character character)
+        protected override Character InitializeCharacter(Character character)
         {
             foreach (string abilityScore in s_abilityScores)
             {
-                character.ModifyVariable(abilityScore).Add(10);
-                character.ModifyVariable(abilityScore + "Mod")
-                    .AddReference(abilityScore, BonusComputation.AbilityScoreModifier);
-                character.ModifyVariable(abilityScore + "Bonus")
-                    .AddReference(abilityScore + "Mod", BonusComputation.WithMin(0));
+                character = character.ModifyVariable(abilityScore)
+                    .Add(10)
+                    .Build();
+                character = character.ModifyVariable(abilityScore + "Mod")
+                    .AddReference(abilityScore, BonusComputation.AbilityScoreModifier)
+                    .Build();
+                character = character.ModifyVariable(abilityScore + "Bonus")
+                    .AddReference(abilityScore + "Mod", BonusComputation.WithMin(0))
+                    .Build();
             }
+
+            return character;
         }
 
         private static ImmutableDictionary<string, int> InitializeOrdering()

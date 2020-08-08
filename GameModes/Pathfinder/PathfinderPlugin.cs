@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reactive.Subjects;
 using Primordially.Core;
 using Primordially.Pathfinder;
 using Primordially.Pathfinder.Views;
@@ -15,9 +16,9 @@ namespace Primordially.Pathfinder
             return new PathfinderRules();
         }
 
-        public PluginViewModelBase GetViewModelForCharacter(Character character)
+        public PluginViewModel GetViewModelForCharacter(Character character)
         {
-            return new PathfinderCharacterViewModel(character);
+            return new PathfinderCharacterViewModel(new BehaviorSubject<Character>(character));
         }
     }
 }

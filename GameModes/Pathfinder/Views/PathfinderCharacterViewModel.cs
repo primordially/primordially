@@ -1,36 +1,37 @@
-﻿using Primordially.Core;
+﻿using System.Reactive.Subjects;
+using Primordially.Core;
 using Primordially.PluginCore;
 using ReactiveUI;
 
 namespace Primordially.Pathfinder.Views
 {
     [ModelFor(typeof(PathfinderCharacterView))]
-    public class PathfinderCharacterViewModel : PluginViewModelBase
+    public sealed class PathfinderCharacterViewModel : ObservableViewModel<Character>
     {
-        public PathfinderCharacterViewModel(Character character)
+#if DEBUG
+        public PathfinderCharacterViewModel() : this(SampleCharacterCreator.Wizard)
         {
-            _character = character;
-            PullFromModel();
+        }
+#endif
+
+        public PathfinderCharacterViewModel(BehaviorSubject<Character> characterObservable) : base(characterObservable)
+        {
+            ClassModel = new PathfinderClassViewModel(Observable);
+            this.ToModel(m => m.Name, (Character c, string v) => c.WithName(v));
         }
 
-        private void PullFromModel()
+        protected override void ModelUpdatedImpl(Character character)
         {
-            Name = _character.Name;
+            Name = character.Name;
         }
-
-        private void PushToModel()
-        {
-            _character.Name = Name;
-        }
-
-        private readonly Character _character;
-
-        private string? _name;
-
-        public string? Name
+        
+        private string _name = null!;
+        public string Name
         {
             get => _name;
             set => this.RaiseAndSetIfChanged(ref _name, value);
         }
+
+        public PathfinderClassViewModel ClassModel { get; }
     }
 }

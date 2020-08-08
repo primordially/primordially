@@ -10,11 +10,9 @@ namespace Primordially.Core
 
         public Character CreateCharacter()
         {
-            var character = new Character(this);
-            InitializeCharacter(character);
-            return character;
+            return InitializeCharacter(new Character(this));
         }
 
-        protected abstract void InitializeCharacter(Character character);
+        protected abstract Character InitializeCharacter(Character character);
     }
 }

@@ -1,7 +1,9 @@
 using System;
+using System.Reactive.Subjects;
 using FluentAssertions;
 using Moq;
 using NUnit.Framework;
+using Primordially.Core;
 using Primordially.Pathfinder.Views;
 using ReactiveUI;
 
@@ -14,8 +16,8 @@ namespace Primordially.Pathfinder.Tests
         {
             PathfinderRules rules = new PathfinderRules();
             var character = rules.CreateCharacter();
-            character.Name = "Test Name";
-            PathfinderCharacterViewModel model = new PathfinderCharacterViewModel(character);
+            character = character.WithName("Test Name");
+            PathfinderCharacterViewModel model = new PathfinderCharacterViewModel(new BehaviorSubject<Character>(character));
             model.Name.Should().Be("Test Name");
         }
 
@@ -24,8 +26,8 @@ namespace Primordially.Pathfinder.Tests
         {
             PathfinderRules rules = new PathfinderRules();
             var character = rules.CreateCharacter();
-            character.Name = "Test Name";
-            PathfinderCharacterViewModel model = new PathfinderCharacterViewModel(character);
+            character = character.WithName("Test Name");
+            PathfinderCharacterViewModel model = new PathfinderCharacterViewModel(new BehaviorSubject<Character>(character));
             int changingCount = 0;
             var obs = new Mock<IObserver<IReactivePropertyChangedEventArgs<IReactiveObject>>>();
             obs.Setup(o => o.OnNext(It.IsAny<IReactivePropertyChangedEventArgs<IReactiveObject>>()))
@@ -38,12 +40,24 @@ namespace Primordially.Pathfinder.Tests
         }
 
         [Test]
+        public void NameChangeUpdatesModel()
+        {
+            PathfinderRules rules = new PathfinderRules();
+            var character = rules.CreateCharacter();
+            character = character.WithName("Test Name");
+            var model = new BehaviorSubject<Character>(character);
+            PathfinderCharacterViewModel viewModel = new PathfinderCharacterViewModel(model);
+            viewModel.Name = "New Name";
+            model.Value.Name.Should().Be("New Name");
+        }
+
+        [Test]
         public void SameNameDoesNotTriggerUpdate()
         {
             PathfinderRules rules = new PathfinderRules();
             var character = rules.CreateCharacter();
-            character.Name = "Test Name";
-            PathfinderCharacterViewModel model = new PathfinderCharacterViewModel(character);
+            character = character.WithName("Test Name");
+            PathfinderCharacterViewModel model = new PathfinderCharacterViewModel(new BehaviorSubject<Character>(character));
             int changingCount = 0;
             var obs = new Mock<IObserver<IReactivePropertyChangedEventArgs<IReactiveObject>>>();
             obs.Setup(o => o.OnNext(It.IsAny<IReactivePropertyChangedEventArgs<IReactiveObject>>()))

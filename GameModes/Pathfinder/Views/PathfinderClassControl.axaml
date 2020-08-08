@@ -1,0 +1,60 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Primordially.Pathfinder.Views"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450" Design.Width="800" Design.Height="400"
+             x:Class="Primordially.Pathfinder.Views.PathfinderClassControl">
+  <Design.DataContext>
+    <local:PathfinderClassViewModel />
+  </Design.DataContext>
+  <StackPanel Orientation="Vertical">
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="20" SharedSizeGroup="LvlColumn" />
+        <ColumnDefinition Width="2*" SharedSizeGroup="ClassColumn" />
+        <ColumnDefinition Width="20" SharedSizeGroup="HpColumn" />
+        <ColumnDefinition Width="20" SharedSizeGroup="ComModColumn" />
+        <ColumnDefinition Width="1*" SharedSizeGroup="FcBonusColumn" />
+        <ColumnDefinition Width="80" SharedSizeGroup="DeleteColumn" />
+      </Grid.ColumnDefinitions>
+
+      <TextBlock Grid.Row="0" Grid.Column="0" Classes="table-column-header" Text="Lvl" />
+      <TextBlock Grid.Row="0" Grid.Column="1" Classes="table-column-header" Text="Class" />
+      <TextBlock Grid.Row="0" Grid.Column="2" Classes="table-column-header" Text="HP" />
+      <TextBlock Grid.Row="0" Grid.Column="4" Classes="table-column-header" Text="Favored Bonus" />
+    </Grid>
+    <ItemsRepeater Items="{Binding Levels}">
+      <ItemsRepeater.Styles>
+        <Styles>
+          <Style Selector="Button">
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="FontWeight" Value="UltraBold"/>
+            <Setter Property="Margin" Value="0"/>
+            <Setter Property="MinWidth" Value="0"/>
+          </Style>
+        </Styles>
+      </ItemsRepeater.Styles>
+      <ItemsRepeater.ItemTemplate>
+        <DataTemplate>
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="20" SharedSizeGroup="LvlColumn" />
+              <ColumnDefinition Width="2*" SharedSizeGroup="ClassColumn" />
+              <ColumnDefinition Width="20" SharedSizeGroup="HpColumn" />
+              <ColumnDefinition Width="20" SharedSizeGroup="ComModColumn" />
+              <ColumnDefinition Width="1*" SharedSizeGroup="FcBonusColumn" />
+              <ColumnDefinition Width="80" SharedSizeGroup="DeleteColumn" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="{Binding Level}" Grid.Column="0" Text="{Binding Level}" VerticalAlignment="Center" />
+            <TextBlock Grid.Row="{Binding Level}" Grid.Column="1" Text="{Binding Name}" VerticalAlignment="Center" />
+            <TextBlock Grid.Row="{Binding Level}" Grid.Column="2" Text="{Binding Hp}" VerticalAlignment="Center" />
+            <TextBlock Grid.Row="{Binding Level}" Grid.Column="3" Text="{Binding ConMod}" VerticalAlignment="Center" />
+            <TextBlock Grid.Row="{Binding Level}" Grid.Column="4" Text="{Binding FavoredClassBonus.DisplayString}" VerticalAlignment="Center" />
+            <Button Grid.Row="{Binding Level}" Grid.Column="5" VerticalAlignment="Center">-</Button>
+          </Grid>
+        </DataTemplate>
+      </ItemsRepeater.ItemTemplate>
+    </ItemsRepeater>
+  </StackPanel>
+</UserControl>

@@ -16,6 +16,7 @@
     <PackageReference Include="Avalonia" />
     <PackageReference Include="Avalonia.Desktop" />
     <PackageReference Include="Avalonia.ReactiveUI" />
+    <PackageReference Include="Citrus.Avalonia" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\App\App.csproj" />
