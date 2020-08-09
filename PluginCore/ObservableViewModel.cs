@@ -24,6 +24,7 @@ namespace Primordially.PluginCore
         protected ObservableViewModel(BehaviorSubject<TModel> observable)
         {
             Observable = observable;
+            Initialize();
             TrackDisposable(Observable.Subscribe(ModelUpdated));
         }
 
@@ -31,8 +32,24 @@ namespace Primordially.PluginCore
         private void ModelUpdated(TModel character)
         {
             _model = character;
+            _updating = true;
             ModelUpdatedImpl(character);
+            _updating = false;
         }
+
+        private void Initialize()
+        {
+            // This will trigger a lot of initial updates, but the values aren't ready yet, so
+            // put us in the updating phase
+            _updating = true;
+            RegisterModelUpdates();
+            _updating = false;
+        }
+
+        /// <summary>
+        /// Hooks up all model update mappings. This should generally just be calls to <see cref="ObservableViewModelExtensions.ToModel{TViewModel,TModel,TProperty}"/>
+        /// </summary>
+        protected abstract void RegisterModelUpdates();
 
         /// <summary>
         /// Pull all updates from the model into the current view model.

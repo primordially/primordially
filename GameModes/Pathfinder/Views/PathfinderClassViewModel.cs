@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using System.Linq;
-using System.Reactive.Linq;
 using System.Reactive.Subjects;
-using System.Runtime.Serialization;
 using System.Text;
-using Avalonia.Logging;
-using DynamicData;
 using Primordially.Core;
 using Primordially.PluginCore;
 using ReactiveUI;
@@ -25,6 +19,11 @@ namespace Primordially.Pathfinder.Views
 
         public PathfinderClassViewModel(BehaviorSubject<Character> character) : base(character)
         {
+        }
+
+        protected override void RegisterModelUpdates()
+        {
+            // No model updates ready yet
         }
 
         protected override void ModelUpdatedImpl(Character character)

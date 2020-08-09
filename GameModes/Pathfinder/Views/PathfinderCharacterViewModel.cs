@@ -17,6 +17,11 @@ namespace Primordially.Pathfinder.Views
         public PathfinderCharacterViewModel(BehaviorSubject<Character> characterObservable) : base(characterObservable)
         {
             ClassModel = new PathfinderClassViewModel(Observable);
+            TrackDisposable(ClassModel);
+        }
+
+        protected override void RegisterModelUpdates()
+        {
             this.ToModel(m => m.Name, (Character c, string v) => c.WithName(v));
         }
 
