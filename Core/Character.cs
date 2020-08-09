@@ -102,7 +102,6 @@ namespace Primordially.Core
             if (Variables.TryGetValue(name, out var result))
                 return result;
             result = new CharacterVariable(Rules);
-            Variables.Add(name, result);
             return result;
         }
 
