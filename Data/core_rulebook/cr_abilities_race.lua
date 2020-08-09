@@ -11,7 +11,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=1,
   SortKey="1",
   Types={
@@ -30,7 +29,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
 })
 
 DefineAbility({
@@ -39,14 +37,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.21",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Dwarf_ReplaceAbilityScores"] == "true")
     end,
   },
-  Description="Dwarves are both tough and wise, but also a bit gruff.",
+  Description={
+    Format="Dwarves are both tough and wise, but also a bit gruff.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -100,14 +99,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.21",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Dwarf_ReplaceSize"] == "true")
     end,
   },
-  Description="Dwarves are Medium creatures and have no bonuses or penalties due to their size.",
+  Description={
+    Format="Dwarves are Medium creatures and have no bonuses or penalties due to their size.",
+  },
   Types={
     "RacialTraits",
     "Dwarf Racial Trait",
@@ -123,14 +123,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.21",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Dwarf_ReplaceSpeed"] == "True")
     end,
   },
-  Description="Dwarves have a base speed of 20 feet, but their speed is never modified by armor or encumbrance.",
+  Description={
+    Format="Dwarves have a base speed of 20 feet, but their speed is never modified by armor or encumbrance.",
+  },
   Abilities={
     {
       Category="Internal",
@@ -155,14 +156,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.21",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Dwarf_ReplaceVision"] == "True")
     end,
   },
-  Description="Dwarves can see in the dark up to 60 feet.",
+  Description={
+    Format="Dwarves can see in the dark up to 60 feet.",
+  },
   Bonuses={
     {
       Category="VAR",
@@ -193,7 +195,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -216,7 +217,12 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Dwarf_ReplaceDefensiveTraining"] == "True")
     end,
   },
-  Description="Dwarves get a +%1 dodge bonus to AC against monsters of the giant subtype.|RacialDefensiveTrainingBonus",
+  Description={
+    Format="Dwarves get a +%1 dodge bonus to AC against monsters of the giant subtype.",
+    Arguments={
+      "RacialDefensiveTrainingBonus",
+    },
+  },
   Definitions={
     {
       Name="RacialDefensiveTrainingBonus",
@@ -247,14 +253,18 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.21",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Dwarf_ReplaceGreed"] == "True")
     end,
   },
-  Description="Dwarves receive a +2 racial bonus on Appraise skill checks made to determine the price of nonmagical goods that contain precious metals or gemstones.|PREVAREQ:DwarvenGreedAspect,0",
+  Description={
+    Format="Dwarves receive a +2 racial bonus on Appraise skill checks made to determine the price of nonmagical goods that contain precious metals or gemstones.",
+    Arguments={
+      "PREVAREQ:DwarvenGreedAspect,0",
+    },
+  },
   Bonuses={
     {
       Category="SITUATION",
@@ -283,7 +293,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -300,7 +309,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Dwarf_ReplaceHatred"] == "True")
     end,
   },
-  Description="Dwarves receive a +1 bonus on attack rolls against humanoid creatures of the orc and goblinoid subtypes due to special training against these hated foes.",
+  Description={
+    Format="Dwarves receive a +1 bonus on attack rolls against humanoid creatures of the orc and goblinoid subtypes due to special training against these hated foes.",
+  },
   Types={
     "RacialTraits",
     "Dwarf Racial Trait",
@@ -316,7 +327,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SaveBonus",
@@ -343,7 +353,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Dwarf_ReplaceHardy"] == "True")
     end,
   },
-  Description="Dwarves receive a +2 racial bonus on saving throws against poison, spells, and spell-like abilities.",
+  Description={
+    Format="Dwarves receive a +2 racial bonus on saving throws against poison, spells, and spell-like abilities.",
+  },
   Bonuses={
     {
       Category="VAR",
@@ -384,7 +396,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -397,7 +408,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Dwarf_ReplaceStability"] == "True")
     end,
   },
-  Description="Dwarves receive a +4 racial bonus to their Combat Maneuver Defense when resisting a bull rush or trip attempt while standing on the ground.",
+  Description={
+    Format="Dwarves receive a +4 racial bonus to their Combat Maneuver Defense when resisting a bull rush or trip attempt while standing on the ground.",
+  },
   Bonuses={
     {
       Category="VAR",
@@ -427,7 +440,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SkillBonus",
@@ -443,7 +455,12 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Dwarf_ReplaceStonecunning"] == "True")
     end,
   },
-  Description="Dwarves receive a +%1 bonus on Perception checks to potentially notice unusual stonework, such as traps and hidden doors located in stone walls or floors. They receive a check to notice such features whenever they pass within 10 feet of them, whether or not they are actively looking.|Dwarf_StoneCunning_SkillBonus",
+  Description={
+    Format="Dwarves receive a +%1 bonus on Perception checks to potentially notice unusual stonework, such as traps and hidden doors located in stone walls or floors. They receive a check to notice such features whenever they pass within 10 feet of them, whether or not they are actively looking.",
+    Arguments={
+      "Dwarf_StoneCunning_SkillBonus",
+    },
+  },
   Definitions={
     {
       Name="Dwarf_StoneCunning_SkillBonus",
@@ -485,7 +502,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   AutomaticProficiencies={
     {
       Kind="Weapon",
@@ -507,7 +523,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Dwarf_ReplaceWeaponFamiliarity"] == "True")
     end,
   },
-  Description="Dwarves are proficient with battleaxes, heavy picks, and warhammers, and treat any weapon with the word \"dwarven\" in its name as a martial weapon.",
+  Description={
+    Format="Dwarves are proficient with battleaxes, heavy picks, and warhammers, and treat any weapon with the word \"dwarven\" in its name as a martial weapon.",
+  },
   Bonuses={
     {
       Category="WEAPONPROF=Waraxe (Dwarven)",
@@ -532,7 +550,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Templates={
     "Race Bonus Language ~ Giant",
     "Race Bonus Language ~ Gnome",
@@ -547,7 +564,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Dwarf_ReplaceLanguages"] == "True")
     end,
   },
-  Description="Dwarves begin play speaking Common and Dwarven. Dwarves with high Intelligence scores can choose from the following: Giant, Gnome, Goblin, Orc, Terran, and Undercommon.",
+  Description={
+    Format="Dwarves begin play speaking Common and Dwarven. Dwarves with high Intelligence scores can choose from the following: Giant, Gnome, Goblin, Orc, Terran, and Undercommon.",
+  },
   Types={
     "RacialTraits",
     "Dwarf Racial Trait",
@@ -569,7 +588,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
 })
 
 DefineAbility({
@@ -578,14 +596,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.22",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Elf_ReplaceAbilityScores"] == "true")
     end,
   },
-  Description="Elves are nimble, both in body and mind, but their form is frail.",
+  Description={
+    Format="Elves are nimble, both in body and mind, but their form is frail.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -639,14 +658,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.22",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Elf_ReplaceSize"] == "true")
     end,
   },
-  Description="Elves are Medium creatures and have no bonuses or penalties due to their size.",
+  Description={
+    Format="Elves are Medium creatures and have no bonuses or penalties due to their size.",
+  },
   Types={
     "RacialTraits",
     "Elf Racial Trait",
@@ -662,14 +682,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.22",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Elf_ReplaceSpeed"] == "true")
     end,
   },
-  Description="Elves have a base speed of 30 feet.",
+  Description={
+    Format="Elves have a base speed of 30 feet.",
+  },
   Types={
     "RacialTraits",
     "Elf Racial Trait",
@@ -685,14 +706,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.22",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Elf_ReplaceVision"] == "true")
     end,
   },
-  Description="Elves can see twice as far as humans in conditions of dim light.",
+  Description={
+    Format="Elves can see twice as far as humans in conditions of dim light.",
+  },
   Bonuses={
     {
       Category="VAR",
@@ -723,7 +745,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SaveBonus",
@@ -736,7 +757,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Elf_ReplaceElvenImmunities"] == "true")
     end,
   },
-  Description="Elves are immune to magic sleep effects and get a +2 racial saving throw bonus against enchantment spells and effects.",
+  Description={
+    Format="Elves are immune to magic sleep effects and get a +2 racial saving throw bonus against enchantment spells and effects.",
+  },
   Bonuses={
     {
       Category="VAR",
@@ -774,14 +797,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.22",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Elf_ReplaceElvenMagic"] == "true")
     end,
   },
-  Description="Elves receive a +2 racial bonus on caster level checks made to overcome spell resistance. In addition, elves receive a +2 racial bonus on Spellcraft skill checks made to identify the properties of magic items.",
+  Description={
+    Format="Elves receive a +2 racial bonus on caster level checks made to overcome spell resistance. In addition, elves receive a +2 racial bonus on Spellcraft skill checks made to identify the properties of magic items.",
+  },
   Bonuses={
     {
       Category="SITUATION",
@@ -812,14 +836,18 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.22",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Elf_ReplaceKeenSenses"] == "true")
     end,
   },
-  Description="Elves receive a +%1 racial bonus on Perception skill checks.|KeenSensesBonus",
+  Description={
+    Format="Elves receive a +%1 racial bonus on Perception skill checks.",
+    Arguments={
+      "KeenSensesBonus",
+    },
+  },
   Definitions={
     {
       Name="KeenSensesBonus",
@@ -861,7 +889,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   AutomaticProficiencies={
     {
       Kind="Weapon",
@@ -884,7 +911,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Elf_ReplaceWeaponFamiliarity"] == "true")
     end,
   },
-  Description="Elves are proficient with longbows (including composite longbows), longswords, rapiers, and shortbows (including composite shortbows), and treat any weapon with the word \"elven\" in its name as a martial weapon.",
+  Description={
+    Format="Elves are proficient with longbows (including composite longbows), longswords, rapiers, and shortbows (including composite shortbows), and treat any weapon with the word \"elven\" in its name as a martial weapon.",
+  },
   Types={
     "RacialTraits",
     "Elf Racial Trait",
@@ -901,7 +930,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Templates={
     "Race Bonus Language ~ Celestial",
     "Race Bonus Language ~ Draconic",
@@ -917,7 +945,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Elf_ReplaceLanguages"] == "true")
     end,
   },
-  Description="Elves begin play speaking Common and Elven. Elves with high Intelligence scores can choose from the following: Celestial, Draconic, Gnoll, Gnome, Goblin, Orc, and Sylvan.",
+  Description={
+    Format="Elves begin play speaking Common and Elven. Elves with high Intelligence scores can choose from the following: Celestial, Draconic, Gnoll, Gnome, Goblin, Orc, and Sylvan.",
+  },
   Types={
     "RacialTraits",
     "Elf Racial Trait",
@@ -939,7 +969,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
 })
 
 DefineAbility({
@@ -948,14 +977,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.23",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Gnome_ReplaceAbilityScores"] == "true")
     end,
   },
-  Description="Gnomes are physically weak but surprisingly hardy, and their attitude makes them naturally agreeable.",
+  Description={
+    Format="Gnomes are physically weak but surprisingly hardy, and their attitude makes them naturally agreeable.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -1009,14 +1039,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.23",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Gnome_ReplaceSize"] == "true")
     end,
   },
-  Description="Gnomes are Small creatures and gain a +1 size bonus to their AC, a +1 size bonus on attack rolls, a -1 penalty to their Combat Maneuver Bonus and Combat Maneuver Defense, and a +4 size bonus on Stealth checks.",
+  Description={
+    Format="Gnomes are Small creatures and gain a +1 size bonus to their AC, a +1 size bonus on attack rolls, a -1 penalty to their Combat Maneuver Bonus and Combat Maneuver Defense, and a +4 size bonus on Stealth checks.",
+  },
   Types={
     "RacialTraits",
     "Gnome Racial Trait",
@@ -1032,14 +1063,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.23",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Gnome_ReplaceSpeed"] == "true")
     end,
   },
-  Description="Gnomes have a base speed of 20 feet.",
+  Description={
+    Format="Gnomes have a base speed of 20 feet.",
+  },
   Types={
     "RacialTraits",
     "Gnome Racial Trait",
@@ -1055,14 +1087,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.23",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Gnome_ReplaceVision"] == "true")
     end,
   },
-  Description="Gnomes can see twice as far as humans in conditions of dim light.",
+  Description={
+    Format="Gnomes can see twice as far as humans in conditions of dim light.",
+  },
   Bonuses={
     {
       Category="VAR",
@@ -1093,7 +1126,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -1116,7 +1148,12 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Gnome_ReplaceDefensiveTraining"] == "true")
     end,
   },
-  Description="Gnomes get a +%1 dodge bonus to AC against monsters of the giant subtype.|RacialDefensiveTrainingBonus",
+  Description={
+    Format="Gnomes get a +%1 dodge bonus to AC against monsters of the giant subtype.",
+    Arguments={
+      "RacialDefensiveTrainingBonus",
+    },
+  },
   Definitions={
     {
       Name="RacialDefensiveTrainingBonus",
@@ -1147,7 +1184,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SpellLikeAbilities={
     {
       Name="Dancing Lights",
@@ -1208,7 +1244,12 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Gnome_ReplaceGnomeMagic"] == "true")
     end,
   },
-  Description="Gnomes add +%1 to the DC of any saving throws against illusion spells that they cast. Gnomes with a Charisma of 11 or higher also gain the following spell-like abilities: 1/day--dancing lights, ghost sound, prestidigitation, and speak with animals. The caster level for these effects is equal to the gnome's level. The DC for these spells is equal to 10 + the spell's level + the gnome's Charisma modifier.|Gnome_GnomeMagic_IllusionDCBonus",
+  Description={
+    Format="Gnomes add +%1 to the DC of any saving throws against illusion spells that they cast. Gnomes with a Charisma of 11 or higher also gain the following spell-like abilities: 1/day--dancing lights, ghost sound, prestidigitation, and speak with animals. The caster level for these effects is equal to the gnome's level. The DC for these spells is equal to 10 + the spell's level + the gnome's Charisma modifier.",
+    Arguments={
+      "Gnome_GnomeMagic_IllusionDCBonus",
+    },
+  },
   Definitions={
     {
       Name="Gnome_GnomeMagic_IllusionDCBonus",
@@ -1247,7 +1288,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -1270,7 +1310,12 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Gnome_ReplaceHatred"] == "true")
     end,
   },
-  Description="Gnomes receive a +%1 bonus on attack rolls against humanoid creatures of the reptilian and goblinoid subtypes due to special training against these hated foes.|Gnome_Hatred_AttackBonus",
+  Description={
+    Format="Gnomes receive a +%1 bonus on attack rolls against humanoid creatures of the reptilian and goblinoid subtypes due to special training against these hated foes.",
+    Arguments={
+      "Gnome_Hatred_AttackBonus",
+    },
+  },
   Definitions={
     {
       Name="Gnome_Hatred_AttackBonus",
@@ -1301,7 +1346,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SaveBonus",
@@ -1314,7 +1358,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Gnome_ReplaceIllusionResistance"] == "true")
     end,
   },
-  Description="Gnomes get a +2 racial saving throw bonus against illusion spells and effects.",
+  Description={
+    Format="Gnomes get a +2 racial saving throw bonus against illusion spells and effects.",
+  },
   Bonuses={
     {
       Category="VAR",
@@ -1343,14 +1389,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.23",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Gnome_ReplaceKeenSenses"] == "true")
     end,
   },
-  Description="Gnomes receive a +2 racial bonus on Perception skill checks.",
+  Description={
+    Format="Gnomes receive a +2 racial bonus on Perception skill checks.",
+  },
   Definitions={
     {
       Name="KeenSensesBonus",
@@ -1392,14 +1439,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.23",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Gnome_ReplaceObsessive"] == "true")
     end,
   },
-  Description="Gnomes receive a +2 racial bonus on a Craft or Profession skill of their choice.",
+  Description={
+    Format="Gnomes receive a +2 racial bonus on a Craft or Profession skill of their choice.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -1423,7 +1471,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ChangeWeaponProficiency={
     Martial={
       "TYPE.Gnome",
@@ -1435,7 +1482,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Gnome_ReplaceWeaponFamiliarity"] == "true")
     end,
   },
-  Description="Gnomes treat any weapon with the word \"gnome\" in its name as a martial weapon.",
+  Description={
+    Format="Gnomes treat any weapon with the word \"gnome\" in its name as a martial weapon.",
+  },
   Types={
     "RacialTraits",
     "Gnome Racial Trait",
@@ -1451,7 +1500,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Templates={
     "Race Bonus Language ~ Draconic",
     "Race Bonus Language ~ Dwarven",
@@ -1466,7 +1514,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Gnome_ReplaceLanguages"] == "true")
     end,
   },
-  Description="Gnomes begin play speaking Common, Gnome, and Sylvan. Gnomes with high Intelligence scores can choose from the following: Draconic, Dwarven, Elven, Giant, Goblin, and Orc.",
+  Description={
+    Format="Gnomes begin play speaking Common, Gnome, and Sylvan. Gnomes with high Intelligence scores can choose from the following: Draconic, Dwarven, Elven, Giant, Goblin, and Orc.",
+  },
   Types={
     "RacialTraits",
     "Gnome Racial Trait",
@@ -1488,14 +1538,15 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseSkill(function (character, skill)
       return (skill.Type == "Craft")
     end),
   },
   Selections="1",
-  Description="Gnomes receive a +2 racial bonus on a Craft skill of their choice.",
+  Description={
+    Format="Gnomes receive a +2 racial bonus on a Craft skill of their choice.",
+  },
   Bonuses={
     {
       Category="SKILL",
@@ -1520,14 +1571,15 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseSkill(function (character, skill)
       return (skill.Type == "Profession")
     end),
   },
   Selections="1",
-  Description="Gnomes receive a +2 racial bonus on a Profession skill of their choice.",
+  Description={
+    Format="Gnomes receive a +2 racial bonus on a Profession skill of their choice.",
+  },
   Bonuses={
     {
       Category="SKILL",
@@ -1552,7 +1604,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
 })
 
 DefineAbility({
@@ -1561,14 +1612,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.24",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["HalfElf_ReplaceAbilityScores"] == "true")
     end,
   },
-  Description="Half-elf characters get a +2 bonus to one ability score of their choice at creation to represent their varied nature.",
+  Description={
+    Format="Half-elf characters get a +2 bonus to one ability score of their choice at creation to represent their varied nature.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -1593,14 +1645,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.24",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["HalfElf_ReplaceSize"] == "true")
     end,
   },
-  Description="Half-elves are Medium creatures and have no bonuses or penalties due to their size.",
+  Description={
+    Format="Half-elves are Medium creatures and have no bonuses or penalties due to their size.",
+  },
   Types={
     "RacialTraits",
     "Half-Elf Racial Trait",
@@ -1616,14 +1669,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.24",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["HalfElf_ReplaceSpeed"] == "true")
     end,
   },
-  Description="Half-elves have a base speed of 30 feet.",
+  Description={
+    Format="Half-elves have a base speed of 30 feet.",
+  },
   Types={
     "RacialTraits",
     "Half-Elf Racial Trait",
@@ -1639,14 +1693,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.24",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["HalfElf_ReplaceVision"] == "true")
     end,
   },
-  Description="Half-elves can see twice as far as humans in conditions of dim light.",
+  Description={
+    Format="Half-elves can see twice as far as humans in conditions of dim light.",
+  },
   Bonuses={
     {
       Category="VAR",
@@ -1676,14 +1731,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.24",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["HalfElf_ReplaceAdaptability"] == "true")
     end,
   },
-  Description="Half-elves receive Skill Focus as a bonus feat at 1st level.",
+  Description={
+    Format="Half-elves receive Skill Focus as a bonus feat at 1st level.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -1707,14 +1763,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.24",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["HalfElf_ReplaceElfBlood"] == "true")
     end,
   },
-  Description="Half-elves count as both elves and humans for any effect related to race.",
+  Description={
+    Format="Half-elves count as both elves and humans for any effect related to race.",
+  },
   Types={
     "RacialTraits",
     "Half-Elf Racial Trait",
@@ -1730,7 +1787,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SaveBonus",
@@ -1743,7 +1799,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["HalfElf_ReplaceElvenImmunities"] == "true")
     end,
   },
-  Description="Half-elves are immune to magic sleep effects and get a +2 racial saving throw bonus against enchantment spells and effects.",
+  Description={
+    Format="Half-elves are immune to magic sleep effects and get a +2 racial saving throw bonus against enchantment spells and effects.",
+  },
   Bonuses={
     {
       Category="VAR",
@@ -1781,14 +1839,18 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.24",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["HalfElf_ReplaceKeenSenses"] == "true")
     end,
   },
-  Description="Half-elves receive a +%1 racial bonus on Perception skill checks.|KeenSensesBonus",
+  Description={
+    Format="Half-elves receive a +%1 racial bonus on Perception skill checks.",
+    Arguments={
+      "KeenSensesBonus",
+    },
+  },
   Definitions={
     {
       Name="KeenSensesBonus",
@@ -1830,14 +1892,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.24",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["HalfElf_ReplaceMultitalented"] == "true")
     end,
   },
-  Description="Half-elves choose two favored classes at first level and gain +1 hit point or +1 skill point whenever they take a level in either one of those classes.",
+  Description={
+    Format="Half-elves choose two favored classes at first level and gain +1 hit point or +1 skill point whenever they take a level in either one of those classes.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -1861,7 +1924,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Templates={
     "Race Bonus Language ~ All",
   },
@@ -1871,7 +1933,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["HalfElf_ReplaceLanguages"] == "true")
     end,
   },
-  Description="Half-elves begin play speaking Common and Elven. Half-elves with high Intelligence scores can choose any languages they want (except secret languages, such as Druidic).",
+  Description={
+    Format="Half-elves begin play speaking Common and Elven. Half-elves with high Intelligence scores can choose any languages they want (except secret languages, such as Druidic).",
+  },
   Types={
     "RacialTraits",
     "Half-Elf Racial Trait",
@@ -1893,7 +1957,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
 })
 
 DefineAbility({
@@ -1902,14 +1965,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.24",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceAbilityScores"] == "true")
     end,
   },
-  Description="Half-orc characters get a +2 bonus to one ability score of their choice at creation to represent their varied nature.",
+  Description={
+    Format="Half-orc characters get a +2 bonus to one ability score of their choice at creation to represent their varied nature.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -1934,14 +1998,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.24",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceSize"] == "true")
     end,
   },
-  Description="Half-orcs are Medium creatures and have no bonuses or penalties due to their size.",
+  Description={
+    Format="Half-orcs are Medium creatures and have no bonuses or penalties due to their size.",
+  },
   Types={
     "RacialTraits",
     "Half-Orc Racial Trait",
@@ -1957,14 +2022,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.24",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceSpeed"] == "true")
     end,
   },
-  Description="Half-orcs have a base speed of 30 feet.",
+  Description={
+    Format="Half-orcs have a base speed of 30 feet.",
+  },
   Types={
     "RacialTraits",
     "Half-Orc Racial Trait",
@@ -1980,14 +2046,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.25",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceVision"] == "true")
     end,
   },
-  Description="Half-orcs can see in the dark up to 60 feet.",
+  Description={
+    Format="Half-orcs can see in the dark up to 60 feet.",
+  },
   Bonuses={
     {
       Category="VAR",
@@ -2017,14 +2084,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.25",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceIntimidating"] == "true")
     end,
   },
-  Description="Half-orcs receive a +2 racial bonus on Intimidate skill checks due to their fearsome nature.",
+  Description={
+    Format="Half-orcs receive a +2 racial bonus on Intimidate skill checks due to their fearsome nature.",
+  },
   Bonuses={
     {
       Category="SKILL",
@@ -2053,14 +2121,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.25",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceOrcBlood"] == "true")
     end,
   },
-  Description="Half-orcs count as both humans and orcs for any effect related to race.",
+  Description={
+    Format="Half-orcs count as both humans and orcs for any effect related to race.",
+  },
   Types={
     "RacialTraits",
     "Half-Orc Racial Trait",
@@ -2076,14 +2145,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.25",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceOrcFerocity"] == "true")
     end,
   },
-  Description="per day, when a half-orc is brought below 0 hit points but not killed, he can fight on for one more round as if disabled. At the end of his next turn, unless brought to above 0 hit points, he immediately falls unconscious and begins dying.",
+  Description={
+    Format="per day, when a half-orc is brought below 0 hit points but not killed, he can fight on for one more round as if disabled. At the end of his next turn, unless brought to above 0 hit points, he immediately falls unconscious and begins dying.",
+  },
   Definitions={
     {
       Name="Orc_OrcFerocity_Times",
@@ -2114,7 +2184,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   AutomaticProficiencies={
     {
       Kind="Weapon",
@@ -2135,7 +2204,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceWeaponFamiliarity"] == "true")
     end,
   },
-  Description="Half-orcs are proficient with greataxes and falchions and treat any weapon with the word \"orc\" in its name as a martial weapon.",
+  Description={
+    Format="Half-orcs are proficient with greataxes and falchions and treat any weapon with the word \"orc\" in its name as a martial weapon.",
+  },
   Types={
     "RacialTraits",
     "Half-Orc Racial Trait",
@@ -2152,7 +2223,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Templates={
     "Race Bonus Language ~ Abyssal",
     "Race Bonus Language ~ Draconic",
@@ -2166,7 +2236,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceLanguages"] == "true")
     end,
   },
-  Description="Half-orcs begin play speaking Common and Orc. Half-orcs with high Intelligence scores can choose from the following: Abyssal, Draconic, Giant, Gnoll, and Goblin.",
+  Description={
+    Format="Half-orcs begin play speaking Common and Orc. Half-orcs with high Intelligence scores can choose from the following: Abyssal, Draconic, Giant, Gnoll, and Goblin.",
+  },
   Types={
     "RacialTraits",
     "Half-Orc Racial Trait",
@@ -2188,7 +2260,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
 })
 
 DefineAbility({
@@ -2197,14 +2268,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.26",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Halfling_ReplaceAbilityScores"] == "true")
     end,
   },
-  Description="Halflings are nimble and strong-willed, but their small stature makes them weaker than other races.",
+  Description={
+    Format="Halflings are nimble and strong-willed, but their small stature makes them weaker than other races.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -2258,14 +2330,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.26",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Halfling_ReplaceSize"] == "true")
     end,
   },
-  Description="Halflings are Small creatures and gain a +1 size bonus to their AC, a +1 size bonus on attack rolls, a -1 penalty to their Combat Maneuver Bonus and Combat Maneuver Defense, and a +4 size bonus on Stealth checks.",
+  Description={
+    Format="Halflings are Small creatures and gain a +1 size bonus to their AC, a +1 size bonus on attack rolls, a -1 penalty to their Combat Maneuver Bonus and Combat Maneuver Defense, and a +4 size bonus on Stealth checks.",
+  },
   Types={
     "RacialTraits",
     "Halfling Racial Trait",
@@ -2281,14 +2354,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.26",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Halfling_ReplaceSpeed"] == "true")
     end,
   },
-  Description="Halflings have a base speed of 20 feet.",
+  Description={
+    Format="Halflings have a base speed of 20 feet.",
+  },
   Types={
     "RacialTraits",
     "Halfling Racial Trait",
@@ -2304,7 +2378,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SaveBonus",
@@ -2317,7 +2390,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Halfling_ReplaceFearless"] == "true")
     end,
   },
-  Description="Halflings receive a +2 racial bonus on all saving throws against fear. This bonus stacks with the bonus granted by halfling luck.",
+  Description={
+    Format="Halflings receive a +2 racial bonus on all saving throws against fear. This bonus stacks with the bonus granted by halfling luck.",
+  },
   Bonuses={
     {
       Category="VAR",
@@ -2346,14 +2421,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.26",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Halfling_ReplaceHalflingLuck"] == "true")
     end,
   },
-  Description="Halflings receive a +1 racial bonus on all saving throws.",
+  Description={
+    Format="Halflings receive a +1 racial bonus on all saving throws.",
+  },
   Definitions={
     {
       Name="Halfling_HalflingLuck_SaveBonus",
@@ -2388,14 +2464,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.26",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Halfling_ReplaceKeenSenses"] == "true")
     end,
   },
-  Description="Halflings receive a +2 racial bonus on Perception skill checks.",
+  Description={
+    Format="Halflings receive a +2 racial bonus on Perception skill checks.",
+  },
   Definitions={
     {
       Name="KeenSensesBonus",
@@ -2437,14 +2514,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.26",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Halfling_ReplaceSureFooted"] == "true")
     end,
   },
-  Description="Halflings receive a +2 racial bonus on Acrobatics and Climb skill checks.",
+  Description={
+    Format="Halflings receive a +2 racial bonus on Acrobatics and Climb skill checks.",
+  },
   Bonuses={
     {
       Category="SKILL",
@@ -2474,7 +2552,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   AutomaticProficiencies={
     {
       Kind="Weapon",
@@ -2494,7 +2571,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Halfling_ReplaceWeaponFamiliarity"] == "true")
     end,
   },
-  Description="Halflings are proficient with slings and treat any weapon with the word \"halfling\" in its name as a martial weapon.",
+  Description={
+    Format="Halflings are proficient with slings and treat any weapon with the word \"halfling\" in its name as a martial weapon.",
+  },
   Types={
     "RacialTraits",
     "Halfling Racial Trait",
@@ -2510,7 +2589,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Templates={
     "Race Bonus Language ~ Dwarven",
     "Race Bonus Language ~ Elven",
@@ -2523,7 +2601,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Halfling_ReplaceLanguages"] == "true")
     end,
   },
-  Description="Halflings begin play speaking Common and Halfling. Halflings with high Intelligence scores can choose from the following: Dwarven, Elven, Gnome, and Goblin.",
+  Description={
+    Format="Halflings begin play speaking Common and Halfling. Halflings with high Intelligence scores can choose from the following: Dwarven, Elven, Gnome, and Goblin.",
+  },
   Types={
     "RacialTraits",
     "Halfling Racial Trait",
@@ -2545,7 +2625,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
 })
 
 DefineAbility({
@@ -2554,14 +2633,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.27",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Human_ReplaceAbilityScores"] == "true")
     end,
   },
-  Description="Human characters get a +2 bonus to one ability score of their choice at creation to represent their varied nature.",
+  Description={
+    Format="Human characters get a +2 bonus to one ability score of their choice at creation to represent their varied nature.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -2586,14 +2666,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.27",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Human_ReplaceSize"] == "true")
     end,
   },
-  Description="Humans are Medium creatures and have no bonuses or penalties due to their size.",
+  Description={
+    Format="Humans are Medium creatures and have no bonuses or penalties due to their size.",
+  },
   Types={
     "RacialTraits",
     "Human Racial Trait",
@@ -2609,14 +2690,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.27",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Human_ReplaceSpeed"] == "true")
     end,
   },
-  Description="Humans have a base speed of 30 feet.",
+  Description={
+    Format="Humans have a base speed of 30 feet.",
+  },
   Types={
     "RacialTraits",
     "Human Racial Trait",
@@ -2632,14 +2714,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.27",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Human_ReplaceBonusFeat"] == "true")
     end,
   },
-  Description="Humans select one extra feat at 1st level.",
+  Description={
+    Format="Humans select one extra feat at 1st level.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -2663,14 +2746,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.27",
   Conditions={
     function (character)
       return not (character.Facts["ABILITIES"]["Human_ReplaceSkilled"] == "true")
     end,
   },
-  Description="Humans gain an additional skill rank at 1st level and one additional rank whenever they gain a level.",
+  Description={
+    Format="Humans gain an additional skill rank at 1st level and one additional rank whenever they gain a level.",
+  },
   Bonuses={
     {
       Category="SKILLPOINTS",
@@ -2694,7 +2778,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Templates={
     "Race Bonus Language ~ All",
   },
@@ -2704,7 +2787,9 @@ DefineAbility({
       return not (character.Facts["ABILITIES"]["Human_ReplaceLanguages"] == "true")
     end,
   },
-  Description="Humans begin play speaking Common. Humans with high Intelligence scores can choose any languages they want (except secret languages, such as Druidic).",
+  Description={
+    Format="Humans begin play speaking Common. Humans with high Intelligence scores can choose any languages they want (except secret languages, such as Druidic).",
+  },
   Types={
     "RacialTraits",
     "Human Racial Trait",
@@ -2726,7 +2811,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -2748,7 +2832,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -2770,7 +2853,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -2792,7 +2874,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -2814,7 +2895,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -2836,7 +2916,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -2858,7 +2937,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -2880,7 +2958,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -2902,7 +2979,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -2924,7 +3000,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -2946,7 +3021,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -2968,7 +3042,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -2990,7 +3063,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3012,7 +3084,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3034,7 +3105,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3056,7 +3126,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3078,7 +3147,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3100,7 +3168,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3122,7 +3189,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3144,7 +3210,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3166,7 +3231,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3188,7 +3252,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3210,7 +3273,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3232,7 +3294,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3254,7 +3315,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3276,7 +3336,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3298,7 +3357,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3320,7 +3378,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3342,7 +3399,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3364,7 +3420,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3386,7 +3441,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3408,7 +3462,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3430,7 +3483,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3452,7 +3504,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3474,7 +3525,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3496,7 +3546,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3518,7 +3567,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3540,7 +3588,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3562,7 +3609,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3584,7 +3630,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3606,7 +3651,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3628,7 +3672,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3650,7 +3693,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3672,7 +3714,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3694,7 +3735,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3716,7 +3756,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -3752,7 +3791,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -5272,7 +5310,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
 })
 
 DefineAbility({
@@ -5280,10 +5317,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Aberration Traits",
   SourcePage="p.306",
-  Description="Aberrations breathe, eat, and sleep.",
+  Description={
+    Format="Aberrations breathe, eat, and sleep.",
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5295,10 +5333,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Animal Traits",
   SourcePage="p.307",
-  Description="Animals breathe, eat, and sleep.",
+  Description={
+    Format="Animals breathe, eat, and sleep.",
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5310,10 +5349,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Construct Traits",
   SourcePage="p.299",
-  Description="Constructs are immune to death effects, disease, mind-affecting effects (charms, compulsions, phantasms, patterns, and morale effects), necromancy effects, paralysis, poison, sleep, stun, and any effect that requires a Fortitude save (unless the effect also works on objects, or is harmless). Constructs are not subject to nonlethal damage, ability damage, ability drain, fatigue, exhaustion, or energy drain. Constructs are not at risk of death from massive damage.",
+  Description={
+    Format="Constructs are immune to death effects, disease, mind-affecting effects (charms, compulsions, phantasms, patterns, and morale effects), necromancy effects, paralysis, poison, sleep, stun, and any effect that requires a Fortitude save (unless the effect also works on objects, or is harmless). Constructs are not subject to nonlethal damage, ability damage, ability drain, fatigue, exhaustion, or energy drain. Constructs are not at risk of death from massive damage.",
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5326,10 +5366,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Dragon Traits",
   SourcePage="p.307",
-  Description="Dragons have Immunity to magic sleep effects and paralysis effects. Dragons breathe, eat, and sleep.",
+  Description={
+    Format="Dragons have Immunity to magic sleep effects and paralysis effects. Dragons breathe, eat, and sleep.",
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5341,10 +5382,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Elemental Traits",
   SourcePage="p.311",
-  Description="Elementals are immune to paralysis, poison, sleep effects, and stunning. Elementals are not subject to critical hits or flanking. Elementals do not take additional damage from precision-based attacks, such as sneak attack. Elementals do not breathe, eat, or sleep.",
+  Description={
+    Format="Elementals are immune to paralysis, poison, sleep effects, and stunning. Elementals are not subject to critical hits or flanking. Elementals do not take additional damage from precision-based attacks, such as sneak attack. Elementals do not breathe, eat, or sleep.",
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5357,10 +5399,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Fey Traits",
   SourcePage="p.307",
-  Description="Fey breathe, eat, and sleep.",
+  Description={
+    Format="Fey breathe, eat, and sleep.",
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5372,10 +5415,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Humanoid Traits",
   SourcePage="p.308",
-  Description="Humanoids breathe, eat, and sleep.",
+  Description={
+    Format="Humanoids breathe, eat, and sleep.",
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5387,9 +5431,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Incorporeal Traits",
-  Description="Can be harmed only by other incorporeal creatures/+1 or better weapons/magic. 50%% chance to ignore any damage from a corporeal source. Can pass through solid objects at will. Attacks pass through armor. Always moves silently.",
+  Description={
+    Format="Can be harmed only by other incorporeal creatures/+1 or better weapons/magic. 50%% chance to ignore any damage from a corporeal source. Can pass through solid objects at will. Attacks pass through armor. Always moves silently.",
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5401,10 +5446,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Magical Beast Traits",
   SourcePage="p.308",
-  Description="Magical beasts breathe, eat, and sleep.",
+  Description={
+    Format="Magical beasts breathe, eat, and sleep.",
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5416,10 +5462,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Monstrous Humanoid Traits",
   SourcePage="p.308",
-  Description="Monstrous humanoids breathe, eat, and sleep.",
+  Description={
+    Format="Monstrous humanoids breathe, eat, and sleep.",
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5431,10 +5478,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Ooze Traits",
   SourcePage="p.309",
-  Description="Oozes are not subject to critical hits or flanking and do not take additional damage from precision-based attacks, such as sneak attack. Oozes eat and breathe, but do not sleep.",
+  Description={
+    Format="Oozes are not subject to critical hits or flanking and do not take additional damage from precision-based attacks, such as sneak attack. Oozes eat and breathe, but do not sleep.",
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5446,10 +5494,14 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Outsider Traits",
   SourcePage="p.309",
-  Description="An outsider with the native subtype can be raised, reincarnated, or resurrected just as other living creatures can be. Native outsider breathe, eat, and sleep.|PRERACE:1,RACESUBTYPE=Native",
+  Description={
+    Format="An outsider with the native subtype can be raised, reincarnated, or resurrected just as other living creatures can be. Native outsider breathe, eat, and sleep.",
+    Arguments={
+      "PRERACE:1,RACESUBTYPE=Native",
+    },
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5461,10 +5513,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Plant Traits",
   SourcePage="p.301",
-  Description="Plants are immune to all mind-affecting effects (charms, compulsions, morale effects, patterns, and phantasms), paralysis, poison, polymorph, sleep, and stun.",
+  Description={
+    Format="Plants are immune to all mind-affecting effects (charms, compulsions, morale effects, patterns, and phantasms), paralysis, poison, polymorph, sleep, and stun.",
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5476,10 +5529,14 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Swarm Traits",
   SourcePage="p.312",
-  Description="A swarm composed of Fine or Diminutive creatures is immune to all weapon damage and are also susceptible to high winds, such as those created by a gust of wind spell.|PRESIZELTEQ:D",
+  Description={
+    Format="A swarm composed of Fine or Diminutive creatures is immune to all weapon damage and are also susceptible to high winds, such as those created by a gust of wind spell.",
+    Arguments={
+      "PRESIZELTEQ:D",
+    },
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5492,10 +5549,14 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Undead Traits",
   SourcePage="p.305",
-  Description="Mindless - Immune to all mind-affecting effects (charms/ compulsions/ phantasms/ patterns/ and morale effects), Cannot heal damage on own if has no Intelligence score (but can be healed and Fast Healing works)|PRETEMPLATE:1,Mindless",
+  Description={
+    Format="Mindless - Immune to all mind-affecting effects (charms/ compulsions/ phantasms/ patterns/ and morale effects), Cannot heal damage on own if has no Intelligence score (but can be healed and Fast Healing works)",
+    Arguments={
+      "PRETEMPLATE:1,Mindless",
+    },
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5507,10 +5568,14 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DisplayName="Vermin Traits",
   SourcePage="p.310",
-  Description="Mindless vermin are immune to mind-affecting effects (charms, compulsions, phantasms, patterns, and morale effects).|PRETEMPLATE:1,Mindless",
+  Description={
+    Format="Mindless vermin are immune to mind-affecting effects (charms, compulsions, phantasms, patterns, and morale effects).",
+    Arguments={
+      "PRETEMPLATE:1,Mindless",
+    },
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -5523,7 +5588,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="Ability Benefit",
@@ -5531,7 +5595,12 @@ DefineAbility({
     },
   },
   SourcePage="p.310",
-  Description="Against attacks made or effects created by evil creatures, this ability provides a +4 deflection bonus to AC and a +4 resistance bonus on saving throws to anyone within 20 feet of the angel. Otherwise, it functions as a magic circle against evil effect and a lesser globe of invulnerability, both with a radius of 20 feet (caster level %1).|TL",
+  Description={
+    Format="Against attacks made or effects created by evil creatures, this ability provides a +4 deflection bonus to AC and a +4 resistance bonus on saving throws to anyone within 20 feet of the angel. Otherwise, it functions as a magic circle against evil effect and a lesser globe of invulnerability, both with a radius of 20 feet (caster level %1).",
+    Arguments={
+      "TL",
+    },
+  },
   Types={
     "SpecialQuality",
     "Supernatural",
@@ -5545,9 +5614,13 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.310",
-  Description="All angels can speak with any creature that has a language, as though using a tongues spell (caster level %1). This ability is always active.|TL",
+  Description={
+    Format="All angels can speak with any creature that has a language, as though using a tongues spell (caster level %1). This ability is always active.",
+    Arguments={
+      "TL",
+    },
+  },
   Types={
     "SpecialQuality",
     "Supernatural",
@@ -5561,7 +5634,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SaveBonus",
@@ -5579,7 +5651,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="Ability Benefit",
@@ -5590,7 +5661,12 @@ DefineAbility({
     },
   },
   SourcePage="p.311",
-  Description="A righteous aura surrounds archons that fight or get angry. Any hostile creature within a 20-foot radius of an archon must succeed on a DC %1 Will save to resist its effects. Those who fail take a -2 penalty on attacks, AC, and saves for 24 hours or until they successfully hit the archon that generated the aura. A creature that has resisted or broken the effect cannot be affected again by the same archon's aura for 24 hours.|AuraOfMenaceDC",
+  Description={
+    Format="A righteous aura surrounds archons that fight or get angry. Any hostile creature within a 20-foot radius of an archon must succeed on a DC %1 Will save to resist its effects. Those who fail take a -2 penalty on attacks, AC, and saves for 24 hours or until they successfully hit the archon that generated the aura. A creature that has resisted or broken the effect cannot be affected again by the same archon's aura for 24 hours.",
+    Arguments={
+      "AuraOfMenaceDC",
+    },
+  },
   Definitions={
     {
       Name="AuraOfMenaceDC",
@@ -5619,9 +5695,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.311",
-  Description="Archons can use greater teleport at will, as the spell (caster level 14th), except that the creature can transport only itself and up to 50 pounds of carried objects.",
+  Description={
+    Format="Archons can use greater teleport at will, as the spell (caster level 14th), except that the creature can transport only itself and up to 50 pounds of carried objects.",
+  },
   Types={
     "SpecialQuality",
     "SpellLike",
@@ -5635,9 +5712,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.311",
-  Description="All archons can speak with any creature that has a language, as though using a tongues spell (caster level 14th). This ability is always active.",
+  Description={
+    Format="All archons can speak with any creature that has a language, as though using a tongues spell (caster level 14th). This ability is always active.",
+  },
   Types={
     "SpecialQuality",
     "Supernatural",
@@ -5651,7 +5729,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SaveBonus",
@@ -5669,9 +5746,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.311",
-  Description="All azatas can speak with any creature that has a language, as though using a tongues spell (caster level 14th). This ability is always active.",
+  Description={
+    Format="All azatas can speak with any creature that has a language, as though using a tongues spell (caster level 14th). This ability is always active.",
+  },
   Types={
     "SpecialQuality",
     "Supernatural",
@@ -5685,9 +5763,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.311",
-  Description="Devils can see perfectly in darkness of any kind, even that created by a deeper darkness spell.",
+  Description={
+    Format="Devils can see perfectly in darkness of any kind, even that created by a deeper darkness spell.",
+  },
   Types={
     "SpecialQuality",
     "Supernatural",
@@ -5701,7 +5780,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="Ability Benefit",
@@ -5709,7 +5787,9 @@ DefineAbility({
     },
   },
   SourcePage="p.221",
-  Description="You have the ability to assume the appearance of creatures similar in shape to your true form, but retain most of your own physical qualities.",
+  Description={
+    Format="You have the ability to assume the appearance of creatures similar in shape to your true form, but retain most of your own physical qualities.",
+  },
   Types={
     "SpecialQuality",
     "Supernatural",
@@ -5721,7 +5801,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   AutomaticLanguages={
     {
       Selector=function (language)
@@ -5736,7 +5815,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   AutomaticLanguages={
     {
       Selector=function (language)
@@ -5751,10 +5829,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SortKey="1",
-  Description="REMOVE this when you are done to remove the reminder on the TODO.",
+  Description={
+    Format="REMOVE this when you are done to remove the reminder on the TODO.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -5774,7 +5853,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseString({"11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
@@ -5789,7 +5867,9 @@ DefineAbility({
       CasterLevel="PermanecyArcaneSightLVL",
     },
   },
-  Description="This spell makes your eyes glow blue and allows you to see magical auras within 120 feet of you. The effect is similar to that of a detect magic spell, but arcane sight does not require concentration and discerns aura location and power more quickly. You know the location and power of all magical auras within your sight. An aura's power depends on a spell's functioning level or an item's caster level, as noted in the description of the detect magic spell. If the items or creatures bearing the auras are in line of sight, you can make Spellcraft skill checks to determine the school of magic involved in each. [Make one check per aura; DC 15 + spell level, or 15 + one-half caster level for a nonspell effect.] If you concentrate on a specific creature within 120 feet of you as a standard action, you can determine whether it has any spellcasting or spell-like abilities, whether these are arcane or divine [spell-like abilities register as arcane], and the strength of the most powerful spell or spell-like ability the creature currently has available for use.",
+  Description={
+    Format="This spell makes your eyes glow blue and allows you to see magical auras within 120 feet of you. The effect is similar to that of a detect magic spell, but arcane sight does not require concentration and discerns aura location and power more quickly. You know the location and power of all magical auras within your sight. An aura's power depends on a spell's functioning level or an item's caster level, as noted in the description of the detect magic spell. If the items or creatures bearing the auras are in line of sight, you can make Spellcraft skill checks to determine the school of magic involved in each. [Make one check per aura; DC 15 + spell level, or 15 + one-half caster level for a nonspell effect.] If you concentrate on a specific creature within 120 feet of you as a standard action, you can determine whether it has any spellcasting or spell-like abilities, whether these are arcane or divine [spell-like abilities register as arcane], and the strength of the most powerful spell or spell-like ability the creature currently has available for use.",
+  },
   Definitions={
     {
       Name="PermanecyArcaneSightLVL",
@@ -5816,7 +5896,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
@@ -5831,7 +5910,9 @@ DefineAbility({
       CasterLevel="PermanecyComprehendLanguagesLVL",
     },
   },
-  Description="You can understand the spoken words of creatures or read otherwise incomprehensible written messages. In either case, you must touch the creature or the writing. The ability to read does not necessarily impart insight into the material, merely its literal meaning. The spell enables you to understand or read an unknown language, not speak or write it. Written material can be read at the rate of one page [250 words] per minute. Magical writing cannot be read, though the spell reveals that it is magical. This spell can be foiled by certain warding magic [such as the secret page and illusory script spells]. It does not decipher codes or reveal messages concealed in otherwise normal text.",
+  Description={
+    Format="You can understand the spoken words of creatures or read otherwise incomprehensible written messages. In either case, you must touch the creature or the writing. The ability to read does not necessarily impart insight into the material, merely its literal meaning. The spell enables you to understand or read an unknown language, not speak or write it. Written material can be read at the rate of one page [250 words] per minute. Magical writing cannot be read, though the spell reveals that it is magical. This spell can be foiled by certain warding magic [such as the secret page and illusory script spells]. It does not decipher codes or reveal messages concealed in otherwise normal text.",
+  },
   Definitions={
     {
       Name="PermanecyComprehendLanguagesLVL",
@@ -5858,7 +5939,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseString({"10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
@@ -5873,7 +5953,9 @@ DefineAbility({
       CasterLevel="PermanecyDarkvisionLVL",
     },
   },
-  Description="The subject gains the ability to see 60 feet even in total darkness. Darkvision is black and white only but otherwise like normal sight. Darkvision does not grant one the ability to see in magical darkness.",
+  Description={
+    Format="The subject gains the ability to see 60 feet even in total darkness. Darkvision is black and white only but otherwise like normal sight. Darkvision does not grant one the ability to see in magical darkness.",
+  },
   Definitions={
     {
       Name="PermanecyDarkvisionLVL",
@@ -5912,7 +5994,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
@@ -5927,7 +6008,9 @@ DefineAbility({
       CasterLevel="PermanecyDetectMagicLVL",
     },
   },
-  Description="You detect magical auras. The amount of information revealed depends on how long you study a particular area or subject. &nl;1st Round: Presence or absence of magical auras. &nl;2nd Round: Number of different magical auras and the power of the most potent aura. &nl;3rd Round: The strength and location of each aura. If the items or creatures bearing the auras are in line of sight, you can make Spellcraft skill checks to determine the school of magic involved in each. [Make one check per aura; DC 15 + spell level, or 15 + half caster level for a nonspell effect.] &nl;Magical areas, multiple types of magic, or strong local magical emanations may distort or conceal weaker auras. &nl;Aura Strength: An aura's power depends on a spell's functioning spell level or an item's caster level. If an aura falls into more than one category, detect magic indicates the stronger of the two. &nl;  &pipe;--------- Aura Power --------- &nl;Spell or Object &pipe;Faint &pipe;Moderate &pipe;Strong &pipe;Overwhelming &nl;Functioning spell [spell level] &pipe;3rd or lower &pipe;4th-6th &pipe;7th-9th &pipe;10th+ [deity-level] &nl;Magic item [caster level] &pipe;5th or lower &pipe;6th-11th &pipe;12th-20th &pipe;21st+ [artifact] &nl;Lingering Aura: A magical aura lingers after its original source dissipates [in the case of a spell] or is destroyed [in the case of a magic item]. If detect magic is cast and directed at such a location, the spell indicates an aura strength of dim [even weaker than a faint aura]. How long the aura lingers at this dim level depends on its original power: &nl;Original Strength &pipe;Duration of Lingering Aura &nl;Faint &pipe;1d6 rounds &nl;Moderate &pipe;1d6 minutes &nl;Strong &pipe;1d6x10 minutes &nl;Overwhelming &pipe;1d6 days &nl;Outsiders and elementals are not magical in themselves, but if they are summoned, the conjuration spell registers. &nl;Each round, you can turn to detect magic in a new area. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt blocks it.",
+  Description={
+    Format="You detect magical auras. The amount of information revealed depends on how long you study a particular area or subject. &nl;1st Round: Presence or absence of magical auras. &nl;2nd Round: Number of different magical auras and the power of the most potent aura. &nl;3rd Round: The strength and location of each aura. If the items or creatures bearing the auras are in line of sight, you can make Spellcraft skill checks to determine the school of magic involved in each. [Make one check per aura; DC 15 + spell level, or 15 + half caster level for a nonspell effect.] &nl;Magical areas, multiple types of magic, or strong local magical emanations may distort or conceal weaker auras. &nl;Aura Strength: An aura's power depends on a spell's functioning spell level or an item's caster level. If an aura falls into more than one category, detect magic indicates the stronger of the two. &nl;  &pipe;--------- Aura Power --------- &nl;Spell or Object &pipe;Faint &pipe;Moderate &pipe;Strong &pipe;Overwhelming &nl;Functioning spell [spell level] &pipe;3rd or lower &pipe;4th-6th &pipe;7th-9th &pipe;10th+ [deity-level] &nl;Magic item [caster level] &pipe;5th or lower &pipe;6th-11th &pipe;12th-20th &pipe;21st+ [artifact] &nl;Lingering Aura: A magical aura lingers after its original source dissipates [in the case of a spell] or is destroyed [in the case of a magic item]. If detect magic is cast and directed at such a location, the spell indicates an aura strength of dim [even weaker than a faint aura]. How long the aura lingers at this dim level depends on its original power: &nl;Original Strength &pipe;Duration of Lingering Aura &nl;Faint &pipe;1d6 rounds &nl;Moderate &pipe;1d6 minutes &nl;Strong &pipe;1d6x10 minutes &nl;Overwhelming &pipe;1d6 days &nl;Outsiders and elementals are not magical in themselves, but if they are summoned, the conjuration spell registers. &nl;Each round, you can turn to detect magic in a new area. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt blocks it.",
+  },
   Definitions={
     {
       Name="PermanecyDetectMagicLVL",
@@ -5954,7 +6037,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
@@ -5969,7 +6051,9 @@ DefineAbility({
       CasterLevel="PermanecyReadMagicLVL",
     },
   },
-  Description="By means of read magic, you can decipher magical inscriptions on objects-books, scrolls, weapons, and the like-that would otherwise be unintelligible. This deciphering does not normally invoke the magic contained in the writing, although it may do so in the case of a cursed scroll. Furthermore, once the spell is cast and you have read the magical inscription, you are thereafter able to read that particular writing without recourse to the use of read magic. You can read at the rate of one page [250 words] per minute. The spell allows you to identify a glyph of warding with a DC 13 Spellcraft check, a greater glyph of warding with a DC 16 Spellcraft check, or any symbol spell with a Spellcraft check [DC 10 + spell level].",
+  Description={
+    Format="By means of read magic, you can decipher magical inscriptions on objects-books, scrolls, weapons, and the like-that would otherwise be unintelligible. This deciphering does not normally invoke the magic contained in the writing, although it may do so in the case of a cursed scroll. Furthermore, once the spell is cast and you have read the magical inscription, you are thereafter able to read that particular writing without recourse to the use of read magic. You can read at the rate of one page [250 words] per minute. The spell allows you to identify a glyph of warding with a DC 13 Spellcraft check, a greater glyph of warding with a DC 16 Spellcraft check, or any symbol spell with a Spellcraft check [DC 10 + spell level].",
+  },
   Definitions={
     {
       Name="PermanecyReadMagicLVL",
@@ -5996,7 +6080,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseString({"10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
@@ -6011,7 +6094,9 @@ DefineAbility({
       CasterLevel="PermanecySeeInvisibilityLVL",
     },
   },
-  Description="You can see any objects or beings that are invisible within your range of vision, as well as any that are ethereal, as if they were normally visible. Such creatures are visible to you as translucent shapes, allowing you easily to discern the difference between visible, invisible, and ethereal creatures. The spell does not reveal the method used to obtain invisibility. It does not reveal illusions or enable you to see through opaque objects. It does not reveal creatures who are simply hiding, concealed, or otherwise hard to see.",
+  Description={
+    Format="You can see any objects or beings that are invisible within your range of vision, as well as any that are ethereal, as if they were normally visible. Such creatures are visible to you as translucent shapes, allowing you easily to discern the difference between visible, invisible, and ethereal creatures. The spell does not reveal the method used to obtain invisibility. It does not reveal illusions or enable you to see through opaque objects. It does not reveal creatures who are simply hiding, concealed, or otherwise hard to see.",
+  },
   Definitions={
     {
       Name="PermanecySeeInvisibilityLVL",
@@ -6038,7 +6123,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseString({"11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
@@ -6053,7 +6137,9 @@ DefineAbility({
       CasterLevel="PermanecyTonguesLVL",
     },
   },
-  Description="This spell grants the creature touched the ability to speak and understand the language of any intelligent creature, whether it is a racial tongue or a regional dialect. The subject can speak only one language at a time, although it may be able to understand several languages. Tongues does not enable the subject to speak with creatures who don't speak. The subject can make itself understood as far as its voice carries. This spell does not predispose any creature addressed toward the subject in any way.",
+  Description={
+    Format="This spell grants the creature touched the ability to speak and understand the language of any intelligent creature, whether it is a racial tongue or a regional dialect. The subject can speak only one language at a time, although it may be able to understand several languages. Tongues does not enable the subject to speak with creatures who don't speak. The subject can make itself understood as far as its voice carries. This spell does not predispose any creature addressed toward the subject in any way.",
+  },
   Definitions={
     {
       Name="PermanecyTonguesLVL",
@@ -6080,7 +6166,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
@@ -6095,7 +6180,9 @@ DefineAbility({
       CasterLevel="PermanecyEnlargePersonLVL",
     },
   },
-  Description="This spell causes instant growth of a humanoid creature, doubling its height and multiplying its weight by 8. This increase changes the creature's size category to the next larger one. The target gains a +2 size bonus to Strength, a -2 size penalty to Dexterity [to a minimum of 1], and a -1 penalty on attack rolls and AC due to its increased size. A humanoid creature whose size increases to Large has a space of 10 feet and a natural reach of 10 feet. This spell does not change the target's speed. If insufficient room is available for the desired growth, the creature attains the maximum possible size and may make a Strength check [using its increased Strength] to burst any enclosures in the process. If it fails, it is constrained without harm by the materials enclosing it- the spell cannot be used to crush a creature by increasing its size. All equipment worn or carried by a creature is similarly enlarged by the spell. Melee and projectile weapons affected by this spell deal more damage. Other magical properties are not affected by this spell. Any enlarged item that leaves an enlarged creature's possession [including a projectile or thrown weapon] instantly returns to its normal size. This means that thrown weapons deal their normal damage, and projectiles deal damage based on the size of the weapon that fired them. Magical properties of enlarged items are not increased by this spell. Multiple magical effects that increase size do not stack,. Enlarge person counters and dispels reduce person.",
+  Description={
+    Format="This spell causes instant growth of a humanoid creature, doubling its height and multiplying its weight by 8. This increase changes the creature's size category to the next larger one. The target gains a +2 size bonus to Strength, a -2 size penalty to Dexterity [to a minimum of 1], and a -1 penalty on attack rolls and AC due to its increased size. A humanoid creature whose size increases to Large has a space of 10 feet and a natural reach of 10 feet. This spell does not change the target's speed. If insufficient room is available for the desired growth, the creature attains the maximum possible size and may make a Strength check [using its increased Strength] to burst any enclosures in the process. If it fails, it is constrained without harm by the materials enclosing it- the spell cannot be used to crush a creature by increasing its size. All equipment worn or carried by a creature is similarly enlarged by the spell. Melee and projectile weapons affected by this spell deal more damage. Other magical properties are not affected by this spell. Any enlarged item that leaves an enlarged creature's possession [including a projectile or thrown weapon] instantly returns to its normal size. This means that thrown weapons deal their normal damage, and projectiles deal damage based on the size of the weapon that fired them. Magical properties of enlarged items are not increased by this spell. Multiple magical effects that increase size do not stack,. Enlarge person counters and dispels reduce person.",
+  },
   Definitions={
     {
       Name="PermanecyEnlargePersonLVL",
@@ -7544,7 +7631,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
@@ -7559,7 +7645,9 @@ DefineAbility({
       CasterLevel="PermanecyMagicFangLVL",
     },
   },
-  Description="Magic fang gives one natural weapon of the subject a +1 enhancement bonus on attack and damage rolls. The spell can affect a slam attack, fist, bite, or other natural weapon. [The spell does not change an unarmed strike's damage from nonlethal damage to lethal damage.]",
+  Description={
+    Format="Magic fang gives one natural weapon of the subject a +1 enhancement bonus on attack and damage rolls. The spell can affect a slam attack, fist, bite, or other natural weapon. [The spell does not change an unarmed strike's damage from nonlethal damage to lethal damage.]",
+  },
   Definitions={
     {
       Name="PermanecyMagicFangLVL",
@@ -7599,7 +7687,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseString({"11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
@@ -7614,7 +7701,9 @@ DefineAbility({
       CasterLevel="PermanecyMagicFangGreaterLVL",
     },
   },
-  Description="This spell functions like magic fang, except that the enhancement bonus on attack and damage rolls is +1 per four caster levels [maximum +5]. Alternatively, you may imbue all of the creature's natural weapons with a +1 enhancement bonus [regardless of your caster level].",
+  Description={
+    Format="This spell functions like magic fang, except that the enhancement bonus on attack and damage rolls is +1 per four caster levels [maximum +5]. Alternatively, you may imbue all of the creature's natural weapons with a +1 enhancement bonus [regardless of your caster level].",
+  },
   Definitions={
     {
       Name="PermanecyMagicFangGreaterLVL",
@@ -7654,7 +7743,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
@@ -7669,7 +7757,9 @@ DefineAbility({
       CasterLevel="PermanecyReducePersonLVL",
     },
   },
-  Description="This spell causes instant diminution of a humanoid creature, halving its height, length, and width and dividing its weight by 8. This decrease changes the creature's size category to the next smaller one. The target gains a +2 size bonus to Dexterity, a -2 size penalty to Strength [to a minimum of 1], and a +1 bonus on attack rolls and AC due to its reduced size. A Small humanoid creature whose size decreases to Tiny has a space of 2-1/2 feet and a natural reach of 0 feet [meaning that it must enter an opponent's square to attack]. A Large humanoid creature whose size decreases to Medium has a space of 5 feet and a natural reach of 5 feet. This spell doesn't change the target's speed. All equipment worn or carried by a creature is similarly reduced by the spell. Melee and projectile weapons deal less damage. Other magical properties are not affected by this spell. Any reduced item that leaves the reduced creature's possession [including a projectile or thrown weapon] instantly returns to its normal size. This means that thrown weapons deal their normal damage [projectiles deal damage based on the size of the weapon that fired them]. Multiple magical effects that reduce size do not stack. Reduce person counters and dispels enlarge person.",
+  Description={
+    Format="This spell causes instant diminution of a humanoid creature, halving its height, length, and width and dividing its weight by 8. This decrease changes the creature's size category to the next smaller one. The target gains a +2 size bonus to Dexterity, a -2 size penalty to Strength [to a minimum of 1], and a +1 bonus on attack rolls and AC due to its reduced size. A Small humanoid creature whose size decreases to Tiny has a space of 2-1/2 feet and a natural reach of 0 feet [meaning that it must enter an opponent's square to attack]. A Large humanoid creature whose size decreases to Medium has a space of 5 feet and a natural reach of 5 feet. This spell doesn't change the target's speed. All equipment worn or carried by a creature is similarly reduced by the spell. Melee and projectile weapons deal less damage. Other magical properties are not affected by this spell. Any reduced item that leaves the reduced creature's possession [including a projectile or thrown weapon] instantly returns to its normal size. This means that thrown weapons deal their normal damage [projectiles deal damage based on the size of the weapon that fired them]. Multiple magical effects that reduce size do not stack. Reduce person counters and dispels enlarge person.",
+  },
   Definitions={
     {
       Name="PermanecyReducePersonLVL",
@@ -9132,7 +9222,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
@@ -9147,7 +9236,9 @@ DefineAbility({
       CasterLevel="PermanecyResistanceLVL",
     },
   },
-  Description="You imbue the subject with magical energy that protects it from harm, granting it a +1 resistance bonus on saves.",
+  Description={
+    Format="You imbue the subject with magical energy that protects it from harm, granting it a +1 resistance bonus on saves.",
+  },
   Definitions={
     {
       Name="PermanecyResistanceLVL",
@@ -9186,7 +9277,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseString({"13", "14", "15", "16", "17", "18", "19", "20"}),
@@ -9201,7 +9291,9 @@ DefineAbility({
       CasterLevel="PermanecyTelepathicBondLVL",
     },
   },
-  Description="You forge a telepathic bond among yourself and a number of willing creatures, each of which must have an Intelligence score of 3 or higher. Each creature included in the link is linked to all the others. The creatures can communicate telepathically through the bond regardless of language. No special power or influence is established as a result of the bond. Once the bond is formed, it works over any distance [although not from one plane to another]. If desired, you may leave yourself out of the telepathic bond forged. This decision must be made at the time of casting. Telepathic bond can be made permanent with a permanency spell, though it only bonds two creatures per casting of permanency.",
+  Description={
+    Format="You forge a telepathic bond among yourself and a number of willing creatures, each of which must have an Intelligence score of 3 or higher. Each creature included in the link is linked to all the others. The creatures can communicate telepathically through the bond regardless of language. No special power or influence is established as a result of the bond. Once the bond is formed, it works over any distance [although not from one plane to another]. If desired, you may leave yourself out of the telepathic bond forged. This decision must be made at the time of casting. Telepathic bond can be made permanent with a permanency spell, though it only bonds two creatures per casting of permanency.",
+  },
   Definitions={
     {
       Name="PermanecyTelepathicBondLVL",
@@ -9228,7 +9320,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -9287,7 +9378,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="STAT",
@@ -9312,7 +9402,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="STAT",
@@ -9337,7 +9426,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="STAT",
@@ -9362,7 +9450,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="STAT",
@@ -9387,7 +9474,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="STAT",
@@ -9412,7 +9498,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="STAT",
@@ -9438,7 +9523,6 @@ DefineAbility({
   Category="Background",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "HumanEthnicity",
   },
@@ -9450,7 +9534,6 @@ DefineAbility({
   Category="Background",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "HumanEthnicity",
   },
@@ -9462,7 +9545,6 @@ DefineAbility({
   Category="Background",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "Region",
   },
@@ -9474,7 +9556,6 @@ DefineAbility({
   Category="Background",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "Region",
   },
@@ -9485,7 +9566,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Movement={
     Fly=60,
   },
@@ -9496,7 +9576,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Movement={
     Fly=80,
   },
@@ -9507,7 +9586,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Movement={
     Swim=60,
   },
@@ -9518,7 +9596,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Movement={
     Jet=240,
   },

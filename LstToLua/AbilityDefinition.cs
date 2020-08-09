@@ -47,7 +47,10 @@ namespace Primordially.LstToLua
             output.WriteKeyValue("Category", Category);
             output.WriteKeyValue("AllowMultiple", AllowMultiple);
             output.WriteKeyValue("Stackable", Stackable);
-            output.WriteKeyValue("Visible", Visible);
+            if (!Visible)
+            {
+                output.WriteKeyValue("Visible", Visible);
+            }
             if (Cost.HasValue)
             {
                 output.WriteKeyValue("Cost", Cost.Value);

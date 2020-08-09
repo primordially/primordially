@@ -1,18 +1,19 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using Primordially.LstToLua.Conditions;
 
 namespace Primordially.LstToLua
 {
     internal class AbilityOrClassObject : DataObject
     {
-        public string? Description { get; private set; }
+        public (string format, List<string> arguments)? Description { get; private set; }
         public List<VariableDefinition> Definitions { get; } = new List<VariableDefinition>();
         public List<AbilityReference> Abilities { get; } = new List<AbilityReference>();
         public List<Bonus> Bonuses { get; } = new List<Bonus>();
         public List<string> Types { get; } = new List<string>();
         public DamageReduction? DamageReduction { get; private set; }
-        public string SpellResistance { get; private set; }
+        public string? SpellResistance { get; private set; }
 
         public string? TemporaryBonusDescription { get; private set; }
         public List<(string target, Bonus bonus)> TemporaryBonuses { get; } = new List<(string target, Bonus bonus)>();
@@ -76,8 +77,13 @@ namespace Primordially.LstToLua
                     Types.AddRange(v.Value.Split('.'));
                     return;
                 case "DESC":
-                    Description = v.Value;
+                {
+                    var parts = v.Value.Split('|');
+                    var format = parts[0];
+                    var args = parts.Skip(1).ToList();
+                    Description = (format, args);
                     return;
+                }
                 case "DEFINE":
                 {
                     var parts = v.Split('|').ToArray();
@@ -136,9 +142,13 @@ namespace Primordially.LstToLua
         protected override void DumpMembers(LuaTextWriter output)
         {
             base.DumpMembers(output);
-            if (!string.IsNullOrEmpty(Description))
+            if (Description.HasValue)
             {
-                output.WriteKeyValue("Description", Description);
+                output.WriteObjectValue("Description", () =>
+                {
+                    output.WriteKeyValue("Format", Description.Value.format);
+                    output.WriteListValue("Arguments", Description.Value.arguments);
+                });
             }
             if (Definitions.Any())
             {

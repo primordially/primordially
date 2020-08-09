@@ -11,7 +11,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Pool_AnimalCompanionFeat",
@@ -25,7 +24,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Pool_CompanionLevelIncreaseChoice",
@@ -39,7 +37,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Pool_CompanionStatIncrease",
@@ -53,7 +50,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Pool_CompanionSkill",
@@ -67,7 +63,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="IntelligenceLockNumber",
@@ -506,7 +501,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -518,7 +512,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -530,7 +523,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -542,7 +534,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -554,7 +545,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -566,7 +556,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -578,7 +567,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -590,7 +578,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -602,7 +589,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -614,7 +600,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -626,7 +611,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -638,7 +622,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -650,7 +633,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -662,7 +644,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -674,7 +655,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -686,7 +666,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -698,7 +677,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -710,7 +688,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -722,7 +699,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -734,7 +710,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -746,7 +721,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -758,7 +732,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -770,7 +743,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -782,7 +754,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -794,7 +765,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -806,7 +776,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -818,7 +787,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   StatModifications={
     {
     },
@@ -831,7 +799,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Companion Class Feature",
@@ -1009,7 +976,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Companion Class Feature",
@@ -1187,7 +1153,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="Ability Benefit",
@@ -1198,7 +1163,12 @@ DefineAbility({
     },
   },
   SourcePage="p.52",
-  Description="%1|BonusTricks",
+  Description={
+    Format="%1",
+    Arguments={
+      "BonusTricks",
+    },
+  },
   Definitions={
     {
       Name="BonusTricks",
@@ -1227,9 +1197,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.52",
-  Description="A master can handle her animal companion as a free action, or push it as a move action, even if she doesn't have any ranks in the Handle Animal skill. The master gains a +4 circumstance bonus on all wild empathy checks and Handle Animal checks made regarding an animal companion.",
+  Description={
+    Format="A master can handle her animal companion as a free action, or push it as a move action, even if she doesn't have any ranks in the Handle Animal skill. The master gains a +4 circumstance bonus on all wild empathy checks and Handle Animal checks made regarding an animal companion.",
+  },
   Types={
     "CompanionClassFeatures",
     "ClassFeatures",
@@ -1244,9 +1215,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.52",
-  Description="The master may cast a spell with a target of \"You\" on her animal companion (as a spell with a range of touch) instead of on herself. A master may cast spells on her animal companion even if the spells normally do not affect creatures of the companion's type (animal). Spells cast in this way must come from a class that grants an animal companion. This ability does not allow the animal to share abilities that are not spells, even if they function like spells.",
+  Description={
+    Format="The master may cast a spell with a target of \"You\" on her animal companion (as a spell with a range of touch) instead of on herself. A master may cast spells on her animal companion even if the spells normally do not affect creatures of the companion's type (animal). Spells cast in this way must come from a class that grants an animal companion. This ability does not allow the animal to share abilities that are not spells, even if they function like spells.",
+  },
   Types={
     "CompanionClassFeatures",
     "ClassFeatures",
@@ -1261,9 +1233,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.53",
-  Description="The animal companion adds +1 to one of its ability scores.",
+  Description={
+    Format="The animal companion adds +1 to one of its ability scores.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -1287,9 +1260,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.53",
-  Description="An animal companion gains a +4 morale bonus on Will saves against enchantment spells and effects.",
+  Description={
+    Format="An animal companion gains a +4 morale bonus on Will saves against enchantment spells and effects.",
+  },
   Types={
     "CompanionClassFeatures",
     "ClassFeatures",
@@ -1304,7 +1278,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -1317,7 +1290,9 @@ DefineAbility({
     },
   },
   SourcePage="p.53",
-  Description="An animal companion gains Multiattack as a bonus feat if it has three or more natural attacks and does not already have that feat. If it does not have the requisite three or more natural attacks, the animal companion instead gains a second attack with one of its natural weapons, albeit at a -5 penalty.",
+  Description={
+    Format="An animal companion gains Multiattack as a bonus feat if it has three or more natural attacks and does not already have that feat. If it does not have the requisite three or more natural attacks, the animal companion instead gains a second attack with one of its natural weapons, albeit at a -5 penalty.",
+  },
   Definitions={
     {
       Name="Multiattack",
@@ -1351,9 +1326,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.53",
-  Description="If an animal companion is subjected to an attack that normally allows a Reflex saving throw for half damage, it takes no damage if it makes a successful saving throw.",
+  Description={
+    Format="If an animal companion is subjected to an attack that normally allows a Reflex saving throw for half damage, it takes no damage if it makes a successful saving throw.",
+  },
   Types={
     "CompanionClassFeatures",
     "ClassFeatures",
@@ -1368,9 +1344,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.53",
-  Description="When subjected to an attack that normally allows a Reflex saving throw for half damage, an animal companion takes no damage if it makes a successful saving throw and only half damage if the saving throw fails.",
+  Description={
+    Format="When subjected to an attack that normally allows a Reflex saving throw for half damage, an animal companion takes no damage if it makes a successful saving throw and only half damage if the saving throw fails.",
+  },
   Types={
     "CompanionClassFeatures",
     "ClassFeatures",
@@ -1385,8 +1362,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
-  Description="%1|MasterLevel+5",
+  Description={
+    Format="%1",
+    Arguments={
+      "MasterLevel+5",
+    },
+  },
   Types={
     "CompanionClassFeatures",
     "ClassFeatures",
@@ -1401,8 +1382,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
-  Description="%1|2*floor(MasterLevel/3)",
+  Description={
+    Format="%1",
+    Arguments={
+      "2*floor(MasterLevel/3)",
+    },
+  },
   Bonuses={
     {
       Category="COMBAT",
@@ -1430,8 +1415,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
-  Description="%1|floor(MasterLevel/3)",
+  Description={
+    Format="%1",
+    Arguments={
+      "floor(MasterLevel/3)",
+    },
+  },
   Bonuses={
     {
       Category="STAT",
@@ -1454,8 +1443,12 @@ ModifyAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
-  Description="You gain a second attack with one of your natural weapons at -5.|PREVARLT:NaturalAttacks,3",
+  Description={
+    Format="You gain a second attack with one of your natural weapons at -5.",
+    Arguments={
+      "PREVARLT:NaturalAttacks,3",
+    },
+  },
 })
 
 DefineAbility({
@@ -1464,7 +1457,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Companion Class Feature",
@@ -1489,7 +1481,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Companion Class Feature",
@@ -1514,7 +1505,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Companion Class Feature",
@@ -1539,7 +1529,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Companion Class Feature",
@@ -1564,7 +1553,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Companion Class Feature",
@@ -1589,7 +1577,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Companion Class Feature",
@@ -1614,7 +1601,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Companion Class Feature",
@@ -1639,7 +1625,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Companion Class Feature",
@@ -1664,7 +1649,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Companion Class Feature",
@@ -1689,7 +1673,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Companion Class Feature",
@@ -1713,7 +1696,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Acrobatics",
     "Climb",
@@ -1735,7 +1717,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -1769,7 +1750,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -1803,7 +1783,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Ape)" and 1 or 0)) >= 1
@@ -1829,7 +1808,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Badger (Wolverine))" and 1 or 0)) >= 1
@@ -1855,7 +1833,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Bear)" and 1 or 0)) >= 1
@@ -1881,7 +1858,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Bird (Eagle))" and 1 or 0) + (character.Race.Name == "Companion (Bird (Hawk))" and 1 or 0) + (character.Race.Name == "Companion (Bird (Owl))" and 1 or 0)) >= 1
@@ -1913,7 +1889,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Boar)" and 1 or 0)) >= 1
@@ -1948,7 +1923,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Camel)" and 1 or 0)) >= 1
@@ -1980,7 +1954,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Cat (Small (Cheetah)))" and 1 or 0)) >= 1
@@ -2015,7 +1988,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Cat (Small (Leopard)))" and 1 or 0)) >= 1
@@ -2050,7 +2022,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Crocodile (Alligator))" and 1 or 0)) >= 1
@@ -2088,7 +2059,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Dog)" and 1 or 0)) >= 1
@@ -2126,7 +2096,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Horse)" and 1 or 0)) >= 1
@@ -2167,7 +2136,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Pony)" and 1 or 0)) >= 1
@@ -2208,7 +2176,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Shark)" and 1 or 0)) >= 1
@@ -2243,7 +2210,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Snake (Constrictor))" and 1 or 0)) >= 1
@@ -2290,7 +2256,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Snake (Viper))" and 1 or 0)) >= 1
@@ -2316,7 +2281,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Dire Rat)" and 1 or 0)) >= 1
@@ -2357,7 +2321,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Cat (Big (Lion)))" and 1 or 0)) >= 1
@@ -2393,7 +2356,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Cat (Big (Tiger)))" and 1 or 0)) >= 1
@@ -2429,7 +2391,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Dinosaur (Deinonychus))" and 1 or 0)) >= 1
@@ -2483,7 +2444,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Dinosaur (Velociraptor))" and 1 or 0)) >= 1
@@ -2537,7 +2497,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Wolf)" and 1 or 0)) >= 1
@@ -2563,7 +2522,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "SpecialQuality",
   },
@@ -2575,7 +2533,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "SpecialQuality",
   },
@@ -2586,14 +2543,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="Ability Benefit",
       FormatString="(1d6/touch)",
     },
   },
-  Description="A shadow's touch deals 1d6 points of Strength damage to a living creature. This is a negative energy effect. A creature dies if this Strength damage equals or exceeds its actual Strength score.",
+  Description={
+    Format="A shadow's touch deals 1d6 points of Strength damage to a living creature. This is a negative energy effect. A creature dies if this Strength damage equals or exceeds its actual Strength score.",
+  },
   Types={
     "SpecialAttack",
     "Supernatural",
@@ -2606,7 +2564,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="NAME",
@@ -2632,7 +2589,12 @@ DefineAbility({
     },
   },
   SourcePage="p.97",
-  Description="Animal will attack all creatures|PREABILITY:1,CATEGORY=Special Ability,Animal Trick ~ Attack II",
+  Description={
+    Format="Animal will attack all creatures",
+    Arguments={
+      "PREABILITY:1,CATEGORY=Special Ability,Animal Trick ~ Attack II",
+    },
+  },
   Types={
     "AnimalTrick",
   },
@@ -2644,7 +2606,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -2652,7 +2613,9 @@ DefineAbility({
       end)
     end,
   },
-  Description="Animal will attack all creatures (including such unnatural creatures as undead and aberrations).",
+  Description={
+    Format="Animal will attack all creatures (including such unnatural creatures as undead and aberrations).",
+  },
   Types={
     "AnimalTrick",
   },
@@ -2664,9 +2627,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.97",
-  Description="The animal comes to you, even if it normally would not do so.",
+  Description={
+    Format="The animal comes to you, even if it normally would not do so.",
+  },
   Types={
     "AnimalTrick",
   },
@@ -2678,9 +2642,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.97",
-  Description="The animal defends you (or is ready to defend you if no threat is present), even without any command being given. Alternatively, you can command the animal to defend another specific character.",
+  Description={
+    Format="The animal defends you (or is ready to defend you if no threat is present), even without any command being given. Alternatively, you can command the animal to defend another specific character.",
+  },
   Types={
     "AnimalTrick",
   },
@@ -2692,9 +2657,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.97",
-  Description="The animal breaks off from combat or otherwise backs down. An animal that doesn't know this trick continues to fight until it must flee (due to injury, a fear effect, or the like) or its opponent is defeated.",
+  Description={
+    Format="The animal breaks off from combat or otherwise backs down. An animal that doesn't know this trick continues to fight until it must flee (due to injury, a fear effect, or the like) or its opponent is defeated.",
+  },
   Types={
     "AnimalTrick",
   },
@@ -2706,9 +2672,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.97",
-  Description="The animal goes and gets something. If you do not point out a specific item, the animal fetches a random object.",
+  Description={
+    Format="The animal goes and gets something. If you do not point out a specific item, the animal fetches a random object.",
+  },
   Types={
     "AnimalTrick",
   },
@@ -2720,9 +2687,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.97",
-  Description="The animal stays in place and prevents others from approaching.",
+  Description={
+    Format="The animal stays in place and prevents others from approaching.",
+  },
   Types={
     "AnimalTrick",
   },
@@ -2734,9 +2702,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.97",
-  Description="The animal follows you closely, even to places where it normally wouldn't go.",
+  Description={
+    Format="The animal follows you closely, even to places where it normally wouldn't go.",
+  },
   Types={
     "AnimalTrick",
   },
@@ -2748,9 +2717,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.97",
-  Description="The animal performs a variety of simple tricks, such as sitting up, rolling over, roaring or barking, and so on.",
+  Description={
+    Format="The animal performs a variety of simple tricks, such as sitting up, rolling over, roaring or barking, and so on.",
+  },
   Types={
     "AnimalTrick",
   },
@@ -2762,9 +2732,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.97",
-  Description="The animal moves into an area and looks around for anything that is obviously alive or animate.",
+  Description={
+    Format="The animal moves into an area and looks around for anything that is obviously alive or animate.",
+  },
   Types={
     "AnimalTrick",
   },
@@ -2776,9 +2747,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.97",
-  Description="The animal stays in place, waiting for you to return. It does not challenge other creatures that come by, though it still defends itself if it needs to.",
+  Description={
+    Format="The animal stays in place, waiting for you to return. It does not challenge other creatures that come by, though it still defends itself if it needs to.",
+  },
   Types={
     "AnimalTrick",
   },
@@ -2790,9 +2762,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.97",
-  Description="The animal tracks the scent presented to it. (This requires the animal to have the scent ability.)",
+  Description={
+    Format="The animal tracks the scent presented to it. (This requires the animal to have the scent ability.)",
+  },
   Types={
     "AnimalTrick",
   },
@@ -2804,9 +2777,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.97",
-  Description="The animal pulls or pushes a medium or heavy load.",
+  Description={
+    Format="The animal pulls or pushes a medium or heavy load.",
+  },
   Types={
     "AnimalTrick",
   },
@@ -2818,9 +2792,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.240",
-  Description="The animal is trained to move with the aid of the air walk spell.",
+  Description={
+    Format="The animal is trained to move with the aid of the air walk spell.",
+  },
   Types={
     "AnimalTrick",
   },
@@ -2832,7 +2807,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=6,
   SortKey="1",
   DisplayName="Combat Training",
@@ -2847,7 +2821,9 @@ DefineAbility({
       return ((character.Stats["INT"] >= 2)) >= 1
     end,
   },
-  Description="An animal trained to bear a rider into combat knows the tricks attack, come, defend, down, guard, and heel. Training an animal for combat riding takes 6 weeks. You may also \"upgrade\" an animal trained for riding to one trained for combat by spending 3 weeks and making a successful DC 20 Handle Animal check. The new general purpose and tricks completely replace the animal's previous purpose and any tricks it once knew. Many horses and riding dogs are trained in this way.",
+  Description={
+    Format="An animal trained to bear a rider into combat knows the tricks attack, come, defend, down, guard, and heel. Training an animal for combat riding takes 6 weeks. You may also \"upgrade\" an animal trained for riding to one trained for combat by spending 3 weeks and making a successful DC 20 Handle Animal check. The new general purpose and tricks completely replace the animal's previous purpose and any tricks it once knew. Many horses and riding dogs are trained in this way.",
+  },
   Abilities={
     {
       Category="Animal Trick",
@@ -2876,7 +2852,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=3,
   SortKey="1",
   DisplayName="Fighting",
@@ -2888,7 +2863,9 @@ DefineAbility({
       end))
     end,
   },
-  Description="An animal trained to engage in combat knows the tricks attack, down, and stay. Training an animal for fighting takes 3 weeks.",
+  Description={
+    Format="An animal trained to engage in combat knows the tricks attack, down, and stay. Training an animal for fighting takes 3 weeks.",
+  },
   Abilities={
     {
       Category="Animal Trick",
@@ -2914,7 +2891,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=4,
   SortKey="1",
   DisplayName="Guarding",
@@ -2929,7 +2905,9 @@ DefineAbility({
       return ((character.Stats["INT"] >= 2)) >= 1
     end,
   },
-  Description="An animal trained to guard knows the tricks attack, defend, down, and guard. Training an animal for guarding takes 4 weeks.",
+  Description={
+    Format="An animal trained to guard knows the tricks attack, defend, down, and guard. Training an animal for guarding takes 4 weeks.",
+  },
   Abilities={
     {
       Category="Animal Trick",
@@ -2956,7 +2934,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=2,
   SortKey="1",
   DisplayName="Heavy Labor",
@@ -2968,7 +2945,9 @@ DefineAbility({
       end))
     end,
   },
-  Description="An animal trained for heavy labor knows the tricks come and work. Training an animal for heavy labor takes 2 weeks.",
+  Description={
+    Format="An animal trained for heavy labor knows the tricks come and work. Training an animal for heavy labor takes 2 weeks.",
+  },
   Abilities={
     {
       Category="Animal Trick",
@@ -2993,7 +2972,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=6,
   SortKey="1",
   DisplayName="Hunting",
@@ -3008,7 +2986,9 @@ DefineAbility({
       return ((character.Stats["INT"] >= 2)) >= 1
     end,
   },
-  Description="An animal trained for hunting knows the tricks attack, down, fetch, heel, seek, and track. Training an animal for hunting takes 6 weeks.",
+  Description={
+    Format="An animal trained for hunting knows the tricks attack, down, fetch, heel, seek, and track. Training an animal for hunting takes 6 weeks.",
+  },
   Abilities={
     {
       Category="Animal Trick",
@@ -3037,7 +3017,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=5,
   SortKey="1",
   DisplayName="Performance",
@@ -3052,7 +3031,9 @@ DefineAbility({
       return ((character.Stats["INT"] >= 2)) >= 1
     end,
   },
-  Description="An animal trained for performance knows the tricks come, fetch, heel, perform, and stay. Training an animal for performance takes 5 weeks.",
+  Description={
+    Format="An animal trained for performance knows the tricks come, fetch, heel, perform, and stay. Training an animal for performance takes 5 weeks.",
+  },
   Abilities={
     {
       Category="Animal Trick",
@@ -3080,7 +3061,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=3,
   SortKey="1",
   DisplayName="Riding",
@@ -3092,7 +3072,9 @@ DefineAbility({
       end))
     end,
   },
-  Description="An animal trained to bear a rider knows the tricks come, heel, and stay. Training an animal for riding takes 3 weeks.",
+  Description={
+    Format="An animal trained to bear a rider knows the tricks come, heel, and stay. Training an animal for riding takes 3 weeks.",
+  },
   Abilities={
     {
       Category="Animal Trick",
@@ -3118,7 +3100,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   DisplayName="Strength",
   Bonuses={
     {
@@ -3140,7 +3121,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   DisplayName="Dexterity",
   Bonuses={
     {
@@ -3162,7 +3142,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   DisplayName="Constitution",
   Bonuses={
     {
@@ -3184,7 +3163,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   DisplayName="Intelligence",
   StatModifications={
     {
@@ -3217,7 +3195,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   DisplayName="Wisdom",
   Bonuses={
     {
@@ -3239,7 +3216,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   DisplayName="Charisma",
   Bonuses={
     {
@@ -3261,7 +3237,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseSkill(function (character, skill)
       return ((stringMatch(skill.Name, "Acrobatics") or stringMatch(skill.Key, "Acrobatics"))) or ((stringMatch(skill.Name, "Climb") or stringMatch(skill.Key, "Climb"))) or ((stringMatch(skill.Name, "Escape Artist") or stringMatch(skill.Key, "Escape Artist"))) or ((stringMatch(skill.Name, "Fly") or stringMatch(skill.Key, "Fly"))) or ((stringMatch(skill.Name, "Intimidate") or stringMatch(skill.Key, "Intimidate"))) or ((stringMatch(skill.Name, "Perception") or stringMatch(skill.Key, "Perception"))) or ((stringMatch(skill.Name, "Stealth") or stringMatch(skill.Key, "Stealth"))) or ((stringMatch(skill.Name, "Survival") or stringMatch(skill.Key, "Survival"))) or ((stringMatch(skill.Name, "Swim") or stringMatch(skill.Key, "Swim")))
@@ -3288,7 +3263,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseSkill(function (character, skill)
       return (skill.Type == "Base")
@@ -3319,7 +3293,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "SpecialAttack",
   },
@@ -3331,7 +3304,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "SpecialAttack",
   },
@@ -3343,9 +3315,13 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.232",
-  Description="Filth Fever: Bite injury; Save Fort DC %1; Onset 1d3 days; Frequency 1/day; Effect 1d3 Dex damage and 1d3 Con damage; Cure 2 consecutive saves.|DiseaseDC",
+  Description={
+    Format="Filth Fever: Bite injury; Save Fort DC %1; Onset 1d3 days; Frequency 1/day; Effect 1d3 Dex damage and 1d3 Con damage; Cure 2 consecutive saves.",
+    Arguments={
+      "DiseaseDC",
+    },
+  },
   Definitions={
     {
       Name="DiseaseDC",
@@ -3378,7 +3354,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="Ability Benefit",
@@ -3391,7 +3366,9 @@ DefineAbility({
     },
   },
   SourcePage="p.51",
-  Description="When grappling a foe of its size or smaller, a crocodile can perform a death roll upon making a successful grapple check. As it clings to its foe, it tucks in its legs and rolls rapidly, twisting and wrenching its victim. The crocodile inflicts its bite damage and knocks the creature prone. If successful, the crocodile maintains its grapple.",
+  Description={
+    Format="When grappling a foe of its size or smaller, a crocodile can perform a death roll upon making a successful grapple check. As it clings to its foe, it tucks in its legs and rolls rapidly, twisting and wrenching its victim. The crocodile inflicts its bite damage and knocks the creature prone. If successful, the crocodile maintains its grapple.",
+  },
   Definitions={
     {
       Name="DeathRollDice",
@@ -3443,9 +3420,13 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.51",
-  Description="A crocodile can hold its breath for %1 rounds before it risks drowning.|HoldBreathRounds",
+  Description={
+    Format="A crocodile can hold its breath for %1 rounds before it risks drowning.",
+    Arguments={
+      "HoldBreathRounds",
+    },
+  },
   Definitions={
     {
       Name="HoldBreathRounds",
@@ -3475,9 +3456,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.51",
-  Description="Once per minute a crocodile may sprint, increasing its land speed to 40 feet for 1 round.",
+  Description={
+    Format="Once per minute a crocodile may sprint, increasing its land speed to 40 feet for 1 round.",
+  },
   Types={
     "SpecialQuality",
     "Special Ability",
@@ -3492,7 +3474,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   NaturalAttacks={
     {
       Name="Tail Slap",
@@ -3643,10 +3624,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.40",
   SourceShort="SOURCESHORT:B1",
-  Description="Once per hour, a Small Cat companion can move at 10 times its normal speed (500 feet) when it makes a charge.",
+  Description={
+    Format="Once per hour, a Small Cat companion can move at 10 times its normal speed (500 feet) when it makes a charge.",
+  },
   Types={
     "SpecialQuality",
     "Extraordinary",
@@ -3666,7 +3648,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Dinosaur (Allosaurus))" and 1 or 0)) >= 1
@@ -3714,7 +3695,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Dinosaur (Parasaurolophus))" and 1 or 0)) >= 1
@@ -3768,7 +3748,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Dinosaur (Tylosaurus))" and 1 or 0)) >= 1
@@ -3815,7 +3794,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Gar)" and 1 or 0)) >= 1
@@ -3853,7 +3831,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Herd Animal (Ram))" and 1 or 0)) >= 1
@@ -3928,7 +3905,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Templates={
     "Hippopotamus Companion Advancement",
   },
@@ -3948,7 +3924,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Templates={
     "Arsinoitherium Companion Advancement",
   },
@@ -3968,7 +3943,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Templates={
     "Gylptodon Companion Advancement",
   },
@@ -3988,7 +3962,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Megafauna (Megaloceros))" and 1 or 0)) >= 1
@@ -4077,7 +4050,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Megafauna (Megatherium))" and 1 or 0)) >= 1
@@ -4138,7 +4110,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Primate (Baboon))" and 1 or 0)) >= 1
@@ -4165,7 +4136,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Ray (Manta))" and 1 or 0)) >= 1
@@ -4196,7 +4166,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Ray (Stingray))" and 1 or 0)) >= 1
@@ -4239,7 +4208,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return ((character.Race.Name == "Companion (Turtle (Giant Snapping))" and 1 or 0)) >= 1
@@ -4273,7 +4241,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -4290,7 +4257,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4317,9 +4283,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.113",
-  Description="You get a +2 bonus on all Acrobatics and Fly skill checks. If you have 10 or more ranks in one of these skills, the bonus increases to +4 for that skill.",
+  Description={
+    Format="You get a +2 bonus on all Acrobatics and Fly skill checks. If you have 10 or more ranks in one of these skills, the bonus increases to +4 for that skill.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4340,9 +4307,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.117",
-  Description="You add your Dexterity bonus to your base attack bonus and size bonus when determining your Combat Maneuver Bonus (see Chapter 8) instead of your Strength bonus.",
+  Description={
+    Format="You add your Dexterity bonus to your base attack bonus and size bonus when determining your Combat Maneuver Bonus (see Chapter 8) instead of your Strength bonus.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4363,9 +4331,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.118",
-  Description="When you wear a type of armor with which you are proficient, the armor check penalty for that armor applies only to Dexterity- and Strength-based skill checks.",
+  Description={
+    Format="When you wear a type of armor with which you are proficient, the armor check penalty for that armor applies only to Dexterity- and Strength-based skill checks.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4386,7 +4355,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.118",
   Conditions={
     function (character)
@@ -4409,7 +4377,9 @@ DefineAbility({
       return count >= 1
     end,
   },
-  Description="When you wear a type of armor with which you are proficient, the armor check penalty for that armor applies only to Dexterity- and Strength-based skill checks.",
+  Description={
+    Format="When you wear a type of armor with which you are proficient, the armor check penalty for that armor applies only to Dexterity- and Strength-based skill checks.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4430,7 +4400,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.118",
   Conditions={
     function (character)
@@ -4453,7 +4422,9 @@ DefineAbility({
       return count >= 1
     end,
   },
-  Description="When you wear a type of armor with which you are proficient, the armor check penalty for that armor applies only to Dexterity- and Strength-based skill checks.",
+  Description={
+    Format="When you wear a type of armor with which you are proficient, the armor check penalty for that armor applies only to Dexterity- and Strength-based skill checks.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4474,9 +4445,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.118",
-  Description="You get a +2 bonus on Climb and Swim skill checks. If you have 10 or more ranks in one of these skills, the bonus increases to +4 for that skill.",
+  Description={
+    Format="You get a +2 bonus on Climb and Swim skill checks. If you have 10 or more ranks in one of these skills, the bonus increases to +4 for that skill.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4497,9 +4469,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.118",
-  Description="In melee, every time you miss because of concealment (see Chapter 8), you can reroll your miss chance percentile roll one time to see if you actually hit. An invisible attacker gets no advantages related to hitting you in melee. That is, you don't lose your Dexterity bonus to Armor Class, and the attacker doesn't get the usual +2 bonus for being invisible. The invisible attacker's bonuses do still apply for ranged attacks, however. You do not need to make Acrobatics skill checks to move at full speed while blinded.",
+  Description={
+    Format="In melee, every time you miss because of concealment (see Chapter 8), you can reroll your miss chance percentile roll one time to see if you actually hit. An invisible attacker gets no advantages related to hitting you in melee. That is, you don't lose your Dexterity bonus to Armor Class, and the attacker doesn't get the usual +2 bonus for being invisible. The invisible attacker's bonuses do still apply for ranged attacks, however. You do not need to make Acrobatics skill checks to move at full speed while blinded.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4520,9 +4493,13 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.119",
-  Description="You may make %1 additional attacks of opportunity per round. With this feat, you may also make attacks of opportunity while flat-footed.|DEX",
+  Description={
+    Format="You may make %1 additional attacks of opportunity per round. With this feat, you may also make attacks of opportunity while flat-footed.",
+    Arguments={
+      "DEX",
+    },
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4543,9 +4520,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.121",
-  Description="When your hit point total is below 0, but you are not dead, you automatically stabilize. You do not need to make a Constitution check each round to avoid losing additional hit points. You may choose to act as if you were disabled, rather than dying. You must make this decision as soon as you are reduced to negative hit points (even if it isn't your turn). If you do not choose to act as if you were disabled, you immediately fall unconscious. When using this feat, you are staggered. You can take a move action without further injuring yourself, but if you perform any standard action (or any other action deemed as strenuous, including some free actions, such as casting a quickened spell) you take 1 point of damage after completing the act. If your negative hit points are equal to or greater than your Constitution score, you immediately die.",
+  Description={
+    Format="When your hit point total is below 0, but you are not dead, you automatically stabilize. You do not need to make a Constitution check each round to avoid losing additional hit points. You may choose to act as if you were disabled, rather than dying. You must make this decision as soon as you are reduced to negative hit points (even if it isn't your turn). If you do not choose to act as if you were disabled, you immediately fall unconscious. When using this feat, you are staggered. You can take a move action without further injuring yourself, but if you perform any standard action (or any other action deemed as strenuous, including some free actions, such as casting a quickened spell) you take 1 point of damage after completing the act. If your negative hit points are equal to or greater than your Constitution score, you immediately die.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4566,14 +4544,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.122",
   Conditions={
     function (character)
       return (character.Variables["PreStatScore_DEX"] >= 13)
     end,
   },
-  Description="You gain a +1 dodge bonus to your AC. A condition that makes you lose your Dex bonus to AC also makes you lose the benefits of this feat.",
+  Description={
+    Format="You gain a +1 dodge bonus to your AC. A condition that makes you lose your Dex bonus to AC also makes you lose the benefits of this feat.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4594,9 +4573,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.112",
-  Description="You gain a +4 bonus on the following checks and saves: Swim checks made to resist nonlethal damage from exhaustion; Constitution checks made to continue running; Constitution checks made to avoid nonlethal damage from a forced march; Constitution checks made to hold your breath; Constitution checks made to avoid nonlethal damage from starvation or thirst; Fortitude saves made to avoid nonlethal damage from hot or cold environments; and Fortitude saves made to resist damage from suffocation. You may sleep in light or medium armor without becoming fatigued.",
+  Description={
+    Format="You gain a +4 bonus on the following checks and saves: Swim checks made to resist nonlethal damage from exhaustion; Constitution checks made to continue running; Constitution checks made to avoid nonlethal damage from a forced march; Constitution checks made to hold your breath; Constitution checks made to avoid nonlethal damage from starvation or thirst; Fortitude saves made to avoid nonlethal damage from hot or cold environments; and Fortitude saves made to resist damage from suffocation. You may sleep in light or medium armor without becoming fatigued.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4617,9 +4597,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.124",
-  Description="You get a +2 bonus on all Fortitude saving throws.",
+  Description={
+    Format="You get a +2 bonus on all Fortitude saving throws.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4640,7 +4621,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.126",
   Conditions={
     function (character)
@@ -4655,7 +4635,9 @@ DefineAbility({
       return (character.Variables["(CL=Companion)"] >= 3)
     end,
   },
-  Description="You do not provoke an attack of opportunity when performing a bull rush combat maneuver. In addition, you receive a +2 bonus on checks made to bull rush a foe. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to bull rush you.",
+  Description={
+    Format="You do not provoke an attack of opportunity when performing a bull rush combat maneuver. In addition, you receive a +2 bonus on checks made to bull rush a foe. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to bull rush you.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4676,9 +4658,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.127",
-  Description="You get a +4 bonus on initiative checks.",
+  Description={
+    Format="You get a +4 bonus on initiative checks.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4699,7 +4682,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.315",
   SourceShort="SOURCESHORT:B1",
   SourceLong="Bestiary",
@@ -4711,7 +4693,9 @@ DefineAbility({
       return (character.Variables["BONUS.COMBAT.AC.NaturalArmor"] >= 1)
     end,
   },
-  Description="The creature's natural armor bonus increases by +1. Special: A creature can gain this feat multiple times. Each time the creature takes the feat, its natural armor bonus increases by another point.",
+  Description={
+    Format="The creature's natural armor bonus increases by +1. Special: A creature can gain this feat multiple times. Each time the creature takes the feat, its natural armor bonus increases by another point.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4732,7 +4716,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseWeaponproficiency(function (character, weapon)
       return (character.IsProficientWith(weapon) and weapon.IsType("Natural"))
@@ -4750,7 +4733,9 @@ DefineAbility({
       return ((character.IsProficientWithWeaponType("Natural"))) >= 1
     end,
   },
-  Description="Choose one of the creature's natural attack forms. The damage for this natural attack increases by one step on the following list, as if the creature's size had increased by one category. Damage dice increase as follows: 1d2, 1d3, 1d4, 1d6, 1d8, 2d6, 3d6, 4d6, 6d6, 8d6, 12d6. A weapon or attack that deals 1d10 points of damage increases as follows: 1d10, 2d8, 3d8, 4d8, 6d8, 8d8, 12d8.",
+  Description={
+    Format="Choose one of the creature's natural attack forms. The damage for this natural attack increases by one step on the following list, as if the creature's size had increased by one category. Damage dice increase as follows: 1d2, 1d3, 1d4, 1d6, 1d8, 2d6, 3d6, 4d6, 6d6, 8d6, 12d6. A weapon or attack that deals 1d10 points of damage increases as follows: 1d10, 2d8, 3d8, 4d8, 6d8, 8d8, 12d8.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4771,7 +4756,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.127",
   Conditions={
     function (character)
@@ -4786,7 +4770,9 @@ DefineAbility({
       return (character.Variables["(CL=Companion)"] >= 3)
     end,
   },
-  Description="You do not provoke an attack of opportunity when performing an overrun combat maneuver. In addition, you receive a +2 bonus on checks made to overrrun a foe. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to overrun you. Targets of your overrun attempt may not chose to avoid you.",
+  Description={
+    Format="You do not provoke an attack of opportunity when performing an overrun combat maneuver. In addition, you receive a +2 bonus on checks made to overrrun a foe. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to overrun you. Targets of your overrun attempt may not chose to avoid you.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4807,9 +4793,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.128",
-  Description="Add your Strength modifier to Intimidate skill checks in addition to your Charisma modifier.",
+  Description={
+    Format="Add your Strength modifier to Intimidate skill checks in addition to your Charisma modifier.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4830,9 +4817,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.129",
-  Description="You get a +2 bonus on all Will saving throws.",
+  Description={
+    Format="You get a +2 bonus on all Will saving throws.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4853,9 +4841,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.130",
-  Description="You get a +2 bonus on all Reflex saving throws.",
+  Description={
+    Format="You get a +2 bonus on all Reflex saving throws.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4876,7 +4865,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.130",
   Conditions={
     function (character)
@@ -4902,7 +4890,9 @@ DefineAbility({
       return count >= 1
     end,
   },
-  Description="You get a +4 dodge bonus to Armor Class against attacks of opportunity caused when you move out of or within a threatened area. A condition that makes you lose your Dexterity bonus to Armor Class (if any) also makes you lose dodge bonuses. Dodge bonuses stack with each other, unlike most types of bonuses.",
+  Description={
+    Format="You get a +4 dodge bonus to Armor Class against attacks of opportunity caused when you move out of or within a threatened area. A condition that makes you lose your Dexterity bonus to Armor Class (if any) also makes you lose dodge bonuses. Dodge bonuses stack with each other, unlike most types of bonuses.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4923,7 +4913,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.131",
   Conditions={
     function (character)
@@ -4933,7 +4922,13 @@ DefineAbility({
       return (character.Variables["(CL=Companion)"] >= 3)
     end,
   },
-  Description="You can choose to take a -%1 penalty on all melee attack rolls and combat maneuver checks to gain a +%2 bonus on all melee damage rolls. This bonus to damage is increased by half (+50%%) if you are making an attack with a two-handed weapon, a one handed weapon using two hands, or a primary natural weapon that adds 1-1/2 times your Strength modifier on damage rolls. This bonus to damage is halved (-50%%) if you are making an attack with an off-hand weapon or secondary natural weapon. You must choose to use this feat before making an attack roll, and its effects last until your next turn. The bonus damage does not apply to touch attacks or effects that do not deal hit point damage.|1+BAB/4|2*floor(1+BAB/4)",
+  Description={
+    Format="You can choose to take a -%1 penalty on all melee attack rolls and combat maneuver checks to gain a +%2 bonus on all melee damage rolls. This bonus to damage is increased by half (+50%%) if you are making an attack with a two-handed weapon, a one handed weapon using two hands, or a primary natural weapon that adds 1-1/2 times your Strength modifier on damage rolls. This bonus to damage is halved (-50%%) if you are making an attack with an off-hand weapon or secondary natural weapon. You must choose to use this feat before making an attack roll, and its effects last until your next turn. The bonus damage does not apply to touch attacks or effects that do not deal hit point damage.",
+    Arguments={
+      "1+BAB/4",
+      "2*floor(1+BAB/4)",
+    },
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4954,9 +4949,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.132",
-  Description="When running, you move five times your normal speed (if wearing medium, light, or no armor and carrying no more than a medium load) or four times your speed (if wearing heavy armor or carrying a heavy load). If you make a jump after a running start (see the Acrobatics skill description), you gain a +4 bonus on your Acrobatics check. While running, you retain your Dexterity bonus to your Armor Class.",
+  Description={
+    Format="When running, you move five times your normal speed (if wearing medium, light, or no armor and carrying no more than a medium load) or four times your speed (if wearing heavy armor or carrying a heavy load). If you make a jump after a running start (see the Acrobatics skill description), you gain a +4 bonus on your Acrobatics check. While running, you retain your Dexterity bonus to your Armor Class.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -4977,7 +4973,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseSkill(function (character, skill)
       return (skill.Type == "Charisma") or (skill.Type == "Dexterity") or (skill.Type == "Intelligence") or (skill.Type == "Strength") or (skill.Type == "Wisdom")
@@ -4985,7 +4980,9 @@ DefineAbility({
   },
   Selections="1",
   SourcePage="p.134",
-  Description="You get a +3 bonus on all checks involving the chosen skill. If you have 10 or more ranks in that skill, this bonus increases to +6.",
+  Description={
+    Format="You get a +3 bonus on all checks involving the chosen skill. If you have 10 or more ranks in that skill, this bonus increases to +6.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -5006,7 +5003,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.134",
   Conditions={
     function (character)
@@ -5035,7 +5031,9 @@ DefineAbility({
       return character.TotalAttackBonus >= 4
     end,
   },
-  Description="As a full round action, you can move up to your speed and make a single melee attack without provoking any attacks of opportunity from the target of your attack. You can move both before and after the attack, but you must move at least 10 feet before the attack and the total distance that you move cannot be greater than your speed. You cannot use this ability to attack a foe that is adjacent to you at the start of your turn.",
+  Description={
+    Format="As a full round action, you can move up to your speed and make a single melee attack without provoking any attacks of opportunity from the target of your attack. You can move both before and after the attack, but you must move at least 10 feet before the attack and the total distance that you move cannot be greater than your speed. You cannot use this ability to attack a foe that is adjacent to you at the start of your turn.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -5056,9 +5054,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.135",
-  Description="You get a +2 bonus on all Escape Artist and Stealth skill checks. If you have 10 or more ranks in one of these skills, the bonus increases to +4 for that skill.",
+  Description={
+    Format="You get a +2 bonus on all Escape Artist and Stealth skill checks. If you have 10 or more ranks in one of these skills, the bonus increases to +4 for that skill.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -5079,9 +5078,13 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.135",
-  Description="You gain +1 hit points whenever you gain a Hit Die (such as when you gain a level).|PREHD:MIN=3",
+  Description={
+    Format="You gain +1 hit points whenever you gain a Hit Die (such as when you gain a level).",
+    Arguments={
+      "PREHD:MIN=3",
+    },
+  },
   Abilities={
     {
       Category="FEAT",
@@ -5102,9 +5105,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.136",
-  Description="With a light weapon, rapier, whip, or spiked chain made for a creature of your size category, you may use your Dexterity modifier instead of your Strength modifier on attack rolls. If you carry a shield, its armor check penalty applies to your attack rolls.",
+  Description={
+    Format="With a light weapon, rapier, whip, or spiked chain made for a creature of your size category, you may use your Dexterity modifier instead of your Strength modifier on attack rolls. If you carry a shield, its armor check penalty applies to your attack rolls.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -5125,7 +5129,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseWeaponproficiency(function (character, weapon)
       return (character.IsProficientWith(weapon))
@@ -5157,14 +5160,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SortKey="1",
   Conditions={
     function (character)
       return (character.Variables["INTSCORE"] >= 3)
     end,
   },
-  Description="For Companions with Intelligence of 3+, you may select any regular feat (Will open the Normal Feats).",
+  Description={
+    Format="For Companions with Intelligence of 3+, you may select any regular feat (Will open the Normal Feats).",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -5185,9 +5189,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SortKey="1",
-  Description="GM Granted Feats, that are not included in the official list.",
+  Description={
+    Format="GM Granted Feats, that are not included in the official list.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",

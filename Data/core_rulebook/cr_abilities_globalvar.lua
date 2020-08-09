@@ -5,7 +5,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Dwarf_ReplaceAbilityScores",
@@ -33,7 +32,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Dwarf_ReplaceSize",
@@ -61,7 +59,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Dwarf_ReplaceSpeed",
@@ -89,7 +86,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Dwarf_ReplaceVision",
@@ -117,7 +113,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Dwarf_ReplaceDefensiveTraining",
@@ -145,7 +140,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Dwarf_ReplaceGreed",
@@ -173,7 +167,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Dwarf_ReplaceHatred",
@@ -201,7 +194,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Dwarf_ReplaceHardy",
@@ -229,7 +221,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Dwarf_ReplaceStability",
@@ -257,7 +248,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Dwarf_ReplaceStonecunning",
@@ -285,7 +275,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Dwarf_ReplaceWeaponFamiliarity",
@@ -313,7 +302,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Dwarf_ReplaceLanguages",
@@ -341,7 +329,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -365,7 +352,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -389,7 +375,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -413,7 +398,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -437,7 +421,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -461,7 +444,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -485,7 +467,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -509,7 +490,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -533,7 +513,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -557,7 +536,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -581,7 +559,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -603,7 +580,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -625,7 +601,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -647,7 +622,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -669,7 +643,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -691,7 +664,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -713,7 +685,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -735,7 +706,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -757,7 +727,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -779,7 +748,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -801,7 +769,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -823,7 +790,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -845,7 +811,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Elf_ReplaceAbilityScores",
@@ -873,7 +838,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Elf_ReplaceSize",
@@ -901,7 +865,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Elf_ReplaceSpeed",
@@ -929,7 +892,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Elf_ReplaceVision",
@@ -957,7 +919,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Elf_ReplaceElvenImmunities",
@@ -985,7 +946,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Elf_ReplaceElvenMagic",
@@ -1013,7 +973,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Elf_ReplaceKeenSenses",
@@ -1041,7 +1000,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Elf_ReplaceWeaponFamiliarity",
@@ -1069,7 +1027,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Elf_ReplaceLanguages",
@@ -1097,7 +1054,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1121,7 +1077,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1145,7 +1100,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1169,7 +1123,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1193,7 +1146,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1217,7 +1169,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1241,7 +1192,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1263,7 +1213,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1285,7 +1234,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1307,7 +1255,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1329,7 +1276,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1351,7 +1297,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1373,7 +1318,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1395,7 +1339,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1417,7 +1360,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1439,7 +1381,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Gnome_ReplaceAbilityScores",
@@ -1467,7 +1408,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Gnome_ReplaceSize",
@@ -1495,7 +1435,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Gnome_ReplaceSpeed",
@@ -1523,7 +1462,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Gnome_ReplaceVision",
@@ -1551,7 +1489,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Gnome_ReplaceDefensiveTraining",
@@ -1579,7 +1516,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Gnome_ReplaceGnomeMagic",
@@ -1607,7 +1543,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Gnome_ReplaceHatred",
@@ -1635,7 +1570,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Gnome_ReplaceIllusionResistance",
@@ -1663,7 +1597,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Gnome_ReplaceKeenSenses",
@@ -1691,7 +1624,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Gnome_ReplaceObsessive",
@@ -1719,7 +1651,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Gnome_ReplaceWeaponFamiliarity",
@@ -1747,7 +1678,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Gnome_ReplaceLanguages",
@@ -1775,7 +1705,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1799,7 +1728,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1823,7 +1751,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1847,7 +1774,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1871,7 +1797,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1895,7 +1820,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1919,7 +1843,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1943,7 +1866,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1967,7 +1889,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -1991,7 +1912,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2013,7 +1933,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2035,7 +1954,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2057,7 +1975,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2079,7 +1996,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2101,7 +2017,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2123,7 +2038,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2145,7 +2059,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2167,7 +2080,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2189,7 +2101,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2211,7 +2122,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2233,7 +2143,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2255,7 +2164,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfElf_ReplaceAbilityScores",
@@ -2283,7 +2191,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfElf_ReplaceSize",
@@ -2311,7 +2218,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfElf_ReplaceSpeed",
@@ -2339,7 +2245,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfElf_ReplaceVision",
@@ -2367,7 +2272,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfElf_ReplaceAdaptability",
@@ -2395,7 +2299,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfElf_ReplaceElfBlood",
@@ -2423,7 +2326,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfElf_ReplaceElvenImmunities",
@@ -2451,7 +2353,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfElf_ReplaceKeenSenses",
@@ -2479,7 +2380,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfElf_ReplaceMultitalented",
@@ -2507,7 +2407,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfElf_ReplaceLanguages",
@@ -2535,7 +2434,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2559,7 +2457,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2583,7 +2480,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2607,7 +2503,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2631,7 +2526,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2655,7 +2549,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2679,7 +2572,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2701,7 +2593,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2723,7 +2614,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2745,7 +2635,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2767,7 +2656,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2789,7 +2677,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2811,7 +2698,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2833,7 +2719,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2855,7 +2740,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2877,7 +2761,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -2899,7 +2782,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfOrc_ReplaceAbilityScores",
@@ -2927,7 +2809,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfOrc_ReplaceSize",
@@ -2955,7 +2836,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfOrc_ReplaceSpeed",
@@ -2983,7 +2863,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfOrc_ReplaceVision",
@@ -3011,7 +2890,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfOrc_ReplaceIntimidating",
@@ -3039,7 +2917,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfOrc_ReplaceOrcBlood",
@@ -3067,7 +2944,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfOrc_ReplaceOrcFerocity",
@@ -3095,7 +2971,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfOrc_ReplaceWeaponFamiliarity",
@@ -3123,7 +2998,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="HalfOrc_ReplaceLanguages",
@@ -3151,7 +3025,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3175,7 +3048,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3199,7 +3071,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3223,7 +3094,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3247,7 +3117,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3271,7 +3140,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3293,7 +3161,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3315,7 +3182,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3337,7 +3203,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3359,7 +3224,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3381,7 +3245,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3403,7 +3266,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3425,7 +3287,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3447,7 +3308,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3469,7 +3329,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Halfling_ReplaceAbilityScores",
@@ -3497,7 +3356,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Halfling_ReplaceSize",
@@ -3525,7 +3383,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Halfling_ReplaceSpeed",
@@ -3553,7 +3410,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Halfling_ReplaceFearless",
@@ -3581,7 +3437,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Halfling_ReplaceHalflingLuck",
@@ -3609,7 +3464,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Halfling_ReplaceKeenSenses",
@@ -3637,7 +3491,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Halfling_ReplaceSureFooted",
@@ -3665,7 +3518,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Halfling_ReplaceWeaponFamiliarity",
@@ -3693,7 +3545,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Halfling_ReplaceLanguages",
@@ -3721,7 +3572,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3745,7 +3595,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3769,7 +3618,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3793,7 +3641,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3817,7 +3664,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3841,7 +3687,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3865,7 +3710,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3887,7 +3731,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3909,7 +3752,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3931,7 +3773,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3953,7 +3794,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3975,7 +3815,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -3997,7 +3836,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4019,7 +3857,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4041,7 +3878,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4063,7 +3899,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Human_ReplaceAbilityScores",
@@ -4091,7 +3926,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Human_ReplaceSize",
@@ -4119,7 +3953,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Human_ReplaceSpeed",
@@ -4147,7 +3980,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Human_ReplaceBonusFeat",
@@ -4175,7 +4007,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Human_ReplaceSkilled",
@@ -4203,7 +4034,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Human_ReplaceLanguages",
@@ -4231,7 +4061,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4255,7 +4084,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4279,7 +4107,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4303,7 +4130,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4325,7 +4151,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4347,7 +4172,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4369,7 +4193,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4391,7 +4214,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4413,7 +4235,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4435,7 +4256,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_Rage",
@@ -4449,7 +4269,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_FastMovement",
@@ -4463,7 +4282,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_RagePowers",
@@ -4477,7 +4295,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_RagePower2",
@@ -4491,7 +4308,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_RagePower4",
@@ -4505,7 +4321,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_RagePower6",
@@ -4519,7 +4334,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_RagePower8",
@@ -4533,7 +4347,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_RagePower10",
@@ -4547,7 +4360,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_RagePower12",
@@ -4561,7 +4373,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_RagePower14",
@@ -4575,7 +4386,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_RagePower16",
@@ -4589,7 +4399,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_RagePower18",
@@ -4603,7 +4412,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_RagePower20",
@@ -4617,7 +4425,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_TrapSense",
@@ -4631,7 +4438,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_TrapSense1",
@@ -4645,7 +4451,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_TrapSense2",
@@ -4659,7 +4464,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_TrapSense3",
@@ -4673,7 +4477,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_TrapSense4",
@@ -4687,7 +4490,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_TrapSense5",
@@ -4701,7 +4503,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_TrapSense6",
@@ -4715,7 +4516,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_DamageReduction",
@@ -4729,7 +4529,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_DamageReduction1",
@@ -4743,7 +4542,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_DamageReduction2",
@@ -4757,7 +4555,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_DamageReduction3",
@@ -4771,7 +4568,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_DamageReduction4",
@@ -4785,7 +4581,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_DamageReduction5",
@@ -4799,7 +4594,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_GreaterRage",
@@ -4813,7 +4607,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_IndomitableWill",
@@ -4827,7 +4620,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_TirelessRage",
@@ -4841,7 +4633,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_MightyRage",
@@ -4855,7 +4646,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_Proficiencies",
@@ -4869,7 +4659,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_UncannyDodge",
@@ -4883,7 +4672,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_ImprovedUncannyDodge",
@@ -4897,7 +4685,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_ClassSkills",
@@ -4911,7 +4698,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_WeaponProficiencies",
@@ -4925,7 +4711,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Barbarian_CF_ArmorProficiencies",
@@ -4939,7 +4724,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4961,7 +4745,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4983,7 +4766,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5005,7 +4787,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5027,7 +4808,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5049,7 +4829,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5071,7 +4850,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5093,7 +4871,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5115,7 +4892,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5137,7 +4913,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5159,7 +4934,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5181,7 +4955,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5203,7 +4976,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5225,7 +4997,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5247,7 +5018,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5269,7 +5039,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5291,7 +5060,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5313,7 +5081,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5335,7 +5102,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5357,7 +5123,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5379,7 +5144,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5401,7 +5165,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5423,7 +5186,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5445,7 +5207,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5467,7 +5228,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5489,7 +5249,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5511,7 +5270,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5533,7 +5291,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5555,7 +5312,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5577,7 +5333,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5599,7 +5354,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5621,7 +5375,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5643,7 +5396,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5665,7 +5417,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5687,7 +5438,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5709,7 +5459,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5731,7 +5480,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5753,7 +5501,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5775,7 +5522,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5799,7 +5545,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5823,7 +5568,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5847,7 +5591,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5871,7 +5614,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5895,7 +5637,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5919,7 +5660,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5943,7 +5683,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5967,7 +5706,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5991,7 +5729,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6015,7 +5752,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6039,7 +5775,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6063,7 +5798,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6087,7 +5821,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6111,7 +5844,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6135,7 +5867,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6159,7 +5890,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6183,7 +5913,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6207,7 +5936,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6231,7 +5959,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6255,7 +5982,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6279,7 +6005,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6303,7 +6028,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6327,7 +6051,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6351,7 +6074,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6375,7 +6097,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6399,7 +6120,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6423,7 +6143,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6447,7 +6166,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6471,7 +6189,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6495,7 +6212,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6519,7 +6235,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6543,7 +6258,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6567,7 +6281,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6591,7 +6304,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6615,7 +6327,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -6639,7 +6350,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Bard Class Feature",
@@ -6661,7 +6371,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -6686,7 +6395,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -6711,7 +6419,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
 })
 
 ModifyAbility({
@@ -6719,7 +6426,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_BardicKnowledge",
@@ -6733,7 +6439,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_CounterSong",
@@ -6747,7 +6452,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_BardicPerformance",
@@ -6761,7 +6465,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_ArmoredCasting",
@@ -6775,7 +6478,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_Cantrips",
@@ -6789,7 +6491,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_VersatilePerformance",
@@ -6803,7 +6504,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_WellVersed",
@@ -6817,7 +6517,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_LoreMaster",
@@ -6831,7 +6530,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_JackOfAllTrades",
@@ -6845,7 +6543,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_ClassSkills",
@@ -6859,7 +6556,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_Proficiencies",
@@ -6873,7 +6569,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_BardDistraction",
@@ -6887,7 +6582,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_Fascinate",
@@ -6901,7 +6595,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_InspireCourage",
@@ -6915,7 +6608,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_InspireCompetence",
@@ -6929,7 +6621,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_Suggestion",
@@ -6943,7 +6634,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_DirgeOfDoom",
@@ -6957,7 +6647,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_InspireGreatness",
@@ -6971,7 +6660,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_SoothingPerformance",
@@ -6985,7 +6673,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_FrighteningTune",
@@ -6999,7 +6686,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_InspireHeroics",
@@ -7013,7 +6699,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_MassSuggestion",
@@ -7027,7 +6712,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_DeadlyPerformance",
@@ -7041,7 +6725,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_InspireCourage1",
@@ -7055,7 +6738,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_InspireCourage2",
@@ -7069,7 +6751,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_InspireCourage3",
@@ -7083,7 +6764,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_InspireCourage4",
@@ -7097,7 +6777,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_InspireCompetence1",
@@ -7111,7 +6790,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_InspireCompetence2",
@@ -7125,7 +6803,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_InspireCompetence3",
@@ -7139,7 +6816,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_InspireCompetence4",
@@ -7153,7 +6829,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_InspireCompetence5",
@@ -7167,7 +6842,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Bard_CF_InspireCompetence6",
@@ -7181,7 +6855,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7203,7 +6876,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7225,7 +6897,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7247,7 +6918,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7269,7 +6939,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7291,7 +6960,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7313,7 +6981,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7335,7 +7002,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7357,7 +7023,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7379,7 +7044,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7401,7 +7065,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7423,7 +7086,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7445,7 +7107,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7467,7 +7128,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7489,7 +7149,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7511,7 +7170,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7533,7 +7191,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7555,7 +7212,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7577,7 +7233,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7599,7 +7254,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7621,7 +7275,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7643,7 +7296,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7665,7 +7317,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7687,7 +7338,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7709,7 +7359,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7731,7 +7380,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7753,7 +7401,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7775,7 +7422,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7797,7 +7443,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7819,7 +7464,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7841,7 +7485,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7863,7 +7506,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7885,7 +7527,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7907,7 +7548,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7931,7 +7571,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7955,7 +7594,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -7979,7 +7617,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8003,7 +7640,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8027,7 +7663,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8051,7 +7686,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8075,7 +7709,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8099,7 +7732,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8123,7 +7755,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8147,7 +7778,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8171,7 +7801,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8195,7 +7824,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy",
@@ -8209,7 +7837,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_Orisons",
@@ -8223,7 +7850,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_SpontaneousCasting",
@@ -8237,7 +7863,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_Proficiencies",
@@ -8251,7 +7876,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_ArmorProficiencies",
@@ -8265,7 +7889,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_WeaponProficiencies",
@@ -8279,7 +7902,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_Domains",
@@ -8293,7 +7915,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_ArmorProficiency",
@@ -8307,7 +7928,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_WeaponProficiency",
@@ -8321,7 +7941,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_ClassSkills",
@@ -8335,7 +7954,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_SkillRanks",
@@ -8349,7 +7967,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_Spellcasting",
@@ -8363,7 +7980,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy1",
@@ -8377,7 +7993,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy2",
@@ -8391,7 +8006,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy3",
@@ -8405,7 +8019,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy4",
@@ -8419,7 +8032,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy5",
@@ -8433,7 +8045,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy6",
@@ -8447,7 +8058,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy7",
@@ -8461,7 +8071,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy8",
@@ -8475,7 +8084,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy9",
@@ -8489,7 +8097,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy10",
@@ -8503,7 +8110,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8525,7 +8131,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8547,7 +8152,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8569,7 +8173,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8591,7 +8194,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8613,7 +8215,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8635,7 +8236,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8657,7 +8257,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8679,7 +8278,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8701,7 +8299,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8723,7 +8320,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8745,7 +8341,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8767,7 +8362,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8789,7 +8383,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8811,7 +8404,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8833,7 +8425,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8855,7 +8446,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8877,7 +8467,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8899,7 +8488,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8921,7 +8509,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8943,7 +8530,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8965,7 +8551,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -8987,7 +8572,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9011,7 +8595,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9035,7 +8618,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9059,7 +8641,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Druid Class Feature",
@@ -9088,7 +8669,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -9118,7 +8698,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -9145,7 +8724,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_ArmorProficiencies",
@@ -9159,7 +8737,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WeaponProficiencies",
@@ -9173,7 +8750,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_SpontaneousCasting",
@@ -9187,7 +8763,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_NatureSense",
@@ -9201,7 +8776,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildEmpathy",
@@ -9215,7 +8789,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WoodlandStride",
@@ -9229,7 +8802,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_TracklessStep",
@@ -9243,7 +8815,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildShape",
@@ -9257,7 +8828,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_ResistNaturesLure",
@@ -9271,7 +8841,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_VenomImmunity",
@@ -9285,7 +8854,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_AThousandFaces",
@@ -9299,7 +8867,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_TimelessBody",
@@ -9313,7 +8880,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_NatureBond",
@@ -9327,7 +8893,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_ClassSkills",
@@ -9341,7 +8906,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildShapeUses4",
@@ -9355,7 +8919,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildShapeUses6",
@@ -9369,7 +8932,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildShapeUses8",
@@ -9383,7 +8945,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildShapeUses10",
@@ -9397,7 +8958,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildShapeUses12",
@@ -9411,7 +8971,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildShapeUses14",
@@ -9425,7 +8984,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildShapeUses16",
@@ -9439,7 +8997,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildShapeUses18",
@@ -9453,7 +9010,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildShapeUses20",
@@ -9467,7 +9023,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildShapeOptions4",
@@ -9481,7 +9036,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildShapeOptions6",
@@ -9495,7 +9049,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildShapeOptions8",
@@ -9509,7 +9062,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildShapeOptions10",
@@ -9523,7 +9075,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_WildShapeOptions12",
@@ -9537,7 +9088,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_DruidDomain",
@@ -9551,7 +9101,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Druid_CF_AnimalCompanion",
@@ -9565,7 +9114,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9587,7 +9135,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9609,7 +9156,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9631,7 +9177,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9653,7 +9198,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9675,7 +9219,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9697,7 +9240,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9719,7 +9261,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9741,7 +9282,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9763,7 +9303,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9785,7 +9324,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9807,7 +9345,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9829,7 +9366,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9851,7 +9387,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9873,7 +9408,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9895,7 +9429,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9917,7 +9450,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9939,7 +9471,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9961,7 +9492,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -9983,7 +9513,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10005,7 +9534,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10027,7 +9555,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10049,7 +9576,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10071,7 +9597,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10093,7 +9618,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10115,7 +9639,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10137,7 +9660,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10159,7 +9681,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10181,7 +9702,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10203,7 +9723,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10227,7 +9746,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10251,7 +9769,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10275,7 +9792,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10299,7 +9815,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10323,7 +9838,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10347,7 +9861,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10371,7 +9884,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10395,7 +9907,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10419,7 +9930,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10443,7 +9953,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10465,7 +9974,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10489,7 +9997,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10513,7 +10020,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_ClassSkills",
@@ -10527,7 +10033,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_BonusFeats",
@@ -10541,7 +10046,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_Bravery",
@@ -10555,7 +10059,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_ArmorTraining",
@@ -10569,7 +10072,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_WeaponTraining",
@@ -10583,7 +10085,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_WeaponTraining1",
@@ -10597,7 +10098,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_WeaponTraining2",
@@ -10611,7 +10111,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_WeaponTraining3",
@@ -10625,7 +10124,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_WeaponTraining4",
@@ -10639,7 +10137,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_ArmorMastery",
@@ -10653,7 +10150,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_WeaponMastery",
@@ -10667,7 +10163,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_ArmorTraining1",
@@ -10681,7 +10176,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_ArmorTraining2",
@@ -10695,7 +10189,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_ArmorTraining3",
@@ -10709,7 +10202,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_ArmorTraining4",
@@ -10723,7 +10215,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_BonusFeat1",
@@ -10737,7 +10228,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_BonusFeat2",
@@ -10751,7 +10241,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_BonusFeat4",
@@ -10765,7 +10254,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_BonusFeat6",
@@ -10779,7 +10267,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_BonusFeat8",
@@ -10793,7 +10280,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_BonusFeat10",
@@ -10807,7 +10293,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_BonusFeat12",
@@ -10821,7 +10306,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_BonusFeat14",
@@ -10835,7 +10319,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_BonusFeat16",
@@ -10849,7 +10332,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_BonusFeat18",
@@ -10863,7 +10345,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_BonusFeat20",
@@ -10877,7 +10358,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_TowerShieldProficiency",
@@ -10891,7 +10371,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_ArmorProficiencies",
@@ -10905,7 +10384,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_Proficiencies",
@@ -10919,7 +10397,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_LightArmorProficiency",
@@ -10933,7 +10410,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_MediumArmorProficiency",
@@ -10947,7 +10423,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_HeavyArmorProficiency",
@@ -10961,7 +10436,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Fighter_CF_ShieldProficiency",
@@ -10975,7 +10449,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -10997,7 +10470,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11019,7 +10491,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11041,7 +10512,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11063,7 +10533,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11085,7 +10554,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11107,7 +10575,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11129,7 +10596,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11151,7 +10617,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11173,7 +10638,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11195,7 +10659,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11217,7 +10680,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11239,7 +10701,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11261,7 +10722,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11283,7 +10743,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11305,7 +10764,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11327,7 +10785,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11349,7 +10806,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11371,7 +10827,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11393,7 +10848,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11415,7 +10869,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11437,7 +10890,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11459,7 +10911,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11481,7 +10932,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11503,7 +10953,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11525,7 +10974,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11547,7 +10995,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11569,7 +11016,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11591,7 +11037,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11613,7 +11058,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11635,7 +11079,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11657,7 +11100,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11679,7 +11121,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11701,7 +11142,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11725,7 +11165,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11749,7 +11188,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11773,7 +11211,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11797,7 +11234,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11821,7 +11257,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11845,7 +11280,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11869,7 +11303,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11893,7 +11326,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11917,7 +11349,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11941,7 +11372,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11965,7 +11395,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -11989,7 +11418,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12013,7 +11441,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12037,7 +11464,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12061,7 +11487,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12085,7 +11510,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12109,7 +11533,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12133,7 +11556,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12157,7 +11579,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12181,7 +11602,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12205,7 +11625,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_UnarmedStrike",
@@ -12219,7 +11638,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_FlurryOfBlows",
@@ -12233,7 +11651,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_BonusFeats",
@@ -12247,7 +11664,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_ACBonus",
@@ -12261,7 +11677,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_StunningFist",
@@ -12275,7 +11690,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_Evasion",
@@ -12289,7 +11703,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_FastMovement",
@@ -12303,7 +11716,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_ManeuverTraining",
@@ -12317,7 +11729,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_StillMind",
@@ -12331,7 +11742,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_KiPool",
@@ -12345,7 +11755,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_SlowFall",
@@ -12359,7 +11768,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_HighJump",
@@ -12373,7 +11781,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_PurityOfBody",
@@ -12387,7 +11794,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_WholenessOfBody",
@@ -12401,7 +11807,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_ImprovedEvasion",
@@ -12415,7 +11820,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_DiamondBody",
@@ -12429,7 +11833,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_AbundantStep",
@@ -12443,7 +11846,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_DiamondSoul",
@@ -12457,7 +11859,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_QuiveringPalm",
@@ -12471,7 +11872,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_TongueOfTheSunAndMoon",
@@ -12485,7 +11885,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_TimelessBody",
@@ -12499,7 +11898,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_EmptyBody",
@@ -12513,7 +11911,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_PerfectSelf",
@@ -12527,7 +11924,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_Proficiencies",
@@ -12541,7 +11937,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_ClassSkills",
@@ -12555,7 +11950,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_WeaponProficiencies",
@@ -12569,7 +11963,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_BonusFeat18",
@@ -12583,7 +11976,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_BonusFeat10",
@@ -12597,7 +11989,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_BonusFeat6",
@@ -12611,7 +12002,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_BonusFeat2",
@@ -12625,7 +12015,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_BonusFeat1",
@@ -12639,7 +12028,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_Alignment",
@@ -12653,7 +12041,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_SlowFall10",
@@ -12667,7 +12054,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_SlowFall20",
@@ -12681,7 +12067,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_SlowFall30",
@@ -12695,7 +12080,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_SlowFall40",
@@ -12709,7 +12093,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_SlowFall50",
@@ -12723,7 +12106,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_SlowFall60",
@@ -12737,7 +12119,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_SlowFall70",
@@ -12751,7 +12132,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_SlowFall80",
@@ -12765,7 +12145,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_SlowFall90",
@@ -12779,7 +12158,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_KiPoolAbilities1",
@@ -12793,7 +12171,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_KiPoolAbilities7",
@@ -12807,7 +12184,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_KiPoolAbilities10",
@@ -12821,7 +12197,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Monk_CF_KiPoolAbilities16",
@@ -12835,7 +12210,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12857,7 +12231,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12879,7 +12252,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12901,7 +12273,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12923,7 +12294,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12945,7 +12315,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12967,7 +12336,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -12989,7 +12357,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13011,7 +12378,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13033,7 +12399,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13055,7 +12420,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13077,7 +12441,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13099,7 +12462,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13121,7 +12483,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13143,7 +12504,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13165,7 +12525,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13187,7 +12546,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13209,7 +12567,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13231,7 +12588,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13253,7 +12609,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13275,7 +12630,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
 })
 
 ModifyAbility({
@@ -13283,7 +12637,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -13305,7 +12658,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -13327,7 +12679,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13349,7 +12700,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13371,7 +12721,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13393,7 +12742,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13415,7 +12763,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13437,7 +12784,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13459,7 +12805,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13481,7 +12826,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13503,7 +12847,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13525,7 +12868,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13547,7 +12889,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13569,7 +12910,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13591,7 +12931,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13613,7 +12952,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13635,7 +12973,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13657,7 +12994,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13679,7 +13015,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13701,7 +13036,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13723,7 +13057,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13745,7 +13078,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13767,7 +13099,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13789,7 +13120,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13811,7 +13141,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13833,7 +13162,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13855,7 +13183,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13877,7 +13204,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13901,7 +13227,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13925,7 +13250,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13949,7 +13273,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13973,7 +13296,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -13997,7 +13319,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14021,7 +13342,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14045,7 +13365,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14069,7 +13388,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14093,7 +13411,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14117,7 +13434,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14141,7 +13457,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14165,7 +13480,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14189,7 +13503,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14213,7 +13526,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14237,7 +13549,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14261,7 +13572,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14285,7 +13595,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14309,7 +13618,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14333,7 +13641,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14357,7 +13664,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14381,7 +13687,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14405,7 +13710,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14429,7 +13733,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -14453,7 +13756,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_ClassSkills",
@@ -14467,7 +13769,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_WeaponProficiencies",
@@ -14481,7 +13782,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_WeaponProficiencySimple",
@@ -14495,7 +13795,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_WeaponProficiencyMartial",
@@ -14509,7 +13808,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_ArmorProficiencies",
@@ -14523,7 +13821,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_ArmorProficiencyHeavy",
@@ -14537,7 +13834,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_ArmorProficiencyMedium",
@@ -14551,7 +13847,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_ArmorProficiencyLight",
@@ -14565,7 +13860,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_ShieldProficiency",
@@ -14579,7 +13873,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_AuraOfGood",
@@ -14593,7 +13886,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_DetectEvil",
@@ -14607,7 +13899,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_SmiteEvil",
@@ -14621,7 +13912,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_DivineGrace",
@@ -14635,7 +13925,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_LayOnHands",
@@ -14649,7 +13938,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_AuraOfCourage",
@@ -14663,7 +13951,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_DivineHealth",
@@ -14677,7 +13964,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_Mercy",
@@ -14691,7 +13977,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_Mercy3",
@@ -14705,7 +13990,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_Mercy6",
@@ -14719,7 +14003,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_Mercy9",
@@ -14733,7 +14016,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_Mercy12",
@@ -14747,7 +14029,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_Mercy15",
@@ -14761,7 +14042,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_Mercy18",
@@ -14775,7 +14055,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_ChannelPositiveEnergy",
@@ -14789,7 +14068,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_Spells",
@@ -14803,7 +14081,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_DivineBond",
@@ -14817,7 +14094,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_BondedMount",
@@ -14831,7 +14107,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_BondedWeapon",
@@ -14845,7 +14120,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_AuraOfResolve",
@@ -14859,7 +14133,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_AuraOfJustice",
@@ -14873,7 +14146,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_AuraOfFaith",
@@ -14887,7 +14159,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_AuraOfRighteousness",
@@ -14901,7 +14172,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_HolyChampion",
@@ -14915,7 +14185,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Paladin_CF_CodeOfConduct",
@@ -14929,7 +14198,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="AllowHolyAvenger",
@@ -14997,7 +14265,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15019,7 +14286,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15041,7 +14307,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15064,7 +14329,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15086,7 +14350,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15108,7 +14371,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15130,7 +14392,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15154,7 +14415,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15176,7 +14436,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15198,7 +14457,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15220,7 +14478,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15242,7 +14499,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15264,7 +14520,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15286,7 +14541,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15308,7 +14562,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15330,7 +14583,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15352,7 +14604,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15374,7 +14625,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15396,7 +14646,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15418,7 +14667,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15440,7 +14688,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15462,7 +14709,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15484,7 +14730,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15506,7 +14751,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15528,7 +14772,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15550,7 +14793,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15572,7 +14814,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15594,7 +14835,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15616,7 +14856,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15638,7 +14877,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15660,7 +14898,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15682,7 +14919,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15704,7 +14940,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15726,7 +14961,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15748,7 +14982,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15770,7 +15003,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15792,7 +15024,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15816,7 +15047,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15840,7 +15070,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15864,7 +15093,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15888,7 +15116,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15912,7 +15139,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15936,7 +15162,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15960,7 +15185,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -15984,7 +15208,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16008,7 +15231,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16032,7 +15254,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16056,7 +15277,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16080,7 +15300,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16104,7 +15323,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16128,7 +15346,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16152,7 +15369,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -16174,7 +15390,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -16197,7 +15412,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -16219,7 +15433,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -16241,7 +15454,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -16263,7 +15475,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_Proficiencies",
@@ -16277,7 +15488,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_WeaponProficiencies",
@@ -16291,7 +15501,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_LightArmorProficiency",
@@ -16305,7 +15514,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_MediumArmorProficiency",
@@ -16319,7 +15527,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_ShieldProficiency",
@@ -16333,7 +15540,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_HuntersBond",
@@ -16347,7 +15553,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_FavoredEnemy",
@@ -16361,7 +15566,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_FavoredTerrain",
@@ -16375,7 +15579,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_Track",
@@ -16389,7 +15592,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_WildEmpathy",
@@ -16403,7 +15605,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_CombatStyleFeat",
@@ -16417,7 +15618,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_WoodlandStride",
@@ -16431,7 +15631,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_SwiftTracker",
@@ -16445,7 +15644,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_Evasion",
@@ -16459,7 +15657,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_Quarry",
@@ -16473,7 +15670,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_Camouflage",
@@ -16487,7 +15683,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_Evasion",
@@ -16501,7 +15696,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_HideInPlainSight",
@@ -16515,7 +15709,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_Quarry",
@@ -16529,7 +15722,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_MasterHunter",
@@ -16543,7 +15735,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_Endurance",
@@ -16557,7 +15748,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_ImprovedEvasion",
@@ -16571,7 +15761,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_ImprovedQuarry",
@@ -16585,7 +15774,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_CombatStyleFeat2",
@@ -16599,7 +15787,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_CombatStyleFeat6",
@@ -16613,7 +15800,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_CombatStyleFeat10",
@@ -16627,7 +15813,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_CombatStyleFeat14",
@@ -16641,7 +15826,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_CombatStyleFeat18",
@@ -16655,7 +15839,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_FavoredEnemy1",
@@ -16669,7 +15852,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_FavoredEnemy2",
@@ -16683,7 +15865,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_FavoredEnemy3",
@@ -16697,7 +15878,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_FavoredEnemy4",
@@ -16711,7 +15891,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_AnimalCompanion",
@@ -16725,7 +15904,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Ranger_CF_ClassSkills",
@@ -16739,7 +15917,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16761,7 +15938,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16783,7 +15959,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16805,7 +15980,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16827,7 +16001,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16849,7 +16022,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16871,7 +16043,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16893,7 +16064,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16915,7 +16085,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16937,7 +16106,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16959,7 +16127,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -16981,7 +16148,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17003,7 +16169,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17025,7 +16190,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17047,7 +16211,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17069,7 +16232,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17091,7 +16253,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17113,7 +16274,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17135,7 +16295,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17157,7 +16316,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17179,7 +16337,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17201,7 +16358,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17223,7 +16379,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17245,7 +16400,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17267,7 +16421,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17289,7 +16442,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17311,7 +16463,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17333,7 +16484,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17355,7 +16505,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17377,7 +16526,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17399,7 +16547,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17421,7 +16568,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17443,7 +16589,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17465,7 +16610,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17487,7 +16631,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17511,7 +16654,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17535,7 +16677,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17559,7 +16700,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17583,7 +16723,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17607,7 +16746,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17631,7 +16769,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17655,7 +16792,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17679,7 +16815,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17703,7 +16838,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17727,7 +16861,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17751,7 +16884,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17775,7 +16907,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17799,7 +16930,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17823,7 +16953,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17847,7 +16976,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17871,7 +16999,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17895,7 +17022,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17919,7 +17045,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17943,7 +17068,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17967,7 +17091,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -17991,7 +17114,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18015,7 +17137,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18039,7 +17160,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18063,7 +17183,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18087,7 +17206,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_UncannyDodge",
@@ -18101,7 +17219,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_ImprovedUncannyDodge",
@@ -18115,7 +17232,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_SneakAttack",
@@ -18129,7 +17245,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_Trapfinding",
@@ -18143,7 +17258,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_Evasion",
@@ -18157,7 +17271,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_RogueTalents",
@@ -18171,7 +17284,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_TrapSense",
@@ -18185,7 +17297,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_MasterStrike",
@@ -18199,7 +17310,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_ClassSkills",
@@ -18213,7 +17323,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_WeaponProficiencies",
@@ -18227,7 +17336,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_ArmorProficiencies",
@@ -18241,7 +17349,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_TrapSense1",
@@ -18255,7 +17362,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_TrapSense2",
@@ -18269,7 +17375,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_TrapSense3",
@@ -18283,7 +17388,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_TrapSense4",
@@ -18297,7 +17401,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_TrapSense5",
@@ -18311,7 +17414,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_TrapSense6",
@@ -18325,7 +17427,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_AdvancedTalents",
@@ -18339,7 +17440,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_RogueTalent2",
@@ -18353,7 +17453,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_RogueTalent4",
@@ -18367,7 +17466,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_RogueTalent6",
@@ -18381,7 +17479,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_RogueTalent8",
@@ -18395,7 +17492,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_RogueTalent10",
@@ -18409,7 +17505,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_RogueTalent12",
@@ -18423,7 +17518,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_RogueTalent14",
@@ -18437,7 +17531,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_RogueTalent16",
@@ -18451,7 +17544,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_RogueTalent18",
@@ -18465,7 +17557,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_RogueTalent20",
@@ -18479,7 +17570,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_SneakAttack1",
@@ -18493,7 +17583,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_SneakAttack3",
@@ -18507,7 +17596,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_SneakAttack5",
@@ -18521,7 +17609,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_SneakAttack7",
@@ -18535,7 +17622,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_SneakAttack9",
@@ -18549,7 +17635,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_SneakAttack11",
@@ -18563,7 +17648,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_SneakAttack13",
@@ -18577,7 +17661,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_SneakAttack15",
@@ -18591,7 +17674,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_SneakAttack17",
@@ -18605,7 +17687,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Rogue_CF_SneakAttack19",
@@ -18619,7 +17700,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18641,7 +17721,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18663,7 +17742,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18685,7 +17763,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18707,7 +17784,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18729,7 +17805,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18751,7 +17826,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18773,7 +17847,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18795,7 +17868,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18817,7 +17889,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18839,7 +17910,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18861,7 +17931,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18883,7 +17952,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18905,7 +17973,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18927,7 +17994,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18949,7 +18015,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18971,7 +18036,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -18993,7 +18057,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19015,7 +18078,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19037,7 +18099,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19059,7 +18120,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19081,7 +18141,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19103,7 +18162,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19125,7 +18183,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19147,7 +18204,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19169,7 +18225,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19191,7 +18246,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19213,7 +18267,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19235,7 +18288,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19257,7 +18309,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19279,7 +18330,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19301,7 +18351,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19323,7 +18372,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19345,7 +18393,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19367,7 +18414,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19389,7 +18435,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19411,7 +18456,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19433,7 +18477,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19455,7 +18498,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19479,7 +18521,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19503,7 +18544,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19527,7 +18567,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19551,7 +18590,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19575,7 +18613,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19599,7 +18636,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19623,7 +18659,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19647,7 +18682,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19671,7 +18705,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19695,7 +18728,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19719,7 +18751,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19743,7 +18774,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19767,7 +18797,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19791,7 +18820,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19815,7 +18843,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19839,7 +18866,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19863,7 +18889,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -19887,7 +18912,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_ClassSkills",
@@ -19901,7 +18925,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_WeaponProficiencies",
@@ -19915,7 +18938,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_Spells",
@@ -19929,7 +18951,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_Bloodline",
@@ -19943,7 +18964,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_Cantrips",
@@ -19957,7 +18977,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_EschewMaterials",
@@ -19971,7 +18990,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineClassSkill",
@@ -19985,7 +19003,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineArcana",
@@ -19999,7 +19016,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlinePowers",
@@ -20013,7 +19029,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlinePower1",
@@ -20027,7 +19042,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlinePower3",
@@ -20041,7 +19055,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlinePower9",
@@ -20055,7 +19068,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlinePower15",
@@ -20069,7 +19081,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlinePower20",
@@ -20083,7 +19094,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineFeats",
@@ -20097,7 +19107,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpells",
@@ -20111,7 +19120,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell1",
@@ -20125,7 +19133,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell2",
@@ -20139,7 +19146,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell3",
@@ -20153,7 +19159,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell4",
@@ -20167,7 +19172,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell5",
@@ -20181,7 +19185,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell6",
@@ -20195,7 +19198,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell7",
@@ -20209,7 +19211,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell8",
@@ -20223,7 +19224,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell9",
@@ -20237,7 +19237,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20259,7 +19258,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20281,7 +19279,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20303,7 +19300,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20325,7 +19321,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20347,7 +19342,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20369,7 +19363,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20391,7 +19384,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20413,7 +19405,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20435,7 +19426,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20457,7 +19447,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20479,7 +19468,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20501,7 +19489,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20523,7 +19510,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20545,7 +19531,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20567,7 +19552,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20589,7 +19573,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20611,7 +19594,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20633,7 +19615,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20655,7 +19636,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20677,7 +19657,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20699,7 +19678,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20721,7 +19699,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20743,7 +19720,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20765,7 +19741,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20787,7 +19762,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20811,7 +19785,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -20835,7 +19808,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_ClassSkills",
@@ -20849,7 +19821,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_ArcaneSchool",
@@ -20863,7 +19834,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_WeaponProficiencies",
@@ -20877,7 +19847,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_Spells",
@@ -20891,7 +19860,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_BonusLanguages",
@@ -20905,7 +19873,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_ScribeScroll",
@@ -20919,7 +19886,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_ArcaneBond",
@@ -20933,7 +19899,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_Cantrips",
@@ -20947,7 +19912,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_BonusFeats",
@@ -20961,7 +19925,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_SpellBook",
@@ -20975,7 +19938,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_Familiar",
@@ -20989,7 +19951,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_BondedObject",
@@ -21003,7 +19964,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_BonusFeat5",
@@ -21017,7 +19977,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_BonusFeat10",
@@ -21031,7 +19990,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_BonusFeat15",
@@ -21045,7 +20003,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_BonusFeat20",
@@ -21059,7 +20016,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21081,7 +20037,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21103,7 +20058,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21125,7 +20079,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21147,7 +20100,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21169,7 +20121,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21191,7 +20142,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21213,7 +20163,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21235,7 +20184,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21257,7 +20205,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21279,7 +20226,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21301,7 +20247,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21323,7 +20268,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21345,7 +20289,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21367,7 +20310,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21389,7 +20331,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21411,7 +20352,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21435,7 +20375,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21459,7 +20398,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21483,7 +20421,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21507,7 +20444,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21531,7 +20467,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21555,7 +20490,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21579,7 +20513,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21603,7 +20536,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21627,7 +20559,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21651,7 +20582,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21675,7 +20605,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21697,7 +20626,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21719,7 +20647,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21741,7 +20668,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21763,7 +20689,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21785,7 +20710,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21807,7 +20731,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21829,7 +20752,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21851,7 +20773,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21873,7 +20794,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21895,7 +20815,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21917,7 +20836,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21939,7 +20857,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21961,7 +20878,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -21983,7 +20899,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22005,7 +20920,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22027,7 +20941,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22049,7 +20962,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22071,7 +20983,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22093,7 +21004,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22115,7 +21025,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22137,7 +21046,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22159,7 +21067,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22181,7 +21088,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22203,7 +21109,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22225,7 +21130,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22247,7 +21151,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22269,7 +21172,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22291,7 +21193,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22313,7 +21214,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22335,7 +21235,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22357,7 +21256,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22379,7 +21277,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22401,7 +21298,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22423,7 +21319,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22445,7 +21340,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -22467,7 +21361,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_AbjurationOppositionSchool",
@@ -22481,7 +21374,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_ConjurationOppositionSchool",
@@ -22495,7 +21387,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_DivinationOppositionSchool",
@@ -22509,7 +21400,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_EnchantmentOppositionSchool",
@@ -22523,7 +21413,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_EvocationOppositionSchool",
@@ -22537,7 +21426,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_IllusionOppositionSchool",
@@ -22551,7 +21439,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_NecromancyOppositionSchool",
@@ -22565,7 +21452,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_TransmutationOppositionSchool",
@@ -22579,7 +21465,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_SchoolPower1",
@@ -22593,7 +21478,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_SchoolPower8",
@@ -22607,7 +21491,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_AcidDart",
@@ -22621,7 +21504,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_AuraOfDespair",
@@ -22635,7 +21517,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_BlindingRay",
@@ -22649,7 +21530,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_ChangeShape",
@@ -22663,7 +21543,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_DazingTouch",
@@ -22677,7 +21556,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_DimensionalSteps",
@@ -22691,7 +21569,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_DivinersFortune",
@@ -22705,7 +21582,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_ElementalWall",
@@ -22719,7 +21595,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_EnchantingSmile",
@@ -22733,7 +21608,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_EnergyAbsorption",
@@ -22747,7 +21621,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_ExtendedIllusion",
@@ -22761,7 +21634,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_ForceMissile",
@@ -22775,7 +21647,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_Forwarned",
@@ -22789,7 +21660,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_GraveTouch",
@@ -22803,7 +21673,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_HandOfTheApprentice",
@@ -22817,7 +21686,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_IntenseSpells",
@@ -22831,7 +21699,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_InvisibilityField",
@@ -22845,7 +21712,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_LifeSight",
@@ -22859,7 +21725,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_MetamagicMastery",
@@ -22873,7 +21738,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_PhysicalEnhancement",
@@ -22887,7 +21751,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_PowerOverUndead",
@@ -22901,7 +21764,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_ProtectiveWard",
@@ -22915,7 +21777,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_Resistance",
@@ -22929,7 +21790,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_ScryingAdept",
@@ -22943,7 +21803,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_SummonersCharm",
@@ -22957,7 +21816,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Wizard_CF_TelekineticFist",

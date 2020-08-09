@@ -11,7 +11,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="BastardSwordExoticUse",
@@ -136,7 +135,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="WeaponFocusToHit",
@@ -194,7 +192,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="NegatedAgePenalty",
@@ -255,7 +252,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="Linguisitcs_NumLanguages",
@@ -294,7 +290,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -331,7 +326,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -345,7 +339,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -359,10 +352,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.556",
-  Description="Curse, spell; Fort DC 17 negates, Will DC 17 partial;Effect transforms target into a lizard",
+  Description={
+    Format="Curse, spell; Fort DC 17 negates, Will DC 17 partial;Effect transforms target into a lizard",
+  },
   Types={
     "Curse",
     "Affliction",
@@ -374,10 +368,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.556",
-  Description="Curse, trap; Will DC 14;Effect -6 penalty to Strength",
+  Description={
+    Format="Curse, trap; Will DC 14;Effect -6 penalty to Strength",
+  },
   Types={
     "Curse",
     "Affliction",
@@ -389,10 +384,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.557",
-  Description="Curse; Will DC 17; Frequency 1/day; Effect age 1 year",
+  Description={
+    Format="Curse; Will DC 17; Frequency 1/day; Effect age 1 year",
+  },
   Types={
     "Curse",
     "Affliction",
@@ -404,10 +400,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.557",
-  Description="Curse, disease, injury; Fort DC 16; Onset 1 minute; Frequency 1/day; Effect 1d6 Con damage and 1d6 Cha damage; Cure mummy rot can only be cured by successfully casting both remove curse and remove disease within 1 minute of each other.",
+  Description={
+    Format="Curse, disease, injury; Fort DC 16; Onset 1 minute; Frequency 1/day; Effect 1d6 Con damage and 1d6 Cha damage; Cure mummy rot can only be cured by successfully casting both remove curse and remove disease within 1 minute of each other.",
+  },
   Types={
     "Curse",
     "Affliction",
@@ -419,10 +416,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.557",
-  Description="Curse; Save Will DC 20 negates, no save to avoid effects; Frequency 1/hour; Effect target must reroll any roll decided by the GM and take the worse result",
+  Description={
+    Format="Curse; Save Will DC 20 negates, no save to avoid effects; Frequency 1/hour; Effect target must reroll any roll decided by the GM and take the worse result",
+  },
   Types={
     "Curse",
     "Affliction",
@@ -434,10 +432,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.557",
-  Description="Curse, injury; Fort DC 15 negates, Will DC 15 to avoid effects; Onset the next full moon; Frequency on the night of every full moon or whenever the target is injured; Effect target transforms into a wolf under the GM's control until the next morning",
+  Description={
+    Format="Curse, injury; Fort DC 15 negates, Will DC 15 to avoid effects; Onset the next full moon; Frequency on the night of every full moon or whenever the target is injured; Effect target transforms into a wolf under the GM's control until the next morning",
+  },
   Types={
     "Curse",
     "Affliction",
@@ -449,10 +448,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.557",
-  Description="Disease, Ingested; Fort DC 16; Onset 1d3 days; Frequency 1/day; Effect 1d4 Str damage, if more than 2 Str damage, target must make an additional Fort save or be permanently blinded; Cure 2 consecutive saves",
+  Description={
+    Format="Disease, Ingested; Fort DC 16; Onset 1d3 days; Frequency 1/day; Effect 1d4 Str damage, if more than 2 Str damage, target must make an additional Fort save or be permanently blinded; Cure 2 consecutive saves",
+  },
   Types={
     "Disease",
     "Affliction",
@@ -464,10 +464,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.557",
-  Description="Disease, injury or inhaled; Fort DC 17; Onset 1 day; Frequency 1/day; Effect 1d4 Con damage and 1 Cha damage and target is fatigued; Cure 2 consecutive saves",
+  Description={
+    Format="Disease, injury or inhaled; Fort DC 17; Onset 1 day; Frequency 1/day; Effect 1d4 Con damage and 1 Cha damage and target is fatigued; Cure 2 consecutive saves",
+  },
   Types={
     "Disease",
     "Affliction",
@@ -479,10 +480,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.557",
-  Description="Disease, inhaled; Fort DC 16; Onset 1 day; Frequency 1/day; Effect 1d6 Wis damage; Cure 2 consecutive saves",
+  Description={
+    Format="Disease, inhaled; Fort DC 16; Onset 1 day; Frequency 1/day; Effect 1d6 Wis damage; Cure 2 consecutive saves",
+  },
   Types={
     "Disease",
     "Affliction",
@@ -494,10 +496,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.557",
-  Description="Disease, injury; Fort DC 18; Onset 1 day; Frequency 1/day; Effect 1d6 Con damage, target must make a second Fort save or 1 point of the damage is drain instead; Cure 2 consecutive saves",
+  Description={
+    Format="Disease, injury; Fort DC 18; Onset 1 day; Frequency 1/day; Effect 1d6 Con damage, target must make a second Fort save or 1 point of the damage is drain instead; Cure 2 consecutive saves",
+  },
   Types={
     "Disease",
     "Affliction",
@@ -509,10 +512,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.557",
-  Description="Disease, injury; Fort DC 14; Onset 1d4 days; Frequency 1/day; Effect 1d4 Str damage; Cure 3 consecutive saves",
+  Description={
+    Format="Disease, injury; Fort DC 14; Onset 1d4 days; Frequency 1/day; Effect 1d4 Str damage; Cure 3 consecutive saves",
+  },
   Types={
     "Disease",
     "Affliction",
@@ -524,10 +528,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.557",
-  Description="Disease, injury; Save Fortitude DC 12; Onset 1d3 days; Frequency 1/day; Effect 1d3 Dex damage and 1d3 Con damage; Cure 2 consecutive saves",
+  Description={
+    Format="Disease, injury; Save Fortitude DC 12; Onset 1d3 days; Frequency 1/day; Effect 1d3 Dex damage and 1d3 Con damage; Cure 2 consecutive saves",
+  },
   Types={
     "Disease",
     "Affliction",
@@ -539,10 +544,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.557",
-  Description="Disease, contact, inhaled, or injury; Fort DC 12 negates, Fortitude DC 20 to avoid effects; Onset 2d4 weeks; Frequency 1/week; Effect 1d2 Cha damage; Cure 2 consecutive saves",
+  Description={
+    Format="Disease, contact, inhaled, or injury; Fort DC 12 negates, Fortitude DC 20 to avoid effects; Onset 2d4 weeks; Frequency 1/week; Effect 1d2 Cha damage; Cure 2 consecutive saves",
+  },
   Types={
     "Disease",
     "Affliction",
@@ -554,10 +560,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.557",
-  Description="Disease, inhaled; Fort DC 12; Onset 1 day; Frequency 1/day; Effect 1d4 Int damage; Cure 2 consecutive saves",
+  Description={
+    Format="Disease, inhaled; Fort DC 12; Onset 1 day; Frequency 1/day; Effect 1d4 Int damage; Cure 2 consecutive saves",
+  },
   Types={
     "Disease",
     "Affliction",
@@ -569,10 +576,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.557",
-  Description="Disease, injury; Fort DC 15; Onset 1d3 days; Frequency 1/day; Effect 1d6 Str damage; Cure 2 consecutive saves",
+  Description={
+    Format="Disease, injury; Fort DC 15; Onset 1d3 days; Frequency 1/day; Effect 1d6 Str damage; Cure 2 consecutive saves",
+  },
   Types={
     "Disease",
     "Affliction",
@@ -584,10 +592,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.557",
-  Description="Disease, contact; Fort DC 13; Onset 1 day; Frequency 1/day; Effect 1d8 Dex damage; Cure 2 consecutive saves",
+  Description={
+    Format="Disease, contact; Fort DC 13; Onset 1 day; Frequency 1/day; Effect 1d8 Dex damage; Cure 2 consecutive saves",
+  },
   Types={
     "Disease",
     "Affliction",
@@ -599,10 +608,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.557",
-  Description="Disease, contact; Fortitude DC 14; Onset 1 day; Frequency 1/day; Effect 1d4 Con damage, target must make a second Fort save or 1 point of the damage is drain instead; Cure 2 consecutive saves",
+  Description={
+    Format="Disease, contact; Fortitude DC 14; Onset 1 day; Frequency 1/day; Effect 1d4 Con damage, target must make a second Fort save or 1 point of the damage is drain instead; Cure 2 consecutive saves",
+  },
   Types={
     "Disease",
     "Affliction",
@@ -614,10 +624,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.558",
-  Description="Poison, Ingested; Fort DC 13; Freq. 1 round (5); Effect 1 Con damage; Cure 1 save",
+  Description={
+    Format="Poison, Ingested; Fort DC 13; Freq. 1 round (5); Effect 1 Con damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -629,10 +640,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.558",
-  Description="Poison, Injury; Fort DC 11; Freq. 1 round (6); Effect 1 Con damage; Cure 1 save",
+  Description={
+    Format="Poison, Injury; Fort DC 11; Freq. 1 round (6); Effect 1 Con damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -644,10 +656,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.558",
-  Description="Poison, Contact; Fort DC 20; Freq. 1 round (7); Effect 3 Con damage; Cure 1 save",
+  Description={
+    Format="Poison, Contact; Fort DC 20; Freq. 1 round (7); Effect 3 Con damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -659,10 +672,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.558",
-  Description="Poison, Injury; Fort DC 12; Freq. 1 round (3); Effect 1 Con damage and 1 Wis damage; Cure 1 save",
+  Description={
+    Format="Poison, Injury; Fort DC 12; Freq. 1 round (3); Effect 1 Con damage and 1 Wis damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -674,10 +688,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.558",
-  Description="Poison, Injury; Fort DC 14; Freq. 1 round (2); Effect 1 Con damage/unconsciousness for 1d3 hours; Cure 1 save",
+  Description={
+    Format="Poison, Injury; Fort DC 14; Freq. 1 round (2); Effect 1 Con damage/unconsciousness for 1d3 hours; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -689,10 +704,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.558",
-  Description="Poison, Inhaled; Fort DC 18; Freq. 1 round (4); Effect 1 Con drain/3 Con damage; Cure 1 save",
+  Description={
+    Format="Poison, Inhaled; Fort DC 18; Freq. 1 round (4); Effect 1 Con drain/3 Con damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -704,10 +720,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.558",
-  Description="Poison, Ingested; Fort DC 18; Freq. 1 round (5); Effect 2 Con damage/1 Con damage and 1 Str damage; Cure 1 save",
+  Description={
+    Format="Poison, Ingested; Fort DC 18; Freq. 1 round (5); Effect 2 Con damage/1 Con damage and 1 Str damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -719,10 +736,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.558",
-  Description="Poison, Injury; Fort DC 20; Freq. 1 round (5); Effect 2 Con damage; Cure 1 save",
+  Description={
+    Format="Poison, Injury; Fort DC 20; Freq. 1 round (5); Effect 2 Con damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -734,10 +752,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.558",
-  Description="Poison, Contact; Fort DC 26; Freq. 1 round (3); Effect 3 Str damage; Cure 1 save",
+  Description={
+    Format="Poison, Contact; Fort DC 26; Freq. 1 round (3); Effect 3 Str damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -749,10 +768,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.559",
-  Description="Poison, Injury; Fort DC 13; Freq. 1 minute (1); Effect unconsciousness for 1 minute/unconsciousness for 2d4 hours; Cure 1 save",
+  Description={
+    Format="Poison, Injury; Fort DC 13; Freq. 1 minute (1); Effect unconsciousness for 1 minute/unconsciousness for 2d4 hours; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -764,10 +784,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.559",
-  Description="Poison, Injury; Fort DC 18; Freq. 1 round (4); Effect 1 Dex damage; Cure 1 save",
+  Description={
+    Format="Poison, Injury; Fort DC 18; Freq. 1 round (4); Effect 1 Dex damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -779,10 +800,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.559",
-  Description="Poison, Injury; Fort DC 13; Freq. 1 round (2); Effect 1 Con damage; Cure 1 save",
+  Description={
+    Format="Poison, Injury; Fort DC 13; Freq. 1 round (2); Effect 1 Con damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -794,10 +816,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.559",
-  Description="Poison, Ingested; Fort DC 14; Freq. 1 round (5); Effect 2 Int damage; Cure 1 save",
+  Description={
+    Format="Poison, Ingested; Fort DC 14; Freq. 1 round (5); Effect 2 Int damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -809,10 +832,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Inhaled; Fort DC 15; Freq. 1 round (5); Effect 2 Wis damage; Cure 1 save",
+  Description={
+    Format="Poison, Inhaled; Fort DC 15; Freq. 1 round (5); Effect 2 Wis damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -824,10 +848,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Ingested; Fort DC 19; Freq. 1 day; Effect 1 Con drain; Cure 2 consecutive saves",
+  Description={
+    Format="Poison, Ingested; Fort DC 19; Freq. 1 day; Effect 1 Con drain; Cure 2 consecutive saves",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -839,10 +864,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Injury; Fort DC 18; Freq. 1 round (4); Effect 1 Str damage; Cure 1 save",
+  Description={
+    Format="Poison, Injury; Fort DC 18; Freq. 1 round (4); Effect 1 Str damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -854,10 +880,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Ingested; Fort DC 17; Freq. 1 round (5); Effect 2 Str damage; Cure 1 save",
+  Description={
+    Format="Poison, Ingested; Fort DC 17; Freq. 1 round (5); Effect 2 Str damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -869,10 +896,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Contact; Fort DC 16; Freq. 1 round (6); Effect 1 Dex damage; Cure 1 save",
+  Description={
+    Format="Poison, Contact; Fort DC 16; Freq. 1 round (6); Effect 1 Dex damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -884,10 +912,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Injury; Fort DC 14; Freq. 1 round (3); Effect 1 Str damage; Cure 1 save",
+  Description={
+    Format="Poison, Injury; Fort DC 14; Freq. 1 round (3); Effect 1 Str damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -899,10 +928,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Inhaled; Fort DC 20; Freq. 1 round (5); Effect 1 Wis damage and 1 Wis drain; Cure 2 consecutive saves",
+  Description={
+    Format="Poison, Inhaled; Fort DC 20; Freq. 1 round (5); Effect 1 Wis damage and 1 Wis drain; Cure 2 consecutive saves",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -914,10 +944,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Contact; Fort DC 13; Freq. 1 round (6); Effect 0/2 Con damage; Cure 1 save",
+  Description={
+    Format="Poison, Contact; Fort DC 13; Freq. 1 round (6); Effect 0/2 Con damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -929,10 +960,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Ingested; Fort DC 15; Freq. 1 minute (1); Effect 0/unconsciousness for 1d3 hours; Cure 1 save",
+  Description={
+    Format="Poison, Ingested; Fort DC 15; Freq. 1 minute (1); Effect 0/unconsciousness for 1d3 hours; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -944,10 +976,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Injury; Fort DC 24; Freq. 1 round (5); Effect 2 Str damage; Cure 1 save",
+  Description={
+    Format="Poison, Injury; Fort DC 24; Freq. 1 round (5); Effect 2 Str damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -959,10 +992,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Contact; Fort DC 16; Freq. 1 round (4); Effect 1d6 hit points; Cure 1 save",
+  Description={
+    Format="Poison, Contact; Fort DC 16; Freq. 1 round (4); Effect 1d6 hit points; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -974,10 +1008,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Inhaled; Fort DC 17; Freq. 1 round (7); Effect 1 Str drain/1 Str damage; Cure 1 save",
+  Description={
+    Format="Poison, Inhaled; Fort DC 17; Freq. 1 round (7); Effect 1 Str drain/1 Str damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -989,10 +1024,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Injury; Fort DC 11; Freq. 1 round (2); Effect 1 Dex damage; Cure 1 save",
+  Description={
+    Format="Poison, Injury; Fort DC 11; Freq. 1 round (2); Effect 1 Dex damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -1004,10 +1040,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Ingested; Fort DC 11; Freq. 1 round (5); Effect 1 Wis damage/2 Wis damage plus 1 Int damage; Cure 1 save",
+  Description={
+    Format="Poison, Ingested; Fort DC 11; Freq. 1 round (5); Effect 1 Wis damage/2 Wis damage plus 1 Int damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -1019,10 +1056,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Contact; Fort DC 22; Freq. 1 minute (5); Effect 1d6 Con damage; Cure none",
+  Description={
+    Format="Poison, Contact; Fort DC 22; Freq. 1 minute (5); Effect 1d6 Con damage; Cure none",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -1034,10 +1072,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Contact; Fort DC 16; Freq. 1 round (5); Effect 2 Dex damage; Cure 1 save",
+  Description={
+    Format="Poison, Contact; Fort DC 16; Freq. 1 round (5); Effect 2 Dex damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -1049,10 +1088,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Inhaled; Fort DC 15; Freq. 1 round (3); Effect 1 Cha damage/1 Con damage and 1 Cha drain; Cure 1 save",
+  Description={
+    Format="Poison, Inhaled; Fort DC 15; Freq. 1 round (3); Effect 1 Cha damage/1 Con damage and 1 Cha drain; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -1064,10 +1104,11 @@ DefineAbility({
   Category="Afflictions",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
   SourcePage="p.560",
-  Description="Poison, Injury; Fort DC 17; Freq. 1 round (7); Effect 2 Con damage; Cure 1 save",
+  Description={
+    Format="Poison, Injury; Fort DC 17; Freq. 1 round (7); Effect 2 Con damage; Cure 1 save",
+  },
   Types={
     "Poison",
     "Affliction",
@@ -1417,7 +1458,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="StoneskinActivate",
@@ -1493,7 +1533,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SaveBonus",
@@ -1568,7 +1607,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -1582,7 +1620,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   DamageReduction={
     Value="10/adamantine",
   },
@@ -1593,7 +1630,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1624,7 +1660,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1655,7 +1690,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1672,7 +1706,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1689,7 +1722,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1706,7 +1738,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1723,7 +1754,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1740,7 +1770,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1760,14 +1789,15 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
       FormatString="unarmed and natural attacks do +1d6 cold damage",
     },
   },
-  Description="unarmed and natural attacks do +1d6 cold damage",
+  Description={
+    Format="unarmed and natural attacks do +1d6 cold damage",
+  },
   Types={
     "UnarmedDisplay",
   },
@@ -1778,7 +1808,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1795,7 +1824,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1826,7 +1854,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1846,7 +1873,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1863,7 +1889,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1880,7 +1905,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1897,7 +1921,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1914,7 +1937,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1934,7 +1956,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1951,7 +1972,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1968,7 +1988,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -1988,7 +2007,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -2019,7 +2037,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -2036,7 +2053,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="UnarmedNotes",
@@ -2053,7 +2069,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseSkill(function (character, skill)
       return (skill.Type == "Base")
@@ -2079,7 +2094,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SpellResistance="18",
 })
 
@@ -2088,7 +2102,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -2130,8 +2143,9 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
-  Description=" &nl;200,001 gp and higher (+12)",
+  Description={
+    Format=" &nl;200,001 gp and higher (+12)",
+  },
   Types={
     "IntelligentItemOutput",
   },
@@ -2143,7 +2157,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2155,7 +2168,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2167,7 +2179,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2179,7 +2190,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2191,7 +2201,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2203,7 +2212,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2215,7 +2223,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2227,7 +2234,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2239,7 +2245,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2251,7 +2256,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2263,7 +2267,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2275,7 +2278,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2287,7 +2289,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2299,7 +2300,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2311,7 +2311,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2323,7 +2322,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2335,7 +2333,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2347,7 +2344,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2359,7 +2355,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2371,7 +2366,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2383,7 +2377,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2395,7 +2388,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2407,7 +2399,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2419,7 +2410,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2431,7 +2421,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2443,7 +2432,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2455,7 +2443,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2467,7 +2454,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2479,7 +2465,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2491,7 +2476,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2503,7 +2487,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2515,7 +2498,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2527,7 +2509,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemStat",
   },
@@ -2539,7 +2520,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -2559,7 +2539,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -2579,7 +2558,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -2599,7 +2577,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -2619,7 +2596,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -2639,7 +2615,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -2659,7 +2634,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -2679,7 +2653,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -2699,7 +2672,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -2719,8 +2691,9 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
-  Description="Empathy allows the item to encourage or discourage certain actions by communicating emotions and urges. It does not allow for verbal communication.",
+  Description={
+    Format="Empathy allows the item to encourage or discourage certain actions by communicating emotions and urges. It does not allow for verbal communication.",
+  },
   Types={
     "IntelligentItemOutput",
     "Supernatural",
@@ -2733,8 +2706,9 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
-  Description="An intelligent item with the capability for speech can talk using any of the languages it knows. It automatically knows Common.",
+  Description={
+    Format="An intelligent item with the capability for speech can talk using any of the languages it knows. It automatically knows Common.",
+  },
   Types={
     "IntelligentItemAbility",
     "IntelligentItemOutput",
@@ -2748,8 +2722,9 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
-  Description="Telepathy allows an intelligent item to communicate with its wielder telepathically, regardless of its known languages. The wielder must be touching the item to communicate in this way.",
+  Description={
+    Format="Telepathy allows an intelligent item to communicate with its wielder telepathically, regardless of its known languages. The wielder must be touching the item to communicate in this way.",
+  },
   Types={
     "IntelligentItemAbility",
     "IntelligentItemOutput",
@@ -2763,7 +2738,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemAbility",
     "IntelligentItemOutput",
@@ -2776,7 +2750,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemAbility",
     "IntelligentItemOutput",
@@ -2789,7 +2762,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseUserInput(1, "Write in Languages Known by the Item"),
   },
@@ -2806,8 +2778,12 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
-  Description="%1 ft.|IntItemSenseRange",
+  Description={
+    Format="%1 ft.",
+    Arguments={
+      "IntItemSenseRange",
+    },
+  },
   Types={
     "IntelligentItemOutput",
     "Supernatural",
@@ -2820,8 +2796,12 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
-  Description="%1 ft.|IntItemSenseRange",
+  Description={
+    Format="%1 ft.",
+    Arguments={
+      "IntItemSenseRange",
+    },
+  },
   Types={
     "IntelligentItemOutput",
     "Supernatural",
@@ -2834,8 +2814,12 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
-  Description="%1 ft.|IntItemSenseRange",
+  Description={
+    Format="%1 ft.",
+    Arguments={
+      "IntItemSenseRange",
+    },
+  },
   Types={
     "IntelligentItemOutput",
     "Supernatural",
@@ -2848,7 +2832,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseSpell(function (character, spell)
       return (true and spell.Level <= 0 and spell.Level >= 0)
@@ -2875,7 +2858,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseSpell(function (character, spell)
       return (true and spell.Level <= 1 and spell.Level >= 1)
@@ -2902,7 +2884,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -2923,7 +2904,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseSpell(function (character, spell)
       return (true and spell.Level <= 2 and spell.Level >= 2)
@@ -2950,7 +2930,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseSkill(function (character, skill)
       return (true)
@@ -2977,7 +2956,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -2998,7 +2976,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseSpell(function (character, spell)
       return (true and spell.Level <= 3 and spell.Level >= 3)
@@ -3025,7 +3002,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseSpell(function (character, spell)
       return (true and spell.Level <= 2 and spell.Level >= 2)
@@ -3052,7 +3028,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseSkill(function (character, skill)
       return (true)
@@ -3079,7 +3054,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -3100,7 +3074,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -3121,7 +3094,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseSpell(function (character, spell)
       return (true and spell.Level <= 4 and spell.Level >= 4)
@@ -3148,7 +3120,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -3169,7 +3140,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseSpell(function (character, spell)
       return (true and spell.Level <= 3 and spell.Level >= 3)
@@ -3196,7 +3166,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Chooses={
     ChooseSpell(function (character, spell)
       return (true and spell.Level <= 4 and spell.Level >= 4)
@@ -3223,7 +3192,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -3243,7 +3211,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -3263,7 +3230,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -3283,7 +3249,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -3303,7 +3268,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -3323,7 +3287,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -3343,7 +3306,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -3363,7 +3325,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -3383,7 +3344,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -3403,7 +3363,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -3423,7 +3382,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemx",
     "IntelligentItemOutput",
@@ -3436,7 +3394,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemx",
     "IntelligentItemOutput",
@@ -3449,7 +3406,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "IntelligentItemx",
     "IntelligentItemOutput",
@@ -3462,7 +3418,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=1,
   Chooses={
     ChooseSpell(function (character, spell)
@@ -3490,7 +3445,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=1,
   Chooses={
     ChooseSpell(function (character, spell)
@@ -3518,7 +3472,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=1,
   Chooses={
     ChooseSpell(function (character, spell)
@@ -3546,7 +3499,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=1,
   Chooses={
     ChooseSpell(function (character, spell)
@@ -3573,7 +3525,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
 })
 
 DefineAbility({
@@ -3581,7 +3532,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -3598,7 +3548,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -3615,7 +3564,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -3632,7 +3580,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -3649,7 +3596,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -3666,7 +3612,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -3683,7 +3628,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -3700,7 +3644,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -3717,7 +3660,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -3734,7 +3676,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -3751,7 +3692,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -3768,7 +3708,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -3785,7 +3724,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -3802,7 +3740,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -3819,7 +3756,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Movement={
     Swim=60,
   },
@@ -3830,7 +3766,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   AutomaticLanguages={
     {
       Selector=function (language)
@@ -3845,7 +3780,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SkillBonus",
@@ -3859,7 +3793,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SkillBonus",
@@ -3873,7 +3806,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SkillBonus",
@@ -3887,7 +3819,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -3901,7 +3832,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -3915,7 +3845,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SaveBonus",
@@ -3929,7 +3858,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -3943,7 +3871,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -3957,7 +3884,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -3971,7 +3897,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SaveBonus",
@@ -3985,7 +3910,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -3999,7 +3923,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -4013,7 +3936,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SaveBonus",
@@ -4027,7 +3949,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="SaveBonus",
@@ -4041,7 +3962,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -4055,7 +3975,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -4069,7 +3988,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -4083,7 +4001,6 @@ DefineAbility({
   Category="Equipment",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="CombatBonus",
@@ -4098,7 +4015,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "Defensive",
   },
@@ -4110,7 +4026,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "Defensive",
   },
@@ -4122,7 +4037,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Types={
     "Defensive",
   },
@@ -4139,7 +4053,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="DomainNotAllowed",
@@ -4166,9 +4079,14 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   SourcePage="p.562",
-  Description="%1 negative levels (-%1 effective levels and loses access to %1 spells from the highest spell level castable)|NegLevels|PREVARGT:NegLevels,1",
+  Description={
+    Format="%1 negative levels (-%1 effective levels and loses access to %1 spells from the highest spell level castable)",
+    Arguments={
+      "NegLevels",
+      "PREVARGT:NegLevels,1",
+    },
+  },
   Definitions={
     {
       Name="NegLevels",
@@ -4221,7 +4139,6 @@ DefineAbility({
   Category="Natural Attack",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="ShieldBashingDieSizeStep",
@@ -4412,7 +4329,6 @@ ModifyAbility({
   Category="Natural Attack",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Aspects={
     {
       Name="NaturalAttackName",
@@ -4528,7 +4444,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4564,7 +4479,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4626,7 +4540,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4688,7 +4601,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -4710,7 +4622,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -4732,7 +4643,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -4754,7 +4664,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -4776,7 +4685,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -4798,7 +4706,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -4820,7 +4727,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -4842,7 +4748,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -4864,7 +4769,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -4886,7 +4790,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -4908,7 +4811,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -4930,7 +4832,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Abilities={
     {
       Category="Internal",
@@ -4952,7 +4853,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4969,7 +4869,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -4986,7 +4885,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5003,7 +4901,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5020,7 +4917,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5037,7 +4933,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5054,7 +4949,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5071,7 +4965,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5088,7 +4981,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5112,7 +5004,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5136,7 +5027,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5160,7 +5050,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5184,7 +5073,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5208,7 +5096,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5232,7 +5119,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
@@ -5315,7 +5201,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
@@ -5391,7 +5276,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="EnlargePerson_GrappleBonusValue",
@@ -5405,7 +5289,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="EnlargePerson_StrBonusValue",
@@ -5419,7 +5302,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="EnlargePerson_DexBonusValue",
@@ -5433,7 +5315,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="EnlargePerson_ACBonusValue",
@@ -5447,7 +5328,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5464,7 +5344,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5481,7 +5360,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Bonuses={
     {
       Category="VAR",
@@ -5498,7 +5376,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="DamageSizeAdjustment",
@@ -6942,10 +6819,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 feat.",
+  Description={
+    Format="GM awarded PC with +1 feat.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -6966,7 +6844,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseSkill(function (character, skill)
@@ -6975,7 +6852,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 skill rank (won't exceed max ranks).",
+  Description={
+    Format="GM awarded PC with +1 skill rank (won't exceed max ranks).",
+  },
   Bonuses={
     {
       Category="SKILLRANK",
@@ -6996,7 +6875,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseSkill(function (character, skill)
@@ -7005,7 +6883,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 skill bonus.",
+  Description={
+    Format="GM awarded PC with +1 skill bonus.",
+  },
   Bonuses={
     {
       Category="SKILL",
@@ -7026,10 +6906,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 skill point.",
+  Description={
+    Format="GM awarded PC with +1 skill point.",
+  },
   Bonuses={
     {
       Category="SKILLPOINTS",
@@ -7050,10 +6931,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 hit point.",
+  Description={
+    Format="GM awarded PC with +1 hit point.",
+  },
   Bonuses={
     {
       Category="HP",
@@ -7074,10 +6956,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 spell per day.",
+  Description={
+    Format="GM awarded PC with +1 spell per day.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -7097,10 +6980,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 spell known.",
+  Description={
+    Format="GM awarded PC with +1 spell known.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -7120,10 +7004,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 arcane caster level.",
+  Description={
+    Format="GM awarded PC with +1 arcane caster level.",
+  },
   Bonuses={
     {
       Category="PCLEVEL",
@@ -7143,10 +7028,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 divine caster level.",
+  Description={
+    Format="GM awarded PC with +1 divine caster level.",
+  },
   Bonuses={
     {
       Category="PCLEVEL",
@@ -7166,7 +7052,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseLang(function (character, lang)
@@ -7175,7 +7060,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with bonus Language.",
+  Description={
+    Format="GM awarded PC with bonus Language.",
+  },
   Types={
     "GM_Award",
     "SpecialQuality",
@@ -7194,7 +7081,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseSkill(function (character, skill)
@@ -7203,7 +7089,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 skill rank per level or use with custom INT bonus items.",
+  Description={
+    Format="GM awarded PC with +1 skill rank per level or use with custom INT bonus items.",
+  },
   Bonuses={
     {
       Category="SKILLRANK",
@@ -7224,7 +7112,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseAbilityselection(function (character, ability)
@@ -7233,7 +7120,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with 1 feat that ignores restrictions.",
+  Description={
+    Format="GM awarded PC with 1 feat that ignores restrictions.",
+  },
   Abilities={
     {
       Category="FEAT",
@@ -7254,7 +7143,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7262,7 +7150,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 1 spell known.",
+  Description={
+    Format="GM awarded PC with +1 level 1 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -7283,7 +7173,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7291,7 +7180,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 2 spell known.",
+  Description={
+    Format="GM awarded PC with +1 level 2 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -7312,7 +7203,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7320,7 +7210,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 3 spell known.",
+  Description={
+    Format="GM awarded PC with +1 level 3 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -7341,7 +7233,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7349,7 +7240,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 4 spell known.",
+  Description={
+    Format="GM awarded PC with +1 level 4 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -7370,7 +7263,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7378,7 +7270,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 5 spell known.",
+  Description={
+    Format="GM awarded PC with +1 level 5 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -7399,7 +7293,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7407,7 +7300,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 6 spell known.",
+  Description={
+    Format="GM awarded PC with +1 level 6 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -7428,7 +7323,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7436,7 +7330,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 7 spell known.",
+  Description={
+    Format="GM awarded PC with +1 level 7 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -7457,7 +7353,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7465,7 +7360,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 8 spell known.",
+  Description={
+    Format="GM awarded PC with +1 level 8 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -7486,7 +7383,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7494,7 +7390,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 9 spell known.",
+  Description={
+    Format="GM awarded PC with +1 level 9 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -7515,7 +7413,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7523,7 +7420,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 1 spell per day.",
+  Description={
+    Format="GM awarded PC with +1 level 1 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -7544,7 +7443,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7552,7 +7450,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 2 spell per day.",
+  Description={
+    Format="GM awarded PC with +1 level 2 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -7573,7 +7473,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7581,7 +7480,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 3 spell per day.",
+  Description={
+    Format="GM awarded PC with +1 level 3 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -7602,7 +7503,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7610,7 +7510,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 4 spell per day.",
+  Description={
+    Format="GM awarded PC with +1 level 4 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -7631,7 +7533,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7639,7 +7540,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 5 spell per day.",
+  Description={
+    Format="GM awarded PC with +1 level 5 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -7660,7 +7563,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7668,7 +7570,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 6 spell per day.",
+  Description={
+    Format="GM awarded PC with +1 level 6 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -7689,7 +7593,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7697,7 +7600,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 7 spell per day.",
+  Description={
+    Format="GM awarded PC with +1 level 7 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -7718,7 +7623,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7726,7 +7630,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 8 spell per day.",
+  Description={
+    Format="GM awarded PC with +1 level 8 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -7747,7 +7653,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -7755,7 +7660,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 level 9 spell per day.",
+  Description={
+    Format="GM awarded PC with +1 level 9 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -7776,10 +7683,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 STR bonus.",
+  Description={
+    Format="GM awarded PC with +1 STR bonus.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -7800,10 +7708,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 DEX bonus.",
+  Description={
+    Format="GM awarded PC with +1 DEX bonus.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -7824,10 +7733,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 CON bonus.",
+  Description={
+    Format="GM awarded PC with +1 CON bonus.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -7848,10 +7758,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 INT bonus.",
+  Description={
+    Format="GM awarded PC with +1 INT bonus.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -7872,10 +7783,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 WIS bonus.",
+  Description={
+    Format="GM awarded PC with +1 WIS bonus.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -7896,10 +7808,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM awarded PC with +1 CHA bonus.",
+  Description={
+    Format="GM awarded PC with +1 CHA bonus.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -7920,10 +7833,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 feat.",
+  Description={
+    Format="GM Penalized PC with -1 feat.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -7944,7 +7858,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseSkill(function (character, skill)
@@ -7953,7 +7866,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 skill rank (won't exceed max ranks).",
+  Description={
+    Format="GM Penalized PC with -1 skill rank (won't exceed max ranks).",
+  },
   Bonuses={
     {
       Category="SKILLRANK",
@@ -7974,7 +7889,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   Chooses={
     ChooseSkill(function (character, skill)
@@ -7983,7 +7897,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 skill bonus.",
+  Description={
+    Format="GM Penalized PC with -1 skill bonus.",
+  },
   Bonuses={
     {
       Category="SKILL",
@@ -8004,10 +7920,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 hit point.",
+  Description={
+    Format="GM Penalized PC with -1 hit point.",
+  },
   Bonuses={
     {
       Category="HP",
@@ -8028,10 +7945,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 spell per day.",
+  Description={
+    Format="GM Penalized PC with -1 spell per day.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -8051,10 +7969,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 spell known.",
+  Description={
+    Format="GM Penalized PC with -1 spell known.",
+  },
   Bonuses={
     {
       Category="ABILITYPOOL",
@@ -8074,10 +7993,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM awarded PC with -1 arcane caster level.",
+  Description={
+    Format="GM awarded PC with -1 arcane caster level.",
+  },
   Bonuses={
     {
       Category="PCLEVEL",
@@ -8097,10 +8017,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM awarded PC with -1 divine caster level.",
+  Description={
+    Format="GM awarded PC with -1 divine caster level.",
+  },
   Bonuses={
     {
       Category="PCLEVEL",
@@ -8120,7 +8041,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8128,7 +8048,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 1 spell known.",
+  Description={
+    Format="GM Penalized PC with -1 level 1 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -8149,7 +8071,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8157,7 +8078,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 2 spell known.",
+  Description={
+    Format="GM Penalized PC with -1 level 2 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -8178,7 +8101,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8186,7 +8108,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 3 spell known.",
+  Description={
+    Format="GM Penalized PC with -1 level 3 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -8207,7 +8131,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8215,7 +8138,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 4 spell known.",
+  Description={
+    Format="GM Penalized PC with -1 level 4 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -8236,7 +8161,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8244,7 +8168,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 5 spell known.",
+  Description={
+    Format="GM Penalized PC with -1 level 5 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -8265,7 +8191,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8273,7 +8198,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 6 spell known.",
+  Description={
+    Format="GM Penalized PC with -1 level 6 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -8294,7 +8221,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8302,7 +8228,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 7 spell known.",
+  Description={
+    Format="GM Penalized PC with -1 level 7 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -8323,7 +8251,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8331,7 +8258,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 8 spell known.",
+  Description={
+    Format="GM Penalized PC with -1 level 8 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -8352,7 +8281,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8360,7 +8288,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 9 spell known.",
+  Description={
+    Format="GM Penalized PC with -1 level 9 spell known.",
+  },
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -8381,7 +8311,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8389,7 +8318,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 1 spell per day.",
+  Description={
+    Format="GM Penalized PC with -1 level 1 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -8410,7 +8341,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8418,7 +8348,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 2 spell per day.",
+  Description={
+    Format="GM Penalized PC with -1 level 2 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -8439,7 +8371,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8447,7 +8378,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 3 spell per day.",
+  Description={
+    Format="GM Penalized PC with -1 level 3 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -8468,7 +8401,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8476,7 +8408,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 4 spell per day.",
+  Description={
+    Format="GM Penalized PC with -1 level 4 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -8497,7 +8431,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8505,7 +8438,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 5 spell per day.",
+  Description={
+    Format="GM Penalized PC with -1 level 5 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -8526,7 +8461,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8534,7 +8468,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 6 spell per day.",
+  Description={
+    Format="GM Penalized PC with -1 level 6 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -8555,7 +8491,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8563,7 +8498,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 7 spell per day.",
+  Description={
+    Format="GM Penalized PC with -1 level 7 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -8584,7 +8521,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8592,7 +8528,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 8 spell per day.",
+  Description={
+    Format="GM Penalized PC with -1 level 8 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -8613,7 +8551,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Chooses={
     ChooseClass(function (character, class)
       return (class.CanCastSpells)
@@ -8621,7 +8558,9 @@ DefineAbility({
   },
   Selections="1",
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 level 9 spell per day.",
+  Description={
+    Format="GM Penalized PC with -1 level 9 spell per day.",
+  },
   Bonuses={
     {
       Category="SPELLCAST",
@@ -8642,10 +8581,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 STR bonus.",
+  Description={
+    Format="GM Penalized PC with -1 STR bonus.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -8666,10 +8606,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 DEX bonus.",
+  Description={
+    Format="GM Penalized PC with -1 DEX bonus.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -8690,10 +8631,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 CON bonus.",
+  Description={
+    Format="GM Penalized PC with -1 CON bonus.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -8714,10 +8656,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 INT bonus.",
+  Description={
+    Format="GM Penalized PC with -1 INT bonus.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -8738,10 +8681,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 WIS bonus.",
+  Description={
+    Format="GM Penalized PC with -1 WIS bonus.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -8762,10 +8706,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM Penalized PC with -1 CHA bonus.",
+  Description={
+    Format="GM Penalized PC with -1 CHA bonus.",
+  },
   Bonuses={
     {
       Category="STAT",
@@ -8786,10 +8731,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM Award of Natural Armor",
+  Description={
+    Format="GM Award of Natural Armor",
+  },
   Bonuses={
     {
       Category="COMBAT",
@@ -8815,10 +8761,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM Award of Deflection Bonus",
+  Description={
+    Format="GM Award of Deflection Bonus",
+  },
   Bonuses={
     {
       Category="COMBAT",
@@ -8844,10 +8791,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM Award of 5ft of movement speed",
+  Description={
+    Format="GM Award of 5ft of movement speed",
+  },
   Bonuses={
     {
       Category="MOVEADD",
@@ -8868,10 +8816,11 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   Cost=0,
   SortKey="Z_Award",
-  Description="GM Penalty of 5ft of movement speed",
+  Description={
+    Format="GM Penalty of 5ft of movement speed",
+  },
   Bonuses={
     {
       Category="MOVEADD",
@@ -8892,9 +8841,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
-  Description="This allows the PC to bypass the restrictions on taking only 1 trait from any given category.",
+  Description={
+    Format="This allows the PC to bypass the restrictions on taking only 1 trait from any given category.",
+  },
   Definitions={
     {
       Name="BypassTraitRestriction",
@@ -8925,9 +8875,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
-  Description="This allows the PC to bypass the restrictions on taking only 1 drawback.",
+  Description={
+    Format="This allows the PC to bypass the restrictions on taking only 1 drawback.",
+  },
   Definitions={
     {
       Name="BypassDrawbackRestriction",
@@ -8958,9 +8909,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Cost=0,
-  Description="This changes the Natural Primary attacks to Secondary while using weapons.",
+  Description={
+    Format="This changes the Natural Primary attacks to Secondary while using weapons.",
+  },
   Definitions={
     {
       Name="UseWeaponsWithNaturalAttacks",
@@ -8992,9 +8944,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
-  Description="Sustains creature without food or water",
+  Description={
+    Format="Sustains creature without food or water",
+  },
   Types={
     "Ioun Stone",
     "Equipment",
@@ -9009,7 +8962,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
   Abilities={
     {
@@ -9034,7 +8986,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9064,7 +9015,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9094,7 +9044,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9124,9 +9073,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
-  Description="Sustains creature without air",
+  Description={
+    Format="Sustains creature without air",
+  },
   Types={
     "Ioun Stone",
     "Equipment",
@@ -9141,9 +9091,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
-  Description="Absorbs spells of 8th level or lower",
+  Description={
+    Format="Absorbs spells of 8th level or lower",
+  },
   Types={
     "Ioun Stone",
     "Equipment",
@@ -9158,7 +9109,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9183,7 +9133,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9213,9 +9162,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
-  Description="+1 to ability checks",
+  Description={
+    Format="+1 to ability checks",
+  },
   Bonuses={
     {
       Category="COMBAT",
@@ -9268,9 +9218,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
-  Description="Absorbs spells of 4th level or lower",
+  Description={
+    Format="Absorbs spells of 4th level or lower",
+  },
   Types={
     "Ioun Stone",
     "Equipment",
@@ -9285,9 +9236,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
-  Description="Regenerate 1 point of damage per 10 minutes",
+  Description={
+    Format="Regenerate 1 point of damage per 10 minutes",
+  },
   Types={
     "Ioun Stone",
     "Equipment",
@@ -9302,7 +9254,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9332,7 +9283,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9362,7 +9312,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9392,9 +9341,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Visible=true,
   SourcePage="p.520",
-  Description="Stores three levels of spells, as a ring of spell storing",
+  Description={
+    Format="Stores three levels of spells, as a ring of spell storing",
+  },
   Types={
     "Ioun Stone",
     "Equipment",
@@ -9408,7 +9358,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Acrobatics",
   },
@@ -9419,7 +9368,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Appraise",
   },
@@ -9430,7 +9378,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Bluff",
   },
@@ -9441,7 +9388,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Climb",
   },
@@ -9452,7 +9398,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "TYPE=Craft",
   },
@@ -9463,7 +9408,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Alchemy)",
   },
@@ -9474,7 +9418,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Armor)",
   },
@@ -9485,7 +9428,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Baskets)",
   },
@@ -9496,7 +9438,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Blacksmithing)",
   },
@@ -9507,7 +9448,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Books)",
   },
@@ -9518,7 +9458,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Bows)",
   },
@@ -9529,7 +9468,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Calligraphy)",
   },
@@ -9540,7 +9478,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Carpentry)",
   },
@@ -9551,7 +9488,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Cloth)",
   },
@@ -9562,7 +9498,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Clothing)",
   },
@@ -9573,7 +9508,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Gemcutting)",
   },
@@ -9584,7 +9518,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Glass)",
   },
@@ -9595,7 +9528,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Jewelry)",
   },
@@ -9606,7 +9538,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Leather)",
   },
@@ -9617,7 +9548,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Locks)",
   },
@@ -9628,7 +9558,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Paintings)",
   },
@@ -9639,7 +9568,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Pottery)",
   },
@@ -9650,7 +9578,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Sculptures)",
   },
@@ -9661,7 +9588,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Ships)",
   },
@@ -9672,7 +9598,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Shoes)",
   },
@@ -9683,7 +9608,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Stonemasonry)",
   },
@@ -9694,7 +9618,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Traps)",
   },
@@ -9705,7 +9628,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Weapons)",
   },
@@ -9716,7 +9638,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Craft (Untrained)",
   },
@@ -9727,7 +9648,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Diplomacy",
   },
@@ -9738,7 +9658,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Disable Device",
   },
@@ -9749,7 +9668,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Disguise",
   },
@@ -9760,7 +9678,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Escape Artist",
   },
@@ -9771,7 +9688,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Fly",
   },
@@ -9782,7 +9698,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Handle Animal",
   },
@@ -9793,7 +9708,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Heal",
   },
@@ -9804,7 +9718,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Intimidate",
   },
@@ -9815,7 +9728,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "TYPE=Knowledge",
   },
@@ -9826,7 +9738,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Knowledge (Arcana)",
   },
@@ -9840,7 +9751,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Knowledge (Dungeoneering)",
   },
@@ -9854,7 +9764,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Knowledge (Engineering)",
   },
@@ -9868,7 +9777,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Knowledge (Geography)",
   },
@@ -9882,7 +9790,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Knowledge (History)",
   },
@@ -9896,7 +9803,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Knowledge (Local)",
   },
@@ -9910,7 +9816,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Knowledge (Nature)",
   },
@@ -9924,7 +9829,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Knowledge (Nobility)",
   },
@@ -9938,7 +9842,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Knowledge (Planes)",
   },
@@ -9952,7 +9855,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Knowledge (Religion)",
   },
@@ -9966,7 +9868,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Knowledge (Untrained)",
   },
@@ -9977,7 +9878,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Linguistics",
   },
@@ -9988,7 +9888,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Perception",
   },
@@ -9999,7 +9898,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "TYPE=Perform",
   },
@@ -10010,7 +9908,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Perform (Act)",
   },
@@ -10021,7 +9918,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Perform (Comedy)",
   },
@@ -10032,7 +9928,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Perform (Dance)",
   },
@@ -10043,7 +9938,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Perform (Keyboard Instruments)",
   },
@@ -10054,7 +9948,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Perform (Oratory)",
   },
@@ -10065,7 +9958,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Perform (Percussion Instruments)",
   },
@@ -10076,7 +9968,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Perform (Sing)",
   },
@@ -10087,7 +9978,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Perform (String Instruments)",
   },
@@ -10098,7 +9988,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Perform (Wind Instruments)",
   },
@@ -10109,7 +9998,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Perform (Untrained)",
   },
@@ -10120,7 +10008,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "TYPE=Profession",
   },
@@ -10131,7 +10018,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Architect)",
   },
@@ -10142,7 +10028,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Baker)",
   },
@@ -10153,7 +10038,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Barrister)",
   },
@@ -10164,7 +10048,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Brewer)",
   },
@@ -10175,7 +10058,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Butcher)",
   },
@@ -10186,7 +10068,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Clerk)",
   },
@@ -10197,7 +10078,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Cook)",
   },
@@ -10208,7 +10088,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Courtesan)",
   },
@@ -10219,7 +10098,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Driver)",
   },
@@ -10230,7 +10108,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Engineer)",
   },
@@ -10241,7 +10118,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Farmer)",
   },
@@ -10252,7 +10128,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Fisherman)",
   },
@@ -10263,7 +10138,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Gambler)",
   },
@@ -10274,7 +10148,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Gardener)",
   },
@@ -10285,7 +10158,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Herbalist)",
   },
@@ -10296,7 +10168,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Innkeeper)",
   },
@@ -10307,7 +10178,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Librarian)",
   },
@@ -10318,7 +10188,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Merchant)",
   },
@@ -10329,7 +10198,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Midwife)",
   },
@@ -10340,7 +10208,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Miller)",
   },
@@ -10351,7 +10218,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Miner)",
   },
@@ -10362,7 +10228,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Porter)",
   },
@@ -10373,7 +10238,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Sailor)",
   },
@@ -10384,7 +10248,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Scribe)",
   },
@@ -10395,7 +10258,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Shepherd)",
   },
@@ -10406,7 +10268,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Soldier)",
   },
@@ -10417,7 +10278,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Soothsayer)",
   },
@@ -10428,7 +10288,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Stable Master)",
   },
@@ -10439,7 +10298,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Tanner)",
   },
@@ -10450,7 +10308,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Trapper)",
   },
@@ -10461,7 +10318,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Profession (Woodcutter)",
   },
@@ -10472,7 +10328,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Ride",
   },
@@ -10483,7 +10338,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Sense Motive",
   },
@@ -10494,7 +10348,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Sleight of Hand",
   },
@@ -10505,7 +10358,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Spellcraft",
   },
@@ -10516,7 +10368,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Stealth",
   },
@@ -10527,7 +10378,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Survival",
   },
@@ -10538,7 +10388,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Swim",
   },
@@ -10549,7 +10398,6 @@ DefineAbility({
   Category="Class Skill",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   ClassSkills={
     "Use Magic Device",
   },
@@ -10560,7 +10408,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Visible=true,
   Definitions={
     {
       Name="RangePenaltyValue",
