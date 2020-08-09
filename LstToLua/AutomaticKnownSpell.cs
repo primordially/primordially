@@ -1,8 +1,8 @@
 ﻿namespace Primordially.LstToLua
 {
-    internal class KnownSpell : LuaObject
+    internal class AutomaticKnownSpell : LuaObject
     {
-        public KnownSpell(int? level, string? name, string? type)
+        public AutomaticKnownSpell(int? level, string? name, string? type)
         {
             Level = level;
             Name = name;
@@ -30,7 +30,7 @@
             base.DumpMembers(output);
         }
 
-        public static KnownSpell Parse(TextSpan value)
+        public static AutomaticKnownSpell Parse(TextSpan value)
         {
             var parts = value.Split(',');
 
@@ -54,7 +54,7 @@
                 }
             }
 
-            return new KnownSpell(level, name, type);
+            return new AutomaticKnownSpell(level, name, type);
         }
     }
 }

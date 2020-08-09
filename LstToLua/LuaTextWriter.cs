@@ -89,9 +89,22 @@ namespace Primordially.LstToLua
             Write(value.ToString());
         }
 
+        public void WriteValue(double value)
+        {
+            Write(value.ToString());
+        }
+
         public void WriteValue(bool value)
         {
             Write(value.ToString().ToLowerInvariant());
+        }
+
+        public void WriteKeyValue(ReadOnlySpan<char> key, IDumpable value)
+        {
+            Write(key);
+            Write("=");
+            value.Dump(this);
+            Write(",\n");
         }
 
         public void WriteKeyValue(ReadOnlySpan<char> key, ReadOnlySpan<char> value)
@@ -103,6 +116,14 @@ namespace Primordially.LstToLua
         }
 
         public void WriteKeyValue(ReadOnlySpan<char> key, int value)
+        {
+            Write(key);
+            Write("=");
+            WriteValue(value);
+            Write(",\n");
+        }
+
+        public void WriteKeyValue(ReadOnlySpan<char> key, double value)
         {
             Write(key);
             Write("=");
@@ -154,30 +175,35 @@ namespace Primordially.LstToLua
             Write("end");
         }
 
-        public void WriteList(string name, IEnumerable<object> items)
+        public void WriteListItems(IEnumerable<object> items)
+        {
+            foreach (var item in items)
+            {
+                if (item is int value)
+                {
+                    WriteValue(value);
+                    Write(", ");
+                }
+                else if (item is IDumpable dmp)
+                {
+                    dmp.Dump(this);
+                    Write(",\n");
+                }
+                else
+                {
+                    WriteValue(item.ToString());
+                    Write(",\n");
+                }
+            }
+        }
+
+        public void WriteListValue(ReadOnlySpan<char> name, IEnumerable<object> items)
         {
             if (items.Any())
             {
                 WriteObjectValue(name, () =>
                 {
-                    foreach (var item in items)
-                    {
-                        if (item is int value)
-                        {
-                            WriteValue(value);
-                            Write(", ");
-                        }
-                        else if (item is IDumpable dmp)
-                        {
-                            dmp.Dump(this);
-                            Write(",\n");
-                        }
-                        else
-                        {
-                            WriteValue(item.ToString());
-                            Write(",\n");
-                        }
-                    }
+                    WriteListItems(items);
                 });
             }
         }

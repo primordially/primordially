@@ -7,9 +7,9 @@ namespace Primordially.LstToLua.Conditions
     internal class VariableCondition : Condition
     {
         public string Op { get; }
-        public IReadOnlyList<(string name, int value)> Pairs { get; }
+        public IReadOnlyList<(string name, string value)> Pairs { get; }
 
-        private VariableCondition(bool invert, string op, List<(string name, int value)> pairs) : base(invert)
+        private VariableCondition(bool invert, string op, List<(string name, string value)> pairs) : base(invert)
         {
             Op = op;
             Pairs = pairs;
@@ -17,14 +17,13 @@ namespace Primordially.LstToLua.Conditions
 
         public static Condition Parse(TextSpan value, bool invert, string op)
         {
-            var pairs = new List<(string name, int value)>();
+            var pairs = new List<(string name, string value)>();
             string? currentName = null;
             foreach (var part in value.Split(','))
             {
                 if (currentName != null)
                 {
-                    var v = Helpers.ParseInt(part);
-                    pairs.Add((currentName, v));
+                    pairs.Add((currentName, part.Value));
                     currentName = null;
                 }
                 else
@@ -58,7 +57,9 @@ namespace Primordially.LstToLua.Conditions
                 _ => throw new InvalidOperationException($"Unknown PREVAR operation {Op}"),
             };
 
-            output.Write(string.Join(" and ", Pairs.Select(pair => $"(character.Variables[\"{pair.name}\"] {op} {pair.value})")));
+            output.Write(string.Join(" and ",
+                Pairs.Select(pair =>
+                    $"(character.Variables[\"{pair.name.Replace("\"", "\\\"")}\"] {op} {(int.TryParse(pair.value, out _) ? pair.value : $"\"{pair.value.Replace("\"", "\\\"")}\"")})")));
 
             if (Inverted)
             {

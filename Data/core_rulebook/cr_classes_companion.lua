@@ -1,0 +1,201 @@
+-- Converted From LST file data\pathfinder\paizo\roleplaying_game\core_rulebook\cr_classes_companion.lst
+-- From repository https://github.com/pcgen/pcgen at commit 11ceb52482855f2e5f0f6c108c3dc665b12af237
+SetSource({
+  SourceLong="Core Rulebook",
+  SourceShort="CR",
+  SourceWeb="http://paizo.com/store/downloads/pathfinder/pathfinderRPG/v5748btpy88yj",
+  SourceDate="2009-08",
+})
+DefineClass({
+  Name="Companion",
+  IntModToSkills=false,
+  DisplayName="Animal",
+  Facts={
+    ClassType="Companion",
+    Abb="AC",
+  },
+  SourcePage="p.52",
+  Definitions={
+    {
+      Name="CompanionClassLevel",
+      InitialValue=0,
+    },
+    {
+      Name="AnimalCompanionSkill",
+      InitialValue=0,
+    },
+    {
+      Name="BaseClassSkillPts",
+      InitialValue=0,
+    },
+  },
+  ClassSkills={
+    "Acrobatics",
+    "Climb",
+    "Fly",
+    "Perception",
+    "Stealth",
+    "Swim",
+  },
+  Bonuses={
+    {
+      Category="ABILITYPOOL",
+      Variables={
+        "Animal Companion Feat",
+      },
+      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
+      Conditions={
+        function (character)
+          return not (((any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end) and 1 or 0)) >= 1)
+        end,
+      },
+    },
+    {
+      Category="COMBAT",
+      Variables={
+        "BASEAB",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="SAVE",
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Reflex",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="SAVE",
+      Variables={
+        "BASE.Will",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassBABModerate",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "CompanionClassLevel",
+      },
+      Formula="CL",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "AnimalCompanionSkill",
+      },
+      Formula="1",
+      Conditions={
+        function (character)
+          return (character.Variables["INTSCORE"] < 3)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "BaseClassSkillPts",
+      },
+      Formula="MAX(1,2+INT)",
+      Conditions={
+        function (character)
+          return not (((any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end) and 1 or 0)) >= 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSaveGood_Fortitude",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSaveGood_Reflex",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSavePoor_Will",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+  },
+  Abilities={
+    {
+      Category="FEAT",
+      Nature="AUTOMATIC",
+      Names={
+        "CMB Output",
+      },
+    },
+  },
+  Types={
+    "Monster",
+    "Companion",
+  },
+  HitDie=8,
+  MaxLevel=20,
+  SkillPointsPerLevel="0+BaseClassSkillPts",
+  Visible=false,
+  Levels={
+    {
+      Level="Start=3,Repeat=2",
+      Bonuses={
+        {
+          Category="ABILITYPOOL",
+          Variables={
+            "FEAT",
+          },
+          Formula="-1",
+        },
+      },
+    },
+  },
+})

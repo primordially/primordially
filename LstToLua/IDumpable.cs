@@ -1,6 +1,6 @@
 ﻿namespace Primordially.LstToLua
 {
-    internal interface IDumpable
+    public interface IDumpable
     {
         void Dump(LuaTextWriter output);
     }

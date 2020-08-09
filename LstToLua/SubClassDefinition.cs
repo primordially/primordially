@@ -72,7 +72,7 @@ namespace Primordially.LstToLua
                 output.WriteKeyValue("Value", ChoiceValue);
             });
             output.WriteKeyValue("Cost", Cost);
-            output.WriteList("Levels", Levels);
+            output.WriteListValue("Levels", Levels);
             base.DumpMembers(output);
         }
     }

@@ -2,12 +2,16 @@
 
 namespace Primordially.LstToLua
 {
-    internal class SourceDefinition
+    internal class SourceDefinition : IDumpable
     {
-        public string? SourceLong { get; }
-        public string? SourceShort { get; }
-        public string? SourceWeb { get; }
-        public string? SourceDate { get; }
+        public string? SourceLong { get; set; }
+        public string? SourceShort { get; set; }
+        public string? SourceWeb { get; set; }
+        public string? SourceDate { get; set; }
+
+        public SourceDefinition()
+        {
+        }
 
         private SourceDefinition(string? sourceLong, string? sourceShort, string? sourceWeb, string? sourceDate)
         {

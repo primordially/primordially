@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Primordially.LstToLua.Conditions;
@@ -7,86 +8,77 @@ namespace Primordially.LstToLua
 {
     internal class AutomaticLanguage : ConditionalObject
     {
-        public string? Name { get; }
-        public string? Type { get; }
-        public bool Invert { get; }
-        public bool All { get; }
-        public AutomaticLanguage(IList<Condition> conditions, string? name, string? type, bool invert, bool all) : base(conditions)
+        public bool Clear { get; }
+        public List<string> Selectors{ get; }
+        public AutomaticLanguage(IList<Condition> conditions, List<string> selectors, bool clear) : base(conditions)
         {
-            Name = name;
-            Type = type;
-            Invert = invert;
-            All = all;
+            Selectors = selectors;
+            Clear = clear;
         }
 
         public static bool TryParse(TextSpan field, [NotNullWhen(true)] out AutomaticLanguage? result)
         {
-            if (!field.StartsWith("AUTO:LANG|"))
+            if (!field.TryRemovePrefix("AUTO:LANG|", out var value))
             {
                 result = null;
                 return false;
             }
 
-            var value = field.Substring("AUTO:LANG|".Length);
-            var parts = value.Split('|').ToArray();
-            Helpers.CheckForMODorCOPYorCLEAR(parts[0]);
-
-            var firstPart = parts[0];
-            string? name = null;
-            string? type = null;
-            bool invert = false;
-            bool all = false;
-
-            if (firstPart.StartsWith("TYPE="))
-            {
-                type = firstPart.Substring("TYPE=".Length).Value;
-            }
-            else if (firstPart.StartsWith("!TYPE="))
-            {
-                type = firstPart.Substring("!TYPE=".Length).Value;
-                invert = true;
-            }
-            else if (firstPart.Value == "ALL")
-            {
-                all = true;
-            }
-            else
-            {
-                name = firstPart.Value;
-            }
-
+            var selectors = new List<string>();
             var conditions = new List<Condition>();
-            foreach (var part in parts.Skip(1))
+            var clear = false;
+
+            foreach (var part in value.Split('|'))
             {
-                if (!Condition.TryParse(part, out Condition? condition))
+                if (part.TryRemovePrefix("TYPE=", out var type) ||
+                    part.TryRemovePrefix("!TYPE=", out type))
                 {
-                    throw new ParseFailedException(part, "Unable to parse Condition.");
+                    var selector = $"language.IsType(\"{type.Value}\")";
+                    if (part.StartsWith("!"))
+                    {
+                        selector = "not " + selector;
+                    }
+                    selectors.Add(selector);
                 }
-                conditions.Add(condition);
+                else if (part.Value == "ALL")
+                {
+                    selectors.Add("true");
+                }
+                else if (part.Value == ".CLEAR")
+                {
+                    clear = true;
+                    selectors.Clear();
+                }
+                else if (Condition.TryParse(part, out var condition))
+                {
+                    conditions.Add(condition);
+                }
+                else
+                {
+                    selectors.Add($"stringMatch(language.Name, \"{part.Value}\")");
+                }
             }
 
-            result = new AutomaticLanguage(conditions, name, type, invert, all);
+            result = new AutomaticLanguage(conditions, selectors, clear);
             return true;
+        }
+
+        public override void AddField(TextSpan field)
+        {
+            throw new NotSupportedException();
         }
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            if (Name != null)
+            if (Clear)
             {
-                output.WriteKeyValue("Name", Name);
+                output.WriteKeyValue("Clear", true);
             }
-            else if (Type != null)
-            {
-                output.WriteKeyValue("Type", Type);
-                if (Invert)
-                {
-                    output.WriteKeyValue("Invert", Invert);
-                }
-            }
-            else if (All)
-            {
-                output.WriteKeyValue("All", All);
-            }
+            output.Write("Selector=");
+            output.WriteStartFunction("language");
+            output.Write($"return {string.Join(" or ", Selectors)}\n");
+            output.WriteEndFunction();
+            output.Write(",\n");
             base.DumpMembers(output);
         }
     }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Primordially.LstToLua.Conditions;
 
@@ -75,6 +76,11 @@ namespace Primordially.LstToLua
             }
 
             return new ProhibitedSpell(alignment, descriptor, school, subschool, names, conditions);
+        }
+
+        public override void AddField(TextSpan field)
+        {
+            throw new NotSupportedException();
         }
 
         protected override void DumpMembers(LuaTextWriter output)

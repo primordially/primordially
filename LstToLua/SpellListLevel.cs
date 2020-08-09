@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Primordially.LstToLua.Conditions;
 
 namespace Primordially.LstToLua
@@ -16,8 +17,13 @@ namespace Primordially.LstToLua
         protected override void DumpMembers(LuaTextWriter output)
         {
             output.WriteKeyValue("SpellLevel", SpellLevel);
-            output.WriteList("Spells", Spells);
+            output.WriteListValue("Spells", Spells);
             base.DumpMembers(output);
+        }
+
+        public override void AddField(TextSpan field)
+        {
+            throw new NotSupportedException();
         }
     }
 }
