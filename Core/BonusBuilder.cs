@@ -11,11 +11,8 @@
 
         private readonly CharacterVariable _workingVariable;
 
-        public BonusBuilder(TKind collection, string name)
+        public BonusBuilder(TKind collection, string name) : this (collection, name, collection.GetVariable(name))
         {
-            _collection = collection;
-            _workingVariable = collection.GetVariable(name);
-            _name = name;
         }
 
         public BonusBuilder(TKind collection, string name, CharacterVariable newValue)
