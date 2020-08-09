@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 
 namespace Primordially.Core
@@ -13,49 +14,55 @@ namespace Primordially.Core
     /// </summary>
     public class CharacterVariable
     {
-        private readonly Character _character;
+        private readonly BaseGameRules _rules;
+        private readonly ImmutableList<Bonus> _values;
 
-        private readonly List<Bonus> _values;
-
-        public CharacterVariable(Character character) : this(character, new List<Bonus>())
+        public CharacterVariable(BaseGameRules rules) : this(rules, ImmutableList<Bonus>.Empty)
         {
         }
 
-        public CharacterVariable(Character character, Bonus value)
+        public CharacterVariable(BaseGameRules rules, Bonus value) : this (rules, ImmutableList.Create(value))
         {
-            _character = character;
-            _values = new List<Bonus> { value };
         }
 
-        public CharacterVariable(Character character, IEnumerable<Bonus> values)
+        public CharacterVariable(BaseGameRules rules, ImmutableList<Bonus> values)
         {
-            _character = character;
-            _values = values.ToList();
+            _rules = rules;
+            _values = values;
         }
 
         public CharacterVariable Add(Bonus value)
         {
-            _values.Add(value);
-            return this;
+            return new CharacterVariable(_rules, _values.Add(value));
+        }
+
+        public int GetBase()
+        {
+            return _values.FirstOrDefault(b => b.Type == "BASE")?.Value ?? 0;
         }
 
         /// <summary>
         /// Get the current value of this variable, with all bonuses included.
         /// </summary>
-        public int Value => GetAppliedBonuses().Sum(v => v.Value);
+        public int Value => GetAppliedBonuses(true).Sum(v => v.Value);
 
         /// <summary>
         /// Get a list of all of the bonuses that are currently effecting this variable.
         /// For any non-stacking bonuses, only the highest is included.
         /// </summary>
         /// <returns>A list of all bonus objects that go into calculating the <see cref="Value"/> result</returns>
-        public IEnumerable<Bonus> GetAppliedBonuses()
+        public IEnumerable<Bonus> GetAppliedBonuses(bool includeBase)
         {
             var applied = new List<Bonus>();
             IEnumerable<IGrouping<string, Bonus>> groups = _values.GroupBy(v => v.Type);
             foreach (IGrouping<string, Bonus> group in groups)
             {
-                if (_character.Rules.StackedBonuses.Contains(group.Key))
+                if (!includeBase && group.Key == "BASE")
+                {
+                    continue;
+                }
+
+                if (_rules.StackedBonuses.Contains(group.Key))
                 {
                     applied.AddRange(group);
                 }

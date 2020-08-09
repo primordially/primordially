@@ -19,6 +19,6 @@ namespace Primordially.PluginCore
         /// by the rules returned by <see cref="LoadRules"/>.  Or a character loaded from a previously
         /// saved character of the same
         /// </summary>
-        PluginViewModelBase GetViewModelForCharacter(Character character);
+        PluginViewModel GetViewModelForCharacter(Character character);
     }
 }

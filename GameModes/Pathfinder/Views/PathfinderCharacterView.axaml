@@ -8,17 +8,16 @@
   <Design.DataContext>
     <local:PathfinderCharacterViewModel />
   </Design.DataContext>
-  <Grid>
-    <Grid.RowDefinitions>
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="Auto" />
-      <RowDefinition Height="*" />
-    </Grid.RowDefinitions>
-    <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="Auto" />
-      <ColumnDefinition Width="*" />
-    </Grid.ColumnDefinitions>
-    <TextBox Grid.Row="0" Grid.Column="0" Text="{Binding Name}" />
-    <TextBlock Grid.Row="1" Grid.Column="0" Text="{Binding Name}" />
-  </Grid>
+  <DockPanel>
+    <WrapPanel DockPanel.Dock="Top" Orientation="Horizontal">
+      <TextBox Text="{Binding Name}" />
+    </WrapPanel>
+    <TabControl>
+      <TabItem Header="Class" Content="{Binding ClassModel}" />
+      <TabItem Header="Basics"></TabItem>
+      <TabItem Header="Skills"></TabItem>
+      <TabItem Header="Feats"></TabItem>
+      <TabItem Header="Inventory"></TabItem>
+    </TabControl>
+  </DockPanel>
 </UserControl>

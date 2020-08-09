@@ -12,7 +12,7 @@ namespace Primordially.App.ViewModels
         private readonly IPlugin _plugin;
         private readonly BaseGameRules _rules;
 
-        private PluginViewModelBase _characterViewModel = null!;
+        private PluginViewModel _characterViewModel = null!;
 
         public MainWindowViewModel()
         {
@@ -21,7 +21,7 @@ namespace Primordially.App.ViewModels
             NewCommand = ReactiveCommand.Create(New);
         }
 
-        public PluginViewModelBase CharacterViewModel
+        public PluginViewModel CharacterViewModel
         {
             get => _characterViewModel;
             private set => this.RaiseAndSetIfChanged(ref _characterViewModel, value);
