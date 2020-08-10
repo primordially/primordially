@@ -511,8 +511,10 @@ namespace Primordially.LstToLua
                     case "ABILITY":
                         new AbilityFileConverter().Convert(inputFileFullPath, outputFile);
                         break;
-                    case "ABILITYCATEGORY":
                     case "ALIGNMENT":
+                        new AlignmentFileConverter().Convert(inputFileFullPath, outputFile);
+                        break;
+                    case "ABILITYCATEGORY":
                     case "ARMORPROF":
                     case "BIOSET":
                     case "COMPANIONMOD":
@@ -535,6 +537,7 @@ namespace Primordially.LstToLua
                     case "TEMPLATE":
                     case "VARIABLE":
                     case "WEAPONPROF":
+                        Console.WriteLine($"Skipping Not-Yet-Implemented file kind {kind}");
                         //throw new NotImplementedException($"File kind {kind} not implemented.");
                         break;
                     default:
@@ -810,6 +813,25 @@ namespace Primordially.LstToLua
                     }
 
                     break;
+            }
+            base.ConvertLine(luaWriter, line);
+        }
+    }
+
+    internal class AlignmentFileConverter : FileConverter
+    {
+        protected override void ConvertLine(LuaTextWriter luaWriter, TsvLine line)
+        {
+            if (line.Fields.Any())
+            {
+                var def = new AlignmentDefinition();
+                foreach (var field in line.Fields)
+                {
+                    def.AddField(field);
+                }
+                def.Dump(luaWriter);
+                luaWriter.Write("\n");
+                return;
             }
             base.ConvertLine(luaWriter, line);
         }
