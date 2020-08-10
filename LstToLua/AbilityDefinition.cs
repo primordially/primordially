@@ -20,7 +20,7 @@ namespace Primordially.LstToLua
         public List<string> TemplateChoices { get; } = new List<string>();
         public bool Visible { get; private set; } = true;
         public Choice? Choice { get; set; }
-        public string? Selections { get; private set; }
+        public Formula? Selections { get; private set; }
 
         public override void Dump(LuaTextWriter output)
         {

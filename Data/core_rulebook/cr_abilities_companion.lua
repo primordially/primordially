@@ -14,7 +14,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Pool_AnimalCompanionFeat",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -27,7 +27,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Pool_CompanionLevelIncreaseChoice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -40,7 +40,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Pool_CompanionStatIncrease",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53,7 +53,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Pool_CompanionSkill",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -66,11 +66,11 @@ DefineAbility({
   Definitions={
     {
       Name="IntelligenceLockNumber",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DisableIntLock",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -79,7 +79,7 @@ DefineAbility({
       Variables={
         "DisableIntLock",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["INTSCORE"] > "IntelligenceLockNumber")
@@ -1172,7 +1172,7 @@ DefineAbility({
   Definitions={
     {
       Name="BonusTricks",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1181,7 +1181,7 @@ DefineAbility({
       Variables={
         "Animal Trick",
       },
-      Formula="var(\"BonusTricks\")",
+      Formula=Formula("var(\"BonusTricks\")"),
     },
   },
   Types={
@@ -1243,7 +1243,7 @@ DefineAbility({
       Variables={
         "Companion Stat Increase",
       },
-      Formula="(MasterLevel>=4)+(MasterLevel>=9)+(MasterLevel>=14)+(MasterLevel>=20)",
+      Formula=Formula("(MasterLevel>=4)+(MasterLevel>=9)+(MasterLevel>=14)+(MasterLevel>=20)"),
     },
   },
   Types={
@@ -1296,7 +1296,7 @@ DefineAbility({
   Definitions={
     {
       Name="Multiattack",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -1394,7 +1394,7 @@ DefineAbility({
       Variables={
         "AC",
       },
-      Formula="2*floor(MasterLevel/3)",
+      Formula=Formula("2*floor(MasterLevel/3)"),
       Type={
         Name="NaturalArmor",
         Replace=false,
@@ -1428,7 +1428,7 @@ DefineAbility({
         "STR",
         "DEX",
       },
-      Formula="floor(MasterLevel/3)",
+      Formula=Formula("floor(MasterLevel/3)"),
     },
   },
   Types={
@@ -1731,7 +1731,7 @@ DefineAbility({
         "DEX",
         "CON",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Racial",
         Replace=false,
@@ -1760,7 +1760,7 @@ DefineAbility({
   Definitions={
     {
       Name="CompanionAdvancement",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1769,7 +1769,7 @@ DefineAbility({
       Variables={
         "CompanionAdvancement",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -1794,7 +1794,7 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -1819,7 +1819,7 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -1844,7 +1844,7 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -1870,7 +1870,7 @@ DefineAbility({
         "STR",
         "CON",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Racial",
         Replace=false,
@@ -1900,7 +1900,7 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -1935,7 +1935,7 @@ DefineAbility({
         "STR",
         "CON",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Racial",
         Replace=false,
@@ -1965,7 +1965,7 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -1999,7 +1999,7 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -2033,7 +2033,7 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -2070,14 +2070,14 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AC_Natural_Armor",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -2108,7 +2108,7 @@ DefineAbility({
         "STR",
         "CON",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Racial",
         Replace=false,
@@ -2148,7 +2148,7 @@ DefineAbility({
         "STR",
         "CON",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Racial",
         Replace=false,
@@ -2187,7 +2187,7 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -2221,14 +2221,14 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AC_Natural_Armor",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Type={
         Name="Base",
         Replace=false,
@@ -2267,7 +2267,7 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -2293,7 +2293,7 @@ DefineAbility({
         "STR",
         "CON",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Racial",
         Replace=false,
@@ -2332,7 +2332,7 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -2367,7 +2367,7 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -2402,14 +2402,14 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AC_Natural_Armor",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -2455,14 +2455,14 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AC_Natural_Armor",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -2508,7 +2508,7 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -3111,7 +3111,7 @@ DefineAbility({
       Variables={
         "STR",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -3136,7 +3136,7 @@ DefineAbility({
       Variables={
         "DEX",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -3161,7 +3161,7 @@ DefineAbility({
       Variables={
         "CON",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -3190,14 +3190,14 @@ DefineAbility({
       Variables={
         "INT",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Mindless",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -3222,7 +3222,7 @@ DefineAbility({
       Variables={
         "WIS",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -3247,7 +3247,7 @@ DefineAbility({
       Variables={
         "CHA",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -3273,7 +3273,7 @@ DefineAbility({
       Variables={
         "%LIST",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -3304,7 +3304,7 @@ DefineAbility({
       Variables={
         "%LIST",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -3349,7 +3349,7 @@ DefineAbility({
   Definitions={
     {
       Name="DiseaseDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -3358,7 +3358,7 @@ DefineAbility({
       Variables={
         "DiseaseDC",
       },
-      Formula="10+(HD/2)+CON",
+      Formula=Formula("10+(HD/2)+CON"),
       Type={
         Name="Base",
         Replace=false,
@@ -3396,15 +3396,15 @@ DefineAbility({
   Definitions={
     {
       Name="DeathRollDice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DeathRollDie",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DeathRollDamage",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -3413,21 +3413,21 @@ DefineAbility({
       Variables={
         "DeathRollDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DeathRollDie",
       },
-      Formula="6",
+      Formula=Formula("6"),
     },
     {
       Category="VAR",
       Variables={
         "DeathRollDamage",
       },
-      Formula="max(STR,0)*1.5",
+      Formula=Formula("max(STR,0)*1.5"),
     },
   },
   Types={
@@ -3454,7 +3454,7 @@ DefineAbility({
   Definitions={
     {
       Name="HoldBreathRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -3463,7 +3463,7 @@ DefineAbility({
       Variables={
         "HoldBreathRounds",
       },
-      Formula="CONSCORE*4",
+      Formula=Formula("CONSCORE*4"),
     },
   },
   Types={
@@ -3518,11 +3518,11 @@ DefineAbility({
   Definitions={
     {
       Name="NaturalAttacks",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="TailSlapAttacks",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -3531,21 +3531,21 @@ DefineAbility({
       Variables={
         "TailSlapAttacks",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "NaturalAttacks",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="WEAPONPROF=Tail Slap",
       Variables={
         "TOHIT",
       },
-      Formula="-5",
+      Formula=Formula("-5"),
       Conditions={
         function (character)
           local count = 0
@@ -3581,7 +3581,7 @@ DefineAbility({
       Variables={
         "DAMAGE",
       },
-      Formula="floor(STR/2)-STR",
+      Formula=Formula("floor(STR/2)-STR"),
       Conditions={
         function (character)
           local count = 0
@@ -3617,7 +3617,7 @@ DefineAbility({
       Variables={
         "DAMAGE",
       },
-      Formula="max(floor(STR/2),0)",
+      Formula=Formula("max(floor(STR/2),0)"),
       Conditions={
         function (character)
           return (character.Variables["NaturalAttacks"] == 1)
@@ -3632,7 +3632,7 @@ DefineAbility({
       Variables={
         "WIELDCATEGORY",
       },
-      Formula="SizeIncrease",
+      Formula=Formula("SizeIncrease"),
     },
   },
   Types={
@@ -3683,14 +3683,14 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AC_Natural_Armor",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -3730,14 +3730,14 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AC_Natural_Armor",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -3749,7 +3749,7 @@ DefineAbility({
       Variables={
         "TrampleDamageDieSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
     },
   },
   Abilities={
@@ -3783,14 +3783,14 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AC_Natural_Armor",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -3829,14 +3829,14 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AC_Natural_Armor",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -3866,14 +3866,14 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AC_Natural_Armor",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -3885,21 +3885,21 @@ DefineAbility({
       Variables={
         "PowerfulChargeDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "PowerfulChargeDamageDieSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
     },
     {
       Category="VAR",
       Variables={
         "PowerfulChargeBonusDamage",
       },
-      Formula="1.5*STR",
+      Formula=Formula("1.5*STR"),
     },
   },
   Abilities={
@@ -3997,14 +3997,14 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AC_Natural_Armor",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -4016,35 +4016,35 @@ DefineAbility({
       Variables={
         "PowerfulChargeDamageDieSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
     },
     {
       Category="VAR",
       Variables={
         "PowerfulChargeDamageDice",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="VAR",
       Variables={
         "PowerfulChargeBonusDamage",
       },
-      Formula="1.5*STR",
+      Formula=Formula("1.5*STR"),
     },
     {
       Category="WEAPONPROF=Hoof",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
     {
       Category="WEAPONPROF=Gore",
       Variables={
         "DAMAGE",
       },
-      Formula="-max(0,(STR/2))",
+      Formula=Formula("-max(0,(STR/2))"),
     },
   },
   Abilities={
@@ -4085,14 +4085,14 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AC_Natural_Armor",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -4104,14 +4104,14 @@ DefineAbility({
       Variables={
         "RendDamageDieSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
     },
     {
       Category="VAR",
       Variables={
         "RendBonusDamage",
       },
-      Formula="1.5*STR",
+      Formula=Formula("1.5*STR"),
     },
   },
   Abilities={
@@ -4146,7 +4146,7 @@ DefineAbility({
         "STR",
         "CON",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -4171,7 +4171,7 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -4201,14 +4201,14 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AC_Natural_Armor",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -4243,7 +4243,7 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -4287,7 +4287,7 @@ DefineAbility({
       Variables={
         "BiteAttacks",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -5207,7 +5207,7 @@ DefineAbility({
       Variables={
         "FEAT",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -5235,7 +5235,7 @@ DefineAbility({
       Variables={
         "FEAT",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={

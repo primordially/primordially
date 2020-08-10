@@ -117,7 +117,14 @@ namespace Primordially.LstToLua
         {
             WriteKey(key);
             Write("=");
-            value.Dump(this);
+            if (value == null)
+            {
+                Write("nil");
+            }
+            else
+            {
+                value.Dump(this);
+            }
             Write(",\n");
         }
 

@@ -12,19 +12,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainAirLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAirAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAirDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAirTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -132,19 +132,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainAnimalLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAnimalDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAnimalTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAnimalAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -255,19 +255,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainArtificeLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainArtificeDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainArtificeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainArtificeAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -375,19 +375,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainChaosLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainChaosDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainChaosTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainChaosAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -498,19 +498,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainCharmLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCharmDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCharmTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCharmAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -618,19 +618,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainCommunityLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCommunityDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCommunityTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCommunityAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -738,19 +738,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainDarknessLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDarknessDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDarknessTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDarknessAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -865,19 +865,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainDeathLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDeathDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDeathTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDeathAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -1055,19 +1055,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainDestructionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDestructionDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDestructionTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDestructionAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -1175,19 +1175,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainEarthLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEarthDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEarthTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEarthAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -1295,19 +1295,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainEvilLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEvilDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEvilTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEvilAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -1418,19 +1418,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainFireLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainFireDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainFireTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainFireAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -1538,19 +1538,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainGloryLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGloryDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGloryTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGloryAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1559,7 +1559,7 @@ DefineDomain({
       Variables={
         "ClericChannelPositiveEnergyDC",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Domain",
         Replace=false,
@@ -1672,19 +1672,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainGoodLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGoodDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGoodTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGoodAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -1795,19 +1795,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainHealingLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainHealingDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainHealingTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainHealingAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -1915,19 +1915,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainKnowledgeLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainKnowledgeDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainKnowledgeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainKnowledgeAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -2038,19 +2038,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainLawLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLawDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLawTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLawAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -2161,19 +2161,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainLiberationLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLiberationDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLiberationTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLiberationAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -2281,19 +2281,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainLuckLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLuckDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLuckTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLuckAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -2401,19 +2401,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainMadnessLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMadnessDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMadnessTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMadnessAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -2521,19 +2521,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainMagicLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMagicDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMagicTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMagicAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -2641,19 +2641,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainNobilityLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainNobilityDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainNobilityTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainNobilityAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -2761,19 +2761,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainPlantLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainPlantDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainPlantTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainPlantAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -2881,23 +2881,23 @@ DefineDomain({
   Definitions={
     {
       Name="DomainProtectionSaveBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainProtectionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainProtectionDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainProtectionTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainProtectionAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -2906,7 +2906,7 @@ DefineDomain({
       Variables={
         "ALL",
       },
-      Formula="DomainProtectionSaveBonus",
+      Formula=Formula("DomainProtectionSaveBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -3019,19 +3019,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainReposeLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainReposeDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainReposeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainReposeAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -3139,19 +3139,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainRuneLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainRuneDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainRuneTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainRuneAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -3266,19 +3266,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainStrengthLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainStrengthDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainStrengthTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainStrengthAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -3386,19 +3386,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainSunLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainSunDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainSunTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainSunAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -3506,19 +3506,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainTravelLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTravelDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTravelTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTravelAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -3527,7 +3527,7 @@ DefineDomain({
       Variables={
         "TYPE=Walk",
       },
-      Formula="10",
+      Formula=Formula("10"),
     },
   },
   Abilities={
@@ -3635,19 +3635,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainTrickeryLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTrickeryDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTrickeryTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTrickeryAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -3760,19 +3760,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainWarLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWarDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWarTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWarAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -3880,19 +3880,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainWaterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWaterDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWaterTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWaterAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -4000,19 +4000,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainWeatherLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWeatherDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWeatherTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWeatherAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -4120,19 +4120,19 @@ DefineDomain({
   Definitions={
     {
       Name="DomainDeathLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDeathDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDeathTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDeathAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -5007,7 +5007,7 @@ ModifyDomain({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })

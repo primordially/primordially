@@ -30,6 +30,7 @@
     "ImportFile",
     "HideObjects",
     "AddAvailableCompanions",
+    "Formula",
     "filter",
     "any",
     "stringMatch",

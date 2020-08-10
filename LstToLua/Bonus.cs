@@ -49,7 +49,7 @@ namespace Primordially.LstToLua
         public string Category { get; }
         public IReadOnlyList<string> Variables { get; }
         public BonusType? Type { get; }
-        public string Formula { get; }
+        public Formula Formula { get; }
 
         protected override void DumpMembers(LuaTextWriter output)
         {

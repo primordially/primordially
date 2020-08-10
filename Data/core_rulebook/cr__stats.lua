@@ -31,35 +31,35 @@ DefineStat({
   Definitions={
     {
       Name="PreStatScore_STR",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MAXLEVELSTAT=STR",
-      InitialValue="STRSCORE-10",
+      InitialValue=Formula("STRSCORE-10"),
     },
     {
       Name="LOADSCORE",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="TWOHANDDAMAGEDIVISOR",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="OFFHANDLIGHTBONUS",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RacialVision",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="OversizeWeaponToHitBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AltSTRSCORE",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -68,7 +68,7 @@ DefineStat({
       Variables={
         "TOHIT.Melee",
       },
-      Formula="STR",
+      Formula=Formula("STR"),
       Conditions={
         function (character)
           return (character.Variables["DisableToHitMeleeStr"] == 0)
@@ -81,7 +81,7 @@ DefineStat({
         "DAMAGE.Melee",
         "DAMAGE.Thrown",
       },
-      Formula="STR",
+      Formula=Formula("STR"),
       Type={
         Name="Ability",
         Replace=false,
@@ -93,28 +93,28 @@ DefineStat({
       Variables={
         "DAMAGEMULT:0",
       },
-      Formula="if(STR>0,0.5,1)",
+      Formula=Formula("if(STR>0,0.5,1)"),
     },
     {
       Category="COMBAT",
       Variables={
         "DAMAGEMULT:1",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="COMBAT",
       Variables={
         "DAMAGEMULT:2",
       },
-      Formula="if(STR>0,1.5,1)",
+      Formula=Formula("if(STR>0,1.5,1)"),
     },
     {
       Category="COMBAT",
       Variables={
         "DAMAGE.Splash",
       },
-      Formula="-STR",
+      Formula=Formula("-STR"),
       Type={
         Name="Ability",
         Replace=false,
@@ -126,7 +126,7 @@ DefineStat({
       Variables={
         "PreStatScore_STR",
       },
-      Formula="max(STRSCORE,AltSTRSCORE)",
+      Formula=Formula("max(STRSCORE,AltSTRSCORE)"),
       Type={
         Name="Base",
         Replace=false,
@@ -138,7 +138,7 @@ DefineStat({
       Variables={
         "LOADSCORE",
       },
-      Formula="STRSCORE",
+      Formula=Formula("STRSCORE"),
     },
     {
       Category="VAR",
@@ -146,14 +146,14 @@ DefineStat({
         "TWOHANDDAMAGEDIVISOR",
         "OFFHANDLIGHTBONUS",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="VAR",
       Variables={
         "RacialVision",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return not (1 <= #filter(character.Abilities, function (ability)
@@ -204,43 +204,43 @@ DefineStat({
   Definitions={
     {
       Name="PreStatScore_DEX",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MAXLEVELSTAT=DEX",
-      InitialValue="DEXSCORE-10",
+      InitialValue=Formula("DEXSCORE-10"),
     },
     {
       Name="INITCOMP",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ACAbilityStat",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MXDXEN",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="FightingDefensivelyACBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="FightingDefensivelyAC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="TotalDefenseACBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="TotalDefenseAC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AltDEXSCORE",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -249,7 +249,7 @@ DefineStat({
       Variables={
         "TOHIT.Ranged",
       },
-      Formula="DEX",
+      Formula=Formula("DEX"),
       Conditions={
         function (character)
           return (character.Variables["DisableToHitRangedDex"] == 0)
@@ -261,7 +261,7 @@ DefineStat({
       Variables={
         "AC",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Type={
         Name="Base",
         Replace=false,
@@ -273,7 +273,7 @@ DefineStat({
       Variables={
         "AC",
       },
-      Formula="min(ACAbilityStat, min(MXDXEN,MODEQUIPMAXDEX))",
+      Formula=Formula("min(ACAbilityStat, min(MXDXEN,MODEQUIPMAXDEX))"),
       Conditions={
         function (character)
           return (character.Variables["ACStatNotDex"] == 0)
@@ -285,7 +285,7 @@ DefineStat({
       Variables={
         "AC",
       },
-      Formula="max(FightingDefensivelyAC,TotalDefenseAC)",
+      Formula=Formula("max(FightingDefensivelyAC,TotalDefenseAC)"),
       Type={
         Name="Dodge",
         Replace=false,
@@ -297,7 +297,7 @@ DefineStat({
       Variables={
         "PreStatScore_DEX",
       },
-      Formula="max(DEXSCORE,AltDEXSCORE)",
+      Formula=Formula("max(DEXSCORE,AltDEXSCORE)"),
       Type={
         Name="Base",
         Replace=false,
@@ -309,21 +309,21 @@ DefineStat({
       Variables={
         "INITCOMP",
       },
-      Formula="DEX",
+      Formula=Formula("DEX"),
     },
     {
       Category="VAR",
       Variables={
         "ACAbilityStat",
       },
-      Formula="DEX",
+      Formula=Formula("DEX"),
     },
     {
       Category="VAR",
       Variables={
         "MXDXEN",
       },
-      Formula="1000",
+      Formula=Formula("1000"),
       Conditions={
         function (character)
           return (character.Variables["ENCUMBERANCE"] == 0)
@@ -335,7 +335,7 @@ DefineStat({
       Variables={
         "MXDXEN",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Conditions={
         function (character)
           return (character.Variables["ENCUMBERANCE"] == 1)
@@ -347,7 +347,7 @@ DefineStat({
       Variables={
         "MXDXEN",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["ENCUMBERANCE"] == 2)
@@ -387,23 +387,23 @@ DefineStat({
   Definitions={
     {
       Name="PreStatScore_CON",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MAXLEVELSTAT=CON",
-      InitialValue="CONSCORE-10",
+      InitialValue=Formula("CONSCORE-10"),
     },
     {
       Name="UseAlternateDamage",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="UseCombatManueverBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AltCONSCORE",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -412,14 +412,14 @@ DefineStat({
       Variables={
         "WOUNDPOINTS",
       },
-      Formula="CON",
+      Formula=Formula("CON"),
     },
     {
       Category="HP",
       Variables={
         "BONUS",
       },
-      Formula="CON",
+      Formula=Formula("CON"),
       Conditions={
         function (character)
           return ((IsRuleEnabled("DAMAGE_HP"))) >= 1
@@ -431,14 +431,14 @@ DefineStat({
       Variables={
         "ALTHP",
       },
-      Formula="CONSCORE*2",
+      Formula=Formula("CONSCORE*2"),
     },
     {
       Category="VAR",
       Variables={
         "PreStatScore_CON",
       },
-      Formula="max(CONSCORE,AltCONSCORE)",
+      Formula=Formula("max(CONSCORE,AltCONSCORE)"),
       Type={
         Name="Base",
         Replace=false,
@@ -450,7 +450,7 @@ DefineStat({
       Variables={
         "UseAlternateDamage",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return ((IsRuleEnabled("DAMAGE_VW"))) >= 1
@@ -462,7 +462,7 @@ DefineStat({
       Variables={
         "UseCombatManueverBonus",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return ((IsRuleEnabled("USE_CMB"))) >= 1
@@ -502,27 +502,27 @@ DefineStat({
   Definitions={
     {
       Name="PreStatScore_INT",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MAXLEVELSTAT=INT",
-      InitialValue="MaxLevelStat_Int",
+      InitialValue=Formula("MaxLevelStat_Int"),
     },
     {
       Name="AdditionalLanguage",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="BonusRetroSkillPoints",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MaxLevelStat_Int",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AltINTSCORE",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -531,7 +531,7 @@ DefineStat({
       Variables={
         "PreStatScore_INT",
       },
-      Formula="max(INTSCORE,AltINTSCORE)",
+      Formula=Formula("max(INTSCORE,AltINTSCORE)"),
       Type={
         Name="Base",
         Replace=false,
@@ -543,21 +543,21 @@ DefineStat({
       Variables={
         "MaxLevelStat_Int",
       },
-      Formula="INTSCORE-10",
+      Formula=Formula("INTSCORE-10"),
     },
     {
       Category="LANG",
       Variables={
         "BONUS",
       },
-      Formula="max(INT,0)+var(\"AdditionalLanguage\")",
+      Formula=Formula("max(INT,0)+var(\"AdditionalLanguage\")"),
     },
     {
       Category="MODSKILLPOINTS",
       Variables={
         "NUMBER",
       },
-      Formula="var(\"STAT.3.MOD.NOEQUIP.NOTEMP\")+BonusRetroSkillPoints",
+      Formula=Formula("var(\"STAT.3.MOD.NOEQUIP.NOTEMP\")+BonusRetroSkillPoints"),
     },
   },
 })
@@ -592,15 +592,15 @@ DefineStat({
   Definitions={
     {
       Name="PreStatScore_WIS",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MAXLEVELSTAT=WIS",
-      InitialValue="WISSCORE-10",
+      InitialValue=Formula("WISSCORE-10"),
     },
     {
       Name="AltWISSCORE",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -609,7 +609,7 @@ DefineStat({
       Variables={
         "PreStatScore_WIS",
       },
-      Formula="max(WISSCORE,AltWISSCORE)",
+      Formula=Formula("max(WISSCORE,AltWISSCORE)"),
       Type={
         Name="Base",
         Replace=false,
@@ -649,35 +649,35 @@ DefineStat({
   Definitions={
     {
       Name="PreStatScore_CHA",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MAXLEVELSTAT=CHA",
-      InitialValue="CHASCORE-10",
+      InitialValue=Formula("CHASCORE-10"),
     },
     {
       Name="BypassSizeMods",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="NormalMount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SizeIncrease",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SizeDecrease",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="NormalFollower",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AltCHASCORE",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -686,7 +686,7 @@ DefineStat({
       Variables={
         "AC",
       },
-      Formula="min(CHA, min(MXDXEN,MODEQUIPMAXDEX))",
+      Formula=Formula("min(CHA, min(MXDXEN,MODEQUIPMAXDEX))"),
       Conditions={
         function (character)
           return (character.Variables["ACStatIsCha"] == 1)
@@ -698,7 +698,7 @@ DefineStat({
       Variables={
         "PreStatScore_CHA",
       },
-      Formula="max(CHASCORE,AltCHASCORE)",
+      Formula=Formula("max(CHASCORE,AltCHASCORE)"),
       Type={
         Name="Base",
         Replace=false,
@@ -711,7 +711,7 @@ DefineStat({
         "NormalMount",
         "NormalFollower",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })

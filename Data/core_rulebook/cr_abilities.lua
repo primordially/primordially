@@ -14,55 +14,55 @@ ModifyAbility({
   Definitions={
     {
       Name="BastardSwordExoticUse",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="BypassSizeMods",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DwarvenWaraxeExoticUse",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ActivateEnlargePerson",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ActivateReducePerson",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Pool_Traits",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="IsPC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Pool_Temp_Feat",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DisableArmorBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DisableShieldBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Pool_CombatFeat",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SPELLFAILURE_Total",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="HasWeaponFinesseFeat",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -71,7 +71,7 @@ ModifyAbility({
       Variables={
         "BastardSwordExoticUse",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -85,7 +85,7 @@ ModifyAbility({
       Variables={
         "DwarvenWaraxeExoticUse",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -99,7 +99,7 @@ ModifyAbility({
       Variables={
         "SPELLFAILURE_Total",
       },
-      Formula="SPELLFAILURE",
+      Formula=Formula("SPELLFAILURE"),
     },
   },
   Abilities={
@@ -138,11 +138,11 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponFocusToHit",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="GreaterWeaponFocusToHit",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -151,7 +151,7 @@ ModifyAbility({
       Variables={
         "WeaponFocusToHit",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -163,7 +163,7 @@ ModifyAbility({
       Variables={
         "GreaterWeaponFocusToHit",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -195,7 +195,7 @@ DefineAbility({
   Definitions={
     {
       Name="NegatedAgePenalty",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -206,14 +206,14 @@ DefineAbility({
         "CON",
         "DEX",
       },
-      Formula="NegatedAgePenalty",
+      Formula=Formula("NegatedAgePenalty"),
     },
     {
       Category="VAR",
       Variables={
         "NegatedAgePenalty",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return ((character.AgeSet >= "Middle-Aged")) >= 1
@@ -225,7 +225,7 @@ DefineAbility({
       Variables={
         "NegatedAgePenalty",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Conditions={
         function (character)
           return ((character.AgeSet >= "Old")) >= 1
@@ -237,7 +237,7 @@ DefineAbility({
       Variables={
         "NegatedAgePenalty",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Conditions={
         function (character)
           return ((character.AgeSet >= "Venerable")) >= 1
@@ -255,11 +255,11 @@ ModifyAbility({
   Definitions={
     {
       Name="Linguisitcs_NumLanguages",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="FightingDefensivelyAttackPenalty",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -268,14 +268,14 @@ ModifyAbility({
       Variables={
         "Linguisitcs_NumLanguages",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "FightingDefensivelyAttackPenalty",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Type={
         Name="Base",
         Replace=false,
@@ -302,7 +302,7 @@ DefineAbility({
   Definitions={
     {
       Name="Feat_Mobility_DodgeBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -311,7 +311,7 @@ DefineAbility({
       Variables={
         "Feat_Mobility_DodgeBonus",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Type={
         Name="Base",
         Replace=false,
@@ -1132,7 +1132,7 @@ DefineAbility({
           Variables={
             "TOHIT",
           },
-          Formula="%CHOICE",
+          Formula=Formula("%CHOICE"),
         },
       },
       {
@@ -1142,7 +1142,7 @@ DefineAbility({
           Variables={
             "DAMAGE.Simple",
           },
-          Formula="InspireCourageBonus",
+          Formula=Formula("InspireCourageBonus"),
         },
       },
       {
@@ -1152,7 +1152,7 @@ DefineAbility({
           Variables={
             "DAMAGE.Martial",
           },
-          Formula="InspireCourageBonus",
+          Formula=Formula("InspireCourageBonus"),
         },
       },
       {
@@ -1162,7 +1162,7 @@ DefineAbility({
           Variables={
             "DAMAGE.Exotic",
           },
-          Formula="InspireCourageBonus",
+          Formula=Formula("InspireCourageBonus"),
         },
       },
       {
@@ -1172,7 +1172,7 @@ DefineAbility({
           Variables={
             "DAMAGE.Natural",
           },
-          Formula="InspireCourageBonus",
+          Formula=Formula("InspireCourageBonus"),
         },
       },
       {
@@ -1182,7 +1182,7 @@ DefineAbility({
           Variables={
             "ActivateTempBonus",
           },
-          Formula="1",
+          Formula=Formula("1"),
         },
       },
       {
@@ -1192,7 +1192,7 @@ DefineAbility({
           Variables={
             "InspireCourageBonus",
           },
-          Formula="%CHOICE",
+          Formula=Formula("%CHOICE"),
         },
       },
     },
@@ -1216,7 +1216,7 @@ DefineAbility({
           Variables={
             "Fortitude",
           },
-          Formula="1",
+          Formula=Formula("1"),
           Type={
             Name="Competence",
             Replace=false,
@@ -1231,7 +1231,7 @@ DefineAbility({
           Variables={
             "TOHIT",
           },
-          Formula="2",
+          Formula=Formula("2"),
           Type={
             Name="Competence",
             Replace=false,
@@ -1246,7 +1246,7 @@ DefineAbility({
           Variables={
             "CURRENTMAX",
           },
-          Formula="%CHOICE+(CON*2)",
+          Formula=Formula("%CHOICE+(CON*2)"),
         },
       },
     },
@@ -1270,7 +1270,7 @@ DefineAbility({
           Variables={
             "ALL",
           },
-          Formula="4",
+          Formula=Formula("4"),
           Type={
             Name="Morale",
             Replace=false,
@@ -1285,7 +1285,7 @@ DefineAbility({
           Variables={
             "AC",
           },
-          Formula="4",
+          Formula=Formula("4"),
           Type={
             Name="Morale",
             Replace=false,
@@ -1315,7 +1315,7 @@ DefineAbility({
             "ActivateTempBonus",
             "AuraOfCourageActivate",
           },
-          Formula="1",
+          Formula=Formula("1"),
         },
       },
     },
@@ -1340,7 +1340,7 @@ DefineAbility({
             "ActivateTempBonus",
             "AuraOfResolveActivate",
           },
-          Formula="1",
+          Formula=Formula("1"),
         },
       },
     },
@@ -1365,7 +1365,7 @@ DefineAbility({
             "ActivateTempBonus",
             "AuraOfJusticeActivate",
           },
-          Formula="1",
+          Formula=Formula("1"),
         },
       },
     },
@@ -1390,7 +1390,7 @@ DefineAbility({
             "ActivateTempBonus",
             "AuraOfRighteousnessActivate",
           },
-          Formula="1",
+          Formula=Formula("1"),
         },
       },
     },
@@ -1413,7 +1413,7 @@ DefineAbility({
           Variables={
             "TOHIT",
           },
-          Formula="min(floor((%CHOICE+7)/6),4)",
+          Formula=Formula("min(floor((%CHOICE+7)/6),4)"),
         },
       },
       {
@@ -1424,7 +1424,7 @@ DefineAbility({
             "DAMAGE.Melee",
             "DAMAGE.Ranged",
           },
-          Formula="min(floor((%CHOICE+7)/6),4)",
+          Formula=Formula("min(floor((%CHOICE+7)/6),4)"),
         },
       },
     },
@@ -1446,7 +1446,7 @@ DefineAbility({
           Variables={
             "STR",
           },
-          Formula="%CHOICE",
+          Formula=Formula("%CHOICE"),
         },
       },
     },
@@ -1461,43 +1461,43 @@ ModifyAbility({
   Definitions={
     {
       Name="StoneskinActivate",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SizeIncrease",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ActivateTempBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="InspireCourageBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="InspireGreatnessActivate",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AuraOfResolveActivate",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AuraOfCourageActivate",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AuraOfJusticeActivate",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AuraOfRighteousnessActivate",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="TempBonus_BlessWeapon",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -2081,7 +2081,7 @@ DefineAbility({
       Variables={
         "%LIST",
       },
-      Formula="TL",
+      Formula=Formula("TL"),
     },
   },
   Types={
@@ -2108,7 +2108,7 @@ DefineAbility({
       Variables={
         "Intelligent Item Languages",
       },
-      Formula="SpeechBonusLang",
+      Formula=Formula("SpeechBonusLang"),
     },
   },
   Abilities={
@@ -2765,7 +2765,7 @@ DefineAbility({
   Choice={
     Choose=ChooseUserInput(1, "Write in Languages Known by the Item"),
   },
-  Selections="1",
+  Selections=Formula("1"),
   Types={
     "IntItemLang",
     "IntelligentItemOutput",
@@ -2838,7 +2838,7 @@ DefineAbility({
     end),
     MaxTimes=1,
   },
-  Selections="1",
+  Selections=Formula("1"),
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -2865,7 +2865,7 @@ DefineAbility({
     end),
     MaxTimes=1,
   },
-  Selections="1",
+  Selections=Formula("1"),
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -2912,7 +2912,7 @@ DefineAbility({
     end),
     MaxTimes=1,
   },
-  Selections="1",
+  Selections=Formula("1"),
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -2939,7 +2939,7 @@ DefineAbility({
     end),
     MaxTimes=1,
   },
-  Selections="1",
+  Selections=Formula("1"),
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -2986,7 +2986,7 @@ DefineAbility({
     end),
     MaxTimes=1,
   },
-  Selections="1",
+  Selections=Formula("1"),
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -3013,7 +3013,7 @@ DefineAbility({
     end),
     MaxTimes=1,
   },
-  Selections="1",
+  Selections=Formula("1"),
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -3040,7 +3040,7 @@ DefineAbility({
     end),
     MaxTimes=1,
   },
-  Selections="1",
+  Selections=Formula("1"),
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -3107,7 +3107,7 @@ DefineAbility({
     end),
     MaxTimes=1,
   },
-  Selections="1",
+  Selections=Formula("1"),
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -3154,7 +3154,7 @@ DefineAbility({
     end),
     MaxTimes=1,
   },
-  Selections="1",
+  Selections=Formula("1"),
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -3181,7 +3181,7 @@ DefineAbility({
     end),
     MaxTimes=1,
   },
-  Selections="1",
+  Selections=Formula("1"),
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -3435,7 +3435,7 @@ DefineAbility({
     end),
     MaxTimes=1,
   },
-  Selections="1",
+  Selections=Formula("1"),
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -3463,7 +3463,7 @@ DefineAbility({
     end),
     MaxTimes=1,
   },
-  Selections="1",
+  Selections=Formula("1"),
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -3491,7 +3491,7 @@ DefineAbility({
     end),
     MaxTimes=1,
   },
-  Selections="1",
+  Selections=Formula("1"),
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -3519,7 +3519,7 @@ DefineAbility({
     end),
     MaxTimes=1,
   },
-  Selections="1",
+  Selections=Formula("1"),
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -3552,7 +3552,7 @@ DefineAbility({
       Variables={
         "Intelligent Item Power",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -3568,7 +3568,7 @@ DefineAbility({
       Variables={
         "Intelligent Item Power",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -3584,7 +3584,7 @@ DefineAbility({
       Variables={
         "Intelligent Item Power",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -3600,7 +3600,7 @@ DefineAbility({
       Variables={
         "Intelligent Item Power",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -3616,7 +3616,7 @@ DefineAbility({
       Variables={
         "Intelligent Item Power",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -3632,7 +3632,7 @@ DefineAbility({
       Variables={
         "Intelligent Item Power",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -3648,7 +3648,7 @@ DefineAbility({
       Variables={
         "Intelligent Item Power",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -3664,7 +3664,7 @@ DefineAbility({
       Variables={
         "Intelligent Item Power",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -3680,7 +3680,7 @@ DefineAbility({
       Variables={
         "Intelligent Item Power",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -3696,7 +3696,7 @@ DefineAbility({
       Variables={
         "Intelligent Item Power",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -3712,7 +3712,7 @@ DefineAbility({
       Variables={
         "Intelligent Item Purpose Power",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -3728,7 +3728,7 @@ DefineAbility({
       Variables={
         "Intelligent Item Purpose Power",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -3744,7 +3744,7 @@ DefineAbility({
       Variables={
         "Intelligent Item Purpose Power",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -3760,7 +3760,7 @@ DefineAbility({
       Variables={
         "Intelligent Item Purpose Power",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -4070,7 +4070,7 @@ ModifyAbility({
   Definitions={
     {
       Name="DomainNotAllowed",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -4104,7 +4104,7 @@ DefineAbility({
   Definitions={
     {
       Name="NegLevels",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -4113,14 +4113,14 @@ DefineAbility({
       Variables={
         "TOHIT",
       },
-      Formula="-1*(NegLevels)",
+      Formula=Formula("-1*(NegLevels)"),
     },
     {
       Category="HP",
       Variables={
         "CURRENTMAX",
       },
-      Formula="-5*(NegLevels)",
+      Formula=Formula("-5*(NegLevels)"),
     },
     {
       Category="SAVE",
@@ -4129,7 +4129,7 @@ DefineAbility({
         "Reflex",
         "Will",
       },
-      Formula="-1*(NegLevels)",
+      Formula=Formula("-1*(NegLevels)"),
     },
     {
       Category="SKILL",
@@ -4140,7 +4140,7 @@ DefineAbility({
         "TYPE=Wisdom",
         "TYPE=Charisma",
       },
-      Formula="-1*(NegLevels)",
+      Formula=Formula("-1*(NegLevels)"),
     },
   },
   Types={
@@ -4156,43 +4156,43 @@ DefineAbility({
   Definitions={
     {
       Name="ShieldBashingDieSizeStep",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="NaturalShieldReach",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ShieldBashAttackBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ShieldDamageDice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ShieldDamageSize",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ShieldBashDamageBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ShieldThreatRange",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ShieldBashAttackTotal",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="InterativeAttack",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ShieldCritMult",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -4201,42 +4201,42 @@ DefineAbility({
       Variables={
         "NaturalShieldReach",
       },
-      Formula="REACH.VAL",
+      Formula=Formula("REACH.VAL"),
     },
     {
       Category="VAR",
       Variables={
         "ShieldBashAttackTotal",
       },
-      Formula="BAB+STR+ShieldBashAttackBonus",
+      Formula=Formula("BAB+STR+ShieldBashAttackBonus"),
     },
     {
       Category="VAR",
       Variables={
         "InterativeAttack",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "ShieldCritMult",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="VAR",
       Variables={
         "ShieldThreatRange",
       },
-      Formula="20",
+      Formula=Formula("20"),
     },
     {
       Category="VAR",
       Variables={
         "ShieldBashAttackBonus",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -4250,7 +4250,7 @@ DefineAbility({
       Variables={
         "ShieldBashAttackBonus",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -4264,7 +4264,7 @@ DefineAbility({
       Variables={
         "ShieldBashDamageBonus",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -4278,7 +4278,7 @@ DefineAbility({
       Variables={
         "ShieldBashDamageBonus",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -4292,7 +4292,7 @@ DefineAbility({
       Variables={
         "InterativeAttack",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return character.TotalAttackBonus >= 6
@@ -4304,7 +4304,7 @@ DefineAbility({
       Variables={
         "InterativeAttack",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return character.TotalAttackBonus >= 11
@@ -4316,7 +4316,7 @@ DefineAbility({
       Variables={
         "InterativeAttack",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return character.TotalAttackBonus >= 16
@@ -4464,7 +4464,7 @@ DefineAbility({
       Variables={
         "ShieldDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -4476,7 +4476,7 @@ DefineAbility({
       Variables={
         "ShieldBashAttackBonus",
       },
-      Formula="-4",
+      Formula=Formula("-4"),
       Conditions={
         function (character)
           return not (1 <= #filter(character.Abilities, function (ability)
@@ -4499,7 +4499,7 @@ ModifyAbility({
       Variables={
         "ShieldBashingDieSizeStep",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Conditions={
         function (character)
           local count = 0
@@ -4525,7 +4525,7 @@ ModifyAbility({
       Variables={
         "ShieldBashingDieSizeStep",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Conditions={
         function (character)
           local count = 0
@@ -4560,7 +4560,7 @@ ModifyAbility({
       Variables={
         "ShieldBashingDieSizeStep",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Conditions={
         function (character)
           local count = 0
@@ -4586,7 +4586,7 @@ ModifyAbility({
       Variables={
         "ShieldBashingDieSizeStep",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Conditions={
         function (character)
           local count = 0
@@ -4873,7 +4873,7 @@ DefineAbility({
       Variables={
         "ShieldDamageSize",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -4889,7 +4889,7 @@ DefineAbility({
       Variables={
         "ShieldDamageSize",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
 })
@@ -4905,7 +4905,7 @@ DefineAbility({
       Variables={
         "ShieldDamageSize",
       },
-      Formula="3",
+      Formula=Formula("3"),
     },
   },
 })
@@ -4921,7 +4921,7 @@ DefineAbility({
       Variables={
         "ShieldDamageSize",
       },
-      Formula="4",
+      Formula=Formula("4"),
     },
   },
 })
@@ -4937,7 +4937,7 @@ DefineAbility({
       Variables={
         "ShieldDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
     },
   },
 })
@@ -4953,7 +4953,7 @@ DefineAbility({
       Variables={
         "ShieldDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
     },
   },
 })
@@ -4969,7 +4969,7 @@ DefineAbility({
       Variables={
         "ShieldDamageSize",
       },
-      Formula="10",
+      Formula=Formula("10"),
     },
   },
 })
@@ -4985,7 +4985,7 @@ DefineAbility({
       Variables={
         "ShieldDamageSize",
       },
-      Formula="12",
+      Formula=Formula("12"),
     },
   },
 })
@@ -5001,14 +5001,14 @@ DefineAbility({
       Variables={
         "ShieldDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
     },
     {
       Category="VAR",
       Variables={
         "ShieldDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -5024,14 +5024,14 @@ DefineAbility({
       Variables={
         "ShieldDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
     },
     {
       Category="VAR",
       Variables={
         "ShieldDamageDice",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
 })
@@ -5047,14 +5047,14 @@ DefineAbility({
       Variables={
         "ShieldDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
     },
     {
       Category="VAR",
       Variables={
         "ShieldDamageDice",
       },
-      Formula="3",
+      Formula=Formula("3"),
     },
   },
 })
@@ -5070,14 +5070,14 @@ DefineAbility({
       Variables={
         "ShieldDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
     },
     {
       Category="VAR",
       Variables={
         "ShieldDamageDice",
       },
-      Formula="5",
+      Formula=Formula("5"),
     },
   },
 })
@@ -5093,14 +5093,14 @@ DefineAbility({
       Variables={
         "ShieldDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
     },
     {
       Category="VAR",
       Variables={
         "ShieldDamageDice",
       },
-      Formula="7",
+      Formula=Formula("7"),
     },
   },
 })
@@ -5116,14 +5116,14 @@ DefineAbility({
       Variables={
         "ShieldDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
     },
     {
       Category="VAR",
       Variables={
         "ShieldDamageDice",
       },
-      Formula="11",
+      Formula=Formula("11"),
     },
   },
 })
@@ -5139,7 +5139,7 @@ DefineAbility({
       Variables={
         "TOHIT.GRAPPLE",
       },
-      Formula="EnlargePerson_GrappleBonusValue",
+      Formula=Formula("EnlargePerson_GrappleBonusValue"),
       Type={
         Name="Size",
         Replace=false,
@@ -5151,14 +5151,14 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="STAT",
       Variables={
         "STR",
       },
-      Formula="EnlargePerson_StrBonusValue",
+      Formula=Formula("EnlargePerson_StrBonusValue"),
       Type={
         Name="Size",
         Replace=false,
@@ -5170,7 +5170,7 @@ DefineAbility({
       Variables={
         "DEX",
       },
-      Formula="-EnlargePerson_DexBonusValue",
+      Formula=Formula("-EnlargePerson_DexBonusValue"),
       Type={
         Name="Size",
         Replace=false,
@@ -5182,21 +5182,21 @@ DefineAbility({
       Variables={
         "SizeIncrease",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
     {
       Category="VAR",
       Variables={
         "DamageSizeAdjustment",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AC_Natural_Armor",
       },
-      Formula="EnlargePerson_ACBonusValue",
+      Formula=Formula("EnlargePerson_ACBonusValue"),
     },
   },
   Abilities={
@@ -5221,7 +5221,7 @@ DefineAbility({
       Variables={
         "TOHIT.GRAPPLE",
       },
-      Formula="-5",
+      Formula=Formula("-5"),
       Type={
         Name="Size",
         Replace=false,
@@ -5233,14 +5233,14 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
     {
       Category="STAT",
       Variables={
         "STR",
       },
-      Formula="-2",
+      Formula=Formula("-2"),
       Type={
         Name="Size",
         Replace=false,
@@ -5252,7 +5252,7 @@ DefineAbility({
       Variables={
         "DEX",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Size",
         Replace=false,
@@ -5264,14 +5264,14 @@ DefineAbility({
       Variables={
         "SizeDecrease",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
     {
       Category="VAR",
       Variables={
         "DamageSizeAdjustment",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Abilities={
@@ -5293,7 +5293,7 @@ ModifyAbility({
   Definitions={
     {
       Name="EnlargePerson_GrappleBonusValue",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -5306,7 +5306,7 @@ ModifyAbility({
   Definitions={
     {
       Name="EnlargePerson_StrBonusValue",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -5319,7 +5319,7 @@ ModifyAbility({
   Definitions={
     {
       Name="EnlargePerson_DexBonusValue",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -5332,7 +5332,7 @@ ModifyAbility({
   Definitions={
     {
       Name="EnlargePerson_ACBonusValue",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -5348,7 +5348,7 @@ ModifyAbility({
       Variables={
         "EnlargePerson_GrappleBonusValue",
       },
-      Formula="5",
+      Formula=Formula("5"),
     },
   },
 })
@@ -5364,7 +5364,7 @@ ModifyAbility({
       Variables={
         "EnlargePerson_StrBonusValue",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
 })
@@ -5380,7 +5380,7 @@ ModifyAbility({
       Variables={
         "EnlargePerson_DexBonusValue",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
 })
@@ -5393,7 +5393,7 @@ DefineAbility({
   Definitions={
     {
       Name="DamageSizeAdjustment",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -5402,1428 +5402,1428 @@ DefineAbility({
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Aklys",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Amentum (Javelin)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Amentum",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Atlatl",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Axe (Orc Double)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Axe (Throwing)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Ballista (Gate Breaker)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Ballista (Heavy)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Ballista (Light)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Battle Aspergillum",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Battleaxe",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Blowgun",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Blunderbuss",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Bo Staff",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Boar Spear",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Bolas",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Bombard (Heavy)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Bombard (Light)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Bombard (Standard)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Brass Knuckles",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Broadsword (Nine Ring)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Buckler Gun",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Butterfly Sword",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Cannon (Fiend's Mouth)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Cannon",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Catapult (Heavy)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Catapult (Light)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Catapult (Standard)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Chain (Spiked)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Chain Spear",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Club",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Crossbow (Hand)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Crossbow (Heavy)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Crossbow (Light)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Crossbow (Repeating Hand)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Crossbow (Repeating Heavy)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Crossbow (Repeating Light)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Culverin",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Curve Blade (Elven)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Dagger (Punching)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Dagger",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Dan Bong",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Dart",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Dogslicer",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Double Chicken Saber",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Double Hackbut",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Earth Breaker",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Emei Piercer",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Falchion",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Fighting Fan",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Fire Lance",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Firearms",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Firedrake",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Firewyrm",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Flail (Dire)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Flail (Heavy)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Flail",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Flying Blade",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Gauntlet (Spiked)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Gauntlet",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Gladius",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Glaive",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Great Terbutje",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Greataxe",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Greatclub",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Greatsword",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Guisarme",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Halberd",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Hammer (Gnome Hooked)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Hammer (Light)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Handaxe",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Harpoon",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Hooked Axe",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Hooked Lance",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Horsechopper",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Hunga Munga",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Iron Brush",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Javelin",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Jutte",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Kama (Double-Chained)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Kama",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Katana (Double Walking Stick)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Katana",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Kerambit",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Kestros",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Klar",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Knuckle Axe",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Kukri",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Kusarigama (Sickle and Chain)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Kyoketsu Shoge",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Lance",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Longbow",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Longspear",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Longsword",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Lucerne Hammer",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Lungchuan Tamo",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Mace (Heavy)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Mace (Light)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Madu",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Mattock",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Mere Club",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Meteor Hammer",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Monk's Spade",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Morningstar",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Musket (Axe)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Musket (Double-Barreled)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Musket (Warhammer)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Musket",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Naginata",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Net",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Nine-Section Whip",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Nodachi",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Nunchaku",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Ogre Hook",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Pata",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Pepperbox",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Pick (Heavy)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Pick (Light)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Pistol (Coat)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Pistol (Dagger)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Pistol (Double-Barreled)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Pistol (Dragon)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Pistol (Sword Cane)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Pistol",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Poisoned Sand Tube",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Quadrens",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Quarterstaff",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Ranseur",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Rapier",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Revolver",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Rhoka Sword",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Rhomphaia",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Rifle",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Rope Dart",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Sai",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Sansetsukon",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Sap",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Sawtooth Sabre",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Scimitar",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Scizore",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Scorpion Whip",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Scythe",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Shang Gou",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Shieldbash",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Shortbow",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Shortspear",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Shotel",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Shotgun",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Shuriken",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Siangham",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Sibat",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Sica",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Sickle",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Sling Staff (Halfling)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Sling",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Snag Net",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Spear",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Spiked Armor",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Splash Weapon",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Springal (Arrow)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Springal (Rocket)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Starknife",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Sword (Bastard)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Sword (Seven-Branched)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Sword (Short)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Sword (Tri-Point Double-Edged)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Sword (Two-Bladed)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Swordbreaker (Dagger)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Taiaha",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Taiaha",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Tekko-Kagi (Iron Claw)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Temple Sword",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Tepoztopilli",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Terbutje (Great)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Terbutje",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Tetsubo",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Throwing Shield",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Tiger Fork",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Tonfa",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Trebuchet (Heavy)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Trebuchet (Light)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Trebuchet (Standard)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Trident",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Tube Arrow Shooter",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Underwater Crossbow (Heavy)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Underwater Crossbow (Light)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Urgrosh (Dwarven)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Urumi",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Wahaika",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Wakizashi",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Waraxe (Dwarven)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Warhammer",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Whip",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Wushu Dart",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Waraxe (Dwarven Double)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Helmet (Dwarven Boulder)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Longaxe (Dwarven)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Longhammer (Dwarven)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Kobold Tail Attachment",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Tailblade (Ratfolk)",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Terror Kite",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WEAPONPROF=Sea-Knife",
       Variables={
         "DAMAGESIZE",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
     {
       Category="WIELDCATEGORY",
       Variables={
         "ALL",
       },
-      Formula="DamageSizeAdjustment",
+      Formula=Formula("DamageSizeAdjustment"),
     },
   },
 })
@@ -6848,7 +6848,7 @@ DefineAbility({
       Variables={
         "FEAT",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -6879,7 +6879,7 @@ DefineAbility({
       Variables={
         "%LIST",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -6910,7 +6910,7 @@ DefineAbility({
       Variables={
         "%LIST",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -6939,7 +6939,7 @@ DefineAbility({
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -6968,7 +6968,7 @@ DefineAbility({
       Variables={
         "CURRENTMAX",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -6997,7 +6997,7 @@ DefineAbility({
       Variables={
         "GM Bonus Spell Cast",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7025,7 +7025,7 @@ DefineAbility({
       Variables={
         "GM Bonus Spell Known",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7053,7 +7053,7 @@ DefineAbility({
       Variables={
         "TYPE.Arcane",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7081,7 +7081,7 @@ DefineAbility({
       Variables={
         "TYPE.Divine",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7140,7 +7140,7 @@ DefineAbility({
       Variables={
         "%LIST",
       },
-      Formula="TL",
+      Formula=Formula("TL"),
     },
   },
   Types={
@@ -7204,7 +7204,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=1",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7234,7 +7234,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=2",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7264,7 +7264,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=3",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7294,7 +7294,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=4",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7324,7 +7324,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=5",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7354,7 +7354,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=6",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7384,7 +7384,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=7",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7414,7 +7414,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=8",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7444,7 +7444,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=9",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7474,7 +7474,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=1",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7504,7 +7504,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=2",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7534,7 +7534,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=3",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7564,7 +7564,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=4",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7594,7 +7594,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=5",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7624,7 +7624,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=6",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7654,7 +7654,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=7",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7684,7 +7684,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=8",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7714,7 +7714,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=9",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7743,7 +7743,7 @@ DefineAbility({
       Variables={
         "STR",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7772,7 +7772,7 @@ DefineAbility({
       Variables={
         "DEX",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7801,7 +7801,7 @@ DefineAbility({
       Variables={
         "CON",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7830,7 +7830,7 @@ DefineAbility({
       Variables={
         "INT",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7859,7 +7859,7 @@ DefineAbility({
       Variables={
         "WIS",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7888,7 +7888,7 @@ DefineAbility({
       Variables={
         "CHA",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -7917,7 +7917,7 @@ DefineAbility({
       Variables={
         "FEAT",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -7948,7 +7948,7 @@ DefineAbility({
       Variables={
         "%LIST",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -7979,7 +7979,7 @@ DefineAbility({
       Variables={
         "%LIST",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8008,7 +8008,7 @@ DefineAbility({
       Variables={
         "CURRENTMAX",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8037,7 +8037,7 @@ DefineAbility({
       Variables={
         "GM Penalized Spell Cast",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -8065,7 +8065,7 @@ DefineAbility({
       Variables={
         "GM Penalized Spell Known",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -8093,7 +8093,7 @@ DefineAbility({
       Variables={
         "TYPE.Arcane",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8121,7 +8121,7 @@ DefineAbility({
       Variables={
         "TYPE.Divine",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8150,7 +8150,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=1",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8180,7 +8180,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=2",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8210,7 +8210,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=3",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8240,7 +8240,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=4",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8270,7 +8270,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=5",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8300,7 +8300,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=6",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8330,7 +8330,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=7",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8360,7 +8360,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=8",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8390,7 +8390,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=9",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8420,7 +8420,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=1",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8450,7 +8450,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=2",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8480,7 +8480,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=3",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8510,7 +8510,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=4",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8540,7 +8540,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=5",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8570,7 +8570,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=6",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8600,7 +8600,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=7",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8630,7 +8630,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=8",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8660,7 +8660,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=9",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8689,7 +8689,7 @@ DefineAbility({
       Variables={
         "STR",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8718,7 +8718,7 @@ DefineAbility({
       Variables={
         "DEX",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8747,7 +8747,7 @@ DefineAbility({
       Variables={
         "CON",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8776,7 +8776,7 @@ DefineAbility({
       Variables={
         "INT",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8805,7 +8805,7 @@ DefineAbility({
       Variables={
         "WIS",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8834,7 +8834,7 @@ DefineAbility({
       Variables={
         "CHA",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -8863,7 +8863,7 @@ DefineAbility({
       Variables={
         "AC",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Deflection",
         Replace=false,
@@ -8897,7 +8897,7 @@ DefineAbility({
       Variables={
         "AC",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="NaturalArmorEnhancement",
         Replace=false,
@@ -8931,7 +8931,7 @@ DefineAbility({
       Variables={
         "TYPE.Walk",
       },
-      Formula="5",
+      Formula=Formula("5"),
     },
   },
   Types={
@@ -8960,7 +8960,7 @@ DefineAbility({
       Variables={
         "TYPE.Walk",
       },
-      Formula="-5",
+      Formula=Formula("-5"),
     },
   },
   Types={
@@ -8981,7 +8981,7 @@ DefineAbility({
   Definitions={
     {
       Name="BypassTraitRestriction",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -8990,7 +8990,7 @@ DefineAbility({
       Variables={
         "BypassTraitRestriction",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Rule",
         Replace=false,
@@ -9015,7 +9015,7 @@ DefineAbility({
   Definitions={
     {
       Name="BypassDrawbackRestriction",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -9024,7 +9024,7 @@ DefineAbility({
       Variables={
         "BypassDrawbackRestriction",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Rule",
         Replace=false,
@@ -9049,7 +9049,7 @@ DefineAbility({
   Definitions={
     {
       Name="UseWeaponsWithNaturalAttacks",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -9058,7 +9058,7 @@ DefineAbility({
       Variables={
         "UseWeaponsWithNaturalAttacks",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Rule",
         Replace=false,
@@ -9138,7 +9138,7 @@ DefineAbility({
       Variables={
         "DEX",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Enhancement",
         Replace=false,
@@ -9171,7 +9171,7 @@ DefineAbility({
       Variables={
         "AC",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Insight",
         Replace=false,
@@ -9204,7 +9204,7 @@ DefineAbility({
       Variables={
         "WIS",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Enhancement",
         Replace=false,
@@ -9281,7 +9281,7 @@ DefineAbility({
       Variables={
         "Caster_Level_Bonus",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -9309,7 +9309,7 @@ DefineAbility({
       Variables={
         "STR",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Enhancement",
         Replace=false,
@@ -9345,7 +9345,7 @@ DefineAbility({
       Variables={
         "TOHIT",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Competence",
         Replace=false,
@@ -9357,7 +9357,7 @@ DefineAbility({
       Variables={
         "ALL",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Competence",
         Replace=false,
@@ -9369,7 +9369,7 @@ DefineAbility({
       Variables={
         "TYPE.Base",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Competence",
         Replace=false,
@@ -9446,7 +9446,7 @@ DefineAbility({
       Variables={
         "CHA",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Enhancement",
         Replace=false,
@@ -9479,7 +9479,7 @@ DefineAbility({
       Variables={
         "CON",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Enhancement",
         Replace=false,
@@ -9512,7 +9512,7 @@ DefineAbility({
       Variables={
         "INT",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Enhancement",
         Replace=false,
@@ -10608,7 +10608,7 @@ DefineAbility({
   Definitions={
     {
       Name="RangePenaltyValue",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -10617,7 +10617,7 @@ DefineAbility({
       Variables={
         "RANGEPENALTY",
       },
-      Formula="RangePenaltyValue",
+      Formula=Formula("RangePenaltyValue"),
     },
   },
 })
