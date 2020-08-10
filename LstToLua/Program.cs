@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
-using LibGit2Sharp;
 using Primordially.LstToLua.Conditions;
 
 namespace Primordially.LstToLua
@@ -108,75 +106,6 @@ namespace Primordially.LstToLua
         }
     }
 
-    internal class CampaignCondition : IDumpable
-    {
-        public CampaignCondition(bool invert, int count, List<string> conditions)
-        {
-            Invert = invert;
-            Count = count;
-            Conditions = conditions;
-        }
-
-        public bool Invert { get; }
-        public int Count { get; set; }
-        public List<string> Conditions { get; }
-
-        public static CampaignCondition Parse(bool invert, TextSpan value)
-        {
-            var parts = value.Split(',').ToArray();
-            if (parts.Length < 2)
-            {
-                throw new ParseFailedException(value, "Unable to parse PRECAMPAIGN");
-            }
-
-            var count = Helpers.ParseInt(parts[0]);
-            var conditions = new List<string>();
-            foreach (var part in parts.Skip(1))
-            {
-                if (part.StartsWith("BOOKTYPE="))
-                {
-                    conditions.Add($"source.BookType == '{part.Substring("BOOKTYPE=".Length).Value}'");
-                }
-                else if (part.StartsWith("INCLUDES="))
-                {
-                    conditions.Add($"source.Includes('{part.Substring("INCLUDES=".Length).Value}')");
-                }
-                else if (part.StartsWith("INCLUDESBOOKTYPE="))
-                {
-                    conditions.Add($"source.IncludesBookType('{part.Substring("INCLUDESBOOKTYPE=".Length).Value}')");
-                }
-                else
-                {
-                    conditions.Add($"source.Name == \"{part.Value.Replace("\"", "\\\"")}\"");
-                }
-            }
-
-            return new CampaignCondition(invert, count, conditions);
-        }
-
-        public void Dump(LuaTextWriter output)
-        {
-            output.WriteStartFunction("source");
-            output.Write("local count = 0\n");
-            foreach (var condition in Conditions)
-            {
-                output.Write($"if {condition} then\n");
-                output.Write("  count = count + 1\n");
-                output.Write("end\n");
-            }
-
-            if (Invert)
-            {
-                output.Write($"return count < {Count}\n");
-            }
-            else
-            {
-                output.Write($"return count >= {Count}\n");
-            }
-            output.WriteEndFunction();
-        }
-    }
-
     class Program
     {
         static void Main(string[] args)
@@ -225,6 +154,13 @@ namespace Primordially.LstToLua
                     var (k, v) = field.SplitTuple(':');
                     switch (k.Value)
                     {
+                        case "DATATABLE":
+                        case "DYNAMIC":
+                            // These files have nothing in them.....
+                            break;
+                        case "GLOBALMODIFIER":
+                            // These files have only one line, and its undocumented and looks useless
+                            break;
                         case "ABILITY":
                         case "ABILITYCATEGORY":
                         case "ALIGNMENT":
@@ -233,13 +169,10 @@ namespace Primordially.LstToLua
                         case "CLASS":
                         case "COMPANIONMOD":
                         case "DATACONTROL":
-                        case "DATATABLE":
                         case "DEITY":
                         case "DOMAIN":
-                        case "DYNAMIC":
                         case "EQUIPMENT":
                         case "EQUIPMOD":
-                        case "GLOBALMODIFIER":
                         case "KIT":
                         case "LANGUAGE":
                         case "RACE":
@@ -487,6 +420,7 @@ namespace Primordially.LstToLua
                 }
             }
 
+
             var pccDirectory = Path.GetDirectoryName(pccFile);
             foreach (var (kind, inputFile) in filesToProcess)
             {
@@ -514,11 +448,24 @@ namespace Primordially.LstToLua
                     case "ALIGNMENT":
                         new AlignmentFileConverter().Convert(inputFileFullPath, outputFile);
                         break;
+                    case "DATACONTROL":
+                        new DataControlFileConverter().Convert(inputFileFullPath, outputFile);
+                        break;
+                    case "SAVE":
+                        new SaveFileConverter().Convert(inputFileFullPath, outputFile);
+                        break;
+                    case "STAT":
+                        new StatFileConverter().Convert(inputFileFullPath, outputFile);
+                        break;
+                    case "VARIABLE":
+                        new SingleObjectFileConverter<VariableDefinition>().Convert(inputFileFullPath, outputFile);
+                        break;
                     case "ABILITYCATEGORY":
+                        new SingleObjectFileConverter<AbilityCategoryDefinition>().Convert(inputFileFullPath, outputFile);
+                        break;
                     case "ARMORPROF":
                     case "BIOSET":
                     case "COMPANIONMOD":
-                    case "DATACONTROL":
                     case "DATATABLE":
                     case "DEITY":
                     case "DOMAIN":
@@ -529,13 +476,10 @@ namespace Primordially.LstToLua
                     case "KIT":
                     case "LANGUAGE":
                     case "RACE":
-                    case "SAVE":
                     case "SHIELDPROF":
                     case "SKILL":
-                    case "STAT":
                     case "SPELL":
                     case "TEMPLATE":
-                    case "VARIABLE":
                     case "WEAPONPROF":
                         Console.WriteLine($"Skipping Not-Yet-Implemented file kind {kind}");
                         //throw new NotImplementedException($"File kind {kind} not implemented.");
@@ -621,7 +565,7 @@ namespace Primordially.LstToLua
                     sourceInfo.SourceInfo.SourceLong = v.Value;
                     return true;
                 case "SOURCESHORT":
-                    sourceInfo.SourceInfo.SourceLong = v.Value;
+                    sourceInfo.SourceInfo.SourceShort = v.Value;
                     return true;
                 case "SOURCEWEB":
                     sourceInfo.SourceInfo.SourceWeb = v.Value;
@@ -721,134 +665,6 @@ namespace Primordially.LstToLua
             {
                 yield return new TextSpan(file, lineIdx, currentFieldStart, currentField.ToString().TrimEnd());
             }
-        }
-    }
-
-    internal class FileConverter
-    {
-        protected string State { get; set; }
-
-        public void Convert(string lstFile, string luaFile)
-        {
-            var dir = Path.GetDirectoryName(luaFile);
-            Directory.CreateDirectory(dir);
-            using (var outputStream = new FileStream(luaFile, FileMode.Create, FileAccess.Write))
-            using (var output = new StreamWriter(outputStream))
-            {
-                var repoDir = Repository.Discover(lstFile);
-                if (string.IsNullOrEmpty(repoDir))
-                {
-                    throw new ArgumentException("LST file must be in a git repo.");
-                }
-
-                var repo = new Repository(repoDir);
-                var repoUrl = repo.Network.Remotes["upstream"]?.Url ?? repo.Network.Remotes["origin"]?.Url;
-                var sha = repo.Head.Tip.Sha;
-                var relativePath = Path.GetRelativePath(repo.Info.WorkingDirectory, lstFile);
-                output.WriteLine($"-- Converted From LST file {relativePath}");
-                output.WriteLine($"-- From repository {repoUrl} at commit {sha}");
-                var luaWriter = new LuaTextWriter(output);
-                var lines = Program.ReadTsv(lstFile).ToList();
-                foreach (var line in lines)
-                {
-                    ConvertLine(luaWriter, line);
-                }
-            }
-        }
-
-        protected virtual void ConvertLine(LuaTextWriter luaWriter, TsvLine line)
-        {
-            var firstValue = line.Fields.First();
-            if (State == null && firstValue.StartsWith("SOURCE"))
-            {
-                SourceDefinition.Parse(line.Fields).Dump(luaWriter);
-                return;
-            }
-
-            throw new ParseFailedException(firstValue, $"Unknown field {firstValue.Value} seen in state {State}");
-        }
-    }
-
-    internal class ClassFileConverter : FileConverter
-    {
-        private ClassDefinition? _classDefinition = null;
-        protected override void ConvertLine(LuaTextWriter luaWriter, TsvLine line)
-        {
-            var firstField = line.Fields.First();
-            switch (State)
-            {
-                case "classStart":
-                    Debug.Assert(_classDefinition != null);
-
-                    if (!firstField.StartsWith("CLASS:"))
-                    {
-                        State = "class";
-                        goto case "class";
-                    }
-
-                    _classDefinition.AddLine(line);
-                    return;
-
-                case "class":
-                    Debug.Assert(_classDefinition != null);
-
-                    if (firstField.StartsWith("CLASS:"))
-                    {
-                        _classDefinition.Dump(luaWriter);
-                        _classDefinition = null;
-                        State = null;
-                        goto default;
-                    }
-
-                    _classDefinition.AddLine(line);
-                    return;
-                default:
-                    if (firstField.StartsWith("CLASS:"))
-                    {
-                        var name = firstField.SplitTuple(':').right;
-                        State = "classStart";
-                        _classDefinition = new ClassDefinition(name.Value);
-                        _classDefinition.AddLine(line);
-                        return;
-                    }
-
-                    break;
-            }
-            base.ConvertLine(luaWriter, line);
-        }
-    }
-
-    internal class AlignmentFileConverter : FileConverter
-    {
-        protected override void ConvertLine(LuaTextWriter luaWriter, TsvLine line)
-        {
-            if (line.Fields.Any())
-            {
-                var def = new AlignmentDefinition();
-                foreach (var field in line.Fields)
-                {
-                    def.AddField(field);
-                }
-                def.Dump(luaWriter);
-                luaWriter.Write("\n");
-                return;
-            }
-            base.ConvertLine(luaWriter, line);
-        }
-    }
-
-    internal class AbilityFileConverter : FileConverter
-    {
-        protected override void ConvertLine(LuaTextWriter luaWriter, TsvLine line)
-        {
-            var def = AbilityDefinition.Parse(line.Fields);
-            if (def != null)
-            {
-                def.Dump(luaWriter);
-                luaWriter.Write("\n");
-                return;
-            }
-            base.ConvertLine(luaWriter, line);
         }
     }
 }

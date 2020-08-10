@@ -448,11 +448,11 @@ DefineAbility({
   Definitions={
     {
       Name="ArcaneStrikeDamageBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ArcaneStrikeLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -966,15 +966,15 @@ DefineAbility({
   Definitions={
     {
       Name="CombatExpertiseModifier",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CombatExpertiseModifierAttack",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CombatExpertiseModifierAC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1133,15 +1133,15 @@ DefineAbility({
   Definitions={
     {
       Name="CombatExpertiseModifier",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CombatExpertiseModifierAttack",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CombatExpertiseModifierAC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1244,7 +1244,7 @@ DefineAbility({
   Definitions={
     {
       Name="CombatReflexesAttacks",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1664,7 +1664,7 @@ DefineAbility({
   Definitions={
     {
       Name="DeadlyAimModifier",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -2167,7 +2167,7 @@ DefineAbility({
   Definitions={
     {
       Name="Feat_Endurance_SaveBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -4363,15 +4363,15 @@ DefineAbility({
   Definitions={
     {
       Name="LeadershipMaxCohortLvl",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="LeadershipScore",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="LeadershipAbilityScoreMod",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -4659,7 +4659,7 @@ DefineAbility({
   Definitions={
     {
       Name="MasterCraftsmanRanks",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -4926,7 +4926,7 @@ DefineAbility({
   Definitions={
     {
       Name="Feat_NimbleMoves_Squares",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -5114,19 +5114,19 @@ DefineAbility({
   Definitions={
     {
       Name="PowerAttackModifier",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="MonkFlurryPowerAttackModifier",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="PowerAttackDamageModifier",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="PowerAttackDamageBase",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -6555,15 +6555,15 @@ DefineAbility({
   Definitions={
     {
       Name="StunningFistMonkLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="StunningFistAttack",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="StunningFistDC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -6880,7 +6880,7 @@ DefineAbility({
   Definitions={
     {
       Name="TwoWeaponShield",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -7161,7 +7161,7 @@ DefineAbility({
   Definitions={
     {
       Name="WeaponFocusToHit",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -7952,7 +7952,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HasWeaponFinesseFeat",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={

@@ -40,7 +40,7 @@ DefineAbility({
   SourcePage="p.21",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Dwarf_ReplaceAbilityScores"] == "true")
+      return not (character.Facts["ABILITY"]["Dwarf_ReplaceAbilityScores"] == "true")
     end,
   },
   Description={
@@ -102,7 +102,7 @@ DefineAbility({
   SourcePage="p.21",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Dwarf_ReplaceSize"] == "true")
+      return not (character.Facts["ABILITY"]["Dwarf_ReplaceSize"] == "true")
     end,
   },
   Description={
@@ -126,7 +126,7 @@ DefineAbility({
   SourcePage="p.21",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Dwarf_ReplaceSpeed"] == "True")
+      return not (character.Facts["ABILITY"]["Dwarf_ReplaceSpeed"] == "True")
     end,
   },
   Description={
@@ -159,7 +159,7 @@ DefineAbility({
   SourcePage="p.21",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Dwarf_ReplaceVision"] == "True")
+      return not (character.Facts["ABILITY"]["Dwarf_ReplaceVision"] == "True")
     end,
   },
   Description={
@@ -214,7 +214,7 @@ DefineAbility({
   SourcePage="p.21",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Dwarf_ReplaceDefensiveTraining"] == "True")
+      return not (character.Facts["ABILITY"]["Dwarf_ReplaceDefensiveTraining"] == "True")
     end,
   },
   Description={
@@ -226,7 +226,7 @@ DefineAbility({
   Definitions={
     {
       Name="RacialDefensiveTrainingBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -256,7 +256,7 @@ DefineAbility({
   SourcePage="p.21",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Dwarf_ReplaceGreed"] == "True")
+      return not (character.Facts["ABILITY"]["Dwarf_ReplaceGreed"] == "True")
     end,
   },
   Description={
@@ -306,7 +306,7 @@ DefineAbility({
   SourcePage="p.21",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Dwarf_ReplaceHatred"] == "True")
+      return not (character.Facts["ABILITY"]["Dwarf_ReplaceHatred"] == "True")
     end,
   },
   Description={
@@ -350,7 +350,7 @@ DefineAbility({
   SourcePage="p.21",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Dwarf_ReplaceHardy"] == "True")
+      return not (character.Facts["ABILITY"]["Dwarf_ReplaceHardy"] == "True")
     end,
   },
   Description={
@@ -405,7 +405,7 @@ DefineAbility({
   SourcePage="p.21",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Dwarf_ReplaceStability"] == "True")
+      return not (character.Facts["ABILITY"]["Dwarf_ReplaceStability"] == "True")
     end,
   },
   Description={
@@ -452,7 +452,7 @@ DefineAbility({
   SourcePage="p.21",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Dwarf_ReplaceStonecunning"] == "True")
+      return not (character.Facts["ABILITY"]["Dwarf_ReplaceStonecunning"] == "True")
     end,
   },
   Description={
@@ -464,7 +464,7 @@ DefineAbility({
   Definitions={
     {
       Name="Dwarf_StoneCunning_SkillBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -520,7 +520,7 @@ DefineAbility({
   SourcePage="p.21",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Dwarf_ReplaceWeaponFamiliarity"] == "True")
+      return not (character.Facts["ABILITY"]["Dwarf_ReplaceWeaponFamiliarity"] == "True")
     end,
   },
   Description={
@@ -561,7 +561,7 @@ DefineAbility({
   SourcePage="p.21",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Dwarf_ReplaceLanguages"] == "True")
+      return not (character.Facts["ABILITY"]["Dwarf_ReplaceLanguages"] == "True")
     end,
   },
   Description={
@@ -599,7 +599,7 @@ DefineAbility({
   SourcePage="p.22",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Elf_ReplaceAbilityScores"] == "true")
+      return not (character.Facts["ABILITY"]["Elf_ReplaceAbilityScores"] == "true")
     end,
   },
   Description={
@@ -661,7 +661,7 @@ DefineAbility({
   SourcePage="p.22",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Elf_ReplaceSize"] == "true")
+      return not (character.Facts["ABILITY"]["Elf_ReplaceSize"] == "true")
     end,
   },
   Description={
@@ -685,7 +685,7 @@ DefineAbility({
   SourcePage="p.22",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Elf_ReplaceSpeed"] == "true")
+      return not (character.Facts["ABILITY"]["Elf_ReplaceSpeed"] == "true")
     end,
   },
   Description={
@@ -709,7 +709,7 @@ DefineAbility({
   SourcePage="p.22",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Elf_ReplaceVision"] == "true")
+      return not (character.Facts["ABILITY"]["Elf_ReplaceVision"] == "true")
     end,
   },
   Description={
@@ -754,7 +754,7 @@ DefineAbility({
   SourcePage="p.22",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Elf_ReplaceElvenImmunities"] == "true")
+      return not (character.Facts["ABILITY"]["Elf_ReplaceElvenImmunities"] == "true")
     end,
   },
   Description={
@@ -800,7 +800,7 @@ DefineAbility({
   SourcePage="p.22",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Elf_ReplaceElvenMagic"] == "true")
+      return not (character.Facts["ABILITY"]["Elf_ReplaceElvenMagic"] == "true")
     end,
   },
   Description={
@@ -839,7 +839,7 @@ DefineAbility({
   SourcePage="p.22",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Elf_ReplaceKeenSenses"] == "true")
+      return not (character.Facts["ABILITY"]["Elf_ReplaceKeenSenses"] == "true")
     end,
   },
   Description={
@@ -851,7 +851,7 @@ DefineAbility({
   Definitions={
     {
       Name="KeenSensesBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -908,7 +908,7 @@ DefineAbility({
   SourcePage="p.22",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Elf_ReplaceWeaponFamiliarity"] == "true")
+      return not (character.Facts["ABILITY"]["Elf_ReplaceWeaponFamiliarity"] == "true")
     end,
   },
   Description={
@@ -942,7 +942,7 @@ DefineAbility({
   SourcePage="p.22",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Elf_ReplaceLanguages"] == "true")
+      return not (character.Facts["ABILITY"]["Elf_ReplaceLanguages"] == "true")
     end,
   },
   Description={
@@ -980,7 +980,7 @@ DefineAbility({
   SourcePage="p.23",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Gnome_ReplaceAbilityScores"] == "true")
+      return not (character.Facts["ABILITY"]["Gnome_ReplaceAbilityScores"] == "true")
     end,
   },
   Description={
@@ -1042,7 +1042,7 @@ DefineAbility({
   SourcePage="p.23",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Gnome_ReplaceSize"] == "true")
+      return not (character.Facts["ABILITY"]["Gnome_ReplaceSize"] == "true")
     end,
   },
   Description={
@@ -1066,7 +1066,7 @@ DefineAbility({
   SourcePage="p.23",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Gnome_ReplaceSpeed"] == "true")
+      return not (character.Facts["ABILITY"]["Gnome_ReplaceSpeed"] == "true")
     end,
   },
   Description={
@@ -1090,7 +1090,7 @@ DefineAbility({
   SourcePage="p.23",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Gnome_ReplaceVision"] == "true")
+      return not (character.Facts["ABILITY"]["Gnome_ReplaceVision"] == "true")
     end,
   },
   Description={
@@ -1145,7 +1145,7 @@ DefineAbility({
   SourcePage="p.23",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Gnome_ReplaceDefensiveTraining"] == "true")
+      return not (character.Facts["ABILITY"]["Gnome_ReplaceDefensiveTraining"] == "true")
     end,
   },
   Description={
@@ -1157,7 +1157,7 @@ DefineAbility({
   Definitions={
     {
       Name="RacialDefensiveTrainingBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1241,7 +1241,7 @@ DefineAbility({
   SourcePage="p.23",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Gnome_ReplaceGnomeMagic"] == "true")
+      return not (character.Facts["ABILITY"]["Gnome_ReplaceGnomeMagic"] == "true")
     end,
   },
   Description={
@@ -1253,7 +1253,7 @@ DefineAbility({
   Definitions={
     {
       Name="Gnome_GnomeMagic_IllusionDCBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1307,7 +1307,7 @@ DefineAbility({
   SourcePage="p.23",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Gnome_ReplaceHatred"] == "true")
+      return not (character.Facts["ABILITY"]["Gnome_ReplaceHatred"] == "true")
     end,
   },
   Description={
@@ -1319,7 +1319,7 @@ DefineAbility({
   Definitions={
     {
       Name="Gnome_Hatred_AttackBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1355,7 +1355,7 @@ DefineAbility({
   SourcePage="p.23",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Gnome_ReplaceIllusionResistance"] == "true")
+      return not (character.Facts["ABILITY"]["Gnome_ReplaceIllusionResistance"] == "true")
     end,
   },
   Description={
@@ -1392,7 +1392,7 @@ DefineAbility({
   SourcePage="p.23",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Gnome_ReplaceKeenSenses"] == "true")
+      return not (character.Facts["ABILITY"]["Gnome_ReplaceKeenSenses"] == "true")
     end,
   },
   Description={
@@ -1401,7 +1401,7 @@ DefineAbility({
   Definitions={
     {
       Name="KeenSensesBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1442,7 +1442,7 @@ DefineAbility({
   SourcePage="p.23",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Gnome_ReplaceObsessive"] == "true")
+      return not (character.Facts["ABILITY"]["Gnome_ReplaceObsessive"] == "true")
     end,
   },
   Description={
@@ -1479,7 +1479,7 @@ DefineAbility({
   SourcePage="p.23",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Gnome_ReplaceWeaponFamiliarity"] == "true")
+      return not (character.Facts["ABILITY"]["Gnome_ReplaceWeaponFamiliarity"] == "true")
     end,
   },
   Description={
@@ -1511,7 +1511,7 @@ DefineAbility({
   SourcePage="p.23",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Gnome_ReplaceLanguages"] == "true")
+      return not (character.Facts["ABILITY"]["Gnome_ReplaceLanguages"] == "true")
     end,
   },
   Description={
@@ -1615,7 +1615,7 @@ DefineAbility({
   SourcePage="p.24",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfElf_ReplaceAbilityScores"] == "true")
+      return not (character.Facts["ABILITY"]["HalfElf_ReplaceAbilityScores"] == "true")
     end,
   },
   Description={
@@ -1648,7 +1648,7 @@ DefineAbility({
   SourcePage="p.24",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfElf_ReplaceSize"] == "true")
+      return not (character.Facts["ABILITY"]["HalfElf_ReplaceSize"] == "true")
     end,
   },
   Description={
@@ -1672,7 +1672,7 @@ DefineAbility({
   SourcePage="p.24",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfElf_ReplaceSpeed"] == "true")
+      return not (character.Facts["ABILITY"]["HalfElf_ReplaceSpeed"] == "true")
     end,
   },
   Description={
@@ -1696,7 +1696,7 @@ DefineAbility({
   SourcePage="p.24",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfElf_ReplaceVision"] == "true")
+      return not (character.Facts["ABILITY"]["HalfElf_ReplaceVision"] == "true")
     end,
   },
   Description={
@@ -1734,7 +1734,7 @@ DefineAbility({
   SourcePage="p.24",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfElf_ReplaceAdaptability"] == "true")
+      return not (character.Facts["ABILITY"]["HalfElf_ReplaceAdaptability"] == "true")
     end,
   },
   Description={
@@ -1766,7 +1766,7 @@ DefineAbility({
   SourcePage="p.24",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfElf_ReplaceElfBlood"] == "true")
+      return not (character.Facts["ABILITY"]["HalfElf_ReplaceElfBlood"] == "true")
     end,
   },
   Description={
@@ -1796,7 +1796,7 @@ DefineAbility({
   SourcePage="p.24",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfElf_ReplaceElvenImmunities"] == "true")
+      return not (character.Facts["ABILITY"]["HalfElf_ReplaceElvenImmunities"] == "true")
     end,
   },
   Description={
@@ -1842,7 +1842,7 @@ DefineAbility({
   SourcePage="p.24",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfElf_ReplaceKeenSenses"] == "true")
+      return not (character.Facts["ABILITY"]["HalfElf_ReplaceKeenSenses"] == "true")
     end,
   },
   Description={
@@ -1854,7 +1854,7 @@ DefineAbility({
   Definitions={
     {
       Name="KeenSensesBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1895,7 +1895,7 @@ DefineAbility({
   SourcePage="p.24",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfElf_ReplaceMultitalented"] == "true")
+      return not (character.Facts["ABILITY"]["HalfElf_ReplaceMultitalented"] == "true")
     end,
   },
   Description={
@@ -1930,7 +1930,7 @@ DefineAbility({
   SourcePage="p.24",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfElf_ReplaceLanguages"] == "true")
+      return not (character.Facts["ABILITY"]["HalfElf_ReplaceLanguages"] == "true")
     end,
   },
   Description={
@@ -1968,7 +1968,7 @@ DefineAbility({
   SourcePage="p.24",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceAbilityScores"] == "true")
+      return not (character.Facts["ABILITY"]["HalfOrc_ReplaceAbilityScores"] == "true")
     end,
   },
   Description={
@@ -2001,7 +2001,7 @@ DefineAbility({
   SourcePage="p.24",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceSize"] == "true")
+      return not (character.Facts["ABILITY"]["HalfOrc_ReplaceSize"] == "true")
     end,
   },
   Description={
@@ -2025,7 +2025,7 @@ DefineAbility({
   SourcePage="p.24",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceSpeed"] == "true")
+      return not (character.Facts["ABILITY"]["HalfOrc_ReplaceSpeed"] == "true")
     end,
   },
   Description={
@@ -2049,7 +2049,7 @@ DefineAbility({
   SourcePage="p.25",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceVision"] == "true")
+      return not (character.Facts["ABILITY"]["HalfOrc_ReplaceVision"] == "true")
     end,
   },
   Description={
@@ -2087,7 +2087,7 @@ DefineAbility({
   SourcePage="p.25",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceIntimidating"] == "true")
+      return not (character.Facts["ABILITY"]["HalfOrc_ReplaceIntimidating"] == "true")
     end,
   },
   Description={
@@ -2124,7 +2124,7 @@ DefineAbility({
   SourcePage="p.25",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceOrcBlood"] == "true")
+      return not (character.Facts["ABILITY"]["HalfOrc_ReplaceOrcBlood"] == "true")
     end,
   },
   Description={
@@ -2148,7 +2148,7 @@ DefineAbility({
   SourcePage="p.25",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceOrcFerocity"] == "true")
+      return not (character.Facts["ABILITY"]["HalfOrc_ReplaceOrcFerocity"] == "true")
     end,
   },
   Description={
@@ -2157,7 +2157,7 @@ DefineAbility({
   Definitions={
     {
       Name="Orc_OrcFerocity_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -2201,7 +2201,7 @@ DefineAbility({
   SourcePage="p.25",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceWeaponFamiliarity"] == "true")
+      return not (character.Facts["ABILITY"]["HalfOrc_ReplaceWeaponFamiliarity"] == "true")
     end,
   },
   Description={
@@ -2233,7 +2233,7 @@ DefineAbility({
   SourcePage="p.25",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["HalfOrc_ReplaceLanguages"] == "true")
+      return not (character.Facts["ABILITY"]["HalfOrc_ReplaceLanguages"] == "true")
     end,
   },
   Description={
@@ -2271,7 +2271,7 @@ DefineAbility({
   SourcePage="p.26",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Halfling_ReplaceAbilityScores"] == "true")
+      return not (character.Facts["ABILITY"]["Halfling_ReplaceAbilityScores"] == "true")
     end,
   },
   Description={
@@ -2333,7 +2333,7 @@ DefineAbility({
   SourcePage="p.26",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Halfling_ReplaceSize"] == "true")
+      return not (character.Facts["ABILITY"]["Halfling_ReplaceSize"] == "true")
     end,
   },
   Description={
@@ -2357,7 +2357,7 @@ DefineAbility({
   SourcePage="p.26",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Halfling_ReplaceSpeed"] == "true")
+      return not (character.Facts["ABILITY"]["Halfling_ReplaceSpeed"] == "true")
     end,
   },
   Description={
@@ -2387,7 +2387,7 @@ DefineAbility({
   SourcePage="p.26",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Halfling_ReplaceFearless"] == "true")
+      return not (character.Facts["ABILITY"]["Halfling_ReplaceFearless"] == "true")
     end,
   },
   Description={
@@ -2424,7 +2424,7 @@ DefineAbility({
   SourcePage="p.26",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Halfling_ReplaceHalflingLuck"] == "true")
+      return not (character.Facts["ABILITY"]["Halfling_ReplaceHalflingLuck"] == "true")
     end,
   },
   Description={
@@ -2433,7 +2433,7 @@ DefineAbility({
   Definitions={
     {
       Name="Halfling_HalflingLuck_SaveBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -2467,7 +2467,7 @@ DefineAbility({
   SourcePage="p.26",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Halfling_ReplaceKeenSenses"] == "true")
+      return not (character.Facts["ABILITY"]["Halfling_ReplaceKeenSenses"] == "true")
     end,
   },
   Description={
@@ -2476,7 +2476,7 @@ DefineAbility({
   Definitions={
     {
       Name="KeenSensesBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -2517,7 +2517,7 @@ DefineAbility({
   SourcePage="p.26",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Halfling_ReplaceSureFooted"] == "true")
+      return not (character.Facts["ABILITY"]["Halfling_ReplaceSureFooted"] == "true")
     end,
   },
   Description={
@@ -2568,7 +2568,7 @@ DefineAbility({
   SourcePage="p.26",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Halfling_ReplaceWeaponFamiliarity"] == "true")
+      return not (character.Facts["ABILITY"]["Halfling_ReplaceWeaponFamiliarity"] == "true")
     end,
   },
   Description={
@@ -2598,7 +2598,7 @@ DefineAbility({
   SourcePage="p.26",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Halfling_ReplaceLanguages"] == "true")
+      return not (character.Facts["ABILITY"]["Halfling_ReplaceLanguages"] == "true")
     end,
   },
   Description={
@@ -2636,7 +2636,7 @@ DefineAbility({
   SourcePage="p.27",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Human_ReplaceAbilityScores"] == "true")
+      return not (character.Facts["ABILITY"]["Human_ReplaceAbilityScores"] == "true")
     end,
   },
   Description={
@@ -2669,7 +2669,7 @@ DefineAbility({
   SourcePage="p.27",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Human_ReplaceSize"] == "true")
+      return not (character.Facts["ABILITY"]["Human_ReplaceSize"] == "true")
     end,
   },
   Description={
@@ -2693,7 +2693,7 @@ DefineAbility({
   SourcePage="p.27",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Human_ReplaceSpeed"] == "true")
+      return not (character.Facts["ABILITY"]["Human_ReplaceSpeed"] == "true")
     end,
   },
   Description={
@@ -2717,7 +2717,7 @@ DefineAbility({
   SourcePage="p.27",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Human_ReplaceBonusFeat"] == "true")
+      return not (character.Facts["ABILITY"]["Human_ReplaceBonusFeat"] == "true")
     end,
   },
   Description={
@@ -2749,7 +2749,7 @@ DefineAbility({
   SourcePage="p.27",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Human_ReplaceSkilled"] == "true")
+      return not (character.Facts["ABILITY"]["Human_ReplaceSkilled"] == "true")
     end,
   },
   Description={
@@ -2784,7 +2784,7 @@ DefineAbility({
   SourcePage="p.27",
   Conditions={
     function (character)
-      return not (character.Facts["ABILITIES"]["Human_ReplaceLanguages"] == "true")
+      return not (character.Facts["ABILITY"]["Human_ReplaceLanguages"] == "true")
     end,
   },
   Description={
@@ -4254,7 +4254,7 @@ DefineAbility({
   Definitions={
     {
       Name="DisableRaceTypeGrantedProfs",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -4683,7 +4683,7 @@ DefineAbility({
   Definitions={
     {
       Name="RemoveSubtypeTelepathy",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -4752,7 +4752,7 @@ DefineAbility({
   Definitions={
     {
       Name="RemoveSubtypeTelepathy",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -5048,7 +5048,7 @@ DefineAbility({
   Definitions={
     {
       Name="CanNotGrapple",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -5670,7 +5670,7 @@ DefineAbility({
   Definitions={
     {
       Name="AuraOfMenaceDC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -5873,7 +5873,7 @@ DefineAbility({
   Definitions={
     {
       Name="PermanecyArcaneSightLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -5916,7 +5916,7 @@ DefineAbility({
   Definitions={
     {
       Name="PermanecyComprehendLanguagesLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -5959,7 +5959,7 @@ DefineAbility({
   Definitions={
     {
       Name="PermanecyDarkvisionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -6014,7 +6014,7 @@ DefineAbility({
   Definitions={
     {
       Name="PermanecyDetectMagicLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -6057,7 +6057,7 @@ DefineAbility({
   Definitions={
     {
       Name="PermanecyReadMagicLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -6100,7 +6100,7 @@ DefineAbility({
   Definitions={
     {
       Name="PermanecySeeInvisibilityLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -6143,7 +6143,7 @@ DefineAbility({
   Definitions={
     {
       Name="PermanecyTonguesLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -6186,7 +6186,7 @@ DefineAbility({
   Definitions={
     {
       Name="PermanecyEnlargePersonLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -7651,7 +7651,7 @@ DefineAbility({
   Definitions={
     {
       Name="PermanecyMagicFangLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -7707,7 +7707,7 @@ DefineAbility({
   Definitions={
     {
       Name="PermanecyMagicFangGreaterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -7763,7 +7763,7 @@ DefineAbility({
   Definitions={
     {
       Name="PermanecyReducePersonLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -9242,7 +9242,7 @@ DefineAbility({
   Definitions={
     {
       Name="PermanecyResistanceLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -9297,7 +9297,7 @@ DefineAbility({
   Definitions={
     {
       Name="PermanecyTelepathicBondLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={

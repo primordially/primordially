@@ -1,12 +1,11 @@
 SetDataSetInfo({
   Name="Core Rulebook",
-  SourceInfo=SetSource({
-    SourceLong="CR",
-    SourceShort="",
+  SourceInfo={
+    SourceLong="Core Rulebook",
+    SourceShort="CR",
     SourceWeb="http://paizo.com/store/downloads/pathfinder/pathfinderRPG/v5748btpy88yj",
     SourceDate="2009-08",
-  })
-  ,
+  },
   GameMode="Pathfinder",
   BookTypes={
     "Core Rules",
@@ -27,7 +26,7 @@ SetDataSetInfo({
   Conditions={
     function (source)
       local count = 0
-      if source.BookType == 'Core Rules' then
+      if source.IsBookType('Core Rules') then
         count = count + 1
       end
       if source.Name == "[Core Rulebook]" then
@@ -68,9 +67,6 @@ ImportFile("@/homebrew/conversion_support/conversion_support.lua")
 ImportFile("@/pathfinder/paizo/roleplaying_game/core_essentials/_core_essentials.lua")
 ImportFile("cr__align.lua")
 ImportFile("cr__datacontrols.lua")
-ImportFile("cr__datatables.lua")
-ImportFile("cr__dynamic.lua")
-ImportFile("cr__globalmodifiers.lua")
 ImportFile("cr__saves.lua")
 ImportFile("cr__stats.lua")
 ImportFile("cr__variables.lua")

@@ -26,6 +26,7 @@ namespace Primordially.LstToLua
                 case "true":
                 case "display":
                 case "export":
+                case "qualify":
                     return true;
                 case "n":
                 case "no":

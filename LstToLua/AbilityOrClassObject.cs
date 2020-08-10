@@ -8,7 +8,7 @@ namespace Primordially.LstToLua
     internal class AbilityOrClassObject : DataObject
     {
         public (string format, List<string> arguments)? Description { get; private set; }
-        public List<VariableDefinition> Definitions { get; } = new List<VariableDefinition>();
+        public List<ObjectVariableDefinition> Definitions { get; } = new List<ObjectVariableDefinition>();
         public List<AbilityReference> Abilities { get; } = new List<AbilityReference>();
         public List<Bonus> Bonuses { get; } = new List<Bonus>();
         public List<string> Types { get; } = new List<string>();
@@ -92,7 +92,7 @@ namespace Primordially.LstToLua
                         throw new ParseFailedException(field, "Unable to parse variable definition.");
                     }
 
-                    Definitions.Add(new VariableDefinition(parts[0].Value, Helpers.ParseInt(parts[1])));
+                    Definitions.Add(new ObjectVariableDefinition(parts[0].Value, parts[1].Value));
                     return;
                 }
                 case "MOVE":

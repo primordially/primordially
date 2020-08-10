@@ -8,7 +8,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Dwarf_ReplaceAbilityScores",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -35,7 +35,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Dwarf_ReplaceSize",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -62,7 +62,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Dwarf_ReplaceSpeed",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -89,7 +89,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Dwarf_ReplaceVision",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -116,7 +116,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Dwarf_ReplaceDefensiveTraining",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -143,7 +143,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Dwarf_ReplaceGreed",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -170,7 +170,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Dwarf_ReplaceHatred",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -197,7 +197,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Dwarf_ReplaceHardy",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -224,7 +224,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Dwarf_ReplaceStability",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -251,7 +251,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Dwarf_ReplaceStonecunning",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -278,7 +278,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Dwarf_ReplaceWeaponFamiliarity",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -305,7 +305,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Dwarf_ReplaceLanguages",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -568,7 +568,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Dwarf_ReplaceAbilityScores"] == "true"
+          return character.Facts["ABILITY"]["Dwarf_ReplaceAbilityScores"] == "true"
         end,
       },
     },
@@ -589,7 +589,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Dwarf_ReplaceSize"] == "true"
+          return character.Facts["ABILITY"]["Dwarf_ReplaceSize"] == "true"
         end,
       },
     },
@@ -610,7 +610,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Dwarf_ReplaceSpeed"] == "True"
+          return character.Facts["ABILITY"]["Dwarf_ReplaceSpeed"] == "True"
         end,
       },
     },
@@ -631,7 +631,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Dwarf_ReplaceVision"] == "True"
+          return character.Facts["ABILITY"]["Dwarf_ReplaceVision"] == "True"
         end,
       },
     },
@@ -652,7 +652,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Dwarf_ReplaceDefensiveTraining"] == "True"
+          return character.Facts["ABILITY"]["Dwarf_ReplaceDefensiveTraining"] == "True"
         end,
       },
     },
@@ -673,7 +673,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Dwarf_ReplaceGreed"] == "True"
+          return character.Facts["ABILITY"]["Dwarf_ReplaceGreed"] == "True"
         end,
       },
     },
@@ -694,7 +694,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Dwarf_ReplaceHatred"] == "True"
+          return character.Facts["ABILITY"]["Dwarf_ReplaceHatred"] == "True"
         end,
       },
     },
@@ -715,7 +715,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Dwarf_ReplaceHardy"] == "True"
+          return character.Facts["ABILITY"]["Dwarf_ReplaceHardy"] == "True"
         end,
       },
     },
@@ -736,7 +736,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Dwarf_ReplaceStability"] == "True"
+          return character.Facts["ABILITY"]["Dwarf_ReplaceStability"] == "True"
         end,
       },
     },
@@ -757,7 +757,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Dwarf_ReplaceStonecunning"] == "True"
+          return character.Facts["ABILITY"]["Dwarf_ReplaceStonecunning"] == "True"
         end,
       },
     },
@@ -778,7 +778,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Dwarf_ReplaceWeaponFamiliarity"] == "True"
+          return character.Facts["ABILITY"]["Dwarf_ReplaceWeaponFamiliarity"] == "True"
         end,
       },
     },
@@ -799,7 +799,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Dwarf_ReplaceLanguages"] == "True"
+          return character.Facts["ABILITY"]["Dwarf_ReplaceLanguages"] == "True"
         end,
       },
     },
@@ -814,7 +814,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Elf_ReplaceAbilityScores",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -841,7 +841,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Elf_ReplaceSize",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -868,7 +868,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Elf_ReplaceSpeed",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -895,7 +895,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Elf_ReplaceVision",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -922,7 +922,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Elf_ReplaceElvenImmunities",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -949,7 +949,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Elf_ReplaceElvenMagic",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -976,7 +976,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Elf_ReplaceKeenSenses",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1003,7 +1003,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Elf_ReplaceWeaponFamiliarity",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1030,7 +1030,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Elf_ReplaceLanguages",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1201,7 +1201,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Elf_ReplaceAbilityScores"] == "true"
+          return character.Facts["ABILITY"]["Elf_ReplaceAbilityScores"] == "true"
         end,
       },
     },
@@ -1222,7 +1222,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Elf_ReplaceSize"] == "true"
+          return character.Facts["ABILITY"]["Elf_ReplaceSize"] == "true"
         end,
       },
     },
@@ -1243,7 +1243,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Elf_ReplaceSpeed"] == "true"
+          return character.Facts["ABILITY"]["Elf_ReplaceSpeed"] == "true"
         end,
       },
     },
@@ -1264,7 +1264,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Elf_ReplaceVision"] == "true"
+          return character.Facts["ABILITY"]["Elf_ReplaceVision"] == "true"
         end,
       },
     },
@@ -1285,7 +1285,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Elf_ReplaceElvenImmunities"] == "true"
+          return character.Facts["ABILITY"]["Elf_ReplaceElvenImmunities"] == "true"
         end,
       },
     },
@@ -1306,7 +1306,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Elf_ReplaceElvenMagic"] == "true"
+          return character.Facts["ABILITY"]["Elf_ReplaceElvenMagic"] == "true"
         end,
       },
     },
@@ -1327,7 +1327,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Elf_ReplaceKeenSenses"] == "true"
+          return character.Facts["ABILITY"]["Elf_ReplaceKeenSenses"] == "true"
         end,
       },
     },
@@ -1348,7 +1348,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Elf_ReplaceWeaponFamiliarity"] == "true"
+          return character.Facts["ABILITY"]["Elf_ReplaceWeaponFamiliarity"] == "true"
         end,
       },
     },
@@ -1369,7 +1369,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Elf_ReplaceLanguages"] == "true"
+          return character.Facts["ABILITY"]["Elf_ReplaceLanguages"] == "true"
         end,
       },
     },
@@ -1384,7 +1384,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Gnome_ReplaceAbilityScores",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1411,7 +1411,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Gnome_ReplaceSize",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1438,7 +1438,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Gnome_ReplaceSpeed",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1465,7 +1465,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Gnome_ReplaceVision",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1492,7 +1492,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Gnome_ReplaceDefensiveTraining",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1519,7 +1519,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Gnome_ReplaceGnomeMagic",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1546,7 +1546,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Gnome_ReplaceHatred",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1573,7 +1573,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Gnome_ReplaceIllusionResistance",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1600,7 +1600,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Gnome_ReplaceKeenSenses",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1627,7 +1627,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Gnome_ReplaceObsessive",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1654,7 +1654,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Gnome_ReplaceWeaponFamiliarity",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1681,7 +1681,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Gnome_ReplaceLanguages",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1921,7 +1921,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Gnome_ReplaceAbilityScores"] == "true"
+          return character.Facts["ABILITY"]["Gnome_ReplaceAbilityScores"] == "true"
         end,
       },
     },
@@ -1942,7 +1942,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Gnome_ReplaceSize"] == "true"
+          return character.Facts["ABILITY"]["Gnome_ReplaceSize"] == "true"
         end,
       },
     },
@@ -1963,7 +1963,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Gnome_ReplaceSpeed"] == "true"
+          return character.Facts["ABILITY"]["Gnome_ReplaceSpeed"] == "true"
         end,
       },
     },
@@ -1984,7 +1984,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Gnome_ReplaceVision"] == "true"
+          return character.Facts["ABILITY"]["Gnome_ReplaceVision"] == "true"
         end,
       },
     },
@@ -2005,7 +2005,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Gnome_ReplaceDefensiveTraining"] == "true"
+          return character.Facts["ABILITY"]["Gnome_ReplaceDefensiveTraining"] == "true"
         end,
       },
     },
@@ -2026,7 +2026,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Gnome_ReplaceGnomeMagic"] == "true"
+          return character.Facts["ABILITY"]["Gnome_ReplaceGnomeMagic"] == "true"
         end,
       },
     },
@@ -2047,7 +2047,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Gnome_ReplaceHatred"] == "true"
+          return character.Facts["ABILITY"]["Gnome_ReplaceHatred"] == "true"
         end,
       },
     },
@@ -2068,7 +2068,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Gnome_ReplaceIllusionResistance"] == "true"
+          return character.Facts["ABILITY"]["Gnome_ReplaceIllusionResistance"] == "true"
         end,
       },
     },
@@ -2089,7 +2089,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Gnome_ReplaceKeenSenses"] == "true"
+          return character.Facts["ABILITY"]["Gnome_ReplaceKeenSenses"] == "true"
         end,
       },
     },
@@ -2110,7 +2110,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Gnome_ReplaceObsessive"] == "true"
+          return character.Facts["ABILITY"]["Gnome_ReplaceObsessive"] == "true"
         end,
       },
     },
@@ -2131,7 +2131,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Gnome_ReplaceWeaponFamiliarity"] == "true"
+          return character.Facts["ABILITY"]["Gnome_ReplaceWeaponFamiliarity"] == "true"
         end,
       },
     },
@@ -2152,7 +2152,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Gnome_ReplaceLanguages"] == "true"
+          return character.Facts["ABILITY"]["Gnome_ReplaceLanguages"] == "true"
         end,
       },
     },
@@ -2167,7 +2167,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfElf_ReplaceAbilityScores",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2194,7 +2194,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfElf_ReplaceSize",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2221,7 +2221,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfElf_ReplaceSpeed",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2248,7 +2248,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfElf_ReplaceVision",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2275,7 +2275,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfElf_ReplaceAdaptability",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2302,7 +2302,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfElf_ReplaceElfBlood",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2329,7 +2329,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfElf_ReplaceElvenImmunities",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2356,7 +2356,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfElf_ReplaceKeenSenses",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2383,7 +2383,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfElf_ReplaceMultitalented",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2410,7 +2410,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfElf_ReplaceLanguages",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2581,7 +2581,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfElf_ReplaceAbilityScores"] == "true"
+          return character.Facts["ABILITY"]["HalfElf_ReplaceAbilityScores"] == "true"
         end,
       },
     },
@@ -2602,7 +2602,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfElf_ReplaceSize"] == "true"
+          return character.Facts["ABILITY"]["HalfElf_ReplaceSize"] == "true"
         end,
       },
     },
@@ -2623,7 +2623,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfElf_ReplaceSpeed"] == "true"
+          return character.Facts["ABILITY"]["HalfElf_ReplaceSpeed"] == "true"
         end,
       },
     },
@@ -2644,7 +2644,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfElf_ReplaceVision"] == "true"
+          return character.Facts["ABILITY"]["HalfElf_ReplaceVision"] == "true"
         end,
       },
     },
@@ -2665,7 +2665,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfElf_ReplaceAdaptability"] == "true"
+          return character.Facts["ABILITY"]["HalfElf_ReplaceAdaptability"] == "true"
         end,
       },
     },
@@ -2686,7 +2686,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfElf_ReplaceElfBlood"] == "true"
+          return character.Facts["ABILITY"]["HalfElf_ReplaceElfBlood"] == "true"
         end,
       },
     },
@@ -2707,7 +2707,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfElf_ReplaceElvenImmunities"] == "true"
+          return character.Facts["ABILITY"]["HalfElf_ReplaceElvenImmunities"] == "true"
         end,
       },
     },
@@ -2728,7 +2728,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfElf_ReplaceKeenSenses"] == "true"
+          return character.Facts["ABILITY"]["HalfElf_ReplaceKeenSenses"] == "true"
         end,
       },
     },
@@ -2749,7 +2749,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfElf_ReplaceMultitalented"] == "true"
+          return character.Facts["ABILITY"]["HalfElf_ReplaceMultitalented"] == "true"
         end,
       },
     },
@@ -2770,7 +2770,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfElf_ReplaceLanguages"] == "true"
+          return character.Facts["ABILITY"]["HalfElf_ReplaceLanguages"] == "true"
         end,
       },
     },
@@ -2785,7 +2785,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfOrc_ReplaceAbilityScores",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2812,7 +2812,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfOrc_ReplaceSize",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2839,7 +2839,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfOrc_ReplaceSpeed",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2866,7 +2866,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfOrc_ReplaceVision",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2893,7 +2893,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfOrc_ReplaceIntimidating",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2920,7 +2920,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfOrc_ReplaceOrcBlood",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2947,7 +2947,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfOrc_ReplaceOrcFerocity",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -2974,7 +2974,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfOrc_ReplaceWeaponFamiliarity",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -3001,7 +3001,7 @@ ModifyAbility({
   Definitions={
     {
       Name="HalfOrc_ReplaceLanguages",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -3149,7 +3149,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfOrc_ReplaceAbilityScores"] == "true"
+          return character.Facts["ABILITY"]["HalfOrc_ReplaceAbilityScores"] == "true"
         end,
       },
     },
@@ -3170,7 +3170,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfOrc_ReplaceSize"] == "true"
+          return character.Facts["ABILITY"]["HalfOrc_ReplaceSize"] == "true"
         end,
       },
     },
@@ -3191,7 +3191,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfOrc_ReplaceSpeed"] == "true"
+          return character.Facts["ABILITY"]["HalfOrc_ReplaceSpeed"] == "true"
         end,
       },
     },
@@ -3212,7 +3212,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfOrc_ReplaceVision"] == "true"
+          return character.Facts["ABILITY"]["HalfOrc_ReplaceVision"] == "true"
         end,
       },
     },
@@ -3233,7 +3233,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfOrc_ReplaceIntimidating"] == "true"
+          return character.Facts["ABILITY"]["HalfOrc_ReplaceIntimidating"] == "true"
         end,
       },
     },
@@ -3254,7 +3254,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfOrc_ReplaceOrcBlood"] == "true"
+          return character.Facts["ABILITY"]["HalfOrc_ReplaceOrcBlood"] == "true"
         end,
       },
     },
@@ -3275,7 +3275,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfOrc_ReplaceOrcFerocity"] == "true"
+          return character.Facts["ABILITY"]["HalfOrc_ReplaceOrcFerocity"] == "true"
         end,
       },
     },
@@ -3296,7 +3296,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfOrc_ReplaceWeaponFamiliarity"] == "true"
+          return character.Facts["ABILITY"]["HalfOrc_ReplaceWeaponFamiliarity"] == "true"
         end,
       },
     },
@@ -3317,7 +3317,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["HalfOrc_ReplaceLanguages"] == "true"
+          return character.Facts["ABILITY"]["HalfOrc_ReplaceLanguages"] == "true"
         end,
       },
     },
@@ -3332,7 +3332,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Halfling_ReplaceAbilityScores",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -3359,7 +3359,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Halfling_ReplaceSize",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -3386,7 +3386,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Halfling_ReplaceSpeed",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -3413,7 +3413,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Halfling_ReplaceFearless",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -3440,7 +3440,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Halfling_ReplaceHalflingLuck",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -3467,7 +3467,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Halfling_ReplaceKeenSenses",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -3494,7 +3494,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Halfling_ReplaceSureFooted",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -3521,7 +3521,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Halfling_ReplaceWeaponFamiliarity",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -3548,7 +3548,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Halfling_ReplaceLanguages",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -3719,7 +3719,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Halfling_ReplaceAbilityScores"] == "true"
+          return character.Facts["ABILITY"]["Halfling_ReplaceAbilityScores"] == "true"
         end,
       },
     },
@@ -3740,7 +3740,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Halfling_ReplaceSize"] == "true"
+          return character.Facts["ABILITY"]["Halfling_ReplaceSize"] == "true"
         end,
       },
     },
@@ -3761,7 +3761,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Halfling_ReplaceSpeed"] == "true"
+          return character.Facts["ABILITY"]["Halfling_ReplaceSpeed"] == "true"
         end,
       },
     },
@@ -3782,7 +3782,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Halfling_ReplaceFearless"] == "true"
+          return character.Facts["ABILITY"]["Halfling_ReplaceFearless"] == "true"
         end,
       },
     },
@@ -3803,7 +3803,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Halfling_ReplaceHalflingLuck"] == "true"
+          return character.Facts["ABILITY"]["Halfling_ReplaceHalflingLuck"] == "true"
         end,
       },
     },
@@ -3824,7 +3824,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Halfling_ReplaceKeenSenses"] == "true"
+          return character.Facts["ABILITY"]["Halfling_ReplaceKeenSenses"] == "true"
         end,
       },
     },
@@ -3845,7 +3845,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Halfling_ReplaceSureFooted"] == "true"
+          return character.Facts["ABILITY"]["Halfling_ReplaceSureFooted"] == "true"
         end,
       },
     },
@@ -3866,7 +3866,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Halfling_ReplaceWeaponFamiliarity"] == "true"
+          return character.Facts["ABILITY"]["Halfling_ReplaceWeaponFamiliarity"] == "true"
         end,
       },
     },
@@ -3887,7 +3887,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Halfling_ReplaceLanguages"] == "true"
+          return character.Facts["ABILITY"]["Halfling_ReplaceLanguages"] == "true"
         end,
       },
     },
@@ -3902,7 +3902,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Human_ReplaceAbilityScores",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -3929,7 +3929,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Human_ReplaceSize",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -3956,7 +3956,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Human_ReplaceSpeed",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -3983,7 +3983,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Human_ReplaceBonusFeat",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -4010,7 +4010,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Human_ReplaceSkilled",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -4037,7 +4037,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Human_ReplaceLanguages",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -4139,7 +4139,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Human_ReplaceAbilityScores"] == "true"
+          return character.Facts["ABILITY"]["Human_ReplaceAbilityScores"] == "true"
         end,
       },
     },
@@ -4160,7 +4160,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Human_ReplaceSize"] == "true"
+          return character.Facts["ABILITY"]["Human_ReplaceSize"] == "true"
         end,
       },
     },
@@ -4181,7 +4181,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Human_ReplaceSpeed"] == "true"
+          return character.Facts["ABILITY"]["Human_ReplaceSpeed"] == "true"
         end,
       },
     },
@@ -4202,7 +4202,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Human_ReplaceBonusFeat"] == "true"
+          return character.Facts["ABILITY"]["Human_ReplaceBonusFeat"] == "true"
         end,
       },
     },
@@ -4223,7 +4223,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Human_ReplaceSkilled"] == "true"
+          return character.Facts["ABILITY"]["Human_ReplaceSkilled"] == "true"
         end,
       },
     },
@@ -4244,7 +4244,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Human_ReplaceLanguages"] == "true"
+          return character.Facts["ABILITY"]["Human_ReplaceLanguages"] == "true"
         end,
       },
     },
@@ -4259,7 +4259,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_Rage",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4272,7 +4272,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_FastMovement",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4285,7 +4285,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_RagePowers",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4298,7 +4298,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_RagePower2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4311,7 +4311,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_RagePower4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4324,7 +4324,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_RagePower6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4337,7 +4337,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_RagePower8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4350,7 +4350,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_RagePower10",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4363,7 +4363,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_RagePower12",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4376,7 +4376,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_RagePower14",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4389,7 +4389,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_RagePower16",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4402,7 +4402,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_RagePower18",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4415,7 +4415,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_RagePower20",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4428,7 +4428,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_TrapSense",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4441,7 +4441,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_TrapSense1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4454,7 +4454,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_TrapSense2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4467,7 +4467,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_TrapSense3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4480,7 +4480,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_TrapSense4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4493,7 +4493,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_TrapSense5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4506,7 +4506,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_TrapSense6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4519,7 +4519,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_DamageReduction",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4532,7 +4532,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_DamageReduction1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4545,7 +4545,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_DamageReduction2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4558,7 +4558,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_DamageReduction3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4571,7 +4571,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_DamageReduction4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4584,7 +4584,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_DamageReduction5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4597,7 +4597,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_GreaterRage",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4610,7 +4610,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_IndomitableWill",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4623,7 +4623,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_TirelessRage",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4636,7 +4636,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_MightyRage",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4649,7 +4649,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_Proficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4662,7 +4662,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_UncannyDodge",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4675,7 +4675,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_ImprovedUncannyDodge",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4688,7 +4688,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_ClassSkills",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4701,7 +4701,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_WeaponProficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4714,7 +4714,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Barbarian_CF_ArmorProficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4733,7 +4733,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_Proficiencies"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_Proficiencies"] == "True"
         end,
       },
     },
@@ -4754,7 +4754,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_WeaponProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_WeaponProficiencies"] == "True"
         end,
       },
     },
@@ -4775,7 +4775,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_ArmorProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_ArmorProficiencies"] == "True"
         end,
       },
     },
@@ -4796,7 +4796,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_Rage"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_Rage"] == "True"
         end,
       },
     },
@@ -4817,7 +4817,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_FastMovement"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_FastMovement"] == "True"
         end,
       },
     },
@@ -4838,7 +4838,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_RagePowers"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_RagePowers"] == "True"
         end,
       },
     },
@@ -4859,7 +4859,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_RagePower2"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_RagePower2"] == "True"
         end,
       },
     },
@@ -4880,7 +4880,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_RagePower4"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_RagePower4"] == "True"
         end,
       },
     },
@@ -4901,7 +4901,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_RagePower6"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_RagePower6"] == "True"
         end,
       },
     },
@@ -4922,7 +4922,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_RagePower8"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_RagePower8"] == "True"
         end,
       },
     },
@@ -4943,7 +4943,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_RagePower10"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_RagePower10"] == "True"
         end,
       },
     },
@@ -4964,7 +4964,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_RagePower12"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_RagePower12"] == "True"
         end,
       },
     },
@@ -4985,7 +4985,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_RagePower14"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_RagePower14"] == "True"
         end,
       },
     },
@@ -5006,7 +5006,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_RagePower16"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_RagePower16"] == "True"
         end,
       },
     },
@@ -5027,7 +5027,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_RagePower18"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_RagePower18"] == "True"
         end,
       },
     },
@@ -5048,7 +5048,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_RagePower20"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_RagePower20"] == "True"
         end,
       },
     },
@@ -5069,7 +5069,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_TrapSense"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_TrapSense"] == "True"
         end,
       },
     },
@@ -5090,7 +5090,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_TrapSense1"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_TrapSense1"] == "True"
         end,
       },
     },
@@ -5111,7 +5111,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_TrapSense2"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_TrapSense2"] == "True"
         end,
       },
     },
@@ -5132,7 +5132,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_TrapSense3"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_TrapSense3"] == "True"
         end,
       },
     },
@@ -5153,7 +5153,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_TrapSense4"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_TrapSense4"] == "True"
         end,
       },
     },
@@ -5174,7 +5174,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_TrapSense5"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_TrapSense5"] == "True"
         end,
       },
     },
@@ -5195,7 +5195,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_TrapSense6"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_TrapSense6"] == "True"
         end,
       },
     },
@@ -5216,7 +5216,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_DamageReduction"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_DamageReduction"] == "True"
         end,
       },
     },
@@ -5237,7 +5237,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_DamageReduction1"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_DamageReduction1"] == "True"
         end,
       },
     },
@@ -5258,7 +5258,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_DamageReduction2"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_DamageReduction2"] == "True"
         end,
       },
     },
@@ -5279,7 +5279,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_DamageReduction3"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_DamageReduction3"] == "True"
         end,
       },
     },
@@ -5300,7 +5300,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_DamageReduction4"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_DamageReduction4"] == "True"
         end,
       },
     },
@@ -5321,7 +5321,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_DamageReduction5"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_DamageReduction5"] == "True"
         end,
       },
     },
@@ -5342,7 +5342,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_GreaterRage"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_GreaterRage"] == "True"
         end,
       },
     },
@@ -5363,7 +5363,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_IndomitableWill"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_IndomitableWill"] == "True"
         end,
       },
     },
@@ -5384,7 +5384,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_TirelessRage"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_TirelessRage"] == "True"
         end,
       },
     },
@@ -5405,7 +5405,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_MightyRage"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_MightyRage"] == "True"
         end,
       },
     },
@@ -5426,7 +5426,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_UncannyDodge"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_UncannyDodge"] == "True"
         end,
       },
     },
@@ -5447,7 +5447,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_ImprovedUncannyDodge"] == "TRUE"
+          return character.Facts["ABILITY"]["Barbarian_CF_ImprovedUncannyDodge"] == "TRUE"
         end,
       },
     },
@@ -5468,7 +5468,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_ClassSkills"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_ClassSkills"] == "True"
         end,
       },
     },
@@ -5489,7 +5489,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_WeaponProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_WeaponProficiencies"] == "True"
         end,
       },
     },
@@ -5510,7 +5510,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Barbarian_CF_ArmorProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Barbarian_CF_ArmorProficiencies"] == "True"
         end,
       },
     },
@@ -6429,7 +6429,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_BardicKnowledge",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6442,7 +6442,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_CounterSong",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6455,7 +6455,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_BardicPerformance",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6468,7 +6468,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_ArmoredCasting",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6481,7 +6481,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_Cantrips",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6494,7 +6494,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_VersatilePerformance",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6507,7 +6507,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_WellVersed",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6520,7 +6520,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_LoreMaster",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6533,7 +6533,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_JackOfAllTrades",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6546,7 +6546,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_ClassSkills",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6559,7 +6559,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_Proficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6572,7 +6572,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_BardDistraction",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6585,7 +6585,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_Fascinate",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6598,7 +6598,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_InspireCourage",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6611,7 +6611,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_InspireCompetence",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6624,7 +6624,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_Suggestion",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6637,7 +6637,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_DirgeOfDoom",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6650,7 +6650,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_InspireGreatness",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6663,7 +6663,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_SoothingPerformance",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6676,7 +6676,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_FrighteningTune",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6689,7 +6689,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_InspireHeroics",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6702,7 +6702,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_MassSuggestion",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6715,7 +6715,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_DeadlyPerformance",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6728,7 +6728,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_InspireCourage1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6741,7 +6741,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_InspireCourage2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6754,7 +6754,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_InspireCourage3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6767,7 +6767,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_InspireCourage4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6780,7 +6780,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_InspireCompetence1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6793,7 +6793,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_InspireCompetence2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6806,7 +6806,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_InspireCompetence3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6819,7 +6819,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_InspireCompetence4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6832,7 +6832,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_InspireCompetence5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6845,7 +6845,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Bard_CF_InspireCompetence6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -6864,7 +6864,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_BardicKnowledge"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_BardicKnowledge"] == "True"
         end,
       },
     },
@@ -6885,7 +6885,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_CounterSong"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_CounterSong"] == "True"
         end,
       },
     },
@@ -6906,7 +6906,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_BardicPerformance"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_BardicPerformance"] == "True"
         end,
       },
     },
@@ -6927,7 +6927,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_ArmoredCasting"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_ArmoredCasting"] == "True"
         end,
       },
     },
@@ -6948,7 +6948,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_Cantrips"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_Cantrips"] == "True"
         end,
       },
     },
@@ -6969,7 +6969,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_VersatilePerformance"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_VersatilePerformance"] == "True"
         end,
       },
     },
@@ -6990,7 +6990,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_WellVersed"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_WellVersed"] == "True"
         end,
       },
     },
@@ -7011,7 +7011,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_LoreMaster"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_LoreMaster"] == "True"
         end,
       },
     },
@@ -7032,7 +7032,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_JackOfAllTrades"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_JackOfAllTrades"] == "True"
         end,
       },
     },
@@ -7053,7 +7053,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_ClassSkills"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_ClassSkills"] == "True"
         end,
       },
     },
@@ -7074,7 +7074,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_Proficiencies"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_Proficiencies"] == "True"
         end,
       },
     },
@@ -7095,7 +7095,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_BardDistraction"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_BardDistraction"] == "True"
         end,
       },
     },
@@ -7116,7 +7116,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_Fascinate"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_Fascinate"] == "True"
         end,
       },
     },
@@ -7137,7 +7137,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_InspireCourage"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_InspireCourage"] == "True"
         end,
       },
     },
@@ -7158,7 +7158,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_InspireCompetence"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_InspireCompetence"] == "True"
         end,
       },
     },
@@ -7179,7 +7179,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_Suggestion"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_Suggestion"] == "True"
         end,
       },
     },
@@ -7200,7 +7200,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_DirgeOfDoom"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_DirgeOfDoom"] == "True"
         end,
       },
     },
@@ -7221,7 +7221,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_InspireGreatness"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_InspireGreatness"] == "True"
         end,
       },
     },
@@ -7242,7 +7242,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_SoothingPerformance"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_SoothingPerformance"] == "True"
         end,
       },
     },
@@ -7263,7 +7263,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_FrighteningTune"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_FrighteningTune"] == "True"
         end,
       },
     },
@@ -7284,7 +7284,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_InspireHeroics"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_InspireHeroics"] == "True"
         end,
       },
     },
@@ -7305,7 +7305,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_MassSuggestion"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_MassSuggestion"] == "True"
         end,
       },
     },
@@ -7326,7 +7326,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_DeadlyPerformance"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_DeadlyPerformance"] == "True"
         end,
       },
     },
@@ -7347,7 +7347,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_InspireCourage1"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_InspireCourage1"] == "True"
         end,
       },
     },
@@ -7368,7 +7368,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_InspireCourage2"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_InspireCourage2"] == "True"
         end,
       },
     },
@@ -7389,7 +7389,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_InspireCourage3"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_InspireCourage3"] == "True"
         end,
       },
     },
@@ -7410,7 +7410,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_InspireCourage4"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_InspireCourage4"] == "True"
         end,
       },
     },
@@ -7431,7 +7431,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_InspireCompetence1"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_InspireCompetence1"] == "True"
         end,
       },
     },
@@ -7452,7 +7452,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_InspireCompetence2"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_InspireCompetence2"] == "True"
         end,
       },
     },
@@ -7473,7 +7473,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_InspireCompetence3"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_InspireCompetence3"] == "True"
         end,
       },
     },
@@ -7494,7 +7494,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_InspireCompetence4"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_InspireCompetence4"] == "True"
         end,
       },
     },
@@ -7515,7 +7515,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_InspireCompetence5"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_InspireCompetence5"] == "True"
         end,
       },
     },
@@ -7536,7 +7536,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Bard_CF_InspireCompetence6"] == "True"
+          return character.Facts["ABILITY"]["Bard_CF_InspireCompetence6"] == "True"
         end,
       },
     },
@@ -7827,7 +7827,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -7840,7 +7840,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_Orisons",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -7853,7 +7853,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_SpontaneousCasting",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -7866,7 +7866,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_Proficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -7879,7 +7879,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_ArmorProficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -7892,7 +7892,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_WeaponProficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -7905,7 +7905,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_Domains",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -7918,7 +7918,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_ArmorProficiency",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -7931,7 +7931,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_WeaponProficiency",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -7944,7 +7944,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_ClassSkills",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -7957,7 +7957,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_SkillRanks",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -7970,7 +7970,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_Spellcasting",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -7983,7 +7983,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -7996,7 +7996,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8009,7 +8009,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8022,7 +8022,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8035,7 +8035,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8048,7 +8048,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8061,7 +8061,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8074,7 +8074,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8087,7 +8087,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8100,7 +8100,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Cleric_CF_ChannelEnergy10",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8119,7 +8119,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_Proficiencies"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_Proficiencies"] == "True"
         end,
       },
     },
@@ -8140,7 +8140,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_ArmorProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_ArmorProficiencies"] == "True"
         end,
       },
     },
@@ -8161,7 +8161,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_WeaponProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_WeaponProficiencies"] == "True"
         end,
       },
     },
@@ -8182,7 +8182,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_ChannelEnergy"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy"] == "True"
         end,
       },
     },
@@ -8203,7 +8203,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_Orisons"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_Orisons"] == "True"
         end,
       },
     },
@@ -8224,7 +8224,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_SpontaneousCasting"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_SpontaneousCasting"] == "True"
         end,
       },
     },
@@ -8245,7 +8245,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_Domains"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_Domains"] == "True"
         end,
       },
     },
@@ -8266,7 +8266,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_ArmorProficiency"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_ArmorProficiency"] == "True"
         end,
       },
     },
@@ -8287,7 +8287,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_WeaponProficiency"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_WeaponProficiency"] == "True"
         end,
       },
     },
@@ -8308,7 +8308,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_ClassSkills"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_ClassSkills"] == "True"
         end,
       },
     },
@@ -8329,7 +8329,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_SkillRanks"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_SkillRanks"] == "True"
         end,
       },
     },
@@ -8350,7 +8350,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_Spellcasting"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_Spellcasting"] == "True"
         end,
       },
     },
@@ -8371,7 +8371,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_ChannelEnergy1"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy1"] == "True"
         end,
       },
     },
@@ -8392,7 +8392,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_ChannelEnergy2"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy2"] == "True"
         end,
       },
     },
@@ -8413,7 +8413,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_ChannelEnergy3"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy3"] == "True"
         end,
       },
     },
@@ -8434,7 +8434,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_ChannelEnergy4"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy4"] == "True"
         end,
       },
     },
@@ -8455,7 +8455,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_ChannelEnergy5"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy5"] == "True"
         end,
       },
     },
@@ -8476,7 +8476,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_ChannelEnergy6"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy6"] == "True"
         end,
       },
     },
@@ -8497,7 +8497,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_ChannelEnergy7"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy7"] == "True"
         end,
       },
     },
@@ -8518,7 +8518,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_ChannelEnergy8"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy8"] == "True"
         end,
       },
     },
@@ -8539,7 +8539,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_ChannelEnergy9"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy9"] == "True"
         end,
       },
     },
@@ -8560,7 +8560,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Cleric_CF_ChannelEnergy10"] == "True"
+          return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy10"] == "True"
         end,
       },
     },
@@ -8727,7 +8727,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_ArmorProficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8740,7 +8740,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WeaponProficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8753,7 +8753,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_SpontaneousCasting",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8766,7 +8766,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_NatureSense",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8779,7 +8779,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildEmpathy",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8792,7 +8792,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WoodlandStride",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8805,7 +8805,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_TracklessStep",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8818,7 +8818,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildShape",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8831,7 +8831,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_ResistNaturesLure",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8844,7 +8844,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_VenomImmunity",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8857,7 +8857,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_AThousandFaces",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8870,7 +8870,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_TimelessBody",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8883,7 +8883,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_NatureBond",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8896,7 +8896,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_ClassSkills",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8909,7 +8909,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildShapeUses4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8922,7 +8922,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildShapeUses6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8935,7 +8935,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildShapeUses8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8948,7 +8948,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildShapeUses10",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8961,7 +8961,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildShapeUses12",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8974,7 +8974,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildShapeUses14",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -8987,7 +8987,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildShapeUses16",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -9000,7 +9000,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildShapeUses18",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -9013,7 +9013,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildShapeUses20",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -9026,7 +9026,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildShapeOptions4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -9039,7 +9039,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildShapeOptions6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -9052,7 +9052,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildShapeOptions8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -9065,7 +9065,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildShapeOptions10",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -9078,7 +9078,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_WildShapeOptions12",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -9091,7 +9091,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_DruidDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -9104,7 +9104,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Druid_CF_AnimalCompanion",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -9123,7 +9123,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_ArmorProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_ArmorProficiencies"] == "True"
         end,
       },
     },
@@ -9144,7 +9144,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WeaponProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WeaponProficiencies"] == "True"
         end,
       },
     },
@@ -9165,7 +9165,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_SpontaneousCasting"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_SpontaneousCasting"] == "True"
         end,
       },
     },
@@ -9186,7 +9186,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_NatureSense"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_NatureSense"] == "True"
         end,
       },
     },
@@ -9207,7 +9207,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WildEmpathy"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WildEmpathy"] == "True"
         end,
       },
     },
@@ -9228,7 +9228,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WoodlandStride"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WoodlandStride"] == "True"
         end,
       },
     },
@@ -9249,7 +9249,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_TracklessStep"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_TracklessStep"] == "True"
         end,
       },
     },
@@ -9270,7 +9270,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WildShape"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WildShape"] == "True"
         end,
       },
     },
@@ -9291,7 +9291,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_ResistNaturesLure"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_ResistNaturesLure"] == "True"
         end,
       },
     },
@@ -9312,7 +9312,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_VenomImmunity"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_VenomImmunity"] == "True"
         end,
       },
     },
@@ -9333,7 +9333,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_AThousandFaces"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_AThousandFaces"] == "True"
         end,
       },
     },
@@ -9354,7 +9354,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_TimelessBody"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_TimelessBody"] == "True"
         end,
       },
     },
@@ -9375,7 +9375,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_NatureBond"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_NatureBond"] == "True"
         end,
       },
     },
@@ -9396,7 +9396,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_ClassSkills"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_ClassSkills"] == "True"
         end,
       },
     },
@@ -9417,7 +9417,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WildShapeUses4"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WildShapeUses4"] == "True"
         end,
       },
     },
@@ -9438,7 +9438,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WildShapeUses8"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WildShapeUses8"] == "True"
         end,
       },
     },
@@ -9459,7 +9459,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WildShapeUses10"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WildShapeUses10"] == "True"
         end,
       },
     },
@@ -9480,7 +9480,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WildShapeUses12"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WildShapeUses12"] == "True"
         end,
       },
     },
@@ -9501,7 +9501,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WildShapeUses14"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WildShapeUses14"] == "True"
         end,
       },
     },
@@ -9522,7 +9522,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WildShapeUses16"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WildShapeUses16"] == "True"
         end,
       },
     },
@@ -9543,7 +9543,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WildShapeUses18"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WildShapeUses18"] == "True"
         end,
       },
     },
@@ -9564,7 +9564,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WildShapeUses20"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WildShapeUses20"] == "True"
         end,
       },
     },
@@ -9585,7 +9585,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WildShapeOptions4"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WildShapeOptions4"] == "True"
         end,
       },
     },
@@ -9606,7 +9606,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WildShapeOptions6"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WildShapeOptions6"] == "True"
         end,
       },
     },
@@ -9627,7 +9627,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WildShapeOptions8"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WildShapeOptions8"] == "True"
         end,
       },
     },
@@ -9648,7 +9648,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WildShapeOptions10"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WildShapeOptions10"] == "True"
         end,
       },
     },
@@ -9669,7 +9669,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_WildShapeOptions12"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_WildShapeOptions12"] == "True"
         end,
       },
     },
@@ -9690,7 +9690,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_DruidDomain"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_DruidDomain"] == "True"
         end,
       },
     },
@@ -9711,7 +9711,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_AnimalCompanion"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_AnimalCompanion"] == "True"
         end,
       },
     },
@@ -9962,7 +9962,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Druid_CF_ClassSkills"] == "True"
+          return character.Facts["ABILITY"]["Druid_CF_ClassSkills"] == "True"
         end,
       },
     },
@@ -10023,7 +10023,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_ClassSkills",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10036,7 +10036,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_BonusFeats",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10049,7 +10049,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_Bravery",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10062,7 +10062,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_ArmorTraining",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10075,7 +10075,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_WeaponTraining",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10088,7 +10088,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_WeaponTraining1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10101,7 +10101,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_WeaponTraining2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10114,7 +10114,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_WeaponTraining3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10127,7 +10127,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_WeaponTraining4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10140,7 +10140,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_ArmorMastery",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10153,7 +10153,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_WeaponMastery",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10166,7 +10166,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_ArmorTraining1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10179,7 +10179,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_ArmorTraining2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10192,7 +10192,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_ArmorTraining3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10205,7 +10205,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_ArmorTraining4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10218,7 +10218,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_BonusFeat1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10231,7 +10231,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_BonusFeat2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10244,7 +10244,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_BonusFeat4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10257,7 +10257,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_BonusFeat6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10270,7 +10270,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_BonusFeat8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10283,7 +10283,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_BonusFeat10",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10296,7 +10296,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_BonusFeat12",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10309,7 +10309,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_BonusFeat14",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10322,7 +10322,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_BonusFeat16",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10335,7 +10335,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_BonusFeat18",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10348,7 +10348,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_BonusFeat20",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10361,7 +10361,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_TowerShieldProficiency",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10374,7 +10374,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_ArmorProficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10387,7 +10387,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_Proficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10400,7 +10400,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_LightArmorProficiency",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10413,7 +10413,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_MediumArmorProficiency",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10426,7 +10426,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_HeavyArmorProficiency",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10439,7 +10439,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Fighter_CF_ShieldProficiency",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -10458,7 +10458,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_TowerShieldProficiency"] == "true"
+          return character.Facts["ABILITY"]["Fighter_CF_TowerShieldProficiency"] == "true"
         end,
       },
     },
@@ -10479,7 +10479,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_ArmorProficiencies"] == "true"
+          return character.Facts["ABILITY"]["Fighter_CF_ArmorProficiencies"] == "true"
         end,
       },
     },
@@ -10500,7 +10500,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_Proficiencies"] == "true"
+          return character.Facts["ABILITY"]["Fighter_CF_Proficiencies"] == "true"
         end,
       },
     },
@@ -10521,7 +10521,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_LightArmorProficiency"] == "true"
+          return character.Facts["ABILITY"]["Fighter_CF_LightArmorProficiency"] == "true"
         end,
       },
     },
@@ -10542,7 +10542,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_MediumArmorProficiency"] == "true"
+          return character.Facts["ABILITY"]["Fighter_CF_MediumArmorProficiency"] == "true"
         end,
       },
     },
@@ -10563,7 +10563,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_HeavyArmorProficiency"] == "true"
+          return character.Facts["ABILITY"]["Fighter_CF_HeavyArmorProficiency"] == "true"
         end,
       },
     },
@@ -10584,7 +10584,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_ShieldProficiency"] == "true"
+          return character.Facts["ABILITY"]["Fighter_CF_ShieldProficiency"] == "true"
         end,
       },
     },
@@ -10605,7 +10605,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_ClassSkills"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_ClassSkills"] == "True"
         end,
       },
     },
@@ -10626,7 +10626,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_BonusFeats"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_BonusFeats"] == "True"
         end,
       },
     },
@@ -10647,7 +10647,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_Bravery"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_Bravery"] == "True"
         end,
       },
     },
@@ -10668,7 +10668,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_ArmorTraining"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_ArmorTraining"] == "True"
         end,
       },
     },
@@ -10689,7 +10689,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_WeaponTraining"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_WeaponTraining"] == "True"
         end,
       },
     },
@@ -10710,7 +10710,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_WeaponTraining1"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_WeaponTraining1"] == "True"
         end,
       },
     },
@@ -10731,7 +10731,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_WeaponTraining2"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_WeaponTraining2"] == "True"
         end,
       },
     },
@@ -10752,7 +10752,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_WeaponTraining3"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_WeaponTraining3"] == "True"
         end,
       },
     },
@@ -10773,7 +10773,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_WeaponTraining4"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_WeaponTraining4"] == "True"
         end,
       },
     },
@@ -10794,7 +10794,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_ArmorMastery"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_ArmorMastery"] == "True"
         end,
       },
     },
@@ -10815,7 +10815,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_WeaponMastery"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_WeaponMastery"] == "True"
         end,
       },
     },
@@ -10836,7 +10836,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_ArmorTraining1"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_ArmorTraining1"] == "True"
         end,
       },
     },
@@ -10857,7 +10857,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_ArmorTraining2"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_ArmorTraining2"] == "True"
         end,
       },
     },
@@ -10878,7 +10878,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_ArmorTraining3"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_ArmorTraining3"] == "True"
         end,
       },
     },
@@ -10899,7 +10899,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_ArmorTraining4"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_ArmorTraining4"] == "True"
         end,
       },
     },
@@ -10920,7 +10920,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_BonusFeat1"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_BonusFeat1"] == "True"
         end,
       },
     },
@@ -10941,7 +10941,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_BonusFeat2"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_BonusFeat2"] == "True"
         end,
       },
     },
@@ -10962,7 +10962,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_BonusFeat4"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_BonusFeat4"] == "True"
         end,
       },
     },
@@ -10983,7 +10983,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_BonusFeat6"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_BonusFeat6"] == "True"
         end,
       },
     },
@@ -11004,7 +11004,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_BonusFeat8"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_BonusFeat8"] == "True"
         end,
       },
     },
@@ -11025,7 +11025,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_BonusFeat10"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_BonusFeat10"] == "True"
         end,
       },
     },
@@ -11046,7 +11046,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_BonusFeat12"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_BonusFeat12"] == "True"
         end,
       },
     },
@@ -11067,7 +11067,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_BonusFeat14"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_BonusFeat14"] == "True"
         end,
       },
     },
@@ -11088,7 +11088,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_BonusFeat16"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_BonusFeat16"] == "True"
         end,
       },
     },
@@ -11109,7 +11109,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_BonusFeat18"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_BonusFeat18"] == "True"
         end,
       },
     },
@@ -11130,7 +11130,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Fighter_CF_BonusFeat20"] == "True"
+          return character.Facts["ABILITY"]["Fighter_CF_BonusFeat20"] == "True"
         end,
       },
     },
@@ -11628,7 +11628,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_UnarmedStrike",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11641,7 +11641,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_FlurryOfBlows",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11654,7 +11654,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_BonusFeats",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11667,7 +11667,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_ACBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11680,7 +11680,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_StunningFist",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11693,7 +11693,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_Evasion",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11706,7 +11706,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_FastMovement",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11719,7 +11719,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_ManeuverTraining",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11732,7 +11732,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_StillMind",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11745,7 +11745,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_KiPool",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11758,7 +11758,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_SlowFall",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11771,7 +11771,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_HighJump",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11784,7 +11784,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_PurityOfBody",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11797,7 +11797,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_WholenessOfBody",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11810,7 +11810,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_ImprovedEvasion",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11823,7 +11823,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_DiamondBody",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11836,7 +11836,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_AbundantStep",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11849,7 +11849,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_DiamondSoul",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11862,7 +11862,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_QuiveringPalm",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11875,7 +11875,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_TongueOfTheSunAndMoon",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11888,7 +11888,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_TimelessBody",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11901,7 +11901,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_EmptyBody",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11914,7 +11914,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_PerfectSelf",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11927,7 +11927,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_Proficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11940,7 +11940,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_ClassSkills",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11953,7 +11953,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_WeaponProficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11966,7 +11966,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_BonusFeat18",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11979,7 +11979,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_BonusFeat10",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -11992,7 +11992,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_BonusFeat6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12005,7 +12005,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_BonusFeat2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12018,7 +12018,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_BonusFeat1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12031,7 +12031,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_Alignment",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12044,7 +12044,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_SlowFall10",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12057,7 +12057,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_SlowFall20",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12070,7 +12070,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_SlowFall30",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12083,7 +12083,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_SlowFall40",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12096,7 +12096,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_SlowFall50",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12109,7 +12109,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_SlowFall60",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12122,7 +12122,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_SlowFall70",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12135,7 +12135,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_SlowFall80",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12148,7 +12148,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_SlowFall90",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12161,7 +12161,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_KiPoolAbilities1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12174,7 +12174,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_KiPoolAbilities7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12187,7 +12187,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_KiPoolAbilities10",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12200,7 +12200,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Monk_CF_KiPoolAbilities16",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -12219,7 +12219,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_KiPoolAbilities1"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_KiPoolAbilities1"] == "True"
         end,
       },
     },
@@ -12240,7 +12240,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_KiPoolAbilities7"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_KiPoolAbilities7"] == "True"
         end,
       },
     },
@@ -12261,7 +12261,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_KiPoolAbilities10"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_KiPoolAbilities10"] == "True"
         end,
       },
     },
@@ -12282,7 +12282,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_KiPoolAbilities16"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_KiPoolAbilities16"] == "True"
         end,
       },
     },
@@ -12303,7 +12303,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_SlowFall10"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_SlowFall10"] == "True"
         end,
       },
     },
@@ -12324,7 +12324,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_SlowFall20"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_SlowFall20"] == "True"
         end,
       },
     },
@@ -12345,7 +12345,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_SlowFall30"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_SlowFall30"] == "True"
         end,
       },
     },
@@ -12366,7 +12366,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_SlowFall40"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_SlowFall40"] == "True"
         end,
       },
     },
@@ -12387,7 +12387,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_SlowFall50"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_SlowFall50"] == "True"
         end,
       },
     },
@@ -12408,7 +12408,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_SlowFall60"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_SlowFall60"] == "True"
         end,
       },
     },
@@ -12429,7 +12429,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_SlowFall70"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_SlowFall70"] == "True"
         end,
       },
     },
@@ -12450,7 +12450,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_SlowFall80"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_SlowFall80"] == "True"
         end,
       },
     },
@@ -12471,7 +12471,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_SlowFall90"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_SlowFall90"] == "True"
         end,
       },
     },
@@ -12492,7 +12492,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_WeaponProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_WeaponProficiencies"] == "True"
         end,
       },
     },
@@ -12513,7 +12513,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_BonusFeat18"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_BonusFeat18"] == "True"
         end,
       },
     },
@@ -12534,7 +12534,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_BonusFeat10"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_BonusFeat10"] == "True"
         end,
       },
     },
@@ -12555,7 +12555,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_BonusFeat6"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_BonusFeat6"] == "True"
         end,
       },
     },
@@ -12576,7 +12576,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_BonusFeat2"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_BonusFeat2"] == "True"
         end,
       },
     },
@@ -12597,7 +12597,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_BonusFeat1"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_BonusFeat1"] == "True"
         end,
       },
     },
@@ -12618,7 +12618,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_Alignment"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_Alignment"] == "True"
         end,
       },
     },
@@ -12688,7 +12688,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_UnarmedStrike"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_UnarmedStrike"] == "True"
         end,
       },
     },
@@ -12709,7 +12709,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_FlurryOfBlows"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_FlurryOfBlows"] == "True"
         end,
       },
     },
@@ -12730,7 +12730,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_BonusFeats"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_BonusFeats"] == "True"
         end,
       },
     },
@@ -12751,7 +12751,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_ACBonus"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_ACBonus"] == "True"
         end,
       },
     },
@@ -12772,7 +12772,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_StunningFist"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_StunningFist"] == "True"
         end,
       },
     },
@@ -12793,7 +12793,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_Evasion"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_Evasion"] == "True"
         end,
       },
     },
@@ -12814,7 +12814,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_FastMovement"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_FastMovement"] == "True"
         end,
       },
     },
@@ -12835,7 +12835,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_ManeuverTraining"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_ManeuverTraining"] == "True"
         end,
       },
     },
@@ -12856,7 +12856,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_StillMind"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_StillMind"] == "True"
         end,
       },
     },
@@ -12877,7 +12877,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_KiPool"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_KiPool"] == "True"
         end,
       },
     },
@@ -12898,7 +12898,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_SlowFall"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_SlowFall"] == "True"
         end,
       },
     },
@@ -12919,7 +12919,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_HighJump"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_HighJump"] == "True"
         end,
       },
     },
@@ -12940,7 +12940,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_PurityOfBody"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_PurityOfBody"] == "True"
         end,
       },
     },
@@ -12961,7 +12961,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_WholenessOfBody"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_WholenessOfBody"] == "True"
         end,
       },
     },
@@ -12982,7 +12982,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_ImprovedEvasion"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_ImprovedEvasion"] == "True"
         end,
       },
     },
@@ -13003,7 +13003,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_DiamondBody"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_DiamondBody"] == "True"
         end,
       },
     },
@@ -13024,7 +13024,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_AbundantStep"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_AbundantStep"] == "True"
         end,
       },
     },
@@ -13045,7 +13045,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_DiamondSoul"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_DiamondSoul"] == "True"
         end,
       },
     },
@@ -13066,7 +13066,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_QuiveringPalm"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_QuiveringPalm"] == "True"
         end,
       },
     },
@@ -13087,7 +13087,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_TongueOfTheSunAndMoon"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_TongueOfTheSunAndMoon"] == "True"
         end,
       },
     },
@@ -13108,7 +13108,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_TimelessBody"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_TimelessBody"] == "True"
         end,
       },
     },
@@ -13129,7 +13129,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_EmptyBody"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_EmptyBody"] == "True"
         end,
       },
     },
@@ -13150,7 +13150,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_PerfectSelf"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_PerfectSelf"] == "True"
         end,
       },
     },
@@ -13171,7 +13171,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_ClassSkills"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_ClassSkills"] == "True"
         end,
       },
     },
@@ -13192,7 +13192,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Monk_CF_Proficiencies"] == "True"
+          return character.Facts["ABILITY"]["Monk_CF_Proficiencies"] == "True"
         end,
       },
     },
@@ -13759,7 +13759,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_ClassSkills",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13772,7 +13772,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_WeaponProficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13785,7 +13785,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_WeaponProficiencySimple",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13798,7 +13798,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_WeaponProficiencyMartial",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13811,7 +13811,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_ArmorProficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13824,7 +13824,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_ArmorProficiencyHeavy",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13837,7 +13837,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_ArmorProficiencyMedium",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13850,7 +13850,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_ArmorProficiencyLight",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13863,7 +13863,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_ShieldProficiency",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13876,7 +13876,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_AuraOfGood",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13889,7 +13889,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_DetectEvil",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13902,7 +13902,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_SmiteEvil",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13915,7 +13915,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_DivineGrace",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13928,7 +13928,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_LayOnHands",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13941,7 +13941,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_AuraOfCourage",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13954,7 +13954,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_DivineHealth",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13967,7 +13967,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_Mercy",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13980,7 +13980,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_Mercy3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -13993,7 +13993,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_Mercy6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14006,7 +14006,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_Mercy9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14019,7 +14019,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_Mercy12",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14032,7 +14032,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_Mercy15",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14045,7 +14045,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_Mercy18",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14058,7 +14058,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_ChannelPositiveEnergy",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14071,7 +14071,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_Spells",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14084,7 +14084,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_DivineBond",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14097,7 +14097,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_BondedMount",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14110,7 +14110,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_BondedWeapon",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14123,7 +14123,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_AuraOfResolve",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14136,7 +14136,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_AuraOfJustice",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14149,7 +14149,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_AuraOfFaith",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14162,7 +14162,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_AuraOfRighteousness",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14175,7 +14175,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_HolyChampion",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14188,7 +14188,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Paladin_CF_CodeOfConduct",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -14201,19 +14201,19 @@ ModifyAbility({
   Definitions={
     {
       Name="AllowHolyAvenger",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="HolyAvengerCL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="HolyAvengerSR",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Paladin_AuraRange",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -14274,7 +14274,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_ClassSkills"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_ClassSkills"] == "True"
         end,
       },
     },
@@ -14295,7 +14295,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_WeaponProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_WeaponProficiencies"] == "True"
         end,
       },
     },
@@ -14338,7 +14338,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_WeaponProficiencySimple"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_WeaponProficiencySimple"] == "True"
         end,
       },
     },
@@ -14359,7 +14359,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_WeaponProficiencyMartial"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_WeaponProficiencyMartial"] == "True"
         end,
       },
     },
@@ -14380,7 +14380,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_ArmorProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_ArmorProficiencies"] == "True"
         end,
       },
     },
@@ -14424,7 +14424,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_ArmorProficiencyHeavy"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_ArmorProficiencyHeavy"] == "True"
         end,
       },
     },
@@ -14445,7 +14445,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_ArmorProficiencyMedium"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_ArmorProficiencyMedium"] == "True"
         end,
       },
     },
@@ -14466,7 +14466,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_ArmorProficiencyLight"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_ArmorProficiencyLight"] == "True"
         end,
       },
     },
@@ -14487,7 +14487,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_ShieldProficiency"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_ShieldProficiency"] == "True"
         end,
       },
     },
@@ -14508,7 +14508,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_AuraOfGood"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_AuraOfGood"] == "True"
         end,
       },
     },
@@ -14529,7 +14529,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_DetectEvil"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_DetectEvil"] == "True"
         end,
       },
     },
@@ -14550,7 +14550,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_SmiteEvil"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_SmiteEvil"] == "True"
         end,
       },
     },
@@ -14571,7 +14571,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_DivineGrace"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_DivineGrace"] == "True"
         end,
       },
     },
@@ -14592,7 +14592,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_LayOnHands"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_LayOnHands"] == "True"
         end,
       },
     },
@@ -14613,7 +14613,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_AuraOfCourage"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_AuraOfCourage"] == "True"
         end,
       },
     },
@@ -14634,7 +14634,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_DivineHealth"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_DivineHealth"] == "True"
         end,
       },
     },
@@ -14655,7 +14655,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_Mercy"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_Mercy"] == "True"
         end,
       },
     },
@@ -14676,7 +14676,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_Mercy3"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_Mercy3"] == "True"
         end,
       },
     },
@@ -14697,7 +14697,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_Mercy6"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_Mercy6"] == "True"
         end,
       },
     },
@@ -14718,7 +14718,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_Mercy9"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_Mercy9"] == "True"
         end,
       },
     },
@@ -14739,7 +14739,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_Mercy12"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_Mercy12"] == "True"
         end,
       },
     },
@@ -14760,7 +14760,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_Mercy15"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_Mercy15"] == "True"
         end,
       },
     },
@@ -14781,7 +14781,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_Mercy18"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_Mercy18"] == "True"
         end,
       },
     },
@@ -14802,7 +14802,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_ChannelPositiveEnergy"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_ChannelPositiveEnergy"] == "True"
         end,
       },
     },
@@ -14823,7 +14823,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_Spells"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_Spells"] == "True"
         end,
       },
     },
@@ -14844,7 +14844,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_DivineBond"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_DivineBond"] == "True"
         end,
       },
     },
@@ -14865,7 +14865,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_BondedMount"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_BondedMount"] == "True"
         end,
       },
     },
@@ -14886,7 +14886,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_BondedWeapon"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_BondedWeapon"] == "True"
         end,
       },
     },
@@ -14907,7 +14907,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_AuraOfResolve"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_AuraOfResolve"] == "True"
         end,
       },
     },
@@ -14928,7 +14928,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_AuraOfJustice"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_AuraOfJustice"] == "True"
         end,
       },
     },
@@ -14949,7 +14949,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_AuraOfFaith"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_AuraOfFaith"] == "True"
         end,
       },
     },
@@ -14970,7 +14970,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_AuraOfRighteousness"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_AuraOfRighteousness"] == "True"
         end,
       },
     },
@@ -14991,7 +14991,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_HolyChampion"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_HolyChampion"] == "True"
         end,
       },
     },
@@ -15012,7 +15012,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Paladin_CF_CodeOfConduct"] == "True"
+          return character.Facts["ABILITY"]["Paladin_CF_CodeOfConduct"] == "True"
         end,
       },
     },
@@ -15478,7 +15478,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_Proficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15491,7 +15491,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_WeaponProficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15504,7 +15504,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_LightArmorProficiency",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15517,7 +15517,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_MediumArmorProficiency",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15530,7 +15530,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_ShieldProficiency",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15543,7 +15543,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_HuntersBond",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15556,7 +15556,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_FavoredEnemy",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15569,7 +15569,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_FavoredTerrain",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15582,7 +15582,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_Track",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15595,7 +15595,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_WildEmpathy",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15608,7 +15608,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_CombatStyleFeat",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15621,7 +15621,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_WoodlandStride",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15634,7 +15634,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_SwiftTracker",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15647,7 +15647,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_Evasion",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15660,7 +15660,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_Quarry",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15673,7 +15673,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_Camouflage",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15686,7 +15686,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_Evasion",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15699,7 +15699,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_HideInPlainSight",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15712,7 +15712,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_Quarry",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15725,7 +15725,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_MasterHunter",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15738,7 +15738,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_Endurance",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15751,7 +15751,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_ImprovedEvasion",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15764,7 +15764,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_ImprovedQuarry",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15777,7 +15777,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_CombatStyleFeat2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15790,7 +15790,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_CombatStyleFeat6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15803,7 +15803,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_CombatStyleFeat10",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15816,7 +15816,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_CombatStyleFeat14",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15829,7 +15829,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_CombatStyleFeat18",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15842,7 +15842,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_FavoredEnemy1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15855,7 +15855,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_FavoredEnemy2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15868,7 +15868,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_FavoredEnemy3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15881,7 +15881,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_FavoredEnemy4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15894,7 +15894,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_AnimalCompanion",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15907,7 +15907,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_CF_ClassSkills",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -15926,7 +15926,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_Proficiencies"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_Proficiencies"] == "True"
         end,
       },
     },
@@ -15947,7 +15947,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_WeaponProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_WeaponProficiencies"] == "True"
         end,
       },
     },
@@ -15968,7 +15968,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_LightArmorProficiency"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_LightArmorProficiency"] == "True"
         end,
       },
     },
@@ -15989,7 +15989,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_MediumArmorProficiency"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_MediumArmorProficiency"] == "True"
         end,
       },
     },
@@ -16010,7 +16010,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_ShieldProficiency"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_ShieldProficiency"] == "True"
         end,
       },
     },
@@ -16031,7 +16031,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_ClassSkills"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_ClassSkills"] == "True"
         end,
       },
     },
@@ -16052,7 +16052,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_ImprovedEvasion"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_ImprovedEvasion"] == "True"
         end,
       },
     },
@@ -16073,7 +16073,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_ImprovedQuarry"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_ImprovedQuarry"] == "True"
         end,
       },
     },
@@ -16094,7 +16094,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_CombatStyleFeat2"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_CombatStyleFeat2"] == "True"
         end,
       },
     },
@@ -16115,7 +16115,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_CombatStyleFeat6"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_CombatStyleFeat6"] == "True"
         end,
       },
     },
@@ -16136,7 +16136,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_CombatStyleFeat10"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_CombatStyleFeat10"] == "True"
         end,
       },
     },
@@ -16157,7 +16157,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_CombatStyleFeat14"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_CombatStyleFeat14"] == "True"
         end,
       },
     },
@@ -16178,7 +16178,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_CombatStyleFeat18"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_CombatStyleFeat18"] == "True"
         end,
       },
     },
@@ -16199,7 +16199,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_FavoredEnemy1"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_FavoredEnemy1"] == "True"
         end,
       },
     },
@@ -16220,7 +16220,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_FavoredEnemy2"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_FavoredEnemy2"] == "True"
         end,
       },
     },
@@ -16241,7 +16241,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_FavoredEnemy3"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_FavoredEnemy3"] == "True"
         end,
       },
     },
@@ -16262,7 +16262,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_FavoredEnemy4"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_FavoredEnemy4"] == "True"
         end,
       },
     },
@@ -16283,7 +16283,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_AnimalCompanion"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_AnimalCompanion"] == "True"
         end,
       },
     },
@@ -16304,7 +16304,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_HuntersBond"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_HuntersBond"] == "True"
         end,
       },
     },
@@ -16325,7 +16325,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_FavoredEnemy"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_FavoredEnemy"] == "True"
         end,
       },
     },
@@ -16346,7 +16346,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_FavoredTerrain"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_FavoredTerrain"] == "True"
         end,
       },
     },
@@ -16367,7 +16367,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_Track"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_Track"] == "True"
         end,
       },
     },
@@ -16388,7 +16388,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_WildEmpathy"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_WildEmpathy"] == "True"
         end,
       },
     },
@@ -16409,7 +16409,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_CombatStyleFeat"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_CombatStyleFeat"] == "True"
         end,
       },
     },
@@ -16430,7 +16430,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_WoodlandStride"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_WoodlandStride"] == "True"
         end,
       },
     },
@@ -16451,7 +16451,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_SwiftTracker"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_SwiftTracker"] == "True"
         end,
       },
     },
@@ -16472,7 +16472,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_Evasion"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_Evasion"] == "True"
         end,
       },
     },
@@ -16493,7 +16493,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_Quarry"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_Quarry"] == "True"
         end,
       },
     },
@@ -16514,7 +16514,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_Camouflage"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_Camouflage"] == "True"
         end,
       },
     },
@@ -16535,7 +16535,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_Evasion"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_Evasion"] == "True"
         end,
       },
     },
@@ -16556,7 +16556,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_HideInPlainSight"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_HideInPlainSight"] == "True"
         end,
       },
     },
@@ -16577,7 +16577,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_Quarry"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_Quarry"] == "True"
         end,
       },
     },
@@ -16598,7 +16598,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_MasterHunter"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_MasterHunter"] == "True"
         end,
       },
     },
@@ -16619,7 +16619,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Ranger_CF_Endurance"] == "True"
+          return character.Facts["ABILITY"]["Ranger_CF_Endurance"] == "True"
         end,
       },
     },
@@ -17209,7 +17209,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_UncannyDodge",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17222,7 +17222,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_ImprovedUncannyDodge",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17235,7 +17235,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_SneakAttack",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17248,7 +17248,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_Trapfinding",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17261,7 +17261,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_Evasion",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17274,7 +17274,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_RogueTalents",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17287,7 +17287,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_TrapSense",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17300,7 +17300,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_MasterStrike",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17313,7 +17313,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_ClassSkills",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17326,7 +17326,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_WeaponProficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17339,7 +17339,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_ArmorProficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17352,7 +17352,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_TrapSense1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17365,7 +17365,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_TrapSense2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17378,7 +17378,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_TrapSense3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17391,7 +17391,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_TrapSense4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17404,7 +17404,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_TrapSense5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17417,7 +17417,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_TrapSense6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17430,7 +17430,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_AdvancedTalents",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17443,7 +17443,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_RogueTalent2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17456,7 +17456,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_RogueTalent4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17469,7 +17469,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_RogueTalent6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17482,7 +17482,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_RogueTalent8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17495,7 +17495,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_RogueTalent10",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17508,7 +17508,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_RogueTalent12",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17521,7 +17521,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_RogueTalent14",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17534,7 +17534,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_RogueTalent16",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17547,7 +17547,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_RogueTalent18",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17560,7 +17560,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_RogueTalent20",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17573,7 +17573,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_SneakAttack1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17586,7 +17586,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_SneakAttack3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17599,7 +17599,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_SneakAttack5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17612,7 +17612,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_SneakAttack7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17625,7 +17625,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_SneakAttack9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17638,7 +17638,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_SneakAttack11",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17651,7 +17651,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_SneakAttack13",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17664,7 +17664,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_SneakAttack15",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17677,7 +17677,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_SneakAttack17",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17690,7 +17690,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Rogue_CF_SneakAttack19",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -17709,7 +17709,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_TrapSense1"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_TrapSense1"] == "True"
         end,
       },
     },
@@ -17730,7 +17730,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_TrapSense2"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_TrapSense2"] == "True"
         end,
       },
     },
@@ -17751,7 +17751,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_TrapSense3"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_TrapSense3"] == "True"
         end,
       },
     },
@@ -17772,7 +17772,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_TrapSense4"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_TrapSense4"] == "True"
         end,
       },
     },
@@ -17793,7 +17793,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_TrapSense5"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_TrapSense5"] == "True"
         end,
       },
     },
@@ -17814,7 +17814,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_TrapSense6"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_TrapSense6"] == "True"
         end,
       },
     },
@@ -17835,7 +17835,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_AdvancedTalents"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_AdvancedTalents"] == "True"
         end,
       },
     },
@@ -17856,7 +17856,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_RogueTalent2"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_RogueTalent2"] == "True"
         end,
       },
     },
@@ -17877,7 +17877,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_RogueTalent4"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_RogueTalent4"] == "True"
         end,
       },
     },
@@ -17898,7 +17898,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_RogueTalent6"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_RogueTalent6"] == "True"
         end,
       },
     },
@@ -17919,7 +17919,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_RogueTalent8"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_RogueTalent8"] == "True"
         end,
       },
     },
@@ -17940,7 +17940,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_RogueTalent10"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_RogueTalent10"] == "True"
         end,
       },
     },
@@ -17961,7 +17961,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_RogueTalent12"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_RogueTalent12"] == "True"
         end,
       },
     },
@@ -17982,7 +17982,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_RogueTalent14"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_RogueTalent14"] == "True"
         end,
       },
     },
@@ -18003,7 +18003,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_RogueTalent16"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_RogueTalent16"] == "True"
         end,
       },
     },
@@ -18024,7 +18024,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_RogueTalent18"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_RogueTalent18"] == "True"
         end,
       },
     },
@@ -18045,7 +18045,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_RogueTalent20"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_RogueTalent20"] == "True"
         end,
       },
     },
@@ -18066,7 +18066,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_SneakAttack1"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_SneakAttack1"] == "True"
         end,
       },
     },
@@ -18087,7 +18087,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_SneakAttack3"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_SneakAttack3"] == "True"
         end,
       },
     },
@@ -18108,7 +18108,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_SneakAttack5"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_SneakAttack5"] == "True"
         end,
       },
     },
@@ -18129,7 +18129,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_SneakAttack7"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_SneakAttack7"] == "True"
         end,
       },
     },
@@ -18150,7 +18150,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_SneakAttack9"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_SneakAttack9"] == "True"
         end,
       },
     },
@@ -18171,7 +18171,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_SneakAttack11"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_SneakAttack11"] == "True"
         end,
       },
     },
@@ -18192,7 +18192,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_SneakAttack13"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_SneakAttack13"] == "True"
         end,
       },
     },
@@ -18213,7 +18213,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_SneakAttack15"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_SneakAttack15"] == "True"
         end,
       },
     },
@@ -18234,7 +18234,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_SneakAttack17"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_SneakAttack17"] == "True"
         end,
       },
     },
@@ -18255,7 +18255,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_SneakAttack19"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_SneakAttack19"] == "True"
         end,
       },
     },
@@ -18276,7 +18276,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_UncannyDodge"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_UncannyDodge"] == "True"
         end,
       },
     },
@@ -18297,7 +18297,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_ImprovedUncannyDodge"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_ImprovedUncannyDodge"] == "True"
         end,
       },
     },
@@ -18318,7 +18318,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_SneakAttack"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_SneakAttack"] == "True"
         end,
       },
     },
@@ -18339,7 +18339,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_Trapfinding"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_Trapfinding"] == "True"
         end,
       },
     },
@@ -18360,7 +18360,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_Evasion"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_Evasion"] == "True"
         end,
       },
     },
@@ -18381,7 +18381,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_RogueTalents"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_RogueTalents"] == "True"
         end,
       },
     },
@@ -18402,7 +18402,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_TrapSense"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_TrapSense"] == "True"
         end,
       },
     },
@@ -18423,7 +18423,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_MasterStrike"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_MasterStrike"] == "True"
         end,
       },
     },
@@ -18444,7 +18444,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_ClassSkills"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_ClassSkills"] == "True"
         end,
       },
     },
@@ -18465,7 +18465,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_WeaponProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_WeaponProficiencies"] == "True"
         end,
       },
     },
@@ -18486,7 +18486,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Rogue_CF_ArmorProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Rogue_CF_ArmorProficiencies"] == "True"
         end,
       },
     },
@@ -18915,7 +18915,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_ClassSkills",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -18928,7 +18928,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_WeaponProficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -18941,7 +18941,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_Spells",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -18954,7 +18954,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_Bloodline",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -18967,7 +18967,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_Cantrips",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -18980,7 +18980,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_EschewMaterials",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -18993,7 +18993,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineClassSkill",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19006,7 +19006,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineArcana",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19019,7 +19019,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlinePowers",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19032,7 +19032,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlinePower1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19045,7 +19045,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlinePower3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19058,7 +19058,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlinePower9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19071,7 +19071,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlinePower15",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19084,7 +19084,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlinePower20",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19097,7 +19097,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineFeats",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19110,7 +19110,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpells",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19123,7 +19123,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19136,7 +19136,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19149,7 +19149,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19162,7 +19162,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19175,7 +19175,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19188,7 +19188,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19201,7 +19201,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19214,7 +19214,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19227,7 +19227,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_CF_BloodlineSpell9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19246,7 +19246,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_ClassSkills"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_ClassSkills"] == "True"
         end,
       },
     },
@@ -19267,7 +19267,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlineArcana"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineArcana"] == "True"
         end,
       },
     },
@@ -19288,7 +19288,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlinePowers"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlinePowers"] == "True"
         end,
       },
     },
@@ -19309,7 +19309,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlinePower1"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlinePower1"] == "True"
         end,
       },
     },
@@ -19330,7 +19330,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlinePower3"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlinePower3"] == "True"
         end,
       },
     },
@@ -19351,7 +19351,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlinePower9"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlinePower9"] == "True"
         end,
       },
     },
@@ -19372,7 +19372,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlinePower15"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlinePower15"] == "True"
         end,
       },
     },
@@ -19393,7 +19393,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlinePower20"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlinePower20"] == "True"
         end,
       },
     },
@@ -19414,7 +19414,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlineFeats"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineFeats"] == "True"
         end,
       },
     },
@@ -19435,7 +19435,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_WeaponProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_WeaponProficiencies"] == "True"
         end,
       },
     },
@@ -19456,7 +19456,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_EschewMaterials"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_EschewMaterials"] == "True"
         end,
       },
     },
@@ -19477,7 +19477,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlineSpells"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpells"] == "True"
         end,
       },
     },
@@ -19498,7 +19498,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlineSpell1"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell1"] == "True"
         end,
       },
     },
@@ -19519,7 +19519,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlineSpell2"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell2"] == "True"
         end,
       },
     },
@@ -19540,7 +19540,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlineSpell3"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell3"] == "True"
         end,
       },
     },
@@ -19561,7 +19561,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlineSpell4"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell4"] == "True"
         end,
       },
     },
@@ -19582,7 +19582,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlineSpell5"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell5"] == "True"
         end,
       },
     },
@@ -19603,7 +19603,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlineSpell6"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell6"] == "True"
         end,
       },
     },
@@ -19624,7 +19624,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlineSpell7"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell7"] == "True"
         end,
       },
     },
@@ -19645,7 +19645,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlineSpell8"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell8"] == "True"
         end,
       },
     },
@@ -19666,7 +19666,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlineSpell9"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell9"] == "True"
         end,
       },
     },
@@ -19687,7 +19687,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_Bloodline"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_Bloodline"] == "True"
         end,
       },
     },
@@ -19708,7 +19708,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_BloodlineClassSkill"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineClassSkill"] == "True"
         end,
       },
     },
@@ -19729,7 +19729,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_Spells"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_Spells"] == "True"
         end,
       },
     },
@@ -19750,7 +19750,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Sorcerer_CF_Cantrips"] == "True"
+          return character.Facts["ABILITY"]["Sorcerer_CF_Cantrips"] == "True"
         end,
       },
     },
@@ -19811,7 +19811,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_ClassSkills",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19824,7 +19824,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_ArcaneSchool",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19837,7 +19837,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_WeaponProficiencies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19850,7 +19850,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_Spells",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19863,7 +19863,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_BonusLanguages",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19876,7 +19876,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_ScribeScroll",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19889,7 +19889,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_ArcaneBond",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19902,7 +19902,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_Cantrips",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19915,7 +19915,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_BonusFeats",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19928,7 +19928,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_SpellBook",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19941,7 +19941,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_Familiar",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19954,7 +19954,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_BondedObject",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19967,7 +19967,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_BonusFeat5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19980,7 +19980,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_BonusFeat10",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -19993,7 +19993,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_BonusFeat15",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -20006,7 +20006,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_BonusFeat20",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -20025,7 +20025,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_ClassSkills"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_ClassSkills"] == "True"
         end,
       },
     },
@@ -20046,7 +20046,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_ArcaneSchool"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_ArcaneSchool"] == "True"
         end,
       },
     },
@@ -20067,7 +20067,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_WeaponProficiencies"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_WeaponProficiencies"] == "True"
         end,
       },
     },
@@ -20088,7 +20088,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_Spells"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_Spells"] == "True"
         end,
       },
     },
@@ -20109,7 +20109,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_BonusLanguages"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_BonusLanguages"] == "True"
         end,
       },
     },
@@ -20130,7 +20130,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_ScribeScroll"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_ScribeScroll"] == "True"
         end,
       },
     },
@@ -20151,7 +20151,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_ArcaneBond"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_ArcaneBond"] == "True"
         end,
       },
     },
@@ -20172,7 +20172,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_Cantrips"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_Cantrips"] == "True"
         end,
       },
     },
@@ -20193,7 +20193,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_BonusFeats"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_BonusFeats"] == "True"
         end,
       },
     },
@@ -20214,7 +20214,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_SpellBook"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_SpellBook"] == "True"
         end,
       },
     },
@@ -20235,7 +20235,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_Familiar"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_Familiar"] == "True"
         end,
       },
     },
@@ -20256,7 +20256,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_BondedObject"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_BondedObject"] == "True"
         end,
       },
     },
@@ -20277,7 +20277,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_BonusFeat5"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_BonusFeat5"] == "True"
         end,
       },
     },
@@ -20298,7 +20298,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_BonusFeat10"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_BonusFeat10"] == "True"
         end,
       },
     },
@@ -20319,7 +20319,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_BonusFeat15"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_BonusFeat15"] == "True"
         end,
       },
     },
@@ -20340,7 +20340,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_BonusFeat20"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_BonusFeat20"] == "True"
         end,
       },
     },
@@ -20614,7 +20614,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_AbjurationOppositionSchool"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_AbjurationOppositionSchool"] == "True"
         end,
       },
     },
@@ -20635,7 +20635,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_ConjurationOppositionSchool"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_ConjurationOppositionSchool"] == "True"
         end,
       },
     },
@@ -20656,7 +20656,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_DivinationOppositionSchool"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_DivinationOppositionSchool"] == "True"
         end,
       },
     },
@@ -20677,7 +20677,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_EnchantmentOppositionSchool"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_EnchantmentOppositionSchool"] == "True"
         end,
       },
     },
@@ -20698,7 +20698,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_EvocationOppositionSchool"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_EvocationOppositionSchool"] == "True"
         end,
       },
     },
@@ -20719,7 +20719,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_IllusionOppositionSchool"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_IllusionOppositionSchool"] == "True"
         end,
       },
     },
@@ -20740,7 +20740,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_NecromancyOppositionSchool"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_NecromancyOppositionSchool"] == "True"
         end,
       },
     },
@@ -20761,7 +20761,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_TransmutationOppositionSchool"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_TransmutationOppositionSchool"] == "True"
         end,
       },
     },
@@ -20782,7 +20782,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_SchoolPower1"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_SchoolPower1"] == "True"
         end,
       },
     },
@@ -20803,7 +20803,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_SchoolPower8"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_SchoolPower8"] == "True"
         end,
       },
     },
@@ -20824,7 +20824,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_AcidDart"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_AcidDart"] == "True"
         end,
       },
     },
@@ -20845,7 +20845,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_AuraOfDespair"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_AuraOfDespair"] == "True"
         end,
       },
     },
@@ -20866,7 +20866,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_BlindingRay"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_BlindingRay"] == "True"
         end,
       },
     },
@@ -20887,7 +20887,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_ChangeShape"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_ChangeShape"] == "True"
         end,
       },
     },
@@ -20908,7 +20908,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_DazingTouch"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_DazingTouch"] == "True"
         end,
       },
     },
@@ -20929,7 +20929,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_DimensionalSteps"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_DimensionalSteps"] == "True"
         end,
       },
     },
@@ -20950,7 +20950,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_DivinersFortune"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_DivinersFortune"] == "True"
         end,
       },
     },
@@ -20971,7 +20971,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_ElementalWall"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_ElementalWall"] == "True"
         end,
       },
     },
@@ -20992,7 +20992,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_EnchantingSmile"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_EnchantingSmile"] == "True"
         end,
       },
     },
@@ -21013,7 +21013,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_EnergyAbsorption"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_EnergyAbsorption"] == "True"
         end,
       },
     },
@@ -21034,7 +21034,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_ExtendedIllusion"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_ExtendedIllusion"] == "True"
         end,
       },
     },
@@ -21055,7 +21055,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_ForceMissile"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_ForceMissile"] == "True"
         end,
       },
     },
@@ -21076,7 +21076,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_Forwarned"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_Forwarned"] == "True"
         end,
       },
     },
@@ -21097,7 +21097,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_GraveTouch"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_GraveTouch"] == "True"
         end,
       },
     },
@@ -21118,7 +21118,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_HandOfTheApprentice"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_HandOfTheApprentice"] == "True"
         end,
       },
     },
@@ -21139,7 +21139,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_IntenseSpells"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_IntenseSpells"] == "True"
         end,
       },
     },
@@ -21160,7 +21160,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_InvisibilityField"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_InvisibilityField"] == "True"
         end,
       },
     },
@@ -21181,7 +21181,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_LifeSight"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_LifeSight"] == "True"
         end,
       },
     },
@@ -21202,7 +21202,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_MetamagicMastery"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_MetamagicMastery"] == "True"
         end,
       },
     },
@@ -21223,7 +21223,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_PhysicalEnhancement"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_PhysicalEnhancement"] == "True"
         end,
       },
     },
@@ -21244,7 +21244,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_PowerOverUndead"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_PowerOverUndead"] == "True"
         end,
       },
     },
@@ -21265,7 +21265,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_ProtectiveWard"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_ProtectiveWard"] == "True"
         end,
       },
     },
@@ -21286,7 +21286,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_Resistance"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_Resistance"] == "True"
         end,
       },
     },
@@ -21307,7 +21307,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_ScryingAdept"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_ScryingAdept"] == "True"
         end,
       },
     },
@@ -21328,7 +21328,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_SummonersCharm"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_SummonersCharm"] == "True"
         end,
       },
     },
@@ -21349,7 +21349,7 @@ ModifyAbility({
       Formula="1",
       Conditions={
         function (character)
-          return character.Facts["ABILITIES"]["Wizard_CF_TelekineticFist"] == "True"
+          return character.Facts["ABILITY"]["Wizard_CF_TelekineticFist"] == "True"
         end,
       },
     },
@@ -21364,7 +21364,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_AbjurationOppositionSchool",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21377,7 +21377,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_ConjurationOppositionSchool",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21390,7 +21390,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_DivinationOppositionSchool",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21403,7 +21403,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_EnchantmentOppositionSchool",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21416,7 +21416,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_EvocationOppositionSchool",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21429,7 +21429,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_IllusionOppositionSchool",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21442,7 +21442,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_NecromancyOppositionSchool",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21455,7 +21455,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_TransmutationOppositionSchool",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21468,7 +21468,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_SchoolPower1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21481,7 +21481,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_SchoolPower8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21494,7 +21494,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_AcidDart",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21507,7 +21507,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_AuraOfDespair",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21520,7 +21520,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_BlindingRay",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21533,7 +21533,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_ChangeShape",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21546,7 +21546,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_DazingTouch",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21559,7 +21559,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_DimensionalSteps",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21572,7 +21572,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_DivinersFortune",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21585,7 +21585,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_ElementalWall",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21598,7 +21598,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_EnchantingSmile",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21611,7 +21611,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_EnergyAbsorption",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21624,7 +21624,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_ExtendedIllusion",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21637,7 +21637,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_ForceMissile",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21650,7 +21650,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_Forwarned",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21663,7 +21663,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_GraveTouch",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21676,7 +21676,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_HandOfTheApprentice",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21689,7 +21689,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_IntenseSpells",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21702,7 +21702,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_InvisibilityField",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21715,7 +21715,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_LifeSight",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21728,7 +21728,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_MetamagicMastery",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21741,7 +21741,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_PhysicalEnhancement",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21754,7 +21754,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_PowerOverUndead",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21767,7 +21767,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_ProtectiveWard",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21780,7 +21780,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_Resistance",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21793,7 +21793,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_ScryingAdept",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21806,7 +21806,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_SummonersCharm",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -21819,7 +21819,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Wizard_CF_TelekineticFist",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
