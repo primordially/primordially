@@ -23196,7 +23196,7 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   Followers={
-    Animal Companion=1,
+    ['Animal Companion']=1,
   },
   SourcePage="p.41",
   Description={
@@ -29682,7 +29682,7 @@ DefineAbility({
           local count = 0
           local subCondition
           subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.Type == "Armor" end))) >= 1
+            return ((character.HasEquipped(function (item) return item.IsType("Armor") end))) >= 1
           end
           if subCondition(character) then
             count = count + 1
@@ -29708,7 +29708,7 @@ DefineAbility({
           local count = 0
           local subCondition
           subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.Type == "Armor" end))) >= 1
+            return ((character.HasEquipped(function (item) return item.IsType("Armor") end))) >= 1
           end
           if subCondition(character) then
             count = count + 1
@@ -29734,7 +29734,7 @@ DefineAbility({
           local count = 0
           local subCondition
           subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.Type == "Armor" end))) >= 1
+            return ((character.HasEquipped(function (item) return item.IsType("Armor") end))) >= 1
           end
           if subCondition(character) then
             count = count + 1
@@ -29760,7 +29760,7 @@ DefineAbility({
           local count = 0
           local subCondition
           subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.Type == "Armor" end))) >= 1
+            return ((character.HasEquipped(function (item) return item.IsType("Armor") end))) >= 1
           end
           if subCondition(character) then
             count = count + 1
@@ -29783,7 +29783,7 @@ DefineAbility({
       Formula="ArmorTrainingTier",
       Conditions={
         function (character)
-          return ((character.HasEquipped(function (item) return item.Type == "Armor" end))) >= 1
+          return ((character.HasEquipped(function (item) return item.IsType("Armor") end))) >= 1
         end,
       },
     },
@@ -29857,7 +29857,7 @@ DefineAbility({
     Value="5/-",
     Conditions={
       function (character)
-        return ((character.HasEquipped(function (item) return item.Type == "Armor" end)) + (character.HasEquipped(function (item) return item.Type == "Shield" end))) >= 1
+        return ((character.HasEquipped(function (item) return item.IsType("Armor") end)) + (character.HasEquipped(function (item) return item.IsType("Shield") end))) >= 1
       end,
     },
   },
@@ -29948,7 +29948,7 @@ ModifyAbility({
           local count = 0
           local subCondition
           subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.Type == "Armor" end))) >= 1
+            return ((character.HasEquipped(function (item) return item.IsType("Armor") end))) >= 1
           end
           if subCondition(character) then
             count = count + 1
@@ -29986,7 +29986,7 @@ ModifyAbility({
           local count = 0
           local subCondition
           subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.Type == "Armor" end))) >= 1
+            return ((character.HasEquipped(function (item) return item.IsType("Armor") end))) >= 1
           end
           if subCondition(character) then
             count = count + 1
@@ -30024,7 +30024,7 @@ ModifyAbility({
           local count = 0
           local subCondition
           subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.Type == "Armor" end))) >= 1
+            return ((character.HasEquipped(function (item) return item.IsType("Armor") end))) >= 1
           end
           if subCondition(character) then
             count = count + 1
@@ -30062,7 +30062,7 @@ ModifyAbility({
           local count = 0
           local subCondition
           subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.Type == "Armor" end))) >= 1
+            return ((character.HasEquipped(function (item) return item.IsType("Armor") end))) >= 1
           end
           if subCondition(character) then
             count = count + 1
@@ -81384,7 +81384,7 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   Followers={
-    Animal Companion=1,
+    ['Animal Companion']=1,
   },
 })
 
@@ -81394,7 +81394,7 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   Followers={
-    Special Mount=1,
+    ['Special Mount']=1,
   },
 })
 
@@ -81548,7 +81548,7 @@ ModifyAbility({
       },
       Conditions={
         function (character)
-          return ((character.HasEquipped(function (item) return item.Type == "ArmorProfHeavy" end))) >= 1
+          return ((character.HasEquipped(function (item) return item.IsType("ArmorProfHeavy") end))) >= 1
         end,
       },
     },
@@ -86274,13 +86274,13 @@ DefineAbility({
           local count = 0
           local subCondition
           subCondition = function (character)
-            return not (((character.HasEquipped(function (item) return stringMatch(item.Name, "ARMORTYPE=Medium") end)) + (character.HasEquipped(function (item) return stringMatch(item.Name, "ARMORTYPE=Heavy") end)) + (character.HasEquipped(function (item) return item.Type == "Shield" end))) >= 1)
+            return not (((character.HasEquipped(function (item) return stringMatch(item.Name, "ARMORTYPE=Medium") end)) + (character.HasEquipped(function (item) return stringMatch(item.Name, "ARMORTYPE=Heavy") end)) + (character.HasEquipped(function (item) return item.IsType("Shield") end))) >= 1)
           end
           if subCondition(character) then
             count = count + 1
           end
           subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.Type == "Melee" end))) >= 1
+            return ((character.HasEquipped(function (item) return item.IsType("Melee") end))) >= 1
           end
           if subCondition(character) then
             count = count + 1
@@ -86707,7 +86707,7 @@ DefineAbility({
       },
       Conditions={
         function (character)
-          return ((character.HasEquipped(function (item) return item.Type == "Piercing" end))) >= 1
+          return ((character.HasEquipped(function (item) return item.IsType("Piercing") end))) >= 1
         end,
         function (character)
           return ((character.HasEquipped(function (item) return item.WieldCategory == "Light" end)) + (character.HasEquipped(function (item) return item.WieldCategory == "OneHanded" end))) >= 1
@@ -87882,7 +87882,7 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   Followers={
-    Shadow Companion=1,
+    ['Shadow Companion']=1,
   },
   SourcePage="p.392",
   Description={
@@ -99157,7 +99157,7 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   Followers={
-    Animal Companion=1,
+    ['Animal Companion']=1,
   },
   SourcePage="p.41",
   Description={

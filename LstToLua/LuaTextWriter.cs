@@ -99,9 +99,23 @@ namespace Primordially.LstToLua
             Write(value.ToString().ToLowerInvariant());
         }
 
+        public void WriteKey(ReadOnlySpan<char> key)
+        {
+            if (key.Contains(' '))
+            {
+                Write("['");
+                Write(key);
+                Write("']");
+            }
+            else
+            {
+                Write(key);
+            }
+        }
+
         public void WriteKeyValue(ReadOnlySpan<char> key, IDumpable value)
         {
-            Write(key);
+            WriteKey(key);
             Write("=");
             value.Dump(this);
             Write(",\n");
@@ -109,7 +123,7 @@ namespace Primordially.LstToLua
 
         public void WriteKeyValue(ReadOnlySpan<char> key, ReadOnlySpan<char> value)
         {
-            Write(key);
+            WriteKey(key);
             Write("=");
             WriteValue(value);
             Write(",\n");
@@ -117,7 +131,7 @@ namespace Primordially.LstToLua
 
         public void WriteKeyValue(ReadOnlySpan<char> key, int value)
         {
-            Write(key);
+            WriteKey(key);
             Write("=");
             WriteValue(value);
             Write(",\n");
@@ -125,7 +139,7 @@ namespace Primordially.LstToLua
 
         public void WriteKeyValue(ReadOnlySpan<char> key, double value)
         {
-            Write(key);
+            WriteKey(key);
             Write("=");
             WriteValue(value);
             Write(",\n");
@@ -133,7 +147,7 @@ namespace Primordially.LstToLua
 
         public void WriteKeyValue(ReadOnlySpan<char> key, bool value)
         {
-            Write(key);
+            WriteKey(key);
             Write("=");
             WriteValue(value);
             Write(",\n");
@@ -141,7 +155,7 @@ namespace Primordially.LstToLua
 
         public void WriteObjectValue(ReadOnlySpan<char> key, Action objectMembersWriter)
         {
-            Write(key);
+            WriteKey(key);
             Write("=");
             WriteStartObject();
             objectMembersWriter();

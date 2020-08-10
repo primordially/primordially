@@ -3077,7 +3077,7 @@ DefineAbility({
       Formula="1",
       Conditions={
         function (character)
-          return ((character.HasEquipped(function (item) return item.Type == "Shield" end))) >= 1
+          return ((character.HasEquipped(function (item) return item.IsType("Shield") end))) >= 1
         end,
       },
     },
@@ -5673,7 +5673,7 @@ DefineAbility({
       Formula="1",
       Conditions={
         function (character)
-          return ((character.HasEquipped(function (item) return item.Type == "Shield" end))) >= 1
+          return ((character.HasEquipped(function (item) return item.IsType("Shield") end))) >= 1
         end,
       },
     },
@@ -6895,7 +6895,7 @@ DefineAbility({
           local count = 0
           local subCondition
           subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.Type == "Double" end))) >= 1
+            return ((character.HasEquipped(function (item) return item.IsType("Double") end))) >= 1
           end
           if subCondition(character) then
             count = count + 1
@@ -6904,13 +6904,13 @@ DefineAbility({
             local count = 0
             local subCondition
             subCondition = function (character)
-              return ((character.HasEquippedInPrimaryHand(function (item) return item.Type == "Melee" end))) >= 1
+              return ((character.HasEquippedInPrimaryHand(function (item) return item.IsType("Melee") end))) >= 1
             end
             if subCondition(character) then
               count = count + 1
             end
             subCondition = function (character)
-              return ((character.HasEquipped(function (item) return item.Type == "Melee" end))) >= 1
+              return ((character.HasEquipped(function (item) return item.IsType("Melee") end))) >= 1
             end
             if subCondition(character) then
               count = count + 1

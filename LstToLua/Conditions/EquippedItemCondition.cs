@@ -26,7 +26,10 @@ namespace Primordially.LstToLua.Conditions
 
                 if (part.TryRemovePrefix("TYPE=", out var type) || part.TryRemovePrefix("TYPE.", out type))
                 {
-                    conditions.Add($"{defaultFunction}(function (item) return item.Type == \"{type.Value}\" end)");
+                    foreach (var t in type.Split('.'))
+                    {
+                        conditions.Add($"{defaultFunction}(function (item) return item.IsType(\"{t.Value}\") end)");
+                    }
                 }
                 else if (part.TryRemovePrefix("WIELDCATEGORY=", out var wieldCategory))
                 {

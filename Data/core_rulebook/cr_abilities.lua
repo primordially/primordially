@@ -4335,7 +4335,7 @@ ModifyAbility({
       FormatString="Shield Bash (Light)",
       Conditions={
         function (character)
-          return ((character.HasEquipped(function (item) return item.Type == "Shield.Light" end))) >= 1
+          return ((character.HasEquipped(function (item) return item.IsType("Shield") end)) + (character.HasEquipped(function (item) return item.IsType("Light") end))) >= 1
         end,
       },
     },
@@ -4344,7 +4344,7 @@ ModifyAbility({
       FormatString="Shield Bash (Heavy)",
       Conditions={
         function (character)
-          return ((character.HasEquipped(function (item) return item.Type == "Shield.Heavy" end))) >= 1
+          return ((character.HasEquipped(function (item) return item.IsType("Shield") end)) + (character.HasEquipped(function (item) return item.IsType("Heavy") end))) >= 1
         end,
       },
     },
@@ -4497,7 +4497,7 @@ ModifyAbility({
             count = count + 1
           end
           subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.Type == "Shield.Light" end))) >= 1
+            return ((character.HasEquipped(function (item) return item.IsType("Shield") end)) + (character.HasEquipped(function (item) return item.IsType("Light") end))) >= 1
           end
           if subCondition(character) then
             count = count + 1
@@ -4523,7 +4523,7 @@ ModifyAbility({
             count = count + 1
           end
           subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.Type == "Shield.Heavy" end))) >= 1
+            return ((character.HasEquipped(function (item) return item.IsType("Shield") end)) + (character.HasEquipped(function (item) return item.IsType("Heavy") end))) >= 1
           end
           if subCondition(character) then
             count = count + 1
@@ -4558,7 +4558,7 @@ ModifyAbility({
             count = count + 1
           end
           subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.Type == "Shield.Light" end))) >= 1
+            return ((character.HasEquipped(function (item) return item.IsType("Shield") end)) + (character.HasEquipped(function (item) return item.IsType("Light") end))) >= 1
           end
           if subCondition(character) then
             count = count + 1
@@ -4584,7 +4584,7 @@ ModifyAbility({
             count = count + 1
           end
           subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.Type == "Shield.Heavy" end))) >= 1
+            return ((character.HasEquipped(function (item) return item.IsType("Shield") end)) + (character.HasEquipped(function (item) return item.IsType("Heavy") end))) >= 1
           end
           if subCondition(character) then
             count = count + 1
