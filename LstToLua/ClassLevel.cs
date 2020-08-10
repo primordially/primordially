@@ -6,6 +6,8 @@ namespace Primordially.LstToLua
     internal class ClassLevel : ClassOrClassLevel
     {
         public string Level { get; }
+        public bool DoNotAddHitDie { get; private set; } = false;
+        public bool DoNotAddSkillPoints { get; private set; } = false;
         public List<int> SpellsPerDay { get; } = new List<int>();
         public List<int> SpellsKnown { get; } = new List<int>();
 
@@ -21,6 +23,20 @@ namespace Primordially.LstToLua
 
             switch (k.Value)
             {
+                case "DONOTADD":
+                    if (v.Value == "HITDIE")
+                    {
+                        DoNotAddHitDie = true;
+                    }
+                    else if (v.Value == "SKILLPOINTS")
+                    {
+                        DoNotAddSkillPoints = true;
+                    }
+                    else
+                    {
+                        throw new ParseFailedException(field, "Unable to parse DONOTADD");
+                    }
+                    return;
                 case "CAST":
                     SpellsPerDay.Clear();
                     SpellsPerDay.AddRange(v.Split(',').Select(Helpers.ParseInt).ToList());
@@ -37,8 +53,16 @@ namespace Primordially.LstToLua
         protected override void DumpMembers(LuaTextWriter output)
         {
             output.WriteKeyValue("Level", Level);
-            output.WriteList("SpellsPerDay", SpellsPerDay.Cast<object>());
-            output.WriteList("SpellsKnown", SpellsKnown.Cast<object>());
+            if (DoNotAddHitDie)
+            {
+                output.WriteKeyValue("DoNotAddHitDie", DoNotAddHitDie);
+            }
+            if (DoNotAddSkillPoints)
+            {
+                output.WriteKeyValue("DoNotAddSkillPoints", DoNotAddSkillPoints);
+            }
+            output.WriteListValue("SpellsPerDay", SpellsPerDay.Cast<object>());
+            output.WriteListValue("SpellsKnown", SpellsKnown.Cast<object>());
             base.DumpMembers(output);
         }
     }

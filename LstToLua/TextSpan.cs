@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
+using System.Threading;
 
 namespace Primordially.LstToLua
 {
@@ -92,6 +94,18 @@ namespace Primordially.LstToLua
             return Value.StartsWith(value);
         }
 
+        public bool TryRemovePrefix(string prefix, out TextSpan value)
+        {
+            if (StartsWith(prefix))
+            {
+                value = Substring(prefix.Length);
+                return true;
+            }
+
+            value = this;
+            return false;
+        }
+
         public TextSpan Substring(int startIndex)
         {
             return new TextSpan(File, LineNumber, LinePosition + startIndex, Value.Substring(startIndex));
@@ -99,6 +113,10 @@ namespace Primordially.LstToLua
 
         public TextSpan Substring(int startIndex, int length)
         {
+            if (length < 0)
+            {
+                length += Value.Length;
+            }
             return new TextSpan(File, LineNumber, LinePosition + startIndex, Value.Substring(startIndex, length));
         }
 

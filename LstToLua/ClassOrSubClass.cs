@@ -15,6 +15,7 @@ namespace Primordially.LstToLua
         }
 
         public string Name { get; }
+        public bool IntModToSkills { get; private set; } = true;
         public string? SpellStat { get; private set; }
         public int? SpellListChoiceCount { get; private set; }
         public List<string>? SpellListChoices { get; private set; }
@@ -25,6 +26,10 @@ namespace Primordially.LstToLua
 
             switch (k.Value)
             {
+                case "MODTOSKILLS":
+                    IntModToSkills = Helpers.ParseBool(v);
+                    return;
+
                 case "SPELLSTAT":
                     SpellStat = v.Value;
                     return;
@@ -47,11 +52,16 @@ namespace Primordially.LstToLua
                 output.WriteKeyValue("SpellStat", SpellStat);
             }
 
+            if (!IntModToSkills)
+            {
+                output.WriteKeyValue("IntModToSkills", IntModToSkills);
+            }
+
             if (SpellListChoiceCount.HasValue)
             {
                 Debug.Assert(SpellListChoices != null);
                 output.WriteKeyValue("SpellListChoiceCount", SpellListChoiceCount.Value.ToString());
-                output.WriteList("SpellListChoices", SpellListChoices);
+                output.WriteListValue("SpellListChoices", SpellListChoices);
             }
             base.DumpMembers(output);
         }

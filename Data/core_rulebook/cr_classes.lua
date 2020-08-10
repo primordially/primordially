@@ -8,105 +8,9 @@ SetSource({
 })
 DefineClass({
   Name="Barbarian",
-  Definitions={
-    {
-      Name="BarbarianLVL",
-      InitialValue=0,
-    },
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-        "BASE.Will",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABFull",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "BarbarianLVL",
-      },
-      Formula="CL",
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Fortitude",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Reflex",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Will",
-      },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
+  Facts={
+    ClassType="PC",
+    Abb="Brb",
   },
   SourcePage="p.31",
   Conditions={
@@ -128,37 +32,6 @@ DefineClass({
       return count >= 1
     end,
   },
-  HitDie=12,
-  MaxLevel=20,
-  SkillPointsPerLevel=4,
-  ExClass="Ex-Barbarian",
-  Roles={
-    "Combat",
-    "Skill",
-  },
-  Types={
-    "Base",
-    "PC",
-  },
-  Facts={
-    ClassType="PC",
-    Abb="Brb",
-  },
-  Levels={
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Class",
-          Nature="AUTOMATIC",
-          Name="Barbarian",
-        },
-      },
-    },
-  },
-})
-DefineClass({
-  Name="Ex-Barbarian",
   Definitions={
     {
       Name="BarbarianLVL",
@@ -259,21 +132,17 @@ DefineClass({
       },
     },
   },
-  HitDie=12,
-  MaxLevel=20,
-  SkillPointsPerLevel=4,
-  Visible=false,
-  Roles={
-    "Combat",
-    "Skill",
-  },
   Types={
     "Base",
     "PC",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Brb",
+  HitDie=12,
+  MaxLevel=20,
+  SkillPointsPerLevel="4",
+  ExClass="Ex-Barbarian",
+  Roles={
+    "Combat",
+    "Skill",
   },
   Levels={
     {
@@ -282,7 +151,142 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Barbarian",
+          Names={
+            "Barbarian",
+          },
+        },
+      },
+    },
+  },
+})
+DefineClass({
+  Name="Ex-Barbarian",
+  Facts={
+    ClassType="PC",
+    Abb="Brb",
+  },
+  Definitions={
+    {
+      Name="BarbarianLVL",
+      InitialValue=0,
+    },
+  },
+  Bonuses={
+    {
+      Category="COMBAT",
+      Variables={
+        "BASEAB",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="SAVE",
+      Variables={
+        "BASE.Fortitude",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="SAVE",
+      Variables={
+        "BASE.Reflex",
+        "BASE.Will",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassBABFull",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "BarbarianLVL",
+      },
+      Formula="CL",
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSaveGood_Fortitude",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSavePoor_Reflex",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+    {
+      Category="VAR",
+      Variables={
+        "ClassSavePoor_Will",
+      },
+      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+    },
+  },
+  Types={
+    "Base",
+    "PC",
+  },
+  HitDie=12,
+  MaxLevel=20,
+  SkillPointsPerLevel="4",
+  Visible=false,
+  Roles={
+    "Combat",
+    "Skill",
+  },
+  Levels={
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="Class",
+          Nature="AUTOMATIC",
+          Names={
+            "Barbarian",
+          },
         },
       },
     },
@@ -291,6 +295,12 @@ DefineClass({
 DefineClass({
   Name="Bard",
   SpellStat="CHA",
+  Facts={
+    ClassType="PC",
+    Abb="Brd",
+    SpellType="Arcane",
+  },
+  SourcePage="p.34",
   Definitions={
     {
       Name="BardLVL",
@@ -442,24 +452,18 @@ DefineClass({
       Formula="Caster_Level_BL_Stripped_Bard",
     },
   },
-  SourcePage="p.34",
-  HitDie=8,
-  MaxLevel=20,
-  SkillPointsPerLevel=6,
-  Memorize=false,
-  Roles={
-    "Skill",
-  },
   Types={
     "Base",
     "PC",
     "SpontaneousArcane",
     "Spontaneous",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Brd",
-    SpellType="Arcane",
+  HitDie=8,
+  MaxLevel=20,
+  SkillPointsPerLevel="6",
+  Memorize=false,
+  Roles={
+    "Skill",
   },
   Levels={
     {
@@ -608,7 +612,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Bard",
+          Names={
+            "Bard",
+          },
         },
       },
     },
@@ -617,6 +623,12 @@ DefineClass({
 DefineClass({
   Name="Cleric",
   SpellStat="WIS",
+  Facts={
+    ClassType="PC",
+    Abb="Clr",
+    SpellType="Divine",
+  },
+  SourcePage="p.38",
   Definitions={
     {
       Name="ClericLVL",
@@ -786,10 +798,13 @@ DefineClass({
       Formula="Caster_Level_BL_Stripped_Cleric",
     },
   },
-  SourcePage="p.38",
+  Types={
+    "Base",
+    "PC",
+  },
   HitDie=8,
   MaxLevel=20,
-  SkillPointsPerLevel=2,
+  SkillPointsPerLevel="2",
   BonusLanguages={
     {
       Name="Abyssal",
@@ -803,15 +818,6 @@ DefineClass({
   },
   Roles={
     "Cleric",
-  },
-  Types={
-    "Base",
-    "PC",
-  },
-  Facts={
-    ClassType="PC",
-    Abb="Clr",
-    SpellType="Divine",
   },
   AutomaticKnownSpells={
     {
@@ -904,7 +910,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Cleric",
+          Names={
+            "Cleric",
+          },
         },
       },
     },
@@ -1031,6 +1039,31 @@ DefineClass({
 DefineClass({
   Name="Druid",
   SpellStat="WIS",
+  Facts={
+    ClassType="PC",
+    Abb="Drd",
+    SpellType="Divine",
+  },
+  SourcePage="p.48",
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        return character.Alignment == "NG" or character.Alignment == "LN" or character.Alignment == "TN" or character.Alignment == "CN" or character.Alignment == "NE"
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (character)
+        return (character.Variables["BypassClassAlignment_Druid"] == 1)
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
   Definitions={
     {
       Name="DruidLVL",
@@ -1175,29 +1208,20 @@ DefineClass({
       Formula="Caster_Level_BL_Stripped_Druid",
     },
   },
-  SourcePage="p.48",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        return character.Alignment == "NG" or character.Alignment == "LN" or character.Alignment == "TN" or character.Alignment == "CN" or character.Alignment == "NE"
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (character)
-        return (character.Variables["BypassClassAlignment_Druid"] == 1)
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
+  Types={
+    "Base",
+    "PC",
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Druidic")
+      end,
+    },
   },
   HitDie=8,
   MaxLevel=20,
-  SkillPointsPerLevel=4,
+  SkillPointsPerLevel="4",
   BonusLanguages={
     {
       Name="Sylvan",
@@ -1205,20 +1229,6 @@ DefineClass({
   },
   Roles={
     "Druid",
-  },
-  Types={
-    "Base",
-    "PC",
-  },
-  Facts={
-    ClassType="PC",
-    Abb="Drd",
-    SpellType="Divine",
-  },
-  AutomaticLanguages={
-    {
-      Name="Druidic",
-    },
   },
   AutomaticKnownSpells={
     {
@@ -1259,7 +1269,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Druid",
+          Names={
+            "Druid",
+          },
         },
       },
     },
@@ -1538,6 +1550,11 @@ DefineClass({
 })
 DefineClass({
   Name="Fighter",
+  Facts={
+    ClassType="PC",
+    Abb="Ftr",
+  },
+  SourcePage="p.55",
   Definitions={
     {
       Name="FighterLVL",
@@ -1638,21 +1655,16 @@ DefineClass({
       },
     },
   },
-  SourcePage="p.55",
-  HitDie=10,
-  MaxLevel=20,
-  SkillPointsPerLevel=2,
-  Roles={
-    "Combat",
-    "Skill",
-  },
   Types={
     "Base",
     "PC",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Ftr",
+  HitDie=10,
+  MaxLevel=20,
+  SkillPointsPerLevel="2",
+  Roles={
+    "Combat",
+    "Skill",
   },
   Levels={
     {
@@ -1661,7 +1673,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Fighter",
+          Names={
+            "Fighter",
+          },
         },
       },
     },
@@ -1669,6 +1683,30 @@ DefineClass({
 })
 DefineClass({
   Name="Monk",
+  Facts={
+    ClassType="PC",
+    Abb="Mnk",
+  },
+  SourcePage="p.56",
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        return character.Alignment == "LG" or character.Alignment == "LN" or character.Alignment == "LE"
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (character)
+        return (character.Variables["BypassClassAlignment_Monk"] == 1)
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
   Definitions={
     {
       Name="FlurryOfBlows",
@@ -1717,39 +1755,15 @@ DefineClass({
       Formula="1",
     },
   },
-  SourcePage="p.56",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        return character.Alignment == "LG" or character.Alignment == "LN" or character.Alignment == "LE"
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (character)
-        return (character.Variables["BypassClassAlignment_Monk"] == 1)
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-  },
-  HitDie=10,
-  MaxLevel=20,
-  SkillPointsPerLevel=4,
-  Roles={
-    "None",
-  },
   Types={
     "Base",
     "PC",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Mnk",
+  HitDie=10,
+  MaxLevel=20,
+  SkillPointsPerLevel="4",
+  Roles={
+    "None",
   },
   Levels={
     {
@@ -1758,7 +1772,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Monk",
+          Names={
+            "Monk",
+          },
         },
       },
     },
@@ -1770,6 +1786,31 @@ DefineClass({
 DefineClass({
   Name="Paladin",
   SpellStat="CHA",
+  Facts={
+    ClassType="PC",
+    Abb="Pld",
+    SpellType="Divine",
+  },
+  SourcePage="p.60",
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        return character.Alignment == "LG"
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (character)
+        return (character.Variables["BypassClassAlignment_Paladin"] == 1)
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
   Definitions={
     {
       Name="PaladinLVL",
@@ -1933,42 +1974,17 @@ DefineClass({
       },
     },
   },
-  SourcePage="p.60",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        return character.Alignment == "LG"
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (character)
-        return (character.Variables["BypassClassAlignment_Paladin"] == 1)
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-  },
-  HitDie=10,
-  MaxLevel=20,
-  SkillPointsPerLevel=2,
-  ExClass="Ex-Paladin",
-  ItemCreationCasterLevel="CL-3",
-  Roles={
-    "None",
-  },
   Types={
     "Base",
     "PC",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Pld",
-    SpellType="Divine",
+  HitDie=10,
+  MaxLevel=20,
+  SkillPointsPerLevel="2",
+  ExClass="Ex-Paladin",
+  ItemCreationCasterLevel="CL-3",
+  Roles={
+    "None",
   },
   AutomaticKnownSpells={
     {
@@ -1991,7 +2007,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Paladin",
+          Names={
+            "Paladin",
+          },
         },
       },
     },
@@ -2084,6 +2102,10 @@ DefineClass({
 })
 DefineClass({
   Name="Ex-Paladin",
+  Facts={
+    ClassType="PC",
+    Abb="XPal",
+  },
   Definitions={
     {
       Name="PaladinLVL",
@@ -2184,18 +2206,14 @@ DefineClass({
       },
     },
   },
-  HitDie=10,
-  MaxLevel=20,
-  SkillPointsPerLevel=2,
-  Visible=false,
   Types={
     "Base",
     "PC",
   },
-  Facts={
-    ClassType="PC",
-    Abb="XPal",
-  },
+  HitDie=10,
+  MaxLevel=20,
+  SkillPointsPerLevel="2",
+  Visible=false,
   Levels={
     {
       Level="1",
@@ -2203,7 +2221,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Paladin",
+          Names={
+            "Paladin",
+          },
         },
       },
     },
@@ -2213,7 +2233,9 @@ DefineClass({
         {
           Category="Special Ability",
           Nature="AUTOMATIC",
-          Name="Weapon and Armor Proficiency ~ Paladin",
+          Names={
+            "Weapon and Armor Proficiency ~ Paladin",
+          },
           Conditions={
             function (character)
               return not (1 <= #filter(character.Abilities, function (ability)
@@ -2230,7 +2252,10 @@ DefineClass({
         {
           Category="Internal",
           Nature="AUTOMATIC",
-          Name="Weapon Prof ~ Simple",
+          Names={
+            "Weapon Prof ~ Martial",
+            "Weapon Prof ~ Simple",
+          },
           Conditions={
             function (character)
               return not (1 <= #filter(character.Abilities, function (ability)
@@ -2247,7 +2272,9 @@ DefineClass({
         {
           Category="Internal",
           Nature="AUTOMATIC",
-          Name="Armor Prof ~ Heavy",
+          Names={
+            "Armor Prof ~ Heavy",
+          },
           Conditions={
             function (character)
               return not (1 <= #filter(character.Abilities, function (ability)
@@ -2264,7 +2291,9 @@ DefineClass({
         {
           Category="Internal",
           Nature="AUTOMATIC",
-          Name="Armor Prof ~ Light",
+          Names={
+            "Armor Prof ~ Light",
+          },
           Conditions={
             function (character)
               return not (1 <= #filter(character.Abilities, function (ability)
@@ -2281,7 +2310,9 @@ DefineClass({
         {
           Category="Internal",
           Nature="AUTOMATIC",
-          Name="Armor Prof ~ Medium",
+          Names={
+            "Armor Prof ~ Medium",
+          },
           Conditions={
             function (character)
               return not (1 <= #filter(character.Abilities, function (ability)
@@ -2298,7 +2329,9 @@ DefineClass({
         {
           Category="Internal",
           Nature="AUTOMATIC",
-          Name="Shield Prof",
+          Names={
+            "Shield Prof",
+          },
           Conditions={
             function (character)
               return not (1 <= #filter(character.Abilities, function (ability)
@@ -2314,6 +2347,12 @@ DefineClass({
 DefineClass({
   Name="Ranger",
   SpellStat="WIS",
+  Facts={
+    ClassType="PC",
+    Abb="Rgr",
+    SpellType="Divine",
+  },
+  SourcePage="p.64",
   Definitions={
     {
       Name="RangerLVL",
@@ -2470,7 +2509,9 @@ DefineClass({
     {
       Category="Internal",
       Nature="AUTOMATIC",
-      Name="Class Skills ~ Ranger",
+      Names={
+        "Class Skills ~ Ranger",
+      },
       Conditions={
         function (character)
           return not (1 <= #filter(character.Abilities, function (ability)
@@ -2480,23 +2521,17 @@ DefineClass({
       },
     },
   },
-  SourcePage="p.64",
-  HitDie=10,
-  MaxLevel=20,
-  SkillPointsPerLevel=6,
-  ItemCreationCasterLevel="CL-3",
-  Roles={
-    "Combat",
-    "Skill",
-  },
   Types={
     "Base",
     "PC",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Rgr",
-    SpellType="Divine",
+  HitDie=10,
+  MaxLevel=20,
+  SkillPointsPerLevel="6",
+  ItemCreationCasterLevel="CL-3",
+  Roles={
+    "Combat",
+    "Skill",
   },
   AutomaticKnownSpells={
     {
@@ -2519,7 +2554,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Ranger",
+          Names={
+            "Ranger",
+          },
         },
       },
     },
@@ -2637,6 +2674,11 @@ DefineClass({
 })
 DefineClass({
   Name="Rogue",
+  Facts={
+    ClassType="PC",
+    Abb="Rog",
+  },
+  SourcePage="p.67",
   Definitions={
     {
       Name="RogueLVL",
@@ -2737,21 +2779,16 @@ DefineClass({
       },
     },
   },
-  SourcePage="p.67",
-  HitDie=8,
-  MaxLevel=20,
-  SkillPointsPerLevel=8,
-  Roles={
-    "Skill",
-  },
   Types={
     "Base",
     "PC",
     "Rogue",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Rog",
+  HitDie=8,
+  MaxLevel=20,
+  SkillPointsPerLevel="8",
+  Roles={
+    "Skill",
   },
   Levels={
     {
@@ -2760,7 +2797,9 @@ DefineClass({
         {
           Category="Special Ability",
           Nature="AUTOMATIC",
-          Name="Weapon and Armor Proficiency ~ Rogue",
+          Names={
+            "Weapon and Armor Proficiency ~ Rogue",
+          },
         },
       },
     },
@@ -2770,7 +2809,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Rogue",
+          Names={
+            "Rogue",
+          },
         },
       },
     },
@@ -2779,6 +2820,12 @@ DefineClass({
 DefineClass({
   Name="Sorcerer",
   SpellStat="CHA",
+  Facts={
+    ClassType="PC",
+    Abb="Sor",
+    SpellType="Arcane",
+  },
+  SourcePage="p.70",
   Definitions={
     {
       Name="SorcererLVL",
@@ -2930,24 +2977,18 @@ DefineClass({
       Formula="Caster_Level_BL_Stripped_Sorcerer",
     },
   },
-  SourcePage="p.70",
-  HitDie=6,
-  MaxLevel=20,
-  SkillPointsPerLevel=2,
-  Memorize=false,
-  Roles={
-    "Sorcerer",
-  },
   Types={
     "Base",
     "PC",
     "SpontaneousArcane",
     "Spontaneous",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Sor",
-    SpellType="Arcane",
+  HitDie=6,
+  MaxLevel=20,
+  SkillPointsPerLevel="2",
+  Memorize=false,
+  Roles={
+    "Sorcerer",
   },
   Levels={
     {
@@ -2956,7 +2997,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Sorcerer",
+          Names={
+            "Sorcerer",
+          },
         },
       },
     },
@@ -3105,6 +3148,12 @@ DefineClass({
 DefineClass({
   Name="Wizard",
   SpellStat="INT",
+  Facts={
+    ClassType="PC",
+    Abb="Wiz",
+    SpellType="Arcane",
+  },
+  SourcePage="p.77",
   Definitions={
     {
       Name="DisallowWizardArcaneSchoolArchetype",
@@ -3275,23 +3324,17 @@ DefineClass({
       Formula="Caster_Level_BL_Stripped_Wizard",
     },
   },
-  SourcePage="p.77",
-  HitDie=6,
-  MaxLevel=20,
-  SkillPointsPerLevel=2,
-  AllowBaseClass=false,
-  Spellbook=true,
-  Roles={
-    "Wizard",
-  },
   Types={
     "Base",
     "PC",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Wiz",
-    SpellType="Arcane",
+  HitDie=6,
+  MaxLevel=20,
+  SkillPointsPerLevel="2",
+  AllowBaseClass=false,
+  Spellbook=true,
+  Roles={
+    "Wizard",
   },
   Levels={
     {
@@ -3300,7 +3343,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Wizard",
+          Names={
+            "Wizard",
+          },
         },
       },
     },
@@ -3415,17 +3460,19 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Abilities={
-            {
-              Category="Wizard Class Feature",
-              Nature="AUTOMATIC",
-              Name="Abjuration School",
-            },
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
             end,
+          },
+          Abilities={
+            {
+              Category="Wizard Class Feature",
+              Nature="AUTOMATIC",
+              Names={
+                "Abjuration School",
+              },
+            },
           },
         },
       },
@@ -3440,17 +3487,19 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Abilities={
-            {
-              Category="Wizard Class Feature",
-              Nature="AUTOMATIC",
-              Name="Conjuration School",
-            },
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
             end,
+          },
+          Abilities={
+            {
+              Category="Wizard Class Feature",
+              Nature="AUTOMATIC",
+              Names={
+                "Conjuration School",
+              },
+            },
           },
         },
       },
@@ -3465,17 +3514,19 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Abilities={
-            {
-              Category="Wizard Class Feature",
-              Nature="AUTOMATIC",
-              Name="Divination School",
-            },
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
             end,
+          },
+          Abilities={
+            {
+              Category="Wizard Class Feature",
+              Nature="AUTOMATIC",
+              Names={
+                "Divination School",
+              },
+            },
           },
         },
       },
@@ -3490,17 +3541,19 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Abilities={
-            {
-              Category="Wizard Class Feature",
-              Nature="AUTOMATIC",
-              Name="Enchantment School",
-            },
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
             end,
+          },
+          Abilities={
+            {
+              Category="Wizard Class Feature",
+              Nature="AUTOMATIC",
+              Names={
+                "Enchantment School",
+              },
+            },
           },
         },
       },
@@ -3515,17 +3568,19 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Abilities={
-            {
-              Category="Wizard Class Feature",
-              Nature="AUTOMATIC",
-              Name="Evocation School",
-            },
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
             end,
+          },
+          Abilities={
+            {
+              Category="Wizard Class Feature",
+              Nature="AUTOMATIC",
+              Names={
+                "Evocation School",
+              },
+            },
           },
         },
       },
@@ -3540,17 +3595,19 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Abilities={
-            {
-              Category="Wizard Class Feature",
-              Nature="AUTOMATIC",
-              Name="Illusion School",
-            },
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
             end,
+          },
+          Abilities={
+            {
+              Category="Wizard Class Feature",
+              Nature="AUTOMATIC",
+              Names={
+                "Illusion School",
+              },
+            },
           },
         },
       },
@@ -3565,17 +3622,19 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Abilities={
-            {
-              Category="Wizard Class Feature",
-              Nature="AUTOMATIC",
-              Name="Necromancy School",
-            },
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
             end,
+          },
+          Abilities={
+            {
+              Category="Wizard Class Feature",
+              Nature="AUTOMATIC",
+              Names={
+                "Necromancy School",
+              },
+            },
           },
         },
       },
@@ -3590,17 +3649,19 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Abilities={
-            {
-              Category="Wizard Class Feature",
-              Nature="AUTOMATIC",
-              Name="Transmutation School",
-            },
-          },
           Conditions={
             function (character)
               return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
             end,
+          },
+          Abilities={
+            {
+              Category="Wizard Class Feature",
+              Nature="AUTOMATIC",
+              Names={
+                "Transmutation School",
+              },
+            },
           },
         },
       },
@@ -3619,7 +3680,9 @@ DefineClass({
             {
               Category="Wizard Class Feature",
               Nature="AUTOMATIC",
-              Name="Universal School",
+              Names={
+                "Universal School",
+              },
               Conditions={
                 function (character)
                   return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
@@ -3638,11 +3701,40 @@ DefineClass({
 })
 DefineClass({
   Name="Arcane Archer",
+  Facts={
+    ClassType="PC",
+    Abb="Arc",
+  },
+  SourcePage="p.374",
+  Conditions={
+    function (character)
+      return 2 <= #filter(character.Abilities, function (ability)
+        return ability.Category == "FEAT" and (ability.Name == "Point-Blank Shot" or ability.Name == "Precise Shot")
+      end)
+    end,
+    function (character)
+      return 1 <= #filter(character.Abilities, function (ability)
+        return ability.Category == "FEAT" and (ability.Name == "Weapon Focus (Longbow)" or ability.Name == "Weapon Focus (Shortbow)")
+      end)
+    end,
+    function (character)
+      return (character.SpellCount("Arcane", 1)) >= 1
+    end,
+    function (character)
+      return character.TotalAttackBonus >= 6
+    end,
+  },
   Definitions={
     {
       Name="ArcaneArcherLVL",
       InitialValue=0,
     },
+  },
+  ClassSkills={
+    "Perception",
+    "Ride",
+    "Stealth",
+    "Survival",
   },
   Bonuses={
     {
@@ -3728,42 +3820,13 @@ DefineClass({
       },
     },
   },
-  ClassSkills={
-    "Perception",
-    "Ride",
-    "Stealth",
-    "Survival",
-  },
-  SourcePage="p.374",
-  Conditions={
-    function (character)
-      return 2 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "FEAT" and (ability.Name == "Point-Blank Shot" or ability.Name == "Precise Shot")
-      end)
-    end,
-    function (character)
-      return 1 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "FEAT" and (ability.Name == "Weapon Focus (Longbow)" or ability.Name == "Weapon Focus (Shortbow)")
-      end)
-    end,
-    function (character)
-      return (character.SpellCount("Arcane", 1)) >= 1
-    end,
-    function (character)
-      return character.TotalAttackBonus >= 6
-    end,
-  },
-  HitDie=10,
-  MaxLevel=10,
-  SkillPointsPerLevel=4,
   Types={
     "PC",
     "Prestige",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Arc",
-  },
+  HitDie=10,
+  MaxLevel=10,
+  SkillPointsPerLevel="4",
   Levels={
     {
       Level="1",
@@ -3771,7 +3834,9 @@ DefineClass({
         {
           Category="CLASS",
           Nature="AUTOMATIC",
-          Name="Arcane Archer",
+          Names={
+            "Arcane Archer",
+          },
         },
       },
     },
@@ -3835,11 +3900,64 @@ DefineClass({
 })
 DefineClass({
   Name="Arcane Trickster",
+  Facts={
+    ClassType="PC",
+    Abb="Art",
+  },
+  SourcePage="p.376",
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        return character.Alignment == "NG" or character.Alignment == "TN" or character.Alignment == "NE" or character.Alignment == "CG" or character.Alignment == "CN" or character.Alignment == "CE"
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (character)
+        return (character.Variables["BypassClassAlignment_Arcane_Trickster"] == 1)
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+    function (character)
+      return ((character.BestSkillOfType("Disable Device").ranks >= 4 and 1 or 0) + (character.BestSkillOfType("Escape Artist").ranks >= 4 and 1 or 0) + (character.BestSkillOfType("Knowledge (Arcana)").ranks >= 4 and 1 or 0)) >= 3
+    end,
+    function (character)
+      return (character.HasSpell("Mage Hand") and 1 or 0) >= 1
+    end,
+    function (character)
+      return (character.SpellCount("Arcane", 2)) >= 1
+    end,
+    function (character)
+      return (character.Variables["SneakAttackDice"] >= 2)
+    end,
+  },
   Definitions={
     {
       Name="ArcaneTricksterLVL",
       InitialValue=0,
     },
+  },
+  ClassSkills={
+    "Acrobatics",
+    "Appraise",
+    "Bluff",
+    "Climb",
+    "Diplomacy",
+    "Disable Device",
+    "Disguise",
+    "Escape Artist",
+    "TYPE=Knowledge",
+    "Perception",
+    "Sense Motive",
+    "Sleight of Hand",
+    "Spellcraft",
+    "Stealth",
+    "Swim",
   },
   Bonuses={
     {
@@ -3925,66 +4043,13 @@ DefineClass({
       },
     },
   },
-  ClassSkills={
-    "Acrobatics",
-    "Appraise",
-    "Bluff",
-    "Climb",
-    "Diplomacy",
-    "Disable Device",
-    "Disguise",
-    "Escape Artist",
-    "TYPE=Knowledge",
-    "Perception",
-    "Sense Motive",
-    "Sleight of Hand",
-    "Spellcraft",
-    "Stealth",
-    "Swim",
-  },
-  SourcePage="p.376",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        return character.Alignment == "NG" or character.Alignment == "TN" or character.Alignment == "NE" or character.Alignment == "CG" or character.Alignment == "CN" or character.Alignment == "CE"
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (character)
-        return (character.Variables["BypassClassAlignment_Arcane_Trickster"] == 1)
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-    function (character)
-      return ((character.BestSkillOfType("Disable Device").ranks >= 4 and 1 or 0) + (character.BestSkillOfType("Escape Artist").ranks >= 4 and 1 or 0) + (character.BestSkillOfType("Knowledge (Arcana)").ranks >= 4 and 1 or 0)) >= 3
-    end,
-    function (character)
-      return (character.HasSpell("Mage Hand") and 1 or 0) >= 1
-    end,
-    function (character)
-      return (character.SpellCount("Arcane", 2)) >= 1
-    end,
-    function (character)
-      return (character.Variables["SneakAttackDice"] >= 2)
-    end,
-  },
-  HitDie=6,
-  MaxLevel=10,
-  SkillPointsPerLevel=4,
   Types={
     "PC",
     "Prestige",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Art",
-  },
+  HitDie=6,
+  MaxLevel=10,
+  SkillPointsPerLevel="4",
   Levels={
     {
       Level="1",
@@ -4072,7 +4137,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Arcane Trickster",
+          Names={
+            "Arcane Trickster",
+          },
         },
       },
     },
@@ -4080,11 +4147,55 @@ DefineClass({
 })
 DefineClass({
   Name="Assassin",
+  Facts={
+    ClassType="PC",
+    Abb="Asn",
+  },
+  SourcePage="p.378",
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        return character.Alignment == "LE" or character.Alignment == "NE" or character.Alignment == "CE"
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (character)
+        return (character.Variables["BypassClassAlignment_Assassin"] == 1)
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+    function (character)
+      return ((character.BestSkillOfType("Disguise").ranks >= 2 and 1 or 0) + (character.BestSkillOfType("Stealth").ranks >= 5 and 1 or 0)) >= 2
+    end,
+  },
   Definitions={
     {
       Name="AssassinLVL",
       InitialValue=0,
     },
+  },
+  ClassSkills={
+    "Acrobatics",
+    "Bluff",
+    "Climb",
+    "Diplomacy",
+    "Disable Device",
+    "Disguise",
+    "Escape Artist",
+    "Intimidate",
+    "Linguistics",
+    "Perception",
+    "Sense Motive",
+    "Sleight of Hand",
+    "Stealth",
+    "Swim",
+    "Use Magic Device",
   },
   Bonuses={
     {
@@ -4170,57 +4281,13 @@ DefineClass({
       },
     },
   },
-  ClassSkills={
-    "Acrobatics",
-    "Bluff",
-    "Climb",
-    "Diplomacy",
-    "Disable Device",
-    "Disguise",
-    "Escape Artist",
-    "Intimidate",
-    "Linguistics",
-    "Perception",
-    "Sense Motive",
-    "Sleight of Hand",
-    "Stealth",
-    "Swim",
-    "Use Magic Device",
-  },
-  SourcePage="p.378",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        return character.Alignment == "LE" or character.Alignment == "NE" or character.Alignment == "CE"
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (character)
-        return (character.Variables["BypassClassAlignment_Assassin"] == 1)
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-    function (character)
-      return ((character.BestSkillOfType("Disguise").ranks >= 2 and 1 or 0) + (character.BestSkillOfType("Stealth").ranks >= 5 and 1 or 0)) >= 2
-    end,
-  },
-  HitDie=8,
-  MaxLevel=10,
-  SkillPointsPerLevel=4,
   Types={
     "PC",
     "Prestige",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Asn",
-  },
+  HitDie=8,
+  MaxLevel=10,
+  SkillPointsPerLevel="4",
   Levels={
     {
       Level="1",
@@ -4228,7 +4295,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Assassin",
+          Names={
+            "Assassin",
+          },
         },
       },
     },
@@ -4236,11 +4305,105 @@ DefineClass({
 })
 DefineClass({
   Name="Dragon Disciple",
+  Facts={
+    ClassType="PC",
+    Abb="DrD",
+  },
+  SourcePage="p.380",
+  Conditions={
+    function (character)
+      return (#filter(character.Languages, function (lang)
+      if lang.Name == "Draconic" then return true end
+       end)) >= 1
+    end,
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        return character.Facts["ABILITIES"]["QualifiedForDragonDisciple"] == "true"
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return any(character.Classes, function (class) return class.Memorize == false end)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return any(character.Classes, function (class) return contains(class.Types, "Arcane") end)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return not (1 <= #filter(ipairs(character.ClassLevels),
+          function (class, level)
+            return (class == "Sorcerer" and level >= 1)
+          end))
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return 1 <= #filter(ipairs(character.ClassLevels),
+          function (class, level)
+            return (class == "Sorcerer" and level >= 1)
+          end)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return 1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Name == "Sorcerer Bloodline ~ Draconic")
+          end)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+    function (character)
+      return not (((any(character.Race.RaceTypes, function (type) stringMatch(type, "Dragon") end) and 1 or 0)) >= 1)
+    end,
+    function (character)
+      return ((character.BestSkillOfType("Knowledge (Arcana)").ranks >= 5 and 1 or 0)) >= 1
+    end,
+    function (character)
+      return not (((any(character.Templates, function (template) return stringMatch(template.Name, "Half Dragon") end) and 1 or 0)) >= 1)
+    end,
+  },
   Definitions={
     {
       Name="DragonDiscipleLVL",
       InitialValue=0,
     },
+  },
+  ClassSkills={
+    "Diplomacy",
+    "Escape Artist",
+    "Fly",
+    "TYPE=Knowledge",
+    "Perception",
+    "Spellcraft",
   },
   Bonuses={
     {
@@ -4326,107 +4489,13 @@ DefineClass({
       },
     },
   },
-  ClassSkills={
-    "Diplomacy",
-    "Escape Artist",
-    "Fly",
-    "TYPE=Knowledge",
-    "Perception",
-    "Spellcraft",
-  },
-  SourcePage="p.380",
-  Conditions={
-    function (character)
-      return (#filter(character.Languages, function (lang)
-      if lang.Name == "Draconic" then return true end
-       end)) >= 1
-    end,
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        return character.Facts["ABILITIES"]["QualifiedForDragonDisciple"] == "true"
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (character)
-        local count = 0
-        local subCondition
-        subCondition = function (character)
-          return any(character.Classes, function (class) return class.Memorize == false end)
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        subCondition = function (character)
-          return any(character.Classes, function (class) return contains(class.Types, "Arcane") end)
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        subCondition = function (character)
-          return not (1 <= #filter(ipairs(character.ClassLevels),
-          function (class, level)
-            return (class == "Sorcerer" and level >= 1)
-          end))
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        return count >= 3
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (character)
-        local count = 0
-        local subCondition
-        subCondition = function (character)
-          return 1 <= #filter(ipairs(character.ClassLevels),
-          function (class, level)
-            return (class == "Sorcerer" and level >= 1)
-          end)
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        subCondition = function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Sorcerer Bloodline ~ Draconic")
-          end)
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        return count >= 2
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-    function (character)
-      return not (((any(character.Race.RaceTypes, function (type) stringMatch(type, "Dragon") end) and 1 or 0)) >= 1)
-    end,
-    function (character)
-      return ((character.BestSkillOfType("Knowledge (Arcana)").ranks >= 5 and 1 or 0)) >= 1
-    end,
-    function (character)
-      return not (((any(character.Templates, function (template) return stringMatch(template.Name, "Half Dragon") end) and 1 or 0)) >= 1)
-    end,
-  },
-  HitDie=12,
-  MaxLevel=10,
-  SkillPointsPerLevel=2,
   Types={
     "PC",
     "Prestige",
   },
-  Facts={
-    ClassType="PC",
-    Abb="DrD",
-  },
+  HitDie=12,
+  MaxLevel=10,
+  SkillPointsPerLevel="2",
   Levels={
     {
       Level="2",
@@ -4490,7 +4559,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Dragon Disciple",
+          Names={
+            "Dragon Disciple",
+          },
         },
       },
     },
@@ -4498,11 +4569,37 @@ DefineClass({
 })
 DefineClass({
   Name="Duelist",
+  Facts={
+    ClassType="PC",
+    Abb="Dul",
+  },
+  SourcePage="p.382",
+  Conditions={
+    function (character)
+      return 3 <= #filter(character.Abilities, function (ability)
+        return ability.Category == "FEAT" and (ability.Name == "Dodge" or ability.Name == "Mobility" or ability.Name == "Weapon Finesse")
+      end)
+    end,
+    function (character)
+      return ((character.BestSkillOfType("Acrobatics").ranks >= 2 and 1 or 0) + (character.Skill("(400,100): Perform").ranks >= 2 and 1 or 0)) >= 2
+    end,
+    function (character)
+      return character.TotalAttackBonus >= 6
+    end,
+  },
   Definitions={
     {
       Name="DuelistLVL",
       InitialValue=0,
     },
+  },
+  ClassSkills={
+    "Acrobatics",
+    "Bluff",
+    "Escape Artist",
+    "Perception",
+    "TYPE=Perform",
+    "Sense Motive",
   },
   Bonuses={
     {
@@ -4588,39 +4685,13 @@ DefineClass({
       },
     },
   },
-  ClassSkills={
-    "Acrobatics",
-    "Bluff",
-    "Escape Artist",
-    "Perception",
-    "TYPE=Perform",
-    "Sense Motive",
-  },
-  SourcePage="p.382",
-  Conditions={
-    function (character)
-      return 3 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "FEAT" and (ability.Name == "Dodge" or ability.Name == "Mobility" or ability.Name == "Weapon Finesse")
-      end)
-    end,
-    function (character)
-      return ((character.BestSkillOfType("Acrobatics").ranks >= 2 and 1 or 0) + (character.Skill("(400,100): Perform").ranks >= 2 and 1 or 0)) >= 2
-    end,
-    function (character)
-      return character.TotalAttackBonus >= 6
-    end,
-  },
-  HitDie=10,
-  MaxLevel=10,
-  SkillPointsPerLevel=4,
   Types={
     "PC",
     "Prestige",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Dul",
-  },
+  HitDie=10,
+  MaxLevel=10,
+  SkillPointsPerLevel="4",
   Levels={
     {
       Level="1",
@@ -4628,7 +4699,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Duelist",
+          Names={
+            "Duelist",
+          },
         },
       },
     },
@@ -4636,11 +4709,36 @@ DefineClass({
 })
 DefineClass({
   Name="Eldritch Knight",
+  Facts={
+    ClassType="PC",
+    Abb="Elk",
+  },
+  SourcePage="p.384",
+  Conditions={
+    function (character)
+      return 1 <= #filter(character.Abilities, function (ability)
+        return ability.Category == "Internal" and (ability.Name == "Weapon Prof ~ Martial")
+      end)
+    end,
+    function (character)
+      return (character.SpellCount("Arcane", 3)) >= 1
+    end,
+  },
   Definitions={
     {
       Name="EldritchKnightLVL",
       InitialValue=0,
     },
+  },
+  ClassSkills={
+    "Climb",
+    "Knowledge (Arcana)",
+    "Knowledge (Nobility)",
+    "Linguistics",
+    "Ride",
+    "Sense Motive",
+    "Spellcraft",
+    "Swim",
   },
   Bonuses={
     {
@@ -4726,38 +4824,13 @@ DefineClass({
       },
     },
   },
-  ClassSkills={
-    "Climb",
-    "Knowledge (Arcana)",
-    "Knowledge (Nobility)",
-    "Linguistics",
-    "Ride",
-    "Sense Motive",
-    "Spellcraft",
-    "Swim",
-  },
-  SourcePage="p.384",
-  Conditions={
-    function (character)
-      return 1 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "Internal" and (ability.Name == "Weapon Prof ~ Martial")
-      end)
-    end,
-    function (character)
-      return (character.SpellCount("Arcane", 3)) >= 1
-    end,
-  },
-  HitDie=10,
-  MaxLevel=10,
-  SkillPointsPerLevel=2,
   Types={
     "PC",
     "Prestige",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Elk",
-  },
+  HitDie=10,
+  MaxLevel=10,
+  SkillPointsPerLevel="2",
   Levels={
     {
       Level="2",
@@ -4837,7 +4910,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Eldritch Knight",
+          Names={
+            "Eldritch Knight",
+          },
         },
       },
     },
@@ -4845,11 +4920,48 @@ DefineClass({
 })
 DefineClass({
   Name="Loremaster",
+  Facts={
+    ClassType="PC",
+    Abb="Lor",
+  },
+  SourcePage="p.385",
+  Conditions={
+    function (character)
+      return 1 <= #filter(character.Abilities, function (ability)
+        return ability.Category == "FEAT" and (ability.Name == "Skill Focus (Knowledge%)")
+      end)
+    end,
+    function (character)
+      return 3 <= #filter(character.Abilities, function (ability)
+        return ability.Category == "FEAT" and (ability.Name == "TYPE=Metamagic" or ability.Name == "TYPE=ItemCreation")
+      end)
+    end,
+    function (character)
+      return ((character.Skill("(431,145): Knowledge").ranks >= 7 and 1 or 0) + (character.Skill("(431,162): Knowledge").ranks >= 7 and 1 or 0)) >= 2
+    end,
+    function (character)
+      return ((#filter(character.SpellsKnown, function (spell) return spell.School == "Divination" and spell.Level >= 3 end))) >= 1
+    end,
+    function (character)
+      return ((#filter(character.SpellsKnown, function (spell) return spell.School == "Divination" and spell.Level >= 0 end))) >= 7
+    end,
+  },
   Definitions={
     {
       Name="LoremasterLVL",
       InitialValue=0,
     },
+  },
+  ClassSkills={
+    "Appraise",
+    "Diplomacy",
+    "Handle Animal",
+    "Heal",
+    "TYPE=Knowledge",
+    "Linguistics",
+    "TYPE=Perform",
+    "Spellcraft",
+    "Use Magic Device",
   },
   Bonuses={
     {
@@ -4935,50 +5047,13 @@ DefineClass({
       },
     },
   },
-  ClassSkills={
-    "Appraise",
-    "Diplomacy",
-    "Handle Animal",
-    "Heal",
-    "TYPE=Knowledge",
-    "Linguistics",
-    "TYPE=Perform",
-    "Spellcraft",
-    "Use Magic Device",
-  },
-  SourcePage="p.385",
-  Conditions={
-    function (character)
-      return 1 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "FEAT" and (ability.Name == "Skill Focus (Knowledge%)")
-      end)
-    end,
-    function (character)
-      return 3 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "FEAT" and (ability.Name == "TYPE=Metamagic" or ability.Name == "TYPE=ItemCreation")
-      end)
-    end,
-    function (character)
-      return ((character.Skill("(431,145): Knowledge").ranks >= 7 and 1 or 0) + (character.Skill("(431,162): Knowledge").ranks >= 7 and 1 or 0)) >= 2
-    end,
-    function (character)
-      return ((#filter(character.SpellsKnown, function (spell) return spell.School == "Divination" and spell.Level >= 3 end))) >= 1
-    end,
-    function (character)
-      return ((#filter(character.SpellsKnown, function (spell) return spell.School == "Divination" and spell.Level >= 0 end))) >= 7
-    end,
-  },
-  HitDie=6,
-  MaxLevel=10,
-  SkillPointsPerLevel=4,
   Types={
     "PC",
     "Prestige",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Lor",
-  },
+  HitDie=6,
+  MaxLevel=10,
+  SkillPointsPerLevel="4",
   Levels={
     {
       Level="1",
@@ -5066,7 +5141,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Loremaster",
+          Names={
+            "Loremaster",
+          },
         },
       },
     },
@@ -5074,6 +5151,28 @@ DefineClass({
 })
 DefineClass({
   Name="Mystic Theurge",
+  Facts={
+    ClassType="PC",
+    Abb="Myt",
+  },
+  SourcePage="p.387",
+  Conditions={
+    function (character)
+      return ((character.BestSkillOfType("Knowledge (Arcana)").ranks >= 3 and 1 or 0) + (character.BestSkillOfType("Knowledge (Religion)").ranks >= 3 and 1 or 0)) >= 2
+    end,
+    function (character)
+      return (character.SpellCount("Divine", 2)) >= 1
+    end,
+    function (character)
+      return (character.SpellCount("Arcane", 2)) >= 1
+    end,
+  },
+  ClassSkills={
+    "Knowledge (Arcana)",
+    "Knowledge (Religion)",
+    "Sense Motive",
+    "Spellcraft",
+  },
   Bonuses={
     {
       Category="COMBAT",
@@ -5151,35 +5250,13 @@ DefineClass({
       },
     },
   },
-  ClassSkills={
-    "Knowledge (Arcana)",
-    "Knowledge (Religion)",
-    "Sense Motive",
-    "Spellcraft",
-  },
-  SourcePage="p.387",
-  Conditions={
-    function (character)
-      return ((character.BestSkillOfType("Knowledge (Arcana)").ranks >= 3 and 1 or 0) + (character.BestSkillOfType("Knowledge (Religion)").ranks >= 3 and 1 or 0)) >= 2
-    end,
-    function (character)
-      return (character.SpellCount("Divine", 2)) >= 1
-    end,
-    function (character)
-      return (character.SpellCount("Arcane", 2)) >= 1
-    end,
-  },
-  HitDie=6,
-  MaxLevel=10,
-  SkillPointsPerLevel=2,
   Types={
     "PC",
     "Prestige",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Myt",
-  },
+  HitDie=6,
+  MaxLevel=10,
+  SkillPointsPerLevel="2",
   Levels={
     {
       Level="1",
@@ -5297,7 +5374,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Mystic Theurge",
+          Names={
+            "Mystic Theurge",
+          },
         },
       },
     },
@@ -5305,11 +5384,38 @@ DefineClass({
 })
 DefineClass({
   Name="Pathfinder Chronicler",
+  Facts={
+    ClassType="PC",
+    Abb="PfC",
+  },
+  SourcePage="p.388",
+  Conditions={
+    function (character)
+      return ((character.BestSkillOfType("Linguistics").ranks >= 3 and 1 or 0) + (character.BestSkillOfType("Perform (Oratory)").ranks >= 5 and 1 or 0) + (character.BestSkillOfType("Profession (Scribe)").ranks >= 5 and 1 or 0)) >= 3
+    end,
+  },
   Definitions={
     {
       Name="PathfinderChroniclerLVL",
       InitialValue=0,
     },
+  },
+  ClassSkills={
+    "Appraise",
+    "Bluff",
+    "Diplomacy",
+    "Disguise",
+    "Escape Artist",
+    "Intimidate",
+    "TYPE=Knowledge",
+    "Linguistics",
+    "Perception",
+    "TYPE=Perform",
+    "Ride",
+    "Sense Motive",
+    "Sleight of Hand",
+    "Survival",
+    "Use Magic Device",
   },
   Bonuses={
     {
@@ -5395,40 +5501,13 @@ DefineClass({
       },
     },
   },
-  ClassSkills={
-    "Appraise",
-    "Bluff",
-    "Diplomacy",
-    "Disguise",
-    "Escape Artist",
-    "Intimidate",
-    "TYPE=Knowledge",
-    "Linguistics",
-    "Perception",
-    "TYPE=Perform",
-    "Ride",
-    "Sense Motive",
-    "Sleight of Hand",
-    "Survival",
-    "Use Magic Device",
-  },
-  SourcePage="p.388",
-  Conditions={
-    function (character)
-      return ((character.BestSkillOfType("Linguistics").ranks >= 3 and 1 or 0) + (character.BestSkillOfType("Perform (Oratory)").ranks >= 5 and 1 or 0) + (character.BestSkillOfType("Profession (Scribe)").ranks >= 5 and 1 or 0)) >= 3
-    end,
-  },
-  HitDie=8,
-  MaxLevel=10,
-  SkillPointsPerLevel=8,
   Types={
     "PC",
     "Prestige",
   },
-  Facts={
-    ClassType="PC",
-    Abb="PfC",
-  },
+  HitDie=8,
+  MaxLevel=10,
+  SkillPointsPerLevel="8",
   Levels={
     {
       Level="1",
@@ -5436,7 +5515,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Pathfinder Chronicler",
+          Names={
+            "Pathfinder Chronicler",
+          },
         },
       },
     },
@@ -5444,11 +5525,37 @@ DefineClass({
 })
 DefineClass({
   Name="Shadowdancer",
+  Facts={
+    ClassType="PC",
+    Abb="Shd",
+  },
+  SourcePage="p.391",
+  Conditions={
+    function (character)
+      return 3 <= #filter(character.Abilities, function (ability)
+        return ability.Category == "FEAT" and (ability.Name == "Combat Reflexes" or ability.Name == "Dodge" or ability.Name == "Mobility")
+      end)
+    end,
+    function (character)
+      return ((character.BestSkillOfType("Stealth").ranks >= 5 and 1 or 0) + (character.BestSkillOfType("Perform (Dance)").ranks >= 2 and 1 or 0)) >= 2
+    end,
+  },
   Definitions={
     {
       Name="ShadowdancerLVL",
       InitialValue=0,
     },
+  },
+  ClassSkills={
+    "Acrobatics",
+    "Bluff",
+    "Diplomacy",
+    "Disguise",
+    "Escape Artist",
+    "Perception",
+    "TYPE=Perform",
+    "Sleight of Hand",
+    "Stealth",
   },
   Bonuses={
     {
@@ -5534,39 +5641,13 @@ DefineClass({
       },
     },
   },
-  ClassSkills={
-    "Acrobatics",
-    "Bluff",
-    "Diplomacy",
-    "Disguise",
-    "Escape Artist",
-    "Perception",
-    "TYPE=Perform",
-    "Sleight of Hand",
-    "Stealth",
-  },
-  SourcePage="p.391",
-  Conditions={
-    function (character)
-      return 3 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "FEAT" and (ability.Name == "Combat Reflexes" or ability.Name == "Dodge" or ability.Name == "Mobility")
-      end)
-    end,
-    function (character)
-      return ((character.BestSkillOfType("Stealth").ranks >= 5 and 1 or 0) + (character.BestSkillOfType("Perform (Dance)").ranks >= 2 and 1 or 0)) >= 2
-    end,
-  },
-  HitDie=8,
-  MaxLevel=10,
-  SkillPointsPerLevel=6,
   Types={
     "PC",
     "Prestige",
   },
-  Facts={
-    ClassType="PC",
-    Abb="Shd",
-  },
+  HitDie=8,
+  MaxLevel=10,
+  SkillPointsPerLevel="6",
   Levels={
     {
       Level="1",
@@ -5574,7 +5655,9 @@ DefineClass({
         {
           Category="Class",
           Nature="AUTOMATIC",
-          Name="Shadowdancer",
+          Names={
+            "Shadowdancer",
+          },
         },
       },
     },
@@ -5587,6 +5670,12 @@ DefineClass({
   SpellListChoices={
     "Adept",
   },
+  Facts={
+    ClassType="NPC",
+    Abb="Adp",
+    SpellType="Divine",
+  },
+  SourcePage="p.448",
   Definitions={
     {
       Name="AdeptLVL",
@@ -5596,6 +5685,15 @@ DefineClass({
       Name="CasterLevelBLAdept",
       InitialValue=0,
     },
+  },
+  ClassSkills={
+    "TYPE=Craft",
+    "Handle Animal",
+    "Heal",
+    "TYPE=Knowledge",
+    "TYPE=Profession",
+    "Spellcraft",
+    "Survival",
   },
   Bonuses={
     {
@@ -5731,28 +5829,13 @@ DefineClass({
       Formula="Caster_Level_BL_Stripped_Adept",
     },
   },
-  ClassSkills={
-    "TYPE=Craft",
-    "Handle Animal",
-    "Heal",
-    "TYPE=Knowledge",
-    "TYPE=Profession",
-    "Spellcraft",
-    "Survival",
-  },
-  SourcePage="p.448",
-  HitDie=6,
-  MaxLevel=20,
-  SkillPointsPerLevel=2,
   Types={
     "Base",
     "NPC",
   },
-  Facts={
-    ClassType="NPC",
-    Abb="Adp",
-    SpellType="Divine",
-  },
+  HitDie=6,
+  MaxLevel=20,
+  SkillPointsPerLevel="2",
   AutomaticKnownSpells={
     {
       Level=0,
@@ -5943,12 +6026,16 @@ DefineClass({
         {
           Category="Special Ability",
           Nature="AUTOMATIC",
-          Name="All Automatic Proficiencies",
+          Names={
+            "All Automatic Proficiencies",
+          },
         },
         {
           Category="FEAT",
           Nature="AUTOMATIC",
-          Name="Simple Weapon Proficiency",
+          Names={
+            "Simple Weapon Proficiency",
+          },
         },
       },
     },
@@ -5974,7 +6061,9 @@ DefineClass({
         {
           Category="Special Ability",
           Nature="AUTOMATIC",
-          Name="Arcane Bond ~ Familiar",
+          Names={
+            "Arcane Bond ~ Familiar",
+          },
         },
       },
     },
@@ -6072,11 +6161,34 @@ DefineClass({
 })
 DefineClass({
   Name="Aristocrat",
+  Facts={
+    ClassType="NPC",
+    Abb="Ari",
+  },
+  SourcePage="p.449",
   Definitions={
     {
       Name="AristocratLVL",
       InitialValue=0,
     },
+  },
+  ClassSkills={
+    "Appraise",
+    "Bluff",
+    "TYPE=Craft",
+    "Diplomacy",
+    "Disguise",
+    "Handle Animal",
+    "Intimidate",
+    "TYPE=Knowledge",
+    "Linguistics",
+    "Perception",
+    "TYPE=Perform",
+    "TYPE=Profession",
+    "Ride",
+    "Sense Motive",
+    "Swim",
+    "Survival",
   },
   Bonuses={
     {
@@ -6172,36 +6284,13 @@ DefineClass({
       },
     },
   },
-  ClassSkills={
-    "Appraise",
-    "Bluff",
-    "TYPE=Craft",
-    "Diplomacy",
-    "Disguise",
-    "Handle Animal",
-    "Intimidate",
-    "TYPE=Knowledge",
-    "Linguistics",
-    "Perception",
-    "TYPE=Perform",
-    "TYPE=Profession",
-    "Ride",
-    "Sense Motive",
-    "Swim",
-    "Survival",
-  },
-  SourcePage="p.449",
-  HitDie=8,
-  MaxLevel=20,
-  SkillPointsPerLevel=4,
   Types={
     "Base",
     "NPC",
   },
-  Facts={
-    ClassType="NPC",
-    Abb="Ari",
-  },
+  HitDie=8,
+  MaxLevel=20,
+  SkillPointsPerLevel="4",
   Levels={
     {
       Level="1",
@@ -6209,22 +6298,18 @@ DefineClass({
         {
           Category="Special Ability",
           Nature="AUTOMATIC",
-          Name="All Martial Weapon Proficiencies",
+          Names={
+            "All Automatic Proficiencies",
+            "All Martial Weapon Proficiencies",
+          },
         },
         {
           Category="FEAT",
           Nature="AUTOMATIC",
-          Name="Simple Weapon Proficiency",
-        },
-      },
-    },
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="FEAT",
-          Nature="AUTOMATIC",
-          Name="Armor Proficiency (Medium)",
+          Names={
+            "Martial Weapon Proficiency Output",
+            "Simple Weapon Proficiency",
+          },
         },
       },
     },
@@ -6234,7 +6319,24 @@ DefineClass({
         {
           Category="FEAT",
           Nature="AUTOMATIC",
-          Name="Tower Shield Proficiency",
+          Names={
+            "Armor Proficiency (Heavy)",
+            "Armor Proficiency (Light)",
+            "Armor Proficiency (Medium)",
+          },
+        },
+      },
+    },
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="FEAT",
+          Nature="AUTOMATIC",
+          Names={
+            "Shield Proficiency",
+            "Tower Shield Proficiency",
+          },
         },
       },
     },
@@ -6242,11 +6344,29 @@ DefineClass({
 })
 DefineClass({
   Name="Commoner",
+  WeaponBonusProficiencySelections={
+    {
+      "TYPE=Simple", 
+    }},
+  Facts={
+    ClassType="NPC",
+    Abb="Com",
+  },
+  SourcePage="p.449",
   Definitions={
     {
       Name="CommonerLVL",
       InitialValue=0,
     },
+  },
+  ClassSkills={
+    "Climb",
+    "TYPE=Craft",
+    "Handle Animal",
+    "Perception",
+    "TYPE=Profession",
+    "Ride",
+    "Swim",
   },
   Bonuses={
     {
@@ -6331,31 +6451,13 @@ DefineClass({
       },
     },
   },
-  ClassSkills={
-    "Climb",
-    "TYPE=Craft",
-    "Handle Animal",
-    "Perception",
-    "TYPE=Profession",
-    "Ride",
-    "Swim",
-  },
-  WeaponBonusProficiencySelections={
-    {
-      "TYPE=Simple", 
-    }},
-  SourcePage="p.449",
-  HitDie=6,
-  MaxLevel=20,
-  SkillPointsPerLevel=2,
   Types={
     "Base",
     "NPC",
   },
-  Facts={
-    ClassType="NPC",
-    Abb="Com",
-  },
+  HitDie=6,
+  MaxLevel=20,
+  SkillPointsPerLevel="2",
   Levels={
     {
       Level="1",
@@ -6363,7 +6465,10 @@ DefineClass({
         {
           Category="Special Ability",
           Nature="AUTOMATIC",
-          Name="Weapon and Armor Proficiency ~ Commoner",
+          Names={
+            "All Automatic Proficiencies",
+            "Weapon and Armor Proficiency ~ Commoner",
+          },
         },
       },
     },
@@ -6371,6 +6476,11 @@ DefineClass({
 })
 DefineClass({
   Name="Expert",
+  Facts={
+    ClassType="NPC",
+    Abb="Exp",
+  },
+  SourcePage="p.450",
   Definitions={
     {
       Name="ExpertLVL",
@@ -6471,18 +6581,13 @@ DefineClass({
       },
     },
   },
-  SourcePage="p.450",
-  HitDie=8,
-  MaxLevel=20,
-  SkillPointsPerLevel=6,
   Types={
     "Base",
     "NPC",
   },
-  Facts={
-    ClassType="NPC",
-    Abb="Exp",
-  },
+  HitDie=8,
+  MaxLevel=20,
+  SkillPointsPerLevel="6",
   Levels={
     {
       Level="1",
@@ -6490,12 +6595,16 @@ DefineClass({
         {
           Category="Special Ability",
           Nature="AUTOMATIC",
-          Name="All Automatic Proficiencies",
+          Names={
+            "All Automatic Proficiencies",
+          },
         },
         {
           Category="FEAT",
           Nature="AUTOMATIC",
-          Name="Simple Weapon Proficiency",
+          Names={
+            "Simple Weapon Proficiency",
+          },
         },
       },
     },
@@ -6505,7 +6614,9 @@ DefineClass({
         {
           Category="FEAT",
           Nature="AUTOMATIC",
-          Name="Armor Proficiency (Light)",
+          Names={
+            "Armor Proficiency (Light)",
+          },
         },
       },
     },

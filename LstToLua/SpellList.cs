@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Primordially.LstToLua.Conditions;
 
@@ -20,7 +21,7 @@ namespace Primordially.LstToLua
         {
             output.WriteKeyValue("Kind", Kind.ToString());
             output.WriteKeyValue("Name", Name);
-            output.WriteList("Levels", Levels);
+            output.WriteListValue("Levels", Levels);
             base.DumpMembers(output);
         }
 
@@ -31,7 +32,7 @@ namespace Primordially.LstToLua
             {
                 "DOMAIN" => SpellListKind.Domain,
                 "CLASS" => SpellListKind.Class,
-                _ => throw new ParseFailedException(parts[0], "Unable to parse SPELLLEVEL"),
+                _ => throw new ParseFailedException(parts[0], "Unable to parse SPELLLEVEL or SPELLKNOWN"),
             };
             var spellLists = new Dictionary<string, SpellList>();
             SpellList? currentList = null;
@@ -44,6 +45,10 @@ namespace Primordially.LstToLua
                     var name = nameSpan.Value;
                     currentList = spellLists.GetOrAdd(name, () => new SpellList(kind, name));
                     currentLevel = Helpers.ParseInt(levelStr);
+                }
+                else if (Condition.TryParse(part, out var condition) && currentList != null)
+                {
+                    currentList.Conditions.Add(condition);
                 }
                 else
                 {
@@ -59,6 +64,11 @@ namespace Primordially.LstToLua
             }
 
             return spellLists.Values.ToList();
+        }
+
+        public override void AddField(TextSpan field)
+        {
+            throw new NotSupportedException();
         }
     }
 }

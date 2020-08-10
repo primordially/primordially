@@ -48,7 +48,7 @@ namespace Primordially.LstToLua
             }
             if (ClassNames != null)
             {
-                output.WriteList("ClassNames", ClassNames);
+                output.WriteListValue("ClassNames", ClassNames);
             }
             base.DumpMembers(output);
         }

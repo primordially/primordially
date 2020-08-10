@@ -14,19 +14,16 @@ namespace Primordially.LstToLua
 
         public string? ExClass { get; private set; }
         public int HitDie { get; private set; }
-        public int MaxLevel { get; private set; }
-        public int SkillPointsPerLevel { get; private set; }
+        public int MaxLevel { get; private set; } = -1;
+        public string SkillPointsPerLevel { get; private set; }
         public bool Visible { get; private set; } = true;
         public bool Memorize { get; private set; } = true;
         public bool AllowBaseClass { get; private set; } = true;
         public bool SpellBook { get; private set; } = false;
         public string? ItemCreationCasterLevel { get; private set; }
         public List<string> Roles { get; } = new List<string>();
-        public List<string> Types { get; } = new List<string>();
-        public List<(string key, string value)> Facts { get; } = new List<(string key, string value)>();
         public List<BonusLanguage> BonusLanguages { get; } = new List<BonusLanguage>();
-        public List<KnownSpell> AutomaticKnownSpells { get; } = new List<KnownSpell>();
-        public List<AutomaticLanguage> AutomaticLanguages { get; } = new List<AutomaticLanguage>();
+        public List<AutomaticKnownSpell> AutomaticKnownSpells { get; } = new List<AutomaticKnownSpell>();
 
         public List<ClassLevel> Levels { get; } = new List<ClassLevel>();
         
@@ -132,12 +129,6 @@ namespace Primordially.LstToLua
             var (k, v) = field.SplitTuple(':');
             var value = v.Value;
 
-            if (AutomaticLanguage.TryParse(field, out var automaticLanguage))
-            {
-                AutomaticLanguages.Add(automaticLanguage);
-                return;
-            }
-
             switch (k.Value)
             {
                 case "EXCLASS":
@@ -147,16 +138,20 @@ namespace Primordially.LstToLua
                     HitDie = Helpers.ParseInt(v);
                     return;
                 case "STARTSKILLPTS":
-                    SkillPointsPerLevel = Helpers.ParseInt(v);
-                    return;
-                case "TYPE":
-                    Types.AddRange(value.Split('.'));
+                    SkillPointsPerLevel = v.Value;
                     return;
                 case "ROLE":
                     Roles.AddRange(value.Split('.'));
                     return;
                 case "MAXLEVEL":
-                    MaxLevel = Helpers.ParseInt(v);
+                    if (v.Value == "NOLIMIT")
+                    {
+                        MaxLevel = -1;
+                    }
+                    else
+                    {
+                        MaxLevel = Helpers.ParseInt(v);
+                    }
                     return;
                 case "VISIBLE":
                     Visible = value != "NO";
@@ -184,7 +179,7 @@ namespace Primordially.LstToLua
                     var parts = v.Split('|').ToArray();
                     foreach (var part in parts)
                     {
-                        AutomaticKnownSpells.Add(KnownSpell.Parse(part));
+                        AutomaticKnownSpells.Add(AutomaticKnownSpell.Parse(part));
                     }
 
                     return;
@@ -197,17 +192,6 @@ namespace Primordially.LstToLua
                         BonusLanguages.Add(BonusLanguage.Parse(part));
                     }
 
-                    return;
-                }
-                case "FACT":
-                {
-                    var parts = v.Split('|').ToArray();
-                    if (parts.Length != 2)
-                    {
-                        throw new ParseFailedException(field, "Unable to parse fact.");
-                    }
-
-                    Facts.Add((parts[0].Value, parts[1].Value));
                     return;
                 }
             }
@@ -252,22 +236,11 @@ namespace Primordially.LstToLua
             {
                 output.WriteKeyValue("Spellbook", SpellBook);
             }
-            output.WriteList("BonusLanguages", BonusLanguages);
-            output.WriteList("Roles", Roles);
-            output.WriteList("Types", Types);
-            output.WriteObjectValue("Facts", () =>
-            {
-                foreach (var (k, v) in Facts)
-                {
-                    output.WriteKeyValue(k, v);
-                }
-            });
-            output.WriteList("AutomaticLanguages", AutomaticLanguages);
-
-            output.WriteList("AutomaticKnownSpells", AutomaticKnownSpells);
-
-            output.WriteList("Levels", Levels);
-            output.WriteList("SubClasses", SubClasses);
+            output.WriteListValue("BonusLanguages", BonusLanguages);
+            output.WriteListValue("Roles", Roles);
+            output.WriteListValue("AutomaticKnownSpells", AutomaticKnownSpells);
+            output.WriteListValue("Levels", Levels);
+            output.WriteListValue("SubClasses", SubClasses);
         }
     }
 }
