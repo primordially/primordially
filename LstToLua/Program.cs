@@ -420,6 +420,7 @@ namespace Primordially.LstToLua
                 }
             }
 
+
             var pccDirectory = Path.GetDirectoryName(pccFile);
             foreach (var (kind, inputFile) in filesToProcess)
             {
@@ -564,7 +565,7 @@ namespace Primordially.LstToLua
                     sourceInfo.SourceInfo.SourceLong = v.Value;
                     return true;
                 case "SOURCESHORT":
-                    sourceInfo.SourceInfo.SourceLong = v.Value;
+                    sourceInfo.SourceInfo.SourceShort = v.Value;
                     return true;
                 case "SOURCEWEB":
                     sourceInfo.SourceInfo.SourceWeb = v.Value;

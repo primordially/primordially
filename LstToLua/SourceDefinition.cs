@@ -2,7 +2,7 @@
 
 namespace Primordially.LstToLua
 {
-    internal class SourceDefinition : IDumpable
+    internal class SourceDefinition : LuaObject
     {
         public string? SourceLong { get; set; }
         public string? SourceShort { get; set; }
@@ -56,18 +56,13 @@ namespace Primordially.LstToLua
             return new SourceDefinition(sourceLong, sourceShort, sourceWeb, sourceDate);
         }
 
-        public void Dump(LuaTextWriter output)
+        protected override void DumpMembers(LuaTextWriter output)
         {
-            output.Write("SetSource(");
-            output.WriteStartObject();
-
             output.WriteKeyValue("SourceLong", SourceLong);
             output.WriteKeyValue("SourceShort", SourceShort);
             output.WriteKeyValue("SourceWeb", SourceWeb);
             output.WriteKeyValue("SourceDate", SourceDate);
-
-            output.WriteEndObject();
-            output.Write(")\n");
+            base.DumpMembers(output);
         }
     }
 }

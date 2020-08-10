@@ -42,7 +42,9 @@ namespace Primordially.LstToLua
             var firstValue = line.Fields.First();
             if (State == null && firstValue.StartsWith("SOURCE"))
             {
+                luaWriter.Write("SetSource(");
                 SourceDefinition.Parse(line.Fields).Dump(luaWriter);
+                luaWriter.Write(")\n");
                 return;
             }
 
