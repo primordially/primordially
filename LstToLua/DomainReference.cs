@@ -8,7 +8,7 @@ namespace Primordially.LstToLua
     {
         public IReadOnlyList<string> Names { get; }
 
-        public DomainReference(IList<Condition> conditions, IReadOnlyList<string> names) : base(conditions)
+        public DomainReference(IReadOnlyList<string> names)
         {
             Names = names;
         }
@@ -30,7 +30,10 @@ namespace Primordially.LstToLua
                 }
             }
 
-            return new DomainReference(conditions, names);
+            var result = new DomainReference(names);
+            foreach (var condition in conditions)
+                result.Conditions.Add(condition);
+            return result;
         }
 
         protected override void DumpMembers(LuaTextWriter output)

@@ -9,7 +9,7 @@ namespace Primordially.LstToLua
         public int SpellLevel { get; }
         public List<string> Spells { get; } = new List<string>();
 
-        public SpellListLevel(int spellLevel) : base(new List<Condition>())
+        public SpellListLevel(int spellLevel)
         {
             SpellLevel = spellLevel;
         }

@@ -463,11 +463,13 @@ namespace Primordially.LstToLua
                     case "ABILITYCATEGORY":
                         new SingleObjectFileConverter<AbilityCategoryDefinition>().Convert(inputFileFullPath, outputFile);
                         break;
+                    case "DEITY":
+                        new SingleObjectFileConverter<DeityDefinition>().Convert(inputFileFullPath, outputFile);
+                        break;
                     case "ARMORPROF":
                     case "BIOSET":
                     case "COMPANIONMOD":
                     case "DATATABLE":
-                    case "DEITY":
                     case "DOMAIN":
                     case "DYNAMIC":
                     case "EQUIPMENT":

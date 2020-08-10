@@ -9,7 +9,7 @@ namespace Primordially.LstToLua
     {
         public List<string> Names { get; }
 
-        public AutomaticEquipment(IList<Condition> conditions, List<string> names) : base(conditions)
+        public AutomaticEquipment(List<string> names)
         {
             Names = names;
         }
@@ -37,7 +37,9 @@ namespace Primordially.LstToLua
                 }
             }
 
-            result = new AutomaticEquipment(conditions, names);
+            result = new AutomaticEquipment(names);
+            foreach (var condition in conditions)
+                result.Conditions.Add(condition);
             return true;
         }
 

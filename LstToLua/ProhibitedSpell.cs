@@ -7,8 +7,7 @@ namespace Primordially.LstToLua
 {
     internal class ProhibitedSpell : ConditionalObject, IDumpable
     {
-        public ProhibitedSpell(string? alignment, string? descriptor, string? school, string? subSchool, IReadOnlyList<string> names, IList<Condition> conditions)
-            :base(conditions)
+        public ProhibitedSpell(string? alignment, string? descriptor, string? school, string? subSchool, IReadOnlyList<string> names)
         {
             Alignment = alignment;
             Descriptor = descriptor;
@@ -75,7 +74,10 @@ namespace Primordially.LstToLua
                 conditions.Add(condition);
             }
 
-            return new ProhibitedSpell(alignment, descriptor, school, subschool, names, conditions);
+            var result = new ProhibitedSpell(alignment, descriptor, school, subschool, names);
+            foreach (var condition in conditions)
+                result.Conditions.Add(condition);
+            return result;
         }
 
         public override void AddField(TextSpan field)

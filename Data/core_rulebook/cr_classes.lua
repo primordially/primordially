@@ -3669,8 +3669,8 @@ DefineClass({
     },
     {
       Choice={
-        Kind="",
-        Value="",
+        Kind=nil,
+        Value=nil,
       },
       Cost=0,
       Levels={

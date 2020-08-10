@@ -13,7 +13,6 @@ namespace Primordially.LstToLua
         public string? SpellPrefix { get; private set; }
         public List<Aspect> Aspects { get; } = new List<Aspect>();
         public List<Benefit> Benefits { get; } = new List<Benefit>();
-        public bool ClearBenefits { get; private set; } = false;
         public double? Cost { get; private set; }
         public bool AllowMultiple { get; private set; } = false;
         public bool Stackable { get; private set; } = false;
@@ -64,10 +63,6 @@ namespace Primordially.LstToLua
                 output.WriteKeyValue("SpellPrefix", SpellPrefix);
             }
             output.WriteListValue("Aspects", Aspects);
-            if (ClearBenefits)
-            {
-                output.WriteKeyValue("ClearBenefits", ClearBenefits);
-            }
             output.WriteListValue("Benefits", Benefits);
             output.WriteListValue("Templates", Templates);
             output.WriteListValue("TemplateChoices", TemplateChoices);
@@ -187,7 +182,7 @@ namespace Primordially.LstToLua
                     if (v.Value == ".CLEAR")
                     {
                         Benefits.Clear();
-                        ClearBenefits = true;
+                        Clear[nameof(Benefits)] = null;
                         return;
                     }
                     if (v.StartsWith(".CLEAR"))
