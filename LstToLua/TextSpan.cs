@@ -26,12 +26,14 @@ namespace Primordially.LstToLua
             return $"({LineNumber},{LinePosition}): {Value}";
         }
 
-        public (TextSpan left, TextSpan right) SplitTuple(char c)
+        public (TextSpan left, TextSpan right) SplitTuple(char c, bool last = false, bool throwOnError = true)
         {
-            var idx = Value.IndexOf(c);
+            var idx = last ? Value.LastIndexOf(c) : Value.IndexOf(c);
             if (idx < 0)
             {
-                throw new ParseFailedException(this, $"Expected '{c}' separator in value.");
+                if (throwOnError)
+                    throw new ParseFailedException(this, $"Expected '{c}' separator in value.");
+                return (this, default)!;
             }
 
             var left = new TextSpan(File, LineNumber, LinePosition, Value.Substring(0, idx));
@@ -99,6 +101,18 @@ namespace Primordially.LstToLua
             if (StartsWith(prefix))
             {
                 value = Substring(prefix.Length);
+                return true;
+            }
+
+            value = this;
+            return false;
+        }
+
+        public bool TryRemoveSuffix(string suffix, out TextSpan value)
+        {
+            if (EndsWith(suffix))
+            {
+                value = Substring(0, Value.Length - suffix.Length);
                 return true;
             }
 

@@ -7,7 +7,7 @@ namespace Primordially.LstToLua
     {
         protected override void ConvertLine(LuaTextWriter luaWriter, TsvLine line)
         {
-            if (line.Fields.Any())
+            if (line.Fields.Any() && !line.Fields.First().Value.StartsWith("SOURCE"))
             {
                 var def = new T();
                 foreach (var field in line.Fields)

@@ -141,6 +141,10 @@ namespace Primordially.LstToLua.Conditions
                     result = VisionCondition.Parse(v, invert);
                     return true;
 
+                case "PREDOMAIN":
+                    result = DomainCondition.Parse(v, invert);
+                    return true;
+
                 case "PREDEITY":
                     result = DeityCondition.Parse(v, invert);
                     return true;

@@ -12,6 +12,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=1,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="1",
   Types={
     "HumanRacialTrait",
@@ -1538,12 +1542,12 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Type == "Craft")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Craft")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Description={
     Format="Gnomes receive a +2 racial bonus on a Craft skill of their choice.",
   },
@@ -1571,12 +1575,12 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Type == "Profession")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Profession")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Description={
     Format="Gnomes receive a +2 racial bonus on a Profession skill of their choice.",
   },
@@ -5854,8 +5858,9 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=0,
-  Chooses={
-    ChooseString({"11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+  Choice={
+    Choose=ChooseString({"11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+    MaxTimes=1,
   },
   Selections="1",
   SpellLikeAbilities={
@@ -5897,10 +5902,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=0,
-  Chooses={
-    ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+  Choice={
+    Choose=ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SpellLikeAbilities={
     {
       Name="Comprehend Languages",
@@ -5940,10 +5946,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=0,
-  Chooses={
-    ChooseString({"10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+  Choice={
+    Choose=ChooseString({"10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SpellLikeAbilities={
     {
       Name="Darkvision",
@@ -5995,10 +6002,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=0,
-  Chooses={
-    ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+  Choice={
+    Choose=ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SpellLikeAbilities={
     {
       Name="Detect Magic",
@@ -6038,10 +6046,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=0,
-  Chooses={
-    ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+  Choice={
+    Choose=ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SpellLikeAbilities={
     {
       Name="Read Magic",
@@ -6081,10 +6090,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=0,
-  Chooses={
-    ChooseString({"10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+  Choice={
+    Choose=ChooseString({"10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SpellLikeAbilities={
     {
       Name="See Invisibility",
@@ -6124,10 +6134,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=0,
-  Chooses={
-    ChooseString({"11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+  Choice={
+    Choose=ChooseString({"11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SpellLikeAbilities={
     {
       Name="Tongues",
@@ -6167,10 +6178,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=0,
-  Chooses={
-    ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+  Choice={
+    Choose=ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SpellLikeAbilities={
     {
       Name="Enlarge Person",
@@ -7632,10 +7644,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=0,
-  Chooses={
-    ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+  Choice={
+    Choose=ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SpellLikeAbilities={
     {
       Name="Magic Fang",
@@ -7688,10 +7701,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=0,
-  Chooses={
-    ChooseString({"11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+  Choice={
+    Choose=ChooseString({"11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SpellLikeAbilities={
     {
       Name="Magic Fang (Greater)",
@@ -7744,10 +7758,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=0,
-  Chooses={
-    ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+  Choice={
+    Choose=ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SpellLikeAbilities={
     {
       Name="Reduce Person",
@@ -9223,10 +9238,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=0,
-  Chooses={
-    ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+  Choice={
+    Choose=ChooseString({"09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SpellLikeAbilities={
     {
       Name="Resistance",
@@ -9278,10 +9294,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=0,
-  Chooses={
-    ChooseString({"13", "14", "15", "16", "17", "18", "19", "20"}),
+  Choice={
+    Choose=ChooseString({"13", "14", "15", "16", "17", "18", "19", "20"}),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SpellLikeAbilities={
     {
       Name="Telepathic Bond",

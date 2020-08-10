@@ -1058,6 +1058,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Bonuses={
     {
       Category="HP",
@@ -1078,12 +1082,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Ranks < character.MaxSkillRank and skill.Type == "Base")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((not (character.Ranks(skill) >= character.MaxSkillRank) and (((skill.IsType("Base"))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Bonuses={
     {
       Category="SKILLRANK",
@@ -8877,6 +8881,10 @@ DefineAbility({
       FormatString="Rage",
     },
   },
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.33",
   Conditions={
     function (character)
@@ -9773,6 +9781,10 @@ DefineAbility({
       FormatString="Rage",
     },
   },
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.34",
   Conditions={
     function (character)
@@ -29869,12 +29881,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (character.IsProficientWith(weapon))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return ((character.IsProficientWith(weapon)))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.56",
   Description={
     Format="Any attacks made a %1 automatically confirm all critical threats and have their damage multiplier increased by 1 (x2 becomes x3, for example). In addition, you cannot be disarmed while wielding a weapon of this type.",
@@ -37507,12 +37519,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (character.IsProficientWith(weapon))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return ((character.IsProficientWith(weapon)))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["MonkBonusFeatLVL"] >= 10)
@@ -46014,6 +46026,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46042,6 +46058,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46070,6 +46090,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46098,6 +46122,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46126,6 +46154,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46154,6 +46186,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46182,6 +46218,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46210,6 +46250,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46238,6 +46282,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46266,6 +46314,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46294,6 +46346,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46322,6 +46378,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46350,6 +46410,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46378,6 +46442,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46406,6 +46474,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46434,6 +46506,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46462,6 +46538,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46490,6 +46570,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46518,6 +46602,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46546,6 +46634,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46574,6 +46666,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46602,6 +46698,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46630,6 +46730,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46658,6 +46762,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46686,6 +46794,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46714,6 +46826,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46742,6 +46858,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46770,6 +46890,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46798,6 +46922,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46826,6 +46954,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46854,6 +46986,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47481,6 +47617,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47509,6 +47649,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47537,6 +47681,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47565,6 +47713,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47593,6 +47745,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47621,6 +47777,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47649,6 +47809,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47677,6 +47841,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47705,6 +47873,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47733,6 +47905,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47761,6 +47937,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -48579,6 +48759,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.68",
   Conditions={
     function (character)
@@ -48681,12 +48865,13 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (SpellIsInClassList(spell, "Wizard") and spell.Level <= 1 and spell.Level >= 1)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((spell.IsInClassList("Wizard") and (((spell.Level <= 1) and (spell.Level >= 1)))))
     end),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.68",
   Conditions={
     function (character)
@@ -48720,12 +48905,13 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (SpellIsInClassList(spell, "Wizard") and spell.Level <= 0 and spell.Level >= 0)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((spell.IsInClassList("Wizard") and (((spell.Level <= 0) and (spell.Level >= 0)))))
     end),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.68",
   Conditions={
     function (character)
@@ -48976,6 +49162,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["RogueTalentLVL"] >= 10)
@@ -49159,9 +49349,9 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (true)
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((true))
     end),
   },
   Selections="3+INT",
@@ -49266,6 +49456,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Description={
     Format="Select a regular Rogue Talent.",
   },
@@ -54719,6 +54913,10 @@ DefineAbility({
       FormatString="While you are wearing light or no armor, your base speed increases by 5 feet. You lose the benefits of this feat if you carry a medium or heavy load.",
     },
   },
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.124",
   Conditions={
     function (character)
@@ -55564,12 +55762,12 @@ DefineAbility({
       FormatString="You make attack rolls with the selected weapon normally (without the non-proficient penalty).",
     },
   },
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (not character.IsProficientWith(weapon) and weapon.IsType("Martial"))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return ((not (character.IsProficientWith(weapon)) and (((weapon.IsType("Martial"))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.130",
   Conditions={
     function (character)
@@ -56207,12 +56405,12 @@ DefineAbility({
       FormatString="You get a +3 bonus on all checks involving the chosen skill. If you have 10 or more ranks in that skill, this bonus increases to +6.",
     },
   },
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Type == "Craft")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Craft")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.134",
   Conditions={
     function (character)
@@ -56587,12 +56785,12 @@ DefineAbility({
       FormatString="You get a +3 bonus on all checks involving the chosen skill. If you have 10 or more ranks in that skill, this bonus increases to +6.",
     },
   },
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Type == "Perform")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Perform")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.134",
   Conditions={
     function (character)
@@ -63737,12 +63935,15 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseAbilityselection(function (character, ability)
-      return (ability.Category == "Sorcerer Bloodline") or (not character.HasAbility(ability) and character.IsQualifiedFor(ability) and ability.IsType("SorcererBloodlineChoice"))
+  Choice={
+    Choose=ChooseAbilitySelection(function (character, ability)
+      if ability.Category ~= "Sorcerer Bloodline" then
+        return false
+      end
+      return ((not (character.HasAbility(ability))) and (character.IsQualifiedFor(ability) and (((ability.IsType("SorcererBloodlineChoice"))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -67001,9 +67202,9 @@ DefineAbility({
       FormatString="ArcaneBloodlinePowers",
     },
   },
-  Chooses={
-    ChooseSchool(function (character, school)
-      return (true)
+  Choice={
+    Choose=ChooseSchool(function (character, school)
+      return ((true))
     end),
   },
   Selections="1",
@@ -67112,6 +67313,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Bonuses={
     {
       Category="SPELLKNOWN",
@@ -67132,6 +67337,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 4)
@@ -67157,6 +67366,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 6)
@@ -67182,6 +67395,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 8)
@@ -67207,6 +67424,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 10)
@@ -67232,6 +67453,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 12)
@@ -67257,6 +67482,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 14)
@@ -67282,6 +67511,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 16)
@@ -67307,6 +67540,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 18)
@@ -81403,12 +81640,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (true)
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((true))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.450",
   ClassSkills={
     "LIST",
@@ -81423,12 +81660,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (not character.IsProficientWith(weapon) and weapon.IsType("Simple"))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return ((not (character.IsProficientWith(weapon)) and (((weapon.IsType("Simple"))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   AutomaticProficiencies={
     {
       Kind="Weapon",
@@ -86062,12 +86299,15 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseAbilityselection(function (character, ability)
-      return (ability.Category == "Blood of Dragons Bloodline") or (not character.HasAbility(ability) and character.IsQualifiedFor(ability) and ability.IsType("SorcererBloodlineChoice"))
+  Choice={
+    Choose=ChooseAbilitySelection(function (character, ability)
+      if ability.Category ~= "Blood of Dragons Bloodline" then
+        return false
+      end
+      return ((not (character.HasAbility(ability))) and (character.IsQualifiedFor(ability) and (((ability.IsType("SorcererBloodlineChoice"))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -87048,12 +87288,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseLang(function (character, lang)
-      return (not character.HasLanguage(lang) and character.IsQualifiedFor(lang) and lang.Type == "Spoken")
+  Choice={
+    Choose=ChooseLanguage(function (character, lang)
+      return ((not (character.HasLanguage(lang))) and (character.IsQualifiedFor(lang) and (((lang.IsType("Spoken"))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Types={
     "AddSpokenLanguage",
   },
@@ -87072,12 +87312,13 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (character.Ranks(skill) == 0)
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((character.Ranks(skill) == 0))
     end),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.387",
   Conditions={
     function (character)
@@ -87323,12 +87564,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (character.HasClass(class) and class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((character.HasClass(class) and (((class.CanCastSpells)))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.387",
   Conditions={
     function (character)
@@ -87359,12 +87600,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (character.HasClass(class) and class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((character.HasClass(class) and (((class.CanCastSpells)))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.387",
   Conditions={
     function (character)

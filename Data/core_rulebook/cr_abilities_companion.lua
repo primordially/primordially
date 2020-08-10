@@ -3100,6 +3100,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   DisplayName="Strength",
   Bonuses={
     {
@@ -3121,6 +3125,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   DisplayName="Dexterity",
   Bonuses={
     {
@@ -3142,6 +3150,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   DisplayName="Constitution",
   Bonuses={
     {
@@ -3163,6 +3175,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   DisplayName="Intelligence",
   StatModifications={
     {
@@ -3195,6 +3211,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   DisplayName="Wisdom",
   Bonuses={
     {
@@ -3216,6 +3236,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   DisplayName="Charisma",
   Bonuses={
     {
@@ -3237,12 +3261,12 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return ((stringMatch(skill.Name, "Acrobatics") or stringMatch(skill.Key, "Acrobatics"))) or ((stringMatch(skill.Name, "Climb") or stringMatch(skill.Key, "Climb"))) or ((stringMatch(skill.Name, "Escape Artist") or stringMatch(skill.Key, "Escape Artist"))) or ((stringMatch(skill.Name, "Fly") or stringMatch(skill.Key, "Fly"))) or ((stringMatch(skill.Name, "Intimidate") or stringMatch(skill.Key, "Intimidate"))) or ((stringMatch(skill.Name, "Perception") or stringMatch(skill.Key, "Perception"))) or ((stringMatch(skill.Name, "Stealth") or stringMatch(skill.Key, "Stealth"))) or ((stringMatch(skill.Name, "Survival") or stringMatch(skill.Key, "Survival"))) or ((stringMatch(skill.Name, "Swim") or stringMatch(skill.Key, "Swim")))
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return (((stringMatch(skill.Name, "Acrobatics") or stringMatch(skill.Key, "Acrobatics")))) or (((stringMatch(skill.Name, "Climb") or stringMatch(skill.Key, "Climb")))) or (((stringMatch(skill.Name, "Escape Artist") or stringMatch(skill.Key, "Escape Artist")))) or (((stringMatch(skill.Name, "Fly") or stringMatch(skill.Key, "Fly")))) or (((stringMatch(skill.Name, "Intimidate") or stringMatch(skill.Key, "Intimidate")))) or (((stringMatch(skill.Name, "Perception") or stringMatch(skill.Key, "Perception")))) or (((stringMatch(skill.Name, "Stealth") or stringMatch(skill.Key, "Stealth")))) or (((stringMatch(skill.Name, "Survival") or stringMatch(skill.Key, "Survival")))) or (((stringMatch(skill.Name, "Swim") or stringMatch(skill.Key, "Swim"))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Bonuses={
     {
       Category="SKILLRANK",
@@ -3263,12 +3287,12 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Type == "Base")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Base")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Conditions={
     function (character)
       return ((character.Stats["INT"] >= 3)) >= 1
@@ -4682,6 +4706,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.315",
   SourceShort="SOURCESHORT:B1",
   SourceLong="Bestiary",
@@ -4716,12 +4744,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (character.IsProficientWith(weapon) and weapon.IsType("Natural"))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return ((character.IsProficientWith(weapon)) and (weapon.IsType("Natural")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.315",
   SourceShort="SOURCESHORT:B1",
   SourceLong="Bestiary",
@@ -4973,12 +5001,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Type == "Charisma") or (skill.Type == "Dexterity") or (skill.Type == "Intelligence") or (skill.Type == "Strength") or (skill.Type == "Wisdom")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Charisma"))) or ((skill.IsType("Dexterity"))) or ((skill.IsType("Intelligence"))) or ((skill.IsType("Strength"))) or ((skill.IsType("Wisdom")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.134",
   Description={
     Format="You get a +3 bonus on all checks involving the chosen skill. If you have 10 or more ranks in that skill, this bonus increases to +6.",
@@ -5129,12 +5157,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (character.IsProficientWith(weapon))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return ((character.IsProficientWith(weapon)))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["(CL=Companion)"] >= 3)
@@ -5160,6 +5188,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="1",
   Conditions={
     function (character)
@@ -5189,6 +5221,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="1",
   Description={
     Format="GM Granted Feats, that are not included in the official list.",

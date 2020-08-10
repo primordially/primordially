@@ -1,4 +1,6 @@
-﻿namespace Primordially.LstToLua
+﻿using System;
+
+namespace Primordially.LstToLua
 {
     internal class VariableDefinition : LuaObject
     {

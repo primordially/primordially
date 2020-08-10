@@ -31,8 +31,7 @@ namespace Primordially.LstToLua
             base.DumpMembers(output);
         }
 
-        private SpellLikeAbility(string name, string? dc, string spellBookName, string times, string timeUnit, string? casterLevel, List<Condition> conditions)
-            : base(conditions)
+        private SpellLikeAbility(string name, string? dc, string spellBookName, string times, string timeUnit, string? casterLevel)
         {
             Name = name;
             DC = dc;
@@ -100,7 +99,12 @@ namespace Primordially.LstToLua
             }
 
             return spells.Select(s =>
-                new SpellLikeAbility(s.spell, s.dc, spellBookName, times, timeUnit, casterLevel, conditions)).ToList();
+            {
+                var result = new SpellLikeAbility(s.spell, s.dc, spellBookName, times, timeUnit, casterLevel);
+                foreach (var condition in conditions)
+                    result.Conditions.Add(condition);
+                return result;
+            }).ToList();
         }
     }
 }

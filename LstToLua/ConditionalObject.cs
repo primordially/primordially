@@ -10,11 +10,6 @@ namespace Primordially.LstToLua
             Conditions = new List<Condition>();
         }
 
-        public ConditionalObject(IList<Condition> conditions)
-        {
-            Conditions = conditions;
-        }
-
         public IList<Condition> Conditions { get; }
 
         public override void AddField(TextSpan field)

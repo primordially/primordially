@@ -7,7 +7,7 @@ namespace Primordially.LstToLua
 {
     internal class SpellList : ConditionalObject
     {
-        public SpellList(SpellListKind kind, string name) : base(new List<Condition>())
+        public SpellList(SpellListKind kind, string name)
         {
             Kind = kind;
             Name = name;

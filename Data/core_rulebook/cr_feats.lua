@@ -171,10 +171,10 @@ DefineAbility({
       FormatString="Instead of its normal effect, you can choose to have your ability to channel energy heal or harm outsiders of the chosen alignment subtype. You must make this choice each time you channel energy. If you choose to heal or harm creatures of the chosen alignment subtype, your channel energy has no effect on other creatures. The amount of damage healed or dealt and the DC to halve the damage is otherwise unchanged.",
     },
   },
-  Chooses={
-    ChooseString({"Chaos", "Evil", "Good", "Law"}),
+  Choice={
+    Choose=ChooseString({"Chaos", "Evil", "Good", "Law"}),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.117",
   Conditions={
     function (character)
@@ -2094,10 +2094,10 @@ DefineAbility({
       FormatString="Instead of its normal effect, you can choose to have your ability to channel energy heal or harm outsiders of your chosen elemental subtype. You must make this choice each time you channel energy. If you choose to heal or harm creatures of your elemental subtype, your channel energy has no affect on other creatures. The amount of damage healed or dealt and the DC to halve the damage is otherwise unchanged.",
     },
   },
-  Chooses={
-    ChooseString({"Air", "Earth", "Fire", "Water"}),
+  Choice={
+    Choose=ChooseString({"Air", "Earth", "Fire", "Water"}),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.122",
   Conditions={
     function (character)
@@ -2285,12 +2285,12 @@ DefineAbility({
       FormatString="You make attack rolls with the weapon normally.",
     },
   },
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (true and weapon.IsType("Exotic"))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return ((true and (((weapon.IsType("Exotic"))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   AutomaticProficiencies={
     {
       Kind="Weapon",
@@ -2381,6 +2381,10 @@ DefineAbility({
       FormatString="Your ki pool increases by 2.",
     },
   },
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.124",
   Conditions={
     function (character)
@@ -2416,6 +2420,10 @@ DefineAbility({
       FormatString="You can use your lay on hands ability two additional times per day.",
     },
   },
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.124",
   Conditions={
     function (character)
@@ -2451,6 +2459,10 @@ DefineAbility({
       FormatString="Select one additional mercy for which you qualify. When you use lay on hands to heal damage to one target, it also receives the additional effects of this mercy.",
     },
   },
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.124",
   Conditions={
     function (character)
@@ -2486,6 +2498,10 @@ DefineAbility({
       FormatString="You can use bardic performance for 6 additional rounds per day.",
     },
   },
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.124",
   Conditions={
     function (character)
@@ -2521,6 +2537,10 @@ DefineAbility({
       FormatString="You can rage for 6 additional rounds per day.",
     },
   },
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.124",
   Conditions={
     function (character)
@@ -2605,6 +2625,10 @@ DefineAbility({
       FormatString="While you are wearing light or no armor, your base speed increases by 5 feet. You lose the benefits of this feat if you carry a medium or heavy load.",
     },
   },
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.124",
   Description={
     Format="You are faster than most.",
@@ -3097,12 +3121,12 @@ DefineAbility({
       FormatString="Add +1 to the Difficulty Class for all saving throws against spells from the school of magic you select. This bonus stacks with the bonus from Spell Focus.",
     },
   },
-  Chooses={
-    ChooseSchool(function (character, school)
-      return (stringMatch(school.Name, "ABILITY=FEAT") and stringMatch(school.Name, "Spell Focus"))
+  Choice={
+    Choose=ChooseSchool(function (character, school)
+      return (((stringMatch(school.Name, "ABILITY=FEAT") or stringMatch(school.Key, "ABILITY=FEAT")) and ((((stringMatch(school.Name, "Spell Focus") or stringMatch(school.Key, "Spell Focus")))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.125",
   Conditions={
     function (character)
@@ -3349,12 +3373,12 @@ DefineAbility({
       FormatString="You gain a +1 bonus on attack rolls you make using the selected weapon. This bonus stacks with other bonuses on attack rolls, including those from Weapon Focus.",
     },
   },
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (stringMatch(weapon.Name, "ABILITY=FEAT") and stringMatch(weapon.Name, "Weapon Focus"))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return (((stringMatch(weapon.Name, "ABILITY=FEAT") or stringMatch(weapon.Key, "ABILITY=FEAT")) and ((((stringMatch(weapon.Name, "Weapon Focus") or stringMatch(weapon.Key, "Weapon Focus")))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.126",
   Conditions={
     function (character)
@@ -3396,12 +3420,12 @@ DefineAbility({
       FormatString="You gain a +2 bonus on all damage rolls you make using the selected weapon. This bonus to damage stacks with other damage roll bonuses, including any you gain from Weapon Specialization.",
     },
   },
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (stringMatch(weapon.Name, "ABILITY=FEAT") and stringMatch(weapon.Name, "Weapon Specialization"))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return (((stringMatch(weapon.Name, "ABILITY=FEAT") or stringMatch(weapon.Key, "ABILITY=FEAT")) and ((((stringMatch(weapon.Name, "Weapon Specialization") or stringMatch(weapon.Key, "Weapon Specialization")))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.126",
   Conditions={
     function (character)
@@ -3606,12 +3630,12 @@ DefineAbility({
       FormatString="When using the weapon you selected, your threat range is doubled.",
     },
   },
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (character.IsProficientWith(weapon))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return ((character.IsProficientWith(weapon)))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.127",
   Conditions={
     function (character)
@@ -4600,12 +4624,12 @@ DefineAbility({
       FormatString="You make attack rolls with the selected weapon normally (without the non-proficient penalty).",
     },
   },
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (not character.IsProficientWith(weapon) and weapon.IsType("Martial"))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return ((not (character.IsProficientWith(weapon)) and (((weapon.IsType("Martial"))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   AutomaticProficiencies={
     {
       Kind="Weapon",
@@ -4641,12 +4665,13 @@ DefineAbility({
       FormatString="Choose one Craft or Profession skill in which you possess at least 5 ranks. You receive a +2 bonus on your chosen Craft or Profession skill. Ranks in your chosen skill count as your caster level for the purposes of qualifying for the Craft Magic Arms and Armor and Craft Wondrous Item feats. You can create magic items using these feats, substituting your ranks in the chosen skill for your total caster level. You must use the chosen skill for the check to create the item. The DC to create the item still increases for any necessary spell requirements (see the magic item creation rules in Chapter 15). You cannot use this feat to create any spell-trigger or spell-activation item.",
     },
   },
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Ranks >= 5) or (skill.Type == "Craft") or (skill.Type == "Profession")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((character.Ranks(skill) >= 5)) or ((skill.IsType("Craft"))) or ((skill.IsType("Profession")))
     end),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.130",
   Conditions={
     function (character)
@@ -5317,12 +5342,12 @@ DefineAbility({
       FormatString="The time required for you to reload your chosen type of crossbow is reduced to a free action (for a hand or light crossbow) or a move action (for a heavy crossbow). Reloading a crossbow still provokes an attack of opportunity.&nl;If you have selected this feat for hand crossbow or light crossbow, you may fire that weapon as many times in a full-attack action as you could attack if you were using a bow.",
     },
   },
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (stringMatch(weapon.Name, "Crossbow (Hand)")) or (stringMatch(weapon.Name, "Crossbow (Heavy)")) or (stringMatch(weapon.Name, "Crossbow (Light)"))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return (((stringMatch(weapon.Name, "Crossbow (Hand)") or stringMatch(weapon.Key, "Crossbow (Hand)")))) or (((stringMatch(weapon.Name, "Crossbow (Heavy)") or stringMatch(weapon.Key, "Crossbow (Heavy)")))) or (((stringMatch(weapon.Name, "Crossbow (Light)") or stringMatch(weapon.Key, "Crossbow (Light)"))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Info={
     Prerequisite="Weapon Proficiency (crossbow type chosen).",
     Normal="A character without this feat needs a move action to reload a hand or light crossbow, or a full-round action to reload a heavy crossbow.",
@@ -5998,12 +6023,12 @@ DefineAbility({
       FormatString="You get a +3 bonus on all checks involving the chosen skill. If you have 10 or more ranks in that skill, this bonus increases to +6.",
     },
   },
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Type == "Base")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Base")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.134",
   Description={
     Format="You are particularly adept at your chosen skill.",
@@ -6081,12 +6106,12 @@ DefineAbility({
       FormatString="Add +1 to the Difficulty Class for all saving throws against spells from the school of magic you select.",
     },
   },
-  Chooses={
-    ChooseSchool(function (character, school)
-      return (true)
+  Choice={
+    Choose=ChooseSchool(function (character, school)
+      return ((true))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.134",
   Description={
     Format="Any spells you cast of your chosen school of magic are more difficult to resist.",
@@ -6120,9 +6145,9 @@ DefineAbility({
       FormatString="Each time you take this feat, choose a number of spells that you already know equal to your Intelligence modifier. From that point on, you can prepare these spells without referring to a spellbook.",
     },
   },
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (SpellIsInClassList(spell, "Wizard") and character.KnowsSpell(spell))
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((spell.IsInClassList("Wizard") and (((character.KnowsSpell(spell))))))
     end),
   },
   Selections="var(\"STAT.3.MOD.NOEQUIP.NOTEMP\")",
@@ -7143,12 +7168,12 @@ DefineAbility({
       FormatString="You gain a +1 bonus on all attack rolls you make using the selected weapon.",
     },
   },
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (character.IsProficientWith(weapon))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return ((character.IsProficientWith(weapon)))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.136",
   Conditions={
     function (character)
@@ -7189,12 +7214,12 @@ DefineAbility({
       FormatString="You gain a +2 bonus on all damage rolls you make using the selected weapon.",
     },
   },
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (stringMatch(weapon.Name, "ABILITY=FEAT") and stringMatch(weapon.Name, "Weapon Focus"))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return (((stringMatch(weapon.Name, "ABILITY=FEAT") or stringMatch(weapon.Key, "ABILITY=FEAT")) and ((((stringMatch(weapon.Name, "Weapon Focus") or stringMatch(weapon.Key, "Weapon Focus")))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.137",
   Conditions={
     function (character)

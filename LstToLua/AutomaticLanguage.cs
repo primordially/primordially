@@ -10,7 +10,7 @@ namespace Primordially.LstToLua
     {
         public bool Clear { get; }
         public List<string> Selectors{ get; }
-        public AutomaticLanguage(IList<Condition> conditions, List<string> selectors, bool clear) : base(conditions)
+        public AutomaticLanguage(List<string> selectors, bool clear)
         {
             Selectors = selectors;
             Clear = clear;
@@ -59,7 +59,9 @@ namespace Primordially.LstToLua
                 }
             }
 
-            result = new AutomaticLanguage(conditions, selectors, clear);
+            result = new AutomaticLanguage(selectors, clear);
+            foreach (var condition in conditions)
+                result.Conditions.Add(condition);
             return true;
         }
 

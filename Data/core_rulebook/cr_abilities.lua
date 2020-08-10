@@ -2069,12 +2069,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Type == "Base")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Base")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Bonuses={
     {
       Category="SKILLRANK",
@@ -2762,8 +2762,8 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseUserInput(1, "Write in Languages Known by the Item"),
+  Choice={
+    Choose=ChooseUserInput(1, "Write in Languages Known by the Item"),
   },
   Selections="1",
   Types={
@@ -2832,10 +2832,11 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (true and spell.Level <= 0 and spell.Level >= 0)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((true and (((spell.Level <= 0) and (spell.Level >= 0)))))
     end),
+    MaxTimes=1,
   },
   Selections="1",
   Conditions={
@@ -2858,10 +2859,11 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (true and spell.Level <= 1 and spell.Level >= 1)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((true and (((spell.Level <= 1) and (spell.Level >= 1)))))
     end),
+    MaxTimes=1,
   },
   Selections="1",
   Conditions={
@@ -2904,10 +2906,11 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (true and spell.Level <= 2 and spell.Level >= 2)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((true and (((spell.Level <= 2) and (spell.Level >= 2)))))
     end),
+    MaxTimes=1,
   },
   Selections="1",
   Conditions={
@@ -2930,10 +2933,11 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (true)
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((true))
     end),
+    MaxTimes=1,
   },
   Selections="1",
   Conditions={
@@ -2976,10 +2980,11 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (true and spell.Level <= 3 and spell.Level >= 3)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((true and (((spell.Level <= 3) and (spell.Level >= 3)))))
     end),
+    MaxTimes=1,
   },
   Selections="1",
   Conditions={
@@ -3002,10 +3007,11 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (true and spell.Level <= 2 and spell.Level >= 2)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((true and (((spell.Level <= 2) and (spell.Level >= 2)))))
     end),
+    MaxTimes=1,
   },
   Selections="1",
   Conditions={
@@ -3028,10 +3034,11 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (true)
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((true))
     end),
+    MaxTimes=1,
   },
   Selections="1",
   Conditions={
@@ -3094,10 +3101,11 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (true and spell.Level <= 4 and spell.Level >= 4)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((true and (((spell.Level <= 4) and (spell.Level >= 4)))))
     end),
+    MaxTimes=1,
   },
   Selections="1",
   Conditions={
@@ -3140,10 +3148,11 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (true and spell.Level <= 3 and spell.Level >= 3)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((true and (((spell.Level <= 3) and (spell.Level >= 3)))))
     end),
+    MaxTimes=1,
   },
   Selections="1",
   Conditions={
@@ -3166,10 +3175,11 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (true and spell.Level <= 4 and spell.Level >= 4)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((true and (((spell.Level <= 4) and (spell.Level >= 4)))))
     end),
+    MaxTimes=1,
   },
   Selections="1",
   Conditions={
@@ -3419,10 +3429,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=1,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (true and spell.Level <= 7 and spell.Level >= 7)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((true and (((spell.Level <= 7) and (spell.Level >= 7)))))
     end),
+    MaxTimes=1,
   },
   Selections="1",
   Conditions={
@@ -3446,10 +3457,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=1,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (true and spell.Level <= 7 and spell.Level >= 7)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((true and (((spell.Level <= 7) and (spell.Level >= 7)))))
     end),
+    MaxTimes=1,
   },
   Selections="1",
   Conditions={
@@ -3473,10 +3485,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=1,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (true and spell.Level <= 7 and spell.Level >= 7)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((true and (((spell.Level <= 7) and (spell.Level >= 7)))))
     end),
+    MaxTimes=1,
   },
   Selections="1",
   Conditions={
@@ -3500,10 +3513,11 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=1,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (true and spell.Level <= 7 and spell.Level >= 7)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((true and (((spell.Level <= 7) and (spell.Level >= 7)))))
     end),
+    MaxTimes=1,
   },
   Selections="1",
   Conditions={
@@ -6820,6 +6834,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 feat.",
@@ -6845,12 +6863,12 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Ranks < character.MaxSkillRank and skill.Type == "Base")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((not (character.Ranks(skill) >= character.MaxSkillRank) and (((skill.IsType("Base"))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 skill rank (won't exceed max ranks).",
@@ -6876,12 +6894,12 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Type == "Base")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Base")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 skill bonus.",
@@ -6907,6 +6925,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 skill point.",
@@ -6932,6 +6954,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 hit point.",
@@ -6957,6 +6983,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 spell per day.",
@@ -6981,6 +7011,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 spell known.",
@@ -7005,6 +7039,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 arcane caster level.",
@@ -7029,6 +7067,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 divine caster level.",
@@ -7053,12 +7095,12 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
-  Chooses={
-    ChooseLang(function (character, lang)
-      return (lang.Type == "Spoken")
+  Choice={
+    Choose=ChooseLanguage(function (character, lang)
+      return ((lang.IsType("Spoken")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with bonus Language.",
@@ -7082,12 +7124,12 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=false,
   Cost=0,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Type == "Base")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Base")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 skill rank per level or use with custom INT bonus items.",
@@ -7113,12 +7155,15 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
-  Chooses={
-    ChooseAbilityselection(function (character, ability)
-      return (ability.Category == "FEAT") or (true)
+  Choice={
+    Choose=ChooseAbilitySelection(function (character, ability)
+      if ability.Category ~= "FEAT" then
+        return false
+      end
+      return ((true))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with 1 feat that ignores restrictions.",
@@ -7143,12 +7188,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 1 spell known.",
@@ -7173,12 +7218,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 2 spell known.",
@@ -7203,12 +7248,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 3 spell known.",
@@ -7233,12 +7278,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 4 spell known.",
@@ -7263,12 +7308,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 5 spell known.",
@@ -7293,12 +7338,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 6 spell known.",
@@ -7323,12 +7368,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 7 spell known.",
@@ -7353,12 +7398,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 8 spell known.",
@@ -7383,12 +7428,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 9 spell known.",
@@ -7413,12 +7458,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 1 spell per day.",
@@ -7443,12 +7488,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 2 spell per day.",
@@ -7473,12 +7518,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 3 spell per day.",
@@ -7503,12 +7548,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 4 spell per day.",
@@ -7533,12 +7578,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 5 spell per day.",
@@ -7563,12 +7608,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 6 spell per day.",
@@ -7593,12 +7638,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 7 spell per day.",
@@ -7623,12 +7668,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 8 spell per day.",
@@ -7653,12 +7698,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 9 spell per day.",
@@ -7684,6 +7729,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 STR bonus.",
@@ -7709,6 +7758,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 DEX bonus.",
@@ -7734,6 +7787,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 CON bonus.",
@@ -7759,6 +7816,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 INT bonus.",
@@ -7784,6 +7845,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 WIS bonus.",
@@ -7809,6 +7874,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 CHA bonus.",
@@ -7834,6 +7903,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 feat.",
@@ -7859,12 +7932,12 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Type == "Base")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Base")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 skill rank (won't exceed max ranks).",
@@ -7890,12 +7963,12 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Type == "Base")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Base")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 skill bonus.",
@@ -7921,6 +7994,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 hit point.",
@@ -7946,6 +8023,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 spell per day.",
@@ -7970,6 +8051,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 spell known.",
@@ -7994,6 +8079,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with -1 arcane caster level.",
@@ -8018,6 +8107,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with -1 divine caster level.",
@@ -8041,12 +8134,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 1 spell known.",
@@ -8071,12 +8164,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 2 spell known.",
@@ -8101,12 +8194,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 3 spell known.",
@@ -8131,12 +8224,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 4 spell known.",
@@ -8161,12 +8254,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 5 spell known.",
@@ -8191,12 +8284,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 6 spell known.",
@@ -8221,12 +8314,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 7 spell known.",
@@ -8251,12 +8344,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 8 spell known.",
@@ -8281,12 +8374,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 9 spell known.",
@@ -8311,12 +8404,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 1 spell per day.",
@@ -8341,12 +8434,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 2 spell per day.",
@@ -8371,12 +8464,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 3 spell per day.",
@@ -8401,12 +8494,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 4 spell per day.",
@@ -8431,12 +8524,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 5 spell per day.",
@@ -8461,12 +8554,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 6 spell per day.",
@@ -8491,12 +8584,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 7 spell per day.",
@@ -8521,12 +8614,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 8 spell per day.",
@@ -8551,12 +8644,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((class.CanCastSpells))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 9 spell per day.",
@@ -8582,6 +8675,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 STR bonus.",
@@ -8607,6 +8704,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 DEX bonus.",
@@ -8632,6 +8733,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 CON bonus.",
@@ -8657,6 +8762,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 INT bonus.",
@@ -8682,6 +8791,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 WIS bonus.",
@@ -8707,6 +8820,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 CHA bonus.",
@@ -8732,6 +8849,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Award of Natural Armor",
@@ -8762,6 +8883,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Award of Deflection Bonus",
@@ -8792,6 +8917,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Award of 5ft of movement speed",
@@ -8817,6 +8946,10 @@ DefineAbility({
   AllowMultiple=true,
   Stackable=true,
   Cost=0,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalty of 5ft of movement speed",
@@ -8944,6 +9077,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Description={
     Format="Sustains creature without food or water",
@@ -8962,6 +9099,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Abilities={
     {
@@ -8986,6 +9127,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9015,6 +9160,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9044,6 +9193,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9073,6 +9226,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Description={
     Format="Sustains creature without air",
@@ -9091,6 +9248,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Description={
     Format="Absorbs spells of 8th level or lower",
@@ -9109,6 +9270,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9133,6 +9298,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9162,6 +9331,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Description={
     Format="+1 to ability checks",
@@ -9218,6 +9391,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Description={
     Format="Absorbs spells of 4th level or lower",
@@ -9236,6 +9413,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Description={
     Format="Regenerate 1 point of damage per 10 minutes",
@@ -9254,6 +9435,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9283,6 +9468,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9312,6 +9501,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9341,6 +9534,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.520",
   Description={
     Format="Stores three levels of spells, as a ring of spell storing",
