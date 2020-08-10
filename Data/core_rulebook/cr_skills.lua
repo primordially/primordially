@@ -3980,7 +3980,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Acrobatics)" then return true end
             return false
           end)
@@ -4000,7 +3999,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Acrobatics)" then return true end
             return false
           end)
@@ -4028,7 +4026,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Appraise)" then return true end
             return false
           end)
@@ -4048,7 +4045,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Appraise)" then return true end
             return false
           end)
@@ -4076,7 +4072,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Bluff)" then return true end
             return false
           end)
@@ -4096,7 +4091,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Bluff)" then return true end
             return false
           end)
@@ -4124,7 +4118,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Climb)" then return true end
             return false
           end)
@@ -4144,7 +4137,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Climb)" then return true end
             return false
           end)
@@ -4172,7 +4164,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Alchemy))" then return true end
             return false
           end)
@@ -4192,7 +4183,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Alchemy))" then return true end
             return false
           end)
@@ -4220,7 +4210,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Armor))" then return true end
             return false
           end)
@@ -4240,7 +4229,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Armor))" then return true end
             return false
           end)
@@ -4268,7 +4256,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Baskets))" then return true end
             return false
           end)
@@ -4288,7 +4275,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Baskets))" then return true end
             return false
           end)
@@ -4316,7 +4302,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Books))" then return true end
             return false
           end)
@@ -4336,7 +4321,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Books))" then return true end
             return false
           end)
@@ -4364,7 +4348,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Bows))" then return true end
             return false
           end)
@@ -4384,7 +4367,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Bows))" then return true end
             return false
           end)
@@ -4412,7 +4394,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Calligraphy))" then return true end
             return false
           end)
@@ -4432,7 +4413,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Calligraphy))" then return true end
             return false
           end)
@@ -4460,7 +4440,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Carpentry))" then return true end
             return false
           end)
@@ -4480,7 +4459,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Carpentry))" then return true end
             return false
           end)
@@ -4508,7 +4486,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Cloth))" then return true end
             return false
           end)
@@ -4528,7 +4505,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Cloth))" then return true end
             return false
           end)
@@ -4556,7 +4532,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Clothing))" then return true end
             return false
           end)
@@ -4576,7 +4551,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Clothing))" then return true end
             return false
           end)
@@ -4604,7 +4578,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Glass))" then return true end
             return false
           end)
@@ -4624,7 +4597,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Glass))" then return true end
             return false
           end)
@@ -4652,7 +4624,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Jewelry))" then return true end
             return false
           end)
@@ -4672,7 +4643,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Jewelry))" then return true end
             return false
           end)
@@ -4700,7 +4670,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Leather))" then return true end
             return false
           end)
@@ -4720,7 +4689,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Leather))" then return true end
             return false
           end)
@@ -4748,7 +4716,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Locks))" then return true end
             return false
           end)
@@ -4768,7 +4735,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Locks))" then return true end
             return false
           end)
@@ -4796,7 +4762,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Paintings))" then return true end
             return false
           end)
@@ -4816,7 +4781,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Paintings))" then return true end
             return false
           end)
@@ -4844,7 +4808,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Pottery))" then return true end
             return false
           end)
@@ -4864,7 +4827,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Pottery))" then return true end
             return false
           end)
@@ -4892,7 +4854,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Sculptures))" then return true end
             return false
           end)
@@ -4912,7 +4873,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Sculptures))" then return true end
             return false
           end)
@@ -4940,7 +4900,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Ships))" then return true end
             return false
           end)
@@ -4960,7 +4919,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Ships))" then return true end
             return false
           end)
@@ -4988,7 +4946,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Shoes))" then return true end
             return false
           end)
@@ -5008,7 +4965,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Shoes))" then return true end
             return false
           end)
@@ -5036,7 +4992,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Stonemasonry))" then return true end
             return false
           end)
@@ -5056,7 +5011,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Stonemasonry))" then return true end
             return false
           end)
@@ -5084,7 +5038,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Traps))" then return true end
             return false
           end)
@@ -5104,7 +5057,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Traps))" then return true end
             return false
           end)
@@ -5132,7 +5084,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Untrained))" then return true end
             return false
           end)
@@ -5152,7 +5103,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Untrained))" then return true end
             return false
           end)
@@ -5180,7 +5130,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Weapons))" then return true end
             return false
           end)
@@ -5200,7 +5149,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Craft (Weapons))" then return true end
             return false
           end)
@@ -5228,7 +5176,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Diplomacy)" then return true end
             return false
           end)
@@ -5248,7 +5195,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Diplomacy)" then return true end
             return false
           end)
@@ -5276,7 +5222,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Disable Device)" then return true end
             return false
           end)
@@ -5296,7 +5241,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Disable Device)" then return true end
             return false
           end)
@@ -5324,7 +5268,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Disguise)" then return true end
             return false
           end)
@@ -5344,7 +5287,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Disguise)" then return true end
             return false
           end)
@@ -5372,7 +5314,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Escape Artist)" then return true end
             return false
           end)
@@ -5392,7 +5333,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Escape Artist)" then return true end
             return false
           end)
@@ -5420,7 +5360,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Fly)" then return true end
             return false
           end)
@@ -5440,7 +5379,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Fly)" then return true end
             return false
           end)
@@ -5468,7 +5406,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Handle Animal)" then return true end
             return false
           end)
@@ -5488,7 +5425,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Handle Animal)" then return true end
             return false
           end)
@@ -5516,7 +5452,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Heal)" then return true end
             return false
           end)
@@ -5536,7 +5471,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Heal)" then return true end
             return false
           end)
@@ -5564,7 +5498,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Intimidate)" then return true end
             return false
           end)
@@ -5584,7 +5517,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Intimidate)" then return true end
             return false
           end)
@@ -5612,7 +5544,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Arcana))" then return true end
             return false
           end)
@@ -5632,7 +5563,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Arcana))" then return true end
             return false
           end)
@@ -5660,7 +5590,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Dungeoneering))" then return true end
             return false
           end)
@@ -5680,7 +5609,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Dungeoneering))" then return true end
             return false
           end)
@@ -5708,7 +5636,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Engineering))" then return true end
             return false
           end)
@@ -5728,7 +5655,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Engineering))" then return true end
             return false
           end)
@@ -5756,7 +5682,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Geography))" then return true end
             return false
           end)
@@ -5776,7 +5701,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Geography))" then return true end
             return false
           end)
@@ -5804,7 +5728,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (History))" then return true end
             return false
           end)
@@ -5824,7 +5747,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (History))" then return true end
             return false
           end)
@@ -5852,7 +5774,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Local))" then return true end
             return false
           end)
@@ -5872,7 +5793,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Local))" then return true end
             return false
           end)
@@ -5900,7 +5820,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Nature))" then return true end
             return false
           end)
@@ -5920,7 +5839,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Nature))" then return true end
             return false
           end)
@@ -5948,7 +5866,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Nobility))" then return true end
             return false
           end)
@@ -5968,7 +5885,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Nobility))" then return true end
             return false
           end)
@@ -5996,7 +5912,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Planes))" then return true end
             return false
           end)
@@ -6016,7 +5931,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Planes))" then return true end
             return false
           end)
@@ -6044,7 +5958,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Religion))" then return true end
             return false
           end)
@@ -6064,7 +5977,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Knowledge (Religion))" then return true end
             return false
           end)
@@ -6092,7 +6004,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Linguistics)" then return true end
             return false
           end)
@@ -6112,7 +6023,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Linguistics)" then return true end
             return false
           end)
@@ -6140,7 +6050,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perception)" then return true end
             return false
           end)
@@ -6160,7 +6069,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perception)" then return true end
             return false
           end)
@@ -6188,7 +6096,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Act))" then return true end
             return false
           end)
@@ -6208,7 +6115,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Act))" then return true end
             return false
           end)
@@ -6236,7 +6142,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Comedy))" then return true end
             return false
           end)
@@ -6256,7 +6161,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Comedy))" then return true end
             return false
           end)
@@ -6284,7 +6188,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Dance))" then return true end
             return false
           end)
@@ -6304,7 +6207,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Dance))" then return true end
             return false
           end)
@@ -6332,7 +6234,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Keyboard Instruments))" then return true end
             return false
           end)
@@ -6352,7 +6253,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Keyboard Instruments))" then return true end
             return false
           end)
@@ -6380,7 +6280,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Oratory))" then return true end
             return false
           end)
@@ -6400,7 +6299,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Oratory))" then return true end
             return false
           end)
@@ -6428,7 +6326,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Percussion Instruments))" then return true end
             return false
           end)
@@ -6448,7 +6345,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Percussion Instruments))" then return true end
             return false
           end)
@@ -6476,7 +6372,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Sing))" then return true end
             return false
           end)
@@ -6496,7 +6391,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Sing))" then return true end
             return false
           end)
@@ -6524,7 +6418,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (String Instruments))" then return true end
             return false
           end)
@@ -6544,7 +6437,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (String Instruments))" then return true end
             return false
           end)
@@ -6572,7 +6464,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Untrained))" then return true end
             return false
           end)
@@ -6592,7 +6483,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Untrained))" then return true end
             return false
           end)
@@ -6620,7 +6510,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Wind Instruments))" then return true end
             return false
           end)
@@ -6640,7 +6529,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Perform (Wind Instruments))" then return true end
             return false
           end)
@@ -6668,7 +6556,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Architect))" then return true end
             return false
           end)
@@ -6688,7 +6575,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Architect))" then return true end
             return false
           end)
@@ -6716,7 +6602,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Baker))" then return true end
             return false
           end)
@@ -6736,7 +6621,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Baker))" then return true end
             return false
           end)
@@ -6764,7 +6648,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Barrister))" then return true end
             return false
           end)
@@ -6784,7 +6667,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Barrister))" then return true end
             return false
           end)
@@ -6812,7 +6694,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Brewer))" then return true end
             return false
           end)
@@ -6832,7 +6713,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Brewer))" then return true end
             return false
           end)
@@ -6860,7 +6740,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Butcher))" then return true end
             return false
           end)
@@ -6880,7 +6759,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Butcher))" then return true end
             return false
           end)
@@ -6908,7 +6786,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Clerk))" then return true end
             return false
           end)
@@ -6928,7 +6805,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Clerk))" then return true end
             return false
           end)
@@ -6956,7 +6832,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Cook))" then return true end
             return false
           end)
@@ -6976,7 +6851,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Cook))" then return true end
             return false
           end)
@@ -7004,7 +6878,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Courtesan))" then return true end
             return false
           end)
@@ -7024,7 +6897,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Courtesan))" then return true end
             return false
           end)
@@ -7052,7 +6924,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Driver))" then return true end
             return false
           end)
@@ -7072,7 +6943,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Driver))" then return true end
             return false
           end)
@@ -7100,7 +6970,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Engineer))" then return true end
             return false
           end)
@@ -7120,7 +6989,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Engineer))" then return true end
             return false
           end)
@@ -7148,7 +7016,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Farmer))" then return true end
             return false
           end)
@@ -7168,7 +7035,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Farmer))" then return true end
             return false
           end)
@@ -7196,7 +7062,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Fisherman))" then return true end
             return false
           end)
@@ -7216,7 +7081,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Fisherman))" then return true end
             return false
           end)
@@ -7244,7 +7108,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Gambler))" then return true end
             return false
           end)
@@ -7264,7 +7127,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Gambler))" then return true end
             return false
           end)
@@ -7292,7 +7154,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Gardener))" then return true end
             return false
           end)
@@ -7312,7 +7173,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Gardener))" then return true end
             return false
           end)
@@ -7340,7 +7200,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Herbalist))" then return true end
             return false
           end)
@@ -7360,7 +7219,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Herbalist))" then return true end
             return false
           end)
@@ -7388,7 +7246,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Innkeeper))" then return true end
             return false
           end)
@@ -7408,7 +7265,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Innkeeper))" then return true end
             return false
           end)
@@ -7436,7 +7292,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Librarian))" then return true end
             return false
           end)
@@ -7456,7 +7311,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Librarian))" then return true end
             return false
           end)
@@ -7484,7 +7338,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Merchant))" then return true end
             return false
           end)
@@ -7504,7 +7357,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Merchant))" then return true end
             return false
           end)
@@ -7532,7 +7384,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Midwife))" then return true end
             return false
           end)
@@ -7552,7 +7403,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Midwife))" then return true end
             return false
           end)
@@ -7580,7 +7430,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Miller))" then return true end
             return false
           end)
@@ -7600,7 +7449,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Miller))" then return true end
             return false
           end)
@@ -7628,7 +7476,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Miner))" then return true end
             return false
           end)
@@ -7648,7 +7495,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Miner))" then return true end
             return false
           end)
@@ -7676,7 +7522,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Porter))" then return true end
             return false
           end)
@@ -7696,7 +7541,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Porter))" then return true end
             return false
           end)
@@ -7724,7 +7568,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Sailor))" then return true end
             return false
           end)
@@ -7744,7 +7587,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Sailor))" then return true end
             return false
           end)
@@ -7772,7 +7614,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Scribe))" then return true end
             return false
           end)
@@ -7792,7 +7633,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Scribe))" then return true end
             return false
           end)
@@ -7820,7 +7660,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Shepherd))" then return true end
             return false
           end)
@@ -7840,7 +7679,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Shepherd))" then return true end
             return false
           end)
@@ -7868,7 +7706,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Soldier))" then return true end
             return false
           end)
@@ -7888,7 +7725,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Soldier))" then return true end
             return false
           end)
@@ -7916,7 +7752,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Stable Master))" then return true end
             return false
           end)
@@ -7936,7 +7771,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Stable Master))" then return true end
             return false
           end)
@@ -7964,7 +7798,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Tanner))" then return true end
             return false
           end)
@@ -7984,7 +7817,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Tanner))" then return true end
             return false
           end)
@@ -8012,7 +7844,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Trapper))" then return true end
             return false
           end)
@@ -8032,7 +7863,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Trapper))" then return true end
             return false
           end)
@@ -8060,7 +7890,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Woodcutter))" then return true end
             return false
           end)
@@ -8080,7 +7909,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Woodcutter))" then return true end
             return false
           end)
@@ -8108,7 +7936,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Ride)" then return true end
             return false
           end)
@@ -8128,7 +7955,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Ride)" then return true end
             return false
           end)
@@ -8156,7 +7982,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Sense Motive)" then return true end
             return false
           end)
@@ -8176,7 +8001,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Sense Motive)" then return true end
             return false
           end)
@@ -8204,7 +8028,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Sleight of Hand)" then return true end
             return false
           end)
@@ -8224,7 +8047,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Sleight of Hand)" then return true end
             return false
           end)
@@ -8252,7 +8074,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Spellcraft)" then return true end
             return false
           end)
@@ -8272,7 +8093,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Spellcraft)" then return true end
             return false
           end)
@@ -8300,7 +8120,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Stealth)" then return true end
             return false
           end)
@@ -8320,7 +8139,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Stealth)" then return true end
             return false
           end)
@@ -8348,7 +8166,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Survival)" then return true end
             return false
           end)
@@ -8368,7 +8185,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Survival)" then return true end
             return false
           end)
@@ -8396,7 +8212,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Swim)" then return true end
             return false
           end)
@@ -8416,7 +8231,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Swim)" then return true end
             return false
           end)
@@ -8444,7 +8258,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Use Magic Device)" then return true end
             return false
           end)
@@ -8464,7 +8277,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Use Magic Device)" then return true end
             return false
           end)

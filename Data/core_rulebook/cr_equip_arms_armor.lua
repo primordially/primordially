@@ -2802,7 +2802,6 @@ DefineEquipment({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Tower Shield Proficiency" then return true end
             return false
           end)
@@ -2819,7 +2818,6 @@ DefineEquipment({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Tower Shield Proficiency" then return true end
             return false
           end))
@@ -7039,7 +7037,6 @@ CopyEquipment("Longsword (Base)", {
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Improved Sunder" then return true end
             return false
           end)

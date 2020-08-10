@@ -63,7 +63,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Nimble Moves" then return true end
         return false
       end)
@@ -230,7 +229,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Arcane Armor Training" then return true end
         return false
       end)
@@ -241,7 +239,6 @@ DefineAbility({
     function (character, item)
       return (character.IsProficientWithArmorType("Medium")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Armor Proficiency (Medium)" then return true end
         return false
       end)
@@ -283,7 +280,6 @@ DefineAbility({
     function (character, item)
       return (character.IsProficientWithArmorType("Light")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Armor Proficiency (Light)" then return true end
         return false
       end)
@@ -365,7 +361,6 @@ DefineAbility({
     function (character, item)
       return (character.IsProficientWithArmorType("Medium")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Armor Proficiency (Medium)" then return true end
         return false
       end)
@@ -425,7 +420,6 @@ DefineAbility({
     function (character, item)
       return (character.IsProficientWithArmorType("Light")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Armor Proficiency (Light)" then return true end
         return false
       end)
@@ -483,7 +477,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Spell Focus (Conjuration)" then return true end
         return false
       end)
@@ -509,7 +502,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Critical Focus" then return true end
         return false
       end)
@@ -559,7 +551,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Critical Focus" then return true end
         return false
       end)
@@ -659,7 +650,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
@@ -1021,7 +1011,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Critical Focus" then return true end
         return false
       end)
@@ -1057,7 +1046,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Weapon Focus" then return true end
         return false
       end)
@@ -1134,7 +1122,6 @@ DefineAbility({
     function (character, item)
       return 4 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Dazzling Display" then return true end
         if ability.Name == "Greater Weapon Focus" then return true end
         if ability.Name == "Shatter Defenses" then return true end
@@ -1166,7 +1153,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Critical Focus" then return true end
         return false
       end)
@@ -1253,7 +1239,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Unarmed Strike" then return true end
         return false
       end)
@@ -1314,7 +1299,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Endurance" then return true end
         return false
       end)
@@ -1403,7 +1387,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Two-Weapon Fighting" then return true end
         return false
       end)
@@ -1559,7 +1542,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Critical Focus" then return true end
         if ability.Name == "Tiring Critical" then return true end
         return false
@@ -1895,7 +1877,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Point-Blank Shot" then return true end
         return false
       end)
@@ -1977,7 +1958,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Unarmed Strike" then return true end
         if ability.Name == "Scorpion Style" then return true end
         return false
@@ -2007,7 +1987,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Cleave" then return true end
         if ability.Name == "Power Attack" then return true end
         return false
@@ -2074,7 +2053,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Bull Rush" then return true end
         if ability.Name == "Power Attack" then return true end
         return false
@@ -2116,7 +2094,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Combat Expertise" then return true end
         if ability.Name == "Improved Disarm" then return true end
         return false
@@ -2149,7 +2126,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Combat Expertise" then return true end
         if ability.Name == "Improved Feint" then return true end
         return false
@@ -2191,7 +2167,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Grapple" then return true end
         if ability.Name == "Improved Unarmed Strike" then return true end
         return false
@@ -2233,7 +2208,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Overrun" then return true end
         if ability.Name == "Power Attack" then return true end
         return false
@@ -2266,7 +2240,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Penetrating Strike" then return true end
         if ability.Name == "Weapon Focus" then return true end
         return false
@@ -2314,7 +2287,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Shield Focus" then return true end
         return false
       end)
@@ -2322,7 +2294,6 @@ DefineAbility({
     function (character, item)
       return (character.IsProficientWithShieldType("Buckler")) and (character.IsProficientWithShieldType("Light")) and (character.IsProficientWithShieldType("Heavy")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Shield Proficiency" then return true end
         return false
       end)
@@ -2370,7 +2341,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Spell Focus" then return true end
         return false
       end)
@@ -2396,7 +2366,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Spell Penetration" then return true end
         return false
       end)
@@ -2431,7 +2400,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Sunder" then return true end
         if ability.Name == "Power Attack" then return true end
         return false
@@ -2473,7 +2441,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Combat Expertise" then return true end
         if ability.Name == "Improved Trip" then return true end
         return false
@@ -2515,7 +2482,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Two-Weapon Fighting" then return true end
         if ability.Name == "Two-Weapon Fighting" then return true end
         return false
@@ -2548,7 +2514,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Vital Strike" then return true end
         if ability.Name == "Vital Strike" then return true end
         return false
@@ -2594,7 +2559,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Weapon Focus" then return true end
         return false
       end)
@@ -2642,7 +2606,6 @@ DefineAbility({
     function (character, item)
       return 3 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Greater Weapon Focus" then return true end
         if ability.Name == "Weapon Focus" then return true end
         if ability.Name == "Weapon Specialization" then return true end
@@ -2721,7 +2684,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
@@ -2881,7 +2843,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Combat Expertise" then return true end
         return false
       end)
@@ -2936,7 +2897,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Combat Expertise" then return true end
         return false
       end)
@@ -2976,7 +2936,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Unarmed Strike" then return true end
         return false
       end)
@@ -3006,7 +2965,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Great Fortitude" then return true end
         return false
       end)
@@ -3057,7 +3015,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Iron Will" then return true end
         return false
       end)
@@ -3083,7 +3040,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Lightning Reflexes" then return true end
         return false
       end)
@@ -3119,7 +3075,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
@@ -3152,7 +3107,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Point-Blank Shot" then return true end
         if ability.Name == "Precise Shot" then return true end
         return false
@@ -3185,7 +3139,6 @@ DefineAbility({
     function (character, item)
       return (character.IsProficientWithShieldType("Buckler")) and (character.IsProficientWithShieldType("Light")) and (character.IsProficientWithShieldType("Heavy")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Shield Proficiency" then return true end
         return false
       end)
@@ -3222,7 +3175,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
@@ -3265,7 +3217,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Combat Expertise" then return true end
         return false
       end)
@@ -3304,7 +3255,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Two-Weapon Fighting" then return true end
         return false
       end)
@@ -3352,7 +3302,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Vital Strike" then return true end
         return false
       end)
@@ -3381,7 +3330,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Catch Off-Guard" then return true end
         if ability.Name == "Throw Anything" then return true end
         return false
@@ -3539,7 +3487,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Dodge" then return true end
         if ability.Name == "Wind Stance" then return true end
         return false
@@ -3625,7 +3572,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Point-Blank Shot" then return true end
         if ability.Name == "Rapid Shot" then return true end
         return false
@@ -3672,7 +3618,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Martial Weapon Proficiency Output" then return true end
         return false
       end))
@@ -3764,7 +3709,6 @@ DefineAbility({
     function (character, item)
       return 3 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Unarmed Strike" then return true end
         if ability.Name == "Gorgon's Fist" then return true end
         if ability.Name == "Scorpion Style" then return true end
@@ -3804,7 +3748,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Dodge" then return true end
         return false
       end)
@@ -3833,7 +3776,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Mounted Combat" then return true end
         return false
       end)
@@ -3946,7 +3888,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Weapon Focus" then return true end
         return false
       end)
@@ -4010,7 +3951,6 @@ DefineAbility({
     function (character, item)
       return 3 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Precise Shot" then return true end
         if ability.Name == "Point-Blank Shot" then return true end
         if ability.Name == "Precise Shot" then return true end
@@ -4201,7 +4141,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Point-Blank Shot" then return true end
         return false
       end)
@@ -4312,7 +4251,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Point-Blank Shot" then return true end
         return false
       end)
@@ -4342,7 +4280,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Mounted Combat" then return true end
         return false
       end)
@@ -4391,7 +4328,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Unarmed Strike" then return true end
         return false
       end)
@@ -4501,7 +4437,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Weapon Focus" then return true end
         if ability.Name == "Dazzling Display" then return true end
         return false
@@ -4549,7 +4484,6 @@ DefineAbility({
     function (character, item)
       return (character.IsProficientWithShieldType("Buckler")) and (character.IsProficientWithShieldType("Light")) and (character.IsProficientWithShieldType("Heavy")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Shield Proficiency" then return true end
         return false
       end)
@@ -4611,7 +4545,6 @@ DefineAbility({
     function (character, item)
       return 3 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Shield Bash" then return true end
         if ability.Name == "Shield Slam" then return true end
         if ability.Name == "Two-Weapon Fighting" then return true end
@@ -4621,7 +4554,6 @@ DefineAbility({
     function (character, item)
       return (character.IsProficientWithShieldType("Buckler")) and (character.IsProficientWithShieldType("Light")) and (character.IsProficientWithShieldType("Heavy")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Shield Proficiency" then return true end
         return false
       end)
@@ -4676,7 +4608,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Shield Bash" then return true end
         if ability.Name == "Two-Weapon Fighting" then return true end
         return false
@@ -4685,7 +4616,6 @@ DefineAbility({
     function (character, item)
       return (character.IsProficientWithShieldType("Buckler")) and (character.IsProficientWithShieldType("Light")) and (character.IsProficientWithShieldType("Heavy")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Shield Proficiency" then return true end
         return false
       end)
@@ -4714,7 +4644,6 @@ DefineAbility({
     function (character, item)
       return 3 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Dodge" then return true end
         if ability.Name == "Mobility" then return true end
         if ability.Name == "Point-Blank Shot" then return true end
@@ -4748,7 +4677,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Critical Focus" then return true end
         return false
       end)
@@ -4859,7 +4787,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Deflect Arrows" then return true end
         if ability.Name == "Improved Unarmed Strike" then return true end
         return false
@@ -4969,7 +4896,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Disruptive" then return true end
         return false
       end)
@@ -4998,7 +4924,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Mounted Combat" then return true end
         if ability.Name == "Ride-By Attack" then return true end
         return false
@@ -5028,7 +4953,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Dodge" then return true end
         if ability.Name == "Mobility" then return true end
         return false
@@ -5064,7 +4988,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Critical Focus" then return true end
         return false
       end)
@@ -5094,7 +5017,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Combat Reflexes" then return true end
         return false
       end)
@@ -5217,7 +5139,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Critical Focus" then return true end
         if ability.Name == "Staggering Critical" then return true end
         return false
@@ -5269,7 +5190,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Ability Focus (Stunning Fist)" then return true end
             return false
           end)
@@ -5301,7 +5221,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Unarmed Strike" then return true end
         return false
       end)
@@ -5359,7 +5278,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Critical Focus" then return true end
         return false
       end)
@@ -5438,7 +5356,6 @@ DefineAbility({
     function (character, item)
       return (character.IsProficientWithShieldType("Buckler")) and (character.IsProficientWithShieldType("Light")) and (character.IsProficientWithShieldType("Heavy")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Shield Proficiency" then return true end
         return false
       end)
@@ -5464,7 +5381,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Mounted Combat" then return true end
         return false
       end)
@@ -5546,7 +5462,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Two-Weapon Fighting" then return true end
         return false
       end)
@@ -5616,7 +5531,6 @@ DefineAbility({
     function (character, item)
       return 3 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Double Slice" then return true end
         if ability.Name == "Improved Two-Weapon Fighting" then return true end
         if ability.Name == "Two-Weapon Fighting" then return true end
@@ -5650,7 +5564,6 @@ DefineAbility({
     function (character, item)
       return 3 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Mounted Combat" then return true end
         if ability.Name == "Power Attack" then return true end
         if ability.Name == "Improved Bull Rush" then return true end
@@ -5788,7 +5701,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Weapon Focus" then return true end
         return false
       end)
@@ -5817,7 +5729,6 @@ DefineAbility({
     function (character, item)
       return 4 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Combat Expertise" then return true end
         if ability.Name == "Dodge" then return true end
         if ability.Name == "Mobility" then return true end
@@ -5876,7 +5787,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Dodge" then return true end
         return false
       end)

@@ -54,7 +54,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Power Attack" then return true end
         if ability.Name == "Improved Bull Rush" then return true end
         return false
@@ -88,7 +87,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Craft Magic Arms and Armor" then return true end
         if ability.Name == "Craft Wondrous Item" then return true end
         return false

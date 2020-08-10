@@ -10,7 +10,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Act" then return true end
         return false
       end)
@@ -36,7 +35,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Act" then return true end
         return false
       end)
@@ -62,7 +60,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Comedy" then return true end
         return false
       end)
@@ -88,7 +85,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Comedy" then return true end
         return false
       end)
@@ -114,7 +110,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Dance" then return true end
         return false
       end)
@@ -140,7 +135,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Dance" then return true end
         return false
       end)
@@ -166,7 +160,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Keyboard Instruments" then return true end
         return false
       end)
@@ -192,7 +185,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Keyboard Instruments" then return true end
         return false
       end)
@@ -218,7 +210,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Oratory" then return true end
         if ability.Name == "Skald Versatile Performance ~ Oratory" then return true end
         return false
@@ -245,7 +236,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Oratory" then return true end
         if ability.Name == "Skald Versatile Performance ~ Oratory" then return true end
         return false
@@ -272,7 +262,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Percussion Instruments" then return true end
         if ability.Name == "Skald Versatile Performance ~ Percussion Instruments" then return true end
         return false
@@ -299,7 +288,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Percussion Instruments" then return true end
         if ability.Name == "Skald Versatile Performance ~ Percussion Instruments" then return true end
         return false
@@ -326,7 +314,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Sing" then return true end
         if ability.Name == "Skald Versatile Performance ~ Sing" then return true end
         return false
@@ -353,7 +340,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Sing" then return true end
         if ability.Name == "Skald Versatile Performance ~ Sing" then return true end
         return false
@@ -380,7 +366,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ String Instruments" then return true end
         if ability.Name == "Skald Versatile Performance ~ String Instruments" then return true end
         return false
@@ -407,7 +392,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ String Instruments" then return true end
         if ability.Name == "Skald Versatile Performance ~ String Instruments" then return true end
         return false
@@ -434,7 +418,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Wind Instruments" then return true end
         if ability.Name == "Skald Versatile Performance ~ Wind Instruments" then return true end
         return false
@@ -461,7 +444,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Versatile Performance ~ Wind Instruments" then return true end
         if ability.Name == "Skald Versatile Performance ~ Wind Instruments" then return true end
         return false
@@ -486,7 +468,6 @@ DefineSkill({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Mount ~ Samurai" then return true end
         return false
       end)
@@ -587,7 +568,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Fortune-teller))" then return true end
             return false
           end)
@@ -607,7 +587,6 @@ ModifySkill({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Skill Focus (Profession (Fortune-teller))" then return true end
             return false
           end)

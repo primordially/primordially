@@ -1664,7 +1664,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Ability Focus (Vortex)" then return true end
             return false
           end)
@@ -3338,7 +3337,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
             return false
           end)
@@ -3443,7 +3441,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
             return false
           end)
@@ -3548,7 +3545,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
             return false
           end)
@@ -3653,7 +3649,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
             return false
           end)
@@ -3758,7 +3753,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
             return false
           end)
@@ -3863,7 +3857,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
             return false
           end)
@@ -3968,7 +3961,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
             return false
           end)
@@ -4073,7 +4065,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
             return false
           end)
@@ -4178,7 +4169,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
             return false
           end)
@@ -4283,7 +4273,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
             return false
           end)

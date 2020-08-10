@@ -6730,7 +6730,6 @@ DefineEquipment({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "All Martial Weapon Proficiencies" then return true end
             return false
           end) or (character.Variables["BardicPerformanceLVL"] >= 1)
@@ -6743,7 +6742,6 @@ DefineEquipment({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "All Martial Weapon Proficiencies" then return true end
             return false
           end) or (character.Variables["BardicPerformanceLVL"] >= 1)
@@ -6783,7 +6781,6 @@ DefineEquipment({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "All Martial Weapon Proficiencies" then return true end
             return false
           end) or (character.Variables["BardicPerformanceLVL"] >= 1)
@@ -6796,7 +6793,6 @@ DefineEquipment({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "All Martial Weapon Proficiencies" then return true end
             return false
           end) or (character.Variables["BardicPerformanceLVL"] >= 1)
@@ -8999,7 +8995,6 @@ DefineEquipment({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric ~ Channel Negative Energy" then return true end
             return false
           end)
@@ -9043,7 +9038,6 @@ DefineEquipment({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric ~ Channel Positive Energy" then return true end
             return false
           end)
@@ -9060,7 +9054,6 @@ DefineEquipment({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Channel Positive Energy ~ Paladin" then return true end
             return false
           end)
@@ -9747,7 +9740,6 @@ DefineEquipment({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Stunning Fist" then return true end
             return false
           end)

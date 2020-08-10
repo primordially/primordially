@@ -43,7 +43,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -175,7 +174,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -314,7 +312,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -451,7 +448,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -594,7 +590,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -737,7 +732,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -878,7 +872,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -1028,7 +1021,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -1166,7 +1158,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -1311,7 +1302,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -1453,7 +1443,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -1596,7 +1585,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -1740,7 +1728,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -1882,7 +1869,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -2024,7 +2010,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -2159,7 +2144,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -2294,7 +2278,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -2424,7 +2407,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -2562,7 +2544,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -2698,7 +2679,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -2844,7 +2824,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -2983,7 +2962,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -3131,7 +3109,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -3384,7 +3361,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -3525,7 +3501,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -3679,7 +3654,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -3845,7 +3819,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -3998,7 +3971,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -4165,7 +4137,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -4326,7 +4297,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -4488,7 +4458,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -4638,7 +4607,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -4814,7 +4782,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -4969,7 +4936,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -5106,7 +5072,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -5265,7 +5230,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)
@@ -5415,7 +5379,6 @@ DefineRace({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Companion Advancement" then return true end
             return false
           end)

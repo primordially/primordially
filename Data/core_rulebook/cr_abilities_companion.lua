@@ -2335,7 +2335,6 @@ DefineAbility({
       function (character, item)
         return character.HasAnyAbility(function (ability)
           if ability.Category ~= "Special Ability" then return false end
-          if ability.IsAnyType() then return true end
           if ability.Name == "Animal Trick ~ Attack II" then return true end
           return false
         end)
@@ -2351,7 +2350,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Animal Trick ~ Attack II" then return true end
             return false
           end))
@@ -2365,7 +2363,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Animal Trick ~ Attack II" then return true end
             return false
           end)
@@ -2389,7 +2386,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Animal Trick ~ Attack" then return true end
         return false
       end)
@@ -3973,7 +3969,6 @@ DefineAbility({
     function (character, item)
       return (character.IsProficientWithArmorType("Light")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Armor Proficiency (Light)" then return true end
         return false
       end)
@@ -4004,7 +3999,6 @@ DefineAbility({
     function (character, item)
       return (character.IsProficientWithArmorType("Medium")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Armor Proficiency (Medium)" then return true end
         return false
       end)
@@ -4190,7 +4184,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
@@ -4321,7 +4314,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
@@ -4421,7 +4413,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Dodge" then return true end
         return false
       end)
@@ -4537,7 +4528,6 @@ DefineAbility({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Dodge" then return true end
         if ability.Name == "Mobility" then return true end
         return false

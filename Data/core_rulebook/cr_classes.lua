@@ -1606,7 +1606,6 @@ DefineClass({
             function (character, item)
               return character.HasAnyAbility(function (ability)
                 if ability.Category ~= "Special Ability" then return false end
-                if ability.IsAnyType() then return true end
                 if ability.Name == "Druid Domain ~ Air" then return true end
                 return false
               end)
@@ -1626,7 +1625,6 @@ DefineClass({
             function (character, item)
               return character.HasAnyAbility(function (ability)
                 if ability.Category ~= "Special Ability" then return false end
-                if ability.IsAnyType() then return true end
                 if ability.Name == "Druid Domain ~ Animal" then return true end
                 return false
               end)
@@ -1646,7 +1644,6 @@ DefineClass({
             function (character, item)
               return character.HasAnyAbility(function (ability)
                 if ability.Category ~= "Special Ability" then return false end
-                if ability.IsAnyType() then return true end
                 if ability.Name == "Druid Domain ~ Earth" then return true end
                 return false
               end)
@@ -1666,7 +1663,6 @@ DefineClass({
             function (character, item)
               return character.HasAnyAbility(function (ability)
                 if ability.Category ~= "Special Ability" then return false end
-                if ability.IsAnyType() then return true end
                 if ability.Name == "Druid Domain ~ Fire" then return true end
                 return false
               end)
@@ -1686,7 +1682,6 @@ DefineClass({
             function (character, item)
               return character.HasAnyAbility(function (ability)
                 if ability.Category ~= "Special Ability" then return false end
-                if ability.IsAnyType() then return true end
                 if ability.Name == "Druid Domain ~ Plant" then return true end
                 return false
               end)
@@ -1706,7 +1701,6 @@ DefineClass({
             function (character, item)
               return character.HasAnyAbility(function (ability)
                 if ability.Category ~= "Special Ability" then return false end
-                if ability.IsAnyType() then return true end
                 if ability.Name == "Druid Domain ~ Water" then return true end
                 return false
               end)
@@ -1726,7 +1720,6 @@ DefineClass({
             function (character, item)
               return character.HasAnyAbility(function (ability)
                 if ability.Category ~= "Special Ability" then return false end
-                if ability.IsAnyType() then return true end
                 if ability.Name == "Druid Domain ~ Weather" then return true end
                 return false
               end)
@@ -4630,7 +4623,6 @@ DefineClass({
     function (character, item)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Point-Blank Shot" then return true end
         if ability.Name == "Precise Shot" then return true end
         return false
@@ -4639,7 +4631,6 @@ DefineClass({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Weapon Focus (Longbow)" then return true end
         if ability.Name == "Weapon Focus (Shortbow)" then return true end
         return false
@@ -5203,7 +5194,6 @@ DefineClass({
     function (character, item)
       return character.Facts["ABILITY"]["QualifiedForDragonDisciple"] == "true" or any(character.Classes, function (class) return class.Memorize == false end) and any(character.Classes, function (class) class.IsType("Arcane") end) and not (((character.GetLevelOfClass("Sorcerer") >= 1)) >= 1) or ((character.GetLevelOfClass("Sorcerer") >= 1)) >= 1 and character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Draconic" then return true end
         return false
       end)
@@ -5403,7 +5393,6 @@ DefineClass({
     function (character, item)
       return 3 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Dodge" then return true end
         if ability.Name == "Mobility" then return true end
         if ability.Name == "Weapon Finesse" then return true end
@@ -5548,7 +5537,6 @@ DefineClass({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Internal" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Weapon Prof ~ Martial" then return true end
         return false
       end)
@@ -5761,7 +5749,6 @@ DefineClass({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Skill Focus (Knowledge%)" then return true end
         return false
       end)
@@ -5769,7 +5756,6 @@ DefineClass({
     function (character, item)
       return 3 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "TYPE=Metamagic" then return true end
         if ability.Name == "TYPE=ItemCreation" then return true end
         return false
@@ -6363,7 +6349,6 @@ DefineClass({
     function (character, item)
       return 3 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Combat Reflexes" then return true end
         if ability.Name == "Dodge" then return true end
         if ability.Name == "Mobility" then return true end
