@@ -14,55 +14,55 @@ ModifyAbility({
   Definitions={
     {
       Name="BastardSwordExoticUse",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="BypassSizeMods",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DwarvenWaraxeExoticUse",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ActivateEnlargePerson",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ActivateReducePerson",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Pool_Traits",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="IsPC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Pool_Temp_Feat",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DisableArmorBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DisableShieldBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Pool_CombatFeat",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SPELLFAILURE_Total",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="HasWeaponFinesseFeat",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -138,11 +138,11 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponFocusToHit",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="GreaterWeaponFocusToHit",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -195,7 +195,7 @@ DefineAbility({
   Definitions={
     {
       Name="NegatedAgePenalty",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -255,11 +255,11 @@ ModifyAbility({
   Definitions={
     {
       Name="Linguisitcs_NumLanguages",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="FightingDefensivelyAttackPenalty",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -302,7 +302,7 @@ DefineAbility({
   Definitions={
     {
       Name="Feat_Mobility_DodgeBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1461,43 +1461,43 @@ ModifyAbility({
   Definitions={
     {
       Name="StoneskinActivate",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SizeIncrease",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ActivateTempBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="InspireCourageBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="InspireGreatnessActivate",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AuraOfResolveActivate",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AuraOfCourageActivate",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AuraOfJusticeActivate",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AuraOfRighteousnessActivate",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="TempBonus_BlessWeapon",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -4056,7 +4056,7 @@ ModifyAbility({
   Definitions={
     {
       Name="DomainNotAllowed",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -4090,7 +4090,7 @@ DefineAbility({
   Definitions={
     {
       Name="NegLevels",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -4142,43 +4142,43 @@ DefineAbility({
   Definitions={
     {
       Name="ShieldBashingDieSizeStep",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="NaturalShieldReach",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ShieldBashAttackBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ShieldDamageDice",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ShieldDamageSize",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ShieldBashDamageBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ShieldThreatRange",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ShieldBashAttackTotal",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="InterativeAttack",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ShieldCritMult",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -5279,7 +5279,7 @@ ModifyAbility({
   Definitions={
     {
       Name="EnlargePerson_GrappleBonusValue",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -5292,7 +5292,7 @@ ModifyAbility({
   Definitions={
     {
       Name="EnlargePerson_StrBonusValue",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -5305,7 +5305,7 @@ ModifyAbility({
   Definitions={
     {
       Name="EnlargePerson_DexBonusValue",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -5318,7 +5318,7 @@ ModifyAbility({
   Definitions={
     {
       Name="EnlargePerson_ACBonusValue",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -5379,7 +5379,7 @@ DefineAbility({
   Definitions={
     {
       Name="DamageSizeAdjustment",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -8848,7 +8848,7 @@ DefineAbility({
   Definitions={
     {
       Name="BypassTraitRestriction",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -8882,7 +8882,7 @@ DefineAbility({
   Definitions={
     {
       Name="BypassDrawbackRestriction",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -8916,7 +8916,7 @@ DefineAbility({
   Definitions={
     {
       Name="UseWeaponsWithNaturalAttacks",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -10411,7 +10411,7 @@ DefineAbility({
   Definitions={
     {
       Name="RangePenaltyValue",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={

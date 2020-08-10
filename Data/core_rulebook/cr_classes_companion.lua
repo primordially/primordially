@@ -18,15 +18,15 @@ DefineClass({
   Definitions={
     {
       Name="CompanionClassLevel",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AnimalCompanionSkill",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="BaseClassSkillPts",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={

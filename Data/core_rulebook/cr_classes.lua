@@ -35,7 +35,7 @@ DefineClass({
   Definitions={
     {
       Name="BarbarianLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -168,7 +168,7 @@ DefineClass({
   Definitions={
     {
       Name="BarbarianLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -304,11 +304,11 @@ DefineClass({
   Definitions={
     {
       Name="BardLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CasterLevelBLBard",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -632,15 +632,15 @@ DefineClass({
   Definitions={
     {
       Name="ClericLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ClericDomainCount",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CasterLevelBLCleric",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -921,7 +921,7 @@ DefineClass({
       Definitions={
         {
           Name="ClericSkillPts",
-          InitialValue=0,
+          InitialValue="0",
         },
       },
       Bonuses={
@@ -1067,11 +1067,11 @@ DefineClass({
   Definitions={
     {
       Name="DruidLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CasterLevelBLDruid",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1558,7 +1558,7 @@ DefineClass({
   Definitions={
     {
       Name="FighterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1710,19 +1710,19 @@ DefineClass({
   Definitions={
     {
       Name="FlurryOfBlows",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="MonkLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="KiPoolWis",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="MonkFeatQualify",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1814,15 +1814,15 @@ DefineClass({
   Definitions={
     {
       Name="PaladinLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="PaladinDomainCount",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CasterLevelBLPaladin",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -2109,7 +2109,7 @@ DefineClass({
   Definitions={
     {
       Name="PaladinLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -2356,11 +2356,11 @@ DefineClass({
   Definitions={
     {
       Name="RangerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CasterLevelBLRanger",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -2650,7 +2650,7 @@ DefineClass({
       Definitions={
         {
           Name="DisableRangerHuntersBond",
-          InitialValue=0,
+          InitialValue="0",
         },
       },
       Bonuses={
@@ -2682,7 +2682,7 @@ DefineClass({
   Definitions={
     {
       Name="RogueLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -2829,11 +2829,11 @@ DefineClass({
   Definitions={
     {
       Name="SorcererLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CasterLevelBLSorcerer",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -3157,23 +3157,23 @@ DefineClass({
   Definitions={
     {
       Name="DisallowWizardArcaneSchoolArchetype",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="WizardLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SpellMasteryQualify",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Caster_Level_BL_Stripped_Wizard",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CasterLevelBLWizard",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -3727,7 +3727,7 @@ DefineClass({
   Definitions={
     {
       Name="ArcaneArcherLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={
@@ -3939,7 +3939,7 @@ DefineClass({
   Definitions={
     {
       Name="ArcaneTricksterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={
@@ -4177,7 +4177,7 @@ DefineClass({
   Definitions={
     {
       Name="AssassinLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={
@@ -4320,7 +4320,7 @@ DefineClass({
       local count = 0
       local subCondition
       subCondition = function (character)
-        return character.Facts["ABILITIES"]["QualifiedForDragonDisciple"] == "true"
+        return character.Facts["ABILITY"]["QualifiedForDragonDisciple"] == "true"
       end
       if subCondition(character) then
         count = count + 1
@@ -4394,7 +4394,7 @@ DefineClass({
   Definitions={
     {
       Name="DragonDiscipleLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={
@@ -4590,7 +4590,7 @@ DefineClass({
   Definitions={
     {
       Name="DuelistLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={
@@ -4727,7 +4727,7 @@ DefineClass({
   Definitions={
     {
       Name="EldritchKnightLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={
@@ -4949,7 +4949,7 @@ DefineClass({
   Definitions={
     {
       Name="LoremasterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={
@@ -5397,7 +5397,7 @@ DefineClass({
   Definitions={
     {
       Name="PathfinderChroniclerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={
@@ -5543,7 +5543,7 @@ DefineClass({
   Definitions={
     {
       Name="ShadowdancerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={
@@ -5679,11 +5679,11 @@ DefineClass({
   Definitions={
     {
       Name="AdeptLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CasterLevelBLAdept",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={
@@ -6169,7 +6169,7 @@ DefineClass({
   Definitions={
     {
       Name="AristocratLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={
@@ -6356,7 +6356,7 @@ DefineClass({
   Definitions={
     {
       Name="CommonerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={
@@ -6484,7 +6484,7 @@ DefineClass({
   Definitions={
     {
       Name="ExpertLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={

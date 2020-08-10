@@ -14,7 +14,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Pool_AnimalCompanionFeat",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -27,7 +27,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Pool_CompanionLevelIncreaseChoice",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -40,7 +40,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Pool_CompanionStatIncrease",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53,7 +53,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Pool_CompanionSkill",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -66,11 +66,11 @@ DefineAbility({
   Definitions={
     {
       Name="IntelligenceLockNumber",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DisableIntLock",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1172,7 +1172,7 @@ DefineAbility({
   Definitions={
     {
       Name="BonusTricks",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1296,7 +1296,7 @@ DefineAbility({
   Definitions={
     {
       Name="Multiattack",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -1760,7 +1760,7 @@ DefineAbility({
   Definitions={
     {
       Name="CompanionAdvancement",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -3325,7 +3325,7 @@ DefineAbility({
   Definitions={
     {
       Name="DiseaseDC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -3372,15 +3372,15 @@ DefineAbility({
   Definitions={
     {
       Name="DeathRollDice",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DeathRollDie",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DeathRollDamage",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -3430,7 +3430,7 @@ DefineAbility({
   Definitions={
     {
       Name="HoldBreathRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -3494,11 +3494,11 @@ DefineAbility({
   Definitions={
     {
       Name="NaturalAttacks",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="TailSlapAttacks",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={

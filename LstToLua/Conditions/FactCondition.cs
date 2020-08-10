@@ -39,6 +39,10 @@ namespace Primordially.LstToLua.Conditions
             }
 
             var type = parts[1].Value;
+            if (type == "ABILITIES")
+            {
+                type = "ABILITY";
+            }
             var (ident, requiredValue) = parts[2].SplitTuple('=');
             return new FactCondition(invert, type, ident.Value, requiredValue.Value);
         }

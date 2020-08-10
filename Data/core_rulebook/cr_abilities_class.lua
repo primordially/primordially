@@ -14,23 +14,23 @@ ModifyAbility({
   Definitions={
     {
       Name="Divine_Bond_Mount",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Hunters_Bond_Animal_Companion",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="BypassClassAlignment_All_Class",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="BypassProhibitSpellAlignment_Restriction",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Pool_Rage_Power",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -57,7 +57,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ProhibitSpell_Alignment_Good",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -112,7 +112,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ProhibitSpell_Alignment_Evil",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -167,7 +167,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ProhibitSpell_Alignment_Lawful",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -222,7 +222,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ProhibitSpell_Alignment_Chaotic",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -277,7 +277,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Bard",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -290,7 +290,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Cleric",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -303,7 +303,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Druid",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -316,7 +316,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Paladin",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -329,7 +329,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Ranger",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -342,7 +342,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Sorcerer",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -355,7 +355,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Wizard",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -368,7 +368,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Adept",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -381,7 +381,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Bard",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -394,7 +394,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Cleric",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -407,7 +407,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Druid",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -420,7 +420,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Paladin",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -433,7 +433,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Ranger",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -446,7 +446,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Sorcerer",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -459,7 +459,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Wizard",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -472,7 +472,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Adept",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -485,7 +485,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BypassClassAlignment_Barbarian",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -512,7 +512,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BypassClassAlignment_Druid",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -539,7 +539,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BypassClassAlignment_Monk",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -580,7 +580,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BypassClassAlignment_Paladin",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -607,7 +607,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BypassClassAlignment_Arcane_Trickster",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -634,7 +634,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BypassClassAlignment_Assassin",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -661,7 +661,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ClassFeatureDR_ALL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -674,7 +674,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ClassFeatureDR_Silver",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -1106,15 +1106,15 @@ DefineAbility({
   Definitions={
     {
       Name="Barbarian_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="BarbarianClassSelection",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Pool_Barbarian_Class_Selection",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1164,7 +1164,7 @@ DefineAbility({
   Definitions={
     {
       Name="Bard_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1212,7 +1212,7 @@ DefineAbility({
   Definitions={
     {
       Name="Cleric_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1260,7 +1260,7 @@ DefineAbility({
   Definitions={
     {
       Name="Druid_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1308,7 +1308,7 @@ DefineAbility({
   Definitions={
     {
       Name="Fighter_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1356,11 +1356,11 @@ DefineAbility({
   Definitions={
     {
       Name="Monk_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Pool_Monk_Class_Selection",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1410,7 +1410,7 @@ DefineAbility({
   Definitions={
     {
       Name="Paladin_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1458,7 +1458,7 @@ DefineAbility({
   Definitions={
     {
       Name="Ranger_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1506,11 +1506,11 @@ DefineAbility({
   Definitions={
     {
       Name="Rogue_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Pool_Rogue_Class_Selection",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1572,7 +1572,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1620,7 +1620,7 @@ DefineAbility({
   Definitions={
     {
       Name="Wizard_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1656,7 +1656,7 @@ DefineAbility({
   Definitions={
     {
       Name="ArcaneArcher_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1683,7 +1683,7 @@ DefineAbility({
   Definitions={
     {
       Name="ArcaneTrickster_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1710,7 +1710,7 @@ DefineAbility({
   Definitions={
     {
       Name="Assassin_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1737,7 +1737,7 @@ DefineAbility({
   Definitions={
     {
       Name="DragonDisciple_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1764,7 +1764,7 @@ DefineAbility({
   Definitions={
     {
       Name="Duelist_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1791,7 +1791,7 @@ DefineAbility({
   Definitions={
     {
       Name="EldritchKnight_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1818,7 +1818,7 @@ DefineAbility({
   Definitions={
     {
       Name="Loremaster_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1845,7 +1845,7 @@ DefineAbility({
   Definitions={
     {
       Name="MysticTheurge_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1872,7 +1872,7 @@ DefineAbility({
   Definitions={
     {
       Name="PathfinderChronicler_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1899,7 +1899,7 @@ DefineAbility({
   Definitions={
     {
       Name="Shadowdancer_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1926,7 +1926,7 @@ DefineAbility({
   Definitions={
     {
       Name="Adept_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1953,7 +1953,7 @@ DefineAbility({
   Definitions={
     {
       Name="Aristocrat_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -1980,7 +1980,7 @@ DefineAbility({
   Definitions={
     {
       Name="Commoner_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -2007,7 +2007,7 @@ DefineAbility({
   Definitions={
     {
       Name="Expert_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -2034,7 +2034,7 @@ DefineAbility({
   Definitions={
     {
       Name="Warrior_CFP_Level",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -7607,7 +7607,7 @@ DefineAbility({
   Definitions={
     {
       Name="Raging",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -7637,31 +7637,31 @@ DefineAbility({
   Definitions={
     {
       Name="Raging",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RageLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RageDuration",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RageStrBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RageConBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RageSaveBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RageACPenalty",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -7866,11 +7866,11 @@ DefineAbility({
   Definitions={
     {
       Name="RagePowersLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RagePowersPrereqLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -7915,7 +7915,7 @@ DefineAbility({
   Definitions={
     {
       Name="BarbarianTrapSenseLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -7968,11 +7968,11 @@ DefineAbility({
   Definitions={
     {
       Name="BarbarianDR",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="BarbarianDRLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -8895,7 +8895,7 @@ DefineAbility({
   Definitions={
     {
       Name="IncreasedDRCount",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -8951,11 +8951,11 @@ DefineAbility({
   Definitions={
     {
       Name="GuardedStanceACBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="GuardedStanceDuration",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -9256,7 +9256,7 @@ DefineAbility({
   Definitions={
     {
       Name="PowerfulBlowDamageBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -9324,7 +9324,7 @@ DefineAbility({
   Definitions={
     {
       Name="RagingClimberBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -9379,7 +9379,7 @@ DefineAbility({
   Definitions={
     {
       Name="RagingLeaperBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -9434,7 +9434,7 @@ DefineAbility({
   Definitions={
     {
       Name="RagingSwimmerBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -9495,11 +9495,11 @@ DefineAbility({
   Definitions={
     {
       Name="RenewedVigorDice",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RenewedVigorBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -9550,11 +9550,11 @@ DefineAbility({
   Definitions={
     {
       Name="RollingDodgeACBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RollingDodgeDuration",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -9654,7 +9654,7 @@ DefineAbility({
   Definitions={
     {
       Name="StrengthSurgeBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -9697,7 +9697,7 @@ DefineAbility({
   Definitions={
     {
       Name="SuperstitionSaveBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -9740,7 +9740,7 @@ DefineAbility({
   Definitions={
     {
       Name="SurpriseAccuracyAttackBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -9788,7 +9788,7 @@ DefineAbility({
   Definitions={
     {
       Name="SwiftFootCount",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -9853,7 +9853,7 @@ DefineAbility({
   Definitions={
     {
       Name="TerrifyingHowlDC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -9937,11 +9937,11 @@ DefineAbility({
   Definitions={
     {
       Name="BardicKnowledgeSkillBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="BardicKnowledgeLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -10039,11 +10039,11 @@ DefineAbility({
   Definitions={
     {
       Name="BardicPerformanceDuration",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="BardicPerformanceLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -10279,7 +10279,7 @@ DefineAbility({
   Definitions={
     {
       Name="VersatilePerformanceLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -10344,11 +10344,11 @@ DefineAbility({
   Definitions={
     {
       Name="LoreMasterTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="LoreMasterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -10390,7 +10390,7 @@ DefineAbility({
   Definitions={
     {
       Name="JackOfAllTradesLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -10554,11 +10554,11 @@ DefineAbility({
   Definitions={
     {
       Name="FascinateCreatures",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="FascinateDC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -10608,11 +10608,11 @@ DefineAbility({
   Definitions={
     {
       Name="InspireCourageBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="InspireCourageCount",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -10662,11 +10662,11 @@ DefineAbility({
   Definitions={
     {
       Name="InspireCompetenceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="InspireCompetenceCount",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -10716,7 +10716,7 @@ DefineAbility({
   Definitions={
     {
       Name="SuggestionDC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -10784,7 +10784,7 @@ DefineAbility({
   Definitions={
     {
       Name="InspireGreatnessAllies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -10827,7 +10827,7 @@ DefineAbility({
   Definitions={
     {
       Name="SoothingPerformanceLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -10870,7 +10870,7 @@ DefineAbility({
   Definitions={
     {
       Name="FrighteningTuneDC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -10913,7 +10913,7 @@ DefineAbility({
   Definitions={
     {
       Name="InspireHeroicsAllies",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -10956,7 +10956,7 @@ DefineAbility({
   Definitions={
     {
       Name="MassSuggestionDC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -10999,7 +10999,7 @@ DefineAbility({
   Definitions={
     {
       Name="DeadlyPerformanceDC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -12078,15 +12078,15 @@ DefineAbility({
   Definitions={
     {
       Name="DomainLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainPowerTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -12122,15 +12122,15 @@ DefineAbility({
   Definitions={
     {
       Name="ClericChannelEnergyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ClericChannelEnergyTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Pool_Cleric_Channeling",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -12231,19 +12231,19 @@ DefineAbility({
   Definitions={
     {
       Name="ClericChannelPositiveEnergyDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ClericChannelPositiveEnergyDice",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ClericChannelPositiveEnergyDieSize",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ClericChannelPositiveEnergyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -12365,19 +12365,19 @@ DefineAbility({
   Definitions={
     {
       Name="ClericChannelNegativeEnergyDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ClericChannelNegativeEnergyDice",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ClericChannelNegativeEnergyDieSize",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ClericChannelNegativeEnergyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -14090,23 +14090,23 @@ DefineAbility({
   Definitions={
     {
       Name="AirDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAirLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAirAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAirDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAirTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -14184,23 +14184,23 @@ DefineAbility({
   Definitions={
     {
       Name="AnimalDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAnimalLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAnimalDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAnimalTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAnimalAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -14278,23 +14278,23 @@ DefineAbility({
   Definitions={
     {
       Name="ArtificeDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainArtificeLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainArtificeDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainArtificeTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainArtificeAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -14372,23 +14372,23 @@ DefineAbility({
   Definitions={
     {
       Name="ChaosDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainChaosLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainChaosDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainChaosTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainChaosAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -14466,23 +14466,23 @@ DefineAbility({
   Definitions={
     {
       Name="CharmDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainCharmLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainCharmDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainCharmTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainCharmAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -14560,23 +14560,23 @@ DefineAbility({
   Definitions={
     {
       Name="CommunityDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainCommunityLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainCommunityDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainCommunityTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainCommunityAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -14654,23 +14654,23 @@ DefineAbility({
   Definitions={
     {
       Name="DarknessDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDarknessLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDarknessDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDarknessTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDarknessAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -14748,23 +14748,23 @@ DefineAbility({
   Definitions={
     {
       Name="DeathDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDeathLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDeathDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDeathTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDeathAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -14842,23 +14842,23 @@ DefineAbility({
   Definitions={
     {
       Name="DestructionDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDestructionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDestructionDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDestructionTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDestructionAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -14936,23 +14936,23 @@ DefineAbility({
   Definitions={
     {
       Name="EarthDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEarthLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEarthDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEarthTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEarthAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -15030,23 +15030,23 @@ DefineAbility({
   Definitions={
     {
       Name="EvilDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEvilLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEvilDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEvilTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEvilAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -15124,23 +15124,23 @@ DefineAbility({
   Definitions={
     {
       Name="FireDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainFireLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainFireDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainFireTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainFireAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -15218,23 +15218,23 @@ DefineAbility({
   Definitions={
     {
       Name="GloryDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainGloryLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainGloryDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainGloryTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainGloryAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -15319,23 +15319,23 @@ DefineAbility({
   Definitions={
     {
       Name="GoodDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainGoodLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainGoodDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainGoodTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainGoodAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -15413,23 +15413,23 @@ DefineAbility({
   Definitions={
     {
       Name="HealingDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainHealingLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainHealingDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainHealingTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainHealingAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -15507,23 +15507,23 @@ DefineAbility({
   Definitions={
     {
       Name="KnowledgeDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainKnowledgeLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainKnowledgeDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainKnowledgeTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainKnowledgeAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -15601,23 +15601,23 @@ DefineAbility({
   Definitions={
     {
       Name="LawDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLawLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLawDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLawTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLawAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -15695,23 +15695,23 @@ DefineAbility({
   Definitions={
     {
       Name="LiberationDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLiberationLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLiberationDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLiberationTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLiberationAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -15789,23 +15789,23 @@ DefineAbility({
   Definitions={
     {
       Name="LuckDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLuckLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLuckDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLuckTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLuckAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -15883,23 +15883,23 @@ DefineAbility({
   Definitions={
     {
       Name="MadnessDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainMadnessLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainMadnessDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainMadnessTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainMadnessAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -15977,23 +15977,23 @@ DefineAbility({
   Definitions={
     {
       Name="MagicDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainMagicLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainMagicDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainMagicTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainMagicAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -16071,23 +16071,23 @@ DefineAbility({
   Definitions={
     {
       Name="NobilityDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainNobilityLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainNobilityDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainNobilityTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainNobilityAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -16165,23 +16165,23 @@ DefineAbility({
   Definitions={
     {
       Name="PlantDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainPlantLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainPlantDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainPlantTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainPlantAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -16259,27 +16259,27 @@ DefineAbility({
   Definitions={
     {
       Name="ProtectionDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainProtectionSaveBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainProtectionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainProtectionDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainProtectionTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainProtectionAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -16364,23 +16364,23 @@ DefineAbility({
   Definitions={
     {
       Name="ReposeDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainReposeLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainReposeDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainReposeTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainReposeAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -16458,23 +16458,23 @@ DefineAbility({
   Definitions={
     {
       Name="RuneDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainRuneLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainRuneDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainRuneTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainRuneAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -16552,23 +16552,23 @@ DefineAbility({
   Definitions={
     {
       Name="StrengthDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainStrengthLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainStrengthDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainStrengthTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainStrengthAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -16646,23 +16646,23 @@ DefineAbility({
   Definitions={
     {
       Name="SunDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainSunLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainSunDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainSunTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainSunAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -16740,23 +16740,23 @@ DefineAbility({
   Definitions={
     {
       Name="TravelDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainTravelLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainTravelDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainTravelTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainTravelAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -16834,23 +16834,23 @@ DefineAbility({
   Definitions={
     {
       Name="TrickeryDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainTrickeryLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainTrickeryDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainTrickeryTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainTrickeryAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -16928,23 +16928,23 @@ DefineAbility({
   Definitions={
     {
       Name="WarDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWarLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWarDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWarTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWarAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -17022,23 +17022,23 @@ DefineAbility({
   Definitions={
     {
       Name="WaterDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWaterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWaterDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWaterTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWaterAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -17116,23 +17116,23 @@ DefineAbility({
   Definitions={
     {
       Name="WeatherDomain",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWeatherLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWeatherDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWeatherTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWeatherAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -17214,19 +17214,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainAirLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAirAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAirDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAirTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -17387,19 +17387,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainAnimalLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAnimalDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAnimalTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAnimalAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={
@@ -17563,19 +17563,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainArtificeLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainArtificeDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainArtificeTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainArtificeAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -17741,19 +17741,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainChaosLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainChaosDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainChaosTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainChaosAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -17914,19 +17914,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainCharmLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainCharmDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainCharmTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainCharmAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -18087,19 +18087,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainCommunityLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainCommunityDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainCommunityTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainCommunityAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -18260,19 +18260,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainDarknessLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDarknessDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDarknessTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDarknessAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -18440,19 +18440,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainDeathLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDeathDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDeathTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDeathAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -18613,19 +18613,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainDestructionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDestructionDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDestructionTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainDestructionAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -18786,19 +18786,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainEarthLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEarthDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEarthTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEarthAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -18964,19 +18964,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainEvilLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEvilDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEvilTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEvilAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -19137,19 +19137,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainFireLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainFireDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainFireTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainFireAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -19310,19 +19310,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainGloryLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainGloryDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainGloryTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainGloryAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -19495,19 +19495,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainGoodLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainGoodDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainGoodTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainGoodAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -19668,19 +19668,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainHealingLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainHealingDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainHealingTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainHealingAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -19841,19 +19841,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainKnowledgeLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainKnowledgeDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainKnowledgeTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainKnowledgeAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={
@@ -20022,19 +20022,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainLawLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLawDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLawTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLawAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -20195,19 +20195,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainLiberationLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLiberationDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLiberationTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLiberationAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -20368,19 +20368,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainLuckLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLuckDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLuckTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainLuckAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -20541,19 +20541,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainMadnessLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainMadnessDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainMadnessTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainMadnessAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -20714,19 +20714,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainMagicLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainMagicDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainMagicTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainMagicAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -20887,19 +20887,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainNobilityLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainNobilityDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainNobilityTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainNobilityAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -21060,19 +21060,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainPlantLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainPlantDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainPlantTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainPlantAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -21233,23 +21233,23 @@ DefineAbility({
   Definitions={
     {
       Name="DomainProtectionSaveBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainProtectionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainProtectionDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainProtectionTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainProtectionAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -21429,19 +21429,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainReposeLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainReposeDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainReposeTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainReposeAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -21602,19 +21602,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainRuneLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainRuneDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainRuneTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainRuneAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -21782,19 +21782,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainStrengthLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainStrengthDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainStrengthTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainStrengthAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -21955,19 +21955,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainSunLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainSunDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainSunTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainSunAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -22128,19 +22128,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainTravelLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainTravelDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainTravelTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainTravelAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -22308,19 +22308,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainTrickeryLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainTrickeryDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainTrickeryTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainTrickeryAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   ClassSkills={
@@ -22486,19 +22486,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainWarLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWarDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWarTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWarAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -22659,19 +22659,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainWaterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWaterDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWaterTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWaterAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -22832,19 +22832,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainWeatherLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWeatherDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWeatherTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWeatherAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23023,7 +23023,7 @@ DefineAbility({
   Definitions={
     {
       Name="LightningArcTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23055,7 +23055,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainAirResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23167,7 +23167,7 @@ DefineAbility({
   Definitions={
     {
       Name="SpeakWithAnimalsRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23205,7 +23205,7 @@ DefineAbility({
   Definitions={
     {
       Name="AnimalCompanionMasterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23265,7 +23265,7 @@ DefineAbility({
   Definitions={
     {
       Name="ArtificersTouchTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23322,7 +23322,7 @@ DefineAbility({
   Definitions={
     {
       Name="DancingWeaponTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23379,7 +23379,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofChaosTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23438,7 +23438,7 @@ DefineAbility({
   Definitions={
     {
       Name="ChaosBladeTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23496,7 +23496,7 @@ DefineAbility({
   Definitions={
     {
       Name="DazingTouchTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23547,7 +23547,7 @@ DefineAbility({
   Definitions={
     {
       Name="CharmCharmingSmileRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23605,7 +23605,7 @@ DefineAbility({
   Definitions={
     {
       Name="CalmingTouchTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23662,7 +23662,7 @@ DefineAbility({
   Definitions={
     {
       Name="UnityTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23720,7 +23720,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofDarknessTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23777,7 +23777,7 @@ DefineAbility({
   Definitions={
     {
       Name="EyesOfDarknessRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23836,7 +23836,7 @@ DefineAbility({
   Definitions={
     {
       Name="BleedingTouchTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23913,7 +23913,7 @@ DefineAbility({
   Definitions={
     {
       Name="DestructiveSmiteTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -23971,7 +23971,7 @@ DefineAbility({
   Definitions={
     {
       Name="DestructiveAuraRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24031,7 +24031,7 @@ DefineAbility({
   Definitions={
     {
       Name="AcidDartTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24063,7 +24063,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainEarthResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24176,7 +24176,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofEvilTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24234,7 +24234,7 @@ DefineAbility({
   Definitions={
     {
       Name="ScytheOfEvilTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24293,7 +24293,7 @@ DefineAbility({
   Definitions={
     {
       Name="FireBoltTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24325,7 +24325,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainFireResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24438,7 +24438,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofGloryTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24489,7 +24489,7 @@ DefineAbility({
   Definitions={
     {
       Name="GloryDivinePresenceRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24548,7 +24548,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofGoodTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24606,7 +24606,7 @@ DefineAbility({
   Definitions={
     {
       Name="HolyLanceTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24665,7 +24665,7 @@ DefineAbility({
   Definitions={
     {
       Name="RebukeDeathTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24721,7 +24721,7 @@ DefineAbility({
   Definitions={
     {
       Name="LoreKeeperDomainSkillBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24778,7 +24778,7 @@ DefineAbility({
   Definitions={
     {
       Name="RemoteViewingRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24835,7 +24835,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofLawTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24893,7 +24893,7 @@ DefineAbility({
   Definitions={
     {
       Name="StaffOfOrderTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -24950,7 +24950,7 @@ DefineAbility({
   Definitions={
     {
       Name="LiberationRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25008,7 +25008,7 @@ DefineAbility({
   Definitions={
     {
       Name="FreedomsCallRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25066,7 +25066,7 @@ DefineAbility({
   Definitions={
     {
       Name="BitofLuckTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25124,7 +25124,7 @@ DefineAbility({
   Definitions={
     {
       Name="GoodFortuneTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25183,7 +25183,7 @@ DefineAbility({
   Definitions={
     {
       Name="VisionofMadnessTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25241,7 +25241,7 @@ DefineAbility({
   Definitions={
     {
       Name="AuraOfMadnessRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25299,7 +25299,7 @@ DefineAbility({
   Definitions={
     {
       Name="HandoftheAcolyteTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25356,7 +25356,7 @@ DefineAbility({
   Definitions={
     {
       Name="DispellingTouchTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25465,7 +25465,7 @@ DefineAbility({
   Definitions={
     {
       Name="WoodenFistRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25523,7 +25523,7 @@ DefineAbility({
   Definitions={
     {
       Name="BrambleArmorRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25582,7 +25582,7 @@ DefineAbility({
   Definitions={
     {
       Name="ResistantTouchTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25641,7 +25641,7 @@ DefineAbility({
   Definitions={
     {
       Name="AuraOfProtectionRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25700,7 +25700,7 @@ DefineAbility({
   Definitions={
     {
       Name="GentleRestTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25757,7 +25757,7 @@ DefineAbility({
   Definitions={
     {
       Name="WardAgainstDeathRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25818,7 +25818,7 @@ DefineAbility({
   Definitions={
     {
       Name="BlastRuneTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25895,7 +25895,7 @@ DefineAbility({
   Definitions={
     {
       Name="StrengthSurgeTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -25952,7 +25952,7 @@ DefineAbility({
   Definitions={
     {
       Name="MightOfTheGodsRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -26031,7 +26031,7 @@ DefineAbility({
   Definitions={
     {
       Name="SunNimbusOfLightRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -26089,7 +26089,7 @@ DefineAbility({
   Definitions={
     {
       Name="AgileFeetTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -26147,7 +26147,7 @@ DefineAbility({
   Definitions={
     {
       Name="TravelDimensionalHop",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -26206,7 +26206,7 @@ DefineAbility({
   Definitions={
     {
       Name="CopycatTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -26257,11 +26257,11 @@ DefineAbility({
   Definitions={
     {
       Name="TrickeryMastersIllusionDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="TrickeryMastersIllusionRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -26327,7 +26327,7 @@ DefineAbility({
   Definitions={
     {
       Name="BattleRageTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -26398,7 +26398,7 @@ DefineAbility({
   Definitions={
     {
       Name="WeaponMasterRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -26457,7 +26457,7 @@ DefineAbility({
   Definitions={
     {
       Name="IcicleTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -26489,7 +26489,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainWaterResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -26603,7 +26603,7 @@ DefineAbility({
   Definitions={
     {
       Name="StormBurstTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -26653,7 +26653,7 @@ DefineAbility({
   Definitions={
     {
       Name="WeatherLightningLordTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -26920,23 +26920,23 @@ DefineAbility({
   Definitions={
     {
       Name="AnimalCompanionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AnimalCompanionMasterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AnimalCompanionGranted",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CompanionDisable_AnimalCompanion",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CompanionMasterLVL_Druid",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -27015,23 +27015,23 @@ DefineAbility({
   Definitions={
     {
       Name="AnimalCompanionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AnimalCompanionMasterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AnimalCompanionGranted",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CompanionDisable_AnimalCompanion",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CompanionMasterLVL_Druid",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -27174,31 +27174,31 @@ ModifyAbility({
   Definitions={
     {
       Name="DruidAirAllowed",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DruidAnimalAllowed",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DruidEarthAllowed",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DruidFireAllowed",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DruidPlantAllowed",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DruidWaterAllowed",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DruidWeatherAllowed",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -27222,19 +27222,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainAirLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAirAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAirDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAirTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -27324,19 +27324,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainAnimalLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAnimalDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAnimalTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainAnimalAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -27426,19 +27426,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainEarthLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEarthDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEarthTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainEarthAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -27528,19 +27528,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainFireLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainFireDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainFireTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainFireAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -27630,19 +27630,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainPlantLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainPlantDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainPlantTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainPlantAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -27732,19 +27732,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainWaterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWaterDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWaterTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWaterAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -27834,19 +27834,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainWeatherLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWeatherDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWeatherTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DomainWeatherAbilityTriggerLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -27933,15 +27933,15 @@ DefineAbility({
   Definitions={
     {
       Name="WildShapeTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="WildShapeDuration",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="WildShapeProgression",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -28542,7 +28542,7 @@ DefineAbility({
   Definitions={
     {
       Name="PoisonSaveDC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -28621,7 +28621,7 @@ DefineAbility({
   Definitions={
     {
       Name="DruidWildShape",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -28660,7 +28660,7 @@ DefineAbility({
   Definitions={
     {
       Name="WildShapeTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -28694,7 +28694,7 @@ DefineAbility({
   Definitions={
     {
       Name="WildShapeProgression",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -28727,7 +28727,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WildShapeAbilityLevel",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -29231,7 +29231,7 @@ DefineAbility({
   Definitions={
     {
       Name="FighterWeaponQualifyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -29267,11 +29267,11 @@ DefineAbility({
   Definitions={
     {
       Name="WeapSpecQualify",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="WeaponSpecQualifyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -29304,11 +29304,11 @@ DefineAbility({
   Definitions={
     {
       Name="DisruptiveQualify",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DisruptiveQualifyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -29341,11 +29341,11 @@ DefineAbility({
   Definitions={
     {
       Name="GreatShieldFocusQualify",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="GreatShieldFocusQualifyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -29378,11 +29378,11 @@ DefineAbility({
   Definitions={
     {
       Name="GreatWeapFocusQualify",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="GreatWeapFocusQualifyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -29415,11 +29415,11 @@ DefineAbility({
   Definitions={
     {
       Name="SpellbreakerQualify",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SpellbreakerQualifyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -29452,11 +29452,11 @@ DefineAbility({
   Definitions={
     {
       Name="GreatWeapSpecQualify",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="GreatWeapSpecQualifyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -29489,11 +29489,11 @@ DefineAbility({
   Definitions={
     {
       Name="PenetratingStrikeQualify",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="PenetratingStrikeQualifyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -29526,11 +29526,11 @@ DefineAbility({
   Definitions={
     {
       Name="CriticalMasteryQualify",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CriticalMasteryQualifyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -29563,11 +29563,11 @@ DefineAbility({
   Definitions={
     {
       Name="GreatPenetratingStrikeQualify",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="GreatPenetratingStrikeQualifyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -29616,11 +29616,11 @@ DefineAbility({
   Definitions={
     {
       Name="Bravery",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="BraveryLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -29659,15 +29659,15 @@ DefineAbility({
   Definitions={
     {
       Name="ArmorTraining",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ArmorTrainingLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ArmorTrainingTier",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -30457,11 +30457,11 @@ DefineAbility({
   Definitions={
     {
       Name="WeaponTrainingBase",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="FighterWeaponTrainingLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -30536,7 +30536,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingTierOne",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -30558,7 +30558,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingTierTwo",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -30580,7 +30580,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingTierThree",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -30602,7 +30602,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingTierFour",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -30624,7 +30624,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingAxes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -30637,7 +30637,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingBladesHeavy",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -30650,7 +30650,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingBladesLight",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -30663,7 +30663,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingBows",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -30676,7 +30676,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingClose",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -30689,7 +30689,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingCrossbows",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -30702,7 +30702,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingDouble",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -30715,7 +30715,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingFlails",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -30728,7 +30728,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingHammers",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -30741,7 +30741,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingMonk",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -30754,7 +30754,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingNatural",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -30767,7 +30767,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingPoleArms",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -30780,7 +30780,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingSpears",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -30793,7 +30793,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingThrown",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -34295,11 +34295,11 @@ DefineAbility({
   Definitions={
     {
       Name="MonkBonusFeatLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="MonkBonusFeatLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -34341,15 +34341,15 @@ DefineAbility({
   Definitions={
     {
       Name="MonkACBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="MonkACLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="MonkACWisBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -34448,7 +34448,7 @@ DefineAbility({
   Definitions={
     {
       Name="StunningFistMonkLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -34493,11 +34493,11 @@ DefineAbility({
   Definitions={
     {
       Name="MonkFastMovementLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="MonkFastMovementBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -34549,11 +34549,11 @@ DefineAbility({
   Definitions={
     {
       Name="ManeuverTrainingLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ManeuverTrainingBAB",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -34665,11 +34665,11 @@ DefineAbility({
   Definitions={
     {
       Name="SlowFall",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SlowFallLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -34712,11 +34712,11 @@ DefineAbility({
   Definitions={
     {
       Name="HighJumpLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="HighJumpBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -34793,11 +34793,11 @@ DefineAbility({
   Definitions={
     {
       Name="WholenessOfBody",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="WholenessOfBodyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -34868,11 +34868,11 @@ DefineAbility({
   Definitions={
     {
       Name="AbundantStepCasterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AbundantStepLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -34917,11 +34917,11 @@ DefineAbility({
   Definitions={
     {
       Name="DiamondSoul",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DiamondSoulLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -34966,15 +34966,15 @@ DefineAbility({
   Definitions={
     {
       Name="QuiveringPalmDuration",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="QuiveringPalmDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="QuiveringPalmLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -35640,7 +35640,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35653,7 +35653,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryExtraAttacks",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35666,7 +35666,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryBABBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35679,7 +35679,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryBAB",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35692,7 +35692,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryAttackBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35705,7 +35705,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryAttacks",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35718,7 +35718,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35731,7 +35731,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB_1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35744,7 +35744,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB_2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35757,7 +35757,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB_3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35770,7 +35770,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB_4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35783,7 +35783,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB_5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35796,7 +35796,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB_6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35809,7 +35809,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB_7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35822,7 +35822,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryBABRaw",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35835,7 +35835,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryDiff",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -35848,11 +35848,11 @@ DefineAbility({
   Definitions={
     {
       Name="KiPoints",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="KiPoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -35924,7 +35924,7 @@ ModifyAbility({
   Definitions={
     {
       Name="KiPool",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36119,7 +36119,7 @@ ModifyAbility({
   Definitions={
     {
       Name="KiPoolProgression",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36329,7 +36329,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeatCount",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -36495,7 +36495,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_CatchOffGuard",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36508,7 +36508,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_CombatReflexes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36521,7 +36521,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_DeflectArrows",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36534,7 +36534,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_Dodge",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36547,7 +36547,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ImprovedGrapple",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36560,7 +36560,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ScorpionStyle",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36573,7 +36573,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ThrowAnything",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36586,7 +36586,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_GorgonsFist",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36599,7 +36599,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ImprovedBullRush",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36612,7 +36612,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ImprovedDisarm",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36625,7 +36625,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ImprovedFeint",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36638,7 +36638,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ImprovedTrip",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36651,7 +36651,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_Mobility",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36664,7 +36664,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ImprovedCritical",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36677,7 +36677,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_MedusasWrath",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36690,7 +36690,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_SnatchArrows",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -36703,7 +36703,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_SpringAttack",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -37647,15 +37647,15 @@ DefineAbility({
   Definitions={
     {
       Name="MonkUnarmedDamageProgression",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="MonkUnarmedDamageLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="UDAMAttackSize",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -40601,7 +40601,7 @@ DefineAbility({
   Definitions={
     {
       Name="DetectEvilLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -40654,23 +40654,23 @@ DefineAbility({
   Definitions={
     {
       Name="SmiteEvilTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SmiteEvilAttackBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SmiteEvilDamageBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SmiteEvilACBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SmiteEvilLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -40723,7 +40723,7 @@ DefineAbility({
   Definitions={
     {
       Name="DivineGrace",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -40783,15 +40783,15 @@ DefineAbility({
   Definitions={
     {
       Name="LayOnHandsTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="LayOnHandsDice",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="LayOnHandsLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -40853,11 +40853,11 @@ DefineAbility({
   Definitions={
     {
       Name="Mercies",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="MercyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -40927,19 +40927,19 @@ DefineAbility({
   Definitions={
     {
       Name="PaladinChannelDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="PaladinChannelDice",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="PaladinChannelDieSize",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="PaladinChannelLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -41007,11 +41007,11 @@ DefineAbility({
   Definitions={
     {
       Name="HolyChampionCasterLevel",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="HolyChampionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -41296,11 +41296,11 @@ DefineAbility({
   Definitions={
     {
       Name="DivineBondLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DivineBondTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -41370,11 +41370,11 @@ DefineAbility({
   Definitions={
     {
       Name="CelestialSpiritDuration",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CelestialSpiritBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -41433,27 +41433,27 @@ DefineAbility({
   Definitions={
     {
       Name="SpecialMountLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SpecialMountSpellLevel",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SpecialMountSR",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Divine_Bond_Mount",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CompanionDisable_PaladinMount",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CompanionMasterLVL_Paladin",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -42187,11 +42187,11 @@ DefineAbility({
   Definitions={
     {
       Name="MasterHunterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="MasterHunterDC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -42324,19 +42324,19 @@ DefineAbility({
   Definitions={
     {
       Name="CombatStyleLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RangerDefaultCombatStyle",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RangerBonusFeatCount",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RangerCombatStyleFeatCount",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -42391,11 +42391,11 @@ DefineAbility({
   Definitions={
     {
       Name="TrackLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="TrackBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -42429,7 +42429,7 @@ DefineAbility({
   Definitions={
     {
       Name="HuntersBondLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -42500,19 +42500,19 @@ DefineAbility({
   Definitions={
     {
       Name="AnimalCompanionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AnimalCompanionMasterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CompanionDisable_AnimalCompanion",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CompanionMasterLVL_Ranger",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -42576,15 +42576,15 @@ DefineAbility({
   Definitions={
     {
       Name="RangerFavoredEnemyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RangerFavoredEnemyCount",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="FavoredEnemyBonusCount",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -42698,7 +42698,7 @@ DefineAbility({
   Definitions={
     {
       Name="RangerFavoredTerrainLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -42748,7 +42748,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Far_Shot",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -42761,7 +42761,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Point_Blank_Shot",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -42774,7 +42774,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Precise_Shot",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -42787,7 +42787,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Rapid_Shot",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -42800,7 +42800,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Improved_Precise_Shot",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -42813,7 +42813,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Manyshot",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -42826,7 +42826,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Pinpoint_Targeting",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -42839,7 +42839,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Shot_on_the_Run",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -42852,7 +42852,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Double_Slice",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -42865,7 +42865,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Improved_Shield_Bash",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -42878,7 +42878,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Quick_Draw",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -42891,7 +42891,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Two_Weapon_Fighting",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -42904,7 +42904,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Improved_Two_Weapon_Fighting",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -42917,7 +42917,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Two_Weapon_Defense",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -42930,7 +42930,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Greater_Two_Weapon_Fighting",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -42943,7 +42943,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Two_Weapon_Rend",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -44129,7 +44129,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredBaseBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -44187,7 +44187,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredAberration",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -44247,7 +44247,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredAnimal",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -44307,7 +44307,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredConstruct",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -44367,7 +44367,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredDragon",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -44427,7 +44427,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredFey",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -44487,7 +44487,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidAquatic",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -44547,7 +44547,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidDwarf",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -44607,7 +44607,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidElf",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -44667,7 +44667,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidGiant",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -44727,7 +44727,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidGoblinoid",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -44787,7 +44787,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidGnoll",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -44847,7 +44847,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidGnome",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -44907,7 +44907,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidHalfling",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -44967,7 +44967,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidHuman",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45027,7 +45027,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidOrc",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45087,7 +45087,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidReptilian",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45147,7 +45147,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredMagicalBeast",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45207,7 +45207,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredMonstrousHumanoid",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45267,7 +45267,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOoze",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45327,7 +45327,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderAir",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45387,7 +45387,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderChaotic",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45447,7 +45447,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderEarth",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45507,7 +45507,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderEvil",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45567,7 +45567,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderFire",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45627,7 +45627,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderGood",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45687,7 +45687,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderLawful",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45747,7 +45747,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderNative",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45807,7 +45807,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderWater",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45867,7 +45867,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredPlant",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45927,7 +45927,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredUndead",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -45987,7 +45987,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredVermin",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -46885,7 +46885,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainBaseBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -46935,7 +46935,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainCold",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -46987,7 +46987,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainDesert",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -47039,7 +47039,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainForest",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -47091,7 +47091,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainJungle",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -47143,7 +47143,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainMountains",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -47195,7 +47195,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainPlains",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -47247,7 +47247,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainPlanes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -47299,7 +47299,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainSwamp",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -47351,7 +47351,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainUnderground",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -47403,7 +47403,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainUrban",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -47455,7 +47455,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainWater",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -47792,7 +47792,7 @@ DefineAbility({
   Definitions={
     {
       Name="RogueSneakAttackLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -47830,7 +47830,7 @@ DefineAbility({
   Definitions={
     {
       Name="RogueTalentLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -47871,11 +47871,11 @@ DefineAbility({
   Definitions={
     {
       Name="TrapfindingLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="TrapfindingBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -47941,7 +47941,7 @@ DefineAbility({
   Definitions={
     {
       Name="RogueTrapSenseLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -47991,11 +47991,11 @@ DefineAbility({
   Definitions={
     {
       Name="MasterStrikeDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="MasterStrikeLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -48089,7 +48089,7 @@ ModifyAbility({
   Definitions={
     {
       Name="RogueTalentTaken",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -48528,11 +48528,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CombatTrickAllowed",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CombatTrickTaken",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -48743,7 +48743,7 @@ DefineAbility({
   Definitions={
     {
       Name="RogueCasterLevel",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -48814,7 +48814,7 @@ DefineAbility({
   Definitions={
     {
       Name="ResiliencyHitPoints",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -48923,7 +48923,7 @@ DefineAbility({
   Definitions={
     {
       Name="TrapSpotterDistance",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -49078,7 +49078,7 @@ DefineAbility({
   Definitions={
     {
       Name="DispellingAttackCasterLevel",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -49203,7 +49203,7 @@ DefineAbility({
   Definitions={
     {
       Name="SlipperymindTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -49352,7 +49352,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Spells_SpellDCBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -49384,7 +49384,7 @@ DefineAbility({
   Definitions={
     {
       Name="HasSorcererBloodline",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -49482,7 +49482,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BloodlineLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -49509,7 +49509,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BloodlineCasterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -49536,7 +49536,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BloodlineProgressionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -49563,7 +49563,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BloodlinePowerTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -49590,7 +49590,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BloodlineFeatProgression",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -49617,7 +49617,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BloodlineFeatCount",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -49716,7 +49716,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_AcrobaticSteps",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49729,7 +49729,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_AgileManeuvers",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49742,7 +49742,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Alertness",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49755,7 +49755,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ArcaneArmorMastery",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49768,7 +49768,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ArcaneArmorTraining",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49781,7 +49781,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ArcaneStrike",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49794,7 +49794,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_AugmentSummoning",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49807,7 +49807,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_BlindFight",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49820,7 +49820,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Cleave",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49833,7 +49833,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_CombatCasting",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49846,7 +49846,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_CombatExpertise",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49859,7 +49859,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_CombatReflexes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49872,7 +49872,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_CraftRod",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49885,7 +49885,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_CraftStaff",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49898,7 +49898,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_CraftWondrousItem",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49911,7 +49911,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_DeadlyAim",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49924,7 +49924,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Deceitful",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49937,7 +49937,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_DefensiveCombatTraining",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49950,7 +49950,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_DeftHands",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49963,7 +49963,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Diehard",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49976,7 +49976,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Dodge",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -49989,7 +49989,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_EmpowerSpell",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50002,7 +50002,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Endurance",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50015,7 +50015,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_EnlargeSpell",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50028,7 +50028,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ExtendSpell",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50041,7 +50041,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_FarShot",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50054,7 +50054,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Fleet",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50067,7 +50067,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ForgeRing",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50080,7 +50080,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_GreaterSpellFocusEnchantment",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50093,7 +50093,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_GreatFortitude",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50106,7 +50106,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_HeightenSpell",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50119,7 +50119,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedBullRush",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50132,7 +50132,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedCounterspell",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50145,7 +50145,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedDisarm",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50158,7 +50158,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedFeint",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50171,7 +50171,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedGrapple",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50184,7 +50184,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedGreatFortitude",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50197,7 +50197,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedInitiative",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50210,7 +50210,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedIronWill",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50223,7 +50223,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedOverrun",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50236,7 +50236,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedSunder",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50249,7 +50249,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedUnarmedStrike",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50262,7 +50262,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_IntimidatingProwess",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50275,7 +50275,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_IronWill",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50288,7 +50288,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Leadership",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50301,7 +50301,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_LightArmorProficiency",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50314,7 +50314,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_LightningReflexes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50327,7 +50327,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_MagicalAptitude",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50340,7 +50340,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_MartialWeaponProficiency",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50353,7 +50353,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_MaximizeSpell",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50366,7 +50366,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Mobility",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50379,7 +50379,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_MountedCombat",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50392,7 +50392,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_NimbleMoves",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50405,7 +50405,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Persuasive",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50418,7 +50418,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_PointBlankShot",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50431,7 +50431,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_PowerAttack",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50444,7 +50444,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_PreciseShot",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50457,7 +50457,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_QuickDraw",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50470,7 +50470,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_QuickenSpell",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50483,7 +50483,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_RideByAttack",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50496,7 +50496,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ScribeScroll",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50509,7 +50509,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SilentSpell",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50522,7 +50522,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusAcrobatics",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50535,7 +50535,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusBluff",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50548,7 +50548,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusCraft",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50561,7 +50561,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusFly",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50574,7 +50574,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusIntimidate",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50587,7 +50587,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusKnowledgeArcana",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50600,7 +50600,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusKnowledgeDungeoneering",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50613,7 +50613,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusKnowledgeEngineering",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50626,7 +50626,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusKnowledgeHistory",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50639,7 +50639,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusKnowledgeNature",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50652,7 +50652,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusKnowledgePlanes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50665,7 +50665,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusKnowledgeReligion",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50678,7 +50678,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusPerception",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50691,7 +50691,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusPerform",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50704,7 +50704,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusSenseMotive",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50717,7 +50717,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusStealth",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50730,7 +50730,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusSwim",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50743,7 +50743,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SpellFocus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50756,7 +50756,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SpellFocusEnchantment",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50769,7 +50769,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SpellFocusNecromancy",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50782,7 +50782,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SpellPenetration",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50795,7 +50795,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Stealthy",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50808,7 +50808,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_StillSpell",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50821,7 +50821,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Toughness",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50834,7 +50834,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_WeaponFinesse",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50847,7 +50847,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_WeaponFocus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50860,7 +50860,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_WidenSpell",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50873,7 +50873,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_WindStance",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50886,7 +50886,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Alarm_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50899,7 +50899,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_AnimateDead_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50912,7 +50912,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_AnimateObjects_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50925,7 +50925,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_AnimatePlants_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50938,7 +50938,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_AstralProjection_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50951,7 +50951,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Augury_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50964,7 +50964,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Banishment_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50977,7 +50977,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Barkskin_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -50990,7 +50990,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BeastShapeIV_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51003,7 +51003,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BestowCurse_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51016,7 +51016,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BlackTentacles_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51029,7 +51029,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Bless_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51042,7 +51042,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Blight_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51055,7 +51055,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Blink_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51068,7 +51068,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Blur_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51081,7 +51081,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BreakEnchantment_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51094,7 +51094,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BullsStrength_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51107,7 +51107,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BurningHands_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51120,7 +51120,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BurningHandsAcid_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51133,7 +51133,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BurningHandsCold_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51146,7 +51146,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BurningHandsElectricity_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51159,7 +51159,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_CauseFear_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51172,7 +51172,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ChainLightning_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51185,7 +51185,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_CharmMonster_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51198,7 +51198,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ChillTouch_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51211,7 +51211,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_CircleofDeath_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51224,7 +51224,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Cloudkill_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51237,7 +51237,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_CommandGreater_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51250,7 +51250,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_CommandPlants_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51263,7 +51263,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ConeofCold_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51276,7 +51276,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Confusion_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51289,7 +51289,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ConfusionLesser_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51302,7 +51302,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Contagion_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51315,7 +51315,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ControlUndead_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51328,7 +51328,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ControlWater_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51341,7 +51341,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ControlWeather_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51354,7 +51354,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Darkvision_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51367,7 +51367,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DeeperDarkness_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51380,7 +51380,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DeepSlumber_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51393,7 +51393,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DelayedBlastFireball_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51406,7 +51406,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DelayPoison_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51419,7 +51419,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DimensionalLock_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51432,7 +51432,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DimensionDoor_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51445,7 +51445,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DisguiseSelf_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51458,7 +51458,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Disintegrate_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51471,7 +51471,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Dismissal_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51484,7 +51484,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DispelMagic_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51497,7 +51497,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DispelMagicGreater_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51510,7 +51510,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Divination_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51523,7 +51523,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DominateMonster_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51536,7 +51536,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DominatePerson_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51549,7 +51549,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Dream_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51562,7 +51562,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_EaglesSplendor_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51575,7 +51575,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Earthquake_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51588,7 +51588,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ElementalBodyI_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51601,7 +51601,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ElementalBodyII_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51614,7 +51614,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ElementalBodyIII_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51627,7 +51627,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ElementalBodyIV_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51640,7 +51640,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ElementalSwarm_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51653,7 +51653,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_EndureElements_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51666,7 +51666,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_EnergyDrain_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51679,7 +51679,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_EnlargePerson_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51692,7 +51692,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Entangle_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51705,7 +51705,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_EntropicShield_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51718,7 +51718,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_EtherealJaunt_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51731,7 +51731,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Etherealness_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51744,7 +51744,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ExplosiveRunes_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51757,7 +51757,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Eyebite_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51770,7 +51770,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Fabricate_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51783,7 +51783,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FalseLife_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51796,7 +51796,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Fear_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51809,7 +51809,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Feeblemind_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51822,7 +51822,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FingerofDeath_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51835,7 +51835,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Fireball_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51848,7 +51848,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FireShieldwarm_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51861,7 +51861,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FlameStrike_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51874,7 +51874,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Fly_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51887,7 +51887,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Foresight_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51900,7 +51900,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FormoftheDragonI_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51913,7 +51913,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FormoftheDragonII_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51926,7 +51926,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FormoftheDragonIII_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51939,7 +51939,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FreedomofMovement_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51952,7 +51952,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_GaseousForm_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51965,7 +51965,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Gate_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51978,7 +51978,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_GiantFormI_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -51991,7 +51991,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_GiantFormII_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52004,7 +52004,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Glitterdust_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52017,7 +52017,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_GuardsandWards_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52030,7 +52030,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_GustofWind_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52043,7 +52043,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Heroism_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52056,7 +52056,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_HeroismGreater_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52069,7 +52069,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_HideousLaughter_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52082,7 +52082,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_HoldMonster_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52095,7 +52095,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_HorridWilting_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52108,7 +52108,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Hypnotism_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52121,7 +52121,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Identify_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52134,7 +52134,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Imprisonment_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52147,7 +52147,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Insanity_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52160,7 +52160,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_InsectPlague_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52173,7 +52173,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Invisibility_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52186,7 +52186,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_IronBody_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52199,7 +52199,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_IrresistibleDance_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52212,7 +52212,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_LightningBolt_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52225,7 +52225,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MageArmor_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52238,7 +52238,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MagicCircleagainstEvil_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52251,7 +52251,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MagicVestment_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52264,7 +52264,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MagicWeapon_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52277,7 +52277,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MagicWeaponGreater_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52290,7 +52290,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MajorCreation_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52303,7 +52303,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MakeWhole_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52316,7 +52316,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MeteorSwarm_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52329,7 +52329,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MindBlank_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52342,7 +52342,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MinorCreation_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52355,7 +52355,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Mislead_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52368,7 +52368,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MomentofPrescience_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52381,7 +52381,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MoveEarth_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52394,7 +52394,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ObscuringMist_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52407,7 +52407,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_OverlandFlight_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52420,7 +52420,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PersistentImage_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52433,7 +52433,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PhaseDoor_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52446,7 +52446,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PlanarBinding_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52459,7 +52459,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PlanarBindingDevilsAndFiendishCreaturesOnly_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52472,7 +52472,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PlanarBindingGreater_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52485,7 +52485,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PlaneShift_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52498,7 +52498,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PlantShapeIII_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52511,7 +52511,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Poison_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52524,7 +52524,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PolarRay_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52537,7 +52537,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PolymorphAnyObject_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52550,7 +52550,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PolymorphGreater_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52563,7 +52563,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PowerWordBlind_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52576,7 +52576,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PowerWordStun_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52589,7 +52589,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ProtectionfromEnergy_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52602,7 +52602,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ProtectionfromGood_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52615,7 +52615,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PryingEyesGreater_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52628,7 +52628,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Rage_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52641,7 +52641,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_RayofEnfeeblement_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52654,7 +52654,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_RayofExhaustion_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52667,7 +52667,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_RemoveCurse_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52680,7 +52680,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_RepelMetalorStone_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52693,7 +52693,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Repulsion_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52706,7 +52706,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ResistEnergy_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52719,7 +52719,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ReverseGravity_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52732,7 +52732,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ScorchingRay_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52745,7 +52745,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ScorchingRayAcid_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52758,7 +52758,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ScorchingRayCold_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52771,7 +52771,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ScorchingRayElectricity_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52784,7 +52784,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SeeInvisibility_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52797,7 +52797,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Shades_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52810,7 +52810,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ShadowConjuration_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52823,7 +52823,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ShadowEvocation_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52836,7 +52836,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ShadowEvocationGreater_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52849,7 +52849,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ShadowWalk_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52862,7 +52862,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Shambler_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52875,7 +52875,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Shapechange_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52888,7 +52888,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ShockingGrasp_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52901,7 +52901,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Shout_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52914,7 +52914,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ShoutGreater_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52927,7 +52927,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ShrinkItem_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52940,7 +52940,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Sleep_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52953,7 +52953,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SoulBind_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52966,7 +52966,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SpeakwithPlants_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52979,7 +52979,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SpellResistance_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -52992,7 +52992,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SpellTurning_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53005,7 +53005,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SpikeStones_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53018,7 +53018,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Stoneskin_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53031,7 +53031,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_StoneTell_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53044,7 +53044,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_StormofVengeance_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53057,7 +53057,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Suggestion_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53070,7 +53070,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SuggestionMass_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53083,7 +53083,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SummonMonsterIX_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53096,7 +53096,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SummonMonsterVII_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53109,7 +53109,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SummonMonsterVIIIElementalsOnly_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53122,7 +53122,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Sunburst_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53135,7 +53135,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TeleportGreater_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53148,7 +53148,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Tongues_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53161,7 +53161,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TouchofIdiocy_L2",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53174,7 +53174,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Transformation_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53187,7 +53187,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TransmuteRocktoMud_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53200,7 +53200,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TransportviaPlants_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53213,7 +53213,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TraptheSoul_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53226,7 +53226,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TreeStride_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53239,7 +53239,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TrueSeeing_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53252,7 +53252,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TrueStrike_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53265,7 +53265,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_UndeathToDeath_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53278,7 +53278,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_UnholyAura_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53291,7 +53291,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_UnseenServant_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53304,7 +53304,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_VampiricTouch_L3",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53317,7 +53317,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Veil_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53330,7 +53330,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Ventriloquism_L1",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53343,7 +53343,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Vision_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53356,7 +53356,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WailoftheBanshee_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53369,7 +53369,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WallofFire_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53382,7 +53382,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WallOfIce_L4",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53395,7 +53395,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WallofIron_L6",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53408,7 +53408,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WallofStone_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53421,7 +53421,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WallOfThorns_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53434,7 +53434,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WavesofExhaustion_L7",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53447,7 +53447,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WavesOfFatigue_L5",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53460,7 +53460,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Whirlwind_L8",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -53473,7 +53473,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Wish_L9",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -63786,75 +63786,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Aberrant_BloodlineLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlineProgressionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlineArcana1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlineSpells1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePowers",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower3",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower9",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower15",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower20",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlineClassSkill1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_Description",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -64510,15 +64510,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Aberrant_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_AcidicRay_DamageBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -64586,11 +64586,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Aberrant_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_LongLimbs_Reach",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -64697,11 +64697,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Aberrant_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_UnusualAnatomy_PercentChance",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -64768,11 +64768,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Aberrant_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_AlienResistance_SR",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -64828,7 +64828,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Aberrant_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -64891,75 +64891,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Abyssal_BloodlineLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlineProgressionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlineArcana1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlineSpells1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePowers",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower3",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower9",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower15",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower20",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlineClassSkill1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_Description",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -65524,7 +65524,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_AbyssalBloodlineArcana_SummonDR",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -65667,15 +65667,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Abyssal_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_GenericClaws_SizeBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -65771,15 +65771,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Abyssal_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_AbyssalDemonResistances_ResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_AbyssalDemonResistances_SaveBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -65852,11 +65852,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Abyssal_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_AbyssalStrengthOfTheAbyss_StrBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -65920,7 +65920,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Abyssal_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -65966,11 +65966,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Abyssal_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_AbyssalDemonicMight_ResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -66050,75 +66050,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Arcane_BloodlineLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlineProgressionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlineArcana1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlineSpells1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlinePowers",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower3",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower9",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower15",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower20",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlineClassSkill1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_Description",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -66736,15 +66736,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Arcane_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ArcaneBondLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -66845,11 +66845,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Arcane_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_ArcaneMetamagicAdept_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -66904,11 +66904,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Arcane_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_NewArcana_Number",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -66962,7 +66962,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Arcane_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -67027,7 +67027,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Arcane_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -67083,7 +67083,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Arcane_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -67348,75 +67348,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Celestial_BloodlineLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlineProgressionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlineArcana1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlineSpells1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlinePowers",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower3",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower9",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower15",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower20",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlineClassSkill1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_Description",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -67981,7 +67981,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_CelestialBloodlineArcana_SummonDR",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -68092,15 +68092,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Celestial_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_CelestialHeaventlyFire_DamageBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -68154,11 +68154,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Celestial_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_CelestialCelestialResistances_ResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -68286,11 +68286,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Celestial_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_CelestialWingsOfHeaven_TimeMinutes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -68360,11 +68360,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Celestial_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_CelestialConviction_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -68426,15 +68426,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Celestial_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_CelestialAscension_ResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_CelestialAscension_SaveBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -68516,75 +68516,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Destined_BloodlineLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlineProgressionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlineArcana1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlineSpells1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlinePowers",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlinePower1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlinePower3",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlinePower9",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlinePower15",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlinePower20",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlineClassSkill1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_Description",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -69221,15 +69221,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Destined_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DestinedTouchOfDestiny_Bonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -69290,11 +69290,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Destined_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DestinedFated_LuckBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -69367,11 +69367,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Destined_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DestinedItWasMeantToBe_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -69430,11 +69430,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Destined_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Destined_WithinReach_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -69493,11 +69493,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Destined_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DestinedDestinyRealized_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -69542,75 +69542,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Draconic_BloodlineLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlineProgressionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlineArcana1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlineSpells1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlinePowers",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower3",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower9",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower15",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower20",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlineClassSkill1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_Description",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -70244,19 +70244,19 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicDamageType_Acid",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDamageType_Cold",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDamageType_Electricity",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDamageType_Fire",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -70441,15 +70441,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Draconic_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_GenericClaws_SizeBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -70530,31 +70530,31 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Draconic_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDamageType_Cold",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDamageType_Fire",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDamageType_Electricity",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDamageType_Acid",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDragonResistances_ResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDragonResistances_NaturalArmorBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -70835,43 +70835,43 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Draconic_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDamageType_Cold",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDamageType_Fire",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDamageType_Electricity",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDamageType_Acid",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicBreathWeapon_Line",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicBreathWeapon_Cone",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicBreathWeapon_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicBreathWeapon_Dice",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicBreathWeapon_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -70942,11 +70942,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Draconic_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Maneuverability",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -71006,23 +71006,23 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Draconic_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDamageType_Cold",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDamageType_Fire",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDamageType_Electricity",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_DraconicDamageType_Acid",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -71133,7 +71133,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Black",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -71203,7 +71203,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Blue",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -71273,7 +71273,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Green",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -71343,7 +71343,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Red",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -71413,7 +71413,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_White",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -71483,7 +71483,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Brass",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -71553,7 +71553,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Bronze",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -71623,7 +71623,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Copper",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -71693,7 +71693,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Gold",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -71763,7 +71763,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Silver",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -71843,75 +71843,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Elemental_BloodlineLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlineProgressionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlineArcana1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlineSpells1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlinePowers",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower3",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower9",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower15",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower20",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlineClassSkill1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_Description",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -72854,15 +72854,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Elemental_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_ElementalElementalRay_DamageBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -72916,11 +72916,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Elemental_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_ElementalElementalResistance_ResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -73086,19 +73086,19 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Elemental_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_ElementalElementalBlast_Dice",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_ElementalElementalBlast_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_ElementalElementalBlast_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -73166,7 +73166,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Elemental_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -73262,7 +73262,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Elemental_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -73346,7 +73346,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_ElementalBloodlineChoice_Air",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -73406,7 +73406,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_ElementalBloodlineChoice_Earth",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -73466,7 +73466,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_ElementalBloodlineChoice_Fire",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -73526,7 +73526,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_ElementalBloodlineChoice_Water",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -73605,7 +73605,7 @@ DefineAbility({
   Definitions={
     {
       Name="Maneuverability",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -73666,75 +73666,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Fey_BloodlineLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlineProgressionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlineArcana1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlineSpells1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlinePowers",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlinePower1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlinePower3",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlinePower9",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlinePower15",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlinePower20",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlineClassSkill1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_Description",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -74372,11 +74372,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Fey_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Fey_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -74418,7 +74418,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Fey_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -74472,11 +74472,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Fey_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_FeyFleetingGlance_Time",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -74527,7 +74527,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Fey_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -74583,11 +74583,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Fey_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_FeySoulOfTheFey_CasterLevel",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -74644,75 +74644,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Infernal_BloodlineLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlineProgressionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlineArcana1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlineSpells1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlinePowers",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower3",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower9",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower15",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower20",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlineClassSkill1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_Description",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -75366,15 +75366,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Infernal_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_InfernalCorruptingTouch_Duration",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -75443,15 +75443,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Infernal_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_InfernalInfernalResistances_ResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_InfernalInfernalResistances_SaveBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -75541,23 +75541,23 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Infernal_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_InfernalHellfire_Dice",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_InfernalHellfire_Duration",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_InfernalHellfire_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_InfernalHellfire_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -75629,11 +75629,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Infernal_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Maneuverability",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -75695,11 +75695,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Infernal_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_InfernalPowerOfThePit_VisionDistance",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -75784,75 +75784,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Undead_BloodlineLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlineProgressionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlineArcana1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlineSpells1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlinePowers",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlinePower1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlinePower3",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlinePower9",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlinePower15",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlinePower20",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlineClassSkill1",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_Description",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -76507,19 +76507,19 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Undead_BloodlinePower1LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_Undead_BloodlinePower1Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_UndeadGraveTouch_Duration",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_UndeadGraveTouch_AffectedHD",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -76581,15 +76581,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Undead_BloodlinePower3LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_UndeadDeathsGift_ResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_UndeadDeathsGift_DR",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -76683,19 +76683,19 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Undead_BloodlinePower9LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_UndeadGraspOfTheDead_Dice",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_UndeadGraspOfTheDead_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_UndeadGraspOfTheDead_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -76781,15 +76781,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Undead_BloodlinePower15LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_UndeadIncorporealForm_Duration",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Sorcerer_UndeadIncorporealForm_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -76851,7 +76851,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Undead_BloodlinePower20LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -77000,7 +77000,7 @@ DefineAbility({
   Definitions={
     {
       Name="ArcaneBondLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -77067,7 +77067,7 @@ DefineAbility({
   Definitions={
     {
       Name="OppositionalSchool",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -77188,7 +77188,7 @@ DefineAbility({
   Definitions={
     {
       Name="FamiliarMasterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -77360,7 +77360,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ArcaneSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -77382,7 +77382,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ArcaneSchoolProgressionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -77404,7 +77404,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ArcaneSchoolPowerTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -77430,11 +77430,11 @@ DefineAbility({
   Definitions={
     {
       Name="AbjurationSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AbjurationProgressionSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -77600,11 +77600,11 @@ DefineAbility({
   Definitions={
     {
       Name="ConjurationSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ConjurationProgressionSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -77767,11 +77767,11 @@ DefineAbility({
   Definitions={
     {
       Name="DivinationSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DivinationProgressionSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -77934,11 +77934,11 @@ DefineAbility({
   Definitions={
     {
       Name="EnchantmentSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="EnchantmentProgressionSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -78101,11 +78101,11 @@ DefineAbility({
   Definitions={
     {
       Name="EvocationSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="EvocationProgressionSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -78268,11 +78268,11 @@ DefineAbility({
   Definitions={
     {
       Name="IllusionSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="IllusionProgressionSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -78435,11 +78435,11 @@ DefineAbility({
   Definitions={
     {
       Name="NecromancySchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="NecromancyProgressionSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -78602,11 +78602,11 @@ DefineAbility({
   Definitions={
     {
       Name="TransmutationSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="TransmutationProgressionSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -78769,11 +78769,11 @@ DefineAbility({
   Definitions={
     {
       Name="UniversalSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="UniversalProgressionSchoolLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -79493,7 +79493,7 @@ DefineAbility({
   Definitions={
     {
       Name="AbjurationResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -79564,15 +79564,15 @@ DefineAbility({
   Definitions={
     {
       Name="AbjurationProtectiveWardTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AbjurationProtectiveWardDuration",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AbjurationProtectiveWardBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -79633,7 +79633,7 @@ DefineAbility({
   Definitions={
     {
       Name="AbjurationEnergyAbsorption",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -79669,7 +79669,7 @@ DefineAbility({
   Definitions={
     {
       Name="ConjurationSummonersCharmBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -79719,11 +79719,11 @@ DefineAbility({
   Definitions={
     {
       Name="ConjurationAcidDartDamageBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ConjurationAcidDartTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -79780,7 +79780,7 @@ DefineAbility({
   Definitions={
     {
       Name="ConjurationDimensionalSteps",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -79817,7 +79817,7 @@ DefineAbility({
   Definitions={
     {
       Name="DivinationForwarnedBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -79875,11 +79875,11 @@ DefineAbility({
   Definitions={
     {
       Name="DivinationDivinersFortuneBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DivinationDivinersFortuneTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -79942,7 +79942,7 @@ DefineAbility({
   Definitions={
     {
       Name="EnchantmentEnchantingSmileBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80007,11 +80007,11 @@ DefineAbility({
   Definitions={
     {
       Name="EnchantmentDazingTouchLimit",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="EnchantmentDazingTouchTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80068,7 +80068,7 @@ DefineAbility({
   Definitions={
     {
       Name="EnchantmentAuraOfDespairRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80105,7 +80105,7 @@ DefineAbility({
   Definitions={
     {
       Name="EvocationIntenseSpellsBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80165,7 +80165,7 @@ DefineAbility({
   Definitions={
     {
       Name="EvocationForceMissileTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80215,7 +80215,7 @@ DefineAbility({
   Definitions={
     {
       Name="EvocationElementalWallRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80251,7 +80251,7 @@ DefineAbility({
   Definitions={
     {
       Name="IllusionExtendedIllusionBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80302,11 +80302,11 @@ DefineAbility({
   Definitions={
     {
       Name="IllusionBlindingRayLimit",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="IllusionBlindingRayTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80363,7 +80363,7 @@ DefineAbility({
   Definitions={
     {
       Name="IllusionInvisibilityFieldRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80407,11 +80407,11 @@ DefineAbility({
   Definitions={
     {
       Name="PowerOverUndeadTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="PowerOverUndeadLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80475,15 +80475,15 @@ DefineAbility({
   Definitions={
     {
       Name="NecromancyGraveTouchDuration",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="NecromancyGraveTouchLimit",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="NecromancyGraveTouchTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80548,11 +80548,11 @@ DefineAbility({
   Definitions={
     {
       Name="NecromancyLifeSightRange",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="NecromancyLifeSightRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80603,11 +80603,11 @@ DefineAbility({
   Definitions={
     {
       Name="PowerOverUndeadCommandDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="PowerOverUndeadCommandHD",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80666,7 +80666,7 @@ DefineAbility({
   Definitions={
     {
       Name="PowerOverUndeadTurnDC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80712,11 +80712,11 @@ DefineAbility({
   Definitions={
     {
       Name="TransmutationPhysicalEnhancementBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="TransmutationPhysicalEnhancementProgression",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80887,11 +80887,11 @@ DefineAbility({
   Definitions={
     {
       Name="TransmutationTelekineticFistBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="TransmutationTelekineticFistTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80948,7 +80948,7 @@ DefineAbility({
   Definitions={
     {
       Name="TransmutationChangeShapeRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -80997,7 +80997,7 @@ DefineAbility({
   Definitions={
     {
       Name="UniversalHandOfTheApprenticeTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -81046,7 +81046,7 @@ DefineAbility({
   Definitions={
     {
       Name="UniversalMetamagicMasteryTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -81499,27 +81499,27 @@ ModifyAbility({
   Definitions={
     {
       Name="RacialStatStr",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RacialStatDex",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RacialStatCon",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RacialStatInt",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RacialStatWis",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RacialStatCha",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
 })
@@ -81532,11 +81532,11 @@ ModifyAbility({
   Definitions={
     {
       Name="GauntletOS",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="UnarmedLethal",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -81722,7 +81722,7 @@ ModifyAbility({
   Definitions={
     {
       Name="UncannyDodgeLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -81844,35 +81844,35 @@ DefineAbility({
   Definitions={
     {
       Name="RayAttackRange",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RayAttackBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RayDamageDice",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RayDamageSize",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RayDamageBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RayThreatRange",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RayCritMult",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AttackBonusSize",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -83324,11 +83324,11 @@ DefineAbility({
   Definitions={
     {
       Name="UncannyDodgeFlankingLevel",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="UncannyDodgeLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Abilities={
@@ -83533,7 +83533,7 @@ DefineAbility({
   Definitions={
     {
       Name="TrapSenseBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -83585,11 +83585,11 @@ DefineAbility({
   Definitions={
     {
       Name="WildEmpathy",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="WildEmpathyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -83635,7 +83635,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainPool",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -83687,19 +83687,19 @@ DefineAbility({
   Definitions={
     {
       Name="SneakAttackDieSize",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SneakAttackDice",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SneakAttackLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="RogueSneakAttackLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -83758,11 +83758,11 @@ DefineAbility({
   Definitions={
     {
       Name="DeathAttackDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DeathAttackDuration",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -83796,7 +83796,7 @@ DefineAbility({
   Definitions={
     {
       Name="SlipperymindTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -83819,11 +83819,11 @@ DefineAbility({
   Definitions={
     {
       Name="AuraChaosLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AlignmentAuraLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -83858,11 +83858,11 @@ DefineAbility({
   Definitions={
     {
       Name="AuraEvilLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AlignmentAuraLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -83897,11 +83897,11 @@ DefineAbility({
   Definitions={
     {
       Name="AuraGoodLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AlignmentAuraLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -83936,11 +83936,11 @@ DefineAbility({
   Definitions={
     {
       Name="AuraLawLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="AlignmentAuraLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -83991,7 +83991,7 @@ DefineAbility({
   Definitions={
     {
       Name="PrestigeClassChannelEnergyLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -84113,7 +84113,7 @@ DefineAbility({
   Definitions={
     {
       Name="USECMB",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -84154,23 +84154,23 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CMD",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CMB_STAT",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CMD_ACMod",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CM_SizeMod",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -84227,11 +84227,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB_BAB",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CMD_BAB",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -84388,11 +84388,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB_BullRush",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CMD_BullRush",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -84421,11 +84421,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB_Disarm",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CMD_Disarm",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -84454,11 +84454,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB_Grapple",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CMD_Grapple",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -84515,11 +84515,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB_Overrun",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CMD_Overrun",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -84548,11 +84548,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB_Sunder",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CMD_Sunder",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -84581,11 +84581,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB_Trip",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CMD_Trip",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -84699,11 +84699,11 @@ DefineAbility({
   Definitions={
     {
       Name="ArrowEnhancement",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ArrowEnhancementLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -84769,7 +84769,7 @@ DefineAbility({
   Definitions={
     {
       Name="SeekerArrowTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -84812,7 +84812,7 @@ DefineAbility({
   Definitions={
     {
       Name="PhaseArrowTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -84857,11 +84857,11 @@ DefineAbility({
   Definitions={
     {
       Name="HailArrowsTargets",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="HailArrowsTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -84911,7 +84911,7 @@ DefineAbility({
   Definitions={
     {
       Name="ArrowOfDeathDC",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -84992,7 +84992,7 @@ DefineAbility({
   Definitions={
     {
       Name="ImpromptuSneakTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -85040,7 +85040,7 @@ DefineAbility({
   Definitions={
     {
       Name="TrickySpellsTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -85135,11 +85135,11 @@ DefineAbility({
   Definitions={
     {
       Name="SneakAttackDice",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SneakAttackDieSize",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -85252,7 +85252,7 @@ DefineAbility({
   Definitions={
     {
       Name="AssassinPoisonSaveBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -85639,7 +85639,7 @@ DefineAbility({
   Definitions={
     {
       Name="DragonDiscipleArmorBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -85970,11 +85970,11 @@ DefineAbility({
   Definitions={
     {
       Name="DragonFormTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="DragonFormCL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -86014,7 +86014,7 @@ DefineAbility({
   Definitions={
     {
       Name="DragonDisciple_Wings_SpeedBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -86259,7 +86259,7 @@ DefineAbility({
   Definitions={
     {
       Name="CannyDefenseLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -86331,7 +86331,7 @@ DefineAbility({
   Definitions={
     {
       Name="ImprovedReaction",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -86421,7 +86421,7 @@ DefineAbility({
   Definitions={
     {
       Name="PreciseStrikeDamage",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -86460,7 +86460,7 @@ DefineAbility({
   Definitions={
     {
       Name="PreciseStrikeDamage",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -86492,7 +86492,7 @@ DefineAbility({
   Definitions={
     {
       Name="PreciseStrikeDamage",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Types={
@@ -86558,11 +86558,11 @@ DefineAbility({
   Definitions={
     {
       Name="ElaborateParryLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ElaborateDefense",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -86752,7 +86752,7 @@ DefineAbility({
   Definitions={
     {
       Name="EldritchKnightBonusFeatCount",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -86904,11 +86904,11 @@ DefineAbility({
   Definitions={
     {
       Name="LoremasterSecretsLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="LoremasterSecretCount",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -87017,7 +87017,7 @@ DefineAbility({
   Definitions={
     {
       Name="BonusLanguageCount",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -87405,11 +87405,11 @@ DefineAbility({
   Definitions={
     {
       Name="CombinedSpellsLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="CombinedSpellsMaxLevel",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -87638,7 +87638,7 @@ DefineAbility({
   Definitions={
     {
       Name="InspireActionBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -87808,7 +87808,7 @@ DefineAbility({
   Definitions={
     {
       Name="ShadowDancerTalentLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -87856,7 +87856,7 @@ DefineAbility({
   Definitions={
     {
       Name="ShadowIllusionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -87891,7 +87891,7 @@ DefineAbility({
   Definitions={
     {
       Name="ShadowCompanionLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -87933,11 +87933,11 @@ DefineAbility({
   Definitions={
     {
       Name="ShadowCallLvl",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ShadowCallTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -87985,11 +87985,11 @@ DefineAbility({
   Definitions={
     {
       Name="ShadowJump",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="ShadowJumpProgression",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -92921,19 +92921,19 @@ ModifyAbility({
   Definitions={
     {
       Name="SLA_Base_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Default_SLA_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SLA_Base_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="SLA_DC_STAT",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -93016,15 +93016,15 @@ DefineAbility({
   Definitions={
     {
       Name="Acid_Splash_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Acid_Splash_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Acid_Splash_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -93111,15 +93111,15 @@ DefineAbility({
   Definitions={
     {
       Name="Arcane_Mark_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Arcane_Mark_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Arcane_Mark_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -93206,15 +93206,15 @@ DefineAbility({
   Definitions={
     {
       Name="Bleed_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Bleed_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Bleed_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -93301,15 +93301,15 @@ DefineAbility({
   Definitions={
     {
       Name="Create_Water_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Create_Water_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Create_Water_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -93396,15 +93396,15 @@ DefineAbility({
   Definitions={
     {
       Name="Dancing_Lights_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Dancing_Lights_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Dancing_Lights_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -93491,15 +93491,15 @@ DefineAbility({
   Definitions={
     {
       Name="Daze_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Daze_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Daze_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -93586,15 +93586,15 @@ DefineAbility({
   Definitions={
     {
       Name="Detect_Magic_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Detect_Magic_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Detect_Magic_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -93681,15 +93681,15 @@ DefineAbility({
   Definitions={
     {
       Name="Detect_Poison_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Detect_Poison_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Detect_Poison_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -93776,15 +93776,15 @@ DefineAbility({
   Definitions={
     {
       Name="Disrupt_Undead_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Disrupt_Undead_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Disrupt_Undead_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -93871,15 +93871,15 @@ DefineAbility({
   Definitions={
     {
       Name="Flare_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Flare_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Flare_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -93966,15 +93966,15 @@ DefineAbility({
   Definitions={
     {
       Name="Ghost_Sound_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Ghost_Sound_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Ghost_Sound_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -94061,15 +94061,15 @@ DefineAbility({
   Definitions={
     {
       Name="Guidance_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Guidance_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Guidance_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -94156,15 +94156,15 @@ DefineAbility({
   Definitions={
     {
       Name="Know_Direction_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Know_Direction_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Know_Direction_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -94251,15 +94251,15 @@ DefineAbility({
   Definitions={
     {
       Name="Light_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Light_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Light_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -94346,15 +94346,15 @@ DefineAbility({
   Definitions={
     {
       Name="Lullaby_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Lullaby_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Lullaby_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -94441,15 +94441,15 @@ DefineAbility({
   Definitions={
     {
       Name="Mage_Hand_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Mage_Hand_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Mage_Hand_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -94536,15 +94536,15 @@ DefineAbility({
   Definitions={
     {
       Name="Mending_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Mending_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Mending_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -94631,15 +94631,15 @@ DefineAbility({
   Definitions={
     {
       Name="Message_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Message_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Message_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -94726,15 +94726,15 @@ DefineAbility({
   Definitions={
     {
       Name="Open_Close_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Open/Close_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Open_Close_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -94821,15 +94821,15 @@ DefineAbility({
   Definitions={
     {
       Name="Prestidigitation_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Prestidigitation_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Prestidigitation_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -94916,15 +94916,15 @@ DefineAbility({
   Definitions={
     {
       Name="Purify_Food_and_Drink_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Purify_Food_and_Drink_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Purify_Food_and_Drink_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -95011,15 +95011,15 @@ DefineAbility({
   Definitions={
     {
       Name="Ray_of_Frost_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Ray_of_Frost_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Ray_of_Frost_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -95106,15 +95106,15 @@ DefineAbility({
   Definitions={
     {
       Name="Read_Magic_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Read_Magic_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Read_Magic_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -95201,15 +95201,15 @@ DefineAbility({
   Definitions={
     {
       Name="Resistance_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Resistance_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Resistance_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -95296,15 +95296,15 @@ DefineAbility({
   Definitions={
     {
       Name="Stabilize_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Stabilize_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Stabilize_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -95391,15 +95391,15 @@ DefineAbility({
   Definitions={
     {
       Name="Summon_Instrument_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Summon_Instrument_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Summon_Instrument_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -95486,15 +95486,15 @@ DefineAbility({
   Definitions={
     {
       Name="Touch_of_Fatigue_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Touch_of_Fatigue_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Touch_of_Fatigue_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -95581,15 +95581,15 @@ DefineAbility({
   Definitions={
     {
       Name="Virtue_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Virtue_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Virtue_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -96297,15 +96297,15 @@ DefineAbility({
   Definitions={
     {
       Name="Calm_Animals_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Calm_Animals_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Calm_Animals_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -96392,15 +96392,15 @@ DefineAbility({
   Definitions={
     {
       Name="Charm_Animal_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Charm_Animal_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Charm_Animal_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -96487,15 +96487,15 @@ DefineAbility({
   Definitions={
     {
       Name="Cure_Light_Wounds_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Cure_Light_Wounds_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Cure_Light_Wounds_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -96582,15 +96582,15 @@ DefineAbility({
   Definitions={
     {
       Name="Detect_Animals_or_Plants_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Detect_Animals_or_Plants_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Detect_Animals_or_Plants_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -96677,15 +96677,15 @@ DefineAbility({
   Definitions={
     {
       Name="Detect_Snares_and_Pits_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Detect_Snares_and_Pits_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Detect_Snares_and_Pits_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -96772,15 +96772,15 @@ DefineAbility({
   Definitions={
     {
       Name="Endure_Elements_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Endure_Elements_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Endure_Elements_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -96867,15 +96867,15 @@ DefineAbility({
   Definitions={
     {
       Name="Entangle_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Entangle_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Entangle_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -96962,15 +96962,15 @@ DefineAbility({
   Definitions={
     {
       Name="Faerie_Fire_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Faerie_Fire_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Faerie_Fire_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -97057,15 +97057,15 @@ DefineAbility({
   Definitions={
     {
       Name="Goodberry_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Goodberry_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Goodberry_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -97152,15 +97152,15 @@ DefineAbility({
   Definitions={
     {
       Name="Hide_from_Animals_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Hide_from_Animals_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Hide_from_Animals_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -97247,15 +97247,15 @@ DefineAbility({
   Definitions={
     {
       Name="Jump_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Jump_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Jump_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -97342,15 +97342,15 @@ DefineAbility({
   Definitions={
     {
       Name="Longstrider_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Longstrider_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Longstrider_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -97437,15 +97437,15 @@ DefineAbility({
   Definitions={
     {
       Name="Magic_Fang_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Magic_Fang_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Magic_Fang_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -97532,15 +97532,15 @@ DefineAbility({
   Definitions={
     {
       Name="Magic_Stone_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Magic_Stone_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Magic_Stone_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -97627,15 +97627,15 @@ DefineAbility({
   Definitions={
     {
       Name="Obscuring_Mist_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Obscuring_Mist_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Obscuring_Mist_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -97722,15 +97722,15 @@ DefineAbility({
   Definitions={
     {
       Name="Pass_without_Trace_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Pass_without_Trace_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Pass_without_Trace_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -97817,15 +97817,15 @@ DefineAbility({
   Definitions={
     {
       Name="Produce_Flame_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Produce_Flame_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Produce_Flame_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -97912,15 +97912,15 @@ DefineAbility({
   Definitions={
     {
       Name="Shillelagh_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Shillelagh_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Shillelagh_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -98007,15 +98007,15 @@ DefineAbility({
   Definitions={
     {
       Name="Speak_with_Animals_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Speak_with_Animals_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Speak_with_Animals_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -98102,15 +98102,15 @@ DefineAbility({
   Definitions={
     {
       Name="Summon_Natures_Ally_I_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Summon_Natures_Ally_I_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Summon_Natures_Ally_I_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -98197,15 +98197,15 @@ DefineAbility({
   Definitions={
     {
       Name="Darkness_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Darkness_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Darkness_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -98292,15 +98292,15 @@ DefineAbility({
   Definitions={
     {
       Name="Deeper_Darkness_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Deeper_Darkness_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Deeper_Darkness_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -98387,15 +98387,15 @@ DefineAbility({
   Definitions={
     {
       Name="Levitate_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Levitate_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Levitate_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -98482,15 +98482,15 @@ DefineAbility({
   Definitions={
     {
       Name="Detect_Magic_Times",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Detect_Magic_DC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="Detect_Magic_LVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -98987,7 +98987,7 @@ DefineAbility({
   Definitions={
     {
       Name="LightningArcTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99018,7 +99018,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainAirResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99129,7 +99129,7 @@ DefineAbility({
   Definitions={
     {
       Name="SpeakWithAnimalsRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99166,7 +99166,7 @@ DefineAbility({
   Definitions={
     {
       Name="AnimalCompanionMasterLVL",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99225,7 +99225,7 @@ DefineAbility({
   Definitions={
     {
       Name="ArtificersTouchTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99281,7 +99281,7 @@ DefineAbility({
   Definitions={
     {
       Name="DancingWeaponTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99337,7 +99337,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofChaosTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99395,7 +99395,7 @@ DefineAbility({
   Definitions={
     {
       Name="ChaosBladeTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99452,7 +99452,7 @@ DefineAbility({
   Definitions={
     {
       Name="DazingTouchTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99502,7 +99502,7 @@ DefineAbility({
   Definitions={
     {
       Name="CharmCharmingSmileRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99559,7 +99559,7 @@ DefineAbility({
   Definitions={
     {
       Name="CalmingTouchTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99615,7 +99615,7 @@ DefineAbility({
   Definitions={
     {
       Name="UnityTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99672,7 +99672,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofDarknessTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99728,7 +99728,7 @@ DefineAbility({
   Definitions={
     {
       Name="EyesOfDarknessRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99786,7 +99786,7 @@ DefineAbility({
   Definitions={
     {
       Name="BleedingTouchTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99861,7 +99861,7 @@ DefineAbility({
   Definitions={
     {
       Name="DestructiveSmiteTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99918,7 +99918,7 @@ DefineAbility({
   Definitions={
     {
       Name="DestructiveAuraRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -99977,7 +99977,7 @@ DefineAbility({
   Definitions={
     {
       Name="AcidDartTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100008,7 +100008,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainEarthResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100120,7 +100120,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofEvilTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100177,7 +100177,7 @@ DefineAbility({
   Definitions={
     {
       Name="ScytheOfEvilTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100235,7 +100235,7 @@ DefineAbility({
   Definitions={
     {
       Name="FireBoltTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100266,7 +100266,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainFireResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100378,7 +100378,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofGloryTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100428,7 +100428,7 @@ DefineAbility({
   Definitions={
     {
       Name="GloryDivinePresenceRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100486,7 +100486,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofGoodTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100543,7 +100543,7 @@ DefineAbility({
   Definitions={
     {
       Name="HolyLanceTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100601,7 +100601,7 @@ DefineAbility({
   Definitions={
     {
       Name="RebukeDeathTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100655,7 +100655,7 @@ DefineAbility({
   Definitions={
     {
       Name="LoreKeeperDomainSkillBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100711,7 +100711,7 @@ DefineAbility({
   Definitions={
     {
       Name="RemoteViewingRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100767,7 +100767,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofLawTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100824,7 +100824,7 @@ DefineAbility({
   Definitions={
     {
       Name="StaffOfOrderTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100880,7 +100880,7 @@ DefineAbility({
   Definitions={
     {
       Name="LiberationRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100937,7 +100937,7 @@ DefineAbility({
   Definitions={
     {
       Name="FreedomsCallRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -100994,7 +100994,7 @@ DefineAbility({
   Definitions={
     {
       Name="BitofLuckTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101051,7 +101051,7 @@ DefineAbility({
   Definitions={
     {
       Name="GoodFortuneTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101109,7 +101109,7 @@ DefineAbility({
   Definitions={
     {
       Name="VisionofMadnessTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101166,7 +101166,7 @@ DefineAbility({
   Definitions={
     {
       Name="AuraOfMadnessRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101223,7 +101223,7 @@ DefineAbility({
   Definitions={
     {
       Name="HandoftheAcolyteTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101279,7 +101279,7 @@ DefineAbility({
   Definitions={
     {
       Name="DispellingTouchTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101385,7 +101385,7 @@ DefineAbility({
   Definitions={
     {
       Name="WoodenFistRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101442,7 +101442,7 @@ DefineAbility({
   Definitions={
     {
       Name="BrambleArmorRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101500,7 +101500,7 @@ DefineAbility({
   Definitions={
     {
       Name="ResistantTouchTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101558,7 +101558,7 @@ DefineAbility({
   Definitions={
     {
       Name="AuraOfProtectionRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101616,7 +101616,7 @@ DefineAbility({
   Definitions={
     {
       Name="GentleRestTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101672,7 +101672,7 @@ DefineAbility({
   Definitions={
     {
       Name="WardAgainstDeathRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101732,7 +101732,7 @@ DefineAbility({
   Definitions={
     {
       Name="BlastRuneTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101807,7 +101807,7 @@ DefineAbility({
   Definitions={
     {
       Name="StrengthSurgeTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101863,7 +101863,7 @@ DefineAbility({
   Definitions={
     {
       Name="MightOfTheGodsRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101940,7 +101940,7 @@ DefineAbility({
   Definitions={
     {
       Name="SunNimbusOfLightRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -101997,7 +101997,7 @@ DefineAbility({
   Definitions={
     {
       Name="AgileFeetTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -102054,7 +102054,7 @@ DefineAbility({
   Definitions={
     {
       Name="TravelDimensionalHop",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -102112,7 +102112,7 @@ DefineAbility({
   Definitions={
     {
       Name="CopycatTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -102162,11 +102162,11 @@ DefineAbility({
   Definitions={
     {
       Name="TrickeryMastersIllusionDC",
-      InitialValue=0,
+      InitialValue="0",
     },
     {
       Name="TrickeryMastersIllusionRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -102231,7 +102231,7 @@ DefineAbility({
   Definitions={
     {
       Name="BattleRageTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -102301,7 +102301,7 @@ DefineAbility({
   Definitions={
     {
       Name="WeaponMasterRounds",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -102359,7 +102359,7 @@ DefineAbility({
   Definitions={
     {
       Name="IcicleTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -102390,7 +102390,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainWaterResistanceBonus",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -102503,7 +102503,7 @@ DefineAbility({
   Definitions={
     {
       Name="StormBurstTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
@@ -102552,7 +102552,7 @@ DefineAbility({
   Definitions={
     {
       Name="WeatherLightningLordTimes",
-      InitialValue=0,
+      InitialValue="0",
     },
   },
   Bonuses={
