@@ -8,7 +8,7 @@ DefineSave({
     Variables={
       "Fortitude",
     },
-    Formula="CON",
+    Formula=Formula("CON"),
   },
 })
 DefineSave({
@@ -19,7 +19,7 @@ DefineSave({
     Variables={
       "Reflex",
     },
-    Formula="DEX",
+    Formula=Formula("DEX"),
   },
 })
 DefineSave({
@@ -30,6 +30,6 @@ DefineSave({
     Variables={
       "Will",
     },
-    Formula="WIS",
+    Formula=Formula("WIS"),
   },
 })

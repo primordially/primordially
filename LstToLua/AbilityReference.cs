@@ -7,8 +7,7 @@ namespace Primordially.LstToLua
 {
     internal class AbilityReference : ConditionalObject
     {
-        public AbilityReference(string category, string nature, List<string> names, List<string> types, List<Condition> conditions)
-            :base(conditions)
+        public AbilityReference(string category, string nature, List<string> names, List<string> types)
         {
             Category = category;
             Nature = nature;
@@ -50,7 +49,10 @@ namespace Primordially.LstToLua
                 }
             }
 
-            return new AbilityReference(category, nature, names, types, conditions);
+            var result = new AbilityReference(category, nature, names, types);
+            foreach (var condition in conditions)
+                result.Conditions.Add(condition);
+            return result;
         }
 
         public override void AddField(TextSpan field)

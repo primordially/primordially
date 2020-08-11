@@ -35,7 +35,7 @@ DefineClass({
   Definitions={
     {
       Name="BarbarianLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44,7 +44,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -56,7 +56,7 @@ DefineClass({
       Variables={
         "BASE.Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -69,7 +69,7 @@ DefineClass({
         "BASE.Reflex",
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -81,7 +81,7 @@ DefineClass({
       Variables={
         "ClassBABFull",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -93,14 +93,14 @@ DefineClass({
       Variables={
         "BarbarianLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSaveGood_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -112,7 +112,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -124,7 +124,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -168,7 +168,7 @@ DefineClass({
   Definitions={
     {
       Name="BarbarianLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -177,7 +177,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -189,7 +189,7 @@ DefineClass({
       Variables={
         "BASE.Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -202,7 +202,7 @@ DefineClass({
         "BASE.Reflex",
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -214,7 +214,7 @@ DefineClass({
       Variables={
         "ClassBABFull",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -226,14 +226,14 @@ DefineClass({
       Variables={
         "BarbarianLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSaveGood_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -245,7 +245,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -257,7 +257,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -304,11 +304,11 @@ DefineClass({
   Definitions={
     {
       Name="BardLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CasterLevelBLBard",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -317,7 +317,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -330,7 +330,7 @@ DefineClass({
         "BASE.Reflex",
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -342,7 +342,7 @@ DefineClass({
       Variables={
         "BASE.Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -354,7 +354,7 @@ DefineClass({
       Variables={
         "ClassBABModerate",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -366,14 +366,14 @@ DefineClass({
       Variables={
         "BardLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSavePoor_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -385,7 +385,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -397,7 +397,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -409,28 +409,28 @@ DefineClass({
       Variables={
         "Caster_Level_BL_Stripped_Bard",
       },
-      Formula="Caster_Level_Bard-CasterLevelBLBard",
+      Formula=Formula("Caster_Level_Bard-CasterLevelBLBard"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Bard",
       },
-      Formula="CL+Caster_Level_Bonus+CasterLevelBLBard",
+      Formula=Formula("CL+Caster_Level_Bonus+CasterLevelBLBard"),
     },
     {
       Category="VAR",
       Variables={
         "CasterLevelBL_x_Bard",
       },
-      Formula="charbonusto(\"PCLEVEL\",\"Bard\")",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Bard\")"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Highest__Arcane",
       },
-      Formula="Caster_Level_Bard",
+      Formula=Formula("Caster_Level_Bard"),
       Type={
         Name="Base",
         Replace=false,
@@ -442,14 +442,14 @@ DefineClass({
       Variables={
         "Caster_Level_Total__Arcane",
       },
-      Formula="Caster_Level_Bard",
+      Formula=Formula("Caster_Level_Bard"),
     },
     {
       Category="CASTERLEVEL",
       Variables={
         "Bard",
       },
-      Formula="Caster_Level_BL_Stripped_Bard",
+      Formula=Formula("Caster_Level_BL_Stripped_Bard"),
     },
   },
   Types={
@@ -632,15 +632,15 @@ DefineClass({
   Definitions={
     {
       Name="ClericLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ClericDomainCount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CasterLevelBLCleric",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -649,7 +649,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -661,7 +661,7 @@ DefineClass({
       Variables={
         "NUMBER",
       },
-      Formula="ClericDomainCount",
+      Formula=Formula("ClericDomainCount"),
     },
     {
       Category="SAVE",
@@ -669,7 +669,7 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -681,7 +681,7 @@ DefineClass({
       Variables={
         "BASE.Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -693,7 +693,7 @@ DefineClass({
       Variables={
         "ClassBABModerate",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -705,28 +705,28 @@ DefineClass({
       Variables={
         "ClericLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "DomainLVL",
       },
-      Formula="ClericLVL",
+      Formula=Formula("ClericLVL"),
     },
     {
       Category="VAR",
       Variables={
         "ClericDomainCount",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSaveGood_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -738,7 +738,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -750,7 +750,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -762,28 +762,28 @@ DefineClass({
       Variables={
         "Caster_Level_BL_Stripped_Cleric",
       },
-      Formula="Caster_Level_Cleric-CasterLevelBLCleric",
+      Formula=Formula("Caster_Level_Cleric-CasterLevelBLCleric"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Cleric",
       },
-      Formula="CL+Caster_Level_Bonus+CasterLevelBLCleric",
+      Formula=Formula("CL+Caster_Level_Bonus+CasterLevelBLCleric"),
     },
     {
       Category="VAR",
       Variables={
         "CasterLevelBL_x_Cleric",
       },
-      Formula="charbonusto(\"PCLEVEL\",\"Cleric\")",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Cleric\")"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Highest__Divine",
       },
-      Formula="Caster_Level_Cleric",
+      Formula=Formula("Caster_Level_Cleric"),
       Type={
         Name="Base",
         Replace=false,
@@ -795,7 +795,7 @@ DefineClass({
       Variables={
         "Cleric",
       },
-      Formula="Caster_Level_BL_Stripped_Cleric",
+      Formula=Formula("Caster_Level_BL_Stripped_Cleric"),
     },
   },
   Types={
@@ -921,7 +921,7 @@ DefineClass({
       Definitions={
         {
           Name="ClericSkillPts",
-          InitialValue="0",
+          InitialValue=Formula("0"),
         },
       },
       Bonuses={
@@ -930,7 +930,7 @@ DefineClass({
           Variables={
             "NUMBER",
           },
-          Formula="ClericSkillPts",
+          Formula=Formula("ClericSkillPts"),
         },
       },
     },
@@ -1067,11 +1067,11 @@ DefineClass({
   Definitions={
     {
       Name="DruidLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CasterLevelBLDruid",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1080,7 +1080,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -1093,7 +1093,7 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -1105,7 +1105,7 @@ DefineClass({
       Variables={
         "BASE.Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -1117,7 +1117,7 @@ DefineClass({
       Variables={
         "ClassBABModerate",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -1129,14 +1129,14 @@ DefineClass({
       Variables={
         "DruidLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSaveGood_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -1148,7 +1148,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -1160,7 +1160,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -1172,28 +1172,28 @@ DefineClass({
       Variables={
         "Caster_Level_BL_Stripped_Druid",
       },
-      Formula="Caster_Level_Druid-CasterLevelBLDruid",
+      Formula=Formula("Caster_Level_Druid-CasterLevelBLDruid"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Druid",
       },
-      Formula="CL+Caster_Level_Bonus+CasterLevelBLDruid",
+      Formula=Formula("CL+Caster_Level_Bonus+CasterLevelBLDruid"),
     },
     {
       Category="VAR",
       Variables={
         "CasterLevelBL_x_Druid",
       },
-      Formula="charbonusto(\"PCLEVEL\",\"Druid\")",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Druid\")"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Highest__Divine",
       },
-      Formula="Caster_Level_Druid",
+      Formula=Formula("Caster_Level_Druid"),
       Type={
         Name="Base",
         Replace=false,
@@ -1205,7 +1205,7 @@ DefineClass({
       Variables={
         "Druid",
       },
-      Formula="Caster_Level_BL_Stripped_Druid",
+      Formula=Formula("Caster_Level_BL_Stripped_Druid"),
     },
   },
   Types={
@@ -1558,7 +1558,7 @@ DefineClass({
   Definitions={
     {
       Name="FighterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1567,7 +1567,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -1579,7 +1579,7 @@ DefineClass({
       Variables={
         "BASE.Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -1592,7 +1592,7 @@ DefineClass({
         "BASE.Reflex",
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -1604,7 +1604,7 @@ DefineClass({
       Variables={
         "ClassBABFull",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -1616,14 +1616,14 @@ DefineClass({
       Variables={
         "FighterLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSaveGood_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -1635,7 +1635,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -1647,7 +1647,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -1710,19 +1710,19 @@ DefineClass({
   Definitions={
     {
       Name="FlurryOfBlows",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MonkLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="KiPoolWis",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MonkFeatQualify",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1731,28 +1731,28 @@ DefineClass({
       Variables={
         "FlurryOfBlows",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "MonkLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "KiPoolWis",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "KiPool",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -1814,15 +1814,15 @@ DefineClass({
   Definitions={
     {
       Name="PaladinLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="PaladinDomainCount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CasterLevelBLPaladin",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1831,7 +1831,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -1843,7 +1843,7 @@ DefineClass({
       Variables={
         "NUMBER",
       },
-      Formula="PaladinDomainCount",
+      Formula=Formula("PaladinDomainCount"),
     },
     {
       Category="SAVE",
@@ -1851,7 +1851,7 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -1863,7 +1863,7 @@ DefineClass({
       Variables={
         "BASE.Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -1875,7 +1875,7 @@ DefineClass({
       Variables={
         "ClassBABFull",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -1887,14 +1887,14 @@ DefineClass({
       Variables={
         "PaladinLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSaveGood_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -1906,7 +1906,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -1918,7 +1918,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -1930,28 +1930,28 @@ DefineClass({
       Variables={
         "Caster_Level_BL_Stripped_Paladin",
       },
-      Formula="Caster_Level_Paladin-CasterLevelBLPaladin",
+      Formula=Formula("Caster_Level_Paladin-CasterLevelBLPaladin"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Paladin",
       },
-      Formula="CL+Caster_Level_Bonus-3+CasterLevelBLPaladin",
+      Formula=Formula("CL+Caster_Level_Bonus-3+CasterLevelBLPaladin"),
     },
     {
       Category="VAR",
       Variables={
         "CasterLevelBL_x_Paladin",
       },
-      Formula="charbonusto(\"PCLEVEL\",\"Paladin\")",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Paladin\")"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Highest__Divine",
       },
-      Formula="Caster_Level_Paladin",
+      Formula=Formula("Caster_Level_Paladin"),
       Type={
         Name="Base",
         Replace=false,
@@ -1963,7 +1963,7 @@ DefineClass({
       Variables={
         "Paladin",
       },
-      Formula="Caster_Level_BL_Stripped_Paladin",
+      Formula=Formula("Caster_Level_BL_Stripped_Paladin"),
       Conditions={
         function (character)
           return 1 <= #filter(ipairs(character.ClassLevels),
@@ -2109,7 +2109,7 @@ DefineClass({
   Definitions={
     {
       Name="PaladinLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -2118,7 +2118,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -2131,7 +2131,7 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -2143,7 +2143,7 @@ DefineClass({
       Variables={
         "BASE.Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -2155,7 +2155,7 @@ DefineClass({
       Variables={
         "ClassBABFull",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -2167,14 +2167,14 @@ DefineClass({
       Variables={
         "PaladinLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSaveGood_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -2186,7 +2186,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -2198,7 +2198,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -2356,11 +2356,11 @@ DefineClass({
   Definitions={
     {
       Name="RangerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CasterLevelBLRanger",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -2369,7 +2369,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -2382,7 +2382,7 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -2394,7 +2394,7 @@ DefineClass({
       Variables={
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -2406,7 +2406,7 @@ DefineClass({
       Variables={
         "ClassBABFull",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -2418,14 +2418,14 @@ DefineClass({
       Variables={
         "RangerLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSaveGood_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -2437,7 +2437,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -2449,7 +2449,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -2461,28 +2461,28 @@ DefineClass({
       Variables={
         "Caster_Level_BL_Stripped_Ranger",
       },
-      Formula="Caster_Level_Ranger-CasterLevelBLRanger",
+      Formula=Formula("Caster_Level_Ranger-CasterLevelBLRanger"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Ranger",
       },
-      Formula="CL+Caster_Level_Bonus-3+CasterLevelBLRanger",
+      Formula=Formula("CL+Caster_Level_Bonus-3+CasterLevelBLRanger"),
     },
     {
       Category="VAR",
       Variables={
         "CasterLevelBL_x_Ranger",
       },
-      Formula="charbonusto(\"PCLEVEL\",\"Ranger\")",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Ranger\")"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Highest__Divine",
       },
-      Formula="Caster_Level_Ranger",
+      Formula=Formula("Caster_Level_Ranger"),
       Type={
         Name="Base",
         Replace=false,
@@ -2494,7 +2494,7 @@ DefineClass({
       Variables={
         "Ranger",
       },
-      Formula="Caster_Level_Ranger",
+      Formula=Formula("Caster_Level_Ranger"),
       Conditions={
         function (character)
           return 1 <= #filter(ipairs(character.ClassLevels),
@@ -2650,7 +2650,7 @@ DefineClass({
       Definitions={
         {
           Name="DisableRangerHuntersBond",
-          InitialValue="0",
+          InitialValue=Formula("0"),
         },
       },
       Bonuses={
@@ -2659,7 +2659,7 @@ DefineClass({
           Variables={
             "DisableRangerHuntersBond",
           },
-          Formula="1",
+          Formula=Formula("1"),
           Conditions={
             function (character)
               return 1 <= #filter(character.Abilities, function (ability)
@@ -2682,7 +2682,7 @@ DefineClass({
   Definitions={
     {
       Name="RogueLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -2691,7 +2691,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -2703,7 +2703,7 @@ DefineClass({
       Variables={
         "BASE.Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -2716,7 +2716,7 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -2728,7 +2728,7 @@ DefineClass({
       Variables={
         "ClassBABModerate",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -2740,14 +2740,14 @@ DefineClass({
       Variables={
         "RogueLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSavePoor_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -2759,7 +2759,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -2771,7 +2771,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -2829,11 +2829,11 @@ DefineClass({
   Definitions={
     {
       Name="SorcererLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CasterLevelBLSorcerer",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -2842,7 +2842,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -2854,7 +2854,7 @@ DefineClass({
       Variables={
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -2867,7 +2867,7 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -2879,7 +2879,7 @@ DefineClass({
       Variables={
         "ClassBABPoor",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -2891,14 +2891,14 @@ DefineClass({
       Variables={
         "SorcererLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSavePoor_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -2910,7 +2910,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -2922,7 +2922,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -2934,28 +2934,28 @@ DefineClass({
       Variables={
         "Caster_Level_BL_Stripped_Sorcerer",
       },
-      Formula="Caster_Level_Sorcerer-CasterLevelBLSorcerer",
+      Formula=Formula("Caster_Level_Sorcerer-CasterLevelBLSorcerer"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Sorcerer",
       },
-      Formula="CL+Caster_Level_Bonus+CasterLevelBLSorcerer",
+      Formula=Formula("CL+Caster_Level_Bonus+CasterLevelBLSorcerer"),
     },
     {
       Category="VAR",
       Variables={
         "CasterLevelBL_x_Sorcerer",
       },
-      Formula="charbonusto(\"PCLEVEL\",\"Sorcerer\")",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Sorcerer\")"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Highest__Arcane",
       },
-      Formula="Caster_Level_Sorcerer",
+      Formula=Formula("Caster_Level_Sorcerer"),
       Type={
         Name="Base",
         Replace=false,
@@ -2967,14 +2967,14 @@ DefineClass({
       Variables={
         "Caster_Level_Total__Arcane",
       },
-      Formula="Caster_Level_Sorcerer",
+      Formula=Formula("Caster_Level_Sorcerer"),
     },
     {
       Category="CASTERLEVEL",
       Variables={
         "Sorcerer",
       },
-      Formula="Caster_Level_BL_Stripped_Sorcerer",
+      Formula=Formula("Caster_Level_BL_Stripped_Sorcerer"),
     },
   },
   Types={
@@ -3157,23 +3157,23 @@ DefineClass({
   Definitions={
     {
       Name="DisallowWizardArcaneSchoolArchetype",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="WizardLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SpellMasteryQualify",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Caster_Level_BL_Stripped_Wizard",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CasterLevelBLWizard",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -3182,7 +3182,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -3194,7 +3194,7 @@ DefineClass({
       Variables={
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -3207,7 +3207,7 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -3219,7 +3219,7 @@ DefineClass({
       Variables={
         "ClassBABPoor",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -3231,21 +3231,21 @@ DefineClass({
       Variables={
         "WizardLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "SpellMasteryQualify",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSavePoor_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -3257,7 +3257,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -3269,7 +3269,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -3281,28 +3281,28 @@ DefineClass({
       Variables={
         "Caster_Level_BL_Stripped_Wizard",
       },
-      Formula="Caster_Level_Wizard-CasterLevelBLWizard",
+      Formula=Formula("Caster_Level_Wizard-CasterLevelBLWizard"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Wizard",
       },
-      Formula="WizardLVL+Caster_Level_Bonus+CasterLevelBLWizard",
+      Formula=Formula("WizardLVL+Caster_Level_Bonus+CasterLevelBLWizard"),
     },
     {
       Category="VAR",
       Variables={
         "CasterLevelBL_x_Wizard",
       },
-      Formula="charbonusto(\"PCLEVEL\",\"Wizard\")",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Wizard\")"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Highest__Arcane",
       },
-      Formula="Caster_Level_Wizard",
+      Formula=Formula("Caster_Level_Wizard"),
       Type={
         Name="Base",
         Replace=false,
@@ -3314,14 +3314,14 @@ DefineClass({
       Variables={
         "Caster_Level_Total__Arcane",
       },
-      Formula="Caster_Level_Wizard",
+      Formula=Formula("Caster_Level_Wizard"),
     },
     {
       Category="CASTERLEVEL",
       Variables={
         "Wizard",
       },
-      Formula="Caster_Level_BL_Stripped_Wizard",
+      Formula=Formula("Caster_Level_BL_Stripped_Wizard"),
     },
   },
   Types={
@@ -3669,8 +3669,8 @@ DefineClass({
     },
     {
       Choice={
-        Kind="",
-        Value="",
+        Kind=nil,
+        Value=nil,
       },
       Cost=0,
       Levels={
@@ -3727,7 +3727,7 @@ DefineClass({
   Definitions={
     {
       Name="ArcaneArcherLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -3742,7 +3742,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -3754,7 +3754,7 @@ DefineClass({
       Variables={
         "BASE.Will",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
     },
     {
       Category="SAVE",
@@ -3762,14 +3762,14 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Reflex",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
     },
     {
       Category="VAR",
       Variables={
         "ClassBABFull",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -3781,14 +3781,14 @@ DefineClass({
       Variables={
         "ArcaneArcherLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSaveGood_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -3800,7 +3800,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -3812,7 +3812,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -3939,7 +3939,7 @@ DefineClass({
   Definitions={
     {
       Name="ArcaneTricksterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -3965,7 +3965,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -3977,7 +3977,7 @@ DefineClass({
       Variables={
         "BASE.Fortitude",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
     },
     {
       Category="SAVE",
@@ -3985,14 +3985,14 @@ DefineClass({
         "BASE.Reflex",
         "BASE.Will",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
     },
     {
       Category="VAR",
       Variables={
         "ClassBABPoor",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -4004,14 +4004,14 @@ DefineClass({
       Variables={
         "ArcaneTricksterLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSavePoor_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4023,7 +4023,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4035,7 +4035,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4177,7 +4177,7 @@ DefineClass({
   Definitions={
     {
       Name="AssassinLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -4203,7 +4203,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -4215,7 +4215,7 @@ DefineClass({
       Variables={
         "BASE.Reflex",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
     },
     {
       Category="SAVE",
@@ -4223,14 +4223,14 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Will",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
     },
     {
       Category="VAR",
       Variables={
         "ClassBABModerate",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -4242,14 +4242,14 @@ DefineClass({
       Variables={
         "AssassinLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSavePoor_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4261,7 +4261,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4273,7 +4273,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4394,7 +4394,7 @@ DefineClass({
   Definitions={
     {
       Name="DragonDiscipleLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -4411,7 +4411,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -4424,21 +4424,21 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Will",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
     },
     {
       Category="SAVE",
       Variables={
         "BASE.Reflex",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
     },
     {
       Category="VAR",
       Variables={
         "ClassBABFull",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -4450,14 +4450,14 @@ DefineClass({
       Variables={
         "DragonDiscipleLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSaveGood_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4469,7 +4469,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4481,7 +4481,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4590,7 +4590,7 @@ DefineClass({
   Definitions={
     {
       Name="DuelistLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -4607,7 +4607,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -4619,7 +4619,7 @@ DefineClass({
       Variables={
         "BASE.Reflex",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
     },
     {
       Category="SAVE",
@@ -4627,14 +4627,14 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Will",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
     },
     {
       Category="VAR",
       Variables={
         "ClassBABFull",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -4646,14 +4646,14 @@ DefineClass({
       Variables={
         "DuelistLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSavePoor_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4665,7 +4665,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4677,7 +4677,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4727,7 +4727,7 @@ DefineClass({
   Definitions={
     {
       Name="EldritchKnightLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -4746,7 +4746,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -4758,7 +4758,7 @@ DefineClass({
       Variables={
         "BASE.Fortitude",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
     },
     {
       Category="SAVE",
@@ -4766,14 +4766,14 @@ DefineClass({
         "BASE.Reflex",
         "BASE.Will",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
     },
     {
       Category="VAR",
       Variables={
         "ClassBABFull",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -4785,14 +4785,14 @@ DefineClass({
       Variables={
         "EldritchKnightLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSaveGood_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4804,7 +4804,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4816,7 +4816,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4949,7 +4949,7 @@ DefineClass({
   Definitions={
     {
       Name="LoremasterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -4969,7 +4969,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -4981,7 +4981,7 @@ DefineClass({
       Variables={
         "BASE.Will",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
     },
     {
       Category="SAVE",
@@ -4989,14 +4989,14 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Reflex",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
     },
     {
       Category="VAR",
       Variables={
         "ClassBABPoor",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -5008,14 +5008,14 @@ DefineClass({
       Variables={
         "LoremasterLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSavePoor_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -5027,7 +5027,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -5039,7 +5039,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -5179,7 +5179,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -5191,7 +5191,7 @@ DefineClass({
       Variables={
         "BASE.Will",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
     },
     {
       Category="SAVE",
@@ -5199,14 +5199,14 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Reflex",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
     },
     {
       Category="VAR",
       Variables={
         "ClassBABPoor",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -5218,7 +5218,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -5230,7 +5230,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -5242,7 +5242,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -5397,7 +5397,7 @@ DefineClass({
   Definitions={
     {
       Name="PathfinderChroniclerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -5423,7 +5423,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -5435,7 +5435,7 @@ DefineClass({
       Variables={
         "BASE.Will",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
     },
     {
       Category="SAVE",
@@ -5443,14 +5443,14 @@ DefineClass({
         "BASE.Reflex",
         "BASE.Fortitude",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
     },
     {
       Category="VAR",
       Variables={
         "ClassBABModerate",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -5462,14 +5462,14 @@ DefineClass({
       Variables={
         "PathfinderChroniclerLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSavePoor_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -5481,7 +5481,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -5493,7 +5493,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -5543,7 +5543,7 @@ DefineClass({
   Definitions={
     {
       Name="ShadowdancerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -5563,7 +5563,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -5575,7 +5575,7 @@ DefineClass({
       Variables={
         "BASE.Reflex",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
     },
     {
       Category="SAVE",
@@ -5583,14 +5583,14 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Will",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
     },
     {
       Category="VAR",
       Variables={
         "ClassBABModerate",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -5602,14 +5602,14 @@ DefineClass({
       Variables={
         "ShadowdancerLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSavePoor_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -5621,7 +5621,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -5633,7 +5633,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -5679,11 +5679,11 @@ DefineClass({
   Definitions={
     {
       Name="AdeptLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CasterLevelBLAdept",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -5701,7 +5701,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -5714,7 +5714,7 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -5726,7 +5726,7 @@ DefineClass({
       Variables={
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -5738,7 +5738,7 @@ DefineClass({
       Variables={
         "ClassBABPoor",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -5750,14 +5750,14 @@ DefineClass({
       Variables={
         "AdeptLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSavePoor_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -5769,7 +5769,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -5781,7 +5781,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -5793,28 +5793,28 @@ DefineClass({
       Variables={
         "Caster_Level_BL_Stripped_Adept",
       },
-      Formula="Caster_Level_Adept-CasterLevelBLAdept",
+      Formula=Formula("Caster_Level_Adept-CasterLevelBLAdept"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Adept",
       },
-      Formula="AdeptLVL+Caster_Level_Bonus+CasterLevelBLAdept",
+      Formula=Formula("AdeptLVL+Caster_Level_Bonus+CasterLevelBLAdept"),
     },
     {
       Category="VAR",
       Variables={
         "CasterLevelBL_x_Adept",
       },
-      Formula="charbonusto(\"PCLEVEL\",\"Adept\")",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Adept\")"),
     },
     {
       Category="VAR",
       Variables={
         "Caster_Level_Highest__Divine",
       },
-      Formula="Caster_Level_Adept",
+      Formula=Formula("Caster_Level_Adept"),
       Type={
         Name="Base",
         Replace=false,
@@ -5826,7 +5826,7 @@ DefineClass({
       Variables={
         "Adept",
       },
-      Formula="Caster_Level_BL_Stripped_Adept",
+      Formula=Formula("Caster_Level_BL_Stripped_Adept"),
     },
   },
   Types={
@@ -6054,7 +6054,7 @@ DefineClass({
           Variables={
             "FamiliarMasterLVL",
           },
-          Formula="CL",
+          Formula=Formula("CL"),
         },
       },
       Abilities={
@@ -6169,7 +6169,7 @@ DefineClass({
   Definitions={
     {
       Name="AristocratLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -6196,7 +6196,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -6209,7 +6209,7 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -6221,7 +6221,7 @@ DefineClass({
       Variables={
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -6233,7 +6233,7 @@ DefineClass({
       Variables={
         "ClassBABModerate",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -6245,14 +6245,14 @@ DefineClass({
       Variables={
         "AristocratLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSavePoor_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -6264,7 +6264,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -6276,7 +6276,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -6356,7 +6356,7 @@ DefineClass({
   Definitions={
     {
       Name="CommonerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -6374,7 +6374,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -6388,7 +6388,7 @@ DefineClass({
         "BASE.Reflex",
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -6400,7 +6400,7 @@ DefineClass({
       Variables={
         "ClassBABPoor",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -6412,14 +6412,14 @@ DefineClass({
       Variables={
         "CommonerLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSavePoor_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -6431,7 +6431,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -6443,7 +6443,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -6484,7 +6484,7 @@ DefineClass({
   Definitions={
     {
       Name="ExpertLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -6493,7 +6493,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -6506,7 +6506,7 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -6518,7 +6518,7 @@ DefineClass({
       Variables={
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -6530,7 +6530,7 @@ DefineClass({
       Variables={
         "ClassBABModerate",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -6542,14 +6542,14 @@ DefineClass({
       Variables={
         "ExpertLVL",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "ClassSavePoor_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -6561,7 +6561,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -6573,7 +6573,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -6628,7 +6628,7 @@ DefineClass({
           Variables={
             "Expert Class Skills",
           },
-          Formula="10",
+          Formula=Formula("10"),
         },
       },
     },

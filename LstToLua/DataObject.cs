@@ -3,11 +3,8 @@ using System.Linq;
 
 namespace Primordially.LstToLua
 {
-    internal class DataObject : ConditionalObject
+    internal class DataObject : DataSetObject
     {
-        public string? SourceShort { get; private set; }
-        public string? SourcePage { get; private set; }
-        public string? SourceLong { get; private set; }
         public string? SortKey { get; private set; }
         public Dictionary<string, int> Followers { get; } = new Dictionary<string, int>();
         public Dictionary<string, FollowerType> FollowerTypes { get; } = new Dictionary<string, FollowerType>();
@@ -24,7 +21,6 @@ namespace Primordially.LstToLua
         public List<AddedSpellCasterLevel> AddedSpellCasterLevels { get; } = new List<AddedSpellCasterLevel>();
         public ChangeWeaponProficiencyCategory? ChangeWeaponProficiency { get; private set; }
         public List<StatModification> StatModifications { get; } = new List<StatModification>();
-        public List<(string key, string value)> Facts { get; } = new List<(string key, string value)>();
         public List<(string key, string value)> Info { get; } = new List<(string key, string value)>();
         public string? AdditionalRequirementText { get; private set; }
         public List<NaturalAttack> NaturalAttacks { get; } = new List<NaturalAttack>();
@@ -143,18 +139,6 @@ namespace Primordially.LstToLua
                 return;
             }
 
-            if (field.TryRemovePrefix("FACT:", out var fact))
-            {
-                var parts = fact.Split('|').ToArray();
-                if (parts.Length != 2)
-                {
-                    throw new ParseFailedException(field, "Unable to parse fact.");
-                }
-
-                Facts.Add((parts[0].Value, parts[1].Value));
-                return;
-            }
-
             if (field.TryRemovePrefix("INFO:", out var info))
             {
                 var (k, v) = info.SplitTuple('|');
@@ -171,24 +155,6 @@ namespace Primordially.LstToLua
             if (field.TryRemovePrefix("NATURALATTACKS:", out var natAttack))
             {
                 NaturalAttacks.AddRange(NaturalAttack.ParseAll(natAttack));
-                return;
-            }
-
-            if (field.TryRemovePrefix("SOURCEPAGE:", out var sp))
-            {
-                SourcePage = sp.Value;
-                return;
-            }
-
-            if (field.TryRemovePrefix("SOURCESHORT:", out var ss))
-            {
-                SourceShort = sp.Value;
-                return;
-            }
-
-            if (field.TryRemovePrefix("SOURCELONG:", out var sl))
-            {
-                SourceLong = sl.Value;
                 return;
             }
 
@@ -236,16 +202,6 @@ namespace Primordially.LstToLua
                 output.WriteKeyValue("ChangeWeaponProficiency", ChangeWeaponProficiency);
             }
             output.WriteListValue("StatModifications", StatModifications);
-            if (Facts.Any())
-            {
-                output.WriteObjectValue("Facts", () =>
-                {
-                    foreach (var (k, v) in Facts)
-                    {
-                        output.WriteKeyValue(k, v);
-                    }
-                });
-            }
             if (Info.Any())
             {
                 output.WriteObjectValue("Info", () =>
@@ -260,18 +216,6 @@ namespace Primordially.LstToLua
             if (AdditionalRequirementText != null)
             {
                 output.WriteKeyValue("AdditionalRequirementText", AdditionalRequirementText);
-            }
-            if (!string.IsNullOrEmpty(SourcePage))
-            {
-                output.WriteKeyValue("SourcePage", SourcePage);
-            }
-            if (!string.IsNullOrEmpty(SourceShort))
-            {
-                output.WriteKeyValue("SourceShort", SourceShort);
-            }
-            if (!string.IsNullOrEmpty(SourceLong))
-            {
-                output.WriteKeyValue("SourceLong", SourceLong);
             }
             base.DumpMembers(output);
         }

@@ -14,23 +14,23 @@ ModifyAbility({
   Definitions={
     {
       Name="Divine_Bond_Mount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Hunters_Bond_Animal_Companion",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="BypassClassAlignment_All_Class",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="BypassProhibitSpellAlignment_Restriction",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Pool_Rage_Power",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -39,7 +39,7 @@ ModifyAbility({
       Variables={
         "Favored Class",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return character.PcLevel >= 1
@@ -57,7 +57,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ProhibitSpell_Alignment_Good",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -66,7 +66,7 @@ ModifyAbility({
       Variables={
         "ProhibitSpell_Alignment_Good",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           local count = 0
@@ -112,7 +112,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ProhibitSpell_Alignment_Evil",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -121,7 +121,7 @@ ModifyAbility({
       Variables={
         "ProhibitSpell_Alignment_Evil",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           local count = 0
@@ -167,7 +167,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ProhibitSpell_Alignment_Lawful",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -176,7 +176,7 @@ ModifyAbility({
       Variables={
         "ProhibitSpell_Alignment_Lawful",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           local count = 0
@@ -222,7 +222,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ProhibitSpell_Alignment_Chaotic",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -231,7 +231,7 @@ ModifyAbility({
       Variables={
         "ProhibitSpell_Alignment_Chaotic",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           local count = 0
@@ -277,7 +277,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Bard",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -290,7 +290,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Cleric",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -303,7 +303,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Druid",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -316,7 +316,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Paladin",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -329,7 +329,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Ranger",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -342,7 +342,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Sorcerer",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -355,7 +355,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Wizard",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -368,7 +368,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_Adept",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -381,7 +381,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Bard",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -394,7 +394,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Cleric",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -407,7 +407,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Druid",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -420,7 +420,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Paladin",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -433,7 +433,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Ranger",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -446,7 +446,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Sorcerer",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -459,7 +459,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Wizard",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -472,7 +472,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Caster_Level_BL_Stripped_Adept",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -485,7 +485,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BypassClassAlignment_Barbarian",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -494,7 +494,7 @@ ModifyAbility({
       Variables={
         "BypassClassAlignment_Barbarian",
       },
-      Formula="BypassClassAlignment_All_Class",
+      Formula=Formula("BypassClassAlignment_All_Class"),
       Type={
         Name="Bypass",
         Replace=false,
@@ -512,7 +512,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BypassClassAlignment_Druid",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -521,7 +521,7 @@ ModifyAbility({
       Variables={
         "BypassClassAlignment_Druid",
       },
-      Formula="BypassClassAlignment_All_Class",
+      Formula=Formula("BypassClassAlignment_All_Class"),
       Type={
         Name="Bypass",
         Replace=false,
@@ -539,7 +539,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BypassClassAlignment_Monk",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -548,7 +548,7 @@ ModifyAbility({
       Variables={
         "BypassClassAlignment_Monk",
       },
-      Formula="BypassClassAlignment_All_Class",
+      Formula=Formula("BypassClassAlignment_All_Class"),
       Type={
         Name="Bypass",
         Replace=false,
@@ -560,7 +560,7 @@ ModifyAbility({
       Variables={
         "BypassClassAlignment_Monk",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -580,7 +580,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BypassClassAlignment_Paladin",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -589,7 +589,7 @@ ModifyAbility({
       Variables={
         "BypassClassAlignment_Paladin",
       },
-      Formula="BypassClassAlignment_All_Class",
+      Formula=Formula("BypassClassAlignment_All_Class"),
       Type={
         Name="Bypass",
         Replace=false,
@@ -607,7 +607,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BypassClassAlignment_Arcane_Trickster",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -616,7 +616,7 @@ ModifyAbility({
       Variables={
         "BypassClassAlignment_Arcane_Trickster",
       },
-      Formula="BypassClassAlignment_All_Class",
+      Formula=Formula("BypassClassAlignment_All_Class"),
       Type={
         Name="Bypass",
         Replace=false,
@@ -634,7 +634,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BypassClassAlignment_Assassin",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -643,7 +643,7 @@ ModifyAbility({
       Variables={
         "BypassClassAlignment_Assassin",
       },
-      Formula="BypassClassAlignment_All_Class",
+      Formula=Formula("BypassClassAlignment_All_Class"),
       Type={
         Name="Bypass",
         Replace=false,
@@ -661,7 +661,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ClassFeatureDR_ALL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -674,7 +674,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ClassFeatureDR_Silver",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -752,7 +752,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="BarbarianLVL",
+      Formula=Formula("BarbarianLVL"),
     },
   },
   Types={
@@ -771,7 +771,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="BardLVL",
+      Formula=Formula("BardLVL"),
     },
   },
   Types={
@@ -790,7 +790,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="ClericLVL",
+      Formula=Formula("ClericLVL"),
     },
   },
   Types={
@@ -809,7 +809,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="DruidLVL",
+      Formula=Formula("DruidLVL"),
     },
   },
   Types={
@@ -828,7 +828,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="FighterLVL",
+      Formula=Formula("FighterLVL"),
     },
   },
   Types={
@@ -847,7 +847,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
   },
   Types={
@@ -866,7 +866,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="PaladinLVL",
+      Formula=Formula("PaladinLVL"),
     },
   },
   Types={
@@ -885,7 +885,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="RangerLVL",
+      Formula=Formula("RangerLVL"),
     },
   },
   Types={
@@ -904,7 +904,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="RogueLVL",
+      Formula=Formula("RogueLVL"),
     },
   },
   Types={
@@ -923,7 +923,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="SorcererLVL",
+      Formula=Formula("SorcererLVL"),
     },
   },
   Types={
@@ -942,7 +942,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="WizardLVL",
+      Formula=Formula("WizardLVL"),
     },
   },
   Types={
@@ -961,7 +961,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="AdeptLVL",
+      Formula=Formula("AdeptLVL"),
     },
   },
   Types={
@@ -980,7 +980,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="AristocratLVL",
+      Formula=Formula("AristocratLVL"),
     },
   },
   Types={
@@ -999,7 +999,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="CommonerLVL",
+      Formula=Formula("CommonerLVL"),
     },
   },
   Types={
@@ -1018,7 +1018,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="ExpertLVL",
+      Formula=Formula("ExpertLVL"),
     },
   },
   Types={
@@ -1037,7 +1037,7 @@ DefineAbility({
       Variables={
         "Favored Class Bonus",
       },
-      Formula="WarriorLVL",
+      Formula=Formula("WarriorLVL"),
     },
   },
   Types={
@@ -1058,13 +1058,17 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Bonuses={
     {
       Category="HP",
       Variables={
         "CURRENTMAX",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -1078,19 +1082,19 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Ranks < character.MaxSkillRank and skill.Type == "Base")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((not (character.Ranks(skill) >= character.MaxSkillRank) and (((skill.IsType("Base"))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Bonuses={
     {
       Category="SKILLRANK",
       Variables={
         "LIST",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -1106,15 +1110,15 @@ DefineAbility({
   Definitions={
     {
       Name="Barbarian_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="BarbarianClassSelection",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Pool_Barbarian_Class_Selection",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1123,7 +1127,7 @@ DefineAbility({
       Variables={
         "Barbarian_CFP_Level",
       },
-      Formula="BarbarianLVL",
+      Formula=Formula("BarbarianLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1164,7 +1168,7 @@ DefineAbility({
   Definitions={
     {
       Name="Bard_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1173,7 +1177,7 @@ DefineAbility({
       Variables={
         "Bard_CFP_Level",
       },
-      Formula="BardLVL",
+      Formula=Formula("BardLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1212,7 +1216,7 @@ DefineAbility({
   Definitions={
     {
       Name="Cleric_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1221,7 +1225,7 @@ DefineAbility({
       Variables={
         "Cleric_CFP_Level",
       },
-      Formula="ClericLVL",
+      Formula=Formula("ClericLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1260,7 +1264,7 @@ DefineAbility({
   Definitions={
     {
       Name="Druid_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1269,7 +1273,7 @@ DefineAbility({
       Variables={
         "Druid_CFP_Level",
       },
-      Formula="DruidLVL",
+      Formula=Formula("DruidLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1308,7 +1312,7 @@ DefineAbility({
   Definitions={
     {
       Name="Fighter_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1317,7 +1321,7 @@ DefineAbility({
       Variables={
         "Fighter_CFP_Level",
       },
-      Formula="FighterLVL",
+      Formula=Formula("FighterLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1356,11 +1360,11 @@ DefineAbility({
   Definitions={
     {
       Name="Monk_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Pool_Monk_Class_Selection",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1369,7 +1373,7 @@ DefineAbility({
       Variables={
         "Monk_CFP_Level",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1381,7 +1385,7 @@ DefineAbility({
       Variables={
         "MonkFeatQualify",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
   },
   Abilities={
@@ -1410,7 +1414,7 @@ DefineAbility({
   Definitions={
     {
       Name="Paladin_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1419,7 +1423,7 @@ DefineAbility({
       Variables={
         "Paladin_CFP_Level",
       },
-      Formula="PaladinLVL",
+      Formula=Formula("PaladinLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1458,7 +1462,7 @@ DefineAbility({
   Definitions={
     {
       Name="Ranger_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1467,7 +1471,7 @@ DefineAbility({
       Variables={
         "Ranger_CFP_Level",
       },
-      Formula="RangerLVL",
+      Formula=Formula("RangerLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1506,11 +1510,11 @@ DefineAbility({
   Definitions={
     {
       Name="Rogue_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Pool_Rogue_Class_Selection",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1519,7 +1523,7 @@ DefineAbility({
       Variables={
         "Rogue_CFP_Level",
       },
-      Formula="RogueLVL",
+      Formula=Formula("RogueLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1572,7 +1576,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1581,7 +1585,7 @@ DefineAbility({
       Variables={
         "Sorcerer_CFP_Level",
       },
-      Formula="SorcererLVL",
+      Formula=Formula("SorcererLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1620,7 +1624,7 @@ DefineAbility({
   Definitions={
     {
       Name="Wizard_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1629,7 +1633,7 @@ DefineAbility({
       Variables={
         "Wizard_CFP_Level",
       },
-      Formula="WizardLVL",
+      Formula=Formula("WizardLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1656,7 +1660,7 @@ DefineAbility({
   Definitions={
     {
       Name="ArcaneArcher_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1665,7 +1669,7 @@ DefineAbility({
       Variables={
         "ArcaneArcher_CFP_Level",
       },
-      Formula="ArcaneArcherLVL",
+      Formula=Formula("ArcaneArcherLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1683,7 +1687,7 @@ DefineAbility({
   Definitions={
     {
       Name="ArcaneTrickster_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1692,7 +1696,7 @@ DefineAbility({
       Variables={
         "ArcaneTrickster_CFP_Level",
       },
-      Formula="ArcaneTricksterLVL",
+      Formula=Formula("ArcaneTricksterLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1710,7 +1714,7 @@ DefineAbility({
   Definitions={
     {
       Name="Assassin_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1719,7 +1723,7 @@ DefineAbility({
       Variables={
         "Assassin_CFP_Level",
       },
-      Formula="AssassinLVL",
+      Formula=Formula("AssassinLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1737,7 +1741,7 @@ DefineAbility({
   Definitions={
     {
       Name="DragonDisciple_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1746,7 +1750,7 @@ DefineAbility({
       Variables={
         "DragonDisciple_CFP_Level",
       },
-      Formula="DragonDiscipleLVL",
+      Formula=Formula("DragonDiscipleLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1764,7 +1768,7 @@ DefineAbility({
   Definitions={
     {
       Name="Duelist_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1773,7 +1777,7 @@ DefineAbility({
       Variables={
         "Duelist_CFP_Level",
       },
-      Formula="DuelistLVL",
+      Formula=Formula("DuelistLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1791,7 +1795,7 @@ DefineAbility({
   Definitions={
     {
       Name="EldritchKnight_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1800,7 +1804,7 @@ DefineAbility({
       Variables={
         "EldritchKnight_CFP_Level",
       },
-      Formula="EldritchKnightLVL",
+      Formula=Formula("EldritchKnightLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1818,7 +1822,7 @@ DefineAbility({
   Definitions={
     {
       Name="Loremaster_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1827,7 +1831,7 @@ DefineAbility({
       Variables={
         "Loremaster_CFP_Level",
       },
-      Formula="LoremasterLVL",
+      Formula=Formula("LoremasterLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1845,7 +1849,7 @@ DefineAbility({
   Definitions={
     {
       Name="MysticTheurge_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1854,7 +1858,7 @@ DefineAbility({
       Variables={
         "MysticTheurge_CFP_Level",
       },
-      Formula="MysticTheurgeLVL",
+      Formula=Formula("MysticTheurgeLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1872,7 +1876,7 @@ DefineAbility({
   Definitions={
     {
       Name="PathfinderChronicler_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1881,7 +1885,7 @@ DefineAbility({
       Variables={
         "PathfinderChronicler_CFP_Level",
       },
-      Formula="PathfinderChroniclerLVL",
+      Formula=Formula("PathfinderChroniclerLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1899,7 +1903,7 @@ DefineAbility({
   Definitions={
     {
       Name="Shadowdancer_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1908,7 +1912,7 @@ DefineAbility({
       Variables={
         "Shadowdancer_CFP_Level",
       },
-      Formula="ShadowdancerLVL",
+      Formula=Formula("ShadowdancerLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1926,7 +1930,7 @@ DefineAbility({
   Definitions={
     {
       Name="Adept_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1935,7 +1939,7 @@ DefineAbility({
       Variables={
         "Adept_CFP_Level",
       },
-      Formula="AdeptLVL",
+      Formula=Formula("AdeptLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1953,7 +1957,7 @@ DefineAbility({
   Definitions={
     {
       Name="Aristocrat_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1962,7 +1966,7 @@ DefineAbility({
       Variables={
         "Aristocrat_CFP_Level",
       },
-      Formula="AristocratLVL",
+      Formula=Formula("AristocratLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -1980,7 +1984,7 @@ DefineAbility({
   Definitions={
     {
       Name="Commoner_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1989,7 +1993,7 @@ DefineAbility({
       Variables={
         "Commoner_CFP_Level",
       },
-      Formula="CommonerLVL",
+      Formula=Formula("CommonerLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -2007,7 +2011,7 @@ DefineAbility({
   Definitions={
     {
       Name="Expert_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -2016,7 +2020,7 @@ DefineAbility({
       Variables={
         "Expert_CFP_Level",
       },
-      Formula="ExpertLVL",
+      Formula=Formula("ExpertLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -2034,7 +2038,7 @@ DefineAbility({
   Definitions={
     {
       Name="Warrior_CFP_Level",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -2043,7 +2047,7 @@ DefineAbility({
       Variables={
         "Warrior_CFP_Level",
       },
-      Formula="WarriorLVL",
+      Formula=Formula("WarriorLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -2184,7 +2188,7 @@ DefineAbility({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")*3/4",
+      Formula=Formula("classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")*3/4"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -2198,7 +2202,7 @@ DefineAbility({
         "BASE.Reflex",
         "BASE.Will",
       },
-      Formula="classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -2210,7 +2214,7 @@ DefineAbility({
       Variables={
         "ClassBABModerate",
       },
-      Formula="classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -2222,7 +2226,7 @@ DefineAbility({
       Variables={
         "ClassSaveGood_Fortitude",
       },
-      Formula="classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -2234,7 +2238,7 @@ DefineAbility({
       Variables={
         "ClassSaveGood_Reflex",
       },
-      Formula="classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -2246,7 +2250,7 @@ DefineAbility({
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula="classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -4524,7 +4528,7 @@ ModifyAbility({
       Variables={
         "BraveryLVL",
       },
-      Formula="FighterLVL",
+      Formula=Formula("FighterLVL"),
       Conditions={
         function (character)
           return (character.Variables["Fighter_CFP_Level"] >= 2)
@@ -4545,7 +4549,7 @@ ModifyAbility({
       Variables={
         "ArmorTrainingLVL",
       },
-      Formula="FighterLVL",
+      Formula=Formula("FighterLVL"),
       Conditions={
         function (character)
           return (character.Variables["Fighter_CFP_Level"] >= 3)
@@ -4566,7 +4570,7 @@ ModifyAbility({
       Variables={
         "FighterWeaponTrainingLVL",
       },
-      Formula="FighterLVL",
+      Formula=Formula("FighterLVL"),
       Conditions={
         function (character)
           return (character.Variables["Fighter_CFP_Level"] >= 5)
@@ -4587,7 +4591,7 @@ ModifyAbility({
       Variables={
         "FighterWeaponQualifyLVL",
       },
-      Formula="FighterLVL",
+      Formula=Formula("FighterLVL"),
       Conditions={
         function (character)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
@@ -4728,7 +4732,7 @@ ModifyAbility({
       Variables={
         "Weapon Mastery",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["FighterWeaponMastery"] == 0)
@@ -7565,7 +7569,7 @@ DefineAbility({
       Variables={
         "BypassClassAlignment_Paladin",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Bypass",
         Replace=false,
@@ -7607,7 +7611,7 @@ DefineAbility({
   Definitions={
     {
       Name="Raging",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -7637,31 +7641,31 @@ DefineAbility({
   Definitions={
     {
       Name="Raging",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RageLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RageDuration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RageStrBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RageConBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RageSaveBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RageACPenalty",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -7671,28 +7675,28 @@ DefineAbility({
         "RageStrBonus",
         "RageConBonus",
       },
-      Formula="4",
+      Formula=Formula("4"),
     },
     {
       Category="VAR",
       Variables={
         "RageACPenalty",
       },
-      Formula="-2",
+      Formula=Formula("-2"),
     },
     {
       Category="VAR",
       Variables={
         "RageSaveBonus",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="VAR",
       Variables={
         "RageDuration",
       },
-      Formula="2+var(\"STAT.2.MOD.NOTEMP\")+(2*RageLVL)",
+      Formula=Formula("2+var(\"STAT.2.MOD.NOTEMP\")+(2*RageLVL)"),
     },
   },
   Types={
@@ -7707,7 +7711,7 @@ DefineAbility({
           Variables={
             "AC",
           },
-          Formula="RageACPenalty",
+          Formula=Formula("RageACPenalty"),
         },
       },
       {
@@ -7717,7 +7721,7 @@ DefineAbility({
           Variables={
             "Will",
           },
-          Formula="RageSaveBonus",
+          Formula=Formula("RageSaveBonus"),
         },
       },
       {
@@ -7727,7 +7731,7 @@ DefineAbility({
           Variables={
             "STR",
           },
-          Formula="RageStrBonus",
+          Formula=Formula("RageStrBonus"),
         },
       },
       {
@@ -7737,7 +7741,7 @@ DefineAbility({
           Variables={
             "CON",
           },
-          Formula="RageConBonus",
+          Formula=Formula("RageConBonus"),
         },
       },
       {
@@ -7747,7 +7751,7 @@ DefineAbility({
           Variables={
             "CMD",
           },
-          Formula="RageACPenalty",
+          Formula=Formula("RageACPenalty"),
         },
       },
       {
@@ -7757,7 +7761,7 @@ DefineAbility({
           Variables={
             "Raging",
           },
-          Formula="1",
+          Formula=Formula("1"),
         },
       },
     },
@@ -7796,7 +7800,7 @@ DefineAbility({
       Variables={
         "TYPE=Walk",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["ENCUMBERANCE"] < 2) and (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
@@ -7837,7 +7841,7 @@ DefineAbility({
       Variables={
         "RageLVL",
       },
-      Formula="BarbarianLVL",
+      Formula=Formula("BarbarianLVL"),
     },
   },
   Abilities={
@@ -7866,11 +7870,11 @@ DefineAbility({
   Definitions={
     {
       Name="RagePowersLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RagePowersPrereqLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -7879,21 +7883,21 @@ DefineAbility({
       Variables={
         "Rage Power",
       },
-      Formula="RagePowersLVL/2",
+      Formula=Formula("RagePowersLVL/2"),
     },
     {
       Category="VAR",
       Variables={
         "RagePowersPrereqLVL",
       },
-      Formula="RagePowersLVL",
+      Formula=Formula("RagePowersLVL"),
     },
     {
       Category="VAR",
       Variables={
         "RagePowersLVL",
       },
-      Formula="BarbarianLVL",
+      Formula=Formula("BarbarianLVL"),
     },
   },
   Types={
@@ -7915,7 +7919,7 @@ DefineAbility({
   Definitions={
     {
       Name="BarbarianTrapSenseLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -7924,14 +7928,14 @@ DefineAbility({
       Variables={
         "TrapSenseBonus",
       },
-      Formula="BarbarianTrapSenseLVL/3",
+      Formula=Formula("BarbarianTrapSenseLVL/3"),
     },
     {
       Category="VAR",
       Variables={
         "BarbarianTrapSenseLVL",
       },
-      Formula="BarbarianLVL",
+      Formula=Formula("BarbarianLVL"),
     },
   },
   Abilities={
@@ -7968,11 +7972,11 @@ DefineAbility({
   Definitions={
     {
       Name="BarbarianDR",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="BarbarianDRLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -7981,21 +7985,21 @@ DefineAbility({
       Variables={
         "ClassFeatureDR_ALL",
       },
-      Formula="BarbarianDR",
+      Formula=Formula("BarbarianDR"),
     },
     {
       Category="VAR",
       Variables={
         "BarbarianDR",
       },
-      Formula="(BarbarianDRLVL-4)/3",
+      Formula=Formula("(BarbarianDRLVL-4)/3"),
     },
     {
       Category="VAR",
       Variables={
         "BarbarianDRLVL",
       },
-      Formula="BarbarianLVL",
+      Formula=Formula("BarbarianLVL"),
     },
   },
   Types={
@@ -8023,14 +8027,14 @@ DefineAbility({
         "RageStrBonus",
         "RageConBonus",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="VAR",
       Variables={
         "RageSaveBonus",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -8077,14 +8081,14 @@ DefineAbility({
         "RageStrBonus",
         "RageConBonus",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="VAR",
       Variables={
         "RageSaveBonus",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -8135,7 +8139,7 @@ DefineAbility({
       Variables={
         "UncannyDodgeFlankingLevel",
       },
-      Formula="BarbarianLVL",
+      Formula=Formula("BarbarianLVL"),
       Type={
         Name="EachClass",
         Replace=true,
@@ -8183,7 +8187,7 @@ ModifyAbility({
       Variables={
         "BONUS:VAR",
       },
-      Formula="UncannyDodgeFlankingLevel",
+      Formula=Formula("UncannyDodgeFlankingLevel"),
       Conditions={
         function (character)
           return (character.Variables["BarbarianLVL"] >= 2)
@@ -8207,7 +8211,7 @@ ModifyAbility({
       Variables={
         "UncannyDodgeLVL",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["BarbarianLVL"] >= 2)
@@ -8231,7 +8235,7 @@ ModifyAbility({
       Variables={
         "UncannyDodgeLVL",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["BarbarianLVL"] >= 5)
@@ -8255,7 +8259,7 @@ ModifyAbility({
       Variables={
         "TrapSenseBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["BarbarianTrapSenseLVL/3"] >= 1)
@@ -8279,7 +8283,7 @@ ModifyAbility({
       Variables={
         "TrapSenseBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["BarbarianTrapSenseLVL/3"] >= 2)
@@ -8303,7 +8307,7 @@ ModifyAbility({
       Variables={
         "TrapSenseBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["BarbarianTrapSenseLVL/3"] >= 3)
@@ -8327,7 +8331,7 @@ ModifyAbility({
       Variables={
         "TrapSenseBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["BarbarianTrapSenseLVL/3"] >= 4)
@@ -8351,7 +8355,7 @@ ModifyAbility({
       Variables={
         "TrapSenseBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["BarbarianTrapSenseLVL/3"] >= 5)
@@ -8375,7 +8379,7 @@ ModifyAbility({
       Variables={
         "TrapSenseBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["BarbarianTrapSenseLVL/3"] >= 6)
@@ -8399,7 +8403,7 @@ ModifyAbility({
       Variables={
         "BarbarianDR",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["(BarbarianDRLVL-4)/3"] >= 1)
@@ -8423,7 +8427,7 @@ ModifyAbility({
       Variables={
         "BarbarianDR",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["(BarbarianDRLVL-4)/3"] >= 2)
@@ -8447,7 +8451,7 @@ ModifyAbility({
       Variables={
         "BarbarianDR",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["(BarbarianDRLVL-4)/3"] >= 3)
@@ -8471,7 +8475,7 @@ ModifyAbility({
       Variables={
         "BarbarianDR",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["(BarbarianDRLVL-4)/3"] >= 4)
@@ -8495,7 +8499,7 @@ ModifyAbility({
       Variables={
         "BarbarianDR",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["(BarbarianDRLVL-4)/3"] >= 5)
@@ -8519,7 +8523,7 @@ ModifyAbility({
       Variables={
         "Rage Power",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RagePowersLVL"] >= 2)
@@ -8543,7 +8547,7 @@ ModifyAbility({
       Variables={
         "Rage Power",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RagePowersLVL"] >= 4)
@@ -8567,7 +8571,7 @@ ModifyAbility({
       Variables={
         "Rage Power",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RagePowersLVL"] >= 6)
@@ -8591,7 +8595,7 @@ ModifyAbility({
       Variables={
         "Rage Power",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RagePowersLVL"] >= 8)
@@ -8615,7 +8619,7 @@ ModifyAbility({
       Variables={
         "Rage Power",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RagePowersLVL"] >= 10)
@@ -8639,7 +8643,7 @@ ModifyAbility({
       Variables={
         "Rage Power",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RagePowersLVL"] >= 12)
@@ -8663,7 +8667,7 @@ ModifyAbility({
       Variables={
         "Rage Power",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RagePowersLVL"] >= 14)
@@ -8687,7 +8691,7 @@ ModifyAbility({
       Variables={
         "Rage Power",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RagePowersLVL"] >= 16)
@@ -8711,7 +8715,7 @@ ModifyAbility({
       Variables={
         "Rage Power",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RagePowersLVL"] >= 18)
@@ -8735,7 +8739,7 @@ ModifyAbility({
       Variables={
         "Rage Power",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RagePowersLVL"] >= 20)
@@ -8774,7 +8778,7 @@ DefineAbility({
       Variables={
         "TOHIT",
       },
-      Formula="-5",
+      Formula=Formula("-5"),
       Conditions={
         function (character)
           return (character.Variables["Raging"] == 1)
@@ -8877,6 +8881,10 @@ DefineAbility({
       FormatString="Rage",
     },
   },
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.33",
   Conditions={
     function (character)
@@ -8895,7 +8903,7 @@ DefineAbility({
   Definitions={
     {
       Name="IncreasedDRCount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -8904,14 +8912,14 @@ DefineAbility({
       Variables={
         "IncreasedDRCount",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "BarbarianDR",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["Raging"] == 1)
@@ -8951,11 +8959,11 @@ DefineAbility({
   Definitions={
     {
       Name="GuardedStanceACBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="GuardedStanceDuration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -8964,14 +8972,14 @@ DefineAbility({
       Variables={
         "GuardedStanceACBonus",
       },
-      Formula="1+RagePowersLVL/6",
+      Formula=Formula("1+RagePowersLVL/6"),
     },
     {
       Category="VAR",
       Variables={
         "GuardedStanceDuration",
       },
-      Formula="max(1,CON)",
+      Formula=Formula("max(1,CON)"),
     },
   },
   Types={
@@ -9256,7 +9264,7 @@ DefineAbility({
   Definitions={
     {
       Name="PowerfulBlowDamageBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -9265,7 +9273,7 @@ DefineAbility({
       Variables={
         "PowerfulBlowDamageBonus",
       },
-      Formula="1+RagePowersLVL/4",
+      Formula=Formula("1+RagePowersLVL/4"),
     },
   },
   Types={
@@ -9324,7 +9332,7 @@ DefineAbility({
   Definitions={
     {
       Name="RagingClimberBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -9333,7 +9341,7 @@ DefineAbility({
       Variables={
         "Climb",
       },
-      Formula="RagingClimberBonus",
+      Formula=Formula("RagingClimberBonus"),
       Conditions={
         function (character)
           return (character.Variables["Raging"] == 1)
@@ -9345,7 +9353,7 @@ DefineAbility({
       Variables={
         "RagingClimberBonus",
       },
-      Formula="RagePowersLVL",
+      Formula=Formula("RagePowersLVL"),
     },
   },
   Types={
@@ -9379,7 +9387,7 @@ DefineAbility({
   Definitions={
     {
       Name="RagingLeaperBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -9388,7 +9396,7 @@ DefineAbility({
       Variables={
         "Acrobatics=When Jumping",
       },
-      Formula="RagingLeaperBonus",
+      Formula=Formula("RagingLeaperBonus"),
       Conditions={
         function (character)
           return (character.Variables["Raging"] == 1)
@@ -9400,7 +9408,7 @@ DefineAbility({
       Variables={
         "RagingLeaperBonus",
       },
-      Formula="RagePowersLVL",
+      Formula=Formula("RagePowersLVL"),
     },
   },
   Types={
@@ -9434,7 +9442,7 @@ DefineAbility({
   Definitions={
     {
       Name="RagingSwimmerBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -9443,7 +9451,7 @@ DefineAbility({
       Variables={
         "Swim",
       },
-      Formula="RagingSwimmerBonus",
+      Formula=Formula("RagingSwimmerBonus"),
       Conditions={
         function (character)
           return (character.Variables["Raging"] == 1)
@@ -9455,7 +9463,7 @@ DefineAbility({
       Variables={
         "RagingSwimmerBonus",
       },
-      Formula="RagePowersLVL",
+      Formula=Formula("RagePowersLVL"),
     },
   },
   Types={
@@ -9495,11 +9503,11 @@ DefineAbility({
   Definitions={
     {
       Name="RenewedVigorDice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RenewedVigorBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -9508,14 +9516,14 @@ DefineAbility({
       Variables={
         "RenewedVigorDice",
       },
-      Formula="min(5,max(1,RagePowersLVL/4))",
+      Formula=Formula("min(5,max(1,RagePowersLVL/4))"),
     },
     {
       Category="VAR",
       Variables={
         "RenewedVigorBonus",
       },
-      Formula="CON",
+      Formula=Formula("CON"),
     },
   },
   Types={
@@ -9550,11 +9558,11 @@ DefineAbility({
   Definitions={
     {
       Name="RollingDodgeACBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RollingDodgeDuration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -9563,14 +9571,14 @@ DefineAbility({
       Variables={
         "RollingDodgeACBonus",
       },
-      Formula="1+RagePowersLVL/6",
+      Formula=Formula("1+RagePowersLVL/6"),
     },
     {
       Category="VAR",
       Variables={
         "RollingDodgeDuration",
       },
-      Formula="max(1,CON)",
+      Formula=Formula("max(1,CON)"),
     },
   },
   Types={
@@ -9654,7 +9662,7 @@ DefineAbility({
   Definitions={
     {
       Name="StrengthSurgeBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -9663,7 +9671,7 @@ DefineAbility({
       Variables={
         "StrengthSurgeBonus",
       },
-      Formula="RagePowersLVL",
+      Formula=Formula("RagePowersLVL"),
     },
   },
   Types={
@@ -9697,7 +9705,7 @@ DefineAbility({
   Definitions={
     {
       Name="SuperstitionSaveBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -9706,7 +9714,7 @@ DefineAbility({
       Variables={
         "SuperstitionSaveBonus",
       },
-      Formula="2+RagePowersLVL/4",
+      Formula=Formula("2+RagePowersLVL/4"),
     },
   },
   Types={
@@ -9740,7 +9748,7 @@ DefineAbility({
   Definitions={
     {
       Name="SurpriseAccuracyAttackBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -9749,7 +9757,7 @@ DefineAbility({
       Variables={
         "SurpriseAccuracyAttackBonus",
       },
-      Formula="1+RagePowersLVL/4",
+      Formula=Formula("1+RagePowersLVL/4"),
     },
   },
   Types={
@@ -9773,6 +9781,10 @@ DefineAbility({
       FormatString="Rage",
     },
   },
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.34",
   Conditions={
     function (character)
@@ -9788,7 +9800,7 @@ DefineAbility({
   Definitions={
     {
       Name="SwiftFootCount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -9797,7 +9809,7 @@ DefineAbility({
       Variables={
         "TYPE=Walk",
       },
-      Formula="5",
+      Formula=Formula("5"),
       Conditions={
         function (character)
           return (character.Variables["Raging"] == 1)
@@ -9809,7 +9821,7 @@ DefineAbility({
       Variables={
         "SwiftFootCount",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -9853,7 +9865,7 @@ DefineAbility({
   Definitions={
     {
       Name="TerrifyingHowlDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -9862,7 +9874,7 @@ DefineAbility({
       Variables={
         "TerrifyingHowlDC",
       },
-      Formula="10+(RagePowersLVL/2)+STR",
+      Formula=Formula("10+(RagePowersLVL/2)+STR"),
     },
   },
   Types={
@@ -9937,11 +9949,11 @@ DefineAbility({
   Definitions={
     {
       Name="BardicKnowledgeSkillBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="BardicKnowledgeLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -9950,21 +9962,21 @@ DefineAbility({
       Variables={
         "TYPE=Knowledge",
       },
-      Formula="BardicKnowledgeSkillBonus",
+      Formula=Formula("BardicKnowledgeSkillBonus"),
     },
     {
       Category="VAR",
       Variables={
         "BardicKnowledgeSkillBonus",
       },
-      Formula="max(1,BardicKnowledgeLVL/2)",
+      Formula=Formula("max(1,BardicKnowledgeLVL/2)"),
     },
     {
       Category="VAR",
       Variables={
         "BardicKnowledgeLVL",
       },
-      Formula="BardLVL",
+      Formula=Formula("BardLVL"),
     },
   },
   Types={
@@ -10039,11 +10051,11 @@ DefineAbility({
   Definitions={
     {
       Name="BardicPerformanceDuration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="BardicPerformanceLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -10052,14 +10064,14 @@ DefineAbility({
       Variables={
         "BardicPerformanceDuration",
       },
-      Formula="2+CHA+(2*BardicPerformanceLVL)",
+      Formula=Formula("2+CHA+(2*BardicPerformanceLVL)"),
     },
     {
       Category="VAR",
       Variables={
         "BardicPerformanceLVL",
       },
-      Formula="BardLVL",
+      Formula=Formula("BardLVL"),
     },
   },
   Abilities={
@@ -10279,7 +10291,7 @@ DefineAbility({
   Definitions={
     {
       Name="VersatilePerformanceLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -10288,14 +10300,14 @@ DefineAbility({
       Variables={
         "Versatile Performance",
       },
-      Formula="(VersatilePerformanceLVL+2)/4",
+      Formula=Formula("(VersatilePerformanceLVL+2)/4"),
     },
     {
       Category="VAR",
       Variables={
         "VersatilePerformanceLVL",
       },
-      Formula="BardLVL",
+      Formula=Formula("BardLVL"),
     },
   },
   Types={
@@ -10344,11 +10356,11 @@ DefineAbility({
   Definitions={
     {
       Name="LoreMasterTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="LoreMasterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -10357,14 +10369,14 @@ DefineAbility({
       Variables={
         "LoreMasterTimes",
       },
-      Formula="min((LoreMasterLVL+1)/6,3)",
+      Formula=Formula("min((LoreMasterLVL+1)/6,3)"),
     },
     {
       Category="VAR",
       Variables={
         "LoreMasterLVL",
       },
-      Formula="BardLVL",
+      Formula=Formula("BardLVL"),
     },
   },
   Types={
@@ -10390,7 +10402,7 @@ DefineAbility({
   Definitions={
     {
       Name="JackOfAllTradesLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -10399,7 +10411,7 @@ DefineAbility({
       Variables={
         "JackOfAllTradesLVL",
       },
-      Formula="BardLVL",
+      Formula=Formula("BardLVL"),
     },
   },
   Abilities={
@@ -10554,11 +10566,11 @@ DefineAbility({
   Definitions={
     {
       Name="FascinateCreatures",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="FascinateDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -10567,14 +10579,14 @@ DefineAbility({
       Variables={
         "FascinateCreatures",
       },
-      Formula="(BardicPerformanceLVL+2)/3",
+      Formula=Formula("(BardicPerformanceLVL+2)/3"),
     },
     {
       Category="VAR",
       Variables={
         "FascinateDC",
       },
-      Formula="10+(BardicPerformanceLVL/2)+CHA",
+      Formula=Formula("10+(BardicPerformanceLVL/2)+CHA"),
     },
   },
   Types={
@@ -10608,11 +10620,11 @@ DefineAbility({
   Definitions={
     {
       Name="InspireCourageBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="InspireCourageCount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -10621,14 +10633,14 @@ DefineAbility({
       Variables={
         "InspireCourageBonus",
       },
-      Formula="InspireCourageCount",
+      Formula=Formula("InspireCourageCount"),
     },
     {
       Category="VAR",
       Variables={
         "InspireCourageCount",
       },
-      Formula="min((BardicPerformanceLVL+7)/6,4)",
+      Formula=Formula("min((BardicPerformanceLVL+7)/6,4)"),
     },
   },
   Types={
@@ -10662,11 +10674,11 @@ DefineAbility({
   Definitions={
     {
       Name="InspireCompetenceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="InspireCompetenceCount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -10675,14 +10687,14 @@ DefineAbility({
       Variables={
         "InspireCompetenceBonus",
       },
-      Formula="InspireCompetenceCount",
+      Formula=Formula("InspireCompetenceCount"),
     },
     {
       Category="VAR",
       Variables={
         "InspireCompetenceCount",
       },
-      Formula="(BardicPerformanceLVL+5)/4",
+      Formula=Formula("(BardicPerformanceLVL+5)/4"),
     },
   },
   Types={
@@ -10716,7 +10728,7 @@ DefineAbility({
   Definitions={
     {
       Name="SuggestionDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -10725,7 +10737,7 @@ DefineAbility({
       Variables={
         "SuggestionDC",
       },
-      Formula="10+(BardicPerformanceLVL/2)+CHA",
+      Formula=Formula("10+(BardicPerformanceLVL/2)+CHA"),
     },
   },
   Types={
@@ -10784,7 +10796,7 @@ DefineAbility({
   Definitions={
     {
       Name="InspireGreatnessAllies",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -10793,7 +10805,7 @@ DefineAbility({
       Variables={
         "InspireGreatnessAllies",
       },
-      Formula="min((BardicPerformanceLVL-6)/3,4)",
+      Formula=Formula("min((BardicPerformanceLVL-6)/3,4)"),
     },
   },
   Types={
@@ -10827,7 +10839,7 @@ DefineAbility({
   Definitions={
     {
       Name="SoothingPerformanceLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -10836,7 +10848,7 @@ DefineAbility({
       Variables={
         "SoothingPerformanceLVL",
       },
-      Formula="BardicPerformanceLVL",
+      Formula=Formula("BardicPerformanceLVL"),
     },
   },
   Types={
@@ -10870,7 +10882,7 @@ DefineAbility({
   Definitions={
     {
       Name="FrighteningTuneDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -10879,7 +10891,7 @@ DefineAbility({
       Variables={
         "FrighteningTuneDC",
       },
-      Formula="10+(BardicPerformanceLVL/2)+CHA",
+      Formula=Formula("10+(BardicPerformanceLVL/2)+CHA"),
     },
   },
   Types={
@@ -10913,7 +10925,7 @@ DefineAbility({
   Definitions={
     {
       Name="InspireHeroicsAllies",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -10922,7 +10934,7 @@ DefineAbility({
       Variables={
         "InspireHeroicsAllies",
       },
-      Formula="(BardicPerformanceLVL-12)/3",
+      Formula=Formula("(BardicPerformanceLVL-12)/3"),
     },
   },
   Types={
@@ -10956,7 +10968,7 @@ DefineAbility({
   Definitions={
     {
       Name="MassSuggestionDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -10965,7 +10977,7 @@ DefineAbility({
       Variables={
         "MassSuggestionDC",
       },
-      Formula="10+(BardicPerformanceLVL/2)+CHA",
+      Formula=Formula("10+(BardicPerformanceLVL/2)+CHA"),
     },
   },
   Types={
@@ -10999,7 +11011,7 @@ DefineAbility({
   Definitions={
     {
       Name="DeadlyPerformanceDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -11008,7 +11020,7 @@ DefineAbility({
       Variables={
         "DeadlyPerformanceDC",
       },
-      Formula="10+(BardicPerformanceLVL/2)+CHA",
+      Formula=Formula("10+(BardicPerformanceLVL/2)+CHA"),
     },
   },
   Types={
@@ -11031,7 +11043,7 @@ ModifyAbility({
       Variables={
         "Versatile Performance",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["BardVersatilePerformanceLVL"] >= 2)
@@ -11055,7 +11067,7 @@ ModifyAbility({
       Variables={
         "InspireCourageBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["InspireCourageCount"] >= 1)
@@ -11079,7 +11091,7 @@ ModifyAbility({
       Variables={
         "InspireCourageBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["InspireCourageCount"] >= 2)
@@ -11103,7 +11115,7 @@ ModifyAbility({
       Variables={
         "InspireCourageBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["InspireCourageCount"] >= 3)
@@ -11127,7 +11139,7 @@ ModifyAbility({
       Variables={
         "InspireCourageBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["InspireCourageCount"] >= 4)
@@ -11151,7 +11163,7 @@ ModifyAbility({
       Variables={
         "InspireCompetenceBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["InspireCompetenceCount"] >= 1)
@@ -11175,7 +11187,7 @@ ModifyAbility({
       Variables={
         "InspireCompetenceBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["InspireCompetenceCount"] >= 2)
@@ -11199,7 +11211,7 @@ ModifyAbility({
       Variables={
         "InspireCompetenceBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["InspireCompetenceCount"] >= 3)
@@ -11223,7 +11235,7 @@ ModifyAbility({
       Variables={
         "InspireCompetenceBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["InspireCompetenceCount"] >= 4)
@@ -11247,7 +11259,7 @@ ModifyAbility({
       Variables={
         "InspireCompetenceBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["InspireCompetenceCount"] >= 5)
@@ -11271,7 +11283,7 @@ ModifyAbility({
       Variables={
         "InspireCompetenceBonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["InspireCompetenceCount"] >= 6)
@@ -11300,21 +11312,21 @@ DefineAbility({
       Variables={
         "Bluff (Perform (Act))",
       },
-      Formula="var(\"SKILL.Perform (Act).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Act).MISC\")"),
     },
     {
       Category="SKILL",
       Variables={
         "Disguise (Perform (Act))",
       },
-      Formula="var(\"SKILL.Perform (Act).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Act).MISC\")"),
     },
     {
       Category="SKILLRANK",
       Variables={
         "Bluff (Perform (Act))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Act)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Act)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11328,7 +11340,7 @@ DefineAbility({
       Variables={
         "Disguise (Perform (Act))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Act)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Act)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11362,21 +11374,21 @@ DefineAbility({
       Variables={
         "Bluff (Perform (Comedy))",
       },
-      Formula="var(\"SKILL.Perform (Comedy).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Comedy).MISC\")"),
     },
     {
       Category="SKILL",
       Variables={
         "Intimidate (Perform (Comedy))",
       },
-      Formula="var(\"SKILL.Perform (Comedy).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Comedy).MISC\")"),
     },
     {
       Category="SKILLRANK",
       Variables={
         "Bluff (Perform (Comedy))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Comedy)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Comedy)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11390,7 +11402,7 @@ DefineAbility({
       Variables={
         "Intimidate (Perform (Comedy))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Comedy)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Comedy)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11424,21 +11436,21 @@ DefineAbility({
       Variables={
         "Acrobatics (Perform (Dance))",
       },
-      Formula="var(\"SKILL.Perform (Dance).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Dance).MISC\")"),
     },
     {
       Category="SKILL",
       Variables={
         "Fly (Perform (Dance))",
       },
-      Formula="var(\"SKILL.Perform (Dance).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Dance).MISC\")"),
     },
     {
       Category="SKILLRANK",
       Variables={
         "Acrobatics (Perform (Dance))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Dance)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Dance)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11452,7 +11464,7 @@ DefineAbility({
       Variables={
         "Fly (Perform (Dance))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Dance)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Dance)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11486,21 +11498,21 @@ DefineAbility({
       Variables={
         "Diplomacy (Perform (Keyboard Instruments))",
       },
-      Formula="var(\"SKILL.Perform (Keyboard Instruments).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Keyboard Instruments).MISC\")"),
     },
     {
       Category="SKILL",
       Variables={
         "Intimidate (Perform (Keyboard Instruments))",
       },
-      Formula="var(\"SKILL.Perform (Keyboard Instruments).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Keyboard Instruments).MISC\")"),
     },
     {
       Category="SKILLRANK",
       Variables={
         "Diplomacy (Perform (Keyboard Instruments))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Keyboard Instruments)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Keyboard Instruments)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11514,7 +11526,7 @@ DefineAbility({
       Variables={
         "Intimidate (Perform (Keyboard Instruments))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Keyboard Instruments)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Keyboard Instruments)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11548,21 +11560,21 @@ DefineAbility({
       Variables={
         "Diplomacy (Perform (Oratory))",
       },
-      Formula="var(\"SKILL.Perform (Oratory).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Oratory).MISC\")"),
     },
     {
       Category="SKILL",
       Variables={
         "Sense Motive (Perform (Oratory))",
       },
-      Formula="var(\"SKILL.Perform (Oratory).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Oratory).MISC\")"),
     },
     {
       Category="SKILLRANK",
       Variables={
         "Diplomacy (Perform (Oratory))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Oratory)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Oratory)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11576,7 +11588,7 @@ DefineAbility({
       Variables={
         "Sense Motive (Perform (Oratory))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Oratory)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Oratory)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11610,21 +11622,21 @@ DefineAbility({
       Variables={
         "Handle Animal (Perform (Percussion Instruments))",
       },
-      Formula="var(\"SKILL.Perform (Percussion Instruments).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Percussion Instruments).MISC\")"),
     },
     {
       Category="SKILL",
       Variables={
         "Intimidate (Perform (Percussion Instruments))",
       },
-      Formula="var(\"SKILL.Perform (Percussion Instruments).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Percussion Instruments).MISC\")"),
     },
     {
       Category="SKILLRANK",
       Variables={
         "Handle Animal (Perform (Percussion Instruments))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Percussion Instruments)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Percussion Instruments)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11638,7 +11650,7 @@ DefineAbility({
       Variables={
         "Intimidate (Perform (Percussion Instruments))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Percussion Instruments)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Percussion Instruments)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11672,21 +11684,21 @@ DefineAbility({
       Variables={
         "Bluff (Perform (Sing))",
       },
-      Formula="var(\"SKILL.Perform (Sing).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Sing).MISC\")"),
     },
     {
       Category="SKILL",
       Variables={
         "Sense Motive (Perform (Sing))",
       },
-      Formula="var(\"SKILL.Perform (Sing).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Sing).MISC\")"),
     },
     {
       Category="SKILLRANK",
       Variables={
         "Bluff (Perform (Sing))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Sing)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Sing)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11700,7 +11712,7 @@ DefineAbility({
       Variables={
         "Sense Motive (Perform (Sing))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Sing)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Sing)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11734,21 +11746,21 @@ DefineAbility({
       Variables={
         "Bluff (Perform (String Instruments))",
       },
-      Formula="var(\"SKILL.Perform (String Instruments).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (String Instruments).MISC\")"),
     },
     {
       Category="SKILL",
       Variables={
         "Diplomacy (Perform (String Instruments))",
       },
-      Formula="var(\"SKILL.Perform (String Instruments).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (String Instruments).MISC\")"),
     },
     {
       Category="SKILLRANK",
       Variables={
         "Bluff (Perform (String Instruments))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (String Instruments)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (String Instruments)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11762,7 +11774,7 @@ DefineAbility({
       Variables={
         "Diplomacy (Perform (String Instruments))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (String Instruments)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (String Instruments)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11796,21 +11808,21 @@ DefineAbility({
       Variables={
         "Diplomacy (Perform (Wind Instruments))",
       },
-      Formula="var(\"SKILL.Perform (Wind Instruments).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Wind Instruments).MISC\")"),
     },
     {
       Category="SKILL",
       Variables={
         "Handle Animal (Perform (Wind Instruments))",
       },
-      Formula="var(\"SKILL.Perform (Wind Instruments).MISC\")",
+      Formula=Formula("var(\"SKILL.Perform (Wind Instruments).MISC\")"),
     },
     {
       Category="SKILLRANK",
       Variables={
         "Diplomacy (Perform (Wind Instruments))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Wind Instruments)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Wind Instruments)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11824,7 +11836,7 @@ DefineAbility({
       Variables={
         "Handle Animal (Perform (Wind Instruments))",
       },
-      Formula="skillinfo(\"TOTALRANK\", \"Perform (Wind Instruments)\")",
+      Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Wind Instruments)\")"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11949,7 +11961,7 @@ DefineAbility({
       Variables={
         "AlignmentAuraLVL",
       },
-      Formula="ClericLVL",
+      Formula=Formula("ClericLVL"),
     },
   },
   Abilities={
@@ -12078,15 +12090,15 @@ DefineAbility({
   Definitions={
     {
       Name="DomainLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainPowerTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -12095,14 +12107,14 @@ DefineAbility({
       Variables={
         "DomainPowerTimes",
       },
-      Formula="3+WIS",
+      Formula=Formula("3+WIS"),
     },
     {
       Category="VAR",
       Variables={
         "DomainAbilityTriggerLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
     },
   },
   Types={
@@ -12122,15 +12134,15 @@ DefineAbility({
   Definitions={
     {
       Name="ClericChannelEnergyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ClericChannelEnergyTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Pool_Cleric_Channeling",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -12139,21 +12151,21 @@ DefineAbility({
       Variables={
         "ClericChannelEnergyTimes",
       },
-      Formula="3+CHA",
+      Formula=Formula("3+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "ClericChannelEnergyLVL",
       },
-      Formula="ClericLVL",
+      Formula=Formula("ClericLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Pool_Cleric_Channeling",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -12231,19 +12243,19 @@ DefineAbility({
   Definitions={
     {
       Name="ClericChannelPositiveEnergyDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ClericChannelPositiveEnergyDice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ClericChannelPositiveEnergyDieSize",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ClericChannelPositiveEnergyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -12252,28 +12264,28 @@ DefineAbility({
       Variables={
         "ClericChannelPositiveEnergyDieSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
     },
     {
       Category="VAR",
       Variables={
         "ClericChannelPositiveEnergyDice",
       },
-      Formula="(ClericChannelPositiveEnergyLVL+1)/2",
+      Formula=Formula("(ClericChannelPositiveEnergyLVL+1)/2"),
     },
     {
       Category="VAR",
       Variables={
         "ClericChannelPositiveEnergyDC",
       },
-      Formula="10+(ClericChannelPositiveEnergyLVL/2)+CHA",
+      Formula=Formula("10+(ClericChannelPositiveEnergyLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "ClericChannelPositiveEnergyLVL",
       },
-      Formula="ClericChannelEnergyLVL",
+      Formula=Formula("ClericChannelEnergyLVL"),
     },
   },
   Abilities={
@@ -12365,19 +12377,19 @@ DefineAbility({
   Definitions={
     {
       Name="ClericChannelNegativeEnergyDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ClericChannelNegativeEnergyDice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ClericChannelNegativeEnergyDieSize",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ClericChannelNegativeEnergyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -12386,28 +12398,28 @@ DefineAbility({
       Variables={
         "ClericChannelNegativeEnergyDieSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
     },
     {
       Category="VAR",
       Variables={
         "ClericChannelNegativeEnergyDice",
       },
-      Formula="(ClericChannelNegativeEnergyLVL+1)/2",
+      Formula=Formula("(ClericChannelNegativeEnergyLVL+1)/2"),
     },
     {
       Category="VAR",
       Variables={
         "ClericChannelNegativeEnergyDC",
       },
-      Formula="10+(ClericChannelNegativeEnergyLVL/2)+CHA",
+      Formula=Formula("10+(ClericChannelNegativeEnergyLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "ClericChannelNegativeEnergyLVL",
       },
-      Formula="ClericChannelEnergyLVL",
+      Formula=Formula("ClericChannelEnergyLVL"),
     },
   },
   Abilities={
@@ -14090,23 +14102,23 @@ DefineAbility({
   Definitions={
     {
       Name="AirDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAirLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAirAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAirDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAirTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -14115,7 +14127,7 @@ DefineAbility({
       Variables={
         "AirDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14127,14 +14139,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainAirLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14146,7 +14158,7 @@ DefineAbility({
       Variables={
         "DomainAirAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14158,14 +14170,14 @@ DefineAbility({
       Variables={
         "DomainAirDC",
       },
-      Formula="10+(DomainAirLVL/2)+CHA",
+      Formula=Formula("10+(DomainAirLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainAirTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14184,23 +14196,23 @@ DefineAbility({
   Definitions={
     {
       Name="AnimalDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAnimalLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAnimalDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAnimalTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAnimalAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -14209,7 +14221,7 @@ DefineAbility({
       Variables={
         "AnimalDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14221,14 +14233,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainAnimalLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14240,14 +14252,14 @@ DefineAbility({
       Variables={
         "DomainAnimalDC",
       },
-      Formula="10+(DomainAnimalLVL/2)+CHA",
+      Formula=Formula("10+(DomainAnimalLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainAnimalTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14259,7 +14271,7 @@ DefineAbility({
       Variables={
         "DomainAnimalAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14278,23 +14290,23 @@ DefineAbility({
   Definitions={
     {
       Name="ArtificeDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainArtificeLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainArtificeDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainArtificeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainArtificeAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -14303,7 +14315,7 @@ DefineAbility({
       Variables={
         "ArtificeDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14315,14 +14327,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainArtificeLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14334,14 +14346,14 @@ DefineAbility({
       Variables={
         "DomainArtificeDC",
       },
-      Formula="10+(DomainArtificeLVL/2)+CHA",
+      Formula=Formula("10+(DomainArtificeLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainArtificeTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14353,7 +14365,7 @@ DefineAbility({
       Variables={
         "DomainArtificeAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14372,23 +14384,23 @@ DefineAbility({
   Definitions={
     {
       Name="ChaosDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainChaosLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainChaosDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainChaosTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainChaosAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -14397,7 +14409,7 @@ DefineAbility({
       Variables={
         "ChaosDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14409,14 +14421,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainChaosLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14428,14 +14440,14 @@ DefineAbility({
       Variables={
         "DomainChaosDC",
       },
-      Formula="10+(DomainChaosLVL/2)+CHA",
+      Formula=Formula("10+(DomainChaosLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainChaosTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14447,7 +14459,7 @@ DefineAbility({
       Variables={
         "DomainChaosAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14466,23 +14478,23 @@ DefineAbility({
   Definitions={
     {
       Name="CharmDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCharmLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCharmDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCharmTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCharmAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -14491,7 +14503,7 @@ DefineAbility({
       Variables={
         "CharmDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14503,14 +14515,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainCharmLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14522,14 +14534,14 @@ DefineAbility({
       Variables={
         "DomainCharmDC",
       },
-      Formula="10+(DomainCharmLVL/2)+CHA",
+      Formula=Formula("10+(DomainCharmLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainCharmTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14541,7 +14553,7 @@ DefineAbility({
       Variables={
         "DomainCharmAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14560,23 +14572,23 @@ DefineAbility({
   Definitions={
     {
       Name="CommunityDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCommunityLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCommunityDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCommunityTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCommunityAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -14585,7 +14597,7 @@ DefineAbility({
       Variables={
         "CommunityDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14597,14 +14609,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainCommunityLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14616,14 +14628,14 @@ DefineAbility({
       Variables={
         "DomainCommunityDC",
       },
-      Formula="10+(DomainCommunityLVL/2)+CHA",
+      Formula=Formula("10+(DomainCommunityLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainCommunityTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14635,7 +14647,7 @@ DefineAbility({
       Variables={
         "DomainCommunityAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14654,23 +14666,23 @@ DefineAbility({
   Definitions={
     {
       Name="DarknessDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDarknessLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDarknessDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDarknessTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDarknessAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -14679,7 +14691,7 @@ DefineAbility({
       Variables={
         "DarknessDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14691,14 +14703,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainDarknessLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14710,14 +14722,14 @@ DefineAbility({
       Variables={
         "DomainDarknessDC",
       },
-      Formula="10+(DomainDarknessLVL/2)+CHA",
+      Formula=Formula("10+(DomainDarknessLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainDarknessTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14729,7 +14741,7 @@ DefineAbility({
       Variables={
         "DomainDarknessAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14748,23 +14760,23 @@ DefineAbility({
   Definitions={
     {
       Name="DeathDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDeathLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDeathDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDeathTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDeathAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -14773,7 +14785,7 @@ DefineAbility({
       Variables={
         "DeathDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14785,14 +14797,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainDeathLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14804,14 +14816,14 @@ DefineAbility({
       Variables={
         "DomainDeathDC",
       },
-      Formula="10+(DomainDeathLVL/2)+CHA",
+      Formula=Formula("10+(DomainDeathLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainDeathTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14823,7 +14835,7 @@ DefineAbility({
       Variables={
         "DomainDeathAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14842,23 +14854,23 @@ DefineAbility({
   Definitions={
     {
       Name="DestructionDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDestructionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDestructionDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDestructionTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDestructionAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -14867,7 +14879,7 @@ DefineAbility({
       Variables={
         "DestructionDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14879,14 +14891,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainDestructionLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14898,14 +14910,14 @@ DefineAbility({
       Variables={
         "DomainDestructionDC",
       },
-      Formula="10+(DomainDestructionLVL/2)+CHA",
+      Formula=Formula("10+(DomainDestructionLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainDestructionTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14917,7 +14929,7 @@ DefineAbility({
       Variables={
         "DomainDestructionAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14936,23 +14948,23 @@ DefineAbility({
   Definitions={
     {
       Name="EarthDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEarthLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEarthDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEarthTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEarthAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -14961,7 +14973,7 @@ DefineAbility({
       Variables={
         "EarthDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14973,14 +14985,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainEarthLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -14992,14 +15004,14 @@ DefineAbility({
       Variables={
         "DomainEarthDC",
       },
-      Formula="10+(DomainEarthLVL/2)+CHA",
+      Formula=Formula("10+(DomainEarthLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainEarthTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15011,7 +15023,7 @@ DefineAbility({
       Variables={
         "DomainEarthAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15030,23 +15042,23 @@ DefineAbility({
   Definitions={
     {
       Name="EvilDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEvilLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEvilDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEvilTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEvilAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -15055,7 +15067,7 @@ DefineAbility({
       Variables={
         "EvilDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15067,14 +15079,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainEvilLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15086,14 +15098,14 @@ DefineAbility({
       Variables={
         "DomainEvilDC",
       },
-      Formula="10+(DomainEvilLVL/2)+CHA",
+      Formula=Formula("10+(DomainEvilLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainEvilTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15105,7 +15117,7 @@ DefineAbility({
       Variables={
         "DomainEvilAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15124,23 +15136,23 @@ DefineAbility({
   Definitions={
     {
       Name="FireDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainFireLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainFireDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainFireTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainFireAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -15149,7 +15161,7 @@ DefineAbility({
       Variables={
         "FireDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15161,14 +15173,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainFireLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15180,14 +15192,14 @@ DefineAbility({
       Variables={
         "DomainFireDC",
       },
-      Formula="10+(DomainFireLVL/2)+CHA",
+      Formula=Formula("10+(DomainFireLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainFireTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15199,7 +15211,7 @@ DefineAbility({
       Variables={
         "DomainFireAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15218,23 +15230,23 @@ DefineAbility({
   Definitions={
     {
       Name="GloryDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGloryLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGloryDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGloryTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGloryAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -15243,7 +15255,7 @@ DefineAbility({
       Variables={
         "GloryDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15255,14 +15267,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainGloryLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15274,21 +15286,21 @@ DefineAbility({
       Variables={
         "ChannelPositiveEnergyDC",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="VAR",
       Variables={
         "DomainGloryDC",
       },
-      Formula="10+(DomainGloryLVL/2)+CHA",
+      Formula=Formula("10+(DomainGloryLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainGloryTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15300,7 +15312,7 @@ DefineAbility({
       Variables={
         "DomainGloryAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15319,23 +15331,23 @@ DefineAbility({
   Definitions={
     {
       Name="GoodDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGoodLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGoodDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGoodTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGoodAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -15344,7 +15356,7 @@ DefineAbility({
       Variables={
         "GoodDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15356,14 +15368,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainGoodLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15375,14 +15387,14 @@ DefineAbility({
       Variables={
         "DomainGoodDC",
       },
-      Formula="10+(DomainGoodLVL/2)+CHA",
+      Formula=Formula("10+(DomainGoodLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainGoodTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15394,7 +15406,7 @@ DefineAbility({
       Variables={
         "DomainGoodAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15413,23 +15425,23 @@ DefineAbility({
   Definitions={
     {
       Name="HealingDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainHealingLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainHealingDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainHealingTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainHealingAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -15438,7 +15450,7 @@ DefineAbility({
       Variables={
         "HealingDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15450,14 +15462,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainHealingLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15469,14 +15481,14 @@ DefineAbility({
       Variables={
         "DomainHealingDC",
       },
-      Formula="10+(DomainHealingLVL/2)+CHA",
+      Formula=Formula("10+(DomainHealingLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainHealingTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15488,7 +15500,7 @@ DefineAbility({
       Variables={
         "DomainHealingAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15507,23 +15519,23 @@ DefineAbility({
   Definitions={
     {
       Name="KnowledgeDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainKnowledgeLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainKnowledgeDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainKnowledgeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainKnowledgeAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -15532,7 +15544,7 @@ DefineAbility({
       Variables={
         "KnowledgeDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15544,14 +15556,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainKnowledgeLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15563,14 +15575,14 @@ DefineAbility({
       Variables={
         "DomainKnowledgeDC",
       },
-      Formula="10+(DomainKnowledgeLVL/2)+CHA",
+      Formula=Formula("10+(DomainKnowledgeLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainKnowledgeTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15582,7 +15594,7 @@ DefineAbility({
       Variables={
         "DomainKnowledgeAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15601,23 +15613,23 @@ DefineAbility({
   Definitions={
     {
       Name="LawDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLawLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLawDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLawTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLawAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -15626,7 +15638,7 @@ DefineAbility({
       Variables={
         "LawDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15638,14 +15650,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainLawLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15657,14 +15669,14 @@ DefineAbility({
       Variables={
         "DomainLawDC",
       },
-      Formula="10+(DomainLawLVL/2)+CHA",
+      Formula=Formula("10+(DomainLawLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainLawTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15676,7 +15688,7 @@ DefineAbility({
       Variables={
         "DomainLawAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15695,23 +15707,23 @@ DefineAbility({
   Definitions={
     {
       Name="LiberationDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLiberationLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLiberationDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLiberationTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLiberationAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -15720,7 +15732,7 @@ DefineAbility({
       Variables={
         "LiberationDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15732,14 +15744,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainLiberationLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15751,14 +15763,14 @@ DefineAbility({
       Variables={
         "DomainLiberationDC",
       },
-      Formula="10+(DomainLiberationLVL/2)+CHA",
+      Formula=Formula("10+(DomainLiberationLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainLiberationTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15770,7 +15782,7 @@ DefineAbility({
       Variables={
         "DomainLiberationAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15789,23 +15801,23 @@ DefineAbility({
   Definitions={
     {
       Name="LuckDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLuckLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLuckDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLuckTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLuckAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -15814,7 +15826,7 @@ DefineAbility({
       Variables={
         "LuckDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15826,14 +15838,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainLuckLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15845,14 +15857,14 @@ DefineAbility({
       Variables={
         "DomainLuckDC",
       },
-      Formula="10+(DomainLuckLVL/2)+CHA",
+      Formula=Formula("10+(DomainLuckLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainLuckTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15864,7 +15876,7 @@ DefineAbility({
       Variables={
         "DomainLuckAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15883,23 +15895,23 @@ DefineAbility({
   Definitions={
     {
       Name="MadnessDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMadnessLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMadnessDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMadnessTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMadnessAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -15908,7 +15920,7 @@ DefineAbility({
       Variables={
         "MadnessDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15920,14 +15932,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainMadnessLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15939,14 +15951,14 @@ DefineAbility({
       Variables={
         "DomainMadnessDC",
       },
-      Formula="10+(DomainMadnessLVL/2)+CHA",
+      Formula=Formula("10+(DomainMadnessLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainMadnessTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15958,7 +15970,7 @@ DefineAbility({
       Variables={
         "DomainMadnessAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -15977,23 +15989,23 @@ DefineAbility({
   Definitions={
     {
       Name="MagicDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMagicLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMagicDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMagicTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMagicAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -16002,7 +16014,7 @@ DefineAbility({
       Variables={
         "MagicDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16014,14 +16026,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainMagicLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16033,14 +16045,14 @@ DefineAbility({
       Variables={
         "DomainMagicDC",
       },
-      Formula="10+(DomainMagicLVL/2)+CHA",
+      Formula=Formula("10+(DomainMagicLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainMagicTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16052,7 +16064,7 @@ DefineAbility({
       Variables={
         "DomainMagicAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16071,23 +16083,23 @@ DefineAbility({
   Definitions={
     {
       Name="NobilityDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainNobilityLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainNobilityDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainNobilityTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainNobilityAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -16096,7 +16108,7 @@ DefineAbility({
       Variables={
         "NobilityDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16108,14 +16120,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainNobilityLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16127,14 +16139,14 @@ DefineAbility({
       Variables={
         "DomainNobilityDC",
       },
-      Formula="10+(DomainNobilityLVL/2)+CHA",
+      Formula=Formula("10+(DomainNobilityLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainNobilityTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16146,7 +16158,7 @@ DefineAbility({
       Variables={
         "DomainNobilityAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16165,23 +16177,23 @@ DefineAbility({
   Definitions={
     {
       Name="PlantDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainPlantLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainPlantDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainPlantTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainPlantAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -16190,7 +16202,7 @@ DefineAbility({
       Variables={
         "PlantDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16202,14 +16214,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainPlantLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16221,14 +16233,14 @@ DefineAbility({
       Variables={
         "DomainPlantDC",
       },
-      Formula="10+(DomainPlantLVL/2)+CHA",
+      Formula=Formula("10+(DomainPlantLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainPlantTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16240,7 +16252,7 @@ DefineAbility({
       Variables={
         "DomainPlantAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16259,27 +16271,27 @@ DefineAbility({
   Definitions={
     {
       Name="ProtectionDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainProtectionSaveBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainProtectionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainProtectionDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainProtectionTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainProtectionAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -16288,7 +16300,7 @@ DefineAbility({
       Variables={
         "ProtectionDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16300,21 +16312,21 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainProtectionSaveBonus",
       },
-      Formula="(DomainProtectionLVL/5)+1",
+      Formula=Formula("(DomainProtectionLVL/5)+1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainProtectionLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16326,14 +16338,14 @@ DefineAbility({
       Variables={
         "DomainProtectionDC",
       },
-      Formula="10+(DomainProtectionLVL/2)+CHA",
+      Formula=Formula("10+(DomainProtectionLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainProtectionTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16345,7 +16357,7 @@ DefineAbility({
       Variables={
         "DomainProtectionAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16364,23 +16376,23 @@ DefineAbility({
   Definitions={
     {
       Name="ReposeDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainReposeLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainReposeDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainReposeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainReposeAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -16389,7 +16401,7 @@ DefineAbility({
       Variables={
         "ReposeDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16401,14 +16413,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainReposeLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16420,14 +16432,14 @@ DefineAbility({
       Variables={
         "DomainReposeDC",
       },
-      Formula="10+(DomainReposeLVL/2)+CHA",
+      Formula=Formula("10+(DomainReposeLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainReposeTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16439,7 +16451,7 @@ DefineAbility({
       Variables={
         "DomainReposeAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16458,23 +16470,23 @@ DefineAbility({
   Definitions={
     {
       Name="RuneDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainRuneLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainRuneDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainRuneTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainRuneAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -16483,7 +16495,7 @@ DefineAbility({
       Variables={
         "RuneDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16495,14 +16507,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainRuneLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16514,14 +16526,14 @@ DefineAbility({
       Variables={
         "DomainRuneDC",
       },
-      Formula="10+(DomainRuneLVL/2)+CHA",
+      Formula=Formula("10+(DomainRuneLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainRuneTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16533,7 +16545,7 @@ DefineAbility({
       Variables={
         "DomainRuneAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16552,23 +16564,23 @@ DefineAbility({
   Definitions={
     {
       Name="StrengthDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainStrengthLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainStrengthDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainStrengthTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainStrengthAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -16577,7 +16589,7 @@ DefineAbility({
       Variables={
         "StrengthDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16589,14 +16601,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainStrengthLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16608,14 +16620,14 @@ DefineAbility({
       Variables={
         "DomainStrengthDC",
       },
-      Formula="10+(DomainStrengthLVL/2)+CHA",
+      Formula=Formula("10+(DomainStrengthLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainStrengthTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16627,7 +16639,7 @@ DefineAbility({
       Variables={
         "DomainStrengthAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16646,23 +16658,23 @@ DefineAbility({
   Definitions={
     {
       Name="SunDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainSunLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainSunDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainSunTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainSunAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -16671,7 +16683,7 @@ DefineAbility({
       Variables={
         "SunDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16683,14 +16695,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainSunLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16702,14 +16714,14 @@ DefineAbility({
       Variables={
         "DomainSunDC",
       },
-      Formula="10+(DomainSunLVL/2)+CHA",
+      Formula=Formula("10+(DomainSunLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainSunTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16721,7 +16733,7 @@ DefineAbility({
       Variables={
         "DomainSunAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16740,23 +16752,23 @@ DefineAbility({
   Definitions={
     {
       Name="TravelDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTravelLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTravelDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTravelTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTravelAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -16765,7 +16777,7 @@ DefineAbility({
       Variables={
         "TravelDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16777,14 +16789,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainTravelLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16796,14 +16808,14 @@ DefineAbility({
       Variables={
         "DomainTravelDC",
       },
-      Formula="10+(DomainTravelLVL/2)+CHA",
+      Formula=Formula("10+(DomainTravelLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainTravelTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16815,7 +16827,7 @@ DefineAbility({
       Variables={
         "DomainTravelAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16834,23 +16846,23 @@ DefineAbility({
   Definitions={
     {
       Name="TrickeryDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTrickeryLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTrickeryDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTrickeryTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTrickeryAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -16859,7 +16871,7 @@ DefineAbility({
       Variables={
         "TrickeryDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16871,14 +16883,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainTrickeryLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16890,14 +16902,14 @@ DefineAbility({
       Variables={
         "DomainTrickeryDC",
       },
-      Formula="10+(DomainTrickeryLVL/2)+CHA",
+      Formula=Formula("10+(DomainTrickeryLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainTrickeryTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16909,7 +16921,7 @@ DefineAbility({
       Variables={
         "DomainTrickeryAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16928,23 +16940,23 @@ DefineAbility({
   Definitions={
     {
       Name="WarDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWarLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWarDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWarTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWarAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -16953,7 +16965,7 @@ DefineAbility({
       Variables={
         "WarDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16965,14 +16977,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainWarLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -16984,14 +16996,14 @@ DefineAbility({
       Variables={
         "DomainWarDC",
       },
-      Formula="10+(DomainWarLVL/2)+CHA",
+      Formula=Formula("10+(DomainWarLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainWarTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17003,7 +17015,7 @@ DefineAbility({
       Variables={
         "DomainWarAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17022,23 +17034,23 @@ DefineAbility({
   Definitions={
     {
       Name="WaterDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWaterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWaterDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWaterTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWaterAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -17047,7 +17059,7 @@ DefineAbility({
       Variables={
         "WaterDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17059,14 +17071,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainWaterLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17078,14 +17090,14 @@ DefineAbility({
       Variables={
         "DomainWaterDC",
       },
-      Formula="10+(DomainWaterLVL/2)+CHA",
+      Formula=Formula("10+(DomainWaterLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainWaterTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17097,7 +17109,7 @@ DefineAbility({
       Variables={
         "DomainWaterAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17116,23 +17128,23 @@ DefineAbility({
   Definitions={
     {
       Name="WeatherDomain",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWeatherLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWeatherDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWeatherTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWeatherAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -17141,7 +17153,7 @@ DefineAbility({
       Variables={
         "WeatherDomain",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17153,14 +17165,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainWeatherLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17172,14 +17184,14 @@ DefineAbility({
       Variables={
         "DomainWeatherDC",
       },
-      Formula="10+(DomainWeatherLVL/2)+CHA",
+      Formula=Formula("10+(DomainWeatherLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainWeatherTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17191,7 +17203,7 @@ DefineAbility({
       Variables={
         "DomainWeatherAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17214,19 +17226,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainAirLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAirAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAirDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAirTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -17235,7 +17247,7 @@ DefineAbility({
       Variables={
         "DomainAirLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17247,7 +17259,7 @@ DefineAbility({
       Variables={
         "DomainAirAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17259,14 +17271,14 @@ DefineAbility({
       Variables={
         "DomainAirDC",
       },
-      Formula="10+(DomainAirLVL/2)+CHA",
+      Formula=Formula("10+(DomainAirLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainAirTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17387,19 +17399,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainAnimalLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAnimalDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAnimalTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAnimalAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -17411,7 +17423,7 @@ DefineAbility({
       Variables={
         "DomainAnimalLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17423,14 +17435,14 @@ DefineAbility({
       Variables={
         "DomainAnimalDC",
       },
-      Formula="10+(DomainAnimalLVL/2)+CHA",
+      Formula=Formula("10+(DomainAnimalLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainAnimalTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17442,7 +17454,7 @@ DefineAbility({
       Variables={
         "DomainAnimalAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17563,19 +17575,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainArtificeLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainArtificeDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainArtificeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainArtificeAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -17584,7 +17596,7 @@ DefineAbility({
       Variables={
         "DomainArtificeLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17596,14 +17608,14 @@ DefineAbility({
       Variables={
         "DomainArtificeDC",
       },
-      Formula="10+(DomainArtificeLVL/2)+CHA",
+      Formula=Formula("10+(DomainArtificeLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainArtificeTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17615,7 +17627,7 @@ DefineAbility({
       Variables={
         "DomainArtificeAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17741,19 +17753,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainChaosLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainChaosDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainChaosTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainChaosAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -17762,7 +17774,7 @@ DefineAbility({
       Variables={
         "DomainChaosLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17774,14 +17786,14 @@ DefineAbility({
       Variables={
         "DomainChaosDC",
       },
-      Formula="10+(DomainChaosLVL/2)+CHA",
+      Formula=Formula("10+(DomainChaosLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainChaosTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17793,7 +17805,7 @@ DefineAbility({
       Variables={
         "DomainChaosAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17914,19 +17926,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainCharmLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCharmDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCharmTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCharmAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -17935,7 +17947,7 @@ DefineAbility({
       Variables={
         "DomainCharmLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17947,14 +17959,14 @@ DefineAbility({
       Variables={
         "DomainCharmDC",
       },
-      Formula="10+(DomainCharmLVL/2)+CHA",
+      Formula=Formula("10+(DomainCharmLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainCharmTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -17966,7 +17978,7 @@ DefineAbility({
       Variables={
         "DomainCharmAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18087,19 +18099,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainCommunityLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCommunityDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCommunityTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainCommunityAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -18108,7 +18120,7 @@ DefineAbility({
       Variables={
         "DomainCommunityLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18120,14 +18132,14 @@ DefineAbility({
       Variables={
         "DomainCommunityDC",
       },
-      Formula="10+(DomainCommunityLVL/2)+CHA",
+      Formula=Formula("10+(DomainCommunityLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainCommunityTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18139,7 +18151,7 @@ DefineAbility({
       Variables={
         "DomainCommunityAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18260,19 +18272,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainDarknessLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDarknessDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDarknessTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDarknessAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -18281,7 +18293,7 @@ DefineAbility({
       Variables={
         "DomainDarknessLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18293,14 +18305,14 @@ DefineAbility({
       Variables={
         "DomainDarknessDC",
       },
-      Formula="10+(DomainDarknessLVL/2)+CHA",
+      Formula=Formula("10+(DomainDarknessLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainDarknessTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18312,7 +18324,7 @@ DefineAbility({
       Variables={
         "DomainDarknessAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18440,19 +18452,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainDeathLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDeathDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDeathTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDeathAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -18461,7 +18473,7 @@ DefineAbility({
       Variables={
         "DomainDeathLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18473,14 +18485,14 @@ DefineAbility({
       Variables={
         "DomainDeathDC",
       },
-      Formula="10+(DomainDeathLVL/2)+CHA",
+      Formula=Formula("10+(DomainDeathLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainDeathTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18492,7 +18504,7 @@ DefineAbility({
       Variables={
         "DomainDeathAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18613,19 +18625,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainDestructionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDestructionDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDestructionTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainDestructionAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -18634,7 +18646,7 @@ DefineAbility({
       Variables={
         "DomainDestructionLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18646,14 +18658,14 @@ DefineAbility({
       Variables={
         "DomainDestructionDC",
       },
-      Formula="10+(DomainDestructionLVL/2)+CHA",
+      Formula=Formula("10+(DomainDestructionLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainDestructionTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18665,7 +18677,7 @@ DefineAbility({
       Variables={
         "DomainDestructionAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18786,19 +18798,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainEarthLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEarthDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEarthTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEarthAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -18807,7 +18819,7 @@ DefineAbility({
       Variables={
         "DomainEarthLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18819,14 +18831,14 @@ DefineAbility({
       Variables={
         "DomainEarthDC",
       },
-      Formula="10+(DomainEarthLVL/2)+CHA",
+      Formula=Formula("10+(DomainEarthLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainEarthTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18838,7 +18850,7 @@ DefineAbility({
       Variables={
         "DomainEarthAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18964,19 +18976,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainEvilLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEvilDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEvilTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEvilAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -18985,7 +18997,7 @@ DefineAbility({
       Variables={
         "DomainEvilLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -18997,14 +19009,14 @@ DefineAbility({
       Variables={
         "DomainEvilDC",
       },
-      Formula="10+(DomainEvilLVL/2)+CHA",
+      Formula=Formula("10+(DomainEvilLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainEvilTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19016,7 +19028,7 @@ DefineAbility({
       Variables={
         "DomainEvilAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19137,19 +19149,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainFireLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainFireDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainFireTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainFireAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -19158,7 +19170,7 @@ DefineAbility({
       Variables={
         "DomainFireLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19170,14 +19182,14 @@ DefineAbility({
       Variables={
         "DomainFireDC",
       },
-      Formula="10+(DomainFireLVL/2)+CHA",
+      Formula=Formula("10+(DomainFireLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainFireTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19189,7 +19201,7 @@ DefineAbility({
       Variables={
         "DomainFireAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19310,19 +19322,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainGloryLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGloryDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGloryTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGloryAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -19331,7 +19343,7 @@ DefineAbility({
       Variables={
         "DomainGloryLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19343,21 +19355,21 @@ DefineAbility({
       Variables={
         "ChannelPositiveEnergyDC",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="VAR",
       Variables={
         "DomainGloryDC",
       },
-      Formula="10+(DomainGloryLVL/2)+CHA",
+      Formula=Formula("10+(DomainGloryLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainGloryTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19369,7 +19381,7 @@ DefineAbility({
       Variables={
         "DomainGloryAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19495,19 +19507,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainGoodLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGoodDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGoodTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainGoodAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -19516,7 +19528,7 @@ DefineAbility({
       Variables={
         "DomainGoodLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19528,14 +19540,14 @@ DefineAbility({
       Variables={
         "DomainGoodDC",
       },
-      Formula="10+(DomainGoodLVL/2)+CHA",
+      Formula=Formula("10+(DomainGoodLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainGoodTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19547,7 +19559,7 @@ DefineAbility({
       Variables={
         "DomainGoodAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19668,19 +19680,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainHealingLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainHealingDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainHealingTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainHealingAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -19689,7 +19701,7 @@ DefineAbility({
       Variables={
         "DomainHealingLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19701,14 +19713,14 @@ DefineAbility({
       Variables={
         "DomainHealingDC",
       },
-      Formula="10+(DomainHealingLVL/2)+CHA",
+      Formula=Formula("10+(DomainHealingLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainHealingTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19720,7 +19732,7 @@ DefineAbility({
       Variables={
         "DomainHealingAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19841,19 +19853,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainKnowledgeLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainKnowledgeDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainKnowledgeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainKnowledgeAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -19865,7 +19877,7 @@ DefineAbility({
       Variables={
         "DomainKnowledgeLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19877,14 +19889,14 @@ DefineAbility({
       Variables={
         "DomainKnowledgeDC",
       },
-      Formula="10+(DomainKnowledgeLVL/2)+CHA",
+      Formula=Formula("10+(DomainKnowledgeLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainKnowledgeTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -19896,7 +19908,7 @@ DefineAbility({
       Variables={
         "DomainKnowledgeAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20022,19 +20034,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainLawLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLawDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLawTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLawAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -20043,7 +20055,7 @@ DefineAbility({
       Variables={
         "DomainLawLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20055,14 +20067,14 @@ DefineAbility({
       Variables={
         "DomainLawDC",
       },
-      Formula="10+(DomainLawLVL/2)+CHA",
+      Formula=Formula("10+(DomainLawLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainLawTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20074,7 +20086,7 @@ DefineAbility({
       Variables={
         "DomainLawAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20195,19 +20207,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainLiberationLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLiberationDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLiberationTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLiberationAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -20216,7 +20228,7 @@ DefineAbility({
       Variables={
         "DomainLiberationLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20228,14 +20240,14 @@ DefineAbility({
       Variables={
         "DomainLiberationDC",
       },
-      Formula="10+(DomainLiberationLVL/2)+CHA",
+      Formula=Formula("10+(DomainLiberationLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainLiberationTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20247,7 +20259,7 @@ DefineAbility({
       Variables={
         "DomainLiberationAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20368,19 +20380,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainLuckLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLuckDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLuckTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainLuckAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -20389,7 +20401,7 @@ DefineAbility({
       Variables={
         "DomainLuckLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20401,14 +20413,14 @@ DefineAbility({
       Variables={
         "DomainLuckDC",
       },
-      Formula="10+(DomainLuckLVL/2)+CHA",
+      Formula=Formula("10+(DomainLuckLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainLuckTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20420,7 +20432,7 @@ DefineAbility({
       Variables={
         "DomainLuckAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20541,19 +20553,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainMadnessLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMadnessDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMadnessTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMadnessAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -20562,7 +20574,7 @@ DefineAbility({
       Variables={
         "DomainMadnessLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20574,14 +20586,14 @@ DefineAbility({
       Variables={
         "DomainMadnessDC",
       },
-      Formula="10+(DomainMadnessLVL/2)+CHA",
+      Formula=Formula("10+(DomainMadnessLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainMadnessTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20593,7 +20605,7 @@ DefineAbility({
       Variables={
         "DomainMadnessAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20714,19 +20726,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainMagicLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMagicDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMagicTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainMagicAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -20735,7 +20747,7 @@ DefineAbility({
       Variables={
         "DomainMagicLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20747,14 +20759,14 @@ DefineAbility({
       Variables={
         "DomainMagicDC",
       },
-      Formula="10+(DomainMagicLVL/2)+CHA",
+      Formula=Formula("10+(DomainMagicLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainMagicTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20766,7 +20778,7 @@ DefineAbility({
       Variables={
         "DomainMagicAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20887,19 +20899,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainNobilityLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainNobilityDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainNobilityTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainNobilityAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -20908,7 +20920,7 @@ DefineAbility({
       Variables={
         "DomainNobilityLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20920,14 +20932,14 @@ DefineAbility({
       Variables={
         "DomainNobilityDC",
       },
-      Formula="10+(DomainNobilityLVL/2)+CHA",
+      Formula=Formula("10+(DomainNobilityLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainNobilityTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -20939,7 +20951,7 @@ DefineAbility({
       Variables={
         "DomainNobilityAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21060,19 +21072,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainPlantLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainPlantDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainPlantTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainPlantAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -21081,7 +21093,7 @@ DefineAbility({
       Variables={
         "DomainPlantLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21093,14 +21105,14 @@ DefineAbility({
       Variables={
         "DomainPlantDC",
       },
-      Formula="10+(DomainPlantLVL/2)+CHA",
+      Formula=Formula("10+(DomainPlantLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainPlantTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21112,7 +21124,7 @@ DefineAbility({
       Variables={
         "DomainPlantAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21233,23 +21245,23 @@ DefineAbility({
   Definitions={
     {
       Name="DomainProtectionSaveBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainProtectionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainProtectionDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainProtectionTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainProtectionAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -21258,7 +21270,7 @@ DefineAbility({
       Variables={
         "ALL",
       },
-      Formula="DomainProtectionSaveBonus",
+      Formula=Formula("DomainProtectionSaveBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -21270,14 +21282,14 @@ DefineAbility({
       Variables={
         "DomainProtectionSaveBonus",
       },
-      Formula="(DomainProtectionLVL/5)+1",
+      Formula=Formula("(DomainProtectionLVL/5)+1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainProtectionLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21289,14 +21301,14 @@ DefineAbility({
       Variables={
         "DomainProtectionDC",
       },
-      Formula="10+(DomainProtectionLVL/2)+CHA",
+      Formula=Formula("10+(DomainProtectionLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainProtectionTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21308,7 +21320,7 @@ DefineAbility({
       Variables={
         "DomainProtectionAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21429,19 +21441,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainReposeLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainReposeDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainReposeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainReposeAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -21450,7 +21462,7 @@ DefineAbility({
       Variables={
         "DomainReposeLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21462,14 +21474,14 @@ DefineAbility({
       Variables={
         "DomainReposeDC",
       },
-      Formula="10+(DomainReposeLVL/2)+CHA",
+      Formula=Formula("10+(DomainReposeLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainReposeTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21481,7 +21493,7 @@ DefineAbility({
       Variables={
         "DomainReposeAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21602,19 +21614,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainRuneLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainRuneDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainRuneTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainRuneAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -21623,7 +21635,7 @@ DefineAbility({
       Variables={
         "DomainRuneLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21635,14 +21647,14 @@ DefineAbility({
       Variables={
         "DomainRuneDC",
       },
-      Formula="10+(DomainRuneLVL/2)+CHA",
+      Formula=Formula("10+(DomainRuneLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainRuneTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21654,7 +21666,7 @@ DefineAbility({
       Variables={
         "DomainRuneAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21782,19 +21794,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainStrengthLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainStrengthDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainStrengthTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainStrengthAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -21803,7 +21815,7 @@ DefineAbility({
       Variables={
         "DomainStrengthLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21815,14 +21827,14 @@ DefineAbility({
       Variables={
         "DomainStrengthDC",
       },
-      Formula="10+(DomainStrengthLVL/2)+CHA",
+      Formula=Formula("10+(DomainStrengthLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainStrengthTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21834,7 +21846,7 @@ DefineAbility({
       Variables={
         "DomainStrengthAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21955,19 +21967,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainSunLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainSunDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainSunTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainSunAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -21976,7 +21988,7 @@ DefineAbility({
       Variables={
         "DomainSunLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -21988,14 +22000,14 @@ DefineAbility({
       Variables={
         "DomainSunDC",
       },
-      Formula="10+(DomainSunLVL/2)+CHA",
+      Formula=Formula("10+(DomainSunLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainSunTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22007,7 +22019,7 @@ DefineAbility({
       Variables={
         "DomainSunAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22128,19 +22140,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainTravelLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTravelDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTravelTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTravelAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -22149,14 +22161,14 @@ DefineAbility({
       Variables={
         "TYPE=Walk",
       },
-      Formula="10",
+      Formula=Formula("10"),
     },
     {
       Category="VAR",
       Variables={
         "DomainTravelLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22168,14 +22180,14 @@ DefineAbility({
       Variables={
         "DomainTravelDC",
       },
-      Formula="10+(DomainTravelLVL/2)+CHA",
+      Formula=Formula("10+(DomainTravelLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainTravelTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22187,7 +22199,7 @@ DefineAbility({
       Variables={
         "DomainTravelAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22308,19 +22320,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainTrickeryLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTrickeryDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTrickeryTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainTrickeryAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -22334,7 +22346,7 @@ DefineAbility({
       Variables={
         "DomainTrickeryLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22346,14 +22358,14 @@ DefineAbility({
       Variables={
         "DomainTrickeryDC",
       },
-      Formula="10+(DomainTrickeryLVL/2)+CHA",
+      Formula=Formula("10+(DomainTrickeryLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainTrickeryTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22365,7 +22377,7 @@ DefineAbility({
       Variables={
         "DomainTrickeryAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22486,19 +22498,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainWarLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWarDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWarTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWarAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -22507,7 +22519,7 @@ DefineAbility({
       Variables={
         "DomainWarLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22519,14 +22531,14 @@ DefineAbility({
       Variables={
         "DomainWarDC",
       },
-      Formula="10+(DomainWarLVL/2)+CHA",
+      Formula=Formula("10+(DomainWarLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainWarTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22538,7 +22550,7 @@ DefineAbility({
       Variables={
         "DomainWarAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22659,19 +22671,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainWaterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWaterDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWaterTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWaterAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -22680,7 +22692,7 @@ DefineAbility({
       Variables={
         "DomainWaterLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22692,14 +22704,14 @@ DefineAbility({
       Variables={
         "DomainWaterDC",
       },
-      Formula="10+(DomainWaterLVL/2)+CHA",
+      Formula=Formula("10+(DomainWaterLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainWaterTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22711,7 +22723,7 @@ DefineAbility({
       Variables={
         "DomainWaterAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22832,19 +22844,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainWeatherLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWeatherDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWeatherTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWeatherAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -22853,7 +22865,7 @@ DefineAbility({
       Variables={
         "DomainWeatherLVL",
       },
-      Formula="DomainLVL",
+      Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22865,14 +22877,14 @@ DefineAbility({
       Variables={
         "DomainWeatherDC",
       },
-      Formula="10+(DomainWeatherLVL/2)+CHA",
+      Formula=Formula("10+(DomainWeatherLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "DomainWeatherTimes",
       },
-      Formula="DomainPowerTimes",
+      Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
         Replace=false,
@@ -22884,7 +22896,7 @@ DefineAbility({
       Variables={
         "DomainWeatherAbilityTriggerLVL",
       },
-      Formula="DomainAbilityTriggerLVL",
+      Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
         Replace=false,
@@ -23023,7 +23035,7 @@ DefineAbility({
   Definitions={
     {
       Name="LightningArcTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23032,7 +23044,7 @@ DefineAbility({
       Variables={
         "LightningArcTimes",
       },
-      Formula="DomainAirTimes",
+      Formula=Formula("DomainAirTimes"),
     },
   },
   Types={
@@ -23055,7 +23067,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainAirResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23064,7 +23076,7 @@ DefineAbility({
       Variables={
         "ElectricityResistanceBonus",
       },
-      Formula="DomainAirResistanceBonus",
+      Formula=Formula("DomainAirResistanceBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -23076,7 +23088,7 @@ DefineAbility({
       Variables={
         "DomainAirResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainAirLVL"] >= 6)
@@ -23088,7 +23100,7 @@ DefineAbility({
       Variables={
         "DomainAirResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainAirLVL"] >= 12)
@@ -23167,7 +23179,7 @@ DefineAbility({
   Definitions={
     {
       Name="SpeakWithAnimalsRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23176,7 +23188,7 @@ DefineAbility({
       Variables={
         "SpeakWithAnimalsRounds",
       },
-      Formula="3+DomainAnimalLVL",
+      Formula=Formula("3+DomainAnimalLVL"),
     },
   },
   Types={
@@ -23205,7 +23217,7 @@ DefineAbility({
   Definitions={
     {
       Name="AnimalCompanionMasterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23214,7 +23226,7 @@ DefineAbility({
       Variables={
         "AnimalCompanionMasterLVL",
       },
-      Formula="DomainAnimalLVL-3",
+      Formula=Formula("DomainAnimalLVL-3"),
     },
   },
   Types={
@@ -23265,7 +23277,7 @@ DefineAbility({
   Definitions={
     {
       Name="ArtificersTouchTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23274,7 +23286,7 @@ DefineAbility({
       Variables={
         "ArtificersTouchTimes",
       },
-      Formula="DomainArtificeTimes",
+      Formula=Formula("DomainArtificeTimes"),
     },
   },
   Types={
@@ -23322,7 +23334,7 @@ DefineAbility({
   Definitions={
     {
       Name="DancingWeaponTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23331,7 +23343,7 @@ DefineAbility({
       Variables={
         "DancingWeaponTimes",
       },
-      Formula="(DomainArtificeLVL-4)/4",
+      Formula=Formula("(DomainArtificeLVL-4)/4"),
     },
   },
   Types={
@@ -23379,7 +23391,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofChaosTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23388,7 +23400,7 @@ DefineAbility({
       Variables={
         "TouchofChaosTimes",
       },
-      Formula="DomainChaosTimes",
+      Formula=Formula("DomainChaosTimes"),
     },
   },
   Types={
@@ -23438,7 +23450,7 @@ DefineAbility({
   Definitions={
     {
       Name="ChaosBladeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23447,7 +23459,7 @@ DefineAbility({
       Variables={
         "ChaosBladeTimes",
       },
-      Formula="(DomainChaosLVL-4)/4",
+      Formula=Formula("(DomainChaosLVL-4)/4"),
     },
   },
   Types={
@@ -23496,7 +23508,7 @@ DefineAbility({
   Definitions={
     {
       Name="DazingTouchTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23505,7 +23517,7 @@ DefineAbility({
       Variables={
         "DazingTouchTimes",
       },
-      Formula="DomainCharmTimes",
+      Formula=Formula("DomainCharmTimes"),
     },
   },
   Types={
@@ -23547,7 +23559,7 @@ DefineAbility({
   Definitions={
     {
       Name="CharmCharmingSmileRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23556,7 +23568,7 @@ DefineAbility({
       Variables={
         "CharmCharmingSmileRounds",
       },
-      Formula="DomainCharmLVL",
+      Formula=Formula("DomainCharmLVL"),
     },
   },
   Types={
@@ -23605,7 +23617,7 @@ DefineAbility({
   Definitions={
     {
       Name="CalmingTouchTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23614,7 +23626,7 @@ DefineAbility({
       Variables={
         "CalmingTouchTimes",
       },
-      Formula="DomainCommunityTimes",
+      Formula=Formula("DomainCommunityTimes"),
     },
   },
   Types={
@@ -23662,7 +23674,7 @@ DefineAbility({
   Definitions={
     {
       Name="UnityTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23671,7 +23683,7 @@ DefineAbility({
       Variables={
         "UnityTimes",
       },
-      Formula="(DomainCommunityLVL-4)/4",
+      Formula=Formula("(DomainCommunityLVL-4)/4"),
     },
   },
   Types={
@@ -23720,7 +23732,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofDarknessTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23729,7 +23741,7 @@ DefineAbility({
       Variables={
         "TouchofDarknessTimes",
       },
-      Formula="DomainDarknessTimes",
+      Formula=Formula("DomainDarknessTimes"),
     },
   },
   Types={
@@ -23777,7 +23789,7 @@ DefineAbility({
   Definitions={
     {
       Name="EyesOfDarknessRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23786,7 +23798,7 @@ DefineAbility({
       Variables={
         "EyesOfDarknessRounds",
       },
-      Formula="DomainDarknessLVL/2",
+      Formula=Formula("DomainDarknessLVL/2"),
     },
   },
   Types={
@@ -23836,7 +23848,7 @@ DefineAbility({
   Definitions={
     {
       Name="BleedingTouchTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23845,7 +23857,7 @@ DefineAbility({
       Variables={
         "BleedingTouchTimes",
       },
-      Formula="DomainDeathTimes",
+      Formula=Formula("DomainDeathTimes"),
     },
   },
   Types={
@@ -23913,7 +23925,7 @@ DefineAbility({
   Definitions={
     {
       Name="DestructiveSmiteTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23922,7 +23934,7 @@ DefineAbility({
       Variables={
         "DestructiveSmiteTimes",
       },
-      Formula="DomainDestructionTimes",
+      Formula=Formula("DomainDestructionTimes"),
     },
   },
   Types={
@@ -23971,7 +23983,7 @@ DefineAbility({
   Definitions={
     {
       Name="DestructiveAuraRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -23980,7 +23992,7 @@ DefineAbility({
       Variables={
         "DestructiveAuraRounds",
       },
-      Formula="DomainDestructionLVL",
+      Formula=Formula("DomainDestructionLVL"),
     },
   },
   Types={
@@ -24031,7 +24043,7 @@ DefineAbility({
   Definitions={
     {
       Name="AcidDartTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24040,7 +24052,7 @@ DefineAbility({
       Variables={
         "AcidDartTimes",
       },
-      Formula="DomainEarthTimes",
+      Formula=Formula("DomainEarthTimes"),
     },
   },
   Types={
@@ -24063,7 +24075,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainEarthResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24072,7 +24084,7 @@ DefineAbility({
       Variables={
         "AcidResistanceBonus",
       },
-      Formula="DomainEarthResistanceBonus",
+      Formula=Formula("DomainEarthResistanceBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -24084,7 +24096,7 @@ DefineAbility({
       Variables={
         "DomainEarthResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainEarthLVL"] >= 6)
@@ -24096,7 +24108,7 @@ DefineAbility({
       Variables={
         "DomainEarthResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainEarthLVL"] >= 12)
@@ -24176,7 +24188,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofEvilTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24185,7 +24197,7 @@ DefineAbility({
       Variables={
         "TouchofEvilTimes",
       },
-      Formula="DomainEvilTimes",
+      Formula=Formula("DomainEvilTimes"),
     },
   },
   Types={
@@ -24234,7 +24246,7 @@ DefineAbility({
   Definitions={
     {
       Name="ScytheOfEvilTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24243,7 +24255,7 @@ DefineAbility({
       Variables={
         "ScytheOfEvilTimes",
       },
-      Formula="(DomainEvilLVL-4)/4",
+      Formula=Formula("(DomainEvilLVL-4)/4"),
     },
   },
   Types={
@@ -24293,7 +24305,7 @@ DefineAbility({
   Definitions={
     {
       Name="FireBoltTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24302,7 +24314,7 @@ DefineAbility({
       Variables={
         "FireBoltTimes",
       },
-      Formula="DomainFireTimes",
+      Formula=Formula("DomainFireTimes"),
     },
   },
   Types={
@@ -24325,7 +24337,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainFireResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24334,7 +24346,7 @@ DefineAbility({
       Variables={
         "FireResistanceBonus",
       },
-      Formula="DomainFireResistanceBonus",
+      Formula=Formula("DomainFireResistanceBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -24346,7 +24358,7 @@ DefineAbility({
       Variables={
         "DomainFireResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainFireLVL"] >= 6)
@@ -24358,7 +24370,7 @@ DefineAbility({
       Variables={
         "DomainFireResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainFireLVL"] >= 12)
@@ -24438,7 +24450,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofGloryTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24447,7 +24459,7 @@ DefineAbility({
       Variables={
         "TouchofGloryTimes",
       },
-      Formula="DomainGloryTimes",
+      Formula=Formula("DomainGloryTimes"),
     },
   },
   Types={
@@ -24489,7 +24501,7 @@ DefineAbility({
   Definitions={
     {
       Name="GloryDivinePresenceRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24498,7 +24510,7 @@ DefineAbility({
       Variables={
         "GloryDivinePresenceRounds",
       },
-      Formula="DomainGloryLVL",
+      Formula=Formula("DomainGloryLVL"),
     },
   },
   Types={
@@ -24548,7 +24560,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofGoodTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24557,7 +24569,7 @@ DefineAbility({
       Variables={
         "TouchofGoodTimes",
       },
-      Formula="DomainGoodTimes",
+      Formula=Formula("DomainGoodTimes"),
     },
   },
   Types={
@@ -24606,7 +24618,7 @@ DefineAbility({
   Definitions={
     {
       Name="HolyLanceTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24615,7 +24627,7 @@ DefineAbility({
       Variables={
         "HolyLanceTimes",
       },
-      Formula="(DomainGoodLVL-4)/4",
+      Formula=Formula("(DomainGoodLVL-4)/4"),
     },
   },
   Types={
@@ -24665,7 +24677,7 @@ DefineAbility({
   Definitions={
     {
       Name="RebukeDeathTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24674,7 +24686,7 @@ DefineAbility({
       Variables={
         "RebukeDeathTimes",
       },
-      Formula="DomainHealingTimes",
+      Formula=Formula("DomainHealingTimes"),
     },
   },
   Types={
@@ -24721,7 +24733,7 @@ DefineAbility({
   Definitions={
     {
       Name="LoreKeeperDomainSkillBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24730,7 +24742,7 @@ DefineAbility({
       Variables={
         "LoreKeeperDomainSkillBonus",
       },
-      Formula="15+DomainKnowledgeLVL+WIS",
+      Formula=Formula("15+DomainKnowledgeLVL+WIS"),
     },
   },
   Types={
@@ -24778,7 +24790,7 @@ DefineAbility({
   Definitions={
     {
       Name="RemoteViewingRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24787,7 +24799,7 @@ DefineAbility({
       Variables={
         "RemoteViewingRounds",
       },
-      Formula="DomainKnowledgeLVL",
+      Formula=Formula("DomainKnowledgeLVL"),
     },
   },
   Types={
@@ -24835,7 +24847,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofLawTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24844,7 +24856,7 @@ DefineAbility({
       Variables={
         "TouchofLawTimes",
       },
-      Formula="DomainLawTimes",
+      Formula=Formula("DomainLawTimes"),
     },
   },
   Types={
@@ -24893,7 +24905,7 @@ DefineAbility({
   Definitions={
     {
       Name="StaffOfOrderTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24902,7 +24914,7 @@ DefineAbility({
       Variables={
         "StaffOfOrderTimes",
       },
-      Formula="(DomainLawLVL-4)/4",
+      Formula=Formula("(DomainLawLVL-4)/4"),
     },
   },
   Types={
@@ -24950,7 +24962,7 @@ DefineAbility({
   Definitions={
     {
       Name="LiberationRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -24959,7 +24971,7 @@ DefineAbility({
       Variables={
         "LiberationRounds",
       },
-      Formula="DomainLiberationLVL",
+      Formula=Formula("DomainLiberationLVL"),
     },
   },
   Types={
@@ -25008,7 +25020,7 @@ DefineAbility({
   Definitions={
     {
       Name="FreedomsCallRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25017,7 +25029,7 @@ DefineAbility({
       Variables={
         "FreedomsCallRounds",
       },
-      Formula="DomainLiberationLVL",
+      Formula=Formula("DomainLiberationLVL"),
     },
   },
   Types={
@@ -25066,7 +25078,7 @@ DefineAbility({
   Definitions={
     {
       Name="BitofLuckTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25075,7 +25087,7 @@ DefineAbility({
       Variables={
         "BitofLuckTimes",
       },
-      Formula="DomainLuckTimes",
+      Formula=Formula("DomainLuckTimes"),
     },
   },
   Types={
@@ -25124,7 +25136,7 @@ DefineAbility({
   Definitions={
     {
       Name="GoodFortuneTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25133,7 +25145,7 @@ DefineAbility({
       Variables={
         "GoodFortuneTimes",
       },
-      Formula="DomainLuckLVL/6",
+      Formula=Formula("DomainLuckLVL/6"),
     },
   },
   Types={
@@ -25183,7 +25195,7 @@ DefineAbility({
   Definitions={
     {
       Name="VisionofMadnessTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25192,7 +25204,7 @@ DefineAbility({
       Variables={
         "VisionofMadnessTimes",
       },
-      Formula="DomainMadnessTimes",
+      Formula=Formula("DomainMadnessTimes"),
     },
   },
   Types={
@@ -25241,7 +25253,7 @@ DefineAbility({
   Definitions={
     {
       Name="AuraOfMadnessRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25250,7 +25262,7 @@ DefineAbility({
       Variables={
         "AuraOfMadnessRounds",
       },
-      Formula="DomainMadnessLVL",
+      Formula=Formula("DomainMadnessLVL"),
     },
   },
   Types={
@@ -25299,7 +25311,7 @@ DefineAbility({
   Definitions={
     {
       Name="HandoftheAcolyteTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25308,7 +25320,7 @@ DefineAbility({
       Variables={
         "HandoftheAcolyteTimes",
       },
-      Formula="DomainMagicTimes",
+      Formula=Formula("DomainMagicTimes"),
     },
   },
   Types={
@@ -25356,7 +25368,7 @@ DefineAbility({
   Definitions={
     {
       Name="DispellingTouchTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25365,7 +25377,7 @@ DefineAbility({
       Variables={
         "DispellingTouchTimes",
       },
-      Formula="(DomainMagicLVL-4)/4",
+      Formula=Formula("(DomainMagicLVL-4)/4"),
     },
   },
   Types={
@@ -25465,7 +25477,7 @@ DefineAbility({
   Definitions={
     {
       Name="WoodenFistRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25474,7 +25486,7 @@ DefineAbility({
       Variables={
         "WoodenFistRounds",
       },
-      Formula="3+WIS",
+      Formula=Formula("3+WIS"),
     },
   },
   Types={
@@ -25523,7 +25535,7 @@ DefineAbility({
   Definitions={
     {
       Name="BrambleArmorRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25532,7 +25544,7 @@ DefineAbility({
       Variables={
         "BrambleArmorRounds",
       },
-      Formula="DomainPlantLVL",
+      Formula=Formula("DomainPlantLVL"),
     },
   },
   Types={
@@ -25582,7 +25594,7 @@ DefineAbility({
   Definitions={
     {
       Name="ResistantTouchTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25591,7 +25603,7 @@ DefineAbility({
       Variables={
         "ResistantTouchTimes",
       },
-      Formula="DomainProtectionTimes",
+      Formula=Formula("DomainProtectionTimes"),
     },
   },
   Types={
@@ -25641,7 +25653,7 @@ DefineAbility({
   Definitions={
     {
       Name="AuraOfProtectionRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25650,7 +25662,7 @@ DefineAbility({
       Variables={
         "AuraOfProtectionRounds",
       },
-      Formula="DomainProtectionLVL",
+      Formula=Formula("DomainProtectionLVL"),
     },
   },
   Types={
@@ -25700,7 +25712,7 @@ DefineAbility({
   Definitions={
     {
       Name="GentleRestTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25709,7 +25721,7 @@ DefineAbility({
       Variables={
         "GentleRestTimes",
       },
-      Formula="DomainReposeTimes",
+      Formula=Formula("DomainReposeTimes"),
     },
   },
   Types={
@@ -25757,7 +25769,7 @@ DefineAbility({
   Definitions={
     {
       Name="WardAgainstDeathRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25766,7 +25778,7 @@ DefineAbility({
       Variables={
         "WardAgainstDeathRounds",
       },
-      Formula="DomainReposeLVL",
+      Formula=Formula("DomainReposeLVL"),
     },
   },
   Types={
@@ -25818,7 +25830,7 @@ DefineAbility({
   Definitions={
     {
       Name="BlastRuneTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25827,7 +25839,7 @@ DefineAbility({
       Variables={
         "BlastRuneTimes",
       },
-      Formula="DomainRuneTimes",
+      Formula=Formula("DomainRuneTimes"),
     },
   },
   Types={
@@ -25895,7 +25907,7 @@ DefineAbility({
   Definitions={
     {
       Name="StrengthSurgeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25904,7 +25916,7 @@ DefineAbility({
       Variables={
         "StrengthSurgeTimes",
       },
-      Formula="DomainStrengthTimes",
+      Formula=Formula("DomainStrengthTimes"),
     },
   },
   Types={
@@ -25952,7 +25964,7 @@ DefineAbility({
   Definitions={
     {
       Name="MightOfTheGodsRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -25961,7 +25973,7 @@ DefineAbility({
       Variables={
         "MightOfTheGodsRounds",
       },
-      Formula="DomainStrengthLVL",
+      Formula=Formula("DomainStrengthLVL"),
     },
   },
   Types={
@@ -26031,7 +26043,7 @@ DefineAbility({
   Definitions={
     {
       Name="SunNimbusOfLightRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -26040,7 +26052,7 @@ DefineAbility({
       Variables={
         "SunNimbusOfLightRounds",
       },
-      Formula="DomainSunLVL",
+      Formula=Formula("DomainSunLVL"),
     },
   },
   Types={
@@ -26089,7 +26101,7 @@ DefineAbility({
   Definitions={
     {
       Name="AgileFeetTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -26098,7 +26110,7 @@ DefineAbility({
       Variables={
         "AgileFeetTimes",
       },
-      Formula="DomainTravelTimes",
+      Formula=Formula("DomainTravelTimes"),
     },
   },
   Types={
@@ -26147,7 +26159,7 @@ DefineAbility({
   Definitions={
     {
       Name="TravelDimensionalHop",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -26156,7 +26168,7 @@ DefineAbility({
       Variables={
         "TravelDimensionalHop",
       },
-      Formula="DomainTravelLVL*10",
+      Formula=Formula("DomainTravelLVL*10"),
     },
   },
   Types={
@@ -26206,7 +26218,7 @@ DefineAbility({
   Definitions={
     {
       Name="CopycatTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -26215,7 +26227,7 @@ DefineAbility({
       Variables={
         "CopycatTimes",
       },
-      Formula="DomainTrickeryTimes",
+      Formula=Formula("DomainTrickeryTimes"),
     },
   },
   Types={
@@ -26257,11 +26269,11 @@ DefineAbility({
   Definitions={
     {
       Name="TrickeryMastersIllusionDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="TrickeryMastersIllusionRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -26270,14 +26282,14 @@ DefineAbility({
       Variables={
         "TrickeryMastersIllusionDC",
       },
-      Formula="10+(DomainTrickeryLVL/2)+WIS",
+      Formula=Formula("10+(DomainTrickeryLVL/2)+WIS"),
     },
     {
       Category="VAR",
       Variables={
         "TrickeryMastersIllusionRounds",
       },
-      Formula="DomainTrickeryLVL",
+      Formula=Formula("DomainTrickeryLVL"),
     },
   },
   Types={
@@ -26327,7 +26339,7 @@ DefineAbility({
   Definitions={
     {
       Name="BattleRageTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -26336,7 +26348,7 @@ DefineAbility({
       Variables={
         "BattleRageTimes",
       },
-      Formula="DomainWarTimes",
+      Formula=Formula("DomainWarTimes"),
     },
   },
   Types={
@@ -26355,7 +26367,7 @@ DefineAbility({
           Variables={
             "DAMAGE",
           },
-          Formula="max(DomainWarLVL/2,1)",
+          Formula=Formula("max(DomainWarLVL/2,1)"),
         },
       },
     },
@@ -26398,7 +26410,7 @@ DefineAbility({
   Definitions={
     {
       Name="WeaponMasterRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -26407,7 +26419,7 @@ DefineAbility({
       Variables={
         "WeaponMasterRounds",
       },
-      Formula="DomainWarLVL",
+      Formula=Formula("DomainWarLVL"),
     },
   },
   Types={
@@ -26457,7 +26469,7 @@ DefineAbility({
   Definitions={
     {
       Name="IcicleTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -26466,7 +26478,7 @@ DefineAbility({
       Variables={
         "IcicleTimes",
       },
-      Formula="DomainWaterTimes",
+      Formula=Formula("DomainWaterTimes"),
     },
   },
   Types={
@@ -26489,7 +26501,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainWaterResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -26498,7 +26510,7 @@ DefineAbility({
       Variables={
         "ColdResistanceBonus",
       },
-      Formula="DomainWaterResistanceBonus",
+      Formula=Formula("DomainWaterResistanceBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -26510,7 +26522,7 @@ DefineAbility({
       Variables={
         "DomainWaterResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainWaterLVL"] >= 6)
@@ -26522,7 +26534,7 @@ DefineAbility({
       Variables={
         "DomainWaterResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainWaterLVL"] >= 12)
@@ -26603,7 +26615,7 @@ DefineAbility({
   Definitions={
     {
       Name="StormBurstTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -26612,7 +26624,7 @@ DefineAbility({
       Variables={
         "StormBurstTimes",
       },
-      Formula="DomainWeatherTimes",
+      Formula=Formula("DomainWeatherTimes"),
     },
   },
   Types={
@@ -26653,7 +26665,7 @@ DefineAbility({
   Definitions={
     {
       Name="WeatherLightningLordTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -26662,7 +26674,7 @@ DefineAbility({
       Variables={
         "WeatherLightningLordTimes",
       },
-      Formula="DomainWeatherLVL",
+      Formula=Formula("DomainWeatherLVL"),
     },
   },
   Types={
@@ -26723,7 +26735,7 @@ DefineAbility({
         "Knowledge (Nature)",
         "Survival",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -26745,7 +26757,7 @@ DefineAbility({
       Variables={
         "WildEmpathyLVL",
       },
-      Formula="DruidLVL",
+      Formula=Formula("DruidLVL"),
     },
   },
   Abilities={
@@ -26874,7 +26886,7 @@ DefineAbility({
       Variables={
         "Nature Bond",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -26920,23 +26932,23 @@ DefineAbility({
   Definitions={
     {
       Name="AnimalCompanionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AnimalCompanionMasterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AnimalCompanionGranted",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CompanionDisable_AnimalCompanion",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CompanionMasterLVL_Druid",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -26945,14 +26957,14 @@ DefineAbility({
       Variables={
         "AnimalCompanionGranted",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AnimalCompanionMasterLVL",
       },
-      Formula="CompanionMasterLVL_Druid",
+      Formula=Formula("CompanionMasterLVL_Druid"),
       Conditions={
         function (character)
           return (character.Variables["CompanionDisable_AnimalCompanion"] == 0)
@@ -26964,7 +26976,7 @@ DefineAbility({
       Variables={
         "CompanionMasterLVL_Druid",
       },
-      Formula="DruidLVL",
+      Formula=Formula("DruidLVL"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -27015,23 +27027,23 @@ DefineAbility({
   Definitions={
     {
       Name="AnimalCompanionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AnimalCompanionMasterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AnimalCompanionGranted",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CompanionDisable_AnimalCompanion",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CompanionMasterLVL_Druid",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -27075,14 +27087,14 @@ DefineAbility({
       Variables={
         "Druid Domain",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="DOMAIN",
       Variables={
         "NUMBER",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -27096,14 +27108,14 @@ DefineAbility({
       Variables={
         "DomainTaken",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
     {
       Category="VAR",
       Variables={
         "DomainLVL",
       },
-      Formula="DruidLVL",
+      Formula=Formula("DruidLVL"),
     },
   },
   Abilities={
@@ -27156,7 +27168,7 @@ DefineAbility({
         "DruidWaterAllowed",
         "DruidWeatherAllowed",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="DruidDomain",
         Replace=false,
@@ -27174,31 +27186,31 @@ ModifyAbility({
   Definitions={
     {
       Name="DruidAirAllowed",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DruidAnimalAllowed",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DruidEarthAllowed",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DruidFireAllowed",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DruidPlantAllowed",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DruidWaterAllowed",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DruidWeatherAllowed",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -27222,19 +27234,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainAirLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAirAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAirDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAirTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -27324,19 +27336,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainAnimalLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAnimalDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAnimalTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainAnimalAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -27426,19 +27438,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainEarthLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEarthDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEarthTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainEarthAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -27528,19 +27540,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainFireLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainFireDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainFireTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainFireAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -27630,19 +27642,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainPlantLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainPlantDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainPlantTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainPlantAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -27732,19 +27744,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainWaterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWaterDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWaterTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWaterAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -27834,19 +27846,19 @@ DefineAbility({
   Definitions={
     {
       Name="DomainWeatherLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWeatherDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWeatherTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DomainWeatherAbilityTriggerLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -27933,15 +27945,15 @@ DefineAbility({
   Definitions={
     {
       Name="WildShapeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="WildShapeDuration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="WildShapeProgression",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -27950,7 +27962,7 @@ DefineAbility({
       Variables={
         "DruidWildShape",
       },
-      Formula="DruidLVL",
+      Formula=Formula("DruidLVL"),
     },
   },
   Abilities={
@@ -28542,7 +28554,7 @@ DefineAbility({
   Definitions={
     {
       Name="PoisonSaveDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -28551,7 +28563,7 @@ DefineAbility({
       Variables={
         "PoisonSaveDC",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -28621,7 +28633,7 @@ DefineAbility({
   Definitions={
     {
       Name="DruidWildShape",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -28630,7 +28642,7 @@ DefineAbility({
       Variables={
         "WildShapeDuration",
       },
-      Formula="DruidWildShape",
+      Formula=Formula("DruidWildShape"),
     },
   },
   Abilities={
@@ -28660,7 +28672,7 @@ DefineAbility({
   Definitions={
     {
       Name="WildShapeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -28669,7 +28681,7 @@ DefineAbility({
       Variables={
         "WildShapeTimes",
       },
-      Formula="(DruidLVL>=4)+(DruidLVL>=6)+(DruidLVL>=8)+(DruidLVL>=10)+(DruidLVL>=12)+(DruidLVL>=14)+(DruidLVL>=16)+(DruidLVL>=18)+(DruidLVL>=20)",
+      Formula=Formula("(DruidLVL>=4)+(DruidLVL>=6)+(DruidLVL>=8)+(DruidLVL>=10)+(DruidLVL>=12)+(DruidLVL>=14)+(DruidLVL>=16)+(DruidLVL>=18)+(DruidLVL>=20)"),
       Type={
         Name="BASE",
         Replace=false,
@@ -28694,7 +28706,7 @@ DefineAbility({
   Definitions={
     {
       Name="WildShapeProgression",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -28703,7 +28715,7 @@ DefineAbility({
       Variables={
         "WildShapeProgression",
       },
-      Formula="(DruidWildShape>=4)+(DruidWildShape>=6)+(DruidWildShape>=8)+(DruidWildShape>=10)+(DruidWildShape>=12)+(DruidWildShape>=14)+(DruidWildShape>=16)+(DruidWildShape>=18)+(DruidWildShape>=20)",
+      Formula=Formula("(DruidWildShape>=4)+(DruidWildShape>=6)+(DruidWildShape>=8)+(DruidWildShape>=10)+(DruidWildShape>=12)+(DruidWildShape>=14)+(DruidWildShape>=16)+(DruidWildShape>=18)+(DruidWildShape>=20)"),
       Type={
         Name="BASE",
         Replace=false,
@@ -28727,7 +28739,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WildShapeAbilityLevel",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -28743,7 +28755,7 @@ ModifyAbility({
       Variables={
         "WildShapeAbilityLevel",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           local count = 0
@@ -28778,7 +28790,7 @@ ModifyAbility({
       Variables={
         "WildShapeAbilityLevel",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           local count = 0
@@ -28813,7 +28825,7 @@ ModifyAbility({
       Variables={
         "WildShapeAbilityLevel",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           local count = 0
@@ -28848,7 +28860,7 @@ ModifyAbility({
       Variables={
         "WildShapeAbilityLevel",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           local count = 0
@@ -28883,7 +28895,7 @@ ModifyAbility({
       Variables={
         "WildShapeAbilityLevel",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           local count = 0
@@ -28918,7 +28930,7 @@ ModifyAbility({
       Variables={
         "WildShapeTimes",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           local count = 0
@@ -28953,7 +28965,7 @@ ModifyAbility({
       Variables={
         "WildShapeTimes",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           local count = 0
@@ -28988,7 +29000,7 @@ ModifyAbility({
       Variables={
         "WildShapeTimes",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           local count = 0
@@ -29023,7 +29035,7 @@ ModifyAbility({
       Variables={
         "WildShapeTimes",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           local count = 0
@@ -29058,7 +29070,7 @@ ModifyAbility({
       Variables={
         "WildShapeTimes",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           local count = 0
@@ -29093,7 +29105,7 @@ ModifyAbility({
       Variables={
         "WildShapeTimes",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           local count = 0
@@ -29128,7 +29140,7 @@ ModifyAbility({
       Variables={
         "WildShapeTimes",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           local count = 0
@@ -29163,7 +29175,7 @@ ModifyAbility({
       Variables={
         "WildShapeTimes",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           local count = 0
@@ -29198,7 +29210,7 @@ ModifyAbility({
       Variables={
         "WildShapeTimes",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           local count = 0
@@ -29231,7 +29243,7 @@ DefineAbility({
   Definitions={
     {
       Name="FighterWeaponQualifyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -29248,7 +29260,7 @@ DefineAbility({
         "CriticalMasteryQualifyLVL",
         "GreatPenetratingStrikeQualifyLVL",
       },
-      Formula="FighterWeaponQualifyLVL",
+      Formula=Formula("FighterWeaponQualifyLVL"),
     },
   },
   Types={
@@ -29267,11 +29279,11 @@ DefineAbility({
   Definitions={
     {
       Name="WeapSpecQualify",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="WeaponSpecQualifyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -29280,7 +29292,7 @@ DefineAbility({
       Variables={
         "WeapSpecQualify",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["WeaponSpecQualifyLVL"] >= 4)
@@ -29304,11 +29316,11 @@ DefineAbility({
   Definitions={
     {
       Name="DisruptiveQualify",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DisruptiveQualifyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -29317,7 +29329,7 @@ DefineAbility({
       Variables={
         "DisruptiveQualify",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["DisruptiveQualifyLVL"] >= 6)
@@ -29341,11 +29353,11 @@ DefineAbility({
   Definitions={
     {
       Name="GreatShieldFocusQualify",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="GreatShieldFocusQualifyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -29354,7 +29366,7 @@ DefineAbility({
       Variables={
         "GreatShieldFocusQualify",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["GreatShieldFocusQualifyLVL"] >= 8)
@@ -29378,11 +29390,11 @@ DefineAbility({
   Definitions={
     {
       Name="GreatWeapFocusQualify",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="GreatWeapFocusQualifyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -29391,7 +29403,7 @@ DefineAbility({
       Variables={
         "GreatWeapFocusQualify",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["GreatWeapFocusQualifyLVL"] >= 8)
@@ -29415,11 +29427,11 @@ DefineAbility({
   Definitions={
     {
       Name="SpellbreakerQualify",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SpellbreakerQualifyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -29428,7 +29440,7 @@ DefineAbility({
       Variables={
         "SpellbreakerQualify",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["SpellbreakerQualifyLVL"] >= 6)
@@ -29452,11 +29464,11 @@ DefineAbility({
   Definitions={
     {
       Name="GreatWeapSpecQualify",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="GreatWeapSpecQualifyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -29465,7 +29477,7 @@ DefineAbility({
       Variables={
         "GreatWeapSpecQualify",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["GreatWeapSpecQualifyLVL"] >= 12)
@@ -29489,11 +29501,11 @@ DefineAbility({
   Definitions={
     {
       Name="PenetratingStrikeQualify",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="PenetratingStrikeQualifyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -29502,7 +29514,7 @@ DefineAbility({
       Variables={
         "PenetratingStrikeQualify",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["PenetratingStrikeQualifyLVL"] >= 12)
@@ -29526,11 +29538,11 @@ DefineAbility({
   Definitions={
     {
       Name="CriticalMasteryQualify",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CriticalMasteryQualifyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -29539,7 +29551,7 @@ DefineAbility({
       Variables={
         "CriticalMasteryQualify",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["CriticalMasteryQualifyLVL"] >= 14)
@@ -29563,11 +29575,11 @@ DefineAbility({
   Definitions={
     {
       Name="GreatPenetratingStrikeQualify",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="GreatPenetratingStrikeQualifyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -29576,7 +29588,7 @@ DefineAbility({
       Variables={
         "GreatPenetratingStrikeQualify",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["GreatPenetratingStrikeQualifyLVL"] >= 16)
@@ -29616,11 +29628,11 @@ DefineAbility({
   Definitions={
     {
       Name="Bravery",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="BraveryLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -29629,7 +29641,7 @@ DefineAbility({
       Variables={
         "Bravery",
       },
-      Formula="(BraveryLVL+2)/4",
+      Formula=Formula("(BraveryLVL+2)/4"),
     },
   },
   Types={
@@ -29659,15 +29671,15 @@ DefineAbility({
   Definitions={
     {
       Name="ArmorTraining",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ArmorTrainingLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ArmorTrainingTier",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -29676,7 +29688,7 @@ DefineAbility({
       Variables={
         "MAXDEX",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           local count = 0
@@ -29702,7 +29714,7 @@ DefineAbility({
       Variables={
         "MAXDEX",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           local count = 0
@@ -29728,7 +29740,7 @@ DefineAbility({
       Variables={
         "MAXDEX",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           local count = 0
@@ -29754,7 +29766,7 @@ DefineAbility({
       Variables={
         "MAXDEX",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           local count = 0
@@ -29780,7 +29792,7 @@ DefineAbility({
       Variables={
         "ACCHECK",
       },
-      Formula="ArmorTrainingTier",
+      Formula=Formula("ArmorTrainingTier"),
       Conditions={
         function (character)
           return ((character.HasEquipped(function (item) return item.IsType("Armor") end))) >= 1
@@ -29792,14 +29804,14 @@ DefineAbility({
       Variables={
         "ArmorTrainingTier",
       },
-      Formula="ArmorTraining",
+      Formula=Formula("ArmorTraining"),
     },
     {
       Category="VAR",
       Variables={
         "ArmorTraining",
       },
-      Formula="min((ArmorTrainingLVL+1)/4,4)",
+      Formula=Formula("min((ArmorTrainingLVL+1)/4,4)"),
     },
   },
   Abilities={
@@ -29869,12 +29881,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (character.IsProficientWith(weapon))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return ((character.IsProficientWith(weapon)))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.56",
   Description={
     Format="Any attacks made a %1 automatically confirm all critical threats and have their damage multiplier increased by 1 (x2 becomes x3, for example). In addition, you cannot be disarmed while wielding a weapon of this type.",
@@ -29888,7 +29900,7 @@ DefineAbility({
       Variables={
         "CRITMULTADD",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="NonStackingCrit",
         Replace=false,
@@ -29919,7 +29931,7 @@ DefineAbility({
       Variables={
         "Fighter Bonus Feat",
       },
-      Formula="FighterLvl/2+1",
+      Formula=Formula("FighterLvl/2+1"),
     },
   },
   Types={
@@ -29939,7 +29951,7 @@ ModifyAbility({
       Variables={
         "ArmorTrainingTier",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["Fighter_CF_ArmorTraining1"] == 1)
@@ -29977,7 +29989,7 @@ ModifyAbility({
       Variables={
         "ArmorTrainingTier",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["Fighter_CF_ArmorTraining2"] == 1)
@@ -30015,7 +30027,7 @@ ModifyAbility({
       Variables={
         "ArmorTrainingTier",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["Fighter_CF_ArmorTraining3"] == 1)
@@ -30053,7 +30065,7 @@ ModifyAbility({
       Variables={
         "ArmorTrainingTier",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["Fighter_CF_ArmorTraining4"] == 1)
@@ -30091,7 +30103,7 @@ ModifyAbility({
       Variables={
         "Fighter Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FighterLvl"] >= 1)
@@ -30115,7 +30127,7 @@ ModifyAbility({
       Variables={
         "Fighter Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FighterLvl"] >= 2)
@@ -30139,7 +30151,7 @@ ModifyAbility({
       Variables={
         "Fighter Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FighterLvl"] >= 4)
@@ -30163,7 +30175,7 @@ ModifyAbility({
       Variables={
         "Fighter Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FighterLvl"] >= 6)
@@ -30187,7 +30199,7 @@ ModifyAbility({
       Variables={
         "Fighter Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FighterLvl"] >= 8)
@@ -30211,7 +30223,7 @@ ModifyAbility({
       Variables={
         "Fighter Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FighterLvl"] >= 10)
@@ -30235,7 +30247,7 @@ ModifyAbility({
       Variables={
         "Fighter Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FighterLvl"] >= 12)
@@ -30259,7 +30271,7 @@ ModifyAbility({
       Variables={
         "Fighter Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FighterLvl"] >= 14)
@@ -30283,7 +30295,7 @@ ModifyAbility({
       Variables={
         "Fighter Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FighterLvl"] >= 16)
@@ -30307,7 +30319,7 @@ ModifyAbility({
       Variables={
         "Fighter Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FighterLvl"] >= 18)
@@ -30331,7 +30343,7 @@ ModifyAbility({
       Variables={
         "Fighter Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FighterLvl"] >= 20)
@@ -30355,7 +30367,7 @@ ModifyAbility({
       Variables={
         "Weapon Training I",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["Fighter_CF_WeaponTraining1"] == 1)
@@ -30379,7 +30391,7 @@ ModifyAbility({
       Variables={
         "Weapon Training II",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["Fighter_CF_WeaponTraining2"] == 1)
@@ -30403,7 +30415,7 @@ ModifyAbility({
       Variables={
         "Weapon Training III",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["Fighter_CF_WeaponTraining3"] == 1)
@@ -30427,7 +30439,7 @@ ModifyAbility({
       Variables={
         "Weapon Training IV",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["Fighter_CF_WeaponTraining4"] == 1)
@@ -30457,11 +30469,11 @@ DefineAbility({
   Definitions={
     {
       Name="WeaponTrainingBase",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="FighterWeaponTrainingLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -30470,7 +30482,7 @@ DefineAbility({
       Variables={
         "Weapon Training I",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["FighterWeaponTrainingLVL"] >= 5)
@@ -30482,7 +30494,7 @@ DefineAbility({
       Variables={
         "Weapon Training II",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["FighterWeaponTrainingLVL"] >= 9)
@@ -30494,7 +30506,7 @@ DefineAbility({
       Variables={
         "Weapon Training III",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["FighterWeaponTrainingLVL"] >= 13)
@@ -30506,7 +30518,7 @@ DefineAbility({
       Variables={
         "Weapon Training IV",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["FighterWeaponTrainingLVL"] >= 17)
@@ -30518,7 +30530,7 @@ DefineAbility({
       Variables={
         "WeaponTrainingBase",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -30536,7 +30548,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingTierOne",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -30545,7 +30557,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingTierOne",
       },
-      Formula="WeaponTrainingBase+MAX(count(\"ABILITIES\",\"CATEGORY=Special Ability\",\"TYPE=WeaponTraining\")-1,0)",
+      Formula=Formula("WeaponTrainingBase+MAX(count(\"ABILITIES\",\"CATEGORY=Special Ability\",\"TYPE=WeaponTraining\")-1,0)"),
     },
   },
 })
@@ -30558,7 +30570,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingTierTwo",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -30567,7 +30579,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingTierTwo",
       },
-      Formula="WeaponTrainingBase+MAX(count(\"ABILITIES\",\"CATEGORY=Special Ability\",\"TYPE=WeaponTraining\")-2,0)",
+      Formula=Formula("WeaponTrainingBase+MAX(count(\"ABILITIES\",\"CATEGORY=Special Ability\",\"TYPE=WeaponTraining\")-2,0)"),
     },
   },
 })
@@ -30580,7 +30592,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingTierThree",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -30589,7 +30601,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingTierThree",
       },
-      Formula="WeaponTrainingBase+MAX(count(\"ABILITIES\",\"CATEGORY=Special Ability\",\"TYPE=WeaponTraining\")-3,0)",
+      Formula=Formula("WeaponTrainingBase+MAX(count(\"ABILITIES\",\"CATEGORY=Special Ability\",\"TYPE=WeaponTraining\")-3,0)"),
     },
   },
 })
@@ -30602,7 +30614,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingTierFour",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -30611,7 +30623,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingTierFour",
       },
-      Formula="WeaponTrainingBase+MAX(count(\"ABILITIES\",\"CATEGORY=Special Ability\",\"TYPE=WeaponTraining\")-4,0)",
+      Formula=Formula("WeaponTrainingBase+MAX(count(\"ABILITIES\",\"CATEGORY=Special Ability\",\"TYPE=WeaponTraining\")-4,0)"),
     },
   },
 })
@@ -30624,7 +30636,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingAxes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -30637,7 +30649,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingBladesHeavy",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -30650,7 +30662,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingBladesLight",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -30663,7 +30675,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingBows",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -30676,7 +30688,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingClose",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -30689,7 +30701,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingCrossbows",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -30702,7 +30714,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingDouble",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -30715,7 +30727,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingFlails",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -30728,7 +30740,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingHammers",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -30741,7 +30753,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingMonk",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -30754,7 +30766,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingNatural",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -30767,7 +30779,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingPoleArms",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -30780,7 +30792,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingSpears",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -30793,7 +30805,7 @@ ModifyAbility({
   Definitions={
     {
       Name="WeaponTrainingThrown",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -30809,7 +30821,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingAxes",
       },
-      Formula="WeaponTrainingTierOne",
+      Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -30832,7 +30844,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingBladesHeavy",
       },
-      Formula="WeaponTrainingTierOne",
+      Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -30855,7 +30867,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingBladesLight",
       },
-      Formula="WeaponTrainingTierOne",
+      Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -30878,7 +30890,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingBows",
       },
-      Formula="WeaponTrainingTierOne",
+      Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -30901,7 +30913,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingClose",
       },
-      Formula="WeaponTrainingTierOne",
+      Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -30924,7 +30936,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingCrossbows",
       },
-      Formula="WeaponTrainingTierOne",
+      Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -30947,7 +30959,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingDouble",
       },
-      Formula="WeaponTrainingTierOne",
+      Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -30970,7 +30982,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingFlails",
       },
-      Formula="WeaponTrainingTierOne",
+      Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -30993,7 +31005,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingHammers",
       },
-      Formula="WeaponTrainingTierOne",
+      Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31016,7 +31028,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingMonk",
       },
-      Formula="WeaponTrainingTierOne",
+      Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31039,7 +31051,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingNatural",
       },
-      Formula="WeaponTrainingTierOne",
+      Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31062,7 +31074,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingPoleArms",
       },
-      Formula="WeaponTrainingTierOne",
+      Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31085,7 +31097,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingSpears",
       },
-      Formula="WeaponTrainingTierOne",
+      Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31108,7 +31120,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingThrown",
       },
-      Formula="WeaponTrainingTierOne",
+      Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31131,7 +31143,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingAxes",
       },
-      Formula="WeaponTrainingTierTwo",
+      Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31154,7 +31166,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingBladesHeavy",
       },
-      Formula="WeaponTrainingTierTwo",
+      Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31177,7 +31189,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingBladesLight",
       },
-      Formula="WeaponTrainingTierTwo",
+      Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31200,7 +31212,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingBows",
       },
-      Formula="WeaponTrainingTierTwo",
+      Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31223,7 +31235,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingClose",
       },
-      Formula="WeaponTrainingTierTwo",
+      Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31246,7 +31258,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingCrossbows",
       },
-      Formula="WeaponTrainingTierTwo",
+      Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31269,7 +31281,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingDouble",
       },
-      Formula="WeaponTrainingTierTwo",
+      Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31292,7 +31304,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingFlails",
       },
-      Formula="WeaponTrainingTierTwo",
+      Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31315,7 +31327,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingHammers",
       },
-      Formula="WeaponTrainingTierTwo",
+      Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31338,7 +31350,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingMonk",
       },
-      Formula="WeaponTrainingTierTwo",
+      Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31361,7 +31373,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingNatural",
       },
-      Formula="WeaponTrainingTierTwo",
+      Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31384,7 +31396,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingPoleArms",
       },
-      Formula="WeaponTrainingTierTwo",
+      Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31407,7 +31419,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingSpears",
       },
-      Formula="WeaponTrainingTierTwo",
+      Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31430,7 +31442,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingThrown",
       },
-      Formula="WeaponTrainingTierTwo",
+      Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31453,7 +31465,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingAxes",
       },
-      Formula="WeaponTrainingTierThree",
+      Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31476,7 +31488,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingBladesHeavy",
       },
-      Formula="WeaponTrainingTierThree",
+      Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31499,7 +31511,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingBladesLight",
       },
-      Formula="WeaponTrainingTierThree",
+      Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31522,7 +31534,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingBows",
       },
-      Formula="WeaponTrainingTierThree",
+      Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31545,7 +31557,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingClose",
       },
-      Formula="WeaponTrainingTierThree",
+      Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31568,7 +31580,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingCrossbows",
       },
-      Formula="WeaponTrainingTierThree",
+      Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31591,7 +31603,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingDouble",
       },
-      Formula="WeaponTrainingTierThree",
+      Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31614,7 +31626,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingFlails",
       },
-      Formula="WeaponTrainingTierThree",
+      Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31637,7 +31649,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingHammers",
       },
-      Formula="WeaponTrainingTierThree",
+      Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31660,7 +31672,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingMonk",
       },
-      Formula="WeaponTrainingTierThree",
+      Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31683,7 +31695,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingNatural",
       },
-      Formula="WeaponTrainingTierThree",
+      Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31706,7 +31718,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingPoleArms",
       },
-      Formula="WeaponTrainingTierThree",
+      Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31729,7 +31741,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingSpears",
       },
-      Formula="WeaponTrainingTierThree",
+      Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31752,7 +31764,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingThrown",
       },
-      Formula="WeaponTrainingTierThree",
+      Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31775,7 +31787,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingAxes",
       },
-      Formula="WeaponTrainingTierFour",
+      Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31798,7 +31810,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingBladesHeavy",
       },
-      Formula="WeaponTrainingTierFour",
+      Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31821,7 +31833,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingBladesLight",
       },
-      Formula="WeaponTrainingTierFour",
+      Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31844,7 +31856,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingBows",
       },
-      Formula="WeaponTrainingTierFour",
+      Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31867,7 +31879,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingClose",
       },
-      Formula="WeaponTrainingTierFour",
+      Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31890,7 +31902,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingCrossbows",
       },
-      Formula="WeaponTrainingTierFour",
+      Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31913,7 +31925,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingDouble",
       },
-      Formula="WeaponTrainingTierFour",
+      Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31936,7 +31948,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingFlails",
       },
-      Formula="WeaponTrainingTierFour",
+      Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31959,7 +31971,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingHammers",
       },
-      Formula="WeaponTrainingTierFour",
+      Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31982,7 +31994,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingMonk",
       },
-      Formula="WeaponTrainingTierFour",
+      Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -32005,7 +32017,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingNatural",
       },
-      Formula="WeaponTrainingTierFour",
+      Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -32028,7 +32040,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingPoleArms",
       },
-      Formula="WeaponTrainingTierFour",
+      Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -32051,7 +32063,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingSpears",
       },
-      Formula="WeaponTrainingTierFour",
+      Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -32074,7 +32086,7 @@ ModifyAbility({
       Variables={
         "WeaponTrainingThrown",
       },
-      Formula="WeaponTrainingTierFour",
+      Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -32107,7 +32119,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingAxes",
+      Formula=Formula("WeaponTrainingAxes"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32144,7 +32156,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingBladesHeavy",
+      Formula=Formula("WeaponTrainingBladesHeavy"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32181,7 +32193,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingBladesLight",
+      Formula=Formula("WeaponTrainingBladesLight"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32218,7 +32230,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingBows",
+      Formula=Formula("WeaponTrainingBows"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32255,7 +32267,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingClose",
+      Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32268,7 +32280,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingClose",
+      Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32305,7 +32317,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingCrossbows",
+      Formula=Formula("WeaponTrainingCrossbows"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32342,7 +32354,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingDouble",
+      Formula=Formula("WeaponTrainingDouble"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32379,7 +32391,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingFlails",
+      Formula=Formula("WeaponTrainingFlails"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32416,7 +32428,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingHammers",
+      Formula=Formula("WeaponTrainingHammers"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32453,7 +32465,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingMonk",
+      Formula=Formula("WeaponTrainingMonk"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32490,7 +32502,7 @@ DefineAbility({
         "TOHIT.Weapon Group Natural",
         "DAMAGE.Weapon Group Natural",
       },
-      Formula="WeaponTrainingNatural",
+      Formula=Formula("WeaponTrainingNatural"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32503,7 +32515,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingClose",
+      Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32540,7 +32552,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingPoleArms",
+      Formula=Formula("WeaponTrainingPoleArms"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32577,7 +32589,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingSpears",
+      Formula=Formula("WeaponTrainingSpears"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32614,7 +32626,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingThrown",
+      Formula=Formula("WeaponTrainingThrown"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32651,7 +32663,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingAxes",
+      Formula=Formula("WeaponTrainingAxes"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32688,7 +32700,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingBladesHeavy",
+      Formula=Formula("WeaponTrainingBladesHeavy"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32725,7 +32737,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingBladesLight",
+      Formula=Formula("WeaponTrainingBladesLight"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32762,7 +32774,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingBows",
+      Formula=Formula("WeaponTrainingBows"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32799,7 +32811,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingClose",
+      Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32812,7 +32824,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingClose",
+      Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32849,7 +32861,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingCrossbows",
+      Formula=Formula("WeaponTrainingCrossbows"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32886,7 +32898,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingDouble",
+      Formula=Formula("WeaponTrainingDouble"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32923,7 +32935,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingFlails",
+      Formula=Formula("WeaponTrainingFlails"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32960,7 +32972,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingHammers",
+      Formula=Formula("WeaponTrainingHammers"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -32997,7 +33009,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingMonk",
+      Formula=Formula("WeaponTrainingMonk"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33034,7 +33046,7 @@ DefineAbility({
         "TOHIT.Weapon Group Natural",
         "DAMAGE.Weapon Group Natural",
       },
-      Formula="WeaponTrainingNatural",
+      Formula=Formula("WeaponTrainingNatural"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33047,7 +33059,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingClose",
+      Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33084,7 +33096,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingPoleArms",
+      Formula=Formula("WeaponTrainingPoleArms"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33121,7 +33133,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingSpears",
+      Formula=Formula("WeaponTrainingSpears"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33158,7 +33170,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingThrown",
+      Formula=Formula("WeaponTrainingThrown"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33195,7 +33207,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingAxes",
+      Formula=Formula("WeaponTrainingAxes"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33232,7 +33244,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingBladesHeavy",
+      Formula=Formula("WeaponTrainingBladesHeavy"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33269,7 +33281,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingBladesLight",
+      Formula=Formula("WeaponTrainingBladesLight"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33306,7 +33318,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingBows",
+      Formula=Formula("WeaponTrainingBows"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33343,7 +33355,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingClose",
+      Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33356,7 +33368,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingClose",
+      Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33393,7 +33405,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingCrossbows",
+      Formula=Formula("WeaponTrainingCrossbows"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33430,7 +33442,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingDouble",
+      Formula=Formula("WeaponTrainingDouble"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33467,7 +33479,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingFlails",
+      Formula=Formula("WeaponTrainingFlails"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33504,7 +33516,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingHammers",
+      Formula=Formula("WeaponTrainingHammers"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33541,7 +33553,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingMonk",
+      Formula=Formula("WeaponTrainingMonk"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33578,7 +33590,7 @@ DefineAbility({
         "TOHIT.Weapon Group Natural",
         "DAMAGE.Weapon Group Natural",
       },
-      Formula="WeaponTrainingNatural",
+      Formula=Formula("WeaponTrainingNatural"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33591,7 +33603,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingClose",
+      Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33628,7 +33640,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingPoleArms",
+      Formula=Formula("WeaponTrainingPoleArms"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33665,7 +33677,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingSpears",
+      Formula=Formula("WeaponTrainingSpears"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33702,7 +33714,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingThrown",
+      Formula=Formula("WeaponTrainingThrown"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33739,7 +33751,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingAxes",
+      Formula=Formula("WeaponTrainingAxes"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33776,7 +33788,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingBladesHeavy",
+      Formula=Formula("WeaponTrainingBladesHeavy"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33813,7 +33825,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingBladesLight",
+      Formula=Formula("WeaponTrainingBladesLight"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33850,7 +33862,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingBows",
+      Formula=Formula("WeaponTrainingBows"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33887,7 +33899,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingClose",
+      Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33900,7 +33912,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingClose",
+      Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33937,7 +33949,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingCrossbows",
+      Formula=Formula("WeaponTrainingCrossbows"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -33974,7 +33986,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingDouble",
+      Formula=Formula("WeaponTrainingDouble"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -34011,7 +34023,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingFlails",
+      Formula=Formula("WeaponTrainingFlails"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -34048,7 +34060,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingHammers",
+      Formula=Formula("WeaponTrainingHammers"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -34085,7 +34097,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingMonk",
+      Formula=Formula("WeaponTrainingMonk"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -34122,7 +34134,7 @@ DefineAbility({
         "TOHIT.Weapon Group Natural",
         "DAMAGE.Weapon Group Natural",
       },
-      Formula="WeaponTrainingNatural",
+      Formula=Formula("WeaponTrainingNatural"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -34135,7 +34147,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingClose",
+      Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -34172,7 +34184,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingPoleArms",
+      Formula=Formula("WeaponTrainingPoleArms"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -34209,7 +34221,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingSpears",
+      Formula=Formula("WeaponTrainingSpears"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -34246,7 +34258,7 @@ DefineAbility({
         "TOHIT",
         "DAMAGE",
       },
-      Formula="WeaponTrainingThrown",
+      Formula=Formula("WeaponTrainingThrown"),
       Type={
         Name="WeaponTraining",
         Replace=false,
@@ -34295,11 +34307,11 @@ DefineAbility({
   Definitions={
     {
       Name="MonkBonusFeatLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MonkBonusFeatLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -34308,14 +34320,14 @@ DefineAbility({
       Variables={
         "Monk Bonus Feat",
       },
-      Formula="1+max((MonkBonusFeatLVL+2)/4,0)",
+      Formula=Formula("1+max((MonkBonusFeatLVL+2)/4,0)"),
     },
     {
       Category="VAR",
       Variables={
         "MonkBonusFeatLVL",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
   },
   Types={
@@ -34341,15 +34353,15 @@ DefineAbility({
   Definitions={
     {
       Name="MonkACBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MonkACLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MonkACWisBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -34358,7 +34370,7 @@ DefineAbility({
       Variables={
         "AC",
       },
-      Formula="MonkACBonus",
+      Formula=Formula("MonkACBonus"),
       Conditions={
         function (character)
           return (character.Variables["ENCUMBERANCE"] == 0) and (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED]\")"] == 0) and (character.Variables["var(\"COUNT[EQTYPE.SHIELD.EQUIPPED]\")"] == 0)
@@ -34370,21 +34382,21 @@ DefineAbility({
       Variables={
         "MonkACBonus",
       },
-      Formula="min((MonkACLVL)/4,5)",
+      Formula=Formula("min((MonkACLVL)/4,5)"),
     },
     {
       Category="VAR",
       Variables={
         "MonkACBonus",
       },
-      Formula="MonkACWisBonus",
+      Formula=Formula("MonkACWisBonus"),
     },
     {
       Category="VAR",
       Variables={
         "CMD",
       },
-      Formula="MonkACBonus",
+      Formula=Formula("MonkACBonus"),
       Conditions={
         function (character)
           return (character.Variables["ENCUMBERANCE"] == 0) and (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED]\")"] == 0) and (character.Variables["var(\"COUNT[EQTYPE.SHIELD.EQUIPPED]\")"] == 0)
@@ -34396,7 +34408,7 @@ DefineAbility({
       Variables={
         "MonkACWisBonus",
       },
-      Formula="max(WIS,0)",
+      Formula=Formula("max(WIS,0)"),
       Conditions={
         function (character)
           return (character.Variables["MonkLVL"] >= 1)
@@ -34408,7 +34420,7 @@ DefineAbility({
       Variables={
         "MonkACLVL",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
   },
   Types={
@@ -34448,7 +34460,7 @@ DefineAbility({
   Definitions={
     {
       Name="StunningFistMonkLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -34457,7 +34469,7 @@ DefineAbility({
       Variables={
         "StunningFistMonkLVL",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
   },
   Abilities={
@@ -34493,11 +34505,11 @@ DefineAbility({
   Definitions={
     {
       Name="MonkFastMovementLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MonkFastMovementBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -34506,7 +34518,7 @@ DefineAbility({
       Variables={
         "TYPE=Walk",
       },
-      Formula="MonkFastMovementBonus",
+      Formula=Formula("MonkFastMovementBonus"),
       Conditions={
         function (character)
           return (character.Variables["ENCUMBERANCE"] == 0) and (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED]\")"] == 0)
@@ -34518,14 +34530,14 @@ DefineAbility({
       Variables={
         "MonkFastMovementBonus",
       },
-      Formula="10*floor(MonkFastMovementLVL/3)",
+      Formula=Formula("10*floor(MonkFastMovementLVL/3)"),
     },
     {
       Category="VAR",
       Variables={
         "MonkFastMovementLVL",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
   },
   Types={
@@ -34549,11 +34561,11 @@ DefineAbility({
   Definitions={
     {
       Name="ManeuverTrainingLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ManeuverTrainingBAB",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -34562,21 +34574,21 @@ DefineAbility({
       Variables={
         "CMB_BAB",
       },
-      Formula="ManeuverTrainingLVL-ManeuverTrainingBAB",
+      Formula=Formula("ManeuverTrainingLVL-ManeuverTrainingBAB"),
     },
     {
       Category="VAR",
       Variables={
         "ManeuverTrainingLVL",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
     {
       Category="VAR",
       Variables={
         "ManeuverTrainingBAB",
       },
-      Formula="MonkLVL*3/4",
+      Formula=Formula("MonkLVL*3/4"),
     },
   },
   Types={
@@ -34630,7 +34642,7 @@ DefineAbility({
       Variables={
         "KiPoolLVL",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
   },
   Abilities={
@@ -34665,11 +34677,11 @@ DefineAbility({
   Definitions={
     {
       Name="SlowFall",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SlowFallLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -34678,14 +34690,14 @@ DefineAbility({
       Variables={
         "SlowFall",
       },
-      Formula="floor(SlowFallLVL/2)*10",
+      Formula=Formula("floor(SlowFallLVL/2)*10"),
     },
     {
       Category="VAR",
       Variables={
         "SlowFallLVL",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
   },
   Types={
@@ -34712,11 +34724,11 @@ DefineAbility({
   Definitions={
     {
       Name="HighJumpLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="HighJumpBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -34725,21 +34737,21 @@ DefineAbility({
       Variables={
         "Acrobatics=When Jumping",
       },
-      Formula="HighJumpBonus",
+      Formula=Formula("HighJumpBonus"),
     },
     {
       Category="VAR",
       Variables={
         "HighJumpBonus",
       },
-      Formula="HighJumpLVL",
+      Formula=Formula("HighJumpLVL"),
     },
     {
       Category="VAR",
       Variables={
         "HighJumpLVL",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
   },
   Types={
@@ -34793,11 +34805,11 @@ DefineAbility({
   Definitions={
     {
       Name="WholenessOfBody",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="WholenessOfBodyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -34806,14 +34818,14 @@ DefineAbility({
       Variables={
         "WholenessOfBody",
       },
-      Formula="WholenessOfBodyLVL",
+      Formula=Formula("WholenessOfBodyLVL"),
     },
     {
       Category="VAR",
       Variables={
         "WholenessOfBodyLVL",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
   },
   Types={
@@ -34868,11 +34880,11 @@ DefineAbility({
   Definitions={
     {
       Name="AbundantStepCasterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AbundantStepLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -34881,14 +34893,14 @@ DefineAbility({
       Variables={
         "AbundantStepCasterLVL",
       },
-      Formula="AbundantStepLVL",
+      Formula=Formula("AbundantStepLVL"),
     },
     {
       Category="VAR",
       Variables={
         "AbundantStepLVL",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
   },
   Types={
@@ -34917,11 +34929,11 @@ DefineAbility({
   Definitions={
     {
       Name="DiamondSoul",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DiamondSoulLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -34930,14 +34942,14 @@ DefineAbility({
       Variables={
         "DiamondSoul",
       },
-      Formula="10+DiamondSoulLVL",
+      Formula=Formula("10+DiamondSoulLVL"),
     },
     {
       Category="VAR",
       Variables={
         "DiamondSoulLVL",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
   },
   Types={
@@ -34966,15 +34978,15 @@ DefineAbility({
   Definitions={
     {
       Name="QuiveringPalmDuration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="QuiveringPalmDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="QuiveringPalmLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -34983,21 +34995,21 @@ DefineAbility({
       Variables={
         "QuiveringPalmDuration",
       },
-      Formula="QuiveringPalmLVL",
+      Formula=Formula("QuiveringPalmLVL"),
     },
     {
       Category="VAR",
       Variables={
         "QuiveringPalmDC",
       },
-      Formula="10+(QuiveringPalmLVL/2)+WIS",
+      Formula=Formula("10+(QuiveringPalmLVL/2)+WIS"),
     },
     {
       Category="VAR",
       Variables={
         "QuiveringPalmLVL",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
   },
   Types={
@@ -35179,7 +35191,7 @@ ModifyAbility({
       Variables={
         "SlowFallLVL",
       },
-      Formula="-2",
+      Formula=Formula("-2"),
       Conditions={
         function (character)
           return (character.Variables["MonkLVL"] >= 2)
@@ -35203,7 +35215,7 @@ ModifyAbility({
       Variables={
         "SlowFallLVL",
       },
-      Formula="-2",
+      Formula=Formula("-2"),
       Conditions={
         function (character)
           return (character.Variables["MonkLVL"] >= 4)
@@ -35227,7 +35239,7 @@ ModifyAbility({
       Variables={
         "SlowFallLVL",
       },
-      Formula="-2",
+      Formula=Formula("-2"),
       Conditions={
         function (character)
           return (character.Variables["MonkLVL"] >= 6)
@@ -35251,7 +35263,7 @@ ModifyAbility({
       Variables={
         "SlowFallLVL",
       },
-      Formula="-2",
+      Formula=Formula("-2"),
       Conditions={
         function (character)
           return (character.Variables["MonkLVL"] >= 8)
@@ -35275,7 +35287,7 @@ ModifyAbility({
       Variables={
         "SlowFallLVL",
       },
-      Formula="-2",
+      Formula=Formula("-2"),
       Conditions={
         function (character)
           return (character.Variables["MonkLVL"] >= 10)
@@ -35299,7 +35311,7 @@ ModifyAbility({
       Variables={
         "SlowFallLVL",
       },
-      Formula="-2",
+      Formula=Formula("-2"),
       Conditions={
         function (character)
           return (character.Variables["MonkLVL"] >= 12)
@@ -35323,7 +35335,7 @@ ModifyAbility({
       Variables={
         "SlowFallLVL",
       },
-      Formula="-2",
+      Formula=Formula("-2"),
       Conditions={
         function (character)
           return (character.Variables["MonkLVL"] >= 14)
@@ -35347,7 +35359,7 @@ ModifyAbility({
       Variables={
         "SlowFallLVL",
       },
-      Formula="-2",
+      Formula=Formula("-2"),
       Conditions={
         function (character)
           return (character.Variables["MonkLVL"] >= 16)
@@ -35371,7 +35383,7 @@ ModifyAbility({
       Variables={
         "SlowFallLVL",
       },
-      Formula="-2",
+      Formula=Formula("-2"),
       Conditions={
         function (character)
           return (character.Variables["MonkLVL"] >= 18)
@@ -35395,7 +35407,7 @@ ModifyAbility({
       Variables={
         "FlurryExtraAttacks",
       },
-      Formula="min((FlurryLVL+6)/7,3)",
+      Formula=Formula("min((FlurryLVL+6)/7,3)"),
     },
   },
 })
@@ -35411,7 +35423,7 @@ ModifyAbility({
       Variables={
         "FlurryBABBonus",
       },
-      Formula="FlurryLVL-MonkBAB",
+      Formula=Formula("FlurryLVL-MonkBAB"),
     },
   },
 })
@@ -35427,7 +35439,7 @@ ModifyAbility({
       Variables={
         "FlurryLVL",
       },
-      Formula="(FlurryBABRaw)",
+      Formula=Formula("(FlurryBABRaw)"),
     },
   },
 })
@@ -35443,7 +35455,7 @@ ModifyAbility({
       Variables={
         "FlurryBAB",
       },
-      Formula="FlurryBABRaw*3/4",
+      Formula=Formula("FlurryBABRaw*3/4"),
     },
   },
 })
@@ -35459,7 +35471,7 @@ ModifyAbility({
       Variables={
         "FlurryAttacks",
       },
-      Formula="2+(FlurryLVL>=6)+(FlurryLVL>=8)+(FlurryLVL>=11)+(FlurryLVL>=15)+(FlurryLVL>=16)",
+      Formula=Formula("2+(FlurryLVL>=6)+(FlurryLVL>=8)+(FlurryLVL>=11)+(FlurryLVL>=15)+(FlurryLVL>=16)"),
     },
   },
 })
@@ -35475,7 +35487,7 @@ ModifyAbility({
       Variables={
         "FAB",
       },
-      Formula="-1+(FlurryLVL>=5)+(FlurryLVL>=9)+(FlurryLVL>=13)+(FlurryLVL>=17)+FlurryDiff",
+      Formula=Formula("-1+(FlurryLVL>=5)+(FlurryLVL>=9)+(FlurryLVL>=13)+(FlurryLVL>=17)+FlurryDiff"),
     },
   },
 })
@@ -35491,7 +35503,7 @@ ModifyAbility({
       Variables={
         "FAB_1",
       },
-      Formula="FAB",
+      Formula=Formula("FAB"),
     },
   },
 })
@@ -35507,7 +35519,7 @@ ModifyAbility({
       Variables={
         "FAB_2",
       },
-      Formula="FAB",
+      Formula=Formula("FAB"),
     },
   },
 })
@@ -35523,7 +35535,7 @@ ModifyAbility({
       Variables={
         "FAB_3",
       },
-      Formula="FAB-5",
+      Formula=Formula("FAB-5"),
     },
   },
 })
@@ -35539,7 +35551,7 @@ ModifyAbility({
       Variables={
         "FAB_4",
       },
-      Formula="FAB-5",
+      Formula=Formula("FAB-5"),
     },
   },
 })
@@ -35555,7 +35567,7 @@ ModifyAbility({
       Variables={
         "FAB_5",
       },
-      Formula="FAB-10",
+      Formula=Formula("FAB-10"),
     },
   },
 })
@@ -35571,7 +35583,7 @@ ModifyAbility({
       Variables={
         "FAB_6",
       },
-      Formula="FAB-10",
+      Formula=Formula("FAB-10"),
     },
   },
 })
@@ -35587,7 +35599,7 @@ ModifyAbility({
       Variables={
         "FAB_7",
       },
-      Formula="FAB-15",
+      Formula=Formula("FAB-15"),
     },
   },
 })
@@ -35611,7 +35623,7 @@ ModifyAbility({
       Variables={
         "FlurryBABRaw",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
   },
 })
@@ -35627,7 +35639,7 @@ ModifyAbility({
       Variables={
         "FlurryDiff",
       },
-      Formula="FlurryBAB-BAB",
+      Formula=Formula("FlurryBAB-BAB"),
     },
   },
 })
@@ -35640,7 +35652,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35653,7 +35665,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryExtraAttacks",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35666,7 +35678,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryBABBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35679,7 +35691,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryBAB",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35692,7 +35704,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryAttackBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35705,7 +35717,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryAttacks",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35718,7 +35730,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35731,7 +35743,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB_1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35744,7 +35756,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB_2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35757,7 +35769,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB_3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35770,7 +35782,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB_4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35783,7 +35795,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB_5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35796,7 +35808,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB_6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35809,7 +35821,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FAB_7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35822,7 +35834,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryBABRaw",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35835,7 +35847,7 @@ ModifyAbility({
   Definitions={
     {
       Name="FlurryDiff",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35848,11 +35860,11 @@ DefineAbility({
   Definitions={
     {
       Name="KiPoints",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="KiPoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -35861,7 +35873,7 @@ DefineAbility({
       Variables={
         "Ki Pool Stat Choice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["KiPool"] >= 2)
@@ -35873,7 +35885,7 @@ DefineAbility({
       Variables={
         "KiPoints",
       },
-      Formula="KiPoolLVL/2",
+      Formula=Formula("KiPoolLVL/2"),
     },
   },
   Abilities={
@@ -35924,7 +35936,7 @@ ModifyAbility({
   Definitions={
     {
       Name="KiPool",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -35945,7 +35957,7 @@ DefineAbility({
       Variables={
         "KiPoints",
       },
-      Formula="WIS",
+      Formula=Formula("WIS"),
     },
   },
   Types={
@@ -35969,7 +35981,7 @@ DefineAbility({
       Variables={
         "KiPoints",
       },
-      Formula="CHA",
+      Formula=Formula("CHA"),
     },
   },
   Types={
@@ -35993,7 +36005,7 @@ DefineAbility({
       Variables={
         "KiPoints",
       },
-      Formula="INT",
+      Formula=Formula("INT"),
     },
   },
   Types={
@@ -36119,7 +36131,7 @@ ModifyAbility({
   Definitions={
     {
       Name="KiPoolProgression",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36135,7 +36147,7 @@ ModifyAbility({
       Variables={
         "KiPoolProgression",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["Monk_CF_KiPoolAbilities1"] == 0)
@@ -36156,7 +36168,7 @@ ModifyAbility({
       Variables={
         "KiPoolProgression",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["KiPoolLVL"] >= 7)
@@ -36180,7 +36192,7 @@ ModifyAbility({
       Variables={
         "KiPoolProgression",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["KiPoolLVL"] >= 10)
@@ -36204,7 +36216,7 @@ ModifyAbility({
       Variables={
         "KiPoolProgression",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["KiPoolLVL"] >= 16)
@@ -36329,7 +36341,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeatCount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -36338,7 +36350,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeatCount",
       },
-      Formula="1+max((MonkBonusFeatLVL+2)/4,0)",
+      Formula=Formula("1+max((MonkBonusFeatLVL+2)/4,0)"),
     },
   },
 })
@@ -36354,7 +36366,7 @@ ModifyAbility({
       Variables={
         "Monk Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatCount"] >= 1)
@@ -36378,7 +36390,7 @@ ModifyAbility({
       Variables={
         "Monk Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatCount"] >= 2)
@@ -36402,7 +36414,7 @@ ModifyAbility({
       Variables={
         "Monk Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatCount"] >= 3)
@@ -36426,7 +36438,7 @@ ModifyAbility({
       Variables={
         "Monk Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatCount"] >= 4)
@@ -36450,7 +36462,7 @@ ModifyAbility({
       Variables={
         "Monk Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatCount"] >= 5)
@@ -36474,7 +36486,7 @@ ModifyAbility({
       Variables={
         "Monk Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatCount"] >= 6)
@@ -36495,7 +36507,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_CatchOffGuard",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36508,7 +36520,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_CombatReflexes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36521,7 +36533,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_DeflectArrows",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36534,7 +36546,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_Dodge",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36547,7 +36559,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ImprovedGrapple",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36560,7 +36572,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ScorpionStyle",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36573,7 +36585,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ThrowAnything",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36586,7 +36598,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_GorgonsFist",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36599,7 +36611,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ImprovedBullRush",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36612,7 +36624,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ImprovedDisarm",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36625,7 +36637,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ImprovedFeint",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36638,7 +36650,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ImprovedTrip",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36651,7 +36663,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_Mobility",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36664,7 +36676,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_ImprovedCritical",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36677,7 +36689,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_MedusasWrath",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36690,7 +36702,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_SnatchArrows",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36703,7 +36715,7 @@ ModifyAbility({
   Definitions={
     {
       Name="MonkBonusFeat_SpringAttack",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -36726,7 +36738,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_CatchOffGuard",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 1)
@@ -36747,7 +36759,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_CombatReflexes",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 1)
@@ -36768,7 +36780,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_DeflectArrows",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 1)
@@ -36789,7 +36801,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_Dodge",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 1)
@@ -36810,7 +36822,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_ImprovedGrapple",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 1)
@@ -36831,7 +36843,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_ScorpionStyle",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 1)
@@ -36852,7 +36864,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_ThrowAnything",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 1)
@@ -36873,7 +36885,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_GorgonsFist",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 6)
@@ -36894,7 +36906,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_ImprovedBullRush",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 6)
@@ -36915,7 +36927,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_ImprovedDisarm",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 6)
@@ -36936,7 +36948,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_ImprovedFeint",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 6)
@@ -36957,7 +36969,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_ImprovedTrip",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 6)
@@ -36978,7 +36990,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_Mobility",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 6)
@@ -36999,7 +37011,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_ImprovedCritical",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 10)
@@ -37020,7 +37032,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_MedusasWrath",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 10)
@@ -37041,7 +37053,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_SnatchArrows",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 10)
@@ -37062,7 +37074,7 @@ ModifyAbility({
       Variables={
         "MonkBonusFeat_SpringAttack",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MonkBonusFeatLVL"] >= 10)
@@ -37507,12 +37519,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (character.IsProficientWith(weapon))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return ((character.IsProficientWith(weapon)))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["MonkBonusFeatLVL"] >= 10)
@@ -37527,7 +37539,7 @@ DefineAbility({
       Variables={
         "CRITRANGEDOUBLE",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="NonStackingCrit",
         Replace=false,
@@ -37647,15 +37659,15 @@ DefineAbility({
   Definitions={
     {
       Name="MonkUnarmedDamageProgression",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MonkUnarmedDamageLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="UDAMAttackSize",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -37664,21 +37676,21 @@ DefineAbility({
       Variables={
         "MonkUnarmedDamageLVL",
       },
-      Formula="MonkLVL",
+      Formula=Formula("MonkLVL"),
     },
     {
       Category="VAR",
       Variables={
         "MonkUnarmedDamageProgression",
       },
-      Formula="(min(5,MonkUnarmedDamageLVL/4))",
+      Formula=Formula("(min(5,MonkUnarmedDamageLVL/4))"),
     },
     {
       Category="VAR",
       Variables={
         "UDAMAttackSize",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return character.BaseSize == "F"
@@ -37690,7 +37702,7 @@ DefineAbility({
       Variables={
         "UDAMAttackSize",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Conditions={
         function (character)
           return character.BaseSize == "D"
@@ -37702,7 +37714,7 @@ DefineAbility({
       Variables={
         "UDAMAttackSize",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Conditions={
         function (character)
           return character.BaseSize == "T"
@@ -37714,7 +37726,7 @@ DefineAbility({
       Variables={
         "UDAMAttackSize",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Conditions={
         function (character)
           return character.BaseSize == "S"
@@ -37726,7 +37738,7 @@ DefineAbility({
       Variables={
         "UDAMAttackSize",
       },
-      Formula="5",
+      Formula=Formula("5"),
       Conditions={
         function (character)
           return character.BaseSize == "M"
@@ -37738,7 +37750,7 @@ DefineAbility({
       Variables={
         "UDAMAttackSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Conditions={
         function (character)
           return character.BaseSize == "L"
@@ -37750,7 +37762,7 @@ DefineAbility({
       Variables={
         "UDAMAttackSize",
       },
-      Formula="7",
+      Formula=Formula("7"),
       Conditions={
         function (character)
           return character.BaseSize == "H"
@@ -37762,7 +37774,7 @@ DefineAbility({
       Variables={
         "UDAMAttackSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Conditions={
         function (character)
           return character.BaseSize == "G"
@@ -37774,7 +37786,7 @@ DefineAbility({
       Variables={
         "UDAMAttackSize",
       },
-      Formula="9",
+      Formula=Formula("9"),
       Conditions={
         function (character)
           return character.BaseSize == "C"
@@ -38575,7 +38587,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -38587,7 +38599,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -38612,7 +38624,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -38624,7 +38636,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -38649,7 +38661,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -38661,7 +38673,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Type={
         Name="Base",
         Replace=false,
@@ -38686,7 +38698,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -38698,7 +38710,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Type={
         Name="Base",
         Replace=false,
@@ -38723,7 +38735,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -38735,7 +38747,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -38760,7 +38772,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -38772,7 +38784,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -38797,7 +38809,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -38809,7 +38821,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -38834,7 +38846,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Type={
         Name="Base",
         Replace=false,
@@ -38846,7 +38858,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -38871,7 +38883,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Type={
         Name="Base",
         Replace=false,
@@ -38883,7 +38895,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -38908,7 +38920,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -38920,7 +38932,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -38945,7 +38957,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -38957,7 +38969,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Type={
         Name="Base",
         Replace=false,
@@ -38982,7 +38994,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -38994,7 +39006,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="5",
+      Formula=Formula("5"),
       Type={
         Name="Base",
         Replace=false,
@@ -39019,7 +39031,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -39031,7 +39043,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39056,7 +39068,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -39068,7 +39080,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -39093,7 +39105,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -39105,7 +39117,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39130,7 +39142,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Type={
         Name="Base",
         Replace=false,
@@ -39142,7 +39154,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39167,7 +39179,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Type={
         Name="Base",
         Replace=false,
@@ -39179,7 +39191,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39204,7 +39216,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39216,7 +39228,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39241,7 +39253,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -39253,7 +39265,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Type={
         Name="Base",
         Replace=false,
@@ -39278,7 +39290,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -39290,7 +39302,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Type={
         Name="Base",
         Replace=false,
@@ -39315,7 +39327,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -39327,7 +39339,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39352,7 +39364,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -39364,7 +39376,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -39389,7 +39401,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -39401,7 +39413,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Type={
         Name="Base",
         Replace=false,
@@ -39426,7 +39438,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -39438,7 +39450,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -39463,7 +39475,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Type={
         Name="Base",
         Replace=false,
@@ -39475,7 +39487,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -39500,7 +39512,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Type={
         Name="Base",
         Replace=false,
@@ -39512,7 +39524,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -39537,7 +39549,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39549,7 +39561,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -39574,7 +39586,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -39586,7 +39598,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Type={
         Name="Base",
         Replace=false,
@@ -39611,7 +39623,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -39623,7 +39635,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39648,7 +39660,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -39660,7 +39672,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -39685,7 +39697,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -39697,7 +39709,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Type={
         Name="Base",
         Replace=false,
@@ -39722,7 +39734,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -39734,7 +39746,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39759,7 +39771,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Type={
         Name="Base",
         Replace=false,
@@ -39771,7 +39783,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39796,7 +39808,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Type={
         Name="Base",
         Replace=false,
@@ -39808,7 +39820,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39833,7 +39845,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39845,7 +39857,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39870,7 +39882,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -39882,7 +39894,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39907,7 +39919,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -39919,7 +39931,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -39944,7 +39956,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -39956,7 +39968,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -39981,7 +39993,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -39993,7 +40005,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Type={
         Name="Base",
         Replace=false,
@@ -40018,7 +40030,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -40030,7 +40042,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -40055,7 +40067,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -40067,7 +40079,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -40092,7 +40104,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Type={
         Name="Base",
         Replace=false,
@@ -40104,7 +40116,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -40129,7 +40141,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Type={
         Name="Base",
         Replace=false,
@@ -40141,7 +40153,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -40166,7 +40178,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -40178,7 +40190,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -40203,7 +40215,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -40215,7 +40227,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -40240,7 +40252,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -40252,7 +40264,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -40277,7 +40289,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -40289,7 +40301,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Type={
         Name="Base",
         Replace=false,
@@ -40314,7 +40326,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -40326,7 +40338,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -40351,7 +40363,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -40363,7 +40375,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -40388,7 +40400,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
@@ -40400,7 +40412,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Type={
         Name="Base",
         Replace=false,
@@ -40425,7 +40437,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Type={
         Name="Base",
         Replace=false,
@@ -40437,7 +40449,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -40462,7 +40474,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -40474,7 +40486,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -40499,7 +40511,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -40511,7 +40523,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -40536,7 +40548,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageDice",
       },
-      Formula="12",
+      Formula=Formula("12"),
       Type={
         Name="Base",
         Replace=false,
@@ -40548,7 +40560,7 @@ DefineAbility({
       Variables={
         "PrimaryAttackDamageSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Type={
         Name="Base",
         Replace=false,
@@ -40601,7 +40613,7 @@ DefineAbility({
   Definitions={
     {
       Name="DetectEvilLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -40610,7 +40622,7 @@ DefineAbility({
       Variables={
         "DetectEvilLVL",
       },
-      Formula="PaladinLVL",
+      Formula=Formula("PaladinLVL"),
     },
   },
   Types={
@@ -40654,23 +40666,23 @@ DefineAbility({
   Definitions={
     {
       Name="SmiteEvilTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SmiteEvilAttackBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SmiteEvilDamageBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SmiteEvilACBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SmiteEvilLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -40679,7 +40691,7 @@ DefineAbility({
       Variables={
         "SmiteEvilTimes",
       },
-      Formula="min((SmiteEvilLVL+2)/3,7)",
+      Formula=Formula("min((SmiteEvilLVL+2)/3,7)"),
     },
     {
       Category="VAR",
@@ -40687,21 +40699,21 @@ DefineAbility({
         "SmiteEvilAttackBonus",
         "SmiteEvilACBonus",
       },
-      Formula="max(CHA,0)",
+      Formula=Formula("max(CHA,0)"),
     },
     {
       Category="VAR",
       Variables={
         "SmiteEvilDamageBonus",
       },
-      Formula="SmiteEvilLVL",
+      Formula=Formula("SmiteEvilLVL"),
     },
     {
       Category="VAR",
       Variables={
         "SmiteEvilLVL",
       },
-      Formula="PaladinLVL",
+      Formula=Formula("PaladinLVL"),
     },
   },
   Types={
@@ -40723,7 +40735,7 @@ DefineAbility({
   Definitions={
     {
       Name="DivineGrace",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -40732,14 +40744,14 @@ DefineAbility({
       Variables={
         "ALL",
       },
-      Formula="DivineGrace",
+      Formula=Formula("DivineGrace"),
     },
     {
       Category="VAR",
       Variables={
         "DivineGrace",
       },
-      Formula="max(CHA,0)",
+      Formula=Formula("max(CHA,0)"),
     },
   },
   Types={
@@ -40783,15 +40795,15 @@ DefineAbility({
   Definitions={
     {
       Name="LayOnHandsTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="LayOnHandsDice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="LayOnHandsLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -40800,21 +40812,21 @@ DefineAbility({
       Variables={
         "LayOnHandsDice",
       },
-      Formula="LayOnHandsLVL/2",
+      Formula=Formula("LayOnHandsLVL/2"),
     },
     {
       Category="VAR",
       Variables={
         "LayOnHandsTimes",
       },
-      Formula="(LayOnHandsLVL/2)+CHA",
+      Formula=Formula("(LayOnHandsLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "LayOnHandsLVL",
       },
-      Formula="PaladinLVL",
+      Formula=Formula("PaladinLVL"),
     },
   },
   Types={
@@ -40853,11 +40865,11 @@ DefineAbility({
   Definitions={
     {
       Name="Mercies",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MercyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -40866,21 +40878,21 @@ DefineAbility({
       Variables={
         "Mercy",
       },
-      Formula="Mercies",
+      Formula=Formula("Mercies"),
     },
     {
       Category="VAR",
       Variables={
         "Mercies",
       },
-      Formula="min(MercyLVL/3,6)",
+      Formula=Formula("min(MercyLVL/3,6)"),
     },
     {
       Category="VAR",
       Variables={
         "MercyLVL",
       },
-      Formula="PaladinLVL",
+      Formula=Formula("PaladinLVL"),
     },
   },
   Types={
@@ -40927,19 +40939,19 @@ DefineAbility({
   Definitions={
     {
       Name="PaladinChannelDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="PaladinChannelDice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="PaladinChannelDieSize",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="PaladinChannelLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -40948,28 +40960,28 @@ DefineAbility({
       Variables={
         "PaladinChannelDieSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
     },
     {
       Category="VAR",
       Variables={
         "PaladinChannelDice",
       },
-      Formula="(PaladinChannelLVL+1)/2",
+      Formula=Formula("(PaladinChannelLVL+1)/2"),
     },
     {
       Category="VAR",
       Variables={
         "PaladinChannelDC",
       },
-      Formula="10+(PaladinChannelLVL/2)+CHA",
+      Formula=Formula("10+(PaladinChannelLVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "PaladinChannelLVL",
       },
-      Formula="PaladinLVL",
+      Formula=Formula("PaladinLVL"),
     },
   },
   Abilities={
@@ -41007,11 +41019,11 @@ DefineAbility({
   Definitions={
     {
       Name="HolyChampionCasterLevel",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="HolyChampionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -41020,21 +41032,21 @@ DefineAbility({
       Variables={
         "Evil",
       },
-      Formula="5",
+      Formula=Formula("5"),
     },
     {
       Category="VAR",
       Variables={
         "HolyChampionCasterLevel",
       },
-      Formula="HolyChampionLVL",
+      Formula=Formula("HolyChampionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "HolyChampionLVL",
       },
-      Formula="PaladinLVL",
+      Formula=Formula("PaladinLVL"),
     },
   },
   Types={
@@ -41055,7 +41067,7 @@ ModifyAbility({
       Variables={
         "Mercy",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["Mercies"] >= 1)
@@ -41079,7 +41091,7 @@ ModifyAbility({
       Variables={
         "Mercy",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["Mercies"] >= 2)
@@ -41103,7 +41115,7 @@ ModifyAbility({
       Variables={
         "Mercy",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["Mercies"] >= 3)
@@ -41127,7 +41139,7 @@ ModifyAbility({
       Variables={
         "Mercy",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["Mercies"] >= 4)
@@ -41151,7 +41163,7 @@ ModifyAbility({
       Variables={
         "Mercy",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["Mercies"] >= 5)
@@ -41175,7 +41187,7 @@ ModifyAbility({
       Variables={
         "Mercy",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["Mercies"] >= 6)
@@ -41296,11 +41308,11 @@ DefineAbility({
   Definitions={
     {
       Name="DivineBondLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DivineBondTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -41309,21 +41321,21 @@ DefineAbility({
       Variables={
         "Divine Bond",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DivineBondTimes",
       },
-      Formula="min((DivineBondLVL-1)/4,4)",
+      Formula=Formula("min((DivineBondLVL-1)/4,4)"),
     },
     {
       Category="VAR",
       Variables={
         "DivineBondLVL",
       },
-      Formula="PaladinLVL",
+      Formula=Formula("PaladinLVL"),
     },
   },
   Types={
@@ -41370,11 +41382,11 @@ DefineAbility({
   Definitions={
     {
       Name="CelestialSpiritDuration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CelestialSpiritBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -41383,14 +41395,14 @@ DefineAbility({
       Variables={
         "CelestialSpiritDuration",
       },
-      Formula="DivineBondLVL",
+      Formula=Formula("DivineBondLVL"),
     },
     {
       Category="VAR",
       Variables={
         "CelestialSpiritBonus",
       },
-      Formula="min((1+((DivineBondLVL-5)/3)),6)",
+      Formula=Formula("min((1+((DivineBondLVL-5)/3)),6)"),
     },
   },
   Types={
@@ -41433,27 +41445,27 @@ DefineAbility({
   Definitions={
     {
       Name="SpecialMountLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SpecialMountSpellLevel",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SpecialMountSR",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Divine_Bond_Mount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CompanionDisable_PaladinMount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CompanionMasterLVL_Paladin",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -41462,28 +41474,28 @@ DefineAbility({
       Variables={
         "SpecialMountSpellLevel",
       },
-      Formula="DivineBondLVL/3",
+      Formula=Formula("DivineBondLVL/3"),
     },
     {
       Category="VAR",
       Variables={
         "SpecialMountSR",
       },
-      Formula="DivineBondLVL+11",
+      Formula=Formula("DivineBondLVL+11"),
     },
     {
       Category="VAR",
       Variables={
         "Divine_Bond_Mount",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "SpecialMountLVL",
       },
-      Formula="CompanionMasterLVL_Paladin",
+      Formula=Formula("CompanionMasterLVL_Paladin"),
       Conditions={
         function (character)
           return (character.Variables["CompanionDisable_PaladinMount"] == 0)
@@ -41495,7 +41507,7 @@ DefineAbility({
       Variables={
         "CompanionMasterLVL_Paladin",
       },
-      Formula="DivineBondLVL",
+      Formula=Formula("DivineBondLVL"),
     },
   },
   Abilities={
@@ -42042,7 +42054,7 @@ DefineAbility({
       Variables={
         "TrackLVL",
       },
-      Formula="RangerLVL",
+      Formula=Formula("RangerLVL"),
     },
   },
   Abilities={
@@ -42187,11 +42199,11 @@ DefineAbility({
   Definitions={
     {
       Name="MasterHunterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MasterHunterDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -42200,14 +42212,14 @@ DefineAbility({
       Variables={
         "MasterHunterDC",
       },
-      Formula="10+(MasterHunterLVL/2)+WIS",
+      Formula=Formula("10+(MasterHunterLVL/2)+WIS"),
     },
     {
       Category="VAR",
       Variables={
         "MasterHunterLVL",
       },
-      Formula="RangerLVL",
+      Formula=Formula("RangerLVL"),
     },
   },
   Types={
@@ -42272,7 +42284,7 @@ DefineAbility({
       Variables={
         "WildEmpathy",
       },
-      Formula="RangerLVL",
+      Formula=Formula("RangerLVL"),
     },
   },
   Abilities={
@@ -42324,19 +42336,19 @@ DefineAbility({
   Definitions={
     {
       Name="CombatStyleLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RangerDefaultCombatStyle",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RangerBonusFeatCount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RangerCombatStyleFeatCount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -42345,35 +42357,35 @@ DefineAbility({
       Variables={
         "Combat Style",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="ABILITYPOOL",
       Variables={
         "Ranger Combat Style Feat",
       },
-      Formula="RangerCombatStyleFeatCount",
+      Formula=Formula("RangerCombatStyleFeatCount"),
     },
     {
       Category="VAR",
       Variables={
         "RangerCombatStyleFeatCount",
       },
-      Formula="(CombatStyleLVL+2)/4",
+      Formula=Formula("(CombatStyleLVL+2)/4"),
     },
     {
       Category="VAR",
       Variables={
         "RangerDefaultCombatStyle",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "CombatStyleLVL",
       },
-      Formula="RangerLVL",
+      Formula=Formula("RangerLVL"),
     },
   },
   Types={
@@ -42391,11 +42403,11 @@ DefineAbility({
   Definitions={
     {
       Name="TrackLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="TrackBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -42404,14 +42416,14 @@ DefineAbility({
       Variables={
         "Survival=Follow or identify tracks",
       },
-      Formula="TrackBonus",
+      Formula=Formula("TrackBonus"),
     },
     {
       Category="VAR",
       Variables={
         "TrackBonus",
       },
-      Formula="max(TrackLVL/2,1)",
+      Formula=Formula("max(TrackLVL/2,1)"),
     },
   },
   Types={
@@ -42429,7 +42441,7 @@ DefineAbility({
   Definitions={
     {
       Name="HuntersBondLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -42438,14 +42450,14 @@ DefineAbility({
       Variables={
         "Hunter's Bond",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "HuntersBondLVL",
       },
-      Formula="RangerLVL",
+      Formula=Formula("RangerLVL"),
     },
   },
   Types={
@@ -42500,19 +42512,19 @@ DefineAbility({
   Definitions={
     {
       Name="AnimalCompanionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AnimalCompanionMasterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CompanionDisable_AnimalCompanion",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CompanionMasterLVL_Ranger",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -42521,14 +42533,14 @@ DefineAbility({
       Variables={
         "Hunters_Bond_Animal_Companion",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AnimalCompanionMasterLVL",
       },
-      Formula="CompanionMasterLVL_Ranger",
+      Formula=Formula("CompanionMasterLVL_Ranger"),
       Conditions={
         function (character)
           return (character.Variables["CompanionDisable_AnimalCompanion"] == 0)
@@ -42540,7 +42552,7 @@ DefineAbility({
       Variables={
         "CompanionMasterLVL_Ranger",
       },
-      Formula="RangerLVL-3",
+      Formula=Formula("RangerLVL-3"),
     },
   },
   Abilities={
@@ -42576,15 +42588,15 @@ DefineAbility({
   Definitions={
     {
       Name="RangerFavoredEnemyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RangerFavoredEnemyCount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="FavoredEnemyBonusCount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -42593,35 +42605,35 @@ DefineAbility({
       Variables={
         "Favored Enemy",
       },
-      Formula="RangerFavoredEnemyCount",
+      Formula=Formula("RangerFavoredEnemyCount"),
     },
     {
       Category="ABILITYPOOL",
       Variables={
         "Favored Enemy Bonus",
       },
-      Formula="FavoredEnemyBonusCount",
+      Formula=Formula("FavoredEnemyBonusCount"),
     },
     {
       Category="VAR",
       Variables={
         "RangerFavoredEnemyCount",
       },
-      Formula="RangerFavoredEnemyLVL/5+1",
+      Formula=Formula("RangerFavoredEnemyLVL/5+1"),
     },
     {
       Category="VAR",
       Variables={
         "FavoredEnemyBonusCount",
       },
-      Formula="RangerFavoredEnemyLVL/5",
+      Formula=Formula("RangerFavoredEnemyLVL/5"),
     },
     {
       Category="VAR",
       Variables={
         "RangerFavoredEnemyLVL",
       },
-      Formula="RangerLVL",
+      Formula=Formula("RangerLVL"),
     },
   },
   Abilities={
@@ -42647,7 +42659,7 @@ DefineAbility({
           Variables={
             "TOHIT",
           },
-          Formula="%CHOICE",
+          Formula=Formula("%CHOICE"),
         },
       },
       {
@@ -42658,7 +42670,7 @@ DefineAbility({
             "DAMAGE.Melee",
             "DAMAGE.Ranged",
           },
-          Formula="%CHOICE",
+          Formula=Formula("%CHOICE"),
         },
       },
       {
@@ -42671,7 +42683,7 @@ DefineAbility({
             "Sense Motive",
             "Survival",
           },
-          Formula="%CHOICE",
+          Formula=Formula("%CHOICE"),
         },
       },
       {
@@ -42681,7 +42693,7 @@ DefineAbility({
           Variables={
             "TYPE=Knowledge",
           },
-          Formula="%CHOICE",
+          Formula=Formula("%CHOICE"),
         },
       },
     },
@@ -42698,7 +42710,7 @@ DefineAbility({
   Definitions={
     {
       Name="RangerFavoredTerrainLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -42707,14 +42719,14 @@ DefineAbility({
       Variables={
         "FavoredTerrainPool",
       },
-      Formula="(RangerFavoredTerrainLVL+2)/5",
+      Formula=Formula("(RangerFavoredTerrainLVL+2)/5"),
     },
     {
       Category="VAR",
       Variables={
         "RangerFavoredTerrainLVL",
       },
-      Formula="RangerLVL",
+      Formula=Formula("RangerLVL"),
     },
   },
   Abilities={
@@ -42748,7 +42760,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Far_Shot",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42761,7 +42773,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Point_Blank_Shot",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42774,7 +42786,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Precise_Shot",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42787,7 +42799,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Rapid_Shot",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42800,7 +42812,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Improved_Precise_Shot",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42813,7 +42825,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Manyshot",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42826,7 +42838,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Pinpoint_Targeting",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42839,7 +42851,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Shot_on_the_Run",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42852,7 +42864,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Double_Slice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42865,7 +42877,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Improved_Shield_Bash",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42878,7 +42890,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Quick_Draw",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42891,7 +42903,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Two_Weapon_Fighting",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42904,7 +42916,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Improved_Two_Weapon_Fighting",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42917,7 +42929,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Two_Weapon_Defense",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42930,7 +42942,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Greater_Two_Weapon_Fighting",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42943,7 +42955,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Ranger_Combat_Style_Feat_Two_Weapon_Rend",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -42959,7 +42971,7 @@ ModifyAbility({
       Variables={
         "RangerCombatStyleFeatCount",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RangerLVL"] >= 2)
@@ -42983,7 +42995,7 @@ ModifyAbility({
       Variables={
         "RangerCombatStyleFeatCount",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RangerLVL"] >= 6)
@@ -43007,7 +43019,7 @@ ModifyAbility({
       Variables={
         "RangerCombatStyleFeatCount",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RangerLVL"] >= 10)
@@ -43031,7 +43043,7 @@ ModifyAbility({
       Variables={
         "RangerCombatStyleFeatCount",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RangerLVL"] >= 14)
@@ -43055,7 +43067,7 @@ ModifyAbility({
       Variables={
         "RangerCombatStyleFeatCount",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RangerLVL"] >= 18)
@@ -43079,7 +43091,7 @@ ModifyAbility({
       Variables={
         "Favored Enemy",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RangerFavoredEnemyCount"] >= 1)
@@ -43094,7 +43106,7 @@ ModifyAbility({
       Variables={
         "Favored Enemy Bonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FavoredEnemyBonusCount"] >= 1)
@@ -43118,7 +43130,7 @@ ModifyAbility({
       Variables={
         "Favored Enemy",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RangerFavoredEnemyCount"] >= 2)
@@ -43133,7 +43145,7 @@ ModifyAbility({
       Variables={
         "Favored Enemy Bonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FavoredEnemyBonusCount"] >= 2)
@@ -43157,7 +43169,7 @@ ModifyAbility({
       Variables={
         "Favored Enemy",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RangerFavoredEnemyCount"] >= 3)
@@ -43172,7 +43184,7 @@ ModifyAbility({
       Variables={
         "Favored Enemy Bonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FavoredEnemyBonusCount"] >= 3)
@@ -43196,7 +43208,7 @@ ModifyAbility({
       Variables={
         "Favored Enemy",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RangerFavoredEnemyCount"] >= 4)
@@ -43211,7 +43223,7 @@ ModifyAbility({
       Variables={
         "Favored Enemy Bonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FavoredEnemyBonusCount"] >= 4)
@@ -43235,7 +43247,7 @@ ModifyAbility({
       Variables={
         "Favored Enemy",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RangerFavoredEnemyCount"] >= 5)
@@ -43250,7 +43262,7 @@ ModifyAbility({
       Variables={
         "Favored Enemy Bonus",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["FavoredEnemyBonusCount"] >= 5)
@@ -43276,35 +43288,35 @@ DefineAbility({
       Variables={
         "Ranger_Combat_Style_Feat_Far_Shot",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Ranger_Combat_Style_Feat_Point_Blank_Shot",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Ranger_Combat_Style_Feat_Precise_Shot",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Ranger_Combat_Style_Feat_Rapid_Shot",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Ranger_Combat_Style_Feat_Improved_Precise_Shot",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["CombatStyleLVL"] >= 6)
@@ -43316,7 +43328,7 @@ DefineAbility({
       Variables={
         "Ranger_Combat_Style_Feat_Manyshot",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["CombatStyleLVL"] >= 6)
@@ -43328,7 +43340,7 @@ DefineAbility({
       Variables={
         "Ranger_Combat_Style_Feat_Pinpoint_Targeting",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["CombatStyleLVL"] >= 10)
@@ -43340,7 +43352,7 @@ DefineAbility({
       Variables={
         "Ranger_Combat_Style_Feat_Shot_on_the_Run",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["CombatStyleLVL"] >= 10)
@@ -43368,35 +43380,35 @@ DefineAbility({
       Variables={
         "Ranger_Combat_Style_Feat_Double_Slice",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Ranger_Combat_Style_Feat_Improved_Shield_Bash",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Ranger_Combat_Style_Feat_Quick_Draw",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Ranger_Combat_Style_Feat_Two_Weapon_Fighting",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Ranger_Combat_Style_Feat_Improved_Two_Weapon_Fighting",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["CombatStyleLVL"] >= 6)
@@ -43408,7 +43420,7 @@ DefineAbility({
       Variables={
         "Ranger_Combat_Style_Feat_Two_Weapon_Defense",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["CombatStyleLVL"] >= 6)
@@ -43420,7 +43432,7 @@ DefineAbility({
       Variables={
         "Ranger_Combat_Style_Feat_Greater_Two_Weapon_Fighting",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["CombatStyleLVL"] >= 10)
@@ -43432,7 +43444,7 @@ DefineAbility({
       Variables={
         "Ranger_Combat_Style_Feat_Two_Weapon_Rend",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["CombatStyleLVL"] >= 10)
@@ -44129,7 +44141,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredBaseBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44138,7 +44150,7 @@ DefineAbility({
       Variables={
         "FavoredBaseBonus",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -44187,7 +44199,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredAberration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44196,7 +44208,7 @@ DefineAbility({
       Variables={
         "FavoredAberration",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -44247,7 +44259,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredAnimal",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44256,7 +44268,7 @@ DefineAbility({
       Variables={
         "FavoredAnimal",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -44307,7 +44319,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredConstruct",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44316,7 +44328,7 @@ DefineAbility({
       Variables={
         "FavoredConstruct",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -44367,7 +44379,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredDragon",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44376,7 +44388,7 @@ DefineAbility({
       Variables={
         "FavoredDragon",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -44427,7 +44439,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredFey",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44436,7 +44448,7 @@ DefineAbility({
       Variables={
         "FavoredFey",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -44487,7 +44499,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidAquatic",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44496,7 +44508,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidAquatic",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -44547,7 +44559,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidDwarf",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44556,7 +44568,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidDwarf",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -44607,7 +44619,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidElf",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44616,7 +44628,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidElf",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -44667,7 +44679,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidGiant",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44676,7 +44688,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidGiant",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -44727,7 +44739,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidGoblinoid",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44736,7 +44748,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidGoblinoid",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -44787,7 +44799,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidGnoll",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44796,7 +44808,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidGnoll",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -44847,7 +44859,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidGnome",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44856,7 +44868,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidGnome",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -44907,7 +44919,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidHalfling",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44916,7 +44928,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidHalfling",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -44967,7 +44979,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidHuman",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -44976,7 +44988,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidHuman",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45027,7 +45039,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidOrc",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45036,7 +45048,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidOrc",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45087,7 +45099,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredHumanoidReptilian",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45096,7 +45108,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidReptilian",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45147,7 +45159,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredMagicalBeast",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45156,7 +45168,7 @@ DefineAbility({
       Variables={
         "FavoredMagicalBeast",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45207,7 +45219,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredMonstrousHumanoid",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45216,7 +45228,7 @@ DefineAbility({
       Variables={
         "FavoredMonstrousHumanoid",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45267,7 +45279,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOoze",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45276,7 +45288,7 @@ DefineAbility({
       Variables={
         "FavoredOoze",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45327,7 +45339,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderAir",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45336,7 +45348,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderAir",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45387,7 +45399,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderChaotic",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45396,7 +45408,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderChaotic",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45447,7 +45459,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderEarth",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45456,7 +45468,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderEarth",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45507,7 +45519,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderEvil",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45516,7 +45528,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderEvil",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45567,7 +45579,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderFire",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45576,7 +45588,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderFire",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45627,7 +45639,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderGood",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45636,7 +45648,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderGood",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45687,7 +45699,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderLawful",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45696,7 +45708,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderLawful",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45747,7 +45759,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderNative",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45756,7 +45768,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderNative",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45807,7 +45819,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredOutsiderWater",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45816,7 +45828,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderWater",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45867,7 +45879,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredPlant",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45876,7 +45888,7 @@ DefineAbility({
       Variables={
         "FavoredPlant",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45927,7 +45939,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredUndead",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45936,7 +45948,7 @@ DefineAbility({
       Variables={
         "FavoredUndead",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -45987,7 +45999,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredVermin",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -45996,7 +46008,7 @@ DefineAbility({
       Variables={
         "FavoredVermin",
       },
-      Formula="FavoredBaseBonus",
+      Formula=Formula("FavoredBaseBonus"),
     },
   },
   Types={
@@ -46014,6 +46026,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46027,7 +46043,7 @@ DefineAbility({
       Variables={
         "FavoredAberration",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46042,6 +46058,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46055,7 +46075,7 @@ DefineAbility({
       Variables={
         "FavoredAnimal",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46070,6 +46090,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46083,7 +46107,7 @@ DefineAbility({
       Variables={
         "FavoredConstruct",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46098,6 +46122,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46111,7 +46139,7 @@ DefineAbility({
       Variables={
         "FavoredDragon",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46126,6 +46154,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46139,7 +46171,7 @@ DefineAbility({
       Variables={
         "FavoredFey",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46154,6 +46186,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46167,7 +46203,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidAquatic",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46182,6 +46218,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46195,7 +46235,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidDwarf",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46210,6 +46250,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46223,7 +46267,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidElf",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46238,6 +46282,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46251,7 +46299,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidGiant",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46266,6 +46314,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46279,7 +46331,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidGnoll",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46294,6 +46346,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46307,7 +46363,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidGnome",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46322,6 +46378,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46335,7 +46395,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidGoblinoid",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46350,6 +46410,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46363,7 +46427,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidHalfling",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46378,6 +46442,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46391,7 +46459,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidHuman",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46406,6 +46474,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46419,7 +46491,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidOrc",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46434,6 +46506,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46447,7 +46523,7 @@ DefineAbility({
       Variables={
         "FavoredHumanoidReptilian",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46462,6 +46538,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46475,7 +46555,7 @@ DefineAbility({
       Variables={
         "FavoredMagicalBeast",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46490,6 +46570,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46503,7 +46587,7 @@ DefineAbility({
       Variables={
         "FavoredMonstrousHumanoid",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46518,6 +46602,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46531,7 +46619,7 @@ DefineAbility({
       Variables={
         "FavoredOoze",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46546,6 +46634,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46559,7 +46651,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderAir",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46574,6 +46666,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46587,7 +46683,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderEarth",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46602,6 +46698,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46615,7 +46715,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderFire",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46630,6 +46730,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46643,7 +46747,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderWater",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46658,6 +46762,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46671,7 +46779,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderLawful",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46686,6 +46794,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46699,7 +46811,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderChaotic",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46714,6 +46826,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46727,7 +46843,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderGood",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46742,6 +46858,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46755,7 +46875,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderEvil",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46770,6 +46890,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46783,7 +46907,7 @@ DefineAbility({
       Variables={
         "FavoredOutsiderNative",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46798,6 +46922,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46811,7 +46939,7 @@ DefineAbility({
       Variables={
         "FavoredPlant",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46826,6 +46954,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46839,7 +46971,7 @@ DefineAbility({
       Variables={
         "FavoredUndead",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46854,6 +46986,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -46867,7 +47003,7 @@ DefineAbility({
       Variables={
         "FavoredVermin",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46885,7 +47021,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainBaseBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -46894,7 +47030,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainBaseBonus",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -46935,7 +47071,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainCold",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -46944,7 +47080,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainCold",
       },
-      Formula="FavoredTerrainBaseBonus",
+      Formula=Formula("FavoredTerrainBaseBonus"),
     },
   },
   Types={
@@ -46987,7 +47123,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainDesert",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -46996,7 +47132,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainDesert",
       },
-      Formula="FavoredTerrainBaseBonus",
+      Formula=Formula("FavoredTerrainBaseBonus"),
     },
   },
   Types={
@@ -47039,7 +47175,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainForest",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -47048,7 +47184,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainForest",
       },
-      Formula="FavoredTerrainBaseBonus",
+      Formula=Formula("FavoredTerrainBaseBonus"),
     },
   },
   Types={
@@ -47091,7 +47227,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainJungle",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -47100,7 +47236,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainJungle",
       },
-      Formula="FavoredTerrainBaseBonus",
+      Formula=Formula("FavoredTerrainBaseBonus"),
     },
   },
   Types={
@@ -47143,7 +47279,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainMountains",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -47152,7 +47288,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainMountains",
       },
-      Formula="FavoredTerrainBaseBonus",
+      Formula=Formula("FavoredTerrainBaseBonus"),
     },
   },
   Types={
@@ -47195,7 +47331,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainPlains",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -47204,7 +47340,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainPlains",
       },
-      Formula="FavoredTerrainBaseBonus",
+      Formula=Formula("FavoredTerrainBaseBonus"),
     },
   },
   Types={
@@ -47247,7 +47383,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainPlanes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -47256,7 +47392,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainPlanes",
       },
-      Formula="FavoredTerrainBaseBonus",
+      Formula=Formula("FavoredTerrainBaseBonus"),
     },
   },
   Types={
@@ -47299,7 +47435,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainSwamp",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -47308,7 +47444,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainSwamp",
       },
-      Formula="FavoredTerrainBaseBonus",
+      Formula=Formula("FavoredTerrainBaseBonus"),
     },
   },
   Types={
@@ -47351,7 +47487,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainUnderground",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -47360,7 +47496,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainUnderground",
       },
-      Formula="FavoredTerrainBaseBonus",
+      Formula=Formula("FavoredTerrainBaseBonus"),
     },
   },
   Types={
@@ -47403,7 +47539,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainUrban",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -47412,7 +47548,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainUrban",
       },
-      Formula="FavoredTerrainBaseBonus",
+      Formula=Formula("FavoredTerrainBaseBonus"),
     },
   },
   Types={
@@ -47455,7 +47591,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainWater",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -47464,7 +47600,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainWater",
       },
-      Formula="FavoredTerrainBaseBonus",
+      Formula=Formula("FavoredTerrainBaseBonus"),
     },
   },
   Types={
@@ -47481,6 +47617,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47494,7 +47634,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainCold",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -47509,6 +47649,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47522,7 +47666,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainDesert",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -47537,6 +47681,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47550,7 +47698,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainForest",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -47565,6 +47713,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47578,7 +47730,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainJungle",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -47593,6 +47745,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47606,7 +47762,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainMountains",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -47621,6 +47777,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47634,7 +47794,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainPlains",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -47649,6 +47809,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47662,7 +47826,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainPlanes",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -47677,6 +47841,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47690,7 +47858,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainSwamp",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -47705,6 +47873,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47718,7 +47890,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainUnderground",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -47733,6 +47905,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47746,7 +47922,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainUrban",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -47761,6 +47937,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -47774,7 +47954,7 @@ DefineAbility({
       Variables={
         "FavoredTerrainWater",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -47792,7 +47972,7 @@ DefineAbility({
   Definitions={
     {
       Name="RogueSneakAttackLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -47801,7 +47981,7 @@ DefineAbility({
       Variables={
         "RogueSneakAttackLVL",
       },
-      Formula="RogueLVL",
+      Formula=Formula("RogueLVL"),
     },
   },
   Abilities={
@@ -47830,7 +48010,7 @@ DefineAbility({
   Definitions={
     {
       Name="RogueTalentLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -47839,14 +48019,14 @@ DefineAbility({
       Variables={
         "Rogue Talent",
       },
-      Formula="RogueTalentLVL/2",
+      Formula=Formula("RogueTalentLVL/2"),
     },
     {
       Category="VAR",
       Variables={
         "RogueTalentLVL",
       },
-      Formula="RogueLVL",
+      Formula=Formula("RogueLVL"),
     },
   },
   Types={
@@ -47871,11 +48051,11 @@ DefineAbility({
   Definitions={
     {
       Name="TrapfindingLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="TrapfindingBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -47884,7 +48064,7 @@ DefineAbility({
       Variables={
         "Perception=Trapfinding",
       },
-      Formula="TrapfindingBonus",
+      Formula=Formula("TrapfindingBonus"),
       Type={
         Name="Trapfinding",
         Replace=false,
@@ -47896,7 +48076,7 @@ DefineAbility({
       Variables={
         "Disable Device",
       },
-      Formula="TrapfindingBonus",
+      Formula=Formula("TrapfindingBonus"),
       Type={
         Name="Trapfinding",
         Replace=false,
@@ -47908,7 +48088,7 @@ DefineAbility({
       Variables={
         "TrapfindingBonus",
       },
-      Formula="max(TrapfindingLVL/2,1)",
+      Formula=Formula("max(TrapfindingLVL/2,1)"),
       Type={
         Name="Trapfinding",
         Replace=false,
@@ -47920,7 +48100,7 @@ DefineAbility({
       Variables={
         "TrapfindingLVL",
       },
-      Formula="RogueLVL",
+      Formula=Formula("RogueLVL"),
     },
   },
   Types={
@@ -47941,7 +48121,7 @@ DefineAbility({
   Definitions={
     {
       Name="RogueTrapSenseLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -47950,14 +48130,14 @@ DefineAbility({
       Variables={
         "TrapSenseBonus",
       },
-      Formula="RogueTrapSenseLVL/3",
+      Formula=Formula("RogueTrapSenseLVL/3"),
     },
     {
       Category="VAR",
       Variables={
         "RogueTrapSenseLVL",
       },
-      Formula="RogueLVL",
+      Formula=Formula("RogueLVL"),
     },
   },
   Abilities={
@@ -47991,11 +48171,11 @@ DefineAbility({
   Definitions={
     {
       Name="MasterStrikeDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="MasterStrikeLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -48004,14 +48184,14 @@ DefineAbility({
       Variables={
         "MasterStrikeDC",
       },
-      Formula="10+(MasterStrikeLVL/2)+INT",
+      Formula=Formula("10+(MasterStrikeLVL/2)+INT"),
     },
     {
       Category="VAR",
       Variables={
         "MasterStrikeLVL",
       },
-      Formula="RogueLVL",
+      Formula=Formula("RogueLVL"),
     },
   },
   Types={
@@ -48054,7 +48234,7 @@ DefineAbility({
       Variables={
         "UncannyDodgeFlankingLevel",
       },
-      Formula="RogueLVL",
+      Formula=Formula("RogueLVL"),
       Type={
         Name="EachClass",
         Replace=true,
@@ -48089,7 +48269,7 @@ ModifyAbility({
   Definitions={
     {
       Name="RogueTalentTaken",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -48098,7 +48278,7 @@ ModifyAbility({
       Variables={
         "RogueTalentTaken",
       },
-      Formula="count(\"ABILITIES\",\"CATEGORY=Special Ability\",\"TYPE=RogueTalent\")+count(\"ABILITIES\",\"CATEGORY=Special Ability\",\"TYPE=NinjaTrick\")",
+      Formula=Formula("count(\"ABILITIES\",\"CATEGORY=Special Ability\",\"TYPE=RogueTalent\")+count(\"ABILITIES\",\"CATEGORY=Special Ability\",\"TYPE=NinjaTrick\")"),
     },
   },
   Abilities={
@@ -48130,7 +48310,7 @@ DefineAbility({
       Variables={
         "RogueSneakAttackLVL",
       },
-      Formula="-2",
+      Formula=Formula("-2"),
       Conditions={
         function (character)
           return (character.Variables["RogueLvl"] >= 3)
@@ -48147,7 +48327,7 @@ DefineAbility({
       Variables={
         "UncannyDodgeLVL",
       },
-      Formula="-4",
+      Formula=Formula("-4"),
       Conditions={
         function (character)
           return (character.Variables["RogueLvl"] >= 8)
@@ -48219,7 +48399,7 @@ ModifyAbility({
       Variables={
         "UncannyDodgeFlankingLevel",
       },
-      Formula="RogueLVL",
+      Formula=Formula("RogueLVL"),
       Conditions={
         function (character)
           return (character.Variables["RogueLVL"] >= 2)
@@ -48243,7 +48423,7 @@ ModifyAbility({
       Variables={
         "UncannyDodgeLVL",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["RogueLVL"] >= 4)
@@ -48267,7 +48447,7 @@ ModifyAbility({
       Variables={
         "UncannyDodgeLVL",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["RogueLVL"] >= 8)
@@ -48291,7 +48471,7 @@ ModifyAbility({
       Variables={
         "Rogue Talent",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RogueTalentLVL"] >= 2)
@@ -48315,7 +48495,7 @@ ModifyAbility({
       Variables={
         "Rogue Talent",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RogueTalentLVL"] >= 4)
@@ -48339,7 +48519,7 @@ ModifyAbility({
       Variables={
         "Rogue Talent",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RogueTalentLVL"] >= 6)
@@ -48363,7 +48543,7 @@ ModifyAbility({
       Variables={
         "Rogue Talent",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RogueTalentLVL"] >= 8)
@@ -48387,7 +48567,7 @@ ModifyAbility({
       Variables={
         "Rogue Talent",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RogueTalentLVL"] >= 10)
@@ -48411,7 +48591,7 @@ ModifyAbility({
       Variables={
         "Rogue Talent",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RogueTalentLVL"] >= 12)
@@ -48435,7 +48615,7 @@ ModifyAbility({
       Variables={
         "Rogue Talent",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RogueTalentLVL"] >= 14)
@@ -48459,7 +48639,7 @@ ModifyAbility({
       Variables={
         "Rogue Talent",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RogueTalentLVL"] >= 16)
@@ -48483,7 +48663,7 @@ ModifyAbility({
       Variables={
         "Rogue Talent",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RogueTalentLVL"] >= 18)
@@ -48507,7 +48687,7 @@ ModifyAbility({
       Variables={
         "Rogue Talent",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["RogueTalentLVL"] >= 20)
@@ -48528,11 +48708,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CombatTrickAllowed",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CombatTrickTaken",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -48541,7 +48721,7 @@ ModifyAbility({
       Variables={
         "CombatTrickAllowed",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -48579,6 +48759,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.68",
   Conditions={
     function (character)
@@ -48594,14 +48778,14 @@ DefineAbility({
       Variables={
         "Combat Trick Feat",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "CombatTrickTaken",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -48681,12 +48865,13 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (SpellIsInClassList(spell, "Wizard") and spell.Level <= 1 and spell.Level >= 1)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((spell.IsInClassList("Wizard") and (((spell.Level <= 1) and (spell.Level >= 1)))))
     end),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.68",
   Conditions={
     function (character)
@@ -48720,12 +48905,13 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSpell(function (character, spell)
-      return (SpellIsInClassList(spell, "Wizard") and spell.Level <= 0 and spell.Level >= 0)
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return ((spell.IsInClassList("Wizard") and (((spell.Level <= 0) and (spell.Level >= 0)))))
     end),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.68",
   Conditions={
     function (character)
@@ -48743,7 +48929,7 @@ DefineAbility({
   Definitions={
     {
       Name="RogueCasterLevel",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -48752,7 +48938,7 @@ DefineAbility({
       Variables={
         "RogueCasterLevel",
       },
-      Formula="RogueTalentLVL",
+      Formula=Formula("RogueTalentLVL"),
     },
   },
   Types={
@@ -48814,7 +49000,7 @@ DefineAbility({
   Definitions={
     {
       Name="ResiliencyHitPoints",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -48823,7 +49009,7 @@ DefineAbility({
       Variables={
         "ResiliencyHitPoints",
       },
-      Formula="RogueTalentLVL",
+      Formula=Formula("RogueTalentLVL"),
     },
   },
   Types={
@@ -48923,7 +49109,7 @@ DefineAbility({
   Definitions={
     {
       Name="TrapSpotterDistance",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -48932,7 +49118,7 @@ DefineAbility({
       Variables={
         "TrapSpotterDistance",
       },
-      Formula="10",
+      Formula=Formula("10"),
     },
   },
   Types={
@@ -48959,7 +49145,7 @@ DefineAbility({
       Variables={
         "Weapon Training",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -48976,6 +49162,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["RogueTalentLVL"] >= 10)
@@ -48993,7 +49183,7 @@ DefineAbility({
       Variables={
         "Advanced Talent",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -49078,7 +49268,7 @@ DefineAbility({
   Definitions={
     {
       Name="DispellingAttackCasterLevel",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -49087,7 +49277,7 @@ DefineAbility({
       Variables={
         "DispellingAttackCasterLevel",
       },
-      Formula="RogueTalentLVL",
+      Formula=Formula("RogueTalentLVL"),
     },
   },
   Types={
@@ -49159,12 +49349,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (true)
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((true))
     end),
   },
-  Selections="3+INT",
+  Selections=Formula("3+INT"),
   SourcePage="p.70",
   Conditions={
     function (character)
@@ -49203,7 +49393,7 @@ DefineAbility({
   Definitions={
     {
       Name="SlipperymindTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -49212,7 +49402,7 @@ DefineAbility({
       Variables={
         "SlipperymindTimes",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -49252,7 +49442,7 @@ DefineAbility({
       Variables={
         "POOL",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -49266,6 +49456,10 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Description={
     Format="Select a regular Rogue Talent.",
   },
@@ -49275,7 +49469,7 @@ DefineAbility({
       Variables={
         "Rogue Talent",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -49352,7 +49546,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Spells_SpellDCBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -49361,7 +49555,7 @@ DefineAbility({
       Variables={
         "Sorcerer_Spells_SpellDCBonus",
       },
-      Formula="10+CHA",
+      Formula=Formula("10+CHA"),
     },
   },
   Types={
@@ -49384,7 +49578,7 @@ DefineAbility({
   Definitions={
     {
       Name="HasSorcererBloodline",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -49393,14 +49587,14 @@ DefineAbility({
       Variables={
         "Bloodline",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "HasSorcererBloodline",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -49482,7 +49676,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BloodlineLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -49491,7 +49685,7 @@ ModifyAbility({
       Variables={
         "BloodlineLVL",
       },
-      Formula="SorcererLVL",
+      Formula=Formula("SorcererLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -49509,7 +49703,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BloodlineCasterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -49518,7 +49712,7 @@ ModifyAbility({
       Variables={
         "BloodlineCasterLVL",
       },
-      Formula="SorcererLVL",
+      Formula=Formula("SorcererLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -49536,7 +49730,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BloodlineProgressionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -49545,7 +49739,7 @@ ModifyAbility({
       Variables={
         "BloodlineProgressionLVL",
       },
-      Formula="SorcererLVL",
+      Formula=Formula("SorcererLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -49563,7 +49757,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BloodlinePowerTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -49572,7 +49766,7 @@ ModifyAbility({
       Variables={
         "BloodlinePowerTimes",
       },
-      Formula="3+CHA",
+      Formula=Formula("3+CHA"),
       Type={
         Name="Base",
         Replace=false,
@@ -49590,7 +49784,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BloodlineFeatProgression",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -49599,7 +49793,7 @@ ModifyAbility({
       Variables={
         "BloodlineFeatProgression",
       },
-      Formula="BloodlineProgressionLVL",
+      Formula=Formula("BloodlineProgressionLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -49617,7 +49811,7 @@ ModifyAbility({
   Definitions={
     {
       Name="BloodlineFeatCount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -49626,7 +49820,7 @@ ModifyAbility({
       Variables={
         "BloodlineFeatCount",
       },
-      Formula="(BloodlineFeatProgression-1)/6",
+      Formula=Formula("(BloodlineFeatProgression-1)/6"),
       Type={
         Name="Base",
         Replace=false,
@@ -49647,7 +49841,7 @@ ModifyAbility({
       Variables={
         "BloodlineFeatCount",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["BloodlineFeatProgression"] >= 7)
@@ -49671,7 +49865,7 @@ ModifyAbility({
       Variables={
         "BloodlineFeatCount",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["BloodlineFeatProgression"] >= 13)
@@ -49695,7 +49889,7 @@ ModifyAbility({
       Variables={
         "BloodlineFeatCount",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["BloodlineFeatProgression"] >= 19)
@@ -49716,7 +49910,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_AcrobaticSteps",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49729,7 +49923,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_AgileManeuvers",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49742,7 +49936,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Alertness",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49755,7 +49949,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ArcaneArmorMastery",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49768,7 +49962,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ArcaneArmorTraining",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49781,7 +49975,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ArcaneStrike",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49794,7 +49988,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_AugmentSummoning",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49807,7 +50001,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_BlindFight",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49820,7 +50014,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Cleave",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49833,7 +50027,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_CombatCasting",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49846,7 +50040,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_CombatExpertise",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49859,7 +50053,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_CombatReflexes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49872,7 +50066,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_CraftRod",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49885,7 +50079,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_CraftStaff",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49898,7 +50092,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_CraftWondrousItem",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49911,7 +50105,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_DeadlyAim",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49924,7 +50118,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Deceitful",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49937,7 +50131,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_DefensiveCombatTraining",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49950,7 +50144,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_DeftHands",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49963,7 +50157,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Diehard",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49976,7 +50170,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Dodge",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -49989,7 +50183,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_EmpowerSpell",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50002,7 +50196,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Endurance",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50015,7 +50209,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_EnlargeSpell",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50028,7 +50222,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ExtendSpell",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50041,7 +50235,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_FarShot",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50054,7 +50248,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Fleet",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50067,7 +50261,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ForgeRing",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50080,7 +50274,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_GreaterSpellFocusEnchantment",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50093,7 +50287,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_GreatFortitude",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50106,7 +50300,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_HeightenSpell",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50119,7 +50313,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedBullRush",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50132,7 +50326,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedCounterspell",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50145,7 +50339,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedDisarm",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50158,7 +50352,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedFeint",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50171,7 +50365,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedGrapple",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50184,7 +50378,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedGreatFortitude",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50197,7 +50391,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedInitiative",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50210,7 +50404,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedIronWill",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50223,7 +50417,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedOverrun",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50236,7 +50430,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedSunder",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50249,7 +50443,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ImprovedUnarmedStrike",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50262,7 +50456,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_IntimidatingProwess",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50275,7 +50469,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_IronWill",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50288,7 +50482,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Leadership",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50301,7 +50495,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_LightArmorProficiency",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50314,7 +50508,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_LightningReflexes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50327,7 +50521,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_MagicalAptitude",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50340,7 +50534,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_MartialWeaponProficiency",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50353,7 +50547,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_MaximizeSpell",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50366,7 +50560,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Mobility",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50379,7 +50573,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_MountedCombat",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50392,7 +50586,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_NimbleMoves",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50405,7 +50599,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Persuasive",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50418,7 +50612,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_PointBlankShot",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50431,7 +50625,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_PowerAttack",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50444,7 +50638,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_PreciseShot",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50457,7 +50651,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_QuickDraw",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50470,7 +50664,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_QuickenSpell",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50483,7 +50677,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_RideByAttack",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50496,7 +50690,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_ScribeScroll",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50509,7 +50703,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SilentSpell",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50522,7 +50716,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusAcrobatics",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50535,7 +50729,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusBluff",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50548,7 +50742,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusCraft",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50561,7 +50755,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusFly",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50574,7 +50768,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusIntimidate",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50587,7 +50781,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusKnowledgeArcana",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50600,7 +50794,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusKnowledgeDungeoneering",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50613,7 +50807,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusKnowledgeEngineering",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50626,7 +50820,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusKnowledgeHistory",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50639,7 +50833,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusKnowledgeNature",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50652,7 +50846,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusKnowledgePlanes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50665,7 +50859,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusKnowledgeReligion",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50678,7 +50872,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusPerception",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50691,7 +50885,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusPerform",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50704,7 +50898,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusSenseMotive",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50717,7 +50911,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusStealth",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50730,7 +50924,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SkillFocusSwim",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50743,7 +50937,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SpellFocus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50756,7 +50950,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SpellFocusEnchantment",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50769,7 +50963,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SpellFocusNecromancy",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50782,7 +50976,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_SpellPenetration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50795,7 +50989,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Stealthy",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50808,7 +51002,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_StillSpell",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50821,7 +51015,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_Toughness",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50834,7 +51028,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_WeaponFinesse",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50847,7 +51041,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_WeaponFocus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50860,7 +51054,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_WidenSpell",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50873,7 +51067,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BloodlineFeat_WindStance",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50886,7 +51080,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Alarm_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50899,7 +51093,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_AnimateDead_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50912,7 +51106,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_AnimateObjects_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50925,7 +51119,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_AnimatePlants_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50938,7 +51132,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_AstralProjection_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50951,7 +51145,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Augury_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50964,7 +51158,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Banishment_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50977,7 +51171,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Barkskin_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -50990,7 +51184,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BeastShapeIV_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51003,7 +51197,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BestowCurse_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51016,7 +51210,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BlackTentacles_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51029,7 +51223,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Bless_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51042,7 +51236,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Blight_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51055,7 +51249,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Blink_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51068,7 +51262,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Blur_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51081,7 +51275,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BreakEnchantment_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51094,7 +51288,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BullsStrength_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51107,7 +51301,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BurningHands_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51120,7 +51314,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BurningHandsAcid_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51133,7 +51327,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BurningHandsCold_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51146,7 +51340,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_BurningHandsElectricity_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51159,7 +51353,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_CauseFear_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51172,7 +51366,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ChainLightning_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51185,7 +51379,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_CharmMonster_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51198,7 +51392,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ChillTouch_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51211,7 +51405,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_CircleofDeath_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51224,7 +51418,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Cloudkill_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51237,7 +51431,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_CommandGreater_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51250,7 +51444,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_CommandPlants_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51263,7 +51457,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ConeofCold_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51276,7 +51470,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Confusion_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51289,7 +51483,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ConfusionLesser_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51302,7 +51496,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Contagion_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51315,7 +51509,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ControlUndead_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51328,7 +51522,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ControlWater_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51341,7 +51535,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ControlWeather_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51354,7 +51548,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Darkvision_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51367,7 +51561,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DeeperDarkness_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51380,7 +51574,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DeepSlumber_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51393,7 +51587,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DelayedBlastFireball_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51406,7 +51600,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DelayPoison_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51419,7 +51613,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DimensionalLock_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51432,7 +51626,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DimensionDoor_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51445,7 +51639,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DisguiseSelf_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51458,7 +51652,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Disintegrate_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51471,7 +51665,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Dismissal_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51484,7 +51678,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DispelMagic_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51497,7 +51691,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DispelMagicGreater_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51510,7 +51704,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Divination_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51523,7 +51717,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DominateMonster_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51536,7 +51730,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_DominatePerson_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51549,7 +51743,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Dream_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51562,7 +51756,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_EaglesSplendor_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51575,7 +51769,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Earthquake_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51588,7 +51782,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ElementalBodyI_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51601,7 +51795,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ElementalBodyII_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51614,7 +51808,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ElementalBodyIII_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51627,7 +51821,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ElementalBodyIV_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51640,7 +51834,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ElementalSwarm_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51653,7 +51847,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_EndureElements_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51666,7 +51860,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_EnergyDrain_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51679,7 +51873,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_EnlargePerson_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51692,7 +51886,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Entangle_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51705,7 +51899,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_EntropicShield_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51718,7 +51912,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_EtherealJaunt_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51731,7 +51925,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Etherealness_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51744,7 +51938,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ExplosiveRunes_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51757,7 +51951,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Eyebite_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51770,7 +51964,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Fabricate_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51783,7 +51977,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FalseLife_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51796,7 +51990,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Fear_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51809,7 +52003,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Feeblemind_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51822,7 +52016,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FingerofDeath_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51835,7 +52029,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Fireball_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51848,7 +52042,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FireShieldwarm_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51861,7 +52055,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FlameStrike_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51874,7 +52068,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Fly_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51887,7 +52081,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Foresight_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51900,7 +52094,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FormoftheDragonI_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51913,7 +52107,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FormoftheDragonII_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51926,7 +52120,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FormoftheDragonIII_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51939,7 +52133,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_FreedomofMovement_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51952,7 +52146,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_GaseousForm_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51965,7 +52159,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Gate_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51978,7 +52172,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_GiantFormI_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -51991,7 +52185,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_GiantFormII_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52004,7 +52198,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Glitterdust_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52017,7 +52211,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_GuardsandWards_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52030,7 +52224,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_GustofWind_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52043,7 +52237,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Heroism_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52056,7 +52250,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_HeroismGreater_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52069,7 +52263,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_HideousLaughter_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52082,7 +52276,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_HoldMonster_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52095,7 +52289,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_HorridWilting_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52108,7 +52302,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Hypnotism_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52121,7 +52315,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Identify_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52134,7 +52328,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Imprisonment_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52147,7 +52341,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Insanity_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52160,7 +52354,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_InsectPlague_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52173,7 +52367,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Invisibility_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52186,7 +52380,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_IronBody_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52199,7 +52393,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_IrresistibleDance_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52212,7 +52406,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_LightningBolt_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52225,7 +52419,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MageArmor_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52238,7 +52432,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MagicCircleagainstEvil_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52251,7 +52445,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MagicVestment_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52264,7 +52458,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MagicWeapon_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52277,7 +52471,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MagicWeaponGreater_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52290,7 +52484,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MajorCreation_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52303,7 +52497,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MakeWhole_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52316,7 +52510,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MeteorSwarm_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52329,7 +52523,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MindBlank_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52342,7 +52536,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MinorCreation_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52355,7 +52549,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Mislead_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52368,7 +52562,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MomentofPrescience_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52381,7 +52575,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_MoveEarth_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52394,7 +52588,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ObscuringMist_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52407,7 +52601,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_OverlandFlight_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52420,7 +52614,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PersistentImage_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52433,7 +52627,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PhaseDoor_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52446,7 +52640,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PlanarBinding_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52459,7 +52653,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PlanarBindingDevilsAndFiendishCreaturesOnly_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52472,7 +52666,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PlanarBindingGreater_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52485,7 +52679,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PlaneShift_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52498,7 +52692,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PlantShapeIII_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52511,7 +52705,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Poison_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52524,7 +52718,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PolarRay_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52537,7 +52731,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PolymorphAnyObject_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52550,7 +52744,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PolymorphGreater_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52563,7 +52757,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PowerWordBlind_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52576,7 +52770,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PowerWordStun_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52589,7 +52783,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ProtectionfromEnergy_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52602,7 +52796,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ProtectionfromGood_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52615,7 +52809,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_PryingEyesGreater_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52628,7 +52822,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Rage_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52641,7 +52835,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_RayofEnfeeblement_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52654,7 +52848,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_RayofExhaustion_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52667,7 +52861,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_RemoveCurse_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52680,7 +52874,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_RepelMetalorStone_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52693,7 +52887,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Repulsion_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52706,7 +52900,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ResistEnergy_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52719,7 +52913,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ReverseGravity_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52732,7 +52926,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ScorchingRay_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52745,7 +52939,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ScorchingRayAcid_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52758,7 +52952,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ScorchingRayCold_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52771,7 +52965,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ScorchingRayElectricity_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52784,7 +52978,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SeeInvisibility_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52797,7 +52991,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Shades_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52810,7 +53004,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ShadowConjuration_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52823,7 +53017,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ShadowEvocation_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52836,7 +53030,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ShadowEvocationGreater_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52849,7 +53043,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ShadowWalk_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52862,7 +53056,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Shambler_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52875,7 +53069,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Shapechange_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52888,7 +53082,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ShockingGrasp_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52901,7 +53095,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Shout_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52914,7 +53108,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ShoutGreater_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52927,7 +53121,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_ShrinkItem_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52940,7 +53134,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Sleep_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52953,7 +53147,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SoulBind_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52966,7 +53160,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SpeakwithPlants_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52979,7 +53173,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SpellResistance_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -52992,7 +53186,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SpellTurning_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53005,7 +53199,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SpikeStones_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53018,7 +53212,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Stoneskin_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53031,7 +53225,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_StoneTell_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53044,7 +53238,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_StormofVengeance_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53057,7 +53251,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Suggestion_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53070,7 +53264,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SuggestionMass_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53083,7 +53277,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SummonMonsterIX_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53096,7 +53290,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SummonMonsterVII_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53109,7 +53303,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_SummonMonsterVIIIElementalsOnly_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53122,7 +53316,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Sunburst_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53135,7 +53329,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TeleportGreater_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53148,7 +53342,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Tongues_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53161,7 +53355,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TouchofIdiocy_L2",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53174,7 +53368,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Transformation_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53187,7 +53381,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TransmuteRocktoMud_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53200,7 +53394,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TransportviaPlants_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53213,7 +53407,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TraptheSoul_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53226,7 +53420,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TreeStride_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53239,7 +53433,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TrueSeeing_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53252,7 +53446,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_TrueStrike_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53265,7 +53459,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_UndeathToDeath_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53278,7 +53472,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_UnholyAura_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53291,7 +53485,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_UnseenServant_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53304,7 +53498,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_VampiricTouch_L3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53317,7 +53511,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Veil_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53330,7 +53524,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Ventriloquism_L1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53343,7 +53537,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Vision_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53356,7 +53550,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WailoftheBanshee_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53369,7 +53563,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WallofFire_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53382,7 +53576,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WallOfIce_L4",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53395,7 +53589,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WallofIron_L6",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53408,7 +53602,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WallofStone_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53421,7 +53615,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WallOfThorns_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53434,7 +53628,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WavesofExhaustion_L7",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53447,7 +53641,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_WavesOfFatigue_L5",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53460,7 +53654,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Whirlwind_L8",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -53473,7 +53667,7 @@ ModifyAbility({
   Definitions={
     {
       Name="Sorcerer_BonusSpell_Wish_L9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -54719,6 +54913,10 @@ DefineAbility({
       FormatString="While you are wearing light or no armor, your base speed increases by 5 feet. You lose the benefits of this feat if you carry a medium or heavy load.",
     },
   },
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   SourcePage="p.124",
   Conditions={
     function (character)
@@ -55564,12 +55762,12 @@ DefineAbility({
       FormatString="You make attack rolls with the selected weapon normally (without the non-proficient penalty).",
     },
   },
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (not character.IsProficientWith(weapon) and weapon.IsType("Martial"))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return ((not (character.IsProficientWith(weapon)) and (((weapon.IsType("Martial"))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.130",
   Conditions={
     function (character)
@@ -56207,12 +56405,12 @@ DefineAbility({
       FormatString="You get a +3 bonus on all checks involving the chosen skill. If you have 10 or more ranks in that skill, this bonus increases to +6.",
     },
   },
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Type == "Craft")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Craft")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.134",
   Conditions={
     function (character)
@@ -56587,12 +56785,12 @@ DefineAbility({
       FormatString="You get a +3 bonus on all checks involving the chosen skill. If you have 10 or more ranks in that skill, this bonus increases to +6.",
     },
   },
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (skill.Type == "Perform")
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Perform")))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.134",
   Conditions={
     function (character)
@@ -56744,7 +56942,7 @@ DefineAbility({
       Variables={
         "Spell Focus",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -57030,7 +57228,7 @@ DefineAbility({
       Variables={
         "Weapon Focus",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -63737,12 +63935,15 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseAbilityselection(function (character, ability)
-      return (ability.Category == "Sorcerer Bloodline") or (not character.HasAbility(ability) and character.IsQualifiedFor(ability) and ability.IsType("SorcererBloodlineChoice"))
+  Choice={
+    Choose=ChooseAbilitySelection(function (character, ability)
+      if ability.Category ~= "Sorcerer Bloodline" then
+        return false
+      end
+      return ((not (character.HasAbility(ability))) and (character.IsQualifiedFor(ability) and (((ability.IsType("SorcererBloodlineChoice"))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -63786,75 +63987,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Aberrant_BloodlineLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlineProgressionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlineArcana1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlineSpells1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePowers",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower15",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower20",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlineClassSkill1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_Description",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -63863,35 +64064,35 @@ DefineAbility({
       Variables={
         "Sorcerer_Aberrant_BloodlinePower1LVL",
       },
-      Formula="Sorcerer_Aberrant_BloodlineLVL+BloodlinePower1LVLBonus",
+      Formula=Formula("Sorcerer_Aberrant_BloodlineLVL+BloodlinePower1LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlinePower3LVL",
       },
-      Formula="Sorcerer_Aberrant_BloodlineLVL+BloodlinePower3LVLBonus",
+      Formula=Formula("Sorcerer_Aberrant_BloodlineLVL+BloodlinePower3LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlinePower9LVL",
       },
-      Formula="Sorcerer_Aberrant_BloodlineLVL+BloodlinePower9LVLBonus",
+      Formula=Formula("Sorcerer_Aberrant_BloodlineLVL+BloodlinePower9LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlinePower15LVL",
       },
-      Formula="Sorcerer_Aberrant_BloodlineLVL+BloodlinePower15LVLBonus",
+      Formula=Formula("Sorcerer_Aberrant_BloodlineLVL+BloodlinePower15LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlinePower20LVL",
       },
-      Formula="Sorcerer_Aberrant_BloodlineLVL+BloodlinePower20LVLBonus",
+      Formula=Formula("Sorcerer_Aberrant_BloodlineLVL+BloodlinePower20LVLBonus"),
     },
   },
   Abilities={
@@ -64024,91 +64225,91 @@ DefineAbility({
       Variables={
         "Sorcerer Bloodline Feat",
       },
-      Formula="BloodlineFeatCount",
+      Formula=Formula("BloodlineFeatCount"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlineLVL",
       },
-      Formula="BloodlineLVL",
+      Formula=Formula("BloodlineLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlineProgressionLVL",
       },
-      Formula="BloodlineProgressionLVL",
+      Formula=Formula("BloodlineProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlineArcana1",
       },
-      Formula="if(Sorcerer_CF_BloodlineArcana==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineArcana==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlineSpells1",
       },
-      Formula="if(Sorcerer_CF_BloodlineSpells==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineSpells==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlineClassSkill1",
       },
-      Formula="if(Sorcerer_CF_BloodlineClassSkill==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineClassSkill==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlinePowers",
       },
-      Formula="if(Sorcerer_CF_BloodlinePowers==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePowers==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlinePower1",
       },
-      Formula="if(Sorcerer_CF_BloodlinePower1==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePower1==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlinePower3",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Aberrant_BloodlineProgressionLVL>=3),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Aberrant_BloodlineProgressionLVL>=3),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlinePower9",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Aberrant_BloodlineProgressionLVL>=9),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Aberrant_BloodlineProgressionLVL>=9),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlinePower15",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Aberrant_BloodlineProgressionLVL>=15),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Aberrant_BloodlineProgressionLVL>=15),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlinePower20",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Aberrant_BloodlineProgressionLVL>=20),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Aberrant_BloodlineProgressionLVL>=20),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Aberrant_BloodlinePower1Times",
       },
-      Formula="BloodlinePowerTimes+BloodlinePower1TimesBonus",
+      Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
         Replace=false,
@@ -64148,56 +64349,56 @@ DefineAbility({
       Variables={
         "Sorcerer_BloodlineFeat_CombatCasting",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_ImprovedDisarm",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_ImprovedGrapple",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_ImprovedInitiative",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_ImprovedUnarmedStrike",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_IronWill",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_SilentSpell",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_SkillFocusKnowledgeDungeoneering",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -64510,15 +64711,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Aberrant_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Aberrant_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_AcidicRay_DamageBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -64527,7 +64728,7 @@ DefineAbility({
       Variables={
         "Sorcerer_AcidicRay_DamageBonus",
       },
-      Formula="Sorcerer_Aberrant_BloodlinePower1LVL/2",
+      Formula=Formula("Sorcerer_Aberrant_BloodlinePower1LVL/2"),
     },
   },
   Types={
@@ -64586,11 +64787,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Aberrant_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_LongLimbs_Reach",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -64599,14 +64800,14 @@ DefineAbility({
       Variables={
         "Sorcerer_LongLimbs_Reach",
       },
-      Formula="5",
+      Formula=Formula("5"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_LongLimbs_Reach",
       },
-      Formula="5",
+      Formula=Formula("5"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_Aberrant_BloodlinePower3LVL"] >= 11)
@@ -64618,7 +64819,7 @@ DefineAbility({
       Variables={
         "Sorcerer_LongLimbs_Reach",
       },
-      Formula="5",
+      Formula=Formula("5"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_Aberrant_BloodlinePower3LVL"] >= 17)
@@ -64697,11 +64898,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Aberrant_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_UnusualAnatomy_PercentChance",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -64710,14 +64911,14 @@ DefineAbility({
       Variables={
         "Sorcerer_UnusualAnatomy_PercentChance",
       },
-      Formula="25",
+      Formula=Formula("25"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_UnusualAnatomy_PercentChance",
       },
-      Formula="25",
+      Formula=Formula("25"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_Aberrant_BloodlinePower9LVL"] >= 13)
@@ -64768,11 +64969,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Aberrant_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_AlienResistance_SR",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -64781,7 +64982,7 @@ DefineAbility({
       Variables={
         "Sorcerer_AlienResistance_SR",
       },
-      Formula="10+Sorcerer_Aberrant_BloodlinePower15LVL",
+      Formula=Formula("10+Sorcerer_Aberrant_BloodlinePower15LVL"),
     },
   },
   Types={
@@ -64828,7 +65029,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Aberrant_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -64837,7 +65038,7 @@ DefineAbility({
       Variables={
         "BlindsightRange",
       },
-      Formula="60",
+      Formula=Formula("60"),
       Type={
         Name="Base",
         Replace=false,
@@ -64891,75 +65092,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Abyssal_BloodlineLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlineProgressionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlineArcana1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlineSpells1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePowers",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower15",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower20",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlineClassSkill1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_Description",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -64968,35 +65169,35 @@ DefineAbility({
       Variables={
         "Sorcerer_Abyssal_BloodlinePower1LVL",
       },
-      Formula="Sorcerer_Abyssal_BloodlineLVL+BloodlinePower1LVLBonus",
+      Formula=Formula("Sorcerer_Abyssal_BloodlineLVL+BloodlinePower1LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlinePower3LVL",
       },
-      Formula="Sorcerer_Abyssal_BloodlineLVL+BloodlinePower3LVLBonus",
+      Formula=Formula("Sorcerer_Abyssal_BloodlineLVL+BloodlinePower3LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlinePower9LVL",
       },
-      Formula="Sorcerer_Abyssal_BloodlineLVL+BloodlinePower9LVLBonus",
+      Formula=Formula("Sorcerer_Abyssal_BloodlineLVL+BloodlinePower9LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlinePower15LVL",
       },
-      Formula="Sorcerer_Abyssal_BloodlineLVL+BloodlinePower15LVLBonus",
+      Formula=Formula("Sorcerer_Abyssal_BloodlineLVL+BloodlinePower15LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlinePower20LVL",
       },
-      Formula="Sorcerer_Abyssal_BloodlineLVL+BloodlinePower20LVLBonus",
+      Formula=Formula("Sorcerer_Abyssal_BloodlineLVL+BloodlinePower20LVLBonus"),
     },
   },
   Abilities={
@@ -65129,91 +65330,91 @@ DefineAbility({
       Variables={
         "Sorcerer Bloodline Feat",
       },
-      Formula="BloodlineFeatCount",
+      Formula=Formula("BloodlineFeatCount"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlineLVL",
       },
-      Formula="BloodlineLVL",
+      Formula=Formula("BloodlineLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlineProgressionLVL",
       },
-      Formula="BloodlineProgressionLVL",
+      Formula=Formula("BloodlineProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlineArcana1",
       },
-      Formula="if(Sorcerer_CF_BloodlineArcana==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineArcana==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlineSpells1",
       },
-      Formula="if(Sorcerer_CF_BloodlineSpells==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineSpells==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlineClassSkill1",
       },
-      Formula="if(Sorcerer_CF_BloodlineClassSkill==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineClassSkill==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlinePowers",
       },
-      Formula="if(Sorcerer_CF_BloodlinePowers==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePowers==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlinePower1",
       },
-      Formula="if(Sorcerer_CF_BloodlinePower1==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePower1==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlinePower3",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Abyssal_BloodlineProgressionLVL>=3),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Abyssal_BloodlineProgressionLVL>=3),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlinePower9",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Abyssal_BloodlineProgressionLVL>=9),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Abyssal_BloodlineProgressionLVL>=9),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlinePower15",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Abyssal_BloodlineProgressionLVL>=15),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Abyssal_BloodlineProgressionLVL>=15),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlinePower20",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Abyssal_BloodlineProgressionLVL>=20),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Abyssal_BloodlineProgressionLVL>=20),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Abyssal_BloodlinePower1Times",
       },
-      Formula="BloodlinePowerTimes+BloodlinePower1TimesBonus",
+      Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
         Replace=false,
@@ -65253,56 +65454,56 @@ DefineAbility({
       Variables={
         "Sorcerer_BloodlineFeat_AugmentSummoning",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_Cleave",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_EmpowerSpell",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_GreatFortitude",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_ImprovedBullRush",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_ImprovedSunder",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_PowerAttack",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_SkillFocusKnowledgePlanes",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -65524,7 +65725,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_AbyssalBloodlineArcana_SummonDR",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -65533,7 +65734,7 @@ DefineAbility({
       Variables={
         "Sorcerer_AbyssalBloodlineArcana_SummonDR",
       },
-      Formula="max(Sorcerer_Abyssal_BloodlineLVL/2,1)",
+      Formula=Formula("max(Sorcerer_Abyssal_BloodlineLVL/2,1)"),
     },
   },
   Types={
@@ -65667,15 +65868,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Abyssal_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Abyssal_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_GenericClaws_SizeBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -65684,7 +65885,7 @@ DefineAbility({
       Variables={
         "Sorcerer_GenericClaws_SizeBonus",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePower1LVL"] >= 7)
@@ -65696,7 +65897,7 @@ DefineAbility({
       Variables={
         "DAMAGESIZE",
       },
-      Formula="Sorcerer_GenericClaws_SizeBonus",
+      Formula=Formula("Sorcerer_GenericClaws_SizeBonus"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePower1LVL"] >= 7)
@@ -65771,15 +65972,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Abyssal_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_AbyssalDemonResistances_ResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_AbyssalDemonResistances_SaveBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -65788,21 +65989,21 @@ DefineAbility({
       Variables={
         "Sorcerer_AbyssalDemonResistances_ResistanceBonus",
       },
-      Formula="min(floor((Sorcerer_Abyssal_BloodlinePower3LVL+3)/6),2)*5",
+      Formula=Formula("min(floor((Sorcerer_Abyssal_BloodlinePower3LVL+3)/6),2)*5"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_AbyssalDemonResistances_SaveBonus",
       },
-      Formula="min(floor((Sorcerer_Abyssal_BloodlinePower3LVL+3)/6),2)*2",
+      Formula=Formula("min(floor((Sorcerer_Abyssal_BloodlinePower3LVL+3)/6),2)*2"),
     },
     {
       Category="VAR",
       Variables={
         "ElectricityResistanceBonus",
       },
-      Formula="Sorcerer_AbyssalDemonResistances_ResistanceBonus",
+      Formula=Formula("Sorcerer_AbyssalDemonResistances_ResistanceBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -65852,11 +66053,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Abyssal_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_AbyssalStrengthOfTheAbyss_StrBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -65865,7 +66066,7 @@ DefineAbility({
       Variables={
         "STR",
       },
-      Formula="Sorcerer_AbyssalStrengthOfTheAbyss_StrBonus*2",
+      Formula=Formula("Sorcerer_AbyssalStrengthOfTheAbyss_StrBonus*2"),
       Type={
         Name="Inherent",
         Replace=false,
@@ -65877,7 +66078,7 @@ DefineAbility({
       Variables={
         "Sorcerer_AbyssalStrengthOfTheAbyss_StrBonus",
       },
-      Formula="min(max(0,(Sorcerer_Abyssal_BloodlinePower9LVL-5)/4),3)",
+      Formula=Formula("min(max(0,(Sorcerer_Abyssal_BloodlinePower9LVL-5)/4),3)"),
     },
   },
   Types={
@@ -65920,7 +66121,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Abyssal_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -65966,11 +66167,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Abyssal_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_AbyssalDemonicMight_ResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -65979,7 +66180,7 @@ DefineAbility({
       Variables={
         "Sorcerer_AbyssalDemonicMight_ResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
     },
     {
       Category="VAR",
@@ -65988,7 +66189,7 @@ DefineAbility({
         "ColdResistanceBonus",
         "FireResistanceBonus",
       },
-      Formula="Sorcerer_AbyssalDemonicMight_ResistanceBonus",
+      Formula=Formula("Sorcerer_AbyssalDemonicMight_ResistanceBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -66000,7 +66201,7 @@ DefineAbility({
       Variables={
         "TelepathyRange",
       },
-      Formula="-40",
+      Formula=Formula("-40"),
     },
   },
   Abilities={
@@ -66050,75 +66251,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Arcane_BloodlineLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlineProgressionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlineArcana1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlineSpells1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlinePowers",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower15",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower20",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlineClassSkill1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_Description",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -66127,7 +66328,7 @@ DefineAbility({
       Variables={
         "Knowledge Class Skill",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_Arcane_BloodlineClassSkill1"] >= 1)
@@ -66142,35 +66343,35 @@ DefineAbility({
       Variables={
         "Sorcerer_Arcane_BloodlinePower1LVL",
       },
-      Formula="Sorcerer_Arcane_BloodlineLVL+BloodlinePower1LVLBonus",
+      Formula=Formula("Sorcerer_Arcane_BloodlineLVL+BloodlinePower1LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlinePower3LVL",
       },
-      Formula="Sorcerer_Arcane_BloodlineLVL+BloodlinePower3LVLBonus",
+      Formula=Formula("Sorcerer_Arcane_BloodlineLVL+BloodlinePower3LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlinePower9LVL",
       },
-      Formula="Sorcerer_Arcane_BloodlineLVL+BloodlinePower9LVLBonus",
+      Formula=Formula("Sorcerer_Arcane_BloodlineLVL+BloodlinePower9LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlinePower15LVL",
       },
-      Formula="Sorcerer_Arcane_BloodlineLVL+BloodlinePower15LVLBonus",
+      Formula=Formula("Sorcerer_Arcane_BloodlineLVL+BloodlinePower15LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlinePower20LVL",
       },
-      Formula="Sorcerer_Arcane_BloodlineLVL+BloodlinePower20LVLBonus",
+      Formula=Formula("Sorcerer_Arcane_BloodlineLVL+BloodlinePower20LVLBonus"),
     },
   },
   Abilities={
@@ -66291,91 +66492,91 @@ DefineAbility({
       Variables={
         "Sorcerer Bloodline Feat",
       },
-      Formula="BloodlineFeatCount",
+      Formula=Formula("BloodlineFeatCount"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlineLVL",
       },
-      Formula="BloodlineLVL",
+      Formula=Formula("BloodlineLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlineProgressionLVL",
       },
-      Formula="BloodlineProgressionLVL",
+      Formula=Formula("BloodlineProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlineArcana1",
       },
-      Formula="if(Sorcerer_CF_BloodlineArcana==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineArcana==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlineSpells1",
       },
-      Formula="if(Sorcerer_CF_BloodlineSpells==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineSpells==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlineClassSkill1",
       },
-      Formula="if(Sorcerer_CF_BloodlineClassSkill==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineClassSkill==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlinePowers",
       },
-      Formula="if(Sorcerer_CF_BloodlinePowers==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePowers==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlinePower1",
       },
-      Formula="if(Sorcerer_CF_BloodlinePower1==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePower1==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlinePower3",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Arcane_BloodlineProgressionLVL>=3),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Arcane_BloodlineProgressionLVL>=3),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlinePower9",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Arcane_BloodlineProgressionLVL>=9),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Arcane_BloodlineProgressionLVL>=9),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlinePower15",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Arcane_BloodlineProgressionLVL>=15),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Arcane_BloodlineProgressionLVL>=15),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlinePower20",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Arcane_BloodlineProgressionLVL>=20),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Arcane_BloodlineProgressionLVL>=20),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Arcane_BloodlinePower1Times",
       },
-      Formula="BloodlinePowerTimes+BloodlinePower1TimesBonus",
+      Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
         Replace=false,
@@ -66415,56 +66616,56 @@ DefineAbility({
       Variables={
         "Sorcerer_BloodlineFeat_CombatCasting",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_ImprovedCounterspell",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_ImprovedInitiative",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_IronWill",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_ScribeScroll",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_SkillFocusKnowledgeArcana",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_SpellFocus",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_StillSpell",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -66736,15 +66937,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Arcane_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Arcane_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ArcaneBondLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -66753,14 +66954,14 @@ DefineAbility({
       Variables={
         "Arcane Bond",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "ArcaneBondLVL",
       },
-      Formula="Sorcerer_Arcane_BloodlinePower1LVL",
+      Formula=Formula("Sorcerer_Arcane_BloodlinePower1LVL"),
     },
   },
   Types={
@@ -66845,11 +67046,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Arcane_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_ArcaneMetamagicAdept_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -66858,7 +67059,7 @@ DefineAbility({
       Variables={
         "Sorcerer_ArcaneMetamagicAdept_Times",
       },
-      Formula="floor((Sorcerer_Arcane_BloodlinePower3LVL+1)/4)",
+      Formula=Formula("floor((Sorcerer_Arcane_BloodlinePower3LVL+1)/4)"),
     },
   },
   Types={
@@ -66904,11 +67105,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Arcane_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_NewArcana_Number",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -66917,14 +67118,14 @@ DefineAbility({
       Variables={
         "New Arcana",
       },
-      Formula="Sorcerer_NewArcana_Number",
+      Formula=Formula("Sorcerer_NewArcana_Number"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_NewArcana_Number",
       },
-      Formula="floor((Sorcerer_Arcane_BloodlinePower9LVL-5)/4)",
+      Formula=Formula("floor((Sorcerer_Arcane_BloodlinePower9LVL-5)/4)"),
     },
   },
   Types={
@@ -66962,7 +67163,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Arcane_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -66971,7 +67172,7 @@ DefineAbility({
       Variables={
         "Arcane Bloodline School Power",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -67001,12 +67202,12 @@ DefineAbility({
       FormatString="ArcaneBloodlinePowers",
     },
   },
-  Chooses={
-    ChooseSchool(function (character, school)
-      return (true)
+  Choice={
+    Choose=ChooseSchool(function (character, school)
+      return ((true))
     end),
   },
-  Selections="1",
+  Selections=Formula("1"),
   SourcePage="p.74",
   Conditions={
     function (character)
@@ -67027,7 +67228,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Arcane_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -67036,7 +67237,7 @@ DefineAbility({
       Variables={
         "SCHOOL.%LIST",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Type={
         Name="SchoolPower",
         Replace=false,
@@ -67083,7 +67284,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Arcane_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -67092,7 +67293,7 @@ DefineAbility({
       Variables={
         "Sorcerer_Arcane_BloodlinePower3",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -67112,13 +67313,17 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Bonuses={
     {
       Category="SPELLKNOWN",
       Variables={
         "CLASS=Sorcerer;LEVEL=1",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -67132,6 +67337,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 4)
@@ -67143,7 +67352,7 @@ DefineAbility({
       Variables={
         "CLASS=Sorcerer;LEVEL=2",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -67157,6 +67366,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 6)
@@ -67168,7 +67381,7 @@ DefineAbility({
       Variables={
         "CLASS=Sorcerer;LEVEL=3",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -67182,6 +67395,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 8)
@@ -67193,7 +67410,7 @@ DefineAbility({
       Variables={
         "CLASS=Sorcerer;LEVEL=4",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -67207,6 +67424,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 10)
@@ -67218,7 +67439,7 @@ DefineAbility({
       Variables={
         "CLASS=Sorcerer;LEVEL=5",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -67232,6 +67453,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 12)
@@ -67243,7 +67468,7 @@ DefineAbility({
       Variables={
         "CLASS=Sorcerer;LEVEL=6",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -67257,6 +67482,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 14)
@@ -67268,7 +67497,7 @@ DefineAbility({
       Variables={
         "CLASS=Sorcerer;LEVEL=7",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -67282,6 +67511,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 16)
@@ -67293,7 +67526,7 @@ DefineAbility({
       Variables={
         "CLASS=Sorcerer;LEVEL=8",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -67307,6 +67540,10 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=true,
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Selections=nil,
   Conditions={
     function (character)
       return (character.Variables["BloodlineCasterLVL"] >= 18)
@@ -67318,7 +67555,7 @@ DefineAbility({
       Variables={
         "CLASS=Sorcerer;LEVEL=9",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -67348,75 +67585,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Celestial_BloodlineLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlineProgressionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlineArcana1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlineSpells1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlinePowers",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower15",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower20",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlineClassSkill1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_Description",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -67425,35 +67662,35 @@ DefineAbility({
       Variables={
         "Sorcerer_Celestial_BloodlinePower1LVL",
       },
-      Formula="Sorcerer_Celestial_BloodlineLVL+BloodlinePower1LVLBonus",
+      Formula=Formula("Sorcerer_Celestial_BloodlineLVL+BloodlinePower1LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlinePower3LVL",
       },
-      Formula="Sorcerer_Celestial_BloodlineLVL+BloodlinePower3LVLBonus",
+      Formula=Formula("Sorcerer_Celestial_BloodlineLVL+BloodlinePower3LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlinePower9LVL",
       },
-      Formula="Sorcerer_Celestial_BloodlineLVL+BloodlinePower9LVLBonus",
+      Formula=Formula("Sorcerer_Celestial_BloodlineLVL+BloodlinePower9LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlinePower15LVL",
       },
-      Formula="Sorcerer_Celestial_BloodlineLVL+BloodlinePower15LVLBonus",
+      Formula=Formula("Sorcerer_Celestial_BloodlineLVL+BloodlinePower15LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlinePower20LVL",
       },
-      Formula="Sorcerer_Celestial_BloodlineLVL+BloodlinePower20LVLBonus",
+      Formula=Formula("Sorcerer_Celestial_BloodlineLVL+BloodlinePower20LVLBonus"),
     },
   },
   Abilities={
@@ -67586,91 +67823,91 @@ DefineAbility({
       Variables={
         "Sorcerer Bloodline Feat",
       },
-      Formula="BloodlineFeatCount",
+      Formula=Formula("BloodlineFeatCount"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlineLVL",
       },
-      Formula="BloodlineLVL",
+      Formula=Formula("BloodlineLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlineProgressionLVL",
       },
-      Formula="BloodlineProgressionLVL",
+      Formula=Formula("BloodlineProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlineArcana1",
       },
-      Formula="if(Sorcerer_CF_BloodlineArcana==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineArcana==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlineSpells1",
       },
-      Formula="if(Sorcerer_CF_BloodlineSpells==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineSpells==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlineClassSkill1",
       },
-      Formula="if(Sorcerer_CF_BloodlineClassSkill==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineClassSkill==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlinePowers",
       },
-      Formula="if(Sorcerer_CF_BloodlinePowers==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePowers==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlinePower1",
       },
-      Formula="if(Sorcerer_CF_BloodlinePower1==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePower1==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlinePower3",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Celestial_BloodlineProgressionLVL>=3),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Celestial_BloodlineProgressionLVL>=3),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlinePower9",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Celestial_BloodlineProgressionLVL>=9),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Celestial_BloodlineProgressionLVL>=9),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlinePower15",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Celestial_BloodlineProgressionLVL>=15),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Celestial_BloodlineProgressionLVL>=15),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlinePower20",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Celestial_BloodlineProgressionLVL>=20),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Celestial_BloodlineProgressionLVL>=20),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Celestial_BloodlinePower1Times",
       },
-      Formula="BloodlinePowerTimes+BloodlinePower1TimesBonus",
+      Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
         Replace=false,
@@ -67710,56 +67947,56 @@ DefineAbility({
       Variables={
         "Sorcerer_BloodlineFeat_Dodge",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_ExtendSpell",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_IronWill",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_Mobility",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_MountedCombat",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_RideByAttack",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_SkillFocusKnowledgeReligion",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_WeaponFinesse",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -67981,7 +68218,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_CelestialBloodlineArcana_SummonDR",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -67990,7 +68227,7 @@ DefineAbility({
       Variables={
         "Sorcerer_CelestialBloodlineArcana_SummonDR",
       },
-      Formula="max(Sorcerer_Celestial_BloodlineLVL/2,1)",
+      Formula=Formula("max(Sorcerer_Celestial_BloodlineLVL/2,1)"),
     },
   },
   Types={
@@ -68092,15 +68329,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Celestial_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Celestial_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_CelestialHeaventlyFire_DamageBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -68109,7 +68346,7 @@ DefineAbility({
       Variables={
         "Sorcerer_CelestialHeaventlyFire_DamageBonus",
       },
-      Formula="Sorcerer_Celestial_BloodlinePower1LVL/2",
+      Formula=Formula("Sorcerer_Celestial_BloodlinePower1LVL/2"),
     },
   },
   Types={
@@ -68154,11 +68391,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Celestial_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_CelestialCelestialResistances_ResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -68167,7 +68404,7 @@ DefineAbility({
       Variables={
         "Sorcerer_CelestialCelestialResistances_ResistanceBonus",
       },
-      Formula="min(floor((Sorcerer_Celestial_BloodlinePower3LVL+3)/6),2)*5",
+      Formula=Formula("min(floor((Sorcerer_Celestial_BloodlinePower3LVL+3)/6),2)*5"),
     },
     {
       Category="VAR",
@@ -68175,7 +68412,7 @@ DefineAbility({
         "AcidResistanceBonus",
         "ColdResistanceBonus",
       },
-      Formula="Sorcerer_CelestialCelestialResistances_ResistanceBonus",
+      Formula=Formula("Sorcerer_CelestialCelestialResistances_ResistanceBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -68286,11 +68523,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Celestial_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_CelestialWingsOfHeaven_TimeMinutes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -68299,7 +68536,7 @@ DefineAbility({
       Variables={
         "Sorcerer_CelestialWingsOfHeaven_TimeMinutes",
       },
-      Formula="Sorcerer_Celestial_BloodlinePower9LVL",
+      Formula=Formula("Sorcerer_Celestial_BloodlinePower9LVL"),
     },
   },
   Types={
@@ -68360,11 +68597,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Celestial_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_CelestialConviction_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -68373,7 +68610,7 @@ DefineAbility({
       Variables={
         "Sorcerer_CelestialConviction_Times",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -68426,15 +68663,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Celestial_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_CelestialAscension_ResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_CelestialAscension_SaveBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -68443,14 +68680,14 @@ DefineAbility({
       Variables={
         "Sorcerer_CelestialAscension_ResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_CelestialAscension_SaveBonus",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Type={
         Name="Racial",
         Replace=false,
@@ -68463,7 +68700,7 @@ DefineAbility({
         "FireResistanceBonus",
         "ElectricityResistanceBonus",
       },
-      Formula="Sorcerer_CelestialAscension_ResistanceBonus",
+      Formula=Formula("Sorcerer_CelestialAscension_ResistanceBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -68516,75 +68753,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Destined_BloodlineLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlineProgressionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlineArcana1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlineSpells1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlinePowers",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlinePower1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlinePower3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlinePower9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlinePower15",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlinePower20",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlineClassSkill1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_Description",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -68593,35 +68830,35 @@ DefineAbility({
       Variables={
         "Sorcerer_Destined_BloodlinePower1LVL",
       },
-      Formula="Sorcerer_Destined_BloodlineLVL+BloodlinePower1LVLBonus",
+      Formula=Formula("Sorcerer_Destined_BloodlineLVL+BloodlinePower1LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlinePower3LVL",
       },
-      Formula="Sorcerer_Destined_BloodlineLVL+BloodlinePower3LVLBonus",
+      Formula=Formula("Sorcerer_Destined_BloodlineLVL+BloodlinePower3LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlinePower9LVL",
       },
-      Formula="Sorcerer_Destined_BloodlineLVL+BloodlinePower9LVLBonus",
+      Formula=Formula("Sorcerer_Destined_BloodlineLVL+BloodlinePower9LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlinePower15LVL",
       },
-      Formula="Sorcerer_Destined_BloodlineLVL+BloodlinePower15LVLBonus",
+      Formula=Formula("Sorcerer_Destined_BloodlineLVL+BloodlinePower15LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlinePower20LVL",
       },
-      Formula="Sorcerer_Destined_BloodlineLVL+BloodlinePower20LVLBonus",
+      Formula=Formula("Sorcerer_Destined_BloodlineLVL+BloodlinePower20LVLBonus"),
     },
   },
   Abilities={
@@ -68754,91 +68991,91 @@ DefineAbility({
       Variables={
         "Sorcerer Bloodline Feat",
       },
-      Formula="BloodlineFeatCount",
+      Formula=Formula("BloodlineFeatCount"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlineLVL",
       },
-      Formula="BloodlineLVL",
+      Formula=Formula("BloodlineLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlineProgressionLVL",
       },
-      Formula="BloodlineProgressionLVL",
+      Formula=Formula("BloodlineProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlineArcana1",
       },
-      Formula="if(Sorcerer_CF_BloodlineArcana==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineArcana==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlineSpells1",
       },
-      Formula="if(Sorcerer_CF_BloodlineSpells==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineSpells==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlineClassSkill1",
       },
-      Formula="if(Sorcerer_CF_BloodlineClassSkill==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineClassSkill==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlinePowers",
       },
-      Formula="if(Sorcerer_CF_BloodlinePowers==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePowers==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlinePower1",
       },
-      Formula="if(Sorcerer_CF_BloodlinePower1==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePower1==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlinePower3",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Destined_BloodlineProgressionLVL>=3),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Destined_BloodlineProgressionLVL>=3),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlinePower9",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Destined_BloodlineProgressionLVL>=9),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Destined_BloodlineProgressionLVL>=9),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlinePower15",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Destined_BloodlineProgressionLVL>=15),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Destined_BloodlineProgressionLVL>=15),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlinePower20",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Destined_BloodlineProgressionLVL>=20),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Destined_BloodlineProgressionLVL>=20),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Destined_BloodlinePower1Times",
       },
-      Formula="BloodlinePowerTimes+BloodlinePower1TimesBonus",
+      Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
         Replace=false,
@@ -68878,56 +69115,56 @@ DefineAbility({
       Variables={
         "Sorcerer_BloodlineFeat_ArcaneStrike",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_Diehard",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_Endurance",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_Leadership",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_LightningReflexes",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_MaximizeSpell",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_SkillFocusKnowledgeHistory",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_WeaponFocus",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -69221,15 +69458,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Destined_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DestinedTouchOfDestiny_Bonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -69238,7 +69475,7 @@ DefineAbility({
       Variables={
         "Sorcerer_DestinedTouchOfDestiny_Bonus",
       },
-      Formula="max(Sorcerer_Destined_BloodlinePower1LVL/2,1)",
+      Formula=Formula("max(Sorcerer_Destined_BloodlinePower1LVL/2,1)"),
     },
   },
   Types={
@@ -69290,11 +69527,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Destined_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DestinedFated_LuckBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -69303,7 +69540,7 @@ DefineAbility({
       Variables={
         "Sorcerer_DestinedFated_LuckBonus",
       },
-      Formula="floor((Sorcerer_Destined_BloodlinePower3LVL+1)/4)",
+      Formula=Formula("floor((Sorcerer_Destined_BloodlinePower3LVL+1)/4)"),
     },
   },
   Types={
@@ -69367,11 +69604,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Destined_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DestinedItWasMeantToBe_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -69380,7 +69617,7 @@ DefineAbility({
       Variables={
         "Sorcerer_DestinedItWasMeantToBe_Times",
       },
-      Formula="floor((Sorcerer_Destined_BloodlinePower9LVL-1)/8)",
+      Formula=Formula("floor((Sorcerer_Destined_BloodlinePower9LVL-1)/8)"),
     },
   },
   Types={
@@ -69430,11 +69667,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Destined_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Destined_WithinReach_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -69443,7 +69680,7 @@ DefineAbility({
       Variables={
         "Sorcerer_Destined_WithinReach_Times",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -69493,11 +69730,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Destined_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DestinedDestinyRealized_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -69506,7 +69743,7 @@ DefineAbility({
       Variables={
         "Sorcerer_DestinedDestinyRealized_Times",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -69542,75 +69779,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Draconic_BloodlineLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlineProgressionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlineArcana1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlineSpells1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlinePowers",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower15",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower20",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlineClassSkill1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_Description",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -69619,42 +69856,42 @@ DefineAbility({
       Variables={
         "Draconic Bloodline Type",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower1LVL",
       },
-      Formula="Sorcerer_Draconic_BloodlineLVL+BloodlinePower1LVLBonus",
+      Formula=Formula("Sorcerer_Draconic_BloodlineLVL+BloodlinePower1LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower3LVL",
       },
-      Formula="Sorcerer_Draconic_BloodlineLVL+BloodlinePower3LVLBonus",
+      Formula=Formula("Sorcerer_Draconic_BloodlineLVL+BloodlinePower3LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower9LVL",
       },
-      Formula="Sorcerer_Draconic_BloodlineLVL+BloodlinePower9LVLBonus",
+      Formula=Formula("Sorcerer_Draconic_BloodlineLVL+BloodlinePower9LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower15LVL",
       },
-      Formula="Sorcerer_Draconic_BloodlineLVL+BloodlinePower15LVLBonus",
+      Formula=Formula("Sorcerer_Draconic_BloodlineLVL+BloodlinePower15LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower20LVL",
       },
-      Formula="Sorcerer_Draconic_BloodlineLVL+BloodlinePower20LVLBonus",
+      Formula=Formula("Sorcerer_Draconic_BloodlineLVL+BloodlinePower20LVLBonus"),
     },
   },
   Abilities={
@@ -69787,91 +70024,91 @@ DefineAbility({
       Variables={
         "Sorcerer Bloodline Feat",
       },
-      Formula="BloodlineFeatCount",
+      Formula=Formula("BloodlineFeatCount"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlineLVL",
       },
-      Formula="BloodlineLVL",
+      Formula=Formula("BloodlineLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlineProgressionLVL",
       },
-      Formula="BloodlineProgressionLVL",
+      Formula=Formula("BloodlineProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlineArcana1",
       },
-      Formula="if(Sorcerer_CF_BloodlineArcana==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineArcana==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlineSpells1",
       },
-      Formula="if(Sorcerer_CF_BloodlineSpells==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineSpells==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlineClassSkill1",
       },
-      Formula="if(Sorcerer_CF_BloodlineClassSkill==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineClassSkill==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePowers",
       },
-      Formula="if(Sorcerer_CF_BloodlinePowers==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePowers==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower1",
       },
-      Formula="if(Sorcerer_CF_BloodlinePower1==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePower1==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower3",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=3),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=3),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower9",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=9),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=9),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower15",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=15),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=15),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower20",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=20),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=20),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower1Times",
       },
-      Formula="BloodlinePowerTimes+BloodlinePower1TimesBonus",
+      Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
         Replace=false,
@@ -69911,56 +70148,56 @@ DefineAbility({
       Variables={
         "Sorcerer_BloodlineFeat_BlindFight",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_GreatFortitude",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_ImprovedInitiative",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_PowerAttack",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_QuickenSpell",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_SkillFocusFly",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_SkillFocusKnowledgeArcana",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_Toughness",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -70244,19 +70481,19 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicDamageType_Acid",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDamageType_Cold",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDamageType_Electricity",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDamageType_Fire",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -70441,15 +70678,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Draconic_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Draconic_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_GenericClaws_SizeBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -70458,7 +70695,7 @@ DefineAbility({
       Variables={
         "Sorcerer_GenericClaws_SizeBonus",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower1LVL"] >= 7)
@@ -70470,7 +70707,7 @@ DefineAbility({
       Variables={
         "DAMAGESIZE",
       },
-      Formula="Sorcerer_GenericClaws_SizeBonus",
+      Formula=Formula("Sorcerer_GenericClaws_SizeBonus"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower1LVL"] >= 7)
@@ -70530,31 +70767,31 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Draconic_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDamageType_Cold",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDamageType_Fire",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDamageType_Electricity",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDamageType_Acid",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDragonResistances_ResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDragonResistances_NaturalArmorBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -70563,7 +70800,7 @@ DefineAbility({
       Variables={
         "AC",
       },
-      Formula="Sorcerer_DraconicDragonResistances_NaturalArmorBonus",
+      Formula=Formula("Sorcerer_DraconicDragonResistances_NaturalArmorBonus"),
       Type={
         Name="NaturalArmor",
         Replace=false,
@@ -70575,21 +70812,21 @@ DefineAbility({
       Variables={
         "Sorcerer_DraconicDragonResistances_ResistanceBonus",
       },
-      Formula="min(floor((Sorcerer_Draconic_BloodlinePower3LVL-3)/6)+1,2)*5",
+      Formula=Formula("min(floor((Sorcerer_Draconic_BloodlinePower3LVL-3)/6)+1,2)*5"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicDragonResistances_NaturalArmorBonus",
       },
-      Formula="min(floor((Sorcerer_Draconic_BloodlinePower3LVL-3)/6)+1,3)",
+      Formula=Formula("min(floor((Sorcerer_Draconic_BloodlinePower3LVL-3)/6)+1,3)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicDragonResistances_NaturalArmorBonus",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower3LVL"] >= 15)
@@ -70601,7 +70838,7 @@ DefineAbility({
       Variables={
         "AcidResistanceBonus",
       },
-      Formula="Sorcerer_DraconicDragonResistances_ResistanceBonus",
+      Formula=Formula("Sorcerer_DraconicDragonResistances_ResistanceBonus"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_DraconicDamageType_Acid"] >= 1)
@@ -70613,7 +70850,7 @@ DefineAbility({
       Variables={
         "ElectricityResistanceBonus",
       },
-      Formula="Sorcerer_DraconicDragonResistances_ResistanceBonus",
+      Formula=Formula("Sorcerer_DraconicDragonResistances_ResistanceBonus"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_DraconicDamageType_Electricity"] >= 1)
@@ -70625,7 +70862,7 @@ DefineAbility({
       Variables={
         "FireResistanceBonus",
       },
-      Formula="Sorcerer_DraconicDragonResistances_ResistanceBonus",
+      Formula=Formula("Sorcerer_DraconicDragonResistances_ResistanceBonus"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_DraconicDamageType_Fire"] >= 1)
@@ -70637,7 +70874,7 @@ DefineAbility({
       Variables={
         "ColdResistanceBonus",
       },
-      Formula="Sorcerer_DraconicDragonResistances_ResistanceBonus",
+      Formula=Formula("Sorcerer_DraconicDragonResistances_ResistanceBonus"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_DraconicDamageType_Cold"] >= 1)
@@ -70835,43 +71072,43 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Draconic_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDamageType_Cold",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDamageType_Fire",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDamageType_Electricity",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDamageType_Acid",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicBreathWeapon_Line",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicBreathWeapon_Cone",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicBreathWeapon_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicBreathWeapon_Dice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicBreathWeapon_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -70880,21 +71117,21 @@ DefineAbility({
       Variables={
         "Sorcerer_DraconicBreathWeapon_Dice",
       },
-      Formula="Sorcerer_Draconic_BloodlinePower9LVL",
+      Formula=Formula("Sorcerer_Draconic_BloodlinePower9LVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicBreathWeapon_DC",
       },
-      Formula="10+(Sorcerer_Draconic_BloodlinePower9LVL/2)+CHA",
+      Formula=Formula("10+(Sorcerer_Draconic_BloodlinePower9LVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicBreathWeapon_Times",
       },
-      Formula="max(floor((Sorcerer_Draconic_BloodlinePower9LVL-11)/3),1)",
+      Formula=Formula("max(floor((Sorcerer_Draconic_BloodlinePower9LVL-11)/3),1)"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower9LVL"] >= 9)
@@ -70942,11 +71179,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Draconic_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Maneuverability",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -70955,7 +71192,7 @@ DefineAbility({
       Variables={
         "Maneuverability",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Type={
         Name="Base",
         Replace=false,
@@ -71006,23 +71243,23 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Draconic_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDamageType_Cold",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDamageType_Fire",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDamageType_Electricity",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_DraconicDamageType_Acid",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -71031,7 +71268,7 @@ DefineAbility({
       Variables={
         "BlindsenseRange",
       },
-      Formula="60",
+      Formula=Formula("60"),
       Type={
         Name="Base",
         Replace=false,
@@ -71133,7 +71370,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Black",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -71142,21 +71379,21 @@ DefineAbility({
       Variables={
         "Sorcerer_DraconicBloodlineChoice_Black",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicBreathWeapon_Line",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicDamageType_Acid",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -71203,7 +71440,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Blue",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -71212,21 +71449,21 @@ DefineAbility({
       Variables={
         "Sorcerer_DraconicBloodlineChoice_Blue",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicBreathWeapon_Line",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicDamageType_Electricity",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -71273,7 +71510,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Green",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -71282,21 +71519,21 @@ DefineAbility({
       Variables={
         "Sorcerer_DraconicBloodlineChoice_Green",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicBreathWeapon_Cone",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicDamageType_Acid",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -71343,7 +71580,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Red",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -71352,21 +71589,21 @@ DefineAbility({
       Variables={
         "Sorcerer_DraconicBloodlineChoice_Red",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicBreathWeapon_Cone",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicDamageType_Fire",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -71413,7 +71650,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_White",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -71422,21 +71659,21 @@ DefineAbility({
       Variables={
         "Sorcerer_DraconicBloodlineChoice_White",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicBreathWeapon_Cone",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicDamageType_Cold",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -71483,7 +71720,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Brass",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -71492,21 +71729,21 @@ DefineAbility({
       Variables={
         "Sorcerer_DraconicBloodlineChoice_Brass",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicBreathWeapon_Line",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicDamageType_Fire",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -71553,7 +71790,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Bronze",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -71562,21 +71799,21 @@ DefineAbility({
       Variables={
         "Sorcerer_DraconicBloodlineChoice_Bronze",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicBreathWeapon_Line",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicDamageType_Electricity",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -71623,7 +71860,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Copper",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -71632,21 +71869,21 @@ DefineAbility({
       Variables={
         "Sorcerer_DraconicBloodlineChoice_Copper",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicBreathWeapon_Line",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicDamageType_Acid",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -71693,7 +71930,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Gold",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -71702,21 +71939,21 @@ DefineAbility({
       Variables={
         "Sorcerer_DraconicBloodlineChoice_Gold",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicBreathWeapon_Cone",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicDamageType_Fire",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -71763,7 +72000,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_DraconicBloodlineChoice_Silver",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -71772,21 +72009,21 @@ DefineAbility({
       Variables={
         "Sorcerer_DraconicBloodlineChoice_Silver",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicBreathWeapon_Cone",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_DraconicDamageType_Cold",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -71843,75 +72080,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Elemental_BloodlineLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlineProgressionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlineArcana1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlineSpells1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlinePowers",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower15",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower20",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlineClassSkill1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_Description",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -71920,42 +72157,42 @@ DefineAbility({
       Variables={
         "Elemental Bloodline Type",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlinePower1LVL",
       },
-      Formula="Sorcerer_Elemental_BloodlineLVL+BloodlinePower1LVLBonus",
+      Formula=Formula("Sorcerer_Elemental_BloodlineLVL+BloodlinePower1LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlinePower3LVL",
       },
-      Formula="Sorcerer_Elemental_BloodlineLVL+BloodlinePower3LVLBonus",
+      Formula=Formula("Sorcerer_Elemental_BloodlineLVL+BloodlinePower3LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlinePower9LVL",
       },
-      Formula="Sorcerer_Elemental_BloodlineLVL+BloodlinePower9LVLBonus",
+      Formula=Formula("Sorcerer_Elemental_BloodlineLVL+BloodlinePower9LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlinePower15LVL",
       },
-      Formula="Sorcerer_Elemental_BloodlineLVL+BloodlinePower15LVLBonus",
+      Formula=Formula("Sorcerer_Elemental_BloodlineLVL+BloodlinePower15LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlinePower20LVL",
       },
-      Formula="Sorcerer_Elemental_BloodlineLVL+BloodlinePower20LVLBonus",
+      Formula=Formula("Sorcerer_Elemental_BloodlineLVL+BloodlinePower20LVLBonus"),
     },
   },
   Abilities={
@@ -72088,91 +72325,91 @@ DefineAbility({
       Variables={
         "Sorcerer Bloodline Feat",
       },
-      Formula="BloodlineFeatCount",
+      Formula=Formula("BloodlineFeatCount"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlineLVL",
       },
-      Formula="BloodlineLVL",
+      Formula=Formula("BloodlineLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlineProgressionLVL",
       },
-      Formula="BloodlineProgressionLVL",
+      Formula=Formula("BloodlineProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlineArcana1",
       },
-      Formula="if(Sorcerer_CF_BloodlineArcana==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineArcana==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlineSpells1",
       },
-      Formula="if(Sorcerer_CF_BloodlineSpells==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineSpells==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlineClassSkill1",
       },
-      Formula="if(Sorcerer_CF_BloodlineClassSkill==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineClassSkill==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlinePowers",
       },
-      Formula="if(Sorcerer_CF_BloodlinePowers==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePowers==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlinePower1",
       },
-      Formula="if(Sorcerer_CF_BloodlinePower1==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePower1==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlinePower3",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Elemental_BloodlineProgressionLVL>=3),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Elemental_BloodlineProgressionLVL>=3),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlinePower9",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Elemental_BloodlineProgressionLVL>=9),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Elemental_BloodlineProgressionLVL>=9),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlinePower15",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Elemental_BloodlineProgressionLVL>=15),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Elemental_BloodlineProgressionLVL>=15),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlinePower20",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Elemental_BloodlineProgressionLVL>=20),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Elemental_BloodlineProgressionLVL>=20),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Elemental_BloodlinePower1Times",
       },
-      Formula="BloodlinePowerTimes+BloodlinePower1TimesBonus",
+      Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
         Replace=false,
@@ -72212,56 +72449,56 @@ DefineAbility({
       Variables={
         "Sorcerer_BloodlineFeat_Dodge",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_EmpowerSpell",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_GreatFortitude",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_ImprovedInitiative",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_LightningReflexes",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_PowerAttack",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_SkillFocusKnowledgePlanes",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_WeaponFinesse",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -72854,15 +73091,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Elemental_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Elemental_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_ElementalElementalRay_DamageBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -72871,7 +73108,7 @@ DefineAbility({
       Variables={
         "Sorcerer_ElementalElementalRay_DamageBonus",
       },
-      Formula="Sorcerer_Elemental_BloodlinePower1LVL/2",
+      Formula=Formula("Sorcerer_Elemental_BloodlinePower1LVL/2"),
     },
   },
   Types={
@@ -72916,11 +73153,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Elemental_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_ElementalElementalResistance_ResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -72929,14 +73166,14 @@ DefineAbility({
       Variables={
         "Sorcerer_ElementalElementalResistance_ResistanceBonus",
       },
-      Formula="min(floor((Sorcerer_Elemental_BloodlinePower3LVL+3)/6),2)*10",
+      Formula=Formula("min(floor((Sorcerer_Elemental_BloodlinePower3LVL+3)/6),2)*10"),
     },
     {
       Category="VAR",
       Variables={
         "AcidResistanceBonus",
       },
-      Formula="Sorcerer_ElementalElementalResistance_ResistanceBonus",
+      Formula=Formula("Sorcerer_ElementalElementalResistance_ResistanceBonus"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Earth"] >= 1)
@@ -72948,7 +73185,7 @@ DefineAbility({
       Variables={
         "ColdResistanceBonus",
       },
-      Formula="Sorcerer_ElementalElementalResistance_ResistanceBonus",
+      Formula=Formula("Sorcerer_ElementalElementalResistance_ResistanceBonus"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Water"] >= 1)
@@ -72960,7 +73197,7 @@ DefineAbility({
       Variables={
         "ElectricityResistanceBonus",
       },
-      Formula="Sorcerer_ElementalElementalResistance_ResistanceBonus",
+      Formula=Formula("Sorcerer_ElementalElementalResistance_ResistanceBonus"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Air"] >= 1)
@@ -72972,7 +73209,7 @@ DefineAbility({
       Variables={
         "FireResistanceBonus",
       },
-      Formula="Sorcerer_ElementalElementalResistance_ResistanceBonus",
+      Formula=Formula("Sorcerer_ElementalElementalResistance_ResistanceBonus"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
@@ -73086,19 +73323,19 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Elemental_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_ElementalElementalBlast_Dice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_ElementalElementalBlast_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_ElementalElementalBlast_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -73107,21 +73344,21 @@ DefineAbility({
       Variables={
         "Sorcerer_ElementalElementalBlast_Dice",
       },
-      Formula="Sorcerer_Elemental_BloodlinePower9LVL",
+      Formula=Formula("Sorcerer_Elemental_BloodlinePower9LVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_ElementalElementalBlast_DC",
       },
-      Formula="10+(Sorcerer_Elemental_BloodlinePower9LVL/2)+CHA",
+      Formula=Formula("10+(Sorcerer_Elemental_BloodlinePower9LVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_ElementalElementalBlast_Times",
       },
-      Formula="max(floor((Sorcerer_Elemental_BloodlinePower9LVL-11)/3),1)",
+      Formula=Formula("max(floor((Sorcerer_Elemental_BloodlinePower9LVL-11)/3),1)"),
     },
   },
   Types={
@@ -73166,7 +73403,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Elemental_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -73262,7 +73499,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Elemental_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -73346,7 +73583,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_ElementalBloodlineChoice_Air",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -73355,7 +73592,7 @@ DefineAbility({
       Variables={
         "Sorcerer_ElementalBloodlineChoice_Air",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -73406,7 +73643,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_ElementalBloodlineChoice_Earth",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -73415,7 +73652,7 @@ DefineAbility({
       Variables={
         "Sorcerer_ElementalBloodlineChoice_Earth",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -73466,7 +73703,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_ElementalBloodlineChoice_Fire",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -73475,7 +73712,7 @@ DefineAbility({
       Variables={
         "Sorcerer_ElementalBloodlineChoice_Fire",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -73526,7 +73763,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_ElementalBloodlineChoice_Water",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -73535,7 +73772,7 @@ DefineAbility({
       Variables={
         "Sorcerer_ElementalBloodlineChoice_Water",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -73605,7 +73842,7 @@ DefineAbility({
   Definitions={
     {
       Name="Maneuverability",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -73614,7 +73851,7 @@ DefineAbility({
       Variables={
         "Maneuverability",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Type={
         Name="Base",
         Replace=false,
@@ -73639,7 +73876,7 @@ DefineAbility({
       Variables={
         "TYPE.Walk",
       },
-      Formula="30",
+      Formula=Formula("30"),
     },
   },
 })
@@ -73666,75 +73903,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Fey_BloodlineLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlineProgressionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlineArcana1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlineSpells1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlinePowers",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlinePower1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlinePower3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlinePower9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlinePower15",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlinePower20",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlineClassSkill1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_Description",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -73743,35 +73980,35 @@ DefineAbility({
       Variables={
         "Sorcerer_Fey_BloodlinePower1LVL",
       },
-      Formula="Sorcerer_Fey_BloodlineLVL+BloodlinePower1LVLBonus",
+      Formula=Formula("Sorcerer_Fey_BloodlineLVL+BloodlinePower1LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlinePower3LVL",
       },
-      Formula="Sorcerer_Fey_BloodlineLVL+BloodlinePower3LVLBonus",
+      Formula=Formula("Sorcerer_Fey_BloodlineLVL+BloodlinePower3LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlinePower9LVL",
       },
-      Formula="Sorcerer_Fey_BloodlineLVL+BloodlinePower9LVLBonus",
+      Formula=Formula("Sorcerer_Fey_BloodlineLVL+BloodlinePower9LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlinePower15LVL",
       },
-      Formula="Sorcerer_Fey_BloodlineLVL+BloodlinePower15LVLBonus",
+      Formula=Formula("Sorcerer_Fey_BloodlineLVL+BloodlinePower15LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlinePower20LVL",
       },
-      Formula="Sorcerer_Fey_BloodlineLVL+BloodlinePower20LVLBonus",
+      Formula=Formula("Sorcerer_Fey_BloodlineLVL+BloodlinePower20LVLBonus"),
     },
   },
   Abilities={
@@ -73904,91 +74141,91 @@ DefineAbility({
       Variables={
         "Sorcerer Bloodline Feat",
       },
-      Formula="BloodlineFeatCount",
+      Formula=Formula("BloodlineFeatCount"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlineLVL",
       },
-      Formula="BloodlineLVL",
+      Formula=Formula("BloodlineLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlineProgressionLVL",
       },
-      Formula="BloodlineProgressionLVL",
+      Formula=Formula("BloodlineProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlineArcana1",
       },
-      Formula="if(Sorcerer_CF_BloodlineArcana==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineArcana==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlineSpells1",
       },
-      Formula="if(Sorcerer_CF_BloodlineSpells==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineSpells==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlineClassSkill1",
       },
-      Formula="if(Sorcerer_CF_BloodlineClassSkill==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineClassSkill==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlinePowers",
       },
-      Formula="if(Sorcerer_CF_BloodlinePowers==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePowers==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlinePower1",
       },
-      Formula="if(Sorcerer_CF_BloodlinePower1==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePower1==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlinePower3",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Fey_BloodlineProgressionLVL>=3),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Fey_BloodlineProgressionLVL>=3),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlinePower9",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Fey_BloodlineProgressionLVL>=9),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Fey_BloodlineProgressionLVL>=9),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlinePower15",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Fey_BloodlineProgressionLVL>=15),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Fey_BloodlineProgressionLVL>=15),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlinePower20",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Fey_BloodlineProgressionLVL>=20),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Fey_BloodlineProgressionLVL>=20),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Fey_BloodlinePower1Times",
       },
-      Formula="BloodlinePowerTimes+BloodlinePower1TimesBonus",
+      Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
         Replace=false,
@@ -74028,56 +74265,56 @@ DefineAbility({
       Variables={
         "Sorcerer_BloodlineFeat_Dodge",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_ImprovedInitiative",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_LightningReflexes",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_Mobility",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_PointBlankShot",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_PreciseShot",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_QuickenSpell",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_SkillFocusKnowledgeNature",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -74296,7 +74533,7 @@ DefineAbility({
       Variables={
         "SUBSCHOOL.Compulsion",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -74372,11 +74609,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Fey_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Fey_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -74418,7 +74655,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Fey_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -74472,11 +74709,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Fey_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_FeyFleetingGlance_Time",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -74485,7 +74722,7 @@ DefineAbility({
       Variables={
         "Sorcerer_FeyFleetingGlance_Time",
       },
-      Formula="Sorcerer_Fey_BloodlinePower9LVL",
+      Formula=Formula("Sorcerer_Fey_BloodlinePower9LVL"),
     },
   },
   Types={
@@ -74527,7 +74764,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Fey_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -74583,11 +74820,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Fey_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_FeySoulOfTheFey_CasterLevel",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -74596,7 +74833,7 @@ DefineAbility({
       Variables={
         "Sorcerer_FeySoulOfTheFey_CasterLevel",
       },
-      Formula="Sorcerer_Fey_BloodlinePower20LVL",
+      Formula=Formula("Sorcerer_Fey_BloodlinePower20LVL"),
     },
   },
   Abilities={
@@ -74644,75 +74881,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Infernal_BloodlineLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlineProgressionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlineArcana1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlineSpells1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlinePowers",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower15",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower20",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlineClassSkill1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_Description",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -74721,35 +74958,35 @@ DefineAbility({
       Variables={
         "Sorcerer_Infernal_BloodlinePower1LVL",
       },
-      Formula="Sorcerer_Infernal_BloodlineLVL+BloodlinePower1LVLBonus",
+      Formula=Formula("Sorcerer_Infernal_BloodlineLVL+BloodlinePower1LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlinePower3LVL",
       },
-      Formula="Sorcerer_Infernal_BloodlineLVL+BloodlinePower3LVLBonus",
+      Formula=Formula("Sorcerer_Infernal_BloodlineLVL+BloodlinePower3LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlinePower9LVL",
       },
-      Formula="Sorcerer_Infernal_BloodlineLVL+BloodlinePower9LVLBonus",
+      Formula=Formula("Sorcerer_Infernal_BloodlineLVL+BloodlinePower9LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlinePower15LVL",
       },
-      Formula="Sorcerer_Infernal_BloodlineLVL+BloodlinePower15LVLBonus",
+      Formula=Formula("Sorcerer_Infernal_BloodlineLVL+BloodlinePower15LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlinePower20LVL",
       },
-      Formula="Sorcerer_Infernal_BloodlineLVL+BloodlinePower20LVLBonus",
+      Formula=Formula("Sorcerer_Infernal_BloodlineLVL+BloodlinePower20LVLBonus"),
     },
   },
   Abilities={
@@ -74882,91 +75119,91 @@ DefineAbility({
       Variables={
         "Sorcerer Bloodline Feat",
       },
-      Formula="BloodlineFeatCount",
+      Formula=Formula("BloodlineFeatCount"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlineLVL",
       },
-      Formula="BloodlineLVL",
+      Formula=Formula("BloodlineLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlineProgressionLVL",
       },
-      Formula="BloodlineProgressionLVL",
+      Formula=Formula("BloodlineProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlineArcana1",
       },
-      Formula="if(Sorcerer_CF_BloodlineArcana==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineArcana==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlineSpells1",
       },
-      Formula="if(Sorcerer_CF_BloodlineSpells==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineSpells==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlineClassSkill1",
       },
-      Formula="if(Sorcerer_CF_BloodlineClassSkill==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineClassSkill==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlinePowers",
       },
-      Formula="if(Sorcerer_CF_BloodlinePowers==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePowers==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlinePower1",
       },
-      Formula="if(Sorcerer_CF_BloodlinePower1==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePower1==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlinePower3",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Infernal_BloodlineProgressionLVL>=3),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Infernal_BloodlineProgressionLVL>=3),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlinePower9",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Infernal_BloodlineProgressionLVL>=9),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Infernal_BloodlineProgressionLVL>=9),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlinePower15",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Infernal_BloodlineProgressionLVL>=15),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Infernal_BloodlineProgressionLVL>=15),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlinePower20",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Infernal_BloodlineProgressionLVL>=20),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Infernal_BloodlineProgressionLVL>=20),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Infernal_BloodlinePower1Times",
       },
-      Formula="BloodlinePowerTimes+BloodlinePower1TimesBonus",
+      Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
         Replace=false,
@@ -75006,56 +75243,56 @@ DefineAbility({
       Variables={
         "Sorcerer_BloodlineFeat_BlindFight",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_CombatExpertise",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_Deceitful",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_ExtendSpell",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_ImprovedDisarm",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_IronWill",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_SkillFocusKnowledgePlanes",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_SpellPenetration",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -75366,15 +75603,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Infernal_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Infernal_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_InfernalCorruptingTouch_Duration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -75383,7 +75620,7 @@ DefineAbility({
       Variables={
         "Sorcerer_InfernalCorruptingTouch_Duration",
       },
-      Formula="max(Sorcerer_Infernal_BloodlinePower1LVL/2,1)",
+      Formula=Formula("max(Sorcerer_Infernal_BloodlinePower1LVL/2,1)"),
     },
   },
   Types={
@@ -75443,15 +75680,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Infernal_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_InfernalInfernalResistances_ResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_InfernalInfernalResistances_SaveBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -75460,21 +75697,21 @@ DefineAbility({
       Variables={
         "Sorcerer_InfernalInfernalResistances_ResistanceBonus",
       },
-      Formula="min(floor((Sorcerer_Infernal_BloodlinePower3LVL+3)/6),2)*5",
+      Formula=Formula("min(floor((Sorcerer_Infernal_BloodlinePower3LVL+3)/6),2)*5"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_InfernalInfernalResistances_SaveBonus",
       },
-      Formula="min(floor((Sorcerer_Infernal_BloodlinePower3LVL+3)/6),2)*2",
+      Formula=Formula("min(floor((Sorcerer_Infernal_BloodlinePower3LVL+3)/6),2)*2"),
     },
     {
       Category="VAR",
       Variables={
         "FireResistanceBonus",
       },
-      Formula="Sorcerer_InfernalInfernalResistances_ResistanceBonus",
+      Formula=Formula("Sorcerer_InfernalInfernalResistances_ResistanceBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -75541,23 +75778,23 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Infernal_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_InfernalHellfire_Dice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_InfernalHellfire_Duration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_InfernalHellfire_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_InfernalHellfire_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -75566,28 +75803,28 @@ DefineAbility({
       Variables={
         "Sorcerer_InfernalHellfire_Dice",
       },
-      Formula="Sorcerer_Infernal_BloodlinePower9LVL",
+      Formula=Formula("Sorcerer_Infernal_BloodlinePower9LVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_InfernalHellfire_Duration",
       },
-      Formula="Sorcerer_Infernal_BloodlinePower9LVL",
+      Formula=Formula("Sorcerer_Infernal_BloodlinePower9LVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_InfernalHellfire_DC",
       },
-      Formula="10+(Sorcerer_Infernal_BloodlinePower9LVL/2)+CHA",
+      Formula=Formula("10+(Sorcerer_Infernal_BloodlinePower9LVL/2)+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_InfernalHellfire_Times",
       },
-      Formula="max(floor((Sorcerer_Infernal_BloodlinePower9LVL-11)/3),1)",
+      Formula=Formula("max(floor((Sorcerer_Infernal_BloodlinePower9LVL-11)/3),1)"),
     },
   },
   Types={
@@ -75629,11 +75866,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Infernal_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Maneuverability",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -75642,7 +75879,7 @@ DefineAbility({
       Variables={
         "Maneuverability",
       },
-      Formula="3",
+      Formula=Formula("3"),
     },
   },
   Types={
@@ -75695,11 +75932,11 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Infernal_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_InfernalPowerOfThePit_VisionDistance",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -75708,14 +75945,14 @@ DefineAbility({
       Variables={
         "Sorcerer_InfernalPowerOfThePit_VisionDistance",
       },
-      Formula="60",
+      Formula=Formula("60"),
     },
     {
       Category="VAR",
       Variables={
         "AcidResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -75727,7 +75964,7 @@ DefineAbility({
       Variables={
         "ColdResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -75784,75 +76021,75 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Undead_BloodlineLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlineProgressionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlineArcana1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlineSpells1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlinePowers",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlinePower1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlinePower3",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlinePower9",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlinePower15",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlinePower20",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlineClassSkill1",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_Description",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -75861,35 +76098,35 @@ DefineAbility({
       Variables={
         "Sorcerer_Undead_BloodlinePower1LVL",
       },
-      Formula="Sorcerer_Undead_BloodlineLVL+BloodlinePower1LVLBonus",
+      Formula=Formula("Sorcerer_Undead_BloodlineLVL+BloodlinePower1LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlinePower3LVL",
       },
-      Formula="Sorcerer_Undead_BloodlineLVL+BloodlinePower3LVLBonus",
+      Formula=Formula("Sorcerer_Undead_BloodlineLVL+BloodlinePower3LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlinePower9LVL",
       },
-      Formula="Sorcerer_Undead_BloodlineLVL+BloodlinePower9LVLBonus",
+      Formula=Formula("Sorcerer_Undead_BloodlineLVL+BloodlinePower9LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlinePower15LVL",
       },
-      Formula="Sorcerer_Undead_BloodlineLVL+BloodlinePower15LVLBonus",
+      Formula=Formula("Sorcerer_Undead_BloodlineLVL+BloodlinePower15LVLBonus"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlinePower20LVL",
       },
-      Formula="Sorcerer_Undead_BloodlineLVL+BloodlinePower20LVLBonus",
+      Formula=Formula("Sorcerer_Undead_BloodlineLVL+BloodlinePower20LVLBonus"),
     },
   },
   Abilities={
@@ -76022,91 +76259,91 @@ DefineAbility({
       Variables={
         "Sorcerer Bloodline Feat",
       },
-      Formula="BloodlineFeatCount",
+      Formula=Formula("BloodlineFeatCount"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlineLVL",
       },
-      Formula="BloodlineLVL",
+      Formula=Formula("BloodlineLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlineProgressionLVL",
       },
-      Formula="BloodlineProgressionLVL",
+      Formula=Formula("BloodlineProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlineArcana1",
       },
-      Formula="if(Sorcerer_CF_BloodlineArcana==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineArcana==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlineSpells1",
       },
-      Formula="if(Sorcerer_CF_BloodlineSpells==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineSpells==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlineClassSkill1",
       },
-      Formula="if(Sorcerer_CF_BloodlineClassSkill==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlineClassSkill==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlinePowers",
       },
-      Formula="if(Sorcerer_CF_BloodlinePowers==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePowers==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlinePower1",
       },
-      Formula="if(Sorcerer_CF_BloodlinePower1==0,1,0)",
+      Formula=Formula("if(Sorcerer_CF_BloodlinePower1==0,1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlinePower3",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Undead_BloodlineProgressionLVL>=3),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Undead_BloodlineProgressionLVL>=3),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlinePower9",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Undead_BloodlineProgressionLVL>=9),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Undead_BloodlineProgressionLVL>=9),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlinePower15",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Undead_BloodlineProgressionLVL>=15),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Undead_BloodlineProgressionLVL>=15),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlinePower20",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Undead_BloodlineProgressionLVL>=20),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Undead_BloodlineProgressionLVL>=20),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Undead_BloodlinePower1Times",
       },
-      Formula="BloodlinePowerTimes+BloodlinePower1TimesBonus",
+      Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
         Replace=false,
@@ -76146,56 +76383,56 @@ DefineAbility({
       Variables={
         "Sorcerer_BloodlineFeat_CombatCasting",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_Diehard",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_Endurance",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_IronWill",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_SkillFocusKnowledgeReligion",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_SpellFocus",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_StillSpell",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_BloodlineFeat_Toughness",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
 })
@@ -76507,19 +76744,19 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Undead_BloodlinePower1LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_Undead_BloodlinePower1Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_UndeadGraveTouch_Duration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_UndeadGraveTouch_AffectedHD",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -76528,14 +76765,14 @@ DefineAbility({
       Variables={
         "Sorcerer_UndeadGraveTouch_Duration",
       },
-      Formula="max(Sorcerer_Undead_BloodlinePower1LVL/2,1)",
+      Formula=Formula("max(Sorcerer_Undead_BloodlinePower1LVL/2,1)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_UndeadGraveTouch_AffectedHD",
       },
-      Formula="Sorcerer_Undead_BloodlinePower1LVL",
+      Formula=Formula("Sorcerer_Undead_BloodlinePower1LVL"),
     },
   },
   Types={
@@ -76581,15 +76818,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Undead_BloodlinePower3LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_UndeadDeathsGift_ResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_UndeadDeathsGift_DR",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -76599,14 +76836,14 @@ DefineAbility({
         "Sorcerer_UndeadDeathsGift_ResistanceBonus",
         "Sorcerer_UndeadDeathsGift_DR",
       },
-      Formula="min(floor((Sorcerer_Undead_BloodlinePower3LVL+3)/6),2)*5",
+      Formula=Formula("min(floor((Sorcerer_Undead_BloodlinePower3LVL+3)/6),2)*5"),
     },
     {
       Category="VAR",
       Variables={
         "ColdResistanceBonus",
       },
-      Formula="Sorcerer_UndeadDeathsGift_ResistanceBonus",
+      Formula=Formula("Sorcerer_UndeadDeathsGift_ResistanceBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -76683,19 +76920,19 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Undead_BloodlinePower9LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_UndeadGraspOfTheDead_Dice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_UndeadGraspOfTheDead_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_UndeadGraspOfTheDead_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -76704,21 +76941,21 @@ DefineAbility({
       Variables={
         "Sorcerer_UndeadGraspOfTheDead_Dice",
       },
-      Formula="Sorcerer_Undead_BloodlinePower9LVL",
+      Formula=Formula("Sorcerer_Undead_BloodlinePower9LVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_UndeadGraspOfTheDead_DC",
       },
-      Formula="10+Sorcerer_Undead_BloodlinePower9LVL/2+CHA",
+      Formula=Formula("10+Sorcerer_Undead_BloodlinePower9LVL/2+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_UndeadGraspOfTheDead_Times",
       },
-      Formula="max(floor((Sorcerer_Undead_BloodlinePower9LVL-11)/3),1)",
+      Formula=Formula("max(floor((Sorcerer_Undead_BloodlinePower9LVL-11)/3),1)"),
     },
   },
   Types={
@@ -76781,15 +77018,15 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Undead_BloodlinePower15LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_UndeadIncorporealForm_Duration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Sorcerer_UndeadIncorporealForm_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -76798,14 +77035,14 @@ DefineAbility({
       Variables={
         "Sorcerer_UndeadIncorporealForm_Duration",
       },
-      Formula="Sorcerer_Undead_BloodlinePower15LVL",
+      Formula=Formula("Sorcerer_Undead_BloodlinePower15LVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_UndeadIncorporealForm_Times",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -76851,7 +77088,7 @@ DefineAbility({
   Definitions={
     {
       Name="Sorcerer_Undead_BloodlinePower20LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -77000,7 +77237,7 @@ DefineAbility({
   Definitions={
     {
       Name="ArcaneBondLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -77009,14 +77246,14 @@ DefineAbility({
       Variables={
         "Arcane Bond",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "ArcaneBondLVL",
       },
-      Formula="WizardLVL",
+      Formula=Formula("WizardLVL"),
     },
   },
   Types={
@@ -77067,7 +77304,7 @@ DefineAbility({
   Definitions={
     {
       Name="OppositionalSchool",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -77076,7 +77313,7 @@ DefineAbility({
       Variables={
         "OppositionalSchool",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Abilities={
@@ -77141,7 +77378,7 @@ DefineAbility({
       Variables={
         "Wizard Bonus Feat",
       },
-      Formula="WizardLvl/5",
+      Formula=Formula("WizardLvl/5"),
     },
   },
   Types={
@@ -77188,7 +77425,7 @@ DefineAbility({
   Definitions={
     {
       Name="FamiliarMasterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -77197,7 +77434,7 @@ DefineAbility({
       Variables={
         "FamiliarMasterLVL",
       },
-      Formula="ArcaneBondLVL",
+      Formula=Formula("ArcaneBondLVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -77260,7 +77497,7 @@ ModifyAbility({
       Variables={
         "Wizard Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["WizardLvl"] >= 5)
@@ -77284,7 +77521,7 @@ ModifyAbility({
       Variables={
         "Wizard Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["WizardLvl"] >= 10)
@@ -77308,7 +77545,7 @@ ModifyAbility({
       Variables={
         "Wizard Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["WizardLvl"] >= 15)
@@ -77332,7 +77569,7 @@ ModifyAbility({
       Variables={
         "Wizard Bonus Feat",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return (character.Variables["WizardLvl"] >= 20)
@@ -77360,7 +77597,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ArcaneSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -77369,7 +77606,7 @@ ModifyAbility({
       Variables={
         "ArcaneSchoolLVL",
       },
-      Formula="WizardLVL",
+      Formula=Formula("WizardLVL"),
     },
   },
 })
@@ -77382,7 +77619,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ArcaneSchoolProgressionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -77391,7 +77628,7 @@ ModifyAbility({
       Variables={
         "ArcaneSchoolProgressionLVL",
       },
-      Formula="WizardLVL",
+      Formula=Formula("WizardLVL"),
     },
   },
 })
@@ -77404,7 +77641,7 @@ ModifyAbility({
   Definitions={
     {
       Name="ArcaneSchoolPowerTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -77413,7 +77650,7 @@ ModifyAbility({
       Variables={
         "ArcaneSchoolPowerTimes",
       },
-      Formula="INT+3",
+      Formula=Formula("INT+3"),
     },
   },
 })
@@ -77430,11 +77667,11 @@ DefineAbility({
   Definitions={
     {
       Name="AbjurationSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AbjurationProgressionSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -77443,91 +77680,91 @@ DefineAbility({
       Variables={
         "Arcane Opposition School",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Abjurer;LEVEL=1",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Abjurer;LEVEL=2",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Abjurer;LEVEL=3",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Abjurer;LEVEL=4",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Abjurer;LEVEL=5",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Abjurer;LEVEL=6",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Abjurer;LEVEL=7",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Abjurer;LEVEL=8",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Abjurer;LEVEL=9",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "AbjurationSchoolLVL",
       },
-      Formula="ArcaneSchoolLVL",
+      Formula=Formula("ArcaneSchoolLVL"),
     },
     {
       Category="VAR",
       Variables={
         "AbjurationProgressionSchoolLVL",
       },
-      Formula="ArcaneSchoolProgressionLVL",
+      Formula=Formula("ArcaneSchoolProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "DisallowWizardArcaneSchoolArchetype",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -77600,11 +77837,11 @@ DefineAbility({
   Definitions={
     {
       Name="ConjurationSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ConjurationProgressionSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -77613,91 +77850,91 @@ DefineAbility({
       Variables={
         "Arcane Opposition School",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Conjurer;LEVEL=1",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Conjurer;LEVEL=2",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Conjurer;LEVEL=3",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Conjurer;LEVEL=4",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Conjurer;LEVEL=5",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Conjurer;LEVEL=6",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Conjurer;LEVEL=7",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Conjurer;LEVEL=8",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Conjurer;LEVEL=9",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "ConjurationSchoolLVL",
       },
-      Formula="ArcaneSchoolLVL",
+      Formula=Formula("ArcaneSchoolLVL"),
     },
     {
       Category="VAR",
       Variables={
         "ConjurationProgressionSchoolLVL",
       },
-      Formula="ArcaneSchoolProgressionLVL",
+      Formula=Formula("ArcaneSchoolProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "DisallowWizardArcaneSchoolArchetype",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -77767,11 +78004,11 @@ DefineAbility({
   Definitions={
     {
       Name="DivinationSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DivinationProgressionSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -77780,91 +78017,91 @@ DefineAbility({
       Variables={
         "Arcane Opposition School",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Diviner;LEVEL=1",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Diviner;LEVEL=2",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Diviner;LEVEL=3",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Diviner;LEVEL=4",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Diviner;LEVEL=5",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Diviner;LEVEL=6",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Diviner;LEVEL=7",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Diviner;LEVEL=8",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Diviner;LEVEL=9",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "DivinationSchoolLVL",
       },
-      Formula="ArcaneSchoolLVL",
+      Formula=Formula("ArcaneSchoolLVL"),
     },
     {
       Category="VAR",
       Variables={
         "DivinationProgressionSchoolLVL",
       },
-      Formula="ArcaneSchoolProgressionLVL",
+      Formula=Formula("ArcaneSchoolProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "DisallowWizardArcaneSchoolArchetype",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -77934,11 +78171,11 @@ DefineAbility({
   Definitions={
     {
       Name="EnchantmentSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="EnchantmentProgressionSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -77947,91 +78184,91 @@ DefineAbility({
       Variables={
         "Arcane Opposition School",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Enchanter;LEVEL=1",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Enchanter;LEVEL=2",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Enchanter;LEVEL=3",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Enchanter;LEVEL=4",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Enchanter;LEVEL=5",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Enchanter;LEVEL=6",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Enchanter;LEVEL=7",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Enchanter;LEVEL=8",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Enchanter;LEVEL=9",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "EnchantmentSchoolLVL",
       },
-      Formula="ArcaneSchoolLVL",
+      Formula=Formula("ArcaneSchoolLVL"),
     },
     {
       Category="VAR",
       Variables={
         "EnchantmentProgressionSchoolLVL",
       },
-      Formula="ArcaneSchoolProgressionLVL",
+      Formula=Formula("ArcaneSchoolProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "DisallowWizardArcaneSchoolArchetype",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -78101,11 +78338,11 @@ DefineAbility({
   Definitions={
     {
       Name="EvocationSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="EvocationProgressionSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -78114,91 +78351,91 @@ DefineAbility({
       Variables={
         "Arcane Opposition School",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Evoker;LEVEL=1",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Evoker;LEVEL=2",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Evoker;LEVEL=3",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Evoker;LEVEL=4",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Evoker;LEVEL=5",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Evoker;LEVEL=6",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Evoker;LEVEL=7",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Evoker;LEVEL=8",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Evoker;LEVEL=9",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "EvocationSchoolLVL",
       },
-      Formula="ArcaneSchoolLVL",
+      Formula=Formula("ArcaneSchoolLVL"),
     },
     {
       Category="VAR",
       Variables={
         "EvocationProgressionSchoolLVL",
       },
-      Formula="ArcaneSchoolProgressionLVL",
+      Formula=Formula("ArcaneSchoolProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "DisallowWizardArcaneSchoolArchetype",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -78268,11 +78505,11 @@ DefineAbility({
   Definitions={
     {
       Name="IllusionSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="IllusionProgressionSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -78281,91 +78518,91 @@ DefineAbility({
       Variables={
         "Arcane Opposition School",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Illusionist;LEVEL=1",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Illusionist;LEVEL=2",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Illusionist;LEVEL=3",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Illusionist;LEVEL=4",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Illusionist;LEVEL=5",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Illusionist;LEVEL=6",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Illusionist;LEVEL=7",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Illusionist;LEVEL=8",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Illusionist;LEVEL=9",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "IllusionSchoolLVL",
       },
-      Formula="ArcaneSchoolLVL",
+      Formula=Formula("ArcaneSchoolLVL"),
     },
     {
       Category="VAR",
       Variables={
         "IllusionProgressionSchoolLVL",
       },
-      Formula="ArcaneSchoolProgressionLVL",
+      Formula=Formula("ArcaneSchoolProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "DisallowWizardArcaneSchoolArchetype",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -78435,11 +78672,11 @@ DefineAbility({
   Definitions={
     {
       Name="NecromancySchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="NecromancyProgressionSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -78448,91 +78685,91 @@ DefineAbility({
       Variables={
         "Arcane Opposition School",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Necromancer;LEVEL=1",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Necromancer;LEVEL=2",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Necromancer;LEVEL=3",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Necromancer;LEVEL=4",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Necromancer;LEVEL=5",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Necromancer;LEVEL=6",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Necromancer;LEVEL=7",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Necromancer;LEVEL=8",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Necromancer;LEVEL=9",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "NecromancySchoolLVL",
       },
-      Formula="ArcaneSchoolLVL",
+      Formula=Formula("ArcaneSchoolLVL"),
     },
     {
       Category="VAR",
       Variables={
         "NecromancyProgressionSchoolLVL",
       },
-      Formula="ArcaneSchoolProgressionLVL",
+      Formula=Formula("ArcaneSchoolProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "DisallowWizardArcaneSchoolArchetype",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -78602,11 +78839,11 @@ DefineAbility({
   Definitions={
     {
       Name="TransmutationSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="TransmutationProgressionSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -78615,91 +78852,91 @@ DefineAbility({
       Variables={
         "Arcane Opposition School",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Transmuter;LEVEL=1",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Transmuter;LEVEL=2",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Transmuter;LEVEL=3",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Transmuter;LEVEL=4",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Transmuter;LEVEL=5",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Transmuter;LEVEL=6",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Transmuter;LEVEL=7",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Transmuter;LEVEL=8",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="SPECIALTYSPELLKNOWN",
       Variables={
         "CLASS=Transmuter;LEVEL=9",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "TransmutationSchoolLVL",
       },
-      Formula="ArcaneSchoolLVL",
+      Formula=Formula("ArcaneSchoolLVL"),
     },
     {
       Category="VAR",
       Variables={
         "TransmutationProgressionSchoolLVL",
       },
-      Formula="ArcaneSchoolProgressionLVL",
+      Formula=Formula("ArcaneSchoolProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "DisallowWizardArcaneSchoolArchetype",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -78769,11 +79006,11 @@ DefineAbility({
   Definitions={
     {
       Name="UniversalSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="UniversalProgressionSchoolLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -78782,21 +79019,21 @@ DefineAbility({
       Variables={
         "UniversalSchoolLVL",
       },
-      Formula="ArcaneSchoolLVL",
+      Formula=Formula("ArcaneSchoolLVL"),
     },
     {
       Category="VAR",
       Variables={
         "UniversalProgressionSchoolLVL",
       },
-      Formula="ArcaneSchoolProgressionLVL",
+      Formula=Formula("ArcaneSchoolProgressionLVL"),
     },
     {
       Category="VAR",
       Variables={
         "OppositionalSchool",
       },
-      Formula="-2",
+      Formula=Formula("-2"),
     },
   },
   Abilities={
@@ -78863,7 +79100,7 @@ DefineAbility({
       Variables={
         "OppositionalSchool",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -78899,7 +79136,7 @@ DefineAbility({
       Variables={
         "OppositionalSchool",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -78935,7 +79172,7 @@ DefineAbility({
       Variables={
         "OppositionalSchool",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -78971,7 +79208,7 @@ DefineAbility({
       Variables={
         "OppositionalSchool",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -79007,7 +79244,7 @@ DefineAbility({
       Variables={
         "OppositionalSchool",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -79043,7 +79280,7 @@ DefineAbility({
       Variables={
         "OppositionalSchool",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -79079,7 +79316,7 @@ DefineAbility({
       Variables={
         "OppositionalSchool",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -79115,7 +79352,7 @@ DefineAbility({
       Variables={
         "OppositionalSchool",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
     },
   },
   Types={
@@ -79493,7 +79730,7 @@ DefineAbility({
   Definitions={
     {
       Name="AbjurationResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -79502,14 +79739,14 @@ DefineAbility({
       Variables={
         "AbjurationResistanceBonus",
       },
-      Formula="5",
+      Formula=Formula("5"),
     },
     {
       Category="VAR",
       Variables={
         "AbjurationResistanceBonus",
       },
-      Formula="5",
+      Formula=Formula("5"),
       Conditions={
         function (character)
           return (character.Variables["AbjurationProgressionSchoolLVL"] >= 11)
@@ -79564,15 +79801,15 @@ DefineAbility({
   Definitions={
     {
       Name="AbjurationProtectiveWardTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AbjurationProtectiveWardDuration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AbjurationProtectiveWardBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -79581,21 +79818,21 @@ DefineAbility({
       Variables={
         "AbjurationProtectiveWardTimes",
       },
-      Formula="ArcaneSchoolPowerTimes",
+      Formula=Formula("ArcaneSchoolPowerTimes"),
     },
     {
       Category="VAR",
       Variables={
         "AbjurationProtectiveWardDuration",
       },
-      Formula="INT",
+      Formula=Formula("INT"),
     },
     {
       Category="VAR",
       Variables={
         "AbjurationProtectiveWardBonus",
       },
-      Formula="(AbjurationSchoolLVL/5)+1",
+      Formula=Formula("(AbjurationSchoolLVL/5)+1"),
     },
   },
   Types={
@@ -79633,7 +79870,7 @@ DefineAbility({
   Definitions={
     {
       Name="AbjurationEnergyAbsorption",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -79642,7 +79879,7 @@ DefineAbility({
       Variables={
         "AbjurationEnergyAbsorption",
       },
-      Formula="AbjurationSchoolLVL*3",
+      Formula=Formula("AbjurationSchoolLVL*3"),
     },
   },
   Types={
@@ -79669,7 +79906,7 @@ DefineAbility({
   Definitions={
     {
       Name="ConjurationSummonersCharmBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -79678,7 +79915,7 @@ DefineAbility({
       Variables={
         "ConjurationSummonersCharmBonus",
       },
-      Formula="max(1,ConjurationSchoolLVL/2)",
+      Formula=Formula("max(1,ConjurationSchoolLVL/2)"),
     },
   },
   Types={
@@ -79719,11 +79956,11 @@ DefineAbility({
   Definitions={
     {
       Name="ConjurationAcidDartDamageBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ConjurationAcidDartTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -79732,14 +79969,14 @@ DefineAbility({
       Variables={
         "ConjurationAcidDartDamageBonus",
       },
-      Formula="ConjurationSchoolLVL/2",
+      Formula=Formula("ConjurationSchoolLVL/2"),
     },
     {
       Category="VAR",
       Variables={
         "ConjurationAcidDartTimes",
       },
-      Formula="ArcaneSchoolPowerTimes",
+      Formula=Formula("ArcaneSchoolPowerTimes"),
     },
   },
   Types={
@@ -79780,7 +80017,7 @@ DefineAbility({
   Definitions={
     {
       Name="ConjurationDimensionalSteps",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -79789,7 +80026,7 @@ DefineAbility({
       Variables={
         "ConjurationDimensionalSteps",
       },
-      Formula="ConjurationSchoolLVL*30",
+      Formula=Formula("ConjurationSchoolLVL*30"),
     },
   },
   Types={
@@ -79817,7 +80054,7 @@ DefineAbility({
   Definitions={
     {
       Name="DivinationForwarnedBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -79826,14 +80063,14 @@ DefineAbility({
       Variables={
         "INITIATIVE",
       },
-      Formula="DivinationForwarnedBonus",
+      Formula=Formula("DivinationForwarnedBonus"),
     },
     {
       Category="VAR",
       Variables={
         "DivinationForwarnedBonus",
       },
-      Formula="max(1,DivinationSchoolLVL/2)",
+      Formula=Formula("max(1,DivinationSchoolLVL/2)"),
     },
   },
   Types={
@@ -79875,11 +80112,11 @@ DefineAbility({
   Definitions={
     {
       Name="DivinationDivinersFortuneBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DivinationDivinersFortuneTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -79888,14 +80125,14 @@ DefineAbility({
       Variables={
         "DivinationDivinersFortuneBonus",
       },
-      Formula="max(1,DivinationSchoolLVL/2)",
+      Formula=Formula("max(1,DivinationSchoolLVL/2)"),
     },
     {
       Category="VAR",
       Variables={
         "DivinationDivinersFortuneTimes",
       },
-      Formula="ArcaneSchoolPowerTimes",
+      Formula=Formula("ArcaneSchoolPowerTimes"),
     },
   },
   Types={
@@ -79942,7 +80179,7 @@ DefineAbility({
   Definitions={
     {
       Name="EnchantmentEnchantingSmileBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -79953,7 +80190,7 @@ DefineAbility({
         "Diplomacy",
         "Intimidate",
       },
-      Formula="EnchantmentEnchantingSmileBonus",
+      Formula=Formula("EnchantmentEnchantingSmileBonus"),
       Type={
         Name="Enhancement",
         Replace=false,
@@ -79965,7 +80202,7 @@ DefineAbility({
       Variables={
         "EnchantmentEnchantingSmileBonus",
       },
-      Formula="min(6,EnchantmentSchoolLVL/5+2)",
+      Formula=Formula("min(6,EnchantmentSchoolLVL/5+2)"),
     },
   },
   Types={
@@ -80007,11 +80244,11 @@ DefineAbility({
   Definitions={
     {
       Name="EnchantmentDazingTouchLimit",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="EnchantmentDazingTouchTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80020,14 +80257,14 @@ DefineAbility({
       Variables={
         "EnchantmentDazingTouchLimit",
       },
-      Formula="EnchantmentSchoolLVL",
+      Formula=Formula("EnchantmentSchoolLVL"),
     },
     {
       Category="VAR",
       Variables={
         "EnchantmentDazingTouchTimes",
       },
-      Formula="ArcaneSchoolPowerTimes",
+      Formula=Formula("ArcaneSchoolPowerTimes"),
     },
   },
   Types={
@@ -80068,7 +80305,7 @@ DefineAbility({
   Definitions={
     {
       Name="EnchantmentAuraOfDespairRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80077,7 +80314,7 @@ DefineAbility({
       Variables={
         "EnchantmentAuraOfDespairRounds",
       },
-      Formula="EnchantmentSchoolLVL",
+      Formula=Formula("EnchantmentSchoolLVL"),
     },
   },
   Types={
@@ -80105,7 +80342,7 @@ DefineAbility({
   Definitions={
     {
       Name="EvocationIntenseSpellsBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80114,7 +80351,7 @@ DefineAbility({
       Variables={
         "EvocationIntenseSpellsBonus",
       },
-      Formula="max(1,EvocationSchoolLVL/2)",
+      Formula=Formula("max(1,EvocationSchoolLVL/2)"),
     },
   },
   Types={
@@ -80165,7 +80402,7 @@ DefineAbility({
   Definitions={
     {
       Name="EvocationForceMissileTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80174,7 +80411,7 @@ DefineAbility({
       Variables={
         "EvocationForceMissileTimes",
       },
-      Formula="3+INT",
+      Formula=Formula("3+INT"),
     },
   },
   Types={
@@ -80215,7 +80452,7 @@ DefineAbility({
   Definitions={
     {
       Name="EvocationElementalWallRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80224,7 +80461,7 @@ DefineAbility({
       Variables={
         "EvocationElementalWallRounds",
       },
-      Formula="EvocationSchoolLVL",
+      Formula=Formula("EvocationSchoolLVL"),
     },
   },
   Types={
@@ -80251,7 +80488,7 @@ DefineAbility({
   Definitions={
     {
       Name="IllusionExtendedIllusionBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80260,7 +80497,7 @@ DefineAbility({
       Variables={
         "IllusionExtendedIllusionBonus",
       },
-      Formula="max(1,IllusionSchoolLVL/2)",
+      Formula=Formula("max(1,IllusionSchoolLVL/2)"),
     },
   },
   Types={
@@ -80302,11 +80539,11 @@ DefineAbility({
   Definitions={
     {
       Name="IllusionBlindingRayLimit",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="IllusionBlindingRayTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80315,14 +80552,14 @@ DefineAbility({
       Variables={
         "IllusionBlindingRayLimit",
       },
-      Formula="IllusionSchoolLVL",
+      Formula=Formula("IllusionSchoolLVL"),
     },
     {
       Category="VAR",
       Variables={
         "IllusionBlindingRayTimes",
       },
-      Formula="ArcaneSchoolPowerTimes",
+      Formula=Formula("ArcaneSchoolPowerTimes"),
     },
   },
   Types={
@@ -80363,7 +80600,7 @@ DefineAbility({
   Definitions={
     {
       Name="IllusionInvisibilityFieldRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80372,7 +80609,7 @@ DefineAbility({
       Variables={
         "IllusionInvisibilityFieldRounds",
       },
-      Formula="IllusionSchoolLVL",
+      Formula=Formula("IllusionSchoolLVL"),
     },
   },
   Types={
@@ -80407,11 +80644,11 @@ DefineAbility({
   Definitions={
     {
       Name="PowerOverUndeadTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="PowerOverUndeadLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80420,21 +80657,21 @@ DefineAbility({
       Variables={
         "Necromancer Channeling",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "PowerOverUndeadTimes",
       },
-      Formula="3+INT",
+      Formula=Formula("3+INT"),
     },
     {
       Category="VAR",
       Variables={
         "PowerOverUndeadLVL",
       },
-      Formula="NecromancySchoolLVL",
+      Formula=Formula("NecromancySchoolLVL"),
     },
   },
   Types={
@@ -80475,15 +80712,15 @@ DefineAbility({
   Definitions={
     {
       Name="NecromancyGraveTouchDuration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="NecromancyGraveTouchLimit",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="NecromancyGraveTouchTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80492,21 +80729,21 @@ DefineAbility({
       Variables={
         "NecromancyGraveTouchDuration",
       },
-      Formula="max(1,NecromancySchoolLVL/2)",
+      Formula=Formula("max(1,NecromancySchoolLVL/2)"),
     },
     {
       Category="VAR",
       Variables={
         "NecromancyGraveTouchLimit",
       },
-      Formula="NecromancySchoolLVL",
+      Formula=Formula("NecromancySchoolLVL"),
     },
     {
       Category="VAR",
       Variables={
         "NecromancyGraveTouchTimes",
       },
-      Formula="ArcaneSchoolPowerTimes",
+      Formula=Formula("ArcaneSchoolPowerTimes"),
     },
   },
   Types={
@@ -80548,11 +80785,11 @@ DefineAbility({
   Definitions={
     {
       Name="NecromancyLifeSightRange",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="NecromancyLifeSightRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80561,14 +80798,14 @@ DefineAbility({
       Variables={
         "NecromancyLifeSightRange",
       },
-      Formula="10+10*((NecromancySchoolLVL-8)/4)",
+      Formula=Formula("10+10*((NecromancySchoolLVL-8)/4)"),
     },
     {
       Category="VAR",
       Variables={
         "NecromancyLifeSightRounds",
       },
-      Formula="NecromancySchoolLVL",
+      Formula=Formula("NecromancySchoolLVL"),
     },
   },
   Types={
@@ -80603,11 +80840,11 @@ DefineAbility({
   Definitions={
     {
       Name="PowerOverUndeadCommandDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="PowerOverUndeadCommandHD",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80616,14 +80853,14 @@ DefineAbility({
       Variables={
         "PowerOverUndeadCommandDC",
       },
-      Formula="10+PowerOverUndeadLVL/2+CHA",
+      Formula=Formula("10+PowerOverUndeadLVL/2+CHA"),
     },
     {
       Category="VAR",
       Variables={
         "PowerOverUndeadCommandHD",
       },
-      Formula="PowerOverUndeadLVL",
+      Formula=Formula("PowerOverUndeadLVL"),
     },
   },
   Abilities={
@@ -80666,7 +80903,7 @@ DefineAbility({
   Definitions={
     {
       Name="PowerOverUndeadTurnDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80675,7 +80912,7 @@ DefineAbility({
       Variables={
         "PowerOverUndeadTurnDC",
       },
-      Formula="10+PowerOverUndeadLVL/2+CHA",
+      Formula=Formula("10+PowerOverUndeadLVL/2+CHA"),
     },
   },
   Abilities={
@@ -80712,11 +80949,11 @@ DefineAbility({
   Definitions={
     {
       Name="TransmutationPhysicalEnhancementBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="TransmutationPhysicalEnhancementProgression",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80725,14 +80962,14 @@ DefineAbility({
       Variables={
         "TransmutationPhysicalEnhancementProgression",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "TransmutationPhysicalEnhancementProgression",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["TransmutationProgressionSchoolLVL"] >= 20)
@@ -80744,7 +80981,7 @@ DefineAbility({
       Variables={
         "TransmutationPhysicalEnhancementBonus",
       },
-      Formula="min(5,(TransmutationSchoolLVL/5)+1)",
+      Formula=Formula("min(5,(TransmutationSchoolLVL/5)+1)"),
     },
   },
   Abilities={
@@ -80783,7 +81020,7 @@ DefineAbility({
           Variables={
             "STR",
           },
-          Formula="TransmutationPhysicalEnhancementBonus",
+          Formula=Formula("TransmutationPhysicalEnhancementBonus"),
           Type={
             Name="Enhancement",
             Replace=false,
@@ -80811,7 +81048,7 @@ DefineAbility({
           Variables={
             "DEX",
           },
-          Formula="TransmutationPhysicalEnhancementBonus",
+          Formula=Formula("TransmutationPhysicalEnhancementBonus"),
           Type={
             Name="Enhancement",
             Replace=false,
@@ -80839,7 +81076,7 @@ DefineAbility({
           Variables={
             "CON",
           },
-          Formula="TransmutationPhysicalEnhancementBonus",
+          Formula=Formula("TransmutationPhysicalEnhancementBonus"),
           Type={
             Name="Enhancement",
             Replace=false,
@@ -80887,11 +81124,11 @@ DefineAbility({
   Definitions={
     {
       Name="TransmutationTelekineticFistBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="TransmutationTelekineticFistTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80900,14 +81137,14 @@ DefineAbility({
       Variables={
         "TransmutationTelekineticFistBonus",
       },
-      Formula="TransmutationSchoolLVL/2",
+      Formula=Formula("TransmutationSchoolLVL/2"),
     },
     {
       Category="VAR",
       Variables={
         "TransmutationTelekineticFistTimes",
       },
-      Formula="ArcaneSchoolPowerTimes",
+      Formula=Formula("ArcaneSchoolPowerTimes"),
     },
   },
   Types={
@@ -80948,7 +81185,7 @@ DefineAbility({
   Definitions={
     {
       Name="TransmutationChangeShapeRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -80957,7 +81194,7 @@ DefineAbility({
       Variables={
         "TransmutationChangeShapeRounds",
       },
-      Formula="TransmutationSchoolLVL",
+      Formula=Formula("TransmutationSchoolLVL"),
     },
   },
   Types={
@@ -80997,7 +81234,7 @@ DefineAbility({
   Definitions={
     {
       Name="UniversalHandOfTheApprenticeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -81006,7 +81243,7 @@ DefineAbility({
       Variables={
         "UniversalHandOfTheApprenticeTimes",
       },
-      Formula="ArcaneSchoolPowerTimes",
+      Formula=Formula("ArcaneSchoolPowerTimes"),
     },
   },
   Types={
@@ -81046,7 +81283,7 @@ DefineAbility({
   Definitions={
     {
       Name="UniversalMetamagicMasteryTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -81055,7 +81292,7 @@ DefineAbility({
       Variables={
         "UniversalMetamagicMasteryTimes",
       },
-      Formula="(UniversalSchoolLVL-8)/2+1",
+      Formula=Formula("(UniversalSchoolLVL-8)/2+1"),
     },
   },
   Types={
@@ -81403,12 +81640,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (true)
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((true))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.450",
   ClassSkills={
     "LIST",
@@ -81423,12 +81660,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseWeaponproficiency(function (character, weapon)
-      return (not character.IsProficientWith(weapon) and weapon.IsType("Simple"))
+  Choice={
+    Choose=ChooseWeaponProficiency(function (character, weapon)
+      return ((not (character.IsProficientWith(weapon)) and (((weapon.IsType("Simple"))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   AutomaticProficiencies={
     {
       Kind="Weapon",
@@ -81499,27 +81736,27 @@ ModifyAbility({
   Definitions={
     {
       Name="RacialStatStr",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RacialStatDex",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RacialStatCon",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RacialStatInt",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RacialStatWis",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RacialStatCha",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -81532,11 +81769,11 @@ ModifyAbility({
   Definitions={
     {
       Name="GauntletOS",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="UnarmedLethal",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -81573,14 +81810,14 @@ DefineAbility({
       Variables={
         "GauntletOS",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "UnarmedLethal",
       },
-      Formula="GauntletOS",
+      Formula=Formula("GauntletOS"),
     },
   },
 })
@@ -81722,7 +81959,7 @@ ModifyAbility({
   Definitions={
     {
       Name="UncannyDodgeLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -81844,35 +82081,35 @@ DefineAbility({
   Definitions={
     {
       Name="RayAttackRange",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RayAttackBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RayDamageDice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RayDamageSize",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RayDamageBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RayThreatRange",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RayCritMult",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AttackBonusSize",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -81881,21 +82118,21 @@ DefineAbility({
       Variables={
         "RayCritMult",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
     {
       Category="VAR",
       Variables={
         "RayAttackRange",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
     {
       Category="VAR",
       Variables={
         "RayAttackBonus",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -81909,14 +82146,14 @@ DefineAbility({
       Variables={
         "RayThreatRange",
       },
-      Formula="20",
+      Formula=Formula("20"),
     },
     {
       Category="VAR",
       Variables={
         "RayThreatRange",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -81930,14 +82167,14 @@ DefineAbility({
       Variables={
         "RayAttackBonus",
       },
-      Formula="BAB+DEX+AttackBonusSize",
+      Formula=Formula("BAB+DEX+AttackBonusSize"),
     },
     {
       Category="VAR",
       Variables={
         "AttackBonusSize",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Conditions={
         function (character)
           return character.Size == "F"
@@ -81949,7 +82186,7 @@ DefineAbility({
       Variables={
         "AttackBonusSize",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Conditions={
         function (character)
           return character.Size == "D"
@@ -81961,7 +82198,7 @@ DefineAbility({
       Variables={
         "AttackBonusSize",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Conditions={
         function (character)
           return character.Size == "T"
@@ -81973,7 +82210,7 @@ DefineAbility({
       Variables={
         "AttackBonusSize",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return character.Size == "S"
@@ -81985,7 +82222,7 @@ DefineAbility({
       Variables={
         "AttackBonusSize",
       },
-      Formula="0",
+      Formula=Formula("0"),
       Conditions={
         function (character)
           return character.Size == "M"
@@ -81997,7 +82234,7 @@ DefineAbility({
       Variables={
         "AttackBonusSize",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return character.Size == "L"
@@ -82009,7 +82246,7 @@ DefineAbility({
       Variables={
         "AttackBonusSize",
       },
-      Formula="-2",
+      Formula=Formula("-2"),
       Conditions={
         function (character)
           return character.Size == "H"
@@ -82021,7 +82258,7 @@ DefineAbility({
       Variables={
         "AttackBonusSize",
       },
-      Formula="-4",
+      Formula=Formula("-4"),
       Conditions={
         function (character)
           return character.Size == "G"
@@ -82033,7 +82270,7 @@ DefineAbility({
       Variables={
         "AttackBonusSize",
       },
-      Formula="-8",
+      Formula=Formula("-8"),
       Conditions={
         function (character)
           return character.Size == "C"
@@ -83085,7 +83322,7 @@ DefineAbility({
       Variables={
         "Simple Weapon Proficiency Choice",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -83324,11 +83561,11 @@ DefineAbility({
   Definitions={
     {
       Name="UncannyDodgeFlankingLevel",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="UncannyDodgeLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Abilities={
@@ -83422,7 +83659,7 @@ DefineAbility({
       Variables={
         "UncannyDodgeFlankingLevel",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Type={
         Name="OnceOnly",
         Replace=false,
@@ -83533,7 +83770,7 @@ DefineAbility({
   Definitions={
     {
       Name="TrapSenseBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -83585,11 +83822,11 @@ DefineAbility({
   Definitions={
     {
       Name="WildEmpathy",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="WildEmpathyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -83598,7 +83835,7 @@ DefineAbility({
       Variables={
         "WildEmpathy",
       },
-      Formula="WildEmpathyLVL+CHA",
+      Formula=Formula("WildEmpathyLVL+CHA"),
     },
   },
   Types={
@@ -83635,7 +83872,7 @@ DefineAbility({
   Definitions={
     {
       Name="FavoredTerrainPool",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -83644,14 +83881,14 @@ DefineAbility({
       Variables={
         "Favored Terrain",
       },
-      Formula="FavoredTerrainPool",
+      Formula=Formula("FavoredTerrainPool"),
     },
     {
       Category="ABILITYPOOL",
       Variables={
         "Favored Terrain Bonus",
       },
-      Formula="max(0,FavoredTerrainPool-1)",
+      Formula=Formula("max(0,FavoredTerrainPool-1)"),
     },
   },
   Types={
@@ -83687,19 +83924,19 @@ DefineAbility({
   Definitions={
     {
       Name="SneakAttackDieSize",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SneakAttackDice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SneakAttackLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="RogueSneakAttackLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -83708,7 +83945,7 @@ DefineAbility({
       Variables={
         "SneakAttackDieSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -83720,7 +83957,7 @@ DefineAbility({
       Variables={
         "SneakAttackDice",
       },
-      Formula="(RogueSneakAttackLVL+1)/2",
+      Formula=Formula("(RogueSneakAttackLVL+1)/2"),
     },
   },
   Types={
@@ -83758,11 +83995,11 @@ DefineAbility({
   Definitions={
     {
       Name="DeathAttackDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DeathAttackDuration",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -83771,7 +84008,7 @@ DefineAbility({
       Variables={
         "DeathAttackDC",
       },
-      Formula="10+INT",
+      Formula=Formula("10+INT"),
     },
   },
   Types={
@@ -83796,7 +84033,7 @@ DefineAbility({
   Definitions={
     {
       Name="SlipperymindTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -83819,11 +84056,11 @@ DefineAbility({
   Definitions={
     {
       Name="AuraChaosLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AlignmentAuraLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -83832,7 +84069,7 @@ DefineAbility({
       Variables={
         "AuraChaosLVL",
       },
-      Formula="AlignmentAuraLVL",
+      Formula=Formula("AlignmentAuraLVL"),
     },
   },
   Types={
@@ -83858,11 +84095,11 @@ DefineAbility({
   Definitions={
     {
       Name="AuraEvilLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AlignmentAuraLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -83871,7 +84108,7 @@ DefineAbility({
       Variables={
         "AuraEvilLVL",
       },
-      Formula="AlignmentAuraLVL",
+      Formula=Formula("AlignmentAuraLVL"),
     },
   },
   Types={
@@ -83897,11 +84134,11 @@ DefineAbility({
   Definitions={
     {
       Name="AuraGoodLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AlignmentAuraLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -83910,7 +84147,7 @@ DefineAbility({
       Variables={
         "AuraGoodLVL",
       },
-      Formula="AlignmentAuraLVL",
+      Formula=Formula("AlignmentAuraLVL"),
     },
   },
   Types={
@@ -83936,11 +84173,11 @@ DefineAbility({
   Definitions={
     {
       Name="AuraLawLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AlignmentAuraLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -83949,7 +84186,7 @@ DefineAbility({
       Variables={
         "AuraLawLVL",
       },
-      Formula="AlignmentAuraLVL",
+      Formula=Formula("AlignmentAuraLVL"),
     },
   },
   Types={
@@ -83991,7 +84228,7 @@ DefineAbility({
   Definitions={
     {
       Name="PrestigeClassChannelEnergyLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -84000,21 +84237,21 @@ DefineAbility({
       Variables={
         "ClericChannelEnergyLVL",
       },
-      Formula="PrestigeClassChannelEnergyLVL",
+      Formula=Formula("PrestigeClassChannelEnergyLVL"),
     },
     {
       Category="VAR",
       Variables={
         "PaladinChannelLVL",
       },
-      Formula="PrestigeClassChannelEnergyLVL",
+      Formula=Formula("PrestigeClassChannelEnergyLVL"),
     },
     {
       Category="VAR",
       Variables={
         "PowerOverUndeadLVL",
       },
-      Formula="PrestigeClassChannelEnergyLVL",
+      Formula=Formula("PrestigeClassChannelEnergyLVL"),
     },
   },
   Types={
@@ -84043,7 +84280,7 @@ DefineAbility({
       Variables={
         "ClericChannelEnergyTimes",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -84070,7 +84307,7 @@ DefineAbility({
       Variables={
         "LayOnHandsTimes",
       },
-      Formula="4",
+      Formula=Formula("4"),
     },
   },
   Types={
@@ -84096,7 +84333,7 @@ DefineAbility({
       Variables={
         "PowerOverUndeadTimes",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -84113,7 +84350,7 @@ DefineAbility({
   Definitions={
     {
       Name="USECMB",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -84122,7 +84359,7 @@ DefineAbility({
       Variables={
         "USECMB",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Abilities={
@@ -84154,23 +84391,23 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CMD",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CMB_STAT",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CMD_ACMod",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CM_SizeMod",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -84179,7 +84416,7 @@ ModifyAbility({
       Variables={
         "CMB_STAT",
       },
-      Formula="STR",
+      Formula=Formula("STR"),
       Conditions={
         function (character)
           return character.Size > "T"
@@ -84191,7 +84428,7 @@ ModifyAbility({
       Variables={
         "CMB_STAT",
       },
-      Formula="DEX",
+      Formula=Formula("DEX"),
       Conditions={
         function (character)
           return character.Size <= "T"
@@ -84206,7 +84443,7 @@ ModifyAbility({
       Variables={
         "CMB_STAT",
       },
-      Formula="CHA",
+      Formula=Formula("CHA"),
       Conditions={
         function (character)
           return character.Size <= "T"
@@ -84227,11 +84464,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB_BAB",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CMD_BAB",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -84240,14 +84477,14 @@ ModifyAbility({
       Variables={
         "CMB_BAB",
       },
-      Formula="BAB",
+      Formula=Formula("BAB"),
     },
     {
       Category="VAR",
       Variables={
         "CMD_BAB",
       },
-      Formula="BAB",
+      Formula=Formula("BAB"),
     },
   },
 })
@@ -84263,7 +84500,7 @@ ModifyAbility({
       Variables={
         "CM_SizeMod",
       },
-      Formula="-8",
+      Formula=Formula("-8"),
       Conditions={
         function (character)
           return character.Size == "F"
@@ -84275,7 +84512,7 @@ ModifyAbility({
       Variables={
         "CM_SizeMod",
       },
-      Formula="-4",
+      Formula=Formula("-4"),
       Conditions={
         function (character)
           return character.Size == "D"
@@ -84287,7 +84524,7 @@ ModifyAbility({
       Variables={
         "CM_SizeMod",
       },
-      Formula="-2",
+      Formula=Formula("-2"),
       Conditions={
         function (character)
           return character.Size == "T"
@@ -84299,7 +84536,7 @@ ModifyAbility({
       Variables={
         "CM_SizeMod",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return character.Size == "S"
@@ -84311,7 +84548,7 @@ ModifyAbility({
       Variables={
         "CM_SizeMod",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return character.Size == "L"
@@ -84323,7 +84560,7 @@ ModifyAbility({
       Variables={
         "CM_SizeMod",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Conditions={
         function (character)
           return character.Size == "H"
@@ -84335,7 +84572,7 @@ ModifyAbility({
       Variables={
         "CM_SizeMod",
       },
-      Formula="4",
+      Formula=Formula("4"),
       Conditions={
         function (character)
           return character.Size == "G"
@@ -84347,7 +84584,7 @@ ModifyAbility({
       Variables={
         "CM_SizeMod",
       },
-      Formula="8",
+      Formula=Formula("8"),
       Conditions={
         function (character)
           return character.Size == "C"
@@ -84368,14 +84605,14 @@ ModifyAbility({
       Variables={
         "CMB",
       },
-      Formula="CMB_BAB+CMB_STAT+CM_SizeMod",
+      Formula=Formula("CMB_BAB+CMB_STAT+CM_SizeMod"),
     },
     {
       Category="VAR",
       Variables={
         "CMD",
       },
-      Formula="10+CMD_BAB+STR+DEX+CM_SizeMod+var(\"AC.CMD\")",
+      Formula=Formula("10+CMD_BAB+STR+DEX+CM_SizeMod+var(\"AC.CMD\")"),
     },
   },
 })
@@ -84388,11 +84625,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB_BullRush",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CMD_BullRush",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -84401,14 +84638,14 @@ ModifyAbility({
       Variables={
         "CMB_BullRush",
       },
-      Formula="CMB",
+      Formula=Formula("CMB"),
     },
     {
       Category="VAR",
       Variables={
         "CMD_BullRush",
       },
-      Formula="CMD",
+      Formula=Formula("CMD"),
     },
   },
 })
@@ -84421,11 +84658,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB_Disarm",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CMD_Disarm",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -84434,14 +84671,14 @@ ModifyAbility({
       Variables={
         "CMB_Disarm",
       },
-      Formula="CMB",
+      Formula=Formula("CMB"),
     },
     {
       Category="VAR",
       Variables={
         "CMD_Disarm",
       },
-      Formula="CMD",
+      Formula=Formula("CMD"),
     },
   },
 })
@@ -84454,11 +84691,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB_Grapple",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CMD_Grapple",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -84467,21 +84704,21 @@ ModifyAbility({
       Variables={
         "CMB_Grapple",
       },
-      Formula="CMB",
+      Formula=Formula("CMB"),
     },
     {
       Category="VAR",
       Variables={
         "CMD_Grapple",
       },
-      Formula="CMD",
+      Formula=Formula("CMD"),
     },
     {
       Category="VAR",
       Variables={
         "CMB_Grapple",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -84495,7 +84732,7 @@ ModifyAbility({
       Variables={
         "CMB_Grapple",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -84515,11 +84752,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB_Overrun",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CMD_Overrun",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -84528,14 +84765,14 @@ ModifyAbility({
       Variables={
         "CMB_Overrun",
       },
-      Formula="CMB",
+      Formula=Formula("CMB"),
     },
     {
       Category="VAR",
       Variables={
         "CMD_Overrun",
       },
-      Formula="CMD",
+      Formula=Formula("CMD"),
     },
   },
 })
@@ -84548,11 +84785,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB_Sunder",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CMD_Sunder",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -84561,14 +84798,14 @@ ModifyAbility({
       Variables={
         "CMB_Sunder",
       },
-      Formula="CMB",
+      Formula=Formula("CMB"),
     },
     {
       Category="VAR",
       Variables={
         "CMD_Sunder",
       },
-      Formula="CMD",
+      Formula=Formula("CMD"),
     },
   },
 })
@@ -84581,11 +84818,11 @@ ModifyAbility({
   Definitions={
     {
       Name="CMB_Trip",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CMD_Trip",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -84594,21 +84831,21 @@ ModifyAbility({
       Variables={
         "CMB_Trip",
       },
-      Formula="CMB",
+      Formula=Formula("CMB"),
     },
     {
       Category="VAR",
       Variables={
         "CMD_Trip",
       },
-      Formula="CMD",
+      Formula=Formula("CMD"),
     },
     {
       Category="VAR",
       Variables={
         "CMD_Trip",
       },
-      Formula="(LEGS-2)*2",
+      Formula=Formula("(LEGS-2)*2"),
       Conditions={
         function (character)
           return (character.Variables["LEGS"] >= 2)
@@ -84630,7 +84867,7 @@ DefineAbility({
       Variables={
         "CLASS=Wizard;LEVEL=0",
       },
-      Formula="-3",
+      Formula=Formula("-3"),
       Conditions={
         function (character)
           return 1 <= #filter(ipairs(character.ClassLevels),
@@ -84645,7 +84882,7 @@ DefineAbility({
       Variables={
         "CLASS=Wizard;LEVEL=0",
       },
-      Formula="-1",
+      Formula=Formula("-1"),
       Conditions={
         function (character)
           return 1 <= #filter(ipairs(character.ClassLevels),
@@ -84699,11 +84936,11 @@ DefineAbility({
   Definitions={
     {
       Name="ArrowEnhancement",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ArrowEnhancementLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -84712,14 +84949,14 @@ DefineAbility({
       Variables={
         "ArrowEnhancement",
       },
-      Formula="(ArrowEnhancementLVL+1)/2",
+      Formula=Formula("(ArrowEnhancementLVL+1)/2"),
     },
     {
       Category="VAR",
       Variables={
         "ArrowEnhancementLVL",
       },
-      Formula="ArcaneArcherLVL",
+      Formula=Formula("ArcaneArcherLVL"),
     },
   },
   Types={
@@ -84769,7 +85006,7 @@ DefineAbility({
   Definitions={
     {
       Name="SeekerArrowTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -84778,7 +85015,7 @@ DefineAbility({
       Variables={
         "SeekerArrowTimes",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -84812,7 +85049,7 @@ DefineAbility({
   Definitions={
     {
       Name="PhaseArrowTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -84821,7 +85058,7 @@ DefineAbility({
       Variables={
         "PhaseArrowTimes",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -84857,11 +85094,11 @@ DefineAbility({
   Definitions={
     {
       Name="HailArrowsTargets",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="HailArrowsTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -84870,14 +85107,14 @@ DefineAbility({
       Variables={
         "HailArrowsTargets",
       },
-      Formula="ArcaneArcherLVL",
+      Formula=Formula("ArcaneArcherLVL"),
     },
     {
       Category="VAR",
       Variables={
         "HailArrowsTimes",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -84911,7 +85148,7 @@ DefineAbility({
   Definitions={
     {
       Name="ArrowOfDeathDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -84920,7 +85157,7 @@ DefineAbility({
       Variables={
         "ArrowOfDeathDC",
       },
-      Formula="20+CHA",
+      Formula=Formula("20+CHA"),
     },
   },
   Types={
@@ -84992,7 +85229,7 @@ DefineAbility({
   Definitions={
     {
       Name="ImpromptuSneakTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -85001,7 +85238,7 @@ DefineAbility({
       Variables={
         "ImpromptuSneakTimes",
       },
-      Formula="(ArcaneTricksterLVL+1)/4",
+      Formula=Formula("(ArcaneTricksterLVL+1)/4"),
     },
   },
   Types={
@@ -85040,7 +85277,7 @@ DefineAbility({
   Definitions={
     {
       Name="TrickySpellsTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -85049,7 +85286,7 @@ DefineAbility({
       Variables={
         "TrickySpellsTimes",
       },
-      Formula="3",
+      Formula=Formula("3"),
       Conditions={
         function (character)
           return (character.Variables["ArcaneTricksterLVL"] >= 5)
@@ -85061,7 +85298,7 @@ DefineAbility({
       Variables={
         "TrickySpellsTimes",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["ArcaneTricksterLVL"] >= 7)
@@ -85073,7 +85310,7 @@ DefineAbility({
       Variables={
         "TrickySpellsTimes",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["ArcaneTricksterLVL"] >= 9)
@@ -85135,11 +85372,11 @@ DefineAbility({
   Definitions={
     {
       Name="SneakAttackDice",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SneakAttackDieSize",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -85148,7 +85385,7 @@ DefineAbility({
       Variables={
         "SneakAttackDieSize",
       },
-      Formula="6",
+      Formula=Formula("6"),
       Type={
         Name="Base",
         Replace=false,
@@ -85160,7 +85397,7 @@ DefineAbility({
       Variables={
         "SneakAttackDice",
       },
-      Formula="ArcaneTricksterLVL/2",
+      Formula=Formula("ArcaneTricksterLVL/2"),
     },
   },
   Abilities={
@@ -85252,7 +85489,7 @@ DefineAbility({
   Definitions={
     {
       Name="AssassinPoisonSaveBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -85261,7 +85498,7 @@ DefineAbility({
       Variables={
         "AssassinPoisonSaveBonus",
       },
-      Formula="AssassinLVL/2",
+      Formula=Formula("AssassinLVL/2"),
     },
   },
   Types={
@@ -85305,7 +85542,7 @@ DefineAbility({
         "DeathAttackDC",
         "DeathAttackDuration",
       },
-      Formula="AssassinLVL",
+      Formula=Formula("AssassinLVL"),
     },
   },
   Abilities={
@@ -85463,7 +85700,7 @@ DefineAbility({
       Variables={
         "UncannyDodgeLVL",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["AssassinLVL"] >= 2)
@@ -85475,7 +85712,7 @@ DefineAbility({
       Variables={
         "UncannyDodgeLVL",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["AssassinLVL"] >= 5)
@@ -85487,7 +85724,7 @@ DefineAbility({
       Variables={
         "UncannyDodgeFlankingLevel",
       },
-      Formula="AssassinLVL",
+      Formula=Formula("AssassinLVL"),
       Type={
         Name="EachClass",
         Replace=true,
@@ -85522,7 +85759,7 @@ DefineAbility({
       Variables={
         "SneakAttackDice",
       },
-      Formula="(AssassinLVL+1)/2",
+      Formula=Formula("(AssassinLVL+1)/2"),
     },
   },
   Abilities={
@@ -85589,7 +85826,7 @@ DefineAbility({
       Variables={
         "Dragon Disciple Bloodline",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["HasSorcererBloodline"] == 0)
@@ -85601,21 +85838,21 @@ DefineAbility({
       Variables={
         "BloodlineCasterLVL",
       },
-      Formula="DragonDiscipleLVL",
+      Formula=Formula("DragonDiscipleLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlineLVL",
       },
-      Formula="DragonDiscipleLVL",
+      Formula=Formula("DragonDiscipleLVL"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlineProgressionLVL",
       },
-      Formula="DragonDiscipleLVL",
+      Formula=Formula("DragonDiscipleLVL"),
     },
   },
   Types={
@@ -85639,7 +85876,7 @@ DefineAbility({
   Definitions={
     {
       Name="DragonDiscipleArmorBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -85648,7 +85885,7 @@ DefineAbility({
       Variables={
         "AC",
       },
-      Formula="DragonDiscipleArmorBonus",
+      Formula=Formula("DragonDiscipleArmorBonus"),
       Type={
         Name="NaturalArmor",
         Replace=false,
@@ -85660,7 +85897,7 @@ DefineAbility({
       Variables={
         "DragonDiscipleArmorBonus",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["DragonDiscipleLVL"] >= 1)
@@ -85672,7 +85909,7 @@ DefineAbility({
       Variables={
         "DragonDiscipleArmorBonus",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["DragonDiscipleLVL"] >= 4)
@@ -85684,7 +85921,7 @@ DefineAbility({
       Variables={
         "DragonDiscipleArmorBonus",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["DragonDiscipleLVL"] >= 7)
@@ -85716,7 +85953,7 @@ DefineAbility({
       Variables={
         "STR",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Conditions={
         function (character)
           return (character.Variables["DragonDiscipleLVL"] >= 2)
@@ -85728,7 +85965,7 @@ DefineAbility({
       Variables={
         "STR",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Conditions={
         function (character)
           return (character.Variables["DragonDiscipleLVL"] >= 4)
@@ -85740,7 +85977,7 @@ DefineAbility({
       Variables={
         "CON",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Conditions={
         function (character)
           return (character.Variables["DragonDiscipleLVL"] >= 6)
@@ -85752,7 +85989,7 @@ DefineAbility({
       Variables={
         "INT",
       },
-      Formula="2",
+      Formula=Formula("2"),
       Conditions={
         function (character)
           return (character.Variables["DragonDiscipleLVL"] >= 8)
@@ -85784,7 +86021,7 @@ DefineAbility({
       Variables={
         "BloodlineFeatCount",
       },
-      Formula="(DragonDiscipleLVL+1)/3",
+      Formula=Formula("(DragonDiscipleLVL+1)/3"),
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -85817,7 +86054,7 @@ DefineAbility({
       Variables={
         "DAMAGE",
       },
-      Formula="STR/2",
+      Formula=Formula("STR/2"),
     },
   },
   Abilities={
@@ -85854,7 +86091,7 @@ DefineAbility({
       Variables={
         "Sorcerer_DraconicBreathWeapon_Times",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["DragonDiscipleLVL"] >= 3)
@@ -85970,11 +86207,11 @@ DefineAbility({
   Definitions={
     {
       Name="DragonFormTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="DragonFormCL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -85983,14 +86220,14 @@ DefineAbility({
       Variables={
         "DragonFormTimes",
       },
-      Formula="(DragonDiscipleLVL-4)/3",
+      Formula=Formula("(DragonDiscipleLVL-4)/3"),
     },
     {
       Category="VAR",
       Variables={
         "DragonFormCL",
       },
-      Formula="Sorcerer_Draconic_BloodlineLVL",
+      Formula=Formula("Sorcerer_Draconic_BloodlineLVL"),
     },
   },
   Types={
@@ -86014,7 +86251,7 @@ DefineAbility({
   Definitions={
     {
       Name="DragonDisciple_Wings_SpeedBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -86023,14 +86260,14 @@ DefineAbility({
       Variables={
         "TYPE.Fly",
       },
-      Formula="DragonDisciple_Wings_SpeedBonus",
+      Formula=Formula("DragonDisciple_Wings_SpeedBonus"),
     },
     {
       Category="VAR",
       Variables={
         "DragonDisciple_Wings_SpeedBonus",
       },
-      Formula="30",
+      Formula=Formula("30"),
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_Draconic_BloodlineProgressionLVL"] >= 15)
@@ -86062,12 +86299,15 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseAbilityselection(function (character, ability)
-      return (ability.Category == "Blood of Dragons Bloodline") or (not character.HasAbility(ability) and character.IsQualifiedFor(ability) and ability.IsType("SorcererBloodlineChoice"))
+  Choice={
+    Choose=ChooseAbilitySelection(function (character, ability)
+      if ability.Category ~= "Blood of Dragons Bloodline" then
+        return false
+      end
+      return ((not (character.HasAbility(ability))) and (character.IsQualifiedFor(ability) and (((ability.IsType("SorcererBloodlineChoice"))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -86120,56 +86360,56 @@ DefineAbility({
       Variables={
         "Sorcerer_Draconic_BloodlineArcana1",
       },
-      Formula="if(SorcererLVL>=1,0,-1)",
+      Formula=Formula("if(SorcererLVL>=1,0,-1)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlineSpells1",
       },
-      Formula="if(SorcererLVL>=1,0,-1)",
+      Formula=Formula("if(SorcererLVL>=1,0,-1)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlineClassSkill1",
       },
-      Formula="if(SorcererLVL>=1,0,-1)",
+      Formula=Formula("if(SorcererLVL>=1,0,-1)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower1",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower1==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=1),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower1==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=1),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower3",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=3),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower3==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=3),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower9",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=9),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower9==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=9),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower15",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=15),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower15==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=15),1,0)"),
     },
     {
       Category="VAR",
       Variables={
         "Sorcerer_Draconic_BloodlinePower20",
       },
-      Formula="if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=20),1,0)",
+      Formula=Formula("if((Sorcerer_CF_BloodlinePower20==0&&Sorcerer_Draconic_BloodlineProgressionLVL>=20),1,0)"),
     },
   },
   Abilities={
@@ -86259,7 +86499,7 @@ DefineAbility({
   Definitions={
     {
       Name="CannyDefenseLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -86268,7 +86508,7 @@ DefineAbility({
       Variables={
         "AC",
       },
-      Formula="max(0,min(INT,CannyDefenseLVL))",
+      Formula=Formula("max(0,min(INT,CannyDefenseLVL))"),
       Conditions={
         function (character)
           local count = 0
@@ -86294,7 +86534,7 @@ DefineAbility({
       Variables={
         "CannyDefenseLVL",
       },
-      Formula="DuelistLVL",
+      Formula=Formula("DuelistLVL"),
     },
   },
   Types={
@@ -86331,7 +86571,7 @@ DefineAbility({
   Definitions={
     {
       Name="ImprovedReaction",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -86340,14 +86580,14 @@ DefineAbility({
       Variables={
         "INITIATIVE",
       },
-      Formula="ImprovedReaction",
+      Formula=Formula("ImprovedReaction"),
     },
     {
       Category="VAR",
       Variables={
         "ImprovedReaction",
       },
-      Formula="floor((DuelistLVL+4)/6)*2",
+      Formula=Formula("floor((DuelistLVL+4)/6)*2"),
     },
   },
   Types={
@@ -86421,7 +86661,7 @@ DefineAbility({
   Definitions={
     {
       Name="PreciseStrikeDamage",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -86430,7 +86670,7 @@ DefineAbility({
       Variables={
         "PreciseStrikeDamage",
       },
-      Formula="DuelistLVL",
+      Formula=Formula("DuelistLVL"),
     },
   },
   Abilities={
@@ -86460,7 +86700,7 @@ DefineAbility({
   Definitions={
     {
       Name="PreciseStrikeDamage",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -86476,7 +86716,7 @@ DefineAbility({
           Variables={
             "DAMAGE",
           },
-          Formula="PreciseStrikeDamage",
+          Formula=Formula("PreciseStrikeDamage"),
         },
       },
     },
@@ -86492,7 +86732,7 @@ DefineAbility({
   Definitions={
     {
       Name="PreciseStrikeDamage",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Types={
@@ -86508,7 +86748,7 @@ DefineAbility({
           Variables={
             "DAMAGE",
           },
-          Formula="PreciseStrikeDamage",
+          Formula=Formula("PreciseStrikeDamage"),
         },
       },
     },
@@ -86558,11 +86798,11 @@ DefineAbility({
   Definitions={
     {
       Name="ElaborateParryLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ElaborateDefense",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -86571,7 +86811,7 @@ DefineAbility({
       Variables={
         "ElaborateDefense",
       },
-      Formula="ElaborateParryLVL/3",
+      Formula=Formula("ElaborateParryLVL/3"),
     },
     {
       Category="VAR",
@@ -86579,14 +86819,14 @@ DefineAbility({
         "FightingDefensivelyACBonus",
         "TotalDefenseACBonus",
       },
-      Formula="ElaborateDefense",
+      Formula=Formula("ElaborateDefense"),
     },
     {
       Category="VAR",
       Variables={
         "ElaborateParryLVL",
       },
-      Formula="DuelistLVL",
+      Formula=Formula("DuelistLVL"),
     },
   },
   Types={
@@ -86752,7 +86992,7 @@ DefineAbility({
   Definitions={
     {
       Name="EldritchKnightBonusFeatCount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -86761,14 +87001,14 @@ DefineAbility({
       Variables={
         "Fighter Bonus Feat",
       },
-      Formula="EldritchKnightBonusFeatCount",
+      Formula=Formula("EldritchKnightBonusFeatCount"),
     },
     {
       Category="VAR",
       Variables={
         "EldritchKnightBonusFeatCount",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["EldritchKnightLVL"] >= 1)
@@ -86780,7 +87020,7 @@ DefineAbility({
       Variables={
         "EldritchKnightBonusFeatCount",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["EldritchKnightLVL"] >= 5)
@@ -86792,7 +87032,7 @@ DefineAbility({
       Variables={
         "EldritchKnightBonusFeatCount",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["EldritchKnightLVL"] >= 9)
@@ -86823,7 +87063,7 @@ DefineAbility({
       Variables={
         "FighterWeaponQualifyLVL",
       },
-      Formula="classlevel(\"Eldritch Knight\")",
+      Formula=Formula("classlevel(\"Eldritch Knight\")"),
     },
   },
   Abilities={
@@ -86904,11 +87144,11 @@ DefineAbility({
   Definitions={
     {
       Name="LoremasterSecretsLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="LoremasterSecretCount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -86917,21 +87157,21 @@ DefineAbility({
       Variables={
         "Loremaster Secret",
       },
-      Formula="LoremasterSecretCount",
+      Formula=Formula("LoremasterSecretCount"),
     },
     {
       Category="VAR",
       Variables={
         "LoremasterSecretCount",
       },
-      Formula="(LoreMasterLVL+1)/2",
+      Formula=Formula("(LoreMasterLVL+1)/2"),
     },
     {
       Category="VAR",
       Variables={
         "LoremasterSecretsLVL",
       },
-      Formula="LoremasterLVL+INT",
+      Formula=Formula("LoremasterLVL+INT"),
     },
   },
   Types={
@@ -86994,7 +87234,7 @@ DefineAbility({
       Variables={
         "TYPE=Knowledge",
       },
-      Formula="LoreMasterLVL/2",
+      Formula=Formula("LoreMasterLVL/2"),
     },
   },
   Types={
@@ -87017,7 +87257,7 @@ DefineAbility({
   Definitions={
     {
       Name="BonusLanguageCount",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -87026,14 +87266,14 @@ DefineAbility({
       Variables={
         "Add Spoken Language",
       },
-      Formula="BonusLanguageCount",
+      Formula=Formula("BonusLanguageCount"),
     },
     {
       Category="VAR",
       Variables={
         "BonusLanguageCount",
       },
-      Formula="LoremasterLVL/4",
+      Formula=Formula("LoremasterLVL/4"),
     },
   },
   Types={
@@ -87048,12 +87288,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseLang(function (character, lang)
-      return (not character.HasLanguage(lang) and character.IsQualifiedFor(lang) and lang.Type == "Spoken")
+  Choice={
+    Choose=ChooseLanguage(function (character, lang)
+      return ((not (character.HasLanguage(lang))) and (character.IsQualifiedFor(lang) and (((lang.IsType("Spoken"))))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   Types={
     "AddSpokenLanguage",
   },
@@ -87072,12 +87312,13 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseSkill(function (character, skill)
-      return (character.Ranks(skill) == 0)
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((character.Ranks(skill) == 0))
     end),
+    MaxTimes=1,
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.387",
   Conditions={
     function (character)
@@ -87093,7 +87334,7 @@ DefineAbility({
       Variables={
         "LIST",
       },
-      Formula="4",
+      Formula=Formula("4"),
     },
   },
   Types={
@@ -87123,7 +87364,7 @@ DefineAbility({
       Variables={
         "CURRENTMAX",
       },
-      Formula="3",
+      Formula=Formula("3"),
     },
   },
   Types={
@@ -87153,7 +87394,7 @@ DefineAbility({
       Variables={
         "BASE.Will",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -87183,7 +87424,7 @@ DefineAbility({
       Variables={
         "BASE.Fortitude",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -87213,7 +87454,7 @@ DefineAbility({
       Variables={
         "BASE.Reflex",
       },
-      Formula="2",
+      Formula=Formula("2"),
     },
   },
   Types={
@@ -87243,7 +87484,7 @@ DefineAbility({
       Variables={
         "BASEAB",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -87273,7 +87514,7 @@ DefineAbility({
       Variables={
         "AC",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Dodge",
         Replace=false,
@@ -87308,7 +87549,7 @@ DefineAbility({
       Variables={
         "FEAT",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -87323,12 +87564,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (character.HasClass(class) and class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((character.HasClass(class) and (((class.CanCastSpells)))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.387",
   Conditions={
     function (character)
@@ -87344,7 +87585,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=1",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -87359,12 +87600,12 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=true,
   Stackable=false,
-  Chooses={
-    ChooseClass(function (character, class)
-      return (character.HasClass(class) and class.CanCastSpells)
+  Choice={
+    Choose=ChooseClass(function (character, class)
+      return ((character.HasClass(class) and (((class.CanCastSpells)))))
     end),
   },
-  Selections="1",
+  Selections=nil,
   SourcePage="p.387",
   Conditions={
     function (character)
@@ -87380,7 +87621,7 @@ DefineAbility({
       Variables={
         "CLASS=%LIST;LEVEL=2",
       },
-      Formula="1",
+      Formula=Formula("1"),
     },
   },
   Types={
@@ -87405,11 +87646,11 @@ DefineAbility({
   Definitions={
     {
       Name="CombinedSpellsLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="CombinedSpellsMaxLevel",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -87418,7 +87659,7 @@ DefineAbility({
       Variables={
         "CombinedSpellsMaxLevel",
       },
-      Formula="(CombinedSpellsLVL+1)/2",
+      Formula=Formula("(CombinedSpellsLVL+1)/2"),
     },
   },
   Types={
@@ -87484,7 +87725,7 @@ DefineAbility({
         "BardicPerformanceDuration",
         "BardicPerformanceLVL",
       },
-      Formula="CL-2",
+      Formula=Formula("CL-2"),
     },
   },
   Abilities={
@@ -87638,7 +87879,7 @@ DefineAbility({
   Definitions={
     {
       Name="InspireActionBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -87647,7 +87888,7 @@ DefineAbility({
       Variables={
         "InspireActionBonus",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["PathfinderChroniclerLVL"] >= 9)
@@ -87808,7 +88049,7 @@ DefineAbility({
   Definitions={
     {
       Name="ShadowDancerTalentLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -87817,14 +88058,14 @@ DefineAbility({
       Variables={
         "Rogue Talent",
       },
-      Formula="ShadowDancerTalentLVL/3",
+      Formula=Formula("ShadowDancerTalentLVL/3"),
     },
     {
       Category="VAR",
       Variables={
         "ShadowDancerTalentLVL",
       },
-      Formula="ShadowdancerLVL",
+      Formula=Formula("ShadowdancerLVL"),
     },
   },
   Types={
@@ -87856,7 +88097,7 @@ DefineAbility({
   Definitions={
     {
       Name="ShadowIllusionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -87865,7 +88106,7 @@ DefineAbility({
       Variables={
         "ShadowIllusionLVL",
       },
-      Formula="ShadowdancerLVL",
+      Formula=Formula("ShadowdancerLVL"),
     },
   },
   Types={
@@ -87891,7 +88132,7 @@ DefineAbility({
   Definitions={
     {
       Name="ShadowCompanionLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -87900,7 +88141,7 @@ DefineAbility({
       Variables={
         "ShadowCompanionLVL",
       },
-      Formula="ShadowdancerLVL",
+      Formula=Formula("ShadowdancerLVL"),
     },
   },
   Types={
@@ -87933,11 +88174,11 @@ DefineAbility({
   Definitions={
     {
       Name="ShadowCallLvl",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ShadowCallTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -87946,14 +88187,14 @@ DefineAbility({
       Variables={
         "ShadowCallLvl",
       },
-      Formula="ShadowDancerLVL",
+      Formula=Formula("ShadowDancerLVL"),
     },
     {
       Category="VAR",
       Variables={
         "ShadowCallTimes",
       },
-      Formula="ShadowDancerLVL/2",
+      Formula=Formula("ShadowDancerLVL/2"),
     },
   },
   Types={
@@ -87985,11 +88226,11 @@ DefineAbility({
   Definitions={
     {
       Name="ShadowJump",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="ShadowJumpProgression",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -87998,7 +88239,7 @@ DefineAbility({
       Variables={
         "ShadowJump",
       },
-      Formula="20",
+      Formula=Formula("20"),
       Conditions={
         function (character)
           return (character.Variables["ShadowdancerLVL"] >= 4)
@@ -88010,7 +88251,7 @@ DefineAbility({
       Variables={
         "ShadowJump",
       },
-      Formula="20",
+      Formula=Formula("20"),
       Conditions={
         function (character)
           return (character.Variables["ShadowdancerLVL"] >= 6)
@@ -88022,7 +88263,7 @@ DefineAbility({
       Variables={
         "ShadowJump",
       },
-      Formula="40",
+      Formula=Formula("40"),
       Conditions={
         function (character)
           return (character.Variables["ShadowdancerLVL"] >= 8)
@@ -88034,7 +88275,7 @@ DefineAbility({
       Variables={
         "ShadowJump",
       },
-      Formula="80",
+      Formula=Formula("80"),
       Conditions={
         function (character)
           return (character.Variables["ShadowdancerLVL"] >= 10)
@@ -88124,7 +88365,7 @@ DefineAbility({
       Variables={
         "UncannyDodgeFlankingLevel",
       },
-      Formula="ShadowdancerLVL",
+      Formula=Formula("ShadowdancerLVL"),
       Type={
         Name="EachClass",
         Replace=true,
@@ -88136,7 +88377,7 @@ DefineAbility({
       Variables={
         "UncannyDodgeLVL",
       },
-      Formula="(ShadowdancerLVL+1)/3",
+      Formula=Formula("(ShadowdancerLVL+1)/3"),
     },
   },
   Abilities={
@@ -92921,19 +93162,19 @@ ModifyAbility({
   Definitions={
     {
       Name="SLA_Base_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Default_SLA_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SLA_Base_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="SLA_DC_STAT",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -92942,7 +93183,7 @@ ModifyAbility({
       Variables={
         "SLA_Base_LVL",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
@@ -92954,7 +93195,7 @@ ModifyAbility({
       Variables={
         "SLA_Base_LVL",
       },
-      Formula="TL",
+      Formula=Formula("TL"),
       Conditions={
         function (character)
           return (character.Variables["Default_SLA_LVL"] == 0)
@@ -92966,7 +93207,7 @@ ModifyAbility({
       Variables={
         "SLA_DC_STAT",
       },
-      Formula="CHA",
+      Formula=Formula("CHA"),
     },
   },
 })
@@ -93016,15 +93257,15 @@ DefineAbility({
   Definitions={
     {
       Name="Acid_Splash_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Acid_Splash_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Acid_Splash_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -93033,14 +93274,14 @@ DefineAbility({
       Variables={
         "Acid_Splash_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Acid_Splash_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -93052,7 +93293,7 @@ DefineAbility({
       Variables={
         "Acid_Splash_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -93111,15 +93352,15 @@ DefineAbility({
   Definitions={
     {
       Name="Arcane_Mark_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Arcane_Mark_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Arcane_Mark_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -93128,14 +93369,14 @@ DefineAbility({
       Variables={
         "Arcane_Mark_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Arcane_Mark_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -93147,7 +93388,7 @@ DefineAbility({
       Variables={
         "Arcane_Mark_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -93206,15 +93447,15 @@ DefineAbility({
   Definitions={
     {
       Name="Bleed_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Bleed_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Bleed_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -93223,14 +93464,14 @@ DefineAbility({
       Variables={
         "Bleed_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Bleed_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -93242,7 +93483,7 @@ DefineAbility({
       Variables={
         "Bleed_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -93301,15 +93542,15 @@ DefineAbility({
   Definitions={
     {
       Name="Create_Water_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Create_Water_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Create_Water_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -93318,14 +93559,14 @@ DefineAbility({
       Variables={
         "Create_Water_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Create_Water_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -93337,7 +93578,7 @@ DefineAbility({
       Variables={
         "Create_Water_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -93396,15 +93637,15 @@ DefineAbility({
   Definitions={
     {
       Name="Dancing_Lights_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Dancing_Lights_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Dancing_Lights_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -93413,14 +93654,14 @@ DefineAbility({
       Variables={
         "Dancing_Lights_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Dancing_Lights_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -93432,7 +93673,7 @@ DefineAbility({
       Variables={
         "Dancing_Lights_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -93491,15 +93732,15 @@ DefineAbility({
   Definitions={
     {
       Name="Daze_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Daze_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Daze_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -93508,14 +93749,14 @@ DefineAbility({
       Variables={
         "Daze_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Daze_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -93527,7 +93768,7 @@ DefineAbility({
       Variables={
         "Daze_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -93586,15 +93827,15 @@ DefineAbility({
   Definitions={
     {
       Name="Detect_Magic_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Detect_Magic_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Detect_Magic_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -93603,14 +93844,14 @@ DefineAbility({
       Variables={
         "Detect_Magic_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Detect_Magic_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -93622,7 +93863,7 @@ DefineAbility({
       Variables={
         "Detect_Magic_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -93681,15 +93922,15 @@ DefineAbility({
   Definitions={
     {
       Name="Detect_Poison_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Detect_Poison_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Detect_Poison_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -93698,14 +93939,14 @@ DefineAbility({
       Variables={
         "Detect_Poison_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Detect_Poison_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -93717,7 +93958,7 @@ DefineAbility({
       Variables={
         "Detect_Poison_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -93776,15 +94017,15 @@ DefineAbility({
   Definitions={
     {
       Name="Disrupt_Undead_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Disrupt_Undead_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Disrupt_Undead_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -93793,14 +94034,14 @@ DefineAbility({
       Variables={
         "Disrupt_Undead_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Disrupt_Undead_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -93812,7 +94053,7 @@ DefineAbility({
       Variables={
         "Disrupt_Undead_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -93871,15 +94112,15 @@ DefineAbility({
   Definitions={
     {
       Name="Flare_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Flare_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Flare_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -93888,14 +94129,14 @@ DefineAbility({
       Variables={
         "Flare_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Flare_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -93907,7 +94148,7 @@ DefineAbility({
       Variables={
         "Flare_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -93966,15 +94207,15 @@ DefineAbility({
   Definitions={
     {
       Name="Ghost_Sound_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Ghost_Sound_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Ghost_Sound_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -93983,14 +94224,14 @@ DefineAbility({
       Variables={
         "Ghost_Sound_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Ghost_Sound_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -94002,7 +94243,7 @@ DefineAbility({
       Variables={
         "Ghost_Sound_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -94061,15 +94302,15 @@ DefineAbility({
   Definitions={
     {
       Name="Guidance_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Guidance_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Guidance_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -94078,14 +94319,14 @@ DefineAbility({
       Variables={
         "Guidance_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Guidance_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -94097,7 +94338,7 @@ DefineAbility({
       Variables={
         "Guidance_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -94156,15 +94397,15 @@ DefineAbility({
   Definitions={
     {
       Name="Know_Direction_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Know_Direction_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Know_Direction_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -94173,14 +94414,14 @@ DefineAbility({
       Variables={
         "Know_Direction_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Know_Direction_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -94192,7 +94433,7 @@ DefineAbility({
       Variables={
         "Know_Direction_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -94251,15 +94492,15 @@ DefineAbility({
   Definitions={
     {
       Name="Light_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Light_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Light_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -94268,14 +94509,14 @@ DefineAbility({
       Variables={
         "Light_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Light_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -94287,7 +94528,7 @@ DefineAbility({
       Variables={
         "Light_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -94346,15 +94587,15 @@ DefineAbility({
   Definitions={
     {
       Name="Lullaby_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Lullaby_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Lullaby_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -94363,14 +94604,14 @@ DefineAbility({
       Variables={
         "Lullaby_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Lullaby_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -94382,7 +94623,7 @@ DefineAbility({
       Variables={
         "Lullaby_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -94441,15 +94682,15 @@ DefineAbility({
   Definitions={
     {
       Name="Mage_Hand_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Mage_Hand_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Mage_Hand_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -94458,14 +94699,14 @@ DefineAbility({
       Variables={
         "Mage_Hand_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Mage_Hand_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -94477,7 +94718,7 @@ DefineAbility({
       Variables={
         "Mage_Hand_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -94536,15 +94777,15 @@ DefineAbility({
   Definitions={
     {
       Name="Mending_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Mending_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Mending_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -94553,14 +94794,14 @@ DefineAbility({
       Variables={
         "Mending_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Mending_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -94572,7 +94813,7 @@ DefineAbility({
       Variables={
         "Mending_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -94631,15 +94872,15 @@ DefineAbility({
   Definitions={
     {
       Name="Message_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Message_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Message_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -94648,14 +94889,14 @@ DefineAbility({
       Variables={
         "Message_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Message_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -94667,7 +94908,7 @@ DefineAbility({
       Variables={
         "Message_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -94726,15 +94967,15 @@ DefineAbility({
   Definitions={
     {
       Name="Open_Close_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Open/Close_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Open_Close_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -94743,14 +94984,14 @@ DefineAbility({
       Variables={
         "Open/Close_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Open_Close_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -94762,7 +95003,7 @@ DefineAbility({
       Variables={
         "Open_Close_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -94821,15 +95062,15 @@ DefineAbility({
   Definitions={
     {
       Name="Prestidigitation_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Prestidigitation_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Prestidigitation_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -94838,14 +95079,14 @@ DefineAbility({
       Variables={
         "Prestidigitation_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Prestidigitation_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -94857,7 +95098,7 @@ DefineAbility({
       Variables={
         "Prestidigitation_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -94916,15 +95157,15 @@ DefineAbility({
   Definitions={
     {
       Name="Purify_Food_and_Drink_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Purify_Food_and_Drink_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Purify_Food_and_Drink_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -94933,14 +95174,14 @@ DefineAbility({
       Variables={
         "Purify_Food_and_Drink_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Purify_Food_and_Drink_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -94952,7 +95193,7 @@ DefineAbility({
       Variables={
         "Purify_Food_and_Drink_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -95011,15 +95252,15 @@ DefineAbility({
   Definitions={
     {
       Name="Ray_of_Frost_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Ray_of_Frost_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Ray_of_Frost_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -95028,14 +95269,14 @@ DefineAbility({
       Variables={
         "Ray_of_Frost_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Ray_of_Frost_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -95047,7 +95288,7 @@ DefineAbility({
       Variables={
         "Ray_of_Frost_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -95106,15 +95347,15 @@ DefineAbility({
   Definitions={
     {
       Name="Read_Magic_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Read_Magic_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Read_Magic_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -95123,14 +95364,14 @@ DefineAbility({
       Variables={
         "Read_Magic_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Read_Magic_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -95142,7 +95383,7 @@ DefineAbility({
       Variables={
         "Read_Magic_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -95201,15 +95442,15 @@ DefineAbility({
   Definitions={
     {
       Name="Resistance_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Resistance_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Resistance_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -95218,14 +95459,14 @@ DefineAbility({
       Variables={
         "Resistance_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Resistance_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -95237,7 +95478,7 @@ DefineAbility({
       Variables={
         "Resistance_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -95296,15 +95537,15 @@ DefineAbility({
   Definitions={
     {
       Name="Stabilize_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Stabilize_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Stabilize_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -95313,14 +95554,14 @@ DefineAbility({
       Variables={
         "Stabilize_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Stabilize_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -95332,7 +95573,7 @@ DefineAbility({
       Variables={
         "Stabilize_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -95391,15 +95632,15 @@ DefineAbility({
   Definitions={
     {
       Name="Summon_Instrument_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Summon_Instrument_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Summon_Instrument_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -95408,14 +95649,14 @@ DefineAbility({
       Variables={
         "Summon_Instrument_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Summon_Instrument_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -95427,7 +95668,7 @@ DefineAbility({
       Variables={
         "Summon_Instrument_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -95486,15 +95727,15 @@ DefineAbility({
   Definitions={
     {
       Name="Touch_of_Fatigue_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Touch_of_Fatigue_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Touch_of_Fatigue_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -95503,14 +95744,14 @@ DefineAbility({
       Variables={
         "Touch_of_Fatigue_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Touch_of_Fatigue_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -95522,7 +95763,7 @@ DefineAbility({
       Variables={
         "Touch_of_Fatigue_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -95581,15 +95822,15 @@ DefineAbility({
   Definitions={
     {
       Name="Virtue_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Virtue_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Virtue_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -95598,14 +95839,14 @@ DefineAbility({
       Variables={
         "Virtue_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Virtue_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -95617,7 +95858,7 @@ DefineAbility({
       Variables={
         "Virtue_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -96297,15 +96538,15 @@ DefineAbility({
   Definitions={
     {
       Name="Calm_Animals_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Calm_Animals_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Calm_Animals_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -96314,14 +96555,14 @@ DefineAbility({
       Variables={
         "Calm_Animals_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Calm_Animals_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -96333,7 +96574,7 @@ DefineAbility({
       Variables={
         "Calm_Animals_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -96392,15 +96633,15 @@ DefineAbility({
   Definitions={
     {
       Name="Charm_Animal_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Charm_Animal_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Charm_Animal_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -96409,14 +96650,14 @@ DefineAbility({
       Variables={
         "Charm_Animal_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Charm_Animal_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -96428,7 +96669,7 @@ DefineAbility({
       Variables={
         "Charm_Animal_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -96487,15 +96728,15 @@ DefineAbility({
   Definitions={
     {
       Name="Cure_Light_Wounds_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Cure_Light_Wounds_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Cure_Light_Wounds_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -96504,14 +96745,14 @@ DefineAbility({
       Variables={
         "Cure_Light_Wounds_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Cure_Light_Wounds_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -96523,7 +96764,7 @@ DefineAbility({
       Variables={
         "Cure_Light_Wounds_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -96582,15 +96823,15 @@ DefineAbility({
   Definitions={
     {
       Name="Detect_Animals_or_Plants_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Detect_Animals_or_Plants_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Detect_Animals_or_Plants_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -96599,14 +96840,14 @@ DefineAbility({
       Variables={
         "Detect_Animals_or_Plants_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Detect_Animals_or_Plants_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -96618,7 +96859,7 @@ DefineAbility({
       Variables={
         "Detect_Animals_or_Plants_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -96677,15 +96918,15 @@ DefineAbility({
   Definitions={
     {
       Name="Detect_Snares_and_Pits_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Detect_Snares_and_Pits_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Detect_Snares_and_Pits_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -96694,14 +96935,14 @@ DefineAbility({
       Variables={
         "Detect_Snares_and_Pits_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Detect_Snares_and_Pits_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -96713,7 +96954,7 @@ DefineAbility({
       Variables={
         "Detect_Snares_and_Pits_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -96772,15 +97013,15 @@ DefineAbility({
   Definitions={
     {
       Name="Endure_Elements_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Endure_Elements_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Endure_Elements_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -96789,14 +97030,14 @@ DefineAbility({
       Variables={
         "Endure_Elements_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Endure_Elements_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -96808,7 +97049,7 @@ DefineAbility({
       Variables={
         "Endure_Elements_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -96867,15 +97108,15 @@ DefineAbility({
   Definitions={
     {
       Name="Entangle_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Entangle_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Entangle_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -96884,14 +97125,14 @@ DefineAbility({
       Variables={
         "Entangle_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Entangle_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -96903,7 +97144,7 @@ DefineAbility({
       Variables={
         "Entangle_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -96962,15 +97203,15 @@ DefineAbility({
   Definitions={
     {
       Name="Faerie_Fire_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Faerie_Fire_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Faerie_Fire_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -96979,14 +97220,14 @@ DefineAbility({
       Variables={
         "Faerie_Fire_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Faerie_Fire_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -96998,7 +97239,7 @@ DefineAbility({
       Variables={
         "Faerie_Fire_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -97057,15 +97298,15 @@ DefineAbility({
   Definitions={
     {
       Name="Goodberry_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Goodberry_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Goodberry_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -97074,14 +97315,14 @@ DefineAbility({
       Variables={
         "Goodberry_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Goodberry_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -97093,7 +97334,7 @@ DefineAbility({
       Variables={
         "Goodberry_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -97152,15 +97393,15 @@ DefineAbility({
   Definitions={
     {
       Name="Hide_from_Animals_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Hide_from_Animals_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Hide_from_Animals_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -97169,14 +97410,14 @@ DefineAbility({
       Variables={
         "Hide_from_Animals_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Hide_from_Animals_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -97188,7 +97429,7 @@ DefineAbility({
       Variables={
         "Hide_from_Animals_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -97247,15 +97488,15 @@ DefineAbility({
   Definitions={
     {
       Name="Jump_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Jump_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Jump_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -97264,14 +97505,14 @@ DefineAbility({
       Variables={
         "Jump_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Jump_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -97283,7 +97524,7 @@ DefineAbility({
       Variables={
         "Jump_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -97342,15 +97583,15 @@ DefineAbility({
   Definitions={
     {
       Name="Longstrider_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Longstrider_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Longstrider_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -97359,14 +97600,14 @@ DefineAbility({
       Variables={
         "Longstrider_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Longstrider_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -97378,7 +97619,7 @@ DefineAbility({
       Variables={
         "Longstrider_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -97437,15 +97678,15 @@ DefineAbility({
   Definitions={
     {
       Name="Magic_Fang_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Magic_Fang_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Magic_Fang_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -97454,14 +97695,14 @@ DefineAbility({
       Variables={
         "Magic_Fang_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Magic_Fang_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -97473,7 +97714,7 @@ DefineAbility({
       Variables={
         "Magic_Fang_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -97532,15 +97773,15 @@ DefineAbility({
   Definitions={
     {
       Name="Magic_Stone_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Magic_Stone_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Magic_Stone_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -97549,14 +97790,14 @@ DefineAbility({
       Variables={
         "Magic_Stone_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Magic_Stone_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -97568,7 +97809,7 @@ DefineAbility({
       Variables={
         "Magic_Stone_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -97627,15 +97868,15 @@ DefineAbility({
   Definitions={
     {
       Name="Obscuring_Mist_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Obscuring_Mist_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Obscuring_Mist_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -97644,14 +97885,14 @@ DefineAbility({
       Variables={
         "Obscuring_Mist_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Obscuring_Mist_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -97663,7 +97904,7 @@ DefineAbility({
       Variables={
         "Obscuring_Mist_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -97722,15 +97963,15 @@ DefineAbility({
   Definitions={
     {
       Name="Pass_without_Trace_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Pass_without_Trace_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Pass_without_Trace_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -97739,14 +97980,14 @@ DefineAbility({
       Variables={
         "Pass_without_Trace_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Pass_without_Trace_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -97758,7 +97999,7 @@ DefineAbility({
       Variables={
         "Pass_without_Trace_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -97817,15 +98058,15 @@ DefineAbility({
   Definitions={
     {
       Name="Produce_Flame_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Produce_Flame_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Produce_Flame_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -97834,14 +98075,14 @@ DefineAbility({
       Variables={
         "Produce_Flame_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Produce_Flame_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -97853,7 +98094,7 @@ DefineAbility({
       Variables={
         "Produce_Flame_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -97912,15 +98153,15 @@ DefineAbility({
   Definitions={
     {
       Name="Shillelagh_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Shillelagh_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Shillelagh_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -97929,14 +98170,14 @@ DefineAbility({
       Variables={
         "Shillelagh_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Shillelagh_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -97948,7 +98189,7 @@ DefineAbility({
       Variables={
         "Shillelagh_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -98007,15 +98248,15 @@ DefineAbility({
   Definitions={
     {
       Name="Speak_with_Animals_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Speak_with_Animals_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Speak_with_Animals_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -98024,14 +98265,14 @@ DefineAbility({
       Variables={
         "Speak_with_Animals_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Speak_with_Animals_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -98043,7 +98284,7 @@ DefineAbility({
       Variables={
         "Speak_with_Animals_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -98102,15 +98343,15 @@ DefineAbility({
   Definitions={
     {
       Name="Summon_Natures_Ally_I_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Summon_Natures_Ally_I_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Summon_Natures_Ally_I_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -98119,14 +98360,14 @@ DefineAbility({
       Variables={
         "Summon_Natures_Ally_I_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Summon_Natures_Ally_I_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -98138,7 +98379,7 @@ DefineAbility({
       Variables={
         "Summon_Natures_Ally_I_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -98197,15 +98438,15 @@ DefineAbility({
   Definitions={
     {
       Name="Darkness_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Darkness_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Darkness_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -98214,14 +98455,14 @@ DefineAbility({
       Variables={
         "Darkness_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Darkness_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -98233,7 +98474,7 @@ DefineAbility({
       Variables={
         "Darkness_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -98292,15 +98533,15 @@ DefineAbility({
   Definitions={
     {
       Name="Deeper_Darkness_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Deeper_Darkness_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Deeper_Darkness_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -98309,14 +98550,14 @@ DefineAbility({
       Variables={
         "Deeper_Darkness_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Deeper_Darkness_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -98328,7 +98569,7 @@ DefineAbility({
       Variables={
         "Deeper_Darkness_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -98387,15 +98628,15 @@ DefineAbility({
   Definitions={
     {
       Name="Levitate_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Levitate_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Levitate_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -98404,14 +98645,14 @@ DefineAbility({
       Variables={
         "Levitate_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Levitate_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -98423,7 +98664,7 @@ DefineAbility({
       Variables={
         "Levitate_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -98482,15 +98723,15 @@ DefineAbility({
   Definitions={
     {
       Name="Detect_Magic_Times",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Detect_Magic_DC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="Detect_Magic_LVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -98499,14 +98740,14 @@ DefineAbility({
       Variables={
         "Detect_Magic_DC",
       },
-      Formula="10+SLA_DC_STAT",
+      Formula=Formula("10+SLA_DC_STAT"),
     },
     {
       Category="VAR",
       Variables={
         "Detect_Magic_Times",
       },
-      Formula="SLA_Base_Times",
+      Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
         Replace=false,
@@ -98518,7 +98759,7 @@ DefineAbility({
       Variables={
         "Detect_Magic_LVL",
       },
-      Formula="SLA_Base_LVL",
+      Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
         Replace=false,
@@ -98987,7 +99228,7 @@ DefineAbility({
   Definitions={
     {
       Name="LightningArcTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -98996,7 +99237,7 @@ DefineAbility({
       Variables={
         "LightningArcTimes",
       },
-      Formula="DomainAirTimes",
+      Formula=Formula("DomainAirTimes"),
     },
   },
   Types={
@@ -99018,7 +99259,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainAirResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99027,7 +99268,7 @@ DefineAbility({
       Variables={
         "ElectricityResistanceBonus",
       },
-      Formula="DomainAirResistanceBonus",
+      Formula=Formula("DomainAirResistanceBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -99039,7 +99280,7 @@ DefineAbility({
       Variables={
         "DomainAirResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainAirLVL"] >= 6)
@@ -99051,7 +99292,7 @@ DefineAbility({
       Variables={
         "DomainAirResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainAirLVL"] >= 12)
@@ -99129,7 +99370,7 @@ DefineAbility({
   Definitions={
     {
       Name="SpeakWithAnimalsRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99138,7 +99379,7 @@ DefineAbility({
       Variables={
         "SpeakWithAnimalsRounds",
       },
-      Formula="3+DomainAnimalLVL",
+      Formula=Formula("3+DomainAnimalLVL"),
     },
   },
   Types={
@@ -99166,7 +99407,7 @@ DefineAbility({
   Definitions={
     {
       Name="AnimalCompanionMasterLVL",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99175,7 +99416,7 @@ DefineAbility({
       Variables={
         "AnimalCompanionMasterLVL",
       },
-      Formula="DomainAnimalLVL-3",
+      Formula=Formula("DomainAnimalLVL-3"),
     },
   },
   Types={
@@ -99225,7 +99466,7 @@ DefineAbility({
   Definitions={
     {
       Name="ArtificersTouchTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99234,7 +99475,7 @@ DefineAbility({
       Variables={
         "ArtificersTouchTimes",
       },
-      Formula="DomainArtificeTimes",
+      Formula=Formula("DomainArtificeTimes"),
     },
   },
   Types={
@@ -99281,7 +99522,7 @@ DefineAbility({
   Definitions={
     {
       Name="DancingWeaponTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99290,7 +99531,7 @@ DefineAbility({
       Variables={
         "DancingWeaponTimes",
       },
-      Formula="(DomainArtificeLVL-4)/4",
+      Formula=Formula("(DomainArtificeLVL-4)/4"),
     },
   },
   Types={
@@ -99337,7 +99578,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofChaosTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99346,7 +99587,7 @@ DefineAbility({
       Variables={
         "TouchofChaosTimes",
       },
-      Formula="DomainChaosTimes",
+      Formula=Formula("DomainChaosTimes"),
     },
   },
   Types={
@@ -99395,7 +99636,7 @@ DefineAbility({
   Definitions={
     {
       Name="ChaosBladeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99404,7 +99645,7 @@ DefineAbility({
       Variables={
         "ChaosBladeTimes",
       },
-      Formula="(DomainChaosLVL-4)/4",
+      Formula=Formula("(DomainChaosLVL-4)/4"),
     },
   },
   Types={
@@ -99452,7 +99693,7 @@ DefineAbility({
   Definitions={
     {
       Name="DazingTouchTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99461,7 +99702,7 @@ DefineAbility({
       Variables={
         "DazingTouchTimes",
       },
-      Formula="DomainCharmTimes",
+      Formula=Formula("DomainCharmTimes"),
     },
   },
   Types={
@@ -99502,7 +99743,7 @@ DefineAbility({
   Definitions={
     {
       Name="CharmCharmingSmileRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99511,7 +99752,7 @@ DefineAbility({
       Variables={
         "CharmCharmingSmileRounds",
       },
-      Formula="DomainCharmLVL",
+      Formula=Formula("DomainCharmLVL"),
     },
   },
   Types={
@@ -99559,7 +99800,7 @@ DefineAbility({
   Definitions={
     {
       Name="CalmingTouchTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99568,7 +99809,7 @@ DefineAbility({
       Variables={
         "CalmingTouchTimes",
       },
-      Formula="DomainCommunityTimes",
+      Formula=Formula("DomainCommunityTimes"),
     },
   },
   Types={
@@ -99615,7 +99856,7 @@ DefineAbility({
   Definitions={
     {
       Name="UnityTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99624,7 +99865,7 @@ DefineAbility({
       Variables={
         "UnityTimes",
       },
-      Formula="(DomainCommunityLVL-4)/4",
+      Formula=Formula("(DomainCommunityLVL-4)/4"),
     },
   },
   Types={
@@ -99672,7 +99913,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofDarknessTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99681,7 +99922,7 @@ DefineAbility({
       Variables={
         "TouchofDarknessTimes",
       },
-      Formula="DomainDarknessTimes",
+      Formula=Formula("DomainDarknessTimes"),
     },
   },
   Types={
@@ -99728,7 +99969,7 @@ DefineAbility({
   Definitions={
     {
       Name="EyesOfDarknessRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99737,7 +99978,7 @@ DefineAbility({
       Variables={
         "EyesOfDarknessRounds",
       },
-      Formula="DomainDarknessLVL/2",
+      Formula=Formula("DomainDarknessLVL/2"),
     },
   },
   Types={
@@ -99786,7 +100027,7 @@ DefineAbility({
   Definitions={
     {
       Name="BleedingTouchTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99795,7 +100036,7 @@ DefineAbility({
       Variables={
         "BleedingTouchTimes",
       },
-      Formula="DomainDeathTimes",
+      Formula=Formula("DomainDeathTimes"),
     },
   },
   Types={
@@ -99861,7 +100102,7 @@ DefineAbility({
   Definitions={
     {
       Name="DestructiveSmiteTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99870,7 +100111,7 @@ DefineAbility({
       Variables={
         "DestructiveSmiteTimes",
       },
-      Formula="DomainDestructionTimes",
+      Formula=Formula("DomainDestructionTimes"),
     },
   },
   Types={
@@ -99918,7 +100159,7 @@ DefineAbility({
   Definitions={
     {
       Name="DestructiveAuraRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99927,7 +100168,7 @@ DefineAbility({
       Variables={
         "DestructiveAuraRounds",
       },
-      Formula="DomainDestructionLVL",
+      Formula=Formula("DomainDestructionLVL"),
     },
   },
   Types={
@@ -99977,7 +100218,7 @@ DefineAbility({
   Definitions={
     {
       Name="AcidDartTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -99986,7 +100227,7 @@ DefineAbility({
       Variables={
         "AcidDartTimes",
       },
-      Formula="DomainEarthTimes",
+      Formula=Formula("DomainEarthTimes"),
     },
   },
   Types={
@@ -100008,7 +100249,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainEarthResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100017,7 +100258,7 @@ DefineAbility({
       Variables={
         "AcidResistanceBonus",
       },
-      Formula="DomainEarthResistanceBonus",
+      Formula=Formula("DomainEarthResistanceBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -100029,7 +100270,7 @@ DefineAbility({
       Variables={
         "DomainEarthResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainEarthLVL"] >= 6)
@@ -100041,7 +100282,7 @@ DefineAbility({
       Variables={
         "DomainEarthResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainEarthLVL"] >= 12)
@@ -100120,7 +100361,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofEvilTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100129,7 +100370,7 @@ DefineAbility({
       Variables={
         "TouchofEvilTimes",
       },
-      Formula="DomainEvilTimes",
+      Formula=Formula("DomainEvilTimes"),
     },
   },
   Types={
@@ -100177,7 +100418,7 @@ DefineAbility({
   Definitions={
     {
       Name="ScytheOfEvilTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100186,7 +100427,7 @@ DefineAbility({
       Variables={
         "ScytheOfEvilTimes",
       },
-      Formula="(DomainEvilLVL-4)/4",
+      Formula=Formula("(DomainEvilLVL-4)/4"),
     },
   },
   Types={
@@ -100235,7 +100476,7 @@ DefineAbility({
   Definitions={
     {
       Name="FireBoltTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100244,7 +100485,7 @@ DefineAbility({
       Variables={
         "FireBoltTimes",
       },
-      Formula="DomainFireTimes",
+      Formula=Formula("DomainFireTimes"),
     },
   },
   Types={
@@ -100266,7 +100507,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainFireResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100275,7 +100516,7 @@ DefineAbility({
       Variables={
         "FireResistanceBonus",
       },
-      Formula="DomainFireResistanceBonus",
+      Formula=Formula("DomainFireResistanceBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -100287,7 +100528,7 @@ DefineAbility({
       Variables={
         "DomainFireResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainFireLVL"] >= 6)
@@ -100299,7 +100540,7 @@ DefineAbility({
       Variables={
         "DomainFireResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainFireLVL"] >= 12)
@@ -100378,7 +100619,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofGloryTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100387,7 +100628,7 @@ DefineAbility({
       Variables={
         "TouchofGloryTimes",
       },
-      Formula="DomainGloryTimes",
+      Formula=Formula("DomainGloryTimes"),
     },
   },
   Types={
@@ -100428,7 +100669,7 @@ DefineAbility({
   Definitions={
     {
       Name="GloryDivinePresenceRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100437,7 +100678,7 @@ DefineAbility({
       Variables={
         "GloryDivinePresenceRounds",
       },
-      Formula="DomainGloryLVL",
+      Formula=Formula("DomainGloryLVL"),
     },
   },
   Types={
@@ -100486,7 +100727,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofGoodTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100495,7 +100736,7 @@ DefineAbility({
       Variables={
         "TouchofGoodTimes",
       },
-      Formula="DomainGoodTimes",
+      Formula=Formula("DomainGoodTimes"),
     },
   },
   Types={
@@ -100543,7 +100784,7 @@ DefineAbility({
   Definitions={
     {
       Name="HolyLanceTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100552,7 +100793,7 @@ DefineAbility({
       Variables={
         "HolyLanceTimes",
       },
-      Formula="(DomainGoodLVL-4)/4",
+      Formula=Formula("(DomainGoodLVL-4)/4"),
     },
   },
   Types={
@@ -100601,7 +100842,7 @@ DefineAbility({
   Definitions={
     {
       Name="RebukeDeathTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100610,7 +100851,7 @@ DefineAbility({
       Variables={
         "RebukeDeathTimes",
       },
-      Formula="DomainHealingTimes",
+      Formula=Formula("DomainHealingTimes"),
     },
   },
   Types={
@@ -100655,7 +100896,7 @@ DefineAbility({
   Definitions={
     {
       Name="LoreKeeperDomainSkillBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100664,7 +100905,7 @@ DefineAbility({
       Variables={
         "LoreKeeperDomainSkillBonus",
       },
-      Formula="15+DomainKnowledgeLVL+WIS",
+      Formula=Formula("15+DomainKnowledgeLVL+WIS"),
     },
   },
   Types={
@@ -100711,7 +100952,7 @@ DefineAbility({
   Definitions={
     {
       Name="RemoteViewingRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100720,7 +100961,7 @@ DefineAbility({
       Variables={
         "RemoteViewingRounds",
       },
-      Formula="DomainKnowledgeLVL",
+      Formula=Formula("DomainKnowledgeLVL"),
     },
   },
   Types={
@@ -100767,7 +101008,7 @@ DefineAbility({
   Definitions={
     {
       Name="TouchofLawTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100776,7 +101017,7 @@ DefineAbility({
       Variables={
         "TouchofLawTimes",
       },
-      Formula="DomainLawTimes",
+      Formula=Formula("DomainLawTimes"),
     },
   },
   Types={
@@ -100824,7 +101065,7 @@ DefineAbility({
   Definitions={
     {
       Name="StaffOfOrderTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100833,7 +101074,7 @@ DefineAbility({
       Variables={
         "StaffOfOrderTimes",
       },
-      Formula="(DomainLawLVL-4)/4",
+      Formula=Formula("(DomainLawLVL-4)/4"),
     },
   },
   Types={
@@ -100880,7 +101121,7 @@ DefineAbility({
   Definitions={
     {
       Name="LiberationRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100889,7 +101130,7 @@ DefineAbility({
       Variables={
         "LiberationRounds",
       },
-      Formula="DomainLiberationLVL",
+      Formula=Formula("DomainLiberationLVL"),
     },
   },
   Types={
@@ -100937,7 +101178,7 @@ DefineAbility({
   Definitions={
     {
       Name="FreedomsCallRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -100946,7 +101187,7 @@ DefineAbility({
       Variables={
         "FreedomsCallRounds",
       },
-      Formula="DomainLiberationLVL",
+      Formula=Formula("DomainLiberationLVL"),
     },
   },
   Types={
@@ -100994,7 +101235,7 @@ DefineAbility({
   Definitions={
     {
       Name="BitofLuckTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101003,7 +101244,7 @@ DefineAbility({
       Variables={
         "BitofLuckTimes",
       },
-      Formula="DomainLuckTimes",
+      Formula=Formula("DomainLuckTimes"),
     },
   },
   Types={
@@ -101051,7 +101292,7 @@ DefineAbility({
   Definitions={
     {
       Name="GoodFortuneTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101060,7 +101301,7 @@ DefineAbility({
       Variables={
         "GoodFortuneTimes",
       },
-      Formula="DomainLuckLVL/6",
+      Formula=Formula("DomainLuckLVL/6"),
     },
   },
   Types={
@@ -101109,7 +101350,7 @@ DefineAbility({
   Definitions={
     {
       Name="VisionofMadnessTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101118,7 +101359,7 @@ DefineAbility({
       Variables={
         "VisionofMadnessTimes",
       },
-      Formula="DomainMadnessTimes",
+      Formula=Formula("DomainMadnessTimes"),
     },
   },
   Types={
@@ -101166,7 +101407,7 @@ DefineAbility({
   Definitions={
     {
       Name="AuraOfMadnessRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101175,7 +101416,7 @@ DefineAbility({
       Variables={
         "AuraOfMadnessRounds",
       },
-      Formula="DomainMadnessLVL",
+      Formula=Formula("DomainMadnessLVL"),
     },
   },
   Types={
@@ -101223,7 +101464,7 @@ DefineAbility({
   Definitions={
     {
       Name="HandoftheAcolyteTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101232,7 +101473,7 @@ DefineAbility({
       Variables={
         "HandoftheAcolyteTimes",
       },
-      Formula="DomainMagicTimes",
+      Formula=Formula("DomainMagicTimes"),
     },
   },
   Types={
@@ -101279,7 +101520,7 @@ DefineAbility({
   Definitions={
     {
       Name="DispellingTouchTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101288,7 +101529,7 @@ DefineAbility({
       Variables={
         "DispellingTouchTimes",
       },
-      Formula="(DomainMagicLVL-4)/4",
+      Formula=Formula("(DomainMagicLVL-4)/4"),
     },
   },
   Types={
@@ -101385,7 +101626,7 @@ DefineAbility({
   Definitions={
     {
       Name="WoodenFistRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101394,7 +101635,7 @@ DefineAbility({
       Variables={
         "WoodenFistRounds",
       },
-      Formula="3+WIS",
+      Formula=Formula("3+WIS"),
     },
   },
   Types={
@@ -101442,7 +101683,7 @@ DefineAbility({
   Definitions={
     {
       Name="BrambleArmorRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101451,7 +101692,7 @@ DefineAbility({
       Variables={
         "BrambleArmorRounds",
       },
-      Formula="DomainPlantLVL",
+      Formula=Formula("DomainPlantLVL"),
     },
   },
   Types={
@@ -101500,7 +101741,7 @@ DefineAbility({
   Definitions={
     {
       Name="ResistantTouchTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101509,7 +101750,7 @@ DefineAbility({
       Variables={
         "ResistantTouchTimes",
       },
-      Formula="DomainProtectionTimes",
+      Formula=Formula("DomainProtectionTimes"),
     },
   },
   Types={
@@ -101558,7 +101799,7 @@ DefineAbility({
   Definitions={
     {
       Name="AuraOfProtectionRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101567,7 +101808,7 @@ DefineAbility({
       Variables={
         "AuraOfProtectionRounds",
       },
-      Formula="DomainProtectionLVL",
+      Formula=Formula("DomainProtectionLVL"),
     },
   },
   Types={
@@ -101616,7 +101857,7 @@ DefineAbility({
   Definitions={
     {
       Name="GentleRestTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101625,7 +101866,7 @@ DefineAbility({
       Variables={
         "GentleRestTimes",
       },
-      Formula="DomainReposeTimes",
+      Formula=Formula("DomainReposeTimes"),
     },
   },
   Types={
@@ -101672,7 +101913,7 @@ DefineAbility({
   Definitions={
     {
       Name="WardAgainstDeathRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101681,7 +101922,7 @@ DefineAbility({
       Variables={
         "WardAgainstDeathRounds",
       },
-      Formula="DomainReposeLVL",
+      Formula=Formula("DomainReposeLVL"),
     },
   },
   Types={
@@ -101732,7 +101973,7 @@ DefineAbility({
   Definitions={
     {
       Name="BlastRuneTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101741,7 +101982,7 @@ DefineAbility({
       Variables={
         "BlastRuneTimes",
       },
-      Formula="DomainRuneTimes",
+      Formula=Formula("DomainRuneTimes"),
     },
   },
   Types={
@@ -101807,7 +102048,7 @@ DefineAbility({
   Definitions={
     {
       Name="StrengthSurgeTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101816,7 +102057,7 @@ DefineAbility({
       Variables={
         "StrengthSurgeTimes",
       },
-      Formula="DomainStrengthTimes",
+      Formula=Formula("DomainStrengthTimes"),
     },
   },
   Types={
@@ -101863,7 +102104,7 @@ DefineAbility({
   Definitions={
     {
       Name="MightOfTheGodsRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101872,7 +102113,7 @@ DefineAbility({
       Variables={
         "MightOfTheGodsRounds",
       },
-      Formula="DomainStrengthLVL",
+      Formula=Formula("DomainStrengthLVL"),
     },
   },
   Types={
@@ -101940,7 +102181,7 @@ DefineAbility({
   Definitions={
     {
       Name="SunNimbusOfLightRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -101949,7 +102190,7 @@ DefineAbility({
       Variables={
         "SunNimbusOfLightRounds",
       },
-      Formula="DomainSunLVL",
+      Formula=Formula("DomainSunLVL"),
     },
   },
   Types={
@@ -101997,7 +102238,7 @@ DefineAbility({
   Definitions={
     {
       Name="AgileFeetTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -102006,7 +102247,7 @@ DefineAbility({
       Variables={
         "AgileFeetTimes",
       },
-      Formula="DomainTravelTimes",
+      Formula=Formula("DomainTravelTimes"),
     },
   },
   Types={
@@ -102054,7 +102295,7 @@ DefineAbility({
   Definitions={
     {
       Name="TravelDimensionalHop",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -102063,7 +102304,7 @@ DefineAbility({
       Variables={
         "TravelDimensionalHop",
       },
-      Formula="DomainTravelLVL*10",
+      Formula=Formula("DomainTravelLVL*10"),
     },
   },
   Types={
@@ -102112,7 +102353,7 @@ DefineAbility({
   Definitions={
     {
       Name="CopycatTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -102121,7 +102362,7 @@ DefineAbility({
       Variables={
         "CopycatTimes",
       },
-      Formula="DomainTrickeryTimes",
+      Formula=Formula("DomainTrickeryTimes"),
     },
   },
   Types={
@@ -102162,11 +102403,11 @@ DefineAbility({
   Definitions={
     {
       Name="TrickeryMastersIllusionDC",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="TrickeryMastersIllusionRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -102175,14 +102416,14 @@ DefineAbility({
       Variables={
         "TrickeryMastersIllusionDC",
       },
-      Formula="10+(DomainTrickeryLVL/2)+WIS",
+      Formula=Formula("10+(DomainTrickeryLVL/2)+WIS"),
     },
     {
       Category="VAR",
       Variables={
         "TrickeryMastersIllusionRounds",
       },
-      Formula="DomainTrickeryLVL",
+      Formula=Formula("DomainTrickeryLVL"),
     },
   },
   Types={
@@ -102231,7 +102472,7 @@ DefineAbility({
   Definitions={
     {
       Name="BattleRageTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -102240,7 +102481,7 @@ DefineAbility({
       Variables={
         "BattleRageTimes",
       },
-      Formula="DomainWarTimes",
+      Formula=Formula("DomainWarTimes"),
     },
   },
   Types={
@@ -102258,7 +102499,7 @@ DefineAbility({
           Variables={
             "DAMAGE",
           },
-          Formula="max(DomainWarLVL/2,1)",
+          Formula=Formula("max(DomainWarLVL/2,1)"),
         },
       },
     },
@@ -102301,7 +102542,7 @@ DefineAbility({
   Definitions={
     {
       Name="WeaponMasterRounds",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -102310,7 +102551,7 @@ DefineAbility({
       Variables={
         "WeaponMasterRounds",
       },
-      Formula="DomainWarLVL",
+      Formula=Formula("DomainWarLVL"),
     },
   },
   Types={
@@ -102359,7 +102600,7 @@ DefineAbility({
   Definitions={
     {
       Name="IcicleTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -102368,7 +102609,7 @@ DefineAbility({
       Variables={
         "IcicleTimes",
       },
-      Formula="DomainWaterTimes",
+      Formula=Formula("DomainWaterTimes"),
     },
   },
   Types={
@@ -102390,7 +102631,7 @@ DefineAbility({
   Definitions={
     {
       Name="DomainWaterResistanceBonus",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -102399,7 +102640,7 @@ DefineAbility({
       Variables={
         "ColdResistanceBonus",
       },
-      Formula="DomainWaterResistanceBonus",
+      Formula=Formula("DomainWaterResistanceBonus"),
       Type={
         Name="Resistance",
         Replace=false,
@@ -102411,7 +102652,7 @@ DefineAbility({
       Variables={
         "DomainWaterResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainWaterLVL"] >= 6)
@@ -102423,7 +102664,7 @@ DefineAbility({
       Variables={
         "DomainWaterResistanceBonus",
       },
-      Formula="10",
+      Formula=Formula("10"),
       Conditions={
         function (character)
           return (character.Variables["DomainWaterLVL"] >= 12)
@@ -102503,7 +102744,7 @@ DefineAbility({
   Definitions={
     {
       Name="StormBurstTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -102512,7 +102753,7 @@ DefineAbility({
       Variables={
         "StormBurstTimes",
       },
-      Formula="DomainWeatherTimes",
+      Formula=Formula("DomainWeatherTimes"),
     },
   },
   Types={
@@ -102552,7 +102793,7 @@ DefineAbility({
   Definitions={
     {
       Name="WeatherLightningLordTimes",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -102561,7 +102802,7 @@ DefineAbility({
       Variables={
         "WeatherLightningLordTimes",
       },
-      Formula="DomainWeatherLVL",
+      Formula=Formula("DomainWeatherLVL"),
     },
   },
   Types={

@@ -19,7 +19,7 @@ namespace Primordially.LstToLua
         public ProficiencyKind Kind { get; }
         public bool DietyWeapons { get; }
 
-        public AutomaticProficiency(IList<Condition> conditions, List<string> names, List<string> types, bool dietyWeapons, ProficiencyKind kind) : base(conditions)
+        public AutomaticProficiency(List<string> names, List<string> types, bool dietyWeapons, ProficiencyKind kind)
         {
             Names = names;
             Types = types;
@@ -71,7 +71,9 @@ namespace Primordially.LstToLua
                 }
             }
 
-            result = new AutomaticProficiency(conditions, names, types, dietyWeapons, kind);
+            result = new AutomaticProficiency(names, types, dietyWeapons, kind);
+            foreach (var condition in conditions)
+                result.Conditions.Add(condition);
             return true;
         }
 

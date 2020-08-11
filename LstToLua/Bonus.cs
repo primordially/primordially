@@ -7,8 +7,7 @@ namespace Primordially.LstToLua
 {
     internal class Bonus : ConditionalObject
     {
-        public Bonus(string category, IReadOnlyList<string> variables, BonusType? type, string formula, IList<Condition> conditions)
-            :base(conditions)
+        public Bonus(string category, IReadOnlyList<string> variables, BonusType? type, string formula)
         {
             Category = category;
             Variables = variables;
@@ -41,13 +40,16 @@ namespace Primordially.LstToLua
 
             var variables = parts[1].Split(',').Select(t => t.Value).ToList();
 
-            return new Bonus(parts[0].Value, variables, type, parts[2].Value, conditions);
+            var result = new Bonus(parts[0].Value, variables, type, parts[2].Value);
+            foreach (var condition in conditions)
+                result.Conditions.Add(condition);
+            return result;
         }
 
         public string Category { get; }
         public IReadOnlyList<string> Variables { get; }
         public BonusType? Type { get; }
-        public string Formula { get; }
+        public Formula Formula { get; }
 
         protected override void DumpMembers(LuaTextWriter output)
         {

@@ -13,15 +13,14 @@ namespace Primordially.LstToLua
         public string? SpellPrefix { get; private set; }
         public List<Aspect> Aspects { get; } = new List<Aspect>();
         public List<Benefit> Benefits { get; } = new List<Benefit>();
-        public bool ClearBenefits { get; private set; } = false;
         public double? Cost { get; private set; }
         public bool AllowMultiple { get; private set; } = false;
         public bool Stackable { get; private set; } = false;
         public List<string> Templates { get; } = new List<string>();
         public List<string> TemplateChoices { get; } = new List<string>();
         public bool Visible { get; private set; } = true;
-        public List<string> Chooses { get; } = new List<string>();
-        public string Selections { get; private set; } = "1";
+        public Choice? Choice { get; set; }
+        public Formula? Selections { get; private set; }
 
         public override void Dump(LuaTextWriter output)
         {
@@ -64,23 +63,12 @@ namespace Primordially.LstToLua
                 output.WriteKeyValue("SpellPrefix", SpellPrefix);
             }
             output.WriteListValue("Aspects", Aspects);
-            if (ClearBenefits)
-            {
-                output.WriteKeyValue("ClearBenefits", ClearBenefits);
-            }
             output.WriteListValue("Benefits", Benefits);
             output.WriteListValue("Templates", Templates);
             output.WriteListValue("TemplateChoices", TemplateChoices);
-            if (Chooses.Any())
+            if (Choice != null)
             {
-                output.WriteObjectValue("Chooses", () =>
-                {
-                    foreach (var choose in Chooses)
-                    {
-                        output.Write(choose);
-                        output.Write(",\n");
-                    }
-                });
+                output.WriteKeyValue("Choice", Choice);
                 output.WriteKeyValue("Selections", Selections);
             }
 
@@ -187,7 +175,7 @@ namespace Primordially.LstToLua
                     if (v.Value == ".CLEAR")
                     {
                         Benefits.Clear();
-                        ClearBenefits = true;
+                        Clear[nameof(Benefits)] = null;
                         return;
                     }
                     if (v.StartsWith(".CLEAR"))

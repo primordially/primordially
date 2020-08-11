@@ -117,15 +117,29 @@ namespace Primordially.LstToLua
         {
             WriteKey(key);
             Write("=");
-            value.Dump(this);
+            if (value == null)
+            {
+                Write("nil");
+            }
+            else
+            {
+                value.Dump(this);
+            }
             Write(",\n");
         }
 
-        public void WriteKeyValue(ReadOnlySpan<char> key, ReadOnlySpan<char> value)
+        public void WriteKeyValue(ReadOnlySpan<char> key, string? value)
         {
             WriteKey(key);
             Write("=");
-            WriteValue(value);
+            if (value == null)
+            {
+                Write("nil");
+            }
+            else
+            {
+                WriteValue(value);
+            }
             Write(",\n");
         }
 

@@ -161,6 +161,9 @@ namespace Primordially.LstToLua
                         case "GLOBALMODIFIER":
                             // These files have only one line, and its undocumented and looks useless
                             break;
+                        case "DEITY":
+                            // These files have product identities in them
+                            break;
                         case "ABILITY":
                         case "ABILITYCATEGORY":
                         case "ALIGNMENT":
@@ -169,7 +172,6 @@ namespace Primordially.LstToLua
                         case "CLASS":
                         case "COMPANIONMOD":
                         case "DATACONTROL":
-                        case "DEITY":
                         case "DOMAIN":
                         case "EQUIPMENT":
                         case "EQUIPMOD":
@@ -463,12 +465,13 @@ namespace Primordially.LstToLua
                     case "ABILITYCATEGORY":
                         new SingleObjectFileConverter<AbilityCategoryDefinition>().Convert(inputFileFullPath, outputFile);
                         break;
+                    case "DOMAIN":
+                        new SingleObjectFileConverter<DomainDefinition>().Convert(inputFileFullPath, outputFile);
+                        break;
                     case "ARMORPROF":
                     case "BIOSET":
                     case "COMPANIONMOD":
                     case "DATATABLE":
-                    case "DEITY":
-                    case "DOMAIN":
                     case "DYNAMIC":
                     case "EQUIPMENT":
                     case "EQUIPMOD":

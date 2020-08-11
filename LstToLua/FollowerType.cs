@@ -9,8 +9,7 @@ namespace Primordially.LstToLua
         public List<string> FollowerConditions { get; }
         public int FollowerLevelAdjustment { get; }
 
-        private FollowerType(string type, List<Condition> conditions, List<string> followerConditions, int followerLevelAdjustment)
-            :base(conditions)
+        private FollowerType(string type, List<string> followerConditions, int followerLevelAdjustment)
         {
             Type = type;
             FollowerConditions = followerConditions;
@@ -77,7 +76,10 @@ namespace Primordially.LstToLua
                 throw new ParseFailedException(field, "Unable to parse COMPANIONLIST");
             }
 
-            return new FollowerType(type, conditions, followerConditions, followerLevelAdjustment);
+            var result = new FollowerType(type, followerConditions, followerLevelAdjustment);
+            foreach (var condition in conditions)
+                result.Conditions.Add(condition);
+            return result;
         }
     }
 }

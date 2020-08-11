@@ -9,7 +9,7 @@
         }
 
         public string Name { get; }
-        public string InitialValue { get; }
+        public Formula InitialValue { get; }
 
         public void Dump(LuaTextWriter output)
         {

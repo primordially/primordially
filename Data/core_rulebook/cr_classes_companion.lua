@@ -18,15 +18,15 @@ DefineClass({
   Definitions={
     {
       Name="CompanionClassLevel",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="AnimalCompanionSkill",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
     {
       Name="BaseClassSkillPts",
-      InitialValue="0",
+      InitialValue=Formula("0"),
     },
   },
   ClassSkills={
@@ -43,7 +43,7 @@ DefineClass({
       Variables={
         "Animal Companion Feat",
       },
-      Formula="(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
       Conditions={
         function (character)
           return not (((any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end) and 1 or 0)) >= 1)
@@ -55,7 +55,7 @@ DefineClass({
       Variables={
         "BASEAB",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")*3/4",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -68,7 +68,7 @@ DefineClass({
         "BASE.Fortitude",
         "BASE.Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/2+2",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -80,7 +80,7 @@ DefineClass({
       Variables={
         "BASE.Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")/3",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
@@ -92,7 +92,7 @@ DefineClass({
       Variables={
         "ClassBABModerate",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
@@ -104,14 +104,14 @@ DefineClass({
       Variables={
         "CompanionClassLevel",
       },
-      Formula="CL",
+      Formula=Formula("CL"),
     },
     {
       Category="VAR",
       Variables={
         "AnimalCompanionSkill",
       },
-      Formula="1",
+      Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["INTSCORE"] < 3)
@@ -123,7 +123,7 @@ DefineClass({
       Variables={
         "BaseClassSkillPts",
       },
-      Formula="MAX(1,2+INT)",
+      Formula=Formula("MAX(1,2+INT)"),
       Conditions={
         function (character)
           return not (((any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end) and 1 or 0)) >= 1)
@@ -135,7 +135,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Fortitude",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -147,7 +147,7 @@ DefineClass({
       Variables={
         "ClassSaveGood_Reflex",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -159,7 +159,7 @@ DefineClass({
       Variables={
         "ClassSavePoor_Will",
       },
-      Formula="classlevel(\"APPLIEDAS=NONEPIC\")",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
@@ -193,7 +193,7 @@ DefineClass({
           Variables={
             "FEAT",
           },
-          Formula="-1",
+          Formula=Formula("-1"),
         },
       },
     },
