@@ -12,21 +12,14 @@ namespace Primordially.LstToLua
 
         public List<string> ClassSkills { get; } = new List<string>();
         public List<SpellList> SpellLists { get; } = new List<SpellList>();
-        public List<ObjectVariableDefinition> Definitions { get; } = new List<ObjectVariableDefinition>();
-        public List<AbilityReference> Abilities { get; } = new List<AbilityReference>();
         public List<Bonus> Bonuses { get; } = new List<Bonus>();
 
         protected override void DumpMembers(LuaTextWriter output)
         {
             output.WriteKeyValue("Name", Name);
             output.WriteKeyValue("Description", Description);
-            if (Definitions.Any())
-            {
-                output.WriteListValue("Definitions", Definitions);
-            }
             output.WriteListValue("ClassSkills", ClassSkills);
             output.WriteListValue("Bonuses", Bonuses);
-            output.WriteListValue("Abilities", Abilities);
             output.WriteListValue("SpellLists", SpellLists);
             base.DumpMembers(output);
         }
@@ -49,9 +42,6 @@ namespace Primordially.LstToLua
                 case "DESC":
                     Description = v.Value;
                     return;
-                case "ABILITY":
-                    Abilities.Add(AbilityReference.Parse(v));
-                    return;
                 case "CSKILL":
                     ClassSkills.AddRange(v.Value.Split('|'));
                     return;
@@ -61,17 +51,6 @@ namespace Primordially.LstToLua
                 case "BONUS":
                     Bonuses.Add(Bonus.Parse(v));
                     return;
-                case "DEFINE":
-                {
-                    var parts = v.Split('|').ToArray();
-                    if (parts.Length != 2)
-                    {
-                        throw new ParseFailedException(field, "Unable to parse variable definition.");
-                    }
-
-                    Definitions.Add(new ObjectVariableDefinition(parts[0].Value, parts[1].Value));
-                    return;
-                }
             }
 
             base.AddField(field);

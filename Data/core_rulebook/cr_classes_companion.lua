@@ -24,20 +24,6 @@ DefineClass({
     Abb="AC",
   },
   SourcePage="p.52",
-  Definitions={
-    {
-      Name="CompanionClassLevel",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="AnimalCompanionSkill",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="BaseClassSkillPts",
-      InitialValue=Formula("0"),
-    },
-  },
   ClassSkills={
     "Acrobatics",
     "Climb",

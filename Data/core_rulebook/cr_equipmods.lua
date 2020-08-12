@@ -11640,40 +11640,6 @@ DefineEquipmentModifier({
       },
     },
   },
-  Definitions={
-    {
-      Name="IntItemSenseRange",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="SpeechBonusLang",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="IntItemNegativeLevel",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="IntelligentItemEgo",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="IntItemStatINT",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="IntItemStatWIS",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="IntItemStatCHA",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="BaseCostTracker",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (item)
       return ((item.IsType("Magic"))) >= 1

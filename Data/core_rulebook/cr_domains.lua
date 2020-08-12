@@ -9,40 +9,6 @@ SetSource({
 DefineDomain({
   Name="Air",
   Description="You can manipulate lightning, mist, and wind, traffic with air creatures, and are resistant to electricity damage.",
-  Definitions={
-    {
-      Name="DomainAirLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainAirAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainAirDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainAirTimes",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Air Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "AirDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -105,6 +71,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Air Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "AirDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.41",
   Conditions={
     function (character)
@@ -129,42 +111,8 @@ DefineDomain({
 DefineDomain({
   Name="Animal",
   Description="You can speak with and befriend animals with ease. In addition, you treat Knowledge (Nature) as a class skill.",
-  Definitions={
-    {
-      Name="DomainAnimalLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainAnimalDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainAnimalTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainAnimalAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   ClassSkills={
     "Knowledge (Nature)",
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Animal Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "AnimalDomainReplacement")
-          end))
-        end,
-      },
-    },
   },
   SpellLists={
     {
@@ -228,6 +176,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Animal Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "AnimalDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.41",
   Conditions={
     function (character)
@@ -252,40 +216,6 @@ DefineDomain({
 DefineDomain({
   Name="Artifice",
   Description="You can repair damage to objects, animate objects with life, and create objects from nothing.",
-  Definitions={
-    {
-      Name="DomainArtificeLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainArtificeDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainArtificeTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainArtificeAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Artifice Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "ArtificeDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -348,6 +278,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Artifice Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "ArtificeDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.41",
   Conditions={
     function (character)
@@ -372,40 +318,6 @@ DefineDomain({
 DefineDomain({
   Name="Chaos",
   Description="Your touch infuses life and weapons with chaos, and you revel in all things anarchic.",
-  Definitions={
-    {
-      Name="DomainChaosLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainChaosDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainChaosTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainChaosAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Chaos Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "ChaosDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -468,6 +380,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Chaos Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "ChaosDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.42",
   Conditions={
     function (character)
@@ -495,40 +423,6 @@ DefineDomain({
 DefineDomain({
   Name="Charm",
   Description="You can baffle and befuddle foes with a touch or a smile, and your beauty and grace are divine.",
-  Definitions={
-    {
-      Name="DomainCharmLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainCharmDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainCharmTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainCharmAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Charm Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "CharmDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -591,6 +485,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Charm Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "CharmDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.42",
   Conditions={
     function (character)
@@ -615,40 +525,6 @@ DefineDomain({
 DefineDomain({
   Name="Community",
   Description="Your touch can heal wounds, and your presence instills unity and strengthens emotional bonds.",
-  Definitions={
-    {
-      Name="DomainCommunityLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainCommunityDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainCommunityTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainCommunityAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Community Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "CommunityDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -711,6 +587,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Community Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "CommunityDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.42",
   Conditions={
     function (character)
@@ -735,47 +627,6 @@ DefineDomain({
 DefineDomain({
   Name="Darkness",
   Description="You manipulate shadows and darkness. In addition, you receive Blind-Fight as a bonus feat.",
-  Definitions={
-    {
-      Name="DomainDarknessLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainDarknessDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainDarknessTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainDarknessAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Darkness Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "DarknessDomainReplacement")
-          end))
-        end,
-      },
-    },
-    {
-      Category="FEAT",
-      Nature="AUTOMATIC",
-      Names={
-        "Blind-Fight",
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -838,6 +689,29 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Darkness Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "DarknessDomainReplacement")
+          end))
+        end,
+      },
+    },
+    {
+      Category="FEAT",
+      Nature="AUTOMATIC",
+      Names={
+        "Blind-Fight",
+      },
+    },
+  },
   SourcePage="p.42",
   Conditions={
     function (character)
@@ -862,40 +736,6 @@ DefineDomain({
 DefineDomain({
   Name="Death",
   Description="You can cause the living to bleed at a touch, and find comfort in the presence of the dead.",
-  Definitions={
-    {
-      Name="DomainDeathLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainDeathDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainDeathTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainDeathAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Death Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "DeathDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -1028,6 +868,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Death Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "DeathDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.42",
   Conditions={
     function (character)
@@ -1052,40 +908,6 @@ DefineDomain({
 DefineDomain({
   Name="Destruction",
   Description="You revel in ruin and devastation, and can deliver particularly destructive attacks.",
-  Definitions={
-    {
-      Name="DomainDestructionLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainDestructionDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainDestructionTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainDestructionAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Destruction Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "DestructionDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -1148,6 +970,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Destruction Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "DestructionDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.43",
   Conditions={
     function (character)
@@ -1172,40 +1010,6 @@ DefineDomain({
 DefineDomain({
   Name="Earth",
   Description="You have mastery over earth, metal, and stone, can fire darts of acid, and command earth creatures.",
-  Definitions={
-    {
-      Name="DomainEarthLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainEarthDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainEarthTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainEarthAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Earth Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "EarthDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -1268,6 +1072,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Earth Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "EarthDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.43",
   Conditions={
     function (character)
@@ -1292,40 +1112,6 @@ DefineDomain({
 DefineDomain({
   Name="Evil",
   Description="You are sinister and cruel, and have wholly pledged your soul to the cause of evil.",
-  Definitions={
-    {
-      Name="DomainEvilLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainEvilDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainEvilTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainEvilAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Evil Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "EvilDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -1388,6 +1174,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Evil Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "EvilDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.43",
   Conditions={
     function (character)
@@ -1415,40 +1217,6 @@ DefineDomain({
 DefineDomain({
   Name="Fire",
   Description="You can call forth fire, command creatures of the inferno, and your flesh does not burn.",
-  Definitions={
-    {
-      Name="DomainFireLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainFireDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainFireTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainFireAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Fire Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "FireDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -1511,6 +1279,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Fire Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "FireDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.44",
   Conditions={
     function (character)
@@ -1535,24 +1319,6 @@ DefineDomain({
 DefineDomain({
   Name="Glory",
   Description="You are infused with the glory of the divine, and are a true foe of the undead. In addition, when you channel positive energy to harm undead creatures, the save DC to halve the damage is increased by 2.",
-  Definitions={
-    {
-      Name="DomainGloryLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainGloryDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainGloryTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainGloryAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="VAR",
@@ -1564,22 +1330,6 @@ DefineDomain({
         Name="Domain",
         Replace=false,
         Stack=false,
-      },
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Glory Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "GloryDomainReplacement")
-          end))
-        end,
       },
     },
   },
@@ -1645,6 +1395,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Glory Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "GloryDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.44",
   Conditions={
     function (character)
@@ -1669,40 +1435,6 @@ DefineDomain({
 DefineDomain({
   Name="Good",
   Description="You have pledged your life and soul to goodness and purity.",
-  Definitions={
-    {
-      Name="DomainGoodLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainGoodDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainGoodTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainGoodAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Good Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "GoodDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -1765,6 +1497,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Good Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "GoodDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.44",
   Conditions={
     function (character)
@@ -1792,40 +1540,6 @@ DefineDomain({
 DefineDomain({
   Name="Healing",
   Description="Your touch staves off pain and death, and your healing magic is particularly vital and potent.",
-  Definitions={
-    {
-      Name="DomainHealingLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainHealingDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainHealingTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainHealingAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Healing Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "HealingDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -1888,6 +1602,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Healing Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "HealingDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.44",
   Conditions={
     function (character)
@@ -1912,42 +1642,8 @@ DefineDomain({
 DefineDomain({
   Name="Knowledge",
   Description="You are a scholar and a sage of legends. In addition, you treat all Knowledge skills as class skills.",
-  Definitions={
-    {
-      Name="DomainKnowledgeLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainKnowledgeDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainKnowledgeTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainKnowledgeAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   ClassSkills={
     "TYPE=Knowledge",
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Knowledge Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "KnowledgeDomainReplacement")
-          end))
-        end,
-      },
-    },
   },
   SpellLists={
     {
@@ -2011,6 +1707,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Knowledge Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "KnowledgeDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.45",
   Conditions={
     function (character)
@@ -2035,40 +1747,6 @@ DefineDomain({
 DefineDomain({
   Name="Law",
   Description="You follow a strict and ordered code of laws, and in so doing, achieve enlightenment.",
-  Definitions={
-    {
-      Name="DomainLawLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainLawDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainLawTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainLawAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Law Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "LawDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -2131,6 +1809,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Law Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "LawDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.45",
   Conditions={
     function (character)
@@ -2158,40 +1852,6 @@ DefineDomain({
 DefineDomain({
   Name="Liberation",
   Description="You are a spirit of freedom and a staunch foe against all who would enslave and oppress.",
-  Definitions={
-    {
-      Name="DomainLiberationLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainLiberationDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainLiberationTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainLiberationAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Liberation Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "LiberationDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -2254,6 +1914,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Liberation Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "LiberationDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.45",
   Conditions={
     function (character)
@@ -2278,40 +1954,6 @@ DefineDomain({
 DefineDomain({
   Name="Luck",
   Description="You are infused with luck, and your mere presence can spread good fortune.",
-  Definitions={
-    {
-      Name="DomainLuckLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainLuckDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainLuckTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainLuckAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Luck Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "LuckDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -2374,6 +2016,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Luck Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "LuckDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.45",
   Conditions={
     function (character)
@@ -2398,40 +2056,6 @@ DefineDomain({
 DefineDomain({
   Name="Madness",
   Description="You embrace the madness that lurks deep in your heart, and can unleash it to drive your foes insane or to sacrifice certain abilities to hone others.",
-  Definitions={
-    {
-      Name="DomainMadnessLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainMadnessDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainMadnessTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainMadnessAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Madness Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "MadnessDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -2494,6 +2118,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Madness Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "MadnessDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.45",
   Conditions={
     function (character)
@@ -2518,40 +2158,6 @@ DefineDomain({
 DefineDomain({
   Name="Magic",
   Description="You are a true student of all things mystical, and see divinity in the purity of magic.",
-  Definitions={
-    {
-      Name="DomainMagicLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainMagicDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainMagicTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainMagicAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Magic Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "MagicDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -2614,6 +2220,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Magic Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "MagicDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.46",
   Conditions={
     function (character)
@@ -2638,40 +2260,6 @@ DefineDomain({
 DefineDomain({
   Name="Nobility",
   Description="You are a great leader, an inspiration to all who follow the teachings of your faith.",
-  Definitions={
-    {
-      Name="DomainNobilityLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainNobilityDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainNobilityTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainNobilityAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Nobility Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "NobilityDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -2734,6 +2322,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Nobility Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "NobilityDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.46",
   Conditions={
     function (character)
@@ -2758,40 +2362,6 @@ DefineDomain({
 DefineDomain({
   Name="Plant",
   Description="You find solace in the green, can grow defensive thorns, and can communicate with plants.",
-  Definitions={
-    {
-      Name="DomainPlantLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainPlantDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainPlantTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainPlantAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Plant Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "PlantDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -2854,6 +2424,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Plant Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "PlantDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.46",
   Conditions={
     function (character)
@@ -2878,28 +2464,6 @@ DefineDomain({
 DefineDomain({
   Name="Protection",
   Description="Your faith is your greatest source of protection, and you can use that faith to defend others. In addition, you receive a +1 resistance bonus on saving throws. This bonus increases by 1 for every 5 levels you possess.",
-  Definitions={
-    {
-      Name="DomainProtectionSaveBonus",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainProtectionLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainProtectionDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainProtectionTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainProtectionAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="SAVE",
@@ -2911,22 +2475,6 @@ DefineDomain({
         Name="Resistance",
         Replace=false,
         Stack=false,
-      },
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Protection Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "ProtectionDomainReplacement")
-          end))
-        end,
       },
     },
   },
@@ -2992,6 +2540,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Protection Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "ProtectionDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.46",
   Conditions={
     function (character)
@@ -3016,40 +2580,6 @@ DefineDomain({
 DefineDomain({
   Name="Repose",
   Description="You see death not as something to be feared, but as a final rest and reward for a life well spent. The taint of undeath is a mockery of what you hold dear.",
-  Definitions={
-    {
-      Name="DomainReposeLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainReposeDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainReposeTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainReposeAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Repose Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "ReposeDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -3112,6 +2642,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Repose Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "ReposeDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.46",
   Conditions={
     function (character)
@@ -3136,47 +2682,6 @@ DefineDomain({
 DefineDomain({
   Name="Rune",
   Description="In strange and eldritch runes you find potent magic. You gain Scribe Scroll as a bonus feat.",
-  Definitions={
-    {
-      Name="DomainRuneLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainRuneDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainRuneTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainRuneAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Rune Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "RuneDomainReplacement")
-          end))
-        end,
-      },
-    },
-    {
-      Category="FEAT",
-      Nature="AUTOMATIC",
-      Names={
-        "Scribe Scroll",
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -3239,6 +2744,29 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Rune Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "RuneDomainReplacement")
+          end))
+        end,
+      },
+    },
+    {
+      Category="FEAT",
+      Nature="AUTOMATIC",
+      Names={
+        "Scribe Scroll",
+      },
+    },
+  },
   SourcePage="p.47",
   Conditions={
     function (character)
@@ -3263,40 +2791,6 @@ DefineDomain({
 DefineDomain({
   Name="Strength",
   Description="In strength and brawn there is truth - your faith gives you incredible might and power.",
-  Definitions={
-    {
-      Name="DomainStrengthLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainStrengthDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainStrengthTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainStrengthAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Strength Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "StrengthDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -3359,6 +2853,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Strength Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "StrengthDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.47",
   Conditions={
     function (character)
@@ -3383,40 +2893,6 @@ DefineDomain({
 DefineDomain({
   Name="Sun",
   Description="You see truth in the pure and burning light of the sun, and can call upon its blessing or wrath to work great deeds.",
-  Definitions={
-    {
-      Name="DomainSunLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainSunDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainSunTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainSunAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Sun Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "SunDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -3479,6 +2955,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Sun Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "SunDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.47",
   Conditions={
     function (character)
@@ -3503,24 +2995,6 @@ DefineDomain({
 DefineDomain({
   Name="Travel",
   Description="You are an explorer and find enlightenment in the simple joy of travel, be it by foot or conveyance or magic. Increase your base speed by 10 feet.",
-  Definitions={
-    {
-      Name="DomainTravelLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainTravelDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainTravelTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainTravelAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="MOVEADD",
@@ -3528,22 +3002,6 @@ DefineDomain({
         "TYPE=Walk",
       },
       Formula=Formula("10"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Travel Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "TravelDomainReplacement")
-          end))
-        end,
-      },
     },
   },
   SpellLists={
@@ -3608,6 +3066,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Travel Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "TravelDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.47",
   Conditions={
     function (character)
@@ -3632,44 +3106,10 @@ DefineDomain({
 DefineDomain({
   Name="Trickery",
   Description="You are a master of illusions and deceptions. Bluff, Disguise, and Stealth are class skills.",
-  Definitions={
-    {
-      Name="DomainTrickeryLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainTrickeryDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainTrickeryTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainTrickeryAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   ClassSkills={
     "Bluff",
     "Disguise",
     "Stealth",
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Trickery Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "TrickeryDomainReplacement")
-          end))
-        end,
-      },
-    },
   },
   SpellLists={
     {
@@ -3733,6 +3173,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Trickery Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "TrickeryDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.48",
   Conditions={
     function (character)
@@ -3757,40 +3213,6 @@ DefineDomain({
 DefineDomain({
   Name="War",
   Description="You are a crusader for your god, always ready and willing to fight to defend your faith.",
-  Definitions={
-    {
-      Name="DomainWarLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainWarDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainWarTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainWarAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ War Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "WarDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -3853,6 +3275,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ War Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "WarDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.48",
   Conditions={
     function (character)
@@ -3877,40 +3315,6 @@ DefineDomain({
 DefineDomain({
   Name="Water",
   Description="You can manipulate water and mist and ice, conjure creatures of water, and resist cold.",
-  Definitions={
-    {
-      Name="DomainWaterLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainWaterDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainWaterTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainWaterAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Water Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "WaterDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -3973,6 +3377,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Water Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "WaterDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.48",
   Conditions={
     function (character)
@@ -3997,40 +3417,6 @@ DefineDomain({
 DefineDomain({
   Name="Weather",
   Description="With power over storm and sky, you can call down the wrath of the gods upon the world below.",
-  Definitions={
-    {
-      Name="DomainWeatherLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainWeatherDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainWeatherTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainWeatherAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Weather Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "WeatherDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -4093,6 +3479,22 @@ DefineDomain({
       },
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Weather Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "WeatherDomainReplacement")
+          end))
+        end,
+      },
+    },
+  },
   SourcePage="p.48",
   Conditions={
     function (character)
@@ -4117,40 +3519,6 @@ DefineDomain({
 DefineDomain({
   Name="Death (Pharasma)",
   Description="You can cause the living to bleed at a touch, and find comfort in the presence of the dead.",
-  Definitions={
-    {
-      Name="DomainDeathLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainDeathDC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainDeathTimes",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DomainDeathAbilityTriggerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Core Domain ~ Death Domain",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "DeathDomainReplacement")
-          end))
-        end,
-      },
-    },
-  },
   SpellLists={
     {
       Kind="Domain",
@@ -4214,6 +3582,22 @@ DefineDomain({
       Conditions={
         function (character)
           return ((character.Diety.Name == "Pharasma")) >= 1
+        end,
+      },
+    },
+  },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Core Domain ~ Death Domain",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Type == "DeathDomainReplacement")
+          end))
         end,
       },
     },

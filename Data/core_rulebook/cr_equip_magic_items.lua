@@ -118,16 +118,6 @@ DefineEquipment({
     },
   },
   SourcePage="p.496",
-  Definitions={
-    {
-      Name="MightyFistValue",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="AmuletMightyFistPool",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 DefineEquipment({
   Name="Amulet of Mighty Fists +1",

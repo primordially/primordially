@@ -37,60 +37,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="BastardSwordExoticUse",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="BypassSizeMods",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DwarvenWaraxeExoticUse",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="ActivateEnlargePerson",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="ActivateReducePerson",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="Pool_Traits",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="IsPC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="Pool_Temp_Feat",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DisableArmorBonus",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DisableShieldBonus",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="Pool_CombatFeat",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="SPELLFAILURE_Total",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="HasWeaponFinesseFeat",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="VAR",
@@ -149,16 +95,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="WeaponFocusToHit",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="GreaterWeaponFocusToHit",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="VAR",
@@ -192,12 +128,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="NegatedAgePenalty",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="STAT",
@@ -252,16 +182,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Linguisitcs_NumLanguages",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="FightingDefensivelyAttackPenalty",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="VAR",
@@ -297,12 +217,6 @@ DefineAbility({
       Arguments={
         "Feat_Mobility_DodgeBonus",
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Feat_Mobility_DodgeBonus",
-      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1499,48 +1413,6 @@ ModifyAbility({
           return (character.Variables["StoneskinActivate"] >= 1)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="StoneskinActivate",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="SizeIncrease",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="ActivateTempBonus",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="InspireCourageBonus",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="InspireGreatnessActivate",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="AuraOfResolveActivate",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="AuraOfCourageActivate",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="AuraOfJusticeActivate",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="AuraOfRighteousnessActivate",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="TempBonus_BlessWeapon",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -4083,12 +3955,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="DomainNotAllowed",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 DefineAbility({
@@ -4110,12 +3976,6 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   SourcePage="p.562",
-  Definitions={
-    {
-      Name="NegLevels",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="%1 negative levels (-%1 effective levels and loses access to %1 spells from the highest spell level castable)",
     Arguments={
@@ -4176,48 +4036,6 @@ DefineAbility({
       Names={
         "Shield Bash Stats",
       },
-    },
-  },
-  Definitions={
-    {
-      Name="ShieldBashingDieSizeStep",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="NaturalShieldReach",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="ShieldBashAttackBonus",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="ShieldDamageDice",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="ShieldDamageSize",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="ShieldBashDamageBonus",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="ShieldThreatRange",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="ShieldBashAttackTotal",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="InterativeAttack",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="ShieldCritMult",
-      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -5306,12 +5124,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="EnlargePerson_GrappleBonusValue",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -5319,12 +5131,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="EnlargePerson_StrBonusValue",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -5332,12 +5138,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="EnlargePerson_DexBonusValue",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -5345,12 +5145,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="EnlargePerson_ACBonusValue",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -5406,12 +5200,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="DamageSizeAdjustment",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="WEAPONPROF=Aklys (Gladiator)",
@@ -8919,12 +8707,6 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   Cost=0,
-  Definitions={
-    {
-      Name="BypassTraitRestriction",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="This allows the PC to bypass the restrictions on taking only 1 trait from any given category.",
   },
@@ -8953,12 +8735,6 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   Cost=0,
-  Definitions={
-    {
-      Name="BypassDrawbackRestriction",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="This allows the PC to bypass the restrictions on taking only 1 drawback.",
   },
@@ -8987,12 +8763,6 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   Cost=0,
-  Definitions={
-    {
-      Name="UseWeaponsWithNaturalAttacks",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="This changes the Natural Primary attacks to Secondary while using weapons.",
   },
@@ -10533,12 +10303,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="RangePenaltyValue",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="COMBAT",

@@ -215,12 +215,6 @@ DefineAbility({
     },
   },
   SourcePage="p.21",
-  Definitions={
-    {
-      Name="RacialDefensiveTrainingBonus",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return not (character.Facts["ABILITY"]["Dwarf_ReplaceDefensiveTraining"] == "True")
@@ -453,12 +447,6 @@ DefineAbility({
     },
   },
   SourcePage="p.21",
-  Definitions={
-    {
-      Name="Dwarf_StoneCunning_SkillBonus",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return not (character.Facts["ABILITY"]["Dwarf_ReplaceStonecunning"] == "True")
@@ -840,12 +828,6 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   SourcePage="p.22",
-  Definitions={
-    {
-      Name="KeenSensesBonus",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return not (character.Facts["ABILITY"]["Elf_ReplaceKeenSenses"] == "true")
@@ -1146,12 +1128,6 @@ DefineAbility({
     },
   },
   SourcePage="p.23",
-  Definitions={
-    {
-      Name="RacialDefensiveTrainingBonus",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceDefensiveTraining"] == "true")
@@ -1242,12 +1218,6 @@ DefineAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Gnome_GnomeMagic_IllusionDCBonus",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceGnomeMagic"] == "true")
@@ -1308,12 +1278,6 @@ DefineAbility({
     },
   },
   SourcePage="p.23",
-  Definitions={
-    {
-      Name="Gnome_Hatred_AttackBonus",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceHatred"] == "true")
@@ -1393,12 +1357,6 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   SourcePage="p.23",
-  Definitions={
-    {
-      Name="KeenSensesBonus",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceKeenSenses"] == "true")
@@ -1841,12 +1799,6 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   SourcePage="p.24",
-  Definitions={
-    {
-      Name="KeenSensesBonus",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return not (character.Facts["ABILITY"]["HalfElf_ReplaceKeenSenses"] == "true")
@@ -2147,12 +2099,6 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   SourcePage="p.25",
-  Definitions={
-    {
-      Name="Orc_OrcFerocity_Times",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return not (character.Facts["ABILITY"]["HalfOrc_ReplaceOrcFerocity"] == "true")
@@ -2423,12 +2369,6 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   SourcePage="p.26",
-  Definitions={
-    {
-      Name="Halfling_HalflingLuck_SaveBonus",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return not (character.Facts["ABILITY"]["Halfling_ReplaceHalflingLuck"] == "true")
@@ -2466,12 +2406,6 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   SourcePage="p.26",
-  Definitions={
-    {
-      Name="KeenSensesBonus",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return not (character.Facts["ABILITY"]["Halfling_ReplaceKeenSenses"] == "true")
@@ -4292,12 +4226,6 @@ DefineAbility({
     },
   },
   SourcePage="p.309",
-  Definitions={
-    {
-      Name="DisableRaceTypeGrantedProfs",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="VAR",
@@ -4720,12 +4648,6 @@ DefineAbility({
     },
   },
   SourcePage="p.311",
-  Definitions={
-    {
-      Name="RemoveSubtypeTelepathy",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="VAR",
@@ -4789,12 +4711,6 @@ DefineAbility({
     },
   },
   SourcePage="p.311",
-  Definitions={
-    {
-      Name="RemoveSubtypeTelepathy",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="VAR",
@@ -5067,12 +4983,6 @@ DefineAbility({
     },
   },
   SourcePage="p.311",
-  Definitions={
-    {
-      Name="CanNotGrapple",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="COMBAT",
@@ -5662,12 +5572,6 @@ DefineAbility({
     },
   },
   SourcePage="p.311",
-  Definitions={
-    {
-      Name="AuraOfMenaceDC",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="A righteous aura surrounds archons that fight or get angry. Any hostile creature within a 20-foot radius of an archon must succeed on a DC %1 Will save to resist its effects. Those who fail take a -2 penalty on attacks, AC, and saves for 24 hours or until they successfully hit the archon that generated the aura. A creature that has resisted or broken the effect cannot be affected again by the same archon's aura for 24 hours.",
     Arguments={
@@ -5869,12 +5773,6 @@ DefineAbility({
       CasterLevel="PermanecyArcaneSightLVL",
     },
   },
-  Definitions={
-    {
-      Name="PermanecyArcaneSightLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="This spell makes your eyes glow blue and allows you to see magical auras within 120 feet of you. The effect is similar to that of a detect magic spell, but arcane sight does not require concentration and discerns aura location and power more quickly. You know the location and power of all magical auras within your sight. An aura's power depends on a spell's functioning level or an item's caster level, as noted in the description of the detect magic spell. If the items or creatures bearing the auras are in line of sight, you can make Spellcraft skill checks to determine the school of magic involved in each. [Make one check per aura; DC 15 + spell level, or 15 + one-half caster level for a nonspell effect.] If you concentrate on a specific creature within 120 feet of you as a standard action, you can determine whether it has any spellcasting or spell-like abilities, whether these are arcane or divine [spell-like abilities register as arcane], and the strength of the most powerful spell or spell-like ability the creature currently has available for use.",
   },
@@ -5912,12 +5810,6 @@ DefineAbility({
       CasterLevel="PermanecyComprehendLanguagesLVL",
     },
   },
-  Definitions={
-    {
-      Name="PermanecyComprehendLanguagesLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="You can understand the spoken words of creatures or read otherwise incomprehensible written messages. In either case, you must touch the creature or the writing. The ability to read does not necessarily impart insight into the material, merely its literal meaning. The spell enables you to understand or read an unknown language, not speak or write it. Written material can be read at the rate of one page [250 words] per minute. Magical writing cannot be read, though the spell reveals that it is magical. This spell can be foiled by certain warding magic [such as the secret page and illusory script spells]. It does not decipher codes or reveal messages concealed in otherwise normal text.",
   },
@@ -5953,12 +5845,6 @@ DefineAbility({
       Times="ATWILL",
       TimeUnit="Day",
       CasterLevel="PermanecyDarkvisionLVL",
-    },
-  },
-  Definitions={
-    {
-      Name="PermanecyDarkvisionLVL",
-      InitialValue=Formula("0"),
     },
   },
   Description={
@@ -6010,12 +5896,6 @@ DefineAbility({
       CasterLevel="PermanecyDetectMagicLVL",
     },
   },
-  Definitions={
-    {
-      Name="PermanecyDetectMagicLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="You detect magical auras. The amount of information revealed depends on how long you study a particular area or subject. &nl;1st Round: Presence or absence of magical auras. &nl;2nd Round: Number of different magical auras and the power of the most potent aura. &nl;3rd Round: The strength and location of each aura. If the items or creatures bearing the auras are in line of sight, you can make Spellcraft skill checks to determine the school of magic involved in each. [Make one check per aura; DC 15 + spell level, or 15 + half caster level for a nonspell effect.] &nl;Magical areas, multiple types of magic, or strong local magical emanations may distort or conceal weaker auras. &nl;Aura Strength: An aura's power depends on a spell's functioning spell level or an item's caster level. If an aura falls into more than one category, detect magic indicates the stronger of the two. &nl;  &pipe;--------- Aura Power --------- &nl;Spell or Object &pipe;Faint &pipe;Moderate &pipe;Strong &pipe;Overwhelming &nl;Functioning spell [spell level] &pipe;3rd or lower &pipe;4th-6th &pipe;7th-9th &pipe;10th+ [deity-level] &nl;Magic item [caster level] &pipe;5th or lower &pipe;6th-11th &pipe;12th-20th &pipe;21st+ [artifact] &nl;Lingering Aura: A magical aura lingers after its original source dissipates [in the case of a spell] or is destroyed [in the case of a magic item]. If detect magic is cast and directed at such a location, the spell indicates an aura strength of dim [even weaker than a faint aura]. How long the aura lingers at this dim level depends on its original power: &nl;Original Strength &pipe;Duration of Lingering Aura &nl;Faint &pipe;1d6 rounds &nl;Moderate &pipe;1d6 minutes &nl;Strong &pipe;1d6x10 minutes &nl;Overwhelming &pipe;1d6 days &nl;Outsiders and elementals are not magical in themselves, but if they are summoned, the conjuration spell registers. &nl;Each round, you can turn to detect magic in a new area. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt blocks it.",
   },
@@ -6051,12 +5931,6 @@ DefineAbility({
       Times="ATWILL",
       TimeUnit="Day",
       CasterLevel="PermanecyReadMagicLVL",
-    },
-  },
-  Definitions={
-    {
-      Name="PermanecyReadMagicLVL",
-      InitialValue=Formula("0"),
     },
   },
   Description={
@@ -6096,12 +5970,6 @@ DefineAbility({
       CasterLevel="PermanecySeeInvisibilityLVL",
     },
   },
-  Definitions={
-    {
-      Name="PermanecySeeInvisibilityLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="You can see any objects or beings that are invisible within your range of vision, as well as any that are ethereal, as if they were normally visible. Such creatures are visible to you as translucent shapes, allowing you easily to discern the difference between visible, invisible, and ethereal creatures. The spell does not reveal the method used to obtain invisibility. It does not reveal illusions or enable you to see through opaque objects. It does not reveal creatures who are simply hiding, concealed, or otherwise hard to see.",
   },
@@ -6139,12 +6007,6 @@ DefineAbility({
       CasterLevel="PermanecyTonguesLVL",
     },
   },
-  Definitions={
-    {
-      Name="PermanecyTonguesLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="This spell grants the creature touched the ability to speak and understand the language of any intelligent creature, whether it is a racial tongue or a regional dialect. The subject can speak only one language at a time, although it may be able to understand several languages. Tongues does not enable the subject to speak with creatures who don't speak. The subject can make itself understood as far as its voice carries. This spell does not predispose any creature addressed toward the subject in any way.",
   },
@@ -6180,12 +6042,6 @@ DefineAbility({
       Times="ATWILL",
       TimeUnit="Day",
       CasterLevel="PermanecyEnlargePersonLVL",
-    },
-  },
-  Definitions={
-    {
-      Name="PermanecyEnlargePersonLVL",
-      InitialValue=Formula("0"),
     },
   },
   Description={
@@ -7647,12 +7503,6 @@ DefineAbility({
       CasterLevel="PermanecyMagicFangLVL",
     },
   },
-  Definitions={
-    {
-      Name="PermanecyMagicFangLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="Magic fang gives one natural weapon of the subject a +1 enhancement bonus on attack and damage rolls. The spell can affect a slam attack, fist, bite, or other natural weapon. [The spell does not change an unarmed strike's damage from nonlethal damage to lethal damage.]",
   },
@@ -7703,12 +7553,6 @@ DefineAbility({
       CasterLevel="PermanecyMagicFangGreaterLVL",
     },
   },
-  Definitions={
-    {
-      Name="PermanecyMagicFangGreaterLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="This spell functions like magic fang, except that the enhancement bonus on attack and damage rolls is +1 per four caster levels [maximum +5]. Alternatively, you may imbue all of the creature's natural weapons with a +1 enhancement bonus [regardless of your caster level].",
   },
@@ -7757,12 +7601,6 @@ DefineAbility({
       Times="ATWILL",
       TimeUnit="Day",
       CasterLevel="PermanecyReducePersonLVL",
-    },
-  },
-  Definitions={
-    {
-      Name="PermanecyReducePersonLVL",
-      InitialValue=Formula("0"),
     },
   },
   Description={
@@ -9238,12 +9076,6 @@ DefineAbility({
       CasterLevel="PermanecyResistanceLVL",
     },
   },
-  Definitions={
-    {
-      Name="PermanecyResistanceLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="You imbue the subject with magical energy that protects it from harm, granting it a +1 resistance bonus on saves.",
   },
@@ -9291,12 +9123,6 @@ DefineAbility({
       Times="ATWILL",
       TimeUnit="Day",
       CasterLevel="PermanecyTelepathicBondLVL",
-    },
-  },
-  Definitions={
-    {
-      Name="PermanecyTelepathicBondLVL",
-      InitialValue=Formula("0"),
     },
   },
   Description={

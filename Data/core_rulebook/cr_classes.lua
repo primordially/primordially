@@ -13,12 +13,6 @@ DefineClass({
     Abb="Brb",
   },
   SourcePage="p.31",
-  Definitions={
-    {
-      Name="BarbarianLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       local count = 0
@@ -165,12 +159,6 @@ DefineClass({
     ClassType="PC",
     Abb="Brb",
   },
-  Definitions={
-    {
-      Name="BarbarianLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="COMBAT",
@@ -301,16 +289,6 @@ DefineClass({
     SpellType="Arcane",
   },
   SourcePage="p.34",
-  Definitions={
-    {
-      Name="BardLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CasterLevelBLBard",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="COMBAT",
@@ -629,20 +607,6 @@ DefineClass({
     SpellType="Divine",
   },
   SourcePage="p.38",
-  Definitions={
-    {
-      Name="ClericLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="ClericDomainCount",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CasterLevelBLCleric",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="COMBAT",
@@ -918,12 +882,6 @@ DefineClass({
     },
     {
       Level="Start=1,Repeat=1",
-      Definitions={
-        {
-          Name="ClericSkillPts",
-          InitialValue=Formula("0"),
-        },
-      },
       Bonuses={
         {
           Category="SKILLPOOL",
@@ -1045,16 +1003,6 @@ DefineClass({
     SpellType="Divine",
   },
   SourcePage="p.48",
-  Definitions={
-    {
-      Name="DruidLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CasterLevelBLDruid",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       local count = 0
@@ -1555,12 +1503,6 @@ DefineClass({
     Abb="Ftr",
   },
   SourcePage="p.55",
-  Definitions={
-    {
-      Name="FighterLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="COMBAT",
@@ -1688,24 +1630,6 @@ DefineClass({
     Abb="Mnk",
   },
   SourcePage="p.56",
-  Definitions={
-    {
-      Name="FlurryOfBlows",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="MonkLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="KiPoolWis",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="MonkFeatQualify",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       local count = 0
@@ -1792,20 +1716,6 @@ DefineClass({
     SpellType="Divine",
   },
   SourcePage="p.60",
-  Definitions={
-    {
-      Name="PaladinLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="PaladinDomainCount",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CasterLevelBLPaladin",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       local count = 0
@@ -2106,12 +2016,6 @@ DefineClass({
     ClassType="PC",
     Abb="XPal",
   },
-  Definitions={
-    {
-      Name="PaladinLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="COMBAT",
@@ -2369,16 +2273,6 @@ DefineClass({
     SpellType="Divine",
   },
   SourcePage="p.64",
-  Definitions={
-    {
-      Name="RangerLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CasterLevelBLRanger",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="COMBAT",
@@ -2647,12 +2541,6 @@ DefineClass({
     },
     {
       Level="1",
-      Definitions={
-        {
-          Name="DisableRangerHuntersBond",
-          InitialValue=Formula("0"),
-        },
-      },
       Bonuses={
         {
           Category="VAR",
@@ -2679,12 +2567,6 @@ DefineClass({
     Abb="Rog",
   },
   SourcePage="p.67",
-  Definitions={
-    {
-      Name="RogueLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="COMBAT",
@@ -2826,16 +2708,6 @@ DefineClass({
     SpellType="Arcane",
   },
   SourcePage="p.70",
-  Definitions={
-    {
-      Name="SorcererLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CasterLevelBLSorcerer",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="COMBAT",
@@ -3154,28 +3026,6 @@ DefineClass({
     SpellType="Arcane",
   },
   SourcePage="p.77",
-  Definitions={
-    {
-      Name="DisallowWizardArcaneSchoolArchetype",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="WizardLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="SpellMasteryQualify",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="Caster_Level_BL_Stripped_Wizard",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CasterLevelBLWizard",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="COMBAT",
@@ -3704,12 +3554,6 @@ DefineClass({
     Abb="Arc",
   },
   SourcePage="p.374",
-  Definitions={
-    {
-      Name="ArcaneArcherLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return 2 <= #filter(character.Abilities, function (ability)
@@ -3903,12 +3747,6 @@ DefineClass({
     Abb="Art",
   },
   SourcePage="p.376",
-  Definitions={
-    {
-      Name="ArcaneTricksterLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       local count = 0
@@ -4150,12 +3988,6 @@ DefineClass({
     Abb="Asn",
   },
   SourcePage="p.378",
-  Definitions={
-    {
-      Name="AssassinLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       local count = 0
@@ -4308,12 +4140,6 @@ DefineClass({
     Abb="DrD",
   },
   SourcePage="p.380",
-  Definitions={
-    {
-      Name="DragonDiscipleLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return (#filter(character.Languages, function (lang)
@@ -4572,12 +4398,6 @@ DefineClass({
     Abb="Dul",
   },
   SourcePage="p.382",
-  Definitions={
-    {
-      Name="DuelistLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return 3 <= #filter(character.Abilities, function (ability)
@@ -4712,12 +4532,6 @@ DefineClass({
     Abb="Elk",
   },
   SourcePage="p.384",
-  Definitions={
-    {
-      Name="EldritchKnightLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -4923,12 +4737,6 @@ DefineClass({
     Abb="Lor",
   },
   SourcePage="p.385",
-  Definitions={
-    {
-      Name="LoremasterLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -5387,12 +5195,6 @@ DefineClass({
     Abb="PfC",
   },
   SourcePage="p.388",
-  Definitions={
-    {
-      Name="PathfinderChroniclerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return ((character.BestSkillOfType("Linguistics").ranks >= 3 and 1 or 0) + (character.BestSkillOfType("Perform (Oratory)").ranks >= 5 and 1 or 0) + (character.BestSkillOfType("Profession (Scribe)").ranks >= 5 and 1 or 0)) >= 3
@@ -5528,12 +5330,6 @@ DefineClass({
     Abb="Shd",
   },
   SourcePage="p.391",
-  Definitions={
-    {
-      Name="ShadowdancerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return 3 <= #filter(character.Abilities, function (ability)
@@ -5674,16 +5470,6 @@ DefineClass({
     SpellType="Divine",
   },
   SourcePage="p.448",
-  Definitions={
-    {
-      Name="AdeptLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CasterLevelBLAdept",
-      InitialValue=Formula("0"),
-    },
-  },
   ClassSkills={
     "TYPE=Craft",
     "Handle Animal",
@@ -6164,12 +5950,6 @@ DefineClass({
     Abb="Ari",
   },
   SourcePage="p.449",
-  Definitions={
-    {
-      Name="AristocratLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   ClassSkills={
     "Appraise",
     "Bluff",
@@ -6351,12 +6131,6 @@ DefineClass({
     Abb="Com",
   },
   SourcePage="p.449",
-  Definitions={
-    {
-      Name="CommonerLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   ClassSkills={
     "Climb",
     "TYPE=Craft",
@@ -6479,12 +6253,6 @@ DefineClass({
     Abb="Exp",
   },
   SourcePage="p.450",
-  Definitions={
-    {
-      Name="ExpertLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="COMBAT",

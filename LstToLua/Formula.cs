@@ -2,11 +2,11 @@
 {
     internal class Formula : IDumpable
     {
-        private readonly string _value;
+        public string Value { get; }
 
         public Formula(string value)
         {
-            _value = value;
+            Value = value;
         }
 
         public static implicit operator Formula(string value)
@@ -17,7 +17,7 @@
         public void Dump(LuaTextWriter output)
         {
             output.Write("Formula(");
-            output.WriteValue(_value);
+            output.WriteValue(Value);
             output.Write(")");
         }
     }

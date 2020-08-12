@@ -11,12 +11,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Pool_AnimalCompanionFeat",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -24,12 +18,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Pool_CompanionLevelIncreaseChoice",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -37,12 +25,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Pool_CompanionStatIncrease",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -50,12 +32,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Pool_CompanionSkill",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 DefineAbility({
@@ -468,16 +444,6 @@ DefineAbility({
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="IntelligenceLockNumber",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DisableIntLock",
-      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -1163,12 +1129,6 @@ DefineAbility({
     },
   },
   SourcePage="p.52",
-  Definitions={
-    {
-      Name="BonusTricks",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="%1",
     Arguments={
@@ -1304,12 +1264,6 @@ DefineAbility({
     },
   },
   SourcePage="p.53",
-  Definitions={
-    {
-      Name="Multiattack",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="An animal companion gains Multiattack as a bonus feat if it has three or more natural attacks and does not already have that feat. If it does not have the requisite three or more natural attacks, the animal companion instead gains a second attack with one of its natural weapons, albeit at a -5 penalty.",
   },
@@ -1750,12 +1704,6 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="CompanionAdvancement",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return not (1 <= #filter(character.Abilities, function (ability)
@@ -3332,12 +3280,6 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   SourcePage="p.232",
-  Definitions={
-    {
-      Name="DiseaseDC",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="Filth Fever: Bite injury; Save Fort DC %1; Onset 1d3 days; Frequency 1/day; Effect 1d3 Dex damage and 1d3 Con damage; Cure 2 consecutive saves.",
     Arguments={
@@ -3382,20 +3324,6 @@ DefineAbility({
     },
   },
   SourcePage="p.51",
-  Definitions={
-    {
-      Name="DeathRollDice",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DeathRollDie",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="DeathRollDamage",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="When grappling a foe of its size or smaller, a crocodile can perform a death roll upon making a successful grapple check. As it clings to its foe, it tucks in its legs and rolls rapidly, twisting and wrenching its victim. The crocodile inflicts its bite damage and knocks the creature prone. If successful, the crocodile maintains its grapple.",
   },
@@ -3437,12 +3365,6 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   SourcePage="p.51",
-  Definitions={
-    {
-      Name="HoldBreathRounds",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="A crocodile can hold its breath for %1 rounds before it risks drowning.",
     Arguments={
@@ -3507,16 +3429,6 @@ DefineAbility({
     },
   },
   SourcePage="p.301",
-  Definitions={
-    {
-      Name="NaturalAttacks",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="TailSlapAttacks",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="VAR",

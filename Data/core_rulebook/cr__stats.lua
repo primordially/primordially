@@ -30,36 +30,8 @@ DefineStat({
   },
   Definitions={
     {
-      Name="PreStatScore_STR",
-      InitialValue=Formula("0"),
-    },
-    {
       Name="MAXLEVELSTAT=STR",
       InitialValue=Formula("STRSCORE-10"),
-    },
-    {
-      Name="LOADSCORE",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="TWOHANDDAMAGEDIVISOR",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="OFFHANDLIGHTBONUS",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="RacialVision",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="OversizeWeaponToHitBonus",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="AltSTRSCORE",
-      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -203,44 +175,8 @@ DefineStat({
   },
   Definitions={
     {
-      Name="PreStatScore_DEX",
-      InitialValue=Formula("0"),
-    },
-    {
       Name="MAXLEVELSTAT=DEX",
       InitialValue=Formula("DEXSCORE-10"),
-    },
-    {
-      Name="INITCOMP",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="ACAbilityStat",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="MXDXEN",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="FightingDefensivelyACBonus",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="FightingDefensivelyAC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="TotalDefenseACBonus",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="TotalDefenseAC",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="AltDEXSCORE",
-      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -386,24 +322,8 @@ DefineStat({
   },
   Definitions={
     {
-      Name="PreStatScore_CON",
-      InitialValue=Formula("0"),
-    },
-    {
       Name="MAXLEVELSTAT=CON",
       InitialValue=Formula("CONSCORE-10"),
-    },
-    {
-      Name="UseAlternateDamage",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="UseCombatManueverBonus",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="AltCONSCORE",
-      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -501,28 +421,8 @@ DefineStat({
   },
   Definitions={
     {
-      Name="PreStatScore_INT",
-      InitialValue=Formula("0"),
-    },
-    {
       Name="MAXLEVELSTAT=INT",
       InitialValue=Formula("MaxLevelStat_Int"),
-    },
-    {
-      Name="AdditionalLanguage",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="BonusRetroSkillPoints",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="MaxLevelStat_Int",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="AltINTSCORE",
-      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -591,16 +491,8 @@ DefineStat({
   },
   Definitions={
     {
-      Name="PreStatScore_WIS",
-      InitialValue=Formula("0"),
-    },
-    {
       Name="MAXLEVELSTAT=WIS",
       InitialValue=Formula("WISSCORE-10"),
-    },
-    {
-      Name="AltWISSCORE",
-      InitialValue=Formula("0"),
     },
   },
   Bonuses={
@@ -648,36 +540,8 @@ DefineStat({
   },
   Definitions={
     {
-      Name="PreStatScore_CHA",
-      InitialValue=Formula("0"),
-    },
-    {
       Name="MAXLEVELSTAT=CHA",
       InitialValue=Formula("CHASCORE-10"),
-    },
-    {
-      Name="BypassSizeMods",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="NormalMount",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="SizeIncrease",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="SizeDecrease",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="NormalFollower",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="AltCHASCORE",
-      InitialValue=Formula("0"),
     },
   },
   Bonuses={
