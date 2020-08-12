@@ -7,7 +7,7 @@ namespace Primordially.LstToLua
 {
     internal class Bonus : ConditionalObject
     {
-        public Bonus(string category, IReadOnlyList<string> variables, BonusType? type, string? formula)
+        public Bonus(string category, IReadOnlyList<string> variables, BonusType? type, string formula)
         {
             Category = category;
             Variables = variables;
@@ -51,7 +51,25 @@ namespace Primordially.LstToLua
                 formula = part.Value;
             }
 
+            if (formula == null)
+            {
+                formula = "%CHOICEVALUE";
+            }
+            
             var variables = variableSpan.Split(',').Select(t => t.Value).ToList();
+
+            if (category.Value == "ITEMCOST")
+            {
+                variables.Clear();
+                variables.Add("Cost");
+                if (!variableSpan.TryRemovePrefix("TYPE.", out var types))
+                {
+                    throw new ParseFailedException(value, "Unable to parse bonus.");
+                }
+
+                var allTypes = types.Value.Split('.').Select(t => $"item.IsType(\"{t}\")").ToList();
+                conditions.Add(new EquipmentTypeCondition(false, allTypes.Count, allTypes));
+            }
 
             var result = new Bonus(category.Value, variables, type, formula);
             foreach (var condition in conditions)

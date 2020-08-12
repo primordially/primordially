@@ -44,60 +44,75 @@ DefineEquipment({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.Amulet of Mighty Fists",
+        "Cost",
       },
       Formula=Formula("4000"),
       Conditions={
         function (item)
           return ((item.HasModifierType("Amulet of Mighty Fists"))) >= 1
         end,
+        function (item)
+          return ((item.IsType("Amulet of Mighty Fists"))) >= 1
+        end,
       },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.Amulet of Mighty Fists",
+        "Cost",
       },
       Formula=Formula("12000"),
       Conditions={
         function (item)
           return ((item.HasModifierType("Amulet of Mighty Fists"))) >= 1
         end,
+        function (item)
+          return ((item.IsType("Amulet of Mighty Fists"))) >= 1
+        end,
       },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.Amulet of Mighty Fists",
+        "Cost",
       },
       Formula=Formula("20000"),
       Conditions={
         function (item)
           return ((item.HasModifierType("Amulet of Mighty Fists"))) >= 1
         end,
-      },
-    },
-    {
-      Category="ITEMCOST",
-      Variables={
-        "TYPE.Amulet of Mighty Fists",
-      },
-      Formula=Formula("28000"),
-      Conditions={
         function (item)
-          return ((item.HasModifierType("Amulet of Mighty Fists"))) >= 1
+          return ((item.IsType("Amulet of Mighty Fists"))) >= 1
         end,
       },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.Amulet of Mighty Fists",
+        "Cost",
+      },
+      Formula=Formula("28000"),
+      Conditions={
+        function (item)
+          return ((item.HasModifierType("Amulet of Mighty Fists"))) >= 1
+        end,
+        function (item)
+          return ((item.IsType("Amulet of Mighty Fists"))) >= 1
+        end,
+      },
+    },
+    {
+      Category="ITEMCOST",
+      Variables={
+        "Cost",
       },
       Formula=Formula("36000"),
       Conditions={
         function (item)
           return ((item.HasModifierType("Amulet of Mighty Fists"))) >= 1
+        end,
+        function (item)
+          return ((item.IsType("Amulet of Mighty Fists"))) >= 1
         end,
       },
     },

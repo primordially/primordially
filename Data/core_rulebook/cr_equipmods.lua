@@ -259,9 +259,14 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("300"),
+      Conditions={
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
+        end,
+      },
     },
     {
       Category="WEAPON",
@@ -308,9 +313,14 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.AMMUNITION",
+        "Cost",
       },
       Formula=Formula("6"),
+      Conditions={
+        function (item)
+          return ((item.IsType("AMMUNITION"))) >= 1
+        end,
+      },
     },
     {
       Category="WEAPON",
@@ -367,16 +377,26 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.ARMOR",
+        "Cost",
       },
       Formula=Formula("150"),
+      Conditions={
+        function (item)
+          return ((item.IsType("ARMOR"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.SHIELD",
+        "Cost",
       },
       Formula=Formula("150"),
+      Conditions={
+        function (item)
+          return ((item.IsType("SHIELD"))) >= 1
+        end,
+      },
     },
   },
   SourcePage="p.153",
@@ -408,16 +428,26 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.THIEF",
+        "Cost",
       },
       Formula=Formula("20"),
+      Conditions={
+        function (item)
+          return ((item.IsType("THIEF"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.INSTRUMENT",
+        "Cost",
       },
       Formula=Formula("45"),
+      Conditions={
+        function (item)
+          return ((item.IsType("INSTRUMENT"))) >= 1
+        end,
+      },
     },
   },
   SourcePage="p.160",
@@ -525,77 +555,125 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.MASTERWORK",
+        "Cost",
       },
       Formula=Formula("-294"),
-    },
-    {
-      Category="ITEMCOST",
-      Variables={
-        "TYPE.ADAMANTINE",
-      },
-      Formula=Formula("-2646"),
-    },
-    {
-      Category="ITEMCOST",
-      Variables={
-        "TYPE.SILVER",
-      },
-      Formula=Formula("-18"),
-    },
-    {
-      Category="ITEMCOST",
-      Variables={
-        "TYPE.MITHRAL",
-      },
-      Formula=Formula("319"),
-    },
-    {
-      Category="ITEMCOST",
-      Variables={
-        "TYPE.COLDIRON",
-      },
-      Formula=Formula("-1960"),
       Conditions={
         function (item)
-          return ((item.IsType("WeaponEnhancement"))) >= 1
+          return ((item.IsType("MASTERWORK"))) >= 1
         end,
       },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.PLUS1",
+        "Cost",
+      },
+      Formula=Formula("-2646"),
+      Conditions={
+        function (item)
+          return ((item.IsType("ADAMANTINE"))) >= 1
+        end,
+      },
+    },
+    {
+      Category="ITEMCOST",
+      Variables={
+        "Cost",
+      },
+      Formula=Formula("-18"),
+      Conditions={
+        function (item)
+          return ((item.IsType("SILVER"))) >= 1
+        end,
+      },
+    },
+    {
+      Category="ITEMCOST",
+      Variables={
+        "Cost",
+      },
+      Formula=Formula("319"),
+      Conditions={
+        function (item)
+          return ((item.IsType("MITHRAL"))) >= 1
+        end,
+      },
+    },
+    {
+      Category="ITEMCOST",
+      Variables={
+        "Cost",
       },
       Formula=Formula("-1960"),
+      Conditions={
+        function (item)
+          return ((item.IsType("WeaponEnhancement"))) >= 1
+        end,
+        function (item)
+          return ((item.IsType("COLDIRON"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.PLUS2",
+        "Cost",
+      },
+      Formula=Formula("-1960"),
+      Conditions={
+        function (item)
+          return ((item.IsType("PLUS1"))) >= 1
+        end,
+      },
+    },
+    {
+      Category="ITEMCOST",
+      Variables={
+        "Cost",
       },
       Formula=Formula("-7840"),
+      Conditions={
+        function (item)
+          return ((item.IsType("PLUS2"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.PLUS3",
+        "Cost",
       },
       Formula=Formula("-17640"),
+      Conditions={
+        function (item)
+          return ((item.IsType("PLUS3"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.PLUS4",
+        "Cost",
       },
       Formula=Formula("-31360"),
+      Conditions={
+        function (item)
+          return ((item.IsType("PLUS4"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.PLUS5",
+        "Cost",
       },
       Formula=Formula("-49000"),
+      Conditions={
+        function (item)
+          return ((item.IsType("PLUS5"))) >= 1
+        end,
+      },
     },
   },
 })
@@ -621,24 +699,30 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.SHORTBOW",
+        "Cost",
       },
       Formula=Formula("75*%CHOICE"),
       Conditions={
         function (character)
           return (character.Variables["%CHOICE"] > 0)
         end,
+        function (item)
+          return ((item.IsType("SHORTBOW"))) >= 1
+        end,
       },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.LONGBOW",
+        "Cost",
       },
       Formula=Formula("100*%CHOICE"),
       Conditions={
         function (character)
           return (character.Variables["%CHOICE"] > 0)
+        end,
+        function (item)
+          return ((item.IsType("LONGBOW"))) >= 1
         end,
       },
     },
@@ -1009,9 +1093,14 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("-BASECOST*.25"),
+      Conditions={
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
+        end,
+      },
     },
     {
       Category="WEAPON",
@@ -1058,9 +1147,14 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.ARMOR",
+        "Cost",
       },
       Formula=Formula("-BASECOST*.25"),
+      Conditions={
+        function (item)
+          return ((item.IsType("ARMOR"))) >= 1
+        end,
+      },
     },
   },
   SpecialProperties={
@@ -1094,9 +1188,14 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.SHIELD",
+        "Cost",
       },
       Formula=Formula("-BASECOST*.25"),
+      Conditions={
+        function (item)
+          return ((item.IsType("SHIELD"))) >= 1
+        end,
+      },
     },
   },
   SpecialProperties={
@@ -1130,9 +1229,14 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.TOOLS",
+        "Cost",
       },
       Formula=Formula("-BASECOST*.25"),
+      Conditions={
+        function (item)
+          return ((item.IsType("TOOLS"))) >= 1
+        end,
+      },
     },
   },
   SpecialProperties={
@@ -1167,16 +1271,26 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WAND",
+        "Cost",
       },
       Formula=Formula("-BASECOST*.25"),
+      Conditions={
+        function (item)
+          return ((item.IsType("WAND"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.STAFF",
+        "Cost",
       },
       Formula=Formula("-BASECOST*.25"),
+      Conditions={
+        function (item)
+          return ((item.IsType("STAFF"))) >= 1
+        end,
+      },
     },
   },
   SpecialProperties={
@@ -2850,28 +2964,41 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.AMMUNITION",
+        "Cost",
       },
       Formula=Formula("6"),
-    },
-    {
-      Category="ITEMCOST",
-      Variables={
-        "TYPE.WEAPON",
-      },
-      Formula=Formula("300"),
       Conditions={
         function (item)
-          return not (((item.IsType("Shield"))) >= 1)
+          return ((item.IsType("AMMUNITION"))) >= 1
         end,
       },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.SHIELD",
+        "Cost",
+      },
+      Formula=Formula("300"),
+      Conditions={
+        function (item)
+          return not (((item.IsType("Shield"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
+        end,
+      },
+    },
+    {
+      Category="ITEMCOST",
+      Variables={
+        "Cost",
       },
       Formula=Formula("150"),
+      Conditions={
+        function (item)
+          return ((item.IsType("SHIELD"))) >= 1
+        end,
+      },
     },
     {
       Category="WEAPON",
@@ -2985,40 +3112,56 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("(BASECOST)"),
       Conditions={
         function (item)
           return not (((item.IsType("Double"))) >= 1)
         end,
-      },
-    },
-    {
-      Category="ITEMCOST",
-      Variables={
-        "TYPE.WEAPON",
-      },
-      Formula=Formula("(BASECOST)/2"),
-      Conditions={
         function (item)
-          return ((item.IsType("Double"))) >= 1
+          return ((item.IsType("WEAPON"))) >= 1
         end,
       },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.Enhancement.AMMUNITION",
+        "Cost",
       },
-      Formula=Formula("40"),
+      Formula=Formula("(BASECOST)/2"),
+      Conditions={
+        function (item)
+          return ((item.IsType("Double"))) >= 1
+        end,
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.Enhancement.WEAPON",
+        "Cost",
+      },
+      Formula=Formula("40"),
+      Conditions={
+        function (item)
+          return ((item.IsType("Enhancement")) + (item.IsType("AMMUNITION"))) >= 2
+        end,
+      },
+    },
+    {
+      Category="ITEMCOST",
+      Variables={
+        "Cost",
       },
       Formula=Formula("2000"),
+      Conditions={
+        function (item)
+          return ((item.IsType("Enhancement")) + (item.IsType("WEAPON"))) >= 2
+        end,
+      },
     },
   },
   SpecialProperties={
@@ -3061,14 +3204,19 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.AMMUNITION",
+        "Cost",
       },
       Formula=Formula("2"),
+      Conditions={
+        function (item)
+          return ((item.IsType("AMMUNITION"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("20"),
       Conditions={
@@ -3089,12 +3237,15 @@ DefineEquipmentModifier({
           end
           return count >= 2
         end,
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
+        end,
       },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("90"),
       Conditions={
@@ -3115,12 +3266,15 @@ DefineEquipmentModifier({
           end
           return count >= 2
         end,
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
+        end,
       },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("180"),
       Conditions={
@@ -3141,17 +3295,23 @@ DefineEquipmentModifier({
           end
           return count >= 2
         end,
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
+        end,
       },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("90"),
       Conditions={
         function (item)
           return ((item.IsType("Double"))) >= 1
+        end,
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
         end,
       },
     },
@@ -3783,7 +3943,7 @@ DefineEquipmentModifier({
       Variables={
         "%CHOICE",
       },
-      Formula=Formula(""),
+      Formula=Formula("%CHOICEVALUE"),
       Type={
         Name="Enhancement",
         Replace=false,
@@ -5996,19 +6156,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("300"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
         end,
       },
     },
@@ -6064,19 +6232,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("300"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
         end,
       },
     },
@@ -6132,19 +6308,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("300"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
         end,
       },
     },
@@ -6200,19 +6384,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("300"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
         end,
       },
     },
@@ -6268,19 +6460,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.WEAPON",
+        "Cost",
       },
       Formula=Formula("300"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
         end,
       },
     },
@@ -6336,19 +6536,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.AMMUNITION",
+        "Cost",
       },
       Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("AMMUNITION"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.AMMUNITION",
+        "Cost",
       },
       Formula=Formula("6"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("AMMUNITION"))) >= 1
         end,
       },
     },
@@ -6401,19 +6609,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.AMMUNITION",
+        "Cost",
       },
       Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("AMMUNITION"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.AMMUNITION",
+        "Cost",
       },
       Formula=Formula("6"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("AMMUNITION"))) >= 1
         end,
       },
     },
@@ -6466,19 +6682,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.AMMUNITION",
+        "Cost",
       },
       Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("AMMUNITION"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.AMMUNITION",
+        "Cost",
       },
       Formula=Formula("6"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("AMMUNITION"))) >= 1
         end,
       },
     },
@@ -6531,19 +6755,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.AMMUNITION",
+        "Cost",
       },
       Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("AMMUNITION"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.AMMUNITION",
+        "Cost",
       },
       Formula=Formula("6"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("AMMUNITION"))) >= 1
         end,
       },
     },
@@ -6596,19 +6828,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.AMMUNITION",
+        "Cost",
       },
       Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("AMMUNITION"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.AMMUNITION",
+        "Cost",
       },
       Formula=Formula("6"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("AMMUNITION"))) >= 1
         end,
       },
     },
@@ -8906,19 +9146,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.ARMOR",
+        "Cost",
       },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("ARMOR"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.ARMOR",
+        "Cost",
       },
       Formula=Formula("150"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("ARMOR"))) >= 1
         end,
       },
     },
@@ -8982,19 +9230,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.ARMOR",
+        "Cost",
       },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("ARMOR"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.ARMOR",
+        "Cost",
       },
       Formula=Formula("150"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("ARMOR"))) >= 1
         end,
       },
     },
@@ -9058,19 +9314,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.ARMOR",
+        "Cost",
       },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("ARMOR"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.ARMOR",
+        "Cost",
       },
       Formula=Formula("150"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("ARMOR"))) >= 1
         end,
       },
     },
@@ -9134,19 +9398,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.ARMOR",
+        "Cost",
       },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("ARMOR"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.ARMOR",
+        "Cost",
       },
       Formula=Formula("150"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("ARMOR"))) >= 1
         end,
       },
     },
@@ -9210,19 +9482,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.ARMOR",
+        "Cost",
       },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("ARMOR"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.ARMOR",
+        "Cost",
       },
       Formula=Formula("150"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("ARMOR"))) >= 1
         end,
       },
     },
@@ -9286,19 +9566,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.SHIELD",
+        "Cost",
       },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("SHIELD"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.SHIELD",
+        "Cost",
       },
       Formula=Formula("150"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("SHIELD"))) >= 1
         end,
       },
     },
@@ -9362,19 +9650,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.SHIELD",
+        "Cost",
       },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("SHIELD"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.SHIELD",
+        "Cost",
       },
       Formula=Formula("150"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("SHIELD"))) >= 1
         end,
       },
     },
@@ -9438,19 +9734,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.SHIELD",
+        "Cost",
       },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("SHIELD"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.SHIELD",
+        "Cost",
       },
       Formula=Formula("150"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("SHIELD"))) >= 1
         end,
       },
     },
@@ -9514,19 +9818,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.SHIELD",
+        "Cost",
       },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("SHIELD"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.SHIELD",
+        "Cost",
       },
       Formula=Formula("150"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("SHIELD"))) >= 1
         end,
       },
     },
@@ -9590,19 +9902,27 @@ DefineEquipmentModifier({
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.SHIELD",
+        "Cost",
       },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("SHIELD"))) >= 1
+        end,
+      },
     },
     {
       Category="ITEMCOST",
       Variables={
-        "TYPE.SHIELD",
+        "Cost",
       },
       Formula=Formula("150"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("SHIELD"))) >= 1
         end,
       },
     },
