@@ -218,10 +218,8 @@ namespace Primordially.LstToLua
                     }
                 });
             }
-            if (Definitions.Any())
-            {
-                output.WriteListValue("Definitions", Definitions);
-            }
+            var definitions = Definitions.Where(d => !d.IsUseless).ToList();
+            output.WriteListValue("Definitions", definitions);
             if (TemporaryBonuses.Any())
             {
                 output.WriteObjectValue("TemporaryBonuses", () =>

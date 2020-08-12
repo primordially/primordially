@@ -400,16 +400,6 @@ DefineAbility({
     },
   },
   SourcePage="p.118",
-  Definitions={
-    {
-      Name="ArcaneStrikeDamageBonus",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="ArcaneStrikeLVL",
-      InitialValue=Formula("0"),
-    },
-  },
   TemporaryBonuses={
     Bonuses={
       {
@@ -940,20 +930,6 @@ DefineAbility({
     },
   },
   SourcePage="p.119",
-  Definitions={
-    {
-      Name="CombatExpertiseModifier",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CombatExpertiseModifierAttack",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CombatExpertiseModifierAC",
-      InitialValue=Formula("0"),
-    },
-  },
   TemporaryBonuses={
     Bonuses={
       {
@@ -1101,20 +1077,6 @@ DefineAbility({
     },
   },
   SourcePage="p.119",
-  Definitions={
-    {
-      Name="CombatExpertiseModifier",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CombatExpertiseModifierAttack",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CombatExpertiseModifierAC",
-      InitialValue=Formula("0"),
-    },
-  },
   TemporaryBonuses={
     Bonuses={
       {
@@ -1237,12 +1199,6 @@ DefineAbility({
     },
   },
   SourcePage="p.119",
-  Definitions={
-    {
-      Name="CombatReflexesAttacks",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="You can make additional attacks of opportunity.",
   },
@@ -1635,12 +1591,6 @@ DefineAbility({
     },
   },
   SourcePage="p.121",
-  Definitions={
-    {
-      Name="DeadlyAimModifier",
-      InitialValue=Formula("0"),
-    },
-  },
   TemporaryBonuses={
     Bonuses={
       {
@@ -2159,12 +2109,6 @@ DefineAbility({
     },
   },
   SourcePage="p.112",
-  Definitions={
-    {
-      Name="Feat_Endurance_SaveBonus",
-      InitialValue=Formula("0"),
-    },
-  },
   Description={
     Format="Harsh conditions or long exertions do not easily tire you.",
   },
@@ -4372,20 +4316,6 @@ DefineAbility({
     },
   },
   SourcePage="p.129",
-  Definitions={
-    {
-      Name="LeadershipMaxCohortLvl",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="LeadershipScore",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="LeadershipAbilityScoreMod",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return character.Level >= 7
@@ -4658,12 +4588,6 @@ DefineAbility({
     MaxTimes=1,
   },
   SourcePage="p.130",
-  Definitions={
-    {
-      Name="MasterCraftsmanRanks",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return ((character.Skill("(122,133): Craft").ranks >= 5 and 1 or 0) + (character.Skill("(122,146): Profession").ranks >= 5 and 1 or 0)) >= 1
@@ -4911,12 +4835,6 @@ DefineAbility({
     },
   },
   SourcePage="p.131",
-  Definitions={
-    {
-      Name="Feat_NimbleMoves_Squares",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       local count = 0
@@ -5179,24 +5097,6 @@ DefineAbility({
     },
   },
   SourcePage="p.131",
-  Definitions={
-    {
-      Name="PowerAttackModifier",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="MonkFlurryPowerAttackModifier",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="PowerAttackDamageModifier",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="PowerAttackDamageBase",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return character.TotalAttackBonus >= 1
@@ -6520,20 +6420,6 @@ DefineAbility({
     },
   },
   SourcePage="p.135",
-  Definitions={
-    {
-      Name="StunningFistMonkLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="StunningFistAttack",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="StunningFistDC",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -6857,12 +6743,6 @@ DefineAbility({
     },
   },
   SourcePage="p.136",
-  Definitions={
-    {
-      Name="TwoWeaponShield",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -7156,12 +7036,6 @@ DefineAbility({
     end),
   },
   SourcePage="p.136",
-  Definitions={
-    {
-      Name="WeaponFocusToHit",
-      InitialValue=Formula("0"),
-    },
-  },
   Conditions={
     function (character)
       return character.TotalAttackBonus >= 1
@@ -7956,12 +7830,6 @@ ModifyAbility({
   Category="Feat",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HasWeaponFinesseFeat",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="VAR",

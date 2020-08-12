@@ -17,6 +17,7 @@ namespace Primordially.LstToLua
 
         protected override void DumpMembers(LuaTextWriter output)
         {
+            var definitions = Definitions.Where(d => !d.IsUseless).ToList();
             output.WriteKeyValue("Name", Name);
             output.WriteKeyValue("SortKey", SortKey);
             output.WriteKeyValue("Abbreviation", Abbreviation);
@@ -34,7 +35,7 @@ namespace Primordially.LstToLua
                     output.Write(",\n");
                 }
             });
-            output.WriteListValue("Definitions", Definitions);
+            output.WriteListValue("Definitions", definitions);
             output.WriteListValue("Bonuses", Bonuses);
             output.WriteListValue("Abilities", Abilities);
             base.DumpMembers(output);

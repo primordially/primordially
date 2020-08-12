@@ -19,12 +19,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Dwarf_ReplaceAbilityScores",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -44,12 +38,6 @@ ModifyAbility({
           return (character.Variables["Dwarf_ReplaceSize"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Dwarf_ReplaceSize",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -73,12 +61,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Dwarf_ReplaceSpeed",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -98,12 +80,6 @@ ModifyAbility({
           return (character.Variables["Dwarf_ReplaceVision"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Dwarf_ReplaceVision",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -127,12 +103,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Dwarf_ReplaceDefensiveTraining",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -152,12 +122,6 @@ ModifyAbility({
           return (character.Variables["Dwarf_ReplaceGreed"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Dwarf_ReplaceGreed",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -181,12 +145,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Dwarf_ReplaceHatred",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -206,12 +164,6 @@ ModifyAbility({
           return (character.Variables["Dwarf_ReplaceHardy"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Dwarf_ReplaceHardy",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -235,12 +187,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Dwarf_ReplaceStability",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -260,12 +206,6 @@ ModifyAbility({
           return (character.Variables["Dwarf_ReplaceStonecunning"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Dwarf_ReplaceStonecunning",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -289,12 +229,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Dwarf_ReplaceWeaponFamiliarity",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -314,12 +248,6 @@ ModifyAbility({
           return (character.Variables["Dwarf_ReplaceLanguages"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Dwarf_ReplaceLanguages",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -825,12 +753,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Elf_ReplaceAbilityScores",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -850,12 +772,6 @@ ModifyAbility({
           return (character.Variables["Elf_ReplaceSize"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Elf_ReplaceSize",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -879,12 +795,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Elf_ReplaceSpeed",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -904,12 +814,6 @@ ModifyAbility({
           return (character.Variables["Elf_ReplaceVision"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Elf_ReplaceVision",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -933,12 +837,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Elf_ReplaceElvenImmunities",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -958,12 +856,6 @@ ModifyAbility({
           return (character.Variables["Elf_ReplaceElvenMagic"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Elf_ReplaceElvenMagic",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -987,12 +879,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Elf_ReplaceKeenSenses",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -1014,12 +900,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Elf_ReplaceWeaponFamiliarity",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -1039,12 +919,6 @@ ModifyAbility({
           return (character.Variables["Elf_ReplaceLanguages"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Elf_ReplaceLanguages",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -1395,12 +1269,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Gnome_ReplaceAbilityScores",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -1420,12 +1288,6 @@ ModifyAbility({
           return (character.Variables["Gnome_ReplaceSize"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Gnome_ReplaceSize",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -1449,12 +1311,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Gnome_ReplaceSpeed",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -1474,12 +1330,6 @@ ModifyAbility({
           return (character.Variables["Gnome_ReplaceVision"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Gnome_ReplaceVision",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -1503,12 +1353,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Gnome_ReplaceDefensiveTraining",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -1528,12 +1372,6 @@ ModifyAbility({
           return (character.Variables["Gnome_ReplaceGnomeMagic"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Gnome_ReplaceGnomeMagic",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -1557,12 +1395,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Gnome_ReplaceHatred",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -1582,12 +1414,6 @@ ModifyAbility({
           return (character.Variables["Gnome_ReplaceIllusionResistance"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Gnome_ReplaceIllusionResistance",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -1611,12 +1437,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Gnome_ReplaceKeenSenses",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -1636,12 +1456,6 @@ ModifyAbility({
           return (character.Variables["Gnome_ReplaceObsessive"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Gnome_ReplaceObsessive",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -1665,12 +1479,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Gnome_ReplaceWeaponFamiliarity",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -1690,12 +1498,6 @@ ModifyAbility({
           return (character.Variables["Gnome_ReplaceLanguages"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Gnome_ReplaceLanguages",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -2178,12 +1980,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="HalfElf_ReplaceAbilityScores",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -2203,12 +1999,6 @@ ModifyAbility({
           return (character.Variables["HalfElf_ReplaceSize"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="HalfElf_ReplaceSize",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -2232,12 +2022,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="HalfElf_ReplaceSpeed",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -2257,12 +2041,6 @@ ModifyAbility({
           return (character.Variables["HalfElf_ReplaceVision"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="HalfElf_ReplaceVision",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -2286,12 +2064,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="HalfElf_ReplaceAdaptability",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -2311,12 +2083,6 @@ ModifyAbility({
           return (character.Variables["HalfElf_ReplaceElfBlood"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="HalfElf_ReplaceElfBlood",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -2340,12 +2106,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="HalfElf_ReplaceElvenImmunities",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -2365,12 +2125,6 @@ ModifyAbility({
           return (character.Variables["HalfElf_ReplaceKeenSenses"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="HalfElf_ReplaceKeenSenses",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -2394,12 +2148,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="HalfElf_ReplaceMultitalented",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -2419,12 +2167,6 @@ ModifyAbility({
           return (character.Variables["HalfElf_ReplaceLanguages"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="HalfElf_ReplaceLanguages",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -2796,12 +2538,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceAbilityScores",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -2821,12 +2557,6 @@ ModifyAbility({
           return (character.Variables["HalfOrc_ReplaceSize"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceSize",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -2850,12 +2580,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceSpeed",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -2875,12 +2599,6 @@ ModifyAbility({
           return (character.Variables["HalfOrc_ReplaceVision"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceVision",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -2904,12 +2622,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceIntimidating",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -2929,12 +2641,6 @@ ModifyAbility({
           return (character.Variables["HalfOrc_ReplaceOrcBlood"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceOrcBlood",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -2958,12 +2664,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceOrcFerocity",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -2985,12 +2685,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceWeaponFamiliarity",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -3010,12 +2704,6 @@ ModifyAbility({
           return (character.Variables["HalfOrc_ReplaceLanguages"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceLanguages",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -3343,12 +3031,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Halfling_ReplaceAbilityScores",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -3368,12 +3050,6 @@ ModifyAbility({
           return (character.Variables["Halfling_ReplaceSize"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Halfling_ReplaceSize",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -3397,12 +3073,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Halfling_ReplaceSpeed",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -3422,12 +3092,6 @@ ModifyAbility({
           return (character.Variables["Halfling_ReplaceFearless"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Halfling_ReplaceFearless",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -3451,12 +3115,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Halfling_ReplaceHalflingLuck",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -3476,12 +3134,6 @@ ModifyAbility({
           return (character.Variables["Halfling_ReplaceKeenSenses"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Halfling_ReplaceKeenSenses",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -3505,12 +3157,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Halfling_ReplaceSureFooted",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -3532,12 +3178,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Halfling_ReplaceWeaponFamiliarity",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -3557,12 +3197,6 @@ ModifyAbility({
           return (character.Variables["Halfling_ReplaceLanguages"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Halfling_ReplaceLanguages",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -3913,12 +3547,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Human_ReplaceAbilityScores",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -3938,12 +3566,6 @@ ModifyAbility({
           return (character.Variables["Human_ReplaceSize"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Human_ReplaceSize",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -3967,12 +3589,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Human_ReplaceSpeed",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -3992,12 +3608,6 @@ ModifyAbility({
           return (character.Variables["Human_ReplaceBonusFeat"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Human_ReplaceBonusFeat",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -4021,12 +3631,6 @@ ModifyAbility({
       },
     },
   },
-  Definitions={
-    {
-      Name="Human_ReplaceSkilled",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4046,12 +3650,6 @@ ModifyAbility({
           return (character.Variables["Human_ReplaceLanguages"] == 0)
         end,
       },
-    },
-  },
-  Definitions={
-    {
-      Name="Human_ReplaceLanguages",
-      InitialValue=Formula("0"),
     },
   },
 })
@@ -4256,12 +3854,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_Rage",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4269,12 +3861,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_FastMovement",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4282,12 +3868,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_RagePowers",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4295,12 +3875,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_RagePower2",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4308,12 +3882,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_RagePower4",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4321,12 +3889,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_RagePower6",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4334,12 +3896,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_RagePower8",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4347,12 +3903,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_RagePower10",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4360,12 +3910,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_RagePower12",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4373,12 +3917,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_RagePower14",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4386,12 +3924,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_RagePower16",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4399,12 +3931,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_RagePower18",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4412,12 +3938,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_RagePower20",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4425,12 +3945,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_TrapSense",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4438,12 +3952,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_TrapSense1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4451,12 +3959,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_TrapSense2",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4464,12 +3966,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_TrapSense3",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4477,12 +3973,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_TrapSense4",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4490,12 +3980,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_TrapSense5",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4503,12 +3987,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_TrapSense6",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4516,12 +3994,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_DamageReduction",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4529,12 +4001,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_DamageReduction1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4542,12 +4008,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_DamageReduction2",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4555,12 +4015,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_DamageReduction3",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4568,12 +4022,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_DamageReduction4",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4581,12 +4029,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_DamageReduction5",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4594,12 +4036,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_GreaterRage",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4607,12 +4043,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_IndomitableWill",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4620,12 +4050,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_TirelessRage",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4633,12 +4057,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_MightyRage",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4646,12 +4064,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_Proficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4659,12 +4071,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_UncannyDodge",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4672,12 +4078,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_ImprovedUncannyDodge",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4685,12 +4085,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_ClassSkills",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4698,12 +4092,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_WeaponProficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -4711,12 +4099,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Barbarian_CF_ArmorProficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6426,12 +5808,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_BardicKnowledge",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6439,12 +5815,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_CounterSong",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6452,12 +5822,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_BardicPerformance",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6465,12 +5829,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_ArmoredCasting",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6478,12 +5836,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_Cantrips",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6491,12 +5843,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_VersatilePerformance",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6504,12 +5850,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_WellVersed",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6517,12 +5857,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_LoreMaster",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6530,12 +5864,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_JackOfAllTrades",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6543,12 +5871,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_ClassSkills",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6556,12 +5878,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_Proficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6569,12 +5885,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_BardDistraction",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6582,12 +5892,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_Fascinate",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6595,12 +5899,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_InspireCourage",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6608,12 +5906,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_InspireCompetence",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6621,12 +5913,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_Suggestion",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6634,12 +5920,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_DirgeOfDoom",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6647,12 +5927,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_InspireGreatness",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6660,12 +5934,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_SoothingPerformance",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6673,12 +5941,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_FrighteningTune",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6686,12 +5948,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_InspireHeroics",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6699,12 +5955,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_MassSuggestion",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6712,12 +5962,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_DeadlyPerformance",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6725,12 +5969,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_InspireCourage1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6738,12 +5976,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_InspireCourage2",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6751,12 +5983,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_InspireCourage3",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6764,12 +5990,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_InspireCourage4",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6777,12 +5997,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_InspireCompetence1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6790,12 +6004,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_InspireCompetence2",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6803,12 +6011,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_InspireCompetence3",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6816,12 +6018,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_InspireCompetence4",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6829,12 +6025,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_InspireCompetence5",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -6842,12 +6032,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Bard_CF_InspireCompetence6",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -7824,12 +7008,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_ChannelEnergy",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -7837,12 +7015,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_Orisons",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -7850,12 +7022,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_SpontaneousCasting",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -7863,12 +7029,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_Proficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -7876,12 +7036,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_ArmorProficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -7889,12 +7043,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_WeaponProficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -7902,12 +7050,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_Domains",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -7915,12 +7057,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_ArmorProficiency",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -7928,12 +7064,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_WeaponProficiency",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -7941,12 +7071,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_ClassSkills",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -7954,12 +7078,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_SkillRanks",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -7967,12 +7085,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_Spellcasting",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -7980,12 +7092,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_ChannelEnergy1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -7993,12 +7099,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_ChannelEnergy2",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8006,12 +7106,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_ChannelEnergy3",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8019,12 +7113,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_ChannelEnergy4",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8032,12 +7120,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_ChannelEnergy5",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8045,12 +7127,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_ChannelEnergy6",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8058,12 +7134,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_ChannelEnergy7",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8071,12 +7141,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_ChannelEnergy8",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8084,12 +7148,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_ChannelEnergy9",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8097,12 +7155,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Cleric_CF_ChannelEnergy10",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8724,12 +7776,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_ArmorProficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8737,12 +7783,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WeaponProficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8750,12 +7790,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_SpontaneousCasting",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8763,12 +7797,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_NatureSense",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8776,12 +7804,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildEmpathy",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8789,12 +7811,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WoodlandStride",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8802,12 +7818,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_TracklessStep",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8815,12 +7825,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildShape",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8828,12 +7832,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_ResistNaturesLure",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8841,12 +7839,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_VenomImmunity",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8854,12 +7846,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_AThousandFaces",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8867,12 +7853,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_TimelessBody",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8880,12 +7860,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_NatureBond",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8893,12 +7867,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_ClassSkills",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8906,12 +7874,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildShapeUses4",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8919,12 +7881,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildShapeUses6",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8932,12 +7888,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildShapeUses8",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8945,12 +7895,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildShapeUses10",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8958,12 +7902,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildShapeUses12",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8971,12 +7909,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildShapeUses14",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8984,12 +7916,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildShapeUses16",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -8997,12 +7923,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildShapeUses18",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -9010,12 +7930,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildShapeUses20",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -9023,12 +7937,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildShapeOptions4",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -9036,12 +7944,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildShapeOptions6",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -9049,12 +7951,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildShapeOptions8",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -9062,12 +7958,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildShapeOptions10",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -9075,12 +7965,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_WildShapeOptions12",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -9088,12 +7972,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_DruidDomain",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -9101,12 +7979,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Druid_CF_AnimalCompanion",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10020,12 +8892,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_ClassSkills",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10033,12 +8899,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_BonusFeats",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10046,12 +8906,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_Bravery",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10059,12 +8913,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_ArmorTraining",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10072,12 +8920,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_WeaponTraining",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10085,12 +8927,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_WeaponTraining1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10098,12 +8934,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_WeaponTraining2",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10111,12 +8941,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_WeaponTraining3",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10124,12 +8948,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_WeaponTraining4",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10137,12 +8955,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_ArmorMastery",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10150,12 +8962,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_WeaponMastery",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10163,12 +8969,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_ArmorTraining1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10176,12 +8976,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_ArmorTraining2",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10189,12 +8983,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_ArmorTraining3",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10202,12 +8990,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_ArmorTraining4",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10215,12 +8997,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_BonusFeat1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10228,12 +9004,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_BonusFeat2",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10241,12 +9011,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_BonusFeat4",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10254,12 +9018,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_BonusFeat6",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10267,12 +9025,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_BonusFeat8",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10280,12 +9032,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_BonusFeat10",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10293,12 +9039,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_BonusFeat12",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10306,12 +9046,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_BonusFeat14",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10319,12 +9053,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_BonusFeat16",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10332,12 +9060,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_BonusFeat18",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10345,12 +9067,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_BonusFeat20",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10358,12 +9074,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_TowerShieldProficiency",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10371,12 +9081,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_ArmorProficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10384,12 +9088,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_Proficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10397,12 +9095,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_LightArmorProficiency",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10410,12 +9102,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_MediumArmorProficiency",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10423,12 +9109,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_HeavyArmorProficiency",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -10436,12 +9116,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Fighter_CF_ShieldProficiency",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11625,12 +10299,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_UnarmedStrike",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11638,12 +10306,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_FlurryOfBlows",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11651,12 +10313,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_BonusFeats",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11664,12 +10320,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_ACBonus",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11677,12 +10327,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_StunningFist",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11690,12 +10334,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_Evasion",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11703,12 +10341,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_FastMovement",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11716,12 +10348,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_ManeuverTraining",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11729,12 +10355,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_StillMind",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11742,12 +10362,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_KiPool",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11755,12 +10369,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_SlowFall",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11768,12 +10376,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_HighJump",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11781,12 +10383,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_PurityOfBody",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11794,12 +10390,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_WholenessOfBody",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11807,12 +10397,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_ImprovedEvasion",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11820,12 +10404,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_DiamondBody",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11833,12 +10411,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_AbundantStep",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11846,12 +10418,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_DiamondSoul",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11859,12 +10425,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_QuiveringPalm",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11872,12 +10432,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_TongueOfTheSunAndMoon",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11885,12 +10439,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_TimelessBody",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11898,12 +10446,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_EmptyBody",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11911,12 +10453,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_PerfectSelf",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11924,12 +10460,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_Proficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11937,12 +10467,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_ClassSkills",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11950,12 +10474,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_WeaponProficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11963,12 +10481,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_BonusFeat18",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11976,12 +10488,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_BonusFeat10",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -11989,12 +10495,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_BonusFeat6",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12002,12 +10502,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_BonusFeat2",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12015,12 +10509,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_BonusFeat1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12028,12 +10516,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_Alignment",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12041,12 +10523,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_SlowFall10",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12054,12 +10530,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_SlowFall20",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12067,12 +10537,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_SlowFall30",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12080,12 +10544,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_SlowFall40",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12093,12 +10551,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_SlowFall50",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12106,12 +10558,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_SlowFall60",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12119,12 +10565,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_SlowFall70",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12132,12 +10572,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_SlowFall80",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12145,12 +10579,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_SlowFall90",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12158,12 +10586,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_KiPoolAbilities1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12171,12 +10593,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_KiPoolAbilities7",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12184,12 +10600,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_KiPoolAbilities10",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -12197,12 +10607,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Monk_CF_KiPoolAbilities16",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13756,12 +12160,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_ClassSkills",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13769,12 +12167,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_WeaponProficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13782,12 +12174,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_WeaponProficiencySimple",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13795,12 +12181,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_WeaponProficiencyMartial",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13808,12 +12188,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_ArmorProficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13821,12 +12195,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_ArmorProficiencyHeavy",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13834,12 +12202,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_ArmorProficiencyMedium",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13847,12 +12209,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_ArmorProficiencyLight",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13860,12 +12216,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_ShieldProficiency",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13873,12 +12223,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_AuraOfGood",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13886,12 +12230,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_DetectEvil",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13899,12 +12237,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_SmiteEvil",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13912,12 +12244,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_DivineGrace",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13925,12 +12251,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_LayOnHands",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13938,12 +12258,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_AuraOfCourage",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13951,12 +12265,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_DivineHealth",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13964,12 +12272,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_Mercy",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13977,12 +12279,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_Mercy3",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -13990,12 +12286,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_Mercy6",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14003,12 +12293,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_Mercy9",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14016,12 +12300,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_Mercy12",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14029,12 +12307,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_Mercy15",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14042,12 +12314,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_Mercy18",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14055,12 +12321,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_ChannelPositiveEnergy",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14068,12 +12328,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_Spells",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14081,12 +12335,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_DivineBond",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14094,12 +12342,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_BondedMount",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14107,12 +12349,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_BondedWeapon",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14120,12 +12356,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_AuraOfResolve",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14133,12 +12363,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_AuraOfJustice",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14146,12 +12370,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_AuraOfFaith",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14159,12 +12377,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_AuraOfRighteousness",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14172,12 +12384,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_HolyChampion",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14185,12 +12391,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Paladin_CF_CodeOfConduct",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -14198,24 +12398,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="AllowHolyAvenger",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="HolyAvengerCL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="HolyAvengerSR",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="Paladin_AuraRange",
-      InitialValue=Formula("0"),
-    },
-  },
   Bonuses={
     {
       Category="VAR",
@@ -15475,12 +13657,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_Proficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15488,12 +13664,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_WeaponProficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15501,12 +13671,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_LightArmorProficiency",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15514,12 +13678,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_MediumArmorProficiency",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15527,12 +13685,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_ShieldProficiency",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15540,12 +13692,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_HuntersBond",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15553,12 +13699,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_FavoredEnemy",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15566,12 +13706,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_FavoredTerrain",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15579,12 +13713,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_Track",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15592,12 +13720,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_WildEmpathy",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15605,12 +13727,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_CombatStyleFeat",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15618,12 +13734,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_WoodlandStride",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15631,12 +13741,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_SwiftTracker",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15644,12 +13748,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_Evasion",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15657,12 +13755,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_Quarry",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15670,12 +13762,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_Camouflage",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15683,12 +13769,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_Evasion",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15696,12 +13776,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_HideInPlainSight",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15709,12 +13783,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_Quarry",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15722,12 +13790,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_MasterHunter",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15735,12 +13797,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_Endurance",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15748,12 +13804,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_ImprovedEvasion",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15761,12 +13811,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_ImprovedQuarry",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15774,12 +13818,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_CombatStyleFeat2",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15787,12 +13825,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_CombatStyleFeat6",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15800,12 +13832,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_CombatStyleFeat10",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15813,12 +13839,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_CombatStyleFeat14",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15826,12 +13846,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_CombatStyleFeat18",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15839,12 +13853,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_FavoredEnemy1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15852,12 +13860,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_FavoredEnemy2",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15865,12 +13867,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_FavoredEnemy3",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15878,12 +13874,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_FavoredEnemy4",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15891,12 +13881,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_AnimalCompanion",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -15904,12 +13888,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Ranger_CF_ClassSkills",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17206,12 +15184,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_UncannyDodge",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17219,12 +15191,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_ImprovedUncannyDodge",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17232,12 +15198,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_SneakAttack",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17245,12 +15205,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_Trapfinding",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17258,12 +15212,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_Evasion",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17271,12 +15219,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_RogueTalents",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17284,12 +15226,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_TrapSense",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17297,12 +15233,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_MasterStrike",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17310,12 +15240,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_ClassSkills",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17323,12 +15247,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_WeaponProficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17336,12 +15254,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_ArmorProficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17349,12 +15261,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_TrapSense1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17362,12 +15268,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_TrapSense2",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17375,12 +15275,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_TrapSense3",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17388,12 +15282,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_TrapSense4",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17401,12 +15289,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_TrapSense5",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17414,12 +15296,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_TrapSense6",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17427,12 +15303,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_AdvancedTalents",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17440,12 +15310,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_RogueTalent2",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17453,12 +15317,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_RogueTalent4",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17466,12 +15324,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_RogueTalent6",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17479,12 +15331,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_RogueTalent8",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17492,12 +15338,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_RogueTalent10",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17505,12 +15345,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_RogueTalent12",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17518,12 +15352,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_RogueTalent14",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17531,12 +15359,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_RogueTalent16",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17544,12 +15366,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_RogueTalent18",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17557,12 +15373,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_RogueTalent20",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17570,12 +15380,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_SneakAttack1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17583,12 +15387,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_SneakAttack3",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17596,12 +15394,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_SneakAttack5",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17609,12 +15401,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_SneakAttack7",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17622,12 +15408,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_SneakAttack9",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17635,12 +15415,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_SneakAttack11",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17648,12 +15422,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_SneakAttack13",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17661,12 +15429,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_SneakAttack15",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17674,12 +15436,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_SneakAttack17",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -17687,12 +15443,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Rogue_CF_SneakAttack19",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -18912,12 +16662,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_ClassSkills",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -18925,12 +16669,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_WeaponProficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -18938,12 +16676,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_Spells",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -18951,12 +16683,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_Bloodline",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -18964,12 +16690,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_Cantrips",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -18977,12 +16697,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_EschewMaterials",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -18990,12 +16704,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlineClassSkill",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19003,12 +16711,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlineArcana",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19016,12 +16718,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlinePowers",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19029,12 +16725,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlinePower1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19042,12 +16732,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlinePower3",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19055,12 +16739,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlinePower9",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19068,12 +16746,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlinePower15",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19081,12 +16753,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlinePower20",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19094,12 +16760,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlineFeats",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19107,12 +16767,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlineSpells",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19120,12 +16774,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlineSpell1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19133,12 +16781,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlineSpell2",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19146,12 +16788,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlineSpell3",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19159,12 +16795,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlineSpell4",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19172,12 +16802,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlineSpell5",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19185,12 +16809,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlineSpell6",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19198,12 +16816,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlineSpell7",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19211,12 +16823,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlineSpell8",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19224,12 +16830,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Sorcerer_CF_BloodlineSpell9",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19808,12 +17408,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_ClassSkills",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19821,12 +17415,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_ArcaneSchool",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19834,12 +17422,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_WeaponProficiencies",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19847,12 +17429,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_Spells",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19860,12 +17436,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_BonusLanguages",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19873,12 +17443,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_ScribeScroll",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19886,12 +17450,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_ArcaneBond",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19899,12 +17457,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_Cantrips",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19912,12 +17464,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_BonusFeats",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19925,12 +17471,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_SpellBook",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19938,12 +17478,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_Familiar",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19951,12 +17485,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_BondedObject",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19964,12 +17492,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_BonusFeat5",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19977,12 +17499,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_BonusFeat10",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -19990,12 +17506,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_BonusFeat15",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -20003,12 +17513,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_BonusFeat20",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21361,12 +18865,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_AbjurationOppositionSchool",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21374,12 +18872,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_ConjurationOppositionSchool",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21387,12 +18879,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_DivinationOppositionSchool",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21400,12 +18886,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_EnchantmentOppositionSchool",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21413,12 +18893,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_EvocationOppositionSchool",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21426,12 +18900,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_IllusionOppositionSchool",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21439,12 +18907,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_NecromancyOppositionSchool",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21452,12 +18914,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_TransmutationOppositionSchool",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21465,12 +18921,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_SchoolPower1",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21478,12 +18928,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_SchoolPower8",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21491,12 +18935,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_AcidDart",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21504,12 +18942,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_AuraOfDespair",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21517,12 +18949,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_BlindingRay",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21530,12 +18956,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_ChangeShape",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21543,12 +18963,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_DazingTouch",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21556,12 +18970,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_DimensionalSteps",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21569,12 +18977,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_DivinersFortune",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21582,12 +18984,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_ElementalWall",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21595,12 +18991,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_EnchantingSmile",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21608,12 +18998,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_EnergyAbsorption",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21621,12 +19005,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_ExtendedIllusion",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21634,12 +19012,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_ForceMissile",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21647,12 +19019,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_Forwarned",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21660,12 +19026,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_GraveTouch",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21673,12 +19033,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_HandOfTheApprentice",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21686,12 +19040,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_IntenseSpells",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21699,12 +19047,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_InvisibilityField",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21712,12 +19054,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_LifeSight",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21725,12 +19061,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_MetamagicMastery",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21738,12 +19068,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_PhysicalEnhancement",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21751,12 +19075,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_PowerOverUndead",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21764,12 +19082,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_ProtectiveWard",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21777,12 +19089,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_Resistance",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21790,12 +19096,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_ScryingAdept",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21803,12 +19103,6 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_SummonersCharm",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
 ModifyAbility({
@@ -21816,11 +19110,5 @@ ModifyAbility({
   Category="Class",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Wizard_CF_TelekineticFist",
-      InitialValue=Formula("0"),
-    },
-  },
 })
 
