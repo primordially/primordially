@@ -69,7 +69,7 @@ namespace Primordially.LstToLua.Conditions
                     return true;
 
                 case "PREMULT":
-                    result = OrCondition.Parse(v, invert);
+                    result = OrCondition.Parse(v, invert, isEquipment);
                     return true;
 
                 case "PREALIGN":
@@ -187,6 +187,16 @@ namespace Primordially.LstToLua.Conditions
                     if (isEquipment)
                     {
                         result = EquipmentTypeCondition.Parse(v, invert);
+                    }
+                    else
+                    {
+                        goto default;
+                    }
+                    return true;
+                case "PREWIELD":
+                    if (isEquipment)
+                    {
+                        result = WieldCondition.Parse(v, invert);
                     }
                     else
                     {

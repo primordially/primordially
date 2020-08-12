@@ -1,22 +1,22 @@
 ﻿namespace Primordially.LstToLua
 {
-    internal class Formula : IDumpable
+    internal class DiceFormula : IDumpable
     {
         private readonly string _value;
 
-        public Formula(string value)
+        public DiceFormula(string value)
         {
             _value = value;
         }
 
-        public static implicit operator Formula(string value)
+        public static implicit operator DiceFormula(string value)
         {
-            return new Formula(value);
+            return new DiceFormula(value);
         }
 
         public void Dump(LuaTextWriter output)
         {
-            output.Write("Formula(");
+            output.Write("DiceFormula(");
             output.WriteValue(_value);
             output.Write(")");
         }

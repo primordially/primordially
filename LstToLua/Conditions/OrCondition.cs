@@ -15,7 +15,7 @@ namespace Primordially.LstToLua.Conditions
             Conditions = conditions;
         }
 
-        public static Condition Parse(TextSpan value, bool invert)
+        public static Condition Parse(TextSpan value, bool invert, bool isEquipment)
         {
             //PREMULT:1,[PRERACE:Gnome],[PREMULT:2,[PRESIZEGTEQ:M],[PREFEAT:1,Alertness]]
 
@@ -35,7 +35,7 @@ namespace Primordially.LstToLua.Conditions
                 }
 
                 var subCondition = part.Substring(1, part.Value.Length - 2);
-                if (!Condition.TryParse(subCondition, out var cond))
+                if (!Condition.TryParse(subCondition, isEquipment, out var cond))
                 {
                     throw new ParseFailedException(subCondition, "PREMULT part must be a condition.");
                 }

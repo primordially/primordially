@@ -8183,9 +8183,9 @@ ModifyAbility({
     {
       Category="VAR",
       Variables={
-        "BONUS:VAR",
+        "UncannyDodgeFlankingLevel",
       },
-      Formula=Formula("UncannyDodgeFlankingLevel"),
+      Formula=Formula("BarbarianLVL"),
       Conditions={
         function (character)
           return (character.Variables["BarbarianLVL"] >= 2)

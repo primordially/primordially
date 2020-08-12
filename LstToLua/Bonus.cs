@@ -7,7 +7,7 @@ namespace Primordially.LstToLua
 {
     internal class Bonus : ConditionalObject
     {
-        public Bonus(string category, IReadOnlyList<string> variables, BonusType? type, string formula)
+        public Bonus(string category, IReadOnlyList<string> variables, BonusType? type, string? formula)
         {
             Category = category;
             Variables = variables;
@@ -17,30 +17,43 @@ namespace Primordially.LstToLua
 
         public static Bonus Parse(TextSpan value, bool isEquipment = false)
         {
-            var parts = value.Split('|').ToArray();
-            if (parts.Length < 3)
+            if (!value.TryRemoveInfix("|", out var category, out value))
+            {
+                throw new ParseFailedException(value, "Unable to parse bonus.");
+            }
+            if (!value.TryRemoveInfix("|", out var variableSpan, out value))
             {
                 throw new ParseFailedException(value, "Unable to parse bonus.");
             }
 
+            string? formula = null;
             BonusType? type = null;
             List<Condition> conditions = new List<Condition>();
-            foreach (var extra in parts.Skip(3))
+
+            foreach (var part in value.Split('|'))
             {
-                if (BonusType.TryParse(extra, out type))
+                if (BonusType.TryParse(part, out type))
                 {
                     continue;
                 }
 
-                if (Condition.TryParse(extra, isEquipment, out var condition))
+                if (Condition.TryParse(part, isEquipment, out var condition))
                 {
                     conditions.Add(condition);
+                    continue;
                 }
+
+                if (formula != null)
+                {
+                    throw new ParseFailedException(value, "Unable to parse bonus.");
+                }
+
+                formula = part.Value;
             }
 
-            var variables = parts[1].Split(',').Select(t => t.Value).ToList();
+            var variables = variableSpan.Split(',').Select(t => t.Value).ToList();
 
-            var result = new Bonus(parts[0].Value, variables, type, parts[2].Value);
+            var result = new Bonus(category.Value, variables, type, formula);
             foreach (var condition in conditions)
                 result.Conditions.Add(condition);
             return result;
@@ -49,7 +62,7 @@ namespace Primordially.LstToLua
         public string Category { get; }
         public IReadOnlyList<string> Variables { get; }
         public BonusType? Type { get; }
-        public Formula Formula { get; }
+        public Formula? Formula { get; }
 
         protected override void DumpMembers(LuaTextWriter output)
         {

@@ -5,13 +5,6 @@ using Primordially.LstToLua.Conditions;
 
 namespace Primordially.LstToLua
 {
-    internal enum ProficiencyKind
-    {
-        Armor,
-        Weapon,
-        Shield,
-    }
-
     internal class AutomaticProficiency : ConditionalObject
     {
         public List<string> Names { get; }

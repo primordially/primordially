@@ -18,9 +18,14 @@ namespace Primordially.LstToLua.Choosers
             {
                 return "ChooseNothing()";
             }
-            var (kind, rest) = value.SplitTuple('|');
+
+            var (kind, rest) = value.SplitTuple('|', throwOnError: false);
             switch (kind.Value)
             {
+                case "EQBUILDER.SPELL":
+                    return new EquipmentSpellChooser().Process(rest);
+                case "STATBONUS":
+                    return new StatBonusChooser().Process(rest);
                 case "USERINPUT":
                     return new UserInputChooser().Process(rest);
                 case "STRING":
@@ -29,6 +34,8 @@ namespace Primordially.LstToLua.Choosers
                     return new AbilitySelectionChooser().Process(rest);
                 case "SKILL":
                     return new SkillChooser().Process(rest);
+                case "SKILLBONUS":
+                    return new SkillBonusChooser().Process(rest);
                 case "LANG":
                     return new LanguageChooser().Process(rest);
                 case "SPELLS":
@@ -37,6 +44,8 @@ namespace Primordially.LstToLua.Choosers
                     return new SchoolChooser().Process(rest);
                 case "CLASS":
                     return new ClassChooser().Process(rest);
+                case "NUMBER":
+                    return new NumberChooser().Process(rest);
                 case "WEAPONPROFICIENCY":
                     return new WeaponProficiencyChooser().Process(rest);
 
@@ -46,7 +55,7 @@ namespace Primordially.LstToLua.Choosers
 
         public abstract string ProcessCondition(TextSpan value);
 
-        public string ProcessConditions(TextSpan value)
+        public virtual string ProcessConditions(TextSpan value)
         {
             return string.Join(" or ", value.Split('|', quotedBy: ('[', ']')).Select(part =>
             {

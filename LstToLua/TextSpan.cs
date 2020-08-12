@@ -44,6 +44,10 @@ namespace Primordially.LstToLua
 
         public IEnumerable<TextSpan> Split(char splitOn, (char start, char end)? quotedBy = null)
         {
+            if (Value == null)
+            {
+                yield break;
+            }
             var current = new StringBuilder();
             var currentStartIndex = 0;
             var quoteDepth = 0;

@@ -274,7 +274,10 @@ namespace Primordially.LstToLua
                 {
                     foreach (var (k, v) in Clear)
                     {
-                        output.WriteKeyValue(k, v);
+                        output.WriteKey(k);
+                        output.Write("=");
+                        output.WriteValue(v);
+                        output.Write(",\n");
                     }
                 });
             }

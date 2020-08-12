@@ -7,138 +7,11 @@ using Primordially.LstToLua.Conditions;
 
 namespace Primordially.LstToLua
 {
-    internal class ContainerDefinition : LuaObject
-    {
-        public ContainerDefinition(TextSpan value)
-        {
-            bool first = true;
-            foreach (var p in value.Split('|'))
-            {
-                var part = p;
-                if (first)
-                {
-                    if (part.TryRemovePrefix("*", out part))
-                    {
-                        ContainedItemWeightDoesNotCount = true;
-                    }
-                    if (part.Value == "UNLIM")
-                    {
-                        Capacity = double.PositiveInfinity;
-                    }
-                    else if (part.TryRemoveInfix("%", out var percent, out var cap))
-                    {
-                        ContainedItemWeightModifier = Helpers.ParseDouble(percent) / 100;
-                        Capacity = Helpers.ParseDouble(cap);
-                    }
-                    else
-                    {
-                        Capacity = Helpers.ParseDouble(part);
-                    }
-                    first = false;
-                    continue;
-                }
-
-                if (!part.TryRemoveInfix("=", out var name, out var count))
-                {
-                    ItemLimits[part.Value] = null;
-                }
-                else
-                {
-                    ItemLimits[name.Value] = Helpers.ParseInt(count);
-                }
-            }
-        }
-
-        public double Capacity { get; } = double.PositiveInfinity;
-        public bool ContainedItemWeightDoesNotCount { get; }
-        public double? ContainedItemWeightModifier { get; }
-        public Dictionary<string, int?> ItemLimits { get; } = new Dictionary<string, int?>();
-
-        protected override void DumpMembers(LuaTextWriter output)
-        {
-            output.WriteKeyValue("Capacity", Capacity);
-            if (ContainedItemWeightDoesNotCount)
-                output.WriteKeyValue("ContainedItemWeightDoesNotCount", ContainedItemWeightDoesNotCount);
-            if (ContainedItemWeightModifier.HasValue)
-                output.WriteKeyValue("ContainedItemWeightModifier", ContainedItemWeightModifier.Value);
-            if (ItemLimits.Any())
-            {
-                output.WriteObjectValue("ItemLimits", () =>
-                {
-                    foreach (var (k, v) in ItemLimits)
-                        output.WriteKeyValue(k, v);
-                });
-            }
-            base.DumpMembers(output);
-        }
-    }
-
-    internal class AttackDefinition : LuaObject
-    {
-        public string CritMultiplier { get; set; } = "x2";
-        public string CritRange { get; set; } = "1";
-        public DiceFormula? Damage { get; set; }
-        public List<string> Types { get; } = new List<string>();
-        public List<EquipmentModifierReference> EquipmentModifiers { get; } = new List<EquipmentModifierReference>();
-
-        protected override void DumpMembers(LuaTextWriter output)
-        {
-            output.WriteKeyValue(nameof(CritMultiplier), CritMultiplier);
-            output.WriteKeyValue(nameof(CritRange), CritRange);
-            output.WriteKeyValue(nameof(Damage), Damage);
-            output.WriteListValue(nameof(Types), Types);
-            output.WriteListValue(nameof(EquipmentModifiers), EquipmentModifiers);
-            base.DumpMembers(output);
-        }
-    }
-
-    internal class EquipmentModifierReference : LuaObject
-    {
-        private EquipmentModifierReference(TextSpan value)
-        {
-            bool first = true;
-            foreach (var p in value.Split('|'))
-            {
-                var part = p;
-                if (first)
-                {
-                    Key = part.Value;
-                    first = false;
-                    continue;
-                }
-
-                Parameters.Add(part.Value);
-            }
-
-            if (Key == null)
-            {
-                throw new ParseFailedException(value, "Unable to parse EQMOD:");
-            }
-        }
-
-        public string Key { get; } = null!;
-        public List<Formula> Parameters { get; } = new List<Formula>();
-
-        public static IEnumerable<EquipmentModifierReference> ParseAll(TextSpan value)
-        {
-            return value.Split('.').Select(s => new EquipmentModifierReference(s));
-        }
-
-        protected override void DumpMembers(LuaTextWriter output)
-        {
-            output.WriteKeyValue(nameof(Key), Key);
-            output.WriteListValue(nameof(Parameters), Parameters);
-            base.DumpMembers(output);
-        }
-    }
-
-    internal class EquipmentDefinition : DataSetObject
+    internal class EquipmentDefinition : EquipmentOrModifierDefinition
     {
         protected override bool IsEquipment => true;
         public string? CopiedFrom { get; private set; }
         public string? Name { get; private set; }
-        public string? Key { get; private set; }
-        public List<string> Types { get; } = new List<string>();
         public double Cost { get; private set; }
         public string? BaseItem { get; private set; }
         public string? Icon { get; private set; }
@@ -154,7 +27,6 @@ namespace Primordially.LstToLua
         public string? Size { get; private set; }
         public int? UsedSlots { get; private set; }
         public double? Weight { get; private set; }
-        public List<FormattedString> SpecialProperties { get; } = new List<FormattedString>();
         public int? ArmorCheckPenalty { get; private set; }
         public AttackDefinition? SecondAttack { get; private set; }
         public AttackDefinition? Attack { get; private set; }
@@ -166,18 +38,12 @@ namespace Primordially.LstToLua
         public int? ReachMultiplier { get; private set; }
         public int? ArcaneSpellFailureChance { get; private set; }
         public string? WieldCategory { get; private set; }
-        public FormattedString? Description { get; private set; }
         public bool? Visible { get; private set; }
-        public List<Bonus> Bonuses { get; } = new List<Bonus>();
 
         protected override void DumpMembers(LuaTextWriter output)
         {
             output.WriteKeyValue(nameof(Name), Name);
-            output.WriteKeyValue(nameof(Key), Key);
-            output.WriteKeyValue(nameof(Description), Description);
             output.WriteKeyValue(nameof(Visible), Visible);
-            output.WriteListValue(nameof(Types), Types);
-            output.WriteListValue(nameof(Bonuses), Bonuses);
             output.WriteKeyValue(nameof(Cost), Cost);
             output.WriteKeyValue(nameof(BaseItem), BaseItem);
             output.WriteKeyValue(nameof(Icon), Icon);
@@ -205,7 +71,6 @@ namespace Primordially.LstToLua
             output.WriteKeyValue(nameof(Size), Size);
             output.WriteKeyValue(nameof(UsedSlots), UsedSlots);
             output.WriteKeyValue(nameof(Weight), Weight);
-            output.WriteListValue(nameof(SpecialProperties), SpecialProperties);
             output.WriteKeyValue(nameof(ArmorCheckPenalty), ArmorCheckPenalty);
             output.WriteKeyValue(nameof(SecondAttack), SecondAttack);
             output.WriteKeyValue(nameof(Attack), Attack);
@@ -233,18 +98,6 @@ namespace Primordially.LstToLua
                 {
                     Name = field.Value;
                 }
-                return;
-            }
-
-            if (field.TryRemovePrefix("KEY:", out var key))
-            {
-                Key = key.Value;
-                return;
-            }
-
-            if (field.TryRemovePrefix("TYPE:", out var type))
-            {
-                Types.AddRange(type.Value.Split('.'));
                 return;
             }
 
@@ -340,12 +193,6 @@ namespace Primordially.LstToLua
             if (field.TryRemovePrefix("SLOTS:", out var slots))
             {
                 UsedSlots = Helpers.ParseInt(slots);
-                return;
-            }
-
-            if (field.TryRemovePrefix("SPROP:", out var sprop))
-            {
-                SpecialProperties.Add(new FormattedString(sprop));
                 return;
             }
 
@@ -474,21 +321,9 @@ namespace Primordially.LstToLua
                 return;
             }
 
-            if (field.TryRemovePrefix("DESC:", out var desc))
-            {
-                Description = new FormattedString(desc);
-                return;
-            }
-
             if (field.TryRemovePrefix("VISIBLE:", out var visible))
             {
                 Visible = Helpers.ParseBool(visible);
-                return;
-            }
-
-            if (field.TryRemovePrefix("BONUS:", out var bonus))
-            {
-                Bonuses.Add(Bonus.Parse(bonus, true));
                 return;
             }
 
@@ -509,41 +344,6 @@ namespace Primordially.LstToLua
             }
             base.Dump(output);
             output.Write(")");
-        }
-    }
-
-    internal class FormattedString : LuaObject
-    {
-        public string Format { get; }
-        public List<Formula> Arguments { get; }
-        public FormattedString(string format, List<string> args)
-        {
-            Format = format;
-            Arguments = args.Select(a => new Formula(a)).ToList();
-        }
-
-        public FormattedString(TextSpan value)
-        {
-            Format = null!;
-            Arguments = new List<Formula>();
-            foreach (var part in value.Split('|'))
-            {
-                if (Format == null)
-                {
-                    Format = part.Value;
-                }
-                else
-                {
-                    Arguments.Add(part.Value);
-                }
-            }
-        }
-
-        protected override void DumpMembers(LuaTextWriter output)
-        {
-            output.WriteKeyValue("Format", Format);
-            output.WriteListValue("Arguments", Arguments);
-            base.DumpMembers(output);
         }
     }
 }
