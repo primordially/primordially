@@ -5,12 +5,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Dwarf_ReplaceAbilityScores",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Dwarf Racial Trait",
@@ -25,6 +19,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Dwarf_ReplaceAbilityScores",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -32,12 +32,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Dwarf_ReplaceSize",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Dwarf Racial Trait",
@@ -52,6 +46,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Dwarf_ReplaceSize",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -59,12 +59,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Dwarf_ReplaceSpeed",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Dwarf Racial Trait",
@@ -79,6 +73,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Dwarf_ReplaceSpeed",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -86,12 +86,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Dwarf_ReplaceVision",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Dwarf Racial Trait",
@@ -106,6 +100,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Dwarf_ReplaceVision",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -113,12 +113,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Dwarf_ReplaceDefensiveTraining",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Dwarf Racial Trait",
@@ -133,6 +127,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Dwarf_ReplaceDefensiveTraining",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -140,12 +140,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Dwarf_ReplaceGreed",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Dwarf Racial Trait",
@@ -160,6 +154,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Dwarf_ReplaceGreed",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -167,12 +167,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Dwarf_ReplaceHatred",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Dwarf Racial Trait",
@@ -187,6 +181,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Dwarf_ReplaceHatred",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -194,12 +194,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Dwarf_ReplaceHardy",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Dwarf Racial Trait",
@@ -214,6 +208,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Dwarf_ReplaceHardy",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -221,12 +221,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Dwarf_ReplaceStability",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Dwarf Racial Trait",
@@ -241,6 +235,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Dwarf_ReplaceStability",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -248,12 +248,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Dwarf_ReplaceStonecunning",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Dwarf Racial Trait",
@@ -268,6 +262,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Dwarf_ReplaceStonecunning",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -275,12 +275,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Dwarf_ReplaceWeaponFamiliarity",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Dwarf Racial Trait",
@@ -295,6 +289,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Dwarf_ReplaceWeaponFamiliarity",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -302,12 +302,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Dwarf_ReplaceLanguages",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Dwarf Racial Trait",
@@ -320,6 +314,12 @@ ModifyAbility({
           return (character.Variables["Dwarf_ReplaceLanguages"] == 0)
         end,
       },
+    },
+  },
+  Definitions={
+    {
+      Name="Dwarf_ReplaceLanguages",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -811,12 +811,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Elf_ReplaceAbilityScores",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Elf Racial Trait",
@@ -831,6 +825,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Elf_ReplaceAbilityScores",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -838,12 +838,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Elf_ReplaceSize",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Elf Racial Trait",
@@ -858,6 +852,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Elf_ReplaceSize",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -865,12 +865,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Elf_ReplaceSpeed",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Elf Racial Trait",
@@ -885,6 +879,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Elf_ReplaceSpeed",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -892,12 +892,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Elf_ReplaceVision",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Elf Racial Trait",
@@ -912,6 +906,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Elf_ReplaceVision",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -919,12 +919,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Elf_ReplaceElvenImmunities",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Elf Racial Trait",
@@ -939,6 +933,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Elf_ReplaceElvenImmunities",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -946,12 +946,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Elf_ReplaceElvenMagic",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Elf Racial Trait",
@@ -966,6 +960,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Elf_ReplaceElvenMagic",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -973,12 +973,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Elf_ReplaceKeenSenses",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Elf Racial Trait",
@@ -993,6 +987,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Elf_ReplaceKeenSenses",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -1000,12 +1000,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Elf_ReplaceWeaponFamiliarity",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Elf Racial Trait",
@@ -1020,6 +1014,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Elf_ReplaceWeaponFamiliarity",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -1027,12 +1027,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Elf_ReplaceLanguages",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Elf Racial Trait",
@@ -1045,6 +1039,12 @@ ModifyAbility({
           return (character.Variables["Elf_ReplaceLanguages"] == 0)
         end,
       },
+    },
+  },
+  Definitions={
+    {
+      Name="Elf_ReplaceLanguages",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -1381,12 +1381,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Gnome_ReplaceAbilityScores",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Gnome Racial Trait",
@@ -1401,6 +1395,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Gnome_ReplaceAbilityScores",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -1408,12 +1408,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Gnome_ReplaceSize",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Gnome Racial Trait",
@@ -1428,6 +1422,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Gnome_ReplaceSize",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -1435,12 +1435,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Gnome_ReplaceSpeed",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Gnome Racial Trait",
@@ -1455,6 +1449,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Gnome_ReplaceSpeed",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -1462,12 +1462,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Gnome_ReplaceVision",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Gnome Racial Trait",
@@ -1482,6 +1476,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Gnome_ReplaceVision",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -1489,12 +1489,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Gnome_ReplaceDefensiveTraining",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Gnome Racial Trait",
@@ -1509,6 +1503,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Gnome_ReplaceDefensiveTraining",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -1516,12 +1516,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Gnome_ReplaceGnomeMagic",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Gnome Racial Trait",
@@ -1536,6 +1530,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Gnome_ReplaceGnomeMagic",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -1543,12 +1543,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Gnome_ReplaceHatred",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Gnome Racial Trait",
@@ -1563,6 +1557,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Gnome_ReplaceHatred",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -1570,12 +1570,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Gnome_ReplaceIllusionResistance",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Gnome Racial Trait",
@@ -1590,6 +1584,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Gnome_ReplaceIllusionResistance",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -1597,12 +1597,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Gnome_ReplaceKeenSenses",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Gnome Racial Trait",
@@ -1617,6 +1611,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Gnome_ReplaceKeenSenses",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -1624,12 +1624,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Gnome_ReplaceObsessive",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Gnome Racial Trait",
@@ -1644,6 +1638,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Gnome_ReplaceObsessive",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -1651,12 +1651,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Gnome_ReplaceWeaponFamiliarity",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Gnome Racial Trait",
@@ -1671,6 +1665,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Gnome_ReplaceWeaponFamiliarity",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -1678,12 +1678,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Gnome_ReplaceLanguages",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Gnome Racial Trait",
@@ -1696,6 +1690,12 @@ ModifyAbility({
           return (character.Variables["Gnome_ReplaceLanguages"] == 0)
         end,
       },
+    },
+  },
+  Definitions={
+    {
+      Name="Gnome_ReplaceLanguages",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -2164,12 +2164,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfElf_ReplaceAbilityScores",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Elf Racial Trait",
@@ -2184,6 +2178,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfElf_ReplaceAbilityScores",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2191,12 +2191,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfElf_ReplaceSize",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Elf Racial Trait",
@@ -2211,6 +2205,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfElf_ReplaceSize",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2218,12 +2218,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfElf_ReplaceSpeed",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Elf Racial Trait",
@@ -2238,6 +2232,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfElf_ReplaceSpeed",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2245,12 +2245,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfElf_ReplaceVision",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Elf Racial Trait",
@@ -2265,6 +2259,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfElf_ReplaceVision",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2272,12 +2272,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfElf_ReplaceAdaptability",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Elf Racial Trait",
@@ -2292,6 +2286,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfElf_ReplaceAdaptability",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2299,12 +2299,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfElf_ReplaceElfBlood",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Elf Racial Trait",
@@ -2319,6 +2313,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfElf_ReplaceElfBlood",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2326,12 +2326,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfElf_ReplaceElvenImmunities",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Elf Racial Trait",
@@ -2346,6 +2340,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfElf_ReplaceElvenImmunities",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2353,12 +2353,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfElf_ReplaceKeenSenses",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Elf Racial Trait",
@@ -2373,6 +2367,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfElf_ReplaceKeenSenses",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2380,12 +2380,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfElf_ReplaceMultitalented",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Elf Racial Trait",
@@ -2400,6 +2394,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfElf_ReplaceMultitalented",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2407,12 +2407,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfElf_ReplaceLanguages",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Elf Racial Trait",
@@ -2425,6 +2419,12 @@ ModifyAbility({
           return (character.Variables["HalfElf_ReplaceLanguages"] == 0)
         end,
       },
+    },
+  },
+  Definitions={
+    {
+      Name="HalfElf_ReplaceLanguages",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -2782,12 +2782,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceAbilityScores",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Orc Racial Trait",
@@ -2802,6 +2796,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfOrc_ReplaceAbilityScores",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2809,12 +2809,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceSize",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Orc Racial Trait",
@@ -2829,6 +2823,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfOrc_ReplaceSize",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2836,12 +2836,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceSpeed",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Orc Racial Trait",
@@ -2856,6 +2850,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfOrc_ReplaceSpeed",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2863,12 +2863,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceVision",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Orc Racial Trait",
@@ -2883,6 +2877,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfOrc_ReplaceVision",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2890,12 +2890,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceIntimidating",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Orc Racial Trait",
@@ -2910,6 +2904,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfOrc_ReplaceIntimidating",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2917,12 +2917,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceOrcBlood",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Orc Racial Trait",
@@ -2937,6 +2931,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfOrc_ReplaceOrcBlood",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2944,12 +2944,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceOrcFerocity",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Orc Racial Trait",
@@ -2964,6 +2958,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfOrc_ReplaceOrcFerocity",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2971,12 +2971,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceWeaponFamiliarity",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Orc Racial Trait",
@@ -2991,6 +2985,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="HalfOrc_ReplaceWeaponFamiliarity",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -2998,12 +2998,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="HalfOrc_ReplaceLanguages",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Half-Orc Racial Trait",
@@ -3016,6 +3010,12 @@ ModifyAbility({
           return (character.Variables["HalfOrc_ReplaceLanguages"] == 0)
         end,
       },
+    },
+  },
+  Definitions={
+    {
+      Name="HalfOrc_ReplaceLanguages",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -3329,12 +3329,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Halfling_ReplaceAbilityScores",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Halfling Racial Trait",
@@ -3349,6 +3343,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Halfling_ReplaceAbilityScores",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -3356,12 +3356,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Halfling_ReplaceSize",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Halfling Racial Trait",
@@ -3376,6 +3370,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Halfling_ReplaceSize",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -3383,12 +3383,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Halfling_ReplaceSpeed",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Halfling Racial Trait",
@@ -3403,6 +3397,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Halfling_ReplaceSpeed",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -3410,12 +3410,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Halfling_ReplaceFearless",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Halfling Racial Trait",
@@ -3430,6 +3424,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Halfling_ReplaceFearless",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -3437,12 +3437,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Halfling_ReplaceHalflingLuck",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Halfling Racial Trait",
@@ -3457,6 +3451,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Halfling_ReplaceHalflingLuck",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -3464,12 +3464,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Halfling_ReplaceKeenSenses",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Halfling Racial Trait",
@@ -3484,6 +3478,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Halfling_ReplaceKeenSenses",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -3491,12 +3491,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Halfling_ReplaceSureFooted",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Halfling Racial Trait",
@@ -3511,6 +3505,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Halfling_ReplaceSureFooted",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -3518,12 +3518,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Halfling_ReplaceWeaponFamiliarity",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Halfling Racial Trait",
@@ -3538,6 +3532,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Halfling_ReplaceWeaponFamiliarity",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -3545,12 +3545,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Halfling_ReplaceLanguages",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Halfling Racial Trait",
@@ -3563,6 +3557,12 @@ ModifyAbility({
           return (character.Variables["Halfling_ReplaceLanguages"] == 0)
         end,
       },
+    },
+  },
+  Definitions={
+    {
+      Name="Halfling_ReplaceLanguages",
+      InitialValue=Formula("0"),
     },
   },
 })
@@ -3899,12 +3899,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Human_ReplaceAbilityScores",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Human Racial Trait",
@@ -3919,6 +3913,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Human_ReplaceAbilityScores",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -3926,12 +3926,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Human_ReplaceSize",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Human Racial Trait",
@@ -3946,6 +3940,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Human_ReplaceSize",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -3953,12 +3953,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Human_ReplaceSpeed",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Human Racial Trait",
@@ -3973,6 +3967,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Human_ReplaceSpeed",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -3980,12 +3980,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Human_ReplaceBonusFeat",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Human Racial Trait",
@@ -4000,6 +3994,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Human_ReplaceBonusFeat",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -4007,12 +4007,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Human_ReplaceSkilled",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Human Racial Trait",
@@ -4027,6 +4021,12 @@ ModifyAbility({
       },
     },
   },
+  Definitions={
+    {
+      Name="Human_ReplaceSkilled",
+      InitialValue=Formula("0"),
+    },
+  },
 })
 
 ModifyAbility({
@@ -4034,12 +4034,6 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  Definitions={
-    {
-      Name="Human_ReplaceLanguages",
-      InitialValue=Formula("0"),
-    },
-  },
   Abilities={
     {
       Category="Human Racial Trait",
@@ -4052,6 +4046,12 @@ ModifyAbility({
           return (character.Variables["Human_ReplaceLanguages"] == 0)
         end,
       },
+    },
+  },
+  Definitions={
+    {
+      Name="Human_ReplaceLanguages",
+      InitialValue=Formula("0"),
     },
   },
 })

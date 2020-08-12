@@ -13,6 +13,12 @@ DefineClass({
     Abb="Brb",
   },
   SourcePage="p.31",
+  Definitions={
+    {
+      Name="BarbarianLVL",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -31,12 +37,6 @@ DefineClass({
       end
       return count >= 1
     end,
-  },
-  Definitions={
-    {
-      Name="BarbarianLVL",
-      InitialValue=Formula("0"),
-    },
   },
   Bonuses={
     {
@@ -1045,6 +1045,16 @@ DefineClass({
     SpellType="Divine",
   },
   SourcePage="p.48",
+  Definitions={
+    {
+      Name="DruidLVL",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="CasterLevelBLDruid",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -1063,16 +1073,6 @@ DefineClass({
       end
       return count >= 1
     end,
-  },
-  Definitions={
-    {
-      Name="DruidLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CasterLevelBLDruid",
-      InitialValue=Formula("0"),
-    },
   },
   Bonuses={
     {
@@ -1688,6 +1688,24 @@ DefineClass({
     Abb="Mnk",
   },
   SourcePage="p.56",
+  Definitions={
+    {
+      Name="FlurryOfBlows",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="MonkLVL",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="KiPoolWis",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="MonkFeatQualify",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -1706,24 +1724,6 @@ DefineClass({
       end
       return count >= 1
     end,
-  },
-  Definitions={
-    {
-      Name="FlurryOfBlows",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="MonkLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="KiPoolWis",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="MonkFeatQualify",
-      InitialValue=Formula("0"),
-    },
   },
   Bonuses={
     {
@@ -1792,6 +1792,20 @@ DefineClass({
     SpellType="Divine",
   },
   SourcePage="p.60",
+  Definitions={
+    {
+      Name="PaladinLVL",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="PaladinDomainCount",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="CasterLevelBLPaladin",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -1810,20 +1824,6 @@ DefineClass({
       end
       return count >= 1
     end,
-  },
-  Definitions={
-    {
-      Name="PaladinLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="PaladinDomainCount",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CasterLevelBLPaladin",
-      InitialValue=Formula("0"),
-    },
   },
   Bonuses={
     {
@@ -2347,6 +2347,22 @@ DefineClass({
 DefineClass({
   Name="Ranger",
   SpellStat="WIS",
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Class Skills ~ Ranger",
+      },
+      Conditions={
+        function (character)
+          return not (1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Archetype" and (ability.Type == "RangerClassSkills")
+          end))
+        end,
+      },
+    },
+  },
   Facts={
     ClassType="PC",
     Abb="Rgr",
@@ -2501,22 +2517,6 @@ DefineClass({
           function (class, level)
             return (class == "Ranger" and level >= 4)
           end)
-        end,
-      },
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Class Skills ~ Ranger",
-      },
-      Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Archetype" and (ability.Type == "RangerClassSkills")
-          end))
         end,
       },
     },
@@ -3460,11 +3460,6 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
-            end,
-          },
           Abilities={
             {
               Category="Wizard Class Feature",
@@ -3473,6 +3468,11 @@ DefineClass({
                 "Abjuration School",
               },
             },
+          },
+          Conditions={
+            function (character)
+              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
+            end,
           },
         },
       },
@@ -3487,11 +3487,6 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
-            end,
-          },
           Abilities={
             {
               Category="Wizard Class Feature",
@@ -3500,6 +3495,11 @@ DefineClass({
                 "Conjuration School",
               },
             },
+          },
+          Conditions={
+            function (character)
+              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
+            end,
           },
         },
       },
@@ -3514,11 +3514,6 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
-            end,
-          },
           Abilities={
             {
               Category="Wizard Class Feature",
@@ -3527,6 +3522,11 @@ DefineClass({
                 "Divination School",
               },
             },
+          },
+          Conditions={
+            function (character)
+              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
+            end,
           },
         },
       },
@@ -3541,11 +3541,6 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
-            end,
-          },
           Abilities={
             {
               Category="Wizard Class Feature",
@@ -3554,6 +3549,11 @@ DefineClass({
                 "Enchantment School",
               },
             },
+          },
+          Conditions={
+            function (character)
+              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
+            end,
           },
         },
       },
@@ -3568,11 +3568,6 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
-            end,
-          },
           Abilities={
             {
               Category="Wizard Class Feature",
@@ -3581,6 +3576,11 @@ DefineClass({
                 "Evocation School",
               },
             },
+          },
+          Conditions={
+            function (character)
+              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
+            end,
           },
         },
       },
@@ -3595,11 +3595,6 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
-            end,
-          },
           Abilities={
             {
               Category="Wizard Class Feature",
@@ -3608,6 +3603,11 @@ DefineClass({
                 "Illusion School",
               },
             },
+          },
+          Conditions={
+            function (character)
+              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
+            end,
           },
         },
       },
@@ -3622,11 +3622,6 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
-            end,
-          },
           Abilities={
             {
               Category="Wizard Class Feature",
@@ -3635,6 +3630,11 @@ DefineClass({
                 "Necromancy School",
               },
             },
+          },
+          Conditions={
+            function (character)
+              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
+            end,
           },
         },
       },
@@ -3649,11 +3649,6 @@ DefineClass({
       Levels={
         {
           Level="1",
-          Conditions={
-            function (character)
-              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
-            end,
-          },
           Abilities={
             {
               Category="Wizard Class Feature",
@@ -3663,14 +3658,17 @@ DefineClass({
               },
             },
           },
+          Conditions={
+            function (character)
+              return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
+            end,
+          },
         },
       },
       Name="Transmuter",
     },
     {
       Choice={
-        Kind=nil,
-        Value=nil,
       },
       Cost=0,
       Levels={
@@ -3706,6 +3704,12 @@ DefineClass({
     Abb="Arc",
   },
   SourcePage="p.374",
+  Definitions={
+    {
+      Name="ArcaneArcherLVL",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       return 2 <= #filter(character.Abilities, function (ability)
@@ -3723,12 +3727,6 @@ DefineClass({
     function (character)
       return character.TotalAttackBonus >= 6
     end,
-  },
-  Definitions={
-    {
-      Name="ArcaneArcherLVL",
-      InitialValue=Formula("0"),
-    },
   },
   ClassSkills={
     "Perception",
@@ -3905,6 +3903,12 @@ DefineClass({
     Abb="Art",
   },
   SourcePage="p.376",
+  Definitions={
+    {
+      Name="ArcaneTricksterLVL",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -3935,12 +3939,6 @@ DefineClass({
     function (character)
       return (character.Variables["SneakAttackDice"] >= 2)
     end,
-  },
-  Definitions={
-    {
-      Name="ArcaneTricksterLVL",
-      InitialValue=Formula("0"),
-    },
   },
   ClassSkills={
     "Acrobatics",
@@ -4152,6 +4150,12 @@ DefineClass({
     Abb="Asn",
   },
   SourcePage="p.378",
+  Definitions={
+    {
+      Name="AssassinLVL",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -4173,12 +4177,6 @@ DefineClass({
     function (character)
       return ((character.BestSkillOfType("Disguise").ranks >= 2 and 1 or 0) + (character.BestSkillOfType("Stealth").ranks >= 5 and 1 or 0)) >= 2
     end,
-  },
-  Definitions={
-    {
-      Name="AssassinLVL",
-      InitialValue=Formula("0"),
-    },
   },
   ClassSkills={
     "Acrobatics",
@@ -4310,6 +4308,12 @@ DefineClass({
     Abb="DrD",
   },
   SourcePage="p.380",
+  Definitions={
+    {
+      Name="DragonDiscipleLVL",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       return (#filter(character.Languages, function (lang)
@@ -4390,12 +4394,6 @@ DefineClass({
     function (character)
       return not (((any(character.Templates, function (template) return stringMatch(template.Name, "Half Dragon") end) and 1 or 0)) >= 1)
     end,
-  },
-  Definitions={
-    {
-      Name="DragonDiscipleLVL",
-      InitialValue=Formula("0"),
-    },
   },
   ClassSkills={
     "Diplomacy",
@@ -4574,6 +4572,12 @@ DefineClass({
     Abb="Dul",
   },
   SourcePage="p.382",
+  Definitions={
+    {
+      Name="DuelistLVL",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       return 3 <= #filter(character.Abilities, function (ability)
@@ -4586,12 +4590,6 @@ DefineClass({
     function (character)
       return character.TotalAttackBonus >= 6
     end,
-  },
-  Definitions={
-    {
-      Name="DuelistLVL",
-      InitialValue=Formula("0"),
-    },
   },
   ClassSkills={
     "Acrobatics",
@@ -4714,6 +4712,12 @@ DefineClass({
     Abb="Elk",
   },
   SourcePage="p.384",
+  Definitions={
+    {
+      Name="EldritchKnightLVL",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -4723,12 +4727,6 @@ DefineClass({
     function (character)
       return (character.SpellCount("Arcane", 3)) >= 1
     end,
-  },
-  Definitions={
-    {
-      Name="EldritchKnightLVL",
-      InitialValue=Formula("0"),
-    },
   },
   ClassSkills={
     "Climb",
@@ -4925,6 +4923,12 @@ DefineClass({
     Abb="Lor",
   },
   SourcePage="p.385",
+  Definitions={
+    {
+      Name="LoremasterLVL",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -4945,12 +4949,6 @@ DefineClass({
     function (character)
       return ((#filter(character.SpellsKnown, function (spell) return spell.School == "Divination" and spell.Level >= 0 end))) >= 7
     end,
-  },
-  Definitions={
-    {
-      Name="LoremasterLVL",
-      InitialValue=Formula("0"),
-    },
   },
   ClassSkills={
     "Appraise",
@@ -5389,16 +5387,16 @@ DefineClass({
     Abb="PfC",
   },
   SourcePage="p.388",
-  Conditions={
-    function (character)
-      return ((character.BestSkillOfType("Linguistics").ranks >= 3 and 1 or 0) + (character.BestSkillOfType("Perform (Oratory)").ranks >= 5 and 1 or 0) + (character.BestSkillOfType("Profession (Scribe)").ranks >= 5 and 1 or 0)) >= 3
-    end,
-  },
   Definitions={
     {
       Name="PathfinderChroniclerLVL",
       InitialValue=Formula("0"),
     },
+  },
+  Conditions={
+    function (character)
+      return ((character.BestSkillOfType("Linguistics").ranks >= 3 and 1 or 0) + (character.BestSkillOfType("Perform (Oratory)").ranks >= 5 and 1 or 0) + (character.BestSkillOfType("Profession (Scribe)").ranks >= 5 and 1 or 0)) >= 3
+    end,
   },
   ClassSkills={
     "Appraise",
@@ -5530,6 +5528,12 @@ DefineClass({
     Abb="Shd",
   },
   SourcePage="p.391",
+  Definitions={
+    {
+      Name="ShadowdancerLVL",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       return 3 <= #filter(character.Abilities, function (ability)
@@ -5539,12 +5543,6 @@ DefineClass({
     function (character)
       return ((character.BestSkillOfType("Stealth").ranks >= 5 and 1 or 0) + (character.BestSkillOfType("Perform (Dance)").ranks >= 2 and 1 or 0)) >= 2
     end,
-  },
-  Definitions={
-    {
-      Name="ShadowdancerLVL",
-      InitialValue=Formula("0"),
-    },
   },
   ClassSkills={
     "Acrobatics",
@@ -6048,15 +6046,6 @@ DefineClass({
       Level="2",
       SpellsPerDay={
         3, 1, },
-      Bonuses={
-        {
-          Category="VAR",
-          Variables={
-            "FamiliarMasterLVL",
-          },
-          Formula=Formula("CL"),
-        },
-      },
       Abilities={
         {
           Category="Special Ability",
@@ -6064,6 +6053,15 @@ DefineClass({
           Names={
             "Arcane Bond ~ Familiar",
           },
+        },
+      },
+      Bonuses={
+        {
+          Category="VAR",
+          Variables={
+            "FamiliarMasterLVL",
+          },
+          Formula=Formula("CL"),
         },
       },
     },

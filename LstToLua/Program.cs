@@ -468,12 +468,14 @@ namespace Primordially.LstToLua
                     case "DOMAIN":
                         new SingleObjectFileConverter<DomainDefinition>().Convert(inputFileFullPath, outputFile);
                         break;
+                    case "EQUIPMENT":
+                        new SingleObjectFileConverter<EquipmentDefinition>().Convert(inputFileFullPath, outputFile);
+                        break;
                     case "ARMORPROF":
                     case "BIOSET":
                     case "COMPANIONMOD":
                     case "DATATABLE":
                     case "DYNAMIC":
-                    case "EQUIPMENT":
                     case "EQUIPMOD":
                     case "GLOBALMODIFIER":
                     case "KIT":

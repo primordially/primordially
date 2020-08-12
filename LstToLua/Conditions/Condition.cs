@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Primordially.LstToLua.Conditions
 {
@@ -12,6 +13,11 @@ namespace Primordially.LstToLua.Conditions
         public bool Inverted { get; }
 
         public static bool TryParse(TextSpan value, [NotNullWhen(true)] out Condition? result)
+        {
+            return TryParse(value, false, out result);
+        }
+
+        public static bool TryParse(TextSpan value, bool isEquipment, [NotNullWhen(true)] out Condition? result)
         {
             bool invert = false;
             if (value.StartsWith('!'))
@@ -177,6 +183,17 @@ namespace Primordially.LstToLua.Conditions
                     result = RuleCondition.Parse(v, invert);
                     return true;
 
+                case "PRETYPE":
+                    if (isEquipment)
+                    {
+                        result = EquipmentTypeCondition.Parse(v, invert);
+                    }
+                    else
+                    {
+                        goto default;
+                    }
+                    return true;
+
                 case "PRETEXT":
                     // Handled in DataObject
                     result = null;
@@ -196,12 +213,14 @@ namespace Primordially.LstToLua.Conditions
 
         public virtual void Dump(LuaTextWriter output)
         {
-            output.WriteStartFunction("character");
+            output.WriteStartFunction(Arguments);
             output.Write("return ");
             DumpCondition(output);
             output.WriteLine();
             output.WriteEndFunction();
         }
+
+        protected virtual string Arguments => "character";
 
         public abstract void DumpCondition(LuaTextWriter output);
     }

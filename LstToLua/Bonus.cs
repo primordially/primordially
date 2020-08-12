@@ -15,7 +15,7 @@ namespace Primordially.LstToLua
             Formula = formula;
         }
 
-        public static Bonus Parse(TextSpan value)
+        public static Bonus Parse(TextSpan value, bool isEquipment = false)
         {
             var parts = value.Split('|').ToArray();
             if (parts.Length < 3)
@@ -32,7 +32,7 @@ namespace Primordially.LstToLua
                     continue;
                 }
 
-                if (Condition.TryParse(extra, out var condition))
+                if (Condition.TryParse(extra, isEquipment, out var condition))
                 {
                     conditions.Add(condition);
                 }

@@ -174,7 +174,6 @@ DefineAbility({
   Choice={
     Choose=ChooseString({"Chaos", "Evil", "Good", "Law"}),
   },
-  Selections=nil,
   SourcePage="p.117",
   Conditions={
     function (character)
@@ -238,6 +237,25 @@ DefineAbility({
     },
   },
   SourcePage="p.118",
+  TemporaryBonuses={
+    Bonuses={
+      {
+        Target="PC",
+        Bonus={
+          Category="MISC",
+          Variables={
+            "SPELLFAILURE",
+          },
+          Formula=Formula("-20"),
+          Type={
+            Name="ArmorFailure",
+            Replace=false,
+            Stack=false,
+          },
+        },
+      },
+    },
+  },
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -290,25 +308,6 @@ DefineAbility({
   Types={
     "Combat",
   },
-  TemporaryBonuses={
-    Bonuses={
-      {
-        Target="PC",
-        Bonus={
-          Category="MISC",
-          Variables={
-            "SPELLFAILURE",
-          },
-          Formula=Formula("-20"),
-          Type={
-            Name="ArmorFailure",
-            Replace=false,
-            Stack=false,
-          },
-        },
-      },
-    },
-  },
 })
 
 DefineAbility({
@@ -322,6 +321,25 @@ DefineAbility({
     },
   },
   SourcePage="p.118",
+  TemporaryBonuses={
+    Bonuses={
+      {
+        Target="PC",
+        Bonus={
+          Category="MISC",
+          Variables={
+            "SPELLFAILURE",
+          },
+          Formula=Formula("-10"),
+          Type={
+            Name="ArmorFailure",
+            Replace=false,
+            Stack=false,
+          },
+        },
+      },
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -369,25 +387,6 @@ DefineAbility({
   Types={
     "Combat",
   },
-  TemporaryBonuses={
-    Bonuses={
-      {
-        Target="PC",
-        Bonus={
-          Category="MISC",
-          Variables={
-            "SPELLFAILURE",
-          },
-          Formula=Formula("-10"),
-          Type={
-            Name="ArmorFailure",
-            Replace=false,
-            Stack=false,
-          },
-        },
-      },
-    },
-  },
 })
 
 DefineAbility({
@@ -401,6 +400,30 @@ DefineAbility({
     },
   },
   SourcePage="p.118",
+  Definitions={
+    {
+      Name="ArcaneStrikeDamageBonus",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="ArcaneStrikeLVL",
+      InitialValue=Formula("0"),
+    },
+  },
+  TemporaryBonuses={
+    Bonuses={
+      {
+        Target="PC",
+        Bonus={
+          Category="COMBAT",
+          Variables={
+            "DAMAGE.Weapon",
+          },
+          Formula=Formula("ArcaneStrikeDamageBonus"),
+        },
+      },
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -442,17 +465,7 @@ DefineAbility({
   Description={
     Format="As a swift action, you can imbue your weapons with a fraction of your power. For 1 round, you gain a +%1 damage bonus and your weapons are treated as magic for the purpose of overcoming damage reduction.",
     Arguments={
-      "ArcaneStrikeDamageBonus",
-    },
-  },
-  Definitions={
-    {
-      Name="ArcaneStrikeDamageBonus",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="ArcaneStrikeLVL",
-      InitialValue=Formula("0"),
+      Formula("ArcaneStrikeDamageBonus"),
     },
   },
   Bonuses={
@@ -467,20 +480,6 @@ DefineAbility({
   Types={
     "Combat",
   },
-  TemporaryBonuses={
-    Bonuses={
-      {
-        Target="PC",
-        Bonus={
-          Category="COMBAT",
-          Variables={
-            "DAMAGE.Weapon",
-          },
-          Formula=Formula("ArcaneStrikeDamageBonus"),
-        },
-      },
-    },
-  },
 })
 
 DefineAbility({
@@ -493,7 +492,6 @@ DefineAbility({
       FormatString="When you wear a type of armor with which you are proficient, the armor check penalty for that armor applies only to Dexterity- and Strength-based skill checks.",
     },
   },
-  DisplayName="Armor Proficiency, Heavy",
   AutomaticProficiencies={
     {
       Kind="Armor",
@@ -502,6 +500,7 @@ DefineAbility({
       },
     },
   },
+  DisplayName="Armor Proficiency, Heavy",
   SourcePage="p.118",
   Conditions={
     function (character)
@@ -542,7 +541,6 @@ DefineAbility({
       FormatString="When you wear a type of armor with which you are proficient, the armor check penalty for that armor applies only to Dexterity- and Strength-based skill checks.",
     },
   },
-  DisplayName="Armor Proficiency, Light",
   AutomaticProficiencies={
     {
       Kind="Armor",
@@ -551,6 +549,7 @@ DefineAbility({
       },
     },
   },
+  DisplayName="Armor Proficiency, Light",
   SourcePage="p.118",
   Description={
     Format="You are skilled at wearing light armor.",
@@ -570,7 +569,6 @@ DefineAbility({
       FormatString="When you wear a type of armor with which you are proficient, the armor check penalty for that armor applies only to Dexterity- and Strength-based skill checks.",
     },
   },
-  DisplayName="Armor Proficiency, Medium",
   AutomaticProficiencies={
     {
       Kind="Armor",
@@ -579,6 +577,7 @@ DefineAbility({
       },
     },
   },
+  DisplayName="Armor Proficiency, Medium",
   SourcePage="p.118",
   Conditions={
     function (character)
@@ -941,6 +940,85 @@ DefineAbility({
     },
   },
   SourcePage="p.119",
+  Definitions={
+    {
+      Name="CombatExpertiseModifier",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="CombatExpertiseModifierAttack",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="CombatExpertiseModifierAC",
+      InitialValue=Formula("0"),
+    },
+  },
+  TemporaryBonuses={
+    Bonuses={
+      {
+        Target="PC",
+        Bonus={
+          Category="COMBAT",
+          Variables={
+            "AC",
+          },
+          Formula=Formula("CombatExpertiseModifierAC"),
+          Type={
+            Name="Dodge",
+            Replace=false,
+            Stack=false,
+          },
+        },
+      },
+      {
+        Target="PC",
+        Bonus={
+          Category="COMBAT",
+          Variables={
+            "TOHIT",
+            "MELEE",
+          },
+          Formula=Formula("CombatExpertiseModifierAttack"),
+          Type={
+            Name="Base",
+            Replace=false,
+            Stack=false,
+          },
+        },
+      },
+      {
+        Target="PC",
+        Bonus={
+          Category="VAR",
+          Variables={
+            "CMB",
+          },
+          Formula=Formula("CombatExpertiseModifierAttack"),
+          Type={
+            Name="Base",
+            Replace=false,
+            Stack=false,
+          },
+        },
+      },
+      {
+        Target="PC",
+        Bonus={
+          Category="VAR",
+          Variables={
+            "CMD",
+          },
+          Formula=Formula("CombatExpertiseModifierAC"),
+          Type={
+            Name="Base",
+            Replace=false,
+            Stack=false,
+          },
+        },
+      },
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -962,20 +1040,6 @@ DefineAbility({
   },
   Description={
     Format="You can increase your defense at the expense of your accuracy.",
-  },
-  Definitions={
-    {
-      Name="CombatExpertiseModifier",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CombatExpertiseModifierAttack",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CombatExpertiseModifierAC",
-      InitialValue=Formula("0"),
-    },
   },
   Bonuses={
     {
@@ -1020,6 +1084,37 @@ DefineAbility({
     "AttackOption",
     "ModifyAC",
   },
+})
+
+DefineAbility({
+  Name="Combat Expertise",
+  Category="FEAT",
+  AllowMultiple=false,
+  Stackable=false,
+  Benefits={
+    {
+      FormatString="You can choose to take a %1 penalty on melee attack rolls and combat maneuver checks to gain a +%2 dodge bonus to your Armor Class. You can only choose to use this feat when you declare that you are making an attack or a full-attack action with a melee weapon. The effects of this feat last until your next turn.",
+      Arguments={
+        "CombatExpertiseModifierAttack",
+        "CombatExpertiseModifierAC",
+      },
+    },
+  },
+  SourcePage="p.119",
+  Definitions={
+    {
+      Name="CombatExpertiseModifier",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="CombatExpertiseModifierAttack",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="CombatExpertiseModifierAC",
+      InitialValue=Formula("0"),
+    },
+  },
   TemporaryBonuses={
     Bonuses={
       {
@@ -1046,11 +1141,6 @@ DefineAbility({
             "MELEE",
           },
           Formula=Formula("CombatExpertiseModifierAttack"),
-          Type={
-            Name="Base",
-            Replace=false,
-            Stack=false,
-          },
         },
       },
       {
@@ -1061,11 +1151,6 @@ DefineAbility({
             "CMB",
           },
           Formula=Formula("CombatExpertiseModifierAttack"),
-          Type={
-            Name="Base",
-            Replace=false,
-            Stack=false,
-          },
         },
       },
       {
@@ -1076,32 +1161,10 @@ DefineAbility({
             "CMD",
           },
           Formula=Formula("CombatExpertiseModifierAC"),
-          Type={
-            Name="Base",
-            Replace=false,
-            Stack=false,
-          },
         },
       },
     },
   },
-})
-
-DefineAbility({
-  Name="Combat Expertise",
-  Category="FEAT",
-  AllowMultiple=false,
-  Stackable=false,
-  Benefits={
-    {
-      FormatString="You can choose to take a %1 penalty on melee attack rolls and combat maneuver checks to gain a +%2 dodge bonus to your Armor Class. You can only choose to use this feat when you declare that you are making an attack or a full-attack action with a melee weapon. The effects of this feat last until your next turn.",
-      Arguments={
-        "CombatExpertiseModifierAttack",
-        "CombatExpertiseModifierAC",
-      },
-    },
-  },
-  SourcePage="p.119",
   Conditions={
     function (character)
       local count = 0
@@ -1129,20 +1192,6 @@ DefineAbility({
   },
   Description={
     Format="You can increase your defense at the expense of your accuracy.",
-  },
-  Definitions={
-    {
-      Name="CombatExpertiseModifier",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CombatExpertiseModifierAttack",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="CombatExpertiseModifierAC",
-      InitialValue=Formula("0"),
-    },
   },
   Bonuses={
     {
@@ -1172,56 +1221,6 @@ DefineAbility({
     "AttackOption",
     "ModifyAC",
   },
-  TemporaryBonuses={
-    Bonuses={
-      {
-        Target="PC",
-        Bonus={
-          Category="COMBAT",
-          Variables={
-            "AC",
-          },
-          Formula=Formula("CombatExpertiseModifierAC"),
-          Type={
-            Name="Dodge",
-            Replace=false,
-            Stack=false,
-          },
-        },
-      },
-      {
-        Target="PC",
-        Bonus={
-          Category="COMBAT",
-          Variables={
-            "TOHIT",
-            "MELEE",
-          },
-          Formula=Formula("CombatExpertiseModifierAttack"),
-        },
-      },
-      {
-        Target="PC",
-        Bonus={
-          Category="VAR",
-          Variables={
-            "CMB",
-          },
-          Formula=Formula("CombatExpertiseModifierAttack"),
-        },
-      },
-      {
-        Target="PC",
-        Bonus={
-          Category="VAR",
-          Variables={
-            "CMD",
-          },
-          Formula=Formula("CombatExpertiseModifierAC"),
-        },
-      },
-    },
-  },
 })
 
 DefineAbility({
@@ -1238,14 +1237,14 @@ DefineAbility({
     },
   },
   SourcePage="p.119",
-  Description={
-    Format="You can make additional attacks of opportunity.",
-  },
   Definitions={
     {
       Name="CombatReflexesAttacks",
       InitialValue=Formula("0"),
     },
+  },
+  Description={
+    Format="You can make additional attacks of opportunity.",
   },
   Bonuses={
     {
@@ -1636,49 +1635,11 @@ DefineAbility({
     },
   },
   SourcePage="p.121",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        return (character.Variables["PreStatScore_DEX"] >= 13)
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (character)
-        return (character.Variables["FeatDexRequirement"] >= 13)
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-    function (character)
-      return character.TotalAttackBonus >= 1
-    end,
-  },
-  Description={
-    Format="You can make exceptionally deadly ranged attacks by pinpointing a foe's weak spot, at the expense of making the attack less likely to succeed.",
-  },
   Definitions={
     {
       Name="DeadlyAimModifier",
       InitialValue=Formula("0"),
     },
-  },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "DeadlyAimModifier",
-      },
-      Formula=Formula("floor(BAB/4)+1"),
-    },
-  },
-  Types={
-    "Combat",
-    "AttackOption",
   },
   TemporaryBonuses={
     Bonuses={
@@ -1713,6 +1674,44 @@ DefineAbility({
         },
       },
     },
+  },
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        return (character.Variables["PreStatScore_DEX"] >= 13)
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (character)
+        return (character.Variables["FeatDexRequirement"] >= 13)
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+    function (character)
+      return character.TotalAttackBonus >= 1
+    end,
+  },
+  Description={
+    Format="You can make exceptionally deadly ranged attacks by pinpointing a foe's weak spot, at the expense of making the attack less likely to succeed.",
+  },
+  Bonuses={
+    {
+      Category="VAR",
+      Variables={
+        "DeadlyAimModifier",
+      },
+      Formula=Formula("floor(BAB/4)+1"),
+    },
+  },
+  Types={
+    "Combat",
+    "AttackOption",
   },
 })
 
@@ -2097,7 +2096,6 @@ DefineAbility({
   Choice={
     Choose=ChooseString({"Air", "Earth", "Fire", "Water"}),
   },
-  Selections=nil,
   SourcePage="p.122",
   Conditions={
     function (character)
@@ -2161,14 +2159,14 @@ DefineAbility({
     },
   },
   SourcePage="p.112",
-  Description={
-    Format="Harsh conditions or long exertions do not easily tire you.",
-  },
   Definitions={
     {
       Name="Feat_Endurance_SaveBonus",
       InitialValue=Formula("0"),
     },
+  },
+  Description={
+    Format="Harsh conditions or long exertions do not easily tire you.",
   },
   Bonuses={
     {
@@ -2290,7 +2288,6 @@ DefineAbility({
       return ((true and (((weapon.IsType("Exotic"))))))
     end),
   },
-  Selections=nil,
   AutomaticProficiencies={
     {
       Kind="Weapon",
@@ -2384,7 +2381,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.124",
   Conditions={
     function (character)
@@ -2423,7 +2419,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.124",
   Conditions={
     function (character)
@@ -2462,7 +2457,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.124",
   Conditions={
     function (character)
@@ -2501,7 +2495,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.124",
   Conditions={
     function (character)
@@ -2540,7 +2533,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.124",
   Conditions={
     function (character)
@@ -2576,6 +2568,15 @@ DefineAbility({
       FormatString="You only suffer a -1 penalty per full range increment between you and your target when using a ranged weapon.",
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Tracker ~ Range Penalty",
+      },
+    },
+  },
   SourcePage="p.124",
   Conditions={
     function (character)
@@ -2601,15 +2602,6 @@ DefineAbility({
       },
     },
   },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Tracker ~ Range Penalty",
-      },
-    },
-  },
   Types={
     "Combat",
   },
@@ -2628,7 +2620,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.124",
   Description={
     Format="You are faster than most.",
@@ -3126,7 +3117,6 @@ DefineAbility({
       return (((stringMatch(school.Name, "ABILITY=FEAT") or stringMatch(school.Key, "ABILITY=FEAT")) and ((((stringMatch(school.Name, "Spell Focus") or stringMatch(school.Key, "Spell Focus")))))))
     end),
   },
-  Selections=nil,
   SourcePage="p.125",
   Conditions={
     function (character)
@@ -3378,7 +3368,6 @@ DefineAbility({
       return (((stringMatch(weapon.Name, "ABILITY=FEAT") or stringMatch(weapon.Key, "ABILITY=FEAT")) and ((((stringMatch(weapon.Name, "Weapon Focus") or stringMatch(weapon.Key, "Weapon Focus")))))))
     end),
   },
-  Selections=nil,
   SourcePage="p.126",
   Conditions={
     function (character)
@@ -3425,7 +3414,6 @@ DefineAbility({
       return (((stringMatch(weapon.Name, "ABILITY=FEAT") or stringMatch(weapon.Key, "ABILITY=FEAT")) and ((((stringMatch(weapon.Name, "Weapon Specialization") or stringMatch(weapon.Key, "Weapon Specialization")))))))
     end),
   },
-  Selections=nil,
   SourcePage="p.126",
   Conditions={
     function (character)
@@ -3465,6 +3453,15 @@ DefineAbility({
       FormatString="A heightened spell has a higher spell level than normal (up to a maximum of 9th level). Unlike other metamagic feats, Heighten Spell actually increases the effective level of the spell that it modifies. All effects dependent on spell level (such as saving throw DCs and ability to penetrate a lesser globe of invulnerability) are calculated according to the heightened level. The heightened spell is as difficult to prepare and cast as a spell of its effective level.",
     },
   },
+  Abilities={
+    {
+      Category="FEAT",
+      Nature="AUTOMATIC",
+      Types={
+        "Heighten Spell",
+      },
+    },
+  },
   Facts={
     AppliedName="Heightened +1",
   },
@@ -3479,15 +3476,6 @@ DefineAbility({
         "FEATBONUS",
       },
       Formula=Formula("1"),
-    },
-  },
-  Abilities={
-    {
-      Category="FEAT",
-      Nature="AUTOMATIC",
-      Types={
-        "Heighten Spell",
-      },
     },
   },
   Types={
@@ -3635,7 +3623,6 @@ DefineAbility({
       return ((character.IsProficientWith(weapon)))
     end),
   },
-  Selections=nil,
   SourcePage="p.127",
   Conditions={
     function (character)
@@ -3728,10 +3715,6 @@ DefineAbility({
       FormatString="When choosing a familiar, the creatures listed below are also available to you (see the Pathfinder RPG Bestiary for statistics on these creatures). You may choose a familiar with an alignment up to one step away on each alignment axis (lawful through chaotic, good through evil).",
     },
   },
-  SourcePage="p.127",
-  Description={
-    Format="This feat allows you to acquire a powerful familiar, but only when they could normally acquire a new familiar.",
-  },
   Abilities={
     {
       Category="Internal",
@@ -3740,6 +3723,10 @@ DefineAbility({
         "Improved Familiar List",
       },
     },
+  },
+  SourcePage="p.127",
+  Description={
+    Format="This feat allows you to acquire a powerful familiar, but only when they could normally acquire a new familiar.",
   },
   Types={
     "General",
@@ -4375,15 +4362,16 @@ DefineAbility({
       FormatString="This feat enables you to attract a loyal cohort and a number of devoted subordinates who assist you. A cohort is generally an NPC with class levels, while followers are typically lower level NPCs. See Table 5-2 for what level of cohort and how many followers you can recruit.",
     },
   },
+  Abilities={
+    {
+      Category="FEAT",
+      Nature="VIRTUAL",
+      Names={
+        "Leadership Score",
+      },
+    },
+  },
   SourcePage="p.129",
-  Conditions={
-    function (character)
-      return character.Level >= 7
-    end,
-  },
-  Description={
-    Format="You attract followers to your cause and a companion to join you on your adventure.",
-  },
   Definitions={
     {
       Name="LeadershipMaxCohortLvl",
@@ -4397,6 +4385,14 @@ DefineAbility({
       Name="LeadershipAbilityScoreMod",
       InitialValue=Formula("0"),
     },
+  },
+  Conditions={
+    function (character)
+      return character.Level >= 7
+    end,
+  },
+  Description={
+    Format="You attract followers to your cause and a companion to join you on your adventure.",
   },
   Bonuses={
     {
@@ -4419,15 +4415,6 @@ DefineAbility({
         "LeadershipAbilityScoreMod",
       },
       Formula=Formula("CHA"),
-    },
-  },
-  Abilities={
-    {
-      Category="FEAT",
-      Nature="VIRTUAL",
-      Names={
-        "Leadership Score",
-      },
     },
   },
   Types={
@@ -4629,7 +4616,6 @@ DefineAbility({
       return ((not (character.IsProficientWith(weapon)) and (((weapon.IsType("Martial"))))))
     end),
   },
-  Selections=nil,
   AutomaticProficiencies={
     {
       Kind="Weapon",
@@ -4671,8 +4657,13 @@ DefineAbility({
     end),
     MaxTimes=1,
   },
-  Selections=nil,
   SourcePage="p.130",
+  Definitions={
+    {
+      Name="MasterCraftsmanRanks",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       return ((character.Skill("(122,133): Craft").ranks >= 5 and 1 or 0) + (character.Skill("(122,146): Profession").ranks >= 5 and 1 or 0)) >= 1
@@ -4680,12 +4671,6 @@ DefineAbility({
   },
   Description={
     Format="Your superior crafting skills allow you to create simple magic items.",
-  },
-  Definitions={
-    {
-      Name="MasterCraftsmanRanks",
-      InitialValue=Formula("0"),
-    },
   },
   Bonuses={
     {
@@ -4770,6 +4755,15 @@ DefineAbility({
       FormatString="You get a +4 dodge bonus to Armor Class against attacks of opportunity caused when you move out of or within a threatened area. A condition that makes you lose your Dexterity bonus to Armor Class (if any) also makes you lose dodge bonuses. Dodge bonuses stack with each other, unlike most types of bonuses.",
     },
   },
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Aspect Combat Bonus ~ Mobility",
+      },
+    },
+  },
   SourcePage="p.130",
   Conditions={
     function (character)
@@ -4797,15 +4791,6 @@ DefineAbility({
   },
   Description={
     Format="You can easily move through a dangerous melee.",
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Aspect Combat Bonus ~ Mobility",
-      },
-    },
   },
   Types={
     "Combat",
@@ -4926,6 +4911,12 @@ DefineAbility({
     },
   },
   SourcePage="p.131",
+  Definitions={
+    {
+      Name="Feat_NimbleMoves_Squares",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -4947,12 +4938,6 @@ DefineAbility({
   },
   Description={
     Format="You can move across a single obstacle with ease.",
-  },
-  Definitions={
-    {
-      Name="Feat_NimbleMoves_Squares",
-      InitialValue=Formula("0"),
-    },
   },
   Bonuses={
     {
@@ -5124,66 +5109,6 @@ DefineAbility({
       },
     },
   },
-  SourcePage="p.131",
-  Conditions={
-    function (character)
-      return character.TotalAttackBonus >= 1
-    end,
-    function (character)
-      return (character.Variables["PreStatScore_STR"] >= 13)
-    end,
-  },
-  Description={
-    Format="You can make exceptionally deadly melee attacks by sacrificing accuracy for strength.",
-  },
-  Definitions={
-    {
-      Name="PowerAttackModifier",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="MonkFlurryPowerAttackModifier",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="PowerAttackDamageModifier",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="PowerAttackDamageBase",
-      InitialValue=Formula("0"),
-    },
-  },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "PowerAttackModifier",
-      },
-      Formula=Formula("(BAB/4)+1"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "PowerAttackDamageBase",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "PowerAttackDamageModifier",
-      },
-      Formula=Formula("PowerAttackDamageBase*floor(PowerAttackModifier)"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "MonkFlurryPowerAttackModifier",
-      },
-      Formula=Formula("BAB+(FlurryLVL-MonkBAB)"),
-    },
-  },
   Abilities={
     {
       Category="FEAT",
@@ -5251,6 +5176,66 @@ DefineAbility({
           end)
         end,
       },
+    },
+  },
+  SourcePage="p.131",
+  Definitions={
+    {
+      Name="PowerAttackModifier",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="MonkFlurryPowerAttackModifier",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="PowerAttackDamageModifier",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="PowerAttackDamageBase",
+      InitialValue=Formula("0"),
+    },
+  },
+  Conditions={
+    function (character)
+      return character.TotalAttackBonus >= 1
+    end,
+    function (character)
+      return (character.Variables["PreStatScore_STR"] >= 13)
+    end,
+  },
+  Description={
+    Format="You can make exceptionally deadly melee attacks by sacrificing accuracy for strength.",
+  },
+  Bonuses={
+    {
+      Category="VAR",
+      Variables={
+        "PowerAttackModifier",
+      },
+      Formula=Formula("(BAB/4)+1"),
+    },
+    {
+      Category="VAR",
+      Variables={
+        "PowerAttackDamageBase",
+      },
+      Formula=Formula("2"),
+    },
+    {
+      Category="VAR",
+      Variables={
+        "PowerAttackDamageModifier",
+      },
+      Formula=Formula("PowerAttackDamageBase*floor(PowerAttackModifier)"),
+    },
+    {
+      Category="VAR",
+      Variables={
+        "MonkFlurryPowerAttackModifier",
+      },
+      Formula=Formula("BAB+(FlurryLVL-MonkBAB)"),
     },
   },
   Types={
@@ -5347,14 +5332,13 @@ DefineAbility({
       return (((stringMatch(weapon.Name, "Crossbow (Hand)") or stringMatch(weapon.Key, "Crossbow (Hand)")))) or (((stringMatch(weapon.Name, "Crossbow (Heavy)") or stringMatch(weapon.Key, "Crossbow (Heavy)")))) or (((stringMatch(weapon.Name, "Crossbow (Light)") or stringMatch(weapon.Key, "Crossbow (Light)"))))
     end),
   },
-  Selections=nil,
+  AdditionalRequirementText=":Weapon Proficiency (crossbow type chosen).",
+  SourcePage="p.132",
   Info={
     Prerequisite="Weapon Proficiency (crossbow type chosen).",
     Normal="A character without this feat needs a move action to reload a hand or light crossbow, or a full-round action to reload a heavy crossbow.",
     Special="You can gain Rapid Reload multiple times. Each time you take the feat, it applies to a new type of crossbow.",
   },
-  AdditionalRequirementText=":Weapon Proficiency (crossbow type chosen).",
-  SourcePage="p.132",
   Conditions={
     function (character)
       return ((character.IsProficientWithWeaponType("Crossbow"))) >= 1
@@ -5379,6 +5363,30 @@ DefineAbility({
     },
   },
   SourcePage="p.132",
+  TemporaryBonuses={
+    Bonuses={
+      {
+        Target="EQ|Weapon,Ranged",
+        Bonus={
+          Category="WEAPON",
+          Variables={
+            "ATTACKS",
+          },
+          Formula=Formula("1"),
+        },
+      },
+      {
+        Target="EQ|Weapon,Ranged",
+        Bonus={
+          Category="WEAPON",
+          Variables={
+            "TOHIT",
+          },
+          Formula=Formula("-2"),
+        },
+      },
+    },
+  },
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -5409,30 +5417,6 @@ DefineAbility({
   Types={
     "Combat",
     "AttackOption",
-  },
-  TemporaryBonuses={
-    Bonuses={
-      {
-        Target="EQ|Weapon,Ranged",
-        Bonus={
-          Category="WEAPON",
-          Variables={
-            "ATTACKS",
-          },
-          Formula=Formula("1"),
-        },
-      },
-      {
-        Target="EQ|Weapon,Ranged",
-        Bonus={
-          Category="WEAPON",
-          Variables={
-            "TOHIT",
-          },
-          Formula=Formula("-2"),
-        },
-      },
-    },
   },
 })
 
@@ -5995,10 +5979,6 @@ DefineAbility({
       FormatString="You make attack rolls with simple weapons without penalty.",
     },
   },
-  SourcePage="p.133",
-  Description={
-    Format="You are trained in the use of basic weapons.",
-  },
   Abilities={
     {
       Category="Internal",
@@ -6007,6 +5987,10 @@ DefineAbility({
         "Weapon Prof ~ Simple",
       },
     },
+  },
+  SourcePage="p.133",
+  Description={
+    Format="You are trained in the use of basic weapons.",
   },
   Types={
     "General",
@@ -6028,7 +6012,6 @@ DefineAbility({
       return ((skill.IsType("Base")))
     end),
   },
-  Selections=nil,
   SourcePage="p.134",
   Description={
     Format="You are particularly adept at your chosen skill.",
@@ -6111,7 +6094,6 @@ DefineAbility({
       return ((true))
     end),
   },
-  Selections=nil,
   SourcePage="p.134",
   Description={
     Format="Any spells you cast of your chosen school of magic are more difficult to resist.",
@@ -6528,7 +6510,30 @@ DefineAbility({
       },
     },
   },
+  Abilities={
+    {
+      Category="Ability Focus",
+      Nature="AUTOMATIC",
+      Names={
+        "Stunning Fist",
+      },
+    },
+  },
   SourcePage="p.135",
+  Definitions={
+    {
+      Name="StunningFistMonkLVL",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="StunningFistAttack",
+      InitialValue=Formula("0"),
+    },
+    {
+      Name="StunningFistDC",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -6573,22 +6578,8 @@ DefineAbility({
   Description={
     Format="You know just where to strike to temporarily stun a foe. %1/day (DC %2)",
     Arguments={
-      "StunningFistAttack",
-      "StunningFistDC",
-    },
-  },
-  Definitions={
-    {
-      Name="StunningFistMonkLVL",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="StunningFistAttack",
-      InitialValue=Formula("0"),
-    },
-    {
-      Name="StunningFistDC",
-      InitialValue=Formula("0"),
+      Formula("StunningFistAttack"),
+      Formula("StunningFistDC"),
     },
   },
   Bonuses={
@@ -6623,15 +6614,6 @@ DefineAbility({
         Name="NoStack",
         Replace=false,
         Stack=false,
-      },
-    },
-  },
-  Abilities={
-    {
-      Category="Ability Focus",
-      Nature="AUTOMATIC",
-      Names={
-        "Stunning Fist",
       },
     },
   },
@@ -6875,6 +6857,12 @@ DefineAbility({
     },
   },
   SourcePage="p.136",
+  Definitions={
+    {
+      Name="TwoWeaponShield",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -6901,12 +6889,6 @@ DefineAbility({
   },
   Description={
     Format="You are skilled at defending yourself while fighting with two weapons.",
-  },
-  Definitions={
-    {
-      Name="TwoWeaponShield",
-      InitialValue=Formula("0"),
-    },
   },
   Bonuses={
     {
@@ -7173,8 +7155,13 @@ DefineAbility({
       return ((character.IsProficientWith(weapon)))
     end),
   },
-  Selections=nil,
   SourcePage="p.136",
+  Definitions={
+    {
+      Name="WeaponFocusToHit",
+      InitialValue=Formula("0"),
+    },
+  },
   Conditions={
     function (character)
       return character.TotalAttackBonus >= 1
@@ -7182,12 +7169,6 @@ DefineAbility({
   },
   Description={
     Format="You are especially good at using your chosen weapon.",
-  },
-  Definitions={
-    {
-      Name="WeaponFocusToHit",
-      InitialValue=Formula("0"),
-    },
   },
   Bonuses={
     {
@@ -7219,7 +7200,6 @@ DefineAbility({
       return (((stringMatch(weapon.Name, "ABILITY=FEAT") or stringMatch(weapon.Key, "ABILITY=FEAT")) and ((((stringMatch(weapon.Name, "Weapon Focus") or stringMatch(weapon.Key, "Weapon Focus")))))))
     end),
   },
-  Selections=nil,
   SourcePage="p.137",
   Conditions={
     function (character)
@@ -7387,12 +7367,10 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   Visible=false,
-  Types={
-    "Special",
-    "Internal",
-  },
   TemporaryBonuses={
-    Description="Several factors can affect a character's Leadership score, causing it to vary from the base score. Add modifiers as needed.",
+    Description={
+      Format="Several factors can affect a character's Leadership score, causing it to vary from the base score. Add modifiers as needed.",
+    },
     Bonuses={
       {
         Target="PC",
@@ -7405,6 +7383,10 @@ DefineAbility({
         },
       },
     },
+  },
+  Types={
+    "Special",
+    "Internal",
   },
 })
 

@@ -10,6 +10,15 @@ DefineClass({
   Name="Companion",
   IntModToSkills=false,
   DisplayName="Animal",
+  Abilities={
+    {
+      Category="FEAT",
+      Nature="AUTOMATIC",
+      Names={
+        "CMB Output",
+      },
+    },
+  },
   Facts={
     ClassType="Companion",
     Abb="AC",
@@ -164,15 +173,6 @@ DefineClass({
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
-      },
-    },
-  },
-  Abilities={
-    {
-      Category="FEAT",
-      Nature="AUTOMATIC",
-      Names={
-        "CMB Output",
       },
     },
   },
