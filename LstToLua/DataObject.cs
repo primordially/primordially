@@ -5,23 +5,18 @@ namespace Primordially.LstToLua
 {
     internal class DataObject : DataSetObject
     {
-        public string? SortKey { get; private set; }
         public Dictionary<string, int> Followers { get; } = new Dictionary<string, int>();
         public Dictionary<string, FollowerType> FollowerTypes { get; } = new Dictionary<string, FollowerType>();
         public List<string> UnencumberedMove { get; } = new List<string>();
         public List<string> UnarmedDamage { get; } = new List<string>();
         public string? UnarmedDamageMultiplier { get; private set; }
-        public bool ClearSpellLikeAbilities { get; private set; } = false;
         public List<SpellList> SpellsKnown { get; } = new List<SpellList>();
-        public List<SpellLikeAbility> SpellLikeAbilities { get; } = new List<SpellLikeAbility>();
-        public string? DisplayName { get; private set; }
         public List<ServesAs> ServesAs { get; } = new List<ServesAs>();
         public List<AutomaticEquipment> AutomaticEquipments { get; } = new List<AutomaticEquipment>();
         public List<AutomaticProficiency> AutomaticProficiencies = new List<AutomaticProficiency>();
         public List<AddedSpellCasterLevel> AddedSpellCasterLevels { get; } = new List<AddedSpellCasterLevel>();
         public ChangeWeaponProficiencyCategory? ChangeWeaponProficiency { get; private set; }
         public List<StatModification> StatModifications { get; } = new List<StatModification>();
-        public List<(string key, string value)> Info { get; } = new List<(string key, string value)>();
         public string? AdditionalRequirementText { get; private set; }
         public List<NaturalAttack> NaturalAttacks { get; } = new List<NaturalAttack>();
 
@@ -103,18 +98,6 @@ namespace Primordially.LstToLua
                 return;
             }
 
-            if (field.TryRemovePrefix("SPELLS:", out var spellLikeAbility))
-            {
-                if (spellLikeAbility.Value == ".CLEARALL")
-                {
-                    ClearSpellLikeAbilities = true;
-                    SpellLikeAbilities.Clear();
-                    return;
-                }
-                SpellLikeAbilities.AddRange(SpellLikeAbility.ParseAll(spellLikeAbility));
-                return;
-            }
-
             if (field.TryRemovePrefix("SPELLKNOWN:", out var spellKnown))
             {
                 SpellsKnown.AddRange(SpellList.Parse(spellKnown));
@@ -124,25 +107,6 @@ namespace Primordially.LstToLua
             if (field.TryRemovePrefix("SERVESAS:", out var servesAs))
             {
                 ServesAs.Add(LstToLua.ServesAs.Parse(servesAs));
-                return;
-            }
-
-            if (field.TryRemovePrefix("OUTPUTNAME:", out var n))
-            {
-                DisplayName = n.Value;
-                return;
-            }
-
-            if (field.TryRemovePrefix("SORTKEY:", out var sortKey))
-            {
-                SortKey = sortKey.Value;
-                return;
-            }
-
-            if (field.TryRemovePrefix("INFO:", out var info))
-            {
-                var (k, v) = info.SplitTuple('|');
-                Info.Add((k.Value, v.Value));
                 return;
             }
 
@@ -163,16 +127,6 @@ namespace Primordially.LstToLua
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            if (SortKey != null)
-            {
-                output.WriteKeyValue("SortKey", SortKey);
-            }
-
-            if (DisplayName != null)
-            {
-                output.WriteKeyValue("DisplayName", DisplayName);
-            }
-
             if (Followers.Any())
             {
                 output.WriteObjectValue("Followers", () =>
@@ -191,7 +145,6 @@ namespace Primordially.LstToLua
             {
                 output.WriteKeyValue("UnarmedDamageMultiplier", UnarmedDamageMultiplier);
             }
-            output.WriteListValue("SpellLikeAbilities", SpellLikeAbilities);
             output.WriteListValue("SpellsKnown", SpellsKnown);
             output.WriteListValue("ServesAs", ServesAs);
             output.WriteListValue("AutomaticEquipment", AutomaticEquipments);
@@ -202,16 +155,6 @@ namespace Primordially.LstToLua
                 output.WriteKeyValue("ChangeWeaponProficiency", ChangeWeaponProficiency);
             }
             output.WriteListValue("StatModifications", StatModifications);
-            if (Info.Any())
-            {
-                output.WriteObjectValue("Info", () =>
-                {
-                    foreach (var (k, v) in Info)
-                    {
-                        output.WriteKeyValue(k, v);
-                    }
-                });
-            }
 
             if (AdditionalRequirementText != null)
             {

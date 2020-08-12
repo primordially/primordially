@@ -44,6 +44,10 @@ namespace Primordially.LstToLua
 
         public IEnumerable<TextSpan> Split(char splitOn, (char start, char end)? quotedBy = null)
         {
+            if (Value == null)
+            {
+                yield break;
+            }
             var current = new StringBuilder();
             var currentStartIndex = 0;
             var quoteDepth = 0;
@@ -94,6 +98,21 @@ namespace Primordially.LstToLua
         public bool StartsWith(string value)
         {
             return Value.StartsWith(value);
+        }
+
+        public bool TryRemoveInfix(string value, out TextSpan left, out TextSpan right)
+        {
+            var idx = IndexOf(value);
+            if (idx == -1)
+            {
+                left = default;
+                right = default;
+                return false;
+            }
+
+            left = Substring(0, idx);
+            right = Substring(idx + value.Length);
+            return true;
         }
 
         public bool TryRemovePrefix(string prefix, out TextSpan value)

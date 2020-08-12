@@ -4241,7 +4241,6 @@ DefineDomain({
 })
 ModifyDomain({
   Name="Air",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4264,7 +4263,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Animal",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4287,7 +4285,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Artifice",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4310,7 +4307,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Chaos",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4333,7 +4329,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Charm",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4356,7 +4351,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Community",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4379,7 +4373,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Darkness",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4402,7 +4395,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Death",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4425,7 +4417,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Destruction",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4448,7 +4439,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Earth",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4471,7 +4461,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Evil",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4494,7 +4483,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Fire",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4517,7 +4505,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Glory",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4540,7 +4527,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Good",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4563,7 +4549,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Healing",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4586,7 +4571,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Knowledge",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4609,7 +4593,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Law",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4632,7 +4615,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Liberation",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4655,7 +4637,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Luck",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4678,7 +4659,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Madness",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4701,7 +4681,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Magic",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4724,7 +4703,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Nobility",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4747,7 +4725,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Plant",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4770,7 +4747,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Protection",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4793,7 +4769,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Repose",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4816,7 +4791,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Rune",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4839,7 +4813,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Strength",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4862,7 +4835,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Sun",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4885,7 +4857,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Travel",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4908,7 +4879,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Trickery",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4931,7 +4901,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="War",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4954,7 +4923,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Water",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -4977,7 +4945,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Weather",
-  Description=nil,
   Conditions={
     function (character)
       local count = 0
@@ -5000,7 +4967,6 @@ ModifyDomain({
 })
 ModifyDomain({
   Name="Death (Pharasma)",
-  Description=nil,
   Bonuses={
     {
       Category="VAR",

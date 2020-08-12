@@ -11,6 +11,32 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Temp Bonus ~ Enlarge Person",
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["ActivateEnlargePerson"] == 1)
+        end,
+      },
+    },
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Temp Bonus ~ Reduce Person",
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["ActivateReducePerson"] == 1)
+        end,
+      },
+    },
+  },
   Definitions={
     {
       Name="BastardSwordExoticUse",
@@ -102,32 +128,6 @@ ModifyAbility({
       Formula=Formula("SPELLFAILURE"),
     },
   },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Temp Bonus ~ Enlarge Person",
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["ActivateEnlargePerson"] == 1)
-        end,
-      },
-    },
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Temp Bonus ~ Reduce Person",
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["ActivateReducePerson"] == 1)
-        end,
-      },
-    },
-  },
 })
 
 ModifyAbility({
@@ -135,6 +135,20 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Aspect Combat Bonus ~ Encumbrance",
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["Encumbrance"] >= 1)
+        end,
+      },
+    },
+  },
   Definitions={
     {
       Name="WeaponFocusToHit",
@@ -168,20 +182,6 @@ ModifyAbility({
         Name="Base",
         Replace=false,
         Stack=false,
-      },
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Aspect Combat Bonus ~ Encumbrance",
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["Encumbrance"] >= 1)
-        end,
       },
     },
   },
@@ -1123,7 +1123,12 @@ DefineAbility({
   Stackable=false,
   Visible=false,
   TemporaryBonuses={
-    Description="Inspire courage&colon; +%1 morale bonus on saving throws against charm and fear effects and a +%1 competence bonus on attack and weapon damage rolls, goes up at 5th and every six levels after that.|InspireCourageBonus",
+    Description={
+      Format="Inspire courage&colon; +%1 morale bonus on saving throws against charm and fear effects and a +%1 competence bonus on attack and weapon damage rolls, goes up at 5th and every six levels after that.",
+      Arguments={
+        Formula("InspireCourageBonus"),
+      },
+    },
     Bonuses={
       {
         Target="ANYPC",
@@ -1207,7 +1212,9 @@ DefineAbility({
   Stackable=false,
   Visible=false,
   TemporaryBonuses={
-    Description="Inspire Greatness&colon; A creature inspired with greatness gains 2 bonus Hit Dice (d10s), the commensurate number of temporary hit points (apply the target's Constitution modifier, if any, to these bonus Hit Dice), a +2 competence bonus on attack rolls, and a +1 competence bonus on Fortitude saves. The bonus Hit Dice count as regular Hit Dice for determining the effect of spells that are Hit Dice dependent. Inspire greatness is a mind-affecting ability and it relies on audible and visual components.",
+    Description={
+      Format="Inspire Greatness&colon; A creature inspired with greatness gains 2 bonus Hit Dice (d10s), the commensurate number of temporary hit points (apply the target's Constitution modifier, if any, to these bonus Hit Dice), a +2 competence bonus on attack rolls, and a +1 competence bonus on Fortitude saves. The bonus Hit Dice count as regular Hit Dice for determining the effect of spells that are Hit Dice dependent. Inspire greatness is a mind-affecting ability and it relies on audible and visual components.",
+    },
     Bonuses={
       {
         Target="ANYPC",
@@ -1261,7 +1268,9 @@ DefineAbility({
   Stackable=false,
   Visible=false,
   TemporaryBonuses={
-    Description="Inspire Heroics&colon; Inspired creatures gain a +4 morale bonus on saving throws and a +4 dodge bonus to AC.",
+    Description={
+      Format="Inspire Heroics&colon; Inspired creatures gain a +4 morale bonus on saving throws and a +4 dodge bonus to AC.",
+    },
     Bonuses={
       {
         Target="ANYPC",
@@ -1305,7 +1314,9 @@ DefineAbility({
   Stackable=false,
   Visible=false,
   TemporaryBonuses={
-    Description="Aura of courage&colon; Each ally within 10 feet of her gains a +4 morale bonus on saving throws against fear effects.",
+    Description={
+      Format="Aura of courage&colon; Each ally within 10 feet of her gains a +4 morale bonus on saving throws against fear effects.",
+    },
     Bonuses={
       {
         Target="ANYPC",
@@ -1330,7 +1341,9 @@ DefineAbility({
   Stackable=false,
   Visible=false,
   TemporaryBonuses={
-    Description="Aura of Resolve&colon; Each ally within 10 feet of her gains a +4 morale bonus on saving throws against charm effects.",
+    Description={
+      Format="Aura of Resolve&colon; Each ally within 10 feet of her gains a +4 morale bonus on saving throws against charm effects.",
+    },
     Bonuses={
       {
         Target="ANYPC",
@@ -1355,7 +1368,9 @@ DefineAbility({
   Stackable=false,
   Visible=false,
   TemporaryBonuses={
-    Description="Aura of Justice is probably not possible (depends on the Paladin level)&colon; At 11th level, a paladin can expend two uses of her smite evil ability to grant the ability to smite evil to all allies within 10 feet, using her bonuses. Allies must use this smite evil ability by the start of the paladin's next turn and the bonuses last for 1 minute. Using this ability is a free action. Evil creatures gain no benefit from this ability.",
+    Description={
+      Format="Aura of Justice is probably not possible (depends on the Paladin level)&colon; At 11th level, a paladin can expend two uses of her smite evil ability to grant the ability to smite evil to all allies within 10 feet, using her bonuses. Allies must use this smite evil ability by the start of the paladin's next turn and the bonuses last for 1 minute. Using this ability is a free action. Evil creatures gain no benefit from this ability.",
+    },
     Bonuses={
       {
         Target="ANYPC",
@@ -1380,7 +1395,9 @@ DefineAbility({
   Stackable=false,
   Visible=false,
   TemporaryBonuses={
-    Description="Aura of Righteousness&colon; Each ally within 10 feet of her gains a +4 morale bonus on saving throws against compulsion effects.",
+    Description={
+      Format="Aura of Righteousness&colon; Each ally within 10 feet of her gains a +4 morale bonus on saving throws against compulsion effects.",
+    },
     Bonuses={
       {
         Target="ANYPC",
@@ -1458,6 +1475,32 @@ ModifyAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
+  Abilities={
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Temp_Bonus_Aspect_Tracker",
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["ActivateTempBonus"] >= 1)
+        end,
+      },
+    },
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Temp Bonus ~ Stoneskin",
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["StoneskinActivate"] >= 1)
+        end,
+      },
+    },
+  },
   Definitions={
     {
       Name="StoneskinActivate",
@@ -1498,32 +1541,6 @@ ModifyAbility({
     {
       Name="TempBonus_BlessWeapon",
       InitialValue=Formula("0"),
-    },
-  },
-  Abilities={
-    {
-      Category="Special Ability",
-      Nature="AUTOMATIC",
-      Names={
-        "Temp_Bonus_Aspect_Tracker",
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["ActivateTempBonus"] >= 1)
-        end,
-      },
-    },
-    {
-      Category="Special Ability",
-      Nature="AUTOMATIC",
-      Names={
-        "Temp Bonus ~ Stoneskin",
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["StoneskinActivate"] >= 1)
-        end,
-      },
     },
   },
 })
@@ -2074,7 +2091,6 @@ DefineAbility({
       return ((skill.IsType("Base")))
     end),
   },
-  Selections=nil,
   Bonuses={
     {
       Category="SKILLRANK",
@@ -2102,15 +2118,6 @@ DefineAbility({
   Category="Intelligent Item",
   AllowMultiple=false,
   Stackable=false,
-  Bonuses={
-    {
-      Category="ABILITYPOOL",
-      Variables={
-        "Intelligent Item Languages",
-      },
-      Formula=Formula("SpeechBonusLang"),
-    },
-  },
   Abilities={
     {
       Category="Special Ability",
@@ -2133,6 +2140,15 @@ DefineAbility({
         "Intelligent Item ~ Senses",
         "Intelligent Item ~ Stat",
       },
+    },
+  },
+  Bonuses={
+    {
+      Category="ABILITYPOOL",
+      Variables={
+        "Intelligent Item Languages",
+      },
+      Formula=Formula("SpeechBonusLang"),
     },
   },
 })
@@ -2781,7 +2797,7 @@ DefineAbility({
   Description={
     Format="%1 ft.",
     Arguments={
-      "IntItemSenseRange",
+      Formula("IntItemSenseRange"),
     },
   },
   Types={
@@ -2799,7 +2815,7 @@ DefineAbility({
   Description={
     Format="%1 ft.",
     Arguments={
-      "IntItemSenseRange",
+      Formula("IntItemSenseRange"),
     },
   },
   Types={
@@ -2817,7 +2833,7 @@ DefineAbility({
   Description={
     Format="%1 ft.",
     Arguments={
-      "IntItemSenseRange",
+      Formula("IntItemSenseRange"),
     },
   },
   Types={
@@ -4094,17 +4110,17 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   SourcePage="p.562",
-  Description={
-    Format="%1 negative levels (-%1 effective levels and loses access to %1 spells from the highest spell level castable)",
-    Arguments={
-      "NegLevels",
-      "PREVARGT:NegLevels,1",
-    },
-  },
   Definitions={
     {
       Name="NegLevels",
       InitialValue=Formula("0"),
+    },
+  },
+  Description={
+    Format="%1 negative levels (-%1 effective levels and loses access to %1 spells from the highest spell level castable)",
+    Arguments={
+      Formula("NegLevels"),
+      Formula("PREVARGT:NegLevels,1"),
     },
   },
   Bonuses={
@@ -4153,6 +4169,15 @@ DefineAbility({
   Category="Natural Attack",
   AllowMultiple=false,
   Stackable=false,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Shield Bash Stats",
+      },
+    },
+  },
   Definitions={
     {
       Name="ShieldBashingDieSizeStep",
@@ -4321,15 +4346,6 @@ DefineAbility({
         function (character)
           return character.TotalAttackBonus >= 16
         end,
-      },
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Shield Bash Stats",
       },
     },
   },
@@ -5133,6 +5149,15 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Enlarge/Reduce Weapon List",
+      },
+    },
+  },
   Bonuses={
     {
       Category="COMBAT",
@@ -5199,6 +5224,13 @@ DefineAbility({
       Formula=Formula("EnlargePerson_ACBonusValue"),
     },
   },
+})
+
+DefineAbility({
+  Name="Temp Bonus ~ Reduce Person",
+  Category="Internal",
+  AllowMultiple=false,
+  Stackable=false,
   Abilities={
     {
       Category="Internal",
@@ -5208,13 +5240,6 @@ DefineAbility({
       },
     },
   },
-})
-
-DefineAbility({
-  Name="Temp Bonus ~ Reduce Person",
-  Category="Internal",
-  AllowMultiple=false,
-  Stackable=false,
   Bonuses={
     {
       Category="COMBAT",
@@ -5272,15 +5297,6 @@ DefineAbility({
         "DamageSizeAdjustment",
       },
       Formula=Formula("-1"),
-    },
-  },
-  Abilities={
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Enlarge/Reduce Weapon List",
-      },
     },
   },
 })
@@ -6837,7 +6853,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 feat.",
@@ -6868,7 +6883,6 @@ DefineAbility({
       return ((not (character.Ranks(skill) >= character.MaxSkillRank) and (((skill.IsType("Base"))))))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 skill rank (won't exceed max ranks).",
@@ -6899,7 +6913,6 @@ DefineAbility({
       return ((skill.IsType("Base")))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 skill bonus.",
@@ -6928,7 +6941,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 skill point.",
@@ -6957,7 +6969,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 hit point.",
@@ -6986,7 +6997,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 spell per day.",
@@ -7014,7 +7024,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 spell known.",
@@ -7042,7 +7051,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 arcane caster level.",
@@ -7070,7 +7078,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 divine caster level.",
@@ -7100,7 +7107,6 @@ DefineAbility({
       return ((lang.IsType("Spoken")))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with bonus Language.",
@@ -7129,7 +7135,6 @@ DefineAbility({
       return ((skill.IsType("Base")))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 skill rank per level or use with custom INT bonus items.",
@@ -7163,11 +7168,7 @@ DefineAbility({
       return ((true))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
-  Description={
-    Format="GM awarded PC with 1 feat that ignores restrictions.",
-  },
   Abilities={
     {
       Category="FEAT",
@@ -7176,6 +7177,9 @@ DefineAbility({
         "%LIST",
       },
     },
+  },
+  Description={
+    Format="GM awarded PC with 1 feat that ignores restrictions.",
   },
   Types={
     "GM_Award",
@@ -7193,7 +7197,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 1 spell known.",
@@ -7223,7 +7226,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 2 spell known.",
@@ -7253,7 +7255,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 3 spell known.",
@@ -7283,7 +7284,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 4 spell known.",
@@ -7313,7 +7313,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 5 spell known.",
@@ -7343,7 +7342,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 6 spell known.",
@@ -7373,7 +7371,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 7 spell known.",
@@ -7403,7 +7400,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 8 spell known.",
@@ -7433,7 +7429,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 9 spell known.",
@@ -7463,7 +7458,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 1 spell per day.",
@@ -7493,7 +7487,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 2 spell per day.",
@@ -7523,7 +7516,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 3 spell per day.",
@@ -7553,7 +7545,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 4 spell per day.",
@@ -7583,7 +7574,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 5 spell per day.",
@@ -7613,7 +7603,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 6 spell per day.",
@@ -7643,7 +7632,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 7 spell per day.",
@@ -7673,7 +7661,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 8 spell per day.",
@@ -7703,7 +7690,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 level 9 spell per day.",
@@ -7732,7 +7718,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 STR bonus.",
@@ -7761,7 +7746,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 DEX bonus.",
@@ -7790,7 +7774,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 CON bonus.",
@@ -7819,7 +7802,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 INT bonus.",
@@ -7848,7 +7830,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 WIS bonus.",
@@ -7877,7 +7858,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with +1 CHA bonus.",
@@ -7906,7 +7886,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 feat.",
@@ -7937,7 +7916,6 @@ DefineAbility({
       return ((skill.IsType("Base")))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 skill rank (won't exceed max ranks).",
@@ -7968,7 +7946,6 @@ DefineAbility({
       return ((skill.IsType("Base")))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 skill bonus.",
@@ -7997,7 +7974,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 hit point.",
@@ -8026,7 +8002,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 spell per day.",
@@ -8054,7 +8029,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 spell known.",
@@ -8082,7 +8056,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with -1 arcane caster level.",
@@ -8110,7 +8083,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM awarded PC with -1 divine caster level.",
@@ -8139,7 +8111,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 1 spell known.",
@@ -8169,7 +8140,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 2 spell known.",
@@ -8199,7 +8169,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 3 spell known.",
@@ -8229,7 +8198,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 4 spell known.",
@@ -8259,7 +8227,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 5 spell known.",
@@ -8289,7 +8256,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 6 spell known.",
@@ -8319,7 +8285,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 7 spell known.",
@@ -8349,7 +8314,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 8 spell known.",
@@ -8379,7 +8343,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 9 spell known.",
@@ -8409,7 +8372,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 1 spell per day.",
@@ -8439,7 +8401,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 2 spell per day.",
@@ -8469,7 +8430,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 3 spell per day.",
@@ -8499,7 +8459,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 4 spell per day.",
@@ -8529,7 +8488,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 5 spell per day.",
@@ -8559,7 +8517,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 6 spell per day.",
@@ -8589,7 +8546,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 7 spell per day.",
@@ -8619,7 +8575,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 8 spell per day.",
@@ -8649,7 +8604,6 @@ DefineAbility({
       return ((class.CanCastSpells))
     end),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 level 9 spell per day.",
@@ -8678,7 +8632,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 STR bonus.",
@@ -8707,7 +8660,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 DEX bonus.",
@@ -8736,7 +8688,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 CON bonus.",
@@ -8765,7 +8716,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 INT bonus.",
@@ -8794,7 +8744,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 WIS bonus.",
@@ -8823,7 +8772,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalized PC with -1 CHA bonus.",
@@ -8852,7 +8800,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Award of Natural Armor",
@@ -8886,7 +8833,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Award of Deflection Bonus",
@@ -8920,7 +8866,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Award of 5ft of movement speed",
@@ -8949,7 +8894,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SortKey="Z_Award",
   Description={
     Format="GM Penalty of 5ft of movement speed",
@@ -8975,14 +8919,14 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   Cost=0,
-  Description={
-    Format="This allows the PC to bypass the restrictions on taking only 1 trait from any given category.",
-  },
   Definitions={
     {
       Name="BypassTraitRestriction",
       InitialValue=Formula("0"),
     },
+  },
+  Description={
+    Format="This allows the PC to bypass the restrictions on taking only 1 trait from any given category.",
   },
   Bonuses={
     {
@@ -9009,14 +8953,14 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   Cost=0,
-  Description={
-    Format="This allows the PC to bypass the restrictions on taking only 1 drawback.",
-  },
   Definitions={
     {
       Name="BypassDrawbackRestriction",
       InitialValue=Formula("0"),
     },
+  },
+  Description={
+    Format="This allows the PC to bypass the restrictions on taking only 1 drawback.",
   },
   Bonuses={
     {
@@ -9043,14 +8987,14 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   Cost=0,
-  Description={
-    Format="This changes the Natural Primary attacks to Secondary while using weapons.",
-  },
   Definitions={
     {
       Name="UseWeaponsWithNaturalAttacks",
       InitialValue=Formula("0"),
     },
+  },
+  Description={
+    Format="This changes the Natural Primary attacks to Secondary while using weapons.",
   },
   Bonuses={
     {
@@ -9080,7 +9024,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.520",
   Description={
     Format="Sustains creature without food or water",
@@ -9102,8 +9045,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
-  SourcePage="p.520",
   Abilities={
     {
       Category="FEAT",
@@ -9113,6 +9054,7 @@ DefineAbility({
       },
     },
   },
+  SourcePage="p.520",
   Types={
     "Ioun Stone",
     "Equipment",
@@ -9130,7 +9072,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9163,7 +9104,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9196,7 +9136,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9229,7 +9168,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.520",
   Description={
     Format="Sustains creature without air",
@@ -9251,7 +9189,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.520",
   Description={
     Format="Absorbs spells of 8th level or lower",
@@ -9273,7 +9210,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9301,7 +9237,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9334,7 +9269,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.520",
   Description={
     Format="+1 to ability checks",
@@ -9394,7 +9328,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.520",
   Description={
     Format="Absorbs spells of 4th level or lower",
@@ -9416,7 +9349,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.520",
   Description={
     Format="Regenerate 1 point of damage per 10 minutes",
@@ -9438,7 +9370,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9471,7 +9402,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9504,7 +9434,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.520",
   Bonuses={
     {
@@ -9537,7 +9466,6 @@ DefineAbility({
   Choice={
     Choose=ChooseNothing(),
   },
-  Selections=nil,
   SourcePage="p.520",
   Description={
     Format="Stores three levels of spells, as a ring of spell storing",

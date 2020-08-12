@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 
@@ -91,7 +92,18 @@ namespace Primordially.LstToLua
 
         public void WriteValue(double value)
         {
-            Write(value.ToString());
+            if (double.IsPositiveInfinity(value))
+            {
+                Write("math.huge");
+            }
+            else if (double.IsNegativeInfinity(value))
+            {
+                Write("-math.huge");
+            }
+            else
+            {
+                Write(value.ToString(CultureInfo.InvariantCulture));
+            }
         }
 
         public void WriteValue(bool value)
@@ -113,34 +125,29 @@ namespace Primordially.LstToLua
             }
         }
 
-        public void WriteKeyValue(ReadOnlySpan<char> key, IDumpable value)
+        public void WriteKeyValue(ReadOnlySpan<char> key, IDumpable? value)
         {
+            if (value == null)
+                return;
             WriteKey(key);
             Write("=");
-            if (value == null)
-            {
-                Write("nil");
-            }
-            else
-            {
-                value.Dump(this);
-            }
+            value.Dump(this);
             Write(",\n");
         }
 
         public void WriteKeyValue(ReadOnlySpan<char> key, string? value)
         {
+            if (value == null)
+                return;
             WriteKey(key);
             Write("=");
-            if (value == null)
-            {
-                Write("nil");
-            }
-            else
-            {
-                WriteValue(value);
-            }
+            WriteValue(value);
             Write(",\n");
+        }
+        public void WriteKeyValue(ReadOnlySpan<char> key, int? value)
+        {
+            if (value.HasValue)
+                WriteKeyValue(key, value.Value);
         }
 
         public void WriteKeyValue(ReadOnlySpan<char> key, int value)
@@ -151,12 +158,24 @@ namespace Primordially.LstToLua
             Write(",\n");
         }
 
+        public void WriteKeyValue(ReadOnlySpan<char> key, double? value)
+        {
+            if (value.HasValue)
+                WriteKeyValue(key, value.Value);
+        }
+
         public void WriteKeyValue(ReadOnlySpan<char> key, double value)
         {
             WriteKey(key);
             Write("=");
             WriteValue(value);
             Write(",\n");
+        }
+
+        public void WriteKeyValue(ReadOnlySpan<char> key, bool? value)
+        {
+            if (value.HasValue)
+                WriteKeyValue(key, value.Value);
         }
 
         public void WriteKeyValue(ReadOnlySpan<char> key, bool value)
