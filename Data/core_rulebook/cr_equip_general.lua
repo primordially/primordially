@@ -2882,6 +2882,11 @@ DefineEquipment({
         "Disable Device",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -2933,6 +2938,11 @@ DefineEquipment({
         "Perform (Keyboard Instruments)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -2967,6 +2977,11 @@ DefineEquipment({
         "Perform (Keyboard Instruments)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -3001,6 +3016,11 @@ DefineEquipment({
         "Perform (Keyboard Instruments)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -3035,6 +3055,11 @@ DefineEquipment({
         "Perform (Percussion Instruments)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -3069,6 +3094,11 @@ DefineEquipment({
         "Perform (Percussion Instruments)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -3103,6 +3133,11 @@ DefineEquipment({
         "Perform (Percussion Instruments)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -3137,6 +3172,11 @@ DefineEquipment({
         "Perform (Percussion Instruments)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -3171,6 +3211,11 @@ DefineEquipment({
         "Perform (String Instruments)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -3205,6 +3250,11 @@ DefineEquipment({
         "Perform (String Instruments)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -3239,6 +3289,11 @@ DefineEquipment({
         "Perform (String Instruments)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -3273,6 +3328,11 @@ DefineEquipment({
         "Perform (String Instruments)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -3307,6 +3367,11 @@ DefineEquipment({
         "Perform (Wind Instruments)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -3341,6 +3406,11 @@ DefineEquipment({
         "Perform (Wind Instruments)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -3375,6 +3445,11 @@ DefineEquipment({
         "Perform (Wind Instruments)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -3409,6 +3484,11 @@ DefineEquipment({
         "Perform (Wind Instruments)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1

@@ -14,7 +14,7 @@ namespace Primordially.LstToLua.Conditions
             var parts = value.Split(',').ToArray();
             if (parts.Length < 2)
             {
-                throw new ParseFailedException(value, "Invalid PRESPELLTYPE");
+                throw new ParseFailedException(value, "Invalid PRESKILL");
             }
 
             int count = Helpers.ParseInt(parts[0]);
@@ -26,11 +26,11 @@ namespace Primordially.LstToLua.Conditions
                 if (nameOrType.StartsWith("TYPE."))
                 {
                     var type = nameOrType.Substring("TYPE.".Length);
-                    conditions.Add($"character.Skill(\"{type}\").ranks >= {rank} and 1 or 0");
+                    conditions.Add($"character.BestSkillOfType(\"{type.Value}\").ranks >= {rank} and 1 or 0");
                 }
                 else
                 {
-                    conditions.Add($"character.BestSkillOfType(\"{nameOrType.Value}\").ranks >= {rank} and 1 or 0");
+                    conditions.Add($"character.Skill(\"{nameOrType.Value}\").ranks >= {rank} and 1 or 0");
                 }
             }
 

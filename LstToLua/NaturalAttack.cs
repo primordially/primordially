@@ -8,7 +8,7 @@ namespace Primordially.LstToLua
         public string Name { get; }
         public string[] Types { get; }
         public string Count { get; }
-        public string Damage { get; }
+        public DiceFormula Damage { get; }
         public string? SpecialDescription { get; }
 
         private NaturalAttack(string name, string[] types, string count, string damage, string? specialDescription)

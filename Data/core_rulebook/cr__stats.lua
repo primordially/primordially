@@ -41,6 +41,11 @@ DefineStat({
         "TOHIT.Melee",
       },
       Formula=Formula("STR"),
+      Type={
+        Name="Ability",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableToHitMeleeStr"] == 0)
@@ -126,6 +131,11 @@ DefineStat({
         "RacialVision",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Racial",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return not (1 <= #filter(character.Abilities, function (ability)
@@ -186,6 +196,11 @@ DefineStat({
         "TOHIT.Ranged",
       },
       Formula=Formula("DEX"),
+      Type={
+        Name="Ability",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableToHitRangedDex"] == 0)
@@ -210,6 +225,11 @@ DefineStat({
         "AC",
       },
       Formula=Formula("min(ACAbilityStat, min(MXDXEN,MODEQUIPMAXDEX))"),
+      Type={
+        Name="Ability",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["ACStatNotDex"] == 0)
@@ -551,6 +571,11 @@ DefineStat({
         "AC",
       },
       Formula=Formula("min(CHA, min(MXDXEN,MODEQUIPMAXDEX))"),
+      Type={
+        Name="Ability",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["ACStatIsCha"] == 1)

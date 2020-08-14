@@ -11,14 +11,12 @@ namespace Primordially.LstToLua
         public List<string> UnarmedDamage { get; } = new List<string>();
         public string? UnarmedDamageMultiplier { get; private set; }
         public List<SpellList> SpellsKnown { get; } = new List<SpellList>();
-        public List<ServesAs> ServesAs { get; } = new List<ServesAs>();
         public List<AutomaticEquipment> AutomaticEquipments { get; } = new List<AutomaticEquipment>();
         public List<AutomaticProficiency> AutomaticProficiencies = new List<AutomaticProficiency>();
         public List<AddedSpellCasterLevel> AddedSpellCasterLevels { get; } = new List<AddedSpellCasterLevel>();
         public ChangeWeaponProficiencyCategory? ChangeWeaponProficiency { get; private set; }
         public List<StatModification> StatModifications { get; } = new List<StatModification>();
         public string? AdditionalRequirementText { get; private set; }
-        public List<NaturalAttack> NaturalAttacks { get; } = new List<NaturalAttack>();
 
         public override void AddField(TextSpan field)
         {
@@ -104,21 +102,9 @@ namespace Primordially.LstToLua
                 return;
             }
 
-            if (field.TryRemovePrefix("SERVESAS:", out var servesAs))
-            {
-                ServesAs.Add(LstToLua.ServesAs.Parse(servesAs));
-                return;
-            }
-
             if (field.TryRemovePrefix("PRETEXT", out var pretext))
             {
                 AdditionalRequirementText = pretext.Value;
-                return;
-            }
-
-            if (field.TryRemovePrefix("NATURALATTACKS:", out var natAttack))
-            {
-                NaturalAttacks.AddRange(NaturalAttack.ParseAll(natAttack));
                 return;
             }
 
@@ -138,7 +124,6 @@ namespace Primordially.LstToLua
                 });
             }
 
-            output.WriteListValue("NaturalAttacks", NaturalAttacks);
             output.WriteListValue("UnencumberedMove", UnencumberedMove);
             output.WriteListValue("UnarmedDamage", UnarmedDamage);
             if (UnarmedDamageMultiplier != null)
@@ -146,7 +131,6 @@ namespace Primordially.LstToLua
                 output.WriteKeyValue("UnarmedDamageMultiplier", UnarmedDamageMultiplier);
             }
             output.WriteListValue("SpellsKnown", SpellsKnown);
-            output.WriteListValue("ServesAs", ServesAs);
             output.WriteListValue("AutomaticEquipment", AutomaticEquipments);
             output.WriteListValue("AutomaticProficiencies", AutomaticProficiencies);
             output.WriteListValue("AddedSpellCasterLevels", AddedSpellCasterLevels);

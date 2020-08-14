@@ -375,6 +375,15 @@ namespace Primordially.LstToLua
                     case "EQUIPMOD":
                         new SingleObjectFileConverter<EquipmentModifierDefinition>().Convert(inputFileFullPath, outputFile);
                         break;
+                    case "LANGUAGE":
+                        new SingleObjectFileConverter<LanguageDefinition>().Convert(inputFileFullPath, outputFile);
+                        break;
+                    case "RACE":
+                        new SingleObjectFileConverter<RaceDefinition>().Convert(inputFileFullPath, outputFile);
+                        break;
+                    case "SKILL":
+                        new SingleObjectFileConverter<SkillDefinition>().Convert(inputFileFullPath, outputFile);
+                        break;
                     case "ARMORPROF":
                     case "BIOSET":
                     case "COMPANIONMOD":
@@ -382,10 +391,7 @@ namespace Primordially.LstToLua
                     case "DYNAMIC":
                     case "GLOBALMODIFIER":
                     case "KIT":
-                    case "LANGUAGE":
-                    case "RACE":
                     case "SHIELDPROF":
-                    case "SKILL":
                     case "SPELL":
                     case "TEMPLATE":
                     case "WEAPONPROF":

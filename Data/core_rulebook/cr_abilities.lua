@@ -144,6 +144,11 @@ DefineAbility({
         "NegatedAgePenalty",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return ((character.AgeSet >= "Middle-Aged")) >= 1
@@ -156,6 +161,11 @@ DefineAbility({
         "NegatedAgePenalty",
       },
       Formula=Formula("3"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return ((character.AgeSet >= "Old")) >= 1
@@ -168,6 +178,11 @@ DefineAbility({
         "NegatedAgePenalty",
       },
       Formula=Formula("6"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return ((character.AgeSet >= "Venerable")) >= 1
@@ -4334,6 +4349,11 @@ ModifyAbility({
         "ShieldBashingDieSizeStep",
       },
       Formula=Formula("3"),
+      Type={
+        Name="ShieldSize",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           local count = 0
@@ -4360,6 +4380,11 @@ ModifyAbility({
         "ShieldBashingDieSizeStep",
       },
       Formula=Formula("4"),
+      Type={
+        Name="ShieldSize",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           local count = 0
@@ -4395,6 +4420,11 @@ ModifyAbility({
         "ShieldBashingDieSizeStep",
       },
       Formula=Formula("2"),
+      Type={
+        Name="ShieldSize",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           local count = 0
@@ -4421,6 +4451,11 @@ ModifyAbility({
         "ShieldBashingDieSizeStep",
       },
       Formula=Formula("3"),
+      Type={
+        Name="ShieldSize",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           local count = 0

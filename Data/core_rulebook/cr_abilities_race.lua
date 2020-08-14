@@ -269,6 +269,11 @@ DefineAbility({
         "Appraise=to assess nonmagical metals or gemstones",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Racial",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DwarvenGreedAspect"] == 0)
@@ -3820,6 +3825,15 @@ DefineAbility({
   Templates={
     "No Constitution Score",
   },
+  Abilities={
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Construct Traits Output",
+      },
+    },
+  },
   ServesAs={
     {
       Ability="Special Ability",
@@ -3839,15 +3853,6 @@ DefineAbility({
         "Immunity to Poison",
         "Immunity to Sleep",
         "Immunity to Stunning",
-      },
-    },
-  },
-  Abilities={
-    {
-      Category="Special Ability",
-      Nature="AUTOMATIC",
-      Names={
-        "Construct Traits Output",
       },
     },
   },
@@ -3925,6 +3930,11 @@ DefineAbility({
         "DarkvisionRange",
       },
       Formula=Formula("60"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return character.HitDie >= 1
@@ -4057,6 +4067,11 @@ DefineAbility({
         "DarkvisionRange",
       },
       Formula=Formula("60"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return not (((any(character.Race.Types, function (type) stringMatch(type, "Animal") end) and 1 or 0)) >= 1)
@@ -4233,6 +4248,11 @@ DefineAbility({
         "DarkvisionRange",
       },
       Formula=Formula("60"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return character.HitDie >= 1
@@ -4558,6 +4578,15 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   Visible=false,
+  Abilities={
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Elemental Traits Output",
+      },
+    },
+  },
   ServesAs={
     {
       Ability="Special Ability",
@@ -4569,15 +4598,6 @@ DefineAbility({
         "Immunity to Sleep",
         "Immunity to Sneak Attacks",
         "Immunity to Stunning",
-      },
-    },
-  },
-  Abilities={
-    {
-      Category="Special Ability",
-      Nature="AUTOMATIC",
-      Names={
-        "Elemental Traits Output",
       },
     },
   },

@@ -148,11 +148,15 @@ namespace Primordially.LstToLua
                 switch (mods.Value)
                 {
                     case "YES":
+                        CanHaveMods = true;
+                        ModsRequired = false;
                         break;
                     case "NO":
                         CanHaveMods = false;
+                        ModsRequired = false;
                         break;
                     case "REQUIRED":
+                        CanHaveMods = true;
                         ModsRequired = true;
                         break;
                     default:

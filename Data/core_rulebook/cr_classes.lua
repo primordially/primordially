@@ -39,6 +39,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -166,6 +171,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -296,6 +306,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -614,6 +629,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -1029,6 +1049,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -1510,6 +1535,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -1742,6 +1772,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -2023,6 +2058,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -2280,6 +2320,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -2574,6 +2619,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -2715,6 +2765,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -3033,6 +3088,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -3585,6 +3645,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -3766,7 +3831,7 @@ DefineClass({
       return count >= 1
     end,
     function (character)
-      return ((character.BestSkillOfType("Disable Device").ranks >= 4 and 1 or 0) + (character.BestSkillOfType("Escape Artist").ranks >= 4 and 1 or 0) + (character.BestSkillOfType("Knowledge (Arcana)").ranks >= 4 and 1 or 0)) >= 3
+      return ((character.Skill("Disable Device").ranks >= 4 and 1 or 0) + (character.Skill("Escape Artist").ranks >= 4 and 1 or 0) + (character.Skill("Knowledge (Arcana)").ranks >= 4 and 1 or 0)) >= 3
     end,
     function (character)
       return (character.HasSpell("Mage Hand") and 1 or 0) >= 1
@@ -3802,6 +3867,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -4007,7 +4077,7 @@ DefineClass({
       return count >= 1
     end,
     function (character)
-      return ((character.BestSkillOfType("Disguise").ranks >= 2 and 1 or 0) + (character.BestSkillOfType("Stealth").ranks >= 5 and 1 or 0)) >= 2
+      return ((character.Skill("Disguise").ranks >= 2 and 1 or 0) + (character.Skill("Stealth").ranks >= 5 and 1 or 0)) >= 2
     end,
   },
   ClassSkills={
@@ -4034,6 +4104,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -4215,7 +4290,7 @@ DefineClass({
       return not (((any(character.Race.RaceTypes, function (type) stringMatch(type, "Dragon") end) and 1 or 0)) >= 1)
     end,
     function (character)
-      return ((character.BestSkillOfType("Knowledge (Arcana)").ranks >= 5 and 1 or 0)) >= 1
+      return ((character.Skill("Knowledge (Arcana)").ranks >= 5 and 1 or 0)) >= 1
     end,
     function (character)
       return not (((any(character.Templates, function (template) return stringMatch(template.Name, "Half Dragon") end) and 1 or 0)) >= 1)
@@ -4236,6 +4311,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -4405,7 +4485,7 @@ DefineClass({
       end)
     end,
     function (character)
-      return ((character.BestSkillOfType("Acrobatics").ranks >= 2 and 1 or 0) + (character.Skill("(400,100): Perform").ranks >= 2 and 1 or 0)) >= 2
+      return ((character.Skill("Acrobatics").ranks >= 2 and 1 or 0) + (character.BestSkillOfType("Perform").ranks >= 2 and 1 or 0)) >= 2
     end,
     function (character)
       return character.TotalAttackBonus >= 6
@@ -4426,6 +4506,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -4559,6 +4644,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -4749,7 +4839,7 @@ DefineClass({
       end)
     end,
     function (character)
-      return ((character.Skill("(431,145): Knowledge").ranks >= 7 and 1 or 0) + (character.Skill("(431,162): Knowledge").ranks >= 7 and 1 or 0)) >= 2
+      return ((character.BestSkillOfType("Knowledge").ranks >= 7 and 1 or 0) + (character.BestSkillOfType("Knowledge").ranks >= 7 and 1 or 0)) >= 2
     end,
     function (character)
       return ((#filter(character.SpellsKnown, function (spell) return spell.School == "Divination" and spell.Level >= 3 end))) >= 1
@@ -4776,6 +4866,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -4964,7 +5059,7 @@ DefineClass({
   SourcePage="p.387",
   Conditions={
     function (character)
-      return ((character.BestSkillOfType("Knowledge (Arcana)").ranks >= 3 and 1 or 0) + (character.BestSkillOfType("Knowledge (Religion)").ranks >= 3 and 1 or 0)) >= 2
+      return ((character.Skill("Knowledge (Arcana)").ranks >= 3 and 1 or 0) + (character.Skill("Knowledge (Religion)").ranks >= 3 and 1 or 0)) >= 2
     end,
     function (character)
       return (character.SpellCount("Divine", 2)) >= 1
@@ -4986,6 +5081,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -5197,7 +5297,7 @@ DefineClass({
   SourcePage="p.388",
   Conditions={
     function (character)
-      return ((character.BestSkillOfType("Linguistics").ranks >= 3 and 1 or 0) + (character.BestSkillOfType("Perform (Oratory)").ranks >= 5 and 1 or 0) + (character.BestSkillOfType("Profession (Scribe)").ranks >= 5 and 1 or 0)) >= 3
+      return ((character.Skill("Linguistics").ranks >= 3 and 1 or 0) + (character.Skill("Perform (Oratory)").ranks >= 5 and 1 or 0) + (character.Skill("Profession (Scribe)").ranks >= 5 and 1 or 0)) >= 3
     end,
   },
   ClassSkills={
@@ -5224,6 +5324,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -5337,7 +5442,7 @@ DefineClass({
       end)
     end,
     function (character)
-      return ((character.BestSkillOfType("Stealth").ranks >= 5 and 1 or 0) + (character.BestSkillOfType("Perform (Dance)").ranks >= 2 and 1 or 0)) >= 2
+      return ((character.Skill("Stealth").ranks >= 5 and 1 or 0) + (character.Skill("Perform (Dance)").ranks >= 2 and 1 or 0)) >= 2
     end,
   },
   ClassSkills={
@@ -5358,6 +5463,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -5486,6 +5596,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -5975,6 +6090,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -6147,6 +6267,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -6260,6 +6385,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
