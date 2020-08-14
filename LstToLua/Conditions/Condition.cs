@@ -96,6 +96,10 @@ namespace Primordially.LstToLua.Conditions
                     result = SkillCondition.Parse(v, invert);
                     return true;
 
+                case "PRECSKILL":
+                    result = ClassSkillCondition.Parse(v, invert);
+                    return true;
+
                 case "PRETOTALAB":
                     result = TotalAttackBonusCondition.Parse(v, invert);
                     return true;
@@ -145,6 +149,14 @@ namespace Primordially.LstToLua.Conditions
 
                 case "PREVISION":
                     result = VisionCondition.Parse(v, invert);
+                    return true;
+
+                case "PREMOVE":
+                    result = MovementCondition.Parse(v, invert);
+                    return true;
+
+                case "PREITEM":
+                    result = ItemCondition.Parse(v, invert);
                     return true;
 
                 case "PREDOMAIN":

@@ -449,6 +449,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -498,6 +503,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -510,6 +520,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("-1"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
@@ -558,6 +573,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("3"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -570,6 +590,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("-1"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
@@ -630,6 +655,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("4"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -642,6 +672,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("-2"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
@@ -703,6 +738,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("4"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -715,6 +755,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("-2"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
@@ -775,6 +820,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("5"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -787,6 +837,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("-2"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
@@ -847,6 +902,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("6"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -859,6 +919,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("-3"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
@@ -919,6 +984,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("6"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -931,6 +1001,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("-3"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
@@ -991,6 +1066,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("7"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -1003,6 +1083,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("-3"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
@@ -1063,6 +1148,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("7"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -1075,6 +1165,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("-3"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
@@ -1135,6 +1230,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("8"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -1147,6 +1247,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("-4"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
@@ -1207,6 +1312,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("9"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -1219,6 +1329,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("-4"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
@@ -1287,9 +1402,9 @@ CopyEquipment("Studded Leather (Base)", {
   EquipmentModifiers={
     {
       Key="Material ~ Leather",
-      Parameters={
-        Formula("Material ~ Steel"),
-      },
+    },
+    {
+      Key="Material ~ Steel",
     },
   },
   Key="Studded Leather",
@@ -2276,6 +2391,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Shield",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableShieldBonus"] == 0)
@@ -2356,6 +2476,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Shield",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableShieldBonus"] == 0)
@@ -2433,6 +2558,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Shield",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableShieldBonus"] == 0)
@@ -2511,6 +2641,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Shield",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableShieldBonus"] == 0)
@@ -2523,6 +2658,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("-1"),
+      Type={
+        Name="Shield",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.HasModifier("Special Quality ~ Broken ~ Shield"))) >= 1
@@ -2600,6 +2740,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Shield",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableShieldBonus"] == 0)
@@ -2612,6 +2757,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("-1"),
+      Type={
+        Name="Shield",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.HasModifier("Special Quality ~ Broken ~ Shield"))) >= 1
@@ -2678,6 +2828,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("4"),
+      Type={
+        Name="Shield",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableShieldBonus"] == 0)
@@ -2690,6 +2845,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("-2"),
+      Type={
+        Name="Shield",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.HasModifier("Special Quality ~ Broken ~ Shield"))) >= 1
@@ -7416,6 +7576,11 @@ DefineEquipment({
         "TOHIT",
       },
       Formula=Formula("-4"),
+      Type={
+        Name="StrengthPenalty",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["PreStatScore_STR"] < 18)

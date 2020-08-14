@@ -51,6 +51,11 @@ DefineClass({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)

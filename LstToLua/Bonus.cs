@@ -32,8 +32,9 @@ namespace Primordially.LstToLua
 
             foreach (var part in value.Split('|'))
             {
-                if (BonusType.TryParse(part, out type))
+                if (BonusType.TryParse(part, out var t))
                 {
+                    type = t;
                     continue;
                 }
 

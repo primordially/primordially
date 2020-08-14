@@ -801,6 +801,11 @@ DefineEquipment({
         "CON",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return not (((character.Race.Name == "Dwarf%" and 1 or 0)) >= 1)
@@ -9190,6 +9195,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("5"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           local count = 0
@@ -9219,6 +9229,11 @@ DefineEquipment({
         "ALL",
       },
       Formula=Formula("4"),
+      Type={
+        Name="Resistance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           local count = 0
@@ -9349,6 +9364,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("5"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           local count = 0
@@ -9378,6 +9398,11 @@ DefineEquipment({
         "ALL",
       },
       Formula=Formula("4"),
+      Type={
+        Name="Resistance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           local count = 0
@@ -9496,6 +9521,11 @@ DefineEquipment({
         "AC",
       },
       Formula=Formula("5"),
+      Type={
+        Name="Armor",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           local count = 0
@@ -9525,6 +9555,11 @@ DefineEquipment({
         "ALL",
       },
       Formula=Formula("4"),
+      Type={
+        Name="Resistance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           local count = 0

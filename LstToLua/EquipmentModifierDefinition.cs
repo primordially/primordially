@@ -8,6 +8,8 @@ namespace Primordially.LstToLua
     {
         protected override bool IsEquipment => true;
         public bool IsMod { get; private set; } = false;
+        public bool IsDelete { get; private set; } = false;
+        public string? CopiedFrom { get; private set; }
         public string? Name { get; private set; }
         public Formula? Cost { get; private set; }
         public List<string> GrantedItemTypes { get; } = new List<string>();
@@ -65,13 +67,23 @@ namespace Primordially.LstToLua
                 if (field.TryRemoveSuffix(".MOD", out field))
                 {
                     IsMod = true;
+                    Name = field.Value;
                 }
                 else if (field.TryRemoveSuffix(".FORGET", out field))
                 {
-                    throw new ParseFailedException(field, ".FORGET stuff not implemented");
+                    IsDelete = true;
+                    Name = field.Value;
+                }
+                else if (field.TryRemoveInfix(".COPY=", out var sourceName, out var newName))
+                {
+                    CopiedFrom = sourceName.Value;
+                    Name = newName.Value;
+                }
+                else
+                {
+                    Name = field.Value;
                 }
 
-                Name = field.Value;
                 return;
             }
 
@@ -167,9 +179,20 @@ namespace Primordially.LstToLua
 
         public override void Dump(LuaTextWriter output)
         {
+            if (IsDelete)
+            {
+                output.Write($"DeleteEquipmentModifier(\"{Name}\")");
+                return;
+            }
             if (IsMod)
             {
                 output.Write("ModifyEquipmentModifier(");
+            }
+            else if (CopiedFrom != null)
+            {
+                output.Write("CopyEquipmentModifier(");
+                output.WriteValue(CopiedFrom);
+                output.Write(", ");
             }
             else
             {

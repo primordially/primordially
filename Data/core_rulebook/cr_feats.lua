@@ -3034,6 +3034,11 @@ DefineAbility({
         "AC",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Shield",
+        Replace=false,
+        Stack=true,
+      },
       Conditions={
         function (character)
           return ((character.HasEquipped(function (item) return item.IsType("Shield") end))) >= 1
@@ -4590,7 +4595,7 @@ DefineAbility({
   SourcePage="p.130",
   Conditions={
     function (character)
-      return ((character.Skill("(122,133): Craft").ranks >= 5 and 1 or 0) + (character.Skill("(122,146): Profession").ranks >= 5 and 1 or 0)) >= 1
+      return ((character.BestSkillOfType("Craft").ranks >= 5 and 1 or 0) + (character.BestSkillOfType("Profession").ranks >= 5 and 1 or 0)) >= 1
     end,
   },
   Description={
@@ -4739,7 +4744,7 @@ DefineAbility({
       end)
     end,
     function (character)
-      return ((character.BestSkillOfType("Ride").ranks >= 1 and 1 or 0)) >= 1
+      return ((character.Skill("Ride").ranks >= 1 and 1 or 0)) >= 1
     end,
   },
   Description={
@@ -4763,7 +4768,7 @@ DefineAbility({
   SourcePage="p.131",
   Conditions={
     function (character)
-      return ((character.BestSkillOfType("Ride").ranks >= 1 and 1 or 0)) >= 1
+      return ((character.Skill("Ride").ranks >= 1 and 1 or 0)) >= 1
     end,
   },
   Description={
@@ -5338,7 +5343,7 @@ DefineAbility({
       end)
     end,
     function (character)
-      return ((character.BestSkillOfType("Ride").ranks >= 1 and 1 or 0)) >= 1
+      return ((character.Skill("Ride").ranks >= 1 and 1 or 0)) >= 1
     end,
   },
   Description={
@@ -5580,6 +5585,11 @@ DefineAbility({
         "AC",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Shield",
+        Replace=false,
+        Stack=true,
+      },
       Conditions={
         function (character)
           return ((character.HasEquipped(function (item) return item.IsType("Shield") end))) >= 1
@@ -6114,7 +6124,7 @@ DefineAbility({
       end)
     end,
     function (character)
-      return ((character.BestSkillOfType("Ride").ranks >= 1 and 1 or 0)) >= 1
+      return ((character.Skill("Ride").ranks >= 1 and 1 or 0)) >= 1
     end,
   },
   Description={
@@ -6691,7 +6701,7 @@ DefineAbility({
       end)
     end,
     function (character)
-      return ((character.BestSkillOfType("Ride").ranks >= 1 and 1 or 0)) >= 1
+      return ((character.Skill("Ride").ranks >= 1 and 1 or 0)) >= 1
     end,
   },
   Description={
@@ -6777,6 +6787,11 @@ DefineAbility({
         "AC",
       },
       Formula=Formula("TwoWeaponShield"),
+      Type={
+        Name="Shield",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           local count = 0
@@ -6946,7 +6961,7 @@ DefineAbility({
       end)
     end,
     function (character)
-      return ((character.BestSkillOfType("Ride").ranks >= 1 and 1 or 0)) >= 1
+      return ((character.Skill("Ride").ranks >= 1 and 1 or 0)) >= 1
     end,
     function (character)
       return character.TotalAttackBonus >= 1

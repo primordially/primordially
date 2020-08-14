@@ -3425,7 +3425,7 @@ DefineAbility({
         "Bludgeoning",
       },
       Count="*1",
-      Damage="1d8",
+      Damage=DiceFormula("1d8"),
     },
   },
   SourcePage="p.301",

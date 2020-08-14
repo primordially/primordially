@@ -401,6 +401,11 @@ ModifyAbility({
         "BypassClassAlignment_Monk",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Bypass",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -1846,6 +1851,11 @@ DefineAbility({
         "BASEAB",
       },
       Formula=Formula("classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["UseAlternateBABProgression"] == 0)
@@ -4165,6 +4175,11 @@ ModifyAbility({
         "BraveryLVL",
       },
       Formula=Formula("FighterLVL"),
+      Type={
+        Name="Class",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Fighter_CFP_Level"] >= 2)
@@ -4186,6 +4201,11 @@ ModifyAbility({
         "ArmorTrainingLVL",
       },
       Formula=Formula("FighterLVL"),
+      Type={
+        Name="Class",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Fighter_CFP_Level"] >= 3)
@@ -4207,6 +4227,11 @@ ModifyAbility({
         "FighterWeaponTrainingLVL",
       },
       Formula=Formula("FighterLVL"),
+      Type={
+        Name="Class",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Fighter_CFP_Level"] >= 5)
@@ -4228,6 +4253,11 @@ ModifyAbility({
         "FighterWeaponQualifyLVL",
       },
       Formula=Formula("FighterLVL"),
+      Type={
+        Name="Class",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
@@ -7762,6 +7792,11 @@ ModifyAbility({
         "UncannyDodgeFlankingLevel",
       },
       Formula=Formula("BarbarianLVL"),
+      Type={
+        Name="EachClass",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["BarbarianLVL"] >= 2)
@@ -9298,6 +9333,11 @@ DefineAbility({
         "TYPE=Walk",
       },
       Formula=Formula("5"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Raging"] == 1)
@@ -10695,6 +10735,11 @@ DefineAbility({
         "Bluff (Perform (Act))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Act)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -10709,6 +10754,11 @@ DefineAbility({
         "Disguise (Perform (Act))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Act)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -10757,6 +10807,11 @@ DefineAbility({
         "Bluff (Perform (Comedy))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Comedy)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -10771,6 +10826,11 @@ DefineAbility({
         "Intimidate (Perform (Comedy))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Comedy)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -10819,6 +10879,11 @@ DefineAbility({
         "Acrobatics (Perform (Dance))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Dance)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -10833,6 +10898,11 @@ DefineAbility({
         "Fly (Perform (Dance))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Dance)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -10881,6 +10951,11 @@ DefineAbility({
         "Diplomacy (Perform (Keyboard Instruments))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Keyboard Instruments)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -10895,6 +10970,11 @@ DefineAbility({
         "Intimidate (Perform (Keyboard Instruments))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Keyboard Instruments)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -10943,6 +11023,11 @@ DefineAbility({
         "Diplomacy (Perform (Oratory))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Oratory)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -10957,6 +11042,11 @@ DefineAbility({
         "Sense Motive (Perform (Oratory))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Oratory)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11005,6 +11095,11 @@ DefineAbility({
         "Handle Animal (Perform (Percussion Instruments))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Percussion Instruments)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11019,6 +11114,11 @@ DefineAbility({
         "Intimidate (Perform (Percussion Instruments))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Percussion Instruments)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11067,6 +11167,11 @@ DefineAbility({
         "Bluff (Perform (Sing))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Sing)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11081,6 +11186,11 @@ DefineAbility({
         "Sense Motive (Perform (Sing))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Sing)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11129,6 +11239,11 @@ DefineAbility({
         "Bluff (Perform (String Instruments))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (String Instruments)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11143,6 +11258,11 @@ DefineAbility({
         "Diplomacy (Perform (String Instruments))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (String Instruments)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11191,6 +11311,11 @@ DefineAbility({
         "Diplomacy (Perform (Wind Instruments))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Wind Instruments)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -11205,6 +11330,11 @@ DefineAbility({
         "Handle Animal (Perform (Wind Instruments))",
       },
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Wind Instruments)\")"),
+      Type={
+        Name="SkillGranted",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return 1 <= #filter(character.Abilities, function (ability)
@@ -31608,6 +31738,11 @@ DefineAbility({
         "TYPE=Walk",
       },
       Formula=Formula("MonkFastMovementBonus"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["ENCUMBERANCE"] == 0) and (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED]\")"] == 0)
@@ -44514,6 +44649,11 @@ ModifyAbility({
         "UncannyDodgeFlankingLevel",
       },
       Formula=Formula("RogueLVL"),
+      Type={
+        Name="EachClass",
+        Replace=true,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["RogueLVL"] >= 2)
@@ -50188,7 +50328,7 @@ DefineAbility({
   SourcePage="p.131",
   Conditions={
     function (character)
-      return ((character.BestSkillOfType("Ride").ranks >= 1 and 1 or 0)) >= 1
+      return ((character.Skill("Ride").ranks >= 1 and 1 or 0)) >= 1
     end,
     function (character)
       return (character.Variables["Sorcerer_BloodlineFeat_MountedCombat"] >= 1)
@@ -50503,7 +50643,7 @@ DefineAbility({
       end)
     end,
     function (character)
-      return ((character.BestSkillOfType("Ride").ranks >= 1 and 1 or 0)) >= 1
+      return ((character.Skill("Ride").ranks >= 1 and 1 or 0)) >= 1
     end,
     function (character)
       return (character.Variables["Sorcerer_BloodlineFeat_RideByAttack"] >= 1)
@@ -59953,6 +60093,11 @@ DefineAbility({
         "Sorcerer_GenericClaws_SizeBonus",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePower1LVL"] >= 7)
@@ -64216,6 +64361,11 @@ DefineAbility({
         "Sorcerer_GenericClaws_SizeBonus",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower1LVL"] >= 7)
@@ -64320,6 +64470,11 @@ DefineAbility({
         "AcidResistanceBonus",
       },
       Formula=Formula("Sorcerer_DraconicDragonResistances_ResistanceBonus"),
+      Type={
+        Name="Resistance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_DraconicDamageType_Acid"] >= 1)
@@ -64332,6 +64487,11 @@ DefineAbility({
         "ElectricityResistanceBonus",
       },
       Formula=Formula("Sorcerer_DraconicDragonResistances_ResistanceBonus"),
+      Type={
+        Name="Resistance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_DraconicDamageType_Electricity"] >= 1)
@@ -64344,6 +64504,11 @@ DefineAbility({
         "FireResistanceBonus",
       },
       Formula=Formula("Sorcerer_DraconicDragonResistances_ResistanceBonus"),
+      Type={
+        Name="Resistance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_DraconicDamageType_Fire"] >= 1)
@@ -64356,6 +64521,11 @@ DefineAbility({
         "ColdResistanceBonus",
       },
       Formula=Formula("Sorcerer_DraconicDragonResistances_ResistanceBonus"),
+      Type={
+        Name="Resistance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_DraconicDamageType_Cold"] >= 1)
@@ -66423,6 +66593,11 @@ DefineAbility({
         "AcidResistanceBonus",
       },
       Formula=Formula("Sorcerer_ElementalElementalResistance_ResistanceBonus"),
+      Type={
+        Name="Resistance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Earth"] >= 1)
@@ -66435,6 +66610,11 @@ DefineAbility({
         "ColdResistanceBonus",
       },
       Formula=Formula("Sorcerer_ElementalElementalResistance_ResistanceBonus"),
+      Type={
+        Name="Resistance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Water"] >= 1)
@@ -66447,6 +66627,11 @@ DefineAbility({
         "ElectricityResistanceBonus",
       },
       Formula=Formula("Sorcerer_ElementalElementalResistance_ResistanceBonus"),
+      Type={
+        Name="Resistance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Air"] >= 1)
@@ -66459,6 +66644,11 @@ DefineAbility({
         "FireResistanceBonus",
       },
       Formula=Formula("Sorcerer_ElementalElementalResistance_ResistanceBonus"),
+      Type={
+        Name="Resistance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
@@ -73321,20 +73511,20 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  ServesAs={
-    {
-      Ability="Special Ability",
-      Names={
-        "Channel Negative Energy",
-      },
-    },
-  },
   Abilities={
     {
       Category="FEAT",
       Nature="AUTOMATIC",
       Names={
         "Command Undead",
+      },
+    },
+  },
+  ServesAs={
+    {
+      Ability="Special Ability",
+      Names={
+        "Channel Negative Energy",
       },
     },
   },
@@ -73374,20 +73564,20 @@ DefineAbility({
   Category="Special Ability",
   AllowMultiple=false,
   Stackable=false,
-  ServesAs={
-    {
-      Ability="Special Ability",
-      Names={
-        "Channel Positive Energy",
-      },
-    },
-  },
   Abilities={
     {
       Category="FEAT",
       Nature="AUTOMATIC",
       Names={
         "Turn Undead",
+      },
+    },
+  },
+  ServesAs={
+    {
+      Ability="Special Ability",
+      Names={
+        "Channel Positive Energy",
       },
     },
   },
@@ -74716,19 +74906,19 @@ DefineAbility({
   AllowMultiple=false,
   Stackable=false,
   Visible=false,
-  ServesAs={
-    {
-      Ability="Feat",
-      Names={
-        "Martial Weapon Proficiency",
-      },
-    },
-  },
   AutomaticProficiencies={
     {
       Kind="Weapon",
       Types={
         "Martial",
+      },
+    },
+  },
+  ServesAs={
+    {
+      Ability="Feat",
+      Names={
+        "Martial Weapon Proficiency",
       },
     },
   },
@@ -74925,19 +75115,19 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  ServesAs={
-    {
-      Ability="Feat",
-      Names={
-        "Simple Weapon Proficiency",
-      },
-    },
-  },
   AutomaticProficiencies={
     {
       Kind="Weapon",
       Types={
         "Simple",
+      },
+    },
+  },
+  ServesAs={
+    {
+      Ability="Feat",
+      Names={
+        "Simple Weapon Proficiency",
       },
     },
   },
@@ -74952,19 +75142,19 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  ServesAs={
-    {
-      Ability="Feat",
-      Names={
-        "Martial Weapon Proficiency",
-      },
-    },
-  },
   AutomaticProficiencies={
     {
       Kind="Weapon",
       Types={
         "Martial",
+      },
+    },
+  },
+  ServesAs={
+    {
+      Ability="Feat",
+      Names={
+        "Martial Weapon Proficiency",
       },
     },
   },
@@ -74978,19 +75168,19 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  ServesAs={
-    {
-      Ability="Feat",
-      Names={
-        "Armor Proficiency (Light)",
-      },
-    },
-  },
   AutomaticProficiencies={
     {
       Kind="Armor",
       Types={
         "ArmorProfLight",
+      },
+    },
+  },
+  ServesAs={
+    {
+      Ability="Feat",
+      Names={
+        "Armor Proficiency (Light)",
       },
     },
   },
@@ -75006,19 +75196,19 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  ServesAs={
-    {
-      Ability="Feat",
-      Names={
-        "Armor Proficiency (Medium)",
-      },
-    },
-  },
   AutomaticProficiencies={
     {
       Kind="Armor",
       Types={
         "ArmorProfMedium",
+      },
+    },
+  },
+  ServesAs={
+    {
+      Ability="Feat",
+      Names={
+        "Armor Proficiency (Medium)",
       },
     },
   },
@@ -75033,19 +75223,19 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  ServesAs={
-    {
-      Ability="Feat",
-      Names={
-        "Armor Proficiency (Heavy)",
-      },
-    },
-  },
   AutomaticProficiencies={
     {
       Kind="Armor",
       Types={
         "ArmorProfHeavy",
+      },
+    },
+  },
+  ServesAs={
+    {
+      Ability="Feat",
+      Names={
+        "Armor Proficiency (Heavy)",
       },
     },
   },
@@ -75059,19 +75249,19 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  ServesAs={
-    {
-      Ability="Feat",
-      Names={
-        "Tower Shield Proficiency",
-      },
-    },
-  },
   AutomaticProficiencies={
     {
       Kind="Shield",
       Types={
         "Tower",
+      },
+    },
+  },
+  ServesAs={
+    {
+      Ability="Feat",
+      Names={
+        "Tower Shield Proficiency",
       },
     },
   },
@@ -75085,14 +75275,6 @@ DefineAbility({
   Category="Internal",
   AllowMultiple=false,
   Stackable=false,
-  ServesAs={
-    {
-      Ability="Feat",
-      Names={
-        "Shield Proficiency",
-      },
-    },
-  },
   AutomaticProficiencies={
     {
       Kind="Shield",
@@ -75105,6 +75287,14 @@ DefineAbility({
         "Buckler",
         "Heavy",
         "Light",
+      },
+    },
+  },
+  ServesAs={
+    {
+      Ability="Feat",
+      Names={
+        "Shield Proficiency",
       },
     },
   },
@@ -76650,6 +76840,11 @@ ModifyAbility({
         "CMB_STAT",
       },
       Formula=Formula("STR"),
+      Type={
+        Name="Stat",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return character.Size > "T"
@@ -76662,6 +76857,11 @@ ModifyAbility({
         "CMB_STAT",
       },
       Formula=Formula("DEX"),
+      Type={
+        Name="Stat",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return character.Size <= "T"
@@ -76677,6 +76877,11 @@ ModifyAbility({
         "CMB_STAT",
       },
       Formula=Formula("CHA"),
+      Type={
+        Name="Stat",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return character.Size <= "T"
@@ -78577,6 +78782,11 @@ DefineAbility({
         "AC",
       },
       Formula=Formula("max(0,min(INT,CannyDefenseLVL))"),
+      Type={
+        Name="Dodge",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           local count = 0
@@ -85136,6 +85346,11 @@ ModifyAbility({
         "SLA_Base_LVL",
       },
       Formula=Formula("TL"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["Default_SLA_LVL"] == 0)

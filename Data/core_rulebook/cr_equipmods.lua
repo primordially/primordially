@@ -1380,6 +1380,11 @@ DefineEquipmentModifier({
         "Craft (Armor)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1418,6 +1423,11 @@ DefineEquipmentModifier({
         "Craft (Baskets)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1456,6 +1466,11 @@ DefineEquipmentModifier({
         "Craft (Books)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1494,6 +1509,11 @@ DefineEquipmentModifier({
         "Craft (Bows)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1532,6 +1552,11 @@ DefineEquipmentModifier({
         "Craft (Calligraphy)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1570,6 +1595,11 @@ DefineEquipmentModifier({
         "Craft (Carpentry)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1608,6 +1638,11 @@ DefineEquipmentModifier({
         "Craft (Cloth)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1646,6 +1681,11 @@ DefineEquipmentModifier({
         "Craft (Clothing)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1684,6 +1724,11 @@ DefineEquipmentModifier({
         "Craft (Gemcutting)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1722,6 +1767,11 @@ DefineEquipmentModifier({
         "Craft (Glass)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1760,6 +1810,11 @@ DefineEquipmentModifier({
         "Craft (Jewelry)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1798,6 +1853,11 @@ DefineEquipmentModifier({
         "Craft (Leather)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1836,6 +1896,11 @@ DefineEquipmentModifier({
         "Craft (Locks)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1874,6 +1939,11 @@ DefineEquipmentModifier({
         "Craft (Paintings)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1912,6 +1982,11 @@ DefineEquipmentModifier({
         "Craft (Pottery)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1950,6 +2025,11 @@ DefineEquipmentModifier({
         "Craft (Sculptures)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -1988,6 +2068,11 @@ DefineEquipmentModifier({
         "Craft (Ships)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -2026,6 +2111,11 @@ DefineEquipmentModifier({
         "Craft (Shoes)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -2064,6 +2154,11 @@ DefineEquipmentModifier({
         "Craft (Stonemasonry)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -2102,6 +2197,11 @@ DefineEquipmentModifier({
         "Craft (Traps)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -2140,6 +2240,11 @@ DefineEquipmentModifier({
         "Craft (Weapons)",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("Masterwork"))) >= 1
@@ -2870,6 +2975,11 @@ DefineEquipmentModifier({
         "TOHIT",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("WEAPON"))) >= 1
@@ -2882,6 +2992,11 @@ DefineEquipmentModifier({
         "TOHIT",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("AMMUNITION"))) >= 1
@@ -2955,6 +3070,11 @@ DefineEquipmentModifier({
         "ACCHECK",
       },
       Formula=Formula("2"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("SHIELD"))) >= 1
@@ -3006,6 +3126,11 @@ DefineEquipmentModifier({
         "TOHIT",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return ((item.IsType("WEAPON"))) >= 1
@@ -3321,6 +3446,11 @@ DefineEquipmentModifier({
         "DAMAGE",
       },
       Formula=Formula("-1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=true,
+      },
       Conditions={
         function (item)
           return ((item.IsType("PIERCING")) + (item.IsType("SLASHING"))) >= 1
@@ -9125,6 +9255,11 @@ DefineEquipmentModifier({
         "AC",
       },
       Formula=Formula("1"),
+      Type={
+        Name="ArmorEnhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -9137,6 +9272,11 @@ DefineEquipmentModifier({
         "ACCHECK",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
@@ -9209,6 +9349,11 @@ DefineEquipmentModifier({
         "AC",
       },
       Formula=Formula("2"),
+      Type={
+        Name="ArmorEnhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -9221,6 +9366,11 @@ DefineEquipmentModifier({
         "ACCHECK",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
@@ -9293,6 +9443,11 @@ DefineEquipmentModifier({
         "AC",
       },
       Formula=Formula("3"),
+      Type={
+        Name="ArmorEnhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -9305,6 +9460,11 @@ DefineEquipmentModifier({
         "ACCHECK",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
@@ -9377,6 +9537,11 @@ DefineEquipmentModifier({
         "AC",
       },
       Formula=Formula("4"),
+      Type={
+        Name="ArmorEnhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -9389,6 +9554,11 @@ DefineEquipmentModifier({
         "ACCHECK",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
@@ -9461,6 +9631,11 @@ DefineEquipmentModifier({
         "AC",
       },
       Formula=Formula("5"),
+      Type={
+        Name="ArmorEnhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableArmorBonus"] == 0)
@@ -9473,6 +9648,11 @@ DefineEquipmentModifier({
         "ACCHECK",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
@@ -9545,6 +9725,11 @@ DefineEquipmentModifier({
         "AC",
       },
       Formula=Formula("1"),
+      Type={
+        Name="ShieldEnhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableShieldBonus"] == 0)
@@ -9557,6 +9742,11 @@ DefineEquipmentModifier({
         "ACCHECK",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
@@ -9629,6 +9819,11 @@ DefineEquipmentModifier({
         "AC",
       },
       Formula=Formula("2"),
+      Type={
+        Name="ShieldEnhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableShieldBonus"] == 0)
@@ -9641,6 +9836,11 @@ DefineEquipmentModifier({
         "ACCHECK",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
@@ -9713,6 +9913,11 @@ DefineEquipmentModifier({
         "AC",
       },
       Formula=Formula("3"),
+      Type={
+        Name="ShieldEnhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableShieldBonus"] == 0)
@@ -9725,6 +9930,11 @@ DefineEquipmentModifier({
         "ACCHECK",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
@@ -9797,6 +10007,11 @@ DefineEquipmentModifier({
         "AC",
       },
       Formula=Formula("4"),
+      Type={
+        Name="ShieldEnhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableShieldBonus"] == 0)
@@ -9809,6 +10024,11 @@ DefineEquipmentModifier({
         "ACCHECK",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
@@ -9881,6 +10101,11 @@ DefineEquipmentModifier({
         "AC",
       },
       Formula=Formula("5"),
+      Type={
+        Name="ShieldEnhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (character)
           return (character.Variables["DisableShieldBonus"] == 0)
@@ -9893,6 +10118,11 @@ DefineEquipmentModifier({
         "ACCHECK",
       },
       Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
@@ -15405,593 +15635,593 @@ DefineEquipmentModifier({
     end,
   },
 })
-DefineEquipmentModifier({
-  Name="Material ~ Cloth.COPY=CLOTH",
+CopyEquipmentModifier("Material ~ Cloth", {
+  Name="CLOTH",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Leather.COPY=LEATHER",
+CopyEquipmentModifier("Material ~ Leather", {
+  Name="LEATHER",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Rope.COPY=ROPE",
+CopyEquipmentModifier("Material ~ Rope", {
+  Name="ROPE",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Steel.COPY=STEEL",
+CopyEquipmentModifier("Material ~ Steel", {
+  Name="STEEL",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Wood.COPY=WOOD",
+CopyEquipmentModifier("Material ~ Wood", {
+  Name="WOOD",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Masterwork ~ Weapon.COPY=MWORKW",
+CopyEquipmentModifier("Special Quality ~ Masterwork ~ Weapon", {
+  Name="MWORKW",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Masterwork ~ Ammunition.COPY=MWORKM",
+CopyEquipmentModifier("Special Quality ~ Masterwork ~ Ammunition", {
+  Name="MWORKM",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Masterwork ~ Armor.COPY=MWORKA",
+CopyEquipmentModifier("Special Quality ~ Masterwork ~ Armor", {
+  Name="MWORKA",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Masterwork ~ Item.COPY=MWORKT",
+CopyEquipmentModifier("Special Quality ~ Masterwork ~ Item", {
+  Name="MWORKT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Masterwork ~ Bonded Object.COPY=MWORKB",
+CopyEquipmentModifier("Special Quality ~ Masterwork ~ Bonded Object", {
+  Name="MWORKB",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Bonded Object.COPY=BONDED_OBJECT",
+CopyEquipmentModifier("Special Quality ~ Bonded Object", {
+  Name="BONDED_OBJECT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Thrown Ammunition.COPY=THROWN_AMMO",
+CopyEquipmentModifier("Special Quality ~ Thrown Ammunition", {
+  Name="THROWN_AMMO",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Composite Bow Strength Rating.COPY=BOWSTR",
+CopyEquipmentModifier("Special Quality ~ Composite Bow Strength Rating", {
+  Name="BOWSTR",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Brace.COPY=BRACE",
+CopyEquipmentModifier("Special Quality ~ Brace", {
+  Name="BRACE",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Disarm.COPY=DISARM",
+CopyEquipmentModifier("Special Quality ~ Disarm", {
+  Name="DISARM",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Monk.COPY=MONK",
+CopyEquipmentModifier("Special Quality ~ Monk", {
+  Name="MONK",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Nonlethal.COPY=NONLETHAL",
+CopyEquipmentModifier("Special Quality ~ Nonlethal", {
+  Name="NONLETHAL",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Trip.COPY=TRIP",
+CopyEquipmentModifier("Special Quality ~ Trip", {
+  Name="TRIP",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Spikes ~ Armor.COPY=SPIKE_A",
+CopyEquipmentModifier("Special Quality ~ Spikes ~ Armor", {
+  Name="SPIKE_A",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Spikes ~ Shield.COPY=SPIKE_S",
+CopyEquipmentModifier("Special Quality ~ Spikes ~ Shield", {
+  Name="SPIKE_S",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Spikes ~ Shieldbash.COPY=SPIKE_SB",
+CopyEquipmentModifier("Special Quality ~ Spikes ~ Shieldbash", {
+  Name="SPIKE_SB",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Locked Gauntlet.COPY=LOCK_G",
+CopyEquipmentModifier("Special Quality ~ Locked Gauntlet", {
+  Name="LOCK_G",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Nonhumanoid ~ Armor.COPY=NONHUMANOID",
+CopyEquipmentModifier("Special Quality ~ Nonhumanoid ~ Armor", {
+  Name="NONHUMANOID",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Broken ~ Weapon.COPY=BROKEW",
+CopyEquipmentModifier("Special Quality ~ Broken ~ Weapon", {
+  Name="BROKEW",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Broken ~ Armor.COPY=BROKEA",
+CopyEquipmentModifier("Special Quality ~ Broken ~ Armor", {
+  Name="BROKEA",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Broken ~ Shield.COPY=BROKES",
+CopyEquipmentModifier("Special Quality ~ Broken ~ Shield", {
+  Name="BROKES",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Broken ~ Item.COPY=BROKET",
+CopyEquipmentModifier("Special Quality ~ Broken ~ Item", {
+  Name="BROKET",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Broken ~ Magic Item.COPY=BROKEM",
+CopyEquipmentModifier("Special Quality ~ Broken ~ Magic Item", {
+  Name="BROKEM",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Adamantine ~ Ammunition.COPY=Adamantine (Ammo)",
+CopyEquipmentModifier("Material ~ Adamantine ~ Ammunition", {
+  Name="Adamantine (Ammo)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Adamantine ~ Armor / Light.COPY=Adamantine (Light Armor)",
+CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Light", {
+  Name="Adamantine (Light Armor)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Adamantine ~ Armor / Medium.COPY=Adamantine (Medium Armor)",
+CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Medium", {
+  Name="Adamantine (Medium Armor)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Adamantine ~ Armor / Heavy.COPY=Adamantine (Heavy Armor)",
+CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Heavy", {
+  Name="Adamantine (Heavy Armor)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Adamantine ~ Weapon.COPY=Adamantine (Weapon)",
+CopyEquipmentModifier("Material ~ Adamantine ~ Weapon", {
+  Name="Adamantine (Weapon)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Mithril ~ Armor / Light.COPY=Mithral (Light Armor)",
+CopyEquipmentModifier("Material ~ Mithril ~ Armor / Light", {
+  Name="Mithral (Light Armor)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Mithril ~ Armor / Medium.COPY=Mithral (Medium Armor)",
+CopyEquipmentModifier("Material ~ Mithril ~ Armor / Medium", {
+  Name="Mithral (Medium Armor)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Mithril ~ Armor / Heavy.COPY=Mithral (Heavy Armor)",
+CopyEquipmentModifier("Material ~ Mithril ~ Armor / Heavy", {
+  Name="Mithral (Heavy Armor)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Mithril ~ Shield.COPY=Mithral (Shield)",
+CopyEquipmentModifier("Material ~ Mithril ~ Shield", {
+  Name="Mithral (Shield)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Mithril ~ Weapon / Item.COPY=Mithral (Item)",
+CopyEquipmentModifier("Material ~ Mithril ~ Weapon / Item", {
+  Name="Mithral (Item)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Darkwood.COPY=Darkwood",
+CopyEquipmentModifier("Material ~ Darkwood", {
+  Name="Darkwood",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Dragonhide.COPY=Dragonhide",
+CopyEquipmentModifier("Material ~ Dragonhide", {
+  Name="Dragonhide",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Cold Iron.COPY=Cold Iron",
+CopyEquipmentModifier("Material ~ Cold Iron", {
+  Name="Cold Iron",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Alchemical Silver.COPY=Alchemical Silver",
+CopyEquipmentModifier("Material ~ Alchemical Silver", {
+  Name="Alchemical Silver",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Adamantine ~ Ammunition.COPY=ADAMANT_AMMO",
+CopyEquipmentModifier("Material ~ Adamantine ~ Ammunition", {
+  Name="ADAMANT_AMMO",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Adamantine ~ Armor / Light.COPY=ADAMANT_ARMR_LT",
+CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Light", {
+  Name="ADAMANT_ARMR_LT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Adamantine ~ Armor / Medium.COPY=ADAMANT_ARMR_MED",
+CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Medium", {
+  Name="ADAMANT_ARMR_MED",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Adamantine ~ Armor / Heavy.COPY=ADAMANT_ARMR_HVY",
+CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Heavy", {
+  Name="ADAMANT_ARMR_HVY",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Adamantine ~ Weapon.COPY=ADAMANT_WEAP",
+CopyEquipmentModifier("Material ~ Adamantine ~ Weapon", {
+  Name="ADAMANT_WEAP",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Mithril ~ Armor / Light.COPY=MITHRAL_ARMR_LT",
+CopyEquipmentModifier("Material ~ Mithril ~ Armor / Light", {
+  Name="MITHRAL_ARMR_LT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Mithril ~ Armor / Medium.COPY=MITHRAL_ARMR_MED",
+CopyEquipmentModifier("Material ~ Mithril ~ Armor / Medium", {
+  Name="MITHRAL_ARMR_MED",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Mithril ~ Armor / Heavy.COPY=MITHRAL_ARMR_HVY",
+CopyEquipmentModifier("Material ~ Mithril ~ Armor / Heavy", {
+  Name="MITHRAL_ARMR_HVY",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Mithril ~ Shield.COPY=MITHRAL_SHLD",
+CopyEquipmentModifier("Material ~ Mithril ~ Shield", {
+  Name="MITHRAL_SHLD",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Mithril ~ Weapon / Item.COPY=MITHRAL_ITEM",
+CopyEquipmentModifier("Material ~ Mithril ~ Weapon / Item", {
+  Name="MITHRAL_ITEM",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Darkwood.COPY=DARK",
+CopyEquipmentModifier("Material ~ Darkwood", {
+  Name="DARK",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Dragonhide.COPY=DRACO",
+CopyEquipmentModifier("Material ~ Dragonhide", {
+  Name="DRACO",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Cold Iron.COPY=C_IRON",
+CopyEquipmentModifier("Material ~ Cold Iron", {
+  Name="C_IRON",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Material ~ Alchemical Silver.COPY=ALCHM",
+CopyEquipmentModifier("Material ~ Alchemical Silver", {
+  Name="ALCHM",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Charged Item / 3 Maximum.COPY=CHARGED_ITEM_3",
+CopyEquipmentModifier("Special Ability ~ Charged Item / 3 Maximum", {
+  Name="CHARGED_ITEM_3",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Charged Item / 4 Maximum.COPY=CHARGED_ITEM_4",
+CopyEquipmentModifier("Special Ability ~ Charged Item / 4 Maximum", {
+  Name="CHARGED_ITEM_4",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Charged Item / 5 Maximum.COPY=CHARGED_ITEM_5",
+CopyEquipmentModifier("Special Ability ~ Charged Item / 5 Maximum", {
+  Name="CHARGED_ITEM_5",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Charged Item / 6 Maximum.COPY=CHARGED_ITEM_6",
+CopyEquipmentModifier("Special Ability ~ Charged Item / 6 Maximum", {
+  Name="CHARGED_ITEM_6",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Charged Item / 7 Maximum.COPY=CHARGED_ITEM_7",
+CopyEquipmentModifier("Special Ability ~ Charged Item / 7 Maximum", {
+  Name="CHARGED_ITEM_7",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Charged Item / 8 Maximum.COPY=CHARGED_ITEM_8",
+CopyEquipmentModifier("Special Ability ~ Charged Item / 8 Maximum", {
+  Name="CHARGED_ITEM_8",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Charged Item / 9 Maximum.COPY=CHARGED_ITEM_9",
+CopyEquipmentModifier("Special Ability ~ Charged Item / 9 Maximum", {
+  Name="CHARGED_ITEM_9",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Charged Item / 10 Maximum.COPY=CHARGED_ITEM_10",
+CopyEquipmentModifier("Special Ability ~ Charged Item / 10 Maximum", {
+  Name="CHARGED_ITEM_10",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Charged Item / 12 Maximum.COPY=CHARGED_ITEM_12",
+CopyEquipmentModifier("Special Ability ~ Charged Item / 12 Maximum", {
+  Name="CHARGED_ITEM_12",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Charged Item / 20 Maximum.COPY=CHARGED_ITEM_20",
+CopyEquipmentModifier("Special Ability ~ Charged Item / 20 Maximum", {
+  Name="CHARGED_ITEM_20",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Charged Item / 34 Maximum.COPY=CHARGED_ITEM_34",
+CopyEquipmentModifier("Special Ability ~ Charged Item / 34 Maximum", {
+  Name="CHARGED_ITEM_34",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Charged Item / 36 Maximum.COPY=CHARGED_ITEM_36",
+CopyEquipmentModifier("Special Ability ~ Charged Item / 36 Maximum", {
+  Name="CHARGED_ITEM_36",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Charged Item / 50 Maximum.COPY=CHARGED_ITEM_50",
+CopyEquipmentModifier("Special Ability ~ Charged Item / 50 Maximum", {
+  Name="CHARGED_ITEM_50",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Charged Item / 101 Maximum.COPY=CHARGED_ITEM_101",
+CopyEquipmentModifier("Special Ability ~ Charged Item / 101 Maximum", {
+  Name="CHARGED_ITEM_101",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Staff Charges.COPY=CHARGED_STAFF",
+CopyEquipmentModifier("Special Ability ~ Staff Charges", {
+  Name="CHARGED_STAFF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Uses per Day / 1.COPY=USES_PER_DAY_1",
+CopyEquipmentModifier("Special Ability ~ Uses per Day / 1", {
+  Name="USES_PER_DAY_1",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Uses per Day / 2.COPY=USES_PER_DAY_2",
+CopyEquipmentModifier("Special Ability ~ Uses per Day / 2", {
+  Name="USES_PER_DAY_2",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Uses per Day / 3.COPY=USES_PER_DAY_3",
+CopyEquipmentModifier("Special Ability ~ Uses per Day / 3", {
+  Name="USES_PER_DAY_3",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Uses per Day / 10.COPY=USES_PER_DAY_10",
+CopyEquipmentModifier("Special Ability ~ Uses per Day / 10", {
+  Name="USES_PER_DAY_10",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +1 ~ Enhancement Cost.COPY=MAGIC_ENHANCE_1",
+CopyEquipmentModifier("Special Ability ~ +1 ~ Enhancement Cost", {
+  Name="MAGIC_ENHANCE_1",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +2 ~ Enhancement Cost.COPY=MAGIC_ENHANCE_2",
+CopyEquipmentModifier("Special Ability ~ +2 ~ Enhancement Cost", {
+  Name="MAGIC_ENHANCE_2",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +3 ~ Enhancement Cost.COPY=MAGIC_ENHANCE_3",
+CopyEquipmentModifier("Special Ability ~ +3 ~ Enhancement Cost", {
+  Name="MAGIC_ENHANCE_3",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +4 ~ Enhancement Cost.COPY=MAGIC_ENHANCE_4",
+CopyEquipmentModifier("Special Ability ~ +4 ~ Enhancement Cost", {
+  Name="MAGIC_ENHANCE_4",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +5 ~ Enhancement Cost.COPY=MAGIC_ENHANCE_5",
+CopyEquipmentModifier("Special Ability ~ +5 ~ Enhancement Cost", {
+  Name="MAGIC_ENHANCE_5",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +6 ~ Enhancement Cost.COPY=MAGIC_ENHANCE_6",
+CopyEquipmentModifier("Special Ability ~ +6 ~ Enhancement Cost", {
+  Name="MAGIC_ENHANCE_6",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +7 ~ Enhancement Cost.COPY=MAGIC_ENHANCE_7",
+CopyEquipmentModifier("Special Ability ~ +7 ~ Enhancement Cost", {
+  Name="MAGIC_ENHANCE_7",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +8 ~ Enhancement Cost.COPY=MAGIC_ENHANCE_8",
+CopyEquipmentModifier("Special Ability ~ +8 ~ Enhancement Cost", {
+  Name="MAGIC_ENHANCE_8",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +9 ~ Enhancement Cost.COPY=MAGIC_ENHANCE_9",
+CopyEquipmentModifier("Special Ability ~ +9 ~ Enhancement Cost", {
+  Name="MAGIC_ENHANCE_9",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +10 ~ Enhancement Cost.COPY=MAGIC_ENHANCE_10",
+CopyEquipmentModifier("Special Ability ~ +10 ~ Enhancement Cost", {
+  Name="MAGIC_ENHANCE_10",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Enhancement Cost.COPY=MAGIC_COST",
+CopyEquipmentModifier("Special Ability ~ Enhancement Cost", {
+  Name="MAGIC_COST",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Single Use.COPY=SPL_1USE",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Single Use", {
+  Name="SPL_1USE",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Spell Trigger.COPY=SPL_CHRG",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Spell Trigger", {
+  Name="SPL_CHRG",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Command Word.COPY=SPL_CMD",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Command Word", {
+  Name="SPL_CMD",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Use Activated.COPY=SPL_ACT",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Use Activated", {
+  Name="SPL_ACT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus Ability / Enhancement.COPY=BNS_ENHC_AB",
+CopyEquipmentModifier("Special Ability ~ Bonus Ability / Enhancement", {
+  Name="BNS_ENHC_AB",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus AC / Enhancement.COPY=BNS_ENHC_AC",
+CopyEquipmentModifier("Special Ability ~ Bonus AC / Enhancement", {
+  Name="BNS_ENHC_AC",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus Spell.COPY=BNS_SPELL",
+CopyEquipmentModifier("Special Ability ~ Bonus Spell", {
+  Name="BNS_SPELL",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus AC / Deflection.COPY=BNS_AC_DEFL",
+CopyEquipmentModifier("Special Ability ~ Bonus AC / Deflection", {
+  Name="BNS_AC_DEFL",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus AC / Luck.COPY=BNS_AC_LUCK",
+CopyEquipmentModifier("Special Ability ~ Bonus AC / Luck", {
+  Name="BNS_AC_LUCK",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus AC / Insight.COPY=BNS_AC_INSI",
+CopyEquipmentModifier("Special Ability ~ Bonus AC / Insight", {
+  Name="BNS_AC_INSI",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus AC / Sacred.COPY=BNS_AC_SCRD",
+CopyEquipmentModifier("Special Ability ~ Bonus AC / Sacred", {
+  Name="BNS_AC_SCRD",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus AC / Profane.COPY=BNS_AC_PROF",
+CopyEquipmentModifier("Special Ability ~ Bonus AC / Profane", {
+  Name="BNS_AC_PROF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus AC / Other.COPY=BNS_AC_OTHE",
+CopyEquipmentModifier("Special Ability ~ Bonus AC / Other", {
+  Name="BNS_AC_OTHE",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus AC / Natural Armor.COPY=BNS_ENHC_NAT",
+CopyEquipmentModifier("Special Ability ~ Bonus AC / Natural Armor", {
+  Name="BNS_ENHC_NAT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus Save / Resistance.COPY=BNS_SAV_RES",
+CopyEquipmentModifier("Special Ability ~ Bonus Save / Resistance", {
+  Name="BNS_SAV_RES",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus Save / Luck.COPY=BNS_SAV_LUC",
+CopyEquipmentModifier("Special Ability ~ Bonus Save / Luck", {
+  Name="BNS_SAV_LUC",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus Save / Insight.COPY=BNS_SAV_INS",
+CopyEquipmentModifier("Special Ability ~ Bonus Save / Insight", {
+  Name="BNS_SAV_INS",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus Save / Sacred.COPY=BNS_SAV_SAC",
+CopyEquipmentModifier("Special Ability ~ Bonus Save / Sacred", {
+  Name="BNS_SAV_SAC",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus Save / Profane.COPY=BNS_SAV_PRO",
+CopyEquipmentModifier("Special Ability ~ Bonus Save / Profane", {
+  Name="BNS_SAV_PRO",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus Save / Other.COPY=BNS_SAV_OTH",
+CopyEquipmentModifier("Special Ability ~ Bonus Save / Other", {
+  Name="BNS_SAV_OTH",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus Skill / Competence.COPY=BNS_SKL_CMP",
+CopyEquipmentModifier("Special Ability ~ Bonus Skill / Competence", {
+  Name="BNS_SKL_CMP",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus Spell Resistance.COPY=BNS_SPL_RST",
+CopyEquipmentModifier("Special Ability ~ Bonus Spell Resistance", {
+  Name="BNS_SPL_RST",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus Skill / Maximize Knowledge.COPY=MAX_KNW",
+CopyEquipmentModifier("Special Ability ~ Bonus Skill / Maximize Knowledge", {
+  Name="MAX_KNW",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bonus Skill / Maximize Any Skill.COPY=MAX_GNL",
+CopyEquipmentModifier("Special Ability ~ Bonus Skill / Maximize Any Skill", {
+  Name="MAX_GNL",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Continuous / Hour per Level.COPY=SPL_CON_STANDARD",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Continuous / Hour per Level", {
+  Name="SPL_CON_STANDARD",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Continuous / Round per Level.COPY=SPL_CON_ROUND",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Continuous / Round per Level", {
+  Name="SPL_CON_ROUND",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Continuous / Minute per Level.COPY=SPL_CON_MINUTES",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Continuous / Minute per Level", {
+  Name="SPL_CON_MINUTES",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Continuous / 10 Minutes per Level.COPY=SPL_CON_HOURS",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Continuous / 10 Minutes per Level", {
+  Name="SPL_CON_HOURS",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Continuous / Day per Level.COPY=SPL_CON_DAYS",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Continuous / Day per Level", {
+  Name="SPL_CON_DAYS",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Staff / Primary Power.COPY=SPL_SPP",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Staff / Primary Power", {
+  Name="SPL_SPP",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Staff / Secondary Power.COPY=SPL_SSP",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Staff / Secondary Power", {
+  Name="SPL_SSP",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Staff / Lesser Power.COPY=SPL_SLP",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Staff / Lesser Power", {
+  Name="SPL_SLP",
   Visible=false,
   AffectsBothHeads=false,
 })
@@ -16089,1073 +16319,1073 @@ DefineEquipmentModifier({
     end,
   },
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Completion / Scroll / Arcane.COPY=A_1USEMI",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Arcane", {
+  Name="A_1USEMI",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Completion / Scroll / Arcane.COPY=A_1USEME",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Arcane", {
+  Name="A_1USEME",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Completion / Scroll / Arcane.COPY=A_1USEMA",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Arcane", {
+  Name="A_1USEMA",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Completion / Scroll / Divine.COPY=D_1USEMI",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Divine", {
+  Name="D_1USEMI",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Completion / Scroll / Divine.COPY=D_1USEME",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Divine", {
+  Name="D_1USEME",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Effect / Completion / Scroll / Divine.COPY=D_1USEMA",
+CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Divine", {
+  Name="D_1USEMA",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Wield Size / 1 Step Greater.COPY=PLUS1STEP",
+CopyEquipmentModifier("Special Quality ~ Wield Size / 1 Step Greater", {
+  Name="PLUS1STEP",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Wield Size / 2 Steps Greater.COPY=PLUS2STEP",
+CopyEquipmentModifier("Special Quality ~ Wield Size / 2 Steps Greater", {
+  Name="PLUS2STEP",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Wield Size / 3 Steps Greater.COPY=PLUS3STEP",
+CopyEquipmentModifier("Special Quality ~ Wield Size / 3 Steps Greater", {
+  Name="PLUS3STEP",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Wield Size / 1 Step Greater / No Penalty.COPY=PLUS1STEP_NO_PENALTY",
+CopyEquipmentModifier("Special Quality ~ Wield Size / 1 Step Greater / No Penalty", {
+  Name="PLUS1STEP_NO_PENALTY",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Wield Size / 2 Steps Greater / No Penalty.COPY=PLUS2STEP_NO_PENALTY",
+CopyEquipmentModifier("Special Quality ~ Wield Size / 2 Steps Greater / No Penalty", {
+  Name="PLUS2STEP_NO_PENALTY",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Quality ~ Wield Size / 3 Steps Greater / No Penalty.COPY=PLUS3STEP_NO_PENALTY",
+CopyEquipmentModifier("Special Quality ~ Wield Size / 3 Steps Greater / No Penalty", {
+  Name="PLUS3STEP_NO_PENALTY",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +1 ~ Weapon.COPY=PLUS1W",
+CopyEquipmentModifier("Special Ability ~ +1 ~ Weapon", {
+  Name="PLUS1W",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +2 ~ Weapon.COPY=PLUS2W",
+CopyEquipmentModifier("Special Ability ~ +2 ~ Weapon", {
+  Name="PLUS2W",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +3 ~ Weapon.COPY=PLUS3W",
+CopyEquipmentModifier("Special Ability ~ +3 ~ Weapon", {
+  Name="PLUS3W",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +4 ~ Weapon.COPY=PLUS4W",
+CopyEquipmentModifier("Special Ability ~ +4 ~ Weapon", {
+  Name="PLUS4W",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +5 ~ Weapon.COPY=PLUS5W",
+CopyEquipmentModifier("Special Ability ~ +5 ~ Weapon", {
+  Name="PLUS5W",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +1 ~ Ammunition.COPY=PLUS1M",
+CopyEquipmentModifier("Special Ability ~ +1 ~ Ammunition", {
+  Name="PLUS1M",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +2 ~ Ammunition.COPY=PLUS2M",
+CopyEquipmentModifier("Special Ability ~ +2 ~ Ammunition", {
+  Name="PLUS2M",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +3 ~ Ammunition.COPY=PLUS3M",
+CopyEquipmentModifier("Special Ability ~ +3 ~ Ammunition", {
+  Name="PLUS3M",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +4 ~ Ammunition.COPY=PLUS4M",
+CopyEquipmentModifier("Special Ability ~ +4 ~ Ammunition", {
+  Name="PLUS4M",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +5 ~ Ammunition.COPY=PLUS5M",
+CopyEquipmentModifier("Special Ability ~ +5 ~ Ammunition", {
+  Name="PLUS5M",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Anarchic ~ Weapon.COPY=ANARCH",
+CopyEquipmentModifier("Special Ability ~ Anarchic ~ Weapon", {
+  Name="ANARCH",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Axiomatic ~ Weapon.COPY=AXIOM",
+CopyEquipmentModifier("Special Ability ~ Axiomatic ~ Weapon", {
+  Name="AXIOM",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bane ~ Weapon.COPY=BANE",
+CopyEquipmentModifier("Special Ability ~ Bane ~ Weapon", {
+  Name="BANE",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Brilliant Energy ~ Weapon.COPY=BRILL",
+CopyEquipmentModifier("Special Ability ~ Brilliant Energy ~ Weapon", {
+  Name="BRILL",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Dancing ~ Melee.COPY=DANCE",
+CopyEquipmentModifier("Special Ability ~ Dancing ~ Melee", {
+  Name="DANCE",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Defending ~ Melee.COPY=DEFEND",
+CopyEquipmentModifier("Special Ability ~ Defending ~ Melee", {
+  Name="DEFEND",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Disruption ~ Weapon.COPY=DISRPT",
+CopyEquipmentModifier("Special Ability ~ Disruption ~ Weapon", {
+  Name="DISRPT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Distance ~ Ranged.COPY=DISTNC",
+CopyEquipmentModifier("Special Ability ~ Distance ~ Ranged", {
+  Name="DISTNC",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Flaming ~ Weapon.COPY=FLAME",
+CopyEquipmentModifier("Special Ability ~ Flaming ~ Weapon", {
+  Name="FLAME",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Flaming Burst ~ Weapon.COPY=FLM_BRST",
+CopyEquipmentModifier("Special Ability ~ Flaming Burst ~ Weapon", {
+  Name="FLM_BRST",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Frost ~ Weapon.COPY=FROST",
+CopyEquipmentModifier("Special Ability ~ Frost ~ Weapon", {
+  Name="FROST",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Ghost Touch ~ Weapon.COPY=GHOST",
+CopyEquipmentModifier("Special Ability ~ Ghost Touch ~ Weapon", {
+  Name="GHOST",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Holy ~ Weapon.COPY=HOLY",
+CopyEquipmentModifier("Special Ability ~ Holy ~ Weapon", {
+  Name="HOLY",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Icy Burst ~ Weapon.COPY=ICY_BRST",
+CopyEquipmentModifier("Special Ability ~ Icy Burst ~ Weapon", {
+  Name="ICY_BRST",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Keen ~ Weapon.COPY=KEEN",
+CopyEquipmentModifier("Special Ability ~ Keen ~ Weapon", {
+  Name="KEEN",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Ki Focus ~ Melee.COPY=KI",
+CopyEquipmentModifier("Special Ability ~ Ki Focus ~ Melee", {
+  Name="KI",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Merciful ~ Weapon.COPY=MERCY",
+CopyEquipmentModifier("Special Ability ~ Merciful ~ Weapon", {
+  Name="MERCY",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Mighty Cleaving ~ Melee.COPY=CLEAVE",
+CopyEquipmentModifier("Special Ability ~ Mighty Cleaving ~ Melee", {
+  Name="CLEAVE",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Returning ~ Thrown.COPY=RETURN",
+CopyEquipmentModifier("Special Ability ~ Returning ~ Thrown", {
+  Name="RETURN",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Seeking ~ Ranged.COPY=SEEK",
+CopyEquipmentModifier("Special Ability ~ Seeking ~ Ranged", {
+  Name="SEEK",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Shock ~ Weapon.COPY=SHOCK",
+CopyEquipmentModifier("Special Ability ~ Shock ~ Weapon", {
+  Name="SHOCK",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Shocking Burst ~ Weapon.COPY=SHK_BRST",
+CopyEquipmentModifier("Special Ability ~ Shocking Burst ~ Weapon", {
+  Name="SHK_BRST",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Speed ~ Weapon.COPY=SPEED",
+CopyEquipmentModifier("Special Ability ~ Speed ~ Weapon", {
+  Name="SPEED",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Storing ~ Melee.COPY=STORE",
+CopyEquipmentModifier("Special Ability ~ Spell Storing ~ Melee", {
+  Name="STORE",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Thundering ~ Weapon.COPY=THUNDER",
+CopyEquipmentModifier("Special Ability ~ Thundering ~ Weapon", {
+  Name="THUNDER",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Throwing ~ Melee.COPY=THROW",
+CopyEquipmentModifier("Special Ability ~ Throwing ~ Melee", {
+  Name="THROW",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Unholy ~ Weapon.COPY=UNHOLY",
+CopyEquipmentModifier("Special Ability ~ Unholy ~ Weapon", {
+  Name="UNHOLY",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Vicious ~ Melee.COPY=VICIOUS",
+CopyEquipmentModifier("Special Ability ~ Vicious ~ Melee", {
+  Name="VICIOUS",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Vorpal ~ Melee.COPY=VORPAL",
+CopyEquipmentModifier("Special Ability ~ Vorpal ~ Melee", {
+  Name="VORPAL",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Wounding ~ Weapon.COPY=WOUND",
+CopyEquipmentModifier("Special Ability ~ Wounding ~ Weapon", {
+  Name="WOUND",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Amulet of Mighty Fists Base.COPY=MightyFist_AMF",
+CopyEquipmentModifier("Special Ability ~ Amulet of Mighty Fists Base", {
+  Name="MightyFist_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +1 ~ Amulet of Mighty Fists.COPY=PLUS1_AMF",
+CopyEquipmentModifier("Special Ability ~ +1 ~ Amulet of Mighty Fists", {
+  Name="PLUS1_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +2 ~ Amulet of Mighty Fists.COPY=PLUS2_AMF",
+CopyEquipmentModifier("Special Ability ~ +2 ~ Amulet of Mighty Fists", {
+  Name="PLUS2_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +3 ~ Amulet of Mighty Fists.COPY=PLUS3_AMF",
+CopyEquipmentModifier("Special Ability ~ +3 ~ Amulet of Mighty Fists", {
+  Name="PLUS3_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +4 ~ Amulet of Mighty Fists.COPY=PLUS4_AMF",
+CopyEquipmentModifier("Special Ability ~ +4 ~ Amulet of Mighty Fists", {
+  Name="PLUS4_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +5 ~ Amulet of Mighty Fists.COPY=PLUS5_AMF",
+CopyEquipmentModifier("Special Ability ~ +5 ~ Amulet of Mighty Fists", {
+  Name="PLUS5_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Anarchic ~ Amulet of Mighty Fists.COPY=ANARCH_AMF",
+CopyEquipmentModifier("Special Ability ~ Anarchic ~ Amulet of Mighty Fists", {
+  Name="ANARCH_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Axiomatic ~ Amulet of Mighty Fists.COPY=AXIOM_AMF",
+CopyEquipmentModifier("Special Ability ~ Axiomatic ~ Amulet of Mighty Fists", {
+  Name="AXIOM_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bane ~ Amulet of Mighty Fists.COPY=BANE_AMF",
+CopyEquipmentModifier("Special Ability ~ Bane ~ Amulet of Mighty Fists", {
+  Name="BANE_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Brilliant Energy ~ Amulet of Mighty Fists.COPY=BRILL_AMF",
+CopyEquipmentModifier("Special Ability ~ Brilliant Energy ~ Amulet of Mighty Fists", {
+  Name="BRILL_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Defending ~ Amulet of Mighty Fists.COPY=DEFEND_AMF",
+CopyEquipmentModifier("Special Ability ~ Defending ~ Amulet of Mighty Fists", {
+  Name="DEFEND_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Disruption ~ Amulet of Mighty Fists.COPY=DISRPT_AMF",
+CopyEquipmentModifier("Special Ability ~ Disruption ~ Amulet of Mighty Fists", {
+  Name="DISRPT_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Flaming ~ Amulet of Mighty Fists.COPY=FLAME_AMF",
+CopyEquipmentModifier("Special Ability ~ Flaming ~ Amulet of Mighty Fists", {
+  Name="FLAME_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Flaming Burst ~ Amulet of Mighty Fists.COPY=FLM_BRST_AMF",
+CopyEquipmentModifier("Special Ability ~ Flaming Burst ~ Amulet of Mighty Fists", {
+  Name="FLM_BRST_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Frost ~ Amulet of Mighty Fists.COPY=FROST_AMF",
+CopyEquipmentModifier("Special Ability ~ Frost ~ Amulet of Mighty Fists", {
+  Name="FROST_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Ghost Touch ~ Amulet of Mighty Fists.COPY=GHOST_AMF",
+CopyEquipmentModifier("Special Ability ~ Ghost Touch ~ Amulet of Mighty Fists", {
+  Name="GHOST_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Holy ~ Amulet of Mighty Fists.COPY=HOLY_AMF",
+CopyEquipmentModifier("Special Ability ~ Holy ~ Amulet of Mighty Fists", {
+  Name="HOLY_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Icy Burst ~ Amulet of Mighty Fists.COPY=ICY_BRST_AMF",
+CopyEquipmentModifier("Special Ability ~ Icy Burst ~ Amulet of Mighty Fists", {
+  Name="ICY_BRST_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Ki Focus ~ Amulet of Mighty Fists.COPY=KI_AMF",
+CopyEquipmentModifier("Special Ability ~ Ki Focus ~ Amulet of Mighty Fists", {
+  Name="KI_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Merciful ~ Amulet of Mighty Fists.COPY=MERCY_AMF",
+CopyEquipmentModifier("Special Ability ~ Merciful ~ Amulet of Mighty Fists", {
+  Name="MERCY_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Mighty Cleaving ~ Amulet of Mighty Fists.COPY=CLEAVE_AMF",
+CopyEquipmentModifier("Special Ability ~ Mighty Cleaving ~ Amulet of Mighty Fists", {
+  Name="CLEAVE_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Shock ~ Amulet of Mighty Fists.COPY=SHOCK_AMF",
+CopyEquipmentModifier("Special Ability ~ Shock ~ Amulet of Mighty Fists", {
+  Name="SHOCK_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Shocking Burst ~ Amulet of Mighty Fists.COPY=SHK_BRST_AMF",
+CopyEquipmentModifier("Special Ability ~ Shocking Burst ~ Amulet of Mighty Fists", {
+  Name="SHK_BRST_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Speed ~ Amulet of Mighty Fists.COPY=SPEED_AMF",
+CopyEquipmentModifier("Special Ability ~ Speed ~ Amulet of Mighty Fists", {
+  Name="SPEED_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Storing ~ Amulet of Mighty Fists.COPY=STORE_AMF",
+CopyEquipmentModifier("Special Ability ~ Spell Storing ~ Amulet of Mighty Fists", {
+  Name="STORE_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Thundering ~ Amulet of Mighty Fists.COPY=THUNDER_AMF",
+CopyEquipmentModifier("Special Ability ~ Thundering ~ Amulet of Mighty Fists", {
+  Name="THUNDER_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Unholy ~ Amulet of Mighty Fists.COPY=UNHOLY_AMF",
+CopyEquipmentModifier("Special Ability ~ Unholy ~ Amulet of Mighty Fists", {
+  Name="UNHOLY_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Vicious ~ Amulet of Mighty Fists.COPY=VICIOUS_AMF",
+CopyEquipmentModifier("Special Ability ~ Vicious ~ Amulet of Mighty Fists", {
+  Name="VICIOUS_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Wounding ~ Amulet of Mighty Fists.COPY=WOUND_AMF",
+CopyEquipmentModifier("Special Ability ~ Wounding ~ Amulet of Mighty Fists", {
+  Name="WOUND_AMF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +1 ~ Armor.COPY=PLUS1A",
+CopyEquipmentModifier("Special Ability ~ +1 ~ Armor", {
+  Name="PLUS1A",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +2 ~ Armor.COPY=PLUS2A",
+CopyEquipmentModifier("Special Ability ~ +2 ~ Armor", {
+  Name="PLUS2A",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +3 ~ Armor.COPY=PLUS3A",
+CopyEquipmentModifier("Special Ability ~ +3 ~ Armor", {
+  Name="PLUS3A",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +4 ~ Armor.COPY=PLUS4A",
+CopyEquipmentModifier("Special Ability ~ +4 ~ Armor", {
+  Name="PLUS4A",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +5 ~ Armor.COPY=PLUS5A",
+CopyEquipmentModifier("Special Ability ~ +5 ~ Armor", {
+  Name="PLUS5A",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +1 ~ Shield.COPY=PLUS1S",
+CopyEquipmentModifier("Special Ability ~ +1 ~ Shield", {
+  Name="PLUS1S",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +2 ~ Shield.COPY=PLUS2S",
+CopyEquipmentModifier("Special Ability ~ +2 ~ Shield", {
+  Name="PLUS2S",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +3 ~ Shield.COPY=PLUS3S",
+CopyEquipmentModifier("Special Ability ~ +3 ~ Shield", {
+  Name="PLUS3S",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +4 ~ Shield.COPY=PLUS4S",
+CopyEquipmentModifier("Special Ability ~ +4 ~ Shield", {
+  Name="PLUS4S",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ +5 ~ Shield.COPY=PLUS5S",
+CopyEquipmentModifier("Special Ability ~ +5 ~ Shield", {
+  Name="PLUS5S",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Animated ~ Shield.COPY=ANMATD",
+CopyEquipmentModifier("Special Ability ~ Animated ~ Shield", {
+  Name="ANMATD",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Arrow Catching ~ Shield.COPY=ARW_CAT",
+CopyEquipmentModifier("Special Ability ~ Arrow Catching ~ Shield", {
+  Name="ARW_CAT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Arrow Deflection ~ Shield.COPY=ARW_DEF",
+CopyEquipmentModifier("Special Ability ~ Arrow Deflection ~ Shield", {
+  Name="ARW_DEF",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bashing ~ Shield / Heavy.COPY=BASH_H",
+CopyEquipmentModifier("Special Ability ~ Bashing ~ Shield / Heavy", {
+  Name="BASH_H",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Bashing ~ Shield / Light.COPY=BASH_L",
+CopyEquipmentModifier("Special Ability ~ Bashing ~ Shield / Light", {
+  Name="BASH_L",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Blinding ~ Shield.COPY=BLIND",
+CopyEquipmentModifier("Special Ability ~ Blinding ~ Shield", {
+  Name="BLIND",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Energy Resistance / Acid ~ Armor.COPY=RST_ACD",
+CopyEquipmentModifier("Special Ability ~ Energy Resistance / Acid ~ Armor", {
+  Name="RST_ACD",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Energy Resistance / Acid / Improved ~ Armor.COPY=RST_ACD_IMP",
+CopyEquipmentModifier("Special Ability ~ Energy Resistance / Acid / Improved ~ Armor", {
+  Name="RST_ACD_IMP",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Energy Resistance / Acid / Greater ~ Armor.COPY=RES_ACD_GRT",
+CopyEquipmentModifier("Special Ability ~ Energy Resistance / Acid / Greater ~ Armor", {
+  Name="RES_ACD_GRT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Energy Resistance / Cold ~ Armor.COPY=RST_CLD",
+CopyEquipmentModifier("Special Ability ~ Energy Resistance / Cold ~ Armor", {
+  Name="RST_CLD",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Energy Resistance / Cold / Improved ~ Armor.COPY=RST_CLD_IMP",
+CopyEquipmentModifier("Special Ability ~ Energy Resistance / Cold / Improved ~ Armor", {
+  Name="RST_CLD_IMP",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Energy Resistance / Cold / Greater ~ Armor.COPY=RES_CLD_GRT",
+CopyEquipmentModifier("Special Ability ~ Energy Resistance / Cold / Greater ~ Armor", {
+  Name="RES_CLD_GRT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Energy Resistance / Electricity ~ Armor.COPY=RST_ELC",
+CopyEquipmentModifier("Special Ability ~ Energy Resistance / Electricity ~ Armor", {
+  Name="RST_ELC",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Energy Resistance / Electricity / Improved ~ Armor.COPY=RST_ELC_IMP",
+CopyEquipmentModifier("Special Ability ~ Energy Resistance / Electricity / Improved ~ Armor", {
+  Name="RST_ELC_IMP",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Energy Resistance / Electricity / Greater ~ Armor.COPY=RES_ELC_GRT",
+CopyEquipmentModifier("Special Ability ~ Energy Resistance / Electricity / Greater ~ Armor", {
+  Name="RES_ELC_GRT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Energy Resistance / Fire ~ Armor.COPY=RST_FIR",
+CopyEquipmentModifier("Special Ability ~ Energy Resistance / Fire ~ Armor", {
+  Name="RST_FIR",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Energy Resistance / Fire / Improved ~ Armor.COPY=RST_FIR_IMP",
+CopyEquipmentModifier("Special Ability ~ Energy Resistance / Fire / Improved ~ Armor", {
+  Name="RST_FIR_IMP",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Energy Resistance / Fire / Greater ~ Armor.COPY=RES_FIR_GRT",
+CopyEquipmentModifier("Special Ability ~ Energy Resistance / Fire / Greater ~ Armor", {
+  Name="RES_FIR_GRT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Energy Resistance / Sonic ~ Armor.COPY=RST_SNC",
+CopyEquipmentModifier("Special Ability ~ Energy Resistance / Sonic ~ Armor", {
+  Name="RST_SNC",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Energy Resistance / Sonic / Improved ~ Armor.COPY=RST_SNC_IMP",
+CopyEquipmentModifier("Special Ability ~ Energy Resistance / Sonic / Improved ~ Armor", {
+  Name="RST_SNC_IMP",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Energy Resistance / Sonic / Greater ~ Armor.COPY=RES_SNC_GRT",
+CopyEquipmentModifier("Special Ability ~ Energy Resistance / Sonic / Greater ~ Armor", {
+  Name="RES_SNC_GRT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Etherealness ~ Armor.COPY=ETHERE",
+CopyEquipmentModifier("Special Ability ~ Etherealness ~ Armor", {
+  Name="ETHERE",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Fortification / Light ~ Armor.COPY=FRT_LGHT",
+CopyEquipmentModifier("Special Ability ~ Fortification / Light ~ Armor", {
+  Name="FRT_LGHT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Fortification / Moderate ~ Armor.COPY=FRT_MOD",
+CopyEquipmentModifier("Special Ability ~ Fortification / Moderate ~ Armor", {
+  Name="FRT_MOD",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Fortification / Heavy ~ Armor.COPY=FRT_HVY",
+CopyEquipmentModifier("Special Ability ~ Fortification / Heavy ~ Armor", {
+  Name="FRT_HVY",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Ghost Touch ~ Armor.COPY=GHOST_A",
+CopyEquipmentModifier("Special Ability ~ Ghost Touch ~ Armor", {
+  Name="GHOST_A",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Glamered ~ Armor.COPY=GLAM",
+CopyEquipmentModifier("Special Ability ~ Glamered ~ Armor", {
+  Name="GLAM",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Invulnerability ~ Armor.COPY=INVULN",
+CopyEquipmentModifier("Special Ability ~ Invulnerability ~ Armor", {
+  Name="INVULN",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Reflecting ~ Shield.COPY=REFLC",
+CopyEquipmentModifier("Special Ability ~ Reflecting ~ Shield", {
+  Name="REFLC",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Shadow ~ Armor.COPY=SHDW",
+CopyEquipmentModifier("Special Ability ~ Shadow ~ Armor", {
+  Name="SHDW",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Shadow / Improved ~ Armor.COPY=SHDW_IMP",
+CopyEquipmentModifier("Special Ability ~ Shadow / Improved ~ Armor", {
+  Name="SHDW_IMP",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Shadow / Greater ~ Armor.COPY=SHDW_GRT",
+CopyEquipmentModifier("Special Ability ~ Shadow / Greater ~ Armor", {
+  Name="SHDW_GRT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Slick ~ Armor.COPY=SLK",
+CopyEquipmentModifier("Special Ability ~ Slick ~ Armor", {
+  Name="SLK",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Slick / Improved ~ Armor.COPY=SLK_IMP",
+CopyEquipmentModifier("Special Ability ~ Slick / Improved ~ Armor", {
+  Name="SLK_IMP",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Slick / Greater ~ Armor.COPY=SLK_GRT",
+CopyEquipmentModifier("Special Ability ~ Slick / Greater ~ Armor", {
+  Name="SLK_GRT",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Resistance / 13 ~ Armor.COPY=SPELL_RES_13",
+CopyEquipmentModifier("Special Ability ~ Spell Resistance / 13 ~ Armor", {
+  Name="SPELL_RES_13",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Resistance / 15 ~ Armor.COPY=SPELL_RES_15",
+CopyEquipmentModifier("Special Ability ~ Spell Resistance / 15 ~ Armor", {
+  Name="SPELL_RES_15",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Resistance / 17 ~ Armor.COPY=SPELL_RES_17",
+CopyEquipmentModifier("Special Ability ~ Spell Resistance / 17 ~ Armor", {
+  Name="SPELL_RES_17",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Spell Resistance / 19 ~ Armor.COPY=SPELL_RES_19",
+CopyEquipmentModifier("Special Ability ~ Spell Resistance / 19 ~ Armor", {
+  Name="SPELL_RES_19",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Undead Controlling ~ Armor.COPY=UNDEAD",
+CopyEquipmentModifier("Special Ability ~ Undead Controlling ~ Armor", {
+  Name="UNDEAD",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Wild ~ Armor.COPY=WILD_A",
+CopyEquipmentModifier("Special Ability ~ Wild ~ Armor", {
+  Name="WILD_A",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Special Ability ~ Wild ~ Shield.COPY=WILD_S",
+CopyEquipmentModifier("Special Ability ~ Wild ~ Shield", {
+  Name="WILD_S",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Base.COPY=IntItemBase",
+CopyEquipmentModifier("Intelligent Item ~ Base", {
+  Name="IntItemBase",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose.COPY=IntItemPurpose",
+CopyEquipmentModifier("Intelligent Item ~ Purpose", {
+  Name="IntItemPurpose",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Intelligence 11.COPY=IntItemStatINT11",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 11", {
+  Name="IntItemStatINT11",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Intelligence 12.COPY=IntItemStatINT12",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 12", {
+  Name="IntItemStatINT12",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Intelligence 13.COPY=IntItemStatINT13",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 13", {
+  Name="IntItemStatINT13",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Intelligence 14.COPY=IntItemStatINT14",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 14", {
+  Name="IntItemStatINT14",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Intelligence 15.COPY=IntItemStatINT15",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 15", {
+  Name="IntItemStatINT15",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Intelligence 16.COPY=IntItemStatINT16",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 16", {
+  Name="IntItemStatINT16",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Intelligence 17.COPY=IntItemStatINT17",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 17", {
+  Name="IntItemStatINT17",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Intelligence 18.COPY=IntItemStatINT18",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 18", {
+  Name="IntItemStatINT18",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Intelligence 19.COPY=IntItemStatINT19",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 19", {
+  Name="IntItemStatINT19",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Intelligence 20.COPY=IntItemStatINT20",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 20", {
+  Name="IntItemStatINT20",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Wisdom 11.COPY=IntItemStatWIS11",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 11", {
+  Name="IntItemStatWIS11",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Wisdom 12.COPY=IntItemStatWIS12",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 12", {
+  Name="IntItemStatWIS12",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Wisdom 13.COPY=IntItemStatWIS13",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 13", {
+  Name="IntItemStatWIS13",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Wisdom 14.COPY=IntItemStatWIS14",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 14", {
+  Name="IntItemStatWIS14",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Wisdom 15.COPY=IntItemStatWIS15",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 15", {
+  Name="IntItemStatWIS15",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Wisdom 16.COPY=IntItemStatWIS16",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 16", {
+  Name="IntItemStatWIS16",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Wisdom 17.COPY=IntItemStatWIS17",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 17", {
+  Name="IntItemStatWIS17",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Wisdom 18.COPY=IntItemStatWIS18",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 18", {
+  Name="IntItemStatWIS18",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Wisdom 19.COPY=IntItemStatWIS19",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 19", {
+  Name="IntItemStatWIS19",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Wisdom 20.COPY=IntItemStatWIS20",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 20", {
+  Name="IntItemStatWIS20",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Charisma 11.COPY=IntItemStatCHA11",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 11", {
+  Name="IntItemStatCHA11",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Charisma 12.COPY=IntItemStatCHA12",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 12", {
+  Name="IntItemStatCHA12",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Charisma 13.COPY=IntItemStatCHA13",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 13", {
+  Name="IntItemStatCHA13",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Charisma 14.COPY=IntItemStatCHA14",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 14", {
+  Name="IntItemStatCHA14",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Charisma 15.COPY=IntItemStatCHA15",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 15", {
+  Name="IntItemStatCHA15",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Charisma 16.COPY=IntItemStatCHA16",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 16", {
+  Name="IntItemStatCHA16",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Charisma 17.COPY=IntItemStatCHA17",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 17", {
+  Name="IntItemStatCHA17",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Charisma 18.COPY=IntItemStatCHA18",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 18", {
+  Name="IntItemStatCHA18",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Charisma 19.COPY=IntItemStatCHA19",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 19", {
+  Name="IntItemStatCHA19",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Ability Score / Charisma 20.COPY=IntItemStatCHA20",
+CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 20", {
+  Name="IntItemStatCHA20",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Communication / Speech.COPY=IntSpeech",
+CopyEquipmentModifier("Intelligent Item ~ Communication / Speech", {
+  Name="IntSpeech",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Communication / Telepathy.COPY=IntTelepathy",
+CopyEquipmentModifier("Intelligent Item ~ Communication / Telepathy", {
+  Name="IntTelepathy",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Sense / Range 60.COPY=IntSense60",
+CopyEquipmentModifier("Intelligent Item ~ Sense / Range 60", {
+  Name="IntSense60",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Sense / Range 120.COPY=IntSense120",
+CopyEquipmentModifier("Intelligent Item ~ Sense / Range 120", {
+  Name="IntSense120",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Sense / Darkvision.COPY=IntDarkvision",
+CopyEquipmentModifier("Intelligent Item ~ Sense / Darkvision", {
+  Name="IntDarkvision",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Sense / Blindsense.COPY=IntBlindsense",
+CopyEquipmentModifier("Intelligent Item ~ Sense / Blindsense", {
+  Name="IntBlindsense",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Communication / Read Language.COPY=IntReadLang",
+CopyEquipmentModifier("Intelligent Item ~ Communication / Read Language", {
+  Name="IntReadLang",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Communication / Read Magic.COPY=IntReadMagic",
+CopyEquipmentModifier("Intelligent Item ~ Communication / Read Magic", {
+  Name="IntReadMagic",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Alignment / Chaotic Good.COPY=Intelligent Item Alignment (CG)",
+CopyEquipmentModifier("Intelligent Item ~ Alignment / Chaotic Good", {
+  Name="Intelligent Item Alignment (CG)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Alignment / Chaotic Neutral.COPY=Intelligent Item Alignment (CN)",
+CopyEquipmentModifier("Intelligent Item ~ Alignment / Chaotic Neutral", {
+  Name="Intelligent Item Alignment (CN)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Alignment / Chaotic Evil.COPY=Intelligent Item Alignment (CE)",
+CopyEquipmentModifier("Intelligent Item ~ Alignment / Chaotic Evil", {
+  Name="Intelligent Item Alignment (CE)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Alignment / Neutral Evil.COPY=Intelligent Item Alignment (NE)",
+CopyEquipmentModifier("Intelligent Item ~ Alignment / Neutral Evil", {
+  Name="Intelligent Item Alignment (NE)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Alignment / Lawful Evil.COPY=Intelligent Item Alignment (LE)",
+CopyEquipmentModifier("Intelligent Item ~ Alignment / Lawful Evil", {
+  Name="Intelligent Item Alignment (LE)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Alignment / Lawful Good.COPY=Intelligent Item Alignment (LG)",
+CopyEquipmentModifier("Intelligent Item ~ Alignment / Lawful Good", {
+  Name="Intelligent Item Alignment (LG)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Alignment / Lawful Neutral.COPY=Intelligent Item Alignment (LN)",
+CopyEquipmentModifier("Intelligent Item ~ Alignment / Lawful Neutral", {
+  Name="Intelligent Item Alignment (LN)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Alignment / Neutral Good.COPY=Intelligent Item Alignment (NG)",
+CopyEquipmentModifier("Intelligent Item ~ Alignment / Neutral Good", {
+  Name="Intelligent Item Alignment (NG)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Alignment / True Neutral.COPY=Intelligent Item Alignment (TN)",
+CopyEquipmentModifier("Intelligent Item ~ Alignment / True Neutral", {
+  Name="Intelligent Item Alignment (TN)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Power / 0 Level Spell / At-Will.COPY=ItemPower_CastZeroAtWill",
+CopyEquipmentModifier("Intelligent Item ~ Power / 0 Level Spell / At-Will", {
+  Name="ItemPower_CastZeroAtWill",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Power / 1st Level Spell / 3 per Day.COPY=ItemPower_CastOneThree",
+CopyEquipmentModifier("Intelligent Item ~ Power / 1st Level Spell / 3 per Day", {
+  Name="ItemPower_CastOneThree",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Power / 2nd Level Spell / 1 per Day.COPY=ItemPower_CastTwoOne",
+CopyEquipmentModifier("Intelligent Item ~ Power / 2nd Level Spell / 1 per Day", {
+  Name="ItemPower_CastTwoOne",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Power / 3rd Level Spell / 1 per Day.COPY=ItemPower_CastThreeOne",
+CopyEquipmentModifier("Intelligent Item ~ Power / 3rd Level Spell / 1 per Day", {
+  Name="ItemPower_CastThreeOne",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Power / 3rd Level Spell / 3 per Day.COPY=ItemPower_CastThreeThree",
+CopyEquipmentModifier("Intelligent Item ~ Power / 3rd Level Spell / 3 per Day", {
+  Name="ItemPower_CastThreeThree",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Power / 4th Level Spell / 3 per Day.COPY=ItemPower_CastFourThree",
+CopyEquipmentModifier("Intelligent Item ~ Power / 4th Level Spell / 3 per Day", {
+  Name="ItemPower_CastFourThree",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Power / 2nd Level Spell / 3 per Day.COPY=ItemPower_CastTwoThree",
+CopyEquipmentModifier("Intelligent Item ~ Power / 2nd Level Spell / 3 per Day", {
+  Name="ItemPower_CastTwoThree",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Power / 4th Level Spell / 1 per Day.COPY=ItemPower_CastFourOne",
+CopyEquipmentModifier("Intelligent Item ~ Power / 4th Level Spell / 1 per Day", {
+  Name="ItemPower_CastFourOne",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Power / Magic Aura / At-Will.COPY=ItemPower_MagicAura",
+CopyEquipmentModifier("Intelligent Item ~ Power / Magic Aura / At-Will", {
+  Name="ItemPower_MagicAura",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Power / Skill Ranks / 5.COPY=ItemPower_FiveSkill",
+CopyEquipmentModifier("Intelligent Item ~ Power / Skill Ranks / 5", {
+  Name="ItemPower_FiveSkill",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Power / Movement / Walk 10 Feet.COPY=ItemPower_Move",
+CopyEquipmentModifier("Intelligent Item ~ Power / Movement / Walk 10 Feet", {
+  Name="ItemPower_Move",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Power / Skill Ranks / 10.COPY=ItemPower_TenSkill",
+CopyEquipmentModifier("Intelligent Item ~ Power / Skill Ranks / 10", {
+  Name="ItemPower_TenSkill",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Power / Change Shape.COPY=ItemPower_ChangeShape",
+CopyEquipmentModifier("Intelligent Item ~ Power / Change Shape", {
+  Name="ItemPower_ChangeShape",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Power / Movement / Fly 30 Feet.COPY=ItemPower_Fly",
+CopyEquipmentModifier("Intelligent Item ~ Power / Movement / Fly 30 Feet", {
+  Name="ItemPower_Fly",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Power / Movement / Teleport / 1 per Day.COPY=ItemPower_Teleport",
+CopyEquipmentModifier("Intelligent Item ~ Power / Movement / Teleport / 1 per Day", {
+  Name="ItemPower_Teleport",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose / Slay Alignment.COPY=Intelligent Item Purpose (Slay Align)",
+CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Alignment", {
+  Name="Intelligent Item Purpose (Slay Align)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose / Slay Arcane Spellcaster.COPY=Intelligent Item Purpose (Slay Arcane)",
+CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Arcane Spellcaster", {
+  Name="Intelligent Item Purpose (Slay Arcane)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose / Slay Divine Spellcaster.COPY=Intelligent Item Purpose (Slay Divine)",
+CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Divine Spellcaster", {
+  Name="Intelligent Item Purpose (Slay Divine)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose / Slay Non-spellcaster.COPY=Intelligent Item Purpose (Slay NonCasters)",
+CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Non-spellcaster", {
+  Name="Intelligent Item Purpose (Slay NonCasters)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose / Slay Creature Type.COPY=Intelligent Item Purpose (Slay Creature Type)",
+CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Creature Type", {
+  Name="Intelligent Item Purpose (Slay Creature Type)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose / Slay Creature Race.COPY=Intelligent Item Purpose (Slay Race or Kind)",
+CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Creature Race", {
+  Name="Intelligent Item Purpose (Slay Race or Kind)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose / Defend Creature Race.COPY=Intelligent Item Purpose (Defend Race or Kind)",
+CopyEquipmentModifier("Intelligent Item ~ Purpose / Defend Creature Race", {
+  Name="Intelligent Item Purpose (Defend Race or Kind)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose / Slay Servants of Deity.COPY=Intelligent Item Purpose (Slay Deity Servant)",
+CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Servants of Deity", {
+  Name="Intelligent Item Purpose (Slay Deity Servant)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose / Defend Servants of Deity.COPY=Intelligent Item Purpose (Defend Deity Servant)",
+CopyEquipmentModifier("Intelligent Item ~ Purpose / Defend Servants of Deity", {
+  Name="Intelligent Item Purpose (Defend Deity Servant)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose / Slay All.COPY=Intelligent Item Purpose (Slay All)",
+CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay All", {
+  Name="Intelligent Item Purpose (Slay All)",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose Power / Detect Foe.COPY=PurposePower_DetectFoe",
+CopyEquipmentModifier("Intelligent Item ~ Purpose Power / Detect Foe", {
+  Name="PurposePower_DetectFoe",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose Power / 4th Level Spell / At-Will.COPY=PurposePower_CastFourAtWill",
+CopyEquipmentModifier("Intelligent Item ~ Purpose Power / 4th Level Spell / At-Will", {
+  Name="PurposePower_CastFourAtWill",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose Power / Luck Bonus.COPY=PurposePower_LuckBonus",
+CopyEquipmentModifier("Intelligent Item ~ Purpose Power / Luck Bonus", {
+  Name="PurposePower_LuckBonus",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose Power / 5th Level Spell / At-Will.COPY=PurposePower_CastFiveAtWill",
+CopyEquipmentModifier("Intelligent Item ~ Purpose Power / 5th Level Spell / At-Will", {
+  Name="PurposePower_CastFiveAtWill",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose Power / 6th Level Spell / At-Will.COPY=PurposePower_CastSixAtWill",
+CopyEquipmentModifier("Intelligent Item ~ Purpose Power / 6th Level Spell / At-Will", {
+  Name="PurposePower_CastSixAtWill",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose Power / 7th Level Spell / At-Will.COPY=PurposePower_CastSevenAtWill",
+CopyEquipmentModifier("Intelligent Item ~ Purpose Power / 7th Level Spell / At-Will", {
+  Name="PurposePower_CastSevenAtWill",
   Visible=false,
   AffectsBothHeads=false,
 })
-DefineEquipmentModifier({
-  Name="Intelligent Item ~ Purpose Power / True Resurrection.COPY=PurposePower_TrueRes",
+CopyEquipmentModifier("Intelligent Item ~ Purpose Power / True Resurrection", {
+  Name="PurposePower_TrueRes",
   Visible=false,
   AffectsBothHeads=false,
 })

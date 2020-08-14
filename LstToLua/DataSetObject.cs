@@ -23,6 +23,8 @@ namespace Primordially.LstToLua
         public List<(string vision, List<Condition> conditions)> Vision { get; } = new List<(string vision, List<Condition> conditions)>();
         public DamageReduction? DamageReduction { get; private set; }
         public string? SpellResistance { get; private set; }
+        public List<ServesAs> ServesAs { get; } = new List<ServesAs>();
+        public List<NaturalAttack> NaturalAttacks { get; } = new List<NaturalAttack>();
 
         public override void AddField(TextSpan field)
         {
@@ -56,6 +58,12 @@ namespace Primordially.LstToLua
             if (field.TryRemovePrefix("SORTKEY:", out var sortKey))
             {
                 SortKey = sortKey.Value;
+                return;
+            }
+
+            if (field.TryRemovePrefix("SERVESAS:", out var servesAs))
+            {
+                ServesAs.Add(LstToLua.ServesAs.Parse(servesAs));
                 return;
             }
 
@@ -164,6 +172,12 @@ namespace Primordially.LstToLua
                 return;
             }
 
+            if (field.TryRemovePrefix("NATURALATTACKS:", out var natAttack))
+            {
+                NaturalAttacks.AddRange(NaturalAttack.ParseAll(natAttack));
+                return;
+            }
+
             if (Condition.TryParse(field, IsEquipment, out var condition))
             {
                 Conditions.Add(condition);
@@ -184,6 +198,8 @@ namespace Primordially.LstToLua
                 output.WriteKeyValue("SortKey", SortKey);
             }
             output.WriteListValue("Abilities", Abilities);
+            output.WriteListValue("ServesAs", ServesAs);
+            output.WriteListValue("NaturalAttacks", NaturalAttacks);
 
             if (Facts.Any())
             {
