@@ -1,5 +1,4 @@
-﻿using System;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 
 namespace Primordially.LstToLua.Conditions
 {
@@ -40,7 +39,6 @@ namespace Primordially.LstToLua.Conditions
                     result = AbilityCondition.Parse(v, invert);
                     return true;
 
-                // EQ , LT , LTEQ , GT , GTEQ , or NEQ
                 case "PREVAREQ":
                 case "PREVARLT":
                 case "PREVARLTEQ":
@@ -77,7 +75,7 @@ namespace Primordially.LstToLua.Conditions
                     return true;
 
                 case "PREDEITYALIGN":
-                    result = DietyAlignmentCondition.Parse(v, invert);
+                    result = DeityAlignmentCondition.Parse(v, invert);
                     return true;
 
                 case "PRECLASS":

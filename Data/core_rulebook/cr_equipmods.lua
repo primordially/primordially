@@ -8,26 +8,10 @@ SetSource({
 })
 DefineEquipmentModifier({
   Name="Cloth",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "Cloth",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Key="Material ~ Cloth",
-  Types={
-    "BaseMaterial",
-    "Mundane",
-    "Ammunition",
-    "Armor",
-    "Shield",
-    "Weapon",
-    "Instruments",
-    "Tools",
-    "Goods",
-  },
+  Cost="0",
+  NameModifier="NOTHING",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -53,15 +37,9 @@ DefineEquipmentModifier({
       return not (((item.IsType("Artisan")) + (item.IsType("Spell Component"))) >= 1)
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Leather",
-  Cost=Formula("0"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Material ~ Leather",
+  GrantedItemTypes={
+    "Cloth",
+  },
   Types={
     "BaseMaterial",
     "Mundane",
@@ -73,6 +51,13 @@ DefineEquipmentModifier({
     "Tools",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Leather",
+  Key="Material ~ Leather",
+  Cost="0",
+  NameModifier="NOTHING",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -98,15 +83,6 @@ DefineEquipmentModifier({
       return not (((item.IsType("Artisan")) + (item.IsType("Spell Component"))) >= 1)
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Rope",
-  Cost=Formula("0"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Material ~ Rope",
   Types={
     "BaseMaterial",
     "Mundane",
@@ -118,6 +94,13 @@ DefineEquipmentModifier({
     "Tools",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Rope",
+  Key="Material ~ Rope",
+  Cost="0",
+  NameModifier="NOTHING",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -143,18 +126,6 @@ DefineEquipmentModifier({
       return not (((item.IsType("Artisan")) + (item.IsType("Spell Component"))) >= 1)
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Steel",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "Metal",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Material ~ Steel",
   Types={
     "BaseMaterial",
     "Mundane",
@@ -166,6 +137,13 @@ DefineEquipmentModifier({
     "Tools",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Steel",
+  Key="Material ~ Steel",
+  Cost="0",
+  NameModifier="NOTHING",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -191,18 +169,9 @@ DefineEquipmentModifier({
       return not (((item.IsType("Artisan")) + (item.IsType("Spell Component"))) >= 1)
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Wood",
-  Cost=Formula("0"),
   GrantedItemTypes={
-    "Wooden",
+    "Metal",
   },
-  Visible=true,
-  AffectsBothHeads=true,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Material ~ Wood",
   Types={
     "BaseMaterial",
     "Mundane",
@@ -214,6 +183,14 @@ DefineEquipmentModifier({
     "Tools",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Wood",
+  Key="Material ~ Wood",
+  AffectsBothHeads=true,
+  Cost="0",
+  NameModifier="NOTHING",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -239,49 +216,56 @@ DefineEquipmentModifier({
       return not (((item.IsType("Artisan")) + (item.IsType("Spell Component"))) >= 1)
     end,
   },
+  GrantedItemTypes={
+    "Wooden",
+  },
+  Types={
+    "BaseMaterial",
+    "Mundane",
+    "Ammunition",
+    "Armor",
+    "Shield",
+    "Weapon",
+    "Instruments",
+    "Tools",
+    "Goods",
+  },
 })
 DefineEquipmentModifier({
   Name="Masterwork (Weapon)",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "Masterwork",
-  },
-  Visible=true,
+  Key="Special Quality ~ Masterwork ~ Weapon",
   AffectsBothHeads=true,
+  Cost="0",
   NameModifier="TEXT=Masterwork",
   NameModifierLocation="Prefix",
-  Key="Special Quality ~ Masterwork ~ Weapon",
-  Types={
-    "MasterworkQuality",
-    "Weapon",
-  },
+  SourcePage="p.149",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("300"),
       Conditions={
         function (item)
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
     {
       Category="WEAPON",
-      Variables={
-        "TOHIT",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "TOHIT",
+      },
     },
   },
-  SourcePage="p.149",
   Conditions={
     function (item)
       return ((item.IsType("Weapon"))) >= 1
@@ -293,49 +277,48 @@ DefineEquipmentModifier({
       return not (((item.IsType("Masterwork")) + (item.IsType("Mithral")) + (item.IsType("Adamantine")) + (item.IsType("Darkwood"))) >= 1)
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Masterwork",
-  Cost=Formula("0"),
   GrantedItemTypes={
     "Masterwork",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Quality ~ Masterwork ~ Ammunition",
   Types={
     "MasterworkQuality",
-    "Ammunition",
+    "Weapon",
   },
+})
+DefineEquipmentModifier({
+  Name="Masterwork",
+  Key="Special Quality ~ Masterwork ~ Ammunition",
+  Cost="0",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.149",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("6"),
       Conditions={
         function (item)
           return ((item.IsType("AMMUNITION"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
     {
       Category="WEAPON",
-      Variables={
-        "TOHIT",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "TOHIT",
+      },
     },
   },
-  SourcePage="p.149",
   Conditions={
     function (item)
       return ((item.IsType("Ammunition"))) >= 1
@@ -344,62 +327,60 @@ DefineEquipmentModifier({
       return not (((item.IsType("Masterwork")) + (item.IsType("Mithral")) + (item.IsType("Adamantine")) + (item.IsType("Darkwood"))) >= 1)
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Masterwork (Armor or Shield)",
-  Cost=Formula("0"),
   GrantedItemTypes={
     "Masterwork",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=Masterwork",
-  NameModifierLocation="Prefix",
-  Key="Special Quality ~ Masterwork ~ Armor",
   Types={
     "MasterworkQuality",
-    "Armor",
-    "Shield",
+    "Ammunition",
   },
+})
+DefineEquipmentModifier({
+  Name="Masterwork (Armor or Shield)",
+  Key="Special Quality ~ Masterwork ~ Armor",
+  Cost="0",
+  NameModifier="TEXT=Masterwork",
+  NameModifierLocation="Prefix",
+  SourcePage="p.153",
+  Visible=true,
   Bonuses={
     {
       Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "ACCHECK",
+      },
     },
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("150"),
       Conditions={
         function (item)
           return ((item.IsType("ARMOR"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
         function (item)
           return ((item.IsType("SHIELD"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
   },
-  SourcePage="p.153",
   Conditions={
     function (item)
       return ((item.IsType("Armor")) + (item.IsType("Shield"))) >= 1
@@ -408,49 +389,49 @@ DefineEquipmentModifier({
       return not (((item.IsType("Masterwork")) + (item.IsType("Mithral")) + (item.IsType("Adamantine")) + (item.IsType("Darkwood"))) >= 1)
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Masterwork",
-  Cost=Formula("50"),
   GrantedItemTypes={
     "Masterwork",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Quality ~ Masterwork ~ Item",
   Types={
     "MasterworkQuality",
-    "Tools",
+    "Armor",
+    "Shield",
   },
+})
+DefineEquipmentModifier({
+  Name="Masterwork",
+  Key="Special Quality ~ Masterwork ~ Item",
+  Cost="50",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.160",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("20"),
       Conditions={
         function (item)
           return ((item.IsType("THIEF"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("45"),
       Conditions={
         function (item)
           return ((item.IsType("INSTRUMENT"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
   },
-  SourcePage="p.160",
   Conditions={
     function (item)
       return ((item.IsType("Tools"))) >= 1
@@ -459,26 +440,22 @@ DefineEquipmentModifier({
       return not (((item.IsType("Masterwork")) + (item.IsType("Mithral")) + (item.IsType("Adamantine")) + (item.IsType("Darkwood"))) >= 1)
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Masterwork",
-  Cost=Formula("50"),
   GrantedItemTypes={
     "Masterwork",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Quality ~ Masterwork ~ Bonded Object",
   Types={
     "MasterworkQuality",
-    "Amulet",
-    "Ring",
-    "Staff",
-    "Wand",
+    "Tools",
   },
+})
+DefineEquipmentModifier({
+  Name="Masterwork",
+  Key="Special Quality ~ Masterwork ~ Bonded Object",
+  Cost="50",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.160",
+  Visible=true,
   Conditions={
     function (item)
       return ((item.IsType("Amulet")) + (item.IsType("Ring")) + (item.IsType("Staff")) + (item.IsType("Wand"))) >= 1
@@ -487,30 +464,24 @@ DefineEquipmentModifier({
       return not (((item.IsType("Masterwork")) + (item.IsType("Mithral")) + (item.IsType("Adamantine")) + (item.IsType("Darkwood"))) >= 1)
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Bonded Object",
   GrantedItemTypes={
-    "Bonded",
+    "Masterwork",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Special Quality ~ Bonded Object",
   Types={
+    "MasterworkQuality",
     "Amulet",
     "Ring",
     "Staff",
     "Wand",
-    "Weapon",
   },
-  SpecialProperties={
-    {
-      Format="Can be used once per day to cast any one spell that the wizard has in his spellbook and is capable of casting, even if the spell is not prepared.",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Bonded Object",
+  Key="Special Quality ~ Bonded Object",
+  NameModifier="NOTHING",
+  NameModifierLocation="Parentheses",
   SourcePage="p.78",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -544,67 +515,78 @@ DefineEquipmentModifier({
       return count >= 1
     end,
   },
+  GrantedItemTypes={
+    "Bonded",
+  },
+  SpecialProperties={
+    {
+      Format="Can be used once per day to cast any one spell that the wizard has in his spellbook and is capable of casting, even if the spell is not prepared.",
+    },
+  },
+  Types={
+    "Amulet",
+    "Ring",
+    "Staff",
+    "Wand",
+    "Weapon",
+  },
 })
 DefineEquipmentModifier({
   Name="Thrown Ammunition",
-  Cost=Formula("0"),
-  Visible=false,
-  AffectsBothHeads=false,
   Key="Special Quality ~ Thrown Ammunition",
+  Cost="0",
+  Visible=false,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("-294"),
       Conditions={
         function (item)
           return ((item.IsType("MASTERWORK"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("-2646"),
       Conditions={
         function (item)
           return ((item.IsType("ADAMANTINE"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("-18"),
       Conditions={
         function (item)
           return ((item.IsType("SILVER"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("319"),
       Conditions={
         function (item)
           return ((item.IsType("MITHRAL"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("-1960"),
       Conditions={
         function (item)
@@ -614,93 +596,86 @@ DefineEquipmentModifier({
           return ((item.IsType("COLDIRON"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("-1960"),
       Conditions={
         function (item)
           return ((item.IsType("PLUS1"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("-7840"),
       Conditions={
         function (item)
           return ((item.IsType("PLUS2"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("-17640"),
       Conditions={
         function (item)
           return ((item.IsType("PLUS3"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("-31360"),
       Conditions={
         function (item)
           return ((item.IsType("PLUS4"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("-49000"),
       Conditions={
         function (item)
           return ((item.IsType("PLUS5"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
   },
 })
 DefineEquipmentModifier({
   Name="Composite Bow Strength Rating",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "StrengthRating",
-  },
-  Visible=true,
+  Key="Special Quality ~ Composite Bow Strength Rating",
   AffectsBothHeads=true,
-  NameModifier="NONAME",
-  NameModifierLocation="Parentheses",
   Choice={
     Choose=ChooseNumber(1, 100, nil, "Strength rating"),
   },
-  Key="Special Quality ~ Composite Bow Strength Rating",
-  Types={
-    "Bow",
-    "Composite",
-  },
+  Cost="0",
+  NameModifier="NONAME",
+  SourcePage="p.147",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("75*%CHOICE"),
       Conditions={
         function (character)
@@ -710,12 +685,12 @@ DefineEquipmentModifier({
           return ((item.IsType("SHORTBOW"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("100*%CHOICE"),
       Conditions={
         function (character)
@@ -725,660 +700,634 @@ DefineEquipmentModifier({
           return ((item.IsType("LONGBOW"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
     {
       Category="WEAPON",
-      Variables={
-        "TOHIT",
-      },
       Formula=Formula("-2"),
       Conditions={
         function (character)
           return (character.Variables["%CHOICE"] > "STR")
         end,
       },
+      Variables={
+        "TOHIT",
+      },
     },
     {
       Category="WEAPON",
-      Variables={
-        "DAMAGE",
-      },
       Formula=Formula("MIN(%CHOICE,STR)"),
       Type={
         Name="Strength",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "DAMAGE",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("Composite")) + (item.IsType("Bow"))) >= 2
+    end,
+  },
+  GrantedItemTypes={
+    "StrengthRating",
   },
   SpecialProperties={
     {
       Format="Strength bonus to damage",
     },
   },
-  SourcePage="p.147",
-  Conditions={
-    function (item)
-      return ((item.IsType("Composite")) + (item.IsType("Bow"))) >= 2
-    end,
+  Types={
+    "Bow",
+    "Composite",
   },
 })
 DefineEquipmentModifier({
   Name="Brace",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "Brace",
-  },
-  Visible=false,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Key="Special Quality ~ Brace",
+  Cost="0",
   Description={
     Format="Extra damage when set against a charging character (pg. 144)",
   },
-  Types={
-    "SpecialWeaponQualities",
+  NameModifier="NOTHING",
+  SourcePage="p.144",
+  Visible=false,
+  GrantedItemTypes={
+    "Brace",
   },
   SpecialProperties={
     {
       Format="brace",
     },
   },
-  SourcePage="p.144",
+  Types={
+    "SpecialWeaponQualities",
+  },
 })
 DefineEquipmentModifier({
   Name="Disarm",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "Disarm",
-  },
-  Visible=false,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Key="Special Quality ~ Disarm",
+  Cost="0",
   Description={
     Format="Bonus to disarm an enemy (pg. 144)",
   },
-  Types={
-    "SpecialWeaponQualities",
+  NameModifier="NOTHING",
+  SourcePage="p.144",
+  Visible=false,
+  GrantedItemTypes={
+    "Disarm",
   },
   SpecialProperties={
     {
       Format="disarm",
     },
   },
-  SourcePage="p.144",
+  Types={
+    "SpecialWeaponQualities",
+  },
 })
 DefineEquipmentModifier({
   Name="Double",
-  Cost=Formula("0"),
-  Visible=false,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Key="Special Quality ~ Double",
+  Cost="0",
   Description={
     Format="May use the weapon as if fighting with teo weapons (pg. 144)",
   },
-  Types={
-    "SpecailWeaponQualities",
-  },
+  NameModifier="NOTHING",
+  SourcePage="p.144",
+  Visible=false,
   SpecialProperties={
     {
       Format="double",
     },
   },
-  SourcePage="p.144",
+  Types={
+    "SpecailWeaponQualities",
+  },
 })
 DefineEquipmentModifier({
   Name="Monk",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "Monk",
-  },
-  Visible=false,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Key="Special Quality ~ Monk",
+  Cost="0",
   Description={
     Format="May be used to perform a flurry of blows (pg. 145)",
   },
-  Types={
-    "SpecialWeaponQualities",
+  NameModifier="NOTHING",
+  SourcePage="p.145",
+  Visible=false,
+  GrantedItemTypes={
+    "Monk",
   },
   SpecialProperties={
     {
       Format="monk",
     },
   },
-  SourcePage="p.145",
+  Types={
+    "SpecialWeaponQualities",
+  },
 })
 DefineEquipmentModifier({
   Name="Nonlethal",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "Nonlethal",
-  },
-  Visible=false,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Key="Special Quality ~ Nonlethal",
+  Cost="0",
   Description={
     Format="Deals nonlethal damage (pg. 145)",
   },
-  Types={
-    "SpecialWeaponQualities",
+  NameModifier="NOTHING",
+  SourcePage="p.145",
+  Visible=false,
+  GrantedItemTypes={
+    "Nonlethal",
   },
   SpecialProperties={
     {
       Format="nonlethal",
     },
   },
-  SourcePage="p.145",
+  Types={
+    "SpecialWeaponQualities",
+  },
 })
 DefineEquipmentModifier({
   Name="Reach",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "Reach",
-  },
-  Visible=false,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Key="Special Quality ~ Reach",
+  Cost="0",
   Description={
     Format="Strike opponents 10 feet away, but can't use it against adjacent foes (pg. 145)",
   },
-  Types={
-    "SpecialWeaponQualities",
+  NameModifier="NOTHING",
+  SourcePage="p.145",
+  Visible=false,
+  GrantedItemTypes={
+    "Reach",
   },
   SpecialProperties={
     {
       Format="reach",
     },
   },
-  SourcePage="p.145",
+  Types={
+    "SpecialWeaponQualities",
+  },
 })
 DefineEquipmentModifier({
   Name="Trip",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "Trip",
-  },
-  Visible=false,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Key="Special Quality ~ Trip",
+  Cost="0",
   Description={
     Format="May be used to make trip attacks (pg.145)",
   },
-  Types={
-    "SpecialWeaponQualities",
+  NameModifier="NOTHING",
+  SourcePage="p.145",
+  Visible=false,
+  GrantedItemTypes={
+    "Trip",
   },
   SpecialProperties={
     {
       Format="trip",
     },
   },
-  SourcePage="p.145",
+  Types={
+    "SpecialWeaponQualities",
+  },
 })
 DefineEquipmentModifier({
   Name="Armor Spikes",
-  Cost=Formula("50"),
+  Key="Special Quality ~ Spikes ~ Armor",
+  Cost="50",
+  SourcePage="p.150",
+  Visible=true,
+  AutomaticEquipment={
+    {
+      Names={
+        "Armor Spikes",
+      },
+    },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("Shield")) + (item.IsType("Armor"))) >= 1
+    end,
+  },
   GrantedItemTypes={
     "Spiked",
     "Piercing",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  AutomaticEquipment={
-    Names={
-      "Armor Spikes",
+  SpecialProperties={
+    {
+      Format="Spiked",
     },
   },
-  Key="Special Quality ~ Spikes ~ Armor",
   Types={
     "Armor",
   },
-  SpecialProperties={
-    {
-      Format="Spiked",
-    },
-  },
-  SourcePage="p.150",
-  Conditions={
-    function (item)
-      return ((item.IsType("Shield")) + (item.IsType("Armor"))) >= 1
-    end,
-  },
 })
 DefineEquipmentModifier({
   Name="Shield Spikes",
-  Cost=Formula("10"),
-  GrantedItemTypes={
-    "Spiked",
-    "Piercing",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
   Key="Special Quality ~ Spikes ~ Shield",
-  Types={
-    "Shield",
-  },
+  Cost="10",
+  SourcePage="p.153",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "SHIELDBASHINGDIESIZESTEP",
       },
-      Formula=Formula("1"),
     },
     {
       Category="EQM",
+      Formula=Formula("5*(((SIZE<=3)*.5)+(SIZE==4)+(SIZE==5)+((SIZE>=6)*(2^(SIZE-5))))"),
       Variables={
         "WEIGHTADD",
       },
-      Formula=Formula("5*(((SIZE<=3)*.5)+(SIZE==4)+(SIZE==5)+((SIZE>=6)*(2^(SIZE-5))))"),
     },
     {
       Category="EQMWEAPON",
+      Formula=Formula("1"),
       Variables={
         "DAMAGESIZE",
       },
-      Formula=Formula("1"),
     },
   },
-  SpecialProperties={
-    {
-      Format="Spiked",
-    },
-  },
-  SourcePage="p.153",
   Conditions={
     function (item)
       return ((item.IsType("Shield")) + (item.IsType("Armor"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Shield Spikes",
-  Cost=Formula("0"),
   GrantedItemTypes={
     "Spiked",
     "Piercing",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Key="Special Quality ~ Spikes ~ Shieldbash",
-  Types={
-    "Shieldbash",
-  },
-  Bonuses={
-    {
-      Category="EQMWEAPON",
-      Variables={
-        "DAMAGESIZE",
-      },
-      Formula=Formula("1"),
-    },
   },
   SpecialProperties={
     {
       Format="Spiked",
     },
   },
+  Types={
+    "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Shield Spikes",
+  Key="Special Quality ~ Spikes ~ Shieldbash",
+  Cost="0",
   SourcePage="p.153",
+  Visible=true,
+  Bonuses={
+    {
+      Category="EQMWEAPON",
+      Formula=Formula("1"),
+      Variables={
+        "DAMAGESIZE",
+      },
+    },
+  },
+  GrantedItemTypes={
+    "Spiked",
+    "Piercing",
+  },
+  SpecialProperties={
+    {
+      Format="Spiked",
+    },
+  },
+  Types={
+    "Shieldbash",
+  },
 })
 DefineEquipmentModifier({
   Name="Locked Gauntlets",
-  Cost=Formula("8"),
-  GrantedItemTypes={
-    "GauntletLock",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
   Key="Special Quality ~ Locked Gauntlet",
-  Types={
-    "Gauntlet",
-  },
+  Cost="8",
+  SourcePage="p.150",
+  Visible=true,
   Bonuses={
     {
       Category="EQM",
+      Formula=Formula("5*(((SIZE<=3)*.5)+(SIZE==4)+(SIZE==5)+((SIZE>=6)*(2^(SIZE-5))))"),
       Variables={
         "WEIGHTADD",
       },
-      Formula=Formula("5*(((SIZE<=3)*.5)+(SIZE==4)+(SIZE==5)+((SIZE>=6)*(2^(SIZE-5))))"),
     },
+  },
+  GrantedItemTypes={
+    "GauntletLock",
   },
   SpecialProperties={
     {
       Format="Locked",
     },
   },
-  SourcePage="p.150",
+  Types={
+    "Gauntlet",
+  },
 })
 DefineEquipmentModifier({
   Name="Nonhumanoid",
-  Cost=Formula("BASECOST*(((SIZE<=2)*.5)+(SIZE==3)+(SIZE==4)+((SIZE>=5)*(2^(SIZE-4))))"),
-  Visible=true,
-  AffectsBothHeads=false,
   Key="Special Quality ~ Nonhumanoid ~ Armor",
+  Cost="BASECOST*(((SIZE<=2)*.5)+(SIZE==3)+(SIZE==4)+((SIZE>=5)*(2^(SIZE-4))))",
+  SourcePage="p.153",
+  Visible=true,
   Types={
     "Armor",
   },
-  SourcePage="p.153",
 })
 DefineEquipmentModifier({
   Name="Broken",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "Broken",
-  },
-  Visible=true,
+  Key="Special Quality ~ Broken ~ Weapon",
   AffectsBothHeads=true,
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Special Quality ~ Broken ~ Weapon",
-  Types={
-    "BrokenCondition",
-    "Weapon",
-  },
+  SourcePage="p.565",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("-BASECOST*.25"),
       Conditions={
         function (item)
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
     {
       Category="WEAPON",
-      Variables={
-        "TOHIT",
-        "DAMAGE",
-      },
       Formula=Formula("-2"),
       Type={
         Name="CONDITION",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "TOHIT",
+        "DAMAGE",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("Weapon"))) >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Broken",
   },
   SpecialProperties={
     {
       Format="-2 penalty on attack and damage rolls with critical of 20/x2.",
     },
   },
-  SourcePage="p.565",
-  Conditions={
-    function (item)
-      return ((item.IsType("Weapon"))) >= 1
-    end,
+  Types={
+    "BrokenCondition",
+    "Weapon",
   },
 })
 DefineEquipmentModifier({
   Name="Broken",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "Broken",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Quality ~ Broken ~ Armor",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Special Quality ~ Broken ~ Armor",
-  Types={
-    "BrokenCondition",
-    "Armor",
-  },
+  SourcePage="p.566",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("-BASECOST*.25"),
       Conditions={
         function (item)
           return ((item.IsType("ARMOR"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("Armor"))) >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Broken",
   },
   SpecialProperties={
     {
       Format="AC bonus is halved and AC Check is doubled.",
     },
   },
-  SourcePage="p.566",
-  Conditions={
-    function (item)
-      return ((item.IsType("Armor"))) >= 1
-    end,
+  Types={
+    "BrokenCondition",
+    "Armor",
   },
 })
 DefineEquipmentModifier({
   Name="Broken",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "Broken",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Quality ~ Broken ~ Shield",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Special Quality ~ Broken ~ Shield",
-  Types={
-    "BrokenCondition",
-    "Shield",
-  },
+  SourcePage="p.566",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("-BASECOST*.25"),
       Conditions={
         function (item)
           return ((item.IsType("SHIELD"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("Shield"))) >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Broken",
   },
   SpecialProperties={
     {
       Format="AC bonus is halved and AC Check is doubled.",
     },
   },
-  SourcePage="p.566",
-  Conditions={
-    function (item)
-      return ((item.IsType("Shield"))) >= 1
-    end,
+  Types={
+    "BrokenCondition",
+    "Shield",
   },
 })
 DefineEquipmentModifier({
   Name="Broken",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "Broken",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Quality ~ Broken ~ Item",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Special Quality ~ Broken ~ Item",
-  Types={
-    "BrokenCondition",
-    "Tools",
-  },
+  SourcePage="p.566",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("-BASECOST*.25"),
       Conditions={
         function (item)
           return ((item.IsType("TOOLS"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("Tools"))) >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Broken",
   },
   SpecialProperties={
     {
       Format="-2 penalty on all skill checks.",
     },
   },
-  SourcePage="p.566",
-  Conditions={
-    function (item)
-      return ((item.IsType("Tools"))) >= 1
-    end,
+  Types={
+    "BrokenCondition",
+    "Tools",
   },
 })
 DefineEquipmentModifier({
   Name="Broken",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "Broken",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Quality ~ Broken ~ Magic Item",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Special Quality ~ Broken ~ Magic Item",
-  Types={
-    "BrokenCondition",
-    "Wand",
-    "Staff",
-  },
+  SourcePage="p.566",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("-BASECOST*.25"),
       Conditions={
         function (item)
           return ((item.IsType("WAND"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("-BASECOST*.25"),
       Conditions={
         function (item)
           return ((item.IsType("STAFF"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("Wand")) + (item.IsType("Staff"))) >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Broken",
   },
   SpecialProperties={
     {
       Format="Uses twice the charges as normal.",
     },
   },
-  SourcePage="p.566",
-  Conditions={
-    function (item)
-      return ((item.IsType("Wand")) + (item.IsType("Staff"))) >= 1
-    end,
+  Types={
+    "BrokenCondition",
+    "Wand",
+    "Staff",
   },
 })
 DefineEquipmentModifier({
   Name="Wooden",
-  Cost=Formula("1"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Holy Symbol (Wooden)",
+  Cost="1",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Holy Symbol (Wooden)",
+  SourcePage="p.161",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("Holy Symbol"))) >= 1
+    end,
+  },
   Types={
     "Goods",
     "Tools",
     "Spell Component",
     "Divine Focus",
-  },
-  SourcePage="p.161",
-  Conditions={
-    function (item)
-      return ((item.IsType("Holy Symbol"))) >= 1
-    end,
   },
 })
 DefineEquipmentModifier({
   Name="Silver",
-  Cost=Formula("25"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Holy Symbol (Silver)",
+  Cost="25",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Holy Symbol (Silver)",
+  SourcePage="p.161",
+  Visible=true,
+  Bonuses={
+    {
+      Category="EQM",
+      Formula=Formula("1"),
+      Variables={
+        "WEIGHTADD",
+      },
+    },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("Holy Symbol"))) >= 1
+    end,
+  },
   Types={
     "Goods",
     "Tools",
     "Spell Component",
     "Divine Focus",
   },
-  Bonuses={
-    {
-      Category="EQM",
-      Variables={
-        "WEIGHTADD",
-      },
-      Formula=Formula("1"),
-    },
-  },
-  SourcePage="p.161",
-  Conditions={
-    function (item)
-      return ((item.IsType("Holy Symbol"))) >= 1
-    end,
-  },
 })
 DefineEquipmentModifier({
   Name="Armor",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsArmor",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Armor)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Armor)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsArmor",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Armor)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -1390,38 +1339,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Armor)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsArmor",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsArmor",
   },
 })
 DefineEquipmentModifier({
   Name="Baskets",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsBaskets",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Baskets)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Baskets)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsBaskets",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Baskets)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -1433,38 +1381,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Baskets)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsBaskets",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsBaskets",
   },
 })
 DefineEquipmentModifier({
   Name="Books",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsBooks",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Books)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Books)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsBooks",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Books)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -1476,38 +1423,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Books)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsBooks",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsBooks",
   },
 })
 DefineEquipmentModifier({
   Name="Bows",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsBows",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Bows)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Bows)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsBows",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Bows)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -1519,38 +1465,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Bows)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsBows",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsBows",
   },
 })
 DefineEquipmentModifier({
   Name="Calligraphy",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsCalligraphy",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Calligraphy)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Calligraphy)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsCalligraphy",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Calligraphy)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -1562,38 +1507,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Calligraphy)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsCalligraphy",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsCalligraphy",
   },
 })
 DefineEquipmentModifier({
   Name="Carpentry",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsCarpentry",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Carpentry)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Carpentry)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsCarpentry",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Carpentry)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -1605,38 +1549,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Carpentry)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsCarpentry",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsCarpentry",
   },
 })
 DefineEquipmentModifier({
   Name="Cloth",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsCloth",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Cloth)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Cloth)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsCloth",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Cloth)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -1648,38 +1591,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Cloth)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsCloth",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsCloth",
   },
 })
 DefineEquipmentModifier({
   Name="Clothing",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsClothing",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Clothing)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Clothing)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsClothing",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Clothing)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -1691,38 +1633,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Clothing)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsClothing",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsClothing",
   },
 })
 DefineEquipmentModifier({
   Name="Gemcutting",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsGemcutting",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Gemcutting)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Gemcutting)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsGemcutting",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Gemcutting)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -1734,38 +1675,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Gemcutting)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsGemcutting",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsGemcutting",
   },
 })
 DefineEquipmentModifier({
   Name="Glass",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsGlass",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Glass)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Glass)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsGlass",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Glass)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -1777,38 +1717,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Glass)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsGlass",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsGlass",
   },
 })
 DefineEquipmentModifier({
   Name="Jewelry",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsJewelry",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Jewelry)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Jewelry)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsJewelry",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Jewelry)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -1820,38 +1759,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Jewelry)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsJewelry",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsJewelry",
   },
 })
 DefineEquipmentModifier({
   Name="Leather",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsLeather",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Leather)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Leather)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsLeather",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Leather)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -1863,38 +1801,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Leather)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsLeather",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsLeather",
   },
 })
 DefineEquipmentModifier({
   Name="Locks",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsLocks",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Locks)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Locks)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsLocks",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Locks)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -1906,38 +1843,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Locks)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsLocks",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsLocks",
   },
 })
 DefineEquipmentModifier({
   Name="Paintings",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsPaintings",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Paintings)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Paintings)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsPaintings",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Paintings)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -1949,38 +1885,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Paintings)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsPaintings",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsPaintings",
   },
 })
 DefineEquipmentModifier({
   Name="Pottery",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsPottery",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Pottery)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Pottery)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsPottery",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Pottery)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -1992,38 +1927,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Pottery)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsPottery",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsPottery",
   },
 })
 DefineEquipmentModifier({
   Name="Sculptures",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsSculptures",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Sculptures)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Sculptures)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsSculptures",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Sculptures)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -2035,38 +1969,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Sculptures)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsSculptures",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsSculptures",
   },
 })
 DefineEquipmentModifier({
   Name="Ships",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsShips",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Ships)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Ships)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsShips",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Ships)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -2078,38 +2011,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Ships)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsShips",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsShips",
   },
 })
 DefineEquipmentModifier({
   Name="Shoes",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsShoes",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Shoes)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Shoes)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsShoes",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Shoes)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -2121,38 +2053,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Shoes)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsShoes",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsShoes",
   },
 })
 DefineEquipmentModifier({
   Name="Stonemasonry",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsStonemasonry",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Stonemasonry)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Stonemasonry)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsStonemasonry",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Stonemasonry)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -2164,38 +2095,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Stonemasonry)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsStonemasonry",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsStonemasonry",
   },
 })
 DefineEquipmentModifier({
   Name="Traps",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsTraps",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Traps)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Traps)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsTraps",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Traps)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -2207,38 +2137,37 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Traps)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
+  },
+  GrantedItemTypes={
+    "CraftToolsTraps",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsTraps",
   },
 })
 DefineEquipmentModifier({
   Name="Weaponsmithing",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "CraftToolsWeaponsmithing",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Artisan's Tools (Weaponsmithing)",
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Parentheses",
-  Key="Artisan's Tools (Weaponsmithing)",
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-    "CraftToolsWeaponsmithing",
-  },
+  SourcePage="p.161",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Craft (Weapons)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -2250,380 +2179,368 @@ DefineEquipmentModifier({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Craft (Weapons)",
+      },
     },
   },
-  SourcePage="p.161",
   Conditions={
     function (item)
       return ((item.IsType("Tools")) + (item.IsType("Artisan"))) >= 2
     end,
   },
+  GrantedItemTypes={
+    "CraftToolsWeaponsmithing",
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Artisan",
+    "CraftToolsWeaponsmithing",
+  },
 })
 DefineEquipmentModifier({
   Name="Adamantine",
-  Cost=Formula("60"),
+  Key="Material ~ Adamantine ~ Ammunition",
+  AffectsBothHeads=false,
+  Cost="60",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.154",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("Metal"))) >= 1
+    end,
+  },
   GrantedItemTypes={
     "Metal",
     "Adamantine",
     "Masterwork",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Quality ~ Masterwork ~ Weapon",
-  },
-  Key="Material ~ Adamantine ~ Ammunition",
-  Types={
-    "BaseMaterial",
-    "MasterworkQuality",
-    "Ammunition",
   },
   SpecialProperties={
     {
       Format="adamantine, ignore hardness less than 20",
     },
   },
-  SourcePage="p.154",
-  Conditions={
-    function (item)
-      return ((item.IsType("Metal"))) >= 1
-    end,
+  Types={
+    "BaseMaterial",
+    "MasterworkQuality",
+    "Ammunition",
   },
 })
 DefineEquipmentModifier({
   Name="Adamantine",
-  Cost=Formula("5000"),
-  GrantedItemTypes={
-    "Metal",
-    "Adamantine",
-    "Masterwork",
-  },
-  Visible=true,
+  Key="Material ~ Adamantine ~ Armor / Light",
   AffectsBothHeads=false,
+  Cost="5000",
+  DamageReduction={
+    Value="1/-",
+  },
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Replaces={
-    "Special Quality ~ Masterwork ~ Armor",
-  },
-  Key="Material ~ Adamantine ~ Armor / Light",
-  Types={
-    "BaseMaterial",
-    "MasterworkQuality",
-    "Armor",
-  },
+  SourcePage="p.154",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
-      Variables={
-        "ArmorCheckPenalty",
-      },
       Formula=Formula("-1"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "ArmorCheckPenalty",
+      },
     },
     {
       Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "ACCHECK",
+      },
     },
-  },
-  SpecialProperties={
-    {
-      Format="adamantine",
-    },
-  },
-  SourcePage="p.154",
-  Info={
-    hp="40 hp/inch",
-    Hardness="hardness 20",
-  },
-  DamageReduction={
-    Value="1/-",
   },
   Conditions={
     function (item)
       return ((item.IsType("Metal")) + (item.IsType("Light"))) >= 2
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Adamantine",
-  Cost=Formula("10000"),
   GrantedItemTypes={
     "Metal",
     "Adamantine",
     "Masterwork",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Quality ~ Masterwork ~ Armor",
-  },
-  Key="Material ~ Adamantine ~ Armor / Medium",
-  Types={
-    "BaseMaterial",
-    "MasterworkQuality",
-    "Armor",
-  },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "ArmorCheckPenalty",
-      },
-      Formula=Formula("-1"),
-      Type={
-        Name="Enhancement",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Enhancement",
-        Replace=false,
-        Stack=false,
-      },
-    },
   },
   SpecialProperties={
     {
       Format="adamantine",
     },
   },
-  SourcePage="p.154",
+  Types={
+    "BaseMaterial",
+    "MasterworkQuality",
+    "Armor",
+  },
   Info={
     hp="40 hp/inch",
     Hardness="hardness 20",
   },
+})
+DefineEquipmentModifier({
+  Name="Adamantine",
+  Key="Material ~ Adamantine ~ Armor / Medium",
+  AffectsBothHeads=false,
+  Cost="10000",
   DamageReduction={
     Value="2/-",
+  },
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.154",
+  Visible=true,
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("-1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "ArmorCheckPenalty",
+      },
+    },
+    {
+      Category="EQMARMOR",
+      Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "ACCHECK",
+      },
+    },
   },
   Conditions={
     function (item)
       return ((item.IsType("Metal")) + (item.IsType("Medium"))) >= 2
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Adamantine",
-  Cost=Formula("15000"),
   GrantedItemTypes={
     "Metal",
     "Adamantine",
     "Masterwork",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Quality ~ Masterwork ~ Armor",
-  },
-  Key="Material ~ Adamantine ~ Armor / Heavy",
-  Types={
-    "BaseMaterial",
-    "MasterworkQuality",
-    "Armor",
-  },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "ArmorCheckPenalty",
-      },
-      Formula=Formula("-1"),
-      Type={
-        Name="Enhancement",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Enhancement",
-        Replace=false,
-        Stack=false,
-      },
-    },
   },
   SpecialProperties={
     {
       Format="adamantine",
     },
   },
-  SourcePage="p.154",
+  Types={
+    "BaseMaterial",
+    "MasterworkQuality",
+    "Armor",
+  },
   Info={
     hp="40 hp/inch",
     Hardness="hardness 20",
   },
-  DamageReduction={
-    Value="3/-",
-  },
-  Conditions={
-    function (item)
-      return ((item.IsType("Metal")) + (item.IsType("Heavy"))) >= 2
-    end,
-  },
 })
 DefineEquipmentModifier({
   Name="Adamantine",
-  Cost=Formula("3000"),
-  GrantedItemTypes={
-    "Metal",
-    "Adamantine",
-    "Masterwork",
-  },
-  Visible=true,
+  Key="Material ~ Adamantine ~ Armor / Heavy",
   AffectsBothHeads=false,
+  Cost="15000",
+  DamageReduction={
+    Value="3/-",
+  },
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Replaces={
-    "Special Quality ~ Masterwork ~ Weapon",
-  },
-  Key="Material ~ Adamantine ~ Weapon",
-  Types={
-    "BaseMaterial",
-    "MasterworkQuality",
-    "Weapon",
-  },
+  SourcePage="p.154",
+  Visible=true,
   Bonuses={
     {
-      Category="WEAPON",
-      Variables={
-        "TOHIT",
+      Category="VAR",
+      Formula=Formula("-1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
       },
+      Variables={
+        "ArmorCheckPenalty",
+      },
+    },
+    {
+      Category="EQMARMOR",
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "ACCHECK",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("Metal")) + (item.IsType("Heavy"))) >= 2
+    end,
+  },
+  GrantedItemTypes={
+    "Metal",
+    "Adamantine",
+    "Masterwork",
+  },
+  Replaces={
+    "Special Quality ~ Masterwork ~ Armor",
+  },
+  SpecialProperties={
+    {
+      Format="adamantine",
+    },
+  },
+  Types={
+    "BaseMaterial",
+    "MasterworkQuality",
+    "Armor",
+  },
+  Info={
+    hp="40 hp/inch",
+    Hardness="hardness 20",
+  },
+})
+DefineEquipmentModifier({
+  Name="Adamantine",
+  Key="Material ~ Adamantine ~ Weapon",
+  AffectsBothHeads=false,
+  Cost="3000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.154",
+  Visible=true,
+  Bonuses={
+    {
+      Category="WEAPON",
+      Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "TOHIT",
+      },
+    },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("Metal"))) >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Metal",
+    "Adamantine",
+    "Masterwork",
+  },
+  Replaces={
+    "Special Quality ~ Masterwork ~ Weapon",
   },
   SpecialProperties={
     {
       Format="adamantine, ignore hardness less than 20",
     },
   },
-  SourcePage="p.154",
-  Conditions={
-    function (item)
-      return ((item.IsType("Metal"))) >= 1
-    end,
+  Types={
+    "BaseMaterial",
+    "MasterworkQuality",
+    "Weapon",
   },
 })
 DefineEquipmentModifier({
   Name="Mithral",
-  Cost=Formula("1000"),
-  GrantedItemTypes={
-    "Metal",
-    "Mithral",
-    "Masterwork",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Material ~ Mithril ~ Armor / Light",
+  Cost="1000",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Replaces={
-    "Special Quality ~ Masterwork ~ Armor",
-  },
-  Key="Material ~ Mithril ~ Armor / Light",
-  Types={
-    "BaseMaterial",
-    "MasterworkQuality",
-    "Armor",
-  },
+  SourcePage="p.154",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
-      Variables={
-        "ArmorCheckPenalty",
-      },
       Formula=Formula("-3"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "ArmorCheckPenalty",
+      },
     },
     {
       Category="EQM",
-      Variables={
-        "WEIGHTDIV",
-      },
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
         Replace=true,
         Stack=false,
       },
+      Variables={
+        "WEIGHTDIV",
+      },
     },
     {
       Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
       Formula=Formula("3"),
       Type={
         Name="Enhancement",
         Replace=true,
         Stack=false,
       },
+      Variables={
+        "ACCHECK",
+      },
     },
     {
       Category="EQMARMOR",
+      Formula=Formula("2"),
       Variables={
         "MAXDEX",
       },
-      Formula=Formula("2"),
     },
     {
       Category="EQMARMOR",
-      Variables={
-        "SPELLFAILURE",
-      },
       Formula=Formula("-10"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "SPELLFAILURE",
+      },
     },
-  },
-  SpecialProperties={
-    {
-      Format="mithral",
-    },
-  },
-  SourcePage="p.154",
-  Info={
-    hp="30 hp/inch",
-    Hardness="hardness 15",
   },
   Conditions={
     function (item)
@@ -2633,98 +2550,97 @@ DefineEquipmentModifier({
       return ((item.IsType("Metal"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Mithral",
-  Cost=Formula("4000"),
   GrantedItemTypes={
     "Metal",
     "Mithral",
     "Masterwork",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Quality ~ Masterwork ~ Armor",
-  },
-  ChangeArmorType={
-    From="Medium",
-    To="Light",
-  },
-  Key="Material ~ Mithril ~ Armor / Medium",
-  Types={
-    "BaseMaterial",
-    "MasterworkQuality",
-    "Armor",
-  },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "ArmorCheckPenalty",
-      },
-      Formula=Formula("-3"),
-      Type={
-        Name="Enhancement",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="EQM",
-      Variables={
-        "WEIGHTDIV",
-      },
-      Formula=Formula("2"),
-      Type={
-        Name="Enhancement",
-        Replace=true,
-        Stack=false,
-      },
-    },
-    {
-      Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
-      Formula=Formula("3"),
-      Type={
-        Name="Enhancement",
-        Replace=true,
-        Stack=false,
-      },
-    },
-    {
-      Category="EQMARMOR",
-      Variables={
-        "MAXDEX",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="EQMARMOR",
-      Variables={
-        "SPELLFAILURE",
-      },
-      Formula=Formula("-10"),
-      Type={
-        Name="Enhancement",
-        Replace=false,
-        Stack=false,
-      },
-    },
   },
   SpecialProperties={
     {
       Format="mithral",
     },
   },
-  SourcePage="p.154",
+  Types={
+    "BaseMaterial",
+    "MasterworkQuality",
+    "Armor",
+  },
   Info={
     hp="30 hp/inch",
     Hardness="hardness 15",
+  },
+})
+DefineEquipmentModifier({
+  ChangeArmorType={
+    From="Medium",
+    To="Light",
+  },
+  Name="Mithral",
+  Key="Material ~ Mithril ~ Armor / Medium",
+  Cost="4000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.154",
+  Visible=true,
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("-3"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "ArmorCheckPenalty",
+      },
+    },
+    {
+      Category="EQM",
+      Formula=Formula("2"),
+      Type={
+        Name="Enhancement",
+        Replace=true,
+        Stack=false,
+      },
+      Variables={
+        "WEIGHTDIV",
+      },
+    },
+    {
+      Category="EQMARMOR",
+      Formula=Formula("3"),
+      Type={
+        Name="Enhancement",
+        Replace=true,
+        Stack=false,
+      },
+      Variables={
+        "ACCHECK",
+      },
+    },
+    {
+      Category="EQMARMOR",
+      Formula=Formula("2"),
+      Variables={
+        "MAXDEX",
+      },
+    },
+    {
+      Category="EQMARMOR",
+      Formula=Formula("-10"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "SPELLFAILURE",
+      },
+    },
   },
   Conditions={
     function (item)
@@ -2734,98 +2650,97 @@ DefineEquipmentModifier({
       return ((item.IsType("Metal"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Mithral",
-  Cost=Formula("9000"),
   GrantedItemTypes={
     "Metal",
     "Mithral",
     "Masterwork",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Quality ~ Masterwork ~ Armor",
-  },
-  ChangeArmorType={
-    From="Heavy",
-    To="Medium",
-  },
-  Key="Material ~ Mithril ~ Armor / Heavy",
-  Types={
-    "BaseMaterial",
-    "MasterworkQuality",
-    "Armor",
-  },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "ArmorCheckPenalty",
-      },
-      Formula=Formula("-3"),
-      Type={
-        Name="Enhancement",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="EQM",
-      Variables={
-        "WEIGHTDIV",
-      },
-      Formula=Formula("2"),
-      Type={
-        Name="Enhancement",
-        Replace=true,
-        Stack=false,
-      },
-    },
-    {
-      Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
-      Formula=Formula("3"),
-      Type={
-        Name="Enhancement",
-        Replace=true,
-        Stack=false,
-      },
-    },
-    {
-      Category="EQMARMOR",
-      Variables={
-        "MAXDEX",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="EQMARMOR",
-      Variables={
-        "SPELLFAILURE",
-      },
-      Formula=Formula("-10"),
-      Type={
-        Name="Enhancement",
-        Replace=false,
-        Stack=false,
-      },
-    },
   },
   SpecialProperties={
     {
       Format="mithral",
     },
   },
-  SourcePage="p.154",
+  Types={
+    "BaseMaterial",
+    "MasterworkQuality",
+    "Armor",
+  },
   Info={
     hp="30 hp/inch",
     Hardness="hardness 15",
+  },
+})
+DefineEquipmentModifier({
+  ChangeArmorType={
+    From="Heavy",
+    To="Medium",
+  },
+  Name="Mithral",
+  Key="Material ~ Mithril ~ Armor / Heavy",
+  Cost="9000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.154",
+  Visible=true,
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("-3"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "ArmorCheckPenalty",
+      },
+    },
+    {
+      Category="EQM",
+      Formula=Formula("2"),
+      Type={
+        Name="Enhancement",
+        Replace=true,
+        Stack=false,
+      },
+      Variables={
+        "WEIGHTDIV",
+      },
+    },
+    {
+      Category="EQMARMOR",
+      Formula=Formula("3"),
+      Type={
+        Name="Enhancement",
+        Replace=true,
+        Stack=false,
+      },
+      Variables={
+        "ACCHECK",
+      },
+    },
+    {
+      Category="EQMARMOR",
+      Formula=Formula("2"),
+      Variables={
+        "MAXDEX",
+      },
+    },
+    {
+      Category="EQMARMOR",
+      Formula=Formula("-10"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "SPELLFAILURE",
+      },
+    },
   },
   Conditions={
     function (item)
@@ -2835,118 +2750,198 @@ DefineEquipmentModifier({
       return ((item.IsType("Metal"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Mithral",
-  Cost=Formula("1000"),
   GrantedItemTypes={
     "Metal",
     "Mithral",
     "Masterwork",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Quality ~ Masterwork ~ Armor",
-  },
-  Key="Material ~ Mithril ~ Shield",
-  Types={
-    "BaseMaterial",
-    "MasterworkQuality",
-    "Shield",
-  },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "ArmorCheckPenalty",
-      },
-      Formula=Formula("-3"),
-      Type={
-        Name="Enhancement",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="EQM",
-      Variables={
-        "WEIGHTDIV",
-      },
-      Formula=Formula("2"),
-      Type={
-        Name="Enhancement",
-        Replace=true,
-        Stack=false,
-      },
-    },
-    {
-      Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
-      Formula=Formula("3"),
-      Type={
-        Name="Enhancement",
-        Replace=true,
-        Stack=false,
-      },
-    },
-    {
-      Category="EQMARMOR",
-      Variables={
-        "MAXDEX",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="EQMARMOR",
-      Variables={
-        "SPELLFAILURE",
-      },
-      Formula=Formula("-10"),
-      Type={
-        Name="Enhancement",
-        Replace=false,
-        Stack=false,
-      },
-    },
   },
   SpecialProperties={
     {
       Format="mithral",
     },
   },
-  SourcePage="p.154",
+  Types={
+    "BaseMaterial",
+    "MasterworkQuality",
+    "Armor",
+  },
   Info={
     hp="30 hp/inch",
     Hardness="hardness 15",
+  },
+})
+DefineEquipmentModifier({
+  Name="Mithral",
+  Key="Material ~ Mithril ~ Shield",
+  Cost="1000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.154",
+  Visible=true,
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("-3"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "ArmorCheckPenalty",
+      },
+    },
+    {
+      Category="EQM",
+      Formula=Formula("2"),
+      Type={
+        Name="Enhancement",
+        Replace=true,
+        Stack=false,
+      },
+      Variables={
+        "WEIGHTDIV",
+      },
+    },
+    {
+      Category="EQMARMOR",
+      Formula=Formula("3"),
+      Type={
+        Name="Enhancement",
+        Replace=true,
+        Stack=false,
+      },
+      Variables={
+        "ACCHECK",
+      },
+    },
+    {
+      Category="EQMARMOR",
+      Formula=Formula("2"),
+      Variables={
+        "MAXDEX",
+      },
+    },
+    {
+      Category="EQMARMOR",
+      Formula=Formula("-10"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "SPELLFAILURE",
+      },
+    },
   },
   Conditions={
     function (item)
       return ((item.IsType("Metal"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Mithral",
-  Cost=Formula("WT*500"),
   GrantedItemTypes={
     "Metal",
     "Mithral",
     "Masterwork",
   },
-  Visible=true,
+  Replaces={
+    "Special Quality ~ Masterwork ~ Armor",
+  },
+  SpecialProperties={
+    {
+      Format="mithral",
+    },
+  },
+  Types={
+    "BaseMaterial",
+    "MasterworkQuality",
+    "Shield",
+  },
+  Info={
+    hp="30 hp/inch",
+    Hardness="hardness 15",
+  },
+})
+DefineEquipmentModifier({
+  Name="Mithral",
+  Key="Material ~ Mithril ~ Weapon / Item",
   AffectsBothHeads=false,
+  Cost="WT*500",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
+  SourcePage="p.154",
+  Visible=true,
+  Bonuses={
+    {
+      Category="EQM",
+      Formula=Formula("2"),
+      Type={
+        Name="Enhancement",
+        Replace=true,
+        Stack=false,
+      },
+      Variables={
+        "WEIGHTDIV",
+      },
+    },
+    {
+      Category="WEAPON",
+      Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
+      Conditions={
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
+        end,
+      },
+      Variables={
+        "TOHIT",
+      },
+    },
+    {
+      Category="WEAPON",
+      Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
+      Conditions={
+        function (item)
+          return ((item.IsType("AMMUNITION"))) >= 1
+        end,
+      },
+      Variables={
+        "TOHIT",
+      },
+    },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("Metal"))) >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Metal",
+    "Mithral",
+    "Masterwork",
+  },
   Replaces={
     "Special Quality ~ Masterwork ~ Weapon",
     "Special Quality ~ Masterwork ~ Item",
   },
-  Key="Material ~ Mithril ~ Weapon / Item",
+  SpecialProperties={
+    {
+      Format="mithral",
+    },
+  },
   Types={
     "BaseMaterial",
     "MasterworkQuality",
@@ -2956,119 +2951,42 @@ DefineEquipmentModifier({
     "Tools",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="EQM",
-      Variables={
-        "WEIGHTDIV",
-      },
-      Formula=Formula("2"),
-      Type={
-        Name="Enhancement",
-        Replace=true,
-        Stack=false,
-      },
-    },
-    {
-      Category="WEAPON",
-      Variables={
-        "TOHIT",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Enhancement",
-        Replace=false,
-        Stack=false,
-      },
-      Conditions={
-        function (item)
-          return ((item.IsType("WEAPON"))) >= 1
-        end,
-      },
-    },
-    {
-      Category="WEAPON",
-      Variables={
-        "TOHIT",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Enhancement",
-        Replace=false,
-        Stack=false,
-      },
-      Conditions={
-        function (item)
-          return ((item.IsType("AMMUNITION"))) >= 1
-        end,
-      },
-    },
-  },
-  SpecialProperties={
-    {
-      Format="mithral",
-    },
-  },
-  SourcePage="p.154",
   Info={
     hp="30 hp/inch",
     Hardness="hardness 15",
   },
-  Conditions={
-    function (item)
-      return ((item.IsType("Metal"))) >= 1
-    end,
-  },
 })
 DefineEquipmentModifier({
   Name="Darkwood",
-  Cost=Formula("WT*10"),
-  GrantedItemTypes={
-    "Wooden",
-    "Darkwood",
-    "Masterwork",
-  },
-  Visible=true,
+  Key="Material ~ Darkwood",
   AffectsBothHeads=true,
+  Cost="WT*10",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Replaces={
-    "Special Quality ~ Masterwork ~ Armor",
-    "Special Quality ~ Masterwork ~ Weapon",
-  },
-  Key="Material ~ Darkwood",
-  Types={
-    "BaseMaterial",
-    "MasterworkQuality",
-    "Ammunition",
-    "Weapon",
-    "Shield",
-  },
+  SourcePage="p.154",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
-      Variables={
-        "ArmorCheckPenalty",
-      },
       Formula=Formula("-2"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "ArmorCheckPenalty",
+      },
     },
     {
       Category="EQM",
+      Formula=Formula("2"),
       Variables={
         "WEIGHTDIV",
       },
-      Formula=Formula("2"),
     },
     {
       Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
@@ -3080,24 +2998,24 @@ DefineEquipmentModifier({
           return ((item.IsType("SHIELD"))) >= 1
         end,
       },
+      Variables={
+        "ACCHECK",
+      },
     },
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("6"),
       Conditions={
         function (item)
           return ((item.IsType("AMMUNITION"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("300"),
       Conditions={
         function (item)
@@ -3107,24 +3025,24 @@ DefineEquipmentModifier({
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
         function (item)
           return ((item.IsType("SHIELD"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
     {
       Category="WEAPON",
-      Variables={
-        "TOHIT",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
@@ -3139,78 +3057,96 @@ DefineEquipmentModifier({
           return not (((item.IsType("Shield"))) >= 1)
         end,
       },
+      Variables={
+        "TOHIT",
+      },
     },
-  },
-  SpecialProperties={
-    {
-      Format="darkwood",
-    },
-  },
-  SourcePage="p.154",
-  Info={
-    hp="10 hp/inch",
-    Hardness="hardness 5",
   },
   Conditions={
     function (item)
       return ((item.IsType("Wooden"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Dragonhide",
-  Cost=Formula("BASECOST+300"),
   GrantedItemTypes={
-    "Dragonhide",
-    "Nonmetal",
+    "Wooden",
+    "Darkwood",
     "Masterwork",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Quality ~ Masterwork ~ Armor",
+    "Special Quality ~ Masterwork ~ Weapon",
   },
-  Key="Material ~ Dragonhide",
+  SpecialProperties={
+    {
+      Format="darkwood",
+    },
+  },
   Types={
     "BaseMaterial",
     "MasterworkQuality",
-    "Armor",
+    "Ammunition",
+    "Weapon",
     "Shield",
   },
+  Info={
+    hp="10 hp/inch",
+    Hardness="hardness 5",
+  },
+})
+DefineEquipmentModifier({
+  Name="Dragonhide",
+  Key="Material ~ Dragonhide",
+  AffectsBothHeads=false,
+  Cost="BASECOST+300",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.154",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
-      Variables={
-        "ArmorCheckPenalty",
-      },
       Formula=Formula("-1"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "ArmorCheckPenalty",
+      },
     },
     {
       Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "ACCHECK",
+      },
     },
+  },
+  GrantedItemTypes={
+    "Dragonhide",
+    "Nonmetal",
+    "Masterwork",
+  },
+  Replaces={
+    "Special Quality ~ Masterwork ~ Armor",
   },
   SpecialProperties={
     {
       Format="dragonhide",
     },
   },
-  SourcePage="p.154",
+  Types={
+    "BaseMaterial",
+    "MasterworkQuality",
+    "Armor",
+    "Shield",
+  },
   Info={
     hp="10 hp/inch",
     Hardness="hardness 10",
@@ -3218,27 +3154,16 @@ DefineEquipmentModifier({
 })
 DefineEquipmentModifier({
   Name="Cold Iron",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "Metal",
-    "ColdIron",
-  },
-  Visible=true,
+  Key="Material ~ Cold Iron",
   AffectsBothHeads=false,
+  Cost="0",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Material ~ Cold Iron",
-  Types={
-    "BaseMaterial",
-    "Ammunition",
-    "Weapon",
-  },
+  SourcePage="p.154",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("(BASECOST)"),
       Conditions={
         function (item)
@@ -3248,12 +3173,12 @@ DefineEquipmentModifier({
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("(BASECOST)/2"),
       Conditions={
         function (item)
@@ -3263,41 +3188,34 @@ DefineEquipmentModifier({
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("40"),
       Conditions={
         function (item)
           return ((item.IsType("Enhancement")) + (item.IsType("AMMUNITION"))) >= 2
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("2000"),
       Conditions={
         function (item)
           return ((item.IsType("Enhancement")) + (item.IsType("WEAPON"))) >= 2
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
-  },
-  SpecialProperties={
-    {
-      Format="cold iron",
-    },
-  },
-  SourcePage="p.154",
-  Info={
-    hp="30 hp/inch",
-    Hardness="hardness 10",
   },
   Conditions={
     function (item)
@@ -3307,42 +3225,49 @@ DefineEquipmentModifier({
       return ((item.IsType("Metal"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Alchemical Silver",
-  Cost=Formula("0"),
   GrantedItemTypes={
     "Metal",
-    "Silver",
+    "ColdIron",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=Silver",
-  NameModifierLocation="Prefix",
-  Key="Material ~ Alchemical Silver",
+  SpecialProperties={
+    {
+      Format="cold iron",
+    },
+  },
   Types={
     "BaseMaterial",
     "Ammunition",
     "Weapon",
   },
+  Info={
+    hp="30 hp/inch",
+    Hardness="hardness 10",
+  },
+})
+DefineEquipmentModifier({
+  Name="Alchemical Silver",
+  Key="Material ~ Alchemical Silver",
+  AffectsBothHeads=false,
+  Cost="0",
+  NameModifier="TEXT=Silver",
+  NameModifierLocation="Prefix",
+  SourcePage="p.155",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("2"),
       Conditions={
         function (item)
           return ((item.IsType("AMMUNITION"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("20"),
       Conditions={
         function (character)
@@ -3366,12 +3291,12 @@ DefineEquipmentModifier({
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("90"),
       Conditions={
         function (character)
@@ -3395,12 +3320,12 @@ DefineEquipmentModifier({
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("180"),
       Conditions={
         function (character)
@@ -3424,12 +3349,12 @@ DefineEquipmentModifier({
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("90"),
       Conditions={
         function (item)
@@ -3439,12 +3364,12 @@ DefineEquipmentModifier({
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
     {
       Category="WEAPON",
-      Variables={
-        "DAMAGE",
-      },
       Formula=Formula("-1"),
       Type={
         Name="Enhancement",
@@ -3456,17 +3381,10 @@ DefineEquipmentModifier({
           return ((item.IsType("PIERCING")) + (item.IsType("SLASHING"))) >= 1
         end,
       },
+      Variables={
+        "DAMAGE",
+      },
     },
-  },
-  SpecialProperties={
-    {
-      Format="silver",
-    },
-  },
-  SourcePage="p.155",
-  Info={
-    hp="10 hp/inch",
-    Hardness="hardness 8",
   },
   Conditions={
     function (item)
@@ -3479,393 +3397,366 @@ DefineEquipmentModifier({
       return not (((item.IsType("Mithral")) + (item.IsType("Adamantine")) + (item.IsType("ColdIron")) + (item.IsType("Silver"))) >= 1)
     end,
   },
+  GrantedItemTypes={
+    "Metal",
+    "Silver",
+  },
+  SpecialProperties={
+    {
+      Format="silver",
+    },
+  },
+  Types={
+    "BaseMaterial",
+    "Ammunition",
+    "Weapon",
+  },
+  Info={
+    hp="10 hp/inch",
+    Hardness="hardness 8",
+  },
 })
 DefineEquipmentModifier({
-  Name="Charges (3)",
-  Cost=Formula("((BASECOST/3)*%CHARGES)-BASECOST"),
-  Visible=false,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNothing(),
-  },
   Charges={
     Min=1,
     Max=3,
   },
+  Name="Charges (3)",
   Key="Special Ability ~ Charged Item / 3 Maximum",
-})
-DefineEquipmentModifier({
-  Name="Charges (4)",
-  Cost=Formula("((BASECOST/4)*%CHARGES)-BASECOST"),
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Cost="((BASECOST/3)*%CHARGES)-BASECOST",
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=1,
     Max=4,
   },
+  Name="Charges (4)",
   Key="Special Ability ~ Charged Item / 4 Maximum",
-})
-DefineEquipmentModifier({
-  Name="Charges (5)",
-  Cost=Formula("((BASECOST/5)*%CHARGES)-BASECOST"),
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Cost="((BASECOST/4)*%CHARGES)-BASECOST",
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=1,
     Max=5,
   },
+  Name="Charges (5)",
   Key="Special Ability ~ Charged Item / 5 Maximum",
-})
-DefineEquipmentModifier({
-  Name="Charges (6)",
-  Cost=Formula("((BASECOST/6)*%CHARGES)-BASECOST"),
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Cost="((BASECOST/5)*%CHARGES)-BASECOST",
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=1,
     Max=6,
   },
+  Name="Charges (6)",
   Key="Special Ability ~ Charged Item / 6 Maximum",
-})
-DefineEquipmentModifier({
-  Name="Charges (7)",
-  Cost=Formula("((BASECOST/7)*%CHARGES)-BASECOST"),
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Cost="((BASECOST/6)*%CHARGES)-BASECOST",
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=1,
     Max=7,
   },
+  Name="Charges (7)",
   Key="Special Ability ~ Charged Item / 7 Maximum",
-})
-DefineEquipmentModifier({
-  Name="Charges (8)",
-  Cost=Formula("((BASECOST/8)*%CHARGES)-BASECOST"),
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Cost="((BASECOST/7)*%CHARGES)-BASECOST",
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=1,
     Max=8,
   },
+  Name="Charges (8)",
   Key="Special Ability ~ Charged Item / 8 Maximum",
-})
-DefineEquipmentModifier({
-  Name="Charges (9)",
-  Cost=Formula("((BASECOST/9)*%CHARGES)-BASECOST"),
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Cost="((BASECOST/8)*%CHARGES)-BASECOST",
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=1,
     Max=9,
   },
+  Name="Charges (9)",
   Key="Special Ability ~ Charged Item / 9 Maximum",
-})
-DefineEquipmentModifier({
-  Name="Charges (10)",
-  Cost=Formula("((BASECOST/10)*%CHARGES)-BASECOST"),
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Cost="((BASECOST/9)*%CHARGES)-BASECOST",
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=1,
     Max=10,
   },
+  Name="Charges (10)",
   Key="Special Ability ~ Charged Item / 10 Maximum",
-})
-DefineEquipmentModifier({
-  Name="Charges (12)",
-  Cost=Formula("((BASECOST/12)*%CHARGES)-BASECOST"),
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Cost="((BASECOST/10)*%CHARGES)-BASECOST",
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=1,
     Max=12,
   },
+  Name="Charges (12)",
   Key="Special Ability ~ Charged Item / 12 Maximum",
-})
-DefineEquipmentModifier({
-  Name="Charges (20)",
-  Cost=Formula("((BASECOST/20)*%CHARGES)-BASECOST"),
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Cost="((BASECOST/12)*%CHARGES)-BASECOST",
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=1,
     Max=20,
   },
+  Name="Charges (20)",
   Key="Special Ability ~ Charged Item / 20 Maximum",
-})
-DefineEquipmentModifier({
-  Name="Charges (34)",
-  Cost=Formula("((BASECOST/34)*%CHARGES)-BASECOST"),
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Cost="((BASECOST/20)*%CHARGES)-BASECOST",
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=1,
     Max=34,
   },
+  Name="Charges (34)",
   Key="Special Ability ~ Charged Item / 34 Maximum",
-})
-DefineEquipmentModifier({
-  Name="Charges (36)",
-  Cost=Formula("((BASECOST/36)*%CHARGES)-BASECOST"),
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Cost="((BASECOST/34)*%CHARGES)-BASECOST",
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=1,
     Max=36,
   },
+  Name="Charges (36)",
   Key="Special Ability ~ Charged Item / 36 Maximum",
-})
-DefineEquipmentModifier({
-  Name="Charges (50)",
-  Cost=Formula("((BASECOST/50)*%CHARGES)-BASECOST"),
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Cost="((BASECOST/36)*%CHARGES)-BASECOST",
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=1,
     Max=50,
   },
+  Name="Charges (50)",
   Key="Special Ability ~ Charged Item / 50 Maximum",
-})
-DefineEquipmentModifier({
-  Name="Charges (101)",
-  Cost=Formula("((BASECOST/101)*%CHARGES)-BASECOST"),
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Cost="((BASECOST/50)*%CHARGES)-BASECOST",
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=1,
     Max=101,
   },
+  Name="Charges (101)",
   Key="Special Ability ~ Charged Item / 101 Maximum",
-})
-DefineEquipmentModifier({
-  Name="Staff Charges",
-  Cost=Formula("0"),
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Cost="((BASECOST/101)*%CHARGES)-BASECOST",
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=0,
     Max=10,
   },
+  Name="Staff Charges",
   Key="Special Ability ~ Staff Charges",
-})
-DefineEquipmentModifier({
-  Name="Uses per Day (1)",
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Cost="0",
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=1,
     Max=1,
   },
+  Name="Uses per Day (1)",
   Key="Special Ability ~ Uses per Day / 1",
-})
-DefineEquipmentModifier({
-  Name="Uses per Day (2)",
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=2,
     Max=2,
   },
+  Name="Uses per Day (2)",
   Key="Special Ability ~ Uses per Day / 2",
-})
-DefineEquipmentModifier({
-  Name="Uses per Day (3)",
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=3,
     Max=3,
   },
+  Name="Uses per Day (3)",
   Key="Special Ability ~ Uses per Day / 3",
-})
-DefineEquipmentModifier({
-  Name="Uses per Day (10)",
-  Visible=false,
-  AffectsBothHeads=false,
   Choice={
     Choose=ChooseNothing(),
   },
+  Visible=false,
+})
+DefineEquipmentModifier({
   Charges={
     Min=10,
     Max=10,
   },
+  Name="Uses per Day (10)",
   Key="Special Ability ~ Uses per Day / 10",
+  Choice={
+    Choose=ChooseNothing(),
+  },
+  Visible=false,
 })
 DefineEquipmentModifier({
   Name="Magical Enhancments (+1)",
-  Visible=true,
-  AffectsBothHeads=false,
-  EquivalentEnhancementBonus=1,
   Key="Special Ability ~ +1 ~ Enhancement Cost",
+  EquivalentEnhancementBonus=1,
 })
 DefineEquipmentModifier({
   Name="Magical Enhancments (+2)",
-  Visible=true,
-  AffectsBothHeads=false,
-  EquivalentEnhancementBonus=2,
   Key="Special Ability ~ +2 ~ Enhancement Cost",
+  EquivalentEnhancementBonus=2,
 })
 DefineEquipmentModifier({
   Name="Magical Enhancments (+3)",
-  Visible=true,
-  AffectsBothHeads=false,
-  EquivalentEnhancementBonus=3,
   Key="Special Ability ~ +3 ~ Enhancement Cost",
+  EquivalentEnhancementBonus=3,
 })
 DefineEquipmentModifier({
   Name="Magical Enhancments (+4)",
-  Visible=true,
-  AffectsBothHeads=false,
-  EquivalentEnhancementBonus=4,
   Key="Special Ability ~ +4 ~ Enhancement Cost",
+  EquivalentEnhancementBonus=4,
 })
 DefineEquipmentModifier({
   Name="Magical Enhancments (+5)",
-  Visible=true,
-  AffectsBothHeads=false,
-  EquivalentEnhancementBonus=5,
   Key="Special Ability ~ +5 ~ Enhancement Cost",
+  EquivalentEnhancementBonus=5,
 })
 DefineEquipmentModifier({
   Name="Magical Enhancments (+6)",
-  Visible=true,
-  AffectsBothHeads=false,
-  EquivalentEnhancementBonus=6,
   Key="Special Ability ~ +6 ~ Enhancement Cost",
+  EquivalentEnhancementBonus=6,
 })
 DefineEquipmentModifier({
   Name="Magical Enhancments (+7)",
-  Visible=true,
-  AffectsBothHeads=false,
-  EquivalentEnhancementBonus=7,
   Key="Special Ability ~ +7 ~ Enhancement Cost",
+  EquivalentEnhancementBonus=7,
 })
 DefineEquipmentModifier({
   Name="Magical Enhancments (+8)",
-  Visible=true,
-  AffectsBothHeads=false,
-  EquivalentEnhancementBonus=8,
   Key="Special Ability ~ +8 ~ Enhancement Cost",
+  EquivalentEnhancementBonus=8,
 })
 DefineEquipmentModifier({
   Name="Magical Enhancments (+9)",
-  Visible=true,
-  AffectsBothHeads=false,
-  EquivalentEnhancementBonus=9,
   Key="Special Ability ~ +9 ~ Enhancement Cost",
+  EquivalentEnhancementBonus=9,
 })
 DefineEquipmentModifier({
   Name="Magical Enhancments (+10)",
-  Visible=true,
-  AffectsBothHeads=false,
-  EquivalentEnhancementBonus=10,
   Key="Special Ability ~ +10 ~ Enhancement Cost",
+  EquivalentEnhancementBonus=10,
 })
 DefineEquipmentModifier({
   Name="Magical Enhancment Cost",
-  Cost=Formula("%CHOICE"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Enhancement Cost",
   Choice={
     Choose=ChooseNumber(1, 1000000, nil, "Additional Cost"),
   },
-  Key="Special Ability ~ Enhancement Cost",
+  Cost="%CHOICE",
 })
 DefineEquipmentModifier({
   Name="|Spell Effect (Single Use/Use Activated)",
-  Cost=Formula("(50*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL)+%SPELLCOST+(5*%SPELLXPCOST)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-    "Consumable",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="SPELL",
-  NameModifierLocation="Parentheses",
+  Key="Special Ability ~ Spell Effect / Single Use",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return 
     end),
   },
-  Key="Special Ability ~ Spell Effect / Single Use",
+  Cost="(50*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL)+%SPELLCOST+(5*%SPELLXPCOST)",
+  NameModifier="SPELL",
+  Visible=true,
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
+    "Consumable",
+  },
   Types={
     "Potion",
     "Oil",
   },
 })
 DefineEquipmentModifier({
-  Name="|Spell Effect (50 Charges/Spell Trigger)",
-  Cost=Formula("((15*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL)+%SPELLCOST+(5*%SPELLXPCOST))*%CHARGES"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
+  Charges={
+    Min=1,
+    Max=50,
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="SPELL",
-  NameModifierLocation="Parentheses",
+  Name="|Spell Effect (50 Charges/Spell Trigger)",
+  Key="Special Ability ~ Spell Effect / Spell Trigger",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return 
     end),
   },
-  Charges={
-    Min=1,
-    Max=50,
+  Cost="((15*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL)+%SPELLCOST+(5*%SPELLXPCOST))*%CHARGES",
+  NameModifier="SPELL",
+  Visible=true,
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
   },
-  Key="Special Ability ~ Spell Effect / Spell Trigger",
   Types={
     "Armor",
     "Shield",
@@ -3890,42 +3781,16 @@ DefineEquipmentModifier({
 })
 DefineEquipmentModifier({
   Name="|Spell Effect (Command Word)",
-  Cost=Formula("(1800*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL)+%SPELLCOST+(5*%SPELLXPCOST)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="SPELL",
-  NameModifierLocation="Parentheses",
+  Key="Special Ability ~ Spell Effect / Command Word",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return 
     end),
   },
-  Key="Special Ability ~ Spell Effect / Command Word",
-  Types={
-    "Armor",
-    "Shield",
-    "Weapon",
-    "Belt",
-    "Body",
-    "Chest",
-    "Eyes",
-    "Feet",
-    "Hands",
-    "Head",
-    "Headband",
-    "Neck",
-    "Ring",
-    "Shoulders",
-    "Wrist",
-    "Instrument",
-    "Staff",
-    "Rod",
-  },
+  Cost="(1800*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL)+%SPELLCOST+(5*%SPELLXPCOST)",
+  NameModifier="SPELL",
   SourcePage="p.550",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -3958,46 +3823,44 @@ DefineEquipmentModifier({
       end
       return count >= 1
     end,
+  },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
+  },
+  Types={
+    "Armor",
+    "Shield",
+    "Weapon",
+    "Belt",
+    "Body",
+    "Chest",
+    "Eyes",
+    "Feet",
+    "Hands",
+    "Head",
+    "Headband",
+    "Neck",
+    "Ring",
+    "Shoulders",
+    "Wrist",
+    "Instrument",
+    "Staff",
+    "Rod",
   },
 })
 DefineEquipmentModifier({
   Name="|Spell Effect (Use Activated)",
-  Cost=Formula("(2000*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL)+%SPELLCOST+(5*%SPELLXPCOST)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="SPELL",
-  NameModifierLocation="Parentheses",
+  Key="Special Ability ~ Spell Effect / Use Activated",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return 
     end),
   },
-  Key="Special Ability ~ Spell Effect / Use Activated",
-  Types={
-    "Armor",
-    "Shield",
-    "Weapon",
-    "Belt",
-    "Body",
-    "Chest",
-    "Eyes",
-    "Feet",
-    "Hands",
-    "Head",
-    "Headband",
-    "Neck",
-    "Ring",
-    "Shoulders",
-    "Wrist",
-    "Instrument",
-    "Staff",
-    "Rod",
-  },
+  Cost="(2000*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL)+%SPELLCOST+(5*%SPELLXPCOST)",
+  NameModifier="SPELL",
   SourcePage="p.550",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -4031,22 +3894,10 @@ DefineEquipmentModifier({
       return count >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="|Ability Bonus (Enhancement)",
-  Cost=Formula("(1000*%CHOICE*%CHOICE)"),
   GrantedItemTypes={
     "Enhancement",
     "Magic",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NONAME",
-  NameModifierLocation="Parentheses",
-  Choice={
-    Choose=ChooseStatBonus(-6, 6, nil, "Ability"),
-  },
-  Key="Special Ability ~ Bonus Ability / Enhancement",
   Types={
     "Armor",
     "Shield",
@@ -4067,74 +3918,76 @@ DefineEquipmentModifier({
     "Staff",
     "Rod",
   },
+})
+DefineEquipmentModifier({
+  Name="|Ability Bonus (Enhancement)",
+  Key="Special Ability ~ Bonus Ability / Enhancement",
+  Choice={
+    Choose=ChooseStatBonus(-6, 6, nil, "Ability"),
+  },
+  Cost="(1000*%CHOICE*%CHOICE)",
+  NameModifier="NONAME",
+  SourcePage="p.550",
+  Visible=true,
   Bonuses={
     {
       Category="STAT",
-      Variables={
-        "%CHOICE",
-      },
       Formula=Formula("%CHOICEVALUE"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "%CHOICE",
+      },
     },
+  },
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (item)
+          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (item)
+          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
   },
   SpecialProperties={
     {
       Format="Enhancement bonus to ability %CHOICE",
     },
   },
-  SourcePage="p.550",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        local count = 0
-        local subCondition
-        subCondition = function (item)
-          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        subCondition = function (item)
-          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        return count >= 2
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="|Armor Bonus (Enhancement)",
-  Cost=Formula("(1000*%CHOICE*%CHOICE)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber(1, 8, nil, "Armor Enhancement Bonus"),
-  },
-  Key="Special Ability ~ Bonus AC / Enhancement",
   Types={
+    "Armor",
+    "Shield",
     "Weapon",
     "Belt",
     "Body",
@@ -4152,62 +4005,59 @@ DefineEquipmentModifier({
     "Staff",
     "Rod",
   },
+})
+DefineEquipmentModifier({
+  Name="|Armor Bonus (Enhancement)",
+  Key="Special Ability ~ Bonus AC / Enhancement",
+  Choice={
+    Choose=ChooseNumber(1, 8, nil, "Armor Enhancement Bonus"),
+  },
+  Cost="(1000*%CHOICE*%CHOICE)",
+  SourcePage="p.550",
+  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "AC",
-      },
       Formula=Formula("%CHOICE"),
       Type={
         Name="ARMOR",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "AC",
+      },
     },
+  },
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (item)
+        return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon"))) >= 2
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
   },
   SpecialProperties={
     {
       Format="Enhancement bonus to armor class of %CHOICE",
     },
   },
-  SourcePage="p.550",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (item)
-        return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon"))) >= 2
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="|Bonus Spell",
-  Cost=Formula("(1000*(max(%CHOICE,1))*(max(%CHOICE,(1/2))))"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber({0, 1, 2, 3, 4, 5, 6, 7, 8, 9}, true, "Spell Level"),
-  },
-  Key="Special Ability ~ Bonus Spell",
   Types={
-    "Armor",
-    "Shield",
     "Weapon",
     "Belt",
     "Body",
@@ -4225,68 +4075,67 @@ DefineEquipmentModifier({
     "Staff",
     "Rod",
   },
+})
+DefineEquipmentModifier({
+  Name="|Bonus Spell",
+  Key="Special Ability ~ Bonus Spell",
+  Choice={
+    Choose=ChooseNumber({0, 1, 2, 3, 4, 5, 6, 7, 8, 9}, true, "Spell Level"),
+  },
+  Cost="(1000*(max(%CHOICE,1))*(max(%CHOICE,(1/2))))",
+  SourcePage="p.550",
+  Visible=true,
   Bonuses={
     {
       Category="SPELLCAST",
+      Formula=Formula("1"),
       Variables={
         "CLASS.ANY;LEVEL.%CHOICE",
       },
-      Formula=Formula("1"),
     },
+  },
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (item)
+          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (item)
+          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
   },
   SpecialProperties={
     {
       Format="bonus spell",
     },
   },
-  SourcePage="p.550",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        local count = 0
-        local subCondition
-        subCondition = function (item)
-          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        subCondition = function (item)
-          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        return count >= 2
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="|AC Bonus (Deflection)",
-  Cost=Formula("(2000*%CHOICE*%CHOICE)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber(1, 5, nil, "Deflection Bonus"),
-  },
-  Key="Special Ability ~ Bonus AC / Deflection",
   Types={
     "Armor",
     "Shield",
@@ -4307,26 +4156,116 @@ DefineEquipmentModifier({
     "Staff",
     "Rod",
   },
+})
+DefineEquipmentModifier({
+  Name="|AC Bonus (Deflection)",
+  Key="Special Ability ~ Bonus AC / Deflection",
+  Choice={
+    Choose=ChooseNumber(1, 5, nil, "Deflection Bonus"),
+  },
+  Cost="(2000*%CHOICE*%CHOICE)",
+  SourcePage="p.550",
+  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "AC",
-      },
       Formula=Formula("%CHOICE"),
       Type={
         Name="DEFLECTION",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "AC",
+      },
     },
+  },
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (item)
+          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (item)
+          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
   },
   SpecialProperties={
     {
       Format="Deflection bonus to armor class of %CHOICE",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+    "Weapon",
+    "Belt",
+    "Body",
+    "Chest",
+    "Eyes",
+    "Feet",
+    "Hands",
+    "Head",
+    "Headband",
+    "Neck",
+    "Ring",
+    "Shoulders",
+    "Wrist",
+    "Instrument",
+    "Staff",
+    "Rod",
+  },
+})
+DefineEquipmentModifier({
+  Name="|AC Bonus (Luck)",
+  Key="Special Ability ~ Bonus AC / Luck",
+  Choice={
+    Choose=ChooseNumber(1, 5, nil, "Armor Other Bonus"),
+  },
+  Cost="(2500*%CHOICE*%CHOICE)",
   SourcePage="p.550",
+  Visible=true,
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("%CHOICE+Global_LuckBonus"),
+      Type={
+        Name="Luck",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "AC",
+      },
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -4360,60 +4299,59 @@ DefineEquipmentModifier({
       return count >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="|AC Bonus (Luck)",
-  Cost=Formula("(2500*%CHOICE*%CHOICE)"),
   GrantedItemTypes={
     "Enhancement",
     "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber(1, 5, nil, "Armor Other Bonus"),
-  },
-  Key="Special Ability ~ Bonus AC / Luck",
-  Types={
-    "Armor",
-    "Shield",
-    "Weapon",
-    "Belt",
-    "Body",
-    "Chest",
-    "Eyes",
-    "Feet",
-    "Hands",
-    "Head",
-    "Headband",
-    "Neck",
-    "Ring",
-    "Shoulders",
-    "Wrist",
-    "Instrument",
-    "Staff",
-    "Rod",
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "AC",
-      },
-      Formula=Formula("%CHOICE+Global_LuckBonus"),
-      Type={
-        Name="Luck",
-        Replace=false,
-        Stack=false,
-      },
-    },
   },
   SpecialProperties={
     {
       Format="Luck bonus to armor class of %CHOICE",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+    "Weapon",
+    "Belt",
+    "Body",
+    "Chest",
+    "Eyes",
+    "Feet",
+    "Hands",
+    "Head",
+    "Headband",
+    "Neck",
+    "Ring",
+    "Shoulders",
+    "Wrist",
+    "Instrument",
+    "Staff",
+    "Rod",
+  },
+})
+DefineEquipmentModifier({
+  Name="|AC Bonus (Insight)",
+  Key="Special Ability ~ Bonus AC / Insight",
+  Choice={
+    Choose=ChooseNumber(1, 5, nil, "Armor Other Bonus"),
+  },
+  Cost="(2500*%CHOICE*%CHOICE)",
   SourcePage="p.550",
+  Visible=true,
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("%CHOICE"),
+      Type={
+        Name="INSIGHT",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "AC",
+      },
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -4447,60 +4385,59 @@ DefineEquipmentModifier({
       return count >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="|AC Bonus (Insight)",
-  Cost=Formula("(2500*%CHOICE*%CHOICE)"),
   GrantedItemTypes={
     "Enhancement",
     "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber(1, 5, nil, "Armor Other Bonus"),
-  },
-  Key="Special Ability ~ Bonus AC / Insight",
-  Types={
-    "Armor",
-    "Shield",
-    "Weapon",
-    "Belt",
-    "Body",
-    "Chest",
-    "Eyes",
-    "Feet",
-    "Hands",
-    "Head",
-    "Headband",
-    "Neck",
-    "Ring",
-    "Shoulders",
-    "Wrist",
-    "Instrument",
-    "Staff",
-    "Rod",
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "AC",
-      },
-      Formula=Formula("%CHOICE"),
-      Type={
-        Name="INSIGHT",
-        Replace=false,
-        Stack=false,
-      },
-    },
   },
   SpecialProperties={
     {
       Format="Insight bonus to armor class of %CHOICE",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+    "Weapon",
+    "Belt",
+    "Body",
+    "Chest",
+    "Eyes",
+    "Feet",
+    "Hands",
+    "Head",
+    "Headband",
+    "Neck",
+    "Ring",
+    "Shoulders",
+    "Wrist",
+    "Instrument",
+    "Staff",
+    "Rod",
+  },
+})
+DefineEquipmentModifier({
+  Name="|AC Bonus (Sacred)",
+  Key="Special Ability ~ Bonus AC / Sacred",
+  Choice={
+    Choose=ChooseNumber(1, 5, nil, "Armor Other Bonus"),
+  },
+  Cost="(2500*%CHOICE*%CHOICE)",
   SourcePage="p.550",
+  Visible=true,
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("%CHOICE"),
+      Type={
+        Name="SACRED",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "AC",
+      },
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -4534,60 +4471,59 @@ DefineEquipmentModifier({
       return count >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="|AC Bonus (Sacred)",
-  Cost=Formula("(2500*%CHOICE*%CHOICE)"),
   GrantedItemTypes={
     "Enhancement",
     "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber(1, 5, nil, "Armor Other Bonus"),
-  },
-  Key="Special Ability ~ Bonus AC / Sacred",
-  Types={
-    "Armor",
-    "Shield",
-    "Weapon",
-    "Belt",
-    "Body",
-    "Chest",
-    "Eyes",
-    "Feet",
-    "Hands",
-    "Head",
-    "Headband",
-    "Neck",
-    "Ring",
-    "Shoulders",
-    "Wrist",
-    "Instrument",
-    "Staff",
-    "Rod",
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "AC",
-      },
-      Formula=Formula("%CHOICE"),
-      Type={
-        Name="SACRED",
-        Replace=false,
-        Stack=false,
-      },
-    },
   },
   SpecialProperties={
     {
       Format="Sacred bonus to armor class of %CHOICE",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+    "Weapon",
+    "Belt",
+    "Body",
+    "Chest",
+    "Eyes",
+    "Feet",
+    "Hands",
+    "Head",
+    "Headband",
+    "Neck",
+    "Ring",
+    "Shoulders",
+    "Wrist",
+    "Instrument",
+    "Staff",
+    "Rod",
+  },
+})
+DefineEquipmentModifier({
+  Name="|AC Bonus (Profane)",
+  Key="Special Ability ~ Bonus AC / Profane",
+  Choice={
+    Choose=ChooseNumber(1, 5, nil, "Armor Other Bonus"),
+  },
+  Cost="(2500*%CHOICE*%CHOICE)",
   SourcePage="p.550",
+  Visible=true,
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("%CHOICE"),
+      Type={
+        Name="PROFANE",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "AC",
+      },
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -4621,60 +4557,59 @@ DefineEquipmentModifier({
       return count >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="|AC Bonus (Profane)",
-  Cost=Formula("(2500*%CHOICE*%CHOICE)"),
   GrantedItemTypes={
     "Enhancement",
     "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber(1, 5, nil, "Armor Other Bonus"),
-  },
-  Key="Special Ability ~ Bonus AC / Profane",
-  Types={
-    "Armor",
-    "Shield",
-    "Weapon",
-    "Belt",
-    "Body",
-    "Chest",
-    "Eyes",
-    "Feet",
-    "Hands",
-    "Head",
-    "Headband",
-    "Neck",
-    "Ring",
-    "Shoulders",
-    "Wrist",
-    "Instrument",
-    "Staff",
-    "Rod",
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "AC",
-      },
-      Formula=Formula("%CHOICE"),
-      Type={
-        Name="PROFANE",
-        Replace=false,
-        Stack=false,
-      },
-    },
   },
   SpecialProperties={
     {
       Format="Profane bonus to armor class of %CHOICE",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+    "Weapon",
+    "Belt",
+    "Body",
+    "Chest",
+    "Eyes",
+    "Feet",
+    "Hands",
+    "Head",
+    "Headband",
+    "Neck",
+    "Ring",
+    "Shoulders",
+    "Wrist",
+    "Instrument",
+    "Staff",
+    "Rod",
+  },
+})
+DefineEquipmentModifier({
+  Name="|AC Bonus (Other)",
+  Key="Special Ability ~ Bonus AC / Other",
+  Choice={
+    Choose=ChooseNumber(1, 5, nil, "Armor Other Bonus"),
+  },
+  Cost="(2500*%CHOICE*%CHOICE)",
   SourcePage="p.550",
+  Visible=true,
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("%CHOICE"),
+      Type={
+        Name="OTHER",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "AC",
+      },
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -4708,107 +4643,15 @@ DefineEquipmentModifier({
       return count >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="|AC Bonus (Other)",
-  Cost=Formula("(2500*%CHOICE*%CHOICE)"),
   GrantedItemTypes={
     "Enhancement",
     "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber(1, 5, nil, "Armor Other Bonus"),
-  },
-  Key="Special Ability ~ Bonus AC / Other",
-  Types={
-    "Armor",
-    "Shield",
-    "Weapon",
-    "Belt",
-    "Body",
-    "Chest",
-    "Eyes",
-    "Feet",
-    "Hands",
-    "Head",
-    "Headband",
-    "Neck",
-    "Ring",
-    "Shoulders",
-    "Wrist",
-    "Instrument",
-    "Staff",
-    "Rod",
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "AC",
-      },
-      Formula=Formula("%CHOICE"),
-      Type={
-        Name="OTHER",
-        Replace=false,
-        Stack=false,
-      },
-    },
   },
   SpecialProperties={
     {
       Format="Other bonus to armor class of %CHOICE",
     },
   },
-  SourcePage="p.550",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        local count = 0
-        local subCondition
-        subCondition = function (item)
-          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        subCondition = function (item)
-          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        return count >= 2
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="|Natural Armor Bonus (Enhancement)",
-  Cost=Formula("(2000*%CHOICE*%CHOICE)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber(1, 5, nil, "Natural Armor Bonus"),
-  },
-  Key="Special Ability ~ Bonus AC / Natural Armor",
   Types={
     "Armor",
     "Shield",
@@ -4829,73 +4672,72 @@ DefineEquipmentModifier({
     "Staff",
     "Rod",
   },
+})
+DefineEquipmentModifier({
+  Name="|Natural Armor Bonus (Enhancement)",
+  Key="Special Ability ~ Bonus AC / Natural Armor",
+  Choice={
+    Choose=ChooseNumber(1, 5, nil, "Natural Armor Bonus"),
+  },
+  Cost="(2000*%CHOICE*%CHOICE)",
+  SourcePage="p.550",
+  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "AC",
-      },
       Formula=Formula("%CHOICE"),
       Type={
         Name="NATURALARMOR",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "AC",
+      },
     },
+  },
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (item)
+          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (item)
+          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
   },
   SpecialProperties={
     {
       Format="Natural Armor bonus to armor class of %CHOICE",
     },
   },
-  SourcePage="p.550",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        local count = 0
-        local subCondition
-        subCondition = function (item)
-          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        subCondition = function (item)
-          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        return count >= 2
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="|Save Bonus (Resistance)",
-  Cost=Formula("(1000*%CHOICE*%CHOICE)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber(1, 5, nil, "Resistance Bonus"),
-  },
-  Key="Special Ability ~ Bonus Save / Resistance",
   Types={
     "Armor",
     "Shield",
@@ -4916,75 +4758,74 @@ DefineEquipmentModifier({
     "Staff",
     "Rod",
   },
+})
+DefineEquipmentModifier({
+  Name="|Save Bonus (Resistance)",
+  Key="Special Ability ~ Bonus Save / Resistance",
+  Choice={
+    Choose=ChooseNumber(1, 5, nil, "Resistance Bonus"),
+  },
+  Cost="(1000*%CHOICE*%CHOICE)",
+  SourcePage="p.550",
+  Visible=true,
   Bonuses={
     {
       Category="SAVE",
-      Variables={
-        "FORTITUDE",
-        "REFLEX",
-        "WILL",
-      },
       Formula=Formula("%CHOICE"),
       Type={
         Name="RESISTANCE",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "FORTITUDE",
+        "REFLEX",
+        "WILL",
+      },
     },
+  },
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (item)
+          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (item)
+          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
   },
   SpecialProperties={
     {
       Format="Resistance bonus to all saving throws of %CHOICE",
     },
   },
-  SourcePage="p.550",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        local count = 0
-        local subCondition
-        subCondition = function (item)
-          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        subCondition = function (item)
-          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        return count >= 2
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="|Save Bonus (Luck)",
-  Cost=Formula("(2000*%CHOICE*%CHOICE)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber(1, 5, nil, "Luck Bonus"),
-  },
-  Key="Special Ability ~ Bonus Save / Luck",
   Types={
     "Armor",
     "Shield",
@@ -5005,75 +4846,74 @@ DefineEquipmentModifier({
     "Staff",
     "Rod",
   },
+})
+DefineEquipmentModifier({
+  Name="|Save Bonus (Luck)",
+  Key="Special Ability ~ Bonus Save / Luck",
+  Choice={
+    Choose=ChooseNumber(1, 5, nil, "Luck Bonus"),
+  },
+  Cost="(2000*%CHOICE*%CHOICE)",
+  SourcePage="p.550",
+  Visible=true,
   Bonuses={
     {
       Category="SAVE",
-      Variables={
-        "FORTITUDE",
-        "REFLEX",
-        "WILL",
-      },
       Formula=Formula("%CHOICE+Global_LuckBonus"),
       Type={
         Name="Luck",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "FORTITUDE",
+        "REFLEX",
+        "WILL",
+      },
     },
+  },
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (item)
+          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (item)
+          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
   },
   SpecialProperties={
     {
       Format="Luck bonus to all saving throws of %CHOICE",
     },
   },
-  SourcePage="p.550",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        local count = 0
-        local subCondition
-        subCondition = function (item)
-          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        subCondition = function (item)
-          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        return count >= 2
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="|Save Bonus (Insight)",
-  Cost=Formula("(2000*%CHOICE*%CHOICE)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber(1, 5, nil, "Insight Bonus"),
-  },
-  Key="Special Ability ~ Bonus Save / Insight",
   Types={
     "Armor",
     "Shield",
@@ -5094,75 +4934,74 @@ DefineEquipmentModifier({
     "Staff",
     "Rod",
   },
+})
+DefineEquipmentModifier({
+  Name="|Save Bonus (Insight)",
+  Key="Special Ability ~ Bonus Save / Insight",
+  Choice={
+    Choose=ChooseNumber(1, 5, nil, "Insight Bonus"),
+  },
+  Cost="(2000*%CHOICE*%CHOICE)",
+  SourcePage="p.550",
+  Visible=true,
   Bonuses={
     {
       Category="SAVE",
-      Variables={
-        "FORTITUDE",
-        "REFLEX",
-        "WILL",
-      },
       Formula=Formula("%CHOICE"),
       Type={
         Name="INSIGHT",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "FORTITUDE",
+        "REFLEX",
+        "WILL",
+      },
     },
+  },
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (item)
+          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (item)
+          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
   },
   SpecialProperties={
     {
       Format="Insight bonus to all saving throws of %CHOICE",
     },
   },
-  SourcePage="p.550",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        local count = 0
-        local subCondition
-        subCondition = function (item)
-          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        subCondition = function (item)
-          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        return count >= 2
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="|Save Bonus (Sacred)",
-  Cost=Formula("(2000*%CHOICE*%CHOICE)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber(1, 5, nil, "Sacred Bonus"),
-  },
-  Key="Special Ability ~ Bonus Save / Sacred",
   Types={
     "Armor",
     "Shield",
@@ -5183,75 +5022,74 @@ DefineEquipmentModifier({
     "Staff",
     "Rod",
   },
+})
+DefineEquipmentModifier({
+  Name="|Save Bonus (Sacred)",
+  Key="Special Ability ~ Bonus Save / Sacred",
+  Choice={
+    Choose=ChooseNumber(1, 5, nil, "Sacred Bonus"),
+  },
+  Cost="(2000*%CHOICE*%CHOICE)",
+  SourcePage="p.550",
+  Visible=true,
   Bonuses={
     {
       Category="SAVE",
-      Variables={
-        "FORTITUDE",
-        "REFLEX",
-        "WILL",
-      },
       Formula=Formula("%CHOICE"),
       Type={
         Name="SACRED",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "FORTITUDE",
+        "REFLEX",
+        "WILL",
+      },
     },
+  },
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (item)
+          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (item)
+          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
   },
   SpecialProperties={
     {
       Format="Sacred bonus to all saving throws of %CHOICE",
     },
   },
-  SourcePage="p.550",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        local count = 0
-        local subCondition
-        subCondition = function (item)
-          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        subCondition = function (item)
-          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        return count >= 2
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="|Save Bonus (Profane)",
-  Cost=Formula("(2000*%CHOICE*%CHOICE)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber(1, 5, nil, "Profane Bonus"),
-  },
-  Key="Special Ability ~ Bonus Save / Profane",
   Types={
     "Armor",
     "Shield",
@@ -5272,75 +5110,74 @@ DefineEquipmentModifier({
     "Staff",
     "Rod",
   },
+})
+DefineEquipmentModifier({
+  Name="|Save Bonus (Profane)",
+  Key="Special Ability ~ Bonus Save / Profane",
+  Choice={
+    Choose=ChooseNumber(1, 5, nil, "Profane Bonus"),
+  },
+  Cost="(2000*%CHOICE*%CHOICE)",
+  SourcePage="p.550",
+  Visible=true,
   Bonuses={
     {
       Category="SAVE",
-      Variables={
-        "FORTITUDE",
-        "REFLEX",
-        "WILL",
-      },
       Formula=Formula("%CHOICE"),
       Type={
         Name="PROFANE",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "FORTITUDE",
+        "REFLEX",
+        "WILL",
+      },
     },
+  },
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (item)
+          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (item)
+          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
   },
   SpecialProperties={
     {
       Format="Profane bonus to all saving throws of %CHOICE",
     },
   },
-  SourcePage="p.550",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        local count = 0
-        local subCondition
-        subCondition = function (item)
-          return ((item.IsType("Enhancement")) + (item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement")) + (item.IsType("WeaponEnhancement"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        subCondition = function (item)
-          return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Weapon"))) >= 1
-        end
-        if subCondition(character) then
-          count = count + 1
-        end
-        return count >= 2
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Belt")) + (item.IsType("Body")) + (item.IsType("Chest")) + (item.IsType("Eyes")) + (item.IsType("Feet")) + (item.IsType("Hands")) + (item.IsType("Head")) + (item.IsType("Headband")) + (item.IsType("Neck")) + (item.IsType("Ring")) + (item.IsType("Shoulders")) + (item.IsType("Wrist")) + (item.IsType("Instrument")) + (item.IsType("Staff")) + (item.IsType("Rod"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="|Save Bonus (Other)",
-  Cost=Formula("(2000*%CHOICE*%CHOICE)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber(1, 5, nil, "Other bonus Bonus"),
-  },
-  Key="Special Ability ~ Bonus Save / Other",
   Types={
     "Armor",
     "Shield",
@@ -5361,28 +5198,32 @@ DefineEquipmentModifier({
     "Staff",
     "Rod",
   },
+})
+DefineEquipmentModifier({
+  Name="|Save Bonus (Other)",
+  Key="Special Ability ~ Bonus Save / Other",
+  Choice={
+    Choose=ChooseNumber(1, 5, nil, "Other bonus Bonus"),
+  },
+  Cost="(2000*%CHOICE*%CHOICE)",
+  SourcePage="p.550",
+  Visible=true,
   Bonuses={
     {
       Category="SAVE",
-      Variables={
-        "FORTITUDE",
-        "REFLEX",
-        "WILL",
-      },
       Formula=Formula("%CHOICE"),
       Type={
         Name="OTHER",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "FORTITUDE",
+        "REFLEX",
+        "WILL",
+      },
     },
   },
-  SpecialProperties={
-    {
-      Format="Other bonus to all saving throws of %CHOICE",
-    },
-  },
-  SourcePage="p.550",
   Conditions={
     function (character)
       local count = 0
@@ -5416,20 +5257,15 @@ DefineEquipmentModifier({
       return count >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="|Skill Bonus (Competence)",
-  Cost=Formula("(100*%CHOICE*%CHOICE)"),
   GrantedItemTypes={
     "Enhancement",
     "Magic",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseSkillBonus(nil, "Base", 1, 30, "Skill Bonus"),
+  SpecialProperties={
+    {
+      Format="Other bonus to all saving throws of %CHOICE",
+    },
   },
-  Key="Special Ability ~ Bonus Skill / Competence",
   Types={
     "Armor",
     "Shield",
@@ -5450,26 +5286,30 @@ DefineEquipmentModifier({
     "Staff",
     "Rod",
   },
+})
+DefineEquipmentModifier({
+  Name="|Skill Bonus (Competence)",
+  Key="Special Ability ~ Bonus Skill / Competence",
+  Choice={
+    Choose=ChooseSkillBonus(nil, "Base", 1, 30, "Skill Bonus"),
+  },
+  Cost="(100*%CHOICE*%CHOICE)",
+  SourcePage="p.550",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "%CHOICE",
-      },
       Formula=Formula("%CHOICEVALUE"),
       Type={
         Name="COMPETENCE",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "%CHOICE",
+      },
     },
   },
-  SpecialProperties={
-    {
-      Format="Competence bonus to selected skill of %CHOICE",
-    },
-  },
-  SourcePage="p.550",
   Conditions={
     function (character)
       local count = 0
@@ -5503,21 +5343,18 @@ DefineEquipmentModifier({
       return count >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="|Spell Resistance",
-  Cost=Formula("10000*(%CHOICE-12)"),
   GrantedItemTypes={
     "Enhancement",
     "Magic",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  Choice={
-    Choose=ChooseNumber(13, 32, nil, "Spell Resistance"),
+  SpecialProperties={
+    {
+      Format="Competence bonus to selected skill of %CHOICE",
+    },
   },
-  Key="Special Ability ~ Bonus Spell Resistance",
   Types={
+    "Armor",
+    "Shield",
     "Weapon",
     "Belt",
     "Body",
@@ -5535,13 +5372,17 @@ DefineEquipmentModifier({
     "Staff",
     "Rod",
   },
-  SpecialProperties={
-    {
-      Format="base spell resistance of %CHOICE",
-    },
+})
+DefineEquipmentModifier({
+  Name="|Spell Resistance",
+  Key="Special Ability ~ Bonus Spell Resistance",
+  Choice={
+    Choose=ChooseNumber(13, 32, nil, "Spell Resistance"),
   },
+  Cost="10000*(%CHOICE-12)",
   SourcePage="p.550",
   SpellResistance="%CHOICE",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -5561,29 +5402,51 @@ DefineEquipmentModifier({
       return count >= 1
     end,
   },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
+  },
+  SpecialProperties={
+    {
+      Format="base spell resistance of %CHOICE",
+    },
+  },
+  Types={
+    "Weapon",
+    "Belt",
+    "Body",
+    "Chest",
+    "Eyes",
+    "Feet",
+    "Hands",
+    "Head",
+    "Headband",
+    "Neck",
+    "Ring",
+    "Shoulders",
+    "Wrist",
+    "Instrument",
+    "Staff",
+    "Rod",
+  },
 })
 DefineEquipmentModifier({
   Name="|Maximize Knowledge Skill",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NONAME",
-  NameModifierLocation="Parentheses",
+  Key="Special Ability ~ Bonus Skill / Maximize Knowledge",
   Choice={
     Choose=ChooseSkill(function (character, skill)
       return ((skill.IsType("Knowledge")))
     end, "Maximized Knowledge Skill"),
   },
-  Key="Special Ability ~ Bonus Skill / Maximize Knowledge",
-  Types={
-    "Intelligence",
-  },
+  NameModifier="NONAME",
+  Visible=true,
   Bonuses={
     {
       Category="SKILLRANK",
+      Formula=Formula("99"),
       Variables={
         "%CHOICE",
       },
-      Formula=Formula("99"),
     },
   },
   SpecialProperties={
@@ -5591,29 +5454,27 @@ DefineEquipmentModifier({
       Format="Grants maximum skill ranks in %CHOICE",
     },
   },
+  Types={
+    "Intelligence",
+  },
 })
 DefineEquipmentModifier({
   Name="|Maximize Any Skill",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NONAME",
-  NameModifierLocation="Parentheses",
+  Key="Special Ability ~ Bonus Skill / Maximize Any Skill",
   Choice={
     Choose=ChooseSkill(function (character, skill)
       return ((skill.IsType("Strength"))) or ((skill.IsType("Dexterity"))) or ((skill.IsType("Intelligence"))) or ((skill.IsType("Wisdom"))) or ((skill.IsType("Charisma")))
     end, "Maximized Any Skill"),
   },
-  Key="Special Ability ~ Bonus Skill / Maximize Any Skill",
-  Types={
-    "Intelligence",
-  },
+  NameModifier="NONAME",
+  Visible=true,
   Bonuses={
     {
       Category="SKILLRANK",
+      Formula=Formula("99"),
       Variables={
         "%CHOICE",
       },
-      Formula=Formula("99"),
     },
   },
   SpecialProperties={
@@ -5621,45 +5482,22 @@ DefineEquipmentModifier({
       Format="Grants maximum skill ranks in %CHOICE",
     },
   },
+  Types={
+    "Intelligence",
+  },
 })
 DefineEquipmentModifier({
   Name="|Spell Effect (Continuous/Standard spell duration)",
-  Cost=Formula("(2000*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL)+%SPELLCOST+(5*%SPELLXPCOST)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="SPELL",
-  NameModifierLocation="Parentheses",
+  Key="Special Ability ~ Spell Effect / Continuous / Hour per Level",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return 
     end),
   },
-  Key="Special Ability ~ Spell Effect / Continuous / Hour per Level",
-  Types={
-    "Armor",
-    "Shield",
-    "Weapon",
-    "Belt",
-    "Body",
-    "Chest",
-    "Eyes",
-    "Feet",
-    "Hands",
-    "Head",
-    "Headband",
-    "Neck",
-    "Ring",
-    "Shoulders",
-    "Wrist",
-    "Instrument",
-    "Staff",
-    "Rod",
-  },
+  Cost="(2000*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL)+%SPELLCOST+(5*%SPELLXPCOST)",
+  NameModifier="SPELL",
   SourcePage="p.550",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -5692,46 +5530,44 @@ DefineEquipmentModifier({
       end
       return count >= 1
     end,
+  },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
+  },
+  Types={
+    "Armor",
+    "Shield",
+    "Weapon",
+    "Belt",
+    "Body",
+    "Chest",
+    "Eyes",
+    "Feet",
+    "Hands",
+    "Head",
+    "Headband",
+    "Neck",
+    "Ring",
+    "Shoulders",
+    "Wrist",
+    "Instrument",
+    "Staff",
+    "Rod",
   },
 })
 DefineEquipmentModifier({
   Name="|Spell Effect (Continuous/Spell duration measured in rounds)",
-  Cost=Formula("(4*(2000*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL))+%SPELLCOST+(5*%SPELLXPCOST)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="SPELL",
-  NameModifierLocation="Parentheses",
+  Key="Special Ability ~ Spell Effect / Continuous / Round per Level",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return 
     end),
   },
-  Key="Special Ability ~ Spell Effect / Continuous / Round per Level",
-  Types={
-    "Armor",
-    "Shield",
-    "Weapon",
-    "Belt",
-    "Body",
-    "Chest",
-    "Eyes",
-    "Feet",
-    "Hands",
-    "Head",
-    "Headband",
-    "Neck",
-    "Ring",
-    "Shoulders",
-    "Wrist",
-    "Instrument",
-    "Staff",
-    "Rod",
-  },
+  Cost="(4*(2000*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL))+%SPELLCOST+(5*%SPELLXPCOST)",
+  NameModifier="SPELL",
   SourcePage="p.550",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -5764,46 +5600,44 @@ DefineEquipmentModifier({
       end
       return count >= 1
     end,
+  },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
+  },
+  Types={
+    "Armor",
+    "Shield",
+    "Weapon",
+    "Belt",
+    "Body",
+    "Chest",
+    "Eyes",
+    "Feet",
+    "Hands",
+    "Head",
+    "Headband",
+    "Neck",
+    "Ring",
+    "Shoulders",
+    "Wrist",
+    "Instrument",
+    "Staff",
+    "Rod",
   },
 })
 DefineEquipmentModifier({
   Name="|Spell Effect (Continuous/Spell duration 1 minute/level)",
-  Cost=Formula("(2*(2000*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL))+%SPELLCOST+(5*%SPELLXPCOST)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="SPELL",
-  NameModifierLocation="Parentheses",
+  Key="Special Ability ~ Spell Effect / Continuous / Minute per Level",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return 
     end),
   },
-  Key="Special Ability ~ Spell Effect / Continuous / Minute per Level",
-  Types={
-    "Armor",
-    "Shield",
-    "Weapon",
-    "Belt",
-    "Body",
-    "Chest",
-    "Eyes",
-    "Feet",
-    "Hands",
-    "Head",
-    "Headband",
-    "Neck",
-    "Ring",
-    "Shoulders",
-    "Wrist",
-    "Instrument",
-    "Staff",
-    "Rod",
-  },
+  Cost="(2*(2000*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL))+%SPELLCOST+(5*%SPELLXPCOST)",
+  NameModifier="SPELL",
   SourcePage="p.550",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -5836,46 +5670,44 @@ DefineEquipmentModifier({
       end
       return count >= 1
     end,
+  },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
+  },
+  Types={
+    "Armor",
+    "Shield",
+    "Weapon",
+    "Belt",
+    "Body",
+    "Chest",
+    "Eyes",
+    "Feet",
+    "Hands",
+    "Head",
+    "Headband",
+    "Neck",
+    "Ring",
+    "Shoulders",
+    "Wrist",
+    "Instrument",
+    "Staff",
+    "Rod",
   },
 })
 DefineEquipmentModifier({
   Name="|Spell Effect (Continuous/Spell duration 10 minutes/level)",
-  Cost=Formula("(1.5*(2000*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL))+%SPELLCOST+(5*%SPELLXPCOST)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="SPELL",
-  NameModifierLocation="Parentheses",
+  Key="Special Ability ~ Spell Effect / Continuous / 10 Minutes per Level",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return 
     end),
   },
-  Key="Special Ability ~ Spell Effect / Continuous / 10 Minutes per Level",
-  Types={
-    "Armor",
-    "Shield",
-    "Weapon",
-    "Belt",
-    "Body",
-    "Chest",
-    "Eyes",
-    "Feet",
-    "Hands",
-    "Head",
-    "Headband",
-    "Neck",
-    "Ring",
-    "Shoulders",
-    "Wrist",
-    "Instrument",
-    "Staff",
-    "Rod",
-  },
+  Cost="(1.5*(2000*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL))+%SPELLCOST+(5*%SPELLXPCOST)",
+  NameModifier="SPELL",
   SourcePage="p.550",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -5908,46 +5740,44 @@ DefineEquipmentModifier({
       end
       return count >= 1
     end,
+  },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
+  },
+  Types={
+    "Armor",
+    "Shield",
+    "Weapon",
+    "Belt",
+    "Body",
+    "Chest",
+    "Eyes",
+    "Feet",
+    "Hands",
+    "Head",
+    "Headband",
+    "Neck",
+    "Ring",
+    "Shoulders",
+    "Wrist",
+    "Instrument",
+    "Staff",
+    "Rod",
   },
 })
 DefineEquipmentModifier({
   Name="|Spell Effect (Continuous/Spell duration 24-hours or more)",
-  Cost=Formula("(.5*(2000*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL))+%SPELLCOST+(5*%SPELLXPCOST)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="SPELL",
-  NameModifierLocation="Parentheses",
+  Key="Special Ability ~ Spell Effect / Continuous / Day per Level",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return 
     end),
   },
-  Key="Special Ability ~ Spell Effect / Continuous / Day per Level",
-  Types={
-    "Armor",
-    "Shield",
-    "Weapon",
-    "Belt",
-    "Body",
-    "Chest",
-    "Eyes",
-    "Feet",
-    "Hands",
-    "Head",
-    "Headband",
-    "Neck",
-    "Ring",
-    "Shoulders",
-    "Wrist",
-    "Instrument",
-    "Staff",
-    "Rod",
-  },
+  Cost="(.5*(2000*(max(%SPELLLEVEL,(1/2)))*%CASTERLEVEL))+%SPELLCOST+(5*%SPELLXPCOST)",
+  NameModifier="SPELL",
   SourcePage="p.550",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -5981,106 +5811,112 @@ DefineEquipmentModifier({
       return count >= 1
     end,
   },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
+  },
+  Types={
+    "Armor",
+    "Shield",
+    "Weapon",
+    "Belt",
+    "Body",
+    "Chest",
+    "Eyes",
+    "Feet",
+    "Hands",
+    "Head",
+    "Headband",
+    "Neck",
+    "Ring",
+    "Shoulders",
+    "Wrist",
+    "Instrument",
+    "Staff",
+    "Rod",
+  },
 })
 DefineEquipmentModifier({
+  Charges={
+    Min=1,
+    Max=5,
+  },
   Name="|Spell Effect (Staff/Primary Power)",
-  Cost=Formula("((400*(max(%SPELLLEVEL,(1/2)))*(max(%CASTERLEVEL,8))+%SPELLCOST+(5*%SPELLXPCOST)))/%CHARGES"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="SPELL",
-  NameModifierLocation="Parentheses",
-  Choice={
-    Choose=ChooseSpell(function (character, spell)
-      return 
-    end),
-  },
-  Charges={
-    Min=1,
-    Max=5,
-  },
   Key="Special Ability ~ Spell Effect / Staff / Primary Power",
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return 
+    end),
+  },
+  Cost="((400*(max(%SPELLLEVEL,(1/2)))*(max(%CASTERLEVEL,8))+%SPELLCOST+(5*%SPELLXPCOST)))/%CHARGES",
+  NameModifier="SPELL",
+  Visible=true,
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
+  },
   Types={
     "Staff",
   },
 })
 DefineEquipmentModifier({
+  Charges={
+    Min=1,
+    Max=5,
+  },
   Name="|Spell Effect (Staff/Secondary Power)",
-  Cost=Formula("((400/4*3*(max(%SPELLLEVEL,(1/2)))*(max(%CASTERLEVEL,8))+%SPELLCOST+(5*%SPELLXPCOST)))/%CHARGES"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="SPELL",
-  NameModifierLocation="Parentheses",
+  Key="Special Ability ~ Spell Effect / Staff / Secondary Power",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return 
     end),
   },
-  Charges={
-    Min=1,
-    Max=5,
+  Cost="((400/4*3*(max(%SPELLLEVEL,(1/2)))*(max(%CASTERLEVEL,8))+%SPELLCOST+(5*%SPELLXPCOST)))/%CHARGES",
+  NameModifier="SPELL",
+  Visible=true,
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
   },
-  Key="Special Ability ~ Spell Effect / Staff / Secondary Power",
   Types={
     "Staff",
   },
 })
 DefineEquipmentModifier({
-  Name="|Spell Effect (Staff/Lesser Powers)",
-  Cost=Formula("((400/2*(max(%SPELLLEVEL,(1/2)))*(max(%CASTERLEVEL,8))+%SPELLCOST+(5*%SPELLXPCOST)))/%CHARGES"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
+  Charges={
+    Min=1,
+    Max=5,
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="SPELL",
-  NameModifierLocation="Parentheses",
+  Name="|Spell Effect (Staff/Lesser Powers)",
+  Key="Special Ability ~ Spell Effect / Staff / Lesser Power",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return 
     end),
   },
-  Charges={
-    Min=1,
-    Max=5,
+  Cost="((400/2*(max(%SPELLLEVEL,(1/2)))*(max(%CASTERLEVEL,8))+%SPELLCOST+(5*%SPELLXPCOST)))/%CHARGES",
+  NameModifier="SPELL",
+  Visible=true,
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
   },
-  Key="Special Ability ~ Spell Effect / Staff / Lesser Power",
   Types={
     "Staff",
   },
 })
 DefineEquipmentModifier({
   Name="Spell Effect (Single Use/Completion/Arcane)",
-  Cost=Formula("(25*(max((%SPELLLEVEL),(1/2)))*%CASTERLEVEL)+%SPELLCOST+(5*%SPELLXPCOST)"),
-  GrantedItemTypes={
-    "Enhancement",
-    "Magic",
-    "Consumable",
-    "Arcane",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="SPELL",
-  NameModifierLocation="Parentheses",
+  Key="Special Ability ~ Spell Effect / Completion / Scroll / Arcane",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return (((spell.IsType("Arcane")))) and spell.Level >= 0 and spell.Level <= 9
     end),
   },
-  Key="Special Ability ~ Spell Effect / Completion / Scroll / Arcane",
-  Types={
-    "Scroll",
-    "Arcane",
-  },
+  Cost="(25*(max((%SPELLLEVEL),(1/2)))*%CASTERLEVEL)+%SPELLCOST+(5*%SPELLXPCOST)",
+  NameModifier="SPELL",
   SourcePage="p.490",
+  Visible=true,
   Conditions={
     function (item)
       return ((item.IsType("Scroll"))) >= 1
@@ -6089,31 +5925,29 @@ DefineEquipmentModifier({
       return not (((item.IsType("Divine"))) >= 1)
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Spell Effect (Single Use/Completion/Divine)",
-  Cost=Formula("(25*(max((%SPELLLEVEL),(1/2)))*%CASTERLEVEL)+%SPELLCOST+(5*%SPELLXPCOST)"),
   GrantedItemTypes={
     "Enhancement",
     "Magic",
     "Consumable",
-    "Divine",
+    "Arcane",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="SPELL",
-  NameModifierLocation="Parentheses",
+  Types={
+    "Scroll",
+    "Arcane",
+  },
+})
+DefineEquipmentModifier({
+  Name="Spell Effect (Single Use/Completion/Divine)",
+  Key="Special Ability ~ Spell Effect / Completion / Scroll / Divine",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return (((spell.IsType("Divine")))) and spell.Level >= 0 and spell.Level <= 9
     end),
   },
-  Key="Special Ability ~ Spell Effect / Completion / Scroll / Divine",
-  Types={
-    "Scroll",
-    "Divine",
-  },
+  Cost="(25*(max((%SPELLLEVEL),(1/2)))*%CASTERLEVEL)+%SPELLCOST+(5*%SPELLXPCOST)",
+  NameModifier="SPELL",
   SourcePage="p.490",
+  Visible=true,
   Conditions={
     function (item)
       return ((item.IsType("Scroll"))) >= 1
@@ -6122,184 +5956,170 @@ DefineEquipmentModifier({
       return not (((item.IsType("Arcane"))) >= 1)
     end,
   },
+  GrantedItemTypes={
+    "Enhancement",
+    "Magic",
+    "Consumable",
+    "Divine",
+  },
+  Types={
+    "Scroll",
+    "Divine",
+  },
 })
 DefineEquipmentModifier({
   Name="Wield One Step Greater",
-  Visible=true,
-  AffectsBothHeads=false,
   Key="Special Quality ~ Wield Size / 1 Step Greater",
-  Types={
-    "Weapon",
-    "Melee",
-  },
+  Visible=true,
   Bonuses={
     {
       Category="WEAPON",
+      Formula=Formula("-1"),
       Variables={
         "WIELDCATEGORY",
       },
-      Formula=Formula("-1"),
     },
+  },
+  Types={
+    "Weapon",
+    "Melee",
   },
 })
 DefineEquipmentModifier({
   Name="Wield Two Step Greater",
-  Visible=true,
-  AffectsBothHeads=false,
   Key="Special Quality ~ Wield Size / 2 Steps Greater",
-  Types={
-    "Weapon",
-    "Melee",
-  },
+  Visible=true,
   Bonuses={
     {
       Category="WEAPON",
+      Formula=Formula("-2"),
       Variables={
         "WIELDCATEGORY",
       },
-      Formula=Formula("-2"),
     },
+  },
+  Types={
+    "Weapon",
+    "Melee",
   },
 })
 DefineEquipmentModifier({
   Name="Wield Three Step Greater",
-  Visible=true,
-  AffectsBothHeads=false,
   Key="Special Quality ~ Wield Size / 3 Steps Greater",
-  Types={
-    "Weapon",
-    "Melee",
-  },
+  Visible=true,
   Bonuses={
     {
       Category="WEAPON",
+      Formula=Formula("-3"),
       Variables={
         "WIELDCATEGORY",
       },
-      Formula=Formula("-3"),
     },
+  },
+  Types={
+    "Weapon",
+    "Melee",
   },
 })
 DefineEquipmentModifier({
   Name="Wield One Step Greater No Penalty",
-  Visible=true,
-  AffectsBothHeads=false,
   Key="Special Quality ~ Wield Size / 1 Step Greater / No Penalty",
-  Types={
-    "Weapon",
-    "Melee",
-  },
+  Visible=true,
   Bonuses={
     {
       Category="WEAPON",
+      Formula=Formula("-1"),
       Variables={
         "WIELDCATEGORY",
       },
-      Formula=Formula("-1"),
     },
     {
       Category="WEAPON",
+      Formula=Formula("2"),
       Variables={
         "TOHIT",
       },
-      Formula=Formula("2"),
     },
+  },
+  Types={
+    "Weapon",
+    "Melee",
   },
 })
 DefineEquipmentModifier({
   Name="Wield Two Step Greater No Penalty",
-  Visible=true,
-  AffectsBothHeads=false,
   Key="Special Quality ~ Wield Size / 2 Steps Greater / No Penalty",
-  Types={
-    "Weapon",
-    "Melee",
-  },
+  Visible=true,
   Bonuses={
     {
       Category="WEAPON",
+      Formula=Formula("-2"),
       Variables={
         "WIELDCATEGORY",
       },
-      Formula=Formula("-2"),
     },
     {
       Category="WEAPON",
+      Formula=Formula("4"),
       Variables={
         "TOHIT",
       },
-      Formula=Formula("4"),
     },
+  },
+  Types={
+    "Weapon",
+    "Melee",
   },
 })
 DefineEquipmentModifier({
   Name="Wield Three Step Greater No Penalty",
-  Visible=true,
-  AffectsBothHeads=false,
   Key="Special Quality ~ Wield Size / 3 Steps Greater / No Penalty",
+  Visible=true,
+  Bonuses={
+    {
+      Category="WEAPON",
+      Formula=Formula("-3"),
+      Variables={
+        "WIELDCATEGORY",
+      },
+    },
+    {
+      Category="WEAPON",
+      Formula=Formula("6"),
+      Variables={
+        "TOHIT",
+      },
+    },
+  },
   Types={
     "Weapon",
     "Melee",
   },
-  Bonuses={
-    {
-      Category="WEAPON",
-      Variables={
-        "WIELDCATEGORY",
-      },
-      Formula=Formula("-3"),
-    },
-    {
-      Category="WEAPON",
-      Variables={
-        "TOHIT",
-      },
-      Formula=Formula("6"),
-    },
-  },
 })
 DefineEquipmentModifier({
   Name="+1 (Enhancement to Weapon)",
-  GrantedItemTypes={
-    "Masterwork",
-    "WeaponEnhancement",
-    "Magic",
-    "Plus1",
-  },
-  Visible=true,
+  Key="Special Ability ~ +1 ~ Weapon",
   AffectsBothHeads=false,
+  EquivalentEnhancementBonus=1,
   NameModifier="TEXT=+1",
   NameModifierLocation="Prefix",
-  Replaces={
-    "Special Ability ~ +2 ~ Weapon",
-    "Special Ability ~ +3 ~ Weapon",
-    "Special Ability ~ +4 ~ Weapon",
-    "Special Ability ~ +5 ~ Weapon",
-    "Special Quality ~ Masterwork ~ Weapon",
-  },
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ +1 ~ Weapon",
-  Types={
-    "Weapon",
-  },
+  SourcePage="p.344",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("300"),
       Conditions={
         function (item)
@@ -6309,22 +6129,24 @@ DefineEquipmentModifier({
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
     {
       Category="WEAPON",
-      Variables={
-        "DAMAGE",
-        "TOHIT",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "DAMAGE",
+        "TOHIT",
+      },
     },
   },
-  SourcePage="p.344",
   Conditions={
     function (item)
       return ((item.IsType("Weapon"))) >= 1
@@ -6332,50 +6154,48 @@ DefineEquipmentModifier({
     function (item)
       return not (((item.IsType("Ammunition"))) >= 1)
     end,
+  },
+  GrantedItemTypes={
+    "Masterwork",
+    "WeaponEnhancement",
+    "Magic",
+    "Plus1",
+  },
+  Replaces={
+    "Special Ability ~ +2 ~ Weapon",
+    "Special Ability ~ +3 ~ Weapon",
+    "Special Ability ~ +4 ~ Weapon",
+    "Special Ability ~ +5 ~ Weapon",
+    "Special Quality ~ Masterwork ~ Weapon",
+  },
+  Types={
+    "Weapon",
   },
 })
 DefineEquipmentModifier({
   Name="+2 (Enhancement to Weapon)",
-  GrantedItemTypes={
-    "Masterwork",
-    "WeaponEnhancement",
-    "Magic",
-    "Plus2",
-  },
-  Visible=true,
+  Key="Special Ability ~ +2 ~ Weapon",
   AffectsBothHeads=false,
+  EquivalentEnhancementBonus=2,
   NameModifier="TEXT=+2",
   NameModifierLocation="Prefix",
-  Replaces={
-    "Special Ability ~ +1 ~ Weapon",
-    "Special Ability ~ +3 ~ Weapon",
-    "Special Ability ~ +4 ~ Weapon",
-    "Special Ability ~ +5 ~ Weapon",
-    "Special Quality ~ Masterwork ~ Weapon",
-  },
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ +2 ~ Weapon",
-  Types={
-    "Weapon",
-  },
+  SourcePage="p.344",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("300"),
       Conditions={
         function (item)
@@ -6385,22 +6205,24 @@ DefineEquipmentModifier({
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
     {
       Category="WEAPON",
-      Variables={
-        "DAMAGE",
-        "TOHIT",
-      },
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "DAMAGE",
+        "TOHIT",
+      },
     },
   },
-  SourcePage="p.344",
   Conditions={
     function (item)
       return ((item.IsType("Weapon"))) >= 1
@@ -6409,49 +6231,47 @@ DefineEquipmentModifier({
       return not (((item.IsType("Ammunition"))) >= 1)
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="+3 (Enhancement to Weapon)",
   GrantedItemTypes={
     "Masterwork",
     "WeaponEnhancement",
     "Magic",
-    "Plus3",
+    "Plus2",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+3",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +1 ~ Weapon",
-    "Special Ability ~ +2 ~ Weapon",
+    "Special Ability ~ +3 ~ Weapon",
     "Special Ability ~ +4 ~ Weapon",
     "Special Ability ~ +5 ~ Weapon",
     "Special Quality ~ Masterwork ~ Weapon",
   },
-  EquivalentEnhancementBonus=3,
-  Key="Special Ability ~ +3 ~ Weapon",
   Types={
     "Weapon",
   },
+})
+DefineEquipmentModifier({
+  Name="+3 (Enhancement to Weapon)",
+  Key="Special Ability ~ +3 ~ Weapon",
+  AffectsBothHeads=false,
+  EquivalentEnhancementBonus=3,
+  NameModifier="TEXT=+3",
+  NameModifierLocation="Prefix",
+  SourcePage="p.344",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("300"),
       Conditions={
         function (item)
@@ -6461,22 +6281,24 @@ DefineEquipmentModifier({
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
     {
       Category="WEAPON",
-      Variables={
-        "DAMAGE",
-        "TOHIT",
-      },
       Formula=Formula("3"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "DAMAGE",
+        "TOHIT",
+      },
     },
   },
-  SourcePage="p.344",
   Conditions={
     function (item)
       return ((item.IsType("Weapon"))) >= 1
@@ -6485,19 +6307,88 @@ DefineEquipmentModifier({
       return not (((item.IsType("Ammunition"))) >= 1)
     end,
   },
+  GrantedItemTypes={
+    "Masterwork",
+    "WeaponEnhancement",
+    "Magic",
+    "Plus3",
+  },
+  Replaces={
+    "Special Ability ~ +1 ~ Weapon",
+    "Special Ability ~ +2 ~ Weapon",
+    "Special Ability ~ +4 ~ Weapon",
+    "Special Ability ~ +5 ~ Weapon",
+    "Special Quality ~ Masterwork ~ Weapon",
+  },
+  Types={
+    "Weapon",
+  },
 })
 DefineEquipmentModifier({
   Name="+4 (Enhancement to Weapon)",
+  Key="Special Ability ~ +4 ~ Weapon",
+  AffectsBothHeads=false,
+  EquivalentEnhancementBonus=4,
+  NameModifier="TEXT=+4",
+  NameModifierLocation="Prefix",
+  SourcePage="p.344",
+  Visible=true,
+  Bonuses={
+    {
+      Category="ITEMCOST",
+      Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
+        end,
+      },
+      Variables={
+        "Cost",
+      },
+    },
+    {
+      Category="ITEMCOST",
+      Formula=Formula("300"),
+      Conditions={
+        function (item)
+          return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("WEAPON"))) >= 1
+        end,
+      },
+      Variables={
+        "Cost",
+      },
+    },
+    {
+      Category="WEAPON",
+      Formula=Formula("4"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "DAMAGE",
+        "TOHIT",
+      },
+    },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("Weapon"))) >= 1
+    end,
+    function (item)
+      return not (((item.IsType("Ammunition"))) >= 1)
+    end,
+  },
   GrantedItemTypes={
     "Masterwork",
     "WeaponEnhancement",
     "Magic",
     "Plus4",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+4",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +1 ~ Weapon",
     "Special Ability ~ +2 ~ Weapon",
@@ -6505,29 +6396,34 @@ DefineEquipmentModifier({
     "Special Ability ~ +5 ~ Weapon",
     "Special Quality ~ Masterwork ~ Weapon",
   },
-  EquivalentEnhancementBonus=4,
-  Key="Special Ability ~ +4 ~ Weapon",
   Types={
     "Weapon",
   },
+})
+DefineEquipmentModifier({
+  Name="+5 (Enhancement to Weapon)",
+  Key="Special Ability ~ +5 ~ Weapon",
+  AffectsBothHeads=false,
+  EquivalentEnhancementBonus=5,
+  NameModifier="TEXT=+5",
+  NameModifierLocation="Prefix",
+  SourcePage="p.344",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("300"),
       Conditions={
         function (item)
@@ -6537,22 +6433,24 @@ DefineEquipmentModifier({
           return ((item.IsType("WEAPON"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
     {
       Category="WEAPON",
-      Variables={
-        "DAMAGE",
-        "TOHIT",
-      },
-      Formula=Formula("4"),
+      Formula=Formula("5"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "DAMAGE",
+        "TOHIT",
+      },
     },
   },
-  SourcePage="p.344",
   Conditions={
     function (item)
       return ((item.IsType("Weapon"))) >= 1
@@ -6561,19 +6459,12 @@ DefineEquipmentModifier({
       return not (((item.IsType("Ammunition"))) >= 1)
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="+5 (Enhancement to Weapon)",
   GrantedItemTypes={
     "Masterwork",
     "WeaponEnhancement",
     "Magic",
     "Plus5",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+5",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +1 ~ Weapon",
     "Special Ability ~ +2 ~ Weapon",
@@ -6581,75 +6472,72 @@ DefineEquipmentModifier({
     "Special Ability ~ +4 ~ Weapon",
     "Special Quality ~ Masterwork ~ Weapon",
   },
-  EquivalentEnhancementBonus=5,
-  Key="Special Ability ~ +5 ~ Weapon",
   Types={
     "Weapon",
   },
+})
+DefineEquipmentModifier({
+  Name="+1 (Enhancement to Ammunition)",
+  Key="Special Ability ~ +1 ~ Ammunition",
+  AffectsBothHeads=false,
+  EquivalentEnhancementBonus=1,
+  NameModifier="TEXT=+1",
+  NameModifierLocation="Prefix",
+  SourcePage="p.344",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
-      Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
+      Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
         function (item)
-          return ((item.IsType("WEAPON"))) >= 1
+          return ((item.IsType("AMMUNITION"))) >= 1
         end,
+      },
+      Variables={
+        "Cost",
       },
     },
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
-      Formula=Formula("300"),
+      Formula=Formula("6"),
       Conditions={
         function (item)
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
         end,
         function (item)
-          return ((item.IsType("WEAPON"))) >= 1
+          return ((item.IsType("AMMUNITION"))) >= 1
         end,
+      },
+      Variables={
+        "Cost",
       },
     },
     {
       Category="WEAPON",
-      Variables={
-        "DAMAGE",
-        "TOHIT",
-      },
-      Formula=Formula("5"),
+      Formula=Formula("1"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "DAMAGE",
+        "TOHIT",
+      },
     },
   },
-  SourcePage="p.344",
   Conditions={
     function (item)
-      return ((item.IsType("Weapon"))) >= 1
-    end,
-    function (item)
-      return not (((item.IsType("Ammunition"))) >= 1)
+      return ((item.IsType("Ammunition"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="+1 (Enhancement to Ammunition)",
   GrantedItemTypes={
     "Masterwork",
     "Enhancement",
     "Magic",
     "Plus1",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+1",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +2 ~ Ammunition",
     "Special Ability ~ +3 ~ Ammunition",
@@ -6657,102 +6545,34 @@ DefineEquipmentModifier({
     "Special Ability ~ +5 ~ Ammunition",
     "Special Quality ~ Masterwork ~ Ammunition",
   },
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ +1 ~ Ammunition",
   Types={
     "Ammunition",
-  },
-  Bonuses={
-    {
-      Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
-      Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
-      Conditions={
-        function (item)
-          return ((item.IsType("AMMUNITION"))) >= 1
-        end,
-      },
-    },
-    {
-      Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
-      Formula=Formula("6"),
-      Conditions={
-        function (item)
-          return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
-        end,
-        function (item)
-          return ((item.IsType("AMMUNITION"))) >= 1
-        end,
-      },
-    },
-    {
-      Category="WEAPON",
-      Variables={
-        "DAMAGE",
-        "TOHIT",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Enhancement",
-        Replace=false,
-        Stack=false,
-      },
-    },
-  },
-  SourcePage="p.344",
-  Conditions={
-    function (item)
-      return ((item.IsType("Ammunition"))) >= 1
-    end,
   },
 })
 DefineEquipmentModifier({
   Name="+2 (Enhancement to Ammunition)",
-  GrantedItemTypes={
-    "Masterwork",
-    "Enhancement",
-    "Magic",
-    "Plus2",
-  },
-  Visible=true,
+  Key="Special Ability ~ +2 ~ Ammunition",
   AffectsBothHeads=false,
+  EquivalentEnhancementBonus=2,
   NameModifier="TEXT=+2",
   NameModifierLocation="Prefix",
-  Replaces={
-    "Special Ability ~ +1 ~ Ammunition",
-    "Special Ability ~ +3 ~ Ammunition",
-    "Special Ability ~ +4 ~ Ammunition",
-    "Special Ability ~ +5 ~ Ammunition",
-    "Special Quality ~ Masterwork ~ Ammunition",
-  },
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ +2 ~ Ammunition",
-  Types={
-    "Ammunition",
-  },
+  SourcePage="p.344",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("AMMUNITION"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("6"),
       Conditions={
         function (item)
@@ -6762,70 +6582,70 @@ DefineEquipmentModifier({
           return ((item.IsType("AMMUNITION"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
     {
       Category="WEAPON",
-      Variables={
-        "DAMAGE",
-        "TOHIT",
-      },
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "DAMAGE",
+        "TOHIT",
+      },
     },
   },
-  SourcePage="p.344",
   Conditions={
     function (item)
       return ((item.IsType("Ammunition"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="+3 (Enhancement to Ammunition)",
   GrantedItemTypes={
     "Masterwork",
     "Enhancement",
     "Magic",
-    "Plus3",
+    "Plus2",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+3",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +1 ~ Ammunition",
-    "Special Ability ~ +2 ~ Ammunition",
+    "Special Ability ~ +3 ~ Ammunition",
     "Special Ability ~ +4 ~ Ammunition",
     "Special Ability ~ +5 ~ Ammunition",
     "Special Quality ~ Masterwork ~ Ammunition",
   },
-  EquivalentEnhancementBonus=3,
-  Key="Special Ability ~ +3 ~ Ammunition",
   Types={
     "Ammunition",
   },
+})
+DefineEquipmentModifier({
+  Name="+3 (Enhancement to Ammunition)",
+  Key="Special Ability ~ +3 ~ Ammunition",
+  AffectsBothHeads=false,
+  EquivalentEnhancementBonus=3,
+  NameModifier="TEXT=+3",
+  NameModifierLocation="Prefix",
+  SourcePage="p.344",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("AMMUNITION"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("6"),
       Conditions={
         function (item)
@@ -6835,40 +6655,108 @@ DefineEquipmentModifier({
           return ((item.IsType("AMMUNITION"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
     {
       Category="WEAPON",
-      Variables={
-        "DAMAGE",
-        "TOHIT",
-      },
       Formula=Formula("3"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "DAMAGE",
+        "TOHIT",
+      },
     },
   },
-  SourcePage="p.344",
   Conditions={
     function (item)
       return ((item.IsType("Ammunition"))) >= 1
     end,
   },
+  GrantedItemTypes={
+    "Masterwork",
+    "Enhancement",
+    "Magic",
+    "Plus3",
+  },
+  Replaces={
+    "Special Ability ~ +1 ~ Ammunition",
+    "Special Ability ~ +2 ~ Ammunition",
+    "Special Ability ~ +4 ~ Ammunition",
+    "Special Ability ~ +5 ~ Ammunition",
+    "Special Quality ~ Masterwork ~ Ammunition",
+  },
+  Types={
+    "Ammunition",
+  },
 })
 DefineEquipmentModifier({
   Name="+4 (Enhancement to Ammunition)",
+  Key="Special Ability ~ +4 ~ Ammunition",
+  AffectsBothHeads=false,
+  EquivalentEnhancementBonus=4,
+  NameModifier="TEXT=+4",
+  NameModifierLocation="Prefix",
+  SourcePage="p.344",
+  Visible=true,
+  Bonuses={
+    {
+      Category="ITEMCOST",
+      Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("AMMUNITION"))) >= 1
+        end,
+      },
+      Variables={
+        "Cost",
+      },
+    },
+    {
+      Category="ITEMCOST",
+      Formula=Formula("6"),
+      Conditions={
+        function (item)
+          return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("AMMUNITION"))) >= 1
+        end,
+      },
+      Variables={
+        "Cost",
+      },
+    },
+    {
+      Category="WEAPON",
+      Formula=Formula("4"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "DAMAGE",
+        "TOHIT",
+      },
+    },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("Ammunition"))) >= 1
+    end,
+  },
   GrantedItemTypes={
     "Masterwork",
     "Enhancement",
     "Magic",
     "Plus4",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+4",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +1 ~ Ammunition",
     "Special Ability ~ +2 ~ Ammunition",
@@ -6876,29 +6764,34 @@ DefineEquipmentModifier({
     "Special Ability ~ +5 ~ Ammunition",
     "Special Quality ~ Masterwork ~ Ammunition",
   },
-  EquivalentEnhancementBonus=4,
-  Key="Special Ability ~ +4 ~ Ammunition",
   Types={
     "Ammunition",
   },
+})
+DefineEquipmentModifier({
+  Name="+5 (Enhancement to Ammunition)",
+  Key="Special Ability ~ +5 ~ Ammunition",
+  AffectsBothHeads=false,
+  EquivalentEnhancementBonus=5,
+  NameModifier="TEXT=+5",
+  NameModifierLocation="Prefix",
+  SourcePage="p.344",
+  Visible=true,
   Bonuses={
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("AMMUNITION"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("6"),
       Conditions={
         function (item)
@@ -6908,40 +6801,35 @@ DefineEquipmentModifier({
           return ((item.IsType("AMMUNITION"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
     {
       Category="WEAPON",
-      Variables={
-        "DAMAGE",
-        "TOHIT",
-      },
-      Formula=Formula("4"),
+      Formula=Formula("5"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "DAMAGE",
+        "TOHIT",
+      },
     },
   },
-  SourcePage="p.344",
   Conditions={
     function (item)
       return ((item.IsType("Ammunition"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="+5 (Enhancement to Ammunition)",
   GrantedItemTypes={
     "Masterwork",
     "Enhancement",
     "Magic",
     "Plus5",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+5",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +1 ~ Ammunition",
     "Special Ability ~ +2 ~ Ammunition",
@@ -6949,91 +6837,83 @@ DefineEquipmentModifier({
     "Special Ability ~ +4 ~ Ammunition",
     "Special Quality ~ Masterwork ~ Ammunition",
   },
-  EquivalentEnhancementBonus=5,
-  Key="Special Ability ~ +5 ~ Ammunition",
   Types={
     "Ammunition",
-  },
-  Bonuses={
-    {
-      Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
-      Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
-      Conditions={
-        function (item)
-          return ((item.IsType("AMMUNITION"))) >= 1
-        end,
-      },
-    },
-    {
-      Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
-      Formula=Formula("6"),
-      Conditions={
-        function (item)
-          return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
-        end,
-        function (item)
-          return ((item.IsType("AMMUNITION"))) >= 1
-        end,
-      },
-    },
-    {
-      Category="WEAPON",
-      Variables={
-        "DAMAGE",
-        "TOHIT",
-      },
-      Formula=Formula("5"),
-      Type={
-        Name="Enhancement",
-        Replace=false,
-        Stack=false,
-      },
-    },
-  },
-  SourcePage="p.344",
-  Conditions={
-    function (item)
-      return ((item.IsType("Ammunition"))) >= 1
-    end,
   },
 })
 DefineEquipmentModifier({
   Name="Anarchic",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Anarchic ~ Weapon",
+  EquivalentEnhancementBonus=2,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Anarchic ~ Weapon",
-  Types={
-    "Ammunition",
-    "Weapon",
-  },
-  Bonuses={
+  SourcePage="p.468",
+  Visible=true,
+  Abilities={
     {
-      Category="VAR",
-      Variables={
-        "NEGLEVELS",
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Negative Levels",
       },
-      Formula=Formula("1"),
       Conditions={
         function (character)
           return character.Alignment == "LG" or character.Alignment == "LN" or character.Alignment == "LE"
         end,
       },
     },
+  },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return character.Alignment == "LG" or character.Alignment == "LN" or character.Alignment == "LE"
+        end,
+      },
+      Variables={
+        "NEGLEVELS",
+      },
+    },
+  },
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (item)
+        return ((item.IsType("WeaponEnhancement"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Weapon")) + (item.IsType("Ammunition"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="chaotically aligned, +2d6 damage against lawful targets, 1 negative level bestowed on lawful wielder",
     },
   },
+  Types={
+    "Ammunition",
+    "Weapon",
+  },
+})
+DefineEquipmentModifier({
+  Name="Axiomatic",
+  Key="Special Ability ~ Axiomatic ~ Weapon",
+  EquivalentEnhancementBonus=2,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.468",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -7043,78 +6923,65 @@ DefineEquipmentModifier({
       },
       Conditions={
         function (character)
-          return character.Alignment == "LG" or character.Alignment == "LN" or character.Alignment == "LE"
+          return character.Alignment == "CG" or character.Alignment == "CN" or character.Alignment == "CE"
         end,
       },
     },
   },
-  SourcePage="p.468",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (item)
-        return ((item.IsType("WeaponEnhancement"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Weapon")) + (item.IsType("Ammunition"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 2
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Axiomatic",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Axiomatic ~ Weapon",
-  Types={
-    "Ammunition",
-    "Weapon",
-  },
   Bonuses={
     {
       Category="VAR",
-      Variables={
-        "NEGLEVELS",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return character.Alignment == "CG" or character.Alignment == "CN" or character.Alignment == "CE"
         end,
       },
+      Variables={
+        "NEGLEVELS",
+      },
     },
+  },
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (item)
+        return ((item.IsType("WeaponEnhancement"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Weapon")) + (item.IsType("Ammunition"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="lawfully aligned, +2d6 damage against chaotic targets, 1 negative level bestowed to chaotic wielder",
     },
   },
-  Abilities={
-    {
-      Category="Special Ability",
-      Nature="AUTOMATIC",
-      Names={
-        "Negative Levels",
-      },
-      Conditions={
-        function (character)
-          return character.Alignment == "CG" or character.Alignment == "CN" or character.Alignment == "CE"
-        end,
-      },
-    },
+  Types={
+    "Ammunition",
+    "Weapon",
   },
-  SourcePage="p.468",
+})
+DefineEquipmentModifier({
+  Name="Bane",
+  Key="Special Ability ~ Bane ~ Weapon",
+  Choice={
+    Choose=ChooseString({"Aberration Bane", "Animal Bane", "Construct Bane", "Dragon Bane", "Fey Bane", "Aquatic Humanoid Bane", "Dwarf Bane", "Elf Bane", "Giant Bane", "Gnoll Bane", "Gnome Bane", "Goblinoid Bane", "Halfling Bane", "Human Bane", "Reptilian Bane", "Orc Bane", "Magical Beast Bane", "Monstrous Humanoid Bane", "Ooze Bane", "Air Outsider Bane", "Chaotic Outsider Bane", "Earth Outsider Bane", "Evil Outsider Bane", "Fire Outsider Bane", "Good Outsider Bane", "Lawful Outsider Bane", "Water Outsider Bane", "Plant Bane", "Undead Bane", "Vermin Bane", "TITLE=Designated Foe"}),
+  },
+  EquivalentEnhancementBonus=1,
+  NameModifier="NONAME",
+  NameModifierLocation="Prefix",
+  SourcePage="p.469",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -7133,29 +7000,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Bane",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NONAME",
-  NameModifierLocation="Prefix",
-  Choice={
-    Choose=ChooseString({"Aberration Bane", "Animal Bane", "Construct Bane", "Dragon Bane", "Fey Bane", "Aquatic Humanoid Bane", "Dwarf Bane", "Elf Bane", "Giant Bane", "Gnoll Bane", "Gnome Bane", "Goblinoid Bane", "Halfling Bane", "Human Bane", "Reptilian Bane", "Orc Bane", "Magical Beast Bane", "Monstrous Humanoid Bane", "Ooze Bane", "Air Outsider Bane", "Chaotic Outsider Bane", "Earth Outsider Bane", "Evil Outsider Bane", "Fire Outsider Bane", "Good Outsider Bane", "Lawful Outsider Bane", "Water Outsider Bane", "Plant Bane", "Undead Bane", "Vermin Bane", "TITLE=Designated Foe"}),
-  },
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Bane ~ Weapon",
-  Types={
-    "Ammunition",
-    "Weapon",
   },
   SpecialProperties={
     {
       Format="%CHOICE weapons have +2 enhancement bonus and deal +2d6 bonus damage against the chosen foe",
     },
   },
-  SourcePage="p.469",
+  Types={
+    "Ammunition",
+    "Weapon",
+  },
+})
+DefineEquipmentModifier({
+  Name="Brilliant Energy",
+  Key="Special Ability ~ Brilliant Energy ~ Weapon",
+  EquivalentEnhancementBonus=4,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.470",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -7174,169 +7037,128 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Brilliant Energy",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=4,
-  Key="Special Ability ~ Brilliant Energy ~ Weapon",
-  Types={
-    "Ammunition",
-    "Weapon",
   },
   SpecialProperties={
     {
       Format="ignores armor and shield bonuses including enhancement, cannot harm undead, constructs, and objects",
     },
   },
-  SourcePage="p.470",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (item)
-        return ((item.IsType("WeaponEnhancement"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Weapon")) + (item.IsType("Ammunition"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 2
-    end,
+  Types={
+    "Ammunition",
+    "Weapon",
   },
 })
 DefineEquipmentModifier({
   Name="Dancing",
-  Visible=true,
+  Key="Special Ability ~ Dancing ~ Melee",
   AffectsBothHeads=true,
+  EquivalentEnhancementBonus=4,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=4,
-  Key="Special Ability ~ Dancing ~ Melee",
-  Types={
-    "Weapon",
-    "Melee",
+  SourcePage="p.346",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee"))) >= 3
+    end,
   },
   SpecialProperties={
     {
       Format="can be loosed to attack on its own",
     },
   },
-  SourcePage="p.346",
-  Conditions={
-    function (item)
-      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee"))) >= 3
-    end,
+  Types={
+    "Weapon",
+    "Melee",
   },
 })
 DefineEquipmentModifier({
   Name="Defending",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Defending ~ Melee",
+  EquivalentEnhancementBonus=1,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Defending ~ Melee",
-  Types={
-    "Weapon",
-    "Melee",
+  SourcePage="p.347",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee"))) >= 3
+    end,
   },
   SpecialProperties={
     {
       Format="can transfer some or all of its enhancement bonus to AC",
     },
   },
-  SourcePage="p.347",
-  Conditions={
-    function (item)
-      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee"))) >= 3
-    end,
+  Types={
+    "Weapon",
+    "Melee",
   },
 })
 DefineEquipmentModifier({
   Name="Disruption",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Disruption ~ Weapon",
+  EquivalentEnhancementBonus=2,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Disruption ~ Weapon",
-  Types={
-    "Weapon",
-    "Bludgeoning",
+  SourcePage="p.347",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Bludgeoning"))) >= 3
+    end,
   },
   SpecialProperties={
     {
       Format="undead hit must make Will save (DC 14) or be destroyed",
     },
   },
-  SourcePage="p.347",
-  Conditions={
-    function (item)
-      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Bludgeoning"))) >= 3
-    end,
+  Types={
+    "Weapon",
+    "Bludgeoning",
   },
 })
 DefineEquipmentModifier({
   Name="Distance",
-  Visible=true,
+  Key="Special Ability ~ Distance ~ Ranged",
   AffectsBothHeads=true,
+  EquivalentEnhancementBonus=1,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Distance ~ Ranged",
-  Types={
-    "Weapon",
-    "Ranged",
-  },
+  SourcePage="p.347",
+  Visible=true,
   Bonuses={
     {
       Category="EQMWEAPON",
+      Formula=Formula("2"),
       Variables={
         "RANGEMULT",
       },
-      Formula=Formula("2"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Ranged"))) >= 3
+    end,
   },
   SpecialProperties={
     {
       Format="range increment doubled",
     },
   },
-  SourcePage="p.347",
-  Conditions={
-    function (item)
-      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Ranged"))) >= 3
-    end,
+  Types={
+    "Weapon",
+    "Ranged",
   },
 })
 DefineEquipmentModifier({
   Name="Flaming",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Flaming ~ Weapon",
+  EquivalentEnhancementBonus=1,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Flaming ~ Weapon",
-  Types={
-    "Ammunition",
-    "Weapon",
-  },
-  SpecialProperties={
-    {
-      Format="+1d6 fire damage",
-    },
-  },
   SourcePage="p.347",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -7356,18 +7178,42 @@ DefineEquipmentModifier({
       return count >= 2
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Flaming Burst",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Flaming Burst ~ Weapon",
+  SpecialProperties={
+    {
+      Format="+1d6 fire damage",
+    },
+  },
   Types={
     "Ammunition",
     "Weapon",
+  },
+})
+DefineEquipmentModifier({
+  Name="Flaming Burst",
+  Key="Special Ability ~ Flaming Burst ~ Weapon",
+  EquivalentEnhancementBonus=2,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.347",
+  Visible=true,
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (item)
+        return ((item.IsType("WeaponEnhancement"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Weapon")) + (item.IsType("Ammunition"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 2
+    end,
   },
   SpecialProperties={
     {
@@ -7377,7 +7223,19 @@ DefineEquipmentModifier({
       },
     },
   },
+  Types={
+    "Ammunition",
+    "Weapon",
+  },
+})
+DefineEquipmentModifier({
+  Name="Frost",
+  Key="Special Ability ~ Frost ~ Weapon",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.347",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -7396,26 +7254,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Frost",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Frost ~ Weapon",
-  Types={
-    "Ammunition",
-    "Weapon",
   },
   SpecialProperties={
     {
       Format="+1d6 cold damage",
     },
   },
+  Types={
+    "Ammunition",
+    "Weapon",
+  },
+})
+DefineEquipmentModifier({
+  Name="Ghost Touch",
+  Key="Special Ability ~ Ghost Touch ~ Weapon",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.347",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -7434,77 +7291,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Ghost Touch",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Ghost Touch ~ Weapon",
-  Types={
-    "Ammunition",
-    "Weapon",
   },
   SpecialProperties={
     {
       Format="deals damage normally against incorporeal creatures regardless of bonus",
     },
   },
-  SourcePage="p.347",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (item)
-        return ((item.IsType("WeaponEnhancement"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Weapon")) + (item.IsType("Ammunition"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 2
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Holy",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Holy ~ Weapon",
   Types={
     "Ammunition",
     "Weapon",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "NEGLEVELS",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return character.Alignment == "LE" or character.Alignment == "NE" or character.Alignment == "CE"
-        end,
-      },
-    },
-  },
-  SpecialProperties={
-    {
-      Format="good aligned, +2d6 damage against evil targets, 1 negative level bestowed to evil wielder",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Holy",
+  Key="Special Ability ~ Holy ~ Weapon",
+  EquivalentEnhancementBonus=2,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.347",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -7519,7 +7324,20 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.347",
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return character.Alignment == "LE" or character.Alignment == "NE" or character.Alignment == "CE"
+        end,
+      },
+      Variables={
+        "NEGLEVELS",
+      },
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -7539,18 +7357,42 @@ DefineEquipmentModifier({
       return count >= 2
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Icy Burst",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Icy Burst ~ Weapon",
+  SpecialProperties={
+    {
+      Format="good aligned, +2d6 damage against evil targets, 1 negative level bestowed to evil wielder",
+    },
+  },
   Types={
     "Ammunition",
     "Weapon",
+  },
+})
+DefineEquipmentModifier({
+  Name="Icy Burst",
+  Key="Special Ability ~ Icy Burst ~ Weapon",
+  EquivalentEnhancementBonus=2,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.347",
+  Visible=true,
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (item)
+        return ((item.IsType("WeaponEnhancement"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Weapon")) + (item.IsType("Ammunition"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 2
+    end,
   },
   SpecialProperties={
     {
@@ -7560,60 +7402,33 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.347",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (item)
-        return ((item.IsType("WeaponEnhancement"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Weapon")) + (item.IsType("Ammunition"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 2
-    end,
+  Types={
+    "Ammunition",
+    "Weapon",
   },
 })
 DefineEquipmentModifier({
   Name="Keen",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Keen ~ Weapon",
+  EquivalentEnhancementBonus=1,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Keen ~ Weapon",
-  Types={
-    "Weapon",
-    "Piercing",
-    "Slashing",
-  },
+  SourcePage="p.347",
+  Visible=true,
   Bonuses={
     {
       Category="EQMWEAPON",
-      Variables={
-        "CRITRANGEDOUBLE",
-      },
       Formula=Formula("1"),
       Type={
         Name="NONSTACKINGCRIT",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "CRITRANGEDOUBLE",
+      },
     },
   },
-  SpecialProperties={
-    {
-      Format="threat range doubled",
-    },
-  },
-  SourcePage="p.347",
   Conditions={
     function (character)
       local count = 0
@@ -7639,49 +7454,48 @@ DefineEquipmentModifier({
       return count >= 3
     end,
   },
+  SpecialProperties={
+    {
+      Format="threat range doubled",
+    },
+  },
+  Types={
+    "Weapon",
+    "Piercing",
+    "Slashing",
+  },
 })
 DefineEquipmentModifier({
   Name="Ki Focus",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Ki Focus ~ Melee",
+  EquivalentEnhancementBonus=1,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Ki Focus ~ Melee",
-  Types={
-    "Weapon",
-    "Melee",
+  SourcePage="p.347",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee"))) >= 3
+    end,
   },
   SpecialProperties={
     {
       Format="can use ki attacks through weapon",
     },
   },
-  SourcePage="p.347",
-  Conditions={
-    function (item)
-      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee"))) >= 3
-    end,
+  Types={
+    "Weapon",
+    "Melee",
   },
 })
 DefineEquipmentModifier({
   Name="Merciful",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Merciful ~ Weapon",
+  EquivalentEnhancementBonus=1,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Merciful ~ Weapon",
-  Types={
-    "Ammunition",
-    "Weapon",
-  },
-  SpecialProperties={
-    {
-      Format="+1d6 damage, deals non-lethal damage only",
-    },
-  },
   SourcePage="p.348",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -7701,73 +7515,71 @@ DefineEquipmentModifier({
       return count >= 2
     end,
   },
+  SpecialProperties={
+    {
+      Format="+1d6 damage, deals non-lethal damage only",
+    },
+  },
+  Types={
+    "Ammunition",
+    "Weapon",
+  },
 })
 DefineEquipmentModifier({
   Name="Mighty Cleaving",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Mighty Cleaving ~ Melee",
+  EquivalentEnhancementBonus=1,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Mighty Cleaving ~ Melee",
-  Types={
-    "Weapon",
-    "Melee",
+  SourcePage="p.348",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee"))) >= 3
+    end,
   },
   SpecialProperties={
     {
       Format="allows an additional Cleave attack per round (with Cleave feat)",
     },
   },
-  SourcePage="p.348",
-  Conditions={
-    function (item)
-      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee"))) >= 3
-    end,
+  Types={
+    "Weapon",
+    "Melee",
   },
 })
 DefineEquipmentModifier({
   Name="Returning",
-  Visible=true,
+  Key="Special Ability ~ Returning ~ Thrown",
   AffectsBothHeads=true,
+  EquivalentEnhancementBonus=1,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Returning ~ Thrown",
-  Types={
-    "Weapon",
-    "Thrown",
+  SourcePage="p.348",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Thrown"))) >= 3
+    end,
   },
   SpecialProperties={
     {
       Format="when thrown will return just before thrower's next turn",
     },
   },
-  SourcePage="p.348",
-  Conditions={
-    function (item)
-      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Thrown"))) >= 3
-    end,
+  Types={
+    "Weapon",
+    "Thrown",
   },
 })
 DefineEquipmentModifier({
   Name="Seeking",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Seeking ~ Ranged",
+  EquivalentEnhancementBonus=1,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Seeking ~ Ranged",
-  Types={
-    "Weapon",
-    "Ranged",
-  },
-  SpecialProperties={
-    {
-      Format="negates any miss chance",
-    },
-  },
   SourcePage="p.348",
+  Visible=true,
   Conditions={
     function (item)
       return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Ranged"))) >= 3
@@ -7776,25 +7588,24 @@ DefineEquipmentModifier({
       return not (((item.IsType("Thrown"))) >= 1)
     end,
   },
+  SpecialProperties={
+    {
+      Format="negates any miss chance",
+    },
+  },
+  Types={
+    "Weapon",
+    "Ranged",
+  },
 })
 DefineEquipmentModifier({
   Name="Shock",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Shock ~ Weapon",
+  EquivalentEnhancementBonus=1,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Shock ~ Weapon",
-  Types={
-    "Ammunition",
-    "Weapon",
-  },
-  SpecialProperties={
-    {
-      Format="+1d6 electricity damage",
-    },
-  },
   SourcePage="p.348",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -7814,18 +7625,42 @@ DefineEquipmentModifier({
       return count >= 2
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Shocking Burst",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Shocking Burst ~ Weapon",
+  SpecialProperties={
+    {
+      Format="+1d6 electricity damage",
+    },
+  },
   Types={
     "Ammunition",
     "Weapon",
+  },
+})
+DefineEquipmentModifier({
+  Name="Shocking Burst",
+  Key="Special Ability ~ Shocking Burst ~ Weapon",
+  EquivalentEnhancementBonus=2,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.348",
+  Visible=true,
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (item)
+        return ((item.IsType("WeaponEnhancement"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Weapon")) + (item.IsType("Ammunition"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 2
+    end,
   },
   SpecialProperties={
     {
@@ -7835,7 +7670,73 @@ DefineEquipmentModifier({
       },
     },
   },
+  Types={
+    "Ammunition",
+    "Weapon",
+  },
+})
+DefineEquipmentModifier({
+  Name="Speed",
+  Key="Special Ability ~ Speed ~ Weapon",
+  EquivalentEnhancementBonus=3,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.348",
+  Visible=true,
+  Bonuses={
+    {
+      Category="WEAPON",
+      Formula=Formula("1"),
+      Variables={
+        "ATTACKS",
+      },
+    },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon"))) >= 2
+    end,
+  },
+  SpecialProperties={
+    {
+      Format="grants one extra attack at full base attack bonus when making a full-attack action",
+    },
+  },
+  Types={
+    "Weapon",
+  },
+})
+DefineEquipmentModifier({
+  Name="Spell Storing",
+  Key="Special Ability ~ Spell Storing ~ Melee",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.348",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee"))) >= 3
+    end,
+  },
+  SpecialProperties={
+    {
+      Format="can store a single targeted spell of up to 3rd level with a casting time of 1 standard action",
+    },
+  },
+  Types={
+    "Weapon",
+    "Melee",
+  },
+})
+DefineEquipmentModifier({
+  Name="Thundering",
+  Key="Special Ability ~ Thundering ~ Weapon",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.349",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -7854,75 +7755,6 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Speed",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=3,
-  Key="Special Ability ~ Speed ~ Weapon",
-  Types={
-    "Weapon",
-  },
-  Bonuses={
-    {
-      Category="WEAPON",
-      Variables={
-        "ATTACKS",
-      },
-      Formula=Formula("1"),
-    },
-  },
-  SpecialProperties={
-    {
-      Format="grants one extra attack at full base attack bonus when making a full-attack action",
-    },
-  },
-  SourcePage="p.348",
-  Conditions={
-    function (item)
-      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon"))) >= 2
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Spell Storing",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Spell Storing ~ Melee",
-  Types={
-    "Weapon",
-    "Melee",
-  },
-  SpecialProperties={
-    {
-      Format="can store a single targeted spell of up to 3rd level with a casting time of 1 standard action",
-    },
-  },
-  SourcePage="p.348",
-  Conditions={
-    function (item)
-      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee"))) >= 3
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Thundering",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Thundering ~ Weapon",
-  Types={
-    "Ammunition",
-    "Weapon",
   },
   SpecialProperties={
     {
@@ -7932,95 +7764,56 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.349",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (item)
-        return ((item.IsType("WeaponEnhancement"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Weapon")) + (item.IsType("Ammunition"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 2
-    end,
+  Types={
+    "Ammunition",
+    "Weapon",
   },
 })
 DefineEquipmentModifier({
   Name="Throwing",
-  GrantedItemTypes={
-    "Ranged",
-    "Thrown",
-  },
-  Visible=true,
+  Key="Special Ability ~ Throwing ~ Melee",
   AffectsBothHeads=true,
+  EquivalentEnhancementBonus=1,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Throwing ~ Melee",
-  Types={
-    "Weapon",
-    "Melee",
-  },
+  SourcePage="p.349",
+  Visible=true,
   Bonuses={
     {
       Category="EQMWEAPON",
+      Formula=Formula("10"),
       Variables={
         "RANGEADD",
       },
-      Formula=Formula("10"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee"))) >= 3
+    end,
+  },
+  GrantedItemTypes={
+    "Ranged",
+    "Thrown",
   },
   SpecialProperties={
     {
       Format="can be thrown with a range increment of 10 ft.",
     },
   },
-  SourcePage="p.349",
-  Conditions={
-    function (item)
-      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee"))) >= 3
-    end,
+  Types={
+    "Weapon",
+    "Melee",
   },
 })
 DefineEquipmentModifier({
   Name="Unholy",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Unholy ~ Weapon",
+  EquivalentEnhancementBonus=2,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Unholy ~ Weapon",
-  Types={
-    "Ammunition",
-    "Weapon",
-  },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "NEGLEVELS",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return character.Alignment == "LG" or character.Alignment == "NG" or character.Alignment == "CG"
-        end,
-      },
-    },
-  },
-  SpecialProperties={
-    {
-      Format="evil aligned, +2d6 damage against good targets, 1 negative level bestowed to good wielder",
-    },
-  },
+  SourcePage="p.349",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8035,7 +7828,20 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.349",
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return character.Alignment == "LG" or character.Alignment == "NG" or character.Alignment == "CG"
+        end,
+      },
+      Variables={
+        "NEGLEVELS",
+      },
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -8055,74 +7861,71 @@ DefineEquipmentModifier({
       return count >= 2
     end,
   },
+  SpecialProperties={
+    {
+      Format="evil aligned, +2d6 damage against good targets, 1 negative level bestowed to good wielder",
+    },
+  },
+  Types={
+    "Ammunition",
+    "Weapon",
+  },
 })
 DefineEquipmentModifier({
   Name="Vicious",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Vicious ~ Melee",
+  EquivalentEnhancementBonus=1,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Vicious ~ Melee",
-  Types={
-    "Weapon",
-    "Melee",
+  SourcePage="p.349",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee"))) >= 3
+    end,
   },
   SpecialProperties={
     {
       Format="+2d6 damage to target, plus 1d6 damage to user",
     },
   },
-  SourcePage="p.349",
-  Conditions={
-    function (item)
-      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee"))) >= 3
-    end,
+  Types={
+    "Weapon",
+    "Melee",
   },
 })
 DefineEquipmentModifier({
   Name="Vorpal",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Vorpal ~ Melee",
+  EquivalentEnhancementBonus=5,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=5,
-  Key="Special Ability ~ Vorpal ~ Melee",
-  Types={
-    "Weapon",
-    "Melee",
-    "Slashing",
+  SourcePage="p.349",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee")) + (item.IsType("Slashing"))) >= 4
+    end,
   },
   SpecialProperties={
     {
       Format="severs opponents head on natural 20 critical hit",
     },
   },
-  SourcePage="p.349",
-  Conditions={
-    function (item)
-      return ((item.IsType("WeaponEnhancement")) + (item.IsType("Weapon")) + (item.IsType("Melee")) + (item.IsType("Slashing"))) >= 4
-    end,
+  Types={
+    "Weapon",
+    "Melee",
+    "Slashing",
   },
 })
 DefineEquipmentModifier({
   Name="Wounding",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Wounding ~ Weapon",
+  EquivalentEnhancementBonus=2,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Wounding ~ Weapon",
-  Types={
-    "Ammunition",
-    "Weapon",
-  },
-  SpecialProperties={
-    {
-      Format="deals 1 point of bleed damage per hit",
-    },
-  },
   SourcePage="p.349",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -8142,241 +7945,222 @@ DefineEquipmentModifier({
       return count >= 2
     end,
   },
+  SpecialProperties={
+    {
+      Format="deals 1 point of bleed damage per hit",
+    },
+  },
+  Types={
+    "Ammunition",
+    "Weapon",
+  },
 })
 DefineEquipmentModifier({
   Name="Amulet of Mighty Fists",
-  Cost=Formula("4000*PLUSTOTAL*PLUSTOTAL"),
-  Visible=false,
-  AffectsBothHeads=false,
   Key="Special Ability ~ Amulet of Mighty Fists Base",
   SortKey="0+1",
+  Cost="4000*PLUSTOTAL*PLUSTOTAL",
+  Visible=false,
 })
 DefineEquipmentModifier({
   Name="+1 to Hit and Damage",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ +1 ~ Amulet of Mighty Fists",
+  SortKey="0+1",
+  EquivalentEnhancementBonus=1,
   NameModifier="TEXT=+1",
   NameModifierLocation="Prefix",
-  Replaces={
-    "Special Ability ~ +2 ~ Amulet of Mighty Fists",
-    "Special Ability ~ +3 ~ Amulet of Mighty Fists",
-    "Special Ability ~ +4 ~ Amulet of Mighty Fists",
-    "Special Ability ~ +5 ~ Amulet of Mighty Fists",
-  },
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ +1 ~ Amulet of Mighty Fists",
-  Types={
-    "Amulet of Mighty Fists",
-  },
+  Visible=true,
   Bonuses={
     {
       Category="WEAPONPROF=TYPE.Natural",
-      Variables={
-        "TOHIT",
-        "DAMAGE",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "TOHIT",
+        "DAMAGE",
+      },
     },
   },
-  SortKey="0+1",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="+2 to Hit and Damage",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+2",
-  NameModifierLocation="Prefix",
   Replaces={
-    "Special Ability ~ +1 ~ Amulet of Mighty Fists",
+    "Special Ability ~ +2 ~ Amulet of Mighty Fists",
     "Special Ability ~ +3 ~ Amulet of Mighty Fists",
     "Special Ability ~ +4 ~ Amulet of Mighty Fists",
     "Special Ability ~ +5 ~ Amulet of Mighty Fists",
   },
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ +2 ~ Amulet of Mighty Fists",
   Types={
     "Amulet of Mighty Fists",
   },
+})
+DefineEquipmentModifier({
+  Name="+2 to Hit and Damage",
+  Key="Special Ability ~ +2 ~ Amulet of Mighty Fists",
+  SortKey="0+2",
+  EquivalentEnhancementBonus=2,
+  NameModifier="TEXT=+2",
+  NameModifierLocation="Prefix",
+  Visible=true,
   Bonuses={
     {
       Category="WEAPONPROF=TYPE.Natural",
-      Variables={
-        "TOHIT",
-        "DAMAGE",
-      },
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "TOHIT",
+        "DAMAGE",
+      },
     },
   },
-  SortKey="0+2",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="+3 to Hit and Damage",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+3",
-  NameModifierLocation="Prefix",
   Replaces={
-    "Special Ability ~ +2 ~ Amulet of Mighty Fists",
     "Special Ability ~ +1 ~ Amulet of Mighty Fists",
+    "Special Ability ~ +3 ~ Amulet of Mighty Fists",
     "Special Ability ~ +4 ~ Amulet of Mighty Fists",
     "Special Ability ~ +5 ~ Amulet of Mighty Fists",
   },
-  EquivalentEnhancementBonus=3,
-  Key="Special Ability ~ +3 ~ Amulet of Mighty Fists",
   Types={
     "Amulet of Mighty Fists",
   },
+})
+DefineEquipmentModifier({
+  Name="+3 to Hit and Damage",
+  Key="Special Ability ~ +3 ~ Amulet of Mighty Fists",
+  SortKey="0+3",
+  EquivalentEnhancementBonus=3,
+  NameModifier="TEXT=+3",
+  NameModifierLocation="Prefix",
+  Visible=true,
   Bonuses={
     {
       Category="WEAPONPROF=TYPE.Natural",
-      Variables={
-        "TOHIT",
-        "DAMAGE",
-      },
       Formula=Formula("3"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "TOHIT",
+        "DAMAGE",
+      },
     },
   },
-  SortKey="0+3",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="+4 to Hit and Damage",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+4",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +2 ~ Amulet of Mighty Fists",
-    "Special Ability ~ +3 ~ Amulet of Mighty Fists",
     "Special Ability ~ +1 ~ Amulet of Mighty Fists",
+    "Special Ability ~ +4 ~ Amulet of Mighty Fists",
     "Special Ability ~ +5 ~ Amulet of Mighty Fists",
   },
-  EquivalentEnhancementBonus=4,
-  Key="Special Ability ~ +4 ~ Amulet of Mighty Fists",
   Types={
     "Amulet of Mighty Fists",
   },
+})
+DefineEquipmentModifier({
+  Name="+4 to Hit and Damage",
+  Key="Special Ability ~ +4 ~ Amulet of Mighty Fists",
+  SortKey="0+4",
+  EquivalentEnhancementBonus=4,
+  NameModifier="TEXT=+4",
+  NameModifierLocation="Prefix",
+  Visible=true,
   Bonuses={
     {
       Category="WEAPONPROF=TYPE.Natural",
-      Variables={
-        "TOHIT",
-        "DAMAGE",
-      },
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "TOHIT",
+        "DAMAGE",
+      },
     },
   },
-  SortKey="0+4",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="+5 to Hit and Damage",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+5",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +2 ~ Amulet of Mighty Fists",
     "Special Ability ~ +3 ~ Amulet of Mighty Fists",
-    "Special Ability ~ +4 ~ Amulet of Mighty Fists",
     "Special Ability ~ +1 ~ Amulet of Mighty Fists",
+    "Special Ability ~ +5 ~ Amulet of Mighty Fists",
   },
-  EquivalentEnhancementBonus=5,
-  Key="Special Ability ~ +5 ~ Amulet of Mighty Fists",
   Types={
     "Amulet of Mighty Fists",
   },
+})
+DefineEquipmentModifier({
+  Name="+5 to Hit and Damage",
+  Key="Special Ability ~ +5 ~ Amulet of Mighty Fists",
+  SortKey="0+5",
+  EquivalentEnhancementBonus=5,
+  NameModifier="TEXT=+5",
+  NameModifierLocation="Prefix",
+  Visible=true,
   Bonuses={
     {
       Category="WEAPONPROF=TYPE.Natural",
-      Variables={
-        "TOHIT",
-        "DAMAGE",
-      },
       Formula=Formula("5"),
       Type={
         Name="Enhancement",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "TOHIT",
+        "DAMAGE",
+      },
     },
   },
-  SortKey="0+5",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Anarchic",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Anarchic ~ Amulet of Mighty Fists",
+  Replaces={
+    "Special Ability ~ +2 ~ Amulet of Mighty Fists",
+    "Special Ability ~ +3 ~ Amulet of Mighty Fists",
+    "Special Ability ~ +4 ~ Amulet of Mighty Fists",
+    "Special Ability ~ +1 ~ Amulet of Mighty Fists",
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "NEGLEVELS",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return character.Alignment == "LG" or character.Alignment == "LN" or character.Alignment == "LE"
-        end,
-      },
-    },
-  },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks are chaotically aligned, +2d6 damage against lawful targets, 1 negative level bestowed on lawful wielder",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Anarchic",
+  Key="Special Ability ~ Anarchic ~ Amulet of Mighty Fists",
   SortKey="+2",
+  EquivalentEnhancementBonus=2,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.468",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8398,44 +8182,43 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.468",
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return character.Alignment == "LG" or character.Alignment == "LN" or character.Alignment == "LE"
+        end,
+      },
+      Variables={
+        "NEGLEVELS",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Axiomatic",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Axiomatic ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks are chaotically aligned, +2d6 damage against lawful targets, 1 negative level bestowed on lawful wielder",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "NEGLEVELS",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return character.Alignment == "CG" or character.Alignment == "CN" or character.Alignment == "CE"
-        end,
-      },
-    },
-  },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks are lawfully aligned, +2d6 damage against chaotic targets, 1 negative level bestowed to chaotic wielder",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Axiomatic",
+  Key="Special Ability ~ Axiomatic ~ Amulet of Mighty Fists",
   SortKey="+2",
+  EquivalentEnhancementBonus=2,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.468",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8457,33 +8240,46 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.468",
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return character.Alignment == "CG" or character.Alignment == "CN" or character.Alignment == "CE"
+        end,
+      },
+      Variables={
+        "NEGLEVELS",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks are lawfully aligned, +2d6 damage against chaotic targets, 1 negative level bestowed to chaotic wielder",
+    },
+  },
+  Types={
+    "Amulet of Mighty Fists",
+  },
 })
 DefineEquipmentModifier({
   Name="Bane",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
+  Key="Special Ability ~ Bane ~ Amulet of Mighty Fists",
+  SortKey="+1",
   Choice={
     Choose=ChooseString({"Aberrations", "Animals", "Constructs", "Dragons", "Fey", "Humanoids (Aquatic)", "Humanoids (Dwarf)", "Humanoids (Elf)", "Humanoids (Giant)", "Humanoids (Gnoll)", "Humanoids (Gnome)", "Humanoids (Goblinoid)", "Humanoids (Halfling)", "Humanoids (Human)", "Humanoids (Reptilian)", "Humanoids (Orc)", "Magical Beasts", "Monstrous Humanoids", "Oozes", "Outsiders (Air)", "Outsiders (Chaotic)", "Outsiders (Earth)", "Outsiders (Evil)", "Outsiders (Fire)", "Outsiders (Good)", "Outsiders (Lawful)", "Outsiders (Water)", "Plants", "Undead", "Vermin", "TITLE=Designated Foe"}),
   },
   EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Bane ~ Amulet of Mighty Fists",
-  Types={
-    "Amulet of Mighty Fists",
-  },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks gain a +2 enhancement bonus and do +2d6 bonus damage against %CHOICE",
-    },
-  },
-  SortKey="+1",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.469",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8493,30 +8289,29 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.469",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Brilliant Energy",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=4,
-  Key="Special Ability ~ Brilliant Energy ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks gain a +2 enhancement bonus and do +2d6 bonus damage against %CHOICE",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks ignore armor and shield bonuses including enhancement, cannot harm undead, constructs, and objects",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Brilliant Energy",
+  Key="Special Ability ~ Brilliant Energy ~ Amulet of Mighty Fists",
   SortKey="+4",
+  EquivalentEnhancementBonus=4,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.470",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8526,30 +8321,29 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.470",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Defending",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Defending ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks ignore armor and shield bonuses including enhancement, cannot harm undead, constructs, and objects",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="can transfer some or all of its enhancement bonus to AC",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Defending",
+  Key="Special Ability ~ Defending ~ Amulet of Mighty Fists",
   SortKey="+1",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.347",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8559,30 +8353,29 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.347",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Disruption",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Disruption ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="can transfer some or all of its enhancement bonus to AC",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="undead hit by unarmed and natural attacks must make Will save (DC 14) or be destroyed",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Disruption",
+  Key="Special Ability ~ Disruption ~ Amulet of Mighty Fists",
   SortKey="+2",
+  EquivalentEnhancementBonus=2,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.347",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8592,30 +8385,29 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.347",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Flaming",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Flaming ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="undead hit by unarmed and natural attacks must make Will save (DC 14) or be destroyed",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks do +1d6 fire damage",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Flaming",
+  Key="Special Ability ~ Flaming ~ Amulet of Mighty Fists",
   SortKey="+1",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.347",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8625,33 +8417,29 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.347",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Flaming Burst",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Flaming Burst ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks do +1d6 fire damage",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks do +1d6 fire damage, on a critical hit deals +%d10 additional fire damage",
-      Arguments={
-        Formula("CRITMULT-1"),
-      },
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Flaming Burst",
+  Key="Special Ability ~ Flaming Burst ~ Amulet of Mighty Fists",
   SortKey="+2",
+  EquivalentEnhancementBonus=2,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.347",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8661,30 +8449,32 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.347",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Frost",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Frost ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks do +1d6 fire damage, on a critical hit deals +%d10 additional fire damage",
+      Arguments={
+        Formula("CRITMULT-1"),
+      },
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks do +1d6 cold damage",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Frost",
+  Key="Special Ability ~ Frost ~ Amulet of Mighty Fists",
   SortKey="+1",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.347",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8694,30 +8484,29 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.347",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Ghost Touch",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Ghost Touch ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks do +1d6 cold damage",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks deal damage normally against incorporeal creatures regardless of bonus",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Ghost Touch",
+  Key="Special Ability ~ Ghost Touch ~ Amulet of Mighty Fists",
   SortKey="+1",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.347",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8727,44 +8516,29 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.347",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Holy",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Holy ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks deal damage normally against incorporeal creatures regardless of bonus",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "NEGLEVELS",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return character.Alignment == "LE" or character.Alignment == "NE" or character.Alignment == "CE"
-        end,
-      },
-    },
-  },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks are good aligned, +2d6 damage against evil targets, 1 negative level bestowed to evil wielder",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Holy",
+  Key="Special Ability ~ Holy ~ Amulet of Mighty Fists",
   SortKey="+2",
+  EquivalentEnhancementBonus=2,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.347",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8786,33 +8560,43 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.347",
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return character.Alignment == "LE" or character.Alignment == "NE" or character.Alignment == "CE"
+        end,
+      },
+      Variables={
+        "NEGLEVELS",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Icy Burst",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Icy Burst ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks are good aligned, +2d6 damage against evil targets, 1 negative level bestowed to evil wielder",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks do +1d6 cold damage, on a critical hit deals +%d10 additional cold damage",
-      Arguments={
-        Formula("CRITMULT-1"),
-      },
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Icy Burst",
+  Key="Special Ability ~ Icy Burst ~ Amulet of Mighty Fists",
   SortKey="+2",
+  EquivalentEnhancementBonus=2,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.347",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8822,30 +8606,32 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.347",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Ki Focus",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Ki Focus ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks do +1d6 cold damage, on a critical hit deals +%d10 additional cold damage",
+      Arguments={
+        Formula("CRITMULT-1"),
+      },
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="can use ki attacks through unarmed and natural attacks",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Ki Focus",
+  Key="Special Ability ~ Ki Focus ~ Amulet of Mighty Fists",
   SortKey="+1",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.347",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8855,30 +8641,29 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.347",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Merciful",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Merciful ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="can use ki attacks through unarmed and natural attacks",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks do +1d6 damage, deals non-lethal damage only",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Merciful",
+  Key="Special Ability ~ Merciful ~ Amulet of Mighty Fists",
   SortKey="+1",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.348",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8888,30 +8673,29 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.348",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Mighty Cleaving",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Mighty Cleaving ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks do +1d6 damage, deals non-lethal damage only",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="allows an additional Cleave attack per round on unarmed and natural attacks (with Cleave feat)",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Mighty Cleaving",
+  Key="Special Ability ~ Mighty Cleaving ~ Amulet of Mighty Fists",
   SortKey="+1",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.348",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8921,30 +8705,29 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.348",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Shock",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Shock ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="allows an additional Cleave attack per round on unarmed and natural attacks (with Cleave feat)",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks do +1d6 electricity damage",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Shock",
+  Key="Special Ability ~ Shock ~ Amulet of Mighty Fists",
   SortKey="+1",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.348",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8954,33 +8737,29 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.348",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Shocking Burst",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Shocking Burst ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks do +1d6 electricity damage",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks do +1d6 electricity damage, on a critical hit deals +%d10 additional electricity damage",
-      Arguments={
-        Formula("CRITMULT-1"),
-      },
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Shocking Burst",
+  Key="Special Ability ~ Shocking Burst ~ Amulet of Mighty Fists",
   SortKey="+2",
+  EquivalentEnhancementBonus=2,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.348",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -8990,30 +8769,32 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.348",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Speed",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=3,
-  Key="Special Ability ~ Speed ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks do +1d6 electricity damage, on a critical hit deals +%d10 additional electricity damage",
+      Arguments={
+        Formula("CRITMULT-1"),
+      },
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="grants one extra attack with unarmed or natural attack at full base attack bonus when making a full-attack action",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Speed",
+  Key="Special Ability ~ Speed ~ Amulet of Mighty Fists",
   SortKey="+3",
+  EquivalentEnhancementBonus=3,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.348",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -9023,30 +8804,29 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.348",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Spell Storing",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Spell Storing ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="grants one extra attack with unarmed or natural attack at full base attack bonus when making a full-attack action",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="can store a single targeted spell of up to 3rd level with a casting time of 1 standard action",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Spell Storing",
+  Key="Special Ability ~ Spell Storing ~ Amulet of Mighty Fists",
   SortKey="+1",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.348",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -9056,33 +8836,29 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.348",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Thundering",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Thundering ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="can store a single targeted spell of up to 3rd level with a casting time of 1 standard action",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks do +%d8 sonic damage on a critical hit and permanently deafened unless save vs Fort (DC 14)",
-      Arguments={
-        Formula("CRITMULT-1"),
-      },
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Thundering",
+  Key="Special Ability ~ Thundering ~ Amulet of Mighty Fists",
   SortKey="+1",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.349",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -9092,44 +8868,32 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.349",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Unholy",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Unholy ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks do +%d8 sonic damage on a critical hit and permanently deafened unless save vs Fort (DC 14)",
+      Arguments={
+        Formula("CRITMULT-1"),
+      },
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "NEGLEVELS",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return character.Alignment == "LG" or character.Alignment == "NG" or character.Alignment == "CG"
-        end,
-      },
-    },
-  },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks are evil aligned, +2d6 damage against good targets, 1 negative level bestowed to good wielder",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Unholy",
+  Key="Special Ability ~ Unholy ~ Amulet of Mighty Fists",
   SortKey="+2",
+  EquivalentEnhancementBonus=2,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.349",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -9151,30 +8915,43 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.349",
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return character.Alignment == "LG" or character.Alignment == "NG" or character.Alignment == "CG"
+        end,
+      },
+      Variables={
+        "NEGLEVELS",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Vicious",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Vicious ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks are evil aligned, +2d6 damage against good targets, 1 negative level bestowed to good wielder",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks do +2d6 damage to target, plus 1d6 damage to user",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Vicious",
+  Key="Special Ability ~ Vicious ~ Amulet of Mighty Fists",
   SortKey="+1",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.349",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -9184,30 +8961,29 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.349",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Wounding",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Wounding ~ Amulet of Mighty Fists",
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks do +2d6 damage to target, plus 1d6 damage to user",
+    },
+  },
   Types={
     "Amulet of Mighty Fists",
   },
-  SpecialProperties={
-    {
-      Format="unarmed and natural attacks deal 1 point of bleed damage per hit",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Wounding",
+  Key="Special Ability ~ Wounding ~ Amulet of Mighty Fists",
   SortKey="+2",
+  EquivalentEnhancementBonus=2,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.349",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -9217,43 +8993,32 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.349",
   Conditions={
     function (item)
       return ((item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))) >= 1
     end,
   },
+  SpecialProperties={
+    {
+      Format="unarmed and natural attacks deal 1 point of bleed damage per hit",
+    },
+  },
+  Types={
+    "Amulet of Mighty Fists",
+  },
 })
 DefineEquipmentModifier({
   Name="+1 (Enhancement to Armor)",
-  GrantedItemTypes={
-    "Masterwork",
-    "ArmorEnhancement",
-    "Magic",
-    "Plus1",
-  },
-  Visible=true,
+  Key="Special Ability ~ +1 ~ Armor",
   AffectsBothHeads=false,
+  EquivalentEnhancementBonus=1,
   NameModifier="TEXT=+1",
   NameModifierLocation="Prefix",
-  Replaces={
-    "Special Ability ~ +2 ~ Armor",
-    "Special Ability ~ +3 ~ Armor",
-    "Special Ability ~ +4 ~ Armor",
-    "Special Ability ~ +5 ~ Armor",
-    "Special Quality ~ Masterwork ~ Armor",
-  },
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ +1 ~ Armor",
-  Types={
-    "Armor",
-  },
+  SourcePage="p.340",
+  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "AC",
-      },
       Formula=Formula("1"),
       Type={
         Name="ArmorEnhancement",
@@ -9265,12 +9030,12 @@ DefineEquipmentModifier({
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
+      Variables={
+        "AC",
+      },
     },
     {
       Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
@@ -9282,24 +9047,24 @@ DefineEquipmentModifier({
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
         end,
       },
+      Variables={
+        "ACCHECK",
+      },
     },
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("ARMOR"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
         function (item)
@@ -9309,45 +9074,45 @@ DefineEquipmentModifier({
           return ((item.IsType("ARMOR"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
   },
-  SourcePage="p.340",
   Conditions={
     function (item)
       return ((item.IsType("Armor"))) >= 1
     end,
+  },
+  GrantedItemTypes={
+    "Masterwork",
+    "ArmorEnhancement",
+    "Magic",
+    "Plus1",
+  },
+  Replaces={
+    "Special Ability ~ +2 ~ Armor",
+    "Special Ability ~ +3 ~ Armor",
+    "Special Ability ~ +4 ~ Armor",
+    "Special Ability ~ +5 ~ Armor",
+    "Special Quality ~ Masterwork ~ Armor",
+  },
+  Types={
+    "Armor",
   },
 })
 DefineEquipmentModifier({
   Name="+2 (Enhancement to Armor)",
-  GrantedItemTypes={
-    "Masterwork",
-    "ArmorEnhancement",
-    "Magic",
-    "Plus2",
-  },
-  Visible=true,
+  Key="Special Ability ~ +2 ~ Armor",
   AffectsBothHeads=false,
+  EquivalentEnhancementBonus=2,
   NameModifier="TEXT=+2",
   NameModifierLocation="Prefix",
-  Replaces={
-    "Special Ability ~ +1 ~ Armor",
-    "Special Ability ~ +3 ~ Armor",
-    "Special Ability ~ +4 ~ Armor",
-    "Special Ability ~ +5 ~ Armor",
-    "Special Quality ~ Masterwork ~ Armor",
-  },
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ +2 ~ Armor",
-  Types={
-    "Armor",
-  },
+  SourcePage="p.340",
+  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "AC",
-      },
       Formula=Formula("2"),
       Type={
         Name="ArmorEnhancement",
@@ -9359,12 +9124,12 @@ DefineEquipmentModifier({
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
+      Variables={
+        "AC",
+      },
     },
     {
       Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
@@ -9376,24 +9141,24 @@ DefineEquipmentModifier({
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
         end,
       },
+      Variables={
+        "ACCHECK",
+      },
     },
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("ARMOR"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
         function (item)
@@ -9403,45 +9168,45 @@ DefineEquipmentModifier({
           return ((item.IsType("ARMOR"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
   },
-  SourcePage="p.340",
   Conditions={
     function (item)
       return ((item.IsType("Armor"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="+3 (Enhancement to Armor)",
   GrantedItemTypes={
     "Masterwork",
     "ArmorEnhancement",
     "Magic",
-    "Plus3",
+    "Plus2",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+3",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +1 ~ Armor",
-    "Special Ability ~ +2 ~ Armor",
+    "Special Ability ~ +3 ~ Armor",
     "Special Ability ~ +4 ~ Armor",
     "Special Ability ~ +5 ~ Armor",
     "Special Quality ~ Masterwork ~ Armor",
   },
-  EquivalentEnhancementBonus=3,
-  Key="Special Ability ~ +3 ~ Armor",
   Types={
     "Armor",
   },
+})
+DefineEquipmentModifier({
+  Name="+3 (Enhancement to Armor)",
+  Key="Special Ability ~ +3 ~ Armor",
+  AffectsBothHeads=false,
+  EquivalentEnhancementBonus=3,
+  NameModifier="TEXT=+3",
+  NameModifierLocation="Prefix",
+  SourcePage="p.340",
+  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "AC",
-      },
       Formula=Formula("3"),
       Type={
         Name="ArmorEnhancement",
@@ -9453,12 +9218,12 @@ DefineEquipmentModifier({
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
+      Variables={
+        "AC",
+      },
     },
     {
       Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
@@ -9470,24 +9235,24 @@ DefineEquipmentModifier({
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
         end,
       },
+      Variables={
+        "ACCHECK",
+      },
     },
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("ARMOR"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
         function (item)
@@ -9497,45 +9262,45 @@ DefineEquipmentModifier({
           return ((item.IsType("ARMOR"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
   },
-  SourcePage="p.340",
   Conditions={
     function (item)
       return ((item.IsType("Armor"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="+4 (Enhancement to Armor)",
   GrantedItemTypes={
     "Masterwork",
     "ArmorEnhancement",
     "Magic",
-    "Plus4",
+    "Plus3",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+4",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +1 ~ Armor",
     "Special Ability ~ +2 ~ Armor",
-    "Special Ability ~ +3 ~ Armor",
+    "Special Ability ~ +4 ~ Armor",
     "Special Ability ~ +5 ~ Armor",
     "Special Quality ~ Masterwork ~ Armor",
   },
-  EquivalentEnhancementBonus=4,
-  Key="Special Ability ~ +4 ~ Armor",
   Types={
     "Armor",
   },
+})
+DefineEquipmentModifier({
+  Name="+4 (Enhancement to Armor)",
+  Key="Special Ability ~ +4 ~ Armor",
+  AffectsBothHeads=false,
+  EquivalentEnhancementBonus=4,
+  NameModifier="TEXT=+4",
+  NameModifierLocation="Prefix",
+  SourcePage="p.340",
+  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "AC",
-      },
       Formula=Formula("4"),
       Type={
         Name="ArmorEnhancement",
@@ -9547,12 +9312,12 @@ DefineEquipmentModifier({
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
+      Variables={
+        "AC",
+      },
     },
     {
       Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
@@ -9564,24 +9329,24 @@ DefineEquipmentModifier({
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
         end,
       },
+      Variables={
+        "ACCHECK",
+      },
     },
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("ARMOR"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
         function (item)
@@ -9591,45 +9356,45 @@ DefineEquipmentModifier({
           return ((item.IsType("ARMOR"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
   },
-  SourcePage="p.340",
   Conditions={
     function (item)
       return ((item.IsType("Armor"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="+5 (Enhancement to Armor)",
   GrantedItemTypes={
     "Masterwork",
     "ArmorEnhancement",
     "Magic",
-    "Plus5",
+    "Plus4",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+5",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +1 ~ Armor",
     "Special Ability ~ +2 ~ Armor",
     "Special Ability ~ +3 ~ Armor",
-    "Special Ability ~ +4 ~ Armor",
+    "Special Ability ~ +5 ~ Armor",
     "Special Quality ~ Masterwork ~ Armor",
   },
-  EquivalentEnhancementBonus=5,
-  Key="Special Ability ~ +5 ~ Armor",
   Types={
     "Armor",
   },
+})
+DefineEquipmentModifier({
+  Name="+5 (Enhancement to Armor)",
+  Key="Special Ability ~ +5 ~ Armor",
+  AffectsBothHeads=false,
+  EquivalentEnhancementBonus=5,
+  NameModifier="TEXT=+5",
+  NameModifierLocation="Prefix",
+  SourcePage="p.340",
+  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "AC",
-      },
       Formula=Formula("5"),
       Type={
         Name="ArmorEnhancement",
@@ -9641,12 +9406,12 @@ DefineEquipmentModifier({
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
+      Variables={
+        "AC",
+      },
     },
     {
       Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
@@ -9658,24 +9423,24 @@ DefineEquipmentModifier({
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
         end,
       },
+      Variables={
+        "ACCHECK",
+      },
     },
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("ARMOR"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
         function (item)
@@ -9685,27 +9450,116 @@ DefineEquipmentModifier({
           return ((item.IsType("ARMOR"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
   },
-  SourcePage="p.340",
   Conditions={
     function (item)
       return ((item.IsType("Armor"))) >= 1
     end,
   },
+  GrantedItemTypes={
+    "Masterwork",
+    "ArmorEnhancement",
+    "Magic",
+    "Plus5",
+  },
+  Replaces={
+    "Special Ability ~ +1 ~ Armor",
+    "Special Ability ~ +2 ~ Armor",
+    "Special Ability ~ +3 ~ Armor",
+    "Special Ability ~ +4 ~ Armor",
+    "Special Quality ~ Masterwork ~ Armor",
+  },
+  Types={
+    "Armor",
+  },
 })
 DefineEquipmentModifier({
   Name="+1 (Enhancement to Shield)",
+  Key="Special Ability ~ +1 ~ Shield",
+  AffectsBothHeads=false,
+  EquivalentEnhancementBonus=1,
+  NameModifier="TEXT=+1",
+  NameModifierLocation="Prefix",
+  SourcePage="p.340",
+  Visible=true,
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("1"),
+      Type={
+        Name="ShieldEnhancement",
+        Replace=false,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["DisableShieldBonus"] == 0)
+        end,
+      },
+      Variables={
+        "AC",
+      },
+    },
+    {
+      Category="EQMARMOR",
+      Formula=Formula("1"),
+      Type={
+        Name="Enhancement",
+        Replace=false,
+        Stack=false,
+      },
+      Conditions={
+        function (item)
+          return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+      },
+      Variables={
+        "ACCHECK",
+      },
+    },
+    {
+      Category="ITEMCOST",
+      Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
+      Conditions={
+        function (item)
+          return ((item.IsType("SHIELD"))) >= 1
+        end,
+      },
+      Variables={
+        "Cost",
+      },
+    },
+    {
+      Category="ITEMCOST",
+      Formula=Formula("150"),
+      Conditions={
+        function (item)
+          return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
+        end,
+        function (item)
+          return ((item.IsType("SHIELD"))) >= 1
+        end,
+      },
+      Variables={
+        "Cost",
+      },
+    },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("Shield"))) >= 1
+    end,
+  },
   GrantedItemTypes={
     "Masterwork",
     "ShieldEnhancement",
     "Magic",
     "Plus1",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+1",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +2 ~ Shield",
     "Special Ability ~ +3 ~ Shield",
@@ -9713,111 +9567,22 @@ DefineEquipmentModifier({
     "Special Ability ~ +5 ~ Shield",
     "Special Quality ~ Masterwork ~ Armor",
   },
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ +1 ~ Shield",
   Types={
     "Shield",
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "AC",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="ShieldEnhancement",
-        Replace=false,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["DisableShieldBonus"] == 0)
-        end,
-      },
-    },
-    {
-      Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Enhancement",
-        Replace=false,
-        Stack=false,
-      },
-      Conditions={
-        function (item)
-          return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
-        end,
-      },
-    },
-    {
-      Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
-      Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
-      Conditions={
-        function (item)
-          return ((item.IsType("SHIELD"))) >= 1
-        end,
-      },
-    },
-    {
-      Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
-      Formula=Formula("150"),
-      Conditions={
-        function (item)
-          return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
-        end,
-        function (item)
-          return ((item.IsType("SHIELD"))) >= 1
-        end,
-      },
-    },
-  },
-  SourcePage="p.340",
-  Conditions={
-    function (item)
-      return ((item.IsType("Shield"))) >= 1
-    end,
   },
 })
 DefineEquipmentModifier({
   Name="+2 (Enhancement to Shield)",
-  GrantedItemTypes={
-    "Masterwork",
-    "ShieldEnhancement",
-    "Magic",
-    "Plus2",
-  },
-  Visible=true,
+  Key="Special Ability ~ +2 ~ Shield",
   AffectsBothHeads=false,
+  EquivalentEnhancementBonus=2,
   NameModifier="TEXT=+2",
   NameModifierLocation="Prefix",
-  Replaces={
-    "Special Ability ~ +1 ~ Shield",
-    "Special Ability ~ +3 ~ Shield",
-    "Special Ability ~ +4 ~ Shield",
-    "Special Ability ~ +5 ~ Shield",
-    "Special Quality ~ Masterwork ~ Armor",
-  },
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ +2 ~ Shield",
-  Types={
-    "Shield",
-  },
+  SourcePage="p.340",
+  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "AC",
-      },
       Formula=Formula("2"),
       Type={
         Name="ShieldEnhancement",
@@ -9829,12 +9594,12 @@ DefineEquipmentModifier({
           return (character.Variables["DisableShieldBonus"] == 0)
         end,
       },
+      Variables={
+        "AC",
+      },
     },
     {
       Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
@@ -9846,24 +9611,24 @@ DefineEquipmentModifier({
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
         end,
       },
+      Variables={
+        "ACCHECK",
+      },
     },
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("SHIELD"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
         function (item)
@@ -9873,45 +9638,45 @@ DefineEquipmentModifier({
           return ((item.IsType("SHIELD"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
   },
-  SourcePage="p.340",
   Conditions={
     function (item)
       return ((item.IsType("Shield"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="+3 (Enhancement to Shield)",
   GrantedItemTypes={
     "Masterwork",
     "ShieldEnhancement",
     "Magic",
-    "Plus3",
+    "Plus2",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+3",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +1 ~ Shield",
-    "Special Ability ~ +2 ~ Shield",
+    "Special Ability ~ +3 ~ Shield",
     "Special Ability ~ +4 ~ Shield",
     "Special Ability ~ +5 ~ Shield",
     "Special Quality ~ Masterwork ~ Armor",
   },
-  EquivalentEnhancementBonus=3,
-  Key="Special Ability ~ +3 ~ Shield",
   Types={
     "Shield",
   },
+})
+DefineEquipmentModifier({
+  Name="+3 (Enhancement to Shield)",
+  Key="Special Ability ~ +3 ~ Shield",
+  AffectsBothHeads=false,
+  EquivalentEnhancementBonus=3,
+  NameModifier="TEXT=+3",
+  NameModifierLocation="Prefix",
+  SourcePage="p.340",
+  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "AC",
-      },
       Formula=Formula("3"),
       Type={
         Name="ShieldEnhancement",
@@ -9923,12 +9688,12 @@ DefineEquipmentModifier({
           return (character.Variables["DisableShieldBonus"] == 0)
         end,
       },
+      Variables={
+        "AC",
+      },
     },
     {
       Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
@@ -9940,24 +9705,24 @@ DefineEquipmentModifier({
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
         end,
       },
+      Variables={
+        "ACCHECK",
+      },
     },
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("SHIELD"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
         function (item)
@@ -9967,45 +9732,45 @@ DefineEquipmentModifier({
           return ((item.IsType("SHIELD"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
   },
-  SourcePage="p.340",
   Conditions={
     function (item)
       return ((item.IsType("Shield"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="+4 (Enhancement to Shield)",
   GrantedItemTypes={
     "Masterwork",
     "ShieldEnhancement",
     "Magic",
-    "Plus4",
+    "Plus3",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+4",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +1 ~ Shield",
     "Special Ability ~ +2 ~ Shield",
-    "Special Ability ~ +3 ~ Shield",
+    "Special Ability ~ +4 ~ Shield",
     "Special Ability ~ +5 ~ Shield",
     "Special Quality ~ Masterwork ~ Armor",
   },
-  EquivalentEnhancementBonus=4,
-  Key="Special Ability ~ +4 ~ Shield",
   Types={
     "Shield",
   },
+})
+DefineEquipmentModifier({
+  Name="+4 (Enhancement to Shield)",
+  Key="Special Ability ~ +4 ~ Shield",
+  AffectsBothHeads=false,
+  EquivalentEnhancementBonus=4,
+  NameModifier="TEXT=+4",
+  NameModifierLocation="Prefix",
+  SourcePage="p.340",
+  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "AC",
-      },
       Formula=Formula("4"),
       Type={
         Name="ShieldEnhancement",
@@ -10017,12 +9782,12 @@ DefineEquipmentModifier({
           return (character.Variables["DisableShieldBonus"] == 0)
         end,
       },
+      Variables={
+        "AC",
+      },
     },
     {
       Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
@@ -10034,24 +9799,24 @@ DefineEquipmentModifier({
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
         end,
       },
+      Variables={
+        "ACCHECK",
+      },
     },
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("SHIELD"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
         function (item)
@@ -10061,45 +9826,45 @@ DefineEquipmentModifier({
           return ((item.IsType("SHIELD"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
   },
-  SourcePage="p.340",
   Conditions={
     function (item)
       return ((item.IsType("Shield"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="+5 (Enhancement to Shield)",
   GrantedItemTypes={
     "Masterwork",
     "ShieldEnhancement",
     "Magic",
-    "Plus5",
+    "Plus4",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=+5",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ +1 ~ Shield",
     "Special Ability ~ +2 ~ Shield",
     "Special Ability ~ +3 ~ Shield",
-    "Special Ability ~ +4 ~ Shield",
+    "Special Ability ~ +5 ~ Shield",
     "Special Quality ~ Masterwork ~ Armor",
   },
-  EquivalentEnhancementBonus=5,
-  Key="Special Ability ~ +5 ~ Shield",
   Types={
     "Shield",
   },
+})
+DefineEquipmentModifier({
+  Name="+5 (Enhancement to Shield)",
+  Key="Special Ability ~ +5 ~ Shield",
+  AffectsBothHeads=false,
+  EquivalentEnhancementBonus=5,
+  NameModifier="TEXT=+5",
+  NameModifierLocation="Prefix",
+  SourcePage="p.340",
+  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "AC",
-      },
       Formula=Formula("5"),
       Type={
         Name="ShieldEnhancement",
@@ -10111,12 +9876,12 @@ DefineEquipmentModifier({
           return (character.Variables["DisableShieldBonus"] == 0)
         end,
       },
+      Variables={
+        "AC",
+      },
     },
     {
       Category="EQMARMOR",
-      Variables={
-        "ACCHECK",
-      },
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
@@ -10128,24 +9893,24 @@ DefineEquipmentModifier({
           return not (((item.HasModifierType("MASTERWORKQUALITY"))) >= 1)
         end,
       },
+      Variables={
+        "ACCHECK",
+      },
     },
     {
       Category="ITEMCOST",
-      Variables={
-        "Cost",
-      },
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
         function (item)
           return ((item.IsType("SHIELD"))) >= 1
         end,
       },
-    },
-    {
-      Category="ITEMCOST",
       Variables={
         "Cost",
       },
+    },
+    {
+      Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
         function (item)
@@ -10155,86 +9920,94 @@ DefineEquipmentModifier({
           return ((item.IsType("SHIELD"))) >= 1
         end,
       },
+      Variables={
+        "Cost",
+      },
     },
   },
-  SourcePage="p.340",
   Conditions={
     function (item)
       return ((item.IsType("Shield"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Animated",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Animated ~ Shield",
+  GrantedItemTypes={
+    "Masterwork",
+    "ShieldEnhancement",
+    "Magic",
+    "Plus5",
+  },
+  Replaces={
+    "Special Ability ~ +1 ~ Shield",
+    "Special Ability ~ +2 ~ Shield",
+    "Special Ability ~ +3 ~ Shield",
+    "Special Ability ~ +4 ~ Shield",
+    "Special Quality ~ Masterwork ~ Armor",
+  },
   Types={
     "Shield",
   },
+})
+DefineEquipmentModifier({
+  Name="Animated",
+  Key="Special Ability ~ Animated ~ Shield",
+  EquivalentEnhancementBonus=2,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.462",
+  Visible=true,
   Bonuses={
     {
       Category="EQM",
+      Formula=Formula("-EQHANDS"),
       Variables={
         "HANDS",
       },
-      Formula=Formula("-EQHANDS"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ShieldEnhancement")) + (item.IsType("Shield"))) >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="floats within 2 feet of the wielder, but still take normal penalties",
     },
   },
-  SourcePage="p.462",
-  Conditions={
-    function (item)
-      return ((item.IsType("ShieldEnhancement")) + (item.IsType("Shield"))) >= 2
-    end,
+  Types={
+    "Shield",
   },
 })
 DefineEquipmentModifier({
   Name="Arrow Catching",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Arrow Catching ~ Shield",
+  EquivalentEnhancementBonus=1,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Arrow Catching ~ Shield",
-  Types={
-    "Shield",
+  SourcePage="p.462",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("ShieldEnhancement")) + (item.IsType("Shield"))) >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="attracts ranged weapons to it; grants +1 deflection bonus vs ranged weapons",
     },
   },
-  SourcePage="p.462",
-  Conditions={
-    function (item)
-      return ((item.IsType("ShieldEnhancement")) + (item.IsType("Shield"))) >= 2
-    end,
+  Types={
+    "Shield",
   },
 })
 DefineEquipmentModifier({
   Name="Arrow Deflection",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Arrow Deflection ~ Shield",
+  EquivalentEnhancementBonus=2,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Arrow Deflection ~ Shield",
-  Types={
-    "Shield",
-  },
-  SpecialProperties={
-    {
-      Format="Reflex save (DC 20 + Missile enhancement) to deflect arrows; 1/round",
-    },
-  },
+  SourcePage="p.462",
+  Visible=true,
   Abilities={
     {
       Category="FEAT",
@@ -10244,142 +10017,173 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.462",
   Conditions={
     function (item)
       return ((item.IsType("ShieldEnhancement")) + (item.IsType("Shield"))) >= 2
     end,
   },
+  SpecialProperties={
+    {
+      Format="Reflex save (DC 20 + Missile enhancement) to deflect arrows; 1/round",
+    },
+  },
+  Types={
+    "Shield",
+  },
 })
 DefineEquipmentModifier({
   Name="Bashing",
+  Key="Special Ability ~ Bashing ~ Shield / Heavy",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.462",
+  Visible=true,
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "SHIELDBASHINGDIESIZESTEP",
+      },
+    },
+    {
+      Category="EQMWEAPON",
+      Formula=Formula("2"),
+      Variables={
+        "DAMAGESIZE",
+      },
+    },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ShieldEnhancement")) + (item.IsType("Heavy"))) >= 2
+    end,
+  },
   GrantedItemTypes={
     "Bashing",
     "Weapon",
     "Melee",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Bashing ~ Shield / Heavy",
-  Types={
-    "Shield",
-  },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "SHIELDBASHINGDIESIZESTEP",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="EQMWEAPON",
-      Variables={
-        "DAMAGESIZE",
-      },
-      Formula=Formula("2"),
-    },
   },
   SpecialProperties={
     {
       Format="damage dice increases to 1d8",
     },
   },
-  SourcePage="p.462",
-  Conditions={
-    function (item)
-      return ((item.IsType("ShieldEnhancement")) + (item.IsType("Heavy"))) >= 2
-    end,
+  Types={
+    "Shield",
   },
 })
 DefineEquipmentModifier({
   Name="Bashing",
+  Key="Special Ability ~ Bashing ~ Shield / Light",
+  EquivalentEnhancementBonus=1,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.462",
+  Visible=true,
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "SHIELDBASHINGDIESIZESTEP",
+      },
+    },
+    {
+      Category="EQMWEAPON",
+      Formula=Formula("2"),
+      Variables={
+        "DAMAGESIZE",
+      },
+    },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ShieldEnhancement")) + (item.IsType("Light"))) >= 2
+    end,
+  },
   GrantedItemTypes={
     "Bashing",
     "Weapon",
     "Melee",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Bashing ~ Shield / Light",
-  Types={
-    "Shield",
-  },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "SHIELDBASHINGDIESIZESTEP",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="EQMWEAPON",
-      Variables={
-        "DAMAGESIZE",
-      },
-      Formula=Formula("2"),
-    },
   },
   SpecialProperties={
     {
       Format="damage dice increases to 1d6",
     },
   },
-  SourcePage="p.462",
-  Conditions={
-    function (item)
-      return ((item.IsType("ShieldEnhancement")) + (item.IsType("Light"))) >= 2
-    end,
+  Types={
+    "Shield",
   },
 })
 DefineEquipmentModifier({
   Name="Blinding",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Blinding ~ Shield",
+  EquivalentEnhancementBonus=1,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Blinding ~ Shield",
-  Types={
-    "Shield",
+  SourcePage="p.462",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("ShieldEnhancement")) + (item.IsType("Shield"))) >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="flashes light 2/day upon command; range 20 ft.; Reflex save (DC 14) or be blinded for 1d4 rounds",
     },
   },
-  SourcePage="p.462",
-  Conditions={
-    function (item)
-      return ((item.IsType("ShieldEnhancement")) + (item.IsType("Shield"))) >= 2
-    end,
+  Types={
+    "Shield",
   },
 })
 DefineEquipmentModifier({
   Name="Energy Resistance (Acid)",
-  Cost=Formula("18000"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Energy Resistance / Acid ~ Armor",
+  Cost="18000",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Special Ability ~ Energy Resistance / Acid ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
+  SourcePage="p.462",
+  Visible=true,
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (item)
+        return ((item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Armor")) + (item.IsType("Shield"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="absorbs 10 points of acid damage per attack",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Energy Resistance (Acid/Improved)",
+  Key="Special Ability ~ Energy Resistance / Acid / Improved ~ Armor",
+  Cost="42000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.462",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -10398,26 +10202,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Energy Resistance (Acid/Improved)",
-  Cost=Formula("42000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Ability ~ Energy Resistance / Acid / Improved ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
   },
   SpecialProperties={
     {
       Format="absorbs 20 points of acid damage per attack",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Energy Resistance (Acid/Greater)",
+  Key="Special Ability ~ Energy Resistance / Acid / Greater ~ Armor",
+  Cost="66000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.462",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -10436,26 +10239,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Energy Resistance (Acid/Greater)",
-  Cost=Formula("66000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Ability ~ Energy Resistance / Acid / Greater ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
   },
   SpecialProperties={
     {
       Format="absorbs 30 points of acid damage per attack",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Energy Resistance (Cold)",
+  Key="Special Ability ~ Energy Resistance / Cold ~ Armor",
+  Cost="18000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.462",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -10474,26 +10276,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Energy Resistance (Cold)",
-  Cost=Formula("18000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Ability ~ Energy Resistance / Cold ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
   },
   SpecialProperties={
     {
       Format="absorbs 10 points of cold damage per attack",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Energy Resistance (Cold/Improved)",
+  Key="Special Ability ~ Energy Resistance / Cold / Improved ~ Armor",
+  Cost="42000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.462",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -10512,26 +10313,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Energy Resistance (Cold/Improved)",
-  Cost=Formula("42000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Ability ~ Energy Resistance / Cold / Improved ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
   },
   SpecialProperties={
     {
       Format="absorbs 20 points of cold damage per attack",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Energy Resistance (Cold/Greater)",
+  Key="Special Ability ~ Energy Resistance / Cold / Greater ~ Armor",
+  Cost="66000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.462",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -10550,26 +10350,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Energy Resistance (Cold/Greater)",
-  Cost=Formula("66000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Ability ~ Energy Resistance / Cold / Greater ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
   },
   SpecialProperties={
     {
       Format="absorbs 30 points of cold damage per attack",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Energy Resistance (Electricity)",
+  Key="Special Ability ~ Energy Resistance / Electricity ~ Armor",
+  Cost="18000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.462",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -10588,26 +10387,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Energy Resistance (Electricity)",
-  Cost=Formula("18000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Ability ~ Energy Resistance / Electricity ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
   },
   SpecialProperties={
     {
       Format="absorbs 10 points of electricity damage per attack",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Energy Resistance (Electricity/Improved)",
+  Key="Special Ability ~ Energy Resistance / Electricity / Improved ~ Armor",
+  Cost="42000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.462",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -10626,26 +10424,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Energy Resistance (Electricity/Improved)",
-  Cost=Formula("42000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Ability ~ Energy Resistance / Electricity / Improved ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
   },
   SpecialProperties={
     {
       Format="absorbs 20 points of electricity damage per attack",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Energy Resistance (Electricity/Greater)",
+  Key="Special Ability ~ Energy Resistance / Electricity / Greater ~ Armor",
+  Cost="66000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.462",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -10664,26 +10461,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Energy Resistance (Electricity/Greater)",
-  Cost=Formula("66000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Ability ~ Energy Resistance / Electricity / Greater ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
   },
   SpecialProperties={
     {
       Format="absorbs 30 points of electricity damage per attack",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Energy Resistance (Fire)",
+  Key="Special Ability ~ Energy Resistance / Fire ~ Armor",
+  Cost="18000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.462",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -10702,26 +10498,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Energy Resistance (Fire)",
-  Cost=Formula("18000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Ability ~ Energy Resistance / Fire ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
   },
   SpecialProperties={
     {
       Format="absorbs 10 points of fire damage per attack",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Energy Resistance (Fire/Improved)",
+  Key="Special Ability ~ Energy Resistance / Fire / Improved ~ Armor",
+  Cost="42000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.462",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -10740,26 +10535,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Energy Resistance (Fire/Improved)",
-  Cost=Formula("42000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Ability ~ Energy Resistance / Fire / Improved ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
   },
   SpecialProperties={
     {
       Format="absorbs 20 points of fire damage per attack",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Energy Resistance (Fire/Greater)",
+  Key="Special Ability ~ Energy Resistance / Fire / Greater ~ Armor",
+  Cost="66000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.462",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -10778,26 +10572,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Energy Resistance (Fire/Greater)",
-  Cost=Formula("66000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Ability ~ Energy Resistance / Fire / Greater ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
   },
   SpecialProperties={
     {
       Format="absorbs 30 points of fire damage per attack",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Energy Resistance (Sonic)",
+  Key="Special Ability ~ Energy Resistance / Sonic ~ Armor",
+  Cost="18000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.462",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -10816,26 +10609,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Energy Resistance (Sonic)",
-  Cost=Formula("18000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Ability ~ Energy Resistance / Sonic ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
   },
   SpecialProperties={
     {
       Format="absorbs 10 points of sonic damage per attack",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Energy Resistance (Sonic/Improved)",
+  Key="Special Ability ~ Energy Resistance / Sonic / Improved ~ Armor",
+  Cost="42000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.462",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -10854,26 +10646,25 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Energy Resistance (Sonic/Improved)",
-  Cost=Formula("42000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Ability ~ Energy Resistance / Sonic / Improved ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
   },
   SpecialProperties={
     {
       Format="absorbs 20 points of sonic damage per attack",
     },
   },
+  Types={
+    "Armor",
+    "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Energy Resistance (Sonic/Greater)",
+  Key="Special Ability ~ Energy Resistance / Sonic / Greater ~ Armor",
+  Cost="66000",
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.462",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -10892,93 +10683,48 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Energy Resistance (Sonic/Greater)",
-  Cost=Formula("66000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  Key="Special Ability ~ Energy Resistance / Sonic / Greater ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
   },
   SpecialProperties={
     {
       Format="absorbs 30 points of sonic damage per attack",
     },
   },
-  SourcePage="p.462",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (item)
-        return ((item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Armor")) + (item.IsType("Shield"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 2
-    end,
+  Types={
+    "Armor",
+    "Shield",
   },
 })
 DefineEquipmentModifier({
   Name="Etherealness",
-  Cost=Formula("49000"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Etherealness ~ Armor",
+  Cost="49000",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Special Ability ~ Etherealness ~ Armor",
-  Types={
-    "Armor",
+  SourcePage="p.463",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="become ethereal (as Ethereal Jaunt spell) 1/day",
     },
   },
-  SourcePage="p.463",
-  Conditions={
-    function (item)
-      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
-    end,
+  Types={
+    "Armor",
   },
 })
 DefineEquipmentModifier({
   Name="Light Fortification",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Fortification / Light ~ Armor",
+  SortKey="Fortification (Light)",
+  EquivalentEnhancementBonus=1,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Replaces={
-    "Special Ability ~ Fortification / Heavy ~ Armor",
-    "Special Ability ~ Fortification / Moderate ~ Armor",
-  },
-  EquivalentEnhancementBonus=1,
-  Key="Special Ability ~ Fortification / Light ~ Armor",
-  Types={
-    "Armor",
-    "Bracer",
-    "ArmorLike",
-    "Shield",
-  },
-  SpecialProperties={
-    {
-      Format="25% chance to negate critical hits and sneak attacks",
-    },
-  },
-  SortKey="Fortification (Light)",
+  SourcePage="p.463",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -10988,7 +10734,6 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.463",
   Conditions={
     function (character)
       local count = 0
@@ -11008,31 +10753,31 @@ DefineEquipmentModifier({
       return count >= 2
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Moderate Fortification",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
   Replaces={
     "Special Ability ~ Fortification / Heavy ~ Armor",
-    "Special Ability ~ Fortification / Light ~ Armor",
+    "Special Ability ~ Fortification / Moderate ~ Armor",
   },
-  EquivalentEnhancementBonus=3,
-  Key="Special Ability ~ Fortification / Moderate ~ Armor",
+  SpecialProperties={
+    {
+      Format="25% chance to negate critical hits and sneak attacks",
+    },
+  },
   Types={
     "Armor",
     "Bracer",
     "ArmorLike",
     "Shield",
   },
-  SpecialProperties={
-    {
-      Format="50% chance to negate critical hits and sneak attacks",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Moderate Fortification",
+  Key="Special Ability ~ Fortification / Moderate ~ Armor",
   SortKey="Fortification (Moderate)",
+  EquivalentEnhancementBonus=3,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.463",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -11042,7 +10787,6 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.463",
   Conditions={
     function (character)
       local count = 0
@@ -11062,31 +10806,31 @@ DefineEquipmentModifier({
       return count >= 2
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Heavy Fortification",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
   Replaces={
+    "Special Ability ~ Fortification / Heavy ~ Armor",
     "Special Ability ~ Fortification / Light ~ Armor",
-    "Special Ability ~ Fortification / Moderate ~ Armor",
   },
-  EquivalentEnhancementBonus=5,
-  Key="Special Ability ~ Fortification / Heavy ~ Armor",
+  SpecialProperties={
+    {
+      Format="50% chance to negate critical hits and sneak attacks",
+    },
+  },
   Types={
     "Armor",
     "Bracer",
     "ArmorLike",
     "Shield",
   },
-  SpecialProperties={
-    {
-      Format="75% chance to negate critical hits and sneak attacks",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Heavy Fortification",
+  Key="Special Ability ~ Fortification / Heavy ~ Armor",
   SortKey="Fortification (Heavy)",
+  EquivalentEnhancementBonus=5,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.463",
+  Visible=true,
   Abilities={
     {
       Category="Special Ability",
@@ -11096,7 +10840,6 @@ DefineEquipmentModifier({
       },
     },
   },
-  SourcePage="p.463",
   Conditions={
     function (character)
       local count = 0
@@ -11116,377 +10859,410 @@ DefineEquipmentModifier({
       return count >= 2
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Ghost Touch",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=3,
-  Key="Special Ability ~ Ghost Touch ~ Armor",
+  Replaces={
+    "Special Ability ~ Fortification / Light ~ Armor",
+    "Special Ability ~ Fortification / Moderate ~ Armor",
+  },
+  SpecialProperties={
+    {
+      Format="75% chance to negate critical hits and sneak attacks",
+    },
+  },
   Types={
     "Armor",
     "Bracer",
     "ArmorLike",
     "Shield",
+  },
+})
+DefineEquipmentModifier({
+  Name="Ghost Touch",
+  Key="Special Ability ~ Ghost Touch ~ Armor",
+  EquivalentEnhancementBonus=3,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
+  SourcePage="p.463",
+  Visible=true,
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (item)
+        return ((item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Bracer"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="armor and enhancement count vs. incorporeal attacks",
     },
   },
-  SourcePage="p.463",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (item)
-        return ((item.IsType("ArmorEnhancement")) + (item.IsType("ShieldEnhancement"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Armor")) + (item.IsType("Shield")) + (item.IsType("Bracer"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 2
-    end,
+  Types={
+    "Armor",
+    "Bracer",
+    "ArmorLike",
+    "Shield",
   },
 })
 DefineEquipmentModifier({
   Name="Glamered",
-  Cost=Formula("2700"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Glamered ~ Armor",
+  Cost="2700",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Special Ability ~ Glamered ~ Armor",
-  Types={
-    "Armor",
+  SourcePage="p.463",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="can appear as normal clothing on command",
     },
   },
-  SourcePage="p.463",
-  Conditions={
-    function (item)
-      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
-    end,
+  Types={
+    "Armor",
   },
 })
 DefineEquipmentModifier({
   Name="Invulnerability",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Invulnerability ~ Armor",
+  DamageReduction={
+    Value="5/Magic",
+  },
+  EquivalentEnhancementBonus=3,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=3,
-  Key="Special Ability ~ Invulnerability ~ Armor",
-  Types={
-    "Armor",
-    "Bracer",
-    "ArmorLike",
+  SourcePage="p.464",
+  Visible=true,
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (item)
+        return ((item.IsType("ArmorEnhancement"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Armor")) + (item.IsType("Bracer"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="grants DR 5/magic",
     },
   },
-  SourcePage="p.464",
-  DamageReduction={
-    Value="5/Magic",
-  },
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (item)
-        return ((item.IsType("ArmorEnhancement"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Armor")) + (item.IsType("Bracer"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 2
-    end,
+  Types={
+    "Armor",
+    "Bracer",
+    "ArmorLike",
   },
 })
 DefineEquipmentModifier({
   Name="Reflecting",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Reflecting ~ Shield",
+  EquivalentEnhancementBonus=5,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=5,
-  Key="Special Ability ~ Reflecting ~ Shield",
-  Types={
-    "Shield",
+  SourcePage="p.464",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("ShieldEnhancement")) + (item.IsType("Shield"))) >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="reflect spell (as Spell Turning spell) 1/day",
     },
   },
-  SourcePage="p.464",
-  Conditions={
-    function (item)
-      return ((item.IsType("ShieldEnhancement")) + (item.IsType("Shield"))) >= 2
-    end,
+  Types={
+    "Shield",
   },
 })
 DefineEquipmentModifier({
   Name="Shadow",
-  Cost=Formula("3750"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Shadow ~ Armor",
+  Cost="3750",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Special Ability ~ Shadow ~ Armor",
-  Types={
-    "Armor",
-  },
+  SourcePage="p.464",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "STEALTH",
-      },
       Formula=Formula("5"),
       Type={
         Name="COMPETENCE",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "STEALTH",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="+5 competence bonus to Stealth checks",
     },
   },
-  SourcePage="p.464",
-  Conditions={
-    function (item)
-      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
-    end,
+  Types={
+    "Armor",
   },
 })
 DefineEquipmentModifier({
   Name="Shadow (Improved)",
-  Cost=Formula("15000"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Shadow / Improved ~ Armor",
+  Cost="15000",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Special Ability ~ Shadow / Improved ~ Armor",
-  Types={
-    "Armor",
-  },
+  SourcePage="p.464",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "STEALTH",
-      },
       Formula=Formula("10"),
       Type={
         Name="COMPETENCE",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "STEALTH",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="+10 competence bonus to Stealth checks",
     },
   },
-  SourcePage="p.464",
-  Conditions={
-    function (item)
-      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
-    end,
+  Types={
+    "Armor",
   },
 })
 DefineEquipmentModifier({
   Name="Shadow (Greater)",
-  Cost=Formula("33750"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Shadow / Greater ~ Armor",
+  Cost="33750",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Special Ability ~ Shadow / Greater ~ Armor",
-  Types={
-    "Armor",
-  },
+  SourcePage="p.464",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "STEALTH",
-      },
       Formula=Formula("15"),
       Type={
         Name="COMPETENCE",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "STEALTH",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="+15 competence bonus to Stealth checks",
     },
   },
-  SourcePage="p.464",
-  Conditions={
-    function (item)
-      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
-    end,
+  Types={
+    "Armor",
   },
 })
 DefineEquipmentModifier({
   Name="Slick",
-  Cost=Formula("3750"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Slick ~ Armor",
+  Cost="3750",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Special Ability ~ Slick ~ Armor",
-  Types={
-    "Armor",
-  },
+  SourcePage="p.464",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "ESCAPE ARTIST",
-      },
       Formula=Formula("5"),
       Type={
         Name="COMPETENCE",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "ESCAPE ARTIST",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="+5 competence bonus to Escape Artist checks",
     },
   },
-  SourcePage="p.464",
-  Conditions={
-    function (item)
-      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
-    end,
+  Types={
+    "Armor",
   },
 })
 DefineEquipmentModifier({
   Name="Slick (Improved)",
-  Cost=Formula("15000"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Slick / Improved ~ Armor",
+  Cost="15000",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Special Ability ~ Slick / Improved ~ Armor",
-  Types={
-    "Armor",
-  },
+  SourcePage="p.464",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "ESCAPE ARTIST",
-      },
       Formula=Formula("10"),
       Type={
         Name="COMPETENCE",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "ESCAPE ARTIST",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="+10 competence bonus to Escape Artist checks",
     },
   },
-  SourcePage="p.464",
-  Conditions={
-    function (item)
-      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
-    end,
+  Types={
+    "Armor",
   },
 })
 DefineEquipmentModifier({
   Name="Slick (Greater)",
-  Cost=Formula("33750"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Slick / Greater ~ Armor",
+  Cost="33750",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Special Ability ~ Slick / Greater ~ Armor",
-  Types={
-    "Armor",
-  },
+  SourcePage="p.464",
+  Visible=true,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "ESCAPE ARTIST",
-      },
       Formula=Formula("15"),
       Type={
         Name="COMPETENCE",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "ESCAPE ARTIST",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="+15 competence bonus to Escape Artist checks",
     },
   },
-  SourcePage="p.464",
-  Conditions={
-    function (item)
-      return ((item.IsType("ArmorEnhancement")) + (item.IsType("Armor"))) >= 2
-    end,
+  Types={
+    "Armor",
   },
 })
 DefineEquipmentModifier({
   Name="Spell Resistance 13",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Spell Resistance / 13 ~ Armor",
+  EquivalentEnhancementBonus=2,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=2,
-  Key="Special Ability ~ Spell Resistance / 13 ~ Armor",
-  Types={
-    "Armor",
-    "Bracer",
-    "ArmorLike",
+  SourcePage="p.464",
+  SpellResistance="13",
+  Visible=true,
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (item)
+        return ((item.IsType("ArmorEnhancement"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (item)
+        return ((item.IsType("Armor")) + (item.IsType("Bracer"))) >= 1
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="grants spell resistance 13",
     },
   },
+  Types={
+    "Armor",
+    "Bracer",
+    "ArmorLike",
+  },
+})
+DefineEquipmentModifier({
+  Name="Spell Resistance 15",
+  Key="Special Ability ~ Spell Resistance / 15 ~ Armor",
+  EquivalentEnhancementBonus=3,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.464",
-  SpellResistance="13",
+  SpellResistance="15",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -11505,28 +11281,27 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Spell Resistance 15",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=3,
-  Key="Special Ability ~ Spell Resistance / 15 ~ Armor",
-  Types={
-    "Armor",
-    "Bracer",
-    "ArmorLike",
   },
   SpecialProperties={
     {
       Format="grants spell resistance 15",
     },
   },
+  Types={
+    "Armor",
+    "Bracer",
+    "ArmorLike",
+  },
+})
+DefineEquipmentModifier({
+  Name="Spell Resistance 17",
+  Key="Special Ability ~ Spell Resistance / 17 ~ Armor",
+  EquivalentEnhancementBonus=4,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.464",
-  SpellResistance="15",
+  SpellResistance="17",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -11545,28 +11320,27 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Spell Resistance 17",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=4,
-  Key="Special Ability ~ Spell Resistance / 17 ~ Armor",
-  Types={
-    "Armor",
-    "Bracer",
-    "ArmorLike",
   },
   SpecialProperties={
     {
       Format="grants spell resistance 17",
     },
   },
+  Types={
+    "Armor",
+    "Bracer",
+    "ArmorLike",
+  },
+})
+DefineEquipmentModifier({
+  Name="Spell Resistance 19",
+  Key="Special Ability ~ Spell Resistance / 19 ~ Armor",
+  EquivalentEnhancementBonus=5,
+  NameModifier="NORMAL",
+  NameModifierLocation="Prefix",
   SourcePage="p.464",
-  SpellResistance="17",
+  SpellResistance="19",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -11585,66 +11359,26 @@ DefineEquipmentModifier({
       end
       return count >= 2
     end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Spell Resistance 19",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NORMAL",
-  NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=5,
-  Key="Special Ability ~ Spell Resistance / 19 ~ Armor",
-  Types={
-    "Armor",
-    "Bracer",
-    "ArmorLike",
   },
   SpecialProperties={
     {
       Format="grants spell resistance 19",
     },
   },
-  SourcePage="p.464",
-  SpellResistance="19",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (item)
-        return ((item.IsType("ArmorEnhancement"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (item)
-        return ((item.IsType("Armor")) + (item.IsType("Bracer"))) >= 1
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 2
-    end,
+  Types={
+    "Armor",
+    "Bracer",
+    "ArmorLike",
   },
 })
 DefineEquipmentModifier({
   Name="Undead Controlling",
-  Cost=Formula("49000"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Undead Controlling ~ Armor",
+  Cost="49000",
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  Key="Special Ability ~ Undead Controlling ~ Armor",
-  Types={
-    "Armor",
-    "Shield",
-  },
-  SpecialProperties={
-    {
-      Format="control up to 26 HD of undead per day (As Control Undead spell)",
-    },
-  },
   SourcePage="p.464",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -11664,26 +11398,24 @@ DefineEquipmentModifier({
       return count >= 2
     end,
   },
+  SpecialProperties={
+    {
+      Format="control up to 26 HD of undead per day (As Control Undead spell)",
+    },
+  },
+  Types={
+    "Armor",
+    "Shield",
+  },
 })
 DefineEquipmentModifier({
   Name="Wild",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Wild ~ Armor",
+  EquivalentEnhancementBonus=3,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=3,
-  Key="Special Ability ~ Wild ~ Armor",
-  Types={
-    "Armor",
-    "Bracer",
-    "ArmorLike",
-  },
-  SpecialProperties={
-    {
-      Format="preserve armor and enhancment bonus while using Wild Shape",
-    },
-  },
   SourcePage="p.464",
+  Visible=true,
   Conditions={
     function (character)
       local count = 0
@@ -11703,146 +11435,162 @@ DefineEquipmentModifier({
       return count >= 2
     end,
   },
+  SpecialProperties={
+    {
+      Format="preserve armor and enhancment bonus while using Wild Shape",
+    },
+  },
+  Types={
+    "Armor",
+    "Bracer",
+    "ArmorLike",
+  },
 })
 DefineEquipmentModifier({
   Name="Wild",
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Special Ability ~ Wild ~ Shield",
+  EquivalentEnhancementBonus=3,
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
-  EquivalentEnhancementBonus=3,
-  Key="Special Ability ~ Wild ~ Shield",
-  Types={
-    "Shield",
+  SourcePage="p.464",
+  Visible=true,
+  Conditions={
+    function (item)
+      return ((item.IsType("ShieldEnhancement")) + (item.IsType("Shield"))) >= 2
+    end,
   },
   SpecialProperties={
     {
       Format="preserve shield and enhancment bonus while using Wild Shape",
     },
   },
-  SourcePage="p.464",
-  Conditions={
-    function (item)
-      return ((item.IsType("ShieldEnhancement")) + (item.IsType("Shield"))) >= 2
-    end,
+  Types={
+    "Shield",
   },
 })
 DefineEquipmentModifier({
   Name="Intelligent Magic Item Base",
-  Cost=Formula("500"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="TEXT=Intelligent",
-  NameModifierLocation="Parentheses",
   Key="Intelligent Item ~ Base",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
+  Cost="500",
+  NameModifier="TEXT=Intelligent",
+  Visible=true,
+  Abilities={
+    {
+      Category="Intelligent Item",
+      Nature="AUTOMATIC",
+      Names={
+        "Base Intelligent Item",
+      },
+    },
   },
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("30"),
       Variables={
         "IntItemSenseRange",
       },
-      Formula=Formula("30"),
     },
     {
       Category="VAR",
-      Variables={
-        "IntItemNegativeLevel",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["IntelligentItemEgo"] >= 20)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "IntItemNegativeLevel",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["IntelligentItemEgo"] >= 30)
         end,
       },
+      Variables={
+        "IntItemNegativeLevel",
+      },
     },
     {
       Category="VAR",
-      Variables={
-        "NegativeLevel",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["IntelligentItemEgo"] <= 19)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "NegativeLevel",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["IntelligentItemEgo"] <= 29)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "NegativeLevel",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["IntelligentItemEgo"] >= 30)
         end,
       },
+      Variables={
+        "NegativeLevel",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("10"),
       Variables={
         "IntItemStatINT",
       },
-      Formula=Formula("10"),
     },
     {
       Category="VAR",
+      Formula=Formula("10"),
       Variables={
         "IntItemStatWIS",
       },
-      Formula=Formula("10"),
     },
     {
       Category="VAR",
+      Formula=Formula("10"),
       Variables={
         "IntItemStatCHA",
       },
-      Formula=Formula("10"),
     },
     {
       Category="VAR",
+      Formula=Formula("COST"),
       Variables={
         "BaseCostTracker",
       },
-      Formula=Formula("COST"),
     },
     {
       Category="VAR",
+      Formula=Formula("(BaseCostTracker>=1001)+(BaseCostTracker>=5001)+(BaseCostTracker>=10001)+(BaseCostTracker>=20001)+(BaseCostTracker>=50001)+(BaseCostTracker>=50001)+(BaseCostTracker>=100001)+(BaseCostTracker>=100001)+(BaseCostTracker>=200001)+(BaseCostTracker>=200001)+(BaseCostTracker>=200001)+(BaseCostTracker>=200001)"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("(BaseCostTracker>=1001)+(BaseCostTracker>=5001)+(BaseCostTracker>=10001)+(BaseCostTracker>=20001)+(BaseCostTracker>=50001)+(BaseCostTracker>=50001)+(BaseCostTracker>=100001)+(BaseCostTracker>=100001)+(BaseCostTracker>=200001)+(BaseCostTracker>=200001)+(BaseCostTracker>=200001)+(BaseCostTracker>=200001)"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("Magic"))) >= 1
+    end,
   },
   SpecialProperties={
     {
@@ -11861,33 +11609,17 @@ DefineEquipmentModifier({
       },
     },
   },
-  Abilities={
-    {
-      Category="Intelligent Item",
-      Nature="AUTOMATIC",
-      Names={
-        "Base Intelligent Item",
-      },
-    },
-  },
-  Conditions={
-    function (item)
-      return ((item.IsType("Magic"))) >= 1
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Dedicated Purpose",
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Purpose",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Dedicated Purpose",
+  Key="Intelligent Item ~ Purpose",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -11902,40 +11634,18 @@ DefineEquipmentModifier({
       return ((item.IsType("ItemAlign"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Intelligence 11",
-  Cost=Formula("200"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Replaces={
-    "Intelligent Item ~ Ability Score / Intelligence 12",
-    "Intelligent Item ~ Ability Score / Intelligence 13",
-    "Intelligent Item ~ Ability Score / Intelligence 14",
-    "Intelligent Item ~ Ability Score / Intelligence 15",
-    "Intelligent Item ~ Ability Score / Intelligence 16",
-    "Intelligent Item ~ Ability Score / Intelligence 17",
-    "Intelligent Item ~ Ability Score / Intelligence 18",
-    "Intelligent Item ~ Ability Score / Intelligence 19",
-    "Intelligent Item ~ Ability Score / Intelligence 20",
-  },
-  Key="Intelligent Item ~ Ability Score / Intelligence 11",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatINT",
-      },
-      Formula=Formula("1"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Intelligence 11",
+  Key="Intelligent Item ~ Ability Score / Intelligence 11",
+  Cost="200",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -11945,21 +11655,22 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "IntItemStatINT",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Intelligence 12",
-  Cost=Formula("500"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
-    "Intelligent Item ~ Ability Score / Intelligence 11",
+    "Intelligent Item ~ Ability Score / Intelligence 12",
     "Intelligent Item ~ Ability Score / Intelligence 13",
     "Intelligent Item ~ Ability Score / Intelligence 14",
     "Intelligent Item ~ Ability Score / Intelligence 15",
@@ -11969,35 +11680,18 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Intelligence 19",
     "Intelligent Item ~ Ability Score / Intelligence 20",
   },
-  Key="Intelligent Item ~ Ability Score / Intelligence 12",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatINT",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "SpeechBonusLang",
-      },
-      Formula=Formula("1"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Intelligence 12",
+  Key="Intelligent Item ~ Ability Score / Intelligence 12",
+  Cost="500",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -12007,22 +11701,37 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "IntItemStatINT",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "SpeechBonusLang",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Intelligence 13",
-  Cost=Formula("700"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Intelligence 11",
-    "Intelligent Item ~ Ability Score / Intelligence 12",
+    "Intelligent Item ~ Ability Score / Intelligence 13",
     "Intelligent Item ~ Ability Score / Intelligence 14",
     "Intelligent Item ~ Ability Score / Intelligence 15",
     "Intelligent Item ~ Ability Score / Intelligence 16",
@@ -12031,28 +11740,18 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Intelligence 19",
     "Intelligent Item ~ Ability Score / Intelligence 20",
   },
-  Key="Intelligent Item ~ Ability Score / Intelligence 13",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatINT",
-      },
-      Formula=Formula("3"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Intelligence 13",
+  Key="Intelligent Item ~ Ability Score / Intelligence 13",
+  Cost="700",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -12062,23 +11761,31 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("3"),
+      Variables={
+        "IntItemStatINT",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Intelligence 14",
-  Cost=Formula("1000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Intelligence 11",
     "Intelligent Item ~ Ability Score / Intelligence 12",
-    "Intelligent Item ~ Ability Score / Intelligence 13",
+    "Intelligent Item ~ Ability Score / Intelligence 14",
     "Intelligent Item ~ Ability Score / Intelligence 15",
     "Intelligent Item ~ Ability Score / Intelligence 16",
     "Intelligent Item ~ Ability Score / Intelligence 17",
@@ -12086,35 +11793,18 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Intelligence 19",
     "Intelligent Item ~ Ability Score / Intelligence 20",
   },
-  Key="Intelligent Item ~ Ability Score / Intelligence 14",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatINT",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "SpeechBonusLang",
-      },
-      Formula=Formula("2"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Intelligence 14",
+  Key="Intelligent Item ~ Ability Score / Intelligence 14",
+  Cost="1000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -12124,52 +11814,57 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("4"),
+      Variables={
+        "IntItemStatINT",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "SpeechBonusLang",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Intelligence 15",
-  Cost=Formula("1400"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Intelligence 11",
     "Intelligent Item ~ Ability Score / Intelligence 12",
     "Intelligent Item ~ Ability Score / Intelligence 13",
-    "Intelligent Item ~ Ability Score / Intelligence 14",
+    "Intelligent Item ~ Ability Score / Intelligence 15",
     "Intelligent Item ~ Ability Score / Intelligence 16",
     "Intelligent Item ~ Ability Score / Intelligence 17",
     "Intelligent Item ~ Ability Score / Intelligence 18",
     "Intelligent Item ~ Ability Score / Intelligence 19",
     "Intelligent Item ~ Ability Score / Intelligence 20",
   },
-  Key="Intelligent Item ~ Ability Score / Intelligence 15",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatINT",
-      },
-      Formula=Formula("5"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Intelligence 15",
+  Key="Intelligent Item ~ Ability Score / Intelligence 15",
+  Cost="1400",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -12179,59 +11874,50 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("5"),
+      Variables={
+        "IntItemStatINT",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Intelligence 16",
-  Cost=Formula("2000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Intelligence 11",
     "Intelligent Item ~ Ability Score / Intelligence 12",
     "Intelligent Item ~ Ability Score / Intelligence 13",
     "Intelligent Item ~ Ability Score / Intelligence 14",
-    "Intelligent Item ~ Ability Score / Intelligence 15",
+    "Intelligent Item ~ Ability Score / Intelligence 16",
     "Intelligent Item ~ Ability Score / Intelligence 17",
     "Intelligent Item ~ Ability Score / Intelligence 18",
     "Intelligent Item ~ Ability Score / Intelligence 19",
     "Intelligent Item ~ Ability Score / Intelligence 20",
   },
-  Key="Intelligent Item ~ Ability Score / Intelligence 16",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("3"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatINT",
-      },
-      Formula=Formula("6"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "SpeechBonusLang",
-      },
-      Formula=Formula("3"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Intelligence 16",
+  Key="Intelligent Item ~ Ability Score / Intelligence 16",
+  Cost="2000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -12241,52 +11927,57 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("3"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("6"),
+      Variables={
+        "IntItemStatINT",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("3"),
+      Variables={
+        "SpeechBonusLang",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Intelligence 17",
-  Cost=Formula("2800"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Intelligence 11",
     "Intelligent Item ~ Ability Score / Intelligence 12",
     "Intelligent Item ~ Ability Score / Intelligence 13",
     "Intelligent Item ~ Ability Score / Intelligence 14",
     "Intelligent Item ~ Ability Score / Intelligence 15",
-    "Intelligent Item ~ Ability Score / Intelligence 16",
+    "Intelligent Item ~ Ability Score / Intelligence 17",
     "Intelligent Item ~ Ability Score / Intelligence 18",
     "Intelligent Item ~ Ability Score / Intelligence 19",
     "Intelligent Item ~ Ability Score / Intelligence 20",
   },
-  Key="Intelligent Item ~ Ability Score / Intelligence 17",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("3"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatINT",
-      },
-      Formula=Formula("7"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Intelligence 17",
+  Key="Intelligent Item ~ Ability Score / Intelligence 17",
+  Cost="2800",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -12296,19 +11987,27 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("3"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("7"),
+      Variables={
+        "IntItemStatINT",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Intelligence 18",
-  Cost=Formula("4000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Intelligence 11",
     "Intelligent Item ~ Ability Score / Intelligence 12",
@@ -12316,39 +12015,22 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Intelligence 14",
     "Intelligent Item ~ Ability Score / Intelligence 15",
     "Intelligent Item ~ Ability Score / Intelligence 16",
-    "Intelligent Item ~ Ability Score / Intelligence 17",
+    "Intelligent Item ~ Ability Score / Intelligence 18",
     "Intelligent Item ~ Ability Score / Intelligence 19",
     "Intelligent Item ~ Ability Score / Intelligence 20",
   },
-  Key="Intelligent Item ~ Ability Score / Intelligence 18",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatINT",
-      },
-      Formula=Formula("8"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "SpeechBonusLang",
-      },
-      Formula=Formula("4"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Intelligence 18",
+  Key="Intelligent Item ~ Ability Score / Intelligence 18",
+  Cost="4000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -12358,19 +12040,87 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("4"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("8"),
+      Variables={
+        "IntItemStatINT",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("4"),
+      Variables={
+        "SpeechBonusLang",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
+  Replaces={
+    "Intelligent Item ~ Ability Score / Intelligence 11",
+    "Intelligent Item ~ Ability Score / Intelligence 12",
+    "Intelligent Item ~ Ability Score / Intelligence 13",
+    "Intelligent Item ~ Ability Score / Intelligence 14",
+    "Intelligent Item ~ Ability Score / Intelligence 15",
+    "Intelligent Item ~ Ability Score / Intelligence 16",
+    "Intelligent Item ~ Ability Score / Intelligence 17",
+    "Intelligent Item ~ Ability Score / Intelligence 19",
+    "Intelligent Item ~ Ability Score / Intelligence 20",
+  },
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
+  },
 })
 DefineEquipmentModifier({
   Name="Int Item / Stat Intelligence 19",
-  Cost=Formula("5200"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Intelligent Item ~ Ability Score / Intelligence 19",
+  Cost="5200",
   NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
+  Visible=true,
+  Abilities={
+    {
+      Category="Intelligent Item",
+      Nature="AUTOMATIC",
+      Names={
+        "Intelligent Item Stat INT ~ 19",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("4"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("9"),
+      Variables={
+        "IntItemStatINT",
+      },
+    },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
+    end,
+  },
   Replaces={
     "Intelligent Item ~ Ability Score / Intelligence 11",
     "Intelligent Item ~ Ability Score / Intelligence 12",
@@ -12382,34 +12132,47 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Intelligence 18",
     "Intelligent Item ~ Ability Score / Intelligence 20",
   },
-  Key="Intelligent Item ~ Ability Score / Intelligence 19",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatINT",
-      },
-      Formula=Formula("9"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Intelligence 20",
+  Key="Intelligent Item ~ Ability Score / Intelligence 20",
+  Cost="8000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
       Nature="AUTOMATIC",
       Names={
-        "Intelligent Item Stat INT ~ 19",
+        "Intelligent Item Stat INT ~ 20",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("5"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("10"),
+      Variables={
+        "IntItemStatINT",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("5"),
+      Variables={
+        "SpeechBonusLang",
       },
     },
   },
@@ -12418,14 +12181,6 @@ DefineEquipmentModifier({
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Intelligence 20",
-  Cost=Formula("8000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Intelligence 11",
     "Intelligent Item ~ Ability Score / Intelligence 12",
@@ -12437,83 +12192,18 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Intelligence 18",
     "Intelligent Item ~ Ability Score / Intelligence 19",
   },
-  Key="Intelligent Item ~ Ability Score / Intelligence 20",
   Types={
     "Weapon",
     "Armor",
     "Goods",
-  },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("5"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatINT",
-      },
-      Formula=Formula("10"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "SpeechBonusLang",
-      },
-      Formula=Formula("5"),
-    },
-  },
-  Abilities={
-    {
-      Category="Intelligent Item",
-      Nature="AUTOMATIC",
-      Names={
-        "Intelligent Item Stat INT ~ 20",
-      },
-    },
-  },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
-    end,
   },
 })
 DefineEquipmentModifier({
   Name="Int Item / Stat Wisdom 11",
-  Cost=Formula("200"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Replaces={
-    "Intelligent Item ~ Ability Score / Wisdom 12",
-    "Intelligent Item ~ Ability Score / Wisdom 13",
-    "Intelligent Item ~ Ability Score / Wisdom 14",
-    "Intelligent Item ~ Ability Score / Wisdom 15",
-    "Intelligent Item ~ Ability Score / Wisdom 16",
-    "Intelligent Item ~ Ability Score / Wisdom 17",
-    "Intelligent Item ~ Ability Score / Wisdom 18",
-    "Intelligent Item ~ Ability Score / Wisdom 19",
-    "Intelligent Item ~ Ability Score / Wisdom 20",
-  },
   Key="Intelligent Item ~ Ability Score / Wisdom 11",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
-  },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatWIS",
-      },
-      Formula=Formula("1"),
-    },
-  },
+  Cost="200",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -12523,21 +12213,22 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "IntItemStatWIS",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Wisdom 12",
-  Cost=Formula("500"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
-    "Intelligent Item ~ Ability Score / Wisdom 11",
+    "Intelligent Item ~ Ability Score / Wisdom 12",
     "Intelligent Item ~ Ability Score / Wisdom 13",
     "Intelligent Item ~ Ability Score / Wisdom 14",
     "Intelligent Item ~ Ability Score / Wisdom 15",
@@ -12547,28 +12238,18 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Wisdom 19",
     "Intelligent Item ~ Ability Score / Wisdom 20",
   },
-  Key="Intelligent Item ~ Ability Score / Wisdom 12",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatWIS",
-      },
-      Formula=Formula("2"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Wisdom 12",
+  Key="Intelligent Item ~ Ability Score / Wisdom 12",
+  Cost="500",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -12578,22 +12259,30 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "IntItemStatWIS",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Wisdom 13",
-  Cost=Formula("700"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Wisdom 11",
-    "Intelligent Item ~ Ability Score / Wisdom 12",
+    "Intelligent Item ~ Ability Score / Wisdom 13",
     "Intelligent Item ~ Ability Score / Wisdom 14",
     "Intelligent Item ~ Ability Score / Wisdom 15",
     "Intelligent Item ~ Ability Score / Wisdom 16",
@@ -12602,28 +12291,18 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Wisdom 19",
     "Intelligent Item ~ Ability Score / Wisdom 20",
   },
-  Key="Intelligent Item ~ Ability Score / Wisdom 13",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatWIS",
-      },
-      Formula=Formula("3"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Wisdom 13",
+  Key="Intelligent Item ~ Ability Score / Wisdom 13",
+  Cost="700",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -12633,23 +12312,31 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("3"),
+      Variables={
+        "IntItemStatWIS",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Wisdom 14",
-  Cost=Formula("1000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Wisdom 11",
     "Intelligent Item ~ Ability Score / Wisdom 12",
-    "Intelligent Item ~ Ability Score / Wisdom 13",
+    "Intelligent Item ~ Ability Score / Wisdom 14",
     "Intelligent Item ~ Ability Score / Wisdom 15",
     "Intelligent Item ~ Ability Score / Wisdom 16",
     "Intelligent Item ~ Ability Score / Wisdom 17",
@@ -12657,28 +12344,18 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Wisdom 19",
     "Intelligent Item ~ Ability Score / Wisdom 20",
   },
-  Key="Intelligent Item ~ Ability Score / Wisdom 14",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatWIS",
-      },
-      Formula=Formula("4"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Wisdom 14",
+  Key="Intelligent Item ~ Ability Score / Wisdom 14",
+  Cost="1000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -12688,52 +12365,50 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("4"),
+      Variables={
+        "IntItemStatWIS",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Wisdom 15",
-  Cost=Formula("1400"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Wisdom 11",
     "Intelligent Item ~ Ability Score / Wisdom 12",
     "Intelligent Item ~ Ability Score / Wisdom 13",
-    "Intelligent Item ~ Ability Score / Wisdom 14",
+    "Intelligent Item ~ Ability Score / Wisdom 15",
     "Intelligent Item ~ Ability Score / Wisdom 16",
     "Intelligent Item ~ Ability Score / Wisdom 17",
     "Intelligent Item ~ Ability Score / Wisdom 18",
     "Intelligent Item ~ Ability Score / Wisdom 19",
     "Intelligent Item ~ Ability Score / Wisdom 20",
   },
-  Key="Intelligent Item ~ Ability Score / Wisdom 15",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatWIS",
-      },
-      Formula=Formula("5"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Wisdom 15",
+  Key="Intelligent Item ~ Ability Score / Wisdom 15",
+  Cost="1400",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -12743,52 +12418,50 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("5"),
+      Variables={
+        "IntItemStatWIS",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Wisdom 16",
-  Cost=Formula("2000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Wisdom 11",
     "Intelligent Item ~ Ability Score / Wisdom 12",
     "Intelligent Item ~ Ability Score / Wisdom 13",
     "Intelligent Item ~ Ability Score / Wisdom 14",
-    "Intelligent Item ~ Ability Score / Wisdom 15",
+    "Intelligent Item ~ Ability Score / Wisdom 16",
     "Intelligent Item ~ Ability Score / Wisdom 17",
     "Intelligent Item ~ Ability Score / Wisdom 18",
     "Intelligent Item ~ Ability Score / Wisdom 19",
     "Intelligent Item ~ Ability Score / Wisdom 20",
   },
-  Key="Intelligent Item ~ Ability Score / Wisdom 16",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("3"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatWIS",
-      },
-      Formula=Formula("6"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Wisdom 16",
+  Key="Intelligent Item ~ Ability Score / Wisdom 16",
+  Cost="2000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -12798,52 +12471,50 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("3"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("6"),
+      Variables={
+        "IntItemStatWIS",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Wisdom 17",
-  Cost=Formula("2800"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Wisdom 11",
     "Intelligent Item ~ Ability Score / Wisdom 12",
     "Intelligent Item ~ Ability Score / Wisdom 13",
     "Intelligent Item ~ Ability Score / Wisdom 14",
     "Intelligent Item ~ Ability Score / Wisdom 15",
-    "Intelligent Item ~ Ability Score / Wisdom 16",
+    "Intelligent Item ~ Ability Score / Wisdom 17",
     "Intelligent Item ~ Ability Score / Wisdom 18",
     "Intelligent Item ~ Ability Score / Wisdom 19",
     "Intelligent Item ~ Ability Score / Wisdom 20",
   },
-  Key="Intelligent Item ~ Ability Score / Wisdom 17",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("3"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatWIS",
-      },
-      Formula=Formula("7"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Wisdom 17",
+  Key="Intelligent Item ~ Ability Score / Wisdom 17",
+  Cost="2800",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -12853,19 +12524,27 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("3"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("7"),
+      Variables={
+        "IntItemStatWIS",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Wisdom 18",
-  Cost=Formula("4000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Wisdom 11",
     "Intelligent Item ~ Ability Score / Wisdom 12",
@@ -12873,32 +12552,22 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Wisdom 14",
     "Intelligent Item ~ Ability Score / Wisdom 15",
     "Intelligent Item ~ Ability Score / Wisdom 16",
-    "Intelligent Item ~ Ability Score / Wisdom 17",
+    "Intelligent Item ~ Ability Score / Wisdom 18",
     "Intelligent Item ~ Ability Score / Wisdom 19",
     "Intelligent Item ~ Ability Score / Wisdom 20",
   },
-  Key="Intelligent Item ~ Ability Score / Wisdom 18",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatWIS",
-      },
-      Formula=Formula("8"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Wisdom 18",
+  Key="Intelligent Item ~ Ability Score / Wisdom 18",
+  Cost="4000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -12908,19 +12577,80 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("4"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("8"),
+      Variables={
+        "IntItemStatWIS",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
+  Replaces={
+    "Intelligent Item ~ Ability Score / Wisdom 11",
+    "Intelligent Item ~ Ability Score / Wisdom 12",
+    "Intelligent Item ~ Ability Score / Wisdom 13",
+    "Intelligent Item ~ Ability Score / Wisdom 14",
+    "Intelligent Item ~ Ability Score / Wisdom 15",
+    "Intelligent Item ~ Ability Score / Wisdom 16",
+    "Intelligent Item ~ Ability Score / Wisdom 17",
+    "Intelligent Item ~ Ability Score / Wisdom 19",
+    "Intelligent Item ~ Ability Score / Wisdom 20",
+  },
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
+  },
 })
 DefineEquipmentModifier({
   Name="Int Item / Stat Wisdom 19",
-  Cost=Formula("5200"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Intelligent Item ~ Ability Score / Wisdom 19",
+  Cost="5200",
   NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
+  Visible=true,
+  Abilities={
+    {
+      Category="Intelligent Item",
+      Nature="AUTOMATIC",
+      Names={
+        "Intelligent Item Stat WIS ~ 19",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("4"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("9"),
+      Variables={
+        "IntItemStatWIS",
+      },
+    },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
+    end,
+  },
   Replaces={
     "Intelligent Item ~ Ability Score / Wisdom 11",
     "Intelligent Item ~ Ability Score / Wisdom 12",
@@ -12932,34 +12662,40 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Wisdom 18",
     "Intelligent Item ~ Ability Score / Wisdom 20",
   },
-  Key="Intelligent Item ~ Ability Score / Wisdom 19",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatWIS",
-      },
-      Formula=Formula("9"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Wisdom 20",
+  Key="Intelligent Item ~ Ability Score / Wisdom 20",
+  Cost="8000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
       Nature="AUTOMATIC",
       Names={
-        "Intelligent Item Stat WIS ~ 19",
+        "Intelligent Item Stat WIS ~ 20",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("5"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("10"),
+      Variables={
+        "IntItemStatWIS",
       },
     },
   },
@@ -12968,14 +12704,6 @@ DefineEquipmentModifier({
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Wisdom 20",
-  Cost=Formula("8000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Wisdom 11",
     "Intelligent Item ~ Ability Score / Wisdom 12",
@@ -12987,76 +12715,18 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Wisdom 18",
     "Intelligent Item ~ Ability Score / Wisdom 19",
   },
-  Key="Intelligent Item ~ Ability Score / Wisdom 20",
   Types={
     "Weapon",
     "Armor",
     "Goods",
-  },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("5"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatWIS",
-      },
-      Formula=Formula("10"),
-    },
-  },
-  Abilities={
-    {
-      Category="Intelligent Item",
-      Nature="AUTOMATIC",
-      Names={
-        "Intelligent Item Stat WIS ~ 20",
-      },
-    },
-  },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
-    end,
   },
 })
 DefineEquipmentModifier({
   Name="Int Item / Stat Charisma 11",
-  Cost=Formula("200"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Replaces={
-    "Intelligent Item ~ Ability Score / Charisma 12",
-    "Intelligent Item ~ Ability Score / Charisma 13",
-    "Intelligent Item ~ Ability Score / Charisma 14",
-    "Intelligent Item ~ Ability Score / Charisma 15",
-    "Intelligent Item ~ Ability Score / Charisma 16",
-    "Intelligent Item ~ Ability Score / Charisma 17",
-    "Intelligent Item ~ Ability Score / Charisma 18",
-    "Intelligent Item ~ Ability Score / Charisma 19",
-    "Intelligent Item ~ Ability Score / Charisma 20",
-  },
   Key="Intelligent Item ~ Ability Score / Charisma 11",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
-  },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatCHA",
-      },
-      Formula=Formula("1"),
-    },
-  },
+  Cost="200",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13066,21 +12736,22 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "IntItemStatCHA",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Charisma 12",
-  Cost=Formula("500"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
-    "Intelligent Item ~ Ability Score / Charisma 11",
+    "Intelligent Item ~ Ability Score / Charisma 12",
     "Intelligent Item ~ Ability Score / Charisma 13",
     "Intelligent Item ~ Ability Score / Charisma 14",
     "Intelligent Item ~ Ability Score / Charisma 15",
@@ -13090,28 +12761,18 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Charisma 19",
     "Intelligent Item ~ Ability Score / Charisma 20",
   },
-  Key="Intelligent Item ~ Ability Score / Charisma 12",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatCHA",
-      },
-      Formula=Formula("2"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Charisma 12",
+  Key="Intelligent Item ~ Ability Score / Charisma 12",
+  Cost="500",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13121,22 +12782,30 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "IntItemStatCHA",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Charisma 13",
-  Cost=Formula("700"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Charisma 11",
-    "Intelligent Item ~ Ability Score / Charisma 12",
+    "Intelligent Item ~ Ability Score / Charisma 13",
     "Intelligent Item ~ Ability Score / Charisma 14",
     "Intelligent Item ~ Ability Score / Charisma 15",
     "Intelligent Item ~ Ability Score / Charisma 16",
@@ -13145,28 +12814,18 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Charisma 19",
     "Intelligent Item ~ Ability Score / Charisma 20",
   },
-  Key="Intelligent Item ~ Ability Score / Charisma 13",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatCHA",
-      },
-      Formula=Formula("3"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Charisma 13",
+  Key="Intelligent Item ~ Ability Score / Charisma 13",
+  Cost="700",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13176,23 +12835,31 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("3"),
+      Variables={
+        "IntItemStatCHA",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Charisma 14",
-  Cost=Formula("1000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Charisma 11",
     "Intelligent Item ~ Ability Score / Charisma 12",
-    "Intelligent Item ~ Ability Score / Charisma 13",
+    "Intelligent Item ~ Ability Score / Charisma 14",
     "Intelligent Item ~ Ability Score / Charisma 15",
     "Intelligent Item ~ Ability Score / Charisma 16",
     "Intelligent Item ~ Ability Score / Charisma 17",
@@ -13200,28 +12867,18 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Charisma 19",
     "Intelligent Item ~ Ability Score / Charisma 20",
   },
-  Key="Intelligent Item ~ Ability Score / Charisma 14",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatCHA",
-      },
-      Formula=Formula("4"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Charisma 14",
+  Key="Intelligent Item ~ Ability Score / Charisma 14",
+  Cost="1000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13231,52 +12888,50 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("4"),
+      Variables={
+        "IntItemStatCHA",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Charisma 15",
-  Cost=Formula("1400"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Charisma 11",
     "Intelligent Item ~ Ability Score / Charisma 12",
     "Intelligent Item ~ Ability Score / Charisma 13",
-    "Intelligent Item ~ Ability Score / Charisma 14",
+    "Intelligent Item ~ Ability Score / Charisma 15",
     "Intelligent Item ~ Ability Score / Charisma 16",
     "Intelligent Item ~ Ability Score / Charisma 17",
     "Intelligent Item ~ Ability Score / Charisma 18",
     "Intelligent Item ~ Ability Score / Charisma 19",
     "Intelligent Item ~ Ability Score / Charisma 20",
   },
-  Key="Intelligent Item ~ Ability Score / Charisma 15",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatCHA",
-      },
-      Formula=Formula("5"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Charisma 15",
+  Key="Intelligent Item ~ Ability Score / Charisma 15",
+  Cost="1400",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13286,52 +12941,50 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("5"),
+      Variables={
+        "IntItemStatCHA",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Charisma 16",
-  Cost=Formula("2000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Charisma 11",
     "Intelligent Item ~ Ability Score / Charisma 12",
     "Intelligent Item ~ Ability Score / Charisma 13",
     "Intelligent Item ~ Ability Score / Charisma 14",
-    "Intelligent Item ~ Ability Score / Charisma 15",
+    "Intelligent Item ~ Ability Score / Charisma 16",
     "Intelligent Item ~ Ability Score / Charisma 17",
     "Intelligent Item ~ Ability Score / Charisma 18",
     "Intelligent Item ~ Ability Score / Charisma 19",
     "Intelligent Item ~ Ability Score / Charisma 20",
   },
-  Key="Intelligent Item ~ Ability Score / Charisma 16",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("3"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatCHA",
-      },
-      Formula=Formula("6"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Charisma 16",
+  Key="Intelligent Item ~ Ability Score / Charisma 16",
+  Cost="2000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13341,52 +12994,50 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("3"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("6"),
+      Variables={
+        "IntItemStatCHA",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Charisma 17",
-  Cost=Formula("2800"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Charisma 11",
     "Intelligent Item ~ Ability Score / Charisma 12",
     "Intelligent Item ~ Ability Score / Charisma 13",
     "Intelligent Item ~ Ability Score / Charisma 14",
     "Intelligent Item ~ Ability Score / Charisma 15",
-    "Intelligent Item ~ Ability Score / Charisma 16",
+    "Intelligent Item ~ Ability Score / Charisma 17",
     "Intelligent Item ~ Ability Score / Charisma 18",
     "Intelligent Item ~ Ability Score / Charisma 19",
     "Intelligent Item ~ Ability Score / Charisma 20",
   },
-  Key="Intelligent Item ~ Ability Score / Charisma 17",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("3"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatCHA",
-      },
-      Formula=Formula("7"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Charisma 17",
+  Key="Intelligent Item ~ Ability Score / Charisma 17",
+  Cost="2800",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13396,19 +13047,27 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("3"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("7"),
+      Variables={
+        "IntItemStatCHA",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Charisma 18",
-  Cost=Formula("4000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Charisma 11",
     "Intelligent Item ~ Ability Score / Charisma 12",
@@ -13416,32 +13075,22 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Charisma 14",
     "Intelligent Item ~ Ability Score / Charisma 15",
     "Intelligent Item ~ Ability Score / Charisma 16",
-    "Intelligent Item ~ Ability Score / Charisma 17",
+    "Intelligent Item ~ Ability Score / Charisma 18",
     "Intelligent Item ~ Ability Score / Charisma 19",
     "Intelligent Item ~ Ability Score / Charisma 20",
   },
-  Key="Intelligent Item ~ Ability Score / Charisma 18",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatCHA",
-      },
-      Formula=Formula("8"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Charisma 18",
+  Key="Intelligent Item ~ Ability Score / Charisma 18",
+  Cost="4000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13451,19 +13100,80 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("4"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("8"),
+      Variables={
+        "IntItemStatCHA",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
+  Replaces={
+    "Intelligent Item ~ Ability Score / Charisma 11",
+    "Intelligent Item ~ Ability Score / Charisma 12",
+    "Intelligent Item ~ Ability Score / Charisma 13",
+    "Intelligent Item ~ Ability Score / Charisma 14",
+    "Intelligent Item ~ Ability Score / Charisma 15",
+    "Intelligent Item ~ Ability Score / Charisma 16",
+    "Intelligent Item ~ Ability Score / Charisma 17",
+    "Intelligent Item ~ Ability Score / Charisma 19",
+    "Intelligent Item ~ Ability Score / Charisma 20",
+  },
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
+  },
 })
 DefineEquipmentModifier({
   Name="Int Item / Stat Charisma 19",
-  Cost=Formula("5200"),
-  Visible=true,
-  AffectsBothHeads=false,
+  Key="Intelligent Item ~ Ability Score / Charisma 19",
+  Cost="5200",
   NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
+  Visible=true,
+  Abilities={
+    {
+      Category="Intelligent Item",
+      Nature="AUTOMATIC",
+      Names={
+        "Intelligent Item Stat CHA ~ 19",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("4"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("9"),
+      Variables={
+        "IntItemStatCHA",
+      },
+    },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
+    end,
+  },
   Replaces={
     "Intelligent Item ~ Ability Score / Charisma 11",
     "Intelligent Item ~ Ability Score / Charisma 12",
@@ -13475,34 +13185,40 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Charisma 18",
     "Intelligent Item ~ Ability Score / Charisma 20",
   },
-  Key="Intelligent Item ~ Ability Score / Charisma 19",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatCHA",
-      },
-      Formula=Formula("9"),
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Stat Charisma 20",
+  Key="Intelligent Item ~ Ability Score / Charisma 20",
+  Cost="8000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
       Nature="AUTOMATIC",
       Names={
-        "Intelligent Item Stat CHA ~ 19",
+        "Intelligent Item Stat CHA ~ 20",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("5"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("10"),
+      Variables={
+        "IntItemStatCHA",
       },
     },
   },
@@ -13511,14 +13227,6 @@ DefineEquipmentModifier({
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Stat Charisma 20",
-  Cost=Formula("8000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Ability Score / Charisma 11",
     "Intelligent Item ~ Ability Score / Charisma 12",
@@ -13530,61 +13238,18 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Ability Score / Charisma 18",
     "Intelligent Item ~ Ability Score / Charisma 19",
   },
-  Key="Intelligent Item ~ Ability Score / Charisma 20",
   Types={
     "Weapon",
     "Armor",
     "Goods",
-  },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("5"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "IntItemStatCHA",
-      },
-      Formula=Formula("10"),
-    },
-  },
-  Abilities={
-    {
-      Category="Intelligent Item",
-      Nature="AUTOMATIC",
-      Names={
-        "Intelligent Item Stat CHA ~ 20",
-      },
-    },
-  },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
-    end,
   },
 })
 DefineEquipmentModifier({
   Name="Int Item / Communication Speech",
-  Cost=Formula("500"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Key="Intelligent Item ~ Communication / Speech",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
-  },
-  SpecialProperties={
-    {
-      Format="An intelligent item with the capability for speech can talk using any of the languages it knows. It automatically knows Common.",
-    },
-  },
+  Cost="500",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13599,25 +13264,23 @@ DefineEquipmentModifier({
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Communication Telepathy",
-  Cost=Formula("1000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Communication / Telepathy",
+  SpecialProperties={
+    {
+      Format="An intelligent item with the capability for speech can talk using any of the languages it knows. It automatically knows Common.",
+    },
+  },
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  SpecialProperties={
-    {
-      Format="Telepathy allows an intelligent item to communicate with its wielder telepathically, regardless of its known languages. The wielder must be touching the item to communicate in this way.",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Communication Telepathy",
+  Key="Intelligent Item ~ Communication / Telepathy",
+  Cost="1000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13632,61 +13295,59 @@ DefineEquipmentModifier({
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Senses (60')",
-  Cost=Formula("500"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Replaces={
-    "Intelligent Item ~ Sense / Range 120",
+  SpecialProperties={
+    {
+      Format="Telepathy allows an intelligent item to communicate with its wielder telepathically, regardless of its known languages. The wielder must be touching the item to communicate in this way.",
+    },
   },
-  Key="Intelligent Item ~ Sense / Range 60",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Senses (60')",
+  Key="Intelligent Item ~ Sense / Range 60",
+  Cost="500",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("30"),
       Variables={
         "INTITEMSENSERANGE",
       },
-      Formula=Formula("30"),
     },
   },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
+  },
+  Replaces={
+    "Intelligent Item ~ Sense / Range 120",
+  },
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
   },
 })
 DefineEquipmentModifier({
   Name="Int Item / Senses (120')",
-  Cost=Formula("1000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Replaces={
-    "Intelligent Item ~ Sense / Range 60",
-  },
   Key="Intelligent Item ~ Sense / Range 120",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
-  },
+  Cost="1000",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("90"),
       Variables={
         "INTITEMSENSERANGE",
       },
-      Formula=Formula("90"),
     },
   },
   Conditions={
@@ -13694,28 +13355,21 @@ DefineEquipmentModifier({
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Senses Darkvision",
-  Cost=Formula("500"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Sense / Darkvision",
+  Replaces={
+    "Intelligent Item ~ Sense / Range 60",
+  },
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  SpecialProperties={
-    {
-      Format="Darkvision % ft.",
-      Arguments={
-        Formula("IntItemSenseRange"),
-      },
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Senses Darkvision",
+  Key="Intelligent Item ~ Sense / Darkvision",
+  Cost="500",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13730,28 +13384,26 @@ DefineEquipmentModifier({
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Senses Blindsense",
-  Cost=Formula("5000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Sense / Blindsense",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
-  },
   SpecialProperties={
     {
-      Format="Blindsense % ft.",
+      Format="Darkvision % ft.",
       Arguments={
         Formula("IntItemSenseRange"),
       },
     },
   },
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
+  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Senses Blindsense",
+  Key="Intelligent Item ~ Sense / Blindsense",
+  Cost="5000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13766,25 +13418,26 @@ DefineEquipmentModifier({
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Communication Read Languages",
-  Cost=Formula("1000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Communication / Read Language",
+  SpecialProperties={
+    {
+      Format="Blindsense % ft.",
+      Arguments={
+        Formula("IntItemSenseRange"),
+      },
+    },
+  },
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  SpecialProperties={
-    {
-      Format="Read Languages",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Communication Read Languages",
+  Key="Intelligent Item ~ Communication / Read Language",
+  Cost="1000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13799,25 +13452,23 @@ DefineEquipmentModifier({
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Communication Read Magic",
-  Cost=Formula("2000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Communication / Read Magic",
+  SpecialProperties={
+    {
+      Format="Read Languages",
+    },
+  },
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  SpecialProperties={
-    {
-      Format="Read Magic",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Communication Read Magic",
+  Key="Intelligent Item ~ Communication / Read Magic",
+  Cost="2000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13832,47 +13483,23 @@ DefineEquipmentModifier({
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Align (CG)",
-  Cost=Formula("0"),
-  GrantedItemTypes={
-    "ItemAlign",
+  SpecialProperties={
+    {
+      Format="Read Magic",
+    },
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Replaces={
-    "Intelligent Item ~ Alignment / Chaotic Neutral",
-    "Intelligent Item ~ Alignment / Chaotic Evil",
-    "Intelligent Item ~ Alignment / Neutral Evil",
-    "Intelligent Item ~ Alignment / Lawful Evil",
-    "Intelligent Item ~ Alignment / Lawful Good",
-    "Intelligent Item ~ Alignment / Lawful Neutral",
-    "Intelligent Item ~ Alignment / Neutral Good",
-    "Intelligent Item ~ Alignment / True Neutral",
-  },
-  Key="Intelligent Item ~ Alignment / Chaotic Good",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "NegLevels",
-      },
-      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
-      Conditions={
-        function (character)
-          return not (character.Alignment == "CG")
-        end,
-      },
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Align (CG)",
+  Key="Intelligent Item ~ Alignment / Chaotic Good",
+  Cost="0",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13882,24 +13509,30 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
+      Conditions={
+        function (character)
+          return not (character.Alignment == "CG")
+        end,
+      },
+      Variables={
+        "NegLevels",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Align (CN)",
-  Cost=Formula("0"),
   GrantedItemTypes={
     "ItemAlign",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
-    "Intelligent Item ~ Alignment / Chaotic Good",
+    "Intelligent Item ~ Alignment / Chaotic Neutral",
     "Intelligent Item ~ Alignment / Chaotic Evil",
     "Intelligent Item ~ Alignment / Neutral Evil",
     "Intelligent Item ~ Alignment / Lawful Evil",
@@ -13908,26 +13541,18 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Alignment / Neutral Good",
     "Intelligent Item ~ Alignment / True Neutral",
   },
-  Key="Intelligent Item ~ Alignment / Chaotic Neutral",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "NegLevels",
-      },
-      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
-      Conditions={
-        function (character)
-          return not (character.Alignment == "CG" or character.Alignment == "CE" or character.Alignment == "CN")
-        end,
-      },
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Align (CN)",
+  Key="Intelligent Item ~ Alignment / Chaotic Neutral",
+  Cost="0",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13937,25 +13562,31 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
+      Conditions={
+        function (character)
+          return not (character.Alignment == "CG" or character.Alignment == "CE" or character.Alignment == "CN")
+        end,
+      },
+      Variables={
+        "NegLevels",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Align (CE)",
-  Cost=Formula("0"),
   GrantedItemTypes={
     "ItemAlign",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Alignment / Chaotic Good",
-    "Intelligent Item ~ Alignment / Chaotic Neutral",
+    "Intelligent Item ~ Alignment / Chaotic Evil",
     "Intelligent Item ~ Alignment / Neutral Evil",
     "Intelligent Item ~ Alignment / Lawful Evil",
     "Intelligent Item ~ Alignment / Lawful Good",
@@ -13963,26 +13594,18 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Alignment / Neutral Good",
     "Intelligent Item ~ Alignment / True Neutral",
   },
-  Key="Intelligent Item ~ Alignment / Chaotic Evil",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "NegLevels",
-      },
-      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
-      Conditions={
-        function (character)
-          return not (character.Alignment == "CE")
-        end,
-      },
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Align (CE)",
+  Key="Intelligent Item ~ Alignment / Chaotic Evil",
+  Cost="0",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -13992,52 +13615,50 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
+      Conditions={
+        function (character)
+          return not (character.Alignment == "CE")
+        end,
+      },
+      Variables={
+        "NegLevels",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Align (NE)",
-  Cost=Formula("0"),
   GrantedItemTypes={
     "ItemAlign",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Alignment / Chaotic Good",
     "Intelligent Item ~ Alignment / Chaotic Neutral",
-    "Intelligent Item ~ Alignment / Chaotic Evil",
+    "Intelligent Item ~ Alignment / Neutral Evil",
     "Intelligent Item ~ Alignment / Lawful Evil",
     "Intelligent Item ~ Alignment / Lawful Good",
     "Intelligent Item ~ Alignment / Lawful Neutral",
     "Intelligent Item ~ Alignment / Neutral Good",
     "Intelligent Item ~ Alignment / True Neutral",
   },
-  Key="Intelligent Item ~ Alignment / Neutral Evil",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "NegLevels",
-      },
-      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
-      Conditions={
-        function (character)
-          return not (character.Alignment == "NE" or character.Alignment == "NG" or character.Alignment == "TN")
-        end,
-      },
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Align (NE)",
+  Key="Intelligent Item ~ Alignment / Neutral Evil",
+  Cost="0",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -14047,52 +13668,50 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
+      Conditions={
+        function (character)
+          return not (character.Alignment == "NE" or character.Alignment == "NG" or character.Alignment == "TN")
+        end,
+      },
+      Variables={
+        "NegLevels",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Align (LE)",
-  Cost=Formula("0"),
   GrantedItemTypes={
     "ItemAlign",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Alignment / Chaotic Good",
     "Intelligent Item ~ Alignment / Chaotic Neutral",
     "Intelligent Item ~ Alignment / Chaotic Evil",
-    "Intelligent Item ~ Alignment / Neutral Evil",
+    "Intelligent Item ~ Alignment / Lawful Evil",
     "Intelligent Item ~ Alignment / Lawful Good",
     "Intelligent Item ~ Alignment / Lawful Neutral",
     "Intelligent Item ~ Alignment / Neutral Good",
     "Intelligent Item ~ Alignment / True Neutral",
   },
-  Key="Intelligent Item ~ Alignment / Lawful Evil",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "NegLevels",
-      },
-      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
-      Conditions={
-        function (character)
-          return not (character.Alignment == "LE")
-        end,
-      },
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Align (LE)",
+  Key="Intelligent Item ~ Alignment / Lawful Evil",
+  Cost="0",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -14102,52 +13721,50 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
+      Conditions={
+        function (character)
+          return not (character.Alignment == "LE")
+        end,
+      },
+      Variables={
+        "NegLevels",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Align (LG)",
-  Cost=Formula("0"),
   GrantedItemTypes={
     "ItemAlign",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Alignment / Chaotic Good",
     "Intelligent Item ~ Alignment / Chaotic Neutral",
     "Intelligent Item ~ Alignment / Chaotic Evil",
     "Intelligent Item ~ Alignment / Neutral Evil",
-    "Intelligent Item ~ Alignment / Lawful Evil",
+    "Intelligent Item ~ Alignment / Lawful Good",
     "Intelligent Item ~ Alignment / Lawful Neutral",
     "Intelligent Item ~ Alignment / Neutral Good",
     "Intelligent Item ~ Alignment / True Neutral",
   },
-  Key="Intelligent Item ~ Alignment / Lawful Good",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "NegLevels",
-      },
-      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
-      Conditions={
-        function (character)
-          return not (character.Alignment == "LG")
-        end,
-      },
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Align (LG)",
+  Key="Intelligent Item ~ Alignment / Lawful Good",
+  Cost="0",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -14157,52 +13774,50 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
+      Conditions={
+        function (character)
+          return not (character.Alignment == "LG")
+        end,
+      },
+      Variables={
+        "NegLevels",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Align (LN)",
-  Cost=Formula("0"),
   GrantedItemTypes={
     "ItemAlign",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Alignment / Chaotic Good",
     "Intelligent Item ~ Alignment / Chaotic Neutral",
     "Intelligent Item ~ Alignment / Chaotic Evil",
     "Intelligent Item ~ Alignment / Neutral Evil",
     "Intelligent Item ~ Alignment / Lawful Evil",
-    "Intelligent Item ~ Alignment / Lawful Good",
+    "Intelligent Item ~ Alignment / Lawful Neutral",
     "Intelligent Item ~ Alignment / Neutral Good",
     "Intelligent Item ~ Alignment / True Neutral",
   },
-  Key="Intelligent Item ~ Alignment / Lawful Neutral",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "NegLevels",
-      },
-      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
-      Conditions={
-        function (character)
-          return not (character.Alignment == "LN" or character.Alignment == "LG" or character.Alignment == "LE")
-        end,
-      },
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Align (LN)",
+  Key="Intelligent Item ~ Alignment / Lawful Neutral",
+  Cost="0",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -14212,22 +13827,81 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
+      Conditions={
+        function (character)
+          return not (character.Alignment == "LN" or character.Alignment == "LG" or character.Alignment == "LE")
+        end,
+      },
+      Variables={
+        "NegLevels",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Align (NG)",
-  Cost=Formula("0"),
   GrantedItemTypes={
     "ItemAlign",
   },
-  Visible=true,
-  AffectsBothHeads=false,
+  Replaces={
+    "Intelligent Item ~ Alignment / Chaotic Good",
+    "Intelligent Item ~ Alignment / Chaotic Neutral",
+    "Intelligent Item ~ Alignment / Chaotic Evil",
+    "Intelligent Item ~ Alignment / Neutral Evil",
+    "Intelligent Item ~ Alignment / Lawful Evil",
+    "Intelligent Item ~ Alignment / Lawful Good",
+    "Intelligent Item ~ Alignment / Neutral Good",
+    "Intelligent Item ~ Alignment / True Neutral",
+  },
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
+  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Align (NG)",
+  Key="Intelligent Item ~ Alignment / Neutral Good",
+  Cost="0",
   NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
+  Visible=true,
+  Abilities={
+    {
+      Category="Intelligent Item",
+      Nature="AUTOMATIC",
+      Names={
+        "Intelligent Item ~ Align (NG)",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
+      Conditions={
+        function (character)
+          return not (character.Alignment == "NG")
+        end,
+      },
+      Variables={
+        "NegLevels",
+      },
+    },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
+    end,
+  },
+  GrantedItemTypes={
+    "ItemAlign",
+  },
   Replaces={
     "Intelligent Item ~ Alignment / Chaotic Good",
     "Intelligent Item ~ Alignment / Chaotic Neutral",
@@ -14238,32 +13912,38 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Alignment / Lawful Neutral",
     "Intelligent Item ~ Alignment / True Neutral",
   },
-  Key="Intelligent Item ~ Alignment / Neutral Good",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "NegLevels",
-      },
-      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
-      Conditions={
-        function (character)
-          return not (character.Alignment == "NG")
-        end,
-      },
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Align (TN)",
+  Key="Intelligent Item ~ Alignment / True Neutral",
+  Cost="0",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
       Nature="AUTOMATIC",
       Names={
-        "Intelligent Item ~ Align (NG)",
+        "Intelligent Item ~ Align (TN)",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
+      Conditions={
+        function (character)
+          return not (character.Alignment == "TN")
+        end,
+      },
+      Variables={
+        "NegLevels",
       },
     },
   },
@@ -14272,17 +13952,9 @@ DefineEquipmentModifier({
       return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Align (TN)",
-  Cost=Formula("0"),
   GrantedItemTypes={
     "ItemAlign",
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
   Replaces={
     "Intelligent Item ~ Alignment / Chaotic Good",
     "Intelligent Item ~ Alignment / Chaotic Neutral",
@@ -14293,67 +13965,36 @@ DefineEquipmentModifier({
     "Intelligent Item ~ Alignment / Lawful Neutral",
     "Intelligent Item ~ Alignment / Neutral Good",
   },
-  Key="Intelligent Item ~ Alignment / True Neutral",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "NegLevels",
-      },
-      Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
-      Conditions={
-        function (character)
-          return not (character.Alignment == "TN")
-        end,
-      },
-    },
-  },
-  Abilities={
-    {
-      Category="Intelligent Item",
-      Nature="AUTOMATIC",
-      Names={
-        "Intelligent Item ~ Align (TN)",
-      },
-    },
-  },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base"))) >= 1
-    end,
-  },
 })
 DefineEquipmentModifier({
   Name="Int Item / Power 0-level spell at will",
-  Cost=Formula("1000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
+  Key="Intelligent Item ~ Power / 0 Level Spell / At-Will",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return (((spell.IsType("Arcane")) and (spell.IsType("Divine")))) and spell.Level >= 0 and spell.Level <= 0
     end),
   },
-  Key="Intelligent Item ~ Power / 0 Level Spell / At-Will",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
-  },
+  Cost="1000",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("1"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ItemAlign"))) >= 1
+    end,
   },
   SpecialProperties={
     {
@@ -14363,38 +14004,36 @@ DefineEquipmentModifier({
       },
     },
   },
-  Conditions={
-    function (item)
-      return ((item.IsType("ItemAlign"))) >= 1
-    end,
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
   },
 })
 DefineEquipmentModifier({
   Name="Int Item / Power 1st-level spell 3/day",
-  Cost=Formula("1200"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
+  Key="Intelligent Item ~ Power / 1st Level Spell / 3 per Day",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return (((spell.IsType("Arcane")) and (spell.IsType("Divine")))) and spell.Level >= 1 and spell.Level <= 1
     end),
   },
-  Key="Intelligent Item ~ Power / 1st Level Spell / 3 per Day",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
-  },
+  Cost="1200",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("1"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ItemAlign"))) >= 1
+    end,
   },
   SpecialProperties={
     {
@@ -14404,38 +14043,36 @@ DefineEquipmentModifier({
       },
     },
   },
-  Conditions={
-    function (item)
-      return ((item.IsType("ItemAlign"))) >= 1
-    end,
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
   },
 })
 DefineEquipmentModifier({
   Name="Int Item / Power 2nd-level spell 1/day",
-  Cost=Formula("2400"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
+  Key="Intelligent Item ~ Power / 2nd Level Spell / 1 per Day",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return (((spell.IsType("Arcane")) and (spell.IsType("Divine")))) and spell.Level >= 2 and spell.Level <= 2
     end),
   },
-  Key="Intelligent Item ~ Power / 2nd Level Spell / 1 per Day",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
-  },
+  Cost="2400",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("1"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ItemAlign"))) >= 1
+    end,
   },
   SpecialProperties={
     {
@@ -14445,38 +14082,36 @@ DefineEquipmentModifier({
       },
     },
   },
-  Conditions={
-    function (item)
-      return ((item.IsType("ItemAlign"))) >= 1
-    end,
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
   },
 })
 DefineEquipmentModifier({
   Name="Int Item / Power 3rd-level spell 1/day",
-  Cost=Formula("6000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
+  Key="Intelligent Item ~ Power / 3rd Level Spell / 1 per Day",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return (((spell.IsType("Arcane")) and (spell.IsType("Divine")))) and spell.Level >= 3 and spell.Level <= 3
     end),
   },
-  Key="Intelligent Item ~ Power / 3rd Level Spell / 1 per Day",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
-  },
+  Cost="6000",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("1"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ItemAlign"))) >= 1
+    end,
   },
   SpecialProperties={
     {
@@ -14486,38 +14121,36 @@ DefineEquipmentModifier({
       },
     },
   },
-  Conditions={
-    function (item)
-      return ((item.IsType("ItemAlign"))) >= 1
-    end,
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
   },
 })
 DefineEquipmentModifier({
   Name="Int Item / Power 3rd-level spell 3/day",
-  Cost=Formula("18000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
+  Key="Intelligent Item ~ Power / 3rd Level Spell / 3 per Day",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return (((spell.IsType("Arcane")) and (spell.IsType("Divine")))) and spell.Level >= 3 and spell.Level <= 3
     end),
   },
-  Key="Intelligent Item ~ Power / 3rd Level Spell / 3 per Day",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
-  },
+  Cost="18000",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("2"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("2"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ItemAlign"))) >= 1
+    end,
   },
   SpecialProperties={
     {
@@ -14527,38 +14160,36 @@ DefineEquipmentModifier({
       },
     },
   },
-  Conditions={
-    function (item)
-      return ((item.IsType("ItemAlign"))) >= 1
-    end,
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
   },
 })
 DefineEquipmentModifier({
   Name="Int Item / Power 4th-level spell 3/day",
-  Cost=Formula("33600"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
+  Key="Intelligent Item ~ Power / 4th Level Spell / 3 per Day",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return (((spell.IsType("Arcane")) and (spell.IsType("Divine")))) and spell.Level >= 4 and spell.Level <= 4
     end),
   },
-  Key="Intelligent Item ~ Power / 4th Level Spell / 3 per Day",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
-  },
+  Cost="33600",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("2"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("2"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ItemAlign"))) >= 1
+    end,
   },
   SpecialProperties={
     {
@@ -14568,38 +14199,36 @@ DefineEquipmentModifier({
       },
     },
   },
-  Conditions={
-    function (item)
-      return ((item.IsType("ItemAlign"))) >= 1
-    end,
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
   },
 })
 DefineEquipmentModifier({
   Name="Int Item / Power 2nd-level spell 3/day",
-  Cost=Formula("7200"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
+  Key="Intelligent Item ~ Power / 2nd Level Spell / 3 per Day",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return (((spell.IsType("Arcane")) and (spell.IsType("Divine")))) and spell.Level >= 2 and spell.Level <= 2
     end),
   },
-  Key="Intelligent Item ~ Power / 2nd Level Spell / 3 per Day",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
-  },
+  Cost="7200",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("1"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ItemAlign"))) >= 1
+    end,
   },
   SpecialProperties={
     {
@@ -14609,38 +14238,36 @@ DefineEquipmentModifier({
       },
     },
   },
-  Conditions={
-    function (item)
-      return ((item.IsType("ItemAlign"))) >= 1
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Power 4th-level spell 1/day",
-  Cost=Formula("11200"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Choice={
-    Choose=ChooseSpell(function (character, spell)
-      return (((spell.IsType("Arcane")) and (spell.IsType("Divine")))) and spell.Level >= 4 and spell.Level <= 4
-    end),
-  },
-  Key="Intelligent Item ~ Power / 4th Level Spell / 1 per Day",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Power 4th-level spell 1/day",
+  Key="Intelligent Item ~ Power / 4th Level Spell / 1 per Day",
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return (((spell.IsType("Arcane")) and (spell.IsType("Divine")))) and spell.Level >= 4 and spell.Level <= 4
+    end),
+  },
+  Cost="11200",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("2"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("2"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ItemAlign"))) >= 1
+    end,
   },
   SpecialProperties={
     {
@@ -14650,39 +14277,18 @@ DefineEquipmentModifier({
       },
     },
   },
-  Conditions={
-    function (item)
-      return ((item.IsType("ItemAlign"))) >= 1
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Power Magic aura on itself at will",
-  Cost=Formula("2000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Power / Magic Aura / At-Will",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("1"),
-    },
-  },
-  SpecialProperties={
-    {
-      Format="Item can use magic aura on itself at will",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Power Magic aura on itself at will",
+  Key="Intelligent Item ~ Power / Magic Aura / At-Will",
+  Cost="2000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -14692,38 +14298,55 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.IsType("ItemAlign"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Power 5 ranks in a skill",
-  Cost=Formula("2500"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Choice={
-    Choose=ChooseSkill(function (character, skill)
-      return ((skill.IsType("Base")))
-    end, "Skill Choice"),
+  SpecialProperties={
+    {
+      Format="Item can use magic aura on itself at will",
+    },
   },
-  Key="Intelligent Item ~ Power / Skill Ranks / 5",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Power 5 ranks in a skill",
+  Key="Intelligent Item ~ Power / Skill Ranks / 5",
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Base")))
+    end, "Skill Choice"),
+  },
+  Cost="2500",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("1"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ItemAlign"))) >= 1
+    end,
   },
   SpecialProperties={
     {
@@ -14733,39 +14356,18 @@ DefineEquipmentModifier({
       },
     },
   },
-  Conditions={
-    function (item)
-      return ((item.IsType("ItemAlign"))) >= 1
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Power Move 10 feet",
-  Cost=Formula("5000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Power / Movement / Walk 10 Feet",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("1"),
-    },
-  },
-  SpecialProperties={
-    {
-      Format="Item can sprout limbs and move with a speed of 10 feet",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Power Move 10 feet",
+  Key="Intelligent Item ~ Power / Movement / Walk 10 Feet",
+  Cost="5000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -14775,38 +14377,55 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.IsType("ItemAlign"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Power 10 ranks in a skill",
-  Cost=Formula("10000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Choice={
-    Choose=ChooseSkill(function (character, skill)
-      return ((skill.IsType("Base")))
-    end, "Skill Choice"),
+  SpecialProperties={
+    {
+      Format="Item can sprout limbs and move with a speed of 10 feet",
+    },
   },
-  Key="Intelligent Item ~ Power / Skill Ranks / 10",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Power 10 ranks in a skill",
+  Key="Intelligent Item ~ Power / Skill Ranks / 10",
+  Choice={
+    Choose=ChooseSkill(function (character, skill)
+      return ((skill.IsType("Base")))
+    end, "Skill Choice"),
+  },
+  Cost="10000",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("2"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("2"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.IsType("ItemAlign"))) >= 1
+    end,
   },
   SpecialProperties={
     {
@@ -14816,39 +14435,18 @@ DefineEquipmentModifier({
       },
     },
   },
-  Conditions={
-    function (item)
-      return ((item.IsType("ItemAlign"))) >= 1
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Power Change shape",
-  Cost=Formula("10000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Power / Change Shape",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("2"),
-    },
-  },
-  SpecialProperties={
-    {
-      Format="Item can change shape into one other form of the same size",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Power Change shape",
+  Key="Intelligent Item ~ Power / Change Shape",
+  Cost="10000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -14858,39 +14456,37 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.IsType("ItemAlign"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Power Fly 30 feet",
-  Cost=Formula("10000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Power / Movement / Fly 30 Feet",
+  SpecialProperties={
+    {
+      Format="Item can change shape into one other form of the same size",
+    },
+  },
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("2"),
-    },
-  },
-  SpecialProperties={
-    {
-      Format="Item can fly (as per the spell) at a speed of 30 feet",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Power Fly 30 feet",
+  Key="Intelligent Item ~ Power / Movement / Fly 30 Feet",
+  Cost="10000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -14900,39 +14496,37 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.IsType("ItemAlign"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Power Teleport itself 1/day",
-  Cost=Formula("15000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Power / Movement / Teleport / 1 per Day",
+  SpecialProperties={
+    {
+      Format="Item can fly (as per the spell) at a speed of 30 feet",
+    },
+  },
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
-      Formula=Formula("2"),
-    },
-  },
-  SpecialProperties={
-    {
-      Format="Item can teleport itself 1/day",
-    },
-  },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Power Teleport itself 1/day",
+  Key="Intelligent Item ~ Power / Movement / Teleport / 1 per Day",
+  Cost="15000",
+  NameModifier="NOTHING",
+  Visible=true,
   Abilities={
     {
       Category="Intelligent Item",
@@ -14942,404 +14536,390 @@ DefineEquipmentModifier({
       },
     },
   },
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "IntelligentItemEgo",
+      },
+    },
+  },
   Conditions={
     function (item)
       return ((item.IsType("ItemAlign"))) >= 1
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Defeat/slay diametrically opposed alignment",
-  GrantedItemTypes={
-    "DedicatedPurpose",
+  SpecialProperties={
+    {
+      Format="Item can teleport itself 1/day",
+    },
   },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Purpose / Slay Alignment",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Defeat/slay diametrically opposed alignment",
+  Key="Intelligent Item ~ Purpose / Slay Alignment",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
       Formula=Formula("2"),
       Type={
         Name="Purpose",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "IntelligentItemEgo",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
+    end,
+  },
+  GrantedItemTypes={
+    "DedicatedPurpose",
   },
   SpecialProperties={
     {
       Format="Defeat/slay diametrically opposed alignment",
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Defeat/slay arcane spellcasters (including spellcasting monsters and those that use spell-like abilities)",
-  GrantedItemTypes={
-    "DedicatedPurpose",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Purpose / Slay Arcane Spellcaster",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Defeat/slay arcane spellcasters (including spellcasting monsters and those that use spell-like abilities)",
+  Key="Intelligent Item ~ Purpose / Slay Arcane Spellcaster",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
       Formula=Formula("2"),
       Type={
         Name="Purpose",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "IntelligentItemEgo",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
+    end,
+  },
+  GrantedItemTypes={
+    "DedicatedPurpose",
   },
   SpecialProperties={
     {
       Format="Defeat/slay arcane spellcasters (including spellcasting monsters and those that use spell-like abilities)",
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Defeat/slay divine spellcasters (including divine entities and servitors)",
-  GrantedItemTypes={
-    "DedicatedPurpose",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Purpose / Slay Divine Spellcaster",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Defeat/slay divine spellcasters (including divine entities and servitors)",
+  Key="Intelligent Item ~ Purpose / Slay Divine Spellcaster",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
       Formula=Formula("2"),
       Type={
         Name="Purpose",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "IntelligentItemEgo",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
+    end,
+  },
+  GrantedItemTypes={
+    "DedicatedPurpose",
   },
   SpecialProperties={
     {
       Format="Defeat/slay divine spellcasters (including divine entities and servitors)",
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Defeat/slay non-spellcasters",
-  GrantedItemTypes={
-    "DedicatedPurpose",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Purpose / Slay Non-spellcaster",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Defeat/slay non-spellcasters",
+  Key="Intelligent Item ~ Purpose / Slay Non-spellcaster",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
       Formula=Formula("2"),
       Type={
         Name="Purpose",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "IntelligentItemEgo",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
+    end,
+  },
+  GrantedItemTypes={
+    "DedicatedPurpose",
   },
   SpecialProperties={
     {
       Format="Defeat/slay non-spellcasters",
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Defeat/slay a particular creature type (see the bane special ability for choices)",
-  GrantedItemTypes={
-    "DedicatedPurpose",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Purpose / Slay Creature Type",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Defeat/slay a particular creature type (see the bane special ability for choices)",
+  Key="Intelligent Item ~ Purpose / Slay Creature Type",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
       Formula=Formula("2"),
       Type={
         Name="Purpose",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "IntelligentItemEgo",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
+    end,
+  },
+  GrantedItemTypes={
+    "DedicatedPurpose",
   },
   SpecialProperties={
     {
       Format="Defeat/slay a particular creature type (see the bane special ability for choices)",
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Defeat/slay a particular race or kind of creature",
-  GrantedItemTypes={
-    "DedicatedPurpose",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Purpose / Slay Creature Race",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Defeat/slay a particular race or kind of creature",
+  Key="Intelligent Item ~ Purpose / Slay Creature Race",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
       Formula=Formula("2"),
       Type={
         Name="Purpose",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "IntelligentItemEgo",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
+    end,
+  },
+  GrantedItemTypes={
+    "DedicatedPurpose",
   },
   SpecialProperties={
     {
       Format="Defeat/slay a particular race or kind of creature",
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Defend a particular race or kind of creature",
-  GrantedItemTypes={
-    "DedicatedPurpose",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Purpose / Defend Creature Race",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Defend a particular race or kind of creature",
+  Key="Intelligent Item ~ Purpose / Defend Creature Race",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
       Formula=Formula("2"),
       Type={
         Name="Purpose",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "IntelligentItemEgo",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
+    end,
+  },
+  GrantedItemTypes={
+    "DedicatedPurpose",
   },
   SpecialProperties={
     {
       Format="Defend a particular race or kind of creature",
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Defeat/slay the servants of a specific deity",
-  GrantedItemTypes={
-    "DedicatedPurpose",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Purpose / Slay Servants of Deity",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Defeat/slay the servants of a specific deity",
+  Key="Intelligent Item ~ Purpose / Slay Servants of Deity",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
       Formula=Formula("2"),
       Type={
         Name="Purpose",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "IntelligentItemEgo",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
+    end,
+  },
+  GrantedItemTypes={
+    "DedicatedPurpose",
   },
   SpecialProperties={
     {
       Format="Defeat/slay the servants of a specific deity",
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Defend the servants and interests of a specific deity",
-  GrantedItemTypes={
-    "DedicatedPurpose",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Purpose / Defend Servants of Deity",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Defend the servants and interests of a specific deity",
+  Key="Intelligent Item ~ Purpose / Defend Servants of Deity",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
       Formula=Formula("2"),
       Type={
         Name="Purpose",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "IntelligentItemEgo",
+      },
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
+    end,
+  },
+  GrantedItemTypes={
+    "DedicatedPurpose",
   },
   SpecialProperties={
     {
       Format="Defend the servants and interests of a specific deity",
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Defeat/slay all (other than the item and the wielder)",
-  GrantedItemTypes={
-    "DedicatedPurpose",
-  },
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Purpose / Slay All",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Defeat/slay all (other than the item and the wielder)",
+  Key="Intelligent Item ~ Purpose / Slay All",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
-      Variables={
-        "IntelligentItemEgo",
-      },
       Formula=Formula("2"),
       Type={
         Name="Purpose",
         Replace=false,
         Stack=false,
       },
-    },
-  },
-  SpecialProperties={
-    {
-      Format="Defeat/slay all (other than the item and the wielder)",
+      Variables={
+        "IntelligentItemEgo",
+      },
     },
   },
   Conditions={
@@ -15347,66 +14927,75 @@ DefineEquipmentModifier({
       return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose"))) >= 2
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Dedicated Detect special purpose foes",
-  Cost=Formula("10000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Purpose Power / Detect Foe",
+  GrantedItemTypes={
+    "DedicatedPurpose",
+  },
+  SpecialProperties={
+    {
+      Format="Defeat/slay all (other than the item and the wielder)",
+    },
+  },
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Dedicated Detect special purpose foes",
+  Key="Intelligent Item ~ Purpose Power / Detect Foe",
+  Cost="10000",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("1"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose")) + (item.IsType("DedicatedPurpose"))) >= 3
+    end,
   },
   SpecialProperties={
     {
       Format="Dedicated Power - Detect special purpose foes",
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose")) + (item.IsType("DedicatedPurpose"))) >= 3
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Dedicated 4th-level spell at will",
-  Cost=Formula("56000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Choice={
-    Choose=ChooseSpell(function (character, spell)
-      return (((spell.IsType("Arcane")) and (spell.IsType("Divine")))) and spell.Level >= 4 and spell.Level <= 4
-    end),
-  },
-  Key="Intelligent Item ~ Purpose Power / 4th Level Spell / At-Will",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Dedicated 4th-level spell at will",
+  Key="Intelligent Item ~ Purpose Power / 4th Level Spell / At-Will",
+  Choice={
+    Choose=ChooseSpell(function (character, spell)
+      return (((spell.IsType("Arcane")) and (spell.IsType("Divine")))) and spell.Level >= 4 and spell.Level <= 4
+    end),
+  },
+  Cost="56000",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("2"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("2"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose")) + (item.IsType("DedicatedPurpose"))) >= 3
+    end,
   },
   SpecialProperties={
     {
@@ -15416,95 +15005,91 @@ DefineEquipmentModifier({
       },
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose")) + (item.IsType("DedicatedPurpose"))) >= 3
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Dedicated +2 luck attacks & saves",
-  Cost=Formula("80000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Purpose Power / Luck Bonus",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Dedicated +2 luck attacks & saves",
+  Key="Intelligent Item ~ Purpose Power / Luck Bonus",
+  Cost="80000",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "TOHIT",
-      },
       Formula=Formula("2+Global_LuckBonus"),
       Type={
         Name="Luck",
         Replace=false,
         Stack=false,
+      },
+      Variables={
+        "TOHIT",
       },
     },
     {
       Category="SAVE",
-      Variables={
-        "ALL",
-      },
       Formula=Formula("2+Global_LuckBonus"),
       Type={
         Name="Luck",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "ALL",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("2"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("2"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose")) + (item.IsType("DedicatedPurpose"))) >= 3
+    end,
   },
   SpecialProperties={
     {
       Format="Dedicated Power - +2 luck attacks & saves",
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose")) + (item.IsType("DedicatedPurpose"))) >= 3
-    end,
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
   },
 })
 DefineEquipmentModifier({
   Name="Int Item / Dedicated 5th-level spell at will",
-  Cost=Formula("90000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
+  Key="Intelligent Item ~ Purpose Power / 5th Level Spell / At-Will",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return (((spell.IsType("Arcane")) and (spell.IsType("Divine")))) and spell.Level >= 5 and spell.Level <= 5
     end),
   },
-  Key="Intelligent Item ~ Purpose Power / 5th Level Spell / At-Will",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
-  },
+  Cost="90000",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("2"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("2"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose")) + (item.IsType("DedicatedPurpose"))) >= 3
+    end,
   },
   SpecialProperties={
     {
@@ -15514,38 +15099,36 @@ DefineEquipmentModifier({
       },
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose")) + (item.IsType("DedicatedPurpose"))) >= 3
-    end,
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
   },
 })
 DefineEquipmentModifier({
   Name="Int Item / Dedicated 6th-level spell at will",
-  Cost=Formula("132000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
+  Key="Intelligent Item ~ Purpose Power / 6th Level Spell / At-Will",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return (((spell.IsType("Arcane")) and (spell.IsType("Divine")))) and spell.Level >= 6 and spell.Level <= 6
     end),
   },
-  Key="Intelligent Item ~ Purpose Power / 6th Level Spell / At-Will",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
-  },
+  Cost="132000",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("2"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("2"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose")) + (item.IsType("DedicatedPurpose"))) >= 3
+    end,
   },
   SpecialProperties={
     {
@@ -15555,38 +15138,36 @@ DefineEquipmentModifier({
       },
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose")) + (item.IsType("DedicatedPurpose"))) >= 3
-    end,
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
   },
 })
 DefineEquipmentModifier({
   Name="Int Item / Dedicated 7th-level spell at will",
-  Cost=Formula("182000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
+  Key="Intelligent Item ~ Purpose Power / 7th Level Spell / At-Will",
   Choice={
     Choose=ChooseSpell(function (character, spell)
       return (((spell.IsType("Arcane")) and (spell.IsType("Divine")))) and spell.Level >= 7 and spell.Level <= 7
     end),
   },
-  Key="Intelligent Item ~ Purpose Power / 7th Level Spell / At-Will",
-  Types={
-    "Weapon",
-    "Armor",
-    "Goods",
-  },
+  Cost="182000",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("2"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("2"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose")) + (item.IsType("DedicatedPurpose"))) >= 3
+    end,
   },
   SpecialProperties={
     {
@@ -15596,680 +15177,551 @@ DefineEquipmentModifier({
       },
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose")) + (item.IsType("DedicatedPurpose"))) >= 3
-    end,
-  },
-})
-DefineEquipmentModifier({
-  Name="Int Item / Dedicated True resurrection on wielder",
-  Cost=Formula("200000"),
-  Visible=true,
-  AffectsBothHeads=false,
-  NameModifier="NOTHING",
-  NameModifierLocation="Parentheses",
-  Key="Intelligent Item ~ Purpose Power / True Resurrection",
   Types={
     "Weapon",
     "Armor",
     "Goods",
   },
+})
+DefineEquipmentModifier({
+  Name="Int Item / Dedicated True resurrection on wielder",
+  Key="Intelligent Item ~ Purpose Power / True Resurrection",
+  Cost="200000",
+  NameModifier="NOTHING",
+  Visible=true,
   Bonuses={
     {
       Category="VAR",
+      Formula=Formula("2"),
       Variables={
         "IntelligentItemEgo",
       },
-      Formula=Formula("2"),
     },
+  },
+  Conditions={
+    function (item)
+      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose")) + (item.IsType("DedicatedPurpose"))) >= 3
+    end,
   },
   SpecialProperties={
     {
       Format="Dedicated Power - True resurrection on wielder",
     },
   },
-  Conditions={
-    function (item)
-      return ((item.HasModifier("Intelligent Item ~ Base")) + (item.HasModifier("Intelligent Item ~ Purpose")) + (item.IsType("DedicatedPurpose"))) >= 3
-    end,
+  Types={
+    "Weapon",
+    "Armor",
+    "Goods",
   },
 })
 CopyEquipmentModifier("Material ~ Cloth", {
   Name="CLOTH",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Leather", {
   Name="LEATHER",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Rope", {
   Name="ROPE",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Steel", {
   Name="STEEL",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Wood", {
   Name="WOOD",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Masterwork ~ Weapon", {
   Name="MWORKW",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Masterwork ~ Ammunition", {
   Name="MWORKM",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Masterwork ~ Armor", {
   Name="MWORKA",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Masterwork ~ Item", {
   Name="MWORKT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Masterwork ~ Bonded Object", {
   Name="MWORKB",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Bonded Object", {
   Name="BONDED_OBJECT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Thrown Ammunition", {
   Name="THROWN_AMMO",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Composite Bow Strength Rating", {
   Name="BOWSTR",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Brace", {
   Name="BRACE",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Disarm", {
   Name="DISARM",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Monk", {
   Name="MONK",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Nonlethal", {
   Name="NONLETHAL",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Trip", {
   Name="TRIP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Spikes ~ Armor", {
   Name="SPIKE_A",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Spikes ~ Shield", {
   Name="SPIKE_S",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Spikes ~ Shieldbash", {
   Name="SPIKE_SB",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Locked Gauntlet", {
   Name="LOCK_G",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Nonhumanoid ~ Armor", {
   Name="NONHUMANOID",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Broken ~ Weapon", {
   Name="BROKEW",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Broken ~ Armor", {
   Name="BROKEA",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Broken ~ Shield", {
   Name="BROKES",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Broken ~ Item", {
   Name="BROKET",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Broken ~ Magic Item", {
   Name="BROKEM",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Adamantine ~ Ammunition", {
   Name="Adamantine (Ammo)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Light", {
   Name="Adamantine (Light Armor)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Medium", {
   Name="Adamantine (Medium Armor)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Heavy", {
   Name="Adamantine (Heavy Armor)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Adamantine ~ Weapon", {
   Name="Adamantine (Weapon)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Mithril ~ Armor / Light", {
   Name="Mithral (Light Armor)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Mithril ~ Armor / Medium", {
   Name="Mithral (Medium Armor)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Mithril ~ Armor / Heavy", {
   Name="Mithral (Heavy Armor)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Mithril ~ Shield", {
   Name="Mithral (Shield)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Mithril ~ Weapon / Item", {
   Name="Mithral (Item)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Darkwood", {
   Name="Darkwood",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Dragonhide", {
   Name="Dragonhide",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Cold Iron", {
   Name="Cold Iron",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Alchemical Silver", {
   Name="Alchemical Silver",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Adamantine ~ Ammunition", {
   Name="ADAMANT_AMMO",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Light", {
   Name="ADAMANT_ARMR_LT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Medium", {
   Name="ADAMANT_ARMR_MED",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Heavy", {
   Name="ADAMANT_ARMR_HVY",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Adamantine ~ Weapon", {
   Name="ADAMANT_WEAP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Mithril ~ Armor / Light", {
   Name="MITHRAL_ARMR_LT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Mithril ~ Armor / Medium", {
   Name="MITHRAL_ARMR_MED",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Mithril ~ Armor / Heavy", {
   Name="MITHRAL_ARMR_HVY",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Mithril ~ Shield", {
   Name="MITHRAL_SHLD",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Mithril ~ Weapon / Item", {
   Name="MITHRAL_ITEM",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Darkwood", {
   Name="DARK",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Dragonhide", {
   Name="DRACO",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Cold Iron", {
   Name="C_IRON",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Material ~ Alchemical Silver", {
   Name="ALCHM",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Charged Item / 3 Maximum", {
   Name="CHARGED_ITEM_3",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Charged Item / 4 Maximum", {
   Name="CHARGED_ITEM_4",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Charged Item / 5 Maximum", {
   Name="CHARGED_ITEM_5",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Charged Item / 6 Maximum", {
   Name="CHARGED_ITEM_6",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Charged Item / 7 Maximum", {
   Name="CHARGED_ITEM_7",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Charged Item / 8 Maximum", {
   Name="CHARGED_ITEM_8",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Charged Item / 9 Maximum", {
   Name="CHARGED_ITEM_9",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Charged Item / 10 Maximum", {
   Name="CHARGED_ITEM_10",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Charged Item / 12 Maximum", {
   Name="CHARGED_ITEM_12",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Charged Item / 20 Maximum", {
   Name="CHARGED_ITEM_20",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Charged Item / 34 Maximum", {
   Name="CHARGED_ITEM_34",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Charged Item / 36 Maximum", {
   Name="CHARGED_ITEM_36",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Charged Item / 50 Maximum", {
   Name="CHARGED_ITEM_50",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Charged Item / 101 Maximum", {
   Name="CHARGED_ITEM_101",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Staff Charges", {
   Name="CHARGED_STAFF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Uses per Day / 1", {
   Name="USES_PER_DAY_1",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Uses per Day / 2", {
   Name="USES_PER_DAY_2",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Uses per Day / 3", {
   Name="USES_PER_DAY_3",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Uses per Day / 10", {
   Name="USES_PER_DAY_10",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +1 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_1",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +2 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_2",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +3 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_3",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +4 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_4",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +5 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_5",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +6 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_6",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +7 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_7",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +8 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_8",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +9 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_9",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +10 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_10",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Enhancement Cost", {
   Name="MAGIC_COST",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Single Use", {
   Name="SPL_1USE",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Spell Trigger", {
   Name="SPL_CHRG",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Command Word", {
   Name="SPL_CMD",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Use Activated", {
   Name="SPL_ACT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus Ability / Enhancement", {
   Name="BNS_ENHC_AB",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Enhancement", {
   Name="BNS_ENHC_AC",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus Spell", {
   Name="BNS_SPELL",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Deflection", {
   Name="BNS_AC_DEFL",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Luck", {
   Name="BNS_AC_LUCK",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Insight", {
   Name="BNS_AC_INSI",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Sacred", {
   Name="BNS_AC_SCRD",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Profane", {
   Name="BNS_AC_PROF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Other", {
   Name="BNS_AC_OTHE",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Natural Armor", {
   Name="BNS_ENHC_NAT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus Save / Resistance", {
   Name="BNS_SAV_RES",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus Save / Luck", {
   Name="BNS_SAV_LUC",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus Save / Insight", {
   Name="BNS_SAV_INS",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus Save / Sacred", {
   Name="BNS_SAV_SAC",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus Save / Profane", {
   Name="BNS_SAV_PRO",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus Save / Other", {
   Name="BNS_SAV_OTH",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus Skill / Competence", {
   Name="BNS_SKL_CMP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus Spell Resistance", {
   Name="BNS_SPL_RST",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus Skill / Maximize Knowledge", {
   Name="MAX_KNW",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bonus Skill / Maximize Any Skill", {
   Name="MAX_GNL",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Continuous / Hour per Level", {
   Name="SPL_CON_STANDARD",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Continuous / Round per Level", {
   Name="SPL_CON_ROUND",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Continuous / Minute per Level", {
   Name="SPL_CON_MINUTES",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Continuous / 10 Minutes per Level", {
   Name="SPL_CON_HOURS",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Continuous / Day per Level", {
   Name="SPL_CON_DAYS",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Staff / Primary Power", {
   Name="SPL_SPP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Staff / Secondary Power", {
   Name="SPL_SSP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Staff / Lesser Power", {
   Name="SPL_SLP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 DefineEquipmentModifier({
   Name="Divine",
-  GrantedItemTypes={
-    "Divine",
-  },
-  Visible=false,
-  AffectsBothHeads=false,
   Key="SCROLL_DIVINE",
-  Types={
-    "Scroll",
-  },
+  Visible=false,
   Conditions={
     function (item)
       return not (((item.IsType("Divine")) + (item.IsType("Arcane"))) >= 1)
     end,
+  },
+  GrantedItemTypes={
+    "Divine",
+  },
+  Types={
+    "Scroll",
   },
 })
 DefineEquipmentModifier({
   Name="Arcane",
-  GrantedItemTypes={
-    "Arcane",
-  },
-  Visible=false,
-  AffectsBothHeads=false,
   Key="SCROLL_ARCANE",
-  Types={
-    "Scroll",
-  },
+  Visible=false,
   Conditions={
     function (item)
       return not (((item.IsType("Divine")) + (item.IsType("Arcane"))) >= 1)
     end,
   },
-})
-DefineEquipmentModifier({
-  Name="Minor",
   GrantedItemTypes={
-    "Minor",
+    "Arcane",
   },
-  Visible=false,
-  AffectsBothHeads=false,
-  Key="SCROLL_MINOR",
   Types={
     "Scroll",
   },
+})
+DefineEquipmentModifier({
+  Name="Minor",
+  Key="SCROLL_MINOR",
+  Visible=false,
   Conditions={
     function (item)
       return ((item.IsType("Arcane")) + (item.IsType("Divine"))) >= 1
@@ -16277,19 +15729,18 @@ DefineEquipmentModifier({
     function (item)
       return not (((item.IsType("Minor")) + (item.IsType("Medium")) + (item.IsType("Major"))) >= 1)
     end,
+  },
+  GrantedItemTypes={
+    "Minor",
+  },
+  Types={
+    "Scroll",
   },
 })
 DefineEquipmentModifier({
   Name="Medium",
-  GrantedItemTypes={
-    "Medium",
-  },
-  Visible=false,
-  AffectsBothHeads=false,
   Key="SCROLL_MEDIUM",
-  Types={
-    "Scroll",
-  },
+  Visible=false,
   Conditions={
     function (item)
       return ((item.IsType("Arcane")) + (item.IsType("Divine"))) >= 1
@@ -16297,19 +15748,18 @@ DefineEquipmentModifier({
     function (item)
       return not (((item.IsType("Minor")) + (item.IsType("Medium")) + (item.IsType("Major"))) >= 1)
     end,
+  },
+  GrantedItemTypes={
+    "Medium",
+  },
+  Types={
+    "Scroll",
   },
 })
 DefineEquipmentModifier({
   Name="Major",
-  GrantedItemTypes={
-    "Major",
-  },
-  Visible=false,
-  AffectsBothHeads=false,
   Key="SCROLL_MAJOR",
-  Types={
-    "Scroll",
-  },
+  Visible=false,
   Conditions={
     function (item)
       return ((item.IsType("Arcane")) + (item.IsType("Divine"))) >= 1
@@ -16317,1075 +15767,867 @@ DefineEquipmentModifier({
     function (item)
       return not (((item.IsType("Minor")) + (item.IsType("Medium")) + (item.IsType("Major"))) >= 1)
     end,
+  },
+  GrantedItemTypes={
+    "Major",
+  },
+  Types={
+    "Scroll",
   },
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Arcane", {
   Name="A_1USEMI",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Arcane", {
   Name="A_1USEME",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Arcane", {
   Name="A_1USEMA",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Divine", {
   Name="D_1USEMI",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Divine", {
   Name="D_1USEME",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Divine", {
   Name="D_1USEMA",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Wield Size / 1 Step Greater", {
   Name="PLUS1STEP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Wield Size / 2 Steps Greater", {
   Name="PLUS2STEP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Wield Size / 3 Steps Greater", {
   Name="PLUS3STEP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Wield Size / 1 Step Greater / No Penalty", {
   Name="PLUS1STEP_NO_PENALTY",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Wield Size / 2 Steps Greater / No Penalty", {
   Name="PLUS2STEP_NO_PENALTY",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Quality ~ Wield Size / 3 Steps Greater / No Penalty", {
   Name="PLUS3STEP_NO_PENALTY",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +1 ~ Weapon", {
   Name="PLUS1W",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +2 ~ Weapon", {
   Name="PLUS2W",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +3 ~ Weapon", {
   Name="PLUS3W",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +4 ~ Weapon", {
   Name="PLUS4W",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +5 ~ Weapon", {
   Name="PLUS5W",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +1 ~ Ammunition", {
   Name="PLUS1M",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +2 ~ Ammunition", {
   Name="PLUS2M",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +3 ~ Ammunition", {
   Name="PLUS3M",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +4 ~ Ammunition", {
   Name="PLUS4M",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +5 ~ Ammunition", {
   Name="PLUS5M",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Anarchic ~ Weapon", {
   Name="ANARCH",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Axiomatic ~ Weapon", {
   Name="AXIOM",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bane ~ Weapon", {
   Name="BANE",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Brilliant Energy ~ Weapon", {
   Name="BRILL",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Dancing ~ Melee", {
   Name="DANCE",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Defending ~ Melee", {
   Name="DEFEND",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Disruption ~ Weapon", {
   Name="DISRPT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Distance ~ Ranged", {
   Name="DISTNC",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Flaming ~ Weapon", {
   Name="FLAME",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Flaming Burst ~ Weapon", {
   Name="FLM_BRST",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Frost ~ Weapon", {
   Name="FROST",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Ghost Touch ~ Weapon", {
   Name="GHOST",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Holy ~ Weapon", {
   Name="HOLY",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Icy Burst ~ Weapon", {
   Name="ICY_BRST",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Keen ~ Weapon", {
   Name="KEEN",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Ki Focus ~ Melee", {
   Name="KI",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Merciful ~ Weapon", {
   Name="MERCY",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Mighty Cleaving ~ Melee", {
   Name="CLEAVE",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Returning ~ Thrown", {
   Name="RETURN",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Seeking ~ Ranged", {
   Name="SEEK",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Shock ~ Weapon", {
   Name="SHOCK",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Shocking Burst ~ Weapon", {
   Name="SHK_BRST",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Speed ~ Weapon", {
   Name="SPEED",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Storing ~ Melee", {
   Name="STORE",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Thundering ~ Weapon", {
   Name="THUNDER",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Throwing ~ Melee", {
   Name="THROW",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Unholy ~ Weapon", {
   Name="UNHOLY",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Vicious ~ Melee", {
   Name="VICIOUS",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Vorpal ~ Melee", {
   Name="VORPAL",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Wounding ~ Weapon", {
   Name="WOUND",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Amulet of Mighty Fists Base", {
   Name="MightyFist_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +1 ~ Amulet of Mighty Fists", {
   Name="PLUS1_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +2 ~ Amulet of Mighty Fists", {
   Name="PLUS2_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +3 ~ Amulet of Mighty Fists", {
   Name="PLUS3_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +4 ~ Amulet of Mighty Fists", {
   Name="PLUS4_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +5 ~ Amulet of Mighty Fists", {
   Name="PLUS5_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Anarchic ~ Amulet of Mighty Fists", {
   Name="ANARCH_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Axiomatic ~ Amulet of Mighty Fists", {
   Name="AXIOM_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bane ~ Amulet of Mighty Fists", {
   Name="BANE_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Brilliant Energy ~ Amulet of Mighty Fists", {
   Name="BRILL_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Defending ~ Amulet of Mighty Fists", {
   Name="DEFEND_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Disruption ~ Amulet of Mighty Fists", {
   Name="DISRPT_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Flaming ~ Amulet of Mighty Fists", {
   Name="FLAME_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Flaming Burst ~ Amulet of Mighty Fists", {
   Name="FLM_BRST_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Frost ~ Amulet of Mighty Fists", {
   Name="FROST_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Ghost Touch ~ Amulet of Mighty Fists", {
   Name="GHOST_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Holy ~ Amulet of Mighty Fists", {
   Name="HOLY_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Icy Burst ~ Amulet of Mighty Fists", {
   Name="ICY_BRST_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Ki Focus ~ Amulet of Mighty Fists", {
   Name="KI_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Merciful ~ Amulet of Mighty Fists", {
   Name="MERCY_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Mighty Cleaving ~ Amulet of Mighty Fists", {
   Name="CLEAVE_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Shock ~ Amulet of Mighty Fists", {
   Name="SHOCK_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Shocking Burst ~ Amulet of Mighty Fists", {
   Name="SHK_BRST_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Speed ~ Amulet of Mighty Fists", {
   Name="SPEED_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Storing ~ Amulet of Mighty Fists", {
   Name="STORE_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Thundering ~ Amulet of Mighty Fists", {
   Name="THUNDER_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Unholy ~ Amulet of Mighty Fists", {
   Name="UNHOLY_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Vicious ~ Amulet of Mighty Fists", {
   Name="VICIOUS_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Wounding ~ Amulet of Mighty Fists", {
   Name="WOUND_AMF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +1 ~ Armor", {
   Name="PLUS1A",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +2 ~ Armor", {
   Name="PLUS2A",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +3 ~ Armor", {
   Name="PLUS3A",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +4 ~ Armor", {
   Name="PLUS4A",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +5 ~ Armor", {
   Name="PLUS5A",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +1 ~ Shield", {
   Name="PLUS1S",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +2 ~ Shield", {
   Name="PLUS2S",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +3 ~ Shield", {
   Name="PLUS3S",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +4 ~ Shield", {
   Name="PLUS4S",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ +5 ~ Shield", {
   Name="PLUS5S",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Animated ~ Shield", {
   Name="ANMATD",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Arrow Catching ~ Shield", {
   Name="ARW_CAT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Arrow Deflection ~ Shield", {
   Name="ARW_DEF",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bashing ~ Shield / Heavy", {
   Name="BASH_H",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Bashing ~ Shield / Light", {
   Name="BASH_L",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Blinding ~ Shield", {
   Name="BLIND",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Acid ~ Armor", {
   Name="RST_ACD",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Acid / Improved ~ Armor", {
   Name="RST_ACD_IMP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Acid / Greater ~ Armor", {
   Name="RES_ACD_GRT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Cold ~ Armor", {
   Name="RST_CLD",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Cold / Improved ~ Armor", {
   Name="RST_CLD_IMP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Cold / Greater ~ Armor", {
   Name="RES_CLD_GRT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Electricity ~ Armor", {
   Name="RST_ELC",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Electricity / Improved ~ Armor", {
   Name="RST_ELC_IMP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Electricity / Greater ~ Armor", {
   Name="RES_ELC_GRT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Fire ~ Armor", {
   Name="RST_FIR",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Fire / Improved ~ Armor", {
   Name="RST_FIR_IMP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Fire / Greater ~ Armor", {
   Name="RES_FIR_GRT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Sonic ~ Armor", {
   Name="RST_SNC",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Sonic / Improved ~ Armor", {
   Name="RST_SNC_IMP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Sonic / Greater ~ Armor", {
   Name="RES_SNC_GRT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Etherealness ~ Armor", {
   Name="ETHERE",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Fortification / Light ~ Armor", {
   Name="FRT_LGHT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Fortification / Moderate ~ Armor", {
   Name="FRT_MOD",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Fortification / Heavy ~ Armor", {
   Name="FRT_HVY",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Ghost Touch ~ Armor", {
   Name="GHOST_A",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Glamered ~ Armor", {
   Name="GLAM",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Invulnerability ~ Armor", {
   Name="INVULN",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Reflecting ~ Shield", {
   Name="REFLC",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Shadow ~ Armor", {
   Name="SHDW",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Shadow / Improved ~ Armor", {
   Name="SHDW_IMP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Shadow / Greater ~ Armor", {
   Name="SHDW_GRT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Slick ~ Armor", {
   Name="SLK",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Slick / Improved ~ Armor", {
   Name="SLK_IMP",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Slick / Greater ~ Armor", {
   Name="SLK_GRT",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Resistance / 13 ~ Armor", {
   Name="SPELL_RES_13",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Resistance / 15 ~ Armor", {
   Name="SPELL_RES_15",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Resistance / 17 ~ Armor", {
   Name="SPELL_RES_17",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Spell Resistance / 19 ~ Armor", {
   Name="SPELL_RES_19",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Undead Controlling ~ Armor", {
   Name="UNDEAD",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Wild ~ Armor", {
   Name="WILD_A",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Special Ability ~ Wild ~ Shield", {
   Name="WILD_S",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Base", {
   Name="IntItemBase",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose", {
   Name="IntItemPurpose",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 11", {
   Name="IntItemStatINT11",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 12", {
   Name="IntItemStatINT12",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 13", {
   Name="IntItemStatINT13",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 14", {
   Name="IntItemStatINT14",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 15", {
   Name="IntItemStatINT15",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 16", {
   Name="IntItemStatINT16",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 17", {
   Name="IntItemStatINT17",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 18", {
   Name="IntItemStatINT18",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 19", {
   Name="IntItemStatINT19",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 20", {
   Name="IntItemStatINT20",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 11", {
   Name="IntItemStatWIS11",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 12", {
   Name="IntItemStatWIS12",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 13", {
   Name="IntItemStatWIS13",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 14", {
   Name="IntItemStatWIS14",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 15", {
   Name="IntItemStatWIS15",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 16", {
   Name="IntItemStatWIS16",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 17", {
   Name="IntItemStatWIS17",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 18", {
   Name="IntItemStatWIS18",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 19", {
   Name="IntItemStatWIS19",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 20", {
   Name="IntItemStatWIS20",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 11", {
   Name="IntItemStatCHA11",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 12", {
   Name="IntItemStatCHA12",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 13", {
   Name="IntItemStatCHA13",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 14", {
   Name="IntItemStatCHA14",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 15", {
   Name="IntItemStatCHA15",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 16", {
   Name="IntItemStatCHA16",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 17", {
   Name="IntItemStatCHA17",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 18", {
   Name="IntItemStatCHA18",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 19", {
   Name="IntItemStatCHA19",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 20", {
   Name="IntItemStatCHA20",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Communication / Speech", {
   Name="IntSpeech",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Communication / Telepathy", {
   Name="IntTelepathy",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Sense / Range 60", {
   Name="IntSense60",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Sense / Range 120", {
   Name="IntSense120",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Sense / Darkvision", {
   Name="IntDarkvision",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Sense / Blindsense", {
   Name="IntBlindsense",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Communication / Read Language", {
   Name="IntReadLang",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Communication / Read Magic", {
   Name="IntReadMagic",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Chaotic Good", {
   Name="Intelligent Item Alignment (CG)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Chaotic Neutral", {
   Name="Intelligent Item Alignment (CN)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Chaotic Evil", {
   Name="Intelligent Item Alignment (CE)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Neutral Evil", {
   Name="Intelligent Item Alignment (NE)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Lawful Evil", {
   Name="Intelligent Item Alignment (LE)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Lawful Good", {
   Name="Intelligent Item Alignment (LG)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Lawful Neutral", {
   Name="Intelligent Item Alignment (LN)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Neutral Good", {
   Name="Intelligent Item Alignment (NG)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Alignment / True Neutral", {
   Name="Intelligent Item Alignment (TN)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Power / 0 Level Spell / At-Will", {
   Name="ItemPower_CastZeroAtWill",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Power / 1st Level Spell / 3 per Day", {
   Name="ItemPower_CastOneThree",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Power / 2nd Level Spell / 1 per Day", {
   Name="ItemPower_CastTwoOne",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Power / 3rd Level Spell / 1 per Day", {
   Name="ItemPower_CastThreeOne",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Power / 3rd Level Spell / 3 per Day", {
   Name="ItemPower_CastThreeThree",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Power / 4th Level Spell / 3 per Day", {
   Name="ItemPower_CastFourThree",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Power / 2nd Level Spell / 3 per Day", {
   Name="ItemPower_CastTwoThree",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Power / 4th Level Spell / 1 per Day", {
   Name="ItemPower_CastFourOne",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Power / Magic Aura / At-Will", {
   Name="ItemPower_MagicAura",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Power / Skill Ranks / 5", {
   Name="ItemPower_FiveSkill",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Power / Movement / Walk 10 Feet", {
   Name="ItemPower_Move",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Power / Skill Ranks / 10", {
   Name="ItemPower_TenSkill",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Power / Change Shape", {
   Name="ItemPower_ChangeShape",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Power / Movement / Fly 30 Feet", {
   Name="ItemPower_Fly",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Power / Movement / Teleport / 1 per Day", {
   Name="ItemPower_Teleport",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Alignment", {
   Name="Intelligent Item Purpose (Slay Align)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Arcane Spellcaster", {
   Name="Intelligent Item Purpose (Slay Arcane)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Divine Spellcaster", {
   Name="Intelligent Item Purpose (Slay Divine)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Non-spellcaster", {
   Name="Intelligent Item Purpose (Slay NonCasters)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Creature Type", {
   Name="Intelligent Item Purpose (Slay Creature Type)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Creature Race", {
   Name="Intelligent Item Purpose (Slay Race or Kind)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Defend Creature Race", {
   Name="Intelligent Item Purpose (Defend Race or Kind)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Servants of Deity", {
   Name="Intelligent Item Purpose (Slay Deity Servant)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Defend Servants of Deity", {
   Name="Intelligent Item Purpose (Defend Deity Servant)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay All", {
   Name="Intelligent Item Purpose (Slay All)",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose Power / Detect Foe", {
   Name="PurposePower_DetectFoe",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose Power / 4th Level Spell / At-Will", {
   Name="PurposePower_CastFourAtWill",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose Power / Luck Bonus", {
   Name="PurposePower_LuckBonus",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose Power / 5th Level Spell / At-Will", {
   Name="PurposePower_CastFiveAtWill",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose Power / 6th Level Spell / At-Will", {
   Name="PurposePower_CastSixAtWill",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose Power / 7th Level Spell / At-Will", {
   Name="PurposePower_CastSevenAtWill",
   Visible=false,
-  AffectsBothHeads=false,
 })
 CopyEquipmentModifier("Intelligent Item ~ Purpose Power / True Resurrection", {
   Name="PurposePower_TrueRes",
   Visible=false,
-  AffectsBothHeads=false,
 })

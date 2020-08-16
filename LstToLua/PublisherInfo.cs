@@ -8,9 +8,9 @@
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteKeyValue("NameShort", NameShort);
-            output.WriteKeyValue("NameLong", NameLong);
-            output.WriteKeyValue("Url", Url);
+            output.WriteProperty("NameShort", NameShort);
+            output.WriteProperty("NameLong", NameLong);
+            output.WriteProperty("Url", Url);
             base.DumpMembers(output);
         }
     }

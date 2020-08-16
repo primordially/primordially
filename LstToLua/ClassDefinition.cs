@@ -6,24 +6,87 @@ namespace Primordially.LstToLua
     /// <summary>
     ///   Contains anything that can be on the class line(s)
     /// </summary>
-    internal class ClassDefinition : ClassOrSubClass
+    internal class ClassDefinition : TopLevelLuaObject
     {
-        public ClassDefinition(string name) : base(name)
+        public override string ObjectType => "Class";
+
+        public ClassDefinition(string name)
         {
+            AddPropertyDefinitions(() => new[]
+            {
+                Property.String("EXCLASS", "ExClass"),
+                Property.String("SPELLSTAT", "SpellStat"),
+                Property.Integer("HD", "HitDie"),
+                Property.Integer("MAXLEVEL", "MaxLevel", ("NOLIMIT", -1)),
+                Property.Formula("STARTSKILLPTS", "SkillPointsPerLevel"),
+                Property.Boolean("VISIBLE", "Visible"),
+                Property.Boolean("MEMORIZE", "Memorize"),
+                Property.Boolean("ALLOWBASECLASS", "AllowBaseClass"),
+                Property.Boolean("SPELLBOOK", "SpellBook"),
+                Property.Boolean("MODTOSKILLS", "IntModToSkills"),
+                ItemCreationCasterLevel,
+                Property.SeparatedList<string>('.', "ROLE", "Roles"),
+                Property.SeparatedList<BonusLanguage>(',', "LANGBONUS", "BonusLanguages"),
+                Property.SeparatedList<AutomaticKnownSpell>('|', "KNOWNSPELLS", "AutomaticKnownSpells"),
+                CommonProperties.ProhibitedSpells,
+                CommonProperties.Domains,
+                WeaponBonusProficiencySelections,
+                CommonProperties.SpellsKnown,
+                CommonProperties.Types,
+                CommonProperties.Definitions,
+                CommonProperties.Bonuses,
+                CommonProperties.Facts,
+                CommonProperties.Conditions,
+                CommonProperties.Abilities,
+                CommonProperties.Auto,
+                CommonProperties.ClassSkills,
+                CommonProperties.DisplayName,
+                SpellListChoices,
+            });
+            Name = name;
         }
 
-        public string? ExClass { get; private set; }
-        public int HitDie { get; private set; }
-        public int MaxLevel { get; private set; } = -1;
-        public string SkillPointsPerLevel { get; private set; }
-        public bool Visible { get; private set; } = true;
-        public bool Memorize { get; private set; } = true;
-        public bool AllowBaseClass { get; private set; } = true;
-        public bool SpellBook { get; private set; } = false;
-        public string? ItemCreationCasterLevel { get; private set; }
-        public List<string> Roles { get; } = new List<string>();
-        public List<BonusLanguage> BonusLanguages { get; } = new List<BonusLanguage>();
-        public List<AutomaticKnownSpell> AutomaticKnownSpells { get; } = new List<AutomaticKnownSpell>();
+        public static PropertyDefinition SpellListChoices = (value, properties, clear) =>
+        {
+            if (value.TryRemovePrefix("SPELLLIST:", out value))
+            {
+                var (count, spells) = value.SplitTuple('|');
+                properties["SpellListChoiceCount"] = Helpers.ParseInt(count);
+                properties["SpellListChoices"] = spells.Value.Split('|').ToList();
+                return true;
+            }
+
+            return false;
+        };
+
+        public static PropertyDefinition ItemCreationCasterLevel = (value, properties, clear) =>
+        {
+            if (value.TryRemovePrefix("ITEMCREATE:", out value))
+            {
+                var formula = value.Value;
+                if (!formula.Contains("CL"))
+                {
+                    formula = "CL*" + formula;
+                }
+
+                properties["ItemCreationCasterLevel"] = new Formula(formula);
+                return true;
+            }
+
+            return false;
+        };
+
+        public static PropertyDefinition WeaponBonusProficiencySelections = (value, properties, clear) =>
+        {
+            if (value.TryRemovePrefix("WEAPONBONUS:", out value))
+            {
+                var list = properties.GetList<List<string>>(nameof(WeaponBonusProficiencySelections));
+                list.Add(value.Value.Split('|').ToList());
+                return true;
+            }
+
+            return false;
+        };
 
         public List<ClassLevel> Levels { get; } = new List<ClassLevel>();
         
@@ -124,81 +187,6 @@ namespace Primordially.LstToLua
             return levelStr;
         }
 
-        public override void AddField(TextSpan field)
-        {
-            var (k, v) = field.SplitTuple(':');
-            var value = v.Value;
-
-            switch (k.Value)
-            {
-                case "EXCLASS":
-                    ExClass = value;
-                    return;
-                case "HD":
-                    HitDie = Helpers.ParseInt(v);
-                    return;
-                case "STARTSKILLPTS":
-                    SkillPointsPerLevel = v.Value;
-                    return;
-                case "ROLE":
-                    Roles.AddRange(value.Split('.'));
-                    return;
-                case "MAXLEVEL":
-                    if (v.Value == "NOLIMIT")
-                    {
-                        MaxLevel = -1;
-                    }
-                    else
-                    {
-                        MaxLevel = Helpers.ParseInt(v);
-                    }
-                    return;
-                case "VISIBLE":
-                    Visible = value != "NO";
-                    return;
-                case "MEMORIZE":
-                    Memorize = value != "NO";
-                    return;
-                case "ALLOWBASECLASS":
-                    AllowBaseClass = v.Value != "NO";
-                    return;
-                case "SPELLBOOK":
-                    SpellBook = v.Value != "NO";
-                    return;
-                case "ITEMCREATE":
-                    var formula = value;
-                    if (!formula.Contains("CL"))
-                    {
-                        formula = "CL*" + formula;
-                    }
-
-                    ItemCreationCasterLevel = formula;
-                    return;
-                case "KNOWNSPELLS":
-                {
-                    var parts = v.Split('|').ToArray();
-                    foreach (var part in parts)
-                    {
-                        AutomaticKnownSpells.Add(AutomaticKnownSpell.Parse(part));
-                    }
-
-                    return;
-                }
-                case "LANGBONUS":
-                {
-                    var parts = v.Split(',').ToArray();
-                    foreach (var part in parts)
-                    {
-                        BonusLanguages.Add(BonusLanguage.Parse(part));
-                    }
-
-                    return;
-                }
-            }
-
-            base.AddField(field);
-        }
-
         public override void Dump(LuaTextWriter output)
         {
             output.Write("DefineClass(");
@@ -209,38 +197,8 @@ namespace Primordially.LstToLua
         protected override void DumpMembers(LuaTextWriter output)
         {
             base.DumpMembers(output);
-            output.WriteKeyValue("HitDie", HitDie);
-            output.WriteKeyValue("MaxLevel", MaxLevel);
-            output.WriteKeyValue("SkillPointsPerLevel", SkillPointsPerLevel);
-            if (ExClass != null)
-            {
-                output.WriteKeyValue("ExClass", ExClass);
-            }
-            if (ItemCreationCasterLevel != null)
-            {
-                output.WriteKeyValue("ItemCreationCasterLevel", ItemCreationCasterLevel);
-            }
-            if (Visible == false)
-            {
-                output.WriteKeyValue("Visible", Visible);
-            }
-            if (Memorize == false)
-            {
-                output.WriteKeyValue("Memorize", Memorize);
-            }
-            if (AllowBaseClass == false)
-            {
-                output.WriteKeyValue("AllowBaseClass", AllowBaseClass);
-            }
-            if (SpellBook)
-            {
-                output.WriteKeyValue("Spellbook", SpellBook);
-            }
-            output.WriteListValue("BonusLanguages", BonusLanguages);
-            output.WriteListValue("Roles", Roles);
-            output.WriteListValue("AutomaticKnownSpells", AutomaticKnownSpells);
-            output.WriteListValue("Levels", Levels);
-            output.WriteListValue("SubClasses", SubClasses);
+            output.WriteProperty("Levels", Levels);
+            output.WriteProperty("SubClasses", SubClasses);
         }
     }
 }

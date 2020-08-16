@@ -37,8 +37,8 @@ namespace Primordially.LstToLua
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteKeyValue(nameof(Key), Key);
-            output.WriteListValue(nameof(Parameters), Parameters);
+            output.WriteProperty(nameof(Key), Key);
+            output.WriteProperty(nameof(Parameters), Parameters);
             base.DumpMembers(output);
         }
     }

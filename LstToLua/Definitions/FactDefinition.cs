@@ -1,4 +1,4 @@
-﻿namespace Primordially.LstToLua
+﻿namespace Primordially.LstToLua.Definitions
 {
     internal class FactDefinition : LuaObject
     {
@@ -7,25 +7,25 @@
         public string? DataFormat { get; private set; }
         public string? DisplayName { get; private set; }
         public string? Explanation { get; private set; }
-        public bool Required { get; private set; } = false;
-        public bool Selectable { get; private set; } = false;
-        public bool Visible { get; private set; } = false;
+        public bool Required { get; private set; }
+        public bool Selectable { get; private set; }
+        public bool Visible { get; private set; }
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteKeyValue("Category", Category);
-            output.WriteKeyValue("Key", Key);
-            output.WriteKeyValue("DataFormat", DataFormat);
+            output.WriteProperty("Category", Category);
+            output.WriteProperty("Key", Key);
+            output.WriteProperty("DataFormat", DataFormat);
             if (DisplayName != null)
-                output.WriteKeyValue("DisplayName", DisplayName);
+                output.WriteProperty("DisplayName", DisplayName);
             if (Explanation != null)
-                output.WriteKeyValue("Explanation", Explanation);
+                output.WriteProperty("Explanation", Explanation);
             if (Required)
-                output.WriteKeyValue("Required", true);
+                output.WriteProperty("Required", true);
             if (Selectable)
-                output.WriteKeyValue("Selectable", true);
+                output.WriteProperty("Selectable", true);
             if (Visible)
-                output.WriteKeyValue("Visible", true);
+                output.WriteProperty("Visible", true);
             base.DumpMembers(output);
         }
 

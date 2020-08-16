@@ -5,32 +5,24 @@ namespace Primordially.LstToLua
 {
     internal class ChangeWeaponProficiencyCategory : LuaObject
     {
-        public Dictionary<string, List<string>> Changes { get; }
+        public Dictionary<string, List<string>> Changes { get; } = new Dictionary<string, List<string>>();
 
-        private ChangeWeaponProficiencyCategory(Dictionary<string, List<string>> changes)
+        public ChangeWeaponProficiencyCategory(TextSpan value)
         {
-            Changes = changes;
+            foreach (var part in value.Split('|'))
+            {
+                var (weapons, category) = part.SplitTuple('=');
+                Changes[category.Value] = weapons.Value.Split(',').ToList();
+            }
         }
 
         protected override void DumpMembers(LuaTextWriter output)
         {
             foreach (var (category, weapons) in Changes)
             {
-                output.WriteListValue(category, weapons);
+                output.WriteProperty(category, weapons);
             }
             base.DumpMembers(output);
-        }
-
-        public static ChangeWeaponProficiencyCategory Parse(TextSpan value)
-        {
-            var changes = new Dictionary<string, List<string>>();
-            foreach (var part in value.Split('|'))
-            {
-                var (weapons, category) = part.SplitTuple('=');
-                changes[category.Value] = weapons.Value.Split(',').ToList();
-            }
-
-            return new ChangeWeaponProficiencyCategory(changes);
         }
     }
 }

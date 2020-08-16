@@ -69,16 +69,16 @@ DefineLanguage({
 })
 DefineLanguage({
   Name="Druidic",
+  Conditions={
+    function (character)
+      return (character.Variables["DruidSecretLanguage"] == 1)
+    end,
+  },
   Types={
     "Spoken",
     "Written",
     "Read",
     "Secret",
-  },
-  Conditions={
-    function (character)
-      return (character.Variables["DruidSecretLanguage"] == 1)
-    end,
   },
 })
 DefineLanguage({

@@ -1,4 +1,6 @@
-﻿namespace Primordially.LstToLua
+﻿using System;
+
+namespace Primordially.LstToLua
 {
     internal class DiceFormula : IDumpable
     {
@@ -17,7 +19,7 @@
         public void Dump(LuaTextWriter output)
         {
             output.Write("DiceFormula(");
-            output.WriteValue(_value);
+            output.WriteValue(_value.AsSpan());
             output.Write(")");
         }
     }

@@ -1,11 +1,11 @@
 ﻿using System.Diagnostics;
 using System.Linq;
 
-namespace Primordially.LstToLua
+namespace Primordially.LstToLua.FileConverters
 {
     internal class ClassFileConverter : FileConverter
     {
-        private ClassDefinition? _classDefinition = null;
+        private ClassDefinition? _classDefinition;
         protected override void ConvertLine(LuaTextWriter luaWriter, TsvLine line)
         {
             var firstField = line.Fields.First();

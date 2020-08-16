@@ -32,7 +32,7 @@
             else if (value.Value == "EXCLUSIVE")
                 condition = "character.IsExclusiveSkill(skill.Name)";
             else if (value.Value == "NORANK")
-                condition = $"character.Ranks(skill) == 0";
+                condition = "character.Ranks(skill) == 0";
             else
                 condition = $"(stringMatch(skill.Name, \"{value.Value}\") or stringMatch(skill.Key, \"{value.Value}\"))";
 

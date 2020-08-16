@@ -32,34 +32,34 @@ namespace Primordially.LstToLua
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteKeyValue("Name", Name);
-            output.WriteKeyValue("SourceInfo", SourceInfo);
-            output.WriteKeyValue("GameMode", GameMode);
-            output.WriteListValue("BookTypes", BookTypes);
-            output.WriteListValue("Types", Types);
-            output.WriteKeyValue("Status", Status.ToString());
-            output.WriteKeyValue("Copyright", Copyright);
-            output.WriteKeyValue("Description", Description);
-            output.WriteKeyValue("Genre", Genre);
-            output.WriteKeyValue("HelpUrl", HelpUrl);
-            output.WriteKeyValue("InfoText", InfoText);
-            output.WriteKeyValue("IsMature", IsMature);
-            output.WriteKeyValue("IsOGL", IsOGL);
-            output.WriteKeyValue("IsLicensed", IsLicensed);
+            output.WriteProperty("Name", Name);
+            output.WriteProperty("SourceInfo", SourceInfo);
+            output.WriteProperty("GameMode", GameMode);
+            output.WriteProperty("BookTypes", BookTypes);
+            output.WriteProperty("Types", Types);
+            output.WriteProperty("Status", Status.ToString());
+            output.WriteProperty("Copyright", Copyright);
+            output.WriteProperty("Description", Description);
+            output.WriteProperty("Genre", Genre);
+            output.WriteProperty("HelpUrl", HelpUrl);
+            output.WriteProperty("InfoText", InfoText);
+            output.WriteProperty("IsMature", IsMature);
+            output.WriteProperty("IsOGL", IsOGL);
+            output.WriteProperty("IsLicensed", IsLicensed);
             if (LicenseText != null)
-                output.WriteKeyValue("LicenseText", LicenseText);
+                output.WriteProperty("LicenseText", LicenseText);
             if (LicenseFile != null)
-                output.WriteKeyValue("LicenseFile", LicenseFile);
-            output.WriteListValue("Conditions", Conditions);
-            output.WriteKeyValue("PublisherInfo", PublisherInfo);
-            output.WriteKeyValue("Rank", Rank);
-            output.WriteKeyValue("ShowInMenu", ShowInMenu);
+                output.WriteProperty("LicenseFile", LicenseFile);
+            output.WriteProperty("Conditions", Conditions);
+            output.WriteProperty("PublisherInfo", PublisherInfo);
+            output.WriteProperty("Rank", Rank);
+            output.WriteProperty("ShowInMenu", ShowInMenu);
             if (Setting != null)
-                output.WriteKeyValue("Setting", Setting);
+                output.WriteProperty("Setting", Setting);
             if (CoverImage != null)
-                output.WriteKeyValue("CoverImage", CoverImage);
+                output.WriteProperty("CoverImage", CoverImage);
             if (LogoImage != null)
-                output.WriteKeyValue("LogoImage", LogoImage);
+                output.WriteProperty("LogoImage", LogoImage);
             if (Links.Any())
             {
                 output.WriteObjectValue("Links", () =>
@@ -67,9 +67,9 @@ namespace Primordially.LstToLua
                     foreach (var (name, url, text) in Links)
                     {
                         output.WriteStartObject();
-                        output.WriteKeyValue("Name", name);
-                        output.WriteKeyValue("Url", url);
-                        output.WriteKeyValue("Text", text);
+                        output.WriteProperty("Name", name);
+                        output.WriteProperty("Url", url);
+                        output.WriteProperty("Text", text);
                         output.WriteEndObject();
                         output.Write(",\n");
                     }

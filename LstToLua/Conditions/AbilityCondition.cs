@@ -20,7 +20,6 @@ namespace Primordially.LstToLua.Conditions
 
         public static AbilityCondition Parse(TextSpan value, bool invert)
         {
-            // PREABILITY:N,CATEGORY=ability_category,TYPE.ability_type_1,specific_ability_2,... 
             var parts = value.Split(',').ToArray();
 
             if (parts.Length < 2)

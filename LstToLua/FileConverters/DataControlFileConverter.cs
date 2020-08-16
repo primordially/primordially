@@ -1,6 +1,7 @@
 ﻿using System.Linq;
+using Primordially.LstToLua.Definitions;
 
-namespace Primordially.LstToLua
+namespace Primordially.LstToLua.FileConverters
 {
     internal class DataControlFileConverter : FileConverter
     {

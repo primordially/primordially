@@ -1,29 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using Primordially.LstToLua.Conditions;
+﻿using System.Collections.Generic;
 
 namespace Primordially.LstToLua
 {
-    internal class SpellListLevel :  ConditionalObject
+    internal class SpellListLevel :  LuaObject
     {
         public int SpellLevel { get; }
         public List<string> Spells { get; } = new List<string>();
 
         public SpellListLevel(int spellLevel)
         {
+            AddPropertyDefinitions(() => new []
+            {
+                CommonProperties.Conditions,
+            });
             SpellLevel = spellLevel;
         }
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteKeyValue("SpellLevel", SpellLevel);
-            output.WriteListValue("Spells", Spells);
+            output.WriteProperty("SpellLevel", SpellLevel);
+            output.WriteProperty("Spells", Spells);
             base.DumpMembers(output);
-        }
-
-        public override void AddField(TextSpan field)
-        {
-            throw new NotSupportedException();
         }
     }
 }

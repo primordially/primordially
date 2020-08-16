@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using Primordially.LstToLua.Choosers;
 
 namespace Primordially.LstToLua
 {
@@ -56,37 +53,6 @@ namespace Primordially.LstToLua
             }
 
             throw new ParseFailedException(value, $"Unable to parse '{value.Value}' as an integer.");
-        }
-
-        public static void CheckForMODorCOPYorCLEAR(TextSpan value)
-        {
-            if (value.IndexOf(".MOD") != -1)
-            {
-                throw new ParseFailedException(value, ".MOD is not currently supported.");
-            }
-
-            if (value.IndexOf(".COPY=") != -1)
-            {
-                throw new ParseFailedException(value, ".COPY is not currently supported.");
-            }
-
-            if (value.IndexOf(".CLEAR") != -1)
-            {
-                throw new ParseFailedException(value, ".CLEAR is not currently supported.");
-            }
-        }
-
-        public static void ParseChoose(TextSpan value, IChooseable that)
-        {
-            var chooser = Chooser.Convert(value, out var choiceCount);
-            if (chooser != null)
-            {
-                that.Choice = new Choice
-                {
-                    Choose = chooser,
-                    MaxTimes = choiceCount,
-                };
-            }
         }
     }
 }

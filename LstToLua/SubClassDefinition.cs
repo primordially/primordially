@@ -3,15 +3,19 @@ using System.Linq;
 
 namespace Primordially.LstToLua
 {
-    internal class SubClassDefinition : ClassOrSubClass
+    internal class SubClassDefinition : LuaObject
     {
-        public SubClassDefinition(string name) : base(name)
+        public SubClassDefinition(string name)
         {
+            AddPropertyDefinitions(() => new []
+            {
+                Property.Integer("COST", "Cost"),
+            });
+            Properties["Name"] = name;
         }
 
         public string? ChoiceKind { get; private set; }
         public string? ChoiceValue { get; private set; }
-        public int Cost { get; private set; } = 0;
         public List<SubClassLevel> Levels { get; } = new List<SubClassLevel>();
 
         public void AddLine(TsvLine line)
@@ -47,18 +51,15 @@ namespace Primordially.LstToLua
 
         public override void AddField(TextSpan field)
         {
-            var (k, v) = field.SplitTuple(':');
-
-            switch (k.Value)
+            if (field.TryRemovePrefix("CHOICE:", out field))
             {
-                case "CHOICE":
-                    var (kind, value) = v.SplitTuple('|');
-                    ChoiceKind = kind.Value;
-                    ChoiceValue = value.Value;
-                    return;
-                case "COST":
-                    Cost = Helpers.ParseInt(v);
-                    return;
+                if (!field.TryRemoveInfix("|", out var k, out var v))
+                {
+                    throw new ParseFailedException(field, "Unable to parse CHOICE");
+                }
+                ChoiceKind = k.Value;
+                ChoiceValue = v.Value;
+                return;
             }
 
             base.AddField(field);
@@ -68,11 +69,10 @@ namespace Primordially.LstToLua
         {
             output.WriteObjectValue("Choice", () =>
             {
-                output.WriteKeyValue("Kind", ChoiceKind);
-                output.WriteKeyValue("Value", ChoiceValue);
+                output.WriteProperty("Kind", ChoiceKind);
+                output.WriteProperty("Value", ChoiceValue);
             });
-            output.WriteKeyValue("Cost", Cost);
-            output.WriteListValue("Levels", Levels);
+            output.WriteProperty("Levels", Levels);
             base.DumpMembers(output);
         }
     }

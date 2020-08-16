@@ -20,6 +20,7 @@
     "ModifyDomain",
     "ModifySkill",
     "CopyEquipment",
+    "CopyEquipmentModifier",
     "ChooseAbilitySelection",
     "ChooseSkill",
     "ChooseClass",

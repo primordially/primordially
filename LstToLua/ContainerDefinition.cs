@@ -52,17 +52,17 @@ namespace Primordially.LstToLua
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteKeyValue("Capacity", Capacity);
+            output.WriteProperty("Capacity", Capacity);
             if (ContainedItemWeightDoesNotCount)
-                output.WriteKeyValue("ContainedItemWeightDoesNotCount", ContainedItemWeightDoesNotCount);
+                output.WriteProperty("ContainedItemWeightDoesNotCount", ContainedItemWeightDoesNotCount);
             if (ContainedItemWeightModifier.HasValue)
-                output.WriteKeyValue("ContainedItemWeightModifier", ContainedItemWeightModifier.Value);
+                output.WriteProperty("ContainedItemWeightModifier", ContainedItemWeightModifier.Value);
             if (ItemLimits.Any())
             {
                 output.WriteObjectValue("ItemLimits", () =>
                 {
                     foreach (var (k, v) in ItemLimits)
-                        output.WriteKeyValue(k, v);
+                        output.WriteProperty(k, v);
                 });
             }
             base.DumpMembers(output);

@@ -22,13 +22,13 @@ namespace Primordially.LstToLua.Conditions
                     continue;
                 }
 
-                if (part.TryRemovePrefix("EQMOD=", out var eqmod))
+                if (part.TryRemovePrefix("EQMOD=", out var v))
                 {
-                    conditions.Add($"item.HasModifier(\"{eqmod.Value}\")");
+                    conditions.Add($"item.HasModifier(\"{v.Value}\")");
                 }
-                else if (part.TryRemovePrefix("EQMODTYPE=", out var eqmodType))
+                else if (part.TryRemovePrefix("EQMODTYPE=", out v))
                 {
-                    conditions.Add($"item.HasModifierType(\"{eqmodType.Value}\")");
+                    conditions.Add($"item.HasModifierType(\"{v.Value}\")");
                 }
                 else
                 {

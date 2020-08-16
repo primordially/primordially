@@ -8,19 +8,12 @@ SetSource({
 })
 DefineRace({
   Name="Dwarf",
-  Types={
-    "Humanoid",
-    "Base",
-    "PC",
-  },
-  RaceType="Humanoid",
-  StartingFeats=1,
-  Size="M",
-  Reach=5,
-  Movement={
-    Walk=20,
-  },
   SortKey="a_base_pc",
+  RaceType="Humanoid",
+  Reach=5,
+  Size="M",
+  SourcePage="p.21",
+  StartingFeats=1,
   Abilities={
     {
       Category="Internal",
@@ -30,27 +23,30 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
-    IsPC="true",
+  RaceSubTypes={
+    "Dwarf",
   },
-  SourcePage="p.21",
-})
-DefineRace({
-  Name="Elf",
   Types={
     "Humanoid",
     "Base",
     "PC",
   },
-  RaceType="Humanoid",
-  StartingFeats=1,
-  Size="M",
-  Reach=5,
-  Movement={
-    Walk=30,
+  Facts={
+    BaseSize="M",
+    IsPC="true",
   },
+  Movement={
+    Walk=20,
+  },
+})
+DefineRace({
+  Name="Elf",
   SortKey="a_base_pc",
+  RaceType="Humanoid",
+  Reach=5,
+  Size="M",
+  SourcePage="p.22",
+  StartingFeats=1,
   Abilities={
     {
       Category="Internal",
@@ -60,27 +56,30 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
-    IsPC="true",
+  RaceSubTypes={
+    "Elf",
   },
-  SourcePage="p.22",
-})
-DefineRace({
-  Name="Gnome",
   Types={
     "Humanoid",
     "Base",
     "PC",
   },
-  RaceType="Humanoid",
-  StartingFeats=1,
-  Size="S",
-  Reach=5,
-  Movement={
-    Walk=20,
+  Facts={
+    BaseSize="M",
+    IsPC="true",
   },
+  Movement={
+    Walk=30,
+  },
+})
+DefineRace({
+  Name="Gnome",
   SortKey="a_base_pc",
+  RaceType="Humanoid",
+  Reach=5,
+  Size="S",
+  SourcePage="p.23",
+  StartingFeats=1,
   Abilities={
     {
       Category="Internal",
@@ -90,27 +89,37 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
-    IsPC="true",
+  RaceSubTypes={
+    "Gnome",
   },
-  SourcePage="p.23",
-})
-DefineRace({
-  Name="Half-Elf",
   Types={
     "Humanoid",
     "Base",
     "PC",
   },
-  RaceType="Humanoid",
-  StartingFeats=1,
-  Size="M",
-  Reach=5,
-  Movement={
-    Walk=30,
+  Facts={
+    BaseSize="S",
+    IsPC="true",
   },
+  Movement={
+    Walk=20,
+  },
+})
+DefineRace({
+  Name="Half-Elf",
   SortKey="a_base_pc",
+  RaceType="Humanoid",
+  Reach=5,
+  ServesAs={
+    Race=true,
+    Names={
+      "Elf",
+      "Human",
+    },
+  },
+  Size="M",
+  SourcePage="p.24",
+  StartingFeats=1,
   Abilities={
     {
       Category="Internal",
@@ -120,36 +129,38 @@ DefineRace({
       },
     },
   },
-  ServesAs={
-    {
-      Race=true,
-      Names={
-        "Elf",
-        "Human",
-      },
-    },
+  RaceSubTypes={
+    "Elf",
+    "Human",
   },
-  Facts={
-    BaseSize="M",
-    IsPC="true",
-  },
-  SourcePage="p.24",
-})
-DefineRace({
-  Name="Half-Orc",
   Types={
     "Humanoid",
     "Base",
     "PC",
   },
-  RaceType="Humanoid",
-  StartingFeats=1,
-  Size="M",
-  Reach=5,
+  Facts={
+    BaseSize="M",
+    IsPC="true",
+  },
   Movement={
     Walk=30,
   },
+})
+DefineRace({
+  Name="Half-Orc",
   SortKey="a_base_pc",
+  RaceType="Humanoid",
+  Reach=5,
+  ServesAs={
+    Race=true,
+    Names={
+      "Human",
+      "Orc",
+    },
+  },
+  Size="M",
+  SourcePage="p.25",
+  StartingFeats=1,
   Abilities={
     {
       Category="Internal",
@@ -159,50 +170,31 @@ DefineRace({
       },
     },
   },
-  ServesAs={
-    {
-      Race=true,
-      Names={
-        "Human",
-        "Orc",
-      },
-    },
+  RaceSubTypes={
+    "Orc",
+    "Human",
   },
-  Facts={
-    BaseSize="M",
-    IsPC="true",
-  },
-  SourcePage="p.25",
-})
-DefineRace({
-  Name="Halfling",
   Types={
     "Humanoid",
     "Base",
     "PC",
   },
-  RaceType="Humanoid",
-  StartingFeats=1,
-  Size="S",
-  Reach=5,
-  Bonuses={
-    {
-      Category="SAVE",
-      Variables={
-        "ALL",
-      },
-      Formula=Formula("Halfling_HalflingLuck_SaveBonus"),
-      Type={
-        Name="Racial",
-        Replace=false,
-        Stack=false,
-      },
-    },
+  Facts={
+    BaseSize="M",
+    IsPC="true",
   },
   Movement={
-    Walk=20,
+    Walk=30,
   },
+})
+DefineRace({
+  Name="Halfling",
   SortKey="a_base_pc",
+  RaceType="Humanoid",
+  Reach=5,
+  Size="S",
+  SourcePage="p.26",
+  StartingFeats=1,
   Abilities={
     {
       Category="Internal",
@@ -212,27 +204,44 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
-    IsPC="true",
+  Bonuses={
+    {
+      Category="SAVE",
+      Formula=Formula("Halfling_HalflingLuck_SaveBonus"),
+      Type={
+        Name="Racial",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "ALL",
+      },
+    },
   },
-  SourcePage="p.26",
-})
-DefineRace({
-  Name="Human",
+  RaceSubTypes={
+    "Halfling",
+  },
   Types={
     "Humanoid",
     "Base",
     "PC",
   },
-  RaceType="Humanoid",
-  StartingFeats=1,
-  Size="M",
-  Reach=5,
-  Movement={
-    Walk=30,
+  Facts={
+    BaseSize="S",
+    IsPC="true",
   },
+  Movement={
+    Walk=20,
+  },
+})
+DefineRace({
+  Name="Human",
   SortKey="a_base_pc",
+  RaceType="Humanoid",
+  Reach=5,
+  Size="M",
+  SourcePage="p.27",
+  StartingFeats=1,
   Abilities={
     {
       Category="Internal",
@@ -242,22 +251,36 @@ DefineRace({
       },
     },
   },
+  RaceSubTypes={
+    "Human",
+  },
+  Types={
+    "Humanoid",
+    "Base",
+    "PC",
+  },
   Facts={
     BaseSize="M",
     IsPC="true",
   },
-  SourcePage="p.27",
+  Movement={
+    Walk=30,
+  },
 })
 DefineRace({
   Name="A test",
-  StartingFeats=1,
-  Size="T",
-  Reach=0,
-  Movement={
-    Walk=10,
-  },
   SortKey="a_base_pc",
+  Reach=0,
+  Size="T",
+  StartingFeats=1,
+  StartingKitCount=1,
+  StartingKitChoices={
+    "A Test",
+  },
   Facts={
     BaseSize="M",
+  },
+  Movement={
+    Walk=10,
   },
 })

@@ -2,46 +2,40 @@
 {
     internal class BonusLanguage : LuaObject
     {
-        public BonusLanguage(bool all, string? name, string? type)
+        public BonusLanguage(TextSpan value)
         {
-            All = all;
-            Name = name;
-            Type = type;
+            if (value.Value == "ALL")
+            {
+                All = true;
+            }
+            else if (value.TryRemovePrefix("TYPE=", out value))
+            {
+                Type = value.Value;
+            }
+            else
+            {
+                Name = value.Value;
+            }
         }
 
         public bool All { get; }
         public string? Name { get; }
         public string? Type { get; }
 
-        public static BonusLanguage Parse(TextSpan part)
-        {
-            if (part.Value == "ALL")
-            {
-                return new BonusLanguage(true, null, null);
-            }
-
-            if (part.StartsWith("TYPE="))
-            {
-                return new BonusLanguage(false, null, part.Substring("TYPE=".Length).Value);
-            }
-
-            return new BonusLanguage(false, part.Value, null);
-        }
-
         protected override void DumpMembers(LuaTextWriter output)
         {
             base.DumpMembers(output);
             if (All)
             {
-                output.WriteKeyValue("All", true);
+                output.WriteProperty("All", true);
             }
             else if (string.IsNullOrEmpty(Type))
             {
-                output.WriteKeyValue("Name", Name);
+                output.WriteProperty("Name", Name);
             }
             else
             {
-                output.WriteKeyValue("Type", Type);
+                output.WriteProperty("Type", Type);
             }
         }
     }

@@ -5,10 +5,10 @@ DefineSave({
   SortKey="1",
   Bonus={
     Category="SAVE",
+    Formula=Formula("CON"),
     Variables={
       "Fortitude",
     },
-    Formula=Formula("CON"),
   },
 })
 DefineSave({
@@ -16,10 +16,10 @@ DefineSave({
   SortKey="2",
   Bonus={
     Category="SAVE",
+    Formula=Formula("DEX"),
     Variables={
       "Reflex",
     },
-    Formula=Formula("DEX"),
   },
 })
 DefineSave({
@@ -27,9 +27,9 @@ DefineSave({
   SortKey="3",
   Bonus={
     Category="SAVE",
+    Formula=Formula("WIS"),
     Variables={
       "Will",
     },
-    Formula=Formula("WIS"),
   },
 })

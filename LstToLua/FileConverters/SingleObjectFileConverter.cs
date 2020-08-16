@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace Primordially.LstToLua
+namespace Primordially.LstToLua.FileConverters
 {
     internal class SingleObjectFileConverter<T> : FileConverter
         where T : LuaObject, new()

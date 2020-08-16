@@ -11,24 +11,15 @@ namespace Primordially.LstToLua
         public DiceFormula Damage { get; }
         public string? SpecialDescription { get; }
 
-        private NaturalAttack(string name, string[] types, string count, string damage, string? specialDescription)
-        {
-            Name = name;
-            Types = types;
-            Count = count;
-            Damage = damage;
-            SpecialDescription = specialDescription;
-        }
-
         protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteKeyValue("Name", Name);
-            output.WriteListValue("Types", Types);
-            output.WriteKeyValue("Count", Count);
-            output.WriteKeyValue("Damage", Damage);
+            output.WriteProperty("Name", Name);
+            output.WriteProperty("Types", Types);
+            output.WriteProperty("Count", Count);
+            output.WriteProperty("Damage", Damage);
             if (SpecialDescription != null)
             {
-                output.WriteKeyValue("SpecialDescription", SpecialDescription);
+                output.WriteProperty("SpecialDescription", SpecialDescription);
             }
             base.DumpMembers(output);
         }
@@ -37,11 +28,11 @@ namespace Primordially.LstToLua
         {
             foreach (var part in value.Split('|'))
             {
-                yield return Parse(part);
+                yield return new NaturalAttack(part);
             }
         }
 
-        private static NaturalAttack Parse(TextSpan value)
+        public NaturalAttack(TextSpan value)
         {
             var parts = value.Split(',').ToList();
             if (parts.Count != 4 && parts.Count != 5)
@@ -49,13 +40,14 @@ namespace Primordially.LstToLua
                 throw new ParseFailedException(value, "Unable to parse NATURALATTACKS");
             }
 
-            string? specialDescription = null;
             if (parts.Count == 5)
             {
-                specialDescription = parts[4].Value;
+                SpecialDescription = parts[4].Value;
             }
-
-            return new NaturalAttack(parts[0].Value, parts[1].Value.Split('.'), parts[2].Value, parts[3].Value, specialDescription);
+            Name = parts[0].Value;
+            Types = parts[1].Value.Split('.');
+            Count = parts[2].Value;
+            Damage = parts[3].Value;
         }
     }
 }

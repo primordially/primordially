@@ -4,7 +4,7 @@ namespace Primordially.LstToLua.Choosers
 {
     internal abstract class Chooser
     {
-        public static string? Convert(TextSpan value, out int? choiceCount)
+        public static string Convert(TextSpan value, out int? choiceCount)
         {
             choiceCount = null;
             if (value.TryRemovePrefix("NUMCHOICES=", out value))

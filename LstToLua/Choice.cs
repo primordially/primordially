@@ -1,6 +1,6 @@
 ﻿namespace Primordially.LstToLua
 {
-    internal class Choice :LuaObject
+    internal class Choice : LuaObject
     {
         public string? Choose { get; set; }
         public int? MaxTimes { get; set; }
@@ -12,7 +12,7 @@
             output.Write(Choose);
             output.Write(",\n");
             if (MaxTimes.HasValue)
-                output.WriteKeyValue("MaxTimes", MaxTimes.Value);
+                output.WriteProperty("MaxTimes", MaxTimes.Value);
             base.DumpMembers(output);
         }
     }

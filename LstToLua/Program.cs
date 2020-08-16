@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using Primordially.LstToLua.Conditions;
+using Primordially.LstToLua.Definitions;
+using Primordially.LstToLua.FileConverters;
 
 namespace Primordially.LstToLua
 {
@@ -163,10 +165,10 @@ namespace Primordially.LstToLua
                                             luaWriter.WriteStartObject();
                                             if (include.category != null)
                                             {
-                                                luaWriter.WriteKeyValue("Category", include.category);
+                                                luaWriter.WriteProperty("Category", include.category);
                                             }
 
-                                            luaWriter.WriteKeyValue("Name", include.name);
+                                            luaWriter.WriteProperty("Name", include.name);
                                             luaWriter.WriteEndObject();
                                         }
                                     });
@@ -177,10 +179,10 @@ namespace Primordially.LstToLua
                                             luaWriter.WriteStartObject();
                                             if (exclude.category != null)
                                             {
-                                                luaWriter.WriteKeyValue("Category", exclude.category);
+                                                luaWriter.WriteProperty("Category", exclude.category);
                                             }
 
-                                            luaWriter.WriteKeyValue("Name", exclude.name);
+                                            luaWriter.WriteProperty("Name", exclude.name);
                                             luaWriter.WriteEndObject();
                                             luaWriter.Write(",\n");
                                         }
@@ -231,7 +233,7 @@ namespace Primordially.LstToLua
                                 var names = parts.Skip(1);
                                 luaWriter.Write($"HideObjects(\"{type}\", ");
                                 luaWriter.WriteStartObject();
-                                luaWriter.WriteListItems(names);
+                                luaWriter.WriteValue(names);
                                 luaWriter.WriteEndObject();
                                 luaWriter.Write(")\n");
                                 break;
@@ -263,7 +265,7 @@ namespace Primordially.LstToLua
                                     conditions.Add(condition);
                                 }
                                 luaWriter.Write("AddAvailableCompanions(");
-                                luaWriter.WriteValue(type);
+                                luaWriter.WriteValue(type.AsSpan());
                                 luaWriter.Write(", ");
                                 luaWriter.WriteStartObject();
                                 foreach (var piece in data.Split(','))
@@ -271,27 +273,27 @@ namespace Primordially.LstToLua
                                     if (piece == "ANY")
                                     {
                                         luaWriter.WriteStartObject();
-                                        luaWriter.WriteKeyValue("Any", true);
+                                        luaWriter.WriteProperty("Any", true);
                                         luaWriter.WriteEndObject();
                                     }
                                     else if (piece.StartsWith("RACESUBTYPE="))
                                     {
                                         var subtype = piece.Substring("RACESUBTYPE=".Length);
                                         luaWriter.WriteStartObject();
-                                        luaWriter.WriteKeyValue("SubType", subtype);
+                                        luaWriter.WriteProperty("SubType", subtype);
                                         luaWriter.WriteEndObject();
                                     }
                                     else if (piece.StartsWith("RACETYPE="))
                                     {
                                         var subtype = piece.Substring("RACETYPE=".Length);
                                         luaWriter.WriteStartObject();
-                                        luaWriter.WriteKeyValue("Type", subtype);
+                                        luaWriter.WriteProperty("Type", subtype);
                                         luaWriter.WriteEndObject();
                                     }
                                     else
                                     {
                                         luaWriter.WriteStartObject();
-                                        luaWriter.WriteKeyValue("Name", piece);
+                                        luaWriter.WriteProperty("Name", piece);
                                         luaWriter.WriteEndObject();
                                     }
 
@@ -302,12 +304,12 @@ namespace Primordially.LstToLua
                                 luaWriter.WriteStartObject();
                                 if (followerAdjustment.HasValue)
                                 {
-                                    luaWriter.WriteKeyValue("FollowerAdjustment", followerAdjustment.Value);
+                                    luaWriter.WriteProperty("FollowerAdjustment", followerAdjustment.Value);
                                 }
 
                                 if (conditions.Any())
                                 {
-                                    luaWriter.WriteListValue("Conditions", conditions);
+                                    luaWriter.WriteProperty("Conditions", conditions);
                                 }
                                 luaWriter.WriteEndObject();
                                 luaWriter.Write(")\n");
@@ -346,19 +348,19 @@ namespace Primordially.LstToLua
                         break;
 
                     case "ABILITY":
-                        new AbilityFileConverter().Convert(inputFileFullPath, outputFile);
+                        new SingleObjectFileConverter<AbilityDefinition>().Convert(inputFileFullPath, outputFile);
                         break;
                     case "ALIGNMENT":
-                        new AlignmentFileConverter().Convert(inputFileFullPath, outputFile);
+                        new SingleObjectFileConverter<AlignmentDefinition>().Convert(inputFileFullPath, outputFile);
                         break;
                     case "DATACONTROL":
                         new DataControlFileConverter().Convert(inputFileFullPath, outputFile);
                         break;
                     case "SAVE":
-                        new SaveFileConverter().Convert(inputFileFullPath, outputFile);
+                        new SingleObjectFileConverter<SaveDefinition>().Convert(inputFileFullPath, outputFile);
                         break;
                     case "STAT":
-                        new StatFileConverter().Convert(inputFileFullPath, outputFile);
+                        new SingleObjectFileConverter<StatDefinition>().Convert(inputFileFullPath, outputFile);
                         break;
                     case "VARIABLE":
                         new SingleObjectFileConverter<VariableDefinition>().Convert(inputFileFullPath, outputFile);

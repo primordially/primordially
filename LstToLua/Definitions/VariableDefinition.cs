@@ -1,10 +1,9 @@
-﻿using System;
-
-namespace Primordially.LstToLua
+﻿namespace Primordially.LstToLua.Definitions
 {
-    internal class VariableDefinition : LuaObject
+    internal class VariableDefinition : TopLevelLuaObject
     {
-        public string? Name { get; private set; }
+        public override string ObjectType => "Variable";
+
         public string? LocalTo { get; private set; }
         public string? Channel { get; private set; }
         public string? Type { get; private set; }
@@ -12,14 +11,13 @@ namespace Primordially.LstToLua
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteKeyValue("Name", Name);
-            output.WriteKeyValue("Type", Type);
-            if (LocalTo != null)
-                output.WriteKeyValue("Local", LocalTo);
-            if (Channel != null)
-                output.WriteKeyValue("Channel", Channel);
-            output.WriteKeyValue("Explanation", Explanation);
             base.DumpMembers(output);
+            output.WriteProperty("Type", Type);
+            if (LocalTo != null)
+                output.WriteProperty("Local", LocalTo);
+            if (Channel != null)
+                output.WriteProperty("Channel", Channel);
+            output.WriteProperty("Explanation", Explanation);
         }
 
         public override void AddField(TextSpan field)
@@ -58,13 +56,6 @@ namespace Primordially.LstToLua
                 return;
             }
             base.AddField(field);
-        }
-
-        public override void Dump(LuaTextWriter output)
-        {
-            output.Write("DefineVariable(");
-            base.Dump(output);
-            output.Write(")");
         }
     }
 }

@@ -6,13 +6,112 @@ SetSource({
   SourceWeb="http://paizo.com/store/downloads/pathfinder/pathfinderRPG/v5748btpy88yj",
   SourceDate="2009-08",
 })
-DefineClass({
+DefineClass(DefineClass({
   Name="Barbarian",
-  Facts={
-    ClassType="PC",
-    Abb="Brb",
-  },
+  ExClass="Ex-Barbarian",
+  HitDie=12,
+  MaxLevel=20,
+  SkillPointsPerLevel=Formula("4"),
   SourcePage="p.31",
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Fortitude",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Reflex",
+        "BASE.Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABFull",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "BarbarianLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Will",
+      },
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -32,144 +131,42 @@ DefineClass({
       return count >= 1
     end,
   },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Type={
-        Name="Base",
-        Replace=true,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-        "BASE.Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABFull",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "BarbarianLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
+  Roles={
+    "Combat",
+    "Skill",
   },
   Types={
     "Base",
     "PC",
   },
-  HitDie=12,
-  MaxLevel=20,
-  SkillPointsPerLevel="4",
-  ExClass="Ex-Barbarian",
-  Roles={
-    "Combat",
-    "Skill",
-  },
-  Levels={
-    {
-      Level="1",
-      Abilities={
-        {
-          Category="Class",
-          Nature="AUTOMATIC",
-          Names={
-            "Barbarian",
-          },
-        },
-      },
-    },
-  },
-})
-DefineClass({
-  Name="Ex-Barbarian",
   Facts={
     ClassType="PC",
     Abb="Brb",
   },
+  Levels={
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="Class",
+          Nature="AUTOMATIC",
+          Names={
+            "Barbarian",
+          },
+        },
+      },
+    },
+  },
+}))
+DefineClass(DefineClass({
+  Name="Ex-Barbarian",
+  HitDie=12,
+  MaxLevel=20,
+  SkillPointsPerLevel=Formula("4"),
+  Visible=false,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Type={
         Name="Base",
@@ -181,99 +178,102 @@ DefineClass({
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
+      Variables={
+        "BASEAB",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Fortitude",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-        "BASE.Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Reflex",
+        "BASE.Will",
+      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassBABFull",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
+      Variables={
+        "ClassBABFull",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("CL"),
       Variables={
         "BarbarianLVL",
       },
-      Formula=Formula("CL"),
     },
     {
       Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
       Variables={
         "ClassSaveGood_Fortitude",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassSavePoor_Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
+      Variables={
+        "ClassSavePoor_Will",
+      },
     },
+  },
+  Roles={
+    "Combat",
+    "Skill",
   },
   Types={
     "Base",
     "PC",
   },
-  HitDie=12,
-  MaxLevel=20,
-  SkillPointsPerLevel="4",
-  Visible=false,
-  Roles={
-    "Combat",
-    "Skill",
+  Facts={
+    ClassType="PC",
+    Abb="Brb",
   },
   Levels={
     {
@@ -289,22 +289,18 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Bard",
-  SpellStat="CHA",
-  Facts={
-    ClassType="PC",
-    Abb="Brd",
-    SpellType="Arcane",
-  },
+  HitDie=8,
+  MaxLevel=20,
+  Memorize=false,
+  SkillPointsPerLevel=Formula("6"),
   SourcePage="p.34",
+  SpellStat="CHA",
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
       Type={
         Name="Base",
@@ -316,134 +312,140 @@ DefineClass({
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
+      Variables={
+        "BASEAB",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-        "BASE.Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Reflex",
+        "BASE.Will",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Fortitude",
+      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassBABModerate",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
+      Variables={
+        "ClassBABModerate",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("CL"),
       Variables={
         "BardLVL",
       },
-      Formula=Formula("CL"),
     },
     {
       Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
       Variables={
         "ClassSavePoor_Fortitude",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "ClassSaveGood_Reflex",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
     },
     {
       Category="VAR",
+      Formula=Formula("Caster_Level_Bard-CasterLevelBLBard"),
       Variables={
         "Caster_Level_BL_Stripped_Bard",
       },
-      Formula=Formula("Caster_Level_Bard-CasterLevelBLBard"),
     },
     {
       Category="VAR",
+      Formula=Formula("CL+Caster_Level_Bonus+CasterLevelBLBard"),
       Variables={
         "Caster_Level_Bard",
       },
-      Formula=Formula("CL+Caster_Level_Bonus+CasterLevelBLBard"),
     },
     {
       Category="VAR",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Bard\")"),
       Variables={
         "CasterLevelBL_x_Bard",
       },
-      Formula=Formula("charbonusto(\"PCLEVEL\",\"Bard\")"),
     },
     {
       Category="VAR",
-      Variables={
-        "Caster_Level_Highest__Arcane",
-      },
       Formula=Formula("Caster_Level_Bard"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "Caster_Level_Highest__Arcane",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("Caster_Level_Bard"),
       Variables={
         "Caster_Level_Total__Arcane",
       },
-      Formula=Formula("Caster_Level_Bard"),
     },
     {
       Category="CASTERLEVEL",
+      Formula=Formula("Caster_Level_BL_Stripped_Bard"),
       Variables={
         "Bard",
       },
-      Formula=Formula("Caster_Level_BL_Stripped_Bard"),
     },
+  },
+  Roles={
+    "Skill",
   },
   Types={
     "Base",
@@ -451,153 +453,341 @@ DefineClass({
     "SpontaneousArcane",
     "Spontaneous",
   },
-  HitDie=8,
-  MaxLevel=20,
-  SkillPointsPerLevel="6",
-  Memorize=false,
-  Roles={
-    "Skill",
+  Facts={
+    ClassType="PC",
+    Abb="Brd",
+    SpellType="Arcane",
   },
   Levels={
     {
       Level="1",
       SpellsPerDay={
-        0, 1, },
+        Formula("0"),
+        Formula("1"),
+      },
       SpellsKnown={
-        4, 2, },
+        Formula("4"),
+        Formula("2"),
+      },
     },
     {
       Level="2",
       SpellsPerDay={
-        0, 2, },
+        Formula("0"),
+        Formula("2"),
+      },
       SpellsKnown={
-        5, 3, },
+        Formula("5"),
+        Formula("3"),
+      },
     },
     {
       Level="3",
       SpellsPerDay={
-        0, 3, },
+        Formula("0"),
+        Formula("3"),
+      },
       SpellsKnown={
-        6, 4, },
+        Formula("6"),
+        Formula("4"),
+      },
     },
     {
       Level="4",
       SpellsPerDay={
-        0, 3, 1, },
+        Formula("0"),
+        Formula("3"),
+        Formula("1"),
+      },
       SpellsKnown={
-        6, 4, 2, },
+        Formula("6"),
+        Formula("4"),
+        Formula("2"),
+      },
     },
     {
       Level="5",
       SpellsPerDay={
-        0, 4, 2, },
+        Formula("0"),
+        Formula("4"),
+        Formula("2"),
+      },
       SpellsKnown={
-        6, 4, 3, },
+        Formula("6"),
+        Formula("4"),
+        Formula("3"),
+      },
     },
     {
       Level="6",
       SpellsPerDay={
-        0, 4, 3, },
+        Formula("0"),
+        Formula("4"),
+        Formula("3"),
+      },
       SpellsKnown={
-        6, 4, 4, },
+        Formula("6"),
+        Formula("4"),
+        Formula("4"),
+      },
     },
     {
       Level="7",
       SpellsPerDay={
-        0, 4, 3, 1, },
+        Formula("0"),
+        Formula("4"),
+        Formula("3"),
+        Formula("1"),
+      },
       SpellsKnown={
-        6, 5, 4, 2, },
+        Formula("6"),
+        Formula("5"),
+        Formula("4"),
+        Formula("2"),
+      },
     },
     {
       Level="8",
       SpellsPerDay={
-        0, 4, 4, 2, },
+        Formula("0"),
+        Formula("4"),
+        Formula("4"),
+        Formula("2"),
+      },
       SpellsKnown={
-        6, 5, 4, 3, },
+        Formula("6"),
+        Formula("5"),
+        Formula("4"),
+        Formula("3"),
+      },
     },
     {
       Level="9",
       SpellsPerDay={
-        0, 5, 4, 3, },
+        Formula("0"),
+        Formula("5"),
+        Formula("4"),
+        Formula("3"),
+      },
       SpellsKnown={
-        6, 5, 4, 4, },
+        Formula("6"),
+        Formula("5"),
+        Formula("4"),
+        Formula("4"),
+      },
     },
     {
       Level="10",
       SpellsPerDay={
-        0, 5, 4, 3, 1, },
+        Formula("0"),
+        Formula("5"),
+        Formula("4"),
+        Formula("3"),
+        Formula("1"),
+      },
       SpellsKnown={
-        6, 5, 5, 4, 2, },
+        Formula("6"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("2"),
+      },
     },
     {
       Level="11",
       SpellsPerDay={
-        0, 5, 4, 4, 2, },
+        Formula("0"),
+        Formula("5"),
+        Formula("4"),
+        Formula("4"),
+        Formula("2"),
+      },
       SpellsKnown={
-        6, 6, 5, 4, 3, },
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("4"),
+        Formula("3"),
+      },
     },
     {
       Level="12",
       SpellsPerDay={
-        0, 5, 5, 4, 3, },
+        Formula("0"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("3"),
+      },
       SpellsKnown={
-        6, 6, 5, 4, 4, },
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("4"),
+        Formula("4"),
+      },
     },
     {
       Level="13",
       SpellsPerDay={
-        0, 5, 5, 4, 3, 1, },
+        Formula("0"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("3"),
+        Formula("1"),
+      },
       SpellsKnown={
-        6, 6, 5, 5, 4, 2, },
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("2"),
+      },
     },
     {
       Level="14",
       SpellsPerDay={
-        0, 5, 5, 4, 4, 2, },
+        Formula("0"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("4"),
+        Formula("2"),
+      },
       SpellsKnown={
-        6, 6, 6, 5, 4, 3, },
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("4"),
+        Formula("3"),
+      },
     },
     {
       Level="15",
       SpellsPerDay={
-        0, 5, 5, 5, 4, 3, },
+        Formula("0"),
+        Formula("5"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("3"),
+      },
       SpellsKnown={
-        6, 6, 6, 5, 4, 4, },
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("4"),
+        Formula("4"),
+      },
     },
     {
       Level="16",
       SpellsPerDay={
-        0, 5, 5, 5, 4, 3, 1, },
+        Formula("0"),
+        Formula("5"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("3"),
+        Formula("1"),
+      },
       SpellsKnown={
-        6, 6, 6, 5, 5, 4, 2, },
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("2"),
+      },
     },
     {
       Level="17",
       SpellsPerDay={
-        0, 5, 5, 5, 4, 4, 2, },
+        Formula("0"),
+        Formula("5"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("4"),
+        Formula("2"),
+      },
       SpellsKnown={
-        6, 6, 6, 6, 5, 4, 3, },
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("4"),
+        Formula("3"),
+      },
     },
     {
       Level="18",
       SpellsPerDay={
-        0, 5, 5, 5, 5, 4, 3, },
+        Formula("0"),
+        Formula("5"),
+        Formula("5"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("3"),
+      },
       SpellsKnown={
-        6, 6, 6, 6, 5, 4, 4, },
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("4"),
+        Formula("4"),
+      },
     },
     {
       Level="19",
       SpellsPerDay={
-        0, 5, 5, 5, 5, 5, 4, },
+        Formula("0"),
+        Formula("5"),
+        Formula("5"),
+        Formula("5"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+      },
       SpellsKnown={
-        6, 6, 6, 6, 5, 5, 4, },
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+      },
     },
     {
       Level="20",
       SpellsPerDay={
-        0, 5, 5, 5, 5, 5, 5, },
+        Formula("0"),
+        Formula("5"),
+        Formula("5"),
+        Formula("5"),
+        Formula("5"),
+        Formula("5"),
+        Formula("5"),
+      },
       SpellsKnown={
-        6, 6, 6, 6, 6, 5, 5, },
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("5"),
+      },
     },
     {
       Level="1",
@@ -612,197 +802,14 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Cleric",
-  SpellStat="WIS",
-  Facts={
-    ClassType="PC",
-    Abb="Clr",
-    SpellType="Divine",
-  },
-  SourcePage="p.38",
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
-      Type={
-        Name="Base",
-        Replace=true,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="DOMAIN",
-      Variables={
-        "NUMBER",
-      },
-      Formula=Formula("ClericDomainCount"),
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABModerate",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClericLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "DomainLVL",
-      },
-      Formula=Formula("ClericLVL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClericDomainCount",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_BL_Stripped_Cleric",
-      },
-      Formula=Formula("Caster_Level_Cleric-CasterLevelBLCleric"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Cleric",
-      },
-      Formula=Formula("CL+Caster_Level_Bonus+CasterLevelBLCleric"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "CasterLevelBL_x_Cleric",
-      },
-      Formula=Formula("charbonusto(\"PCLEVEL\",\"Cleric\")"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Highest__Divine",
-      },
-      Formula=Formula("Caster_Level_Cleric"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="CASTERLEVEL",
-      Variables={
-        "Cleric",
-      },
-      Formula=Formula("Caster_Level_BL_Stripped_Cleric"),
-    },
-  },
-  Types={
-    "Base",
-    "PC",
-  },
   HitDie=8,
   MaxLevel=20,
-  SkillPointsPerLevel="2",
-  BonusLanguages={
-    {
-      Name="Abyssal",
-    },
-    {
-      Name="Celestial",
-    },
-    {
-      Name="Infernal",
-    },
-  },
-  Roles={
-    "Cleric",
-  },
+  SkillPointsPerLevel=Formula("2"),
+  SourcePage="p.38",
+  SpellStat="WIS",
   AutomaticKnownSpells={
     {
       Level=0,
@@ -835,12 +842,197 @@ DefineClass({
       Level=9,
     },
   },
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="DOMAIN",
+      Formula=Formula("ClericDomainCount"),
+      Variables={
+        "NUMBER",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Will",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABModerate",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "ClericLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("ClericLVL"),
+      Variables={
+        "DomainLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "ClericDomainCount",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("Caster_Level_Cleric-CasterLevelBLCleric"),
+      Variables={
+        "Caster_Level_BL_Stripped_Cleric",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL+Caster_Level_Bonus+CasterLevelBLCleric"),
+      Variables={
+        "Caster_Level_Cleric",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Cleric\")"),
+      Variables={
+        "CasterLevelBL_x_Cleric",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("Caster_Level_Cleric"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "Caster_Level_Highest__Divine",
+      },
+    },
+    {
+      Category="CASTERLEVEL",
+      Formula=Formula("Caster_Level_BL_Stripped_Cleric"),
+      Variables={
+        "Cleric",
+      },
+    },
+  },
+  BonusLanguages={
+    {
+      Name="Abyssal",
+    },
+    {
+      Name="Celestial",
+    },
+    {
+      Name="Infernal",
+    },
+  },
+  Roles={
+    "Cleric",
+  },
+  Types={
+    "Base",
+    "PC",
+  },
+  Facts={
+    ClassType="PC",
+    Abb="Clr",
+    SpellType="Divine",
+  },
   Levels={
     {
       Level="1",
       ProhibitedSpells={
         {
-          Alignment="Good",
+          Alignments={
+            "Good",
+          },
           Conditions={
             function (character)
               return (character.Variables["ProhibitSpell_Alignment_Good"] == 1)
@@ -853,7 +1045,9 @@ DefineClass({
       Level="1",
       ProhibitedSpells={
         {
-          Alignment="Evil",
+          Alignments={
+            "Evil",
+          },
           Conditions={
             function (character)
               return (character.Variables["ProhibitSpell_Alignment_Evil"] == 1)
@@ -866,7 +1060,9 @@ DefineClass({
       Level="1",
       ProhibitedSpells={
         {
-          Alignment="Lawful",
+          Alignments={
+            "Lawful",
+          },
           Conditions={
             function (character)
               return (character.Variables["ProhibitSpell_Alignment_Lawful"] == 1)
@@ -879,7 +1075,9 @@ DefineClass({
       Level="1",
       ProhibitedSpells={
         {
-          Alignment="Chaotic",
+          Alignments={
+            "Chaotic",
+          },
           Conditions={
             function (character)
               return (character.Variables["ProhibitSpell_Alignment_Chaotic"] == 1)
@@ -905,304 +1103,250 @@ DefineClass({
       Bonuses={
         {
           Category="SKILLPOOL",
+          Formula=Formula("ClericSkillPts"),
           Variables={
             "NUMBER",
           },
-          Formula=Formula("ClericSkillPts"),
         },
       },
     },
     {
       Level="1",
       SpellsPerDay={
-        3, 1, },
+        Formula("3"),
+        Formula("1"),
+      },
     },
     {
       Level="2",
       SpellsPerDay={
-        4, 2, },
+        Formula("4"),
+        Formula("2"),
+      },
     },
     {
       Level="3",
       SpellsPerDay={
-        4, 2, 1, },
+        Formula("4"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="4",
       SpellsPerDay={
-        4, 3, 2, },
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="5",
       SpellsPerDay={
-        4, 3, 2, 1, },
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="6",
       SpellsPerDay={
-        4, 3, 3, 2, },
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="7",
       SpellsPerDay={
-        4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="8",
       SpellsPerDay={
-        4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="9",
       SpellsPerDay={
-        4, 4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="10",
       SpellsPerDay={
-        4, 4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="11",
       SpellsPerDay={
-        4, 4, 4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="12",
       SpellsPerDay={
-        4, 4, 4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="13",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="14",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="15",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="16",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="17",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="18",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="19",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 4, 4, 3, 3, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+      },
     },
     {
       Level="20",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 4, 4, 4, 4, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+      },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Druid",
-  SpellStat="WIS",
-  Facts={
-    ClassType="PC",
-    Abb="Drd",
-    SpellType="Divine",
-  },
-  SourcePage="p.48",
-  Conditions={
-    function (character)
-      local count = 0
-      local subCondition
-      subCondition = function (character)
-        return character.Alignment == "NG" or character.Alignment == "LN" or character.Alignment == "TN" or character.Alignment == "CN" or character.Alignment == "NE"
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      subCondition = function (character)
-        return (character.Variables["BypassClassAlignment_Druid"] == 1)
-      end
-      if subCondition(character) then
-        count = count + 1
-      end
-      return count >= 1
-    end,
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
-      Type={
-        Name="Base",
-        Replace=true,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABModerate",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "DruidLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_BL_Stripped_Druid",
-      },
-      Formula=Formula("Caster_Level_Druid-CasterLevelBLDruid"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Druid",
-      },
-      Formula=Formula("CL+Caster_Level_Bonus+CasterLevelBLDruid"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "CasterLevelBL_x_Druid",
-      },
-      Formula=Formula("charbonusto(\"PCLEVEL\",\"Druid\")"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Highest__Divine",
-      },
-      Formula=Formula("Caster_Level_Druid"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="CASTERLEVEL",
-      Variables={
-        "Druid",
-      },
-      Formula=Formula("Caster_Level_BL_Stripped_Druid"),
-    },
-  },
-  Types={
-    "Base",
-    "PC",
-  },
-  AutomaticLanguages={
-    {
-      Selector=function (language)
-        return stringMatch(language.Name, "Druidic")
-      end,
-    },
-  },
   HitDie=8,
   MaxLevel=20,
-  SkillPointsPerLevel="4",
-  BonusLanguages={
-    {
-      Name="Sylvan",
-    },
-  },
-  Roles={
-    "Druid",
-  },
+  SkillPointsPerLevel=Formula("4"),
+  SourcePage="p.48",
+  SpellStat="WIS",
   AutomaticKnownSpells={
     {
       Level=0,
@@ -1235,6 +1379,188 @@ DefineClass({
       Level=9,
     },
   },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Druidic")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Will",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABModerate",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "DruidLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("Caster_Level_Druid-CasterLevelBLDruid"),
+      Variables={
+        "Caster_Level_BL_Stripped_Druid",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL+Caster_Level_Bonus+CasterLevelBLDruid"),
+      Variables={
+        "Caster_Level_Druid",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Druid\")"),
+      Variables={
+        "CasterLevelBL_x_Druid",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("Caster_Level_Druid"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "Caster_Level_Highest__Divine",
+      },
+    },
+    {
+      Category="CASTERLEVEL",
+      Formula=Formula("Caster_Level_BL_Stripped_Druid"),
+      Variables={
+        "Druid",
+      },
+    },
+  },
+  BonusLanguages={
+    {
+      Name="Sylvan",
+    },
+  },
+  Conditions={
+    function (character)
+      local count = 0
+      local subCondition
+      subCondition = function (character)
+        return character.Alignment == "NG" or character.Alignment == "LN" or character.Alignment == "TN" or character.Alignment == "CN" or character.Alignment == "NE"
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      subCondition = function (character)
+        return (character.Variables["BypassClassAlignment_Druid"] == 1)
+      end
+      if subCondition(character) then
+        count = count + 1
+      end
+      return count >= 1
+    end,
+  },
+  Roles={
+    "Druid",
+  },
+  Types={
+    "Base",
+    "PC",
+  },
+  Facts={
+    ClassType="PC",
+    Abb="Drd",
+    SpellType="Divine",
+  },
   Levels={
     {
       Level="1",
@@ -1252,7 +1578,9 @@ DefineClass({
       Level="1",
       ProhibitedSpells={
         {
-          Alignment="Good",
+          Alignments={
+            "Good",
+          },
           Conditions={
             function (character)
               return (character.Variables["ProhibitSpell_Alignment_Good"] == 1)
@@ -1265,7 +1593,9 @@ DefineClass({
       Level="1",
       ProhibitedSpells={
         {
-          Alignment="Evil",
+          Alignments={
+            "Evil",
+          },
           Conditions={
             function (character)
               return (character.Variables["ProhibitSpell_Alignment_Evil"] == 1)
@@ -1278,7 +1608,9 @@ DefineClass({
       Level="1",
       ProhibitedSpells={
         {
-          Alignment="Lawful",
+          Alignments={
+            "Lawful",
+          },
           Conditions={
             function (character)
               return (character.Variables["ProhibitSpell_Alignment_Lawful"] == 1)
@@ -1291,7 +1623,9 @@ DefineClass({
       Level="1",
       ProhibitedSpells={
         {
-          Alignment="Chaotic",
+          Alignments={
+            "Chaotic",
+          },
           Conditions={
             function (character)
               return (character.Variables["ProhibitSpell_Alignment_Chaotic"] == 1)
@@ -1422,118 +1756,242 @@ DefineClass({
     {
       Level="1",
       SpellsPerDay={
-        3, 1, },
+        Formula("3"),
+        Formula("1"),
+      },
     },
     {
       Level="2",
       SpellsPerDay={
-        4, 2, },
+        Formula("4"),
+        Formula("2"),
+      },
     },
     {
       Level="3",
       SpellsPerDay={
-        4, 2, 1, },
+        Formula("4"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="4",
       SpellsPerDay={
-        4, 3, 2, },
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="5",
       SpellsPerDay={
-        4, 3, 2, 1, },
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="6",
       SpellsPerDay={
-        4, 3, 3, 2, },
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="7",
       SpellsPerDay={
-        4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="8",
       SpellsPerDay={
-        4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="9",
       SpellsPerDay={
-        4, 4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="10",
       SpellsPerDay={
-        4, 4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="11",
       SpellsPerDay={
-        4, 4, 4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="12",
       SpellsPerDay={
-        4, 4, 4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="13",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="14",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="15",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="16",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="17",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="18",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="19",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 4, 4, 3, 3, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+      },
     },
     {
       Level="20",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 4, 4, 4, 4, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+      },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Fighter",
-  Facts={
-    ClassType="PC",
-    Abb="Ftr",
-  },
+  HitDie=10,
+  MaxLevel=20,
+  SkillPointsPerLevel=Formula("2"),
   SourcePage="p.55",
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Type={
         Name="Base",
@@ -1545,98 +2003,102 @@ DefineClass({
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
+      Variables={
+        "BASEAB",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Fortitude",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-        "BASE.Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Reflex",
+        "BASE.Will",
+      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassBABFull",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
+      Variables={
+        "ClassBABFull",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("CL"),
       Variables={
         "FighterLVL",
       },
-      Formula=Formula("CL"),
     },
     {
       Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
       Variables={
         "ClassSaveGood_Fortitude",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassSavePoor_Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
+      Variables={
+        "ClassSavePoor_Will",
+      },
     },
+  },
+  Roles={
+    "Combat",
+    "Skill",
   },
   Types={
     "Base",
     "PC",
   },
-  HitDie=10,
-  MaxLevel=20,
-  SkillPointsPerLevel="2",
-  Roles={
-    "Combat",
-    "Skill",
+  Facts={
+    ClassType="PC",
+    Abb="Ftr",
   },
   Levels={
     {
@@ -1652,14 +2114,43 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Monk",
-  Facts={
-    ClassType="PC",
-    Abb="Mnk",
-  },
+  HitDie=10,
+  MaxLevel=20,
+  SkillPointsPerLevel=Formula("4"),
   SourcePage="p.56",
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "FlurryOfBlows",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "MonkLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "KiPoolWis",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "KiPool",
+      },
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -1679,45 +2170,16 @@ DefineClass({
       return count >= 1
     end,
   },
-  Bonuses={
-    {
-      Category="VAR",
-      Variables={
-        "FlurryOfBlows",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "MonkLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "KiPoolWis",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "KiPool",
-      },
-      Formula=Formula("1"),
-    },
+  Roles={
+    "None",
   },
   Types={
     "Base",
     "PC",
   },
-  HitDie=10,
-  MaxLevel=20,
-  SkillPointsPerLevel="4",
-  Roles={
-    "None",
+  Facts={
+    ClassType="PC",
+    Abb="Mnk",
   },
   Levels={
     {
@@ -1734,18 +2196,191 @@ DefineClass({
     },
     {
       Level="1",
+      StartingKitCount=1,
+      StartingKitChoices={
+        "Monk Flurry of Blows",
+      },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Paladin",
-  SpellStat="CHA",
-  Facts={
-    ClassType="PC",
-    Abb="Pld",
-    SpellType="Divine",
-  },
+  ExClass="Ex-Paladin",
+  HitDie=10,
+  ItemCreationCasterLevel=Formula("CL-3"),
+  MaxLevel=20,
+  SkillPointsPerLevel=Formula("2"),
   SourcePage="p.60",
+  SpellStat="CHA",
+  Visible=true,
+  AutomaticKnownSpells={
+    {
+      Level=1,
+    },
+    {
+      Level=2,
+    },
+    {
+      Level=3,
+    },
+    {
+      Level=4,
+    },
+  },
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="DOMAIN",
+      Formula=Formula("PaladinDomainCount"),
+      Variables={
+        "NUMBER",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Will",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABFull",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "PaladinLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("Caster_Level_Paladin-CasterLevelBLPaladin"),
+      Variables={
+        "Caster_Level_BL_Stripped_Paladin",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL+Caster_Level_Bonus-3+CasterLevelBLPaladin"),
+      Variables={
+        "Caster_Level_Paladin",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Paladin\")"),
+      Variables={
+        "CasterLevelBL_x_Paladin",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("Caster_Level_Paladin"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "Caster_Level_Highest__Divine",
+      },
+    },
+    {
+      Category="CASTERLEVEL",
+      Formula=Formula("Caster_Level_BL_Stripped_Paladin"),
+      Conditions={
+        function (character)
+          return 1 <= #filter(ipairs(character.ClassLevels),
+          function (class, level)
+            return (class == "Paladin" and level >= 4)
+          end)
+        end,
+      },
+      Variables={
+        "Paladin",
+      },
+    },
+  },
   Conditions={
     function (character)
       local count = 0
@@ -1765,185 +2400,17 @@ DefineClass({
       return count >= 1
     end,
   },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Type={
-        Name="Base",
-        Replace=true,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="DOMAIN",
-      Variables={
-        "NUMBER",
-      },
-      Formula=Formula("PaladinDomainCount"),
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABFull",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "PaladinLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_BL_Stripped_Paladin",
-      },
-      Formula=Formula("Caster_Level_Paladin-CasterLevelBLPaladin"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Paladin",
-      },
-      Formula=Formula("CL+Caster_Level_Bonus-3+CasterLevelBLPaladin"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "CasterLevelBL_x_Paladin",
-      },
-      Formula=Formula("charbonusto(\"PCLEVEL\",\"Paladin\")"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Highest__Divine",
-      },
-      Formula=Formula("Caster_Level_Paladin"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="CASTERLEVEL",
-      Variables={
-        "Paladin",
-      },
-      Formula=Formula("Caster_Level_BL_Stripped_Paladin"),
-      Conditions={
-        function (character)
-          return 1 <= #filter(ipairs(character.ClassLevels),
-          function (class, level)
-            return (class == "Paladin" and level >= 4)
-          end)
-        end,
-      },
-    },
+  Roles={
+    "None",
   },
   Types={
     "Base",
     "PC",
   },
-  HitDie=10,
-  MaxLevel=20,
-  SkillPointsPerLevel="2",
-  ExClass="Ex-Paladin",
-  ItemCreationCasterLevel="CL-3",
-  Roles={
-    "None",
-  },
-  AutomaticKnownSpells={
-    {
-      Level=1,
-    },
-    {
-      Level=2,
-    },
-    {
-      Level=3,
-    },
-    {
-      Level=4,
-    },
+  Facts={
+    ClassType="PC",
+    Abb="Pld",
+    SpellType="Divine",
   },
   Levels={
     {
@@ -1961,102 +2428,166 @@ DefineClass({
     {
       Level="4",
       SpellsPerDay={
-        0, 0, },
+        Formula("0"),
+        Formula("0"),
+      },
     },
     {
       Level="5",
       SpellsPerDay={
-        0, 1, },
+        Formula("0"),
+        Formula("1"),
+      },
     },
     {
       Level="6",
       SpellsPerDay={
-        0, 1, },
+        Formula("0"),
+        Formula("1"),
+      },
     },
     {
       Level="7",
       SpellsPerDay={
-        0, 1, 0, },
+        Formula("0"),
+        Formula("1"),
+        Formula("0"),
+      },
     },
     {
       Level="8",
       SpellsPerDay={
-        0, 1, 1, },
+        Formula("0"),
+        Formula("1"),
+        Formula("1"),
+      },
     },
     {
       Level="9",
       SpellsPerDay={
-        0, 2, 1, },
+        Formula("0"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="10",
       SpellsPerDay={
-        0, 2, 1, 0, },
+        Formula("0"),
+        Formula("2"),
+        Formula("1"),
+        Formula("0"),
+      },
     },
     {
       Level="11",
       SpellsPerDay={
-        0, 2, 1, 1, },
+        Formula("0"),
+        Formula("2"),
+        Formula("1"),
+        Formula("1"),
+      },
     },
     {
       Level="12",
       SpellsPerDay={
-        0, 2, 2, 1, },
+        Formula("0"),
+        Formula("2"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="13",
       SpellsPerDay={
-        0, 3, 2, 1, 0, },
+        Formula("0"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+        Formula("0"),
+      },
     },
     {
       Level="14",
       SpellsPerDay={
-        0, 3, 2, 1, 1, },
+        Formula("0"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+        Formula("1"),
+      },
     },
     {
       Level="15",
       SpellsPerDay={
-        0, 3, 2, 2, 1, },
+        Formula("0"),
+        Formula("3"),
+        Formula("2"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="16",
       SpellsPerDay={
-        0, 3, 3, 2, 1, },
+        Formula("0"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="17",
       SpellsPerDay={
-        0, 4, 3, 2, 1, },
+        Formula("0"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="18",
       SpellsPerDay={
-        0, 4, 3, 2, 2, },
+        Formula("0"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("2"),
+      },
     },
     {
       Level="19",
       SpellsPerDay={
-        0, 4, 3, 3, 2, },
+        Formula("0"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="20",
       SpellsPerDay={
-        0, 4, 4, 3, 3, },
+        Formula("0"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+      },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Ex-Paladin",
-  Facts={
-    ClassType="PC",
-    Abb="XPal",
-  },
+  HitDie=10,
+  MaxLevel=20,
+  SkillPointsPerLevel=Formula("2"),
+  Visible=false,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Type={
         Name="Base",
@@ -2068,85 +2599,88 @@ DefineClass({
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
+      Variables={
+        "BASEAB",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Will",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Reflex",
+      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassBABFull",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
+      Variables={
+        "ClassBABFull",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("CL"),
       Variables={
         "PaladinLVL",
       },
-      Formula=Formula("CL"),
     },
     {
       Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
       Variables={
         "ClassSaveGood_Fortitude",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassSaveGood_Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
+      },
+      Variables={
+        "ClassSaveGood_Will",
       },
     },
   },
@@ -2154,10 +2688,10 @@ DefineClass({
     "Base",
     "PC",
   },
-  HitDie=10,
-  MaxLevel=20,
-  SkillPointsPerLevel="2",
-  Visible=false,
+  Facts={
+    ClassType="PC",
+    Abb="XPal",
+  },
   Levels={
     {
       Level="1",
@@ -2287,9 +2821,14 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Ranger",
+  HitDie=10,
+  ItemCreationCasterLevel=Formula("CL-3"),
+  MaxLevel=20,
+  SkillPointsPerLevel=Formula("6"),
+  SourcePage="p.64",
   SpellStat="WIS",
   Abilities={
     {
@@ -2307,171 +2846,6 @@ DefineClass({
       },
     },
   },
-  Facts={
-    ClassType="PC",
-    Abb="Rgr",
-    SpellType="Divine",
-  },
-  SourcePage="p.64",
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Type={
-        Name="Base",
-        Replace=true,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABFull",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "RangerLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_BL_Stripped_Ranger",
-      },
-      Formula=Formula("Caster_Level_Ranger-CasterLevelBLRanger"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Ranger",
-      },
-      Formula=Formula("CL+Caster_Level_Bonus-3+CasterLevelBLRanger"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "CasterLevelBL_x_Ranger",
-      },
-      Formula=Formula("charbonusto(\"PCLEVEL\",\"Ranger\")"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Highest__Divine",
-      },
-      Formula=Formula("Caster_Level_Ranger"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="CASTERLEVEL",
-      Variables={
-        "Ranger",
-      },
-      Formula=Formula("Caster_Level_Ranger"),
-      Conditions={
-        function (character)
-          return 1 <= #filter(ipairs(character.ClassLevels),
-          function (class, level)
-            return (class == "Ranger" and level >= 4)
-          end)
-        end,
-      },
-    },
-  },
-  Types={
-    "Base",
-    "PC",
-  },
-  HitDie=10,
-  MaxLevel=20,
-  SkillPointsPerLevel="6",
-  ItemCreationCasterLevel="CL-3",
-  Roles={
-    "Combat",
-    "Skill",
-  },
   AutomaticKnownSpells={
     {
       Level=1,
@@ -2485,6 +2859,166 @@ DefineClass({
     {
       Level=4,
     },
+  },
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABFull",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "RangerLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("Caster_Level_Ranger-CasterLevelBLRanger"),
+      Variables={
+        "Caster_Level_BL_Stripped_Ranger",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL+Caster_Level_Bonus-3+CasterLevelBLRanger"),
+      Variables={
+        "Caster_Level_Ranger",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Ranger\")"),
+      Variables={
+        "CasterLevelBL_x_Ranger",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("Caster_Level_Ranger"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "Caster_Level_Highest__Divine",
+      },
+    },
+    {
+      Category="CASTERLEVEL",
+      Formula=Formula("Caster_Level_Ranger"),
+      Conditions={
+        function (character)
+          return 1 <= #filter(ipairs(character.ClassLevels),
+          function (class, level)
+            return (class == "Ranger" and level >= 4)
+          end)
+        end,
+      },
+      Variables={
+        "Ranger",
+      },
+    },
+  },
+  Roles={
+    "Combat",
+    "Skill",
+  },
+  Types={
+    "Base",
+    "PC",
+  },
+  Facts={
+    ClassType="PC",
+    Abb="Rgr",
+    SpellType="Divine",
   },
   Levels={
     {
@@ -2502,96 +3036,160 @@ DefineClass({
     {
       Level="4",
       SpellsPerDay={
-        0, 0, },
+        Formula("0"),
+        Formula("0"),
+      },
     },
     {
       Level="5",
       SpellsPerDay={
-        0, 1, },
+        Formula("0"),
+        Formula("1"),
+      },
     },
     {
       Level="6",
       SpellsPerDay={
-        0, 1, },
+        Formula("0"),
+        Formula("1"),
+      },
     },
     {
       Level="7",
       SpellsPerDay={
-        0, 1, 0, },
+        Formula("0"),
+        Formula("1"),
+        Formula("0"),
+      },
     },
     {
       Level="8",
       SpellsPerDay={
-        0, 1, 1, },
+        Formula("0"),
+        Formula("1"),
+        Formula("1"),
+      },
     },
     {
       Level="9",
       SpellsPerDay={
-        0, 2, 1, },
+        Formula("0"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="10",
       SpellsPerDay={
-        0, 2, 1, 0, },
+        Formula("0"),
+        Formula("2"),
+        Formula("1"),
+        Formula("0"),
+      },
     },
     {
       Level="11",
       SpellsPerDay={
-        0, 2, 1, 1, },
+        Formula("0"),
+        Formula("2"),
+        Formula("1"),
+        Formula("1"),
+      },
     },
     {
       Level="12",
       SpellsPerDay={
-        0, 2, 2, 1, },
+        Formula("0"),
+        Formula("2"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="13",
       SpellsPerDay={
-        0, 3, 2, 1, 0, },
+        Formula("0"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+        Formula("0"),
+      },
     },
     {
       Level="14",
       SpellsPerDay={
-        0, 3, 2, 1, 1, },
+        Formula("0"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+        Formula("1"),
+      },
     },
     {
       Level="15",
       SpellsPerDay={
-        0, 3, 2, 2, 1, },
+        Formula("0"),
+        Formula("3"),
+        Formula("2"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="16",
       SpellsPerDay={
-        0, 3, 3, 2, 1, },
+        Formula("0"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="17",
       SpellsPerDay={
-        0, 4, 3, 2, 1, },
+        Formula("0"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="18",
       SpellsPerDay={
-        0, 4, 3, 2, 2, },
+        Formula("0"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("2"),
+      },
     },
     {
       Level="19",
       SpellsPerDay={
-        0, 4, 3, 3, 2, },
+        Formula("0"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="20",
       SpellsPerDay={
-        0, 4, 4, 3, 3, },
+        Formula("0"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+      },
     },
     {
       Level="1",
       Bonuses={
         {
           Category="VAR",
-          Variables={
-            "DisableRangerHuntersBond",
-          },
           Formula=Formula("1"),
           Conditions={
             function (character)
@@ -2600,24 +3198,23 @@ DefineClass({
               end)
             end,
           },
+          Variables={
+            "DisableRangerHuntersBond",
+          },
         },
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Rogue",
-  Facts={
-    ClassType="PC",
-    Abb="Rog",
-  },
+  HitDie=8,
+  MaxLevel=20,
+  SkillPointsPerLevel=Formula("8"),
   SourcePage="p.67",
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
       Type={
         Name="Base",
@@ -2629,98 +3226,102 @@ DefineClass({
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
+      Variables={
+        "BASEAB",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Reflex",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Will",
+      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassBABModerate",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
+      Variables={
+        "ClassBABModerate",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("CL"),
       Variables={
         "RogueLVL",
       },
-      Formula=Formula("CL"),
     },
     {
       Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
       Variables={
         "ClassSavePoor_Fortitude",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "ClassSaveGood_Reflex",
       },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassSavePoor_Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
+      Variables={
+        "ClassSavePoor_Will",
+      },
     },
+  },
+  Roles={
+    "Skill",
   },
   Types={
     "Base",
     "PC",
     "Rogue",
   },
-  HitDie=8,
-  MaxLevel=20,
-  SkillPointsPerLevel="8",
-  Roles={
-    "Skill",
+  Facts={
+    ClassType="PC",
+    Abb="Rog",
   },
   Levels={
     {
@@ -2748,22 +3349,18 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Sorcerer",
-  SpellStat="CHA",
-  Facts={
-    ClassType="PC",
-    Abb="Sor",
-    SpellType="Arcane",
-  },
+  HitDie=6,
+  MaxLevel=20,
+  Memorize=false,
+  SkillPointsPerLevel=Formula("2"),
   SourcePage="p.70",
+  SpellStat="CHA",
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
       Type={
         Name="Base",
@@ -2775,134 +3372,140 @@ DefineClass({
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
+      Variables={
+        "BASEAB",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Will",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Reflex",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Reflex",
+      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassBABPoor",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
+      Variables={
+        "ClassBABPoor",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("CL"),
       Variables={
         "SorcererLVL",
       },
-      Formula=Formula("CL"),
     },
     {
       Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
       Variables={
         "ClassSavePoor_Fortitude",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "ClassSavePoor_Reflex",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
     },
     {
       Category="VAR",
+      Formula=Formula("Caster_Level_Sorcerer-CasterLevelBLSorcerer"),
       Variables={
         "Caster_Level_BL_Stripped_Sorcerer",
       },
-      Formula=Formula("Caster_Level_Sorcerer-CasterLevelBLSorcerer"),
     },
     {
       Category="VAR",
+      Formula=Formula("CL+Caster_Level_Bonus+CasterLevelBLSorcerer"),
       Variables={
         "Caster_Level_Sorcerer",
       },
-      Formula=Formula("CL+Caster_Level_Bonus+CasterLevelBLSorcerer"),
     },
     {
       Category="VAR",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Sorcerer\")"),
       Variables={
         "CasterLevelBL_x_Sorcerer",
       },
-      Formula=Formula("charbonusto(\"PCLEVEL\",\"Sorcerer\")"),
     },
     {
       Category="VAR",
-      Variables={
-        "Caster_Level_Highest__Arcane",
-      },
       Formula=Formula("Caster_Level_Sorcerer"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "Caster_Level_Highest__Arcane",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("Caster_Level_Sorcerer"),
       Variables={
         "Caster_Level_Total__Arcane",
       },
-      Formula=Formula("Caster_Level_Sorcerer"),
     },
     {
       Category="CASTERLEVEL",
+      Formula=Formula("Caster_Level_BL_Stripped_Sorcerer"),
       Variables={
         "Sorcerer",
       },
-      Formula=Formula("Caster_Level_BL_Stripped_Sorcerer"),
     },
+  },
+  Roles={
+    "Sorcerer",
   },
   Types={
     "Base",
@@ -2910,12 +3513,10 @@ DefineClass({
     "SpontaneousArcane",
     "Spontaneous",
   },
-  HitDie=6,
-  MaxLevel=20,
-  SkillPointsPerLevel="2",
-  Memorize=false,
-  Roles={
-    "Sorcerer",
+  Facts={
+    ClassType="PC",
+    Abb="Sor",
+    SpellType="Arcane",
   },
   Levels={
     {
@@ -2933,160 +3534,398 @@ DefineClass({
     {
       Level="1",
       SpellsPerDay={
-        0, 3, },
+        Formula("0"),
+        Formula("3"),
+      },
       SpellsKnown={
-        4, 2, },
+        Formula("4"),
+        Formula("2"),
+      },
     },
     {
       Level="2",
       SpellsPerDay={
-        0, 4, },
+        Formula("0"),
+        Formula("4"),
+      },
       SpellsKnown={
-        5, 2, },
+        Formula("5"),
+        Formula("2"),
+      },
     },
     {
       Level="3",
       SpellsPerDay={
-        0, 5, },
+        Formula("0"),
+        Formula("5"),
+      },
       SpellsKnown={
-        5, 3, },
+        Formula("5"),
+        Formula("3"),
+      },
     },
     {
       Level="4",
       SpellsPerDay={
-        0, 6, 3, },
+        Formula("0"),
+        Formula("6"),
+        Formula("3"),
+      },
       SpellsKnown={
-        6, 3, 1, },
+        Formula("6"),
+        Formula("3"),
+        Formula("1"),
+      },
     },
     {
       Level="5",
       SpellsPerDay={
-        0, 6, 4, },
+        Formula("0"),
+        Formula("6"),
+        Formula("4"),
+      },
       SpellsKnown={
-        6, 4, 2, },
+        Formula("6"),
+        Formula("4"),
+        Formula("2"),
+      },
     },
     {
       Level="6",
       SpellsPerDay={
-        0, 6, 5, 3, },
+        Formula("0"),
+        Formula("6"),
+        Formula("5"),
+        Formula("3"),
+      },
       SpellsKnown={
-        7, 4, 2, 1, },
+        Formula("7"),
+        Formula("4"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="7",
       SpellsPerDay={
-        0, 6, 6, 4, },
+        Formula("0"),
+        Formula("6"),
+        Formula("6"),
+        Formula("4"),
+      },
       SpellsKnown={
-        7, 5, 3, 2, },
+        Formula("7"),
+        Formula("5"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="8",
       SpellsPerDay={
-        0, 6, 6, 5, 3, },
+        Formula("0"),
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("3"),
+      },
       SpellsKnown={
-        8, 5, 3, 2, 1, },
+        Formula("8"),
+        Formula("5"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="9",
       SpellsPerDay={
-        0, 6, 6, 6, 4, },
+        Formula("0"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("4"),
+      },
       SpellsKnown={
-        8, 5, 4, 3, 2, },
+        Formula("8"),
+        Formula("5"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="10",
       SpellsPerDay={
-        0, 6, 6, 6, 5, 3, },
+        Formula("0"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("3"),
+      },
       SpellsKnown={
-        9, 5, 4, 3, 2, 1, },
+        Formula("9"),
+        Formula("5"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="11",
       SpellsPerDay={
-        0, 6, 6, 6, 6, 4, },
+        Formula("0"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("4"),
+      },
       SpellsKnown={
-        9, 5, 5, 4, 3, 2, },
+        Formula("9"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="12",
       SpellsPerDay={
-        0, 6, 6, 6, 6, 5, 3, },
+        Formula("0"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("3"),
+      },
       SpellsKnown={
-        9, 5, 5, 4, 3, 2, 1, },
+        Formula("9"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="13",
       SpellsPerDay={
-        0, 6, 6, 6, 6, 6, 4, },
+        Formula("0"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("4"),
+      },
       SpellsKnown={
-        9, 5, 5, 4, 4, 3, 2, },
+        Formula("9"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="14",
       SpellsPerDay={
-        0, 6, 6, 6, 6, 6, 5, 3, },
+        Formula("0"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("3"),
+      },
       SpellsKnown={
-        9, 5, 5, 4, 4, 3, 2, 1, },
+        Formula("9"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="15",
       SpellsPerDay={
-        0, 6, 6, 6, 6, 6, 6, 4, },
+        Formula("0"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("4"),
+      },
       SpellsKnown={
-        9, 5, 5, 4, 4, 4, 3, 2, },
+        Formula("9"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="16",
       SpellsPerDay={
-        0, 6, 6, 6, 6, 6, 6, 5, 3, },
+        Formula("0"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("3"),
+      },
       SpellsKnown={
-        9, 5, 5, 4, 4, 4, 3, 2, 1, },
+        Formula("9"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="17",
       SpellsPerDay={
-        0, 6, 6, 6, 6, 6, 6, 6, 4, },
+        Formula("0"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("4"),
+      },
       SpellsKnown={
-        9, 5, 5, 4, 4, 4, 3, 3, 2, },
+        Formula("9"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="18",
       SpellsPerDay={
-        0, 6, 6, 6, 6, 6, 6, 6, 5, 3, },
+        Formula("0"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("5"),
+        Formula("3"),
+      },
       SpellsKnown={
-        9, 5, 5, 4, 4, 4, 3, 3, 2, 1, },
+        Formula("9"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="19",
       SpellsPerDay={
-        0, 6, 6, 6, 6, 6, 6, 6, 6, 4, },
+        Formula("0"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("4"),
+      },
       SpellsKnown={
-        9, 5, 5, 4, 4, 4, 3, 3, 3, 2, },
+        Formula("9"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="20",
       SpellsPerDay={
-        0, 6, 6, 6, 6, 6, 6, 6, 6, 6, },
+        Formula("0"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+        Formula("6"),
+      },
       SpellsKnown={
-        9, 5, 5, 4, 4, 4, 3, 3, 3, 3, },
+        Formula("9"),
+        Formula("5"),
+        Formula("5"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+      },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Wizard",
-  SpellStat="INT",
-  Facts={
-    ClassType="PC",
-    Abb="Wiz",
-    SpellType="Arcane",
-  },
+  AllowBaseClass=false,
+  HitDie=6,
+  MaxLevel=20,
+  SkillPointsPerLevel=Formula("2"),
   SourcePage="p.77",
+  SpellBook=true,
+  SpellStat="INT",
+  Visible=true,
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
       Type={
         Name="Base",
@@ -3098,153 +3937,156 @@ DefineClass({
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
+      Variables={
+        "BASEAB",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Will",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Reflex",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Reflex",
+      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassBABPoor",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
+      Variables={
+        "ClassBABPoor",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("CL"),
       Variables={
         "WizardLVL",
       },
-      Formula=Formula("CL"),
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "SpellMasteryQualify",
       },
-      Formula=Formula("1"),
     },
     {
       Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
       Variables={
         "ClassSavePoor_Fortitude",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "ClassSavePoor_Reflex",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "ClassSaveGood_Will",
       },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
     },
     {
       Category="VAR",
+      Formula=Formula("Caster_Level_Wizard-CasterLevelBLWizard"),
       Variables={
         "Caster_Level_BL_Stripped_Wizard",
       },
-      Formula=Formula("Caster_Level_Wizard-CasterLevelBLWizard"),
     },
     {
       Category="VAR",
+      Formula=Formula("WizardLVL+Caster_Level_Bonus+CasterLevelBLWizard"),
       Variables={
         "Caster_Level_Wizard",
       },
-      Formula=Formula("WizardLVL+Caster_Level_Bonus+CasterLevelBLWizard"),
     },
     {
       Category="VAR",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Wizard\")"),
       Variables={
         "CasterLevelBL_x_Wizard",
       },
-      Formula=Formula("charbonusto(\"PCLEVEL\",\"Wizard\")"),
     },
     {
       Category="VAR",
-      Variables={
-        "Caster_Level_Highest__Arcane",
-      },
       Formula=Formula("Caster_Level_Wizard"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "Caster_Level_Highest__Arcane",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("Caster_Level_Wizard"),
       Variables={
         "Caster_Level_Total__Arcane",
       },
-      Formula=Formula("Caster_Level_Wizard"),
     },
     {
       Category="CASTERLEVEL",
+      Formula=Formula("Caster_Level_BL_Stripped_Wizard"),
       Variables={
         "Wizard",
       },
-      Formula=Formula("Caster_Level_BL_Stripped_Wizard"),
     },
+  },
+  Roles={
+    "Wizard",
   },
   Types={
     "Base",
     "PC",
   },
-  HitDie=6,
-  MaxLevel=20,
-  SkillPointsPerLevel="2",
-  AllowBaseClass=false,
-  Spellbook=true,
-  Roles={
-    "Wizard",
+  Facts={
+    ClassType="PC",
+    Abb="Wiz",
+    SpellType="Arcane",
   },
   Levels={
     {
@@ -3262,102 +4104,230 @@ DefineClass({
     {
       Level="1",
       SpellsPerDay={
-        3, 1, },
+        Formula("3"),
+        Formula("1"),
+      },
     },
     {
       Level="2",
       SpellsPerDay={
-        4, 2, },
+        Formula("4"),
+        Formula("2"),
+      },
     },
     {
       Level="3",
       SpellsPerDay={
-        4, 2, 1, },
+        Formula("4"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="4",
       SpellsPerDay={
-        4, 3, 2, },
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="5",
       SpellsPerDay={
-        4, 3, 2, 1, },
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="6",
       SpellsPerDay={
-        4, 3, 3, 2, },
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="7",
       SpellsPerDay={
-        4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="8",
       SpellsPerDay={
-        4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="9",
       SpellsPerDay={
-        4, 4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="10",
       SpellsPerDay={
-        4, 4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="11",
       SpellsPerDay={
-        4, 4, 4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="12",
       SpellsPerDay={
-        4, 4, 4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="13",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="14",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="15",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="16",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="17",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 4, 3, 2, 1, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="18",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 4, 3, 3, 2, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="19",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 4, 4, 3, 3, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("3"),
+        Formula("3"),
+      },
     },
     {
       Level="20",
       SpellsPerDay={
-        4, 4, 4, 4, 4, 4, 4, 4, 4, 4, },
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+        Formula("4"),
+      },
     },
   },
   SubClasses={
@@ -3366,7 +4336,6 @@ DefineClass({
         Kind="SCHOOL",
         Value="Abjuration",
       },
-      Cost=0,
       Levels={
         {
           Level="1",
@@ -3387,13 +4356,13 @@ DefineClass({
         },
       },
       Name="Abjurer",
+      Cost=0,
     },
     {
       Choice={
         Kind="SCHOOL",
         Value="Conjuration",
       },
-      Cost=0,
       Levels={
         {
           Level="1",
@@ -3414,13 +4383,13 @@ DefineClass({
         },
       },
       Name="Conjurer",
+      Cost=0,
     },
     {
       Choice={
         Kind="SCHOOL",
         Value="Divination",
       },
-      Cost=0,
       Levels={
         {
           Level="1",
@@ -3441,13 +4410,13 @@ DefineClass({
         },
       },
       Name="Diviner",
+      Cost=0,
     },
     {
       Choice={
         Kind="SCHOOL",
         Value="Enchantment",
       },
-      Cost=0,
       Levels={
         {
           Level="1",
@@ -3468,13 +4437,13 @@ DefineClass({
         },
       },
       Name="Enchanter",
+      Cost=0,
     },
     {
       Choice={
         Kind="SCHOOL",
         Value="Evocation",
       },
-      Cost=0,
       Levels={
         {
           Level="1",
@@ -3495,13 +4464,13 @@ DefineClass({
         },
       },
       Name="Evoker",
+      Cost=0,
     },
     {
       Choice={
         Kind="SCHOOL",
         Value="Illusion",
       },
-      Cost=0,
       Levels={
         {
           Level="1",
@@ -3522,13 +4491,13 @@ DefineClass({
         },
       },
       Name="Illusionist",
+      Cost=0,
     },
     {
       Choice={
         Kind="SCHOOL",
         Value="Necromancy",
       },
-      Cost=0,
       Levels={
         {
           Level="1",
@@ -3549,13 +4518,13 @@ DefineClass({
         },
       },
       Name="Necromancer",
+      Cost=0,
     },
     {
       Choice={
         Kind="SCHOOL",
         Value="Transmutation",
       },
-      Cost=0,
       Levels={
         {
           Level="1",
@@ -3576,11 +4545,11 @@ DefineClass({
         },
       },
       Name="Transmuter",
+      Cost=0,
     },
     {
       Choice={
       },
-      Cost=0,
       Levels={
         {
           Level="1",
@@ -3604,16 +4573,111 @@ DefineClass({
         },
       },
       Name="Universalist",
+      Cost=0,
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Arcane Archer",
-  Facts={
-    ClassType="PC",
-    Abb="Arc",
-  },
+  HitDie=10,
+  MaxLevel=10,
+  SkillPointsPerLevel=Formula("4"),
   SourcePage="p.374",
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
+      Variables={
+        "BASE.Will",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABFull",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "ArcaneArcherLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Will",
+      },
+    },
+  },
+  ClassSkills={
+    "Perception",
+    "Ride",
+    "Stealth",
+    "Survival",
+  },
   Conditions={
     function (character)
       return 2 <= #filter(character.Abilities, function (ability)
@@ -3632,108 +4696,14 @@ DefineClass({
       return character.TotalAttackBonus >= 6
     end,
   },
-  ClassSkills={
-    "Perception",
-    "Ride",
-    "Stealth",
-    "Survival",
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Type={
-        Name="Base",
-        Replace=true,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Will",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Reflex",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABFull",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ArcaneArcherLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-  },
   Types={
     "PC",
     "Prestige",
   },
-  HitDie=10,
-  MaxLevel=10,
-  SkillPointsPerLevel="4",
+  Facts={
+    ClassType="PC",
+    Abb="Arc",
+  },
   Levels={
     {
       Level="1",
@@ -3804,14 +4774,119 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Arcane Trickster",
-  Facts={
-    ClassType="PC",
-    Abb="Art",
-  },
+  HitDie=6,
+  MaxLevel=10,
+  SkillPointsPerLevel=Formula("4"),
   SourcePage="p.376",
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
+      Variables={
+        "BASE.Fortitude",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
+      Variables={
+        "BASE.Reflex",
+        "BASE.Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABPoor",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "ArcaneTricksterLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Will",
+      },
+    },
+  },
+  ClassSkills={
+    "Acrobatics",
+    "Appraise",
+    "Bluff",
+    "Climb",
+    "Diplomacy",
+    "Disable Device",
+    "Disguise",
+    "Escape Artist",
+    "TYPE=Knowledge",
+    "Perception",
+    "Sense Motive",
+    "Sleight of Hand",
+    "Spellcraft",
+    "Stealth",
+    "Swim",
+  },
   Conditions={
     function (character)
       local count = 0
@@ -3843,119 +4918,14 @@ DefineClass({
       return (character.Variables["SneakAttackDice"] >= 2)
     end,
   },
-  ClassSkills={
-    "Acrobatics",
-    "Appraise",
-    "Bluff",
-    "Climb",
-    "Diplomacy",
-    "Disable Device",
-    "Disguise",
-    "Escape Artist",
-    "TYPE=Knowledge",
-    "Perception",
-    "Sense Motive",
-    "Sleight of Hand",
-    "Spellcraft",
-    "Stealth",
-    "Swim",
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
-      Type={
-        Name="Base",
-        Replace=true,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-        "BASE.Will",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABPoor",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ArcaneTricksterLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-  },
   Types={
     "PC",
     "Prestige",
   },
-  HitDie=6,
-  MaxLevel=10,
-  SkillPointsPerLevel="4",
+  Facts={
+    ClassType="PC",
+    Abb="Art",
+  },
   Levels={
     {
       Level="1",
@@ -4050,14 +5020,119 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Assassin",
-  Facts={
-    ClassType="PC",
-    Abb="Asn",
-  },
+  HitDie=8,
+  MaxLevel=10,
+  SkillPointsPerLevel=Formula("4"),
   SourcePage="p.378",
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
+      Variables={
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABModerate",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "AssassinLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Will",
+      },
+    },
+  },
+  ClassSkills={
+    "Acrobatics",
+    "Bluff",
+    "Climb",
+    "Diplomacy",
+    "Disable Device",
+    "Disguise",
+    "Escape Artist",
+    "Intimidate",
+    "Linguistics",
+    "Perception",
+    "Sense Motive",
+    "Sleight of Hand",
+    "Stealth",
+    "Swim",
+    "Use Magic Device",
+  },
   Conditions={
     function (character)
       local count = 0
@@ -4080,119 +5155,14 @@ DefineClass({
       return ((character.Skill("Disguise").ranks >= 2 and 1 or 0) + (character.Skill("Stealth").ranks >= 5 and 1 or 0)) >= 2
     end,
   },
-  ClassSkills={
-    "Acrobatics",
-    "Bluff",
-    "Climb",
-    "Diplomacy",
-    "Disable Device",
-    "Disguise",
-    "Escape Artist",
-    "Intimidate",
-    "Linguistics",
-    "Perception",
-    "Sense Motive",
-    "Sleight of Hand",
-    "Stealth",
-    "Swim",
-    "Use Magic Device",
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
-      Type={
-        Name="Base",
-        Replace=true,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Will",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABModerate",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "AssassinLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-  },
   Types={
     "PC",
     "Prestige",
   },
-  HitDie=8,
-  MaxLevel=10,
-  SkillPointsPerLevel="4",
+  Facts={
+    ClassType="PC",
+    Abb="Asn",
+  },
   Levels={
     {
       Level="1",
@@ -4207,14 +5177,110 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Dragon Disciple",
-  Facts={
-    ClassType="PC",
-    Abb="DrD",
-  },
+  HitDie=12,
+  MaxLevel=10,
+  SkillPointsPerLevel=Formula("2"),
   SourcePage="p.380",
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Will",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
+      Variables={
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABFull",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "DragonDiscipleLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Will",
+      },
+    },
+  },
+  ClassSkills={
+    "Diplomacy",
+    "Escape Artist",
+    "Fly",
+    "TYPE=Knowledge",
+    "Perception",
+    "Spellcraft",
+  },
   Conditions={
     function (character)
       return (#filter(character.Languages, function (lang)
@@ -4296,110 +5362,14 @@ DefineClass({
       return not (((any(character.Templates, function (template) return stringMatch(template.Name, "Half Dragon") end) and 1 or 0)) >= 1)
     end,
   },
-  ClassSkills={
-    "Diplomacy",
-    "Escape Artist",
-    "Fly",
-    "TYPE=Knowledge",
-    "Perception",
-    "Spellcraft",
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
-      Type={
-        Name="Base",
-        Replace=true,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Will",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABFull",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "DragonDiscipleLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-  },
   Types={
     "PC",
     "Prestige",
   },
-  HitDie=12,
-  MaxLevel=10,
-  SkillPointsPerLevel="2",
+  Facts={
+    ClassType="PC",
+    Abb="DrD",
+  },
   Levels={
     {
       Level="2",
@@ -4470,14 +5440,110 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Duelist",
-  Facts={
-    ClassType="PC",
-    Abb="Dul",
-  },
+  HitDie=10,
+  MaxLevel=10,
+  SkillPointsPerLevel=Formula("4"),
   SourcePage="p.382",
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
+      Variables={
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABFull",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "DuelistLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Will",
+      },
+    },
+  },
+  ClassSkills={
+    "Acrobatics",
+    "Bluff",
+    "Escape Artist",
+    "Perception",
+    "TYPE=Perform",
+    "Sense Motive",
+  },
   Conditions={
     function (character)
       return 3 <= #filter(character.Abilities, function (ability)
@@ -4491,110 +5557,14 @@ DefineClass({
       return character.TotalAttackBonus >= 6
     end,
   },
-  ClassSkills={
-    "Acrobatics",
-    "Bluff",
-    "Escape Artist",
-    "Perception",
-    "TYPE=Perform",
-    "Sense Motive",
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Type={
-        Name="Base",
-        Replace=true,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Will",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABFull",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "DuelistLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-  },
   Types={
     "PC",
     "Prestige",
   },
-  HitDie=10,
-  MaxLevel=10,
-  SkillPointsPerLevel="4",
+  Facts={
+    ClassType="PC",
+    Abb="Dul",
+  },
   Levels={
     {
       Level="1",
@@ -4609,40 +5579,16 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Eldritch Knight",
-  Facts={
-    ClassType="PC",
-    Abb="Elk",
-  },
+  HitDie=10,
+  MaxLevel=10,
+  SkillPointsPerLevel=Formula("2"),
   SourcePage="p.384",
-  Conditions={
-    function (character)
-      return 1 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "Internal" and (ability.Name == "Weapon Prof ~ Martial")
-      end)
-    end,
-    function (character)
-      return (character.SpellCount("Arcane", 3)) >= 1
-    end,
-  },
-  ClassSkills={
-    "Climb",
-    "Knowledge (Arcana)",
-    "Knowledge (Nobility)",
-    "Linguistics",
-    "Ride",
-    "Sense Motive",
-    "Spellcraft",
-    "Swim",
-  },
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Type={
         Name="Base",
@@ -4654,85 +5600,109 @@ DefineClass({
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
+      Variables={
+        "BASEAB",
+      },
     },
     {
       Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
       Variables={
         "BASE.Fortitude",
       },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
     },
     {
       Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
       Variables={
         "BASE.Reflex",
         "BASE.Will",
       },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
     },
     {
       Category="VAR",
-      Variables={
-        "ClassBABFull",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
+      Variables={
+        "ClassBABFull",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("CL"),
       Variables={
         "EldritchKnightLVL",
       },
-      Formula=Formula("CL"),
     },
     {
       Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
       Variables={
         "ClassSaveGood_Fortitude",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassSavePoor_Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
+      Variables={
+        "ClassSavePoor_Will",
+      },
     },
+  },
+  ClassSkills={
+    "Climb",
+    "Knowledge (Arcana)",
+    "Knowledge (Nobility)",
+    "Linguistics",
+    "Ride",
+    "Sense Motive",
+    "Spellcraft",
+    "Swim",
+  },
+  Conditions={
+    function (character)
+      return 1 <= #filter(character.Abilities, function (ability)
+        return ability.Category == "Internal" and (ability.Name == "Weapon Prof ~ Martial")
+      end)
+    end,
+    function (character)
+      return (character.SpellCount("Arcane", 3)) >= 1
+    end,
   },
   Types={
     "PC",
     "Prestige",
   },
-  HitDie=10,
-  MaxLevel=10,
-  SkillPointsPerLevel="2",
+  Facts={
+    ClassType="PC",
+    Abb="Elk",
+  },
   Levels={
     {
       Level="2",
@@ -4819,14 +5789,113 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Loremaster",
-  Facts={
-    ClassType="PC",
-    Abb="Lor",
-  },
+  HitDie=6,
+  MaxLevel=10,
+  SkillPointsPerLevel=Formula("4"),
   SourcePage="p.385",
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
+      Variables={
+        "BASE.Will",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABPoor",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "LoremasterLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Will",
+      },
+    },
+  },
+  ClassSkills={
+    "Appraise",
+    "Diplomacy",
+    "Handle Animal",
+    "Heal",
+    "TYPE=Knowledge",
+    "Linguistics",
+    "TYPE=Perform",
+    "Spellcraft",
+    "Use Magic Device",
+  },
   Conditions={
     function (character)
       return 1 <= #filter(character.Abilities, function (ability)
@@ -4848,113 +5917,14 @@ DefineClass({
       return ((#filter(character.SpellsKnown, function (spell) return spell.School == "Divination" and spell.Level >= 0 end))) >= 7
     end,
   },
-  ClassSkills={
-    "Appraise",
-    "Diplomacy",
-    "Handle Animal",
-    "Heal",
-    "TYPE=Knowledge",
-    "Linguistics",
-    "TYPE=Perform",
-    "Spellcraft",
-    "Use Magic Device",
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
-      Type={
-        Name="Base",
-        Replace=true,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Will",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Reflex",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABPoor",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "LoremasterLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-  },
   Types={
     "PC",
     "Prestige",
   },
-  HitDie=6,
-  MaxLevel=10,
-  SkillPointsPerLevel="4",
+  Facts={
+    ClassType="PC",
+    Abb="Lor",
+  },
   Levels={
     {
       Level="1",
@@ -5049,37 +6019,16 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Mystic Theurge",
-  Facts={
-    ClassType="PC",
-    Abb="Myt",
-  },
+  HitDie=6,
+  MaxLevel=10,
+  SkillPointsPerLevel=Formula("2"),
   SourcePage="p.387",
-  Conditions={
-    function (character)
-      return ((character.Skill("Knowledge (Arcana)").ranks >= 3 and 1 or 0) + (character.Skill("Knowledge (Religion)").ranks >= 3 and 1 or 0)) >= 2
-    end,
-    function (character)
-      return (character.SpellCount("Divine", 2)) >= 1
-    end,
-    function (character)
-      return (character.SpellCount("Arcane", 2)) >= 1
-    end,
-  },
-  ClassSkills={
-    "Knowledge (Arcana)",
-    "Knowledge (Religion)",
-    "Sense Motive",
-    "Spellcraft",
-  },
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
       Type={
         Name="Base",
@@ -5091,78 +6040,99 @@ DefineClass({
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
+      Variables={
+        "BASEAB",
+      },
     },
     {
       Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
       Variables={
         "BASE.Will",
       },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
     },
     {
       Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
       Variables={
         "BASE.Fortitude",
         "BASE.Reflex",
       },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
     },
     {
       Category="VAR",
-      Variables={
-        "ClassBABPoor",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
+      Variables={
+        "ClassBABPoor",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
       Variables={
         "ClassSavePoor_Fortitude",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassSaveGood_Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
+      Variables={
+        "ClassSaveGood_Will",
+      },
     },
+  },
+  ClassSkills={
+    "Knowledge (Arcana)",
+    "Knowledge (Religion)",
+    "Sense Motive",
+    "Spellcraft",
+  },
+  Conditions={
+    function (character)
+      return ((character.Skill("Knowledge (Arcana)").ranks >= 3 and 1 or 0) + (character.Skill("Knowledge (Religion)").ranks >= 3 and 1 or 0)) >= 2
+    end,
+    function (character)
+      return (character.SpellCount("Divine", 2)) >= 1
+    end,
+    function (character)
+      return (character.SpellCount("Arcane", 2)) >= 1
+    end,
   },
   Types={
     "PC",
     "Prestige",
   },
-  HitDie=6,
-  MaxLevel=10,
-  SkillPointsPerLevel="2",
+  Facts={
+    ClassType="PC",
+    Abb="Myt",
+  },
   Levels={
     {
       Level="1",
@@ -5287,18 +6257,101 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Pathfinder Chronicler",
-  Facts={
-    ClassType="PC",
-    Abb="PfC",
-  },
+  HitDie=8,
+  MaxLevel=10,
+  SkillPointsPerLevel=Formula("8"),
   SourcePage="p.388",
-  Conditions={
-    function (character)
-      return ((character.Skill("Linguistics").ranks >= 3 and 1 or 0) + (character.Skill("Perform (Oratory)").ranks >= 5 and 1 or 0) + (character.Skill("Profession (Scribe)").ranks >= 5 and 1 or 0)) >= 3
-    end,
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
+      Variables={
+        "BASE.Will",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
+      Variables={
+        "BASE.Reflex",
+        "BASE.Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABModerate",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "PathfinderChroniclerLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Will",
+      },
+    },
   },
   ClassSkills={
     "Appraise",
@@ -5317,102 +6370,19 @@ DefineClass({
     "Survival",
     "Use Magic Device",
   },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
-      Type={
-        Name="Base",
-        Replace=true,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Will",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-        "BASE.Fortitude",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABModerate",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "PathfinderChroniclerLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
+  Conditions={
+    function (character)
+      return ((character.Skill("Linguistics").ranks >= 3 and 1 or 0) + (character.Skill("Perform (Oratory)").ranks >= 5 and 1 or 0) + (character.Skill("Profession (Scribe)").ranks >= 5 and 1 or 0)) >= 3
+    end,
   },
   Types={
     "PC",
     "Prestige",
   },
-  HitDie=8,
-  MaxLevel=10,
-  SkillPointsPerLevel="8",
+  Facts={
+    ClassType="PC",
+    Abb="PfC",
+  },
   Levels={
     {
       Level="1",
@@ -5427,23 +6397,101 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Shadowdancer",
-  Facts={
-    ClassType="PC",
-    Abb="Shd",
-  },
+  HitDie=8,
+  MaxLevel=10,
+  SkillPointsPerLevel=Formula("6"),
   SourcePage="p.391",
-  Conditions={
-    function (character)
-      return 3 <= #filter(character.Abilities, function (ability)
-        return ability.Category == "FEAT" and (ability.Name == "Combat Reflexes" or ability.Name == "Dodge" or ability.Name == "Mobility")
-      end)
-    end,
-    function (character)
-      return ((character.Skill("Stealth").ranks >= 5 and 1 or 0) + (character.Skill("Perform (Dance)").ranks >= 2 and 1 or 0)) >= 2
-    end,
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
+      Variables={
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABModerate",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "ShadowdancerLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Will",
+      },
+    },
   },
   ClassSkills={
     "Acrobatics",
@@ -5456,102 +6504,24 @@ DefineClass({
     "Sleight of Hand",
     "Stealth",
   },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
-      Type={
-        Name="Base",
-        Replace=true,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Reflex",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/2"),
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Will",
-      },
-      Formula=Formula("(classlevel(\"APPLIEDAS=NONEPIC\")+1)/3"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABModerate",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ShadowdancerLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
+  Conditions={
+    function (character)
+      return 3 <= #filter(character.Abilities, function (ability)
+        return ability.Category == "FEAT" and (ability.Name == "Combat Reflexes" or ability.Name == "Dodge" or ability.Name == "Mobility")
+      end)
+    end,
+    function (character)
+      return ((character.Skill("Stealth").ranks >= 5 and 1 or 0) + (character.Skill("Perform (Dance)").ranks >= 2 and 1 or 0)) >= 2
+    end,
   },
   Types={
     "PC",
     "Prestige",
   },
-  HitDie=8,
-  MaxLevel=10,
-  SkillPointsPerLevel="6",
+  Facts={
+    ClassType="PC",
+    Abb="Shd",
+  },
   Levels={
     {
       Level="1",
@@ -5566,175 +6536,15 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Adept",
-  SpellStat="WIS",
-  SpellListChoiceCount="1",
-  SpellListChoices={
-    "Adept",
-  },
-  Facts={
-    ClassType="NPC",
-    Abb="Adp",
-    SpellType="Divine",
-  },
-  SourcePage="p.448",
-  ClassSkills={
-    "TYPE=Craft",
-    "Handle Animal",
-    "Heal",
-    "TYPE=Knowledge",
-    "TYPE=Profession",
-    "Spellcraft",
-    "Survival",
-  },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
-      Type={
-        Name="Base",
-        Replace=true,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABPoor",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "AdeptLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_BL_Stripped_Adept",
-      },
-      Formula=Formula("Caster_Level_Adept-CasterLevelBLAdept"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Adept",
-      },
-      Formula=Formula("AdeptLVL+Caster_Level_Bonus+CasterLevelBLAdept"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "CasterLevelBL_x_Adept",
-      },
-      Formula=Formula("charbonusto(\"PCLEVEL\",\"Adept\")"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Caster_Level_Highest__Divine",
-      },
-      Formula=Formula("Caster_Level_Adept"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="CASTERLEVEL",
-      Variables={
-        "Adept",
-      },
-      Formula=Formula("Caster_Level_BL_Stripped_Adept"),
-    },
-  },
-  Types={
-    "Base",
-    "NPC",
-  },
   HitDie=6,
   MaxLevel=20,
-  SkillPointsPerLevel="2",
+  SkillPointsPerLevel=Formula("2"),
+  SourcePage="p.448",
+  SpellListChoiceCount=1,
+  SpellStat="WIS",
   AutomaticKnownSpells={
     {
       Level=0,
@@ -5754,6 +6564,166 @@ DefineClass({
     {
       Level=5,
     },
+  },
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABPoor",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "AdeptLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("Caster_Level_Adept-CasterLevelBLAdept"),
+      Variables={
+        "Caster_Level_BL_Stripped_Adept",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("AdeptLVL+Caster_Level_Bonus+CasterLevelBLAdept"),
+      Variables={
+        "Caster_Level_Adept",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("charbonusto(\"PCLEVEL\",\"Adept\")"),
+      Variables={
+        "CasterLevelBL_x_Adept",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("Caster_Level_Adept"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "Caster_Level_Highest__Divine",
+      },
+    },
+    {
+      Category="CASTERLEVEL",
+      Formula=Formula("Caster_Level_BL_Stripped_Adept"),
+      Variables={
+        "Adept",
+      },
+    },
+  },
+  ClassSkills={
+    "TYPE=Craft",
+    "Handle Animal",
+    "Heal",
+    "TYPE=Knowledge",
+    "TYPE=Profession",
+    "Spellcraft",
+    "Survival",
+  },
+  SpellListChoices={
+    "Adept",
+  },
+  Types={
+    "Base",
+    "NPC",
+  },
+  Facts={
+    ClassType="NPC",
+    Abb="Adp",
+    SpellType="Divine",
   },
   Levels={
     {
@@ -5941,12 +6911,16 @@ DefineClass({
     {
       Level="1",
       SpellsPerDay={
-        3, 1, },
+        Formula("3"),
+        Formula("1"),
+      },
     },
     {
       Level="2",
       SpellsPerDay={
-        3, 1, },
+        Formula("3"),
+        Formula("1"),
+      },
       Abilities={
         {
           Category="Special Ability",
@@ -5959,112 +6933,290 @@ DefineClass({
       Bonuses={
         {
           Category="VAR",
+          Formula=Formula("CL"),
           Variables={
             "FamiliarMasterLVL",
           },
-          Formula=Formula("CL"),
         },
       },
     },
     {
       Level="3",
       SpellsPerDay={
-        3, 2, },
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="4",
       SpellsPerDay={
-        3, 2, 0, },
+        Formula("3"),
+        Formula("2"),
+        Formula("0"),
+      },
     },
     {
       Level="5",
       SpellsPerDay={
-        3, 2, 1, },
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="6",
       SpellsPerDay={
-        3, 2, 1, },
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="7",
       SpellsPerDay={
-        3, 3, 2, },
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="8",
       SpellsPerDay={
-        3, 3, 2, 0, },
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+        Formula("0"),
+      },
     },
     {
       Level="9",
       SpellsPerDay={
-        3, 3, 2, 1, },
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="10",
       SpellsPerDay={
-        3, 3, 2, 1, },
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="11",
       SpellsPerDay={
-        3, 3, 3, 2, },
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="12",
       SpellsPerDay={
-        3, 3, 3, 2, 0, },
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+        Formula("0"),
+      },
     },
     {
       Level="13",
       SpellsPerDay={
-        3, 3, 3, 2, 1, },
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="14",
       SpellsPerDay={
-        3, 3, 3, 2, 1, },
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="15",
       SpellsPerDay={
-        3, 3, 3, 3, 2, },
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="16",
       SpellsPerDay={
-        3, 3, 3, 3, 2, 0, },
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+        Formula("0"),
+      },
     },
     {
       Level="17",
       SpellsPerDay={
-        3, 3, 3, 3, 2, 1, },
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="18",
       SpellsPerDay={
-        3, 3, 3, 3, 2, 1, },
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+        Formula("1"),
+      },
     },
     {
       Level="19",
       SpellsPerDay={
-        3, 3, 3, 3, 3, 2, },
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
     {
       Level="20",
       SpellsPerDay={
-        3, 3, 3, 3, 3, 2, },
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("3"),
+        Formula("2"),
+      },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Aristocrat",
-  Facts={
-    ClassType="NPC",
-    Abb="Ari",
-  },
+  HitDie=8,
+  MaxLevel=20,
+  SkillPointsPerLevel=Formula("4"),
   SourcePage="p.449",
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+        Stack=false,
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABModerate",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "AristocratLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Will",
+      },
+    },
+  },
   ClassSkills={
     "Appraise",
     "Bluff",
@@ -6083,112 +7235,14 @@ DefineClass({
     "Swim",
     "Survival",
   },
-  Bonuses={
-    {
-      Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
-      Type={
-        Name="Base",
-        Replace=true,
-        Stack=false,
-      },
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateBABProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="SAVE",
-      Variables={
-        "BASE.Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseAlternateSaveProgression"] == 0)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassBABModerate",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalBAB"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "AristocratLVL",
-      },
-      Formula=Formula("CL"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Fortitude",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSavePoor_Reflex",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ClassSaveGood_Will",
-      },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
-    },
-  },
   Types={
     "Base",
     "NPC",
   },
-  HitDie=8,
-  MaxLevel=20,
-  SkillPointsPerLevel="4",
+  Facts={
+    ClassType="NPC",
+    Abb="Ari",
+  },
   Levels={
     {
       Level="1",
@@ -6239,33 +7293,16 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Commoner",
-  WeaponBonusProficiencySelections={
-    {
-      "TYPE=Simple", 
-    }},
-  Facts={
-    ClassType="NPC",
-    Abb="Com",
-  },
+  HitDie=6,
+  MaxLevel=20,
+  SkillPointsPerLevel=Formula("2"),
   SourcePage="p.449",
-  ClassSkills={
-    "Climb",
-    "TYPE=Craft",
-    "Handle Animal",
-    "Perception",
-    "TYPE=Profession",
-    "Ride",
-    "Swim",
-  },
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2"),
       Type={
         Name="Base",
@@ -6277,84 +7314,102 @@ DefineClass({
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
+      Variables={
+        "BASEAB",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Reflex",
-        "BASE.Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Reflex",
+        "BASE.Will",
+      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassBABPoor",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
+      Variables={
+        "ClassBABPoor",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("CL"),
       Variables={
         "CommonerLVL",
       },
-      Formula=Formula("CL"),
     },
     {
       Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
       Variables={
         "ClassSavePoor_Fortitude",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassSavePoor_Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
+      Variables={
+        "ClassSavePoor_Will",
+      },
     },
+  },
+  ClassSkills={
+    "Climb",
+    "TYPE=Craft",
+    "Handle Animal",
+    "Perception",
+    "TYPE=Profession",
+    "Ride",
+    "Swim",
   },
   Types={
     "Base",
     "NPC",
   },
-  HitDie=6,
-  MaxLevel=20,
-  SkillPointsPerLevel="2",
+  WeaponBonusProficiencySelections={
+    {
+      "TYPE=Simple",
+    },
+  },
+  Facts={
+    ClassType="NPC",
+    Abb="Com",
+  },
   Levels={
     {
       Level="1",
@@ -6370,20 +7425,16 @@ DefineClass({
       },
     },
   },
-})
-DefineClass({
+}))
+DefineClass(DefineClass({
   Name="Expert",
-  Facts={
-    ClassType="NPC",
-    Abb="Exp",
-  },
+  HitDie=8,
+  MaxLevel=20,
+  SkillPointsPerLevel=Formula("6"),
   SourcePage="p.450",
   Bonuses={
     {
       Category="COMBAT",
-      Variables={
-        "BASEAB",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
       Type={
         Name="Base",
@@ -6395,85 +7446,88 @@ DefineClass({
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
+      Variables={
+        "BASEAB",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Fortitude",
-        "BASE.Reflex",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Reflex",
+      },
     },
     {
       Category="SAVE",
-      Variables={
-        "BASE.Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
         function (character)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
+      Variables={
+        "BASE.Will",
+      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassBABModerate",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
+      Variables={
+        "ClassBABModerate",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("CL"),
       Variables={
         "ExpertLVL",
       },
-      Formula=Formula("CL"),
     },
     {
       Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
       Variables={
         "ClassSavePoor_Fortitude",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
-    },
-    {
-      Category="VAR",
       Variables={
         "ClassSavePoor_Reflex",
       },
-      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
-      Conditions={
-        function (character)
-          return (character.Variables["UseFractionalSave"] == 1)
-        end,
-      },
     },
     {
       Category="VAR",
-      Variables={
-        "ClassSaveGood_Will",
-      },
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
         function (character)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
+      },
+      Variables={
+        "ClassSaveGood_Will",
       },
     },
   },
@@ -6481,9 +7535,10 @@ DefineClass({
     "Base",
     "NPC",
   },
-  HitDie=8,
-  MaxLevel=20,
-  SkillPointsPerLevel="6",
+  Facts={
+    ClassType="NPC",
+    Abb="Exp",
+  },
   Levels={
     {
       Level="1",
@@ -6521,12 +7576,12 @@ DefineClass({
       Bonuses={
         {
           Category="ABILITYPOOL",
+          Formula=Formula("10"),
           Variables={
             "Expert Class Skills",
           },
-          Formula=Formula("10"),
         },
       },
     },
   },
-})
+}))

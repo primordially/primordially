@@ -1,81 +1,54 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Collections.Generic;
 using System.Linq;
-using Primordially.LstToLua.Conditions;
 
 namespace Primordially.LstToLua
 {
-    internal class AutomaticLanguage : ConditionalObject
+    internal sealed class AutomaticLanguage : LuaObject
     {
-        public bool Clear { get; }
-        public List<string> Selectors{ get; }
-        public AutomaticLanguage(List<string> selectors, bool clear)
+        public List<string> Selectors { get; } = new List<string>();
+        public AutomaticLanguage(TextSpan value)
         {
-            Selectors = selectors;
-            Clear = clear;
-        }
-
-        public static bool TryParse(TextSpan field, [NotNullWhen(true)] out AutomaticLanguage? result)
-        {
-            if (!field.TryRemovePrefix("AUTO:LANG|", out var value))
+            AddPropertyDefinitions(() => new []
             {
-                result = null;
-                return false;
-            }
-
-            var selectors = new List<string>();
-            var conditions = new List<Condition>();
-            var clear = false;
-
+                CommonProperties.Conditions,
+            });
             foreach (var part in value.Split('|'))
             {
-                if (part.TryRemovePrefix("TYPE=", out var type) ||
-                    part.TryRemovePrefix("!TYPE=", out type))
-                {
-                    var selector = $"language.IsType(\"{type.Value}\")";
-                    if (part.StartsWith("!"))
-                    {
-                        selector = "not " + selector;
-                    }
-                    selectors.Add(selector);
-                }
-                else if (part.Value == "ALL")
-                {
-                    selectors.Add("true");
-                }
-                else if (part.Value == ".CLEAR")
-                {
-                    clear = true;
-                    selectors.Clear();
-                }
-                else if (Condition.TryParse(part, out var condition))
-                {
-                    conditions.Add(condition);
-                }
-                else
-                {
-                    selectors.Add($"stringMatch(language.Name, \"{part.Value}\")");
-                }
+                AddField(part);
             }
-
-            result = new AutomaticLanguage(selectors, clear);
-            foreach (var condition in conditions)
-                result.Conditions.Add(condition);
-            return true;
         }
 
         public override void AddField(TextSpan field)
         {
-            throw new NotSupportedException();
+            if (!field.StartsWith("PRE"))
+            {
+                if (field.TryRemovePrefix("TYPE=", out var type) ||
+                    field.TryRemovePrefix("!TYPE=", out type))
+                {
+                    var types = type.Value.Split('.');
+                    var selector = string.Join(" or ", types.Select(t => $"language.IsType(\"{t}\")"));
+                    if (field.StartsWith("!"))
+                    {
+                        selector = $"not ({selector})";
+                    }
+                    Selectors.Add(selector);
+                }
+                else if (field.Value == "ALL")
+                {
+                    Selectors.Add("true");
+                }
+                else
+                {
+                    Selectors.Add($"stringMatch(language.Name, \"{field.Value}\")");
+                }
+
+                return;
+            }
+            base.AddField(field);
         }
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            if (Clear)
-            {
-                output.WriteKeyValue("Clear", true);
-            }
             output.Write("Selector=");
             output.WriteStartFunction("language");
             output.Write($"return {string.Join(" or ", Selectors)}\n");

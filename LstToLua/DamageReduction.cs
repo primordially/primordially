@@ -1,23 +1,27 @@
 ﻿namespace Primordially.LstToLua
 {
-    internal class DamageReduction : ConditionalObject
+    internal sealed class DamageReduction : LuaObject
     {
-        public string? Value { get; private set; }
+        public DamageReduction(TextSpan value)
+        {
+            AddPropertyDefinitions(() => new []
+            {
+                CommonProperties.Conditions,
+            });
+            foreach (var part in value.Split('|'))
+            {
+                AddField(part);
+            }
+        }
 
         public override void AddField(TextSpan field)
         {
-            if (Value == null)
+            if (!Properties.ContainsKey("Value"))
             {
-                Value = field.Value;
+                Properties["Value"] = field.Value;
                 return;
             }
             base.AddField(field);
-        }
-
-        protected override void DumpMembers(LuaTextWriter output)
-        {
-            output.WriteKeyValue("Value", Value);
-            base.DumpMembers(output);
         }
     }
 }

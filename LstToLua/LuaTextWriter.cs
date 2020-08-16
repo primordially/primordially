@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -70,6 +70,30 @@ namespace Primordially.LstToLua
             Write("\n");
         }
 
+        public void WriteValue(object? value)
+        {
+            if (value == null)
+                Write("nil");
+            else if (value is string str)
+                WriteValue(str.AsSpan());
+            else if (value is int i)
+                WriteValue(i);
+            else if (value is double d)
+                WriteValue(d);
+            else if (value is bool b)
+                WriteValue(b);
+            else if (value is IDumpable dump)
+                WriteValue(dump);
+            else if (value is IDictionary dict)
+                WriteValue(dict);
+            else if (value is IEnumerable e)
+                WriteValue(e);
+            else if (value.GetType().IsEnum)
+                WriteValue(value.ToString().AsSpan());
+            else 
+                throw new NotSupportedException(value.GetType().FullName);
+        }
+
         public void WriteValue(ReadOnlySpan<char> value)
         {
             Write("\"");
@@ -106,6 +130,11 @@ namespace Primordially.LstToLua
             }
         }
 
+        public void WriteValue(IDumpable value)
+        {
+            value.Dump(this);
+        }
+
         public void WriteValue(bool value)
         {
             Write(value.ToString().ToLowerInvariant());
@@ -125,61 +154,12 @@ namespace Primordially.LstToLua
             }
         }
 
-        public void WriteKeyValue(ReadOnlySpan<char> key, IDumpable? value)
+        public void WriteProperty(ReadOnlySpan<char> key, object? value)
         {
             if (value == null)
                 return;
-            WriteKey(key);
-            Write("=");
-            value.Dump(this);
-            Write(",\n");
-        }
-
-        public void WriteKeyValue(ReadOnlySpan<char> key, string? value)
-        {
-            if (value == null)
+            if (value is IEnumerable e && !e.OfType<object>().Any())
                 return;
-            WriteKey(key);
-            Write("=");
-            WriteValue(value);
-            Write(",\n");
-        }
-        public void WriteKeyValue(ReadOnlySpan<char> key, int? value)
-        {
-            if (value.HasValue)
-                WriteKeyValue(key, value.Value);
-        }
-
-        public void WriteKeyValue(ReadOnlySpan<char> key, int value)
-        {
-            WriteKey(key);
-            Write("=");
-            WriteValue(value);
-            Write(",\n");
-        }
-
-        public void WriteKeyValue(ReadOnlySpan<char> key, double? value)
-        {
-            if (value.HasValue)
-                WriteKeyValue(key, value.Value);
-        }
-
-        public void WriteKeyValue(ReadOnlySpan<char> key, double value)
-        {
-            WriteKey(key);
-            Write("=");
-            WriteValue(value);
-            Write(",\n");
-        }
-
-        public void WriteKeyValue(ReadOnlySpan<char> key, bool? value)
-        {
-            if (value.HasValue)
-                WriteKeyValue(key, value.Value);
-        }
-
-        public void WriteKeyValue(ReadOnlySpan<char> key, bool value)
-        {
             WriteKey(key);
             Write("=");
             WriteValue(value);
@@ -204,7 +184,7 @@ namespace Primordially.LstToLua
 
         public void WriteEndObject()
         {
-            _indent = _indent[0..^2];
+            _indent = _indent[..^2];
             Write("}");
         }
 
@@ -218,41 +198,38 @@ namespace Primordially.LstToLua
 
         public void WriteEndFunction()
         {
-            _indent = _indent[0..^2];
+            _indent = _indent[..^2];
             Write("end");
         }
 
-        public void WriteListItems(IEnumerable<object> items)
+        public void WriteValue(IDictionary dict)
         {
+            WriteStartObject();
+            foreach (string? key in dict.Keys)
+            {
+                if (key == null)
+                    continue;
+                WriteProperty(key, dict[key]);
+            }
+            WriteEndObject();
+        }
+
+        public void WriteValue(IEnumerable items)
+        {
+            WriteStartObject();
             foreach (var item in items)
             {
-                if (item is int value)
+                WriteValue(item);
+                if (item is int || item is double)
                 {
-                    WriteValue(value);
                     Write(", ");
-                }
-                else if (item is IDumpable dmp)
-                {
-                    dmp.Dump(this);
-                    Write(",\n");
                 }
                 else
                 {
-                    WriteValue(item.ToString());
                     Write(",\n");
                 }
             }
-        }
-
-        public void WriteListValue(ReadOnlySpan<char> name, IEnumerable<object> items)
-        {
-            if (items.Any())
-            {
-                WriteObjectValue(name, () =>
-                {
-                    WriteListItems(items);
-                });
-            }
+            WriteEndObject();
         }
     }
 }

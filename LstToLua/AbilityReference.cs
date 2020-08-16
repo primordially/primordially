@@ -1,71 +1,60 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Primordially.LstToLua.Conditions;
+﻿using System.Collections.Generic;
 
 namespace Primordially.LstToLua
 {
-    internal class AbilityReference : ConditionalObject
+    internal sealed class AbilityReference : LuaObject
     {
-        public AbilityReference(string category, string nature, List<string> names, List<string> types)
+        public string? Category { get; private set; }
+        public string? Nature { get; private set; }
+        public List<string> Names { get; } = new List<string>();
+        public List<string> Types { get; } = new List<string>();
+
+        public AbilityReference(TextSpan value)
         {
-            Category = category;
-            Nature = nature;
-            Names = names;
-            Types = types;
-        }
-
-        public string Category { get; }
-        public string Nature { get; }
-        public List<string> Names { get; }
-        public List<string> Types { get; }
-
-        public static AbilityReference Parse(TextSpan value)
-        {
-            var parts = value.Split('|').ToArray();
-            if (parts.Length < 3)
+            AddPropertyDefinitions(() => new []
             {
-                throw new ParseFailedException(value, "Unable to parse AbilityReference");
-            }
-
-            var category = parts[0].Value;
-            var nature = parts[1].Value;
-            var conditions = new List<Condition>();
-            var types = new List<string>();
-            var names = new List<string>();
-            foreach (var part in parts.Skip(2))
+                CommonProperties.Conditions,
+            });
+            foreach (var part in value.Split('|'))
             {
-                if (Condition.TryParse(part, out var condition))
-                {
-                    conditions.Add(condition);
-                }
-                else if (part.TryRemovePrefix("TYPE=", out var type))
-                {
-                    types.Add(type.Value);
-                }
-                else
-                {
-                    names.Add(part.Value);
-                }
+                AddField(part);
             }
-
-            var result = new AbilityReference(category, nature, names, types);
-            foreach (var condition in conditions)
-                result.Conditions.Add(condition);
-            return result;
         }
 
         public override void AddField(TextSpan field)
         {
-            throw new NotSupportedException();
+            if (Category == null)
+            {
+                Category = field.Value;
+                return;
+            }
+
+            if (Nature == null)
+            {
+                Nature = field.Value;
+                return;
+            }
+
+            if (!field.StartsWith("PRE") && !field.StartsWith("!PRE"))
+            {
+                if (field.TryRemovePrefix("TYPE=", out field))
+                {
+                    Types.Add(field.Value);
+                    return;
+                }
+
+                Names.Add(field.Value);
+                return;
+            }
+            base.AddField(field);
         }
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteKeyValue("Category", Category);
-            output.WriteKeyValue("Nature", Nature);
-            output.WriteListValue("Names", Names);
-            output.WriteListValue("Types", Types);
+            output.WriteProperty("Category", Category);
+            output.WriteProperty("Nature", Nature);
+            output.WriteProperty("Names", Names);
+            output.WriteProperty("Types", Types);
             base.DumpMembers(output);
         }
     }

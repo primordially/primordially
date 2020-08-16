@@ -40,15 +40,15 @@ namespace Primordially.LstToLua
         {
             if (Any)
             {
-                output.WriteKeyValue("Any", Any);
+                output.WriteProperty("Any", Any);
             }
             if (CasterType != null)
             {
-                output.WriteKeyValue("Type", CasterType);
+                output.WriteProperty("Type", CasterType);
             }
             if (ClassNames != null)
             {
-                output.WriteListValue("ClassNames", ClassNames);
+                output.WriteProperty("ClassNames", ClassNames);
             }
             base.DumpMembers(output);
         }

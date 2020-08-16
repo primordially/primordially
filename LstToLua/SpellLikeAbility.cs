@@ -4,7 +4,7 @@ using Primordially.LstToLua.Conditions;
 
 namespace Primordially.LstToLua
 {
-    internal class SpellLikeAbility : ConditionalObject
+    internal sealed class SpellLikeAbility : LuaObject
     {
         public string Name { get; }
         public string? DC { get; }
@@ -15,23 +15,23 @@ namespace Primordially.LstToLua
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteKeyValue("Name", Name);
-            output.WriteKeyValue("SpellBookName", SpellBookName);
-            output.WriteKeyValue("Times", Times);
-            output.WriteKeyValue("TimeUnit", TimeUnit);
+            output.WriteProperty("Name", Name);
+            output.WriteProperty("SpellBookName", SpellBookName);
+            output.WriteProperty("Times", Times);
+            output.WriteProperty("TimeUnit", TimeUnit);
             if (DC != null)
             {
-                output.WriteKeyValue("DC", DC);
+                output.WriteProperty("DC", DC);
             }
 
             if (CasterLevel != null)
             {
-                output.WriteKeyValue("CasterLevel", CasterLevel);
+                output.WriteProperty("CasterLevel", CasterLevel);
             }
             base.DumpMembers(output);
         }
 
-        private SpellLikeAbility(string name, string? dc, string spellBookName, string times, string timeUnit, string? casterLevel)
+        private SpellLikeAbility(string name, string? dc, string spellBookName, string times, string timeUnit, string? casterLevel, List<Condition> conditions)
         {
             Name = name;
             DC = dc;
@@ -39,6 +39,7 @@ namespace Primordially.LstToLua
             Times = times;
             TimeUnit = timeUnit;
             CasterLevel = casterLevel;
+            Properties["Conditions"] = conditions;
         }
 
         public static IList<SpellLikeAbility> ParseAll(TextSpan value)
@@ -100,9 +101,7 @@ namespace Primordially.LstToLua
 
             return spells.Select(s =>
             {
-                var result = new SpellLikeAbility(s.spell, s.dc, spellBookName, times, timeUnit, casterLevel);
-                foreach (var condition in conditions)
-                    result.Conditions.Add(condition);
+                var result = new SpellLikeAbility(s.spell, s.dc, spellBookName, times, timeUnit, casterLevel, conditions);
                 return result;
             }).ToList();
         }

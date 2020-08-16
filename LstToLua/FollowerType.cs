@@ -1,85 +1,73 @@
 ﻿using System.Collections.Generic;
-using Primordially.LstToLua.Conditions;
 
 namespace Primordially.LstToLua
 {
-    internal class FollowerType : ConditionalObject
+    internal sealed class FollowerType : LuaObject
     {
-        public string Type { get; }
-        public List<string> FollowerConditions { get; }
-        public int FollowerLevelAdjustment { get; }
-
-        private FollowerType(string type, List<string> followerConditions, int followerLevelAdjustment)
-        {
-            Type = type;
-            FollowerConditions = followerConditions;
-            FollowerLevelAdjustment = followerLevelAdjustment;
-        }
+        public string? Type { get; private set; }
+        public List<string> FollowerConditions { get; } = new List<string>();
+        public int FollowerLevelAdjustment { get; private set; }
 
         protected override void DumpMembers(LuaTextWriter output)
         {
+            output.WriteProperty("Type", Type);
             output.Write("IsValidFollower=");
             output.WriteStartFunction("follower");
-            output.Write($"return {string.Join(" or ", FollowerConditions)}");
+            output.Write($"return {string.Join(" or ", FollowerConditions)}\n");
             output.WriteEndFunction();
             output.Write(",\n");
-            output.WriteKeyValue("FollowerLevelAdjustment", FollowerLevelAdjustment);
+            output.WriteProperty("FollowerLevelAdjustment", FollowerLevelAdjustment);
             base.DumpMembers(output);
         }
 
-        public static FollowerType Parse(TextSpan field)
+        public FollowerType(TextSpan value)
         {
-            string? type = null;
-            int followerLevelAdjustment = 0;
-            var conditions = new List<Condition>();
-            var followerConditions = new List<string>();
-            foreach (var part in field.Split('|'))
+            AddPropertyDefinitions(() => new []
             {
-                if (type == null)
-                {
-                    type = part.Value;
-                    continue;
-                }
-                if (Condition.TryParse(part, out var condition))
-                {
-                    conditions.Add(condition);
-                    continue;
-                }
+                CommonProperties.Conditions,
+            });
+            foreach (var part in value.Split('|'))
+            {
+                AddField(part);
+            }
+        }
 
-                foreach (var subPart in part.Split(','))
-                {
-                    if (subPart.TryRemovePrefix("RACETYPE=", out var raceType))
-                    {
-                        followerConditions.Add($"follower.RaceType == \"{raceType.Value}\"");
-                    }
-                    else if (subPart.TryRemovePrefix("RACESUBTYPE=", out var raceSubType))
-                    {
-                        followerConditions.Add($"follower.RaceSubType == \"{raceSubType.Value}\"");
-                    }
-                    else if (subPart.TryRemovePrefix("FOLLOWERADJUSTMENT:", out var adjustment))
-                    {
-                        followerLevelAdjustment = Helpers.ParseInt(adjustment);
-                    }
-                    else if (subPart.Value == "ANY")
-                    {
-                        followerConditions.Add("true");
-                    }
-                    else
-                    {
-                        followerConditions.Add($"follower.Name == \"{subPart.Value}\"");
-                    }
-                }
+        public override void AddField(TextSpan field)
+        {
+            if (Type == null)
+            {
+                Type = field.Value;
+                return;
             }
 
-            if (type == null)
-            {
-                throw new ParseFailedException(field, "Unable to parse COMPANIONLIST");
-            }
+            base.AddField(field);
+        }
 
-            var result = new FollowerType(type, followerConditions, followerLevelAdjustment);
-            foreach (var condition in conditions)
-                result.Conditions.Add(condition);
-            return result;
+        protected override void UnknownField(TextSpan field)
+        {
+            foreach (var subPart in field.Split(','))
+            {
+                if (subPart.TryRemovePrefix("RACETYPE=", out var raceType))
+                {
+                    FollowerConditions.Add($"follower.RaceType == \"{raceType.Value}\"");
+                }
+                else if (subPart.TryRemovePrefix("RACESUBTYPE=", out var raceSubType))
+                {
+                    FollowerConditions.Add($"follower.RaceSubType == \"{raceSubType.Value}\"");
+                }
+                else if (subPart.TryRemovePrefix("FOLLOWERADJUSTMENT:", out var adjustment))
+                {
+                    FollowerLevelAdjustment = Helpers.ParseInt(adjustment);
+                }
+                else if (subPart.Value == "ANY")
+                {
+                    FollowerConditions.Add("true");
+                }
+                else
+                {
+                    FollowerConditions.Add($"follower.Name == \"{subPart.Value}\"");
+                }
+            }
         }
     }
 }
