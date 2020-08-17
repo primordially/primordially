@@ -46,6 +46,8 @@ namespace Primordially.LstToLua.Choosers
                     return new ClassChooser().Process(rest);
                 case "NUMBER":
                     return new NumberChooser().Process(rest);
+                case "TEMPLATE":
+                    return new TemplateChooser().Process(rest);
                 case "WEAPONPROFICIENCY":
                     return new WeaponProficiencyChooser().Process(rest);
 

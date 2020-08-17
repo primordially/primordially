@@ -3,26 +3,32 @@ using System.Linq;
 
 namespace Primordially.LstToLua
 {
-    internal class FormattedString : LuaObject
+    internal sealed class FormattedString : LuaObject
     {
-        public string Format { get; }
-        public List<Formula> Arguments { get; }
+        public string? Format { get; private set; }
+        public List<Formula> Arguments { get; } = new List<Formula>();
 
         public FormattedString(TextSpan value)
         {
-            Format = null!;
-            Arguments = new List<Formula>();
+            AddPropertyDefinitions(() => new[]
+            {
+                CommonProperties.Conditions,
+            });
             foreach (var part in value.Split('|'))
             {
-                if (Format == null)
-                {
-                    Format = part.Value;
-                }
-                else
-                {
-                    Arguments.Add(part.Value);
-                }
+                AddField(part);
             }
+        }
+
+        protected override void UnknownField(TextSpan field)
+        {
+            if (Format == null)
+            {
+                Format = field.Value;
+                return;
+            }
+
+            Arguments.Add(field.Value);
         }
 
         protected override void DumpMembers(LuaTextWriter output)

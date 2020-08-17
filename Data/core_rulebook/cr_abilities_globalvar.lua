@@ -225,8 +225,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -250,8 +248,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -275,8 +271,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -300,8 +294,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -325,8 +317,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -350,8 +340,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -375,8 +363,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -400,8 +386,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -425,8 +409,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -450,8 +432,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -475,8 +455,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -498,8 +476,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -521,8 +497,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -544,8 +518,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -567,8 +539,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -590,8 +560,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -613,8 +581,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -636,8 +602,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -659,8 +623,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -682,8 +644,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -705,8 +665,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -728,8 +686,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -913,8 +869,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -938,8 +892,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -963,8 +915,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -988,8 +938,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1013,8 +961,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1038,8 +984,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1063,8 +1007,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1086,8 +1028,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1109,8 +1049,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1132,8 +1070,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1155,8 +1091,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1178,8 +1112,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1201,8 +1133,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1224,8 +1154,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1247,8 +1175,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1486,8 +1412,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1511,8 +1435,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1536,8 +1458,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1561,8 +1481,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1586,8 +1504,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1611,8 +1527,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1636,8 +1550,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1661,8 +1573,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1686,8 +1596,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1711,8 +1619,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1734,8 +1640,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1757,8 +1661,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1780,8 +1682,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1803,8 +1703,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1826,8 +1724,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1849,8 +1745,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1872,8 +1766,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1895,8 +1787,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1918,8 +1808,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1941,8 +1829,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1964,8 +1850,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2167,8 +2051,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2192,8 +2074,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2217,8 +2097,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2242,8 +2120,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2267,8 +2143,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2292,8 +2166,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2317,8 +2189,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2340,8 +2210,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2363,8 +2231,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2386,8 +2252,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2409,8 +2273,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2432,8 +2294,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2455,8 +2315,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2478,8 +2336,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2501,8 +2357,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2524,8 +2378,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2709,8 +2561,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2734,8 +2584,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2759,8 +2607,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2784,8 +2630,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2809,8 +2653,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2834,8 +2676,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2857,8 +2697,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2880,8 +2718,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2903,8 +2739,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2926,8 +2760,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2949,8 +2781,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2972,8 +2802,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2995,8 +2823,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3018,8 +2844,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3203,8 +3027,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3228,8 +3050,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3253,8 +3073,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3278,8 +3096,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3303,8 +3119,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3328,8 +3142,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3353,8 +3165,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3376,8 +3186,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3399,8 +3207,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3422,8 +3228,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3445,8 +3249,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3468,8 +3270,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3491,8 +3291,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3514,8 +3312,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3537,8 +3333,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3668,8 +3462,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3693,8 +3485,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3718,8 +3508,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3743,8 +3531,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3766,8 +3552,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3789,8 +3573,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3812,8 +3594,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3835,8 +3615,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3858,8 +3636,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4025,8 +3801,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4048,8 +3822,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4071,8 +3843,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4094,8 +3864,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4117,8 +3885,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4140,8 +3906,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4163,8 +3927,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4186,8 +3948,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4209,8 +3969,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4232,8 +3990,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4255,8 +4011,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4278,8 +4032,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4301,8 +4053,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4324,8 +4074,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4347,8 +4095,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4370,8 +4116,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4393,8 +4137,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4416,8 +4158,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4439,8 +4179,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4462,8 +4200,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4485,8 +4221,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4508,8 +4242,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4531,8 +4263,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4554,8 +4284,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4577,8 +4305,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4600,8 +4326,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4623,8 +4347,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4646,8 +4368,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4669,8 +4389,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4692,8 +4410,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4715,8 +4431,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4738,8 +4452,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4761,8 +4473,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4784,8 +4494,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4807,8 +4515,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4830,8 +4536,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4853,8 +4557,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4876,8 +4578,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4899,8 +4599,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4924,8 +4622,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4949,8 +4645,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4974,8 +4668,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4999,8 +4691,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5024,8 +4714,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5049,8 +4737,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5074,8 +4760,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5099,8 +4783,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5124,8 +4806,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5149,8 +4829,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5174,8 +4852,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5199,8 +4875,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5224,8 +4898,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5249,8 +4921,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5274,8 +4944,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5299,8 +4967,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5324,8 +4990,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5349,8 +5013,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5374,8 +5036,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5399,8 +5059,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5424,8 +5082,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5449,8 +5105,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5474,8 +5128,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5499,8 +5151,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5524,8 +5174,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5549,8 +5197,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5574,8 +5220,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5599,8 +5243,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5624,8 +5266,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5649,8 +5289,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5674,8 +5312,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5699,8 +5335,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5724,8 +5358,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5985,8 +5617,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6008,8 +5638,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6031,8 +5659,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6054,8 +5680,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6077,8 +5701,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6100,8 +5722,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6123,8 +5743,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6146,8 +5764,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6169,8 +5785,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6192,8 +5806,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6215,8 +5827,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6238,8 +5848,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6261,8 +5869,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6284,8 +5890,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6307,8 +5911,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6330,8 +5932,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6353,8 +5953,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6376,8 +5974,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6399,8 +5995,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6422,8 +6016,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6445,8 +6037,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6468,8 +6058,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6491,8 +6079,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6514,8 +6100,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6537,8 +6121,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6560,8 +6142,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6583,8 +6163,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6606,8 +6184,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6629,8 +6205,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6652,8 +6226,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6675,8 +6247,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6698,8 +6268,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6721,8 +6289,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6744,8 +6310,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6769,8 +6333,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6794,8 +6356,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6819,8 +6379,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6844,8 +6402,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6869,8 +6425,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6894,8 +6448,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6919,8 +6471,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6944,8 +6494,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6969,8 +6517,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6994,8 +6540,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7019,8 +6563,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7132,8 +6674,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7155,8 +6695,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7178,8 +6716,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7201,8 +6737,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7224,8 +6758,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7247,8 +6779,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7270,8 +6800,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7293,8 +6821,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7316,8 +6842,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7339,8 +6863,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7362,8 +6884,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7385,8 +6905,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7408,8 +6926,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7431,8 +6947,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7454,8 +6968,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7477,8 +6989,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7500,8 +7010,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7523,8 +7031,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7546,8 +7052,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7569,8 +7073,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7592,8 +7094,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7615,8 +7115,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7638,8 +7136,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7663,8 +7159,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7688,8 +7182,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7907,8 +7399,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7930,8 +7420,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7953,8 +7441,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7976,8 +7462,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7999,8 +7483,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8022,8 +7504,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8045,8 +7525,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8068,8 +7546,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8091,8 +7567,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8114,8 +7588,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8137,8 +7609,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8160,8 +7630,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8183,8 +7651,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8206,8 +7672,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8229,8 +7693,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8252,8 +7714,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8275,8 +7735,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8298,8 +7756,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8321,8 +7777,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8344,8 +7798,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8367,8 +7819,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8390,8 +7840,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8413,8 +7861,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8436,8 +7882,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8459,8 +7903,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8482,8 +7924,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8505,8 +7945,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8528,8 +7966,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8551,8 +7987,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8574,8 +8008,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8599,8 +8031,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8624,8 +8054,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8649,8 +8077,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8674,8 +8100,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8699,8 +8123,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8724,8 +8146,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8749,8 +8169,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8774,8 +8192,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8799,8 +8215,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8824,8 +8238,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8847,8 +8259,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8872,8 +8282,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9155,8 +8563,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9178,8 +8584,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9201,8 +8605,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9224,8 +8626,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9247,8 +8647,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9270,8 +8668,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9293,8 +8689,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9316,8 +8710,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9339,8 +8731,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9362,8 +8752,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9385,8 +8773,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9408,8 +8794,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9431,8 +8815,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9454,8 +8836,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9477,8 +8857,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9500,8 +8878,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9523,8 +8899,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9546,8 +8920,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9569,8 +8941,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9592,8 +8962,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9615,8 +8983,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9638,8 +9004,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9661,8 +9025,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9684,8 +9046,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9707,8 +9067,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9730,8 +9088,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9753,8 +9109,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9778,8 +9132,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9803,8 +9155,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9828,8 +9178,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9853,8 +9201,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9878,8 +9224,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9903,8 +9247,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9928,8 +9270,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9953,8 +9293,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9978,8 +9316,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10003,8 +9339,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10028,8 +9362,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10053,8 +9385,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10078,8 +9408,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10103,8 +9431,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10128,8 +9454,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10153,8 +9477,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10178,8 +9500,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10203,8 +9523,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10228,8 +9546,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10253,8 +9569,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10458,8 +9772,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10481,8 +9793,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10504,8 +9814,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10527,8 +9835,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10550,8 +9856,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10573,8 +9877,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10596,8 +9898,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10619,8 +9919,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10642,8 +9940,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10665,8 +9961,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10688,8 +9982,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10711,8 +10003,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10734,8 +10024,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10757,8 +10045,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10780,8 +10066,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10803,8 +10087,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10826,8 +10108,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10849,8 +10129,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10872,8 +10150,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10895,8 +10171,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10958,8 +10232,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10981,8 +10253,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11004,8 +10274,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11027,8 +10295,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11050,8 +10316,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11073,8 +10337,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11096,8 +10358,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11119,8 +10379,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11142,8 +10400,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11165,8 +10421,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11188,8 +10442,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11211,8 +10463,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11234,8 +10484,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11257,8 +10505,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11280,8 +10526,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11303,8 +10547,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11326,8 +10568,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11349,8 +10589,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11372,8 +10610,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11395,8 +10631,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11418,8 +10652,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11441,8 +10673,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11464,8 +10694,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11487,8 +10715,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11510,8 +10736,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11533,8 +10757,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11558,8 +10780,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11583,8 +10803,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11608,8 +10826,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11633,8 +10849,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11658,8 +10872,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11683,8 +10895,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11708,8 +10918,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11733,8 +10941,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11758,8 +10964,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11783,8 +10987,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11808,8 +11010,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11833,8 +11033,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11858,8 +11056,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11883,8 +11079,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11908,8 +11102,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11933,8 +11125,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11958,8 +11148,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -11983,8 +11171,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12008,8 +11194,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12033,8 +11217,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12058,8 +11240,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12083,8 +11263,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12108,8 +11286,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12297,8 +11473,6 @@ ModifyAbility({
       Formula=Formula("10"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Paladin_AuraRange",
@@ -12315,8 +11489,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12338,8 +11510,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12361,8 +11531,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12385,8 +11553,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12408,8 +11574,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12431,8 +11595,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12454,8 +11616,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12479,8 +11639,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12502,8 +11660,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12525,8 +11681,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12548,8 +11702,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12571,8 +11723,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12594,8 +11744,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12617,8 +11765,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12640,8 +11786,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12663,8 +11807,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12686,8 +11828,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12709,8 +11849,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12732,8 +11870,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12755,8 +11891,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12778,8 +11912,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12801,8 +11933,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12824,8 +11954,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12847,8 +11975,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12870,8 +11996,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12893,8 +12017,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12916,8 +12038,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12939,8 +12059,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12962,8 +12080,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -12985,8 +12101,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13008,8 +12122,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13031,8 +12143,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13054,8 +12164,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13077,8 +12185,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13100,8 +12206,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13123,8 +12227,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13146,8 +12248,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13171,8 +12271,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13196,8 +12294,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13221,8 +12317,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13246,8 +12340,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13271,8 +12363,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13296,8 +12386,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13321,8 +12409,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13346,8 +12432,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13371,8 +12455,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13396,8 +12478,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13421,8 +12501,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13446,8 +12524,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13471,8 +12547,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13496,8 +12570,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13748,8 +12820,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13771,8 +12841,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13794,8 +12862,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13817,8 +12883,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13840,8 +12904,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13863,8 +12925,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13886,8 +12946,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13909,8 +12967,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13932,8 +12988,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13955,8 +13009,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -13978,8 +13030,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14001,8 +13051,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14024,8 +13072,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14047,8 +13093,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14070,8 +13114,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14093,8 +13135,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14116,8 +13156,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14139,8 +13177,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14162,8 +13198,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14185,8 +13219,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14208,8 +13240,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14231,8 +13261,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14254,8 +13282,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14277,8 +13303,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14300,8 +13324,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14323,8 +13345,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14346,8 +13366,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14369,8 +13387,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14392,8 +13408,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14415,8 +13429,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14438,8 +13450,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14461,8 +13471,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14484,8 +13492,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14507,8 +13513,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14530,8 +13534,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14555,8 +13557,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14580,8 +13580,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14605,8 +13603,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14630,8 +13626,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14655,8 +13649,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14680,8 +13672,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14705,8 +13695,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14730,8 +13718,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14755,8 +13741,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14780,8 +13764,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14805,8 +13787,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14830,8 +13810,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14855,8 +13833,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14880,8 +13856,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14905,8 +13879,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14930,8 +13902,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14955,8 +13925,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -14980,8 +13948,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15005,8 +13971,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15030,8 +13994,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15055,8 +14017,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15080,8 +14040,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15105,8 +14063,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15130,8 +14086,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15307,8 +14261,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15330,8 +14282,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15353,8 +14303,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15376,8 +14324,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15399,8 +14345,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15422,8 +14366,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15445,8 +14387,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15468,8 +14408,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15491,8 +14429,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15514,8 +14450,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15537,8 +14471,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15560,8 +14492,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15583,8 +14513,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15606,8 +14534,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15629,8 +14555,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15652,8 +14576,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15675,8 +14597,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15698,8 +14618,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15721,8 +14639,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15744,8 +14660,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15767,8 +14681,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15790,8 +14702,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15813,8 +14723,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15836,8 +14744,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15859,8 +14765,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15882,8 +14786,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15905,8 +14807,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15928,8 +14828,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15951,8 +14849,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15974,8 +14870,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -15997,8 +14891,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16020,8 +14912,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16043,8 +14933,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16066,8 +14954,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16089,8 +14975,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16112,8 +14996,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16135,8 +15017,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16158,8 +15038,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16181,8 +15059,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16206,8 +15082,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16231,8 +15105,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16256,8 +15128,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16281,8 +15151,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16306,8 +15174,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16331,8 +15197,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16356,8 +15220,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16381,8 +15243,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16406,8 +15266,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16431,8 +15289,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16456,8 +15312,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16481,8 +15335,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16506,8 +15358,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16531,8 +15381,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16556,8 +15404,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16581,8 +15427,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16606,8 +15450,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16731,8 +15573,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16754,8 +15594,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16777,8 +15615,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16800,8 +15636,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16823,8 +15657,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16846,8 +15678,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16869,8 +15699,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16892,8 +15720,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16915,8 +15741,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16938,8 +15762,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16961,8 +15783,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -16984,8 +15804,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17007,8 +15825,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17030,8 +15846,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17053,8 +15867,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17076,8 +15888,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17099,8 +15909,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17122,8 +15930,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17145,8 +15951,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17168,8 +15972,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17191,8 +15993,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17214,8 +16014,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17237,8 +16035,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17260,8 +16056,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17283,8 +16077,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17306,8 +16098,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17331,8 +16121,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17420,8 +16208,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17443,8 +16229,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17466,8 +16250,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17489,8 +16271,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17512,8 +16292,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17535,8 +16313,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17558,8 +16334,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17581,8 +16355,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17604,8 +16376,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17627,8 +16397,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17650,8 +16418,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17673,8 +16439,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17696,8 +16460,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17719,8 +16481,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17742,8 +16502,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17765,8 +16523,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17788,8 +16544,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17813,8 +16567,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17838,8 +16590,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17863,8 +16613,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17888,8 +16636,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17913,8 +16659,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17938,8 +16682,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17963,8 +16705,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -17988,8 +16728,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18013,8 +16751,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18038,8 +16774,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18063,8 +16797,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18086,8 +16818,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18109,8 +16839,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18132,8 +16860,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18155,8 +16881,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18178,8 +16902,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18201,8 +16923,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18224,8 +16944,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18247,8 +16965,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18270,8 +16986,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18293,8 +17007,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18316,8 +17028,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18339,8 +17049,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18362,8 +17070,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18385,8 +17091,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18408,8 +17112,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18431,8 +17133,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18454,8 +17154,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18477,8 +17175,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18500,8 +17196,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18523,8 +17217,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18546,8 +17238,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18569,8 +17259,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18592,8 +17280,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18615,8 +17301,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18638,8 +17322,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18661,8 +17343,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18684,8 +17364,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18707,8 +17385,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18730,8 +17406,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18753,8 +17427,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18776,8 +17448,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18799,8 +17469,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18822,8 +17490,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18845,8 +17511,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -18868,8 +17532,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)

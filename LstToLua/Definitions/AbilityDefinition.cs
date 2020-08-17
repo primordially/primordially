@@ -64,10 +64,11 @@ namespace Primordially.LstToLua.Definitions
                 CommonProperties.Facts,
                 CommonProperties.AddedSpellCasterLevels,
                 CommonProperties.ChangeWeaponProficiency,
-                Property.Multiple<StatModification>("DEFINESTAT", "StatModifications"),
+                CommonProperties.DefineStat,
                 CommonProperties.Info,
                 CommonProperties.PreText,
                 CommonProperties.NaturalAttacks,
+                CommonProperties.Template,
             });
         }
 
@@ -87,24 +88,6 @@ namespace Primordially.LstToLua.Definitions
                 {
                     Name = field.Value;
                 }
-                return;
-            }
-
-            if (field.TryRemovePrefix("TEMPLATE:ADDCHOICE:", out field))
-            {
-                Properties.GetList<string>("TemplateChoices").AddRange(field.Value.Split('|'));
-                return;
-            }
-
-            if (field.TryRemovePrefix("TEMPLATE:CHOOSE:", out field))
-            {
-                Properties.GetList<string>("TemplateChoices").AddRange(field.Value.Split('|'));
-                return;
-            }
-
-            if (field.TryRemovePrefix("TEMPLATE:", out field))
-            {
-                Properties.GetList<string>("Templates").AddRange(field.Value.Split('|'));
                 return;
             }
 

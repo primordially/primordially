@@ -258,8 +258,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -311,8 +309,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -349,8 +345,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ACCHECK",
@@ -721,8 +715,6 @@ DefineEquipmentModifier({
       Formula=Formula("MIN(%CHOICE,STR)"),
       Type={
         Name="Strength",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -1068,8 +1060,6 @@ DefineEquipmentModifier({
       Formula=Formula("-2"),
       Type={
         Name="CONDITION",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -1331,8 +1321,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1373,8 +1361,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1415,8 +1401,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1457,8 +1441,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1499,8 +1481,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1541,8 +1521,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1583,8 +1561,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1625,8 +1601,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1667,8 +1641,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1709,8 +1681,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1751,8 +1721,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1793,8 +1761,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1835,8 +1801,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1877,8 +1841,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1919,8 +1881,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1961,8 +1921,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -2003,8 +1961,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -2045,8 +2001,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -2087,8 +2041,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -2129,8 +2081,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -2171,8 +2121,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -2250,8 +2198,6 @@ DefineEquipmentModifier({
       Formula=Formula("-1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -2262,8 +2208,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ACCHECK",
@@ -2316,8 +2260,6 @@ DefineEquipmentModifier({
       Formula=Formula("-1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -2328,8 +2270,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ACCHECK",
@@ -2382,8 +2322,6 @@ DefineEquipmentModifier({
       Formula=Formula("-1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -2394,8 +2332,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ACCHECK",
@@ -2445,8 +2381,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -2491,8 +2425,6 @@ DefineEquipmentModifier({
       Formula=Formula("-3"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -2504,7 +2436,6 @@ DefineEquipmentModifier({
       Type={
         Name="Enhancement",
         Replace=true,
-        Stack=false,
       },
       Variables={
         "WEIGHTDIV",
@@ -2516,7 +2447,6 @@ DefineEquipmentModifier({
       Type={
         Name="Enhancement",
         Replace=true,
-        Stack=false,
       },
       Variables={
         "ACCHECK",
@@ -2534,8 +2464,6 @@ DefineEquipmentModifier({
       Formula=Formula("-10"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SPELLFAILURE",
@@ -2591,8 +2519,6 @@ DefineEquipmentModifier({
       Formula=Formula("-3"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -2604,7 +2530,6 @@ DefineEquipmentModifier({
       Type={
         Name="Enhancement",
         Replace=true,
-        Stack=false,
       },
       Variables={
         "WEIGHTDIV",
@@ -2616,7 +2541,6 @@ DefineEquipmentModifier({
       Type={
         Name="Enhancement",
         Replace=true,
-        Stack=false,
       },
       Variables={
         "ACCHECK",
@@ -2634,8 +2558,6 @@ DefineEquipmentModifier({
       Formula=Formula("-10"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SPELLFAILURE",
@@ -2691,8 +2613,6 @@ DefineEquipmentModifier({
       Formula=Formula("-3"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -2704,7 +2624,6 @@ DefineEquipmentModifier({
       Type={
         Name="Enhancement",
         Replace=true,
-        Stack=false,
       },
       Variables={
         "WEIGHTDIV",
@@ -2716,7 +2635,6 @@ DefineEquipmentModifier({
       Type={
         Name="Enhancement",
         Replace=true,
-        Stack=false,
       },
       Variables={
         "ACCHECK",
@@ -2734,8 +2652,6 @@ DefineEquipmentModifier({
       Formula=Formula("-10"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SPELLFAILURE",
@@ -2787,8 +2703,6 @@ DefineEquipmentModifier({
       Formula=Formula("-3"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -2800,7 +2714,6 @@ DefineEquipmentModifier({
       Type={
         Name="Enhancement",
         Replace=true,
-        Stack=false,
       },
       Variables={
         "WEIGHTDIV",
@@ -2812,7 +2725,6 @@ DefineEquipmentModifier({
       Type={
         Name="Enhancement",
         Replace=true,
-        Stack=false,
       },
       Variables={
         "ACCHECK",
@@ -2830,8 +2742,6 @@ DefineEquipmentModifier({
       Formula=Formula("-10"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SPELLFAILURE",
@@ -2882,7 +2792,6 @@ DefineEquipmentModifier({
       Type={
         Name="Enhancement",
         Replace=true,
-        Stack=false,
       },
       Variables={
         "WEIGHTDIV",
@@ -2893,8 +2802,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -2910,8 +2817,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -2971,8 +2876,6 @@ DefineEquipmentModifier({
       Formula=Formula("-2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -2990,8 +2893,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3046,8 +2947,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3108,8 +3007,6 @@ DefineEquipmentModifier({
       Formula=Formula("-1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -3120,8 +3017,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ACCHECK",
@@ -3373,7 +3268,6 @@ DefineEquipmentModifier({
       Formula=Formula("-1"),
       Type={
         Name="Enhancement",
-        Replace=false,
         Stack=true,
       },
       Conditions={
@@ -3935,8 +3829,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICEVALUE"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "%CHOICE",
@@ -4021,8 +3913,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICE"),
       Type={
         Name="ARMOR",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -4172,8 +4062,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICE"),
       Type={
         Name="DEFLECTION",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -4258,8 +4146,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICE+Global_LuckBonus"),
       Type={
         Name="Luck",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -4344,8 +4230,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICE"),
       Type={
         Name="INSIGHT",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -4430,8 +4314,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICE"),
       Type={
         Name="SACRED",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -4516,8 +4398,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICE"),
       Type={
         Name="PROFANE",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -4602,8 +4482,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICE"),
       Type={
         Name="OTHER",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -4688,8 +4566,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICE"),
       Type={
         Name="NATURALARMOR",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -4774,8 +4650,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICE"),
       Type={
         Name="RESISTANCE",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FORTITUDE",
@@ -4862,8 +4736,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICE+Global_LuckBonus"),
       Type={
         Name="Luck",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FORTITUDE",
@@ -4950,8 +4822,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICE"),
       Type={
         Name="INSIGHT",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FORTITUDE",
@@ -5038,8 +4908,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICE"),
       Type={
         Name="SACRED",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FORTITUDE",
@@ -5126,8 +4994,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICE"),
       Type={
         Name="PROFANE",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FORTITUDE",
@@ -5214,8 +5080,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICE"),
       Type={
         Name="OTHER",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FORTITUDE",
@@ -5302,8 +5166,6 @@ DefineEquipmentModifier({
       Formula=Formula("%CHOICEVALUE"),
       Type={
         Name="COMPETENCE",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "%CHOICE",
@@ -6138,8 +6000,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6214,8 +6074,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6290,8 +6148,6 @@ DefineEquipmentModifier({
       Formula=Formula("3"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6366,8 +6222,6 @@ DefineEquipmentModifier({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6442,8 +6296,6 @@ DefineEquipmentModifier({
       Formula=Formula("5"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6518,8 +6370,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6591,8 +6441,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6664,8 +6512,6 @@ DefineEquipmentModifier({
       Formula=Formula("3"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6737,8 +6583,6 @@ DefineEquipmentModifier({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6810,8 +6654,6 @@ DefineEquipmentModifier({
       Formula=Formula("5"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -7421,8 +7263,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="NONSTACKINGCRIT",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CRITRANGEDOUBLE",
@@ -7976,8 +7816,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -8014,8 +7852,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -8052,8 +7888,6 @@ DefineEquipmentModifier({
       Formula=Formula("3"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -8090,8 +7924,6 @@ DefineEquipmentModifier({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -8128,8 +7960,6 @@ DefineEquipmentModifier({
       Formula=Formula("5"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -9022,8 +8852,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="ArmorEnhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9039,8 +8867,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -9116,8 +8942,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="ArmorEnhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9133,8 +8957,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -9210,8 +9032,6 @@ DefineEquipmentModifier({
       Formula=Formula("3"),
       Type={
         Name="ArmorEnhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9227,8 +9047,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -9304,8 +9122,6 @@ DefineEquipmentModifier({
       Formula=Formula("4"),
       Type={
         Name="ArmorEnhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9321,8 +9137,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -9398,8 +9212,6 @@ DefineEquipmentModifier({
       Formula=Formula("5"),
       Type={
         Name="ArmorEnhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9415,8 +9227,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -9492,8 +9302,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="ShieldEnhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9509,8 +9317,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -9586,8 +9392,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="ShieldEnhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9603,8 +9407,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -9680,8 +9482,6 @@ DefineEquipmentModifier({
       Formula=Formula("3"),
       Type={
         Name="ShieldEnhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9697,8 +9497,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -9774,8 +9572,6 @@ DefineEquipmentModifier({
       Formula=Formula("4"),
       Type={
         Name="ShieldEnhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9791,8 +9587,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -9868,8 +9662,6 @@ DefineEquipmentModifier({
       Formula=Formula("5"),
       Type={
         Name="ShieldEnhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9885,8 +9677,6 @@ DefineEquipmentModifier({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -11013,8 +10803,6 @@ DefineEquipmentModifier({
       Formula=Formula("5"),
       Type={
         Name="COMPETENCE",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STEALTH",
@@ -11049,8 +10837,6 @@ DefineEquipmentModifier({
       Formula=Formula("10"),
       Type={
         Name="COMPETENCE",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STEALTH",
@@ -11085,8 +10871,6 @@ DefineEquipmentModifier({
       Formula=Formula("15"),
       Type={
         Name="COMPETENCE",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STEALTH",
@@ -11121,8 +10905,6 @@ DefineEquipmentModifier({
       Formula=Formula("5"),
       Type={
         Name="COMPETENCE",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ESCAPE ARTIST",
@@ -11157,8 +10939,6 @@ DefineEquipmentModifier({
       Formula=Formula("10"),
       Type={
         Name="COMPETENCE",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ESCAPE ARTIST",
@@ -11193,8 +10973,6 @@ DefineEquipmentModifier({
       Formula=Formula("15"),
       Type={
         Name="COMPETENCE",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ESCAPE ARTIST",
@@ -11604,8 +11382,10 @@ DefineEquipmentModifier({
     },
     {
       Format="Empathy allows the item to encourage or discourage certain actions by communicating emotions and urges. It does not allow for verbal communication.",
-      Arguments={
-        Formula("!PREEQUIP:1,EQMOD=Intelligent Item ~ Communication / Speech,EQMOD=Intelligent Item ~ Communication / Telepathy"),
+      Conditions={
+        function (character)
+          return not (((character.HasEquipped(function (item) return stringMatch(item.Name, "EQMOD=Intelligent Item ~ Communication / Speech") end)) + (character.HasEquipped(function (item) return stringMatch(item.Name, "EQMOD=Intelligent Item ~ Communication / Telepathy") end))) >= 1)
+        end,
       },
     },
   },
@@ -14572,8 +14352,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Purpose",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "IntelligentItemEgo",
@@ -14610,8 +14388,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Purpose",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "IntelligentItemEgo",
@@ -14648,8 +14424,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Purpose",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "IntelligentItemEgo",
@@ -14686,8 +14460,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Purpose",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "IntelligentItemEgo",
@@ -14724,8 +14496,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Purpose",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "IntelligentItemEgo",
@@ -14762,8 +14532,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Purpose",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "IntelligentItemEgo",
@@ -14800,8 +14568,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Purpose",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "IntelligentItemEgo",
@@ -14838,8 +14604,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Purpose",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "IntelligentItemEgo",
@@ -14876,8 +14640,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Purpose",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "IntelligentItemEgo",
@@ -14914,8 +14676,6 @@ DefineEquipmentModifier({
       Formula=Formula("2"),
       Type={
         Name="Purpose",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "IntelligentItemEgo",
@@ -15023,8 +14783,6 @@ DefineEquipmentModifier({
       Formula=Formula("2+Global_LuckBonus"),
       Type={
         Name="Luck",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -15035,8 +14793,6 @@ DefineEquipmentModifier({
       Formula=Formula("2+Global_LuckBonus"),
       Type={
         Name="Luck",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ALL",

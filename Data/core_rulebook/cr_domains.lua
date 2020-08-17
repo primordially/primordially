@@ -1370,8 +1370,6 @@ DefineDomain({
       Formula=Formula("2"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ClericChannelPositiveEnergyDC",
@@ -2537,8 +2535,6 @@ DefineDomain({
       Formula=Formula("DomainProtectionSaveBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ALL",

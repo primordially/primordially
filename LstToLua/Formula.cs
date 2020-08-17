@@ -6,6 +6,11 @@ namespace Primordially.LstToLua
     {
         public string Value { get; }
 
+        public Formula(TextSpan value)
+            :this(value.Value)
+        {
+        }
+
         public Formula(string value)
         {
             Value = value;

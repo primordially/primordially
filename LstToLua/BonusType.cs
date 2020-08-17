@@ -46,8 +46,10 @@
         {
             output.WriteStartObject();
             output.WriteProperty("Name", Name);
-            output.WriteProperty("Replace", Replace);
-            output.WriteProperty("Stack", Stack);
+            if (Replace)
+                output.WriteProperty("Replace", Replace);
+            if (Stack)
+                output.WriteProperty("Stack", Stack);
             output.WriteEndObject();
         }
     }

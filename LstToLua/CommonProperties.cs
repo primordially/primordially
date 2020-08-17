@@ -248,6 +248,20 @@ namespace Primordially.LstToLua
         public static PropertyDefinition Info = Property.Dictionary<string>("INFO", "Info");
         public static PropertyDefinition PreText = Property.String("PRETEXT", "ExtraCondition");
         public static PropertyDefinition ServesAs = Property.Single<ServesAs>("SERVESAS", "ServesAs");
+        public static PropertyDefinition Size = Property.String("SIZE", "Size");
+        public static PropertyDefinition BonusLanguages = Property.SeparatedList<BonusLanguage>(',', "LANGBONUS", "BonusLanguages");
+        public static PropertyDefinition DefineStat = Property.Multiple<StatModification>("DEFINESTAT", "StatModifications");
+
+        public static PropertyDefinition HitDie = (value, properties, clear) =>
+        {
+            if (value.TryRemovePrefix("HITDIE:", out value))
+            {
+                properties["HitDie"] = new HitDie(value);
+                return true;
+            }
+
+            return false;
+        };
 
         public static PropertyDefinition Followers = (value, properties, clear) =>
         {
@@ -343,5 +357,52 @@ namespace Primordially.LstToLua
 
             return false;
         };
+
+        public static PropertyDefinition Template = (value, properties, clear) =>
+        {
+            if (value.TryRemovePrefix("TEMPLATE:ADDCHOICE:", out value))
+            {
+                properties.GetList<string>("TemplateChoices").AddRange(value.Value.Split('|'));
+                return true;
+            }
+
+            if (value.TryRemovePrefix("TEMPLATE:CHOOSE:", out value))
+            {
+                properties.GetList<string>("TemplateChoices").AddRange(value.Value.Split('|'));
+                return true;
+            }
+
+            if (value.TryRemovePrefix("TEMPLATE:", out value))
+            {
+                properties.GetList<string>("Templates").AddRange(value.Value.Split('|'));
+                return true;
+            }
+
+            return false;
+        };
+    }
+
+    internal class HitDie : LuaObject
+    {
+        public HitDie(TextSpan value)
+        {
+            if (value.TryRemoveInfix("|", out value, out var condition))
+            {
+                if (condition.TryRemovePrefix("CLASS.TYPE=", out condition))
+                {
+                    Properties["ClassType"] = condition.Value;
+                }
+                else if (condition.TryRemovePrefix("CLASS=", out condition))
+                {
+                    Properties["ClassName"] = condition.Value;
+                }
+                else
+                {
+                    throw new ParseFailedException(condition, "Unable to parse HITDIE");
+                }
+            }
+
+            Properties["Formula"] = new Formula(value);
+        }
     }
 }

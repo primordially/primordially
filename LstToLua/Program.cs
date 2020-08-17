@@ -386,17 +386,29 @@ namespace Primordially.LstToLua
                     case "SKILL":
                         new SingleObjectFileConverter<SkillDefinition>().Convert(inputFileFullPath, outputFile);
                         break;
+                    case "SPELL":
+                        new SingleObjectFileConverter<SpellDefinition>().Convert(inputFileFullPath, outputFile);
+                        break;
+                    case "TEMPLATE":
+                        new SingleObjectFileConverter<TemplateDefinition>().Convert(inputFileFullPath, outputFile);
+                        break;
                     case "ARMORPROF":
-                    case "BIOSET":
+                        new SingleObjectFileConverter<ArmorProficiencyDefinition>().Convert(inputFileFullPath, outputFile);
+                        break;
+                    case "SHIELDPROF":
+                        new SingleObjectFileConverter<ShieldProficiencyDefinition>().Convert(inputFileFullPath, outputFile);
+                        break;
+                    case "WEAPONPROF":
+                        new SingleObjectFileConverter<WeaponProficiencyDefinition>().Convert(inputFileFullPath, outputFile);
+                        break;
                     case "COMPANIONMOD":
+                        new CompanionModFileConverter().Convert(inputFileFullPath, outputFile);
+                        break;
+                    case "BIOSET":
                     case "DATATABLE":
                     case "DYNAMIC":
                     case "GLOBALMODIFIER":
                     case "KIT":
-                    case "SHIELDPROF":
-                    case "SPELL":
-                    case "TEMPLATE":
-                    case "WEAPONPROF":
                         Console.WriteLine($"Skipping Not-Yet-Implemented file kind {kind}");
                         //throw new NotImplementedException($"File kind {kind} not implemented.");
                         break;

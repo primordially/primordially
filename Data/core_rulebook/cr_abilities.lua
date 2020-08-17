@@ -96,8 +96,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WeaponFocusToHit",
@@ -108,8 +106,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "GreaterWeaponFocusToHit",
@@ -135,8 +131,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -152,8 +146,6 @@ DefineAbility({
       Formula=Formula("3"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -169,8 +161,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -199,8 +189,6 @@ ModifyAbility({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FightingDefensivelyAttackPenalty",
@@ -226,8 +214,6 @@ DefineAbility({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Feat_Mobility_DodgeBonus",
@@ -930,8 +916,6 @@ DefineAbility({
       Formula=Formula("4"),
       Type={
         Name="Morale",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -3219,7 +3203,11 @@ DefineAbility({
     Format="%1 negative levels (-%1 effective levels and loses access to %1 spells from the highest spell level castable)",
     Arguments={
       Formula("NegLevels"),
-      Formula("PREVARGT:NegLevels,1"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["NegLevels"] > 1)
+      end,
     },
   },
   SourcePage="p.562",
@@ -3530,8 +3518,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ShieldDamageDice",
@@ -3562,8 +3548,6 @@ ModifyAbility({
       Formula=Formula("3"),
       Type={
         Name="ShieldSize",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3593,8 +3577,6 @@ ModifyAbility({
       Formula=Formula("4"),
       Type={
         Name="ShieldSize",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3630,8 +3612,6 @@ ModifyAbility({
       Formula=Formula("2"),
       Type={
         Name="ShieldSize",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3661,8 +3641,6 @@ ModifyAbility({
       Formula=Formula("3"),
       Type={
         Name="ShieldSize",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4147,8 +4125,6 @@ DefineAbility({
       Formula=Formula("EnlargePerson_GrappleBonusValue"),
       Type={
         Name="Size",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT.GRAPPLE",
@@ -4166,8 +4142,6 @@ DefineAbility({
       Formula=Formula("EnlargePerson_StrBonusValue"),
       Type={
         Name="Size",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -4178,8 +4152,6 @@ DefineAbility({
       Formula=Formula("-EnlargePerson_DexBonusValue"),
       Type={
         Name="Size",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -4226,8 +4198,6 @@ DefineAbility({
       Formula=Formula("-5"),
       Type={
         Name="Size",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT.GRAPPLE",
@@ -4245,8 +4215,6 @@ DefineAbility({
       Formula=Formula("-2"),
       Type={
         Name="Size",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -4257,8 +4225,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Size",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -7667,7 +7633,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Deflection",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -7699,7 +7664,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="NaturalArmorEnhancement",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -7779,8 +7743,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Rule",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BypassTraitRestriction",
@@ -7804,8 +7766,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Rule",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BypassDrawbackRestriction",
@@ -7829,8 +7789,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Rule",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "UseWeaponsWithNaturalAttacks",
@@ -7903,8 +7861,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -7934,8 +7890,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Insight",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -7965,8 +7919,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WIS",
@@ -8062,8 +8014,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -8096,8 +8046,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -8108,8 +8056,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ALL",
@@ -8120,8 +8066,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TYPE.Base",
@@ -8191,8 +8135,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CHA",
@@ -8222,8 +8164,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CON",
@@ -8253,8 +8193,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",

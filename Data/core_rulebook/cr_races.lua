@@ -210,8 +210,6 @@ DefineRace({
       Formula=Formula("Halfling_HalflingLuck_SaveBonus"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ALL",

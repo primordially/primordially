@@ -223,8 +223,6 @@ DefineAbility({
       Formula=Formula("-20"),
       Type={
         Name="ArmorFailure",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SPELLFAILURE",
@@ -300,8 +298,6 @@ DefineAbility({
       Formula=Formula("-10"),
       Type={
         Name="ArmorFailure",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SPELLFAILURE",
@@ -852,8 +848,6 @@ DefineAbility({
       Formula=Formula("CombatExpertiseModifierAC"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CMD",
@@ -876,8 +870,6 @@ DefineAbility({
       Formula=Formula("((BAB+(FlurryLVL-MonkBAB))/4)+1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CombatExpertiseModifier",
@@ -888,8 +880,6 @@ DefineAbility({
       Formula=Formula("-CombatExpertiseModifier"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CombatExpertiseModifierAttack",
@@ -900,8 +890,6 @@ DefineAbility({
       Formula=Formula("CombatExpertiseModifier"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CombatExpertiseModifierAC",
@@ -1387,8 +1375,6 @@ DefineAbility({
       Formula=Formula("-DeadlyAimModifier"),
       Type={
         Name="Temporary",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -1699,8 +1685,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Dodge",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -1858,8 +1842,6 @@ DefineAbility({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Feat_Endurance_SaveBonus",
@@ -2246,8 +2228,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RangePenaltyValue",
@@ -2685,7 +2665,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Shield",
-        Replace=false,
         Stack=true,
       },
       Conditions={
@@ -2756,8 +2735,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="SpellFocus",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SCHOOL.%LIST",
@@ -3231,8 +3208,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="NonStackingCrit",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CRITRANGEDOUBLE",
@@ -5044,7 +5019,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Shield",
-        Replace=false,
         Stack=true,
       },
       Conditions={
@@ -5103,8 +5077,6 @@ DefineAbility({
       Formula=Formula("var(\"ARMOR.SHIELD.EQUIPPED.0.ACBONUS\")-var(\"ARMOR.SHIELD.EQUIPPED.0.BASEAC\")"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT.ShieldBash",
@@ -5115,8 +5087,6 @@ DefineAbility({
       Formula=Formula("var(\"ARMOR.SHIELD.EQUIPPED.0.ACBONUS\")-var(\"ARMOR.SHIELD.EQUIPPED.0.BASEAC\")"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE.ShieldBash",
@@ -5127,8 +5097,6 @@ DefineAbility({
       Formula=Formula("var(\"ARMOR.SHIELD.EQUIPPED.0.ACBONUS\")-var(\"ARMOR.SHIELD.EQUIPPED.0.BASEAC\")"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ShieldBashAttackBonus",
@@ -5394,8 +5362,6 @@ DefineAbility({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "%LIST",
@@ -5472,8 +5438,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="SpellFocus",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SCHOOL.%LIST",
@@ -5885,8 +5849,6 @@ DefineAbility({
       Formula=Formula("MonkLVL+floor((TL-MonkLVL)/4)"),
       Type={
         Name="NoStack",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "StunningFistAttack",
@@ -6162,8 +6124,6 @@ DefineAbility({
       Formula=Formula("TwoWeaponShield"),
       Type={
         Name="Shield",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6407,8 +6367,6 @@ DefineAbility({
       Formula=Formula("((max(STR,DEX)-STR)+SHIELDACCHECK)"),
       Type={
         Name="NotRanged",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT.Finesseable",
@@ -6652,8 +6610,6 @@ DefineAbility({
       Formula=Formula("(PowerAttackDamageBase/2)+PowerAttackModifier"),
       Type={
         Name="Temporary",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6672,8 +6628,6 @@ DefineAbility({
       Formula=Formula("PowerAttackDamageBase*PowerAttackModifier"),
       Type={
         Name="Temporary",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6692,8 +6646,6 @@ DefineAbility({
       Formula=Formula("PowerAttackDamageBase*PowerAttackModifier"),
       Type={
         Name="Temporary",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6712,8 +6664,6 @@ DefineAbility({
       Formula=Formula("(PowerAttackDamageBase*1.5)*PowerAttackModifier"),
       Type={
         Name="Temporary",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6732,8 +6682,6 @@ DefineAbility({
       Formula=Formula("PowerAttackDamageBase*MonkFlurryPowerAttackModifier"),
       Type={
         Name="Temporary",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6752,8 +6700,6 @@ DefineAbility({
       Formula=Formula("PowerAttackDamageBase*PowerAttackModifier"),
       Type={
         Name="Temporary",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6772,8 +6718,6 @@ DefineAbility({
       Formula=Formula("PowerAttackDamageBase*PowerAttackModifier"),
       Type={
         Name="Temporary",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6792,8 +6736,6 @@ DefineAbility({
       Formula=Formula("(PowerAttackDamageBase*1.5)*PowerAttackModifier"),
       Type={
         Name="Temporary",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -7016,8 +6958,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Boolean",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "HasWeaponFinesseFeat",

@@ -281,8 +281,6 @@ ModifyAbility({
       Formula=Formula("BypassClassAlignment_All_Class"),
       Type={
         Name="Bypass",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BypassClassAlignment_Barbarian",
@@ -299,8 +297,6 @@ ModifyAbility({
       Formula=Formula("BypassClassAlignment_All_Class"),
       Type={
         Name="Bypass",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BypassClassAlignment_Druid",
@@ -317,8 +313,6 @@ ModifyAbility({
       Formula=Formula("BypassClassAlignment_All_Class"),
       Type={
         Name="Bypass",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BypassClassAlignment_Monk",
@@ -329,8 +323,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Bypass",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -354,8 +346,6 @@ ModifyAbility({
       Formula=Formula("BypassClassAlignment_All_Class"),
       Type={
         Name="Bypass",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BypassClassAlignment_Paladin",
@@ -372,8 +362,6 @@ ModifyAbility({
       Formula=Formula("BypassClassAlignment_All_Class"),
       Type={
         Name="Bypass",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BypassClassAlignment_Arcane_Trickster",
@@ -390,8 +378,6 @@ ModifyAbility({
       Formula=Formula("BypassClassAlignment_All_Class"),
       Type={
         Name="Bypass",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BypassClassAlignment_Assassin",
@@ -845,8 +831,6 @@ DefineAbility({
       Formula=Formula("BarbarianLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Barbarian_CFP_Level",
@@ -884,8 +868,6 @@ DefineAbility({
       Formula=Formula("BardLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Bard_CFP_Level",
@@ -923,8 +905,6 @@ DefineAbility({
       Formula=Formula("ClericLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Cleric_CFP_Level",
@@ -962,8 +942,6 @@ DefineAbility({
       Formula=Formula("DruidLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Druid_CFP_Level",
@@ -1001,8 +979,6 @@ DefineAbility({
       Formula=Formula("FighterLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Fighter_CFP_Level",
@@ -1035,8 +1011,6 @@ DefineAbility({
       Formula=Formula("MonkLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Monk_CFP_Level",
@@ -1081,8 +1055,6 @@ DefineAbility({
       Formula=Formula("PaladinLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Paladin_CFP_Level",
@@ -1120,8 +1092,6 @@ DefineAbility({
       Formula=Formula("RangerLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Ranger_CFP_Level",
@@ -1173,8 +1143,6 @@ DefineAbility({
       Formula=Formula("RogueLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Rogue_CFP_Level",
@@ -1212,8 +1180,6 @@ DefineAbility({
       Formula=Formula("SorcererLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Sorcerer_CFP_Level",
@@ -1239,8 +1205,6 @@ DefineAbility({
       Formula=Formula("WizardLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Wizard_CFP_Level",
@@ -1257,8 +1221,6 @@ DefineAbility({
       Formula=Formula("ArcaneArcherLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArcaneArcher_CFP_Level",
@@ -1275,8 +1237,6 @@ DefineAbility({
       Formula=Formula("ArcaneTricksterLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArcaneTrickster_CFP_Level",
@@ -1293,8 +1253,6 @@ DefineAbility({
       Formula=Formula("AssassinLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Assassin_CFP_Level",
@@ -1311,8 +1269,6 @@ DefineAbility({
       Formula=Formula("DragonDiscipleLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DragonDisciple_CFP_Level",
@@ -1329,8 +1285,6 @@ DefineAbility({
       Formula=Formula("DuelistLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Duelist_CFP_Level",
@@ -1347,8 +1301,6 @@ DefineAbility({
       Formula=Formula("EldritchKnightLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "EldritchKnight_CFP_Level",
@@ -1365,8 +1317,6 @@ DefineAbility({
       Formula=Formula("LoremasterLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Loremaster_CFP_Level",
@@ -1383,8 +1333,6 @@ DefineAbility({
       Formula=Formula("MysticTheurgeLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "MysticTheurge_CFP_Level",
@@ -1401,8 +1349,6 @@ DefineAbility({
       Formula=Formula("PathfinderChroniclerLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PathfinderChronicler_CFP_Level",
@@ -1419,8 +1365,6 @@ DefineAbility({
       Formula=Formula("ShadowdancerLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Shadowdancer_CFP_Level",
@@ -1437,8 +1381,6 @@ DefineAbility({
       Formula=Formula("AdeptLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Adept_CFP_Level",
@@ -1455,8 +1397,6 @@ DefineAbility({
       Formula=Formula("AristocratLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Aristocrat_CFP_Level",
@@ -1473,8 +1413,6 @@ DefineAbility({
       Formula=Formula("CommonerLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Commoner_CFP_Level",
@@ -1491,8 +1429,6 @@ DefineAbility({
       Formula=Formula("ExpertLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Expert_CFP_Level",
@@ -1509,8 +1445,6 @@ DefineAbility({
       Formula=Formula("WarriorLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Warrior_CFP_Level",
@@ -1654,7 +1588,6 @@ DefineAbility({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3686,8 +3619,6 @@ ModifyAbility({
       Formula=Formula("FighterLVL"),
       Type={
         Name="Class",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3709,8 +3640,6 @@ ModifyAbility({
       Formula=Formula("FighterLVL"),
       Type={
         Name="Class",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3732,8 +3661,6 @@ ModifyAbility({
       Formula=Formula("FighterLVL"),
       Type={
         Name="Class",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3755,8 +3682,6 @@ ModifyAbility({
       Formula=Formula("FighterLVL"),
       Type={
         Name="Class",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6352,8 +6277,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Bypass",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BypassClassAlignment_Paladin",
@@ -6366,8 +6289,12 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="You are using an alternative raging method.",
-    Arguments={
-      Formula("PREABILITY:1,CATEGORY=Special Ability,TYPE.RageSelectionAlt"),
+    Conditions={
+      function (character)
+        return 1 <= #filter(character.Abilities, function (ability)
+          return ability.Category == "Special Ability" and (ability.Type == "RageSelectionAlt")
+        end)
+      end,
     },
   },
   SourcePage="p.32",
@@ -6769,7 +6696,6 @@ DefineAbility({
       Type={
         Name="EachClass",
         Replace=true,
-        Stack=false,
       },
       Variables={
         "UncannyDodgeFlankingLevel",
@@ -6808,7 +6734,6 @@ ModifyAbility({
       Type={
         Name="EachClass",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8204,8 +8129,6 @@ DefineAbility({
       Formula=Formula("5"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8724,8 +8647,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="You can use any skill, even if the skill normally requires you to be trained. You considers all skills to be class skills. You can take 10 on any skill check, even if it is not normally allowed.",
-    Arguments={
-      Formula("PREVARGTEQ:JackOfAllTradesLVL,19"),
+    Conditions={
+      function (character)
+        return (character.Variables["JackOfAllTradesLVL"] >= 19)
+      end,
     },
   },
   SourcePage="p.38",
@@ -8777,7 +8702,11 @@ ModifyAbility({
     Format="You are trained to use the Perform skill to create magical effects on those around you, including yourself if desired. You can use this ability for %1 rounds per day. Each round, you can produce any one of the types of bardic performance that you have mastered. Starting a bardic performance is a standard action, but it can be maintained each round as a free action. Changing a bardic performance from one effect to another requires the bard to stop the previous performance and start a new one as a standard action. A bardic performance cannot be disrupted, but it ends immediately if you are killed, paralyzed, stunned, knocked unconscious, or otherwise prevented from taking a free action to maintain it each round. You cannot have more than one bardic performance in effect at one time.",
     Arguments={
       Formula("BardicPerformanceDuration"),
-      Formula("PREVARLT:BardicPerformanceLVL,7"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["BardicPerformanceLVL"] < 7)
+      end,
     },
   },
 })
@@ -8788,8 +8717,14 @@ ModifyAbility({
     Format="You are trained to use the Perform skill to create magical effects on those around you, including yourself if desired. You can use this ability for %1 rounds per day. Each round, you can produce any one of the types of bardic performance that you have mastered. Starting a bardic performance is a move action, but it can be maintained each round as a free action. Changing a bardic performance from one effect to another requires the bard to stop the previous performance and start a new one as a move action. A bardic performance cannot be disrupted, but it ends immediately if you are killed, paralyzed, stunned, knocked unconscious, or otherwise prevented from taking a free action to maintain it each round. You cannot have more than one bardic performance in effect at one time.",
     Arguments={
       Formula("BardicPerformanceDuration"),
-      Formula("PREVARGTEQ:BardicPerformanceLVL,7"),
-      Formula("PREVARLT:BardicPerformanceLVL,13"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["BardicPerformanceLVL"] >= 7)
+      end,
+      function (character)
+        return (character.Variables["BardicPerformanceLVL"] < 13)
+      end,
     },
   },
 })
@@ -8800,7 +8735,11 @@ ModifyAbility({
     Format="You are trained to use the Perform skill to create magical effects on those around you, including yourself if desired. You can use this ability for %1 rounds per day. Each round, you can produce any one of the types of bardic performance that you have mastered. Starting a bardic performance is a swift action, but it can be maintained each round as a free action. Changing a bardic performance from one effect to another requires the bard to stop the previous performance and start a new one as a swift action. A bardic performance cannot be disrupted, but it ends immediately if you are killed, paralyzed, stunned, knocked unconscious, or otherwise prevented from taking a free action to maintain it each round. You cannot have more than one bardic performance in effect at one time.",
     Arguments={
       Formula("BardicPerformanceDuration"),
-      Formula("PREVARGTEQ:BardicPerformanceLVL,13"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["BardicPerformanceLVL"] >= 13)
+      end,
     },
   },
 })
@@ -9491,8 +9430,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Act)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9510,8 +9447,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Act)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9560,8 +9495,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Comedy)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9579,8 +9512,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Comedy)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9629,8 +9560,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Dance)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9648,8 +9577,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Dance)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9698,8 +9625,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Keyboard Instruments)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9717,8 +9642,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Keyboard Instruments)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9767,8 +9690,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Oratory)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9786,8 +9707,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Oratory)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9836,8 +9755,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Percussion Instruments)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9855,8 +9772,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Percussion Instruments)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9905,8 +9820,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Sing)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9924,8 +9837,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Sing)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9974,8 +9885,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (String Instruments)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9993,8 +9902,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (String Instruments)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10043,8 +9950,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Wind Instruments)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10062,8 +9967,6 @@ DefineAbility({
       Formula=Formula("skillinfo(\"TOTALRANK\", \"Perform (Wind Instruments)\")"),
       Type={
         Name="SkillGranted",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -10090,8 +9993,12 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="Weapon and Armor Proficiencies are altered from the base cleric.",
-    Arguments={
-      Formula("PREABILITY:1,CATEGORY=Archetype,TYPE.ClericArmorProficiency.TYPE.ClericWeaponProficiency"),
+    Conditions={
+      function (character)
+        return 1 <= #filter(character.Abilities, function (ability)
+          return ability.Category == "Archetype" and (ability.Type == "ClericArmorProficiency.TYPE.ClericWeaponProficiency")
+        end)
+      end,
     },
   },
   Visible=true,
@@ -10285,8 +10192,12 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="You can channel stored spell energy into inflict spells that you did not prepare ahead of time. You can \"lose\" any prepared spell that is not an orison or domain spell in order to cast any inflict spell of the same spell level or lower (an inflict spell is any spell with \"Inflict\" in its name).",
-    Arguments={
-      Formula("PREABILITY:1,CATEGORY=Special Ability,Cleric ~ Channel Negative Energy"),
+    Conditions={
+      function (character)
+        return 1 <= #filter(character.Abilities, function (ability)
+          return ability.Category == "Special Ability" and (ability.Name == "Cleric ~ Channel Negative Energy")
+        end)
+      end,
     },
   },
   SourcePage="p.41",
@@ -12142,8 +12053,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AirDomain",
@@ -12161,8 +12070,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainAirLVL",
@@ -12173,8 +12080,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainAirAbilityTriggerLVL",
@@ -12192,8 +12097,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainAirTimes",
@@ -12211,8 +12114,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AnimalDomain",
@@ -12230,8 +12131,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainAnimalLVL",
@@ -12249,8 +12148,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainAnimalTimes",
@@ -12261,8 +12158,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainAnimalAbilityTriggerLVL",
@@ -12280,8 +12175,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArtificeDomain",
@@ -12299,8 +12192,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainArtificeLVL",
@@ -12318,8 +12209,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainArtificeTimes",
@@ -12330,8 +12219,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainArtificeAbilityTriggerLVL",
@@ -12349,8 +12236,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ChaosDomain",
@@ -12368,8 +12253,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainChaosLVL",
@@ -12387,8 +12270,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainChaosTimes",
@@ -12399,8 +12280,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainChaosAbilityTriggerLVL",
@@ -12418,8 +12297,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CharmDomain",
@@ -12437,8 +12314,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainCharmLVL",
@@ -12456,8 +12331,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainCharmTimes",
@@ -12468,8 +12341,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainCharmAbilityTriggerLVL",
@@ -12487,8 +12358,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CommunityDomain",
@@ -12506,8 +12375,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainCommunityLVL",
@@ -12525,8 +12392,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainCommunityTimes",
@@ -12537,8 +12402,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainCommunityAbilityTriggerLVL",
@@ -12556,8 +12419,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DarknessDomain",
@@ -12575,8 +12436,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDarknessLVL",
@@ -12594,8 +12453,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDarknessTimes",
@@ -12606,8 +12463,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDarknessAbilityTriggerLVL",
@@ -12625,8 +12480,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DeathDomain",
@@ -12644,8 +12497,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDeathLVL",
@@ -12663,8 +12514,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDeathTimes",
@@ -12675,8 +12524,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDeathAbilityTriggerLVL",
@@ -12694,8 +12541,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DestructionDomain",
@@ -12713,8 +12558,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDestructionLVL",
@@ -12732,8 +12575,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDestructionTimes",
@@ -12744,8 +12585,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDestructionAbilityTriggerLVL",
@@ -12763,8 +12602,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "EarthDomain",
@@ -12782,8 +12619,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainEarthLVL",
@@ -12801,8 +12636,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainEarthTimes",
@@ -12813,8 +12646,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainEarthAbilityTriggerLVL",
@@ -12832,8 +12663,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "EvilDomain",
@@ -12851,8 +12680,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainEvilLVL",
@@ -12870,8 +12697,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainEvilTimes",
@@ -12882,8 +12707,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainEvilAbilityTriggerLVL",
@@ -12901,8 +12724,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FireDomain",
@@ -12920,8 +12741,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainFireLVL",
@@ -12939,8 +12758,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainFireTimes",
@@ -12951,8 +12768,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainFireAbilityTriggerLVL",
@@ -12970,8 +12785,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "GloryDomain",
@@ -12989,8 +12802,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainGloryLVL",
@@ -13015,8 +12826,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainGloryTimes",
@@ -13027,8 +12836,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainGloryAbilityTriggerLVL",
@@ -13046,8 +12853,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "GoodDomain",
@@ -13065,8 +12870,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainGoodLVL",
@@ -13084,8 +12887,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainGoodTimes",
@@ -13096,8 +12897,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainGoodAbilityTriggerLVL",
@@ -13115,8 +12914,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "HealingDomain",
@@ -13134,8 +12931,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainHealingLVL",
@@ -13153,8 +12948,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainHealingTimes",
@@ -13165,8 +12958,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainHealingAbilityTriggerLVL",
@@ -13184,8 +12975,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "KnowledgeDomain",
@@ -13203,8 +12992,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainKnowledgeLVL",
@@ -13222,8 +13009,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainKnowledgeTimes",
@@ -13234,8 +13019,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainKnowledgeAbilityTriggerLVL",
@@ -13253,8 +13036,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "LawDomain",
@@ -13272,8 +13053,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLawLVL",
@@ -13291,8 +13070,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLawTimes",
@@ -13303,8 +13080,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLawAbilityTriggerLVL",
@@ -13322,8 +13097,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "LiberationDomain",
@@ -13341,8 +13114,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLiberationLVL",
@@ -13360,8 +13131,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLiberationTimes",
@@ -13372,8 +13141,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLiberationAbilityTriggerLVL",
@@ -13391,8 +13158,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "LuckDomain",
@@ -13410,8 +13175,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLuckLVL",
@@ -13429,8 +13192,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLuckTimes",
@@ -13441,8 +13202,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLuckAbilityTriggerLVL",
@@ -13460,8 +13219,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "MadnessDomain",
@@ -13479,8 +13236,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainMadnessLVL",
@@ -13498,8 +13253,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainMadnessTimes",
@@ -13510,8 +13263,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainMadnessAbilityTriggerLVL",
@@ -13529,8 +13280,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "MagicDomain",
@@ -13548,8 +13297,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainMagicLVL",
@@ -13567,8 +13314,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainMagicTimes",
@@ -13579,8 +13324,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainMagicAbilityTriggerLVL",
@@ -13598,8 +13341,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "NobilityDomain",
@@ -13617,8 +13358,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainNobilityLVL",
@@ -13636,8 +13375,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainNobilityTimes",
@@ -13648,8 +13385,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainNobilityAbilityTriggerLVL",
@@ -13667,8 +13402,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PlantDomain",
@@ -13686,8 +13419,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainPlantLVL",
@@ -13705,8 +13436,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainPlantTimes",
@@ -13717,8 +13446,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainPlantAbilityTriggerLVL",
@@ -13736,8 +13463,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ProtectionDomain",
@@ -13762,8 +13487,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainProtectionLVL",
@@ -13781,8 +13504,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainProtectionTimes",
@@ -13793,8 +13514,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainProtectionAbilityTriggerLVL",
@@ -13812,8 +13531,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ReposeDomain",
@@ -13831,8 +13548,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainReposeLVL",
@@ -13850,8 +13565,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainReposeTimes",
@@ -13862,8 +13575,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainReposeAbilityTriggerLVL",
@@ -13881,8 +13592,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RuneDomain",
@@ -13900,8 +13609,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainRuneLVL",
@@ -13919,8 +13626,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainRuneTimes",
@@ -13931,8 +13636,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainRuneAbilityTriggerLVL",
@@ -13950,8 +13653,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "StrengthDomain",
@@ -13969,8 +13670,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainStrengthLVL",
@@ -13988,8 +13687,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainStrengthTimes",
@@ -14000,8 +13697,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainStrengthAbilityTriggerLVL",
@@ -14019,8 +13714,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SunDomain",
@@ -14038,8 +13731,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainSunLVL",
@@ -14057,8 +13748,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainSunTimes",
@@ -14069,8 +13758,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainSunAbilityTriggerLVL",
@@ -14088,8 +13775,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TravelDomain",
@@ -14107,8 +13792,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainTravelLVL",
@@ -14126,8 +13809,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainTravelTimes",
@@ -14138,8 +13819,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainTravelAbilityTriggerLVL",
@@ -14157,8 +13836,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TrickeryDomain",
@@ -14176,8 +13853,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainTrickeryLVL",
@@ -14195,8 +13870,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainTrickeryTimes",
@@ -14207,8 +13880,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainTrickeryAbilityTriggerLVL",
@@ -14226,8 +13897,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WarDomain",
@@ -14245,8 +13914,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWarLVL",
@@ -14264,8 +13931,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWarTimes",
@@ -14276,8 +13941,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWarAbilityTriggerLVL",
@@ -14295,8 +13958,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WaterDomain",
@@ -14314,8 +13975,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWaterLVL",
@@ -14333,8 +13992,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWaterTimes",
@@ -14345,8 +14002,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWaterAbilityTriggerLVL",
@@ -14364,8 +14019,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WeatherDomain",
@@ -14383,8 +14036,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWeatherLVL",
@@ -14402,8 +14053,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWeatherTimes",
@@ -14414,8 +14063,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWeatherAbilityTriggerLVL",
@@ -14468,8 +14115,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainAirLVL",
@@ -14480,8 +14125,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainAirAbilityTriggerLVL",
@@ -14499,8 +14142,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainAirTimes",
@@ -14620,8 +14261,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainAnimalLVL",
@@ -14639,8 +14278,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainAnimalTimes",
@@ -14651,8 +14288,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainAnimalAbilityTriggerLVL",
@@ -14775,8 +14410,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainArtificeLVL",
@@ -14794,8 +14427,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainArtificeTimes",
@@ -14806,8 +14437,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainArtificeAbilityTriggerLVL",
@@ -14927,8 +14556,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainChaosLVL",
@@ -14946,8 +14573,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainChaosTimes",
@@ -14958,8 +14583,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainChaosAbilityTriggerLVL",
@@ -15084,8 +14707,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainCharmLVL",
@@ -15103,8 +14724,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainCharmTimes",
@@ -15115,8 +14734,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainCharmAbilityTriggerLVL",
@@ -15236,8 +14853,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainCommunityLVL",
@@ -15255,8 +14870,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainCommunityTimes",
@@ -15267,8 +14880,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainCommunityAbilityTriggerLVL",
@@ -15395,8 +15006,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDarknessLVL",
@@ -15414,8 +15023,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDarknessTimes",
@@ -15426,8 +15033,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDarknessAbilityTriggerLVL",
@@ -15547,8 +15152,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDeathLVL",
@@ -15566,8 +15169,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDeathTimes",
@@ -15578,8 +15179,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDeathAbilityTriggerLVL",
@@ -15699,8 +15298,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDestructionLVL",
@@ -15718,8 +15315,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDestructionTimes",
@@ -15730,8 +15325,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainDestructionAbilityTriggerLVL",
@@ -15851,8 +15444,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainEarthLVL",
@@ -15870,8 +15461,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainEarthTimes",
@@ -15882,8 +15471,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainEarthAbilityTriggerLVL",
@@ -16003,8 +15590,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainEvilLVL",
@@ -16022,8 +15607,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainEvilTimes",
@@ -16034,8 +15617,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainEvilAbilityTriggerLVL",
@@ -16160,8 +15741,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainFireLVL",
@@ -16179,8 +15758,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainFireTimes",
@@ -16191,8 +15768,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainFireAbilityTriggerLVL",
@@ -16312,8 +15887,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainGloryLVL",
@@ -16338,8 +15911,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainGloryTimes",
@@ -16350,8 +15921,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainGloryAbilityTriggerLVL",
@@ -16471,8 +16040,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainGoodLVL",
@@ -16490,8 +16057,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainGoodTimes",
@@ -16502,8 +16067,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainGoodAbilityTriggerLVL",
@@ -16628,8 +16191,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainHealingLVL",
@@ -16647,8 +16208,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainHealingTimes",
@@ -16659,8 +16218,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainHealingAbilityTriggerLVL",
@@ -16780,8 +16337,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainKnowledgeLVL",
@@ -16799,8 +16354,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainKnowledgeTimes",
@@ -16811,8 +16364,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainKnowledgeAbilityTriggerLVL",
@@ -16935,8 +16486,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLawLVL",
@@ -16954,8 +16503,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLawTimes",
@@ -16966,8 +16513,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLawAbilityTriggerLVL",
@@ -17092,8 +16637,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLiberationLVL",
@@ -17111,8 +16654,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLiberationTimes",
@@ -17123,8 +16664,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLiberationAbilityTriggerLVL",
@@ -17244,8 +16783,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLuckLVL",
@@ -17263,8 +16800,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLuckTimes",
@@ -17275,8 +16810,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainLuckAbilityTriggerLVL",
@@ -17396,8 +16929,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainMadnessLVL",
@@ -17415,8 +16946,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainMadnessTimes",
@@ -17427,8 +16956,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainMadnessAbilityTriggerLVL",
@@ -17548,8 +17075,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainMagicLVL",
@@ -17567,8 +17092,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainMagicTimes",
@@ -17579,8 +17102,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainMagicAbilityTriggerLVL",
@@ -17700,8 +17221,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainNobilityLVL",
@@ -17719,8 +17238,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainNobilityTimes",
@@ -17731,8 +17248,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainNobilityAbilityTriggerLVL",
@@ -17852,8 +17367,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainPlantLVL",
@@ -17871,8 +17384,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainPlantTimes",
@@ -17883,8 +17394,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainPlantAbilityTriggerLVL",
@@ -18004,8 +17513,6 @@ DefineAbility({
       Formula=Formula("DomainProtectionSaveBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ALL",
@@ -18023,8 +17530,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainProtectionLVL",
@@ -18042,8 +17547,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainProtectionTimes",
@@ -18054,8 +17557,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainProtectionAbilityTriggerLVL",
@@ -18175,8 +17676,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainReposeLVL",
@@ -18194,8 +17693,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainReposeTimes",
@@ -18206,8 +17703,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainReposeAbilityTriggerLVL",
@@ -18334,8 +17829,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainRuneLVL",
@@ -18353,8 +17846,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainRuneTimes",
@@ -18365,8 +17856,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainRuneAbilityTriggerLVL",
@@ -18486,8 +17975,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainStrengthLVL",
@@ -18505,8 +17992,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainStrengthTimes",
@@ -18517,8 +18002,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainStrengthAbilityTriggerLVL",
@@ -18638,8 +18121,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainSunLVL",
@@ -18657,8 +18138,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainSunTimes",
@@ -18669,8 +18148,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainSunAbilityTriggerLVL",
@@ -18797,8 +18274,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainTravelLVL",
@@ -18816,8 +18291,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainTravelTimes",
@@ -18828,8 +18301,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainTravelAbilityTriggerLVL",
@@ -18949,8 +18420,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainTrickeryLVL",
@@ -18968,8 +18437,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainTrickeryTimes",
@@ -18980,8 +18447,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainTrickeryAbilityTriggerLVL",
@@ -19106,8 +18571,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWarLVL",
@@ -19125,8 +18588,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWarTimes",
@@ -19137,8 +18598,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWarAbilityTriggerLVL",
@@ -19258,8 +18717,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWaterLVL",
@@ -19277,8 +18734,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWaterTimes",
@@ -19289,8 +18744,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWaterAbilityTriggerLVL",
@@ -19410,8 +18863,6 @@ DefineAbility({
       Formula=Formula("DomainLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWeatherLVL",
@@ -19429,8 +18880,6 @@ DefineAbility({
       Formula=Formula("DomainPowerTimes"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWeatherTimes",
@@ -19441,8 +18890,6 @@ DefineAbility({
       Formula=Formula("DomainAbilityTriggerLVL"),
       Type={
         Name="Domain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DomainWeatherAbilityTriggerLVL",
@@ -19526,7 +18973,11 @@ DefineAbility({
     Arguments={
       Formula("DomainAirLVL/2"),
       Formula("LightningArcTimes"),
-      Formula("PREVARGTEQ:DomainAirLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainAirLVL"] >= 2)
+      end,
     },
   },
   SourcePage="p.41",
@@ -19598,8 +19049,6 @@ DefineAbility({
       Formula=Formula("DomainAirResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ElectricityResistanceBonus",
@@ -19734,7 +19183,11 @@ DefineAbility({
     Arguments={
       Formula("DomainArtificeLVL"),
       Formula("ArtificersTouchTimes"),
-      Formula("PREVARLT:DomainArtificeLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainArtificeLVL"] < 2)
+      end,
     },
   },
   SourcePage="p.41",
@@ -20380,7 +19833,11 @@ DefineAbility({
     Arguments={
       Formula("DomainEarthLVL/2"),
       Formula("AcidDartTimes"),
-      Formula("PREVARGTEQ:DomainEarthLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainEarthLVL"] >= 2)
+      end,
     },
   },
   SourcePage="p.43",
@@ -20459,8 +19916,6 @@ DefineAbility({
       Formula=Formula("DomainEarthResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AcidResistanceBonus",
@@ -20606,7 +20061,11 @@ DefineAbility({
     Arguments={
       Formula("DomainFireLVL/2"),
       Formula("FireBoltTimes"),
-      Formula("PREVARGTEQ:DomainFireLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainFireLVL"] >= 2)
+      end,
     },
   },
   SourcePage="p.44",
@@ -20685,8 +20144,6 @@ DefineAbility({
       Formula=Formula("DomainFireResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FireResistanceBonus",
@@ -20924,7 +20381,11 @@ DefineAbility({
     Arguments={
       Formula("DomainHealingLVL/2"),
       Formula("RebukeDeathTimes"),
-      Formula("PREVARGTEQ:DomainHealingLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainHealingLVL"] >= 2)
+      end,
     },
   },
   SourcePage="p.44",
@@ -21897,7 +21358,11 @@ DefineAbility({
       Formula("DomainRuneLVL/2"),
       Formula("DomainRuneLVL"),
       Formula("BlastRuneTimes"),
-      Formula("PREVARGTEQ:DomainRuneLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainRuneLVL"] >= 2)
+      end,
     },
   },
   SourcePage="p.47",
@@ -22432,7 +21897,11 @@ DefineAbility({
     Arguments={
       Formula("DomainWaterLVL/2"),
       Formula("IcicleTimes"),
-      Formula("PREVARGTEQ:DomainWaterLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainWaterLVL"] >= 2)
+      end,
     },
   },
   SourcePage="p.48",
@@ -22511,8 +21980,6 @@ DefineAbility({
       Formula=Formula("DomainWaterResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ColdResistanceBonus",
@@ -22560,7 +22027,11 @@ DefineAbility({
     Arguments={
       Formula("DomainWeatherLVL/2"),
       Formula("StormBurstTimes"),
-      Formula("PREVARGTEQ:DomainWeatherLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainWeatherLVL"] >= 2)
+      end,
     },
   },
   SourcePage="p.48",
@@ -23037,8 +22508,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="DruidDomain",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DruidAirAllowed",
@@ -23630,7 +23099,25 @@ DefineAbility({
     Format="You can change shape at will for up to %1 hours",
     Arguments={
       Formula("WildShapeDuration"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,9],[PREVAREQ:Druid_CF_WildShapeUses20,0]"),
+    },
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 9)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["Druid_CF_WildShapeUses20"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
   SourcePage="p.51",
@@ -23665,9 +23152,27 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into any Small or Medium animal.",
-    Arguments={
-      Formula("PREVAREQ:NoAnimalShape,0"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,1],[PREVARGTEQ:WildShapeAbilityLevel,1]"),
+    Conditions={
+      function (character)
+        return (character.Variables["NoAnimalShape"] == 0)
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23676,9 +23181,41 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into any Tiny, Small, Medium or Large animal, or a Small elemental.",
-    Arguments={
-      Formula("PREMULT:2,[PREVAREQ:NoAnimalShape,0],[PREVAREQ:NoElementalShape,0]"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,2],[PREVARGTEQ:WildShapeAbilityLevel,2]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 2)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 2)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23687,9 +23224,41 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into any Tiny, Small, Medium or Large animal.",
-    Arguments={
-      Formula("PREMULT:2,[PREVAREQ:NoAnimalShape,0],[PREVAREQ:NoElementalShape,1]"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,2],[PREVARGTEQ:WildShapeAbilityLevel,2]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 2)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 2)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23698,9 +23267,41 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into a Small elemental.",
-    Arguments={
-      Formula("PREMULT:2,[PREVAREQ:NoAnimalShape,1],[PREVAREQ:NoElementalShape,0]"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,2],[PREVARGTEQ:WildShapeAbilityLevel,2]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 2)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 2)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23709,9 +23310,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, a Small or Medium elemental, or a Small or Medium plant creature.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,0],[PREVAREQ:NoElementalShape,0],[PREVAREQ:NoPlantShape,0]"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,3],[PREVARGTEQ:WildShapeAbilityLevel,3]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23720,9 +23359,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, or a Small or Medium elemental.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,0],[PREVAREQ:NoElementalShape,0],[PREVAREQ:NoPlantShape,1]"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,3],[PREVARGTEQ:WildShapeAbilityLevel,3]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23731,9 +23408,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, or a Small or Medium plant creature.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,0],[PREVAREQ:NoElementalShape,1],[PREVAREQ:NoPlantShape,0]"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,3],[PREVARGTEQ:WildShapeAbilityLevel,3]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23742,9 +23457,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into a Small or Medium elemental, or a Small or Medium plant creature.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,1],[PREVAREQ:NoElementalShape,0],[PREVAREQ:NoPlantShape,0]"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,3],[PREVARGTEQ:WildShapeAbilityLevel,3]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23753,9 +23506,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,0],[PREVAREQ:NoElementalShape,1],[PREVAREQ:NoPlantShape,1]"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,3],[PREVARGTEQ:WildShapeAbilityLevel,3]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23764,9 +23555,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into a Small or Medium elemental.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,1],[PREVAREQ:NoElementalShape,0],[PREVAREQ:NoPlantShape,1]"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,3],[PREVARGTEQ:WildShapeAbilityLevel,3]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23775,9 +23604,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into a Small or Medium plant creature.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,1],[PREVAREQ:NoElementalShape,1],[PREVAREQ:NoPlantShape,0]"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,3],[PREVARGTEQ:WildShapeAbilityLevel,3]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23786,9 +23653,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, a Small, Medium or Large elemental, or a Small, Medium or Large plant creature.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,0],[PREVAREQ:NoElementalShape,0],[PREVAREQ:NoPlantShape,0]"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,4],[PREVARGTEQ:WildShapeAbilityLevel,4]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23797,9 +23702,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, or a Small, Medium or Large elemental.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,0],[PREVAREQ:NoElementalShape,0],[PREVAREQ:NoPlantShape,1]"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,4],[PREVARGTEQ:WildShapeAbilityLevel,4]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23808,9 +23751,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, or a Small, Medium or Large plant creature.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,0],[PREVAREQ:NoElementalShape,1],[PREVAREQ:NoPlantShape,0]"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,4],[PREVARGTEQ:WildShapeAbilityLevel,4]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23819,9 +23800,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into a Small, Medium or Large elemental, or a Small, Medium or Large plant creature.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,1],[PREVAREQ:NoElementalShape,0],[PREVAREQ:NoPlantShape,0]"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,4],[PREVARGTEQ:WildShapeAbilityLevel,4]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23830,9 +23849,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,0],[PREVAREQ:NoElementalShape,1],[PREVAREQ:NoPlantShape,1]"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,4],[PREVARGTEQ:WildShapeAbilityLevel,4]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23841,9 +23898,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into a Small, Medium or Large elemental.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,1],[PREVAREQ:NoElementalShape,0],[PREVAREQ:NoPlantShape,1]"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,4],[PREVARGTEQ:WildShapeAbilityLevel,4]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23852,9 +23947,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into a Small, Medium or Large plant creature.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,1],[PREVAREQ:NoElementalShape,1],[PREVAREQ:NoPlantShape,0]"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,4],[PREVARGTEQ:WildShapeAbilityLevel,4]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23863,9 +23996,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, a Small, Medium, Large or Huge elemental, or a Small, Medium, Large or Huge plant creature.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,0],[PREVAREQ:NoElementalShape,0],[PREVAREQ:NoPlantShape,0]"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,5],[PREVARGTEQ:WildShapeAbilityLevel,5]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23874,9 +24045,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, or a Small, Medium, Large or Huge elemental.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,0],[PREVAREQ:NoElementalShape,0],[PREVAREQ:NoPlantShape,1]"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,5],[PREVARGTEQ:WildShapeAbilityLevel,5]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23885,9 +24094,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, or a Small, Medium, Large or Huge plant creature.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,0],[PREVAREQ:NoElementalShape,1],[PREVAREQ:NoPlantShape,0]"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,5],[PREVARGTEQ:WildShapeAbilityLevel,5]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23896,9 +24143,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into a Small, Medium, Large or Huge elemental, or a Small, Medium, Large or Huge plant creature.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,1],[PREVAREQ:NoElementalShape,0],[PREVAREQ:NoPlantShape,0]"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,5],[PREVARGTEQ:WildShapeAbilityLevel,5]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23907,9 +24192,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,0],[PREVAREQ:NoElementalShape,1],[PREVAREQ:NoPlantShape,1]"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,5],[PREVARGTEQ:WildShapeAbilityLevel,5]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23918,9 +24241,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into a Small, Medium, Large or Huge elemental.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,1],[PREVAREQ:NoElementalShape,0],[PREVAREQ:NoPlantShape,1]"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,5],[PREVARGTEQ:WildShapeAbilityLevel,5]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23929,9 +24290,47 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can change into a Small, Medium, Large or Huge plant creature.",
-    Arguments={
-      Formula("PREMULT:3,[PREVAREQ:NoAnimalShape,1],[PREVAREQ:NoElementalShape,1],[PREVAREQ:NoPlantShape,0]"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,5],[PREVARGTEQ:WildShapeAbilityLevel,5]"),
+    Conditions={
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["NoAnimalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoElementalShape"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["NoPlantShape"] == 0)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 3
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23940,9 +24339,27 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="When changing into an animal, this functions as Beast Shape I",
-    Arguments={
-      Formula("PREVAREQ:NoAnimalShape,0"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,1],[PREVARGTEQ:WildShapeAbilityLevel,1]"),
+    Conditions={
+      function (character)
+        return (character.Variables["NoAnimalShape"] == 0)
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 1)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23951,9 +24368,27 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="When changing into an animal, this functions as Beast Shape II",
-    Arguments={
-      Formula("PREVAREQ:NoAnimalShape,0"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,2],[PREVARGTEQ:WildShapeAbilityLevel,2]"),
+    Conditions={
+      function (character)
+        return (character.Variables["NoAnimalShape"] == 0)
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 2)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 2)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23962,9 +24397,27 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="When changing into an animal, this functions as Beast Shape III",
-    Arguments={
-      Formula("PREVAREQ:NoAnimalShape,0"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,3],[PREVARGTEQ:WildShapeAbilityLevel,3]"),
+    Conditions={
+      function (character)
+        return (character.Variables["NoAnimalShape"] == 0)
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23973,9 +24426,27 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="When changing into a plant, this functions as Plant Shape I",
-    Arguments={
-      Formula("PREVAREQ:NoPlantShape,0"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,3],[PREVARGTEQ:WildShapeAbilityLevel,3]"),
+    Conditions={
+      function (character)
+        return (character.Variables["NoPlantShape"] == 0)
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23984,9 +24455,27 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="When changing into a plant, this functions as Plant Shape II",
-    Arguments={
-      Formula("PREVAREQ:NoPlantShape,0"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,4],[PREVARGTEQ:WildShapeAbilityLevel,4]"),
+    Conditions={
+      function (character)
+        return (character.Variables["NoPlantShape"] == 0)
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -23995,9 +24484,27 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="When changing into a plant, this functions as Plant Shape III",
-    Arguments={
-      Formula("PREVAREQ:NoPlantShape,0"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,5],[PREVARGTEQ:WildShapeAbilityLevel,5]"),
+    Conditions={
+      function (character)
+        return (character.Variables["NoPlantShape"] == 0)
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -24006,9 +24513,27 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="When changing into an elemental, this functions as Elemental Body I",
-    Arguments={
-      Formula("PREVAREQ:NoElementalShape,0"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,2],[PREVARGTEQ:WildShapeAbilityLevel,2]"),
+    Conditions={
+      function (character)
+        return (character.Variables["NoElementalShape"] == 0)
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 2)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 2)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -24017,9 +24542,27 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="When changing into an elemental, this functions as Elemental Body II",
-    Arguments={
-      Formula("PREVAREQ:NoElementalShape,0"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,3],[PREVARGTEQ:WildShapeAbilityLevel,3]"),
+    Conditions={
+      function (character)
+        return (character.Variables["NoElementalShape"] == 0)
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 3)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -24028,9 +24571,27 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="When changing into an elemental, this functions as Elemental Body III",
-    Arguments={
-      Formula("PREVAREQ:NoElementalShape,0"),
-      Formula("PREMULT:2,[PREVAREQ:WildShapeProgression,4],[PREVARGTEQ:WildShapeAbilityLevel,4]"),
+    Conditions={
+      function (character)
+        return (character.Variables["NoElementalShape"] == 0)
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] == 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 4)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -24039,9 +24600,27 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="When changing into an elemental, this functions as Elemental Body IV",
-    Arguments={
-      Formula("PREVAREQ:NoElementalShape,0"),
-      Formula("PREMULT:2,[PREVARGTEQ:WildShapeProgression,5],[PREVARGTEQ:WildShapeAbilityLevel,5]"),
+    Conditions={
+      function (character)
+        return (character.Variables["NoElementalShape"] == 0)
+      end,
+      function (character)
+        local count = 0
+        local subCondition
+        subCondition = function (character)
+          return (character.Variables["WildShapeProgression"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        subCondition = function (character)
+          return (character.Variables["WildShapeAbilityLevel"] >= 5)
+        end
+        if subCondition(character) then
+          count = count + 1
+        end
+        return count >= 2
+      end,
     },
   },
 })
@@ -24212,8 +24791,6 @@ DefineAbility({
       Formula=Formula("(DruidLVL>=4)+(DruidLVL>=6)+(DruidLVL>=8)+(DruidLVL>=10)+(DruidLVL>=12)+(DruidLVL>=14)+(DruidLVL>=16)+(DruidLVL>=18)+(DruidLVL>=20)"),
       Type={
         Name="BASE",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WildShapeTimes",
@@ -24237,8 +24814,6 @@ DefineAbility({
       Formula=Formula("(DruidWildShape>=4)+(DruidWildShape>=6)+(DruidWildShape>=8)+(DruidWildShape>=10)+(DruidWildShape>=12)+(DruidWildShape>=14)+(DruidWildShape>=16)+(DruidWildShape>=18)+(DruidWildShape>=20)"),
       Type={
         Name="BASE",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WildShapeProgression",
@@ -25207,8 +25782,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="NonStackingCrit",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CRITMULTADD",
@@ -25706,7 +26279,11 @@ DefineAbility({
     Format="Thrown Weapons +%1",
     Arguments={
       Formula("WeaponTrainingThrown"),
-      Formula("PREVARGT:WeaponTrainingThrown,0"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["WeaponTrainingThrown"] > 0)
+      end,
     },
   },
   SourcePage="p.56",
@@ -27015,8 +27592,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingAxes"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27051,8 +27626,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingBladesHeavy"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27087,8 +27660,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingBladesLight"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27123,8 +27694,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingBows"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27159,8 +27728,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27172,8 +27739,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27208,8 +27773,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingCrossbows"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27244,8 +27807,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingDouble"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27280,8 +27841,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingFlails"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27316,8 +27875,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingHammers"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27352,8 +27909,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingMonk"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27388,8 +27943,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingNatural"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT.Weapon Group Natural",
@@ -27401,8 +27954,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27437,8 +27988,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingPoleArms"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27473,8 +28022,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingSpears"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27509,8 +28056,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingThrown"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27545,8 +28090,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingAxes"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27581,8 +28124,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingBladesHeavy"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27617,8 +28158,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingBladesLight"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27653,8 +28192,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingBows"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27689,8 +28226,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27702,8 +28237,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27738,8 +28271,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingCrossbows"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27774,8 +28305,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingDouble"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27810,8 +28339,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingFlails"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27846,8 +28373,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingHammers"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27882,8 +28407,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingMonk"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27918,8 +28441,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingNatural"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT.Weapon Group Natural",
@@ -27931,8 +28452,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -27967,8 +28486,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingPoleArms"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28003,8 +28520,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingSpears"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28039,8 +28554,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingThrown"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28075,8 +28588,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingAxes"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28111,8 +28622,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingBladesHeavy"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28147,8 +28656,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingBladesLight"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28183,8 +28690,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingBows"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28219,8 +28724,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28232,8 +28735,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28268,8 +28769,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingCrossbows"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28304,8 +28803,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingDouble"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28340,8 +28837,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingFlails"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28376,8 +28871,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingHammers"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28412,8 +28905,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingMonk"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28448,8 +28939,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingNatural"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT.Weapon Group Natural",
@@ -28461,8 +28950,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28497,8 +28984,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingPoleArms"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28533,8 +29018,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingSpears"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28569,8 +29052,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingThrown"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28605,8 +29086,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingAxes"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28641,8 +29120,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingBladesHeavy"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28677,8 +29154,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingBladesLight"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28713,8 +29188,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingBows"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28749,8 +29222,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28762,8 +29233,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28798,8 +29267,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingCrossbows"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28834,8 +29301,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingDouble"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28870,8 +29335,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingFlails"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28906,8 +29369,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingHammers"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28942,8 +29403,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingMonk"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -28978,8 +29437,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingNatural"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT.Weapon Group Natural",
@@ -28991,8 +29448,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingClose"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -29027,8 +29482,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingPoleArms"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -29063,8 +29516,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingSpears"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -29099,8 +29550,6 @@ DefineAbility({
       Formula=Formula("WeaponTrainingThrown"),
       Type={
         Name="WeaponTraining",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -29309,8 +29758,6 @@ DefineAbility({
       Formula=Formula("MonkFastMovementBonus"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -30435,9 +30882,13 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can make a flurry of blows as a full-attack action. When doing so, you may make one additional attack, taking a -2 penalty on all of your attacks, as if using the Two-Weapon Fighting feat. These attacks can be any combination of unarmed strikes and attacks with a monk speciak weapon (you do not need to use two weapons to utlilize this ability). For the purpose of these attacks, your base attack bonus is equal to your monk level. For all other purposes, such as qualifying for a feat or a prestige class, you use your normal base attack bonus.",
-    Arguments={
-      Formula("PREVARGTEQ:FlurryLVL,1"),
-      Formula("PREVARLT:FlurryLVL,8"),
+    Conditions={
+      function (character)
+        return (character.Variables["FlurryLVL"] >= 1)
+      end,
+      function (character)
+        return (character.Variables["FlurryLVL"] < 8)
+      end,
     },
   },
 })
@@ -30446,9 +30897,13 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can make a flurry of blows as a full-attack action. When doing so, you may make two additional attacks using any combination of unarmed strikes or attack with a special monk weapon (kama, nunchaku, quarterstaff, sai, shuriken, and siangham) as if using the Two-Weapon Fighting and Improved Two-Weapon Fighting feats. For the purpose of these attacks, your base attack bonus is equal to your monk level. For all other purposes, such as qualifying for a feat or a prestige class, you use your normal base attack bonus.",
-    Arguments={
-      Formula("PREVARGTEQ:FlurryLVL,8"),
-      Formula("PREVARLT:FlurryLVL,15"),
+    Conditions={
+      function (character)
+        return (character.Variables["FlurryLVL"] >= 8)
+      end,
+      function (character)
+        return (character.Variables["FlurryLVL"] < 15)
+      end,
     },
   },
 })
@@ -30457,8 +30912,10 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can make a flurry of blows as a full-attack action. When doing so, you may make three additional attacks using any combination of unarmed strikes or attack with a special monk weapon (kama, nunchaku, quarterstaff, sai, shuriken, and siangham) as if using the Two-Weapon Fighting, Improved Two-Weapon Fighting, and Greater Two-Weapon Fighting feats. For the purpose of these attacks, your base attack bonus is equal to your monk level. For all other purposes, such as qualifying for a feat or a prestige class, you use your normal base attack bonus.",
-    Arguments={
-      Formula("PREVARGTEQ:FlurryLVL,15"),
+    Conditions={
+      function (character)
+        return (character.Variables["FlurryLVL"] >= 15)
+      end,
     },
   },
 })
@@ -30467,9 +30924,13 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You gain Stunning Fist as a bonus feat. You can choose to make the target of your Stunning Fist fatigued. This condition replaces stunning the target for 1 round, and a successful saving throw still negates the effect. You must choose which condition will apply before the attack roll is made. These effects do not stack with themselves, but additional hits do increase the duration.",
-    Arguments={
-      Formula("PREVARGTEQ:StunningFistMonkLVL,4"),
-      Formula("PREVARLT:StunningFistMonkLVL,8"),
+    Conditions={
+      function (character)
+        return (character.Variables["StunningFistMonkLVL"] >= 4)
+      end,
+      function (character)
+        return (character.Variables["StunningFistMonkLVL"] < 8)
+      end,
     },
   },
 })
@@ -30478,9 +30939,13 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You gain Stunning Fist as a bonus feat. You can choose to make the target of your Stunning Fist fatigued, or sickened for 1 minute. This condition replaces stunning the target for 1 round, and a successful saving throw still negates the effect. You must choose which condition will apply before the attack roll is made. These effects do not stack with themselves, but additional hits do increase the duration.",
-    Arguments={
-      Formula("PREVARGTEQ:StunningFistMonkLVL,8"),
-      Formula("PREVARLT:StunningFistMonkLVL,12"),
+    Conditions={
+      function (character)
+        return (character.Variables["StunningFistMonkLVL"] >= 8)
+      end,
+      function (character)
+        return (character.Variables["StunningFistMonkLVL"] < 12)
+      end,
     },
   },
 })
@@ -30489,9 +30954,13 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You gain Stunning Fist as a bonus feat. You can choose to make the target of your Stunning Fist fatigued, sickened for 1 minute, or staggered for 1d6+1 rounds. This condition replaces stunning the target for 1 round, and a successful saving throw still negates the effect. You must choose which condition will apply before the attack roll is made. These effects do not stack with themselves, but additional hits do increase the duration.",
-    Arguments={
-      Formula("PREVARGTEQ:StunningFistMonkLVL,12"),
-      Formula("PREVARLT:StunningFistMonkLVL,16"),
+    Conditions={
+      function (character)
+        return (character.Variables["StunningFistMonkLVL"] >= 12)
+      end,
+      function (character)
+        return (character.Variables["StunningFistMonkLVL"] < 16)
+      end,
     },
   },
 })
@@ -30500,9 +30969,13 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You gain Stunning Fist as a bonus feat. You can choose to make the target of your Stunning Fist fatigued, sickened for 1 minute, staggered for 1d6+1 rounds, or permanently blinded or deafened. This condition replaces stunning the target for 1 round, and a successful saving throw still negates the effect. You must choose which condition will apply before the attack roll is made. These effects do not stack with themselves, but additional hits do increase the duration.",
-    Arguments={
-      Formula("PREVARGTEQ:MonkStunningFistLVL,16"),
-      Formula("PREVARLT:StunningFistMonkLVL,20"),
+    Conditions={
+      function (character)
+        return (character.Variables["MonkStunningFistLVL"] >= 16)
+      end,
+      function (character)
+        return (character.Variables["StunningFistMonkLVL"] < 20)
+      end,
     },
   },
 })
@@ -30511,8 +30984,10 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You gain Stunning Fist as a bonus feat. You can choose to make the target of your Stunning Fist fatigued, sickened for 1 minute, staggered for 1d6+1 rounds, permanently blinded or deafened, or paralyzed for 1d6+1 rounds. This condition replaces stunning the target for 1 round, and a successful saving throw still negates the effect. You must choose which condition will apply before the attack roll is made. These effects do not stack with themselves, but additional hits do increase the duration.",
-    Arguments={
-      Formula("PREVARGTEQ:StunningFistMonkLVL,20"),
+    Conditions={
+      function (character)
+        return (character.Variables["StunningFistMonkLVL"] >= 20)
+      end,
     },
   },
 })
@@ -30608,7 +31083,11 @@ ModifyAbility({
     Format="You have a pool of %1 ki points, supernatural energy you can use to accomplish amazing feats. As long as you have at least 1 point in your ki pool, you can make a ki strike. Ki Strike allows your unarmed attacks to be treated as magic weapons for the purpose of overcoming damage reduction. By spending 1 point from your ki pool, you can make one additional attack at your highest attack bonus when making a Flurry of Blows attack. In addition, you can spend 1 point to increase your speed by 20 feet for 1 round. Finally, you can spend 1 point from your ki pool to give yourself a +4 dodge bonus to AC for 1 round. Each use of these powers is activated as a swift action. The ki pool is replenished after 8 hours of rest or meditation; these hours do not need to be consecutive.",
     Arguments={
       Formula("KiPoints"),
-      Formula("PREVAREQ:KiPoolProgression,1"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["KiPoolProgression"] == 1)
+      end,
     },
   },
 })
@@ -30619,7 +31098,11 @@ ModifyAbility({
     Format="You have a pool of %1 ki points, supernatural energy you can use to accomplish amazing feats. As long as you have at least 1 point in your ki pool, you can make a ki strike. Ki Strike allows your unarmed attacks to be treated as magic, cold iron and silver weapons for the purpose of overcoming damage reduction. By spending 1 point from your ki pool, you can make one additional attack at your highest attack bonus when making a Flurry of Blows attack. In addition, you can spend 1 point to increase your speed by 20 feet for 1 round. Finally, you can spend 1 point from your ki pool to give yourself a +4 dodge bonus to AC for 1 round. Each use of these powers is activated as a swift action. The ki pool is replenished after 8 hours of rest or meditation; these hours do not need to be consecutive.",
     Arguments={
       Formula("KiPoints"),
-      Formula("PREVAREQ:KiPoolProgression,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["KiPoolProgression"] == 2)
+      end,
     },
   },
 })
@@ -30630,7 +31113,11 @@ ModifyAbility({
     Format="You have a pool of %1 ki points, supernatural energy you can use to accomplish amazing feats. As long as you have at least 1 point in your ki pool, you can make a ki strike. Ki strike allows your unarmed attacks to be treated as magic, cold iron, silver and lawful weapons for the purpose of overcoming damage reduction. By spending 1 point from your ki pool, you can make one additional attack at your highest attack bonus when making a Flurry of Blows attack. In addition, you can spend 1 point to increase your speed by 20 feet for 1 round. Finally, you can spend 1 point from your ki pool to give yourself a +4 dodge bonus to AC for 1 round. Each use of these powers is activated as a swift action. The ki pool is replenished after 8 hours of rest or meditation; these hours do not need to be consecutive.",
     Arguments={
       Formula("KiPoints"),
-      Formula("PREVAREQ:KiPoolProgression,3"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["KiPoolProgression"] == 3)
+      end,
     },
   },
 })
@@ -30641,7 +31128,11 @@ ModifyAbility({
     Format="You have a pool of %1 ki points, supernatural energy you can use to accomplish amazing feats. As long as you have at least 1 point in your ki pool, you can make a ki strike. Ki strike allows your unarmed attacks to be treated as magic, cold iron, silver, lawful, and adamantine weapons for the purpose of overcoming damage reduction and bypassing hardness. By spending 1 point from your ki pool, you can make one additional attack at your highest attack bonus when making a Flurry of Blows attack. In addition, you can spend 1 point to increase your speed by 20 feet for 1 round. Finally, you can spend 1 point from your ki pool to give yourself a +4 dodge bonus to AC for 1 round. Each use of these powers is activated as a swift action. The ki pool is replenished after 8 hours of rest or meditation; these hours do not need to be consecutive.",
     Arguments={
       Formula("KiPoints"),
-      Formula("PREVAREQ:KiPoolProgression,4"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["KiPoolProgression"] == 4)
+      end,
     },
   },
 })
@@ -30652,7 +31143,11 @@ ModifyAbility({
     Format="If you are within arm's reach of a wall, you can use it to slow your descent. You take damage as if the fall were %1 feet shorter than it actually is.",
     Arguments={
       Formula("SlowFall"),
-      Formula("PREVARLT:SlowFallLVL,20"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["SlowFallLVL"] < 20)
+      end,
     },
   },
 })
@@ -30661,8 +31156,10 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You can use a nearby wall to slow your descent and fall any distance without harm.",
-    Arguments={
-      Formula("PREVAREQ:SlowFallLVL,20"),
+    Conditions={
+      function (character)
+        return (character.Variables["SlowFallLVL"] == 20)
+      end,
     },
   },
 })
@@ -31622,8 +32119,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="NonStackingCrit",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CRITRANGEDOUBLE",
@@ -32631,8 +33126,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -32643,8 +33136,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -32665,8 +33156,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -32677,8 +33166,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -32699,8 +33186,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -32711,8 +33196,6 @@ DefineAbility({
       Formula=Formula("3"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -32733,8 +33216,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -32745,8 +33226,6 @@ DefineAbility({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -32767,8 +33246,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -32779,8 +33256,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -32801,8 +33276,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -32813,8 +33286,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -32835,8 +33306,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -32847,8 +33316,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -32869,8 +33336,6 @@ DefineAbility({
       Formula=Formula("3"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -32881,8 +33346,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -32903,8 +33366,6 @@ DefineAbility({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -32915,8 +33376,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -32937,8 +33396,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -32949,8 +33406,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -32971,8 +33426,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -32983,8 +33436,6 @@ DefineAbility({
       Formula=Formula("3"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33005,8 +33456,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33017,8 +33466,6 @@ DefineAbility({
       Formula=Formula("5"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33039,8 +33486,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33051,8 +33496,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33073,8 +33516,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33085,8 +33526,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33107,8 +33546,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33119,8 +33556,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33141,8 +33576,6 @@ DefineAbility({
       Formula=Formula("3"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33153,8 +33586,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33175,8 +33606,6 @@ DefineAbility({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33187,8 +33616,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33209,8 +33636,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33221,8 +33646,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33243,8 +33666,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33255,8 +33676,6 @@ DefineAbility({
       Formula=Formula("3"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33277,8 +33696,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33289,8 +33706,6 @@ DefineAbility({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33311,8 +33726,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33323,8 +33736,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33345,8 +33756,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33357,8 +33766,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33379,8 +33786,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33391,8 +33796,6 @@ DefineAbility({
       Formula=Formula("10"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33413,8 +33816,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33425,8 +33826,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33447,8 +33846,6 @@ DefineAbility({
       Formula=Formula("3"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33459,8 +33856,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33481,8 +33876,6 @@ DefineAbility({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33493,8 +33886,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33515,8 +33906,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33527,8 +33916,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33549,8 +33936,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33561,8 +33946,6 @@ DefineAbility({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33583,8 +33966,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33595,8 +33976,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33617,8 +33996,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33629,8 +34006,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33651,8 +34026,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33663,8 +34036,6 @@ DefineAbility({
       Formula=Formula("10"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33685,8 +34056,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33697,8 +34066,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33719,8 +34086,6 @@ DefineAbility({
       Formula=Formula("3"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33731,8 +34096,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33753,8 +34116,6 @@ DefineAbility({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33765,8 +34126,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33787,8 +34146,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33799,8 +34156,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33821,8 +34176,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33833,8 +34186,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33855,8 +34206,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33867,8 +34216,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33889,8 +34236,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33901,8 +34246,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33923,8 +34266,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33935,8 +34276,6 @@ DefineAbility({
       Formula=Formula("10"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33957,8 +34296,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -33969,8 +34306,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -33991,8 +34326,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -34003,8 +34336,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -34025,8 +34356,6 @@ DefineAbility({
       Formula=Formula("3"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -34037,8 +34366,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -34059,8 +34386,6 @@ DefineAbility({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -34071,8 +34396,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -34093,8 +34416,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -34105,8 +34426,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -34127,8 +34446,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -34139,8 +34456,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -34161,8 +34476,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -34173,8 +34486,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -34195,8 +34506,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -34207,8 +34516,6 @@ DefineAbility({
       Formula=Formula("10"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -34229,8 +34536,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -34241,8 +34546,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -34263,8 +34566,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -34275,8 +34576,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -34297,8 +34596,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -34309,8 +34606,6 @@ DefineAbility({
       Formula=Formula("10"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -34331,8 +34626,6 @@ DefineAbility({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -34343,8 +34636,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -34365,8 +34656,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -34377,8 +34666,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -34399,8 +34686,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -34411,8 +34696,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -34433,8 +34716,6 @@ DefineAbility({
       Formula=Formula("12"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageDice",
@@ -34445,8 +34726,6 @@ DefineAbility({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PrimaryAttackDamageSize",
@@ -35284,8 +35563,14 @@ ModifyAbility({
     Arguments={
       Formula("DivineBondTimes"),
       Formula("SpecialMountSpellLevel"),
-      Formula("PREVARGTEQ:DivineBondLVL,5"),
-      Formula("PREVARLT:DivineBondLVL,11"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DivineBondLVL"] >= 5)
+      end,
+      function (character)
+        return (character.Variables["DivineBondLVL"] < 11)
+      end,
     },
   },
 })
@@ -35297,8 +35582,14 @@ ModifyAbility({
     Arguments={
       Formula("DivineBondTimes"),
       Formula("SpecialMountSpellLevel"),
-      Formula("PREVARGTEQ:DivineBondLVL,11"),
-      Formula("PREVARLT:DivineBondLVL,15"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DivineBondLVL"] >= 11)
+      end,
+      function (character)
+        return (character.Variables["DivineBondLVL"] < 15)
+      end,
     },
   },
 })
@@ -35311,8 +35602,14 @@ ModifyAbility({
       Formula("DivineBondTimes"),
       Formula("SpecialMountSR"),
       Formula("SpecialMountSpellLevel"),
-      Formula("PREVARGTEQ:DivineBondLVL,11"),
-      Formula("PREVARLT:DivineBondLVL,15"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DivineBondLVL"] >= 11)
+      end,
+      function (character)
+        return (character.Variables["DivineBondLVL"] < 15)
+      end,
     },
   },
 })
@@ -36048,8 +36345,12 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="This is not Allowed with the Archetype you selected.",
-    Arguments={
-      Formula("PREABILITY:1,CATEGORY=Archetype,TYPE.RangerAnimalCompanion"),
+    Conditions={
+      function (character)
+        return 1 <= #filter(character.Abilities, function (ability)
+          return ability.Category == "Archetype" and (ability.Type == "RangerAnimalCompanion")
+        end)
+      end,
     },
   },
   SourcePage="p.51",
@@ -40877,8 +41178,6 @@ DefineAbility({
       Formula=Formula("TrapfindingBonus"),
       Type={
         Name="Trapfinding",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Perception=Trapfinding",
@@ -40889,8 +41188,6 @@ DefineAbility({
       Formula=Formula("TrapfindingBonus"),
       Type={
         Name="Trapfinding",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Disable Device",
@@ -40901,8 +41198,6 @@ DefineAbility({
       Formula=Formula("max(TrapfindingLVL/2,1)"),
       Type={
         Name="Trapfinding",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TrapfindingBonus",
@@ -41021,7 +41316,6 @@ DefineAbility({
       Type={
         Name="EachClass",
         Replace=true,
-        Stack=false,
       },
       Variables={
         "UncannyDodgeFlankingLevel",
@@ -41165,7 +41459,6 @@ ModifyAbility({
       Type={
         Name="EachClass",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -41442,8 +41735,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CombatTrickAllowed",
@@ -42018,7 +42309,11 @@ DefineAbility({
     Format=" You get %1 extra chances to succeed on your saving throw.",
     Arguments={
       Formula("SlipperymindTimes"),
-      Formula("PREVARGTEQ:SlipperymindTimes,1"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["SlipperymindTimes"] >= 1)
+      end,
     },
   },
   SourcePage="p.70",
@@ -42208,8 +42503,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "HasSorcererBloodline",
@@ -42272,8 +42565,6 @@ ModifyAbility({
       Formula=Formula("SorcererLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BloodlineLVL",
@@ -42290,8 +42581,6 @@ ModifyAbility({
       Formula=Formula("SorcererLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BloodlineCasterLVL",
@@ -42308,8 +42597,6 @@ ModifyAbility({
       Formula=Formula("SorcererLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BloodlineProgressionLVL",
@@ -42326,8 +42613,6 @@ ModifyAbility({
       Formula=Formula("3+CHA"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BloodlinePowerTimes",
@@ -42344,8 +42629,6 @@ ModifyAbility({
       Formula=Formula("BloodlineProgressionLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BloodlineFeatProgression",
@@ -42362,8 +42645,6 @@ ModifyAbility({
       Formula=Formula("(BloodlineFeatProgression-1)/6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BloodlineFeatCount",
@@ -53024,8 +53305,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="There is a taint in your blood, one that is alien and bizarre. You tend to think in odd ways, approaching problems from an angle that most would not expect. Over time, this taint manifests itself in your physical form.",
-    Arguments={
-      Formula("PREVAREQ:Sorcerer_Aberrant_Description,0"),
+    Conditions={
+      function (character)
+        return (character.Variables["Sorcerer_Aberrant_Description"] == 0)
+      end,
     },
   },
   SourcePage="p.72",
@@ -53299,8 +53582,6 @@ DefineAbility({
       Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Sorcerer_Aberrant_BloodlinePower1Times",
@@ -53938,8 +54219,6 @@ DefineAbility({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BlindsightRange",
@@ -53972,8 +54251,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="Generations ago, a demon spread its filth into your heritage. While it does not manifest in all of your kin, for you it is particularly strong. You might sometimes have urges to chaos or evil, but your destiny (and alignment) is up to you.",
-    Arguments={
-      Formula("PREVAREQ:Sorcerer_Abyssal_Description,0"),
+    Conditions={
+      function (character)
+        return (character.Variables["Sorcerer_Abyssal_Description"] == 0)
+      end,
     },
   },
   SourcePage="p.72",
@@ -54247,8 +54528,6 @@ DefineAbility({
       Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Sorcerer_Abyssal_BloodlinePower1Times",
@@ -54666,8 +54945,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -54763,8 +55040,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_AbyssalDemonResistances_ResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ElectricityResistanceBonus",
@@ -54813,8 +55088,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_AbyssalStrengthOfTheAbyss_StrBonus*2"),
       Type={
         Name="Inherent",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -54929,8 +55202,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_AbyssalDemonicMight_ResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AcidResistanceBonus",
@@ -55247,8 +55518,6 @@ DefineAbility({
       Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Sorcerer_Arcane_BloodlinePower1Times",
@@ -55811,8 +56080,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="SchoolPower",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SCHOOL.%LIST",
@@ -56125,8 +56392,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="Your bloodline is blessed by a celestial power, either from a celestial ancestor or through divine intervention. Although this power drives you along the path of good, your fate (and alignment) is your own to determine.",
-    Arguments={
-      Formula("PREVAREQ:Sorcerer_Celestial_Description,0"),
+    Conditions={
+      function (character)
+        return (character.Variables["Sorcerer_Celestial_Description"] == 0)
+      end,
     },
   },
   SourcePage="p.74",
@@ -56400,8 +56669,6 @@ DefineAbility({
       Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Sorcerer_Celestial_BloodlinePower1Times",
@@ -56830,8 +57097,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_CelestialCelestialResistances_ResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AcidResistanceBonus",
@@ -56864,8 +57129,12 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="You can sprout feathery wings and fly with a speed of 60 feet and good maneuverability.",
-    Arguments={
-      Formula("PREABILITY:1,CATEGORY=Special Ability,Celestial Bloodline ~ Ascension"),
+    Conditions={
+      function (character)
+        return 1 <= #filter(character.Abilities, function (ability)
+          return ability.Category == "Special Ability" and (ability.Name == "Celestial Bloodline ~ Ascension")
+        end)
+      end,
     },
   },
   SourcePage="p.74",
@@ -57072,8 +57341,6 @@ DefineAbility({
       Formula=Formula("4"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Sorcerer_CelestialAscension_SaveBonus",
@@ -57084,8 +57351,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_CelestialAscension_ResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FireResistanceBonus",
@@ -57122,8 +57387,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="Your family is destined for greatness in some way. Your birth could have been foretold in prophecy, or perhaps it occurred during an especially auspicious event, such as a solar eclipse. Regardless of your bloodline's origin, you have a great future ahead.",
-    Arguments={
-      Formula("PREVAREQ:Sorcerer_Destined_Description,0"),
+    Conditions={
+      function (character)
+        return (character.Variables["Sorcerer_Destined_Description"] == 0)
+      end,
     },
   },
   SourcePage="p.74",
@@ -57397,8 +57664,6 @@ DefineAbility({
       Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Sorcerer_Destined_BloodlinePower1Times",
@@ -57823,8 +58088,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="You can use this ability twice per day.",
-    Arguments={
-      Formula("PREVARGT:Sorcerer_DestinedItWasMeantToBe_Times,1"),
+    Conditions={
+      function (character)
+        return (character.Variables["Sorcerer_DestinedItWasMeantToBe_Times"] > 1)
+      end,
     },
   },
   SourcePage="p.74",
@@ -57987,8 +58254,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="At some point in your family's history, a dragon interbred with your bloodline, and now its ancient power flows through your veins.",
-    Arguments={
-      Formula("PREVAREQ:Sorcerer_Draconic_Description,0"),
+    Conditions={
+      function (character)
+        return (character.Variables["Sorcerer_Draconic_Description"] == 0)
+      end,
     },
   },
   SourcePage="p.75",
@@ -58269,8 +58538,6 @@ DefineAbility({
       Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Sorcerer_Draconic_BloodlinePower1Times",
@@ -58792,8 +59059,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -58860,7 +59125,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_DraconicDragonResistances_NaturalArmorBonus"),
       Type={
         Name="NaturalArmor",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -58898,8 +59162,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_DraconicDragonResistances_ResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -58915,8 +59177,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_DraconicDragonResistances_ResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -58932,8 +59192,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_DraconicDragonResistances_ResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -58949,8 +59207,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_DraconicDragonResistances_ResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -58989,7 +59245,11 @@ DefineAbility({
     Format="You can use this ability %1 times per day.",
     Arguments={
       Formula("Sorcerer_DraconicBreathWeapon_Times"),
-      Formula("PREVARGTEQ:Sorcerer_DraconicBreathWeapon_Times,4"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["Sorcerer_DraconicBreathWeapon_Times"] >= 4)
+      end,
     },
   },
   SourcePage="p.75",
@@ -59214,8 +59474,6 @@ DefineAbility({
       Formula=Formula("3"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Maneuverability",
@@ -59323,8 +59581,6 @@ DefineAbility({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BlindsenseRange",
@@ -59947,8 +60203,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="The power of the elements resides in you, and at times you can hardly control its fury. This influence comes from an elemental outsider in your family history or a time when you or your relatives were exposed to a powerful elemental force.",
-    Arguments={
-      Formula("PREVAREQ:Sorcerer_Elemental_Description,0"),
+    Conditions={
+      function (character)
+        return (character.Variables["Sorcerer_Elemental_Description"] == 0)
+      end,
     },
   },
   SourcePage="p.75",
@@ -60229,8 +60487,6 @@ DefineAbility({
       Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Sorcerer_Elemental_BloodlinePower1Times",
@@ -60642,8 +60898,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="fire.",
-    Arguments={
-      Formula("PREVARGTEQ:Sorcerer_ElementalBloodlineChoice_Fire,1"),
+    Conditions={
+      function (character)
+        return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
+      end,
     },
   },
   SourcePage="p.75",
@@ -60901,8 +61159,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="fire.",
-    Arguments={
-      Formula("PREVARGTEQ:Sorcerer_ElementalBloodlineChoice_Fire,1"),
+    Conditions={
+      function (character)
+        return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
+      end,
     },
   },
   SourcePage="p.76",
@@ -60925,8 +61185,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_ElementalElementalResistance_ResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -60942,8 +61200,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_ElementalElementalResistance_ResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -60959,8 +61215,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_ElementalElementalResistance_ResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -60976,8 +61230,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_ElementalElementalResistance_ResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -61137,8 +61389,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="You gain a swim speed of 60 feet.",
-    Arguments={
-      Formula("PREVARGTEQ:Sorcerer_ElementalBloodlineChoice_Water,1"),
+    Conditions={
+      function (character)
+        return (character.Variables["Sorcerer_ElementalBloodlineChoice_Water"] >= 1)
+      end,
     },
   },
   SourcePage="p.76",
@@ -61224,8 +61478,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="fire.",
-    Arguments={
-      Formula("PREVARGTEQ:Sorcerer_ElementalBloodlineChoice_Fire,1"),
+    Conditions={
+      function (character)
+        return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
+      end,
     },
   },
   SourcePage="p.76",
@@ -61531,8 +61787,6 @@ DefineAbility({
       Formula=Formula("3"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Maneuverability",
@@ -61563,8 +61817,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="The capricious nature of the fey runs in your family due to some intermingling of fey blood or magic. You are more emotional than most, prone to bouts of joy and rage.",
-    Arguments={
-      Formula("PREVAREQ:Sorcerer_Fey_Description,0"),
+    Conditions={
+      function (character)
+        return (character.Variables["Sorcerer_Fey_Description"] == 0)
+      end,
     },
   },
   SourcePage="p.76",
@@ -61838,8 +62094,6 @@ DefineAbility({
       Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Sorcerer_Fey_BloodlinePower1Times",
@@ -62392,8 +62646,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="Somewhere in your family's history, a relative made a deal with a devil, and that pact has influenced your family line ever since. In you, it manifests in direct and obvious ways, granting you powers and abilities. While your fate is still your own, you can't help but wonder if your ultimate reward is bound to the Pit.",
-    Arguments={
-      Formula("PREVAREQ:Sorcerer_Infernal_Description,0"),
+    Conditions={
+      function (character)
+        return (character.Variables["Sorcerer_Infernal_Description"] == 0)
+      end,
     },
   },
   SourcePage="p.76",
@@ -62667,8 +62923,6 @@ DefineAbility({
       Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Sorcerer_Infernal_BloodlinePower1Times",
@@ -63103,8 +63357,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_InfernalInfernalResistances_ResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FireResistanceBonus",
@@ -63304,8 +63556,6 @@ DefineAbility({
       Formula=Formula("10"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AcidResistanceBonus",
@@ -63316,8 +63566,6 @@ DefineAbility({
       Formula=Formula("10"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ColdResistanceBonus",
@@ -63357,8 +63605,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="The taint of the grave runs through your family. Perhaps one of your ancestors became a powerful lich or vampire, or maybe you were born dead before suddenly returning to life. Either way, the forces of death move through you and touch your every action.",
-    Arguments={
-      Formula("PREVAREQ:Sorcerer_Undead_Description,0"),
+    Conditions={
+      function (character)
+        return (character.Variables["Sorcerer_Undead_Description"] == 0)
+      end,
     },
   },
   SourcePage="p.77",
@@ -63632,8 +63882,6 @@ DefineAbility({
       Formula=Formula("BloodlinePowerTimes+BloodlinePower1TimesBonus"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Sorcerer_Undead_BloodlinePower1Times",
@@ -64066,8 +64314,6 @@ DefineAbility({
       Formula=Formula("Sorcerer_UndeadDeathsGift_ResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ColdResistanceBonus",
@@ -64393,8 +64639,12 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="(You have selected to establish a powerful arcane bond with a creature.)",
-    Arguments={
-      Formula("PREABILITY:1,CATEGORY=Special Ability,Arcane Bond ~ Familiar"),
+    Conditions={
+      function (character)
+        return 1 <= #filter(character.Abilities, function (ability)
+          return ability.Category == "Special Ability" and (ability.Name == "Arcane Bond ~ Familiar")
+        end)
+      end,
     },
   },
   SourcePage="p.78",
@@ -64570,8 +64820,6 @@ DefineAbility({
       Formula=Formula("ArcaneBondLVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FamiliarMasterLVL",
@@ -66615,8 +66863,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="You gain immunity to an energy type of your choice, chosen when you prepare spells. This immunity can be changed each day.",
-    Arguments={
-      Formula("PREVARGTEQ:AbjurationProgressionSchoolLVL,20"),
+    Conditions={
+      function (character)
+        return (character.Variables["AbjurationProgressionSchoolLVL"] >= 20)
+      end,
     },
   },
   SourcePage="p.79",
@@ -66779,8 +67029,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="You can change the duration of all Summon Monster spells to permanent. You can have no more than one Summon Monster spell made permanent in this way at one time. If you designate another Summon Monster spell as permanent, the previous spell immediately ends.",
-    Arguments={
-      Formula("PREVARGTEQ:ConjurationProgressionSchoolLVL,20"),
+    Conditions={
+      function (character)
+        return (character.Variables["ConjurationProgressionSchoolLVL"] >= 20)
+      end,
     },
   },
   SourcePage="p.80",
@@ -66896,8 +67148,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="Anytime you roll initiative, assume the roll resulted in a natural 20.",
-    Arguments={
-      Formula("PREVARGTEQ:DivinationProgressionSchoolLVL,20"),
+    Conditions={
+      function (character)
+        return (character.Variables["DivinationProgressionSchoolLVL"] >= 20)
+      end,
     },
   },
   SourcePage="p.80",
@@ -66996,8 +67250,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="Whenever you succeed at a saving throw against a spell of the enchantment school, that spell is reflected back at its caster, as per Spell Turning.",
-    Arguments={
-      Formula("PREVARGTEQ:EnchantmentProgressionSchoolLVL,20"),
+    Conditions={
+      function (character)
+        return (character.Variables["EnchantmentProgressionSchoolLVL"] >= 20)
+      end,
     },
   },
   SourcePage="p.81",
@@ -67007,8 +67263,6 @@ DefineAbility({
       Formula=Formula("EnchantmentEnchantingSmileBonus"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Bluff",
@@ -67128,8 +67382,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="Whenever you cast an evocation spell you can roll twice to penetrate a creature's spell resistance and take the better result.",
-    Arguments={
-      Formula("PREVARGTEQ:EvocationProgressionSchoolLVL,20"),
+    Conditions={
+      function (character)
+        return (character.Variables["EvocationProgressionSchoolLVL"] >= 20)
+      end,
     },
   },
   SourcePage="p.81",
@@ -67247,8 +67503,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="You can make one illusion spell with a duration of \"Concentration\" become permanent. You can have no more than one illusion made permanent in this way at one time. If you designate another illusion as permanent, the previous permanent illusion ends.",
-    Arguments={
-      Formula("PREVARGTEQ:IllusionProgressionSchoolLVL,20"),
+    Conditions={
+      function (character)
+        return (character.Variables["IllusionProgressionSchoolLVL"] >= 20)
+      end,
     },
   },
   SourcePage="p.81",
@@ -67517,8 +67775,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="Undead cannot add their channel resistance to the save against your Command Undead ability.",
-    Arguments={
-      Formula("PREVARGTEQ:PowerOverUndeadLVL,20"),
+    Conditions={
+      function (character)
+        return (character.Variables["PowerOverUndeadLVL"] >= 20)
+      end,
     },
   },
   ServesAs={
@@ -67565,8 +67825,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="Undead cannot add their channel resistance to the save against your Turn ability.",
-    Arguments={
-      Formula("PREVARGTEQ:PowerOverUndeadLVL,20"),
+    Conditions={
+      function (character)
+        return (character.Variables["PowerOverUndeadLVL"] >= 20)
+      end,
     },
   },
   ServesAs={
@@ -67609,7 +67871,11 @@ DefineAbility({
     Format="You gain a +%1 enhancement bonus to two physical ability scores (Strength, Dexterity, or Constitution). You can change this bonus to new ability scores when you prepare spells.",
     Arguments={
       Formula("TransmutationPhysicalEnhancementBonus"),
-      Formula("PREVAREQ:TransmutationProgressionSchoolLVL,20"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["TransmutationProgressionSchoolLVL"] == 20)
+      end,
     },
   },
   SourcePage="p.82",
@@ -67669,8 +67935,6 @@ DefineAbility({
       Formula=Formula("TransmutationPhysicalEnhancementBonus"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -67692,8 +67956,6 @@ DefineAbility({
       Formula=Formula("TransmutationPhysicalEnhancementBonus"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -67715,8 +67977,6 @@ DefineAbility({
       Formula=Formula("TransmutationPhysicalEnhancementBonus"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CON",
@@ -67790,8 +68050,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="This ability otherwise functions like Beast Shape III or elemental body II.",
-    Arguments={
-      Formula("PREVARGTEQ:TransmutationProgressionSchoolLVL,12"),
+    Conditions={
+      function (character)
+        return (character.Variables["TransmutationProgressionSchoolLVL"] >= 12)
+      end,
     },
   },
   SourcePage="p.82",
@@ -69901,8 +70163,6 @@ DefineAbility({
       Formula=Formula("4"),
       Type={
         Name="OnceOnly",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "UncannyDodgeFlankingLevel",
@@ -70126,8 +70386,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SneakAttackDieSize",
@@ -70191,7 +70449,11 @@ DefineAbility({
     Format=" You get %1 extra chances to succeed on your saving throw.",
     Arguments={
       Formula("SlipperymindTimes"),
-      Formula("PREVARGTEQ:SlipperymindTimes,1"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["SlipperymindTimes"] >= 1)
+      end,
     },
   },
   SourcePage="p.70",
@@ -70205,8 +70467,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="You project an overwhelming chaotic aura.",
-    Arguments={
-      Formula("PREVARGTEQ:AuraChaosLVL,11"),
+    Conditions={
+      function (character)
+        return (character.Variables["AuraChaosLVL"] >= 11)
+      end,
     },
   },
   Visible=true,
@@ -70232,8 +70496,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="You project an overwhelming evil aura.",
-    Arguments={
-      Formula("PREVARGTEQ:AuraEvilLVL,11"),
+    Conditions={
+      function (character)
+        return (character.Variables["AuraEvilLVL"] >= 11)
+      end,
     },
   },
   Visible=true,
@@ -70259,8 +70525,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="You project an overwhelming good aura.",
-    Arguments={
-      Formula("PREVARGTEQ:AuraGoodLVL,11"),
+    Conditions={
+      function (character)
+        return (character.Variables["AuraGoodLVL"] >= 11)
+      end,
     },
   },
   Visible=true,
@@ -70286,8 +70554,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="You project an overwhelming lawful aura.",
-    Arguments={
-      Formula("PREVARGTEQ:AuraLawLVL,11"),
+    Conditions={
+      function (character)
+        return (character.Variables["AuraLawLVL"] >= 11)
+      end,
     },
   },
   Visible=true,
@@ -70466,8 +70736,6 @@ ModifyAbility({
       Formula=Formula("STR"),
       Type={
         Name="Stat",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -70483,8 +70751,6 @@ ModifyAbility({
       Formula=Formula("DEX"),
       Type={
         Name="Stat",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -70503,8 +70769,6 @@ ModifyAbility({
       Formula=Formula("CHA"),
       Type={
         Name="Stat",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -71259,8 +71523,6 @@ DefineAbility({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SneakAttackDieSize",
@@ -71558,7 +71820,6 @@ DefineAbility({
       Type={
         Name="EachClass",
         Replace=true,
-        Stack=false,
       },
       Variables={
         "UncannyDodgeFlankingLevel",
@@ -71690,7 +71951,6 @@ DefineAbility({
       Formula=Formula("DragonDiscipleArmorBonus"),
       Type={
         Name="NaturalArmor",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -72258,8 +72518,6 @@ DefineAbility({
       Formula=Formula("max(0,min(INT,CannyDefenseLVL))"),
       Type={
         Name="Dodge",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -73112,8 +73370,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Dodge",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -73421,8 +73677,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="As a special use of bardic music, a 6th level Pathfinder chronicler can exhort any one ally within hearing to a sudden surge of action, allowing her ally to immediately take an extra move action. This does not count against the ally's number of actions on his own turn.",
-    Arguments={
-      Formula("PREVAREQ:InspireActionBonus,0"),
+    Conditions={
+      function (character)
+        return (character.Variables["InspireActionBonus"] == 0)
+      end,
     },
   },
   SourcePage="p.391",
@@ -73846,7 +74104,6 @@ DefineAbility({
       Type={
         Name="EachClass",
         Replace=true,
-        Stack=false,
       },
       Variables={
         "UncannyDodgeFlankingLevel",
@@ -78408,8 +78665,6 @@ ModifyAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SLA_Base_LVL",
@@ -78420,8 +78675,6 @@ ModifyAbility({
       Formula=Formula("TL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -78461,8 +78714,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Acid_Splash_Times",
@@ -78473,8 +78724,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Acid_Splash_LVL",
@@ -78540,8 +78789,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Arcane_Mark_Times",
@@ -78552,8 +78799,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Arcane_Mark_LVL",
@@ -78619,8 +78864,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Bleed_Times",
@@ -78631,8 +78874,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Bleed_LVL",
@@ -78698,8 +78939,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Create_Water_Times",
@@ -78710,8 +78949,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Create_Water_LVL",
@@ -78777,8 +79014,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Dancing_Lights_Times",
@@ -78789,8 +79024,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Dancing_Lights_LVL",
@@ -78856,8 +79089,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Daze_Times",
@@ -78868,8 +79099,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Daze_LVL",
@@ -78935,8 +79164,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Detect_Magic_Times",
@@ -78947,8 +79174,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Detect_Magic_LVL",
@@ -79014,8 +79239,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Detect_Poison_Times",
@@ -79026,8 +79249,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Detect_Poison_LVL",
@@ -79093,8 +79314,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Disrupt_Undead_Times",
@@ -79105,8 +79324,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Disrupt_Undead_LVL",
@@ -79172,8 +79389,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Flare_Times",
@@ -79184,8 +79399,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Flare_LVL",
@@ -79251,8 +79464,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Ghost_Sound_Times",
@@ -79263,8 +79474,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Ghost_Sound_LVL",
@@ -79330,8 +79539,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Guidance_Times",
@@ -79342,8 +79549,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Guidance_LVL",
@@ -79409,8 +79614,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Know_Direction_Times",
@@ -79421,8 +79624,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Know_Direction_LVL",
@@ -79488,8 +79689,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Light_Times",
@@ -79500,8 +79699,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Light_LVL",
@@ -79567,8 +79764,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Lullaby_Times",
@@ -79579,8 +79774,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Lullaby_LVL",
@@ -79646,8 +79839,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Mage_Hand_Times",
@@ -79658,8 +79849,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Mage_Hand_LVL",
@@ -79725,8 +79914,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Mending_Times",
@@ -79737,8 +79924,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Mending_LVL",
@@ -79804,8 +79989,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Message_Times",
@@ -79816,8 +79999,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Message_LVL",
@@ -79883,8 +80064,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Open_Close_Times",
@@ -79895,8 +80074,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Open_Close_LVL",
@@ -79962,8 +80139,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Prestidigitation_Times",
@@ -79974,8 +80149,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Prestidigitation_LVL",
@@ -80041,8 +80214,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Purify_Food_and_Drink_Times",
@@ -80053,8 +80224,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Purify_Food_and_Drink_LVL",
@@ -80120,8 +80289,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Ray_of_Frost_Times",
@@ -80132,8 +80299,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Ray_of_Frost_LVL",
@@ -80199,8 +80364,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Read_Magic_Times",
@@ -80211,8 +80374,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Read_Magic_LVL",
@@ -80278,8 +80439,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Resistance_Times",
@@ -80290,8 +80449,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Resistance_LVL",
@@ -80357,8 +80514,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Stabilize_Times",
@@ -80369,8 +80524,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Stabilize_LVL",
@@ -80436,8 +80589,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Summon_Instrument_Times",
@@ -80448,8 +80599,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Summon_Instrument_LVL",
@@ -80515,8 +80664,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Touch_of_Fatigue_Times",
@@ -80527,8 +80674,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Touch_of_Fatigue_LVL",
@@ -80594,8 +80739,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Virtue_Times",
@@ -80606,8 +80749,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Virtue_LVL",
@@ -81210,8 +81351,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Calm_Animals_Times",
@@ -81222,8 +81361,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Calm_Animals_LVL",
@@ -81289,8 +81426,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Charm_Animal_Times",
@@ -81301,8 +81436,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Charm_Animal_LVL",
@@ -81368,8 +81501,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Cure_Light_Wounds_Times",
@@ -81380,8 +81511,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Cure_Light_Wounds_LVL",
@@ -81447,8 +81576,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Detect_Animals_or_Plants_Times",
@@ -81459,8 +81586,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Detect_Animals_or_Plants_LVL",
@@ -81526,8 +81651,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Detect_Snares_and_Pits_Times",
@@ -81538,8 +81661,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Detect_Snares_and_Pits_LVL",
@@ -81605,8 +81726,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Endure_Elements_Times",
@@ -81617,8 +81736,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Endure_Elements_LVL",
@@ -81684,8 +81801,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Entangle_Times",
@@ -81696,8 +81811,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Entangle_LVL",
@@ -81763,8 +81876,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Faerie_Fire_Times",
@@ -81775,8 +81886,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Faerie_Fire_LVL",
@@ -81842,8 +81951,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Goodberry_Times",
@@ -81854,8 +81961,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Goodberry_LVL",
@@ -81921,8 +82026,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Hide_from_Animals_Times",
@@ -81933,8 +82036,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Hide_from_Animals_LVL",
@@ -82000,8 +82101,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Jump_Times",
@@ -82012,8 +82111,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Jump_LVL",
@@ -82079,8 +82176,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Longstrider_Times",
@@ -82091,8 +82186,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Longstrider_LVL",
@@ -82158,8 +82251,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Magic_Fang_Times",
@@ -82170,8 +82261,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Magic_Fang_LVL",
@@ -82237,8 +82326,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Magic_Stone_Times",
@@ -82249,8 +82336,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Magic_Stone_LVL",
@@ -82316,8 +82401,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Obscuring_Mist_Times",
@@ -82328,8 +82411,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Obscuring_Mist_LVL",
@@ -82395,8 +82476,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Pass_without_Trace_Times",
@@ -82407,8 +82486,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Pass_without_Trace_LVL",
@@ -82474,8 +82551,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Produce_Flame_Times",
@@ -82486,8 +82561,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Produce_Flame_LVL",
@@ -82553,8 +82626,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Shillelagh_Times",
@@ -82565,8 +82636,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Shillelagh_LVL",
@@ -82632,8 +82701,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Speak_with_Animals_Times",
@@ -82644,8 +82711,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Speak_with_Animals_LVL",
@@ -82711,8 +82776,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Summon_Natures_Ally_I_Times",
@@ -82723,8 +82786,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Summon_Natures_Ally_I_LVL",
@@ -82790,8 +82851,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Darkness_Times",
@@ -82802,8 +82861,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Darkness_LVL",
@@ -82869,8 +82926,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Deeper_Darkness_Times",
@@ -82881,8 +82936,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Deeper_Darkness_LVL",
@@ -82948,8 +83001,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Levitate_Times",
@@ -82960,8 +83011,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Levitate_LVL",
@@ -83027,8 +83076,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_Times"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Detect_Magic_Times",
@@ -83039,8 +83086,6 @@ DefineAbility({
       Formula=Formula("SLA_Base_LVL"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Detect_Magic_LVL",
@@ -83459,7 +83504,11 @@ DefineAbility({
     Arguments={
       Formula("DomainAirLVL/2"),
       Formula("LightningArcTimes"),
-      Formula("PREVARGTEQ:DomainAirLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainAirLVL"] >= 2)
+      end,
     },
   },
   SourcePage="p.41",
@@ -83530,8 +83579,6 @@ DefineAbility({
       Formula=Formula("DomainAirResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ElectricityResistanceBonus",
@@ -83663,7 +83710,11 @@ DefineAbility({
     Arguments={
       Formula("DomainArtificeLVL"),
       Formula("ArtificersTouchTimes"),
-      Formula("PREVARLT:DomainArtificeLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainArtificeLVL"] < 2)
+      end,
     },
   },
   SourcePage="p.41",
@@ -84295,7 +84346,11 @@ DefineAbility({
     Arguments={
       Formula("DomainEarthLVL/2"),
       Formula("AcidDartTimes"),
-      Formula("PREVARGTEQ:DomainEarthLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainEarthLVL"] >= 2)
+      end,
     },
   },
   SourcePage="p.43",
@@ -84373,8 +84428,6 @@ DefineAbility({
       Formula=Formula("DomainEarthResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AcidResistanceBonus",
@@ -84517,7 +84570,11 @@ DefineAbility({
     Arguments={
       Formula("DomainFireLVL/2"),
       Formula("FireBoltTimes"),
-      Formula("PREVARGTEQ:DomainFireLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainFireLVL"] >= 2)
+      end,
     },
   },
   SourcePage="p.44",
@@ -84595,8 +84652,6 @@ DefineAbility({
       Formula=Formula("DomainFireResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FireResistanceBonus",
@@ -84829,7 +84884,11 @@ DefineAbility({
     Arguments={
       Formula("DomainHealingLVL/2"),
       Formula("RebukeDeathTimes"),
-      Formula("PREVARGTEQ:DomainHealingLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainHealingLVL"] >= 2)
+      end,
     },
   },
   SourcePage="p.44",
@@ -85780,7 +85839,11 @@ DefineAbility({
       Formula("DomainRuneLVL/2"),
       Formula("DomainRuneLVL"),
       Formula("BlastRuneTimes"),
-      Formula("PREVARGTEQ:DomainRuneLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainRuneLVL"] >= 2)
+      end,
     },
   },
   SourcePage="p.47",
@@ -86303,7 +86366,11 @@ DefineAbility({
     Arguments={
       Formula("DomainWaterLVL/2"),
       Formula("IcicleTimes"),
-      Formula("PREVARGTEQ:DomainWaterLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainWaterLVL"] >= 2)
+      end,
     },
   },
   SourcePage="p.48",
@@ -86381,8 +86448,6 @@ DefineAbility({
       Formula=Formula("DomainWaterResistanceBonus"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ColdResistanceBonus",
@@ -86429,7 +86494,11 @@ DefineAbility({
     Arguments={
       Formula("DomainWeatherLVL/2"),
       Formula("StormBurstTimes"),
-      Formula("PREVARGTEQ:DomainWeatherLVL,2"),
+    },
+    Conditions={
+      function (character)
+        return (character.Variables["DomainWeatherLVL"] >= 2)
+      end,
     },
   },
   SourcePage="p.48",

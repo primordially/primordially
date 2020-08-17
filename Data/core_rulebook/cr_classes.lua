@@ -20,7 +20,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -171,7 +170,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -305,7 +303,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -422,8 +419,6 @@ DefineClass(DefineClass({
       Formula=Formula("Caster_Level_Bard"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Caster_Level_Highest__Arcane",
@@ -849,7 +844,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -987,8 +981,6 @@ DefineClass(DefineClass({
       Formula=Formula("Caster_Level_Cleric"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Caster_Level_Highest__Divine",
@@ -1393,7 +1385,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1510,8 +1501,6 @@ DefineClass(DefineClass({
       Formula=Formula("Caster_Level_Druid"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Caster_Level_Highest__Divine",
@@ -1996,7 +1985,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2234,7 +2222,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2358,8 +2345,6 @@ DefineClass(DefineClass({
       Formula=Formula("Caster_Level_Paladin"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Caster_Level_Highest__Divine",
@@ -2592,7 +2577,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2867,7 +2851,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2984,8 +2967,6 @@ DefineClass(DefineClass({
       Formula=Formula("Caster_Level_Ranger"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Caster_Level_Highest__Divine",
@@ -3219,7 +3200,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3365,7 +3345,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3482,8 +3461,6 @@ DefineClass(DefineClass({
       Formula=Formula("Caster_Level_Sorcerer"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Caster_Level_Highest__Arcane",
@@ -3930,7 +3907,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4054,8 +4030,6 @@ DefineClass(DefineClass({
       Formula=Formula("Caster_Level_Wizard"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Caster_Level_Highest__Arcane",
@@ -4590,7 +4564,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4788,7 +4761,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5034,7 +5006,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5191,7 +5162,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5454,7 +5424,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5593,7 +5562,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5803,7 +5771,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6033,7 +6000,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6271,7 +6237,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6411,7 +6376,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6572,7 +6536,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6689,8 +6652,6 @@ DefineClass(DefineClass({
       Formula=Formula("Caster_Level_Adept"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Caster_Level_Highest__Divine",
@@ -7125,7 +7086,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7307,7 +7267,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7439,7 +7398,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)

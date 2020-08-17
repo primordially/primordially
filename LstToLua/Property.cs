@@ -116,6 +116,22 @@ namespace Primordially.LstToLua
                 return false;
             };
         }
+        public static PropertyDefinition ClearableSingle<T>(string token, string name)
+            where T : class
+        {
+            var single = Single<T>(token, name);
+            return (value, properties, clear) =>
+            {
+                if (value.Value == token + ":.CLEAR")
+                {
+                    properties.Remove(name);
+                    clear[name] = null;
+                    return true;
+                }
+
+                return single(value, properties, clear);
+            };
+        }
 
         public static PropertyDefinition Multiple<T>(string token, string name)
             where T : class
@@ -161,18 +177,18 @@ namespace Primordially.LstToLua
         {
             return (value, properties, clear) =>
             {
-                if (value.Value == token + ":.CLEAR")
-                {
-                    clear[name] = null;
-                    properties.GetList<T>(name).Clear();
-                    return true;
-                }
-
                 if (value.TryRemovePrefix(token + ":", out value))
                 {
                     var list = properties.GetList<T>(name);
                     foreach (var part in value.Split(separator))
                     {
+                        if (part.Value == ".CLEAR" || 
+                            (separator == '.' && part.Value == "CLEAR"))
+                        {
+                            clear[name] = null;
+                            list.Clear();
+                            continue;
+                        }
                         list.Add(Create<T>(part));
                     }
 
