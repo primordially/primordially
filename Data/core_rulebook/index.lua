@@ -96,54 +96,61 @@ ImportFile("cr_companionmods.lua")
 ImportFile("cr_kits_companion.lua")
 ImportFile("cr_races_companion.lua")
 HideObjects("FEAT", {
-  "SpecialQuality",
-  "SpecialAttack",
-  "Extraordinary",
-  "SpellLike",
-  "Supernatural",
-  "AttackOption",
-  "Aura",
-  "Immunity",
-  "ModifyAC",
-  "Resistance",
-  "Weakness",
-})
+  {
+    "SpecialQuality",
+    "SpecialAttack",
+    "Extraordinary",
+    "SpellLike",
+    "Supernatural",
+    "AttackOption",
+    "Aura",
+    "Immunity",
+    "ModifyAC",
+    "Resistance",
+    "Weakness",
+  }})
 HideObjects("FEAT", {
-  "WizardBonus",
-  "SkillFocus",
-  "WeaponFocus",
-})
+  {
+    "WizardBonus",
+    "SkillFocus",
+    "WeaponFocus",
+  }})
 HideObjects("FEAT", {
-  "AberrantBloodline",
-  "AbyssalBloodline",
-  "ArcaneBloodline",
-  "CelestialBloodline",
-  "DestinedBloodline",
-  "DraconicBloodline",
-  "ElementalBloodline",
-  "FeyBloodline",
-  "InfernalBloodline",
-  "UndeadBloodline",
-})
+  {
+    "AberrantBloodline",
+    "AbyssalBloodline",
+    "ArcaneBloodline",
+    "CelestialBloodline",
+    "DestinedBloodline",
+    "DraconicBloodline",
+    "ElementalBloodline",
+    "FeyBloodline",
+    "InfernalBloodline",
+    "UndeadBloodline",
+  }})
 HideObjects("FEAT", {
-  "Applied Bonus",
-})
+  {
+    "Applied Bonus",
+  }})
 HideObjects("EQUIP", {
-  "Amulet of Mighty Fists",
-})
+  {
+    "Amulet of Mighty Fists",
+  }})
 HideObjects("SKILL", {
-  "Strength",
-  "Dexterity",
-  "Constitution",
-  "Intelligence",
-  "Wisdom",
-  "Charisma",
-  "Base",
-  "Background",
-})
+  {
+    "Strength",
+    "Dexterity",
+    "Constitution",
+    "Intelligence",
+    "Wisdom",
+    "Charisma",
+    "Base",
+    "Background",
+  }})
 HideObjects("SKILL", {
-  "ACHECK",
-})
+  {
+    "ACHECK",
+  }})
 AddAvailableCompanions("Mount", {
   {
     Any=true,

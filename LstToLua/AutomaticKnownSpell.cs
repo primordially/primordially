@@ -2,11 +2,23 @@
 {
     internal class AutomaticKnownSpell : LuaObject
     {
-        public AutomaticKnownSpell(int? level, string? name, string? type)
+        public AutomaticKnownSpell(TextSpan value)
         {
-            Level = level;
-            Name = name;
-            Type = type;
+            foreach (var part in value.Split(','))
+            {
+                if (part.TryRemovePrefix("LEVEL=", out var v))
+                {
+                    Level = Helpers.ParseInt(v);
+                }
+                else if (part.TryRemovePrefix("TYPE=", out v))
+                {
+                    Type = v.Value;
+                }
+                else
+                {
+                    Name = part.Value;
+                }
+            }
         }
 
         public int? Level { get; }
@@ -17,44 +29,17 @@
         {
             if (Level != null)
             {
-                output.WriteKeyValue("Level", Level.Value);
+                output.WriteProperty("Level", Level.Value);
             }
             if (Name != null)
             {
-                output.WriteKeyValue("Name", Name);
+                output.WriteProperty("Name", Name);
             }
             if (Type != null)
             {
-                output.WriteKeyValue("Type", Type);
+                output.WriteProperty("Type", Type);
             }
             base.DumpMembers(output);
-        }
-
-        public static AutomaticKnownSpell Parse(TextSpan value)
-        {
-            var parts = value.Split(',');
-
-            int? level = null;
-            string? name = null;
-            string? type = null;
-
-            foreach (var part in parts)
-            {
-                if (part.StartsWith("LEVEL="))
-                {
-                    level = Helpers.ParseInt(part.Substring("LEVEL=".Length));
-                }
-                else if (part.StartsWith("TYPE="))
-                {
-                    type = part.Substring("TYPE=".Length).Value;
-                }
-                else
-                {
-                    name = part.Value;
-                }
-            }
-
-            return new AutomaticKnownSpell(level, name, type);
         }
     }
 }

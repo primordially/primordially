@@ -1,4 +1,6 @@
-﻿namespace Primordially.LstToLua.Conditions
+﻿using System;
+
+namespace Primordially.LstToLua.Conditions
 {
     internal class RaceTypeCondition : Condition
     {
@@ -12,7 +14,7 @@
         public override void DumpCondition(LuaTextWriter output)
         {
             output.Write("character.Race.IsType(");
-            output.WriteValue(RequiredRaceType);
+            output.WriteValue(RequiredRaceType.AsSpan());
             output.Write(")");
         }
 

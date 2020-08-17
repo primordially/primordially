@@ -2,11 +2,23 @@
 
 namespace Primordially.LstToLua
 {
-    internal class Aspect : ConditionalObject
+    internal sealed class Aspect : LuaObject
     {
         public string? Name { get; private set; }
         public string? FormatString { get; private set; }
         public List<string> Arguments { get; } = new List<string>();
+
+        public Aspect(TextSpan value)
+        {
+            AddPropertyDefinitions(() => new []
+            {
+                CommonProperties.Conditions,
+            });
+            foreach (var f in value.Split('|'))
+            {
+                AddField(f);
+            }
+        }
 
         public override void AddField(TextSpan field)
         {
@@ -30,9 +42,9 @@ namespace Primordially.LstToLua
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteKeyValue("Name", Name);
-            output.WriteKeyValue("FormatString", FormatString);
-            output.WriteListValue("Arguments", Arguments);
+            output.WriteProperty("Name", Name);
+            output.WriteProperty("FormatString", FormatString);
+            output.WriteProperty("Arguments", Arguments);
             base.DumpMembers(output);
         }
     }

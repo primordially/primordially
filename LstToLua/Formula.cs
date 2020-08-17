@@ -1,4 +1,6 @@
-﻿namespace Primordially.LstToLua
+﻿using System;
+
+namespace Primordially.LstToLua
 {
     internal class Formula : IDumpable
     {
@@ -17,7 +19,7 @@
         public void Dump(LuaTextWriter output)
         {
             output.Write("Formula(");
-            output.WriteValue(Value);
+            output.WriteValue(Value.AsSpan());
             output.Write(")");
         }
     }

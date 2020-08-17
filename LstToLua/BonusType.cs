@@ -45,9 +45,9 @@
         public void Dump(LuaTextWriter output)
         {
             output.WriteStartObject();
-            output.WriteKeyValue("Name", Name);
-            output.WriteKeyValue("Replace", Replace);
-            output.WriteKeyValue("Stack", Stack);
+            output.WriteProperty("Name", Name);
+            output.WriteProperty("Replace", Replace);
+            output.WriteProperty("Stack", Stack);
             output.WriteEndObject();
         }
     }

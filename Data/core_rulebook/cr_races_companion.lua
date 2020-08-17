@@ -8,86 +8,15 @@ SetSource({
 })
 DefineRace({
   Name="Companion (Ape)",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=2,
-  HandCount=3,
-  Bonuses={
-    {
-      Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return (character.Variables["MasterLevel"] >= 4)
-        end,
-      },
-    },
-    {
-      Category="STAT",
-      Variables={
-        "STR",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "DEX",
-      },
-      Formula=Formula("6"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "INT",
-      },
-      Formula=Formula("-8"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "WIS",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CHA",
-      },
-      Formula=Formula("-4"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-  },
-  Movement={
-    Walk=30,
-    Climb=30,
-  },
-  MonsterClass={
-    Class="Companion",
-    Level=2,
-  },
-  DisplayName="Companion [NAME]",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  HandCount=3,
+  LegCount=2,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.55",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -119,111 +48,105 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
-  },
-  SourcePage="p.55",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Badger (Wolverine))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=4,
-  HandCount=3,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("6"),
       Variables={
         "DEX",
       },
-      Formula=Formula("6"),
     },
     {
       Category="STAT",
-      Variables={
-        "CON",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "WIS",
       },
-      Formula=Formula("2"),
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CHA",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Variables={
         "AC_Natural_Armor",
       },
-      Formula=Formula("2"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
     },
-    {
-      Category="VAR",
-      Variables={
-        "RageDuration",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
+  },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  RaceSubTypes={
+    "AnimalCompanionPrimate",
+  },
+  StartingKitChoices={
+    "Companion ~ Ape",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="M",
   },
   Movement={
     Walk=30,
-    Burrow=10,
-    Climb=10,
+    Climb=30,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion [NAME]",
+})
+DefineRace({
+  Name="Companion (Badger (Wolverine))",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  HandCount=3,
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.55",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -256,109 +179,115 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
-  },
-  SourcePage="p.55",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Bear)",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=4,
-  HandCount=3,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
-    },
-    {
-      Category="STAT",
       Variables={
-        "STR",
+        "Companion Level Increase Choice",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("6"),
       Variables={
         "DEX",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "CON",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "WIS",
       },
-      Formula=Formula("2"),
     },
     {
       Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
       Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "AC_Natural_Armor",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
-        "RaceSizeIsLong",
+        "RageDuration",
       },
+    },
+    {
+      Category="VAR",
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "RaceSizeIsLong",
+      },
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Badger",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="S",
+  },
   Movement={
-    Walk=40,
+    Walk=30,
+    Burrow=10,
+    Climb=10,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion [NAME]",
+})
+DefineRace({
+  Name="Companion (Bear)",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  HandCount=3,
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.55",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -390,526 +319,93 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
-  },
-  SourcePage="p.55",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Bird (Eagle))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-    "Raptor",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=2,
-  HandCount=3,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
-    },
-    {
-      Category="STAT",
-      Variables={
-        "DEX",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CON",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "INT",
-      },
-      Formula=Formula("-8"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "WIS",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CHA",
-      },
-      Formula=Formula("-4"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Maneuverability",
-      },
-      Formula=Formula("3"),
-    },
-    {
-      Category="WEAPONPROF=Talons",
-      Variables={
-        "DAMAGESIZE",
-      },
-      Formula=Formula("1"),
-    },
-  },
-  Movement={
-    Walk=10,
-    Fly=80,
-  },
-  MonsterClass={
-    Class="Companion",
-    Level=2,
-  },
-  DisplayName="Companion [NAME]",
-  SortKey="z_Companion",
-  Abilities={
-    {
-      Category="Special Ability",
-      Nature="AUTOMATIC",
-      Names={
-        "Flight Maneuverability",
-      },
-    },
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Bite",
-        "Talons",
-      },
-    },
-    {
-      Category="Special Ability",
-      Nature="AUTOMATIC",
-      Names={
-        "Companion Advancement ~ Bird",
-      },
-      Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
-          end)
-        end,
-      },
-    },
-  },
-  Facts={
-    BaseSize="S",
-  },
-  SourcePage="p.55",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Bird (Hawk))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-    "Raptor",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=2,
-  HandCount=3,
-  Bonuses={
-    {
-      Category="ABILITYPOOL",
       Variables={
         "Companion Level Increase Choice",
       },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return (character.Variables["MasterLevel"] >= 4)
-        end,
-      },
     },
     {
       Category="STAT",
-      Variables={
-        "DEX",
-      },
       Formula=Formula("4"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CON",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "INT",
-      },
-      Formula=Formula("-8"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "WIS",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CHA",
-      },
-      Formula=Formula("-4"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Maneuverability",
-      },
-      Formula=Formula("3"),
-    },
-    {
-      Category="WEAPONPROF=Talons",
-      Variables={
-        "DAMAGESIZE",
-      },
-      Formula=Formula("1"),
-    },
-  },
-  Movement={
-    Walk=10,
-    Fly=80,
-  },
-  MonsterClass={
-    Class="Companion",
-    Level=2,
-  },
-  DisplayName="Companion [NAME]",
-  SortKey="z_Companion",
-  Abilities={
-    {
-      Category="Special Ability",
-      Nature="AUTOMATIC",
-      Names={
-        "Flight Maneuverability",
-      },
-    },
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Bite",
-        "Talons",
-      },
-    },
-    {
-      Category="Special Ability",
-      Nature="AUTOMATIC",
-      Names={
-        "Companion Advancement ~ Bird",
-      },
-      Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
-          end)
-        end,
-      },
-    },
-  },
-  Facts={
-    BaseSize="S",
-  },
-  SourcePage="p.55",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Bird (Owl))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-    "Raptor",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=2,
-  HandCount=3,
-  Bonuses={
-    {
-      Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return (character.Variables["MasterLevel"] >= 4)
-        end,
-      },
-    },
-    {
-      Category="STAT",
-      Variables={
-        "DEX",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CON",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "INT",
-      },
-      Formula=Formula("-8"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "WIS",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CHA",
-      },
-      Formula=Formula("-4"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Maneuverability",
-      },
-      Formula=Formula("3"),
-    },
-    {
-      Category="WEAPONPROF=Talons",
-      Variables={
-        "DAMAGESIZE",
-      },
-      Formula=Formula("1"),
-    },
-  },
-  Movement={
-    Walk=10,
-    Fly=80,
-  },
-  MonsterClass={
-    Class="Companion",
-    Level=2,
-  },
-  DisplayName="Companion [NAME]",
-  SortKey="z_Companion",
-  Abilities={
-    {
-      Category="Special Ability",
-      Nature="AUTOMATIC",
-      Names={
-        "Flight Maneuverability",
-      },
-    },
-    {
-      Category="Internal",
-      Nature="AUTOMATIC",
-      Names={
-        "Bite",
-        "Talons",
-      },
-    },
-    {
-      Category="Special Ability",
-      Nature="AUTOMATIC",
-      Names={
-        "Companion Advancement ~ Bird",
-      },
-      Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
-          end)
-        end,
-      },
-    },
-  },
-  Facts={
-    BaseSize="S",
-  },
-  SourcePage="p.55",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Boar)",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=4,
-  Bonuses={
-    {
-      Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return (character.Variables["MasterLevel"] >= 4)
-        end,
-      },
-    },
-    {
-      Category="STAT",
       Variables={
         "STR",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "DEX",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "CON",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "WIS",
       },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CHA",
-      },
-      Formula=Formula("-6"),
     },
     {
       Category="VAR",
+      Formula=Formula("2"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Variables={
         "AC_Natural_Armor",
       },
-      Formula=Formula("6"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
     },
     {
       Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
-    },
-    {
-      Category="WEAPONPROF=Gore",
       Variables={
-        "DAMAGESIZE",
+        "RaceSizeIsLong",
       },
-      Formula=Formula("1"),
     },
+  },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Bear",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="S",
   },
   Movement={
     Walk=40,
@@ -918,8 +414,443 @@ DefineRace({
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion [NAME]",
+})
+DefineRace({
+  Name="Companion (Bird (Eagle))",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  HandCount=3,
+  LegCount=2,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.55",
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Flight Maneuverability",
+      },
+    },
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Bite",
+        "Talons",
+      },
+    },
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Companion Advancement ~ Bird",
+      },
+      Conditions={
+        function (character)
+          return 1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+          end)
+        end,
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="ABILITYPOOL",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return (character.Variables["MasterLevel"] >= 4)
+        end,
+      },
+      Variables={
+        "Companion Level Increase Choice",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "AC_Natural_Armor",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("3"),
+      Variables={
+        "Maneuverability",
+      },
+    },
+    {
+      Category="WEAPONPROF=Talons",
+      Formula=Formula("1"),
+      Variables={
+        "DAMAGESIZE",
+      },
+    },
+  },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Bird",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+    "Raptor",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=10,
+    Fly=80,
+  },
+  MonsterClass={
+    Class="Companion",
+    Level=2,
+  },
+})
+DefineRace({
+  Name="Companion (Bird (Hawk))",
+  SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  HandCount=3,
+  LegCount=2,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.55",
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Flight Maneuverability",
+      },
+    },
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Bite",
+        "Talons",
+      },
+    },
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Companion Advancement ~ Bird",
+      },
+      Conditions={
+        function (character)
+          return 1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+          end)
+        end,
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="ABILITYPOOL",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return (character.Variables["MasterLevel"] >= 4)
+        end,
+      },
+      Variables={
+        "Companion Level Increase Choice",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "AC_Natural_Armor",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("3"),
+      Variables={
+        "Maneuverability",
+      },
+    },
+    {
+      Category="WEAPONPROF=Talons",
+      Formula=Formula("1"),
+      Variables={
+        "DAMAGESIZE",
+      },
+    },
+  },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Bird",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+    "Raptor",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=10,
+    Fly=80,
+  },
+  MonsterClass={
+    Class="Companion",
+    Level=2,
+  },
+})
+DefineRace({
+  Name="Companion (Bird (Owl))",
+  SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  HandCount=3,
+  LegCount=2,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.55",
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Flight Maneuverability",
+      },
+    },
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Bite",
+        "Talons",
+      },
+    },
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Companion Advancement ~ Bird",
+      },
+      Conditions={
+        function (character)
+          return 1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+          end)
+        end,
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="ABILITYPOOL",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return (character.Variables["MasterLevel"] >= 4)
+        end,
+      },
+      Variables={
+        "Companion Level Increase Choice",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "AC_Natural_Armor",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("3"),
+      Variables={
+        "Maneuverability",
+      },
+    },
+    {
+      Category="WEAPONPROF=Talons",
+      Formula=Formula("1"),
+      Variables={
+        "DAMAGESIZE",
+      },
+    },
+  },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Bird",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+    "Raptor",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=10,
+    Fly=80,
+  },
+  MonsterClass={
+    Class="Companion",
+    Level=2,
+  },
+})
+DefineRace({
+  Name="Companion (Boar)",
+  SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.55",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -950,108 +881,126 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
-  },
-  SourcePage="p.55",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Camel)",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="L",
-  Reach=5,
-  LegCount=4,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "STR",
       },
-      Formula=Formula("8"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "DEX",
       },
-      Formula=Formula("6"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "CON",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-6"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-6"),
     },
     {
       Category="VAR",
+      Formula=Formula("6"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Variables={
         "AC_Natural_Armor",
       },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
     },
     {
       Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "RaceSizeIsLong",
+      },
+    },
+    {
+      Category="WEAPONPROF=Gore",
+      Formula=Formula("1"),
+      Variables={
+        "DAMAGESIZE",
+      },
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Boar",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="S",
+  },
   Movement={
-    Walk=50,
+    Walk=40,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion [NAME]",
+})
+DefineRace({
+  Name="Companion (Camel)",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="L",
+  SourcePage="p.56",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -1083,106 +1032,93 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="L",
-  },
-  SourcePage="p.56",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Cat (Small (Cheetah)))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=4,
-  HandCount=3,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("8"),
       Variables={
         "STR",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("6"),
       Variables={
         "DEX",
       },
-      Formula=Formula("10"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "CON",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
-      Variables={
-        "WIS",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
+      Formula=Formula("-6"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-4"),
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Variables={
         "AC_Natural_Armor",
       },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
     },
     {
       Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "RaceSizeIsLong",
+      },
     },
+  },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Camel",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="L",
   },
   Movement={
     Walk=50,
@@ -1191,8 +1127,18 @@ DefineRace({
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Cat, Small (Cheetah)",
+})
+DefineRace({
+  Name="Companion (Cat (Small (Cheetah)))",
   SortKey="z_Companion",
+  DisplayName="Companion Cat, Small (Cheetah)",
+  HandCount=3,
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.56",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -1225,106 +1171,100 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
-  },
-  SourcePage="p.56",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Cat (Small (Leopard)))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=4,
-  HandCount=3,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "STR",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("10"),
       Variables={
         "DEX",
       },
-      Formula=Formula("10"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "CON",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "WIS",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("-4"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-4"),
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Variables={
         "AC_Natural_Armor",
       },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
     },
     {
       Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "RaceSizeIsLong",
+      },
     },
+  },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Small Cat",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="S",
   },
   Movement={
     Walk=50,
@@ -1333,8 +1273,18 @@ DefineRace({
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Cat, Small (Leopard)",
+})
+DefineRace({
+  Name="Companion (Cat (Small (Leopard)))",
   SortKey="z_Companion",
+  DisplayName="Companion Cat, Small (Leopard)",
+  HandCount=3,
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.56",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -1367,116 +1317,119 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
-  },
-  SourcePage="p.56",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Crocodile (Alligator))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=4,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "STR",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("10"),
       Variables={
         "DEX",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "CON",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-10"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "WIS",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("-4"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("4"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "AC_Natural_Armor",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Small Cat",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="S",
+  },
   Movement={
-    Walk=20,
-    Swim=30,
+    Walk=50,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion [NAME]",
+})
+DefineRace({
+  Name="Companion (Crocodile (Alligator))",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.56",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -1507,115 +1460,120 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
-  },
-  SourcePage="p.56",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Dog)",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=4,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "STR",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "DEX",
       },
-      Formula=Formula("6"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "CON",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("-10"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "WIS",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-4"),
     },
     {
       Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("2"),
+      Formula=Formula("4"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "AC_Natural_Armor",
+      },
     },
     {
       Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "RaceSizeIsLong",
+      },
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Crocodile",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="S",
+  },
   Movement={
-    Walk=40,
+    Walk=20,
+    Swim=30,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion [NAME]",
+})
+DefineRace({
+  Name="Companion (Dog)",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.56",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -1646,116 +1604,120 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
-  },
-  SourcePage="p.56",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Horse)",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="L",
-  Reach=5,
-  LegCount=4,
-  HandCount=3,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "STR",
       },
-      Formula=Formula("6"),
     },
     {
       Category="STAT",
+      Formula=Formula("6"),
       Variables={
         "DEX",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "CON",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "WIS",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("-4"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-4"),
     },
     {
       Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("4"),
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "AC_Natural_Armor",
+      },
     },
     {
       Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "RaceSizeIsLong",
+      },
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Dog",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="S",
+  },
   Movement={
-    Walk=50,
+    Walk=40,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion [NAME]",
+})
+DefineRace({
+  Name="Companion (Horse)",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  HandCount=3,
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="L",
+  SourcePage="p.56",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -1787,115 +1749,119 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="L",
-  },
-  SourcePage="p.56",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Pony)",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=4,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("6"),
       Variables={
         "STR",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "DEX",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "CON",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-6"),
     },
     {
       Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("2"),
+      Formula=Formula("4"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "AC_Natural_Armor",
+      },
     },
     {
       Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
-    },
-    {
-      Category="WEAPONPROF=Hoof",
       Variables={
-        "DAMAGESIZE",
+        "RaceSizeIsLong",
       },
-      Formula=Formula("-1"),
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Horse",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="L",
+  },
   Movement={
-    Walk=40,
+    Walk=50,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion [NAME]",
+})
+DefineRace({
+  Name="Companion (Pony)",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.56",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -1926,103 +1892,119 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
-  },
-  SourcePage="p.56",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Shark)",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=0,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "STR",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "DEX",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "CON",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-10"),
     },
     {
       Category="STAT",
-      Variables={
-        "WIS",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
+      Formula=Formula("-6"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("4"),
+      Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "AC_Natural_Armor",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
+    },
+    {
+      Category="WEAPONPROF=Hoof",
+      Formula=Formula("-1"),
+      Variables={
+        "DAMAGESIZE",
+      },
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Pony",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="M",
+  },
   Movement={
-    Swim=60,
+    Walk=40,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion [NAME]",
+})
+DefineRace({
+  Name="Companion (Shark)",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  LegCount=0,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.56",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -2053,105 +2035,110 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
-  },
-  SourcePage="p.56",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Snake (Constrictor))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=0,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "STR",
       },
-      Formula=Formula("8"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "DEX",
       },
-      Formula=Formula("6"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "CON",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("-10"),
       Variables={
         "INT",
       },
-      Formula=Formula("-10"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "WIS",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("2"),
+      Formula=Formula("4"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "AC_Natural_Armor",
+      },
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  RaceSubTypes={
+    "Aquatic",
+  },
+  StartingKitChoices={
+    "Companion ~ Shark",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="S",
+  },
   Movement={
-    Walk=20,
-    Climb=20,
-    Swim=20,
+    Swim=60,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion [NAME]",
+})
+DefineRace({
+  Name="Companion (Snake (Constrictor))",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  LegCount=0,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.56",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -2182,86 +2169,88 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
-  },
-  SourcePage="p.56",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Snake (Viper))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=0,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("8"),
       Variables={
         "STR",
       },
-      Formula=Formula("-2"),
     },
     {
       Category="STAT",
+      Formula=Formula("6"),
       Variables={
         "DEX",
       },
-      Formula=Formula("6"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-10"),
       Variables={
         "INT",
       },
-      Formula=Formula("-10"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "WIS",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
       Formula=Formula("2"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "AC_Natural_Armor",
+      },
     },
+  },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Snake",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="M",
   },
   Movement={
     Walk=20,
@@ -2272,8 +2261,17 @@ DefineRace({
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion [NAME]",
+})
+DefineRace({
+  Name="Companion (Snake (Viper))",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  LegCount=0,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.56",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -2305,109 +2303,103 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
+  Bonuses={
+    {
+      Category="ABILITYPOOL",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return (character.Variables["MasterLevel"] >= 4)
+        end,
+      },
+      Variables={
+        "Companion Level Increase Choice",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-2"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("6"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-10"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "AC_Natural_Armor",
+      },
+    },
   },
-  SourcePage="p.56",
   Conditions={
     function (character)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
-})
-DefineRace({
-  Name="Companion (Cat (Big (Lion)))",
+  StartingKitChoices={
+    "Companion ~ Snake",
+  },
   Types={
     "Companion",
     "AnimalCompanion",
   },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=4,
-  HandCount=3,
-  Bonuses={
-    {
-      Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return (character.Variables["MasterLevel"] >= 7)
-        end,
-      },
-    },
-    {
-      Category="STAT",
-      Variables={
-        "STR",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "DEX",
-      },
-      Formula=Formula("6"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CON",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "INT",
-      },
-      Formula=Formula("-8"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "WIS",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
+  Facts={
+    BaseSize="S",
   },
   Movement={
-    Walk=40,
+    Walk=20,
+    Climb=20,
+    Swim=20,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Cat, Big (Lion)",
+})
+DefineRace({
+  Name="Companion (Cat (Big (Lion)))",
   SortKey="z_Companion",
+  DisplayName="Companion Cat, Big (Lion)",
+  HandCount=3,
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.56",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -2440,99 +2432,93 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
-  },
-  SourcePage="p.56",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Cat (Big (Tiger)))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=4,
-  HandCount=3,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "STR",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("6"),
       Variables={
         "DEX",
       },
-      Formula=Formula("6"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "CON",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "WIS",
       },
-      Formula=Formula("4"),
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Variables={
         "AC_Natural_Armor",
       },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
     },
     {
       Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "RaceSizeIsLong",
+      },
     },
+  },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Big Cat",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="M",
   },
   Movement={
     Walk=40,
@@ -2541,8 +2527,18 @@ DefineRace({
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Cat, Big (Tiger)",
+})
+DefineRace({
+  Name="Companion (Cat (Big (Tiger)))",
   SortKey="z_Companion",
+  DisplayName="Companion Cat, Big (Tiger)",
+  HandCount=3,
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.56",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -2575,115 +2571,112 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
-  },
-  SourcePage="p.56",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Dinosaur (Deinonychus))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=4,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("6"),
       Variables={
         "DEX",
       },
-      Formula=Formula("6"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "CON",
       },
-      Formula=Formula("6"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "WIS",
       },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CHA",
-      },
-      Formula=Formula("4"),
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Variables={
         "AC_Natural_Armor",
       },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
     },
     {
       Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
-    },
-    {
-      Category="WEAPONPROF=Talons",
       Variables={
-        "DAMAGESIZE",
+        "RaceSizeIsLong",
       },
-      Formula=Formula("2"),
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Big Cat",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="M",
+  },
   Movement={
-    Walk=60,
+    Walk=40,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion [NAME]",
+})
+DefineRace({
+  Name="Companion (Dinosaur (Deinonychus))",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.56",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -2715,98 +2708,103 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
-  },
-  SourcePage="p.56",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Dinosaur (Velociraptor))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=4,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("6"),
       Variables={
         "DEX",
       },
-      Formula=Formula("6"),
     },
     {
       Category="STAT",
+      Formula=Formula("6"),
       Variables={
         "CON",
       },
-      Formula=Formula("6"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "WIS",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "CHA",
       },
-      Formula=Formula("4"),
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Variables={
         "AC_Natural_Armor",
       },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
     },
     {
       Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "RaceSizeIsLong",
+      },
     },
+    {
+      Category="WEAPONPROF=Talons",
+      Formula=Formula("2"),
+      Variables={
+        "DAMAGESIZE",
+      },
+    },
+  },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  RaceSubTypes={
+    "AnimalCompanionDinosaur",
+  },
+  StartingKitChoices={
+    "Companion ~ Dinosaur",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="S",
   },
   Movement={
     Walk=60,
@@ -2815,8 +2813,17 @@ DefineRace({
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion [NAME]",
+})
+DefineRace({
+  Name="Companion (Dinosaur (Velociraptor))",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.56",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -2848,115 +2855,115 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
-  },
-  SourcePage="p.56",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Wolf)",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=4,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
-    },
-    {
-      Category="STAT",
       Variables={
-        "STR",
+        "Companion Level Increase Choice",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("6"),
       Variables={
         "DEX",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("6"),
       Variables={
         "CON",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "WIS",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-4"),
     },
     {
       Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("2"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "AC_Natural_Armor",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  RaceSubTypes={
+    "AnimalCompanionDinosaur",
+  },
+  StartingKitChoices={
+    "Companion ~ Dinosaur",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="S",
+  },
   Movement={
-    Walk=50,
+    Walk=60,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion [NAME]",
+})
+DefineRace({
+  Name="Companion (Wolf)",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.56",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -2988,14 +2995,107 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
+  Bonuses={
+    {
+      Category="ABILITYPOOL",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return (character.Variables["MasterLevel"] >= 7)
+        end,
+      },
+      Variables={
+        "Companion Level Increase Choice",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "AC_Natural_Armor",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
+    },
   },
-  SourcePage="p.56",
   Conditions={
     function (character)
       return (character.Variables["NotAllowed"] >= 1)
     end,
+  },
+  StartingKitChoices={
+    "Companion ~ Wolf",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="M",
+  },
+  Movement={
+    Walk=50,
+  },
+  MonsterClass={
+    Class="Companion",
+    Level=2,
   },
 })
 SetSource({
@@ -3006,87 +3106,14 @@ SetSource({
 })
 DefineRace({
   Name="Companion (Dire Rat)",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=4,
-  Bonuses={
-    {
-      Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return (character.Variables["MasterLevel"] >= 4)
-        end,
-      },
-    },
-    {
-      Category="STAT",
-      Variables={
-        "DEX",
-      },
-      Formula=Formula("6"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CON",
-        "WIS",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "INT",
-      },
-      Formula=Formula("-8"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CHA",
-      },
-      Formula=Formula("-6"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="WEAPONPROF=Bite",
-      Variables={
-        "DAMAGE",
-      },
-      Formula=Formula("max(0,(STR/2))"),
-    },
-  },
-  Movement={
-    Walk=40,
-    Climb=20,
-    Swim=20,
-  },
-  MonsterClass={
-    Class="Companion",
-    Level=2,
-  },
-  DisplayName="Companion [NAME]",
   SortKey="z_Companion",
+  DisplayName="Companion [NAME]",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.232",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -3117,78 +3144,103 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
+  Bonuses={
+    {
+      Category="ABILITYPOOL",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return (character.Variables["MasterLevel"] >= 4)
+        end,
+      },
+      Variables={
+        "Companion Level Increase Choice",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("6"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "CON",
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-6"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
+    },
+    {
+      Category="WEAPONPROF=Bite",
+      Formula=Formula("max(0,(STR/2))"),
+      Variables={
+        "DAMAGE",
+      },
+    },
   },
-  SourcePage="p.232",
   Conditions={
     function (character)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
+  StartingKitChoices={
+    "Companion ~ Dire Rat",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=40,
+    Climb=20,
+    Swim=20,
+  },
+  MonsterClass={
+    Class="Companion",
+    Level=2,
+  },
 })
 DefineRace({
   Name="Companion (Shadow)",
-  Types={
-    "Companion",
-  },
-  RaceType="Undead",
-  StartingFeats=1,
-  Size="M",
-  ChallengeRating=3,
-  Bonuses={
-    {
-      Category="STAT",
-      Variables={
-        "DEX",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "INT",
-      },
-      Formula=Formula("-4"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "WIS",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CHA",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "ChannelResistance",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "Maneuverability",
-      },
-      Formula=Formula("4"),
-    },
-  },
-  Movement={
-    Fly=40,
-  },
-  MonsterClass={
-    Class="Shadow Companion",
-    Level=3,
-  },
-  DisplayName="Companion [NAME]",
   SortKey="z_Companion",
+  ChallengeRating=3,
+  DisplayName="Companion [NAME]",
+  RaceType="Undead",
+  Size="M",
+  SourcePage="p.245",
+  StartingFeats=1,
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -3201,6 +3253,55 @@ DefineRace({
         "Strength Damage",
       },
     },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("2"),
+      Variables={
+        "ChannelResistance",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("4"),
+      Variables={
+        "Maneuverability",
+      },
+    },
+  },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
   },
   NaturalAttacks={
     {
@@ -3215,14 +3316,25 @@ DefineRace({
       Damage=DiceFormula("1d6"),
     },
   },
+  RaceSubTypes={
+    "Incorporeal",
+    "Undead",
+  },
+  StartingKitChoices={
+    "Companion (Shadow)",
+  },
+  Types={
+    "Companion",
+  },
   Facts={
     BaseSize="M",
   },
-  SourcePage="p.245",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
+  Movement={
+    Fly=40,
+  },
+  MonsterClass={
+    Class="Shadow Companion",
+    Level=3,
   },
 })
 SetSource({
@@ -3233,85 +3345,14 @@ SetSource({
 })
 DefineRace({
   Name="Companion (Dinosaur (Allosaurus))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=2,
-  Bonuses={
-    {
-      Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return (character.Variables["MasterLevel"] >= 7)
-        end,
-      },
-    },
-    {
-      Category="STAT",
-      Variables={
-        "STR",
-        "WIS",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "DEX",
-      },
-      Formula=Formula("6"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "INT",
-      },
-      Formula=Formula("-8"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("4"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "HasLowLightVision",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "NoTypeTraits",
-      },
-      Formula=Formula("1"),
-    },
-  },
-  Movement={
-    Walk=40,
-  },
-  MonsterClass={
-    Class="Companion",
-    Level=2,
-  },
-  DisplayName="Companion Allosaurus",
   SortKey="z_Companion",
+  DisplayName="Companion Allosaurus",
+  LegCount=2,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.90",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -3355,110 +3396,104 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
-  },
-  SourcePage="p.90",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Dinosaur (Parasaurolophus))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=2,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "STR",
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("6"),
       Variables={
         "DEX",
       },
-      Formula=Formula("8"),
     },
     {
       Category="STAT",
-      Variables={
-        "CON",
-      },
-      Formula=Formula("-2"),
-    },
-    {
-      Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "WIS",
-      },
-      Formula=Formula("2"),
     },
     {
       Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("2"),
+      Formula=Formula("4"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "AC_Natural_Armor",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "HasLowLightVision",
       },
-      Formula=Formula("1"),
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "NoTypeTraits",
       },
-      Formula=Formula("1"),
-    },
-    {
-      Category="WEAPONPROF=Tail Slap",
-      Variables={
-        "DAMAGE",
-      },
-      Formula=Formula("max(0,(STR/2))"),
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  RaceSubTypes={
+    "AnimalCompanionDinosaur",
+  },
+  StartingKitChoices={
+    "Companion ~ Dinosaur (Allosaurus)",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="M",
+  },
   Movement={
-    Walk=30,
+    Walk=40,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Parasaurolophus",
+})
+DefineRace({
+  Name="Companion (Dinosaur (Parasaurolophus))",
   SortKey="z_Companion",
+  DisplayName="Companion Parasaurolophus",
+  LegCount=2,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.91",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -3501,123 +3536,117 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
-  },
-  SourcePage="p.91",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Dinosaur (Tylosaurus))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=4,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("8"),
       Variables={
         "DEX",
       },
-      Formula=Formula("6"),
     },
     {
       Category="STAT",
+      Formula=Formula("-2"),
+      Variables={
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "WIS",
       },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CHA",
-      },
-      Formula=Formula("-2"),
     },
     {
       Category="VAR",
+      Formula=Formula("2"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Variables={
         "AC_Natural_Armor",
       },
-      Formula=Formula("3"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "HasLowLightVision",
       },
-      Formula=Formula("1"),
     },
     {
       Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
       Variables={
         "NoTypeTraits",
       },
-      Formula=Formula("1"),
     },
     {
-      Category="WEAPONPROF=Bite",
+      Category="WEAPONPROF=Tail Slap",
+      Formula=Formula("max(0,(STR/2))"),
       Variables={
         "DAMAGE",
       },
-      Formula=Formula("max(0,(STR/2))"),
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  RaceSubTypes={
+    "AnimalCompanionDinosaur",
+  },
+  StartingKitChoices={
+    "Companion ~ Dinosaur (Parasaurolophus)",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="M",
+  },
   Movement={
-    Walk=20,
-    Swim=50,
+    Walk=30,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Tylosaurus",
+})
+DefineRace({
+  Name="Companion (Dinosaur (Tylosaurus))",
   SortKey="z_Companion",
+  DisplayName="Companion Tylosaurus",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.91",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -3660,112 +3689,130 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
-  },
-  SourcePage="p.91",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Gar)",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=0,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("6"),
       Variables={
-        "STR",
         "DEX",
-        "CON",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
-      Variables={
-        "WIS",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-9"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-2"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="VAR",
+      Formula=Formula("3"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Variables={
         "AC_Natural_Armor",
       },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "HasLowLightVision",
+      },
+    },
+    {
+      Category="VAR",
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
-    },
-    {
-      Category="VAR",
       Variables={
-        "HasLowLightVision",
+        "RaceSizeIsLong",
       },
-      Formula=Formula("1"),
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "NoTypeTraits",
       },
-      Formula=Formula("1"),
     },
     {
       Category="WEAPONPROF=Bite",
+      Formula=Formula("max(0,(STR/2))"),
       Variables={
         "DAMAGE",
       },
-      Formula=Formula("max(0,(STR/2))"),
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  RaceSubTypes={
+    "AnimalCompanionDinosaur",
+  },
+  StartingKitChoices={
+    "Companion ~ Dinosaur (Tylosaurus)",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="M",
+  },
   Movement={
-    Swim=60,
+    Walk=20,
+    Swim=50,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Gar",
+})
+DefineRace({
+  Name="Companion (Gar)",
   SortKey="z_Companion",
+  DisplayName="Companion Gar",
+  LegCount=0,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.128",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -3809,122 +3856,116 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
+  Bonuses={
+    {
+      Category="ABILITYPOOL",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return (character.Variables["MasterLevel"] >= 7)
+        end,
+      },
+      Variables={
+        "Companion Level Increase Choice",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "STR",
+        "DEX",
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-9"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "AC_Natural_Armor",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "HasLowLightVision",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "NoTypeTraits",
+      },
+    },
+    {
+      Category="WEAPONPROF=Bite",
+      Formula=Formula("max(0,(STR/2))"),
+      Variables={
+        "DAMAGE",
+      },
+    },
   },
-  SourcePage="p.128",
   Conditions={
     function (character)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
-})
-DefineRace({
-  Name="Companion (Herd Animal (Ram))",
+  StartingKitChoices={
+    "Companion ~ Gar",
+  },
   Types={
     "Companion",
     "AnimalCompanion",
   },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=4,
-  Bonuses={
-    {
-      Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return (character.Variables["MasterLevel"] >= 4)
-        end,
-      },
-    },
-    {
-      Category="STAT",
-      Variables={
-        "DEX",
-      },
-      Formula=Formula("6"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "INT",
-      },
-      Formula=Formula("-8"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "WIS",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CHA",
-      },
-      Formula=Formula("-4"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "HasLowLightVision",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "NoTypeTraits",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="WEAPONPROF=Gore",
-      Variables={
-        "DAMAGE",
-      },
-      Formula=Formula("max(0,(STR/2))"),
-    },
+  Facts={
+    BaseSize="M",
   },
   Movement={
-    Walk=40,
+    Swim=60,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Ram",
+})
+DefineRace({
+  Name="Companion (Herd Animal (Ram))",
   SortKey="z_Companion",
+  DisplayName="Companion Ram",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.154",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -3967,107 +4008,107 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
+  Bonuses={
+    {
+      Category="ABILITYPOOL",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return (character.Variables["MasterLevel"] >= 4)
+        end,
+      },
+      Variables={
+        "Companion Level Increase Choice",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("6"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "AC_Natural_Armor",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "HasLowLightVision",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "NoTypeTraits",
+      },
+    },
+    {
+      Category="WEAPONPROF=Gore",
+      Formula=Formula("max(0,(STR/2))"),
+      Variables={
+        "DAMAGE",
+      },
+    },
   },
-  SourcePage="p.154",
   Conditions={
     function (character)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
-})
-DefineRace({
-  Name="Companion (Hippopotamus)",
+  StartingKitChoices={
+    "Companion ~ Herd Animal (Ram)",
+  },
   Types={
     "Companion",
     "AnimalCompanion",
   },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=4,
-  Bonuses={
-    {
-      Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return (character.Variables["MasterLevel"] >= 7)
-        end,
-      },
-    },
-    {
-      Category="STAT",
-      Variables={
-        "DEX",
-        "CON",
-        "WIS",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "INT",
-      },
-      Formula=Formula("-8"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CHA",
-      },
-      Formula=Formula("-6"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("6"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "HasLowLightVision",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "NoTypeTraits",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="WEAPONPROF=Bite",
-      Variables={
-        "DAMAGE",
-      },
-      Formula=Formula("max(0,(STR/2))"),
-    },
+  Facts={
+    BaseSize="S",
   },
   Movement={
     Walk=40,
@@ -4076,8 +4117,17 @@ DefineRace({
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Hippopotamus",
+})
+DefineRace({
+  Name="Companion (Hippopotamus)",
   SortKey="z_Companion",
+  DisplayName="Companion Hippopotamus",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.157",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -4126,118 +4176,121 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
-  },
-  SourcePage="p.157",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Megafauna (Arsinoitherium))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=4,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
-    },
-    {
-      Category="STAT",
       Variables={
-        "STR",
-        "CON",
+        "Companion Level Increase Choice",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "DEX",
+        "CON",
         "WIS",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-6"),
+      Variables={
         "CHA",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="VAR",
+      Formula=Formula("6"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Variables={
         "AC_Natural_Armor",
       },
-      Formula=Formula("4"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "HasLowLightVision",
       },
-      Formula=Formula("1"),
     },
     {
       Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "RaceSizeIsLong",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "NoTypeTraits",
       },
-      Formula=Formula("1"),
     },
     {
-      Category="WEAPONPROF=Gore",
+      Category="WEAPONPROF=Bite",
+      Formula=Formula("max(0,(STR/2))"),
       Variables={
         "DAMAGE",
       },
-      Formula=Formula("max(0,(STR/2))"),
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Hippopotamus",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="M",
+  },
   Movement={
-    Walk=30,
+    Walk=40,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Arsinoitherium",
+})
+DefineRace({
+  Name="Companion (Megafauna (Arsinoitherium))",
   SortKey="z_Companion",
+  DisplayName="Companion Arsinoitherium",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.186",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -4285,111 +4338,122 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
-  },
-  SourcePage="p.186",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Megafauna (Gylptodon))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=4,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "STR",
-        "DEX",
         "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "DEX",
         "WIS",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
-      },
-      Formula=Formula("-8"),
-    },
-    {
-      Category="STAT",
-      Variables={
         "CHA",
       },
-      Formula=Formula("-4"),
     },
     {
       Category="VAR",
+      Formula=Formula("4"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Variables={
         "AC_Natural_Armor",
       },
-      Formula=Formula("5"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "HasLowLightVision",
       },
-      Formula=Formula("1"),
     },
     {
       Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "RaceSizeIsLong",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "NoTypeTraits",
       },
-      Formula=Formula("1"),
+    },
+    {
+      Category="WEAPONPROF=Gore",
+      Formula=Formula("max(0,(STR/2))"),
+      Variables={
+        "DAMAGE",
+      },
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Megafauna (Arsinoitherium)",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="M",
+  },
   Movement={
-    Walk=20,
+    Walk=30,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Gylptodon",
+})
+DefineRace({
+  Name="Companion (Megafauna (Gylptodon))",
   SortKey="z_Companion",
+  DisplayName="Companion Gylptodon",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.186",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -4437,137 +4501,115 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
-  },
-  SourcePage="p.186",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Megafauna (Megaloceros))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=4,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "STR",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
         "DEX",
-      },
-      Formula=Formula("6"),
-    },
-    {
-      Category="STAT",
-      Variables={
         "CON",
         "WIS",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
+      Formula=Formula("-4"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-6"),
     },
     {
       Category="VAR",
+      Formula=Formula("5"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Variables={
         "AC_Natural_Armor",
       },
-      Formula=Formula("3"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "HasLowLightVision",
       },
-      Formula=Formula("1"),
     },
     {
       Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "RaceSizeIsLong",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "NoTypeTraits",
       },
-      Formula=Formula("1"),
-    },
-    {
-      Category="WEAPONPROF=Gore",
-      Variables={
-        "DAMAGE",
-      },
-      Formula=Formula("max(0,(STR/2))"),
-    },
-    {
-      Category="WEAPONPROF=Gore",
-      Variables={
-        "DAMAGESIZE",
-      },
-      Formula=Formula("1"),
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Megafauna (Gylptodon)",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="M",
+  },
   Movement={
-    Walk=50,
+    Walk=20,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Megaloceros",
+})
+DefineRace({
+  Name="Companion (Megafauna (Megaloceros))",
   SortKey="z_Companion",
+  DisplayName="Companion Megaloceros",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.187",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -4610,123 +4652,141 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
-  },
-  SourcePage="p.187",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Megafauna (Megatherium))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=4,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "STR",
       },
-      Formula=Formula("-2"),
     },
     {
       Category="STAT",
+      Formula=Formula("6"),
       Variables={
         "DEX",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "CON",
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="STAT",
-      Variables={
-        "WIS",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
+      Formula=Formula("-6"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-4"),
     },
     {
       Category="VAR",
+      Formula=Formula("3"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
       Variables={
         "AC_Natural_Armor",
       },
-      Formula=Formula("5"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "HasLowLightVision",
       },
-      Formula=Formula("1"),
     },
     {
       Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
       Formula=Formula("1"),
       Type={
         Name="Base",
         Replace=false,
         Stack=false,
       },
+      Variables={
+        "RaceSizeIsLong",
+      },
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "NoTypeTraits",
       },
+    },
+    {
+      Category="WEAPONPROF=Gore",
+      Formula=Formula("max(0,(STR/2))"),
+      Variables={
+        "DAMAGE",
+      },
+    },
+    {
+      Category="WEAPONPROF=Gore",
       Formula=Formula("1"),
+      Variables={
+        "DAMAGESIZE",
+      },
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Megafauna (Megaloceros)",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="M",
+  },
   Movement={
-    Walk=40,
-    Climb=10,
+    Walk=50,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Megatherium",
+})
+DefineRace({
+  Name="Companion (Megafauna (Megatherium))",
   SortKey="z_Companion",
+  DisplayName="Companion Megatherium",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.187",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -4769,100 +4829,127 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
+  Bonuses={
+    {
+      Category="ABILITYPOOL",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return (character.Variables["MasterLevel"] >= 7)
+        end,
+      },
+      Variables={
+        "Companion Level Increase Choice",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-2"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("5"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "AC_Natural_Armor",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "HasLowLightVision",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "NoTypeTraits",
+      },
+    },
   },
-  SourcePage="p.187",
   Conditions={
     function (character)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
-})
-DefineRace({
-  Name="Companion (Primate (Baboon))",
+  StartingKitChoices={
+    "Companion ~ Megafauna (Megatherium)",
+  },
   Types={
     "Companion",
     "AnimalCompanion",
   },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=2,
-  Bonuses={
-    {
-      Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return (character.Variables["MasterLevel"] >= 4)
-        end,
-      },
-    },
-    {
-      Category="STAT",
-      Variables={
-        "STR",
-        "CON",
-        "WIS",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "DEX",
-      },
-      Formula=Formula("4"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "INT",
-      },
-      Formula=Formula("-8"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CHA",
-      },
-      Formula=Formula("-6"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "HasLowLightVision",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "NoTypeTraits",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="WEAPONPROF=Bite",
-      Variables={
-        "DAMAGE",
-      },
-      Formula=Formula("max(0,(STR/2))"),
-    },
+  Facts={
+    BaseSize="M",
   },
   Movement={
-    Walk=30,
+    Walk=40,
+    Climb=10,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Baboon",
+})
+DefineRace({
+  Name="Companion (Primate (Baboon))",
   SortKey="z_Companion",
+  DisplayName="Companion Baboon",
+  LegCount=2,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.212",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -4898,118 +4985,105 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
-  },
-  SourcePage="p.212",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Ray (Manta))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=0,
-  HandCount=0,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
         "STR",
+        "CON",
+        "WIS",
       },
-      Formula=Formula("-2"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "DEX",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
-      Variables={
-        "WIS",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "INT",
       },
-      Formula=Formula("-9"),
     },
     {
       Category="STAT",
+      Formula=Formula("-6"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
       Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
       Variables={
         "HasLowLightVision",
       },
-      Formula=Formula("1"),
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "NoTypeTraits",
       },
-      Formula=Formula("1"),
     },
     {
-      Category="WEAPONPROF=Tail Slap",
+      Category="WEAPONPROF=Bite",
+      Formula=Formula("max(0,(STR/2))"),
       Variables={
         "DAMAGE",
       },
-      Formula=Formula("max(0,(STR/2))"),
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Primate (Baboon)",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="S",
+  },
   Movement={
-    Swim=60,
+    Walk=30,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Manta Ray",
+})
+DefineRace({
+  Name="Companion (Ray (Manta))",
   SortKey="z_Companion",
+  DisplayName="Companion Manta Ray",
+  HandCount=0,
+  LegCount=0,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.232",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -5045,107 +5119,122 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
-  },
-  SourcePage="p.232",
-  Conditions={
-    function (character)
-      return (character.Variables["NotAllowed"] >= 1)
-    end,
-  },
-})
-DefineRace({
-  Name="Companion (Ray (Stingray))",
-  Types={
-    "Companion",
-    "AnimalCompanion",
-  },
-  RaceType="Companion",
-  Size="S",
-  Reach=5,
-  LegCount=0,
-  HandCount=0,
   Bonuses={
     {
       Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
       Formula=Formula("1"),
       Conditions={
         function (character)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
+      Variables={
+        "Companion Level Increase Choice",
+      },
     },
     {
       Category="STAT",
+      Formula=Formula("-2"),
       Variables={
         "STR",
       },
-      Formula=Formula("-4"),
     },
     {
       Category="STAT",
+      Formula=Formula("4"),
       Variables={
         "DEX",
       },
-      Formula=Formula("4"),
     },
     {
       Category="STAT",
+      Formula=Formula("2"),
       Variables={
-        "CON",
         "WIS",
       },
-      Formula=Formula("2"),
     },
     {
       Category="STAT",
+      Formula=Formula("-9"),
       Variables={
         "INT",
       },
-      Formula=Formula("-9"),
     },
     {
       Category="STAT",
+      Formula=Formula("-8"),
       Variables={
         "CHA",
       },
-      Formula=Formula("-8"),
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "AC_Natural_Armor",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "HasLowLightVision",
       },
-      Formula=Formula("1"),
     },
     {
       Category="VAR",
+      Formula=Formula("1"),
       Variables={
         "NoTypeTraits",
       },
-      Formula=Formula("1"),
     },
     {
       Category="WEAPONPROF=Tail Slap",
+      Formula=Formula("max(0,(STR/2))"),
       Variables={
         "DAMAGE",
       },
-      Formula=Formula("max(0,(STR/2))"),
     },
   },
+  Conditions={
+    function (character)
+      return (character.Variables["NotAllowed"] >= 1)
+    end,
+  },
+  StartingKitChoices={
+    "Companion ~ Ray (Manta)",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="M",
+  },
   Movement={
-    Swim=40,
+    Swim=60,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Stingray",
+})
+DefineRace({
+  Name="Companion (Ray (Stingray))",
   SortKey="z_Companion",
+  DisplayName="Companion Stingray",
+  HandCount=0,
+  LegCount=0,
+  RaceType="Companion",
+  Reach=5,
+  Size="S",
+  SourcePage="p.232",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -5188,137 +5277,110 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="S",
+  Bonuses={
+    {
+      Category="ABILITYPOOL",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return (character.Variables["MasterLevel"] >= 4)
+        end,
+      },
+      Variables={
+        "Companion Level Increase Choice",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "CON",
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-9"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "HasLowLightVision",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "NoTypeTraits",
+      },
+    },
+    {
+      Category="WEAPONPROF=Tail Slap",
+      Formula=Formula("max(0,(STR/2))"),
+      Variables={
+        "DAMAGE",
+      },
+    },
   },
-  SourcePage="p.232",
   Conditions={
     function (character)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
-})
-DefineRace({
-  Name="Companion (Turtle (Giant Snapping))",
+  StartingKitChoices={
+    "Companion ~ Ray (Stingray)",
+  },
   Types={
     "Companion",
     "AnimalCompanion",
   },
-  RaceType="Companion",
-  Size="M",
-  Reach=5,
-  LegCount=4,
-  Bonuses={
-    {
-      Category="ABILITYPOOL",
-      Variables={
-        "Companion Level Increase Choice",
-      },
-      Formula=Formula("1"),
-      Conditions={
-        function (character)
-          return (character.Variables["MasterLevel"] >= 7)
-        end,
-      },
-    },
-    {
-      Category="STAT",
-      Variables={
-        "STR",
-      },
-      Formula=Formula("-2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "DEX",
-      },
-      Formula=Formula("0"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CON",
-      },
-      Formula=Formula("-2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "INT",
-      },
-      Formula=Formula("-9"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "WIS",
-      },
-      Formula=Formula("2"),
-    },
-    {
-      Category="STAT",
-      Variables={
-        "CHA",
-      },
-      Formula=Formula("-4"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "AC_Natural_Armor",
-      },
-      Formula=Formula("10"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "HasLowLightVision",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="VAR",
-      Variables={
-        "RaceSizeIsLong",
-      },
-      Formula=Formula("1"),
-      Type={
-        Name="Base",
-        Replace=false,
-        Stack=false,
-      },
-    },
-    {
-      Category="VAR",
-      Variables={
-        "NoTypeTraits",
-      },
-      Formula=Formula("1"),
-    },
-    {
-      Category="WEAPONPROF=Bite",
-      Variables={
-        "DAMAGE",
-      },
-      Formula=Formula("max(0,(STR/2))"),
-    },
+  Facts={
+    BaseSize="S",
   },
   Movement={
-    Walk=20,
-    Swim=20,
+    Swim=40,
   },
   MonsterClass={
     Class="Companion",
     Level=2,
   },
-  DisplayName="Companion Giant Snapping Turtle",
+})
+DefineRace({
+  Name="Companion (Turtle (Giant Snapping))",
   SortKey="z_Companion",
+  DisplayName="Companion Giant Snapping Turtle",
+  LegCount=4,
+  RaceType="Companion",
+  Reach=5,
+  Size="M",
+  SourcePage="p.273",
+  StartingKitCount=1,
   Abilities={
     {
       Category="Special Ability",
@@ -5362,13 +5424,128 @@ DefineRace({
       },
     },
   },
-  Facts={
-    BaseSize="M",
+  Bonuses={
+    {
+      Category="ABILITYPOOL",
+      Formula=Formula("1"),
+      Conditions={
+        function (character)
+          return (character.Variables["MasterLevel"] >= 7)
+        end,
+      },
+      Variables={
+        "Companion Level Increase Choice",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-2"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("0"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-2"),
+      Variables={
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-9"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("10"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "AC_Natural_Armor",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "HasLowLightVision",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Variables={
+        "NoTypeTraits",
+      },
+    },
+    {
+      Category="WEAPONPROF=Bite",
+      Formula=Formula("max(0,(STR/2))"),
+      Variables={
+        "DAMAGE",
+      },
+    },
   },
-  SourcePage="p.273",
   Conditions={
     function (character)
       return (character.Variables["NotAllowed"] >= 1)
     end,
+  },
+  StartingKitChoices={
+    "Companion ~ Turtle (Giant Snapping)",
+  },
+  Types={
+    "Companion",
+    "AnimalCompanion",
+  },
+  Facts={
+    BaseSize="M",
+  },
+  Movement={
+    Walk=20,
+    Swim=20,
+  },
+  MonsterClass={
+    Class="Companion",
+    Level=2,
   },
 })

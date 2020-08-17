@@ -22,13 +22,13 @@
             {
                 condition = $"spell.Descriptor == \"{desc.Value}\"";
             }
-            else if (value.TryRemovePrefix("PROHIBITED=", out var prohib))
+            else if (value.TryRemovePrefix("PROHIBITED=", out value))
             {
-                condition = $"spell.Prohibited == {Helpers.ParseBool(prohib)}";
+                condition = $"spell.Prohibited == {Helpers.ParseBool(value)}";
             }
-            else if (value.TryRemovePrefix("SPELLBOOK=", out var spellbook))
+            else if (value.TryRemovePrefix("SPELLBOOK=", out value))
             {
-                condition = $"spell.SpellBook == \"{spellbook.Value}\"";
+                condition = $"spell.SpellBook == \"{value.Value}\"";
             }
             else if (value.TryRemovePrefix("CLASSLIST=", out var classList))
             {

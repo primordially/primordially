@@ -1,90 +1,56 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using Primordially.LstToLua.Conditions;
+﻿using System.Collections.Generic;
 
 namespace Primordially.LstToLua
 {
-    internal class AutomaticProficiency : ConditionalObject
+    internal sealed class AutomaticProficiency : LuaObject
     {
-        public List<string> Names { get; }
-        public List<string> Types { get; }
-        public ProficiencyKind Kind { get; }
-        public bool DietyWeapons { get; }
+        public List<string> Names => Properties.GetList<string>("Names");
+        public List<string> Types => Properties.GetList<string>("Types");
 
-        public AutomaticProficiency(List<string> names, List<string> types, bool dietyWeapons, ProficiencyKind kind)
+        public ProficiencyKind Kind
         {
-            Names = names;
-            Types = types;
-            DietyWeapons = dietyWeapons;
-            Kind = kind;
+            get => Properties[nameof(Kind)] as ProficiencyKind? ?? default;
+            set => Properties[nameof(Kind)] = value;
+
         }
 
-        public static bool TryParse(TextSpan field, [NotNullWhen(true)] out AutomaticProficiency? result)
+        public bool DeityWeapons
         {
-            if (!field.TryRemovePrefix("AUTO:WEAPONPROF|", out var value) &&
-                !field.TryRemovePrefix("AUTO:ARMORPROF|", out value) &&
-                !field.TryRemovePrefix("AUTO:SHIELDPROF|", out value))
+            get => Properties[nameof(DeityWeapons)] as bool? ?? false;
+            set => Properties[nameof(DeityWeapons)] = value;
+        }
+
+        public AutomaticProficiency(ProficiencyKind kind, TextSpan value)
+        {
+            AddPropertyDefinitions(() => new []
             {
-                result = null;
-                return false;
-            }
+                CommonProperties.Conditions,
+            });
 
-            var kind =
-                field.StartsWith("AUTO:WEAPON") ? ProficiencyKind.Weapon :
-                field.StartsWith("AUTO:ARMOR") ? ProficiencyKind.Armor :
-                field.StartsWith("AUTO:SHIELD") ? ProficiencyKind.Shield :
-                throw new InvalidOperationException("How did we get here?");
-
-            var types = new List<string>();
-            var names = new List<string>();
-            var dietyWeapons = false;
-            var conditions = new List<Condition>();
-
+            Kind = kind;
             foreach (var part in value.Split('|'))
             {
-                if (part.TryRemovePrefix("TYPE=", out var type) ||
-                    part.TryRemovePrefix("TYPE.", out type) ||
-                    part.TryRemovePrefix("ARMORTYPE=", out type) ||
-                    part.TryRemovePrefix("SHIELDTYPE=", out type))
-                {
-                    types.Add(type.Value);
-                }
-                else if (part.Value == "DIETYWEAPONS")
-                {
-                    dietyWeapons = true;
-                }
-                else if (Condition.TryParse(part, out var condition))
-                {
-                    conditions.Add(condition);
-                }
-                else
-                {
-                    names.Add(part.Value);
-                }
+                AddField(part);
             }
-
-            result = new AutomaticProficiency(names, types, dietyWeapons, kind);
-            foreach (var condition in conditions)
-                result.Conditions.Add(condition);
-            return true;
         }
 
-        public override void AddField(TextSpan field)
+        protected override void UnknownField(TextSpan field)
         {
-            throw new NotSupportedException();
-        }
-
-        protected override void DumpMembers(LuaTextWriter output)
-        {
-            output.WriteKeyValue("Kind", Kind.ToString());
-            output.WriteListValue("Names", Names);
-            output.WriteListValue("Types", Types);
-            if (DietyWeapons)
+            if (field.TryRemovePrefix("TYPE=", out field) ||
+                field.TryRemovePrefix("TYPE.", out field) |
+                field.TryRemovePrefix("ARMORTYPE=", out field) ||
+                field.TryRemovePrefix("SHIELDTYPE=", out field))
             {
-                output.WriteKeyValue("DietyWeapons", DietyWeapons);
+                Types.Add(field.Value);
             }
-            base.DumpMembers(output);
+            else if (field.Value == "DEITYWEAPONS")
+            {
+                DeityWeapons = true;
+            }
+            else
+            {
+                Names.Add(field.Value);
+            }
         }
     }
 }

@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Xml;
 
 namespace Primordially.LstToLua.Choosers
 {
@@ -13,9 +11,9 @@ namespace Primordially.LstToLua.Choosers
             {
                 return $"spell.School == \"{school.Value}\"";
             }
-            if (value.TryRemovePrefix("SUBSCHOOL.", out var subschool))
+            if (value.TryRemovePrefix("SUBSCHOOL.", out var subSchool))
             {
-                return $"spell.SubSchool == \"{subschool.Value}\"";
+                return $"spell.SubSchool == \"{subSchool.Value}\"";
             }
             if (value.TryRemovePrefix("DESCRIPTOR.", out var desc))
             {

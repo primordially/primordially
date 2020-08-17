@@ -2,10 +2,11 @@
 {
     internal class ObjectVariableDefinition : IDumpable
     {
-        public ObjectVariableDefinition(string name, string initialValue)
+        public ObjectVariableDefinition(TextSpan value)
         {
-            Name = name;
-            InitialValue = initialValue;
+            var (n, iv) = value.SplitTuple('|');
+            Name = n.Value;
+            InitialValue = iv.Value;
         }
 
         public string Name { get; }
@@ -15,8 +16,8 @@
         public void Dump(LuaTextWriter output)
         {
             output.WriteStartObject();
-            output.WriteKeyValue("Name", Name);
-            output.WriteKeyValue("InitialValue", InitialValue);
+            output.WriteProperty("Name", Name);
+            output.WriteProperty("InitialValue", InitialValue);
             output.WriteEndObject();
         }
     }

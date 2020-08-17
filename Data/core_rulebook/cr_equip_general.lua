@@ -8,6 +8,7 @@ SetSource({
 })
 DefineEquipment({
   Name="Belt",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -17,6 +18,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Girdle",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -27,6 +29,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Robe",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -37,6 +40,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Vestment",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -47,6 +51,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Mantle",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -57,6 +62,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Shirt",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -67,6 +73,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Vest",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -77,6 +84,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Eye Lenses",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -87,6 +95,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Goggles",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -97,76 +106,82 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Boots",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
-  Qualities={
-    Plural="No",
-  },
   UsedSlots=2,
   Weight=0,
   Types={
     "Feet",
     "Boot",
   },
-})
-DefineEquipment({
-  Name="Shoes",
-  Cost=0,
-  ModsRequired=true,
   Qualities={
     Plural="No",
   },
+})
+DefineEquipment({
+  Name="Shoes",
+  CanHaveMods=true,
+  Cost=0,
+  ModsRequired=true,
   UsedSlots=2,
   Weight=0,
   Types={
     "Feet",
     "Shoes",
   },
-})
-DefineEquipment({
-  Name="Slippers",
-  Cost=0,
-  ModsRequired=true,
   Qualities={
     Plural="No",
   },
+})
+DefineEquipment({
+  Name="Slippers",
+  CanHaveMods=true,
+  Cost=0,
+  ModsRequired=true,
   UsedSlots=2,
   Weight=0,
   Types={
     "Feet",
     "Slippers",
   },
-})
-DefineEquipment({
-  Name="Gauntlets",
-  Cost=0,
-  ModsRequired=true,
   Qualities={
     Plural="No",
   },
+})
+DefineEquipment({
+  Name="Gauntlets",
+  CanHaveMods=true,
+  Cost=0,
+  ModsRequired=true,
   UsedSlots=2,
   Weight=0,
   Types={
     "Hands",
     "Gauntlet",
   },
-})
-DefineEquipment({
-  Name="Gloves",
-  Cost=0,
-  ModsRequired=true,
   Qualities={
     Plural="No",
   },
+})
+DefineEquipment({
+  Name="Gloves",
+  CanHaveMods=true,
+  Cost=0,
+  ModsRequired=true,
   UsedSlots=2,
   Weight=0,
   Types={
     "Hands",
     "Glove",
   },
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Circlet",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -177,6 +192,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Crown",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -187,6 +203,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Hat",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -197,6 +214,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Helmet",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -207,6 +225,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Mask",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -217,6 +236,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Headband",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -226,6 +246,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Phylactery",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -236,6 +257,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Amulet",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -246,6 +268,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Brooch",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -256,6 +279,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Medallion",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -266,6 +290,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Necklace",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -276,6 +301,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Periapt",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -286,6 +312,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Scarab",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -296,6 +323,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Ring",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -305,6 +333,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Cape",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -315,6 +344,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Cloak",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -325,34 +355,37 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Bracelets",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
-  Qualities={
-    Plural="No",
-  },
   UsedSlots=2,
   Weight=0,
   Types={
     "Wrist",
     "Bracelet",
   },
-})
-DefineEquipment({
-  Name="Bracers",
-  Cost=0,
-  ModsRequired=true,
   Qualities={
     Plural="No",
   },
+})
+DefineEquipment({
+  Name="Bracers",
+  CanHaveMods=true,
+  Cost=0,
+  ModsRequired=true,
   UsedSlots=2,
   Weight=0,
   Types={
     "Wrist",
     "Bracer",
   },
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Potion",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -364,6 +397,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Rod",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=5,
@@ -374,6 +408,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Scroll",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0.01,
@@ -385,6 +420,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Staff",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=5,
@@ -395,6 +431,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Wand",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0.0625,
@@ -405,6 +442,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Spell Component",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -415,6 +453,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Spell Focus",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -425,6 +464,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Art",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -434,6 +474,7 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Gem",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
@@ -443,583 +484,627 @@ DefineEquipment({
 })
 DefineEquipment({
   Name="Head Tattoo",
+  Key="Tattoo Head",
+  SortKey="Tattoo, Head",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
-  Key="Tattoo Head",
   Types={
     "Tattoo",
     "Tattoo Head",
   },
-  SortKey="Tattoo, Head",
 })
 DefineEquipment({
   Name="Shoulder Tattoo",
+  Key="Tattoo Shoulders",
+  SortKey="Tattoo, Shoulders",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
-  Key="Tattoo Shoulders",
   Types={
     "Tattoo",
     "Tattoo Shoulders",
   },
-  SortKey="Tattoo, Shoulders",
 })
 DefineEquipment({
   Name="Neck Tattoo",
+  Key="Tattoo Neck",
+  SortKey="Tattoo, Neck",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
-  Key="Tattoo Neck",
   Types={
     "Tattoo",
     "Tattoo Neck",
   },
-  SortKey="Tattoo, Neck",
 })
 DefineEquipment({
   Name="Chest Tattoo",
+  Key="Tattoo Chest",
+  SortKey="Tattoo, Chest",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
-  Key="Tattoo Chest",
   Types={
     "Tattoo",
     "Tattoo Chest",
   },
-  SortKey="Tattoo, Chest",
 })
 DefineEquipment({
   Name="Body Tattoo",
+  Key="Tattoo Body",
+  SortKey="Tattoo, Body",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
-  Key="Tattoo Body",
   Types={
     "Tattoo",
     "Tattoo Body",
   },
-  SortKey="Tattoo, Body",
 })
 DefineEquipment({
   Name="Belt Tattoo",
+  Key="Tattoo Belt",
+  SortKey="Tattoo, Belt",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
-  Key="Tattoo Belt",
   Types={
     "Tattoo",
     "Tattoo Belt",
   },
-  SortKey="Tattoo, Belt",
 })
 DefineEquipment({
   Name="Wrist Tattoo",
+  Key="Tattoo Wrist",
+  SortKey="Tattoo, Wrist",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
-  Key="Tattoo Wrist",
   Types={
     "Tattoo",
     "Tattoo Wrist",
   },
-  SortKey="Tattoo, Wrist",
 })
 DefineEquipment({
   Name="Hand Tattoo",
+  Key="Tattoo Hands",
+  SortKey="Tattoo, Hands",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
-  Key="Tattoo Hands",
   Types={
     "Tattoo",
     "Tattoo Hands",
   },
-  SortKey="Tattoo, Hands",
 })
 DefineEquipment({
   Name="Ring Tattoo",
+  Key="Tattoo Ring",
+  SortKey="Tattoo, Ring",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
-  Key="Tattoo Ring",
   Types={
     "Tattoo",
     "Tattoo Ring",
   },
-  SortKey="Tattoo, Ring",
 })
 DefineEquipment({
   Name="Feet Tattoo",
+  Key="Tattoo Feet",
+  SortKey="Tattoo, Feet",
+  CanHaveMods=true,
   Cost=0,
   ModsRequired=true,
   Weight=0,
-  Key="Tattoo Feet",
   Types={
     "Tattoo",
     "Tattoo Feet",
   },
-  SortKey="Tattoo, Feet",
 })
 DefineEquipment({
   Name="Pound of Wheat",
-  Cost=0.01,
-  Weight=1,
   Key="Wheat (per lb)",
+  SortKey="Wheat, per lb.",
+  CanHaveMods=true,
+  Cost=0.01,
+  SourcePage="p.140",
+  Weight=1,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Wheat, per lb.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Pound of Flour",
-  Cost=0.02,
-  Weight=1,
   Key="Flour (per lb)",
+  SortKey="Flour, per lb.",
+  CanHaveMods=true,
+  Cost=0.02,
+  SourcePage="p.140",
+  Weight=1,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Flour, per lb.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Chicken",
-  Cost=0.02,
   Key="Chicken",
+  SortKey="Chicken",
+  CanHaveMods=true,
+  Cost=0.02,
+  SourcePage="p.140",
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Chicken",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Pound of Iron",
-  Cost=0.1,
-  Weight=1,
   Key="Iron (per lb)",
+  SortKey="Iron, per lb.",
+  CanHaveMods=true,
+  Cost=0.1,
+  SourcePage="p.140",
+  Weight=1,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Iron, per lb.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Pound of Tobacco",
-  Cost=0.5,
-  Weight=1,
   Key="Tobacco (per lb)",
+  SortKey="Tobacco, per lb.",
+  CanHaveMods=true,
+  Cost=0.5,
+  SourcePage="p.140",
+  Weight=1,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Tobacco, per lb.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Pound of Copper",
-  Cost=0.5,
-  Weight=1,
   Key="Copper (per lb)",
+  SortKey="Copper, per lb.",
+  CanHaveMods=true,
+  Cost=0.5,
+  SourcePage="p.140",
+  Weight=1,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Copper, per lb.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Pound of Cinnamon",
-  Cost=1,
-  Weight=1,
   Key="Cinnamon (per lb)",
+  SortKey="Cinnamon, per lb.",
+  CanHaveMods=true,
+  Cost=1,
+  SourcePage="p.140",
+  Weight=1,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Cinnamon, per lb.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Goat",
-  Cost=1,
   Key="Goat",
+  SortKey="Goat",
+  CanHaveMods=true,
+  Cost=1,
+  SourcePage="p.140",
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Goat",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Pound of Ginger",
-  Cost=2,
-  Weight=1,
   Key="Ginger (per lb)",
+  SortKey="Ginger, per lb.",
+  CanHaveMods=true,
+  Cost=2,
+  SourcePage="p.140",
+  Weight=1,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Ginger, per lb.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Pound of Pepper",
-  Cost=2,
-  Weight=1,
   Key="Pepper (per lb)",
+  SortKey="Pepper, per lb.",
+  CanHaveMods=true,
+  Cost=2,
+  SourcePage="p.140",
+  Weight=1,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Pepper, per lb.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Sheep",
-  Cost=2,
   Key="Sheep",
+  SortKey="Sheep",
+  CanHaveMods=true,
+  Cost=2,
+  SourcePage="p.140",
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Sheep",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Pig",
-  Cost=3,
   Key="Pig",
+  SortKey="Pig",
+  CanHaveMods=true,
+  Cost=3,
+  SourcePage="p.140",
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Pig",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Square Yard of Linen",
-  Cost=4,
-  Weight=1,
   Key="Linen (sq yd)",
+  SortKey="Linen, sq. yd.",
+  CanHaveMods=true,
+  Cost=4,
+  SourcePage="p.140",
+  Weight=1,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Linen, sq. yd.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Pound of Salt",
-  Cost=5,
-  Weight=1,
   Key="Salt (per lb)",
+  SortKey="Salt, per lb.",
+  CanHaveMods=true,
+  Cost=5,
+  SourcePage="p.140",
+  Weight=1,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Salt, per lb.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Pound of Silver",
-  Cost=5,
-  Weight=1,
   Key="Silver (per lb)",
+  SortKey="Silver, per lb.",
+  CanHaveMods=true,
+  Cost=5,
+  SourcePage="p.140",
+  Weight=1,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Silver, per lb.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Square Yard of Silk",
-  Cost=10,
-  Weight=0.5,
   Key="Silk (sq yd)",
+  SortKey="Silk, sq. yd.",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.140",
+  Weight=0.5,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Silk, sq. yd.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Cow",
-  Cost=10,
   Key="Cow",
+  SortKey="Cow",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.140",
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Cow",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Pound of Saffron",
-  Cost=15,
-  Weight=1,
   Key="Saffron (per lb)",
+  SortKey="Saffron, per lb.",
+  CanHaveMods=true,
+  Cost=15,
+  SourcePage="p.140",
+  Weight=1,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Saffron, per lb.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Pound of Cloves",
-  Cost=15,
-  Weight=1,
   Key="Cloves (per lb)",
+  SortKey="Cloves, per lb.",
+  CanHaveMods=true,
+  Cost=15,
+  SourcePage="p.140",
+  Weight=1,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Cloves, per lb.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Ox",
-  Cost=15,
   Key="Ox",
+  SortKey="Ox",
+  CanHaveMods=true,
+  Cost=15,
+  SourcePage="p.140",
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Ox",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Pound of Gold",
-  Cost=50,
-  Weight=1,
   Key="Gold (per lb)",
+  SortKey="Gold, per lb.",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.140",
+  Weight=1,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Gold, per lb.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Pound of Platinum",
-  Cost=500,
-  Weight=1,
   Key="Platinum (per lb)",
+  SortKey="Platinum, per lb.",
+  CanHaveMods=true,
+  Cost=500,
+  SourcePage="p.140",
+  Weight=1,
   Types={
     "Goods",
     "Trade",
   },
-  SortKey="Platinum, per lb.",
-  SourcePage="p.140",
 })
 DefineEquipment({
   Name="Backpack",
-  Cost=2,
+  Key="Backpack",
+  SortKey="Backpack",
+  CanHaveMods=true,
   Contains={
     Capacity=math.huge,
     ItemLimits={
     },
   },
+  Cost=2,
+  SourcePage="p.158",
   Weight=2,
-  Key="Backpack",
   Types={
     "Goods",
     "Container",
     "General",
     "Resizable",
   },
-  SortKey="Backpack",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Barrel",
-  Cost=2,
+  Key="Barrel",
+  SortKey="Barrel",
+  CanHaveMods=true,
   Contains={
     Capacity=math.huge,
     ItemLimits={
     },
   },
+  Cost=2,
+  SourcePage="p.158",
   Weight=30,
-  Key="Barrel",
   Types={
     "Goods",
     "Container",
     "General",
   },
-  SortKey="Barrel",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Basket",
-  Cost=0.4,
+  Key="Basket",
+  SortKey="Basket",
+  CanHaveMods=true,
   Contains={
     Capacity=math.huge,
     ItemLimits={
     },
   },
+  Cost=0.4,
+  SourcePage="p.158",
   Weight=1,
-  Key="Basket",
   Types={
     "Goods",
     "Container",
     "General",
   },
-  SortKey="Basket",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Bedroll",
-  Cost=0.1,
-  Weight=5,
   Key="Bedroll",
+  SortKey="Bedroll",
+  CanHaveMods=true,
+  Cost=0.1,
+  SourcePage="p.158",
+  Weight=5,
   Types={
     "Goods",
     "General",
     "Resizable",
   },
-  SortKey="Bedroll",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Bell",
-  Cost=1,
-  Weight=0,
   Key="Bell",
+  SortKey="Bell",
+  CanHaveMods=true,
+  Cost=1,
+  SourcePage="p.158",
+  Weight=0,
   Types={
     "Goods",
     "General",
   },
-  SortKey="Bell",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Blanket, Winter",
-  Cost=0.5,
-  Weight=3,
   Key="Blanket (Winter)",
+  SortKey="Blanket, Winter",
+  CanHaveMods=true,
+  Cost=0.5,
+  DisplayName="Winter Blanket",
+  SourcePage="p.158",
+  Weight=3,
   Types={
     "Goods",
     "General",
     "Resizable",
   },
-  DisplayName="Winter Blanket",
-  SortKey="Blanket, Winter",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Block and Tackle",
-  Cost=5,
-  Weight=5,
   Key="Block and Tackle",
+  SortKey="Block and Tackle",
+  CanHaveMods=true,
+  Cost=5,
+  SourcePage="p.158",
+  Weight=5,
   Types={
     "Goods",
     "General",
   },
-  SortKey="Block and Tackle",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Bottle",
-  Cost=2,
+  Key="Bottle (Glass)",
+  SortKey="Bottle",
+  CanHaveMods=true,
   Contains={
     Capacity=1.5,
     ItemLimits={
       Liquid=3,
     },
   },
+  Cost=2,
+  SourcePage="p.158",
   Weight=1,
-  Key="Bottle (Glass)",
   Types={
     "Goods",
     "Container",
     "General",
   },
-  SortKey="Bottle",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Bucket",
-  Cost=0.5,
+  Key="Bucket",
+  SortKey="Bucket",
+  CanHaveMods=true,
   Contains={
     Capacity=math.huge,
     ItemLimits={
     },
   },
+  Cost=0.5,
+  SourcePage="p.158",
   Weight=2,
-  Key="Bucket",
   Types={
     "Goods",
     "Container",
     "General",
   },
-  SortKey="Bucket",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Caltrops",
-  Cost=1,
-  Qualities={
-    Plural="No",
-  },
-  Weight=2,
   Key="Caltrops",
+  SortKey="Caltrops",
+  CanHaveMods=true,
+  Cost=1,
   Description={
     Format="A caltrop is a four-pronged metal spike crafted so that one prong faces up no matter how the caltrop comes to rest. You scatter caltrops on the ground in the hope that your enemies step on them or are at least forced to slow down to avoid them. One 2-pound bag of caltrops covers an area 5 feet square.&nl;Each time a creature moves into an area covered by caltrops (or spends a round fighting while standing in such an area), it runs the risk of stepping on one. Make an attack roll for the caltrops (base attack bonus +0) against the creature. For this attack, the creature's shield, armor, and deflection bonuses do not count. If the creature is wearing shoes or other footwear, it gets a +2 armor bonus to AC. If the attack succeeds, the creature has stepped on a caltrop. The caltrop deals 1 point of damage, and the creature's speed is reduced by half because its foot is wounded. This movement penalty lasts for 24 hours, until the creature is successfully treated with a DC 15 Heal check, or until it receives at least 1 point of magical healing. A charging or running creature must immediately stop if it steps on a caltrop. Any creature moving at half speed or slower can pick its way through a bed of caltrops with no trouble.&nl;Caltrops may not work against unusual opponents.",
   },
+  SourcePage="p.155",
+  Weight=2,
   Types={
     "Goods",
     "General",
   },
-  SortKey="Caltrops",
-  SourcePage="p.155",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Candle",
-  Cost=0.01,
-  Qualities={
-    ['Increases light level by one step']="5 ft.",
-    Duration="1 hr.",
-    ['Increases light level by one step']="5 ft.",
-    Duration="1 hr.",
-  },
   Key="Candle",
+  SortKey="Candle",
+  CanHaveMods=true,
+  Cost=0.01,
   Description={
     Format="A candle dimly illuminates a small area, increasing the light level in a 5-foot radius by one step (darkness becomes dim light and dim light becomes normal light). A candle cannot increase the light level above normal light. A candle burns for 1 hour.",
   },
+  SourcePage="p.155",
   Types={
     "Goods",
     "General",
     "Consumable",
     "Light Source",
   },
-  SortKey="Candle",
-  SourcePage="p.155",
+  Qualities={
+    ['Increases light level by one step']="5 ft.",
+    Duration="1 hr.",
+  },
 })
 DefineEquipment({
   Name="Canvas (sq. yd.)",
-  Cost=0.1,
-  Qualities={
-    Plural="No",
-  },
-  Weight=1,
   Key="Canvas (sq yd)",
+  SortKey="Canvas (sq. yd.)",
+  CanHaveMods=true,
+  Cost=0.1,
+  SourcePage="p.158",
+  Weight=1,
   Types={
     "Goods",
     "General",
   },
-  SortKey="Canvas (sq. yd.)",
-  SourcePage="p.158",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Case, Scroll",
-  Cost=1,
+  Key="Scroll Case",
+  SortKey="Case, Scroll",
+  CanHaveMods=true,
   Contains={
     Capacity=math.huge,
     ItemLimits={
@@ -1029,136 +1114,144 @@ DefineEquipment({
       Scroll=10,
     },
   },
+  Cost=1,
+  DisplayName="Scroll Case",
+  SourcePage="p.158",
   Weight=0.5,
-  Key="Scroll Case",
   Types={
     "Goods",
     "Container",
     "General",
   },
-  DisplayName="Scroll Case",
-  SortKey="Case, Scroll",
-  SourcePage="p.158",
 })
 CopyEquipment("Scroll Case", {
   Name="Case, Map",
-  Cost=0,
   Key="Map Case",
-  DisplayName="Map Case",
   SortKey="Case, Map",
+  CanHaveMods=true,
+  DisplayName="Map Case",
 })
 DefineEquipment({
   Name="Chain (10 ft.)",
-  Cost=30,
-  Qualities={
-    Plural="No",
-  },
-  Weight=2,
   Key="Chain (10 ft)",
+  SortKey="Chain (10 ft.)",
+  CanHaveMods=true,
+  Cost=30,
   Description={
     Format="Chain has hardness 10 and 5 hit points. It can be burst with a DC 26 Strength check.",
   },
+  SourcePage="p.155",
+  Weight=2,
   Types={
     "Goods",
     "General",
   },
-  SortKey="Chain (10 ft.)",
-  SourcePage="p.155",
-})
-DefineEquipment({
-  Name="Chalk",
-  Cost=0.01,
   Qualities={
     Plural="No",
   },
+})
+DefineEquipment({
+  Name="Chalk",
   Key="Chalk (1 Piece)",
+  SortKey="Chalk",
+  CanHaveMods=true,
+  Cost=0.01,
+  SourcePage="p.158",
   Types={
     "Goods",
     "General",
   },
-  SortKey="Chalk",
-  SourcePage="p.158",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Chest",
-  Cost=2,
+  Key="Chest",
+  SortKey="Chest",
+  CanHaveMods=true,
   Contains={
     Capacity=math.huge,
     ItemLimits={
     },
   },
+  Cost=2,
+  SourcePage="p.158",
   Weight=25,
-  Key="Chest",
   Types={
     "Goods",
     "Container",
     "General",
   },
-  SortKey="Chest",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Crowbar",
-  Cost=2,
-  Weight=5,
   Key="Crowbar",
+  SortKey="Crowbar",
+  CanHaveMods=true,
+  Cost=2,
   Description={
     Format="A crowbar grants a +2 circumstance bonus on Strength checks made to force open a door or chest. If used in combat, treat a crowbar as a one-handed improvised weapon that deals bludgeoning damage equal to that of a club of its size.",
   },
-  Types={
-    "Goods",
-    "General",
-  },
+  SourcePage="p.155",
+  Weight=5,
   SpecialProperties={
     {
       Format="+2 circumstance bonus to Strength checks to force open a door or chest",
     },
   },
-  SortKey="Crowbar",
-  SourcePage="p.155",
+  Types={
+    "Goods",
+    "General",
+  },
 })
 DefineEquipment({
   Name="Firewood, Per Day",
+  Key="Firewood (Per Day)",
+  SortKey="Firewood, Per Day",
+  CanHaveMods=true,
   Cost=0.01,
+  DisplayName="Firewood",
+  SourcePage="p.158",
+  Weight=20,
+  Types={
+    "Goods",
+    "General",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=20,
-  Key="Firewood (Per Day)",
-  Types={
-    "Goods",
-    "General",
-  },
-  DisplayName="Firewood",
-  SortKey="Firewood, Per Day",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Fishhook",
-  Cost=0.1,
   Key="Fishhook",
+  SortKey="Fishhook",
+  CanHaveMods=true,
+  Cost=0.1,
+  SourcePage="p.158",
   Types={
     "Goods",
     "General",
   },
-  SortKey="Fishhook",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Fishing Net",
-  Cost=4,
-  Weight=5,
   Key="Fishing Net (25 sq ft)",
+  SortKey="Fishing Net",
+  CanHaveMods=true,
+  Cost=4,
+  SourcePage="p.158",
+  Weight=5,
   Types={
     "Goods",
     "General",
   },
-  SortKey="Fishing Net",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Flask",
-  Cost=0.03,
+  Key="Flask",
+  SortKey="Flask",
+  CanHaveMods=true,
   Contains={
     Capacity=1,
     ItemLimits={
@@ -1167,86 +1260,90 @@ DefineEquipment({
       Poison=1,
     },
   },
+  Cost=0.03,
+  SourcePage="p.158",
   Weight=1.5,
-  Key="Flask",
   Types={
     "Goods",
     "Container",
     "General",
     "Flask",
   },
-  SortKey="Flask",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Flint and Steel",
-  Cost=1,
-  Qualities={
-    Plural="No",
-  },
   Key="Flint and Steel",
+  SortKey="Flint and Steel",
+  CanHaveMods=true,
+  Cost=1,
   Description={
     Format="Lighting a torch with flint and steel is a full-round action, and lighting any other fire with them takes at least that long.",
   },
+  SourcePage="p.155",
   Types={
     "Goods",
     "General",
   },
-  SortKey="Flint and Steel",
-  SourcePage="p.155",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Grappling Hook",
-  Cost=1,
-  Weight=4,
   Key="Grappling Hook",
+  SortKey="Grappling Hook",
+  CanHaveMods=true,
+  Cost=1,
   Description={
     Format="Throwing a grappling hook requires a ranged attack roll, treating the hook as a thrown weapon with a range increment of 10 feet. Objects with ample places to catch the hook are AC 5.",
   },
+  SourcePage="p.155",
+  Weight=4,
   Types={
     "Goods",
     "General",
   },
-  SortKey="Grappling Hook",
-  SourcePage="p.155",
 })
 DefineEquipment({
   Name="Hammer",
-  Cost=0.5,
-  Weight=2,
   Key="Hammer",
+  SortKey="Hammer",
+  CanHaveMods=true,
+  Cost=0.5,
   Description={
     Format="If a hammer is used in combat, treat it as a one-handed improvised weapon that deals bludgeoning damage equal to that of a spiked gauntlet of its size.",
   },
+  SourcePage="p.156",
+  Weight=2,
   Types={
     "Goods",
     "General",
   },
-  SortKey="Hammer",
-  SourcePage="p.156",
 })
 DefineEquipment({
   Name="Hourglass",
-  Cost=25,
-  Weight=1,
   Key="Hourglass",
+  SortKey="Hourglass",
+  CanHaveMods=true,
+  Cost=25,
+  SourcePage="p.158",
+  Weight=1,
   Types={
     "Goods",
     "General",
   },
-  SortKey="Hourglass",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Ink, 1 oz. Vial",
-  Cost=8,
-  Qualities={
-    Plural="No",
-  },
   Key="Ink (1 oz Vial)",
+  SortKey="Ink, 1 oz. Vial",
+  CanHaveMods=true,
+  Cost=8,
   Description={
     Format="Ink in colors other than black costs twice as much.",
   },
+  DisplayName="Ink",
+  SourcePage="p.156",
   Types={
     "Goods",
     "General",
@@ -1254,20 +1351,21 @@ DefineEquipment({
     "Liquid",
     "Vial",
   },
-  DisplayName="Ink",
-  SortKey="Ink, 1 oz. Vial",
-  SourcePage="p.156",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Ink, Colored, 1 oz. Vial",
-  Cost=16,
-  Qualities={
-    Plural="No",
-  },
   Key="Ink (Color/1 oz Vial)",
+  SortKey="Ink, Colored, 1 oz. Vial",
+  CanHaveMods=true,
+  Cost=16,
   Description={
     Format="Ink in colors other than black costs twice as much.",
   },
+  DisplayName="Colored Ink",
+  SourcePage="p.156",
   Types={
     "Goods",
     "General",
@@ -1275,398 +1373,424 @@ DefineEquipment({
     "Liquid",
     "Vial",
   },
-  DisplayName="Colored Ink",
-  SortKey="Ink, Colored, 1 oz. Vial",
-  SourcePage="p.156",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Inkpen",
-  Cost=0.1,
   Key="Inkpen",
+  SortKey="Inkpen",
+  CanHaveMods=true,
+  Cost=0.1,
+  SourcePage="p.158",
   Types={
     "Goods",
     "General",
     "Writing",
   },
-  SortKey="Inkpen",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Jug, Clay",
-  Cost=0.03,
+  Key="Jug (Clay)",
+  SortKey="Jug, Clay",
+  CanHaveMods=true,
   Contains={
     Capacity=8,
     ItemLimits={
       ['Spell Component']=1,
     },
   },
-  Weight=9,
-  Key="Jug (Clay)",
+  Cost=0.03,
   Description={
     Format="This basic jug is fitted with a stopper and holds 1 gallon of liquid.",
   },
+  DisplayName="Jug",
+  SourcePage="p.146",
+  Weight=9,
   Types={
     "Goods",
     "Container",
     "General",
   },
-  DisplayName="Jug",
-  SortKey="Jug, Clay",
-  SourcePage="p.146",
 })
 DefineEquipment({
   Name="Ladder (10 ft.)",
-  Cost=0.2,
-  Weight=20,
   Key="Ladder (10 ft)",
+  SortKey="Ladder (10 ft.)",
+  CanHaveMods=true,
+  Cost=0.2,
+  DisplayName="Ladder",
+  SourcePage="p.158",
+  Weight=20,
   Types={
     "Goods",
     "General",
   },
-  DisplayName="Ladder",
-  SortKey="Ladder (10 ft.)",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Lamp",
+  Key="Lamp (Common)",
+  SortKey="Lamp",
+  CanHaveMods=true,
   Cost=0.1,
+  Description={
+    Format="A lamp illuminates a small area, providing normal light in a 15-foot radius and increasing the light level by one step for an additional 15 feet beyond that area (darkness becomes dim light and dim light becomes normal light). A lamp does not increase the light level in normal light or bright light. A lamp burns for 6 hours on one pint of oil. You can carry a lamp in one hand.",
+  },
+  SourcePage="p.156",
+  Weight=1,
+  Types={
+    "Goods",
+    "General",
+    "Light Source",
+  },
   Qualities={
     ['Bright Illumination']="15 ft.",
     ['Shadowy Illumination']="30 ft.",
     Duration="6 hr./pint",
   },
-  Weight=1,
-  Key="Lamp (Common)",
+})
+DefineEquipment({
+  Name="Lantern, Bullseye",
+  Key="Lantern (Bullseye)",
+  SortKey="Lantern, Bullseye",
+  CanHaveMods=true,
+  Cost=12,
   Description={
-    Format="A lamp illuminates a small area, providing normal light in a 15-foot radius and increasing the light level by one step for an additional 15 feet beyond that area (darkness becomes dim light and dim light becomes normal light). A lamp does not increase the light level in normal light or bright light. A lamp burns for 6 hours on one pint of oil. You can carry a lamp in one hand.",
+    Format="A bullseye lantern provides normal light in a 60-foot cone and increases the light level by one step in the area beyond that, out to a 120-foot cone (darkness becomes dim light and dim light becomes normal light). A bullseye lantern does not increase the light level in normal light or bright light. A lantern burns for 6 hours on one pint of oil. You can carry a lantern in one hand.",
   },
+  DisplayName="Bullseye Lantern",
+  SourcePage="p.156",
+  Weight=3,
   Types={
     "Goods",
     "General",
     "Light Source",
   },
-  SortKey="Lamp",
-  SourcePage="p.156",
-})
-DefineEquipment({
-  Name="Lantern, Bullseye",
-  Cost=12,
   Qualities={
     ['Normal Illumination']="60 ft. cone",
     ['Increases light level by 1 step']="120 ft. cone",
     Duration="6 hr./pint",
   },
-  Weight=3,
-  Key="Lantern (Bullseye)",
+})
+DefineEquipment({
+  Name="Lantern, Hooded",
+  Key="Lantern (Hooded)",
+  SortKey="Lantern, Hooded",
+  CanHaveMods=true,
+  Cost=7,
   Description={
-    Format="A bullseye lantern provides normal light in a 60-foot cone and increases the light level by one step in the area beyond that, out to a 120-foot cone (darkness becomes dim light and dim light becomes normal light). A bullseye lantern does not increase the light level in normal light or bright light. A lantern burns for 6 hours on one pint of oil. You can carry a lantern in one hand.",
+    Format="A hooded lantern sheds normal light in a 30-foot radius and increases the light level by one step for an additional 30 feet beyond that area (darkness becomes dim light and dim light becomes normal light). A hooded lantern does not increase the light level in normal light or bright light. A lantern burns for 6 hours on one pint of oil. You can carry a lantern in one hand.",
   },
+  DisplayName="Hooded Lantern",
+  SourcePage="p.156",
+  Weight=2,
   Types={
     "Goods",
     "General",
     "Light Source",
   },
-  DisplayName="Bullseye Lantern",
-  SortKey="Lantern, Bullseye",
-  SourcePage="p.156",
-})
-DefineEquipment({
-  Name="Lantern, Hooded",
-  Cost=7,
   Qualities={
     ['Bright Illumination']="30 ft.",
     ['Shadowy Illumination']="60 ft.",
     Duration="6 hr./pint",
   },
-  Weight=2,
-  Key="Lantern (Hooded)",
-  Description={
-    Format="A hooded lantern sheds normal light in a 30-foot radius and increases the light level by one step for an additional 30 feet beyond that area (darkness becomes dim light and dim light becomes normal light). A hooded lantern does not increase the light level in normal light or bright light. A lantern burns for 6 hours on one pint of oil. You can carry a lantern in one hand.",
-  },
-  Types={
-    "Goods",
-    "General",
-    "Light Source",
-  },
-  DisplayName="Hooded Lantern",
-  SortKey="Lantern, Hooded",
-  SourcePage="p.156",
 })
 DefineEquipment({
   Name="Lock, Simple",
-  Cost=20,
-  Weight=1,
   Key="Lock (Simple)",
+  SortKey="Lock, Simple",
+  CanHaveMods=true,
+  Cost=20,
   Description={
     Format="The DC to open a lock with the Disable Device skill depends on the lock's quality: simple (DC 20), average (DC 25), good (DC 30), or superior (DC 40).",
   },
+  DisplayName="Simple Lock",
+  SourcePage="p.156",
+  Weight=1,
   Types={
     "Goods",
     "General",
   },
-  DisplayName="Simple Lock",
-  SortKey="Lock, Simple",
-  SourcePage="p.156",
 })
 DefineEquipment({
   Name="Lock, Average",
-  Cost=40,
-  Weight=1,
   Key="Lock (Average)",
+  SortKey="Lock, Average",
+  CanHaveMods=true,
+  Cost=40,
   Description={
     Format="The DC to open a lock with the Disable Device skill depends on the lock's quality: simple (DC 20), average (DC 25), good (DC 30), or superior (DC 40).",
   },
+  DisplayName="Average Lock",
+  SourcePage="p.156",
+  Weight=1,
   Types={
     "Goods",
     "General",
   },
-  DisplayName="Average Lock",
-  SortKey="Lock, Average",
-  SourcePage="p.156",
 })
 DefineEquipment({
   Name="Lock, Good",
-  Cost=80,
-  Weight=1,
   Key="Lock (Good)",
+  SortKey="Lock, Good",
+  CanHaveMods=true,
+  Cost=80,
   Description={
     Format="The DC to open a lock with the Disable Device skill depends on the lock's quality: simple (DC 20), average (DC 25), good (DC 30), or superior (DC 40).",
   },
+  DisplayName="Good Lock",
+  SourcePage="p.156",
+  Weight=1,
   Types={
     "Goods",
     "General",
   },
-  DisplayName="Good Lock",
-  SortKey="Lock, Good",
-  SourcePage="p.156",
 })
 DefineEquipment({
   Name="Lock, Superior",
-  Cost=150,
-  Weight=1,
   Key="Lock (Superior)",
+  SortKey="Lock, Superior",
+  CanHaveMods=true,
+  Cost=150,
   Description={
     Format="The DC to open a lock with the Disable Device skill depends on the lock's quality: simple (DC 20), average (DC 25), good (DC 30), or superior (DC 40).",
   },
+  DisplayName="Superior Lock",
+  SourcePage="p.156",
+  Weight=1,
   Types={
     "Goods",
     "General",
   },
-  DisplayName="Superior Lock",
-  SortKey="Lock, Superior",
-  SourcePage="p.156",
 })
 DefineEquipment({
   Name="Manacles, Small",
-  Cost=15,
-  Qualities={
-    Plural="No",
-  },
-  Weight=2,
   Key="Manacles (Small)",
+  SortKey="Manacles, Small",
+  CanHaveMods=true,
+  Cost=15,
   Description={
     Format="Manacles can bind a Medium creature. A manacled creature can use the Escape Artist skill to slip free (DC 30). Breaking the manacles requires a Strength check (DC 26). Manacles have hardness 10 and 10 hit points.&nl;Most manacles have locks; add the cost of the lock you want to the cost of the manacles.&nl;For the same cost, you can buy manacles for a Small creature. For a Large creature, manacles cost 10 times the indicated amount, and for a Huge creature, 100 times the indicated amount. Gargantuan, Colossal, Tiny, Diminutive, and Fine creatures can be held only by specially made manacles, which cost at least 100 times the indicated amount.",
   },
+  DisplayName="Small Manacles",
+  SourcePage="p.156",
+  Weight=2,
   Types={
     "Goods",
     "General",
   },
-  DisplayName="Small Manacles",
-  SortKey="Manacles, Small",
-  SourcePage="p.156",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Manacles, Medium",
-  Cost=15,
-  Qualities={
-    Plural="No",
-  },
-  Weight=2,
   Key="Manacles (Medium)",
+  SortKey="Manacles, Medium",
+  CanHaveMods=true,
+  Cost=15,
   Description={
     Format="Manacles can bind a Medium creature. A manacled creature can use the Escape Artist skill to slip free (DC 30). Breaking the manacles requires a Strength check (DC 26). Manacles have hardness 10 and 10 hit points.&nl;Most manacles have locks; add the cost of the lock you want to the cost of the manacles.&nl;For the same cost, you can buy manacles for a Small creature. For a Large creature, manacles cost 10 times the indicated amount, and for a Huge creature, 100 times the indicated amount. Gargantuan, Colossal, Tiny, Diminutive, and Fine creatures can be held only by specially made manacles, which cost at least 100 times the indicated amount.",
   },
+  DisplayName="Manacles",
+  SourcePage="p.156",
+  Weight=2,
   Types={
     "Goods",
     "General",
   },
-  DisplayName="Manacles",
-  SortKey="Manacles, Medium",
-  SourcePage="p.156",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Manacles, Large",
-  Cost=150,
-  Qualities={
-    Plural="No",
-  },
-  Weight=8,
   Key="Manacles (Large)",
+  SortKey="Manacles, Large",
+  CanHaveMods=true,
+  Cost=150,
   Description={
     Format="Manacles can bind a Medium creature. A manacled creature can use the Escape Artist skill to slip free (DC 30). Breaking the manacles requires a Strength check (DC 26). Manacles have hardness 10 and 10 hit points.&nl;Most manacles have locks; add the cost of the lock you want to the cost of the manacles.&nl;For the same cost, you can buy manacles for a Small creature. For a Large creature, manacles cost 10 times the indicated amount, and for a Huge creature, 100 times the indicated amount. Gargantuan, Colossal, Tiny, Diminutive, and Fine creatures can be held only by specially made manacles, which cost at least 100 times the indicated amount.",
   },
+  DisplayName="Large Manacles",
+  SourcePage="p.156",
+  Weight=8,
   Types={
     "Goods",
     "General",
   },
-  DisplayName="Large Manacles",
-  SortKey="Manacles, Large",
-  SourcePage="p.156",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Manacles, Huge",
-  Cost=1500,
-  Qualities={
-    Plural="No",
-  },
-  Weight=32,
   Key="Manacles (Huge)",
+  SortKey="Manacles, Huge",
+  CanHaveMods=true,
+  Cost=1500,
   Description={
     Format="Manacles can bind a Medium creature. A manacled creature can use the Escape Artist skill to slip free (DC 30). Breaking the manacles requires a Strength check (DC 26). Manacles have hardness 10 and 10 hit points.&nl;Most manacles have locks; add the cost of the lock you want to the cost of the manacles.&nl;For the same cost, you can buy manacles for a Small creature. For a Large creature, manacles cost 10 times the indicated amount, and for a Huge creature, 100 times the indicated amount. Gargantuan, Colossal, Tiny, Diminutive, and Fine creatures can be held only by specially made manacles, which cost at least 100 times the indicated amount.",
   },
+  DisplayName="Huge Manacles",
+  SourcePage="p.156",
+  Weight=32,
   Types={
     "Goods",
     "General",
   },
-  DisplayName="Huge Manacles",
-  SortKey="Manacles, Huge",
-  SourcePage="p.156",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Manacles, Small Masterwork",
-  Cost=50,
-  Qualities={
-    Plural="No",
-  },
-  Weight=2,
   Key="Manacles (Masterwork/Small)",
+  SortKey="Manacles, Small Masterwork",
+  CanHaveMods=true,
+  Cost=50,
   Description={
     Format="Manacles can bind a Medium creature. A manacled creature can use the Escape Artist skill to slip free (DC 35 for masterwork manacles). Breaking the manacles requires a Strength check (DC 28 for masterwork manacles). Manacles have hardness 10 and 10 hit points.&nl;Most manacles have locks; add the cost of the lock you want to the cost of the manacles.&nl;For the same cost, you can buy manacles for a Small creature. For a Large creature, manacles cost 10 times the indicated amount, and for a Huge creature, 100 times the indicated amount. Gargantuan, Colossal, Tiny, Diminutive, and Fine creatures can be held only by specially made manacles, which cost at least 100 times the indicated amount.",
   },
+  DisplayName="Small Masterwork Manacles",
+  SourcePage="p.156",
+  Weight=2,
   Types={
     "Goods",
     "General",
     "Masterwork",
   },
-  DisplayName="Small Masterwork Manacles",
-  SortKey="Manacles, Small Masterwork",
-  SourcePage="p.156",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Manacles, Medium Masterwork",
-  Cost=50,
-  Qualities={
-    Plural="No",
-  },
-  Weight=2,
   Key="Manacles (Masterwork/Medium)",
+  SortKey="Manacles, Medium Masterwork",
+  CanHaveMods=true,
+  Cost=50,
   Description={
     Format="Manacles can bind a Medium creature. A manacled creature can use the Escape Artist skill to slip free (DC 35 for masterwork manacles). Breaking the manacles requires a Strength check (DC 28 for masterwork manacles). Manacles have hardness 10 and 10 hit points.&nl;Most manacles have locks; add the cost of the lock you want to the cost of the manacles.&nl;For the same cost, you can buy manacles for a Small creature. For a Large creature, manacles cost 10 times the indicated amount, and for a Huge creature, 100 times the indicated amount. Gargantuan, Colossal, Tiny, Diminutive, and Fine creatures can be held only by specially made manacles, which cost at least 100 times the indicated amount.",
   },
+  DisplayName="Masterwork Manacles",
+  SourcePage="p.156",
+  Weight=2,
   Types={
     "Goods",
     "General",
     "Masterwork",
   },
-  DisplayName="Masterwork Manacles",
-  SortKey="Manacles, Medium Masterwork",
-  SourcePage="p.156",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Manacles, Large Masterwork",
-  Cost=500,
-  Qualities={
-    Plural="No",
-  },
-  Weight=8,
   Key="Manacles (Masterwork/Large)",
+  SortKey="Manacles, Large Masterwork",
+  CanHaveMods=true,
+  Cost=500,
   Description={
     Format="Manacles can bind a Medium creature. A manacled creature can use the Escape Artist skill to slip free (DC 35 for masterwork manacles). Breaking the manacles requires a Strength check (DC 28 for masterwork manacles). Manacles have hardness 10 and 10 hit points.&nl;Most manacles have locks; add the cost of the lock you want to the cost of the manacles.&nl;For the same cost, you can buy manacles for a Small creature. For a Large creature, manacles cost 10 times the indicated amount, and for a Huge creature, 100 times the indicated amount. Gargantuan, Colossal, Tiny, Diminutive, and Fine creatures can be held only by specially made manacles, which cost at least 100 times the indicated amount.",
   },
+  DisplayName="Large Masterwork Manacles",
+  SourcePage="p.156",
+  Weight=8,
   Types={
     "Goods",
     "General",
     "Masterwork",
   },
-  DisplayName="Large Masterwork Manacles",
-  SortKey="Manacles, Large Masterwork",
-  SourcePage="p.156",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Manacles, Huge Masterwork",
-  Cost=5000,
-  Qualities={
-    Plural="No",
-  },
-  Weight=32,
   Key="Manacles (Masterwork/Huge)",
+  SortKey="Manacles, Huge Masterwork",
+  CanHaveMods=true,
+  Cost=5000,
   Description={
     Format="Manacles can bind a Medium creature. A manacled creature can use the Escape Artist skill to slip free (DC 35 for masterwork manacles). Breaking the manacles requires a Strength check (DC 28 for masterwork manacles). Manacles have hardness 10 and 10 hit points.&nl;Most manacles have locks; add the cost of the lock you want to the cost of the manacles.&nl;For the same cost, you can buy manacles for a Small creature. For a Large creature, manacles cost 10 times the indicated amount, and for a Huge creature, 100 times the indicated amount. Gargantuan, Colossal, Tiny, Diminutive, and Fine creatures can be held only by specially made manacles, which cost at least 100 times the indicated amount.",
   },
+  DisplayName="Huge Masterwork Manacles",
+  SourcePage="p.156",
+  Weight=32,
   Types={
     "Goods",
     "General",
     "Masterwork",
   },
-  DisplayName="Huge Masterwork Manacles",
-  SortKey="Manacles, Huge Masterwork",
-  SourcePage="p.156",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Mirror",
-  Cost=10,
-  Weight=0.5,
   Key="Mirror (Small/Steel)",
+  SortKey="Mirror",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.158",
+  Weight=0.5,
   Types={
     "Goods",
     "General",
   },
-  SortKey="Mirror",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Mug, Clay",
-  Cost=0.02,
+  Key="Mug (Clay)",
+  SortKey="Mug, Clay",
+  CanHaveMods=true,
   Contains={
     Capacity=1,
     ItemLimits={
     },
   },
+  Cost=0.02,
+  DisplayName="Mug",
+  SourcePage="p.158",
   Weight=1,
-  Key="Mug (Clay)",
   Types={
     "Goods",
     "Container",
     "General",
   },
-  DisplayName="Mug",
-  SortKey="Mug, Clay",
-  SourcePage="p.158",
 })
 CopyEquipment("Mug (Clay)", {
   Name="Tankard",
-  Cost=0,
   Key="Tankard",
   SortKey="Tankard",
+  CanHaveMods=true,
 })
 DefineEquipment({
   Name="Oil, 1 Pint Flask",
-  Cost=0.1,
-  Qualities={
-    Plural="No",
-  },
-  Size="M",
-  Weight=1,
+  Key="Oil (1 Pint Flask)",
+  SortKey="Oil, 1 Pint Flask",
   Attack={
-    CritMultiplier="x2",
-    CritRange="1",
+    CriticalHitMultiplier="x2",
+    CriticalHitRange="1",
     Damage=DiceFormula("1d6"),
   },
-  Proficiency="WEAPON|Splash Weapon",
-  Range=10,
-  Key="Oil (1 Pint Flask)",
+  CanHaveMods=true,
+  Cost=0.1,
   Description={
     Format="A pint of oil burns for 6 hours in a lantern or lamp. You can also use a flask of oil as a splash weapon. Use the rules for alchemist's fire (see Special Substances and Items on Table 6-9), except that it takes a full-round action to prepare a flask with a fuse. Once it is thrown, there is a 50%% chance of the flask igniting successfully.&nl;You can pour a pint of oil on the ground to cover an area 5 feet square, provided that the surface is smooth. If lit, the oil burns for 2 rounds and deals 1d3 points of fire damage to each creature in the area.",
+  },
+  DisplayName="Oil",
+  Proficiency="WEAPON|Splash Weapon",
+  Range=10,
+  Size="M",
+  SourcePage="p.157",
+  Weight=1,
+  SpecialProperties={
+    {
+      Format="splash weapon, full-round action to prepare, 50% chance to ignite",
+    },
   },
   Types={
     "Goods",
@@ -1680,387 +1804,407 @@ DefineEquipment({
     "Fire",
     "Splash",
   },
-  SpecialProperties={
-    {
-      Format="splash weapon, full-round action to prepare, 50% chance to ignite",
-    },
+  Qualities={
+    Plural="No",
   },
-  DisplayName="Oil",
-  SortKey="Oil, 1 Pint Flask",
-  SourcePage="p.157",
 })
 DefineEquipment({
   Name="Paper (Sheet)",
-  Cost=0.4,
-  Qualities={
-    Plural="Sheets of",
-    Single="Sheet of",
-  },
   Key="Paper (Sheet)",
+  SortKey="Paper",
+  CanHaveMods=true,
+  Cost=0.4,
+  DisplayName="Paper",
+  SourcePage="p.158",
   Types={
     "Goods",
     "General",
     "Writing",
     "Documents",
   },
-  DisplayName="Paper",
-  SortKey="Paper",
-  SourcePage="p.158",
+  Qualities={
+    Plural="Sheets of",
+    Single="Sheet of",
+  },
 })
 DefineEquipment({
   Name="Parchment (Sheet)",
-  Cost=0.2,
-  Qualities={
-    Plural="Sheets of",
-    Single="Sheet of",
-  },
   Key="Parchment (Sheet)",
+  SortKey="Paper, Parchment",
+  CanHaveMods=true,
+  Cost=0.2,
+  DisplayName="Parchment",
+  SourcePage="p.158",
   Types={
     "Goods",
     "General",
     "Writing",
     "Documents",
   },
-  DisplayName="Parchment",
-  SortKey="Paper, Parchment",
-  SourcePage="p.158",
+  Qualities={
+    Plural="Sheets of",
+    Single="Sheet of",
+  },
 })
 DefineEquipment({
   Name="Pick, Miner's",
-  Cost=3,
-  Weight=10,
   Key="Pick (Miner's)",
+  SortKey="Pick, Miner's",
+  CanHaveMods=true,
+  Cost=3,
   Description={
     Format="If a miner's pick is used in combat, treat it as a two-handed improvised weapon that deals piercing damage equal to that of a heavy pick of its size.",
   },
+  DisplayName="Miner's Pick",
+  SourcePage="p.157",
+  Weight=10,
   Types={
     "Goods",
     "General",
   },
-  DisplayName="Miner's Pick",
-  SortKey="Pick, Miner's",
-  SourcePage="p.157",
 })
 DefineEquipment({
   Name="Pitcher, Clay",
-  Cost=0.02,
+  Key="Pitcher (Clay)",
+  SortKey="Pitcher, Clay",
+  CanHaveMods=true,
   Contains={
     Capacity=4,
     ItemLimits={
     },
   },
+  Cost=0.02,
+  DisplayName="Pitcher",
+  SourcePage="p.158",
   Weight=5,
-  Key="Pitcher (Clay)",
   Types={
     "Goods",
     "Container",
     "General",
   },
-  DisplayName="Pitcher",
-  SortKey="Pitcher, Clay",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Piton",
-  Cost=0.1,
-  Weight=0.5,
   Key="Piton",
+  SortKey="Piton",
+  CanHaveMods=true,
+  Cost=0.1,
+  SourcePage="p.158",
+  Weight=0.5,
   Types={
     "Goods",
     "General",
   },
-  SortKey="Piton",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Pole (10 ft.)",
-  Cost=0.05,
-  Weight=8,
   Key="Pole (10 ft)",
+  SortKey="Pole (10 ft.)",
+  CanHaveMods=true,
+  Cost=0.05,
+  DisplayName="Pole",
+  SourcePage="p.158",
+  Weight=8,
   Types={
     "Goods",
     "General",
   },
-  DisplayName="Pole",
-  SortKey="Pole (10 ft.)",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Pot, Iron",
-  Cost=0.8,
+  Key="Pot (Iron)",
+  SortKey="Pot, Iron",
+  CanHaveMods=true,
   Contains={
     Capacity=math.huge,
     ItemLimits={
     },
   },
+  Cost=0.8,
+  DisplayName="Pot",
+  SourcePage="p.158",
   Weight=4,
-  Key="Pot (Iron)",
   Types={
     "Goods",
     "Container",
     "General",
   },
-  DisplayName="Pot",
-  SortKey="Pot, Iron",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Pouch, Belt",
-  Cost=1,
+  Key="Pouch (Belt)",
+  SortKey="Pouch, Belt",
+  CanHaveMods=true,
   Contains={
     Capacity=math.huge,
     ItemLimits={
     },
   },
+  Cost=1,
+  DisplayName="Belt Pouch",
+  SourcePage="p.158",
   Weight=0.5,
-  Key="Pouch (Belt)",
   Types={
     "Goods",
     "Container",
     "General",
     "Resizable",
   },
-  DisplayName="Belt Pouch",
-  SortKey="Pouch, Belt",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Ram, Portable",
-  Cost=10,
-  Weight=20,
   Key="Ram (Portable)",
+  SortKey="Ram, Portable",
+  CanHaveMods=true,
+  Cost=10,
   Description={
     Format="This iron-shod wooden beam gives you a +2 circumstance bonus on Strength checks made to break open a door and allows a second person to help, automatically increasing your bonus by 2.",
   },
+  DisplayName="Portable Ram",
+  SourcePage="p.157",
+  Weight=20,
   Types={
     "Goods",
     "General",
   },
-  DisplayName="Portable Ram",
-  SortKey="Ram, Portable",
-  SourcePage="p.157",
 })
 DefineEquipment({
   Name="Rations, Trail",
-  Cost=0.5,
-  Weight=1,
   Key="Rations (Trail/Per Day)",
+  SortKey="Rations, Trail",
+  CanHaveMods=true,
+  Cost=0.5,
+  DisplayName="Trail Ration",
+  SourcePage="p.158",
+  Weight=1,
   Types={
     "Goods",
     "Food",
     "Resizable",
     "Consumable",
   },
-  DisplayName="Trail Ration",
-  SortKey="Rations, Trail",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Rope (50 ft.)",
-  Cost=1,
-  Qualities={
-    Plural="No",
-  },
-  Weight=10,
   Key="Rope (Hemp/50 ft)",
+  SortKey="Rope, Hemp (50 ft.)",
+  CanHaveMods=true,
+  Cost=1,
   Description={
     Format="This rope has 2 hit points and can be burst with a DC 23 Strength check.",
   },
+  SourcePage="p.157",
+  Weight=10,
   Types={
     "Goods",
     "General",
   },
-  SortKey="Rope, Hemp (50 ft.)",
-  SourcePage="p.157",
-})
-DefineEquipment({
-  Name="Rope, Silk (50 ft.)",
-  Cost=10,
   Qualities={
     Plural="No",
   },
-  Weight=5,
+})
+DefineEquipment({
+  Name="Rope, Silk (50 ft.)",
   Key="Rope (Silk/50 ft)",
+  SortKey="Rope, Silk (50 ft.)",
+  CanHaveMods=true,
+  Cost=10,
   Description={
     Format="This rope has 4 hit points and can be burst with a DC 24 Strength check.",
   },
+  DisplayName="Silk Rope (50 ft.)",
+  SourcePage="p.157",
+  Weight=5,
   Types={
     "Goods",
     "General",
   },
-  DisplayName="Silk Rope (50 ft.)",
-  SortKey="Rope, Silk (50 ft.)",
-  SourcePage="p.157",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Sack",
-  Cost=0.1,
+  Key="Sack",
+  SortKey="Sack",
+  CanHaveMods=true,
   Contains={
     Capacity=math.huge,
     ItemLimits={
     },
   },
+  Cost=0.1,
+  SourcePage="p.158",
   Weight=0.5,
-  Key="Sack",
   Types={
     "Goods",
     "Container",
     "General",
     "Resizable",
   },
-  SortKey="Sack",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Sealing Wax",
-  Cost=1,
-  Qualities={
-    Plural="No",
-  },
-  Weight=1,
   Key="Sealing Wax",
+  SortKey="Sealing Wax",
+  CanHaveMods=true,
+  Cost=1,
+  SourcePage="p.158",
+  Weight=1,
   Types={
     "Goods",
     "General",
     "Writing",
   },
-  SortKey="Sealing Wax",
-  SourcePage="p.158",
-})
-DefineEquipment({
-  Name="Sewing Needle",
-  Cost=0.5,
-  Key="Sewing Needle",
-  Types={
-    "Goods",
-    "General",
-  },
-  SortKey="Sewing Needle",
-  SourcePage="p.158",
-})
-DefineEquipment({
-  Name="Shovel",
-  Cost=2,
-  Weight=8,
-  Key="Shovel",
-  Description={
-    Format="If a shovel is used in combat, treat it as a onehanded improvised weapon that deals bludgeoning damage equal to that of a club of its size.",
-  },
-  Types={
-    "Goods",
-    "General",
-  },
-  SortKey="Shovel",
-  SourcePage="p.157",
-})
-CopyEquipment("Shovel", {
-  Name="Spade",
-  Cost=0,
-  Key="Spade",
-  SortKey="Spade",
-})
-DefineEquipment({
-  Name="Signal Whistle",
-  Cost=0.8,
-  Key="Signal Whistle",
-  Types={
-    "Goods",
-    "General",
-  },
-  SortKey="Signal Whistle",
-  SourcePage="p.158",
-})
-DefineEquipment({
-  Name="Signet Ring",
-  Cost=5,
-  Key="Signet Ring",
-  Types={
-    "Goods",
-    "General",
-  },
-  SortKey="Signet Ring",
-  SourcePage="p.158",
-})
-DefineEquipment({
-  Name="Sledge",
-  Cost=1,
-  Weight=10,
-  Key="Sledge",
-  Types={
-    "Goods",
-    "General",
-  },
-  SortKey="Sledge",
-  SourcePage="p.158",
-})
-DefineEquipment({
-  Name="Soap",
-  Cost=0.5,
   Qualities={
     Plural="No",
   },
-  Weight=1,
-  Key="Soap",
+})
+DefineEquipment({
+  Name="Sewing Needle",
+  Key="Sewing Needle",
+  SortKey="Sewing Needle",
+  CanHaveMods=true,
+  Cost=0.5,
+  SourcePage="p.158",
   Types={
     "Goods",
     "General",
   },
-  SortKey="Soap",
+})
+DefineEquipment({
+  Name="Shovel",
+  Key="Shovel",
+  SortKey="Shovel",
+  CanHaveMods=true,
+  Cost=2,
+  Description={
+    Format="If a shovel is used in combat, treat it as a onehanded improvised weapon that deals bludgeoning damage equal to that of a club of its size.",
+  },
+  SourcePage="p.157",
+  Weight=8,
+  Types={
+    "Goods",
+    "General",
+  },
+})
+CopyEquipment("Shovel", {
+  Name="Spade",
+  Key="Spade",
+  SortKey="Spade",
+  CanHaveMods=true,
+})
+DefineEquipment({
+  Name="Signal Whistle",
+  Key="Signal Whistle",
+  SortKey="Signal Whistle",
+  CanHaveMods=true,
+  Cost=0.8,
   SourcePage="p.158",
+  Types={
+    "Goods",
+    "General",
+  },
+})
+DefineEquipment({
+  Name="Signet Ring",
+  Key="Signet Ring",
+  SortKey="Signet Ring",
+  CanHaveMods=true,
+  Cost=5,
+  SourcePage="p.158",
+  Types={
+    "Goods",
+    "General",
+  },
+})
+DefineEquipment({
+  Name="Sledge",
+  Key="Sledge",
+  SortKey="Sledge",
+  CanHaveMods=true,
+  Cost=1,
+  SourcePage="p.158",
+  Weight=10,
+  Types={
+    "Goods",
+    "General",
+  },
+})
+DefineEquipment({
+  Name="Soap",
+  Key="Soap",
+  SortKey="Soap",
+  CanHaveMods=true,
+  Cost=0.5,
+  SourcePage="p.158",
+  Weight=1,
+  Types={
+    "Goods",
+    "General",
+  },
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Spyglass",
-  Cost=1000,
-  Weight=1,
   Key="Spyglass",
+  SortKey="Spyglass",
+  CanHaveMods=true,
+  Cost=1000,
   Description={
     Format="Objects viewed through a spyglass are magnified to twice their size. Characters using a spyglass take a -1 penalty on Perception skill checks per 20 feet of distance to the target, if the target is visible.",
   },
+  SourcePage="p.157",
+  Weight=1,
   Types={
     "Goods",
     "General",
   },
-  SortKey="Spyglass",
-  SourcePage="p.157",
 })
 DefineEquipment({
   Name="Tent",
-  Cost=10,
-  Weight=20,
   Key="Tent (Small)",
+  SortKey="Tent, Small",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.158",
+  Weight=20,
   Types={
     "Goods",
     "General",
     "Resizable",
   },
-  SortKey="Tent, Small",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Torch",
-  Cost=0.01,
-  Qualities={
-    ['Bright Illumination']="20 ft.",
-    ['Shadowy Illumination']="40 ft.",
-    Duration="1 hr.",
-  },
-  Weight=1,
   Key="Torch",
+  SortKey="Torch",
+  CanHaveMods=true,
+  Cost=0.01,
   Description={
     Format="A torch burns for 1 hour, shedding normal light in a 20-foot radius and increasing the light level by one step for an additional 20 feet beyond that area (darkness becomes dim light and dim light becomes normal light). A torch does not increase the light level in normal light or bright light. If a torch is used in combat, treat it as a one-handed improvised weapon that deals bludgeoning damage equal to that of a gauntlet of its size, plus 1 point of fire damage.",
   },
+  SourcePage="p.157",
+  Weight=1,
   Types={
     "Goods",
     "General",
     "Consumable",
     "Light Source",
   },
-  SortKey="Torch",
-  SourcePage="p.157",
+  Qualities={
+    ['Bright Illumination']="20 ft.",
+    ['Shadowy Illumination']="40 ft.",
+    Duration="1 hr.",
+  },
 })
 DefineEquipment({
   Name="Vial",
-  Cost=1,
+  Key="Vial",
+  SortKey="Vial",
+  CanHaveMods=true,
   Contains={
     Capacity=1,
     ItemLimits={
@@ -2069,97 +2213,105 @@ DefineEquipment({
       Poison=1,
     },
   },
-  Key="Vial",
+  Cost=1,
   Description={
     Format="A vial is made out of glass or steel and holds 1 ounce of liquid.",
   },
+  SourcePage="p.157",
   Types={
     "Goods",
     "Container",
     "General",
     "Vial",
   },
-  SortKey="Vial",
-  SourcePage="p.157",
 })
 DefineEquipment({
   Name="Water Clock",
-  Cost=1000,
-  Weight=200,
   Key="Water Clock",
+  SortKey="Water Clock",
+  CanHaveMods=true,
+  Cost=1000,
   Description={
     Format="This large, bulky contrivance gives the time accurately to within half an hour per day since it was last set. It requires a source of water, and it must be kept still because it marks time by the regulated flow of droplets of water.",
   },
+  SourcePage="p.157",
+  Weight=200,
   Types={
     "Goods",
     "General",
   },
-  SortKey="Water Clock",
-  SourcePage="p.157",
 })
 DefineEquipment({
   Name="Waterskin",
-  Cost=1,
+  Key="Waterskin",
+  SortKey="Waterskin",
+  CanHaveMods=true,
   Contains={
     Capacity=4,
     ItemLimits={
       Liquid=4,
     },
   },
-  Key="Waterskin",
+  Cost=1,
+  SourcePage="p.158",
   Types={
     "Goods",
     "Container",
     "General",
   },
-  SortKey="Waterskin",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Waterskin, Filled",
-  Cost=1,
-  Weight=4,
   Key="Waterskin (Filled)",
+  SortKey="Waterskin, Filled",
+  CanHaveMods=true,
+  Cost=1,
+  DisplayName="Waterskin",
+  SourcePage="p.158",
+  Weight=4,
   Types={
     "Goods",
     "General",
     "Resizable",
   },
-  DisplayName="Waterskin",
-  SortKey="Waterskin, Filled",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Whetstone",
-  Cost=0.02,
-  Weight=1,
   Key="Whetstone",
+  SortKey="Whetstone",
+  CanHaveMods=true,
+  Cost=0.02,
+  SourcePage="p.158",
+  Weight=1,
   Types={
     "Goods",
     "General",
   },
-  SortKey="Whetstone",
-  SourcePage="p.158",
 })
 DefineEquipment({
   Name="Acid",
-  Cost=10,
-  Qualities={
-    Plural="No",
-  },
-  Size="M",
-  Weight=1,
+  Key="Acid (Flask)",
+  SortKey="Acid",
   Attack={
-    CritMultiplier="x2",
-    CritRange="1",
+    CriticalHitMultiplier="x2",
+    CriticalHitRange="1",
     Damage=DiceFormula("1d6"),
+  },
+  CanHaveMods=true,
+  Cost=10,
+  Description={
+    Format="You can throw a flask of acid as a splash weapon. Treat this attack as a ranged touch attack with a range increment of 10 feet. A direct hit deals 1d6 points of acid damage. Every creature within 5 feet of the point where the acid hits takes 1 point of acid damage from the splash.",
   },
   Proficiency="WEAPON|Splash Weapon",
   Range=10,
+  Size="M",
+  SourcePage="p.160",
+  Weight=1,
   WieldCategory="OneHandedNoSize",
-  Key="Acid (Flask)",
-  Description={
-    Format="You can throw a flask of acid as a splash weapon. Treat this attack as a ranged touch attack with a range increment of 10 feet. A direct hit deals 1d6 points of acid damage. Every creature within 5 feet of the point where the acid hits takes 1 point of acid damage from the splash.",
+  SpecialProperties={
+    {
+      Format="splash weapon",
+    },
   },
   Types={
     "Goods",
@@ -2173,33 +2325,34 @@ DefineEquipment({
     "Splash",
     "NoAttackPenalty",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Alchemist's Fire",
+  Key="Alchemist's Fire (Flask)",
+  SortKey="Alchemist's Fire",
+  Attack={
+    CriticalHitMultiplier="x2",
+    CriticalHitRange="1",
+    Damage=DiceFormula("1d6"),
+  },
+  CanHaveMods=true,
+  Cost=20,
+  Description={
+    Format="You can throw a flask of alchemist's fire as a splash weapon. Treat this attack as a ranged touch attack with a range increment of 10 feet.&nl;A direct hit deals 1d6 points of fire damage. Every creature within 5 feet of the point where the flask hits takes 1 point of fire damage from the splash. On the round following a direct hit, the target takes an additional 1d6 points of damage. If desired, the target can use a full-round action to attempt to extinguish the flames before taking this additional damage. Extinguishing the flames requires a DC 15 Reflex save. Rolling on the ground provides the target a +2 bonus on the save. Leaping into a lake or magically extinguishing the flames automatically smothers the fire.",
+  },
+  Proficiency="WEAPON|Splash Weapon",
+  Range=10,
+  Size="M",
+  SourcePage="p.160",
+  Weight=1,
+  WieldCategory="OneHandedNoSize",
   SpecialProperties={
     {
       Format="splash weapon",
     },
-  },
-  SortKey="Acid",
-  SourcePage="p.160",
-})
-DefineEquipment({
-  Name="Alchemist's Fire",
-  Cost=20,
-  Qualities={
-    Plural="No",
-  },
-  Size="M",
-  Weight=1,
-  Attack={
-    CritMultiplier="x2",
-    CritRange="1",
-    Damage=DiceFormula("1d6"),
-  },
-  Proficiency="WEAPON|Splash Weapon",
-  Range=10,
-  WieldCategory="OneHandedNoSize",
-  Key="Alchemist's Fire (Flask)",
-  Description={
-    Format="You can throw a flask of alchemist's fire as a splash weapon. Treat this attack as a ranged touch attack with a range increment of 10 feet.&nl;A direct hit deals 1d6 points of fire damage. Every creature within 5 feet of the point where the flask hits takes 1 point of fire damage from the splash. On the round following a direct hit, the target takes an additional 1d6 points of damage. If desired, the target can use a full-round action to attempt to extinguish the flames before taking this additional damage. Extinguishing the flames requires a DC 15 Reflex save. Rolling on the ground provides the target a +2 bonus on the save. Leaping into a lake or magically extinguishing the flames automatically smothers the fire.",
   },
   Types={
     "Goods",
@@ -2213,24 +2366,24 @@ DefineEquipment({
     "Splash",
     "NoAttackPenalty",
   },
-  SpecialProperties={
-    {
-      Format="splash weapon",
-    },
+  Qualities={
+    Plural="No",
   },
-  SortKey="Alchemist's Fire",
-  SourcePage="p.160",
 })
 DefineEquipment({
   Name="Antitoxin",
-  Cost=50,
-  Qualities={
-    Plural="Vials of",
-    Single="Vial of",
-  },
   Key="Antitoxin (Vial)",
+  SortKey="Antitoxin",
+  CanHaveMods=true,
+  Cost=50,
   Description={
     Format="If you drink a vial of antitoxin, you get a +5 alchemical bonus on Fortitude saving throws against poison for 1 hour.",
+  },
+  SourcePage="p.160",
+  SpecialProperties={
+    {
+      Format="+5 alchemical bonus to Fortitude saves against poison for 1 hour",
+    },
   },
   Types={
     "Goods",
@@ -2238,55 +2391,57 @@ DefineEquipment({
     "Vial",
     "Consumable",
   },
-  SpecialProperties={
-    {
-      Format="+5 alchemical bonus to Fortitude saves against poison for 1 hour",
-    },
+  Qualities={
+    Plural="Vials of",
+    Single="Vial of",
   },
-  SortKey="Antitoxin",
-  SourcePage="p.160",
 })
 DefineEquipment({
   Name="Everburning Torch",
-  Cost=110,
-  Qualities={
-    ['Bright Illumination']="20 ft.",
-    ['Shadowy Illumination']="40 ft.",
-    Duration="Permanent",
-  },
-  Weight=1,
   Key="Everburning Torch",
+  SortKey="Everburning Torch",
+  CanHaveMods=true,
+  Cost=110,
   Description={
     Format="This otherwise normal torch has a continual flame spell cast on it. This causes it to shed light like an ordinary torch, but it does not emit heat or deal fire damage if used as a weapon.",
   },
+  SourcePage="p.160",
+  Weight=1,
   Types={
     "Goods",
     "Magic",
     "Light Source",
   },
-  SortKey="Everburning Torch",
-  SourcePage="p.160",
+  Qualities={
+    ['Bright Illumination']="20 ft.",
+    ['Shadowy Illumination']="40 ft.",
+    Duration="Permanent",
+  },
 })
 DefineEquipment({
   Name="Holy Water",
-  Cost=25,
-  Qualities={
-    Plural="Flasks of",
-    Single="Flask of",
-  },
-  Size="M",
-  Weight=1,
+  Key="Holy Water (Flask)",
+  SortKey="Holy Water",
   Attack={
-    CritMultiplier="x2",
-    CritRange="1",
+    CriticalHitMultiplier="x2",
+    CriticalHitRange="1",
     Damage=DiceFormula("1d6"),
+  },
+  CanHaveMods=true,
+  Cost=25,
+  Description={
+    Format="Holy water damages undead creatures and evil outsiders almost as if it were acid. A flask of holy water can be thrown as a splash weapon.&nl;Treat this attack as a ranged touch attack with a range increment of 10 feet. A flask breaks if thrown against the body of a corporeal creature, but to use it against an incorporeal creature, you must open the flask and pour the holy water out onto the target. Thus, you can douse an incorporeal creature with holy water only if you are adjacent to it. Doing so is a ranged touch attack that does not provoke attacks of opportunity.&nl;A direct hit by a flask of holy water deals 2d4 points of damage to an undead creature or an evil outsider. Each such creature within 5 feet of the point where the flask hits takes 1 point of damage from the splash.&nl;Temples to good deities sell holy water at cost (making no profit). Holy water is made using the bless water spell.",
   },
   Proficiency="WEAPON|Splash Weapon",
   Range=10,
+  Size="M",
+  SourcePage="p.160",
+  Weight=1,
   WieldCategory="OneHandedNoSize",
-  Key="Holy Water (Flask)",
-  Description={
-    Format="Holy water damages undead creatures and evil outsiders almost as if it were acid. A flask of holy water can be thrown as a splash weapon.&nl;Treat this attack as a ranged touch attack with a range increment of 10 feet. A flask breaks if thrown against the body of a corporeal creature, but to use it against an incorporeal creature, you must open the flask and pour the holy water out onto the target. Thus, you can douse an incorporeal creature with holy water only if you are adjacent to it. Doing so is a ranged touch attack that does not provoke attacks of opportunity.&nl;A direct hit by a flask of holy water deals 2d4 points of damage to an undead creature or an evil outsider. Each such creature within 5 feet of the point where the flask hits takes 1 point of damage from the splash.&nl;Temples to good deities sell holy water at cost (making no profit). Holy water is made using the bless water spell.",
+  SpecialProperties={
+    {
+      Format="splash weapon",
+    },
   },
   Types={
     "Goods",
@@ -2298,64 +2453,66 @@ DefineEquipment({
     "Splash",
     "NoAttackPenalty",
   },
-  SpecialProperties={
-    {
-      Format="splash weapon",
-    },
+  Qualities={
+    Plural="Flasks of",
+    Single="Flask of",
   },
-  SortKey="Holy Water",
-  SourcePage="p.160",
 })
 DefineEquipment({
   Name="Smokestick",
-  Cost=20,
-  Weight=0.5,
   Key="Smokestick",
+  SortKey="Smokestick",
+  CanHaveMods=true,
+  Cost=20,
   Description={
     Format="This alchemically treated wooden stick instantly creates thick, opaque smoke when burned. The smoke fills a 10-foot cube (treat the effect as a fog cloud spell, except that a moderate or stronger wind dissipates the smoke in 1 round). The stick is consumed after 1 round, and the smoke dissipates naturally after 1 minute.",
   },
+  SourcePage="p.160",
+  Weight=0.5,
   Types={
     "Goods",
     "Alchemical",
     "Consumable",
   },
-  SortKey="Smokestick",
-  SourcePage="p.160",
 })
 DefineEquipment({
   Name="Sunrod",
-  Cost=2,
-  Qualities={
-    ['Bright Illumination']="30 ft.",
-    ['Shadowy Illumination']="60 ft.",
-    Duration="6 hr.",
-  },
-  Weight=1,
   Key="Sunrod",
+  SortKey="Sunrod",
+  CanHaveMods=true,
+  Cost=2,
   Description={
     Format="This 1-foot-long, gold-tipped, iron rod glows brightly when struck as a standard action. It sheds normal light in a 30-foot radius and increases the light level by one step for an additional 30 feet beyond that area (darkness becomes dim light and dim light becomes normal light). A sunrod does not increase the light level in normal light or bright light. It glows for 6 hours, after which the gold tip is burned out and worthless.",
   },
+  SourcePage="p.160",
+  Weight=1,
   Types={
     "Goods",
     "Alchemical",
     "Consumable",
     "Light Source",
   },
-  SortKey="Sunrod",
-  SourcePage="p.160",
+  Qualities={
+    ['Bright Illumination']="30 ft.",
+    ['Shadowy Illumination']="60 ft.",
+    Duration="6 hr.",
+  },
 })
 DefineEquipment({
   Name="Tanglefoot Bag",
-  Cost=50,
-  Size="M",
-  Weight=4,
-  Proficiency="WEAPON|Splash Weapon",
-  Range=10,
-  WieldCategory="OneHandedNoSize",
   Key="Tanglefoot Bag",
+  SortKey="Tanglefoot Bag",
+  CanHaveMods=true,
+  Cost=50,
   Description={
     Format="A tanglefoot bag is a small sack filled with tar, resin, and other sticky substances. When you throw a tanglefoot bag at a creature (as a ranged touch attack with a range increment of 10 feet), the bag comes apart and goo bursts out, entangling the target and then becoming tough and resilient upon exposure to air. An entangled creature takes a -2 penalty on attack rolls and a -4 penalty to Dexterity and must make a DC 15 Reflex save or be glued to the floor, unable to move. Even on a successful save, it can move only at half speed. Huge or larger creatures are unaffected by a tanglefoot bag. A flying creature is not stuck to the floor, but it must make a DC 15 Reflex save or be unable to fly (assuming it uses its wings to fly) and fall to the ground. A tanglefoot bag does not function underwater.&nl;A creature that is glued to the floor (or unable to fly) can break free by making a DC 17 Strength check or by dealing 15 points of damage to the goo with a slashing weapon. A creature trying to scrape goo off itself, or another creature assisting, does not need to make an attack roll; hitting the goo is automatic, after which the creature that hit makes a damage roll to see how much of the goo was scraped off. Once free, the creature can move (including flying) at half speed. If the entangled creature attempts to cast a spell, it must make concentration check with a DC of 15 + the spell's level or be unable to cast the spell. The goo becomes brittle and fragile after 2d4 rounds, cracking apart and losing its effectiveness. An application of universal solvent to a stuck creature dissolves the alchemical goo immediately.",
   },
+  Proficiency="WEAPON|Splash Weapon",
+  Range=10,
+  Size="M",
+  SourcePage="p.160",
+  Weight=4,
+  WieldCategory="OneHandedNoSize",
   Types={
     "Goods",
     "Alchemical",
@@ -2366,21 +2523,22 @@ DefineEquipment({
     "Splash",
     "NoAttackPenalty",
   },
-  SortKey="Tanglefoot Bag",
-  SourcePage="p.160",
 })
 DefineEquipment({
   Name="Thunderstone",
-  Cost=30,
-  Size="M",
-  Weight=1,
-  Proficiency="WEAPON|Splash Weapon",
-  Range=20,
-  WieldCategory="OneHandedNoSize",
   Key="Thunderstone",
+  SortKey="Thunderstone",
+  CanHaveMods=true,
+  Cost=30,
   Description={
     Format="You can throw this stone as a ranged attack with a range increment of 20 feet. When it strikes a hard surface (or is struck hard), it creates a deafening bang that is treated as a sonic attack. Each creature within a 10-foot-radius spread must make a DC 15 Fortitude save or be deafened for 1 hour. A deafened creature, in addition to the obvious effects, takes a -4 penalty on initiative and has a 20%% chance to miscast and lose any spell with a verbal component that it tries to cast. Since you don't need to hit a specific target, you can simply aim at a particular 5-foot square. Treat the target square as AC 5.",
   },
+  Proficiency="WEAPON|Splash Weapon",
+  Range=20,
+  Size="M",
+  SourcePage="p.160",
+  Weight=1,
+  WieldCategory="OneHandedNoSize",
   Types={
     "Goods",
     "Alchemical",
@@ -2392,209 +2550,215 @@ DefineEquipment({
     "Splash",
     "NoAttackPenalty",
   },
-  SortKey="Thunderstone",
-  SourcePage="p.160",
 })
 DefineEquipment({
   Name="Tindertwig",
-  Cost=1,
   Key="Tindertwig",
+  SortKey="Tindertwig",
+  CanHaveMods=true,
+  Cost=1,
   Description={
     Format="The alchemical substance on the end of this small, wooden stick ignites when struck against a rough surface. Creating a flame with a tindertwig is much faster than creating a flame with flint and steel (or a magnifying glass) and tinder. Lighting a torch with a tindertwig is a standard action (rather than a full-round action), and lighting any other fire with one is at least a standard action.",
   },
+  SourcePage="p.160",
   Types={
     "Goods",
     "Alchemical",
     "Consumable",
   },
-  SortKey="Tindertwig",
-  SourcePage="p.160",
 })
 DefineEquipment({
   Name="Alchemist's Lab",
-  Cost=200,
-  Weight=40,
   Key="Alchemist's Lab",
+  SortKey="Alchemist's Lab",
+  CanHaveMods=true,
+  Cost=200,
   Description={
     Format="This lab is used for making alchemical items, and provides a +2 circumstance bonus on Craft (alchemy) checks. It has no bearing on the costs related to the Craft (alchemy) skill. Without this lab, a character with the Craft (alchemy) skill is assumed to have enough tools to use the skill but not enough to get the +2 bonus that the lab provides.",
   },
-  Types={
-    "Goods",
-    "Tools",
-    "Artisan",
-  },
+  SourcePage="p.161",
+  Weight=40,
   Bonuses={
     {
       Category="SKILL",
+      Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
       Variables={
         "Craft (Alchemy)",
       },
-      Formula=Formula("2"),
-      Type={
-        Name="Circumstance",
-        Replace=false,
-        Stack=false,
-      },
     },
-  },
-  SortKey="Alchemist's Lab",
-  SourcePage="p.161",
-})
-DefineEquipment({
-  Name="Artisan's Tools",
-  Cost=5,
-  ModsRequired=true,
-  Qualities={
-    Plural="No",
-  },
-  Weight=5,
-  Key="Artisan's Tools",
-  Description={
-    Format="These special tools include the items needed to pursue any craft. Without them, you have to use improvised tools (-2 penalty on Craft checks), if you can do the job at all.&nl;Masterwork artisan's tools are the perfect tools for the job, so you get a +2 circumstance bonus on Craft checks made with them.",
   },
   Types={
     "Goods",
     "Tools",
     "Artisan",
   },
+})
+DefineEquipment({
+  Name="Artisan's Tools",
+  Key="Artisan's Tools",
   SortKey="Artisan's Tools",
+  CanHaveMods=true,
+  Cost=5,
+  Description={
+    Format="These special tools include the items needed to pursue any craft. Without them, you have to use improvised tools (-2 penalty on Craft checks), if you can do the job at all.&nl;Masterwork artisan's tools are the perfect tools for the job, so you get a +2 circumstance bonus on Craft checks made with them.",
+  },
+  ModsRequired=true,
   SourcePage="p.161",
-})
-DefineEquipment({
-  Name="Climber's Kit",
-  Cost=80,
   Weight=5,
-  Key="Climber's Kit",
-  Description={
-    Format="These crampons, pitons, ropes, and tools give you a +2 circumstance bonus on Climb checks.",
-  },
   Types={
     "Goods",
     "Tools",
-    "Masterwork",
-    "Resizable",
+    "Artisan",
   },
-  Bonuses={
-    {
-      Category="SKILL",
-      Variables={
-        "Climb",
-      },
-      Formula=Formula("2"),
-      Type={
-        Name="Circumstance",
-        Replace=false,
-        Stack=false,
-      },
-    },
-  },
-  SortKey="Climber's Kit",
-  SourcePage="p.161",
-})
-DefineEquipment({
-  Name="Disguise Kit",
-  Cost=50,
-  EquipmentModifiers={
-    {
-      Key="Special Ability ~ Charged Item / 10 Maximum",
-      Parameters={
-        Formula("CHARGES[10]"),
-      },
-    },
-  },
-  Weight=8,
-  Key="Disguise Kit",
-  Description={
-    Format="The kit is the perfect tool for disguise and provides a +2 circumstance bonus on Disguise checks. A disguise kit is exhausted after 10 uses.",
-  },
-  Types={
-    "Goods",
-    "Tools",
-    "Masterwork",
-    "Resizable",
-  },
-  Bonuses={
-    {
-      Category="SKILL",
-      Variables={
-        "Disguise",
-      },
-      Formula=Formula("2"),
-      Type={
-        Name="Circumstance",
-        Replace=false,
-        Stack=false,
-      },
-    },
-  },
-  SortKey="Disguise Kit",
-  SourcePage="p.161",
-})
-DefineEquipment({
-  Name="Healer's Kit",
-  Cost=50,
-  EquipmentModifiers={
-    {
-      Key="Special Ability ~ Charged Item / 10 Maximum",
-      Parameters={
-        Formula("CHARGES[10]"),
-      },
-    },
-  },
-  Weight=1,
-  Key="Healer's Kit",
-  Description={
-    Format="This collection of bandages and herbs provides a +2 circumstance bonus on Heal checks. A healer's kit is exhausted after 10 uses.",
-  },
-  Types={
-    "Goods",
-    "Tools",
-    "Masterwork",
-  },
-  Bonuses={
-    {
-      Category="SKILL",
-      Variables={
-        "Heal",
-      },
-      Formula=Formula("2"),
-      Type={
-        Name="Circumstance",
-        Replace=false,
-        Stack=false,
-      },
-    },
-  },
-  SortKey="Healer's Kit",
-  SourcePage="p.161",
-})
-DefineEquipment({
-  Name="Holly and Mistletoe",
-  Cost=0,
   Qualities={
     Plural="No",
   },
+})
+DefineEquipment({
+  Name="Climber's Kit",
+  Key="Climber's Kit",
+  SortKey="Climber's Kit",
+  CanHaveMods=true,
+  Cost=80,
+  Description={
+    Format="These crampons, pitons, ropes, and tools give you a +2 circumstance bonus on Climb checks.",
+  },
+  SourcePage="p.161",
+  Weight=5,
+  Bonuses={
+    {
+      Category="SKILL",
+      Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "Climb",
+      },
+    },
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Masterwork",
+    "Resizable",
+  },
+})
+DefineEquipment({
+  Name="Disguise Kit",
+  Key="Disguise Kit",
+  SortKey="Disguise Kit",
+  CanHaveMods=true,
+  Cost=50,
+  Description={
+    Format="The kit is the perfect tool for disguise and provides a +2 circumstance bonus on Disguise checks. A disguise kit is exhausted after 10 uses.",
+  },
+  SourcePage="p.161",
+  Weight=8,
+  Bonuses={
+    {
+      Category="SKILL",
+      Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "Disguise",
+      },
+    },
+  },
+  EquipmentModifiers={
+    {
+      Key="Special Ability ~ Charged Item / 10 Maximum",
+      Parameters={
+        Formula("CHARGES[10]"),
+      },
+    },
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Masterwork",
+    "Resizable",
+  },
+})
+DefineEquipment({
+  Name="Healer's Kit",
+  Key="Healer's Kit",
+  SortKey="Healer's Kit",
+  CanHaveMods=true,
+  Cost=50,
+  Description={
+    Format="This collection of bandages and herbs provides a +2 circumstance bonus on Heal checks. A healer's kit is exhausted after 10 uses.",
+  },
+  SourcePage="p.161",
+  Weight=1,
+  Bonuses={
+    {
+      Category="SKILL",
+      Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
+      Variables={
+        "Heal",
+      },
+    },
+  },
+  EquipmentModifiers={
+    {
+      Key="Special Ability ~ Charged Item / 10 Maximum",
+      Parameters={
+        Formula("CHARGES[10]"),
+      },
+    },
+  },
+  Types={
+    "Goods",
+    "Tools",
+    "Masterwork",
+  },
+})
+DefineEquipment({
+  Name="Holly and Mistletoe",
   Key="Holly and Mistletoe",
+  SortKey="Holly and Mistletoe",
+  CanHaveMods=true,
   Description={
     Format="Druids commonly use these plants as divine focuses when casting spells.",
   },
+  SourcePage="p.161",
   Types={
     "Goods",
     "Tools",
     "Spell Component",
     "Divine Focus",
   },
-  SortKey="Holly and Mistletoe",
-  SourcePage="p.161",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Holy Symbol",
-  Cost=0,
-  ModsRequired=true,
   Key="Holy Symbol",
+  SortKey="Holy Symbol",
+  CanHaveMods=true,
   Description={
     Format="A holy symbol focuses positive energy and is used by good clerics and paladins (or by neutral clerics who want to cast good spells or channel positive energy). Each religion has its own holy symbol.",
   },
+  ModsRequired=true,
+  SourcePage="p.161",
   Types={
     "Goods",
     "Tools",
@@ -2602,272 +2766,293 @@ DefineEquipment({
     "Divine Focus",
     "Holy Symbol",
   },
-  SortKey="Holy Symbol",
-  SourcePage="p.161",
 })
 CopyEquipment("Holy Symbol", {
   Name="Holy Symbol, Wooden",
-  Cost=0,
+  Key="Holy Symbol (Wooden)",
+  SortKey="Holy Symbol, Wooden",
   BaseItem="Holy Symbol",
+  CanHaveMods=false,
+  DisplayName="Wooden Holy Symbol",
+  ModsRequired=false,
   EquipmentModifiers={
     {
       Key="Holy Symbol (Wooden)",
     },
   },
-  CanHaveMods=false,
-  Key="Holy Symbol (Wooden)",
-  DisplayName="Wooden Holy Symbol",
-  SortKey="Holy Symbol, Wooden",
 })
 CopyEquipment("Holy Symbol", {
   Name="Holy Symbol, Silver",
-  Cost=0,
+  Key="Holy Symbol (Silver)",
+  SortKey="Holy Symbol, Silver",
   BaseItem="Holy Symbol",
+  CanHaveMods=false,
+  DisplayName="Silver Holy Symbol",
+  ModsRequired=false,
   EquipmentModifiers={
     {
       Key="Holy Symbol (Silver)",
     },
   },
-  CanHaveMods=false,
-  Key="Holy Symbol (Silver)",
-  DisplayName="Silver Holy Symbol",
-  SortKey="Holy Symbol, Silver",
 })
 DefineEquipment({
   Name="Magnifying Glass",
-  Cost=100,
   Key="Magnifying Glass",
+  SortKey="Magnifying Glass",
+  CanHaveMods=true,
+  Cost=100,
   Description={
     Format="This simple lens allows a closer look at small objects. It is also useful as a substitute for flint and steel when starting fires. Lighting a fire with a magnifying glass requires bright light, such as sunlight to focus, tinder to ignite, and at least a full-round action. A magnifying glass grants a +2 circumstance bonus on Appraise checks involving any item that is small or highly detailed.",
   },
-  Types={
-    "Goods",
-    "Tools",
-  },
+  SourcePage="p.161",
   SpecialProperties={
     {
       Format="+2 circumstance bonus on Appraise checks involving any item that is small or highly detailed",
     },
   },
-  SortKey="Magnifying Glass",
-  SourcePage="p.161",
-})
-CopyEquipment("Harpsichord (Base)", {
-  Name="Musical Instrument, Harpsichord",
-  Visible=true,
-  Cost=0,
-  BaseItem="Harpsichord (Base)",
-  Key="Musical Instrument (Harpsichord)",
-  DisplayName="Harpsichord",
-  SortKey="Musical Instrument, Harpsichord",
-})
-CopyEquipment("Piano (Base)", {
-  Name="Musical Instrument, Piano",
-  Visible=true,
-  Cost=0,
-  BaseItem="Piano (Base)",
-  Key="Musical Instrument (Piano)",
-  DisplayName="Piano",
-  SortKey="Musical Instrument, Piano",
-})
-CopyEquipment("Pipe Organ (Base)", {
-  Name="Musical Instrument, Pipe Organ",
-  Visible=true,
-  Cost=0,
-  BaseItem="Pipe Organ (Base)",
-  Key="Musical Instrument (Pipe Organ)",
-  DisplayName="Pipe Organ",
-  SortKey="Musical Instrument, Pipe Organ",
-})
-CopyEquipment("Bells (Base)", {
-  Name="Musical Instrument, Bells",
-  Visible=true,
-  Cost=0,
-  BaseItem="Bells (Base)",
-  Qualities={
-    Plural="No",
-  },
-  Key="Musical Instrument (Bells)",
-  DisplayName="Bells",
-  SortKey="Musical Instrument, Bells",
-})
-CopyEquipment("Chimes (Base)", {
-  Name="Musical Instrument, Chimes",
-  Visible=true,
-  Cost=0,
-  BaseItem="Chimes (Base)",
-  Qualities={
-    Plural="No",
-  },
-  Key="Musical Instrument (Chimes)",
-  DisplayName="Chimes",
-  SortKey="Musical Instrument, Chimes",
-})
-CopyEquipment("Drums (Base)", {
-  Name="Musical Instrument, Drums",
-  Visible=true,
-  Cost=0,
-  BaseItem="Drums (Base)",
-  Qualities={
-    Plural="No",
-  },
-  Key="Musical Instrument (Drums)",
-  DisplayName="Drums",
-  SortKey="Musical Instrument, Drums",
-})
-CopyEquipment("Gong (Base)", {
-  Name="Musical Instrument, Gong",
-  Visible=true,
-  Cost=0,
-  BaseItem="Gong (Base)",
-  Key="Musical Instrument (Gong)",
-  DisplayName="Gong",
-  SortKey="Musical Instrument, Gong",
-})
-CopyEquipment("Fiddle (Base)", {
-  Name="Musical Instrument, Fiddle",
-  Visible=true,
-  Cost=0,
-  BaseItem="Fiddle (Base)",
-  Key="Musical Instrument (Fiddle)",
-  DisplayName="Fiddle",
-  SortKey="Musical Instrument, Fiddle",
-})
-CopyEquipment("Harp (Base)", {
-  Name="Musical Instrument, Harp",
-  Visible=true,
-  Cost=0,
-  BaseItem="Harp (Base)",
-  Key="Musical Instrument (Harp)",
-  DisplayName="Harp",
-  SortKey="Musical Instrument, Harp",
-})
-CopyEquipment("Lute (Base)", {
-  Name="Musical Instrument, Lute",
-  Visible=true,
-  Cost=0,
-  BaseItem="Lute (Base)",
-  Key="Musical Instrument (Lute)",
-  DisplayName="Lute",
-  SortKey="Musical Instrument, Lute",
-})
-CopyEquipment("Mandolin (Base)", {
-  Name="Musical Instrument, Mandolin",
-  Visible=true,
-  Cost=0,
-  BaseItem="Mandolin (Base)",
-  Key="Musical Instrument (Mandolin)",
-  DisplayName="Mandolin",
-  SortKey="Musical Instrument, Mandolin",
-})
-CopyEquipment("Flute (Base)", {
-  Name="Musical Instrument, Flute",
-  Visible=true,
-  Cost=0,
-  BaseItem="Flute (Base)",
-  Key="Musical Instrument (Flute)",
-  DisplayName="Flute",
-  SortKey="Musical Instrument, Flute",
-})
-CopyEquipment("Pan Pipes (Base)", {
-  Name="Musical Instrument, Pan Pipes",
-  Visible=true,
-  Cost=0,
-  BaseItem="Pan Pipes (Base)",
-  Qualities={
-    Plural="No",
-  },
-  Key="Musical Instrument (Pan Pipes)",
-  DisplayName="Pan Pipes",
-  SortKey="Musical Instrument, Pan Pipes",
-})
-CopyEquipment("Recorder (Base)", {
-  Name="Musical Instrument, Recorder",
-  Visible=true,
-  Cost=0,
-  BaseItem="Recorder (Base)",
-  Key="Musical Instrument (Recorder)",
-  DisplayName="Recorder",
-  SortKey="Musical Instrument, Recorder",
-})
-CopyEquipment("Trumpet (Base)", {
-  Name="Musical Instrument, Trumpet",
-  Visible=true,
-  Cost=0,
-  BaseItem="Trumpet (Base)",
-  Key="Musical Instrument (Trumpet)",
-  DisplayName="Trumpet",
-  SortKey="Musical Instrument, Trumpet",
-})
-DefineEquipment({
-  Name="Scale, Merchant's",
-  Cost=2,
-  Weight=1,
-  Key="Scale (Merchant's)",
-  Description={
-    Format="A merchant's scale grants a +2 circumstance bonus on Appraise checks involving items that are valued by weight, including anything made of precious metals.",
-  },
   Types={
     "Goods",
     "Tools",
   },
+})
+CopyEquipment("Harpsichord (Base)", {
+  Name="Musical Instrument, Harpsichord",
+  Key="Musical Instrument (Harpsichord)",
+  SortKey="Musical Instrument, Harpsichord",
+  BaseItem="Harpsichord (Base)",
+  CanHaveMods=true,
+  DisplayName="Harpsichord",
+  Visible=true,
+})
+CopyEquipment("Piano (Base)", {
+  Name="Musical Instrument, Piano",
+  Key="Musical Instrument (Piano)",
+  SortKey="Musical Instrument, Piano",
+  BaseItem="Piano (Base)",
+  CanHaveMods=true,
+  DisplayName="Piano",
+  Visible=true,
+})
+CopyEquipment("Pipe Organ (Base)", {
+  Name="Musical Instrument, Pipe Organ",
+  Key="Musical Instrument (Pipe Organ)",
+  SortKey="Musical Instrument, Pipe Organ",
+  BaseItem="Pipe Organ (Base)",
+  CanHaveMods=true,
+  DisplayName="Pipe Organ",
+  Visible=true,
+})
+CopyEquipment("Bells (Base)", {
+  Name="Musical Instrument, Bells",
+  Key="Musical Instrument (Bells)",
+  SortKey="Musical Instrument, Bells",
+  BaseItem="Bells (Base)",
+  CanHaveMods=true,
+  DisplayName="Bells",
+  Visible=true,
+  Qualities={
+    Plural="No",
+  },
+})
+CopyEquipment("Chimes (Base)", {
+  Name="Musical Instrument, Chimes",
+  Key="Musical Instrument (Chimes)",
+  SortKey="Musical Instrument, Chimes",
+  BaseItem="Chimes (Base)",
+  CanHaveMods=true,
+  DisplayName="Chimes",
+  Visible=true,
+  Qualities={
+    Plural="No",
+  },
+})
+CopyEquipment("Drums (Base)", {
+  Name="Musical Instrument, Drums",
+  Key="Musical Instrument (Drums)",
+  SortKey="Musical Instrument, Drums",
+  BaseItem="Drums (Base)",
+  CanHaveMods=true,
+  DisplayName="Drums",
+  Visible=true,
+  Qualities={
+    Plural="No",
+  },
+})
+CopyEquipment("Gong (Base)", {
+  Name="Musical Instrument, Gong",
+  Key="Musical Instrument (Gong)",
+  SortKey="Musical Instrument, Gong",
+  BaseItem="Gong (Base)",
+  CanHaveMods=true,
+  DisplayName="Gong",
+  Visible=true,
+})
+CopyEquipment("Fiddle (Base)", {
+  Name="Musical Instrument, Fiddle",
+  Key="Musical Instrument (Fiddle)",
+  SortKey="Musical Instrument, Fiddle",
+  BaseItem="Fiddle (Base)",
+  CanHaveMods=true,
+  DisplayName="Fiddle",
+  Visible=true,
+})
+CopyEquipment("Harp (Base)", {
+  Name="Musical Instrument, Harp",
+  Key="Musical Instrument (Harp)",
+  SortKey="Musical Instrument, Harp",
+  BaseItem="Harp (Base)",
+  CanHaveMods=true,
+  DisplayName="Harp",
+  Visible=true,
+})
+CopyEquipment("Lute (Base)", {
+  Name="Musical Instrument, Lute",
+  Key="Musical Instrument (Lute)",
+  SortKey="Musical Instrument, Lute",
+  BaseItem="Lute (Base)",
+  CanHaveMods=true,
+  DisplayName="Lute",
+  Visible=true,
+})
+CopyEquipment("Mandolin (Base)", {
+  Name="Musical Instrument, Mandolin",
+  Key="Musical Instrument (Mandolin)",
+  SortKey="Musical Instrument, Mandolin",
+  BaseItem="Mandolin (Base)",
+  CanHaveMods=true,
+  DisplayName="Mandolin",
+  Visible=true,
+})
+CopyEquipment("Flute (Base)", {
+  Name="Musical Instrument, Flute",
+  Key="Musical Instrument (Flute)",
+  SortKey="Musical Instrument, Flute",
+  BaseItem="Flute (Base)",
+  CanHaveMods=true,
+  DisplayName="Flute",
+  Visible=true,
+})
+CopyEquipment("Pan Pipes (Base)", {
+  Name="Musical Instrument, Pan Pipes",
+  Key="Musical Instrument (Pan Pipes)",
+  SortKey="Musical Instrument, Pan Pipes",
+  BaseItem="Pan Pipes (Base)",
+  CanHaveMods=true,
+  DisplayName="Pan Pipes",
+  Visible=true,
+  Qualities={
+    Plural="No",
+  },
+})
+CopyEquipment("Recorder (Base)", {
+  Name="Musical Instrument, Recorder",
+  Key="Musical Instrument (Recorder)",
+  SortKey="Musical Instrument, Recorder",
+  BaseItem="Recorder (Base)",
+  CanHaveMods=true,
+  DisplayName="Recorder",
+  Visible=true,
+})
+CopyEquipment("Trumpet (Base)", {
+  Name="Musical Instrument, Trumpet",
+  Key="Musical Instrument (Trumpet)",
+  SortKey="Musical Instrument, Trumpet",
+  BaseItem="Trumpet (Base)",
+  CanHaveMods=true,
+  DisplayName="Trumpet",
+  Visible=true,
+})
+DefineEquipment({
+  Name="Scale, Merchant's",
+  Key="Scale (Merchant's)",
+  SortKey="Scale, Merchant's",
+  CanHaveMods=true,
+  Cost=2,
+  Description={
+    Format="A merchant's scale grants a +2 circumstance bonus on Appraise checks involving items that are valued by weight, including anything made of precious metals.",
+  },
+  DisplayName="Merchant's Scale",
+  SourcePage="p.161",
+  Weight=1,
   SpecialProperties={
     {
       Format="+2 to appraise items valued by weight",
     },
   },
-  DisplayName="Merchant's Scale",
-  SortKey="Scale, Merchant's",
-  SourcePage="p.161",
+  Types={
+    "Goods",
+    "Tools",
+  },
 })
 DefineEquipment({
   Name="Spell Component Pouch",
-  Cost=5,
+  Key="Spell Component Pouch",
+  SortKey="Spell Component Pouch",
+  CanHaveMods=true,
   Contains={
     Capacity=math.huge,
   },
-  Weight=2,
-  Key="Spell Component Pouch",
+  Cost=5,
   Description={
     Format="A spellcaster with a spell component pouch is assumed to have all the material components and focuses needed for spellcasting, except for those components that have a specific cost, divine focuses, and focuses that wouldn't fit in a pouch.",
   },
+  SourcePage="p.161",
+  Weight=2,
   Types={
     "Goods",
     "Tools",
     "Container",
   },
-  SortKey="Spell Component Pouch",
-  SourcePage="p.161",
 })
 DefineEquipment({
   Name="Spellbook",
-  Cost=15,
-  SpellBookPageCount=100,
-  PagesPerSpell=Formula("max(SPELLLEVEL,1)"),
-  Weight=3,
   Key="Spellbook",
+  SortKey="Spellbook",
+  CanHaveMods=true,
+  Cost=15,
   Description={
     Format="A spellbook has 100 pages of parchment, and each spell takes up one page per spell level (one page each for 0-level spells).",
   },
+  PagesPerSpell=Formula("max(SPELLLEVEL,1)"),
+  SourcePage="p.161",
+  SpellBookPageCount=100,
+  Weight=3,
   Types={
     "Goods",
     "Tools",
     "Book",
     "Spellbook",
   },
-  SortKey="Spellbook",
-  SourcePage="p.161",
 })
 DefineEquipment({
   Name="Thieves' Tools",
-  Cost=30,
-  Qualities={
-    Plural="No",
-  },
-  Weight=1,
   Key="Thieves' Tools",
+  SortKey="Thieves' Tools",
+  CanHaveMods=true,
+  Cost=30,
   Description={
     Format="This kit contains lockpicks and other tools you need to use the Disable Device skill. Without these tools, you must use improvised tools, and you take a -2 circumstance penalty on Disable Device checks.",
+  },
+  SourcePage="p.161",
+  Weight=1,
+  Bonuses={
+    {
+      Category="SKILL",
+      Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
+      Conditions={
+        function (item)
+          return ((item.IsType("Masterwork"))) >= 1
+        end,
+      },
+      Variables={
+        "Disable Device",
+      },
+    },
   },
   Types={
     "Goods",
@@ -2875,36 +3060,20 @@ DefineEquipment({
     "Thief",
     "ThiefTools",
   },
-  Bonuses={
-    {
-      Category="SKILL",
-      Variables={
-        "Disable Device",
-      },
-      Formula=Formula("2"),
-      Type={
-        Name="Circumstance",
-        Replace=false,
-        Stack=false,
-      },
-      Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
-        end,
-      },
-    },
+  Qualities={
+    Plural="No",
   },
-  SortKey="Thieves' Tools",
-  SourcePage="p.161",
 })
 DefineEquipment({
   Name="Unholy Symbol",
-  Cost=0,
-  ModsRequired=true,
   Key="Unholy Symbol",
+  SortKey="Unholy Symbol",
+  CanHaveMods=true,
   Description={
     Format="An unholy symbol is like a holy symbol except that it focuses negative energy and is used by evil clerics (or by neutral clerics who want to cast evil spells or channel negative energy).",
   },
+  ModsRequired=true,
+  SourcePage="p.161",
   Types={
     "Goods",
     "Tools",
@@ -2912,31 +3081,23 @@ DefineEquipment({
     "Divine Focus",
     "Holy Symbol",
   },
-  SortKey="Unholy Symbol",
-  SourcePage="p.161",
 })
 DefineEquipment({
   Name="Harpsichord",
-  Visible=false,
-  Cost=5,
-  Weight=3,
   Key="Harpsichord (Base)",
+  SortKey="zzBase",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="A masterwork instrument grants a +2 circumstance bonus on Perform checks involving its use.",
   },
-  Types={
-    "Goods",
-    "Tools",
-    "Instrument",
-    "Keyboard",
-    "Resizable",
-  },
+  DisplayName="Harpsichord",
+  SourcePage="p.161",
+  Visible=false,
+  Weight=3,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Perform (Keyboard Instruments)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -2948,34 +3109,35 @@ DefineEquipment({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Perform (Keyboard Instruments)",
+      },
     },
   },
-  DisplayName="Harpsichord",
-  SortKey="zzBase",
-  SourcePage="p.161",
+  Types={
+    "Goods",
+    "Tools",
+    "Instrument",
+    "Keyboard",
+    "Resizable",
+  },
 })
 DefineEquipment({
   Name="Piano",
-  Visible=false,
-  Cost=5,
-  Weight=3,
   Key="Piano (Base)",
+  SortKey="zzBase",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="A masterwork instrument grants a +2 circumstance bonus on Perform checks involving its use.",
   },
-  Types={
-    "Goods",
-    "Tools",
-    "Instrument",
-    "Keyboard",
-    "Resizable",
-  },
+  DisplayName="Piano",
+  SourcePage="p.161",
+  Visible=false,
+  Weight=3,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Perform (Keyboard Instruments)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -2987,20 +3149,50 @@ DefineEquipment({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Perform (Keyboard Instruments)",
+      },
     },
   },
-  DisplayName="Piano",
-  SortKey="zzBase",
-  SourcePage="p.161",
+  Types={
+    "Goods",
+    "Tools",
+    "Instrument",
+    "Keyboard",
+    "Resizable",
+  },
 })
 DefineEquipment({
   Name="Pipe Organ",
-  Visible=false,
-  Cost=5,
-  Weight=3,
   Key="Pipe Organ (Base)",
+  SortKey="zzBase",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="A masterwork instrument grants a +2 circumstance bonus on Perform checks involving its use.",
+  },
+  DisplayName="Pipe Organ",
+  SourcePage="p.161",
+  Visible=false,
+  Weight=3,
+  Bonuses={
+    {
+      Category="SKILL",
+      Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
+      Conditions={
+        function (item)
+          return ((item.IsType("Masterwork"))) >= 1
+        end,
+      },
+      Variables={
+        "Perform (Keyboard Instruments)",
+      },
+    },
   },
   Types={
     "Goods",
@@ -3009,51 +3201,23 @@ DefineEquipment({
     "Keyboard",
     "Resizable",
   },
-  Bonuses={
-    {
-      Category="SKILL",
-      Variables={
-        "Perform (Keyboard Instruments)",
-      },
-      Formula=Formula("2"),
-      Type={
-        Name="Circumstance",
-        Replace=false,
-        Stack=false,
-      },
-      Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
-        end,
-      },
-    },
-  },
-  DisplayName="Pipe Organ",
-  SortKey="zzBase",
-  SourcePage="p.161",
 })
 DefineEquipment({
   Name="Bells",
-  Visible=false,
-  Cost=5,
-  Weight=3,
   Key="Bells (Base)",
+  SortKey="zzBase",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="A masterwork instrument grants a +2 circumstance bonus on Perform checks involving its use.",
   },
-  Types={
-    "Goods",
-    "Tools",
-    "Instrument",
-    "Percussion",
-    "Resizable",
-  },
+  DisplayName="Bells",
+  SourcePage="p.161",
+  Visible=false,
+  Weight=3,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Perform (Percussion Instruments)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -3065,34 +3229,35 @@ DefineEquipment({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Perform (Percussion Instruments)",
+      },
     },
   },
-  DisplayName="Bells",
-  SortKey="zzBase",
-  SourcePage="p.161",
+  Types={
+    "Goods",
+    "Tools",
+    "Instrument",
+    "Percussion",
+    "Resizable",
+  },
 })
 DefineEquipment({
   Name="Chimes",
-  Visible=false,
-  Cost=5,
-  Weight=3,
   Key="Chimes (Base)",
+  SortKey="zzBase",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="A masterwork instrument grants a +2 circumstance bonus on Perform checks involving its use.",
   },
-  Types={
-    "Goods",
-    "Tools",
-    "Instrument",
-    "Percussion",
-    "Resizable",
-  },
+  DisplayName="Chimes",
+  SourcePage="p.161",
+  Visible=false,
+  Weight=3,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Perform (Percussion Instruments)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -3104,34 +3269,35 @@ DefineEquipment({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Perform (Percussion Instruments)",
+      },
     },
   },
-  DisplayName="Chimes",
-  SortKey="zzBase",
-  SourcePage="p.161",
+  Types={
+    "Goods",
+    "Tools",
+    "Instrument",
+    "Percussion",
+    "Resizable",
+  },
 })
 DefineEquipment({
   Name="Drums",
-  Visible=false,
-  Cost=5,
-  Weight=3,
   Key="Drums (Base)",
+  SortKey="zzBase",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="A masterwork instrument grants a +2 circumstance bonus on Perform checks involving its use.",
   },
-  Types={
-    "Goods",
-    "Tools",
-    "Instrument",
-    "Percussion",
-    "Resizable",
-  },
+  DisplayName="Drums",
+  SourcePage="p.161",
+  Visible=false,
+  Weight=3,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Perform (Percussion Instruments)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -3143,20 +3309,50 @@ DefineEquipment({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Perform (Percussion Instruments)",
+      },
     },
   },
-  DisplayName="Drums",
-  SortKey="zzBase",
-  SourcePage="p.161",
+  Types={
+    "Goods",
+    "Tools",
+    "Instrument",
+    "Percussion",
+    "Resizable",
+  },
 })
 DefineEquipment({
   Name="Gong",
-  Visible=false,
-  Cost=5,
-  Weight=3,
   Key="Gong (Base)",
+  SortKey="zzBase",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="A masterwork instrument grants a +2 circumstance bonus on Perform checks involving its use.",
+  },
+  DisplayName="Gong",
+  SourcePage="p.161",
+  Visible=false,
+  Weight=3,
+  Bonuses={
+    {
+      Category="SKILL",
+      Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
+      Conditions={
+        function (item)
+          return ((item.IsType("Masterwork"))) >= 1
+        end,
+      },
+      Variables={
+        "Perform (Percussion Instruments)",
+      },
+    },
   },
   Types={
     "Goods",
@@ -3165,51 +3361,23 @@ DefineEquipment({
     "Percussion",
     "Resizable",
   },
-  Bonuses={
-    {
-      Category="SKILL",
-      Variables={
-        "Perform (Percussion Instruments)",
-      },
-      Formula=Formula("2"),
-      Type={
-        Name="Circumstance",
-        Replace=false,
-        Stack=false,
-      },
-      Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
-        end,
-      },
-    },
-  },
-  DisplayName="Gong",
-  SortKey="zzBase",
-  SourcePage="p.161",
 })
 DefineEquipment({
   Name="Fiddle",
-  Visible=false,
-  Cost=5,
-  Weight=3,
   Key="Fiddle (Base)",
+  SortKey="zzBase",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="A masterwork instrument grants a +2 circumstance bonus on Perform checks involving its use.",
   },
-  Types={
-    "Goods",
-    "Tools",
-    "Instrument",
-    "String",
-    "Resizable",
-  },
+  DisplayName="Fiddle",
+  SourcePage="p.161",
+  Visible=false,
+  Weight=3,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Perform (String Instruments)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -3221,34 +3389,35 @@ DefineEquipment({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Perform (String Instruments)",
+      },
     },
   },
-  DisplayName="Fiddle",
-  SortKey="zzBase",
-  SourcePage="p.161",
+  Types={
+    "Goods",
+    "Tools",
+    "Instrument",
+    "String",
+    "Resizable",
+  },
 })
 DefineEquipment({
   Name="Harp",
-  Visible=false,
-  Cost=5,
-  Weight=3,
   Key="Harp (Base)",
+  SortKey="zzBase",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="A masterwork instrument grants a +2 circumstance bonus on Perform checks involving its use.",
   },
-  Types={
-    "Goods",
-    "Tools",
-    "Instrument",
-    "String",
-    "Resizable",
-  },
+  DisplayName="Harp",
+  SourcePage="p.161",
+  Visible=false,
+  Weight=3,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Perform (String Instruments)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -3260,34 +3429,35 @@ DefineEquipment({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Perform (String Instruments)",
+      },
     },
   },
-  DisplayName="Harp",
-  SortKey="zzBase",
-  SourcePage="p.161",
+  Types={
+    "Goods",
+    "Tools",
+    "Instrument",
+    "String",
+    "Resizable",
+  },
 })
 DefineEquipment({
   Name="Lute",
-  Visible=false,
-  Cost=5,
-  Weight=3,
   Key="Lute (Base)",
+  SortKey="zzBase",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="A masterwork instrument grants a +2 circumstance bonus on Perform checks involving its use.",
   },
-  Types={
-    "Goods",
-    "Tools",
-    "Instrument",
-    "String",
-    "Resizable",
-  },
+  DisplayName="Lute",
+  SourcePage="p.161",
+  Visible=false,
+  Weight=3,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Perform (String Instruments)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -3299,20 +3469,50 @@ DefineEquipment({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Perform (String Instruments)",
+      },
     },
   },
-  DisplayName="Lute",
-  SortKey="zzBase",
-  SourcePage="p.161",
+  Types={
+    "Goods",
+    "Tools",
+    "Instrument",
+    "String",
+    "Resizable",
+  },
 })
 DefineEquipment({
   Name="Mandolin",
-  Visible=false,
-  Cost=5,
-  Weight=3,
   Key="Mandolin (Base)",
+  SortKey="zzBase",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="A masterwork instrument grants a +2 circumstance bonus on Perform checks involving its use.",
+  },
+  DisplayName="Mandolin",
+  SourcePage="p.161",
+  Visible=false,
+  Weight=3,
+  Bonuses={
+    {
+      Category="SKILL",
+      Formula=Formula("2"),
+      Type={
+        Name="Circumstance",
+        Replace=false,
+        Stack=false,
+      },
+      Conditions={
+        function (item)
+          return ((item.IsType("Masterwork"))) >= 1
+        end,
+      },
+      Variables={
+        "Perform (String Instruments)",
+      },
+    },
   },
   Types={
     "Goods",
@@ -3321,51 +3521,23 @@ DefineEquipment({
     "String",
     "Resizable",
   },
-  Bonuses={
-    {
-      Category="SKILL",
-      Variables={
-        "Perform (String Instruments)",
-      },
-      Formula=Formula("2"),
-      Type={
-        Name="Circumstance",
-        Replace=false,
-        Stack=false,
-      },
-      Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
-        end,
-      },
-    },
-  },
-  DisplayName="Mandolin",
-  SortKey="zzBase",
-  SourcePage="p.161",
 })
 DefineEquipment({
   Name="Flute",
-  Visible=false,
-  Cost=5,
-  Weight=3,
   Key="Flute (Base)",
+  SortKey="zzBase",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="A masterwork instrument grants a +2 circumstance bonus on Perform checks involving its use.",
   },
-  Types={
-    "Goods",
-    "Tools",
-    "Instrument",
-    "Wind",
-    "Resizable",
-  },
+  DisplayName="Flute",
+  SourcePage="p.161",
+  Visible=false,
+  Weight=3,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Perform (Wind Instruments)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -3377,34 +3549,35 @@ DefineEquipment({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Perform (Wind Instruments)",
+      },
     },
   },
-  DisplayName="Flute",
-  SortKey="zzBase",
-  SourcePage="p.161",
+  Types={
+    "Goods",
+    "Tools",
+    "Instrument",
+    "Wind",
+    "Resizable",
+  },
 })
 DefineEquipment({
   Name="Pan Pipes",
-  Visible=false,
-  Cost=5,
-  Weight=3,
   Key="Pan Pipes (Base)",
+  SortKey="zzBase",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="A masterwork instrument grants a +2 circumstance bonus on Perform checks involving its use.",
   },
-  Types={
-    "Goods",
-    "Tools",
-    "Instrument",
-    "Wind",
-    "Resizable",
-  },
+  DisplayName="Pan Pipes",
+  SourcePage="p.161",
+  Visible=false,
+  Weight=3,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Perform (Wind Instruments)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -3416,34 +3589,35 @@ DefineEquipment({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Perform (Wind Instruments)",
+      },
     },
   },
-  DisplayName="Pan Pipes",
-  SortKey="zzBase",
-  SourcePage="p.161",
+  Types={
+    "Goods",
+    "Tools",
+    "Instrument",
+    "Wind",
+    "Resizable",
+  },
 })
 DefineEquipment({
   Name="Recorder",
-  Visible=false,
-  Cost=5,
-  Weight=3,
   Key="Recorder (Base)",
+  SortKey="zzBase",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="A masterwork instrument grants a +2 circumstance bonus on Perform checks involving its use.",
   },
-  Types={
-    "Goods",
-    "Tools",
-    "Instrument",
-    "Wind",
-    "Resizable",
-  },
+  DisplayName="Recorder",
+  SourcePage="p.161",
+  Visible=false,
+  Weight=3,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Perform (Wind Instruments)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -3455,34 +3629,35 @@ DefineEquipment({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Perform (Wind Instruments)",
+      },
     },
   },
-  DisplayName="Recorder",
-  SortKey="zzBase",
-  SourcePage="p.161",
+  Types={
+    "Goods",
+    "Tools",
+    "Instrument",
+    "Wind",
+    "Resizable",
+  },
 })
 DefineEquipment({
   Name="Trumpet",
-  Visible=false,
-  Cost=5,
-  Weight=3,
   Key="Trumpet (Base)",
+  SortKey="zzBase",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="A masterwork instrument grants a +2 circumstance bonus on Perform checks involving its use.",
   },
-  Types={
-    "Goods",
-    "Tools",
-    "Instrument",
-    "Wind",
-    "Resizable",
-  },
+  DisplayName="Trumpet",
+  SourcePage="p.161",
+  Visible=false,
+  Weight=3,
   Bonuses={
     {
       Category="SKILL",
-      Variables={
-        "Perform (Wind Instruments)",
-      },
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
@@ -3494,668 +3669,721 @@ DefineEquipment({
           return ((item.IsType("Masterwork"))) >= 1
         end,
       },
+      Variables={
+        "Perform (Wind Instruments)",
+      },
     },
   },
-  DisplayName="Trumpet",
-  SortKey="zzBase",
-  SourcePage="p.161",
+  Types={
+    "Goods",
+    "Tools",
+    "Instrument",
+    "Wind",
+    "Resizable",
+  },
 })
 DefineEquipment({
   Name="Artisan's Outfit",
-  Cost=1,
-  Weight=4,
   Key="Outfit (Artisan's)",
+  SortKey="Outfit (Artisan's)",
+  CanHaveMods=true,
+  Cost=1,
   Description={
     Format="This outfit includes a shirt with buttons, a skirt or pants with a drawstring, shoes, and perhaps a cap or hat. It may also include a belt or a leather or cloth apron for carrying tools.",
   },
+  SourcePage="p.161",
+  Weight=4,
   Types={
     "Goods",
     "Clothing",
     "Resizable",
     "Starting",
   },
-  SortKey="Outfit (Artisan's)",
-  SourcePage="p.161",
 })
 DefineEquipment({
   Name="Cleric's Vestments",
-  Cost=5,
-  Weight=6,
   Key="Vestments (Cleric's)",
+  SortKey="Outfit (Cleric's)",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="These clothes are for performing priestly functions, not for adventuring. Cleric's vestments typically include a cassock, stole, and surplice.",
   },
+  SourcePage="p.161",
+  Weight=6,
   Types={
     "Goods",
     "Clothing",
     "Resizable",
     "Starting",
   },
-  SortKey="Outfit (Cleric's)",
-  SourcePage="p.161",
 })
 DefineEquipment({
   Name="Cold-Weather Outfit",
-  Cost=8,
-  Weight=7,
   Key="Outfit (Cold-Weather)",
+  SortKey="Outfit (Cold-Weather)",
+  CanHaveMods=true,
+  Cost=8,
   Description={
     Format="This outfit includes a wool coat, linen shirt, wool cap, heavy cloak, thick pants or skirt, and boots. This outfit grants a +5 circumstance bonus on Fortitude saving throws against exposure to cold weather.",
   },
-  Types={
-    "Goods",
-    "Clothing",
-    "Resizable",
-    "Starting",
-  },
+  SourcePage="p.161",
+  Weight=7,
   SpecialProperties={
     {
       Format="+5 circumstance bonus on Fortitude saves vs. cold weather",
     },
   },
-  SortKey="Outfit (Cold-Weather)",
-  SourcePage="p.161",
+  Types={
+    "Goods",
+    "Clothing",
+    "Resizable",
+    "Starting",
+  },
 })
 DefineEquipment({
   Name="Courtier's Outfit",
-  Cost=30,
-  Weight=6,
   Key="Outfit (Courtier's)",
+  SortKey="Outfit (Courtier's)",
+  CanHaveMods=true,
+  Cost=30,
   Description={
     Format="This outfit includes fancy, tailored clothes in whatever fashion happens to be the current style in the courts of the nobles. Anyone trying to influence nobles or courtiers while wearing street dress will have a hard time of it (-2 penalty on Charisma-based skill checks to influence such individuals). If you wear this outfit without jewelry (costing an additional 50 gp), you look like an out-of-place commoner.",
   },
+  SourcePage="p.161",
+  Weight=6,
   Types={
     "Goods",
     "Clothing",
     "Resizable",
   },
-  SortKey="Outfit (Courtier's)",
-  SourcePage="p.161",
 })
 DefineEquipment({
   Name="Entertainer's Outfit",
-  Cost=3,
-  Weight=4,
   Key="Outfit (Entertainer's)",
+  SortKey="Outfit (Entertainer's)",
+  CanHaveMods=true,
+  Cost=3,
   Description={
     Format="This set of flashy--perhaps even gaudy--clothes is for entertaining. While the outfit looks whimsical, its practical design lets you tumble, dance, walk a tightrope, or just run (if the audience turns ugly).",
   },
+  SourcePage="p.161",
+  Weight=4,
   Types={
     "Goods",
     "Clothing",
     "Resizable",
     "Starting",
   },
-  SortKey="Outfit (Entertainer's)",
-  SourcePage="p.161",
 })
 DefineEquipment({
   Name="Explorer's Outfit",
-  Cost=10,
-  Weight=8,
   Key="Outfit (Explorer's)",
+  SortKey="Outfit (Explorer's)",
+  CanHaveMods=true,
+  Cost=10,
   Description={
     Format="This set of clothes is for someone who never knows what to expect. It includes sturdy boots, leather breeches or a skirt, a belt, a shirt (perhaps with a vest or jacket), gloves, and a cloak. Rather than a leather skirt, a leather overtunic may be worn over a cloth skirt. The clothes have plenty of pockets (especially the cloak). The outfit also includes any extra accessories you might need, such as a scarf or a wide-brimmed hat.",
   },
+  SourcePage="p.161",
+  Weight=8,
   Types={
     "Goods",
     "Clothing",
     "Resizable",
     "Starting",
   },
-  SortKey="Outfit (Explorer's)",
-  SourcePage="p.161",
 })
 DefineEquipment({
   Name="Monk's Outfit",
-  Cost=5,
-  Weight=2,
   Key="Outfit (Monk's)",
+  SortKey="Outfit (Monk's)",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="This simple outfit includes sandals, loose breeches, and a loose shirt, and is bound together with sashes. The outfit is designed to give you maximum mobility, and it's made of high-quality fabric. You can conceal small weapons in pockets hidden in the folds, and the sashes are strong enough to serve as short ropes.",
   },
+  SourcePage="p.162",
+  Weight=2,
   Types={
     "Goods",
     "Clothing",
     "Resizable",
     "Starting",
   },
-  SortKey="Outfit (Monk's)",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Noble's Outfit",
-  Cost=75,
-  Weight=10,
   Key="Outfit (Noble's)",
+  SortKey="Outfit (Noble's)",
+  CanHaveMods=true,
+  Cost=75,
   Description={
     Format="These clothes are designed specifically to be expensive and gaudy. Precious metals and gems are worked into the clothing. A would-be noble also needs a signet ring and jewelry (worth at least 100 gp) to accessorize this outfit.",
   },
+  SourcePage="p.162",
+  Weight=10,
   Types={
     "Goods",
     "Clothing",
     "Resizable",
   },
-  SortKey="Outfit (Noble's)",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Peasant's Outfit",
-  Cost=0.1,
-  Weight=2,
   Key="Outfit (Peasant's)",
+  SortKey="Outfit (Peasant's)",
+  CanHaveMods=true,
+  Cost=0.1,
   Description={
     Format="This set of clothes consists of a loose shirt and baggy breeches, or a loose shirt and skirt or overdress. Cloth wrappings are used for shoes.",
   },
+  SourcePage="p.162",
+  Weight=2,
   Types={
     "Goods",
     "Clothing",
     "Resizable",
     "Starting",
   },
-  SortKey="Outfit (Peasant's)",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Royal Outfit",
-  Cost=200,
-  Weight=15,
   Key="Outfit (Royal)",
+  SortKey="Outfit (Royal)",
+  CanHaveMods=true,
+  Cost=200,
   Description={
     Format="This is just the clothing, not the royal scepter, crown, ring, and other accoutrements. Royal clothes are ostentatious, with gems, gold, silk, and fur in abundance.",
   },
+  SourcePage="p.162",
+  Weight=15,
   Types={
     "Goods",
     "Clothing",
     "Resizable",
   },
-  SortKey="Outfit (Royal)",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Scholar's Outfit",
-  Cost=5,
-  Weight=6,
   Key="Outfit (Scholar's)",
+  SortKey="Outfit (Scholar's)",
+  CanHaveMods=true,
+  Cost=5,
   Description={
     Format="Perfect for a scholar, this outfit includes a robe, a belt, a cap, soft shoes, and possibly a cloak.",
   },
+  SourcePage="p.162",
+  Weight=6,
   Types={
     "Goods",
     "Clothing",
     "Resizable",
     "Starting",
   },
-  SortKey="Outfit (Scholar's)",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Traveler's Outfit",
-  Cost=1,
-  Weight=5,
   Key="Outfit (Traveler's)",
+  SortKey="Outfit (Traveler's)",
+  CanHaveMods=true,
+  Cost=1,
   Description={
     Format="This set of clothes consists of boots, a wool skirt or breeches, a sturdy belt, a shirt (perhaps with a vest or jacket), and an ample cloak with a hood.",
   },
+  SourcePage="p.162",
+  Weight=5,
   Types={
     "Goods",
     "Clothing",
     "Resizable",
     "Starting",
   },
-  SortKey="Outfit (Traveler's)",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Gallon of Ale",
-  Cost=0.2,
-  Weight=8,
   Key="Ale (Gallon)",
+  SortKey="Ale, Gallon",
+  CanHaveMods=true,
+  Cost=0.2,
+  SourcePage="p.159",
+  Weight=8,
   Types={
     "Goods",
     "Liquid",
     "Food",
     "Consumable",
   },
-  SortKey="Ale, Gallon",
-  SourcePage="p.159",
 })
 DefineEquipment({
   Name="Mug of Ale",
-  Cost=0.04,
-  Weight=1,
   Key="Ale (Mug)",
+  SortKey="Ale, Mug",
+  CanHaveMods=true,
+  Cost=0.04,
+  SourcePage="p.159",
+  Weight=1,
   Types={
     "Goods",
     "Food",
     "Consumable",
   },
-  SortKey="Ale, Mug",
-  SourcePage="p.159",
 })
 DefineEquipment({
   Name="Banquet, Per Person",
-  Cost=10,
   Key="Banquet (Per Person)",
+  CanHaveMods=true,
+  Cost=10,
+  DisplayName="Banquet",
+  SourcePage="p.159",
   Types={
     "Goods",
     "Food",
     "Consumable",
   },
-  DisplayName="Banquet",
-  SourcePage="p.159",
 })
 DefineEquipment({
   Name="Loaf of Bread",
-  Cost=0.02,
-  Weight=0.5,
   Key="Bread (Loaf)",
+  SortKey="Bread, Loaf",
+  CanHaveMods=true,
+  Cost=0.02,
+  SourcePage="p.159",
+  Weight=0.5,
   Types={
     "Goods",
     "Food",
     "Resizable",
     "Consumable",
   },
-  SortKey="Bread, Loaf",
-  SourcePage="p.159",
 })
 DefineEquipment({
   Name="Hunk of Cheese",
-  Cost=0.1,
-  Weight=0.5,
   Key="Cheese (Hunk)",
+  SortKey="Cheese, Hunk",
+  CanHaveMods=true,
+  Cost=0.1,
+  SourcePage="p.159",
+  Weight=0.5,
   Types={
     "Goods",
     "Food",
     "Resizable",
     "Consumable",
   },
-  SortKey="Cheese, Hunk",
-  SourcePage="p.159",
 })
 DefineEquipment({
   Name="Inn Stay, Per Day (Good)",
-  Cost=2,
   Key="Inn (Good/Per Day)",
+  CanHaveMods=true,
+  Cost=2,
   Description={
     Format="Poor accommodations at an inn amount to a place on the floor near the hearth. Common accommodations consist of a place on a raised, heated floor and the use of a blanket and a pillow. Good accommodations consist of a small, private room with one bed, some amenities, and a covered chamber pot in the corner.",
-  },
-  Types={
-    "Service",
-    "Lodging",
-    "Consumable",
   },
   DisplayName="Good Inn Stay",
   SourcePage="p.162",
+  Types={
+    "Service",
+    "Lodging",
+    "Consumable",
+  },
 })
 DefineEquipment({
   Name="Inn Stay, Per Day (Common)",
-  Cost=0.5,
   Key="Inn (Common/Per Day)",
+  CanHaveMods=true,
+  Cost=0.5,
   Description={
     Format="Poor accommodations at an inn amount to a place on the floor near the hearth. Common accommodations consist of a place on a raised, heated floor and the use of a blanket and a pillow. Good accommodations consist of a small, private room with one bed, some amenities, and a covered chamber pot in the corner.",
-  },
-  Types={
-    "Service",
-    "Lodging",
-    "Consumable",
   },
   DisplayName="Common Inn Stay",
   SourcePage="p.162",
-})
-DefineEquipment({
-  Name="Inn Stay, Per Day (Poor)",
-  Cost=0.2,
-  Key="Inn (Poor/Per Day)",
-  Description={
-    Format="Poor accommodations at an inn amount to a place on the floor near the hearth. Common accommodations consist of a place on a raised, heated floor and the use of a blanket and a pillow. Good accommodations consist of a small, private room with one bed, some amenities, and a covered chamber pot in the corner.",
-  },
   Types={
     "Service",
     "Lodging",
     "Consumable",
   },
+})
+DefineEquipment({
+  Name="Inn Stay, Per Day (Poor)",
+  Key="Inn (Poor/Per Day)",
+  CanHaveMods=true,
+  Cost=0.2,
+  Description={
+    Format="Poor accommodations at an inn amount to a place on the floor near the hearth. Common accommodations consist of a place on a raised, heated floor and the use of a blanket and a pillow. Good accommodations consist of a small, private room with one bed, some amenities, and a covered chamber pot in the corner.",
+  },
   DisplayName="Poor Inn Stay",
   SourcePage="p.162",
+  Types={
+    "Service",
+    "Lodging",
+    "Consumable",
+  },
 })
 DefineEquipment({
   Name="Meal, Per Day (Good)",
-  Cost=0.5,
   Key="Meals (Good/Per Day)",
+  CanHaveMods=true,
+  Cost=0.5,
   Description={
     Format="Poor meals might be composed of bread, baked turnips, onions, and water. Common meals might consist of bread, chicken stew, carrots, and watered-down ale or wine. Good meals might be composed of bread and pastries, beef, peas, and ale or wine.",
-  },
-  Types={
-    "Goods",
-    "Food",
-    "Resizable",
-    "Consumable",
   },
   DisplayName="Good Meal",
   SourcePage="p.162",
+  Types={
+    "Goods",
+    "Food",
+    "Resizable",
+    "Consumable",
+  },
 })
 DefineEquipment({
   Name="Meal, Per Day (Common)",
-  Cost=0.3,
   Key="Meals (Common/Per Day)",
+  CanHaveMods=true,
+  Cost=0.3,
   Description={
     Format="Poor meals might be composed of bread, baked turnips, onions, and water. Common meals might consist of bread, chicken stew, carrots, and watered-down ale or wine. Good meals might be composed of bread and pastries, beef, peas, and ale or wine.",
-  },
-  Types={
-    "Goods",
-    "Food",
-    "Resizable",
-    "Consumable",
   },
   DisplayName="Common Meal",
   SourcePage="p.162",
-})
-DefineEquipment({
-  Name="Meal, Per Day (Poor)",
-  Cost=0.1,
-  Key="Meals (Poor/Per Day)",
-  Description={
-    Format="Poor meals might be composed of bread, baked turnips, onions, and water. Common meals might consist of bread, chicken stew, carrots, and watered-down ale or wine. Good meals might be composed of bread and pastries, beef, peas, and ale or wine.",
-  },
   Types={
     "Goods",
     "Food",
     "Resizable",
     "Consumable",
   },
+})
+DefineEquipment({
+  Name="Meal, Per Day (Poor)",
+  Key="Meals (Poor/Per Day)",
+  CanHaveMods=true,
+  Cost=0.1,
+  Description={
+    Format="Poor meals might be composed of bread, baked turnips, onions, and water. Common meals might consist of bread, chicken stew, carrots, and watered-down ale or wine. Good meals might be composed of bread and pastries, beef, peas, and ale or wine.",
+  },
   DisplayName="Poor Meal",
   SourcePage="p.162",
+  Types={
+    "Goods",
+    "Food",
+    "Resizable",
+    "Consumable",
+  },
 })
 DefineEquipment({
   Name="Chunk of Meat",
-  Cost=0.3,
-  Weight=0.5,
   Key="Meat (Chunk)",
+  SortKey="Meat, Chunk",
+  CanHaveMods=true,
+  Cost=0.3,
+  SourcePage="p.159",
+  Weight=0.5,
   Types={
     "Goods",
     "Food",
     "Consumable",
   },
-  SortKey="Meat, Chunk",
-  SourcePage="p.159",
 })
 DefineEquipment({
   Name="Pitcher of Wine",
-  Cost=0.2,
-  Weight=6,
   Key="Wine (Common/Pitcher)",
+  SortKey="Wine, Pitcher",
+  CanHaveMods=true,
+  Cost=0.2,
+  SourcePage="p.159",
+  Weight=6,
   Types={
     "Goods",
     "Food",
     "Consumable",
   },
-  SortKey="Wine, Pitcher",
-  SourcePage="p.159",
 })
 DefineEquipment({
   Name="Bottle of Fine Wine",
-  Cost=10,
-  Weight=1.5,
   Key="Wine (Fine/Bottle)",
+  SortKey="Wine, Bottle (Fine)",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.159",
+  Weight=1.5,
   Types={
     "Goods",
     "Food",
     "Consumable",
   },
-  SortKey="Wine, Bottle (Fine)",
-  SourcePage="p.159",
 })
 DefineEquipment({
   Name="Bit and Bridle",
-  Cost=2,
-  Weight=1,
   Key="Bit and Bridle",
+  SortKey="Bit and Bridle",
+  CanHaveMods=true,
+  Cost=2,
+  SourcePage="p.159",
+  Weight=1,
   Types={
     "Goods",
     "Mount",
     "Resizable",
   },
-  SortKey="Bit and Bridle",
-  SourcePage="p.159",
 })
 DefineEquipment({
   Name="Dog, Guard",
-  Cost=25,
+  Key="Dog (Guard)",
+  SortKey="Dog, Guard",
+  CanHaveMods=true,
   Contains={
     Capacity=300,
     ContainedItemWeightDoesNotCount=true,
     ItemLimits={
     },
   },
-  Key="Dog (Guard)",
+  Cost=25,
+  DisplayName="Guard Dog",
+  SourcePage="p.159",
   Types={
     "Mount",
     "Goods",
     "Container",
   },
-  DisplayName="Guard Dog",
-  SortKey="Dog, Guard",
-  SourcePage="p.159",
 })
 DefineEquipment({
   Name="Dog, Riding",
-  Cost=150,
+  Key="Dog (Riding)",
+  SortKey="Dog, Riding",
+  CanHaveMods=true,
   Contains={
     Capacity=300,
     ContainedItemWeightDoesNotCount=true,
     ItemLimits={
     },
   },
-  Size="M",
-  Key="Dog (Riding)",
+  Cost=150,
   Description={
     Format="This Medium dog is specially trained to carry a Small humanoid rider. It is brave in combat like a combat-trained horse. Due to its smaller stature, you take no damage when you fall from a riding dog.",
   },
+  DisplayName="Riding Dog",
+  Size="M",
+  SourcePage="p.162",
   Types={
     "Mount",
     "Goods",
     "Transportation",
     "Container",
   },
-  DisplayName="Riding Dog",
-  SortKey="Dog, Riding",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Donkey",
-  Cost=8,
+  Key="Donkey",
+  SortKey="Donkey",
+  CanHaveMods=true,
   Contains={
     Capacity=690,
     ContainedItemWeightDoesNotCount=true,
     ItemLimits={
     },
   },
-  Size="M",
-  Key="Donkey",
+  Cost=8,
   Description={
     Format="Donkeys and mules are stolid in the face of danger, hardy, surefooted, and capable of carrying heavy loads over vast distances. Unlike a horse, a donkey or a mule is willing (though not eager) to enter dungeons and other strange or threatening places.",
   },
+  Size="M",
+  SourcePage="p.162",
   Types={
     "Mount",
     "Goods",
     "Transportation",
     "Container",
   },
-  SortKey="Donkey",
-  SourcePage="p.162",
 })
 CopyEquipment("Donkey", {
   Name="Mule",
-  Cost=0,
   Key="Mule",
   SortKey="Mule",
+  CanHaveMods=true,
 })
 DefineEquipment({
   Name="Feed",
-  Cost=0.05,
-  Qualities={
-    Plural="No",
-  },
-  Weight=10,
   Key="Feed (Per Day)",
+  SortKey="Feed, Per Day",
+  CanHaveMods=true,
+  Cost=0.05,
   Description={
     Format="Horses, donkeys, mules, and ponies can graze to sustain themselves, but providing feed for them is better. If you have a riding dog, you have to feed it meat.",
   },
+  SourcePage="p.162",
+  Weight=10,
   Types={
     "Goods",
     "Mount",
     "Consumable",
   },
-  SortKey="Feed, Per Day",
-  SourcePage="p.162",
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Heavy Horse",
-  Cost=200,
+  Key="Horse (Heavy)",
+  SortKey="Horse, Heavy",
+  CanHaveMods=true,
   Contains={
     Capacity=600,
     ContainedItemWeightDoesNotCount=true,
     ItemLimits={
     },
   },
-  Size="L",
-  Weight=0,
-  Key="Horse (Heavy)",
+  Cost=200,
   Description={
     Format="A horse is suitable as a mount for a human, dwarf, elf, half-elf, or half-orc. A pony is smaller than a horse and is a suitable mount for a gnome or halfling. A war-trained horse can be ridden into combat without danger. See the Handle Animal skill for a list of tricks known by horses and ponies with combat training.",
   },
+  Size="L",
+  SourcePage="p.162",
+  Weight=0,
   Types={
     "Mount",
     "Goods",
     "Transportation",
     "Container",
   },
-  SortKey="Horse, Heavy",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Heavy Horse (Combat Trained)",
-  Cost=300,
+  Key="Horse (Heavy/Combat Trained)",
+  SortKey="Horse, Heavy (Combat Trained)",
+  CanHaveMods=true,
   Contains={
     Capacity=900,
     ContainedItemWeightDoesNotCount=true,
     ItemLimits={
     },
   },
-  Size="L",
-  Key="Horse (Heavy/Combat Trained)",
+  Cost=300,
   Description={
     Format="A horse is suitable as a mount for a human, dwarf, elf, half-elf, or half-orc. A pony is smaller than a horse and is a suitable mount for a gnome or halfling. A war-trained horse can be ridden into combat without danger. See the Handle Animal skill for a list of tricks known by horses and ponies with combat training.",
   },
+  Size="L",
+  SourcePage="p.162",
   Types={
     "Mount",
     "Goods",
     "Transportation",
     "Container",
   },
-  SortKey="Horse, Heavy (Combat Trained)",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Light Horse",
-  Cost=75,
+  Key="Horse (Light)",
+  SortKey="Horse, Light",
+  CanHaveMods=true,
   Contains={
     Capacity=450,
     ContainedItemWeightDoesNotCount=true,
     ItemLimits={
     },
   },
-  Size="L",
-  Key="Horse (Light)",
+  Cost=75,
   Description={
     Format="A horse is suitable as a mount for a human, dwarf, elf, half-elf, or half-orc. A pony is smaller than a horse and is a suitable mount for a gnome or halfling. A war-trained horse can be ridden into combat without danger. See the Handle Animal skill for a list of tricks known by horses and ponies with combat training.",
   },
+  Size="L",
+  SourcePage="p.162",
   Types={
     "Mount",
     "Goods",
     "Transportation",
     "Container",
   },
-  SortKey="Horse, Light",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Light Horse (Combat Trained)",
-  Cost=110,
+  Key="Horse (Light/Combat Trained)",
+  SortKey="Horse, Light (Combat Trained)",
+  CanHaveMods=true,
   Contains={
     Capacity=690,
     ContainedItemWeightDoesNotCount=true,
     ItemLimits={
     },
   },
-  Size="L",
-  Key="Horse (Light/Combat Trained)",
+  Cost=110,
   Description={
     Format="A horse is suitable as a mount for a human, dwarf, elf, half-elf, or half-orc. A pony is smaller than a horse and is a suitable mount for a gnome or halfling. A war-trained horse can be ridden into combat without danger. See the Handle Animal skill for a list of tricks known by horses and ponies with combat training.",
   },
+  Size="L",
+  SourcePage="p.162",
   Types={
     "Mount",
     "Goods",
     "Transportation",
     "Container",
   },
-  SortKey="Horse, Light (Combat Trained)",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Pony",
-  Cost=30,
+  Key="Pony",
+  SortKey="Pony",
+  CanHaveMods=true,
   Contains={
     Capacity=225,
     ContainedItemWeightDoesNotCount=true,
     ItemLimits={
     },
   },
-  Size="M",
-  Key="Pony",
+  Cost=30,
   Description={
     Format="A horse is suitable as a mount for a human, dwarf, elf, half-elf, or half-orc. A pony is smaller than a horse and is a suitable mount for a gnome or halfling. A war-trained horse can be ridden into combat without danger. See the Handle Animal skill for a list of tricks known by horses and ponies with combat training.",
   },
+  Size="M",
+  SourcePage="p.162",
   Types={
     "Mount",
     "Goods",
     "Transportation",
     "Container",
   },
-  SortKey="Pony",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Pony (Combat Trained)",
-  Cost=45,
+  Key="Pony (Combat Trained)",
+  SortKey="Pony (Combat Trained)",
+  CanHaveMods=true,
   Contains={
     Capacity=300,
     ContainedItemWeightDoesNotCount=true,
     ItemLimits={
     },
   },
-  Size="M",
-  Key="Pony (Combat Trained)",
+  Cost=45,
   Description={
     Format="A horse is suitable as a mount for a human, dwarf, elf, half-elf, or half-orc. A pony is smaller than a horse and is a suitable mount for a gnome or halfling. A war-trained horse can be ridden into combat without danger. See the Handle Animal skill for a list of tricks known by horses and ponies with combat training.",
   },
+  Size="M",
+  SourcePage="p.162",
   Types={
     "Mount",
     "Goods",
     "Transportation",
     "Container",
   },
-  SortKey="Pony (Combat Trained)",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Saddle, Military",
-  Cost=20,
-  Weight=30,
   Key="Saddle (Military)",
+  SortKey="Saddle, Military",
+  CanHaveMods=true,
+  Cost=20,
   Description={
     Format="This saddle braces the rider, providing a +2 circumstance bonus on Ride checks related to staying in the saddle. If you're knocked unconscious while in a military saddle, you have a 75%% chance to stay in the saddle.",
   },
+  DisplayName="Military Saddle",
+  SourcePage="p.162",
+  Weight=30,
+  SpecialProperties={
+    {
+      Format="+2 circumstance bonus on Ride checks related to staying in the saddle",
+    },
+  },
   Types={
     "Goods",
     "Mount",
@@ -4163,28 +4391,24 @@ DefineEquipment({
     "Military",
     "Resizable",
   },
-  SpecialProperties={
-    {
-      Format="+2 circumstance bonus on Ride checks related to staying in the saddle",
-    },
-  },
-  DisplayName="Military Saddle",
-  SortKey="Saddle, Military",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Saddle, Pack",
-  Cost=5,
+  Key="Saddle (Pack)",
+  SortKey="Saddle, Pack",
+  CanHaveMods=true,
   Contains={
     Capacity=math.huge,
     ItemLimits={
     },
   },
-  Weight=15,
-  Key="Saddle (Pack)",
+  Cost=5,
   Description={
     Format="A pack saddle holds gear and supplies, but not a rider. It holds as much gear as the mount can carry.",
   },
+  DisplayName="Pack Saddle",
+  SourcePage="p.162",
+  Weight=15,
   Types={
     "Goods",
     "Container",
@@ -4192,35 +4416,42 @@ DefineEquipment({
     "Saddle",
     "Resizable",
   },
-  DisplayName="Pack Saddle",
-  SortKey="Saddle, Pack",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Saddle, Riding",
-  Cost=10,
-  Weight=25,
   Key="Saddle (Riding)",
+  SortKey="Saddle, Riding",
+  CanHaveMods=true,
+  Cost=10,
   Description={
     Format="If you are knocked unconscious while in a riding saddle, you have a 50%% chance to stay in the saddle.",
   },
+  DisplayName="Riding Saddle",
+  SourcePage="p.162",
+  Weight=25,
   Types={
     "Goods",
     "Mount",
     "Saddle",
     "Resizable",
   },
-  DisplayName="Riding Saddle",
-  SortKey="Saddle, Riding",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Saddle, Exotic Military",
-  Cost=60,
-  Weight=40,
   Key="Saddle (Exotic/Military)",
+  SortKey="Saddle, Exotic Military",
+  CanHaveMods=true,
+  Cost=60,
   Description={
     Format="This saddle braces the rider, providing a +2 circumstance bonus on Ride checks related to staying in the saddle. If you're knocked unconscious while in a military saddle, you have a 75%% chance to stay in the saddle. An exotic saddle is designed for an unusual mount.",
+  },
+  DisplayName="Exotic Military Saddle",
+  SourcePage="p.162",
+  Weight=40,
+  SpecialProperties={
+    {
+      Format="+2 circumstance bonus on Ride checks related to staying in the saddle",
+    },
   },
   Types={
     "Goods",
@@ -4229,28 +4460,24 @@ DefineEquipment({
     "Military",
     "Resizable",
   },
-  SpecialProperties={
-    {
-      Format="+2 circumstance bonus on Ride checks related to staying in the saddle",
-    },
-  },
-  DisplayName="Exotic Military Saddle",
-  SortKey="Saddle, Exotic Military",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Saddle, Exotic Pack",
-  Cost=15,
+  Key="Saddle (Exotic/Pack)",
+  SortKey="Saddle, Exotic Pack",
+  CanHaveMods=true,
   Contains={
     Capacity=math.huge,
     ItemLimits={
     },
   },
-  Weight=20,
-  Key="Saddle (Exotic/Pack)",
+  Cost=15,
   Description={
     Format="A pack saddle holds gear and supplies, but not a rider. It holds as much gear as the mount can carry. An exotic saddle is designed for an unusual mount.",
   },
+  DisplayName="Exotic Pack Saddle",
+  SourcePage="p.162",
+  Weight=20,
   Types={
     "Goods",
     "Container",
@@ -4258,103 +4485,107 @@ DefineEquipment({
     "Saddle",
     "Resizable",
   },
-  DisplayName="Exotic Pack Saddle",
-  SortKey="Saddle, Exotic Pack",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Saddle, Exotic Riding",
-  Cost=30,
-  Weight=30,
   Key="Saddle (Exotic/Riding)",
+  SortKey="Saddle, Exotic Riding",
+  CanHaveMods=true,
+  Cost=30,
   Description={
     Format="If you are knocked unconscious while in a riding saddle, you have a 50%% chance to stay in the saddle. An exotic saddle is designed for an unusual mount.",
   },
+  DisplayName="Exotic Riding Saddle",
+  SourcePage="p.162",
+  Weight=30,
   Types={
     "Goods",
     "Mount",
     "Saddle",
     "Resizable",
   },
-  DisplayName="Exotic Riding Saddle",
-  SortKey="Saddle, Exotic Riding",
-  SourcePage="p.162",
 })
 DefineEquipment({
   Name="Saddlebags",
-  Cost=4,
+  Key="Saddlebags",
+  SortKey="Saddlebags",
+  CanHaveMods=true,
   Contains={
     Capacity=math.huge,
     ItemLimits={
     },
   },
+  Cost=4,
+  SourcePage="p.159",
   Weight=8,
-  Key="Saddlebags",
   Types={
     "Goods",
     "Container",
     "Mount",
     "Resizable",
   },
-  SortKey="Saddlebags",
-  SourcePage="p.159",
 })
 DefineEquipment({
   Name="Stabling, Per Day",
-  Cost=0.5,
   Key="Stabling (Per Day)",
+  CanHaveMods=true,
+  Cost=0.5,
+  DisplayName="Stabling",
+  SourcePage="p.159",
   Types={
     "Goods",
     "Mount",
   },
-  DisplayName="Stabling",
-  SourcePage="p.159",
 })
 DefineEquipment({
   Name="Carriage",
-  Cost=100,
+  Key="Carriage",
+  CanHaveMods=true,
   Contains={
     Capacity=3120,
     ItemLimits={
     },
   },
+  Cost=100,
+  SourcePage="p.163",
   Weight=600,
-  Key="Carriage",
   Types={
     "Goods",
     "Transportation",
     "Vehicle",
     "Container",
   },
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Cart",
-  Cost=15,
+  Key="Cart",
+  CanHaveMods=true,
   Contains={
     Capacity=3120,
     ItemLimits={
     },
   },
+  Cost=15,
+  SourcePage="p.163",
   Weight=200,
-  Key="Cart",
   Types={
     "Goods",
     "Transportation",
     "Vehicle",
     "Container",
   },
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Galley",
-  Cost=30000,
+  Key="Galley",
+  CanHaveMods=true,
   Contains={
     Capacity=300000,
     ItemLimits={
     },
   },
-  Key="Galley",
+  Cost=30000,
+  SourcePage="p.163",
   Types={
     "Goods",
     "Transportation",
@@ -4362,17 +4593,18 @@ DefineEquipment({
     "Ships",
     "Container",
   },
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Keelboat",
-  Cost=3000,
+  Key="Keelboat",
+  CanHaveMods=true,
   Contains={
     Capacity=100000,
     ItemLimits={
     },
   },
-  Key="Keelboat",
+  Cost=3000,
+  SourcePage="p.163",
   Types={
     "Goods",
     "Transportation",
@@ -4380,17 +4612,18 @@ DefineEquipment({
     "Ships",
     "Container",
   },
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Longship",
-  Cost=10000,
+  Key="Longship",
+  CanHaveMods=true,
   Contains={
     Capacity=100000,
     ItemLimits={
     },
   },
-  Key="Longship",
+  Cost=10000,
+  SourcePage="p.163",
   Types={
     "Goods",
     "Transportation",
@@ -4398,18 +4631,19 @@ DefineEquipment({
     "Ships",
     "Container",
   },
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Rowboat",
-  Cost=50,
+  Key="Rowboat",
+  CanHaveMods=true,
   Contains={
     Capacity=600,
     ItemLimits={
     },
   },
+  Cost=50,
+  SourcePage="p.163",
   Weight=100,
-  Key="Rowboat",
   Types={
     "Goods",
     "Transportation",
@@ -4417,13 +4651,14 @@ DefineEquipment({
     "Ships",
     "Container",
   },
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Oar",
-  Cost=2,
-  Weight=10,
   Key="Oar",
+  CanHaveMods=true,
+  Cost=2,
+  SourcePage="p.159",
+  Weight=10,
   Types={
     "Goods",
     "Transportation",
@@ -4431,17 +4666,18 @@ DefineEquipment({
     "Ships",
     "Extra",
   },
-  SourcePage="p.159",
 })
 DefineEquipment({
   Name="Sailing Ship",
-  Cost=10000,
+  Key="Sailing Ship",
+  CanHaveMods=true,
   Contains={
     Capacity=300000,
     ItemLimits={
     },
   },
-  Key="Sailing Ship",
+  Cost=10000,
+  SourcePage="p.163",
   Types={
     "Goods",
     "Transportation",
@@ -4449,53 +4685,56 @@ DefineEquipment({
     "Ships",
     "Container",
   },
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Sled",
-  Cost=20,
+  Key="Sled",
+  CanHaveMods=true,
   Contains={
     Capacity=2000,
     ItemLimits={
     },
   },
+  Cost=20,
+  SourcePage="p.163",
   Weight=300,
-  Key="Sled",
   Types={
     "Goods",
     "Transportation",
     "Vehicle",
     "Container",
   },
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Wagon",
-  Cost=35,
+  Key="Wagon",
+  CanHaveMods=true,
   Contains={
     Capacity=4000,
     ItemLimits={
     },
   },
+  Cost=35,
+  SourcePage="p.163",
   Weight=400,
-  Key="Wagon",
   Types={
     "Goods",
     "Transportation",
     "Vehicle",
     "Container",
   },
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Warship",
-  Cost=25000,
+  Key="Warship",
+  CanHaveMods=true,
   Contains={
     Capacity=300000,
     ItemLimits={
     },
   },
-  Key="Warship",
+  Cost=25000,
+  SourcePage="p.163",
   Types={
     "Goods",
     "Transportation",
@@ -4503,2356 +4742,2508 @@ DefineEquipment({
     "Ships",
     "Container",
   },
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Coach Cab, Per Mile",
-  Cost=0.03,
   Key="Coach Cab (Per Mile)",
+  CanHaveMods=true,
+  Cost=0.03,
   Description={
     Format="The price given is for a ride in a coach that transports people (and light cargo) between towns. For a ride in a cab that transports passengers within a city, 1 copper piece usually takes you anywhere you need to go.",
   },
+  DisplayName="Hired Coach Cab",
+  SourcePage="p.163",
   Types={
     "Service",
     "Transportation",
   },
-  DisplayName="Hired Coach Cab",
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Trained Hireling, Per Day",
-  Cost=0.3,
   Key="Hireling (Trained)",
+  CanHaveMods=true,
+  Cost=0.3,
   Description={
     Format="The amount given is the typical daily wage for mercenary warriors, masons, craftsmen, cooks, scribes, teamsters, and other trained hirelings. This value represents a minimum wage; many such hirelings require significantly higher pay.",
   },
+  DisplayName="Trained Hireling",
+  SourcePage="p.163",
   Types={
     "Service",
   },
-  DisplayName="Trained Hireling",
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Untrained Hireling, Per Day",
-  Cost=0.1,
   Key="Hireling (Untrained)",
+  CanHaveMods=true,
+  Cost=0.1,
   Description={
     Format="The amount shown is the typical daily wage for laborers, maids, and other menial workers.",
   },
+  DisplayName="Untrained Hireling",
+  SourcePage="p.163",
   Types={
     "Service",
   },
-  DisplayName="Untrained Hireling",
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Messenger, Per Mile",
-  Cost=0.02,
   Key="Messenger (Per Mile)",
+  CanHaveMods=true,
+  Cost=0.02,
   Description={
     Format="This includes horse-riding messengers and runners. Those willing to carry a message to a place they were going anyway may ask for only half the indicated amount.",
   },
+  DisplayName="Hired Messenger",
+  SourcePage="p.163",
   Types={
     "Service",
   },
-  DisplayName="Hired Messenger",
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Road or Gate Toll",
-  Cost=0.01,
   Key="Road or Gate Toll",
+  CanHaveMods=true,
+  Cost=0.01,
   Description={
     Format="A toll is sometimes charged to cross a well-kept and well-guarded road to pay for patrols on it and for its upkeep. Occasionally, a large, walled city charges a toll to enter or exit (or sometimes just to enter).",
   },
+  DisplayName="Toll Fee",
+  SourcePage="p.163",
   Types={
     "Service",
     "Transportation",
   },
-  DisplayName="Toll Fee",
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Ship's Passage, Per Mile",
-  Cost=0.1,
   Key="Ship's Passage (Per Mile)",
+  CanHaveMods=true,
+  Cost=0.1,
   Description={
     Format="Most ships do not specialize in passengers, but many have the capability to take a few along when transporting cargo. Double the given cost for creatures larger than Medium or creatures that are otherwise difficult to bring aboard a ship.",
   },
+  DisplayName="Hired Ship's Passage",
+  SourcePage="p.163",
   Types={
     "Service",
     "Transportation",
   },
-  DisplayName="Hired Ship's Passage",
-  SourcePage="p.163",
 })
 DefineEquipment({
   Name="Copper Piece",
-  Cost=0.01,
-  Qualities={
-    Abbreviation="cp",
-  },
-  Weight=0.02,
   Key="Coin (Copper Piece)",
+  SortKey="Coin, Copper Piece",
+  CanHaveMods=true,
+  Cost=0.01,
   Description={
     Format="The standard coin weighs about a third of an ounce (50 to the pound).",
   },
+  SourcePage="p.140",
+  Weight=0.02,
   Types={
     "Coin",
   },
-  SortKey="Coin, Copper Piece",
-  SourcePage="p.140",
+  Qualities={
+    Abbreviation="cp",
+  },
 })
 DefineEquipment({
   Name="Silver Piece",
-  Cost=0.1,
-  Qualities={
-    Abbreviation="sp",
-  },
-  Weight=0.02,
   Key="Coin (Silver Piece)",
+  SortKey="Coin, Silver Piece",
+  CanHaveMods=true,
+  Cost=0.1,
   Description={
     Format="Each silver piece is worth 10 copper pieces (cp).&nl;The standard coin weighs about a third of an ounce (50 to the pound).",
   },
+  SourcePage="p.140",
+  Weight=0.02,
   Types={
     "Coin",
   },
-  SortKey="Coin, Silver Piece",
-  SourcePage="p.140",
+  Qualities={
+    Abbreviation="sp",
+  },
 })
 DefineEquipment({
   Name="Gold Piece",
-  Cost=1,
-  Qualities={
-    Abbreviation="gp",
-  },
-  Weight=0.02,
   Key="Coin (Gold Piece)",
+  SortKey="Coin, Gold Piece",
+  CanHaveMods=true,
+  Cost=1,
   Description={
     Format="The most common coin is the gold piece (gp). A gold piece is worth 10 silver pieces (sp).&nl;The standard coin weighs about a third of an ounce (50 to the pound).",
   },
+  SourcePage="p.140",
+  Weight=0.02,
   Types={
     "Coin",
   },
-  SortKey="Coin, Gold Piece",
-  SourcePage="p.140",
+  Qualities={
+    Abbreviation="gp",
+  },
 })
 DefineEquipment({
   Name="Platinum Piece",
-  Cost=10,
-  Qualities={
-    Abbreviation="pp",
-  },
-  Weight=0.02,
   Key="Coin (Platinum Piece)",
+  SortKey="Coin, Platinum Piece",
+  CanHaveMods=true,
+  Cost=10,
   Description={
     Format="In addition to copper, silver, and gold coins, there are also platinum pieces (pp), which are each worth 10 gp.&nl;The standard coin weighs about a third of an ounce (50 to the pound).",
   },
+  SourcePage="p.140",
+  Weight=0.02,
   Types={
     "Coin",
   },
-  SortKey="Coin, Platinum Piece",
-  SourcePage="p.140",
+  Qualities={
+    Abbreviation="pp",
+  },
 })
 DefineEquipment({
   Name="Agate",
-  Cost=10,
-  Weight=0,
   Key="Agate",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Azurite",
-  Cost=10,
-  Weight=0,
   Key="Azurite",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Quartz, Blue",
-  Cost=10,
-  Weight=0,
   Key="Quartz (Blue)",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Hematite",
-  Cost=10,
-  Weight=0,
   Key="Hematite",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Lapis Lazuli",
-  Cost=10,
-  Weight=0,
   Key="Lapis Lazuli",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Malachite",
-  Cost=10,
-  Weight=0,
   Key="Malachite",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Obsidian",
-  Cost=10,
-  Weight=0,
   Key="Obsidian",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Rhodochrosite",
-  Cost=10,
-  Weight=0,
   Key="Rhodochrosite",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Tigereye",
-  Cost=10,
-  Weight=0,
   Key="Tigereye",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Turquoise",
-  Cost=10,
-  Weight=0,
   Key="Turquoise",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Irregular Freshwater Pearl",
-  Cost=10,
-  Weight=0,
   Key="Pearl (Freshwater/Irregular)",
+  SortKey="Pearl, Irregular Freshwater",
+  CanHaveMods=true,
+  Cost=10,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Pearl, Irregular Freshwater",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Bloodstone",
-  Cost=50,
-  Weight=0,
   Key="Bloodstone",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Carnelian",
-  Cost=50,
-  Weight=0,
   Key="Carnelian",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Chalcedony",
-  Cost=50,
-  Weight=0,
   Key="Chalcedony",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Chrysoprase",
-  Cost=50,
-  Weight=0,
   Key="Chrysoprase",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Citrine",
-  Cost=50,
-  Weight=0,
   Key="Citrine",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Jasper",
-  Cost=50,
-  Weight=0,
   Key="Jasper",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Moonstone",
-  Cost=50,
-  Weight=0,
   Key="Moonstone",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Onyx",
-  Cost=50,
-  Weight=0,
   Key="Onyx",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Peridot",
-  Cost=50,
-  Weight=0,
   Key="Peridot",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Rock Crystal (Clear Quartz)",
-  Cost=50,
-  Weight=0,
   Key="Rock Crystal (Clear Quartz)",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Sard",
-  Cost=50,
-  Weight=0,
   Key="Sard",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Sardonyx",
-  Cost=50,
-  Weight=0,
   Key="Sardonyx",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Rose Quartz",
-  Cost=50,
-  Weight=0,
   Key="Quartz (Rose)",
+  SortKey="Quartz, Rose",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Quartz, Rose",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Smoky Quartz",
-  Cost=50,
-  Weight=0,
   Key="Quartz (Smoky)",
+  SortKey="Quartz, Smoky",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Quartz, Smoky",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Star Rose Quartz",
-  Cost=50,
-  Weight=0,
   Key="Quartz (Star Rose)",
+  SortKey="Quartz, Star Rose",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Quartz, Star Rose",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Zircon",
-  Cost=50,
-  Weight=0,
   Key="Zircon",
+  CanHaveMods=true,
+  Cost=50,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Amber",
-  Cost=100,
-  Weight=0,
   Key="Amber",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Amethyst",
-  Cost=100,
-  Weight=0,
   Key="Amethyst",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Chrysoberyl",
-  Cost=100,
-  Weight=0,
   Key="Chrysoberyl",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Coral",
-  Cost=100,
-  Weight=0,
   Key="Coral",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Red Garnet",
-  Cost=100,
-  Weight=0,
   Key="Garnet (Red)",
+  SortKey="Garnet, Red",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Garnet, Red",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Brown-Green Garnet",
-  Cost=100,
-  Weight=0,
   Key="Garnet (Brown-Green)",
+  SortKey="Garnet, Brown-Green",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Garnet, Brown-Green",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Jade",
-  Cost=100,
-  Weight=0,
   Key="Jade",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Jet",
-  Cost=100,
-  Weight=0,
   Key="Jet",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="White Pearl",
-  Cost=100,
-  Weight=0,
   Key="Pearl (White)",
+  SortKey="Pearl, White",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Pearl, White",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Golden Pearl",
-  Cost=100,
-  Weight=0,
   Key="Pearl (Golden)",
+  SortKey="Pearl, Golden",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Pearl, Golden",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Pink Pearl",
-  Cost=100,
-  Weight=0,
   Key="Pearl (Pink)",
+  SortKey="Pearl, Pink",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Pearl, Pink",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Silver Pearl",
-  Cost=100,
-  Weight=0,
   Key="Pearl (Silver)",
+  SortKey="Pearl, Silver",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Pearl, Silver",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Red Spinel",
-  Cost=100,
-  Weight=0,
   Key="Spinel (Red)",
+  SortKey="Spinel, Red",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Spinel, Red",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Red-Brown Spinel",
-  Cost=100,
-  Weight=0,
   Key="Spinel (Red-Brown)",
+  SortKey="Spinel, Red-Brown",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Spinel, Red-Brown",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Deep Green Spinel",
-  Cost=100,
-  Weight=0,
   Key="Spinel (Deep Green)",
+  SortKey="Spinel, Deep Green",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Spinel, Deep Green",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Tourmaline",
-  Cost=100,
-  Weight=0,
   Key="Tourmaline",
+  CanHaveMods=true,
+  Cost=100,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Alexandrite",
-  Cost=500,
-  Weight=0,
   Key="Alexandrite",
+  CanHaveMods=true,
+  Cost=500,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Aquamarine",
-  Cost=500,
-  Weight=0,
   Key="Aquamarine",
+  CanHaveMods=true,
+  Cost=500,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Violet Garnet",
-  Cost=500,
-  Weight=0,
   Key="Garnet (Violet)",
+  SortKey="Garnet, Violet",
+  CanHaveMods=true,
+  Cost=500,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Garnet, Violet",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Black Pearl",
-  Cost=500,
-  Weight=0,
   Key="Pearl (Black)",
+  SortKey="Pearl, Black",
+  CanHaveMods=true,
+  Cost=500,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Pearl, Black",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Deep Blue Spinel",
-  Cost=500,
-  Weight=0,
   Key="Spinel (Deep Blue)",
+  SortKey="Spinel, Deep Blue",
+  CanHaveMods=true,
+  Cost=500,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Spinel, Deep Blue",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Golden Yellow Topaz",
-  Cost=500,
-  Weight=0,
   Key="Topaz (Golden Yellow)",
+  SortKey="Topaz, Golden Yellow",
+  CanHaveMods=true,
+  Cost=500,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Topaz, Golden Yellow",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Emerald",
-  Cost=1000,
-  Weight=0,
   Key="Emerald",
+  CanHaveMods=true,
+  Cost=1000,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="White Opal",
-  Cost=1000,
-  Weight=0,
   Key="Opal (White)",
+  SortKey="Opal, White",
+  CanHaveMods=true,
+  Cost=1000,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Opal, White",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Black Opal",
-  Cost=1000,
-  Weight=0,
   Key="Opal (Black)",
+  SortKey="Opal, Black",
+  CanHaveMods=true,
+  Cost=1000,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Opal, Black",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Fire Opal",
-  Cost=1000,
-  Weight=0,
   Key="Opal (Fire)",
+  SortKey="Opal, Fire",
+  CanHaveMods=true,
+  Cost=1000,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Opal, Fire",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Blue Sapphire",
-  Cost=1000,
-  Weight=0,
   Key="Sapphire (Blue)",
+  SortKey="Sapphire, Blue",
+  CanHaveMods=true,
+  Cost=1000,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Sapphire, Blue",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Fiery Yellow Corundum",
-  Cost=1000,
-  Weight=0,
   Key="Corundum (Fiery Yellow)",
+  SortKey="Corundum, Fiery Yellow",
+  CanHaveMods=true,
+  Cost=1000,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Corundum, Fiery Yellow",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Rich Purple Corundum",
-  Cost=1000,
-  Weight=0,
   Key="Corundum (Rich Purple)",
+  SortKey="Corundum, Rich Purple",
+  CanHaveMods=true,
+  Cost=1000,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Corundum, Rich Purple",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Blue Star Sapphire",
-  Cost=1000,
-  Weight=0,
   Key="Star Sapphire (Blue)",
+  SortKey="Star Sapphire, Blue",
+  CanHaveMods=true,
+  Cost=1000,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Star Sapphire, Blue",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Black Star Sapphire",
-  Cost=1000,
-  Weight=0,
   Key="Star Sapphire (Black)",
+  SortKey="Star Sapphire, Black",
+  CanHaveMods=true,
+  Cost=1000,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Star Sapphire, Black",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Clearest Bright Green Emerald",
-  Cost=5000,
-  Weight=0,
   Key="Emerald (Clearest Bright Green)",
+  SortKey="Emerald, Clearest Bright Green",
+  CanHaveMods=true,
+  Cost=5000,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SortKey="Emerald, Clearest Bright Green",
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Diamond",
-  Cost=5000,
-  Weight=0,
   Key="Diamond",
+  CanHaveMods=true,
+  Cost=5000,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Jacinth",
-  Cost=5000,
-  Weight=0,
   Key="Jacinth",
+  CanHaveMods=true,
+  Cost=5000,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Ruby",
-  Cost=5000,
-  Weight=0,
   Key="Ruby",
+  CanHaveMods=true,
+  Cost=5000,
+  SourcePage="p.400",
+  Weight=0,
   Types={
     "Gem",
   },
-  SourcePage="p.400",
 })
 DefineEquipment({
   Name="Amber Dust (worth 1,000 gp)",
-  Cost=1000,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
   Key="Amber Dust (1000 gp)",
-  Types={
-    "Spell Component",
-    "Consumable",
-  },
+  CanHaveMods=true,
+  Cost=1000,
+  DisplayName="Amber Dust (worth 1,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Teleportation Circle",
     },
   },
-  DisplayName="Amber Dust (worth 1,000 gp)",
-})
-DefineEquipment({
-  Name="Crushed Black Pearl (worth 500 gp)",
-  Cost=500,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Crushed Black Pearl (500 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Crushed Black Pearl (worth 500 gp)",
+  Key="Crushed Black Pearl (500 gp)",
+  CanHaveMods=true,
+  Cost=500,
+  DisplayName="Crushed Black Pearl (worth 500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Circle of Death",
     },
   },
-  DisplayName="Crushed Black Pearl (worth 500 gp)",
-})
-DefineEquipment({
-  Name="Crushed Jade (worth 250 gp)",
-  Cost=250,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Crushed Jade (250 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Crushed Jade (worth 250 gp)",
+  Key="Crushed Jade (250 gp)",
+  CanHaveMods=true,
+  Cost=250,
+  DisplayName="Crushed Jade (worth 250 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for False Vision",
     },
   },
-  DisplayName="Crushed Jade (worth 250 gp)",
-})
-DefineEquipment({
-  Name="Crushed Pearls (worth 1,500 gp)",
-  Cost=1500,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Crushed Pearls (1500 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Crushed Pearls (worth 1,500 gp)",
+  Key="Crushed Pearls (1500 gp)",
+  CanHaveMods=true,
+  Cost=1500,
+  DisplayName="Crushed Pearls (worth 1,500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Sympathy",
     },
   },
-  DisplayName="Crushed Pearls (worth 1,500 gp)",
-})
-DefineEquipment({
-  Name="Diamond (worth 1,000 gp)",
-  Cost=1000,
+  Types={
+    "Spell Component",
+    "Consumable",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Diamond (worth 1,000 gp)",
   Key="Diamond (1000 gp)",
-  Types={
-    "Spell Component",
-    "Spell Focus",
-  },
+  CanHaveMods=true,
+  Cost=1000,
+  DisplayName="Diamond (worth 1,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Protection from Spells",
     },
   },
-  DisplayName="Diamond (worth 1,000 gp)",
-})
-DefineEquipment({
-  Name="Diamond (worth 10,000 gp)",
-  Cost=10000,
+  Types={
+    "Spell Component",
+    "Spell Focus",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Diamond (worth 10,000 gp)",
   Key="Diamond (10000 gp)",
-  Types={
-    "Spell Component",
-    "Consumable",
-  },
+  CanHaveMods=true,
+  Cost=10000,
+  DisplayName="Diamond (worth 10,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Resurrection",
     },
   },
-  DisplayName="Diamond (worth 10,000 gp)",
-})
-DefineEquipment({
-  Name="Diamond (worth 1,500 gp)",
-  Cost=1500,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Diamond (1500 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Diamond (worth 1,500 gp)",
+  Key="Diamond (1500 gp)",
+  CanHaveMods=true,
+  Cost=1500,
+  DisplayName="Diamond (worth 1,500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Limited Wish",
     },
   },
-  DisplayName="Diamond (worth 1,500 gp)",
-})
-DefineEquipment({
-  Name="Diamond (worth 25,000 gp)",
-  Cost=25000,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Diamond (25000 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Diamond (worth 25,000 gp)",
+  Key="Diamond (25000 gp)",
+  CanHaveMods=true,
+  Cost=25000,
+  DisplayName="Diamond (worth 25,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for True Resurrection or Wish",
     },
   },
-  DisplayName="Diamond (worth 25,000 gp)",
-})
-DefineEquipment({
-  Name="Diamond (worth 500 gp)",
-  Cost=500,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Diamond (500 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Diamond (worth 500 gp)",
+  Key="Diamond (500 gp)",
+  CanHaveMods=true,
+  Cost=500,
+  DisplayName="Diamond (worth 500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Protection from Spells",
     },
   },
-  DisplayName="Diamond (worth 500 gp)",
-})
-DefineEquipment({
-  Name="Diamond (worth 5,000 gp)",
-  Cost=5000,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Diamond (5000 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Diamond (worth 5,000 gp)",
+  Key="Diamond (5000 gp)",
+  CanHaveMods=true,
+  Cost=5000,
+  DisplayName="Diamond (worth 5,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Raise Dead",
     },
   },
-  DisplayName="Diamond (worth 5,000 gp)",
+  Types={
+    "Spell Component",
+    "Consumable",
+  },
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Diamond Dust (worth 100 gp)",
-  Cost=100,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
   Key="Diamond Dust (100 gp)",
-  Types={
-    "Spell Component",
-    "Consumable",
-  },
+  CanHaveMods=true,
+  Cost=100,
+  DisplayName="Diamond Dust (worth 100 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Restoration",
     },
   },
-  DisplayName="Diamond Dust (worth 100 gp)",
+  Types={
+    "Spell Component",
+    "Consumable",
+  },
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Diamond Dust (worth 1,000 gp)",
-  Cost=1000,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
   Key="Diamond Dust (1000 gp)",
-  Types={
-    "Spell Component",
-    "Consumable",
-  },
+  CanHaveMods=true,
+  Cost=1000,
+  DisplayName="Diamond Dust (worth 1,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Restoration",
     },
   },
-  DisplayName="Diamond Dust (worth 1,000 gp)",
-})
-DefineEquipment({
-  Name="Diamond Dust (worth 200 gp)",
-  Cost=200,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Diamond Dust (200 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Diamond Dust (worth 200 gp)",
+  Key="Diamond Dust (200 gp)",
+  CanHaveMods=true,
+  Cost=200,
+  DisplayName="Diamond Dust (worth 200 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Glyph of Warding",
     },
   },
-  DisplayName="Diamond Dust (worth 200 gp)",
-})
-DefineEquipment({
-  Name="Diamond Dust (worth 250 gp)",
-  Cost=250,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Diamond Dust (250 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Diamond Dust (worth 250 gp)",
+  Key="Diamond Dust (250 gp)",
+  CanHaveMods=true,
+  Cost=250,
+  DisplayName="Diamond Dust (worth 250 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Stoneskin",
     },
   },
-  DisplayName="Diamond Dust (worth 250 gp)",
-})
-DefineEquipment({
-  Name="Diamond Dust (worth 25,000 gp)",
-  Cost=25000,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Diamond Dust (25000 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Diamond Dust (worth 25,000 gp)",
+  Key="Diamond Dust (25000 gp)",
+  CanHaveMods=true,
+  Cost=25000,
+  DisplayName="Diamond Dust (worth 25,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Miracle",
     },
   },
-  DisplayName="Diamond Dust (worth 25,000 gp)",
-})
-DefineEquipment({
-  Name="Diamond Dust (worth 50 gp)",
-  Cost=50,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Diamond Dust (50 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Diamond Dust (worth 50 gp)",
+  Key="Diamond Dust (50 gp)",
+  CanHaveMods=true,
+  Cost=50,
+  DisplayName="Diamond Dust (worth 50 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Nondetection",
     },
   },
-  DisplayName="Diamond Dust (worth 50 gp)",
-})
-DefineEquipment({
-  Name="Diamond Dust (worth 500 gp)",
-  Cost=500,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Diamond Dust (500 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Diamond Dust (worth 500 gp)",
+  Key="Diamond Dust (500 gp)",
+  CanHaveMods=true,
+  Cost=500,
+  DisplayName="Diamond Dust (worth 500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Undeath to Death",
     },
   },
-  DisplayName="Diamond Dust (worth 500 gp)",
-})
-DefineEquipment({
-  Name="Diamond Dust (worth 5,000 gp)",
-  Cost=5000,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Diamond Dust (5000 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Diamond Dust (worth 5,000 gp)",
+  Key="Diamond Dust (5000 gp)",
+  CanHaveMods=true,
+  Cost=5000,
+  DisplayName="Diamond Dust (worth 5,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Greater Restoration",
     },
   },
-  DisplayName="Diamond Dust (worth 5,000 gp)",
+  Types={
+    "Spell Component",
+    "Consumable",
+  },
+  Qualities={
+    Plural="No",
+  },
 })
 DefineEquipment({
   Name="Forked Metal Rod",
-  Cost=0,
-  Weight=0,
   Key="Forked Metal Rod",
-  Types={
-    "Spell Component",
-    "Spell Focus",
-  },
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Forked Metal Rod",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Plane Shift",
     },
   },
-  DisplayName="Forked Metal Rod",
-})
-DefineEquipment({
-  Name="Forked Metal Rod, attuned to the Abyss",
-  Cost=0,
-  Weight=0,
-  Key="Forked Metal Rod (Abyss)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+})
+DefineEquipment({
+  Name="Forked Metal Rod, attuned to the Abyss",
+  Key="Forked Metal Rod (Abyss)",
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Forked Metal Rod, attuned to the Abyss",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Plane Shift, attuned to the Abyss",
     },
   },
-  DisplayName="Forked Metal Rod, attuned to the Abyss",
-})
-DefineEquipment({
-  Name="Forked Metal Rod, attuned to the Astral Plane",
-  Cost=0,
-  Weight=0,
-  Key="Forked Metal Rod (Astral Plane)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+})
+DefineEquipment({
+  Name="Forked Metal Rod, attuned to the Astral Plane",
+  Key="Forked Metal Rod (Astral Plane)",
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Forked Metal Rod, attuned to the Astral Plane",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Plane Shift, attuned to the Astral Plane",
     },
   },
-  DisplayName="Forked Metal Rod, attuned to the Astral Plane",
-})
-DefineEquipment({
-  Name="Forked Metal Rod, attuned to Elysium",
-  Cost=0,
-  Weight=0,
-  Key="Forked Metal Rod (Elysium)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+})
+DefineEquipment({
+  Name="Forked Metal Rod, attuned to Elysium",
+  Key="Forked Metal Rod (Elysium)",
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Forked Metal Rod, attuned to Elysium",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Plane Shift, attuned to Elysium",
     },
   },
-  DisplayName="Forked Metal Rod, attuned to Elysium",
-})
-DefineEquipment({
-  Name="Forked Metal Rod, attuned to the Ethereal Plane",
-  Cost=0,
-  Weight=0,
-  Key="Forked Metal Rod (Ethereal Plane)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+})
+DefineEquipment({
+  Name="Forked Metal Rod, attuned to the Ethereal Plane",
+  Key="Forked Metal Rod (Ethereal Plane)",
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Forked Metal Rod, attuned to the Ethereal Plane",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Plane Shift, attuned to the Ethereal Plane",
     },
   },
-  DisplayName="Forked Metal Rod, attuned to the Ethereal Plane",
-})
-DefineEquipment({
-  Name="Forked Metal Rod, attuned to Heaven",
-  Cost=0,
-  Weight=0,
-  Key="Forked Metal Rod (Heaven)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+})
+DefineEquipment({
+  Name="Forked Metal Rod, attuned to Heaven",
+  Key="Forked Metal Rod (Heaven)",
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Forked Metal Rod, attuned to Heaven",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Plane Shift, attuned to Heaven",
     },
   },
-  DisplayName="Forked Metal Rod, attuned to Heaven",
-})
-DefineEquipment({
-  Name="Forked Metal Rod, attuned to Hell",
-  Cost=0,
-  Weight=0,
-  Key="Forked Metal Rod (Hell)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+})
+DefineEquipment({
+  Name="Forked Metal Rod, attuned to Hell",
+  Key="Forked Metal Rod (Hell)",
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Forked Metal Rod, attuned to Hell",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Plane Shift, attuned to Hell",
     },
   },
-  DisplayName="Forked Metal Rod, attuned to Hell",
-})
-DefineEquipment({
-  Name="Forked Metal Rod, attuned to the Material Plane",
-  Cost=0,
-  Weight=0,
-  Key="Forked Metal Rod (Material Plane)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+})
+DefineEquipment({
+  Name="Forked Metal Rod, attuned to the Material Plane",
+  Key="Forked Metal Rod (Material Plane)",
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Forked Metal Rod, attuned to the Material Plane",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Plane Shift, attuned to the Material Plane",
     },
   },
-  DisplayName="Forked Metal Rod, attuned to the Material Plane",
-})
-DefineEquipment({
-  Name="Forked Metal Rod, attuned to the Negative Energy Plane",
-  Cost=0,
-  Weight=0,
-  Key="Forked Metal Rod (Negative Energy Plane)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+})
+DefineEquipment({
+  Name="Forked Metal Rod, attuned to the Negative Energy Plane",
+  Key="Forked Metal Rod (Negative Energy Plane)",
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Forked Metal Rod, attuned to the Negative Energy Plane",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Plane Shift, attuned to the Negative Energy Plane",
     },
   },
-  DisplayName="Forked Metal Rod, attuned to the Negative Energy Plane",
-})
-DefineEquipment({
-  Name="Forked Metal Rod, attuned to the Plane of Air",
-  Cost=0,
-  Weight=0,
-  Key="Forked Metal Rod (Plane of Air)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+})
+DefineEquipment({
+  Name="Forked Metal Rod, attuned to the Plane of Air",
+  Key="Forked Metal Rod (Plane of Air)",
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Forked Metal Rod, attuned to the Plane of Air",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Plane Shift, attuned to the Plane of Air",
     },
   },
-  DisplayName="Forked Metal Rod, attuned to the Plane of Air",
-})
-DefineEquipment({
-  Name="Forked Metal Rod, attuned to the Plane of Earth",
-  Cost=0,
-  Weight=0,
-  Key="Forked Metal Rod (Plane of Earth)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+})
+DefineEquipment({
+  Name="Forked Metal Rod, attuned to the Plane of Earth",
+  Key="Forked Metal Rod (Plane of Earth)",
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Forked Metal Rod, attuned to the Plane of Earth",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Plane Shift, attuned to the Plane of Earth",
     },
   },
-  DisplayName="Forked Metal Rod, attuned to the Plane of Earth",
-})
-DefineEquipment({
-  Name="Forked Metal Rod, attuned to the Plane of Fire",
-  Cost=0,
-  Weight=0,
-  Key="Forked Metal Rod (Plane of Fire)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+})
+DefineEquipment({
+  Name="Forked Metal Rod, attuned to the Plane of Fire",
+  Key="Forked Metal Rod (Plane of Fire)",
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Forked Metal Rod, attuned to the Plane of Fire",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Plane Shift, attuned to the Plane of Fire",
     },
   },
-  DisplayName="Forked Metal Rod, attuned to the Plane of Fire",
-})
-DefineEquipment({
-  Name="Forked Metal Rod, attuned to the Plane of Water",
-  Cost=0,
-  Weight=0,
-  Key="Forked Metal Rod (Plane of Water)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+})
+DefineEquipment({
+  Name="Forked Metal Rod, attuned to the Plane of Water",
+  Key="Forked Metal Rod (Plane of Water)",
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Forked Metal Rod, attuned to the Plane of Water",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Plane Shift, attuned to the Plane of Water",
     },
   },
-  DisplayName="Forked Metal Rod, attuned to the Plane of Water",
-})
-DefineEquipment({
-  Name="Forked Metal Rod, attuned to the Positive Energy Plane",
-  Cost=0,
-  Weight=0,
-  Key="Forked Metal Rod (Positive Energy Plane)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+})
+DefineEquipment({
+  Name="Forked Metal Rod, attuned to the Positive Energy Plane",
+  Key="Forked Metal Rod (Positive Energy Plane)",
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Forked Metal Rod, attuned to the Positive Energy Plane",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Plane Shift, attuned to the Positive Energy Plane",
     },
   },
-  DisplayName="Forked Metal Rod, attuned to the Positive Energy Plane",
-})
-DefineEquipment({
-  Name="Forked Metal Rod, attuned to the Shadow Plane",
-  Cost=0,
-  Weight=0,
-  Key="Forked Metal Rod (Shadow Plane)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+})
+DefineEquipment({
+  Name="Forked Metal Rod, attuned to the Shadow Plane",
+  Key="Forked Metal Rod (Shadow Plane)",
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Forked Metal Rod, attuned to the Shadow Plane",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Plane Shift, attuned to the Shadow Plane",
     },
   },
-  DisplayName="Forked Metal Rod, attuned to the Shadow Plane",
+  Types={
+    "Spell Component",
+    "Spell Focus",
+  },
 })
 DefineEquipment({
   Name="Powdered Diamond, Emerald, Ruby, and Sapphire Dust (worth 5,000 gp)",
-  Cost=5000,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
   Key="Gem Dust (5000 gp)",
-  Types={
-    "Spell Component",
-    "Consumable",
-  },
+  CanHaveMods=true,
+  Cost=5000,
+  DisplayName="Powdered Diamond, Emerald, Ruby, and Sapphire Dust (worth 5,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Temporal Stasis",
     },
   },
-  DisplayName="Powdered Diamond, Emerald, Ruby, and Sapphire Dust (worth 5,000 gp)",
-})
-DefineEquipment({
-  Name="Gold Dust (worth 25 gp)",
-  Cost=25,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Gold Dust (25 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Gold Dust (worth 25 gp)",
+  Key="Gold Dust (25 gp)",
+  CanHaveMods=true,
+  Cost=25,
+  DisplayName="Gold Dust (worth 25 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Arcane Lock or Fire Trap",
     },
   },
-  DisplayName="Gold Dust (worth 25 gp)",
-})
-DefineEquipment({
-  Name="Gold Dust (worth 50 gp)",
-  Cost=50,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Gold Dust (50 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Gold Dust (worth 50 gp)",
+  Key="Gold Dust (50 gp)",
+  CanHaveMods=true,
+  Cost=50,
+  DisplayName="Gold Dust (worth 50 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Wall of Iron",
     },
   },
-  DisplayName="Gold Dust (worth 50 gp)",
-})
-DefineEquipment({
-  Name="Herbs and Oils (worth 2,000 gp)",
-  Cost=2000,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Herbs and Oils (2000 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Herbs and Oils (worth 2,000 gp)",
+  Key="Herbs and Oils (2000 gp)",
+  CanHaveMods=true,
+  Cost=2000,
+  DisplayName="Herbs and Oils (worth 2,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Awaken",
     },
   },
-  DisplayName="Herbs and Oils (worth 2,000 gp)",
-})
-DefineEquipment({
-  Name="Herbs, Oils, and Incense (worth 1,000 gp)",
-  Cost=2000,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Herbs Oils and Incense (1000 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Herbs, Oils, and Incense (worth 1,000 gp)",
+  Key="Herbs Oils and Incense (1000 gp)",
+  CanHaveMods=true,
+  Cost=2000,
+  DisplayName="Herbs, Oils, and Incense (worth 1,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Hallow or Unhallow",
     },
   },
-  DisplayName="Herbs, Oils, and Incense (worth 1,000 gp)",
-})
-DefineEquipment({
-  Name="Incense (worth 1,500 gp)",
-  Cost=1500,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Incense (1500 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Incense (worth 1,500 gp)",
+  Key="Incense (1500 gp)",
+  CanHaveMods=true,
+  Cost=1500,
+  DisplayName="Incense (worth 1,500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Forbiddance",
     },
   },
-  DisplayName="Incense (worth 1,500 gp)",
-})
-DefineEquipment({
-  Name="Incense (worth 25 gp)",
-  Cost=25,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Incense (25 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Incense (worth 25 gp)",
+  Key="Incense (25 gp)",
+  CanHaveMods=true,
+  Cost=25,
+  DisplayName="Incense (worth 25 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Augury and Divination",
     },
   },
-  DisplayName="Incense (worth 25 gp)",
-})
-DefineEquipment({
-  Name="Incense (worth 250 gp)",
-  Cost=250,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Incense (250 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Incense (worth 250 gp)",
+  Key="Incense (250 gp)",
+  CanHaveMods=true,
+  Cost=250,
+  DisplayName="Incense (worth 250 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Legend Lore",
     },
   },
-  DisplayName="Incense (worth 250 gp)",
-})
-DefineEquipment({
-  Name="Incense (worth 500 gp)",
-  Cost=500,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Incense (500 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Incense (worth 500 gp)",
+  Key="Incense (500 gp)",
+  CanHaveMods=true,
+  Cost=500,
+  DisplayName="Incense (worth 500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Commune",
     },
   },
-  DisplayName="Incense (worth 500 gp)",
-})
-DefineEquipment({
-  Name="Ivory Plaque (worth 50 gp)",
-  Cost=50,
+  Types={
+    "Spell Component",
+    "Consumable",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Ivory Plaque (worth 50 gp)",
   Key="Ivory Plaque (50 gp)",
-  Types={
-    "Spell Component",
-    "Spell Focus",
-  },
+  CanHaveMods=true,
+  Cost=50,
+  DisplayName="Ivory Plaque (worth 50 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Mnemonic Enhancer",
     },
   },
-  DisplayName="Ivory Plaque (worth 50 gp)",
-})
-DefineEquipment({
-  Name="Ivory Statuette of Self (worth 1,500 gp)",
-  Cost=1500,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Ivory Statuette of Self (1500 gp)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Ivory Statuette of Self (worth 1,500 gp)",
+  Key="Ivory Statuette of Self (1500 gp)",
+  CanHaveMods=true,
+  Cost=1500,
+  DisplayName="Ivory Statuette of Self (worth 1,500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Contingency",
     },
   },
-  DisplayName="Ivory Statuette of Self (worth 1,500 gp)",
-})
-DefineEquipment({
-  Name="Jacinth (worth 1,000 gp)",
-  Cost=1000,
+  Types={
+    "Spell Component",
+    "Spell Focus",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Jacinth (worth 1,000 gp)",
   Key="Jacinth (1000 gp)",
-  Types={
-    "Spell Component",
-    "Consumable",
-  },
+  CanHaveMods=true,
+  Cost=1000,
+  DisplayName="Jacinth (worth 1,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Astral Projection",
     },
   },
-  DisplayName="Jacinth (worth 1,000 gp)",
-})
-DefineEquipment({
-  Name="Jade Circlet (worth 1,500 gp)",
-  Cost=1500,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Jade Circlet (1500 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Jade Circlet (worth 1,500 gp)",
+  Key="Jade Circlet (1500 gp)",
+  CanHaveMods=true,
+  Cost=1500,
+  DisplayName="Jade Circlet (worth 1,500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Shapechange",
     },
   },
-  DisplayName="Jade Circlet (worth 1,500 gp)",
-})
-DefineEquipment({
-  Name="Jade Dust (worth 10 gp)",
-  Cost=10,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Jade Dust (10 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Jade Dust (worth 10 gp)",
+  Key="Jade Dust (10 gp)",
+  CanHaveMods=true,
+  Cost=10,
+  DisplayName="Jade Dust (worth 10 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Magic Mouth",
     },
   },
-  DisplayName="Jade Dust (worth 10 gp)",
-})
-DefineEquipment({
-  Name="Jade Dust (worth 25 gp)",
-  Cost=25,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Jade Dust (25 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Jade Dust (worth 25 gp)",
+  Key="Jade Dust (25 gp)",
+  CanHaveMods=true,
+  Cost=25,
+  DisplayName="Jade Dust (worth 25 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Programmed Image",
     },
   },
-  DisplayName="Jade Dust (worth 25 gp)",
-})
-DefineEquipment({
-  Name="Laboratory Equipment (costing 500 gp)",
-  Cost=500,
+  Types={
+    "Spell Component",
+    "Consumable",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Laboratory Equipment (costing 500 gp)",
   Key="Laboratory Equipment (500 gp)",
-  Types={
-    "Spell Component",
-    "Spell Focus",
-  },
+  CanHaveMods=true,
+  Cost=500,
+  DisplayName="Laboratory Equipment (costing 500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Clone",
     },
   },
-  DisplayName="Laboratory Equipment (costing 500 gp)",
-})
-DefineEquipment({
-  Name="Laboratory Supplies (worth 1,000 gp)",
-  Cost=1000,
+  Types={
+    "Spell Component",
+    "Spell Focus",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Laboratory Supplies (worth 1,000 gp)",
   Key="Laboratory Supplies (1000 gp)",
-  Types={
-    "Spell Component",
-    "Consumable",
-  },
+  CanHaveMods=true,
+  Cost=1000,
+  DisplayName="Laboratory Supplies (worth 1,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Clone",
     },
   },
-  DisplayName="Laboratory Supplies (worth 1,000 gp)",
-})
-DefineEquipment({
-  Name="Lead-Based Ink (worth 50 gp)",
-  Cost=50,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Lead-Based Ink (50 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Lead-Based Ink (worth 50 gp)",
+  Key="Lead-Based Ink (50 gp)",
+  CanHaveMods=true,
+  Cost=50,
+  DisplayName="Lead-Based Ink (worth 50 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Illusory Script",
     },
   },
-  DisplayName="Lead-Based Ink (worth 50 gp)",
-})
-DefineEquipment({
-  Name="Miniature Ivory Door (worth 5 gp)",
-  Cost=5,
+  Types={
+    "Spell Component",
+    "Consumable",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Miniature Ivory Door (worth 5 gp)",
   Key="Miniature Ivory Door (5 gp)",
-  Types={
-    "Spell Component",
-    "Spell Focus",
-  },
+  CanHaveMods=true,
+  Cost=5,
+  DisplayName="Miniature Ivory Door (worth 5 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Mage's Magnificent Mansion",
     },
   },
-  DisplayName="Miniature Ivory Door (worth 5 gp)",
-})
-DefineEquipment({
-  Name="Miniature Platinum Sword (worth 250 gp)",
-  Cost=250,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Miniature Platinum Sword (250 gp)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Miniature Platinum Sword (worth 250 gp)",
+  Key="Miniature Platinum Sword (250 gp)",
+  CanHaveMods=true,
+  Cost=250,
+  DisplayName="Miniature Platinum Sword (worth 250 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Mage's Sword",
     },
   },
-  DisplayName="Miniature Platinum Sword (worth 250 gp)",
-})
-DefineEquipment({
-  Name="Oils (worth 1,000 gp)",
-  Cost=1000,
+  Types={
+    "Spell Component",
+    "Spell Focus",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Oils (worth 1,000 gp)",
   Key="Oils (1000 gp)",
-  Types={
-    "Spell Component",
-    "Consumable",
-  },
+  CanHaveMods=true,
+  Cost=1000,
+  DisplayName="Oils (worth 1,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Reincarnate",
     },
   },
-  DisplayName="Oils (worth 1,000 gp)",
-})
-DefineEquipment({
-  Name="Ointment (worth 250 gp)",
-  Cost=250,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Ointment (250 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Ointment (worth 250 gp)",
+  Key="Ointment (250 gp)",
+  CanHaveMods=true,
+  Cost=250,
+  DisplayName="Ointment (worth 250 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for True Seeing",
     },
   },
-  DisplayName="Ointment (worth 250 gp)",
-})
-DefineEquipment({
-  Name="Onyx Gem (worth 25 gp)",
-  Cost=25,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Onyx (25 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Onyx Gem (worth 25 gp)",
+  Key="Onyx (25 gp)",
+  CanHaveMods=true,
+  Cost=25,
+  DisplayName="Onyx Gem (worth 25 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Animate Dead",
     },
   },
-  DisplayName="Onyx Gem (worth 25 gp)",
-})
-DefineEquipment({
-  Name="Onyx Gem (worth 50 gp)",
-  Cost=50,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Onyx (50 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Onyx Gem (worth 50 gp)",
+  Key="Onyx (50 gp)",
+  CanHaveMods=true,
+  Cost=50,
+  DisplayName="Onyx Gem (worth 50 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Create Undead",
     },
   },
-  DisplayName="Onyx Gem (worth 50 gp)",
-})
-DefineEquipment({
-  Name="Opal (worth 500 gp)",
-  Cost=500,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Opal (500 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Opal (worth 500 gp)",
+  Key="Opal (500 gp)",
+  CanHaveMods=true,
+  Cost=500,
+  DisplayName="Opal (worth 500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Binding",
     },
   },
-  DisplayName="Opal (worth 500 gp)",
-})
-DefineEquipment({
-  Name="Pair of Canine Statuettes (worth 50 gp)",
-  Cost=50,
+  Types={
+    "Spell Component",
+    "Consumable",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Pair of Canine Statuettes (worth 50 gp)",
   Key="Pair of Canine Statuettes (50 gp)",
-  Types={
-    "Spell Component",
-    "Spell Focus",
-  },
+  CanHaveMods=true,
+  Cost=50,
+  DisplayName="Pair of Canine Statuettes (worth 50 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Repulsion",
     },
   },
-  DisplayName="Pair of Canine Statuettes (worth 50 gp)",
-})
-DefineEquipment({
-  Name="Platinum Ring (worth 50 gp)",
-  Cost=50,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Platinum Ring (50 gp)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Platinum Ring (worth 50 gp)",
+  Key="Platinum Ring (50 gp)",
+  CanHaveMods=true,
+  Cost=50,
+  DisplayName="Platinum Ring (worth 50 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Shield Other",
     },
   },
-  DisplayName="Platinum Ring (worth 50 gp)",
-})
-DefineEquipment({
-  Name="Polished Marble (worth 5 gp)",
-  Cost=5,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Polished Marble (5 gp)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Polished Marble (worth 5 gp)",
+  Key="Polished Marble (5 gp)",
+  CanHaveMods=true,
+  Cost=5,
+  DisplayName="Polished Marble (worth 5 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Mage's Magnificent Mansion",
     },
   },
-  DisplayName="Polished Marble (worth 5 gp)",
-})
-DefineEquipment({
-  Name="Powdered Amber (worth 500 gp)",
-  Cost=500,
+  Types={
+    "Spell Component",
+    "Spell Focus",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Powdered Amber (worth 500 gp)",
   Key="Powdered Amber (500 gp)",
-  Types={
-    "Spell Component",
-    "Consumable",
-  },
+  CanHaveMods=true,
+  Cost=500,
+  DisplayName="Powdered Amber (worth 500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Sepia Snake Sigil",
     },
   },
-  DisplayName="Powdered Amber (worth 500 gp)",
-})
-DefineEquipment({
-  Name="Powdered Diamond (worth 200 gp)",
-  Cost=200,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Powdered Diamond (200 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Powdered Diamond (worth 200 gp)",
+  Key="Powdered Diamond (200 gp)",
+  CanHaveMods=true,
+  Cost=200,
+  DisplayName="Powdered Diamond (worth 200 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Glyph of Warding",
     },
   },
-  DisplayName="Powdered Diamond (worth 200 gp)",
-})
-DefineEquipment({
-  Name="Powdered Diamond (worth 400 gp)",
-  Cost=400,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Powdered Diamond (400 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Powdered Diamond (worth 400 gp)",
+  Key="Powdered Diamond (400 gp)",
+  CanHaveMods=true,
+  Cost=400,
+  DisplayName="Powdered Diamond (worth 400 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Greater Glyph of Warding",
     },
   },
-  DisplayName="Powdered Diamond (worth 400 gp)",
-})
-DefineEquipment({
-  Name="Powdered Diamond (worth 5,000 gp)",
-  Cost=5000,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Powdered Diamond (5000 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Powdered Diamond (worth 5,000 gp)",
+  Key="Powdered Diamond (5000 gp)",
+  CanHaveMods=true,
+  Cost=5000,
+  DisplayName="Powdered Diamond (worth 5,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Symbol of Death",
     },
   },
-  DisplayName="Powdered Diamond (worth 5,000 gp)",
-})
-DefineEquipment({
-  Name="Powdered Diamond and Opal (worth 1,000 gp)",
-  Cost=1000,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Powdered Diamond and Opal (1000 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Powdered Diamond and Opal (worth 1,000 gp)",
+  Key="Powdered Diamond and Opal (1000 gp)",
+  CanHaveMods=true,
+  Cost=1000,
+  DisplayName="Powdered Diamond and Opal (worth 1,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Symbol of Fear, Symbol of Sleep, or Symbol of Pain",
     },
   },
-  DisplayName="Powdered Diamond and Opal (worth 1,000 gp)",
-})
-DefineEquipment({
-  Name="Powdered Diamond and Opal (worth 5,000 gp)",
-  Cost=5000,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Powdered Diamond and Opal (5000 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Powdered Diamond and Opal (worth 5,000 gp)",
+  Key="Powdered Diamond and Opal (5000 gp)",
+  CanHaveMods=true,
+  Cost=5000,
+  DisplayName="Powdered Diamond and Opal (worth 5,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Symbol of Insanity, Symbol of Persuasion, Symbol of Stunning, or Symbol of Weakness",
     },
   },
-  DisplayName="Powdered Diamond and Opal (worth 5,000 gp)",
-})
-DefineEquipment({
-  Name="Powdered Opal (worth 5,000 gp)",
-  Cost=5000,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Powdered Opal (5000 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Powdered Opal (worth 5,000 gp)",
+  Key="Powdered Opal (5000 gp)",
+  CanHaveMods=true,
+  Cost=5000,
+  DisplayName="Powdered Opal (worth 5,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Symbol of Death",
     },
   },
-  DisplayName="Powdered Opal (worth 5,000 gp)",
-})
-DefineEquipment({
-  Name="Powdered Ruby (worth 500 gp)",
-  Cost=500,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Powdered Ruby (500 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Powdered Ruby (worth 500 gp)",
+  Key="Powdered Ruby (500 gp)",
+  CanHaveMods=true,
+  Cost=500,
+  DisplayName="Powdered Ruby (worth 500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Simulacrum",
     },
   },
-  DisplayName="Powdered Ruby (worth 500 gp)",
-})
-DefineEquipment({
-  Name="Powdered Silver (worth 25 gp)",
-  Cost=25,
-  Qualities={
-    Plural="No",
-  },
-  Weight=5,
-  Key="Powdered Silver (25 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Powdered Silver (worth 25 gp)",
+  Key="Powdered Silver (25 gp)",
+  CanHaveMods=true,
+  Cost=25,
+  DisplayName="Powdered Silver (worth 25 gp)",
+  Weight=5,
   SpecialProperties={
     {
       Format="Material Component for Bless Water or Curse Water",
     },
   },
-  DisplayName="Powdered Silver (worth 25 gp)",
-})
-DefineEquipment({
-  Name="Ruby Dust (worth 50 gp)",
-  Cost=50,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Ruby Dust (50 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Ruby Dust (worth 50 gp)",
+  Key="Ruby Dust (50 gp)",
+  CanHaveMods=true,
+  Cost=50,
+  DisplayName="Ruby Dust (worth 50 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Continual Flame",
     },
   },
-  DisplayName="Ruby Dust (worth 50 gp)",
-})
-DefineEquipment({
-  Name="Ruby Dust (worth 500 gp)",
-  Cost=500,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Ruby Dust (500 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Ruby Dust (worth 500 gp)",
+  Key="Ruby Dust (500 gp)",
+  CanHaveMods=true,
+  Cost=500,
+  DisplayName="Ruby Dust (worth 500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Forcecage",
     },
   },
-  DisplayName="Ruby Dust (worth 500 gp)",
-})
-DefineEquipment({
-  Name="Sapphire (worth 1,000 gp)",
-  Cost=1000,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Sapphire (1000 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Sapphire (worth 1,000 gp)",
+  Key="Sapphire (1000 gp)",
+  CanHaveMods=true,
+  Cost=1000,
+  DisplayName="Sapphire (worth 1,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Instant Summons",
     },
   },
-  DisplayName="Sapphire (worth 1,000 gp)",
-})
-DefineEquipment({
-  Name="Set of 4 Pieces of Ivory (worth 50 gp each)",
-  Cost=200,
+  Types={
+    "Spell Component",
+    "Consumable",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Set of 4 Pieces of Ivory (worth 50 gp each)",
   Key="Set of 4 Pieces of Ivory (200 gp)",
-  Types={
-    "Spell Component",
-    "Spell Focus",
-  },
+  CanHaveMods=true,
+  Cost=200,
+  DisplayName="Set of 4 Pieces of Ivory (worth 50 gp each)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Legend Lore",
     },
   },
-  DisplayName="Set of 4 Pieces of Ivory (worth 50 gp each)",
-})
-DefineEquipment({
-  Name="Set of Marked Bones (worth 25 gp)",
-  Cost=25,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Set of Marked Bones (25 gp)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Set of Marked Bones (worth 25 gp)",
+  Key="Set of Marked Bones (25 gp)",
+  CanHaveMods=true,
+  Cost=25,
+  DisplayName="Set of Marked Bones (worth 25 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Augury",
     },
   },
-  DisplayName="Set of Marked Bones (worth 25 gp)",
-})
-DefineEquipment({
-  Name="Set of Minature Items (worth 15 gp)",
-  Cost=15,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Set of Minature Items (15 gp)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Set of Minature Items (worth 15 gp)",
+  Key="Set of Minature Items (15 gp)",
+  CanHaveMods=true,
+  Cost=15,
+  DisplayName="Set of Minature Items (worth 15 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Mage's Magnificent Mansion",
     },
   },
-  DisplayName="Set of Minature Items (worth 15 gp)",
-})
-DefineEquipment({
-  Name="Set of Prayer Beads (worth 500 gp)",
-  Cost=500,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Set of Prayer Beads (500 gp)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Set of Prayer Beads (worth 500 gp)",
+  Key="Set of Prayer Beads (500 gp)",
+  CanHaveMods=true,
+  Cost=500,
+  DisplayName="Set of Prayer Beads (worth 500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Atonement",
     },
   },
-  DisplayName="Set of Prayer Beads (worth 500 gp)",
-})
-DefineEquipment({
-  Name="Silver Dust (worth 25 gp)",
-  Cost=25,
+  Types={
+    "Spell Component",
+    "Spell Focus",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=5,
+})
+DefineEquipment({
+  Name="Silver Dust (worth 25 gp)",
   Key="Silver Dust (25 gp)",
-  Types={
-    "Spell Component",
-    "Consumable",
-  },
+  CanHaveMods=true,
+  Cost=25,
+  DisplayName="Silver Dust (worth 25 gp)",
+  Weight=5,
   SpecialProperties={
     {
       Format="Material Component for Consecrate",
     },
   },
-  DisplayName="Silver Dust (worth 25 gp)",
-})
-DefineEquipment({
-  Name="Silver Mirror (worth 1,000 gp)",
-  Cost=1000,
+  Types={
+    "Spell Component",
+    "Consumable",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Silver Mirror (worth 1,000 gp)",
   Key="Silver Mirror (1000 gp)",
-  Types={
-    "Spell Component",
-    "Spell Focus",
-  },
+  CanHaveMods=true,
+  Cost=1000,
+  DisplayName="Silver Mirror (worth 1,000 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Scrying",
     },
   },
-  DisplayName="Silver Mirror (worth 1,000 gp)",
-})
-DefineEquipment({
-  Name="Silver Spoon (worth 5 gp)",
-  Cost=5,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Silver Spoon (5 gp)",
   Types={
     "Spell Component",
     "Spell Focus",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Silver Spoon (worth 5 gp)",
+  Key="Silver Spoon (5 gp)",
+  CanHaveMods=true,
+  Cost=5,
+  DisplayName="Silver Spoon (worth 5 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Mage's Magnificent Mansion",
     },
   },
-  DisplayName="Silver Spoon (worth 5 gp)",
-})
-DefineEquipment({
-  Name="Small Replica of Self (worth 5 gp)",
-  Cost=5,
+  Types={
+    "Spell Component",
+    "Spell Focus",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Small Replica of Self (worth 5 gp)",
   Key="Small Replica of Self (5 gp)",
-  Types={
-    "Spell Component",
-    "Consumable",
-  },
+  CanHaveMods=true,
+  Cost=5,
+  DisplayName="Small Replica of Self (worth 5 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Project Image",
     },
   },
-  DisplayName="Small Replica of Self (worth 5 gp)",
-})
-DefineEquipment({
-  Name="Special Dust (worth 50 gp)",
-  Cost=50,
-  Qualities={
-    Plural="No",
-  },
-  Weight=0,
-  Key="Special Dust (50 gp)",
   Types={
     "Spell Component",
     "Consumable",
   },
+  Qualities={
+    Plural="No",
+  },
+})
+DefineEquipment({
+  Name="Special Dust (worth 50 gp)",
+  Key="Special Dust (50 gp)",
+  CanHaveMods=true,
+  Cost=50,
+  DisplayName="Special Dust (worth 50 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Material Component for Phantom Trap",
     },
   },
-  DisplayName="Special Dust (worth 50 gp)",
-})
-DefineEquipment({
-  Name="Tiny Reliquary (worth 500 gp)",
-  Cost=500,
+  Types={
+    "Spell Component",
+    "Consumable",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Tiny Reliquary (worth 500 gp)",
   Key="Tiny Reliquary (500 gp)",
-  Types={
-    "Spell Component",
-    "Spell Focus",
-  },
+  CanHaveMods=true,
+  Cost=500,
+  DisplayName="Tiny Reliquary (worth 500 gp)",
+  Weight=0,
   SpecialProperties={
     {
       Format="Focus for Cloak of Chaos, Holy Aura, Shield of Law, or Unholy Aura",
     },
   },
-  DisplayName="Tiny Reliquary (worth 500 gp)",
-})
-DefineEquipment({
-  Name="Poison, Arsenic",
-  Cost=120,
+  Types={
+    "Spell Component",
+    "Spell Focus",
+  },
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Arsenic",
   Key="Poison (Arsenic)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Arsenic",
+  CanHaveMods=true,
+  Cost=120,
+  DisplayName="Arsenic",
+  SourcePage="p.558",
+  Weight=0,
   SpecialProperties={
     {
       Format="Ingested; Fort DC 13; Onset 10 min; Freq 1 min (4); Effect 1d2 Con dmg; Cure 1 save",
     },
   },
-  DisplayName="Arsenic",
-  SortKey="Poison, Arsenic",
-  SourcePage="p.558",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, ingested",
     ['Poison Save']="Fortitude DC 13",
@@ -6861,28 +7252,29 @@ DefineEquipment({
     ['Poison Effect']="1d2 Con damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Belladonna",
-  Cost=100,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Belladonna",
   Key="Poison (Belladonna)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Belladonna",
+  CanHaveMods=true,
+  Cost=100,
+  DisplayName="Belladonna",
+  SourcePage="p.558",
+  Weight=0,
   SpecialProperties={
     {
       Format="Ingested; Fort DC 14; Onset 10 min; Freq 1 min (6); Effect 1d2 Str dmg (plus attempt lycanthropy cure if within 1 hour); Cure 1 save",
     },
   },
-  DisplayName="Belladonna",
-  SortKey="Poison, Belladonna",
-  SourcePage="p.558",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, ingested",
     ['Poison Save']="Fortitude DC 14",
@@ -6891,28 +7283,29 @@ DefineEquipment({
     ['Poison Effect']="1d2 Str damage, target can attempt one save to cure a lycanthropy affliction contracted in the past hour",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Black Adder Venom",
-  Cost=120,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Black Adder Venom",
   Key="Poison (Black Adder Venom)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Black Adder Venom",
+  CanHaveMods=true,
+  Cost=120,
+  DisplayName="Black Adder Venom",
+  SourcePage="p.558",
+  Weight=0,
   SpecialProperties={
     {
       Format="Injury; Fort DC 11; Freq 1 rnd (6); Effect 1d2 Con dmg; Cure 1 save",
     },
   },
-  DisplayName="Black Adder Venom",
-  SortKey="Poison, Black Adder Venom",
-  SourcePage="p.558",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, injury",
     ['Poison Save']="Fortitude DC 11",
@@ -6920,28 +7313,29 @@ DefineEquipment({
     ['Poison Effect']="1d2 Con damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Black Lotus Extract",
-  Cost=4500,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Black Lotus Extract",
   Key="Poison (Black Lotus Extract)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Black Lotus Extract",
+  CanHaveMods=true,
+  Cost=4500,
+  DisplayName="Black Lotus Extract",
+  SourcePage="p.558",
+  Weight=0,
   SpecialProperties={
     {
       Format="Contact; Fort DC 20; Onset 1 min; Freq 1 rnd (6); Effect 1d6 Con dmg; Cure 2 consecutive save",
     },
   },
-  DisplayName="Black Lotus Extract",
-  SortKey="Poison, Black Lotus Extract",
-  SourcePage="p.558",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, contact",
     ['Poison Save']="Fortitude DC 20",
@@ -6950,28 +7344,29 @@ DefineEquipment({
     ['Poison Effect']="1d6 Con damage",
     ['Poison Cure']="2 consecutive saves",
   },
-})
-DefineEquipment({
-  Name="Poison, Bloodroot",
-  Cost=100,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Bloodroot",
   Key="Poison (Bloodroot)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Bloodroot",
+  CanHaveMods=true,
+  Cost=100,
+  DisplayName="Bloodroot",
+  SourcePage="p.558",
+  Weight=0,
   SpecialProperties={
     {
       Format="Injury; Fort DC 12; Onset 1 rnd; Freq 1 rnd (4); Effect 1 Con dmg and 1 Wis dmg; Cure 1 save",
     },
   },
-  DisplayName="Bloodroot",
-  SortKey="Poison, Bloodroot",
-  SourcePage="p.558",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, injury",
     ['Poison Save']="Fortitude DC 12",
@@ -6980,28 +7375,29 @@ DefineEquipment({
     ['Poison Effect']="1 Con damage and 1 Wis damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Blue Whinnis",
-  Cost=120,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Blue Whinnis",
   Key="Poison (Blue Whinnis)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Blue Whinnis",
+  CanHaveMods=true,
+  Cost=120,
+  DisplayName="Blue Whinnis",
+  SourcePage="p.558",
+  Weight=0,
   SpecialProperties={
     {
       Format="Injury; Fort DC 14; Freq 1 rnd (2); Effect 1 Con dmg/unconsciousness for 1d3 hrs; Cure 1 save",
     },
   },
-  DisplayName="Blue Whinnis",
-  SortKey="Poison, Blue Whinnis",
-  SourcePage="p.558",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, injury",
     ['Poison Save']="Fortitude DC 14",
@@ -7010,28 +7406,29 @@ DefineEquipment({
     ['Secondary Effect']="unconsciousness for 1d3 hours",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Burnt Othur Fumes",
-  Cost=2100,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Burnt Othur Fumes",
   Key="Poison (Burnt Othur Fumes)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Burnt Othur Fumes",
+  CanHaveMods=true,
+  Cost=2100,
+  DisplayName="Burnt Othur Fumes",
+  SourcePage="p.558",
+  Weight=0,
   SpecialProperties={
     {
       Format="Inhaled; Fort DC 18; Freq 1 rnd (6); Effect 1 Con drain/1d3 Con dmg; Cure 2 consecutive saves",
     },
   },
-  DisplayName="Burnt Othur Fumes",
-  SortKey="Poison, Burnt Othur Fumes",
-  SourcePage="p.558",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, inhaled",
     ['Poison Save']="Fortitude DC 18",
@@ -7040,28 +7437,29 @@ DefineEquipment({
     ['Secondary Effect']="1d3 Con damage",
     ['Poison Cure']="2 consecutive saves",
   },
-})
-DefineEquipment({
-  Name="Poison, Dark Reaver Powder",
-  Cost=800,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Dark Reaver Powder",
   Key="Poison (Dark Reaver Powder)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Dark Reaver Powder",
+  CanHaveMods=true,
+  Cost=800,
+  DisplayName="Dark Reaver Powder",
+  SourcePage="p.558",
+  Weight=0,
   SpecialProperties={
     {
       Format="Ingested; Fort DC 18; Onset 10 min; Freq 1 min (6); Effect 1d3 Con dmg and 1 Str dmg; Cure 2 consecutive saves",
     },
   },
-  DisplayName="Dark Reaver Powder",
-  SortKey="Poison, Dark Reaver Powder",
-  SourcePage="p.558",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, ingested",
     ['Poison Save']="Fortitude DC 18",
@@ -7070,28 +7468,29 @@ DefineEquipment({
     ['Poison Effect']="1d3 Con damage and 1 Str damage",
     ['Poison Cure']="2 consecutive saves",
   },
-})
-DefineEquipment({
-  Name="Poison, Deathblade",
-  Cost=1800,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Deathblade",
   Key="Poison (Deathblade)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Deathblade",
+  CanHaveMods=true,
+  Cost=1800,
+  DisplayName="Deathblade",
+  SourcePage="p.558",
+  Weight=0,
   SpecialProperties={
     {
       Format="Injury; Fort DC 20; Freq 1 rnd (6); Effect 1d3 Con dmg; Cure 2 consecutive saves",
     },
   },
-  DisplayName="Deathblade",
-  SortKey="Poison, Deathblade",
-  SourcePage="p.558",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, injury",
     ['Poison Save']="Fortitude DC 20",
@@ -7099,56 +7498,58 @@ DefineEquipment({
     ['Poison Effect']="1d3 Con damage",
     ['Poison Cure']="2 consecutive saves",
   },
-})
-DefineEquipment({
-  Name="Poison, Dragon Bile",
-  Cost=1500,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Dragon Bile",
   Key="Poison (Dragon Bile)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Dragon Bile",
+  CanHaveMods=true,
+  Cost=1500,
+  DisplayName="Dragon Bile",
+  SourcePage="p.558",
+  Weight=0,
   SpecialProperties={
     {
       Format="Contact; Fort DC 26; Freq 1 rnd (6); Effect 1d3 Str dmg; no cure",
     },
   },
-  DisplayName="Dragon Bile",
-  SortKey="Poison, Dragon Bile",
-  SourcePage="p.558",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, contact",
     ['Poison Save']="Fortitude DC 26",
     ['Poison Frequency']="1/round for 6 rounds",
     ['Poison Effect']="1d3 Str damage",
   },
-})
-DefineEquipment({
-  Name="Poison, Drow Poison",
-  Cost=75,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Drow Poison",
   Key="Poison (Drow Poison)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Drow Poison",
+  CanHaveMods=true,
+  Cost=75,
+  DisplayName="Drow Poison",
+  SourcePage="p.559",
+  Weight=0,
   SpecialProperties={
     {
       Format="Injury; Fort DC 13; Freq 1 min (2); Effect unconciousness for 1 min/unconsciousness for 2d4 hours; Cure 1 save",
     },
   },
-  DisplayName="Drow Poison",
-  SortKey="Poison, Drow Poison",
-  SourcePage="p.559",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, injury",
     ['Poison Save']="Fortitude DC 13",
@@ -7157,28 +7558,29 @@ DefineEquipment({
     ['Secondary Effect']="unconsciousness for 2d4 hours",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Giant Wasp Poison",
-  Cost=210,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Giant Wasp Poison",
   Key="Poison (Giant Wasp Poison)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Giant Wasp Poison",
+  CanHaveMods=true,
+  Cost=210,
+  DisplayName="Giant Wasp Poison",
+  SourcePage="p.559",
+  Weight=0,
   SpecialProperties={
     {
       Format="Injury; Fort DC 18; Freq 1 rnd (6); Effect 1d2 Dex dmg; Cure 1 save",
     },
   },
-  DisplayName="Giant Wasp Poison",
-  SortKey="Poison, Giant Wasp Poison",
-  SourcePage="p.559",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, injury",
     ['Poison Save']="Fortitude DC 18",
@@ -7186,28 +7588,29 @@ DefineEquipment({
     ['Poison Effect']="1d2 Dex damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Greenblood Oil",
-  Cost=100,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Greenblood Oil",
   Key="Poison (Greenblood Oil)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Greenblood Oil",
+  CanHaveMods=true,
+  Cost=100,
+  DisplayName="Greenblood Oil",
+  SourcePage="p.559",
+  Weight=0,
   SpecialProperties={
     {
       Format="Injury; Fort DC 13; Freq 1 rnd (4); Effect 1 Con dmg; Cure 1 save",
     },
   },
-  DisplayName="Greenblood Oil",
-  SortKey="Poison, Greenblood Oil",
-  SourcePage="p.559",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, injury",
     ['Poison Save']="Fortitude DC 13",
@@ -7215,28 +7618,29 @@ DefineEquipment({
     ['Poison Effect']="1 Con damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Hemlock",
-  Cost=2500,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Hemlock",
   Key="Poison (Hemlock)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Hemlock",
+  CanHaveMods=true,
+  Cost=2500,
+  DisplayName="Hemlock",
+  SourcePage="p.559",
+  Weight=0,
   SpecialProperties={
     {
       Format="Ingested; Fort DC 18; Onset 10 min; Freq 1 min (6); Effect 1d6 Dex dmg - suffocates when dex reduced to 0; Cure 2 consecutive save",
     },
   },
-  DisplayName="Hemlock",
-  SortKey="Poison, Hemlock",
-  SourcePage="p.559",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, ingested",
     ['Poison Save']="Fortitude DC 18",
@@ -7245,28 +7649,29 @@ DefineEquipment({
     ['Poison Effect']="1d6 Dex damage, creatures reduced to 0 Dexterity suffocate",
     ['Poison Cure']="2 consecutive saves",
   },
-})
-DefineEquipment({
-  Name="Poison, Id Moss",
-  Cost=125,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Id Moss",
   Key="Poison (Id Moss)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Id Moss",
+  CanHaveMods=true,
+  Cost=125,
+  DisplayName="Id Moss",
+  SourcePage="p.559",
+  Weight=0,
   SpecialProperties={
     {
       Format="Ingested; Fort DC 14; Onset 10 min; Freq 1 min (6); Effect 1d3 Int dmg; Cure 1 save",
     },
   },
-  DisplayName="Id Moss",
-  SortKey="Poison, Id Moss",
-  SourcePage="p.559",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, ingested",
     ['Poison Save']="Fortitude DC 14",
@@ -7275,28 +7680,29 @@ DefineEquipment({
     ['Poison Effect']="1d3 Int damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Insanity Mist",
-  Cost=1500,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Insanity Mist",
   Key="Poison (Insanity Mist)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Insanity Mist",
+  CanHaveMods=true,
+  Cost=1500,
+  DisplayName="Insanity Mist",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Inhaled; Fort DC 15; Freq 1 rnd (6); Effect 1d3 Wis dmg; Cure 1 save",
     },
   },
-  DisplayName="Insanity Mist",
-  SortKey="Poison, Insanity Mist",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, inhaled",
     ['Poison Save']="Fortitude DC 15",
@@ -7304,28 +7710,29 @@ DefineEquipment({
     ['Poison Effect']="1d3 Wis damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, King's Sleep",
-  Cost=5000,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, King's Sleep",
   Key="Poison (King's Sleep)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, King's Sleep",
+  CanHaveMods=true,
+  Cost=5000,
+  DisplayName="King's Sleep",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Ingested; Fort DC 19; Onset 1 day; Freq 1 day; Effect 1 Con drain; Cure 2 consecutive saves",
     },
   },
-  DisplayName="King's Sleep",
-  SortKey="Poison, King's Sleep",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, ingested",
     ['Poison Save']="Fortitude DC 19",
@@ -7334,28 +7741,29 @@ DefineEquipment({
     ['Poison Effect']="1 Con drain",
     ['Poison Cure']="2 consecutive saves",
   },
-})
-DefineEquipment({
-  Name="Poison, Large Scorpion Venom",
-  Cost=200,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Large Scorpion Venom",
   Key="Poison (Large Scorpion Venom)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Large Scorpion Venom",
+  CanHaveMods=true,
+  Cost=200,
+  DisplayName="Large Scorpion Venom",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Injury; Fort DC 17; Freq 1 rnd (6); Effect 1d2 Str dmg; Cure 1 save",
     },
   },
-  DisplayName="Large Scorpion Venom",
-  SortKey="Poison, Large Scorpion Venom",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, injury",
     ['Poison Save']="Fortitude DC 17",
@@ -7363,28 +7771,29 @@ DefineEquipment({
     ['Poison Effect']="1d2 Str damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Lich Dust",
-  Cost=400,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Lich Dust",
   Key="Poison (Lich Dust)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Lich Dust",
+  CanHaveMods=true,
+  Cost=400,
+  DisplayName="Lich Dust",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Ingested; Fort DC 17; Onset 10 min; Freq 1 min (6); Effect 1d3 Str dmg; Cure 2 consecutive saves",
     },
   },
-  DisplayName="Lich Dust",
-  SortKey="Poison, Lich Dust",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, ingested",
     ['Poison Save']="Fortitude DC 17",
@@ -7393,28 +7802,29 @@ DefineEquipment({
     ['Poison Effect']="1d3 Str damage",
     ['Poison Cure']="2 consecutive saves",
   },
-})
-DefineEquipment({
-  Name="Poison, Malyass Root Paste",
-  Cost=250,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Malyass Root Paste",
   Key="Poison (Malyass Root Paste)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Malyass Root Paste",
+  CanHaveMods=true,
+  Cost=250,
+  DisplayName="Malyass Root Paste",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Contact; Fort DC 16; Onset 1 min; Freq 1 min (6); Effect 1d2 Dex dmg; Cure 1 save",
     },
   },
-  DisplayName="Malyass Root Paste",
-  SortKey="Poison, Malyass Root Paste",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, contact",
     ['Poison Save']="Fortitude DC 16",
@@ -7423,28 +7833,29 @@ DefineEquipment({
     ['Poison Effect']="1d2 Dex damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Medium Spider Venom",
-  Cost=150,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Medium Spider Venom",
   Key="Poison (Medium Spider Venom)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Medium Spider Venom",
+  CanHaveMods=true,
+  Cost=150,
+  DisplayName="Medium Spider Venom",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Injury; Fort DC 14; Freq 1 rnd (4); Effect 1d2 Str dmg; Cure 1 save",
     },
   },
-  DisplayName="Medium Spider Venom",
-  SortKey="Poison, Medium Spider Venom",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, injury",
     ['Poison Save']="Fortitude DC 14",
@@ -7452,28 +7863,29 @@ DefineEquipment({
     ['Poison Effect']="1d2 Str damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Nightmare Vapor",
-  Cost=1800,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Nightmare Vapor",
   Key="Poison (Nightmare Vapor)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Nightmare Vapor",
+  CanHaveMods=true,
+  Cost=1800,
+  DisplayName="Nightmare Vapor",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Inhaled; Fort DC 20; Freq 1 rnd (6); Effect 1 Wis dmg confused for 1 rnd; Cure 2 consecutive saves",
     },
   },
-  DisplayName="Nightmare Vapor",
-  SortKey="Poison, Nightmare Vapor",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, inhaled",
     ['Poison Save']="Fortitude DC 20",
@@ -7481,28 +7893,29 @@ DefineEquipment({
     ['Poison Effect']="1 Wis damage and confused for 1 round",
     ['Poison Cure']="2 consecutive saves",
   },
-})
-DefineEquipment({
-  Name="Poison, Nitharit",
-  Cost=650,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Nitharit",
   Key="Poison (Nitharit)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Nitharit",
+  CanHaveMods=true,
+  Cost=650,
+  DisplayName="Nitharit",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Contact; Fort DC 13; Onset 1 min; Freq 1 min (6); Effect 1d3 Con dmg; Cure 1 save",
     },
   },
-  DisplayName="Nitharit",
-  SortKey="Poison, Nitharit",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, contact",
     ['Poison Save']="Fortitude DC 13",
@@ -7511,28 +7924,29 @@ DefineEquipment({
     ['Poison Effect']="1d3 Con damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Oil of Taggit",
-  Cost=90,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Oil of Taggit",
   Key="Poison (Oil of Taggit)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Oil of Taggit",
+  CanHaveMods=true,
+  Cost=90,
+  DisplayName="Oil of Taggit",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Ingested; Fort DC 15; Onset 1 min; Effect unconsciousness for 1d3 hours; Cure 1 save",
     },
   },
-  DisplayName="Oil of Taggit",
-  SortKey="Poison, Oil of Taggit",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, ingested",
     ['Poison Save']="Fortitude DC 15",
@@ -7540,28 +7954,29 @@ DefineEquipment({
     ['Poison Effect']="unconsciousness for 1d3 hours",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Purple Worm Poison",
-  Cost=700,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Purple Worm Poison",
   Key="Poison (Purple Worm Poison)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Purple Worm Poison",
+  CanHaveMods=true,
+  Cost=700,
+  DisplayName="Purple Worm Poison",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Injury; Fort DC 24; Freq 1 rnd (6); Effect 1d3 Str dmg; Cure 2 consecutive saves",
     },
   },
-  DisplayName="Purple Worm Poison",
-  SortKey="Poison, Purple Worm Poison",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, injury",
     ['Poison Save']="Fortitude DC 24",
@@ -7569,28 +7984,29 @@ DefineEquipment({
     ['Poison Effect']="1d3 Str damage",
     ['Poison Cure']="2 consecutive saves",
   },
-})
-DefineEquipment({
-  Name="Poison, Sassone Leaf Residue",
-  Cost=300,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Sassone Leaf Residue",
   Key="Poison (Sassone Leaf Residue)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Sassone Leaf Residue",
+  CanHaveMods=true,
+  Cost=300,
+  DisplayName="Sassone Leaf Residue",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Contact; Fort DC 16; Onset 1 min; Freq 1 min (6); Effect 2d12 hp dmg/1 Con dmg; Cure 1 save",
     },
   },
-  DisplayName="Sassone Leaf Residue",
-  SortKey="Poison, Sassone Leaf Residue",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, contact",
     ['Poison Save']="Fortitude DC 16",
@@ -7600,28 +8016,29 @@ DefineEquipment({
     ['Secondary Effect']="1 Con damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Shadow Essence",
-  Cost=250,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Shadow Essence",
   Key="Poison (Shadow Essence)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Shadow Essence",
+  CanHaveMods=true,
+  Cost=250,
+  DisplayName="Shadow Essence",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Inhaled; Fort DC 17;  Freq 1 rnd (6); Effect 1 Str drain/1d2 Str dmg; Cure 1 save",
     },
   },
-  DisplayName="Shadow Essence",
-  SortKey="Poison, Shadow Essence",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, injury",
     ['Poison Save']="Fortitude DC 17",
@@ -7630,28 +8047,29 @@ DefineEquipment({
     ['Secondary Effect']="1d2 Str damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Small Centipede Poison",
-  Cost=90,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Small Centipede Poison",
   Key="Poison (Small Centipede Poison)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Small Centipede Poison",
+  CanHaveMods=true,
+  Cost=90,
+  DisplayName="Small Centipede Poison",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Injury; Fort DC 11; Freq 1 rnd (4); Effect 1 Dex dmg; Cure 1 save",
     },
   },
-  DisplayName="Small Centipede Poison",
-  SortKey="Poison, Small Centipede Poison",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, injury",
     ['Poison Save']="Fortitude DC 11",
@@ -7659,28 +8077,29 @@ DefineEquipment({
     ['Poison Effect']="1 Dex damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Striped Toadstool",
-  Cost=180,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Striped Toadstool",
   Key="Poison (Striped Toadstool)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Striped Toadstool",
+  CanHaveMods=true,
+  Cost=180,
+  DisplayName="Striped Toadstool",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Ingested; Fort DC 11; Onset 10 min; Freq 1 min (4); Effect 1d3 Wis dmg and 1 Int dmg; Cure 1 save",
     },
   },
-  DisplayName="Striped Toadstool",
-  SortKey="Poison, Striped Toadstool",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, ingested",
     ['Poison Save']="Fortitude DC 11",
@@ -7689,28 +8108,29 @@ DefineEquipment({
     ['Poison Effect']="1d3 Wis damage and 1 Int damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Tears of Death",
-  Cost=6500,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Tears of Death",
   Key="Poison (Tears of Death)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Tears of Death",
+  CanHaveMods=true,
+  Cost=6500,
+  DisplayName="Tears of Death",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Contact; Fort DC 22; Onset: 1 min; Freq 1 min (6); Effect 1d6 Con dmg and paralyzed for 1 minute; Cure none",
     },
   },
-  DisplayName="Tears of Death",
-  SortKey="Poison, Tears of Death",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, contact",
     ['Poison Save']="Fortitude DC 22",
@@ -7718,28 +8138,29 @@ DefineEquipment({
     ['Poison Frequency']="1/minute for 6 minutes",
     ['Poison Effect']="1d6 Con damage and paralyzed for 1 minute",
   },
-})
-DefineEquipment({
-  Name="Poison, Terinav Root",
-  Cost=400,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Terinav Root",
   Key="Poison (Terinav Root)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Terinav Root",
+  CanHaveMods=true,
+  Cost=400,
+  DisplayName="Terinav Root",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Contact; Fort DC 16; Onset 1 min; Freq 1 min (6); Effect 1d3 Dex dmg; Cure 1 save",
     },
   },
-  DisplayName="Terinav Root",
-  SortKey="Poison, Terinav Root",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, contact",
     ['Poison Save']="Fortitude DC 16",
@@ -7748,28 +8169,29 @@ DefineEquipment({
     ['Poison Effect']="1d3 Dex damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Ungol Dust",
-  Cost=1000,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Ungol Dust",
   Key="Poison (Ungol Dust)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Ungol Dust",
+  CanHaveMods=true,
+  Cost=1000,
+  DisplayName="Ungol Dust",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Inhaled; Fort DC 15; Freq 1 rnd (4); Effect 1 Cha drain/1d2 Cha dmg; Cure 1 save",
     },
   },
-  DisplayName="Ungol Dust",
-  SortKey="Poison, Ungol Dust",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, inhaled",
     ['Poison Save']="Fortitude DC 15",
@@ -7778,28 +8200,29 @@ DefineEquipment({
     ['Secondary Effect']="1d2 Cha damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Wolfsbane",
-  Cost=500,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Wolfsbane",
   Key="Poison (Wolfsbane)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Wolfsbane",
+  CanHaveMods=true,
+  Cost=500,
+  DisplayName="Wolfsbane",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Ingested; Fort DC 16; Onset 10 min; Freq 1 min (6); Effect 1d3 Con dmg; Cure 1 save",
     },
   },
-  DisplayName="Wolfsbane",
-  SortKey="Poison, Wolfsbane",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, ingested",
     ['Poison Save']="Fortitude DC 16",
@@ -7808,33 +8231,37 @@ DefineEquipment({
     ['Poison Effect']="1d3 Con damage",
     ['Poison Cure']="1 save",
   },
-})
-DefineEquipment({
-  Name="Poison, Wyvern Poison",
-  Cost=3000,
   Qualities={
     Plural="No",
   },
-  Weight=0,
+})
+DefineEquipment({
+  Name="Poison, Wyvern Poison",
   Key="Poison (Wyvern Poison)",
-  Types={
-    "Goods",
-    "Poison",
-    "Consumable",
-  },
+  SortKey="Poison, Wyvern Poison",
+  CanHaveMods=true,
+  Cost=3000,
+  DisplayName="Wyvern Poison",
+  SourcePage="p.560",
+  Weight=0,
   SpecialProperties={
     {
       Format="Injury; Fort DC 17; Freq 1 rnd (6); Effect 1d4 Con dmg; Cure 2 consecutive saves",
     },
   },
-  DisplayName="Wyvern Poison",
-  SortKey="Poison, Wyvern Poison",
-  SourcePage="p.560",
+  Types={
+    "Goods",
+    "Poison",
+    "Consumable",
+  },
   Info={
     ['Poison Type']="poison, injury",
     ['Poison Save']="Fortitude DC 17",
     ['Poison Frequency']="1/round for 6 rounds",
     ['Poison Effect']="1d4 Con damage",
     ['Poison Cure']="2 consecutive saves",
+  },
+  Qualities={
+    Plural="No",
   },
 })

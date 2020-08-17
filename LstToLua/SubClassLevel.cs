@@ -1,22 +1,22 @@
 ﻿namespace Primordially.LstToLua
 {
-    internal class SubClassLevel : ClassOrClassLevel
+    internal class SubClassLevel : LuaObject
     {
         public string Level { get; }
 
         public SubClassLevel(string level)
         {
+            AddPropertyDefinitions(() => new[]
+            {
+                CommonProperties.Abilities,
+                CommonProperties.Conditions,
+            });
             Level = level;
-        }
-
-        public override void AddField(TextSpan field)
-        {
-            base.AddField(field);
         }
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteKeyValue("Level", Level);
+            output.WriteProperty("Level", Level);
             base.DumpMembers(output);
         }
     }

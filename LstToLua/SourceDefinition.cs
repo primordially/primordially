@@ -23,8 +23,6 @@ namespace Primordially.LstToLua
 
         public static SourceDefinition Parse(IReadOnlyList<TextSpan> fields)
         {
-            //SOURCELONG: Core Rulebook    SOURCESHORT: CR SOURCEWEB:http://paizo.com/store/downloads/pathfinder/pathfinderRPG/v5748btpy88yj	SOURCEDATE:2009-08
-
             string? sourceLong = null;
             string? sourceShort = null;
             string? sourceWeb = null;
@@ -58,10 +56,10 @@ namespace Primordially.LstToLua
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteKeyValue("SourceLong", SourceLong);
-            output.WriteKeyValue("SourceShort", SourceShort);
-            output.WriteKeyValue("SourceWeb", SourceWeb);
-            output.WriteKeyValue("SourceDate", SourceDate);
+            output.WriteProperty("SourceLong", SourceLong);
+            output.WriteProperty("SourceShort", SourceShort);
+            output.WriteProperty("SourceWeb", SourceWeb);
+            output.WriteProperty("SourceDate", SourceDate);
             base.DumpMembers(output);
         }
     }

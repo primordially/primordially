@@ -7,11 +7,6 @@ namespace Primordially.LstToLua
     {
         public string Format { get; }
         public List<Formula> Arguments { get; }
-        public FormattedString(string format, List<string> args)
-        {
-            Format = format;
-            Arguments = args.Select(a => new Formula(a)).ToList();
-        }
 
         public FormattedString(TextSpan value)
         {
@@ -32,8 +27,8 @@ namespace Primordially.LstToLua
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteKeyValue("Format", Format);
-            output.WriteListValue("Arguments", Arguments);
+            output.WriteProperty("Format", Format);
+            output.WriteProperty("Arguments", Arguments);
             base.DumpMembers(output);
         }
     }

@@ -1,14 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using Primordially.LstToLua.Conditions;
 
 namespace Primordially.LstToLua
 {
-    internal class SpellList : ConditionalObject
+    internal class SpellList : LuaObject
     {
         public SpellList(SpellListKind kind, string name)
         {
+            AddPropertyDefinitions(() => new []
+            {
+                CommonProperties.Conditions,
+            });
             Kind = kind;
             Name = name;
         }
@@ -19,9 +21,9 @@ namespace Primordially.LstToLua
 
         protected override void DumpMembers(LuaTextWriter output)
         {
-            output.WriteKeyValue("Kind", Kind.ToString());
-            output.WriteKeyValue("Name", Name);
-            output.WriteListValue("Levels", Levels);
+            output.WriteProperty("Kind", Kind.ToString());
+            output.WriteProperty("Name", Name);
+            output.WriteProperty("Levels", Levels);
             base.DumpMembers(output);
         }
 
@@ -46,15 +48,15 @@ namespace Primordially.LstToLua
                     currentList = spellLists.GetOrAdd(name, () => new SpellList(kind, name));
                     currentLevel = Helpers.ParseInt(levelStr);
                 }
-                else if (Condition.TryParse(part, out var condition) && currentList != null)
+                else if (part.StartsWith("PRE") && currentList != null)
                 {
-                    currentList.Conditions.Add(condition);
+                    currentList.AddField(part);
                 }
                 else
                 {
                     if (!currentLevel.HasValue || currentList == null)
                     {
-                        throw new ParseFailedException(part, "Unable to parse SPELLLEVEL");
+                        throw new ParseFailedException(part, "Unable to parse SPELLLEVEL or SPELLKNOWN");
                     }
                     var spells = part.Split(',').Select(s => s.Value);
                     var level = new SpellListLevel(currentLevel.Value);
@@ -64,11 +66,6 @@ namespace Primordially.LstToLua
             }
 
             return spellLists.Values.ToList();
-        }
-
-        public override void AddField(TextSpan field)
-        {
-            throw new NotSupportedException();
         }
     }
 }

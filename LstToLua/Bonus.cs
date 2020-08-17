@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Primordially.LstToLua.Conditions;
 
 namespace Primordially.LstToLua
 {
-    internal class Bonus : ConditionalObject
+    internal class Bonus : LuaObject
     {
-        public Bonus(string category, IReadOnlyList<string> variables, BonusType? type, string formula)
+        public virtual bool IsEquipment => false;
+        public Bonus(TextSpan value)
         {
-            Category = category;
-            Variables = variables;
-            Type = type;
-            Formula = formula;
-        }
+            AddPropertyDefinitions(() => new[]
+            {
+                IsEquipment ? CommonProperties.ConditionForEquipment : CommonProperties.Conditions,
+            });
 
-        public static Bonus Parse(TextSpan value, bool isEquipment = false)
-        {
             if (!value.TryRemoveInfix("|", out var category, out value))
             {
                 throw new ParseFailedException(value, "Unable to parse bonus.");
@@ -26,80 +23,72 @@ namespace Primordially.LstToLua
                 throw new ParseFailedException(value, "Unable to parse bonus.");
             }
 
-            string? formula = null;
-            BonusType? type = null;
-            List<Condition> conditions = new List<Condition>();
-
+            Category = category.Value;
             foreach (var part in value.Split('|'))
             {
-                if (BonusType.TryParse(part, out var t))
-                {
-                    type = t;
-                    continue;
-                }
-
-                if (Condition.TryParse(part, isEquipment, out var condition))
-                {
-                    conditions.Add(condition);
-                    continue;
-                }
-
-                if (formula != null)
-                {
-                    throw new ParseFailedException(value, "Unable to parse bonus.");
-                }
-
-                formula = part.Value;
-            }
-
-            if (formula == null)
-            {
-                formula = "%CHOICEVALUE";
+                // This is fine, Provided that the only inheritor is EquipmentBonus
+                // and it only overrides the IsEquipment property
+                // ReSharper disable once VirtualMemberCallInConstructor
+                AddField(part);
             }
             
-            var variables = variableSpan.Split(',').Select(t => t.Value).ToList();
-
-            if (category.Value == "ITEMCOST")
+            Formula ??= "%CHOICEVALUE";
+            switch (Category)
             {
-                variables.Clear();
-                variables.Add("Cost");
-                if (!variableSpan.TryRemovePrefix("TYPE.", out var types))
-                {
-                    throw new ParseFailedException(value, "Unable to parse bonus.");
-                }
-
-                var allTypes = types.Value.Split('.').Select(t => $"item.IsType(\"{t}\")").ToList();
-                conditions.Add(new EquipmentTypeCondition(false, allTypes.Count, allTypes));
+                case "ITEMCOST":
+                    Variables.Add("Cost");
+                    if (!variableSpan.TryRemovePrefix("TYPE.", out var types))
+                    {
+                        throw new ParseFailedException(value, "Unable to parse bonus.");
+                    }
+                    var allTypes = types.Value.Split('.').Select(t => $"item.IsType(\"{t}\")").ToList();
+                    Properties.GetList<Condition>("Conditions")
+                        .Add(new EquipmentTypeCondition(false, allTypes.Count, allTypes));
+                    break;
+                default:
+                    Variables.AddRange(variableSpan.Value.Split(','));
+                    break;
             }
-
-            var result = new Bonus(category.Value, variables, type, formula);
-            foreach (var condition in conditions)
-                result.Conditions.Add(condition);
-            return result;
         }
 
-        public string Category { get; }
-        public IReadOnlyList<string> Variables { get; }
-        public BonusType? Type { get; }
-        public Formula? Formula { get; }
-
-        protected override void DumpMembers(LuaTextWriter output)
+        public string? Category
         {
-            output.WriteKeyValue("Category", Category);
-            output.WriteListValue("Variables", Variables);
-            output.WriteKeyValue("Formula", Formula);
-            if (Type != null)
-            {
-                output.Write("Type=");
-                Type.Dump(output);
-                output.Write(",\n");
-            }
-            base.DumpMembers(output);
+            get => Get<string>(nameof(Category));
+            set => Set(nameof(Category), value);
+        }
+
+        public List<string> Variables => Properties.GetList<string>(nameof(Variables));
+
+        public Formula? Formula
+        {
+            get => Get<Formula>(nameof(Formula));
+            set => Set(nameof(Formula), value);
+        }
+
+        public BonusType? Type
+        {
+            get => Get<BonusType>(nameof(Type));
+            set => Set(nameof(Type), value);
         }
 
         public override void AddField(TextSpan field)
         {
-            throw new NotSupportedException();
+            if (BonusType.TryParse(field, out var t))
+            {
+                Type = t;
+                return;
+            }
+            base.AddField(field);
+        }
+
+        protected override void UnknownField(TextSpan field)
+        {
+            if (Formula == null)
+            {
+                Formula = field.Value;
+                return;
+            }
+            base.UnknownField(field);
         }
     }
 }

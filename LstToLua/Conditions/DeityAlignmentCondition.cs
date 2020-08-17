@@ -3,11 +3,11 @@ using System.Linq;
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class DietyAlignmentCondition : Condition
+    internal class DeityAlignmentCondition : Condition
     {
         public IReadOnlyList<string> Alignments { get; }
 
-        private DietyAlignmentCondition(bool invert, List<string> alignments) : base(invert)
+        private DeityAlignmentCondition(bool invert, List<string> alignments) : base(invert)
         {
             Alignments = alignments;
         }
@@ -15,7 +15,7 @@ namespace Primordially.LstToLua.Conditions
         public static Condition Parse(TextSpan textSpan, bool invert)
         {
             var alignments = textSpan.Split(',').Select(s => s.Value).ToList();
-            return new DietyAlignmentCondition(invert, alignments);
+            return new DeityAlignmentCondition(invert, alignments);
         }
 
         public override void DumpCondition(LuaTextWriter output)
