@@ -187,13 +187,6 @@ namespace Primordially.LstToLua
             return levelStr;
         }
 
-        public override void Dump(LuaTextWriter output)
-        {
-            output.Write("DefineClass(");
-            base.Dump(output);
-            output.Write(")\n");
-        }
-
         protected override void DumpMembers(LuaTextWriter output)
         {
             base.DumpMembers(output);
