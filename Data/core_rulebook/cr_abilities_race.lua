@@ -27,10 +27,12 @@ DefineAbility({
     "HalflingRacialTrait",
   },
 })
+
 DefineAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
 })
+
 DefineAbility({
   Name="+2 Constitution, +2 Wisdom, -2 Charisma",
   Key="Dwarf ~ Ability Scores",
@@ -85,6 +87,7 @@ DefineAbility({
     "Racial Ability Scores",
   },
 })
+
 DefineAbility({
   Name="Medium",
   Key="Dwarf ~ Size",
@@ -107,6 +110,7 @@ DefineAbility({
     "Racial Size",
   },
 })
+
 DefineAbility({
   Name="Slow and Steady",
   Key="Dwarf ~ Speed",
@@ -138,6 +142,7 @@ DefineAbility({
     "Racial Speed",
   },
 })
+
 DefineAbility({
   Name="Darkvision",
   Key="Dwarf ~ Vision",
@@ -176,6 +181,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Defensive Training",
   Key="Dwarf ~ Defensive Training",
@@ -225,6 +231,7 @@ DefineAbility({
     "Defensive",
   },
 })
+
 DefineAbility({
   Name="Greed",
   Key="Dwarf ~ Greed",
@@ -267,6 +274,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Hatred",
   Key="Dwarf ~ Hatred",
@@ -298,6 +306,7 @@ DefineAbility({
     "Special Attack",
   },
 })
+
 DefineAbility({
   Name="Hardy",
   Key="Dwarf ~ Hardy",
@@ -360,6 +369,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Stability",
   Key="Dwarf ~ Stability",
@@ -399,6 +409,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Stonecunning",
   Key="Dwarf ~ Stonecunning",
@@ -450,6 +461,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Weapon Familiarity",
   Key="Dwarf ~ Weapon Familiarity",
@@ -495,6 +507,7 @@ DefineAbility({
     "Weapon Familiarity",
   },
 })
+
 DefineAbility({
   Name="Languages",
   Key="Dwarf ~ Languages",
@@ -532,10 +545,12 @@ DefineAbility({
     "Racial Language",
   },
 })
+
 DefineAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
 })
+
 DefineAbility({
   Name="+2 Dexterity, +2 Intelligence, -2 Constitution",
   Key="Elf ~ Ability Scores",
@@ -590,6 +605,7 @@ DefineAbility({
     "Racial Ability Scores",
   },
 })
+
 DefineAbility({
   Name="Medium",
   Key="Elf ~ Size",
@@ -612,6 +628,7 @@ DefineAbility({
     "Racial Size",
   },
 })
+
 DefineAbility({
   Name="Normal Speed",
   Key="Elf ~ Speed",
@@ -634,6 +651,7 @@ DefineAbility({
     "Racial Speed",
   },
 })
+
 DefineAbility({
   Name="Low-Light Vision",
   Key="Elf ~ Vision",
@@ -672,6 +690,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Elven Immunities",
   Key="Elf ~ Elven Immunities",
@@ -719,6 +738,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Elven Magic",
   Key="Elf ~ Elven Magic",
@@ -753,6 +773,7 @@ DefineAbility({
     "Elven Magic",
   },
 })
+
 DefineAbility({
   Name="Keen Senses",
   Key="Elf ~ Keen Senses",
@@ -795,6 +816,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Weapon Familiarity",
   Key="Elf ~ Weapon Familiarity",
@@ -833,6 +855,7 @@ DefineAbility({
     "Weapon Familiarity",
   },
 })
+
 DefineAbility({
   Name="Languages",
   Key="Elf ~ Languages",
@@ -871,10 +894,12 @@ DefineAbility({
     "Racial Language",
   },
 })
+
 DefineAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
 })
+
 DefineAbility({
   Name="+2 Constitution, +2 Charisma, -2 Strength",
   Key="Gnome ~ Ability Scores",
@@ -929,6 +954,7 @@ DefineAbility({
     "Racial Ability Scores",
   },
 })
+
 DefineAbility({
   Name="Small",
   Key="Gnome ~ Size",
@@ -951,6 +977,7 @@ DefineAbility({
     "Racial Size",
   },
 })
+
 DefineAbility({
   Name="Slow Speed",
   Key="Gnome ~ Speed",
@@ -973,6 +1000,7 @@ DefineAbility({
     "Racial Speed",
   },
 })
+
 DefineAbility({
   Name="Low-Light Vision",
   Key="Gnome ~ Vision",
@@ -1011,6 +1039,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Defensive Training",
   Key="Gnome ~ Defensive Training",
@@ -1060,6 +1089,7 @@ DefineAbility({
     "Defensive",
   },
 })
+
 DefineAbility({
   Name="Gnome Magic",
   Key="Gnome ~ Gnome Magic",
@@ -1155,6 +1185,7 @@ DefineAbility({
     "Applied Bonus",
   },
 })
+
 DefineAbility({
   Name="Hatred",
   Key="Gnome ~ Hatred",
@@ -1204,6 +1235,7 @@ DefineAbility({
     "Special Attack",
   },
 })
+
 DefineAbility({
   Name="Illusion Resistance",
   Key="Gnome ~ Illusion Resistance",
@@ -1242,6 +1274,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Keen Senses",
   Key="Gnome ~ Keen Senses",
@@ -1281,6 +1314,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Obsessive",
   Key="Gnome ~ Obsessive",
@@ -1310,6 +1344,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Weapon Familiarity",
   Key="Gnome ~ Weapon Familiarity",
@@ -1336,6 +1371,7 @@ DefineAbility({
     "Weapon Familiarity",
   },
 })
+
 DefineAbility({
   Name="Languages",
   Key="Gnome ~ Languages",
@@ -1373,6 +1409,7 @@ DefineAbility({
     "Racial Language",
   },
 })
+
 DefineAbility({
   Name="Obsessive Craft Bonus",
   Category="Internal",
@@ -1402,6 +1439,7 @@ DefineAbility({
     "Gnome Obsessive Skill Bonus",
   },
 })
+
 DefineAbility({
   Name="Obsessive Profession Bonus",
   Category="Internal",
@@ -1431,10 +1469,12 @@ DefineAbility({
     "Gnome Obsessive Skill Bonus",
   },
 })
+
 DefineAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
 })
+
 DefineAbility({
   Name="+2 to One Ability Score",
   Key="Half-Elf ~ Ability Scores",
@@ -1466,6 +1506,7 @@ DefineAbility({
     "Racial Ability Scores",
   },
 })
+
 DefineAbility({
   Name="Medium",
   Key="Half-Elf ~ Size",
@@ -1488,6 +1529,7 @@ DefineAbility({
     "Racial Size",
   },
 })
+
 DefineAbility({
   Name="Normal Speed",
   Key="Half-Elf ~ Speed",
@@ -1510,6 +1552,7 @@ DefineAbility({
     "Racial Speed",
   },
 })
+
 DefineAbility({
   Name="Low-Light Vision",
   Key="Half-Elf ~ Vision",
@@ -1547,6 +1590,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Adaptability",
   Key="Half-Elf ~ Adaptability",
@@ -1576,6 +1620,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Elf Blood",
   Key="Half-Elf ~ Elf Blood",
@@ -1597,6 +1642,7 @@ DefineAbility({
     "Special Quality",
   },
 })
+
 DefineAbility({
   Name="Elven Immunities",
   Key="Half-Elf ~ Elven Immunities",
@@ -1644,6 +1690,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Keen Senses",
   Key="Half-Elf ~ Keen Senses",
@@ -1686,6 +1733,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Multitalented",
   Key="Half-Elf ~ Multitalented",
@@ -1715,6 +1763,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Languages",
   Key="Half-Elf ~ Languages",
@@ -1747,10 +1796,12 @@ DefineAbility({
     "Racial Language",
   },
 })
+
 DefineAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
 })
+
 DefineAbility({
   Name="+2 to One Ability Score",
   Key="Half-Orc ~ Ability Scores",
@@ -1782,6 +1833,7 @@ DefineAbility({
     "Racial Ability Scores",
   },
 })
+
 DefineAbility({
   Name="Medium",
   Key="Half-Orc ~ Size",
@@ -1804,6 +1856,7 @@ DefineAbility({
     "Racial Size",
   },
 })
+
 DefineAbility({
   Name="Normal Speed",
   Key="Half-Orc ~ Speed",
@@ -1826,6 +1879,7 @@ DefineAbility({
     "Racial Speed",
   },
 })
+
 DefineAbility({
   Name="Darkvision",
   Key="Half-Orc ~ Vision",
@@ -1864,6 +1918,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Intimidating",
   Key="Half-Orc ~ Intimidating",
@@ -1896,6 +1951,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Orc Blood",
   Key="Half-Orc ~ Orc Blood",
@@ -1917,6 +1973,7 @@ DefineAbility({
     "Special Quality",
   },
 })
+
 DefineAbility({
   Name="Orc Ferocity",
   Key="Half-Orc ~ Orc Ferocity",
@@ -1947,6 +2004,7 @@ DefineAbility({
     "Defensive",
   },
 })
+
 DefineAbility({
   Name="Weapon Familiarity",
   Key="Half-Orc ~ Weapon Familiarity",
@@ -1983,6 +2041,7 @@ DefineAbility({
     "Weapon Familiarity",
   },
 })
+
 DefineAbility({
   Name="Languages",
   Key="Half-Orc ~ Languages",
@@ -2019,10 +2078,12 @@ DefineAbility({
     "Racial Language",
   },
 })
+
 DefineAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
 })
+
 DefineAbility({
   Name="+2 Dexterity, +2 Charisma, -2 Strength",
   Key="Halfling ~ Ability Scores",
@@ -2077,6 +2138,7 @@ DefineAbility({
     "Racial Ability Scores",
   },
 })
+
 DefineAbility({
   Name="Small",
   Key="Halfling ~ Size",
@@ -2099,6 +2161,7 @@ DefineAbility({
     "Racial Size",
   },
 })
+
 DefineAbility({
   Name="Slow Speed",
   Key="Halfling ~ Speed",
@@ -2121,6 +2184,7 @@ DefineAbility({
     "Racial Speed",
   },
 })
+
 DefineAbility({
   Name="Fearless",
   Key="Halfling ~ Fearless",
@@ -2159,6 +2223,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Halfling Luck",
   Key="Halfling ~ Halfling Luck",
@@ -2191,6 +2256,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Keen Senses",
   Key="Halfling ~ Keen Senses",
@@ -2230,6 +2296,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Sure-Footed",
   Key="Halfling ~ Sure-Footed",
@@ -2263,6 +2330,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Weapon Familiarity",
   Key="Halfling ~ Weapon Familiarity",
@@ -2297,6 +2365,7 @@ DefineAbility({
     "Weapon Familiarity",
   },
 })
+
 DefineAbility({
   Name="Languages",
   Key="Halfling ~ Languages",
@@ -2332,10 +2401,12 @@ DefineAbility({
     "Racial Language",
   },
 })
+
 DefineAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
 })
+
 DefineAbility({
   Name="+2 to One Ability Score",
   Key="Human ~ Ability Scores",
@@ -2367,6 +2438,7 @@ DefineAbility({
     "Racial Ability Scores",
   },
 })
+
 DefineAbility({
   Name="Medium",
   Key="Human ~ Size",
@@ -2389,6 +2461,7 @@ DefineAbility({
     "Racial Size",
   },
 })
+
 DefineAbility({
   Name="Normal Speed",
   Key="Human ~ Speed",
@@ -2411,6 +2484,7 @@ DefineAbility({
     "Racial Speed",
   },
 })
+
 DefineAbility({
   Name="Bonus Feat",
   Key="Human ~ Bonus Feat",
@@ -2440,6 +2514,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Skilled",
   Key="Human ~ Skilled",
@@ -2469,6 +2544,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Languages",
   Key="Human ~ Languages",
@@ -2501,6 +2577,7 @@ DefineAbility({
     "Racial Language",
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2519,6 +2596,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2537,6 +2615,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2555,6 +2634,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2573,6 +2653,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2591,6 +2672,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2609,6 +2691,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2627,6 +2710,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2645,6 +2729,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2663,6 +2748,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2681,6 +2767,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2699,6 +2786,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2717,6 +2805,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2735,6 +2824,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2753,6 +2843,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2771,6 +2862,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2789,6 +2881,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2807,6 +2900,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2825,6 +2919,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2843,6 +2938,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2861,6 +2957,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2879,6 +2976,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2897,6 +2995,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2915,6 +3014,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2933,6 +3033,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2951,6 +3052,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2969,6 +3071,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -2987,6 +3090,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3005,6 +3109,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3023,6 +3128,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3041,6 +3147,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3059,6 +3166,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3077,6 +3185,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3095,6 +3204,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3113,6 +3223,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3131,6 +3242,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3149,6 +3261,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3167,6 +3280,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3185,6 +3299,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3203,6 +3318,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3221,6 +3337,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3239,6 +3356,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3257,6 +3375,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3275,6 +3394,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3293,6 +3413,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3311,6 +3432,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3343,6 +3465,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -3361,6 +3484,7 @@ ModifyAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Aberration Traits",
   Category="Special Ability",
@@ -3393,6 +3517,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Animal Traits",
   Category="Special Ability",
@@ -3422,6 +3547,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Construct Traits",
   Category="Special Ability",
@@ -3493,6 +3619,7 @@ DefineAbility({
     "No Constitution Score",
   },
 })
+
 DefineAbility({
   Name="Dragon Traits",
   Category="Special Ability",
@@ -3550,6 +3677,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Fey Traits",
   Category="Special Ability",
@@ -3587,6 +3715,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Humanoid Traits",
   Category="Special Ability",
@@ -3627,6 +3756,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Magical Beast Traits",
   Category="Special Ability",
@@ -3676,6 +3806,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Monstrous Humanoid Traits",
   Category="Special Ability",
@@ -3716,6 +3847,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Ooze Traits",
   Category="Special Ability",
@@ -3769,6 +3901,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Outsider Traits",
   Category="Special Ability",
@@ -3832,6 +3965,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Plant Traits",
   Category="Special Ability",
@@ -3873,6 +4007,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Undead Traits",
   Category="Special Ability",
@@ -3949,6 +4084,7 @@ DefineAbility({
     "No Constitution Score",
   },
 })
+
 DefineAbility({
   Name="Vermin Traits",
   Category="Special Ability",
@@ -3981,18 +4117,21 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Human Traits",
   Category="Special Ability",
   SourcePage="p.312",
   Visible=false,
 })
+
 DefineAbility({
   Name="Halfling Traits",
   Category="Special Ability",
   SourcePage="p.312",
   Visible=false,
 })
+
 DefineAbility({
   Name="Good Traits",
   Category="Special Ability",
@@ -4008,6 +4147,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Goblinoid Traits",
   Category="Special Ability",
@@ -4017,18 +4157,21 @@ DefineAbility({
     "Stealth",
   },
 })
+
 DefineAbility({
   Name="Gnome Traits",
   Category="Special Ability",
   SourcePage="p.312",
   Visible=false,
 })
+
 DefineAbility({
   Name="Gnoll Traits",
   Category="Special Ability",
   SourcePage="p.155",
   Visible=false,
 })
+
 DefineAbility({
   Name="Giant Traits",
   Category="Special Ability",
@@ -4053,6 +4196,7 @@ DefineAbility({
     "Perception",
   },
 })
+
 DefineAbility({
   Name="Fire Traits",
   Category="Special Ability",
@@ -4069,12 +4213,14 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Extraplanar Traits",
   Category="Special Ability",
   SourcePage="p.312",
   Visible=false,
 })
+
 DefineAbility({
   Name="Evil Traits",
   Category="Special Ability",
@@ -4090,12 +4236,14 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Elf Traits",
   Category="Special Ability",
   SourcePage="p.311",
   Visible=false,
 })
+
 DefineAbility({
   Name="Elemental Traits",
   Category="Special Ability",
@@ -4123,18 +4271,21 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Earth Traits",
   Category="Special Ability",
   SourcePage="p.311",
   Visible=false,
 })
+
 DefineAbility({
   Name="Dwarf Traits",
   Category="Special Ability",
   SourcePage="p.311",
   Visible=false,
 })
+
 DefineAbility({
   Name="Devil Traits",
   Category="Special Ability",
@@ -4193,6 +4344,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Demon Traits",
   Category="Special Ability",
@@ -4252,6 +4404,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Cold Traits",
   Category="Special Ability",
@@ -4268,6 +4421,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Chaotic Traits",
   Category="Special Ability",
@@ -4283,6 +4437,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Azata Traits",
   Category="Special Ability",
@@ -4325,6 +4480,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Archon Traits",
   Category="Special Ability",
@@ -4370,6 +4526,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Aquatic Traits",
   Category="Special Ability",
@@ -4379,6 +4536,7 @@ DefineAbility({
     "Swim",
   },
 })
+
 DefineAbility({
   Name="Angel Traits",
   Category="Special Ability",
@@ -4437,6 +4595,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Air Traits",
   Category="Special Ability",
@@ -4446,6 +4605,7 @@ DefineAbility({
     "Fly",
   },
 })
+
 DefineAbility({
   Name="Incorporeal Traits",
   Category="Special Ability",
@@ -4509,12 +4669,14 @@ DefineAbility({
     "No Strength Score",
   },
 })
+
 DefineAbility({
   Name="Water Traits",
   Category="Special Ability",
   SourcePage="p.313",
   Visible=false,
 })
+
 DefineAbility({
   Name="Swarm Traits",
   Category="Special Ability",
@@ -4544,18 +4706,21 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shapechanger Traits",
   Category="Special Ability",
   SourcePage="p.312",
   Visible=false,
 })
+
 DefineAbility({
   Name="Reptilian Traits",
   Category="Special Ability",
   SourcePage="p.312",
   Visible=false,
 })
+
 DefineAbility({
   Name="Orc Traits",
   Category="Special Ability",
@@ -4593,6 +4758,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Oni Traits",
   Category="Special Ability",
@@ -4611,12 +4777,14 @@ DefineAbility({
     "Native",
   },
 })
+
 DefineAbility({
   Name="Native Traits",
   Category="Special Ability",
   SourcePage="p.312",
   Visible=false,
 })
+
 DefineAbility({
   Name="Lawful Traits",
   Category="Special Ability",
@@ -4632,6 +4800,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Mindless Traits",
   Category="Special Ability",
@@ -4656,6 +4825,7 @@ DefineAbility({
     "No Intelligence Score",
   },
 })
+
 DefineAbility({
   Name="Clockwork Traits",
   Category="Special Ability",
@@ -4673,10 +4843,12 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Mindless",
   Category="Internal",
 })
+
 DefineAbility({
   Name="Aberration Traits Output",
   Category="Special Ability",
@@ -4690,6 +4862,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Animal Traits Output",
   Category="Special Ability",
@@ -4703,6 +4876,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Construct Traits Output",
   Category="Special Ability",
@@ -4717,6 +4891,7 @@ DefineAbility({
     "Defensive",
   },
 })
+
 DefineAbility({
   Name="Dragon Traits Output",
   Category="Special Ability",
@@ -4730,6 +4905,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Elemental Traits Output",
   Category="Special Ability",
@@ -4744,6 +4920,7 @@ DefineAbility({
     "Immunity",
   },
 })
+
 DefineAbility({
   Name="Fey Traits Output",
   Category="Special Ability",
@@ -4757,6 +4934,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Humanoid Traits Output",
   Category="Special Ability",
@@ -4770,6 +4948,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Incorporeal Traits Output",
   Category="Special Ability",
@@ -4782,6 +4961,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Magical Beast Traits Output",
   Category="Special Ability",
@@ -4795,6 +4975,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Monstrous Humanoid Traits Output",
   Category="Special Ability",
@@ -4808,6 +4989,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Ooze Traits Output",
   Category="Special Ability",
@@ -4821,6 +5003,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Outsider Traits Output",
   Category="Special Ability",
@@ -4839,6 +5022,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Plant Traits Output",
   Category="Special Ability",
@@ -4852,6 +5036,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Swarm Traits Output",
   Category="Special Ability",
@@ -4871,6 +5056,7 @@ DefineAbility({
     "Defensive",
   },
 })
+
 DefineAbility({
   Name="Undead Traits Output",
   Category="Special Ability",
@@ -4889,6 +5075,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Vermin Traits Output",
   Category="Special Ability",
@@ -4907,6 +5094,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Protective Aura",
   Key="Angel ~ Protective Aura",
@@ -4930,6 +5118,7 @@ DefineAbility({
     "Aura",
   },
 })
+
 DefineAbility({
   Name="Truespeech",
   Key="Angel ~ Truespeech",
@@ -4947,6 +5136,7 @@ DefineAbility({
     "Communicate",
   },
 })
+
 DefineAbility({
   Name="+4 racial bonus on saves against poison",
   Key="Angel ~ Save vs Poison",
@@ -4961,6 +5151,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Aura of Menace",
   Key="Archon ~ Aura of Menace",
@@ -4996,6 +5187,7 @@ DefineAbility({
     "Aura",
   },
 })
+
 DefineAbility({
   Name="Teleport",
   Key="Archon ~ Teleport",
@@ -5010,6 +5202,7 @@ DefineAbility({
     "ModifyMovement",
   },
 })
+
 DefineAbility({
   Name="Truespeech",
   Key="Archon ~ Truespeech",
@@ -5024,6 +5217,7 @@ DefineAbility({
     "Communicate",
   },
 })
+
 DefineAbility({
   Name="+4 racial bonus on saves against poison",
   Key="Archon ~ Save vs Poison",
@@ -5038,6 +5232,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Truespeech",
   Key="Azata ~ Truespeech",
@@ -5052,6 +5247,7 @@ DefineAbility({
     "Communicate",
   },
 })
+
 DefineAbility({
   Name="See in Darkness",
   Key="Devil ~ See in Darkness",
@@ -5066,6 +5262,7 @@ DefineAbility({
     "Sense",
   },
 })
+
 DefineAbility({
   Name="Change Shape",
   Key="Oni ~ Change Shape",
@@ -5085,6 +5282,7 @@ DefineAbility({
     "Supernatural",
   },
 })
+
 DefineAbility({
   Name="Devil Traits ~ Languages",
   Category="Special Ability",
@@ -5096,6 +5294,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Demon Traits ~ Languages",
   Category="Special Ability",
@@ -5107,6 +5306,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="PERMANENCY SPELL / ADD THIS FIRST TO ADD NEW EFFECTS",
   SortKey="1",
@@ -5128,6 +5328,7 @@ DefineAbility({
     "PermanencySpell",
   },
 })
+
 DefineAbility({
   Name="Permanency Spell / Arcane Sight",
   Category="Special Ability",
@@ -5164,6 +5365,7 @@ DefineAbility({
     "PermanencySpell",
   },
 })
+
 DefineAbility({
   Name="Permanency Spell / Comprehend Languages",
   Category="Special Ability",
@@ -5199,6 +5401,7 @@ DefineAbility({
     "PermanencySpell",
   },
 })
+
 DefineAbility({
   Name="Permanency Spell / Darkvision",
   Category="Special Ability",
@@ -5244,6 +5447,7 @@ DefineAbility({
     "PermanencySpell",
   },
 })
+
 DefineAbility({
   Name="Permanency Spell / Detect Magic",
   Category="Special Ability",
@@ -5279,6 +5483,7 @@ DefineAbility({
     "PermanencySpell",
   },
 })
+
 DefineAbility({
   Name="Permanency Spell / Read Magic",
   Category="Special Ability",
@@ -5314,6 +5519,7 @@ DefineAbility({
     "PermanencySpell",
   },
 })
+
 DefineAbility({
   Name="Permanency Spell / See Invisibility",
   Category="Special Ability",
@@ -5349,6 +5555,7 @@ DefineAbility({
     "PermanencySpell",
   },
 })
+
 DefineAbility({
   Name="Permanency Spell / Tongues",
   Category="Special Ability",
@@ -5384,6 +5591,7 @@ DefineAbility({
     "PermanencySpell",
   },
 })
+
 DefineAbility({
   Name="Permanency Spell / Enlarge Person",
   Category="Special Ability",
@@ -6835,6 +7043,7 @@ DefineAbility({
     "PermanencySpell",
   },
 })
+
 DefineAbility({
   Name="Permanency Spell / Magic Fang",
   Category="Special Ability",
@@ -6881,6 +7090,7 @@ DefineAbility({
     "PermanencySpell",
   },
 })
+
 DefineAbility({
   Name="Permanency Spell / Greater Magic Fang",
   Category="Special Ability",
@@ -6927,6 +7137,7 @@ DefineAbility({
     "PermanencySpell",
   },
 })
+
 DefineAbility({
   Name="Permanency Spell / Reduce Person",
   Category="Special Ability",
@@ -8392,6 +8603,7 @@ DefineAbility({
     "PermanencySpell",
   },
 })
+
 DefineAbility({
   Name="Permanency Spell / Resistance",
   Category="Special Ability",
@@ -8437,6 +8649,7 @@ DefineAbility({
     "PermanencySpell",
   },
 })
+
 DefineAbility({
   Name="Permanency Spell / Telepathic Bond",
   Category="Special Ability",
@@ -8472,6 +8685,7 @@ DefineAbility({
     "PermanencySpell",
   },
 })
+
 DefineAbility({
   Name="Animal Tricks and Training",
   Category="Special Ability",
@@ -8528,6 +8742,7 @@ DefineAbility({
     "Internal",
   },
 })
+
 DefineAbility({
   Name="+2 Strength",
   Category="Special Ability",
@@ -8550,6 +8765,7 @@ DefineAbility({
     "AbilityBonus",
   },
 })
+
 DefineAbility({
   Name="+2 Dexterity",
   Category="Special Ability",
@@ -8572,6 +8788,7 @@ DefineAbility({
     "AbilityBonus",
   },
 })
+
 DefineAbility({
   Name="+2 Constitution",
   Category="Special Ability",
@@ -8594,6 +8811,7 @@ DefineAbility({
     "AbilityBonus",
   },
 })
+
 DefineAbility({
   Name="+2 Intelligence",
   Category="Special Ability",
@@ -8616,6 +8834,7 @@ DefineAbility({
     "AbilityBonus",
   },
 })
+
 DefineAbility({
   Name="+2 Wisdom",
   Category="Special Ability",
@@ -8638,6 +8857,7 @@ DefineAbility({
     "AbilityBonus",
   },
 })
+
 DefineAbility({
   Name="+2 Charisma",
   Category="Special Ability",
@@ -8660,6 +8880,7 @@ DefineAbility({
     "AbilityBonus",
   },
 })
+
 DefineAbility({
   Name="None",
   Key="Human Ethnicity ~ None",
@@ -8668,6 +8889,7 @@ DefineAbility({
     "HumanEthnicity",
   },
 })
+
 DefineAbility({
   Name="Unknown",
   Key="Human Ethnicity ~ Unknown",
@@ -8676,6 +8898,7 @@ DefineAbility({
     "HumanEthnicity",
   },
 })
+
 DefineAbility({
   Name="None",
   Key="Region ~ None",
@@ -8684,6 +8907,7 @@ DefineAbility({
     "Region",
   },
 })
+
 DefineAbility({
   Name="Unknown",
   Key="Region ~ Unknown",
@@ -8692,6 +8916,7 @@ DefineAbility({
     "Region",
   },
 })
+
 DefineAbility({
   Name="Wildshape 2 ~ Eagle",
   Category="Internal",
@@ -8699,6 +8924,7 @@ DefineAbility({
     Fly=60,
   },
 })
+
 DefineAbility({
   Name="Wildshape 3 ~ Eagle",
   Category="Internal",
@@ -8706,6 +8932,7 @@ DefineAbility({
     Fly=80,
   },
 })
+
 DefineAbility({
   Name="Wildshape 2 ~ Gar",
   Category="Internal",
@@ -8713,6 +8940,7 @@ DefineAbility({
     Swim=60,
   },
 })
+
 DefineAbility({
   Name="Wildshape 3 ~ Squid",
   Category="Internal",
@@ -8720,3 +8948,4 @@ DefineAbility({
     Jet=240,
   },
 })
+

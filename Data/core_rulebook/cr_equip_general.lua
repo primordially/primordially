@@ -16,6 +16,7 @@ DefineEquipment({
     "Belt",
   },
 })
+
 DefineEquipment({
   Name="Girdle",
   CanHaveMods=true,
@@ -27,6 +28,7 @@ DefineEquipment({
     "Girdle",
   },
 })
+
 DefineEquipment({
   Name="Robe",
   CanHaveMods=true,
@@ -38,6 +40,7 @@ DefineEquipment({
     "Robe",
   },
 })
+
 DefineEquipment({
   Name="Vestment",
   CanHaveMods=true,
@@ -49,6 +52,7 @@ DefineEquipment({
     "Vestment",
   },
 })
+
 DefineEquipment({
   Name="Mantle",
   CanHaveMods=true,
@@ -60,6 +64,7 @@ DefineEquipment({
     "Mantle",
   },
 })
+
 DefineEquipment({
   Name="Shirt",
   CanHaveMods=true,
@@ -71,6 +76,7 @@ DefineEquipment({
     "Shirt",
   },
 })
+
 DefineEquipment({
   Name="Vest",
   CanHaveMods=true,
@@ -82,6 +88,7 @@ DefineEquipment({
     "Vest",
   },
 })
+
 DefineEquipment({
   Name="Eye Lenses",
   CanHaveMods=true,
@@ -93,6 +100,7 @@ DefineEquipment({
     "Eyegear",
   },
 })
+
 DefineEquipment({
   Name="Goggles",
   CanHaveMods=true,
@@ -104,6 +112,7 @@ DefineEquipment({
     "Goggles",
   },
 })
+
 DefineEquipment({
   Name="Boots",
   CanHaveMods=true,
@@ -119,6 +128,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Shoes",
   CanHaveMods=true,
@@ -134,6 +144,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Slippers",
   CanHaveMods=true,
@@ -149,6 +160,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Gauntlets",
   CanHaveMods=true,
@@ -164,6 +176,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Gloves",
   CanHaveMods=true,
@@ -179,6 +192,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Circlet",
   CanHaveMods=true,
@@ -190,6 +204,7 @@ DefineEquipment({
     "Circlet",
   },
 })
+
 DefineEquipment({
   Name="Crown",
   CanHaveMods=true,
@@ -201,6 +216,7 @@ DefineEquipment({
     "Crown",
   },
 })
+
 DefineEquipment({
   Name="Hat",
   CanHaveMods=true,
@@ -212,6 +228,7 @@ DefineEquipment({
     "Hat",
   },
 })
+
 DefineEquipment({
   Name="Helmet",
   CanHaveMods=true,
@@ -223,6 +240,7 @@ DefineEquipment({
     "Helm",
   },
 })
+
 DefineEquipment({
   Name="Mask",
   CanHaveMods=true,
@@ -234,6 +252,7 @@ DefineEquipment({
     "Mask",
   },
 })
+
 DefineEquipment({
   Name="Headband",
   CanHaveMods=true,
@@ -244,6 +263,7 @@ DefineEquipment({
     "Headband",
   },
 })
+
 DefineEquipment({
   Name="Phylactery",
   CanHaveMods=true,
@@ -255,6 +275,7 @@ DefineEquipment({
     "Phylactery",
   },
 })
+
 DefineEquipment({
   Name="Amulet",
   CanHaveMods=true,
@@ -266,6 +287,7 @@ DefineEquipment({
     "Amulet",
   },
 })
+
 DefineEquipment({
   Name="Brooch",
   CanHaveMods=true,
@@ -277,6 +299,7 @@ DefineEquipment({
     "Brooch",
   },
 })
+
 DefineEquipment({
   Name="Medallion",
   CanHaveMods=true,
@@ -288,6 +311,7 @@ DefineEquipment({
     "Medallion",
   },
 })
+
 DefineEquipment({
   Name="Necklace",
   CanHaveMods=true,
@@ -299,6 +323,7 @@ DefineEquipment({
     "Necklace",
   },
 })
+
 DefineEquipment({
   Name="Periapt",
   CanHaveMods=true,
@@ -310,6 +335,7 @@ DefineEquipment({
     "Periapt",
   },
 })
+
 DefineEquipment({
   Name="Scarab",
   CanHaveMods=true,
@@ -321,6 +347,7 @@ DefineEquipment({
     "Scarab",
   },
 })
+
 DefineEquipment({
   Name="Ring",
   CanHaveMods=true,
@@ -331,6 +358,7 @@ DefineEquipment({
     "Ring",
   },
 })
+
 DefineEquipment({
   Name="Cape",
   CanHaveMods=true,
@@ -342,6 +370,7 @@ DefineEquipment({
     "Cape",
   },
 })
+
 DefineEquipment({
   Name="Cloak",
   CanHaveMods=true,
@@ -353,6 +382,7 @@ DefineEquipment({
     "Cloak",
   },
 })
+
 DefineEquipment({
   Name="Bracelets",
   CanHaveMods=true,
@@ -368,6 +398,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Bracers",
   CanHaveMods=true,
@@ -383,6 +414,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Potion",
   CanHaveMods=true,
@@ -395,6 +427,7 @@ DefineEquipment({
     "Combat Gear",
   },
 })
+
 DefineEquipment({
   Name="Rod",
   CanHaveMods=true,
@@ -406,6 +439,7 @@ DefineEquipment({
     "Combat Gear",
   },
 })
+
 DefineEquipment({
   Name="Scroll",
   CanHaveMods=true,
@@ -418,6 +452,7 @@ DefineEquipment({
     "Combat Gear",
   },
 })
+
 DefineEquipment({
   Name="Staff",
   CanHaveMods=true,
@@ -429,6 +464,7 @@ DefineEquipment({
     "Combat Gear",
   },
 })
+
 DefineEquipment({
   Name="Wand",
   CanHaveMods=true,
@@ -440,6 +476,7 @@ DefineEquipment({
     "Combat Gear",
   },
 })
+
 DefineEquipment({
   Name="Spell Component",
   CanHaveMods=true,
@@ -451,6 +488,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Spell Focus",
   CanHaveMods=true,
@@ -462,6 +500,7 @@ DefineEquipment({
     "Focus",
   },
 })
+
 DefineEquipment({
   Name="Art",
   CanHaveMods=true,
@@ -472,6 +511,7 @@ DefineEquipment({
     "Art",
   },
 })
+
 DefineEquipment({
   Name="Gem",
   CanHaveMods=true,
@@ -482,6 +522,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Head Tattoo",
   Key="Tattoo Head",
@@ -495,6 +536,7 @@ DefineEquipment({
     "Tattoo Head",
   },
 })
+
 DefineEquipment({
   Name="Shoulder Tattoo",
   Key="Tattoo Shoulders",
@@ -508,6 +550,7 @@ DefineEquipment({
     "Tattoo Shoulders",
   },
 })
+
 DefineEquipment({
   Name="Neck Tattoo",
   Key="Tattoo Neck",
@@ -521,6 +564,7 @@ DefineEquipment({
     "Tattoo Neck",
   },
 })
+
 DefineEquipment({
   Name="Chest Tattoo",
   Key="Tattoo Chest",
@@ -534,6 +578,7 @@ DefineEquipment({
     "Tattoo Chest",
   },
 })
+
 DefineEquipment({
   Name="Body Tattoo",
   Key="Tattoo Body",
@@ -547,6 +592,7 @@ DefineEquipment({
     "Tattoo Body",
   },
 })
+
 DefineEquipment({
   Name="Belt Tattoo",
   Key="Tattoo Belt",
@@ -560,6 +606,7 @@ DefineEquipment({
     "Tattoo Belt",
   },
 })
+
 DefineEquipment({
   Name="Wrist Tattoo",
   Key="Tattoo Wrist",
@@ -573,6 +620,7 @@ DefineEquipment({
     "Tattoo Wrist",
   },
 })
+
 DefineEquipment({
   Name="Hand Tattoo",
   Key="Tattoo Hands",
@@ -586,6 +634,7 @@ DefineEquipment({
     "Tattoo Hands",
   },
 })
+
 DefineEquipment({
   Name="Ring Tattoo",
   Key="Tattoo Ring",
@@ -599,6 +648,7 @@ DefineEquipment({
     "Tattoo Ring",
   },
 })
+
 DefineEquipment({
   Name="Feet Tattoo",
   Key="Tattoo Feet",
@@ -612,6 +662,7 @@ DefineEquipment({
     "Tattoo Feet",
   },
 })
+
 DefineEquipment({
   Name="Pound of Wheat",
   Key="Wheat (per lb)",
@@ -625,6 +676,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Pound of Flour",
   Key="Flour (per lb)",
@@ -638,6 +690,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Chicken",
   Key="Chicken",
@@ -650,6 +703,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Pound of Iron",
   Key="Iron (per lb)",
@@ -663,6 +717,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Pound of Tobacco",
   Key="Tobacco (per lb)",
@@ -676,6 +731,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Pound of Copper",
   Key="Copper (per lb)",
@@ -689,6 +745,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Pound of Cinnamon",
   Key="Cinnamon (per lb)",
@@ -702,6 +759,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Goat",
   Key="Goat",
@@ -714,6 +772,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Pound of Ginger",
   Key="Ginger (per lb)",
@@ -727,6 +786,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Pound of Pepper",
   Key="Pepper (per lb)",
@@ -740,6 +800,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Sheep",
   Key="Sheep",
@@ -752,6 +813,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Pig",
   Key="Pig",
@@ -764,6 +826,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Square Yard of Linen",
   Key="Linen (sq yd)",
@@ -777,6 +840,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Pound of Salt",
   Key="Salt (per lb)",
@@ -790,6 +854,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Pound of Silver",
   Key="Silver (per lb)",
@@ -803,6 +868,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Square Yard of Silk",
   Key="Silk (sq yd)",
@@ -816,6 +882,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Cow",
   Key="Cow",
@@ -828,6 +895,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Pound of Saffron",
   Key="Saffron (per lb)",
@@ -841,6 +909,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Pound of Cloves",
   Key="Cloves (per lb)",
@@ -854,6 +923,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Ox",
   Key="Ox",
@@ -866,6 +936,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Pound of Gold",
   Key="Gold (per lb)",
@@ -879,6 +950,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Pound of Platinum",
   Key="Platinum (per lb)",
@@ -892,6 +964,7 @@ DefineEquipment({
     "Trade",
   },
 })
+
 DefineEquipment({
   Name="Backpack",
   Key="Backpack",
@@ -912,6 +985,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Barrel",
   Key="Barrel",
@@ -931,6 +1005,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Basket",
   Key="Basket",
@@ -950,6 +1025,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Bedroll",
   Key="Bedroll",
@@ -964,6 +1040,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Bell",
   Key="Bell",
@@ -977,6 +1054,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Blanket, Winter",
   Key="Blanket (Winter)",
@@ -992,6 +1070,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Block and Tackle",
   Key="Block and Tackle",
@@ -1005,6 +1084,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Bottle",
   Key="Bottle (Glass)",
@@ -1025,6 +1105,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Bucket",
   Key="Bucket",
@@ -1044,6 +1125,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Caltrops",
   Key="Caltrops",
@@ -1063,6 +1145,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Candle",
   Key="Candle",
@@ -1084,6 +1167,7 @@ DefineEquipment({
     Duration="1 hr.",
   },
 })
+
 DefineEquipment({
   Name="Canvas (sq. yd.)",
   Key="Canvas (sq yd)",
@@ -1100,6 +1184,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Case, Scroll",
   Key="Scroll Case",
@@ -1124,6 +1209,7 @@ DefineEquipment({
     "General",
   },
 })
+
 CopyEquipment("Scroll Case", {
   Name="Case, Map",
   Key="Map Case",
@@ -1131,6 +1217,7 @@ CopyEquipment("Scroll Case", {
   CanHaveMods=true,
   DisplayName="Map Case",
 })
+
 DefineEquipment({
   Name="Chain (10 ft.)",
   Key="Chain (10 ft)",
@@ -1150,6 +1237,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Chalk",
   Key="Chalk (1 Piece)",
@@ -1165,6 +1253,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Chest",
   Key="Chest",
@@ -1184,6 +1273,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Crowbar",
   Key="Crowbar",
@@ -1205,6 +1295,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Firewood, Per Day",
   Key="Firewood (Per Day)",
@@ -1222,6 +1313,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Fishhook",
   Key="Fishhook",
@@ -1234,6 +1326,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Fishing Net",
   Key="Fishing Net (25 sq ft)",
@@ -1247,6 +1340,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Flask",
   Key="Flask",
@@ -1270,6 +1364,7 @@ DefineEquipment({
     "Flask",
   },
 })
+
 DefineEquipment({
   Name="Flint and Steel",
   Key="Flint and Steel",
@@ -1288,6 +1383,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Grappling Hook",
   Key="Grappling Hook",
@@ -1304,6 +1400,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Hammer",
   Key="Hammer",
@@ -1320,6 +1417,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Hourglass",
   Key="Hourglass",
@@ -1333,6 +1431,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Ink, 1 oz. Vial",
   Key="Ink (1 oz Vial)",
@@ -1355,6 +1454,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Ink, Colored, 1 oz. Vial",
   Key="Ink (Color/1 oz Vial)",
@@ -1377,6 +1477,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Inkpen",
   Key="Inkpen",
@@ -1390,6 +1491,7 @@ DefineEquipment({
     "Writing",
   },
 })
+
 DefineEquipment({
   Name="Jug, Clay",
   Key="Jug (Clay)",
@@ -1414,6 +1516,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Ladder (10 ft.)",
   Key="Ladder (10 ft)",
@@ -1428,6 +1531,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Lamp",
   Key="Lamp (Common)",
@@ -1450,6 +1554,7 @@ DefineEquipment({
     Duration="6 hr./pint",
   },
 })
+
 DefineEquipment({
   Name="Lantern, Bullseye",
   Key="Lantern (Bullseye)",
@@ -1473,6 +1578,7 @@ DefineEquipment({
     Duration="6 hr./pint",
   },
 })
+
 DefineEquipment({
   Name="Lantern, Hooded",
   Key="Lantern (Hooded)",
@@ -1496,6 +1602,7 @@ DefineEquipment({
     Duration="6 hr./pint",
   },
 })
+
 DefineEquipment({
   Name="Lock, Simple",
   Key="Lock (Simple)",
@@ -1513,6 +1620,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Lock, Average",
   Key="Lock (Average)",
@@ -1530,6 +1638,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Lock, Good",
   Key="Lock (Good)",
@@ -1547,6 +1656,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Lock, Superior",
   Key="Lock (Superior)",
@@ -1564,6 +1674,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Manacles, Small",
   Key="Manacles (Small)",
@@ -1584,6 +1695,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Manacles, Medium",
   Key="Manacles (Medium)",
@@ -1604,6 +1716,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Manacles, Large",
   Key="Manacles (Large)",
@@ -1624,6 +1737,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Manacles, Huge",
   Key="Manacles (Huge)",
@@ -1644,6 +1758,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Manacles, Small Masterwork",
   Key="Manacles (Masterwork/Small)",
@@ -1665,6 +1780,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Manacles, Medium Masterwork",
   Key="Manacles (Masterwork/Medium)",
@@ -1686,6 +1802,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Manacles, Large Masterwork",
   Key="Manacles (Masterwork/Large)",
@@ -1707,6 +1824,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Manacles, Huge Masterwork",
   Key="Manacles (Masterwork/Huge)",
@@ -1728,6 +1846,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Mirror",
   Key="Mirror (Small/Steel)",
@@ -1741,6 +1860,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Mug, Clay",
   Key="Mug (Clay)",
@@ -1761,12 +1881,14 @@ DefineEquipment({
     "General",
   },
 })
+
 CopyEquipment("Mug (Clay)", {
   Name="Tankard",
   Key="Tankard",
   SortKey="Tankard",
   CanHaveMods=true,
 })
+
 DefineEquipment({
   Name="Oil, 1 Pint Flask",
   Key="Oil (1 Pint Flask)",
@@ -1808,6 +1930,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Paper (Sheet)",
   Key="Paper (Sheet)",
@@ -1827,6 +1950,7 @@ DefineEquipment({
     Single="Sheet of",
   },
 })
+
 DefineEquipment({
   Name="Parchment (Sheet)",
   Key="Parchment (Sheet)",
@@ -1846,6 +1970,7 @@ DefineEquipment({
     Single="Sheet of",
   },
 })
+
 DefineEquipment({
   Name="Pick, Miner's",
   Key="Pick (Miner's)",
@@ -1863,6 +1988,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Pitcher, Clay",
   Key="Pitcher (Clay)",
@@ -1883,6 +2009,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Piton",
   Key="Piton",
@@ -1896,6 +2023,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Pole (10 ft.)",
   Key="Pole (10 ft)",
@@ -1910,6 +2038,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Pot, Iron",
   Key="Pot (Iron)",
@@ -1930,6 +2059,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Pouch, Belt",
   Key="Pouch (Belt)",
@@ -1951,6 +2081,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Ram, Portable",
   Key="Ram (Portable)",
@@ -1968,6 +2099,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Rations, Trail",
   Key="Rations (Trail/Per Day)",
@@ -1984,6 +2116,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Rope (50 ft.)",
   Key="Rope (Hemp/50 ft)",
@@ -2003,6 +2136,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Rope, Silk (50 ft.)",
   Key="Rope (Silk/50 ft)",
@@ -2023,6 +2157,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Sack",
   Key="Sack",
@@ -2043,6 +2178,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Sealing Wax",
   Key="Sealing Wax",
@@ -2060,6 +2196,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Sewing Needle",
   Key="Sewing Needle",
@@ -2072,6 +2209,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Shovel",
   Key="Shovel",
@@ -2088,12 +2226,14 @@ DefineEquipment({
     "General",
   },
 })
+
 CopyEquipment("Shovel", {
   Name="Spade",
   Key="Spade",
   SortKey="Spade",
   CanHaveMods=true,
 })
+
 DefineEquipment({
   Name="Signal Whistle",
   Key="Signal Whistle",
@@ -2106,6 +2246,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Signet Ring",
   Key="Signet Ring",
@@ -2118,6 +2259,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Sledge",
   Key="Sledge",
@@ -2131,6 +2273,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Soap",
   Key="Soap",
@@ -2147,6 +2290,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Spyglass",
   Key="Spyglass",
@@ -2163,6 +2307,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Tent",
   Key="Tent (Small)",
@@ -2177,6 +2322,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Torch",
   Key="Torch",
@@ -2200,6 +2346,7 @@ DefineEquipment({
     Duration="1 hr.",
   },
 })
+
 DefineEquipment({
   Name="Vial",
   Key="Vial",
@@ -2225,6 +2372,7 @@ DefineEquipment({
     "Vial",
   },
 })
+
 DefineEquipment({
   Name="Water Clock",
   Key="Water Clock",
@@ -2241,6 +2389,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Waterskin",
   Key="Waterskin",
@@ -2260,6 +2409,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Waterskin, Filled",
   Key="Waterskin (Filled)",
@@ -2275,6 +2425,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Whetstone",
   Key="Whetstone",
@@ -2288,6 +2439,7 @@ DefineEquipment({
     "General",
   },
 })
+
 DefineEquipment({
   Name="Acid",
   Key="Acid (Flask)",
@@ -2329,6 +2481,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Alchemist's Fire",
   Key="Alchemist's Fire (Flask)",
@@ -2370,6 +2523,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Antitoxin",
   Key="Antitoxin (Vial)",
@@ -2396,6 +2550,7 @@ DefineEquipment({
     Single="Vial of",
   },
 })
+
 DefineEquipment({
   Name="Everburning Torch",
   Key="Everburning Torch",
@@ -2418,6 +2573,7 @@ DefineEquipment({
     Duration="Permanent",
   },
 })
+
 DefineEquipment({
   Name="Holy Water",
   Key="Holy Water (Flask)",
@@ -2458,6 +2614,7 @@ DefineEquipment({
     Single="Flask of",
   },
 })
+
 DefineEquipment({
   Name="Smokestick",
   Key="Smokestick",
@@ -2475,6 +2632,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Sunrod",
   Key="Sunrod",
@@ -2498,6 +2656,7 @@ DefineEquipment({
     Duration="6 hr.",
   },
 })
+
 DefineEquipment({
   Name="Tanglefoot Bag",
   Key="Tanglefoot Bag",
@@ -2524,6 +2683,7 @@ DefineEquipment({
     "NoAttackPenalty",
   },
 })
+
 DefineEquipment({
   Name="Thunderstone",
   Key="Thunderstone",
@@ -2551,6 +2711,7 @@ DefineEquipment({
     "NoAttackPenalty",
   },
 })
+
 DefineEquipment({
   Name="Tindertwig",
   Key="Tindertwig",
@@ -2567,6 +2728,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Alchemist's Lab",
   Key="Alchemist's Lab",
@@ -2596,6 +2758,7 @@ DefineEquipment({
     "Artisan",
   },
 })
+
 DefineEquipment({
   Name="Artisan's Tools",
   Key="Artisan's Tools",
@@ -2617,6 +2780,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Climber's Kit",
   Key="Climber's Kit",
@@ -2647,6 +2811,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Disguise Kit",
   Key="Disguise Kit",
@@ -2685,6 +2850,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Healer's Kit",
   Key="Healer's Kit",
@@ -2722,6 +2888,7 @@ DefineEquipment({
     "Masterwork",
   },
 })
+
 DefineEquipment({
   Name="Holly and Mistletoe",
   Key="Holly and Mistletoe",
@@ -2741,6 +2908,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Holy Symbol",
   Key="Holy Symbol",
@@ -2759,6 +2927,7 @@ DefineEquipment({
     "Holy Symbol",
   },
 })
+
 CopyEquipment("Holy Symbol", {
   Name="Holy Symbol, Wooden",
   Key="Holy Symbol (Wooden)",
@@ -2773,6 +2942,7 @@ CopyEquipment("Holy Symbol", {
     },
   },
 })
+
 CopyEquipment("Holy Symbol", {
   Name="Holy Symbol, Silver",
   Key="Holy Symbol (Silver)",
@@ -2787,6 +2957,7 @@ CopyEquipment("Holy Symbol", {
     },
   },
 })
+
 DefineEquipment({
   Name="Magnifying Glass",
   Key="Magnifying Glass",
@@ -2807,6 +2978,7 @@ DefineEquipment({
     "Tools",
   },
 })
+
 CopyEquipment("Harpsichord (Base)", {
   Name="Musical Instrument, Harpsichord",
   Key="Musical Instrument (Harpsichord)",
@@ -2816,6 +2988,7 @@ CopyEquipment("Harpsichord (Base)", {
   DisplayName="Harpsichord",
   Visible=true,
 })
+
 CopyEquipment("Piano (Base)", {
   Name="Musical Instrument, Piano",
   Key="Musical Instrument (Piano)",
@@ -2825,6 +2998,7 @@ CopyEquipment("Piano (Base)", {
   DisplayName="Piano",
   Visible=true,
 })
+
 CopyEquipment("Pipe Organ (Base)", {
   Name="Musical Instrument, Pipe Organ",
   Key="Musical Instrument (Pipe Organ)",
@@ -2834,6 +3008,7 @@ CopyEquipment("Pipe Organ (Base)", {
   DisplayName="Pipe Organ",
   Visible=true,
 })
+
 CopyEquipment("Bells (Base)", {
   Name="Musical Instrument, Bells",
   Key="Musical Instrument (Bells)",
@@ -2846,6 +3021,7 @@ CopyEquipment("Bells (Base)", {
     Plural="No",
   },
 })
+
 CopyEquipment("Chimes (Base)", {
   Name="Musical Instrument, Chimes",
   Key="Musical Instrument (Chimes)",
@@ -2858,6 +3034,7 @@ CopyEquipment("Chimes (Base)", {
     Plural="No",
   },
 })
+
 CopyEquipment("Drums (Base)", {
   Name="Musical Instrument, Drums",
   Key="Musical Instrument (Drums)",
@@ -2870,6 +3047,7 @@ CopyEquipment("Drums (Base)", {
     Plural="No",
   },
 })
+
 CopyEquipment("Gong (Base)", {
   Name="Musical Instrument, Gong",
   Key="Musical Instrument (Gong)",
@@ -2879,6 +3057,7 @@ CopyEquipment("Gong (Base)", {
   DisplayName="Gong",
   Visible=true,
 })
+
 CopyEquipment("Fiddle (Base)", {
   Name="Musical Instrument, Fiddle",
   Key="Musical Instrument (Fiddle)",
@@ -2888,6 +3067,7 @@ CopyEquipment("Fiddle (Base)", {
   DisplayName="Fiddle",
   Visible=true,
 })
+
 CopyEquipment("Harp (Base)", {
   Name="Musical Instrument, Harp",
   Key="Musical Instrument (Harp)",
@@ -2897,6 +3077,7 @@ CopyEquipment("Harp (Base)", {
   DisplayName="Harp",
   Visible=true,
 })
+
 CopyEquipment("Lute (Base)", {
   Name="Musical Instrument, Lute",
   Key="Musical Instrument (Lute)",
@@ -2906,6 +3087,7 @@ CopyEquipment("Lute (Base)", {
   DisplayName="Lute",
   Visible=true,
 })
+
 CopyEquipment("Mandolin (Base)", {
   Name="Musical Instrument, Mandolin",
   Key="Musical Instrument (Mandolin)",
@@ -2915,6 +3097,7 @@ CopyEquipment("Mandolin (Base)", {
   DisplayName="Mandolin",
   Visible=true,
 })
+
 CopyEquipment("Flute (Base)", {
   Name="Musical Instrument, Flute",
   Key="Musical Instrument (Flute)",
@@ -2924,6 +3107,7 @@ CopyEquipment("Flute (Base)", {
   DisplayName="Flute",
   Visible=true,
 })
+
 CopyEquipment("Pan Pipes (Base)", {
   Name="Musical Instrument, Pan Pipes",
   Key="Musical Instrument (Pan Pipes)",
@@ -2936,6 +3120,7 @@ CopyEquipment("Pan Pipes (Base)", {
     Plural="No",
   },
 })
+
 CopyEquipment("Recorder (Base)", {
   Name="Musical Instrument, Recorder",
   Key="Musical Instrument (Recorder)",
@@ -2945,6 +3130,7 @@ CopyEquipment("Recorder (Base)", {
   DisplayName="Recorder",
   Visible=true,
 })
+
 CopyEquipment("Trumpet (Base)", {
   Name="Musical Instrument, Trumpet",
   Key="Musical Instrument (Trumpet)",
@@ -2954,6 +3140,7 @@ CopyEquipment("Trumpet (Base)", {
   DisplayName="Trumpet",
   Visible=true,
 })
+
 DefineEquipment({
   Name="Scale, Merchant's",
   Key="Scale (Merchant's)",
@@ -2976,6 +3163,7 @@ DefineEquipment({
     "Tools",
   },
 })
+
 DefineEquipment({
   Name="Spell Component Pouch",
   Key="Spell Component Pouch",
@@ -2996,6 +3184,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Spellbook",
   Key="Spellbook",
@@ -3016,6 +3205,7 @@ DefineEquipment({
     "Spellbook",
   },
 })
+
 DefineEquipment({
   Name="Thieves' Tools",
   Key="Thieves' Tools",
@@ -3054,6 +3244,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Unholy Symbol",
   Key="Unholy Symbol",
@@ -3072,6 +3263,7 @@ DefineEquipment({
     "Holy Symbol",
   },
 })
+
 DefineEquipment({
   Name="Harpsichord",
   Key="Harpsichord (Base)",
@@ -3110,6 +3302,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Piano",
   Key="Piano (Base)",
@@ -3148,6 +3341,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Pipe Organ",
   Key="Pipe Organ (Base)",
@@ -3186,6 +3380,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Bells",
   Key="Bells (Base)",
@@ -3224,6 +3419,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Chimes",
   Key="Chimes (Base)",
@@ -3262,6 +3458,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Drums",
   Key="Drums (Base)",
@@ -3300,6 +3497,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Gong",
   Key="Gong (Base)",
@@ -3338,6 +3536,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Fiddle",
   Key="Fiddle (Base)",
@@ -3376,6 +3575,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Harp",
   Key="Harp (Base)",
@@ -3414,6 +3614,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Lute",
   Key="Lute (Base)",
@@ -3452,6 +3653,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Mandolin",
   Key="Mandolin (Base)",
@@ -3490,6 +3692,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Flute",
   Key="Flute (Base)",
@@ -3528,6 +3731,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Pan Pipes",
   Key="Pan Pipes (Base)",
@@ -3566,6 +3770,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Recorder",
   Key="Recorder (Base)",
@@ -3604,6 +3809,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Trumpet",
   Key="Trumpet (Base)",
@@ -3642,6 +3848,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Artisan's Outfit",
   Key="Outfit (Artisan's)",
@@ -3660,6 +3867,7 @@ DefineEquipment({
     "Starting",
   },
 })
+
 DefineEquipment({
   Name="Cleric's Vestments",
   Key="Vestments (Cleric's)",
@@ -3678,6 +3886,7 @@ DefineEquipment({
     "Starting",
   },
 })
+
 DefineEquipment({
   Name="Cold-Weather Outfit",
   Key="Outfit (Cold-Weather)",
@@ -3701,6 +3910,7 @@ DefineEquipment({
     "Starting",
   },
 })
+
 DefineEquipment({
   Name="Courtier's Outfit",
   Key="Outfit (Courtier's)",
@@ -3718,6 +3928,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Entertainer's Outfit",
   Key="Outfit (Entertainer's)",
@@ -3736,6 +3947,7 @@ DefineEquipment({
     "Starting",
   },
 })
+
 DefineEquipment({
   Name="Explorer's Outfit",
   Key="Outfit (Explorer's)",
@@ -3754,6 +3966,7 @@ DefineEquipment({
     "Starting",
   },
 })
+
 DefineEquipment({
   Name="Monk's Outfit",
   Key="Outfit (Monk's)",
@@ -3772,6 +3985,7 @@ DefineEquipment({
     "Starting",
   },
 })
+
 DefineEquipment({
   Name="Noble's Outfit",
   Key="Outfit (Noble's)",
@@ -3789,6 +4003,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Peasant's Outfit",
   Key="Outfit (Peasant's)",
@@ -3807,6 +4022,7 @@ DefineEquipment({
     "Starting",
   },
 })
+
 DefineEquipment({
   Name="Royal Outfit",
   Key="Outfit (Royal)",
@@ -3824,6 +4040,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Scholar's Outfit",
   Key="Outfit (Scholar's)",
@@ -3842,6 +4059,7 @@ DefineEquipment({
     "Starting",
   },
 })
+
 DefineEquipment({
   Name="Traveler's Outfit",
   Key="Outfit (Traveler's)",
@@ -3860,6 +4078,7 @@ DefineEquipment({
     "Starting",
   },
 })
+
 DefineEquipment({
   Name="Gallon of Ale",
   Key="Ale (Gallon)",
@@ -3875,6 +4094,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Mug of Ale",
   Key="Ale (Mug)",
@@ -3889,6 +4109,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Banquet, Per Person",
   Key="Banquet (Per Person)",
@@ -3902,6 +4123,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Loaf of Bread",
   Key="Bread (Loaf)",
@@ -3917,6 +4139,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Hunk of Cheese",
   Key="Cheese (Hunk)",
@@ -3932,6 +4155,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Inn Stay, Per Day (Good)",
   Key="Inn (Good/Per Day)",
@@ -3948,6 +4172,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Inn Stay, Per Day (Common)",
   Key="Inn (Common/Per Day)",
@@ -3964,6 +4189,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Inn Stay, Per Day (Poor)",
   Key="Inn (Poor/Per Day)",
@@ -3980,6 +4206,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Meal, Per Day (Good)",
   Key="Meals (Good/Per Day)",
@@ -3997,6 +4224,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Meal, Per Day (Common)",
   Key="Meals (Common/Per Day)",
@@ -4014,6 +4242,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Meal, Per Day (Poor)",
   Key="Meals (Poor/Per Day)",
@@ -4031,6 +4260,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Chunk of Meat",
   Key="Meat (Chunk)",
@@ -4045,6 +4275,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Pitcher of Wine",
   Key="Wine (Common/Pitcher)",
@@ -4059,6 +4290,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Bottle of Fine Wine",
   Key="Wine (Fine/Bottle)",
@@ -4073,6 +4305,7 @@ DefineEquipment({
     "Consumable",
   },
 })
+
 DefineEquipment({
   Name="Bit and Bridle",
   Key="Bit and Bridle",
@@ -4087,6 +4320,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Dog, Guard",
   Key="Dog (Guard)",
@@ -4107,6 +4341,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Dog, Riding",
   Key="Dog (Riding)",
@@ -4132,6 +4367,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Donkey",
   Key="Donkey",
@@ -4156,12 +4392,14 @@ DefineEquipment({
     "Container",
   },
 })
+
 CopyEquipment("Donkey", {
   Name="Mule",
   Key="Mule",
   SortKey="Mule",
   CanHaveMods=true,
 })
+
 DefineEquipment({
   Name="Feed",
   Key="Feed (Per Day)",
@@ -4182,6 +4420,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Heavy Horse",
   Key="Horse (Heavy)",
@@ -4207,6 +4446,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Heavy Horse (Combat Trained)",
   Key="Horse (Heavy/Combat Trained)",
@@ -4231,6 +4471,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Light Horse",
   Key="Horse (Light)",
@@ -4255,6 +4496,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Light Horse (Combat Trained)",
   Key="Horse (Light/Combat Trained)",
@@ -4279,6 +4521,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Pony",
   Key="Pony",
@@ -4303,6 +4546,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Pony (Combat Trained)",
   Key="Pony (Combat Trained)",
@@ -4327,6 +4571,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Saddle, Military",
   Key="Saddle (Military)",
@@ -4352,6 +4597,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Saddle, Pack",
   Key="Saddle (Pack)",
@@ -4377,6 +4623,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Saddle, Riding",
   Key="Saddle (Riding)",
@@ -4396,6 +4643,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Saddle, Exotic Military",
   Key="Saddle (Exotic/Military)",
@@ -4421,6 +4669,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Saddle, Exotic Pack",
   Key="Saddle (Exotic/Pack)",
@@ -4446,6 +4695,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Saddle, Exotic Riding",
   Key="Saddle (Exotic/Riding)",
@@ -4465,6 +4715,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Saddlebags",
   Key="Saddlebags",
@@ -4485,6 +4736,7 @@ DefineEquipment({
     "Resizable",
   },
 })
+
 DefineEquipment({
   Name="Stabling, Per Day",
   Key="Stabling (Per Day)",
@@ -4497,6 +4749,7 @@ DefineEquipment({
     "Mount",
   },
 })
+
 DefineEquipment({
   Name="Carriage",
   Key="Carriage",
@@ -4516,6 +4769,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Cart",
   Key="Cart",
@@ -4535,6 +4789,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Galley",
   Key="Galley",
@@ -4554,6 +4809,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Keelboat",
   Key="Keelboat",
@@ -4573,6 +4829,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Longship",
   Key="Longship",
@@ -4592,6 +4849,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Rowboat",
   Key="Rowboat",
@@ -4612,6 +4870,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Oar",
   Key="Oar",
@@ -4627,6 +4886,7 @@ DefineEquipment({
     "Extra",
   },
 })
+
 DefineEquipment({
   Name="Sailing Ship",
   Key="Sailing Ship",
@@ -4646,6 +4906,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Sled",
   Key="Sled",
@@ -4665,6 +4926,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Wagon",
   Key="Wagon",
@@ -4684,6 +4946,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Warship",
   Key="Warship",
@@ -4703,6 +4966,7 @@ DefineEquipment({
     "Container",
   },
 })
+
 DefineEquipment({
   Name="Coach Cab, Per Mile",
   Key="Coach Cab (Per Mile)",
@@ -4718,6 +4982,7 @@ DefineEquipment({
     "Transportation",
   },
 })
+
 DefineEquipment({
   Name="Trained Hireling, Per Day",
   Key="Hireling (Trained)",
@@ -4732,6 +4997,7 @@ DefineEquipment({
     "Service",
   },
 })
+
 DefineEquipment({
   Name="Untrained Hireling, Per Day",
   Key="Hireling (Untrained)",
@@ -4746,6 +5012,7 @@ DefineEquipment({
     "Service",
   },
 })
+
 DefineEquipment({
   Name="Messenger, Per Mile",
   Key="Messenger (Per Mile)",
@@ -4760,6 +5027,7 @@ DefineEquipment({
     "Service",
   },
 })
+
 DefineEquipment({
   Name="Road or Gate Toll",
   Key="Road or Gate Toll",
@@ -4775,6 +5043,7 @@ DefineEquipment({
     "Transportation",
   },
 })
+
 DefineEquipment({
   Name="Ship's Passage, Per Mile",
   Key="Ship's Passage (Per Mile)",
@@ -4790,6 +5059,7 @@ DefineEquipment({
     "Transportation",
   },
 })
+
 DefineEquipment({
   Name="Copper Piece",
   Key="Coin (Copper Piece)",
@@ -4808,6 +5078,7 @@ DefineEquipment({
     Abbreviation="cp",
   },
 })
+
 DefineEquipment({
   Name="Silver Piece",
   Key="Coin (Silver Piece)",
@@ -4826,6 +5097,7 @@ DefineEquipment({
     Abbreviation="sp",
   },
 })
+
 DefineEquipment({
   Name="Gold Piece",
   Key="Coin (Gold Piece)",
@@ -4844,6 +5116,7 @@ DefineEquipment({
     Abbreviation="gp",
   },
 })
+
 DefineEquipment({
   Name="Platinum Piece",
   Key="Coin (Platinum Piece)",
@@ -4862,6 +5135,7 @@ DefineEquipment({
     Abbreviation="pp",
   },
 })
+
 DefineEquipment({
   Name="Agate",
   Key="Agate",
@@ -4873,6 +5147,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Azurite",
   Key="Azurite",
@@ -4884,6 +5159,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Quartz, Blue",
   Key="Quartz (Blue)",
@@ -4895,6 +5171,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Hematite",
   Key="Hematite",
@@ -4906,6 +5183,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Lapis Lazuli",
   Key="Lapis Lazuli",
@@ -4917,6 +5195,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Malachite",
   Key="Malachite",
@@ -4928,6 +5207,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Obsidian",
   Key="Obsidian",
@@ -4939,6 +5219,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Rhodochrosite",
   Key="Rhodochrosite",
@@ -4950,6 +5231,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Tigereye",
   Key="Tigereye",
@@ -4961,6 +5243,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Turquoise",
   Key="Turquoise",
@@ -4972,6 +5255,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Irregular Freshwater Pearl",
   Key="Pearl (Freshwater/Irregular)",
@@ -4984,6 +5268,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Bloodstone",
   Key="Bloodstone",
@@ -4995,6 +5280,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Carnelian",
   Key="Carnelian",
@@ -5006,6 +5292,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Chalcedony",
   Key="Chalcedony",
@@ -5017,6 +5304,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Chrysoprase",
   Key="Chrysoprase",
@@ -5028,6 +5316,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Citrine",
   Key="Citrine",
@@ -5039,6 +5328,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Jasper",
   Key="Jasper",
@@ -5050,6 +5340,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Moonstone",
   Key="Moonstone",
@@ -5061,6 +5352,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Onyx",
   Key="Onyx",
@@ -5072,6 +5364,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Peridot",
   Key="Peridot",
@@ -5083,6 +5376,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Rock Crystal (Clear Quartz)",
   Key="Rock Crystal (Clear Quartz)",
@@ -5094,6 +5388,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Sard",
   Key="Sard",
@@ -5105,6 +5400,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Sardonyx",
   Key="Sardonyx",
@@ -5116,6 +5412,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Rose Quartz",
   Key="Quartz (Rose)",
@@ -5128,6 +5425,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Smoky Quartz",
   Key="Quartz (Smoky)",
@@ -5140,6 +5438,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Star Rose Quartz",
   Key="Quartz (Star Rose)",
@@ -5152,6 +5451,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Zircon",
   Key="Zircon",
@@ -5163,6 +5463,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Amber",
   Key="Amber",
@@ -5174,6 +5475,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Amethyst",
   Key="Amethyst",
@@ -5185,6 +5487,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Chrysoberyl",
   Key="Chrysoberyl",
@@ -5196,6 +5499,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Coral",
   Key="Coral",
@@ -5207,6 +5511,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Red Garnet",
   Key="Garnet (Red)",
@@ -5219,6 +5524,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Brown-Green Garnet",
   Key="Garnet (Brown-Green)",
@@ -5231,6 +5537,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Jade",
   Key="Jade",
@@ -5242,6 +5549,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Jet",
   Key="Jet",
@@ -5253,6 +5561,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="White Pearl",
   Key="Pearl (White)",
@@ -5265,6 +5574,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Golden Pearl",
   Key="Pearl (Golden)",
@@ -5277,6 +5587,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Pink Pearl",
   Key="Pearl (Pink)",
@@ -5289,6 +5600,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Silver Pearl",
   Key="Pearl (Silver)",
@@ -5301,6 +5613,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Red Spinel",
   Key="Spinel (Red)",
@@ -5313,6 +5626,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Red-Brown Spinel",
   Key="Spinel (Red-Brown)",
@@ -5325,6 +5639,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Deep Green Spinel",
   Key="Spinel (Deep Green)",
@@ -5337,6 +5652,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Tourmaline",
   Key="Tourmaline",
@@ -5348,6 +5664,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Alexandrite",
   Key="Alexandrite",
@@ -5359,6 +5676,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Aquamarine",
   Key="Aquamarine",
@@ -5370,6 +5688,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Violet Garnet",
   Key="Garnet (Violet)",
@@ -5382,6 +5701,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Black Pearl",
   Key="Pearl (Black)",
@@ -5394,6 +5714,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Deep Blue Spinel",
   Key="Spinel (Deep Blue)",
@@ -5406,6 +5727,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Golden Yellow Topaz",
   Key="Topaz (Golden Yellow)",
@@ -5418,6 +5740,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Emerald",
   Key="Emerald",
@@ -5429,6 +5752,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="White Opal",
   Key="Opal (White)",
@@ -5441,6 +5765,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Black Opal",
   Key="Opal (Black)",
@@ -5453,6 +5778,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Fire Opal",
   Key="Opal (Fire)",
@@ -5465,6 +5791,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Blue Sapphire",
   Key="Sapphire (Blue)",
@@ -5477,6 +5804,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Fiery Yellow Corundum",
   Key="Corundum (Fiery Yellow)",
@@ -5489,6 +5817,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Rich Purple Corundum",
   Key="Corundum (Rich Purple)",
@@ -5501,6 +5830,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Blue Star Sapphire",
   Key="Star Sapphire (Blue)",
@@ -5513,6 +5843,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Black Star Sapphire",
   Key="Star Sapphire (Black)",
@@ -5525,6 +5856,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Clearest Bright Green Emerald",
   Key="Emerald (Clearest Bright Green)",
@@ -5537,6 +5869,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Diamond",
   Key="Diamond",
@@ -5548,6 +5881,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Jacinth",
   Key="Jacinth",
@@ -5559,6 +5893,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Ruby",
   Key="Ruby",
@@ -5570,6 +5905,7 @@ DefineEquipment({
     "Gem",
   },
 })
+
 DefineEquipment({
   Name="Amber Dust (worth 1,000 gp)",
   Key="Amber Dust (1000 gp)",
@@ -5590,6 +5926,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Crushed Black Pearl (worth 500 gp)",
   Key="Crushed Black Pearl (500 gp)",
@@ -5610,6 +5947,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Crushed Jade (worth 250 gp)",
   Key="Crushed Jade (250 gp)",
@@ -5630,6 +5968,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Crushed Pearls (worth 1,500 gp)",
   Key="Crushed Pearls (1500 gp)",
@@ -5650,6 +5989,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Diamond (worth 1,000 gp)",
   Key="Diamond (1000 gp)",
@@ -5670,6 +6010,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Diamond (worth 10,000 gp)",
   Key="Diamond (10000 gp)",
@@ -5690,6 +6031,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Diamond (worth 1,500 gp)",
   Key="Diamond (1500 gp)",
@@ -5710,6 +6052,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Diamond (worth 25,000 gp)",
   Key="Diamond (25000 gp)",
@@ -5730,6 +6073,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Diamond (worth 500 gp)",
   Key="Diamond (500 gp)",
@@ -5750,6 +6094,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Diamond (worth 5,000 gp)",
   Key="Diamond (5000 gp)",
@@ -5770,6 +6115,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Diamond Dust (worth 100 gp)",
   Key="Diamond Dust (100 gp)",
@@ -5790,6 +6136,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Diamond Dust (worth 1,000 gp)",
   Key="Diamond Dust (1000 gp)",
@@ -5810,6 +6157,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Diamond Dust (worth 200 gp)",
   Key="Diamond Dust (200 gp)",
@@ -5830,6 +6178,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Diamond Dust (worth 250 gp)",
   Key="Diamond Dust (250 gp)",
@@ -5850,6 +6199,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Diamond Dust (worth 25,000 gp)",
   Key="Diamond Dust (25000 gp)",
@@ -5870,6 +6220,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Diamond Dust (worth 50 gp)",
   Key="Diamond Dust (50 gp)",
@@ -5890,6 +6241,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Diamond Dust (worth 500 gp)",
   Key="Diamond Dust (500 gp)",
@@ -5910,6 +6262,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Diamond Dust (worth 5,000 gp)",
   Key="Diamond Dust (5000 gp)",
@@ -5930,6 +6283,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Forked Metal Rod",
   Key="Forked Metal Rod",
@@ -5947,6 +6301,7 @@ DefineEquipment({
     "Spell Focus",
   },
 })
+
 DefineEquipment({
   Name="Forked Metal Rod, attuned to the Abyss",
   Key="Forked Metal Rod (Abyss)",
@@ -5964,6 +6319,7 @@ DefineEquipment({
     "Spell Focus",
   },
 })
+
 DefineEquipment({
   Name="Forked Metal Rod, attuned to the Astral Plane",
   Key="Forked Metal Rod (Astral Plane)",
@@ -5981,6 +6337,7 @@ DefineEquipment({
     "Spell Focus",
   },
 })
+
 DefineEquipment({
   Name="Forked Metal Rod, attuned to Elysium",
   Key="Forked Metal Rod (Elysium)",
@@ -5998,6 +6355,7 @@ DefineEquipment({
     "Spell Focus",
   },
 })
+
 DefineEquipment({
   Name="Forked Metal Rod, attuned to the Ethereal Plane",
   Key="Forked Metal Rod (Ethereal Plane)",
@@ -6015,6 +6373,7 @@ DefineEquipment({
     "Spell Focus",
   },
 })
+
 DefineEquipment({
   Name="Forked Metal Rod, attuned to Heaven",
   Key="Forked Metal Rod (Heaven)",
@@ -6032,6 +6391,7 @@ DefineEquipment({
     "Spell Focus",
   },
 })
+
 DefineEquipment({
   Name="Forked Metal Rod, attuned to Hell",
   Key="Forked Metal Rod (Hell)",
@@ -6049,6 +6409,7 @@ DefineEquipment({
     "Spell Focus",
   },
 })
+
 DefineEquipment({
   Name="Forked Metal Rod, attuned to the Material Plane",
   Key="Forked Metal Rod (Material Plane)",
@@ -6066,6 +6427,7 @@ DefineEquipment({
     "Spell Focus",
   },
 })
+
 DefineEquipment({
   Name="Forked Metal Rod, attuned to the Negative Energy Plane",
   Key="Forked Metal Rod (Negative Energy Plane)",
@@ -6083,6 +6445,7 @@ DefineEquipment({
     "Spell Focus",
   },
 })
+
 DefineEquipment({
   Name="Forked Metal Rod, attuned to the Plane of Air",
   Key="Forked Metal Rod (Plane of Air)",
@@ -6100,6 +6463,7 @@ DefineEquipment({
     "Spell Focus",
   },
 })
+
 DefineEquipment({
   Name="Forked Metal Rod, attuned to the Plane of Earth",
   Key="Forked Metal Rod (Plane of Earth)",
@@ -6117,6 +6481,7 @@ DefineEquipment({
     "Spell Focus",
   },
 })
+
 DefineEquipment({
   Name="Forked Metal Rod, attuned to the Plane of Fire",
   Key="Forked Metal Rod (Plane of Fire)",
@@ -6134,6 +6499,7 @@ DefineEquipment({
     "Spell Focus",
   },
 })
+
 DefineEquipment({
   Name="Forked Metal Rod, attuned to the Plane of Water",
   Key="Forked Metal Rod (Plane of Water)",
@@ -6151,6 +6517,7 @@ DefineEquipment({
     "Spell Focus",
   },
 })
+
 DefineEquipment({
   Name="Forked Metal Rod, attuned to the Positive Energy Plane",
   Key="Forked Metal Rod (Positive Energy Plane)",
@@ -6168,6 +6535,7 @@ DefineEquipment({
     "Spell Focus",
   },
 })
+
 DefineEquipment({
   Name="Forked Metal Rod, attuned to the Shadow Plane",
   Key="Forked Metal Rod (Shadow Plane)",
@@ -6185,6 +6553,7 @@ DefineEquipment({
     "Spell Focus",
   },
 })
+
 DefineEquipment({
   Name="Powdered Diamond, Emerald, Ruby, and Sapphire Dust (worth 5,000 gp)",
   Key="Gem Dust (5000 gp)",
@@ -6205,6 +6574,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Gold Dust (worth 25 gp)",
   Key="Gold Dust (25 gp)",
@@ -6225,6 +6595,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Gold Dust (worth 50 gp)",
   Key="Gold Dust (50 gp)",
@@ -6245,6 +6616,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Herbs and Oils (worth 2,000 gp)",
   Key="Herbs and Oils (2000 gp)",
@@ -6265,6 +6637,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Herbs, Oils, and Incense (worth 1,000 gp)",
   Key="Herbs Oils and Incense (1000 gp)",
@@ -6285,6 +6658,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Incense (worth 1,500 gp)",
   Key="Incense (1500 gp)",
@@ -6305,6 +6679,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Incense (worth 25 gp)",
   Key="Incense (25 gp)",
@@ -6325,6 +6700,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Incense (worth 250 gp)",
   Key="Incense (250 gp)",
@@ -6345,6 +6721,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Incense (worth 500 gp)",
   Key="Incense (500 gp)",
@@ -6365,6 +6742,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Ivory Plaque (worth 50 gp)",
   Key="Ivory Plaque (50 gp)",
@@ -6385,6 +6763,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Ivory Statuette of Self (worth 1,500 gp)",
   Key="Ivory Statuette of Self (1500 gp)",
@@ -6405,6 +6784,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Jacinth (worth 1,000 gp)",
   Key="Jacinth (1000 gp)",
@@ -6425,6 +6805,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Jade Circlet (worth 1,500 gp)",
   Key="Jade Circlet (1500 gp)",
@@ -6445,6 +6826,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Jade Dust (worth 10 gp)",
   Key="Jade Dust (10 gp)",
@@ -6465,6 +6847,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Jade Dust (worth 25 gp)",
   Key="Jade Dust (25 gp)",
@@ -6485,6 +6868,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Laboratory Equipment (costing 500 gp)",
   Key="Laboratory Equipment (500 gp)",
@@ -6505,6 +6889,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Laboratory Supplies (worth 1,000 gp)",
   Key="Laboratory Supplies (1000 gp)",
@@ -6525,6 +6910,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Lead-Based Ink (worth 50 gp)",
   Key="Lead-Based Ink (50 gp)",
@@ -6545,6 +6931,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Miniature Ivory Door (worth 5 gp)",
   Key="Miniature Ivory Door (5 gp)",
@@ -6565,6 +6952,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Miniature Platinum Sword (worth 250 gp)",
   Key="Miniature Platinum Sword (250 gp)",
@@ -6585,6 +6973,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Oils (worth 1,000 gp)",
   Key="Oils (1000 gp)",
@@ -6605,6 +6994,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Ointment (worth 250 gp)",
   Key="Ointment (250 gp)",
@@ -6625,6 +7015,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Onyx Gem (worth 25 gp)",
   Key="Onyx (25 gp)",
@@ -6645,6 +7036,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Onyx Gem (worth 50 gp)",
   Key="Onyx (50 gp)",
@@ -6665,6 +7057,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Opal (worth 500 gp)",
   Key="Opal (500 gp)",
@@ -6685,6 +7078,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Pair of Canine Statuettes (worth 50 gp)",
   Key="Pair of Canine Statuettes (50 gp)",
@@ -6705,6 +7099,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Platinum Ring (worth 50 gp)",
   Key="Platinum Ring (50 gp)",
@@ -6725,6 +7120,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Polished Marble (worth 5 gp)",
   Key="Polished Marble (5 gp)",
@@ -6745,6 +7141,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Powdered Amber (worth 500 gp)",
   Key="Powdered Amber (500 gp)",
@@ -6765,6 +7162,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Powdered Diamond (worth 200 gp)",
   Key="Powdered Diamond (200 gp)",
@@ -6785,6 +7183,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Powdered Diamond (worth 400 gp)",
   Key="Powdered Diamond (400 gp)",
@@ -6805,6 +7204,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Powdered Diamond (worth 5,000 gp)",
   Key="Powdered Diamond (5000 gp)",
@@ -6825,6 +7225,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Powdered Diamond and Opal (worth 1,000 gp)",
   Key="Powdered Diamond and Opal (1000 gp)",
@@ -6845,6 +7246,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Powdered Diamond and Opal (worth 5,000 gp)",
   Key="Powdered Diamond and Opal (5000 gp)",
@@ -6865,6 +7267,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Powdered Opal (worth 5,000 gp)",
   Key="Powdered Opal (5000 gp)",
@@ -6885,6 +7288,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Powdered Ruby (worth 500 gp)",
   Key="Powdered Ruby (500 gp)",
@@ -6905,6 +7309,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Powdered Silver (worth 25 gp)",
   Key="Powdered Silver (25 gp)",
@@ -6925,6 +7330,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Ruby Dust (worth 50 gp)",
   Key="Ruby Dust (50 gp)",
@@ -6945,6 +7351,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Ruby Dust (worth 500 gp)",
   Key="Ruby Dust (500 gp)",
@@ -6965,6 +7372,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Sapphire (worth 1,000 gp)",
   Key="Sapphire (1000 gp)",
@@ -6985,6 +7393,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Set of 4 Pieces of Ivory (worth 50 gp each)",
   Key="Set of 4 Pieces of Ivory (200 gp)",
@@ -7005,6 +7414,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Set of Marked Bones (worth 25 gp)",
   Key="Set of Marked Bones (25 gp)",
@@ -7025,6 +7435,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Set of Minature Items (worth 15 gp)",
   Key="Set of Minature Items (15 gp)",
@@ -7045,6 +7456,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Set of Prayer Beads (worth 500 gp)",
   Key="Set of Prayer Beads (500 gp)",
@@ -7065,6 +7477,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Silver Dust (worth 25 gp)",
   Key="Silver Dust (25 gp)",
@@ -7085,6 +7498,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Silver Mirror (worth 1,000 gp)",
   Key="Silver Mirror (1000 gp)",
@@ -7105,6 +7519,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Silver Spoon (worth 5 gp)",
   Key="Silver Spoon (5 gp)",
@@ -7125,6 +7540,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Small Replica of Self (worth 5 gp)",
   Key="Small Replica of Self (5 gp)",
@@ -7145,6 +7561,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Special Dust (worth 50 gp)",
   Key="Special Dust (50 gp)",
@@ -7165,6 +7582,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Tiny Reliquary (worth 500 gp)",
   Key="Tiny Reliquary (500 gp)",
@@ -7185,6 +7603,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Arsenic",
   Key="Poison (Arsenic)",
@@ -7216,6 +7635,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Belladonna",
   Key="Poison (Belladonna)",
@@ -7247,6 +7667,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Black Adder Venom",
   Key="Poison (Black Adder Venom)",
@@ -7277,6 +7698,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Black Lotus Extract",
   Key="Poison (Black Lotus Extract)",
@@ -7308,6 +7730,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Bloodroot",
   Key="Poison (Bloodroot)",
@@ -7339,6 +7762,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Blue Whinnis",
   Key="Poison (Blue Whinnis)",
@@ -7370,6 +7794,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Burnt Othur Fumes",
   Key="Poison (Burnt Othur Fumes)",
@@ -7401,6 +7826,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Dark Reaver Powder",
   Key="Poison (Dark Reaver Powder)",
@@ -7432,6 +7858,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Deathblade",
   Key="Poison (Deathblade)",
@@ -7462,6 +7889,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Dragon Bile",
   Key="Poison (Dragon Bile)",
@@ -7491,6 +7919,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Drow Poison",
   Key="Poison (Drow Poison)",
@@ -7522,6 +7951,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Giant Wasp Poison",
   Key="Poison (Giant Wasp Poison)",
@@ -7552,6 +7982,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Greenblood Oil",
   Key="Poison (Greenblood Oil)",
@@ -7582,6 +8013,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Hemlock",
   Key="Poison (Hemlock)",
@@ -7613,6 +8045,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Id Moss",
   Key="Poison (Id Moss)",
@@ -7644,6 +8077,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Insanity Mist",
   Key="Poison (Insanity Mist)",
@@ -7674,6 +8108,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, King's Sleep",
   Key="Poison (King's Sleep)",
@@ -7705,6 +8140,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Large Scorpion Venom",
   Key="Poison (Large Scorpion Venom)",
@@ -7735,6 +8171,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Lich Dust",
   Key="Poison (Lich Dust)",
@@ -7766,6 +8203,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Malyass Root Paste",
   Key="Poison (Malyass Root Paste)",
@@ -7797,6 +8235,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Medium Spider Venom",
   Key="Poison (Medium Spider Venom)",
@@ -7827,6 +8266,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Nightmare Vapor",
   Key="Poison (Nightmare Vapor)",
@@ -7857,6 +8297,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Nitharit",
   Key="Poison (Nitharit)",
@@ -7888,6 +8329,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Oil of Taggit",
   Key="Poison (Oil of Taggit)",
@@ -7918,6 +8360,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Purple Worm Poison",
   Key="Poison (Purple Worm Poison)",
@@ -7948,6 +8391,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Sassone Leaf Residue",
   Key="Poison (Sassone Leaf Residue)",
@@ -7980,6 +8424,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Shadow Essence",
   Key="Poison (Shadow Essence)",
@@ -8011,6 +8456,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Small Centipede Poison",
   Key="Poison (Small Centipede Poison)",
@@ -8041,6 +8487,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Striped Toadstool",
   Key="Poison (Striped Toadstool)",
@@ -8072,6 +8519,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Tears of Death",
   Key="Poison (Tears of Death)",
@@ -8102,6 +8550,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Terinav Root",
   Key="Poison (Terinav Root)",
@@ -8133,6 +8582,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Ungol Dust",
   Key="Poison (Ungol Dust)",
@@ -8164,6 +8614,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Wolfsbane",
   Key="Poison (Wolfsbane)",
@@ -8195,6 +8646,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Poison, Wyvern Poison",
   Key="Poison (Wyvern Poison)",
@@ -8225,3 +8677,4 @@ DefineEquipment({
     Plural="No",
   },
 })
+

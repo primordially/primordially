@@ -52,6 +52,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Acid Fog",
   Description={
@@ -98,6 +99,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Acid Splash",
   Description={
@@ -144,6 +146,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Aid",
   Description={
@@ -197,6 +200,7 @@ DefineSpell({
     Cleric=2,
   },
 })
+
 DefineSpell({
   Name="Air Walk",
   Description={
@@ -245,6 +249,7 @@ DefineSpell({
     Druid=4,
   },
 })
+
 DefineSpell({
   Name="Alarm",
   Description={
@@ -288,6 +293,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Align Weapon",
   Description={
@@ -336,6 +342,7 @@ DefineSpell({
     Cleric=2,
   },
 })
+
 DefineSpell({
   Name="Alter Self",
   Description={
@@ -379,6 +386,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Analyze Dweomer",
   Description={
@@ -420,6 +428,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Animal Growth",
   Description={
@@ -463,6 +472,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Animal Messenger",
   Description={
@@ -511,6 +521,7 @@ DefineSpell({
     Druid=2,
   },
 })
+
 DefineSpell({
   Name="Animal Shapes",
   Description={
@@ -558,6 +569,7 @@ DefineSpell({
     Druid=8,
   },
 })
+
 DefineSpell({
   Name="Animal Trance",
   Description={
@@ -609,6 +621,7 @@ DefineSpell({
     Druid=2,
   },
 })
+
 DefineSpell({
   Name="Animate Dead",
   Description={
@@ -659,6 +672,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Animate Objects",
   Description={
@@ -705,6 +719,7 @@ DefineSpell({
     Cleric=6,
   },
 })
+
 DefineSpell({
   Name="Animate Plants",
   Description={
@@ -749,6 +764,7 @@ DefineSpell({
     Druid=7,
   },
 })
+
 DefineSpell({
   Name="Animate Rope",
   Description={
@@ -796,6 +812,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Antilife Shell",
   Description={
@@ -841,6 +858,7 @@ DefineSpell({
     Druid=6,
   },
 })
+
 DefineSpell({
   Name="Antimagic Field",
   Description={
@@ -891,6 +909,7 @@ DefineSpell({
     Cleric=8,
   },
 })
+
 DefineSpell({
   Name="Antipathy",
   Description={
@@ -939,6 +958,7 @@ DefineSpell({
     Druid=9,
   },
 })
+
 DefineSpell({
   Name="Antiplant Shell",
   Description={
@@ -978,6 +998,7 @@ DefineSpell({
     Druid=4,
   },
 })
+
 DefineSpell({
   Name="Arcane Eye",
   Description={
@@ -1021,6 +1042,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Arcane Lock",
   Description={
@@ -1061,6 +1083,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Arcane Mark",
   Description={
@@ -1101,6 +1124,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Arcane Sight",
   Description={
@@ -1140,6 +1164,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Arcane Sight (Greater)",
   Description={
@@ -1176,6 +1201,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Astral Projection",
   Description={
@@ -1223,6 +1249,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Atonement",
   Description={
@@ -1263,6 +1290,7 @@ DefineSpell({
     Druid=5,
   },
 })
+
 DefineSpell({
   Name="Augury",
   Description={
@@ -1298,6 +1326,7 @@ DefineSpell({
     Cleric=2,
   },
 })
+
 DefineSpell({
   Name="Awaken",
   Description={
@@ -1337,6 +1366,7 @@ DefineSpell({
     Druid=5,
   },
 })
+
 DefineSpell({
   Name="Baleful Polymorph",
   Description={
@@ -1382,6 +1412,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Bane",
   Description={
@@ -1428,6 +1459,7 @@ DefineSpell({
     Cleric=1,
   },
 })
+
 DefineSpell({
   Name="Banishment",
   Description={
@@ -1470,6 +1502,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Barkskin",
   Description={
@@ -1518,6 +1551,7 @@ DefineSpell({
     Ranger=2,
   },
 })
+
 DefineSpell({
   Name="Bear's Endurance",
   Description={
@@ -1565,6 +1599,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Bear's Endurance (Mass)",
   Description={
@@ -1608,6 +1643,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Beast Shape I",
   Description={
@@ -1650,6 +1686,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Beast Shape II",
   Description={
@@ -1689,6 +1726,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Beast Shape III",
   Description={
@@ -1728,6 +1766,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Beast Shape IV",
   Description={
@@ -1767,6 +1806,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Bestow Curse",
   Description={
@@ -1812,6 +1852,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Binding",
   Description={
@@ -1858,6 +1899,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Black Tentacles",
   Description={
@@ -1901,6 +1943,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Blade Barrier",
   Description={
@@ -1951,6 +1994,7 @@ DefineSpell({
     Cleric=6,
   },
 })
+
 DefineSpell({
   Name="Blasphemy",
   Description={
@@ -1999,6 +2043,7 @@ DefineSpell({
     Cleric=7,
   },
 })
+
 DefineSpell({
   Name="Bleed",
   Description={
@@ -2044,6 +2089,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Bless",
   Description={
@@ -2095,6 +2141,7 @@ DefineSpell({
     Paladin=1,
   },
 })
+
 DefineSpell({
   Name="Bless Water",
   Description={
@@ -2138,6 +2185,7 @@ DefineSpell({
     Paladin=1,
   },
 })
+
 DefineSpell({
   Name="Bless Weapon",
   Description={
@@ -2182,6 +2230,7 @@ DefineSpell({
     Paladin=1,
   },
 })
+
 DefineSpell({
   Name="Blindness/Deafness",
   Description={
@@ -2228,6 +2277,7 @@ DefineSpell({
     Cleric=3,
   },
 })
+
 DefineSpell({
   Name="Blink",
   Description={
@@ -2268,6 +2318,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Blight",
   Description={
@@ -2310,6 +2361,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Blur",
   Description={
@@ -2357,6 +2409,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Break Enchantment",
   Description={
@@ -2409,6 +2462,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Breath of Life",
   Description={
@@ -2456,6 +2510,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Bull's Strength",
   Description={
@@ -2508,6 +2563,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Bull's Strength (Mass)",
   Description={
@@ -2551,6 +2607,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Burning Hands",
   Description={
@@ -2600,6 +2657,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Call Lightning",
   Description={
@@ -2647,6 +2705,7 @@ DefineSpell({
     Druid=3,
   },
 })
+
 DefineSpell({
   Name="Call Lightning Storm",
   Description={
@@ -2689,6 +2748,7 @@ DefineSpell({
     Druid=5,
   },
 })
+
 DefineSpell({
   Name="Calm Animals",
   Description={
@@ -2743,6 +2803,7 @@ DefineSpell({
     Ranger=1,
   },
 })
+
 DefineSpell({
   Name="Calm Emotions",
   Description={
@@ -2798,6 +2859,7 @@ DefineSpell({
     Cleric=2,
   },
 })
+
 DefineSpell({
   Name="Cat's Grace",
   Description={
@@ -2845,6 +2907,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Cat's Grace (Mass)",
   Description={
@@ -2888,6 +2951,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Cause Fear",
   Description={
@@ -2943,6 +3007,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Chain Lightning",
   Description={
@@ -2992,6 +3057,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Changestaff",
   Description={
@@ -3031,6 +3097,7 @@ DefineSpell({
     Druid=7,
   },
 })
+
 DefineSpell({
   Name="Chaos Hammer",
   Description={
@@ -3078,6 +3145,7 @@ DefineSpell({
     Cleric=4,
   },
 })
+
 DefineSpell({
   Name="Charm Animal",
   Description={
@@ -3127,6 +3195,7 @@ DefineSpell({
     Ranger=1,
   },
 })
+
 DefineSpell({
   Name="Charm Monster",
   Description={
@@ -3183,6 +3252,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Charm Monster (Mass)",
   Description={
@@ -3230,6 +3300,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Charm Person",
   Description={
@@ -3286,6 +3357,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Chill Metal",
   Description={
@@ -3328,6 +3400,7 @@ DefineSpell({
     Druid=2,
   },
 })
+
 DefineSpell({
   Name="Chill Touch",
   Description={
@@ -3371,6 +3444,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Circle of Death",
   Description={
@@ -3414,6 +3488,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Clairaudience/Clairvoyance",
   Description={
@@ -3458,6 +3533,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Clenched Fist",
   Description={
@@ -3507,6 +3583,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Cloak of Chaos",
   Description={
@@ -3554,6 +3631,7 @@ DefineSpell({
     Cleric=8,
   },
 })
+
 DefineSpell({
   Name="Clone",
   Description={
@@ -3594,6 +3672,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Cloudkill",
   Description={
@@ -3637,6 +3716,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Color Spray",
   Description={
@@ -3683,6 +3763,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Command",
   Description={
@@ -3732,6 +3813,7 @@ DefineSpell({
     Cleric=1,
   },
 })
+
 DefineSpell({
   Name="Command (Greater)",
   Description={
@@ -3783,6 +3865,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Command Plants",
   Description={
@@ -3831,6 +3914,7 @@ DefineSpell({
     Ranger=3,
   },
 })
+
 DefineSpell({
   Name="Command Undead",
   Description={
@@ -3874,6 +3958,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Commune",
   Description={
@@ -3909,6 +3994,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Commune with Nature",
   Description={
@@ -3945,6 +4031,7 @@ DefineSpell({
     Ranger=4,
   },
 })
+
 DefineSpell({
   Name="Comprehend Languages",
   Description={
@@ -3992,6 +4079,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Cone of Cold",
   Description={
@@ -4040,6 +4128,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Confusion",
   Description={
@@ -4096,6 +4185,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Confusion (Lesser)",
   Description={
@@ -4150,6 +4240,7 @@ DefineSpell({
     Bard=1,
   },
 })
+
 DefineSpell({
   Name="Consecrate",
   Description={
@@ -4192,6 +4283,7 @@ DefineSpell({
     Cleric=2,
   },
 })
+
 DefineSpell({
   Name="Contact Other Plane",
   Description={
@@ -4228,6 +4320,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Contagion",
   Description={
@@ -4277,6 +4370,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Contingency",
   Description={
@@ -4313,6 +4407,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Continual Flame",
   Description={
@@ -4358,6 +4453,7 @@ DefineSpell({
     Cleric=3,
   },
 })
+
 DefineSpell({
   Name="Control Plants",
   Description={
@@ -4402,6 +4498,7 @@ DefineSpell({
     Druid=8,
   },
 })
+
 DefineSpell({
   Name="Control Undead",
   Description={
@@ -4442,6 +4539,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Control Water",
   Description={
@@ -4493,6 +4591,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Control Weather",
   Description={
@@ -4541,6 +4640,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Control Winds",
   Description={
@@ -4591,6 +4691,7 @@ DefineSpell({
     Druid=5,
   },
 })
+
 DefineSpell({
   Name="Create Food and Water",
   Description={
@@ -4633,6 +4734,7 @@ DefineSpell({
     Cleric=3,
   },
 })
+
 DefineSpell({
   Name="Create Greater Undead",
   Description={
@@ -4683,6 +4785,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Create Undead",
   Description={
@@ -4736,6 +4839,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Create Water",
   Description={
@@ -4784,6 +4888,7 @@ DefineSpell({
     Paladin=1,
   },
 })
+
 DefineSpell({
   Name="Creeping Doom",
   Description={
@@ -4826,6 +4931,7 @@ DefineSpell({
     Druid=7,
   },
 })
+
 DefineSpell({
   Name="Crushing Despair",
   Description={
@@ -4873,6 +4979,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Crushing Hand",
   Description={
@@ -4922,6 +5029,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Cure Critical Wounds",
   Description={
@@ -4972,6 +5080,7 @@ DefineSpell({
     Druid=5,
   },
 })
+
 DefineSpell({
   Name="Cure Critical Wounds (Mass)",
   Description={
@@ -5023,6 +5132,7 @@ DefineSpell({
     Druid=9,
   },
 })
+
 DefineSpell({
   Name="Cure Light Wounds",
   Description={
@@ -5078,6 +5188,7 @@ DefineSpell({
     Ranger=2,
   },
 })
+
 DefineSpell({
   Name="Cure Light Wounds (Mass)",
   Description={
@@ -5123,6 +5234,7 @@ DefineSpell({
     Druid=6,
   },
 })
+
 DefineSpell({
   Name="Cure Moderate Wounds",
   Description={
@@ -5178,6 +5290,7 @@ DefineSpell({
     Ranger=3,
   },
 })
+
 DefineSpell({
   Name="Cure Moderate Wounds (Mass)",
   Description={
@@ -5223,6 +5336,7 @@ DefineSpell({
     Druid=7,
   },
 })
+
 DefineSpell({
   Name="Cure Serious Wounds",
   Description={
@@ -5278,6 +5392,7 @@ DefineSpell({
     Ranger=4,
   },
 })
+
 DefineSpell({
   Name="Cure Serious Wounds (Mass)",
   Description={
@@ -5321,6 +5436,7 @@ DefineSpell({
     Druid=8,
   },
 })
+
 DefineSpell({
   Name="Curse Water",
   Description={
@@ -5363,6 +5479,7 @@ DefineSpell({
     Cleric=1,
   },
 })
+
 DefineSpell({
   Name="Dancing Lights",
   Description={
@@ -5413,6 +5530,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Darkness",
   Description={
@@ -5459,6 +5577,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Darkvision",
   Description={
@@ -5504,6 +5623,7 @@ DefineSpell({
     Ranger=3,
   },
 })
+
 DefineSpell({
   Name="Daylight",
   Description={
@@ -5552,6 +5672,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Daze",
   Description={
@@ -5602,6 +5723,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Daze Monster",
   Description={
@@ -5652,6 +5774,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Death Knell",
   Description={
@@ -5703,6 +5826,7 @@ DefineSpell({
     Cleric=2,
   },
 })
+
 DefineSpell({
   Name="Death Ward",
   Description={
@@ -5752,6 +5876,7 @@ DefineSpell({
     Druid=5,
   },
 })
+
 DefineSpell({
   Name="Deathwatch",
   Description={
@@ -5796,6 +5921,7 @@ DefineSpell({
     Cleric=1,
   },
 })
+
 DefineSpell({
   Name="Deep Slumber",
   Description={
@@ -5846,6 +5972,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Deeper Darkness",
   Description={
@@ -5893,6 +6020,7 @@ DefineSpell({
     Cleric=3,
   },
 })
+
 DefineSpell({
   Name="Delay Poison",
   Description={
@@ -5943,6 +6071,7 @@ DefineSpell({
     Paladin=2,
   },
 })
+
 DefineSpell({
   Name="Delayed Blast Fireball",
   Description={
@@ -5986,6 +6115,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Demand",
   Description={
@@ -6041,6 +6171,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Desecrate",
   Description={
@@ -6083,6 +6214,7 @@ DefineSpell({
     Cleric=2,
   },
 })
+
 DefineSpell({
   Name="Destruction",
   Description={
@@ -6133,6 +6265,7 @@ DefineSpell({
     Cleric=7,
   },
 })
+
 DefineSpell({
   Name="Detect Animals or Plants",
   Description={
@@ -6173,6 +6306,7 @@ DefineSpell({
     Ranger=1,
   },
 })
+
 DefineSpell({
   Name="Detect Chaos",
   Description={
@@ -6212,6 +6346,7 @@ DefineSpell({
     Cleric=1,
   },
 })
+
 DefineSpell({
   Name="Detect Evil",
   Description={
@@ -6251,6 +6386,7 @@ DefineSpell({
     Cleric=1,
   },
 })
+
 DefineSpell({
   Name="Detect Good",
   Description={
@@ -6290,6 +6426,7 @@ DefineSpell({
     Cleric=1,
   },
 })
+
 DefineSpell({
   Name="Detect Law",
   Description={
@@ -6329,6 +6466,7 @@ DefineSpell({
     Cleric=1,
   },
 })
+
 DefineSpell({
   Name="Detect Magic",
   Description={
@@ -6373,6 +6511,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Detect Poison",
   Description={
@@ -6418,6 +6557,7 @@ DefineSpell({
     Ranger=1,
   },
 })
+
 DefineSpell({
   Name="Detect Scrying",
   Description={
@@ -6459,6 +6599,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Detect Secret Doors",
   Description={
@@ -6500,6 +6641,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Detect Snares and Pits",
   Description={
@@ -6540,6 +6682,7 @@ DefineSpell({
     Ranger=1,
   },
 })
+
 DefineSpell({
   Name="Detect Thoughts",
   Description={
@@ -6590,6 +6733,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Detect Undead",
   Description={
@@ -6633,6 +6777,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Dictum",
   Description={
@@ -6681,6 +6826,7 @@ DefineSpell({
     Cleric=7,
   },
 })
+
 DefineSpell({
   Name="Dimension Door",
   Description={
@@ -6731,6 +6877,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Dimensional Anchor",
   Description={
@@ -6773,6 +6920,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Dimensional Lock",
   Description={
@@ -6815,6 +6963,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Diminish Plants",
   Description={
@@ -6855,6 +7004,7 @@ DefineSpell({
     Ranger=3,
   },
 })
+
 DefineSpell({
   Name="Discern Lies",
   Description={
@@ -6900,6 +7050,7 @@ DefineSpell({
     Cleric=4,
   },
 })
+
 DefineSpell({
   Name="Discern Location",
   Description={
@@ -6947,6 +7098,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Disguise Self",
   Description={
@@ -6996,6 +7148,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Disintegrate",
   Description={
@@ -7042,6 +7195,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Dismissal",
   Description={
@@ -7084,6 +7238,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Dispel Chaos",
   Description={
@@ -7132,6 +7287,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Dispel Evil",
   Description={
@@ -7180,6 +7336,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Dispel Good",
   Description={
@@ -7227,6 +7384,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Dispel Law",
   Description={
@@ -7274,6 +7432,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Dispel Magic",
   Description={
@@ -7324,6 +7483,7 @@ DefineSpell({
     Druid=4,
   },
 })
+
 DefineSpell({
   Name="Dispel Magic (Greater)",
   Description={
@@ -7373,6 +7533,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Displacement",
   Description={
@@ -7420,6 +7581,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Disrupt Undead",
   Description={
@@ -7460,6 +7622,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Disrupting Weapon",
   Description={
@@ -7499,6 +7662,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Divination",
   Description={
@@ -7539,6 +7703,7 @@ DefineSpell({
     Cleric=4,
   },
 })
+
 DefineSpell({
   Name="Divine Favor",
   Description={
@@ -7583,6 +7748,7 @@ DefineSpell({
     Paladin=1,
   },
 })
+
 DefineSpell({
   Name="Divine Power",
   Description={
@@ -7623,6 +7789,7 @@ DefineSpell({
     Cleric=4,
   },
 })
+
 DefineSpell({
   Name="Dominate Animal",
   Description={
@@ -7676,6 +7843,7 @@ DefineSpell({
     Druid=3,
   },
 })
+
 DefineSpell({
   Name="Dominate Monster",
   Description={
@@ -7728,6 +7896,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Dominate Person",
   Description={
@@ -7775,6 +7944,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Doom",
   Description={
@@ -7821,6 +7991,7 @@ DefineSpell({
     Cleric=1,
   },
 })
+
 DefineSpell({
   Name="Dream",
   Description={
@@ -7868,6 +8039,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Eagle's Splendor",
   Description={
@@ -7915,6 +8087,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Eagle's Splendor (Mass)",
   Description={
@@ -7958,6 +8131,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Earthquake",
   Description={
@@ -8009,6 +8183,7 @@ DefineSpell({
     Druid=8,
   },
 })
+
 DefineSpell({
   Name="Elemental Body I",
   Description={
@@ -8055,6 +8230,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Elemental Body II",
   Description={
@@ -8100,6 +8276,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Elemental Body III",
   Description={
@@ -8145,6 +8322,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Elemental Body IV",
   Description={
@@ -8190,6 +8368,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Elemental Swarm",
   Description={
@@ -8232,6 +8411,7 @@ DefineSpell({
     Druid=9,
   },
 })
+
 DefineSpell({
   Name="Endure Elements",
   Description={
@@ -8285,6 +8465,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Energy Drain",
   Description={
@@ -8327,6 +8508,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Enervation",
   Description={
@@ -8367,6 +8549,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Enlarge Person",
   Description={
@@ -8416,6 +8599,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Enlarge Person (Mass)",
   Description={
@@ -8456,6 +8640,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Entangle",
   Description={
@@ -8501,6 +8686,7 @@ DefineSpell({
     Ranger=1,
   },
 })
+
 DefineSpell({
   Name="Enthrall",
   Description={
@@ -8558,6 +8744,7 @@ DefineSpell({
     Cleric=2,
   },
 })
+
 DefineSpell({
   Name="Entropic Shield",
   Description={
@@ -8596,6 +8783,7 @@ DefineSpell({
     Cleric=1,
   },
 })
+
 DefineSpell({
   Name="Erase",
   Description={
@@ -8643,6 +8831,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Ethereal Jaunt",
   Description={
@@ -8684,6 +8873,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Etherealness",
   Description={
@@ -8723,6 +8913,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Expeditious Retreat",
   Description={
@@ -8763,6 +8954,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Explosive Runes",
   Description={
@@ -8812,6 +9004,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Eyebite",
   Description={
@@ -8853,6 +9046,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Fabricate",
   Description={
@@ -8899,6 +9093,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Faerie Fire",
   Description={
@@ -8941,6 +9136,7 @@ DefineSpell({
     Druid=1,
   },
 })
+
 DefineSpell({
   Name="False Life",
   Description={
@@ -8980,6 +9176,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="False Vision",
   Description={
@@ -9030,6 +9227,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Fear",
   Description={
@@ -9075,6 +9273,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Feather Fall",
   Description={
@@ -9119,6 +9318,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Feeblemind",
   Description={
@@ -9165,6 +9365,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Find the Path",
   Description={
@@ -9215,6 +9416,7 @@ DefineSpell({
     Druid=6,
   },
 })
+
 DefineSpell({
   Name="Find Traps",
   Description={
@@ -9253,6 +9455,7 @@ DefineSpell({
     Cleric=2,
   },
 })
+
 DefineSpell({
   Name="Finger of Death",
   Description={
@@ -9298,6 +9501,7 @@ DefineSpell({
     Druid=8,
   },
 })
+
 DefineSpell({
   Name="Fire Shield",
   Description={
@@ -9351,6 +9555,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Fire Seeds",
   Description={
@@ -9404,6 +9609,7 @@ DefineSpell({
     Druid=6,
   },
 })
+
 DefineSpell({
   Name="Fire Storm",
   Description={
@@ -9447,6 +9653,7 @@ DefineSpell({
     Cleric=8,
   },
 })
+
 DefineSpell({
   Name="Fire Trap",
   Description={
@@ -9492,6 +9699,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Fireball",
   Description={
@@ -9541,6 +9749,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Flame Arrow",
   Description={
@@ -9584,6 +9793,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Flame Blade",
   Description={
@@ -9626,6 +9836,7 @@ DefineSpell({
     Druid=2,
   },
 })
+
 DefineSpell({
   Name="Flame Strike",
   Description={
@@ -9677,6 +9888,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Flaming Sphere",
   Description={
@@ -9722,6 +9934,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Flare",
   Description={
@@ -9768,6 +9981,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Flesh to Stone",
   Description={
@@ -9808,6 +10022,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Fly",
   Description={
@@ -9857,6 +10072,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Floating Disk",
   Description={
@@ -9900,6 +10116,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Fog Cloud",
   Description={
@@ -9953,6 +10170,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Forbiddance",
   Description={
@@ -9992,6 +10210,7 @@ DefineSpell({
     Cleric=6,
   },
 })
+
 DefineSpell({
   Name="Forcecage",
   Description={
@@ -10035,6 +10254,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Forceful Hand",
   Description={
@@ -10078,6 +10298,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Foresight",
   Description={
@@ -10125,6 +10346,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Form of the Dragon I",
   Description={
@@ -10168,6 +10390,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Form of the Dragon II",
   Description={
@@ -10211,6 +10434,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Form of the Dragon III",
   Description={
@@ -10254,6 +10478,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Fox's Cunning",
   Description={
@@ -10298,6 +10523,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Fox's Cunning (Mass)",
   Description={
@@ -10339,6 +10565,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Freedom",
   Description={
@@ -10385,6 +10612,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Freedom of Movement",
   Description={
@@ -10436,6 +10664,7 @@ DefineSpell({
     Ranger=4,
   },
 })
+
 DefineSpell({
   Name="Freezing Sphere",
   Description={
@@ -10479,6 +10708,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Gaseous Form",
   Description={
@@ -10529,6 +10759,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Gate",
   Description={
@@ -10580,6 +10811,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Geas/Quest",
   Description={
@@ -10638,6 +10870,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Geas (Lesser)",
   Description={
@@ -10686,6 +10919,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Gentle Repose",
   Description={
@@ -10736,6 +10970,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Ghost Sound",
   Description={
@@ -10780,6 +11015,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Ghoul Touch",
   Description={
@@ -10823,6 +11059,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Giant Form I",
   Description={
@@ -10862,6 +11099,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Giant Form II",
   Description={
@@ -10901,6 +11139,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Giant Vermin",
   Description={
@@ -10941,6 +11180,7 @@ DefineSpell({
     Druid=4,
   },
 })
+
 DefineSpell({
   Name="Glibness",
   Description={
@@ -10979,6 +11219,7 @@ DefineSpell({
     Bard=3,
   },
 })
+
 DefineSpell({
   Name="Glitterdust",
   Description={
@@ -11023,6 +11264,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Globe of Invulnerability",
   Description={
@@ -11063,6 +11305,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Globe of Invulnerability (Lesser)",
   Description={
@@ -11103,6 +11346,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Glyph of Warding",
   Description={
@@ -11147,6 +11391,7 @@ DefineSpell({
     Cleric=3,
   },
 })
+
 DefineSpell({
   Name="Glyph of Warding (Greater)",
   Description={
@@ -11191,6 +11436,7 @@ DefineSpell({
     Cleric=6,
   },
 })
+
 DefineSpell({
   Name="Goodberry",
   Description={
@@ -11230,6 +11476,7 @@ DefineSpell({
     Druid=1,
   },
 })
+
 DefineSpell({
   Name="Good Hope",
   Description={
@@ -11278,6 +11525,7 @@ DefineSpell({
     Bard=3,
   },
 })
+
 DefineSpell({
   Name="Grasping Hand",
   Description={
@@ -11327,6 +11575,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Grease",
   Description={
@@ -11371,6 +11620,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Guards and Wards",
   Description={
@@ -11411,6 +11661,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Guidance",
   Description={
@@ -11454,6 +11705,7 @@ DefineSpell({
     Druid=0,
   },
 })
+
 DefineSpell({
   Name="Gust of Wind",
   Description={
@@ -11499,6 +11751,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Hallow",
   Description={
@@ -11542,6 +11795,7 @@ DefineSpell({
     Druid=5,
   },
 })
+
 DefineSpell({
   Name="Hallucinatory Terrain",
   Description={
@@ -11586,6 +11840,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Harm",
   Description={
@@ -11630,6 +11885,7 @@ DefineSpell({
     Cleric=6,
   },
 })
+
 DefineSpell({
   Name="Haste",
   Description={
@@ -11675,6 +11931,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Halt Undead",
   Description={
@@ -11718,6 +11975,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Heal",
   Description={
@@ -11766,6 +12024,7 @@ DefineSpell({
     Druid=7,
   },
 })
+
 DefineSpell({
   Name="Heal (Mass)",
   Description={
@@ -11813,6 +12072,7 @@ DefineSpell({
     Cleric=9,
   },
 })
+
 DefineSpell({
   Name="Heal Mount",
   Description={
@@ -11858,6 +12118,7 @@ DefineSpell({
     Paladin=3,
   },
 })
+
 DefineSpell({
   Name="Heat Metal",
   Description={
@@ -11905,6 +12166,7 @@ DefineSpell({
     Druid=2,
   },
 })
+
 DefineSpell({
   Name="Helping Hand",
   Description={
@@ -11944,6 +12206,7 @@ DefineSpell({
     Cleric=3,
   },
 })
+
 DefineSpell({
   Name="Heroes' Feast",
   Description={
@@ -11993,6 +12256,7 @@ DefineSpell({
     Cleric=6,
   },
 })
+
 DefineSpell({
   Name="Heroism",
   Description={
@@ -12049,6 +12313,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Heroism (Greater)",
   Description={
@@ -12096,6 +12361,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Hide from Animals",
   Description={
@@ -12139,6 +12405,7 @@ DefineSpell({
     Ranger=1,
   },
 })
+
 DefineSpell({
   Name="Hide from Undead",
   Description={
@@ -12181,6 +12448,7 @@ DefineSpell({
     Cleric=1,
   },
 })
+
 DefineSpell({
   Name="Hideous Laughter",
   Description={
@@ -12231,6 +12499,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Hold Animal",
   Description={
@@ -12279,6 +12548,7 @@ DefineSpell({
     Ranger=2,
   },
 })
+
 DefineSpell({
   Name="Hold Monster",
   Description={
@@ -12332,6 +12602,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Hold Monster (Mass)",
   Description={
@@ -12378,6 +12649,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Hold Person",
   Description={
@@ -12430,6 +12702,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Hold Person (Mass)",
   Description={
@@ -12476,6 +12749,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Hold Portal",
   Description={
@@ -12516,6 +12790,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Holy Aura",
   Description={
@@ -12566,6 +12841,7 @@ DefineSpell({
     Cleric=8,
   },
 })
+
 DefineSpell({
   Name="Holy Smite",
   Description={
@@ -12616,6 +12892,7 @@ DefineSpell({
     Cleric=4,
   },
 })
+
 DefineSpell({
   Name="Holy Sword",
   Description={
@@ -12663,6 +12940,7 @@ DefineSpell({
     Paladin=4,
   },
 })
+
 DefineSpell({
   Name="Holy Word",
   Description={
@@ -12711,6 +12989,7 @@ DefineSpell({
     Cleric=7,
   },
 })
+
 DefineSpell({
   Name="Horrid Wilting",
   Description={
@@ -12757,6 +13036,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Hypnotic Pattern",
   Description={
@@ -12804,6 +13084,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Hypnotism",
   Description={
@@ -12854,6 +13135,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Ice Storm",
   Description={
@@ -12907,6 +13189,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Identify",
   Description={
@@ -12954,6 +13237,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Illusory Script",
   Description={
@@ -13001,6 +13285,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Illusory Wall",
   Description={
@@ -13044,6 +13329,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Imbue with Spell Ability",
   Description={
@@ -13091,6 +13377,7 @@ DefineSpell({
     Cleric=4,
   },
 })
+
 DefineSpell({
   Name="Implosion",
   Description={
@@ -13135,6 +13422,7 @@ DefineSpell({
     Cleric=9,
   },
 })
+
 DefineSpell({
   Name="Imprisonment",
   Description={
@@ -13175,6 +13463,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Incendiary Cloud",
   Description={
@@ -13227,6 +13516,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Inflict Critical Wounds",
   Description={
@@ -13271,6 +13561,7 @@ DefineSpell({
     Cleric=4,
   },
 })
+
 DefineSpell({
   Name="Inflict Critical Wounds (Mass)",
   Description={
@@ -13310,6 +13601,7 @@ DefineSpell({
     Cleric=8,
   },
 })
+
 DefineSpell({
   Name="Inflict Light Wounds",
   Description={
@@ -13352,6 +13644,7 @@ DefineSpell({
     Cleric=1,
   },
 })
+
 DefineSpell({
   Name="Inflict Light Wounds (Mass)",
   Description={
@@ -13391,6 +13684,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Inflict Moderate Wounds",
   Description={
@@ -13433,6 +13727,7 @@ DefineSpell({
     Cleric=2,
   },
 })
+
 DefineSpell({
   Name="Inflict Moderate Wounds (Mass)",
   Description={
@@ -13472,6 +13767,7 @@ DefineSpell({
     Cleric=6,
   },
 })
+
 DefineSpell({
   Name="Inflict Serious Wounds",
   Description={
@@ -13514,6 +13810,7 @@ DefineSpell({
     Cleric=3,
   },
 })
+
 DefineSpell({
   Name="Inflict Serious Wounds (Mass)",
   Description={
@@ -13553,6 +13850,7 @@ DefineSpell({
     Cleric=7,
   },
 })
+
 DefineSpell({
   Name="Insanity",
   Description={
@@ -13608,6 +13906,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Insect Plague",
   Description={
@@ -13651,6 +13950,7 @@ DefineSpell({
     Druid=5,
   },
 })
+
 DefineSpell({
   Name="Instant Summons",
   Description={
@@ -13703,6 +14003,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Interposing Hand",
   Description={
@@ -13746,6 +14047,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Invisibility",
   Description={
@@ -13799,6 +14101,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Invisibility (Greater)",
   Description={
@@ -13843,6 +14146,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Invisibility (Mass)",
   Description={
@@ -13892,6 +14196,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Invisibility Purge",
   Description={
@@ -13930,6 +14235,7 @@ DefineSpell({
     Cleric=3,
   },
 })
+
 DefineSpell({
   Name="Invisibility Sphere",
   Description={
@@ -13974,6 +14280,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Iron Body",
   Description={
@@ -14010,6 +14317,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Ironwood",
   Description={
@@ -14049,6 +14357,7 @@ DefineSpell({
     Druid=6,
   },
 })
+
 DefineSpell({
   Name="Irresistible Dance",
   Description={
@@ -14096,6 +14405,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Jump",
   Description={
@@ -14142,6 +14452,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Keen Edge",
   Description={
@@ -14185,6 +14496,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Knock",
   Description={
@@ -14225,6 +14537,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Know Direction",
   Description={
@@ -14265,6 +14578,7 @@ DefineSpell({
     Druid=0,
   },
 })
+
 DefineSpell({
   Name="Legend Lore",
   Description={
@@ -14308,6 +14622,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Levitate",
   Description={
@@ -14351,6 +14666,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Light",
   Description={
@@ -14398,6 +14714,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Lightning Bolt",
   Description={
@@ -14441,6 +14758,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Limited Wish",
   Description={
@@ -14481,6 +14799,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Liveoak",
   Description={
@@ -14520,6 +14839,7 @@ DefineSpell({
     Druid=6,
   },
 })
+
 DefineSpell({
   Name="Locate Creature",
   Description={
@@ -14561,6 +14881,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Locate Object",
   Description={
@@ -14609,6 +14930,7 @@ DefineSpell({
     Cleric=3,
   },
 })
+
 DefineSpell({
   Name="Longstrider",
   Description={
@@ -14653,6 +14975,7 @@ DefineSpell({
     Ranger=1,
   },
 })
+
 DefineSpell({
   Name="Lullaby",
   Description={
@@ -14698,6 +15021,7 @@ DefineSpell({
     Bard=0,
   },
 })
+
 DefineSpell({
   Name="Mage Armor",
   Description={
@@ -14747,6 +15071,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Mage Hand",
   Description={
@@ -14788,6 +15113,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Mage's Disjunction",
   Description={
@@ -14834,6 +15160,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Mage's Faithful Hound",
   Description={
@@ -14877,6 +15204,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Mage's Lucubration",
   Description={
@@ -14912,6 +15240,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Mage's Magnificent Mansion",
   Description={
@@ -14955,6 +15284,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Mage's Private Sanctum",
   Description={
@@ -14995,6 +15325,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Mage's Sword",
   Description={
@@ -15038,6 +15369,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Magic Aura",
   Description={
@@ -15082,6 +15414,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Magic Circle against Chaos",
   Description={
@@ -15133,6 +15466,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Magic Circle against Evil",
   Description={
@@ -15184,6 +15518,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Magic Circle against Good",
   Description={
@@ -15234,6 +15569,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Magic Circle against Law",
   Description={
@@ -15284,6 +15620,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Magic Fang",
   Description={
@@ -15327,6 +15664,7 @@ DefineSpell({
     Ranger=1,
   },
 })
+
 DefineSpell({
   Name="Magic Fang (Greater)",
   Description={
@@ -15370,6 +15708,7 @@ DefineSpell({
     Ranger=3,
   },
 })
+
 DefineSpell({
   Name="Magic Jar",
   Description={
@@ -15410,6 +15749,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Magic Missile",
   Description={
@@ -15453,6 +15793,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Magic Mouth",
   Description={
@@ -15506,6 +15847,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Magic Stone",
   Description={
@@ -15554,6 +15896,7 @@ DefineSpell({
     Druid=1,
   },
 })
+
 DefineSpell({
   Name="Magic Vestment",
   Description={
@@ -15607,6 +15950,7 @@ DefineSpell({
     Cleric=3,
   },
 })
+
 DefineSpell({
   Name="Magic Weapon",
   Description={
@@ -15655,6 +15999,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Magic Weapon (Greater)",
   Description={
@@ -15698,6 +16043,7 @@ DefineSpell({
     Cleric=4,
   },
 })
+
 DefineSpell({
   Name="Major Creation",
   Description={
@@ -15747,6 +16093,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Major Image",
   Description={
@@ -15791,6 +16138,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Make Whole",
   Description={
@@ -15833,6 +16181,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Mark of Justice",
   Description={
@@ -15873,6 +16222,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Maze",
   Description={
@@ -15916,6 +16266,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Meld into Stone",
   Description={
@@ -15958,6 +16309,7 @@ DefineSpell({
     Druid=3,
   },
 })
+
 DefineSpell({
   Name="Mending",
   Description={
@@ -16002,6 +16354,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Message",
   Description={
@@ -16049,6 +16402,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Meteor Swarm",
   Description={
@@ -16092,6 +16446,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Mind Blank",
   Description={
@@ -16141,6 +16496,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Mind Fog",
   Description={
@@ -16188,6 +16544,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Minor Creation",
   Description={
@@ -16237,6 +16594,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Minor Image",
   Description={
@@ -16281,6 +16639,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Miracle",
   Description={
@@ -16328,6 +16687,7 @@ DefineSpell({
     Cleric=9,
   },
 })
+
 DefineSpell({
   Name="Mirage Arcana",
   Description={
@@ -16372,6 +16732,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Mirror Image",
   Description={
@@ -16415,6 +16776,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Misdirection",
   Description={
@@ -16462,6 +16824,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Mislead",
   Description={
@@ -16516,6 +16879,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Mnemonic Enhancer",
   Description={
@@ -16551,6 +16915,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Modify Memory",
   Description={
@@ -16596,6 +16961,7 @@ DefineSpell({
     Bard=4,
   },
 })
+
 DefineSpell({
   Name="Moment of Prescience",
   Description={
@@ -16638,6 +17004,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Mount",
   Description={
@@ -16681,6 +17048,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Move Earth",
   Description={
@@ -16726,6 +17094,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Neutralize Poison",
   Description={
@@ -16776,6 +17145,7 @@ DefineSpell({
     Paladin=4,
   },
 })
+
 DefineSpell({
   Name="Nightmare",
   Description={
@@ -16830,6 +17200,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Nondetection",
   Description={
@@ -16880,6 +17251,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Obscure Object",
   Description={
@@ -16923,6 +17295,7 @@ DefineSpell({
     Cleric=3,
   },
 })
+
 DefineSpell({
   Name="Obscuring Mist",
   Description={
@@ -16983,6 +17356,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Open/Close",
   Description={
@@ -17024,6 +17398,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Order's Wrath",
   Description={
@@ -17071,6 +17446,7 @@ DefineSpell({
     Cleric=4,
   },
 })
+
 DefineSpell({
   Name="Overland Flight",
   Description={
@@ -17107,6 +17483,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Owl's Wisdom",
   Description={
@@ -17155,6 +17532,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Owl's Wisdom (Mass)",
   Description={
@@ -17198,6 +17576,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Passwall",
   Description={
@@ -17238,6 +17617,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Pass without Trace",
   Description={
@@ -17281,6 +17661,7 @@ DefineSpell({
     Ranger=1,
   },
 })
+
 DefineSpell({
   Name="Permanency",
   Description={
@@ -17321,6 +17702,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Permanent Image",
   Description={
@@ -17365,6 +17747,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Persistent Image",
   Description={
@@ -17409,6 +17792,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Phantasmal Killer",
   Description={
@@ -17462,6 +17846,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Phantom Steed",
   Description={
@@ -17506,6 +17891,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Phantom Trap",
   Description={
@@ -17549,6 +17935,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Phase Door",
   Description={
@@ -17598,6 +17985,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Planar Ally",
   Description={
@@ -17640,6 +18028,7 @@ DefineSpell({
     Cleric=6,
   },
 })
+
 DefineSpell({
   Name="Planar Ally (Greater)",
   Description={
@@ -17682,6 +18071,7 @@ DefineSpell({
     Cleric=8,
   },
 })
+
 DefineSpell({
   Name="Planar Ally (Lesser)",
   Description={
@@ -17724,6 +18114,7 @@ DefineSpell({
     Cleric=4,
   },
 })
+
 DefineSpell({
   Name="Planar Binding",
   Description={
@@ -17773,6 +18164,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Planar Binding (Greater)",
   Description={
@@ -17816,6 +18208,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Planar Binding (Lesser)",
   Description={
@@ -17859,6 +18252,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Plane Shift",
   Description={
@@ -17904,6 +18298,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Plant Growth",
   Description={
@@ -17949,6 +18344,7 @@ DefineSpell({
     Ranger=3,
   },
 })
+
 DefineSpell({
   Name="Plant Shape I",
   Description={
@@ -17988,6 +18384,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Plant Shape II",
   Description={
@@ -18027,6 +18424,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Plant Shape III",
   Description={
@@ -18066,6 +18464,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Poison",
   Description={
@@ -18109,6 +18508,7 @@ DefineSpell({
     Cleric=4,
   },
 })
+
 DefineSpell({
   Name="Polar Ray",
   Description={
@@ -18152,6 +18552,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Polymorph",
   Description={
@@ -18195,6 +18596,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Polymorph (Greater)",
   Description={
@@ -18238,6 +18640,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Polymorph Any Object",
   Description={
@@ -18281,6 +18684,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Power Word Blind",
   Description={
@@ -18336,6 +18740,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Power Word Kill",
   Description={
@@ -18389,6 +18794,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Power Word Stun",
   Description={
@@ -18441,6 +18847,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Prayer",
   Description={
@@ -18495,6 +18902,7 @@ DefineSpell({
     Paladin=3,
   },
 })
+
 DefineSpell({
   Name="Prestidigitation",
   Description={
@@ -18536,6 +18944,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Prismatic Sphere",
   Description={
@@ -18588,6 +18997,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Prismatic Spray",
   Description={
@@ -18628,6 +19038,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Prismatic Wall",
   Description={
@@ -18668,6 +19079,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Prying Eyes",
   Description={
@@ -18708,6 +19120,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Prying Eyes (Greater)",
   Description={
@@ -18748,6 +19161,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Produce Flame",
   Description={
@@ -18795,6 +19209,7 @@ DefineSpell({
     Druid=1,
   },
 })
+
 DefineSpell({
   Name="Programmed Image",
   Description={
@@ -18839,6 +19254,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Project Image",
   Description={
@@ -18883,6 +19299,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Protection from Arrows",
   Description={
@@ -18926,6 +19343,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Protection from Chaos",
   Description={
@@ -18980,6 +19398,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Protection from Energy",
   Description={
@@ -19035,6 +19454,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Protection from Evil",
   Description={
@@ -19089,6 +19509,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Protection from Good",
   Description={
@@ -19142,6 +19563,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Protection from Law",
   Description={
@@ -19195,6 +19617,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Protection from Spells",
   Description={
@@ -19241,6 +19664,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Purify Food and Drink",
   Description={
@@ -19281,6 +19705,7 @@ DefineSpell({
     Druid=0,
   },
 })
+
 DefineSpell({
   Name="Pyrotechnics",
   Description={
@@ -19326,6 +19751,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Quench",
   Description={
@@ -19365,6 +19791,7 @@ DefineSpell({
     Druid=3,
   },
 })
+
 DefineSpell({
   Name="Rage",
   Description={
@@ -19424,6 +19851,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Rainbow Pattern",
   Description={
@@ -19471,6 +19899,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Raise Dead",
   Description={
@@ -19513,6 +19942,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Ray of Enfeeblement",
   Description={
@@ -19553,6 +19983,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Ray of Exhaustion",
   Description={
@@ -19593,6 +20024,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Ray of Frost",
   Description={
@@ -19636,6 +20068,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Read Magic",
   Description={
@@ -19678,6 +20111,7 @@ DefineSpell({
     Ranger=1,
   },
 })
+
 DefineSpell({
   Name="Reduce Animal",
   Description={
@@ -19721,6 +20155,7 @@ DefineSpell({
     Ranger=3,
   },
 })
+
 DefineSpell({
   Name="Reduce Person",
   Description={
@@ -19764,6 +20199,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Reduce Person (Mass)",
   Description={
@@ -19804,6 +20240,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Refuge",
   Description={
@@ -19857,6 +20294,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Regenerate",
   Description={
@@ -19905,6 +20343,7 @@ DefineSpell({
     Druid=9,
   },
 })
+
 DefineSpell({
   Name="Reincarnate",
   Description={
@@ -19944,6 +20383,7 @@ DefineSpell({
     Druid=4,
   },
 })
+
 DefineSpell({
   Name="Remove Blindness/Deafness",
   Description={
@@ -19990,6 +20430,7 @@ DefineSpell({
     Paladin=3,
   },
 })
+
 DefineSpell({
   Name="Remove Curse",
   Description={
@@ -20042,6 +20483,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Remove Disease",
   Description={
@@ -20089,6 +20531,7 @@ DefineSpell({
     Ranger=3,
   },
 })
+
 DefineSpell({
   Name="Remove Fear",
   Description={
@@ -20138,6 +20581,7 @@ DefineSpell({
     Cleric=1,
   },
 })
+
 DefineSpell({
   Name="Remove Paralysis",
   Description={
@@ -20189,6 +20633,7 @@ DefineSpell({
     Paladin=2,
   },
 })
+
 DefineSpell({
   Name="Repel Metal or Stone",
   Description={
@@ -20231,6 +20676,7 @@ DefineSpell({
     Druid=8,
   },
 })
+
 DefineSpell({
   Name="Repel Vermin",
   Description={
@@ -20274,6 +20720,7 @@ DefineSpell({
     Druid=4,
   },
 })
+
 DefineSpell({
   Name="Repel Wood",
   Description={
@@ -20318,6 +20765,7 @@ DefineSpell({
     Druid=6,
   },
 })
+
 DefineSpell({
   Name="Repulsion",
   Description={
@@ -20368,6 +20816,7 @@ DefineSpell({
     Cleric=7,
   },
 })
+
 DefineSpell({
   Name="Resilient Sphere",
   Description={
@@ -20411,6 +20860,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Resistance",
   Description={
@@ -20459,6 +20909,7 @@ DefineSpell({
     Paladin=1,
   },
 })
+
 DefineSpell({
   Name="Resist Energy",
   Description={
@@ -20514,6 +20965,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Restoration",
   Description={
@@ -20557,6 +21009,7 @@ DefineSpell({
     Paladin=4,
   },
 })
+
 DefineSpell({
   Name="Restoration (Greater)",
   Description={
@@ -20599,6 +21052,7 @@ DefineSpell({
     Cleric=7,
   },
 })
+
 DefineSpell({
   Name="Restoration (Lesser)",
   Description={
@@ -20647,6 +21101,7 @@ DefineSpell({
     Druid=2,
   },
 })
+
 DefineSpell({
   Name="Resurrection",
   Description={
@@ -20689,6 +21144,7 @@ DefineSpell({
     Cleric=7,
   },
 })
+
 DefineSpell({
   Name="Reverse Gravity",
   Description={
@@ -20731,6 +21187,7 @@ DefineSpell({
     Druid=8,
   },
 })
+
 DefineSpell({
   Name="Righteous Might",
   Description={
@@ -20774,6 +21231,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Rope Trick",
   Description={
@@ -20814,6 +21272,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Rusting Grasp",
   Description={
@@ -20853,6 +21312,7 @@ DefineSpell({
     Druid=4,
   },
 })
+
 DefineSpell({
   Name="Sanctuary",
   Description={
@@ -20900,6 +21360,7 @@ DefineSpell({
     Cleric=1,
   },
 })
+
 DefineSpell({
   Name="Scare",
   Description={
@@ -20948,6 +21409,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Scintillating Pattern",
   Description={
@@ -21000,6 +21462,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Scorching Ray",
   Description={
@@ -21043,6 +21506,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Screen",
   Description={
@@ -21092,6 +21556,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Scrying",
   Description={
@@ -21139,6 +21604,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Scrying (Greater)",
   Description={
@@ -21186,6 +21652,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Sculpt Sound",
   Description={
@@ -21228,6 +21695,7 @@ DefineSpell({
     Bard=3,
   },
 })
+
 DefineSpell({
   Name="Searing Light",
   Description={
@@ -21275,6 +21743,7 @@ DefineSpell({
     Cleric=3,
   },
 })
+
 DefineSpell({
   Name="Secret Chest",
   Description={
@@ -21318,6 +21787,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Secret Page",
   Description={
@@ -21365,6 +21835,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Secure Shelter",
   Description={
@@ -21409,6 +21880,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="See Invisibility",
   Description={
@@ -21449,6 +21921,7 @@ DefineSpell({
     Bard=3,
   },
 })
+
 DefineSpell({
   Name="Seeming",
   Description={
@@ -21493,6 +21966,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Sending",
   Description={
@@ -21535,6 +22009,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Sepia Snake Sigil",
   Description={
@@ -21582,6 +22057,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Sequester",
   Description={
@@ -21622,6 +22098,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Shades",
   Description={
@@ -21671,6 +22148,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Shadow Conjuration",
   Description={
@@ -21721,6 +22199,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Shadow Conjuration (Greater)",
   Description={
@@ -21764,6 +22243,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Shadow Evocation",
   Description={
@@ -21808,6 +22288,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Shadow Evocation (Greater)",
   Description={
@@ -21857,6 +22338,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Shadow Walk",
   Description={
@@ -21907,6 +22389,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Shambler",
   Description={
@@ -21954,6 +22437,7 @@ DefineSpell({
     Druid=9,
   },
 })
+
 DefineSpell({
   Name="Shapechange",
   Description={
@@ -22000,6 +22484,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Shatter",
   Description={
@@ -22046,6 +22531,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Shield",
   Description={
@@ -22089,6 +22575,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Shield of Faith",
   Description={
@@ -22136,6 +22623,7 @@ DefineSpell({
     Cleric=1,
   },
 })
+
 DefineSpell({
   Name="Shield of Law",
   Description={
@@ -22183,6 +22671,7 @@ DefineSpell({
     Cleric=8,
   },
 })
+
 DefineSpell({
   Name="Shield Other",
   Description={
@@ -22234,6 +22723,7 @@ DefineSpell({
     Paladin=2,
   },
 })
+
 DefineSpell({
   Name="Shillelagh",
   Description={
@@ -22273,6 +22763,7 @@ DefineSpell({
     Druid=1,
   },
 })
+
 DefineSpell({
   Name="Shrink Item",
   Description={
@@ -22313,6 +22804,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Shocking Grasp",
   Description={
@@ -22359,6 +22851,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Shout",
   Description={
@@ -22409,6 +22902,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Shout (Greater)",
   Description={
@@ -22453,6 +22947,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Silence",
   Description={
@@ -22500,6 +22995,7 @@ DefineSpell({
     Cleric=2,
   },
 })
+
 DefineSpell({
   Name="Silent Image",
   Description={
@@ -22544,6 +23040,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Simulacrum",
   Description={
@@ -22587,6 +23084,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Slay Living",
   Description={
@@ -22637,6 +23135,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Sleep",
   Description={
@@ -22687,6 +23186,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Sleet Storm",
   Description={
@@ -22740,6 +23240,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Slow",
   Description={
@@ -22784,6 +23285,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Snare",
   Description={
@@ -22824,6 +23326,7 @@ DefineSpell({
     Druid=3,
   },
 })
+
 DefineSpell({
   Name="Soften Earth and Stone",
   Description={
@@ -22871,6 +23374,7 @@ DefineSpell({
     Druid=2,
   },
 })
+
 DefineSpell({
   Name="Solid Fog",
   Description={
@@ -22914,6 +23418,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Song of Discord",
   Description={
@@ -22960,6 +23465,7 @@ DefineSpell({
     Bard=5,
   },
 })
+
 DefineSpell({
   Name="Soul Bind",
   Description={
@@ -23002,6 +23508,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Sound Burst",
   Description={
@@ -23046,6 +23553,7 @@ DefineSpell({
     Cleric=2,
   },
 })
+
 DefineSpell({
   Name="Speak with Animals",
   Description={
@@ -23087,6 +23595,7 @@ DefineSpell({
     Bard=3,
   },
 })
+
 DefineSpell({
   Name="Speak with Dead",
   Description={
@@ -23140,6 +23649,7 @@ DefineSpell({
     Cleric=3,
   },
 })
+
 DefineSpell({
   Name="Speak with Plants",
   Description={
@@ -23181,6 +23691,7 @@ DefineSpell({
     Bard=4,
   },
 })
+
 DefineSpell({
   Name="Spectral Hand",
   Description={
@@ -23221,6 +23732,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Spell Immunity",
   Description={
@@ -23268,6 +23780,7 @@ DefineSpell({
     Cleric=4,
   },
 })
+
 DefineSpell({
   Name="Spell Immunity (Greater)",
   Description={
@@ -23307,6 +23820,7 @@ DefineSpell({
     Cleric=8,
   },
 })
+
 DefineSpell({
   Name="Spell Resistance",
   Description={
@@ -23354,6 +23868,7 @@ DefineSpell({
     Cleric=5,
   },
 })
+
 DefineSpell({
   Name="Spellstaff",
   Description={
@@ -23393,6 +23908,7 @@ DefineSpell({
     Druid=6,
   },
 })
+
 DefineSpell({
   Name="Spell Turning",
   Description={
@@ -23438,6 +23954,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Spider Climb",
   Description={
@@ -23483,6 +24000,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Spike Growth",
   Description={
@@ -23523,6 +24041,7 @@ DefineSpell({
     Druid=3,
   },
 })
+
 DefineSpell({
   Name="Spike Stones",
   Description={
@@ -23570,6 +24089,7 @@ DefineSpell({
     Druid=4,
   },
 })
+
 DefineSpell({
   Name="Spiritual Weapon",
   Description={
@@ -23617,6 +24137,7 @@ DefineSpell({
     Cleric=2,
   },
 })
+
 DefineSpell({
   Name="Stabilize",
   Description={
@@ -23663,6 +24184,7 @@ DefineSpell({
     Druid=0,
   },
 })
+
 DefineSpell({
   Name="Statue",
   Description={
@@ -23703,6 +24225,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Status",
   Description={
@@ -23745,6 +24268,7 @@ DefineSpell({
     Cleric=2,
   },
 })
+
 DefineSpell({
   Name="Stinking Cloud",
   Description={
@@ -23788,6 +24312,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Stone Shape",
   Description={
@@ -23842,6 +24367,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Stoneskin",
   Description={
@@ -23892,6 +24418,7 @@ DefineSpell({
     Druid=5,
   },
 })
+
 DefineSpell({
   Name="Stone Tell",
   Description={
@@ -23927,6 +24454,7 @@ DefineSpell({
     Druid=6,
   },
 })
+
 DefineSpell({
   Name="Stone to Flesh",
   Description={
@@ -23967,6 +24495,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Storm of Vengeance",
   Description={
@@ -24018,6 +24547,7 @@ DefineSpell({
     Druid=9,
   },
 })
+
 DefineSpell({
   Name="Suggestion",
   Description={
@@ -24075,6 +24605,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Suggestion (Mass)",
   Description={
@@ -24123,6 +24654,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Summon Instrument",
   Description={
@@ -24165,6 +24697,7 @@ DefineSpell({
     Bard=0,
   },
 })
+
 DefineSpell({
   Name="Summon Monster I",
   Description={
@@ -24211,6 +24744,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Summon Monster II",
   Description={
@@ -24257,6 +24791,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Summon Monster III",
   Description={
@@ -24303,6 +24838,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Summon Monster IV",
   Description={
@@ -24349,6 +24885,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Summon Monster V",
   Description={
@@ -24395,6 +24932,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Summon Monster VI",
   Description={
@@ -24441,6 +24979,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Summon Monster VII",
   Description={
@@ -24486,6 +25025,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Summon Monster VIII",
   Description={
@@ -24531,6 +25071,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Summon Monster IX",
   Description={
@@ -24576,6 +25117,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Summon Nature's Ally I",
   Description={
@@ -24619,6 +25161,7 @@ DefineSpell({
     Ranger=1,
   },
 })
+
 DefineSpell({
   Name="Summon Nature's Ally II",
   Description={
@@ -24662,6 +25205,7 @@ DefineSpell({
     Ranger=2,
   },
 })
+
 DefineSpell({
   Name="Summon Nature's Ally III",
   Description={
@@ -24705,6 +25249,7 @@ DefineSpell({
     Ranger=3,
   },
 })
+
 DefineSpell({
   Name="Summon Nature's Ally IV",
   Description={
@@ -24748,6 +25293,7 @@ DefineSpell({
     Ranger=4,
   },
 })
+
 DefineSpell({
   Name="Summon Nature's Ally V",
   Description={
@@ -24790,6 +25336,7 @@ DefineSpell({
     Druid=5,
   },
 })
+
 DefineSpell({
   Name="Summon Nature's Ally VI",
   Description={
@@ -24832,6 +25379,7 @@ DefineSpell({
     Druid=6,
   },
 })
+
 DefineSpell({
   Name="Summon Nature's Ally VII",
   Description={
@@ -24874,6 +25422,7 @@ DefineSpell({
     Druid=7,
   },
 })
+
 DefineSpell({
   Name="Summon Nature's Ally VIII",
   Description={
@@ -24916,6 +25465,7 @@ DefineSpell({
     Druid=8,
   },
 })
+
 DefineSpell({
   Name="Summon Nature's Ally IX",
   Description={
@@ -24958,6 +25508,7 @@ DefineSpell({
     Druid=9,
   },
 })
+
 DefineSpell({
   Name="Summon Swarm",
   Description={
@@ -25009,6 +25560,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Sunbeam",
   Description={
@@ -25056,6 +25608,7 @@ DefineSpell({
     Druid=7,
   },
 })
+
 DefineSpell({
   Name="Sunburst",
   Description={
@@ -25106,6 +25659,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Symbol of Death",
   Description={
@@ -25156,6 +25710,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Symbol of Fear",
   Description={
@@ -25199,6 +25754,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Symbol of Insanity",
   Description={
@@ -25247,6 +25803,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Symbol of Pain",
   Description={
@@ -25292,6 +25849,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Symbol of Persuasion",
   Description={
@@ -25340,6 +25898,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Symbol of Sleep",
   Description={
@@ -25385,6 +25944,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Symbol of Stunning",
   Description={
@@ -25430,6 +25990,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Symbol of Weakness",
   Description={
@@ -25469,6 +26030,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Sympathetic Vibration",
   Description={
@@ -25511,6 +26073,7 @@ DefineSpell({
     Bard=6,
   },
 })
+
 DefineSpell({
   Name="Sympathy",
   Description={
@@ -25559,6 +26122,7 @@ DefineSpell({
     Druid=9,
   },
 })
+
 DefineSpell({
   Name="Telekinesis",
   Description={
@@ -25599,6 +26163,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Telekinetic Sphere",
   Description={
@@ -25642,6 +26207,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Telepathic Bond",
   Description={
@@ -25688,6 +26254,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Teleport",
   Description={
@@ -25737,6 +26304,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Teleport (Greater)",
   Description={
@@ -25786,6 +26354,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Teleport Object",
   Description={
@@ -25829,6 +26398,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Teleportation Circle",
   Description={
@@ -25878,6 +26448,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Temporal Stasis",
   Description={
@@ -25918,6 +26489,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Time Stop",
   Description={
@@ -25964,6 +26536,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Tiny Hut",
   Description={
@@ -26008,6 +26581,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Tongues",
   Description={
@@ -26054,6 +26628,7 @@ DefineSpell({
     Cleric=4,
   },
 })
+
 DefineSpell({
   Name="Touch of Fatigue",
   Description={
@@ -26097,6 +26672,7 @@ DefineSpell({
     Wizard=0,
   },
 })
+
 DefineSpell({
   Name="Touch of Idiocy",
   Description={
@@ -26152,6 +26728,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Transformation",
   Description={
@@ -26188,6 +26765,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Transmute Metal to Wood",
   Description={
@@ -26227,6 +26805,7 @@ DefineSpell({
     Druid=7,
   },
 })
+
 DefineSpell({
   Name="Transmute Mud to Rock",
   Description={
@@ -26272,6 +26851,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Transmute Rock to Mud",
   Description={
@@ -26317,6 +26897,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Transport via Plants",
   Description={
@@ -26359,6 +26940,7 @@ DefineSpell({
     Druid=6,
   },
 })
+
 DefineSpell({
   Name="Trap the Soul",
   Description={
@@ -26402,6 +26984,7 @@ DefineSpell({
     Wizard=8,
   },
 })
+
 DefineSpell({
   Name="Tree Shape",
   Description={
@@ -26441,6 +27024,7 @@ DefineSpell({
     Ranger=3,
   },
 })
+
 DefineSpell({
   Name="Tree Stride",
   Description={
@@ -26480,6 +27064,7 @@ DefineSpell({
     Druid=5,
   },
 })
+
 DefineSpell({
   Name="True Resurrection",
   Description={
@@ -26522,6 +27107,7 @@ DefineSpell({
     Cleric=9,
   },
 })
+
 DefineSpell({
   Name="True Seeing",
   Description={
@@ -26570,6 +27156,7 @@ DefineSpell({
     Druid=7,
   },
 })
+
 DefineSpell({
   Name="True Strike",
   Description={
@@ -26618,6 +27205,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Undeath to Death",
   Description={
@@ -26668,6 +27256,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Undetectable Alignment",
   Description={
@@ -26713,6 +27302,7 @@ DefineSpell({
     Paladin=2,
   },
 })
+
 DefineSpell({
   Name="Unhallow",
   Description={
@@ -26756,6 +27346,7 @@ DefineSpell({
     Druid=5,
   },
 })
+
 DefineSpell({
   Name="Unholy Aura",
   Description={
@@ -26803,6 +27394,7 @@ DefineSpell({
     Cleric=8,
   },
 })
+
 DefineSpell({
   Name="Unholy Blight",
   Description={
@@ -26850,6 +27442,7 @@ DefineSpell({
     Cleric=4,
   },
 })
+
 DefineSpell({
   Name="Unseen Servant",
   Description={
@@ -26894,6 +27487,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Vampiric Touch",
   Description={
@@ -26937,6 +27531,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Veil",
   Description={
@@ -26981,6 +27576,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Ventriloquism",
   Description={
@@ -27025,6 +27621,7 @@ DefineSpell({
     Wizard=1,
   },
 })
+
 DefineSpell({
   Name="Virtue",
   Description={
@@ -27069,6 +27666,7 @@ DefineSpell({
     Paladin=1,
   },
 })
+
 DefineSpell({
   Name="Vision",
   Description={
@@ -27105,6 +27703,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Wail of the Banshee",
   Description={
@@ -27158,6 +27757,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Wall of Fire",
   Description={
@@ -27208,6 +27808,7 @@ DefineSpell({
     Druid=5,
   },
 })
+
 DefineSpell({
   Name="Wall of Force",
   Description={
@@ -27251,6 +27852,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Wall of Ice",
   Description={
@@ -27298,6 +27900,7 @@ DefineSpell({
     Wizard=4,
   },
 })
+
 DefineSpell({
   Name="Wall of Iron",
   Description={
@@ -27347,6 +27950,7 @@ DefineSpell({
     Wizard=6,
   },
 })
+
 DefineSpell({
   Name="Wall of Stone",
   Description={
@@ -27401,6 +28005,7 @@ DefineSpell({
     Druid=6,
   },
 })
+
 DefineSpell({
   Name="Wall of Thorns",
   Description={
@@ -27448,6 +28053,7 @@ DefineSpell({
     Druid=5,
   },
 })
+
 DefineSpell({
   Name="Warp Wood",
   Description={
@@ -27487,6 +28093,7 @@ DefineSpell({
     Druid=2,
   },
 })
+
 DefineSpell({
   Name="Water Breathing",
   Description={
@@ -27538,6 +28145,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Water Walk",
   Description={
@@ -27584,6 +28192,7 @@ DefineSpell({
     Ranger=3,
   },
 })
+
 DefineSpell({
   Name="Waves of Exhaustion",
   Description={
@@ -27630,6 +28239,7 @@ DefineSpell({
     Wizard=7,
   },
 })
+
 DefineSpell({
   Name="Waves of Fatigue",
   Description={
@@ -27670,6 +28280,7 @@ DefineSpell({
     Wizard=5,
   },
 })
+
 DefineSpell({
   Name="Web",
   Description={
@@ -27713,6 +28324,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Weird",
   Description={
@@ -27766,6 +28378,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Whirlwind",
   Description={
@@ -27816,6 +28429,7 @@ DefineSpell({
     Druid=8,
   },
 })
+
 DefineSpell({
   Name="Whispering Wind",
   Description={
@@ -27860,6 +28474,7 @@ DefineSpell({
     Wizard=2,
   },
 })
+
 DefineSpell({
   Name="Wind Walk",
   Description={
@@ -27906,6 +28521,7 @@ DefineSpell({
     Druid=7,
   },
 })
+
 DefineSpell({
   Name="Wind Wall",
   Description={
@@ -27958,6 +28574,7 @@ DefineSpell({
     Wizard=3,
   },
 })
+
 DefineSpell({
   Name="Wish",
   Description={
@@ -27998,6 +28615,7 @@ DefineSpell({
     Wizard=9,
   },
 })
+
 DefineSpell({
   Name="Wood Shape",
   Description={
@@ -28042,6 +28660,7 @@ DefineSpell({
     Druid=2,
   },
 })
+
 DefineSpell({
   Name="Word of Recall",
   Description={
@@ -28085,6 +28704,7 @@ DefineSpell({
     Druid=8,
   },
 })
+
 DefineSpell({
   Name="Word of Chaos",
   Description={
@@ -28133,6 +28753,7 @@ DefineSpell({
     Cleric=7,
   },
 })
+
 DefineSpell({
   Name="Zone of Silence",
   Description={
@@ -28171,6 +28792,7 @@ DefineSpell({
     Bard=4,
   },
 })
+
 DefineSpell({
   Name="Zone of Truth",
   Description={
@@ -28217,6 +28839,7 @@ DefineSpell({
     Paladin=2,
   },
 })
+
 ModifySpell({
   Name="Aid",
   TemporaryBonus={
@@ -28236,6 +28859,7 @@ ModifySpell({
     Format="Grants attack bonus and temporary HP",
   },
 })
+
 ModifySpell({
   Name="Animal Growth",
   TemporaryBonus={
@@ -28252,6 +28876,7 @@ ModifySpell({
     Format="The target animal grows to twice its normal size and eight times its normal weight.",
   },
 })
+
 ModifySpell({
   Name="Barkskin",
   TemporaryBonus={
@@ -28271,6 +28896,7 @@ ModifySpell({
     Format="Grants natural armor bonus based on caster level",
   },
 })
+
 ModifySpell({
   Name="Bear's Endurance",
   TemporaryBonus={
@@ -28290,6 +28916,7 @@ ModifySpell({
     Format="Grants +4 enhancement bonus to Constitution",
   },
 })
+
 ModifySpell({
   Name="Bless",
   TemporaryBonus={
@@ -28309,6 +28936,7 @@ ModifySpell({
     Format="Grants attack bonus",
   },
 })
+
 ModifySpell({
   Name="Bless Weapon",
   TemporaryBonus={
@@ -28328,6 +28956,7 @@ ModifySpell({
     Format="The weapon is treated as having a +1 enhancement bonus for the purpose of bypassing the DR of evil creatures or striking evil incorporeal creatures [though the spell doesn't grant an actual enhancement bonus]. The weapon also becomes good-aligned, which means it can bypass the DR of certain creatures. [This effect overrides and suppresses any other alignment the weapon might have.]",
   },
 })
+
 ModifySpell({
   Name="Bull's Strength",
   TemporaryBonus={
@@ -28347,6 +28976,7 @@ ModifySpell({
     Format="Grants +4 enhancement bonus to Strength",
   },
 })
+
 ModifySpell({
   Name="Cat's Grace",
   TemporaryBonus={
@@ -28366,6 +28996,7 @@ ModifySpell({
     Format="Grants +4 enhancement bonus to Dexterity",
   },
 })
+
 DefineSpell({
   Name="Desecrate (Standard)",
   SourceLink="http://paizo.com/pathfinderRPG/prd/spells/desecrate.html#_desecrate",
@@ -28389,6 +29020,7 @@ DefineSpell({
     Target="ANYPC",
   },
 })
+
 DefineSpell({
   Name="Desecrate (With Altar)",
   SourceLink="http://paizo.com/pathfinderRPG/prd/spells/desecrate.html#_desecrate",
@@ -28412,6 +29044,7 @@ DefineSpell({
     Target="ANYPC",
   },
 })
+
 DefineSpell({
   Name="Desecrate (Summoned Undead)",
   SourceLink="http://paizo.com/pathfinderRPG/prd/spells/desecrate.html#_desecrate",
@@ -28431,6 +29064,7 @@ DefineSpell({
     Target="ANYPC",
   },
 })
+
 DefineSpell({
   Name="Desecrate (Summoned Undead with Altar)",
   SourceLink="http://paizo.com/pathfinderRPG/prd/spells/desecrate.html#_desecrate",
@@ -28450,6 +29084,7 @@ DefineSpell({
     Target="ANYPC",
   },
 })
+
 ModifySpell({
   Name="Disguise Self",
   TemporaryBonus={
@@ -28469,6 +29104,7 @@ ModifySpell({
     Format="Grants Disguise skill bonus",
   },
 })
+
 ModifySpell({
   Name="Divine Favor",
   TemporaryBonus={
@@ -28490,6 +29126,7 @@ ModifySpell({
     Format="Grants attack and damage bonus",
   },
 })
+
 ModifySpell({
   Name="Divine Power",
   TemporaryBonus={
@@ -28509,6 +29146,7 @@ ModifySpell({
     Format="Grants attack, damage, strength based skill bonuses and temporary HP",
   },
 })
+
 ModifySpell({
   Name="Eagle's Splendor",
   TemporaryBonus={
@@ -28528,6 +29166,7 @@ ModifySpell({
     Format="Grants +4 enhancement bonus to Charisma",
   },
 })
+
 ModifySpell({
   Name="Enlarge Person",
   TemporaryBonus={
@@ -28544,6 +29183,7 @@ ModifySpell({
     Format="Causes instant growth of a humanoid creature, doubling its height and multiplying its weight by 8",
   },
 })
+
 ModifySpell({
   Name="Expeditious Retreat",
   TemporaryBonus={
@@ -28561,6 +29201,7 @@ ModifySpell({
     Format="Grants +30 to Walk speed",
   },
 })
+
 ModifySpell({
   Name="False Life",
   TemporaryBonus={
@@ -28580,6 +29221,7 @@ ModifySpell({
     Format="Grants temporary hit points equal to 1d10 + 1 per caster level (maximum +10)",
   },
 })
+
 ModifySpell({
   Name="Fly",
   TemporaryBonus={
@@ -28604,6 +29246,7 @@ ModifySpell({
     Format="Grants 60 Fly speed, or 40 if Medium Armor. Adds half Caster Level to Fly Skill.",
   },
 })
+
 ModifySpell({
   Name="Foresight",
   TemporaryBonus={
@@ -28623,6 +29266,7 @@ ModifySpell({
     Format="Grants a +2 insight bonus to AC and on Reflex saves",
   },
 })
+
 ModifySpell({
   Name="Fox's Cunning",
   TemporaryBonus={
@@ -28642,6 +29286,7 @@ ModifySpell({
     Format="Grants +4 enhancement bonus to Intelligence",
   },
 })
+
 ModifySpell({
   Name="Fox's Cunning (Mass)",
   TemporaryBonus={
@@ -28661,6 +29306,7 @@ ModifySpell({
     Format="Grants +4 enhancement bonus to Intelligence",
   },
 })
+
 ModifySpell({
   Name="Good Hope",
   TemporaryBonus={
@@ -28680,6 +29326,7 @@ ModifySpell({
     Format="Grants a +2 morale bonus on saving throws, attack rolls, ability checks, skill checks, and weapon damage rolls",
   },
 })
+
 ModifySpell({
   Name="Haste",
   TemporaryBonus={
@@ -28699,6 +29346,7 @@ ModifySpell({
     Format="Grants a +1 bonus on attack rolls and a +1 dodge bonus to AC and Reflex saves",
   },
 })
+
 ModifySpell({
   Name="Heroes' Feast",
   TemporaryBonus={
@@ -28718,6 +29366,7 @@ ModifySpell({
     Format="Grants 1d8 + 1/2 the casters level (max 10) of bonus hit points",
   },
 })
+
 ModifySpell({
   Name="Heroism",
   TemporaryBonus={
@@ -28737,6 +29386,7 @@ ModifySpell({
     Format="Grants a +2 morale bonus on attack rolls, saves, and skill checks",
   },
 })
+
 ModifySpell({
   Name="Heroism (Greater)",
   TemporaryBonus={
@@ -28756,6 +29406,7 @@ ModifySpell({
     Format="Grants a +4 morale bonus on attack rolls, saves, and skill checks, immunity to fear effects, and temporary hit points equal to your caster level (maximum 20)",
   },
 })
+
 ModifySpell({
   Name="Holy Aura",
   TemporaryBonus={
@@ -28775,6 +29426,7 @@ ModifySpell({
     Format="Grants a +4 deflection bonus to AC and a +4 resistance bonus on saves",
   },
 })
+
 ModifySpell({
   Name="Jump",
   TemporaryBonus={
@@ -28795,6 +29447,7 @@ ModifySpell({
     Format="Grants an enhancement bonus on Acrobatics checks made to attempt high jumps or long jumps",
   },
 })
+
 ModifySpell({
   Name="Longstrider",
   TemporaryBonus={
@@ -28814,6 +29467,7 @@ ModifySpell({
     Format="Grants a +10 foot enhancement bonus to your base speed",
   },
 })
+
 ModifySpell({
   Name="Mage Armor",
   TemporaryBonus={
@@ -28833,6 +29487,7 @@ ModifySpell({
     Format="Grants a +4 armor bonus to AC",
   },
 })
+
 ModifySpell({
   Name="Magic Fang",
   TemporaryBonus={
@@ -28853,6 +29508,7 @@ ModifySpell({
     Format="Grants one natural weapon or unarmed strike of the subject a +1 enhancement bonus on attack and damage rolls",
   },
 })
+
 ModifySpell({
   Name="Magic Fang (Greater)",
   TemporaryBonus={
@@ -28873,6 +29529,7 @@ ModifySpell({
     Format="Grants one natural weapon or unarmed strike of the subject a +1 per four caster levels (maximum +5) enhancement bonus on attack and damage rolls",
   },
 })
+
 ModifySpell({
   Name="Magic Vestment",
   TemporaryBonus={
@@ -28892,6 +29549,7 @@ ModifySpell({
     Format="Grants a suit of armor with an enhancement bonus of +1 per four caster levels (maximum +5 at 20th level) &lbracket;Use Magic Vestment (Shield use) to enhance a shield&rbracket;",
   },
 })
+
 ModifySpell({
   Name="Magic Vestment",
   TemporaryBonus={
@@ -28908,6 +29566,7 @@ ModifySpell({
     Target="EQ|Armor",
   },
 })
+
 DefineSpell({
   Name="Magic Vestment (Shield use)",
   Description={
@@ -28944,6 +29603,7 @@ DefineSpell({
     "Divine",
   },
 })
+
 ModifySpell({
   Name="Magic Weapon",
   TemporaryBonus={
@@ -28964,6 +29624,7 @@ ModifySpell({
     Format="Grants a weapon a +1 enhancement bonus on attack and damage rolls",
   },
 })
+
 ModifySpell({
   Name="Magic Weapon (Greater)",
   TemporaryBonus={
@@ -28984,6 +29645,7 @@ ModifySpell({
     Format="Grants a weapon an enhancement bonus on attack and damage rolls of +1 per four caster levels (maximum +5)",
   },
 })
+
 ModifySpell({
   Name="Owl's Wisdom",
   TemporaryBonus={
@@ -29003,6 +29665,7 @@ ModifySpell({
     Format="Grants +4 enhancement bonus to Wisdom",
   },
 })
+
 ModifySpell({
   Name="Rage",
   TemporaryBonus={
@@ -29022,6 +29685,7 @@ ModifySpell({
     Format="Grants a +2 morale bonus to Strength and Constitution, a +1 morale bonus on Will saves, and a −2 penalty to AC",
   },
 })
+
 ModifySpell({
   Name="Reduce Person",
   TemporaryBonus={
@@ -29038,6 +29702,7 @@ ModifySpell({
     Format="Grants a +2 size bonus to Dexterity, a -2 size penalty to Strength (to a minimum of 1), and a +1 bonus on attack rolls and AC due to your reduced size",
   },
 })
+
 ModifySpell({
   Name="Shield",
   TemporaryBonus={
@@ -29057,6 +29722,7 @@ ModifySpell({
     Format="Grants a +4 shield bonus to AC",
   },
 })
+
 ModifySpell({
   Name="Shield of Faith",
   TemporaryBonus={
@@ -29076,6 +29742,7 @@ ModifySpell({
     Format="Grants a +2 deflection bonus to AC, +1 for every six levels you have (maximum +5 deflection bonus at 18th level)",
   },
 })
+
 ModifySpell({
   Name="Shield of Law",
   TemporaryBonus={
@@ -29095,6 +29762,7 @@ ModifySpell({
     Format="Grants a +4 deflection bonus to AC and a +4 resistance bonus on saves",
   },
 })
+
 ModifySpell({
   Name="Shillelagh",
   TemporaryBonus={
@@ -29109,6 +29777,7 @@ ModifySpell({
     Target="EQ|Club;Quarterstaff",
   },
 })
+
 ModifySpell({
   Name="Stoneskin",
   TemporaryBonus={
@@ -29125,6 +29794,7 @@ ModifySpell({
     Format="Grants DR 10/adamantine for a total of 10 points of damage per caster level (maximum 150 points).",
   },
 })
+
 ModifySpell({
   Name="Transformation",
   TemporaryBonus={
@@ -29144,6 +29814,7 @@ ModifySpell({
     Format="Grants +4 to Strength, Dexterity and Constitution, +4 natural armor, +5 to Fortitude saves, and full BAB.",
   },
 })
+
 ModifySpell({
   Name="Unholy Aura",
   TemporaryBonus={
@@ -29163,6 +29834,7 @@ ModifySpell({
     Format="Grants a +4 deflection bonus to AC and a +4 resistance bonus on saves",
   },
 })
+
 ModifySpell({
   Name="Prayer",
   TemporaryBonus={
@@ -29182,6 +29854,7 @@ ModifySpell({
     Format="+1 luck to attack, damage, saves and skills",
   },
 })
+
 ModifySpell({
   Name="Righteous Might",
   TemporaryBonus={
@@ -29195,6 +29868,7 @@ ModifySpell({
     Target="ANYPC",
   },
 })
+
 ModifySpell({
   Name="Righteous Might",
   TemporaryBonus={
@@ -29217,6 +29891,7 @@ ModifySpell({
     Target="ANYPC",
   },
 })
+
 ModifySpell({
   Name="Righteous Might",
   TemporaryBonus={
@@ -29239,6 +29914,7 @@ ModifySpell({
     Target="ANYPC",
   },
 })
+
 ModifySpell({
   Name="Righteous Might",
   TemporaryBonus={
@@ -29260,6 +29936,7 @@ ModifySpell({
     Target="ANYPC",
   },
 })
+
 ModifySpell({
   Name="Righteous Might",
   TemporaryBonus={
@@ -29281,6 +29958,7 @@ ModifySpell({
     Target="ANYPC",
   },
 })
+
 ModifySpell({
   Name="Righteous Might",
   TemporaryBonus={
@@ -29302,6 +29980,7 @@ ModifySpell({
     Target="ANYPC",
   },
 })
+
 ModifySpell({
   Name="Righteous Might",
   TemporaryBonus={
@@ -29318,6 +29997,7 @@ ModifySpell({
     Target="ANYPC",
   },
 })
+
 DefineSpell({
   Name="Resist Energy (Fire)",
   TemporaryBonus={
@@ -29334,6 +30014,7 @@ DefineSpell({
     Target="ANYPC",
   },
 })
+
 DefineSpell({
   Name="Resist Energy (Acid)",
   TemporaryBonus={
@@ -29350,6 +30031,7 @@ DefineSpell({
     Target="ANYPC",
   },
 })
+
 DefineSpell({
   Name="Resist Energy (Cold)",
   TemporaryBonus={
@@ -29366,6 +30048,7 @@ DefineSpell({
     Target="ANYPC",
   },
 })
+
 DefineSpell({
   Name="Resist Energy (Sonic)",
   TemporaryBonus={
@@ -29382,6 +30065,7 @@ DefineSpell({
     Target="ANYPC",
   },
 })
+
 DefineSpell({
   Name="Resist Energy (Electricity)",
   TemporaryBonus={
@@ -29398,6 +30082,7 @@ DefineSpell({
     Target="ANYPC",
   },
 })
+
 ModifySpell({
   Name="Acid Arrow",
   Description={
@@ -29409,6 +30094,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Acid Fog",
   Description={
@@ -29420,6 +30106,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Acid Splash",
   Description={
@@ -29431,6 +30118,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Aid",
   Description={
@@ -29442,6 +30130,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Air Walk",
   Description={
@@ -29453,6 +30142,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Alarm",
   Description={
@@ -29464,6 +30154,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Align Weapon",
   Description={
@@ -29475,6 +30166,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Alter Self",
   Description={
@@ -29486,6 +30178,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Analyze Dweomer",
   Description={
@@ -29497,6 +30190,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Animal Growth",
   Description={
@@ -29508,6 +30202,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Animal Messenger",
   Description={
@@ -29519,6 +30214,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Animal Shapes",
   Description={
@@ -29530,6 +30226,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Animal Trance",
   Description={
@@ -29541,6 +30238,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Animate Dead",
   Description={
@@ -29552,6 +30250,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Animate Objects",
   Description={
@@ -29563,6 +30262,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Animate Plants",
   Description={
@@ -29574,6 +30274,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Animate Rope",
   Description={
@@ -29585,6 +30286,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Antilife Shell",
   Description={
@@ -29596,6 +30298,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Antimagic Field",
   Description={
@@ -29607,6 +30310,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Antipathy",
   Description={
@@ -29618,6 +30322,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Antiplant Shell",
   Description={
@@ -29629,6 +30334,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Arcane Eye",
   Description={
@@ -29640,6 +30346,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Arcane Lock",
   Description={
@@ -29651,6 +30358,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Arcane Mark",
   Description={
@@ -29662,6 +30370,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Arcane Sight",
   Description={
@@ -29673,6 +30382,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Arcane Sight (Greater)",
   Description={
@@ -29684,6 +30394,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Astral Projection",
   Description={
@@ -29695,6 +30406,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Atonement",
   Description={
@@ -29706,6 +30418,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Augury",
   Description={
@@ -29717,6 +30430,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Awaken",
   Description={
@@ -29728,6 +30442,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Baleful Polymorph",
   Description={
@@ -29739,6 +30454,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Bane",
   Description={
@@ -29750,6 +30466,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Banishment",
   Description={
@@ -29761,6 +30478,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Barkskin",
   Description={
@@ -29772,6 +30490,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Bear's Endurance",
   Description={
@@ -29783,6 +30502,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Bear's Endurance (Mass)",
   Description={
@@ -29794,6 +30514,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Beast Shape I",
   Description={
@@ -29805,6 +30526,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Beast Shape II",
   Description={
@@ -29816,6 +30538,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Beast Shape III",
   Description={
@@ -29827,6 +30550,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Beast Shape IV",
   Description={
@@ -29838,6 +30562,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Bestow Curse",
   Description={
@@ -29849,6 +30574,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Binding",
   Description={
@@ -29860,6 +30586,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Black Tentacles",
   Description={
@@ -29871,6 +30598,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Blade Barrier",
   Description={
@@ -29882,6 +30610,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Blasphemy",
   Description={
@@ -29893,6 +30622,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Bleed",
   Description={
@@ -29904,6 +30634,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Bless",
   Description={
@@ -29915,6 +30646,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Bless Water",
   Description={
@@ -29926,6 +30658,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Bless Weapon",
   Description={
@@ -29937,6 +30670,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Blight",
   Description={
@@ -29948,6 +30682,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Blindness/Deafness",
   Description={
@@ -29959,6 +30694,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Blink",
   Description={
@@ -29970,6 +30706,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Blur",
   Description={
@@ -29981,6 +30718,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Break Enchantment",
   Description={
@@ -29992,6 +30730,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Breath of Life",
   Description={
@@ -30003,6 +30742,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Bull's Strength",
   Description={
@@ -30014,6 +30754,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Bull's Strength (Mass)",
   Description={
@@ -30025,6 +30766,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Burning Hands",
   Description={
@@ -30036,6 +30778,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Call Lightning",
   Description={
@@ -30047,6 +30790,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Call Lightning Storm",
   Description={
@@ -30058,6 +30802,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Calm Animals",
   Description={
@@ -30069,6 +30814,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Calm Emotions",
   Description={
@@ -30080,6 +30826,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Cat's Grace",
   Description={
@@ -30091,6 +30838,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Cat's Grace (Mass)",
   Description={
@@ -30102,6 +30850,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Cause Fear",
   Description={
@@ -30113,6 +30862,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Chain Lightning",
   Description={
@@ -30124,6 +30874,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Changestaff",
   Description={
@@ -30135,6 +30886,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Chaos Hammer",
   Description={
@@ -30146,6 +30898,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Charm Animal",
   Description={
@@ -30157,6 +30910,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Charm Monster",
   Description={
@@ -30168,6 +30922,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Charm Monster (Mass)",
   Description={
@@ -30179,6 +30934,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Charm Person",
   Description={
@@ -30190,6 +30946,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Chill Metal",
   Description={
@@ -30201,6 +30958,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Chill Touch",
   Description={
@@ -30212,6 +30970,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Circle of Death",
   Description={
@@ -30223,6 +30982,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Clairaudience/Clairvoyance",
   Description={
@@ -30234,6 +30994,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Clenched Fist",
   Description={
@@ -30245,6 +31006,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Cloak of Chaos",
   Description={
@@ -30256,6 +31018,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Clone",
   Description={
@@ -30267,6 +31030,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Cloudkill",
   Description={
@@ -30278,6 +31042,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Color Spray",
   Description={
@@ -30289,6 +31054,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Command",
   Description={
@@ -30300,6 +31066,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Command (Greater)",
   Description={
@@ -30311,6 +31078,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Command Plants",
   Description={
@@ -30322,6 +31090,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Command Undead",
   Description={
@@ -30333,6 +31102,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Commune",
   Description={
@@ -30344,6 +31114,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Commune with Nature",
   Description={
@@ -30355,6 +31126,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Comprehend Languages",
   Description={
@@ -30366,6 +31138,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Cone of Cold",
   Description={
@@ -30377,6 +31150,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Confusion",
   Description={
@@ -30388,6 +31162,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Confusion (Lesser)",
   Description={
@@ -30399,6 +31174,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Consecrate",
   Description={
@@ -30410,6 +31186,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Contact Other Plane",
   Description={
@@ -30421,6 +31198,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Contagion",
   Description={
@@ -30432,6 +31210,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Contingency",
   Description={
@@ -30443,6 +31222,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Continual Flame",
   Description={
@@ -30454,6 +31234,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Control Plants",
   Description={
@@ -30465,6 +31246,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Control Undead",
   Description={
@@ -30476,6 +31258,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Control Water",
   Description={
@@ -30487,6 +31270,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Control Weather",
   Description={
@@ -30498,6 +31282,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Control Winds",
   Description={
@@ -30509,6 +31294,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Create Food and Water",
   Description={
@@ -30520,6 +31306,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Create Greater Undead",
   Description={
@@ -30531,6 +31318,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Create Undead",
   Description={
@@ -30542,6 +31330,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Create Water",
   Description={
@@ -30553,6 +31342,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Creeping Doom",
   Description={
@@ -30564,6 +31354,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Crushing Despair",
   Description={
@@ -30575,6 +31366,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Crushing Hand",
   Description={
@@ -30586,6 +31378,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Cure Critical Wounds",
   Description={
@@ -30597,6 +31390,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Cure Critical Wounds (Mass)",
   Description={
@@ -30608,6 +31402,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Cure Light Wounds",
   Description={
@@ -30619,6 +31414,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Cure Light Wounds (Mass)",
   Description={
@@ -30630,6 +31426,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Cure Moderate Wounds",
   Description={
@@ -30641,6 +31438,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Cure Moderate Wounds (Mass)",
   Description={
@@ -30652,6 +31450,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Cure Serious Wounds",
   Description={
@@ -30663,6 +31462,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Cure Serious Wounds (Mass)",
   Description={
@@ -30674,6 +31474,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Curse Water",
   Description={
@@ -30685,6 +31486,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Dancing Lights",
   Description={
@@ -30696,6 +31498,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Darkness",
   Description={
@@ -30707,6 +31510,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Darkvision",
   Description={
@@ -30718,6 +31522,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Daylight",
   Description={
@@ -30729,6 +31534,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Daze",
   Description={
@@ -30740,6 +31546,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Daze Monster",
   Description={
@@ -30751,6 +31558,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Death Knell",
   Description={
@@ -30762,6 +31570,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Death Ward",
   Description={
@@ -30773,6 +31582,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Deathwatch",
   Description={
@@ -30784,6 +31594,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Deep Slumber",
   Description={
@@ -30795,6 +31606,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Deeper Darkness",
   Description={
@@ -30806,6 +31618,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Delay Poison",
   Description={
@@ -30817,6 +31630,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Delayed Blast Fireball",
   Description={
@@ -30828,6 +31642,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Demand",
   Description={
@@ -30839,6 +31654,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Desecrate",
   Description={
@@ -30850,6 +31666,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Destruction",
   Description={
@@ -30861,6 +31678,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Detect Animals or Plants",
   Description={
@@ -30872,6 +31690,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Detect Chaos",
   Description={
@@ -30883,6 +31702,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Detect Evil",
   Description={
@@ -30894,6 +31714,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Detect Good",
   Description={
@@ -30905,6 +31726,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Detect Law",
   Description={
@@ -30916,6 +31738,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Detect Magic",
   Description={
@@ -30927,6 +31750,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Detect Poison",
   Description={
@@ -30938,6 +31762,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Detect Scrying",
   Description={
@@ -30949,6 +31774,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Detect Secret Doors",
   Description={
@@ -30960,6 +31786,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Detect Snares and Pits",
   Description={
@@ -30971,6 +31798,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Detect Thoughts",
   Description={
@@ -30982,6 +31810,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Detect Undead",
   Description={
@@ -30993,6 +31822,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Dictum",
   Description={
@@ -31004,6 +31834,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Dimension Door",
   Description={
@@ -31015,6 +31846,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Dimensional Anchor",
   Description={
@@ -31029,6 +31861,7 @@ ModifySpell({
     "Ray",
   },
 })
+
 ModifySpell({
   Name="Dimensional Lock",
   Description={
@@ -31040,6 +31873,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Diminish Plants",
   Description={
@@ -31051,6 +31885,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Discern Lies",
   Description={
@@ -31062,6 +31897,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Discern Location",
   Description={
@@ -31073,6 +31909,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Disguise Self",
   Description={
@@ -31084,6 +31921,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Disintegrate",
   Description={
@@ -31098,6 +31936,7 @@ ModifySpell({
     "Ray",
   },
 })
+
 ModifySpell({
   Name="Dismissal",
   Description={
@@ -31109,6 +31948,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Dispel Chaos",
   Description={
@@ -31120,6 +31960,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Dispel Evil",
   Description={
@@ -31131,6 +31972,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Dispel Good",
   Description={
@@ -31142,6 +31984,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Dispel Law",
   Description={
@@ -31153,6 +31996,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Dispel Magic",
   Description={
@@ -31164,6 +32008,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Dispel Magic (Greater)",
   Description={
@@ -31175,6 +32020,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Displacement",
   Description={
@@ -31186,6 +32032,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Disrupt Undead",
   Description={
@@ -31200,6 +32047,7 @@ ModifySpell({
     "Ray",
   },
 })
+
 ModifySpell({
   Name="Disrupting Weapon",
   Description={
@@ -31211,6 +32059,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Divination",
   Description={
@@ -31222,6 +32071,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Divine Favor",
   Description={
@@ -31233,6 +32083,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Divine Power",
   Description={
@@ -31244,6 +32095,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Dominate Animal",
   Description={
@@ -31255,6 +32107,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Dominate Monster",
   Description={
@@ -31266,6 +32119,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Dominate Person",
   Description={
@@ -31277,6 +32131,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Doom",
   Description={
@@ -31288,6 +32143,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Dream",
   Description={
@@ -31299,6 +32155,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Eagle's Splendor",
   Description={
@@ -31310,6 +32167,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Eagle's Splendor (Mass)",
   Description={
@@ -31321,6 +32179,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Earthquake",
   Description={
@@ -31332,6 +32191,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Elemental Body I",
   Description={
@@ -31343,6 +32203,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Elemental Body II",
   Description={
@@ -31354,6 +32215,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Elemental Body III",
   Description={
@@ -31365,6 +32227,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Elemental Body IV",
   Description={
@@ -31376,6 +32239,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Elemental Swarm",
   Description={
@@ -31387,6 +32251,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Endure Elements",
   Description={
@@ -31398,6 +32263,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Energy Drain",
   Description={
@@ -31412,6 +32278,7 @@ ModifySpell({
     "Ray",
   },
 })
+
 ModifySpell({
   Name="Enervation",
   Description={
@@ -31426,6 +32293,7 @@ ModifySpell({
     "Ray",
   },
 })
+
 ModifySpell({
   Name="Enlarge Person",
   Description={
@@ -31437,6 +32305,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Enlarge Person (Mass)",
   Description={
@@ -31448,6 +32317,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Entangle",
   Description={
@@ -31459,6 +32329,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Enthrall",
   Description={
@@ -31470,6 +32341,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Entropic Shield",
   Description={
@@ -31481,6 +32353,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Erase",
   Description={
@@ -31492,6 +32365,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Ethereal Jaunt",
   Description={
@@ -31503,6 +32377,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Etherealness",
   Description={
@@ -31514,6 +32389,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Expeditious Retreat",
   Description={
@@ -31525,6 +32401,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Explosive Runes",
   Description={
@@ -31536,6 +32413,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Eyebite",
   Description={
@@ -31547,6 +32425,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Fabricate",
   Description={
@@ -31558,6 +32437,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Faerie Fire",
   Description={
@@ -31569,6 +32449,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="False Life",
   Description={
@@ -31580,6 +32461,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="False Vision",
   Description={
@@ -31591,6 +32473,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Fear",
   Description={
@@ -31602,6 +32485,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Feather Fall",
   Description={
@@ -31613,6 +32497,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Feeblemind",
   Description={
@@ -31624,6 +32509,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Find the Path",
   Description={
@@ -31635,6 +32521,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Find Traps",
   Description={
@@ -31646,6 +32533,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Finger of Death",
   Description={
@@ -31657,6 +32545,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Fire Shield",
   Description={
@@ -31668,6 +32557,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Fire Seeds",
   Description={
@@ -31679,6 +32569,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Fire Storm",
   Description={
@@ -31690,6 +32581,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Fire Trap",
   Description={
@@ -31701,6 +32593,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Fireball",
   Description={
@@ -31712,6 +32605,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Flame Arrow",
   Description={
@@ -31723,6 +32617,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Flame Blade",
   Description={
@@ -31734,6 +32629,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Flame Strike",
   Description={
@@ -31745,6 +32641,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Flaming Sphere",
   Description={
@@ -31756,6 +32653,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Flare",
   Description={
@@ -31767,6 +32665,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Flesh to Stone",
   Description={
@@ -31778,6 +32677,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Fly",
   Description={
@@ -31789,6 +32689,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Floating Disk",
   Description={
@@ -31800,6 +32701,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Fog Cloud",
   Description={
@@ -31811,6 +32713,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Forbiddance",
   Description={
@@ -31822,6 +32725,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Forcecage",
   Description={
@@ -31833,6 +32737,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Forceful Hand",
   Description={
@@ -31844,6 +32749,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Foresight",
   Description={
@@ -31855,6 +32761,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Form of the Dragon I",
   Description={
@@ -31866,6 +32773,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Form of the Dragon II",
   Description={
@@ -31877,6 +32785,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Form of the Dragon III",
   Description={
@@ -31888,6 +32797,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Fox's Cunning",
   Description={
@@ -31899,6 +32809,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Fox's Cunning (Mass)",
   Description={
@@ -31910,6 +32821,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Freedom",
   Description={
@@ -31921,6 +32833,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Freedom of Movement",
   Description={
@@ -31932,6 +32845,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Freezing Sphere",
   Description={
@@ -31943,6 +32857,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Gaseous Form",
   Description={
@@ -31954,6 +32869,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Gate",
   Description={
@@ -31965,6 +32881,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Geas (Lesser)",
   Description={
@@ -31976,6 +32893,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Geas/Quest",
   Description={
@@ -31987,6 +32905,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Gentle Repose",
   Description={
@@ -31998,6 +32917,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Ghost Sound",
   Description={
@@ -32009,6 +32929,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Ghoul Touch",
   Description={
@@ -32020,6 +32941,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Giant Form I",
   Description={
@@ -32031,6 +32953,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Giant Form II",
   Description={
@@ -32042,6 +32965,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Giant Vermin",
   Description={
@@ -32053,6 +32977,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Glibness",
   Description={
@@ -32064,6 +32989,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Glitterdust",
   Description={
@@ -32075,6 +33001,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Globe of Invulnerability",
   Description={
@@ -32086,6 +33013,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Globe of Invulnerability (Lesser)",
   Description={
@@ -32097,6 +33025,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Glyph of Warding",
   Description={
@@ -32108,6 +33037,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Glyph of Warding (Greater)",
   Description={
@@ -32119,6 +33049,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Goodberry",
   Description={
@@ -32130,6 +33061,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Good Hope",
   Description={
@@ -32141,6 +33073,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Grasping Hand",
   Description={
@@ -32152,6 +33085,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Grease",
   Description={
@@ -32163,6 +33097,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Guards and Wards",
   Description={
@@ -32174,6 +33109,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Guidance",
   Description={
@@ -32185,6 +33121,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Gust of Wind",
   Description={
@@ -32196,6 +33133,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Hallow",
   Description={
@@ -32207,6 +33145,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Hallucinatory Terrain",
   Description={
@@ -32218,6 +33157,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Halt Undead",
   Description={
@@ -32229,6 +33169,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Harm",
   Description={
@@ -32240,6 +33181,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Haste",
   Description={
@@ -32251,6 +33193,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Heal",
   Description={
@@ -32262,6 +33205,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Heal (Mass)",
   Description={
@@ -32273,6 +33217,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Heal Mount",
   Description={
@@ -32284,6 +33229,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Heat Metal",
   Description={
@@ -32295,6 +33241,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Helping Hand",
   Description={
@@ -32306,6 +33253,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Heroes' Feast",
   Description={
@@ -32317,6 +33265,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Heroism",
   Description={
@@ -32328,6 +33277,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Heroism (Greater)",
   Description={
@@ -32339,6 +33289,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Hide from Animals",
   Description={
@@ -32350,6 +33301,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Hide from Undead",
   Description={
@@ -32361,6 +33313,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Hideous Laughter",
   Description={
@@ -32372,6 +33325,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Hold Animal",
   Description={
@@ -32383,6 +33337,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Hold Monster",
   Description={
@@ -32394,6 +33349,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Hold Monster (Mass)",
   Description={
@@ -32405,6 +33361,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Hold Person",
   Description={
@@ -32416,6 +33373,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Hold Person (Mass)",
   Description={
@@ -32427,6 +33385,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Hold Portal",
   Description={
@@ -32438,6 +33397,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Holy Aura",
   Description={
@@ -32449,6 +33409,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Holy Smite",
   Description={
@@ -32460,6 +33421,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Holy Sword",
   Description={
@@ -32471,6 +33433,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Holy Word",
   Description={
@@ -32482,6 +33445,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Horrid Wilting",
   Description={
@@ -32493,6 +33457,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Hypnotic Pattern",
   Description={
@@ -32504,6 +33469,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Hypnotism",
   Description={
@@ -32515,6 +33481,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Ice Storm",
   Description={
@@ -32526,6 +33493,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Identify",
   Description={
@@ -32537,6 +33505,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Illusory Script",
   Description={
@@ -32548,6 +33517,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Illusory Wall",
   Description={
@@ -32559,6 +33529,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Imbue with Spell Ability",
   Description={
@@ -32570,6 +33541,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Implosion",
   Description={
@@ -32581,6 +33553,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Imprisonment",
   Description={
@@ -32592,6 +33565,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Incendiary Cloud",
   Description={
@@ -32603,6 +33577,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Inflict Critical Wounds",
   Description={
@@ -32614,6 +33589,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Inflict Critical Wounds (Mass)",
   Description={
@@ -32625,6 +33601,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Inflict Light Wounds",
   Description={
@@ -32636,6 +33613,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Inflict Light Wounds (Mass)",
   Description={
@@ -32647,6 +33625,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Inflict Moderate Wounds",
   Description={
@@ -32658,6 +33637,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Inflict Moderate Wounds (Mass)",
   Description={
@@ -32669,6 +33649,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Inflict Serious Wounds",
   Description={
@@ -32680,6 +33661,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Inflict Serious Wounds (Mass)",
   Description={
@@ -32691,6 +33673,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Insanity",
   Description={
@@ -32702,6 +33685,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Insect Plague",
   Description={
@@ -32713,6 +33697,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Instant Summons",
   Description={
@@ -32724,6 +33709,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Interposing Hand",
   Description={
@@ -32735,6 +33721,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Invisibility",
   Description={
@@ -32746,6 +33733,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Invisibility (Greater)",
   Description={
@@ -32757,6 +33745,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Invisibility (Mass)",
   Description={
@@ -32768,6 +33757,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Invisibility Purge",
   Description={
@@ -32779,6 +33769,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Invisibility Sphere",
   Description={
@@ -32790,6 +33781,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Iron Body",
   Description={
@@ -32801,6 +33793,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Ironwood",
   Description={
@@ -32812,6 +33805,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Irresistible Dance",
   Description={
@@ -32823,6 +33817,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Jump",
   Description={
@@ -32834,6 +33829,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Keen Edge",
   Description={
@@ -32845,6 +33841,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Knock",
   Description={
@@ -32856,6 +33853,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Know Direction",
   Description={
@@ -32867,6 +33865,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Legend Lore",
   Description={
@@ -32878,6 +33877,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Levitate",
   Description={
@@ -32889,6 +33889,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Light",
   Description={
@@ -32900,6 +33901,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Lightning Bolt",
   Description={
@@ -32911,6 +33913,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Limited Wish",
   Description={
@@ -32922,6 +33925,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Liveoak",
   Description={
@@ -32933,6 +33937,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Locate Creature",
   Description={
@@ -32944,6 +33949,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Locate Object",
   Description={
@@ -32955,6 +33961,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Longstrider",
   Description={
@@ -32966,6 +33973,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Lullaby",
   Description={
@@ -32977,6 +33985,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mage Armor",
   Description={
@@ -32988,6 +33997,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mage Hand",
   Description={
@@ -32999,6 +34009,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mage's Disjunction",
   Description={
@@ -33010,6 +34021,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mage's Faithful Hound",
   Description={
@@ -33021,6 +34033,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mage's Lucubration",
   Description={
@@ -33032,6 +34045,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mage's Magnificent Mansion",
   Description={
@@ -33043,6 +34057,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mage's Private Sanctum",
   Description={
@@ -33054,6 +34069,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mage's Sword",
   Description={
@@ -33065,6 +34081,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Magic Aura",
   Description={
@@ -33076,6 +34093,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Magic Circle against Chaos",
   Description={
@@ -33087,6 +34105,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Magic Circle against Evil",
   Description={
@@ -33098,6 +34117,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Magic Circle against Good",
   Description={
@@ -33109,6 +34129,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Magic Circle against Law",
   Description={
@@ -33120,6 +34141,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Magic Fang",
   Description={
@@ -33131,6 +34153,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Magic Fang (Greater)",
   Description={
@@ -33142,6 +34165,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Magic Jar",
   Description={
@@ -33153,6 +34177,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Magic Missile",
   Description={
@@ -33164,6 +34189,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Magic Mouth",
   Description={
@@ -33175,6 +34201,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Magic Stone",
   Description={
@@ -33186,6 +34213,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Magic Vestment",
   Description={
@@ -33197,6 +34225,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Magic Weapon",
   Description={
@@ -33208,6 +34237,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Magic Weapon (Greater)",
   Description={
@@ -33219,6 +34249,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Major Creation",
   Description={
@@ -33230,6 +34261,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Major Image",
   Description={
@@ -33241,6 +34273,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Make Whole",
   Description={
@@ -33252,6 +34285,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mark of Justice",
   Description={
@@ -33263,6 +34297,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Maze",
   Description={
@@ -33274,6 +34309,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Meld into Stone",
   Description={
@@ -33285,6 +34321,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mending",
   Description={
@@ -33296,6 +34333,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Message",
   Description={
@@ -33307,6 +34345,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Meteor Swarm",
   Description={
@@ -33318,6 +34357,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mind Blank",
   Description={
@@ -33329,6 +34369,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mind Fog",
   Description={
@@ -33340,6 +34381,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Minor Creation",
   Description={
@@ -33351,6 +34393,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Minor Image",
   Description={
@@ -33362,6 +34405,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Miracle",
   Description={
@@ -33373,6 +34417,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mirage Arcana",
   Description={
@@ -33384,6 +34429,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mirror Image",
   Description={
@@ -33395,6 +34441,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Misdirection",
   Description={
@@ -33406,6 +34453,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mislead",
   Description={
@@ -33417,6 +34465,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mnemonic Enhancer",
   Description={
@@ -33428,6 +34477,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Modify Memory",
   Description={
@@ -33439,6 +34489,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Moment of Prescience",
   Description={
@@ -33450,6 +34501,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Mount",
   Description={
@@ -33461,6 +34513,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Move Earth",
   Description={
@@ -33472,6 +34525,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Neutralize Poison",
   Description={
@@ -33483,6 +34537,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Nightmare",
   Description={
@@ -33494,6 +34549,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Nondetection",
   Description={
@@ -33505,6 +34561,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Obscure Object",
   Description={
@@ -33516,6 +34573,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Obscuring Mist",
   Description={
@@ -33527,6 +34585,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Open/Close",
   Description={
@@ -33538,6 +34597,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Order's Wrath",
   Description={
@@ -33549,6 +34609,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Overland Flight",
   Description={
@@ -33560,6 +34621,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Owl's Wisdom",
   Description={
@@ -33571,6 +34633,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Owl's Wisdom (Mass)",
   Description={
@@ -33582,6 +34645,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Passwall",
   Description={
@@ -33593,6 +34657,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Pass without Trace",
   Description={
@@ -33604,12 +34669,14 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Permanency",
   Description={
     Format="This spell makes the duration of certain other spells permanent. You first cast the desired spell and then follow it with the permanency spell. Depending on the spell, you must be of a minimum caster level and must expend a specific gp value of diamond dust as a material component. You can make the following spells permanent in regard to yourself. [Spell Minimum Caster Level GP Cost]; [Arcane sight 11th 7,500 gp]; [Comprehend languages 9th 2,500 gp]; [Darkvision 10th 5,000 gp]; [Detect magic 9th 2,500 gp]; [Read magic 9th 2,500 gp]; [See invisibility 10th 5,000 gp]; [Tongues 11th 7,500 gp]; You cannot cast these spells on other creatures. This application of permanency can be dispelled only by a caster of higher level than you were when you cast the spell. In addition to personal use, permanency can be used to make the following spells permanent on yourself, another creature, or an object [as appropriate]. [Spell Minimum Caster Level GP Cost]; [Enlarge person 9th 2,500 gp]; [Magic fang 9th 2,500 gp]; [Magic fang, greater 11th 7,500 gp]; [Reduce person 9th 2,500 gp]; [Resistance 9th 2,500 gp]; [Telepathic bond* 13th 12,500 gp]; *Only bonds two creatures per casting of permanency. Additionally, the following spells can be cast upon objects or areas only and rendered permanent. [Spell Minimum Caster Level GP Cost]; [Alarm 9th 2,500 gp]; [Animate objects 14th 15,000 gp]; [Dancing lights 9th 2,500 gp]; [Ghost sound 9th 2,500 gp]; [Gust of wind 11th 7,500 gp]; [Invisibility 10th 5,000 gp]; [Mage's private sanctum 13th 12,500 gp]; [Magic mouth 10th 5,000 gp]; [Phase door 15th 17,500 gp]; [Prismatic sphere 17th 22,500 gp]; [Prismatic wall 16th 20,000 gp]; [Shrink item 11th 7,500 gp]; [Solid fog 12th 10,000 gp]; [Stinking cloud 11th 7,500 gp]; [Symbol of death 16th 20,000 gp]; [Symbol of fear 14th 15,000 gp]; [Symbol of insanity 16th 20,000 gp]; [Symbol of pain 13th 12,500 gp]; [Symbol of persuasion 14th 15,000 gp]; [Symbol of sleep 16th 20,000 gp]; [Symbol of stunning 15th 17,500 gp]; [Symbol of weakness 15th 17,500 gp]; [Teleportation circle 17th 22,500 gp]; [Wall of fire 12th 10,000 gp]; [Wall of force 13th 7,500 gp]; [Web 10th 5,000 gp]; Spells cast on other targets are vulnerable to dispel magic as normal. The GM may allow other spells to be made permanent.",
   },
 })
+
 ModifySpell({
   Name="Permanent Image",
   Description={
@@ -33621,6 +34688,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Persistent Image",
   Description={
@@ -33632,6 +34700,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Phantasmal Killer",
   Description={
@@ -33643,6 +34712,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Phantom Steed",
   Description={
@@ -33654,6 +34724,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Phantom Trap",
   Description={
@@ -33665,6 +34736,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Phase Door",
   Description={
@@ -33676,6 +34748,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Planar Ally",
   Description={
@@ -33687,6 +34760,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Planar Ally (Greater)",
   Description={
@@ -33698,6 +34772,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Planar Ally (Lesser)",
   Description={
@@ -33709,6 +34784,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Planar Binding",
   Description={
@@ -33720,6 +34796,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Planar Binding (Greater)",
   Description={
@@ -33731,6 +34808,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Planar Binding (Lesser)",
   Description={
@@ -33742,6 +34820,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Plane Shift",
   Description={
@@ -33753,6 +34832,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Plant Growth",
   Description={
@@ -33764,6 +34844,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Plant Shape I",
   Description={
@@ -33775,6 +34856,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Plant Shape II",
   Description={
@@ -33786,6 +34868,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Plant Shape III",
   Description={
@@ -33797,6 +34880,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Poison",
   Description={
@@ -33808,6 +34892,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Polar Ray",
   Description={
@@ -33822,6 +34907,7 @@ ModifySpell({
     "Ray",
   },
 })
+
 ModifySpell({
   Name="Polymorph",
   Description={
@@ -33833,6 +34919,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Polymorph (Greater)",
   Description={
@@ -33844,6 +34931,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Polymorph Any Object",
   Description={
@@ -33855,6 +34943,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Power Word Blind",
   Description={
@@ -33866,6 +34955,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Power Word Kill",
   Description={
@@ -33877,6 +34967,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Power Word Stun",
   Description={
@@ -33888,6 +34979,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Prayer",
   Description={
@@ -33899,6 +34991,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Prestidigitation",
   Description={
@@ -33910,6 +35003,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Prismatic Sphere",
   Description={
@@ -33921,6 +35015,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Prismatic Spray",
   Description={
@@ -33932,6 +35027,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Prismatic Wall",
   Description={
@@ -33943,6 +35039,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Produce Flame",
   Description={
@@ -33954,6 +35051,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Programmed Image",
   Description={
@@ -33965,6 +35063,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Project Image",
   Description={
@@ -33976,6 +35075,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Protection from Arrows",
   Description={
@@ -33987,6 +35087,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Protection from Chaos",
   Description={
@@ -33998,6 +35099,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Protection from Energy",
   Description={
@@ -34009,6 +35111,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Protection from Evil",
   Description={
@@ -34020,6 +35123,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Protection from Good",
   Description={
@@ -34031,6 +35135,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Protection from Law",
   Description={
@@ -34042,6 +35147,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Protection from Spells",
   Description={
@@ -34053,6 +35159,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Prying Eyes",
   Description={
@@ -34064,6 +35171,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Prying Eyes (Greater)",
   Description={
@@ -34075,6 +35183,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Purify Food and Drink",
   Description={
@@ -34086,6 +35195,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Pyrotechnics",
   Description={
@@ -34097,6 +35207,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Quench",
   Description={
@@ -34108,6 +35219,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Rage",
   Description={
@@ -34119,6 +35231,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Rainbow Pattern",
   Description={
@@ -34130,6 +35243,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Raise Dead",
   Description={
@@ -34141,6 +35255,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Ray of Enfeeblement",
   Description={
@@ -34155,6 +35270,7 @@ ModifySpell({
     "Ray",
   },
 })
+
 ModifySpell({
   Name="Ray of Exhaustion",
   Description={
@@ -34169,6 +35285,7 @@ ModifySpell({
     "Ray",
   },
 })
+
 ModifySpell({
   Name="Ray of Frost",
   Description={
@@ -34183,6 +35300,7 @@ ModifySpell({
     "Ray",
   },
 })
+
 ModifySpell({
   Name="Read Magic",
   Description={
@@ -34194,6 +35312,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Reduce Animal",
   Description={
@@ -34205,6 +35324,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Reduce Person",
   Description={
@@ -34216,6 +35336,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Reduce Person (Mass)",
   Description={
@@ -34227,6 +35348,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Refuge",
   Description={
@@ -34238,6 +35360,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Regenerate",
   Description={
@@ -34249,6 +35372,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Reincarnate",
   Description={
@@ -34260,6 +35384,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Remove Blindness/Deafness",
   Description={
@@ -34271,6 +35396,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Remove Curse",
   Description={
@@ -34282,6 +35408,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Remove Disease",
   Description={
@@ -34293,6 +35420,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Remove Fear",
   Description={
@@ -34304,6 +35432,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Remove Paralysis",
   Description={
@@ -34315,6 +35444,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Repel Metal or Stone",
   Description={
@@ -34326,6 +35456,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Repel Vermin",
   Description={
@@ -34337,6 +35468,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Repel Wood",
   Description={
@@ -34348,6 +35480,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Repulsion",
   Description={
@@ -34359,6 +35492,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Resilient Sphere",
   Description={
@@ -34370,6 +35504,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Resistance",
   Description={
@@ -34381,6 +35516,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Resist Energy",
   Description={
@@ -34392,6 +35528,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Restoration",
   Description={
@@ -34403,6 +35540,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Restoration (Greater)",
   Description={
@@ -34414,6 +35552,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Restoration (Lesser)",
   Description={
@@ -34425,6 +35564,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Resurrection",
   Description={
@@ -34436,6 +35576,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Reverse Gravity",
   Description={
@@ -34447,6 +35588,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Righteous Might",
   Description={
@@ -34458,6 +35600,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Rope Trick",
   Description={
@@ -34469,6 +35612,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Rusting Grasp",
   Description={
@@ -34480,6 +35624,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Sanctuary",
   Description={
@@ -34491,6 +35636,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Scare",
   Description={
@@ -34502,6 +35648,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Scintillating Pattern",
   Description={
@@ -34513,6 +35660,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Scorching Ray",
   Description={
@@ -34527,6 +35675,7 @@ ModifySpell({
     "Ray",
   },
 })
+
 ModifySpell({
   Name="Screen",
   Description={
@@ -34538,6 +35687,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Scrying",
   Description={
@@ -34549,6 +35699,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Scrying (Greater)",
   Description={
@@ -34560,6 +35711,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Sculpt Sound",
   Description={
@@ -34571,6 +35723,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Searing Light",
   Description={
@@ -34585,6 +35738,7 @@ ModifySpell({
     "Ray",
   },
 })
+
 ModifySpell({
   Name="Secret Chest",
   Description={
@@ -34596,6 +35750,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Secret Page",
   Description={
@@ -34607,6 +35762,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Secure Shelter",
   Description={
@@ -34618,6 +35774,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="See Invisibility",
   Description={
@@ -34629,6 +35786,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Seeming",
   Description={
@@ -34640,6 +35798,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Sending",
   Description={
@@ -34651,6 +35810,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Sepia Snake Sigil",
   Description={
@@ -34662,6 +35822,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Sequester",
   Description={
@@ -34673,6 +35834,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shades",
   Description={
@@ -34684,6 +35846,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shadow Conjuration",
   Description={
@@ -34695,6 +35858,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shadow Conjuration (Greater)",
   Description={
@@ -34706,6 +35870,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shadow Evocation",
   Description={
@@ -34717,6 +35882,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shadow Evocation (Greater)",
   Description={
@@ -34728,6 +35894,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shadow Walk",
   Description={
@@ -34739,6 +35906,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shambler",
   Description={
@@ -34750,6 +35918,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shapechange",
   Description={
@@ -34761,6 +35930,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shatter",
   Description={
@@ -34772,6 +35942,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shield",
   Description={
@@ -34783,6 +35954,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shield of Faith",
   Description={
@@ -34794,6 +35966,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shield of Law",
   Description={
@@ -34805,6 +35978,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shield Other",
   Description={
@@ -34816,6 +35990,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shillelagh",
   Description={
@@ -34827,6 +36002,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shocking Grasp",
   Description={
@@ -34838,6 +36014,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shout",
   Description={
@@ -34849,6 +36026,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shout (Greater)",
   Description={
@@ -34860,6 +36038,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Shrink Item",
   Description={
@@ -34871,6 +36050,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Silence",
   Description={
@@ -34882,6 +36062,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Silent Image",
   Description={
@@ -34893,6 +36074,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Simulacrum",
   Description={
@@ -34904,6 +36086,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Slay Living",
   Description={
@@ -34915,6 +36098,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Sleep",
   Description={
@@ -34926,6 +36110,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Sleet Storm",
   Description={
@@ -34937,6 +36122,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Slow",
   Description={
@@ -34948,6 +36134,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Snare",
   Description={
@@ -34959,6 +36146,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Soften Earth and Stone",
   Description={
@@ -34970,6 +36158,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Solid Fog",
   Description={
@@ -34981,6 +36170,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Song of Discord",
   Description={
@@ -34992,6 +36182,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Soul Bind",
   Description={
@@ -35003,6 +36194,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Sound Burst",
   Description={
@@ -35014,6 +36206,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Speak with Animals",
   Description={
@@ -35025,6 +36218,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Speak with Dead",
   Description={
@@ -35036,6 +36230,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Speak with Plants",
   Description={
@@ -35047,6 +36242,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Spectral Hand",
   Description={
@@ -35058,6 +36254,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Spell Immunity",
   Description={
@@ -35069,6 +36266,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Spell Immunity (Greater)",
   Description={
@@ -35080,6 +36278,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Spell Resistance",
   Description={
@@ -35091,6 +36290,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Spell Turning",
   Description={
@@ -35102,6 +36302,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Spellstaff",
   Description={
@@ -35113,6 +36314,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Spider Climb",
   Description={
@@ -35124,6 +36326,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Spike Growth",
   Description={
@@ -35135,6 +36338,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Spike Stones",
   Description={
@@ -35146,6 +36350,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Spiritual Weapon",
   Description={
@@ -35157,6 +36362,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Stabilize",
   Description={
@@ -35168,6 +36374,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Statue",
   Description={
@@ -35179,6 +36386,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Status",
   Description={
@@ -35190,6 +36398,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Stinking Cloud",
   Description={
@@ -35201,6 +36410,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Stone Shape",
   Description={
@@ -35212,6 +36422,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Stone Tell",
   Description={
@@ -35223,6 +36434,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Stone to Flesh",
   Description={
@@ -35234,6 +36446,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Stoneskin",
   Description={
@@ -35245,6 +36458,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Storm of Vengeance",
   Description={
@@ -35256,6 +36470,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Suggestion",
   Description={
@@ -35267,6 +36482,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Suggestion (Mass)",
   Description={
@@ -35278,6 +36494,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Instrument",
   Description={
@@ -35289,6 +36506,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Monster I",
   Description={
@@ -35300,6 +36518,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Monster II",
   Description={
@@ -35311,6 +36530,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Monster III",
   Description={
@@ -35322,6 +36542,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Monster IV",
   Description={
@@ -35333,6 +36554,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Monster V",
   Description={
@@ -35344,6 +36566,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Monster VI",
   Description={
@@ -35355,6 +36578,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Monster VII",
   Description={
@@ -35366,6 +36590,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Monster VIII",
   Description={
@@ -35377,6 +36602,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Monster IX",
   Description={
@@ -35388,6 +36614,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Nature's Ally I",
   Description={
@@ -35399,6 +36626,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Nature's Ally II",
   Description={
@@ -35410,6 +36638,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Nature's Ally III",
   Description={
@@ -35421,6 +36650,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Nature's Ally IV",
   Description={
@@ -35432,6 +36662,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Nature's Ally V",
   Description={
@@ -35443,6 +36674,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Nature's Ally VI",
   Description={
@@ -35454,6 +36686,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Nature's Ally VII",
   Description={
@@ -35465,6 +36698,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Nature's Ally VIII",
   Description={
@@ -35476,6 +36710,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Nature's Ally IX",
   Description={
@@ -35487,6 +36722,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Summon Swarm",
   Description={
@@ -35498,6 +36734,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Sunbeam",
   Description={
@@ -35509,6 +36746,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Sunburst",
   Description={
@@ -35520,6 +36758,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Symbol of Death",
   Description={
@@ -35531,6 +36770,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Symbol of Fear",
   Description={
@@ -35542,6 +36782,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Symbol of Insanity",
   Description={
@@ -35553,6 +36794,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Symbol of Pain",
   Description={
@@ -35564,6 +36806,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Symbol of Persuasion",
   Description={
@@ -35575,6 +36818,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Symbol of Sleep",
   Description={
@@ -35586,6 +36830,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Symbol of Stunning",
   Description={
@@ -35597,6 +36842,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Symbol of Weakness",
   Description={
@@ -35608,6 +36854,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Sympathetic Vibration",
   Description={
@@ -35619,6 +36866,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Sympathy",
   Description={
@@ -35630,6 +36878,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Telekinesis",
   Description={
@@ -35641,6 +36890,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Telekinetic Sphere",
   Description={
@@ -35652,6 +36902,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Telepathic Bond",
   Description={
@@ -35663,6 +36914,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Teleport",
   Description={
@@ -35674,6 +36926,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Teleport (Greater)",
   Description={
@@ -35685,6 +36938,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Teleport Object",
   Description={
@@ -35696,6 +36950,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Teleportation Circle",
   Description={
@@ -35707,6 +36962,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Temporal Stasis",
   Description={
@@ -35718,6 +36974,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Time Stop",
   Description={
@@ -35729,6 +36986,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Tiny Hut",
   Description={
@@ -35740,6 +36998,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Tongues",
   Description={
@@ -35751,6 +37010,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Touch of Fatigue",
   Description={
@@ -35762,6 +37022,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Touch of Idiocy",
   Description={
@@ -35773,6 +37034,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Transformation",
   Description={
@@ -35784,6 +37046,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Transmute Metal to Wood",
   Description={
@@ -35795,6 +37058,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Transmute Mud to Rock",
   Description={
@@ -35806,6 +37070,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Transmute Rock to Mud",
   Description={
@@ -35817,6 +37082,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Transport via Plants",
   Description={
@@ -35828,6 +37094,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Trap the Soul",
   Description={
@@ -35839,6 +37106,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Tree Shape",
   Description={
@@ -35850,6 +37118,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Tree Stride",
   Description={
@@ -35861,6 +37130,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="True Resurrection",
   Description={
@@ -35872,6 +37142,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="True Seeing",
   Description={
@@ -35883,6 +37154,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="True Strike",
   Description={
@@ -35894,6 +37166,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Undeath to Death",
   Description={
@@ -35905,6 +37178,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Undetectable Alignment",
   Description={
@@ -35916,6 +37190,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Unhallow",
   Description={
@@ -35927,6 +37202,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Unholy Aura",
   Description={
@@ -35938,6 +37214,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Unholy Blight",
   Description={
@@ -35949,6 +37226,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Unseen Servant",
   Description={
@@ -35960,6 +37238,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Vampiric Touch",
   Description={
@@ -35971,6 +37250,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Veil",
   Description={
@@ -35982,6 +37262,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Ventriloquism",
   Description={
@@ -35993,6 +37274,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Virtue",
   Description={
@@ -36004,6 +37286,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Vision",
   Description={
@@ -36015,6 +37298,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Wail of the Banshee",
   Description={
@@ -36026,6 +37310,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Wall of Fire",
   Description={
@@ -36037,6 +37322,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Wall of Force",
   Description={
@@ -36048,6 +37334,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Wall of Ice",
   Description={
@@ -36059,6 +37346,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Wall of Iron",
   Description={
@@ -36070,6 +37358,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Wall of Stone",
   Description={
@@ -36081,6 +37370,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Wall of Thorns",
   Description={
@@ -36092,6 +37382,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Warp Wood",
   Description={
@@ -36103,6 +37394,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Water Breathing",
   Description={
@@ -36114,6 +37406,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Water Walk",
   Description={
@@ -36125,6 +37418,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Waves of Exhaustion",
   Description={
@@ -36136,6 +37430,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Waves of Fatigue",
   Description={
@@ -36147,6 +37442,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Web",
   Description={
@@ -36158,6 +37454,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Weird",
   Description={
@@ -36169,6 +37466,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Whirlwind",
   Description={
@@ -36180,6 +37478,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Whispering Wind",
   Description={
@@ -36191,6 +37490,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Wind Walk",
   Description={
@@ -36202,6 +37502,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Wind Wall",
   Description={
@@ -36213,6 +37514,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Wish",
   Description={
@@ -36224,6 +37526,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Wood Shape",
   Description={
@@ -36235,6 +37538,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Word of Chaos",
   Description={
@@ -36246,6 +37550,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Word of Recall",
   Description={
@@ -36257,6 +37562,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Zone of Silence",
   Description={
@@ -36268,6 +37574,7 @@ ModifySpell({
     },
   },
 })
+
 ModifySpell({
   Name="Zone of Truth",
   Description={
@@ -36279,6 +37586,7 @@ ModifySpell({
     },
   },
 })
+
 DefineSpell({
   Name="Align Weapon (Chaos Only)",
   Description={
@@ -36318,6 +37626,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Align Weapon (Evil Only)",
   Description={
@@ -36357,6 +37666,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Align Weapon (Good Only)",
   Description={
@@ -36396,6 +37706,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Align Weapon (Law Only)",
   Description={
@@ -36435,6 +37746,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Beast Shape III (Animals Only)",
   Description={
@@ -36470,6 +37782,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Blindness/Deafness (Blindness Only)",
   Description={
@@ -36506,6 +37819,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Elemental Body IV (Air Only)",
   Description={
@@ -36544,6 +37858,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Elemental Body IV (Earth Only)",
   Description={
@@ -36582,6 +37897,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Elemental Body IV (Fire Only)",
   Description={
@@ -36620,6 +37936,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Elemental Body IV (Water Only)",
   Description={
@@ -36658,6 +37975,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Elemental Swarm (Air Spell Only)",
   Description={
@@ -36700,6 +38018,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Elemental Swarm (Earth Spell Only)",
   Description={
@@ -36742,6 +38061,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Elemental Swarm (Fire Spell Only)",
   Description={
@@ -36784,6 +38104,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Elemental Swarm (Water Spell Only)",
   Description={
@@ -36826,6 +38147,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Summon Nature's Ally IV (Animals Only)",
   Description={
@@ -36865,6 +38187,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Summon Nature's Ally VIII (Animals Only)",
   Description={
@@ -36904,6 +38227,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Summon Monster V (1d3 Shadows)",
   Description={
@@ -36943,6 +38267,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Summon Monster IX (Chaos Spell Only)",
   Description={
@@ -36985,6 +38310,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Summon Monster IX (Evil Spell Only)",
   Description={
@@ -37027,6 +38353,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Summon Monster IX (Good Spell Only)",
   Description={
@@ -37069,6 +38396,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Summon Monster IX (Law Spell Only)",
   Description={
@@ -37111,6 +38439,7 @@ DefineSpell({
     },
   },
 })
+
 DefineSpell({
   Name="Burning Hands (Acid)",
   Description={
@@ -37145,6 +38474,7 @@ DefineSpell({
     "Arcane",
   },
 })
+
 DefineSpell({
   Name="Burning Hands (Cold)",
   Description={
@@ -37179,6 +38509,7 @@ DefineSpell({
     "Arcane",
   },
 })
+
 DefineSpell({
   Name="Burning Hands (Electricity)",
   Description={
@@ -37213,6 +38544,7 @@ DefineSpell({
     "Arcane",
   },
 })
+
 DefineSpell({
   Name="Planar Binding (Devils and Fiendish Creatures Only)",
   Description={
@@ -37247,6 +38579,7 @@ DefineSpell({
     "Arcane",
   },
 })
+
 DefineSpell({
   Name="Scorching Ray (Acid)",
   Description={
@@ -37281,6 +38614,7 @@ DefineSpell({
     "Arcane",
   },
 })
+
 DefineSpell({
   Name="Scorching Ray (Cold)",
   Description={
@@ -37315,6 +38649,7 @@ DefineSpell({
     "Arcane",
   },
 })
+
 DefineSpell({
   Name="Scorching Ray (Electricity)",
   Description={
@@ -37349,6 +38684,7 @@ DefineSpell({
     "Arcane",
   },
 })
+
 DefineSpell({
   Name="Summon Monster VIII (Elementals Only)",
   Description={
@@ -37383,3 +38719,4 @@ DefineSpell({
     "Arcane",
   },
 })
+

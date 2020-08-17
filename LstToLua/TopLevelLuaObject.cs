@@ -58,7 +58,7 @@ namespace Primordially.LstToLua
                 output.Write($"Define{ObjectType}(");
             }
             base.Dump(output);
-            output.Write(")");
+            output.Write(")\n");
         }
     }
 }

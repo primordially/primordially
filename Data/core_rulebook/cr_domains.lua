@@ -110,6 +110,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Animal",
   Description={
@@ -217,6 +218,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Artifice",
   Description={
@@ -321,6 +323,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Chaos",
   Description={
@@ -428,6 +431,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Charm",
   Description={
@@ -532,6 +536,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Community",
   Description={
@@ -636,6 +641,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Darkness",
   Description={
@@ -747,6 +753,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Death",
   Description={
@@ -923,6 +930,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Destruction",
   Description={
@@ -1027,6 +1035,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Earth",
   Description={
@@ -1131,6 +1140,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Evil",
   Description={
@@ -1238,6 +1248,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Fire",
   Description={
@@ -1342,6 +1353,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Glory",
   Description={
@@ -1458,6 +1470,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Good",
   Description={
@@ -1565,6 +1578,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Healing",
   Description={
@@ -1669,6 +1683,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Knowledge",
   Description={
@@ -1776,6 +1791,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Law",
   Description={
@@ -1883,6 +1899,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Liberation",
   Description={
@@ -1987,6 +2004,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Luck",
   Description={
@@ -2091,6 +2109,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Madness",
   Description={
@@ -2195,6 +2214,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Magic",
   Description={
@@ -2299,6 +2319,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Nobility",
   Description={
@@ -2403,6 +2424,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Plant",
   Description={
@@ -2507,6 +2529,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Protection",
   Description={
@@ -2623,6 +2646,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Repose",
   Description={
@@ -2727,6 +2751,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Rune",
   Description={
@@ -2838,6 +2863,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Strength",
   Description={
@@ -2942,6 +2968,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Sun",
   Description={
@@ -3046,6 +3073,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Travel",
   Description={
@@ -3159,6 +3187,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Trickery",
   Description={
@@ -3268,6 +3297,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="War",
   Description={
@@ -3372,6 +3402,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Water",
   Description={
@@ -3476,6 +3507,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Weather",
   Description={
@@ -3580,6 +3612,7 @@ DefineDomain({
     },
   },
 })
+
 DefineDomain({
   Name="Death (Pharasma)",
   Description={
@@ -3689,6 +3722,7 @@ DefineDomain({
     },
   },
 })
+
 ModifyDomain({
   Name="Air",
   Conditions={
@@ -3711,6 +3745,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Animal",
   Conditions={
@@ -3733,6 +3768,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Artifice",
   Conditions={
@@ -3755,6 +3791,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Chaos",
   Conditions={
@@ -3777,6 +3814,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Charm",
   Conditions={
@@ -3799,6 +3837,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Community",
   Conditions={
@@ -3821,6 +3860,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Darkness",
   Conditions={
@@ -3843,6 +3883,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Death",
   Conditions={
@@ -3865,6 +3906,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Destruction",
   Conditions={
@@ -3887,6 +3929,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Earth",
   Conditions={
@@ -3909,6 +3952,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Evil",
   Conditions={
@@ -3931,6 +3975,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Fire",
   Conditions={
@@ -3953,6 +3998,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Glory",
   Conditions={
@@ -3975,6 +4021,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Good",
   Conditions={
@@ -3997,6 +4044,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Healing",
   Conditions={
@@ -4019,6 +4067,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Knowledge",
   Conditions={
@@ -4041,6 +4090,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Law",
   Conditions={
@@ -4063,6 +4113,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Liberation",
   Conditions={
@@ -4085,6 +4136,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Luck",
   Conditions={
@@ -4107,6 +4159,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Madness",
   Conditions={
@@ -4129,6 +4182,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Magic",
   Conditions={
@@ -4151,6 +4205,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Nobility",
   Conditions={
@@ -4173,6 +4228,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Plant",
   Conditions={
@@ -4195,6 +4251,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Protection",
   Conditions={
@@ -4217,6 +4274,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Repose",
   Conditions={
@@ -4239,6 +4297,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Rune",
   Conditions={
@@ -4261,6 +4320,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Strength",
   Conditions={
@@ -4283,6 +4343,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Sun",
   Conditions={
@@ -4305,6 +4366,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Travel",
   Conditions={
@@ -4327,6 +4389,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Trickery",
   Conditions={
@@ -4349,6 +4412,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="War",
   Conditions={
@@ -4371,6 +4435,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Water",
   Conditions={
@@ -4393,6 +4458,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Weather",
   Conditions={
@@ -4415,6 +4481,7 @@ ModifyDomain({
     end,
   },
 })
+
 ModifyDomain({
   Name="Death (Pharasma)",
   Bonuses={
@@ -4427,3 +4494,4 @@ ModifyDomain({
     },
   },
 })
+

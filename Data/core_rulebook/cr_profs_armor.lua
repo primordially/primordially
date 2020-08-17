@@ -9,48 +9,63 @@ SetSource({
 DefineArmorProficiency({
   Name="Padded",
 })
+
 DefineArmorProficiency({
   Name="Leather",
 })
+
 DefineArmorProficiency({
   Name="Studded Leather",
 })
+
 DefineArmorProficiency({
   Name="Chain Shirt",
 })
+
 DefineArmorProficiency({
   Name="Hide",
 })
+
 DefineArmorProficiency({
   Name="Scale Mail",
 })
+
 DefineArmorProficiency({
   Name="Chainmail",
 })
+
 DefineArmorProficiency({
   Name="Breastplate",
 })
+
 DefineArmorProficiency({
   Name="Splint Mail",
 })
+
 DefineArmorProficiency({
   Name="Banded Mail",
 })
+
 DefineArmorProficiency({
   Name="Half-Plate",
 })
+
 DefineArmorProficiency({
   Name="Full Plate",
 })
+
 DefineArmorProficiency({
   Name="Light Barding",
   Key="Barding (Light)",
 })
+
 DefineArmorProficiency({
   Name="Medium Barding",
   Key="Barding (Medium)",
 })
+
 DefineArmorProficiency({
   Name="Heavy Barding",
   Key="Barding (Heavy)",
 })
+

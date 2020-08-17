@@ -18,6 +18,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -36,6 +37,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -54,6 +56,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -72,6 +75,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -90,6 +94,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -108,6 +113,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -126,6 +132,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -144,6 +151,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -162,6 +170,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -180,6 +189,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -198,6 +208,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -216,6 +227,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -239,6 +251,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -262,6 +275,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -285,6 +299,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -308,6 +323,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -331,6 +347,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -354,6 +371,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -377,6 +395,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -400,6 +419,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -423,6 +443,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -446,6 +467,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -467,6 +489,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -488,6 +511,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -509,6 +533,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -530,6 +555,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -551,6 +577,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -572,6 +599,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -593,6 +621,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -614,6 +643,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -635,6 +665,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -656,6 +687,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -677,6 +709,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Dwarf",
   Category="Internal",
@@ -698,6 +731,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -716,6 +750,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -734,6 +769,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -752,6 +788,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -770,6 +807,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -788,6 +826,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -806,6 +845,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -824,6 +864,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -842,6 +883,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -860,6 +902,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -883,6 +926,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -906,6 +950,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -929,6 +974,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -952,6 +998,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -975,6 +1022,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -998,6 +1046,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -1019,6 +1068,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -1040,6 +1090,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -1061,6 +1112,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -1082,6 +1134,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -1103,6 +1156,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -1124,6 +1178,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -1145,6 +1200,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -1166,6 +1222,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Elf",
   Category="Internal",
@@ -1187,6 +1244,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1205,6 +1263,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1223,6 +1282,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1241,6 +1301,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1259,6 +1320,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1277,6 +1339,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1295,6 +1358,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1313,6 +1377,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1331,6 +1396,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1349,6 +1415,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1367,6 +1434,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1385,6 +1453,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1403,6 +1472,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1426,6 +1496,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1449,6 +1520,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1472,6 +1544,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1495,6 +1568,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1518,6 +1592,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1541,6 +1616,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1564,6 +1640,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1587,6 +1664,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1610,6 +1688,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1631,6 +1710,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1652,6 +1732,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1673,6 +1754,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1694,6 +1776,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1715,6 +1798,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1736,6 +1820,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1757,6 +1842,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1778,6 +1864,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1799,6 +1886,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1820,6 +1908,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1841,6 +1930,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Gnome",
   Category="Internal",
@@ -1862,6 +1952,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -1880,6 +1971,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -1898,6 +1990,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -1916,6 +2009,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -1934,6 +2028,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -1952,6 +2047,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -1970,6 +2066,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -1988,6 +2085,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2006,6 +2104,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2024,6 +2123,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2042,6 +2142,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2065,6 +2166,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2088,6 +2190,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2111,6 +2214,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2134,6 +2238,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2157,6 +2262,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2180,6 +2286,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2201,6 +2308,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2222,6 +2330,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2243,6 +2352,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2264,6 +2374,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2285,6 +2396,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2306,6 +2418,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2327,6 +2440,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2348,6 +2462,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2369,6 +2484,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Elf",
   Category="Internal",
@@ -2390,6 +2506,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2408,6 +2525,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2426,6 +2544,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2444,6 +2563,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2462,6 +2582,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2480,6 +2601,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2498,6 +2620,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2516,6 +2639,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2534,6 +2658,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2552,6 +2677,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2575,6 +2701,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2598,6 +2725,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2621,6 +2749,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2644,6 +2773,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2667,6 +2797,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2688,6 +2819,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2709,6 +2841,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2730,6 +2863,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2751,6 +2885,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2772,6 +2907,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2793,6 +2929,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2814,6 +2951,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2835,6 +2973,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Half-Orc",
   Category="Internal",
@@ -2856,6 +2995,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -2874,6 +3014,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -2892,6 +3033,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -2910,6 +3052,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -2928,6 +3071,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -2946,6 +3090,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -2964,6 +3109,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -2982,6 +3128,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3000,6 +3147,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3018,6 +3166,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3041,6 +3190,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3064,6 +3214,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3087,6 +3238,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3110,6 +3262,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3133,6 +3286,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3156,6 +3310,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3177,6 +3332,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3198,6 +3354,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3219,6 +3376,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3240,6 +3398,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3261,6 +3420,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3282,6 +3442,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3303,6 +3464,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3324,6 +3486,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Halfling",
   Category="Internal",
@@ -3345,6 +3508,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
@@ -3363,6 +3527,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
@@ -3381,6 +3546,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
@@ -3399,6 +3565,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
@@ -3417,6 +3584,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
@@ -3435,6 +3603,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
@@ -3453,6 +3622,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
@@ -3476,6 +3646,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
@@ -3499,6 +3670,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
@@ -3522,6 +3694,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
@@ -3543,6 +3716,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
@@ -3564,6 +3738,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
@@ -3585,6 +3760,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
@@ -3606,6 +3782,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
@@ -3627,6 +3804,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Racial Traits ~ Human",
   Category="Internal",
@@ -3648,150 +3826,187 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -3813,6 +4028,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -3834,6 +4050,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -3855,6 +4072,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -3876,6 +4094,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -3897,6 +4116,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -3918,6 +4138,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -3939,6 +4160,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -3960,6 +4182,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -3981,6 +4204,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4002,6 +4226,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4023,6 +4248,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4044,6 +4270,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4065,6 +4292,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4086,6 +4314,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4107,6 +4336,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4128,6 +4358,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4149,6 +4380,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4170,6 +4402,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4191,6 +4424,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4212,6 +4446,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4233,6 +4468,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4254,6 +4490,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4275,6 +4512,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4296,6 +4534,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4317,6 +4556,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4338,6 +4578,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4359,6 +4600,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4380,6 +4622,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4401,6 +4644,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4422,6 +4666,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4443,6 +4688,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4464,6 +4710,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4485,6 +4732,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4506,6 +4754,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4527,6 +4776,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4548,6 +4798,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4569,6 +4820,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4590,6 +4842,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4613,6 +4866,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4636,6 +4890,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4659,6 +4914,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4682,6 +4938,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4705,6 +4962,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4728,6 +4986,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4751,6 +5010,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4774,6 +5034,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4797,6 +5058,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4820,6 +5082,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4843,6 +5106,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4866,6 +5130,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4889,6 +5154,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4912,6 +5178,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4935,6 +5202,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4958,6 +5226,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -4981,6 +5250,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5004,6 +5274,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5027,6 +5298,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5050,6 +5322,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5073,6 +5346,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5096,6 +5370,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5119,6 +5394,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5142,6 +5418,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5165,6 +5442,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5188,6 +5466,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5211,6 +5490,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5234,6 +5514,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5257,6 +5538,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5280,6 +5562,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5303,6 +5586,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5326,6 +5610,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5349,6 +5634,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5372,6 +5658,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5392,6 +5679,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Barbarian",
   Category="Class",
@@ -5412,6 +5700,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5430,6 +5719,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5451,6 +5741,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5472,142 +5763,177 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5629,6 +5955,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5650,6 +5977,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5671,6 +5999,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5692,6 +6021,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5713,6 +6043,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5734,6 +6065,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5755,6 +6087,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5776,6 +6109,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5797,6 +6131,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5818,6 +6153,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5839,6 +6175,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5860,6 +6197,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5881,6 +6219,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5902,6 +6241,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5923,6 +6263,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5944,6 +6285,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5965,6 +6307,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -5986,6 +6329,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6007,6 +6351,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6028,6 +6373,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6049,6 +6395,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6070,6 +6417,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6091,6 +6439,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6112,6 +6461,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6133,6 +6483,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6154,6 +6505,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6175,6 +6527,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6196,6 +6549,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6217,6 +6571,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6238,6 +6593,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6259,6 +6615,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6280,6 +6637,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6301,6 +6659,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6324,6 +6683,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6347,6 +6707,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6370,6 +6731,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6393,6 +6755,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6416,6 +6779,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6439,6 +6803,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6462,6 +6827,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6485,6 +6851,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6508,6 +6875,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6531,6 +6899,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6554,6 +6923,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -6577,94 +6947,117 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -6686,6 +7079,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -6707,6 +7101,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -6728,6 +7123,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -6749,6 +7145,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -6770,6 +7167,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -6791,6 +7189,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -6812,6 +7211,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -6833,6 +7233,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -6854,6 +7255,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -6875,6 +7277,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -6896,6 +7299,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -6917,6 +7321,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -6938,6 +7343,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -6959,6 +7365,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -6980,6 +7387,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -7001,6 +7409,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -7022,6 +7431,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -7043,6 +7453,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -7064,6 +7475,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -7085,6 +7497,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -7106,6 +7519,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -7127,6 +7541,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -7150,6 +7565,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -7173,6 +7589,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -7196,6 +7613,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7221,6 +7639,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7247,6 +7666,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7270,126 +7690,157 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7411,6 +7862,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7432,6 +7884,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7453,6 +7906,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7474,6 +7928,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7495,6 +7950,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7516,6 +7972,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7537,6 +7994,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7558,6 +8016,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7579,6 +8038,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7600,6 +8060,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7621,6 +8082,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7642,6 +8104,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7663,6 +8126,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7684,6 +8148,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7705,6 +8170,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7726,6 +8192,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7747,6 +8214,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7768,6 +8236,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7789,6 +8258,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7810,6 +8280,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7831,6 +8302,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7852,6 +8324,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7873,6 +8346,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7894,6 +8368,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7915,6 +8390,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7936,6 +8412,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7957,6 +8434,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7978,6 +8456,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -7999,6 +8478,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -8022,6 +8502,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -8045,6 +8526,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -8068,6 +8550,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -8091,6 +8574,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -8114,6 +8598,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -8137,6 +8622,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -8160,6 +8646,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -8183,6 +8670,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -8206,6 +8694,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -8229,6 +8718,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -8250,6 +8740,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -8273,6 +8764,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -8296,138 +8788,172 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8446,6 +8972,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8464,6 +8991,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8482,6 +9010,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8500,6 +9029,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8518,6 +9048,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8536,6 +9067,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8554,6 +9086,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8575,6 +9108,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8596,6 +9130,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8617,6 +9152,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8638,6 +9174,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8659,6 +9196,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8680,6 +9218,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8701,6 +9240,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8722,6 +9262,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8743,6 +9284,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8764,6 +9306,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8785,6 +9328,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8806,6 +9350,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8827,6 +9372,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8848,6 +9394,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8869,6 +9416,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8890,6 +9438,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8911,6 +9460,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8932,6 +9482,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8953,6 +9504,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8974,6 +9526,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -8995,6 +9548,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9016,6 +9570,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9037,6 +9592,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9058,6 +9614,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9079,6 +9636,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9100,6 +9658,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9123,6 +9682,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9146,6 +9706,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9169,6 +9730,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9192,6 +9754,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9215,6 +9778,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9238,6 +9802,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9261,6 +9826,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9284,6 +9850,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9307,6 +9874,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9330,6 +9898,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9353,6 +9922,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9376,6 +9946,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9399,6 +9970,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9422,6 +9994,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9445,6 +10018,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9468,6 +10042,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9491,6 +10066,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9514,6 +10090,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9537,6 +10114,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9560,6 +10138,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -9583,186 +10162,232 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -9784,6 +10409,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -9805,6 +10431,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -9826,6 +10453,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -9847,6 +10475,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -9868,6 +10497,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -9889,6 +10519,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -9910,6 +10541,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -9931,6 +10563,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -9952,6 +10585,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -9973,6 +10607,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -9994,6 +10629,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10015,6 +10651,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10036,6 +10673,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10057,6 +10695,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10078,6 +10717,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10099,6 +10739,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10120,6 +10761,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10141,6 +10783,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10162,6 +10805,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10183,10 +10827,12 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10205,6 +10851,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10223,6 +10870,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10244,6 +10892,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10265,6 +10914,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10286,6 +10936,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10307,6 +10958,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10328,6 +10980,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10349,6 +11002,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10370,6 +11024,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10391,6 +11046,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10412,6 +11068,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10433,6 +11090,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10454,6 +11112,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10475,6 +11134,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10496,6 +11156,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10517,6 +11178,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10538,6 +11200,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10559,6 +11222,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10580,6 +11244,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10601,6 +11266,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10622,6 +11288,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10643,6 +11310,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10664,6 +11332,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10685,6 +11354,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10706,6 +11376,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10727,6 +11398,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10748,6 +11420,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10771,6 +11444,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10794,6 +11468,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10817,6 +11492,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10840,6 +11516,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10863,6 +11540,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10886,6 +11564,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10909,6 +11588,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10932,6 +11612,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10955,6 +11636,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -10978,6 +11660,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -11001,6 +11684,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -11024,6 +11708,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -11047,6 +11732,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -11070,6 +11756,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -11093,6 +11780,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -11116,6 +11804,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -11139,6 +11828,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -11162,6 +11852,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -11185,6 +11876,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -11208,6 +11900,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -11231,6 +11924,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -11254,6 +11948,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -11277,6 +11972,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Monk",
   Category="Class",
@@ -11300,142 +11996,177 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11480,6 +12211,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11501,6 +12233,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11522,6 +12255,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11544,6 +12278,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11565,6 +12300,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11586,6 +12322,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11607,6 +12344,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11630,6 +12368,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11651,6 +12390,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11672,6 +12412,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11693,6 +12434,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11714,6 +12456,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11735,6 +12478,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11756,6 +12500,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11777,6 +12522,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11798,6 +12544,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11819,6 +12566,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11840,6 +12588,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11861,6 +12610,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11882,6 +12632,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11903,6 +12654,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11924,6 +12676,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11945,6 +12698,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11966,6 +12720,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -11987,6 +12742,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12008,6 +12764,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12029,6 +12786,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12050,6 +12808,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12071,6 +12830,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12092,6 +12852,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12113,6 +12874,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12134,6 +12896,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12155,6 +12918,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12176,6 +12940,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12197,6 +12962,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12218,6 +12984,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12239,6 +13006,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12262,6 +13030,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12285,6 +13054,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12308,6 +13078,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12331,6 +13102,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12354,6 +13126,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12377,6 +13150,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12400,6 +13174,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12423,6 +13198,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12446,6 +13222,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12469,6 +13246,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12492,6 +13270,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12515,6 +13294,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12538,6 +13318,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12561,6 +13342,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -12584,6 +13366,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -12602,6 +13385,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -12621,6 +13405,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -12639,6 +13424,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -12657,6 +13443,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -12675,142 +13462,177 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -12832,6 +13654,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -12853,6 +13676,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -12874,6 +13698,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -12895,6 +13720,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -12916,6 +13742,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -12937,6 +13764,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -12958,6 +13786,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -12979,6 +13808,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13000,6 +13830,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13021,6 +13852,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13042,6 +13874,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13063,6 +13896,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13084,6 +13918,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13105,6 +13940,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13126,6 +13962,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13147,6 +13984,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13168,6 +14006,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13189,6 +14028,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13210,6 +14050,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13231,6 +14072,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13252,6 +14094,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13273,6 +14116,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13294,6 +14138,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13315,6 +14160,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13336,6 +14182,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13357,6 +14204,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13378,6 +14226,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13399,6 +14248,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13420,6 +14270,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13441,6 +14292,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13462,6 +14314,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13483,6 +14336,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13504,6 +14358,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13525,6 +14380,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13548,6 +14404,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13571,6 +14428,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13594,6 +14452,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13617,6 +14476,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13640,6 +14500,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13663,6 +14524,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13686,6 +14548,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13709,6 +14572,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13732,6 +14596,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13755,6 +14620,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13778,6 +14644,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13801,6 +14668,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13824,6 +14692,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13847,6 +14716,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13870,6 +14740,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13893,6 +14764,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13916,6 +14788,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13939,6 +14812,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13962,6 +14836,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -13985,6 +14860,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -14008,6 +14884,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -14031,6 +14908,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -14054,6 +14932,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -14077,6 +14956,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -14100,158 +14980,197 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14273,6 +15192,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14294,6 +15214,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14315,6 +15236,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14336,6 +15258,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14357,6 +15280,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14378,6 +15302,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14399,6 +15324,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14420,6 +15346,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14441,6 +15368,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14462,6 +15390,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14483,6 +15412,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14504,6 +15434,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14525,6 +15456,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14546,6 +15478,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14567,6 +15500,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14588,6 +15522,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14609,6 +15544,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14630,6 +15566,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14651,6 +15588,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14672,6 +15610,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14693,6 +15632,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14714,6 +15654,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14735,6 +15676,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14756,6 +15698,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14777,6 +15720,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14798,6 +15742,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14819,6 +15764,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14840,6 +15786,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14861,6 +15808,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14882,6 +15830,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14903,6 +15852,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14924,6 +15874,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14945,6 +15896,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14966,6 +15918,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -14987,6 +15940,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15008,6 +15962,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15029,6 +15984,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15050,6 +16006,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15073,6 +16030,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15096,6 +16054,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15119,6 +16078,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15142,6 +16102,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15165,6 +16126,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15188,6 +16150,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15211,6 +16174,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15234,6 +16198,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15257,6 +16222,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15280,6 +16246,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15303,6 +16270,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15326,6 +16294,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15349,6 +16318,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15372,6 +16342,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15395,6 +16366,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15418,6 +16390,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15441,6 +16414,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Rogue",
   Category="Class",
@@ -15464,106 +16438,132 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15585,6 +16585,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15606,6 +16607,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15627,6 +16629,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15648,6 +16651,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15669,6 +16673,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15690,6 +16695,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15711,6 +16717,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15732,6 +16739,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15753,6 +16761,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15774,6 +16783,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15795,6 +16805,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15816,6 +16827,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15837,6 +16849,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15858,6 +16871,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15879,6 +16893,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15900,6 +16915,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15921,6 +16937,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15942,6 +16959,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15963,6 +16981,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -15984,6 +17003,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -16005,6 +17025,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -16026,6 +17047,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -16047,6 +17069,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -16068,6 +17091,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -16089,6 +17113,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -16112,6 +17137,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -16135,70 +17161,87 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16220,6 +17263,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16241,6 +17285,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16262,6 +17307,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16283,6 +17329,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16304,6 +17351,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16325,6 +17373,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16346,6 +17395,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16367,6 +17417,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16388,6 +17439,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16409,6 +17461,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16430,6 +17483,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16451,6 +17505,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16472,6 +17527,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16493,6 +17549,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16514,6 +17571,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16535,6 +17593,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16558,6 +17617,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16581,6 +17641,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16604,6 +17665,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16627,6 +17689,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16650,6 +17713,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16673,6 +17737,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16696,6 +17761,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16719,6 +17785,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16742,6 +17809,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16765,6 +17833,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16788,6 +17857,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16809,6 +17879,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16830,6 +17901,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16851,6 +17923,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16872,6 +17945,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16893,6 +17967,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16914,6 +17989,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16935,6 +18011,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16956,6 +18033,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16977,6 +18055,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -16998,6 +18077,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17019,6 +18099,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17040,6 +18121,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17061,6 +18143,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17082,6 +18165,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17103,6 +18187,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17124,6 +18209,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17145,6 +18231,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17166,6 +18253,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17187,6 +18275,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17208,6 +18297,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17229,6 +18319,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17250,6 +18341,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17271,6 +18363,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17292,6 +18385,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17313,6 +18407,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17334,6 +18429,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17355,6 +18451,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17376,6 +18473,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17397,6 +18495,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17418,6 +18517,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17439,6 +18539,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17460,6 +18561,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17481,6 +18583,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17502,6 +18605,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17523,6 +18627,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -17544,147 +18649,184 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+
 ModifyAbility({
   Name="Wizard",
   Category="Class",
 })
+

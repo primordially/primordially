@@ -16,6 +16,7 @@ DefineWeaponProficiency({
     "Bludgeoning",
   },
 })
+
 DefineWeaponProficiency({
   Name="Ray Spells",
   Key="Spells (Ray)",
@@ -26,6 +27,7 @@ DefineWeaponProficiency({
     "Spell",
   },
 })
+
 DefineWeaponProficiency({
   Name="Touch Spells",
   Key="Spells (Touch)",
@@ -36,6 +38,7 @@ DefineWeaponProficiency({
     "Spell",
   },
 })
+
 DefineWeaponProficiency({
   Name="Splash Weapon",
   Types={
@@ -45,6 +48,7 @@ DefineWeaponProficiency({
     "Splash",
   },
 })
+
 DefineWeaponProficiency({
   Name="Unarmed Strike",
   Types={
@@ -56,6 +60,7 @@ DefineWeaponProficiency({
     "Bludgeoning",
   },
 })
+
 DefineWeaponProficiency({
   Name="Shieldbash",
   Types={
@@ -66,6 +71,7 @@ DefineWeaponProficiency({
     "OneHanded",
   },
 })
+
 DefineWeaponProficiency({
   Name="Gauntlet",
   Types={
@@ -76,6 +82,7 @@ DefineWeaponProficiency({
     "Bludgeoning",
   },
 })
+
 DefineWeaponProficiency({
   Name="Dagger",
   Types={
@@ -92,6 +99,7 @@ DefineWeaponProficiency({
     "RangedSlashing",
   },
 })
+
 DefineWeaponProficiency({
   Name="Punching Dagger",
   Key="Dagger (Punching)",
@@ -104,6 +112,7 @@ DefineWeaponProficiency({
     "MeleePiercing",
   },
 })
+
 DefineWeaponProficiency({
   Name="Spiked Gauntlet",
   Key="Gauntlet (Spiked)",
@@ -116,6 +125,7 @@ DefineWeaponProficiency({
     "Unarmed",
   },
 })
+
 DefineWeaponProficiency({
   Name="Light Mace",
   Key="Mace (Light)",
@@ -127,6 +137,7 @@ DefineWeaponProficiency({
     "Mace",
   },
 })
+
 DefineWeaponProficiency({
   Name="Sickle",
   Types={
@@ -138,6 +149,7 @@ DefineWeaponProficiency({
     "MeleeSlashing",
   },
 })
+
 DefineWeaponProficiency({
   Name="Club",
   Types={
@@ -148,6 +160,7 @@ DefineWeaponProficiency({
     "Club",
   },
 })
+
 DefineWeaponProficiency({
   Name="Heavy Mace",
   Key="Mace (Heavy)",
@@ -159,6 +172,7 @@ DefineWeaponProficiency({
     "MeleeBludgeoning",
   },
 })
+
 DefineWeaponProficiency({
   Name="Morningstar",
   Types={
@@ -171,6 +185,7 @@ DefineWeaponProficiency({
     "MeleePiercing",
   },
 })
+
 DefineWeaponProficiency({
   Name="Shortspear",
   Types={
@@ -182,6 +197,7 @@ DefineWeaponProficiency({
     "Spear",
   },
 })
+
 DefineWeaponProficiency({
   Name="Longspear",
   Types={
@@ -193,6 +209,7 @@ DefineWeaponProficiency({
     "Spear",
   },
 })
+
 DefineWeaponProficiency({
   Name="Quarterstaff",
   Types={
@@ -205,6 +222,7 @@ DefineWeaponProficiency({
     "MeleeBludgeoning",
   },
 })
+
 DefineWeaponProficiency({
   Name="Spear",
   Types={
@@ -216,6 +234,7 @@ DefineWeaponProficiency({
     "Spear",
   },
 })
+
 DefineWeaponProficiency({
   Name="Blowgun",
   Types={
@@ -226,6 +245,7 @@ DefineWeaponProficiency({
     "Blowgun",
   },
 })
+
 DefineWeaponProficiency({
   Name="Heavy Crossbow",
   Key="Crossbow (Heavy)",
@@ -238,6 +258,7 @@ DefineWeaponProficiency({
     "Archery",
   },
 })
+
 DefineWeaponProficiency({
   Name="Light Crossbow",
   Key="Crossbow (Light)",
@@ -250,6 +271,7 @@ DefineWeaponProficiency({
     "Archery",
   },
 })
+
 DefineWeaponProficiency({
   Name="Dart",
   Types={
@@ -259,6 +281,7 @@ DefineWeaponProficiency({
     "RangedPiercing",
   },
 })
+
 DefineWeaponProficiency({
   Name="Javelin",
   Types={
@@ -269,6 +292,7 @@ DefineWeaponProficiency({
     "Spear",
   },
 })
+
 DefineWeaponProficiency({
   Name="Sling",
   Types={
@@ -278,6 +302,7 @@ DefineWeaponProficiency({
     "RangedBludgeoning",
   },
 })
+
 DefineWeaponProficiency({
   Name="Throwing Axe",
   Key="Axe (Throwing)",
@@ -290,6 +315,7 @@ DefineWeaponProficiency({
     "LightMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Light Hammer",
   Key="Hammer (Light)",
@@ -303,6 +329,7 @@ DefineWeaponProficiency({
     "LightMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Handaxe",
   Types={
@@ -315,6 +342,7 @@ DefineWeaponProficiency({
     "LightMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Kukri",
   Types={
@@ -326,6 +354,7 @@ DefineWeaponProficiency({
     "LightMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Light Pick",
   Key="Pick (Light)",
@@ -340,6 +369,7 @@ DefineWeaponProficiency({
     "LightMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Sap",
   Types={
@@ -351,6 +381,7 @@ DefineWeaponProficiency({
     "LightMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Spiked Armor",
   Types={
@@ -362,6 +393,7 @@ DefineWeaponProficiency({
     "LightMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Starknife",
   Types={
@@ -376,6 +408,7 @@ DefineWeaponProficiency({
     "LightMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Short Sword",
   Key="Sword (Short)",
@@ -389,6 +422,7 @@ DefineWeaponProficiency({
     "LightMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Battleaxe",
   Types={
@@ -401,6 +435,7 @@ DefineWeaponProficiency({
     "OneHandedMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Light Flail",
   Key="Flail",
@@ -414,6 +449,7 @@ DefineWeaponProficiency({
     "OneHandedMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Longsword",
   Types={
@@ -426,6 +462,7 @@ DefineWeaponProficiency({
     "OneHandedMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Heavy Pick",
   Key="Pick (Heavy)",
@@ -440,6 +477,7 @@ DefineWeaponProficiency({
     "OneHandedMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Rapier",
   Types={
@@ -452,6 +490,7 @@ DefineWeaponProficiency({
     "OneHandedMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Scimitar",
   Types={
@@ -464,6 +503,7 @@ DefineWeaponProficiency({
     "OneHandedMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Trident",
   Types={
@@ -479,6 +519,7 @@ DefineWeaponProficiency({
     "Weapon Group Melee OneHanded Piercing",
   },
 })
+
 DefineWeaponProficiency({
   Name="Warhammer",
   Types={
@@ -491,6 +532,7 @@ DefineWeaponProficiency({
     "OneHandedMartial",
   },
 })
+
 DefineWeaponProficiency({
   Name="Falchion",
   Types={
@@ -502,6 +544,7 @@ DefineWeaponProficiency({
     "Sword",
   },
 })
+
 DefineWeaponProficiency({
   Name="Glaive",
   Types={
@@ -513,6 +556,7 @@ DefineWeaponProficiency({
     "Polearm",
   },
 })
+
 DefineWeaponProficiency({
   Name="Greataxe",
   Types={
@@ -524,6 +568,7 @@ DefineWeaponProficiency({
     "Axe",
   },
 })
+
 DefineWeaponProficiency({
   Name="Greatclub",
   Types={
@@ -535,6 +580,7 @@ DefineWeaponProficiency({
     "Club",
   },
 })
+
 DefineWeaponProficiency({
   Name="Heavy Flail",
   Key="Flail (Heavy)",
@@ -547,6 +593,7 @@ DefineWeaponProficiency({
     "Flail",
   },
 })
+
 DefineWeaponProficiency({
   Name="Greatsword",
   Types={
@@ -558,6 +605,7 @@ DefineWeaponProficiency({
     "Sword",
   },
 })
+
 DefineWeaponProficiency({
   Name="Guisarme",
   Types={
@@ -569,6 +617,7 @@ DefineWeaponProficiency({
     "Polearm",
   },
 })
+
 DefineWeaponProficiency({
   Name="Halberd",
   Types={
@@ -582,6 +631,7 @@ DefineWeaponProficiency({
     "MeleePiercing",
   },
 })
+
 DefineWeaponProficiency({
   Name="Lance",
   Types={
@@ -593,6 +643,7 @@ DefineWeaponProficiency({
     "Spear",
   },
 })
+
 DefineWeaponProficiency({
   Name="Ranseur",
   Types={
@@ -604,6 +655,7 @@ DefineWeaponProficiency({
     "Polearm",
   },
 })
+
 DefineWeaponProficiency({
   Name="Scythe",
   Types={
@@ -616,6 +668,7 @@ DefineWeaponProficiency({
     "MeleePiercing",
   },
 })
+
 DefineWeaponProficiency({
   Name="Bastard Sword",
   Key="Sword (Bastard)",
@@ -629,6 +682,7 @@ DefineWeaponProficiency({
     "Sword",
   },
 })
+
 DefineWeaponProficiency({
   Name="Dwarven Waraxe",
   Key="Waraxe (Dwarven)",
@@ -643,6 +697,7 @@ DefineWeaponProficiency({
     "Dwarven",
   },
 })
+
 DefineWeaponProficiency({
   Name="Longbow",
   Types={
@@ -653,6 +708,7 @@ DefineWeaponProficiency({
     "Archery",
   },
 })
+
 DefineWeaponProficiency({
   Name="Shortbow",
   Types={
@@ -663,6 +719,7 @@ DefineWeaponProficiency({
     "Archery",
   },
 })
+
 DefineWeaponProficiency({
   Name="Kama",
   Types={
@@ -673,6 +730,7 @@ DefineWeaponProficiency({
     "MeleeSlashing",
   },
 })
+
 DefineWeaponProficiency({
   Name="Nunchaku",
   Types={
@@ -683,6 +741,7 @@ DefineWeaponProficiency({
     "MeleeBludgeoning",
   },
 })
+
 DefineWeaponProficiency({
   Name="Sai",
   Types={
@@ -694,6 +753,7 @@ DefineWeaponProficiency({
     "MeleeBludgeoning",
   },
 })
+
 DefineWeaponProficiency({
   Name="Siangham",
   Types={
@@ -704,6 +764,7 @@ DefineWeaponProficiency({
     "MeleePiercing",
   },
 })
+
 DefineWeaponProficiency({
   Name="Whip",
   Types={
@@ -715,6 +776,7 @@ DefineWeaponProficiency({
     "Reach",
   },
 })
+
 DefineWeaponProficiency({
   Name="Orc Double Axe",
   Key="Axe (Orc Double)",
@@ -729,6 +791,7 @@ DefineWeaponProficiency({
     "DoubleWeapon",
   },
 })
+
 DefineWeaponProficiency({
   Name="Spiked Chain",
   Key="Chain (Spiked)",
@@ -741,6 +804,7 @@ DefineWeaponProficiency({
     "Reach",
   },
 })
+
 DefineWeaponProficiency({
   Name="Elven Curve Blade",
   Key="Curve Blade (Elven)",
@@ -754,6 +818,7 @@ DefineWeaponProficiency({
     "Elven",
   },
 })
+
 DefineWeaponProficiency({
   Name="Dire Flail",
   Key="Flail (Dire)",
@@ -766,6 +831,7 @@ DefineWeaponProficiency({
     "Flail",
   },
 })
+
 DefineWeaponProficiency({
   Name="Gnome Hooked Hammer",
   Key="Hammer (Gnome Hooked)",
@@ -782,6 +848,7 @@ DefineWeaponProficiency({
     "Gnome",
   },
 })
+
 DefineWeaponProficiency({
   Name="Two-Bladed Sword",
   Key="Sword (Two-Bladed)",
@@ -795,6 +862,7 @@ DefineWeaponProficiency({
     "DoubleWeapon",
   },
 })
+
 DefineWeaponProficiency({
   Name="Dwarven Urgrosh",
   Key="Urgrosh (Dwarven)",
@@ -811,6 +879,7 @@ DefineWeaponProficiency({
     "Dwarven",
   },
 })
+
 DefineWeaponProficiency({
   Name="Bolas",
   Types={
@@ -819,6 +888,7 @@ DefineWeaponProficiency({
     "Bludgeoning",
   },
 })
+
 DefineWeaponProficiency({
   Name="Hand Crossbow",
   Key="Crossbow (Hand)",
@@ -831,6 +901,7 @@ DefineWeaponProficiency({
     "Archery",
   },
 })
+
 DefineWeaponProficiency({
   Name="Repeating Heavy Crossbow",
   Key="Crossbow (Repeating Heavy)",
@@ -843,6 +914,7 @@ DefineWeaponProficiency({
     "Archery",
   },
 })
+
 DefineWeaponProficiency({
   Name="Repeating Light Crossbow",
   Key="Crossbow (Repeating Light)",
@@ -855,6 +927,7 @@ DefineWeaponProficiency({
     "Archery",
   },
 })
+
 DefineWeaponProficiency({
   Name="Net",
   Types={
@@ -863,6 +936,7 @@ DefineWeaponProficiency({
     "Net",
   },
 })
+
 DefineWeaponProficiency({
   Name="Shuriken",
   Types={
@@ -872,6 +946,7 @@ DefineWeaponProficiency({
     "RangedPiercing",
   },
 })
+
 DefineWeaponProficiency({
   Name="Halfling Sling Staff",
   Key="Sling Staff (Halfling)",
@@ -883,6 +958,7 @@ DefineWeaponProficiency({
     "Halfling",
   },
 })
+
 DefineWeaponProficiency({
   Name="Flurry of Blows",
   Types={
@@ -894,12 +970,14 @@ DefineWeaponProficiency({
     "Monk",
   },
 })
+
 DefineWeaponProficiency({
   Name="Improvised Weapon",
   Types={
     "Improvised",
   },
 })
+
 DefineWeaponProficiency({
   Name="Rock",
   Types={
@@ -910,6 +988,7 @@ DefineWeaponProficiency({
     "Rock",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Battleaxe",
   Types={
@@ -917,6 +996,7 @@ ModifyWeaponProficiency({
     "Weapon Group Axes",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Waraxe (Dwarven)",
   Types={
@@ -925,6 +1005,7 @@ ModifyWeaponProficiency({
     "Weapon Group Axes TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Greataxe",
   Types={
@@ -933,6 +1014,7 @@ ModifyWeaponProficiency({
     "Weapon Group Axes TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Handaxe",
   Types={
@@ -940,6 +1022,7 @@ ModifyWeaponProficiency({
     "Weapon Group Axes",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Pick (Heavy)",
   Types={
@@ -947,6 +1030,7 @@ ModifyWeaponProficiency({
     "Weapon Group Axes",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Pick (Light)",
   Types={
@@ -954,6 +1038,7 @@ ModifyWeaponProficiency({
     "Weapon Group Axes",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Axe (Orc Double)",
   Types={
@@ -962,6 +1047,7 @@ ModifyWeaponProficiency({
     "Weapon Group Axes TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Axe (Throwing)",
   Types={
@@ -969,6 +1055,7 @@ ModifyWeaponProficiency({
     "Weapon Group Axes",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Sword (Bastard)",
   Types={
@@ -977,6 +1064,7 @@ ModifyWeaponProficiency({
     "Weapon Group Blades Heavy TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Curve Blade (Elven)",
   Types={
@@ -985,6 +1073,7 @@ ModifyWeaponProficiency({
     "Weapon Group Blades Heavy TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Falchion",
   Types={
@@ -993,6 +1082,7 @@ ModifyWeaponProficiency({
     "Weapon Group Blades Heavy TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Greatsword",
   Types={
@@ -1001,6 +1091,7 @@ ModifyWeaponProficiency({
     "Weapon Group Blades Heavy TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Longsword",
   Types={
@@ -1008,6 +1099,7 @@ ModifyWeaponProficiency({
     "Weapon Group Blades Heavy",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Scimitar",
   Types={
@@ -1015,6 +1107,7 @@ ModifyWeaponProficiency({
     "Weapon Group Blades Heavy",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Scythe",
   Types={
@@ -1023,6 +1116,7 @@ ModifyWeaponProficiency({
     "Weapon Group Blades Heavy TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Sword (Two-Bladed)",
   Types={
@@ -1031,6 +1125,7 @@ ModifyWeaponProficiency({
     "Weapon Group Blades Heavy TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Dagger",
   Types={
@@ -1038,6 +1133,7 @@ ModifyWeaponProficiency({
     "Weapon Group Blades Light",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Kama",
   Types={
@@ -1045,6 +1141,7 @@ ModifyWeaponProficiency({
     "Weapon Group Blades Light",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Kukri",
   Types={
@@ -1052,6 +1149,7 @@ ModifyWeaponProficiency({
     "Weapon Group Blades Light",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Rapier",
   Types={
@@ -1059,6 +1157,7 @@ ModifyWeaponProficiency({
     "Weapon Group Blades Light",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Sword (Short)",
   Types={
@@ -1066,6 +1165,7 @@ ModifyWeaponProficiency({
     "Weapon Group Blades Light",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Sickle",
   Types={
@@ -1073,6 +1173,7 @@ ModifyWeaponProficiency({
     "Weapon Group Blades Light",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Starknife",
   Types={
@@ -1080,6 +1181,7 @@ ModifyWeaponProficiency({
     "Weapon Group Blades Light",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Longbow",
   Types={
@@ -1087,6 +1189,7 @@ ModifyWeaponProficiency({
     "Weapon Group Bows",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Shortbow",
   Types={
@@ -1094,6 +1197,7 @@ ModifyWeaponProficiency({
     "Weapon Group Bows",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Gauntlet",
   Types={
@@ -1101,6 +1205,7 @@ ModifyWeaponProficiency({
     "Weapon Group Close",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Shieldbash",
   Types={
@@ -1108,6 +1213,7 @@ ModifyWeaponProficiency({
     "Weapon Group Close",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Dagger (Punching)",
   Types={
@@ -1115,6 +1221,7 @@ ModifyWeaponProficiency({
     "Weapon Group Close",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Sap",
   Types={
@@ -1122,6 +1229,7 @@ ModifyWeaponProficiency({
     "Weapon Group Close",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Spiked Armor",
   Types={
@@ -1129,6 +1237,7 @@ ModifyWeaponProficiency({
     "Weapon Group Close",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Gauntlet (Spiked)",
   Types={
@@ -1136,6 +1245,7 @@ ModifyWeaponProficiency({
     "Weapon Group Close",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Unarmed Strike",
   Types={
@@ -1143,6 +1253,7 @@ ModifyWeaponProficiency({
     "Weapon Group Close",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Crossbow (Hand)",
   Types={
@@ -1150,6 +1261,7 @@ ModifyWeaponProficiency({
     "Weapon Group Crossbows",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Crossbow (Heavy)",
   Types={
@@ -1157,6 +1269,7 @@ ModifyWeaponProficiency({
     "Weapon Group Crossbows",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Crossbow (Repeating Heavy)",
   Types={
@@ -1164,6 +1277,7 @@ ModifyWeaponProficiency({
     "Weapon Group Crossbows",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Crossbow (Light)",
   Types={
@@ -1171,6 +1285,7 @@ ModifyWeaponProficiency({
     "Weapon Group Crossbows",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Crossbow (Repeating Light)",
   Types={
@@ -1178,6 +1293,7 @@ ModifyWeaponProficiency({
     "Weapon Group Crossbows",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Flail (Dire)",
   Types={
@@ -1186,6 +1302,7 @@ ModifyWeaponProficiency({
     "Weapon Group Double TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Urgrosh (Dwarven)",
   Types={
@@ -1194,6 +1311,7 @@ ModifyWeaponProficiency({
     "Weapon Group Double TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Hammer (Gnome Hooked)",
   Types={
@@ -1202,6 +1320,7 @@ ModifyWeaponProficiency({
     "Weapon Group Double TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Axe (Orc Double)",
   Types={
@@ -1210,6 +1329,7 @@ ModifyWeaponProficiency({
     "Weapon Group Double TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Quarterstaff",
   Types={
@@ -1218,6 +1338,7 @@ ModifyWeaponProficiency({
     "Weapon Group Double TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Sword (Two-Bladed)",
   Types={
@@ -1226,6 +1347,7 @@ ModifyWeaponProficiency({
     "Weapon Group Double TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Flail (Dire)",
   Types={
@@ -1234,6 +1356,7 @@ ModifyWeaponProficiency({
     "Weapon Group Flails TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Flail",
   Types={
@@ -1241,6 +1364,7 @@ ModifyWeaponProficiency({
     "Weapon Group Flails",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Flail (Heavy)",
   Types={
@@ -1249,6 +1373,7 @@ ModifyWeaponProficiency({
     "Weapon Group Flails TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Morningstar",
   Types={
@@ -1256,6 +1381,7 @@ ModifyWeaponProficiency({
     "Weapon Group Flails",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Chain (Spiked)",
   Types={
@@ -1264,6 +1390,7 @@ ModifyWeaponProficiency({
     "Weapon Group Flails TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Whip",
   Types={
@@ -1271,6 +1398,7 @@ ModifyWeaponProficiency({
     "Weapon Group Flails",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Club",
   Types={
@@ -1278,6 +1406,7 @@ ModifyWeaponProficiency({
     "Weapon Group Hammers",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Greatclub",
   Types={
@@ -1286,6 +1415,7 @@ ModifyWeaponProficiency({
     "Weapon Group Hammers TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Mace (Heavy)",
   Types={
@@ -1293,6 +1423,7 @@ ModifyWeaponProficiency({
     "Weapon Group Hammers",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Hammer (Light)",
   Types={
@@ -1300,6 +1431,7 @@ ModifyWeaponProficiency({
     "Weapon Group Hammers",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Mace (Light)",
   Types={
@@ -1307,6 +1439,7 @@ ModifyWeaponProficiency({
     "Weapon Group Hammers",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Warhammer",
   Types={
@@ -1314,6 +1447,7 @@ ModifyWeaponProficiency({
     "Weapon Group Hammers",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Kama",
   Types={
@@ -1321,6 +1455,7 @@ ModifyWeaponProficiency({
     "Weapon Group Monk",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Quarterstaff",
   Types={
@@ -1329,6 +1464,7 @@ ModifyWeaponProficiency({
     "Weapon Group Monk TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Sai",
   Types={
@@ -1336,6 +1472,7 @@ ModifyWeaponProficiency({
     "Weapon Group Monk",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Shuriken",
   Types={
@@ -1343,6 +1480,7 @@ ModifyWeaponProficiency({
     "Weapon Group Monk",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Unarmed Strike",
   Types={
@@ -1351,12 +1489,14 @@ ModifyWeaponProficiency({
     "Weapon Group Monk",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Unarmed Strike",
   Types={
     "Weapon Group Natural",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Glaive",
   Types={
@@ -1365,6 +1505,7 @@ ModifyWeaponProficiency({
     "Weapon Group Pole Arms TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Guisarme",
   Types={
@@ -1373,6 +1514,7 @@ ModifyWeaponProficiency({
     "Weapon Group Pole Arms TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Halberd",
   Types={
@@ -1381,6 +1523,7 @@ ModifyWeaponProficiency({
     "Weapon Group Pole Arms TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Ranseur",
   Types={
@@ -1389,6 +1532,7 @@ ModifyWeaponProficiency({
     "Weapon Group Pole Arms TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Javelin",
   Types={
@@ -1396,6 +1540,7 @@ ModifyWeaponProficiency({
     "Weapon Group Spears",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Lance",
   Types={
@@ -1403,6 +1548,7 @@ ModifyWeaponProficiency({
     "Weapon Group Spears",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Longspear",
   Types={
@@ -1411,6 +1557,7 @@ ModifyWeaponProficiency({
     "Weapon Group Spears TwoHanded",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Shortspear",
   Types={
@@ -1418,6 +1565,7 @@ ModifyWeaponProficiency({
     "Weapon Group Spears",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Spear",
   Types={
@@ -1425,6 +1573,7 @@ ModifyWeaponProficiency({
     "Weapon Group Spears",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Trident",
   Types={
@@ -1432,6 +1581,7 @@ ModifyWeaponProficiency({
     "Weapon Group Spears",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Blowgun",
   Types={
@@ -1439,6 +1589,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Bolas",
   Types={
@@ -1446,6 +1597,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Club",
   Types={
@@ -1453,6 +1605,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Dagger",
   Types={
@@ -1460,6 +1613,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Dart",
   Types={
@@ -1467,6 +1621,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Sling Staff (Halfling)",
   Types={
@@ -1474,6 +1629,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Javelin",
   Types={
@@ -1481,6 +1637,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Hammer (Light)",
   Types={
@@ -1488,6 +1645,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Net",
   Types={
@@ -1495,6 +1653,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Shortspear",
   Types={
@@ -1502,6 +1661,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Shuriken",
   Types={
@@ -1509,6 +1669,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Sling",
   Types={
@@ -1516,6 +1677,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Spear",
   Types={
@@ -1523,6 +1685,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Starknife",
   Types={
@@ -1530,6 +1693,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Axe (Throwing)",
   Types={
@@ -1537,6 +1701,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Trident",
   Types={
@@ -1544,6 +1709,7 @@ ModifyWeaponProficiency({
     "Weapon Group Thrown",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Sword (Bastard)",
   Types={
@@ -1551,6 +1717,7 @@ ModifyWeaponProficiency({
     "Tengu",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Dagger",
   Types={
@@ -1558,6 +1725,7 @@ ModifyWeaponProficiency({
     "Tengu",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Curve Blade (Elven)",
   Types={
@@ -1565,6 +1733,7 @@ ModifyWeaponProficiency({
     "Tengu",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Falchion",
   Types={
@@ -1572,6 +1741,7 @@ ModifyWeaponProficiency({
     "Tengu",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Greatsword",
   Types={
@@ -1579,6 +1749,7 @@ ModifyWeaponProficiency({
     "Tengu",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Kukri",
   Types={
@@ -1586,6 +1757,7 @@ ModifyWeaponProficiency({
     "Tengu",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Longsword",
   Types={
@@ -1593,6 +1765,7 @@ ModifyWeaponProficiency({
     "Tengu",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Dagger (Punching)",
   Types={
@@ -1600,6 +1773,7 @@ ModifyWeaponProficiency({
     "Tengu",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Rapier",
   Types={
@@ -1607,6 +1781,7 @@ ModifyWeaponProficiency({
     "Tengu",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Scimitar",
   Types={
@@ -1614,6 +1789,7 @@ ModifyWeaponProficiency({
     "Tengu",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Sword (Short)",
   Types={
@@ -1621,6 +1797,7 @@ ModifyWeaponProficiency({
     "Tengu",
   },
 })
+
 ModifyWeaponProficiency({
   Name="Sword (Two-Bladed)",
   Types={
@@ -1628,3 +1805,4 @@ ModifyWeaponProficiency({
     "Tengu",
   },
 })
+

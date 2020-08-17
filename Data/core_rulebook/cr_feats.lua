@@ -38,6 +38,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Acrobatic Steps",
   Category="FEAT",
@@ -87,6 +88,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Agile Maneuvers",
   Category="FEAT",
@@ -117,6 +119,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Alertness",
   Category="FEAT",
@@ -149,6 +152,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Alignment Channel",
   Category="FEAT",
@@ -178,6 +182,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Animal Affinity",
   Category="FEAT",
@@ -210,6 +215,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Arcane Armor Mastery",
   Category="FEAT",
@@ -285,6 +291,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Arcane Armor Training",
   Category="FEAT",
@@ -355,6 +362,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Arcane Strike",
   Category="FEAT",
@@ -431,6 +439,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Armor Proficiency (Heavy)",
   Category="FEAT",
@@ -477,6 +486,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Armor Proficiency (Light)",
   Category="FEAT",
@@ -502,6 +512,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Armor Proficiency (Medium)",
   Category="FEAT",
@@ -548,6 +559,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Athletic",
   Category="FEAT",
@@ -580,6 +592,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Augment Summoning",
   Category="FEAT",
@@ -603,6 +616,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Bleeding Critical",
   Category="FEAT",
@@ -644,6 +658,7 @@ DefineAbility({
     "Critical",
   },
 })
+
 DefineAbility({
   Name="Blind-Fight",
   Category="FEAT",
@@ -661,6 +676,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Blinding Critical",
   Category="FEAT",
@@ -705,6 +721,7 @@ DefineAbility({
     "Critical",
   },
 })
+
 DefineAbility({
   Name="Brew Potion",
   Category="FEAT",
@@ -743,6 +760,7 @@ DefineAbility({
     "ItemCreation",
   },
 })
+
 DefineAbility({
   Name="Catch Off-Guard",
   Category="FEAT",
@@ -767,6 +785,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Channel Smite",
   Category="FEAT",
@@ -790,6 +809,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Cleave",
   Category="FEAT",
@@ -819,6 +839,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Combat Casting",
   Category="FEAT",
@@ -835,6 +856,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Combat Expertise",
   Category="FEAT",
@@ -921,6 +943,7 @@ DefineAbility({
     "ModifyAC",
   },
 })
+
 DefineAbility({
   Name="Combat Expertise",
   Category="FEAT",
@@ -1001,6 +1024,7 @@ DefineAbility({
     "ModifyAC",
   },
 })
+
 DefineAbility({
   Name="Combat Reflexes",
   Category="FEAT",
@@ -1029,6 +1053,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Command Undead",
   Category="FEAT",
@@ -1055,6 +1080,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Craft Magic Arms and Armor",
   Category="FEAT",
@@ -1107,6 +1133,7 @@ DefineAbility({
     "ItemCreation",
   },
 })
+
 DefineAbility({
   Name="Craft Rod",
   Category="FEAT",
@@ -1145,6 +1172,7 @@ DefineAbility({
     "ItemCreation",
   },
 })
+
 DefineAbility({
   Name="Craft Staff",
   Category="FEAT",
@@ -1183,6 +1211,7 @@ DefineAbility({
     "ItemCreation",
   },
 })
+
 DefineAbility({
   Name="Craft Wand",
   Category="FEAT",
@@ -1221,6 +1250,7 @@ DefineAbility({
     "ItemCreation",
   },
 })
+
 DefineAbility({
   Name="Craft Wondrous Item",
   Category="FEAT",
@@ -1273,6 +1303,7 @@ DefineAbility({
     "ItemCreation",
   },
 })
+
 DefineAbility({
   Name="Critical Focus",
   Category="FEAT",
@@ -1308,6 +1339,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Critical Mastery",
   Category="FEAT",
@@ -1339,6 +1371,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Dazzling Display",
   Category="FEAT",
@@ -1362,6 +1395,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Deadly Aim",
   Category="FEAT",
@@ -1427,6 +1461,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Deadly Stroke",
   Category="FEAT",
@@ -1453,6 +1488,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Deafening Critical",
   Category="FEAT",
@@ -1494,6 +1530,7 @@ DefineAbility({
     "Critical",
   },
 })
+
 DefineAbility({
   Name="Deceitful",
   Category="FEAT",
@@ -1526,6 +1563,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Defensive Combat Training",
   Category="FEAT",
@@ -1551,6 +1589,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Deflect Arrows",
   Category="FEAT",
@@ -1591,6 +1630,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Deft Hands",
   Category="FEAT",
@@ -1623,6 +1663,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Diehard",
   Category="FEAT",
@@ -1646,6 +1687,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Disruptive",
   Category="FEAT",
@@ -1667,6 +1709,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Dodge",
   Category="FEAT",
@@ -1714,6 +1757,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Double Slice",
   Category="FEAT",
@@ -1763,6 +1807,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Elemental Channel",
   Category="FEAT",
@@ -1792,6 +1837,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Empower Spell",
   Category="FEAT",
@@ -1812,6 +1858,7 @@ DefineAbility({
     AppliedName="Empowered",
   },
 })
+
 DefineAbility({
   Name="Endurance",
   Category="FEAT",
@@ -1852,6 +1899,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Enlarge Spell",
   Category="FEAT",
@@ -1872,6 +1920,7 @@ DefineAbility({
     AppliedName="Enlarged",
   },
 })
+
 DefineAbility({
   Name="Eschew Materials",
   Category="FEAT",
@@ -1888,6 +1937,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Exhausting Critical",
   Category="FEAT",
@@ -1929,6 +1979,7 @@ DefineAbility({
     "Critical",
   },
 })
+
 DefineAbility({
   Name="Exotic Weapon Proficiency",
   Category="FEAT",
@@ -1964,6 +2015,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Extend Spell",
   Category="FEAT",
@@ -1984,6 +2036,7 @@ DefineAbility({
     AppliedName="Extended",
   },
 })
+
 DefineAbility({
   Name="Extra Channel",
   Category="FEAT",
@@ -2016,6 +2069,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Extra Ki",
   Category="FEAT",
@@ -2053,6 +2107,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Extra Lay On Hands",
   Category="FEAT",
@@ -2090,6 +2145,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Extra Mercy",
   Category="FEAT",
@@ -2127,6 +2183,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Extra Performance",
   Category="FEAT",
@@ -2164,6 +2221,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Extra Rage",
   Category="FEAT",
@@ -2201,6 +2259,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Far Shot",
   Category="FEAT",
@@ -2245,6 +2304,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Fleet",
   Category="FEAT",
@@ -2280,6 +2340,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Forge Ring",
   Category="FEAT",
@@ -2318,6 +2379,7 @@ DefineAbility({
     "ItemCreation",
   },
 })
+
 DefineAbility({
   Name="Gorgon's Fist",
   Category="FEAT",
@@ -2344,6 +2406,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Great Cleave",
   Category="FEAT",
@@ -2373,6 +2436,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Great Fortitude",
   Category="FEAT",
@@ -2398,6 +2462,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Greater Bull Rush",
   Category="FEAT",
@@ -2436,6 +2501,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Greater Disarm",
   Category="FEAT",
@@ -2488,6 +2554,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Greater Feint",
   Category="FEAT",
@@ -2531,6 +2598,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Greater Grapple",
   Category="FEAT",
@@ -2583,6 +2651,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Greater Overrun",
   Category="FEAT",
@@ -2621,6 +2690,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Greater Penetrating Strike",
   Category="FEAT",
@@ -2647,6 +2717,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Greater Shield Focus",
   Category="FEAT",
@@ -2710,6 +2781,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Greater Spell Focus",
   Category="FEAT",
@@ -2752,6 +2824,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Greater Spell Penetration",
   Category="FEAT",
@@ -2775,6 +2848,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Greater Sunder",
   Category="FEAT",
@@ -2813,6 +2887,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Greater Trip",
   Category="FEAT",
@@ -2865,6 +2940,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Greater Two-Weapon Fighting",
   Category="FEAT",
@@ -2917,6 +2993,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Greater Vital Strike",
   Category="FEAT",
@@ -2943,6 +3020,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Greater Weapon Focus",
   Category="FEAT",
@@ -2988,6 +3066,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Greater Weapon Specialization",
   Category="FEAT",
@@ -3030,6 +3109,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Heighten Spell",
   Category="FEAT",
@@ -3068,6 +3148,7 @@ DefineAbility({
     AppliedName="Heightened +1",
   },
 })
+
 DefineAbility({
   Name="Improved Bull Rush",
   Category="FEAT",
@@ -3108,6 +3189,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Improved Channel",
   Category="FEAT",
@@ -3168,6 +3250,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Improved Counterspell",
   Category="FEAT",
@@ -3184,6 +3267,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Improved Critical",
   Category="FEAT",
@@ -3223,6 +3307,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Improved Disarm",
   Category="FEAT",
@@ -3274,6 +3359,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Improved Familiar",
   Category="FEAT",
@@ -3299,6 +3385,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Improved Feint",
   Category="FEAT",
@@ -3340,6 +3427,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Improved Grapple",
   Category="FEAT",
@@ -3391,6 +3479,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Improved Great Fortitude",
   Category="FEAT",
@@ -3414,6 +3503,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Improved Initiative",
   Category="FEAT",
@@ -3439,6 +3529,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Improved Iron Will",
   Category="FEAT",
@@ -3462,6 +3553,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Improved Lightning Reflexes",
   Category="FEAT",
@@ -3485,6 +3577,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Improved Overrun",
   Category="FEAT",
@@ -3525,6 +3618,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Improved Precise Shot",
   Category="FEAT",
@@ -3568,6 +3662,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Improved Shield Bash",
   Category="FEAT",
@@ -3606,6 +3701,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Improved Sunder",
   Category="FEAT",
@@ -3646,6 +3742,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Improved Trip",
   Category="FEAT",
@@ -3697,6 +3794,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Improved Two-Weapon Fighting",
   Category="FEAT",
@@ -3749,6 +3847,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Improved Unarmed Strike",
   Category="FEAT",
@@ -3765,6 +3864,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Improved Vital Strike",
   Category="FEAT",
@@ -3791,6 +3891,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Improvised Weapon Mastery",
   Category="FEAT",
@@ -3817,6 +3918,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Intimidating Prowess",
   Category="FEAT",
@@ -3842,6 +3944,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Iron Will",
   Category="FEAT",
@@ -3867,6 +3970,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Leadership",
   Category="FEAT",
@@ -3920,6 +4024,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Lightning Reflexes",
   Category="FEAT",
@@ -3945,6 +4050,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Lightning Stance",
   Category="FEAT",
@@ -3988,6 +4094,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Lunge",
   Category="FEAT",
@@ -4009,6 +4116,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Magical Aptitude",
   Category="FEAT",
@@ -4041,6 +4149,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Manyshot",
   Category="FEAT",
@@ -4084,6 +4193,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Martial Weapon Proficiency",
   Category="FEAT",
@@ -4122,6 +4232,7 @@ DefineAbility({
     "MartialWeaponProficiency",
   },
 })
+
 DefineAbility({
   Name="Master Craftsman",
   Category="FEAT",
@@ -4167,6 +4278,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Maximize Spell",
   Category="FEAT",
@@ -4187,6 +4299,7 @@ DefineAbility({
     AppliedName="Maximized",
   },
 })
+
 DefineAbility({
   Name="Medusa's Wrath",
   Category="FEAT",
@@ -4213,6 +4326,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Mobility",
   Category="FEAT",
@@ -4262,6 +4376,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Mounted Archery",
   Category="FEAT",
@@ -4288,6 +4403,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Mounted Combat",
   Category="FEAT",
@@ -4309,6 +4425,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Natural Spell",
   Category="FEAT",
@@ -4347,6 +4464,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Nimble Moves",
   Category="FEAT",
@@ -4400,6 +4518,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Penetrating Strike",
   Category="FEAT",
@@ -4429,6 +4548,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Persuasive",
   Category="FEAT",
@@ -4461,6 +4581,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Pinpoint Targeting",
   Category="FEAT",
@@ -4504,6 +4625,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Point-Blank Shot",
   Category="FEAT",
@@ -4530,6 +4652,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Power Attack",
   Category="FEAT",
@@ -4658,6 +4781,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Precise Shot",
   Category="FEAT",
@@ -4681,6 +4805,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Quick Draw",
   Category="FEAT",
@@ -4702,6 +4827,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Quicken Spell",
   Category="FEAT",
@@ -4722,6 +4848,7 @@ DefineAbility({
     AppliedName="Quickened",
   },
 })
+
 DefineAbility({
   Name="Rapid Reload",
   Category="FEAT",
@@ -4756,6 +4883,7 @@ DefineAbility({
     Special="You can gain Rapid Reload multiple times. Each time you take the feat, it applies to a new type of crossbow.",
   },
 })
+
 DefineAbility({
   Name="Rapid Shot",
   Category="FEAT",
@@ -4807,6 +4935,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Ride-By Attack",
   Category="FEAT",
@@ -4834,6 +4963,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Run",
   Category="FEAT",
@@ -4850,6 +4980,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Scorpion Style",
   Category="FEAT",
@@ -4876,6 +5007,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Scribe Scroll",
   Category="FEAT",
@@ -4914,6 +5046,7 @@ DefineAbility({
     "ItemCreation",
   },
 })
+
 DefineAbility({
   Name="Selective Channeling",
   Category="FEAT",
@@ -4943,6 +5076,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Self-Sufficient",
   Category="FEAT",
@@ -4975,6 +5109,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Shatter Defenses",
   Category="FEAT",
@@ -5001,6 +5136,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Shield Focus",
   Category="FEAT",
@@ -5059,6 +5195,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Shield Master",
   Category="FEAT",
@@ -5137,6 +5274,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Shield Proficiency",
   Category="FEAT",
@@ -5163,6 +5301,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Shield Slam",
   Category="FEAT",
@@ -5208,6 +5347,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Shot on the Run",
   Category="FEAT",
@@ -5251,6 +5391,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Sickening Critical",
   Category="FEAT",
@@ -5292,6 +5433,7 @@ DefineAbility({
     "Critical",
   },
 })
+
 DefineAbility({
   Name="Silent Spell",
   Category="FEAT",
@@ -5312,6 +5454,7 @@ DefineAbility({
     AppliedName="Silent",
   },
 })
+
 DefineAbility({
   Name="Simple Weapon Proficiency",
   Category="FEAT",
@@ -5337,6 +5480,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Skill Focus",
   Category="FEAT",
@@ -5373,6 +5517,7 @@ DefineAbility({
     "SkillFocus",
   },
 })
+
 DefineAbility({
   Name="Snatch Arrows",
   Category="FEAT",
@@ -5413,6 +5558,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Spell Focus",
   Category="FEAT",
@@ -5448,6 +5594,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Spell Mastery",
   Category="FEAT",
@@ -5477,6 +5624,7 @@ DefineAbility({
     "WizardBonus",
   },
 })
+
 DefineAbility({
   Name="Spell Penetration",
   Category="FEAT",
@@ -5493,6 +5641,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Spellbreaker",
   Category="FEAT",
@@ -5519,6 +5668,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Spirited Charge",
   Category="FEAT",
@@ -5545,6 +5695,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Spring Attack",
   Category="FEAT",
@@ -5588,6 +5739,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Staggering Critical",
   Category="FEAT",
@@ -5632,6 +5784,7 @@ DefineAbility({
     "Critical",
   },
 })
+
 DefineAbility({
   Name="Stand Still",
   Category="FEAT",
@@ -5655,6 +5808,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Stealthy",
   Category="FEAT",
@@ -5687,6 +5841,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Step Up",
   Category="FEAT",
@@ -5708,6 +5863,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Still Spell",
   Category="FEAT",
@@ -5728,6 +5884,7 @@ DefineAbility({
     AppliedName="Still",
   },
 })
+
 DefineAbility({
   Name="Strike Back",
   Category="FEAT",
@@ -5749,6 +5906,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Stunning Critical",
   Category="FEAT",
@@ -5793,6 +5951,7 @@ DefineAbility({
     "Critical",
   },
 })
+
 DefineAbility({
   Name="Stunning Fist",
   Category="FEAT",
@@ -5901,6 +6060,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Throw Anything",
   Category="FEAT",
@@ -5926,6 +6086,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Tiring Critical",
   Category="FEAT",
@@ -5967,6 +6128,7 @@ DefineAbility({
     "Critical",
   },
 })
+
 DefineAbility({
   Name="Toughness",
   Category="FEAT",
@@ -6008,6 +6170,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Tower Shield Proficiency",
   Category="FEAT",
@@ -6053,6 +6216,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Trample",
   Category="FEAT",
@@ -6080,6 +6244,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Turn Undead",
   Category="FEAT",
@@ -6106,6 +6271,7 @@ DefineAbility({
     "General",
   },
 })
+
 DefineAbility({
   Name="Two-Weapon Defense",
   Category="FEAT",
@@ -6199,6 +6365,7 @@ DefineAbility({
     "ModifyAC",
   },
 })
+
 DefineAbility({
   Name="Two-Weapon Fighting",
   Category="FEAT",
@@ -6250,6 +6417,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Two-Weapon Rend",
   Category="FEAT",
@@ -6296,6 +6464,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Unseat",
   Category="FEAT",
@@ -6328,6 +6497,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Vital Strike",
   Category="FEAT",
@@ -6349,6 +6519,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Weapon Finesse",
   Category="FEAT",
@@ -6377,6 +6548,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Weapon Focus",
   Category="FEAT",
@@ -6414,6 +6586,7 @@ DefineAbility({
     "WeaponFocus",
   },
 })
+
 DefineAbility({
   Name="Weapon Specialization",
   Category="FEAT",
@@ -6455,6 +6628,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Whirlwind Attack",
   Category="FEAT",
@@ -6516,6 +6690,7 @@ DefineAbility({
     "AttackOption",
   },
 })
+
 DefineAbility({
   Name="Widen Spell",
   Category="FEAT",
@@ -6536,6 +6711,7 @@ DefineAbility({
     AppliedName="Widened",
   },
 })
+
 DefineAbility({
   Name="Wind Stance",
   Category="FEAT",
@@ -6579,6 +6755,7 @@ DefineAbility({
     "Combat",
   },
 })
+
 DefineAbility({
   Name="Leadership Score",
   Category="FEAT",
@@ -6601,6 +6778,7 @@ DefineAbility({
     "Internal",
   },
 })
+
 DefineAbility({
   Name="Power Attack (Off-Hand)",
   Category="FEAT",
@@ -6619,6 +6797,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 DefineAbility({
   Name="Power Attack (Light)",
   Category="FEAT",
@@ -6637,6 +6816,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 DefineAbility({
   Name="Power Attack (One-Handed)",
   Category="FEAT",
@@ -6655,6 +6835,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 DefineAbility({
   Name="Power Attack (Two-Handed)",
   Category="FEAT",
@@ -6673,6 +6854,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 DefineAbility({
   Name="Power Attack (Flurry)",
   Category="FEAT",
@@ -6691,6 +6873,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 DefineAbility({
   Name="Power Attack (Natural Secondary)",
   Category="FEAT",
@@ -6709,6 +6892,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 DefineAbility({
   Name="Power Attack (Natural Primary)",
   Category="FEAT",
@@ -6727,6 +6911,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 DefineAbility({
   Name="Power Attack (Natural Primary - Single)",
   Category="FEAT",
@@ -6745,6 +6930,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 ModifyAbility({
   Name="Arcane Strike",
   Category="FEAT",
@@ -6758,6 +6944,7 @@ ModifyAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Cleave (Granted by Sylvan Scimitar)",
   Key="Sylvan Scimitar ~ Cleave",
@@ -6773,6 +6960,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Heighten Spell +2",
   Category="FEAT",
@@ -6795,6 +6983,7 @@ DefineAbility({
     AppliedName="Heightened +2",
   },
 })
+
 DefineAbility({
   Name="Heighten Spell +3",
   Category="FEAT",
@@ -6817,6 +7006,7 @@ DefineAbility({
     AppliedName="Heightened +3",
   },
 })
+
 DefineAbility({
   Name="Heighten Spell +4",
   Category="FEAT",
@@ -6839,6 +7029,7 @@ DefineAbility({
     AppliedName="Heightened +4",
   },
 })
+
 DefineAbility({
   Name="Heighten Spell +5",
   Category="FEAT",
@@ -6861,6 +7052,7 @@ DefineAbility({
     AppliedName="Heightened +5",
   },
 })
+
 DefineAbility({
   Name="Heighten Spell +6",
   Category="FEAT",
@@ -6883,6 +7075,7 @@ DefineAbility({
     AppliedName="Heightened +6",
   },
 })
+
 DefineAbility({
   Name="Heighten Spell +7",
   Category="FEAT",
@@ -6905,6 +7098,7 @@ DefineAbility({
     AppliedName="Heightened +7",
   },
 })
+
 DefineAbility({
   Name="Heighten Spell +8",
   Category="FEAT",
@@ -6927,6 +7121,7 @@ DefineAbility({
     AppliedName="Heightened +8",
   },
 })
+
 DefineAbility({
   Name="Heighten Spell +9",
   Category="FEAT",
@@ -6949,6 +7144,7 @@ DefineAbility({
     AppliedName="Heightened +9",
   },
 })
+
 ModifyAbility({
   Name="Weapon Finesse",
   Category="Feat",
@@ -6965,3 +7161,4 @@ ModifyAbility({
     },
   },
 })
+

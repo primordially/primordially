@@ -6,54 +6,63 @@ DefineAlignment({
   SortKey="1a",
   Abbreviation="LG",
 })
+
 DefineAlignment({
   Name="Lawful Neutral",
   Key="LN",
   SortKey="1b",
   Abbreviation="LN",
 })
+
 DefineAlignment({
   Name="Lawful Evil",
   Key="LE",
   SortKey="1c",
   Abbreviation="LE",
 })
+
 DefineAlignment({
   Name="Neutral Good",
   Key="NG",
   SortKey="2a",
   Abbreviation="NG",
 })
+
 DefineAlignment({
   Name="Neutral",
   Key="TN",
   SortKey="2b",
   Abbreviation="TN",
 })
+
 DefineAlignment({
   Name="Neutral Evil",
   Key="NE",
   SortKey="2c",
   Abbreviation="NE",
 })
+
 DefineAlignment({
   Name="Chaotic Good",
   Key="CG",
   SortKey="3a",
   Abbreviation="CG",
 })
+
 DefineAlignment({
   Name="Chaotic Neutral",
   Key="CN",
   SortKey="3b",
   Abbreviation="CN",
 })
+
 DefineAlignment({
   Name="Chaotic Evil",
   Key="CE",
   SortKey="3c",
   Abbreviation="CE",
 })
+
 DefineAlignment({
   Name="None",
   Key="None",
@@ -62,6 +71,7 @@ DefineAlignment({
   ValidForDeity=false,
   ValidForFollower=false,
 })
+
 DefineAlignment({
   Name="Deity's",
   Key="Deity",
@@ -70,3 +80,4 @@ DefineAlignment({
   ValidForDeity=false,
   ValidForFollower=false,
 })
+

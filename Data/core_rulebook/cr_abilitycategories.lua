@@ -8,6 +8,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=false,
 })
+
 DefineAbilityCategory({
   Name="Class Skill",
   Category="Class Skill",
@@ -16,6 +17,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=false,
 })
+
 DefineAbilityCategory({
   Name="Equipment",
   Category="Equipment",
@@ -24,6 +26,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=false,
 })
+
 DefineAbilityCategory({
   Name="Ability Bonus",
   Category="Special Ability",
@@ -37,6 +40,7 @@ DefineAbilityCategory({
     "AbilityBonus",
   },
 })
+
 DefineAbilityCategory({
   Name="Gnome Obsessive Skill Bonus",
   Category="Internal",
@@ -50,6 +54,7 @@ DefineAbilityCategory({
     "Gnome Obsessive Skill Bonus",
   },
 })
+
 DefineAbilityCategory({
   Name="Adaptability Bonus Feat",
   Category="FEAT",
@@ -63,6 +68,7 @@ DefineAbilityCategory({
     "SkillFocus",
   },
 })
+
 DefineAbilityCategory({
   Name="Favored Class",
   Category="Special Ability",
@@ -76,6 +82,7 @@ DefineAbilityCategory({
     "FavoredClass",
   },
 })
+
 DefineAbilityCategory({
   Name="Favored Class Bonus",
   Category="Special Ability",
@@ -89,6 +96,7 @@ DefineAbilityCategory({
     "FavoredClassBonus",
   },
 })
+
 DefineAbilityCategory({
   Name="Favored Class Bonus ~ Skill Rank",
   Category="Special Ability",
@@ -100,6 +108,7 @@ DefineAbilityCategory({
   Plural="Favored Class Bonuses",
   Visible=true,
 })
+
 DefineAbilityCategory({
   Name="Barbarian Class Feature",
   Category="Special Ability",
@@ -113,6 +122,7 @@ DefineAbilityCategory({
     "BarbarianClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Bard Class Feature",
   Category="Special Ability",
@@ -126,6 +136,7 @@ DefineAbilityCategory({
     "BardClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Cleric Class Feature",
   Category="Special Ability",
@@ -139,6 +150,7 @@ DefineAbilityCategory({
     "ClericClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Druid Class Feature",
   Category="Special Ability",
@@ -152,6 +164,7 @@ DefineAbilityCategory({
     "DruidClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Fighter Class Feature",
   Category="Special Ability",
@@ -165,6 +178,7 @@ DefineAbilityCategory({
     "FighterClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Monk Class Feature",
   Category="Special Ability",
@@ -178,6 +192,7 @@ DefineAbilityCategory({
     "MonkClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Paladin Class Feature",
   Category="Special Ability",
@@ -191,6 +206,7 @@ DefineAbilityCategory({
     "PaladinClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Ranger Class Feature",
   Category="Special Ability",
@@ -204,6 +220,7 @@ DefineAbilityCategory({
     "RangerClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Rogue Class Feature",
   Category="Special Ability",
@@ -217,6 +234,7 @@ DefineAbilityCategory({
     "RogueClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Sorcerer Class Feature",
   Category="Special Ability",
@@ -229,6 +247,7 @@ DefineAbilityCategory({
     "Sorcerer Class Feature",
   },
 })
+
 DefineAbilityCategory({
   Name="Wizard Class Feature",
   Category="Special Ability",
@@ -242,6 +261,7 @@ DefineAbilityCategory({
     "WizardClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Assassin Class Feature",
   Category="Special Ability",
@@ -255,6 +275,7 @@ DefineAbilityCategory({
     "AssassinClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Dragon Disciple Class Feature",
   Category="Special Ability",
@@ -268,6 +289,7 @@ DefineAbilityCategory({
     "Dragon DiscipleClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Duelist Class Feature",
   Category="Special Ability",
@@ -281,6 +303,7 @@ DefineAbilityCategory({
     "DuelistClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Eldritch Knight Class Feature",
   Category="Special Ability",
@@ -294,6 +317,7 @@ DefineAbilityCategory({
     "Eldritch KnightClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Loremaster Class Feature",
   Category="Special Ability",
@@ -307,6 +331,7 @@ DefineAbilityCategory({
     "LoremasterClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Mystic Theurge Class Feature",
   Category="Special Ability",
@@ -320,6 +345,7 @@ DefineAbilityCategory({
     "Mystic TheurgeClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Pathfinder Chronicler Class Feature",
   Category="Special Ability",
@@ -333,6 +359,7 @@ DefineAbilityCategory({
     "Pathfinder ChroniclerClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Shadowdancer Class Feature",
   Category="Special Ability",
@@ -346,6 +373,7 @@ DefineAbilityCategory({
     "ShadowdancerClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Companion Class Feature",
   Category="Special Ability",
@@ -359,6 +387,7 @@ DefineAbilityCategory({
     "CompanionClassFeatures",
   },
 })
+
 DefineAbilityCategory({
   Name="Traits",
   Category="Special Ability",
@@ -373,6 +402,7 @@ DefineAbilityCategory({
     "Trait",
   },
 })
+
 DefineAbilityCategory({
   Name="Archetype",
   Category="Archetype",
@@ -381,6 +411,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=false,
 })
+
 DefineAbilityCategory({
   Name="ACF",
   Category="Archetype",
@@ -394,6 +425,7 @@ DefineAbilityCategory({
     "ACF",
   },
 })
+
 DefineAbilityCategory({
   Name="Alternative Class Features",
   Category="Internal",
@@ -407,6 +439,7 @@ DefineAbilityCategory({
     "ACF",
   },
 })
+
 DefineAbilityCategory({
   Name="Barbarian Archetype",
   Category="Archetype",
@@ -420,6 +453,7 @@ DefineAbilityCategory({
     "BarbarianArchetype",
   },
 })
+
 DefineAbilityCategory({
   Name="Bard Archetype",
   Category="Archetype",
@@ -433,6 +467,7 @@ DefineAbilityCategory({
     "BardArchetype",
   },
 })
+
 DefineAbilityCategory({
   Name="Cleric Archetype",
   Category="Archetype",
@@ -446,6 +481,7 @@ DefineAbilityCategory({
     "ClericArchetype",
   },
 })
+
 DefineAbilityCategory({
   Name="Druid Archetype",
   Category="Archetype",
@@ -459,6 +495,7 @@ DefineAbilityCategory({
     "DruidArchetype",
   },
 })
+
 DefineAbilityCategory({
   Name="Fighter Archetype",
   Category="Archetype",
@@ -472,6 +509,7 @@ DefineAbilityCategory({
     "FighterArchetype",
   },
 })
+
 DefineAbilityCategory({
   Name="Monk Archetype",
   Category="Archetype",
@@ -485,6 +523,7 @@ DefineAbilityCategory({
     "MonkArchetype",
   },
 })
+
 DefineAbilityCategory({
   Name="Paladin Archetype",
   Category="Archetype",
@@ -498,6 +537,7 @@ DefineAbilityCategory({
     "PaladinArchetype",
   },
 })
+
 DefineAbilityCategory({
   Name="Ranger Archetype",
   Category="Archetype",
@@ -511,6 +551,7 @@ DefineAbilityCategory({
     "RangerArchetype",
   },
 })
+
 DefineAbilityCategory({
   Name="Rogue Archetype",
   Category="Archetype",
@@ -524,6 +565,7 @@ DefineAbilityCategory({
     "RogueArchetype",
   },
 })
+
 DefineAbilityCategory({
   Name="Sorcerer Archetype",
   Category="Archetype",
@@ -537,6 +579,7 @@ DefineAbilityCategory({
     "Sorcerer Archetype",
   },
 })
+
 DefineAbilityCategory({
   Name="Wizard Archetype",
   Category="Archetype",
@@ -550,6 +593,7 @@ DefineAbilityCategory({
     "WizardArchetype",
   },
 })
+
 DefineAbilityCategory({
   Name="Dwarf Racial Trait",
   Category="Special Ability",
@@ -564,6 +608,7 @@ DefineAbilityCategory({
     "DwarfRacialTrait",
   },
 })
+
 DefineAbilityCategory({
   Name="Elf Racial Trait",
   Category="Special Ability",
@@ -578,6 +623,7 @@ DefineAbilityCategory({
     "ElfRacialTrait",
   },
 })
+
 DefineAbilityCategory({
   Name="Gnome Racial Trait",
   Category="Special Ability",
@@ -592,6 +638,7 @@ DefineAbilityCategory({
     "GnomeRacialTrait",
   },
 })
+
 DefineAbilityCategory({
   Name="Half-Elf Racial Trait",
   Category="Special Ability",
@@ -606,6 +653,7 @@ DefineAbilityCategory({
     "HalfElfRacialTrait",
   },
 })
+
 DefineAbilityCategory({
   Name="Half-Orc Racial Trait",
   Category="Special Ability",
@@ -620,6 +668,7 @@ DefineAbilityCategory({
     "HalfOrcRacialTrait",
   },
 })
+
 DefineAbilityCategory({
   Name="Halfling Racial Trait",
   Category="Special Ability",
@@ -634,6 +683,7 @@ DefineAbilityCategory({
     "HalflingRacialTrait",
   },
 })
+
 DefineAbilityCategory({
   Name="Human Racial Trait",
   Category="Special Ability",
@@ -648,6 +698,7 @@ DefineAbilityCategory({
     "HumanRacialTrait",
   },
 })
+
 DefineAbilityCategory({
   Name="Racial Trait",
   Category="Special Ability",
@@ -663,6 +714,7 @@ DefineAbilityCategory({
     "SpecialAttack",
   },
 })
+
 DefineAbilityCategory({
   Name="Giant Spider Type",
   Category="Internal",
@@ -676,6 +728,7 @@ DefineAbilityCategory({
     "GiantSpiderType",
   },
 })
+
 DefineAbilityCategory({
   Name="Fighter Bonus Feat",
   Category="FEAT",
@@ -689,6 +742,7 @@ DefineAbilityCategory({
     "Combat",
   },
 })
+
 DefineAbilityCategory({
   Name="Monk Bonus Feat",
   Category="Special Ability",
@@ -703,6 +757,7 @@ DefineAbilityCategory({
     "Meditation",
   },
 })
+
 DefineAbilityCategory({
   Name="Combat Trick Feat",
   Category="FEAT",
@@ -717,6 +772,7 @@ DefineAbilityCategory({
     "Combat",
   },
 })
+
 DefineAbilityCategory({
   Name="Weapon Training",
   Category="FEAT",
@@ -730,6 +786,7 @@ DefineAbilityCategory({
     "WeaponFocus",
   },
 })
+
 DefineAbilityCategory({
   Name="Ranger Bonus Feat",
   Category="Special Ability",
@@ -743,6 +800,7 @@ DefineAbilityCategory({
     "RangerBonusFeat",
   },
 })
+
 DefineAbilityCategory({
   Name="Wizard Bonus Feat",
   Category="FEAT",
@@ -758,6 +816,7 @@ DefineAbilityCategory({
     "Metamagic",
   },
 })
+
 DefineAbilityCategory({
   Name="Sorcerer Bloodline",
   Category="Sorcerer Bloodline",
@@ -766,6 +825,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=false,
 })
+
 DefineAbilityCategory({
   Name="Sorcerer Bloodline Power",
   Category="Special Ability",
@@ -779,6 +839,7 @@ DefineAbilityCategory({
     "Sorcerer Bloodline Power",
   },
 })
+
 DefineAbilityCategory({
   Name="Sorcerer Bloodline Feat",
   Category="Internal",
@@ -792,6 +853,7 @@ DefineAbilityCategory({
     "Sorcerer Bloodline Feat",
   },
 })
+
 DefineAbilityCategory({
   Name="Crossblooded Sorcerer Bloodline",
   Category="Crossblooded Sorcerer Bloodline",
@@ -800,6 +862,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=false,
 })
+
 DefineAbilityCategory({
   Name="Crossblooded Bloodline",
   Category="Crossblooded Bloodline",
@@ -808,6 +871,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=false,
 })
+
 DefineAbilityCategory({
   Name="Eldritch Heritage Bloodline",
   Category="Eldritch Heritage Bloodline",
@@ -816,6 +880,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=false,
 })
+
 DefineAbilityCategory({
   Name="Rage Power",
   Category="Special Ability",
@@ -831,6 +896,7 @@ DefineAbilityCategory({
     "Rage Power",
   },
 })
+
 DefineAbilityCategory({
   Name="Versatile Performance",
   Category="Special Ability",
@@ -844,6 +910,7 @@ DefineAbilityCategory({
     "VersatilePerformance",
   },
 })
+
 DefineAbilityCategory({
   Name="Channel Energy",
   Category="Special Ability",
@@ -858,6 +925,7 @@ DefineAbilityCategory({
     "ChannelEnergySelection",
   },
 })
+
 DefineAbilityCategory({
   Name="Weapon Training I",
   Category="Special Ability",
@@ -871,6 +939,7 @@ DefineAbilityCategory({
     "WeaponTraining1",
   },
 })
+
 DefineAbilityCategory({
   Name="Weapon Training II",
   Category="Special Ability",
@@ -884,6 +953,7 @@ DefineAbilityCategory({
     "WeaponTraining2",
   },
 })
+
 DefineAbilityCategory({
   Name="Weapon Training III",
   Category="Special Ability",
@@ -897,6 +967,7 @@ DefineAbilityCategory({
     "WeaponTraining3",
   },
 })
+
 DefineAbilityCategory({
   Name="Weapon Training IV",
   Category="Special Ability",
@@ -910,6 +981,7 @@ DefineAbilityCategory({
     "WeaponTraining4",
   },
 })
+
 DefineAbilityCategory({
   Name="Mercy",
   Category="Special Ability",
@@ -923,6 +995,7 @@ DefineAbilityCategory({
     "Mercy",
   },
 })
+
 DefineAbilityCategory({
   Name="Divine Bond",
   Category="Special Ability",
@@ -936,6 +1009,7 @@ DefineAbilityCategory({
     "DivineBond",
   },
 })
+
 DefineAbilityCategory({
   Name="Favored Enemy",
   Category="Special Ability",
@@ -949,6 +1023,7 @@ DefineAbilityCategory({
     "FavoredEnemy",
   },
 })
+
 DefineAbilityCategory({
   Name="Favored Enemy Bonus",
   Category="Special Ability",
@@ -962,6 +1037,7 @@ DefineAbilityCategory({
     "FavoredEnemyBonus",
   },
 })
+
 DefineAbilityCategory({
   Name="Favored Terrain",
   Category="Special Ability",
@@ -975,6 +1051,7 @@ DefineAbilityCategory({
     "FavoredTerrain",
   },
 })
+
 DefineAbilityCategory({
   Name="Favored Terrain Bonus",
   Category="Special Ability",
@@ -988,6 +1065,7 @@ DefineAbilityCategory({
     "FavoredTerrainBonus",
   },
 })
+
 DefineAbilityCategory({
   Name="Ranger Combat Style Feat",
   Category="Special Ability",
@@ -1002,6 +1080,7 @@ DefineAbilityCategory({
     "Ranger Combat Style Feat",
   },
 })
+
 DefineAbilityCategory({
   Name="Combat Style",
   Category="Special Ability",
@@ -1015,6 +1094,7 @@ DefineAbilityCategory({
     "RangerCombatStyle",
   },
 })
+
 DefineAbilityCategory({
   Name="Hunter's Bond",
   Category="Special Ability",
@@ -1028,6 +1108,7 @@ DefineAbilityCategory({
     "HuntersBond",
   },
 })
+
 DefineAbilityCategory({
   Name="Rogue Talent",
   Category="Special Ability",
@@ -1041,6 +1122,7 @@ DefineAbilityCategory({
     "RogueTalent",
   },
 })
+
 DefineAbilityCategory({
   Name="Advanced Talent",
   Category="Special Ability",
@@ -1054,6 +1136,7 @@ DefineAbilityCategory({
     "RogueAdvancedTalent",
   },
 })
+
 DefineAbilityCategory({
   Name="Bloodline",
   Category="Internal",
@@ -1067,6 +1150,7 @@ DefineAbilityCategory({
     "Bloodline Selection",
   },
 })
+
 DefineAbilityCategory({
   Name="Arcane Bond",
   Category="Special Ability",
@@ -1080,6 +1164,7 @@ DefineAbilityCategory({
     "ArcaneBond",
   },
 })
+
 DefineAbilityCategory({
   Name="New Arcana",
   Category="Internal",
@@ -1092,6 +1177,7 @@ DefineAbilityCategory({
     "SorcererNewArcana",
   },
 })
+
 DefineAbilityCategory({
   Name="Arcane Opposition School",
   Category="Special Ability",
@@ -1106,6 +1192,7 @@ DefineAbilityCategory({
     "ArcaneOppositionSchool",
   },
 })
+
 DefineAbilityCategory({
   Name="Expert Class Skills",
   Category="Special Ability",
@@ -1119,6 +1206,7 @@ DefineAbilityCategory({
     "ExpertClassSkills",
   },
 })
+
 DefineAbilityCategory({
   Name="Nature Bond",
   Category="Special Ability",
@@ -1132,6 +1220,7 @@ DefineAbilityCategory({
     "NatureBond",
   },
 })
+
 DefineAbilityCategory({
   Name="Druid Domain",
   Category="Special Ability",
@@ -1146,6 +1235,7 @@ DefineAbilityCategory({
     "Inquisition",
   },
 })
+
 DefineAbilityCategory({
   Name="Weapon Mastery",
   Category="Special Ability",
@@ -1159,6 +1249,7 @@ DefineAbilityCategory({
     "WeaponMastery",
   },
 })
+
 DefineAbilityCategory({
   Name="Simple Weapon Proficiency Choice",
   Category="Special Ability",
@@ -1172,6 +1263,7 @@ DefineAbilityCategory({
     "SingleSimpleWeaponProficiency",
   },
 })
+
 DefineAbilityCategory({
   Name="Ki Pool Stat Choice",
   Category="Internal",
@@ -1185,6 +1277,7 @@ DefineAbilityCategory({
     "KiStatChoice",
   },
 })
+
 DefineAbilityCategory({
   Name="Arcane School Specialization",
   Category="Special Ability",
@@ -1199,6 +1292,7 @@ DefineAbilityCategory({
     "ArcaneSchool",
   },
 })
+
 DefineAbilityCategory({
   Name="Necromancer Channeling",
   Category="Special Ability",
@@ -1212,6 +1306,7 @@ DefineAbilityCategory({
     "NecromancerChanneling",
   },
 })
+
 DefineAbilityCategory({
   Name="Knowledge Class Skill",
   Category="Class Skill",
@@ -1225,6 +1320,7 @@ DefineAbilityCategory({
     "Knowledge",
   },
 })
+
 DefineAbilityCategory({
   Name="Arcane Bloodline School Power",
   Category="Special Ability",
@@ -1235,6 +1331,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=true,
 })
+
 DefineAbilityCategory({
   Name="Animal Companion Feat",
   Category="Special Ability",
@@ -1249,6 +1346,7 @@ DefineAbilityCategory({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbilityCategory({
   Name="Companion Level Increase Choice",
   Category="Special Ability",
@@ -1263,6 +1361,7 @@ DefineAbilityCategory({
     "CompChoice",
   },
 })
+
 DefineAbilityCategory({
   Name="Companion Stat Increase",
   Category="Special Ability",
@@ -1277,6 +1376,7 @@ DefineAbilityCategory({
     "CompStatChoice",
   },
 })
+
 DefineAbilityCategory({
   Name="Companion Skill",
   Category="Internal",
@@ -1291,6 +1391,7 @@ DefineAbilityCategory({
     "AnimalCompanionSkill",
   },
 })
+
 DefineAbilityCategory({
   Name="Animal Trick",
   Category="Special Ability",
@@ -1304,6 +1405,7 @@ DefineAbilityCategory({
     "AnimalTrick",
   },
 })
+
 DefineAbilityCategory({
   Name="Loremaster Secret",
   Category="Special Ability",
@@ -1317,6 +1419,7 @@ DefineAbilityCategory({
     "LoremasterSecret",
   },
 })
+
 DefineAbilityCategory({
   Name="Add Spoken Language",
   Category="Special Ability",
@@ -1328,6 +1431,7 @@ DefineAbilityCategory({
     "AddSpokenLanguage",
   },
 })
+
 DefineAbilityCategory({
   Name="Cosmopolitan Spoken Language",
   Category="Special Ability",
@@ -1339,11 +1443,13 @@ DefineAbilityCategory({
     "AddSpokenLanguage",
   },
 })
+
 DefineAbilityCategory({
   Name="Intelligent Item",
   Category="Intelligent Item",
   Visible=false,
 })
+
 DefineAbilityCategory({
   Name="Intelligent Item Alignment",
   Category="Intelligent Item",
@@ -1356,6 +1462,7 @@ DefineAbilityCategory({
     "IntelligentAlignment",
   },
 })
+
 DefineAbilityCategory({
   Name="Intelligent Item Languages",
   Category="Intelligent Item",
@@ -1368,6 +1475,7 @@ DefineAbilityCategory({
     "IntItemLang",
   },
 })
+
 DefineAbilityCategory({
   Name="Intelligent Item Power",
   Category="Intelligent Item",
@@ -1380,6 +1488,7 @@ DefineAbilityCategory({
     "ItemStandardPower",
   },
 })
+
 DefineAbilityCategory({
   Name="Intelligent Item Purpose",
   Category="Intelligent Item",
@@ -1392,6 +1501,7 @@ DefineAbilityCategory({
     "ItemPurpose",
   },
 })
+
 DefineAbilityCategory({
   Name="Intelligent Item Purpose Power",
   Category="Intelligent Item",
@@ -1404,6 +1514,7 @@ DefineAbilityCategory({
     "ItemPurposePower",
   },
 })
+
 DefineAbilityCategory({
   Name="Afflictions",
   Category="Afflictions",
@@ -1414,6 +1525,7 @@ DefineAbilityCategory({
   Plural="Afflictions",
   Visible=true,
 })
+
 DefineAbilityCategory({
   Name="GM Awards",
   Category="Special Ability",
@@ -1427,6 +1539,7 @@ DefineAbilityCategory({
     "GM_Award",
   },
 })
+
 DefineAbilityCategory({
   Name="Extra Channel",
   Category="Special Ability",
@@ -1440,6 +1553,7 @@ DefineAbilityCategory({
     "ExtraChannel",
   },
 })
+
 DefineAbilityCategory({
   Name="Weapon Focus",
   Category="FEAT",
@@ -1450,6 +1564,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=true,
 })
+
 DefineAbilityCategory({
   Name="Greater Weapon Focus",
   Category="FEAT",
@@ -1460,6 +1575,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=true,
 })
+
 DefineAbilityCategory({
   Name="Improved Critical",
   Category="FEAT",
@@ -1470,6 +1586,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=true,
 })
+
 DefineAbilityCategory({
   Name="Greater Weapon Specialization",
   Category="FEAT",
@@ -1480,6 +1597,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=true,
 })
+
 DefineAbilityCategory({
   Name="Weapon Specialization",
   Category="FEAT",
@@ -1490,6 +1608,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=true,
 })
+
 DefineAbilityCategory({
   Name="Exotic Weapon Proficiency",
   Category="FEAT",
@@ -1500,6 +1619,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=true,
 })
+
 DefineAbilityCategory({
   Name="Martial Weapon Proficiency",
   Category="FEAT",
@@ -1510,6 +1630,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=true,
 })
+
 DefineAbilityCategory({
   Name="Skill Focus",
   Category="FEAT",
@@ -1520,6 +1641,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=true,
 })
+
 DefineAbilityCategory({
   Name="Spell Focus",
   Category="FEAT",
@@ -1530,6 +1652,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=true,
 })
+
 DefineAbilityCategory({
   Name="Teamwork Feat",
   Category="FEAT",
@@ -1542,6 +1665,7 @@ DefineAbilityCategory({
     "Teamwork",
   },
 })
+
 DefineAbilityCategory({
   Name="Racial Trait",
   Category="Special Ability",
@@ -1555,6 +1679,7 @@ DefineAbilityCategory({
     "SpecialAttack",
   },
 })
+
 DefineAbilityCategory({
   Name="Class Feature",
   Category="Special Ability",
@@ -1569,6 +1694,7 @@ DefineAbilityCategory({
     "SpecialAttack",
   },
 })
+
 DefineAbilityCategory({
   Name="Class Ability",
   Category="Special Ability",
@@ -1583,6 +1709,7 @@ DefineAbilityCategory({
     "SpecialAttack",
   },
 })
+
 DefineAbilityCategory({
   Name="Special Mount Choice",
   Category="Internal",
@@ -1594,6 +1721,7 @@ DefineAbilityCategory({
     "SpecialMountSelection",
   },
 })
+
 DefineAbilityCategory({
   Name="Permanency Applied Effects",
   Category="Special Ability",
@@ -1605,6 +1733,7 @@ DefineAbilityCategory({
     "PermanencySpell",
   },
 })
+
 DefineAbilityCategory({
   Name="Optional Rules Systems",
   Category="Internal",
@@ -1616,6 +1745,7 @@ DefineAbilityCategory({
     "OptionalRules",
   },
 })
+
 DefineAbilityCategory({
   Name="Pact",
   Category="Special Ability",
@@ -1627,6 +1757,7 @@ DefineAbilityCategory({
     "Pact",
   },
 })
+
 DefineAbilityCategory({
   Name="Background",
   Category="Background",
@@ -1635,6 +1766,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=false,
 })
+
 DefineAbilityCategory({
   Name="Human Ethnicity",
   Category="Background",
@@ -1648,6 +1780,7 @@ DefineAbilityCategory({
     "HumanEthnicity",
   },
 })
+
 DefineAbilityCategory({
   Name="Region of Origin",
   Category="Background",
@@ -1661,6 +1794,7 @@ DefineAbilityCategory({
     "Region",
   },
 })
+
 DefineAbilityCategory({
   Name="Headband of Intellect Skill Choice",
   Category="Special Ability",
@@ -1673,6 +1807,7 @@ DefineAbilityCategory({
     "HeadbandSkill",
   },
 })
+
 DefineAbilityCategory({
   Name="Intelligence-Based Skill",
   Category="Special Ability",
@@ -1684,6 +1819,7 @@ DefineAbilityCategory({
     "IntBaseSkill",
   },
 })
+
 DefineAbilityCategory({
   Name="Raging Selection",
   Category="Special Ability",
@@ -1696,6 +1832,7 @@ DefineAbilityCategory({
     "RageSelection",
   },
 })
+
 DefineAbilityCategory({
   Name="Sorcerer Draconic Bloodline",
   Category="Special Ability",
@@ -1708,6 +1845,7 @@ DefineAbilityCategory({
     "Sorcerer Draconic Bloodline Choice",
   },
 })
+
 DefineAbilityCategory({
   Name="Sorcerer Elemental Bloodline",
   Category="Special Ability",
@@ -1720,6 +1858,7 @@ DefineAbilityCategory({
     "Sorcerer Elemental Bloodline Choice",
   },
 })
+
 DefineAbilityCategory({
   Name="Draconic Bloodline Type",
   Category="Special Ability",
@@ -1732,6 +1871,7 @@ DefineAbilityCategory({
     "Sorcerer Draconic Bloodline Choice",
   },
 })
+
 DefineAbilityCategory({
   Name="Elemental Bloodline Type",
   Category="Special Ability",
@@ -1744,6 +1884,7 @@ DefineAbilityCategory({
     "Sorcerer Elemental Bloodline Choice",
   },
 })
+
 DefineAbilityCategory({
   Name="Blood of Dragons Bloodline",
   Category="Blood of Dragons Bloodline",
@@ -1752,6 +1893,7 @@ DefineAbilityCategory({
   FractionalPool=false,
   Visible=false,
 })
+
 DefineAbilityCategory({
   Name="Dragon Disciple Bloodline",
   Category="Internal",
@@ -1764,6 +1906,7 @@ DefineAbilityCategory({
     "Dragon Disciple Bloodline Choice",
   },
 })
+
 DefineAbilityCategory({
   Name="Temp Feat",
   Category="FEAT",
@@ -1777,6 +1920,7 @@ DefineAbilityCategory({
     "*",
   },
 })
+
 DefineAbilityCategory({
   Name="Temp Combat Feat",
   Category="FEAT",
@@ -1790,6 +1934,7 @@ DefineAbilityCategory({
     "Combat",
   },
 })
+
 DefineAbilityCategory({
   Name="Barbarian Class Selection",
   Category="Class",
@@ -1803,6 +1948,7 @@ DefineAbilityCategory({
     "Barbarian Class Selection",
   },
 })
+
 DefineAbilityCategory({
   Name="Monk Class Selection",
   Category="Class",
@@ -1816,6 +1962,7 @@ DefineAbilityCategory({
     "Monk Class Selection",
   },
 })
+
 DefineAbilityCategory({
   Name="Rogue Class Selection",
   Category="Class",
@@ -1829,6 +1976,7 @@ DefineAbilityCategory({
     "Rogue Class Selection",
   },
 })
+
 DefineAbilityCategory({
   Name="GM Bonus Spell Known",
   Category="Special Ability",
@@ -1841,6 +1989,7 @@ DefineAbilityCategory({
     "GM Bonus Spell Known",
   },
 })
+
 DefineAbilityCategory({
   Name="GM Bonus Spell Cast",
   Category="Special Ability",
@@ -1853,6 +2002,7 @@ DefineAbilityCategory({
     "GM Bonus Spell Cast",
   },
 })
+
 DefineAbilityCategory({
   Name="GM Penalized Spell Known",
   Category="Special Ability",
@@ -1865,6 +2015,7 @@ DefineAbilityCategory({
     "GM Penalized Spell Known",
   },
 })
+
 DefineAbilityCategory({
   Name="GM Penalized Spell Cast",
   Category="Special Ability",
@@ -1877,6 +2028,7 @@ DefineAbilityCategory({
     "GM Penalized Spell Cast",
   },
 })
+
 DefineAbilityCategory({
   Name="Human Subrace",
   Category="Internal",
@@ -1889,3 +2041,4 @@ DefineAbilityCategory({
     "HumanSubrace",
   },
 })
+

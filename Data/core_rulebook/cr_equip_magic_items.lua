@@ -120,6 +120,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, greater magic fang, creator's caster level must be at least three times the amulet's bonus, plus any requirements of the melee weapon special abilities",
   },
 })
+
 DefineEquipment({
   Name="Amulet of Mighty Fists +1",
   Key="Amulet of Mighty Fists +1",
@@ -158,6 +159,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, greater magic fang, creator's caster level must be at least three times the amulet's bonus, plus any requirements of the melee weapon special abilities",
   },
 })
+
 DefineEquipment({
   Name="Amulet of Mighty Fists +2",
   Key="Amulet of Mighty Fists +2",
@@ -196,6 +198,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, greater magic fang, creator's caster level must be at least three times the amulet's bonus, plus any requirements of the melee weapon special abilities",
   },
 })
+
 DefineEquipment({
   Name="Amulet of Mighty Fists +3",
   Key="Amulet of Mighty Fists +3",
@@ -234,6 +237,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, greater magic fang, creator's caster level must be at least three times the amulet's bonus, plus any requirements of the melee weapon special abilities",
   },
 })
+
 DefineEquipment({
   Name="Amulet of Mighty Fists +4",
   Key="Amulet of Mighty Fists +4",
@@ -272,6 +276,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, greater magic fang, creator's caster level must be at least three times the amulet's bonus, plus any requirements of the melee weapon special abilities",
   },
 })
+
 DefineEquipment({
   Name="Amulet of Mighty Fists +5",
   Key="Amulet of Mighty Fists +5",
@@ -310,6 +315,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, greater magic fang, creator's caster level must be at least three times the amulet's bonus, plus any requirements of the melee weapon special abilities",
   },
 })
+
 DefineEquipment({
   Name="Amulet of Natural Armor +1",
   Key="Amulet of Natural Armor +1",
@@ -347,6 +353,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, barkskin, creator's caster level must be at least three times the amulet's bonus",
   },
 })
+
 DefineEquipment({
   Name="Amulet of Natural Armor +2",
   Key="Amulet of Natural Armor +2",
@@ -384,6 +391,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, barkskin, creator's caster level must be at least three times the amulet's bonus",
   },
 })
+
 DefineEquipment({
   Name="Amulet of Natural Armor +3",
   Key="Amulet of Natural Armor +3",
@@ -421,6 +429,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, barkskin, creator's caster level must be at least three times the amulet's bonus",
   },
 })
+
 DefineEquipment({
   Name="Amulet of Natural Armor +4",
   Key="Amulet of Natural Armor +4",
@@ -458,6 +467,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, barkskin, creator's caster level must be at least three times the amulet's bonus",
   },
 })
+
 DefineEquipment({
   Name="Amulet of Natural Armor +5",
   Key="Amulet of Natural Armor +5",
@@ -495,6 +505,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, barkskin, creator's caster level must be at least three times the amulet's bonus",
   },
 })
+
 DefineEquipment({
   Name="Amulet of the Planes",
   Key="Amulet of the Planes",
@@ -520,6 +531,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, plane shift",
   },
 })
+
 DefineEquipment({
   Name="Amulet of Proof Against Detection and Location",
   Key="Amulet of Proof Against Detection and Location",
@@ -545,6 +557,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, nondetection",
   },
 })
+
 DefineEquipment({
   Name="Apparatus of the Crab",
   Key="Apparatus of the Crab",
@@ -569,6 +582,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Bag of Holding (Type I)",
   Key="Bag of Holding (Type I)",
@@ -597,6 +611,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, secret chest",
   },
 })
+
 DefineEquipment({
   Name="Bag of Holding (Type II)",
   Key="Bag of Holding (Type II)",
@@ -625,6 +640,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, secret chest",
   },
 })
+
 DefineEquipment({
   Name="Bag of Holding (Type III)",
   Key="Bag of Holding (Type III)",
@@ -653,6 +669,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, secret chest",
   },
 })
+
 DefineEquipment({
   Name="Bag of Holding (Type IV)",
   Key="Bag of Holding (Type IV)",
@@ -681,6 +698,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, secret chest",
   },
 })
+
 DefineEquipment({
   Name="Bag of Tricks (Gray)",
   Key="Bag of Tricks (Gray)",
@@ -703,6 +721,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, summon nature's ally II",
   },
 })
+
 DefineEquipment({
   Name="Bag of Tricks (Rust)",
   Key="Bag of Tricks (Rust)",
@@ -725,6 +744,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, summon nature's ally III",
   },
 })
+
 DefineEquipment({
   Name="Bag of Tricks (Tan)",
   Key="Bag of Tricks (Tan)",
@@ -747,6 +767,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, summon nature's ally V",
   },
 })
+
 DefineEquipment({
   Name="Bead of Force",
   Key="Bead of Force",
@@ -776,6 +797,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, resilient sphere",
   },
 })
+
 DefineEquipment({
   Name="Belt of Dwarvenkind",
   Key="Belt of Dwarvenkind",
@@ -846,6 +868,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, tongues, creator must be a dwarf",
   },
 })
+
 DefineEquipment({
   Name="Belt of Giant Strength +2",
   Key="Belt of Giant Strength +2",
@@ -882,6 +905,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bull's strength",
   },
 })
+
 DefineEquipment({
   Name="Belt of Giant Strength +4",
   Key="Belt of Giant Strength +4",
@@ -918,6 +942,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bull's strength",
   },
 })
+
 DefineEquipment({
   Name="Belt of Giant Strength +6",
   Key="Belt of Giant Strength +6",
@@ -954,6 +979,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bull's strength",
   },
 })
+
 DefineEquipment({
   Name="Belt of Incredible Dexterity +2",
   Key="Belt of Incredible Dexterity +2",
@@ -990,6 +1016,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, cat's grace",
   },
 })
+
 DefineEquipment({
   Name="Belt of Incredible Dexterity +4",
   Key="Belt of Incredible Dexterity +4",
@@ -1026,6 +1053,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, cat's grace",
   },
 })
+
 DefineEquipment({
   Name="Belt of Incredible Dexterity +6",
   Key="Belt of Incredible Dexterity +6",
@@ -1062,6 +1090,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, cat's grace",
   },
 })
+
 DefineEquipment({
   Name="Belt of Mighty Constitution +2",
   Key="Belt of Mighty Constitution +2",
@@ -1098,6 +1127,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bear's endurance",
   },
 })
+
 DefineEquipment({
   Name="Belt of Mighty Constitution +4",
   Key="Belt of Mighty Constitution +4",
@@ -1134,6 +1164,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bear's endurance",
   },
 })
+
 DefineEquipment({
   Name="Belt of Mighty Constitution +6",
   Key="Belt of Mighty Constitution +6",
@@ -1170,6 +1201,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bear's endurance",
   },
 })
+
 DefineEquipment({
   Name="Belt of Physical Might +2 (Str, Dex)",
   Key="Belt of Physical Might (STR/DEX) +2",
@@ -1207,6 +1239,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bull's strength, cat's grace",
   },
 })
+
 DefineEquipment({
   Name="Belt of Physical Might +4 (Str, Dex)",
   Key="Belt of Physical Might (STR/DEX) +4",
@@ -1244,6 +1277,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bull's strength, cat's grace",
   },
 })
+
 DefineEquipment({
   Name="Belt of Physical Might +6 (Str, Dex)",
   Key="Belt of Physical Might (STR/DEX) +6",
@@ -1281,6 +1315,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bull's strength, cat's grace",
   },
 })
+
 DefineEquipment({
   Name="Belt of Physical Might +2 (Str, Con)",
   Key="Belt of Physical Might (STR/CON) +2",
@@ -1318,6 +1353,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bear's endurance, bull's strength",
   },
 })
+
 DefineEquipment({
   Name="Belt of Physical Might +4 (Str, Con)",
   Key="Belt of Physical Might (STR/CON) +4",
@@ -1355,6 +1391,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bear's endurance, bull's strength",
   },
 })
+
 DefineEquipment({
   Name="Belt of Physical Might +6 (Str, Con)",
   Key="Belt of Physical Might (STR/CON) +6",
@@ -1392,6 +1429,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bear's endurance, bull's strength",
   },
 })
+
 DefineEquipment({
   Name="Belt of Physical Might +2 (Dex, Con)",
   Key="Belt of Physical Might (DEX/CON) +2",
@@ -1429,6 +1467,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bear's endurance, cat's grace",
   },
 })
+
 DefineEquipment({
   Name="Belt of Physical Might +4 (Dex, Con)",
   Key="Belt of Physical Might (DEX/CON) +4",
@@ -1466,6 +1505,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bear's endurance, cat's grace",
   },
 })
+
 DefineEquipment({
   Name="Belt of Physical Might +6 (Dex, Con)",
   Key="Belt of Physical Might (DEX/CON) +6",
@@ -1503,6 +1543,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bear's endurance, cat's grace",
   },
 })
+
 DefineEquipment({
   Name="Belt of Physical Perfection +2",
   Key="Belt of Physical Perfection +2",
@@ -1541,6 +1582,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bear's endurance, bull's strength, cat's grace",
   },
 })
+
 DefineEquipment({
   Name="Belt of Physical Perfection +4",
   Key="Belt of Physical Perfection +4",
@@ -1579,6 +1621,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bear's endurance, bull's strength, cat's grace",
   },
 })
+
 DefineEquipment({
   Name="Belt of Physical Perfection +6",
   Key="Belt of Physical Perfection +6",
@@ -1617,6 +1660,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bear's endurance, bull's strength, cat's grace",
   },
 })
+
 DefineEquipment({
   Name="Blessed Book",
   Key="Blessed Book",
@@ -1643,6 +1687,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, secret page",
   },
 })
+
 DefineEquipment({
   Name="Folding Boat",
   Key="Boat (Folding)",
@@ -1670,6 +1715,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fabricate, creator must have 2 ranks in the Craft (ships) skill",
   },
 })
+
 DefineEquipment({
   Name="Boots of Elvenkind",
   Key="Boots of Elvenkind",
@@ -1708,6 +1754,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be an elf",
   },
 })
+
 DefineEquipment({
   Name="Boots of Levitation",
   Key="Boots of Levitation",
@@ -1734,6 +1781,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, levitate",
   },
 })
+
 DefineEquipment({
   Name="Boots of Speed",
   Key="Boots of Speed",
@@ -1768,6 +1816,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, haste",
   },
 })
+
 DefineEquipment({
   Name="Boots of Striding And Springing",
   Key="Boots of Striding And Springing",
@@ -1816,6 +1865,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, longstrider, creator must have 5 ranks in the Acrobatics skill",
   },
 })
+
 DefineEquipment({
   Name="Boots of Teleportation",
   Key="Boots of Teleportation",
@@ -1851,6 +1901,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, teleport",
   },
 })
+
 DefineEquipment({
   Name="Boots of the Winterlands",
   Key="Boots of the Winterlands",
@@ -1888,6 +1939,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, cat's grace, endure elements, pass without trace",
   },
 })
+
 DefineEquipment({
   Name="Winged Boots",
   Key="Boots (Winged)",
@@ -1920,6 +1972,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Bottle of Air",
   Key="Bottle of Air",
@@ -1948,6 +2001,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, water breathing",
   },
 })
+
 DefineEquipment({
   Name="Bracelet of Friends",
   Key="Bracelet of Friends",
@@ -1982,6 +2036,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, refuge",
   },
 })
+
 DefineEquipment({
   Name="Greater Bracers of Archery",
   Key="Bracers of Archery (Greater)",
@@ -2101,6 +2156,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Lesser Bracers of Archery",
   Key="Bracers of Archery (Lesser)",
@@ -2190,6 +2246,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Bracers of Armor +1",
   Key="Bracers of Armor +1",
@@ -2230,6 +2287,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Bracers of Armor +2",
   Key="Bracers of Armor +2",
@@ -2270,6 +2328,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Bracers of Armor +3",
   Key="Bracers of Armor +3",
@@ -2310,6 +2369,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Bracers of Armor +4",
   Key="Bracers of Armor +4",
@@ -2350,6 +2410,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Bracers of Armor +5",
   Key="Bracers of Armor +5",
@@ -2390,6 +2451,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Bracers of Armor +6",
   Key="Bracers of Armor +6",
@@ -2430,6 +2492,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Bracers of Armor +7",
   Key="Bracers of Armor +7",
@@ -2470,6 +2533,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Bracers of Armor +8",
   Key="Bracers of Armor +8",
@@ -2510,6 +2574,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Brooch of Shielding",
   Key="Brooch of Shielding",
@@ -2543,6 +2608,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, shield",
   },
 })
+
 DefineEquipment({
   Name="Broom of Flying",
   Key="Broom of Flying",
@@ -2571,6 +2637,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, overland flight, permanency",
   },
 })
+
 DefineEquipment({
   Name="Candle of Invocation (Lawful Good)",
   Key="Candle of Invocation (Lawful-Good)",
@@ -2600,6 +2667,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, gate, creator must be same alignment as candle created",
   },
 })
+
 DefineEquipment({
   Name="Candle of Invocation (Neutral Good)",
   Key="Candle of Invocation (Neutral-Good)",
@@ -2629,6 +2697,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, gate, creator must be same alignment as candle created",
   },
 })
+
 DefineEquipment({
   Name="Candle of Invocation (Chaotic Good)",
   Key="Candle of Invocation (Chaotic-Good)",
@@ -2658,6 +2727,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, gate, creator must be same alignment as candle created",
   },
 })
+
 DefineEquipment({
   Name="Candle of Invocation (Lawful Neutral)",
   Key="Candle of Invocation (Lawful-Neutral)",
@@ -2687,6 +2757,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, gate, creator must be same alignment as candle created",
   },
 })
+
 DefineEquipment({
   Name="Candle of Invocation (Neutral)",
   Key="Candle of Invocation (Neutral)",
@@ -2716,6 +2787,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, gate, creator must be same alignment as candle created",
   },
 })
+
 DefineEquipment({
   Name="Candle of Invocation (Chaotic Neutral)",
   Key="Candle of Invocation (Chaotic-Neutral)",
@@ -2745,6 +2817,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, gate, creator must be same alignment as candle created",
   },
 })
+
 DefineEquipment({
   Name="Candle of Invocation (Lawful Evil)",
   Key="Candle of Invocation (Lawful-Evil)",
@@ -2774,6 +2847,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, gate, creator must be same alignment as candle created",
   },
 })
+
 DefineEquipment({
   Name="Candle of Invocation (Neutral Evil)",
   Key="Candle of Invocation (Neutral-Evil)",
@@ -2803,6 +2877,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, gate, creator must be same alignment as candle created",
   },
 })
+
 DefineEquipment({
   Name="Candle of Invocation (Chaotic Evil)",
   Key="Candle of Invocation (Chaotic-Evil)",
@@ -2832,6 +2907,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, gate, creator must be same alignment as candle created",
   },
 })
+
 DefineEquipment({
   Name="Candle of Truth",
   Key="Candle of Truth",
@@ -2856,6 +2932,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, zone of truth",
   },
 })
+
 DefineEquipment({
   Name="Cape of the Mountebank",
   Key="Cape of the Mountebank",
@@ -2895,6 +2972,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, dimension door",
   },
 })
+
 DefineEquipment({
   Name="Carpet of Flying (5 ft. by 5 ft.)",
   Key="Carpet of Flying (5 ft by 5 ft)",
@@ -2923,6 +3001,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, overland flight",
   },
 })
+
 DefineEquipment({
   Name="Carpet of Flying (5 ft. by 10 ft.)",
   Key="Carpet of Flying (5 ft by 10 ft)",
@@ -2951,6 +3030,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, overland flight",
   },
 })
+
 DefineEquipment({
   Name="Carpet of Flying (10 ft. by 10 ft.)",
   Key="Carpet of Flying (10 ft by 10 ft)",
@@ -2979,6 +3059,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, overland flight",
   },
 })
+
 DefineEquipment({
   Name="Chime of Interruption",
   Key="Chime of Interruption",
@@ -3002,6 +3083,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, shout",
   },
 })
+
 DefineEquipment({
   Name="Chime of Opening",
   Key="Chime of Opening",
@@ -3033,6 +3115,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, knock",
   },
 })
+
 DefineEquipment({
   Name="Circlet of Persuasion",
   Key="Circlet of Persuasion",
@@ -3085,6 +3168,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, eagle's splendor",
   },
 })
+
 DefineEquipment({
   Name="Cloak of Arachnida",
   Key="Cloak of Arachnida",
@@ -3136,6 +3220,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, spider climb, web",
   },
 })
+
 DefineEquipment({
   Name="Cloak of the Bat",
   Key="Cloak of the Bat",
@@ -3178,6 +3263,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, beast shape III, fly",
   },
 })
+
 DefineEquipment({
   Name="Major Cloak of Displacement",
   Key="Cloak of Displacement (Major)",
@@ -3213,6 +3299,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, Extend Spell, displacement",
   },
 })
+
 DefineEquipment({
   Name="Minor Cloak of Displacement",
   Key="Cloak of Displacement (Minor)",
@@ -3252,6 +3339,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, blur",
   },
 })
+
 DefineEquipment({
   Name="Cloak of Elvenkind",
   Key="Cloak of Elvenkind",
@@ -3294,6 +3382,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, invisibility, creator must be an elf",
   },
 })
+
 DefineEquipment({
   Name="Cloak of Etherealness",
   Key="Cloak of Etherealness",
@@ -3329,6 +3418,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, ethereal jaunt",
   },
 })
+
 DefineEquipment({
   Name="Cloak of the Manta Ray",
   Key="Cloak of the Manta Ray",
@@ -3372,6 +3462,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, beast shape II, water breathing",
   },
 })
+
 DefineEquipment({
   Name="Cloak of Resistance +1",
   Key="Cloak of Resistance +1",
@@ -3414,6 +3505,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, resistance, creator's caster level must be at least three times the cloak's bonus",
   },
 })
+
 DefineEquipment({
   Name="Cloak of Resistance +2",
   Key="Cloak of Resistance +2",
@@ -3456,6 +3548,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, resistance, creator's caster level must be at least three times the cloak's bonus",
   },
 })
+
 DefineEquipment({
   Name="Cloak of Resistance +3",
   Key="Cloak of Resistance +3",
@@ -3498,6 +3591,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, resistance, creator's caster level must be at least three times the cloak's bonus",
   },
 })
+
 DefineEquipment({
   Name="Cloak of Resistance +4",
   Key="Cloak of Resistance +4",
@@ -3540,6 +3634,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, resistance, creator's caster level must be at least three times the cloak's bonus",
   },
 })
+
 DefineEquipment({
   Name="Cloak of Resistance +5",
   Key="Cloak of Resistance +5",
@@ -3582,6 +3677,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, resistance, creator's caster level must be at least three times the cloak's bonus",
   },
 })
+
 DefineEquipment({
   Name="Minor Crown of Blasting",
   Key="Crown of Blasting (Minor)",
@@ -3612,6 +3708,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, searing light",
   },
 })
+
 DefineEquipment({
   Name="Major Crown of Blasting",
   Key="Crown of Blasting (Major)",
@@ -3642,6 +3739,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, Maximize Spell, searing light",
   },
 })
+
 DefineEquipment({
   Name="Crystal Ball",
   Key="Crystal Ball",
@@ -3665,6 +3763,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, scrying (plus any additional spells put into item)",
   },
 })
+
 DefineEquipment({
   Name="Crystal Ball (See Invisibility)",
   Key="Crystal Ball (See Invisibility)",
@@ -3688,6 +3787,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, scrying, see invisibility",
   },
 })
+
 DefineEquipment({
   Name="Crystal Ball (Detect Thoughts)",
   Key="Crystal Ball (Detect Thoughts)",
@@ -3711,6 +3811,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, scrying, detect thoughts",
   },
 })
+
 DefineEquipment({
   Name="Crystal Ball (Telepathy)",
   Key="Crystal Ball (Telepathy)",
@@ -3739,6 +3840,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, scrying, telepathy",
   },
 })
+
 DefineEquipment({
   Name="Crystal Ball (True Seeing)",
   Key="Crystal Ball (True Seeing)",
@@ -3762,6 +3864,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, scrying, true seeing",
   },
 })
+
 DefineEquipment({
   Name="Cube of Force",
   Key="Cube of Force",
@@ -3793,6 +3896,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wall of force",
   },
 })
+
 DefineEquipment({
   Name="Cube of Frost Resistance",
   Key="Cube of Frost Resistance",
@@ -3816,6 +3920,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, protection from energy",
   },
 })
+
 DefineEquipment({
   Name="Cubic Gate",
   Key="Cubic Gate",
@@ -3839,6 +3944,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, plane shift",
   },
 })
+
 DefineEquipment({
   Name="Darkskull",
   Key="Darkskull",
@@ -3862,6 +3968,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, unhallow, creator must be evil",
   },
 })
+
 DefineEquipment({
   Name="Decanter of Endless Water",
   Key="Decanter of Endless Water",
@@ -3885,6 +3992,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, control water",
   },
 })
+
 DefineEquipment({
   Name="Deck of Illusions",
   Key="Deck of Illusions",
@@ -3916,6 +4024,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, major",
   },
 })
+
 DefineEquipment({
   Name="Dimensional Shackles",
   Key="Dimensional Shackles",
@@ -3942,6 +4051,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Drums of Panic",
   Key="Drums of Panic",
@@ -3965,6 +4075,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fear",
   },
 })
+
 DefineEquipment({
   Name="Dust of Appearance",
   Key="Dust of Appearance",
@@ -3999,6 +4110,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, glitterdust",
   },
 })
+
 DefineEquipment({
   Name="Dust of Disappearance",
   Key="Dust of Disappearance",
@@ -4023,6 +4135,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, greater invisibility",
   },
 })
+
 DefineEquipment({
   Name="Dust of Dryness",
   Key="Dust of Dryness",
@@ -4047,6 +4160,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, control water",
   },
 })
+
 DefineEquipment({
   Name="Dust of Illusion",
   Key="Dust of Illusion",
@@ -4071,6 +4185,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, disguise self",
   },
 })
+
 DefineEquipment({
   Name="Dust of Tracelessness",
   Key="Dust of Tracelessness",
@@ -4095,6 +4210,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, pass without trace",
   },
 })
+
 DefineEquipment({
   Name="Efficient Quiver",
   Key="Efficient Quiver",
@@ -4134,6 +4250,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, secret chest",
   },
 })
+
 DefineEquipment({
   Name="Efreeti Bottle",
   Key="Efreeti Bottle",
@@ -4157,6 +4274,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, planar binding",
   },
 })
+
 DefineEquipment({
   Name="Elemental Gem (Air)",
   Key="Elemental Gem (Air)",
@@ -4181,6 +4299,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, summon monster V or summon nature's ally V",
   },
 })
+
 DefineEquipment({
   Name="Elemental Gem (Earth)",
   Key="Elemental Gem (Earth)",
@@ -4205,6 +4324,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, summon monster V or summon nature's ally V",
   },
 })
+
 DefineEquipment({
   Name="Elemental Gem (Fire)",
   Key="Elemental Gem (Fire)",
@@ -4229,6 +4349,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, summon monster V or summon nature's ally V",
   },
 })
+
 DefineEquipment({
   Name="Elemental Gem (Water)",
   Key="Elemental Gem (Water)",
@@ -4253,6 +4374,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, summon monster V or summon nature's ally V",
   },
 })
+
 DefineEquipment({
   Name="Elixir of Fire Breath",
   Key="Elixir of Fire Breath",
@@ -4283,6 +4405,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, scorching ray",
   },
 })
+
 DefineEquipment({
   Name="Elixir of Hiding",
   Key="Elixir of Hiding",
@@ -4321,6 +4444,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, invisibility",
   },
 })
+
 DefineEquipment({
   Name="Elixir of Love",
   Key="Elixir of Love",
@@ -4346,6 +4470,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, charm person",
   },
 })
+
 DefineEquipment({
   Name="Elixir of Swimming",
   Key="Elixir of Swimming",
@@ -4384,6 +4509,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must have 5 ranks in the Swim skill",
   },
 })
+
 DefineEquipment({
   Name="Elixir of Truth",
   Key="Elixir of Truth",
@@ -4409,6 +4535,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, zone of truth",
   },
 })
+
 DefineEquipment({
   Name="Elixir of Tumbling",
   Key="Elixir of Tumbling",
@@ -4447,6 +4574,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, cat's grace",
   },
 })
+
 DefineEquipment({
   Name="Elixir of Vision",
   Key="Elixir of Vision",
@@ -4485,6 +4613,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, true seeing",
   },
 })
+
 DefineEquipment({
   Name="Eversmoking Bottle",
   Key="Eversmoking Bottle",
@@ -4508,6 +4637,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, pyrotechnics",
   },
 })
+
 DefineEquipment({
   Name="Eyes of Charming",
   Key="Eyes of Charming",
@@ -4532,6 +4662,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, Heighten Spell, charm person",
   },
 })
+
 DefineEquipment({
   Name="Eyes of Doom",
   Key="Eyes of Doom",
@@ -4556,6 +4687,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, doom, deathwatch, fear",
   },
 })
+
 DefineEquipment({
   Name="Eyes of the Eagle",
   Key="Eyes of the Eagle",
@@ -4592,6 +4724,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, clairaudience/clairvoyance",
   },
 })
+
 DefineEquipment({
   Name="Feather Token (Anchor)",
   Key="Feather Token (Anchor)",
@@ -4616,6 +4749,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, major creation",
   },
 })
+
 DefineEquipment({
   Name="Feather Token (Bird)",
   Key="Feather Token (Bird)",
@@ -4640,6 +4774,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, major creation",
   },
 })
+
 DefineEquipment({
   Name="Feather Token (Fan)",
   Key="Feather Token (Fan)",
@@ -4664,6 +4799,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, major creation",
   },
 })
+
 DefineEquipment({
   Name="Feather Token (Swan Boat)",
   Key="Feather Token (Swan Boat)",
@@ -4688,6 +4824,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, major creation",
   },
 })
+
 DefineEquipment({
   Name="Feather Token (Tree)",
   Key="Feather Token (Tree)",
@@ -4712,6 +4849,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, major creation",
   },
 })
+
 DefineEquipment({
   Name="Feather Token (Whip)",
   Key="Feather Token (Whip)",
@@ -4736,6 +4874,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, major creation",
   },
 })
+
 DefineEquipment({
   Name="Figurine of Wondrous Power (Bronze Griffon)",
   Key="Figurine of Wondrous Power (Bronze Griffon)",
@@ -4759,6 +4898,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, animate objects",
   },
 })
+
 DefineEquipment({
   Name="Figurine of Wondrous Power (Ebony Fly)",
   Key="Figurine of Wondrous Power (Ebony Fly)",
@@ -4782,6 +4922,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, animate objects",
   },
 })
+
 DefineEquipment({
   Name="Figurine of Wondrous Power (Golden Lions)",
   Key="Figurine of Wondrous Power (Golden Lions)",
@@ -4805,6 +4946,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, animate objects",
   },
 })
+
 DefineEquipment({
   Name="Figurine of Wondrous Power (Ivory Goats)",
   Key="Figurine of Wondrous Power (Ivory Goats)",
@@ -4828,6 +4970,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, animate objects",
   },
 })
+
 DefineEquipment({
   Name="Figurine of Wondrous Power (Marble Elephants)",
   Key="Figurine of Wondrous Power (Marble Elephants)",
@@ -4851,6 +4994,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, animate objects",
   },
 })
+
 DefineEquipment({
   Name="Figurine of Wondrous Power (Obsidian Steed)",
   Key="Figurine of Wondrous Power (Obsidian Steed)",
@@ -4874,6 +5018,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, animate objects, etherealness, fly, plane shift",
   },
 })
+
 DefineEquipment({
   Name="Figurine of Wondrous Power (Onyx Dog)",
   Key="Figurine of Wondrous Power (Onyx Dog)",
@@ -4897,6 +5042,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, animate objects",
   },
 })
+
 DefineEquipment({
   Name="Figurine of Wondrous Power (Serpentine Owl)",
   Key="Figurine of Wondrous Power (Serpentine Owl)",
@@ -4928,6 +5074,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, animate objects",
   },
 })
+
 DefineEquipment({
   Name="Figurine of Wondrous Power (Silver Raven)",
   Key="Figurine of Wondrous Power (Silver Raven)",
@@ -4951,6 +5098,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, animal messenger, animate objects",
   },
 })
+
 DefineEquipment({
   Name="Gauntlet of Rust",
   Key="Gauntlet of Rust",
@@ -4986,6 +5134,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, rusting grasp",
   },
 })
+
 DefineEquipment({
   Name="Gem of Brightness",
   Key="Gem of Brightness",
@@ -5017,6 +5166,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, daylight",
   },
 })
+
 DefineEquipment({
   Name="Gem of Seeing",
   Key="Gem of Seeing",
@@ -5040,6 +5190,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, true seeing",
   },
 })
+
 DefineEquipment({
   Name="Gloves of Arrow Snaring",
   Key="Gloves of Arrow Snaring",
@@ -5074,6 +5225,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, shield",
   },
 })
+
 DefineEquipment({
   Name="Glove of Storing",
   Key="Glove of Storing",
@@ -5108,6 +5260,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, shrink item",
   },
 })
+
 DefineEquipment({
   Name="Gloves of Swimming and Climbing",
   Key="Gloves of Swimming and Climbing",
@@ -5147,6 +5300,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, bull's strength, cat's grace",
   },
 })
+
 DefineEquipment({
   Name="Goggles of Minute Seeing",
   Key="Goggles of Minute Seeing",
@@ -5184,6 +5338,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, true seeing",
   },
 })
+
 DefineEquipment({
   Name="Goggles of Night",
   Key="Goggles of Night",
@@ -5216,6 +5371,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, darkvision",
   },
 })
+
 DefineEquipment({
   Name="Golem Manual (Clay)",
   Key="Golem Manual (Clay)",
@@ -5239,6 +5395,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Construct, creator must be caster level 11th, animate objects, commune, prayer, resurrection",
   },
 })
+
 DefineEquipment({
   Name="Golem Manual (Flesh)",
   Key="Golem Manual (Flesh)",
@@ -5262,6 +5419,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Construct, creator must be caster level 8th, animate dead, bull's strength, geas/quest, limited wish",
   },
 })
+
 DefineEquipment({
   Name="Golem Manual (Iron)",
   Key="Golem Manual (Iron)",
@@ -5285,6 +5443,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Construct, creator must be caster level 16th, cloudkill, geas/quest, limited wish, polymorph any object",
   },
 })
+
 DefineEquipment({
   Name="Golem Manual (Stone)",
   Key="Golem Manual (Stone)",
@@ -5308,6 +5467,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Construct, creator must be caster level 14th, antimagic field, geas/quest, limited wish, symbol of stunning",
   },
 })
+
 DefineEquipment({
   Name="Golem Manual (Stone Guardian)",
   Key="Golem Manual (Stone Guardian)",
@@ -5331,6 +5491,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Construct, creator must be caster level 16th, antimagic field, discern location, geas/quest, limited wish, shield, and symbol of stunning",
   },
 })
+
 DefineEquipment({
   Name="Hand of Glory",
   Key="Hand of Glory",
@@ -5380,6 +5541,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, animate dead, daylight, see invisibility",
   },
 })
+
 DefineEquipment({
   Name="Hand of the Mage",
   Key="Hand of the Mage",
@@ -5413,6 +5575,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, mage hand",
   },
 })
+
 DefineEquipment({
   Name="Handy Haversack",
   Key="Handy Haversack",
@@ -5441,6 +5604,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, secret chest",
   },
 })
+
 DefineEquipment({
   Name="Harp of Charming",
   Key="Harp of Charming",
@@ -5466,6 +5630,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, suggestion",
   },
 })
+
 DefineEquipment({
   Name="Hat of Disguise",
   Key="Hat of Disguise",
@@ -5491,6 +5656,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, disguise self",
   },
 })
+
 DefineEquipment({
   Name="Headband of Alluring Charisma +2",
   Key="Headband of Alluring Charisma +2",
@@ -5527,6 +5693,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, eagle's splendor",
   },
 })
+
 DefineEquipment({
   Name="Headband of Alluring Charisma +4",
   Key="Headband of Alluring Charisma +4",
@@ -5563,6 +5730,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, eagle's splendor",
   },
 })
+
 DefineEquipment({
   Name="Headband of Alluring Charisma +6",
   Key="Headband of Alluring Charisma +6",
@@ -5599,6 +5767,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, eagle's splendor",
   },
 })
+
 DefineEquipment({
   Name="Headband of Inspired Wisdom +2",
   Key="Headband of Inspired Wisdom +2",
@@ -5635,6 +5804,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, owl's wisdom",
   },
 })
+
 DefineEquipment({
   Name="Headband of Inspired Wisdom +4",
   Key="Headband of Inspired Wisdom +4",
@@ -5671,6 +5841,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, owl's wisdom",
   },
 })
+
 DefineEquipment({
   Name="Headband of Inspired Wisdom +6",
   Key="Headband of Inspired Wisdom +6",
@@ -5707,6 +5878,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, owl's wisdom",
   },
 })
+
 DefineEquipment({
   Name="Headband of Mental Prowess +2 (Int, Wis)",
   Key="Headband of Mental Prowess (INT/WIS) +2",
@@ -5752,6 +5924,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fox's cunning, owl's wisdom",
   },
 })
+
 DefineEquipment({
   Name="Headband of Mental Prowess +4 (Int, Wis)",
   Key="Headband of Mental Prowess (INT/WIS) +4",
@@ -5797,6 +5970,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fox's cunning, owl's wisdom",
   },
 })
+
 DefineEquipment({
   Name="Headband of Mental Prowess +6 (Int, Wis)",
   Key="Headband of Mental Prowess (INT/WIS) +6",
@@ -5842,6 +6016,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fox's cunning, owl's wisdom",
   },
 })
+
 DefineEquipment({
   Name="Headband of Mental Prowess +2 (Int, Cha)",
   Key="Headband of Mental Prowess (INT/CHA) +2",
@@ -5887,6 +6062,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, eagle's splendor, fox's cunning",
   },
 })
+
 DefineEquipment({
   Name="Headband of Mental Prowess +4 (Int, Cha)",
   Key="Headband of Mental Prowess (INT/CHA) +4",
@@ -5932,6 +6108,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, eagle's splendor, fox's cunning",
   },
 })
+
 DefineEquipment({
   Name="Headband of Mental Prowess +6 (Int, Cha)",
   Key="Headband of Mental Prowess (INT/CHA) +6",
@@ -5977,6 +6154,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, eagle's splendor, fox's cunning",
   },
 })
+
 DefineEquipment({
   Name="Headband of Mental Prowess +2 (Wis, Cha)",
   Key="Headband of Mental Prowess (WIS/CHA) +2",
@@ -6014,6 +6192,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, eagle's splendor, owl's wisdom",
   },
 })
+
 DefineEquipment({
   Name="Headband of Mental Prowess +4 (Wis, Cha)",
   Key="Headband of Mental Prowess (WIS/CHA) +4",
@@ -6051,6 +6230,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, eagle's splendor, owl's wisdom",
   },
 })
+
 DefineEquipment({
   Name="Headband of Mental Prowess +6 (Wis, Cha)",
   Key="Headband of Mental Prowess (WIS/CHA) +6",
@@ -6088,6 +6268,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, eagle's splendor, owl's wisdom",
   },
 })
+
 DefineEquipment({
   Name="Headband of Mental Superiority +2",
   Key="Headband of Mental Superiority +2",
@@ -6134,6 +6315,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, eagle's splendor, fox's cunning, owl's wisdom",
   },
 })
+
 DefineEquipment({
   Name="Headband of Mental Superiority +4",
   Key="Headband of Mental Superiority +4",
@@ -6180,6 +6362,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, eagle's splendor, fox's cunning, owl's wisdom",
   },
 })
+
 DefineEquipment({
   Name="Headband of Mental Superiority +6",
   Key="Headband of Mental Superiority +6",
@@ -6226,6 +6409,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, eagle's splendor, fox's cunning, owl's wisdom",
   },
 })
+
 DefineEquipment({
   Name="Headband of Vast Intelligence +2",
   Key="Headband of Vast Intelligence +2",
@@ -6270,6 +6454,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fox's cunning",
   },
 })
+
 DefineEquipment({
   Name="Headband of Vast Intelligence +4",
   Key="Headband of Vast Intelligence +4",
@@ -6314,6 +6499,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fox's cunning",
   },
 })
+
 DefineEquipment({
   Name="Headband of Vast Intelligence +6",
   Key="Headband of Vast Intelligence +6",
@@ -6358,6 +6544,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fox's cunning",
   },
 })
+
 DefineEquipment({
   Name="Helm of Brilliance",
   Key="Helm of Brilliance",
@@ -6383,6 +6570,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, detect undead, fireball, flame blade, daylight, prismatic spray, protection from energy, wall of fire",
   },
 })
+
 DefineEquipment({
   Name="Helm of Comprehend Languages and Read Magic",
   Key="Helm of Comprehend Languages and Read Magic",
@@ -6420,6 +6608,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, comprehend languages, read magic",
   },
 })
+
 DefineEquipment({
   Name="Helm of Telepathy",
   Key="Helm of Telepathy",
@@ -6454,6 +6643,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, detect thoughts, suggestion",
   },
 })
+
 DefineEquipment({
   Name="Helm of Teleportation",
   Key="Helm of Teleportation",
@@ -6488,6 +6678,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, teleport",
   },
 })
+
 DefineEquipment({
   Name="Helm of Underwater Action",
   Key="Helm of Underwater Action",
@@ -6513,6 +6704,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, water breathing",
   },
 })
+
 DefineEquipment({
   Name="Horn of Blasting",
   Key="Horn of Blasting",
@@ -6538,6 +6730,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, shout",
   },
 })
+
 DefineEquipment({
   Name="Greater Horn of Blasting",
   Key="Horn of Blasting (Greater)",
@@ -6563,6 +6756,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, greater shout",
   },
 })
+
 DefineEquipment({
   Name="Horn of Fog",
   Key="Horn of Fog",
@@ -6588,6 +6782,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, obscuring mist",
   },
 })
+
 DefineEquipment({
   Name="Horn of Goodness/Evil",
   Key="Horn of Goodness/Evil",
@@ -6639,6 +6834,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, magic circle against good, magic circle against evil",
   },
 })
+
 DefineEquipment({
   Name="Horn of Valhalla (Silver)",
   Key="Horn of Valhalla (Silver)",
@@ -6669,6 +6865,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, summon monster VI",
   },
 })
+
 DefineEquipment({
   Name="Horn of Valhalla (Brass)",
   Key="Horn of Valhalla (Brass)",
@@ -6746,6 +6943,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, summon monster VI",
   },
 })
+
 DefineEquipment({
   Name="Horn of Valhalla (Bronze)",
   Key="Horn of Valhalla (Bronze)",
@@ -6821,6 +7019,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, summon monster VI",
   },
 })
+
 DefineEquipment({
   Name="Horn of Valhalla (Iron)",
   Key="Horn of Valhalla (Iron)",
@@ -6896,6 +7095,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, summon monster VI",
   },
 })
+
 DefineEquipment({
   Name="Horseshoes of Speed",
   Key="Horseshoes of Speed",
@@ -6935,6 +7135,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Horseshoes of a Zephyr",
   Key="Horseshoes of a Zephyr",
@@ -6971,6 +7172,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Incense of Meditation",
   Key="Incense of Meditation",
@@ -6996,6 +7198,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Instant Fortress",
   Key="Instant Fortress",
@@ -7019,6 +7222,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, mage's magnificent mansion",
   },
 })
+
 DefineEquipment({
   Name="Clear Spindle Ioun Stone",
   Key="Ioun Stone (Clear Spindle)",
@@ -7048,6 +7252,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Dusty rose Prism Ioun Stone",
   Key="Ioun Stone (Dusty rose Prism)",
@@ -7084,6 +7289,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Deep red Sphere Ioun Stone",
   Key="Ioun Stone (Deep red Sphere)",
@@ -7120,6 +7326,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Incandescent blue Sphere Ioun Stone",
   Key="Ioun Stone (Incandescent blue Sphere)",
@@ -7156,6 +7363,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Pale blue Rhomboid Ioun Stone",
   Key="Ioun Stone (Pale blue Rhomboid)",
@@ -7192,6 +7400,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Pink Rhomboid Ioun Stone",
   Key="Ioun Stone (Pink Rhomboid)",
@@ -7228,6 +7437,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Pink and green Sphere Ioun Stone",
   Key="Ioun Stone (Pink and green Sphere)",
@@ -7264,6 +7474,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Scarlet and blue Sphere Ioun Stone",
   Key="Ioun Stone (Scarlet and blue Sphere)",
@@ -7301,6 +7512,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Dark blue Rhomboid Ioun Stone",
   Key="Ioun Stone (Dark blue Rhomboid)",
@@ -7334,6 +7546,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Iridescent Spindle Ioun Stone",
   Key="Ioun Stone (Iridescent Spindle)",
@@ -7363,6 +7576,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Pale lavender Ellipsoid Ioun Stone",
   Key="Ioun Stone (Pale lavender Ellipsoid)",
@@ -7400,6 +7614,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Pearly white Spindle Ioun Stone",
   Key="Ioun Stone (Pearly white Spindle)",
@@ -7429,6 +7644,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Pale green Prism Ioun Stone",
   Key="Ioun Stone (Pale green Prism)",
@@ -7490,6 +7706,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Orange Prism Ioun Stone",
   Key="Ioun Stone (Orange Prism)",
@@ -7523,6 +7740,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Vibrant purple Prism Ioun Stone",
   Key="Ioun Stone (Vibrant purple Prism)",
@@ -7552,6 +7770,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Lavender and green Ellipsoid Ioun Stone",
   Key="Ioun Stone (Lavender and green Ellipsoid)",
@@ -7589,6 +7808,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be 12th level",
   },
 })
+
 DefineEquipment({
   Name="Iron Bands of Binding",
   Key="Iron Bands of Binding",
@@ -7621,6 +7841,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Iron Flask",
   Key="Iron Flask",
@@ -7652,6 +7873,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, trap the soul",
   },
 })
+
 DefineEquipment({
   Name="Lantern of Revealing",
   Key="Lantern of Revealing",
@@ -7684,6 +7906,7 @@ DefineEquipment({
     Duration="6 hr./pint",
   },
 })
+
 DefineEquipment({
   Name="Lens of Detection",
   Key="Lens of Detection",
@@ -7731,6 +7954,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, true seeing",
   },
 })
+
 DefineEquipment({
   Name="Lyre of Building",
   Key="Lyre of Building",
@@ -7756,6 +7980,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fabricate",
   },
 })
+
 DefineEquipment({
   Name="Mantle of Faith",
   Key="Mantle of Faith",
@@ -7784,6 +8009,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, stoneskin",
   },
 })
+
 DefineEquipment({
   Name="Mantle of Spell Resistance",
   Key="Mantle of Spell Resistance",
@@ -7810,6 +8036,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, spell resistance",
   },
 })
+
 DefineEquipment({
   Name="Manual of Bodily Health +1",
   Key="Manual of Bodily Health (+1)",
@@ -7833,6 +8060,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Manual of Bodily Health +2",
   Key="Manual of Bodily Health (+2)",
@@ -7856,6 +8084,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Manual of Bodily Health +3",
   Key="Manual of Bodily Health (+3)",
@@ -7879,6 +8108,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Manual of Bodily Health +4",
   Key="Manual of Bodily Health (+4)",
@@ -7902,6 +8132,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Manual of Bodily Health +5",
   Key="Manual of Bodily Health (+5)",
@@ -7925,6 +8156,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Manual of Gainful Exercise +1",
   Key="Manual of Gainful Exercise (+1)",
@@ -7948,6 +8180,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Manual of Gainful Exercise +2",
   Key="Manual of Gainful Exercise (+2)",
@@ -7971,6 +8204,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Manual of Gainful Exercise +3",
   Key="Manual of Gainful Exercise (+3)",
@@ -7994,6 +8228,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Manual of Gainful Exercise +4",
   Key="Manual of Gainful Exercise (+4)",
@@ -8017,6 +8252,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Manual of Gainful Exercise +5",
   Key="Manual of Gainful Exercise (+5)",
@@ -8040,6 +8276,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Manual of Quickness of Action +1",
   Key="Manual of Quickness of Action (+1)",
@@ -8063,6 +8300,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Manual of Quickness of Action +2",
   Key="Manual of Quickness of Action (+2)",
@@ -8086,6 +8324,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Manual of Quickness of Action +3",
   Key="Manual of Quickness of Action (+3)",
@@ -8109,6 +8348,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Manual of Quickness of Action +4",
   Key="Manual of Quickness of Action (+4)",
@@ -8132,6 +8372,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Manual of Quickness of Action +5",
   Key="Manual of Quickness of Action (+5)",
@@ -8155,6 +8396,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Marvelous Pigments",
   Key="Marvelous Pigments",
@@ -8179,6 +8421,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Mask of the Skull",
   Key="Mask of the Skull",
@@ -8204,6 +8447,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, animate objects, finger of death, fly",
   },
 })
+
 DefineEquipment({
   Name="Medallion of Thoughts",
   Key="Medallion of Thoughts",
@@ -8229,6 +8473,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, detect thoughts",
   },
 })
+
 DefineEquipment({
   Name="Mirror of Life Trapping",
   Key="Mirror of Life Trapping",
@@ -8252,6 +8497,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, imprisonment",
   },
 })
+
 DefineEquipment({
   Name="Mirror of Opposition",
   Key="Mirror of Opposition",
@@ -8275,6 +8521,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, clone",
   },
 })
+
 DefineEquipment({
   Name="Necklace of Adaptation",
   Key="Necklace of Adaptation",
@@ -8300,6 +8547,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, alter self",
   },
 })
+
 DefineEquipment({
   Name="Necklace of Fireballs (Type I)",
   Key="Necklace of Fireballs I",
@@ -8334,6 +8582,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fireball",
   },
 })
+
 DefineEquipment({
   Name="Necklace of Fireballs (Type II)",
   Key="Necklace of Fireballs II",
@@ -8368,6 +8617,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fireball",
   },
 })
+
 DefineEquipment({
   Name="Necklace of Fireballs (Type III)",
   Key="Necklace of Fireballs III",
@@ -8402,6 +8652,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fireball",
   },
 })
+
 DefineEquipment({
   Name="Necklace of Fireballs (Type IV)",
   Key="Necklace of Fireballs IV",
@@ -8436,6 +8687,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fireball",
   },
 })
+
 DefineEquipment({
   Name="Necklace of Fireballs (Type V)",
   Key="Necklace of Fireballs V",
@@ -8470,6 +8722,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fireball",
   },
 })
+
 DefineEquipment({
   Name="Necklace of Fireballs (Type VI)",
   Key="Necklace of Fireballs VI",
@@ -8504,6 +8757,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fireball",
   },
 })
+
 DefineEquipment({
   Name="Necklace of Fireballs (Type VII)",
   Key="Necklace of Fireballs VII",
@@ -8538,6 +8792,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fireball",
   },
 })
+
 DefineEquipment({
   Name="Orb of Storms",
   Key="Orb of Storms",
@@ -8577,6 +8832,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, control weather, endure elements, storm of vengeance",
   },
 })
+
 DefineEquipment({
   Name="Pearl of Power (1st)",
   Key="Pearl of Power (1st Level)",
@@ -8608,6 +8864,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be able to cast spells of the spell level to be recalled",
   },
 })
+
 DefineEquipment({
   Name="Pearl of Power (2nd)",
   Key="Pearl of Power (2nd Level)",
@@ -8639,6 +8896,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be able to cast spells of the spell level to be recalled",
   },
 })
+
 DefineEquipment({
   Name="Pearl of Power (3rd)",
   Key="Pearl of Power (3rd Level)",
@@ -8670,6 +8928,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be able to cast spells of the spell level to be recalled",
   },
 })
+
 DefineEquipment({
   Name="Pearl of Power (4th)",
   Key="Pearl of Power (4th Level)",
@@ -8701,6 +8960,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be able to cast spells of the spell level to be recalled",
   },
 })
+
 DefineEquipment({
   Name="Pearl of Power (5th)",
   Key="Pearl of Power (5th Level)",
@@ -8732,6 +8992,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be able to cast spells of the spell level to be recalled",
   },
 })
+
 DefineEquipment({
   Name="Pearl of Power (6th)",
   Key="Pearl of Power (6th Level)",
@@ -8763,6 +9024,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be able to cast spells of the spell level to be recalled",
   },
 })
+
 DefineEquipment({
   Name="Pearl of Power (7th)",
   Key="Pearl of Power (7th Level)",
@@ -8794,6 +9056,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be able to cast spells of the spell level to be recalled",
   },
 })
+
 DefineEquipment({
   Name="Pearl of Power (8th)",
   Key="Pearl of Power (8th Level)",
@@ -8825,6 +9088,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be able to cast spells of the spell level to be recalled",
   },
 })
+
 DefineEquipment({
   Name="Pearl of Power (9th)",
   Key="Pearl of Power (9th Level)",
@@ -8856,6 +9120,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be able to cast spells of the spell level to be recalled",
   },
 })
+
 DefineEquipment({
   Name="Pearl of Power (two spells)",
   Key="Pearl of Power (2 spells)",
@@ -8892,6 +9157,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be able to cast spells of the spell level to be recalled",
   },
 })
+
 DefineEquipment({
   Name="Pearl of the Sirines",
   Key="Pearl of the Sirines",
@@ -8929,6 +9195,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, freedom of movement, water breathing",
   },
 })
+
 DefineEquipment({
   Name="Periapt of Health",
   Key="Periapt of Health",
@@ -8963,6 +9230,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, remove disease",
   },
 })
+
 DefineEquipment({
   Name="Periapt of Proof Against Poison",
   Key="Periapt of Proof Against Poison",
@@ -8997,6 +9265,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, neutralize poison",
   },
 })
+
 DefineEquipment({
   Name="Periapt of Wound Closure",
   Key="Periapt of Wound Closure",
@@ -9033,6 +9302,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, heal",
   },
 })
+
 DefineEquipment({
   Name="Phylactery of Faithfulness",
   Key="Phylactery of Faithfulness",
@@ -9058,6 +9328,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, detect chaos, detect evil, detect good, detect law",
   },
 })
+
 DefineEquipment({
   Name="Phylactery of Negative Channeling",
   Key="Phylactery of Negative Channeling",
@@ -9099,6 +9370,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be a 10th-level cleric",
   },
 })
+
 DefineEquipment({
   Name="Phylactery of Positive Channeling",
   Key="Phylactery of Positive Channeling",
@@ -9154,6 +9426,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, creator must be a 10th-level cleric",
   },
 })
+
 DefineEquipment({
   Name="Pipes of Haunting",
   Key="Pipes of Haunting",
@@ -9188,6 +9461,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Pipes of the Sewers",
   Key="Pipes of the Sewers",
@@ -9214,6 +9488,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Pipes of Sounding",
   Key="Pipes of Sounding",
@@ -9240,6 +9515,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Portable Hole",
   Key="Portable Hole",
@@ -9268,6 +9544,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, plane shift",
   },
 })
+
 DefineEquipment({
   Name="Restorative Ointment",
   Key="Restorative Ointment",
@@ -9300,6 +9577,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Ring Gates",
   Key="Ring Gates",
@@ -9324,6 +9602,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="White Robe of the Archmagi",
   Key="Robe of the Archmagi (White)",
@@ -9509,6 +9788,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, antimagic field, mage armor or shield of faith, creator must be of same alignment as robe",
   },
 })
+
 DefineEquipment({
   Name="Grey Robe of the Archmagi",
   Key="Robe of the Archmagi (Grey)",
@@ -9682,6 +9962,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, antimagic field, mage armor or shield of faith, creator must be of same alignment as robe",
   },
 })
+
 DefineEquipment({
   Name="Black Robe of the Archmagi",
   Key="Robe of the Archmagi (Black)",
@@ -9867,6 +10148,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, antimagic field, mage armor or shield of faith, creator must be of same alignment as robe",
   },
 })
+
 DefineEquipment({
   Name="Robe of Bones",
   Key="Robe of Bones",
@@ -9892,6 +10174,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, animate dead",
   },
 })
+
 DefineEquipment({
   Name="Robe of Blending",
   Key="Robe of Blending",
@@ -9917,6 +10200,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, alter self, tongues",
   },
 })
+
 DefineEquipment({
   Name="Robe of Eyes",
   Key="Robe of Eyes",
@@ -9961,6 +10245,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, true seeing",
   },
 })
+
 DefineEquipment({
   Name="Monk's Robe",
   Key="Robe (Monk's)",
@@ -10055,6 +10340,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, righteous might or transformation",
   },
 })
+
 DefineEquipment({
   Name="Robe of Scintillating Colors",
   Key="Robe of Scintillating Colors",
@@ -10084,6 +10370,7 @@ DefineEquipment({
     Duration="Continuously",
   },
 })
+
 DefineEquipment({
   Name="Robe of Stars",
   Key="Robe of Stars",
@@ -10121,6 +10408,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, magic missile, astral projection or plane shift",
   },
 })
+
 DefineEquipment({
   Name="Robe of Useful Items",
   Key="Robe of Useful Items",
@@ -10146,6 +10434,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, fabricate",
   },
 })
+
 DefineEquipment({
   Name="Rope of Climbing",
   Key="Rope of Climbing",
@@ -10169,6 +10458,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, animate rope",
   },
 })
+
 DefineEquipment({
   Name="Rope of Entanglement",
   Key="Rope of Entanglement",
@@ -10192,6 +10482,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, animate objects, animate rope or entangle",
   },
 })
+
 DefineEquipment({
   Name="Salve of Slipperiness",
   Key="Salve of Slipperiness",
@@ -10229,6 +10520,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, grease",
   },
 })
+
 DefineEquipment({
   Name="Scabbard of Keen Edges",
   Key="Scabbard of Keen Edges",
@@ -10267,6 +10559,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, keen edge",
   },
 })
+
 DefineEquipment({
   Name="Scarab of Protection",
   Key="Scarab of Protection",
@@ -10301,6 +10594,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, death ward, spell resistance",
   },
 })
+
 DefineEquipment({
   Name="Golembane Scarab",
   Key="Scarab (Golembane)",
@@ -10326,6 +10620,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, detect magic, creator must be at least 10th level",
   },
 })
+
 DefineEquipment({
   Name="Silversheen",
   Key="Silversheen",
@@ -10351,6 +10646,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Slippers of Spider Climbing",
   Key="Slippers of Spider Climbing",
@@ -10378,6 +10674,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Ounce of Sovereign Glue",
   Key="Sovereign Glue (Ounce)",
@@ -10402,6 +10699,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, make whole",
   },
 })
+
 DefineEquipment({
   Name="Flask of Sovereign Glue",
   Key="Sovereign Glue (Flask)",
@@ -10434,6 +10732,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, make whole",
   },
 })
+
 DefineEquipment({
   Name="Stone of Alarm",
   Key="Stone of Alarm",
@@ -10457,6 +10756,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, alarm",
   },
 })
+
 DefineEquipment({
   Name="Stone of Good Luck",
   Key="Stone of Good Luck (Luckstone)",
@@ -10525,6 +10825,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, divine favor",
   },
 })
+
 DefineEquipment({
   Name="Stone Salve",
   Key="Stone Salve (Ounce)",
@@ -10551,6 +10852,7 @@ DefineEquipment({
     Single="Ounce pf",
   },
 })
+
 DefineEquipment({
   Name="Lesser Strand of Prayer Beads",
   Key="Strand of Prayer Beads (Lesser)",
@@ -10588,6 +10890,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item and one of the following spells per bead, as appropriate: bless (blessing); cure serious wounds, remove blindness/ deafness, or remove disease (healing); righteous might (karma); gate (summons); chaos hammer, holy smite, order's wrath, or unholy blight (smiting), wind walk (wind walking)",
   },
 })
+
 DefineEquipment({
   Name="Strand of Prayer Beads",
   Key="Strand of Prayer Beads",
@@ -10616,6 +10919,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item and one of the following spells per bead, as appropriate: bless (blessing); cure serious wounds, remove blindness/ deafness, or remove disease (healing); righteous might (karma); gate (summons); chaos hammer, holy smite, order's wrath, or unholy blight (smiting), wind walk (wind walking)",
   },
 })
+
 DefineEquipment({
   Name="Greater Strand of Prayer Beads",
   Key="Strand of Prayer Beads (Greater)",
@@ -10653,6 +10957,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item and one of the following spells per bead, as appropriate: bless (blessing); cure serious wounds, remove blindness/ deafness, or remove disease (healing); righteous might (karma); gate (summons); chaos hammer, holy smite, order's wrath, or unholy blight (smiting), wind walk (wind walking)",
   },
 })
+
 DefineEquipment({
   Name="Sustaining Spoon",
   Key="Sustaining Spoon",
@@ -10676,6 +10981,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, create food and water",
   },
 })
+
 DefineEquipment({
   Name="Tome of Clear Thought +1",
   Key="Tome of Clear Thought (+1)",
@@ -10699,6 +11005,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, miracle or wish",
   },
 })
+
 DefineEquipment({
   Name="Tome of Clear Thought +2",
   Key="Tome of Clear Thought (+2)",
@@ -10722,6 +11029,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, miracle or wish",
   },
 })
+
 DefineEquipment({
   Name="Tome of Clear Thought +3",
   Key="Tome of Clear Thought (+3)",
@@ -10745,6 +11053,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, miracle or wish",
   },
 })
+
 DefineEquipment({
   Name="Tome of Clear Thought +4",
   Key="Tome of Clear Thought (+4)",
@@ -10768,6 +11077,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, miracle or wish",
   },
 })
+
 DefineEquipment({
   Name="Tome of Clear Thought +5",
   Key="Tome of Clear Thought (+5)",
@@ -10791,6 +11101,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, miracle or wish",
   },
 })
+
 DefineEquipment({
   Name="Tome of Leadership and Influence +1",
   Key="Tome of Leadership and Influence (+1)",
@@ -10814,6 +11125,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, miracle or wish",
   },
 })
+
 DefineEquipment({
   Name="Tome of Leadership and Influence +2",
   Key="Tome of Leadership and Influence (+2)",
@@ -10837,6 +11149,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, miracle or wish",
   },
 })
+
 DefineEquipment({
   Name="Tome of Leadership and Influence +3",
   Key="Tome of Leadership and Influence (+3)",
@@ -10860,6 +11173,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, miracle or wish",
   },
 })
+
 DefineEquipment({
   Name="Tome of Leadership and Influence +4",
   Key="Tome of Leadership and Influence (+4)",
@@ -10883,6 +11197,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, miracle or wish",
   },
 })
+
 DefineEquipment({
   Name="Tome of Leadership and Influence +5",
   Key="Tome of Leadership and Influence (+5)",
@@ -10906,6 +11221,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, miracle or wish",
   },
 })
+
 DefineEquipment({
   Name="Tome of Understanding +1",
   Key="Tome of Understanding (+1)",
@@ -10929,6 +11245,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, miracle or wish",
   },
 })
+
 DefineEquipment({
   Name="Tome of Understanding +2",
   Key="Tome of Understanding (+2)",
@@ -10952,6 +11269,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, miracle or wish",
   },
 })
+
 DefineEquipment({
   Name="Tome of Understanding +3",
   Key="Tome of Understanding (+3)",
@@ -10975,6 +11293,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, miracle or wish",
   },
 })
+
 DefineEquipment({
   Name="Tome of Understanding +4",
   Key="Tome of Understanding (+4)",
@@ -10998,6 +11317,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, miracle or wish",
   },
 })
+
 DefineEquipment({
   Name="Tome of Understanding +5",
   Key="Tome of Understanding (+5)",
@@ -11021,6 +11341,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, miracle or wish",
   },
 })
+
 DefineEquipment({
   Name="Unguent of Timelessness",
   Key="Unguent of Timelessness",
@@ -11054,6 +11375,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Universal Solvent",
   Key="Universal Solvent",
@@ -11079,6 +11401,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Vest of Escape",
   Key="Vest of Escape",
@@ -11126,6 +11449,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, knock, grease",
   },
 })
+
 DefineEquipment({
   Name="Druid's Vestment",
   Key="Vestment (Druid's)",
@@ -11160,6 +11484,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, polymorph or wild shape ability",
   },
 })
+
 DefineEquipment({
   Name="Well of Many Worlds",
   Key="Well of Many Worlds",
@@ -11183,6 +11508,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, gate",
   },
 })
+
 DefineEquipment({
   Name="Wind Fan",
   Key="Wind Fan",
@@ -11206,6 +11532,7 @@ DefineEquipment({
     ['Construction Requirements']="Craft Wondrous Item, gust of wind",
   },
 })
+
 DefineEquipment({
   Name="Wings of Flying",
   Key="Wings of Flying",
@@ -11250,6 +11577,7 @@ DefineEquipment({
     Plural="No",
   },
 })
+
 DefineEquipment({
   Name="Ring of Animal Friendship",
   Key="Ring of Animal Friendship",
@@ -11281,6 +11609,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, charm animal",
   },
 })
+
 DefineEquipment({
   Name="Ring of Blinking",
   Key="Ring of Blinking",
@@ -11312,6 +11641,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, blink",
   },
 })
+
 DefineEquipment({
   Name="Ring of Chameleon Power",
   Key="Ring of Chameleon Power",
@@ -11343,6 +11673,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, disguise self, invisibility",
   },
 })
+
 DefineEquipment({
   Name="Ring of Climbing",
   Key="Ring of Climbing",
@@ -11377,6 +11708,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, creator must have 5 ranks in the Climb skill",
   },
 })
+
 DefineEquipment({
   Name="Ring of Improved Climbing",
   Key="Ring of Climbing (Improved)",
@@ -11411,6 +11743,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, creator must have 10 ranks in the Climb skill",
   },
 })
+
 DefineEquipment({
   Name="Ring of Counterspells",
   Key="Ring of Counterspells",
@@ -11433,6 +11766,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, imbue with spell ability",
   },
 })
+
 DefineEquipment({
   Name="Ring of Djinni Calling",
   Key="Ring of Djinni Calling",
@@ -11455,6 +11789,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, gate",
   },
 })
+
 DefineEquipment({
   Name="Ring of Air Elemental Command",
   Key="Ring of Elemental Command (Air)",
@@ -11523,6 +11858,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, summon monster VI, all appropriate spells",
   },
 })
+
 DefineEquipment({
   Name="Ring of Earth Elemental Command",
   Key="Ring of Elemental Command (Earth)",
@@ -11589,6 +11925,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, summon monster VI, all appropriate spells",
   },
 })
+
 DefineEquipment({
   Name="Ring of Fire Elemental Command",
   Key="Ring of Elemental Command (Fire)",
@@ -11659,6 +11996,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, summon monster VI, all appropriate spells",
   },
 })
+
 DefineEquipment({
   Name="Ring of Water Elemental Command",
   Key="Ring of Elemental Command (Water)",
@@ -11725,6 +12063,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, summon monster VI, all appropriate spells",
   },
 })
+
 DefineEquipment({
   Name="Ring of Minor Energy Resistance (Acid)",
   Key="Ring of Energy Resistance (Minor/Acid)",
@@ -11759,6 +12098,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, resist energy",
   },
 })
+
 DefineEquipment({
   Name="Ring of Major Energy Resistance (Acid)",
   Key="Ring of Energy Resistance (Major/Acid)",
@@ -11793,6 +12133,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, resist energy",
   },
 })
+
 DefineEquipment({
   Name="Ring of Greater Energy Resistance (Acid)",
   Key="Ring of Energy Resistance (Greater/Acid)",
@@ -11827,6 +12168,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, resist energy",
   },
 })
+
 DefineEquipment({
   Name="Ring of Minor Energy Resistance (Cold)",
   Key="Ring of Energy Resistance (Minor/Cold)",
@@ -11861,6 +12203,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, resist energy",
   },
 })
+
 DefineEquipment({
   Name="Ring of Major Energy Resistance (Cold)",
   Key="Ring of Energy Resistance (Major/Cold)",
@@ -11895,6 +12238,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, resist energy",
   },
 })
+
 DefineEquipment({
   Name="Ring of Greater Energy Resistance (Cold)",
   Key="Ring of Energy Resistance (Greater/Cold)",
@@ -11929,6 +12273,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, resist energy",
   },
 })
+
 DefineEquipment({
   Name="Ring of Minor Energy Resistance (Electricity)",
   Key="Ring of Energy Resistance (Minor/Electricity)",
@@ -11963,6 +12308,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, resist energy",
   },
 })
+
 DefineEquipment({
   Name="Ring of Major Energy Resistance (Electricity)",
   Key="Ring of Energy Resistance (Major/Electricity)",
@@ -11997,6 +12343,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, resist energy",
   },
 })
+
 DefineEquipment({
   Name="Ring of Greater Energy Resistance (Electricity)",
   Key="Ring of Energy Resistance (Greater/Electricity)",
@@ -12031,6 +12378,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, resist energy",
   },
 })
+
 DefineEquipment({
   Name="Ring of Minor Energy Resistance (Fire)",
   Key="Ring of Energy Resistance (Minor/Fire)",
@@ -12065,6 +12413,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, resist energy",
   },
 })
+
 DefineEquipment({
   Name="Ring of Major Energy Resistance (Fire)",
   Key="Ring of Energy Resistance (Major/Fire)",
@@ -12099,6 +12448,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, resist energy",
   },
 })
+
 DefineEquipment({
   Name="Ring of Greater Energy Resistance (Fire)",
   Key="Ring of Energy Resistance (Greater/Fire)",
@@ -12133,6 +12483,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, resist energy",
   },
 })
+
 DefineEquipment({
   Name="Ring of Minor Energy Resistance (Sonic)",
   Key="Ring of Energy Resistance (Minor/Sonic)",
@@ -12167,6 +12518,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, resist energy",
   },
 })
+
 DefineEquipment({
   Name="Ring of Major Energy Resistance (Sonic)",
   Key="Ring of Energy Resistance (Major/Sonic)",
@@ -12201,6 +12553,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, resist energy",
   },
 })
+
 DefineEquipment({
   Name="Ring of Greater Energy Resistance (Sonic)",
   Key="Ring of Energy Resistance (Greater/Sonic)",
@@ -12235,6 +12588,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, resist energy",
   },
 })
+
 DefineEquipment({
   Name="Ring of Evasion",
   Key="Ring of Evasion",
@@ -12266,6 +12620,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, jump",
   },
 })
+
 DefineEquipment({
   Name="Ring of Feather Falling",
   Key="Ring of Feather Falling",
@@ -12302,6 +12657,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, feather fall",
   },
 })
+
 DefineEquipment({
   Name="Ring of Force Shield",
   Key="Ring of Force Shield",
@@ -12336,6 +12692,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, wall of force",
   },
 })
+
 DefineEquipment({
   Name="Ring of Freedom of Movement",
   Key="Ring of Freedom of Movement",
@@ -12367,6 +12724,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, freedom of movement",
   },
 })
+
 DefineEquipment({
   Name="Ring of Friend Shield",
   Key="Ring of Friend Shield",
@@ -12389,6 +12747,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, shield other",
   },
 })
+
 DefineEquipment({
   Name="Ring of Invisibility",
   Key="Ring of Invisibility",
@@ -12420,6 +12779,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, invisibility",
   },
 })
+
 DefineEquipment({
   Name="Ring of Jumping",
   Key="Ring of Jumping",
@@ -12454,6 +12814,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, creator must have 5 ranks in the Acrobatics skill",
   },
 })
+
 DefineEquipment({
   Name="Ring of Improved Jumping",
   Key="Ring of Jumping (Improved)",
@@ -12488,6 +12849,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, creator must have 10 ranks in the Acrobatics skill",
   },
 })
+
 DefineEquipment({
   Name="Ring of Mind Shielding",
   Key="Ring of Mind Shielding",
@@ -12510,6 +12872,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, nondetection",
   },
 })
+
 DefineEquipment({
   Name="Ring of Protection +1",
   Key="Ring of Protection +1",
@@ -12544,6 +12907,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, shield of faith, caster must be of a level at least three times the bonus of the ring",
   },
 })
+
 DefineEquipment({
   Name="Ring of Protection +2",
   Key="Ring of Protection +2",
@@ -12578,6 +12942,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, shield of faith, caster must be of a level at least three times the bonus of the ring",
   },
 })
+
 DefineEquipment({
   Name="Ring of Protection +3",
   Key="Ring of Protection +3",
@@ -12612,6 +12977,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, shield of faith, caster must be of a level at least three times the bonus of the ring",
   },
 })
+
 DefineEquipment({
   Name="Ring of Protection +4",
   Key="Ring of Protection +4",
@@ -12646,6 +13012,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, shield of faith, caster must be of a level at least three times the bonus of the ring",
   },
 })
+
 DefineEquipment({
   Name="Ring of Protection +5",
   Key="Ring of Protection +5",
@@ -12680,6 +13047,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, shield of faith, caster must be of a level at least three times the bonus of the ring",
   },
 })
+
 DefineEquipment({
   Name="Ring of the Ram",
   Key="Ring of the Ram",
@@ -12710,6 +13078,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, bull's strength, telekinesis",
   },
 })
+
 DefineEquipment({
   Name="Ring of Regeneration",
   Key="Ring of Regeneration",
@@ -12732,6 +13101,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, regenerate",
   },
 })
+
 DefineEquipment({
   Name="Ring of Shooting Stars",
   Key="Ring of Shooting Stars",
@@ -12754,6 +13124,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, faerie fire, fireball, light, lightning bolt",
   },
 })
+
 DefineEquipment({
   Name="Ring of Minor Spell Storing",
   Key="Ring of Spell Storing (Minor)",
@@ -12776,6 +13147,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, imbue with spell ability",
   },
 })
+
 DefineEquipment({
   Name="Ring of Spell Storing",
   Key="Ring of Spell Storing",
@@ -12798,6 +13170,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, imbue with spell ability",
   },
 })
+
 DefineEquipment({
   Name="Ring of Major Spell Storing",
   Key="Ring of Spell Storing (Major)",
@@ -12820,6 +13193,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, imbue with spell ability",
   },
 })
+
 DefineEquipment({
   Name="Ring of Spell Turning",
   Key="Ring of Spell Turning",
@@ -12851,6 +13225,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, spell turning",
   },
 })
+
 DefineEquipment({
   Name="Ring of Sustenance",
   Key="Ring of Sustenance",
@@ -12873,6 +13248,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, create food and water",
   },
 })
+
 DefineEquipment({
   Name="Ring of Swimming",
   Key="Ring of Swimming",
@@ -12907,6 +13283,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, creator must have 5 ranks in the Swim skill",
   },
 })
+
 DefineEquipment({
   Name="Ring of Improved Swimming",
   Key="Ring of Swimming (Improved)",
@@ -12941,6 +13318,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, creator must have 10 ranks in the Swim skill",
   },
 })
+
 DefineEquipment({
   Name="Ring of Telekinesis",
   Key="Ring of Telekinesis",
@@ -12972,6 +13350,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, telekinesis",
   },
 })
+
 DefineEquipment({
   Name="Ring of Three Wishes",
   Key="Ring of Three Wishes",
@@ -13002,6 +13381,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, wish or miracle",
   },
 })
+
 DefineEquipment({
   Name="Ring of Water Walking",
   Key="Ring of Water Walking",
@@ -13033,6 +13413,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, water walk",
   },
 })
+
 DefineEquipment({
   Name="Ring of Wizardry I",
   Key="Ring of Wizardry I",
@@ -13064,6 +13445,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, limited wish",
   },
 })
+
 DefineEquipment({
   Name="Ring of Wizardry II",
   Key="Ring of Wizardry II",
@@ -13095,6 +13477,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, limited wish",
   },
 })
+
 DefineEquipment({
   Name="Ring of Wizardry III",
   Key="Ring of Wizardry III",
@@ -13126,6 +13509,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, limited wish",
   },
 })
+
 DefineEquipment({
   Name="Ring of Wizardry IV",
   Key="Ring of Wizardry IV",
@@ -13157,6 +13541,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, limited wish",
   },
 })
+
 DefineEquipment({
   Name="Ring of X-Ray Vision",
   Key="Ring of X-Ray Vision",
@@ -13179,6 +13564,7 @@ DefineEquipment({
     ['Construction Requirements']="Forge Ring, true seeing",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Abjuration",
   Key="Staff of Abjuration",
@@ -13211,6 +13597,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, dismissal, dispel magic, lesser globe of invulnerability, repulsion, resist energy, shield",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Charming",
   Key="Staff of Charming",
@@ -13243,6 +13630,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, charm person, charm monster",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Conjuration",
   Key="Staff of Conjuration",
@@ -13275,6 +13663,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, cloudkill, minor creation, stinking cloud, summon monster VI, summon swarm, unseen servant",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Defense",
   Key="Staff of Defense",
@@ -13307,6 +13696,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, shield, shield of faith, shield of law, shield other, creator must be lawful",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Divination",
   Key="Staff of Divination",
@@ -13339,6 +13729,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, detect secret doors, locate creature, locate object, prying eyes, tongues, true seeing",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Earth and Stone",
   Key="Staff of Earth and Stone",
@@ -13371,6 +13762,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, move earth, passwall",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Enchantment",
   Key="Staff of Enchantment",
@@ -13403,6 +13795,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, crushing despair, hideous laughter, mass suggestion, mind fog, sleep, suggestion",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Evocation",
   Key="Staff of Evocation",
@@ -13435,6 +13828,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, chain lightning, fireball, ice storm, magic missile, shatter, wall of force",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Fire",
   Key="Staff of Fire",
@@ -13467,6 +13861,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, burning hands, fireball, wall of fire",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Frost",
   Key="Staff of Frost",
@@ -13499,6 +13894,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, cone of cold, ice storm, wall of ice",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Healing",
   Key="Staff of Healing",
@@ -13531,6 +13927,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, cure serious wounds, lesser restoration, remove blindness/deafness, remove disease",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Illumination",
   Key="Staff of Illumination",
@@ -13563,6 +13960,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, dancing lights, daylight, flare, sunburst",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Illusion",
   Key="Staff of Illusion",
@@ -13595,6 +13993,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, disguise self, major image, mirror image, persistent image, mislead, rainbow pattern",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Life",
   Key="Staff of Life",
@@ -13627,6 +14026,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, heal, raise dead",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Necromancy",
   Key="Staff of Necromancy",
@@ -13659,6 +14059,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, cause fear, circle of death, enervation, ghoul touch, halt undead, waves of fatigue",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Passage",
   Key="Staff of Passage",
@@ -13691,6 +14092,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, astral projection, dimension door, greater teleport, passwall, phase door",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Power",
   Key="Staff of Power",
@@ -13782,6 +14184,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, Craft Magic Arms and Armor, cone of cold, continual flame, heightened fireball, globe of invulnerability, hold monster, levitate, heightened lightning bolt, magic missile, heightened ray of enfeeblement, wall of force",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Size Alteration",
   Key="Staff of Size Alteration",
@@ -13814,6 +14217,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, enlarge person, mass enlarge person, mass reduce person, reduce person, shrink item",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Swarming Insects",
   Key="Staff of Swarming Insects",
@@ -13846,6 +14250,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, insect plague, summon swarm",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of Transmutation",
   Key="Staff of Transmutation",
@@ -13878,6 +14283,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Staff, alter self, baleful polymorph, blink, disintegrate, expeditious retreat, polymorph",
   },
 })
+
 CopyEquipment("Staff", {
   Name="Staff of the Woodlands",
   Key="Staff of the Woodlands",
@@ -13947,6 +14353,7 @@ CopyEquipment("Staff", {
     ['Construction Requirements']="Craft Magic Arms and Armor, Craft Staff, animate plants, barkskin, charm animal, pass without trace, speak with animals, summon nature's ally VI, wall of thorns",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Immovable Rod",
   Key="Rod (Immovable)",
@@ -13972,6 +14379,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, levitate",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of Absorption",
   Key="Rod (Absorption)",
@@ -13997,6 +14405,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, spell turning",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of Alertness",
   Key="Rod (Alertness)",
@@ -14059,6 +14468,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, alarm, animate objects, detect chaos, detect evil, detect good, detect law, detect magic, discern lies, light, prayer, see invisibility",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of Cancellation",
   Key="Rod (Cancellation)",
@@ -14084,6 +14494,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, mage's disjunction",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of Enemy Detection",
   Key="Rod (Enemy Detection)",
@@ -14117,6 +14528,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, true seeing",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of Flailing",
   Key="Rod (Flailing)",
@@ -14192,6 +14604,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Craft Magic Arms and Armor, bless",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of Flame Extinguishing",
   Key="Rod (Flame Extinguishing)",
@@ -14225,6 +14638,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, pyrotechnics",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of Lordly Might",
   Key="Rod (Lordly Might)",
@@ -14250,6 +14664,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Magic Arms and Armor, Craft Rod, bull's strength, fear, flame blade, hold person, inflict light wounds",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of Metal and Mineral Detection",
   Key="Rod (Metal and Mineral Detection)",
@@ -14275,6 +14690,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, locate object",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of Negation",
   Key="Rod (Negation)",
@@ -14308,6 +14724,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, dispel magic, and limited wish or miracle",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of the Python",
   Key="Rod (Python)",
@@ -14375,6 +14792,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Craft Magic Arms and Armor, baleful polymorph, creator must be good",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of Rulership",
   Key="Rod (Rulership)",
@@ -14400,6 +14818,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, mass charm monster",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of Security",
   Key="Rod (Security)",
@@ -14425,6 +14844,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, gate",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of Splendor",
   Key="Rod (Splendor)",
@@ -14462,6 +14882,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, eagle's splendor, fabricate, major creation",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of Thunder and Lightning",
   Key="Rod (Thunder and Lightning)",
@@ -14525,6 +14946,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Magic Arms and Armor, Craft Rod, lightning bolt, shout",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of the Viper",
   Key="Rod (Viper)",
@@ -14578,6 +15000,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Craft Magic Arms and Armor, poison, creator must be evil",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of Withering",
   Key="Rod (Withering)",
@@ -14629,6 +15052,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Craft Magic Arms and Armor, contagion",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Rod of Wonder",
   Key="Rod (Wonder)",
@@ -14654,6 +15078,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, confusion, creator must be chaotic",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Lesser Empower Metamagic Rod",
   Key="Rod (Empower/Lesser)",
@@ -14686,6 +15111,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Empower Spell",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Empower Metamagic Rod",
   Key="Rod (Empower)",
@@ -14718,6 +15144,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Empower Spell",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Greater Empower Metamagic Rod",
   Key="Rod (Empower/Greater)",
@@ -14750,6 +15177,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Empower Spell",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Lesser Enlarge Metamagic Rod",
   Key="Rod (Enlarge/Lesser)",
@@ -14782,6 +15210,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Enlarge Spell",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Enlarge Metamagic Rod",
   Key="Rod (Enlarge)",
@@ -14814,6 +15243,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Enlarge Spell",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Greater Enlarge Metamagic Rod",
   Key="Rod (Enlarge/Greater)",
@@ -14846,6 +15276,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Enlarge Spell",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Lesser Extend Metamagic Rod",
   Key="Rod (Extend/Lesser)",
@@ -14878,6 +15309,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Extend Spell",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Extend Metamagic Rod",
   Key="Rod (Extend)",
@@ -14910,6 +15342,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Extend Spell",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Greater Extend Metamagic Rod",
   Key="Rod (Extend/Greater)",
@@ -14942,6 +15375,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Extend Spell",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Lesser Maximize Metamagic Rod",
   Key="Rod (Maximize/Lesser)",
@@ -14974,6 +15408,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Maximize Spell feat",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Maximize Metamagic Rod",
   Key="Rod (Maximize)",
@@ -15006,6 +15441,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Maximize Spell feat",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Greater Maximize Metamagic Rod",
   Key="Rod (Maximize/Greater)",
@@ -15038,6 +15474,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Maximize Spell feat",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Lesser Quicken Metamagic Rod",
   Key="Rod (Quicken/Lesser)",
@@ -15070,6 +15507,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Quicken Spell",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Quicken Metamagic Rod",
   Key="Rod (Quicken)",
@@ -15102,6 +15540,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Quicken Spell",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Greater Quicken Metamagic Rod",
   Key="Rod (Quicken/Greater)",
@@ -15134,6 +15573,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Quicken Spell",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Lesser Silent Metamagic Rod",
   Key="Rod (Silent/Lesser)",
@@ -15166,6 +15606,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Silent Spell",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Silent Metamagic Rod",
   Key="Rod (Silent)",
@@ -15198,6 +15639,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Silent Spell",
   },
 })
+
 CopyEquipment("Rod", {
   Name="Greater Silent Metamagic Rod",
   Key="Rod (Silent/Greater)",
@@ -15230,6 +15672,7 @@ CopyEquipment("Rod", {
     ['Construction Requirements']="Craft Rod, Silent Spell",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Aid",
   Key="Potion of Aid",
@@ -15267,6 +15710,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, aid",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Barkskin",
   Key="Potion of Barkskin +2",
@@ -15304,6 +15748,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, barkskin",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Barkskin (CL 6th)",
   Key="Potion of Barkskin +3",
@@ -15341,6 +15786,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, barkskin",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Barkskin (CL 9th)",
   Key="Potion of Barkskin +4",
@@ -15378,6 +15824,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, barkskin",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Barkskin (CL 12th)",
   Key="Potion of Barkskin +5",
@@ -15415,6 +15862,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, barkskin",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Bear's Endurance",
   Key="Potion of Bear's Endurance",
@@ -15465,6 +15913,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, bear's endurance",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Blur",
   Key="Potion of Blur",
@@ -15502,6 +15951,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, blur",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Bull's Strength",
   Key="Potion of Bull's Strength",
@@ -15552,6 +16002,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, bull's strength",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Cat's Grace",
   Key="Potion of Cat's Grace",
@@ -15602,6 +16053,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, cat's grace",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Cure Light Wounds",
   Key="Potion of Cure Light Wounds",
@@ -15639,6 +16091,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, cure light wounds",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Cure Moderate Wounds",
   Key="Potion of Cure Moderate Wounds",
@@ -15676,6 +16129,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, cure moderate wounds",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Cure Serious Wounds",
   Key="Potion of Cure Serious Wounds",
@@ -15713,6 +16167,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, cure serious wounds",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Darkvision",
   Key="Potion of Darkvision",
@@ -15750,6 +16205,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, darkvision",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Delay Poison",
   Key="Potion of Delay Poison",
@@ -15787,6 +16243,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, delay poison",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Displacement",
   Key="Potion of Displacement",
@@ -15824,6 +16281,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, displacement",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Eagle's Splendor",
   Key="Potion of Eagle's Splendor",
@@ -15874,6 +16332,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, eagle's splendor",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Endure Elements",
   Key="Potion of Endure Elements",
@@ -15911,6 +16370,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, endure elements",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Enlarge Person",
   Key="Potion of Enlarge Person",
@@ -15948,6 +16408,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, enlarge person",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Fly",
   Key="Potion of Fly",
@@ -15985,6 +16446,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, fly",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Fox's Cunning",
   Key="Potion of Fox's Cunning",
@@ -16035,6 +16497,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, fox's cunning",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Gaseous Form",
   Key="Potion of Gaseous Form",
@@ -16072,6 +16535,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, gaseous form",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Good Hope",
   Key="Potion of Good Hope",
@@ -16109,6 +16573,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, good hope",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Greater Magic Fang",
   Key="Potion of Greater Magic Fang +1",
@@ -16146,6 +16611,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, greater magic fang",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Greater Magic Fang (CL 8th)",
   Key="Potion of Greater Magic Fang +2",
@@ -16183,6 +16649,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, greater magic fang",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Greater Magic Fang (CL 12th)",
   Key="Potion of Greater Magic Fang +3",
@@ -16220,6 +16687,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, greater magic fang",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Greater Magic Fang (CL 16th)",
   Key="Potion of Greater Magic Fang +4",
@@ -16257,6 +16725,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, greater magic fang",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Greater Magic Fang (CL 20th)",
   Key="Potion of Greater Magic Fang +5",
@@ -16294,6 +16763,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, greater magic fang",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Haste",
   Key="Potion of Haste",
@@ -16331,6 +16801,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, haste",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Heroism",
   Key="Potion of Heroism",
@@ -16368,6 +16839,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, heroism",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Hide from Animals",
   Key="Potion of Hide from Animals",
@@ -16405,6 +16877,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, hide from animals",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Hide from Undead",
   Key="Potion of Hide from Undead",
@@ -16442,6 +16915,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, hide from undead",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Inflict Light Wounds",
   Key="Potion of Inflict Light Wounds",
@@ -16479,6 +16953,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, inflict light wounds",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Inflict Moderate Wounds",
   Key="Potion of Inflict Moderate Wounds",
@@ -16516,6 +16991,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, inflict moderate wounds",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Inflict Serious Wounds",
   Key="Potion of Inflict Serious Wounds",
@@ -16553,6 +17029,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, inflict serious wounds",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Invisibility",
   Key="Potion of Invisibility",
@@ -16590,6 +17067,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, invisibility",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Jump",
   Key="Potion of Jump",
@@ -16627,6 +17105,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, jump",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Lesser Restoration",
   Key="Potion of Lesser Restoration",
@@ -16664,6 +17143,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, lesser restoration",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Levitate",
   Key="Potion of Levitate",
@@ -16701,6 +17181,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, levitate",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Mage Armor",
   Key="Potion of Mage Armor",
@@ -16738,6 +17219,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, mage armor",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Magic Fang",
   Key="Potion of Magic Fang",
@@ -16775,6 +17257,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, magic fang",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Misdirection",
   Key="Potion of Misdirection",
@@ -16812,6 +17295,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, misdirection",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Neutralize Poison",
   Key="Potion of Neutralize Poison",
@@ -16849,6 +17333,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, neutralize poison",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Nondetection",
   Key="Potion of Nondetection",
@@ -16886,6 +17371,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, nondetection",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Owl's Wisdom",
   Key="Potion of Owl's Wisdom",
@@ -16936,6 +17422,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, owl's wisdom",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Pass without Trace",
   Key="Potion of Pass without Trace",
@@ -16973,6 +17460,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, pass without trace",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Protection from Arrows",
   Key="Potion of Protection from Arrows",
@@ -17010,6 +17498,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, protection from arrows",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Protection from Chaos",
   Key="Potion of Protection from Chaos",
@@ -17047,6 +17536,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, protection from chaos",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Protection from Acid",
   Key="Potion of Protection from Energy (Acid)",
@@ -17084,6 +17574,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, protection from energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Protection from Cold",
   Key="Potion of Protection from Energy (Cold)",
@@ -17121,6 +17612,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, protection from energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Protection from Electricity",
   Key="Potion of Protection from Energy (Electricity)",
@@ -17158,6 +17650,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, protection from energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Protection from Fire",
   Key="Potion of Protection from Energy (Fire)",
@@ -17195,6 +17688,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, protection from energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Protection from Sonic",
   Key="Potion of Protection from Energy (Sonic)",
@@ -17232,6 +17726,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, protection from energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Protection from Evil",
   Key="Potion of Protection from Evil",
@@ -17269,6 +17764,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, protection from evil",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Protection from Good",
   Key="Potion of Protection from Good",
@@ -17306,6 +17802,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, protection from good",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Protection from Law",
   Key="Potion of Protection from Law",
@@ -17343,6 +17840,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, protection from law",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Rage",
   Key="Potion of Rage",
@@ -17380,6 +17878,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, rage",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Reduce Person",
   Key="Potion of Reduce Person",
@@ -17417,6 +17916,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, reduce person",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Remove Blindness/Deafness",
   Key="Potion of Remove Blindness/Deafness",
@@ -17454,6 +17954,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, remove blindness/deafness",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Remove Curse",
   Key="Potion of Remove Curse",
@@ -17491,6 +17992,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, remove curse",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Remove Disease",
   Key="Potion of Remove Disease",
@@ -17528,6 +18030,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, remove disease",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Remove Fear",
   Key="Potion of Remove Fear",
@@ -17565,6 +18068,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, remove fear",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Remove Paralysis",
   Key="Potion of Remove Paralysis",
@@ -17602,6 +18106,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, remove paralysis",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Resist Acid",
   Key="Potion of Resist Energy 10 (Acid)",
@@ -17639,6 +18144,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, resist energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Resist Cold",
   Key="Potion of Resist Energy 10 (Cold)",
@@ -17676,6 +18182,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, resist energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Resist Electricity",
   Key="Potion of Resist Energy 10 (Electricity)",
@@ -17713,6 +18220,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, resist energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Resist Fire",
   Key="Potion of Resist Energy 10 (Fire)",
@@ -17750,6 +18258,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, resist energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Resist Sonic",
   Key="Potion of Resist Energy 10 (Sonic)",
@@ -17787,6 +18296,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, resist energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Resist Acid (CL 7th)",
   Key="Potion of Resist Energy 20 (Acid)",
@@ -17824,6 +18334,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, resist energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Resist Cold (CL 7th)",
   Key="Potion of Resist Energy 20 (Cold)",
@@ -17861,6 +18372,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, resist energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Resist Electricity (CL 7th)",
   Key="Potion of Resist Energy 20 (Electricity)",
@@ -17898,6 +18410,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, resist energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Resist Fire (CL 7th)",
   Key="Potion of Resist Energy 20 (Fire)",
@@ -17935,6 +18448,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, resist energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Resist Sonic (CL 7th)",
   Key="Potion of Resist Energy 20 (Sonic)",
@@ -17972,6 +18486,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, resist energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Resist Acid (CL 11th)",
   Key="Potion of Resist Energy 30 (Acid)",
@@ -18009,6 +18524,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, resist energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Resist Cold (CL 11th)",
   Key="Potion of Resist Energy 30 (Cold)",
@@ -18046,6 +18562,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, resist energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Resist Electricity (CL 11th)",
   Key="Potion of Resist Energy 30 (Electricity)",
@@ -18083,6 +18600,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, resist energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Resist Fire (CL 11th)",
   Key="Potion of Resist Energy 30 (Fire)",
@@ -18120,6 +18638,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, resist energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Resist Sonic (CL 11th)",
   Key="Potion of Resist Energy 30 (Sonic)",
@@ -18157,6 +18676,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, resist energy",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Sanctuary",
   Key="Potion of Sanctuary",
@@ -18194,6 +18714,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, sanctuary",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Shield of Faith",
   Key="Potion of Shield of Faith +2",
@@ -18231,6 +18752,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, shield of faith",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Shield of Faith (CL 6th)",
   Key="Potion of Shield of Faith +3",
@@ -18268,6 +18790,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, shield of faith",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Shield of Faith (CL 12th)",
   Key="Potion of Shield of Faith +4",
@@ -18305,6 +18828,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, shield of faith",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Shield of Faith (CL 18th)",
   Key="Potion of Shield of Faith +5",
@@ -18342,6 +18866,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, shield of faith",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Spider Climb",
   Key="Potion of Spider Climb",
@@ -18379,6 +18904,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, spider climb",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Tongues",
   Key="Potion of Tongues",
@@ -18416,6 +18942,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, tongues",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Undetectable Alignment",
   Key="Potion of Undetectable Alignment",
@@ -18453,6 +18980,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, undetectable alignment",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Water Breathing",
   Key="Potion of Water Breathing",
@@ -18490,6 +19018,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, water breathing",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Potion of Water Walk",
   Key="Potion of Water Walk",
@@ -18527,6 +19056,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, water walk",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Bless Weapon",
   Key="Oil of Bless Weapon",
@@ -18564,6 +19094,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, bless weapon",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Darkness",
   Key="Oil of Darkness",
@@ -18601,6 +19132,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, darkness",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Daylight",
   Key="Oil of Daylight",
@@ -18638,6 +19170,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, daylight",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Flame Arrow",
   Key="Oil of Flame Arrow",
@@ -18675,6 +19208,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, flame arrow",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Greater Magic Weapon",
   Key="Oil of Greater Magic Weapon +1",
@@ -18712,6 +19246,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, greater magic weapon",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Greater Magic Weapon (CL 8th)",
   Key="Oil of Greater Magic Weapon +2",
@@ -18749,6 +19284,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, greater magic weapon",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Greater Magic Weapon (CL 12th)",
   Key="Oil of Greater Magic Weapon +3",
@@ -18786,6 +19322,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, greater magic weapon",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Greater Magic Weapon (CL 16th)",
   Key="Oil of Greater Magic Weapon +4",
@@ -18823,6 +19360,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, greater magic weapon",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Greater Magic Weapon (CL 20th)",
   Key="Oil of Greater Magic Weapon +5",
@@ -18860,6 +19398,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, greater magic weapon",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Invisibility",
   Key="Oil of Invisibility",
@@ -18897,6 +19436,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, invisibility",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Keen Edge",
   Key="Oil of Keen Edge",
@@ -18934,6 +19474,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, keen edge",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Silence",
   Key="Oil of Silence",
@@ -18971,6 +19512,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, silence",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Levitate",
   Key="Oil of Levitate",
@@ -19008,6 +19550,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, levitate",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Magic Stone",
   Key="Oil of Magic Stone",
@@ -19045,6 +19588,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, magic stone",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Magic Vestment",
   Key="Oil of Magic Vestment +1",
@@ -19082,6 +19626,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, magic vestment",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Magic Vestment (CL 8th)",
   Key="Oil of Magic Vestment +2",
@@ -19119,6 +19664,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, magic vestment",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Magic Vestment (CL 12th)",
   Key="Oil of Magic Vestment +3",
@@ -19156,6 +19702,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, magic vestment",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Magic Vestment (CL 16th)",
   Key="Oil of Magic Vestment +4",
@@ -19193,6 +19740,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, magic vestment",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Magic Vestment (CL 20th)",
   Key="Oil of Magic Vestment +5",
@@ -19230,6 +19778,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, magic vestment",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Magic Weapon",
   Key="Oil of Magic Weapon",
@@ -19267,6 +19816,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, magic weapon",
   },
 })
+
 CopyEquipment("Potion", {
   Name="Oil of Shillelagh",
   Key="Oil of Shillelagh",
@@ -19304,6 +19854,7 @@ CopyEquipment("Potion", {
     ['Construction Requirements']="Brew Potion, shillelagh",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Acid Splash",
   Key="Wand of Acid Splash",
@@ -19340,6 +19891,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, acid splash",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Arcane Mark",
   Key="Wand of Arcane Mark",
@@ -19376,6 +19928,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, arcane mark",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Bleed",
   Key="Wand of Bleed",
@@ -19412,6 +19965,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, bleed",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Create Water",
   Key="Wand of Create Water",
@@ -19448,6 +20002,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, create water",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Dancing Lights",
   Key="Wand of Dancing Lights",
@@ -19484,6 +20039,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, dancing lights",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Daze",
   Key="Wand of Daze",
@@ -19520,6 +20076,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, daze",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Detect Magic",
   Key="Wand of Detect Magic",
@@ -19556,6 +20113,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, detect magic",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Detect Poison",
   Key="Wand of Detect Poison",
@@ -19592,6 +20150,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, detect poison",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Disrupt Undead",
   Key="Wand of Disrupt Undead",
@@ -19628,6 +20187,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, disrupt undead",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Flare",
   Key="Wand of Flare",
@@ -19664,6 +20224,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, flare",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Ghost Sound",
   Key="Wand of Ghost Sound",
@@ -19700,6 +20261,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, ghost sound",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Guidance",
   Key="Wand of Guidance",
@@ -19736,6 +20298,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, guidance",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Know Direction",
   Key="Wand of Know Direction",
@@ -19772,6 +20335,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, know direction",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Light",
   Key="Wand of Light",
@@ -19808,6 +20372,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, light",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Lullaby",
   Key="Wand of Lullaby",
@@ -19844,6 +20409,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, lullaby",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Mage Hand",
   Key="Wand of Mage Hand",
@@ -19880,6 +20446,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, mage hand",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Mending",
   Key="Wand of Mending",
@@ -19916,6 +20483,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, mending",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Message",
   Key="Wand of Message",
@@ -19952,6 +20520,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, message",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Open/Close",
   Key="Wand of Open/Close",
@@ -19988,6 +20557,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, open/close",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Prestidigitation",
   Key="Wand of Prestidigitation",
@@ -20024,6 +20594,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, prestidigitation",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Purify Food and Drink",
   Key="Wand of Purify Food and Drink",
@@ -20060,6 +20631,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, purify food and drink",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Ray of Frost",
   Key="Wand of Ray of Frost",
@@ -20096,6 +20668,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, ray of frost",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Read Magic",
   Key="Wand of Read Magic",
@@ -20132,6 +20705,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, read magic",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Resistance",
   Key="Wand of Resistance",
@@ -20168,6 +20742,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, resistance",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Stabilize",
   Key="Wand of Stabilize",
@@ -20204,6 +20779,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, stabilize",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Summon Instrument",
   Key="Wand of Summon Instrument",
@@ -20240,6 +20816,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, summon instrument",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Touch of Fatigue",
   Key="Wand of Touch of Fatigue",
@@ -20276,6 +20853,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, touch of fatigue",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Virtue",
   Key="Wand of Virtue",
@@ -20312,6 +20890,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, virtue",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Alarm",
   Key="Wand of Alarm",
@@ -20348,6 +20927,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, alarm",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Bane",
   Key="Wand of Bane",
@@ -20384,6 +20964,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, bane",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Bless",
   Key="Wand of Bless",
@@ -20420,6 +21001,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, bless",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Bless Water",
   Key="Wand of Bless Water",
@@ -20456,6 +21038,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, bless water",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Bless Weapon",
   Key="Wand of Bless Weapon",
@@ -20492,6 +21075,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, bless weapon",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Burning Hands",
   Key="Wand of Burning Hands",
@@ -20528,6 +21112,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, burning hands",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Calm Animals",
   Key="Wand of Calm Animals",
@@ -20564,6 +21149,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, calm animals",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Cause Fear",
   Key="Wand of Cause Fear",
@@ -20600,6 +21186,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, cause fear",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Charm Animal",
   Key="Wand of Charm Animal",
@@ -20636,6 +21223,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, charm animal",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Charm Person",
   Key="Wand of Charm Person",
@@ -20672,6 +21260,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, charm person",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Chill Touch",
   Key="Wand of Chill Touch",
@@ -20708,6 +21297,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, chill touch",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Color Spray",
   Key="Wand of Color Spray",
@@ -20744,6 +21334,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, color spray",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Command",
   Key="Wand of Command",
@@ -20780,6 +21371,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, command",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Comprehend Languages",
   Key="Wand of Comprehend Languages",
@@ -20816,6 +21408,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, comprehend languages",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Lesser Confusion",
   Key="Wand of Confusion (Lesser)",
@@ -20852,6 +21445,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, lesser confusion",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Cure Light Wounds",
   Key="Wand of Cure Light Wounds",
@@ -20888,6 +21482,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, cure light wounds",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Curse Water",
   Key="Wand of Curse Water",
@@ -20924,6 +21519,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, curse water",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Deathwatch",
   Key="Wand of Deathwatch",
@@ -20960,6 +21556,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, deathwatch",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Detect Chaos",
   Key="Wand of Detect Chaos",
@@ -20996,6 +21593,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, detect chaos",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Detect Evil",
   Key="Wand of Detect Evil",
@@ -21032,6 +21630,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, detect evil",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Detect Good",
   Key="Wand of Detect Good",
@@ -21068,6 +21667,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, detect good",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Detect Law",
   Key="Wand of Detect Law",
@@ -21104,6 +21704,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, detect law",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Detect Secret Doors",
   Key="Wand of Detect Secret Doors",
@@ -21140,6 +21741,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, detect secret doors",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Detect Snares and Pits",
   Key="Wand of Detect Snares and Pits",
@@ -21176,6 +21778,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, detect snares and pits",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Detect Undead",
   Key="Wand of Detect Undead",
@@ -21212,6 +21815,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, detect undead",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Disguise Self",
   Key="Wand of Disguise Self",
@@ -21248,6 +21852,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, disguise self",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Divine Favor",
   Key="Wand of Divine Favor",
@@ -21284,6 +21889,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, divine favor",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Doom",
   Key="Wand of Doom",
@@ -21320,6 +21926,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, doom",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Endure Elements",
   Key="Wand of Endure Elements",
@@ -21356,6 +21963,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, endure elements",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Enlarge Person",
   Key="Wand of Enlarge Person",
@@ -21392,6 +22000,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, enlarge person",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Entangle",
   Key="Wand of Entangle",
@@ -21428,6 +22037,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, entangle",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Entropic Shield",
   Key="Wand of Entropic Shield",
@@ -21464,6 +22074,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, entropic shield",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Erase",
   Key="Wand of Erase",
@@ -21500,6 +22111,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, erase",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Expeditious Retreat",
   Key="Wand of Expeditious Retreat",
@@ -21536,6 +22148,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, expeditious retreat",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Faerie Fire",
   Key="Wand of Faerie Fire",
@@ -21572,6 +22185,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, faerie fire",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Feather Fall",
   Key="Wand of Feather Fall",
@@ -21608,6 +22222,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, feather fall",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Floating Disk",
   Key="Wand of Floating Disk",
@@ -21644,6 +22259,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, floating disk",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Goodberry",
   Key="Wand of Goodberry",
@@ -21680,6 +22296,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, goodberry",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Grease",
   Key="Wand of Grease",
@@ -21716,6 +22333,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, grease",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Hide from Animals",
   Key="Wand of Hide from Animals",
@@ -21752,6 +22370,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, hide from animals",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Hide from Undead",
   Key="Wand of Hide from Undead",
@@ -21788,6 +22407,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, hide from undead",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Hold Portal",
   Key="Wand of Hold Portal",
@@ -21824,6 +22444,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, hold portal",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Hypnotism",
   Key="Wand of Hypnotism",
@@ -21860,6 +22481,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, hypnotism",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Identify",
   Key="Wand of Identify",
@@ -21896,6 +22518,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, identify",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Inflict Light Wounds",
   Key="Wand of Inflict Light Wounds",
@@ -21932,6 +22555,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, inflict light wounds",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Jump",
   Key="Wand of Jump",
@@ -21968,6 +22592,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, jump",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Longstrider",
   Key="Wand of Longstrider",
@@ -22004,6 +22629,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, longstrider",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Mage Armor",
   Key="Wand of Mage Armor",
@@ -22040,6 +22666,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, mage armor",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Magic Fang",
   Key="Wand of Magic Fang",
@@ -22076,6 +22703,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, magic fang",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Magic Missile",
   Key="Wand of Magic Missile",
@@ -22112,6 +22740,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, magic missile",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Magic Stone",
   Key="Wand of Magic Stone",
@@ -22148,6 +22777,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, magic stone",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Magic Weapon",
   Key="Wand of Magic Weapon",
@@ -22184,6 +22814,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, magic weapon",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Mount",
   Key="Wand of Mount",
@@ -22220,6 +22851,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, mount",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Obscuring Mist",
   Key="Wand of Obscuring Mist",
@@ -22256,6 +22888,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, obscuring mist",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Pass without Trace",
   Key="Wand of Pass without Trace",
@@ -22292,6 +22925,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, pass without trace",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Produce Flame",
   Key="Wand of Produce Flame",
@@ -22328,6 +22962,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, produce flame",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Protection from Chaos",
   Key="Wand of Protection from Chaos",
@@ -22364,6 +22999,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, protection from chaos",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Protection from Evil",
   Key="Wand of Protection from Evil",
@@ -22400,6 +23036,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, protection from evil",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Protection from Good",
   Key="Wand of Protection from Good",
@@ -22436,6 +23073,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, protection from good",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Protection from Law",
   Key="Wand of Protection from Law",
@@ -22472,6 +23110,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, protection from law",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Ray of Enfeeblement",
   Key="Wand of Ray of Enfeeblement",
@@ -22508,6 +23147,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, ray of enfeeblement",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Reduce Person",
   Key="Wand of Reduce Person",
@@ -22544,6 +23184,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, reduce person",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Remove Fear",
   Key="Wand of Remove Fear",
@@ -22580,6 +23221,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, remove fear",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Sanctuary",
   Key="Wand of Sanctuary",
@@ -22616,6 +23258,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, sanctuary",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Shield",
   Key="Wand of Shield",
@@ -22652,6 +23295,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, shield",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Shield of Faith",
   Key="Wand of Shield of Faith",
@@ -22688,6 +23332,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, shield of faith",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Shillelagh",
   Key="Wand of Shillelagh",
@@ -22724,6 +23369,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, shillelagh",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Shocking Grasp",
   Key="Wand of Shocking Grasp",
@@ -22760,6 +23406,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, shocking grasp",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Silent Image",
   Key="Wand of Silent Image",
@@ -22796,6 +23443,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, silent image",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Sleep",
   Key="Wand of Sleep",
@@ -22832,6 +23480,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, sleep",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Summon Monster I",
   Key="Wand of Summon Monster I",
@@ -22868,6 +23517,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, summon monster I",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Summon Nature's Ally I",
   Key="Wand of Summon Nature's Ally I",
@@ -22904,6 +23554,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, summon nature's ally I",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of True Strike",
   Key="Wand of True Strike",
@@ -22940,6 +23591,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, true strike",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Unseen Servant",
   Key="Wand of Unseen Servant",
@@ -22976,6 +23628,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, unseen servant",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Ventriloquism",
   Key="Wand of Ventriloquism",
@@ -23012,6 +23665,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, ventriloquism",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Acid Arrow",
   Key="Wand of Acid Arrow",
@@ -23048,6 +23702,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, acid arrow",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Aid",
   Key="Wand of Aid",
@@ -23084,6 +23739,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, aid",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Align Weapon",
   Key="Wand of Align Weapon",
@@ -23120,6 +23776,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, align weapon",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Alter Self",
   Key="Wand of Alter Self",
@@ -23156,6 +23813,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, alter self",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Animal Messenger",
   Key="Wand of Animal Messenger",
@@ -23192,6 +23850,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, animal messenger",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Animal Trance",
   Key="Wand of Animal Trance",
@@ -23228,6 +23887,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, animal trance",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Arcane Lock",
   Key="Wand of Arcane Lock",
@@ -23264,6 +23924,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, arcane lock",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Augury",
   Key="Wand of Augury",
@@ -23300,6 +23961,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, augury",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Barkskin",
   Key="Wand of Barkskin",
@@ -23336,6 +23998,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, barkskin",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Bear's Endurance",
   Key="Wand of Bear's Endurance",
@@ -23372,6 +24035,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, bear's endurance",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Blindness/Deafness",
   Key="Wand of Blindness/Deafness",
@@ -23408,6 +24072,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, blindness/deafness",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Blur",
   Key="Wand of Blur",
@@ -23444,6 +24109,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, blur",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Bull's Strength",
   Key="Wand of Bull's Strength",
@@ -23480,6 +24146,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, bull's strength",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Calm Emotions",
   Key="Wand of Calm Emotions",
@@ -23516,6 +24183,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, calm emotions",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Cat's Grace",
   Key="Wand of Cat's Grace",
@@ -23552,6 +24220,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, cat's grace",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Chill Metal",
   Key="Wand of Chill Metal",
@@ -23588,6 +24257,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, chill metal",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Command Undead",
   Key="Wand of Command Undead",
@@ -23624,6 +24294,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, command undead",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Continual Flame",
   Key="Wand of Continual Flame",
@@ -23660,6 +24331,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, continual flame",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Cure Moderate Wounds",
   Key="Wand of Cure Moderate Wounds",
@@ -23696,6 +24368,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, cure moderate wounds",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Darkness",
   Key="Wand of Darkness",
@@ -23732,6 +24405,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, darkness",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Darkvision",
   Key="Wand of Darkvision",
@@ -23768,6 +24442,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, darkvision",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Daze Monster",
   Key="Wand of Daze Monster",
@@ -23804,6 +24479,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, daze monster",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Death Knell",
   Key="Wand of Death Knell",
@@ -23840,6 +24516,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, death knell",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Delay Poison",
   Key="Wand of Delay Poison",
@@ -23876,6 +24553,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, delay poison",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Detect Thoughts",
   Key="Wand of Detect Thoughts",
@@ -23912,6 +24590,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, detect thoughts",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Eagle's Splendor",
   Key="Wand of Eagle's Splendor",
@@ -23948,6 +24627,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, eagle's splendor",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Enthrall",
   Key="Wand of Enthrall",
@@ -23984,6 +24664,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, enthrall",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of False Life",
   Key="Wand of False Life",
@@ -24020,6 +24701,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, false life",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Find Traps",
   Key="Wand of Find Traps",
@@ -24056,6 +24738,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, find traps",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Flame Blade",
   Key="Wand of Flame Blade",
@@ -24092,6 +24775,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, flame blade",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Flaming Sphere",
   Key="Wand of Flaming Sphere",
@@ -24128,6 +24812,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, flaming sphere",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Fog Cloud",
   Key="Wand of Fog Cloud",
@@ -24164,6 +24849,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, fog cloud",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Fox's Cunning",
   Key="Wand of Fox's Cunning",
@@ -24200,6 +24886,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, fox's cunning",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Gentle Repose",
   Key="Wand of Gentle Repose",
@@ -24236,6 +24923,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, gentle repose",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Ghoul Touch",
   Key="Wand of Ghoul Touch",
@@ -24272,6 +24960,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, ghoul touch",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Glitterdust",
   Key="Wand of Glitterdust",
@@ -24308,6 +24997,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, glitterdust",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Heat Metal",
   Key="Wand of Heat Metal",
@@ -24344,6 +25034,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, heat metal",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Hideous Laughter",
   Key="Wand of Hideous Laughter",
@@ -24380,6 +25071,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, hideous laughter",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Hold Animal",
   Key="Wand of Hold Animal",
@@ -24416,6 +25108,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, hold animal",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Hold Person",
   Key="Wand of Hold Person",
@@ -24452,6 +25145,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, hold person",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Hypnotic Pattern",
   Key="Wand of Hypnotic Pattern",
@@ -24488,6 +25182,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, hypnotic pattern",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Inflict Moderate Wounds",
   Key="Wand of Inflict Moderate Wounds",
@@ -24524,6 +25219,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, inflict moderate wounds",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Invisibility",
   Key="Wand of Invisibility",
@@ -24560,6 +25256,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, invisibility",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Knock",
   Key="Wand of Knock",
@@ -24596,6 +25293,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, knock",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Levitate",
   Key="Wand of Levitate",
@@ -24632,6 +25330,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, levitate",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Locate Object",
   Key="Wand of Locate Object",
@@ -24668,6 +25367,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, locate object",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Make Whole",
   Key="Wand of Make Whole",
@@ -24704,6 +25404,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, make whole",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Minor Image",
   Key="Wand of Minor Image",
@@ -24740,6 +25441,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, minor image",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Mirror Image",
   Key="Wand of Mirror Image",
@@ -24776,6 +25478,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, mirror image",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Misdirection",
   Key="Wand of Misdirection",
@@ -24812,6 +25515,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, misdirection",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Obscure Object",
   Key="Wand of Obscure Object",
@@ -24848,6 +25552,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, obscure object",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Owl's Wisdom",
   Key="Wand of Owl's Wisdom",
@@ -24884,6 +25589,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, owl's wisdom",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Protection from Arrows",
   Key="Wand of Protection from Arrows",
@@ -24920,6 +25626,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, protection from arrows",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Pyrotechnics",
   Key="Wand of Pyrotechnics",
@@ -24956,6 +25663,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, pyrotechnics",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Rage",
   Key="Wand of Rage",
@@ -24992,6 +25700,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, rage",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Reduce Animal",
   Key="Wand of Reduce Animal",
@@ -25028,6 +25737,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, reduce animal",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Remove Paralysis",
   Key="Wand of Remove Paralysis",
@@ -25064,6 +25774,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, remove paralysis",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Resist Energy",
   Key="Wand of Resist Energy",
@@ -25100,6 +25811,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, resist energy",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Lesser Restoration",
   Key="Wand of Restoration (Lesser)",
@@ -25136,6 +25848,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, lesser restoration",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Rope Trick",
   Key="Wand of Rope Trick",
@@ -25172,6 +25885,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, rope trick",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Scare",
   Key="Wand of Scare",
@@ -25208,6 +25922,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, scare",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Scorching Ray",
   Key="Wand of Scorching Ray",
@@ -25244,6 +25959,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, scorching ray",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of See Invisibility",
   Key="Wand of See Invisibility",
@@ -25280,6 +25996,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, see invisibility",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Shatter",
   Key="Wand of Shatter",
@@ -25316,6 +26033,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, shatter",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Shield Other",
   Key="Wand of Shield Other",
@@ -25352,6 +26070,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, shield other",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Silence",
   Key="Wand of Silence",
@@ -25388,6 +26107,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, silence",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Sound Burst",
   Key="Wand of Sound Burst",
@@ -25424,6 +26144,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, sound burst",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Spectral Hand",
   Key="Wand of Spectral Hand",
@@ -25460,6 +26181,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, spectral hand",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Spider Climb",
   Key="Wand of Spider Climb",
@@ -25496,6 +26218,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, spider climb",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Spiritual Weapon",
   Key="Wand of Spiritual Weapon",
@@ -25532,6 +26255,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, spiritual weapon",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Status",
   Key="Wand of Status",
@@ -25568,6 +26292,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, status",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Summon Monster II",
   Key="Wand of Summon Monster II",
@@ -25604,6 +26329,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, summon monster II",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Summon Nature's Ally II",
   Key="Wand of Summon Nature's Ally II",
@@ -25640,6 +26366,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, summon nature's ally II",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Summon Swarm",
   Key="Wand of Summon Swarm",
@@ -25676,6 +26403,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, summon swarm",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Touch of Idiocy",
   Key="Wand of Touch of Idiocy",
@@ -25712,6 +26440,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, touch of idiocy",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Tree Shape",
   Key="Wand of Tree Shape",
@@ -25748,6 +26477,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, tree shape",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Undetectable Alignment",
   Key="Wand of Undetectable Alignment",
@@ -25784,6 +26514,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, undetectable alignment",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Warp Wood",
   Key="Wand of Warp Wood",
@@ -25820,6 +26551,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, warp wood",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Web",
   Key="Wand of Web",
@@ -25856,6 +26588,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, web",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Whispering Wind",
   Key="Wand of Whispering Wind",
@@ -25892,6 +26625,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, whispering wind",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Wood Shape",
   Key="Wand of Wood Shape",
@@ -25928,6 +26662,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, wood shape",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Zone of Truth",
   Key="Wand of Zone of Truth",
@@ -25964,6 +26699,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, zone of truth",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Animate Dead",
   Key="Wand of Animate Dead",
@@ -26000,6 +26736,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, animate dead",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Arcane Sight",
   Key="Wand of Arcane Sight",
@@ -26036,6 +26773,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, arcane sight",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Beast Shape I",
   Key="Wand of Beast Shape I",
@@ -26072,6 +26810,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, beast shape I",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Bestow Curse",
   Key="Wand of Bestow Curse",
@@ -26108,6 +26847,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, bestow curse",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Blink",
   Key="Wand of Blink",
@@ -26144,6 +26884,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, blink",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Call Lightning",
   Key="Wand of Call Lightning",
@@ -26180,6 +26921,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, call lightning",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Clairaudience/Clairvoyance",
   Key="Wand of Clairaudience/Clairvoyance",
@@ -26216,6 +26958,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, clairaudience/clairvoyance",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Contagion",
   Key="Wand of Contagion",
@@ -26252,6 +26995,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, contagion",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Create Food and Water",
   Key="Wand of Create Food and Water",
@@ -26288,6 +27032,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, create food and water",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Cure Serious Wounds",
   Key="Wand of Cure Serious Wounds",
@@ -26324,6 +27069,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, cure serious wounds",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Daylight",
   Key="Wand of Daylight",
@@ -26360,6 +27106,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, daylight",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Deep Slumber",
   Key="Wand of Deep Slumber",
@@ -26396,6 +27143,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, deep slumber",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Deeper Darkness",
   Key="Wand of Deeper Darkness",
@@ -26432,6 +27180,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, deeper darkness",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Dispel Magic",
   Key="Wand of Dispel Magic",
@@ -26468,6 +27217,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, dispel magic",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Displacement",
   Key="Wand of Displacement",
@@ -26504,6 +27254,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, displacement",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Dominate Animal",
   Key="Wand of Dominate Animal",
@@ -26540,6 +27291,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, dominate animal",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Explosive Runes",
   Key="Wand of Explosive Runes",
@@ -26576,6 +27328,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, explosive runes",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Fireball",
   Key="Wand of Fireball",
@@ -26612,6 +27365,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, fireball",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Flame Arrow",
   Key="Wand of Flame Arrow",
@@ -26648,6 +27402,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, flame arrow",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Fly",
   Key="Wand of Fly",
@@ -26684,6 +27439,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, fly",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Gaseous Form",
   Key="Wand of Gaseous Form",
@@ -26720,6 +27476,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, gaseous form",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Glibness",
   Key="Wand of Glibness",
@@ -26756,6 +27513,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, glibness",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Good Hope",
   Key="Wand of Good Hope",
@@ -26792,6 +27550,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, good hope",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Haste",
   Key="Wand of Haste",
@@ -26828,6 +27587,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, haste",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Heal Mount",
   Key="Wand of Heal Mount",
@@ -26864,6 +27624,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, heal mount",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Heroism",
   Key="Wand of Heroism",
@@ -26900,6 +27661,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, heroism",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Inflict Serious Wounds",
   Key="Wand of Inflict Serious Wounds",
@@ -26936,6 +27698,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, inflict serious wounds",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Invisibility Purge",
   Key="Wand of Invisibility Purge",
@@ -26972,6 +27735,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, invisibility purge",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Invisibility Sphere",
   Key="Wand of Invisibility Sphere",
@@ -27008,6 +27772,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, invisibility sphere",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Keen Edge",
   Key="Wand of Keen Edge",
@@ -27044,6 +27809,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, keen edge",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Lightning Bolt",
   Key="Wand of Lightning Bolt",
@@ -27080,6 +27846,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, lightning bolt",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Magic Circle Against Chaos",
   Key="Wand of Magic Circle Against Chaos",
@@ -27116,6 +27883,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, magic circle against chaos",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Magic Circle Against Evil",
   Key="Wand of Magic Circle Against Evil",
@@ -27152,6 +27920,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, magic circle against evil",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Magic Circle Against Good",
   Key="Wand of Magic Circle Against Good",
@@ -27188,6 +27957,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, magic circle against good",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Magic Circle Against Law",
   Key="Wand of Magic Circle Against Law",
@@ -27224,6 +27994,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, magic circle against law",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Greater Magic Fang",
   Key="Wand of Magic Fang (Greater)",
@@ -27260,6 +28031,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, greater magic fang",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Magic Vestment",
   Key="Wand of Magic Vestment",
@@ -27296,6 +28068,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, magic vestment",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Greater Magic Weapon",
   Key="Wand of Magic Weapon (Greater)",
@@ -27332,6 +28105,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, greater magic weapon",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Major Image",
   Key="Wand of Major Image",
@@ -27368,6 +28142,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, major image",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Meld into Stone",
   Key="Wand of Meld into Stone",
@@ -27404,6 +28179,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, meld into stone",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Nondetection",
   Key="Wand of Nondetection",
@@ -27440,6 +28216,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, nondetection",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Prayer",
   Key="Wand of Prayer",
@@ -27476,6 +28253,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, prayer",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Protection from Energy",
   Key="Wand of Protection from Energy",
@@ -27512,6 +28290,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, protection from energy",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Ray of Exhaustion",
   Key="Wand of Ray of Exhaustion",
@@ -27548,6 +28327,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, ray of exhaustion",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Remove Blindness/Deafness",
   Key="Wand of Remove Blindness/Deafness",
@@ -27584,6 +28364,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, remove blindness/deafness",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Remove Curse",
   Key="Wand of Remove Curse",
@@ -27620,6 +28401,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, remove curse",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Remove Disease",
   Key="Wand of Remove Disease",
@@ -27656,6 +28438,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, remove disease",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Sculpt Sound",
   Key="Wand of Sculpt Sound",
@@ -27692,6 +28475,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, sculpt sound",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Searing Light",
   Key="Wand of Searing Light",
@@ -27728,6 +28512,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, searing light",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Sleet Storm",
   Key="Wand of Sleet Storm",
@@ -27764,6 +28549,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, sleet storm",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Slow",
   Key="Wand of Slow",
@@ -27800,6 +28586,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, slow",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Snare",
   Key="Wand of Snare",
@@ -27836,6 +28623,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, snare",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Speak with Dead",
   Key="Wand of Speak with Dead",
@@ -27872,6 +28660,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, speak with dead",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Speak with Plants",
   Key="Wand of Speak with Plants",
@@ -27908,6 +28697,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, speak with plants",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Spike Growth",
   Key="Wand of Spike Growth",
@@ -27944,6 +28734,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, spike growth",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Stinking Cloud",
   Key="Wand of Stinking Cloud",
@@ -27980,6 +28771,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, stinking cloud",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Stone Shape",
   Key="Wand of Stone Shape",
@@ -28016,6 +28808,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, stone shape",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Suggestion",
   Key="Wand of Suggestion",
@@ -28052,6 +28845,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, suggestion",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Summon Monster III",
   Key="Wand of Summon Monster III",
@@ -28088,6 +28882,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, summon monster III",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Summon Nature's Ally III",
   Key="Wand of Summon Nature's Ally III",
@@ -28124,6 +28919,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, summon nature's ally III",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Tongues",
   Key="Wand of Tongues",
@@ -28160,6 +28956,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, tongues",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Vampiric Touch",
   Key="Wand of Vampiric Touch",
@@ -28196,6 +28993,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, vampiric touch",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Water Breathing",
   Key="Wand of Water Breathing",
@@ -28232,6 +29030,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, water breathing",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Water Walk",
   Key="Wand of Water Walk",
@@ -28268,6 +29067,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, water walk",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Wind Wall",
   Key="Wand of Wind Wall",
@@ -28304,6 +29104,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, wind wall",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Air Walk",
   Key="Wand of Air Walk",
@@ -28340,6 +29141,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, air walk",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Animal Growth",
   Key="Wand of Animal Growth",
@@ -28376,6 +29178,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, animal growth",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Antiplant Shell",
   Key="Wand of Antiplant Shell",
@@ -28412,6 +29215,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, antiplant shell",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Arcane Eye",
   Key="Wand of Arcane Eye",
@@ -28448,6 +29252,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, arcane eye",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Beast Shape II",
   Key="Wand of Beast Shape II",
@@ -28484,6 +29289,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, beast shape II",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Black Tentacles",
   Key="Wand of Black Tentacles",
@@ -28520,6 +29326,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, black tentacles",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Break Enchantment",
   Key="Wand of Break Enchantment",
@@ -28556,6 +29363,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, break enchantment",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Chaos Hammer",
   Key="Wand of Chaos Hammer",
@@ -28592,6 +29400,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, chaos hammer",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Charm Monster",
   Key="Wand of Charm Monster",
@@ -28628,6 +29437,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, charm monster",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Commune with Nature",
   Key="Wand of Commune with Nature",
@@ -28664,6 +29474,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, commune with nature",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Confusion",
   Key="Wand of Confusion",
@@ -28700,6 +29511,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, confusion",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Crushing Despair",
   Key="Wand of Crushing Despair",
@@ -28736,6 +29548,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, crushing despair",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Cure Critical Wounds",
   Key="Wand of Cure Critical Wounds",
@@ -28772,6 +29585,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, cure critical wounds",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Death Ward",
   Key="Wand of Death Ward",
@@ -28808,6 +29622,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, death ward",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Detect Scrying",
   Key="Wand of Detect Scrying",
@@ -28844,6 +29659,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, detect scrying",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Dimension Door",
   Key="Wand of Dimension Door",
@@ -28880,6 +29696,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, dimension door",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Dimensional Anchor",
   Key="Wand of Dimensional Anchor",
@@ -28916,6 +29733,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, dimensional anchor",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Discern Lies",
   Key="Wand of Discern Lies",
@@ -28952,6 +29770,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, discern lies",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Dismissal",
   Key="Wand of Dismissal",
@@ -28988,6 +29807,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, dismissal",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Dispel Chaos",
   Key="Wand of Dispel Chaos",
@@ -29024,6 +29844,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, dispel chaos",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Dispel Evil",
   Key="Wand of Dispel Evil",
@@ -29060,6 +29881,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, dispel evil",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Dispel Good",
   Key="Wand of Dispel Good",
@@ -29096,6 +29918,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, dispel good",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Dispel Law",
   Key="Wand of Dispel Law",
@@ -29132,6 +29955,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, dispel law",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Divination",
   Key="Wand of Divination",
@@ -29168,6 +29992,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, divination",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Divine Power",
   Key="Wand of Divine Power",
@@ -29204,6 +30029,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, divine power",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Dominate Person",
   Key="Wand of Dominate Person",
@@ -29240,6 +30066,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, dominate person",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Elemental Body I",
   Key="Wand of Elemental Body I",
@@ -29276,6 +30103,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, elemental body I",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Enervation",
   Key="Wand of Enervation",
@@ -29312,6 +30140,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, enervation",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Mass Enlarge Person",
   Key="Wand of Enlarge Person (Mass)",
@@ -29348,6 +30177,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, mass enlarge person",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Fear",
   Key="Wand of Fear",
@@ -29384,6 +30214,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, fear",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Fire Shield",
   Key="Wand of Fire Shield",
@@ -29420,6 +30251,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, fire shield",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Fire Trap",
   Key="Wand of Fire Trap",
@@ -29456,6 +30288,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, fire trap",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Flame Strike",
   Key="Wand of Flame Strike",
@@ -29492,6 +30325,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, flame strike",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Freedom of Movement",
   Key="Wand of Freedom of Movement",
@@ -29528,6 +30362,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, freedom of movement",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Lesser Geas",
   Key="Wand of Geas (Lesser)",
@@ -29564,6 +30399,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, lesser geas",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Globe of Lesser Invulnerability",
   Key="Wand of Globe of Invulnerability (Lesser)",
@@ -29600,6 +30436,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, globe of lesser invulnerability",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Hallucinatory Terrain",
   Key="Wand of Hallucinatory Terrain",
@@ -29636,6 +30473,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, hallucinatory terrain",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Hold Monster",
   Key="Wand of Hold Monster",
@@ -29672,6 +30510,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, hold monster",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Holy Smite",
   Key="Wand of Holy Smite",
@@ -29708,6 +30547,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, holy smite",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Holy Sword",
   Key="Wand of Holy Sword",
@@ -29744,6 +30584,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, holy sword",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Ice Storm",
   Key="Wand of Ice Storm",
@@ -29780,6 +30621,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, ice storm",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Illusory Wall",
   Key="Wand of Illusory Wall",
@@ -29816,6 +30658,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, illusory wall",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Imbue with Spell Ability",
   Key="Wand of Imbue with Spell Ability",
@@ -29852,6 +30695,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, imbue with spell ability",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Inflict Critical Wounds",
   Key="Wand of Inflict Critical Wounds",
@@ -29888,6 +30732,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, inflict critical wounds",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Greater Invisibility",
   Key="Wand of Invisibility (Greater)",
@@ -29924,6 +30769,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, greater invisibility",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Legend Lore",
   Key="Wand of Legend Lore",
@@ -29960,6 +30806,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, legend lore",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Locate Creature",
   Key="Wand of Locate Creature",
@@ -29996,6 +30843,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, locate creature",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Modify Memory",
   Key="Wand of Modify Memory",
@@ -30032,6 +30880,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, modify memory",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Neutralize Poison",
   Key="Wand of Neutralize Poison",
@@ -30068,6 +30917,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, neutralize poison",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Order's Wrath",
   Key="Wand of Order's Wrath",
@@ -30104,6 +30954,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, order's wrath",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Phantasmal Killer",
   Key="Wand of Phantasmal Killer",
@@ -30140,6 +30991,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, phantasmal killer",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Poison",
   Key="Wand of Poison",
@@ -30176,6 +31028,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, poison",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Mass Reduce Person",
   Key="Wand of Reduce Person (Mass)",
@@ -30212,6 +31065,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, mass reduce person",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Reincarnate",
   Key="Wand of Reincarnate",
@@ -30248,6 +31102,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, reincarnate",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Restoration",
   Key="Wand of Restoration",
@@ -30284,6 +31139,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, restoration",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Rusting Grasp",
   Key="Wand of Rusting Grasp",
@@ -30320,6 +31176,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, rusting grasp",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Scrying",
   Key="Wand of Scrying",
@@ -30356,6 +31213,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, scrying",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Sending",
   Key="Wand of Sending",
@@ -30392,6 +31250,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, sending",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Shout",
   Key="Wand of Shout",
@@ -30428,6 +31287,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, shout",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Solid Fog",
   Key="Wand of Solid Fog",
@@ -30464,6 +31324,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, solid fog",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Spell Immunity",
   Key="Wand of Spell Immunity",
@@ -30500,6 +31361,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, spell immunity",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Spike Stones",
   Key="Wand of Spike Stones",
@@ -30536,6 +31398,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, spike stones",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Summon Monster IV",
   Key="Wand of Summon Monster IV",
@@ -30572,6 +31435,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, summon monster IV",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Summon Nature's Ally IV",
   Key="Wand of Summon Nature's Ally IV",
@@ -30608,6 +31472,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, summon nature's ally IV",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Unholy Blight",
   Key="Wand of Unholy Blight",
@@ -30644,6 +31509,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, unholy blight",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Wall of Fire",
   Key="Wand of Wall of Fire",
@@ -30680,6 +31546,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, wall of fire",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Wall of Ice",
   Key="Wand of Wall of Ice",
@@ -30716,6 +31583,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, wall of ice",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Zone of Silence",
   Key="Wand of Zone of Silence",
@@ -30752,6 +31620,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, zone of silence",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Animate Rope",
   Key="Wand of Animate Rope",
@@ -30788,6 +31657,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, animate rope",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Detect Animals or Plants",
   Key="Wand of Detect Animals or Plants",
@@ -30824,6 +31694,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, detect animals or plants",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Magic Aura",
   Key="Wand of Magic Aura",
@@ -30860,6 +31731,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, magic aura",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Consecrate",
   Key="Wand of Consecrate",
@@ -30896,6 +31768,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, consecrate",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Desecrate",
   Key="Wand of Desecrate",
@@ -30932,6 +31805,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, desecrate",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Gust of Wind",
   Key="Wand of Gust of Wind",
@@ -30968,6 +31842,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, gust of wind",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Magic Mouth",
   Key="Wand of Magic Mouth",
@@ -31004,6 +31879,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, magic mouth",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Phantom Trap",
   Key="Wand of Phantom Trap",
@@ -31040,6 +31916,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, phantom trap",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Soften Earth and Stone",
   Key="Wand of Soften Earth and Stone",
@@ -31076,6 +31953,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, soften earth and stone",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Diminish Plants",
   Key="Wand of Diminish Plants",
@@ -31112,6 +31990,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, diminish plants",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Glyph of Warding",
   Key="Wand of Glyph of Warding",
@@ -31148,6 +32027,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, glyph of warding",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Halt Undead",
   Key="Wand of Halt Undead",
@@ -31184,6 +32064,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, halt undead",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Helping Hand",
   Key="Wand of Helping Hand",
@@ -31220,6 +32101,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, helping hand",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Illusory Script",
   Key="Wand of Illusory Script",
@@ -31256,6 +32138,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, illusory script",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Phantom Steed",
   Key="Wand of Phantom Steed",
@@ -31292,6 +32175,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, phantom steed",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Plant Growth",
   Key="Wand of Plant Growth",
@@ -31328,6 +32212,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, plant growth",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Quench",
   Key="Wand of Quench",
@@ -31364,6 +32249,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, quench",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Secret Page",
   Key="Wand of Secret Page",
@@ -31400,6 +32286,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, secret page",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Sepia Snake Sigil",
   Key="Wand of Sepia Snake Sigil",
@@ -31436,6 +32323,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, sepia snake sigil",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Shrink Item",
   Key="Wand of Shrink Item",
@@ -31472,6 +32360,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, shrink item",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Tiny Hut",
   Key="Wand of Tiny Hut",
@@ -31508,6 +32397,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, tiny hut",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Blight",
   Key="Wand of Blight",
@@ -31544,6 +32434,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, blight",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Command Plants",
   Key="Wand of Command Plants",
@@ -31580,6 +32471,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, command plants",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Control Water",
   Key="Wand of Control Water",
@@ -31616,6 +32508,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, control water",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Giant Vermin",
   Key="Wand of Giant Vermin",
@@ -31652,6 +32545,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, giant vermin",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Minor Creation",
   Key="Wand of Minor Creation",
@@ -31688,6 +32582,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, minor creation",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Mnemonic Enhancer",
   Key="Wand of Mnemonic Enhancer",
@@ -31724,6 +32619,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, mnemonic enhancer",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Lesser Planar Ally",
   Key="Wand of Planar Ally (Lesser)",
@@ -31760,6 +32656,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, lesser planar ally",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Rainbow Pattern",
   Key="Wand of Rainbow Pattern",
@@ -31796,6 +32693,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, rainbow pattern",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Repel Vermin",
   Key="Wand of Repel Vermin",
@@ -31832,6 +32730,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, repel vermin",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Resilient Sphere",
   Key="Wand of Resilient Sphere",
@@ -31868,6 +32767,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, resilient sphere",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Secure Shelter",
   Key="Wand of Secure Shelter",
@@ -31904,6 +32804,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, secure shelter",
   },
 })
+
 CopyEquipment("Wand", {
   Name="Wand of Shadow Conjuration",
   Key="Wand of Shadow Conjuration",
@@ -31940,6 +32841,7 @@ CopyEquipment("Wand", {
     ['Construction Requirements']="Craft Wand, shadow conjuration",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Acid Splash",
   Key="Scroll of Acid Splash",
@@ -31978,6 +32880,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, acid splash",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Arcane Mark",
   Key="Scroll of Arcane Mark",
@@ -32016,6 +32919,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, arcane mark",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Bleed (Arcane)",
   Key="Scroll of Bleed (Arcane)",
@@ -32054,6 +32958,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, bleed",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dancing Lights",
   Key="Scroll of Dancing Lights",
@@ -32092,6 +32997,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dancing lights",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Daze",
   Key="Scroll of Daze",
@@ -32130,6 +33036,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, daze",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Detect Magic (Arcane)",
   Key="Scroll of Detect Magic (Arcane)",
@@ -32168,6 +33075,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, detect magic",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Detect Poison (Arcane)",
   Key="Scroll of Detect Poison (Arcane)",
@@ -32206,6 +33114,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, detect poison",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Disrupt Undead",
   Key="Scroll of Disrupt Undead",
@@ -32244,6 +33153,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, disrupt undead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Flare",
   Key="Scroll of Flare",
@@ -32282,6 +33192,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, flare",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Ghost Sound",
   Key="Scroll of Ghost Sound",
@@ -32320,6 +33231,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, ghost sound",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Light (Arcane)",
   Key="Scroll of Light (Arcane)",
@@ -32358,6 +33270,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, light",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mage Hand",
   Key="Scroll of Mage Hand",
@@ -32396,6 +33309,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mage hand",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mending (Arcane)",
   Key="Scroll of Mending (Arcane)",
@@ -32434,6 +33348,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mending",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Message",
   Key="Scroll of Message",
@@ -32472,6 +33387,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, message",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Open/Close",
   Key="Scroll of Open/Close",
@@ -32510,6 +33426,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, open/close",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Prestidigitation",
   Key="Scroll of Prestidigitation",
@@ -32548,6 +33465,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, prestidigitation",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Ray of Frost",
   Key="Scroll of Ray of Frost",
@@ -32586,6 +33504,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, ray of frost",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Read Magic (Arcane)",
   Key="Scroll of Read Magic (Arcane)",
@@ -32624,6 +33543,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, read magic",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Resistance (Arcane)",
   Key="Scroll of Resistance (Arcane)",
@@ -32662,6 +33582,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, resistance",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Touch of Fatigue",
   Key="Scroll of Touch of Fatigue",
@@ -32700,6 +33621,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, touch of fatigue",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Alarm",
   Key="Scroll of Alarm",
@@ -32738,6 +33660,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, alarm",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Animate Rope (Arcane)",
   Key="Scroll of Animate Rope (Arcane)",
@@ -32776,6 +33699,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, animate rope",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Burning Hands",
   Key="Scroll of Burning Hands",
@@ -32814,6 +33738,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, burning hands",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Cause Fear (Arcane)",
   Key="Scroll of Cause Fear (Arcane)",
@@ -32852,6 +33777,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, cause fear",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Charm Person",
   Key="Scroll of Charm Person",
@@ -32890,6 +33816,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, charm person",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Chill Touch",
   Key="Scroll of Chill Touch",
@@ -32928,6 +33855,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, chill touch",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Color Spray",
   Key="Scroll of Color Spray",
@@ -32966,6 +33894,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, color spray",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Comprehend Languages (Arcane)",
   Key="Scroll of Comprehend Languages (Arcane)",
@@ -33004,6 +33933,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, comprehend languages",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Detect Secret Doors",
   Key="Scroll of Detect Secret Doors",
@@ -33042,6 +33972,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, detect secret doors",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Detect Undead (Arcane)",
   Key="Scroll of Detect Undead (Arcane)",
@@ -33080,6 +34011,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, detect undead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Disguise Self",
   Key="Scroll of Disguise Self",
@@ -33118,6 +34050,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, disguise self",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Endure Elements (Arcane)",
   Key="Scroll of Endure Elements (Arcane)",
@@ -33156,6 +34089,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, endure elements",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Enlarge Person",
   Key="Scroll of Enlarge Person",
@@ -33194,6 +34128,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, enlarge person",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Erase",
   Key="Scroll of Erase",
@@ -33232,6 +34167,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, erase",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Expeditious Retreat",
   Key="Scroll of Expeditious Retreat",
@@ -33270,6 +34206,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, expeditious retreat",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Feather Fall",
   Key="Scroll of Feather Fall",
@@ -33308,6 +34245,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, feather fall",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Floating Disk",
   Key="Scroll of Floating Disk",
@@ -33346,6 +34284,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, floating disk",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Grease",
   Key="Scroll of Grease",
@@ -33384,6 +34323,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, grease",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Hold Portal",
   Key="Scroll of Hold Portal",
@@ -33422,6 +34362,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, hold portal",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Hypnotism",
   Key="Scroll of Hypnotism",
@@ -33460,6 +34401,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, hypnotism",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Identify",
   Key="Scroll of Identify",
@@ -33498,6 +34440,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, identify",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Jump",
   Key="Scroll of Jump",
@@ -33536,6 +34479,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, jump",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mage Armor",
   Key="Scroll of Mage Armor",
@@ -33574,6 +34518,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mage armor",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Aura",
   Key="Scroll of Magic Aura",
@@ -33612,6 +34557,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic aura",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Missile",
   Key="Scroll of Magic Missile",
@@ -33650,6 +34596,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic missile",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Weapon (Arcane)",
   Key="Scroll of Magic Weapon (Arcane)",
@@ -33688,6 +34635,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic weapon",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mount",
   Key="Scroll of Mount",
@@ -33726,6 +34674,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mount",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Obscuring Mist (Arcane)",
   Key="Scroll of Obscuring Mist (Arcane)",
@@ -33764,6 +34713,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, obscuring mist",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Protection from Chaos (Arcane)",
   Key="Scroll of Protection from Chaos (Arcane)",
@@ -33802,6 +34752,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, protection from chaos",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Protection from Evil (Arcane)",
   Key="Scroll of Protection from Evil (Arcane)",
@@ -33840,6 +34791,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, protection from evil",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Protection from Good (Arcane)",
   Key="Scroll of Protection from Good (Arcane)",
@@ -33878,6 +34830,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, protection from good",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Protection from Law (Arcane)",
   Key="Scroll of Protection from Law (Arcane)",
@@ -33916,6 +34869,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, protection from law",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Ray of Enfeeblement",
   Key="Scroll of Ray of Enfeeblement",
@@ -33954,6 +34908,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, ray of enfeeblement",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Reduce Person",
   Key="Scroll of Reduce Person",
@@ -33992,6 +34947,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, reduce person",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Shield",
   Key="Scroll of Shield",
@@ -34030,6 +34986,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, shield",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Shocking Grasp",
   Key="Scroll of Shocking Grasp",
@@ -34068,6 +35025,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, shocking grasp",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Silent Image",
   Key="Scroll of Silent Image",
@@ -34106,6 +35064,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, silent image",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Sleep",
   Key="Scroll of Sleep",
@@ -34144,6 +35103,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, sleep",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster I (Arcane)",
   Key="Scroll of Summon Monster I (Arcane)",
@@ -34182,6 +35142,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster I",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of True Strike",
   Key="Scroll of True Strike",
@@ -34220,6 +35181,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, true strike",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Unseen Servant",
   Key="Scroll of Unseen Servant",
@@ -34258,6 +35220,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, unseen servant",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Ventriloquism",
   Key="Scroll of Ventriloquism",
@@ -34296,6 +35259,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, ventriloquism",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Acid Arrow",
   Key="Scroll of Acid Arrow",
@@ -34334,6 +35298,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, acid arrow",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Alter Self",
   Key="Scroll of Alter Self",
@@ -34372,6 +35337,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, alter self",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Arcane Lock",
   Key="Scroll of Arcane Lock",
@@ -34411,6 +35377,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, arcane lock",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Bear's Endurance (Arcane)",
   Key="Scroll of Bear's Endurance (Arcane)",
@@ -34449,6 +35416,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, bear's endurance",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Blindness/Deafness (Arcane)",
   Key="Scroll of Blindness/Deafness (Arcane)",
@@ -34487,6 +35455,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, blindness/deafness",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Blur",
   Key="Scroll of Blur",
@@ -34525,6 +35494,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, blur",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Bull's Strength (Arcane)",
   Key="Scroll of Bull's Strength (Arcane)",
@@ -34563,6 +35533,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, bull's strength",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Cat's Grace (Arcane)",
   Key="Scroll of Cat's Grace (Arcane)",
@@ -34601,6 +35572,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, cat's grace",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Command Undead",
   Key="Scroll of Command Undead",
@@ -34639,6 +35611,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, command undead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Continual Flame (Arcane)",
   Key="Scroll of Continual Flame (Arcane)",
@@ -34678,6 +35651,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, continual flame",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Darkness (Arcane)",
   Key="Scroll of Darkness (Arcane)",
@@ -34716,6 +35690,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, darkness",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Darkvision",
   Key="Scroll of Darkvision",
@@ -34754,6 +35729,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, darkvision",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Daze Monster",
   Key="Scroll of Daze Monster",
@@ -34792,6 +35768,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, daze monster",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Detect Thoughts",
   Key="Scroll of Detect Thoughts",
@@ -34830,6 +35807,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, detect thoughts",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Eagle's Splendor (Arcane)",
   Key="Scroll of Eagle's Splendor (Arcane)",
@@ -34868,6 +35846,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, eagle's splendor",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of False Life",
   Key="Scroll of False Life",
@@ -34906,6 +35885,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, false life",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Flaming Sphere",
   Key="Scroll of Flaming Sphere",
@@ -34944,6 +35924,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, flaming sphere",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Fog Cloud",
   Key="Scroll of Fog Cloud",
@@ -34982,6 +35963,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, fog cloud",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Fox's Cunning (Arcane)",
   Key="Scroll of Fox's Cunning (Arcane)",
@@ -35020,6 +36002,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, fox's cunning",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Ghoul Touch",
   Key="Scroll of Ghoul Touch",
@@ -35058,6 +36041,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, ghoul touch",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Glitterdust",
   Key="Scroll of Glitterdust",
@@ -35096,6 +36080,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, glitterdust",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Gust of Wind (Arcane)",
   Key="Scroll of Gust of Wind (Arcane)",
@@ -35134,6 +36119,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, gust of wind",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Hideous Laughter",
   Key="Scroll of Hideous Laughter",
@@ -35172,6 +36158,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, hideous laughter",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Hypnotic Pattern",
   Key="Scroll of Hypnotic Pattern",
@@ -35210,6 +36197,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, hypnotic pattern",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Invisibility",
   Key="Scroll of Invisibility",
@@ -35248,6 +36236,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, invisibility",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Knock",
   Key="Scroll of Knock",
@@ -35286,6 +36275,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, knock",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Levitate",
   Key="Scroll of Levitate",
@@ -35324,6 +36314,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, levitate",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Locate Object (Arcane)",
   Key="Scroll of Locate Object (Arcane)",
@@ -35362,6 +36353,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, locate object",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Mouth (Arcane)",
   Key="Scroll of Magic Mouth (Arcane)",
@@ -35400,6 +36392,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic mouth",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Make Whole (Arcane)",
   Key="Scroll of Make Whole (Arcane)",
@@ -35438,6 +36431,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, make whole",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Minor Image",
   Key="Scroll of Minor Image",
@@ -35476,6 +36470,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, minor image",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mirror Image",
   Key="Scroll of Mirror Image",
@@ -35514,6 +36509,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mirror image",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Misdirection",
   Key="Scroll of Misdirection",
@@ -35552,6 +36548,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, misdirection",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Obscure Object (Arcane)",
   Key="Scroll of Obscure Object (Arcane)",
@@ -35590,6 +36587,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, obscure object",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Owl's Wisdom (Arcane)",
   Key="Scroll of Owl's Wisdom (Arcane)",
@@ -35628,6 +36626,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, owl's wisdom",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Phantom Trap",
   Key="Scroll of Phantom Trap",
@@ -35666,6 +36665,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, phantom trap",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Protection from Arrows",
   Key="Scroll of Protection from Arrows",
@@ -35704,6 +36704,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, protection from arrows",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Pyrotechnics",
   Key="Scroll of Pyrotechnics",
@@ -35742,6 +36743,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, pyrotechnics",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Resist Energy (Arcane)",
   Key="Scroll of Resist Energy (Arcane)",
@@ -35780,6 +36782,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, resist energy",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Rope Trick",
   Key="Scroll of Rope Trick",
@@ -35818,6 +36821,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, rope trick",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Scare",
   Key="Scroll of Scare",
@@ -35856,6 +36860,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, scare",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Scorching Ray",
   Key="Scroll of Scorching Ray",
@@ -35894,6 +36899,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, scorching ray",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of See Invisibility",
   Key="Scroll of See Invisibility",
@@ -35932,6 +36938,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, see invisibility",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Shatter (Arcane)",
   Key="Scroll of Shatter (Arcane)",
@@ -35970,6 +36977,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, shatter",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Spectral Hand",
   Key="Scroll of Spectral Hand",
@@ -36008,6 +37016,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, spectral hand",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Spider Climb",
   Key="Scroll of Spider Climb",
@@ -36046,6 +37055,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, spider climb",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster II (Arcane)",
   Key="Scroll of Summon Monster II (Arcane)",
@@ -36084,6 +37094,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster II",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Swarm",
   Key="Scroll of Summon Swarm",
@@ -36122,6 +37133,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon swarm",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Touch of Idiocy",
   Key="Scroll of Touch of Idiocy",
@@ -36160,6 +37172,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, touch of idiocy",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Web",
   Key="Scroll of Web",
@@ -36198,6 +37211,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, web",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Whispering Wind",
   Key="Scroll of Whispering Wind",
@@ -36236,6 +37250,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, whispering wind",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Arcane Sight",
   Key="Scroll of Arcane Sight",
@@ -36274,6 +37289,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, arcane sight",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Beast Shape I",
   Key="Scroll of Beast Shape I",
@@ -36312,6 +37328,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, beast shape I",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Blink",
   Key="Scroll of Blink",
@@ -36350,6 +37367,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, blink",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Clairaudience/Clairvoyance",
   Key="Scroll of Clairaudience/Clairvoyance",
@@ -36388,6 +37406,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, clairaudience/clairvoyance",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Daylight (Arcane)",
   Key="Scroll of Daylight (Arcane)",
@@ -36426,6 +37445,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, daylight",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Deep Slumber",
   Key="Scroll of Deep Slumber",
@@ -36464,6 +37484,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, deep slumber",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dispel Magic (Arcane)",
   Key="Scroll of Dispel Magic (Arcane)",
@@ -36502,6 +37523,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dispel magic",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Displacement",
   Key="Scroll of Displacement",
@@ -36540,6 +37562,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, displacement",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Explosive Runes",
   Key="Scroll of Explosive Runes",
@@ -36578,6 +37601,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, explosive runes",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Fireball",
   Key="Scroll of Fireball",
@@ -36616,6 +37640,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, fireball",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Flame Arrow",
   Key="Scroll of Flame Arrow",
@@ -36654,6 +37679,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, flame arrow",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Fly",
   Key="Scroll of Fly",
@@ -36692,6 +37718,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, fly",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Gaseous Form",
   Key="Scroll of Gaseous Form",
@@ -36730,6 +37757,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, gaseous form",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Gentle Repose (Arcane)",
   Key="Scroll of Gentle Repose (Arcane)",
@@ -36768,6 +37796,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, gentle repose",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Halt Undead",
   Key="Scroll of Halt Undead",
@@ -36806,6 +37835,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, halt undead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Haste",
   Key="Scroll of Haste",
@@ -36844,6 +37874,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, haste",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Heroism",
   Key="Scroll of Heroism",
@@ -36882,6 +37913,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, heroism",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Hold Person (Arcane)",
   Key="Scroll of Hold Person (Arcane)",
@@ -36920,6 +37952,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, hold person",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Illusory Script",
   Key="Scroll of Illusory Script",
@@ -36958,6 +37991,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, illusory script",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Invisibility Sphere",
   Key="Scroll of Invisibility Sphere",
@@ -36996,6 +38030,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, invisibility sphere",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Keen Edge",
   Key="Scroll of Keen Edge",
@@ -37034,6 +38069,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, keen edge",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Lightning Bolt",
   Key="Scroll of Lightning Bolt",
@@ -37072,6 +38108,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, lightning bolt",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Circle Against Chaos (Arcane)",
   Key="Scroll of Magic Circle Against Chaos (Arcane)",
@@ -37110,6 +38147,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic circle against chaos",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Circle Against Evil (Arcane)",
   Key="Scroll of Magic Circle Against Evil (Arcane)",
@@ -37148,6 +38186,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic circle against evil",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Circle Against Good (Arcane)",
   Key="Scroll of Magic Circle Against Good (Arcane)",
@@ -37186,6 +38225,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic circle against good",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Circle Against Law (Arcane)",
   Key="Scroll of Magic Circle Against Law (Arcane)",
@@ -37224,6 +38264,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic circle against law",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Magic Weapon (Arcane)",
   Key="Scroll of Magic Weapon (Greater) (Arcane)",
@@ -37262,6 +38303,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater magic weapon",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Major Image",
   Key="Scroll of Major Image",
@@ -37300,6 +38342,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, major image",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Nondetection",
   Key="Scroll of Nondetection",
@@ -37339,6 +38382,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, nondetection",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Phantom Steed",
   Key="Scroll of Phantom Steed",
@@ -37378,6 +38422,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, phantom steed",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Protection from Energy (Arcane)",
   Key="Scroll of Protection from Energy (Arcane)",
@@ -37416,6 +38461,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, protection from energy",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Rage",
   Key="Scroll of Rage",
@@ -37454,6 +38500,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, rage",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Ray of Exhaustion",
   Key="Scroll of Ray of Exhaustion",
@@ -37492,6 +38539,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, ray of exhaustion",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Secret Page (Arcane)",
   Key="Scroll of Secret Page (Arcane)",
@@ -37530,6 +38578,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, secret page",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Sepia Snake Sigil",
   Key="Scroll of Sepia Snake Sigil",
@@ -37568,6 +38617,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, sepia snake sigil",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Shrink Item",
   Key="Scroll of Shrink Item",
@@ -37606,6 +38656,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, shrink item",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Sleet Storm",
   Key="Scroll of Sleet Storm",
@@ -37644,6 +38695,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, sleet storm",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Slow",
   Key="Scroll of Slow",
@@ -37682,6 +38734,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, slow",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Stinking Cloud",
   Key="Scroll of Stinking Cloud",
@@ -37720,6 +38773,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, stinking cloud",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Suggestion",
   Key="Scroll of Suggestion",
@@ -37758,6 +38812,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, suggestion",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster III (Arcane)",
   Key="Scroll of Summon Monster III (Arcane)",
@@ -37796,6 +38851,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster III",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Tiny Hut",
   Key="Scroll of Tiny Hut",
@@ -37834,6 +38890,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, tiny hut",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Tongues (Arcane)",
   Key="Scroll of Tongues (Arcane)",
@@ -37872,6 +38929,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, tongues",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Vampiric Touch",
   Key="Scroll of Vampiric Touch",
@@ -37910,6 +38968,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, vampiric touch",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Water Breathing (Arcane)",
   Key="Scroll of Water Breathing (Arcane)",
@@ -37948,6 +39007,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, water breathing",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Wind Wall (Arcane)",
   Key="Scroll of Wind Wall (Arcane)",
@@ -37986,6 +39046,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, wind wall",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Animate Dead (Arcane)",
   Key="Scroll of Animate Dead (Arcane)",
@@ -38024,6 +39085,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, animate dead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Arcane Eye",
   Key="Scroll of Arcane Eye",
@@ -38062,6 +39124,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, arcane eye",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Beast Shape II",
   Key="Scroll of Beast Shape II",
@@ -38100,6 +39163,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, beast shape II",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Bestow Curse (Arcane)",
   Key="Scroll of Bestow Curse (Arcane)",
@@ -38138,6 +39202,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, bestow curse",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Black Tentacles",
   Key="Scroll of Black Tentacles",
@@ -38176,6 +39241,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, black tentacles",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Charm Monster",
   Key="Scroll of Charm Monster",
@@ -38214,6 +39280,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, charm monster",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Confusion",
   Key="Scroll of Confusion",
@@ -38252,6 +39319,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, confusion",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Contagion (Arcane)",
   Key="Scroll of Contagion (Arcane)",
@@ -38290,6 +39358,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, contagion",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Crushing Despair",
   Key="Scroll of Crushing Despair",
@@ -38328,6 +39397,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, crushing despair",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Detect Scrying",
   Key="Scroll of Detect Scrying",
@@ -38366,6 +39436,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, detect scrying",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dimension Door",
   Key="Scroll of Dimension Door",
@@ -38404,6 +39475,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dimension door",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dimensional Anchor (Arcane)",
   Key="Scroll of Dimensional Anchor (Arcane)",
@@ -38442,6 +39514,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dimensional anchor",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Elemental Body I",
   Key="Scroll of Elemental Body I",
@@ -38480,6 +39553,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, elemental body I",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Enervation",
   Key="Scroll of Enervation",
@@ -38518,6 +39592,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, enervation",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Enlarge Person",
   Key="Scroll of Enlarge Person (Mass)",
@@ -38556,6 +39631,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass enlarge person",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Fear",
   Key="Scroll of Fear",
@@ -38594,6 +39670,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, fear",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Fire Shield",
   Key="Scroll of Fire Shield",
@@ -38632,6 +39709,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, fire shield",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Fire Trap",
   Key="Scroll of Fire Trap",
@@ -38671,6 +39749,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, fire trap",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Lesser Geas",
   Key="Scroll of Geas (Lesser)",
@@ -38709,6 +39788,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, lesser geas",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Globe of Lesser Invulnerability",
   Key="Scroll of Globe of Invulnerability (Lesser)",
@@ -38747,6 +39827,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, globe of lesser invulnerability",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Hallucinatory Terrain",
   Key="Scroll of Hallucinatory Terrain",
@@ -38785,6 +39866,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, hallucinatory terrain",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Ice Storm",
   Key="Scroll of Ice Storm",
@@ -38823,6 +39905,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, ice storm",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Illusory Wall",
   Key="Scroll of Illusory Wall",
@@ -38861,6 +39944,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, illusory wall",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Invisibility",
   Key="Scroll of Invisibility (Greater)",
@@ -38899,6 +39983,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater invisibility",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Locate Creature",
   Key="Scroll of Locate Creature",
@@ -38937,6 +40022,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, locate creature",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Minor Creation (Arcane)",
   Key="Scroll of Minor Creation (Arcane)",
@@ -38975,6 +40061,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, minor creation",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mnemonic Enhancer",
   Key="Scroll of Mnemonic Enhancer",
@@ -39013,6 +40100,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mnemonic enhancer",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Phantasmal Killer",
   Key="Scroll of Phantasmal Killer",
@@ -39051,6 +40139,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, phantasmal killer",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Rainbow Pattern",
   Key="Scroll of Rainbow Pattern",
@@ -39089,6 +40178,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, rainbow pattern",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Reduce Person",
   Key="Scroll of Reduce Person (Mass)",
@@ -39127,6 +40217,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass reduce person",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Remove Curse (Arcane)",
   Key="Scroll of Remove Curse (Arcane)",
@@ -39165,6 +40256,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, remove curse",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Resilient Sphere",
   Key="Scroll of Resilient Sphere",
@@ -39203,6 +40295,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, resilient sphere",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Scrying (Arcane)",
   Key="Scroll of Scrying (Arcane)",
@@ -39242,6 +40335,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, scrying",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Secure Shelter",
   Key="Scroll of Secure Shelter",
@@ -39280,6 +40374,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, secure shelter",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Shadow Conjuration (Arcane)",
   Key="Scroll of Shadow Conjuration (Arcane)",
@@ -39318,6 +40413,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, shadow conjuration",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Shout",
   Key="Scroll of Shout",
@@ -39356,6 +40452,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, shout",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Solid Fog",
   Key="Scroll of Solid Fog",
@@ -39394,6 +40491,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, solid fog",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Stone Shape (Arcane)",
   Key="Scroll of Stone Shape (Arcane)",
@@ -39432,6 +40530,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, stone shape",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Stoneskin",
   Key="Scroll of Stoneskin",
@@ -39471,6 +40570,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, stoneskin",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster IV (Arcane)",
   Key="Scroll of Summon Monster IV (Arcane)",
@@ -39509,6 +40609,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster IV",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Wall of Fire",
   Key="Scroll of Wall of Fire",
@@ -39547,6 +40648,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, wall of fire",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Wall of Ice",
   Key="Scroll of Wall of Ice",
@@ -39585,6 +40687,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, wall of ice",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Animal Growth",
   Key="Scroll of Animal Growth",
@@ -39623,6 +40726,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, animal growth",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Baleful Polymorph",
   Key="Scroll of Baleful Polymorph",
@@ -39661,6 +40765,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, baleful polymorph",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Beast Shape III",
   Key="Scroll of Beast Shape III",
@@ -39699,6 +40804,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, beast shape III",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Blight (Arcane)",
   Key="Scroll of Blight (Arcane)",
@@ -39737,6 +40843,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, blight",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Break Enchantment (Arcane)",
   Key="Scroll of Break Enchantment (Arcane)",
@@ -39775,6 +40882,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, break enchantment",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Cloudkill",
   Key="Scroll of Cloudkill",
@@ -39813,6 +40921,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, cloudkill",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Cone of Cold",
   Key="Scroll of Cone of Cold",
@@ -39851,6 +40960,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, cone of cold",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Contact Other Plane",
   Key="Scroll of Contact Other Plane",
@@ -39889,6 +40999,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, contact other plane",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dismissal (Arcane)",
   Key="Scroll of Dismissal (Arcane)",
@@ -39927,6 +41038,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dismissal",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dominate Person",
   Key="Scroll of Dominate Person",
@@ -39965,6 +41077,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dominate person",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dream",
   Key="Scroll of Dream",
@@ -40003,6 +41116,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dream",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Elemental Body II",
   Key="Scroll of Elemental Body II",
@@ -40041,6 +41155,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, elemental body II",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Fabricate (Arcane)",
   Key="Scroll of Fabricate (Arcane)",
@@ -40079,6 +41194,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, fabricate",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of False Vision",
   Key="Scroll of False Vision",
@@ -40118,6 +41234,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, false vision",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Feeblemind",
   Key="Scroll of Feeblemind",
@@ -40156,6 +41273,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, feeblemind",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Hold Monster",
   Key="Scroll of Hold Monster",
@@ -40194,6 +41312,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, hold monster",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Interposing Hand",
   Key="Scroll of Interposing Hand",
@@ -40232,6 +41351,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, interposing hand",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mage's Faithful Hound",
   Key="Scroll of Mage's Faithful Hound",
@@ -40270,6 +41390,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mage's faithful hound",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mage's Private Sanctum",
   Key="Scroll of Mage's Private Sanctum",
@@ -40308,6 +41429,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mage's private sanctum",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Jar",
   Key="Scroll of Magic Jar",
@@ -40346,6 +41468,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic jar",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Major Creation (Arcane)",
   Key="Scroll of Major Creation (Arcane)",
@@ -40384,6 +41507,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, major creation",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mind Fog",
   Key="Scroll of Mind Fog",
@@ -40422,6 +41546,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mind fog",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mirage Arcana",
   Key="Scroll of Mirage Arcana",
@@ -40460,6 +41585,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mirage arcana",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Nightmare (Arcane)",
   Key="Scroll of Nightmare (Arcane)",
@@ -40498,6 +41624,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, nightmare",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Overland Flight",
   Key="Scroll of Overland Flight",
@@ -40536,6 +41663,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, overland flight",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Passwall",
   Key="Scroll of Passwall",
@@ -40574,6 +41702,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, passwall",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Permanency",
   Key="Scroll of Permanency",
@@ -40613,6 +41742,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, permanency",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Persistent Image",
   Key="Scroll of Persistent Image",
@@ -40651,6 +41781,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, persistent image",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Lesser Planar Binding",
   Key="Scroll of Planar Binding (Lesser)",
@@ -40689,6 +41820,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, lesser planar binding",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Plant Shape I",
   Key="Scroll of Plant Shape I",
@@ -40727,6 +41859,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, plant shape I",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Polymorph",
   Key="Scroll of Polymorph",
@@ -40765,6 +41898,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, polymorph",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Prying Eyes",
   Key="Scroll of Prying Eyes",
@@ -40803,6 +41937,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, prying eyes",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Secret Chest",
   Key="Scroll of Secret Chest",
@@ -40841,6 +41976,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, secret chest",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Seeming",
   Key="Scroll of Seeming",
@@ -40879,6 +42015,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, seeming",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Sending (Arcane)",
   Key="Scroll of Sending (Arcane)",
@@ -40917,6 +42054,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, sending",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Shadow Evocation",
   Key="Scroll of Shadow Evocation",
@@ -40955,6 +42093,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, shadow evocation",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster V (Arcane)",
   Key="Scroll of Summon Monster V (Arcane)",
@@ -40993,6 +42132,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster V",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Pain (Arcane)",
   Key="Scroll of Symbol of Pain (Arcane)",
@@ -41032,6 +42172,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of pain",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Sleep (Arcane)",
   Key="Scroll of Symbol of Sleep (Arcane)",
@@ -41071,6 +42212,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of sleep",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Telekinesis",
   Key="Scroll of Telekinesis",
@@ -41109,6 +42251,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, telekinesis",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Telepathic Bond",
   Key="Scroll of Telepathic Bond",
@@ -41147,6 +42290,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, telepathic bond",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Teleport",
   Key="Scroll of Teleport",
@@ -41185,6 +42329,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, teleport",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Transmute Mud to Rock (Arcane)",
   Key="Scroll of Transmute Mud to Rock (Arcane)",
@@ -41223,6 +42368,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, transmute mud to rock",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Transmute Rock to Mud (Arcane)",
   Key="Scroll of Transmute Rock to Mud (Arcane)",
@@ -41261,6 +42407,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, transmute rock to mud",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Wall of Force",
   Key="Scroll of Wall of Force",
@@ -41299,6 +42446,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, wall of force",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Wall of Stone (Arcane)",
   Key="Scroll of Wall of Stone (Arcane)",
@@ -41337,6 +42485,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, wall of stone",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Waves of Fatigue",
   Key="Scroll of Waves of Fatigue",
@@ -41375,6 +42524,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, waves of fatigue",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Acid Fog",
   Key="Scroll of Acid Fog",
@@ -41413,6 +42563,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, acid fog",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Analyze Dweomer",
   Key="Scroll of Analyze Dweomer",
@@ -41452,6 +42603,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, analyze dweomer",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Antimagic Field (Arcane)",
   Key="Scroll of Antimagic Field (Arcane)",
@@ -41490,6 +42642,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, antimagic field",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Bear's Endurance (Arcane)",
   Key="Scroll of Bear's Endurance (Mass) (Arcane)",
@@ -41528,6 +42681,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass bear's endurance",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Beast Shape IV",
   Key="Scroll of Beast Shape IV",
@@ -41566,6 +42720,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, beast shape IV",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Bull's Strength (Arcane)",
   Key="Scroll of Bull's Strength (Mass) (Arcane)",
@@ -41604,6 +42759,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass bull's strength",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Cat's Grace (Arcane)",
   Key="Scroll of Cat's Grace (Mass) (Arcane)",
@@ -41642,6 +42798,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass cat's grace",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Chain Lightning",
   Key="Scroll of Chain Lightning",
@@ -41680,6 +42837,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, chain lightning",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Circle of Death",
   Key="Scroll of Circle of Death",
@@ -41719,6 +42877,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, circle of death",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Contingency",
   Key="Scroll of Contingency",
@@ -41758,6 +42917,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, contingency",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Control Water (Arcane)",
   Key="Scroll of Control Water (Arcane)",
@@ -41796,6 +42956,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, control water",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Create Undead (Arcane)",
   Key="Scroll of Create Undead (Arcane)",
@@ -41835,6 +42996,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, create undead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Disintegrate",
   Key="Scroll of Disintegrate",
@@ -41873,6 +43035,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, disintegrate",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Dispel Magic (Arcane)",
   Key="Scroll of Dispel Magic (Greater) (Arcane)",
@@ -41911,6 +43074,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater dispel magic",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Eagle's Splendor (Arcane)",
   Key="Scroll of Eagle's Splendor (Mass) (Arcane)",
@@ -41949,6 +43113,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass eagle's splendor",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Elemental Body III",
   Key="Scroll of Elemental Body III",
@@ -41987,6 +43152,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, elemental body III",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Eyebite",
   Key="Scroll of Eyebite",
@@ -42025,6 +43191,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, eyebite",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Flesh to Stone",
   Key="Scroll of Flesh to Stone",
@@ -42063,6 +43230,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, flesh to stone",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Forceful Hand",
   Key="Scroll of Forceful Hand",
@@ -42101,6 +43269,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, forceful hand",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Form of the Dragon I",
   Key="Scroll of Form of the Dragon I",
@@ -42139,6 +43308,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, form of the dragon I",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Fox's Cunning (Arcane)",
   Key="Scroll of Fox's Cunning (Mass) (Arcane)",
@@ -42177,6 +43347,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass fox's cunning",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Freezing Sphere",
   Key="Scroll of Freezing Sphere",
@@ -42215,6 +43386,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, freezing sphere",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Geas/Quest (Arcane)",
   Key="Scroll of Geas/Quest (Arcane)",
@@ -42253,6 +43425,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, geas/quest",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Globe of Invulnerability",
   Key="Scroll of Globe of Invulnerability",
@@ -42291,6 +43464,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, globe of invulnerability",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Guards and Wards",
   Key="Scroll of Guards and Wards",
@@ -42329,6 +43503,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, guards and wards",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Heroism",
   Key="Scroll of Heroism (Greater)",
@@ -42367,6 +43542,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater heroism",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Legend Lore",
   Key="Scroll of Legend Lore",
@@ -42406,6 +43582,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, legend lore",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mage's Lucubration",
   Key="Scroll of Mage's Lucubration",
@@ -42444,6 +43621,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mage's lucubration",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mislead",
   Key="Scroll of Mislead",
@@ -42482,6 +43660,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mislead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Move Earth",
   Key="Scroll of Move Earth",
@@ -42520,6 +43699,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, move earth",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Owl's Wisdom (Arcane)",
   Key="Scroll of Owl's Wisdom (Mass) (Arcane)",
@@ -42558,6 +43738,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass owl's wisdom",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Permanent Image",
   Key="Scroll of Permanent Image",
@@ -42596,6 +43777,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, permanent image",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Planar Binding (Arcane)",
   Key="Scroll of Planar Binding (Arcane)",
@@ -42634,6 +43816,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, planar binding",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Plant Shape II",
   Key="Scroll of Plant Shape II",
@@ -42672,6 +43855,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, plant shape II",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Programmed Image",
   Key="Scroll of Programmed Image",
@@ -42711,6 +43895,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, programmed image",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Repulsion (Arcane)",
   Key="Scroll of Repulsion (Arcane)",
@@ -42750,6 +43935,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, repulsion",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Shadow Walk",
   Key="Scroll of Shadow Walk",
@@ -42788,6 +43974,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, shadow walk",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Stone to Flesh",
   Key="Scroll of Stone to Flesh",
@@ -42826,6 +44013,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, stone to flesh",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Suggestion",
   Key="Scroll of Suggestion (Mass)",
@@ -42864,6 +44052,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass suggestion",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster VI (Arcane)",
   Key="Scroll of Summon Monster VI (Arcane)",
@@ -42902,6 +44091,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster VI",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Fear (Arcane)",
   Key="Scroll of Symbol of Fear (Arcane)",
@@ -42941,6 +44131,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of fear",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Persuasion (Arcane)",
   Key="Scroll of Symbol of Persuasion (Arcane)",
@@ -42980,6 +44171,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of persuasion",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Transformation",
   Key="Scroll of Transformation",
@@ -43019,6 +44211,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, transformation",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of True Seeing (Arcane)",
   Key="Scroll of True Seeing (Arcane)",
@@ -43058,6 +44251,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, true seeing",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Undeath to Death (Arcane)",
   Key="Scroll of Undeath to Death (Arcane)",
@@ -43097,6 +44291,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, undeath to death",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Veil",
   Key="Scroll of Veil",
@@ -43135,6 +44330,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, veil",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Wall of Iron (Arcane)",
   Key="Scroll of Wall of Iron (Arcane)",
@@ -43174,6 +44370,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, wall of iron",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Arcane Sight",
   Key="Scroll of Arcane Sight (Greater)",
@@ -43212,6 +44409,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater arcane sight",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Banishment (Arcane)",
   Key="Scroll of Banishment (Arcane)",
@@ -43250,6 +44448,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, banishment",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Control Undead",
   Key="Scroll of Control Undead",
@@ -43288,6 +44487,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, control undead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Control Weather (Arcane)",
   Key="Scroll of Control Weather (Arcane)",
@@ -43326,6 +44526,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, control weather",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Delayed Blast Fireball",
   Key="Scroll of Delayed Blast Fireball",
@@ -43364,6 +44565,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, delayed blast fireball",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Elemental Body IV",
   Key="Scroll of Elemental Body IV",
@@ -43402,6 +44604,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, elemental body IV",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Ethereal Jaunt (Arcane)",
   Key="Scroll of Ethereal Jaunt (Arcane)",
@@ -43440,6 +44643,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, ethereal jaunt",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Finger of Death",
   Key="Scroll of Finger of Death",
@@ -43478,6 +44682,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, finger of death",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Forcecage",
   Key="Scroll of Forcecage",
@@ -43517,6 +44722,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, forcecage",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Form of the Dragon II",
   Key="Scroll of Form of the Dragon II",
@@ -43555,6 +44761,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, form of the dragon II",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Giant Form I",
   Key="Scroll of Giant Form I",
@@ -43593,6 +44800,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, giant form I",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Grasping Hand (Arcane)",
   Key="Scroll of Grasping Hand (Arcane)",
@@ -43631,6 +44839,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, grasping hand",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Hold Person",
   Key="Scroll of Hold Person (Mass)",
@@ -43669,6 +44878,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass hold person",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Insanity",
   Key="Scroll of Insanity",
@@ -43707,6 +44917,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, insanity",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Instant Summons (Arcane)",
   Key="Scroll of Instant Summons (Arcane)",
@@ -43746,6 +44957,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, instant summons",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Invisibility",
   Key="Scroll of Invisibility (Mass)",
@@ -43784,6 +44996,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass invisibility",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Limited Wish",
   Key="Scroll of Limited Wish",
@@ -43823,6 +45036,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, limited wish",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mage's Magnificent Mansion",
   Key="Scroll of Mage's Magnificent Mansion",
@@ -43861,6 +45075,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mage's magnificent mansion",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mage's Sword",
   Key="Scroll of Mage's Sword",
@@ -43899,6 +45114,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mage's sword",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Phase Door",
   Key="Scroll of Phase Door",
@@ -43937,6 +45153,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, phase door",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Plane Shift (Arcane)",
   Key="Scroll of Plane Shift (Arcane)",
@@ -43975,6 +45192,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, plane shift",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Plant Shape III",
   Key="Scroll of Plant Shape III",
@@ -44013,6 +45231,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, plant shape III",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Polymorph",
   Key="Scroll of Polymorph (Greater)",
@@ -44051,6 +45270,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater polymorph",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Power Word Blind",
   Key="Scroll of Power Word Blind",
@@ -44089,6 +45309,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, power word blind",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Prismatic Spray",
   Key="Scroll of Prismatic Spray",
@@ -44127,6 +45348,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, prismatic spray",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Project Image",
   Key="Scroll of Project Image",
@@ -44166,6 +45388,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, project image",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Reverse Gravity",
   Key="Scroll of Reverse Gravity",
@@ -44204,6 +45427,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, reverse gravity",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Scrying (Arcane)",
   Key="Scroll of Scrying (Greater) (Arcane)",
@@ -44242,6 +45466,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater scrying",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Sequester",
   Key="Scroll of Sequester",
@@ -44280,6 +45505,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, sequester",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Shadow Conjuration",
   Key="Scroll of Shadow Conjuration (Greater)",
@@ -44318,6 +45544,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater shadow conjuration",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Simulacrum",
   Key="Scroll of Simulacrum",
@@ -44357,6 +45584,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, simulacrum",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Spell Turning",
   Key="Scroll of Spell Turning",
@@ -44395,6 +45623,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, spell turning",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Statue",
   Key="Scroll of Statue",
@@ -44433,6 +45662,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, statue",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster VII (Arcane)",
   Key="Scroll of Summon Monster VII (Arcane)",
@@ -44471,6 +45701,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster VII",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Stunning (Arcane)",
   Key="Scroll of Symbol of Stunning (Arcane)",
@@ -44510,6 +45741,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of stunning",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Weakness (Arcane)",
   Key="Scroll of Symbol of Weakness (Arcane)",
@@ -44549,6 +45781,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of weakness",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Teleport Object",
   Key="Scroll of Teleport Object",
@@ -44587,6 +45820,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, teleport object",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Teleport",
   Key="Scroll of Teleport (Greater)",
@@ -44625,6 +45859,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater teleport",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Vision",
   Key="Scroll of Vision",
@@ -44664,6 +45899,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, vision",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Waves of Exhaustion",
   Key="Scroll of Waves of Exhaustion",
@@ -44702,6 +45938,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, waves of exhaustion",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Antipathy (Arcane)",
   Key="Scroll of Antipathy (Arcane)",
@@ -44740,6 +45977,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, antipathy",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Binding",
   Key="Scroll of Binding",
@@ -44779,6 +46017,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, binding",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Charm Monster",
   Key="Scroll of Charm Monster (Mass)",
@@ -44817,6 +46056,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass charm monster",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Clenched Fist (Arcane)",
   Key="Scroll of Clenched Fist (Arcane)",
@@ -44855,6 +46095,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, clenched fist",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Clone",
   Key="Scroll of Clone",
@@ -44894,6 +46135,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, clone",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Create Greater Undead (Arcane)",
   Key="Scroll of Create Undead (Greater) (Arcane)",
@@ -44932,6 +46174,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, create greater undead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Demand",
   Key="Scroll of Demand",
@@ -44970,6 +46213,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, demand",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dimensional Lock (Arcane)",
   Key="Scroll of Dimensional Lock (Arcane)",
@@ -45008,6 +46252,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dimensional lock",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Discern Location (Arcane)",
   Key="Scroll of Discern Location (Arcane)",
@@ -45046,6 +46291,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, discern location",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Form of the Dragon III",
   Key="Scroll of Form of the Dragon III",
@@ -45084,6 +46330,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, form of the dragon III",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Giant Form II",
   Key="Scroll of Giant Form II",
@@ -45122,6 +46369,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, giant form II",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Horrid Wilting",
   Key="Scroll of Horrid Wilting",
@@ -45160,6 +46408,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, horrid wilting",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Incendiary Cloud",
   Key="Scroll of Incendiary Cloud",
@@ -45198,6 +46447,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, incendiary cloud",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Iron Body",
   Key="Scroll of Iron Body",
@@ -45236,6 +46486,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, iron body",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Irresistible Dance",
   Key="Scroll of Irresistible Dance",
@@ -45274,6 +46525,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, irresistible dance",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Maze",
   Key="Scroll of Maze",
@@ -45312,6 +46564,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, maze",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mind Blank",
   Key="Scroll of Mind Blank",
@@ -45350,6 +46603,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mind blank",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Moment of Prescience",
   Key="Scroll of Moment of Prescience",
@@ -45388,6 +46642,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, moment of prescience",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Planar Binding",
   Key="Scroll of Planar Binding (Greater)",
@@ -45426,6 +46681,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater planar binding",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Polar Ray",
   Key="Scroll of Polar Ray",
@@ -45464,6 +46720,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, polar ray",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Polymorph Any Object",
   Key="Scroll of Polymorph Any Object",
@@ -45502,6 +46759,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, polymorph any object",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Power Word Stun",
   Key="Scroll of Power Word Stun",
@@ -45540,6 +46798,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, power word stun",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Prismatic Wall",
   Key="Scroll of Prismatic Wall",
@@ -45578,6 +46837,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, prismatic wall",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Protection from Spells",
   Key="Scroll of Protection from Spells",
@@ -45617,6 +46877,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, protection from spells",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Prying Eyes",
   Key="Scroll of Prying Eyes (Greater)",
@@ -45655,6 +46916,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater prying eyes",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Scintillating Pattern",
   Key="Scroll of Scintillating Pattern",
@@ -45693,6 +46955,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, scintillating pattern",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Screen",
   Key="Scroll of Screen",
@@ -45731,6 +46994,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, screen",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Shadow Evocation (Arcane)",
   Key="Scroll of Shadow Evocation (Greater) (Arcane)",
@@ -45769,6 +47033,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater shadow evocation",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Shout",
   Key="Scroll of Shout (Greater)",
@@ -45807,6 +47072,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater shout",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster VIII (Arcane)",
   Key="Scroll of Summon Monster VIII (Arcane)",
@@ -45845,6 +47111,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster VIII",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Sunburst",
   Key="Scroll of Sunburst",
@@ -45883,6 +47150,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, sunburst",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Death (Arcane)",
   Key="Scroll of Symbol of Death (Arcane)",
@@ -45922,6 +47190,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of death",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Insanity (Arcane)",
   Key="Scroll of Symbol of Insanity (Arcane)",
@@ -45961,6 +47230,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of insanity",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Sympathy (Arcane)",
   Key="Scroll of Sympathy (Arcane)",
@@ -46000,6 +47270,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, sympathy",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Telekinetic Sphere",
   Key="Scroll of Telekinetic Sphere",
@@ -46038,6 +47309,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, telekinetic sphere",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Temporal Stasis",
   Key="Scroll of Temporal Stasis",
@@ -46077,6 +47349,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, temporal stasis",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Trap the Soul",
   Key="Scroll of Trap the Soul",
@@ -46115,6 +47388,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, trap the soul",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Astral Projection (Arcane)",
   Key="Scroll of Astral Projection (Arcane)",
@@ -46154,6 +47428,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, astral projection",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Crushing Hand (Arcane)",
   Key="Scroll of Crushing Hand (Arcane)",
@@ -46192,6 +47467,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, crushing hand",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dominate Monster",
   Key="Scroll of Dominate Monster",
@@ -46230,6 +47506,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dominate monster",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Energy Drain (Arcane)",
   Key="Scroll of Energy Drain (Arcane)",
@@ -46268,6 +47545,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, energy drain",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Etherealness (Arcane)",
   Key="Scroll of Etherealness (Arcane)",
@@ -46306,6 +47584,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, etherealness",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Foresight",
   Key="Scroll of Foresight",
@@ -46344,6 +47623,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, foresight",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Freedom",
   Key="Scroll of Freedom",
@@ -46382,6 +47662,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, freedom",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Gate (Arcane)",
   Key="Scroll of Gate (Arcane)",
@@ -46420,6 +47701,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, gate",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Hold Monster",
   Key="Scroll of Hold Monster (Mass)",
@@ -46458,6 +47740,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass hold monster",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Imprisonment",
   Key="Scroll of Imprisonment",
@@ -46496,6 +47779,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, imprisonment",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mage's Disjunction",
   Key="Scroll of Mage's Disjunction",
@@ -46534,6 +47818,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mage's disjunction",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Meteor Swarm",
   Key="Scroll of Meteor Swarm",
@@ -46572,6 +47857,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, meteor swarm",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Power Word Kill",
   Key="Scroll of Power Word Kill",
@@ -46610,6 +47896,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, power word kill",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Prismatic Sphere",
   Key="Scroll of Prismatic Sphere",
@@ -46648,6 +47935,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, prismatic sphere",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Refuge (Arcane)",
   Key="Scroll of Refuge (Arcane)",
@@ -46686,6 +47974,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, refuge",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Shades (Arcane)",
   Key="Scroll of Shades (Arcane)",
@@ -46724,6 +48013,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, shades",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Shapechange",
   Key="Scroll of Shapechange",
@@ -46762,6 +48052,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, shapechange",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Soul Bind (Arcane)",
   Key="Scroll of Soul Bind (Arcane)",
@@ -46800,6 +48091,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, soul bind",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster IX (Arcane)",
   Key="Scroll of Summon Monster IX (Arcane)",
@@ -46838,6 +48130,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster ix",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Teleportation Circle",
   Key="Scroll of Teleportation Circle",
@@ -46877,6 +48170,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, teleportation circle",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Time Stop",
   Key="Scroll of Time Stop",
@@ -46915,6 +48209,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, time stop",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Wail of the Banshee",
   Key="Scroll of Wail of the Banshee",
@@ -46953,6 +48248,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, wail of the banshee",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Weird",
   Key="Scroll of Weird",
@@ -46991,6 +48287,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, weird",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Wish",
   Key="Scroll of Wish",
@@ -47030,6 +48327,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, wish",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Bleed (Divine)",
   Key="Scroll of Bleed (Divine)",
@@ -47068,6 +48366,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, bleed",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Create Water",
   Key="Scroll of Create Water",
@@ -47106,6 +48405,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, create water",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Detect Magic (Divine)",
   Key="Scroll of Detect Magic (Divine)",
@@ -47144,6 +48444,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, detect magic",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Detect Poison (Divine)",
   Key="Scroll of Detect Poison (Divine)",
@@ -47182,6 +48483,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, detect poison",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Guidance",
   Key="Scroll of Guidance",
@@ -47220,6 +48522,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, guidance",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Light (Divine)",
   Key="Scroll of Light (Divine)",
@@ -47258,6 +48561,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, light",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mending (Divine)",
   Key="Scroll of Mending (Divine)",
@@ -47296,6 +48600,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mending",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Purify Food and Drink",
   Key="Scroll of Purify Food and Drink",
@@ -47334,6 +48639,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, purify food and drink",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Read Magic (Divine)",
   Key="Scroll of Read Magic (Divine)",
@@ -47372,6 +48678,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, read magic",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Resistance (Divine)",
   Key="Scroll of Resistance (Divine)",
@@ -47410,6 +48717,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, resistance",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Stabilize",
   Key="Scroll of Stabilize",
@@ -47448,6 +48756,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, stabilize",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Virtue",
   Key="Scroll of Virtue",
@@ -47486,6 +48795,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, virtue",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Bane",
   Key="Scroll of Bane",
@@ -47524,6 +48834,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, bane",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Bless",
   Key="Scroll of Bless",
@@ -47562,6 +48873,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, bless",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Bless Water",
   Key="Scroll of Bless Water",
@@ -47601,6 +48913,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, bless water",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Cause Fear (Divine)",
   Key="Scroll of Cause Fear (Divine)",
@@ -47639,6 +48952,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, cause fear",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Command",
   Key="Scroll of Command",
@@ -47677,6 +48991,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, command",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Comprehend Languages (Divine)",
   Key="Scroll of Comprehend Languages (Divine)",
@@ -47715,6 +49030,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, comprehend languages",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Cure Light Wounds",
   Key="Scroll of Cure Light Wounds",
@@ -47753,6 +49069,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, cure light wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Curse Water",
   Key="Scroll of Curse Water",
@@ -47792,6 +49109,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, curse water",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Deathwatch",
   Key="Scroll of Deathwatch",
@@ -47830,6 +49148,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, deathwatch",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Detect Chaos",
   Key="Scroll of Detect Chaos",
@@ -47868,6 +49187,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, detect chaos",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Detect Evil",
   Key="Scroll of Detect Evil",
@@ -47906,6 +49226,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, detect evil",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Detect Good",
   Key="Scroll of Detect Good",
@@ -47944,6 +49265,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, detect good",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Detect Law",
   Key="Scroll of Detect Law",
@@ -47982,6 +49304,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, detect law",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Detect Undead (Divine)",
   Key="Scroll of Detect Undead (Divine)",
@@ -48020,6 +49343,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, detect undead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Divine Favor",
   Key="Scroll of Divine Favor",
@@ -48058,6 +49382,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, divine favor",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Doom",
   Key="Scroll of Doom",
@@ -48096,6 +49421,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, doom",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Endure Elements (Divine)",
   Key="Scroll of Endure Elements (Divine)",
@@ -48134,6 +49460,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, endure elements",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Entropic Shield",
   Key="Scroll of Entropic Shield",
@@ -48172,6 +49499,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, entropic shield",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Hide from Undead",
   Key="Scroll of Hide from Undead",
@@ -48210,6 +49538,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, hide from undead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Inflict Light Wounds",
   Key="Scroll of Inflict Light Wounds",
@@ -48248,6 +49577,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, inflict light wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Stone",
   Key="Scroll of Magic Stone",
@@ -48286,6 +49616,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic stone",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Weapon (Divine)",
   Key="Scroll of Magic Weapon (Divine)",
@@ -48324,6 +49655,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic weapon",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Obscuring Mist (Divine)",
   Key="Scroll of Obscuring Mist (Divine)",
@@ -48362,6 +49694,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, obscuring mist",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Protection from Chaos (Divine)",
   Key="Scroll of Protection from Chaos (Divine)",
@@ -48400,6 +49733,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, protection from chaos",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Protection from Evil (Divine)",
   Key="Scroll of Protection from Evil (Divine)",
@@ -48438,6 +49772,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, protection from evil",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Protection from Good (Divine)",
   Key="Scroll of Protection from Good (Divine)",
@@ -48476,6 +49811,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, protection from good",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Protection from Law (Divine)",
   Key="Scroll of Protection from Law (Divine)",
@@ -48514,6 +49850,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, protection from law",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Remove Fear",
   Key="Scroll of Remove Fear",
@@ -48552,6 +49889,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, remove fear",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Sanctuary",
   Key="Scroll of Sanctuary",
@@ -48590,6 +49928,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, sanctuary",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Shield of Faith",
   Key="Scroll of Shield of Faith",
@@ -48628,6 +49967,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, shield of faith",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster I (Divine)",
   Key="Scroll of Summon Monster I (Divine)",
@@ -48666,6 +50006,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster I",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Aid",
   Key="Scroll of Aid",
@@ -48704,6 +50045,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, aid",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Align Weapon",
   Key="Scroll of Align Weapon",
@@ -48742,6 +50084,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, align weapon",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Augury",
   Key="Scroll of Augury",
@@ -48781,6 +50124,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, augury",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Bear's Endurance (Divine)",
   Key="Scroll of Bear's Endurance (Divine)",
@@ -48819,6 +50163,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, bear's endurance",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Bull's Strength (Divine)",
   Key="Scroll of Bull's Strength (Divine)",
@@ -48857,6 +50202,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, bull's strength",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Calm Emotions",
   Key="Scroll of Calm Emotions",
@@ -48895,6 +50241,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, calm emotions",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Cat's Grace (Divine)",
   Key="Scroll of Cat's Grace (Divine)",
@@ -48933,6 +50280,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, cat's grace",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Consecrate",
   Key="Scroll of Consecrate",
@@ -48972,6 +50320,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, consecrate",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Cure Moderate Wounds",
   Key="Scroll of Cure Moderate Wounds",
@@ -49010,6 +50359,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, cure moderate wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Darkness (Divine)",
   Key="Scroll of Darkness (Divine)",
@@ -49048,6 +50398,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, darkness",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Death Knell",
   Key="Scroll of Death Knell",
@@ -49086,6 +50437,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, death knell",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Delay Poison",
   Key="Scroll of Delay Poison",
@@ -49124,6 +50476,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, delay poison",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Desecrate",
   Key="Scroll of Desecrate",
@@ -49163,6 +50516,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, desecrate",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Eagle's Splendor (Divine)",
   Key="Scroll of Eagle's Splendor (Divine)",
@@ -49201,6 +50555,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, eagle's splendor",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Enthrall",
   Key="Scroll of Enthrall",
@@ -49239,6 +50594,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, enthrall",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Find Traps",
   Key="Scroll of Find Traps",
@@ -49277,6 +50633,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, find traps",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Gentle Repose (Divine)",
   Key="Scroll of Gentle Repose (Divine)",
@@ -49315,6 +50672,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, gentle repose",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Hold Person (Divine)",
   Key="Scroll of Hold Person (Divine)",
@@ -49353,6 +50711,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, hold person",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Inflict Moderate Wounds",
   Key="Scroll of Inflict Moderate Wounds",
@@ -49391,6 +50750,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, inflict moderate wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Make Whole (Divine)",
   Key="Scroll of Make Whole (Divine)",
@@ -49429,6 +50789,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, make whole",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Owl's Wisdom (Divine)",
   Key="Scroll of Owl's Wisdom (Divine)",
@@ -49467,6 +50828,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, owl's wisdom",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Remove Paralysis",
   Key="Scroll of Remove Paralysis",
@@ -49505,6 +50867,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, remove paralysis",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Resist Energy (Divine)",
   Key="Scroll of Resist Energy (Divine)",
@@ -49543,6 +50906,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, resist energy",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Lesser Restoration",
   Key="Scroll of Restoration (Lesser)",
@@ -49581,6 +50945,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, lesser restoration",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Shatter (Divine)",
   Key="Scroll of Shatter (Divine)",
@@ -49619,6 +50984,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, shatter",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Shield Other",
   Key="Scroll of Shield Other",
@@ -49658,6 +51024,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, shield other",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Silence",
   Key="Scroll of Silence",
@@ -49696,6 +51063,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, silence",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Sound Burst",
   Key="Scroll of Sound Burst",
@@ -49734,6 +51102,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, sound burst",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Spiritual Weapon",
   Key="Scroll of Spiritual Weapon",
@@ -49772,6 +51141,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, spiritual weapon",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Status",
   Key="Scroll of Status",
@@ -49810,6 +51180,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, status",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster II (Divine)",
   Key="Scroll of Summon Monster II (Divine)",
@@ -49848,6 +51219,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster II",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Undetectable Alignment",
   Key="Scroll of Undetectable Alignment",
@@ -49886,6 +51258,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, undetectable alignment",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Zone of Truth",
   Key="Scroll of Zone of Truth",
@@ -49924,6 +51297,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, zone of truth",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Animate Dead (Divine)",
   Key="Scroll of Animate Dead (Divine)",
@@ -49962,6 +51336,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, animate dead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Bestow Curse (Divine)",
   Key="Scroll of Bestow Curse (Divine)",
@@ -50000,6 +51375,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, bestow curse",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Blindness/Deafness (Divine)",
   Key="Scroll of Blindness/Deafness (Divine)",
@@ -50038,6 +51414,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, blindness/deafness",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Contagion (Divine)",
   Key="Scroll of Contagion (Divine)",
@@ -50076,6 +51453,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, contagion",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Continual Flame (Divine)",
   Key="Scroll of Continual Flame (Divine)",
@@ -50115,6 +51493,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, continual flame",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Create Food and Water",
   Key="Scroll of Create Food and Water",
@@ -50153,6 +51532,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, create food and water",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Cure Serious Wounds",
   Key="Scroll of Cure Serious Wounds",
@@ -50191,6 +51571,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, cure serious wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Daylight (Divine)",
   Key="Scroll of Daylight (Divine)",
@@ -50229,6 +51610,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, daylight",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Deeper Darkness",
   Key="Scroll of Deeper Darkness",
@@ -50267,6 +51649,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, deeper darkness",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dispel Magic (Divine)",
   Key="Scroll of Dispel Magic (Divine)",
@@ -50305,6 +51688,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dispel magic",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Glyph of Warding",
   Key="Scroll of Glyph of Warding",
@@ -50344,6 +51728,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, glyph of warding",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Helping Hand",
   Key="Scroll of Helping Hand",
@@ -50382,6 +51767,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, helping hand",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Inflict Serious Wounds",
   Key="Scroll of Inflict Serious Wounds",
@@ -50420,6 +51806,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, inflict serious wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Invisibility Purge",
   Key="Scroll of Invisibility Purge",
@@ -50458,6 +51845,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, invisibility purge",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Locate Object (Divine)",
   Key="Scroll of Locate Object (Divine)",
@@ -50496,6 +51884,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, locate object",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Circle Against Chaos (Divine)",
   Key="Scroll of Magic Circle Against Chaos (Divine)",
@@ -50534,6 +51923,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic circle against chaos",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Circle Against Evil (Divine)",
   Key="Scroll of Magic Circle Against Evil (Divine)",
@@ -50572,6 +51962,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic circle against evil",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Circle Against Good (Divine)",
   Key="Scroll of Magic Circle Against Good (Divine)",
@@ -50610,6 +52001,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic circle against good",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Circle Against Law (Divine)",
   Key="Scroll of Magic Circle Against Law (Divine)",
@@ -50648,6 +52040,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic circle against law",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Magic Vestment",
   Key="Scroll of Magic Vestment",
@@ -50686,6 +52079,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, magic vestment",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Meld into Stone",
   Key="Scroll of Meld into Stone",
@@ -50724,6 +52118,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, meld into stone",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Obscure Object (Divine)",
   Key="Scroll of Obscure Object (Divine)",
@@ -50762,6 +52157,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, obscure object",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Prayer",
   Key="Scroll of Prayer",
@@ -50800,6 +52196,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, prayer",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Protection from Energy (Divine)",
   Key="Scroll of Protection from Energy (Divine)",
@@ -50838,6 +52235,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, protection from energy",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Remove Blindness/Deafness",
   Key="Scroll of Remove Blindness/Deafness",
@@ -50876,6 +52274,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, remove blindness/deafness",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Remove Curse (Divine)",
   Key="Scroll of Remove Curse (Divine)",
@@ -50914,6 +52313,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, remove curse",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Remove Disease",
   Key="Scroll of Remove Disease",
@@ -50952,6 +52352,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, remove disease",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Searing Light",
   Key="Scroll of Searing Light",
@@ -50990,6 +52391,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, searing light",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Speak with Dead",
   Key="Scroll of Speak with Dead",
@@ -51028,6 +52430,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, speak with dead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Stone Shape (Divine)",
   Key="Scroll of Stone Shape (Divine)",
@@ -51066,6 +52469,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, stone shape",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster III (Divine)",
   Key="Scroll of Summon Monster III (Divine)",
@@ -51104,6 +52508,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster III",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Water Breathing (Divine)",
   Key="Scroll of Water Breathing (Divine)",
@@ -51142,6 +52547,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, water breathing",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Water Walk",
   Key="Scroll of Water Walk",
@@ -51180,6 +52586,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, water walk",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Wind Wall (Divine)",
   Key="Scroll of Wind Wall (Divine)",
@@ -51218,6 +52625,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, wind wall",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Air Walk",
   Key="Scroll of Air Walk",
@@ -51256,6 +52664,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, air walk",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Chaos Hammer",
   Key="Scroll of Chaos Hammer",
@@ -51294,6 +52703,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, chaos hammer",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Control Water (Divine)",
   Key="Scroll of Control Water (Divine)",
@@ -51332,6 +52742,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, control water",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Cure Critical Wounds",
   Key="Scroll of Cure Critical Wounds",
@@ -51370,6 +52781,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, cure critical wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Death Ward",
   Key="Scroll of Death Ward",
@@ -51408,6 +52820,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, death ward",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dimensional Anchor (Divine)",
   Key="Scroll of Dimensional Anchor (Divine)",
@@ -51446,6 +52859,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dimensional anchor",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Discern Lies",
   Key="Scroll of Discern Lies",
@@ -51484,6 +52898,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, discern lies",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dismissal (Divine)",
   Key="Scroll of Dismissal (Divine)",
@@ -51522,6 +52937,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dismissal",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Divination",
   Key="Scroll of Divination",
@@ -51561,6 +52977,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, divination",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Divine Power",
   Key="Scroll of Divine Power",
@@ -51599,6 +53016,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, divine power",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Freedom of Movement",
   Key="Scroll of Freedom of Movement",
@@ -51637,6 +53055,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, freedom of movement",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Giant Vermin",
   Key="Scroll of Giant Vermin",
@@ -51675,6 +53094,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, giant vermin",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Holy Smite",
   Key="Scroll of Holy Smite",
@@ -51713,6 +53133,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, holy smite",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Imbue with Spell Ability",
   Key="Scroll of Imbue with Spell Ability",
@@ -51751,6 +53172,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, imbue with spell ability",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Inflict Critical Wounds",
   Key="Scroll of Inflict Critical Wounds",
@@ -51789,6 +53211,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, inflict critical wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Magic Weapon (Divine)",
   Key="Scroll of Magic Weapon (Greater) (Divine)",
@@ -51827,6 +53250,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater magic weapon",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Neutralize Poison",
   Key="Scroll of Neutralize Poison",
@@ -51865,6 +53289,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, neutralize poison",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Order's Wrath",
   Key="Scroll of Order's Wrath",
@@ -51903,6 +53328,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, order's wrath",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Lesser Planar Ally",
   Key="Scroll of Planar Ally (Lesser)",
@@ -51942,6 +53368,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, lesser planar ally",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Poison",
   Key="Scroll of Poison",
@@ -51980,6 +53407,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, poison",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Repel Vermin (Divine)",
   Key="Scroll of Repel Vermin (Divine)",
@@ -52018,6 +53446,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, repel vermin",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Restoration",
   Key="Scroll of Restoration",
@@ -52057,6 +53486,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, restoration",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Sending (Divine)",
   Key="Scroll of Sending (Divine)",
@@ -52095,6 +53525,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, sending",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Spell Immunity",
   Key="Scroll of Spell Immunity",
@@ -52133,6 +53564,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, spell immunity",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster IV (Divine)",
   Key="Scroll of Summon Monster IV (Divine)",
@@ -52171,6 +53603,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster IV",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Tongues (Divine)",
   Key="Scroll of Tongues (Divine)",
@@ -52209,6 +53642,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, tongues",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Unholy Blight",
   Key="Scroll of Unholy Blight",
@@ -52247,6 +53681,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, unholy blight",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Atonement",
   Key="Scroll of Atonement",
@@ -52285,6 +53720,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, atonement",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Break Enchantment (Divine)",
   Key="Scroll of Break Enchantment (Divine)",
@@ -52323,6 +53759,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, break enchantment",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Breath of Life",
   Key="Scroll of Breath of Life",
@@ -52361,6 +53798,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, breath of life",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Command",
   Key="Scroll of Command (Greater)",
@@ -52399,6 +53837,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater command",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Commune",
   Key="Scroll of Commune",
@@ -52438,6 +53877,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, commune",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Cure Light Wounds",
   Key="Scroll of Cure Light Wounds (Mass)",
@@ -52476,6 +53916,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass cure light wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dispel Chaos",
   Key="Scroll of Dispel Chaos",
@@ -52514,6 +53955,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dispel chaos",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dispel Evil",
   Key="Scroll of Dispel Evil",
@@ -52552,6 +53994,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dispel evil",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dispel Good",
   Key="Scroll of Dispel Good",
@@ -52590,6 +54033,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dispel good",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dispel Law",
   Key="Scroll of Dispel Law",
@@ -52628,6 +54072,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dispel law",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Disrupting Weapon",
   Key="Scroll of Disrupting Weapon",
@@ -52666,6 +54111,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, disrupting weapon",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Flame Strike",
   Key="Scroll of Flame Strike",
@@ -52704,6 +54150,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, flame strike",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Hallow",
   Key="Scroll of Hallow",
@@ -52743,6 +54190,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, hallow",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Inflict Light Wounds",
   Key="Scroll of Inflict Light Wounds (Mass)",
@@ -52781,6 +54229,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass inflict light wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Insect Plague",
   Key="Scroll of Insect Plague",
@@ -52819,6 +54268,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, insect plague",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mark of Justice",
   Key="Scroll of Mark of Justice",
@@ -52857,6 +54307,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mark of justice",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Plane Shift (Divine)",
   Key="Scroll of Plane Shift (Divine)",
@@ -52895,6 +54346,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, plane shift",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Raise Dead",
   Key="Scroll of Raise Dead",
@@ -52934,6 +54386,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, raise dead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Righteous Might",
   Key="Scroll of Righteous Might",
@@ -52972,6 +54425,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, righteous might",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Scrying (Divine)",
   Key="Scroll of Scrying (Divine)",
@@ -53011,6 +54465,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, scrying",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Slay Living",
   Key="Scroll of Slay Living",
@@ -53049,6 +54504,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, slay living",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Spell Resistance",
   Key="Scroll of Spell Resistance",
@@ -53087,6 +54543,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, spell resistance",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster V (Divine)",
   Key="Scroll of Summon Monster V (Divine)",
@@ -53125,6 +54582,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster V",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Pain (Divine)",
   Key="Scroll of Symbol of Pain (Divine)",
@@ -53164,6 +54622,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of pain",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Sleep (Divine)",
   Key="Scroll of Symbol of Sleep (Divine)",
@@ -53203,6 +54662,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of sleep",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of True Seeing (Divine)",
   Key="Scroll of True Seeing (Divine)",
@@ -53242,6 +54702,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, true seeing",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Unhallow",
   Key="Scroll of Unhallow",
@@ -53281,6 +54742,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, unhallow",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Wall of Stone (Divine)",
   Key="Scroll of Wall of Stone (Divine)",
@@ -53319,6 +54781,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, wall of stone",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Animate Objects (Divine)",
   Key="Scroll of Animate Objects (Divine)",
@@ -53357,6 +54820,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, animate objects",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Antilife Shell",
   Key="Scroll of Antilife Shell",
@@ -53395,6 +54859,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, antilife shell",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Banishment (Divine)",
   Key="Scroll of Banishment (Divine)",
@@ -53433,6 +54898,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, banishment",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Bear's Endurance (Divine)",
   Key="Scroll of Bear's Endurance (Mass) (Divine)",
@@ -53471,6 +54937,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass bear's endurance",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Blade Barrier",
   Key="Scroll of Blade Barrier",
@@ -53509,6 +54976,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, blade barrier",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Bull's Strength (Divine)",
   Key="Scroll of Bull's Strength (Mass) (Divine)",
@@ -53547,6 +55015,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass bull's strength",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Cat's Grace (Divine)",
   Key="Scroll of Cat's Grace (Mass) (Divine)",
@@ -53585,6 +55054,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass cat's grace",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Create Undead (Divine)",
   Key="Scroll of Create Undead (Divine)",
@@ -53624,6 +55094,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, create undead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Cure Moderate Wounds",
   Key="Scroll of Cure Moderate Wounds (Mass)",
@@ -53662,6 +55133,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass cure moderate wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Dispel Magic (Divine)",
   Key="Scroll of Dispel Magic (Greater) (Divine)",
@@ -53700,6 +55172,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater dispel magic",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Eagle's Splendor (Divine)",
   Key="Scroll of Eagle's Splendor (Mass) (Divine)",
@@ -53738,6 +55211,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass eagle's splendor",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Find the Path",
   Key="Scroll of Find the Path",
@@ -53776,6 +55250,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, find the path",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Forbiddance",
   Key="Scroll of Forbiddance",
@@ -53816,6 +55291,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, forbiddance",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Geas/Quest (Divine)",
   Key="Scroll of Geas/Quest (Divine)",
@@ -53854,6 +55330,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, geas/quest",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Glyph of Warding",
   Key="Scroll of Glyph of Warding (Greater)",
@@ -53893,6 +55370,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater glyph of warding",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Harm",
   Key="Scroll of Harm",
@@ -53931,6 +55409,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, harm",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Heal",
   Key="Scroll of Heal",
@@ -53969,6 +55448,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, heal",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Heroes' Feast",
   Key="Scroll of Heroes' Feast",
@@ -54007,6 +55487,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, heroes' feast",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Inflict Moderate Wounds",
   Key="Scroll of Inflict Moderate Wounds (Mass)",
@@ -54045,6 +55526,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass inflict moderate wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Owl's Wisdom (Divine)",
   Key="Scroll of Owl's Wisdom (Mass) (Divine)",
@@ -54083,6 +55565,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass owl's wisdom",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Planar Ally",
   Key="Scroll of Planar Ally",
@@ -54122,6 +55605,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, planar ally",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster VI (Divine)",
   Key="Scroll of Summon Monster VI (Divine)",
@@ -54160,6 +55644,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster VI",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Fear (Divine)",
   Key="Scroll of Symbol of Fear (Divine)",
@@ -54199,6 +55684,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of fear",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Persuasion (Divine)",
   Key="Scroll of Symbol of Persuasion (Divine)",
@@ -54238,6 +55724,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of persuasion",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Undeath to Death (Divine)",
   Key="Scroll of Undeath to Death (Divine)",
@@ -54277,6 +55764,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, undeath to death",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Wind Walk",
   Key="Scroll of Wind Walk",
@@ -54315,6 +55803,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, wind walk",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Word of Recall",
   Key="Scroll of Word of Recall",
@@ -54353,6 +55842,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, word of recall",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Blasphemy",
   Key="Scroll of Blasphemy",
@@ -54391,6 +55881,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, blasphemy",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Control Weather (Divine)",
   Key="Scroll of Control Weather (Divine)",
@@ -54429,6 +55920,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, control weather",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Cure Serious Wounds",
   Key="Scroll of Cure Serious Wounds (Mass)",
@@ -54467,6 +55959,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass cure serious wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Destruction",
   Key="Scroll of Destruction",
@@ -54506,6 +55999,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, destruction",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dictum",
   Key="Scroll of Dictum",
@@ -54544,6 +56038,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dictum",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Ethereal Jaunt (Divine)",
   Key="Scroll of Ethereal Jaunt (Divine)",
@@ -54582,6 +56077,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, ethereal jaunt",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Holy Word",
   Key="Scroll of Holy Word",
@@ -54620,6 +56116,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, holy word",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Inflict Serious Wounds",
   Key="Scroll of Inflict Serious Wounds (Mass)",
@@ -54658,6 +56155,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass inflict serious wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Refuge (Divine)",
   Key="Scroll of Refuge (Divine)",
@@ -54696,6 +56194,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, refuge",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Regenerate",
   Key="Scroll of Regenerate",
@@ -54734,6 +56233,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, regenerate",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Repulsion (Divine)",
   Key="Scroll of Repulsion (Divine)",
@@ -54772,6 +56272,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, repulsion",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Restoration",
   Key="Scroll of Restoration (Greater)",
@@ -54811,6 +56312,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater restoration",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Resurrection",
   Key="Scroll of Resurrection",
@@ -54850,6 +56352,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, resurrection",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Scrying (Divine)",
   Key="Scroll of Scrying (Greater) (Divine)",
@@ -54888,6 +56391,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater scrying",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster VII (Divine)",
   Key="Scroll of Summon Monster VII (Divine)",
@@ -54926,6 +56430,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster VII",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Stunning (Divine)",
   Key="Scroll of Symbol of Stunning (Divine)",
@@ -54965,6 +56470,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of stunning",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Weakness (Divine)",
   Key="Scroll of Symbol of Weakness (Divine)",
@@ -55004,6 +56510,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of weakness",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Word of Chaos",
   Key="Scroll of Word of Chaos",
@@ -55042,6 +56549,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, word of chaos",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Antimagic Field (Divine)",
   Key="Scroll of Antimagic Field (Divine)",
@@ -55080,6 +56588,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, antimagic field",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Cloak of Chaos",
   Key="Scroll of Cloak of Chaos",
@@ -55119,6 +56628,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, cloak of chaos",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Create Greater Undead (Divine)",
   Key="Scroll of Create Undead (Greater) (Divine)",
@@ -55158,6 +56668,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, create greater undead",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Cure Critical Wounds",
   Key="Scroll of Cure Critical Wounds (Mass)",
@@ -55196,6 +56707,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass cure critical wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Dimensional Lock (Divine)",
   Key="Scroll of Dimensional Lock (Divine)",
@@ -55234,6 +56746,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, dimensional lock",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Discern Location (Divine)",
   Key="Scroll of Discern Location (Divine)",
@@ -55272,6 +56785,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, discern location",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Earthquake",
   Key="Scroll of Earthquake",
@@ -55310,6 +56824,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, earthquake",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Fire Storm",
   Key="Scroll of Fire Storm",
@@ -55348,6 +56863,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, fire storm",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Holy Aura",
   Key="Scroll of Holy Aura",
@@ -55387,6 +56903,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, holy aura",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Inflict Critical Wounds",
   Key="Scroll of Inflict Critical Wounds (Mass)",
@@ -55425,6 +56942,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass inflict critical wounds",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Planar Ally",
   Key="Scroll of Planar Ally (Greater)",
@@ -55464,6 +56982,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater planar ally",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Shield of Law",
   Key="Scroll of Shield of Law",
@@ -55502,6 +57021,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, shield of law",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Greater Spell Immunity",
   Key="Scroll of Spell Immunity (Greater)",
@@ -55540,6 +57060,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, greater spell immunity",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster VIII (Divine)",
   Key="Scroll of Summon Monster VIII (Divine)",
@@ -55578,6 +57099,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster VIII",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Death (Divine)",
   Key="Scroll of Symbol of Death (Divine)",
@@ -55617,6 +57139,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of death",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Symbol of Insanity (Divine)",
   Key="Scroll of Symbol of Insanity (Divine)",
@@ -55656,6 +57179,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, symbol of insanity",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Unholy Aura",
   Key="Scroll of Unholy Aura",
@@ -55695,6 +57219,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, unholy aura",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Astral Projection (Divine)",
   Key="Scroll of Astral Projection (Divine)",
@@ -55734,6 +57259,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, astral projection",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Energy Drain (Divine)",
   Key="Scroll of Energy Drain (Divine)",
@@ -55772,6 +57298,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, energy drain",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Etherealness (Divine)",
   Key="Scroll of Etherealness (Divine)",
@@ -55810,6 +57337,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, etherealness",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Gate (Divine)",
   Key="Scroll of Gate (Divine)",
@@ -55848,6 +57376,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, gate",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Mass Heal",
   Key="Scroll of Heal (Mass)",
@@ -55886,6 +57415,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, mass heal",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Implosion",
   Key="Scroll of Implosion",
@@ -55924,6 +57454,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, implosion",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Miracle",
   Key="Scroll of Miracle",
@@ -55962,6 +57493,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, miracle",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Soul Bind (Divine)",
   Key="Scroll of Soul Bind (Divine)",
@@ -56000,6 +57532,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, soul bind",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Storm of Vengeance",
   Key="Scroll of Storm of Vengeance",
@@ -56038,6 +57571,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, storm of vengeance",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of Summon Monster IX (Divine)",
   Key="Scroll of Summon Monster IX (Divine)",
@@ -56076,6 +57610,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, summon monster ix",
   },
 })
+
 CopyEquipment("Scroll", {
   Name="Scroll of True Resurrection",
   Key="Scroll of True Resurrection",
@@ -56115,6 +57650,7 @@ CopyEquipment("Scroll", {
     ['Construction Requirements']="Scribe Scroll, true resurrection",
   },
 })
+
 DefineEquipment({
   Name="Book of Infinite Spells",
   Key="Book of Infinite Spells",
@@ -56177,6 +57713,7 @@ DefineEquipment({
     Destruction="The book of infinite spells can be destroyed when the current page contains the erase spell, by casting the spell on the book itself.",
   },
 })
+
 DefineEquipment({
   Name="Deck of Many Things",
   Key="Deck of Many Things",
@@ -56199,6 +57736,7 @@ DefineEquipment({
     Destruction="The deck of many things can be destroyed by losing it in a wager with a deity of law. The deity must be unaware of the nature of the deck.",
   },
 })
+
 DefineEquipment({
   Name="Philosopher's Stone",
   Key="Philosopher's Stone",
@@ -56221,6 +57759,7 @@ DefineEquipment({
     Destruction="The philosopher's stone can be destroyed by being placed in the heel of a titan's boot for at least 1 entire week.",
   },
 })
+
 DefineEquipment({
   Name="Sphere of Annihilation",
   Key="Sphere of Annihilation",
@@ -56244,6 +57783,7 @@ DefineEquipment({
     Destruction="Should a gate spell be cast upon a sphere of annihilation, there is a 50%% chance (01-50 on d%%) that the spell destroys it, a 35%% chance (51-85) that the spell does nothing, and a 15%% chance (86-100) that a gap is torn in the spatial fabric, catapulting everything within a 180-foot radius into another plane. If a rod of cancellation touches a sphere of annihilation, they negate each other in a tremendous explosion. Everything within a 60-foot radius takes 2d6 x 10 points of damage. Dispel magic and mage's disjunction have no effect on a sphere.",
   },
 })
+
 DefineEquipment({
   Name="Staff of the Magi",
   Key="Staff of the Magi",
@@ -56284,6 +57824,7 @@ DefineEquipment({
     Destruction="A staff of the magi can be broken for a retributive strike. Such an act must be purposeful and declared by the wielder. All charges in the staff are released in a 30-foot spread. All within 10 feet of the broken staff take hit points of damage equal to 8 times the number of charges in the staff, those between 11 feet and 20 feet away take points equal to 6 times the number of charges, and those 21 feet to 30 feet distant take 4 times the number of charges. A DC 23 Reflex save reduces damage by half.&nl;The character breaking the staff has a 50%% chance (01-50 on d%%) of traveling to another plane of existence, but if she does not (51-100), the explosive release of spell energy destroys her (no saving throw).",
   },
 })
+
 DefineEquipment({
   Name="Talisman of Pure Good",
   Key="Talisman of Pure Good",
@@ -56315,6 +57856,7 @@ DefineEquipment({
     Destruction="The talisman of pure good can be destroyed by placing it in the mouth of a holy man who died while committing a truly heinous act of his own free will.",
   },
 })
+
 DefineEquipment({
   Name="Talisman of the Sphere",
   Key="Talisman of the Sphere",
@@ -56338,6 +57880,7 @@ DefineEquipment({
     Destruction="A talisman of the sphere can only be destroyed by throwing the item into a sphere of annihilation.",
   },
 })
+
 DefineEquipment({
   Name="Talisman of Ultimate Evil",
   Key="Talisman of Ultimate Evil",
@@ -56369,6 +57912,7 @@ DefineEquipment({
     Destruction="If a talisman of ultimate evil is given to the newborn child of a redeemed villain, it instantly crumbles to dust.",
   },
 })
+
 DefineEquipment({
   Name="Codex of the Infinite Planes",
   Key="Codex of the Infinite Planes",
@@ -56391,6 +57935,7 @@ DefineEquipment({
     Destruction="The Codex of the Infinite Planes is destroyed if one page is torn out and left on each plane in existence. Note that tearing out a page immediately triggers a catastrophe.",
   },
 })
+
 DefineEquipment({
   Name="Black Dragon Orb",
   Key="Orb of Dragonkind (Black)",
@@ -56424,6 +57969,7 @@ DefineEquipment({
     Destruction="An orb of dragonkind immediately shatters if it is caught in the breath weapon of a dragon who is a blood relative of the dragon trapped within. This causes everyone within 90 feet to be struck by the breath weapon of that dragon, released as the orb explodes.",
   },
 })
+
 DefineEquipment({
   Name="Blue Dragon Orb",
   Key="Orb of Dragonkind (Blue)",
@@ -56457,6 +58003,7 @@ DefineEquipment({
     Destruction="An orb of dragonkind immediately shatters if it is caught in the breath weapon of a dragon who is a blood relative of the dragon trapped within. This causes everyone within 90 feet to be struck by the breath weapon of that dragon, released as the orb explodes.",
   },
 })
+
 DefineEquipment({
   Name="Brass Dragon Orb",
   Key="Orb of Dragonkind (Brass)",
@@ -56490,6 +58037,7 @@ DefineEquipment({
     Destruction="An orb of dragonkind immediately shatters if it is caught in the breath weapon of a dragon who is a blood relative of the dragon trapped within. This causes everyone within 90 feet to be struck by the breath weapon of that dragon, released as the orb explodes.",
   },
 })
+
 DefineEquipment({
   Name="Bronze Dragon Orb",
   Key="Orb of Dragonkind (Bronze)",
@@ -56523,6 +58071,7 @@ DefineEquipment({
     Destruction="An orb of dragonkind immediately shatters if it is caught in the breath weapon of a dragon who is a blood relative of the dragon trapped within. This causes everyone within 90 feet to be struck by the breath weapon of that dragon, released as the orb explodes.",
   },
 })
+
 DefineEquipment({
   Name="Copper Dragon Orb",
   Key="Orb of Dragonkind (Copper)",
@@ -56556,6 +58105,7 @@ DefineEquipment({
     Destruction="An orb of dragonkind immediately shatters if it is caught in the breath weapon of a dragon who is a blood relative of the dragon trapped within. This causes everyone within 90 feet to be struck by the breath weapon of that dragon, released as the orb explodes.",
   },
 })
+
 DefineEquipment({
   Name="Gold Dragon Orb",
   Key="Orb of Dragonkind (Gold)",
@@ -56651,6 +58201,7 @@ DefineEquipment({
     Destruction="An orb of dragonkind immediately shatters if it is caught in the breath weapon of a dragon who is a blood relative of the dragon trapped within. This causes everyone within 90 feet to be struck by the breath weapon of that dragon, released as the orb explodes.",
   },
 })
+
 DefineEquipment({
   Name="Green Dragon Orb",
   Key="Orb of Dragonkind (Green)",
@@ -56683,6 +58234,7 @@ DefineEquipment({
     Destruction="An orb of dragonkind immediately shatters if it is caught in the breath weapon of a dragon who is a blood relative of the dragon trapped within. This causes everyone within 90 feet to be struck by the breath weapon of that dragon, released as the orb explodes.",
   },
 })
+
 DefineEquipment({
   Name="Red Dragon Orb",
   Key="Orb of Dragonkind (Red)",
@@ -56715,6 +58267,7 @@ DefineEquipment({
     Destruction="An orb of dragonkind immediately shatters if it is caught in the breath weapon of a dragon who is a blood relative of the dragon trapped within. This causes everyone within 90 feet to be struck by the breath weapon of that dragon, released as the orb explodes.",
   },
 })
+
 DefineEquipment({
   Name="Silver Dragon Orb",
   Key="Orb of Dragonkind (Silver)",
@@ -56748,6 +58301,7 @@ DefineEquipment({
     Destruction="An orb of dragonkind immediately shatters if it is caught in the breath weapon of a dragon who is a blood relative of the dragon trapped within. This causes everyone within 90 feet to be struck by the breath weapon of that dragon, released as the orb explodes.",
   },
 })
+
 DefineEquipment({
   Name="White Dragon Orb",
   Key="Orb of Dragonkind (White)",
@@ -56781,6 +58335,7 @@ DefineEquipment({
     Destruction="An orb of dragonkind immediately shatters if it is caught in the breath weapon of a dragon who is a blood relative of the dragon trapped within. This causes everyone within 90 feet to be struck by the breath weapon of that dragon, released as the orb explodes.",
   },
 })
+
 DefineEquipment({
   Name="The Shadowstaff",
   Key="Shadowstaff",
@@ -56805,3 +58360,4 @@ DefineEquipment({
     Plural="No",
   },
 })
+

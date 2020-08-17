@@ -10,18 +10,22 @@ ModifyAbility({
   Name="Default",
   Category="Internal",
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
+
 DefineAbility({
   Name="Intelligence Lock Tracker",
   Category="Internal",
@@ -447,6 +451,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 1",
   Category="Internal",
@@ -455,6 +460,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 2",
   Category="Internal",
@@ -463,6 +469,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 6",
   Category="Internal",
@@ -471,6 +478,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 7",
   Category="Internal",
@@ -479,6 +487,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 8",
   Category="Internal",
@@ -487,6 +496,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 9",
   Category="Internal",
@@ -495,6 +505,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 10",
   Category="Internal",
@@ -503,6 +514,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 11",
   Category="Internal",
@@ -511,6 +523,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 12",
   Category="Internal",
@@ -519,6 +532,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 13",
   Category="Internal",
@@ -527,6 +541,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 14",
   Category="Internal",
@@ -535,6 +550,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 15",
   Category="Internal",
@@ -543,6 +559,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 16",
   Category="Internal",
@@ -551,6 +568,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 17",
   Category="Internal",
@@ -559,6 +577,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 18",
   Category="Internal",
@@ -567,6 +586,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 19",
   Category="Internal",
@@ -575,6 +595,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 20",
   Category="Internal",
@@ -583,6 +604,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 21",
   Category="Internal",
@@ -591,6 +613,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 22",
   Category="Internal",
@@ -599,6 +622,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 23",
   Category="Internal",
@@ -607,6 +631,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 24",
   Category="Internal",
@@ -615,6 +640,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 25",
   Category="Internal",
@@ -623,6 +649,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 26",
   Category="Internal",
@@ -631,6 +658,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 27",
   Category="Internal",
@@ -639,6 +667,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 28",
   Category="Internal",
@@ -647,6 +676,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 29",
   Category="Internal",
@@ -655,6 +685,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Lock Int ~ 30",
   Category="Internal",
@@ -663,6 +694,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Special Mount",
   Key="Base Companion ~ Special Mount",
@@ -837,6 +869,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Animal Companion",
   Key="Base Companion ~ Animal Companion",
@@ -1011,6 +1044,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Bonus Tricks",
   Key="Animal Companion ~ Bonus Tricks",
@@ -1046,6 +1080,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Link",
   Key="Animal Companion ~ Link",
@@ -1061,6 +1096,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Share Spells",
   Key="Animal Companion ~ Share Spells",
@@ -1076,6 +1112,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Ability Score Increase",
   Key="Animal Companion ~ Ability Score Increase",
@@ -1100,6 +1137,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Devotion",
   Key="Animal Companion ~ Devotion",
@@ -1115,6 +1153,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Multiattack",
   Key="Animal Companion ~ Multiattack",
@@ -1154,6 +1193,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Evasion",
   Key="Animal Companion ~ Evasion",
@@ -1169,6 +1209,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Improved Evasion",
   Key="Animal Companion ~ Improved Evasion",
@@ -1184,6 +1225,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Spell Resistance",
   Key="Animal Companion ~ Spell Resistance",
@@ -1201,6 +1243,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="AC Bonus",
   Key="Animal Companion ~ AC Bonus",
@@ -1230,6 +1273,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Stat Bonus",
   Key="Animal Companion ~ Stat Bonus",
@@ -1256,6 +1300,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 ModifyAbility({
   Name="Animal Companion ~ Multiattack",
   Category="Special Ability",
@@ -1268,6 +1313,7 @@ ModifyAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Mod Bonus Tricks",
   Key="Companion ~ Bonus Tricks",
@@ -1289,6 +1335,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Mod Link",
   Key="Companion ~ Link",
@@ -1310,6 +1357,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Mod Share Spells",
   Key="Companion ~ Share Spells",
@@ -1331,6 +1379,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Mod Ability Score Increase",
   Key="Companion ~ Ability Score Increase",
@@ -1352,6 +1401,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Mod Devotion",
   Key="Companion ~ Devotion",
@@ -1373,6 +1423,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Mod Multiattack",
   Key="Companion ~ Multiattack",
@@ -1394,6 +1445,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Mod Evasion",
   Key="Companion ~ Evasion",
@@ -1415,6 +1467,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Mod Improved Evasion",
   Key="Companion ~ Improved Evasion",
@@ -1436,6 +1489,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Mod Spell Resistance",
   Key="Companion ~ Spell Resistance (AC)",
@@ -1457,6 +1511,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Mod Spell Resistance",
   Key="Companion ~ Spell Resistance (SM)",
@@ -1478,6 +1533,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Companion Skills",
   Category="Special Ability",
@@ -1496,6 +1552,7 @@ DefineAbility({
     "Special",
   },
 })
+
 DefineAbility({
   Name="+2 to Dexterity and Constitution",
   Category="Special Ability",
@@ -1524,6 +1581,7 @@ DefineAbility({
     "CompChoice",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement",
   Key="Companion Advancement",
@@ -1549,6 +1607,7 @@ DefineAbility({
     "CompChoice",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Ape)",
   Key="Companion Advancement ~ Ape",
@@ -1572,6 +1631,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Badger (Wolverine))",
   Key="Companion Advancement ~ Wolverine",
@@ -1595,6 +1655,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Bear)",
   Key="Companion Advancement ~ Bear",
@@ -1618,6 +1679,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Bird)",
   Key="Companion Advancement ~ Bird",
@@ -1645,6 +1707,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Boar)",
   Key="Companion Advancement ~ Boar",
@@ -1677,6 +1740,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Camel)",
   Key="Companion Advancement ~ Camel",
@@ -1704,6 +1768,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Cat (Small (Cheetah)))",
   Key="Companion Advancement ~ Cheetah",
@@ -1736,6 +1801,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Cat (Small (Leopard)))",
   Key="Companion Advancement ~ Leopard",
@@ -1768,6 +1834,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Crocodile (Alligator))",
   Key="Companion Advancement ~ Alligator",
@@ -1803,6 +1870,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Dog)",
   Key="Companion Advancement ~ Dog",
@@ -1837,6 +1905,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Horse)",
   Key="Companion Advancement ~ Horse",
@@ -1873,6 +1942,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Pony)",
   Key="Companion Advancement ~ Pony",
@@ -1909,6 +1979,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Shark)",
   Key="Companion Advancement ~ Shark",
@@ -1941,6 +2012,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Snake (Constrictor))",
   Key="Companion Advancement ~ Snake (Constrictor)",
@@ -1984,6 +2056,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Snake (Viper))",
   Key="Companion Advancement ~ Snake (Viper)",
@@ -2007,6 +2080,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Dire Rat)",
   Key="Companion Advancement ~ Dire Rat",
@@ -2043,6 +2117,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Cat (Big (Lion)))",
   Key="Companion Advancement ~ Lion",
@@ -2076,6 +2151,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Cat (Big (Tiger)))",
   Key="Companion Advancement ~ Tiger",
@@ -2109,6 +2185,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Dinosaur (Deinonychus))",
   Key="Companion Advancement ~ Dinosaur (Deinonychus)",
@@ -2159,6 +2236,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Dinosaur (Velociraptor))",
   Key="Companion Advancement ~ Dinosaur (Velociraptor)",
@@ -2209,6 +2287,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Wolf)",
   Key="Companion Advancement ~ Wolf",
@@ -2232,6 +2311,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="+4 bonus on Will saves made to halve the damage from positive channeled energy",
   Key="Shadow Companion Saves",
@@ -2240,6 +2320,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Cannot be turned or commanded",
   Key="Shadow Companion Resistance",
@@ -2248,6 +2329,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Strength Damage",
   Category="Special Ability",
@@ -2265,6 +2347,7 @@ DefineAbility({
     "Supernatural",
   },
 })
+
 DefineAbility({
   Name="Attack",
   Key="Animal Trick ~ Attack",
@@ -2308,6 +2391,7 @@ DefineAbility({
     "AnimalTrick",
   },
 })
+
 DefineAbility({
   Name="Attack II",
   Key="Animal Trick ~ Attack II",
@@ -2327,6 +2411,7 @@ DefineAbility({
     "AnimalTrick",
   },
 })
+
 DefineAbility({
   Name="Come",
   Key="Animal Trick ~ Come",
@@ -2339,6 +2424,7 @@ DefineAbility({
     "AnimalTrick",
   },
 })
+
 DefineAbility({
   Name="Defend",
   Key="Animal Trick ~ Defend",
@@ -2351,6 +2437,7 @@ DefineAbility({
     "AnimalTrick",
   },
 })
+
 DefineAbility({
   Name="Down",
   Key="Animal Trick ~ Down",
@@ -2363,6 +2450,7 @@ DefineAbility({
     "AnimalTrick",
   },
 })
+
 DefineAbility({
   Name="Fetch",
   Key="Animal Trick ~ Fetch",
@@ -2375,6 +2463,7 @@ DefineAbility({
     "AnimalTrick",
   },
 })
+
 DefineAbility({
   Name="Guard",
   Key="Animal Trick ~ Guard",
@@ -2387,6 +2476,7 @@ DefineAbility({
     "AnimalTrick",
   },
 })
+
 DefineAbility({
   Name="Heel",
   Key="Animal Trick ~ Heel",
@@ -2399,6 +2489,7 @@ DefineAbility({
     "AnimalTrick",
   },
 })
+
 DefineAbility({
   Name="Perform",
   Key="Animal Trick ~ Perform",
@@ -2411,6 +2502,7 @@ DefineAbility({
     "AnimalTrick",
   },
 })
+
 DefineAbility({
   Name="Seek",
   Key="Animal Trick ~ Seek",
@@ -2423,6 +2515,7 @@ DefineAbility({
     "AnimalTrick",
   },
 })
+
 DefineAbility({
   Name="Stay",
   Key="Animal Trick ~ Stay",
@@ -2435,6 +2528,7 @@ DefineAbility({
     "AnimalTrick",
   },
 })
+
 DefineAbility({
   Name="Track",
   Key="Animal Trick ~ Track",
@@ -2447,6 +2541,7 @@ DefineAbility({
     "AnimalTrick",
   },
 })
+
 DefineAbility({
   Name="Work",
   Key="Animal Trick ~ Work",
@@ -2459,6 +2554,7 @@ DefineAbility({
     "AnimalTrick",
   },
 })
+
 DefineAbility({
   Name="Air Walk",
   Key="Animal Trick ~ Air Walk",
@@ -2471,6 +2567,7 @@ DefineAbility({
     "AnimalTrick",
   },
 })
+
 DefineAbility({
   Name="Animal Trained for Combat",
   Key="Animal Training ~ Combat Training",
@@ -2513,6 +2610,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Animal Trained for Fighting",
   Key="Animal Training ~ Fighting",
@@ -2549,6 +2647,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Animal Trained for Guarding",
   Key="Animal Training ~ Guarding",
@@ -2589,6 +2688,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Animal Trained for Heavy Labor",
   Key="Animal Training ~ Heavy Labor",
@@ -2624,6 +2724,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Animal Trained for Hunting",
   Key="Animal Training ~ Hunting",
@@ -2666,6 +2767,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Animal Trained for Performance",
   Key="Animal Training ~ Performance",
@@ -2707,6 +2809,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Animal Trained for Riding",
   Key="Animal Training ~ Riding",
@@ -2743,6 +2846,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="CompStat 1 Strength",
   Key="Companion Stat ~ STR",
@@ -2766,6 +2870,7 @@ DefineAbility({
     "CompStatChoice",
   },
 })
+
 DefineAbility({
   Name="CompStat 2 Dexterity",
   Key="Companion Stat ~ DEX",
@@ -2789,6 +2894,7 @@ DefineAbility({
     "CompStatChoice",
   },
 })
+
 DefineAbility({
   Name="CompStat 3 Constitution",
   Key="Companion Stat ~ CON",
@@ -2812,6 +2918,7 @@ DefineAbility({
     "CompStatChoice",
   },
 })
+
 DefineAbility({
   Name="CompStat 4 Intelligence",
   Key="Companion Stat ~ INT",
@@ -2846,6 +2953,7 @@ DefineAbility({
     "CompStatChoice",
   },
 })
+
 DefineAbility({
   Name="CompStat 5 Wisdom",
   Key="Companion Stat ~ WIS",
@@ -2869,6 +2977,7 @@ DefineAbility({
     "CompStatChoice",
   },
 })
+
 DefineAbility({
   Name="CompStat 6 Charisma",
   Key="Companion Stat ~ CHA",
@@ -2892,6 +3001,7 @@ DefineAbility({
     "CompStatChoice",
   },
 })
+
 DefineAbility({
   Name="Companion Skill",
   Key="Companion Skill",
@@ -2916,6 +3026,7 @@ DefineAbility({
     "AnimalCompanionSkill",
   },
 })
+
 DefineAbility({
   Name="Companion Skill (Int > 3)",
   Key="Companion Skill ~ INT Higher",
@@ -2945,6 +3056,7 @@ DefineAbility({
     "AnimalCompanionSkill",
   },
 })
+
 DefineAbility({
   Name="Poison",
   Category="Special Ability",
@@ -2952,6 +3064,7 @@ DefineAbility({
     "SpecialAttack",
   },
 })
+
 DefineAbility({
   Name="Spit",
   Key="Camel ~ Spit",
@@ -2960,6 +3073,7 @@ DefineAbility({
     "SpecialAttack",
   },
 })
+
 DefineAbility({
   Name="Disease",
   Key="Dire Rat ~ Disease",
@@ -2989,6 +3103,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Death Roll",
   Key="Crocodile ~ Death Roll",
@@ -3038,6 +3153,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Hold Breath",
   Key="Crocodile ~ Hold Breath",
@@ -3065,6 +3181,7 @@ DefineAbility({
     "Extraordinary",
   },
 })
+
 DefineAbility({
   Name="Sprint",
   Key="Crocodile ~ Sprint",
@@ -3080,6 +3197,7 @@ DefineAbility({
     "ModifyMovement",
   },
 })
+
 DefineAbility({
   Name="Tail Slap",
   Key="Crocodile ~ Tail Slap",
@@ -3217,6 +3335,7 @@ DefineAbility({
     "Secondary",
   },
 })
+
 DefineAbility({
   Name="Sprint",
   Key="Cat ~ Sprint",
@@ -3232,6 +3351,7 @@ DefineAbility({
     "ModifyMovement",
   },
 })
+
 SetSource({
   SourceLong="Bestiary 2",
   SourceShort="B2",
@@ -3282,6 +3402,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Dinosaur (Parasaurolophus))",
   Key="Companion Advancement ~ Dinosaur (Parasaurolophus)",
@@ -3332,6 +3453,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Dinosaur (Tylosaurus))",
   Key="Companion Advancement ~ Dinosaur (Tylosaurus)",
@@ -3375,6 +3497,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Gar)",
   Key="Companion Advancement ~ Gar",
@@ -3409,6 +3532,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Herd Animal (Ram))",
   Key="Companion Advancement ~ Herd Animal (Ram)",
@@ -3480,6 +3604,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Hippopotamus)",
   Key="Companion Advancement ~ Hippopotamus",
@@ -3497,6 +3622,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Megafauna (Arsinoitherium))",
   Key="Companion Advancement ~ Megafauna (Arsinoitherium)",
@@ -3514,6 +3640,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Megafauna (Gylptodon))",
   Key="Companion Advancement ~ Megafauna (Gylptodon)",
@@ -3531,6 +3658,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Megafauna (Megaloceros))",
   Key="Companion Advancement ~ Megafauna (Megaloceros)",
@@ -3616,6 +3744,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Megafauna (Megatherium))",
   Key="Companion Advancement ~ Megafauna (Megatherium)",
@@ -3673,6 +3802,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Primate (Baboon))",
   Key="Companion Advancement ~ Primate (Baboon)",
@@ -3697,6 +3827,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Ray (Manta))",
   Key="Companion Advancement ~ Ray (Manta)",
@@ -3727,6 +3858,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Ray (Stingray))",
   Key="Companion Advancement ~ Ray (Stingray)",
@@ -3768,6 +3900,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Companion Advancement (Turtle (Giant Snapping))",
   Key="Companion Advancement ~ Turtle (Giant Snapping)",
@@ -3800,6 +3933,7 @@ DefineAbility({
     "CompanionAdvancement",
   },
 })
+
 DefineAbility({
   Name="Dog Bite Attackx1",
   Category="Internal",
@@ -3813,6 +3947,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Dog Bite Attackx2",
   Category="Internal",
@@ -3835,6 +3970,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Acrobatic",
   Key="Animal Companion Feat ~ Acrobatic",
@@ -3856,6 +3992,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Agile Maneuvers",
   Key="Animal Companion Feat ~ Agile Maneuvers",
@@ -3877,6 +4014,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Armor Proficiency (Light)",
   Key="Animal Companion Feat ~ Armor Proficiency (Light)",
@@ -3898,6 +4036,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Armor Proficiency (Medium)",
   Key="Animal Companion Feat ~ Armor Proficiency (Medium)",
@@ -3940,6 +4079,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Armor Proficiency (Heavy)",
   Key="Animal Companion Feat ~ Armor Proficiency (Heavy)",
@@ -3982,6 +4122,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Athletic",
   Key="Animal Companion Feat ~ Athletic",
@@ -4003,6 +4144,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Blind-Fight",
   Key="Animal Companion Feat ~ Blind-Fight",
@@ -4024,6 +4166,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Combat Reflexes",
   Key="Animal Companion Feat ~ Combat Reflexes",
@@ -4048,6 +4191,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Diehard",
   Key="Animal Companion Feat ~ Diehard",
@@ -4069,6 +4213,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Dodge",
   Key="Animal Companion Feat ~ Dodge",
@@ -4095,6 +4240,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Endurance",
   Key="Animal Companion Feat ~ Endurance",
@@ -4116,6 +4262,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Great Fortitude",
   Key="Animal Companion Feat ~ Great Fortitude",
@@ -4137,6 +4284,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Improved Bull Rush",
   Key="Animal Companion Feat ~ Improved Bull Rush",
@@ -4171,6 +4319,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Improved Initiative",
   Key="Animal Companion Feat ~ Improved Initiative",
@@ -4192,6 +4341,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Improved Natural Armor",
   Key="Animal Companion Feat ~ Improved Natural Armor",
@@ -4228,6 +4378,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Improved Natural Attack",
   Key="Animal Companion Feat ~ Improved Natural Attack",
@@ -4265,6 +4416,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Improved Overrun",
   Key="Animal Companion Feat ~ Improved Overrun",
@@ -4299,6 +4451,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Intimidating Prowess",
   Key="Animal Companion Feat ~ Intimidating Prowess",
@@ -4320,6 +4473,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Iron Will",
   Key="Animal Companion Feat ~ Iron Will",
@@ -4341,6 +4495,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Lightning Reflexes",
   Key="Animal Companion Feat ~ Lightning Reflexes",
@@ -4362,6 +4517,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Mobility",
   Key="Animal Companion Feat ~ Mobility",
@@ -4407,6 +4563,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Power Attack",
   Key="Animal Companion Feat ~ Power Attack",
@@ -4440,6 +4597,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Run",
   Key="Animal Companion Feat ~ Run",
@@ -4461,6 +4619,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Skill Focus",
   Key="Animal Companion Feat ~ Skill Focus",
@@ -4489,6 +4648,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Spring Attack",
   Key="Animal Companion Feat ~ Spring Attack",
@@ -4537,6 +4697,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Stealthy",
   Key="Animal Companion Feat ~ Stealthy",
@@ -4558,6 +4719,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Toughness",
   Key="Animal Companion Feat ~ Toughness",
@@ -4584,6 +4746,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Weapon Finesse",
   Key="Animal Companion Feat ~ Weapon Finesse",
@@ -4605,6 +4768,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Weapon Focus",
   Key="Animal Companion Feat ~ Weapon Focus",
@@ -4633,6 +4797,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="Add Normal Feat",
   Key="Animal Companion Feat ~ Feat",
@@ -4664,6 +4829,7 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+
 DefineAbility({
   Name="GM Granted Animal Companion Feat",
   Key="Animal Companion Feat ~ GM Feat",
@@ -4690,3 +4856,4 @@ DefineAbility({
     "AnimalCompanionFeat",
   },
 })
+

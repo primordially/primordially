@@ -24,6 +24,7 @@ DefineEquipment({
     "Arrow",
   },
 })
+
 DefineEquipment({
   Name="Bolt",
   Key="Bolt (Base)",
@@ -42,6 +43,7 @@ DefineEquipment({
     "Bolt",
   },
 })
+
 DefineEquipment({
   Name="Repeating Bolt",
   Key="Repeating Bolt (Base)",
@@ -60,6 +62,7 @@ DefineEquipment({
     "Bolt",
   },
 })
+
 DefineEquipment({
   Name="Bullet",
   Key="Sling Bullet (Base)",
@@ -78,6 +81,7 @@ DefineEquipment({
     "Bullet",
   },
 })
+
 DefineEquipment({
   Name="Blowgun Dart",
   Key="Blowgun Dart (Base)",
@@ -93,6 +97,7 @@ DefineEquipment({
     "Dart",
   },
 })
+
 CopyEquipment("Arrow (Base)", {
   Name="Arrow",
   Key="Arrow",
@@ -109,6 +114,7 @@ CopyEquipment("Arrow (Base)", {
     },
   },
 })
+
 CopyEquipment("Bolt (Base)", {
   Name="Bolt, Crossbow",
   Key="Bolt (Crossbow)",
@@ -126,6 +132,7 @@ CopyEquipment("Bolt (Base)", {
     },
   },
 })
+
 CopyEquipment("Repeating Bolt (Base)", {
   Name="Bolt, Repeating Crossbow",
   Key="Bolt (Crossbow/Repeating)",
@@ -143,6 +150,7 @@ CopyEquipment("Repeating Bolt (Base)", {
     },
   },
 })
+
 CopyEquipment("Sling Bullet (Base)", {
   Name="Bullet, Sling",
   Key="Bullet (Sling)",
@@ -157,6 +165,7 @@ CopyEquipment("Sling Bullet (Base)", {
     },
   },
 })
+
 CopyEquipment("Blowgun Dart (Base)", {
   Name="Dart, Blowgun",
   Key="Dart (Blowgun)",
@@ -171,6 +180,7 @@ CopyEquipment("Blowgun Dart (Base)", {
     },
   },
 })
+
 CopyEquipment("Arrow (Base)", {
   Name="Arrows (20)",
   Key="Arrows (20)",
@@ -194,6 +204,7 @@ CopyEquipment("Arrow (Base)", {
     "Stack",
   },
 })
+
 CopyEquipment("Bolt (Base)", {
   Name="Bolts, Crossbow (10)",
   Key="Bolts (Crossbow/10)",
@@ -217,6 +228,7 @@ CopyEquipment("Bolt (Base)", {
     "Stack",
   },
 })
+
 CopyEquipment("Repeating Bolt (Base)", {
   Name="Bolts, Repeating Crossbow (5)",
   Key="Bolts (Crossbow/Repeating/5)",
@@ -240,6 +252,7 @@ CopyEquipment("Repeating Bolt (Base)", {
     "Stack",
   },
 })
+
 CopyEquipment("Sling Bullet (Base)", {
   Name="Bullets, Sling (10)",
   Key="Bullets (Sling/10)",
@@ -260,6 +273,7 @@ CopyEquipment("Sling Bullet (Base)", {
     "Stack",
   },
 })
+
 CopyEquipment("Blowgun Dart (Base)", {
   Name="Darts, Blowgun (10)",
   Key="Darts (Blowgun/10)",
@@ -280,6 +294,7 @@ CopyEquipment("Blowgun Dart (Base)", {
     "Stack",
   },
 })
+
 CopyEquipment("Bolt (Base)", {
   Name="Bolt, Screaming",
   Key="Bolt (Screaming)",
@@ -319,6 +334,7 @@ CopyEquipment("Bolt (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, doom",
   },
 })
+
 CopyEquipment("Arrow (Base)", {
   Name="Arrow, Slaying",
   Key="Arrow (Slaying)",
@@ -358,6 +374,7 @@ CopyEquipment("Arrow (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, finger of death",
   },
 })
+
 CopyEquipment("Arrow (Base)", {
   Name="Arrow, Greater Slaying",
   Key="Arrow (Slaying/Greater)",
@@ -397,6 +414,7 @@ CopyEquipment("Arrow (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, heightened finger of death",
   },
 })
+
 CopyEquipment("Arrow (Base)", {
   Name="Arrow, Sleep",
   Key="Arrow (Sleep)",
@@ -436,6 +454,7 @@ CopyEquipment("Arrow (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, sleep",
   },
 })
+
 DefineEquipment({
   Name="Padded Armor",
   Key="Padded Armor (Base)",
@@ -487,6 +506,7 @@ DefineEquipment({
     "Nonmetal",
   },
 })
+
 DefineEquipment({
   Name="Leather Armor",
   Key="Leather Armor (Base)",
@@ -553,6 +573,7 @@ DefineEquipment({
     "Nonmetal",
   },
 })
+
 DefineEquipment({
   Name="Studded Leather Armor",
   Key="Studded Leather (Base)",
@@ -630,6 +651,7 @@ DefineEquipment({
     "Suit",
   },
 })
+
 DefineEquipment({
   Name="Chain Shirt",
   Key="Chain Shirt (Base)",
@@ -707,6 +729,7 @@ DefineEquipment({
     "Suit",
   },
 })
+
 DefineEquipment({
   Name="Hide Armor",
   Key="Hide Armor (Base)",
@@ -785,6 +808,7 @@ DefineEquipment({
     "Nonmetal",
   },
 })
+
 DefineEquipment({
   Name="Scale Mail",
   Key="Scale Mail (Base)",
@@ -862,6 +886,7 @@ DefineEquipment({
     "Suit",
   },
 })
+
 DefineEquipment({
   Name="Chainmail",
   Key="Chainmail (Base)",
@@ -939,6 +964,7 @@ DefineEquipment({
     "Suit",
   },
 })
+
 DefineEquipment({
   Name="Breastplate",
   Key="Breastplate (Base)",
@@ -1016,6 +1042,7 @@ DefineEquipment({
     "Suit",
   },
 })
+
 DefineEquipment({
   Name="Splint Mail",
   Key="Splint Mail (Base)",
@@ -1093,6 +1120,7 @@ DefineEquipment({
     "Suit",
   },
 })
+
 DefineEquipment({
   Name="Banded Mail",
   Key="Banded Mail (Base)",
@@ -1170,6 +1198,7 @@ DefineEquipment({
     "Suit",
   },
 })
+
 DefineEquipment({
   Name="Half-Plate",
   Key="Half-Plate (Base)",
@@ -1247,6 +1276,7 @@ DefineEquipment({
     "Suit",
   },
 })
+
 DefineEquipment({
   Name="Full Plate",
   Key="Full Plate (Base)",
@@ -1324,6 +1354,7 @@ DefineEquipment({
     "Suit",
   },
 })
+
 CopyEquipment("Padded Armor (Base)", {
   Name="Padded Armor",
   Key="Padded",
@@ -1337,6 +1368,7 @@ CopyEquipment("Padded Armor (Base)", {
     },
   },
 })
+
 CopyEquipment("Leather Armor (Base)", {
   Name="Leather Armor",
   Key="Leather",
@@ -1350,6 +1382,7 @@ CopyEquipment("Leather Armor (Base)", {
     },
   },
 })
+
 CopyEquipment("Studded Leather (Base)", {
   Name="Studded Leather Armor",
   Key="Studded Leather",
@@ -1366,6 +1399,7 @@ CopyEquipment("Studded Leather (Base)", {
     },
   },
 })
+
 CopyEquipment("Chain Shirt (Base)", {
   Name="Chain Shirt",
   Key="Chain Shirt",
@@ -1379,6 +1413,7 @@ CopyEquipment("Chain Shirt (Base)", {
     },
   },
 })
+
 CopyEquipment("Hide Armor (Base)", {
   Name="Hide Armor",
   Key="Hide",
@@ -1392,6 +1427,7 @@ CopyEquipment("Hide Armor (Base)", {
     },
   },
 })
+
 CopyEquipment("Scale Mail (Base)", {
   Name="Scale Mail",
   Key="Scale Mail",
@@ -1405,6 +1441,7 @@ CopyEquipment("Scale Mail (Base)", {
     },
   },
 })
+
 CopyEquipment("Chainmail (Base)", {
   Name="Chainmail",
   Key="Chainmail",
@@ -1418,6 +1455,7 @@ CopyEquipment("Chainmail (Base)", {
     },
   },
 })
+
 CopyEquipment("Breastplate (Base)", {
   Name="Breastplate",
   Key="Breastplate",
@@ -1431,6 +1469,7 @@ CopyEquipment("Breastplate (Base)", {
     },
   },
 })
+
 CopyEquipment("Splint Mail (Base)", {
   Name="Splint Mail",
   Key="Splint Mail",
@@ -1444,6 +1483,7 @@ CopyEquipment("Splint Mail (Base)", {
     },
   },
 })
+
 CopyEquipment("Banded Mail (Base)", {
   Name="Banded Mail",
   Key="Banded Mail",
@@ -1457,6 +1497,7 @@ CopyEquipment("Banded Mail (Base)", {
     },
   },
 })
+
 CopyEquipment("Half-Plate (Base)", {
   Name="Half-Plate",
   Key="Half-Plate",
@@ -1470,6 +1511,7 @@ CopyEquipment("Half-Plate (Base)", {
     },
   },
 })
+
 CopyEquipment("Full Plate (Base)", {
   Name="Full Plate",
   Key="Full Plate",
@@ -1483,6 +1525,7 @@ CopyEquipment("Full Plate (Base)", {
     },
   },
 })
+
 CopyEquipment("Breastplate (Base)", {
   Name="Adamantine Breastplate",
   Key="Adamantine Breastplate",
@@ -1499,6 +1542,7 @@ CopyEquipment("Breastplate (Base)", {
     },
   },
 })
+
 CopyEquipment("Banded Mail (Base)", {
   Name="Banded Mail of Luck",
   Key="Banded Mail of Luck",
@@ -1531,6 +1575,7 @@ CopyEquipment("Banded Mail (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, bless",
   },
 })
+
 CopyEquipment("Breastplate (Base)", {
   Name="Breastplate of Command",
   Key="Breastplate of Command",
@@ -1585,6 +1630,7 @@ CopyEquipment("Breastplate (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, mass charm monster",
   },
 })
+
 CopyEquipment("Chainmail (Base)", {
   Name="Celestial Armor",
   Key="Celestial Armor",
@@ -1654,6 +1700,7 @@ CopyEquipment("Chainmail (Base)", {
     Types=nil,
   },
 })
+
 CopyEquipment("Full Plate (Base)", {
   Name="Demon Armor",
   Key="Demon Armor",
@@ -1709,6 +1756,7 @@ CopyEquipment("Full Plate (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, contagion",
   },
 })
+
 CopyEquipment("Full Plate (Base)", {
   Name="Dwarven Plate",
   Key="Dwarven Plate",
@@ -1725,6 +1773,7 @@ CopyEquipment("Full Plate (Base)", {
     },
   },
 })
+
 CopyEquipment("Full Plate (Base)", {
   Name="Dragonhide Plate",
   Key="Dragonhide Plate",
@@ -1741,6 +1790,7 @@ CopyEquipment("Full Plate (Base)", {
     },
   },
 })
+
 CopyEquipment("Chainmail (Base)", {
   Name="Elven Chain",
   Key="Elven Chain",
@@ -1772,6 +1822,7 @@ CopyEquipment("Chainmail (Base)", {
     Types=nil,
   },
 })
+
 CopyEquipment("Full Plate (Base)", {
   Name="Mithral Full Plate of Speed",
   Key="Mithral Full Plate of Speed",
@@ -1804,6 +1855,7 @@ CopyEquipment("Full Plate (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, haste",
   },
 })
+
 CopyEquipment("Chain Shirt (Base)", {
   Name="Mithral Shirt",
   Key="Mithral Shirt",
@@ -1821,6 +1873,7 @@ CopyEquipment("Chain Shirt (Base)", {
     },
   },
 })
+
 CopyEquipment("Full Plate (Base)", {
   Name="Plate Armor of the Deep",
   Key="Plate Armor of the Deep",
@@ -1862,6 +1915,7 @@ CopyEquipment("Full Plate (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, freedom of movement, tongues, water breathing",
   },
 })
+
 CopyEquipment("Hide Armor (Base)", {
   Name="Rhino Hide",
   Key="Rhino Hide",
@@ -1910,6 +1964,7 @@ CopyEquipment("Hide Armor (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, bull's strength",
   },
 })
+
 CopyEquipment("Padded Armor (Base)", {
   Name="Padded Barding",
   Key="Padded Barding (Base)",
@@ -1930,6 +1985,7 @@ CopyEquipment("Padded Armor (Base)", {
     "Mount",
   },
 })
+
 CopyEquipment("Leather Armor (Base)", {
   Name="Leather Barding",
   Key="Leather Barding (Base)",
@@ -1950,6 +2006,7 @@ CopyEquipment("Leather Armor (Base)", {
     "Mount",
   },
 })
+
 CopyEquipment("Studded Leather (Base)", {
   Name="Studded Leather Barding",
   Key="Studded Leather Barding (Base)",
@@ -1970,6 +2027,7 @@ CopyEquipment("Studded Leather (Base)", {
     "Mount",
   },
 })
+
 CopyEquipment("Chain Shirt (Base)", {
   Name="Chain Shirt Barding",
   Key="Chain Shirt Barding (Base)",
@@ -1990,6 +2048,7 @@ CopyEquipment("Chain Shirt (Base)", {
     "Mount",
   },
 })
+
 CopyEquipment("Hide Armor (Base)", {
   Name="Hide Barding",
   Key="Hide Barding (Base)",
@@ -2010,6 +2069,7 @@ CopyEquipment("Hide Armor (Base)", {
     "Mount",
   },
 })
+
 CopyEquipment("Scale Mail (Base)", {
   Name="Scale Mail Barding",
   Key="Scale Mail Barding (Base)",
@@ -2030,6 +2090,7 @@ CopyEquipment("Scale Mail (Base)", {
     "Mount",
   },
 })
+
 CopyEquipment("Chainmail (Base)", {
   Name="Chainmail Barding",
   Key="Chainmail Barding (Base)",
@@ -2050,6 +2111,7 @@ CopyEquipment("Chainmail (Base)", {
     "Mount",
   },
 })
+
 CopyEquipment("Breastplate (Base)", {
   Name="Breastplate Barding",
   Key="Breastplate Barding (Base)",
@@ -2070,6 +2132,7 @@ CopyEquipment("Breastplate (Base)", {
     "Mount",
   },
 })
+
 CopyEquipment("Splint Mail (Base)", {
   Name="Splint Mail Barding",
   Key="Splint Mail Barding (Base)",
@@ -2090,6 +2153,7 @@ CopyEquipment("Splint Mail (Base)", {
     "Mount",
   },
 })
+
 CopyEquipment("Banded Mail (Base)", {
   Name="Banded Mail Barding",
   Key="Banded Mail Barding (Base)",
@@ -2110,6 +2174,7 @@ CopyEquipment("Banded Mail (Base)", {
     "Mount",
   },
 })
+
 CopyEquipment("Half-Plate (Base)", {
   Name="Half-Plate Barding",
   Key="Half-Plate Barding (Base)",
@@ -2130,6 +2195,7 @@ CopyEquipment("Half-Plate (Base)", {
     "Mount",
   },
 })
+
 CopyEquipment("Full Plate (Base)", {
   Name="Full Plate Barding",
   Key="Full Plate Barding (Base)",
@@ -2150,6 +2216,7 @@ CopyEquipment("Full Plate (Base)", {
     "Mount",
   },
 })
+
 CopyEquipment("Padded Barding (Base)", {
   Name="Barding, Padded",
   Key="Barding (Padded)",
@@ -2164,6 +2231,7 @@ CopyEquipment("Padded Barding (Base)", {
     },
   },
 })
+
 CopyEquipment("Leather Barding (Base)", {
   Name="Barding, Leather",
   Key="Barding (Leather)",
@@ -2178,6 +2246,7 @@ CopyEquipment("Leather Barding (Base)", {
     },
   },
 })
+
 CopyEquipment("Studded Leather Barding (Base)", {
   Name="Barding, Studded Leather",
   Key="Barding (Studded Leather)",
@@ -2195,6 +2264,7 @@ CopyEquipment("Studded Leather Barding (Base)", {
     },
   },
 })
+
 CopyEquipment("Chain Shirt Barding (Base)", {
   Name="Barding, Chain Shirt",
   Key="Barding (Chain Shirt)",
@@ -2209,6 +2279,7 @@ CopyEquipment("Chain Shirt Barding (Base)", {
     },
   },
 })
+
 CopyEquipment("Hide Barding (Base)", {
   Name="Barding, Hide",
   Key="Barding (Hide)",
@@ -2223,6 +2294,7 @@ CopyEquipment("Hide Barding (Base)", {
     },
   },
 })
+
 CopyEquipment("Scale Mail Barding (Base)", {
   Name="Barding, Scale Mail",
   Key="Barding (Scale Mail)",
@@ -2237,6 +2309,7 @@ CopyEquipment("Scale Mail Barding (Base)", {
     },
   },
 })
+
 CopyEquipment("Chainmail Barding (Base)", {
   Name="Barding, Chainmail",
   Key="Barding (Chainmail)",
@@ -2251,6 +2324,7 @@ CopyEquipment("Chainmail Barding (Base)", {
     },
   },
 })
+
 CopyEquipment("Breastplate Barding (Base)", {
   Name="Barding, Breastplate",
   Key="Barding (Breastplate)",
@@ -2265,6 +2339,7 @@ CopyEquipment("Breastplate Barding (Base)", {
     },
   },
 })
+
 CopyEquipment("Splint Mail Barding (Base)", {
   Name="Barding, Splint Mail",
   Key="Barding (Splint Mail)",
@@ -2279,6 +2354,7 @@ CopyEquipment("Splint Mail Barding (Base)", {
     },
   },
 })
+
 CopyEquipment("Banded Mail Barding (Base)", {
   Name="Barding, Banded Mail",
   Key="Barding (Banded Mail)",
@@ -2293,6 +2369,7 @@ CopyEquipment("Banded Mail Barding (Base)", {
     },
   },
 })
+
 CopyEquipment("Half-Plate Barding (Base)", {
   Name="Barding, Half-Plate",
   Key="Barding (Half-Plate)",
@@ -2307,6 +2384,7 @@ CopyEquipment("Half-Plate Barding (Base)", {
     },
   },
 })
+
 CopyEquipment("Full Plate Barding (Base)", {
   Name="Barding, Full Plate",
   Key="Barding (Full Plate)",
@@ -2321,6 +2399,7 @@ CopyEquipment("Full Plate Barding (Base)", {
     },
   },
 })
+
 DefineEquipment({
   Name="Buckler",
   Key="Buckler (Base)",
@@ -2392,6 +2471,7 @@ DefineEquipment({
     "Buckler",
   },
 })
+
 DefineEquipment({
   Name="Light Wooden Shield",
   Key="Light Wooden Shield (Base)",
@@ -2474,6 +2554,7 @@ DefineEquipment({
     "Nonmetal",
   },
 })
+
 DefineEquipment({
   Name="Light Steel Shield",
   Key="Light Steel Shield (Base)",
@@ -2555,6 +2636,7 @@ DefineEquipment({
     "Weapon Group Close",
   },
 })
+
 DefineEquipment({
   Name="Heavy Wooden Shield",
   Key="Heavy Wooden Shield (Base)",
@@ -2652,6 +2734,7 @@ DefineEquipment({
     "Nonmetal",
   },
 })
+
 DefineEquipment({
   Name="Heavy Steel Shield",
   Key="Heavy Steel Shield (Base)",
@@ -2748,6 +2831,7 @@ DefineEquipment({
     "Weapon Group Close",
   },
 })
+
 DefineEquipment({
   Name="Tower Shield",
   Key="Tower Shield (Base)",
@@ -2854,6 +2938,7 @@ DefineEquipment({
     "Nonmetal",
   },
 })
+
 CopyEquipment("Buckler (Base)", {
   Name="Buckler",
   Key="Buckler",
@@ -2867,6 +2952,7 @@ CopyEquipment("Buckler (Base)", {
     },
   },
 })
+
 CopyEquipment("Light Wooden Shield (Base)", {
   Name="Shield, Light Wooden",
   Key="Shield (Light/Wooden)",
@@ -2881,6 +2967,7 @@ CopyEquipment("Light Wooden Shield (Base)", {
     },
   },
 })
+
 CopyEquipment("Light Steel Shield (Base)", {
   Name="Shield, Light Steel",
   Key="Shield (Light/Steel)",
@@ -2895,6 +2982,7 @@ CopyEquipment("Light Steel Shield (Base)", {
     },
   },
 })
+
 CopyEquipment("Heavy Wooden Shield (Base)", {
   Name="Shield, Heavy Wooden",
   Key="Shield (Heavy/Wooden)",
@@ -2909,6 +2997,7 @@ CopyEquipment("Heavy Wooden Shield (Base)", {
     },
   },
 })
+
 CopyEquipment("Heavy Steel Shield (Base)", {
   Name="Shield, Heavy Steel",
   Key="Shield (Heavy/Steel)",
@@ -2923,6 +3012,7 @@ CopyEquipment("Heavy Steel Shield (Base)", {
     },
   },
 })
+
 CopyEquipment("Tower Shield (Base)", {
   Name="Shield, Tower",
   Key="Shield (Tower)",
@@ -2937,6 +3027,7 @@ CopyEquipment("Tower Shield (Base)", {
     },
   },
 })
+
 CopyEquipment("Heavy Steel Shield (Base)", {
   Name="Absorbing Shield",
   Key="Absorbing Shield",
@@ -2969,6 +3060,7 @@ CopyEquipment("Heavy Steel Shield (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, disintegrate",
   },
 })
+
 CopyEquipment("Light Wooden Shield (Base)", {
   Name="Caster's Shield",
   Key="Caster's Shield",
@@ -3001,6 +3093,7 @@ CopyEquipment("Light Wooden Shield (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, Scribe Scroll, creator must be at least 6th level",
   },
 })
+
 CopyEquipment("Light Wooden Shield (Base)", {
   Name="Darkwood Buckler",
   Key="Darkwood Buckler",
@@ -3017,6 +3110,7 @@ CopyEquipment("Light Wooden Shield (Base)", {
     },
   },
 })
+
 CopyEquipment("Heavy Wooden Shield (Base)", {
   Name="Darkwood Shield",
   Key="Darkwood Shield",
@@ -3033,6 +3127,7 @@ CopyEquipment("Heavy Wooden Shield (Base)", {
     },
   },
 })
+
 CopyEquipment("Heavy Steel Shield (Base)", {
   Name="Lion's Shield",
   Key="Lion's Shield",
@@ -3065,6 +3160,7 @@ CopyEquipment("Heavy Steel Shield (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, summon nature's ally IV",
   },
 })
+
 CopyEquipment("Heavy Wooden Shield (Base)", {
   Name="Mithral Heavy Shield",
   Key="Mithral Heavy Shield",
@@ -3082,6 +3178,7 @@ CopyEquipment("Heavy Wooden Shield (Base)", {
     },
   },
 })
+
 CopyEquipment("Heavy Steel Shield (Base)", {
   Name="Spined Shield",
   Key="Spined Shield",
@@ -3117,6 +3214,7 @@ CopyEquipment("Heavy Steel Shield (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, magic missile",
   },
 })
+
 CopyEquipment("Heavy Wooden Shield (Base)", {
   Name="Winged Shield",
   Key="Winged Shield",
@@ -3159,6 +3257,7 @@ CopyEquipment("Heavy Wooden Shield (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, fly",
   },
 })
+
 DefineEquipment({
   Name="Demon Armor Claw Attack",
   Key="Demon Armor Claw Attack",
@@ -3191,6 +3290,7 @@ DefineEquipment({
     "Slashing",
   },
 })
+
 DefineEquipment({
   Name="Armor Spikes",
   Key="Armor Spikes",
@@ -3231,6 +3331,7 @@ DefineEquipment({
     "Weapon Group Natural",
   },
 })
+
 DefineEquipment({
   Name="Gauntlet",
   Key="Gauntlet (Base)",
@@ -3300,6 +3401,7 @@ DefineEquipment({
     "Weapon Group Natural",
   },
 })
+
 DefineEquipment({
   Name="Dagger",
   Key="Dagger (Base)",
@@ -3338,6 +3440,7 @@ DefineEquipment({
     "Weapon Group Thrown",
   },
 })
+
 DefineEquipment({
   Name="Punching Dagger",
   Key="Punching Dagger (Base)",
@@ -3371,6 +3474,7 @@ DefineEquipment({
     "Weapon Group Close",
   },
 })
+
 DefineEquipment({
   Name="Spiked Gauntlet",
   Key="Spiked Gauntlet (Base)",
@@ -3440,6 +3544,7 @@ DefineEquipment({
     "Weapon Group Natural",
   },
 })
+
 DefineEquipment({
   Name="Light Mace",
   Key="Light Mace (Base)",
@@ -3473,6 +3578,7 @@ DefineEquipment({
     "Weapon Group Hammers",
   },
 })
+
 DefineEquipment({
   Name="Sickle",
   Key="Sickle (Base)",
@@ -3508,6 +3614,7 @@ DefineEquipment({
     "Weapon Group Blades Light",
   },
 })
+
 DefineEquipment({
   Name="Club",
   Key="Club (Base)",
@@ -3541,6 +3648,7 @@ DefineEquipment({
     "Weapon Group Thrown",
   },
 })
+
 DefineEquipment({
   Name="Heavy Mace",
   Key="Heavy Mace (Base)",
@@ -3573,6 +3681,7 @@ DefineEquipment({
     "Weapon Group Hammers",
   },
 })
+
 DefineEquipment({
   Name="Morningstar",
   Key="Morningstar (Base)",
@@ -3606,6 +3715,7 @@ DefineEquipment({
     "Weapon Group Flails",
   },
 })
+
 DefineEquipment({
   Name="Shortspear",
   Key="Shortspear (Base)",
@@ -3641,6 +3751,7 @@ DefineEquipment({
     "Weapon Group Thrown",
   },
 })
+
 DefineEquipment({
   Name="Longspear",
   Key="Longspear (Base)",
@@ -3681,6 +3792,7 @@ DefineEquipment({
     "Weapon Group Spears",
   },
 })
+
 DefineEquipment({
   Name="Quarterstaff",
   Key="Quarterstaff (Base)",
@@ -3742,6 +3854,7 @@ DefineEquipment({
     "Weapon Group Monk",
   },
 })
+
 DefineEquipment({
   Name="Spear",
   Key="Spear (Base)",
@@ -3782,6 +3895,7 @@ DefineEquipment({
     "Weapon Group Thrown",
   },
 })
+
 DefineEquipment({
   Name="Throwing Axe",
   Key="Throwing Axe (Base)",
@@ -3814,6 +3928,7 @@ DefineEquipment({
     "Weapon Group Axes",
   },
 })
+
 DefineEquipment({
   Name="Light Hammer",
   Key="Light Hammer (Base)",
@@ -3847,6 +3962,7 @@ DefineEquipment({
     "Weapon Group Thrown",
   },
 })
+
 DefineEquipment({
   Name="Handaxe",
   Key="Handaxe (Base)",
@@ -3876,6 +3992,7 @@ DefineEquipment({
     "Weapon Group Axes",
   },
 })
+
 DefineEquipment({
   Name="Kukri",
   Key="Kukri (Base)",
@@ -3908,6 +4025,7 @@ DefineEquipment({
     "Weapon Group Blades Light",
   },
 })
+
 DefineEquipment({
   Name="Light Pick",
   Key="Light Pick (Base)",
@@ -3939,6 +4057,7 @@ DefineEquipment({
     "Weapon Group Axes",
   },
 })
+
 DefineEquipment({
   Name="Sap",
   Key="Sap (Base)",
@@ -3974,6 +4093,7 @@ DefineEquipment({
     "Weapon Group Close",
   },
 })
+
 DefineEquipment({
   Name="Spiked Armor",
   Key="Spiked Armor (Base)",
@@ -4008,6 +4128,7 @@ DefineEquipment({
     "Close",
   },
 })
+
 DefineEquipment({
   Name="Starknife",
   Key="Starknife (Base)",
@@ -4044,6 +4165,7 @@ DefineEquipment({
     "Weapon Group Thrown",
   },
 })
+
 DefineEquipment({
   Name="Short Sword",
   Key="Short Sword (Base)",
@@ -4077,6 +4199,7 @@ DefineEquipment({
     "Weapon Group Blades Light",
   },
 })
+
 DefineEquipment({
   Name="Battleaxe",
   Key="Battleaxe (Base)",
@@ -4105,6 +4228,7 @@ DefineEquipment({
     "Weapon Group Axes",
   },
 })
+
 DefineEquipment({
   Name="Light Flail",
   Key="Light Flail (Base)",
@@ -4144,6 +4268,7 @@ DefineEquipment({
     "Weapon Group Flails",
   },
 })
+
 DefineEquipment({
   Name="Longsword",
   Key="Longsword (Base)",
@@ -4176,6 +4301,7 @@ DefineEquipment({
     "Weapon Group Blades Heavy",
   },
 })
+
 DefineEquipment({
   Name="Heavy Pick",
   Key="Heavy Pick (Base)",
@@ -4205,6 +4331,7 @@ DefineEquipment({
     "Weapon Group Axes",
   },
 })
+
 DefineEquipment({
   Name="Rapier",
   Key="Rapier (Base)",
@@ -4249,6 +4376,7 @@ DefineEquipment({
     "Weapon Group Melee OneHanded Piercing",
   },
 })
+
 DefineEquipment({
   Name="Scimitar",
   Key="Scimitar (Base)",
@@ -4278,6 +4406,7 @@ DefineEquipment({
     "Weapon Group Blades Heavy",
   },
 })
+
 DefineEquipment({
   Name="Trident",
   Key="Trident (Base)",
@@ -4319,6 +4448,7 @@ DefineEquipment({
     "Weapon Group Melee OneHanded Piercing",
   },
 })
+
 DefineEquipment({
   Name="Warhammer",
   Key="Warhammer (Base)",
@@ -4347,6 +4477,7 @@ DefineEquipment({
     "Weapon Group Hammers",
   },
 })
+
 DefineEquipment({
   Name="Falchion",
   Key="Falchion (Base)",
@@ -4376,6 +4507,7 @@ DefineEquipment({
     "Weapon Group Blades Heavy",
   },
 })
+
 DefineEquipment({
   Name="Glaive",
   Key="Glaive (Base)",
@@ -4413,6 +4545,7 @@ DefineEquipment({
     "Weapon Group Polearms",
   },
 })
+
 DefineEquipment({
   Name="Greataxe",
   Key="Greataxe (Base)",
@@ -4441,6 +4574,7 @@ DefineEquipment({
     "Weapon Group Axes",
   },
 })
+
 DefineEquipment({
   Name="Greatclub",
   Key="Greatclub (Base)",
@@ -4470,6 +4604,7 @@ DefineEquipment({
     "Weapon Group Hammers",
   },
 })
+
 DefineEquipment({
   Name="Heavy Flail",
   Key="Heavy Flail (Base)",
@@ -4509,6 +4644,7 @@ DefineEquipment({
     "Weapon Group Flails",
   },
 })
+
 DefineEquipment({
   Name="Greatsword",
   Key="Greatsword (Base)",
@@ -4541,6 +4677,7 @@ DefineEquipment({
     "Weapon Group Blades Heavy",
   },
 })
+
 DefineEquipment({
   Name="Guisarme",
   Key="Guisarme (Base)",
@@ -4581,6 +4718,7 @@ DefineEquipment({
     "Weapon Group Polearms",
   },
 })
+
 DefineEquipment({
   Name="Halberd",
   Key="Halberd (Base)",
@@ -4621,6 +4759,7 @@ DefineEquipment({
     "Weapon Group Polearms",
   },
 })
+
 DefineEquipment({
   Name="Lance",
   Key="Lance (Base)",
@@ -4664,6 +4803,7 @@ DefineEquipment({
     "Weapon Group Spears",
   },
 })
+
 DefineEquipment({
   Name="Ranseur",
   Key="Ranseur (Base)",
@@ -4704,6 +4844,7 @@ DefineEquipment({
     "Weapon Group Polearms",
   },
 })
+
 DefineEquipment({
   Name="Scythe",
   Key="Scythe (Base)",
@@ -4739,6 +4880,7 @@ DefineEquipment({
     "Weapon Group Blades Heavy",
   },
 })
+
 DefineEquipment({
   Name="Kama",
   Key="Kama (Base)",
@@ -4781,6 +4923,7 @@ DefineEquipment({
     "Weapon Group Monk",
   },
 })
+
 DefineEquipment({
   Name="Nunchaku",
   Key="Nunchaku (Base)",
@@ -4820,6 +4963,7 @@ DefineEquipment({
     "Nunchaku",
   },
 })
+
 DefineEquipment({
   Name="Sai",
   Key="Sai (Base)",
@@ -4860,6 +5004,7 @@ DefineEquipment({
     "Weapon Group Monk",
   },
 })
+
 DefineEquipment({
   Name="Siangham",
   Key="Siangham (Base)",
@@ -4896,6 +5041,7 @@ DefineEquipment({
     "Siangham",
   },
 })
+
 DefineEquipment({
   Name="Bastard Sword",
   Key="Bastard Sword (Base)",
@@ -4943,6 +5089,7 @@ DefineEquipment({
     "Weapon Group Blades Heavy",
   },
 })
+
 DefineEquipment({
   Name="Dwarven Waraxe",
   Key="Dwarven Waraxe (Base)",
@@ -4990,6 +5137,7 @@ DefineEquipment({
     "Weapon Group Axes",
   },
 })
+
 DefineEquipment({
   Name="Whip",
   Key="Whip (Base)",
@@ -5037,6 +5185,7 @@ DefineEquipment({
     "Weapon Group Flails",
   },
 })
+
 DefineEquipment({
   Name="Orc Double Axe",
   Key="Orc Double Axe (Base)",
@@ -5092,6 +5241,7 @@ DefineEquipment({
     "Weapon Group Double",
   },
 })
+
 DefineEquipment({
   Name="Spiked Chain",
   Key="Spiked Chain (Base)",
@@ -5133,6 +5283,7 @@ DefineEquipment({
     "Weapon Group Flails",
   },
 })
+
 DefineEquipment({
   Name="Elven Curve Blade",
   Key="Elven Curve Blade (Base)",
@@ -5167,6 +5318,7 @@ DefineEquipment({
     "Weapon Group Blades Heavy",
   },
 })
+
 DefineEquipment({
   Name="Dire Flail",
   Key="Dire Flail (Base)",
@@ -5233,6 +5385,7 @@ DefineEquipment({
     "Weapon Group Flails",
   },
 })
+
 DefineEquipment({
   Name="Gnome Hooked Hammer",
   Key="Gnome Hooked Hammer (Base)",
@@ -5294,6 +5447,7 @@ DefineEquipment({
     "Weapon Group Double",
   },
 })
+
 DefineEquipment({
   Name="Two-Bladed Sword",
   Key="Two-Bladed Sword (Base)",
@@ -5349,6 +5503,7 @@ DefineEquipment({
     "Weapon Group Double",
   },
 })
+
 DefineEquipment({
   Name="Dwarven Urgrosh",
   Key="Dwarven Urgrosh (Base)",
@@ -5406,6 +5561,7 @@ DefineEquipment({
     "Weapon Group Double",
   },
 })
+
 CopyEquipment("Gauntlet (Base)", {
   Name="Gauntlet",
   Key="Gauntlet (Part of Armor Suit)",
@@ -5415,6 +5571,7 @@ CopyEquipment("Gauntlet (Base)", {
   Cost=0,
   Visible=true,
 })
+
 CopyEquipment("Gauntlet (Base)", {
   Name="Gauntlet",
   Key="Gauntlet",
@@ -5428,6 +5585,7 @@ CopyEquipment("Gauntlet (Base)", {
     },
   },
 })
+
 CopyEquipment("Dagger (Base)", {
   Name="Dagger",
   Key="Dagger",
@@ -5441,6 +5599,7 @@ CopyEquipment("Dagger (Base)", {
     },
   },
 })
+
 CopyEquipment("Punching Dagger (Base)", {
   Name="Dagger, Punching",
   Key="Dagger (Punching)",
@@ -5455,6 +5614,7 @@ CopyEquipment("Punching Dagger (Base)", {
     },
   },
 })
+
 CopyEquipment("Spiked Gauntlet (Base)", {
   Name="Gauntlet, Spiked",
   Key="Gauntlet (Spiked)",
@@ -5469,6 +5629,7 @@ CopyEquipment("Spiked Gauntlet (Base)", {
     },
   },
 })
+
 CopyEquipment("Light Mace (Base)", {
   Name="Mace, Light",
   Key="Mace (Light)",
@@ -5483,6 +5644,7 @@ CopyEquipment("Light Mace (Base)", {
     },
   },
 })
+
 CopyEquipment("Sickle (Base)", {
   Name="Sickle",
   Key="Sickle",
@@ -5496,6 +5658,7 @@ CopyEquipment("Sickle (Base)", {
     },
   },
 })
+
 CopyEquipment("Club (Base)", {
   Name="Club",
   Key="Club",
@@ -5509,6 +5672,7 @@ CopyEquipment("Club (Base)", {
     },
   },
 })
+
 CopyEquipment("Heavy Mace (Base)", {
   Name="Mace, Heavy",
   Key="Mace (Heavy)",
@@ -5523,6 +5687,7 @@ CopyEquipment("Heavy Mace (Base)", {
     },
   },
 })
+
 CopyEquipment("Morningstar (Base)", {
   Name="Morningstar",
   Key="Morningstar",
@@ -5536,6 +5701,7 @@ CopyEquipment("Morningstar (Base)", {
     },
   },
 })
+
 CopyEquipment("Shortspear (Base)", {
   Name="Shortspear",
   Key="Shortspear",
@@ -5552,6 +5718,7 @@ CopyEquipment("Shortspear (Base)", {
     },
   },
 })
+
 CopyEquipment("Longspear (Base)", {
   Name="Longspear",
   Key="Longspear",
@@ -5568,6 +5735,7 @@ CopyEquipment("Longspear (Base)", {
     },
   },
 })
+
 CopyEquipment("Quarterstaff (Base)", {
   Name="Quarterstaff",
   Key="Quarterstaff",
@@ -5590,6 +5758,7 @@ CopyEquipment("Quarterstaff (Base)", {
     },
   },
 })
+
 CopyEquipment("Spear (Base)", {
   Name="Spear",
   Key="Spear",
@@ -5606,6 +5775,7 @@ CopyEquipment("Spear (Base)", {
     },
   },
 })
+
 CopyEquipment("Throwing Axe (Base)", {
   Name="Axe, Throwing",
   Key="Axe (Throwing)",
@@ -5620,6 +5790,7 @@ CopyEquipment("Throwing Axe (Base)", {
     },
   },
 })
+
 CopyEquipment("Light Hammer (Base)", {
   Name="Hammer, Light",
   Key="Hammer (Light)",
@@ -5634,6 +5805,7 @@ CopyEquipment("Light Hammer (Base)", {
     },
   },
 })
+
 CopyEquipment("Handaxe (Base)", {
   Name="Handaxe",
   Key="Handaxe",
@@ -5647,6 +5819,7 @@ CopyEquipment("Handaxe (Base)", {
     },
   },
 })
+
 CopyEquipment("Kukri (Base)", {
   Name="Kukri",
   Key="Kukri",
@@ -5660,6 +5833,7 @@ CopyEquipment("Kukri (Base)", {
     },
   },
 })
+
 CopyEquipment("Light Pick (Base)", {
   Name="Pick, Light",
   Key="Pick (Light)",
@@ -5674,6 +5848,7 @@ CopyEquipment("Light Pick (Base)", {
     },
   },
 })
+
 CopyEquipment("Sap (Base)", {
   Name="Sap",
   Key="Sap",
@@ -5687,6 +5862,7 @@ CopyEquipment("Sap (Base)", {
     },
   },
 })
+
 CopyEquipment("Spiked Armor (Base)", {
   Name="Spiked Armor",
   Key="Spiked Armor",
@@ -5700,6 +5876,7 @@ CopyEquipment("Spiked Armor (Base)", {
     },
   },
 })
+
 CopyEquipment("Starknife (Base)", {
   Name="Starknife",
   Key="Starknife",
@@ -5713,6 +5890,7 @@ CopyEquipment("Starknife (Base)", {
     },
   },
 })
+
 CopyEquipment("Short Sword (Base)", {
   Name="Sword, Short",
   Key="Sword (Short)",
@@ -5727,6 +5905,7 @@ CopyEquipment("Short Sword (Base)", {
     },
   },
 })
+
 CopyEquipment("Battleaxe (Base)", {
   Name="Battleaxe",
   Key="Battleaxe",
@@ -5740,6 +5919,7 @@ CopyEquipment("Battleaxe (Base)", {
     },
   },
 })
+
 CopyEquipment("Light Flail (Base)", {
   Name="Flail, Light",
   Key="Flail",
@@ -5754,6 +5934,7 @@ CopyEquipment("Light Flail (Base)", {
     },
   },
 })
+
 CopyEquipment("Longsword (Base)", {
   Name="Longsword",
   Key="Longsword",
@@ -5767,6 +5948,7 @@ CopyEquipment("Longsword (Base)", {
     },
   },
 })
+
 CopyEquipment("Heavy Pick (Base)", {
   Name="Pick, Heavy",
   Key="Pick (Heavy)",
@@ -5781,6 +5963,7 @@ CopyEquipment("Heavy Pick (Base)", {
     },
   },
 })
+
 CopyEquipment("Rapier (Base)", {
   Name="Rapier",
   Key="Rapier",
@@ -5794,6 +5977,7 @@ CopyEquipment("Rapier (Base)", {
     },
   },
 })
+
 CopyEquipment("Scimitar (Base)", {
   Name="Scimitar",
   Key="Scimitar",
@@ -5807,6 +5991,7 @@ CopyEquipment("Scimitar (Base)", {
     },
   },
 })
+
 CopyEquipment("Trident (Base)", {
   Name="Trident",
   Key="Trident",
@@ -5820,6 +6005,7 @@ CopyEquipment("Trident (Base)", {
     },
   },
 })
+
 CopyEquipment("Warhammer (Base)", {
   Name="Warhammer",
   Key="Warhammer",
@@ -5833,6 +6019,7 @@ CopyEquipment("Warhammer (Base)", {
     },
   },
 })
+
 CopyEquipment("Falchion (Base)", {
   Name="Falchion",
   Key="Falchion",
@@ -5846,6 +6033,7 @@ CopyEquipment("Falchion (Base)", {
     },
   },
 })
+
 CopyEquipment("Glaive (Base)", {
   Name="Glaive",
   Key="Glaive",
@@ -5859,6 +6047,7 @@ CopyEquipment("Glaive (Base)", {
     },
   },
 })
+
 CopyEquipment("Greataxe (Base)", {
   Name="Greataxe",
   Key="Greataxe",
@@ -5872,6 +6061,7 @@ CopyEquipment("Greataxe (Base)", {
     },
   },
 })
+
 CopyEquipment("Greatclub (Base)", {
   Name="Greatclub",
   Key="Greatclub",
@@ -5885,6 +6075,7 @@ CopyEquipment("Greatclub (Base)", {
     },
   },
 })
+
 CopyEquipment("Heavy Flail (Base)", {
   Name="Flail, Heavy",
   Key="Flail (Heavy)",
@@ -5899,6 +6090,7 @@ CopyEquipment("Heavy Flail (Base)", {
     },
   },
 })
+
 CopyEquipment("Greatsword (Base)", {
   Name="Greatsword",
   Key="Greatsword",
@@ -5912,6 +6104,7 @@ CopyEquipment("Greatsword (Base)", {
     },
   },
 })
+
 CopyEquipment("Guisarme (Base)", {
   Name="Guisarme",
   Key="Guisarme",
@@ -5925,6 +6118,7 @@ CopyEquipment("Guisarme (Base)", {
     },
   },
 })
+
 CopyEquipment("Halberd (Base)", {
   Name="Halberd",
   Key="Halberd",
@@ -5938,6 +6132,7 @@ CopyEquipment("Halberd (Base)", {
     },
   },
 })
+
 CopyEquipment("Lance (Base)", {
   Name="Lance",
   Key="Lance",
@@ -5951,6 +6146,7 @@ CopyEquipment("Lance (Base)", {
     },
   },
 })
+
 CopyEquipment("Ranseur (Base)", {
   Name="Ranseur",
   Key="Ranseur",
@@ -5964,6 +6160,7 @@ CopyEquipment("Ranseur (Base)", {
     },
   },
 })
+
 CopyEquipment("Scythe (Base)", {
   Name="Scythe",
   Key="Scythe",
@@ -5977,6 +6174,7 @@ CopyEquipment("Scythe (Base)", {
     },
   },
 })
+
 CopyEquipment("Kama (Base)", {
   Name="Kama",
   Key="Kama",
@@ -5990,6 +6188,7 @@ CopyEquipment("Kama (Base)", {
     },
   },
 })
+
 CopyEquipment("Nunchaku (Base)", {
   Name="Nunchaku",
   Key="Nunchaku",
@@ -6003,6 +6202,7 @@ CopyEquipment("Nunchaku (Base)", {
     },
   },
 })
+
 CopyEquipment("Nunchaku (Base)", {
   Name="Nunchaku, Metal",
   Key="Nunchaku (Metal)",
@@ -6017,6 +6217,7 @@ CopyEquipment("Nunchaku (Base)", {
     },
   },
 })
+
 CopyEquipment("Sai (Base)", {
   Name="Sai",
   Key="Sai",
@@ -6030,6 +6231,7 @@ CopyEquipment("Sai (Base)", {
     },
   },
 })
+
 CopyEquipment("Siangham (Base)", {
   Name="Siangham",
   Key="Siangham",
@@ -6043,6 +6245,7 @@ CopyEquipment("Siangham (Base)", {
     },
   },
 })
+
 CopyEquipment("Bastard Sword (Base)", {
   Name="Sword, Bastard",
   Key="Sword (Bastard)",
@@ -6057,6 +6260,7 @@ CopyEquipment("Bastard Sword (Base)", {
     },
   },
 })
+
 CopyEquipment("Dwarven Waraxe (Base)", {
   Name="Waraxe, Dwarven",
   Key="Waraxe (Dwarven)",
@@ -6071,6 +6275,7 @@ CopyEquipment("Dwarven Waraxe (Base)", {
     },
   },
 })
+
 CopyEquipment("Whip (Base)", {
   Name="Whip",
   Key="Whip",
@@ -6084,6 +6289,7 @@ CopyEquipment("Whip (Base)", {
     },
   },
 })
+
 CopyEquipment("Orc Double Axe (Base)", {
   Name="Axe, Orc Double",
   Key="Axe (Orc Double)",
@@ -6107,6 +6313,7 @@ CopyEquipment("Orc Double Axe (Base)", {
     },
   },
 })
+
 CopyEquipment("Spiked Chain (Base)", {
   Name="Chain, Spiked",
   Key="Chain (Spiked)",
@@ -6121,6 +6328,7 @@ CopyEquipment("Spiked Chain (Base)", {
     },
   },
 })
+
 CopyEquipment("Elven Curve Blade (Base)", {
   Name="Curve Blade, Elven",
   Key="Curve Blade (Elven)",
@@ -6135,6 +6343,7 @@ CopyEquipment("Elven Curve Blade (Base)", {
     },
   },
 })
+
 CopyEquipment("Dire Flail (Base)", {
   Name="Flail, Dire",
   Key="Flail (Dire)",
@@ -6158,6 +6367,7 @@ CopyEquipment("Dire Flail (Base)", {
     },
   },
 })
+
 CopyEquipment("Gnome Hooked Hammer (Base)", {
   Name="Hammer, Gnome Hooked",
   Key="Hammer (Gnome Hooked)",
@@ -6181,6 +6391,7 @@ CopyEquipment("Gnome Hooked Hammer (Base)", {
     },
   },
 })
+
 CopyEquipment("Two-Bladed Sword (Base)", {
   Name="Sword, Two-Bladed",
   Key="Sword (Two-Bladed)",
@@ -6204,6 +6415,7 @@ CopyEquipment("Two-Bladed Sword (Base)", {
     },
   },
 })
+
 CopyEquipment("Dwarven Urgrosh (Base)", {
   Name="Urgrosh, Dwarven",
   Key="Urgrosh (Dwarven)",
@@ -6227,6 +6439,7 @@ CopyEquipment("Dwarven Urgrosh (Base)", {
     },
   },
 })
+
 CopyEquipment("Battleaxe (Base)", {
   Name="Adamantine Battleaxe",
   Key="Battleaxe (Adamantine)",
@@ -6243,6 +6456,7 @@ CopyEquipment("Battleaxe (Base)", {
     },
   },
 })
+
 CopyEquipment("Dagger (Base)", {
   Name="Adamantine Dagger",
   Key="Dagger (Adamantine)",
@@ -6259,6 +6473,7 @@ CopyEquipment("Dagger (Base)", {
     },
   },
 })
+
 CopyEquipment("Dagger (Base)", {
   Name="Assassin's Dagger",
   Key="Dagger (Assassin's)",
@@ -6296,6 +6511,7 @@ CopyEquipment("Dagger (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, slay living",
   },
 })
+
 CopyEquipment("Dagger (Base)", {
   Name="Dagger of Venom",
   Key="Dagger of Venom",
@@ -6333,6 +6549,7 @@ CopyEquipment("Dagger (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, poison",
   },
 })
+
 CopyEquipment("Warhammer (Base)", {
   Name="Dwarven Thrower",
   Key="Dwarven Thrower",
@@ -6409,6 +6626,7 @@ CopyEquipment("Warhammer (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, creator must be a dwarf of at least 10th level",
   },
 })
+
 CopyEquipment("Longsword (Base)", {
   Name="Flame Tongue",
   Key="Flame Tongue",
@@ -6449,6 +6667,7 @@ CopyEquipment("Longsword (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, scorching ray and fireball, flame blade, or flame strike",
   },
 })
+
 CopyEquipment("Greatsword (Base)", {
   Name="Frost Brand",
   Key="Frost Brand",
@@ -6495,6 +6714,7 @@ CopyEquipment("Greatsword (Base)", {
     Duration="below 0 degrees F",
   },
 })
+
 CopyEquipment("Longsword (Base)", {
   Name="Holy Avenger",
   Key="Holy Avenger",
@@ -6580,6 +6800,7 @@ CopyEquipment("Longsword (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, holy aura, creator must be good",
   },
 })
+
 CopyEquipment("Greataxe (Base)", {
   Name="Life-Drinker",
   Key="Life-Drinker",
@@ -6645,6 +6866,7 @@ CopyEquipment("Greataxe (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, enervation",
   },
 })
+
 CopyEquipment("Longsword (Base)", {
   Name="Masterwork Cold Iron Longsword",
   Key="Longsword (Cold Iron/Masterwork)",
@@ -6664,6 +6886,7 @@ CopyEquipment("Longsword (Base)", {
     },
   },
 })
+
 CopyEquipment("Short Sword (Base)", {
   Name="Luck Blade (0 wishes)",
   Key="Luck Blade (0 wishes)",
@@ -6715,6 +6938,7 @@ CopyEquipment("Short Sword (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, wish or miracle",
   },
 })
+
 CopyEquipment("Short Sword (Base)", {
   Name="Luck Blade (1 wish)",
   Key="Luck Blade (1 wish)",
@@ -6766,6 +6990,7 @@ CopyEquipment("Short Sword (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, wish or miracle",
   },
 })
+
 CopyEquipment("Short Sword (Base)", {
   Name="Luck Blade (2 wishes)",
   Key="Luck Blade (2 wishes)",
@@ -6817,6 +7042,7 @@ CopyEquipment("Short Sword (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, wish or miracle",
   },
 })
+
 CopyEquipment("Short Sword (Base)", {
   Name="Luck Blade (3 wishes)",
   Key="Luck Blade (3 wishes)",
@@ -6868,6 +7094,7 @@ CopyEquipment("Short Sword (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, wish or miracle",
   },
 })
+
 CopyEquipment("Heavy Mace (Base)", {
   Name="Mace of Smiting",
   Key="Mace of Smiting",
@@ -6905,6 +7132,7 @@ CopyEquipment("Heavy Mace (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, disintegrate",
   },
 })
+
 CopyEquipment("Heavy Mace (Base)", {
   Name="Mace of Terror",
   Key="Mace of Terror",
@@ -6942,6 +7170,7 @@ CopyEquipment("Heavy Mace (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, fear",
   },
 })
+
 CopyEquipment("Longsword (Base)", {
   Name="Nine Lives Stealer",
   Key="Nine Lives Stealer",
@@ -7002,6 +7231,7 @@ CopyEquipment("Longsword (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, finger of death",
   },
 })
+
 CopyEquipment("Rapier (Base)", {
   Name="Rapier of Puncturing",
   Key="Rapier of Puncturing",
@@ -7042,6 +7272,7 @@ CopyEquipment("Rapier (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, harm",
   },
 })
+
 CopyEquipment("Longsword (Base)", {
   Name="Shatterspike",
   Key="Shatterspike",
@@ -7086,6 +7317,7 @@ CopyEquipment("Longsword (Base)", {
     ['Construction Requirements']="Str 13, Craft Magic Arms and Armor, Improved Sunder, Power Attack, shatter",
   },
 })
+
 CopyEquipment("Two-Bladed Sword (Base)", {
   Name="Shifter's Sorrow",
   Key="Shifter's Sorrow",
@@ -7138,6 +7370,7 @@ CopyEquipment("Two-Bladed Sword (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, baleful polymorph",
   },
 })
+
 CopyEquipment("Dagger (Base)", {
   Name="Masterwork Silver Dagger",
   Key="Dagger (Silver/Masterwork)",
@@ -7157,6 +7390,7 @@ CopyEquipment("Dagger (Base)", {
     },
   },
 })
+
 CopyEquipment("Bastard Sword (Base)", {
   Name="Sun Blade (Bastard Sword)",
   Key="Sun Blade (Bastard)",
@@ -7241,6 +7475,7 @@ CopyEquipment("Bastard Sword (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, daylight, creator must be good",
   },
 })
+
 CopyEquipment("Sun Blade (Bastard)", {
   Name="Sun Blade (Short Sword)",
   Key="Sun Blade (Short)",
@@ -7248,6 +7483,7 @@ CopyEquipment("Sun Blade (Bastard)", {
   CanHaveMods=true,
   Proficiency="WEAPON|Sword (Short)",
 })
+
 CopyEquipment("Longsword (Base)", {
   Name="Sword of Life Stealing",
   Key="Sword of Life Stealing",
@@ -7285,6 +7521,7 @@ CopyEquipment("Longsword (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, enervation",
   },
 })
+
 CopyEquipment("Longsword (Base)", {
   Name="Sword of the Planes",
   Key="Sword of the Planes",
@@ -7322,6 +7559,7 @@ CopyEquipment("Longsword (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, plane shift",
   },
 })
+
 CopyEquipment("Short Sword (Base)", {
   Name="Sword of Subtlety",
   Key="Sword of Subtlety",
@@ -7359,6 +7597,7 @@ CopyEquipment("Short Sword (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, blur",
   },
 })
+
 CopyEquipment("Scimitar (Base)", {
   Name="Sylvan Scimitar",
   Key="Sylvan Scimitar",
@@ -7405,6 +7644,7 @@ CopyEquipment("Scimitar (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, divine power or creator must be a 7th-level druid",
   },
 })
+
 CopyEquipment("Trident (Base)", {
   Name="Trident of Fish Command",
   Key="Trident of Fish Command",
@@ -7442,6 +7682,7 @@ CopyEquipment("Trident (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, charm animals, speak with animals",
   },
 })
+
 CopyEquipment("Trident (Base)", {
   Name="Trident of Warning",
   Key="Trident of Warning",
@@ -7479,6 +7720,7 @@ CopyEquipment("Trident (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, locate creature",
   },
 })
+
 DefineEquipment({
   Name="Mattock of the Titans",
   Key="Mattock of the Titans",
@@ -7526,6 +7768,7 @@ DefineEquipment({
     "Masterwork",
   },
 })
+
 DefineEquipment({
   Name="Maul of the Titans",
   Key="Maul of the Titans",
@@ -7591,6 +7834,7 @@ DefineEquipment({
     "Hammer",
   },
 })
+
 CopyEquipment("Dwarven Waraxe (Base)", {
   Name="Axe of the Dwarvish Lords",
   Key="Axe of the Dwarvish Lords",
@@ -7655,6 +7899,7 @@ CopyEquipment("Dwarven Waraxe (Base)", {
     Destruction="The Axe of the Dwarvish Lords rusts away to nothing if it is ever used by a goblin to behead a dwarven king.",
   },
 })
+
 DefineEquipment({
   Name="Flurry of Blows",
   Key="Flurry of Blows",
@@ -7709,6 +7954,7 @@ DefineEquipment({
     "Weapon Group Natural",
   },
 })
+
 DefineEquipment({
   Name="Shieldbash (Light Shield)",
   Key="Shieldbash (Light)",
@@ -7737,6 +7983,7 @@ DefineEquipment({
     "Unarmed",
   },
 })
+
 DefineEquipment({
   Name="Shieldbash (Heavy Shield)",
   Key="Shieldbash (Heavy)",
@@ -7764,6 +8011,7 @@ DefineEquipment({
     "Unarmed",
   },
 })
+
 DefineEquipment({
   Name="Touch Attack (Ray Spell)",
   Key="Touch Attack (Ray)",
@@ -7794,6 +8042,7 @@ DefineEquipment({
     "Unarmed",
   },
 })
+
 DefineEquipment({
   Name="Unarmed Strike",
   Key="Unarmed Strike",
@@ -7825,6 +8074,7 @@ DefineEquipment({
     "Weapon Group Natural",
   },
 })
+
 DefineEquipment({
   Name="Blowgun",
   Key="Blowgun (Base)",
@@ -7863,6 +8113,7 @@ DefineEquipment({
     "Weapon Group Thrown",
   },
 })
+
 DefineEquipment({
   Name="Heavy Crossbow",
   Key="Heavy Crossbow (Base)",
@@ -7901,6 +8152,7 @@ DefineEquipment({
     "Weapon Group Crossbows",
   },
 })
+
 DefineEquipment({
   Name="Light Crossbow",
   Key="Light Crossbow (Base)",
@@ -7939,6 +8191,7 @@ DefineEquipment({
     "Weapon Group Crossbows",
   },
 })
+
 DefineEquipment({
   Name="Dart",
   Key="Dart (Base)",
@@ -7968,6 +8221,7 @@ DefineEquipment({
     "Weapon Group Thrown",
   },
 })
+
 DefineEquipment({
   Name="Javelin",
   Key="Javelin (Base)",
@@ -8002,6 +8256,7 @@ DefineEquipment({
     "Weapon Group Thrown",
   },
 })
+
 DefineEquipment({
   Name="Sling",
   Key="Sling (Base)",
@@ -8049,6 +8304,7 @@ DefineEquipment({
     "Weapon Group Thrown",
   },
 })
+
 DefineEquipment({
   Name="Longbow",
   Key="Longbow (Base)",
@@ -8097,6 +8353,7 @@ DefineEquipment({
     "Weapon Group Bows",
   },
 })
+
 DefineEquipment({
   Name="Composite Longbow",
   Key="Composite Longbow (Base)",
@@ -8147,6 +8404,7 @@ DefineEquipment({
     "Weapon Group Bows",
   },
 })
+
 DefineEquipment({
   Name="Shortbow",
   Key="Shortbow (Base)",
@@ -8195,6 +8453,7 @@ DefineEquipment({
     "Weapon Group Bows",
   },
 })
+
 DefineEquipment({
   Name="Composite Shortbow",
   Key="Composite Shortbow (Base)",
@@ -8245,6 +8504,7 @@ DefineEquipment({
     "Weapon Group Bows",
   },
 })
+
 DefineEquipment({
   Name="Bolas",
   Key="Bolas (Base)",
@@ -8284,6 +8544,7 @@ DefineEquipment({
     "Weapon Group Thrown",
   },
 })
+
 DefineEquipment({
   Name="Hand Crossbow",
   Key="Hand Crossbow (Base)",
@@ -8322,6 +8583,7 @@ DefineEquipment({
     "Weapon Group Crossbows",
   },
 })
+
 DefineEquipment({
   Name="Repeating Heavy Crossbow",
   Key="Repeating Heavy Crossbow (Base)",
@@ -8360,6 +8622,7 @@ DefineEquipment({
     "Weapon Group Crossbows",
   },
 })
+
 DefineEquipment({
   Name="Repeating Light Crossbow",
   Key="Repeating Light Crossbow (Base)",
@@ -8398,6 +8661,7 @@ DefineEquipment({
     "Weapon Group Crossbows",
   },
 })
+
 DefineEquipment({
   Name="Net",
   Key="Net (Base)",
@@ -8423,6 +8687,7 @@ DefineEquipment({
     "Weapon Group Thrown",
   },
 })
+
 DefineEquipment({
   Name="Shuriken",
   Key="Shuriken (Base)",
@@ -8466,6 +8731,7 @@ DefineEquipment({
     "Weapon Group Thrown",
   },
 })
+
 DefineEquipment({
   Name="Halfling Sling Staff",
   Key="Halfling Sling Staff (Base)",
@@ -8514,6 +8780,7 @@ DefineEquipment({
     "Weapon Group Thrown",
   },
 })
+
 CopyEquipment("Blowgun (Base)", {
   Name="Blowgun",
   Key="Blowgun",
@@ -8527,6 +8794,7 @@ CopyEquipment("Blowgun (Base)", {
     },
   },
 })
+
 CopyEquipment("Heavy Crossbow (Base)", {
   Name="Crossbow, Heavy",
   Key="Crossbow (Heavy)",
@@ -8541,6 +8809,7 @@ CopyEquipment("Heavy Crossbow (Base)", {
     },
   },
 })
+
 CopyEquipment("Light Crossbow (Base)", {
   Name="Crossbow, Light",
   Key="Crossbow (Light)",
@@ -8555,6 +8824,7 @@ CopyEquipment("Light Crossbow (Base)", {
     },
   },
 })
+
 CopyEquipment("Dart (Base)", {
   Name="Dart",
   Key="Dart",
@@ -8571,6 +8841,7 @@ CopyEquipment("Dart (Base)", {
     },
   },
 })
+
 CopyEquipment("Javelin (Base)", {
   Name="Javelin",
   Key="Javelin",
@@ -8587,6 +8858,7 @@ CopyEquipment("Javelin (Base)", {
     },
   },
 })
+
 CopyEquipment("Sling (Base)", {
   Name="Sling",
   Key="Sling",
@@ -8600,6 +8872,7 @@ CopyEquipment("Sling (Base)", {
     },
   },
 })
+
 CopyEquipment("Longbow (Base)", {
   Name="Longbow",
   Key="Longbow",
@@ -8613,6 +8886,7 @@ CopyEquipment("Longbow (Base)", {
     },
   },
 })
+
 CopyEquipment("Composite Longbow (Base)", {
   Name="Longbow, Composite",
   Key="Longbow (Composite)",
@@ -8627,6 +8901,7 @@ CopyEquipment("Composite Longbow (Base)", {
     },
   },
 })
+
 CopyEquipment("Composite Longbow (Base)", {
   Name="Longbow, Composite (+0 Str)",
   Key="Longbow (Composite +0)",
@@ -8648,6 +8923,7 @@ CopyEquipment("Composite Longbow (Base)", {
     },
   },
 })
+
 CopyEquipment("Shortbow (Base)", {
   Name="Shortbow",
   Key="Shortbow",
@@ -8661,6 +8937,7 @@ CopyEquipment("Shortbow (Base)", {
     },
   },
 })
+
 CopyEquipment("Composite Shortbow (Base)", {
   Name="Shortbow, Composite",
   Key="Shortbow (Composite)",
@@ -8675,6 +8952,7 @@ CopyEquipment("Composite Shortbow (Base)", {
     },
   },
 })
+
 CopyEquipment("Composite Shortbow (Base)", {
   Name="Shortbow, Composite (+0 Str)",
   Key="Shortbow (Composite +0)",
@@ -8696,6 +8974,7 @@ CopyEquipment("Composite Shortbow (Base)", {
     },
   },
 })
+
 CopyEquipment("Bolas (Base)", {
   Name="Bolas",
   Key="Bolas",
@@ -8709,6 +8988,7 @@ CopyEquipment("Bolas (Base)", {
     },
   },
 })
+
 CopyEquipment("Hand Crossbow (Base)", {
   Name="Crossbow, Hand",
   Key="Crossbow (Hand)",
@@ -8723,6 +9003,7 @@ CopyEquipment("Hand Crossbow (Base)", {
     },
   },
 })
+
 CopyEquipment("Repeating Heavy Crossbow (Base)", {
   Name="Crossbow, Repeating Heavy",
   Key="Crossbow (Repeating Heavy)",
@@ -8737,6 +9018,7 @@ CopyEquipment("Repeating Heavy Crossbow (Base)", {
     },
   },
 })
+
 CopyEquipment("Repeating Light Crossbow (Base)", {
   Name="Crossbow, Repeating Light",
   Key="Crossbow (Repeating Light)",
@@ -8751,6 +9033,7 @@ CopyEquipment("Repeating Light Crossbow (Base)", {
     },
   },
 })
+
 CopyEquipment("Net (Base)", {
   Name="Net",
   Key="Net",
@@ -8764,6 +9047,7 @@ CopyEquipment("Net (Base)", {
     },
   },
 })
+
 CopyEquipment("Shuriken (Base)", {
   Name="Shuriken",
   Key="Shuriken",
@@ -8777,6 +9061,7 @@ CopyEquipment("Shuriken (Base)", {
     },
   },
 })
+
 CopyEquipment("Halfling Sling Staff (Base)", {
   Name="Sling Staff, Halfling",
   Key="Sling Staff (Halfling)",
@@ -8794,6 +9079,7 @@ CopyEquipment("Halfling Sling Staff (Base)", {
     },
   },
 })
+
 CopyEquipment("Javelin (Base)", {
   Name="Javelin of Lightning",
   Key="Javelin of Lightning",
@@ -8831,6 +9117,7 @@ CopyEquipment("Javelin (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, lightning bolt",
   },
 })
+
 CopyEquipment("Composite Longbow (Base)", {
   Name="Oathbow",
   Key="Oathbow",
@@ -8874,6 +9161,7 @@ CopyEquipment("Composite Longbow (Base)", {
     ['Construction Requirements']="Craft Magic Arms and Armor, creator must be an elf",
   },
 })
+
 DefineEquipment({
   Name="Improvised Weapon (1d2)",
   Attack={
@@ -8893,6 +9181,7 @@ DefineEquipment({
     "Improvised",
   },
 })
+
 DefineEquipment({
   Name="Improvised Weapon (1d3)",
   Attack={
@@ -8912,6 +9201,7 @@ DefineEquipment({
     "Improvised",
   },
 })
+
 DefineEquipment({
   Name="Improvised Weapon (1d4)",
   Attack={
@@ -8931,6 +9221,7 @@ DefineEquipment({
     "Improvised",
   },
 })
+
 DefineEquipment({
   Name="Improvised Weapon (1d6)",
   Attack={
@@ -8950,6 +9241,7 @@ DefineEquipment({
     "Improvised",
   },
 })
+
 DefineEquipment({
   Name="Improvised Weapon (1d8)",
   Attack={
@@ -8969,6 +9261,7 @@ DefineEquipment({
     "Improvised",
   },
 })
+
 DefineEquipment({
   Name="Improvised Weapon (1d10)",
   Attack={
@@ -8988,6 +9281,7 @@ DefineEquipment({
     "Improvised",
   },
 })
+
 DefineEquipment({
   Name="Improvised Weapon (1d12)",
   Attack={
@@ -9007,6 +9301,7 @@ DefineEquipment({
     "Improvised",
   },
 })
+
 DefineEquipment({
   Name="Improvised Weapon (2d4)",
   Attack={
@@ -9026,6 +9321,7 @@ DefineEquipment({
     "Improvised",
   },
 })
+
 DefineEquipment({
   Name="Improvised Weapon (2d6)",
   Attack={
@@ -9045,6 +9341,7 @@ DefineEquipment({
     "Improvised",
   },
 })
+
 DefineEquipment({
   Name="Improvised Weapon (2d8)",
   Attack={
@@ -9064,6 +9361,7 @@ DefineEquipment({
     "Improvised",
   },
 })
+
 DefineEquipment({
   Name="Improvised Weapon (2d10)",
   Attack={
@@ -9083,3 +9381,4 @@ DefineEquipment({
     "Improvised",
   },
 })
+

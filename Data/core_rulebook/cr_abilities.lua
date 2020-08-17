@@ -73,6 +73,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -113,6 +114,7 @@ ModifyAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Negate Aging Penalties",
   Category="Internal",
@@ -173,6 +175,7 @@ DefineAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -196,6 +199,7 @@ ModifyAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Aspect Combat Bonus ~ Mobility",
   Category="Internal",
@@ -221,6 +225,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Aspect Combat Bonus ~ Encumbrance",
   Category="Internal",
@@ -231,6 +236,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Aspect Combat Bonus ~ Buckler",
   Category="Internal",
@@ -241,6 +247,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Baleful Polymorph Spell",
   Category="Afflictions",
@@ -254,6 +261,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Bestow Curse Trap",
   Category="Afflictions",
@@ -267,6 +275,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Curse of the Ages",
   Category="Afflictions",
@@ -280,6 +289,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Mummy Rot",
   Category="Afflictions",
@@ -293,6 +303,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Unluck",
   Category="Afflictions",
@@ -306,6 +317,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Werewolf Lycanthropy",
   Category="Afflictions",
@@ -319,6 +331,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Blinding Sickness",
   Category="Afflictions",
@@ -332,6 +345,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Bubonic Plague",
   Category="Afflictions",
@@ -345,6 +359,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Cackle Fever",
   Category="Afflictions",
@@ -358,6 +373,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Demon Fever",
   Category="Afflictions",
@@ -371,6 +387,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Devil Chills",
   Category="Afflictions",
@@ -384,6 +401,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Filth Fever",
   Category="Afflictions",
@@ -397,6 +415,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Leprosy",
   Category="Afflictions",
@@ -410,6 +429,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Mindfire",
   Category="Afflictions",
@@ -423,6 +443,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Red Ache",
   Category="Afflictions",
@@ -436,6 +457,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Shakes",
   Category="Afflictions",
@@ -449,6 +471,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Slimy Doom",
   Category="Afflictions",
@@ -462,6 +485,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Arsenic",
   Category="Afflictions",
@@ -475,6 +499,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Black Adder Venom",
   Category="Afflictions",
@@ -488,6 +513,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Black Lotus Extract",
   Category="Afflictions",
@@ -501,6 +527,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Bloodroot",
   Category="Afflictions",
@@ -514,6 +541,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Blue Whinnis",
   Category="Afflictions",
@@ -527,6 +555,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Burnt Othur Fumes",
   Category="Afflictions",
@@ -540,6 +569,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Dark Reaver Powder",
   Category="Afflictions",
@@ -553,6 +583,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Deathblade",
   Category="Afflictions",
@@ -566,6 +597,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Dragon Bile",
   Category="Afflictions",
@@ -579,6 +611,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Drow Poison",
   Category="Afflictions",
@@ -592,6 +625,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Giant Wasp Poison",
   Category="Afflictions",
@@ -605,6 +639,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Greenblood Oil",
   Category="Afflictions",
@@ -618,6 +653,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Id Moss",
   Category="Afflictions",
@@ -631,6 +667,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Insanity Mist",
   Category="Afflictions",
@@ -644,6 +681,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="King's Sleep",
   Category="Afflictions",
@@ -657,6 +695,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Large Scorpion Venom",
   Category="Afflictions",
@@ -670,6 +709,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Lich Dust",
   Category="Afflictions",
@@ -683,6 +723,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Malyass Root Paste",
   Category="Afflictions",
@@ -696,6 +737,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Medium Spider Venom",
   Category="Afflictions",
@@ -709,6 +751,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Nightmare Vapor",
   Category="Afflictions",
@@ -722,6 +765,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Nitharit",
   Category="Afflictions",
@@ -735,6 +779,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Oil of Taggit",
   Category="Afflictions",
@@ -748,6 +793,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Purple Worm Poison",
   Category="Afflictions",
@@ -761,6 +807,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Sassone Leaf Residue",
   Category="Afflictions",
@@ -774,6 +821,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Shadow Essence",
   Category="Afflictions",
@@ -787,6 +835,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Small Centipede Poison",
   Category="Afflictions",
@@ -800,6 +849,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Striped Toadstool",
   Category="Afflictions",
@@ -813,6 +863,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Tears of Death",
   Category="Afflictions",
@@ -826,6 +877,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Terinav Root",
   Category="Afflictions",
@@ -839,6 +891,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Ungol Dust",
   Category="Afflictions",
@@ -852,6 +905,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Wyvern Poison",
   Category="Afflictions",
@@ -865,6 +919,7 @@ DefineAbility({
     "Affliction",
   },
 })
+
 DefineAbility({
   Name="Inspire Courage",
   Key="Temp Bonus ~ Inspire Courage",
@@ -887,6 +942,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 DefineAbility({
   Name="Inspire Greatness",
   Key="Temp Bonus ~ Inspire Greatness",
@@ -906,6 +962,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 DefineAbility({
   Name="Inspire Heroics",
   Key="Temp Bonus ~ Inspire Heroics",
@@ -928,6 +985,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 DefineAbility({
   Name="Aura of Courage",
   Key="Temp Bonus ~ Aura of Courage",
@@ -948,6 +1006,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 DefineAbility({
   Name="Aura of Resolve",
   Key="Temp Bonus ~ Aura of Resolve",
@@ -968,6 +1027,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 DefineAbility({
   Name="Aura of Justice",
   Key="Temp Bonus ~ Aura of Justice",
@@ -988,6 +1048,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 DefineAbility({
   Name="Aura of Righteousness",
   Key="Temp Bonus ~ Aura of Righteousness",
@@ -1008,6 +1069,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 DefineAbility({
   Name="Inspire Courage Selectable",
   Key="Temp Bonus ~ Inspire Courage NPC",
@@ -1025,6 +1087,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 DefineAbility({
   Name="Temp Bonus ~ Strength Surge",
   Category="Internal",
@@ -1040,6 +1103,7 @@ DefineAbility({
   },
   Visible=false,
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -1070,6 +1134,7 @@ ModifyAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Temp_Bonus_Aspect_Tracker",
   Category="Special Ability",
@@ -1141,6 +1206,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Temp Bonus ~ Bless Weapon",
   Category="Special Ability",
@@ -1151,6 +1217,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Temp Bonus ~ Stoneskin",
   Category="Special Ability",
@@ -1158,6 +1225,7 @@ DefineAbility({
     Value="10/adamantine",
   },
 })
+
 DefineAbility({
   Name="Unarmed Anarchic",
   Category="Special Ability",
@@ -1185,6 +1253,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Axiomatic",
   Category="Special Ability",
@@ -1212,6 +1281,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Bane",
   Category="Special Ability",
@@ -1225,6 +1295,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Brilliant Energy",
   Category="Special Ability",
@@ -1238,6 +1309,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Defending",
   Category="Special Ability",
@@ -1251,6 +1323,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Disruption",
   Category="Special Ability",
@@ -1264,6 +1337,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Flaming",
   Category="Special Ability",
@@ -1277,6 +1351,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Flaming Burst",
   Category="Special Ability",
@@ -1293,6 +1368,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Frost",
   Category="Special Ability",
@@ -1309,6 +1385,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Ghost Touch",
   Category="Special Ability",
@@ -1322,6 +1399,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Holy",
   Category="Special Ability",
@@ -1349,6 +1427,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Icy Burst",
   Category="Special Ability",
@@ -1365,6 +1444,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Ki Focus",
   Category="Special Ability",
@@ -1378,6 +1458,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Merciful",
   Category="Special Ability",
@@ -1391,6 +1472,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Mighty Cleaving",
   Category="Special Ability",
@@ -1404,6 +1486,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Shock",
   Category="Special Ability",
@@ -1417,6 +1500,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Shocking Burst",
   Category="Special Ability",
@@ -1433,6 +1517,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Speed",
   Category="Special Ability",
@@ -1446,6 +1531,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Spell Storing",
   Category="Special Ability",
@@ -1459,6 +1545,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Thundering",
   Category="Special Ability",
@@ -1475,6 +1562,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Unholy",
   Category="Special Ability",
@@ -1502,6 +1590,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Vicious",
   Category="Special Ability",
@@ -1515,6 +1604,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Unarmed Wounding",
   Category="Special Ability",
@@ -1528,6 +1618,7 @@ DefineAbility({
     "UnarmedDisplay",
   },
 })
+
 DefineAbility({
   Name="Headband of Intellect Skill Selection",
   Category="Special Ability",
@@ -1551,11 +1642,13 @@ DefineAbility({
     "HeadbandSkill",
   },
 })
+
 DefineAbility({
   Name="Spell Resistance ~ 18",
   Category="Internal",
   SpellResistance="18",
 })
+
 DefineAbility({
   Name="Base Intelligent Item",
   Category="Intelligent Item",
@@ -1593,6 +1686,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Abilities",
   Key="Intelligent Item ~ Stat",
@@ -1604,6 +1698,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="INT 10",
   Key="Intelligent Item Stat INT ~ 10",
@@ -1612,6 +1707,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="INT 11",
   Key="Intelligent Item Stat INT ~ 11",
@@ -1620,6 +1716,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="INT 12",
   Key="Intelligent Item Stat INT ~ 12",
@@ -1628,6 +1725,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="INT 13",
   Key="Intelligent Item Stat INT ~ 13",
@@ -1636,6 +1734,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="INT 14",
   Key="Intelligent Item Stat INT ~ 14",
@@ -1644,6 +1743,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="INT 15",
   Key="Intelligent Item Stat INT ~ 15",
@@ -1652,6 +1752,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="INT 16",
   Key="Intelligent Item Stat INT ~ 16",
@@ -1660,6 +1761,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="INT 17",
   Key="Intelligent Item Stat INT ~ 17",
@@ -1668,6 +1770,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="INT 18",
   Key="Intelligent Item Stat INT ~ 18",
@@ -1676,6 +1779,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="INT 19",
   Key="Intelligent Item Stat INT ~ 19",
@@ -1684,6 +1788,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="INT 20",
   Key="Intelligent Item Stat INT ~ 20",
@@ -1692,6 +1797,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="WIS 10",
   Key="Intelligent Item Stat WIS ~ 10",
@@ -1700,6 +1806,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="WIS 11",
   Key="Intelligent Item Stat WIS ~ 11",
@@ -1708,6 +1815,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="WIS 12",
   Key="Intelligent Item Stat WIS ~ 12",
@@ -1716,6 +1824,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="WIS 13",
   Key="Intelligent Item Stat WIS ~ 13",
@@ -1724,6 +1833,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="WIS 14",
   Key="Intelligent Item Stat WIS ~ 14",
@@ -1732,6 +1842,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="WIS 15",
   Key="Intelligent Item Stat WIS ~ 15",
@@ -1740,6 +1851,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="WIS 16",
   Key="Intelligent Item Stat WIS ~ 16",
@@ -1748,6 +1860,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="WIS 17",
   Key="Intelligent Item Stat WIS ~ 17",
@@ -1756,6 +1869,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="WIS 18",
   Key="Intelligent Item Stat WIS ~ 18",
@@ -1764,6 +1878,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="WIS 19",
   Key="Intelligent Item Stat WIS ~ 19",
@@ -1772,6 +1887,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="WIS 20",
   Key="Intelligent Item Stat WIS ~ 20",
@@ -1780,6 +1896,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="CHA 10",
   Key="Intelligent Item Stat CHA ~ 10",
@@ -1788,6 +1905,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="CHA 11",
   Key="Intelligent Item Stat CHA ~ 11",
@@ -1796,6 +1914,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="CHA 12",
   Key="Intelligent Item Stat CHA ~ 12",
@@ -1804,6 +1923,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="CHA 13",
   Key="Intelligent Item Stat CHA ~ 13",
@@ -1812,6 +1932,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="CHA 14",
   Key="Intelligent Item Stat CHA ~ 14",
@@ -1820,6 +1941,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="CHA 15",
   Key="Intelligent Item Stat CHA ~ 15",
@@ -1828,6 +1950,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="CHA 16",
   Key="Intelligent Item Stat CHA ~ 16",
@@ -1836,6 +1959,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="CHA 17",
   Key="Intelligent Item Stat CHA ~ 17",
@@ -1844,6 +1968,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="CHA 18",
   Key="Intelligent Item Stat CHA ~ 18",
@@ -1852,6 +1977,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="CHA 19",
   Key="Intelligent Item Stat CHA ~ 19",
@@ -1860,6 +1986,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="CHA 20",
   Key="Intelligent Item Stat CHA ~ 20",
@@ -1868,6 +1995,7 @@ DefineAbility({
     "IntelligentItemStat",
   },
 })
+
 DefineAbility({
   Name="Alignment / Chaotic Good",
   Key="Intelligent Item ~ Align (CG)",
@@ -1884,6 +2012,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Alignment / Chaotic Neutral",
   Key="Intelligent Item ~ Align (CN)",
@@ -1900,6 +2029,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Alignment / Chaotic Evil",
   Key="Intelligent Item ~ Align (CE)",
@@ -1916,6 +2046,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Alignment / Neutral Evil",
   Key="Intelligent Item ~ Align (NE)",
@@ -1932,6 +2063,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Alignment / Lawful Evil",
   Key="Intelligent Item ~ Align (LE)",
@@ -1948,6 +2080,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Alignment / Lawful Good",
   Key="Intelligent Item ~ Align (LG)",
@@ -1964,6 +2097,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Alignment / Lawful Neutral",
   Key="Intelligent Item ~ Align (LN)",
@@ -1980,6 +2114,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Alignment / Neutral Good",
   Key="Intelligent Item ~ Align (NG)",
@@ -1996,6 +2131,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Alignment / Neutral",
   Key="Intelligent Item ~ Align (TN)",
@@ -2012,6 +2148,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Communication / Empathy",
   Key="Intelligent Item ~ Empathy",
@@ -2024,6 +2161,7 @@ DefineAbility({
     "Supernatural",
   },
 })
+
 DefineAbility({
   Name="Communication / Speech",
   Key="Intelligent Item ~ Speech",
@@ -2037,6 +2175,7 @@ DefineAbility({
     "Supernatural",
   },
 })
+
 DefineAbility({
   Name="Communication / Telepathy",
   Key="Intelligent Item ~ Telepathy",
@@ -2050,6 +2189,7 @@ DefineAbility({
     "Supernatural",
   },
 })
+
 DefineAbility({
   Name="Communication / Read Languages",
   Key="Intelligent Item ~ ReadLang",
@@ -2059,6 +2199,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Communication / Read Magic",
   Key="Intelligent Item ~ ReadMagic",
@@ -2068,6 +2209,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Language Known By Item",
   Key="Intelligent Item ~ Lang",
@@ -2083,6 +2225,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Senses",
   Key="Intelligent Item ~ Senses",
@@ -2098,6 +2241,7 @@ DefineAbility({
     "Supernatural",
   },
 })
+
 DefineAbility({
   Name="Senses / Darkvision",
   Key="Intelligent Item ~ Darkvision",
@@ -2113,6 +2257,7 @@ DefineAbility({
     "Supernatural",
   },
 })
+
 DefineAbility({
   Name="Senses / Blindsense",
   Key="Intelligent Item ~ Blindsense",
@@ -2128,6 +2273,7 @@ DefineAbility({
     "Supernatural",
   },
 })
+
 DefineAbility({
   Name="Item can cast a 0-level spell at will",
   Key="Item Power ~ Cast 0 Atwill",
@@ -2154,6 +2300,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can cast a 1st-level spell 3/day",
   Key="Item Power ~ Cast 1 3",
@@ -2180,6 +2327,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can use magic aura on itself at will",
   Key="Item Power ~ Magic Aura",
@@ -2197,6 +2345,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can cast a 2nd-level spell 1/day",
   Key="Item Power ~ Cast 2 1",
@@ -2223,6 +2372,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item has 5 ranks in one skill*",
   Key="Item Power ~ 5 Skill",
@@ -2249,6 +2399,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can sprout limbs and move with a speed of 10 feet",
   Key="Item Power ~ Move",
@@ -2266,6 +2417,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can cast a 3rd-level spell 1/day",
   Key="Item Power ~ Cast 3 1",
@@ -2292,6 +2444,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can cast a 2nd-level spell 3/day",
   Key="Item Power ~ Cast 2 3",
@@ -2318,6 +2471,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item has 10 ranks in one skill*",
   Key="Item Power ~ 10 Skill",
@@ -2344,6 +2498,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can change shape into one other form of the same size",
   Key="Item Power ~ Change Shape",
@@ -2361,6 +2516,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can fly (as per the spell) at a speed of 30 feet",
   Key="Item Power ~ Fly",
@@ -2378,6 +2534,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can cast a 4th-level spell 1/day",
   Key="Item Power ~ Cast 4 1",
@@ -2404,6 +2561,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can teleport itself 1/day",
   Key="Item Power ~ Teleport",
@@ -2421,6 +2579,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can cast a 3rd-level spell 3/day",
   Key="Item Power ~ Cast 3 3",
@@ -2447,6 +2606,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can cast a 4th-level spell 3/day",
   Key="Item Power ~ Cast 4 3",
@@ -2473,6 +2633,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Defeat/slay diametrically opposed alignment",
   Key="Purpose ~ Slay Align",
@@ -2489,6 +2650,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Defeat/slay arcane spellcasters (including spellcasting monsters and those that use spell-like abilities)",
   Key="Purpose ~ Slay Arcane",
@@ -2505,6 +2667,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Defeat/slay divine spellcasters (including divine entities and servitors)",
   Key="Purpose ~ Slay Divine",
@@ -2521,6 +2684,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Defeat/slay non-spellcasters",
   Key="Purpose ~ Slay NonCasters",
@@ -2537,6 +2701,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Defeat/slay a particular creature type (see the bane special ability for choices)",
   Key="Purpose ~ Slay Creature Type",
@@ -2553,6 +2718,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Defeat/slay a particular race or kind of creature",
   Key="Purpose ~ Slay Race or Kind",
@@ -2569,6 +2735,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Defend a particular race or kind of creature",
   Key="Purpose ~ Defend Race or Kind",
@@ -2585,6 +2752,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Defeat/slay the servants of a specific deity",
   Key="Purpose ~ Slay Deity Servant",
@@ -2601,6 +2769,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Defend the servants and interests of a specific deity",
   Key="Purpose ~ Defend Deity Servant",
@@ -2617,6 +2786,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Defeat/slay all (other than the item and the wielder)",
   Key="Purpose ~ Slay All",
@@ -2633,6 +2803,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can detect any special purpose foes within 60 feet",
   Key="Dedicated Power ~ DetectFoe",
@@ -2642,6 +2813,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Wielder gets +2 luck bonus on attacks saves and checks",
   Key="Dedicated Power ~ Luck Bonus",
@@ -2651,6 +2823,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can use true resurrection on wielder once per month",
   Key="Dedicated Power ~ True Resurrection",
@@ -2660,6 +2833,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can use a 4th-level spell at will",
   Key="Dedicated Power ~ Cast 4 AtWill",
@@ -2687,6 +2861,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can use a 5th-level spell at will",
   Key="Dedicated Power ~ Cast 5 AtWill",
@@ -2714,6 +2889,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can use a 6th-level spell at will",
   Key="Dedicated Power ~ Cast 6 AtWill",
@@ -2741,6 +2917,7 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Item can use a 7th-level spell at will",
   Key="Dedicated Power ~ Cast 7 AtWill",
@@ -2768,10 +2945,12 @@ DefineAbility({
     "IntelligentItemOutput",
   },
 })
+
 DefineAbility({
   Name="Intelligent Item ~ Has Special Purpose",
   Category="Intelligent Item",
 })
+
 DefineAbility({
   Name="EQMOD ~ ItemPower_CastZeroAtWill",
   Category="Intelligent Item",
@@ -2785,6 +2964,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="EQMOD ~ ItemPower_CastOneThree",
   Category="Intelligent Item",
@@ -2798,6 +2978,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="EQMOD ~ ItemPower_CastTwoOne",
   Category="Intelligent Item",
@@ -2811,6 +2992,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="EQMOD ~ ItemPower_FiveSkill",
   Category="Intelligent Item",
@@ -2824,6 +3006,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="EQMOD ~ ItemPower_CastThreeOne",
   Category="Intelligent Item",
@@ -2837,6 +3020,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="EQMOD ~ ItemPower_CastTwoThree",
   Category="Intelligent Item",
@@ -2850,6 +3034,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="EQMOD ~ ItemPower_TenSkill",
   Category="Intelligent Item",
@@ -2863,6 +3048,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="EQMOD ~ ItemPower_CastFourOne",
   Category="Intelligent Item",
@@ -2876,6 +3062,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="EQMOD ~ ItemPower_CastThreeThree",
   Category="Intelligent Item",
@@ -2889,6 +3076,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="EQMOD ~ ItemPower_CastFourThree",
   Category="Intelligent Item",
@@ -2902,6 +3090,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="EQMOD ~ PurposePower_CastFourAtWill",
   Category="Intelligent Item",
@@ -2915,6 +3104,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="EQMOD ~ PurposePower_CastFiveAtWill",
   Category="Intelligent Item",
@@ -2928,6 +3118,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="EQMOD ~ PurposePower_CastSixAtWill",
   Category="Intelligent Item",
@@ -2941,6 +3132,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="EQMOD ~ PurposePower_CastSevenAtWill",
   Category="Intelligent Item",
@@ -2954,6 +3146,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Pearl of the Sirines ~ Swim Speed",
   Category="Equipment",
@@ -2961,6 +3154,7 @@ DefineAbility({
     Swim=60,
   },
 })
+
 DefineAbility({
   Name="Belt of Dwarvenkind ~ Languages",
   Category="Equipment",
@@ -2972,6 +3166,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Belt of Dwarvenkind ~ Skill Bonus ~ Dwarves",
   Category="Equipment",
@@ -2982,6 +3177,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Belt of Dwarvenkind ~ Skill Bonus ~ Gnomes/Halflings",
   Category="Equipment",
@@ -2992,6 +3188,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Belt of Dwarvenkind ~ Skill Penalty ~ Everyone Else",
   Category="Equipment",
@@ -3002,6 +3199,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Boots of the Winterlands ~ Snow Travel",
   Category="Equipment",
@@ -3012,6 +3210,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Boots of the Winterlands ~ Slippery Ice",
   Category="Equipment",
@@ -3022,6 +3221,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Boots of the Winterlands ~ Save Bonus",
   Category="Equipment",
@@ -3032,6 +3232,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Cloak of Arachnida ~ Spider Climb",
   Category="Equipment",
@@ -3042,6 +3243,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Cloak of Arachnida ~ Web Immunity",
   Category="Equipment",
@@ -3052,6 +3254,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Cloak of Arachnida ~ Web Move Speed",
   Category="Equipment",
@@ -3062,6 +3265,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Cloak of Arachnida ~ Save Bonus",
   Category="Equipment",
@@ -3072,6 +3276,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Cloak of Displacement (Minor) ~ Miss Chance",
   Category="Equipment",
@@ -3082,6 +3287,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Horseshoes of a Zephyr ~ Movement",
   Category="Equipment",
@@ -3092,6 +3298,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Periapt of Health ~ Immunities",
   Category="Equipment",
@@ -3102,6 +3309,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Periapt of Proof Against Poison ~ Immunities",
   Category="Equipment",
@@ -3112,6 +3320,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Periapt of Wound Closure ~ Wound Stability",
   Category="Equipment",
@@ -3122,6 +3331,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Periapt of Wound Closure ~ Healing Rate",
   Category="Equipment",
@@ -3132,6 +3342,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Periapt of Wound Closure ~ Bleed Immunity",
   Category="Equipment",
@@ -3142,6 +3353,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Stone of Good Luck ~ Ability Bonus",
   Category="Equipment",
@@ -3152,6 +3364,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="25% chance to negate critical hits and sneak attacks",
   Key="Eqmod ~ Fortification (Light)",
@@ -3160,6 +3373,7 @@ DefineAbility({
     "Defensive",
   },
 })
+
 DefineAbility({
   Name="50% chance to negate critical hits and sneak attacks",
   Key="Eqmod ~ Fortification (Medium)",
@@ -3168,6 +3382,7 @@ DefineAbility({
     "Defensive",
   },
 })
+
 DefineAbility({
   Name="75% chance to negate critical hits and sneak attacks",
   Key="Eqmod ~ Fortification (Heavy)",
@@ -3176,6 +3391,7 @@ DefineAbility({
     "Defensive",
   },
 })
+
 SetSource({
   SourceLong="Core Rulebook",
   SourceShort="CR",
@@ -3186,6 +3402,7 @@ ModifyAbility({
   Name="Default",
   Category="Internal",
 })
+
 DefineAbility({
   Name="Tongues",
   Category="Special Ability",
@@ -3196,6 +3413,7 @@ DefineAbility({
     "Communicate",
   },
 })
+
 DefineAbility({
   Name="Negative Levels",
   Category="Special Ability",
@@ -3252,6 +3470,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Natural Attack ~ Shield Bash",
   Category="Natural Attack",
@@ -3397,6 +3616,7 @@ DefineAbility({
     "NaturalAttack",
   },
 })
+
 ModifyAbility({
   Name="Natural Attack ~ Shield Bash",
   Category="Natural Attack",
@@ -3509,6 +3729,7 @@ ModifyAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shield Bash Stats",
   Category="Internal",
@@ -3539,6 +3760,7 @@ DefineAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Shield Bash Stats",
   Category="Internal",
@@ -3603,6 +3825,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Shield Bash Stats",
   Category="Internal",
@@ -3667,6 +3890,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Shield Bash Stats",
   Category="Internal",
@@ -3685,6 +3909,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Shield Bash Stats",
   Category="Internal",
@@ -3703,6 +3928,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Shield Bash Stats",
   Category="Internal",
@@ -3721,6 +3947,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Shield Bash Stats",
   Category="Internal",
@@ -3739,6 +3966,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Shield Bash Stats",
   Category="Internal",
@@ -3757,6 +3985,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Shield Bash Stats",
   Category="Internal",
@@ -3775,6 +4004,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Shield Bash Stats",
   Category="Internal",
@@ -3793,6 +4023,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Shield Bash Stats",
   Category="Internal",
@@ -3811,6 +4042,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Shield Bash Stats",
   Category="Internal",
@@ -3829,6 +4061,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Shield Bash Stats",
   Category="Internal",
@@ -3847,6 +4080,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Shield Bash Stats",
   Category="Internal",
@@ -3865,6 +4099,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Shield Bash Stats",
   Category="Internal",
@@ -3883,6 +4118,7 @@ ModifyAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shield Bash 1d1",
   Category="Internal",
@@ -3896,6 +4132,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shield Bash 1d2",
   Category="Internal",
@@ -3909,6 +4146,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shield Bash 1d3",
   Category="Internal",
@@ -3922,6 +4160,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shield Bash 1d4",
   Category="Internal",
@@ -3935,6 +4174,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shield Bash 1d6",
   Category="Internal",
@@ -3948,6 +4188,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shield Bash 1d8",
   Category="Internal",
@@ -3961,6 +4202,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shield Bash 1d10",
   Category="Internal",
@@ -3974,6 +4216,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shield Bash 1d12",
   Category="Internal",
@@ -3987,6 +4230,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shield Bash 2d6",
   Category="Internal",
@@ -4007,6 +4251,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shield Bash 3d6",
   Category="Internal",
@@ -4027,6 +4272,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shield Bash 4d6",
   Category="Internal",
@@ -4047,6 +4293,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shield Bash 6d6",
   Category="Internal",
@@ -4067,6 +4314,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shield Bash 8d6",
   Category="Internal",
@@ -4087,6 +4335,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Shield Bash 12d6",
   Category="Internal",
@@ -4107,6 +4356,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Temp Bonus ~ Enlarge Person",
   Category="Internal",
@@ -4180,6 +4430,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Temp Bonus ~ Reduce Person",
   Category="Internal",
@@ -4246,22 +4497,27 @@ DefineAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -4275,6 +4531,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -4288,6 +4545,7 @@ ModifyAbility({
     },
   },
 })
+
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -4301,6 +4559,7 @@ ModifyAbility({
     },
   },
 })
+
 DefineAbility({
   Name="Enlarge/Reduce Weapon List",
   Category="Internal",
@@ -5735,6 +5994,7 @@ DefineAbility({
     },
   },
 })
+
 DefineAbility({
   Name="+1 Bonus Feat",
   SortKey="Z_Award",
@@ -5762,6 +6022,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="+1 Skill Rank",
   SortKey="Z_Award",
@@ -5791,6 +6052,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="+1 Skill Bonus",
   SortKey="Z_Award",
@@ -5820,6 +6082,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="+1 Skill Point",
   SortKey="Z_Award",
@@ -5847,6 +6110,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="+1 Hit Point",
   SortKey="Z_Award",
@@ -5874,6 +6138,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="+1 Spell per Day",
   SortKey="Z_Award",
@@ -5900,6 +6165,7 @@ DefineAbility({
     "GM_Award",
   },
 })
+
 DefineAbility({
   Name="+1 Spell Known",
   SortKey="Z_Award",
@@ -5926,6 +6192,7 @@ DefineAbility({
     "GM_Award",
   },
 })
+
 DefineAbility({
   Name="+1 Arcane Caster Level",
   SortKey="Z_Award",
@@ -5952,6 +6219,7 @@ DefineAbility({
     "GM_Award",
   },
 })
+
 DefineAbility({
   Name="+1 Divine Caster Level",
   SortKey="Z_Award",
@@ -5978,6 +6246,7 @@ DefineAbility({
     "GM_Award",
   },
 })
+
 DefineAbility({
   Name="Add Language",
   SortKey="Z_Award",
@@ -6005,6 +6274,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="+Total Level Ranks to Skill",
   SortKey="Z_Award",
@@ -6034,6 +6304,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Add a Feat Ignoring Restrictions",
   SortKey="Z_Award",
@@ -6066,6 +6337,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="+1 Level 1 Spell Known",
   SortKey="Z_Award",
@@ -6094,6 +6366,7 @@ DefineAbility({
     "GM Bonus Spell Known",
   },
 })
+
 DefineAbility({
   Name="+1 Level 2 Spell Known",
   SortKey="Z_Award",
@@ -6122,6 +6395,7 @@ DefineAbility({
     "GM Bonus Spell Known",
   },
 })
+
 DefineAbility({
   Name="+1 Level 3 Spell Known",
   SortKey="Z_Award",
@@ -6150,6 +6424,7 @@ DefineAbility({
     "GM Bonus Spell Known",
   },
 })
+
 DefineAbility({
   Name="+1 Level 4 Spell Known",
   SortKey="Z_Award",
@@ -6178,6 +6453,7 @@ DefineAbility({
     "GM Bonus Spell Known",
   },
 })
+
 DefineAbility({
   Name="+1 Level 5 Spell Known",
   SortKey="Z_Award",
@@ -6206,6 +6482,7 @@ DefineAbility({
     "GM Bonus Spell Known",
   },
 })
+
 DefineAbility({
   Name="+1 Level 6 Spell Known",
   SortKey="Z_Award",
@@ -6234,6 +6511,7 @@ DefineAbility({
     "GM Bonus Spell Known",
   },
 })
+
 DefineAbility({
   Name="+1 Level 7 Spell Known",
   SortKey="Z_Award",
@@ -6262,6 +6540,7 @@ DefineAbility({
     "GM Bonus Spell Known",
   },
 })
+
 DefineAbility({
   Name="+1 Level 8 Spell Known",
   SortKey="Z_Award",
@@ -6290,6 +6569,7 @@ DefineAbility({
     "GM Bonus Spell Known",
   },
 })
+
 DefineAbility({
   Name="+1 Level 9 Spell Known",
   SortKey="Z_Award",
@@ -6318,6 +6598,7 @@ DefineAbility({
     "GM Bonus Spell Known",
   },
 })
+
 DefineAbility({
   Name="+1 Level 1 Spell Cast",
   SortKey="Z_Award",
@@ -6346,6 +6627,7 @@ DefineAbility({
     "GM Bonus Spell Cast",
   },
 })
+
 DefineAbility({
   Name="+1 Level 2 Spell Cast",
   SortKey="Z_Award",
@@ -6374,6 +6656,7 @@ DefineAbility({
     "GM Bonus Spell Cast",
   },
 })
+
 DefineAbility({
   Name="+1 Level 3 Spell Cast",
   SortKey="Z_Award",
@@ -6402,6 +6685,7 @@ DefineAbility({
     "GM Bonus Spell Cast",
   },
 })
+
 DefineAbility({
   Name="+1 Level 4 Spell Cast",
   SortKey="Z_Award",
@@ -6430,6 +6714,7 @@ DefineAbility({
     "GM Bonus Spell Cast",
   },
 })
+
 DefineAbility({
   Name="+1 Level 5 Spell Cast",
   SortKey="Z_Award",
@@ -6458,6 +6743,7 @@ DefineAbility({
     "GM Bonus Spell Cast",
   },
 })
+
 DefineAbility({
   Name="+1 Level 6 Spell Cast",
   SortKey="Z_Award",
@@ -6486,6 +6772,7 @@ DefineAbility({
     "GM Bonus Spell Cast",
   },
 })
+
 DefineAbility({
   Name="+1 Level 7 Spell Cast",
   SortKey="Z_Award",
@@ -6514,6 +6801,7 @@ DefineAbility({
     "GM Bonus Spell Cast",
   },
 })
+
 DefineAbility({
   Name="+1 Level 8 Spell Cast",
   SortKey="Z_Award",
@@ -6542,6 +6830,7 @@ DefineAbility({
     "GM Bonus Spell Cast",
   },
 })
+
 DefineAbility({
   Name="+1 Level 9 Spell Cast",
   SortKey="Z_Award",
@@ -6570,6 +6859,7 @@ DefineAbility({
     "GM Bonus Spell Cast",
   },
 })
+
 DefineAbility({
   Name="+1 STR Score Bonus",
   SortKey="Z_Award",
@@ -6597,6 +6887,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="+1 DEX Score Bonus",
   SortKey="Z_Award",
@@ -6624,6 +6915,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="+1 CON Score Bonus",
   SortKey="Z_Award",
@@ -6651,6 +6943,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="+1 INT Score Bonus",
   SortKey="Z_Award",
@@ -6678,6 +6971,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="+1 WIS Score Bonus",
   SortKey="Z_Award",
@@ -6705,6 +6999,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="+1 CHA Score Bonus",
   SortKey="Z_Award",
@@ -6732,6 +7027,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="-1 Bonus Feat",
   SortKey="Z_Award",
@@ -6759,6 +7055,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="-1 Skill Rank",
   SortKey="Z_Award",
@@ -6788,6 +7085,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="-1 Skill Bonus",
   SortKey="Z_Award",
@@ -6817,6 +7115,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="-1 Hit Point",
   SortKey="Z_Award",
@@ -6844,6 +7143,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="-1 Spell per Day",
   SortKey="Z_Award",
@@ -6870,6 +7170,7 @@ DefineAbility({
     "GM_Award",
   },
 })
+
 DefineAbility({
   Name="-1 Spell Known",
   SortKey="Z_Award",
@@ -6896,6 +7197,7 @@ DefineAbility({
     "GM_Award",
   },
 })
+
 DefineAbility({
   Name="-1 Arcane Caster Level",
   SortKey="Z_Award",
@@ -6922,6 +7224,7 @@ DefineAbility({
     "GM_Award",
   },
 })
+
 DefineAbility({
   Name="-1 Divine Caster Level",
   SortKey="Z_Award",
@@ -6948,6 +7251,7 @@ DefineAbility({
     "GM_Award",
   },
 })
+
 DefineAbility({
   Name="-1 Level 1 Spell Known",
   SortKey="Z_Award",
@@ -6976,6 +7280,7 @@ DefineAbility({
     "GM Penalized Spell Known",
   },
 })
+
 DefineAbility({
   Name="-1 Level 2 Spell Known",
   SortKey="Z_Award",
@@ -7004,6 +7309,7 @@ DefineAbility({
     "GM Penalized Spell Known",
   },
 })
+
 DefineAbility({
   Name="-1 Level 3 Spell Known",
   SortKey="Z_Award",
@@ -7032,6 +7338,7 @@ DefineAbility({
     "GM Penalized Spell Known",
   },
 })
+
 DefineAbility({
   Name="-1 Level 4 Spell Known",
   SortKey="Z_Award",
@@ -7060,6 +7367,7 @@ DefineAbility({
     "GM Penalized Spell Known",
   },
 })
+
 DefineAbility({
   Name="-1 Level 5 Spell Known",
   SortKey="Z_Award",
@@ -7088,6 +7396,7 @@ DefineAbility({
     "GM Penalized Spell Known",
   },
 })
+
 DefineAbility({
   Name="-1 Level 6 Spell Known",
   SortKey="Z_Award",
@@ -7116,6 +7425,7 @@ DefineAbility({
     "GM Penalized Spell Known",
   },
 })
+
 DefineAbility({
   Name="-1 Level 7 Spell Known",
   SortKey="Z_Award",
@@ -7144,6 +7454,7 @@ DefineAbility({
     "GM Penalized Spell Known",
   },
 })
+
 DefineAbility({
   Name="-1 Level 8 Spell Known",
   SortKey="Z_Award",
@@ -7172,6 +7483,7 @@ DefineAbility({
     "GM Penalized Spell Known",
   },
 })
+
 DefineAbility({
   Name="-1 Level 9 Spell Known",
   SortKey="Z_Award",
@@ -7200,6 +7512,7 @@ DefineAbility({
     "GM Penalized Spell Known",
   },
 })
+
 DefineAbility({
   Name="-1 Level 1 Spell Cast",
   SortKey="Z_Award",
@@ -7228,6 +7541,7 @@ DefineAbility({
     "GM Penalized Spell Cast",
   },
 })
+
 DefineAbility({
   Name="-1 Level 2 Spell Cast",
   SortKey="Z_Award",
@@ -7256,6 +7570,7 @@ DefineAbility({
     "GM Penalized Spell Cast",
   },
 })
+
 DefineAbility({
   Name="-1 Level 3 Spell Cast",
   SortKey="Z_Award",
@@ -7284,6 +7599,7 @@ DefineAbility({
     "GM Penalized Spell Cast",
   },
 })
+
 DefineAbility({
   Name="-1 Level 4 Spell Cast",
   SortKey="Z_Award",
@@ -7312,6 +7628,7 @@ DefineAbility({
     "GM Penalized Spell Cast",
   },
 })
+
 DefineAbility({
   Name="-1 Level 5 Spell Cast",
   SortKey="Z_Award",
@@ -7340,6 +7657,7 @@ DefineAbility({
     "GM Penalized Spell Cast",
   },
 })
+
 DefineAbility({
   Name="-1 Level 6 Spell Cast",
   SortKey="Z_Award",
@@ -7368,6 +7686,7 @@ DefineAbility({
     "GM Penalized Spell Cast",
   },
 })
+
 DefineAbility({
   Name="-1 Level 7 Spell Cast",
   SortKey="Z_Award",
@@ -7396,6 +7715,7 @@ DefineAbility({
     "GM Penalized Spell Cast",
   },
 })
+
 DefineAbility({
   Name="-1 Level 8 Spell Cast",
   SortKey="Z_Award",
@@ -7424,6 +7744,7 @@ DefineAbility({
     "GM Penalized Spell Cast",
   },
 })
+
 DefineAbility({
   Name="-1 Level 9 Spell Cast",
   SortKey="Z_Award",
@@ -7452,6 +7773,7 @@ DefineAbility({
     "GM Penalized Spell Cast",
   },
 })
+
 DefineAbility({
   Name="-1 STR Score Bonus",
   SortKey="Z_Award",
@@ -7479,6 +7801,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="-1 DEX Score Bonus",
   SortKey="Z_Award",
@@ -7506,6 +7829,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="-1 CON Score Bonus",
   SortKey="Z_Award",
@@ -7533,6 +7857,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="-1 INT Score Bonus",
   SortKey="Z_Award",
@@ -7560,6 +7885,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="-1 WIS Score Bonus",
   SortKey="Z_Award",
@@ -7587,6 +7913,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="-1 CHA Score Bonus",
   SortKey="Z_Award",
@@ -7614,6 +7941,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="+1 Deflection Bonus",
   SortKey="Z_Award",
@@ -7645,6 +7973,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="+1 Natural Armor",
   SortKey="Z_Award",
@@ -7676,6 +8005,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="+5 ft walk speed",
   SortKey="Z_Award",
@@ -7703,6 +8033,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="-5 ft walk speed",
   SortKey="Z_Award",
@@ -7730,6 +8061,7 @@ DefineAbility({
     "SpecialQuality",
   },
 })
+
 DefineAbility({
   Name="Rule - Bypass the Trait Restrictions",
   Category="Internal",
@@ -7753,6 +8085,7 @@ DefineAbility({
     "OptionalRules",
   },
 })
+
 DefineAbility({
   Name="Rule - Bypass the Drawback Restrictions",
   Category="Internal",
@@ -7776,6 +8109,7 @@ DefineAbility({
     "OptionalRules",
   },
 })
+
 DefineAbility({
   Name="Rule - Using Weapons with Natural Attacks",
   Category="Internal",
@@ -7799,6 +8133,7 @@ DefineAbility({
     "OptionalRules",
   },
 })
+
 DefineAbility({
   Name="Clear Spindle",
   Key="Ioun Stone / Clear Spindle",
@@ -7819,6 +8154,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Dark blue Rhomboid",
   Key="Ioun Stone / Dark blue Rhomboid",
@@ -7845,6 +8181,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Deep red Sphere",
   Key="Ioun Stone / Deep red Sphere",
@@ -7874,6 +8211,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Dusty rose Prism",
   Key="Ioun Stone / Dusty rose Prism",
@@ -7903,6 +8241,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Incandescent blue Sphere",
   Key="Ioun Stone / Incandescent blue Sphere",
@@ -7932,6 +8271,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Iridescent Spindle",
   Key="Ioun Stone / Iridescent Spindle",
@@ -7952,6 +8292,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Lavender and green Ellipsoid",
   Key="Ioun Stone / Lavender and green Ellipsoid",
@@ -7972,6 +8313,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Orange Prism",
   Key="Ioun Stone / Orange Prism",
@@ -7998,6 +8340,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Pale blue Rhomboid",
   Key="Ioun Stone / Pale blue Rhomboid",
@@ -8027,6 +8370,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Pale green Prism",
   Key="Ioun Stone / Pale green Prism",
@@ -8079,6 +8423,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Pale lavender Ellipsoid",
   Key="Ioun Stone / Pale lavender Ellipsoid",
@@ -8099,6 +8444,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Pearly white Spindle",
   Key="Ioun Stone / Pearly white Spindle",
@@ -8119,6 +8465,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Pink and green Sphere",
   Key="Ioun Stone / Pink and green Sphere",
@@ -8148,6 +8495,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Pink Rhomboid",
   Key="Ioun Stone / Pink Rhomboid",
@@ -8177,6 +8525,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Scarlet and blue Sphere",
   Key="Ioun Stone / Scarlet and blue Sphere",
@@ -8206,6 +8555,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Vibrant purple Prism",
   Key="Ioun Stone / Vibrant purple Prism",
@@ -8226,6 +8576,7 @@ DefineAbility({
     "Ioun",
   },
 })
+
 DefineAbility({
   Name="Acrobatics",
   Category="Class Skill",
@@ -8233,6 +8584,7 @@ DefineAbility({
     "Acrobatics",
   },
 })
+
 DefineAbility({
   Name="Appraise",
   Category="Class Skill",
@@ -8240,6 +8592,7 @@ DefineAbility({
     "Appraise",
   },
 })
+
 DefineAbility({
   Name="Bluff",
   Category="Class Skill",
@@ -8247,6 +8600,7 @@ DefineAbility({
     "Bluff",
   },
 })
+
 DefineAbility({
   Name="Climb",
   Category="Class Skill",
@@ -8254,6 +8608,7 @@ DefineAbility({
     "Climb",
   },
 })
+
 DefineAbility({
   Name="Craft",
   Category="Class Skill",
@@ -8261,6 +8616,7 @@ DefineAbility({
     "TYPE=Craft",
   },
 })
+
 DefineAbility({
   Name="Craft (Alchemy)",
   Category="Class Skill",
@@ -8268,6 +8624,7 @@ DefineAbility({
     "Craft (Alchemy)",
   },
 })
+
 DefineAbility({
   Name="Craft (Armor)",
   Category="Class Skill",
@@ -8275,6 +8632,7 @@ DefineAbility({
     "Craft (Armor)",
   },
 })
+
 DefineAbility({
   Name="Craft (Baskets)",
   Category="Class Skill",
@@ -8282,6 +8640,7 @@ DefineAbility({
     "Craft (Baskets)",
   },
 })
+
 DefineAbility({
   Name="Craft (Blacksmithing)",
   Category="Class Skill",
@@ -8289,6 +8648,7 @@ DefineAbility({
     "Craft (Blacksmithing)",
   },
 })
+
 DefineAbility({
   Name="Craft (Books)",
   Category="Class Skill",
@@ -8296,6 +8656,7 @@ DefineAbility({
     "Craft (Books)",
   },
 })
+
 DefineAbility({
   Name="Craft (Bows)",
   Category="Class Skill",
@@ -8303,6 +8664,7 @@ DefineAbility({
     "Craft (Bows)",
   },
 })
+
 DefineAbility({
   Name="Craft (Calligraphy)",
   Category="Class Skill",
@@ -8310,6 +8672,7 @@ DefineAbility({
     "Craft (Calligraphy)",
   },
 })
+
 DefineAbility({
   Name="Craft (Carpentry)",
   Category="Class Skill",
@@ -8317,6 +8680,7 @@ DefineAbility({
     "Craft (Carpentry)",
   },
 })
+
 DefineAbility({
   Name="Craft (Cloth)",
   Category="Class Skill",
@@ -8324,6 +8688,7 @@ DefineAbility({
     "Craft (Cloth)",
   },
 })
+
 DefineAbility({
   Name="Craft (Clothing)",
   Category="Class Skill",
@@ -8331,6 +8696,7 @@ DefineAbility({
     "Craft (Clothing)",
   },
 })
+
 DefineAbility({
   Name="Craft (Gemcutting)",
   Category="Class Skill",
@@ -8338,6 +8704,7 @@ DefineAbility({
     "Craft (Gemcutting)",
   },
 })
+
 DefineAbility({
   Name="Craft (Glass)",
   Category="Class Skill",
@@ -8345,6 +8712,7 @@ DefineAbility({
     "Craft (Glass)",
   },
 })
+
 DefineAbility({
   Name="Craft (Jewelry)",
   Category="Class Skill",
@@ -8352,6 +8720,7 @@ DefineAbility({
     "Craft (Jewelry)",
   },
 })
+
 DefineAbility({
   Name="Craft (Leather)",
   Category="Class Skill",
@@ -8359,6 +8728,7 @@ DefineAbility({
     "Craft (Leather)",
   },
 })
+
 DefineAbility({
   Name="Craft (Locks)",
   Category="Class Skill",
@@ -8366,6 +8736,7 @@ DefineAbility({
     "Craft (Locks)",
   },
 })
+
 DefineAbility({
   Name="Craft (Paintings)",
   Category="Class Skill",
@@ -8373,6 +8744,7 @@ DefineAbility({
     "Craft (Paintings)",
   },
 })
+
 DefineAbility({
   Name="Craft (Pottery)",
   Category="Class Skill",
@@ -8380,6 +8752,7 @@ DefineAbility({
     "Craft (Pottery)",
   },
 })
+
 DefineAbility({
   Name="Craft (Sculptures)",
   Category="Class Skill",
@@ -8387,6 +8760,7 @@ DefineAbility({
     "Craft (Sculptures)",
   },
 })
+
 DefineAbility({
   Name="Craft (Ships)",
   Category="Class Skill",
@@ -8394,6 +8768,7 @@ DefineAbility({
     "Craft (Ships)",
   },
 })
+
 DefineAbility({
   Name="Craft (Shoes)",
   Category="Class Skill",
@@ -8401,6 +8776,7 @@ DefineAbility({
     "Craft (Shoes)",
   },
 })
+
 DefineAbility({
   Name="Craft (Stonemasonry)",
   Category="Class Skill",
@@ -8408,6 +8784,7 @@ DefineAbility({
     "Craft (Stonemasonry)",
   },
 })
+
 DefineAbility({
   Name="Craft (Traps)",
   Category="Class Skill",
@@ -8415,6 +8792,7 @@ DefineAbility({
     "Craft (Traps)",
   },
 })
+
 DefineAbility({
   Name="Craft (Weapons)",
   Category="Class Skill",
@@ -8422,6 +8800,7 @@ DefineAbility({
     "Craft (Weapons)",
   },
 })
+
 DefineAbility({
   Name="Craft (Untrained)",
   Category="Class Skill",
@@ -8429,6 +8808,7 @@ DefineAbility({
     "Craft (Untrained)",
   },
 })
+
 DefineAbility({
   Name="Diplomacy",
   Category="Class Skill",
@@ -8436,6 +8816,7 @@ DefineAbility({
     "Diplomacy",
   },
 })
+
 DefineAbility({
   Name="Disable Device",
   Category="Class Skill",
@@ -8443,6 +8824,7 @@ DefineAbility({
     "Disable Device",
   },
 })
+
 DefineAbility({
   Name="Disguise",
   Category="Class Skill",
@@ -8450,6 +8832,7 @@ DefineAbility({
     "Disguise",
   },
 })
+
 DefineAbility({
   Name="Escape Artist",
   Category="Class Skill",
@@ -8457,6 +8840,7 @@ DefineAbility({
     "Escape Artist",
   },
 })
+
 DefineAbility({
   Name="Fly",
   Category="Class Skill",
@@ -8464,6 +8848,7 @@ DefineAbility({
     "Fly",
   },
 })
+
 DefineAbility({
   Name="Handle Animal",
   Category="Class Skill",
@@ -8471,6 +8856,7 @@ DefineAbility({
     "Handle Animal",
   },
 })
+
 DefineAbility({
   Name="Heal",
   Category="Class Skill",
@@ -8478,6 +8864,7 @@ DefineAbility({
     "Heal",
   },
 })
+
 DefineAbility({
   Name="Intimidate",
   Category="Class Skill",
@@ -8485,6 +8872,7 @@ DefineAbility({
     "Intimidate",
   },
 })
+
 DefineAbility({
   Name="Knowledge",
   Category="Class Skill",
@@ -8492,6 +8880,7 @@ DefineAbility({
     "TYPE=Knowledge",
   },
 })
+
 DefineAbility({
   Name="Knowledge (Arcana)",
   Category="Class Skill",
@@ -8502,6 +8891,7 @@ DefineAbility({
     "Knowledge",
   },
 })
+
 DefineAbility({
   Name="Knowledge (Dungeoneering)",
   Category="Class Skill",
@@ -8512,6 +8902,7 @@ DefineAbility({
     "Knowledge",
   },
 })
+
 DefineAbility({
   Name="Knowledge (Engineering)",
   Category="Class Skill",
@@ -8522,6 +8913,7 @@ DefineAbility({
     "Knowledge",
   },
 })
+
 DefineAbility({
   Name="Knowledge (Geography)",
   Category="Class Skill",
@@ -8532,6 +8924,7 @@ DefineAbility({
     "Knowledge",
   },
 })
+
 DefineAbility({
   Name="Knowledge (History)",
   Category="Class Skill",
@@ -8542,6 +8935,7 @@ DefineAbility({
     "Knowledge",
   },
 })
+
 DefineAbility({
   Name="Knowledge (Local)",
   Category="Class Skill",
@@ -8552,6 +8946,7 @@ DefineAbility({
     "Knowledge",
   },
 })
+
 DefineAbility({
   Name="Knowledge (Nature)",
   Category="Class Skill",
@@ -8562,6 +8957,7 @@ DefineAbility({
     "Knowledge",
   },
 })
+
 DefineAbility({
   Name="Knowledge (Nobility)",
   Category="Class Skill",
@@ -8572,6 +8968,7 @@ DefineAbility({
     "Knowledge",
   },
 })
+
 DefineAbility({
   Name="Knowledge (Planes)",
   Category="Class Skill",
@@ -8582,6 +8979,7 @@ DefineAbility({
     "Knowledge",
   },
 })
+
 DefineAbility({
   Name="Knowledge (Religion)",
   Category="Class Skill",
@@ -8592,6 +8990,7 @@ DefineAbility({
     "Knowledge",
   },
 })
+
 DefineAbility({
   Name="Knowledge (Untrained)",
   Category="Class Skill",
@@ -8599,6 +8998,7 @@ DefineAbility({
     "Knowledge (Untrained)",
   },
 })
+
 DefineAbility({
   Name="Linguistics",
   Category="Class Skill",
@@ -8606,6 +9006,7 @@ DefineAbility({
     "Linguistics",
   },
 })
+
 DefineAbility({
   Name="Perception",
   Category="Class Skill",
@@ -8613,6 +9014,7 @@ DefineAbility({
     "Perception",
   },
 })
+
 DefineAbility({
   Name="Perform",
   Category="Class Skill",
@@ -8620,6 +9022,7 @@ DefineAbility({
     "TYPE=Perform",
   },
 })
+
 DefineAbility({
   Name="Perform (Act)",
   Category="Class Skill",
@@ -8627,6 +9030,7 @@ DefineAbility({
     "Perform (Act)",
   },
 })
+
 DefineAbility({
   Name="Perform (Comedy)",
   Category="Class Skill",
@@ -8634,6 +9038,7 @@ DefineAbility({
     "Perform (Comedy)",
   },
 })
+
 DefineAbility({
   Name="Perform (Dance)",
   Category="Class Skill",
@@ -8641,6 +9046,7 @@ DefineAbility({
     "Perform (Dance)",
   },
 })
+
 DefineAbility({
   Name="Perform (Keyboard Instruments)",
   Category="Class Skill",
@@ -8648,6 +9054,7 @@ DefineAbility({
     "Perform (Keyboard Instruments)",
   },
 })
+
 DefineAbility({
   Name="Perform (Oratory)",
   Category="Class Skill",
@@ -8655,6 +9062,7 @@ DefineAbility({
     "Perform (Oratory)",
   },
 })
+
 DefineAbility({
   Name="Perform (Percussion Instruments)",
   Category="Class Skill",
@@ -8662,6 +9070,7 @@ DefineAbility({
     "Perform (Percussion Instruments)",
   },
 })
+
 DefineAbility({
   Name="Perform (Sing)",
   Category="Class Skill",
@@ -8669,6 +9078,7 @@ DefineAbility({
     "Perform (Sing)",
   },
 })
+
 DefineAbility({
   Name="Perform (String Instruments)",
   Category="Class Skill",
@@ -8676,6 +9086,7 @@ DefineAbility({
     "Perform (String Instruments)",
   },
 })
+
 DefineAbility({
   Name="Perform (Wind Instruments)",
   Category="Class Skill",
@@ -8683,6 +9094,7 @@ DefineAbility({
     "Perform (Wind Instruments)",
   },
 })
+
 DefineAbility({
   Name="Perform (Untrained)",
   Category="Class Skill",
@@ -8690,6 +9102,7 @@ DefineAbility({
     "Perform (Untrained)",
   },
 })
+
 DefineAbility({
   Name="Profession",
   Category="Class Skill",
@@ -8697,6 +9110,7 @@ DefineAbility({
     "TYPE=Profession",
   },
 })
+
 DefineAbility({
   Name="Profession (Architect)",
   Category="Class Skill",
@@ -8704,6 +9118,7 @@ DefineAbility({
     "Profession (Architect)",
   },
 })
+
 DefineAbility({
   Name="Profession (Baker)",
   Category="Class Skill",
@@ -8711,6 +9126,7 @@ DefineAbility({
     "Profession (Baker)",
   },
 })
+
 DefineAbility({
   Name="Profession (Barrister)",
   Category="Class Skill",
@@ -8718,6 +9134,7 @@ DefineAbility({
     "Profession (Barrister)",
   },
 })
+
 DefineAbility({
   Name="Profession (Brewer)",
   Category="Class Skill",
@@ -8725,6 +9142,7 @@ DefineAbility({
     "Profession (Brewer)",
   },
 })
+
 DefineAbility({
   Name="Profession (Butcher)",
   Category="Class Skill",
@@ -8732,6 +9150,7 @@ DefineAbility({
     "Profession (Butcher)",
   },
 })
+
 DefineAbility({
   Name="Profession (Clerk)",
   Category="Class Skill",
@@ -8739,6 +9158,7 @@ DefineAbility({
     "Profession (Clerk)",
   },
 })
+
 DefineAbility({
   Name="Profession (Cook)",
   Category="Class Skill",
@@ -8746,6 +9166,7 @@ DefineAbility({
     "Profession (Cook)",
   },
 })
+
 DefineAbility({
   Name="Profession (Courtesan)",
   Category="Class Skill",
@@ -8753,6 +9174,7 @@ DefineAbility({
     "Profession (Courtesan)",
   },
 })
+
 DefineAbility({
   Name="Profession (Driver)",
   Category="Class Skill",
@@ -8760,6 +9182,7 @@ DefineAbility({
     "Profession (Driver)",
   },
 })
+
 DefineAbility({
   Name="Profession (Engineer)",
   Category="Class Skill",
@@ -8767,6 +9190,7 @@ DefineAbility({
     "Profession (Engineer)",
   },
 })
+
 DefineAbility({
   Name="Profession (Farmer)",
   Category="Class Skill",
@@ -8774,6 +9198,7 @@ DefineAbility({
     "Profession (Farmer)",
   },
 })
+
 DefineAbility({
   Name="Profession (Fisherman)",
   Category="Class Skill",
@@ -8781,6 +9206,7 @@ DefineAbility({
     "Profession (Fisherman)",
   },
 })
+
 DefineAbility({
   Name="Profession (Gambler)",
   Category="Class Skill",
@@ -8788,6 +9214,7 @@ DefineAbility({
     "Profession (Gambler)",
   },
 })
+
 DefineAbility({
   Name="Profession (Gardener)",
   Category="Class Skill",
@@ -8795,6 +9222,7 @@ DefineAbility({
     "Profession (Gardener)",
   },
 })
+
 DefineAbility({
   Name="Profession (Herbalist)",
   Category="Class Skill",
@@ -8802,6 +9230,7 @@ DefineAbility({
     "Profession (Herbalist)",
   },
 })
+
 DefineAbility({
   Name="Profession (Innkeeper)",
   Category="Class Skill",
@@ -8809,6 +9238,7 @@ DefineAbility({
     "Profession (Innkeeper)",
   },
 })
+
 DefineAbility({
   Name="Profession (Librarian)",
   Category="Class Skill",
@@ -8816,6 +9246,7 @@ DefineAbility({
     "Profession (Librarian)",
   },
 })
+
 DefineAbility({
   Name="Profession (Merchant)",
   Category="Class Skill",
@@ -8823,6 +9254,7 @@ DefineAbility({
     "Profession (Merchant)",
   },
 })
+
 DefineAbility({
   Name="Profession (Midwife)",
   Category="Class Skill",
@@ -8830,6 +9262,7 @@ DefineAbility({
     "Profession (Midwife)",
   },
 })
+
 DefineAbility({
   Name="Profession (Miller)",
   Category="Class Skill",
@@ -8837,6 +9270,7 @@ DefineAbility({
     "Profession (Miller)",
   },
 })
+
 DefineAbility({
   Name="Profession (Miner)",
   Category="Class Skill",
@@ -8844,6 +9278,7 @@ DefineAbility({
     "Profession (Miner)",
   },
 })
+
 DefineAbility({
   Name="Profession (Porter)",
   Category="Class Skill",
@@ -8851,6 +9286,7 @@ DefineAbility({
     "Profession (Porter)",
   },
 })
+
 DefineAbility({
   Name="Profession (Sailor)",
   Category="Class Skill",
@@ -8858,6 +9294,7 @@ DefineAbility({
     "Profession (Sailor)",
   },
 })
+
 DefineAbility({
   Name="Profession (Scribe)",
   Category="Class Skill",
@@ -8865,6 +9302,7 @@ DefineAbility({
     "Profession (Scribe)",
   },
 })
+
 DefineAbility({
   Name="Profession (Shepherd)",
   Category="Class Skill",
@@ -8872,6 +9310,7 @@ DefineAbility({
     "Profession (Shepherd)",
   },
 })
+
 DefineAbility({
   Name="Profession (Soldier)",
   Category="Class Skill",
@@ -8879,6 +9318,7 @@ DefineAbility({
     "Profession (Soldier)",
   },
 })
+
 DefineAbility({
   Name="Profession (Soothsayer)",
   Category="Class Skill",
@@ -8886,6 +9326,7 @@ DefineAbility({
     "Profession (Soothsayer)",
   },
 })
+
 DefineAbility({
   Name="Profession (Stable Master)",
   Category="Class Skill",
@@ -8893,6 +9334,7 @@ DefineAbility({
     "Profession (Stable Master)",
   },
 })
+
 DefineAbility({
   Name="Profession (Tanner)",
   Category="Class Skill",
@@ -8900,6 +9342,7 @@ DefineAbility({
     "Profession (Tanner)",
   },
 })
+
 DefineAbility({
   Name="Profession (Trapper)",
   Category="Class Skill",
@@ -8907,6 +9350,7 @@ DefineAbility({
     "Profession (Trapper)",
   },
 })
+
 DefineAbility({
   Name="Profession (Woodcutter)",
   Category="Class Skill",
@@ -8914,6 +9358,7 @@ DefineAbility({
     "Profession (Woodcutter)",
   },
 })
+
 DefineAbility({
   Name="Ride",
   Category="Class Skill",
@@ -8921,6 +9366,7 @@ DefineAbility({
     "Ride",
   },
 })
+
 DefineAbility({
   Name="Sense Motive",
   Category="Class Skill",
@@ -8928,6 +9374,7 @@ DefineAbility({
     "Sense Motive",
   },
 })
+
 DefineAbility({
   Name="Sleight of Hand",
   Category="Class Skill",
@@ -8935,6 +9382,7 @@ DefineAbility({
     "Sleight of Hand",
   },
 })
+
 DefineAbility({
   Name="Spellcraft",
   Category="Class Skill",
@@ -8942,6 +9390,7 @@ DefineAbility({
     "Spellcraft",
   },
 })
+
 DefineAbility({
   Name="Stealth",
   Category="Class Skill",
@@ -8949,6 +9398,7 @@ DefineAbility({
     "Stealth",
   },
 })
+
 DefineAbility({
   Name="Survival",
   Category="Class Skill",
@@ -8956,6 +9406,7 @@ DefineAbility({
     "Survival",
   },
 })
+
 DefineAbility({
   Name="Swim",
   Category="Class Skill",
@@ -8963,6 +9414,7 @@ DefineAbility({
     "Swim",
   },
 })
+
 DefineAbility({
   Name="Use Magic Device",
   Category="Class Skill",
@@ -8970,6 +9422,7 @@ DefineAbility({
     "Use Magic Device",
   },
 })
+
 DefineAbility({
   Name="Tracker ~ Range Penalty",
   Category="Internal",
@@ -8983,3 +9436,4 @@ DefineAbility({
     },
   },
 })
+

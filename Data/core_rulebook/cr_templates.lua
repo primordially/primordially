@@ -14,6 +14,7 @@ DefineTemplate({
     "Wizard Spellbook",
   },
 })
+
 DefineTemplate({
   Name="Shadowdancer Darkvision",
   Visible=false,
@@ -22,6 +23,7 @@ DefineTemplate({
     "Shadowdancer No Darkvision",
   },
 })
+
 DefineTemplate({
   Name="Shadowdancer No Darkvision",
   Visible=false,
@@ -38,6 +40,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Shadowdancer Has Darkvision",
   Visible=false,
@@ -51,6 +54,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Timeless Body",
   Visible=false,
@@ -61,6 +65,7 @@ DefineTemplate({
     "Timeless Body ~ Venerable",
   },
 })
+
 DefineTemplate({
   Name="Timeless Body ~ Adult",
   Visible=false,
@@ -142,6 +147,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Timeless Body ~ Middle Age",
   Visible=false,
@@ -209,6 +215,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Timeless Body ~ Old",
   Visible=false,
@@ -248,6 +255,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Timeless Body ~ Venerable",
   Visible=false,
@@ -257,6 +265,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Augment Summoning",
   Visible=true,
@@ -271,6 +280,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Half Hitdie",
   HitDie={
@@ -279,6 +289,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Quarter Hitdie",
   HitDie={
@@ -287,6 +298,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Eighth Hitdie",
   HitDie={
@@ -295,6 +307,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Alter Self (Medium)",
   Reach=5,
@@ -314,6 +327,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Alter Self (Small)",
   Reach=5,
@@ -333,6 +347,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Righteous Might (Damage Reduction/Evil)",
   DamageReduction={
@@ -353,6 +368,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Righteous Might (Damage Reduction/Good)",
   DamageReduction={
@@ -373,6 +389,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Trained Animal",
   Visible=true,
@@ -420,6 +437,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Inherent Ability Bonus (Strength)",
   SourcePage="p.370",
@@ -432,6 +450,7 @@ DefineTemplate({
     "Inherent Strength Bonus +5",
   },
 })
+
 DefineTemplate({
   Name="Inherent Ability Bonus (Dexterity)",
   SourcePage="p.370",
@@ -444,6 +463,7 @@ DefineTemplate({
     "Inherent Dexterity Bonus +5",
   },
 })
+
 DefineTemplate({
   Name="Inherent Ability Bonus (Constitution)",
   SourcePage="p.370",
@@ -456,6 +476,7 @@ DefineTemplate({
     "Inherent Constitution Bonus +5",
   },
 })
+
 DefineTemplate({
   Name="Inherent Ability Bonus (Intelligence)",
   SourcePage="p.370",
@@ -468,6 +489,7 @@ DefineTemplate({
     "Inherent Intelligence Bonus +5",
   },
 })
+
 DefineTemplate({
   Name="Inherent Ability Bonus (Wisdom)",
   SourcePage="p.370",
@@ -480,6 +502,7 @@ DefineTemplate({
     "Inherent Wisdom Bonus +5",
   },
 })
+
 DefineTemplate({
   Name="Inherent Ability Bonus (Charisma)",
   SourcePage="p.370",
@@ -492,6 +515,7 @@ DefineTemplate({
     "Inherent Charisma Bonus +5",
   },
 })
+
 DefineTemplate({
   Name="Inherent Strength Bonus +1",
   Visible=false,
@@ -508,6 +532,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Strength Bonus +2",
   Visible=false,
@@ -524,6 +549,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Strength Bonus +3",
   Visible=false,
@@ -540,6 +566,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Strength Bonus +4",
   Visible=false,
@@ -556,6 +583,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Strength Bonus +5",
   Visible=false,
@@ -572,6 +600,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Dexterity Bonus +1",
   Visible=false,
@@ -588,6 +617,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Dexterity Bonus +2",
   Visible=false,
@@ -604,6 +634,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Dexterity Bonus +3",
   Visible=false,
@@ -620,6 +651,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Dexterity Bonus +4",
   Visible=false,
@@ -636,6 +668,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Dexterity Bonus +5",
   Visible=false,
@@ -652,6 +685,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Constitution Bonus +1",
   Visible=false,
@@ -668,6 +702,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Constitution Bonus +2",
   Visible=false,
@@ -684,6 +719,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Constitution Bonus +3",
   Visible=false,
@@ -700,6 +736,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Constitution Bonus +4",
   Visible=false,
@@ -716,6 +753,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Constitution Bonus +5",
   Visible=false,
@@ -732,6 +770,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Intelligence Bonus +1",
   Visible=false,
@@ -748,6 +787,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Intelligence Bonus +2",
   Visible=false,
@@ -764,6 +804,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Intelligence Bonus +3",
   Visible=false,
@@ -780,6 +821,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Intelligence Bonus +4",
   Visible=false,
@@ -796,6 +838,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Intelligence Bonus +5",
   Visible=false,
@@ -812,6 +855,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Wisdom Bonus +1",
   Visible=false,
@@ -828,6 +872,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Wisdom Bonus +2",
   Visible=false,
@@ -844,6 +889,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Wisdom Bonus +3",
   Visible=false,
@@ -860,6 +906,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Wisdom Bonus +4",
   Visible=false,
@@ -876,6 +923,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Wisdom Bonus +5",
   Visible=false,
@@ -892,6 +940,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Charisma Bonus +1",
   Visible=false,
@@ -908,6 +957,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Charisma Bonus +2",
   Visible=false,
@@ -924,6 +974,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Charisma Bonus +3",
   Visible=false,
@@ -940,6 +991,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Charisma Bonus +4",
   Visible=false,
@@ -956,6 +1008,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Inherent Charisma Bonus +5",
   Visible=false,
@@ -972,6 +1025,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Human Ethnicity",
   Visible=false,
@@ -985,6 +1039,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Starting Gold ~ CRB",
   Visible=false,
@@ -994,6 +1049,7 @@ DefineTemplate({
     "Starting Gold CRB ~ Average",
   },
 })
+
 DefineTemplate({
   Name="Starting Gold CRB ~ Random",
   StartingKitCount=1,
@@ -1002,6 +1058,7 @@ DefineTemplate({
     "Starting Gold CRB ~ Random",
   },
 })
+
 DefineTemplate({
   Name="Starting Gold CRB ~ Maximum",
   StartingKitCount=1,
@@ -1010,6 +1067,7 @@ DefineTemplate({
     "Starting Gold CRB ~ Maximum",
   },
 })
+
 DefineTemplate({
   Name="Starting Gold CRB ~ Average",
   StartingKitCount=1,
@@ -1018,6 +1076,7 @@ DefineTemplate({
     "Starting Gold CRB ~ Average",
   },
 })
+
 DefineTemplate({
   Name="Wealth by PC Level",
   Visible=false,
@@ -1043,6 +1102,7 @@ DefineTemplate({
     "PC Level 20",
   },
 })
+
 DefineTemplate({
   Name="PC Level 2",
   StartingKitCount=1,
@@ -1056,6 +1116,7 @@ DefineTemplate({
     "PC Level 2",
   },
 })
+
 DefineTemplate({
   Name="PC Level 3",
   StartingKitCount=1,
@@ -1069,6 +1130,7 @@ DefineTemplate({
     "PC Level 3",
   },
 })
+
 DefineTemplate({
   Name="PC Level 4",
   StartingKitCount=1,
@@ -1082,6 +1144,7 @@ DefineTemplate({
     "PC Level 4",
   },
 })
+
 DefineTemplate({
   Name="PC Level 5",
   StartingKitCount=1,
@@ -1095,6 +1158,7 @@ DefineTemplate({
     "PC Level 5",
   },
 })
+
 DefineTemplate({
   Name="PC Level 6",
   StartingKitCount=1,
@@ -1108,6 +1172,7 @@ DefineTemplate({
     "PC Level 6",
   },
 })
+
 DefineTemplate({
   Name="PC Level 7",
   StartingKitCount=1,
@@ -1121,6 +1186,7 @@ DefineTemplate({
     "PC Level 7",
   },
 })
+
 DefineTemplate({
   Name="PC Level 8",
   StartingKitCount=1,
@@ -1134,6 +1200,7 @@ DefineTemplate({
     "PC Level 8",
   },
 })
+
 DefineTemplate({
   Name="PC Level 9",
   StartingKitCount=1,
@@ -1147,6 +1214,7 @@ DefineTemplate({
     "PC Level 9",
   },
 })
+
 DefineTemplate({
   Name="PC Level 10",
   StartingKitCount=1,
@@ -1160,6 +1228,7 @@ DefineTemplate({
     "PC Level 10",
   },
 })
+
 DefineTemplate({
   Name="PC Level 11",
   StartingKitCount=1,
@@ -1173,6 +1242,7 @@ DefineTemplate({
     "PC Level 11",
   },
 })
+
 DefineTemplate({
   Name="PC Level 12",
   StartingKitCount=1,
@@ -1186,6 +1256,7 @@ DefineTemplate({
     "PC Level 12",
   },
 })
+
 DefineTemplate({
   Name="PC Level 13",
   StartingKitCount=1,
@@ -1199,6 +1270,7 @@ DefineTemplate({
     "PC Level 13",
   },
 })
+
 DefineTemplate({
   Name="PC Level 14",
   StartingKitCount=1,
@@ -1212,6 +1284,7 @@ DefineTemplate({
     "PC Level 14",
   },
 })
+
 DefineTemplate({
   Name="PC Level 15",
   StartingKitCount=1,
@@ -1225,6 +1298,7 @@ DefineTemplate({
     "PC Level 15",
   },
 })
+
 DefineTemplate({
   Name="PC Level 16",
   StartingKitCount=1,
@@ -1238,6 +1312,7 @@ DefineTemplate({
     "PC Level 16",
   },
 })
+
 DefineTemplate({
   Name="PC Level 17",
   StartingKitCount=1,
@@ -1251,6 +1326,7 @@ DefineTemplate({
     "PC Level 17",
   },
 })
+
 DefineTemplate({
   Name="PC Level 18",
   StartingKitCount=1,
@@ -1264,6 +1340,7 @@ DefineTemplate({
     "PC Level 18",
   },
 })
+
 DefineTemplate({
   Name="PC Level 19",
   StartingKitCount=1,
@@ -1277,6 +1354,7 @@ DefineTemplate({
     "PC Level 19",
   },
 })
+
 DefineTemplate({
   Name="PC Level 20",
   StartingKitCount=1,
@@ -1290,6 +1368,7 @@ DefineTemplate({
     "PC Level 20",
   },
 })
+
 DefineTemplate({
   Name="Wealth by NPC Level",
   Visible=false,
@@ -1298,6 +1377,7 @@ DefineTemplate({
     "Heroic NPC",
   },
 })
+
 DefineTemplate({
   Name="Basic NPC",
   Visible=false,
@@ -1324,6 +1404,7 @@ DefineTemplate({
     "Basic Level 20",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 1",
   StartingKitCount=1,
@@ -1337,6 +1418,7 @@ DefineTemplate({
     "Basic Level 1",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 2",
   StartingKitCount=1,
@@ -1350,6 +1432,7 @@ DefineTemplate({
     "Basic Level 2",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 3",
   StartingKitCount=1,
@@ -1363,6 +1446,7 @@ DefineTemplate({
     "Basic Level 3",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 4",
   StartingKitCount=1,
@@ -1376,6 +1460,7 @@ DefineTemplate({
     "Basic Level 4",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 5",
   StartingKitCount=1,
@@ -1389,6 +1474,7 @@ DefineTemplate({
     "Basic Level 5",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 6",
   StartingKitCount=1,
@@ -1402,6 +1488,7 @@ DefineTemplate({
     "Basic Level 6",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 7",
   StartingKitCount=1,
@@ -1415,6 +1502,7 @@ DefineTemplate({
     "Basic Level 7",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 8",
   StartingKitCount=1,
@@ -1428,6 +1516,7 @@ DefineTemplate({
     "Basic Level 8",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 9",
   StartingKitCount=1,
@@ -1441,6 +1530,7 @@ DefineTemplate({
     "Basic Level 9",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 10",
   StartingKitCount=1,
@@ -1454,6 +1544,7 @@ DefineTemplate({
     "Basic Level 10",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 11",
   StartingKitCount=1,
@@ -1467,6 +1558,7 @@ DefineTemplate({
     "Basic Level 11",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 12",
   StartingKitCount=1,
@@ -1480,6 +1572,7 @@ DefineTemplate({
     "Basic Level 12",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 13",
   StartingKitCount=1,
@@ -1493,6 +1586,7 @@ DefineTemplate({
     "Basic Level 13",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 14",
   StartingKitCount=1,
@@ -1506,6 +1600,7 @@ DefineTemplate({
     "Basic Level 14",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 15",
   StartingKitCount=1,
@@ -1519,6 +1614,7 @@ DefineTemplate({
     "Basic Level 15",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 16",
   StartingKitCount=1,
@@ -1532,6 +1628,7 @@ DefineTemplate({
     "Basic Level 16",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 17",
   StartingKitCount=1,
@@ -1545,6 +1642,7 @@ DefineTemplate({
     "Basic Level 17",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 18",
   StartingKitCount=1,
@@ -1558,6 +1656,7 @@ DefineTemplate({
     "Basic Level 18",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 19",
   StartingKitCount=1,
@@ -1571,6 +1670,7 @@ DefineTemplate({
     "Basic Level 19",
   },
 })
+
 DefineTemplate({
   Name="Basic Level 20",
   StartingKitCount=1,
@@ -1584,6 +1684,7 @@ DefineTemplate({
     "Basic Level 20",
   },
 })
+
 DefineTemplate({
   Name="Heroic NPC",
   Visible=false,
@@ -1610,6 +1711,7 @@ DefineTemplate({
     "Heroic Level 20",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 1",
   StartingKitCount=1,
@@ -1623,6 +1725,7 @@ DefineTemplate({
     "Heroic Level 1",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 2",
   StartingKitCount=1,
@@ -1636,6 +1739,7 @@ DefineTemplate({
     "Heroic Level 2",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 3",
   StartingKitCount=1,
@@ -1649,6 +1753,7 @@ DefineTemplate({
     "Heroic Level 3",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 4",
   StartingKitCount=1,
@@ -1662,6 +1767,7 @@ DefineTemplate({
     "Heroic Level 4",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 5",
   StartingKitCount=1,
@@ -1675,6 +1781,7 @@ DefineTemplate({
     "Heroic Level 5",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 6",
   StartingKitCount=1,
@@ -1688,6 +1795,7 @@ DefineTemplate({
     "Heroic Level 6",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 7",
   StartingKitCount=1,
@@ -1701,6 +1809,7 @@ DefineTemplate({
     "Heroic Level 7",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 8",
   StartingKitCount=1,
@@ -1714,6 +1823,7 @@ DefineTemplate({
     "Heroic Level 8",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 9",
   StartingKitCount=1,
@@ -1727,6 +1837,7 @@ DefineTemplate({
     "Heroic Level 9",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 10",
   StartingKitCount=1,
@@ -1740,6 +1851,7 @@ DefineTemplate({
     "Heroic Level 10",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 11",
   StartingKitCount=1,
@@ -1753,6 +1865,7 @@ DefineTemplate({
     "Heroic Level 11",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 12",
   StartingKitCount=1,
@@ -1766,6 +1879,7 @@ DefineTemplate({
     "Heroic Level 12",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 13",
   StartingKitCount=1,
@@ -1779,6 +1893,7 @@ DefineTemplate({
     "Heroic Level 13",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 14",
   StartingKitCount=1,
@@ -1792,6 +1907,7 @@ DefineTemplate({
     "Heroic Level 14",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 15",
   StartingKitCount=1,
@@ -1805,6 +1921,7 @@ DefineTemplate({
     "Heroic Level 15",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 16",
   StartingKitCount=1,
@@ -1818,6 +1935,7 @@ DefineTemplate({
     "Heroic Level 16",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 17",
   StartingKitCount=1,
@@ -1831,6 +1949,7 @@ DefineTemplate({
     "Heroic Level 17",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 18",
   StartingKitCount=1,
@@ -1844,6 +1963,7 @@ DefineTemplate({
     "Heroic Level 18",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 19",
   StartingKitCount=1,
@@ -1857,6 +1977,7 @@ DefineTemplate({
     "Heroic Level 19",
   },
 })
+
 DefineTemplate({
   Name="Heroic Level 20",
   StartingKitCount=1,
@@ -1870,6 +1991,7 @@ DefineTemplate({
     "Heroic Level 20",
   },
 })
+
 DefineTemplate({
   Name="Ability Damaged (Strength)",
   SourcePage="p.555",
@@ -1891,6 +2013,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Ability Damaged (Dexterity)",
   SourcePage="p.555",
@@ -1909,6 +2032,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Ability Damaged (Constitution)",
   SourcePage="p.555",
@@ -1927,6 +2051,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Ability Damaged (Intelligence)",
   SourcePage="p.555",
@@ -1945,6 +2070,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Ability Damaged (Wisdom)",
   SourcePage="p.555",
@@ -1963,6 +2089,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Ability Damaged (Charisma)",
   SourcePage="p.555",
@@ -1981,6 +2108,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Ability Drained (Strength)",
   SourcePage="p.555",
@@ -1999,6 +2127,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Ability Drained (Dexterity)",
   SourcePage="p.555",
@@ -2017,6 +2146,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Ability Drained (Constitution)",
   SourcePage="p.555",
@@ -2035,6 +2165,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Ability Drained (Intelligence)",
   SourcePage="p.555",
@@ -2053,6 +2184,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Ability Drained (Wisdom)",
   SourcePage="p.555",
@@ -2071,6 +2203,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Ability Drained (Charisma)",
   SourcePage="p.555",
@@ -2089,6 +2222,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Energy Drained",
   SourcePage="p.562",
@@ -2107,6 +2241,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Blinded",
   SourcePage="p.565",
@@ -2126,6 +2261,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Cowering",
   SourcePage="p.566",
@@ -2144,6 +2280,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Dazzled",
   SourcePage="p.566",
@@ -2162,6 +2299,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Deafened",
   SourcePage="p.566",
@@ -2180,6 +2318,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Entangled",
   SourcePage="p.567",
@@ -2198,6 +2337,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Exhausted",
   SourcePage="p.567",
@@ -2217,6 +2357,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Fatigued",
   SourcePage="p.567",
@@ -2236,6 +2377,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Frightened",
   SourcePage="p.567",
@@ -2254,6 +2396,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Grappled",
   SourcePage="p.567",
@@ -2272,6 +2415,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Panicked",
   SourcePage="p.568",
@@ -2290,6 +2434,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Pinned",
   SourcePage="p.568",
@@ -2308,6 +2453,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Prone",
   SourcePage="p.568",
@@ -2326,6 +2472,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Shaken",
   SourcePage="p.568",
@@ -2344,6 +2491,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Sickened",
   SourcePage="p.568",
@@ -2362,6 +2510,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Stunned",
   SourcePage="p.568",
@@ -2380,6 +2529,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="TestChoose",
   Choice={
@@ -2392,6 +2542,7 @@ DefineTemplate({
     "%LIST",
   },
 })
+
 DefineTemplate({
   Name="TestMedium",
   Size="M",
@@ -2400,6 +2551,7 @@ DefineTemplate({
     "TestChooseTemplate",
   },
 })
+
 DefineTemplate({
   Name="TestSmall",
   Size="S",
@@ -2408,6 +2560,7 @@ DefineTemplate({
     "TestChooseTemplate",
   },
 })
+
 DefineTemplate({
   Name="TestTiny",
   Size="T",
@@ -2416,6 +2569,7 @@ DefineTemplate({
     "TestChooseTemplate",
   },
 })
+
 DefineTemplate({
   Name="TestLarge",
   Size="L",
@@ -2424,6 +2578,7 @@ DefineTemplate({
     "TestChooseTemplate",
   },
 })
+
 DefineTemplate({
   Name="TestDiminutive",
   Size="D",
@@ -2432,6 +2587,7 @@ DefineTemplate({
     "TestChooseTemplate",
   },
 })
+
 DefineTemplate({
   Name="TestHuge",
   Size="H",
@@ -2440,6 +2596,7 @@ DefineTemplate({
     "TestChooseTemplate",
   },
 })
+
 DefineTemplate({
   Name="Wild Shape",
   Choice={
@@ -2452,6 +2609,7 @@ DefineTemplate({
     "%LIST",
   },
 })
+
 DefineTemplate({
   Name="Wild Shape (Medium Animal)",
   Reach=5,
@@ -2482,6 +2640,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape (Small Animal)",
   Reach=5,
@@ -2512,6 +2671,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape (Tiny Animal)",
   Reach=0,
@@ -2549,6 +2709,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape (Large Animal)",
   Reach=5,
@@ -2586,6 +2747,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape (Diminutive Animal)",
   Reach=0,
@@ -2623,6 +2785,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape (Huge Animal)",
   Reach=10,
@@ -2660,6 +2823,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape (Small Magical Beast)",
   Reach=5,
@@ -2690,6 +2854,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape (Tiny Magical Beast)",
   Reach=0,
@@ -2727,6 +2892,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape (Large Magical Beast)",
   Reach=5,
@@ -2771,6 +2937,7 @@ DefineTemplate({
     end,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Small Animal (Badger)",
   HandCount=0,
@@ -2849,6 +3016,7 @@ DefineTemplate({
     Burrow=10,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Small Animal (Dire Rat)",
   HandCount=0,
@@ -2915,6 +3083,7 @@ DefineTemplate({
     Swim=20,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Small Animal (Dog)",
   HandCount=0,
@@ -2979,6 +3148,7 @@ DefineTemplate({
     Walk=40,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Small Animal (Eagle)",
   HandCount=0,
@@ -3073,6 +3243,7 @@ DefineTemplate({
     Fly=30,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Small Animal (Electric Eel)",
   HandCount=0,
@@ -3135,6 +3306,7 @@ DefineTemplate({
     Swim=30,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Small Animal (Octopus)",
   HandCount=8,
@@ -3206,6 +3378,7 @@ DefineTemplate({
     Swim=30,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Baboon)",
   LegCount=2,
@@ -3246,6 +3419,7 @@ DefineTemplate({
     Walk=30,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Boar)",
   HandCount=0,
@@ -3322,6 +3496,7 @@ DefineTemplate({
     Walk=40,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Cheetah)",
   HandCount=0,
@@ -3400,6 +3575,7 @@ DefineTemplate({
     Walk=50,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Constrictor Snake)",
   HandCount=0,
@@ -3480,6 +3656,7 @@ DefineTemplate({
     Swim=20,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Deinonychus)",
   LegCount=2,
@@ -3562,6 +3739,7 @@ DefineTemplate({
     Walk=60,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Dire Badger)",
   HandCount=0,
@@ -3640,6 +3818,7 @@ DefineTemplate({
     Burrow=10,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Dolphin)",
   HandCount=0,
@@ -3685,6 +3864,7 @@ DefineTemplate({
     Swim=80,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Gar)",
   HandCount=0,
@@ -3765,6 +3945,7 @@ DefineTemplate({
     Fly=30,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Giant Frog)",
   HandCount=2,
@@ -3846,6 +4027,7 @@ DefineTemplate({
     Swim=30,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Goblin Dog)",
   HandCount=0,
@@ -3910,6 +4092,7 @@ DefineTemplate({
     Walk=50,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Hyena)",
   HandCount=0,
@@ -3986,6 +4169,7 @@ DefineTemplate({
     Walk=50,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Leopard)",
   HandCount=2,
@@ -4076,6 +4260,7 @@ DefineTemplate({
     Climb=20,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Monitor Lizard)",
   HandCount=0,
@@ -4154,6 +4339,7 @@ DefineTemplate({
     Swim=30,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Pony)",
   HandCount=0,
@@ -4204,6 +4390,7 @@ DefineTemplate({
     Walk=40,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Ram)",
   HandCount=0,
@@ -4261,6 +4448,7 @@ DefineTemplate({
     Walk=40,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Riding Dog)",
   HandCount=0,
@@ -4325,6 +4513,7 @@ DefineTemplate({
     Walk=40,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Squid)",
   HandCount=0,
@@ -4397,6 +4586,7 @@ DefineTemplate({
     Swim=30,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Medium Animal (Stingray)",
   HandCount=0,
@@ -4447,6 +4637,7 @@ DefineTemplate({
     Swim=40,
   },
 })
+
 DefineTemplate({
   Name="Wild Shape Huge Animal (Allosaurus)",
   LegCount=2,
@@ -4543,6 +4734,7 @@ DefineTemplate({
     Walk=50,
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Abyssal",
   Visible=false,
@@ -4552,6 +4744,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Aklo",
   Visible=false,
@@ -4561,6 +4754,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Aquan",
   Visible=false,
@@ -4570,6 +4764,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Auran",
   Visible=false,
@@ -4579,6 +4774,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Celestial",
   Visible=false,
@@ -4588,6 +4784,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Common",
   Visible=false,
@@ -4597,6 +4794,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Draconic",
   Visible=false,
@@ -4606,6 +4804,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Dwarven",
   Visible=false,
@@ -4615,6 +4814,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Elven",
   Visible=false,
@@ -4624,6 +4824,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Giant",
   Visible=false,
@@ -4633,6 +4834,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Gnoll",
   Visible=false,
@@ -4642,6 +4844,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Gnome",
   Visible=false,
@@ -4651,6 +4854,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Goblin",
   Visible=false,
@@ -4660,6 +4864,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Halfling",
   Visible=false,
@@ -4669,6 +4874,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Ignan",
   Visible=false,
@@ -4678,6 +4884,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Infernal",
   Visible=false,
@@ -4687,6 +4894,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Orc",
   Visible=false,
@@ -4696,6 +4904,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Sylvan",
   Visible=false,
@@ -4705,6 +4914,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Terran",
   Visible=false,
@@ -4714,6 +4924,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ Undercommon",
   Visible=false,
@@ -4723,6 +4934,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Race Bonus Language ~ All",
   Visible=false,
@@ -4732,6 +4944,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Bonus Language ~ Any Spoken",
   Visible=false,
@@ -4741,6 +4954,7 @@ DefineTemplate({
     },
   },
 })
+
 DefineTemplate({
   Name="Fighting Defensively",
   SourcePage="X",
@@ -4767,6 +4981,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Total Defense",
   SourcePage="X",
@@ -4793,6 +5008,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Combat Expertise trade off",
   SourcePage="X",
@@ -4814,6 +5030,7 @@ DefineTemplate({
   },
   Visible=false,
 })
+
 DefineTemplate({
   Name="Celestial Bloodline ~ Wings of Heaven",
   SourcePage="p.74",
@@ -4834,6 +5051,7 @@ DefineTemplate({
     Fly=60,
   },
 })
+
 DefineTemplate({
   Name="Monk HD d8",
   HitDie={
@@ -4842,3 +5060,4 @@ DefineTemplate({
   },
   Visible=false,
 })
+

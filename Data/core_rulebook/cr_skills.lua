@@ -37,6 +37,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Appraise",
   KeyStat="INT",
@@ -71,6 +72,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Bluff",
   KeyStat="CHA",
@@ -105,6 +107,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Climb",
   ArmorCheckPenalty="Yes",
@@ -151,6 +154,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Alchemy)",
   KeyStat="INT",
@@ -187,6 +191,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Armor)",
   KeyStat="INT",
@@ -244,6 +249,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Baskets)",
   KeyStat="INT",
@@ -301,6 +307,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Blacksmithing)",
   KeyStat="INT",
@@ -358,6 +365,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Books)",
   KeyStat="INT",
@@ -415,6 +423,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Bows)",
   KeyStat="INT",
@@ -472,6 +481,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Calligraphy)",
   KeyStat="INT",
@@ -529,6 +539,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Carpentry)",
   KeyStat="INT",
@@ -586,6 +597,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Cloth)",
   KeyStat="INT",
@@ -643,6 +655,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Clothing)",
   KeyStat="INT",
@@ -700,6 +713,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Gemcutting)",
   KeyStat="INT",
@@ -757,6 +771,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Glass)",
   KeyStat="INT",
@@ -814,6 +829,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Jewelry)",
   KeyStat="INT",
@@ -871,6 +887,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Leather)",
   KeyStat="INT",
@@ -928,6 +945,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Locks)",
   KeyStat="INT",
@@ -985,6 +1003,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Paintings)",
   KeyStat="INT",
@@ -1042,6 +1061,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Pottery)",
   KeyStat="INT",
@@ -1099,6 +1119,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Sculptures)",
   KeyStat="INT",
@@ -1156,6 +1177,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Ships)",
   KeyStat="INT",
@@ -1213,6 +1235,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Shoes)",
   KeyStat="INT",
@@ -1270,6 +1293,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Stonemasonry)",
   KeyStat="INT",
@@ -1327,6 +1351,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Traps)",
   KeyStat="INT",
@@ -1384,6 +1409,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Weapons)",
   KeyStat="INT",
@@ -1441,6 +1467,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Craft (Untrained)",
   KeyStat="INT",
@@ -1456,6 +1483,7 @@ DefineSkill({
     "Craft",
   },
 })
+
 DefineSkill({
   Name="Diplomacy",
   KeyStat="CHA",
@@ -1490,6 +1518,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Disable Device",
   ArmorCheckPenalty="Yes",
@@ -1548,6 +1577,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Disguise",
   KeyStat="CHA",
@@ -1582,6 +1612,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Escape Artist",
   ArmorCheckPenalty="Yes",
@@ -1613,6 +1644,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Fly",
   ArmorCheckPenalty="Yes",
@@ -1644,6 +1676,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Handle Animal",
   KeyStat="CHA",
@@ -1679,6 +1712,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Heal",
   KeyStat="WIS",
@@ -1713,6 +1747,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Intimidate",
   KeyStat="CHA",
@@ -1742,6 +1777,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Knowledge (Arcana)",
   KeyStat="INT",
@@ -1778,6 +1814,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Knowledge (Dungeoneering)",
   KeyStat="INT",
@@ -1814,6 +1851,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Knowledge (Engineering)",
   KeyStat="INT",
@@ -1850,6 +1888,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Knowledge (Geography)",
   KeyStat="INT",
@@ -1886,6 +1925,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Knowledge (History)",
   KeyStat="INT",
@@ -1922,6 +1962,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Knowledge (Local)",
   KeyStat="INT",
@@ -1958,6 +1999,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Knowledge (Nature)",
   KeyStat="INT",
@@ -1994,6 +2036,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Knowledge (Nobility)",
   KeyStat="INT",
@@ -2030,6 +2073,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Knowledge (Planes)",
   KeyStat="INT",
@@ -2066,6 +2110,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Knowledge (Religion)",
   KeyStat="INT",
@@ -2102,6 +2147,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Knowledge (Untrained)",
   KeyStat="INT",
@@ -2133,6 +2179,7 @@ DefineSkill({
     "Knowledge",
   },
 })
+
 DefineSkill({
   Name="Linguistics",
   Choice={
@@ -2181,6 +2228,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Perception",
   KeyStat="WIS",
@@ -2210,6 +2258,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Perform (Act)",
   KeyStat="CHA",
@@ -2246,6 +2295,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Perform (Comedy)",
   KeyStat="CHA",
@@ -2282,6 +2332,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Perform (Dance)",
   KeyStat="CHA",
@@ -2318,6 +2369,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Perform (Keyboard Instruments)",
   KeyStat="CHA",
@@ -2354,6 +2406,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Perform (Oratory)",
   KeyStat="CHA",
@@ -2390,6 +2443,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Perform (Percussion Instruments)",
   KeyStat="CHA",
@@ -2426,6 +2480,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Perform (Sing)",
   KeyStat="CHA",
@@ -2462,6 +2517,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Perform (String Instruments)",
   KeyStat="CHA",
@@ -2498,6 +2554,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Perform (Wind Instruments)",
   KeyStat="CHA",
@@ -2534,6 +2591,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Perform (Untrained)",
   KeyStat="CHA",
@@ -2549,6 +2607,7 @@ DefineSkill({
     "Perform",
   },
 })
+
 DefineSkill({
   Name="Profession (Architect)",
   KeyStat="WIS",
@@ -2585,6 +2644,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Baker)",
   KeyStat="WIS",
@@ -2621,6 +2681,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Barrister)",
   KeyStat="WIS",
@@ -2657,6 +2718,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Brewer)",
   KeyStat="WIS",
@@ -2693,6 +2755,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Butcher)",
   KeyStat="WIS",
@@ -2729,6 +2792,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Clerk)",
   KeyStat="WIS",
@@ -2765,6 +2829,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Cook)",
   KeyStat="WIS",
@@ -2801,6 +2866,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Courtesan)",
   KeyStat="WIS",
@@ -2837,6 +2903,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Driver)",
   KeyStat="WIS",
@@ -2873,6 +2940,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Engineer)",
   KeyStat="WIS",
@@ -2909,6 +2977,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Farmer)",
   KeyStat="WIS",
@@ -2945,6 +3014,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Fisherman)",
   KeyStat="WIS",
@@ -2981,6 +3051,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Gambler)",
   KeyStat="WIS",
@@ -3017,6 +3088,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Gardener)",
   KeyStat="WIS",
@@ -3053,6 +3125,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Herbalist)",
   KeyStat="WIS",
@@ -3089,6 +3162,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Innkeeper)",
   KeyStat="WIS",
@@ -3125,6 +3199,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Librarian)",
   KeyStat="WIS",
@@ -3161,6 +3236,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Merchant)",
   KeyStat="WIS",
@@ -3197,6 +3273,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Midwife)",
   KeyStat="WIS",
@@ -3233,6 +3310,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Miller)",
   KeyStat="WIS",
@@ -3269,6 +3347,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Miner)",
   KeyStat="WIS",
@@ -3305,6 +3384,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Porter)",
   KeyStat="WIS",
@@ -3341,6 +3421,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Sailor)",
   KeyStat="WIS",
@@ -3377,6 +3458,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Scribe)",
   KeyStat="WIS",
@@ -3413,6 +3495,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Shepherd)",
   KeyStat="WIS",
@@ -3449,6 +3532,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Soldier)",
   KeyStat="WIS",
@@ -3485,6 +3569,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Soothsayer)",
   KeyStat="WIS",
@@ -3521,6 +3606,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Stable Master)",
   KeyStat="WIS",
@@ -3557,6 +3643,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Tanner)",
   KeyStat="WIS",
@@ -3593,6 +3680,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Trapper)",
   KeyStat="WIS",
@@ -3629,6 +3717,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Profession (Woodcutter)",
   KeyStat="WIS",
@@ -3665,6 +3754,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Ride",
   ArmorCheckPenalty="Yes",
@@ -3722,6 +3812,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Sense Motive",
   KeyStat="WIS",
@@ -3756,6 +3847,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Sleight of Hand",
   ArmorCheckPenalty="Yes",
@@ -3793,6 +3885,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Spellcraft",
   KeyStat="INT",
@@ -3828,6 +3921,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Stealth",
   ArmorCheckPenalty="Yes",
@@ -3859,6 +3953,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Survival",
   KeyStat="WIS",
@@ -3888,6 +3983,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Swim",
   ArmorCheckPenalty="Yes",
@@ -3944,6 +4040,7 @@ DefineSkill({
     "Base",
   },
 })
+
 DefineSkill({
   Name="Use Magic Device",
   KeyStat="CHA",
@@ -3979,6 +4076,7 @@ DefineSkill({
     "Base",
   },
 })
+
 ModifySkill({
   Name="Acrobatics",
   Bonuses={
@@ -4021,6 +4119,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Appraise",
   Bonuses={
@@ -4063,6 +4162,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Bluff",
   Bonuses={
@@ -4105,6 +4205,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Climb",
   Bonuses={
@@ -4147,6 +4248,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Alchemy)",
   Bonuses={
@@ -4189,6 +4291,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Armor)",
   Bonuses={
@@ -4231,6 +4334,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Baskets)",
   Bonuses={
@@ -4273,6 +4377,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Books)",
   Bonuses={
@@ -4315,6 +4420,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Bows)",
   Bonuses={
@@ -4357,6 +4463,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Calligraphy)",
   Bonuses={
@@ -4399,6 +4506,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Carpentry)",
   Bonuses={
@@ -4441,6 +4549,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Cloth)",
   Bonuses={
@@ -4483,6 +4592,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Clothing)",
   Bonuses={
@@ -4525,6 +4635,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Glass)",
   Bonuses={
@@ -4567,6 +4678,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Jewelry)",
   Bonuses={
@@ -4609,6 +4721,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Leather)",
   Bonuses={
@@ -4651,6 +4764,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Locks)",
   Bonuses={
@@ -4693,6 +4807,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Paintings)",
   Bonuses={
@@ -4735,6 +4850,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Pottery)",
   Bonuses={
@@ -4777,6 +4893,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Sculptures)",
   Bonuses={
@@ -4819,6 +4936,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Ships)",
   Bonuses={
@@ -4861,6 +4979,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Shoes)",
   Bonuses={
@@ -4903,6 +5022,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Stonemasonry)",
   Bonuses={
@@ -4945,6 +5065,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Traps)",
   Bonuses={
@@ -4987,6 +5108,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Untrained)",
   Bonuses={
@@ -5029,6 +5151,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Craft (Weapons)",
   Bonuses={
@@ -5071,6 +5194,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Diplomacy",
   Bonuses={
@@ -5113,6 +5237,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Disable Device",
   Bonuses={
@@ -5155,6 +5280,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Disguise",
   Bonuses={
@@ -5197,6 +5323,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Escape Artist",
   Bonuses={
@@ -5239,6 +5366,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Fly",
   Bonuses={
@@ -5281,6 +5409,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Handle Animal",
   Bonuses={
@@ -5323,6 +5452,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Heal",
   Bonuses={
@@ -5365,6 +5495,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Intimidate",
   Bonuses={
@@ -5407,6 +5538,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Knowledge (Arcana)",
   Bonuses={
@@ -5449,6 +5581,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Knowledge (Dungeoneering)",
   Bonuses={
@@ -5491,6 +5624,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Knowledge (Engineering)",
   Bonuses={
@@ -5533,6 +5667,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Knowledge (Geography)",
   Bonuses={
@@ -5575,6 +5710,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Knowledge (History)",
   Bonuses={
@@ -5617,6 +5753,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Knowledge (Local)",
   Bonuses={
@@ -5659,6 +5796,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Knowledge (Nature)",
   Bonuses={
@@ -5701,6 +5839,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Knowledge (Nobility)",
   Bonuses={
@@ -5743,6 +5882,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Knowledge (Planes)",
   Bonuses={
@@ -5785,6 +5925,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Knowledge (Religion)",
   Bonuses={
@@ -5827,6 +5968,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Linguistics",
   Bonuses={
@@ -5869,6 +6011,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Perception",
   Bonuses={
@@ -5911,6 +6054,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Perform (Act)",
   Bonuses={
@@ -5953,6 +6097,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Perform (Comedy)",
   Bonuses={
@@ -5995,6 +6140,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Perform (Dance)",
   Bonuses={
@@ -6037,6 +6183,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Perform (Keyboard Instruments)",
   Bonuses={
@@ -6079,6 +6226,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Perform (Oratory)",
   Bonuses={
@@ -6121,6 +6269,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Perform (Percussion Instruments)",
   Bonuses={
@@ -6163,6 +6312,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Perform (Sing)",
   Bonuses={
@@ -6205,6 +6355,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Perform (String Instruments)",
   Bonuses={
@@ -6247,6 +6398,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Perform (Untrained)",
   Bonuses={
@@ -6289,6 +6441,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Perform (Wind Instruments)",
   Bonuses={
@@ -6331,6 +6484,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Architect)",
   Bonuses={
@@ -6373,6 +6527,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Baker)",
   Bonuses={
@@ -6415,6 +6570,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Barrister)",
   Bonuses={
@@ -6457,6 +6613,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Brewer)",
   Bonuses={
@@ -6499,6 +6656,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Butcher)",
   Bonuses={
@@ -6541,6 +6699,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Clerk)",
   Bonuses={
@@ -6583,6 +6742,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Cook)",
   Bonuses={
@@ -6625,6 +6785,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Courtesan)",
   Bonuses={
@@ -6667,6 +6828,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Driver)",
   Bonuses={
@@ -6709,6 +6871,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Engineer)",
   Bonuses={
@@ -6751,6 +6914,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Farmer)",
   Bonuses={
@@ -6793,6 +6957,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Fisherman)",
   Bonuses={
@@ -6835,6 +7000,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Gambler)",
   Bonuses={
@@ -6877,6 +7043,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Gardener)",
   Bonuses={
@@ -6919,6 +7086,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Herbalist)",
   Bonuses={
@@ -6961,6 +7129,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Innkeeper)",
   Bonuses={
@@ -7003,6 +7172,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Librarian)",
   Bonuses={
@@ -7045,6 +7215,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Merchant)",
   Bonuses={
@@ -7087,6 +7258,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Midwife)",
   Bonuses={
@@ -7129,6 +7301,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Miller)",
   Bonuses={
@@ -7171,6 +7344,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Miner)",
   Bonuses={
@@ -7213,6 +7387,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Porter)",
   Bonuses={
@@ -7255,6 +7430,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Sailor)",
   Bonuses={
@@ -7297,6 +7473,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Scribe)",
   Bonuses={
@@ -7339,6 +7516,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Shepherd)",
   Bonuses={
@@ -7381,6 +7559,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Soldier)",
   Bonuses={
@@ -7423,6 +7602,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Stable Master)",
   Bonuses={
@@ -7465,6 +7645,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Tanner)",
   Bonuses={
@@ -7507,6 +7688,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Trapper)",
   Bonuses={
@@ -7549,6 +7731,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Profession (Woodcutter)",
   Bonuses={
@@ -7591,6 +7774,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Ride",
   Bonuses={
@@ -7633,6 +7817,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Sense Motive",
   Bonuses={
@@ -7675,6 +7860,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Sleight of Hand",
   Bonuses={
@@ -7717,6 +7903,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Spellcraft",
   Bonuses={
@@ -7759,6 +7946,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Stealth",
   Bonuses={
@@ -7801,6 +7989,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Survival",
   Bonuses={
@@ -7843,6 +8032,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Swim",
   Bonuses={
@@ -7885,6 +8075,7 @@ ModifySkill({
     },
   },
 })
+
 ModifySkill({
   Name="Use Magic Device",
   Bonuses={
@@ -7927,6 +8118,7 @@ ModifySkill({
     },
   },
 })
+
 DefineSkill({
   Name="Untrained Strength",
   SortKey="z",
@@ -7938,6 +8130,7 @@ DefineSkill({
     end,
   },
 })
+
 DefineSkill({
   Name="Untrained Dexterity",
   SortKey="z",
@@ -7949,6 +8142,7 @@ DefineSkill({
     end,
   },
 })
+
 DefineSkill({
   Name="Untrained Intelligence",
   SortKey="z",
@@ -7960,6 +8154,7 @@ DefineSkill({
     end,
   },
 })
+
 DefineSkill({
   Name="Untrained Wisdom",
   SortKey="z",
@@ -7971,6 +8166,7 @@ DefineSkill({
     end,
   },
 })
+
 DefineSkill({
   Name="Untrained Charisma",
   SortKey="z",
@@ -7982,6 +8178,7 @@ DefineSkill({
     end,
   },
 })
+
 DefineSkill({
   Name="Profession (Untrained)",
   KeyStat="WIS",
@@ -7992,6 +8189,7 @@ DefineSkill({
     end,
   },
 })
+
 DefineSkill({
   Name="Disable Device",
   Key="Untrained ~ Disable Device",
@@ -8006,6 +8204,7 @@ DefineSkill({
     end,
   },
 })
+
 DefineSkill({
   Name="Handle Animal",
   Key="Untrained ~ Handle Animal",
@@ -8020,6 +8219,7 @@ DefineSkill({
     end,
   },
 })
+
 DefineSkill({
   Name="Linguistics",
   Key="Untrained ~ Linguistics",
@@ -8034,6 +8234,7 @@ DefineSkill({
     end,
   },
 })
+
 DefineSkill({
   Name="Sleight of Hand",
   Key="Untrained ~ Sleight of Hand",
@@ -8048,6 +8249,7 @@ DefineSkill({
     end,
   },
 })
+
 DefineSkill({
   Name="Spellcraft",
   Key="Untrained ~ Spellcraft",
@@ -8062,6 +8264,7 @@ DefineSkill({
     end,
   },
 })
+
 DefineSkill({
   Name="Use Magic Device",
   Key="Untrained ~ Use Magic Device",
@@ -8076,3 +8279,4 @@ DefineSkill({
     end,
   },
 })
+
