@@ -17,8 +17,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -49,8 +47,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -85,8 +81,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -122,8 +116,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -142,8 +134,6 @@ DefineSkill({
       Formula=Formula("8"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -172,8 +162,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -209,8 +197,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -233,8 +219,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -270,8 +254,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -294,8 +276,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -331,8 +311,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -355,8 +333,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -392,8 +368,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -416,8 +390,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -453,8 +425,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -477,8 +447,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -514,8 +482,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -538,8 +504,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -575,8 +539,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -599,8 +561,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -636,8 +596,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -660,8 +618,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -697,8 +653,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -721,8 +675,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -758,8 +710,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -782,8 +732,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -819,8 +767,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -843,8 +789,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -880,8 +824,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -904,8 +846,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -941,8 +881,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -965,8 +903,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1002,8 +938,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1026,8 +960,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1063,8 +995,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1087,8 +1017,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1124,8 +1052,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1148,8 +1074,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1185,8 +1109,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1209,8 +1131,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1246,8 +1166,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1270,8 +1188,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1307,8 +1223,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1331,8 +1245,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1368,8 +1280,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1392,8 +1302,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1429,8 +1337,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1453,8 +1359,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1490,8 +1394,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1514,8 +1416,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1566,8 +1466,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1603,8 +1501,6 @@ DefineSkill({
       Formula=Formula("-2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1627,8 +1523,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1664,8 +1558,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1701,8 +1593,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1734,8 +1624,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1767,8 +1655,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1803,8 +1689,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1839,8 +1723,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1871,8 +1753,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1909,8 +1789,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1947,8 +1825,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1985,8 +1861,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2023,8 +1897,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2061,8 +1933,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2099,8 +1969,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2137,8 +2005,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2175,8 +2041,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2213,8 +2077,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2295,8 +2157,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2331,8 +2191,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2363,8 +2221,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2401,8 +2257,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2439,8 +2293,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2477,8 +2329,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2515,8 +2365,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2553,8 +2401,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2591,8 +2437,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2629,8 +2473,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2667,8 +2509,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2720,8 +2560,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2758,8 +2596,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2796,8 +2632,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2834,8 +2668,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2872,8 +2704,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2910,8 +2740,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2948,8 +2776,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2986,8 +2812,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3024,8 +2848,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3062,8 +2884,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3100,8 +2920,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3138,8 +2956,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3176,8 +2992,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3214,8 +3028,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3252,8 +3064,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3290,8 +3100,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3328,8 +3136,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3366,8 +3172,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3404,8 +3208,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3442,8 +3244,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3480,8 +3280,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3518,8 +3316,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3556,8 +3352,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3594,8 +3388,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3632,8 +3424,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3670,8 +3460,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3708,8 +3496,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3746,8 +3532,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3784,8 +3568,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3822,8 +3604,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3860,8 +3640,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3898,8 +3676,6 @@ DefineSkill({
       Formula=Formula("-5"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3921,8 +3697,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3958,8 +3732,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3996,8 +3768,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4034,8 +3804,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4071,8 +3839,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4103,8 +3869,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4135,8 +3899,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4155,8 +3917,6 @@ DefineSkill({
       Formula=Formula("RacialBonus_Swim"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4172,8 +3932,6 @@ DefineSkill({
       Formula=Formula("8"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RacialBonus_Swim",
@@ -4197,8 +3955,6 @@ DefineSkill({
       Formula=Formula("3"),
       Type={
         Name="ClassSkill",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4231,8 +3987,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4250,8 +4004,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4277,8 +4029,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4296,8 +4046,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4323,8 +4071,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4342,8 +4088,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4369,8 +4113,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4388,8 +4130,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4415,8 +4155,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4434,8 +4172,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4461,8 +4197,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4480,8 +4214,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4507,8 +4239,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4526,8 +4256,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4553,8 +4281,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4572,8 +4298,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4599,8 +4323,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4618,8 +4340,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4645,8 +4365,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4664,8 +4382,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4691,8 +4407,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4710,8 +4424,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4737,8 +4449,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4756,8 +4466,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4783,8 +4491,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4802,8 +4508,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4829,8 +4533,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4848,8 +4550,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4875,8 +4575,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4894,8 +4592,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4921,8 +4617,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4940,8 +4634,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4967,8 +4659,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4986,8 +4676,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5013,8 +4701,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5032,8 +4718,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5059,8 +4743,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5078,8 +4760,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5105,8 +4785,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5124,8 +4802,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5151,8 +4827,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5170,8 +4844,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5197,8 +4869,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5216,8 +4886,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5243,8 +4911,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5262,8 +4928,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5289,8 +4953,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5308,8 +4970,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5335,8 +4995,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5354,8 +5012,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5381,8 +5037,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5400,8 +5054,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5427,8 +5079,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5446,8 +5096,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5473,8 +5121,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5492,8 +5138,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5519,8 +5163,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5538,8 +5180,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5565,8 +5205,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5584,8 +5222,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5611,8 +5247,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5630,8 +5264,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5657,8 +5289,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5676,8 +5306,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5703,8 +5331,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5722,8 +5348,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5749,8 +5373,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5768,8 +5390,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5795,8 +5415,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5814,8 +5432,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5841,8 +5457,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5860,8 +5474,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5887,8 +5499,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5906,8 +5516,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5933,8 +5541,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5952,8 +5558,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5979,8 +5583,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -5998,8 +5600,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6025,8 +5625,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6044,8 +5642,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6071,8 +5667,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6090,8 +5684,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6117,8 +5709,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6136,8 +5726,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6163,8 +5751,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6182,8 +5768,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6209,8 +5793,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6228,8 +5810,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6255,8 +5835,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6274,8 +5852,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6301,8 +5877,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6320,8 +5894,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6347,8 +5919,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6366,8 +5936,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6393,8 +5961,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6412,8 +5978,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6439,8 +6003,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6458,8 +6020,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6485,8 +6045,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6504,8 +6062,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6531,8 +6087,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6550,8 +6104,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6577,8 +6129,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6596,8 +6146,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6623,8 +6171,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6642,8 +6188,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6669,8 +6213,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6688,8 +6230,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6715,8 +6255,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6734,8 +6272,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6761,8 +6297,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6780,8 +6314,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6807,8 +6339,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6826,8 +6356,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6853,8 +6381,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6872,8 +6398,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6899,8 +6423,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6918,8 +6440,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6945,8 +6465,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6964,8 +6482,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6991,8 +6507,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7010,8 +6524,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7037,8 +6549,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7056,8 +6566,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7083,8 +6591,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7102,8 +6608,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7129,8 +6633,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7148,8 +6650,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7175,8 +6675,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7194,8 +6692,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7221,8 +6717,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7240,8 +6734,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7267,8 +6759,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7286,8 +6776,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7313,8 +6801,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7332,8 +6818,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7359,8 +6843,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7378,8 +6860,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7405,8 +6885,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7424,8 +6902,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7451,8 +6927,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7470,8 +6944,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7497,8 +6969,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7516,8 +6986,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7543,8 +7011,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7562,8 +7028,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7589,8 +7053,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7608,8 +7070,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7635,8 +7095,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7654,8 +7112,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7681,8 +7137,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7700,8 +7154,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7727,8 +7179,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7746,8 +7196,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7773,8 +7221,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7792,8 +7238,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7819,8 +7263,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7838,8 +7280,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7865,8 +7305,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7884,8 +7322,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7911,8 +7347,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7930,8 +7364,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7957,8 +7389,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -7976,8 +7406,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8003,8 +7431,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8022,8 +7448,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8049,8 +7473,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8068,8 +7490,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8095,8 +7515,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8114,8 +7532,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8141,8 +7557,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8160,8 +7574,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8187,8 +7599,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8206,8 +7616,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8233,8 +7641,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8252,8 +7658,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8279,8 +7683,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8298,8 +7700,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8325,8 +7725,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8344,8 +7742,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8371,8 +7767,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8390,8 +7784,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8417,8 +7809,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8436,8 +7826,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8463,8 +7851,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8482,8 +7868,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8509,8 +7893,6 @@ ModifySkill({
       Formula=Formula("3"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -8528,8 +7910,6 @@ ModifySkill({
       Formula=Formula("6"),
       Type={
         Name="SkillFocus",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)

@@ -46,8 +46,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CON",
@@ -58,8 +56,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WIS",
@@ -70,8 +66,6 @@ DefineAbility({
       Formula=Formula("-2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CHA",
@@ -237,8 +231,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="Dwarves receive a +2 racial bonus on Appraise skill checks made to determine the price of nonmagical goods that contain precious metals or gemstones.",
-    Arguments={
-      Formula("PREVAREQ:DwarvenGreedAspect,0"),
+    Conditions={
+      function (character)
+        return (character.Variables["DwarvenGreedAspect"] == 0)
+      end,
     },
   },
   SourcePage="p.21",
@@ -248,8 +244,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -338,8 +332,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SaveBonus_vs_Poison",
@@ -350,8 +342,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SaveBonus_vs_Spells",
@@ -390,8 +380,6 @@ DefineAbility({
       Formula=Formula("4"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CMD_BullRush",
@@ -437,8 +425,6 @@ DefineAbility({
       Formula=Formula("Dwarf_StoneCunning_SkillBonus"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Perception=to notice unusual stonework",
@@ -565,8 +551,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -577,8 +561,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -589,8 +571,6 @@ DefineAbility({
       Formula=Formula("-2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CON",
@@ -721,8 +701,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SaveBonus_vs_Enchantments",
@@ -755,8 +733,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Spellcraft=to identify magic item properties",
@@ -794,8 +770,6 @@ DefineAbility({
       Formula=Formula("KeenSensesBonus"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Perception",
@@ -916,8 +890,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CON",
@@ -928,8 +900,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CHA",
@@ -940,8 +910,6 @@ DefineAbility({
       Formula=Formula("-2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -1256,8 +1224,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SaveBonus_vs_Illusions",
@@ -1290,8 +1256,6 @@ DefineAbility({
       Formula=Formula("KeenSensesBonus"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Perception",
@@ -1428,8 +1392,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "LIST",
@@ -1459,8 +1421,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "LIST",
@@ -1666,8 +1626,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SaveBonus_vs_Enchantments",
@@ -1703,8 +1661,6 @@ DefineAbility({
       Formula=Formula("KeenSensesBonus"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Perception",
@@ -1922,8 +1878,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Intimidate",
@@ -2084,8 +2038,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -2096,8 +2048,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CHA",
@@ -2108,8 +2058,6 @@ DefineAbility({
       Formula=Formula("-2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -2193,8 +2141,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SaveBonus_vs_Fear",
@@ -2227,8 +2173,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Halfling_HalflingLuck_SaveBonus",
@@ -2261,8 +2205,6 @@ DefineAbility({
       Formula=Formula("KeenSensesBonus"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Perception",
@@ -2302,8 +2244,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Acrobatics",
@@ -3446,8 +3386,6 @@ DefineAbility({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DarkvisionRange",
@@ -3538,8 +3476,6 @@ DefineAbility({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DarkvisionRange",
@@ -3590,8 +3526,6 @@ DefineAbility({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3718,8 +3652,6 @@ DefineAbility({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -3777,8 +3709,6 @@ DefineAbility({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DarkvisionRange",
@@ -3825,8 +3755,6 @@ DefineAbility({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "BlindsightRange",
@@ -3892,8 +3820,6 @@ DefineAbility({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -4013,8 +3939,6 @@ DefineAbility({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DarkvisionRange",
@@ -4050,8 +3974,6 @@ DefineAbility({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DarkvisionRange",
@@ -4263,8 +4185,6 @@ DefineAbility({
       Formula=Formula("10"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AcidResistanceBonus",
@@ -4323,8 +4243,6 @@ DefineAbility({
       Formula=Formula("10"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AcidResistanceBonus",
@@ -4400,8 +4318,6 @@ DefineAbility({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DarkvisionRange",
@@ -4447,8 +4363,6 @@ DefineAbility({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DarkvisionRange",
@@ -4505,8 +4419,6 @@ DefineAbility({
       Formula=Formula("10"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ElectricityResistanceBonus",
@@ -4518,8 +4430,6 @@ DefineAbility({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DarkvisionRange",
@@ -4568,8 +4478,6 @@ DefineAbility({
       Formula=Formula("max(1,CHA)"),
       Type={
         Name="Deflection",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -4758,8 +4666,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Dodge",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -4920,8 +4826,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="An outsider with the native subtype can be raised, reincarnated, or resurrected just as other living creatures can be. Native outsider breathe, eat, and sleep.",
-    Arguments={
-      Formula("PRERACE:1,RACESUBTYPE=Native"),
+    Conditions={
+      function (character)
+        return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Native") end) and 1 or 0)) >= 1
+      end,
     },
   },
   DisplayName="Outsider Traits",
@@ -4949,8 +4857,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="A swarm composed of Fine or Diminutive creatures is immune to all weapon damage and are also susceptible to high winds, such as those created by a gust of wind spell.",
-    Arguments={
-      Formula("PRESIZELTEQ:D"),
+    Conditions={
+      function (character)
+        return character.Size <= "D"
+      end,
     },
   },
   DisplayName="Swarm Traits",
@@ -4966,8 +4876,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="Mindless - Immune to all mind-affecting effects (charms/ compulsions/ phantasms/ patterns/ and morale effects), Cannot heal damage on own if has no Intelligence score (but can be healed and Fast Healing works)",
-    Arguments={
-      Formula("PRETEMPLATE:1,Mindless"),
+    Conditions={
+      function (character)
+        return ((any(character.Templates, function (template) return stringMatch(template.Name, "Mindless") end) and 1 or 0)) >= 1
+      end,
     },
   },
   DisplayName="Undead Traits",
@@ -4982,8 +4894,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="Mindless vermin are immune to mind-affecting effects (charms, compulsions, phantasms, patterns, and morale effects).",
-    Arguments={
-      Formula("PRETEMPLATE:1,Mindless"),
+    Conditions={
+      function (character)
+        return ((any(character.Templates, function (template) return stringMatch(template.Name, "Mindless") end) and 1 or 0)) >= 1
+      end,
     },
   },
   DisplayName="Vermin Traits",
@@ -5310,8 +5224,6 @@ DefineAbility({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DarkvisionRange",
@@ -5490,8 +5402,6 @@ DefineAbility({
       Formula=Formula("5"),
       Type={
         Name="Size",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT.GRAPPLE",
@@ -5509,8 +5419,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Size",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -5521,8 +5429,6 @@ DefineAbility({
       Formula=Formula("-2"),
       Type={
         Name="Size",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -6954,8 +6860,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -7002,8 +6906,6 @@ DefineAbility({
       Formula=Formula("MIN(floor(%LIST/4),5)"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -7043,8 +6945,6 @@ DefineAbility({
       Formula=Formula("-5"),
       Type={
         Name="Size",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT.GRAPPLE",
@@ -7062,8 +6962,6 @@ DefineAbility({
       Formula=Formula("-2"),
       Type={
         Name="Size",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -7074,8 +6972,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Size",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -8514,8 +8410,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ALL",
@@ -8646,8 +8540,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -8670,8 +8562,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -8694,8 +8584,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CON",
@@ -8718,8 +8606,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -8742,8 +8628,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WIS",
@@ -8766,8 +8650,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CHA",

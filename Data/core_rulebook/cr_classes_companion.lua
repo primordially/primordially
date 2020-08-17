@@ -43,7 +43,6 @@ DefineClass(DefineClass({
       Type={
         Name="Base",
         Replace=true,
-        Stack=false,
       },
       Conditions={
         function (character)

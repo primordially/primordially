@@ -2584,8 +2584,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Craft (Alchemy)",
@@ -2636,8 +2634,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Climb",
@@ -2668,8 +2664,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Disguise",
@@ -2708,8 +2702,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Heal",
@@ -3041,8 +3033,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3101,8 +3091,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3141,8 +3129,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3181,8 +3167,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3221,8 +3205,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3261,8 +3243,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3301,8 +3281,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3341,8 +3319,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3381,8 +3357,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3421,8 +3395,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3461,8 +3433,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3501,8 +3471,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3541,8 +3509,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3581,8 +3547,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3621,8 +3585,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -3661,8 +3623,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Circumstance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)

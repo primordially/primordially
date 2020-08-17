@@ -137,8 +137,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -177,8 +175,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -217,8 +213,6 @@ DefineEquipment({
       Formula=Formula("3"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -257,8 +251,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -297,8 +289,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -337,8 +327,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="NaturalArmorEnhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -376,8 +364,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="NaturalArmorEnhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -415,8 +401,6 @@ DefineEquipment({
       Formula=Formula("3"),
       Type={
         Name="NaturalArmorEnhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -454,8 +438,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="NaturalArmorEnhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -493,8 +475,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="NaturalArmorEnhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -832,8 +812,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -849,8 +827,6 @@ DefineEquipment({
       Formula=Formula("60"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DarkvisionRange",
@@ -887,8 +863,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -925,8 +899,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -963,8 +935,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -1001,8 +971,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -1039,8 +1007,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -1077,8 +1043,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -1115,8 +1079,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CON",
@@ -1153,8 +1115,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CON",
@@ -1191,8 +1151,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CON",
@@ -1229,8 +1187,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -1268,8 +1224,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -1307,8 +1261,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -1346,8 +1298,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -1385,8 +1335,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -1424,8 +1372,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -1463,8 +1409,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -1502,8 +1446,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -1541,8 +1483,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -1580,8 +1520,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -1620,8 +1558,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -1660,8 +1596,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -1754,8 +1688,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Acrobatics",
@@ -1854,8 +1786,6 @@ DefineEquipment({
       Formula=Formula("10"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TYPE=Walk",
@@ -1866,8 +1796,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Acrobatics=When Jumping",
@@ -2072,8 +2000,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Proficiency",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2089,8 +2015,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Proficiency",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2106,8 +2030,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2123,8 +2045,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2140,8 +2060,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2157,8 +2075,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2203,8 +2119,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Proficiency",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2220,8 +2134,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Proficiency",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2237,8 +2149,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2254,8 +2164,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2300,8 +2208,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -2342,8 +2248,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -2384,8 +2288,6 @@ DefineEquipment({
       Formula=Formula("3"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -2426,8 +2328,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -2468,8 +2368,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -2510,8 +2408,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -2552,8 +2448,6 @@ DefineEquipment({
       Formula=Formula("7"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -2594,8 +2488,6 @@ DefineEquipment({
       Formula=Formula("8"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -3158,8 +3050,6 @@ DefineEquipment({
       Formula=Formula("3"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Bluff",
@@ -3263,8 +3153,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Stealth",
@@ -3381,8 +3269,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Stealth",
@@ -3459,8 +3345,6 @@ DefineEquipment({
       Formula=Formula("3"),
       Type={
         Name="NaturalArmor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -3505,8 +3389,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ALL",
@@ -3549,8 +3431,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ALL",
@@ -3593,8 +3473,6 @@ DefineEquipment({
       Formula=Formula("3"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ALL",
@@ -3637,8 +3515,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ALL",
@@ -3681,8 +3557,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ALL",
@@ -4425,8 +4299,6 @@ DefineEquipment({
       Formula=Formula("10"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Stealth",
@@ -4490,8 +4362,6 @@ DefineEquipment({
       Formula=Formula("10"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Swim",
@@ -4555,8 +4425,6 @@ DefineEquipment({
       Formula=Formula("10"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Acrobatics",
@@ -4595,8 +4463,6 @@ DefineEquipment({
       Formula=Formula("10"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Perception",
@@ -4707,8 +4573,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Perception",
@@ -5262,8 +5126,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Swim",
@@ -5302,8 +5164,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Disable Device",
@@ -5648,8 +5508,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CHA",
@@ -5686,8 +5544,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CHA",
@@ -5724,8 +5580,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CHA",
@@ -5762,8 +5616,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WIS",
@@ -5800,8 +5652,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WIS",
@@ -5838,8 +5688,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WIS",
@@ -5883,8 +5731,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -5930,8 +5776,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -5977,8 +5821,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -6024,8 +5866,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -6071,8 +5911,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -6118,8 +5956,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -6158,8 +5994,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WIS",
@@ -6197,8 +6031,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WIS",
@@ -6236,8 +6068,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WIS",
@@ -6282,8 +6112,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -6330,8 +6158,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -6378,8 +6204,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -6426,8 +6250,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -6472,8 +6294,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -6518,8 +6338,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -6582,8 +6400,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Linguistics=Linguistics (Understand exotic written messages)",
@@ -6867,14 +6683,52 @@ DefineEquipment({
   SpecialProperties={
     {
       Format="Once per week can summon 2d4+1 3rd level human barbarians to fight for the character who summoned them.",
-      Arguments={
-        Formula("PREMULT:1,[PRECLASS:1,SPELLCASTER=1],[PREVARGTEQ:CasterLevel_Highest,1]"),
+      Conditions={
+        function (character)
+          local count = 0
+          local subCondition
+          subCondition = function (character)
+            return 1 <= #filter(ipairs(character.ClassLevels),
+            function (class, level)
+              return (GetSpellCastingType(class) == "" and level >= 1)
+            end)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          subCondition = function (character)
+            return (character.Variables["CasterLevel_Highest"] >= 1)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          return count >= 1
+        end,
       },
     },
     {
       Format="Once per week can summon 2d4+1 3rd level human barbarians that attack the character who summoned them.",
-      Arguments={
-        Formula("!PREMULT:1,[PRECLASS:1,SPELLCASTER=1],[PREVARGTEQ:CasterLevel_Highest,1]"),
+      Conditions={
+        function (character)
+          local count = 0
+          local subCondition
+          subCondition = function (character)
+            return 1 <= #filter(ipairs(character.ClassLevels),
+            function (class, level)
+              return (GetSpellCastingType(class) == "" and level >= 1)
+            end)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          subCondition = function (character)
+            return (character.Variables["CasterLevel_Highest"] >= 1)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          return count >= 1
+        end,
       },
     },
   },
@@ -6906,14 +6760,50 @@ DefineEquipment({
   SpecialProperties={
     {
       Format="Once per week can summon 2d4 4th level human barbarians to fight for the character who summoned them.",
-      Arguments={
-        Formula("PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,All Martial Weapon Proficiencies],[PREVARGTEQ:BardicPerformanceLVL,1]"),
+      Conditions={
+        function (character)
+          local count = 0
+          local subCondition
+          subCondition = function (character)
+            return 1 <= #filter(character.Abilities, function (ability)
+              return ability.Category == "Special Ability" and (ability.Name == "All Martial Weapon Proficiencies")
+            end)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          subCondition = function (character)
+            return (character.Variables["BardicPerformanceLVL"] >= 1)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          return count >= 1
+        end,
       },
     },
     {
       Format="Once per week can summon 2d4 4th level human barbarians that attack the character who summoned them.",
-      Arguments={
-        Formula("!PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,All Martial Weapon Proficiencies],[PREVARGTEQ:BardicPerformanceLVL,1]"),
+      Conditions={
+        function (character)
+          local count = 0
+          local subCondition
+          subCondition = function (character)
+            return 1 <= #filter(character.Abilities, function (ability)
+              return ability.Category == "Special Ability" and (ability.Name == "All Martial Weapon Proficiencies")
+            end)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          subCondition = function (character)
+            return (character.Variables["BardicPerformanceLVL"] >= 1)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          return count >= 1
+        end,
       },
     },
   },
@@ -6945,14 +6835,50 @@ DefineEquipment({
   SpecialProperties={
     {
       Format="Once per week can summon 1d4+1 5th level human barbarians to fight for the character who summoned them.",
-      Arguments={
-        Formula("PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,All Martial Weapon Proficiencies],[PREVARGTEQ:BardicPerformanceLVL,1]"),
+      Conditions={
+        function (character)
+          local count = 0
+          local subCondition
+          subCondition = function (character)
+            return 1 <= #filter(character.Abilities, function (ability)
+              return ability.Category == "Special Ability" and (ability.Name == "All Martial Weapon Proficiencies")
+            end)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          subCondition = function (character)
+            return (character.Variables["BardicPerformanceLVL"] >= 1)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          return count >= 1
+        end,
       },
     },
     {
       Format="Once per week can summon 1d4+1 5th level human barbarians that attack the character who summoned them.",
-      Arguments={
-        Formula("!PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,All Martial Weapon Proficiencies],[PREVARGTEQ:BardicPerformanceLVL,1]"),
+      Conditions={
+        function (character)
+          local count = 0
+          local subCondition
+          subCondition = function (character)
+            return 1 <= #filter(character.Abilities, function (ability)
+              return ability.Category == "Special Ability" and (ability.Name == "All Martial Weapon Proficiencies")
+            end)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          subCondition = function (character)
+            return (character.Variables["BardicPerformanceLVL"] >= 1)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          return count >= 1
+        end,
       },
     },
   },
@@ -6988,8 +6914,6 @@ DefineEquipment({
       Formula=Formula("30"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TYPE.Walk",
@@ -7141,8 +7065,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Insight",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -7179,8 +7101,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -7217,8 +7137,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WIS",
@@ -7255,8 +7173,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -7293,8 +7209,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CON",
@@ -7331,8 +7245,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CHA",
@@ -7369,8 +7281,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -7536,8 +7446,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -7548,8 +7456,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ALL",
@@ -7560,8 +7466,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TYPE.Base",
@@ -7797,8 +7701,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Survival=Follow or identify tracks",
@@ -7809,8 +7711,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Perception",
@@ -9484,8 +9384,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9518,8 +9416,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9575,8 +9471,27 @@ DefineEquipment({
   SpecialProperties={
     {
       Format="+2 enhancement bonus to overcome spell resistance.",
-      Arguments={
-        Formula("PREMULT:1,[PRECLASS:1,SPELLCASTER.Arcane=1],[PREVARGTEQ:Caster_Level_Highest__Arcane,1]"),
+      Conditions={
+        function (character)
+          local count = 0
+          local subCondition
+          subCondition = function (character)
+            return 1 <= #filter(ipairs(character.ClassLevels),
+            function (class, level)
+              return (GetSpellCastingType(class) == "Arcane" and level >= 1)
+            end)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          subCondition = function (character)
+            return (character.Variables["Caster_Level_Highest__Arcane"] >= 1)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          return count >= 1
+        end,
       },
     },
   },
@@ -9654,8 +9569,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9688,8 +9601,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9733,8 +9644,27 @@ DefineEquipment({
   SpecialProperties={
     {
       Format="+2 enhancement bonus to overcome spell resistance.",
-      Arguments={
-        Formula("PREMULT:1,[PRECLASS:1,SPELLCASTER.Arcane=1],[PREVARGTEQ:Caster_Level_Highest__Arcane,1]"),
+      Conditions={
+        function (character)
+          local count = 0
+          local subCondition
+          subCondition = function (character)
+            return 1 <= #filter(ipairs(character.ClassLevels),
+            function (class, level)
+              return (GetSpellCastingType(class) == "Arcane" and level >= 1)
+            end)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          subCondition = function (character)
+            return (character.Variables["Caster_Level_Highest__Arcane"] >= 1)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          return count >= 1
+        end,
       },
     },
   },
@@ -9812,8 +9742,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9846,8 +9774,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -9903,8 +9829,27 @@ DefineEquipment({
   SpecialProperties={
     {
       Format="+2 enhancement bonus to overcome spell resistance.",
-      Arguments={
-        Formula("PREMULT:1,[PRECLASS:1,SPELLCASTER.Arcane=1],[PREVARGTEQ:Caster_Level_Highest__Arcane,1]"),
+      Conditions={
+        function (character)
+          local count = 0
+          local subCondition
+          subCondition = function (character)
+            return 1 <= #filter(ipairs(character.ClassLevels),
+            function (class, level)
+              return (GetSpellCastingType(class) == "Arcane" and level >= 1)
+            end)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          subCondition = function (character)
+            return (character.Variables["Caster_Level_Highest__Arcane"] >= 1)
+          end
+          if subCondition(character) then
+            count = count + 1
+          end
+          return count >= 1
+        end,
       },
     },
   },
@@ -9989,8 +9934,6 @@ DefineEquipment({
       Formula=Formula("10"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Perception",
@@ -10158,8 +10101,6 @@ DefineEquipment({
       Formula=Formula("1+Global_LuckBonus"),
       Type={
         Name="Luck",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ALL",
@@ -10267,8 +10208,6 @@ DefineEquipment({
       Formula=Formula("10"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CMB_Grapple_DEF",
@@ -10544,8 +10483,6 @@ DefineEquipment({
       Formula=Formula("1+Global_LuckBonus"),
       Type={
         Name="Luck",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INITIATIVE",
@@ -10556,8 +10493,6 @@ DefineEquipment({
       Formula=Formula("1+Global_LuckBonus"),
       Type={
         Name="Luck",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ALL",
@@ -10568,8 +10503,6 @@ DefineEquipment({
       Formula=Formula("1+Global_LuckBonus"),
       Type={
         Name="Luck",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TYPE.Strength",
@@ -11163,8 +11096,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Disable Device",
@@ -11175,8 +11106,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Escape Artist",
@@ -11293,8 +11222,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Fly",
@@ -11432,8 +11359,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Climb",
@@ -11468,8 +11393,6 @@ DefineEquipment({
       Formula=Formula("10"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Climb",
@@ -11818,8 +11741,6 @@ DefineEquipment({
       Formula=Formula("10"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AcidResistanceBonus",
@@ -11854,8 +11775,6 @@ DefineEquipment({
       Formula=Formula("20"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AcidResistanceBonus",
@@ -11890,8 +11809,6 @@ DefineEquipment({
       Formula=Formula("30"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AcidResistanceBonus",
@@ -11926,8 +11843,6 @@ DefineEquipment({
       Formula=Formula("10"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ColdResistanceBonus",
@@ -11962,8 +11877,6 @@ DefineEquipment({
       Formula=Formula("20"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ColdResistanceBonus",
@@ -11998,8 +11911,6 @@ DefineEquipment({
       Formula=Formula("30"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ColdResistanceBonus",
@@ -12034,8 +11945,6 @@ DefineEquipment({
       Formula=Formula("10"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ElectricityResistanceBonus",
@@ -12070,8 +11979,6 @@ DefineEquipment({
       Formula=Formula("20"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ElectricityResistanceBonus",
@@ -12106,8 +12013,6 @@ DefineEquipment({
       Formula=Formula("30"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ElectricityResistanceBonus",
@@ -12142,8 +12047,6 @@ DefineEquipment({
       Formula=Formula("10"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FireResistanceBonus",
@@ -12178,8 +12081,6 @@ DefineEquipment({
       Formula=Formula("20"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FireResistanceBonus",
@@ -12214,8 +12115,6 @@ DefineEquipment({
       Formula=Formula("30"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "FireResistanceBonus",
@@ -12250,8 +12149,6 @@ DefineEquipment({
       Formula=Formula("10"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SonicResistanceBonus",
@@ -12286,8 +12183,6 @@ DefineEquipment({
       Formula=Formula("20"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SonicResistanceBonus",
@@ -12322,8 +12217,6 @@ DefineEquipment({
       Formula=Formula("30"),
       Type={
         Name="Resistance",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "SonicResistanceBonus",
@@ -12425,8 +12318,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Shield",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -12545,8 +12436,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Acrobatics=When Jumping",
@@ -12581,8 +12470,6 @@ DefineEquipment({
       Formula=Formula("10"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Acrobatics=When Jumping",
@@ -12639,8 +12526,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Deflection",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -12675,8 +12560,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Deflection",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -12711,8 +12594,6 @@ DefineEquipment({
       Formula=Formula("3"),
       Type={
         Name="Deflection",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -12747,8 +12628,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Deflection",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -12783,8 +12662,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Deflection",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -13012,8 +12889,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Swim",
@@ -13048,8 +12923,6 @@ DefineEquipment({
       Formula=Formula("10"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Swim",
@@ -13859,8 +13732,6 @@ CopyEquipment("Staff", {
       Formula=Formula("2+Global_LuckBonus"),
       Type={
         Name="Luck",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -13871,8 +13742,6 @@ CopyEquipment("Staff", {
       Formula=Formula("2+Global_LuckBonus"),
       Type={
         Name="Luck",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ALL",
@@ -14154,8 +14023,6 @@ CopyEquipment("Rod", {
       Formula=Formula("1"),
       Type={
         Name="Insight",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INITIATIVE",
@@ -14296,8 +14163,6 @@ CopyEquipment("Rod", {
       Formula=Formula("3"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -14480,8 +14345,6 @@ CopyEquipment("Rod", {
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -14580,8 +14443,6 @@ CopyEquipment("Rod", {
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CHA",
@@ -14627,8 +14488,6 @@ CopyEquipment("Rod", {
       Formula=Formula("1"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -14691,8 +14550,6 @@ CopyEquipment("Rod", {
       Formula=Formula("2"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -15573,8 +15430,6 @@ CopyEquipment("Potion", {
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CON",
@@ -15662,8 +15517,6 @@ CopyEquipment("Potion", {
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -15714,8 +15567,6 @@ CopyEquipment("Potion", {
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -15988,8 +15839,6 @@ CopyEquipment("Potion", {
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "CHA",
@@ -16151,8 +16000,6 @@ CopyEquipment("Potion", {
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "INT",
@@ -17054,8 +16901,6 @@ CopyEquipment("Potion", {
       Formula=Formula("4"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "WIS",

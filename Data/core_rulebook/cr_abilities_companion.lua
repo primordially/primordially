@@ -1217,7 +1217,6 @@ DefineAbility({
       Formula=Formula("2*floor(MasterLevel/3)"),
       Type={
         Name="NaturalArmor",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -1262,8 +1261,10 @@ ModifyAbility({
   Category="Special Ability",
   Description={
     Format="You gain a second attack with one of your natural weapons at -5.",
-    Arguments={
-      Formula("PREVARLT:NaturalAttacks,3"),
+    Conditions={
+      function (character)
+        return (character.Variables["NaturalAttacks"] < 3)
+      end,
     },
   },
 })
@@ -1505,8 +1506,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DEX",
@@ -1630,8 +1629,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -1691,8 +1688,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -1826,7 +1821,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -1863,8 +1857,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -1901,8 +1893,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -1978,7 +1968,6 @@ DefineAbility({
       Formula=Formula("-1"),
       Type={
         Name="Base",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -2038,8 +2027,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "STR",
@@ -2156,7 +2143,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -2207,7 +2193,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -2286,8 +2271,12 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="Animal will attack all creatures",
-    Arguments={
-      Formula("PREABILITY:1,CATEGORY=Special Ability,Animal Trick ~ Attack II"),
+    Conditions={
+      function (character)
+        return 1 <= #filter(character.Abilities, function (ability)
+          return ability.Category == "Special Ability" and (ability.Name == "Animal Trick ~ Attack II")
+        end)
+      end,
     },
   },
   SourcePage="p.97",
@@ -2989,8 +2978,6 @@ DefineAbility({
       Formula=Formula("10+(HD/2)+CON"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DiseaseDC",
@@ -3279,7 +3266,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -3323,7 +3309,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -3374,7 +3359,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -3409,7 +3393,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -3460,7 +3443,6 @@ DefineAbility({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -3583,7 +3565,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -3662,7 +3643,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -3765,7 +3745,6 @@ DefineAbility({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
         Stack=true,
       },
       Variables={
@@ -4585,8 +4564,10 @@ DefineAbility({
   Category="Special Ability",
   Description={
     Format="You gain +1 hit points whenever you gain a Hit Die (such as when you gain a level).",
-    Arguments={
-      Formula("PREHD:MIN=3"),
+    Conditions={
+      function (character)
+        return character.HitDie >= 3
+      end,
     },
   },
   SourcePage="p.135",

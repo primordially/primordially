@@ -104,12 +104,15 @@ namespace Primordially.LstToLua
             if (idx == -1)
             {
                 left = this;
-                right = default;
+                right = this;
                 return false;
             }
 
-            left = Substring(0, idx);
-            right = Substring(idx + value.Length);
+
+            var l = Substring(0, idx);
+            var r = Substring(idx + value.Length);
+            left = l;
+            right = r;
             return true;
         }
 

@@ -458,8 +458,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -475,8 +473,6 @@ DefineEquipment({
       Formula=Formula("0"),
       Type={
         Name="BaseArmor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -513,8 +509,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -530,8 +524,6 @@ DefineEquipment({
       Formula=Formula("-1"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -547,8 +539,6 @@ DefineEquipment({
       Formula=Formula("0"),
       Type={
         Name="BaseArmor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -585,8 +575,6 @@ DefineEquipment({
       Formula=Formula("3"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -602,8 +590,6 @@ DefineEquipment({
       Formula=Formula("-1"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -619,8 +605,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="BaseArmor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -668,8 +652,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -685,8 +667,6 @@ DefineEquipment({
       Formula=Formula("-2"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -702,8 +682,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="BaseArmor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -751,8 +729,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -768,8 +744,6 @@ DefineEquipment({
       Formula=Formula("-2"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -785,8 +759,6 @@ DefineEquipment({
       Formula=Formula("3"),
       Type={
         Name="BaseArmor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -835,8 +807,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -852,8 +822,6 @@ DefineEquipment({
       Formula=Formula("-2"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -869,8 +837,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="BaseArmor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -918,8 +884,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -935,8 +899,6 @@ DefineEquipment({
       Formula=Formula("-3"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -952,8 +914,6 @@ DefineEquipment({
       Formula=Formula("5"),
       Type={
         Name="BaseArmor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -1001,8 +961,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1018,8 +976,6 @@ DefineEquipment({
       Formula=Formula("-3"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1035,8 +991,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="BaseArmor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -1084,8 +1038,6 @@ DefineEquipment({
       Formula=Formula("7"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1101,8 +1053,6 @@ DefineEquipment({
       Formula=Formula("-3"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1118,8 +1068,6 @@ DefineEquipment({
       Formula=Formula("7"),
       Type={
         Name="BaseArmor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -1167,8 +1115,6 @@ DefineEquipment({
       Formula=Formula("7"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1184,8 +1130,6 @@ DefineEquipment({
       Formula=Formula("-3"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1201,8 +1145,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="BaseArmor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -1250,8 +1192,6 @@ DefineEquipment({
       Formula=Formula("8"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1267,8 +1207,6 @@ DefineEquipment({
       Formula=Formula("-4"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1284,8 +1222,6 @@ DefineEquipment({
       Formula=Formula("7"),
       Type={
         Name="BaseArmor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -1333,8 +1269,6 @@ DefineEquipment({
       Formula=Formula("9"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -1350,8 +1284,6 @@ DefineEquipment({
       Formula=Formula("-4"),
       Type={
         Name="Armor",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -1367,8 +1299,6 @@ DefineEquipment({
       Formula=Formula("6"),
       Type={
         Name="BaseArmor",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "ArmorCheckPenalty",
@@ -1617,8 +1547,6 @@ CopyEquipment("Breastplate (Base)", {
       Formula=Formula("2"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TYPE=Charisma",
@@ -1629,8 +1557,6 @@ CopyEquipment("Breastplate (Base)", {
       Formula=Formula("2"),
       Type={
         Name="Competence",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "LeadershipScore",
@@ -2426,8 +2352,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Shield",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2496,8 +2420,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Shield",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2580,8 +2502,6 @@ DefineEquipment({
       Formula=Formula("1"),
       Type={
         Name="Shield",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2663,8 +2583,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Shield",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2680,8 +2598,6 @@ DefineEquipment({
       Formula=Formula("-1"),
       Type={
         Name="Shield",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -2764,8 +2680,6 @@ DefineEquipment({
       Formula=Formula("2"),
       Type={
         Name="Shield",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2781,8 +2695,6 @@ DefineEquipment({
       Formula=Formula("-1"),
       Type={
         Name="Shield",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -2858,8 +2770,6 @@ DefineEquipment({
       Formula=Formula("4"),
       Type={
         Name="Shield",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -2875,8 +2785,6 @@ DefineEquipment({
       Formula=Formula("-2"),
       Type={
         Name="Shield",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (item)
@@ -6453,8 +6361,6 @@ CopyEquipment("Warhammer (Base)", {
       Formula=Formula("3"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -6484,8 +6390,10 @@ CopyEquipment("Warhammer (Base)", {
   SpecialProperties={
     {
       Format="when thrown will return just before thrower's next turn, when hurled deals an extra 1d8 damage or an extra 2d8 against giants",
-      Arguments={
-        Formula("PRERACE:1,Dwarf%,RACESUBTYPE=Dwarf"),
+      Conditions={
+        function (character)
+          return ((character.Race.Name == "Dwarf%" and 1 or 0) + (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Dwarf") end) and 1 or 0)) >= 1
+        end,
       },
     },
   },
@@ -6615,8 +6523,6 @@ CopyEquipment("Longsword (Base)", {
       Formula=Formula("5*(AllowHolyAvenger>=1)"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE",
@@ -6643,7 +6549,11 @@ CopyEquipment("Longsword (Base)", {
       Format="provides spell resistance of % to the wielder and anyone adjacent",
       Arguments={
         Formula("HolyAvengerSR"),
-        Formula("PREVARGTEQ:AllowHolyAvenger,1"),
+      },
+      Conditions={
+        function (character)
+          return (character.Variables["AllowHolyAvenger"] >= 1)
+        end,
       },
     },
   },
@@ -6770,8 +6680,6 @@ CopyEquipment("Short Sword (Base)", {
       Formula=Formula("1+Global_LuckBonus"),
       Type={
         Name="Luck",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Fortitude",
@@ -6823,8 +6731,6 @@ CopyEquipment("Short Sword (Base)", {
       Formula=Formula("1+Global_LuckBonus"),
       Type={
         Name="Luck",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Fortitude",
@@ -6876,8 +6782,6 @@ CopyEquipment("Short Sword (Base)", {
       Formula=Formula("1+Global_LuckBonus"),
       Type={
         Name="Luck",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Fortitude",
@@ -6929,8 +6833,6 @@ CopyEquipment("Short Sword (Base)", {
       Formula=Formula("1+Global_LuckBonus"),
       Type={
         Name="Luck",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "Fortitude",
@@ -7167,8 +7069,12 @@ CopyEquipment("Longsword (Base)", {
   SpecialProperties={
     {
       Format="use shatterspike as a +4 longsword when attempting to sunder an opponent's weapon",
-      Arguments={
-        Formula("PREABILITY:1,CATEGORY=FEAT,Improved Sunder"),
+      Conditions={
+        function (character)
+          return 1 <= #filter(character.Abilities, function (ability)
+            return ability.Category == "FEAT" and (ability.Name == "Improved Sunder")
+          end)
+        end,
       },
     },
   },
@@ -7598,8 +7504,6 @@ DefineEquipment({
       Formula=Formula("3"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -7647,8 +7551,6 @@ DefineEquipment({
       Formula=Formula("3"),
       Type={
         Name="Enhancement",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "TOHIT",
@@ -7660,8 +7562,6 @@ DefineEquipment({
       Formula=Formula("-4"),
       Type={
         Name="StrengthPenalty",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)

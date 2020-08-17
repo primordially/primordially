@@ -21,8 +21,6 @@ DefineStat({
       Formula=Formula("STR"),
       Type={
         Name="Ability",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -38,8 +36,6 @@ DefineStat({
       Formula=Formula("STR"),
       Type={
         Name="Ability",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE.Melee",
@@ -72,8 +68,6 @@ DefineStat({
       Formula=Formula("-STR"),
       Type={
         Name="Ability",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "DAMAGE.Splash",
@@ -84,8 +78,6 @@ DefineStat({
       Formula=Formula("max(STRSCORE,AltSTRSCORE)"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PreStatScore_STR",
@@ -111,8 +103,6 @@ DefineStat({
       Formula=Formula("1"),
       Type={
         Name="Racial",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -167,8 +157,6 @@ DefineStat({
       Formula=Formula("DEX"),
       Type={
         Name="Ability",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -184,8 +172,6 @@ DefineStat({
       Formula=Formula("10"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -196,8 +182,6 @@ DefineStat({
       Formula=Formula("min(ACAbilityStat, min(MXDXEN,MODEQUIPMAXDEX))"),
       Type={
         Name="Ability",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -213,8 +197,6 @@ DefineStat({
       Formula=Formula("max(FightingDefensivelyAC,TotalDefenseAC)"),
       Type={
         Name="Dodge",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC",
@@ -225,8 +207,6 @@ DefineStat({
       Formula=Formula("max(DEXSCORE,AltDEXSCORE)"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PreStatScore_DEX",
@@ -350,8 +330,6 @@ DefineStat({
       Formula=Formula("max(CONSCORE,AltCONSCORE)"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PreStatScore_CON",
@@ -423,8 +401,6 @@ DefineStat({
       Formula=Formula("max(INTSCORE,AltINTSCORE)"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PreStatScore_INT",
@@ -493,8 +469,6 @@ DefineStat({
       Formula=Formula("max(WISSCORE,AltWISSCORE)"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PreStatScore_WIS",
@@ -542,8 +516,6 @@ DefineStat({
       Formula=Formula("min(CHA, min(MXDXEN,MODEQUIPMAXDEX))"),
       Type={
         Name="Ability",
-        Replace=false,
-        Stack=false,
       },
       Conditions={
         function (character)
@@ -559,8 +531,6 @@ DefineStat({
       Formula=Formula("max(CHASCORE,AltCHASCORE)"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "PreStatScore_CHA",

@@ -101,8 +101,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -225,8 +223,6 @@ DefineRace({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -244,8 +240,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -372,8 +366,6 @@ DefineRace({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -384,8 +376,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -510,8 +500,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -652,8 +640,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -794,8 +780,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -941,8 +925,6 @@ DefineRace({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -953,8 +935,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -1085,8 +1065,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -1097,8 +1075,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -1231,8 +1207,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -1243,8 +1217,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -1377,8 +1349,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -1389,8 +1359,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -1520,8 +1488,6 @@ DefineRace({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -1532,8 +1498,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -1664,8 +1628,6 @@ DefineRace({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -1676,8 +1638,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -1809,8 +1769,6 @@ DefineRace({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -1821,8 +1779,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -1945,8 +1901,6 @@ DefineRace({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -1957,8 +1911,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -2095,8 +2047,6 @@ DefineRace({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -2229,8 +2179,6 @@ DefineRace({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -2356,8 +2304,6 @@ DefineRace({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -2485,8 +2431,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -2497,8 +2441,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -2624,8 +2566,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -2636,8 +2576,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -2761,8 +2699,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -2773,8 +2709,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -2908,8 +2842,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -2920,8 +2852,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -3055,8 +2985,6 @@ DefineRace({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -3067,8 +2995,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -3191,8 +3117,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -3436,8 +3360,6 @@ DefineRace({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -3582,8 +3504,6 @@ DefineRace({
       Formula=Formula("2"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -3735,8 +3655,6 @@ DefineRace({
       Formula=Formula("3"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -3754,8 +3672,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -3904,8 +3820,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -4054,8 +3968,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -4073,8 +3985,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -4217,8 +4127,6 @@ DefineRace({
       Formula=Formula("6"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -4236,8 +4144,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -4380,8 +4286,6 @@ DefineRace({
       Formula=Formula("4"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -4399,8 +4303,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -4543,8 +4445,6 @@ DefineRace({
       Formula=Formula("5"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -4562,8 +4462,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -4706,8 +4604,6 @@ DefineRace({
       Formula=Formula("3"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -4725,8 +4621,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -4882,8 +4776,6 @@ DefineRace({
       Formula=Formula("5"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -4901,8 +4793,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",
@@ -5172,8 +5062,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -5484,8 +5372,6 @@ DefineRace({
       Formula=Formula("10"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "AC_Natural_Armor",
@@ -5503,8 +5389,6 @@ DefineRace({
       Formula=Formula("1"),
       Type={
         Name="Base",
-        Replace=false,
-        Stack=false,
       },
       Variables={
         "RaceSizeIsLong",

@@ -17,6 +17,7 @@ namespace Primordially.LstToLua
                 Property.String("SOURCESHORT", "SourceShort"),
                 Property.String("SOURCELONG", "SourceLong"),
                 Property.String("SOURCEURL", "SourceUrl"),
+                Property.String("SOURCELINK", "SourceLink"),
             });
         }
 
@@ -33,8 +34,8 @@ namespace Primordially.LstToLua
 
         public override void Dump(LuaTextWriter output)
         {
-            var key = Key ?? Name ?? throw new InvalidOperationException("Object has no Key or Name");
-            if (IsDelete)
+            var key = Key ?? Name;
+            if (IsDelete && key != null)
             {
                 output.Write($"Delete{ObjectType}(");
                 output.WriteValue(key.AsSpan());
