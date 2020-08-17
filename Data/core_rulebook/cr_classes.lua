@@ -6,7 +6,7 @@ SetSource({
   SourceWeb="http://paizo.com/store/downloads/pathfinder/pathfinderRPG/v5748btpy88yj",
   SourceDate="2009-08",
 })
-DefineClass(DefineClass({
+DefineClass({
   Name="Barbarian",
   ExClass="Ex-Barbarian",
   HitDie=12,
@@ -156,8 +156,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Ex-Barbarian",
   HitDie=12,
   MaxLevel=20,
@@ -287,8 +286,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Bard",
   HitDie=8,
   MaxLevel=20,
@@ -797,8 +795,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Cleric",
   HitDie=8,
   MaxLevel=20,
@@ -1331,8 +1328,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Druid",
   HitDie=8,
   MaxLevel=20,
@@ -1971,8 +1967,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Fighter",
   HitDie=10,
   MaxLevel=20,
@@ -2102,8 +2097,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Monk",
   HitDie=10,
   MaxLevel=20,
@@ -2190,8 +2184,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Paladin",
   ExClass="Ex-Paladin",
   HitDie=10,
@@ -2563,8 +2556,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Ex-Paladin",
   HitDie=10,
   MaxLevel=20,
@@ -2805,8 +2797,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Ranger",
   HitDie=10,
   ItemCreationCasterLevel=Formula("CL-3"),
@@ -3186,8 +3177,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Rogue",
   HitDie=8,
   MaxLevel=20,
@@ -3329,8 +3319,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Sorcerer",
   HitDie=6,
   MaxLevel=20,
@@ -3889,8 +3878,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Wizard",
   AllowBaseClass=false,
   HitDie=6,
@@ -4550,8 +4538,7 @@ DefineClass(DefineClass({
       Cost=0,
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Arcane Archer",
   HitDie=10,
   MaxLevel=10,
@@ -4747,8 +4734,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Arcane Trickster",
   HitDie=6,
   MaxLevel=10,
@@ -4992,8 +4978,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Assassin",
   HitDie=8,
   MaxLevel=10,
@@ -5148,8 +5133,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Dragon Disciple",
   HitDie=12,
   MaxLevel=10,
@@ -5410,8 +5394,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Duelist",
   HitDie=10,
   MaxLevel=10,
@@ -5548,8 +5531,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Eldritch Knight",
   HitDie=10,
   MaxLevel=10,
@@ -5757,8 +5739,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Loremaster",
   HitDie=6,
   MaxLevel=10,
@@ -5986,8 +5967,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Mystic Theurge",
   HitDie=6,
   MaxLevel=10,
@@ -6223,8 +6203,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Pathfinder Chronicler",
   HitDie=8,
   MaxLevel=10,
@@ -6362,8 +6341,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Shadowdancer",
   HitDie=8,
   MaxLevel=10,
@@ -6500,8 +6478,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Adept",
   HitDie=6,
   MaxLevel=20,
@@ -7072,8 +7049,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Aristocrat",
   HitDie=8,
   MaxLevel=20,
@@ -7253,8 +7229,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Commoner",
   HitDie=6,
   MaxLevel=20,
@@ -7384,8 +7359,7 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
-DefineClass(DefineClass({
+})DefineClass({
   Name="Expert",
   HitDie=8,
   MaxLevel=20,
@@ -7542,4 +7516,4 @@ DefineClass(DefineClass({
       },
     },
   },
-}))
+})
