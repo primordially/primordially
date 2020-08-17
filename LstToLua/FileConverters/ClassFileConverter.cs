@@ -29,6 +29,7 @@ namespace Primordially.LstToLua.FileConverters
                     if (firstField.StartsWith("CLASS:"))
                     {
                         _classDefinition.Dump(luaWriter);
+                        luaWriter.Write("\n");
                         _classDefinition = null;
                         State = null;
                         goto default;

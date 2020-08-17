@@ -134,7 +134,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Badger (Wolverine))",
   SortKey="z_Companion",
@@ -272,7 +271,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Bear)",
   SortKey="z_Companion",
@@ -407,7 +405,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Bird (Eagle))",
   SortKey="z_Companion",
@@ -548,7 +545,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Bird (Hawk))",
   SortKey="z_Companion",
@@ -689,7 +685,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Bird (Owl))",
   SortKey="z_Companion",
@@ -830,7 +825,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Boar)",
   SortKey="z_Companion",
@@ -977,7 +971,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Camel)",
   SortKey="z_Companion",
@@ -1111,7 +1104,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Cat (Small (Cheetah)))",
   SortKey="z_Companion",
@@ -1254,7 +1246,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Cat (Small (Leopard)))",
   SortKey="z_Companion",
@@ -1397,7 +1388,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Crocodile (Alligator))",
   SortKey="z_Companion",
@@ -1538,7 +1528,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Dog)",
   SortKey="z_Companion",
@@ -1678,7 +1667,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Horse)",
   SortKey="z_Companion",
@@ -1820,7 +1808,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Pony)",
   SortKey="z_Companion",
@@ -1960,7 +1947,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Shark)",
   SortKey="z_Companion",
@@ -2093,7 +2079,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Snake (Constrictor))",
   SortKey="z_Companion",
@@ -2225,7 +2210,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Snake (Viper))",
   SortKey="z_Companion",
@@ -2351,7 +2335,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Cat (Big (Lion)))",
   SortKey="z_Companion",
@@ -2487,7 +2470,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Cat (Big (Tiger)))",
   SortKey="z_Companion",
@@ -2623,7 +2605,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Dinosaur (Deinonychus))",
   SortKey="z_Companion",
@@ -2767,7 +2748,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Dinosaur (Velociraptor))",
   SortKey="z_Companion",
@@ -2904,7 +2884,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Wolf)",
   SortKey="z_Companion",
@@ -3045,7 +3024,6 @@ DefineRace({
     Level=2,
   },
 })
-
 SetSource({
   SourceLong="Bestiary",
   SourceShort="B1",
@@ -3177,7 +3155,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Shadow)",
   SortKey="z_Companion",
@@ -3284,7 +3261,6 @@ DefineRace({
     Level=3,
   },
 })
-
 SetSource({
   SourceLong="Bestiary 2",
   SourceShort="B2",
@@ -3430,7 +3406,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Dinosaur (Parasaurolophus))",
   SortKey="z_Companion",
@@ -3582,7 +3557,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Dinosaur (Tylosaurus))",
   SortKey="z_Companion",
@@ -3745,7 +3719,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Gar)",
   SortKey="z_Companion",
@@ -3897,7 +3870,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Herd Animal (Ram))",
   SortKey="z_Companion",
@@ -4056,7 +4028,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Hippopotamus)",
   SortKey="z_Companion",
@@ -4216,7 +4187,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Megafauna (Arsinoitherium))",
   SortKey="z_Companion",
@@ -4376,7 +4346,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Megafauna (Gylptodon))",
   SortKey="z_Companion",
@@ -4529,7 +4498,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Megafauna (Megaloceros))",
   SortKey="z_Companion",
@@ -4703,7 +4671,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Megafauna (Megatherium))",
   SortKey="z_Companion",
@@ -4863,7 +4830,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Primate (Baboon))",
   SortKey="z_Companion",
@@ -4997,7 +4963,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Ray (Manta))",
   SortKey="z_Companion",
@@ -5147,7 +5112,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Ray (Stingray))",
   SortKey="z_Companion",
@@ -5295,7 +5259,6 @@ DefineRace({
     Level=2,
   },
 })
-
 DefineRace({
   Name="Companion (Turtle (Giant Snapping))",
   SortKey="z_Companion",
@@ -5470,4 +5433,3 @@ DefineRace({
     Level=2,
   },
 })
-

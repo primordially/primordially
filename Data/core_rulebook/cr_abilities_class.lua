@@ -24,7 +24,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -71,7 +70,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -118,7 +116,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -165,7 +162,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -212,87 +208,70 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -309,7 +288,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -326,7 +304,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -360,7 +337,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -377,7 +353,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -394,7 +369,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -411,17 +385,14 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -440,7 +411,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -459,7 +429,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Damage Reduction ~ All",
   Category="Internal",
@@ -467,7 +436,6 @@ DefineAbility({
     Value="ClassFeatureDR_ALL/-",
   },
 })
-
 DefineAbility({
   Name="Damage Reduction ~ Silver",
   Category="Internal",
@@ -475,7 +443,6 @@ DefineAbility({
     Value="ClassFeatureDR_Silver/-",
   },
 })
-
 DefineAbility({
   Name="Barbarian",
   Category="Special Ability",
@@ -495,7 +462,6 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Bard",
   Category="Special Ability",
@@ -515,7 +481,6 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Cleric",
   Category="Special Ability",
@@ -535,7 +500,6 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Druid",
   Category="Special Ability",
@@ -555,7 +519,6 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Fighter",
   Category="Special Ability",
@@ -575,7 +538,6 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Monk",
   Category="Special Ability",
@@ -595,7 +557,6 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Paladin",
   Category="Special Ability",
@@ -615,7 +576,6 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Ranger",
   Category="Special Ability",
@@ -635,7 +595,6 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Rogue",
   Category="Special Ability",
@@ -655,7 +614,6 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Sorcerer",
   Category="Special Ability",
@@ -675,7 +633,6 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Wizard",
   Category="Special Ability",
@@ -695,7 +652,6 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Adept",
   Category="Special Ability",
@@ -715,7 +671,6 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Aristocrat",
   Category="Special Ability",
@@ -735,7 +690,6 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Commoner",
   Category="Special Ability",
@@ -755,7 +709,6 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Expert",
   Category="Special Ability",
@@ -775,7 +728,6 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Warrior",
   Category="Special Ability",
@@ -795,12 +747,10 @@ DefineAbility({
     "FavoredClass",
   },
 })
-
 DefineAbility({
   Name="Tracker ~ Favored Class Bonus",
   Category="Internal",
 })
-
 DefineAbility({
   Name="Bonus Hit Point",
   Key="Favored Class Bonus ~ Hit Point",
@@ -824,7 +774,6 @@ DefineAbility({
     "FavoredClassBonus",
   },
 })
-
 DefineAbility({
   Name="Bonus Skill Rank",
   Key="Favored Class Bonus ~ Skill Rank",
@@ -850,7 +799,6 @@ DefineAbility({
     "FavoredClassBonus",
   },
 })
-
 DefineAbility({
   Name="Barbarian",
   Category="Class",
@@ -890,7 +838,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Bard",
   Category="Class",
@@ -928,7 +875,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric",
   Category="Class",
@@ -966,7 +912,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Druid",
   Category="Class",
@@ -1004,7 +949,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Fighter",
   Category="Class",
@@ -1042,7 +986,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Monk",
   Category="Class",
@@ -1082,7 +1025,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Paladin",
   Category="Class",
@@ -1120,7 +1062,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Ranger",
   Category="Class",
@@ -1158,7 +1099,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Rogue",
   Category="Class",
@@ -1210,7 +1150,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer",
   Category="Class",
@@ -1248,7 +1187,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Wizard",
   Category="Class",
@@ -1274,7 +1212,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Arcane Archer",
   Category="Class",
@@ -1291,7 +1228,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Arcane Trickster",
   Category="Class",
@@ -1308,7 +1244,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Assassin",
   Category="Class",
@@ -1325,7 +1260,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Dragon Disciple",
   Category="Class",
@@ -1342,7 +1276,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Duelist",
   Category="Class",
@@ -1359,7 +1292,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Eldritch Knight",
   Category="Class",
@@ -1376,7 +1308,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Loremaster",
   Category="Class",
@@ -1393,7 +1324,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Mystic Theurge",
   Category="Class",
@@ -1410,7 +1340,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Pathfinder Chronicler",
   Category="Class",
@@ -1427,7 +1356,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Shadowdancer",
   Category="Class",
@@ -1444,7 +1372,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Adept",
   Category="Class",
@@ -1461,7 +1388,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Aristocrat",
   Category="Class",
@@ -1478,7 +1404,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Commoner",
   Category="Class",
@@ -1495,7 +1420,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Expert",
   Category="Class",
@@ -1512,7 +1436,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Warrior",
   Category="Class",
@@ -1529,7 +1452,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Standard Barbarian",
   Key="Empty Selection ~ Standard Barbarian",
@@ -1538,7 +1460,6 @@ DefineAbility({
     "Barbarian Class Selection",
   },
 })
-
 DefineAbility({
   Name="Standard Monk",
   Key="Empty Selection ~ Standard Monk",
@@ -1547,7 +1468,6 @@ DefineAbility({
     "Monk Class Selection",
   },
 })
-
 DefineAbility({
   Name="Standard Rogue",
   Key="Empty Selection ~ Standard Rogue",
@@ -1556,7 +1476,6 @@ DefineAbility({
     "Rogue Class Selection",
   },
 })
-
 DefineAbility({
   Name="Standard Barbarian",
   Key="Barbarian ~ Standard Class",
@@ -1637,7 +1556,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Standard Monk",
   Key="Monk ~ Standard Class",
@@ -1750,7 +1668,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Standard Rogue",
   Key="Rogue ~ Standard Class",
@@ -1759,17 +1676,14 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Barbarian ~ Standard Class Full",
   Category="Class",
 })
-
 DefineAbility({
   Name="Barbarian ~ Standard Ex-Class",
   Category="Class",
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Class Full",
   Category="Class",
@@ -1788,7 +1702,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Class Full",
   Category="Class",
@@ -1808,7 +1721,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Class Full",
   Category="Class",
@@ -1830,7 +1742,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Class Full",
   Category="Class",
@@ -1844,7 +1755,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Class Full",
   Category="Class",
@@ -1866,7 +1776,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Class Full",
   Category="Class",
@@ -1888,7 +1797,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Class Full",
   Category="Class",
@@ -1910,7 +1818,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Class Full",
   Category="Class",
@@ -1932,7 +1839,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Class Full",
   Category="Class",
@@ -1954,7 +1860,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Class Full",
   Category="Class",
@@ -1976,7 +1881,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Class Full",
   Category="Class",
@@ -1998,7 +1902,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Class Full",
   Category="Class",
@@ -2020,7 +1923,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Class Full",
   Category="Class",
@@ -2042,7 +1944,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Ex-Class",
   Category="Class",
@@ -2061,7 +1962,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Ex-Class",
   Category="Class",
@@ -2081,7 +1981,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Ex-Class",
   Category="Class",
@@ -2103,7 +2002,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Ex-Class",
   Category="Class",
@@ -2125,7 +2023,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Ex-Class",
   Category="Class",
@@ -2147,7 +2044,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Ex-Class",
   Category="Class",
@@ -2169,7 +2065,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Standard Ex-Class",
   Category="Class",
@@ -2191,7 +2086,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2213,7 +2107,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2235,7 +2128,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2254,7 +2146,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2276,7 +2167,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2298,7 +2188,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2320,7 +2209,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2342,7 +2230,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2364,7 +2251,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2386,7 +2272,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2408,7 +2293,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2430,7 +2314,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2452,7 +2335,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2474,7 +2356,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2496,7 +2377,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2518,7 +2398,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2540,7 +2419,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2562,7 +2440,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2584,7 +2461,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2606,7 +2482,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2628,7 +2503,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2650,7 +2524,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2672,7 +2545,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Standard Class",
   Category="Class",
@@ -2694,7 +2566,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Standard Class",
   Category="Class",
@@ -2716,7 +2587,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Standard Class",
   Category="Class",
@@ -2738,7 +2608,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Standard Class",
   Category="Class",
@@ -2760,7 +2629,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Standard Class",
   Category="Class",
@@ -2782,7 +2650,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Standard Class",
   Category="Class",
@@ -2804,7 +2671,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Standard Class",
   Category="Class",
@@ -2826,7 +2692,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Standard Class",
   Category="Class",
@@ -2848,7 +2713,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -2870,7 +2734,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -2892,7 +2755,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -2914,7 +2776,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -2936,7 +2797,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -2958,7 +2818,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -2980,7 +2839,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -3002,7 +2860,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -3024,7 +2881,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bard",
   Category="Class",
@@ -3046,7 +2902,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -3065,7 +2920,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -3084,7 +2938,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -3106,7 +2959,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -3128,7 +2980,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -3150,7 +3001,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Cleric",
   Category="Class",
@@ -3169,7 +3019,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -3188,7 +3037,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -3210,7 +3058,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -3232,7 +3079,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -3254,7 +3100,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -3276,7 +3121,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -3298,7 +3142,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -3320,7 +3163,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -3342,7 +3184,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -3364,7 +3205,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -3386,7 +3226,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -3408,7 +3247,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid",
   Category="Class",
@@ -3430,7 +3268,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3454,7 +3291,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3479,7 +3315,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3503,7 +3338,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3527,7 +3361,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3551,7 +3384,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3575,7 +3407,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3599,7 +3430,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3618,7 +3448,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3637,7 +3466,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3656,7 +3484,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3675,7 +3502,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3694,7 +3520,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3713,7 +3538,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3732,7 +3556,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3751,7 +3574,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3770,7 +3592,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3789,7 +3610,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3811,7 +3631,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3833,7 +3652,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3855,7 +3673,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3877,7 +3694,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3899,7 +3715,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3921,7 +3736,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3943,7 +3757,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3965,7 +3778,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -3987,7 +3799,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter",
   Category="Class",
@@ -4012,7 +3823,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4036,7 +3846,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4061,7 +3870,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4085,7 +3893,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4109,7 +3916,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4133,7 +3939,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4157,7 +3962,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4179,7 +3983,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4201,7 +4004,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4223,7 +4025,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4245,7 +4046,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4267,7 +4067,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4289,7 +4088,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4311,7 +4109,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4333,7 +4130,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4355,7 +4151,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4377,7 +4172,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4399,7 +4193,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4421,7 +4214,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4443,7 +4235,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4465,7 +4256,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin",
   Category="Class",
@@ -4487,7 +4277,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4509,7 +4298,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4531,7 +4319,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4553,7 +4340,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4575,7 +4361,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4597,7 +4382,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4619,7 +4403,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4641,7 +4424,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4663,7 +4445,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4685,7 +4466,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4707,7 +4487,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4729,7 +4508,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4751,7 +4529,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4773,7 +4550,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4795,7 +4571,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4817,7 +4592,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger",
   Category="Class",
@@ -4839,7 +4613,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -4861,7 +4634,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -4883,7 +4655,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -4905,7 +4676,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -4927,7 +4697,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Sorcerer",
   Category="Class",
@@ -4949,7 +4718,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -4971,7 +4739,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -4993,7 +4760,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -5015,7 +4781,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -5037,7 +4802,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -5059,7 +4823,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -5081,7 +4844,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -5103,7 +4865,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -5125,7 +4886,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -5147,7 +4907,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wizard",
   Category="Class",
@@ -5226,7 +4985,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Archer",
   Category="Class",
@@ -5245,7 +5003,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Archer",
   Category="Class",
@@ -5265,7 +5022,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Archer",
   Category="Class",
@@ -5285,7 +5041,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Archer",
   Category="Class",
@@ -5304,7 +5059,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Archer",
   Category="Class",
@@ -5323,7 +5077,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Archer",
   Category="Class",
@@ -5342,7 +5095,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Archer",
   Category="Class",
@@ -5361,7 +5113,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Archer",
   Category="Class",
@@ -5380,7 +5131,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Archer",
   Category="Class",
@@ -5399,7 +5149,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Archer",
   Category="Class",
@@ -5418,7 +5167,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Trickster",
   Category="Class",
@@ -5437,7 +5185,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Trickster",
   Category="Class",
@@ -5456,7 +5203,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Trickster",
   Category="Class",
@@ -5475,7 +5221,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Trickster",
   Category="Class",
@@ -5494,7 +5239,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Trickster",
   Category="Class",
@@ -5513,7 +5257,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane Trickster",
   Category="Class",
@@ -5532,7 +5275,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Assassin",
   Category="Class",
@@ -5551,7 +5293,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Assassin",
   Category="Class",
@@ -5572,7 +5313,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Assassin",
   Category="Class",
@@ -5592,7 +5332,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Assassin",
   Category="Class",
@@ -5612,7 +5351,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Assassin",
   Category="Class",
@@ -5631,7 +5369,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Assassin",
   Category="Class",
@@ -5650,7 +5387,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Assassin",
   Category="Class",
@@ -5669,7 +5405,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Assassin",
   Category="Class",
@@ -5688,7 +5423,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Dragon Disciple",
   Category="Class",
@@ -5707,7 +5441,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Dragon Disciple",
   Category="Class",
@@ -5726,7 +5459,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Dragon Disciple",
   Category="Class",
@@ -5746,7 +5478,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Dragon Disciple",
   Category="Class",
@@ -5767,7 +5498,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Dragon Disciple",
   Category="Class",
@@ -5786,7 +5516,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Dragon Disciple",
   Category="Class",
@@ -5805,7 +5534,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Dragon Disciple",
   Category="Class",
@@ -5824,7 +5552,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Dragon Disciple",
   Category="Class",
@@ -5843,7 +5570,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Duelist",
   Category="Class",
@@ -5862,7 +5588,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Duelist",
   Category="Class",
@@ -5882,7 +5607,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Duelist",
   Category="Class",
@@ -5902,7 +5626,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Duelist",
   Category="Class",
@@ -5921,7 +5644,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Duelist",
   Category="Class",
@@ -5941,7 +5663,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Duelist",
   Category="Class",
@@ -5960,7 +5681,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Duelist",
   Category="Class",
@@ -5979,7 +5699,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Duelist",
   Category="Class",
@@ -5998,7 +5717,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Duelist",
   Category="Class",
@@ -6018,7 +5736,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Duelist",
   Category="Class",
@@ -6037,7 +5754,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Eldritch Knight",
   Category="Class",
@@ -6057,7 +5773,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Eldritch Knight",
   Category="Class",
@@ -6076,7 +5791,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Loremaster",
   Category="Class",
@@ -6095,7 +5809,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Loremaster",
   Category="Class",
@@ -6114,7 +5827,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Loremaster",
   Category="Class",
@@ -6133,7 +5845,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Loremaster",
   Category="Class",
@@ -6152,7 +5863,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Mystic Theurge",
   Category="Class",
@@ -6171,7 +5881,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Mystic Theurge",
   Category="Class",
@@ -6190,7 +5899,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Pathfinder Chronicler",
   Category="Class",
@@ -6211,7 +5919,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Pathfinder Chronicler",
   Category="Class",
@@ -6231,7 +5938,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Pathfinder Chronicler",
   Category="Class",
@@ -6251,7 +5957,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Pathfinder Chronicler",
   Category="Class",
@@ -6270,7 +5975,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Pathfinder Chronicler",
   Category="Class",
@@ -6289,7 +5993,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Pathfinder Chronicler",
   Category="Class",
@@ -6308,7 +6011,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Pathfinder Chronicler",
   Category="Class",
@@ -6327,7 +6029,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Pathfinder Chronicler",
   Category="Class",
@@ -6346,7 +6047,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Pathfinder Chronicler",
   Category="Class",
@@ -6365,7 +6065,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Shadowdancer",
   Category="Class",
@@ -6384,7 +6083,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Shadowdancer",
   Category="Class",
@@ -6403,7 +6101,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Shadowdancer",
   Category="Class",
@@ -6422,7 +6119,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Shadowdancer",
   Category="Class",
@@ -6441,7 +6137,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Shadowdancer",
   Category="Class",
@@ -6460,7 +6155,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Shadowdancer",
   Category="Class",
@@ -6481,7 +6175,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Shadowdancer",
   Category="Class",
@@ -6501,7 +6194,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Shadowdancer",
   Category="Class",
@@ -6520,7 +6212,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Shadowdancer",
   Category="Class",
@@ -6539,7 +6230,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Shadowdancer",
   Category="Class",
@@ -6558,7 +6248,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Shadowdancer",
   Category="Class",
@@ -6578,7 +6267,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Bypass Paladin Alignment",
   Category="Internal",
@@ -6596,7 +6284,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Rage",
   Category="Special Ability",
@@ -6646,7 +6333,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Standard Rage",
   Category="Special Ability",
@@ -6695,7 +6381,6 @@ DefineAbility({
     "RageSelection",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Barbarian ~ Weapon and Armor Proficiency",
@@ -6710,7 +6395,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Fast Movement",
   Key="Barbarian ~ Fast Movement",
@@ -6742,7 +6426,6 @@ DefineAbility({
     "Fast Movement",
   },
 })
-
 DefineAbility({
   Name="Rage",
   Key="Barbarian ~ Rage",
@@ -6782,7 +6465,6 @@ DefineAbility({
     "Rage",
   },
 })
-
 DefineAbility({
   Name="Rage Powers",
   Key="Barbarian ~ Rage Powers",
@@ -6819,7 +6501,6 @@ DefineAbility({
     "Rage Powers",
   },
 })
-
 DefineAbility({
   Name="Trap Sense",
   Key="Barbarian ~ Trap Sense",
@@ -6858,7 +6539,6 @@ DefineAbility({
     "Trap Sense",
   },
 })
-
 DefineAbility({
   Name="Damage Reduction",
   Key="Barbarian ~ Damage Reduction",
@@ -6903,7 +6583,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Greater Rage",
   Key="Barbarian ~ Greater Rage",
@@ -6935,7 +6614,6 @@ DefineAbility({
     "Greater Rage",
   },
 })
-
 DefineAbility({
   Name="Tireless Rage",
   Key="Barbarian ~ Tireless Rage",
@@ -6953,7 +6631,6 @@ DefineAbility({
     "Tireless Rage",
   },
 })
-
 DefineAbility({
   Name="Mighty Rage",
   Key="Barbarian ~ Mighty Rage",
@@ -6985,7 +6662,6 @@ DefineAbility({
     "Mighty Rage",
   },
 })
-
 DefineAbility({
   Name="Indomitable Will",
   Key="Barbarian ~ Indomitable Will",
@@ -7009,7 +6685,6 @@ DefineAbility({
     "Indomitable Will",
   },
 })
-
 DefineAbility({
   Name="Uncanny Dodge",
   Key="Barbarian ~ Uncanny Dodge",
@@ -7032,7 +6707,6 @@ DefineAbility({
     "Uncanny Dodge",
   },
 })
-
 DefineAbility({
   Name="Improved Uncanny Dodge",
   Key="Barbarian ~ Improved Uncanny Dodge",
@@ -7043,7 +6717,6 @@ DefineAbility({
     "Improved Uncanny Dodge",
   },
 })
-
 DefineAbility({
   Name="Barbarian ~ Uncanny Dodge Tracker",
   Category="Special Ability",
@@ -7051,7 +6724,6 @@ DefineAbility({
     "BarbarianClassFeatures",
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Uncanny Dodge Tracker",
   Category="Special Ability",
@@ -7077,7 +6749,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Uncanny Dodge Tracker",
   Category="Special Ability",
@@ -7099,7 +6770,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Uncanny Dodge Tracker",
   Category="Special Ability",
@@ -7121,7 +6791,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Trap Sense",
   Category="Special Ability",
@@ -7143,7 +6812,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Trap Sense",
   Category="Special Ability",
@@ -7165,7 +6833,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Trap Sense",
   Category="Special Ability",
@@ -7187,7 +6854,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Trap Sense",
   Category="Special Ability",
@@ -7209,7 +6875,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Trap Sense",
   Category="Special Ability",
@@ -7231,7 +6896,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Trap Sense",
   Category="Special Ability",
@@ -7253,7 +6917,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Damage Reduction",
   Category="Special Ability",
@@ -7275,7 +6938,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Damage Reduction",
   Category="Special Ability",
@@ -7297,7 +6959,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Damage Reduction",
   Category="Special Ability",
@@ -7319,7 +6980,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Damage Reduction",
   Category="Special Ability",
@@ -7341,7 +7001,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Damage Reduction",
   Category="Special Ability",
@@ -7363,7 +7022,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Rage Powers",
   Category="Special Ability",
@@ -7385,7 +7043,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Rage Powers",
   Category="Special Ability",
@@ -7407,7 +7064,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Rage Powers",
   Category="Special Ability",
@@ -7429,7 +7085,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Rage Powers",
   Category="Special Ability",
@@ -7451,7 +7106,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Rage Powers",
   Category="Special Ability",
@@ -7473,7 +7127,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Rage Powers",
   Category="Special Ability",
@@ -7495,7 +7148,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Rage Powers",
   Category="Special Ability",
@@ -7517,7 +7169,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Rage Powers",
   Category="Special Ability",
@@ -7539,7 +7190,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Rage Powers",
   Category="Special Ability",
@@ -7561,7 +7211,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Barbarian ~ Rage Powers",
   Category="Special Ability",
@@ -7583,7 +7232,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Animal Fury",
   Key="Rage Power ~ Animal Fury",
@@ -7638,7 +7286,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Clear Mind",
   Key="Rage Power ~ Clear Mind",
@@ -7666,7 +7313,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Fearless Rage",
   Key="Rage Power ~ Fearless Rage",
@@ -7694,7 +7340,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Increased Damage Reduction",
   Key="Rage Power ~ Increased Damage Reduction",
@@ -7754,7 +7399,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Guarded Stance",
   Key="Rage Power ~ Guarded Stance",
@@ -7797,7 +7441,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Internal Fortitude",
   Key="Rage Power ~ Internal Fortitude",
@@ -7825,7 +7468,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Intimidating Glare",
   Key="Rage Power ~ Intimidating Glare",
@@ -7848,7 +7490,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Knockback",
   Key="Rage Power ~ Knockback",
@@ -7871,7 +7512,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Low-Light Vision",
   Key="Rage Power ~ Low-Light Vision",
@@ -7906,7 +7546,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Mighty Swing",
   Key="Rage Power ~ Mighty Swing",
@@ -7934,7 +7573,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Moment of Clarity",
   Key="Rage Power ~ Moment of Clarity",
@@ -7957,7 +7595,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Night Vision",
   Key="Rage Power ~ Night Vision",
@@ -8013,7 +7650,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="No Escape",
   Key="Rage Power ~ No Escape",
@@ -8036,7 +7672,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Powerful Blow",
   Key="Rage Power ~ Powerful Blow",
@@ -8071,7 +7706,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Quick Reflexes",
   Key="Rage Power ~ Quick Reflexes",
@@ -8094,7 +7728,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Raging Climber",
   Key="Rage Power ~ Raging Climber",
@@ -8141,7 +7774,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Raging Leaper",
   Key="Rage Power ~ Raging Leaper",
@@ -8188,7 +7820,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Raging Swimmer",
   Key="Rage Power ~ Raging Swimmer",
@@ -8235,7 +7866,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Renewed Vigor",
   Key="Rage Power ~ Renewed Vigor",
@@ -8283,7 +7913,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Rolling Dodge",
   Key="Rage Power ~ Rolling Dodge",
@@ -8326,7 +7955,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Roused Anger",
   Key="Rage Power ~ Roused Anger",
@@ -8349,7 +7977,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Scent",
   Key="Rage Power ~ Scent",
@@ -8372,7 +7999,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Strength Surge",
   Key="Rage Power ~ Strength Surge",
@@ -8407,7 +8033,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Superstition",
   Key="Rage Power ~ Superstition",
@@ -8442,7 +8067,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Surprise Accuracy",
   Key="Rage Power ~ Surprise Accuracy",
@@ -8477,7 +8101,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Swift Foot",
   Key="Rage Power ~ Swift Foot",
@@ -8537,7 +8160,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Terrifying Howl",
   Key="Rage Power ~ Terrifying Howl",
@@ -8582,7 +8204,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Unexpected Strike",
   Key="Rage Power ~ Unexpected Strike",
@@ -8610,7 +8231,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Armored Casting",
   Key="Bard ~ Armored Casting",
@@ -8625,7 +8245,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Bardic Knowledge",
   Key="Bard ~ Bardic Knowledge",
@@ -8667,7 +8286,6 @@ DefineAbility({
     "Bardic Knowledge",
   },
 })
-
 DefineAbility({
   Name="Bardic Countersong",
   Key="Bard ~ Bardic Countersong",
@@ -8699,7 +8317,6 @@ DefineAbility({
     "Bardic Performance",
   },
 })
-
 DefineAbility({
   Name="Bardic Performance",
   Key="Bard ~ Bardic Performance",
@@ -8930,7 +8547,6 @@ DefineAbility({
     "Bardic Performance",
   },
 })
-
 DefineAbility({
   Name="Cantrips",
   Key="Bard ~ Cantrips",
@@ -8944,7 +8560,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Versatile Performance",
   Key="Bard ~ Versatile Performance",
@@ -8973,7 +8588,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Well-Versed",
   Key="Bard ~ Well-Versed",
@@ -8994,7 +8608,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Lore Master",
   Key="Bard ~ Lore Master",
@@ -9028,7 +8641,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Jack of All Trades",
   Key="Bard ~ Jack of All Trades",
@@ -9071,7 +8683,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Jack of All Trades ~ Class Skills",
   Category="Special Ability",
@@ -9084,7 +8695,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 ModifyAbility({
   Name="Bard ~ Bardic Performance",
   Category="Special Ability",
@@ -9100,7 +8710,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bard ~ Bardic Performance",
   Category="Special Ability",
@@ -9119,7 +8728,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bard ~ Bardic Performance",
   Category="Special Ability",
@@ -9135,7 +8743,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Countersong",
   Key="Bardic Performance ~ Countersong",
@@ -9158,7 +8765,6 @@ DefineAbility({
     "Bardic Performance",
   },
 })
-
 DefineAbility({
   Name="Distraction",
   Key="Bardic Performance ~ Distraction",
@@ -9181,7 +8787,6 @@ DefineAbility({
     "Bardic Performance",
   },
 })
-
 DefineAbility({
   Name="Fascinate",
   Key="Bardic Performance ~ Fascinate",
@@ -9224,7 +8829,6 @@ DefineAbility({
     "Bardic Performance",
   },
 })
-
 DefineAbility({
   Name="Inspire Courage",
   Key="Bardic Performance ~ Inspire Courage",
@@ -9266,7 +8870,6 @@ DefineAbility({
     "Bardic Performance",
   },
 })
-
 DefineAbility({
   Name="Inspire Competence",
   Key="Bardic Performance ~ Inspire Competence",
@@ -9308,7 +8911,6 @@ DefineAbility({
     "Bardic Performance",
   },
 })
-
 DefineAbility({
   Name="Suggestion",
   Key="Bardic Performance ~ Suggestion",
@@ -9343,7 +8945,6 @@ DefineAbility({
     "Bardic Performance",
   },
 })
-
 DefineAbility({
   Name="Dirge of Doom",
   Key="Bardic Performance ~ Dirge of Doom",
@@ -9366,7 +8967,6 @@ DefineAbility({
     "Bardic Performance",
   },
 })
-
 DefineAbility({
   Name="Inspire Greatness",
   Key="Bardic Performance ~ Inspire Greatness",
@@ -9401,7 +9001,6 @@ DefineAbility({
     "Bardic Performance",
   },
 })
-
 DefineAbility({
   Name="Soothing Performance",
   Key="Bardic Performance ~ Soothing Performance",
@@ -9436,7 +9035,6 @@ DefineAbility({
     "Bardic Performance",
   },
 })
-
 DefineAbility({
   Name="Frightening Tune",
   Key="Bardic Performance ~ Frightening Tune",
@@ -9471,7 +9069,6 @@ DefineAbility({
     "Bardic Performance",
   },
 })
-
 DefineAbility({
   Name="Inspire Heroics",
   Key="Bardic Performance ~ Inspire Heroics",
@@ -9506,7 +9103,6 @@ DefineAbility({
     "Bardic Performance",
   },
 })
-
 DefineAbility({
   Name="Mass Suggestion",
   Key="Bardic Performance ~ Mass Suggestion",
@@ -9541,7 +9137,6 @@ DefineAbility({
     "Bardic Performance",
   },
 })
-
 DefineAbility({
   Name="Deadly Performance",
   Key="Bardic Performance ~ Deadly Performance",
@@ -9576,7 +9171,6 @@ DefineAbility({
     "Bardic Performance",
   },
 })
-
 ModifyAbility({
   Name="Bard ~ Versatile Performance",
   Category="Special Ability",
@@ -9598,7 +9192,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bardic Performance ~ Inspire Courage",
   Category="Special Ability",
@@ -9620,7 +9213,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bardic Performance ~ Inspire Courage",
   Category="Special Ability",
@@ -9642,7 +9234,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bardic Performance ~ Inspire Courage",
   Category="Special Ability",
@@ -9664,7 +9255,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bardic Performance ~ Inspire Courage",
   Category="Special Ability",
@@ -9686,7 +9276,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bardic Performance ~ Inspire Competence",
   Category="Special Ability",
@@ -9708,7 +9297,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bardic Performance ~ Inspire Competence",
   Category="Special Ability",
@@ -9730,7 +9318,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bardic Performance ~ Inspire Competence",
   Category="Special Ability",
@@ -9752,7 +9339,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bardic Performance ~ Inspire Competence",
   Category="Special Ability",
@@ -9774,7 +9360,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bardic Performance ~ Inspire Competence",
   Category="Special Ability",
@@ -9796,7 +9381,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bardic Performance ~ Inspire Competence",
   Category="Special Ability",
@@ -9818,7 +9402,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Versatile Performance (Act)",
   Key="Versatile Performance ~ Act",
@@ -9884,7 +9467,6 @@ DefineAbility({
     "VersatilePerformance",
   },
 })
-
 DefineAbility({
   Name="Versatile Performance (Comedy)",
   Key="Versatile Performance ~ Comedy",
@@ -9950,7 +9532,6 @@ DefineAbility({
     "VersatilePerformance",
   },
 })
-
 DefineAbility({
   Name="Versatile Performance (Dance)",
   Key="Versatile Performance ~ Dance",
@@ -10016,7 +9597,6 @@ DefineAbility({
     "VersatilePerformance",
   },
 })
-
 DefineAbility({
   Name="Versatile Performance (Keyboard Instruments)",
   Key="Versatile Performance ~ Keyboard Instruments",
@@ -10082,7 +9662,6 @@ DefineAbility({
     "VersatilePerformance",
   },
 })
-
 DefineAbility({
   Name="Versatile Performance (Oratory)",
   Key="Versatile Performance ~ Oratory",
@@ -10148,7 +9727,6 @@ DefineAbility({
     "VersatilePerformance",
   },
 })
-
 DefineAbility({
   Name="Versatile Performance (Percussion Instruments)",
   Key="Versatile Performance ~ Percussion Instruments",
@@ -10214,7 +9792,6 @@ DefineAbility({
     "VersatilePerformance",
   },
 })
-
 DefineAbility({
   Name="Versatile Performance (Sing)",
   Key="Versatile Performance ~ Sing",
@@ -10280,7 +9857,6 @@ DefineAbility({
     "VersatilePerformance",
   },
 })
-
 DefineAbility({
   Name="Versatile Performance (String Instruments)",
   Key="Versatile Performance ~ String Instruments",
@@ -10346,7 +9922,6 @@ DefineAbility({
     "VersatilePerformance",
   },
 })
-
 DefineAbility({
   Name="Versatile Performance (Wind Instruments)",
   Key="Versatile Performance ~ Wind Instruments",
@@ -10412,7 +9987,6 @@ DefineAbility({
     "VersatilePerformance",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Cleric ~ Weapon and Armor Proficiency",
@@ -10504,7 +10078,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Aura",
   Key="Cleric ~ Aura",
@@ -10579,7 +10152,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Domains",
   Key="Cleric ~ Domains",
@@ -10601,7 +10173,6 @@ DefineAbility({
     "Domains",
   },
 })
-
 DefineAbility({
   Name="Orisons",
   Key="Cleric ~ Orisons",
@@ -10615,7 +10186,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Spontaneous Casting",
   Key="Cleric ~ Spontaneous Casting",
@@ -10636,7 +10206,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Domains",
   Key="Domains",
@@ -10662,7 +10231,6 @@ DefineAbility({
     "CF_Domain",
   },
 })
-
 DefineAbility({
   Name="Channel Energy",
   Key="Cleric ~ Channel Energy",
@@ -10698,7 +10266,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Channel Positive Energy",
   Key="Cleric ~ Channel Positive Energy",
@@ -10812,7 +10379,6 @@ DefineAbility({
     "Channel Positive Energy",
   },
 })
-
 DefineAbility({
   Name="Channel Negative Energy",
   Key="Cleric ~ Channel Negative Energy",
@@ -10926,7 +10492,6 @@ DefineAbility({
     "Channel Negative Energy",
   },
 })
-
 DefineAbility({
   Name="Air",
   Key="Core Domain ~ Air Domain",
@@ -10974,7 +10539,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Animal",
   Key="Core Domain ~ Animal Domain",
@@ -11022,7 +10586,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Artifice",
   Key="Core Domain ~ Artifice Domain",
@@ -11070,7 +10633,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Chaos",
   Key="Core Domain ~ Chaos Domain",
@@ -11118,7 +10680,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Charm",
   Key="Core Domain ~ Charm Domain",
@@ -11166,7 +10727,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Community",
   Key="Core Domain ~ Community Domain",
@@ -11214,7 +10774,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Darkness",
   Key="Core Domain ~ Darkness Domain",
@@ -11262,7 +10821,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Death",
   Key="Core Domain ~ Death Domain",
@@ -11310,7 +10868,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Destruction",
   Key="Core Domain ~ Destruction Domain",
@@ -11358,7 +10915,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Earth",
   Key="Core Domain ~ Earth Domain",
@@ -11406,7 +10962,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Evil",
   Key="Core Domain ~ Evil Domain",
@@ -11454,7 +11009,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Fire",
   Key="Core Domain ~ Fire Domain",
@@ -11502,7 +11056,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Glory",
   Key="Core Domain ~ Glory Domain",
@@ -11550,7 +11103,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Good",
   Key="Core Domain ~ Good Domain",
@@ -11598,7 +11150,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Healing",
   Key="Core Domain ~ Healing Domain",
@@ -11646,7 +11197,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Knowledge",
   Key="Core Domain ~ Knowledge Domain",
@@ -11694,7 +11244,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Law",
   Key="Core Domain ~ Law Domain",
@@ -11742,7 +11291,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Liberation",
   Key="Core Domain ~ Liberation Domain",
@@ -11790,7 +11338,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Luck",
   Key="Core Domain ~ Luck Domain",
@@ -11838,7 +11385,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Madness",
   Key="Core Domain ~ Madness Domain",
@@ -11886,7 +11432,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Magic",
   Key="Core Domain ~ Magic Domain",
@@ -11934,7 +11479,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Nobility",
   Key="Core Domain ~ Nobility Domain",
@@ -11982,7 +11526,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Plant",
   Key="Core Domain ~ Plant Domain",
@@ -12030,7 +11573,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Protection",
   Key="Core Domain ~ Protection Domain",
@@ -12078,7 +11620,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Repose",
   Key="Core Domain ~ Repose Domain",
@@ -12126,7 +11667,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Rune",
   Key="Core Domain ~ Rune Domain",
@@ -12174,7 +11714,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Strength",
   Key="Core Domain ~ Strength Domain",
@@ -12222,7 +11761,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Sun",
   Key="Core Domain ~ Sun Domain",
@@ -12270,7 +11808,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Travel",
   Key="Core Domain ~ Travel Domain",
@@ -12318,7 +11855,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Trickery",
   Key="Core Domain ~ Trickery Domain",
@@ -12366,7 +11902,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="War",
   Key="Core Domain ~ War Domain",
@@ -12414,7 +11949,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Water",
   Key="Core Domain ~ Water Domain",
@@ -12462,7 +11996,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Weather",
   Key="Core Domain ~ Weather Domain",
@@ -12510,7 +12043,6 @@ DefineAbility({
     "DomainAbility",
   },
 })
-
 DefineAbility({
   Name="Air",
   Key="Domain Base ~ Air",
@@ -12572,7 +12104,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Animal",
   Key="Domain Base ~ Animal",
@@ -12634,7 +12165,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Artifice",
   Key="Domain Base ~ Artifice",
@@ -12696,7 +12226,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Chaos",
   Key="Domain Base ~ Chaos",
@@ -12758,7 +12287,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Charm",
   Key="Domain Base ~ Charm",
@@ -12820,7 +12348,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Community",
   Key="Domain Base ~ Community",
@@ -12882,7 +12409,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Darkness",
   Key="Domain Base ~ Darkness",
@@ -12944,7 +12470,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Death",
   Key="Domain Base ~ Death",
@@ -13006,7 +12531,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Destruction",
   Key="Domain Base ~ Destruction",
@@ -13068,7 +12592,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Earth",
   Key="Domain Base ~ Earth",
@@ -13130,7 +12653,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Evil",
   Key="Domain Base ~ Evil",
@@ -13192,7 +12714,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Fire",
   Key="Domain Base ~ Fire",
@@ -13254,7 +12775,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Glory",
   Key="Domain Base ~ Glory",
@@ -13323,7 +12843,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Good",
   Key="Domain Base ~ Good",
@@ -13385,7 +12904,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Healing",
   Key="Domain Base ~ Healing",
@@ -13447,7 +12965,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Knowledge",
   Key="Domain Base ~ Knowledge",
@@ -13509,7 +13026,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Law",
   Key="Domain Base ~ Law",
@@ -13571,7 +13087,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Liberation",
   Key="Domain Base ~ Liberation",
@@ -13633,7 +13148,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Luck",
   Key="Domain Base ~ Luck",
@@ -13695,7 +13209,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Madness",
   Key="Domain Base ~ Madness",
@@ -13757,7 +13270,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Magic",
   Key="Domain Base ~ Magic",
@@ -13819,7 +13331,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Nobility",
   Key="Domain Base ~ Nobility",
@@ -13881,7 +13392,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Plant",
   Key="Domain Base ~ Plant",
@@ -13943,7 +13453,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Protection",
   Key="Domain Base ~ Protection",
@@ -14012,7 +13521,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Repose",
   Key="Domain Base ~ Repose",
@@ -14074,7 +13582,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Rune",
   Key="Domain Base ~ Rune",
@@ -14136,7 +13643,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Strength",
   Key="Domain Base ~ Strength",
@@ -14198,7 +13704,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sun",
   Key="Domain Base ~ Sun",
@@ -14260,7 +13765,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Travel",
   Key="Domain Base ~ Travel",
@@ -14322,7 +13826,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Trickery",
   Key="Domain Base ~ Trickery",
@@ -14384,7 +13887,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="War",
   Key="Domain Base ~ War",
@@ -14446,7 +13948,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Water",
   Key="Domain Base ~ Water",
@@ -14508,7 +14009,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Weather",
   Key="Domain Base ~ Weather",
@@ -14570,7 +14070,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Air",
   Key="Air Domain",
@@ -14717,7 +14216,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Animal",
   Key="Animal Domain",
@@ -14867,7 +14365,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Artifice",
   Key="Artifice Domain",
@@ -15014,7 +14511,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Chaos",
   Key="Chaos Domain",
@@ -15166,7 +14662,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Charm",
   Key="Charm Domain",
@@ -15313,7 +14808,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Community",
   Key="Community Domain",
@@ -15460,7 +14954,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Darkness",
   Key="Darkness Domain",
@@ -15614,7 +15107,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Death",
   Key="Death Domain",
@@ -15761,7 +15253,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Destruction",
   Key="Destruction Domain",
@@ -15908,7 +15399,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Earth",
   Key="Earth Domain",
@@ -16055,7 +15545,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Evil",
   Key="Evil Domain",
@@ -16207,7 +15696,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Fire",
   Key="Fire Domain",
@@ -16354,7 +15842,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Glory",
   Key="Glory Domain",
@@ -16508,7 +15995,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Good",
   Key="Good Domain",
@@ -16660,7 +16146,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Healing",
   Key="Healing Domain",
@@ -16807,7 +16292,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Knowledge",
   Key="Knowledge Domain",
@@ -16957,7 +16441,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Law",
   Key="Law Domain",
@@ -17109,7 +16592,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Liberation",
   Key="Liberation Domain",
@@ -17256,7 +16738,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Luck",
   Key="Luck Domain",
@@ -17403,7 +16884,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Madness",
   Key="Madness Domain",
@@ -17550,7 +17030,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Magic",
   Key="Magic Domain",
@@ -17697,7 +17176,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Nobility",
   Key="Nobility Domain",
@@ -17844,7 +17322,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Plant",
   Key="Plant Domain",
@@ -17991,7 +17468,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Protection",
   Key="Protection Domain",
@@ -18155,7 +17631,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Repose",
   Key="Repose Domain",
@@ -18302,7 +17777,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Rune",
   Key="Rune Domain",
@@ -18456,7 +17930,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Strength",
   Key="Strength Domain",
@@ -18603,7 +18076,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Sun",
   Key="Sun Domain",
@@ -18750,7 +18222,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Travel",
   Key="Travel Domain",
@@ -18904,7 +18375,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Trickery",
   Key="Trickery Domain",
@@ -19056,7 +18526,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="War",
   Key="War Domain",
@@ -19203,7 +18672,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Water",
   Key="Water Domain",
@@ -19350,7 +18818,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Weather",
   Key="Weather Domain",
@@ -19497,7 +18964,6 @@ DefineAbility({
     "ClericDomain",
   },
 })
-
 DefineAbility({
   Name="Lightning Arc",
   Key="Domain Power ~ Lightning Arc",
@@ -19545,7 +19011,6 @@ DefineAbility({
     "Air Domain",
   },
 })
-
 DefineAbility({
   Name="Electricity Resistance",
   Key="Domain Power ~ Electricity Resistance",
@@ -19622,7 +19087,6 @@ DefineAbility({
     "Air Domain",
   },
 })
-
 DefineAbility({
   Name="Speak with Animals",
   Key="Domain Power ~ Speak with Animals",
@@ -19672,7 +19136,6 @@ DefineAbility({
     "Communicate",
   },
 })
-
 DefineAbility({
   Name="Animal Companion",
   Key="Domain Power ~ Animal Companion",
@@ -19711,7 +19174,6 @@ DefineAbility({
     ['Animal Companion']=1,
   },
 })
-
 DefineAbility({
   Name="Artificer's Touch",
   Key="Domain Power ~ Artificer's Touch",
@@ -19766,7 +19228,6 @@ DefineAbility({
     "Artifice Domain",
   },
 })
-
 DefineAbility({
   Name="Dancing Weapons",
   Key="Domain Power ~ Dancing Weapons",
@@ -19815,7 +19276,6 @@ DefineAbility({
     "Artifice Domain",
   },
 })
-
 DefineAbility({
   Name="Touch of Chaos",
   Key="Domain Power ~ Touch of Chaos",
@@ -19864,7 +19324,6 @@ DefineAbility({
     "Chaos Domain",
   },
 })
-
 DefineAbility({
   Name="Chaos Blade",
   Key="Domain Power ~ Chaos Blade",
@@ -19915,7 +19374,6 @@ DefineAbility({
     "Chaos Domain",
   },
 })
-
 DefineAbility({
   Name="Dazing Touch",
   Key="Domain Power ~ Dazing Touch",
@@ -19965,7 +19423,6 @@ DefineAbility({
     "Charm Domain",
   },
 })
-
 DefineAbility({
   Name="Charming Smile",
   Key="Domain Power ~ Charming Smile",
@@ -20008,7 +19465,6 @@ DefineAbility({
     "Charm Domain",
   },
 })
-
 DefineAbility({
   Name="Calming Touch",
   Key="Domain Power ~ Calming Touch",
@@ -20058,7 +19514,6 @@ DefineAbility({
     "Community Domain",
   },
 })
-
 DefineAbility({
   Name="Unity",
   Key="Domain Power ~ Unity",
@@ -20107,7 +19562,6 @@ DefineAbility({
     "Community Domain",
   },
 })
-
 DefineAbility({
   Name="Touch of Darkness",
   Key="Domain Power ~ Touch of Darkness",
@@ -20157,7 +19611,6 @@ DefineAbility({
     "Darkness Domain",
   },
 })
-
 DefineAbility({
   Name="Eyes of Darkness",
   Key="Domain Power ~ Eyes of Darkness",
@@ -20207,7 +19660,6 @@ DefineAbility({
     "Darkness Domain",
   },
 })
-
 DefineAbility({
   Name="Bleeding Touch",
   Key="Domain Power ~ Bleeding Touch",
@@ -20257,7 +19709,6 @@ DefineAbility({
     "Death Domain",
   },
 })
-
 DefineAbility({
   Name="Death's Embrace",
   Key="Domain Power ~ Death's Embrace",
@@ -20274,7 +19725,6 @@ DefineAbility({
     "Death Domain",
   },
 })
-
 DefineAbility({
   Name="Destructive Smite",
   Key="Domain Power ~ Destructive Smite",
@@ -20324,7 +19774,6 @@ DefineAbility({
     "Destruction Domain",
   },
 })
-
 DefineAbility({
   Name="Destructive Aura",
   Key="Domain Power ~ Destructive Aura",
@@ -20375,7 +19824,6 @@ DefineAbility({
     "Destruction Domain",
   },
 })
-
 DefineAbility({
   Name="Acid Dart",
   Key="Domain Power ~ Acid Dart",
@@ -20430,7 +19878,6 @@ DefineAbility({
     "Earth Domain",
   },
 })
-
 DefineAbility({
   Name="Acid Resistance",
   Key="Domain Power ~ Acid Resistance",
@@ -20507,7 +19954,6 @@ DefineAbility({
     "Earth Domain",
   },
 })
-
 DefineAbility({
   Name="Touch of Evil",
   Key="Domain Power ~ Touch of Evil",
@@ -20557,7 +20003,6 @@ DefineAbility({
     "Evil Domain",
   },
 })
-
 DefineAbility({
   Name="Scythe of Evil",
   Key="Domain Power ~ Scythe of Evil",
@@ -20607,7 +20052,6 @@ DefineAbility({
     "Evil Domain",
   },
 })
-
 DefineAbility({
   Name="Fire Bolt",
   Key="Domain Power ~ Fire Bolt",
@@ -20662,7 +20106,6 @@ DefineAbility({
     "Fire Domain",
   },
 })
-
 DefineAbility({
   Name="Fire Resistance",
   Key="Domain Power ~ Fire Resistance",
@@ -20739,7 +20182,6 @@ DefineAbility({
     "Fire Domain",
   },
 })
-
 DefineAbility({
   Name="Touch of Glory",
   Key="Domain Power ~ Touch of Glory",
@@ -20789,7 +20231,6 @@ DefineAbility({
     "Glory Domain",
   },
 })
-
 DefineAbility({
   Name="Divine Presence",
   Key="Domain Power ~ Divine Presence",
@@ -20833,7 +20274,6 @@ DefineAbility({
     "Glory Domain",
   },
 })
-
 DefineAbility({
   Name="Touch of Good",
   Key="Domain Power ~ Touch of Good",
@@ -20883,7 +20323,6 @@ DefineAbility({
     "Good Domain",
   },
 })
-
 DefineAbility({
   Name="Holy Lance",
   Key="Domain Power ~ Holy Lance",
@@ -20933,7 +20372,6 @@ DefineAbility({
     "Good Domain",
   },
 })
-
 DefineAbility({
   Name="Rebuke Death",
   Key="Domain Power ~ Rebuke Death",
@@ -20988,7 +20426,6 @@ DefineAbility({
     "Healing Domain",
   },
 })
-
 DefineAbility({
   Name="Healer's Blessing",
   Key="Domain Power ~ Healer's Blessing",
@@ -21005,7 +20442,6 @@ DefineAbility({
     "Healing Domain",
   },
 })
-
 DefineAbility({
   Name="Lore Keeper",
   Key="Domain Power ~ Lore Keeper",
@@ -21034,7 +20470,6 @@ DefineAbility({
     "Knowledge Domain",
   },
 })
-
 DefineAbility({
   Name="Remote Viewing",
   Key="Domain Power ~ Remote Viewing",
@@ -21083,7 +20518,6 @@ DefineAbility({
     "Knowledge Domain",
   },
 })
-
 DefineAbility({
   Name="Touch of Law",
   Key="Domain Power ~ Touch of Law",
@@ -21132,7 +20566,6 @@ DefineAbility({
     "Law Domain",
   },
 })
-
 DefineAbility({
   Name="Staff of Order",
   Key="Domain Power ~ Staff of Order",
@@ -21182,7 +20615,6 @@ DefineAbility({
     "Law Domain",
   },
 })
-
 DefineAbility({
   Name="Liberation",
   Key="Domain Power ~ Liberation",
@@ -21232,7 +20664,6 @@ DefineAbility({
     "Liberation Domain",
   },
 })
-
 DefineAbility({
   Name="Freedom's Call",
   Key="Domain Power ~ Freedom's Call",
@@ -21282,7 +20713,6 @@ DefineAbility({
     "Liberation Domain",
   },
 })
-
 DefineAbility({
   Name="Bit of Luck",
   Key="Domain Power ~ Bit of Luck",
@@ -21332,7 +20762,6 @@ DefineAbility({
     "Luck Domain",
   },
 })
-
 DefineAbility({
   Name="Good Fortune",
   Key="Domain Power ~ Good Fortune",
@@ -21382,7 +20811,6 @@ DefineAbility({
     "Luck Domain",
   },
 })
-
 DefineAbility({
   Name="Vision of Madness",
   Key="Domain Power ~ Vision of Madness",
@@ -21432,7 +20860,6 @@ DefineAbility({
     "Madness Domain",
   },
 })
-
 DefineAbility({
   Name="Aura of Madness",
   Key="Domain Power ~ Aura of Madness",
@@ -21483,7 +20910,6 @@ DefineAbility({
     "Madness Domain",
   },
 })
-
 DefineAbility({
   Name="Hand of the Acolyte",
   Key="Domain Power ~ Hand of the Acolyte",
@@ -21532,7 +20958,6 @@ DefineAbility({
     "Magic Domain",
   },
 })
-
 DefineAbility({
   Name="Dispelling Touch",
   Key="Domain Power ~ Dispelling Touch",
@@ -21581,7 +21006,6 @@ DefineAbility({
     "Magic Domain",
   },
 })
-
 DefineAbility({
   Name="Inspiring Word",
   Key="Domain Power ~ Inspiring Word",
@@ -21602,7 +21026,6 @@ DefineAbility({
     "Nobility Domain",
   },
 })
-
 DefineAbility({
   Name="Leadership",
   Key="Domain Power ~ Leadership",
@@ -21628,7 +21051,6 @@ DefineAbility({
     "Nobility Domain",
   },
 })
-
 DefineAbility({
   Name="Wooden Fist",
   Key="Domain Power ~ Wooden Fist",
@@ -21678,7 +21100,6 @@ DefineAbility({
     "Plant Domain",
   },
 })
-
 DefineAbility({
   Name="Bramble Armor",
   Key="Domain Power ~ Bramble Armor",
@@ -21729,7 +21150,6 @@ DefineAbility({
     "Plant Domain",
   },
 })
-
 DefineAbility({
   Name="Resistant Touch",
   Key="Domain Power ~ Resistant Touch",
@@ -21780,7 +21200,6 @@ DefineAbility({
     "Protection Domain",
   },
 })
-
 DefineAbility({
   Name="Aura of Protection",
   Key="Domain Power ~ Aura of Protection",
@@ -21831,7 +21250,6 @@ DefineAbility({
     "Protection Domain",
   },
 })
-
 DefineAbility({
   Name="Gentle Rest",
   Key="Domain Power ~ Gentle Rest",
@@ -21881,7 +21299,6 @@ DefineAbility({
     "Repose Domain",
   },
 })
-
 DefineAbility({
   Name="Ward Against Death",
   Key="Domain Power ~ Ward Against Death",
@@ -21931,7 +21348,6 @@ DefineAbility({
     "Repose Domain",
   },
 })
-
 DefineAbility({
   Name="Blast Rune",
   Key="Domain Power ~ Blast Rune",
@@ -21987,7 +21403,6 @@ DefineAbility({
     "Rune Domain",
   },
 })
-
 DefineAbility({
   Name="Spell Rune",
   Key="Domain Power ~ Spell Rune",
@@ -22004,7 +21419,6 @@ DefineAbility({
     "Rune Domain",
   },
 })
-
 DefineAbility({
   Name="Strength Surge",
   Key="Domain Power ~ Strength Surge",
@@ -22054,7 +21468,6 @@ DefineAbility({
     "Strength Domain",
   },
 })
-
 DefineAbility({
   Name="Might of the Gods",
   Key="Domain Power ~ Might of the Gods",
@@ -22103,7 +21516,6 @@ DefineAbility({
     "Strength Domain",
   },
 })
-
 DefineAbility({
   Name="Sun's Blessing",
   Key="Domain Power ~ Sun's Blessing",
@@ -22123,7 +21535,6 @@ DefineAbility({
     "Sun Domain",
   },
 })
-
 DefineAbility({
   Name="Nimbus of Light",
   Key="Domain Power ~ Nimbus of Light",
@@ -22173,7 +21584,6 @@ DefineAbility({
     "Sun Domain",
   },
 })
-
 DefineAbility({
   Name="Agile Feet",
   Key="Domain Power ~ Agile Feet",
@@ -22223,7 +21633,6 @@ DefineAbility({
     "Travel Domain",
   },
 })
-
 DefineAbility({
   Name="Dimensional Hop",
   Key="Domain Power ~ Dimensional Hop",
@@ -22273,7 +21682,6 @@ DefineAbility({
     "Travel Domain",
   },
 })
-
 DefineAbility({
   Name="Copycat",
   Key="Domain Power ~ Copycat",
@@ -22323,7 +21731,6 @@ DefineAbility({
     "Trickery Domain",
   },
 })
-
 DefineAbility({
   Name="Master's Illusion",
   Key="Domain Power ~ Master's Illusion",
@@ -22374,7 +21781,6 @@ DefineAbility({
     "Trickery Domain",
   },
 })
-
 DefineAbility({
   Name="Battle Rage",
   Key="Domain Power ~ Battle Rage",
@@ -22434,7 +21840,6 @@ DefineAbility({
     "War Domain",
   },
 })
-
 DefineAbility({
   Name="Weapon Master",
   Key="Domain Power ~ Weapon Master",
@@ -22483,7 +21888,6 @@ DefineAbility({
     "War Domain",
   },
 })
-
 DefineAbility({
   Name="Icicle",
   Key="Domain Power ~ Icicle",
@@ -22538,7 +21942,6 @@ DefineAbility({
     "Water Domain",
   },
 })
-
 DefineAbility({
   Name="Cold Resistance",
   Key="Domain Power ~ Cold Resistance",
@@ -22615,7 +22018,6 @@ DefineAbility({
     "Water Domain",
   },
 })
-
 DefineAbility({
   Name="Storm Burst",
   Key="Domain Power ~ Storm Burst",
@@ -22670,7 +22072,6 @@ DefineAbility({
     "Weather Domain",
   },
 })
-
 DefineAbility({
   Name="Lightning Lord",
   Key="Domain Power ~ Lightning Lord",
@@ -22712,7 +22113,6 @@ DefineAbility({
     "Weather Domain",
   },
 })
-
 DefineAbility({
   Name="Spontaneous Casting",
   Key="Druid ~ Spontaneous Casting",
@@ -22726,7 +22126,6 @@ DefineAbility({
     "SpecialAttack",
   },
 })
-
 DefineAbility({
   Name="Orisons",
   Key="Druid ~ Orisons",
@@ -22740,7 +22139,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Nature Sense",
   Key="Druid ~ Nature Sense",
@@ -22765,7 +22163,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Wild Empathy",
   Key="Druid ~ Wild Empathy",
@@ -22793,7 +22190,6 @@ DefineAbility({
     "Wild Empathy",
   },
 })
-
 DefineAbility({
   Name="Woodland Stride",
   Key="Druid ~ Woodland Stride",
@@ -22812,7 +22208,6 @@ DefineAbility({
     "Woodland Stride",
   },
 })
-
 DefineAbility({
   Name="Trackless Step",
   Key="Druid ~ Trackless Step",
@@ -22827,7 +22222,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Resist Nature's Lure",
   Key="Druid ~ Resist Nature's Lure",
@@ -22848,7 +22242,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Venom Immunity",
   Key="Druid ~ Venom Immunity",
@@ -22863,7 +22256,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="A Thousand Faces",
   Key="Druid ~ A Thousand Faces",
@@ -22878,7 +22270,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Nature Bond",
   Key="Druid ~ Nature Bond",
@@ -22902,7 +22293,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Timeless Body",
   Key="Druid ~ Timeless Body",
@@ -22921,7 +22311,6 @@ DefineAbility({
     "Timeless Body",
   },
 })
-
 DefineAbility({
   Name="Animal Companion",
   Key="Nature's Bond ~ Animal Companion",
@@ -22999,7 +22388,6 @@ DefineAbility({
     "Animal Companion",
   },
 })
-
 DefineAbility({
   Name="Animal Companion ~ Base",
   Category="Internal",
@@ -23018,7 +22406,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Animal Companion ~ Standard Companions",
   Category="Internal",
@@ -23032,7 +22419,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Druid Domain",
   Key="Nature's Bond ~ Druid Domain",
@@ -23113,7 +22499,6 @@ DefineAbility({
     "CF_Domain",
   },
 })
-
 DefineAbility({
   Name="Druid Domain ~ Base",
   Category="Internal",
@@ -23136,12 +22521,10 @@ DefineAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 DefineAbility({
   Name="Air",
   Key="Druid Domain ~ Air",
@@ -23223,7 +22606,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Animal",
   Key="Druid Domain ~ Animal",
@@ -23305,7 +22687,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Earth",
   Key="Druid Domain ~ Earth",
@@ -23387,7 +22768,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Fire",
   Key="Druid Domain ~ Fire",
@@ -23469,7 +22849,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Plant",
   Key="Druid Domain ~ Plant",
@@ -23551,7 +22930,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Water",
   Key="Druid Domain ~ Water",
@@ -23633,7 +23011,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Weather",
   Key="Druid Domain ~ Weather",
@@ -23715,7 +23092,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -23771,7 +23147,6 @@ DefineAbility({
     "Wild Shape",
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -23801,7 +23176,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -23845,7 +23219,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -23889,7 +23262,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -23933,7 +23305,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -23983,7 +23354,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24033,7 +23403,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24083,7 +23452,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24133,7 +23501,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24183,7 +23550,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24233,7 +23599,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24283,7 +23648,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24333,7 +23697,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24383,7 +23746,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24433,7 +23795,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24483,7 +23844,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24533,7 +23893,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24583,7 +23942,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24633,7 +23991,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24683,7 +24040,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24733,7 +24089,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24783,7 +24138,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24833,7 +24187,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24883,7 +24236,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24933,7 +24285,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -24983,7 +24334,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -25013,7 +24363,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -25043,7 +24392,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -25073,7 +24421,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -25103,7 +24450,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -25133,7 +24479,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -25163,7 +24508,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -25193,7 +24537,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -25223,7 +24566,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -25253,7 +24595,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -25283,7 +24624,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Ink Cloud",
   Key="Octopus Wild Shape ~ Ink Cloud",
@@ -25299,7 +24639,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Jet",
   Key="Octopus Wild Shape ~ Jet",
@@ -25318,7 +24657,6 @@ DefineAbility({
     Jet=200,
   },
 })
-
 DefineAbility({
   Name="Poison",
   Key="Octopus Wild Shape ~ Poison",
@@ -25333,7 +24671,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Poison",
   Key="Lizard Monitor Wild Shape ~ Poison",
@@ -25385,7 +24722,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Sprint",
   Key="Cheetah Wild Shape ~ Sprint",
@@ -25401,7 +24737,6 @@ DefineAbility({
     "ModifyMovement",
   },
 })
-
 DefineAbility({
   Name="Tongue",
   Key="Giant Frog Wild Shape ~ Tongue",
@@ -25416,7 +24751,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Druid ~ Wild Shape",
   Category="Special Ability",
@@ -25447,7 +24781,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Druid Wild Shape Times",
   Category="Special Ability",
@@ -25471,7 +24804,6 @@ DefineAbility({
     "DruidWildshape",
   },
 })
-
 DefineAbility({
   Name="Druid Wild Shape Progression",
   Category="Special Ability",
@@ -25495,12 +24827,10 @@ DefineAbility({
     "DruidWildshape",
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -25533,7 +24863,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -25566,7 +24895,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -25599,7 +24927,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -25632,7 +24959,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wild Shape",
   Category="Special Ability",
@@ -25665,7 +24991,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid Wild Shape Times",
   Category="Special Ability",
@@ -25698,7 +25023,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid Wild Shape Times",
   Category="Special Ability",
@@ -25731,7 +25055,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid Wild Shape Times",
   Category="Special Ability",
@@ -25764,7 +25087,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid Wild Shape Times",
   Category="Special Ability",
@@ -25797,7 +25119,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid Wild Shape Times",
   Category="Special Ability",
@@ -25830,7 +25151,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid Wild Shape Times",
   Category="Special Ability",
@@ -25863,7 +25183,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid Wild Shape Times",
   Category="Special Ability",
@@ -25896,7 +25215,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid Wild Shape Times",
   Category="Special Ability",
@@ -25929,7 +25247,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Druid Wild Shape Times",
   Category="Special Ability",
@@ -25962,7 +25279,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Fighter Level Advanced Feat Tracker",
   Category="Special Ability",
@@ -25990,7 +25306,6 @@ DefineAbility({
     "FighterWeaponQualify",
   },
 })
-
 DefineAbility({
   Name="Weapon Specialization Qualify",
   Category="Special Ability",
@@ -26015,7 +25330,6 @@ DefineAbility({
     "FighterWeaponQualify",
   },
 })
-
 DefineAbility({
   Name="Disruptive Qualify",
   Category="Special Ability",
@@ -26040,7 +25354,6 @@ DefineAbility({
     "FighterWeaponQualify",
   },
 })
-
 DefineAbility({
   Name="Greater Shield Focus Qualify",
   Category="Special Ability",
@@ -26065,7 +25378,6 @@ DefineAbility({
     "FighterWeaponQualify",
   },
 })
-
 DefineAbility({
   Name="Greater Weapon Focus Qualify",
   Category="Special Ability",
@@ -26090,7 +25402,6 @@ DefineAbility({
     "FighterWeaponQualify",
   },
 })
-
 DefineAbility({
   Name="Spellbreaker Qualify",
   Category="Special Ability",
@@ -26115,7 +25426,6 @@ DefineAbility({
     "FighterWeaponQualify",
   },
 })
-
 DefineAbility({
   Name="Greater Weapon Specialization Qualify",
   Category="Special Ability",
@@ -26140,7 +25450,6 @@ DefineAbility({
     "FighterWeaponQualify",
   },
 })
-
 DefineAbility({
   Name="Penetrating Strike Qualify",
   Category="Special Ability",
@@ -26165,7 +25474,6 @@ DefineAbility({
     "FighterWeaponQualify",
   },
 })
-
 DefineAbility({
   Name="Critical Mastery Qualify",
   Category="Special Ability",
@@ -26190,7 +25498,6 @@ DefineAbility({
     "FighterWeaponQualify",
   },
 })
-
 DefineAbility({
   Name="Greater Penetrating Strike Qualify",
   Category="Special Ability",
@@ -26215,7 +25522,6 @@ DefineAbility({
     "FighterWeaponQualify",
   },
 })
-
 DefineAbility({
   Name="Bravery",
   Key="Fighter ~ Bravery",
@@ -26252,7 +25558,6 @@ DefineAbility({
     "Bravery",
   },
 })
-
 DefineAbility({
   Name="Armor Training",
   Key="Fighter ~ Armor Training",
@@ -26419,7 +25724,6 @@ DefineAbility({
     "MediumArmor",
   },
 })
-
 DefineAbility({
   Name="Armor Training ~ Heavy Armor",
   Category="Special Ability",
@@ -26432,7 +25736,6 @@ DefineAbility({
     "HeavyArmor",
   },
 })
-
 DefineAbility({
   Name="Armor Mastery",
   Key="Fighter ~ Armor Mastery",
@@ -26455,7 +25758,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Weapon Mastery",
   Key="Fighter ~ Weapon Mastery",
@@ -26493,7 +25795,6 @@ DefineAbility({
     "WeaponMastery",
   },
 })
-
 DefineAbility({
   Name="Bonus Feats",
   Key="Fighter ~ Bonus Feats",
@@ -26515,7 +25816,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Armor Training",
   Category="Special Ability",
@@ -26551,7 +25851,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Armor Training",
   Category="Special Ability",
@@ -26587,7 +25886,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Armor Training",
   Category="Special Ability",
@@ -26623,7 +25921,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Armor Training",
   Category="Special Ability",
@@ -26659,7 +25956,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Bonus Feats",
   Category="Special Ability",
@@ -26681,7 +25977,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Bonus Feats",
   Category="Special Ability",
@@ -26703,7 +25998,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Bonus Feats",
   Category="Special Ability",
@@ -26725,7 +26019,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Bonus Feats",
   Category="Special Ability",
@@ -26747,7 +26040,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Bonus Feats",
   Category="Special Ability",
@@ -26769,7 +26061,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Bonus Feats",
   Category="Special Ability",
@@ -26791,7 +26082,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Bonus Feats",
   Category="Special Ability",
@@ -26813,7 +26103,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Bonus Feats",
   Category="Special Ability",
@@ -26835,7 +26124,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Bonus Feats",
   Category="Special Ability",
@@ -26857,7 +26145,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Bonus Feats",
   Category="Special Ability",
@@ -26879,7 +26166,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Bonus Feats",
   Category="Special Ability",
@@ -26901,7 +26187,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -26923,7 +26208,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -26945,7 +26229,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -26967,7 +26250,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -26989,7 +26271,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Weapon Training",
   Key="Fighter ~ Weapon Training",
@@ -27070,7 +26351,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27084,7 +26364,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27098,7 +26377,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27112,7 +26390,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27126,77 +26403,62 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27217,7 +26479,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27238,7 +26499,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27259,7 +26519,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27280,7 +26539,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27301,7 +26559,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27322,7 +26579,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27343,7 +26599,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27364,7 +26619,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27385,7 +26639,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27406,7 +26659,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27427,7 +26679,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27448,7 +26699,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27469,7 +26719,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27490,7 +26739,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27511,7 +26759,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27532,7 +26779,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27553,7 +26799,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27574,7 +26819,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27595,7 +26839,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27616,7 +26859,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27637,7 +26879,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27658,7 +26899,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27679,7 +26919,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27700,7 +26939,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27721,7 +26959,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27742,7 +26979,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27763,7 +26999,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27784,7 +27019,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27805,7 +27039,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27826,7 +27059,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27847,7 +27079,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27868,7 +27099,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27889,7 +27119,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27910,7 +27139,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27931,7 +27159,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27952,7 +27179,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27973,7 +27199,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -27994,7 +27219,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28015,7 +27239,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28036,7 +27259,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28057,7 +27279,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28078,7 +27299,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28099,7 +27319,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28120,7 +27339,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28141,7 +27359,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28162,7 +27379,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28183,7 +27399,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28204,7 +27419,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28225,7 +27439,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28246,7 +27459,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28267,7 +27479,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28288,7 +27499,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28309,7 +27519,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28330,7 +27539,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28351,7 +27559,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Fighter ~ Weapon Training",
   Category="Special Ability",
@@ -28372,7 +27579,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Axes)",
   Key="Weapon Training 1 Axes",
@@ -28407,7 +27613,6 @@ DefineAbility({
     "WeaponTrainingAxes",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Blades/Heavy)",
   Key="Weapon Training 1 Blades Heavy",
@@ -28442,7 +27647,6 @@ DefineAbility({
     "WeaponTrainingBladesHeavy",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Blades/Light)",
   Key="Weapon Training 1 Blades Light",
@@ -28477,7 +27681,6 @@ DefineAbility({
     "WeaponTrainingBladesLight",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Bows)",
   Key="Weapon Training 1 Bows",
@@ -28512,7 +27715,6 @@ DefineAbility({
     "WeaponTrainingBows",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Close)",
   Key="Weapon Training 1 Close",
@@ -28558,7 +27760,6 @@ DefineAbility({
     "WeaponTrainingClose",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Crossbows)",
   Key="Weapon Training 1 Crossbows",
@@ -28593,7 +27794,6 @@ DefineAbility({
     "WeaponTrainingCrossbows",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Double)",
   Key="Weapon Training 1 Double",
@@ -28628,7 +27828,6 @@ DefineAbility({
     "WeaponTrainingDouble",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Flails)",
   Key="Weapon Training 1 Flails",
@@ -28663,7 +27862,6 @@ DefineAbility({
     "WeaponTrainingFlails",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Hammers)",
   Key="Weapon Training 1 Hammers",
@@ -28698,7 +27896,6 @@ DefineAbility({
     "WeaponTrainingHammers",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Monk)",
   Key="Weapon Training 1 Monk",
@@ -28733,7 +27930,6 @@ DefineAbility({
     "WeaponTrainingMonk",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Natural)",
   Key="Weapon Training 1 Natural",
@@ -28779,7 +27975,6 @@ DefineAbility({
     "WeaponTrainingNatural",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Pole Arms)",
   Key="Weapon Training 1 Pole Arms",
@@ -28814,7 +28009,6 @@ DefineAbility({
     "WeaponTrainingPoleArms",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Spears)",
   Key="Weapon Training 1 Spears",
@@ -28849,7 +28043,6 @@ DefineAbility({
     "WeaponTrainingSpears",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Thrown)",
   Key="Weapon Training 1 Thrown",
@@ -28884,7 +28077,6 @@ DefineAbility({
     "WeaponTrainingThrown",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Axes)",
   Key="Weapon Training 2 Axes",
@@ -28919,7 +28111,6 @@ DefineAbility({
     "WeaponTrainingAxes",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Blades/Heavy)",
   Key="Weapon Training 2 Blades Heavy",
@@ -28954,7 +28145,6 @@ DefineAbility({
     "WeaponTrainingBladesHeavy",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Blades/Light)",
   Key="Weapon Training 2 Blades Light",
@@ -28989,7 +28179,6 @@ DefineAbility({
     "WeaponTrainingBladesLight",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Bows)",
   Key="Weapon Training 2 Bows",
@@ -29024,7 +28213,6 @@ DefineAbility({
     "WeaponTrainingBows",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Close)",
   Key="Weapon Training 2 Close",
@@ -29070,7 +28258,6 @@ DefineAbility({
     "WeaponTrainingClose",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Crossbows)",
   Key="Weapon Training 2 Crossbows",
@@ -29105,7 +28292,6 @@ DefineAbility({
     "WeaponTrainingCrossbows",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Double)",
   Key="Weapon Training 2 Double",
@@ -29140,7 +28326,6 @@ DefineAbility({
     "WeaponTrainingDouble",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Flails)",
   Key="Weapon Training 2 Flails",
@@ -29175,7 +28360,6 @@ DefineAbility({
     "WeaponTrainingFlails",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Hammers)",
   Key="Weapon Training 2 Hammers",
@@ -29210,7 +28394,6 @@ DefineAbility({
     "WeaponTrainingHammers",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Monk)",
   Key="Weapon Training 2 Monk",
@@ -29245,7 +28428,6 @@ DefineAbility({
     "WeaponTrainingMonk",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Natural)",
   Key="Weapon Training 2 Natural",
@@ -29291,7 +28473,6 @@ DefineAbility({
     "WeaponTrainingNatural",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Pole Arms)",
   Key="Weapon Training 2 Pole Arms",
@@ -29326,7 +28507,6 @@ DefineAbility({
     "WeaponTrainingPoleArms",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Spears)",
   Key="Weapon Training 2 Spears",
@@ -29361,7 +28541,6 @@ DefineAbility({
     "WeaponTrainingSpears",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Thrown)",
   Key="Weapon Training 2 Thrown",
@@ -29396,7 +28575,6 @@ DefineAbility({
     "WeaponTrainingThrown",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Axes)",
   Key="Weapon Training 3 Axes",
@@ -29431,7 +28609,6 @@ DefineAbility({
     "WeaponTrainingAxes",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Blades/Heavy)",
   Key="Weapon Training 3 Blades Heavy",
@@ -29466,7 +28643,6 @@ DefineAbility({
     "WeaponTrainingBladesHeavy",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Blades/Light)",
   Key="Weapon Training 3 Blades Light",
@@ -29501,7 +28677,6 @@ DefineAbility({
     "WeaponTrainingBladesLight",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Bows)",
   Key="Weapon Training 3 Bows",
@@ -29536,7 +28711,6 @@ DefineAbility({
     "WeaponTrainingBows",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Close)",
   Key="Weapon Training 3 Close",
@@ -29582,7 +28756,6 @@ DefineAbility({
     "WeaponTrainingClose",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Crossbows)",
   Key="Weapon Training 3 Crossbows",
@@ -29617,7 +28790,6 @@ DefineAbility({
     "WeaponTrainingCrossbows",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Double)",
   Key="Weapon Training 3 Double",
@@ -29652,7 +28824,6 @@ DefineAbility({
     "WeaponTrainingDouble",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Flails)",
   Key="Weapon Training 3 Flails",
@@ -29687,7 +28858,6 @@ DefineAbility({
     "WeaponTrainingFlails",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Hammers)",
   Key="Weapon Training 3 Hammers",
@@ -29722,7 +28892,6 @@ DefineAbility({
     "WeaponTrainingHammers",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Monk)",
   Key="Weapon Training 3 Monk",
@@ -29757,7 +28926,6 @@ DefineAbility({
     "WeaponTrainingMonk",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Natural)",
   Key="Weapon Training 3 Natural",
@@ -29803,7 +28971,6 @@ DefineAbility({
     "WeaponTrainingNatural",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Pole Arms)",
   Key="Weapon Training 3 Pole Arms",
@@ -29838,7 +29005,6 @@ DefineAbility({
     "WeaponTrainingPoleArms",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Spears)",
   Key="Weapon Training 3 Spears",
@@ -29873,7 +29039,6 @@ DefineAbility({
     "WeaponTrainingSpears",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Thrown)",
   Key="Weapon Training 3 Thrown",
@@ -29908,7 +29073,6 @@ DefineAbility({
     "WeaponTrainingThrown",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Axes)",
   Key="Weapon Training 4 Axes",
@@ -29943,7 +29107,6 @@ DefineAbility({
     "WeaponTrainingAxes",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Blades/Heavy)",
   Key="Weapon Training 4 Blades Heavy",
@@ -29978,7 +29141,6 @@ DefineAbility({
     "WeaponTrainingBladesHeavy",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Blades/Light)",
   Key="Weapon Training 4 Blades Light",
@@ -30013,7 +29175,6 @@ DefineAbility({
     "WeaponTrainingBladesLight",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Bows)",
   Key="Weapon Training 4 Bows",
@@ -30048,7 +29209,6 @@ DefineAbility({
     "WeaponTrainingBows",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Close)",
   Key="Weapon Training 4 Close",
@@ -30094,7 +29254,6 @@ DefineAbility({
     "WeaponTrainingClose",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Crossbows)",
   Key="Weapon Training 4 Crossbows",
@@ -30129,7 +29288,6 @@ DefineAbility({
     "WeaponTrainingCrossbows",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Double)",
   Key="Weapon Training 4 Double",
@@ -30164,7 +29322,6 @@ DefineAbility({
     "WeaponTrainingDouble",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Flails)",
   Key="Weapon Training 4 Flails",
@@ -30199,7 +29356,6 @@ DefineAbility({
     "WeaponTrainingFlails",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Hammers)",
   Key="Weapon Training 4 Hammers",
@@ -30234,7 +29390,6 @@ DefineAbility({
     "WeaponTrainingHammers",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Monk)",
   Key="Weapon Training 4 Monk",
@@ -30269,7 +29424,6 @@ DefineAbility({
     "WeaponTrainingMonk",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Natural)",
   Key="Weapon Training 4 Natural",
@@ -30315,7 +29469,6 @@ DefineAbility({
     "WeaponTrainingNatural",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Pole Arms)",
   Key="Weapon Training 4 Pole Arms",
@@ -30350,7 +29503,6 @@ DefineAbility({
     "WeaponTrainingPoleArms",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Spears)",
   Key="Weapon Training 4 Spears",
@@ -30385,7 +29537,6 @@ DefineAbility({
     "WeaponTrainingSpears",
   },
 })
-
 DefineAbility({
   Name="Weapon Training (Thrown)",
   Key="Weapon Training 4 Thrown",
@@ -30420,7 +29571,6 @@ DefineAbility({
     "WeaponTrainingThrown",
   },
 })
-
 DefineAbility({
   Name="Monk Core Class Skills",
   Key="Class Skills ~ Monk",
@@ -30442,7 +29592,6 @@ DefineAbility({
     "Swim",
   },
 })
-
 DefineAbility({
   Name="Monk Bonus Feat",
   Key="Monk ~ Monk Bonus Feat",
@@ -30469,7 +29618,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 DefineAbility({
   Name="AC Bonus",
   Key="Monk ~ AC Bonus",
@@ -30546,7 +29694,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Flurry of Blows",
   Key="Monk ~ Flurry of Blows",
@@ -30561,7 +29708,6 @@ DefineAbility({
     "Flurry of Blows",
   },
 })
-
 DefineAbility({
   Name="Stunning Fist",
   Key="Monk ~ Stunning Fist",
@@ -30595,7 +29741,6 @@ DefineAbility({
     "Stunning Fist",
   },
 })
-
 DefineAbility({
   Name="Fast Movement",
   Key="Monk ~ Fast Movement",
@@ -30645,7 +29790,6 @@ DefineAbility({
     "ModifyMovement",
   },
 })
-
 DefineAbility({
   Name="Maneuver Training",
   Key="Monk ~ Maneuver Training",
@@ -30683,7 +29827,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Still Mind",
   Key="Monk ~ Still Mind",
@@ -30706,7 +29849,6 @@ DefineAbility({
     "Still Mind",
   },
 })
-
 DefineAbility({
   Name="Ki Pool",
   Key="Monk ~ Ki Pool",
@@ -30745,7 +29887,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Slow Fall",
   Key="Monk ~ Slow Fall",
@@ -30777,7 +29918,6 @@ DefineAbility({
     "ModifyMovement",
   },
 })
-
 DefineAbility({
   Name="High Jump",
   Key="Monk ~ High Jump",
@@ -30819,7 +29959,6 @@ DefineAbility({
     "ModifyMovement",
   },
 })
-
 DefineAbility({
   Name="Purity of Body",
   Key="Monk ~ Purity of Body",
@@ -30844,7 +29983,6 @@ DefineAbility({
     "Purity of Body",
   },
 })
-
 DefineAbility({
   Name="Wholeness of Body",
   Key="Monk ~ Wholeness of Body",
@@ -30880,7 +30018,6 @@ DefineAbility({
     "Wholeness of Body",
   },
 })
-
 DefineAbility({
   Name="Diamond Body",
   Key="Monk ~ Diamond Body",
@@ -30905,7 +30042,6 @@ DefineAbility({
     "Diamond Body",
   },
 })
-
 DefineAbility({
   Name="Abundant Step",
   Key="Monk ~ Abundant Step",
@@ -30942,7 +30078,6 @@ DefineAbility({
     "Abundant Step",
   },
 })
-
 DefineAbility({
   Name="Diamond Soul",
   Key="Monk ~ Diamond Soul",
@@ -30978,7 +30113,6 @@ DefineAbility({
     "Diamond Soul",
   },
 })
-
 DefineAbility({
   Name="Quivering Palm",
   Key="Monk ~ Quivering Palm",
@@ -31022,7 +30156,6 @@ DefineAbility({
     "Quivering Palm",
   },
 })
-
 DefineAbility({
   Name="Tongue of the Sun and Moon",
   Key="Monk ~ Tongue of the Sun and Moon",
@@ -31039,7 +30172,6 @@ DefineAbility({
     "Tongue of the Sun and Moon",
   },
 })
-
 DefineAbility({
   Name="Empty Body",
   Key="Monk ~ Empty Body",
@@ -31056,7 +30188,6 @@ DefineAbility({
     "Empty Body",
   },
 })
-
 DefineAbility({
   Name="Perfect Self",
   Key="Monk ~ Perfect Self",
@@ -31074,7 +30205,6 @@ DefineAbility({
     "Perfect Self",
   },
 })
-
 DefineAbility({
   Name="Evasion",
   Key="Monk ~ Evasion",
@@ -31093,7 +30223,6 @@ DefineAbility({
     "Evasion",
   },
 })
-
 DefineAbility({
   Name="Improved Evasion",
   Key="Monk ~ Improved Evasion",
@@ -31112,7 +30241,6 @@ DefineAbility({
     "Improved Evasion",
   },
 })
-
 DefineAbility({
   Name="Timeless Body",
   Key="Monk ~ Timeless Body",
@@ -31137,7 +30265,6 @@ DefineAbility({
     "Timeless Body",
   },
 })
-
 DefineAbility({
   Name="Unarmed Strike",
   Key="Monk ~ Unarmed Strike",
@@ -31167,7 +30294,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Slow Fall",
   Category="Special Ability",
@@ -31189,7 +30315,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Slow Fall",
   Category="Special Ability",
@@ -31211,7 +30336,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Slow Fall",
   Category="Special Ability",
@@ -31233,7 +30357,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Slow Fall",
   Category="Special Ability",
@@ -31255,7 +30378,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Slow Fall",
   Category="Special Ability",
@@ -31277,7 +30399,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Slow Fall",
   Category="Special Ability",
@@ -31299,7 +30420,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Slow Fall",
   Category="Special Ability",
@@ -31321,7 +30441,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Slow Fall",
   Category="Special Ability",
@@ -31343,7 +30462,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Slow Fall",
   Category="Special Ability",
@@ -31365,7 +30483,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31379,7 +30496,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31393,7 +30509,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31407,7 +30522,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31421,7 +30535,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31435,7 +30548,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31449,7 +30561,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31463,7 +30574,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31477,7 +30587,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31491,7 +30600,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31505,7 +30613,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31519,7 +30626,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31533,7 +30639,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31547,13 +30652,11 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
   SourcePage="p.57",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31567,7 +30670,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31581,87 +30683,70 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
 })
-
 DefineAbility({
   Name="Ki Pool Tracker",
   Category="Internal",
@@ -31725,12 +30810,10 @@ DefineAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 DefineAbility({
   Name="Ki Stat Choice ~ Wisdom",
   Category="Internal",
@@ -31752,7 +30835,6 @@ DefineAbility({
     "KiStatChoice",
   },
 })
-
 DefineAbility({
   Name="Ki Stat Choice ~ Charisma",
   Category="Internal",
@@ -31774,7 +30856,6 @@ DefineAbility({
     "KiStatChoice",
   },
 })
-
 DefineAbility({
   Name="Ki Stat Choice ~ Intelligence",
   Category="Internal",
@@ -31796,7 +30877,6 @@ DefineAbility({
     "KiStatChoice",
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31812,7 +30892,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31828,7 +30907,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Flurry of Blows",
   Category="Special Ability",
@@ -31841,7 +30919,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Stunning Fist",
   Category="Special Ability",
@@ -31857,7 +30934,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Stunning Fist",
   Category="Special Ability",
@@ -31873,7 +30949,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Stunning Fist",
   Category="Special Ability",
@@ -31889,7 +30964,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Stunning Fist",
   Category="Special Ability",
@@ -31905,7 +30979,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Stunning Fist",
   Category="Special Ability",
@@ -31918,12 +30991,10 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Ki Pool",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Ki Pool",
   Category="Special Ability",
@@ -31942,7 +31013,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Ki Pool",
   Category="Special Ability",
@@ -31964,7 +31034,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Ki Pool",
   Category="Special Ability",
@@ -31986,7 +31055,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Ki Pool",
   Category="Special Ability",
@@ -32008,7 +31076,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Ki Pool",
   Category="Special Ability",
@@ -32024,7 +31091,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Ki Pool",
   Category="Special Ability",
@@ -32040,7 +31106,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Ki Pool",
   Category="Special Ability",
@@ -32056,7 +31121,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Ki Pool",
   Category="Special Ability",
@@ -32072,7 +31136,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Slow Fall",
   Category="Special Ability",
@@ -32088,7 +31151,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Slow Fall",
   Category="Special Ability",
@@ -32101,7 +31163,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
@@ -32120,7 +31181,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
@@ -32134,7 +31194,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
@@ -32156,7 +31215,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
@@ -32178,7 +31236,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
@@ -32200,7 +31257,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
@@ -32222,7 +31278,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
@@ -32244,7 +31299,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
@@ -32266,97 +31320,78 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 ModifyAbility({
   Name="Monk ~ Monk Bonus Feat",
   Category="Special Ability",
 })
-
 DefineAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32375,7 +31410,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32394,7 +31428,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32413,7 +31446,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32432,7 +31464,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32451,7 +31482,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32470,7 +31500,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32489,7 +31518,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32508,7 +31536,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32527,7 +31554,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32546,7 +31572,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32565,7 +31590,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32584,7 +31608,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32603,7 +31626,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32622,7 +31644,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32641,7 +31662,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32660,7 +31680,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Monk Bonus Feat ~ Default",
   Category="Internal",
@@ -32679,7 +31698,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Catch Off-Guard",
   Key="Monk Bonus Feat ~ Catch Off-Guard",
@@ -32711,7 +31729,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Combat Reflexes",
   Key="Monk Bonus Feat ~ Combat Reflexes",
@@ -32743,7 +31760,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Deflect Arrows",
   Key="Monk Bonus Feat ~ Deflect Arrows",
@@ -32775,7 +31791,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Dodge",
   Key="Monk Bonus Feat ~ Dodge",
@@ -32807,7 +31822,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Improved Grapple",
   Key="Monk Bonus Feat ~ Improved Grapple",
@@ -32839,7 +31853,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Scorpion Style",
   Key="Monk Bonus Feat ~ Scorpion Style",
@@ -32871,7 +31884,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Throw Anything",
   Key="Monk Bonus Feat ~ Throw Anything",
@@ -32903,7 +31915,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Gorgon's Fist",
   Key="Monk Bonus Feat ~ Gorgon's Fist",
@@ -32935,7 +31946,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Improved Bull Rush",
   Key="Monk Bonus Feat ~ Improved Bull Rush",
@@ -32967,7 +31977,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Improved Disarm",
   Key="Monk Bonus Feat ~ Improved Disarm",
@@ -32999,7 +32008,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Improved Feint",
   Key="Monk Bonus Feat ~ Improved Feint",
@@ -33031,7 +32039,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Improved Trip",
   Key="Monk Bonus Feat ~ Improved Trip",
@@ -33063,7 +32070,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Mobility",
   Key="Monk Bonus Feat ~ Mobility",
@@ -33095,7 +32101,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Improved Critical",
   Key="Monk Bonus Feat ~ Improved Critical",
@@ -33132,7 +32137,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Medusa's Wrath",
   Key="Monk Bonus Feat ~ Medusa's Wrath",
@@ -33164,7 +32168,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Snatch Arrows",
   Key="Monk Bonus Feat ~ Snatch Arrows",
@@ -33196,7 +32199,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Spring Attack",
   Key="Monk Bonus Feat ~ Spring Attack",
@@ -33228,7 +32230,6 @@ DefineAbility({
     "MonkBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Monk ~ Unarmed Damage",
   Category="Internal",
@@ -33431,7 +32432,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 1",
   Category="Internal",
@@ -33546,7 +32546,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 4",
   Category="Internal",
@@ -33661,7 +32660,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 8",
   Category="Internal",
@@ -33776,7 +32774,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 12",
   Category="Internal",
@@ -33891,7 +32888,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 16",
   Category="Internal",
@@ -34006,7 +33002,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 20",
   Category="Internal",
@@ -34121,7 +33116,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 1 (Fine)",
   Category="Internal",
@@ -34152,7 +33146,6 @@ DefineAbility({
     "1d1",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 1 (Diminutive)",
   Category="Internal",
@@ -34183,7 +33176,6 @@ DefineAbility({
     "1d2",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 1 (Tiny)",
   Category="Internal",
@@ -34214,7 +33206,6 @@ DefineAbility({
     "1d3",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 1 (Small)",
   Category="Internal",
@@ -34245,7 +33236,6 @@ DefineAbility({
     "1d4",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 1 (Medium)",
   Category="Internal",
@@ -34276,7 +33266,6 @@ DefineAbility({
     "1d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 1 (Large)",
   Category="Internal",
@@ -34307,7 +33296,6 @@ DefineAbility({
     "1d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 1 (Huge)",
   Category="Internal",
@@ -34338,7 +33326,6 @@ DefineAbility({
     "2d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 1 (Gargantuan)",
   Category="Internal",
@@ -34369,7 +33356,6 @@ DefineAbility({
     "3d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 1 (Colossal)",
   Category="Internal",
@@ -34400,7 +33386,6 @@ DefineAbility({
     "4d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 4 (Fine)",
   Category="Internal",
@@ -34431,7 +33416,6 @@ DefineAbility({
     "1d2",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 4 (Diminutive)",
   Category="Internal",
@@ -34462,7 +33446,6 @@ DefineAbility({
     "1d3",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 4 (Tiny)",
   Category="Internal",
@@ -34493,7 +33476,6 @@ DefineAbility({
     "1d4",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 4 (Small)",
   Category="Internal",
@@ -34524,7 +33506,6 @@ DefineAbility({
     "1d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 4 (Medium)",
   Category="Internal",
@@ -34555,7 +33536,6 @@ DefineAbility({
     "1d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 4 (Large)",
   Category="Internal",
@@ -34586,7 +33566,6 @@ DefineAbility({
     "2d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 4 (Huge)",
   Category="Internal",
@@ -34617,7 +33596,6 @@ DefineAbility({
     "3d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 4 (Gargantuan)",
   Category="Internal",
@@ -34648,7 +33626,6 @@ DefineAbility({
     "4d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 4 (Colossal)",
   Category="Internal",
@@ -34679,7 +33656,6 @@ DefineAbility({
     "6d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 8 (Fine)",
   Category="Internal",
@@ -34710,7 +33686,6 @@ DefineAbility({
     "1d3",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 8 (Diminutive)",
   Category="Internal",
@@ -34741,7 +33716,6 @@ DefineAbility({
     "1d4",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 8 (Tiny)",
   Category="Internal",
@@ -34772,7 +33746,6 @@ DefineAbility({
     "1d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 8 (Small)",
   Category="Internal",
@@ -34803,7 +33776,6 @@ DefineAbility({
     "1d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 8 (Medium)",
   Category="Internal",
@@ -34834,7 +33806,6 @@ DefineAbility({
     "1d10",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 8 (Large)",
   Category="Internal",
@@ -34865,7 +33836,6 @@ DefineAbility({
     "2d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 8 (Huge)",
   Category="Internal",
@@ -34896,7 +33866,6 @@ DefineAbility({
     "3d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 8 (Gargantuan)",
   Category="Internal",
@@ -34927,7 +33896,6 @@ DefineAbility({
     "4d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 8 (Colossal)",
   Category="Internal",
@@ -34958,7 +33926,6 @@ DefineAbility({
     "6d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 12 (Fine)",
   Category="Internal",
@@ -34989,7 +33956,6 @@ DefineAbility({
     "1d4",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 12 (Diminutive)",
   Category="Internal",
@@ -35020,7 +33986,6 @@ DefineAbility({
     "1d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 12 (Tiny)",
   Category="Internal",
@@ -35051,7 +34016,6 @@ DefineAbility({
     "1d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 12 (Small)",
   Category="Internal",
@@ -35082,7 +34046,6 @@ DefineAbility({
     "1d10",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 12 (Medium)",
   Category="Internal",
@@ -35113,7 +34076,6 @@ DefineAbility({
     "2d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 12 (Large)",
   Category="Internal",
@@ -35144,7 +34106,6 @@ DefineAbility({
     "3d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 12 (Huge)",
   Category="Internal",
@@ -35175,7 +34136,6 @@ DefineAbility({
     "4d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 12 (Gargantuan)",
   Category="Internal",
@@ -35206,7 +34166,6 @@ DefineAbility({
     "6d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 12 (Colossal)",
   Category="Internal",
@@ -35237,7 +34196,6 @@ DefineAbility({
     "8d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 16 (Fine)",
   Category="Internal",
@@ -35268,7 +34226,6 @@ DefineAbility({
     "1d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 16 (Diminutive)",
   Category="Internal",
@@ -35299,7 +34256,6 @@ DefineAbility({
     "1d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 16 (Tiny)",
   Category="Internal",
@@ -35330,7 +34286,6 @@ DefineAbility({
     "1d10",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 16 (Small)",
   Category="Internal",
@@ -35361,7 +34316,6 @@ DefineAbility({
     "2d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 16 (Medium)",
   Category="Internal",
@@ -35392,7 +34346,6 @@ DefineAbility({
     "2d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 16 (Large)",
   Category="Internal",
@@ -35423,7 +34376,6 @@ DefineAbility({
     "3d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 16 (Huge)",
   Category="Internal",
@@ -35454,7 +34406,6 @@ DefineAbility({
     "4d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 16 (Gargantuan)",
   Category="Internal",
@@ -35485,7 +34436,6 @@ DefineAbility({
     "6d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 16 (Colossal)",
   Category="Internal",
@@ -35516,7 +34466,6 @@ DefineAbility({
     "8d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 20 (Fine)",
   Category="Internal",
@@ -35547,7 +34496,6 @@ DefineAbility({
     "1d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 20 (Diminutive)",
   Category="Internal",
@@ -35578,7 +34526,6 @@ DefineAbility({
     "1d10",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 20 (Tiny)",
   Category="Internal",
@@ -35609,7 +34556,6 @@ DefineAbility({
     "2d6",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 20 (Small)",
   Category="Internal",
@@ -35640,7 +34586,6 @@ DefineAbility({
     "2d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 20 (Medium)",
   Category="Internal",
@@ -35671,7 +34616,6 @@ DefineAbility({
     "2d10",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 20 (Large)",
   Category="Internal",
@@ -35702,7 +34646,6 @@ DefineAbility({
     "4d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 20 (Huge)",
   Category="Internal",
@@ -35733,7 +34676,6 @@ DefineAbility({
     "6d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 20 (Gargantuan)",
   Category="Internal",
@@ -35764,7 +34706,6 @@ DefineAbility({
     "8d8",
   },
 })
-
 DefineAbility({
   Name="Monk Unarmed Damage LVL 20 (Colossal)",
   Category="Internal",
@@ -35795,7 +34736,6 @@ DefineAbility({
     "12d8",
   },
 })
-
 DefineAbility({
   Name="Aura of Good",
   Key="Paladin ~ Aura of Good",
@@ -35813,7 +34753,6 @@ DefineAbility({
     "PaladinClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Detect Evil",
   Key="Paladin ~ Detect Evil",
@@ -35848,7 +34787,6 @@ DefineAbility({
     "Detect Evil",
   },
 })
-
 DefineAbility({
   Name="Smite Evil",
   Key="Paladin ~ Smite Evil",
@@ -35915,7 +34853,6 @@ DefineAbility({
     "Smite Evil",
   },
 })
-
 DefineAbility({
   Name="Divine Grace",
   Key="Paladin ~ Divine Grace",
@@ -35944,7 +34881,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Lay on Hands",
   Key="Paladin ~ Lay on Hands",
@@ -36005,7 +34941,6 @@ DefineAbility({
     "Lay on Hands",
   },
 })
-
 DefineAbility({
   Name="Divine Health",
   Key="Paladin ~ Divine Health",
@@ -36020,7 +34955,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Mercy",
   Key="Paladin ~ Mercy",
@@ -36056,7 +34990,6 @@ DefineAbility({
     "Mercy",
   },
 })
-
 DefineAbility({
   Name="Channel Positive Energy",
   Key="Paladin ~ Channel Positive Energy",
@@ -36136,7 +35069,6 @@ DefineAbility({
     "Channel Positive Energy",
   },
 })
-
 DefineAbility({
   Name="Holy Champion",
   Key="Paladin ~ Holy Champion",
@@ -36177,7 +35109,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 ModifyAbility({
   Name="Paladin ~ Mercy",
   Category="Special Ability",
@@ -36199,7 +35130,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin ~ Mercy",
   Category="Special Ability",
@@ -36221,7 +35151,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin ~ Mercy",
   Category="Special Ability",
@@ -36243,7 +35172,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin ~ Mercy",
   Category="Special Ability",
@@ -36265,7 +35193,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin ~ Mercy",
   Category="Special Ability",
@@ -36287,7 +35214,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Paladin ~ Mercy",
   Category="Special Ability",
@@ -36309,7 +35235,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Aura of Courage",
   Key="Paladin ~ Aura of Courage",
@@ -36326,7 +35251,6 @@ DefineAbility({
     "Aura of Courage",
   },
 })
-
 DefineAbility({
   Name="Aura of Resolve",
   Key="Paladin ~ Aura of Resolve",
@@ -36343,7 +35267,6 @@ DefineAbility({
     "Aura of Resolve",
   },
 })
-
 DefineAbility({
   Name="Aura of Justice",
   Key="Paladin ~ Aura of Justice",
@@ -36360,7 +35283,6 @@ DefineAbility({
     "Aura of Justice",
   },
 })
-
 DefineAbility({
   Name="Aura of Faith",
   Key="Paladin ~ Aura of Faith",
@@ -36377,7 +35299,6 @@ DefineAbility({
     "Aura of Faith",
   },
 })
-
 DefineAbility({
   Name="Aura of Righteousness",
   Key="Paladin ~ Aura of Righteousness",
@@ -36397,7 +35318,6 @@ DefineAbility({
     "Aura of Righteousness",
   },
 })
-
 DefineAbility({
   Name="Divine Bond",
   Key="Paladin ~ Divine Bond",
@@ -36433,7 +35353,6 @@ DefineAbility({
     "Divine Bond",
   },
 })
-
 DefineAbility({
   Name="Celestial Spirit",
   Key="Divine Bond ~ Celestial Spirit",
@@ -36489,7 +35408,6 @@ DefineAbility({
     "Divine Bond",
   },
 })
-
 DefineAbility({
   Name="Special Mount",
   Key="Divine Bond ~ Special Mount",
@@ -36601,7 +35519,6 @@ DefineAbility({
     "Divine Bond Mount",
   },
 })
-
 DefineAbility({
   Name="Standard Choices",
   Key="Special Mount ~ Standard Choices",
@@ -36619,7 +35536,6 @@ DefineAbility({
     "SpecialMountSelection",
   },
 })
-
 DefineAbility({
   Name="Expanded Choices",
   Key="Special Mount ~ Expanded Choices",
@@ -36639,7 +35555,6 @@ DefineAbility({
     "SpecialMountAlternate",
   },
 })
-
 ModifyAbility({
   Name="Divine Bond ~ Special Mount",
   Category="Special Ability",
@@ -36659,7 +35574,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Divine Bond ~ Special Mount",
   Category="Special Ability",
@@ -36679,7 +35593,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Divine Bond ~ Special Mount",
   Category="Special Ability",
@@ -36700,7 +35613,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Fatigued",
   Key="Mercy ~ Fatigued",
@@ -36723,7 +35635,6 @@ DefineAbility({
     "LayOnHands",
   },
 })
-
 DefineAbility({
   Name="Shaken",
   Key="Mercy ~ Shaken",
@@ -36746,7 +35657,6 @@ DefineAbility({
     "LayOnHands",
   },
 })
-
 DefineAbility({
   Name="Sickened",
   Key="Mercy ~ Sickened",
@@ -36769,7 +35679,6 @@ DefineAbility({
     "LayOnHands",
   },
 })
-
 DefineAbility({
   Name="Dazed",
   Key="Mercy ~ Dazed",
@@ -36792,7 +35701,6 @@ DefineAbility({
     "LayOnHands",
   },
 })
-
 DefineAbility({
   Name="Diseased",
   Key="Mercy ~ Diseased",
@@ -36818,7 +35726,6 @@ DefineAbility({
     "LayOnHands",
   },
 })
-
 DefineAbility({
   Name="Staggered",
   Key="Mercy ~ Staggered",
@@ -36841,7 +35748,6 @@ DefineAbility({
     "LayOnHands",
   },
 })
-
 DefineAbility({
   Name="Cursed",
   Key="Mercy ~ Cursed",
@@ -36867,7 +35773,6 @@ DefineAbility({
     "LayOnHands",
   },
 })
-
 DefineAbility({
   Name="Exhausted",
   Key="Mercy ~ Exhausted",
@@ -36895,7 +35800,6 @@ DefineAbility({
     "LayOnHands",
   },
 })
-
 DefineAbility({
   Name="Frightened",
   Key="Mercy ~ Frightened",
@@ -36923,7 +35827,6 @@ DefineAbility({
     "LayOnHands",
   },
 })
-
 DefineAbility({
   Name="Nauseated",
   Key="Mercy ~ Nauseated",
@@ -36951,7 +35854,6 @@ DefineAbility({
     "LayOnHands",
   },
 })
-
 DefineAbility({
   Name="Poisoned",
   Key="Mercy ~ Poisoned",
@@ -36977,7 +35879,6 @@ DefineAbility({
     "LayOnHands",
   },
 })
-
 DefineAbility({
   Name="Blinded",
   Key="Mercy ~ Blinded",
@@ -37000,7 +35901,6 @@ DefineAbility({
     "LayOnHands",
   },
 })
-
 DefineAbility({
   Name="Deafened",
   Key="Mercy ~ Deafened",
@@ -37023,7 +35923,6 @@ DefineAbility({
     "LayOnHands",
   },
 })
-
 DefineAbility({
   Name="Paralyzed",
   Key="Mercy ~ Paralyzed",
@@ -37046,7 +35945,6 @@ DefineAbility({
     "LayOnHands",
   },
 })
-
 DefineAbility({
   Name="Stunned",
   Key="Mercy ~ Stunned",
@@ -37069,7 +35967,6 @@ DefineAbility({
     "LayOnHands",
   },
 })
-
 DefineAbility({
   Name="Track",
   Key="Ranger ~ Track",
@@ -37114,7 +36011,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Swift Tracker",
   Key="Ranger ~ Swift Tracker",
@@ -37129,7 +36025,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Quarry",
   Key="Ranger ~ Quarry",
@@ -37150,7 +36045,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Quarry",
   Key="Ranger ~ Quarry Output",
@@ -37166,7 +36060,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Camouflage",
   Key="Ranger ~ Camouflage",
@@ -37181,7 +36074,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Hide in Plain Sight",
   Key="Ranger ~ Hide in Plain Sight",
@@ -37196,7 +36088,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Improved Quarry",
   Key="Ranger ~ Improved Quarry",
@@ -37212,7 +36103,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Master Hunter",
   Key="Ranger ~ Master Hunter",
@@ -37247,7 +36137,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Evasion",
   Key="Ranger ~ Evasion",
@@ -37266,7 +36155,6 @@ DefineAbility({
     "Evasion",
   },
 })
-
 DefineAbility({
   Name="Improved Evasion",
   Key="Ranger ~ Improved Evasion",
@@ -37285,7 +36173,6 @@ DefineAbility({
     "Improved Evasion",
   },
 })
-
 DefineAbility({
   Name="Wild Empathy",
   Key="Ranger ~ Wild Empathy",
@@ -37313,7 +36200,6 @@ DefineAbility({
     "Wild Empathy",
   },
 })
-
 DefineAbility({
   Name="Woodland Stride",
   Key="Ranger ~ Woodland Stride",
@@ -37332,7 +36218,6 @@ DefineAbility({
     "Woodland Stride",
   },
 })
-
 DefineAbility({
   Name="Combat Style Feat",
   Key="Ranger ~ Combat Style Feat",
@@ -37385,7 +36270,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Track Bonus",
   Category="Internal",
@@ -37409,7 +36293,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Hunter's Bond",
   Key="Ranger ~ Hunter's Bond",
@@ -37438,7 +36321,6 @@ DefineAbility({
     "Hunters Bond",
   },
 })
-
 DefineAbility({
   Name="Hunting Companions",
   Key="Hunter's Bond ~ Hunting Companions",
@@ -37457,7 +36339,6 @@ DefineAbility({
     "HuntersBond",
   },
 })
-
 DefineAbility({
   Name="Animal Companion",
   Key="Hunter's Bond ~ Animal Companion",
@@ -37546,7 +36427,6 @@ DefineAbility({
     "Animal Companion",
   },
 })
-
 DefineAbility({
   Name="Ranger Favored Enemy",
   Key="Ranger ~ Favored Enemy",
@@ -37614,7 +36494,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Ranger Favored Terrain",
   Key="Ranger ~ Favored Terrain",
@@ -37658,87 +36537,70 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Ranger ~ Combat Style Feat",
   Category="Special Ability",
@@ -37760,7 +36622,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger ~ Combat Style Feat",
   Category="Special Ability",
@@ -37782,7 +36643,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger ~ Combat Style Feat",
   Category="Special Ability",
@@ -37804,7 +36664,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger ~ Combat Style Feat",
   Category="Special Ability",
@@ -37826,7 +36685,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger ~ Combat Style Feat",
   Category="Special Ability",
@@ -37848,7 +36706,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger ~ Favored Enemy",
   Category="Special Ability",
@@ -37885,7 +36742,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger ~ Favored Enemy",
   Category="Special Ability",
@@ -37922,7 +36778,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger ~ Favored Enemy",
   Category="Special Ability",
@@ -37959,7 +36814,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger ~ Favored Enemy",
   Category="Special Ability",
@@ -37996,7 +36850,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Ranger ~ Favored Enemy",
   Category="Special Ability",
@@ -38033,7 +36886,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Archery",
   Key="Ranger Combat Style ~ Archery",
@@ -38124,7 +36976,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Two-Weapon Combat",
   Key="Ranger Combat Style ~ Two-Weapon Combat",
@@ -38215,7 +37066,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -38236,7 +37086,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Ranger Archetype Support",
   Category="Internal",
@@ -38260,7 +37109,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Far Shot",
   Key="Ranger Combat Style Feat ~ Far Shot",
@@ -38298,7 +37146,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Point-Blank Shot",
   Key="Ranger Combat Style Feat ~ Point-Blank Shot",
@@ -38336,7 +37183,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Precise Shot",
   Key="Ranger Combat Style Feat ~ Precise Shot",
@@ -38374,7 +37220,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Rapid Shot",
   Key="Ranger Combat Style Feat ~ Rapid Shot",
@@ -38412,7 +37257,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Improved Precise Shot",
   Key="Ranger Combat Style Feat ~ Improved Precise Shot",
@@ -38450,7 +37294,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Manyshot",
   Key="Ranger Combat Style Feat ~ Manyshot",
@@ -38488,7 +37331,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Pinpoint Targeting",
   Key="Ranger Combat Style Feat ~ Pinpoint Targeting",
@@ -38526,7 +37368,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Shot on the Run",
   Key="Ranger Combat Style Feat ~ Shot on the Run",
@@ -38564,7 +37405,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Double Slice",
   Key="Ranger Combat Style Feat ~ Double Slice",
@@ -38602,7 +37442,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Improved Shield Bash",
   Key="Ranger Combat Style Feat ~ Improved Shield Bash",
@@ -38640,7 +37479,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Quick Draw",
   Key="Ranger Combat Style Feat ~ Quick Draw",
@@ -38678,7 +37516,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Two-Weapon Fighting",
   Key="Ranger Combat Style Feat ~ Two-Weapon Fighting",
@@ -38716,7 +37553,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Improved Two-Weapon Fighting",
   Key="Ranger Combat Style Feat ~ Improved Two-Weapon Fighting",
@@ -38754,7 +37590,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Two-Weapon Defense",
   Key="Ranger Combat Style Feat ~ Two-Weapon Defense",
@@ -38792,7 +37627,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Greater Two-Weapon Fighting",
   Key="Ranger Combat Style Feat ~ Greater Two-Weapon Fighting",
@@ -38830,7 +37664,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Two-Weapon Rend",
   Key="Ranger Combat Style Feat ~ Two-Weapon Rend",
@@ -38868,7 +37701,6 @@ DefineAbility({
     "RangerBonusFeat",
   },
 })
-
 DefineAbility({
   Name="Basic Favored Enemy",
   Category="Special Ability",
@@ -38888,7 +37720,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Aberration",
   Key="Favored Enemy ~ Aberration",
@@ -38940,7 +37771,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Animal",
   Key="Favored Enemy ~ Animal",
@@ -38992,7 +37822,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Construct",
   Key="Favored Enemy ~ Construct",
@@ -39044,7 +37873,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Dragon",
   Key="Favored Enemy ~ Dragon",
@@ -39096,7 +37924,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Fey",
   Key="Favored Enemy ~ Fey",
@@ -39148,7 +37975,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Aquatic)",
   Key="Favored Enemy ~ Humanoid (Aquatic)",
@@ -39200,7 +38026,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Dwarf)",
   Key="Favored Enemy ~ Humanoid (Dwarf)",
@@ -39252,7 +38077,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Elf)",
   Key="Favored Enemy ~ Humanoid (Elf)",
@@ -39304,7 +38128,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Giant)",
   Key="Favored Enemy ~ Humanoid (Giant)",
@@ -39356,7 +38179,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Goblinoid)",
   Key="Favored Enemy ~ Humanoid (Goblinoid)",
@@ -39408,7 +38230,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Gnoll)",
   Key="Favored Enemy ~ Humanoid (Gnoll)",
@@ -39460,7 +38281,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Gnome)",
   Key="Favored Enemy ~ Humanoid (Gnome)",
@@ -39512,7 +38332,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Halfling)",
   Key="Favored Enemy ~ Humanoid (Halfling)",
@@ -39564,7 +38383,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Human)",
   Key="Favored Enemy ~ Humanoid (Human)",
@@ -39616,7 +38434,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Orc)",
   Key="Favored Enemy ~ Humanoid (Orc)",
@@ -39668,7 +38485,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Reptilian)",
   Key="Favored Enemy ~ Humanoid (Reptilian)",
@@ -39720,7 +38536,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Magical Beast",
   Key="Favored Enemy ~ Magical Beast",
@@ -39772,7 +38587,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Monstrous Humanoid",
   Key="Favored Enemy ~ Monstrous Humanoid",
@@ -39824,7 +38638,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Ooze",
   Key="Favored Enemy ~ Ooze",
@@ -39876,7 +38689,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Outsider (Air)",
   Key="Favored Enemy ~ Outsider (Air)",
@@ -39928,7 +38740,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Outsider (Chaotic)",
   Key="Favored Enemy ~ Outsider (Chaotic)",
@@ -39980,7 +38791,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Outsider (Earth)",
   Key="Favored Enemy ~ Outsider (Earth)",
@@ -40032,7 +38842,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Outsider (Evil)",
   Key="Favored Enemy ~ Outsider (Evil)",
@@ -40084,7 +38893,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Outsider (Fire)",
   Key="Favored Enemy ~ Outsider (Fire)",
@@ -40136,7 +38944,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Outsider (Good)",
   Key="Favored Enemy ~ Outsider (Good)",
@@ -40188,7 +38995,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Outsider (Lawful)",
   Key="Favored Enemy ~ Outsider (Lawful)",
@@ -40240,7 +39046,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Outsider (Native)",
   Key="Favored Enemy ~ Outsider (Native)",
@@ -40292,7 +39097,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Outsider (Water)",
   Key="Favored Enemy ~ Outsider (Water)",
@@ -40344,7 +39148,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Plant",
   Key="Favored Enemy ~ Plant",
@@ -40396,7 +39199,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Undead",
   Key="Favored Enemy ~ Undead",
@@ -40448,7 +39250,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Vermin",
   Key="Favored Enemy ~ Vermin",
@@ -40500,7 +39301,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Aberration",
   Key="Favored Enemy Bonus ~ Aberration",
@@ -40532,7 +39332,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Animal",
   Key="Favored Enemy Bonus ~ Animal",
@@ -40564,7 +39363,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Construct",
   Key="Favored Enemy Bonus ~ Construct",
@@ -40596,7 +39394,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Dragon",
   Key="Favored Enemy Bonus ~ Dragon",
@@ -40628,7 +39425,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Fey",
   Key="Favored Enemy Bonus ~ Fey",
@@ -40660,7 +39456,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Aquatic)",
   Key="Favored Enemy Bonus ~ Humanoid (Aquatic)",
@@ -40692,7 +39487,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Dwarf)",
   Key="Favored Enemy Bonus ~ Humanoid (Dwarf)",
@@ -40724,7 +39518,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Elf)",
   Key="Favored Enemy Bonus ~ Humanoid (Elf)",
@@ -40756,7 +39549,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Giant)",
   Key="Favored Enemy Bonus ~ Humanoid (Giant)",
@@ -40788,7 +39580,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Gnoll)",
   Key="Favored Enemy Bonus ~ Humanoid (Gnoll)",
@@ -40820,7 +39611,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Gnome)",
   Key="Favored Enemy Bonus ~ Humanoid (Gnome)",
@@ -40852,7 +39642,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Goblinoid)",
   Key="Favored Enemy Bonus ~ Humanoid (Goblinoid)",
@@ -40884,7 +39673,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Halfling)",
   Key="Favored Enemy Bonus ~ Humanoid (Halfling)",
@@ -40916,7 +39704,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Human)",
   Key="Favored Enemy Bonus ~ Humanoid (Human)",
@@ -40948,7 +39735,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Orc)",
   Key="Favored Enemy Bonus ~ Humanoid (Orc)",
@@ -40980,7 +39766,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Humanoid (Reptilian)",
   Key="Favored Enemy Bonus ~ Humanoid (Reptilian)",
@@ -41012,7 +39797,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Magical Beast",
   Key="Favored Enemy Bonus ~ Magical Beast",
@@ -41044,7 +39828,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Monstrous Humanoid",
   Key="Favored Enemy Bonus ~ Monstrous Humanoid",
@@ -41076,7 +39859,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Ooze",
   Key="Favored Enemy Bonus ~ Ooze",
@@ -41108,7 +39890,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Outsider (Air)",
   Key="Favored Enemy Bonus ~ Outsider (Air)",
@@ -41140,7 +39921,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Outsider (Earth)",
   Key="Favored Enemy Bonus ~ Outsider (Earth)",
@@ -41172,7 +39952,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Outsider (Fire)",
   Key="Favored Enemy Bonus ~ Outsider (Fire)",
@@ -41204,7 +39983,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Outsider (Water)",
   Key="Favored Enemy Bonus ~ Outsider (Water)",
@@ -41236,7 +40014,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Outsider (Lawful)",
   Key="Favored Enemy Bonus ~ Outsider (Lawful)",
@@ -41268,7 +40045,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Outsider (Chaotic)",
   Key="Favored Enemy Bonus ~ Outsider (Chaotic)",
@@ -41300,7 +40076,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Outsider (Good)",
   Key="Favored Enemy Bonus ~ Outsider (Good)",
@@ -41332,7 +40107,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Outsider (Evil)",
   Key="Favored Enemy Bonus ~ Outsider (Evil)",
@@ -41364,7 +40138,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Outsider (Native)",
   Key="Favored Enemy Bonus ~ Outsider (Native)",
@@ -41396,7 +40169,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Plant",
   Key="Favored Enemy Bonus ~ Plant",
@@ -41428,7 +40200,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Undead",
   Key="Favored Enemy Bonus ~ Undead",
@@ -41460,7 +40231,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Vermin",
   Key="Favored Enemy Bonus ~ Vermin",
@@ -41492,7 +40262,6 @@ DefineAbility({
     "FavoredEnemyBonus",
   },
 })
-
 DefineAbility({
   Name="Basic Favored Terrain",
   Category="Special Ability",
@@ -41511,7 +40280,6 @@ DefineAbility({
     "RangerClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain (Cold)",
   Key="Favored Terrain ~ Cold",
@@ -41556,7 +40324,6 @@ DefineAbility({
     "FavoredTerrain",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain (Desert)",
   Key="Favored Terrain ~ Desert",
@@ -41601,7 +40368,6 @@ DefineAbility({
     "FavoredTerrain",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain (Forest)",
   Key="Favored Terrain ~ Forest",
@@ -41646,7 +40412,6 @@ DefineAbility({
     "FavoredTerrain",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain (Jungle)",
   Key="Favored Terrain ~ Jungle",
@@ -41691,7 +40456,6 @@ DefineAbility({
     "FavoredTerrain",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain (Mountain)",
   Key="Favored Terrain ~ Mountain",
@@ -41736,7 +40500,6 @@ DefineAbility({
     "FavoredTerrain",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain (Plains)",
   Key="Favored Terrain ~ Plains",
@@ -41781,7 +40544,6 @@ DefineAbility({
     "FavoredTerrain",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain (Plane)",
   Key="Favored Terrain ~ Plane",
@@ -41826,7 +40588,6 @@ DefineAbility({
     "FavoredTerrain",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain (Swamp)",
   Key="Favored Terrain ~ Swamp",
@@ -41871,7 +40632,6 @@ DefineAbility({
     "FavoredTerrain",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain (Underground)",
   Key="Favored Terrain ~ Underground",
@@ -41916,7 +40676,6 @@ DefineAbility({
     "FavoredTerrain",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain (Urban)",
   Key="Favored Terrain ~ Urban",
@@ -41961,7 +40720,6 @@ DefineAbility({
     "FavoredTerrain",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain (Water)",
   Key="Favored Terrain ~ Water",
@@ -42006,7 +40764,6 @@ DefineAbility({
     "FavoredTerrain",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain Bonus (Cold)",
   Key="Favored Terrain Bonus ~ Cold",
@@ -42038,7 +40795,6 @@ DefineAbility({
     "FavoredTerrainBonus",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain Bonus (Desert)",
   Key="Favored Terrain Bonus ~ Desert",
@@ -42070,7 +40826,6 @@ DefineAbility({
     "FavoredTerrainBonus",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain Bonus (Forest)",
   Key="Favored Terrain Bonus ~ Forest",
@@ -42102,7 +40857,6 @@ DefineAbility({
     "FavoredTerrainBonus",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain Bonus (Jungle)",
   Key="Favored Terrain Bonus ~ Jungle",
@@ -42134,7 +40888,6 @@ DefineAbility({
     "FavoredTerrainBonus",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain Bonus (Mountain)",
   Key="Favored Terrain Bonus ~ Mountain",
@@ -42166,7 +40919,6 @@ DefineAbility({
     "FavoredTerrainBonus",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain Bonus (Plains)",
   Key="Favored Terrain Bonus ~ Plains",
@@ -42198,7 +40950,6 @@ DefineAbility({
     "FavoredTerrainBonus",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain Bonus (Plane)",
   Key="Favored Terrain Bonus ~ Plane",
@@ -42230,7 +40981,6 @@ DefineAbility({
     "FavoredTerrainBonus",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain Bonus (Swamp)",
   Key="Favored Terrain Bonus ~ Swamp",
@@ -42262,7 +41012,6 @@ DefineAbility({
     "FavoredTerrainBonus",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain Bonus (Underground)",
   Key="Favored Terrain Bonus ~ Underground",
@@ -42294,7 +41043,6 @@ DefineAbility({
     "FavoredTerrainBonus",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain Bonus (Urban)",
   Key="Favored Terrain Bonus ~ Urban",
@@ -42326,7 +41074,6 @@ DefineAbility({
     "FavoredTerrainBonus",
   },
 })
-
 DefineAbility({
   Name="Favored Terrain Bonus (Water)",
   Key="Favored Terrain Bonus ~ Water",
@@ -42358,7 +41105,6 @@ DefineAbility({
     "FavoredTerrainBonus",
   },
 })
-
 DefineAbility({
   Name="Sneak Attack",
   Key="Rogue ~ Sneak Attack",
@@ -42389,7 +41135,6 @@ DefineAbility({
     "Sneak Attack",
   },
 })
-
 DefineAbility({
   Name="Rogue Talents",
   Key="Rogue ~ Rogue Talents",
@@ -42416,7 +41161,6 @@ DefineAbility({
     "RogueClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Trapfinding",
   Key="Rogue ~ Trapfinding",
@@ -42475,7 +41219,6 @@ DefineAbility({
     "Trapfinding",
   },
 })
-
 DefineAbility({
   Name="Trap Sense",
   Key="Rogue ~ Trap Sense",
@@ -42511,7 +41254,6 @@ DefineAbility({
     "RogueClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Master Strike",
   Key="Rogue ~ Master Strike",
@@ -42546,7 +41288,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Evasion",
   Key="Rogue ~ Evasion",
@@ -42564,7 +41305,6 @@ DefineAbility({
     "RogueClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Uncanny Dodge",
   Key="Rogue ~ Uncanny Dodge",
@@ -42587,7 +41327,6 @@ DefineAbility({
     "Uncanny Dodge",
   },
 })
-
 DefineAbility({
   Name="Improved Uncanny Dodge",
   Key="Rogue ~ Improved Uncanny Dodge",
@@ -42598,7 +41337,6 @@ DefineAbility({
     "Improved Uncanny Dodge",
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -42628,7 +41366,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Rogue Archetype Support",
   Category="Internal",
@@ -42705,7 +41442,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Rogue ~ Uncanny Dodge Tracker",
   Category="Special Ability",
@@ -42713,7 +41449,6 @@ DefineAbility({
     "RogueClassFeatures",
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Uncanny Dodge Tracker",
   Category="Special Ability",
@@ -42739,7 +41474,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Uncanny Dodge Tracker",
   Category="Special Ability",
@@ -42761,7 +41495,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Uncanny Dodge Tracker",
   Category="Special Ability",
@@ -42783,7 +41516,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Rogue Talents",
   Category="Special Ability",
@@ -42805,7 +41537,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Rogue Talents",
   Category="Special Ability",
@@ -42827,7 +41558,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Rogue Talents",
   Category="Special Ability",
@@ -42849,7 +41579,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Rogue Talents",
   Category="Special Ability",
@@ -42871,7 +41600,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Rogue Talents",
   Category="Special Ability",
@@ -42893,7 +41621,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Rogue Talents",
   Category="Special Ability",
@@ -42915,7 +41642,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Rogue Talents",
   Category="Special Ability",
@@ -42937,7 +41663,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Rogue Talents",
   Category="Special Ability",
@@ -42959,7 +41684,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Rogue Talents",
   Category="Special Ability",
@@ -42981,7 +41705,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Rogue Talents",
   Category="Special Ability",
@@ -43003,7 +41726,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Rogue ~ Rogue Talents",
   Category="Special Ability",
@@ -43020,7 +41742,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Bleeding Attack",
   Key="Rogue Talent ~ Bleeding Attack",
@@ -43040,7 +41761,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Combat Trick",
   Key="Rogue Talent ~ Combat Trick",
@@ -43083,7 +41803,6 @@ DefineAbility({
     "RogueTalent",
   },
 })
-
 DefineAbility({
   Name="Fast Stealth",
   Key="Rogue Talent ~ Fast Stealth",
@@ -43099,7 +41818,6 @@ DefineAbility({
     "RogueTalent",
   },
 })
-
 DefineAbility({
   Name="Finesse Rogue",
   Key="Rogue Talent ~ Finesse Rogue",
@@ -43125,7 +41843,6 @@ DefineAbility({
     "RogueTalent",
   },
 })
-
 DefineAbility({
   Name="Ledge Walker",
   Key="Rogue Talent ~ Ledge Walker",
@@ -43141,7 +41858,6 @@ DefineAbility({
     "RogueTalent",
   },
 })
-
 DefineAbility({
   Name="Major Magic",
   Key="Rogue Talent ~ Major Magic",
@@ -43179,7 +41895,6 @@ DefineAbility({
     "RogueTalent",
   },
 })
-
 DefineAbility({
   Name="Minor Magic",
   Key="Rogue Talent ~ Minor Magic",
@@ -43221,7 +41936,6 @@ DefineAbility({
     "RogueTalent",
   },
 })
-
 DefineAbility({
   Name="Quick Disable",
   Key="Rogue Talent ~ Quick Disable",
@@ -43237,7 +41951,6 @@ DefineAbility({
     "RogueTalent",
   },
 })
-
 DefineAbility({
   Name="Resiliency",
   Key="Rogue Talent ~ Resiliency",
@@ -43283,7 +41996,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Rogue Crawl",
   Key="Rogue Talent ~ Rogue Crawl",
@@ -43299,7 +42011,6 @@ DefineAbility({
     "RogueTalent",
   },
 })
-
 DefineAbility({
   Name="Slow Reactions",
   Key="Rogue Talent ~ Slow Reactions",
@@ -43315,7 +42026,6 @@ DefineAbility({
     "RogueTalent",
   },
 })
-
 DefineAbility({
   Name="Stand Up",
   Key="Rogue Talent ~ Stand Up",
@@ -43331,7 +42041,6 @@ DefineAbility({
     "RogueTalent",
   },
 })
-
 DefineAbility({
   Name="Surprise Attack",
   Key="Rogue Talent ~ Surprise Attack",
@@ -43347,7 +42056,6 @@ DefineAbility({
     "RogueTalent",
   },
 })
-
 DefineAbility({
   Name="Trap Spotter",
   Key="Rogue Talent ~ Trap Spotter",
@@ -43375,7 +42083,6 @@ DefineAbility({
     "RogueTalent",
   },
 })
-
 DefineAbility({
   Name="Weapon Training",
   Key="Rogue Talent ~ Weapon Training",
@@ -43401,7 +42108,6 @@ DefineAbility({
     "RogueTalent",
   },
 })
-
 DefineAbility({
   Name="Advanced Talent",
   Key="Rogue Talent ~ Advanced Talent",
@@ -43440,7 +42146,6 @@ DefineAbility({
     "IncreaseRogueAdvancedTalent",
   },
 })
-
 DefineAbility({
   Name="Crippling Strike",
   Key="Rogue Talent ~ Crippling Strike",
@@ -43462,7 +42167,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Defensive Roll",
   Key="Rogue Talent ~ Defensive Roll",
@@ -43483,7 +42187,6 @@ DefineAbility({
     "RogueAdvancedTalent",
   },
 })
-
 DefineAbility({
   Name="Dispelling Attack",
   Key="Rogue Talent ~ Dispelling Attack",
@@ -43521,7 +42224,6 @@ DefineAbility({
     "RogueAdvancedTalent",
   },
 })
-
 DefineAbility({
   Name="Improved Evasion",
   Key="Rogue Talent ~ Improved Evasion",
@@ -43552,7 +42254,6 @@ DefineAbility({
     "RogueAdvancedTalent",
   },
 })
-
 DefineAbility({
   Name="Opportunist",
   Key="Rogue Talent ~ Opportunist",
@@ -43573,7 +42274,6 @@ DefineAbility({
     "RogueAdvancedTalent",
   },
 })
-
 DefineAbility({
   Name="Skill Mastery",
   Key="Rogue Talent ~ Skill Mastery",
@@ -43601,7 +42301,6 @@ DefineAbility({
     "RogueAdvancedTalent",
   },
 })
-
 DefineAbility({
   Name="Slippery Mind",
   Key="Rogue Talent ~ Slippery Mind",
@@ -43648,7 +42347,6 @@ DefineAbility({
     "RogueAdvancedTalent",
   },
 })
-
 DefineAbility({
   Name="Feat",
   Key="Rogue Talent ~ Feat",
@@ -43676,7 +42374,6 @@ DefineAbility({
     "RogueAdvancedTalent",
   },
 })
-
 DefineAbility({
   Name="Regular Talent",
   Key="Rogue Talent ~ Regular Talent",
@@ -43703,7 +42400,6 @@ DefineAbility({
     "RogueAdvancedTalent",
   },
 })
-
 DefineAbility({
   Name="Class Skills",
   Key="Sorcerer ~ Class Skills",
@@ -43727,7 +42423,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Sorcerer ~ Weapon and Armor Proficiency",
@@ -43752,7 +42447,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Spells",
   Key="Sorcerer ~ Spells",
@@ -43779,7 +42473,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Bloodline",
   Key="Sorcerer ~ Standard Bloodline",
@@ -43822,7 +42515,6 @@ DefineAbility({
     "Bloodline",
   },
 })
-
 DefineAbility({
   Name="Cantrips",
   Key="Sorcerer ~ Cantrips",
@@ -43837,7 +42529,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Eschew Materials",
   Key="Sorcerer ~ Eschew Materials",
@@ -43861,12 +42552,10 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
@@ -43883,7 +42572,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
@@ -43900,7 +42588,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
@@ -43917,7 +42604,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
@@ -43934,7 +42620,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
@@ -43951,7 +42636,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
@@ -43968,7 +42652,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
@@ -43990,7 +42673,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
@@ -44012,7 +42694,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
@@ -44034,1457 +42715,1166 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Bloodline Tracker",
   Category="Internal",
 })
-
 DefineAbility({
   Name="Acrobatic Steps",
   Key="Sorcerer Bloodline Feat ~ Acrobatic Steps",
@@ -45538,7 +43928,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Agile Maneuvers",
   Key="Sorcerer Bloodline Feat ~ Agile Maneuvers",
@@ -45570,7 +43959,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Alertness",
   Key="Sorcerer Bloodline Feat ~ Alertness",
@@ -45602,7 +43990,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Arcane Armor Mastery",
   Key="Sorcerer Bloodline Feat ~ Arcane Armor Mastery",
@@ -45678,7 +44065,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Arcane Armor Training",
   Key="Sorcerer Bloodline Feat ~ Arcane Armor Training",
@@ -45749,7 +44135,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Arcane Strike",
   Key="Sorcerer Bloodline Feat ~ Arcane Strike",
@@ -45820,7 +44205,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Armor Proficiency (Light)",
   Key="Sorcerer Bloodline Feat ~ Armor Proficiency (Light)",
@@ -45852,7 +44236,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Augment Summoning",
   Key="Sorcerer Bloodline Feat ~ Augment Summoning",
@@ -45889,7 +44272,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Blind-Fight",
   Key="Sorcerer Bloodline Feat ~ Blind-Fight",
@@ -45921,7 +44303,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Cleave",
   Key="Sorcerer Bloodline Feat ~ Cleave",
@@ -45964,7 +44345,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Combat Casting",
   Key="Sorcerer Bloodline Feat ~ Combat Casting",
@@ -45996,7 +44376,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Combat Expertise",
   Key="Sorcerer Bloodline Feat ~ Combat Expertise",
@@ -46049,7 +44428,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Combat Reflexes",
   Key="Sorcerer Bloodline Feat ~ Combat Reflexes",
@@ -46084,7 +44462,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Craft Rod",
   Key="Sorcerer Bloodline Feat ~ Craft Rod",
@@ -46136,7 +44513,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Craft Staff",
   Key="Sorcerer Bloodline Feat ~ Craft Staff",
@@ -46188,7 +44564,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Craft Wondrous Item",
   Key="Sorcerer Bloodline Feat ~ Craft Wondrous Item",
@@ -46254,7 +44629,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Deadly Aim",
   Key="Sorcerer Bloodline Feat ~ Deadly Aim",
@@ -46310,7 +44684,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Deceitful",
   Key="Sorcerer Bloodline Feat ~ Deceitful",
@@ -46342,7 +44715,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Defensive Combat Training",
   Key="Sorcerer Bloodline Feat ~ Defensive Combat Training",
@@ -46374,7 +44746,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Deft Hands",
   Key="Sorcerer Bloodline Feat ~ Deft Hands",
@@ -46406,7 +44777,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Diehard",
   Key="Sorcerer Bloodline Feat ~ Diehard",
@@ -46443,7 +44813,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Dodge",
   Key="Sorcerer Bloodline Feat ~ Dodge",
@@ -46492,7 +44861,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Empower Spell",
   Key="Sorcerer Bloodline Feat ~ Empower Spell",
@@ -46524,7 +44892,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Endurance",
   Key="Sorcerer Bloodline Feat ~ Endurance",
@@ -46559,7 +44926,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Enlarge Spell",
   Key="Sorcerer Bloodline Feat ~ Enlarge Spell",
@@ -46591,7 +44957,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Extend Spell",
   Key="Sorcerer Bloodline Feat ~ Extend Spell",
@@ -46623,7 +44988,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Far Shot",
   Key="Sorcerer Bloodline Feat ~ Far Shot",
@@ -46660,7 +45024,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Fleet",
   Key="Sorcerer Bloodline Feat ~ Fleet",
@@ -46697,7 +45060,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Forge Ring",
   Key="Sorcerer Bloodline Feat ~ Forge Ring",
@@ -46749,7 +45111,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Great Fortitude",
   Key="Sorcerer Bloodline Feat ~ Great Fortitude",
@@ -46781,7 +45142,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Greater Spell Focus (Enchantment)",
   Key="Sorcerer Bloodline Feat ~ Greater Spell Focus (Enchantment)",
@@ -46818,7 +45178,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Heighten Spell",
   Key="Sorcerer Bloodline Feat ~ Heighten Spell",
@@ -46849,7 +45208,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Improved Bull Rush",
   Key="Sorcerer Bloodline Feat ~ Improved Bull Rush",
@@ -46892,7 +45250,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Improved Counterspell",
   Key="Sorcerer Bloodline Feat ~ Improved Counterspell",
@@ -46924,7 +45281,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Improved Disarm",
   Key="Sorcerer Bloodline Feat ~ Improved Disarm",
@@ -46978,7 +45334,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Improved Feint",
   Key="Sorcerer Bloodline Feat ~ Improved Feint",
@@ -47027,7 +45382,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Improved Grapple",
   Key="Sorcerer Bloodline Feat ~ Improved Grapple",
@@ -47081,7 +45435,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Improved Great Fortitude",
   Key="Sorcerer Bloodline Feat ~ Improved Great Fortitude",
@@ -47118,7 +45471,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Improved Initiative",
   Key="Sorcerer Bloodline Feat ~ Improved Initiative",
@@ -47150,7 +45502,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Improved Iron Will",
   Key="Sorcerer Bloodline Feat ~ Improved Iron Will",
@@ -47187,7 +45538,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Improved Overrun",
   Key="Sorcerer Bloodline Feat ~ Improved Overrun",
@@ -47230,7 +45580,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Improved Sunder",
   Key="Sorcerer Bloodline Feat ~ Improved Sunder",
@@ -47273,7 +45622,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Improved Unarmed Strike",
   Key="Sorcerer Bloodline Feat ~ Improved Unarmed Strike",
@@ -47305,7 +45653,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Intimidating Prowess",
   Key="Sorcerer Bloodline Feat ~ Intimidating Prowess",
@@ -47337,7 +45684,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Iron Will",
   Key="Sorcerer Bloodline Feat ~ Iron Will",
@@ -47369,7 +45715,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Leadership",
   Key="Sorcerer Bloodline Feat ~ Leadership",
@@ -47404,7 +45749,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Lightning Reflexes",
   Key="Sorcerer Bloodline Feat ~ Lightning Reflexes",
@@ -47436,7 +45780,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Magical Aptitude",
   Key="Sorcerer Bloodline Feat ~ Magical Aptitude",
@@ -47468,7 +45811,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Martial Weapon Proficiency",
   Key="Sorcerer Bloodline Feat ~ Martial Weapon Proficiency",
@@ -47511,7 +45853,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Maximize Spell",
   Key="Sorcerer Bloodline Feat ~ Maximize Spell",
@@ -47543,7 +45884,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Mobility",
   Key="Sorcerer Bloodline Feat ~ Mobility",
@@ -47597,7 +45937,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Mounted Combat",
   Key="Sorcerer Bloodline Feat ~ Mounted Combat",
@@ -47632,7 +45971,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Nimble Moves",
   Key="Sorcerer Bloodline Feat ~ Nimble Moves",
@@ -47681,7 +46019,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Persuasive",
   Key="Sorcerer Bloodline Feat ~ Persuasive",
@@ -47713,7 +46050,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Point-Blank Shot",
   Key="Sorcerer Bloodline Feat ~ Point-Blank Shot",
@@ -47745,7 +46081,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Power Attack",
   Key="Sorcerer Bloodline Feat ~ Power Attack",
@@ -47787,7 +46122,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Precise Shot",
   Key="Sorcerer Bloodline Feat ~ Precise Shot",
@@ -47824,7 +46158,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Quick Draw",
   Key="Sorcerer Bloodline Feat ~ Quick Draw",
@@ -47859,7 +46192,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Quicken Spell",
   Key="Sorcerer Bloodline Feat ~ Quicken Spell",
@@ -47891,7 +46223,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Ride-By Attack",
   Key="Sorcerer Bloodline Feat ~ Ride-By Attack",
@@ -47931,7 +46262,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Scribe Scroll",
   Key="Sorcerer Bloodline Feat ~ Scribe Scroll",
@@ -47983,7 +46313,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Silent Spell",
   Key="Sorcerer Bloodline Feat ~ Silent Spell",
@@ -48015,7 +46344,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Acrobatics)",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Acrobatics)",
@@ -48047,7 +46375,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Bluff)",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Bluff)",
@@ -48079,7 +46406,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Craft)",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Craft)",
@@ -48118,7 +46444,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Fly)",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Fly)",
@@ -48150,7 +46475,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Intimidate)",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Intimidate)",
@@ -48182,7 +46506,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Knowledge [Arcana])",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Knowledge (Arcana))",
@@ -48214,7 +46537,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Knowledge [Dungeoneering])",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Knowledge (Dungeoneering))",
@@ -48246,7 +46568,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Knowledge [Engineering])",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Knowledge (Engineering))",
@@ -48278,7 +46599,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Knowledge [History])",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Knowledge (History))",
@@ -48310,7 +46630,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Knowledge [Nature])",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Knowledge (Nature))",
@@ -48342,7 +46661,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Knowledge [Planes])",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Knowledge (Planes))",
@@ -48374,7 +46692,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Knowledge [Religion])",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Knowledge (Religion))",
@@ -48406,7 +46723,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Perception)",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Perception)",
@@ -48438,7 +46754,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Perform)",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Perform)",
@@ -48477,7 +46792,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Sense Motive)",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Sense Motive)",
@@ -48509,7 +46823,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Stealth)",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Stealth)",
@@ -48541,7 +46854,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Skill Focus (Swim)",
   Key="Sorcerer Bloodline Feat ~ Skill Focus (Swim)",
@@ -48573,7 +46885,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Spell Focus",
   Key="Sorcerer Bloodline Feat ~ Spell Focus",
@@ -48605,7 +46916,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Spell Focus (Enchantment)",
   Key="Sorcerer Bloodline Feat ~ Spell Focus (Enchantment)",
@@ -48637,7 +46947,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Spell Focus (Necromancy)",
   Key="Sorcerer Bloodline Feat ~ Spell Focus (Necromancy)",
@@ -48669,7 +46978,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Spell Penetration",
   Key="Sorcerer Bloodline Feat ~ Spell Penetration",
@@ -48701,7 +47009,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Stealthy",
   Key="Sorcerer Bloodline Feat ~ Stealthy",
@@ -48733,7 +47040,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Still Spell",
   Key="Sorcerer Bloodline Feat ~ Still Spell",
@@ -48765,7 +47071,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Toughness",
   Key="Sorcerer Bloodline Feat ~ Toughness",
@@ -48808,7 +47113,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Weapon Finesse",
   Key="Sorcerer Bloodline Feat ~ Weapon Finesse",
@@ -48840,7 +47144,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Weapon Focus",
   Key="Sorcerer Bloodline Feat ~ Weapon Focus",
@@ -48875,7 +47178,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Widen Spell",
   Key="Sorcerer Bloodline Feat ~ Widen Spell",
@@ -48907,7 +47209,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Wind Stance",
   Key="Sorcerer Bloodline Feat ~ Wind Stance",
@@ -48964,7 +47265,6 @@ DefineAbility({
     "Sorcerer Bloodline Feat",
   },
 })
-
 DefineAbility({
   Name="Alarm",
   Key="Sorcerer Bonus Spell L1 ~ Alarm",
@@ -48995,7 +47295,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Animate Dead",
   Key="Sorcerer Bonus Spell L4 ~ Animate Dead",
@@ -49026,7 +47325,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Animate Objects",
   Key="Sorcerer Bonus Spell L6 ~ Animate Objects",
@@ -49057,7 +47355,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Animate Plants",
   Key="Sorcerer Bonus Spell L8 ~ Animate Plants",
@@ -49088,7 +47385,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Astral Projection",
   Key="Sorcerer Bonus Spell L9 ~ Astral Projection",
@@ -49119,7 +47415,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Augury",
   Key="Sorcerer Bonus Spell L2 ~ Augury",
@@ -49150,7 +47445,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Banishment",
   Key="Sorcerer Bonus Spell L7 ~ Banishment",
@@ -49181,7 +47475,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Barkskin",
   Key="Sorcerer Bonus Spell L2 ~ Barkskin",
@@ -49212,7 +47505,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Beast Shape IV",
   Key="Sorcerer Bonus Spell L6 ~ Beast Shape IV",
@@ -49243,7 +47535,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Bestow Curse",
   Key="Sorcerer Bonus Spell L4 ~ Bestow Curse",
@@ -49274,7 +47565,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Black Tentacles",
   Key="Sorcerer Bonus Spell L4 ~ Black Tentacles",
@@ -49305,7 +47595,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Bless",
   Key="Sorcerer Bonus Spell L1 ~ Bless",
@@ -49336,7 +47625,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Blight",
   Key="Sorcerer Bonus Spell L5 ~ Blight",
@@ -49367,7 +47655,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Blink",
   Key="Sorcerer Bonus Spell L3 ~ Blink",
@@ -49398,7 +47685,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Blur",
   Key="Sorcerer Bonus Spell L2 ~ Blur",
@@ -49429,7 +47715,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Break Enchantment",
   Key="Sorcerer Bonus Spell L5 ~ Break Enchantment",
@@ -49460,7 +47745,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Bull's Strength",
   Key="Sorcerer Bonus Spell L2 ~ Bull's Strength",
@@ -49491,7 +47775,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Burning Hands",
   Key="Sorcerer Bonus Spell L1 ~ Burning Hands",
@@ -49522,7 +47805,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Burning Hands (Acid)",
   Key="Sorcerer Bonus Spell L1 ~ Burning Hands (Acid)",
@@ -49553,7 +47835,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Burning Hands (Cold)",
   Key="Sorcerer Bonus Spell L1 ~ Burning Hands (Cold)",
@@ -49584,7 +47865,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Burning Hands (Electricity)",
   Key="Sorcerer Bonus Spell L1 ~ Burning Hands (Electricity)",
@@ -49615,7 +47895,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Cause Fear",
   Key="Sorcerer Bonus Spell L1 ~ Cause Fear",
@@ -49646,7 +47925,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Chain Lightning",
   Key="Sorcerer Bonus Spell L6 ~ Chain Lightning",
@@ -49677,7 +47955,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Charm Monster",
   Key="Sorcerer Bonus Spell L4 ~ Charm Monster",
@@ -49708,7 +47985,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Chill Touch",
   Key="Sorcerer Bonus Spell L1 ~ Chill Touch",
@@ -49739,7 +48015,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Circle of Death",
   Key="Sorcerer Bonus Spell L6 ~ Circle of Death",
@@ -49770,7 +48045,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Cloudkill",
   Key="Sorcerer Bonus Spell L5 ~ Cloudkill",
@@ -49801,7 +48075,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Command (Greater)",
   Key="Sorcerer Bonus Spell L5 ~ Command (Greater)",
@@ -49832,7 +48105,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Command Plants",
   Key="Sorcerer Bonus Spell L4 ~ Command Plants",
@@ -49863,7 +48135,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Cone of Cold",
   Key="Sorcerer Bonus Spell L5 ~ Cone of Cold",
@@ -49894,7 +48165,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Confusion",
   Key="Sorcerer Bonus Spell L4 ~ Confusion",
@@ -49925,7 +48195,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Confusion, Lesser",
   Key="Sorcerer Bonus Spell L1 ~ Confusion (Lesser)",
@@ -49956,7 +48225,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Contagion",
   Key="Sorcerer Bonus Spell L4 ~ Contagion",
@@ -49987,7 +48255,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Control Undead",
   Key="Sorcerer Bonus Spell L7 ~ Control Undead",
@@ -50018,7 +48285,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Control Water",
   Key="Sorcerer Bonus Spell L5 ~ Control Water",
@@ -50049,7 +48315,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Control Weather",
   Key="Sorcerer Bonus Spell L7 ~ Control Weather",
@@ -50080,7 +48345,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Darkvision",
   Key="Sorcerer Bonus Spell L2 ~ Darkvision",
@@ -50111,7 +48375,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Deep Slumber",
   Key="Sorcerer Bonus Spell L3 ~ Deep Slumber",
@@ -50142,7 +48405,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Deeper Darkness",
   Key="Sorcerer Bonus Spell L3 ~ Deeper Darkness",
@@ -50173,7 +48435,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Delay Poison",
   Key="Sorcerer Bonus Spell L2 ~ Delay Poison",
@@ -50204,7 +48465,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Delayed Blast Fireball",
   Key="Sorcerer Bonus Spell L7 ~ Delayed Blast Fireball",
@@ -50235,7 +48495,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Dimension Door",
   Key="Sorcerer Bonus Spell L4 ~ Dimension Door",
@@ -50266,7 +48525,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Dimensional Lock",
   Key="Sorcerer Bonus Spell L8 ~ Dimensional Lock",
@@ -50297,7 +48555,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Disguise Self",
   Key="Sorcerer Bonus Spell L1 ~ Disguise Self",
@@ -50328,7 +48585,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Disintegrate",
   Key="Sorcerer Bonus Spell L6 ~ Disintegrate",
@@ -50359,7 +48615,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Dismissal",
   Key="Sorcerer Bonus Spell L5 ~ Dismissal",
@@ -50390,7 +48645,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Dispel Magic",
   Key="Sorcerer Bonus Spell L3 ~ Dispel Magic",
@@ -50421,7 +48675,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Dispel Magic, Greater",
   Key="Sorcerer Bonus Spell L6 ~ Dispel Magic (Greater)",
@@ -50452,7 +48705,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Divination",
   Key="Sorcerer Bonus Spell L4 ~ Divination",
@@ -50483,7 +48735,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Dominate Monster",
   Key="Sorcerer Bonus Spell L9 ~ Dominate Monster",
@@ -50514,7 +48765,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Dominate Person",
   Key="Sorcerer Bonus Spell L5 ~ Dominate Person",
@@ -50545,7 +48795,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Dream",
   Key="Sorcerer Bonus Spell L5 ~ Dream",
@@ -50576,7 +48825,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Eagle's Splendor",
   Key="Sorcerer Bonus Spell L2 ~ Eagle's Splendor",
@@ -50607,7 +48855,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Earthquake",
   Key="Sorcerer Bonus Spell L8 ~ Earthquake",
@@ -50638,7 +48885,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Elemental Body I",
   Key="Sorcerer Bonus Spell L4 ~ Elemental Body I",
@@ -50669,7 +48915,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Elemental Body II",
   Key="Sorcerer Bonus Spell L5 ~ Elemental Body II",
@@ -50700,7 +48945,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Elemental Body III",
   Key="Sorcerer Bonus Spell L6 ~ Elemental Body III",
@@ -50731,7 +48975,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Elemental Body IV",
   Key="Sorcerer Bonus Spell L7 ~ Elemental Body IV",
@@ -50762,7 +49005,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Elemental Swarm",
   Key="Sorcerer Bonus Spell L9 ~ Elemental Swarm",
@@ -50793,7 +49035,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Endure Elements",
   Key="Sorcerer Bonus Spell L1 ~ Endure Elements",
@@ -50824,7 +49065,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Energy Drain",
   Key="Sorcerer Bonus Spell L9 ~ Energy Drain",
@@ -50855,7 +49095,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Enlarge Person",
   Key="Sorcerer Bonus Spell L1 ~ Enlarge Person",
@@ -50886,7 +49125,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Entangle",
   Key="Sorcerer Bonus Spell L1 ~ Entangle",
@@ -50917,7 +49155,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Entropic Shield",
   Key="Sorcerer Bonus Spell L1 ~ Entropic Shield",
@@ -50948,7 +49185,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Ethereal Jaunt",
   Key="Sorcerer Bonus Spell L6 ~ Ethereal Jaunt",
@@ -50979,7 +49215,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Etherealness",
   Key="Sorcerer Bonus Spell L9 ~ Etherealness",
@@ -51010,7 +49245,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Explosive Runes",
   Key="Sorcerer Bonus Spell L3 ~ Explosive Runes",
@@ -51041,7 +49275,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Eyebite",
   Key="Sorcerer Bonus Spell L6 ~ Eyebite",
@@ -51072,7 +49305,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Fabricate",
   Key="Sorcerer Bonus Spell L5 ~ Fabricate",
@@ -51103,7 +49335,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="False Life",
   Key="Sorcerer Bonus Spell L2 ~ False Life",
@@ -51134,7 +49365,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Fear",
   Key="Sorcerer Bonus Spell L4 ~ Fear",
@@ -51165,7 +49395,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Feeblemind",
   Key="Sorcerer Bonus Spell L5 ~ Feeblemind",
@@ -51196,7 +49425,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Finger of Death",
   Key="Sorcerer Bonus Spell L7 ~ Finger of Death",
@@ -51227,7 +49455,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Fire Shield (warm)",
   Key="Sorcerer Bonus Spell L4 ~ Fire Shield (warm)",
@@ -51258,7 +49485,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Fireball",
   Key="Sorcerer Bonus Spell L3 ~ Fireball",
@@ -51289,7 +49515,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Flame Strike",
   Key="Sorcerer Bonus Spell L5 ~ Flame Strike",
@@ -51320,7 +49545,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Fly",
   Key="Sorcerer Bonus Spell L3 ~ Fly",
@@ -51351,7 +49575,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Foresight",
   Key="Sorcerer Bonus Spell L9 ~ Foresight",
@@ -51382,7 +49605,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Form of the Dragon I",
   Key="Sorcerer Bonus Spell L6 ~ Form of the Dragon I",
@@ -51413,7 +49635,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Form of the Dragon II",
   Key="Sorcerer Bonus Spell L7 ~ Form of the Dragon II",
@@ -51444,7 +49665,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Form of the Dragon III",
   Key="Sorcerer Bonus Spell L8 ~ Form of the Dragon III",
@@ -51475,7 +49695,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Freedom of Movement",
   Key="Sorcerer Bonus Spell L4 ~ Freedom of Movement",
@@ -51506,7 +49725,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Gaseous Form",
   Key="Sorcerer Bonus Spell L3 ~ Gaseous Form",
@@ -51537,7 +49755,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Gate",
   Key="Sorcerer Bonus Spell L9 ~ Gate",
@@ -51568,7 +49785,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Giant Form I",
   Key="Sorcerer Bonus Spell L7 ~ Giant Form I",
@@ -51599,7 +49815,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Giant Form II",
   Key="Sorcerer Bonus Spell L8 ~ Giant Form II",
@@ -51630,7 +49845,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Glitterdust",
   Key="Sorcerer Bonus Spell L2 ~ Glitterdust",
@@ -51661,7 +49875,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Guards and Wards",
   Key="Sorcerer Bonus Spell L6 ~ Guards and Wards",
@@ -51692,7 +49905,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Gust of Wind",
   Key="Sorcerer Bonus Spell L2 ~ Gust of Wind",
@@ -51723,7 +49935,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Heroism",
   Key="Sorcerer Bonus Spell L3 ~ Heroism",
@@ -51754,7 +49965,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Heroism, Greater",
   Key="Sorcerer Bonus Spell L6 ~ Heroism (Greater)",
@@ -51785,7 +49995,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Hideous Laughter",
   Key="Sorcerer Bonus Spell L2 ~ Hideous Laughter",
@@ -51816,7 +50025,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Hold Monster",
   Key="Sorcerer Bonus Spell L5 ~ Hold Monster",
@@ -51847,7 +50055,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Horrid Wilting",
   Key="Sorcerer Bonus Spell L8 ~ Horrid Wilting",
@@ -51878,7 +50085,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Hypnotism",
   Key="Sorcerer Bonus Spell L1 ~ Hypnotism",
@@ -51909,7 +50115,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Identify",
   Key="Sorcerer Bonus Spell L1 ~ Identify",
@@ -51940,7 +50145,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Imprisonment",
   Key="Sorcerer Bonus Spell L9 ~ Imprisonment",
@@ -51971,7 +50175,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Insanity",
   Key="Sorcerer Bonus Spell L7 ~ Insanity",
@@ -52002,7 +50205,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Insect Plague",
   Key="Sorcerer Bonus Spell L5 ~ Insect Plague",
@@ -52033,7 +50235,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Invisibility",
   Key="Sorcerer Bonus Spell L2 ~ Invisibility",
@@ -52064,7 +50265,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Iron Body",
   Key="Sorcerer Bonus Spell L8 ~ Iron Body",
@@ -52095,7 +50295,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Irresistible Dance",
   Key="Sorcerer Bonus Spell L8 ~ Irresistible Dance",
@@ -52126,7 +50325,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Lightning Bolt",
   Key="Sorcerer Bonus Spell L3 ~ Lightning Bolt",
@@ -52157,7 +50355,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Mage Armor",
   Key="Sorcerer Bonus Spell L1 ~ Mage Armor",
@@ -52188,7 +50385,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Magic Circle against Evil",
   Key="Sorcerer Bonus Spell L3 ~ Magic Circle against Evil",
@@ -52219,7 +50415,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Magic Vestment",
   Key="Sorcerer Bonus Spell L3 ~ Magic Vestment",
@@ -52250,7 +50445,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Magic Weapon",
   Key="Sorcerer Bonus Spell L1 ~ Magic Weapon",
@@ -52281,7 +50475,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Magic Weapon, Greater",
   Key="Sorcerer Bonus Spell L3 ~ Magic Weapon (Greater)",
@@ -52312,7 +50505,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Major Creation",
   Key="Sorcerer Bonus Spell L5 ~ Major Creation",
@@ -52343,7 +50535,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Make Whole",
   Key="Sorcerer Bonus Spell L2 ~ Make Whole",
@@ -52374,7 +50565,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Meteor Swarm",
   Key="Sorcerer Bonus Spell L9 ~ Meteor Swarm",
@@ -52405,7 +50595,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Mind Blank",
   Key="Sorcerer Bonus Spell L8 ~ Mind Blank",
@@ -52436,7 +50625,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Minor Creation",
   Key="Sorcerer Bonus Spell L4 ~ Minor Creation",
@@ -52467,7 +50655,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Mislead",
   Key="Sorcerer Bonus Spell L6 ~ Mislead",
@@ -52498,7 +50685,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Moment of Prescience",
   Key="Sorcerer Bonus Spell L8 ~ Moment of Prescience",
@@ -52529,7 +50715,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Move Earth",
   Key="Sorcerer Bonus Spell L6 ~ Move Earth",
@@ -52560,7 +50745,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Obscuring Mist",
   Key="Sorcerer Bonus Spell L1 ~ Obscuring Mist",
@@ -52591,7 +50775,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Overland Flight",
   Key="Sorcerer Bonus Spell L5 ~ Overland Flight",
@@ -52622,7 +50805,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Persistent Image",
   Key="Sorcerer Bonus Spell L5 ~ Persistent Image",
@@ -52653,7 +50835,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Phase Door",
   Key="Sorcerer Bonus Spell L7 ~ Phase Door",
@@ -52684,7 +50865,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Planar Binding",
   Key="Sorcerer Bonus Spell L6 ~ Planar Binding",
@@ -52715,7 +50895,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Planar Binding (Devils and Fiendish Creatures Only)",
   Key="Sorcerer Bonus Spell L6 ~ Planar Binding (Devils and Fiendish Creatures Only)",
@@ -52746,7 +50925,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Planar Binding, Greater",
   Key="Sorcerer Bonus Spell L8 ~ Planar Binding (Greater)",
@@ -52777,7 +50955,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Plane Shift",
   Key="Sorcerer Bonus Spell L7 ~ Plane Shift",
@@ -52808,7 +50985,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Plant Shape III",
   Key="Sorcerer Bonus Spell L7 ~ Plant Shape III",
@@ -52839,7 +51015,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Poison",
   Key="Sorcerer Bonus Spell L4 ~ Poison",
@@ -52870,7 +51045,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Polar Ray",
   Key="Sorcerer Bonus Spell L8 ~ Polar Ray",
@@ -52901,7 +51075,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Polymorph Any Object",
   Key="Sorcerer Bonus Spell L8 ~ Polymorph Any Object",
@@ -52932,7 +51105,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Polymorph, Greater",
   Key="Sorcerer Bonus Spell L7 ~ Polymorph (Greater)",
@@ -52963,7 +51135,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Power Word Blind",
   Key="Sorcerer Bonus Spell L7 ~ Power Word Blind",
@@ -52994,7 +51165,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Power Word Stun",
   Key="Sorcerer Bonus Spell L8 ~ Power Word Stun",
@@ -53025,7 +51195,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Protection from Energy",
   Key="Sorcerer Bonus Spell L3 ~ Protection from Energy",
@@ -53056,7 +51225,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Protection from Good",
   Key="Sorcerer Bonus Spell L1 ~ Protection from Good",
@@ -53087,7 +51255,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Prying Eyes, Greater",
   Key="Sorcerer Bonus Spell L8 ~ Prying Eyes (Greater)",
@@ -53118,7 +51285,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Rage",
   Key="Sorcerer Bonus Spell L3 ~ Rage",
@@ -53149,7 +51315,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Ray of Enfeeblement",
   Key="Sorcerer Bonus Spell L1 ~ Ray of Enfeeblement",
@@ -53180,7 +51345,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Ray of Exhaustion",
   Key="Sorcerer Bonus Spell L3 ~ Ray of Exhaustion",
@@ -53211,7 +51375,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Remove Curse",
   Key="Sorcerer Bonus Spell L4 ~ Remove Curse",
@@ -53242,7 +51405,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Repel Metal or Stone",
   Key="Sorcerer Bonus Spell L7 ~ Repel Metal or Stone",
@@ -53273,7 +51435,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Repulsion",
   Key="Sorcerer Bonus Spell L6 ~ Repulsion",
@@ -53304,7 +51465,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Resist Energy",
   Key="Sorcerer Bonus Spell L2 ~ Resist Energy",
@@ -53335,7 +51495,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Reverse Gravity",
   Key="Sorcerer Bonus Spell L7 ~ Reverse Gravity",
@@ -53366,7 +51525,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Scorching Ray",
   Key="Sorcerer Bonus Spell L2 ~ Scorching Ray",
@@ -53397,7 +51555,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Scorching Ray (Acid)",
   Key="Sorcerer Bonus Spell L2 ~ Scorching Ray (Acid)",
@@ -53428,7 +51585,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Scorching Ray (Cold)",
   Key="Sorcerer Bonus Spell L2 ~ Scorching Ray (Cold)",
@@ -53459,7 +51615,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Scorching Ray (Electricity)",
   Key="Sorcerer Bonus Spell L2 ~ Scorching Ray (Electricity)",
@@ -53490,7 +51645,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="See Invisibility",
   Key="Sorcerer Bonus Spell L2 ~ See Invisibility",
@@ -53521,7 +51675,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Shades",
   Key="Sorcerer Bonus Spell L9 ~ Shades",
@@ -53552,7 +51705,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Shadow Conjuration",
   Key="Sorcerer Bonus Spell L4 ~ Shadow Conjuration",
@@ -53583,7 +51735,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Shadow Evocation",
   Key="Sorcerer Bonus Spell L5 ~ Shadow Evocation",
@@ -53614,7 +51765,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Shadow Evocation, Greater",
   Key="Sorcerer Bonus Spell L8 ~ Shadow Evocation (Greater)",
@@ -53645,7 +51795,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Shadow Walk",
   Key="Sorcerer Bonus Spell L6 ~ Shadow Walk",
@@ -53676,7 +51825,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Shambler",
   Key="Sorcerer Bonus Spell L9 ~ Shambler",
@@ -53707,7 +51855,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Shapechange",
   Key="Sorcerer Bonus Spell L9 ~ Shapechange",
@@ -53738,7 +51885,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Shocking Grasp",
   Key="Sorcerer Bonus Spell L1 ~ Shocking Grasp",
@@ -53769,7 +51915,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Shout",
   Key="Sorcerer Bonus Spell L4 ~ Shout",
@@ -53800,7 +51945,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Shout, Greater",
   Key="Sorcerer Bonus Spell L8 ~ Shout (Greater)",
@@ -53831,7 +51975,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Shrink Item",
   Key="Sorcerer Bonus Spell L3 ~ Shrink Item",
@@ -53862,7 +52005,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Sleep",
   Key="Sorcerer Bonus Spell L1 ~ Sleep",
@@ -53893,7 +52035,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Soul Bind",
   Key="Sorcerer Bonus Spell L9 ~ Soul Bind",
@@ -53924,7 +52065,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Speak with Plants",
   Key="Sorcerer Bonus Spell L3 ~ Speak with Plants",
@@ -53955,7 +52095,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Spell Resistance",
   Key="Sorcerer Bonus Spell L5 ~ Spell Resistance",
@@ -53986,7 +52125,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Spell Turning",
   Key="Sorcerer Bonus Spell L7 ~ Spell Turning",
@@ -54017,7 +52155,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Spike Stones",
   Key="Sorcerer Bonus Spell L5 ~ Spike Stones",
@@ -54048,7 +52185,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Stone Tell",
   Key="Sorcerer Bonus Spell L6 ~ Stone Tell",
@@ -54079,7 +52215,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Stoneskin",
   Key="Sorcerer Bonus Spell L4 ~ Stoneskin",
@@ -54110,7 +52245,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Storm of Vengeance",
   Key="Sorcerer Bonus Spell L9 ~ Storm of Vengeance",
@@ -54141,7 +52275,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Suggestion",
   Key="Sorcerer Bonus Spell L3 ~ Suggestion",
@@ -54172,7 +52305,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Suggestion, Mass",
   Key="Sorcerer Bonus Spell L6 ~ Suggestion (Mass)",
@@ -54203,7 +52335,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Summon Monster IX",
   Key="Sorcerer Bonus Spell L9 ~ Summon Monster IX",
@@ -54234,7 +52365,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Summon Monster VII",
   Key="Sorcerer Bonus Spell L7 ~ Summon Monster VII",
@@ -54265,7 +52395,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Summon Monster VIII (Elementals Only)",
   Key="Sorcerer Bonus Spell L8 ~ Summon Monster VIII (Elementals Only)",
@@ -54296,7 +52425,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Sunburst",
   Key="Sorcerer Bonus Spell L8 ~ Sunburst",
@@ -54327,7 +52455,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Teleport, Greater",
   Key="Sorcerer Bonus Spell L7 ~ Teleport (Greater)",
@@ -54358,7 +52485,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Tongues",
   Key="Sorcerer Bonus Spell L3 ~ Tongues",
@@ -54389,7 +52515,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Touch of Idiocy",
   Key="Sorcerer Bonus Spell L2 ~ Touch of Idiocy",
@@ -54420,7 +52545,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Transformation",
   Key="Sorcerer Bonus Spell L6 ~ Transformation",
@@ -54451,7 +52575,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Transmute Rock to Mud",
   Key="Sorcerer Bonus Spell L5 ~ Transmute Rock to Mud",
@@ -54482,7 +52605,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Transport via Plants",
   Key="Sorcerer Bonus Spell L6 ~ Transport via Plants",
@@ -54513,7 +52635,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Trap the Soul",
   Key="Sorcerer Bonus Spell L8 ~ Trap the Soul",
@@ -54544,7 +52665,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Tree Stride",
   Key="Sorcerer Bonus Spell L5 ~ Tree Stride",
@@ -54575,7 +52695,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="True Seeing",
   Key="Sorcerer Bonus Spell L6 ~ True Seeing",
@@ -54606,7 +52725,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="True Strike",
   Key="Sorcerer Bonus Spell L1 ~ True Strike",
@@ -54637,7 +52755,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Undeath to Death",
   Key="Sorcerer Bonus Spell L6 ~ Undeath to Death",
@@ -54668,7 +52785,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Unholy Aura",
   Key="Sorcerer Bonus Spell L8 ~ Unholy Aura",
@@ -54699,7 +52815,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Unseen Servant",
   Key="Sorcerer Bonus Spell L1 ~ Unseen Servant",
@@ -54730,7 +52845,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Vampiric Touch",
   Key="Sorcerer Bonus Spell L3 ~ Vampiric Touch",
@@ -54761,7 +52875,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Veil",
   Key="Sorcerer Bonus Spell L6 ~ Veil",
@@ -54792,7 +52905,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Ventriloquism",
   Key="Sorcerer Bonus Spell L1 ~ Ventriloquism",
@@ -54823,7 +52935,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Vision",
   Key="Sorcerer Bonus Spell L7 ~ Vision",
@@ -54854,7 +52965,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Wail of the Banshee",
   Key="Sorcerer Bonus Spell L9 ~ Wail of the Banshee",
@@ -54885,7 +52995,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Wall of Fire",
   Key="Sorcerer Bonus Spell L4 ~ Wall of Fire",
@@ -54916,7 +53025,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Wall of Ice",
   Key="Sorcerer Bonus Spell L4 ~ Wall of Ice",
@@ -54947,7 +53055,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Wall of Iron",
   Key="Sorcerer Bonus Spell L6 ~ Wall of Iron",
@@ -54978,7 +53085,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Wall of Stone",
   Key="Sorcerer Bonus Spell L5 ~ Wall of Stone",
@@ -55009,7 +53115,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Wall Of Thorns",
   Key="Sorcerer Bonus Spell L5 ~ Wall Of Thorns",
@@ -55040,7 +53145,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Waves of Exhaustion",
   Key="Sorcerer Bonus Spell L7 ~ Waves of Exhaustion",
@@ -55071,7 +53175,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Waves Of Fatigue",
   Key="Sorcerer Bonus Spell L5 ~ Waves Of Fatigue",
@@ -55102,7 +53205,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Whirlwind",
   Key="Sorcerer Bonus Spell L8 ~ Whirlwind",
@@ -55133,7 +53235,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Wish",
   Key="Sorcerer Bonus Spell L9 ~ Wish",
@@ -55164,7 +53265,6 @@ DefineAbility({
     "Sorcerer Bloodline Bonus Spell",
   },
 })
-
 DefineAbility({
   Name="Standard Bloodline",
   Key="Sorcerer ~ Standard Bloodline Selection",
@@ -55199,7 +53299,6 @@ DefineAbility({
     "Bloodline Selection",
   },
 })
-
 DefineAbility({
   Name="Aberrant Bloodline",
   Key="Sorcerer Bloodline ~ Aberrant",
@@ -55374,7 +53473,6 @@ DefineAbility({
     "Sorcerer Bloodline",
   },
 })
-
 DefineAbility({
   Name="Aberrant Bloodline",
   Category="Sorcerer Bloodline",
@@ -55494,7 +53592,6 @@ DefineAbility({
     "SorcererBloodlineChoice",
   },
 })
-
 DefineAbility({
   Name="Aberrant Bloodline ~ Feat Tracker",
   Category="Internal",
@@ -55557,7 +53654,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Aberrant Bloodline ~ Bonus Spells",
   Category="Special Ability",
@@ -55748,7 +53844,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Bloodline Arcana",
   Key="Aberrant Bloodline ~ Bloodline Arcana",
@@ -55770,7 +53865,6 @@ DefineAbility({
     "Special Quality",
   },
 })
-
 DefineAbility({
   Name="Bloodline Powers",
   Key="Aberrant Bloodline ~ Bloodline Powers",
@@ -55790,7 +53884,6 @@ DefineAbility({
     "Sorcerer Class Feature",
   },
 })
-
 DefineAbility({
   Name="Acidic Ray",
   Key="Aberrant Bloodline ~ Acidic Ray",
@@ -55873,7 +53966,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="Long Limbs",
   Key="Aberrant Bloodline ~ Long Limbs",
@@ -55958,7 +54050,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Unusual Anatomy",
   Key="Aberrant Bloodline ~ Unusual Anatomy",
@@ -56045,7 +54136,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Alien Resistance",
   Key="Aberrant Bloodline ~ Alien Resistance",
@@ -56092,7 +54182,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Aberrant Form",
   Key="Aberrant Bloodline ~ Aberrant Form",
@@ -56156,7 +54245,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Abyssal Bloodline",
   Key="Sorcerer Bloodline ~ Abyssal",
@@ -56331,7 +54419,6 @@ DefineAbility({
     "Sorcerer Bloodline",
   },
 })
-
 DefineAbility({
   Name="Abyssal Bloodline",
   Category="Sorcerer Bloodline",
@@ -56451,7 +54538,6 @@ DefineAbility({
     "SorcererBloodlineChoice",
   },
 })
-
 DefineAbility({
   Name="Bloodline Feat Tracker ~ Abyssal",
   Category="Internal",
@@ -56514,7 +54600,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Abyssal Bloodline ~ Bonus Spells",
   Category="Special Ability",
@@ -56704,7 +54789,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Bloodline Arcana",
   Key="Abyssal Bloodline ~ Bloodline Arcana",
@@ -56741,7 +54825,6 @@ DefineAbility({
     "Special Quality",
   },
 })
-
 DefineAbility({
   Name="Bloodline Powers",
   Key="Abyssal Bloodline ~ Bloodline Powers",
@@ -56761,7 +54844,6 @@ DefineAbility({
     "Sorcerer Class Feature",
   },
 })
-
 DefineAbility({
   Name="Claws",
   Key="Abyssal Bloodline ~ Claws",
@@ -56906,7 +54988,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Demon Resistances",
   Key="Abyssal Bloodline ~ Demon Resistances",
@@ -56984,7 +55065,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Strength of the Abyss",
   Key="Abyssal Bloodline ~ Strength of the Abyss",
@@ -57041,7 +55121,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Added Summonings",
   Key="Abyssal Bloodline ~ Added Summonings",
@@ -57076,7 +55155,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Demonic Might",
   Key="Abyssal Bloodline ~ Demonic Might",
@@ -57159,7 +55237,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Arcane Bloodline",
   Key="Sorcerer Bloodline ~ Arcane",
@@ -57332,7 +55409,6 @@ DefineAbility({
     "Sorcerer Bloodline",
   },
 })
-
 DefineAbility({
   Name="Arcane Bloodline",
   Category="Sorcerer Bloodline",
@@ -57452,7 +55528,6 @@ DefineAbility({
     "SorcererBloodlineChoice",
   },
 })
-
 DefineAbility({
   Name="Arcane Bloodline ~ Feat Tracker",
   Category="Internal",
@@ -57515,7 +55590,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Arcane Bloodline ~ Bonus Spells",
   Category="Special Ability",
@@ -57705,7 +55779,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Bloodline Arcana",
   Key="Arcane Bloodline ~ Bloodline Arcana",
@@ -57727,7 +55800,6 @@ DefineAbility({
     "Special Quality",
   },
 })
-
 DefineAbility({
   Name="Bloodline Powers",
   Key="Arcane Bloodline ~ Bloodline Powers",
@@ -57747,7 +55819,6 @@ DefineAbility({
     "Sorcerer Class Feature",
   },
 })
-
 DefineAbility({
   Name="Arcane Bond",
   Key="Arcane Bloodline ~ Arcane Bond",
@@ -57798,7 +55869,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Metamagic Adept",
   Key="Arcane Bloodline ~ Metamagic Adept",
@@ -57884,7 +55954,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="New Arcana",
   Key="Arcane Bloodline ~ New Arcana",
@@ -57938,7 +56007,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="School Power",
   Key="Arcane Bloodline ~ School Power",
@@ -57974,7 +56042,6 @@ DefineAbility({
     "Sorcerer Bloodline Power",
   },
 })
-
 DefineAbility({
   Name="School Power",
   Key="Arcane Bloodline ~ School Power Choice",
@@ -58038,7 +56105,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Arcane Apotheosis",
   Key="Arcane Bloodline ~ Arcane Apotheosis",
@@ -58082,7 +56148,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Sorcerer Level 1",
   Key="New Arcana ~ Level 1",
@@ -58105,7 +56170,6 @@ DefineAbility({
     "SorcererNewArcana",
   },
 })
-
 DefineAbility({
   Name="Sorcerer Level 2",
   Key="New Arcana ~ Level 2",
@@ -58133,7 +56197,6 @@ DefineAbility({
     "SorcererNewArcana",
   },
 })
-
 DefineAbility({
   Name="Sorcerer Level 3",
   Key="New Arcana ~ Level 3",
@@ -58161,7 +56224,6 @@ DefineAbility({
     "SorcererNewArcana",
   },
 })
-
 DefineAbility({
   Name="Sorcerer Level 4",
   Key="New Arcana ~ Level 4",
@@ -58189,7 +56251,6 @@ DefineAbility({
     "SorcererNewArcana",
   },
 })
-
 DefineAbility({
   Name="Sorcerer Level 5",
   Key="New Arcana ~ Level 5",
@@ -58217,7 +56278,6 @@ DefineAbility({
     "SorcererNewArcana",
   },
 })
-
 DefineAbility({
   Name="Sorcerer Level 6",
   Key="New Arcana ~ Level 6",
@@ -58245,7 +56305,6 @@ DefineAbility({
     "SorcererNewArcana",
   },
 })
-
 DefineAbility({
   Name="Sorcerer Level 7",
   Key="New Arcana ~ Level 7",
@@ -58273,7 +56332,6 @@ DefineAbility({
     "SorcererNewArcana",
   },
 })
-
 DefineAbility({
   Name="Sorcerer Level 8",
   Key="New Arcana ~ Level 8",
@@ -58301,7 +56359,6 @@ DefineAbility({
     "SorcererNewArcana",
   },
 })
-
 DefineAbility({
   Name="Sorcerer Level 9",
   Key="New Arcana ~ Level 9",
@@ -58329,7 +56386,6 @@ DefineAbility({
     "SorcererNewArcana",
   },
 })
-
 DefineAbility({
   Name="Celestial Bloodline",
   Key="Sorcerer Bloodline ~ Celestial",
@@ -58504,7 +56560,6 @@ DefineAbility({
     "Sorcerer Bloodline",
   },
 })
-
 DefineAbility({
   Name="Celestial Bloodline",
   Category="Sorcerer Bloodline",
@@ -58624,7 +56679,6 @@ DefineAbility({
     "SorcererBloodlineChoice",
   },
 })
-
 DefineAbility({
   Name="Celestial Bloodline ~ Feat Tracker",
   Category="Internal",
@@ -58687,7 +56741,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Celestial Bloodline ~ Bonus Spells",
   Category="Special Ability",
@@ -58877,7 +56930,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Bloodline Arcana",
   Key="Celestial Bloodline ~ Bloodline Arcana",
@@ -58914,7 +56966,6 @@ DefineAbility({
     "Special Quality",
   },
 })
-
 DefineAbility({
   Name="Bloodline Powers",
   Key="Celestial Bloodline ~ Bloodline Powers",
@@ -58934,7 +56985,6 @@ DefineAbility({
     "Sorcerer Class Feature",
   },
 })
-
 DefineAbility({
   Name="Heavenly Fire",
   Key="Celestial Bloodline ~ Heavenly Fire",
@@ -59017,7 +57067,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="Celestial Resistances",
   Key="Celestial Bloodline ~ Celestial Resistances",
@@ -59074,7 +57123,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Wings of Heaven",
   Key="Celestial Bloodline ~ Wings of Heaven",
@@ -59186,7 +57234,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Conviction",
   Key="Celestial Bloodline ~ Conviction",
@@ -59248,7 +57295,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Ascension",
   Key="Celestial Bloodline ~ Ascension",
@@ -59335,7 +57381,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Destined Bloodline",
   Key="Sorcerer Bloodline ~ Destined",
@@ -59510,7 +57555,6 @@ DefineAbility({
     "Sorcerer Bloodline",
   },
 })
-
 DefineAbility({
   Name="Destined Bloodline",
   Category="Sorcerer Bloodline",
@@ -59630,7 +57674,6 @@ DefineAbility({
     "SorcererBloodlineChoice",
   },
 })
-
 DefineAbility({
   Name="Destined Bloodline ~ Feat Tracker",
   Category="Internal",
@@ -59693,7 +57736,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Destined Bloodline ~ Bonus Spells",
   Category="Special Ability",
@@ -59883,7 +57925,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Bloodline Arcana",
   Key="Destined Bloodline ~ Bloodline Arcana",
@@ -59905,7 +57946,6 @@ DefineAbility({
     "Special Quality",
   },
 })
-
 DefineAbility({
   Name="Bloodline Powers",
   Key="Destined Bloodline ~ Bloodline Powers",
@@ -59925,7 +57965,6 @@ DefineAbility({
     "Sorcerer Class Feature",
   },
 })
-
 DefineAbility({
   Name="Touch of Destiny",
   Key="Destined Bloodline ~ Touch of Destiny",
@@ -59990,7 +58029,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="Fated",
   Key="Destined Bloodline ~ Fated",
@@ -60044,7 +58082,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="It Was Meant To Be",
   Key="Destined Bloodline ~ It Was Meant To Be",
@@ -60111,7 +58148,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Within Reach",
   Key="Destined Bloodline ~ Within Reach",
@@ -60162,7 +58198,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Destiny Realized",
   Key="Destined Bloodline ~ Destiny Realized",
@@ -60213,7 +58248,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Draconic Bloodline",
   Key="Sorcerer Bloodline ~ Draconic",
@@ -60395,7 +58429,6 @@ DefineAbility({
     "Sorcerer Bloodline",
   },
 })
-
 DefineAbility({
   Name="Draconic Bloodline",
   Category="Sorcerer Bloodline",
@@ -60515,7 +58548,6 @@ DefineAbility({
     "SorcererBloodlineChoice",
   },
 })
-
 DefineAbility({
   Name="Draconic Bloodline ~ Feat Tracker",
   Category="Internal",
@@ -60578,7 +58610,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Draconic Bloodline ~ Bonus Spells",
   Category="Special Ability",
@@ -60804,7 +58835,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Bloodline Arcana",
   Key="Draconic Bloodline ~ Bloodline Arcana",
@@ -60858,7 +58888,6 @@ DefineAbility({
     "Special Quality",
   },
 })
-
 DefineAbility({
   Name="Bloodline Powers",
   Key="Draconic Bloodline ~ Bloodline Powers",
@@ -60878,7 +58907,6 @@ DefineAbility({
     "Sorcerer Class Feature",
   },
 })
-
 DefineAbility({
   Name="Claws",
   Key="Draconic Bloodline ~ Claws",
@@ -61074,7 +59102,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Dragon Resistances",
   Key="Draconic Bloodline ~ Dragon Resistances",
@@ -61210,7 +59237,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Breath Weapon",
   Key="Draconic Bloodline ~ Breath Weapon",
@@ -61428,7 +59454,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Wings",
   Key="Draconic Bloodline ~ Wings",
@@ -61478,7 +59503,6 @@ DefineAbility({
     Fly=60,
   },
 })
-
 DefineAbility({
   Name="Power of Wyrms",
   Key="Draconic Bloodline ~ Power of Wyrms",
@@ -61583,7 +59607,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 ModifyAbility({
   Name="Sorcerer Bloodline ~ Draconic",
   Category="Special Ability",
@@ -61594,7 +59617,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Black",
   Key="Draconic Bloodline Choice ~ Black",
@@ -61629,7 +59651,6 @@ DefineAbility({
     "Sorcerer Draconic Bloodline Choice",
   },
 })
-
 ModifyAbility({
   Name="Sorcerer Bloodline ~ Draconic",
   Category="Special Ability",
@@ -61654,7 +59675,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Blue",
   Key="Draconic Bloodline Choice ~ Blue",
@@ -61689,7 +59709,6 @@ DefineAbility({
     "Sorcerer Draconic Bloodline Choice",
   },
 })
-
 ModifyAbility({
   Name="Sorcerer Bloodline ~ Draconic",
   Category="Special Ability",
@@ -61714,7 +59733,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Green",
   Key="Draconic Bloodline Choice ~ Green",
@@ -61749,7 +59767,6 @@ DefineAbility({
     "Sorcerer Draconic Bloodline Choice",
   },
 })
-
 ModifyAbility({
   Name="Sorcerer Bloodline ~ Draconic",
   Category="Special Ability",
@@ -61774,7 +59791,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Red",
   Key="Draconic Bloodline Choice ~ Red",
@@ -61809,7 +59825,6 @@ DefineAbility({
     "Sorcerer Draconic Bloodline Choice",
   },
 })
-
 ModifyAbility({
   Name="Sorcerer Bloodline ~ Draconic",
   Category="Special Ability",
@@ -61834,7 +59849,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="White",
   Key="Draconic Bloodline Choice ~ White",
@@ -61869,7 +59883,6 @@ DefineAbility({
     "Sorcerer Draconic Bloodline Choice",
   },
 })
-
 ModifyAbility({
   Name="Sorcerer Bloodline ~ Draconic",
   Category="Special Ability",
@@ -61894,7 +59907,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Brass",
   Key="Draconic Bloodline Choice ~ Brass",
@@ -61929,7 +59941,6 @@ DefineAbility({
     "Sorcerer Draconic Bloodline Choice",
   },
 })
-
 ModifyAbility({
   Name="Sorcerer Bloodline ~ Draconic",
   Category="Special Ability",
@@ -61954,7 +59965,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Bronze",
   Key="Draconic Bloodline Choice ~ Bronze",
@@ -61989,7 +59999,6 @@ DefineAbility({
     "Sorcerer Draconic Bloodline Choice",
   },
 })
-
 ModifyAbility({
   Name="Sorcerer Bloodline ~ Draconic",
   Category="Special Ability",
@@ -62014,7 +60023,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Copper",
   Key="Draconic Bloodline Choice ~ Copper",
@@ -62049,7 +60057,6 @@ DefineAbility({
     "Sorcerer Draconic Bloodline Choice",
   },
 })
-
 ModifyAbility({
   Name="Sorcerer Bloodline ~ Draconic",
   Category="Special Ability",
@@ -62074,7 +60081,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Gold",
   Key="Draconic Bloodline Choice ~ Gold",
@@ -62109,7 +60115,6 @@ DefineAbility({
     "Sorcerer Draconic Bloodline Choice",
   },
 })
-
 ModifyAbility({
   Name="Sorcerer Bloodline ~ Draconic",
   Category="Special Ability",
@@ -62134,7 +60139,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Silver",
   Key="Draconic Bloodline Choice ~ Silver",
@@ -62169,7 +60173,6 @@ DefineAbility({
     "Sorcerer Draconic Bloodline Choice",
   },
 })
-
 ModifyAbility({
   Name="Sorcerer Bloodline ~ Draconic",
   Category="Special Ability",
@@ -62194,7 +60197,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Elemental Bloodline",
   Key="Sorcerer Bloodline ~ Elemental",
@@ -62376,7 +60378,6 @@ DefineAbility({
     "Sorcerer Bloodline",
   },
 })
-
 DefineAbility({
   Name="Elemental Bloodline",
   Category="Sorcerer Bloodline",
@@ -62496,7 +60497,6 @@ DefineAbility({
     "SorcererBloodlineChoice",
   },
 })
-
 DefineAbility({
   Name="Elemental Bloodline ~ Feat Tracker",
   Category="Internal",
@@ -62559,7 +60559,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Elemental Bloodline ~ Bonus Spells",
   Category="Special Ability",
@@ -62893,7 +60892,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Bloodline Arcana",
   Key="Elemental Bloodline ~ Bloodline Arcana",
@@ -62952,7 +60950,6 @@ DefineAbility({
     "Special Quality",
   },
 })
-
 DefineAbility({
   Name="Bloodline Powers",
   Key="Elemental Bloodline ~ Bloodline Powers",
@@ -62972,7 +60969,6 @@ DefineAbility({
     "Sorcerer Class Feature",
   },
 })
-
 DefineAbility({
   Name="Elemental Ray",
   Key="Elemental Bloodline ~ Elemental Ray",
@@ -63157,7 +61153,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="Elemental Resistance",
   Key="Elemental Bloodline ~ Elemental Resistance",
@@ -63265,7 +61260,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Elemental Blast",
   Key="Elemental Bloodline ~ Elemental Blast",
@@ -63389,7 +61383,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="Elemental Movement",
   Key="Elemental Bloodline ~ Elemental Movement",
@@ -63479,7 +61472,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Elemental Body",
   Key="Elemental Bloodline ~ Elemental Body",
@@ -63577,7 +61569,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Air",
   Key="Sorcerer Elemental Bloodline (Air)",
@@ -63598,7 +61589,6 @@ DefineAbility({
     "Sorcerer Elemental Bloodline Choice",
   },
 })
-
 ModifyAbility({
   Name="Sorcerer Bloodline ~ Elemental",
   Category="Special Ability",
@@ -63627,7 +61617,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Earth",
   Key="Sorcerer Elemental Bloodline (Earth)",
@@ -63648,7 +61637,6 @@ DefineAbility({
     "Sorcerer Elemental Bloodline Choice",
   },
 })
-
 ModifyAbility({
   Name="Sorcerer Bloodline ~ Elemental",
   Category="Special Ability",
@@ -63677,7 +61665,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Fire",
   Key="Sorcerer Elemental Bloodline (Fire)",
@@ -63698,7 +61685,6 @@ DefineAbility({
     "Sorcerer Elemental Bloodline Choice",
   },
 })
-
 ModifyAbility({
   Name="Sorcerer Bloodline ~ Elemental",
   Category="Special Ability",
@@ -63727,7 +61713,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Water",
   Key="Sorcerer Elemental Bloodline (Water)",
@@ -63748,7 +61733,6 @@ DefineAbility({
     "Sorcerer Elemental Bloodline Choice",
   },
 })
-
 ModifyAbility({
   Name="Sorcerer Bloodline ~ Elemental",
   Category="Special Ability",
@@ -63777,7 +61761,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Elemental Bloodline ~ Elemental Movement (Earth)",
   Category="Internal",
@@ -63786,7 +61769,6 @@ DefineAbility({
     Burrow=30,
   },
 })
-
 DefineAbility({
   Name="Elemental Bloodline ~ Elemental Movement (Water)",
   Category="Internal",
@@ -63795,7 +61777,6 @@ DefineAbility({
     Swim=60,
   },
 })
-
 DefineAbility({
   Name="Elemental Bloodline ~ Elemental Movement (Air)",
   Category="Internal",
@@ -63816,7 +61797,6 @@ DefineAbility({
     Fly=60,
   },
 })
-
 DefineAbility({
   Name="Elemental Bloodline ~ Elemental Movement (Fire)",
   Category="Internal",
@@ -63831,7 +61811,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Fey Bloodline",
   Key="Sorcerer Bloodline ~ Fey",
@@ -64006,7 +61985,6 @@ DefineAbility({
     "Sorcerer Bloodline",
   },
 })
-
 DefineAbility({
   Name="Fey Bloodline",
   Category="Sorcerer Bloodline",
@@ -64126,7 +62104,6 @@ DefineAbility({
     "SorcererBloodlineChoice",
   },
 })
-
 DefineAbility({
   Name="Fey Bloodline ~ Feat Tracker",
   Category="Internal",
@@ -64189,7 +62166,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Fey Bloodline ~ Bonus Spells",
   Category="Special Ability",
@@ -64379,7 +62355,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Bloodline Arcana",
   Key="Fey Bloodline ~ Bloodline Arcana",
@@ -64410,7 +62385,6 @@ DefineAbility({
     "Special Quality",
   },
 })
-
 DefineAbility({
   Name="Bloodline Powers",
   Key="Fey Bloodline ~ Bloodline Powers",
@@ -64430,7 +62404,6 @@ DefineAbility({
     "Sorcerer Class Feature",
   },
 })
-
 DefineAbility({
   Name="Laughing Touch",
   Key="Fey Bloodline ~ Laughing Touch",
@@ -64478,7 +62451,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="Woodland Stride",
   Key="Fey Bloodline ~ Woodland Stride",
@@ -64513,7 +62485,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Fleeting Glance",
   Key="Fey Bloodline ~ Fleeting Glance",
@@ -64567,7 +62538,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="Fey Magic",
   Key="Fey Bloodline ~ Fey Magic",
@@ -64602,7 +62572,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Soul of the Fey",
   Key="Fey Bloodline ~ Soul of the Fey",
@@ -64671,7 +62640,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Infernal Bloodline",
   Key="Sorcerer Bloodline ~ Infernal",
@@ -64846,7 +62814,6 @@ DefineAbility({
     "Sorcerer Bloodline",
   },
 })
-
 DefineAbility({
   Name="Infernal Bloodline",
   Category="Sorcerer Bloodline",
@@ -64966,7 +62933,6 @@ DefineAbility({
     "SorcererBloodlineChoice",
   },
 })
-
 DefineAbility({
   Name="Infernal Bloodline ~ Feat Tracker",
   Category="Internal",
@@ -65029,7 +62995,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Infernal Bloodline ~ Bonus Spells",
   Category="Special Ability",
@@ -65219,7 +63184,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Bloodline Arcana",
   Key="Infernal Bloodline ~ Bloodline Arcana",
@@ -65241,7 +63205,6 @@ DefineAbility({
     "Special Quality",
   },
 })
-
 DefineAbility({
   Name="Bloodline Powers",
   Key="Infernal Bloodline ~ Bloodline Powers",
@@ -65261,7 +63224,6 @@ DefineAbility({
     "Sorcerer Class Feature",
   },
 })
-
 DefineAbility({
   Name="Corrupting Touch",
   Key="Infernal Bloodline ~ Corrupting Touch",
@@ -65343,7 +63305,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="Infernal Resistances",
   Key="Infernal Bloodline ~ Infernal Resistances",
@@ -65421,7 +63382,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Hellfire",
   Key="Infernal Bloodline ~ Hellfire",
@@ -65505,7 +63465,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="On Dark Wings",
   Key="Infernal Bloodline ~ On Dark Wings",
@@ -65552,7 +63511,6 @@ DefineAbility({
     Fly=60,
   },
 })
-
 DefineAbility({
   Name="Power of the Pit",
   Key="Infernal Bloodline ~ Power of the Pit",
@@ -65641,7 +63599,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Undead Bloodline",
   Key="Sorcerer Bloodline ~ Undead",
@@ -65816,7 +63773,6 @@ DefineAbility({
     "Sorcerer Bloodline",
   },
 })
-
 DefineAbility({
   Name="Undead Bloodline",
   Category="Sorcerer Bloodline",
@@ -65936,7 +63892,6 @@ DefineAbility({
     "SorcererBloodlineChoice",
   },
 })
-
 DefineAbility({
   Name="Undead Bloodline ~ Feat Tracker",
   Category="Internal",
@@ -65999,7 +63954,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Undead Bloodline ~ Bonus Spells",
   Category="Special Ability",
@@ -66189,7 +64143,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Bloodline Arcana",
   Key="Undead Bloodline ~ Bloodline Arcana",
@@ -66211,7 +64164,6 @@ DefineAbility({
     "Special Quality",
   },
 })
-
 DefineAbility({
   Name="Bloodline Powers",
   Key="Undead Bloodline ~ Bloodline Powers",
@@ -66231,7 +64183,6 @@ DefineAbility({
     "Sorcerer Class Feature",
   },
 })
-
 DefineAbility({
   Name="Grave Touch",
   Key="Undead Bloodline ~ Grave Touch",
@@ -66321,7 +64272,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="Death's Gift",
   Key="Undead Bloodline ~ Death's Gift",
@@ -66389,7 +64339,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Grasp of the Dead",
   Key="Undead Bloodline ~ Grasp of the Dead",
@@ -66466,7 +64415,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="Incorporeal Form",
   Key="Undead Bloodline ~ Incorporeal Form",
@@ -66537,7 +64485,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="One of Us",
   Key="Undead Bloodline ~ One of Us",
@@ -66591,7 +64538,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Class Skills",
   Key="Wizard ~ Class Skills",
@@ -66621,7 +64567,6 @@ DefineAbility({
     "Wizard Class Feature",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Wizard ~ Weapon and Armor Proficiency",
@@ -66657,7 +64602,6 @@ DefineAbility({
     "Wizard Class Feature",
   },
 })
-
 DefineAbility({
   Name="Spells",
   Key="Wizard ~ Spells",
@@ -66672,7 +64616,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Bonus Languages",
   Key="Wizard ~ Bonus Languages",
@@ -66690,7 +64633,6 @@ DefineAbility({
     "Wizard Class Feature",
   },
 })
-
 DefineAbility({
   Name="Arcane Bond",
   Key="Wizard ~ Arcane Bond",
@@ -66729,7 +64671,6 @@ DefineAbility({
     "Supernatural or Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Arcane School",
   Key="Wizard ~ Arcane School",
@@ -66754,7 +64695,6 @@ DefineAbility({
     "Arcane School",
   },
 })
-
 DefineAbility({
   Name="Cantrips",
   Key="Wizard ~ Cantrips",
@@ -66792,7 +64732,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Scribe Scroll",
   Key="Wizard ~ Scribe Scroll",
@@ -66816,7 +64755,6 @@ DefineAbility({
     "Wizard Class Feature",
   },
 })
-
 DefineAbility({
   Name="Bonus Feats",
   Key="Wizard ~ Bonus Feats",
@@ -66840,7 +64778,6 @@ DefineAbility({
     "Wizard Class Feature",
   },
 })
-
 DefineAbility({
   Name="Spellbooks",
   Key="Wizard ~ Spellbooks",
@@ -66859,7 +64796,6 @@ DefineAbility({
     "Wizard Class Feature",
   },
 })
-
 DefineAbility({
   Name="Familiar",
   Key="Arcane Bond ~ Familiar",
@@ -66907,7 +64843,6 @@ DefineAbility({
     Familiar=1,
   },
 })
-
 DefineAbility({
   Name="Bonded Object",
   Key="Arcane Bond ~ Bonded Object",
@@ -66930,7 +64865,6 @@ DefineAbility({
     "Special Quality",
   },
 })
-
 ModifyAbility({
   Name="Wizard ~ Bonus Feats",
   Category="Special Ability",
@@ -66952,7 +64886,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wizard ~ Bonus Feats",
   Category="Special Ability",
@@ -66974,7 +64907,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wizard ~ Bonus Feats",
   Category="Special Ability",
@@ -66996,7 +64928,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Wizard ~ Bonus Feats",
   Category="Special Ability",
@@ -67018,12 +64949,10 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Arcane School Tracker",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Arcane School Tracker",
   Category="Internal",
@@ -67037,7 +64966,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane School Tracker",
   Category="Internal",
@@ -67051,7 +64979,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Arcane School Tracker",
   Category="Internal",
@@ -67065,7 +64992,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Abjuration School",
   Category="Special Ability",
@@ -67223,7 +65149,6 @@ DefineAbility({
     "ArcaneSchool",
   },
 })
-
 DefineAbility({
   Name="Conjuration School",
   Category="Special Ability",
@@ -67378,7 +65303,6 @@ DefineAbility({
     "ArcaneSchool",
   },
 })
-
 DefineAbility({
   Name="Divination School",
   Category="Special Ability",
@@ -67533,7 +65457,6 @@ DefineAbility({
     "ArcaneSchool",
   },
 })
-
 DefineAbility({
   Name="Enchantment School",
   Category="Special Ability",
@@ -67688,7 +65611,6 @@ DefineAbility({
     "ArcaneSchool",
   },
 })
-
 DefineAbility({
   Name="Evocation School",
   Category="Special Ability",
@@ -67843,7 +65765,6 @@ DefineAbility({
     "ArcaneSchool",
   },
 })
-
 DefineAbility({
   Name="Illusion School",
   Category="Special Ability",
@@ -67998,7 +65919,6 @@ DefineAbility({
     "ArcaneSchool",
   },
 })
-
 DefineAbility({
   Name="Necromancy School",
   Category="Special Ability",
@@ -68153,7 +66073,6 @@ DefineAbility({
     "ArcaneSchool",
   },
 })
-
 DefineAbility({
   Name="Transmutation School",
   Category="Special Ability",
@@ -68308,7 +66227,6 @@ DefineAbility({
     "ArcaneSchool",
   },
 })
-
 DefineAbility({
   Name="Universal School",
   Category="Special Ability",
@@ -68377,7 +66295,6 @@ DefineAbility({
     "ClassSpecialization",
   },
 })
-
 DefineAbility({
   Name="Abjuration Opposition School",
   Category="Special Ability",
@@ -68411,7 +66328,6 @@ DefineAbility({
     "ArcaneOppositionSchool",
   },
 })
-
 DefineAbility({
   Name="Conjuration Opposition School",
   Category="Special Ability",
@@ -68445,7 +66361,6 @@ DefineAbility({
     "ArcaneOppositionSchool",
   },
 })
-
 DefineAbility({
   Name="Divination Opposition School",
   Category="Special Ability",
@@ -68479,7 +66394,6 @@ DefineAbility({
     "ArcaneOppositionSchool",
   },
 })
-
 DefineAbility({
   Name="Enchantment Opposition School",
   Category="Special Ability",
@@ -68513,7 +66427,6 @@ DefineAbility({
     "ArcaneOppositionSchool",
   },
 })
-
 DefineAbility({
   Name="Evocation Opposition School",
   Category="Special Ability",
@@ -68547,7 +66460,6 @@ DefineAbility({
     "ArcaneOppositionSchool",
   },
 })
-
 DefineAbility({
   Name="Illusion Opposition School",
   Category="Special Ability",
@@ -68581,7 +66493,6 @@ DefineAbility({
     "ArcaneOppositionSchool",
   },
 })
-
 DefineAbility({
   Name="Necromancy Opposition School",
   Category="Special Ability",
@@ -68615,7 +66526,6 @@ DefineAbility({
     "ArcaneOppositionSchool",
   },
 })
-
 DefineAbility({
   Name="Transmutation Opposition School",
   Category="Special Ability",
@@ -68649,7 +66559,6 @@ DefineAbility({
     "ArcaneOppositionSchool",
   },
 })
-
 DefineAbility({
   Name="Wizard Spells",
   Category="Internal",
@@ -68775,7 +66684,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Abjuration Wizard Spells",
   Category="Internal",
@@ -68794,7 +66702,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Conjuration Wizard Spells",
   Category="Internal",
@@ -68813,7 +66720,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Divination Wizard Spells",
   Category="Internal",
@@ -68834,7 +66740,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Enchantment Wizard Spells",
   Category="Internal",
@@ -68853,7 +66758,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Evocation Wizard Spells",
   Category="Internal",
@@ -68875,7 +66779,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Illusion Wizard Spells",
   Category="Internal",
@@ -68894,7 +66797,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Necromancy Wizard Spells",
   Category="Internal",
@@ -68915,7 +66817,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Transmutation Wizard Spells",
   Category="Internal",
@@ -68937,7 +66838,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Universal Wizard Spells",
   Category="Internal",
@@ -68957,7 +66857,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Resistance",
   Key="Abjuration School ~ Resistance",
@@ -69023,7 +66922,6 @@ DefineAbility({
     "ArcaneSchoolPowerLVL1",
   },
 })
-
 DefineAbility({
   Name="Protective Ward",
   Key="Abjuration School ~ Protective Ward",
@@ -69089,7 +66987,6 @@ DefineAbility({
     "Aura",
   },
 })
-
 DefineAbility({
   Name="Energy Absorption",
   Key="Abjuration School ~ Energy Absorption",
@@ -69126,7 +67023,6 @@ DefineAbility({
     "ArcaneSchoolPower",
   },
 })
-
 DefineAbility({
   Name="Summoner's Charm",
   Key="Conjuration School ~ Summoner's Charm",
@@ -69157,7 +67053,6 @@ DefineAbility({
     "ArcaneSchoolPowerLVL1",
   },
 })
-
 DefineAbility({
   Name="Acid Dart",
   Key="Conjuration School ~ Acid Dart",
@@ -69206,7 +67101,6 @@ DefineAbility({
     "ArcaneSchoolPowerLVL1",
   },
 })
-
 DefineAbility({
   Name="Dimensional Steps",
   Key="Conjuration School ~ Dimensional Steps",
@@ -69248,7 +67142,6 @@ DefineAbility({
     "ModifyMovement",
   },
 })
-
 DefineAbility({
   Name="Forwarned",
   Key="Divination School ~ Forwarned",
@@ -69286,7 +67179,6 @@ DefineAbility({
     "ArcaneSchoolPowerLVL1",
   },
 })
-
 DefineAbility({
   Name="Diviner's Fortune",
   Key="Divination School ~ Diviner's Fortune",
@@ -69336,7 +67228,6 @@ DefineAbility({
     "ArcaneSchoolPowerLVL1",
   },
 })
-
 DefineAbility({
   Name="Scrying Adept",
   Key="Divination School ~ Scrying Adept",
@@ -69353,7 +67244,6 @@ DefineAbility({
     "Sense",
   },
 })
-
 DefineAbility({
   Name="Enchanting Smile",
   Key="Enchantment School ~ Enchanting Smile",
@@ -69396,7 +67286,6 @@ DefineAbility({
     "ArcaneSchoolPowerLVL1",
   },
 })
-
 DefineAbility({
   Name="Dazing Touch",
   Key="Enchantment School ~ Dazing Touch",
@@ -69446,7 +67335,6 @@ DefineAbility({
     "ArcaneSchoolPowerLVL1",
   },
 })
-
 DefineAbility({
   Name="Aura of Despair",
   Key="Enchantment School ~ Aura of Despair",
@@ -69488,7 +67376,6 @@ DefineAbility({
     "Aura",
   },
 })
-
 DefineAbility({
   Name="Intense Spells",
   Key="Evocation School ~ Intense Spells",
@@ -69520,7 +67407,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Force Missile",
   Key="Evocation School ~ Force Missile",
@@ -69571,7 +67457,6 @@ DefineAbility({
     "ArcaneSchoolPowerLVL1",
   },
 })
-
 DefineAbility({
   Name="Elemental Wall",
   Key="Evocation School ~ Elemental Wall",
@@ -69612,7 +67497,6 @@ DefineAbility({
     "ArcaneSchoolPower",
   },
 })
-
 DefineAbility({
   Name="Extended Illusion",
   Key="Illusion School ~ Extended Illusion",
@@ -69643,7 +67527,6 @@ DefineAbility({
     "ArcaneSchoolPowerLVL1",
   },
 })
-
 DefineAbility({
   Name="Blinding Ray",
   Key="Illusion School ~ Blinding Ray",
@@ -69693,7 +67576,6 @@ DefineAbility({
     "ArcaneSchoolPowerLVL1",
   },
 })
-
 DefineAbility({
   Name="Invisibility Field",
   Key="Illusion School ~ Invisibility Field",
@@ -69735,7 +67617,6 @@ DefineAbility({
     "Aura",
   },
 })
-
 DefineAbility({
   Name="Power Over Undead",
   Key="Necromancy School ~ Power Over Undead",
@@ -69783,7 +67664,6 @@ DefineAbility({
     "ArcaneSchoolPowerLVL1",
   },
 })
-
 DefineAbility({
   Name="Grave Touch",
   Key="Necromancy School ~ Grave Touch",
@@ -69841,7 +67721,6 @@ DefineAbility({
     "ArcaneSchoolPowerLVL1",
   },
 })
-
 DefineAbility({
   Name="Life Sight",
   Key="Necromancy School ~ Life Sight",
@@ -69891,7 +67770,6 @@ DefineAbility({
     "Sense",
   },
 })
-
 DefineAbility({
   Name="Power Over Undead ~ Command Undead",
   Category="Special Ability",
@@ -69942,7 +67820,6 @@ DefineAbility({
     "NecromancerChanneling",
   },
 })
-
 DefineAbility({
   Name="Power Over Undead ~ Turn Undead",
   Category="Special Ability",
@@ -69986,7 +67863,6 @@ DefineAbility({
     "NecromancerChanneling",
   },
 })
-
 DefineAbility({
   Name="Physical Enhancement",
   Key="Transmutation School ~ Physical Enhancement",
@@ -70050,7 +67926,6 @@ DefineAbility({
     "ArcaneSchoolPowerLVL1",
   },
 })
-
 DefineAbility({
   Name="Physical Enhancement ~ Strength",
   Category="Special Ability",
@@ -70072,7 +67947,6 @@ DefineAbility({
   },
   Visible=false,
 })
-
 DefineAbility({
   Name="Physical Enhancement ~ Dexterity",
   Category="Special Ability",
@@ -70094,7 +67968,6 @@ DefineAbility({
   },
   Visible=false,
 })
-
 DefineAbility({
   Name="Physical Enhancement ~ Constitution",
   Category="Special Ability",
@@ -70116,7 +67989,6 @@ DefineAbility({
   },
   Visible=false,
 })
-
 DefineAbility({
   Name="Telekinetic Fist",
   Key="Transmutation School ~ Telekinetic Fist",
@@ -70172,7 +68044,6 @@ DefineAbility({
     "ArcaneSchoolPowerLVL1",
   },
 })
-
 DefineAbility({
   Name="Change Shape",
   Key="Transmutation School ~ Change Shape",
@@ -70215,7 +68086,6 @@ DefineAbility({
     "ArcaneSchoolPower",
   },
 })
-
 DefineAbility({
   Name="Hand of the Apprentice",
   Key="Universal School ~ Hand of the Apprentice",
@@ -70256,7 +68126,6 @@ DefineAbility({
     "ArcaneSchoolPower",
   },
 })
-
 DefineAbility({
   Name="Metamagic Mastery",
   Key="Universal School ~ Metamagic Mastery",
@@ -70297,7 +68166,6 @@ DefineAbility({
     "ArcaneSchoolPower",
   },
 })
-
 ModifyAbility({
   Name="Abjuration School ~ Resistance",
   Category="Special Ability",
@@ -70307,7 +68175,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Abjuration School ~ Protective Ward",
   Category="Special Ability",
@@ -70317,7 +68184,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Conjuration School ~ Summoner's Charm",
   Category="Special Ability",
@@ -70327,7 +68193,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Conjuration School ~ Acid Dart",
   Category="Special Ability",
@@ -70337,7 +68202,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Divination School ~ Forwarned",
   Category="Special Ability",
@@ -70347,7 +68211,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Divination School ~ Diviner's Fortune",
   Category="Special Ability",
@@ -70357,7 +68220,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Enchantment School ~ Enchanting Smile",
   Category="Special Ability",
@@ -70367,7 +68229,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Enchantment School ~ Dazing Touch",
   Category="Special Ability",
@@ -70377,7 +68238,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Evocation School ~ Intense Spells",
   Category="Special Ability",
@@ -70387,7 +68247,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Evocation School ~ Force Missile",
   Category="Special Ability",
@@ -70397,7 +68256,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Illusion School ~ Extended Illusion",
   Category="Special Ability",
@@ -70407,7 +68265,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Illusion School ~ Blinding Ray",
   Category="Special Ability",
@@ -70417,7 +68274,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Necromancy School ~ Power Over Undead",
   Category="Special Ability",
@@ -70427,7 +68283,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Necromancy School ~ Grave Touch",
   Category="Special Ability",
@@ -70437,7 +68292,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Transmutation School ~ Physical Enhancement",
   Category="Special Ability",
@@ -70447,7 +68301,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Transmutation School ~ Telekinetic Fist",
   Category="Special Ability",
@@ -70457,7 +68310,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Universal School ~ Hand of the Apprentice",
   Category="Special Ability",
@@ -70467,7 +68319,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Abjuration School ~ Energy Absorption",
   Category="Special Ability",
@@ -70477,7 +68328,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Conjuration School ~ Dimensional Steps",
   Category="Special Ability",
@@ -70487,7 +68337,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Divination School ~ Scrying Adept",
   Category="Special Ability",
@@ -70497,7 +68346,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Enchantment School ~ Aura of Despair",
   Category="Special Ability",
@@ -70507,7 +68355,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Evocation School ~ Elemental Wall",
   Category="Special Ability",
@@ -70517,7 +68364,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Illusion School ~ Invisibility Field",
   Category="Special Ability",
@@ -70527,7 +68373,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Necromancy School ~ Life Sight",
   Category="Special Ability",
@@ -70537,7 +68382,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Transmutation School ~ Change Shape",
   Category="Special Ability",
@@ -70547,7 +68391,6 @@ ModifyAbility({
     end,
   },
 })
-
 ModifyAbility({
   Name="Universal School ~ Metamagic Mastery",
   Category="Special Ability",
@@ -70557,7 +68400,6 @@ ModifyAbility({
     end,
   },
 })
-
 DefineAbility({
   Name="Companion ~ Animal Companion",
   Category="Internal",
@@ -70565,7 +68407,6 @@ DefineAbility({
     ['Animal Companion']=1,
   },
 })
-
 DefineAbility({
   Name="Companion ~ Special Mount",
   Category="Internal",
@@ -70573,7 +68414,6 @@ DefineAbility({
     ['Special Mount']=1,
   },
 })
-
 DefineAbility({
   Name="Expert Class Skills",
   Category="Special Ability",
@@ -70593,7 +68433,6 @@ DefineAbility({
     "ExpertClassSkills",
   },
 })
-
 DefineAbility({
   Name="Single Simple Weapon Proficiency",
   Category="Special Ability",
@@ -70622,7 +68461,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Martial Weapon Proficiency",
   Key="Martial Weapon Proficiency Output",
@@ -70633,7 +68471,6 @@ DefineAbility({
   SourcePage="p.130",
   Visible=true,
 })
-
 DefineAbility({
   Name="Wizard / Remove Scribe Scroll",
   Category="Archetype",
@@ -70645,7 +68482,6 @@ DefineAbility({
     Wizard_CF_ScribeScroll="True",
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -70659,12 +68495,10 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -70683,7 +68517,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Equipment ~ Heavy Armor Grants Gauntlet",
   Category="Internal",
@@ -70711,13 +68544,11 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Archetype Display",
   Category="Internal",
   Visible=false,
 })
-
 DefineAbility({
   Name="Archetype Barbarian",
   Category="Archetype",
@@ -70726,7 +68557,6 @@ DefineAbility({
     "BarbarianArchetype",
   },
 })
-
 DefineAbility({
   Name="Archetype Bard",
   Category="Archetype",
@@ -70735,7 +68565,6 @@ DefineAbility({
     "BardArchetype",
   },
 })
-
 DefineAbility({
   Name="Archetype Druid",
   Category="Archetype",
@@ -70744,7 +68573,6 @@ DefineAbility({
     "DruidArchetype",
   },
 })
-
 DefineAbility({
   Name="Archetype Fighter",
   Category="Archetype",
@@ -70753,7 +68581,6 @@ DefineAbility({
     "FighterArchetype",
   },
 })
-
 DefineAbility({
   Name="Archetype Monk",
   Category="Archetype",
@@ -70762,7 +68589,6 @@ DefineAbility({
     "MonkArchetype",
   },
 })
-
 DefineAbility({
   Name="Archetype Paladin",
   Category="Archetype",
@@ -70771,7 +68597,6 @@ DefineAbility({
     "PaladinArchetype",
   },
 })
-
 DefineAbility({
   Name="Archetype Ranger",
   Category="Archetype",
@@ -70780,7 +68605,6 @@ DefineAbility({
     "RangerArchetype",
   },
 })
-
 DefineAbility({
   Name="Archetype Rogue",
   Category="Archetype",
@@ -70789,7 +68613,6 @@ DefineAbility({
     "RogueArchetype",
   },
 })
-
 DefineAbility({
   Name="Archetype Wizard",
   Category="Archetype",
@@ -70798,7 +68621,6 @@ DefineAbility({
     "WizardArchetype",
   },
 })
-
 DefineAbility({
   Name="Archetype Sorcerer",
   Category="Archetype",
@@ -70807,7 +68629,6 @@ DefineAbility({
     "Sorcerer Archetype",
   },
 })
-
 DefineAbility({
   Name="Archetype Cleric",
   Category="Archetype",
@@ -70816,7 +68637,6 @@ DefineAbility({
     "ClericArchetype",
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -70882,7 +68702,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Touch Attack (Ray)",
   Category="Natural Attack",
@@ -71104,7 +68923,6 @@ DefineAbility({
     "NaturalAttack",
   },
 })
-
 DefineAbility({
   Name="Blank Weapon Block OS",
   Category="Natural Attack",
@@ -71125,7 +68943,6 @@ DefineAbility({
     "NaturalAttack",
   },
 })
-
 DefineAbility({
   Name="All Automatic Proficiencies",
   Category="Special Ability",
@@ -71154,7 +68971,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 DefineAbility({
   Name="All Martial Weapon Proficiencies",
   Category="Special Ability",
@@ -71178,7 +68994,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Bard Weapon Proficiencies",
   Category="Special Ability",
@@ -71208,7 +69023,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Weapon Proficiencies ~ Bard",
   Category="Internal",
@@ -71229,7 +69043,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Weapon Proficiencies ~ Cleric",
   Category="Internal",
@@ -71240,7 +69053,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Weapon Proficiencies ~ Druid",
   Category="Internal",
@@ -71265,7 +69077,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Weapon Proficiencies ~ Monk",
   Category="Internal",
@@ -71297,7 +69108,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Weapon Proficiencies ~ Rogue",
   Category="Internal",
@@ -71317,7 +69127,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Weapon Prof ~ Auto",
   Category="Internal",
@@ -71344,7 +69153,6 @@ DefineAbility({
     "WeaponProfMartial",
   },
 })
-
 DefineAbility({
   Name="Weapon Prof ~ Simple",
   Category="Internal",
@@ -71367,7 +69175,6 @@ DefineAbility({
     "WeaponProfMartial",
   },
 })
-
 DefineAbility({
   Name="Weapon Prof ~ Martial",
   Category="Internal",
@@ -71389,7 +69196,6 @@ DefineAbility({
     "WeaponProfMartial",
   },
 })
-
 DefineAbility({
   Name="Armor Prof ~ Light",
   Category="Internal",
@@ -71413,7 +69219,6 @@ DefineAbility({
     "ArmorProfHeavy",
   },
 })
-
 DefineAbility({
   Name="Armor Prof ~ Medium",
   Category="Internal",
@@ -71436,7 +69241,6 @@ DefineAbility({
     "ArmorProfHeavy",
   },
 })
-
 DefineAbility({
   Name="Armor Prof ~ Heavy",
   Category="Internal",
@@ -71458,7 +69262,6 @@ DefineAbility({
     "ArmorProfHeavy",
   },
 })
-
 DefineAbility({
   Name="Shield Prof ~ Tower",
   Category="Internal",
@@ -71480,7 +69283,6 @@ DefineAbility({
     "ShieldProfTower",
   },
 })
-
 DefineAbility({
   Name="Shield Prof",
   Category="Internal",
@@ -71510,7 +69312,6 @@ DefineAbility({
     "ShieldProf",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Weapon and Armor Proficiency ~ Bard",
@@ -71569,7 +69370,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Weapon and Armor Proficiency ~ Druid",
@@ -71626,7 +69426,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Weapon and Armor Proficiency ~ Fighter",
@@ -71722,7 +69521,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Weapon and Armor Proficiency ~ Monk",
@@ -71772,7 +69570,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Weapon and Armor Proficiency ~ Paladin",
@@ -71867,7 +69664,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Weapon and Armor Proficiency ~ Ranger",
@@ -71947,7 +69743,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Weapon and Armor Proficiency ~ Rogue",
@@ -72039,7 +69834,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Weapon and Armor Proficiency ~ Adept",
@@ -72053,7 +69847,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Weapon and Armor Proficiency ~ Aristocrat",
@@ -72067,7 +69860,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Weapon and Armor Proficiency ~ Commoner",
@@ -72090,7 +69882,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Weapon and Armor Proficiency ~ Expert",
@@ -72104,7 +69895,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Weapon and Armor Proficiency ~ Warrior",
@@ -72118,7 +69908,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Barbarian Core Class Skills",
   Key="Class Skills ~ Barbarian",
@@ -72136,7 +69925,6 @@ DefineAbility({
     "Swim",
   },
 })
-
 DefineAbility({
   Name="Bard Core Class Skills",
   Key="Class Skills ~ Bard",
@@ -72163,7 +69951,6 @@ DefineAbility({
     "Use Magic Device",
   },
 })
-
 DefineAbility({
   Name="Cleric Core Class Skills",
   Key="Class Skills ~ Cleric",
@@ -72184,7 +69971,6 @@ DefineAbility({
     "Spellcraft",
   },
 })
-
 DefineAbility({
   Name="Druid Core Class Skills",
   Key="Class Skills ~ Druid",
@@ -72205,7 +69991,6 @@ DefineAbility({
     "Swim",
   },
 })
-
 DefineAbility({
   Name="Fighter Core Class Skills",
   Key="Class Skills ~ Fighter",
@@ -72223,7 +70008,6 @@ DefineAbility({
     "Swim",
   },
 })
-
 DefineAbility({
   Name="Paladin Core Class Skills",
   Key="Class Skills ~ Paladin",
@@ -72241,7 +70025,6 @@ DefineAbility({
     "Spellcraft",
   },
 })
-
 DefineAbility({
   Name="Ranger Core Class Skills",
   Key="Class Skills ~ Ranger",
@@ -72264,7 +70047,6 @@ DefineAbility({
     "Swim",
   },
 })
-
 DefineAbility({
   Name="Rogue Core Class Skills",
   Key="Class Skills ~ Rogue",
@@ -72293,7 +70075,6 @@ DefineAbility({
     "Use Magic Device",
   },
 })
-
 DefineAbility({
   Name="Uncanny Dodge ~ Base",
   Category="Special Ability",
@@ -72341,7 +70122,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Retain Dex To AC ~ Flat-footed",
   Category="Special Ability",
@@ -72354,7 +70134,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Uncanny Dodge",
   Category="Special Ability",
@@ -72368,7 +70147,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Improved Uncanny Dodge",
   Category="Special Ability",
@@ -72397,7 +70175,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Evasion",
   Category="Special Ability",
@@ -72426,7 +70203,6 @@ DefineAbility({
     "MonkClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Evasion",
   Key="Evasion Output",
@@ -72441,7 +70217,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Improved Evasion",
   Category="Special Ability",
@@ -72459,7 +70234,6 @@ DefineAbility({
     "MonkClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Trap Sense",
   Category="Special Ability",
@@ -72494,7 +70268,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Timeless Body",
   Category="Special Ability",
@@ -72509,7 +70282,6 @@ DefineAbility({
     "DruidClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Wild Empathy",
   Category="Special Ability",
@@ -72546,7 +70318,6 @@ DefineAbility({
     "RangerClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Woodland Stride",
   Category="Special Ability",
@@ -72562,7 +70333,6 @@ DefineAbility({
     "RangerClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Common Favored Terrain",
   Category="Special Ability",
@@ -72588,7 +70358,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Sneak Attack",
   Key="Sneak Attack",
@@ -72638,7 +70407,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Death Attack",
   Key="Death Attack",
@@ -72673,7 +70441,6 @@ DefineAbility({
     "SpecialAttack",
   },
 })
-
 DefineAbility({
   Name="Slippery Mind",
   Key="Slippery Mind",
@@ -72695,7 +70462,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Aura of Chaos",
   Category="Special Ability",
@@ -72725,7 +70491,6 @@ DefineAbility({
     "PaladinClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Aura of Evil",
   Category="Special Ability",
@@ -72755,7 +70520,6 @@ DefineAbility({
     "PaladinClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Aura of Good",
   Category="Special Ability",
@@ -72785,7 +70549,6 @@ DefineAbility({
     "PaladinClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Aura of Law",
   Category="Special Ability",
@@ -72815,7 +70578,6 @@ DefineAbility({
     "PaladinClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Channel Positive Energy",
   Category="Special Ability",
@@ -72824,7 +70586,6 @@ DefineAbility({
     "Channel Positive Energy",
   },
 })
-
 DefineAbility({
   Name="Channel Negative Energy",
   Category="Special Ability",
@@ -72833,7 +70594,6 @@ DefineAbility({
     "Channel Negative Energy",
   },
 })
-
 DefineAbility({
   Name="Prestige Class ~ Channel Energy",
   Category="Special Ability",
@@ -72866,7 +70626,6 @@ DefineAbility({
     "Channel Energy",
   },
 })
-
 DefineAbility({
   Name="Cleric Extra Channel",
   Category="Special Ability",
@@ -72891,7 +70650,6 @@ DefineAbility({
     "ExtraChannel",
   },
 })
-
 DefineAbility({
   Name="Paladin Extra Channel",
   Category="Special Ability",
@@ -72916,7 +70674,6 @@ DefineAbility({
     "ExtraChannel",
   },
 })
-
 DefineAbility({
   Name="Necromancer Extra Channel",
   Category="Special Ability",
@@ -72940,7 +70697,6 @@ DefineAbility({
     "ExtraChannel",
   },
 })
-
 DefineAbility({
   Name="CMB Output",
   Category="FEAT",
@@ -72967,12 +70723,10 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="CMB",
   Category="Internal",
 })
-
 ModifyAbility({
   Name="CMB",
   Category="Internal",
@@ -73030,7 +70784,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="CMB",
   Category="Internal",
@@ -73051,7 +70804,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="CMB",
   Category="Internal",
@@ -73154,7 +70906,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="CMB",
   Category="Internal",
@@ -73175,7 +70926,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="CMB",
   Category="Internal",
@@ -73196,7 +70946,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="CMB",
   Category="Internal",
@@ -73217,7 +70966,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="CMB",
   Category="Internal",
@@ -73266,7 +71014,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="CMB",
   Category="Internal",
@@ -73287,7 +71034,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="CMB",
   Category="Internal",
@@ -73308,7 +71054,6 @@ ModifyAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="CMB",
   Category="Internal",
@@ -73341,7 +71086,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="No Cantrips",
   Key="No Cantrips ~ Wizard",
@@ -73383,7 +71127,6 @@ DefineAbility({
     "WizardClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Arcane Archer ~ Weapon and Armor Proficiency",
@@ -73397,7 +71140,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Enhance Arrow",
   Key="Arcane Archer ~ Enhance Arrow",
@@ -73436,7 +71178,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Imbue Arrow",
   Key="Arcane Archer ~ Imbue Arrow",
@@ -73450,7 +71191,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Seeker Arrow",
   Key="Arcane Archer ~ Seeker Arrow",
@@ -73485,7 +71225,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Phase Arrow",
   Key="Arcane Archer ~ Phase Arrow",
@@ -73520,7 +71259,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Hail of Arrows",
   Key="Arcane Archer ~ Hail of Arrows",
@@ -73564,7 +71302,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Arrow of Death",
   Key="Arcane Archer ~ Arrow of Death",
@@ -73599,7 +71336,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Arcane Trickster ~ Weapon and Armor Proficiency",
@@ -73613,7 +71349,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Ranged Legerdemain",
   Key="Arcane Trickster ~ Ranged Legerdemain",
@@ -73627,7 +71362,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Impromptu Sneak Attack",
   Key="Arcane Trickster ~ Impromptu Sneak Attack",
@@ -73670,7 +71404,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Tricky Spells",
   Key="Arcane Trickster ~ Tricky Spells",
@@ -73737,7 +71470,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Invisible Thief",
   Key="Arcane Trickster ~ Invisible Thief",
@@ -73751,7 +71483,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Surprise Spells",
   Key="Arcane Trickster ~ Surprise Spells",
@@ -73765,7 +71496,6 @@ DefineAbility({
     "AttackOption",
   },
 })
-
 DefineAbility({
   Name="Sneak Attack",
   Key="Arcane Trickster ~ Sneak Attack",
@@ -73812,7 +71542,6 @@ DefineAbility({
     "ArcaneTricksterClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Assassin ~ Weapon and Armor Proficiency",
@@ -73852,7 +71581,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Save against Poisons",
   Key="Assassin ~ Save against Poisons",
@@ -73897,7 +71625,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Hide in Plain Sight",
   Key="Assassin ~ Hide in Plain Sight",
@@ -73910,7 +71637,6 @@ DefineAbility({
     "ClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Death Attack",
   Key="Assassin ~ Death Attack",
@@ -73943,7 +71669,6 @@ DefineAbility({
     "AssassinClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Poison Use",
   Key="Assassin ~ Poison Use",
@@ -73960,7 +71685,6 @@ DefineAbility({
     "Poison Use",
   },
 })
-
 DefineAbility({
   Name="Hidden Weapons",
   Key="Assassin ~ Hidden Weapons",
@@ -73976,7 +71700,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="True Death",
   Key="Assassin ~ True Death",
@@ -73992,7 +71715,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Quiet Death",
   Key="Assassin ~ Quiet Death",
@@ -74008,7 +71730,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Swift Death",
   Key="Assassin ~ Swift Death",
@@ -74024,7 +71745,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Angel of Death",
   Key="Assassin ~ Angel of Death",
@@ -74040,7 +71760,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Hide in Plain Sight",
   Key="Assassin ~ Hide in Plain Sight",
@@ -74057,7 +71776,6 @@ DefineAbility({
     "ModifyAC",
   },
 })
-
 DefineAbility({
   Name="Uncanny Dodge",
   Key="Assassin ~ Uncanny Dodge",
@@ -74113,7 +71831,6 @@ DefineAbility({
     "AssassinClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Sneak Attack",
   Key="Assassin ~ Sneak Attack",
@@ -74141,7 +71858,6 @@ DefineAbility({
     "AssassinClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Dragon Disciple ~ Weapon and Armor Proficiency",
@@ -74156,7 +71872,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Spells per Day",
   Key="Dragon Disciple ~ Spells per Day",
@@ -74172,7 +71887,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Blood of Dragons",
   Key="Dragon Disciple ~ Blood of Dragons",
@@ -74223,7 +71937,6 @@ DefineAbility({
     "Special Quality",
   },
 })
-
 DefineAbility({
   Name="Natural Armor Increase",
   Key="Dragon Disciple ~ Natural Armor Increase",
@@ -74288,7 +72001,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Ability Boost",
   Key="Dragon Disciple ~ Ability Boost",
@@ -74354,7 +72066,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Bloodline Feat",
   Key="Dragon Disciple ~ Bloodline Feat",
@@ -74385,7 +72096,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Dragon Bite",
   Key="Dragon Disciple ~ Dragon Bite",
@@ -74420,7 +72130,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Breath Weapon",
   Key="Dragon Disciple ~ Breath Weapon",
@@ -74466,7 +72175,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Blindsense",
   Key="Dragon Disciple ~ Blindsense",
@@ -74510,7 +72218,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Dragon Form",
   Key="Dragon Disciple ~ Dragon Form",
@@ -74571,7 +72278,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="Wings",
   Key="Dragon Disciple ~ Wings",
@@ -74618,7 +72324,6 @@ DefineAbility({
     "Special Quality",
   },
 })
-
 DefineAbility({
   Name="Draconic Bloodline",
   Key="Dragon Disciple ~ Draconic Bloodline",
@@ -74665,7 +72370,6 @@ DefineAbility({
     "Dragon Disciple Bloodline Choice",
   },
 })
-
 DefineAbility({
   Name="Draconic Bloodline",
   Key="Draconic Bloodline ~ Standard",
@@ -74762,7 +72466,6 @@ DefineAbility({
     "SorcererBloodlineChoice",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Archmage ~ Weapon and Armor Proficiency",
@@ -74775,7 +72478,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Blackguard ~ Weapon and Armor Proficiency",
@@ -74788,7 +72490,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Duelist ~ Weapon and Armor Proficiency",
@@ -74803,7 +72504,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Canny Defense",
   Key="Duelist ~ Canny Defense",
@@ -74858,7 +72558,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Improved Reaction",
   Key="Duelist ~ Improved Reaction",
@@ -74902,7 +72601,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Enhanced Mobility",
   Key="Duelist ~ Enhanced Mobility",
@@ -74919,7 +72617,6 @@ DefineAbility({
     "ModifyAC",
   },
 })
-
 DefineAbility({
   Name="Grace",
   Key="Duelist ~ Grace",
@@ -74936,7 +72633,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Precise Strike",
   Key="Duelist ~ Precise Strike",
@@ -74983,7 +72679,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Precise Strike (Light)",
   Key="Precise Strike ~ Light",
@@ -75005,7 +72700,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Precise Strike (One-Handed)",
   Key="Precise Strike ~ 1H",
@@ -75027,7 +72721,6 @@ DefineAbility({
     "Internal",
   },
 })
-
 DefineAbility({
   Name="Acrobatic Charge",
   Key="Duelist ~ Acrobatic Charge",
@@ -75043,7 +72736,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Elaborate Defense",
   Key="Duelist ~ Elaborate Defense",
@@ -75096,7 +72788,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Parry",
   Key="Duelist ~ Parry",
@@ -75112,7 +72803,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Riposte",
   Key="Duelist ~ Riposte",
@@ -75128,7 +72818,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="No Retreat",
   Key="Duelist ~ No Retreat",
@@ -75144,7 +72833,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Combat Reflexes",
   Key="Duelist ~ Combat Reflexes",
@@ -75160,7 +72848,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Crippling Critical",
   Key="Duelist ~ Crippling Critical",
@@ -75176,7 +72863,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Deflect Arrows",
   Key="Duelist ~ Deflect Arrows",
@@ -75210,7 +72896,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Weapon and Armor Proficiency ~ Eldritch Knight",
@@ -75224,7 +72909,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Bonus Feat",
   Key="Eldritch Knight ~ Bonus Feat",
@@ -75284,7 +72968,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Diverse Training",
   Key="Eldritch Knight ~ Diverse Training",
@@ -75317,7 +73000,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Spell Critical",
   Key="Eldritch Knight ~ Spell Critical",
@@ -75333,7 +73015,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Weapon and Armor Proficiency ~ Loremaster",
@@ -75347,7 +73028,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Secret Lore",
   Key="Loremaster ~ Secret Lore",
@@ -75402,7 +73082,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Greater Lore",
   Key="Loremaster ~ Greater Lore",
@@ -75418,7 +73097,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="True Lore",
   Key="Loremaster ~ True Lore",
@@ -75434,7 +73112,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Lore",
   Key="Loremaster ~ Lore",
@@ -75458,7 +73135,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Bonus Languages",
   Key="Loremaster ~ Bonus Languages",
@@ -75489,7 +73165,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Add Spoken Language",
   Category="Special Ability",
@@ -75511,7 +73186,6 @@ DefineAbility({
     "AddSpokenLanguage",
   },
 })
-
 DefineAbility({
   Name="Instant Mastery",
   Key="Secret Lore ~ Instant Mastery",
@@ -75547,7 +73221,6 @@ DefineAbility({
     "LoremasterSecret",
   },
 })
-
 DefineAbility({
   Name="Secret Health",
   Key="Secret Lore ~ Secret Health",
@@ -75575,7 +73248,6 @@ DefineAbility({
     "LoremasterSecret",
   },
 })
-
 DefineAbility({
   Name="Secrets of Inner Strength",
   Key="Secret Lore ~ Secrets of Inner Strength",
@@ -75603,7 +73275,6 @@ DefineAbility({
     "LoremasterSecret",
   },
 })
-
 DefineAbility({
   Name="The Lore of True Stamina",
   Key="Secret Lore ~ The Lore of True Stamina",
@@ -75631,7 +73302,6 @@ DefineAbility({
     "LoremasterSecret",
   },
 })
-
 DefineAbility({
   Name="Secret Knowledge of Avoidance",
   Key="Secret Lore ~ Secret Knowledge of Avoidance",
@@ -75659,7 +73329,6 @@ DefineAbility({
     "LoremasterSecret",
   },
 })
-
 DefineAbility({
   Name="Weapon Trick",
   Key="Secret Lore ~ Weapon Trick",
@@ -75687,7 +73356,6 @@ DefineAbility({
     "LoremasterSecret",
   },
 })
-
 DefineAbility({
   Name="Dodge Trick",
   Key="Secret Lore ~ Dodge Trick",
@@ -75718,7 +73386,6 @@ DefineAbility({
     "LoremasterSecret",
   },
 })
-
 DefineAbility({
   Name="Applicable Knowledge",
   Key="Secret Lore ~ Applicable Knowledge",
@@ -75746,7 +73413,6 @@ DefineAbility({
     "LoremasterSecret",
   },
 })
-
 DefineAbility({
   Name="Newfound Arcana",
   Key="Secret Lore ~ Newfound Arcana",
@@ -75781,7 +73447,6 @@ DefineAbility({
     "LoremasterSecret",
   },
 })
-
 DefineAbility({
   Name="More Newfound Arcana",
   Key="Secret Lore ~ More Newfound Arcana",
@@ -75816,7 +73481,6 @@ DefineAbility({
     "LoremasterSecret",
   },
 })
-
 DefineAbility({
   Name="Combined Spells",
   Key="Mystic Theurge ~ Combined Spells",
@@ -75844,7 +73508,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Spell Synthesis",
   Key="Mystic Theurge ~ Spell Synthesis",
@@ -75860,7 +73523,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Bardic Knowledge",
   Key="Pathfinder Chronicler ~ Bardic Knowledge",
@@ -75878,7 +73540,6 @@ DefineAbility({
     "Pathfinder ChroniclerClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Bardic Performance",
   Key="Pathfinder Chronicler ~ Bardic Performance",
@@ -75912,7 +73573,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Deep Pockets",
   Key="Pathfinder Chronicler ~ Deep Pockets",
@@ -75927,7 +73587,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Master Scribe",
   Key="Pathfinder Chronicler ~ Master Scribe",
@@ -75942,7 +73601,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Live to Tell the Tale",
   Key="Pathfinder Chronicler ~ Live to Tell the Tale",
@@ -75957,7 +73615,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Pathfinding",
   Key="Pathfinder Chronicler ~ Pathfinding",
@@ -75972,7 +73629,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Improved Aid",
   Key="Pathfinder Chronicler ~ Improved Aid",
@@ -75987,7 +73643,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Epic Tales",
   Key="Pathfinder Chronicler ~ Epic Tales",
@@ -76002,7 +73657,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Whispering Campaign",
   Key="Pathfinder Chronicler ~ Whispering Campaign",
@@ -76017,7 +73671,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Inspire Action",
   Key="Pathfinder Chronicler ~ Inspire Action",
@@ -76051,7 +73704,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Call Down the Legends",
   Key="Pathfinder Chronicler ~ Call Down the Legends",
@@ -76066,7 +73718,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Greater Epic Tales",
   Key="Pathfinder Chronicler ~ Greater Epic Tales",
@@ -76081,7 +73732,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Lay of the Exalted Dead",
   Key="Pathfinder Chronicler ~ Lay of the Exalted Dead",
@@ -76096,7 +73746,6 @@ DefineAbility({
     "Supernatural",
   },
 })
-
 DefineAbility({
   Name="Weapon and Armor Proficiency",
   Key="Shadowdancer ~ Weapon and Armor Proficiency",
@@ -76141,7 +73790,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Hide in Plain Sight",
   Key="Shadowdancer ~ Hide in Plain Sight",
@@ -76157,7 +73805,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Darkvision",
   Key="Shadowdancer ~ Darkvision",
@@ -76175,7 +73822,6 @@ DefineAbility({
     "Extraordinary",
   },
 })
-
 DefineAbility({
   Name="Rogue Talents",
   Key="Shadowdancer ~ Rogue Talents",
@@ -76203,7 +73849,6 @@ DefineAbility({
     "SpecialQuality",
   },
 })
-
 DefineAbility({
   Name="Shadow Illusion",
   Key="Shadowdancer ~ Shadow Illusion",
@@ -76237,7 +73882,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="Summon Shadow",
   Key="Shadowdancer ~ Summon Shadow",
@@ -76273,7 +73917,6 @@ DefineAbility({
     ['Shadow Companion']=1,
   },
 })
-
 DefineAbility({
   Name="Shadow Call",
   Key="Shadowdancer ~ Shadow Call",
@@ -76314,7 +73957,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="Shadow Jump",
   Key="Shadowdancer ~ Shadow Jump",
@@ -76389,7 +74031,6 @@ DefineAbility({
     "ModifyMovement",
   },
 })
-
 DefineAbility({
   Name="Defensive Roll",
   Key="Shadowdancer ~ Defensive Roll",
@@ -76414,7 +74055,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Shadow Power",
   Key="Shadowdancer ~ Shadow Power",
@@ -76429,7 +74069,6 @@ DefineAbility({
     "SpellLike",
   },
 })
-
 DefineAbility({
   Name="Shadow Master",
   Key="Shadowdancer ~ Shadow Master",
@@ -76445,7 +74084,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Uncanny Dodge",
   Key="Shadowdancer ~ Uncanny Dodge",
@@ -76484,7 +74122,6 @@ DefineAbility({
     "ShadowdancerClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Evasion",
   Key="Shadowdancer ~ Evasion",
@@ -76494,7 +74131,6 @@ DefineAbility({
     "ShadowdancerClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Slippery Mind",
   Key="Shadowdancer ~ Slippery Mind",
@@ -76513,7 +74149,6 @@ DefineAbility({
     "ShadowdancerClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Improved Evasion",
   Key="Shadowdancer ~ Improved Evasion",
@@ -76532,7 +74167,6 @@ DefineAbility({
     "ShadowdancerClassFeatures",
   },
 })
-
 DefineAbility({
   Name="Barbarian Class",
   Category="Internal",
@@ -76758,7 +74392,6 @@ DefineAbility({
     "ClassFeaturesProgression",
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -77029,7 +74662,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Bard Class",
   Category="Internal",
@@ -77044,7 +74676,6 @@ DefineAbility({
     "CastingClassSupport",
   },
 })
-
 DefineAbility({
   Name="Cleric Class",
   Category="Internal",
@@ -77059,7 +74690,6 @@ DefineAbility({
     "CastingClassSupport",
   },
 })
-
 DefineAbility({
   Name="Sorcerer Class",
   Category="Internal",
@@ -77074,7 +74704,6 @@ DefineAbility({
     "CastingClassSupport",
   },
 })
-
 DefineAbility({
   Name="Wizard Class",
   Category="Internal",
@@ -77089,7 +74718,6 @@ DefineAbility({
     "CastingClassSupport",
   },
 })
-
 DefineAbility({
   Name="Air Domain",
   Category="Internal",
@@ -77127,7 +74755,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Animal Domain",
   Category="Internal",
@@ -77165,7 +74792,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Chaos Domain",
   Category="Internal",
@@ -77203,7 +74829,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Death Domain",
   Category="Internal",
@@ -77241,7 +74866,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Destruction Domain",
   Category="Internal",
@@ -77279,7 +74903,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Earth Domain",
   Category="Internal",
@@ -77317,7 +74940,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Evil Domain",
   Category="Internal",
@@ -77355,7 +74977,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Fire Domain",
   Category="Internal",
@@ -77393,7 +75014,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Good Domain",
   Category="Internal",
@@ -77431,7 +75051,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Healing Domain",
   Category="Internal",
@@ -77469,7 +75088,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Law Domain",
   Category="Internal",
@@ -77507,7 +75125,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Luck Domain",
   Category="Internal",
@@ -77545,7 +75162,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Knowledge Domain",
   Category="Internal",
@@ -77583,7 +75199,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Magic Domain",
   Category="Internal",
@@ -77621,7 +75236,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Plant Domain",
   Category="Internal",
@@ -77659,7 +75273,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Protection Domain",
   Category="Internal",
@@ -77697,7 +75310,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Strength Domain",
   Category="Internal",
@@ -77735,7 +75347,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Sun Domain",
   Category="Internal",
@@ -77773,7 +75384,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Travel Domain",
   Category="Internal",
@@ -77811,7 +75421,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Trickery Domain",
   Category="Internal",
@@ -77849,7 +75458,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="War Domain",
   Category="Internal",
@@ -77887,7 +75495,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Water Domain",
   Category="Internal",
@@ -77925,7 +75532,6 @@ DefineAbility({
     "MonsterDomainGranter",
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Air",
   Category="Internal",
@@ -77997,7 +75603,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Animal",
   Category="Internal",
@@ -78069,7 +75674,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Chaos",
   Category="Internal",
@@ -78141,7 +75745,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Death",
   Category="Internal",
@@ -78213,7 +75816,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Destruction",
   Category="Internal",
@@ -78285,7 +75887,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Earth",
   Category="Internal",
@@ -78357,7 +75958,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Evil",
   Category="Internal",
@@ -78429,7 +76029,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Fire",
   Category="Internal",
@@ -78501,7 +76100,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Good",
   Category="Internal",
@@ -78573,7 +76171,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Healing",
   Category="Internal",
@@ -78645,7 +76242,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Law",
   Category="Internal",
@@ -78717,7 +76313,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Luck",
   Category="Internal",
@@ -78789,7 +76384,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Knowledge",
   Category="Internal",
@@ -78861,7 +76455,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Magic",
   Category="Internal",
@@ -78933,7 +76526,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Plant",
   Category="Internal",
@@ -79005,7 +76597,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Protection",
   Category="Internal",
@@ -79077,7 +76668,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Strength",
   Category="Internal",
@@ -79149,7 +76739,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Sun",
   Category="Internal",
@@ -79221,7 +76810,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Travel",
   Category="Internal",
@@ -79293,7 +76881,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Trickery",
   Category="Internal",
@@ -79365,7 +76952,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ War",
   Category="Internal",
@@ -79437,7 +77023,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Sorcerer Domain ~ Water",
   Category="Internal",
@@ -79509,7 +77094,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Air",
   Category="Internal",
@@ -79581,7 +77165,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Animal",
   Category="Internal",
@@ -79653,7 +77236,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Chaos",
   Category="Internal",
@@ -79725,7 +77307,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Death",
   Category="Internal",
@@ -79797,7 +77378,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Destruction",
   Category="Internal",
@@ -79869,7 +77449,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Earth",
   Category="Internal",
@@ -79941,7 +77520,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Evil",
   Category="Internal",
@@ -80013,7 +77591,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Fire",
   Category="Internal",
@@ -80085,7 +77662,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Good",
   Category="Internal",
@@ -80157,7 +77733,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Healing",
   Category="Internal",
@@ -80229,7 +77804,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Law",
   Category="Internal",
@@ -80301,7 +77875,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Luck",
   Category="Internal",
@@ -80373,7 +77946,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Knowledge",
   Category="Internal",
@@ -80445,7 +78017,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Magic",
   Category="Internal",
@@ -80517,7 +78088,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Plant",
   Category="Internal",
@@ -80589,7 +78159,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Protection",
   Category="Internal",
@@ -80661,7 +78230,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Strength",
   Category="Internal",
@@ -80733,7 +78301,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Sun",
   Category="Internal",
@@ -80805,7 +78372,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Travel",
   Category="Internal",
@@ -80877,7 +78443,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Trickery",
   Category="Internal",
@@ -80949,7 +78514,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ War",
   Category="Internal",
@@ -81021,7 +78585,6 @@ DefineAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Cleric Domain ~ Water",
   Category="Internal",
@@ -81093,7 +78656,6 @@ DefineAbility({
     },
   },
 })
-
 ModifyAbility({
   Name="Default",
   Category="Internal",
@@ -81132,7 +78694,6 @@ ModifyAbility({
     },
   },
 })
-
 DefineAbility({
   Name="Acid Splash",
   Category="Spell-Like Ability",
@@ -81208,7 +78769,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Arcane Mark",
   Category="Spell-Like Ability",
@@ -81284,7 +78844,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Bleed",
   Category="Spell-Like Ability",
@@ -81360,7 +78919,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Create Water",
   Category="Spell-Like Ability",
@@ -81436,7 +78994,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Dancing Lights",
   Category="Spell-Like Ability",
@@ -81512,7 +79069,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Daze",
   Category="Spell-Like Ability",
@@ -81588,7 +79144,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Detect Magic",
   Category="Spell-Like Ability",
@@ -81664,7 +79219,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Detect Poison",
   Category="Spell-Like Ability",
@@ -81740,7 +79294,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Disrupt Undead",
   Category="Spell-Like Ability",
@@ -81816,7 +79369,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Flare",
   Category="Spell-Like Ability",
@@ -81892,7 +79444,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Ghost Sound",
   Category="Spell-Like Ability",
@@ -81968,7 +79519,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Guidance",
   Category="Spell-Like Ability",
@@ -82044,7 +79594,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Know Direction",
   Category="Spell-Like Ability",
@@ -82120,7 +79669,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Light",
   Category="Spell-Like Ability",
@@ -82196,7 +79744,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Lullaby",
   Category="Spell-Like Ability",
@@ -82272,7 +79819,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Mage Hand",
   Category="Spell-Like Ability",
@@ -82348,7 +79894,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Mending",
   Category="Spell-Like Ability",
@@ -82424,7 +79969,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Message",
   Category="Spell-Like Ability",
@@ -82500,7 +80044,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Open/Close",
   Category="Spell-Like Ability",
@@ -82576,7 +80119,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Prestidigitation",
   Category="Spell-Like Ability",
@@ -82652,7 +80194,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Purify Food and Drink",
   Category="Spell-Like Ability",
@@ -82728,7 +80269,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Ray of Frost",
   Category="Spell-Like Ability",
@@ -82804,7 +80344,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Read Magic",
   Category="Spell-Like Ability",
@@ -82880,7 +80419,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Resistance",
   Category="Spell-Like Ability",
@@ -82956,7 +80494,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Stabilize",
   Category="Spell-Like Ability",
@@ -83032,7 +80569,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Summon Instrument",
   Category="Spell-Like Ability",
@@ -83108,7 +80644,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Touch of Fatigue",
   Category="Spell-Like Ability",
@@ -83184,7 +80719,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Virtue",
   Category="Spell-Like Ability",
@@ -83260,7 +80794,6 @@ DefineAbility({
     "SpellLikeArcaneLVL0",
   },
 })
-
 DefineAbility({
   Name="Acid Splash",
   Key="Spell ~ Acid Splash",
@@ -83279,7 +80812,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Arcane Mark",
   Key="Spell ~ Arcane Mark",
@@ -83298,7 +80830,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Bleed",
   Key="Spell ~ Bleed",
@@ -83318,7 +80849,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Create Water",
   Key="Spell ~ Create Water",
@@ -83338,7 +80868,6 @@ DefineAbility({
     "Cleric_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Dancing Lights",
   Key="Spell ~ Dancing Lights",
@@ -83358,7 +80887,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Daze",
   Key="Spell ~ Daze",
@@ -83378,7 +80906,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Detect Magic",
   Key="Spell ~ Detect Magic",
@@ -83400,7 +80927,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Detect Poison",
   Key="Spell ~ Detect Poison",
@@ -83421,7 +80947,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Disrupt Undead",
   Key="Spell ~ Disrupt Undead",
@@ -83440,7 +80965,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Flare",
   Key="Spell ~ Flare",
@@ -83461,7 +80985,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Ghost Sound",
   Key="Spell ~ Ghost Sound",
@@ -83481,7 +81004,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Guidance",
   Key="Spell ~ Guidance",
@@ -83501,7 +81023,6 @@ DefineAbility({
     "Cleric_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Know Direction",
   Key="Spell ~ Know Direction",
@@ -83521,7 +81042,6 @@ DefineAbility({
     "Bard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Light",
   Key="Spell ~ Light",
@@ -83543,7 +81063,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Lullaby",
   Key="Spell ~ Lullaby",
@@ -83562,7 +81081,6 @@ DefineAbility({
     "Bard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Mage Hand",
   Key="Spell ~ Mage Hand",
@@ -83582,7 +81100,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Mending",
   Key="Spell ~ Mending",
@@ -83604,7 +81121,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Message",
   Key="Spell ~ Message",
@@ -83624,7 +81140,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Open/Close",
   Key="Spell ~ Open/Close",
@@ -83644,7 +81159,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Prestidigitation",
   Key="Spell ~ Prestidigitation",
@@ -83664,7 +81178,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Purify Food and Drink",
   Key="Spell ~ Purify Food and Drink",
@@ -83684,7 +81197,6 @@ DefineAbility({
     "Cleric_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Ray of Frost",
   Key="Spell ~ Ray of Frost",
@@ -83703,7 +81215,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Read Magic",
   Key="Spell ~ Read Magic",
@@ -83725,7 +81236,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Resistance",
   Key="Spell ~ Resistance",
@@ -83747,7 +81257,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Stabilize",
   Key="Spell ~ Stabilize",
@@ -83767,7 +81276,6 @@ DefineAbility({
     "Cleric_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Summon Instrument",
   Key="Spell ~ Summon Instrument",
@@ -83786,7 +81294,6 @@ DefineAbility({
     "Bard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Touch of Fatigue",
   Key="Spell ~ Touch of Fatigue",
@@ -83805,7 +81312,6 @@ DefineAbility({
     "Wizard_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Virtue",
   Key="Spell ~ Virtue",
@@ -83825,7 +81331,6 @@ DefineAbility({
     "Cleric_SLA_LVL0",
   },
 })
-
 DefineAbility({
   Name="Calm Animals",
   Category="Spell-Like Ability",
@@ -83901,7 +81406,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Charm Animal",
   Category="Spell-Like Ability",
@@ -83977,7 +81481,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Cure Light Wounds",
   Category="Spell-Like Ability",
@@ -84053,7 +81556,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Detect Animals or Plants",
   Category="Spell-Like Ability",
@@ -84129,7 +81631,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Detect Snares and Pits",
   Category="Spell-Like Ability",
@@ -84205,7 +81706,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Endure Elements",
   Category="Spell-Like Ability",
@@ -84281,7 +81781,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Entangle",
   Category="Spell-Like Ability",
@@ -84357,7 +81856,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Faerie Fire",
   Category="Spell-Like Ability",
@@ -84433,7 +81931,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Goodberry",
   Category="Spell-Like Ability",
@@ -84509,7 +82006,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Hide from Animals",
   Category="Spell-Like Ability",
@@ -84585,7 +82081,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Jump",
   Category="Spell-Like Ability",
@@ -84661,7 +82156,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Longstrider",
   Category="Spell-Like Ability",
@@ -84737,7 +82231,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Magic Fang",
   Category="Spell-Like Ability",
@@ -84813,7 +82306,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Magic Stone",
   Category="Spell-Like Ability",
@@ -84889,7 +82381,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Obscuring Mist",
   Category="Spell-Like Ability",
@@ -84965,7 +82456,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Pass without Trace",
   Category="Spell-Like Ability",
@@ -85041,7 +82531,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Produce Flame",
   Category="Spell-Like Ability",
@@ -85117,7 +82606,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Shillelagh",
   Category="Spell-Like Ability",
@@ -85193,7 +82681,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Speak with Animals",
   Category="Spell-Like Ability",
@@ -85269,7 +82756,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Summon Nature's Ally I",
   Category="Spell-Like Ability",
@@ -85345,7 +82831,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Darkness",
   Category="Spell-Like Ability",
@@ -85421,7 +82906,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Deeper Darkness",
   Category="Spell-Like Ability",
@@ -85497,7 +82981,6 @@ DefineAbility({
     "SpellLikeDivineLVL1",
   },
 })
-
 DefineAbility({
   Name="Levitate",
   Category="Spell-Like Ability",
@@ -85573,7 +83056,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Detect Magic",
   Category="Spell-Like Ability",
@@ -85649,7 +83131,6 @@ DefineAbility({
     "SpellLikeArcaneLVL1",
   },
 })
-
 DefineAbility({
   Name="Calm Animals",
   Key="Spell ~ Calm Animals",
@@ -85668,7 +83149,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Charm Animal",
   Key="Spell ~ Charm Animal",
@@ -85687,7 +83167,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Cure Light Wounds",
   Key="Spell ~ Cure Light Wounds",
@@ -85707,7 +83186,6 @@ DefineAbility({
     "Cleric_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Detect Animals or Plants",
   Key="Spell ~ Detect Animals or Plants",
@@ -85726,7 +83204,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Detect Snares and Pits",
   Key="Spell ~ Detect Snares and Pits",
@@ -85745,7 +83222,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Endure Elements",
   Key="Spell ~ Endure Elements",
@@ -85765,7 +83241,6 @@ DefineAbility({
     "Cleric_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Entangle",
   Key="Spell ~ Entangle",
@@ -85784,7 +83259,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Faerie Fire",
   Key="Spell ~ Faerie Fire",
@@ -85803,7 +83277,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Goodberry",
   Key="Spell ~ Goodberry",
@@ -85822,7 +83295,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Hide from Animals",
   Key="Spell ~ Hide from Animals",
@@ -85841,7 +83313,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Jump",
   Key="Spell ~ Jump",
@@ -85860,7 +83331,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Longstrider",
   Key="Spell ~ Longstrider",
@@ -85879,7 +83349,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Magic Fang",
   Key="Spell ~ Magic Fang",
@@ -85898,7 +83367,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Magic Stone",
   Key="Spell ~ Magic Stone",
@@ -85918,7 +83386,6 @@ DefineAbility({
     "Cleric_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Obscuring Mist",
   Key="Spell ~ Obscuring Mist",
@@ -85938,7 +83405,6 @@ DefineAbility({
     "Cleric_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Pass without Trace",
   Key="Spell ~ Pass without Trace",
@@ -85957,7 +83423,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Produce Flame",
   Key="Spell ~ Produce Flame",
@@ -85976,7 +83441,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Shillelagh",
   Key="Spell ~ Shillelagh",
@@ -85995,7 +83459,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Speak with Animals",
   Key="Spell ~ Speak with Animals",
@@ -86014,7 +83477,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Summon Nature's Ally I",
   Key="Spell ~ Summon Nature's Ally I",
@@ -86033,7 +83495,6 @@ DefineAbility({
     "Druid_SLA_LVL1",
   },
 })
-
 DefineAbility({
   Name="Lightning Arc",
   Key="Air Domain ~ Lightning Arc",
@@ -86080,7 +83541,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Electricity Resistance",
   Key="Air Domain ~ Electricity Resistance",
@@ -86156,7 +83616,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Speak with Animals",
   Key="Animal Domain ~ Speak with Animals",
@@ -86205,7 +83664,6 @@ DefineAbility({
     "Communicate",
   },
 })
-
 DefineAbility({
   Name="Animal Companion",
   Key="Animal Domain ~ Animal Companion",
@@ -86243,7 +83701,6 @@ DefineAbility({
     ['Animal Companion']=1,
   },
 })
-
 DefineAbility({
   Name="Artificer's Touch",
   Key="Artifice Domain ~ Artificer's Touch",
@@ -86297,7 +83754,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Dancing Weapons",
   Key="Artifice Domain ~ Dancing Weapons",
@@ -86345,7 +83801,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Touch of Chaos",
   Key="Chaos Domain ~ Touch of Chaos",
@@ -86393,7 +83848,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Chaos Blade",
   Key="Chaos Domain ~ Chaos Blade",
@@ -86443,7 +83897,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Dazing Touch",
   Key="Charm Domain ~ Dazing Touch",
@@ -86492,7 +83945,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Charming Smile",
   Key="Charm Domain ~ Charming Smile",
@@ -86534,7 +83986,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Calming Touch",
   Key="Community Domain ~ Calming Touch",
@@ -86583,7 +84034,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Unity",
   Key="Community Domain ~ Unity",
@@ -86631,7 +84081,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Touch of Darkness",
   Key="Darkness Domain ~ Touch of Darkness",
@@ -86680,7 +84129,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Eyes of Darkness",
   Key="Darkness Domain ~ Eyes of Darkness",
@@ -86729,7 +84177,6 @@ DefineAbility({
     "Sense",
   },
 })
-
 DefineAbility({
   Name="Bleeding Touch",
   Key="Death Domain ~ Bleeding Touch",
@@ -86778,7 +84225,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Death's Embrace",
   Key="Death Domain ~ Death's Embrace",
@@ -86794,7 +84240,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Destructive Smite",
   Key="Destruction Domain ~ Destructive Smite",
@@ -86843,7 +84288,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Destructive Aura",
   Key="Destruction Domain ~ Destructive Aura",
@@ -86893,7 +84337,6 @@ DefineAbility({
     "Aura",
   },
 })
-
 DefineAbility({
   Name="Acid Dart",
   Key="Earth Domain ~ Acid Dart",
@@ -86947,7 +84390,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Acid Resistance",
   Key="Earth Domain ~ Acid Resistance",
@@ -87023,7 +84465,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Touch of Evil",
   Key="Evil Domain ~ Touch of Evil",
@@ -87072,7 +84513,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Scythe of Evil",
   Key="Evil Domain ~ Scythe of Evil",
@@ -87121,7 +84561,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Fire Bolt",
   Key="Fire Domain ~ Fire Bolt",
@@ -87175,7 +84614,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Fire Resistance",
   Key="Fire Domain ~ Fire Resistance",
@@ -87251,7 +84689,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Touch of Glory",
   Key="Glory Domain ~ Touch of Glory",
@@ -87300,7 +84737,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Divine Presence",
   Key="Glory Domain ~ Divine Presence",
@@ -87343,7 +84779,6 @@ DefineAbility({
     "Aura",
   },
 })
-
 DefineAbility({
   Name="Touch of Good",
   Key="Domain Power ~ Touch of Good",
@@ -87392,7 +84827,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Holy Lance",
   Key="Domain Power ~ Holy Lance",
@@ -87441,7 +84875,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Rebuke Death",
   Key="Healing Domain ~ Rebuke Death",
@@ -87495,7 +84928,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Healer's Blessing",
   Key="Healing Domain ~ Healer's Blessing",
@@ -87511,7 +84943,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Lore Keeper",
   Key="Knowledge Domain ~ Lore Keeper",
@@ -87539,7 +84970,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Remote Viewing",
   Key="Knowledge Domain ~ Remote Viewing",
@@ -87587,7 +85017,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Touch of Law",
   Key="Law Domain ~ Touch of Law",
@@ -87635,7 +85064,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Staff of Order",
   Key="Law Domain ~ Staff of Order",
@@ -87684,7 +85112,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Liberation",
   Key="Liberation Domain ~ Liberation",
@@ -87733,7 +85160,6 @@ DefineAbility({
     "ModifyMovement",
   },
 })
-
 DefineAbility({
   Name="Freedom's Call",
   Key="Liberation Domain ~ Freedom's Call",
@@ -87782,7 +85208,6 @@ DefineAbility({
     "Aura",
   },
 })
-
 DefineAbility({
   Name="Bit of Luck",
   Key="Luck Domain ~ Bit of Luck",
@@ -87831,7 +85256,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Good Fortune",
   Key="Luck Domain ~ Good Fortune",
@@ -87880,7 +85304,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Vision of Madness",
   Key="Madness Domain ~ Vision of Madness",
@@ -87929,7 +85352,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Aura of Madness",
   Key="Madness Domain ~ Aura of Madness",
@@ -87979,7 +85401,6 @@ DefineAbility({
     "Aura",
   },
 })
-
 DefineAbility({
   Name="Hand of the Acolyte",
   Key="Magic Domain ~ Hand of the Acolyte",
@@ -88027,7 +85448,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Dispelling Touch",
   Key="Magic Domain ~ Dispelling Touch",
@@ -88075,7 +85495,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Inspiring Word",
   Key="Nobility Domain ~ Inspiring Word",
@@ -88095,7 +85514,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Leadership",
   Key="Nobility Domain ~ Leadership",
@@ -88120,7 +85538,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Wooden Fist",
   Key="Plant Domain ~ Wooden Fist",
@@ -88169,7 +85586,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Bramble Armor",
   Key="Plant Domain ~ Bramble Armor",
@@ -88219,7 +85635,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Resistant Touch",
   Key="Protection Domain ~ Resistant Touch",
@@ -88269,7 +85684,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Aura of Protection",
   Key="Protection Domain ~ Aura of Protection",
@@ -88319,7 +85733,6 @@ DefineAbility({
     "Aura",
   },
 })
-
 DefineAbility({
   Name="Gentle Rest",
   Key="Repose Domain ~ Gentle Rest",
@@ -88368,7 +85781,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Ward Against Death",
   Key="Repose Domain ~ Ward Against Death",
@@ -88417,7 +85829,6 @@ DefineAbility({
     "Aura",
   },
 })
-
 DefineAbility({
   Name="Blast Rune",
   Key="Rune Domain ~ Blast Rune",
@@ -88472,7 +85883,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Spell Rune",
   Key="Rune Domain ~ Spell Rune",
@@ -88488,7 +85898,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Strength Surge",
   Key="Strength Domain ~ Strength Surge",
@@ -88537,7 +85946,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Might of the Gods",
   Key="Strength Domain ~ Might of the Gods",
@@ -88585,7 +85993,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Sun's Blessing",
   Key="Sun Domain ~ Sun's Blessing",
@@ -88604,7 +86011,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Nimbus of Light",
   Key="Sun Domain ~ Nimbus of Light",
@@ -88653,7 +86059,6 @@ DefineAbility({
     "Aura",
   },
 })
-
 DefineAbility({
   Name="Agile Feet",
   Key="Travel Domain ~ Agile Feet",
@@ -88702,7 +86107,6 @@ DefineAbility({
     "ModifyMovement",
   },
 })
-
 DefineAbility({
   Name="Dimensional Hop",
   Key="Travel Domain ~ Dimensional Hop",
@@ -88751,7 +86155,6 @@ DefineAbility({
     "ModifyMovement",
   },
 })
-
 DefineAbility({
   Name="Copycat",
   Key="Trickery Domain ~ Copycat",
@@ -88800,7 +86203,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Master's Illusion",
   Key="Trickery Domain ~ Master's Illusion",
@@ -88850,7 +86252,6 @@ DefineAbility({
     "Defensive",
   },
 })
-
 DefineAbility({
   Name="Battle Rage",
   Key="Domain Power ~ Battle Rage",
@@ -88909,7 +86310,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Weapon Master",
   Key="Domain Power ~ Weapon Master",
@@ -88957,7 +86357,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Icicle",
   Key="Water Domain ~ Icicle",
@@ -89011,7 +86410,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Cold Resistance",
   Key="Water Domain ~ Cold Resistance",
@@ -89087,7 +86485,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Storm Burst",
   Key="Weather Domain ~ Storm Burst",
@@ -89141,7 +86538,6 @@ DefineAbility({
     "DomainPower",
   },
 })
-
 DefineAbility({
   Name="Lightning Lord",
   Key="Weather Domain ~ Lightning Lord",
@@ -89182,4 +86578,3 @@ DefineAbility({
     "DomainPower",
   },
 })
-

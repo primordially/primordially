@@ -52,7 +52,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Leather",
   Key="Material ~ Leather",
@@ -96,7 +95,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Rope",
   Key="Material ~ Rope",
@@ -140,7 +138,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Steel",
   Key="Material ~ Steel",
@@ -187,7 +184,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Wood",
   Key="Material ~ Wood",
@@ -235,7 +231,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Masterwork (Weapon)",
   Key="Special Quality ~ Masterwork ~ Weapon",
@@ -288,7 +283,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Masterwork",
   Key="Special Quality ~ Masterwork ~ Ammunition",
@@ -337,7 +331,6 @@ DefineEquipmentModifier({
     "Ammunition",
   },
 })
-
 DefineEquipmentModifier({
   Name="Masterwork (Armor or Shield)",
   Key="Special Quality ~ Masterwork ~ Armor",
@@ -399,7 +392,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Masterwork",
   Key="Special Quality ~ Masterwork ~ Item",
@@ -450,7 +442,6 @@ DefineEquipmentModifier({
     "Tools",
   },
 })
-
 DefineEquipmentModifier({
   Name="Masterwork",
   Key="Special Quality ~ Masterwork ~ Bonded Object",
@@ -478,7 +469,6 @@ DefineEquipmentModifier({
     "Wand",
   },
 })
-
 DefineEquipmentModifier({
   Name="Bonded Object",
   Key="Special Quality ~ Bonded Object",
@@ -535,7 +525,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Thrown Ammunition",
   Key="Special Quality ~ Thrown Ammunition",
@@ -667,7 +656,6 @@ DefineEquipmentModifier({
     },
   },
 })
-
 DefineEquipmentModifier({
   Name="Composite Bow Strength Rating",
   Key="Special Quality ~ Composite Bow Strength Rating",
@@ -751,7 +739,6 @@ DefineEquipmentModifier({
     "Composite",
   },
 })
-
 DefineEquipmentModifier({
   Name="Brace",
   Key="Special Quality ~ Brace",
@@ -774,7 +761,6 @@ DefineEquipmentModifier({
     "SpecialWeaponQualities",
   },
 })
-
 DefineEquipmentModifier({
   Name="Disarm",
   Key="Special Quality ~ Disarm",
@@ -797,7 +783,6 @@ DefineEquipmentModifier({
     "SpecialWeaponQualities",
   },
 })
-
 DefineEquipmentModifier({
   Name="Double",
   Key="Special Quality ~ Double",
@@ -817,7 +802,6 @@ DefineEquipmentModifier({
     "SpecailWeaponQualities",
   },
 })
-
 DefineEquipmentModifier({
   Name="Monk",
   Key="Special Quality ~ Monk",
@@ -840,7 +824,6 @@ DefineEquipmentModifier({
     "SpecialWeaponQualities",
   },
 })
-
 DefineEquipmentModifier({
   Name="Nonlethal",
   Key="Special Quality ~ Nonlethal",
@@ -863,7 +846,6 @@ DefineEquipmentModifier({
     "SpecialWeaponQualities",
   },
 })
-
 DefineEquipmentModifier({
   Name="Reach",
   Key="Special Quality ~ Reach",
@@ -886,7 +868,6 @@ DefineEquipmentModifier({
     "SpecialWeaponQualities",
   },
 })
-
 DefineEquipmentModifier({
   Name="Trip",
   Key="Special Quality ~ Trip",
@@ -909,7 +890,6 @@ DefineEquipmentModifier({
     "SpecialWeaponQualities",
   },
 })
-
 DefineEquipmentModifier({
   Name="Armor Spikes",
   Key="Special Quality ~ Spikes ~ Armor",
@@ -941,7 +921,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="Shield Spikes",
   Key="Special Quality ~ Spikes ~ Shield",
@@ -989,7 +968,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Shield Spikes",
   Key="Special Quality ~ Spikes ~ Shieldbash",
@@ -1018,7 +996,6 @@ DefineEquipmentModifier({
     "Shieldbash",
   },
 })
-
 DefineEquipmentModifier({
   Name="Locked Gauntlets",
   Key="Special Quality ~ Locked Gauntlet",
@@ -1046,7 +1023,6 @@ DefineEquipmentModifier({
     "Gauntlet",
   },
 })
-
 DefineEquipmentModifier({
   Name="Nonhumanoid",
   Key="Special Quality ~ Nonhumanoid ~ Armor",
@@ -1057,7 +1033,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="Broken",
   Key="Special Quality ~ Broken ~ Weapon",
@@ -1110,7 +1085,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Broken",
   Key="Special Quality ~ Broken ~ Armor",
@@ -1151,7 +1125,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="Broken",
   Key="Special Quality ~ Broken ~ Shield",
@@ -1192,7 +1165,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Broken",
   Key="Special Quality ~ Broken ~ Item",
@@ -1233,7 +1205,6 @@ DefineEquipmentModifier({
     "Tools",
   },
 })
-
 DefineEquipmentModifier({
   Name="Broken",
   Key="Special Quality ~ Broken ~ Magic Item",
@@ -1287,7 +1258,6 @@ DefineEquipmentModifier({
     "Staff",
   },
 })
-
 DefineEquipmentModifier({
   Name="Wooden",
   Key="Holy Symbol (Wooden)",
@@ -1308,7 +1278,6 @@ DefineEquipmentModifier({
     "Divine Focus",
   },
 })
-
 DefineEquipmentModifier({
   Name="Silver",
   Key="Holy Symbol (Silver)",
@@ -1338,7 +1307,6 @@ DefineEquipmentModifier({
     "Divine Focus",
   },
 })
-
 DefineEquipmentModifier({
   Name="Armor",
   Key="Artisan's Tools (Armor)",
@@ -1379,7 +1347,6 @@ DefineEquipmentModifier({
     "CraftToolsArmor",
   },
 })
-
 DefineEquipmentModifier({
   Name="Baskets",
   Key="Artisan's Tools (Baskets)",
@@ -1420,7 +1387,6 @@ DefineEquipmentModifier({
     "CraftToolsBaskets",
   },
 })
-
 DefineEquipmentModifier({
   Name="Books",
   Key="Artisan's Tools (Books)",
@@ -1461,7 +1427,6 @@ DefineEquipmentModifier({
     "CraftToolsBooks",
   },
 })
-
 DefineEquipmentModifier({
   Name="Bows",
   Key="Artisan's Tools (Bows)",
@@ -1502,7 +1467,6 @@ DefineEquipmentModifier({
     "CraftToolsBows",
   },
 })
-
 DefineEquipmentModifier({
   Name="Calligraphy",
   Key="Artisan's Tools (Calligraphy)",
@@ -1543,7 +1507,6 @@ DefineEquipmentModifier({
     "CraftToolsCalligraphy",
   },
 })
-
 DefineEquipmentModifier({
   Name="Carpentry",
   Key="Artisan's Tools (Carpentry)",
@@ -1584,7 +1547,6 @@ DefineEquipmentModifier({
     "CraftToolsCarpentry",
   },
 })
-
 DefineEquipmentModifier({
   Name="Cloth",
   Key="Artisan's Tools (Cloth)",
@@ -1625,7 +1587,6 @@ DefineEquipmentModifier({
     "CraftToolsCloth",
   },
 })
-
 DefineEquipmentModifier({
   Name="Clothing",
   Key="Artisan's Tools (Clothing)",
@@ -1666,7 +1627,6 @@ DefineEquipmentModifier({
     "CraftToolsClothing",
   },
 })
-
 DefineEquipmentModifier({
   Name="Gemcutting",
   Key="Artisan's Tools (Gemcutting)",
@@ -1707,7 +1667,6 @@ DefineEquipmentModifier({
     "CraftToolsGemcutting",
   },
 })
-
 DefineEquipmentModifier({
   Name="Glass",
   Key="Artisan's Tools (Glass)",
@@ -1748,7 +1707,6 @@ DefineEquipmentModifier({
     "CraftToolsGlass",
   },
 })
-
 DefineEquipmentModifier({
   Name="Jewelry",
   Key="Artisan's Tools (Jewelry)",
@@ -1789,7 +1747,6 @@ DefineEquipmentModifier({
     "CraftToolsJewelry",
   },
 })
-
 DefineEquipmentModifier({
   Name="Leather",
   Key="Artisan's Tools (Leather)",
@@ -1830,7 +1787,6 @@ DefineEquipmentModifier({
     "CraftToolsLeather",
   },
 })
-
 DefineEquipmentModifier({
   Name="Locks",
   Key="Artisan's Tools (Locks)",
@@ -1871,7 +1827,6 @@ DefineEquipmentModifier({
     "CraftToolsLocks",
   },
 })
-
 DefineEquipmentModifier({
   Name="Paintings",
   Key="Artisan's Tools (Paintings)",
@@ -1912,7 +1867,6 @@ DefineEquipmentModifier({
     "CraftToolsPaintings",
   },
 })
-
 DefineEquipmentModifier({
   Name="Pottery",
   Key="Artisan's Tools (Pottery)",
@@ -1953,7 +1907,6 @@ DefineEquipmentModifier({
     "CraftToolsPottery",
   },
 })
-
 DefineEquipmentModifier({
   Name="Sculptures",
   Key="Artisan's Tools (Sculptures)",
@@ -1994,7 +1947,6 @@ DefineEquipmentModifier({
     "CraftToolsSculptures",
   },
 })
-
 DefineEquipmentModifier({
   Name="Ships",
   Key="Artisan's Tools (Ships)",
@@ -2035,7 +1987,6 @@ DefineEquipmentModifier({
     "CraftToolsShips",
   },
 })
-
 DefineEquipmentModifier({
   Name="Shoes",
   Key="Artisan's Tools (Shoes)",
@@ -2076,7 +2027,6 @@ DefineEquipmentModifier({
     "CraftToolsShoes",
   },
 })
-
 DefineEquipmentModifier({
   Name="Stonemasonry",
   Key="Artisan's Tools (Stonemasonry)",
@@ -2117,7 +2067,6 @@ DefineEquipmentModifier({
     "CraftToolsStonemasonry",
   },
 })
-
 DefineEquipmentModifier({
   Name="Traps",
   Key="Artisan's Tools (Traps)",
@@ -2158,7 +2107,6 @@ DefineEquipmentModifier({
     "CraftToolsTraps",
   },
 })
-
 DefineEquipmentModifier({
   Name="Weaponsmithing",
   Key="Artisan's Tools (Weaponsmithing)",
@@ -2199,7 +2147,6 @@ DefineEquipmentModifier({
     "CraftToolsWeaponsmithing",
   },
 })
-
 DefineEquipmentModifier({
   Name="Adamantine",
   Key="Material ~ Adamantine ~ Ammunition",
@@ -2233,7 +2180,6 @@ DefineEquipmentModifier({
     "Ammunition",
   },
 })
-
 DefineEquipmentModifier({
   Name="Adamantine",
   Key="Material ~ Adamantine ~ Armor / Light",
@@ -2296,7 +2242,6 @@ DefineEquipmentModifier({
     Hardness="hardness 20",
   },
 })
-
 DefineEquipmentModifier({
   Name="Adamantine",
   Key="Material ~ Adamantine ~ Armor / Medium",
@@ -2359,7 +2304,6 @@ DefineEquipmentModifier({
     Hardness="hardness 20",
   },
 })
-
 DefineEquipmentModifier({
   Name="Adamantine",
   Key="Material ~ Adamantine ~ Armor / Heavy",
@@ -2422,7 +2366,6 @@ DefineEquipmentModifier({
     Hardness="hardness 20",
   },
 })
-
 DefineEquipmentModifier({
   Name="Adamantine",
   Key="Material ~ Adamantine ~ Weapon",
@@ -2468,7 +2411,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Mithral",
   Key="Material ~ Mithril ~ Armor / Light",
@@ -2559,7 +2501,6 @@ DefineEquipmentModifier({
     Hardness="hardness 15",
   },
 })
-
 DefineEquipmentModifier({
   ChangeArmorType={
     From="Medium",
@@ -2654,7 +2595,6 @@ DefineEquipmentModifier({
     Hardness="hardness 15",
   },
 })
-
 DefineEquipmentModifier({
   ChangeArmorType={
     From="Heavy",
@@ -2749,7 +2689,6 @@ DefineEquipmentModifier({
     Hardness="hardness 15",
   },
 })
-
 DefineEquipmentModifier({
   Name="Mithral",
   Key="Material ~ Mithril ~ Shield",
@@ -2837,7 +2776,6 @@ DefineEquipmentModifier({
     Hardness="hardness 15",
   },
 })
-
 DefineEquipmentModifier({
   Name="Mithral",
   Key="Material ~ Mithril ~ Weapon / Item",
@@ -2923,7 +2861,6 @@ DefineEquipmentModifier({
     Hardness="hardness 15",
   },
 })
-
 DefineEquipmentModifier({
   Name="Darkwood",
   Key="Material ~ Darkwood",
@@ -3055,7 +2992,6 @@ DefineEquipmentModifier({
     Hardness="hardness 5",
   },
 })
-
 DefineEquipmentModifier({
   Name="Dragonhide",
   Key="Material ~ Dragonhide",
@@ -3111,7 +3047,6 @@ DefineEquipmentModifier({
     Hardness="hardness 10",
   },
 })
-
 DefineEquipmentModifier({
   Name="Cold Iron",
   Key="Material ~ Cold Iron",
@@ -3204,7 +3139,6 @@ DefineEquipmentModifier({
     Hardness="hardness 10",
   },
 })
-
 DefineEquipmentModifier({
   Name="Alchemical Silver",
   Key="Material ~ Alchemical Silver",
@@ -3376,7 +3310,6 @@ DefineEquipmentModifier({
     Hardness="hardness 8",
   },
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3390,7 +3323,6 @@ DefineEquipmentModifier({
   Cost="((BASECOST/3)*%CHARGES)-BASECOST",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3404,7 +3336,6 @@ DefineEquipmentModifier({
   Cost="((BASECOST/4)*%CHARGES)-BASECOST",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3418,7 +3349,6 @@ DefineEquipmentModifier({
   Cost="((BASECOST/5)*%CHARGES)-BASECOST",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3432,7 +3362,6 @@ DefineEquipmentModifier({
   Cost="((BASECOST/6)*%CHARGES)-BASECOST",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3446,7 +3375,6 @@ DefineEquipmentModifier({
   Cost="((BASECOST/7)*%CHARGES)-BASECOST",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3460,7 +3388,6 @@ DefineEquipmentModifier({
   Cost="((BASECOST/8)*%CHARGES)-BASECOST",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3474,7 +3401,6 @@ DefineEquipmentModifier({
   Cost="((BASECOST/9)*%CHARGES)-BASECOST",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3488,7 +3414,6 @@ DefineEquipmentModifier({
   Cost="((BASECOST/10)*%CHARGES)-BASECOST",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3502,7 +3427,6 @@ DefineEquipmentModifier({
   Cost="((BASECOST/12)*%CHARGES)-BASECOST",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3516,7 +3440,6 @@ DefineEquipmentModifier({
   Cost="((BASECOST/20)*%CHARGES)-BASECOST",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3530,7 +3453,6 @@ DefineEquipmentModifier({
   Cost="((BASECOST/34)*%CHARGES)-BASECOST",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3544,7 +3466,6 @@ DefineEquipmentModifier({
   Cost="((BASECOST/36)*%CHARGES)-BASECOST",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3558,7 +3479,6 @@ DefineEquipmentModifier({
   Cost="((BASECOST/50)*%CHARGES)-BASECOST",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3572,7 +3492,6 @@ DefineEquipmentModifier({
   Cost="((BASECOST/101)*%CHARGES)-BASECOST",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=0,
@@ -3586,7 +3505,6 @@ DefineEquipmentModifier({
   Cost="0",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3599,7 +3517,6 @@ DefineEquipmentModifier({
   },
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=2,
@@ -3612,7 +3529,6 @@ DefineEquipmentModifier({
   },
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=3,
@@ -3625,7 +3541,6 @@ DefineEquipmentModifier({
   },
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=10,
@@ -3638,67 +3553,56 @@ DefineEquipmentModifier({
   },
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Name="Magical Enhancments (+1)",
   Key="Special Ability ~ +1 ~ Enhancement Cost",
   EquivalentEnhancementBonus=1,
 })
-
 DefineEquipmentModifier({
   Name="Magical Enhancments (+2)",
   Key="Special Ability ~ +2 ~ Enhancement Cost",
   EquivalentEnhancementBonus=2,
 })
-
 DefineEquipmentModifier({
   Name="Magical Enhancments (+3)",
   Key="Special Ability ~ +3 ~ Enhancement Cost",
   EquivalentEnhancementBonus=3,
 })
-
 DefineEquipmentModifier({
   Name="Magical Enhancments (+4)",
   Key="Special Ability ~ +4 ~ Enhancement Cost",
   EquivalentEnhancementBonus=4,
 })
-
 DefineEquipmentModifier({
   Name="Magical Enhancments (+5)",
   Key="Special Ability ~ +5 ~ Enhancement Cost",
   EquivalentEnhancementBonus=5,
 })
-
 DefineEquipmentModifier({
   Name="Magical Enhancments (+6)",
   Key="Special Ability ~ +6 ~ Enhancement Cost",
   EquivalentEnhancementBonus=6,
 })
-
 DefineEquipmentModifier({
   Name="Magical Enhancments (+7)",
   Key="Special Ability ~ +7 ~ Enhancement Cost",
   EquivalentEnhancementBonus=7,
 })
-
 DefineEquipmentModifier({
   Name="Magical Enhancments (+8)",
   Key="Special Ability ~ +8 ~ Enhancement Cost",
   EquivalentEnhancementBonus=8,
 })
-
 DefineEquipmentModifier({
   Name="Magical Enhancments (+9)",
   Key="Special Ability ~ +9 ~ Enhancement Cost",
   EquivalentEnhancementBonus=9,
 })
-
 DefineEquipmentModifier({
   Name="Magical Enhancments (+10)",
   Key="Special Ability ~ +10 ~ Enhancement Cost",
   EquivalentEnhancementBonus=10,
 })
-
 DefineEquipmentModifier({
   Name="Magical Enhancment Cost",
   Key="Special Ability ~ Enhancement Cost",
@@ -3707,7 +3611,6 @@ DefineEquipmentModifier({
   },
   Cost="%CHOICE",
 })
-
 DefineEquipmentModifier({
   Name="|Spell Effect (Single Use/Use Activated)",
   Key="Special Ability ~ Spell Effect / Single Use",
@@ -3729,7 +3632,6 @@ DefineEquipmentModifier({
     "Oil",
   },
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -3771,7 +3673,6 @@ DefineEquipmentModifier({
     "Wand",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Spell Effect (Command Word)",
   Key="Special Ability ~ Spell Effect / Command Word",
@@ -3842,7 +3743,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Spell Effect (Use Activated)",
   Key="Special Ability ~ Spell Effect / Use Activated",
@@ -3913,7 +3813,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Ability Bonus (Enhancement)",
   Key="Special Ability ~ Bonus Ability / Enhancement",
@@ -3999,7 +3898,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Armor Bonus (Enhancement)",
   Key="Special Ability ~ Bonus AC / Enhancement",
@@ -4068,7 +3966,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Bonus Spell",
   Key="Special Ability ~ Bonus Spell",
@@ -4150,7 +4047,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|AC Bonus (Deflection)",
   Key="Special Ability ~ Bonus AC / Deflection",
@@ -4235,7 +4131,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|AC Bonus (Luck)",
   Key="Special Ability ~ Bonus AC / Luck",
@@ -4320,7 +4215,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|AC Bonus (Insight)",
   Key="Special Ability ~ Bonus AC / Insight",
@@ -4405,7 +4299,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|AC Bonus (Sacred)",
   Key="Special Ability ~ Bonus AC / Sacred",
@@ -4490,7 +4383,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|AC Bonus (Profane)",
   Key="Special Ability ~ Bonus AC / Profane",
@@ -4575,7 +4467,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|AC Bonus (Other)",
   Key="Special Ability ~ Bonus AC / Other",
@@ -4660,7 +4551,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Natural Armor Bonus (Enhancement)",
   Key="Special Ability ~ Bonus AC / Natural Armor",
@@ -4745,7 +4635,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Save Bonus (Resistance)",
   Key="Special Ability ~ Bonus Save / Resistance",
@@ -4832,7 +4721,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Save Bonus (Luck)",
   Key="Special Ability ~ Bonus Save / Luck",
@@ -4919,7 +4807,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Save Bonus (Insight)",
   Key="Special Ability ~ Bonus Save / Insight",
@@ -5006,7 +4893,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Save Bonus (Sacred)",
   Key="Special Ability ~ Bonus Save / Sacred",
@@ -5093,7 +4979,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Save Bonus (Profane)",
   Key="Special Ability ~ Bonus Save / Profane",
@@ -5180,7 +5065,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Save Bonus (Other)",
   Key="Special Ability ~ Bonus Save / Other",
@@ -5267,7 +5151,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Skill Bonus (Competence)",
   Key="Special Ability ~ Bonus Skill / Competence",
@@ -5352,7 +5235,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Spell Resistance",
   Key="Special Ability ~ Bonus Spell Resistance",
@@ -5410,7 +5292,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Maximize Knowledge Skill",
   Key="Special Ability ~ Bonus Skill / Maximize Knowledge",
@@ -5439,7 +5320,6 @@ DefineEquipmentModifier({
     "Intelligence",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Maximize Any Skill",
   Key="Special Ability ~ Bonus Skill / Maximize Any Skill",
@@ -5468,7 +5348,6 @@ DefineEquipmentModifier({
     "Intelligence",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Spell Effect (Continuous/Standard spell duration)",
   Key="Special Ability ~ Spell Effect / Continuous / Hour per Level",
@@ -5539,7 +5418,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Spell Effect (Continuous/Spell duration measured in rounds)",
   Key="Special Ability ~ Spell Effect / Continuous / Round per Level",
@@ -5610,7 +5488,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Spell Effect (Continuous/Spell duration 1 minute/level)",
   Key="Special Ability ~ Spell Effect / Continuous / Minute per Level",
@@ -5681,7 +5558,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Spell Effect (Continuous/Spell duration 10 minutes/level)",
   Key="Special Ability ~ Spell Effect / Continuous / 10 Minutes per Level",
@@ -5752,7 +5628,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Name="|Spell Effect (Continuous/Spell duration 24-hours or more)",
   Key="Special Ability ~ Spell Effect / Continuous / Day per Level",
@@ -5823,7 +5698,6 @@ DefineEquipmentModifier({
     "Rod",
   },
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -5847,7 +5721,6 @@ DefineEquipmentModifier({
     "Staff",
   },
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -5871,7 +5744,6 @@ DefineEquipmentModifier({
     "Staff",
   },
 })
-
 DefineEquipmentModifier({
   Charges={
     Min=1,
@@ -5895,7 +5767,6 @@ DefineEquipmentModifier({
     "Staff",
   },
 })
-
 DefineEquipmentModifier({
   Name="Spell Effect (Single Use/Completion/Arcane)",
   Key="Special Ability ~ Spell Effect / Completion / Scroll / Arcane",
@@ -5927,7 +5798,6 @@ DefineEquipmentModifier({
     "Arcane",
   },
 })
-
 DefineEquipmentModifier({
   Name="Spell Effect (Single Use/Completion/Divine)",
   Key="Special Ability ~ Spell Effect / Completion / Scroll / Divine",
@@ -5959,7 +5829,6 @@ DefineEquipmentModifier({
     "Divine",
   },
 })
-
 DefineEquipmentModifier({
   Name="Wield One Step Greater",
   Key="Special Quality ~ Wield Size / 1 Step Greater",
@@ -5978,7 +5847,6 @@ DefineEquipmentModifier({
     "Melee",
   },
 })
-
 DefineEquipmentModifier({
   Name="Wield Two Step Greater",
   Key="Special Quality ~ Wield Size / 2 Steps Greater",
@@ -5997,7 +5865,6 @@ DefineEquipmentModifier({
     "Melee",
   },
 })
-
 DefineEquipmentModifier({
   Name="Wield Three Step Greater",
   Key="Special Quality ~ Wield Size / 3 Steps Greater",
@@ -6016,7 +5883,6 @@ DefineEquipmentModifier({
     "Melee",
   },
 })
-
 DefineEquipmentModifier({
   Name="Wield One Step Greater No Penalty",
   Key="Special Quality ~ Wield Size / 1 Step Greater / No Penalty",
@@ -6042,7 +5908,6 @@ DefineEquipmentModifier({
     "Melee",
   },
 })
-
 DefineEquipmentModifier({
   Name="Wield Two Step Greater No Penalty",
   Key="Special Quality ~ Wield Size / 2 Steps Greater / No Penalty",
@@ -6068,7 +5933,6 @@ DefineEquipmentModifier({
     "Melee",
   },
 })
-
 DefineEquipmentModifier({
   Name="Wield Three Step Greater No Penalty",
   Key="Special Quality ~ Wield Size / 3 Steps Greater / No Penalty",
@@ -6094,7 +5958,6 @@ DefineEquipmentModifier({
     "Melee",
   },
 })
-
 DefineEquipmentModifier({
   Name="+1 (Enhancement to Weapon)",
   Key="Special Ability ~ +1 ~ Weapon",
@@ -6169,7 +6032,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="+2 (Enhancement to Weapon)",
   Key="Special Ability ~ +2 ~ Weapon",
@@ -6244,7 +6106,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="+3 (Enhancement to Weapon)",
   Key="Special Ability ~ +3 ~ Weapon",
@@ -6319,7 +6180,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="+4 (Enhancement to Weapon)",
   Key="Special Ability ~ +4 ~ Weapon",
@@ -6394,7 +6254,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="+5 (Enhancement to Weapon)",
   Key="Special Ability ~ +5 ~ Weapon",
@@ -6469,7 +6328,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="+1 (Enhancement to Ammunition)",
   Key="Special Ability ~ +1 ~ Ammunition",
@@ -6541,7 +6399,6 @@ DefineEquipmentModifier({
     "Ammunition",
   },
 })
-
 DefineEquipmentModifier({
   Name="+2 (Enhancement to Ammunition)",
   Key="Special Ability ~ +2 ~ Ammunition",
@@ -6613,7 +6470,6 @@ DefineEquipmentModifier({
     "Ammunition",
   },
 })
-
 DefineEquipmentModifier({
   Name="+3 (Enhancement to Ammunition)",
   Key="Special Ability ~ +3 ~ Ammunition",
@@ -6685,7 +6541,6 @@ DefineEquipmentModifier({
     "Ammunition",
   },
 })
-
 DefineEquipmentModifier({
   Name="+4 (Enhancement to Ammunition)",
   Key="Special Ability ~ +4 ~ Ammunition",
@@ -6757,7 +6612,6 @@ DefineEquipmentModifier({
     "Ammunition",
   },
 })
-
 DefineEquipmentModifier({
   Name="+5 (Enhancement to Ammunition)",
   Key="Special Ability ~ +5 ~ Ammunition",
@@ -6829,7 +6683,6 @@ DefineEquipmentModifier({
     "Ammunition",
   },
 })
-
 DefineEquipmentModifier({
   Name="Anarchic",
   Key="Special Ability ~ Anarchic ~ Weapon",
@@ -6895,7 +6748,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Axiomatic",
   Key="Special Ability ~ Axiomatic ~ Weapon",
@@ -6961,7 +6813,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Bane",
   Key="Special Ability ~ Bane ~ Weapon",
@@ -7002,7 +6853,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Brilliant Energy",
   Key="Special Ability ~ Brilliant Energy ~ Weapon",
@@ -7040,7 +6890,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Dancing",
   Key="Special Ability ~ Dancing ~ Melee",
@@ -7065,7 +6914,6 @@ DefineEquipmentModifier({
     "Melee",
   },
 })
-
 DefineEquipmentModifier({
   Name="Defending",
   Key="Special Ability ~ Defending ~ Melee",
@@ -7089,7 +6937,6 @@ DefineEquipmentModifier({
     "Melee",
   },
 })
-
 DefineEquipmentModifier({
   Name="Disruption",
   Key="Special Ability ~ Disruption ~ Weapon",
@@ -7113,7 +6960,6 @@ DefineEquipmentModifier({
     "Bludgeoning",
   },
 })
-
 DefineEquipmentModifier({
   Name="Distance",
   Key="Special Ability ~ Distance ~ Ranged",
@@ -7147,7 +6993,6 @@ DefineEquipmentModifier({
     "Ranged",
   },
 })
-
 DefineEquipmentModifier({
   Name="Flaming",
   Key="Special Ability ~ Flaming ~ Weapon",
@@ -7185,7 +7030,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Flaming Burst",
   Key="Special Ability ~ Flaming Burst ~ Weapon",
@@ -7226,7 +7070,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Frost",
   Key="Special Ability ~ Frost ~ Weapon",
@@ -7264,7 +7107,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Ghost Touch",
   Key="Special Ability ~ Ghost Touch ~ Weapon",
@@ -7302,7 +7144,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Holy",
   Key="Special Ability ~ Holy ~ Weapon",
@@ -7368,7 +7209,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Icy Burst",
   Key="Special Ability ~ Icy Burst ~ Weapon",
@@ -7409,7 +7249,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Keen",
   Key="Special Ability ~ Keen ~ Weapon",
@@ -7466,7 +7305,6 @@ DefineEquipmentModifier({
     "Slashing",
   },
 })
-
 DefineEquipmentModifier({
   Name="Ki Focus",
   Key="Special Ability ~ Ki Focus ~ Melee",
@@ -7490,7 +7328,6 @@ DefineEquipmentModifier({
     "Melee",
   },
 })
-
 DefineEquipmentModifier({
   Name="Merciful",
   Key="Special Ability ~ Merciful ~ Weapon",
@@ -7528,7 +7365,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Mighty Cleaving",
   Key="Special Ability ~ Mighty Cleaving ~ Melee",
@@ -7552,7 +7388,6 @@ DefineEquipmentModifier({
     "Melee",
   },
 })
-
 DefineEquipmentModifier({
   Name="Returning",
   Key="Special Ability ~ Returning ~ Thrown",
@@ -7577,7 +7412,6 @@ DefineEquipmentModifier({
     "Thrown",
   },
 })
-
 DefineEquipmentModifier({
   Name="Seeking",
   Key="Special Ability ~ Seeking ~ Ranged",
@@ -7604,7 +7438,6 @@ DefineEquipmentModifier({
     "Ranged",
   },
 })
-
 DefineEquipmentModifier({
   Name="Shock",
   Key="Special Ability ~ Shock ~ Weapon",
@@ -7642,7 +7475,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Shocking Burst",
   Key="Special Ability ~ Shocking Burst ~ Weapon",
@@ -7683,7 +7515,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Speed",
   Key="Special Ability ~ Speed ~ Weapon",
@@ -7715,7 +7546,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Spell Storing",
   Key="Special Ability ~ Spell Storing ~ Melee",
@@ -7739,7 +7569,6 @@ DefineEquipmentModifier({
     "Melee",
   },
 })
-
 DefineEquipmentModifier({
   Name="Thundering",
   Key="Special Ability ~ Thundering ~ Weapon",
@@ -7780,7 +7609,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Throwing",
   Key="Special Ability ~ Throwing ~ Melee",
@@ -7818,7 +7646,6 @@ DefineEquipmentModifier({
     "Melee",
   },
 })
-
 DefineEquipmentModifier({
   Name="Unholy",
   Key="Special Ability ~ Unholy ~ Weapon",
@@ -7884,7 +7711,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Vicious",
   Key="Special Ability ~ Vicious ~ Melee",
@@ -7908,7 +7734,6 @@ DefineEquipmentModifier({
     "Melee",
   },
 })
-
 DefineEquipmentModifier({
   Name="Vorpal",
   Key="Special Ability ~ Vorpal ~ Melee",
@@ -7933,7 +7758,6 @@ DefineEquipmentModifier({
     "Slashing",
   },
 })
-
 DefineEquipmentModifier({
   Name="Wounding",
   Key="Special Ability ~ Wounding ~ Weapon",
@@ -7971,7 +7795,6 @@ DefineEquipmentModifier({
     "Weapon",
   },
 })
-
 DefineEquipmentModifier({
   Name="Amulet of Mighty Fists",
   Key="Special Ability ~ Amulet of Mighty Fists Base",
@@ -7979,7 +7802,6 @@ DefineEquipmentModifier({
   Cost="4000*PLUSTOTAL*PLUSTOTAL",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Name="+1 to Hit and Damage",
   Key="Special Ability ~ +1 ~ Amulet of Mighty Fists",
@@ -8016,7 +7838,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="+2 to Hit and Damage",
   Key="Special Ability ~ +2 ~ Amulet of Mighty Fists",
@@ -8053,7 +7874,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="+3 to Hit and Damage",
   Key="Special Ability ~ +3 ~ Amulet of Mighty Fists",
@@ -8090,7 +7910,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="+4 to Hit and Damage",
   Key="Special Ability ~ +4 ~ Amulet of Mighty Fists",
@@ -8127,7 +7946,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="+5 to Hit and Damage",
   Key="Special Ability ~ +5 ~ Amulet of Mighty Fists",
@@ -8164,7 +7982,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Anarchic",
   Key="Special Ability ~ Anarchic ~ Amulet of Mighty Fists",
@@ -8223,7 +8040,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Axiomatic",
   Key="Special Ability ~ Axiomatic ~ Amulet of Mighty Fists",
@@ -8282,7 +8098,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Bane",
   Key="Special Ability ~ Bane ~ Amulet of Mighty Fists",
@@ -8318,7 +8133,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Brilliant Energy",
   Key="Special Ability ~ Brilliant Energy ~ Amulet of Mighty Fists",
@@ -8351,7 +8165,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Defending",
   Key="Special Ability ~ Defending ~ Amulet of Mighty Fists",
@@ -8384,7 +8197,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Disruption",
   Key="Special Ability ~ Disruption ~ Amulet of Mighty Fists",
@@ -8417,7 +8229,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Flaming",
   Key="Special Ability ~ Flaming ~ Amulet of Mighty Fists",
@@ -8450,7 +8261,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Flaming Burst",
   Key="Special Ability ~ Flaming Burst ~ Amulet of Mighty Fists",
@@ -8486,7 +8296,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Frost",
   Key="Special Ability ~ Frost ~ Amulet of Mighty Fists",
@@ -8519,7 +8328,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Ghost Touch",
   Key="Special Ability ~ Ghost Touch ~ Amulet of Mighty Fists",
@@ -8552,7 +8360,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Holy",
   Key="Special Ability ~ Holy ~ Amulet of Mighty Fists",
@@ -8611,7 +8418,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Icy Burst",
   Key="Special Ability ~ Icy Burst ~ Amulet of Mighty Fists",
@@ -8647,7 +8453,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Ki Focus",
   Key="Special Ability ~ Ki Focus ~ Amulet of Mighty Fists",
@@ -8680,7 +8485,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Merciful",
   Key="Special Ability ~ Merciful ~ Amulet of Mighty Fists",
@@ -8713,7 +8517,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Mighty Cleaving",
   Key="Special Ability ~ Mighty Cleaving ~ Amulet of Mighty Fists",
@@ -8746,7 +8549,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Shock",
   Key="Special Ability ~ Shock ~ Amulet of Mighty Fists",
@@ -8779,7 +8581,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Shocking Burst",
   Key="Special Ability ~ Shocking Burst ~ Amulet of Mighty Fists",
@@ -8815,7 +8616,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Speed",
   Key="Special Ability ~ Speed ~ Amulet of Mighty Fists",
@@ -8848,7 +8648,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Spell Storing",
   Key="Special Ability ~ Spell Storing ~ Amulet of Mighty Fists",
@@ -8881,7 +8680,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Thundering",
   Key="Special Ability ~ Thundering ~ Amulet of Mighty Fists",
@@ -8917,7 +8715,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Unholy",
   Key="Special Ability ~ Unholy ~ Amulet of Mighty Fists",
@@ -8976,7 +8773,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Vicious",
   Key="Special Ability ~ Vicious ~ Amulet of Mighty Fists",
@@ -9009,7 +8805,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="Wounding",
   Key="Special Ability ~ Wounding ~ Amulet of Mighty Fists",
@@ -9042,7 +8837,6 @@ DefineEquipmentModifier({
     "Amulet of Mighty Fists",
   },
 })
-
 DefineEquipmentModifier({
   Name="+1 (Enhancement to Armor)",
   Key="Special Ability ~ +1 ~ Armor",
@@ -9133,7 +8927,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="+2 (Enhancement to Armor)",
   Key="Special Ability ~ +2 ~ Armor",
@@ -9224,7 +9017,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="+3 (Enhancement to Armor)",
   Key="Special Ability ~ +3 ~ Armor",
@@ -9315,7 +9107,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="+4 (Enhancement to Armor)",
   Key="Special Ability ~ +4 ~ Armor",
@@ -9406,7 +9197,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="+5 (Enhancement to Armor)",
   Key="Special Ability ~ +5 ~ Armor",
@@ -9497,7 +9287,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="+1 (Enhancement to Shield)",
   Key="Special Ability ~ +1 ~ Shield",
@@ -9588,7 +9377,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="+2 (Enhancement to Shield)",
   Key="Special Ability ~ +2 ~ Shield",
@@ -9679,7 +9467,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="+3 (Enhancement to Shield)",
   Key="Special Ability ~ +3 ~ Shield",
@@ -9770,7 +9557,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="+4 (Enhancement to Shield)",
   Key="Special Ability ~ +4 ~ Shield",
@@ -9861,7 +9647,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="+5 (Enhancement to Shield)",
   Key="Special Ability ~ +5 ~ Shield",
@@ -9952,7 +9737,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Animated",
   Key="Special Ability ~ Animated ~ Shield",
@@ -9984,7 +9768,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Arrow Catching",
   Key="Special Ability ~ Arrow Catching ~ Shield",
@@ -10007,7 +9790,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Arrow Deflection",
   Key="Special Ability ~ Arrow Deflection ~ Shield",
@@ -10039,7 +9821,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Bashing",
   Key="Special Ability ~ Bashing ~ Shield / Heavy",
@@ -10083,7 +9864,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Bashing",
   Key="Special Ability ~ Bashing ~ Shield / Light",
@@ -10127,7 +9907,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Blinding",
   Key="Special Ability ~ Blinding ~ Shield",
@@ -10150,7 +9929,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Energy Resistance (Acid)",
   Key="Special Ability ~ Energy Resistance / Acid ~ Armor",
@@ -10188,7 +9966,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Energy Resistance (Acid/Improved)",
   Key="Special Ability ~ Energy Resistance / Acid / Improved ~ Armor",
@@ -10226,7 +10003,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Energy Resistance (Acid/Greater)",
   Key="Special Ability ~ Energy Resistance / Acid / Greater ~ Armor",
@@ -10264,7 +10040,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Energy Resistance (Cold)",
   Key="Special Ability ~ Energy Resistance / Cold ~ Armor",
@@ -10302,7 +10077,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Energy Resistance (Cold/Improved)",
   Key="Special Ability ~ Energy Resistance / Cold / Improved ~ Armor",
@@ -10340,7 +10114,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Energy Resistance (Cold/Greater)",
   Key="Special Ability ~ Energy Resistance / Cold / Greater ~ Armor",
@@ -10378,7 +10151,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Energy Resistance (Electricity)",
   Key="Special Ability ~ Energy Resistance / Electricity ~ Armor",
@@ -10416,7 +10188,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Energy Resistance (Electricity/Improved)",
   Key="Special Ability ~ Energy Resistance / Electricity / Improved ~ Armor",
@@ -10454,7 +10225,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Energy Resistance (Electricity/Greater)",
   Key="Special Ability ~ Energy Resistance / Electricity / Greater ~ Armor",
@@ -10492,7 +10262,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Energy Resistance (Fire)",
   Key="Special Ability ~ Energy Resistance / Fire ~ Armor",
@@ -10530,7 +10299,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Energy Resistance (Fire/Improved)",
   Key="Special Ability ~ Energy Resistance / Fire / Improved ~ Armor",
@@ -10568,7 +10336,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Energy Resistance (Fire/Greater)",
   Key="Special Ability ~ Energy Resistance / Fire / Greater ~ Armor",
@@ -10606,7 +10373,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Energy Resistance (Sonic)",
   Key="Special Ability ~ Energy Resistance / Sonic ~ Armor",
@@ -10644,7 +10410,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Energy Resistance (Sonic/Improved)",
   Key="Special Ability ~ Energy Resistance / Sonic / Improved ~ Armor",
@@ -10682,7 +10447,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Energy Resistance (Sonic/Greater)",
   Key="Special Ability ~ Energy Resistance / Sonic / Greater ~ Armor",
@@ -10720,7 +10484,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Etherealness",
   Key="Special Ability ~ Etherealness ~ Armor",
@@ -10743,7 +10506,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="Light Fortification",
   Key="Special Ability ~ Fortification / Light ~ Armor",
@@ -10797,7 +10559,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Moderate Fortification",
   Key="Special Ability ~ Fortification / Moderate ~ Armor",
@@ -10851,7 +10612,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Heavy Fortification",
   Key="Special Ability ~ Fortification / Heavy ~ Armor",
@@ -10905,7 +10665,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Ghost Touch",
   Key="Special Ability ~ Ghost Touch ~ Armor",
@@ -10945,7 +10704,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Glamered",
   Key="Special Ability ~ Glamered ~ Armor",
@@ -10968,7 +10726,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="Invulnerability",
   Key="Special Ability ~ Invulnerability ~ Armor",
@@ -11010,7 +10767,6 @@ DefineEquipmentModifier({
     "ArmorLike",
   },
 })
-
 DefineEquipmentModifier({
   Name="Reflecting",
   Key="Special Ability ~ Reflecting ~ Shield",
@@ -11033,7 +10789,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Shadow",
   Key="Special Ability ~ Shadow ~ Armor",
@@ -11068,7 +10823,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="Shadow (Improved)",
   Key="Special Ability ~ Shadow / Improved ~ Armor",
@@ -11103,7 +10857,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="Shadow (Greater)",
   Key="Special Ability ~ Shadow / Greater ~ Armor",
@@ -11138,7 +10891,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="Slick",
   Key="Special Ability ~ Slick ~ Armor",
@@ -11173,7 +10925,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="Slick (Improved)",
   Key="Special Ability ~ Slick / Improved ~ Armor",
@@ -11208,7 +10959,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="Slick (Greater)",
   Key="Special Ability ~ Slick / Greater ~ Armor",
@@ -11243,7 +10993,6 @@ DefineEquipmentModifier({
     "Armor",
   },
 })
-
 DefineEquipmentModifier({
   Name="Spell Resistance 13",
   Key="Special Ability ~ Spell Resistance / 13 ~ Armor",
@@ -11283,7 +11032,6 @@ DefineEquipmentModifier({
     "ArmorLike",
   },
 })
-
 DefineEquipmentModifier({
   Name="Spell Resistance 15",
   Key="Special Ability ~ Spell Resistance / 15 ~ Armor",
@@ -11323,7 +11071,6 @@ DefineEquipmentModifier({
     "ArmorLike",
   },
 })
-
 DefineEquipmentModifier({
   Name="Spell Resistance 17",
   Key="Special Ability ~ Spell Resistance / 17 ~ Armor",
@@ -11363,7 +11110,6 @@ DefineEquipmentModifier({
     "ArmorLike",
   },
 })
-
 DefineEquipmentModifier({
   Name="Spell Resistance 19",
   Key="Special Ability ~ Spell Resistance / 19 ~ Armor",
@@ -11403,7 +11149,6 @@ DefineEquipmentModifier({
     "ArmorLike",
   },
 })
-
 DefineEquipmentModifier({
   Name="Undead Controlling",
   Key="Special Ability ~ Undead Controlling ~ Armor",
@@ -11441,7 +11186,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Wild",
   Key="Special Ability ~ Wild ~ Armor",
@@ -11480,7 +11224,6 @@ DefineEquipmentModifier({
     "ArmorLike",
   },
 })
-
 DefineEquipmentModifier({
   Name="Wild",
   Key="Special Ability ~ Wild ~ Shield",
@@ -11503,7 +11246,6 @@ DefineEquipmentModifier({
     "Shield",
   },
 })
-
 DefineEquipmentModifier({
   Name="Intelligent Magic Item Base",
   Key="Intelligent Item ~ Base",
@@ -11653,7 +11395,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Dedicated Purpose",
   Key="Intelligent Item ~ Purpose",
@@ -11679,7 +11420,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Intelligence 11",
   Key="Intelligent Item ~ Ability Score / Intelligence 11",
@@ -11726,7 +11466,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Intelligence 12",
   Key="Intelligent Item ~ Ability Score / Intelligence 12",
@@ -11787,7 +11526,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Intelligence 13",
   Key="Intelligent Item ~ Ability Score / Intelligence 13",
@@ -11841,7 +11579,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Intelligence 14",
   Key="Intelligent Item ~ Ability Score / Intelligence 14",
@@ -11902,7 +11639,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Intelligence 15",
   Key="Intelligent Item ~ Ability Score / Intelligence 15",
@@ -11956,7 +11692,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Intelligence 16",
   Key="Intelligent Item ~ Ability Score / Intelligence 16",
@@ -12017,7 +11752,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Intelligence 17",
   Key="Intelligent Item ~ Ability Score / Intelligence 17",
@@ -12071,7 +11805,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Intelligence 18",
   Key="Intelligent Item ~ Ability Score / Intelligence 18",
@@ -12132,7 +11865,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Intelligence 19",
   Key="Intelligent Item ~ Ability Score / Intelligence 19",
@@ -12186,7 +11918,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Intelligence 20",
   Key="Intelligent Item ~ Ability Score / Intelligence 20",
@@ -12247,7 +11978,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Wisdom 11",
   Key="Intelligent Item ~ Ability Score / Wisdom 11",
@@ -12294,7 +12024,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Wisdom 12",
   Key="Intelligent Item ~ Ability Score / Wisdom 12",
@@ -12348,7 +12077,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Wisdom 13",
   Key="Intelligent Item ~ Ability Score / Wisdom 13",
@@ -12402,7 +12130,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Wisdom 14",
   Key="Intelligent Item ~ Ability Score / Wisdom 14",
@@ -12456,7 +12183,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Wisdom 15",
   Key="Intelligent Item ~ Ability Score / Wisdom 15",
@@ -12510,7 +12236,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Wisdom 16",
   Key="Intelligent Item ~ Ability Score / Wisdom 16",
@@ -12564,7 +12289,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Wisdom 17",
   Key="Intelligent Item ~ Ability Score / Wisdom 17",
@@ -12618,7 +12342,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Wisdom 18",
   Key="Intelligent Item ~ Ability Score / Wisdom 18",
@@ -12672,7 +12395,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Wisdom 19",
   Key="Intelligent Item ~ Ability Score / Wisdom 19",
@@ -12726,7 +12448,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Wisdom 20",
   Key="Intelligent Item ~ Ability Score / Wisdom 20",
@@ -12780,7 +12501,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Charisma 11",
   Key="Intelligent Item ~ Ability Score / Charisma 11",
@@ -12827,7 +12547,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Charisma 12",
   Key="Intelligent Item ~ Ability Score / Charisma 12",
@@ -12881,7 +12600,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Charisma 13",
   Key="Intelligent Item ~ Ability Score / Charisma 13",
@@ -12935,7 +12653,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Charisma 14",
   Key="Intelligent Item ~ Ability Score / Charisma 14",
@@ -12989,7 +12706,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Charisma 15",
   Key="Intelligent Item ~ Ability Score / Charisma 15",
@@ -13043,7 +12759,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Charisma 16",
   Key="Intelligent Item ~ Ability Score / Charisma 16",
@@ -13097,7 +12812,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Charisma 17",
   Key="Intelligent Item ~ Ability Score / Charisma 17",
@@ -13151,7 +12865,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Charisma 18",
   Key="Intelligent Item ~ Ability Score / Charisma 18",
@@ -13205,7 +12918,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Charisma 19",
   Key="Intelligent Item ~ Ability Score / Charisma 19",
@@ -13259,7 +12971,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Stat Charisma 20",
   Key="Intelligent Item ~ Ability Score / Charisma 20",
@@ -13313,7 +13024,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Communication Speech",
   Key="Intelligent Item ~ Communication / Speech",
@@ -13345,7 +13055,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Communication Telepathy",
   Key="Intelligent Item ~ Communication / Telepathy",
@@ -13377,7 +13086,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Senses (60')",
   Key="Intelligent Item ~ Sense / Range 60",
@@ -13407,7 +13115,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Senses (120')",
   Key="Intelligent Item ~ Sense / Range 120",
@@ -13437,7 +13144,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Senses Darkvision",
   Key="Intelligent Item ~ Sense / Darkvision",
@@ -13472,7 +13178,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Senses Blindsense",
   Key="Intelligent Item ~ Sense / Blindsense",
@@ -13507,7 +13212,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Communication Read Languages",
   Key="Intelligent Item ~ Communication / Read Language",
@@ -13539,7 +13243,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Communication Read Magic",
   Key="Intelligent Item ~ Communication / Read Magic",
@@ -13571,7 +13274,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Align (CG)",
   Key="Intelligent Item ~ Alignment / Chaotic Good",
@@ -13625,7 +13327,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Align (CN)",
   Key="Intelligent Item ~ Alignment / Chaotic Neutral",
@@ -13679,7 +13380,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Align (CE)",
   Key="Intelligent Item ~ Alignment / Chaotic Evil",
@@ -13733,7 +13433,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Align (NE)",
   Key="Intelligent Item ~ Alignment / Neutral Evil",
@@ -13787,7 +13486,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Align (LE)",
   Key="Intelligent Item ~ Alignment / Lawful Evil",
@@ -13841,7 +13539,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Align (LG)",
   Key="Intelligent Item ~ Alignment / Lawful Good",
@@ -13895,7 +13592,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Align (LN)",
   Key="Intelligent Item ~ Alignment / Lawful Neutral",
@@ -13949,7 +13645,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Align (NG)",
   Key="Intelligent Item ~ Alignment / Neutral Good",
@@ -14003,7 +13698,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Align (TN)",
   Key="Intelligent Item ~ Alignment / True Neutral",
@@ -14057,7 +13751,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Power 0-level spell at will",
   Key="Intelligent Item ~ Power / 0 Level Spell / At-Will",
@@ -14097,7 +13790,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Power 1st-level spell 3/day",
   Key="Intelligent Item ~ Power / 1st Level Spell / 3 per Day",
@@ -14137,7 +13829,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Power 2nd-level spell 1/day",
   Key="Intelligent Item ~ Power / 2nd Level Spell / 1 per Day",
@@ -14177,7 +13868,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Power 3rd-level spell 1/day",
   Key="Intelligent Item ~ Power / 3rd Level Spell / 1 per Day",
@@ -14217,7 +13907,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Power 3rd-level spell 3/day",
   Key="Intelligent Item ~ Power / 3rd Level Spell / 3 per Day",
@@ -14257,7 +13946,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Power 4th-level spell 3/day",
   Key="Intelligent Item ~ Power / 4th Level Spell / 3 per Day",
@@ -14297,7 +13985,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Power 2nd-level spell 3/day",
   Key="Intelligent Item ~ Power / 2nd Level Spell / 3 per Day",
@@ -14337,7 +14024,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Power 4th-level spell 1/day",
   Key="Intelligent Item ~ Power / 4th Level Spell / 1 per Day",
@@ -14377,7 +14063,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Power Magic aura on itself at will",
   Key="Intelligent Item ~ Power / Magic Aura / At-Will",
@@ -14418,7 +14103,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Power 5 ranks in a skill",
   Key="Intelligent Item ~ Power / Skill Ranks / 5",
@@ -14458,7 +14142,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Power Move 10 feet",
   Key="Intelligent Item ~ Power / Movement / Walk 10 Feet",
@@ -14499,7 +14182,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Power 10 ranks in a skill",
   Key="Intelligent Item ~ Power / Skill Ranks / 10",
@@ -14539,7 +14221,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Power Change shape",
   Key="Intelligent Item ~ Power / Change Shape",
@@ -14580,7 +14261,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Power Fly 30 feet",
   Key="Intelligent Item ~ Power / Movement / Fly 30 Feet",
@@ -14621,7 +14301,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Power Teleport itself 1/day",
   Key="Intelligent Item ~ Power / Movement / Teleport / 1 per Day",
@@ -14662,7 +14341,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Defeat/slay diametrically opposed alignment",
   Key="Intelligent Item ~ Purpose / Slay Alignment",
@@ -14699,7 +14377,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Defeat/slay arcane spellcasters (including spellcasting monsters and those that use spell-like abilities)",
   Key="Intelligent Item ~ Purpose / Slay Arcane Spellcaster",
@@ -14736,7 +14413,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Defeat/slay divine spellcasters (including divine entities and servitors)",
   Key="Intelligent Item ~ Purpose / Slay Divine Spellcaster",
@@ -14773,7 +14449,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Defeat/slay non-spellcasters",
   Key="Intelligent Item ~ Purpose / Slay Non-spellcaster",
@@ -14810,7 +14485,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Defeat/slay a particular creature type (see the bane special ability for choices)",
   Key="Intelligent Item ~ Purpose / Slay Creature Type",
@@ -14847,7 +14521,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Defeat/slay a particular race or kind of creature",
   Key="Intelligent Item ~ Purpose / Slay Creature Race",
@@ -14884,7 +14557,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Defend a particular race or kind of creature",
   Key="Intelligent Item ~ Purpose / Defend Creature Race",
@@ -14921,7 +14593,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Defeat/slay the servants of a specific deity",
   Key="Intelligent Item ~ Purpose / Slay Servants of Deity",
@@ -14958,7 +14629,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Defend the servants and interests of a specific deity",
   Key="Intelligent Item ~ Purpose / Defend Servants of Deity",
@@ -14995,7 +14665,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Defeat/slay all (other than the item and the wielder)",
   Key="Intelligent Item ~ Purpose / Slay All",
@@ -15032,7 +14701,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Dedicated Detect special purpose foes",
   Key="Intelligent Item ~ Purpose Power / Detect Foe",
@@ -15064,7 +14732,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Dedicated 4th-level spell at will",
   Key="Intelligent Item ~ Purpose Power / 4th Level Spell / At-Will",
@@ -15104,7 +14771,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Dedicated +2 luck attacks & saves",
   Key="Intelligent Item ~ Purpose Power / Luck Bonus",
@@ -15156,7 +14822,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Dedicated 5th-level spell at will",
   Key="Intelligent Item ~ Purpose Power / 5th Level Spell / At-Will",
@@ -15196,7 +14861,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Dedicated 6th-level spell at will",
   Key="Intelligent Item ~ Purpose Power / 6th Level Spell / At-Will",
@@ -15236,7 +14900,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Dedicated 7th-level spell at will",
   Key="Intelligent Item ~ Purpose Power / 7th Level Spell / At-Will",
@@ -15276,7 +14939,6 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 DefineEquipmentModifier({
   Name="Int Item / Dedicated True resurrection on wielder",
   Key="Intelligent Item ~ Purpose Power / True Resurrection",
@@ -15308,597 +14970,478 @@ DefineEquipmentModifier({
     "Goods",
   },
 })
-
 CopyEquipmentModifier("Material ~ Cloth", {
   Name="CLOTH",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Leather", {
   Name="LEATHER",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Rope", {
   Name="ROPE",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Steel", {
   Name="STEEL",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Wood", {
   Name="WOOD",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Masterwork ~ Weapon", {
   Name="MWORKW",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Masterwork ~ Ammunition", {
   Name="MWORKM",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Masterwork ~ Armor", {
   Name="MWORKA",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Masterwork ~ Item", {
   Name="MWORKT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Masterwork ~ Bonded Object", {
   Name="MWORKB",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Bonded Object", {
   Name="BONDED_OBJECT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Thrown Ammunition", {
   Name="THROWN_AMMO",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Composite Bow Strength Rating", {
   Name="BOWSTR",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Brace", {
   Name="BRACE",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Disarm", {
   Name="DISARM",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Monk", {
   Name="MONK",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Nonlethal", {
   Name="NONLETHAL",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Trip", {
   Name="TRIP",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Spikes ~ Armor", {
   Name="SPIKE_A",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Spikes ~ Shield", {
   Name="SPIKE_S",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Spikes ~ Shieldbash", {
   Name="SPIKE_SB",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Locked Gauntlet", {
   Name="LOCK_G",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Nonhumanoid ~ Armor", {
   Name="NONHUMANOID",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Broken ~ Weapon", {
   Name="BROKEW",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Broken ~ Armor", {
   Name="BROKEA",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Broken ~ Shield", {
   Name="BROKES",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Broken ~ Item", {
   Name="BROKET",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Broken ~ Magic Item", {
   Name="BROKEM",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Adamantine ~ Ammunition", {
   Name="Adamantine (Ammo)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Light", {
   Name="Adamantine (Light Armor)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Medium", {
   Name="Adamantine (Medium Armor)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Heavy", {
   Name="Adamantine (Heavy Armor)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Adamantine ~ Weapon", {
   Name="Adamantine (Weapon)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Mithril ~ Armor / Light", {
   Name="Mithral (Light Armor)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Mithril ~ Armor / Medium", {
   Name="Mithral (Medium Armor)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Mithril ~ Armor / Heavy", {
   Name="Mithral (Heavy Armor)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Mithril ~ Shield", {
   Name="Mithral (Shield)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Mithril ~ Weapon / Item", {
   Name="Mithral (Item)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Darkwood", {
   Name="Darkwood",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Dragonhide", {
   Name="Dragonhide",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Cold Iron", {
   Name="Cold Iron",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Alchemical Silver", {
   Name="Alchemical Silver",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Adamantine ~ Ammunition", {
   Name="ADAMANT_AMMO",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Light", {
   Name="ADAMANT_ARMR_LT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Medium", {
   Name="ADAMANT_ARMR_MED",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Adamantine ~ Armor / Heavy", {
   Name="ADAMANT_ARMR_HVY",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Adamantine ~ Weapon", {
   Name="ADAMANT_WEAP",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Mithril ~ Armor / Light", {
   Name="MITHRAL_ARMR_LT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Mithril ~ Armor / Medium", {
   Name="MITHRAL_ARMR_MED",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Mithril ~ Armor / Heavy", {
   Name="MITHRAL_ARMR_HVY",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Mithril ~ Shield", {
   Name="MITHRAL_SHLD",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Mithril ~ Weapon / Item", {
   Name="MITHRAL_ITEM",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Darkwood", {
   Name="DARK",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Dragonhide", {
   Name="DRACO",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Cold Iron", {
   Name="C_IRON",
   Visible=false,
 })
-
 CopyEquipmentModifier("Material ~ Alchemical Silver", {
   Name="ALCHM",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Charged Item / 3 Maximum", {
   Name="CHARGED_ITEM_3",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Charged Item / 4 Maximum", {
   Name="CHARGED_ITEM_4",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Charged Item / 5 Maximum", {
   Name="CHARGED_ITEM_5",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Charged Item / 6 Maximum", {
   Name="CHARGED_ITEM_6",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Charged Item / 7 Maximum", {
   Name="CHARGED_ITEM_7",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Charged Item / 8 Maximum", {
   Name="CHARGED_ITEM_8",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Charged Item / 9 Maximum", {
   Name="CHARGED_ITEM_9",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Charged Item / 10 Maximum", {
   Name="CHARGED_ITEM_10",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Charged Item / 12 Maximum", {
   Name="CHARGED_ITEM_12",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Charged Item / 20 Maximum", {
   Name="CHARGED_ITEM_20",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Charged Item / 34 Maximum", {
   Name="CHARGED_ITEM_34",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Charged Item / 36 Maximum", {
   Name="CHARGED_ITEM_36",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Charged Item / 50 Maximum", {
   Name="CHARGED_ITEM_50",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Charged Item / 101 Maximum", {
   Name="CHARGED_ITEM_101",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Staff Charges", {
   Name="CHARGED_STAFF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Uses per Day / 1", {
   Name="USES_PER_DAY_1",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Uses per Day / 2", {
   Name="USES_PER_DAY_2",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Uses per Day / 3", {
   Name="USES_PER_DAY_3",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Uses per Day / 10", {
   Name="USES_PER_DAY_10",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +1 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_1",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +2 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_2",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +3 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_3",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +4 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_4",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +5 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_5",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +6 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_6",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +7 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_7",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +8 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_8",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +9 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_9",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +10 ~ Enhancement Cost", {
   Name="MAGIC_ENHANCE_10",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Enhancement Cost", {
   Name="MAGIC_COST",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Single Use", {
   Name="SPL_1USE",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Spell Trigger", {
   Name="SPL_CHRG",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Command Word", {
   Name="SPL_CMD",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Use Activated", {
   Name="SPL_ACT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus Ability / Enhancement", {
   Name="BNS_ENHC_AB",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Enhancement", {
   Name="BNS_ENHC_AC",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus Spell", {
   Name="BNS_SPELL",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Deflection", {
   Name="BNS_AC_DEFL",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Luck", {
   Name="BNS_AC_LUCK",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Insight", {
   Name="BNS_AC_INSI",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Sacred", {
   Name="BNS_AC_SCRD",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Profane", {
   Name="BNS_AC_PROF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Other", {
   Name="BNS_AC_OTHE",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus AC / Natural Armor", {
   Name="BNS_ENHC_NAT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus Save / Resistance", {
   Name="BNS_SAV_RES",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus Save / Luck", {
   Name="BNS_SAV_LUC",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus Save / Insight", {
   Name="BNS_SAV_INS",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus Save / Sacred", {
   Name="BNS_SAV_SAC",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus Save / Profane", {
   Name="BNS_SAV_PRO",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus Save / Other", {
   Name="BNS_SAV_OTH",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus Skill / Competence", {
   Name="BNS_SKL_CMP",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus Spell Resistance", {
   Name="BNS_SPL_RST",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus Skill / Maximize Knowledge", {
   Name="MAX_KNW",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bonus Skill / Maximize Any Skill", {
   Name="MAX_GNL",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Continuous / Hour per Level", {
   Name="SPL_CON_STANDARD",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Continuous / Round per Level", {
   Name="SPL_CON_ROUND",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Continuous / Minute per Level", {
   Name="SPL_CON_MINUTES",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Continuous / 10 Minutes per Level", {
   Name="SPL_CON_HOURS",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Continuous / Day per Level", {
   Name="SPL_CON_DAYS",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Staff / Primary Power", {
   Name="SPL_SPP",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Staff / Secondary Power", {
   Name="SPL_SSP",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Staff / Lesser Power", {
   Name="SPL_SLP",
   Visible=false,
 })
-
 DefineEquipmentModifier({
   Name="Divine",
   Key="SCROLL_DIVINE",
@@ -15915,7 +15458,6 @@ DefineEquipmentModifier({
     "Scroll",
   },
 })
-
 DefineEquipmentModifier({
   Name="Arcane",
   Key="SCROLL_ARCANE",
@@ -15932,7 +15474,6 @@ DefineEquipmentModifier({
     "Scroll",
   },
 })
-
 DefineEquipmentModifier({
   Name="Minor",
   Key="SCROLL_MINOR",
@@ -15952,7 +15493,6 @@ DefineEquipmentModifier({
     "Scroll",
   },
 })
-
 DefineEquipmentModifier({
   Name="Medium",
   Key="SCROLL_MEDIUM",
@@ -15972,7 +15512,6 @@ DefineEquipmentModifier({
     "Scroll",
   },
 })
-
 DefineEquipmentModifier({
   Name="Major",
   Key="SCROLL_MAJOR",
@@ -15992,1074 +15531,859 @@ DefineEquipmentModifier({
     "Scroll",
   },
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Arcane", {
   Name="A_1USEMI",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Arcane", {
   Name="A_1USEME",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Arcane", {
   Name="A_1USEMA",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Divine", {
   Name="D_1USEMI",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Divine", {
   Name="D_1USEME",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Effect / Completion / Scroll / Divine", {
   Name="D_1USEMA",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Wield Size / 1 Step Greater", {
   Name="PLUS1STEP",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Wield Size / 2 Steps Greater", {
   Name="PLUS2STEP",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Wield Size / 3 Steps Greater", {
   Name="PLUS3STEP",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Wield Size / 1 Step Greater / No Penalty", {
   Name="PLUS1STEP_NO_PENALTY",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Wield Size / 2 Steps Greater / No Penalty", {
   Name="PLUS2STEP_NO_PENALTY",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Quality ~ Wield Size / 3 Steps Greater / No Penalty", {
   Name="PLUS3STEP_NO_PENALTY",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +1 ~ Weapon", {
   Name="PLUS1W",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +2 ~ Weapon", {
   Name="PLUS2W",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +3 ~ Weapon", {
   Name="PLUS3W",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +4 ~ Weapon", {
   Name="PLUS4W",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +5 ~ Weapon", {
   Name="PLUS5W",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +1 ~ Ammunition", {
   Name="PLUS1M",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +2 ~ Ammunition", {
   Name="PLUS2M",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +3 ~ Ammunition", {
   Name="PLUS3M",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +4 ~ Ammunition", {
   Name="PLUS4M",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +5 ~ Ammunition", {
   Name="PLUS5M",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Anarchic ~ Weapon", {
   Name="ANARCH",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Axiomatic ~ Weapon", {
   Name="AXIOM",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bane ~ Weapon", {
   Name="BANE",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Brilliant Energy ~ Weapon", {
   Name="BRILL",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Dancing ~ Melee", {
   Name="DANCE",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Defending ~ Melee", {
   Name="DEFEND",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Disruption ~ Weapon", {
   Name="DISRPT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Distance ~ Ranged", {
   Name="DISTNC",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Flaming ~ Weapon", {
   Name="FLAME",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Flaming Burst ~ Weapon", {
   Name="FLM_BRST",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Frost ~ Weapon", {
   Name="FROST",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Ghost Touch ~ Weapon", {
   Name="GHOST",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Holy ~ Weapon", {
   Name="HOLY",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Icy Burst ~ Weapon", {
   Name="ICY_BRST",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Keen ~ Weapon", {
   Name="KEEN",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Ki Focus ~ Melee", {
   Name="KI",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Merciful ~ Weapon", {
   Name="MERCY",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Mighty Cleaving ~ Melee", {
   Name="CLEAVE",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Returning ~ Thrown", {
   Name="RETURN",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Seeking ~ Ranged", {
   Name="SEEK",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Shock ~ Weapon", {
   Name="SHOCK",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Shocking Burst ~ Weapon", {
   Name="SHK_BRST",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Speed ~ Weapon", {
   Name="SPEED",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Storing ~ Melee", {
   Name="STORE",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Thundering ~ Weapon", {
   Name="THUNDER",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Throwing ~ Melee", {
   Name="THROW",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Unholy ~ Weapon", {
   Name="UNHOLY",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Vicious ~ Melee", {
   Name="VICIOUS",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Vorpal ~ Melee", {
   Name="VORPAL",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Wounding ~ Weapon", {
   Name="WOUND",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Amulet of Mighty Fists Base", {
   Name="MightyFist_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +1 ~ Amulet of Mighty Fists", {
   Name="PLUS1_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +2 ~ Amulet of Mighty Fists", {
   Name="PLUS2_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +3 ~ Amulet of Mighty Fists", {
   Name="PLUS3_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +4 ~ Amulet of Mighty Fists", {
   Name="PLUS4_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +5 ~ Amulet of Mighty Fists", {
   Name="PLUS5_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Anarchic ~ Amulet of Mighty Fists", {
   Name="ANARCH_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Axiomatic ~ Amulet of Mighty Fists", {
   Name="AXIOM_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bane ~ Amulet of Mighty Fists", {
   Name="BANE_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Brilliant Energy ~ Amulet of Mighty Fists", {
   Name="BRILL_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Defending ~ Amulet of Mighty Fists", {
   Name="DEFEND_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Disruption ~ Amulet of Mighty Fists", {
   Name="DISRPT_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Flaming ~ Amulet of Mighty Fists", {
   Name="FLAME_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Flaming Burst ~ Amulet of Mighty Fists", {
   Name="FLM_BRST_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Frost ~ Amulet of Mighty Fists", {
   Name="FROST_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Ghost Touch ~ Amulet of Mighty Fists", {
   Name="GHOST_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Holy ~ Amulet of Mighty Fists", {
   Name="HOLY_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Icy Burst ~ Amulet of Mighty Fists", {
   Name="ICY_BRST_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Ki Focus ~ Amulet of Mighty Fists", {
   Name="KI_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Merciful ~ Amulet of Mighty Fists", {
   Name="MERCY_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Mighty Cleaving ~ Amulet of Mighty Fists", {
   Name="CLEAVE_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Shock ~ Amulet of Mighty Fists", {
   Name="SHOCK_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Shocking Burst ~ Amulet of Mighty Fists", {
   Name="SHK_BRST_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Speed ~ Amulet of Mighty Fists", {
   Name="SPEED_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Storing ~ Amulet of Mighty Fists", {
   Name="STORE_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Thundering ~ Amulet of Mighty Fists", {
   Name="THUNDER_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Unholy ~ Amulet of Mighty Fists", {
   Name="UNHOLY_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Vicious ~ Amulet of Mighty Fists", {
   Name="VICIOUS_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Wounding ~ Amulet of Mighty Fists", {
   Name="WOUND_AMF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +1 ~ Armor", {
   Name="PLUS1A",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +2 ~ Armor", {
   Name="PLUS2A",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +3 ~ Armor", {
   Name="PLUS3A",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +4 ~ Armor", {
   Name="PLUS4A",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +5 ~ Armor", {
   Name="PLUS5A",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +1 ~ Shield", {
   Name="PLUS1S",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +2 ~ Shield", {
   Name="PLUS2S",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +3 ~ Shield", {
   Name="PLUS3S",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +4 ~ Shield", {
   Name="PLUS4S",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ +5 ~ Shield", {
   Name="PLUS5S",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Animated ~ Shield", {
   Name="ANMATD",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Arrow Catching ~ Shield", {
   Name="ARW_CAT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Arrow Deflection ~ Shield", {
   Name="ARW_DEF",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bashing ~ Shield / Heavy", {
   Name="BASH_H",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Bashing ~ Shield / Light", {
   Name="BASH_L",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Blinding ~ Shield", {
   Name="BLIND",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Acid ~ Armor", {
   Name="RST_ACD",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Acid / Improved ~ Armor", {
   Name="RST_ACD_IMP",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Acid / Greater ~ Armor", {
   Name="RES_ACD_GRT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Cold ~ Armor", {
   Name="RST_CLD",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Cold / Improved ~ Armor", {
   Name="RST_CLD_IMP",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Cold / Greater ~ Armor", {
   Name="RES_CLD_GRT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Electricity ~ Armor", {
   Name="RST_ELC",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Electricity / Improved ~ Armor", {
   Name="RST_ELC_IMP",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Electricity / Greater ~ Armor", {
   Name="RES_ELC_GRT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Fire ~ Armor", {
   Name="RST_FIR",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Fire / Improved ~ Armor", {
   Name="RST_FIR_IMP",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Fire / Greater ~ Armor", {
   Name="RES_FIR_GRT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Sonic ~ Armor", {
   Name="RST_SNC",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Sonic / Improved ~ Armor", {
   Name="RST_SNC_IMP",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Energy Resistance / Sonic / Greater ~ Armor", {
   Name="RES_SNC_GRT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Etherealness ~ Armor", {
   Name="ETHERE",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Fortification / Light ~ Armor", {
   Name="FRT_LGHT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Fortification / Moderate ~ Armor", {
   Name="FRT_MOD",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Fortification / Heavy ~ Armor", {
   Name="FRT_HVY",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Ghost Touch ~ Armor", {
   Name="GHOST_A",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Glamered ~ Armor", {
   Name="GLAM",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Invulnerability ~ Armor", {
   Name="INVULN",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Reflecting ~ Shield", {
   Name="REFLC",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Shadow ~ Armor", {
   Name="SHDW",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Shadow / Improved ~ Armor", {
   Name="SHDW_IMP",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Shadow / Greater ~ Armor", {
   Name="SHDW_GRT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Slick ~ Armor", {
   Name="SLK",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Slick / Improved ~ Armor", {
   Name="SLK_IMP",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Slick / Greater ~ Armor", {
   Name="SLK_GRT",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Resistance / 13 ~ Armor", {
   Name="SPELL_RES_13",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Resistance / 15 ~ Armor", {
   Name="SPELL_RES_15",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Resistance / 17 ~ Armor", {
   Name="SPELL_RES_17",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Spell Resistance / 19 ~ Armor", {
   Name="SPELL_RES_19",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Undead Controlling ~ Armor", {
   Name="UNDEAD",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Wild ~ Armor", {
   Name="WILD_A",
   Visible=false,
 })
-
 CopyEquipmentModifier("Special Ability ~ Wild ~ Shield", {
   Name="WILD_S",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Base", {
   Name="IntItemBase",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose", {
   Name="IntItemPurpose",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 11", {
   Name="IntItemStatINT11",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 12", {
   Name="IntItemStatINT12",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 13", {
   Name="IntItemStatINT13",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 14", {
   Name="IntItemStatINT14",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 15", {
   Name="IntItemStatINT15",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 16", {
   Name="IntItemStatINT16",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 17", {
   Name="IntItemStatINT17",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 18", {
   Name="IntItemStatINT18",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 19", {
   Name="IntItemStatINT19",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Intelligence 20", {
   Name="IntItemStatINT20",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 11", {
   Name="IntItemStatWIS11",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 12", {
   Name="IntItemStatWIS12",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 13", {
   Name="IntItemStatWIS13",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 14", {
   Name="IntItemStatWIS14",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 15", {
   Name="IntItemStatWIS15",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 16", {
   Name="IntItemStatWIS16",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 17", {
   Name="IntItemStatWIS17",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 18", {
   Name="IntItemStatWIS18",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 19", {
   Name="IntItemStatWIS19",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Wisdom 20", {
   Name="IntItemStatWIS20",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 11", {
   Name="IntItemStatCHA11",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 12", {
   Name="IntItemStatCHA12",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 13", {
   Name="IntItemStatCHA13",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 14", {
   Name="IntItemStatCHA14",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 15", {
   Name="IntItemStatCHA15",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 16", {
   Name="IntItemStatCHA16",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 17", {
   Name="IntItemStatCHA17",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 18", {
   Name="IntItemStatCHA18",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 19", {
   Name="IntItemStatCHA19",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Ability Score / Charisma 20", {
   Name="IntItemStatCHA20",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Communication / Speech", {
   Name="IntSpeech",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Communication / Telepathy", {
   Name="IntTelepathy",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Sense / Range 60", {
   Name="IntSense60",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Sense / Range 120", {
   Name="IntSense120",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Sense / Darkvision", {
   Name="IntDarkvision",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Sense / Blindsense", {
   Name="IntBlindsense",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Communication / Read Language", {
   Name="IntReadLang",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Communication / Read Magic", {
   Name="IntReadMagic",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Chaotic Good", {
   Name="Intelligent Item Alignment (CG)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Chaotic Neutral", {
   Name="Intelligent Item Alignment (CN)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Chaotic Evil", {
   Name="Intelligent Item Alignment (CE)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Neutral Evil", {
   Name="Intelligent Item Alignment (NE)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Lawful Evil", {
   Name="Intelligent Item Alignment (LE)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Lawful Good", {
   Name="Intelligent Item Alignment (LG)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Lawful Neutral", {
   Name="Intelligent Item Alignment (LN)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Alignment / Neutral Good", {
   Name="Intelligent Item Alignment (NG)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Alignment / True Neutral", {
   Name="Intelligent Item Alignment (TN)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Power / 0 Level Spell / At-Will", {
   Name="ItemPower_CastZeroAtWill",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Power / 1st Level Spell / 3 per Day", {
   Name="ItemPower_CastOneThree",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Power / 2nd Level Spell / 1 per Day", {
   Name="ItemPower_CastTwoOne",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Power / 3rd Level Spell / 1 per Day", {
   Name="ItemPower_CastThreeOne",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Power / 3rd Level Spell / 3 per Day", {
   Name="ItemPower_CastThreeThree",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Power / 4th Level Spell / 3 per Day", {
   Name="ItemPower_CastFourThree",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Power / 2nd Level Spell / 3 per Day", {
   Name="ItemPower_CastTwoThree",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Power / 4th Level Spell / 1 per Day", {
   Name="ItemPower_CastFourOne",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Power / Magic Aura / At-Will", {
   Name="ItemPower_MagicAura",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Power / Skill Ranks / 5", {
   Name="ItemPower_FiveSkill",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Power / Movement / Walk 10 Feet", {
   Name="ItemPower_Move",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Power / Skill Ranks / 10", {
   Name="ItemPower_TenSkill",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Power / Change Shape", {
   Name="ItemPower_ChangeShape",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Power / Movement / Fly 30 Feet", {
   Name="ItemPower_Fly",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Power / Movement / Teleport / 1 per Day", {
   Name="ItemPower_Teleport",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Alignment", {
   Name="Intelligent Item Purpose (Slay Align)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Arcane Spellcaster", {
   Name="Intelligent Item Purpose (Slay Arcane)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Divine Spellcaster", {
   Name="Intelligent Item Purpose (Slay Divine)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Non-spellcaster", {
   Name="Intelligent Item Purpose (Slay NonCasters)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Creature Type", {
   Name="Intelligent Item Purpose (Slay Creature Type)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Creature Race", {
   Name="Intelligent Item Purpose (Slay Race or Kind)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Defend Creature Race", {
   Name="Intelligent Item Purpose (Defend Race or Kind)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay Servants of Deity", {
   Name="Intelligent Item Purpose (Slay Deity Servant)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Defend Servants of Deity", {
   Name="Intelligent Item Purpose (Defend Deity Servant)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose / Slay All", {
   Name="Intelligent Item Purpose (Slay All)",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose Power / Detect Foe", {
   Name="PurposePower_DetectFoe",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose Power / 4th Level Spell / At-Will", {
   Name="PurposePower_CastFourAtWill",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose Power / Luck Bonus", {
   Name="PurposePower_LuckBonus",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose Power / 5th Level Spell / At-Will", {
   Name="PurposePower_CastFiveAtWill",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose Power / 6th Level Spell / At-Will", {
   Name="PurposePower_CastSixAtWill",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose Power / 7th Level Spell / At-Will", {
   Name="PurposePower_CastSevenAtWill",
   Visible=false,
 })
-
 CopyEquipmentModifier("Intelligent Item ~ Purpose Power / True Resurrection", {
   Name="PurposePower_TrueRes",
   Visible=false,
 })
-

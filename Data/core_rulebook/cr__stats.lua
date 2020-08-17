@@ -145,7 +145,6 @@ DefineStat({
     },
   },
 })
-
 DefineStat({
   Name="Dexterity",
   Key="DEX",
@@ -293,7 +292,6 @@ DefineStat({
     },
   },
 })
-
 DefineStat({
   Name="Constitution",
   Key="CON",
@@ -391,7 +389,6 @@ DefineStat({
     },
   },
 })
-
 DefineStat({
   Name="Intelligence",
   Key="INT",
@@ -460,7 +457,6 @@ DefineStat({
     },
   },
 })
-
 DefineStat({
   Name="Wisdom",
   Key="WIS",
@@ -508,7 +504,6 @@ DefineStat({
     },
   },
 })
-
 DefineStat({
   Name="Charisma",
   Key="CHA",
@@ -579,4 +574,3 @@ DefineStat({
     },
   },
 })
-

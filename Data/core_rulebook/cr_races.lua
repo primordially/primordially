@@ -39,7 +39,6 @@ DefineRace({
     Walk=20,
   },
 })
-
 DefineRace({
   Name="Elf",
   SortKey="a_base_pc",
@@ -73,7 +72,6 @@ DefineRace({
     Walk=30,
   },
 })
-
 DefineRace({
   Name="Gnome",
   SortKey="a_base_pc",
@@ -107,7 +105,6 @@ DefineRace({
     Walk=20,
   },
 })
-
 DefineRace({
   Name="Half-Elf",
   SortKey="a_base_pc",
@@ -149,7 +146,6 @@ DefineRace({
     Walk=30,
   },
 })
-
 DefineRace({
   Name="Half-Orc",
   SortKey="a_base_pc",
@@ -191,7 +187,6 @@ DefineRace({
     Walk=30,
   },
 })
-
 DefineRace({
   Name="Halfling",
   SortKey="a_base_pc",
@@ -237,7 +232,6 @@ DefineRace({
     Walk=20,
   },
 })
-
 DefineRace({
   Name="Human",
   SortKey="a_base_pc",
@@ -271,7 +265,6 @@ DefineRace({
     Walk=30,
   },
 })
-
 DefineRace({
   Name="A test",
   SortKey="a_base_pc",
@@ -289,4 +282,3 @@ DefineRace({
     Walk=10,
   },
 })
-

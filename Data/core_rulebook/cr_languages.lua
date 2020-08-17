@@ -15,7 +15,6 @@ DefineLanguage({
     "Planar",
   },
 })
-
 DefineLanguage({
   Name="Aklo",
   Types={
@@ -24,7 +23,6 @@ DefineLanguage({
     "Read",
   },
 })
-
 DefineLanguage({
   Name="Aquan",
   Types={
@@ -34,7 +32,6 @@ DefineLanguage({
     "Elemental",
   },
 })
-
 DefineLanguage({
   Name="Auran",
   Types={
@@ -44,7 +41,6 @@ DefineLanguage({
     "Elemental",
   },
 })
-
 DefineLanguage({
   Name="Celestial",
   Types={
@@ -54,7 +50,6 @@ DefineLanguage({
     "Planar",
   },
 })
-
 DefineLanguage({
   Name="Common",
   Types={
@@ -64,7 +59,6 @@ DefineLanguage({
     "ModernHumanLanguage",
   },
 })
-
 DefineLanguage({
   Name="Draconic",
   Types={
@@ -73,7 +67,6 @@ DefineLanguage({
     "Read",
   },
 })
-
 DefineLanguage({
   Name="Druidic",
   Conditions={
@@ -88,7 +81,6 @@ DefineLanguage({
     "Secret",
   },
 })
-
 DefineLanguage({
   Name="Dwarven",
   Types={
@@ -97,7 +89,6 @@ DefineLanguage({
     "Read",
   },
 })
-
 DefineLanguage({
   Name="Elven",
   Types={
@@ -106,7 +97,6 @@ DefineLanguage({
     "Read",
   },
 })
-
 DefineLanguage({
   Name="Giant",
   Types={
@@ -115,7 +105,6 @@ DefineLanguage({
     "Read",
   },
 })
-
 DefineLanguage({
   Name="Gnoll",
   Types={
@@ -124,7 +113,6 @@ DefineLanguage({
     "Read",
   },
 })
-
 DefineLanguage({
   Name="Gnome",
   Types={
@@ -133,7 +121,6 @@ DefineLanguage({
     "Read",
   },
 })
-
 DefineLanguage({
   Name="Goblin",
   Types={
@@ -142,7 +129,6 @@ DefineLanguage({
     "Read",
   },
 })
-
 DefineLanguage({
   Name="Halfling",
   Types={
@@ -151,7 +137,6 @@ DefineLanguage({
     "Read",
   },
 })
-
 DefineLanguage({
   Name="Ignan",
   Types={
@@ -161,7 +146,6 @@ DefineLanguage({
     "Elemental",
   },
 })
-
 DefineLanguage({
   Name="Infernal",
   Types={
@@ -171,7 +155,6 @@ DefineLanguage({
     "Planar",
   },
 })
-
 DefineLanguage({
   Name="Orc",
   Types={
@@ -180,7 +163,6 @@ DefineLanguage({
     "Read",
   },
 })
-
 DefineLanguage({
   Name="Sylvan",
   Types={
@@ -189,7 +171,6 @@ DefineLanguage({
     "Read",
   },
 })
-
 DefineLanguage({
   Name="Terran",
   Types={
@@ -199,7 +180,6 @@ DefineLanguage({
     "Elemental",
   },
 })
-
 DefineLanguage({
   Name="Undercommon",
   Types={
@@ -208,11 +188,9 @@ DefineLanguage({
     "Read",
   },
 })
-
 DefineLanguage({
   Name="Read Lips",
   Types={
     "Spoken",
   },
 })
-

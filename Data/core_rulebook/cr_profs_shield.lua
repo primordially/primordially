@@ -9,18 +9,14 @@ SetSource({
 DefineShieldProficiency({
   Name="Buckler",
 })
-
 DefineShieldProficiency({
   Name="Light Shield",
   Key="Shield (Light)",
 })
-
 DefineShieldProficiency({
   Name="Heavy Shield",
   Key="Shield (Heavy)",
 })
-
 DefineShieldProficiency({
   Name="Tower Shield",
 })
-
