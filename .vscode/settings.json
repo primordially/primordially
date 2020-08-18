@@ -55,9 +55,10 @@
     "AddAvailableCompanions",
     "Formula",
     "DiceFormula",
-    "filter",
-    "any",
+    "GetSize",
+    "countTrue",
     "stringMatch",
-    "contains",
+    "any",
+    "filter"
   ]
 }

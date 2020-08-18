@@ -47,7 +47,7 @@
                         _ => throw new ParseFailedException(value, "Unable to parse FORMATCAT"),
                     }),
                 Property.SeparatedList<string>('.', "ITYPE", "GrantedItemTypes"),
-                Property.String("COST", "Cost"),
+                Property.Formula("COST", "Cost"),
                 Property.Boolean("VISIBLE", "Visible"),
                 Property.Boolean("ASSIGNTOALL", "AffectsBothHeads"),
                 Property.SeparatedList<string>(',', "REPLACES", "Replaces"),

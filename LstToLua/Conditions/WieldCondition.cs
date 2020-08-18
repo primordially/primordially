@@ -2,13 +2,11 @@
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class WieldCondition : MultiCondition
+    internal class WieldCondition : BooleanMultiCondition
     {
         public WieldCondition(bool inverted, int count, List<string> conditions) : base(inverted, count, conditions)
         {
         }
-
-        protected override string Arguments => "item";
 
         public static Condition Parse(TextSpan value, bool invert)
         {

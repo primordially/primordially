@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace Primordially.LstToLua.Conditions
@@ -46,8 +45,56 @@ namespace Primordially.LstToLua.Conditions
             return new OrCondition(invert, count, conditions);
         }
 
+        public override bool IsSimple => Conditions.All(c => c.IsSimple);
+
+        public override void DumpCondition(LuaTextWriter output)
+        {
+            string separator;
+            if (Count == 1)
+            {
+                separator = " or ";
+            }
+            else if (Count == Conditions.Count)
+            {
+                separator = " and ";
+            }
+            else
+            {
+                separator = ", ";
+            }
+
+            if (separator == ", ")
+            {
+                output.Write("countTrue(");
+            }
+
+            bool first = true;
+            foreach (var condition in Conditions)
+            {
+                if (first)
+                {
+                    first = false;
+                }
+                else
+                {
+                    output.Write(separator);
+                }
+                condition.DumpCondition(output);
+            }
+
+            if (separator == ", ")
+            {
+                output.Write($") >= {Count}");
+            }
+        }
+
         public override void Dump(LuaTextWriter output)
         {
+            if (IsSimple)
+            {
+                base.Dump(output);
+                return;
+            }
             output.WriteStartFunction("character");
             output.Write("local count = 0\n");
             output.Write("local subCondition\n");
@@ -63,11 +110,6 @@ namespace Primordially.LstToLua.Conditions
 
             output.Write($"return count >= {Count}\n");
             output.WriteEndFunction();
-        }
-
-        public override void DumpCondition(LuaTextWriter output)
-        {
-            throw new NotSupportedException("This should never be called");
         }
     }
 }

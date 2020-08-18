@@ -2,7 +2,7 @@
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class MovementCondition : MultiCondition
+    internal class MovementCondition : BooleanMultiCondition
     {
         public MovementCondition(bool inverted, int count, List<string> conditions) : base(inverted, count, conditions)
         {

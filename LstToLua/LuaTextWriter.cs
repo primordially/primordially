@@ -94,6 +94,28 @@ namespace Primordially.LstToLua
                 throw new NotSupportedException(value.GetType().FullName);
         }
 
+        public void WriteValues(IEnumerable values)
+        {
+            bool first = true;
+            foreach (object? value in values)
+            {
+                if (!first)
+                {
+                    Write(", ");
+                }
+                else
+                {
+                    first = false;
+                }
+                WriteValue(value);
+            }
+        }
+
+        public void WriteValue(string value)
+        {
+            WriteValue(value.AsSpan());
+        }
+
         public void WriteValue(ReadOnlySpan<char> value)
         {
             Write("\"");

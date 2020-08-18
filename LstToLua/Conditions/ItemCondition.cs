@@ -2,7 +2,7 @@
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class ItemCondition : MultiCondition
+    internal class ItemCondition : BooleanMultiCondition
     {
         public ItemCondition(bool inverted, int count, List<string> conditions) : base(inverted, count, conditions)
         {
@@ -21,11 +21,11 @@ namespace Primordially.LstToLua.Conditions
             {
                 if (part.TryRemovePrefix("TYPE=", out var type))
                 {
-                    conditions.Add($"#filter(character.Items, function (item) return item.IsType(\"{type.Value}\") end)");
+                    conditions.Add($"character.HasItemOfType(\"{type.Value}\")");
                 }
                 else
                 {
-                    conditions.Add($"#filter(character.Items, function (item) return stringMatch(item.Name, \"{part.Value}\") end)");
+                    conditions.Add($"character.HasItemMatching(\"{part.Value}\")");
                 }
             }
 

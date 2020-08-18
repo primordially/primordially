@@ -16,7 +16,7 @@ namespace Primordially.LstToLua.Conditions
 
         public override void DumpCondition(LuaTextWriter output)
         {
-            var matchingSpellCount = string.Join(" + ", SpellNames.Select(n => $"character.HasSpell(\"{n}\") and 1 or 0"));
+            var matchingSpellCount = $"countTrue({string.Join(", ", SpellNames.Select(n => $"character.HasSpell(\"{n}\")"))})";
             var condition = $"({matchingSpellCount}) >= {Count}";
             if (Inverted)
             {

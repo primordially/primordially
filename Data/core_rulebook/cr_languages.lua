@@ -70,7 +70,7 @@ DefineLanguage({
 DefineLanguage({
   Name="Druidic",
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["DruidSecretLanguage"] == 1)
     end,
   },

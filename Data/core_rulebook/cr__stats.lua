@@ -23,7 +23,7 @@ DefineStat({
         Name="Ability",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableToHitMeleeStr"] == 0)
         end,
       },
@@ -105,9 +105,11 @@ DefineStat({
         Name="Racial",
       },
       Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "Racial Vision")
+        function (character, item)
+          return not (character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType("Racial Vision") then return true end
+            return false
           end))
         end,
       },
@@ -126,22 +128,22 @@ DefineStat({
     {
       Target="Score",
       Action="SET",
-      Value="input(\"STATSCORE\")",
+      Value=Formula("input(\"STATSCORE\")"),
     },
     {
       Target="Mod",
       Action="SET",
-      Value="d20Mod(Score)",
+      Value=Formula("d20Mod(Score)"),
     },
     {
       Target="STR",
       Action="SET",
-      Value="Mod",
+      Value=Formula("Mod"),
     },
     {
       Target="STRSCORE",
       Action="SET",
-      Value="Score",
+      Value=Formula("Score"),
     },
   },
 })
@@ -159,7 +161,7 @@ DefineStat({
         Name="Ability",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableToHitRangedDex"] == 0)
         end,
       },
@@ -184,7 +186,7 @@ DefineStat({
         Name="Ability",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["ACStatNotDex"] == 0)
         end,
       },
@@ -230,7 +232,7 @@ DefineStat({
       Category="VAR",
       Formula=Formula("1000"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["ENCUMBERANCE"] == 0)
         end,
       },
@@ -242,7 +244,7 @@ DefineStat({
       Category="VAR",
       Formula=Formula("3"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["ENCUMBERANCE"] == 1)
         end,
       },
@@ -254,7 +256,7 @@ DefineStat({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["ENCUMBERANCE"] == 2)
         end,
       },
@@ -273,22 +275,22 @@ DefineStat({
     {
       Target="Score",
       Action="SET",
-      Value="input(\"STATSCORE\")",
+      Value=Formula("input(\"STATSCORE\")"),
     },
     {
       Target="Mod",
       Action="SET",
-      Value="d20Mod(Score)",
+      Value=Formula("d20Mod(Score)"),
     },
     {
       Target="DEX",
       Action="SET",
-      Value="Mod",
+      Value=Formula("Mod"),
     },
     {
       Target="DEXSCORE",
       Action="SET",
-      Value="Score",
+      Value=Formula("Score"),
     },
   },
 })
@@ -310,8 +312,8 @@ DefineStat({
       Category="HP",
       Formula=Formula("CON"),
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DAMAGE_HP"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DAMAGE_HP"))
         end,
       },
       Variables={
@@ -339,8 +341,8 @@ DefineStat({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DAMAGE_VW"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DAMAGE_VW"))
         end,
       },
       Variables={
@@ -351,8 +353,8 @@ DefineStat({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("USE_CMB"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("USE_CMB"))
         end,
       },
       Variables={
@@ -370,22 +372,22 @@ DefineStat({
     {
       Target="Score",
       Action="SET",
-      Value="input(\"STATSCORE\")",
+      Value=Formula("input(\"STATSCORE\")"),
     },
     {
       Target="Mod",
       Action="SET",
-      Value="d20Mod(Score)",
+      Value=Formula("d20Mod(Score)"),
     },
     {
       Target="CON",
       Action="SET",
-      Value="Mod",
+      Value=Formula("Mod"),
     },
     {
       Target="CONSCORE",
       Action="SET",
-      Value="Score",
+      Value=Formula("Score"),
     },
   },
 })
@@ -438,22 +440,22 @@ DefineStat({
     {
       Target="Score",
       Action="SET",
-      Value="input(\"STATSCORE\")",
+      Value=Formula("input(\"STATSCORE\")"),
     },
     {
       Target="Mod",
       Action="SET",
-      Value="d20Mod(Score)",
+      Value=Formula("d20Mod(Score)"),
     },
     {
       Target="INT",
       Action="SET",
-      Value="Mod",
+      Value=Formula("Mod"),
     },
     {
       Target="INTSCORE",
       Action="SET",
-      Value="Score",
+      Value=Formula("Score"),
     },
   },
 })
@@ -485,22 +487,22 @@ DefineStat({
     {
       Target="Score",
       Action="SET",
-      Value="input(\"STATSCORE\")",
+      Value=Formula("input(\"STATSCORE\")"),
     },
     {
       Target="Mod",
       Action="SET",
-      Value="d20Mod(Score)",
+      Value=Formula("d20Mod(Score)"),
     },
     {
       Target="WIS",
       Action="SET",
-      Value="Mod",
+      Value=Formula("Mod"),
     },
     {
       Target="WISSCORE",
       Action="SET",
-      Value="Score",
+      Value=Formula("Score"),
     },
   },
 })
@@ -518,7 +520,7 @@ DefineStat({
         Name="Ability",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["ACStatIsCha"] == 1)
         end,
       },
@@ -555,22 +557,22 @@ DefineStat({
     {
       Target="Score",
       Action="SET",
-      Value="input(\"STATSCORE\")",
+      Value=Formula("input(\"STATSCORE\")"),
     },
     {
       Target="Mod",
       Action="SET",
-      Value="d20Mod(Score)",
+      Value=Formula("d20Mod(Score)"),
     },
     {
       Target="CHA",
       Action="SET",
-      Value="Mod",
+      Value=Formula("Mod"),
     },
     {
       Target="CHASCORE",
       Action="SET",
-      Value="Score",
+      Value=Formula("Score"),
     },
   },
 })

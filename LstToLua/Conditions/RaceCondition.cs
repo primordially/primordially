@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class RaceCondition : MultiCondition
+    internal class RaceCondition : BooleanMultiCondition
     {
         public RaceCondition(bool inverted, int count, List<string> conditions) : base(inverted, count, conditions)
         {
@@ -48,21 +48,21 @@ namespace Primordially.LstToLua.Conditions
                 if (part.StartsWith("TYPE="))
                 {
                     var type = part.Substring("TYPE=".Length).Value;
-                    AddCondition($"any(character.Race.Types, function (type) stringMatch(type, \"{type}\") end) and 1 or 0");
+                    AddCondition($"any(character.Race.Types, function (type) stringMatch(type, \"{type}\") end)");
                 }
                 else if (part.StartsWith("RACETYPE="))
                 {
                     var raceType = part.Substring("RACETYPE=".Length).Value;
-                    AddCondition($"any(character.Race.RaceTypes, function (type) stringMatch(type, \"{raceType}\") end) and 1 or 0");
+                    AddCondition($"any(character.Race.RaceTypes, function (type) stringMatch(type, \"{raceType}\") end)");
                 }
                 else if (part.StartsWith("RACESUBTYPE="))
                 {
                     var raceSubType = part.Substring("RACESUBTYPE=".Length).Value;
-                    AddCondition($"any(character.Race.RaceSubTypes, function (type) stringMatch(type, \"{raceSubType}\") end) and 1 or 0");
+                    AddCondition($"any(character.Race.RaceSubTypes, function (type) stringMatch(type, \"{raceSubType}\") end)");
                 }
                 else
                 {
-                    AddCondition($"character.Race.Name == \"{part.Value}\" and 1 or 0");
+                    AddCondition($"character.Race.Name == \"{part.Value}\"");
                 }
             }
 

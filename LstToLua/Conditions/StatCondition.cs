@@ -2,7 +2,7 @@
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class StatCondition : MultiCondition
+    internal class StatCondition : BooleanMultiCondition
     {
         public StatCondition(bool inverted, int count, List<string> conditions) : base(inverted, count, conditions)
         {

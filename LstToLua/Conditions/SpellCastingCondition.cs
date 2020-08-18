@@ -24,7 +24,7 @@ namespace Primordially.LstToLua.Conditions
             else
             {
                 condition = string.Join(" and ",
-                    Types.Select(t => $"any(character.Classes, function (class) return contains(class.Types, \"{t}\") end)"));
+                    Types.Select(t => $"any(character.Classes, function (class) class.IsType(\"{t}\") end)"));
             }
 
             if (Inverted)

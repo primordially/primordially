@@ -20,7 +20,7 @@ namespace Primordially.LstToLua.Conditions
 
         public override void DumpCondition(LuaTextWriter output)
         {
-            var condition = string.Join(" or ", Alignments.Select(alignment => $"character.Alignment == \"{alignment}\""));
+            var condition = string.Join(" or ", Alignments.Select(alignment => $"character.IsAlignment(\"{alignment}\")"));
             if (Inverted)
             {
                 condition = $"not ({condition})";

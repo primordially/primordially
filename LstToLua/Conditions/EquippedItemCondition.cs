@@ -2,7 +2,7 @@
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class EquippedItemCondition : MultiCondition
+    internal class EquippedItemCondition : BooleanMultiCondition
     {
         public EquippedItemCondition(bool inverted, int count, List<string> conditions) : base(inverted, count, conditions)
         {
