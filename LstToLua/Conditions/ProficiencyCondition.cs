@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class ProficiencyCondition : MultiCondition
+    internal class ProficiencyCondition : BooleanMultiCondition
     {
         public ProficiencyCondition(bool inverted, int count, List<string> conditions) : base(inverted, count, conditions)
         {

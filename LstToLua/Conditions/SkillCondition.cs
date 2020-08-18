@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class SkillCondition : MultiCondition
+    internal class SkillCondition : BooleanMultiCondition
     {
         public SkillCondition(bool inverted, int count, List<string> conditions) : base(inverted, count, conditions)
         {
@@ -26,11 +26,11 @@ namespace Primordially.LstToLua.Conditions
                 if (nameOrType.StartsWith("TYPE."))
                 {
                     var type = nameOrType.Substring("TYPE.".Length);
-                    conditions.Add($"character.BestSkillOfType(\"{type.Value}\").ranks >= {rank} and 1 or 0");
+                    conditions.Add($"character.BestSkillOfType(\"{type.Value}\").ranks >= {rank}");
                 }
                 else
                 {
-                    conditions.Add($"character.Skill(\"{nameOrType.Value}\").ranks >= {rank} and 1 or 0");
+                    conditions.Add($"character.Skill(\"{nameOrType.Value}\").ranks >= {rank}");
                 }
             }
 

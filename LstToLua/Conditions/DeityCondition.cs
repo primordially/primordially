@@ -2,7 +2,7 @@
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class DeityCondition : MultiCondition
+    internal class DeityCondition : BooleanMultiCondition
     {
         public DeityCondition(bool inverted, int count, List<string> conditions) : base(inverted, count, conditions)
         {

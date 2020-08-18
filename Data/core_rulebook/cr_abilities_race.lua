@@ -73,7 +73,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Dwarf_ReplaceAbilityScores"] == "true")
     end,
   },
@@ -95,7 +95,7 @@ DefineAbility({
   SourcePage="p.21",
   Visible=true,
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Dwarf_ReplaceSize"] == "true")
     end,
   },
@@ -126,7 +126,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Dwarf_ReplaceSpeed"] == "True")
     end,
   },
@@ -156,7 +156,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Dwarf_ReplaceVision"] == "True")
     end,
   },
@@ -213,7 +213,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Dwarf_ReplaceDefensiveTraining"] == "True")
     end,
   },
@@ -232,7 +232,7 @@ DefineAbility({
   Description={
     Format="Dwarves receive a +2 racial bonus on Appraise skill checks made to determine the price of nonmagical goods that contain precious metals or gemstones.",
     Conditions={
-      function (character)
+      function (character, item)
         return (character.Variables["DwarvenGreedAspect"] == 0)
       end,
     },
@@ -246,7 +246,7 @@ DefineAbility({
         Name="Racial",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DwarvenGreedAspect"] == 0)
         end,
       },
@@ -256,7 +256,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Dwarf_ReplaceGreed"] == "True")
     end,
   },
@@ -286,7 +286,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Dwarf_ReplaceHatred"] == "True")
     end,
   },
@@ -311,7 +311,7 @@ DefineAbility({
       Name="SaveBonus",
       FormatString="+2 racial bonus on saving throws against poison, spells, and spell-like abilities.",
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DwarfHardyAspect"] == 0)
         end,
       },
@@ -320,7 +320,7 @@ DefineAbility({
       Name="SaveBonus",
       FormatString="+2 racial bonus on saving throws against poison.",
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DwarfHardyAspect"] == 1)
         end,
       },
@@ -349,7 +349,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Dwarf_ReplaceHardy"] == "True")
     end,
   },
@@ -388,7 +388,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Dwarf_ReplaceStability"] == "True")
     end,
   },
@@ -439,7 +439,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Dwarf_ReplaceStonecunning"] == "True")
     end,
   },
@@ -483,7 +483,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Dwarf_ReplaceWeaponFamiliarity"] == "True")
     end,
   },
@@ -512,7 +512,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Dwarf_ReplaceLanguages"] == "True")
     end,
   },
@@ -578,7 +578,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Elf_ReplaceAbilityScores"] == "true")
     end,
   },
@@ -600,7 +600,7 @@ DefineAbility({
   SourcePage="p.22",
   Visible=true,
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Elf_ReplaceSize"] == "true")
     end,
   },
@@ -622,7 +622,7 @@ DefineAbility({
   SourcePage="p.22",
   Visible=true,
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Elf_ReplaceSpeed"] == "true")
     end,
   },
@@ -652,7 +652,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Elf_ReplaceVision"] == "true")
     end,
   },
@@ -708,7 +708,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Elf_ReplaceElvenImmunities"] == "true")
     end,
   },
@@ -740,7 +740,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Elf_ReplaceElvenMagic"] == "true")
     end,
   },
@@ -784,7 +784,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Elf_ReplaceKeenSenses"] == "true")
     end,
   },
@@ -820,7 +820,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Elf_ReplaceWeaponFamiliarity"] == "true")
     end,
   },
@@ -850,7 +850,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Elf_ReplaceLanguages"] == "true")
     end,
   },
@@ -917,7 +917,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceAbilityScores"] == "true")
     end,
   },
@@ -939,7 +939,7 @@ DefineAbility({
   SourcePage="p.23",
   Visible=true,
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceSize"] == "true")
     end,
   },
@@ -961,7 +961,7 @@ DefineAbility({
   SourcePage="p.23",
   Visible=true,
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceSpeed"] == "true")
     end,
   },
@@ -991,7 +991,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceVision"] == "true")
     end,
   },
@@ -1048,7 +1048,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceDefensiveTraining"] == "true")
     end,
   },
@@ -1088,7 +1088,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceGnomeMagic"] == "true")
     end,
   },
@@ -1101,8 +1101,8 @@ DefineAbility({
       DC="10+CHA",
       CasterLevel="TL",
       Conditions={
-        function (character)
-          return ((character.Stats["CHA"] >= 11)) >= 1
+        function (character, item)
+          return (character.Stats["CHA"] >= 11)
         end,
       },
     },
@@ -1114,8 +1114,8 @@ DefineAbility({
       DC="10+CHA",
       CasterLevel="TL",
       Conditions={
-        function (character)
-          return ((character.Stats["CHA"] >= 11)) >= 1
+        function (character, item)
+          return (character.Stats["CHA"] >= 11)
         end,
       },
     },
@@ -1127,8 +1127,8 @@ DefineAbility({
       DC="11+CHA",
       CasterLevel="TL",
       Conditions={
-        function (character)
-          return ((character.Stats["CHA"] >= 11)) >= 1
+        function (character, item)
+          return (character.Stats["CHA"] >= 11)
         end,
       },
     },
@@ -1140,8 +1140,8 @@ DefineAbility({
       DC="10+CHA",
       CasterLevel="TL",
       Conditions={
-        function (character)
-          return ((character.Stats["CHA"] >= 11)) >= 1
+        function (character, item)
+          return (character.Stats["CHA"] >= 11)
         end,
       },
     },
@@ -1192,7 +1192,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceHatred"] == "true")
     end,
   },
@@ -1231,7 +1231,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceIllusionResistance"] == "true")
     end,
   },
@@ -1270,7 +1270,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceKeenSenses"] == "true")
     end,
   },
@@ -1299,7 +1299,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceObsessive"] == "true")
     end,
   },
@@ -1324,7 +1324,7 @@ DefineAbility({
   },
   SourcePage="p.23",
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceWeaponFamiliarity"] == "true")
     end,
   },
@@ -1353,7 +1353,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Gnome_ReplaceLanguages"] == "true")
     end,
   },
@@ -1454,7 +1454,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfElf_ReplaceAbilityScores"] == "true")
     end,
   },
@@ -1476,7 +1476,7 @@ DefineAbility({
   SourcePage="p.24",
   Visible=true,
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfElf_ReplaceSize"] == "true")
     end,
   },
@@ -1498,7 +1498,7 @@ DefineAbility({
   SourcePage="p.24",
   Visible=true,
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfElf_ReplaceSpeed"] == "true")
     end,
   },
@@ -1528,7 +1528,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfElf_ReplaceVision"] == "true")
     end,
   },
@@ -1565,7 +1565,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfElf_ReplaceAdaptability"] == "true")
     end,
   },
@@ -1585,7 +1585,7 @@ DefineAbility({
   },
   SourcePage="p.24",
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfElf_ReplaceElfBlood"] == "true")
     end,
   },
@@ -1633,7 +1633,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfElf_ReplaceElvenImmunities"] == "true")
     end,
   },
@@ -1675,7 +1675,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfElf_ReplaceKeenSenses"] == "true")
     end,
   },
@@ -1704,7 +1704,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfElf_ReplaceMultitalented"] == "true")
     end,
   },
@@ -1732,7 +1732,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfElf_ReplaceLanguages"] == "true")
     end,
   },
@@ -1770,7 +1770,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfOrc_ReplaceAbilityScores"] == "true")
     end,
   },
@@ -1792,7 +1792,7 @@ DefineAbility({
   SourcePage="p.24",
   Visible=true,
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfOrc_ReplaceSize"] == "true")
     end,
   },
@@ -1814,7 +1814,7 @@ DefineAbility({
   SourcePage="p.24",
   Visible=true,
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfOrc_ReplaceSpeed"] == "true")
     end,
   },
@@ -1845,7 +1845,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfOrc_ReplaceVision"] == "true")
     end,
   },
@@ -1885,7 +1885,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfOrc_ReplaceIntimidating"] == "true")
     end,
   },
@@ -1905,7 +1905,7 @@ DefineAbility({
   },
   SourcePage="p.25",
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfOrc_ReplaceOrcBlood"] == "true")
     end,
   },
@@ -1935,7 +1935,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfOrc_ReplaceOrcFerocity"] == "true")
     end,
   },
@@ -1970,7 +1970,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfOrc_ReplaceWeaponFamiliarity"] == "true")
     end,
   },
@@ -2000,7 +2000,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["HalfOrc_ReplaceLanguages"] == "true")
     end,
   },
@@ -2065,7 +2065,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Halfling_ReplaceAbilityScores"] == "true")
     end,
   },
@@ -2087,7 +2087,7 @@ DefineAbility({
   SourcePage="p.26",
   Visible=true,
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Halfling_ReplaceSize"] == "true")
     end,
   },
@@ -2109,7 +2109,7 @@ DefineAbility({
   SourcePage="p.26",
   Visible=true,
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Halfling_ReplaceSpeed"] == "true")
     end,
   },
@@ -2148,7 +2148,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Halfling_ReplaceFearless"] == "true")
     end,
   },
@@ -2180,7 +2180,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Halfling_ReplaceHalflingLuck"] == "true")
     end,
   },
@@ -2219,7 +2219,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Halfling_ReplaceKeenSenses"] == "true")
     end,
   },
@@ -2252,7 +2252,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Halfling_ReplaceSureFooted"] == "true")
     end,
   },
@@ -2285,7 +2285,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Halfling_ReplaceWeaponFamiliarity"] == "true")
     end,
   },
@@ -2314,7 +2314,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Halfling_ReplaceLanguages"] == "true")
     end,
   },
@@ -2355,7 +2355,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Human_ReplaceAbilityScores"] == "true")
     end,
   },
@@ -2377,7 +2377,7 @@ DefineAbility({
   SourcePage="p.27",
   Visible=true,
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Human_ReplaceSize"] == "true")
     end,
   },
@@ -2399,7 +2399,7 @@ DefineAbility({
   SourcePage="p.27",
   Visible=true,
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Human_ReplaceSpeed"] == "true")
     end,
   },
@@ -2429,7 +2429,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Human_ReplaceBonusFeat"] == "true")
     end,
   },
@@ -2458,7 +2458,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Human_ReplaceSkilled"] == "true")
     end,
   },
@@ -2486,7 +2486,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return not (character.Facts["ABILITY"]["Human_ReplaceLanguages"] == "true")
     end,
   },
@@ -2512,8 +2512,8 @@ ModifyAbility({
         "Aberration Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceTypes, function (type) stringMatch(type, "Aberration") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceTypes, function (type) stringMatch(type, "Aberration") end))
         end,
       },
     },
@@ -2530,8 +2530,8 @@ ModifyAbility({
         "Animal Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceTypes, function (type) stringMatch(type, "Animal") end) and 1 or 0) + (any(character.Race.RaceTypes, function (type) stringMatch(type, "Companion") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceTypes, function (type) stringMatch(type, "Animal") end)) or (any(character.Race.RaceTypes, function (type) stringMatch(type, "Companion") end))
         end,
       },
     },
@@ -2548,8 +2548,8 @@ ModifyAbility({
         "Construct Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceTypes, function (type) stringMatch(type, "Construct") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceTypes, function (type) stringMatch(type, "Construct") end))
         end,
       },
     },
@@ -2566,8 +2566,8 @@ ModifyAbility({
         "Dragon Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceTypes, function (type) stringMatch(type, "Dragon") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceTypes, function (type) stringMatch(type, "Dragon") end))
         end,
       },
     },
@@ -2584,8 +2584,8 @@ ModifyAbility({
         "Fey Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceTypes, function (type) stringMatch(type, "Fey") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceTypes, function (type) stringMatch(type, "Fey") end))
         end,
       },
     },
@@ -2602,8 +2602,8 @@ ModifyAbility({
         "Humanoid Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceTypes, function (type) stringMatch(type, "Humanoid") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceTypes, function (type) stringMatch(type, "Humanoid") end))
         end,
       },
     },
@@ -2620,8 +2620,8 @@ ModifyAbility({
         "Magical Beast Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceTypes, function (type) stringMatch(type, "Magical Beast") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceTypes, function (type) stringMatch(type, "Magical Beast") end))
         end,
       },
     },
@@ -2638,8 +2638,8 @@ ModifyAbility({
         "Monstrous Humanoid Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceTypes, function (type) stringMatch(type, "Monstrous Humanoid") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceTypes, function (type) stringMatch(type, "Monstrous Humanoid") end))
         end,
       },
     },
@@ -2656,8 +2656,8 @@ ModifyAbility({
         "Ooze Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceTypes, function (type) stringMatch(type, "Ooze") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceTypes, function (type) stringMatch(type, "Ooze") end))
         end,
       },
     },
@@ -2674,8 +2674,8 @@ ModifyAbility({
         "Outsider Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceTypes, function (type) stringMatch(type, "Outsider") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceTypes, function (type) stringMatch(type, "Outsider") end))
         end,
       },
     },
@@ -2692,8 +2692,8 @@ ModifyAbility({
         "Plant Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceTypes, function (type) stringMatch(type, "Plant") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceTypes, function (type) stringMatch(type, "Plant") end))
         end,
       },
     },
@@ -2710,8 +2710,8 @@ ModifyAbility({
         "Undead Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceTypes, function (type) stringMatch(type, "Undead") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceTypes, function (type) stringMatch(type, "Undead") end))
         end,
       },
     },
@@ -2728,8 +2728,8 @@ ModifyAbility({
         "Vermin Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceTypes, function (type) stringMatch(type, "Vermin") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceTypes, function (type) stringMatch(type, "Vermin") end))
         end,
       },
     },
@@ -2746,8 +2746,8 @@ ModifyAbility({
         "Air Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Air") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Air") end))
         end,
       },
     },
@@ -2764,8 +2764,8 @@ ModifyAbility({
         "Angel Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Angel") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Angel") end))
         end,
       },
     },
@@ -2782,8 +2782,8 @@ ModifyAbility({
         "Aquatic Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Aquatic") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Aquatic") end))
         end,
       },
     },
@@ -2800,8 +2800,8 @@ ModifyAbility({
         "Archon Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Archon") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Archon") end))
         end,
       },
     },
@@ -2818,8 +2818,8 @@ ModifyAbility({
         "Azata Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Azata") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Azata") end))
         end,
       },
     },
@@ -2836,8 +2836,8 @@ ModifyAbility({
         "Chaotic Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Chaotic") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Chaotic") end))
         end,
       },
     },
@@ -2854,8 +2854,8 @@ ModifyAbility({
         "Cold Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Cold") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Cold") end))
         end,
       },
     },
@@ -2872,8 +2872,8 @@ ModifyAbility({
         "Demon Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Demon") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Demon") end))
         end,
       },
     },
@@ -2890,8 +2890,8 @@ ModifyAbility({
         "Devil Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Devil") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Devil") end))
         end,
       },
     },
@@ -2908,8 +2908,8 @@ ModifyAbility({
         "Dwarf Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Dwarf") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Dwarf") end))
         end,
       },
     },
@@ -2926,8 +2926,8 @@ ModifyAbility({
         "Earth Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Earth") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Earth") end))
         end,
       },
     },
@@ -2944,8 +2944,8 @@ ModifyAbility({
         "Elemental Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Elemental") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Elemental") end))
         end,
       },
     },
@@ -2962,8 +2962,8 @@ ModifyAbility({
         "Elf Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Elf") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Elf") end))
         end,
       },
     },
@@ -2980,8 +2980,8 @@ ModifyAbility({
         "Evil Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Evil") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Evil") end))
         end,
       },
     },
@@ -2998,8 +2998,8 @@ ModifyAbility({
         "Extraplanar Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Extraplanar") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Extraplanar") end))
         end,
       },
     },
@@ -3016,8 +3016,8 @@ ModifyAbility({
         "Fire Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Fire") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Fire") end))
         end,
       },
     },
@@ -3034,8 +3034,8 @@ ModifyAbility({
         "Giant Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Giant") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Giant") end))
         end,
       },
     },
@@ -3052,8 +3052,8 @@ ModifyAbility({
         "Gnome Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Gnome") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Gnome") end))
         end,
       },
     },
@@ -3070,8 +3070,8 @@ ModifyAbility({
         "Gnoll Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Gnoll") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Gnoll") end))
         end,
       },
     },
@@ -3088,8 +3088,8 @@ ModifyAbility({
         "Goblinoid Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Goblinoid") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Goblinoid") end))
         end,
       },
     },
@@ -3106,8 +3106,8 @@ ModifyAbility({
         "Good Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Good") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Good") end))
         end,
       },
     },
@@ -3124,8 +3124,8 @@ ModifyAbility({
         "Halfling Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Halfling") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Halfling") end))
         end,
       },
     },
@@ -3142,8 +3142,8 @@ ModifyAbility({
         "Human Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Human") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Human") end))
         end,
       },
     },
@@ -3160,8 +3160,8 @@ ModifyAbility({
         "Incorporeal Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Incorporeal") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Incorporeal") end))
         end,
       },
     },
@@ -3178,8 +3178,8 @@ ModifyAbility({
         "Lawful Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Lawful") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Lawful") end))
         end,
       },
     },
@@ -3196,8 +3196,8 @@ ModifyAbility({
         "Native Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Native") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Native") end))
         end,
       },
     },
@@ -3214,8 +3214,8 @@ ModifyAbility({
         "Oni Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Oni") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Oni") end))
         end,
       },
     },
@@ -3232,8 +3232,8 @@ ModifyAbility({
         "Orc Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Orc") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Orc") end))
         end,
       },
     },
@@ -3250,8 +3250,8 @@ ModifyAbility({
         "Reptilian Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Reptilian") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Reptilian") end))
         end,
       },
     },
@@ -3268,8 +3268,8 @@ ModifyAbility({
         "Shapechanger Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Shapechanger") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Shapechanger") end))
         end,
       },
     },
@@ -3286,8 +3286,8 @@ ModifyAbility({
         "Swarm Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Swarm") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Swarm") end))
         end,
       },
     },
@@ -3304,8 +3304,8 @@ ModifyAbility({
         "Water Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Water") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Water") end))
         end,
       },
     },
@@ -3322,22 +3322,8 @@ ModifyAbility({
         "Mindless Traits",
       },
       Conditions={
-        function (character)
-          local count = 0
-          local subCondition
-          subCondition = function (character)
-            return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Mindless") end) and 1 or 0)) >= 1
-          end
-          if subCondition(character) then
-            count = count + 1
-          end
-          subCondition = function (character)
-            return (character.Variables["Mindless"] >= 1)
-          end
-          if subCondition(character) then
-            count = count + 1
-          end
-          return count >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Mindless") end)) or (character.Variables["Mindless"] >= 1)
         end,
       },
     },
@@ -3354,8 +3340,8 @@ ModifyAbility({
         "Clockwork Traits",
       },
       Conditions={
-        function (character)
-          return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Clockwork") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Clockwork") end))
         end,
       },
     },
@@ -3374,8 +3360,8 @@ DefineAbility({
         "Aberration Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3406,8 +3392,8 @@ DefineAbility({
         "Animal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3506,8 +3492,8 @@ DefineAbility({
         "Dragon Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3528,7 +3514,7 @@ DefineAbility({
         Name="Base",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return character.HitDie >= 1
         end,
       },
@@ -3540,7 +3526,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return character.HitDie >= 1
         end,
       },
@@ -3563,8 +3549,8 @@ DefineAbility({
         "Fey Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3600,8 +3586,8 @@ DefineAbility({
         "Humanoid Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3610,11 +3596,8 @@ DefineAbility({
     {
       Kind="Weapon",
       Conditions={
-        function (character)
-          return not (1 <= #filter(ipairs(character.ClassLevels),
-          function (class, level)
-            return (ClassIsType(class, "PC") and level >= 1) or (ClassIsType(class, "NPC") and level >= 1)
-          end))
+        function (character, item)
+          return not (((character.CountSpellCastingClasses(1, "PC")) + (character.CountSpellCastingClasses(1, "NPC"))) >= 1)
         end,
       },
       Types={
@@ -3640,8 +3623,8 @@ DefineAbility({
         "Magical Beast Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3654,8 +3637,8 @@ DefineAbility({
         Name="Base",
       },
       Conditions={
-        function (character)
-          return not (((any(character.Race.Types, function (type) stringMatch(type, "Animal") end) and 1 or 0)) >= 1)
+        function (character, item)
+          return not ((any(character.Race.Types, function (type) stringMatch(type, "Animal") end)))
         end,
       },
       Variables={
@@ -3666,8 +3649,8 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character)
-          return not (((any(character.Race.Types, function (type) stringMatch(type, "Animal") end) and 1 or 0)) >= 1)
+        function (character, item)
+          return not ((any(character.Race.Types, function (type) stringMatch(type, "Animal") end)))
         end,
       },
       Variables={
@@ -3689,8 +3672,8 @@ DefineAbility({
         "Monstrous Humanoid Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3729,8 +3712,8 @@ DefineAbility({
         "Ooze Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3782,22 +3765,8 @@ DefineAbility({
         "WeaponProfMartial",
       },
       Conditions={
-        function (character)
-          local count = 0
-          local subCondition
-          subCondition = function (character)
-            return character.HitDie >= 1
-          end
-          if subCondition(character) then
-            count = count + 1
-          end
-          subCondition = function (character)
-            return (character.Variables["DisableRaceTypeGrantedProfs"] == 0)
-          end
-          if subCondition(character) then
-            count = count + 1
-          end
-          return count >= 2
+        function (character, item)
+          return character.HitDie >= 1 and (character.Variables["DisableRaceTypeGrantedProfs"] == 0)
         end,
       },
     },
@@ -3808,8 +3777,8 @@ DefineAbility({
         "Outsider Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3822,7 +3791,7 @@ DefineAbility({
         Name="Base",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return character.HitDie >= 1
         end,
       },
@@ -3845,8 +3814,8 @@ DefineAbility({
         "Plant Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3886,8 +3855,8 @@ DefineAbility({
         "Undead Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3962,8 +3931,8 @@ DefineAbility({
         "Vermin Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -4042,7 +4011,7 @@ DefineAbility({
         "Low-Light Vision",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["HasRacialVision"] == 1)
         end,
       },
@@ -4148,7 +4117,7 @@ DefineAbility({
         "Devil Traits ~ Languages",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["OverrideSubtypeLanguage"] == 0)
         end,
       },
@@ -4173,7 +4142,7 @@ DefineAbility({
         "Universal Monster Rule ~ Telepathy",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["RemoveSubtypeTelepathy"] == 0)
         end,
       },
@@ -4206,7 +4175,7 @@ DefineAbility({
         "Demon Traits ~ Languages",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["OverrideSubtypeLanguage"] == 0)
         end,
       },
@@ -4231,7 +4200,7 @@ DefineAbility({
         "Universal Monster Rule ~ Telepathy",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["RemoveSubtypeTelepathy"] == 0)
         end,
       },
@@ -4306,7 +4275,7 @@ DefineAbility({
         "Low-Light Vision",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["HasRacialVision"] == 1)
         end,
       },
@@ -4351,7 +4320,7 @@ DefineAbility({
         "Low-Light Vision",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["HasRacialVision"] == 1)
         end,
       },
@@ -4407,7 +4376,7 @@ DefineAbility({
         "Low-Light Vision",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["HasRacialVision"] == 1)
         end,
       },
@@ -4459,8 +4428,8 @@ DefineAbility({
         "Incorporeal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -4569,10 +4538,10 @@ DefineAbility({
         "Light Sensitivity",
       },
       Conditions={
-        function (character)
-          return not (((character.Race.Name == "Half-Orc" and 1 or 0)) >= 1)
+        function (character, item)
+          return not ((character.Race.Name == "Half-Orc"))
         end,
-        function (character)
+        function (character, item)
           return (character.Variables["RemoveLightSensitive"] == 0)
         end,
       },
@@ -4584,9 +4553,11 @@ DefineAbility({
         "Darkvision",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Type == "RacialVision" or ability.Type == "Racial Vision")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType("RacialVision", "Racial Vision") then return true end
+            return false
           end)
         end,
       },
@@ -4827,8 +4798,8 @@ DefineAbility({
   Description={
     Format="An outsider with the native subtype can be raised, reincarnated, or resurrected just as other living creatures can be. Native outsider breathe, eat, and sleep.",
     Conditions={
-      function (character)
-        return ((any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Native") end) and 1 or 0)) >= 1
+      function (character, item)
+        return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Native") end))
       end,
     },
   },
@@ -4858,7 +4829,7 @@ DefineAbility({
   Description={
     Format="A swarm composed of Fine or Diminutive creatures is immune to all weapon damage and are also susceptible to high winds, such as those created by a gust of wind spell.",
     Conditions={
-      function (character)
+      function (character, item)
         return character.Size <= "D"
       end,
     },
@@ -4877,8 +4848,8 @@ DefineAbility({
   Description={
     Format="Mindless - Immune to all mind-affecting effects (charms/ compulsions/ phantasms/ patterns/ and morale effects), Cannot heal damage on own if has no Intelligence score (but can be healed and Fast Healing works)",
     Conditions={
-      function (character)
-        return ((any(character.Templates, function (template) return stringMatch(template.Name, "Mindless") end) and 1 or 0)) >= 1
+      function (character, item)
+        return (any(character.Templates, function (template) return stringMatch(template.Name, "Mindless") end))
       end,
     },
   },
@@ -4895,8 +4866,8 @@ DefineAbility({
   Description={
     Format="Mindless vermin are immune to mind-affecting effects (charms, compulsions, phantasms, patterns, and morale effects).",
     Conditions={
-      function (character)
-        return ((any(character.Templates, function (template) return stringMatch(template.Name, "Mindless") end) and 1 or 0)) >= 1
+      function (character, item)
+        return (any(character.Templates, function (template) return stringMatch(template.Name, "Mindless") end))
       end,
     },
   },
@@ -8290,9 +8261,12 @@ DefineAbility({
       Category="WEAPONPROF=Unarmed Strike",
       Formula=Formula("-1"),
       Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Internal" and (ability.Name == "Monk ~ Unarmed Damage")
+        function (character, item)
+          return not (character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Internal" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Monk ~ Unarmed Damage" then return true end
+            return false
           end))
         end,
       },
@@ -8497,11 +8471,11 @@ DefineAbility({
       Category="ABILITYPOOL",
       Formula=Formula("2"),
       Conditions={
-        function (character)
-          return ((character.Stats["INT"] >= 1)) >= 1
+        function (character, item)
+          return (character.Stats["INT"] >= 1)
         end,
-        function (character)
-          return not (((any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end) and 1 or 0)) >= 1)
+        function (character, item)
+          return not ((any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end)))
         end,
       },
       Variables={
@@ -8512,11 +8486,11 @@ DefineAbility({
       Category="ABILITYPOOL",
       Formula=Formula("(INTSCORE-1)*3"),
       Conditions={
-        function (character)
-          return ((character.Stats["INT"] >= 2)) >= 1
+        function (character, item)
+          return (character.Stats["INT"] >= 2)
         end,
-        function (character)
-          return not (((any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end) and 1 or 0)) >= 1)
+        function (character, item)
+          return not ((any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end)))
         end,
       },
       Variables={

@@ -2,7 +2,7 @@
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class VisionCondition : MultiCondition
+    internal class VisionCondition : BooleanMultiCondition
     {
         public VisionCondition(bool inverted, int count, List<string> conditions) : base(inverted, count, conditions)
         {

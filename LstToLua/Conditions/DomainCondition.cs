@@ -2,7 +2,7 @@
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class DomainCondition : MultiCondition
+    internal class DomainCondition : BooleanMultiCondition
     {
         public DomainCondition(bool inverted, int count, List<string> conditions) : base(inverted, count, conditions)
         {
@@ -28,7 +28,7 @@ namespace Primordially.LstToLua.Conditions
                 throw new ParseFailedException(value, "Unable to parse PREDOMAIN");
             }
 
-            return new VisionCondition(invert, count.Value, conditions);
+            return new DomainCondition(invert, count.Value, conditions);
         }
     }
 }

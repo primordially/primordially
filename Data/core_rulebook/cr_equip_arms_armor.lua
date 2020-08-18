@@ -460,7 +460,7 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -511,7 +511,7 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -526,8 +526,8 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -577,7 +577,7 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -592,8 +592,8 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -614,8 +614,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-1"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -654,7 +654,7 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -669,8 +669,8 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -691,8 +691,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-2"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -731,7 +731,7 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -746,8 +746,8 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -768,8 +768,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-3"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -809,7 +809,7 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -824,8 +824,8 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -846,8 +846,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-4"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -886,7 +886,7 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -901,8 +901,8 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -923,8 +923,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-5"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -963,7 +963,7 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -978,8 +978,8 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -1000,8 +1000,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-4"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -1040,7 +1040,7 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -1055,8 +1055,8 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -1077,8 +1077,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-7"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -1117,7 +1117,7 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -1132,8 +1132,8 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -1154,8 +1154,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-6"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -1194,7 +1194,7 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -1209,8 +1209,8 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -1231,8 +1231,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-7"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -1271,7 +1271,7 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -1286,8 +1286,8 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -1308,8 +1308,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-6"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Armor"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Armor"))
         end,
       },
       Variables={
@@ -1678,8 +1678,8 @@ CopyEquipment("Full Plate (Base)", {
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character)
-          return not (character.Alignment == "LE" or character.Alignment == "NE" or character.Alignment == "CE")
+        function (character, item)
+          return not (character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE"))
         end,
       },
       Variables={
@@ -2354,7 +2354,7 @@ DefineEquipment({
         Name="Shield",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableShieldBonus"] == 0)
         end,
       },
@@ -2373,8 +2373,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-1"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Shield"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Shield"))
         end,
       },
       Variables={
@@ -2422,7 +2422,7 @@ DefineEquipment({
         Name="Shield",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableShieldBonus"] == 0)
         end,
       },
@@ -2441,8 +2441,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-1"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Shield"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Shield"))
         end,
       },
       Variables={
@@ -2453,8 +2453,8 @@ DefineEquipment({
       Category="WEAPON",
       Formula=Formula("4"),
       Conditions={
-        function (character)
-          return ((character.IsProficientWithWeapon("Shieldbash"))) >= 1
+        function (character, item)
+          return (character.IsProficientWithWeapon("Shieldbash"))
         end,
       },
       Variables={
@@ -2504,7 +2504,7 @@ DefineEquipment({
         Name="Shield",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableShieldBonus"] == 0)
         end,
       },
@@ -2523,8 +2523,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-1"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Shield"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Shield"))
         end,
       },
       Variables={
@@ -2535,8 +2535,8 @@ DefineEquipment({
       Category="WEAPON",
       Formula=Formula("4"),
       Conditions={
-        function (character)
-          return ((character.IsProficientWithWeapon("Shieldbash"))) >= 1
+        function (character, item)
+          return (character.IsProficientWithWeapon("Shieldbash"))
         end,
       },
       Variables={
@@ -2585,7 +2585,7 @@ DefineEquipment({
         Name="Shield",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableShieldBonus"] == 0)
         end,
       },
@@ -2600,8 +2600,8 @@ DefineEquipment({
         Name="Shield",
       },
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Shield"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Shield"))
         end,
       },
       Variables={
@@ -2619,8 +2619,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-2"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Shield"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Shield"))
         end,
       },
       Variables={
@@ -2631,8 +2631,8 @@ DefineEquipment({
       Category="WEAPON",
       Formula=Formula("4"),
       Conditions={
-        function (character)
-          return ((character.IsProficientWithWeapon("Shieldbash"))) >= 1
+        function (character, item)
+          return (character.IsProficientWithWeapon("Shieldbash"))
         end,
       },
       Variables={
@@ -2682,7 +2682,7 @@ DefineEquipment({
         Name="Shield",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableShieldBonus"] == 0)
         end,
       },
@@ -2697,8 +2697,8 @@ DefineEquipment({
         Name="Shield",
       },
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Shield"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Shield"))
         end,
       },
       Variables={
@@ -2716,8 +2716,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-2"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Shield"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Shield"))
         end,
       },
       Variables={
@@ -2728,8 +2728,8 @@ DefineEquipment({
       Category="WEAPON",
       Formula=Formula("4"),
       Conditions={
-        function (character)
-          return ((character.IsProficientWithWeapon("Shieldbash"))) >= 1
+        function (character, item)
+          return (character.IsProficientWithWeapon("Shieldbash"))
         end,
       },
       Variables={
@@ -2772,7 +2772,7 @@ DefineEquipment({
         Name="Shield",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DisableShieldBonus"] == 0)
         end,
       },
@@ -2787,8 +2787,8 @@ DefineEquipment({
         Name="Shield",
       },
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Shield"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Shield"))
         end,
       },
       Variables={
@@ -2799,9 +2799,12 @@ DefineEquipment({
       Category="COMBAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "FEAT" and (ability.Name == "Tower Shield Proficiency")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "FEAT" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Tower Shield Proficiency" then return true end
+            return false
           end)
         end,
       },
@@ -2813,9 +2816,12 @@ DefineEquipment({
       Category="COMBAT",
       Formula=Formula("SHIELDACCHECK"),
       Conditions={
-        function (character)
-          return not (1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "FEAT" and (ability.Name == "Tower Shield Proficiency")
+        function (character, item)
+          return not (character.HasAnyAbility(function (ability)
+            if ability.Category ~= "FEAT" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Tower Shield Proficiency" then return true end
+            return false
           end))
         end,
       },
@@ -2834,8 +2840,8 @@ DefineEquipment({
       Category="EQMARMOR",
       Formula=Formula("-10"),
       Conditions={
-        function (item)
-          return ((item.HasModifier("Special Quality ~ Broken ~ Shield"))) >= 1
+        function (character, item)
+          return (item.HasModifier("Special Quality ~ Broken ~ Shield"))
         end,
       },
       Variables={
@@ -3256,28 +3262,8 @@ DefineEquipment({
       Category="EQM",
       Formula=Formula("-1*(((SIZE<=3)*.5)+(SIZE==4)+(SIZE==5)+((SIZE>=6)*(2^(SIZE-5))))"),
       Conditions={
-        function (character)
-          local count = 0
-          local subCondition
-          subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.IsType("Armor") end))) >= 1
-          end
-          if subCondition(character) then
-            count = count + 1
-          end
-          subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.IsType("Medium") end)) + (character.HasEquipped(function (item) return item.IsType("Heavy") end))) >= 1
-          end
-          if subCondition(character) then
-            count = count + 1
-          end
-          subCondition = function (character)
-            return not (((character.HasEquipped(function (item) return stringMatch(item.Name, "Breastplate") end))) >= 1)
-          end
-          if subCondition(character) then
-            count = count + 1
-          end
-          return count >= 3
+        function (character, item)
+          return (character.HasEquipped(function (item) return item.IsType("Armor") end)) and (character.HasEquipped(function (item) return item.IsType("Medium") end)) or (character.HasEquipped(function (item) return item.IsType("Heavy") end)) and not ((character.HasEquipped(function (item) return stringMatch(item.Name, "Breastplate") end)))
         end,
       },
       Variables={
@@ -3396,28 +3382,8 @@ DefineEquipment({
       Category="EQM",
       Formula=Formula("-1*(((SIZE<=3)*.5)+(SIZE==4)+(SIZE==5)+((SIZE>=6)*(2^(SIZE-5))))"),
       Conditions={
-        function (character)
-          local count = 0
-          local subCondition
-          subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.IsType("Armor") end))) >= 1
-          end
-          if subCondition(character) then
-            count = count + 1
-          end
-          subCondition = function (character)
-            return ((character.HasEquipped(function (item) return item.IsType("Medium") end)) + (character.HasEquipped(function (item) return item.IsType("Heavy") end))) >= 1
-          end
-          if subCondition(character) then
-            count = count + 1
-          end
-          subCondition = function (character)
-            return not (((character.HasEquipped(function (item) return stringMatch(item.Name, "Breastplate") end))) >= 1)
-          end
-          if subCondition(character) then
-            count = count + 1
-          end
-          return count >= 3
+        function (character, item)
+          return (character.HasEquipped(function (item) return item.IsType("Armor") end)) and (character.HasEquipped(function (item) return item.IsType("Medium") end)) or (character.HasEquipped(function (item) return item.IsType("Heavy") end)) and not ((character.HasEquipped(function (item) return stringMatch(item.Name, "Breastplate") end)))
         end,
       },
       Variables={
@@ -4921,7 +4887,7 @@ DefineEquipment({
       Category="WEAPON",
       Formula=Formula("-1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["BastardSwordExoticUse"] >= 1)
         end,
       },
@@ -4968,7 +4934,7 @@ DefineEquipment({
       Category="WEAPON",
       Formula=Formula("-1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["DwarvenWaraxeExoticUse"] >= 1)
         end,
       },
@@ -6348,8 +6314,8 @@ CopyEquipment("Warhammer (Base)", {
       Category="EQMWEAPON",
       Formula=Formula("30"),
       Conditions={
-        function (character)
-          return ((character.Race.Name == "Dwarf%" and 1 or 0) + (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Dwarf") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (character.Race.Name == "Dwarf%") or (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Dwarf") end))
         end,
       },
       Variables={
@@ -6363,8 +6329,8 @@ CopyEquipment("Warhammer (Base)", {
         Name="Enhancement",
       },
       Conditions={
-        function (character)
-          return ((character.Race.Name == "Dwarf%" and 1 or 0) + (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Dwarf") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (character.Race.Name == "Dwarf%") or (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Dwarf") end))
         end,
       },
       Variables={
@@ -6391,8 +6357,8 @@ CopyEquipment("Warhammer (Base)", {
     {
       Format="when thrown will return just before thrower's next turn, when hurled deals an extra 1d8 damage or an extra 2d8 against giants",
       Conditions={
-        function (character)
-          return ((character.Race.Name == "Dwarf%" and 1 or 0) + (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Dwarf") end) and 1 or 0)) >= 1
+        function (character, item)
+          return (character.Race.Name == "Dwarf%") or (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Dwarf") end))
         end,
       },
     },
@@ -6510,7 +6476,7 @@ CopyEquipment("Longsword (Base)", {
       Category="MISC",
       Formula=Formula("HolyAvengerSR"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["AllowHolyAvenger"] >= 1)
         end,
       },
@@ -6551,7 +6517,7 @@ CopyEquipment("Longsword (Base)", {
         Formula("HolyAvengerSR"),
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["AllowHolyAvenger"] >= 1)
         end,
       },
@@ -6566,7 +6532,7 @@ CopyEquipment("Longsword (Base)", {
       DC="19",
       CasterLevel="HolyAvengerCL",
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["AllowHolyAvenger"] >= 1)
         end,
       },
@@ -6598,8 +6564,8 @@ CopyEquipment("Greataxe (Base)", {
         "Negative Levels",
       },
       Conditions={
-        function (character)
-          return not (((any(character.Race.RaceTypes, function (type) stringMatch(type, "Construct") end) and 1 or 0) + (any(character.Race.RaceTypes, function (type) stringMatch(type, "Undead") end) and 1 or 0)) >= 1)
+        function (character, item)
+          return not ((any(character.Race.RaceTypes, function (type) stringMatch(type, "Construct") end)) or (any(character.Race.RaceTypes, function (type) stringMatch(type, "Undead") end)))
         end,
       },
     },
@@ -6609,8 +6575,8 @@ CopyEquipment("Greataxe (Base)", {
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character)
-          return not (((any(character.Race.RaceTypes, function (type) stringMatch(type, "Construct") end) and 1 or 0) + (any(character.Race.RaceTypes, function (type) stringMatch(type, "Undead") end) and 1 or 0)) >= 1)
+        function (character, item)
+          return not ((any(character.Race.RaceTypes, function (type) stringMatch(type, "Construct") end)) or (any(character.Race.RaceTypes, function (type) stringMatch(type, "Undead") end)))
         end,
       },
       Variables={
@@ -6966,8 +6932,8 @@ CopyEquipment("Longsword (Base)", {
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character)
-          return character.Alignment == "LG" or character.Alignment == "NG" or character.Alignment == "CG"
+        function (character, item)
+          return character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG")
         end,
       },
       Variables={
@@ -7070,9 +7036,12 @@ CopyEquipment("Longsword (Base)", {
     {
       Format="use shatterspike as a +4 longsword when attempting to sunder an opponent's weapon",
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "FEAT" and (ability.Name == "Improved Sunder")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "FEAT" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Improved Sunder" then return true end
+            return false
           end)
         end,
       },
@@ -7184,8 +7153,8 @@ CopyEquipment("Bastard Sword (Base)", {
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character)
-          return character.Alignment == "LE" or character.Alignment == "NE" or character.Alignment == "CE"
+        function (character, item)
+          return character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE")
         end,
       },
       Variables={
@@ -7196,7 +7165,7 @@ CopyEquipment("Bastard Sword (Base)", {
       Category="WEAPON",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["BastardSwordExoticUse"] >= 1)
         end,
       },
@@ -7564,7 +7533,7 @@ DefineEquipment({
         Name="StrengthPenalty",
       },
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["PreStatScore_STR"] < 18)
         end,
       },
@@ -7606,8 +7575,8 @@ CopyEquipment("Dwarven Waraxe (Base)", {
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character)
-          return not (((character.Race.Name == "Dwarf" and 1 or 0)) >= 1)
+        function (character, item)
+          return not ((character.Race.Name == "Dwarf"))
         end,
       },
       Variables={
@@ -7618,8 +7587,8 @@ CopyEquipment("Dwarven Waraxe (Base)", {
       Category="VISION",
       Formula=Formula("60"),
       Conditions={
-        function (character)
-          return ((character.Race.Name == "Dwarf" and 1 or 0)) >= 1
+        function (character, item)
+          return (character.Race.Name == "Dwarf")
         end,
       },
       Variables={

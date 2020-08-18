@@ -2,7 +2,7 @@
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class ClassSkillCondition : MultiCondition
+    internal class ClassSkillCondition : CountMultiCondition
     {
         public ClassSkillCondition(bool inverted, int count, List<string> conditions) : base(inverted, count, conditions)
         {
@@ -21,7 +21,7 @@ namespace Primordially.LstToLua.Conditions
             {
                 if (part.TryRemovePrefix("TYPE.", out var type))
                 {
-                    conditions.Add($"#filter(character.ClassSkills, function (skill) return skill.IsType(\"{type.Value}\") end)");
+                    conditions.Add($"character.CountClassSkillsOfType(\"{type.Value}\")");
                 }
                 else
                 {

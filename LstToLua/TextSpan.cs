@@ -115,6 +115,17 @@ namespace Primordially.LstToLua
             right = r;
             return true;
         }
+        public bool TryRemovePrefixSuffix(string prefix, string suffix, out TextSpan value)
+        {
+            if (StartsWith(prefix) || EndsWith(suffix))
+            {
+                value = Substring(prefix.Length, Value.Length - prefix.Length - suffix.Length);
+                return true;
+            }
+
+            value = this;
+            return false;
+        }
 
         public bool TryRemovePrefix(string prefix, out TextSpan value)
         {

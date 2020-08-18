@@ -2,7 +2,7 @@
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class AgeSetCondition : MultiCondition
+    internal class AgeSetCondition : BooleanMultiCondition
     {
         public AgeSetCondition(bool inverted, int count, List<string> conditions) : base(inverted, count, conditions)
         {
@@ -19,7 +19,7 @@ namespace Primordially.LstToLua.Conditions
                     count = Helpers.ParseInt(part);
                     continue;
                 }
-                conditions.Add($"character.AgeSet >= \"{part.Value}\"");
+                conditions.Add($"character.IsAgeSetOrOlder(\"{part.Value}\")");
             }
 
             if (!count.HasValue)

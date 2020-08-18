@@ -40,9 +40,12 @@ DefineRace({
         "Companion Advancement ~ Ape",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -53,7 +56,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -108,7 +111,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -169,9 +172,12 @@ DefineRace({
         "Companion Advancement ~ Wolverine",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -182,7 +188,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -247,7 +253,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -305,9 +311,12 @@ DefineRace({
         "Companion Advancement ~ Bear",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -318,7 +327,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -383,7 +392,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -439,9 +448,12 @@ DefineRace({
         "Companion Advancement ~ Bird",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -452,7 +464,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -521,7 +533,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -579,9 +591,12 @@ DefineRace({
         "Companion Advancement ~ Bird",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -592,7 +607,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -661,7 +676,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -719,9 +734,12 @@ DefineRace({
         "Companion Advancement ~ Bird",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -732,7 +750,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -801,7 +819,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -857,9 +875,12 @@ DefineRace({
         "Companion Advancement ~ Boar",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -870,7 +891,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -949,7 +970,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -1004,9 +1025,12 @@ DefineRace({
         "Companion Advancement ~ Camel",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -1017,7 +1041,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -1082,7 +1106,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -1139,9 +1163,12 @@ DefineRace({
         "Companion Advancement ~ Cheetah",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -1152,7 +1179,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -1224,7 +1251,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -1281,9 +1308,12 @@ DefineRace({
         "Companion Advancement ~ Leopard",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -1294,7 +1324,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -1366,7 +1396,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -1420,9 +1450,12 @@ DefineRace({
         "Companion Advancement ~ Alligator",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -1433,7 +1466,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -1505,7 +1538,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -1560,9 +1593,12 @@ DefineRace({
         "Companion Advancement ~ Dog",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -1573,7 +1609,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -1645,7 +1681,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -1701,9 +1737,12 @@ DefineRace({
         "Companion Advancement ~ Horse",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -1714,7 +1753,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -1786,7 +1825,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -1840,9 +1879,12 @@ DefineRace({
         "Companion Advancement ~ Pony",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -1853,7 +1895,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -1925,7 +1967,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -1979,9 +2021,12 @@ DefineRace({
         "Companion Advancement ~ Shark",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -1992,7 +2037,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -2054,7 +2099,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -2111,9 +2156,12 @@ DefineRace({
         "Companion Advancement ~ Snake (Constrictor)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -2124,7 +2172,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -2186,7 +2234,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -2243,9 +2291,12 @@ DefineRace({
         "Companion Advancement ~ Snake (Viper)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -2256,7 +2307,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -2311,7 +2362,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -2370,9 +2421,12 @@ DefineRace({
         "Companion Advancement ~ Lion",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -2383,7 +2437,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
@@ -2448,7 +2502,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -2505,9 +2559,12 @@ DefineRace({
         "Companion Advancement ~ Tiger",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -2518,7 +2575,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
@@ -2583,7 +2640,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -2638,9 +2695,12 @@ DefineRace({
         "Companion Advancement ~ Dinosaur (Deinonychus)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -2651,7 +2711,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
@@ -2723,7 +2783,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -2781,9 +2841,12 @@ DefineRace({
         "Companion Advancement ~ Dinosaur (Velociraptor)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -2794,7 +2857,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
@@ -2859,7 +2922,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -2917,9 +2980,12 @@ DefineRace({
         "Companion Advancement ~ Wolf",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -2930,7 +2996,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
@@ -3002,7 +3068,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -3062,9 +3128,12 @@ DefineRace({
         "Companion Advancement ~ Dire Rat",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -3075,7 +3144,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -3131,7 +3200,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -3223,7 +3292,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -3285,8 +3354,8 @@ DefineRace({
         "Animal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3312,9 +3381,12 @@ DefineRace({
         "Companion Advancement ~ Dinosaur (Allosaurus)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -3325,7 +3397,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
@@ -3381,7 +3453,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -3424,8 +3496,8 @@ DefineRace({
         "Animal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3450,9 +3522,12 @@ DefineRace({
         "Companion Advancement ~ Dinosaur (Parasaurolophus)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -3463,7 +3538,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
@@ -3532,7 +3607,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -3575,8 +3650,8 @@ DefineRace({
         "Animal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3601,9 +3676,12 @@ DefineRace({
         "Companion Advancement ~ Dinosaur (Tylosaurus)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -3614,7 +3692,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
@@ -3693,7 +3771,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -3737,8 +3815,8 @@ DefineRace({
         "Animal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3764,9 +3842,12 @@ DefineRace({
         "Companion Advancement ~ Gar",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -3777,7 +3858,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
@@ -3848,7 +3929,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -3888,8 +3969,8 @@ DefineRace({
         "Animal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -3914,9 +3995,12 @@ DefineRace({
         "Companion Advancement ~ Herd Animal (Ram)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -3927,7 +4011,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -4006,7 +4090,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -4046,8 +4130,8 @@ DefineRace({
         "Animal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -4066,8 +4150,8 @@ DefineRace({
         "Hippopotamus Companion Natural Attack",
       },
       Conditions={
-        function (character)
-          return not (((any(character.Templates, function (template) return stringMatch(template.Name, "Hippopotamus Companion Advancement") end) and 1 or 0)) >= 1)
+        function (character, item)
+          return not ((any(character.Templates, function (template) return stringMatch(template.Name, "Hippopotamus Companion Advancement") end)))
         end,
       },
     },
@@ -4078,9 +4162,12 @@ DefineRace({
         "Companion Advancement ~ Hippopotamus",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -4091,7 +4178,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
@@ -4165,7 +4252,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -4205,8 +4292,8 @@ DefineRace({
         "Animal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -4224,8 +4311,8 @@ DefineRace({
         "Arsinoitherium Companion Natural Attack",
       },
       Conditions={
-        function (character)
-          return not (((any(character.Templates, function (template) return stringMatch(template.Name, "Arsinoitherium Companion Advancement") end) and 1 or 0)) >= 1)
+        function (character, item)
+          return not ((any(character.Templates, function (template) return stringMatch(template.Name, "Arsinoitherium Companion Advancement") end)))
         end,
       },
     },
@@ -4236,9 +4323,12 @@ DefineRace({
         "Companion Advancement ~ Megafauna (Arsinoitherium)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -4249,7 +4339,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
@@ -4324,7 +4414,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -4364,8 +4454,8 @@ DefineRace({
         "Animal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -4383,8 +4473,8 @@ DefineRace({
         "Gylptodon Companion Natural Attack",
       },
       Conditions={
-        function (character)
-          return not (((any(character.Templates, function (template) return stringMatch(template.Name, "Gylptodon Companion Advancement") end) and 1 or 0)) >= 1)
+        function (character, item)
+          return not ((any(character.Templates, function (template) return stringMatch(template.Name, "Gylptodon Companion Advancement") end)))
         end,
       },
     },
@@ -4395,9 +4485,12 @@ DefineRace({
         "Companion Advancement ~ Megafauna (Gylptodon)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -4408,7 +4501,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
@@ -4476,7 +4569,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -4516,8 +4609,8 @@ DefineRace({
         "Animal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -4542,9 +4635,12 @@ DefineRace({
         "Companion Advancement ~ Megafauna (Megaloceros)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -4555,7 +4651,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
@@ -4649,7 +4745,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -4689,8 +4785,8 @@ DefineRace({
         "Animal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -4715,9 +4811,12 @@ DefineRace({
         "Companion Advancement ~ Megafauna (Megatherium)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -4728,7 +4827,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
@@ -4807,7 +4906,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -4848,8 +4947,8 @@ DefineRace({
         "Animal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -4867,9 +4966,12 @@ DefineRace({
         "Companion Advancement ~ Primate (Baboon)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -4880,7 +4982,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -4941,7 +5043,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -4982,8 +5084,8 @@ DefineRace({
         "Animal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -5001,9 +5103,12 @@ DefineRace({
         "Companion Advancement ~ Ray (Manta)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -5014,7 +5119,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -5090,7 +5195,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -5131,8 +5236,8 @@ DefineRace({
         "Animal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -5157,9 +5262,12 @@ DefineRace({
         "Companion Advancement ~ Ray (Stingray)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -5170,7 +5278,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 4)
         end,
       },
@@ -5237,7 +5345,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },
@@ -5285,8 +5393,8 @@ DefineRace({
         "Animal Traits Output",
       },
       Conditions={
-        function (character)
-          return ((IsRuleEnabled("DISPLAYTYPETRAITS"))) >= 1
+        function (character, item)
+          return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
     },
@@ -5304,9 +5412,12 @@ DefineRace({
         "Companion Advancement ~ Turtle (Giant Snapping)",
       },
       Conditions={
-        function (character)
-          return 1 <= #filter(character.Abilities, function (ability)
-            return ability.Category == "Special Ability" and (ability.Name == "Companion Advancement")
+        function (character, item)
+          return character.HasAnyAbility(function (ability)
+            if ability.Category ~= "Special Ability" then return false end
+            if ability.IsAnyType() then return true end
+            if ability.Name == "Companion Advancement" then return true end
+            return false
           end)
         end,
       },
@@ -5317,7 +5428,7 @@ DefineRace({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character)
+        function (character, item)
           return (character.Variables["MasterLevel"] >= 7)
         end,
       },
@@ -5410,7 +5521,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character)
+    function (character, item)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },

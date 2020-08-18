@@ -3,9 +3,9 @@ using System.Linq;
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class MultiCondition : Condition
+    internal class CountMultiCondition : Condition
     {
-        public MultiCondition(bool inverted, int count, List<string> conditions) : base(inverted)
+        public CountMultiCondition(bool inverted, int count, List<string> conditions) : base(inverted)
         {
             Count = count;
             Conditions = conditions;

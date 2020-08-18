@@ -21,7 +21,7 @@ namespace Primordially.LstToLua.Definitions
             });
         }
 
-        public List<(string target, string action, string value)> Modifications { get; } = new List<(string target, string action, string value)>();
+        public List<(string target, string action, Formula value)> Modifications { get; } = new List<(string target, string action, Formula value)>();
 
         protected override void DumpMembers(LuaTextWriter output)
         {
@@ -55,7 +55,7 @@ namespace Primordially.LstToLua.Definitions
                     throw new ParseFailedException(field, "Cannot parse MODIFY");
                 }
 
-                Modifications.Add((parts[0].Value, parts[1].Value, parts[2].Value));
+                Modifications.Add((parts[0].Value, parts[1].Value, new Formula(parts[2].Value)));
                 return;
             }
 

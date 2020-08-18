@@ -3035,8 +3035,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={
@@ -3093,8 +3093,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={
@@ -3131,8 +3131,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={
@@ -3169,8 +3169,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={
@@ -3207,8 +3207,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={
@@ -3245,8 +3245,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={
@@ -3283,8 +3283,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={
@@ -3321,8 +3321,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={
@@ -3359,8 +3359,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={
@@ -3397,8 +3397,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={
@@ -3435,8 +3435,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={
@@ -3473,8 +3473,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={
@@ -3511,8 +3511,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={
@@ -3549,8 +3549,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={
@@ -3587,8 +3587,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={
@@ -3625,8 +3625,8 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (item)
-          return ((item.IsType("Masterwork"))) >= 1
+        function (character, item)
+          return (item.IsType("Masterwork"))
         end,
       },
       Variables={

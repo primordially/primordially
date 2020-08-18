@@ -34,7 +34,7 @@ namespace Primordially.LstToLua.Conditions
                 "NEQ"  => "!=",
                 _ => throw new InvalidOperationException($"Unknown PREBASESIZE operation {Op}"),
             };
-            output.Write($"character.BaseSize {op} \"{Size}\"");
+            output.Write($"character.BaseSize {op} GetSize(\"{Size}\")");
             if (Inverted)
             {
                 output.Write(")");

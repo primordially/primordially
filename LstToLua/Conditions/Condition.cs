@@ -233,14 +233,14 @@ namespace Primordially.LstToLua.Conditions
 
         public virtual void Dump(LuaTextWriter output)
         {
-            output.WriteStartFunction(Arguments);
+            output.WriteStartFunction("character, item");
             output.Write("return ");
             DumpCondition(output);
             output.WriteLine();
             output.WriteEndFunction();
         }
 
-        protected virtual string Arguments => "character";
+        public virtual bool IsSimple => true;
 
         public abstract void DumpCondition(LuaTextWriter output);
     }

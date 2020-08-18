@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Primordially.LstToLua.Conditions
 {
-    internal class SpellSchoolCondition : MultiCondition
+    internal class SpellSchoolCondition : CountMultiCondition
     {
         public SpellSchoolCondition(bool inverted, int count, List<string> conditions) : base(inverted, count, conditions)
         {
