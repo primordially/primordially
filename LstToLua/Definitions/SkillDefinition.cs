@@ -21,6 +21,8 @@
                     "WEIGHT" => SkillArmorCheckPenalty.WeightPenaltyApplies,
                     _ => throw new ParseFailedException(value, "Cannot parse ACHECK"),
                 }),
+                Property.SeparatedList<string>('|', "CLASSES", "IsClassSkillFor"),
+                Property.SeparatedList<string>('|', "SITUATION", "Situations"),
                 Property.Boolean("USEUNTRAINED", "UseUntrained"),
                 Property.Boolean("VISIBLE", "Visible"),
                 CommonProperties.Choose,

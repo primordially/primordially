@@ -4585,7 +4585,7 @@ DefineEquipmentModifier({
   },
   Cost=Formula("10000*(%CHOICE-12)"),
   SourcePage="p.550",
-  SpellResistance="%CHOICE",
+  SpellResistance=Formula("%CHOICE"),
   Visible=true,
   Conditions={
     function (character, item)
@@ -9664,7 +9664,7 @@ DefineEquipmentModifier({
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
   SourcePage="p.464",
-  SpellResistance="13",
+  SpellResistance=Formula("13"),
   Visible=true,
   Conditions={
     function (character, item)
@@ -9689,7 +9689,7 @@ DefineEquipmentModifier({
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
   SourcePage="p.464",
-  SpellResistance="15",
+  SpellResistance=Formula("15"),
   Visible=true,
   Conditions={
     function (character, item)
@@ -9714,7 +9714,7 @@ DefineEquipmentModifier({
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
   SourcePage="p.464",
-  SpellResistance="17",
+  SpellResistance=Formula("17"),
   Visible=true,
   Conditions={
     function (character, item)
@@ -9739,7 +9739,7 @@ DefineEquipmentModifier({
   NameModifier="NORMAL",
   NameModifierLocation="Prefix",
   SourcePage="p.464",
-  SpellResistance="19",
+  SpellResistance=Formula("19"),
   Visible=true,
   Conditions={
     function (character, item)

@@ -25,7 +25,7 @@ SetDataSetInfo({
   Conditions={
     function (source)
       local count = 0
-      if source.IsBookType('Core Rules') then
+      if source.IsBookType("Core Rules") then
         count = count + 1
       end
       if source.Name == "[Core Rulebook]" then
@@ -62,8 +62,8 @@ SetDataSetInfo({
     },
   },
 })
-ImportFile("@/homebrew/conversion_support/conversion_support.lua")
-ImportFile("@/pathfinder/paizo/roleplaying_game/core_essentials/_core_essentials.lua")
+ImportDataSet("@/homebrew/conversion_support/conversion_support.pcc.lua")
+ImportDataSet("@/pathfinder/paizo/roleplaying_game/core_essentials/_core_essentials.pcc.lua")
 ImportFile("cr__align.lua")
 ImportFile("cr__datacontrols.lua")
 ImportFile("cr__saves.lua")
@@ -75,6 +75,7 @@ ImportFile("cr_abilities_class.lua")
 ImportFile("cr_abilities_race.lua")
 ImportFile("cr_abilities_globalvar.lua")
 ImportFile("cr_classes.lua")
+ImportFile("cr_deities.lua")
 ImportFile("cr_domains.lua")
 ImportFile("cr_equip_arms_armor.lua")
 ImportFile("cr_equip_general.lua")

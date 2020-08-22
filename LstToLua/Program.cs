@@ -13,10 +13,14 @@ namespace Primordially.LstToLua
     {
         static void Main(string[] args)
         {
-            var pccFile = args[0];
-            var outputDirectory = args[1];
+            for (int i = 0; i + 1 < args.Length; i += 2)
+            {
+                var pccFile = args[i];
+                var outputDirectory = args[i+1];
+                Console.WriteLine($"Processing PCC file {pccFile}");
+                ProcessPCCFile(pccFile, outputDirectory);
+            }
 
-            ProcessPCCFile(pccFile, outputDirectory);
             Console.WriteLine("Done.");
         }
 
@@ -28,7 +32,7 @@ namespace Primordially.LstToLua
 
             var filesToProcess = new List<(string kind, string path)>();
             Directory.CreateDirectory(outputDirectory);
-            var indexFile = Path.Join(outputDirectory, "index.lua");
+            var indexFile = Path.Join(outputDirectory, Path.GetFileName(pccFile) + ".lua");
             using (var outputStream = new FileStream(indexFile, FileMode.Create, FileAccess.Write))
             using (var output = new StreamWriter(outputStream))
             {
@@ -65,8 +69,6 @@ namespace Primordially.LstToLua
                             // These files have only one line, and its undocumented and looks useless
                             break;
                         case "DEITY":
-                            // These files have product identities in them
-                            break;
                         case "ABILITY":
                         case "ABILITYCATEGORY":
                         case "ALIGNMENT":
@@ -84,6 +86,7 @@ namespace Primordially.LstToLua
                         case "SAVE":
                         case "SHIELDPROF":
                         case "SKILL":
+                        case "SIZE":
                         case "STAT":
                         case "SPELL":
                         case "TEMPLATE":
@@ -222,8 +225,8 @@ namespace Primordially.LstToLua
                             break;
                         case "PCC":
                             {
-                                var file = Path.ChangeExtension(v.Value, "lua");
-                                luaWriter.Write($"ImportFile(\"{file}\")\n");
+                                var file = v.Value + ".lua";
+                                luaWriter.Write($"ImportDataSet(\"{file}\")\n");
                                 break;
                             }
                         case "HIDETYPE":
@@ -404,11 +407,13 @@ namespace Primordially.LstToLua
                     case "COMPANIONMOD":
                         new CompanionModFileConverter().Convert(inputFileFullPath, outputFile);
                         break;
+                    case "DEITY":
                     case "BIOSET":
                     case "DATATABLE":
                     case "DYNAMIC":
                     case "GLOBALMODIFIER":
                     case "KIT":
+                    case "SIZE":
                         Console.WriteLine($"Skipping Not-Yet-Implemented file kind {kind}");
                         //throw new NotImplementedException($"File kind {kind} not implemented.");
                         break;

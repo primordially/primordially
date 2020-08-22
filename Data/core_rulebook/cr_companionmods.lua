@@ -28,7 +28,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 1 or character.GetVariable("AnimalCompanionLVL") >= 1end,
+    return character.GetLevel("AnimalCompanionLVL") >= 1 or character.GetVariable("AnimalCompanionLVL") >= 1
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -36,7 +37,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 2 or character.GetVariable("AnimalCompanionLVL") >= 2end,
+    return character.GetLevel("AnimalCompanionLVL") >= 2 or character.GetVariable("AnimalCompanionLVL") >= 2
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -44,7 +46,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 4 or character.GetVariable("AnimalCompanionLVL") >= 4end,
+    return character.GetLevel("AnimalCompanionLVL") >= 4 or character.GetVariable("AnimalCompanionLVL") >= 4
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -52,7 +55,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 5 or character.GetVariable("AnimalCompanionLVL") >= 5end,
+    return character.GetLevel("AnimalCompanionLVL") >= 5 or character.GetVariable("AnimalCompanionLVL") >= 5
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -60,7 +64,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 6 or character.GetVariable("AnimalCompanionLVL") >= 6end,
+    return character.GetLevel("AnimalCompanionLVL") >= 6 or character.GetVariable("AnimalCompanionLVL") >= 6
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -68,7 +73,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 8 or character.GetVariable("AnimalCompanionLVL") >= 8end,
+    return character.GetLevel("AnimalCompanionLVL") >= 8 or character.GetVariable("AnimalCompanionLVL") >= 8
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -76,7 +82,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 9 or character.GetVariable("AnimalCompanionLVL") >= 9end,
+    return character.GetLevel("AnimalCompanionLVL") >= 9 or character.GetVariable("AnimalCompanionLVL") >= 9
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -84,7 +91,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 10 or character.GetVariable("AnimalCompanionLVL") >= 10end,
+    return character.GetLevel("AnimalCompanionLVL") >= 10 or character.GetVariable("AnimalCompanionLVL") >= 10
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -92,7 +100,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 12 or character.GetVariable("AnimalCompanionLVL") >= 12end,
+    return character.GetLevel("AnimalCompanionLVL") >= 12 or character.GetVariable("AnimalCompanionLVL") >= 12
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -100,7 +109,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 13 or character.GetVariable("AnimalCompanionLVL") >= 13end,
+    return character.GetLevel("AnimalCompanionLVL") >= 13 or character.GetVariable("AnimalCompanionLVL") >= 13
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -108,7 +118,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 14 or character.GetVariable("AnimalCompanionLVL") >= 14end,
+    return character.GetLevel("AnimalCompanionLVL") >= 14 or character.GetVariable("AnimalCompanionLVL") >= 14
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -116,7 +127,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 16 or character.GetVariable("AnimalCompanionLVL") >= 16end,
+    return character.GetLevel("AnimalCompanionLVL") >= 16 or character.GetVariable("AnimalCompanionLVL") >= 16
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -124,7 +136,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 17 or character.GetVariable("AnimalCompanionLVL") >= 17end,
+    return character.GetLevel("AnimalCompanionLVL") >= 17 or character.GetVariable("AnimalCompanionLVL") >= 17
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -132,7 +145,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 18 or character.GetVariable("AnimalCompanionLVL") >= 18end,
+    return character.GetLevel("AnimalCompanionLVL") >= 18 or character.GetVariable("AnimalCompanionLVL") >= 18
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -140,7 +154,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 20 or character.GetVariable("AnimalCompanionLVL") >= 20end,
+    return character.GetLevel("AnimalCompanionLVL") >= 20 or character.GetVariable("AnimalCompanionLVL") >= 20
+  end,
 })
 DefineFollowerBonus({
   Abilities={
@@ -157,7 +172,8 @@ DefineFollowerBonus({
     "Animal Companion",
   },
   Condition=function (character)
-    return character.GetLevel("AnimalCompanionLVL") >= 1 or character.GetVariable("AnimalCompanionLVL") >= 1end,
+    return character.GetLevel("AnimalCompanionLVL") >= 1 or character.GetVariable("AnimalCompanionLVL") >= 1
+  end,
 })
 DefineFollowerBonus({
   NewRaceType="Animal",
@@ -203,7 +219,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 1 or character.GetVariable("SpecialMountLVL") >= 1end,
+    return character.GetLevel("SpecialMountLVL") >= 1 or character.GetVariable("SpecialMountLVL") >= 1
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -211,7 +228,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 2 or character.GetVariable("SpecialMountLVL") >= 2end,
+    return character.GetLevel("SpecialMountLVL") >= 2 or character.GetVariable("SpecialMountLVL") >= 2
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -219,7 +237,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 4 or character.GetVariable("SpecialMountLVL") >= 4end,
+    return character.GetLevel("SpecialMountLVL") >= 4 or character.GetVariable("SpecialMountLVL") >= 4
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -227,7 +246,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 5 or character.GetVariable("SpecialMountLVL") >= 5end,
+    return character.GetLevel("SpecialMountLVL") >= 5 or character.GetVariable("SpecialMountLVL") >= 5
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -235,7 +255,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 6 or character.GetVariable("SpecialMountLVL") >= 6end,
+    return character.GetLevel("SpecialMountLVL") >= 6 or character.GetVariable("SpecialMountLVL") >= 6
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -243,7 +264,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 8 or character.GetVariable("SpecialMountLVL") >= 8end,
+    return character.GetLevel("SpecialMountLVL") >= 8 or character.GetVariable("SpecialMountLVL") >= 8
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -251,7 +273,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 9 or character.GetVariable("SpecialMountLVL") >= 9end,
+    return character.GetLevel("SpecialMountLVL") >= 9 or character.GetVariable("SpecialMountLVL") >= 9
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -259,7 +282,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 10 or character.GetVariable("SpecialMountLVL") >= 10end,
+    return character.GetLevel("SpecialMountLVL") >= 10 or character.GetVariable("SpecialMountLVL") >= 10
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -267,7 +291,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 12 or character.GetVariable("SpecialMountLVL") >= 12end,
+    return character.GetLevel("SpecialMountLVL") >= 12 or character.GetVariable("SpecialMountLVL") >= 12
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -275,7 +300,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 13 or character.GetVariable("SpecialMountLVL") >= 13end,
+    return character.GetLevel("SpecialMountLVL") >= 13 or character.GetVariable("SpecialMountLVL") >= 13
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -283,7 +309,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 14 or character.GetVariable("SpecialMountLVL") >= 14end,
+    return character.GetLevel("SpecialMountLVL") >= 14 or character.GetVariable("SpecialMountLVL") >= 14
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -291,7 +318,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 16 or character.GetVariable("SpecialMountLVL") >= 16end,
+    return character.GetLevel("SpecialMountLVL") >= 16 or character.GetVariable("SpecialMountLVL") >= 16
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -299,7 +327,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 17 or character.GetVariable("SpecialMountLVL") >= 17end,
+    return character.GetLevel("SpecialMountLVL") >= 17 or character.GetVariable("SpecialMountLVL") >= 17
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -307,7 +336,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 18 or character.GetVariable("SpecialMountLVL") >= 18end,
+    return character.GetLevel("SpecialMountLVL") >= 18 or character.GetVariable("SpecialMountLVL") >= 18
+  end,
 })
 DefineFollowerBonus({
   AdditionalHitDie=1,
@@ -315,7 +345,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 20 or character.GetVariable("SpecialMountLVL") >= 20end,
+    return character.GetLevel("SpecialMountLVL") >= 20 or character.GetVariable("SpecialMountLVL") >= 20
+  end,
 })
 DefineFollowerBonus({
   NewRaceType="Animal/Magical Beast",
@@ -326,7 +357,8 @@ DefineFollowerBonus({
     "Special Mount",
   },
   Condition=function (character)
-    return character.GetLevel("SpecialMountLVL") >= 11 or character.GetVariable("SpecialMountLVL") >= 11end,
+    return character.GetLevel("SpecialMountLVL") >= 11 or character.GetVariable("SpecialMountLVL") >= 11
+  end,
 })
 DefineFollowerBonus({
   CopyFolloweeAttackBonus=Formula("MASTER"),
@@ -336,19 +368,22 @@ DefineFollowerBonus({
     "Shadow Companion",
   },
   Condition=function (character)
-    return character.GetLevel("ShadowCompanionLVL") >= 1 or character.GetVariable("ShadowCompanionLVL") >= 1end,
+    return character.GetLevel("ShadowCompanionLVL") >= 1 or character.GetVariable("ShadowCompanionLVL") >= 1
+  end,
 })
 DefineFollowerBonus({
   Types={
     "Mount",
   },
   Condition=function (character)
-    return character.GetLevel("NormalMount") >= 1 or character.GetVariable("NormalMount") >= 1end,
+    return character.GetLevel("NormalMount") >= 1 or character.GetVariable("NormalMount") >= 1
+  end,
 })
 DefineFollowerBonus({
   Types={
     "Follower",
   },
   Condition=function (character)
-    return character.GetLevel("NormalFollower") >= 1 or character.GetVariable("NormalFollower") >= 1end,
+    return character.GetLevel("NormalFollower") >= 1 or character.GetVariable("NormalFollower") >= 1
+  end,
 })

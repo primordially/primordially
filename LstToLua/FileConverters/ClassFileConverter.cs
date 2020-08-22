@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Linq;
+using Primordially.LstToLua.Definitions;
 
 namespace Primordially.LstToLua.FileConverters
 {

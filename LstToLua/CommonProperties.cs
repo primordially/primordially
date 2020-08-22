@@ -1,4 +1,6 @@
-﻿using Primordially.LstToLua.Choosers;
+﻿using System;
+using Primordially.LstToLua.Adds;
+using Primordially.LstToLua.Choosers;
 using Primordially.LstToLua.Conditions;
 
 namespace Primordially.LstToLua
@@ -179,7 +181,7 @@ namespace Primordially.LstToLua
         {
             if (value.TryRemovePrefix("SR:", out value))
             {
-                properties["SpellResistance"] = value.Value;
+                properties["SpellResistance"] = new Formula(value.Value);
                 return true;
             }
 
@@ -251,6 +253,7 @@ namespace Primordially.LstToLua
         public static PropertyDefinition Size = Property.String("SIZE", "Size");
         public static PropertyDefinition BonusLanguages = Property.SeparatedList<BonusLanguage>(',', "LANGBONUS", "BonusLanguages");
         public static PropertyDefinition DefineStat = Property.Multiple<StatModification>("DEFINESTAT", "StatModifications");
+        public static PropertyDefinition ChallengeRating = Property.String("CR", "ChallengeRating");
 
         public static PropertyDefinition HitDie = (value, properties, clear) =>
         {
@@ -276,12 +279,17 @@ namespace Primordially.LstToLua
             return false;
         };
 
-        public static PropertyDefinition AddedSpellCasterLevels = (value, properties, clear) =>
+        public static PropertyDefinition Add = (value, properties, clear) =>
         {
-            if (value.TryRemovePrefix("ADD:SPELLCASTER|", out value))
+            if (value.TryRemovePrefix("ADD:", out value))
             {
-                var list = properties.GetList<AddedSpellCasterLevel>("AddedSpellCasterLevels");
-                list.Add(AddedSpellCasterLevel.Parse(value));
+                if (value.Value == ".CLEAR")
+                {
+                    clear["Add"] = null;
+                    return true;
+                }
+                var list = properties.GetList<Adder>("Add");
+                list.Add(Adder.Parse(value));
                 return true;
             }
 
@@ -380,29 +388,25 @@ namespace Primordially.LstToLua
 
             return false;
         };
-    }
 
-    internal class HitDie : LuaObject
-    {
-        public HitDie(TextSpan value)
+        public static PropertyDefinition HitDieStuff = (value, properties, clear) =>
         {
-            if (value.TryRemoveInfix("|", out value, out var condition))
+            if (value.TryRemovePrefix("HD:", out value))
             {
-                if (condition.TryRemovePrefix("CLASS.TYPE=", out condition))
+                if (value.Value.Contains(":"))
                 {
-                    Properties["ClassType"] = condition.Value;
-                }
-                else if (condition.TryRemovePrefix("CLASS=", out condition))
-                {
-                    Properties["ClassName"] = condition.Value;
-                }
-                else
-                {
-                    throw new ParseFailedException(condition, "Unable to parse HITDIE");
+                    var (w, rest) = value.SplitTuple(':');
+                    var when = w.Value;
+
+                    var whenObj = new WhenHitDie(when);
+                    whenObj.AddField(rest);
+                    var whenList = properties.GetList<WhenHitDie>("Additions");
+                    whenList.Add(whenObj);
+                    return true;
                 }
             }
 
-            Properties["Formula"] = new Formula(value);
-        }
+            return false;
+        };
     }
 }

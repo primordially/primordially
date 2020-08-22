@@ -7716,7 +7716,7 @@ DefineEquipment({
     Format="This garment, worn over normal clothing or armor, grants the wearer spell resistance 21.",
   },
   SourcePage="p.522",
-  SpellResistance="21",
+  SpellResistance=Formula("21"),
   Weight=0,
   Types={
     "Magic",
@@ -10001,7 +10001,7 @@ DefineEquipment({
     Format="This device appears to be a silver medallion in the shape of a beetle. If it is held for 1 round, an inscription appears on its surface letting the holder know that it is a protective device.&nl;The scarab's possessor gains spell resistance 20. The scarab can also absorb energy-draining attacks, death effects, and negative energy effects. Upon absorbing 12 such attacks, the scarab turns to powder and is destroyed.",
   },
   SourcePage="p.529",
-  SpellResistance="20",
+  SpellResistance=Formula("20"),
   Weight=0,
   EquipmentModifiers={
     {

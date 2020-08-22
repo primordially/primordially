@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Primordially.LstToLua
+namespace Primordially.LstToLua.Definitions
 {
     /// <summary>
     ///   Contains anything that can be on the class line(s)
@@ -18,6 +18,7 @@ namespace Primordially.LstToLua
                 Property.String("SPELLSTAT", "SpellStat"),
                 Property.Integer("HD", "HitDie"),
                 Property.Integer("MAXLEVEL", "MaxLevel", ("NOLIMIT", -1)),
+                Property.Integer("LEVELSPERFEAT", "LevelsPerFeat"),
                 Property.Formula("STARTSKILLPTS", "SkillPointsPerLevel"),
                 Property.Boolean("VISIBLE", "Visible"),
                 Property.Boolean("MEMORIZE", "Memorize"),
@@ -41,6 +42,7 @@ namespace Primordially.LstToLua
                 CommonProperties.Auto,
                 CommonProperties.ClassSkills,
                 CommonProperties.DisplayName,
+                CommonProperties.Template,
                 SpellListChoices,
             });
             Name = name;

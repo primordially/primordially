@@ -3227,7 +3227,7 @@ DefineRace({
 DefineRace({
   Name="Companion (Shadow)",
   SortKey="z_Companion",
-  ChallengeRating=3,
+  ChallengeRating="3",
   DisplayName="Companion [NAME]",
   RaceType="Undead",
   Size="M",

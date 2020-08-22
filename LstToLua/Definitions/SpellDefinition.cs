@@ -64,6 +64,7 @@ namespace Primordially.LstToLua.Definitions
             {
                 CommonProperties.Types,
                 CommonProperties.Description,
+                CommonProperties.DisplayName,
                 CommonProperties.TemporaryBonus,
                 Property.SeparatedList<string>('|', "SCHOOL", "Schools"),
                 Property.SeparatedList<string>('|', "SUBSCHOOL", "SubSchools"),

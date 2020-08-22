@@ -16,7 +16,9 @@ namespace Primordially.LstToLua
                 Property.String("SOURCEPAGE", "SourcePage"),
                 Property.String("SOURCESHORT", "SourceShort"),
                 Property.String("SOURCELONG", "SourceLong"),
+                Property.String("SOURCEDATE", "SourceDate"),
                 Property.String("SOURCEURL", "SourceUrl"),
+                Property.String("SOURCEWEB", "SourceWeb"),
                 Property.String("SOURCELINK", "SourceLink"),
             });
         }

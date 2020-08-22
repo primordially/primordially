@@ -29170,7 +29170,7 @@ DefineAbility({
     },
   },
   SourcePage="p.59",
-  SpellResistance="DiamondSoul",
+  SpellResistance=Formula("DiamondSoul"),
   Bonuses={
     {
       Category="VAR",
@@ -53242,7 +53242,7 @@ DefineAbility({
     },
   },
   SourcePage="p.72",
-  SpellResistance="Sorcerer_AlienResistance_SR",
+  SpellResistance=Formula("Sorcerer_AlienResistance_SR"),
   Aspects={
     {
       Name="ChildAbility",
@@ -74012,12 +74012,12 @@ ModifyAbility({
 DefineAbility({
   Name="Bard Class",
   Category="Internal",
-  AddedSpellCasterLevels={
-    {
-      ClassNames={
+  Add={
+    AddSpellCasterLevel({
+      Classes={
         "Bard",
       },
-    },
+    }),
   },
   Types={
     "CastingClassSupport",
@@ -74026,12 +74026,12 @@ DefineAbility({
 DefineAbility({
   Name="Cleric Class",
   Category="Internal",
-  AddedSpellCasterLevels={
-    {
-      ClassNames={
+  Add={
+    AddSpellCasterLevel({
+      Classes={
         "Cleric",
       },
-    },
+    }),
   },
   Types={
     "CastingClassSupport",
@@ -74040,12 +74040,12 @@ DefineAbility({
 DefineAbility({
   Name="Sorcerer Class",
   Category="Internal",
-  AddedSpellCasterLevels={
-    {
-      ClassNames={
+  Add={
+    AddSpellCasterLevel({
+      Classes={
         "Sorcerer",
       },
-    },
+    }),
   },
   Types={
     "CastingClassSupport",
@@ -74054,12 +74054,12 @@ DefineAbility({
 DefineAbility({
   Name="Wizard Class",
   Category="Internal",
-  AddedSpellCasterLevels={
-    {
-      ClassNames={
+  Add={
+    AddSpellCasterLevel({
+      Classes={
         "Wizard",
       },
-    },
+    }),
   },
   Types={
     "CastingClassSupport",

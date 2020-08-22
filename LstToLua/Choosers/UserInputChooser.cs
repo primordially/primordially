@@ -4,6 +4,10 @@
     {
         public string Process(TextSpan value)
         {
+            if (string.IsNullOrEmpty(value.Value))
+            {
+                return "ChooseUserInput()";
+            }
             bool first = true;
             int count = 1;
             string? title = null;

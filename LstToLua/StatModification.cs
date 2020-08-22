@@ -41,6 +41,6 @@ namespace Primordially.LstToLua
 
         public string Stat { get; }
         public StatModificationType Type { get; }
-        public string? Value { get; }
+        public Formula? Value { get; }
     }
 }

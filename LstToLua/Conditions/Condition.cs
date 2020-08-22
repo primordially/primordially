@@ -39,6 +39,15 @@ namespace Primordially.LstToLua.Conditions
                     result = AbilityCondition.Parse(v, invert);
                     return true;
 
+                case "PREHANDSEQ":
+                case "PREHANDSLT":
+                case "PREHANDSLTEQ":
+                case "PREHANDSGT":
+                case "PREHANDSGTEQ":
+                case "PREHANDSNEQ":
+                    result = HandsCondition.Parse(v, invert, k.Value.Substring("PREHANDS".Length));
+                    return true;
+
                 case "PREVAREQ":
                 case "PREVARLT":
                 case "PREVARLTEQ":
@@ -191,6 +200,10 @@ namespace Primordially.LstToLua.Conditions
 
                 case "PRERULE":
                     result = RuleCondition.Parse(v, invert);
+                    return true;
+                
+                case "PRECHARACTERTYPE":
+                    result = CharacterTypeCondition.Parse(v, invert);
                     return true;
 
                 case "PRETYPE":

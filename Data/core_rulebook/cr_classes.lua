@@ -4675,58 +4675,58 @@ DefineClass({
     },
     {
       Level="2",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="3",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="4",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="6",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="7",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="8",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="10",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
   },
@@ -4870,82 +4870,72 @@ DefineClass({
   Levels={
     {
       Level="1",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="2",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="3",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="4",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="5",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="6",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="7",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="8",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="9",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="10",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
@@ -5239,58 +5229,58 @@ DefineClass({
   Levels={
     {
       Level="2",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="3",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="4",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="6",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="7",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="8",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="10",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
@@ -5578,74 +5568,74 @@ DefineClass({
   Levels={
     {
       Level="2",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="3",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="4",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="5",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="6",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="7",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="8",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="9",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
       Level="10",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
       },
     },
     {
@@ -5806,82 +5796,72 @@ DefineClass({
   Levels={
     {
       Level="1",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="2",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="3",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="4",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="5",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="6",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="7",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="8",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="9",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
       Level="10",
-      AddedSpellCasterLevels={
-        {
-          Any=true,
-        },
+      Add={
+        AddSpellCasterLevel({
+        }),
       },
     },
     {
@@ -6013,112 +5993,112 @@ DefineClass({
   Levels={
     {
       Level="1",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
-        {
-          Type="Divine",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
+        AddSpellCasterLevel({
+          Divine=true,
+        }),
       },
     },
     {
       Level="2",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
-        {
-          Type="Divine",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
+        AddSpellCasterLevel({
+          Divine=true,
+        }),
       },
     },
     {
       Level="3",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
-        {
-          Type="Divine",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
+        AddSpellCasterLevel({
+          Divine=true,
+        }),
       },
     },
     {
       Level="4",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
-        {
-          Type="Divine",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
+        AddSpellCasterLevel({
+          Divine=true,
+        }),
       },
     },
     {
       Level="5",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
-        {
-          Type="Divine",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
+        AddSpellCasterLevel({
+          Divine=true,
+        }),
       },
     },
     {
       Level="6",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
-        {
-          Type="Divine",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
+        AddSpellCasterLevel({
+          Divine=true,
+        }),
       },
     },
     {
       Level="7",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
-        {
-          Type="Divine",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
+        AddSpellCasterLevel({
+          Divine=true,
+        }),
       },
     },
     {
       Level="8",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
-        {
-          Type="Divine",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
+        AddSpellCasterLevel({
+          Divine=true,
+        }),
       },
     },
     {
       Level="9",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
-        {
-          Type="Divine",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
+        AddSpellCasterLevel({
+          Divine=true,
+        }),
       },
     },
     {
       Level="10",
-      AddedSpellCasterLevels={
-        {
-          Type="Arcane",
-        },
-        {
-          Type="Divine",
-        },
+      Add={
+        AddSpellCasterLevel({
+          Arcane=true,
+        }),
+        AddSpellCasterLevel({
+          Divine=true,
+        }),
       },
     },
     {

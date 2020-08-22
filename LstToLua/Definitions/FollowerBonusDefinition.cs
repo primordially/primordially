@@ -11,6 +11,7 @@ namespace Primordially.LstToLua.Definitions
         {
             AddPropertyDefinitions(() => new []
             {
+                CommonProperties.Conditions,
                 CommonProperties.Types,
                 CommonProperties.Definitions,
                 CommonProperties.Bonuses,
@@ -50,6 +51,7 @@ namespace Primordially.LstToLua.Definitions
             output.WriteStartFunction("character");
             output.Write("return ");
             output.Write(Condition);
+            output.Write("\n");
             output.WriteEndFunction();
             output.Write(",\n");
         }

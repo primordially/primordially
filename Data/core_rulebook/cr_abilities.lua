@@ -1560,7 +1560,7 @@ DefineAbility({
 DefineAbility({
   Name="Spell Resistance ~ 18",
   Category="Internal",
-  SpellResistance="18",
+  SpellResistance=Formula("18"),
 })
 DefineAbility({
   Name="Base Intelligent Item",

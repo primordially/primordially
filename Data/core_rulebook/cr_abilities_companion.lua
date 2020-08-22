@@ -1230,7 +1230,7 @@ DefineAbility({
       Formula("MasterLevel+5"),
     },
   },
-  SpellResistance="MasterLevel+5",
+  SpellResistance=Formula("MasterLevel+5"),
   Types={
     "CompanionClassFeatures",
     "ClassFeatures",
