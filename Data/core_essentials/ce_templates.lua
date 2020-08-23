@@ -33333,11 +33333,12 @@ DefineTemplate({
   StartingKitCount=1,
   SubRace="Awakened",
   Add={
-    AddLanguage({
+    {
+      Kind="Language",
       Types={
         "Spoken",
       },
-    }),
+    },
   },
   AddedLevels={
     {
@@ -33368,11 +33369,12 @@ DefineTemplate({
   StartingKitCount=1,
   SubRace="Awakened",
   Add={
-    AddLanguage({
+    {
+      Kind="Language",
       Types={
         "Spoken",
       },
-    }),
+    },
   },
   AddedLevels={
     {
@@ -33414,11 +33416,12 @@ DefineTemplate({
   StartingKitCount=1,
   SubRace="Awakened",
   Add={
-    AddLanguage({
+    {
+      Kind="Language",
       Types={
         "Spoken",
       },
-    }),
+    },
   },
   Bonuses={
     {

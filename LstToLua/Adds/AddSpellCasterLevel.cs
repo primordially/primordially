@@ -17,13 +17,13 @@
 
             if (value.Value == "Divine")
             {
-                Properties["Divine"] = true;
+                Properties["Type"] = "Divine";
                 return;
             }
 
             if (value.Value == "Arcane")
             {
-                Properties["Arcane"] = true;
+                Properties["Type"] = "Arcane";
                 return;
             }
 
