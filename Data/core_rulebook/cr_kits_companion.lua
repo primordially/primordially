@@ -1,0 +1,2924 @@
+-- Converted From LST file data\pathfinder\paizo\roleplaying_game\core_rulebook\cr_kits_companion.lst
+-- From repository https://github.com/pcgen/pcgen at commit 11ceb52482855f2e5f0f6c108c3dc665b12af237
+SetSource({
+  SourceLong="Core Rulebook",
+  SourceShort="CR",
+  SourceWeb="http://paizo.com/store/downloads/pathfinder/pathfinderRPG/v5748btpy88yj",
+  SourceDate="2009-08",
+})
+
+DefineStartingKit({
+  Name="Awakened Animal",
+  AllowMultiple=true,
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="INT",
+          Value=Formula("roll(\"3d6\")+var(\"STAT.3.BASE\")-var(\"STAT.3\")"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("roll(\"1d3\")+var(\"STAT.5.BASE\")"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Awakened Tree",
+  AllowMultiple=true,
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetName({
+      Name="Awakened Tree",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="INT",
+          Value=Formula("roll(\"3d6\")"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("roll(\"3d6\")"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("roll(\"3d6\")"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Awakened Vermin",
+  AllowMultiple=true,
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetName({
+      Name="Awakened Vermin",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="INT",
+          Value=Formula("roll(\"3d6\")"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("roll(\"3d6\")"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("roll(\"3d6\")"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Ape",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Badger",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Bear",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Bird",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Boar",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Camel",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Big Cat",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Small Cat",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Crocodile",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("11"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Dinosaur",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Dog",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Horse",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Pony",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Shark",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("11"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Snake",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("11"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Wolf",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Dire Rat",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion (Shadow)",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetRace({
+      RaceName="Companion (Shadow)",
+      Conditions={
+        function (character, item, sources)
+          return not ((character.Race.Name == "%"))
+        end,
+      },
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Fly",
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Dodge",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Skill Focus (Perception)",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="LG",
+  AllowMultiple=true,
+  Visible=false,
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="LG",
+    })
+  end,
+})
+DefineStartingKit({
+  Name="NG",
+  AllowMultiple=true,
+  Visible=false,
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="NG",
+    })
+  end,
+})
+DefineStartingKit({
+  Name="CG",
+  AllowMultiple=true,
+  Visible=false,
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="CG",
+    })
+  end,
+})
+DefineStartingKit({
+  Name="LN",
+  AllowMultiple=true,
+  Visible=false,
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="LN",
+    })
+  end,
+})
+DefineStartingKit({
+  Name="TN",
+  AllowMultiple=true,
+  Visible=false,
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+  end,
+})
+DefineStartingKit({
+  Name="CN",
+  AllowMultiple=true,
+  Visible=false,
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="CN",
+    })
+  end,
+})
+DefineStartingKit({
+  Name="LE",
+  AllowMultiple=true,
+  Visible=false,
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="LE",
+    })
+  end,
+})
+DefineStartingKit({
+  Name="NE",
+  AllowMultiple=true,
+  Visible=false,
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="NE",
+    })
+  end,
+})
+SetSource({
+  SourceLong="Bestiary 2",
+  SourceShort="B2",
+  SourceWeb="http://paizo.com/store/byCompany/p/paizoPublishingLLC/pathfinder/pathfinderRPG/v5748btpy8hif",
+  SourceDate="2010-12",
+})
+DefineStartingKit({
+  Name="CE",
+  AllowMultiple=true,
+  Visible=false,
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="CE",
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Dinosaur (Allosaurus)",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Dinosaur (Parasaurolophus)",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Dinosaur (Tylosaurus)",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Gar",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Herd Animal (Ram)",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Hippopotamus",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Megafauna (Arsinoitherium)",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Megafauna (Gylptodon)",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Megafauna (Megaloceros)",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Megafauna (Megatherium)",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Primate (Baboon)",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Ray (Manta)",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Ray (Stingray)",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Companion ~ Turtle (Giant Snapping)",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Paracletus",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Intimidate",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Knowledge (Arcana)",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Knowledge (Planes)",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Sense Motive",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Great Fortitude",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Iron Will",
+      },
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("11"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Silvanshee",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="NG",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Acrobatics",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Climb",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Knowledge (Arcana)",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Knowledge (Planes)",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Improved Initiative",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Cassisian",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="NG",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Diplomacy",
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Knowledge (Planes)",
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Knowledge (Religion)",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Sense Motive",
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Iron Will",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Lyrakien",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="CG",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Acrobatics",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Bluff",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Diplomacy",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "TYPE.Knowledge",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "TYPE.Perform",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Spellcraft",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Agile Maneuvers",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Improved Initiative",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Brownie",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Skills={
+        "Acrobatics",
+      },
+    })
+    kit.AddSkill({
+      Skills={
+        "Bluff",
+      },
+    })
+    kit.AddSkill({
+      Skills={
+        "TYPE.Craft",
+      },
+    })
+    kit.AddSkill({
+      Skills={
+        "Escape Artist",
+      },
+    })
+    kit.AddSkill({
+      Skills={
+        "Handle Animal",
+      },
+    })
+    kit.AddSkill({
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddSkill({
+      Skills={
+        "Sense Motive",
+      },
+    })
+    kit.AddSkill({
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Dodge",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Cacodaemon",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="NE",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Bluff",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Fly",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Knowledge (Planes)",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Improved Initiative",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Lightning Reflexes",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Compsognathus",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Improved Initiative",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Small Ice Elemental",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Knowledge (Planes)",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Power Attack",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Small Lightning Elemental",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Acrobatics",
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Escape Artist",
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Knowledge (Planes)",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Improved Initiative",
+      },
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Small Magma Elemental",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Knowledge (Dungeoneering)",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Improved Initiative",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Small Mud Elemental",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Climb",
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Escape Artist",
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Knowledge (Planes)",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Power Attack",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Arbiter",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="LN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("11"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Diplomacy",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Fly",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Knowledge (Planes)",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Sense Motive",
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Flyby Attack",
+      },
+    })
+    kit.AddGear({
+      EquipLocation="Equipped",
+      ItemName="Sword (Short)",
+      Size="T",
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Voidworm",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="CN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Acrobatics",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Bluff",
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Escape Artist",
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Fly",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Knowledge (Arcana)",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Skill Focus (Perception)",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Weapon Finesse",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Cythnigot",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="CE",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("11"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Acrobatics",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Fly",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Knowledge (Nature)",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Knowledge (Planes)",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddSkill({
+      Ranks=3,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Lightning Reflexes",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Weapon Finesse",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Snapping Turtle",
+  Visible=false,
+  Types={
+    "Companion",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("11"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Weapon Finesse",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Scorpion (Greensting)",
+  SourcePage="p.242",
+  Visible=false,
+  Types={
+    "Default Monster",
+    "Vermin",
+  },
+  Apply=function (kit)
+    kit.SetName({
+      Name="Scorpion (Greensting)",
+    })
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("1"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Centipede (House)",
+  SourcePage="p.43",
+  Visible=false,
+  Types={
+    "Default Monster",
+    "Vermin",
+  },
+  Apply=function (kit)
+    kit.SetName({
+      Name="House Centipede",
+    })
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("11"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Fox",
+  SourcePage="112",
+  Visible=false,
+  Types={
+    "Familiar",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Acrobatics",
+      },
+    })
+    kit.AddSkill({
+      Ranks=8,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddSkill({
+      Ranks=10,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Survival",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Skill Focus (Perception)",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Octopus",
+  SourcePage="219",
+  Visible=false,
+  Types={
+    "Default Monster",
+    "Animal",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetName({
+      Name="Octopus",
+    })
+    kit.AddSkill({
+      Ranks=2,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Weapon Finesse",
+      },
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Crab (Giant King)",
+  SourcePage="p.50",
+  Visible=false,
+  Types={
+    "Default Monster",
+    "Vermin",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetName({
+      Name="Giant King Crab",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("1"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Spider (Scarlet)",
+  SourcePage="p.258",
+  Visible=false,
+  Types={
+    "Default Monster",
+    "Vermin",
+  },
+  Apply=function (kit)
+    kit.SetName({
+      Name="Scarlet Spider",
+    })
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("1"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+  end,
+})

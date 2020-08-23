@@ -3,9 +3,6 @@ using System.Linq;
 
 namespace Primordially.LstToLua.Definitions
 {
-    /// <summary>
-    ///   Contains anything that can be on the class line(s)
-    /// </summary>
     internal class ClassDefinition : TopLevelLuaObject
     {
         public override string ObjectType => "Class";

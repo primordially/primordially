@@ -33333,7 +33333,7 @@ DefineTemplate({
   StartingKitCount=1,
   SubRace="Awakened",
   Add={
-    AddAddLanguage({
+    AddLanguage({
       Types={
         "Spoken",
       },
@@ -33368,7 +33368,7 @@ DefineTemplate({
   StartingKitCount=1,
   SubRace="Awakened",
   Add={
-    AddAddLanguage({
+    AddLanguage({
       Types={
         "Spoken",
       },
@@ -33414,7 +33414,7 @@ DefineTemplate({
   StartingKitCount=1,
   SubRace="Awakened",
   Add={
-    AddAddLanguage({
+    AddLanguage({
       Types={
         "Spoken",
       },

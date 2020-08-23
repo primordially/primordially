@@ -52,5 +52,14 @@ namespace Primordially.LstToLua.FileConverters
             }
             base.ConvertLine(luaWriter, line);
         }
+
+        protected override void FinalizeConversion(LuaTextWriter luaWriter)
+        {
+            if (_classDefinition != null)
+            {
+                _classDefinition.Dump(luaWriter);
+                luaWriter.Write("\n");
+            }
+        }
     }
 }

@@ -189,3 +189,154 @@ DefineClass({
     },
   },
 })
+DefineClass({
+  Name="Shadow Companion",
+  HitDie=8,
+  IntModToSkills=true,
+  MaxLevel=-1,
+  SkillPointsPerLevel=Formula("4"),
+  SourcePage="p.309",
+  Visible=false,
+  Abilities={
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Undead Traits",
+      },
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["NoTypeTraits"] == 0)
+        end,
+      },
+    },
+    {
+      Category="FEAT",
+      Nature="AUTOMATIC",
+      Names={
+        "CMB Output",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+      },
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Will",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABModerate",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Will",
+      },
+    },
+  },
+  ClassSkills={
+    "Climb",
+    "Disguise",
+    "Fly",
+    "Intimidate",
+    "Knowledge (Arcana)",
+    "Knowledge (Religion)",
+    "Perception",
+    "Sense Motive",
+    "Spellcraft",
+    "Stealth",
+  },
+  Conditions={
+    function (character, item, sources)
+      return character.Race.IsType("Undead")
+    end,
+  },
+  Types={
+    "Monster",
+    "Companion",
+  },
+  Facts={
+    ClassType="Companion",
+  },
+  Levels={
+    {
+      Level="Start=2,Repeat=1",
+      DoNotAddHitDie=true,
+    },
+  },
+})

@@ -7424,3 +7424,175 @@ DefineClass({
     },
   },
 })
+DefineClass({
+  Name="Warrior",
+  HitDie=10,
+  MaxLevel=20,
+  SkillPointsPerLevel=Formula("2"),
+  SourcePage="p.450",
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Type={
+        Name="Base",
+        Replace=true,
+      },
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/2+2"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Fortitude",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")/3"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseAlternateSaveProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASE.Reflex",
+        "BASE.Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABFull",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("CL"),
+      Variables={
+        "WarriorLVL",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSaveGood_Fortitude",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseFractionalSave"] == 1)
+        end,
+      },
+      Variables={
+        "ClassSavePoor_Will",
+      },
+    },
+  },
+  ClassSkills={
+    "Climb",
+    "TYPE=Craft",
+    "Handle Animal",
+    "Intimidate",
+    "TYPE=Profession",
+    "Ride",
+    "Swim",
+  },
+  Types={
+    "Base",
+    "NPC",
+  },
+  Facts={
+    ClassType="NPC",
+    Abb="War",
+  },
+  Levels={
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="Special Ability",
+          Nature="AUTOMATIC",
+          Names={
+            "All Automatic Proficiencies",
+            "All Martial Weapon Proficiencies",
+          },
+        },
+        {
+          Category="FEAT",
+          Nature="AUTOMATIC",
+          Names={
+            "Martial Weapon Proficiency Output",
+            "Simple Weapon Proficiency",
+          },
+        },
+      },
+    },
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="FEAT",
+          Nature="AUTOMATIC",
+          Names={
+            "Armor Proficiency (Heavy)",
+            "Armor Proficiency (Light)",
+            "Armor Proficiency (Medium)",
+          },
+        },
+      },
+    },
+    {
+      Level="1",
+      Abilities={
+        {
+          Category="FEAT",
+          Nature="AUTOMATIC",
+          Names={
+            "Shield Proficiency",
+            "Tower Shield Proficiency",
+          },
+        },
+      },
+    },
+  },
+})
