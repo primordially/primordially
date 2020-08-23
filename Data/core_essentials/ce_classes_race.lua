@@ -2649,3 +2649,357 @@ DefineClass({
     },
   },
 })
+DefineClass({
+  Name="Construct (Mindless)",
+  DisplayName="Vermin",
+  HitDie=8,
+  IntModToSkills=true,
+  LevelsPerFeat=0,
+  MaxLevel=-1,
+  SkillPointsPerLevel=Formula("2"),
+  SourcePage="p.310",
+  Abilities={
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Construct Traits",
+      },
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["NoTypeTraits"] == 0)
+        end,
+      },
+    },
+    {
+      Category="FEAT",
+      Nature="AUTOMATIC",
+      Names={
+        "CMB Output",
+      },
+    },
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Ooze Traits",
+      },
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["NoTypeTraits"] == 0)
+        end,
+      },
+    },
+    {
+      Category="FEAT",
+      Nature="AUTOMATIC",
+      Names={
+        "CMB Output",
+      },
+    },
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Plant Traits",
+      },
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["NoTypeTraits"] == 0)
+        end,
+      },
+    },
+    {
+      Category="FEAT",
+      Nature="AUTOMATIC",
+      Names={
+        "CMB Output",
+      },
+    },
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Undead Traits",
+      },
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["NoTypeTraits"] == 0)
+        end,
+      },
+    },
+    {
+      Category="FEAT",
+      Nature="AUTOMATIC",
+      Names={
+        "CMB Output",
+      },
+    },
+    {
+      Category="Special Ability",
+      Nature="AUTOMATIC",
+      Names={
+        "Vermin Traits",
+      },
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["NoTypeTraits"] == 0)
+        end,
+      },
+    },
+    {
+      Category="FEAT",
+      Nature="AUTOMATIC",
+      Names={
+        "CMB Output",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel()"),
+      Type={
+        Name="Base",
+        Replace=true,
+      },
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel()/3"),
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Reflex",
+        "BASE.Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABFull",
+      },
+    },
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel()*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+      },
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel()/3"),
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Reflex",
+        "BASE.Will",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABModerate",
+      },
+    },
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel()*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+      },
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel()/2+2"),
+      Variables={
+        "BASE.Fortitude",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel()/3"),
+      Variables={
+        "BASE.Will",
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABModerate",
+      },
+    },
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel()*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+      },
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel()/2+2"),
+      Variables={
+        "BASE.Will",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel()/3"),
+      Variables={
+        "BASE.Fortitude",
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABModerate",
+      },
+    },
+    {
+      Category="COMBAT",
+      Formula=Formula("classlevel()*3/4"),
+      Type={
+        Name="Base",
+        Replace=true,
+      },
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseAlternateBABProgression"] == 0)
+        end,
+      },
+      Variables={
+        "BASEAB",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel()/2+2"),
+      Variables={
+        "BASE.Fortitude",
+      },
+    },
+    {
+      Category="SAVE",
+      Formula=Formula("classlevel()/3"),
+      Variables={
+        "BASE.Will",
+        "BASE.Reflex",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
+      Conditions={
+        function (character, item, sources)
+          return (character.Variables["UseFractionalBAB"] == 1)
+        end,
+      },
+      Variables={
+        "ClassBABModerate",
+      },
+    },
+  },
+  ClassSkills={
+    "Acrobatics",
+    "Climb",
+    "Fly",
+    "Perception",
+    "Stealth",
+    "Swim",
+  },
+  Conditions={
+    function (character, item, sources)
+      return character.Race.IsType("Construct")
+    end,
+    function (character, item, sources)
+      return character.Race.IsType("Ooze")
+    end,
+    function (character, item, sources)
+      return character.Race.IsType("Plant")
+    end,
+    function (character, item, sources)
+      return character.Race.IsType("Undead")
+    end,
+    function (character, item, sources)
+      return character.Race.IsType("Vermin")
+    end,
+  },
+  Templates={
+    "Construct",
+    "Mindless",
+    "Mindless",
+    "Undead",
+    "Mindless",
+  },
+  Types={
+    "Monster",
+    "Monster",
+    "Monster",
+    "Monster",
+    "Monster",
+  },
+  Facts={
+    ClassType="Monster",
+  },
+})

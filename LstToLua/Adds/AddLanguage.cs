@@ -2,7 +2,7 @@
 {
     internal class AddLanguage : Adder
     {
-        public override string Kind => "AddLanguage";
+        public override string Kind => "Language";
         public AddLanguage(TextSpan value)
         {
             if (value.TryRemoveInfix("|", out var count, out value))

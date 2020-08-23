@@ -349,6 +349,9 @@ namespace Primordially.LstToLua
                     case "CLASS":
                         new ClassFileConverter().Convert(inputFileFullPath, outputFile);
                         break;
+                    case "KIT":
+                        new StartingKitFileConverter().Convert(inputFileFullPath, outputFile);
+                        break;
 
                     case "ABILITY":
                         new SingleObjectFileConverter<AbilityDefinition>().Convert(inputFileFullPath, outputFile);
@@ -414,7 +417,6 @@ namespace Primordially.LstToLua
                     case "DATATABLE":
                     case "DYNAMIC":
                     case "GLOBALMODIFIER":
-                    case "KIT":
                     case "SIZE":
                         Console.WriteLine($"Skipping Not-Yet-Implemented file kind {kind}");
                         //throw new NotImplementedException($"File kind {kind} not implemented.");

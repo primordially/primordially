@@ -1,0 +1,577 @@
+-- Converted From LST file data\pathfinder\paizo\roleplaying_game\core_essentials\ce_kits_familiar_um.lst
+-- From repository https://github.com/pcgen/pcgen at commit 11ceb52482855f2e5f0f6c108c3dc665b12af237
+SetSource({
+  SourceLong="Ultimate Magic",
+  SourceShort="UM",
+  SourceWeb="http://paizo.com/pathfinderRPG/v5748btpy8g7s",
+  SourceDate="2011-05",
+})
+
+DefineStartingKit({
+  Name="Familiar ~ Blue-Ringed Octopus",
+  Visible=false,
+  Types={
+    "Improved Familiar",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Weapon Finesse",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Donkey Rat",
+  Visible=false,
+  Types={
+    "Improved Familiar",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Skill Focus (Perception)",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Fox",
+  Visible=false,
+  Types={
+    "Familiar",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Skill Focus (Perception)",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Goat",
+  Visible=false,
+  Types={
+    "Familiar",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Nimble Moves",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Hedgehog",
+  Visible=false,
+  Types={
+    "Familiar",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Stealth",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Athletic",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ House Centipede",
+  Visible=false,
+  Types={
+    "Familiar",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("1"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Stealth",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ King Crab",
+  Visible=false,
+  Types={
+    "Familiar",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("1"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Stealth",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Pig",
+  Visible=false,
+  Types={
+    "Familiar",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("11"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Perception",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Great Fortitude",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Scarlet Spider",
+  Visible=false,
+  Types={
+    "Familiar",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("1"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Stealth",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Thrush",
+  Visible=false,
+  Types={
+    "Familiar",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("10"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("11"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("10"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Fly",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Skill Focus (Perception)",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Thrush Familiar Language",
+  Visible=false,
+  Types={
+    "Familiar",
+  },
+  Apply=function (kit)
+    kit.AddTemplate({
+      Template={
+        "Thrush Familiar Language",
+      },
+    })
+  end,
+})
+DefineStartingKit({
+  Name="Familiar ~ Turtle",
+  Visible=false,
+  Types={
+    "Familiar",
+  },
+  Apply=function (kit)
+    kit.SetAlignment({
+      Alignment="TN",
+    })
+    kit.SetStats({
+      Stats={
+        {
+          Stat="STR",
+          Value=Formula("11"),
+        },
+        {
+          Stat="DEX",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CON",
+          Value=Formula("10"),
+        },
+        {
+          Stat="INT",
+          Value=Formula("10"),
+        },
+        {
+          Stat="WIS",
+          Value=Formula("10"),
+        },
+        {
+          Stat="CHA",
+          Value=Formula("11"),
+        },
+      },
+    })
+    kit.AddSkill({
+      Ranks=1,
+      Skills={
+        "Swim",
+      },
+    })
+    kit.AddAbility({
+      Category="FEAT",
+      Choices={
+        "Skill Focus (Perception)",
+      },
+    })
+  end,
+})

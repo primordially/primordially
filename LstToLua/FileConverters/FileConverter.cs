@@ -33,6 +33,12 @@ namespace Primordially.LstToLua.FileConverters
             {
                 ConvertLine(luaWriter, line);
             }
+
+            FinalizeConversion(luaWriter);
+        }
+
+        protected virtual void FinalizeConversion(LuaTextWriter luaWriter)
+        {
         }
 
         protected virtual void ConvertLine(LuaTextWriter luaWriter, TsvLine line)
