@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Primordially.LstToLua.Conditions;
 
 namespace Primordially.LstToLua
 {

@@ -23,15 +23,10 @@ SetDataSetInfo({
   IsOGL=true,
   IsLicensed=false,
   Conditions={
-    function (source)
-      local count = 0
-      if source.IsBookType("Core Rules") then
-        count = count + 1
-      end
-      if source.Name == "[Core Rulebook]" then
-        count = count + 1
-      end
-      return count < 1
+    function (character, item, sources)
+      return not any(sources, function (source)
+        return (source.IsBookType("Core Rules")) and (source.Name ~= "Core Rulebook")
+      end)
     end,
   },
   PublisherInfo={

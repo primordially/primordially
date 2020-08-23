@@ -86,7 +86,7 @@ ModifyAbility({
         "Improved Familiar List (3rd Level)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FamiliarMasterLVL"] >= 3) or (character.Variables["Caster_Level_Highest__Arcane"] >= 3) or (character.Variables["ImprovedFamiliarQualifierLVL"] >= 3)
         end,
       },
@@ -104,7 +104,7 @@ ModifyAbility({
         "Improved Familiar List (5th Level)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FamiliarMasterLVL"] >= 5) or (character.Variables["Caster_Level_Highest__Arcane"] >= 5) or (character.Variables["ImprovedFamiliarQualifierLVL"] >= 5)
         end,
       },
@@ -122,7 +122,7 @@ ModifyAbility({
         "Improved Familiar List (7th Level)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FamiliarMasterLVL"] >= 7) or (character.Variables["Caster_Level_Highest__Arcane"] >= 7) or (character.Variables["ImprovedFamiliarQualifierLVL"] >= 7)
         end,
       },
@@ -157,7 +157,7 @@ ModifyAbility({
       end,
       FollowerLevelAdjustment=0,
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG") or character.IsAlignment("LN") or character.IsAlignment("TN") or character.IsAlignment("CN")
         end,
       },
@@ -175,7 +175,7 @@ ModifyAbility({
       end,
       FollowerLevelAdjustment=0,
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE") or character.IsAlignment("LN") or character.IsAlignment("TN") or character.IsAlignment("CN")
         end,
       },
@@ -227,7 +227,7 @@ ModifyAbility({
       end,
       FollowerLevelAdjustment=0,
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE"))
         end,
       },
@@ -245,7 +245,7 @@ ModifyAbility({
       end,
       FollowerLevelAdjustment=0,
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG") or character.IsAlignment("CN") or character.IsAlignment("CE"))
         end,
       },
@@ -263,7 +263,7 @@ ModifyAbility({
       end,
       FollowerLevelAdjustment=0,
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("LG") or character.IsAlignment("LN") or character.IsAlignment("LE") or character.IsAlignment("NG") or character.IsAlignment("CG"))
         end,
       },
@@ -278,7 +278,7 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FamiliarLVL"] >= 1)
         end,
       },
@@ -347,10 +347,10 @@ ModifyAbility({
         "Familiar ~ Natural Armor Bonus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CF_FamiliarNaturalArmorBonus"] == 0)
         end,
       },
@@ -364,7 +364,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_FamiliarNaturalArmorBonus") then return true end
@@ -389,10 +389,10 @@ ModifyAbility({
         "Familiar ~ Intelligence Score",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CF_FamiliarIntelligenceScore"] == 0)
         end,
       },
@@ -406,7 +406,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_FamiliarIntelligenceScore") then return true end
@@ -431,10 +431,10 @@ ModifyAbility({
         "Familiar ~ Alertness",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CF_FamiliarAlertness"] == 0)
         end,
       },
@@ -448,7 +448,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_FamiliarAlertness") then return true end
@@ -473,10 +473,10 @@ ModifyAbility({
         "Familiar ~ Improved Evasion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CF_FamiliarImprovedEvasion"] == 0)
         end,
       },
@@ -490,7 +490,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_FamiliarImprovedEvasion") then return true end
@@ -515,10 +515,10 @@ ModifyAbility({
         "Familiar ~ Share Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CF_FamiliarShareSpells"] == 0)
         end,
       },
@@ -532,7 +532,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_FamiliarShareSpells") then return true end
@@ -557,10 +557,10 @@ ModifyAbility({
         "Familiar ~ Empathic Link",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CF_FamiliarEmpathicLink"] == 0)
         end,
       },
@@ -574,7 +574,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_FamiliarEmpathicLink") then return true end
@@ -599,10 +599,10 @@ ModifyAbility({
         "Familiar ~ Deliver Touch Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CF_FamiliarDeliverTouchSpells"] == 0)
         end,
       },
@@ -616,7 +616,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_FamiliarDeliverTouchSpells") then return true end
@@ -641,10 +641,10 @@ ModifyAbility({
         "Familiar ~ Speak with Master",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CF_FamiliarSpeakwithMaster"] == 0)
         end,
       },
@@ -658,7 +658,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_FamiliarSpeakwithMaster") then return true end
@@ -683,13 +683,13 @@ ModifyAbility({
         "Familiar ~ Speak with Animals of Its Kind",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CF_FamiliarSpeakwithAnimalsofItsKind"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Augmented Animal") end))
         end,
       },
@@ -703,7 +703,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_FamiliarSpeakwithAnimalsofItsKind") then return true end
@@ -728,10 +728,10 @@ ModifyAbility({
         "Familiar ~ Spell Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 11)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CF_FamiliarSpellResistance"] == 0)
         end,
       },
@@ -745,7 +745,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_FamiliarSpellResistance") then return true end
@@ -770,10 +770,10 @@ ModifyAbility({
         "Familiar ~ Scry on Familiar",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 13)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CF_FamiliarScryonFamiliar"] == 0)
         end,
       },
@@ -787,7 +787,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_FamiliarScryonFamiliar") then return true end

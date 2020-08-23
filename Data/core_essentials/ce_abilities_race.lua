@@ -17,7 +17,7 @@ DefineAbility({
         "Companion Tracker",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FamiliarMasterLVL"] >= 1) or (character.Variables["AnimalCompanionMasterLVL"] >= 1)
         end,
       },
@@ -29,7 +29,7 @@ DefineAbility({
         "Flight Maneuverability",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.HasMovement("Fly", 1)) or (character.Variables["Maneuverability"] > 0)
         end,
       },
@@ -41,7 +41,7 @@ DefineAbility({
         "Fast Healing",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FastHealingRate"] > 0)
         end,
       },
@@ -329,7 +329,7 @@ ModifyAbility({
         "Low-Light Vision",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["LowLightRange"] >= 1) or (character.Variables["HasLowlightVision"] >= 1) or (character.Variables["LowLightDistance"] >= 1)
         end,
       },
@@ -347,7 +347,7 @@ ModifyAbility({
         "Darkvision",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DarkvisionRange"] >= 1)
         end,
       },
@@ -365,7 +365,7 @@ ModifyAbility({
         "Blindsense",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BlindsenseRange"] >= 1)
         end,
       },
@@ -383,7 +383,7 @@ ModifyAbility({
         "Blindsight",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BlindsightRange"] >= 1)
         end,
       },
@@ -401,7 +401,7 @@ ModifyAbility({
         "Tremorsense",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TremorsenseRange"] >= 1)
         end,
       },
@@ -419,7 +419,7 @@ ModifyAbility({
         "See Etheral",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SeeEtheralRange"] >= 1)
         end,
       },
@@ -437,7 +437,7 @@ ModifyAbility({
         "See Invisibility",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SeeInvisibilityRange"] >= 1)
         end,
       },
@@ -455,7 +455,7 @@ ModifyAbility({
         "Resistance to Acid",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AcidResistanceBonus"] >= 1)
         end,
       },
@@ -473,7 +473,7 @@ ModifyAbility({
         "Resistance to Cold",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ColdResistanceBonus"] >= 1)
         end,
       },
@@ -491,7 +491,7 @@ ModifyAbility({
         "Resistance to Fire",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FireResistanceBonus"] >= 1)
         end,
       },
@@ -509,7 +509,7 @@ ModifyAbility({
         "Resistance to Electricity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ElectricityResistanceBonus"] >= 1)
         end,
       },
@@ -527,7 +527,7 @@ ModifyAbility({
         "Resistance to Sonic",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SonicResistanceBonus"] >= 1)
         end,
       },
@@ -614,10 +614,10 @@ ModifyAbility({
         "REACH_0",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "F" or character.Size == "D" or character.Size == "T"
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAutoReach"] == 1)
         end,
       },
@@ -629,10 +629,10 @@ ModifyAbility({
         "REACH_5",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "S" or character.Size == "M"
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAutoReach"] == 1)
         end,
       },
@@ -644,13 +644,13 @@ ModifyAbility({
         "REACH_10",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "L"
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceSizeIsLong"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAutoReach"] == 1)
         end,
       },
@@ -662,13 +662,13 @@ ModifyAbility({
         "REACH_15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "H"
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceSizeIsLong"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAutoReach"] == 1)
         end,
       },
@@ -680,13 +680,13 @@ ModifyAbility({
         "REACH_20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "G"
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceSizeIsLong"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAutoReach"] == 1)
         end,
       },
@@ -698,13 +698,13 @@ ModifyAbility({
         "REACH_30",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "C"
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceSizeIsLong"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAutoReach"] == 1)
         end,
       },
@@ -716,13 +716,13 @@ ModifyAbility({
         "REACH_5",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "L"
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceSizeIsLong"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAutoReach"] == 1)
         end,
       },
@@ -734,13 +734,13 @@ ModifyAbility({
         "REACH_10",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "H"
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceSizeIsLong"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAutoReach"] == 1)
         end,
       },
@@ -752,13 +752,13 @@ ModifyAbility({
         "REACH_15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "G"
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceSizeIsLong"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAutoReach"] == 1)
         end,
       },
@@ -770,13 +770,13 @@ ModifyAbility({
         "REACH_20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "C"
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceSizeIsLong"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAutoReach"] == 1)
         end,
       },
@@ -927,7 +927,7 @@ DefineAbility({
         "Base Size ~ Fine",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("F")
         end,
       },
@@ -939,7 +939,7 @@ DefineAbility({
         "Base Size ~ Diminutive",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("D")
         end,
       },
@@ -951,7 +951,7 @@ DefineAbility({
         "Base Size ~ Tiny",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("T")
         end,
       },
@@ -963,7 +963,7 @@ DefineAbility({
         "Base Size ~ Small",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("S")
         end,
       },
@@ -975,7 +975,7 @@ DefineAbility({
         "Base Size ~ Medium",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("M")
         end,
       },
@@ -987,7 +987,7 @@ DefineAbility({
         "Base Size ~ Large",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("L")
         end,
       },
@@ -999,7 +999,7 @@ DefineAbility({
         "Base Size ~ Huge",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("H")
         end,
       },
@@ -1011,7 +1011,7 @@ DefineAbility({
         "Base Size ~ Gargantuan",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("G")
         end,
       },
@@ -1023,7 +1023,7 @@ DefineAbility({
         "Base Size ~ Colossal",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("C")
         end,
       },
@@ -1035,7 +1035,7 @@ DefineAbility({
         "Current Size ~ Fine",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "F"
         end,
       },
@@ -1047,7 +1047,7 @@ DefineAbility({
         "Current Size ~ Diminutive",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "D"
         end,
       },
@@ -1059,7 +1059,7 @@ DefineAbility({
         "Current Size ~ Tiny",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "T"
         end,
       },
@@ -1071,7 +1071,7 @@ DefineAbility({
         "Current Size ~ Small",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "S"
         end,
       },
@@ -1083,7 +1083,7 @@ DefineAbility({
         "Current Size ~ Medium",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "M"
         end,
       },
@@ -1095,7 +1095,7 @@ DefineAbility({
         "Current Size ~ Large",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "L"
         end,
       },
@@ -1107,7 +1107,7 @@ DefineAbility({
         "Current Size ~ Huge",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "H"
         end,
       },
@@ -1119,7 +1119,7 @@ DefineAbility({
         "Current Size ~ Gargantuan",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "G"
         end,
       },
@@ -1131,7 +1131,7 @@ DefineAbility({
         "Current Size ~ Colossal",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "C"
         end,
       },
@@ -1396,10 +1396,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1417,10 +1417,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1432,10 +1432,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1453,10 +1453,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1468,10 +1468,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1489,10 +1489,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1504,10 +1504,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1519,10 +1519,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1540,10 +1540,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1555,10 +1555,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1570,10 +1570,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1589,10 +1589,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1610,10 +1610,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1625,10 +1625,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1640,10 +1640,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1659,10 +1659,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1680,10 +1680,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1695,10 +1695,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1714,10 +1714,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1735,10 +1735,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1750,10 +1750,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1769,10 +1769,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1790,10 +1790,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1805,10 +1805,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1826,10 +1826,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1841,10 +1841,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1862,10 +1862,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1877,10 +1877,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1892,10 +1892,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1913,10 +1913,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1928,10 +1928,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1943,10 +1943,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1962,10 +1962,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1983,10 +1983,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -1998,10 +1998,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2013,10 +2013,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2032,10 +2032,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2053,10 +2053,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2068,10 +2068,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2087,10 +2087,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2108,10 +2108,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2123,10 +2123,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2142,10 +2142,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2163,10 +2163,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2184,10 +2184,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2199,10 +2199,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2220,10 +2220,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2235,10 +2235,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2250,10 +2250,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2271,10 +2271,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2286,10 +2286,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2301,10 +2301,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2320,10 +2320,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2341,10 +2341,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2356,10 +2356,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2371,10 +2371,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2390,10 +2390,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2411,10 +2411,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2426,10 +2426,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2445,10 +2445,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2466,10 +2466,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2481,10 +2481,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2500,10 +2500,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2521,10 +2521,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2536,10 +2536,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2557,10 +2557,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2578,10 +2578,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2593,10 +2593,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2608,10 +2608,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2629,10 +2629,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2644,10 +2644,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2659,10 +2659,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2678,10 +2678,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2699,10 +2699,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2714,10 +2714,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2729,10 +2729,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2748,10 +2748,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2769,10 +2769,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2784,10 +2784,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2803,10 +2803,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2824,10 +2824,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2839,10 +2839,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2858,10 +2858,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2879,10 +2879,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2894,10 +2894,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2915,10 +2915,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2930,10 +2930,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2951,10 +2951,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2972,10 +2972,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -2987,10 +2987,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3002,10 +3002,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3021,10 +3021,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3042,10 +3042,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3057,10 +3057,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3072,10 +3072,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3091,10 +3091,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3112,10 +3112,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3127,10 +3127,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3146,10 +3146,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3167,10 +3167,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3182,10 +3182,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3201,10 +3201,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3222,10 +3222,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3237,10 +3237,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3252,10 +3252,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3273,10 +3273,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3288,10 +3288,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3309,10 +3309,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3324,10 +3324,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3345,10 +3345,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3366,10 +3366,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3381,10 +3381,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3396,10 +3396,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3415,10 +3415,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3436,10 +3436,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3451,10 +3451,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3470,10 +3470,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3491,10 +3491,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3506,10 +3506,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3525,10 +3525,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3546,10 +3546,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3561,10 +3561,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3576,10 +3576,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3594,10 +3594,10 @@ ModifyAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3615,10 +3615,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3630,10 +3630,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3645,10 +3645,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3666,10 +3666,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3681,10 +3681,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3702,10 +3702,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3717,10 +3717,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3738,10 +3738,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3759,10 +3759,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3774,10 +3774,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3793,10 +3793,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3814,10 +3814,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3829,10 +3829,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3848,10 +3848,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3869,10 +3869,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3884,10 +3884,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3899,10 +3899,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3917,10 +3917,10 @@ ModifyAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3938,10 +3938,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3953,10 +3953,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3968,10 +3968,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -3986,10 +3986,10 @@ ModifyAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4007,10 +4007,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4022,10 +4022,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4037,10 +4037,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4058,10 +4058,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4073,10 +4073,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4094,10 +4094,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4109,10 +4109,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4130,10 +4130,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4151,10 +4151,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4166,10 +4166,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4185,10 +4185,10 @@ ModifyAbility({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeIncrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4206,10 +4206,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4221,10 +4221,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4239,10 +4239,10 @@ ModifyAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4260,10 +4260,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4275,10 +4275,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4290,10 +4290,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4308,10 +4308,10 @@ ModifyAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4329,10 +4329,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4344,10 +4344,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4359,10 +4359,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4377,10 +4377,10 @@ ModifyAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4398,10 +4398,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4413,10 +4413,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4428,10 +4428,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4449,10 +4449,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4464,10 +4464,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4485,10 +4485,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4500,10 +4500,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4521,10 +4521,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4542,10 +4542,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4557,10 +4557,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4575,10 +4575,10 @@ ModifyAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4596,10 +4596,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4611,10 +4611,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4629,10 +4629,10 @@ ModifyAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4650,10 +4650,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4665,10 +4665,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4680,10 +4680,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4698,10 +4698,10 @@ ModifyAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4719,10 +4719,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4734,10 +4734,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4749,10 +4749,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4767,10 +4767,10 @@ ModifyAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4788,10 +4788,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4803,10 +4803,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4818,10 +4818,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4839,10 +4839,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4854,10 +4854,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4875,10 +4875,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4890,10 +4890,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4911,10 +4911,10 @@ ModifyAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SizeDecrease"] >= 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BypassSizeMods"] == 0)
         end,
       },
@@ -4929,7 +4929,7 @@ DefineAbility({
   Key="Base Race Size ~ F",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Fine"] == "true"
     end,
   },
@@ -4945,7 +4945,7 @@ DefineAbility({
   Key="Base Race Size ~ D",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Diminutive"] == "true"
     end,
   },
@@ -4961,7 +4961,7 @@ DefineAbility({
   Key="Base Race Size ~ T",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Tiny"] == "true"
     end,
   },
@@ -4977,7 +4977,7 @@ DefineAbility({
   Key="Base Race Size ~ S",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Small"] == "true"
     end,
   },
@@ -4993,7 +4993,7 @@ DefineAbility({
   Key="Base Race Size ~ M",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Medium"] == "true"
     end,
   },
@@ -5009,7 +5009,7 @@ DefineAbility({
   Key="Base Race Size ~ L",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Large"] == "true"
     end,
   },
@@ -5025,7 +5025,7 @@ DefineAbility({
   Key="Base Race Size ~ H",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Huge"] == "true"
     end,
   },
@@ -5041,7 +5041,7 @@ DefineAbility({
   Key="Base Race Size ~ G",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Gargantuan"] == "true"
     end,
   },
@@ -5057,7 +5057,7 @@ DefineAbility({
   Key="Base Race Size ~ C",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Colossal"] == "true"
     end,
   },
@@ -5144,7 +5144,7 @@ DefineAbility({
         "Bite Damage Increase",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteOnlyAttack"] == 1)
         end,
       },
@@ -5172,7 +5172,7 @@ DefineAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] < 2)
         end,
       },
@@ -5184,7 +5184,7 @@ DefineAbility({
       Category="WEAPONPROF=Bite",
       Formula=Formula("-5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseWeaponsWithNaturalAttacks"] == 1)
         end,
       },
@@ -5196,7 +5196,7 @@ DefineAbility({
       Category="WEAPONPROF=Bite",
       Formula=Formula("floor(STR/2)-STR"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseWeaponsWithNaturalAttacks"] == 1)
         end,
       },
@@ -5233,7 +5233,7 @@ DefineAbility({
       Category="WEAPONPROF=Gore",
       Formula=Formula("-5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseWeaponsWithNaturalAttacks"] == 1)
         end,
       },
@@ -5245,7 +5245,7 @@ DefineAbility({
       Category="WEAPONPROF=Gore",
       Formula=Formula("floor(STR/2)-STR"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseWeaponsWithNaturalAttacks"] == 1)
         end,
       },
@@ -5257,10 +5257,10 @@ DefineAbility({
       Category="WEAPONPROF=Gore",
       Formula=Formula("MAX(STR/2,0)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["UseWeaponsWithNaturalAttacks"] == 1))
         end,
       },
@@ -5297,7 +5297,7 @@ DefineAbility({
       Category="WEAPONPROF=Claw",
       Formula=Formula("-5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseWeaponsWithNaturalAttacks"] == 1)
         end,
       },
@@ -5309,7 +5309,7 @@ DefineAbility({
       Category="WEAPONPROF=Claw",
       Formula=Formula("floor(STR/2)-STR"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseWeaponsWithNaturalAttacks"] == 1)
         end,
       },
@@ -5321,10 +5321,10 @@ DefineAbility({
       Category="WEAPONPROF=Claw",
       Formula=Formula("MAX(STR/2,0)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["UseWeaponsWithNaturalAttacks"] == 1))
         end,
       },
@@ -5361,7 +5361,7 @@ DefineAbility({
       Category="WEAPONPROF=Slam",
       Formula=Formula("-5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseWeaponsWithNaturalAttacks"] == 1)
         end,
       },
@@ -5373,7 +5373,7 @@ DefineAbility({
       Category="WEAPONPROF=Slam",
       Formula=Formula("floor(STR/2)-STR"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseWeaponsWithNaturalAttacks"] == 1)
         end,
       },
@@ -5385,10 +5385,10 @@ DefineAbility({
       Category="WEAPONPROF=Slam",
       Formula=Formula("MAX(STR/2,0)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["UseWeaponsWithNaturalAttacks"] == 1))
         end,
       },
@@ -5425,7 +5425,7 @@ DefineAbility({
       Category="WEAPONPROF=Sting",
       Formula=Formula("-5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseWeaponsWithNaturalAttacks"] == 1)
         end,
       },
@@ -5437,7 +5437,7 @@ DefineAbility({
       Category="WEAPONPROF=Sting",
       Formula=Formula("floor(STR/2)-STR"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseWeaponsWithNaturalAttacks"] == 1)
         end,
       },
@@ -5449,10 +5449,10 @@ DefineAbility({
       Category="WEAPONPROF=Sting",
       Formula=Formula("MAX(STR/2,0)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["UseWeaponsWithNaturalAttacks"] == 1))
         end,
       },
@@ -5489,7 +5489,7 @@ DefineAbility({
       Category="WEAPONPROF=Talons",
       Formula=Formula("-5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseWeaponsWithNaturalAttacks"] == 1)
         end,
       },
@@ -5501,7 +5501,7 @@ DefineAbility({
       Category="WEAPONPROF=Talons",
       Formula=Formula("floor(STR/2)-STR"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseWeaponsWithNaturalAttacks"] == 1)
         end,
       },
@@ -5513,10 +5513,10 @@ DefineAbility({
       Category="WEAPONPROF=Talons",
       Formula=Formula("MAX(STR/2,0)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["UseWeaponsWithNaturalAttacks"] == 1))
         end,
       },
@@ -5553,7 +5553,7 @@ DefineAbility({
       Category="WEAPONPROF=Pincers",
       Formula=Formula("-5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.IsAnyType("NaturalAttackPrimary") then return true end
@@ -5573,7 +5573,7 @@ DefineAbility({
       Category="WEAPONPROF=Pincers",
       Formula=Formula("floor(STR/2)-STR"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.IsAnyType("NaturalAttackPrimary") then return true end
@@ -5593,10 +5593,10 @@ DefineAbility({
       Category="WEAPONPROF=Pincers",
       Formula=Formula("MAX(STR/2,0)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["UseWeaponsWithNaturalAttacks"] == 1))
         end,
       },
@@ -5633,7 +5633,7 @@ DefineAbility({
       Category="WEAPONPROF=Tail Slap",
       Formula=Formula("-5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.IsAnyType("NaturalAttackPrimary") then return true end
@@ -5653,7 +5653,7 @@ DefineAbility({
       Category="WEAPONPROF=Tail Slap",
       Formula=Formula("floor(STR/2)-STR"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.IsAnyType("NaturalAttackPrimary") then return true end
@@ -5673,10 +5673,10 @@ DefineAbility({
       Category="WEAPONPROF=Tail Slap",
       Formula=Formula("MAX(STR/2,0)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["UseWeaponsWithNaturalAttacks"] == 1))
         end,
       },
@@ -5713,7 +5713,7 @@ DefineAbility({
       Category="WEAPONPROF=Hoof",
       Formula=Formula("-5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.IsAnyType("NaturalAttackPrimary") then return true end
@@ -5733,7 +5733,7 @@ DefineAbility({
       Category="WEAPONPROF=Hoof",
       Formula=Formula("floor(STR/2)-STR"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.IsAnyType("NaturalAttackPrimary") then return true end
@@ -5753,10 +5753,10 @@ DefineAbility({
       Category="WEAPONPROF=Hoof",
       Formula=Formula("MAX(STR/2,0)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["UseWeaponsWithNaturalAttacks"] == 1))
         end,
       },
@@ -5793,7 +5793,7 @@ DefineAbility({
       Category="WEAPONPROF=Tentacle",
       Formula=Formula("-5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.IsAnyType("NaturalAttackPrimary") then return true end
@@ -5813,7 +5813,7 @@ DefineAbility({
       Category="WEAPONPROF=Tentacle",
       Formula=Formula("floor(STR/2)-STR"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.IsAnyType("NaturalAttackPrimary") then return true end
@@ -5833,10 +5833,10 @@ DefineAbility({
       Category="WEAPONPROF=Tentacle",
       Formula=Formula("MAX(STR/2,0)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["UseWeaponsWithNaturalAttacks"] == 1))
         end,
       },
@@ -5873,7 +5873,7 @@ DefineAbility({
       Category="WEAPONPROF=Wing",
       Formula=Formula("-5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.IsAnyType("NaturalAttackPrimary") then return true end
@@ -5893,7 +5893,7 @@ DefineAbility({
       Category="WEAPONPROF=Wing",
       Formula=Formula("floor(STR/2)-STR"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.IsAnyType("NaturalAttackPrimary") then return true end
@@ -5913,10 +5913,10 @@ DefineAbility({
       Category="WEAPONPROF=Wing",
       Formula=Formula("MAX(STR/2,0)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["UseWeaponsWithNaturalAttacks"] == 1))
         end,
       },
@@ -5953,7 +5953,7 @@ DefineAbility({
       Category="WEAPONPROF=Ranged Slam",
       Formula=Formula("-5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseWeaponsWithNaturalAttacks"] == 1)
         end,
       },
@@ -5965,7 +5965,7 @@ DefineAbility({
       Category="WEAPONPROF=Ranged Slam",
       Formula=Formula("floor(STR/2)-STR"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseWeaponsWithNaturalAttacks"] == 1)
         end,
       },
@@ -5977,10 +5977,10 @@ DefineAbility({
       Category="WEAPONPROF=Ranged Slam",
       Formula=Formula("MAX(STR/2,0)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["UseWeaponsWithNaturalAttacks"] == 1))
         end,
       },
@@ -6017,7 +6017,7 @@ DefineAbility({
       Category="WEAPONPROF=Rake",
       Formula=Formula("MAX(STR/2,0)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] == 1)
         end,
       },
@@ -6054,7 +6054,7 @@ DefineAbility({
       Category="WEAPONPROF=Hair",
       Formula=Formula("-5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.IsAnyType("NaturalAttackPrimary") then return true end
@@ -6135,7 +6135,7 @@ DefineAbility({
       Category="WEAPONPROF=Bite",
       Formula=Formula("MAX(STR/2,0)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["UseWeaponsWithNaturalAttacks"] == 1))
         end,
       },
@@ -6365,7 +6365,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("F")
         end,
       },
@@ -6383,7 +6383,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("D")
         end,
       },
@@ -6401,7 +6401,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("3"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("T")
         end,
       },
@@ -6419,7 +6419,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("S")
         end,
       },
@@ -6437,7 +6437,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("M")
         end,
       },
@@ -6455,7 +6455,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("6"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("L")
         end,
       },
@@ -6473,7 +6473,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("7"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("H")
         end,
       },
@@ -6491,7 +6491,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("G")
         end,
       },
@@ -6509,7 +6509,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("9"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("C")
         end,
       },
@@ -6738,10 +6738,10 @@ ModifyAbility({
         "Bite 1 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 1)
         end,
       },
@@ -6753,10 +6753,10 @@ ModifyAbility({
         "Bite 1 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 1)
         end,
       },
@@ -6768,10 +6768,10 @@ ModifyAbility({
         "Bite 1 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 1)
         end,
       },
@@ -6783,10 +6783,10 @@ ModifyAbility({
         "Bite 1 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 1)
         end,
       },
@@ -6798,10 +6798,10 @@ ModifyAbility({
         "Bite 1 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 1)
         end,
       },
@@ -6813,10 +6813,10 @@ ModifyAbility({
         "Bite 1 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 1)
         end,
       },
@@ -6828,10 +6828,10 @@ ModifyAbility({
         "Bite 1 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 1)
         end,
       },
@@ -6843,10 +6843,10 @@ ModifyAbility({
         "Bite 1 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 1)
         end,
       },
@@ -6858,10 +6858,10 @@ ModifyAbility({
         "Bite 1 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 1)
         end,
       },
@@ -6873,10 +6873,10 @@ ModifyAbility({
         "Bite 2 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 2)
         end,
       },
@@ -6888,10 +6888,10 @@ ModifyAbility({
         "Bite 2 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 2)
         end,
       },
@@ -6903,10 +6903,10 @@ ModifyAbility({
         "Bite 2 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 2)
         end,
       },
@@ -6918,10 +6918,10 @@ ModifyAbility({
         "Bite 2 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 2)
         end,
       },
@@ -6933,10 +6933,10 @@ ModifyAbility({
         "Bite 2 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 2)
         end,
       },
@@ -6948,10 +6948,10 @@ ModifyAbility({
         "Bite 2 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 2)
         end,
       },
@@ -6963,10 +6963,10 @@ ModifyAbility({
         "Bite 2 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 2)
         end,
       },
@@ -6978,10 +6978,10 @@ ModifyAbility({
         "Bite 2 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 2)
         end,
       },
@@ -6993,10 +6993,10 @@ ModifyAbility({
         "Bite 2 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 2)
         end,
       },
@@ -7008,10 +7008,10 @@ ModifyAbility({
         "Bite 3 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 3)
         end,
       },
@@ -7023,10 +7023,10 @@ ModifyAbility({
         "Bite 3 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 3)
         end,
       },
@@ -7038,10 +7038,10 @@ ModifyAbility({
         "Bite 3 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 3)
         end,
       },
@@ -7053,10 +7053,10 @@ ModifyAbility({
         "Bite 3 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 3)
         end,
       },
@@ -7068,10 +7068,10 @@ ModifyAbility({
         "Bite 3 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 3)
         end,
       },
@@ -7083,10 +7083,10 @@ ModifyAbility({
         "Bite 3 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 3)
         end,
       },
@@ -7098,10 +7098,10 @@ ModifyAbility({
         "Bite 3 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 3)
         end,
       },
@@ -7113,10 +7113,10 @@ ModifyAbility({
         "Bite 3 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 3)
         end,
       },
@@ -7128,10 +7128,10 @@ ModifyAbility({
         "Bite 3 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 3)
         end,
       },
@@ -7143,10 +7143,10 @@ ModifyAbility({
         "Bite 4 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 4)
         end,
       },
@@ -7158,10 +7158,10 @@ ModifyAbility({
         "Bite 4 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 4)
         end,
       },
@@ -7173,10 +7173,10 @@ ModifyAbility({
         "Bite 4 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 4)
         end,
       },
@@ -7188,10 +7188,10 @@ ModifyAbility({
         "Bite 4 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 4)
         end,
       },
@@ -7203,10 +7203,10 @@ ModifyAbility({
         "Bite 4 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 4)
         end,
       },
@@ -7218,10 +7218,10 @@ ModifyAbility({
         "Bite 4 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 4)
         end,
       },
@@ -7233,10 +7233,10 @@ ModifyAbility({
         "Bite 4 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 4)
         end,
       },
@@ -7248,10 +7248,10 @@ ModifyAbility({
         "Bite 4 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 4)
         end,
       },
@@ -7263,10 +7263,10 @@ ModifyAbility({
         "Bite 4 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 4)
         end,
       },
@@ -7278,10 +7278,10 @@ ModifyAbility({
         "Bite 5 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 5)
         end,
       },
@@ -7293,10 +7293,10 @@ ModifyAbility({
         "Bite 5 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 5)
         end,
       },
@@ -7308,10 +7308,10 @@ ModifyAbility({
         "Bite 5 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 5)
         end,
       },
@@ -7323,10 +7323,10 @@ ModifyAbility({
         "Bite 5 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 5)
         end,
       },
@@ -7338,10 +7338,10 @@ ModifyAbility({
         "Bite 5 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 5)
         end,
       },
@@ -7353,10 +7353,10 @@ ModifyAbility({
         "Bite 5 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 5)
         end,
       },
@@ -7368,10 +7368,10 @@ ModifyAbility({
         "Bite 5 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 5)
         end,
       },
@@ -7383,10 +7383,10 @@ ModifyAbility({
         "Bite 5 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 5)
         end,
       },
@@ -7398,10 +7398,10 @@ ModifyAbility({
         "Bite 5 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 5)
         end,
       },
@@ -7413,10 +7413,10 @@ ModifyAbility({
         "Bite 6 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 6)
         end,
       },
@@ -7428,10 +7428,10 @@ ModifyAbility({
         "Bite 6 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 6)
         end,
       },
@@ -7443,10 +7443,10 @@ ModifyAbility({
         "Bite 6 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 6)
         end,
       },
@@ -7458,10 +7458,10 @@ ModifyAbility({
         "Bite 6 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 6)
         end,
       },
@@ -7473,10 +7473,10 @@ ModifyAbility({
         "Bite 6 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 6)
         end,
       },
@@ -7488,10 +7488,10 @@ ModifyAbility({
         "Bite 6 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 6)
         end,
       },
@@ -7503,10 +7503,10 @@ ModifyAbility({
         "Bite 6 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 6)
         end,
       },
@@ -7518,10 +7518,10 @@ ModifyAbility({
         "Bite 6 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 6)
         end,
       },
@@ -7533,10 +7533,10 @@ ModifyAbility({
         "Bite 6 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 6)
         end,
       },
@@ -7548,10 +7548,10 @@ ModifyAbility({
         "Bite 7 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 7)
         end,
       },
@@ -7563,10 +7563,10 @@ ModifyAbility({
         "Bite 7 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 7)
         end,
       },
@@ -7578,10 +7578,10 @@ ModifyAbility({
         "Bite 7 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 7)
         end,
       },
@@ -7593,10 +7593,10 @@ ModifyAbility({
         "Bite 7 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 7)
         end,
       },
@@ -7608,10 +7608,10 @@ ModifyAbility({
         "Bite 7 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 7)
         end,
       },
@@ -7623,10 +7623,10 @@ ModifyAbility({
         "Bite 7 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 7)
         end,
       },
@@ -7638,10 +7638,10 @@ ModifyAbility({
         "Bite 7 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 7)
         end,
       },
@@ -7653,10 +7653,10 @@ ModifyAbility({
         "Bite 7 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 7)
         end,
       },
@@ -7668,10 +7668,10 @@ ModifyAbility({
         "Bite 7 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BiteAttacks"] == 7)
         end,
       },
@@ -7689,10 +7689,10 @@ ModifyAbility({
         "Gore 1 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 1)
         end,
       },
@@ -7704,10 +7704,10 @@ ModifyAbility({
         "Gore 1 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 1)
         end,
       },
@@ -7719,10 +7719,10 @@ ModifyAbility({
         "Gore 1 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 1)
         end,
       },
@@ -7734,10 +7734,10 @@ ModifyAbility({
         "Gore 1 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 1)
         end,
       },
@@ -7749,10 +7749,10 @@ ModifyAbility({
         "Gore 1 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 1)
         end,
       },
@@ -7764,10 +7764,10 @@ ModifyAbility({
         "Gore 1 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 1)
         end,
       },
@@ -7779,10 +7779,10 @@ ModifyAbility({
         "Gore 1 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 1)
         end,
       },
@@ -7794,10 +7794,10 @@ ModifyAbility({
         "Gore 1 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 1)
         end,
       },
@@ -7809,10 +7809,10 @@ ModifyAbility({
         "Gore 1 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 1)
         end,
       },
@@ -7824,10 +7824,10 @@ ModifyAbility({
         "Gore 2 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 2)
         end,
       },
@@ -7839,10 +7839,10 @@ ModifyAbility({
         "Gore 2 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 2)
         end,
       },
@@ -7854,10 +7854,10 @@ ModifyAbility({
         "Gore 2 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 2)
         end,
       },
@@ -7869,10 +7869,10 @@ ModifyAbility({
         "Gore 2 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 2)
         end,
       },
@@ -7884,10 +7884,10 @@ ModifyAbility({
         "Gore 2 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 2)
         end,
       },
@@ -7899,10 +7899,10 @@ ModifyAbility({
         "Gore 2 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 2)
         end,
       },
@@ -7914,10 +7914,10 @@ ModifyAbility({
         "Gore 2 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 2)
         end,
       },
@@ -7929,10 +7929,10 @@ ModifyAbility({
         "Gore 2 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 2)
         end,
       },
@@ -7944,10 +7944,10 @@ ModifyAbility({
         "Gore 2 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 2)
         end,
       },
@@ -7959,10 +7959,10 @@ ModifyAbility({
         "Gore 3 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 3)
         end,
       },
@@ -7974,10 +7974,10 @@ ModifyAbility({
         "Gore 3 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 3)
         end,
       },
@@ -7989,10 +7989,10 @@ ModifyAbility({
         "Gore 3 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 3)
         end,
       },
@@ -8004,10 +8004,10 @@ ModifyAbility({
         "Gore 3 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 3)
         end,
       },
@@ -8019,10 +8019,10 @@ ModifyAbility({
         "Gore 3 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 3)
         end,
       },
@@ -8034,10 +8034,10 @@ ModifyAbility({
         "Gore 3 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 3)
         end,
       },
@@ -8049,10 +8049,10 @@ ModifyAbility({
         "Gore 3 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 3)
         end,
       },
@@ -8064,10 +8064,10 @@ ModifyAbility({
         "Gore 3 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 3)
         end,
       },
@@ -8079,10 +8079,10 @@ ModifyAbility({
         "Gore 3 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 3)
         end,
       },
@@ -8094,10 +8094,10 @@ ModifyAbility({
         "Gore 4 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 4)
         end,
       },
@@ -8109,10 +8109,10 @@ ModifyAbility({
         "Gore 4 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 4)
         end,
       },
@@ -8124,10 +8124,10 @@ ModifyAbility({
         "Gore 4 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 4)
         end,
       },
@@ -8139,10 +8139,10 @@ ModifyAbility({
         "Gore 4 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 4)
         end,
       },
@@ -8154,10 +8154,10 @@ ModifyAbility({
         "Gore 4 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 4)
         end,
       },
@@ -8169,10 +8169,10 @@ ModifyAbility({
         "Gore 4 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 4)
         end,
       },
@@ -8184,10 +8184,10 @@ ModifyAbility({
         "Gore 4 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 4)
         end,
       },
@@ -8199,10 +8199,10 @@ ModifyAbility({
         "Gore 4 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 4)
         end,
       },
@@ -8214,10 +8214,10 @@ ModifyAbility({
         "Gore 4 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 4)
         end,
       },
@@ -8229,10 +8229,10 @@ ModifyAbility({
         "Gore 5 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 5)
         end,
       },
@@ -8244,10 +8244,10 @@ ModifyAbility({
         "Gore 5 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 5)
         end,
       },
@@ -8259,10 +8259,10 @@ ModifyAbility({
         "Gore 5 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 5)
         end,
       },
@@ -8274,10 +8274,10 @@ ModifyAbility({
         "Gore 5 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 5)
         end,
       },
@@ -8289,10 +8289,10 @@ ModifyAbility({
         "Gore 5 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 5)
         end,
       },
@@ -8304,10 +8304,10 @@ ModifyAbility({
         "Gore 5 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 5)
         end,
       },
@@ -8319,10 +8319,10 @@ ModifyAbility({
         "Gore 5 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 5)
         end,
       },
@@ -8334,10 +8334,10 @@ ModifyAbility({
         "Gore 5 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 5)
         end,
       },
@@ -8349,10 +8349,10 @@ ModifyAbility({
         "Gore 5 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 5)
         end,
       },
@@ -8364,10 +8364,10 @@ ModifyAbility({
         "Gore 6 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 6)
         end,
       },
@@ -8379,10 +8379,10 @@ ModifyAbility({
         "Gore 6 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 6)
         end,
       },
@@ -8394,10 +8394,10 @@ ModifyAbility({
         "Gore 6 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 6)
         end,
       },
@@ -8409,10 +8409,10 @@ ModifyAbility({
         "Gore 6 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 6)
         end,
       },
@@ -8424,10 +8424,10 @@ ModifyAbility({
         "Gore 6 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 6)
         end,
       },
@@ -8439,10 +8439,10 @@ ModifyAbility({
         "Gore 6 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 6)
         end,
       },
@@ -8454,10 +8454,10 @@ ModifyAbility({
         "Gore 6 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 6)
         end,
       },
@@ -8469,10 +8469,10 @@ ModifyAbility({
         "Gore 6 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 6)
         end,
       },
@@ -8484,10 +8484,10 @@ ModifyAbility({
         "Gore 6 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 6)
         end,
       },
@@ -8499,10 +8499,10 @@ ModifyAbility({
         "Gore 7 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 7)
         end,
       },
@@ -8514,10 +8514,10 @@ ModifyAbility({
         "Gore 7 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 7)
         end,
       },
@@ -8529,10 +8529,10 @@ ModifyAbility({
         "Gore 7 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 7)
         end,
       },
@@ -8544,10 +8544,10 @@ ModifyAbility({
         "Gore 7 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 7)
         end,
       },
@@ -8559,10 +8559,10 @@ ModifyAbility({
         "Gore 7 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 7)
         end,
       },
@@ -8574,10 +8574,10 @@ ModifyAbility({
         "Gore 7 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 7)
         end,
       },
@@ -8589,10 +8589,10 @@ ModifyAbility({
         "Gore 7 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 7)
         end,
       },
@@ -8604,10 +8604,10 @@ ModifyAbility({
         "Gore 7 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 7)
         end,
       },
@@ -8619,10 +8619,10 @@ ModifyAbility({
         "Gore 7 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoreAttacks"] == 7)
         end,
       },
@@ -8640,10 +8640,10 @@ ModifyAbility({
         "Pincers 2 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 2)
         end,
       },
@@ -8655,10 +8655,10 @@ ModifyAbility({
         "Pincers 2 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 2)
         end,
       },
@@ -8670,10 +8670,10 @@ ModifyAbility({
         "Pincers 2 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 2)
         end,
       },
@@ -8685,10 +8685,10 @@ ModifyAbility({
         "Pincers 2 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 2)
         end,
       },
@@ -8700,10 +8700,10 @@ ModifyAbility({
         "Pincers 2 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 2)
         end,
       },
@@ -8715,10 +8715,10 @@ ModifyAbility({
         "Pincers 2 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 2)
         end,
       },
@@ -8730,10 +8730,10 @@ ModifyAbility({
         "Pincers 2 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 2)
         end,
       },
@@ -8745,10 +8745,10 @@ ModifyAbility({
         "Pincers 2 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 2)
         end,
       },
@@ -8760,10 +8760,10 @@ ModifyAbility({
         "Pincers 2 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 2)
         end,
       },
@@ -8775,10 +8775,10 @@ ModifyAbility({
         "Pincers 4 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 4)
         end,
       },
@@ -8790,10 +8790,10 @@ ModifyAbility({
         "Pincers 4 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 4)
         end,
       },
@@ -8805,10 +8805,10 @@ ModifyAbility({
         "Pincers 4 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 4)
         end,
       },
@@ -8820,10 +8820,10 @@ ModifyAbility({
         "Pincers 4 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 4)
         end,
       },
@@ -8835,10 +8835,10 @@ ModifyAbility({
         "Pincers 4 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 4)
         end,
       },
@@ -8850,10 +8850,10 @@ ModifyAbility({
         "Pincers 4 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 4)
         end,
       },
@@ -8865,10 +8865,10 @@ ModifyAbility({
         "Pincers 4 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 4)
         end,
       },
@@ -8880,10 +8880,10 @@ ModifyAbility({
         "Pincers 4 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 4)
         end,
       },
@@ -8895,10 +8895,10 @@ ModifyAbility({
         "Pincers 4 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 4)
         end,
       },
@@ -8910,10 +8910,10 @@ ModifyAbility({
         "Pincers 6 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 6)
         end,
       },
@@ -8925,10 +8925,10 @@ ModifyAbility({
         "Pincers 6 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 6)
         end,
       },
@@ -8940,10 +8940,10 @@ ModifyAbility({
         "Pincers 6 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 6)
         end,
       },
@@ -8955,10 +8955,10 @@ ModifyAbility({
         "Pincers 6 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 6)
         end,
       },
@@ -8970,10 +8970,10 @@ ModifyAbility({
         "Pincers 6 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 6)
         end,
       },
@@ -8985,10 +8985,10 @@ ModifyAbility({
         "Pincers 6 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 6)
         end,
       },
@@ -9000,10 +9000,10 @@ ModifyAbility({
         "Pincers 6 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 6)
         end,
       },
@@ -9015,10 +9015,10 @@ ModifyAbility({
         "Pincers 6 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 6)
         end,
       },
@@ -9030,10 +9030,10 @@ ModifyAbility({
         "Pincers 6 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PincersAttacks"] == 6)
         end,
       },
@@ -9051,10 +9051,10 @@ ModifyAbility({
         "Tail Slap 1 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 1)
         end,
       },
@@ -9066,10 +9066,10 @@ ModifyAbility({
         "Tail Slap 1 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 1)
         end,
       },
@@ -9081,10 +9081,10 @@ ModifyAbility({
         "Tail Slap 1 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 1)
         end,
       },
@@ -9096,10 +9096,10 @@ ModifyAbility({
         "Tail Slap 1 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 1)
         end,
       },
@@ -9111,10 +9111,10 @@ ModifyAbility({
         "Tail Slap 1 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 1)
         end,
       },
@@ -9126,10 +9126,10 @@ ModifyAbility({
         "Tail Slap 1 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 1)
         end,
       },
@@ -9141,10 +9141,10 @@ ModifyAbility({
         "Tail Slap 1 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 1)
         end,
       },
@@ -9156,10 +9156,10 @@ ModifyAbility({
         "Tail Slap 1 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 1)
         end,
       },
@@ -9171,10 +9171,10 @@ ModifyAbility({
         "Tail Slap 1 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 1)
         end,
       },
@@ -9186,10 +9186,10 @@ ModifyAbility({
         "Tail Slap 2 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 2)
         end,
       },
@@ -9201,10 +9201,10 @@ ModifyAbility({
         "Tail Slap 2 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 2)
         end,
       },
@@ -9216,10 +9216,10 @@ ModifyAbility({
         "Tail Slap 2 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 2)
         end,
       },
@@ -9231,10 +9231,10 @@ ModifyAbility({
         "Tail Slap 2 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 2)
         end,
       },
@@ -9246,10 +9246,10 @@ ModifyAbility({
         "Tail Slap 2 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 2)
         end,
       },
@@ -9261,10 +9261,10 @@ ModifyAbility({
         "Tail Slap 2 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 2)
         end,
       },
@@ -9276,10 +9276,10 @@ ModifyAbility({
         "Tail Slap 2 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 2)
         end,
       },
@@ -9291,10 +9291,10 @@ ModifyAbility({
         "Tail Slap 2 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 2)
         end,
       },
@@ -9306,10 +9306,10 @@ ModifyAbility({
         "Tail Slap 2 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 2)
         end,
       },
@@ -9321,10 +9321,10 @@ ModifyAbility({
         "Tail Slap 3 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 3)
         end,
       },
@@ -9336,10 +9336,10 @@ ModifyAbility({
         "Tail Slap 3 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 3)
         end,
       },
@@ -9351,10 +9351,10 @@ ModifyAbility({
         "Tail Slap 3 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 3)
         end,
       },
@@ -9366,10 +9366,10 @@ ModifyAbility({
         "Tail Slap 3 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 3)
         end,
       },
@@ -9381,10 +9381,10 @@ ModifyAbility({
         "Tail Slap 3 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 3)
         end,
       },
@@ -9396,10 +9396,10 @@ ModifyAbility({
         "Tail Slap 3 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 3)
         end,
       },
@@ -9411,10 +9411,10 @@ ModifyAbility({
         "Tail Slap 3 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 3)
         end,
       },
@@ -9426,10 +9426,10 @@ ModifyAbility({
         "Tail Slap 3 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 3)
         end,
       },
@@ -9441,10 +9441,10 @@ ModifyAbility({
         "Tail Slap 3 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 3)
         end,
       },
@@ -9456,10 +9456,10 @@ ModifyAbility({
         "Tail Slap 4 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 4)
         end,
       },
@@ -9471,10 +9471,10 @@ ModifyAbility({
         "Tail Slap 4 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 4)
         end,
       },
@@ -9486,10 +9486,10 @@ ModifyAbility({
         "Tail Slap 4 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 4)
         end,
       },
@@ -9501,10 +9501,10 @@ ModifyAbility({
         "Tail Slap 4 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 4)
         end,
       },
@@ -9516,10 +9516,10 @@ ModifyAbility({
         "Tail Slap 4 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 4)
         end,
       },
@@ -9531,10 +9531,10 @@ ModifyAbility({
         "Tail Slap 4 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 4)
         end,
       },
@@ -9546,10 +9546,10 @@ ModifyAbility({
         "Tail Slap 4 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 4)
         end,
       },
@@ -9561,10 +9561,10 @@ ModifyAbility({
         "Tail Slap 4 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 4)
         end,
       },
@@ -9576,10 +9576,10 @@ ModifyAbility({
         "Tail Slap 4 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 4)
         end,
       },
@@ -9591,10 +9591,10 @@ ModifyAbility({
         "Tail Slap 5 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 5)
         end,
       },
@@ -9606,10 +9606,10 @@ ModifyAbility({
         "Tail Slap 5 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 5)
         end,
       },
@@ -9621,10 +9621,10 @@ ModifyAbility({
         "Tail Slap 5 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 5)
         end,
       },
@@ -9636,10 +9636,10 @@ ModifyAbility({
         "Tail Slap 5 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 5)
         end,
       },
@@ -9651,10 +9651,10 @@ ModifyAbility({
         "Tail Slap 5 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 5)
         end,
       },
@@ -9666,10 +9666,10 @@ ModifyAbility({
         "Tail Slap 5 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 5)
         end,
       },
@@ -9681,10 +9681,10 @@ ModifyAbility({
         "Tail Slap 5 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 5)
         end,
       },
@@ -9696,10 +9696,10 @@ ModifyAbility({
         "Tail Slap 5 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 5)
         end,
       },
@@ -9711,10 +9711,10 @@ ModifyAbility({
         "Tail Slap 5 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 5)
         end,
       },
@@ -9726,10 +9726,10 @@ ModifyAbility({
         "Tail Slap 6 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 6)
         end,
       },
@@ -9741,10 +9741,10 @@ ModifyAbility({
         "Tail Slap 6 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 6)
         end,
       },
@@ -9756,10 +9756,10 @@ ModifyAbility({
         "Tail Slap 6 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 6)
         end,
       },
@@ -9771,10 +9771,10 @@ ModifyAbility({
         "Tail Slap 6 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 6)
         end,
       },
@@ -9786,10 +9786,10 @@ ModifyAbility({
         "Tail Slap 6 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 6)
         end,
       },
@@ -9801,10 +9801,10 @@ ModifyAbility({
         "Tail Slap 6 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 6)
         end,
       },
@@ -9816,10 +9816,10 @@ ModifyAbility({
         "Tail Slap 6 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 6)
         end,
       },
@@ -9831,10 +9831,10 @@ ModifyAbility({
         "Tail Slap 6 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 6)
         end,
       },
@@ -9846,10 +9846,10 @@ ModifyAbility({
         "Tail Slap 6 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 6)
         end,
       },
@@ -9861,10 +9861,10 @@ ModifyAbility({
         "Tail Slap 7 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 7)
         end,
       },
@@ -9876,10 +9876,10 @@ ModifyAbility({
         "Tail Slap 7 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 7)
         end,
       },
@@ -9891,10 +9891,10 @@ ModifyAbility({
         "Tail Slap 7 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 7)
         end,
       },
@@ -9906,10 +9906,10 @@ ModifyAbility({
         "Tail Slap 7 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 7)
         end,
       },
@@ -9921,10 +9921,10 @@ ModifyAbility({
         "Tail Slap 7 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 7)
         end,
       },
@@ -9936,10 +9936,10 @@ ModifyAbility({
         "Tail Slap 7 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 7)
         end,
       },
@@ -9951,10 +9951,10 @@ ModifyAbility({
         "Tail Slap 7 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 7)
         end,
       },
@@ -9966,10 +9966,10 @@ ModifyAbility({
         "Tail Slap 7 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 7)
         end,
       },
@@ -9981,10 +9981,10 @@ ModifyAbility({
         "Tail Slap 7 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSlapAttacks"] == 7)
         end,
       },
@@ -10002,10 +10002,10 @@ ModifyAbility({
         "Claw 1 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 1)
         end,
       },
@@ -10017,10 +10017,10 @@ ModifyAbility({
         "Claw 1 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 1)
         end,
       },
@@ -10032,10 +10032,10 @@ ModifyAbility({
         "Claw 1 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 1)
         end,
       },
@@ -10047,10 +10047,10 @@ ModifyAbility({
         "Claw 1 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 1)
         end,
       },
@@ -10062,10 +10062,10 @@ ModifyAbility({
         "Claw 1 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 1)
         end,
       },
@@ -10077,10 +10077,10 @@ ModifyAbility({
         "Claw 1 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 1)
         end,
       },
@@ -10092,10 +10092,10 @@ ModifyAbility({
         "Claw 1 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 1)
         end,
       },
@@ -10107,10 +10107,10 @@ ModifyAbility({
         "Claw 1 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 1)
         end,
       },
@@ -10122,10 +10122,10 @@ ModifyAbility({
         "Claw 2 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -10137,10 +10137,10 @@ ModifyAbility({
         "Claw 2 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -10152,10 +10152,10 @@ ModifyAbility({
         "Claw 2 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -10167,10 +10167,10 @@ ModifyAbility({
         "Claw 2 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -10182,10 +10182,10 @@ ModifyAbility({
         "Claw 2 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -10197,10 +10197,10 @@ ModifyAbility({
         "Claw 2 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -10212,10 +10212,10 @@ ModifyAbility({
         "Claw 2 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -10227,10 +10227,10 @@ ModifyAbility({
         "Claw 2 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -10242,10 +10242,10 @@ ModifyAbility({
         "Claw 3 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 3)
         end,
       },
@@ -10257,10 +10257,10 @@ ModifyAbility({
         "Claw 3 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 3)
         end,
       },
@@ -10272,10 +10272,10 @@ ModifyAbility({
         "Claw 3 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 3)
         end,
       },
@@ -10287,10 +10287,10 @@ ModifyAbility({
         "Claw 3 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 3)
         end,
       },
@@ -10302,10 +10302,10 @@ ModifyAbility({
         "Claw 3 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 3)
         end,
       },
@@ -10317,10 +10317,10 @@ ModifyAbility({
         "Claw 3 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 3)
         end,
       },
@@ -10332,10 +10332,10 @@ ModifyAbility({
         "Claw 3 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 3)
         end,
       },
@@ -10347,10 +10347,10 @@ ModifyAbility({
         "Claw 3 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 3)
         end,
       },
@@ -10362,10 +10362,10 @@ ModifyAbility({
         "Claw 4 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 4)
         end,
       },
@@ -10377,10 +10377,10 @@ ModifyAbility({
         "Claw 4 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 4)
         end,
       },
@@ -10392,10 +10392,10 @@ ModifyAbility({
         "Claw 4 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 4)
         end,
       },
@@ -10407,10 +10407,10 @@ ModifyAbility({
         "Claw 4 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 4)
         end,
       },
@@ -10422,10 +10422,10 @@ ModifyAbility({
         "Claw 4 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 4)
         end,
       },
@@ -10437,10 +10437,10 @@ ModifyAbility({
         "Claw 4 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 4)
         end,
       },
@@ -10452,10 +10452,10 @@ ModifyAbility({
         "Claw 4 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 4)
         end,
       },
@@ -10467,10 +10467,10 @@ ModifyAbility({
         "Claw 4 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 4)
         end,
       },
@@ -10482,10 +10482,10 @@ ModifyAbility({
         "Claw 5 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 5)
         end,
       },
@@ -10497,10 +10497,10 @@ ModifyAbility({
         "Claw 5 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 5)
         end,
       },
@@ -10512,10 +10512,10 @@ ModifyAbility({
         "Claw 5 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 5)
         end,
       },
@@ -10527,10 +10527,10 @@ ModifyAbility({
         "Claw 5 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 5)
         end,
       },
@@ -10542,10 +10542,10 @@ ModifyAbility({
         "Claw 5 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 5)
         end,
       },
@@ -10557,10 +10557,10 @@ ModifyAbility({
         "Claw 5 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 5)
         end,
       },
@@ -10572,10 +10572,10 @@ ModifyAbility({
         "Claw 5 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 5)
         end,
       },
@@ -10587,10 +10587,10 @@ ModifyAbility({
         "Claw 5 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 5)
         end,
       },
@@ -10602,10 +10602,10 @@ ModifyAbility({
         "Claw 6 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 6)
         end,
       },
@@ -10617,10 +10617,10 @@ ModifyAbility({
         "Claw 6 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 6)
         end,
       },
@@ -10632,10 +10632,10 @@ ModifyAbility({
         "Claw 6 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 6)
         end,
       },
@@ -10647,10 +10647,10 @@ ModifyAbility({
         "Claw 6 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 6)
         end,
       },
@@ -10662,10 +10662,10 @@ ModifyAbility({
         "Claw 6 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 6)
         end,
       },
@@ -10677,10 +10677,10 @@ ModifyAbility({
         "Claw 6 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 6)
         end,
       },
@@ -10692,10 +10692,10 @@ ModifyAbility({
         "Claw 6 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 6)
         end,
       },
@@ -10707,10 +10707,10 @@ ModifyAbility({
         "Claw 6 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 6)
         end,
       },
@@ -10722,10 +10722,10 @@ ModifyAbility({
         "Claw 7 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 7)
         end,
       },
@@ -10737,10 +10737,10 @@ ModifyAbility({
         "Claw 7 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 7)
         end,
       },
@@ -10752,10 +10752,10 @@ ModifyAbility({
         "Claw 7 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 7)
         end,
       },
@@ -10767,10 +10767,10 @@ ModifyAbility({
         "Claw 7 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 7)
         end,
       },
@@ -10782,10 +10782,10 @@ ModifyAbility({
         "Claw 7 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 7)
         end,
       },
@@ -10797,10 +10797,10 @@ ModifyAbility({
         "Claw 7 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 7)
         end,
       },
@@ -10812,10 +10812,10 @@ ModifyAbility({
         "Claw 7 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 7)
         end,
       },
@@ -10827,10 +10827,10 @@ ModifyAbility({
         "Claw 7 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 7)
         end,
       },
@@ -10848,10 +10848,10 @@ ModifyAbility({
         "Slam 1 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 1)
         end,
       },
@@ -10863,10 +10863,10 @@ ModifyAbility({
         "Slam 1 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 1)
         end,
       },
@@ -10878,10 +10878,10 @@ ModifyAbility({
         "Slam 1 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 1)
         end,
       },
@@ -10893,10 +10893,10 @@ ModifyAbility({
         "Slam 1 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 1)
         end,
       },
@@ -10908,10 +10908,10 @@ ModifyAbility({
         "Slam 1 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 1)
         end,
       },
@@ -10923,10 +10923,10 @@ ModifyAbility({
         "Slam 1 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 1)
         end,
       },
@@ -10938,10 +10938,10 @@ ModifyAbility({
         "Slam 1 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 1)
         end,
       },
@@ -10953,10 +10953,10 @@ ModifyAbility({
         "Slam 1 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 1)
         end,
       },
@@ -10968,10 +10968,10 @@ ModifyAbility({
         "Slam 2 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 2)
         end,
       },
@@ -10983,10 +10983,10 @@ ModifyAbility({
         "Slam 2 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 2)
         end,
       },
@@ -10998,10 +10998,10 @@ ModifyAbility({
         "Slam 2 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 2)
         end,
       },
@@ -11013,10 +11013,10 @@ ModifyAbility({
         "Slam 2 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 2)
         end,
       },
@@ -11028,10 +11028,10 @@ ModifyAbility({
         "Slam 2 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 2)
         end,
       },
@@ -11043,10 +11043,10 @@ ModifyAbility({
         "Slam 2 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 2)
         end,
       },
@@ -11058,10 +11058,10 @@ ModifyAbility({
         "Slam 2 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 2)
         end,
       },
@@ -11073,10 +11073,10 @@ ModifyAbility({
         "Slam 2 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 2)
         end,
       },
@@ -11088,10 +11088,10 @@ ModifyAbility({
         "Slam 3 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 3)
         end,
       },
@@ -11103,10 +11103,10 @@ ModifyAbility({
         "Slam 3 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 3)
         end,
       },
@@ -11118,10 +11118,10 @@ ModifyAbility({
         "Slam 3 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 3)
         end,
       },
@@ -11133,10 +11133,10 @@ ModifyAbility({
         "Slam 3 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 3)
         end,
       },
@@ -11148,10 +11148,10 @@ ModifyAbility({
         "Slam 3 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 3)
         end,
       },
@@ -11163,10 +11163,10 @@ ModifyAbility({
         "Slam 3 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 3)
         end,
       },
@@ -11178,10 +11178,10 @@ ModifyAbility({
         "Slam 3 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 3)
         end,
       },
@@ -11193,10 +11193,10 @@ ModifyAbility({
         "Slam 3 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 3)
         end,
       },
@@ -11208,10 +11208,10 @@ ModifyAbility({
         "Slam 4 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 4)
         end,
       },
@@ -11223,10 +11223,10 @@ ModifyAbility({
         "Slam 4 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 4)
         end,
       },
@@ -11238,10 +11238,10 @@ ModifyAbility({
         "Slam 4 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 4)
         end,
       },
@@ -11253,10 +11253,10 @@ ModifyAbility({
         "Slam 4 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 4)
         end,
       },
@@ -11268,10 +11268,10 @@ ModifyAbility({
         "Slam 4 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 4)
         end,
       },
@@ -11283,10 +11283,10 @@ ModifyAbility({
         "Slam 4 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 4)
         end,
       },
@@ -11298,10 +11298,10 @@ ModifyAbility({
         "Slam 4 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 4)
         end,
       },
@@ -11313,10 +11313,10 @@ ModifyAbility({
         "Slam 4 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 4)
         end,
       },
@@ -11328,10 +11328,10 @@ ModifyAbility({
         "Slam 5 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 5)
         end,
       },
@@ -11343,10 +11343,10 @@ ModifyAbility({
         "Slam 5 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 5)
         end,
       },
@@ -11358,10 +11358,10 @@ ModifyAbility({
         "Slam 5 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 5)
         end,
       },
@@ -11373,10 +11373,10 @@ ModifyAbility({
         "Slam 5 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 5)
         end,
       },
@@ -11388,10 +11388,10 @@ ModifyAbility({
         "Slam 5 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 5)
         end,
       },
@@ -11403,10 +11403,10 @@ ModifyAbility({
         "Slam 5 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 5)
         end,
       },
@@ -11418,10 +11418,10 @@ ModifyAbility({
         "Slam 5 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 5)
         end,
       },
@@ -11433,10 +11433,10 @@ ModifyAbility({
         "Slam 5 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 5)
         end,
       },
@@ -11448,10 +11448,10 @@ ModifyAbility({
         "Slam 6 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 6)
         end,
       },
@@ -11463,10 +11463,10 @@ ModifyAbility({
         "Slam 6 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 6)
         end,
       },
@@ -11478,10 +11478,10 @@ ModifyAbility({
         "Slam 6 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 6)
         end,
       },
@@ -11493,10 +11493,10 @@ ModifyAbility({
         "Slam 6 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 6)
         end,
       },
@@ -11508,10 +11508,10 @@ ModifyAbility({
         "Slam 6 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 6)
         end,
       },
@@ -11523,10 +11523,10 @@ ModifyAbility({
         "Slam 6 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 6)
         end,
       },
@@ -11538,10 +11538,10 @@ ModifyAbility({
         "Slam 6 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 6)
         end,
       },
@@ -11553,10 +11553,10 @@ ModifyAbility({
         "Slam 6 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 6)
         end,
       },
@@ -11568,10 +11568,10 @@ ModifyAbility({
         "Slam 7 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 7)
         end,
       },
@@ -11583,10 +11583,10 @@ ModifyAbility({
         "Slam 7 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 7)
         end,
       },
@@ -11598,10 +11598,10 @@ ModifyAbility({
         "Slam 7 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 7)
         end,
       },
@@ -11613,10 +11613,10 @@ ModifyAbility({
         "Slam 7 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 7)
         end,
       },
@@ -11628,10 +11628,10 @@ ModifyAbility({
         "Slam 7 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 7)
         end,
       },
@@ -11643,10 +11643,10 @@ ModifyAbility({
         "Slam 7 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 7)
         end,
       },
@@ -11658,10 +11658,10 @@ ModifyAbility({
         "Slam 7 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 7)
         end,
       },
@@ -11673,10 +11673,10 @@ ModifyAbility({
         "Slam 7 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SlamAttacks"] == 7)
         end,
       },
@@ -11694,10 +11694,10 @@ ModifyAbility({
         "Sting 1 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 1)
         end,
       },
@@ -11709,10 +11709,10 @@ ModifyAbility({
         "Sting 1 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 1)
         end,
       },
@@ -11724,10 +11724,10 @@ ModifyAbility({
         "Sting 1 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 1)
         end,
       },
@@ -11739,10 +11739,10 @@ ModifyAbility({
         "Sting 1 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 1)
         end,
       },
@@ -11754,10 +11754,10 @@ ModifyAbility({
         "Sting 1 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 1)
         end,
       },
@@ -11769,10 +11769,10 @@ ModifyAbility({
         "Sting 1 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 1)
         end,
       },
@@ -11784,10 +11784,10 @@ ModifyAbility({
         "Sting 1 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 1)
         end,
       },
@@ -11799,10 +11799,10 @@ ModifyAbility({
         "Sting 1 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 1)
         end,
       },
@@ -11814,10 +11814,10 @@ ModifyAbility({
         "Sting 2 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 2)
         end,
       },
@@ -11829,10 +11829,10 @@ ModifyAbility({
         "Sting 2 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 2)
         end,
       },
@@ -11844,10 +11844,10 @@ ModifyAbility({
         "Sting 2 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 2)
         end,
       },
@@ -11859,10 +11859,10 @@ ModifyAbility({
         "Sting 2 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 2)
         end,
       },
@@ -11874,10 +11874,10 @@ ModifyAbility({
         "Sting 2 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 2)
         end,
       },
@@ -11889,10 +11889,10 @@ ModifyAbility({
         "Sting 2 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 2)
         end,
       },
@@ -11904,10 +11904,10 @@ ModifyAbility({
         "Sting 2 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 2)
         end,
       },
@@ -11919,10 +11919,10 @@ ModifyAbility({
         "Sting 2 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 2)
         end,
       },
@@ -11934,10 +11934,10 @@ ModifyAbility({
         "Sting 3 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 3)
         end,
       },
@@ -11949,10 +11949,10 @@ ModifyAbility({
         "Sting 3 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 3)
         end,
       },
@@ -11964,10 +11964,10 @@ ModifyAbility({
         "Sting 3 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 3)
         end,
       },
@@ -11979,10 +11979,10 @@ ModifyAbility({
         "Sting 3 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 3)
         end,
       },
@@ -11994,10 +11994,10 @@ ModifyAbility({
         "Sting 3 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 3)
         end,
       },
@@ -12009,10 +12009,10 @@ ModifyAbility({
         "Sting 3 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 3)
         end,
       },
@@ -12024,10 +12024,10 @@ ModifyAbility({
         "Sting 3 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 3)
         end,
       },
@@ -12039,10 +12039,10 @@ ModifyAbility({
         "Sting 3 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 3)
         end,
       },
@@ -12054,10 +12054,10 @@ ModifyAbility({
         "Sting 4 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 4)
         end,
       },
@@ -12069,10 +12069,10 @@ ModifyAbility({
         "Sting 4 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 4)
         end,
       },
@@ -12084,10 +12084,10 @@ ModifyAbility({
         "Sting 4 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 4)
         end,
       },
@@ -12099,10 +12099,10 @@ ModifyAbility({
         "Sting 4 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 4)
         end,
       },
@@ -12114,10 +12114,10 @@ ModifyAbility({
         "Sting 4 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 4)
         end,
       },
@@ -12129,10 +12129,10 @@ ModifyAbility({
         "Sting 4 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 4)
         end,
       },
@@ -12144,10 +12144,10 @@ ModifyAbility({
         "Sting 4 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 4)
         end,
       },
@@ -12159,10 +12159,10 @@ ModifyAbility({
         "Sting 4 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 4)
         end,
       },
@@ -12174,10 +12174,10 @@ ModifyAbility({
         "Sting 5 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 5)
         end,
       },
@@ -12189,10 +12189,10 @@ ModifyAbility({
         "Sting 5 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 5)
         end,
       },
@@ -12204,10 +12204,10 @@ ModifyAbility({
         "Sting 5 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 5)
         end,
       },
@@ -12219,10 +12219,10 @@ ModifyAbility({
         "Sting 5 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 5)
         end,
       },
@@ -12234,10 +12234,10 @@ ModifyAbility({
         "Sting 5 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 5)
         end,
       },
@@ -12249,10 +12249,10 @@ ModifyAbility({
         "Sting 5 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 5)
         end,
       },
@@ -12264,10 +12264,10 @@ ModifyAbility({
         "Sting 5 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 5)
         end,
       },
@@ -12279,10 +12279,10 @@ ModifyAbility({
         "Sting 5 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 5)
         end,
       },
@@ -12294,10 +12294,10 @@ ModifyAbility({
         "Sting 6 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 6)
         end,
       },
@@ -12309,10 +12309,10 @@ ModifyAbility({
         "Sting 6 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 6)
         end,
       },
@@ -12324,10 +12324,10 @@ ModifyAbility({
         "Sting 6 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 6)
         end,
       },
@@ -12339,10 +12339,10 @@ ModifyAbility({
         "Sting 6 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 6)
         end,
       },
@@ -12354,10 +12354,10 @@ ModifyAbility({
         "Sting 6 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 6)
         end,
       },
@@ -12369,10 +12369,10 @@ ModifyAbility({
         "Sting 6 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 6)
         end,
       },
@@ -12384,10 +12384,10 @@ ModifyAbility({
         "Sting 6 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 6)
         end,
       },
@@ -12399,10 +12399,10 @@ ModifyAbility({
         "Sting 6 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 6)
         end,
       },
@@ -12414,10 +12414,10 @@ ModifyAbility({
         "Sting 7 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 7)
         end,
       },
@@ -12429,10 +12429,10 @@ ModifyAbility({
         "Sting 7 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 7)
         end,
       },
@@ -12444,10 +12444,10 @@ ModifyAbility({
         "Sting 7 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 7)
         end,
       },
@@ -12459,10 +12459,10 @@ ModifyAbility({
         "Sting 7 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 7)
         end,
       },
@@ -12474,10 +12474,10 @@ ModifyAbility({
         "Sting 7 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 7)
         end,
       },
@@ -12489,10 +12489,10 @@ ModifyAbility({
         "Sting 7 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 7)
         end,
       },
@@ -12504,10 +12504,10 @@ ModifyAbility({
         "Sting 7 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 7)
         end,
       },
@@ -12519,10 +12519,10 @@ ModifyAbility({
         "Sting 7 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StingAttacks"] == 7)
         end,
       },
@@ -12540,10 +12540,10 @@ ModifyAbility({
         "Talons 1 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 1)
         end,
       },
@@ -12555,10 +12555,10 @@ ModifyAbility({
         "Talons 1 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 1)
         end,
       },
@@ -12570,10 +12570,10 @@ ModifyAbility({
         "Talons 1 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 1)
         end,
       },
@@ -12585,10 +12585,10 @@ ModifyAbility({
         "Talons 1 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 1)
         end,
       },
@@ -12600,10 +12600,10 @@ ModifyAbility({
         "Talons 1 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 1)
         end,
       },
@@ -12615,10 +12615,10 @@ ModifyAbility({
         "Talons 1 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 1)
         end,
       },
@@ -12630,10 +12630,10 @@ ModifyAbility({
         "Talons 1 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 1)
         end,
       },
@@ -12645,10 +12645,10 @@ ModifyAbility({
         "Talons 1 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 1)
         end,
       },
@@ -12660,10 +12660,10 @@ ModifyAbility({
         "Talons 2 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 2)
         end,
       },
@@ -12675,10 +12675,10 @@ ModifyAbility({
         "Talons 2 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 2)
         end,
       },
@@ -12690,10 +12690,10 @@ ModifyAbility({
         "Talons 2 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 2)
         end,
       },
@@ -12705,10 +12705,10 @@ ModifyAbility({
         "Talons 2 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 2)
         end,
       },
@@ -12720,10 +12720,10 @@ ModifyAbility({
         "Talons 2 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 2)
         end,
       },
@@ -12735,10 +12735,10 @@ ModifyAbility({
         "Talons 2 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 2)
         end,
       },
@@ -12750,10 +12750,10 @@ ModifyAbility({
         "Talons 2 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 2)
         end,
       },
@@ -12765,10 +12765,10 @@ ModifyAbility({
         "Talons 2 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 2)
         end,
       },
@@ -12780,10 +12780,10 @@ ModifyAbility({
         "Talons 3 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 3)
         end,
       },
@@ -12795,10 +12795,10 @@ ModifyAbility({
         "Talons 3 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 3)
         end,
       },
@@ -12810,10 +12810,10 @@ ModifyAbility({
         "Talons 3 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 3)
         end,
       },
@@ -12825,10 +12825,10 @@ ModifyAbility({
         "Talons 3 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 3)
         end,
       },
@@ -12840,10 +12840,10 @@ ModifyAbility({
         "Talons 3 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 3)
         end,
       },
@@ -12855,10 +12855,10 @@ ModifyAbility({
         "Talons 3 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 3)
         end,
       },
@@ -12870,10 +12870,10 @@ ModifyAbility({
         "Talons 3 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 3)
         end,
       },
@@ -12885,10 +12885,10 @@ ModifyAbility({
         "Talons 3 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 3)
         end,
       },
@@ -12900,10 +12900,10 @@ ModifyAbility({
         "Talons 4 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 4)
         end,
       },
@@ -12915,10 +12915,10 @@ ModifyAbility({
         "Talons 4 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 4)
         end,
       },
@@ -12930,10 +12930,10 @@ ModifyAbility({
         "Talons 4 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 4)
         end,
       },
@@ -12945,10 +12945,10 @@ ModifyAbility({
         "Talons 4 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 4)
         end,
       },
@@ -12960,10 +12960,10 @@ ModifyAbility({
         "Talons 4 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 4)
         end,
       },
@@ -12975,10 +12975,10 @@ ModifyAbility({
         "Talons 4 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 4)
         end,
       },
@@ -12990,10 +12990,10 @@ ModifyAbility({
         "Talons 4 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 4)
         end,
       },
@@ -13005,10 +13005,10 @@ ModifyAbility({
         "Talons 4 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 4)
         end,
       },
@@ -13020,10 +13020,10 @@ ModifyAbility({
         "Talons 5 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 5)
         end,
       },
@@ -13035,10 +13035,10 @@ ModifyAbility({
         "Talons 5 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 5)
         end,
       },
@@ -13050,10 +13050,10 @@ ModifyAbility({
         "Talons 5 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 5)
         end,
       },
@@ -13065,10 +13065,10 @@ ModifyAbility({
         "Talons 5 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 5)
         end,
       },
@@ -13080,10 +13080,10 @@ ModifyAbility({
         "Talons 5 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 5)
         end,
       },
@@ -13095,10 +13095,10 @@ ModifyAbility({
         "Talons 5 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 5)
         end,
       },
@@ -13110,10 +13110,10 @@ ModifyAbility({
         "Talons 5 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 5)
         end,
       },
@@ -13125,10 +13125,10 @@ ModifyAbility({
         "Talons 5 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 5)
         end,
       },
@@ -13140,10 +13140,10 @@ ModifyAbility({
         "Talons 6 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 6)
         end,
       },
@@ -13155,10 +13155,10 @@ ModifyAbility({
         "Talons 6 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 6)
         end,
       },
@@ -13170,10 +13170,10 @@ ModifyAbility({
         "Talons 6 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 6)
         end,
       },
@@ -13185,10 +13185,10 @@ ModifyAbility({
         "Talons 6 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 6)
         end,
       },
@@ -13200,10 +13200,10 @@ ModifyAbility({
         "Talons 6 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 6)
         end,
       },
@@ -13215,10 +13215,10 @@ ModifyAbility({
         "Talons 6 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 6)
         end,
       },
@@ -13230,10 +13230,10 @@ ModifyAbility({
         "Talons 6 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 6)
         end,
       },
@@ -13245,10 +13245,10 @@ ModifyAbility({
         "Talons 6 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 6)
         end,
       },
@@ -13260,10 +13260,10 @@ ModifyAbility({
         "Talons 7 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 7)
         end,
       },
@@ -13275,10 +13275,10 @@ ModifyAbility({
         "Talons 7 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 7)
         end,
       },
@@ -13290,10 +13290,10 @@ ModifyAbility({
         "Talons 7 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 7)
         end,
       },
@@ -13305,10 +13305,10 @@ ModifyAbility({
         "Talons 7 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 7)
         end,
       },
@@ -13320,10 +13320,10 @@ ModifyAbility({
         "Talons 7 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 7)
         end,
       },
@@ -13335,10 +13335,10 @@ ModifyAbility({
         "Talons 7 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 7)
         end,
       },
@@ -13350,10 +13350,10 @@ ModifyAbility({
         "Talons 7 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 7)
         end,
       },
@@ -13365,10 +13365,10 @@ ModifyAbility({
         "Talons 7 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TalonsAttacks"] == 7)
         end,
       },
@@ -13386,10 +13386,10 @@ ModifyAbility({
         "Hoof 1 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 1)
         end,
       },
@@ -13401,10 +13401,10 @@ ModifyAbility({
         "Hoof 1 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 1)
         end,
       },
@@ -13416,10 +13416,10 @@ ModifyAbility({
         "Hoof 1 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 1)
         end,
       },
@@ -13431,10 +13431,10 @@ ModifyAbility({
         "Hoof 1 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 1)
         end,
       },
@@ -13446,10 +13446,10 @@ ModifyAbility({
         "Hoof 1 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 1)
         end,
       },
@@ -13461,10 +13461,10 @@ ModifyAbility({
         "Hoof 1 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 1)
         end,
       },
@@ -13476,10 +13476,10 @@ ModifyAbility({
         "Hoof 1 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 1)
         end,
       },
@@ -13491,10 +13491,10 @@ ModifyAbility({
         "Hoof 1 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 1)
         end,
       },
@@ -13506,10 +13506,10 @@ ModifyAbility({
         "Hoof 2 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 2)
         end,
       },
@@ -13521,10 +13521,10 @@ ModifyAbility({
         "Hoof 2 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 2)
         end,
       },
@@ -13536,10 +13536,10 @@ ModifyAbility({
         "Hoof 2 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 2)
         end,
       },
@@ -13551,10 +13551,10 @@ ModifyAbility({
         "Hoof 2 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 2)
         end,
       },
@@ -13566,10 +13566,10 @@ ModifyAbility({
         "Hoof 2 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 2)
         end,
       },
@@ -13581,10 +13581,10 @@ ModifyAbility({
         "Hoof 2 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 2)
         end,
       },
@@ -13596,10 +13596,10 @@ ModifyAbility({
         "Hoof 2 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 2)
         end,
       },
@@ -13611,10 +13611,10 @@ ModifyAbility({
         "Hoof 2 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 2)
         end,
       },
@@ -13626,10 +13626,10 @@ ModifyAbility({
         "Hoof 3 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 3)
         end,
       },
@@ -13641,10 +13641,10 @@ ModifyAbility({
         "Hoof 3 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 3)
         end,
       },
@@ -13656,10 +13656,10 @@ ModifyAbility({
         "Hoof 3 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 3)
         end,
       },
@@ -13671,10 +13671,10 @@ ModifyAbility({
         "Hoof 3 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 3)
         end,
       },
@@ -13686,10 +13686,10 @@ ModifyAbility({
         "Hoof 3 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 3)
         end,
       },
@@ -13701,10 +13701,10 @@ ModifyAbility({
         "Hoof 3 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 3)
         end,
       },
@@ -13716,10 +13716,10 @@ ModifyAbility({
         "Hoof 3 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 3)
         end,
       },
@@ -13731,10 +13731,10 @@ ModifyAbility({
         "Hoof 3 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 3)
         end,
       },
@@ -13746,10 +13746,10 @@ ModifyAbility({
         "Hoof 4 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 4)
         end,
       },
@@ -13761,10 +13761,10 @@ ModifyAbility({
         "Hoof 4 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 4)
         end,
       },
@@ -13776,10 +13776,10 @@ ModifyAbility({
         "Hoof 4 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 4)
         end,
       },
@@ -13791,10 +13791,10 @@ ModifyAbility({
         "Hoof 4 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 4)
         end,
       },
@@ -13806,10 +13806,10 @@ ModifyAbility({
         "Hoof 4 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 4)
         end,
       },
@@ -13821,10 +13821,10 @@ ModifyAbility({
         "Hoof 4 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 4)
         end,
       },
@@ -13836,10 +13836,10 @@ ModifyAbility({
         "Hoof 4 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 4)
         end,
       },
@@ -13851,10 +13851,10 @@ ModifyAbility({
         "Hoof 4 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 4)
         end,
       },
@@ -13866,10 +13866,10 @@ ModifyAbility({
         "Hoof 5 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 5)
         end,
       },
@@ -13881,10 +13881,10 @@ ModifyAbility({
         "Hoof 5 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 5)
         end,
       },
@@ -13896,10 +13896,10 @@ ModifyAbility({
         "Hoof 5 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 5)
         end,
       },
@@ -13911,10 +13911,10 @@ ModifyAbility({
         "Hoof 5 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 5)
         end,
       },
@@ -13926,10 +13926,10 @@ ModifyAbility({
         "Hoof 5 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 5)
         end,
       },
@@ -13941,10 +13941,10 @@ ModifyAbility({
         "Hoof 5 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 5)
         end,
       },
@@ -13956,10 +13956,10 @@ ModifyAbility({
         "Hoof 5 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 5)
         end,
       },
@@ -13971,10 +13971,10 @@ ModifyAbility({
         "Hoof 5 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 5)
         end,
       },
@@ -13986,10 +13986,10 @@ ModifyAbility({
         "Hoof 6 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 6)
         end,
       },
@@ -14001,10 +14001,10 @@ ModifyAbility({
         "Hoof 6 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 6)
         end,
       },
@@ -14016,10 +14016,10 @@ ModifyAbility({
         "Hoof 6 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 6)
         end,
       },
@@ -14031,10 +14031,10 @@ ModifyAbility({
         "Hoof 6 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 6)
         end,
       },
@@ -14046,10 +14046,10 @@ ModifyAbility({
         "Hoof 6 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 6)
         end,
       },
@@ -14061,10 +14061,10 @@ ModifyAbility({
         "Hoof 6 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 6)
         end,
       },
@@ -14076,10 +14076,10 @@ ModifyAbility({
         "Hoof 6 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 6)
         end,
       },
@@ -14091,10 +14091,10 @@ ModifyAbility({
         "Hoof 6 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 6)
         end,
       },
@@ -14106,10 +14106,10 @@ ModifyAbility({
         "Hoof 7 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 7)
         end,
       },
@@ -14121,10 +14121,10 @@ ModifyAbility({
         "Hoof 7 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 7)
         end,
       },
@@ -14136,10 +14136,10 @@ ModifyAbility({
         "Hoof 7 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 7)
         end,
       },
@@ -14151,10 +14151,10 @@ ModifyAbility({
         "Hoof 7 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 7)
         end,
       },
@@ -14166,10 +14166,10 @@ ModifyAbility({
         "Hoof 7 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 7)
         end,
       },
@@ -14181,10 +14181,10 @@ ModifyAbility({
         "Hoof 7 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 7)
         end,
       },
@@ -14196,10 +14196,10 @@ ModifyAbility({
         "Hoof 7 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 7)
         end,
       },
@@ -14211,10 +14211,10 @@ ModifyAbility({
         "Hoof 7 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HoofAttacks"] == 7)
         end,
       },
@@ -14232,10 +14232,10 @@ ModifyAbility({
         "Tentacle 1 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 1)
         end,
       },
@@ -14247,10 +14247,10 @@ ModifyAbility({
         "Tentacle 1 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 1)
         end,
       },
@@ -14262,10 +14262,10 @@ ModifyAbility({
         "Tentacle 1 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 1)
         end,
       },
@@ -14277,10 +14277,10 @@ ModifyAbility({
         "Tentacle 1 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 1)
         end,
       },
@@ -14292,10 +14292,10 @@ ModifyAbility({
         "Tentacle 1 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 1)
         end,
       },
@@ -14307,10 +14307,10 @@ ModifyAbility({
         "Tentacle 1 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 1)
         end,
       },
@@ -14322,10 +14322,10 @@ ModifyAbility({
         "Tentacle 1 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 1)
         end,
       },
@@ -14337,10 +14337,10 @@ ModifyAbility({
         "Tentacle 1 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 1)
         end,
       },
@@ -14352,10 +14352,10 @@ ModifyAbility({
         "Tentacle 2 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 2)
         end,
       },
@@ -14367,10 +14367,10 @@ ModifyAbility({
         "Tentacle 2 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 2)
         end,
       },
@@ -14382,10 +14382,10 @@ ModifyAbility({
         "Tentacle 2 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 2)
         end,
       },
@@ -14397,10 +14397,10 @@ ModifyAbility({
         "Tentacle 2 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 2)
         end,
       },
@@ -14412,10 +14412,10 @@ ModifyAbility({
         "Tentacle 2 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 2)
         end,
       },
@@ -14427,10 +14427,10 @@ ModifyAbility({
         "Tentacle 2 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 2)
         end,
       },
@@ -14442,10 +14442,10 @@ ModifyAbility({
         "Tentacle 2 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 2)
         end,
       },
@@ -14457,10 +14457,10 @@ ModifyAbility({
         "Tentacle 2 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 2)
         end,
       },
@@ -14472,10 +14472,10 @@ ModifyAbility({
         "Tentacle 3 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 3)
         end,
       },
@@ -14487,10 +14487,10 @@ ModifyAbility({
         "Tentacle 3 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 3)
         end,
       },
@@ -14502,10 +14502,10 @@ ModifyAbility({
         "Tentacle 3 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 3)
         end,
       },
@@ -14517,10 +14517,10 @@ ModifyAbility({
         "Tentacle 3 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 3)
         end,
       },
@@ -14532,10 +14532,10 @@ ModifyAbility({
         "Tentacle 3 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 3)
         end,
       },
@@ -14547,10 +14547,10 @@ ModifyAbility({
         "Tentacle 3 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 3)
         end,
       },
@@ -14562,10 +14562,10 @@ ModifyAbility({
         "Tentacle 3 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 3)
         end,
       },
@@ -14577,10 +14577,10 @@ ModifyAbility({
         "Tentacle 3 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 3)
         end,
       },
@@ -14592,10 +14592,10 @@ ModifyAbility({
         "Tentacle 4 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 4)
         end,
       },
@@ -14607,10 +14607,10 @@ ModifyAbility({
         "Tentacle 4 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 4)
         end,
       },
@@ -14622,10 +14622,10 @@ ModifyAbility({
         "Tentacle 4 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 4)
         end,
       },
@@ -14637,10 +14637,10 @@ ModifyAbility({
         "Tentacle 4 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 4)
         end,
       },
@@ -14652,10 +14652,10 @@ ModifyAbility({
         "Tentacle 4 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 4)
         end,
       },
@@ -14667,10 +14667,10 @@ ModifyAbility({
         "Tentacle 4 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 4)
         end,
       },
@@ -14682,10 +14682,10 @@ ModifyAbility({
         "Tentacle 4 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 4)
         end,
       },
@@ -14697,10 +14697,10 @@ ModifyAbility({
         "Tentacle 4 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 4)
         end,
       },
@@ -14712,10 +14712,10 @@ ModifyAbility({
         "Tentacle 5 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 5)
         end,
       },
@@ -14727,10 +14727,10 @@ ModifyAbility({
         "Tentacle 5 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 5)
         end,
       },
@@ -14742,10 +14742,10 @@ ModifyAbility({
         "Tentacle 5 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 5)
         end,
       },
@@ -14757,10 +14757,10 @@ ModifyAbility({
         "Tentacle 5 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 5)
         end,
       },
@@ -14772,10 +14772,10 @@ ModifyAbility({
         "Tentacle 5 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 5)
         end,
       },
@@ -14787,10 +14787,10 @@ ModifyAbility({
         "Tentacle 5 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 5)
         end,
       },
@@ -14802,10 +14802,10 @@ ModifyAbility({
         "Tentacle 5 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 5)
         end,
       },
@@ -14817,10 +14817,10 @@ ModifyAbility({
         "Tentacle 5 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 5)
         end,
       },
@@ -14832,10 +14832,10 @@ ModifyAbility({
         "Tentacle 6 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 6)
         end,
       },
@@ -14847,10 +14847,10 @@ ModifyAbility({
         "Tentacle 6 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 6)
         end,
       },
@@ -14862,10 +14862,10 @@ ModifyAbility({
         "Tentacle 6 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 6)
         end,
       },
@@ -14877,10 +14877,10 @@ ModifyAbility({
         "Tentacle 6 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 6)
         end,
       },
@@ -14892,10 +14892,10 @@ ModifyAbility({
         "Tentacle 6 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 6)
         end,
       },
@@ -14907,10 +14907,10 @@ ModifyAbility({
         "Tentacle 6 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 6)
         end,
       },
@@ -14922,10 +14922,10 @@ ModifyAbility({
         "Tentacle 6 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 6)
         end,
       },
@@ -14937,10 +14937,10 @@ ModifyAbility({
         "Tentacle 6 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 6)
         end,
       },
@@ -14952,10 +14952,10 @@ ModifyAbility({
         "Tentacle 7 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 7)
         end,
       },
@@ -14967,10 +14967,10 @@ ModifyAbility({
         "Tentacle 7 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 7)
         end,
       },
@@ -14982,10 +14982,10 @@ ModifyAbility({
         "Tentacle 7 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 7)
         end,
       },
@@ -14997,10 +14997,10 @@ ModifyAbility({
         "Tentacle 7 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 7)
         end,
       },
@@ -15012,10 +15012,10 @@ ModifyAbility({
         "Tentacle 7 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 7)
         end,
       },
@@ -15027,10 +15027,10 @@ ModifyAbility({
         "Tentacle 7 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 7)
         end,
       },
@@ -15042,10 +15042,10 @@ ModifyAbility({
         "Tentacle 7 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 7)
         end,
       },
@@ -15057,10 +15057,10 @@ ModifyAbility({
         "Tentacle 7 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 7)
         end,
       },
@@ -15072,10 +15072,10 @@ ModifyAbility({
         "Tentacle 8 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 8)
         end,
       },
@@ -15087,10 +15087,10 @@ ModifyAbility({
         "Tentacle 8 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 8)
         end,
       },
@@ -15102,10 +15102,10 @@ ModifyAbility({
         "Tentacle 8 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 8)
         end,
       },
@@ -15117,10 +15117,10 @@ ModifyAbility({
         "Tentacle 8 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 8)
         end,
       },
@@ -15132,10 +15132,10 @@ ModifyAbility({
         "Tentacle 8 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 8)
         end,
       },
@@ -15147,10 +15147,10 @@ ModifyAbility({
         "Tentacle 8 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 8)
         end,
       },
@@ -15162,10 +15162,10 @@ ModifyAbility({
         "Tentacle 8 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 8)
         end,
       },
@@ -15177,10 +15177,10 @@ ModifyAbility({
         "Tentacle 8 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TentacleAttacks"] == 8)
         end,
       },
@@ -15198,10 +15198,10 @@ ModifyAbility({
         "Wing 1 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 1)
         end,
       },
@@ -15213,10 +15213,10 @@ ModifyAbility({
         "Wing 1 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 1)
         end,
       },
@@ -15228,10 +15228,10 @@ ModifyAbility({
         "Wing 1 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 1)
         end,
       },
@@ -15243,10 +15243,10 @@ ModifyAbility({
         "Wing 1 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 1)
         end,
       },
@@ -15258,10 +15258,10 @@ ModifyAbility({
         "Wing 1 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 1)
         end,
       },
@@ -15273,10 +15273,10 @@ ModifyAbility({
         "Wing 1 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 1)
         end,
       },
@@ -15288,10 +15288,10 @@ ModifyAbility({
         "Wing 1 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 1)
         end,
       },
@@ -15303,10 +15303,10 @@ ModifyAbility({
         "Wing 1 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 1)
         end,
       },
@@ -15318,10 +15318,10 @@ ModifyAbility({
         "Wing 2 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 2)
         end,
       },
@@ -15333,10 +15333,10 @@ ModifyAbility({
         "Wing 2 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 2)
         end,
       },
@@ -15348,10 +15348,10 @@ ModifyAbility({
         "Wing 2 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 2)
         end,
       },
@@ -15363,10 +15363,10 @@ ModifyAbility({
         "Wing 2 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 2)
         end,
       },
@@ -15378,10 +15378,10 @@ ModifyAbility({
         "Wing 2 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 2)
         end,
       },
@@ -15393,10 +15393,10 @@ ModifyAbility({
         "Wing 2 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 2)
         end,
       },
@@ -15408,10 +15408,10 @@ ModifyAbility({
         "Wing 2 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 2)
         end,
       },
@@ -15423,10 +15423,10 @@ ModifyAbility({
         "Wing 2 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 2)
         end,
       },
@@ -15438,10 +15438,10 @@ ModifyAbility({
         "Wing 3 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 3)
         end,
       },
@@ -15453,10 +15453,10 @@ ModifyAbility({
         "Wing 3 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 3)
         end,
       },
@@ -15468,10 +15468,10 @@ ModifyAbility({
         "Wing 3 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 3)
         end,
       },
@@ -15483,10 +15483,10 @@ ModifyAbility({
         "Wing 3 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 3)
         end,
       },
@@ -15498,10 +15498,10 @@ ModifyAbility({
         "Wing 3 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 3)
         end,
       },
@@ -15513,10 +15513,10 @@ ModifyAbility({
         "Wing 3 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 3)
         end,
       },
@@ -15528,10 +15528,10 @@ ModifyAbility({
         "Wing 3 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 3)
         end,
       },
@@ -15543,10 +15543,10 @@ ModifyAbility({
         "Wing 3 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 3)
         end,
       },
@@ -15558,10 +15558,10 @@ ModifyAbility({
         "Wing 4 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 4)
         end,
       },
@@ -15573,10 +15573,10 @@ ModifyAbility({
         "Wing 4 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 4)
         end,
       },
@@ -15588,10 +15588,10 @@ ModifyAbility({
         "Wing 4 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 4)
         end,
       },
@@ -15603,10 +15603,10 @@ ModifyAbility({
         "Wing 4 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 4)
         end,
       },
@@ -15618,10 +15618,10 @@ ModifyAbility({
         "Wing 4 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 4)
         end,
       },
@@ -15633,10 +15633,10 @@ ModifyAbility({
         "Wing 4 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 4)
         end,
       },
@@ -15648,10 +15648,10 @@ ModifyAbility({
         "Wing 4 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 4)
         end,
       },
@@ -15663,10 +15663,10 @@ ModifyAbility({
         "Wing 4 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 4)
         end,
       },
@@ -15678,10 +15678,10 @@ ModifyAbility({
         "Wing 5 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 5)
         end,
       },
@@ -15693,10 +15693,10 @@ ModifyAbility({
         "Wing 5 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 5)
         end,
       },
@@ -15708,10 +15708,10 @@ ModifyAbility({
         "Wing 5 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 5)
         end,
       },
@@ -15723,10 +15723,10 @@ ModifyAbility({
         "Wing 5 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 5)
         end,
       },
@@ -15738,10 +15738,10 @@ ModifyAbility({
         "Wing 5 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 5)
         end,
       },
@@ -15753,10 +15753,10 @@ ModifyAbility({
         "Wing 5 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 5)
         end,
       },
@@ -15768,10 +15768,10 @@ ModifyAbility({
         "Wing 5 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 5)
         end,
       },
@@ -15783,10 +15783,10 @@ ModifyAbility({
         "Wing 5 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 5)
         end,
       },
@@ -15798,10 +15798,10 @@ ModifyAbility({
         "Wing 6 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 6)
         end,
       },
@@ -15813,10 +15813,10 @@ ModifyAbility({
         "Wing 6 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 6)
         end,
       },
@@ -15828,10 +15828,10 @@ ModifyAbility({
         "Wing 6 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 6)
         end,
       },
@@ -15843,10 +15843,10 @@ ModifyAbility({
         "Wing 6 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 6)
         end,
       },
@@ -15858,10 +15858,10 @@ ModifyAbility({
         "Wing 6 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 6)
         end,
       },
@@ -15873,10 +15873,10 @@ ModifyAbility({
         "Wing 6 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 6)
         end,
       },
@@ -15888,10 +15888,10 @@ ModifyAbility({
         "Wing 6 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 6)
         end,
       },
@@ -15903,10 +15903,10 @@ ModifyAbility({
         "Wing 6 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 6)
         end,
       },
@@ -15918,10 +15918,10 @@ ModifyAbility({
         "Wing 7 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 7)
         end,
       },
@@ -15933,10 +15933,10 @@ ModifyAbility({
         "Wing 7 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 7)
         end,
       },
@@ -15948,10 +15948,10 @@ ModifyAbility({
         "Wing 7 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 7)
         end,
       },
@@ -15963,10 +15963,10 @@ ModifyAbility({
         "Wing 7 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 7)
         end,
       },
@@ -15978,10 +15978,10 @@ ModifyAbility({
         "Wing 7 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 7)
         end,
       },
@@ -15993,10 +15993,10 @@ ModifyAbility({
         "Wing 7 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 7)
         end,
       },
@@ -16008,10 +16008,10 @@ ModifyAbility({
         "Wing 7 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 7)
         end,
       },
@@ -16023,10 +16023,10 @@ ModifyAbility({
         "Wing 7 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WingAttacks"] == 7)
         end,
       },
@@ -16044,10 +16044,10 @@ ModifyAbility({
         "Rake 2 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RakeSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -16059,10 +16059,10 @@ ModifyAbility({
         "Rake 2 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RakeSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -16074,10 +16074,10 @@ ModifyAbility({
         "Rake 2 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RakeSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -16089,10 +16089,10 @@ ModifyAbility({
         "Rake 2 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RakeSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -16104,10 +16104,10 @@ ModifyAbility({
         "Rake 2 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RakeSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -16119,10 +16119,10 @@ ModifyAbility({
         "Rake 2 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RakeSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -16134,10 +16134,10 @@ ModifyAbility({
         "Rake 2 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RakeSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -16149,10 +16149,10 @@ ModifyAbility({
         "Rake 2 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RakeSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClawAttacks"] == 2)
         end,
       },
@@ -16170,7 +16170,7 @@ ModifyAbility({
         "Tail Sweep (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSweepSize"] == 2)
         end,
       },
@@ -16182,7 +16182,7 @@ ModifyAbility({
         "Tail Sweep (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSweepSize"] == 3)
         end,
       },
@@ -16194,7 +16194,7 @@ ModifyAbility({
         "Tail Sweep (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSweepSize"] == 4)
         end,
       },
@@ -16206,7 +16206,7 @@ ModifyAbility({
         "Tail Sweep (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSweepSize"] == 5)
         end,
       },
@@ -16218,7 +16218,7 @@ ModifyAbility({
         "Tail Sweep (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSweepSize"] == 6)
         end,
       },
@@ -16230,7 +16230,7 @@ ModifyAbility({
         "Tail Sweep (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSweepSize"] == 7)
         end,
       },
@@ -16242,7 +16242,7 @@ ModifyAbility({
         "Tail Sweep (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSweepSize"] == 8)
         end,
       },
@@ -16254,7 +16254,7 @@ ModifyAbility({
         "Tail Sweep (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TailSweepSize"] == 9)
         end,
       },
@@ -16272,7 +16272,7 @@ ModifyAbility({
         "Crush (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CrushSize"] == 2)
         end,
       },
@@ -16284,7 +16284,7 @@ ModifyAbility({
         "Crush (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CrushSize"] == 3)
         end,
       },
@@ -16296,7 +16296,7 @@ ModifyAbility({
         "Crush (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CrushSize"] == 4)
         end,
       },
@@ -16308,7 +16308,7 @@ ModifyAbility({
         "Crush (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CrushSize"] == 5)
         end,
       },
@@ -16320,7 +16320,7 @@ ModifyAbility({
         "Crush (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CrushSize"] == 6)
         end,
       },
@@ -16332,7 +16332,7 @@ ModifyAbility({
         "Crush (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CrushSize"] == 7)
         end,
       },
@@ -16344,7 +16344,7 @@ ModifyAbility({
         "Crush (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CrushSize"] == 8)
         end,
       },
@@ -16356,7 +16356,7 @@ ModifyAbility({
         "Crush (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CrushSize"] == 9)
         end,
       },
@@ -16374,10 +16374,10 @@ ModifyAbility({
         "Hair 1 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 1)
         end,
       },
@@ -16389,10 +16389,10 @@ ModifyAbility({
         "Hair 1 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 1)
         end,
       },
@@ -16404,10 +16404,10 @@ ModifyAbility({
         "Hair 1 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 1)
         end,
       },
@@ -16419,10 +16419,10 @@ ModifyAbility({
         "Hair 1 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 1)
         end,
       },
@@ -16434,10 +16434,10 @@ ModifyAbility({
         "Hair 1 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 1)
         end,
       },
@@ -16449,10 +16449,10 @@ ModifyAbility({
         "Hair 1 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 1)
         end,
       },
@@ -16464,10 +16464,10 @@ ModifyAbility({
         "Hair 1 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 1)
         end,
       },
@@ -16479,10 +16479,10 @@ ModifyAbility({
         "Hair 2 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 2)
         end,
       },
@@ -16494,10 +16494,10 @@ ModifyAbility({
         "Hair 2 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 2)
         end,
       },
@@ -16509,10 +16509,10 @@ ModifyAbility({
         "Hair 2 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 2)
         end,
       },
@@ -16524,10 +16524,10 @@ ModifyAbility({
         "Hair 2 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 2)
         end,
       },
@@ -16539,10 +16539,10 @@ ModifyAbility({
         "Hair 2 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 2)
         end,
       },
@@ -16554,10 +16554,10 @@ ModifyAbility({
         "Hair 2 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 2)
         end,
       },
@@ -16569,10 +16569,10 @@ ModifyAbility({
         "Hair 2 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 2)
         end,
       },
@@ -16584,10 +16584,10 @@ ModifyAbility({
         "Hair 3 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 3)
         end,
       },
@@ -16599,10 +16599,10 @@ ModifyAbility({
         "Hair 3 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 3)
         end,
       },
@@ -16614,10 +16614,10 @@ ModifyAbility({
         "Hair 3 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 3)
         end,
       },
@@ -16629,10 +16629,10 @@ ModifyAbility({
         "Hair 3 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 3)
         end,
       },
@@ -16644,10 +16644,10 @@ ModifyAbility({
         "Hair 3 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 3)
         end,
       },
@@ -16659,10 +16659,10 @@ ModifyAbility({
         "Hair 3 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 3)
         end,
       },
@@ -16674,10 +16674,10 @@ ModifyAbility({
         "Hair 3 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 3)
         end,
       },
@@ -16689,10 +16689,10 @@ ModifyAbility({
         "Hair 4 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 4)
         end,
       },
@@ -16704,10 +16704,10 @@ ModifyAbility({
         "Hair 4 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 4)
         end,
       },
@@ -16719,10 +16719,10 @@ ModifyAbility({
         "Hair 4 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 4)
         end,
       },
@@ -16734,10 +16734,10 @@ ModifyAbility({
         "Hair 4 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 4)
         end,
       },
@@ -16749,10 +16749,10 @@ ModifyAbility({
         "Hair 4 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 4)
         end,
       },
@@ -16764,10 +16764,10 @@ ModifyAbility({
         "Hair 4 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 4)
         end,
       },
@@ -16779,10 +16779,10 @@ ModifyAbility({
         "Hair 4 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HairAttacks"] == 4)
         end,
       },
@@ -16800,10 +16800,10 @@ ModifyAbility({
         "Ranged Slam 1 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 1)
         end,
       },
@@ -16815,10 +16815,10 @@ ModifyAbility({
         "Ranged Slam 1 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 1)
         end,
       },
@@ -16830,10 +16830,10 @@ ModifyAbility({
         "Ranged Slam 1 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 1)
         end,
       },
@@ -16845,10 +16845,10 @@ ModifyAbility({
         "Ranged Slam 1 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 1)
         end,
       },
@@ -16860,10 +16860,10 @@ ModifyAbility({
         "Ranged Slam 1 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 1)
         end,
       },
@@ -16875,10 +16875,10 @@ ModifyAbility({
         "Ranged Slam 1 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 1)
         end,
       },
@@ -16890,10 +16890,10 @@ ModifyAbility({
         "Ranged Slam 1 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 1)
         end,
       },
@@ -16905,10 +16905,10 @@ ModifyAbility({
         "Ranged Slam 1 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 1)
         end,
       },
@@ -16920,10 +16920,10 @@ ModifyAbility({
         "Ranged Slam 2 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 2)
         end,
       },
@@ -16935,10 +16935,10 @@ ModifyAbility({
         "Ranged Slam 2 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 2)
         end,
       },
@@ -16950,10 +16950,10 @@ ModifyAbility({
         "Ranged Slam 2 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 2)
         end,
       },
@@ -16965,10 +16965,10 @@ ModifyAbility({
         "Ranged Slam 2 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 2)
         end,
       },
@@ -16980,10 +16980,10 @@ ModifyAbility({
         "Ranged Slam 2 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 2)
         end,
       },
@@ -16995,10 +16995,10 @@ ModifyAbility({
         "Ranged Slam 2 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 2)
         end,
       },
@@ -17010,10 +17010,10 @@ ModifyAbility({
         "Ranged Slam 2 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 2)
         end,
       },
@@ -17025,10 +17025,10 @@ ModifyAbility({
         "Ranged Slam 2 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 2)
         end,
       },
@@ -17040,10 +17040,10 @@ ModifyAbility({
         "Ranged Slam 3 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 3)
         end,
       },
@@ -17055,10 +17055,10 @@ ModifyAbility({
         "Ranged Slam 3 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 3)
         end,
       },
@@ -17070,10 +17070,10 @@ ModifyAbility({
         "Ranged Slam 3 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 3)
         end,
       },
@@ -17085,10 +17085,10 @@ ModifyAbility({
         "Ranged Slam 3 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 3)
         end,
       },
@@ -17100,10 +17100,10 @@ ModifyAbility({
         "Ranged Slam 3 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 3)
         end,
       },
@@ -17115,10 +17115,10 @@ ModifyAbility({
         "Ranged Slam 3 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 3)
         end,
       },
@@ -17130,10 +17130,10 @@ ModifyAbility({
         "Ranged Slam 3 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 3)
         end,
       },
@@ -17145,10 +17145,10 @@ ModifyAbility({
         "Ranged Slam 3 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 3)
         end,
       },
@@ -17160,10 +17160,10 @@ ModifyAbility({
         "Ranged Slam 4 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 4)
         end,
       },
@@ -17175,10 +17175,10 @@ ModifyAbility({
         "Ranged Slam 4 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 4)
         end,
       },
@@ -17190,10 +17190,10 @@ ModifyAbility({
         "Ranged Slam 4 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 4)
         end,
       },
@@ -17205,10 +17205,10 @@ ModifyAbility({
         "Ranged Slam 4 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 4)
         end,
       },
@@ -17220,10 +17220,10 @@ ModifyAbility({
         "Ranged Slam 4 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 4)
         end,
       },
@@ -17235,10 +17235,10 @@ ModifyAbility({
         "Ranged Slam 4 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 4)
         end,
       },
@@ -17250,10 +17250,10 @@ ModifyAbility({
         "Ranged Slam 4 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 4)
         end,
       },
@@ -17265,10 +17265,10 @@ ModifyAbility({
         "Ranged Slam 4 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 4)
         end,
       },
@@ -17280,10 +17280,10 @@ ModifyAbility({
         "Ranged Slam 5 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 5)
         end,
       },
@@ -17295,10 +17295,10 @@ ModifyAbility({
         "Ranged Slam 5 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 5)
         end,
       },
@@ -17310,10 +17310,10 @@ ModifyAbility({
         "Ranged Slam 5 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 5)
         end,
       },
@@ -17325,10 +17325,10 @@ ModifyAbility({
         "Ranged Slam 5 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 5)
         end,
       },
@@ -17340,10 +17340,10 @@ ModifyAbility({
         "Ranged Slam 5 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 5)
         end,
       },
@@ -17355,10 +17355,10 @@ ModifyAbility({
         "Ranged Slam 5 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 5)
         end,
       },
@@ -17370,10 +17370,10 @@ ModifyAbility({
         "Ranged Slam 5 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 5)
         end,
       },
@@ -17385,10 +17385,10 @@ ModifyAbility({
         "Ranged Slam 5 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 5)
         end,
       },
@@ -17400,10 +17400,10 @@ ModifyAbility({
         "Ranged Slam 6 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 6)
         end,
       },
@@ -17415,10 +17415,10 @@ ModifyAbility({
         "Ranged Slam 6 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 6)
         end,
       },
@@ -17430,10 +17430,10 @@ ModifyAbility({
         "Ranged Slam 6 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 6)
         end,
       },
@@ -17445,10 +17445,10 @@ ModifyAbility({
         "Ranged Slam 6 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 6)
         end,
       },
@@ -17460,10 +17460,10 @@ ModifyAbility({
         "Ranged Slam 6 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 6)
         end,
       },
@@ -17475,10 +17475,10 @@ ModifyAbility({
         "Ranged Slam 6 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 6)
         end,
       },
@@ -17490,10 +17490,10 @@ ModifyAbility({
         "Ranged Slam 6 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 6)
         end,
       },
@@ -17505,10 +17505,10 @@ ModifyAbility({
         "Ranged Slam 6 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 6)
         end,
       },
@@ -17520,10 +17520,10 @@ ModifyAbility({
         "Ranged Slam 7 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 7)
         end,
       },
@@ -17535,10 +17535,10 @@ ModifyAbility({
         "Ranged Slam 7 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 7)
         end,
       },
@@ -17550,10 +17550,10 @@ ModifyAbility({
         "Ranged Slam 7 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 7)
         end,
       },
@@ -17565,10 +17565,10 @@ ModifyAbility({
         "Ranged Slam 7 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 7)
         end,
       },
@@ -17580,10 +17580,10 @@ ModifyAbility({
         "Ranged Slam 7 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 7)
         end,
       },
@@ -17595,10 +17595,10 @@ ModifyAbility({
         "Ranged Slam 7 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 7)
         end,
       },
@@ -17610,10 +17610,10 @@ ModifyAbility({
         "Ranged Slam 7 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 7)
         end,
       },
@@ -17625,10 +17625,10 @@ ModifyAbility({
         "Ranged Slam 7 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamSize"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangedSlamAttacks"] == 7)
         end,
       },
@@ -17639,7 +17639,7 @@ DefineAbility({
   Name="Bite 1 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -17654,7 +17654,7 @@ DefineAbility({
   Name="Bite 1 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -17669,7 +17669,7 @@ DefineAbility({
   Name="Bite 1 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -17684,7 +17684,7 @@ DefineAbility({
   Name="Bite 1 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -17699,7 +17699,7 @@ DefineAbility({
   Name="Bite 1 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -17714,7 +17714,7 @@ DefineAbility({
   Name="Bite 1 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -17729,7 +17729,7 @@ DefineAbility({
   Name="Bite 1 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -17744,7 +17744,7 @@ DefineAbility({
   Name="Bite 1 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -17759,7 +17759,7 @@ DefineAbility({
   Name="Bite 1 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -17774,7 +17774,7 @@ DefineAbility({
   Name="Bite 2 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -17789,7 +17789,7 @@ DefineAbility({
   Name="Bite 2 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -17804,7 +17804,7 @@ DefineAbility({
   Name="Bite 2 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -17819,7 +17819,7 @@ DefineAbility({
   Name="Bite 2 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -17834,7 +17834,7 @@ DefineAbility({
   Name="Bite 2 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -17849,7 +17849,7 @@ DefineAbility({
   Name="Bite 2 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -17864,7 +17864,7 @@ DefineAbility({
   Name="Bite 2 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -17879,7 +17879,7 @@ DefineAbility({
   Name="Bite 2 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -17894,7 +17894,7 @@ DefineAbility({
   Name="Bite 2 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -17909,7 +17909,7 @@ DefineAbility({
   Name="Bite 3 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -17924,7 +17924,7 @@ DefineAbility({
   Name="Bite 3 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -17939,7 +17939,7 @@ DefineAbility({
   Name="Bite 3 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -17954,7 +17954,7 @@ DefineAbility({
   Name="Bite 3 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -17969,7 +17969,7 @@ DefineAbility({
   Name="Bite 3 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -17984,7 +17984,7 @@ DefineAbility({
   Name="Bite 3 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -17999,7 +17999,7 @@ DefineAbility({
   Name="Bite 3 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -18014,7 +18014,7 @@ DefineAbility({
   Name="Bite 3 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -18029,7 +18029,7 @@ DefineAbility({
   Name="Bite 3 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -18044,7 +18044,7 @@ DefineAbility({
   Name="Bite 4 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -18059,7 +18059,7 @@ DefineAbility({
   Name="Bite 4 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -18074,7 +18074,7 @@ DefineAbility({
   Name="Bite 4 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -18089,7 +18089,7 @@ DefineAbility({
   Name="Bite 4 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -18104,7 +18104,7 @@ DefineAbility({
   Name="Bite 4 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -18119,7 +18119,7 @@ DefineAbility({
   Name="Bite 4 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -18134,7 +18134,7 @@ DefineAbility({
   Name="Bite 4 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -18149,7 +18149,7 @@ DefineAbility({
   Name="Bite 4 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -18164,7 +18164,7 @@ DefineAbility({
   Name="Bite 4 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -18179,7 +18179,7 @@ DefineAbility({
   Name="Bite 5 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -18194,7 +18194,7 @@ DefineAbility({
   Name="Bite 5 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -18209,7 +18209,7 @@ DefineAbility({
   Name="Bite 5 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -18224,7 +18224,7 @@ DefineAbility({
   Name="Bite 5 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -18239,7 +18239,7 @@ DefineAbility({
   Name="Bite 5 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -18254,7 +18254,7 @@ DefineAbility({
   Name="Bite 5 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -18269,7 +18269,7 @@ DefineAbility({
   Name="Bite 5 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -18284,7 +18284,7 @@ DefineAbility({
   Name="Bite 5 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -18299,7 +18299,7 @@ DefineAbility({
   Name="Bite 5 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -18314,7 +18314,7 @@ DefineAbility({
   Name="Bite 6 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -18329,7 +18329,7 @@ DefineAbility({
   Name="Bite 6 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -18344,7 +18344,7 @@ DefineAbility({
   Name="Bite 6 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -18359,7 +18359,7 @@ DefineAbility({
   Name="Bite 6 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -18374,7 +18374,7 @@ DefineAbility({
   Name="Bite 6 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -18389,7 +18389,7 @@ DefineAbility({
   Name="Bite 6 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -18404,7 +18404,7 @@ DefineAbility({
   Name="Bite 6 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -18419,7 +18419,7 @@ DefineAbility({
   Name="Bite 6 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -18434,7 +18434,7 @@ DefineAbility({
   Name="Bite 6 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -18449,7 +18449,7 @@ DefineAbility({
   Name="Bite 7 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -18464,7 +18464,7 @@ DefineAbility({
   Name="Bite 7 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -18479,7 +18479,7 @@ DefineAbility({
   Name="Bite 7 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -18494,7 +18494,7 @@ DefineAbility({
   Name="Bite 7 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -18509,7 +18509,7 @@ DefineAbility({
   Name="Bite 7 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -18524,7 +18524,7 @@ DefineAbility({
   Name="Bite 7 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -18539,7 +18539,7 @@ DefineAbility({
   Name="Bite 7 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -18554,7 +18554,7 @@ DefineAbility({
   Name="Bite 7 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -18569,7 +18569,7 @@ DefineAbility({
   Name="Bite 7 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -18584,7 +18584,7 @@ DefineAbility({
   Name="Gore 1 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -18599,7 +18599,7 @@ DefineAbility({
   Name="Gore 1 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -18614,7 +18614,7 @@ DefineAbility({
   Name="Gore 1 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -18629,7 +18629,7 @@ DefineAbility({
   Name="Gore 1 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -18644,7 +18644,7 @@ DefineAbility({
   Name="Gore 1 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -18659,7 +18659,7 @@ DefineAbility({
   Name="Gore 1 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -18674,7 +18674,7 @@ DefineAbility({
   Name="Gore 1 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -18689,7 +18689,7 @@ DefineAbility({
   Name="Gore 1 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -18704,7 +18704,7 @@ DefineAbility({
   Name="Gore 1 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -18719,7 +18719,7 @@ DefineAbility({
   Name="Gore 2 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -18734,7 +18734,7 @@ DefineAbility({
   Name="Gore 2 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -18749,7 +18749,7 @@ DefineAbility({
   Name="Gore 2 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -18764,7 +18764,7 @@ DefineAbility({
   Name="Gore 2 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -18779,7 +18779,7 @@ DefineAbility({
   Name="Gore 2 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -18794,7 +18794,7 @@ DefineAbility({
   Name="Gore 2 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -18809,7 +18809,7 @@ DefineAbility({
   Name="Gore 2 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -18824,7 +18824,7 @@ DefineAbility({
   Name="Gore 2 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -18839,7 +18839,7 @@ DefineAbility({
   Name="Gore 2 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -18854,7 +18854,7 @@ DefineAbility({
   Name="Gore 3 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -18869,7 +18869,7 @@ DefineAbility({
   Name="Gore 3 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -18884,7 +18884,7 @@ DefineAbility({
   Name="Gore 3 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -18899,7 +18899,7 @@ DefineAbility({
   Name="Gore 3 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -18914,7 +18914,7 @@ DefineAbility({
   Name="Gore 3 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -18929,7 +18929,7 @@ DefineAbility({
   Name="Gore 3 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -18944,7 +18944,7 @@ DefineAbility({
   Name="Gore 3 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -18959,7 +18959,7 @@ DefineAbility({
   Name="Gore 3 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -18974,7 +18974,7 @@ DefineAbility({
   Name="Gore 3 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -18989,7 +18989,7 @@ DefineAbility({
   Name="Gore 4 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -19004,7 +19004,7 @@ DefineAbility({
   Name="Gore 4 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -19019,7 +19019,7 @@ DefineAbility({
   Name="Gore 4 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -19034,7 +19034,7 @@ DefineAbility({
   Name="Gore 4 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -19049,7 +19049,7 @@ DefineAbility({
   Name="Gore 4 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -19064,7 +19064,7 @@ DefineAbility({
   Name="Gore 4 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -19079,7 +19079,7 @@ DefineAbility({
   Name="Gore 4 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -19094,7 +19094,7 @@ DefineAbility({
   Name="Gore 4 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -19109,7 +19109,7 @@ DefineAbility({
   Name="Gore 4 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -19124,7 +19124,7 @@ DefineAbility({
   Name="Gore 5 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -19139,7 +19139,7 @@ DefineAbility({
   Name="Gore 5 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -19154,7 +19154,7 @@ DefineAbility({
   Name="Gore 5 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -19169,7 +19169,7 @@ DefineAbility({
   Name="Gore 5 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -19184,7 +19184,7 @@ DefineAbility({
   Name="Gore 5 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -19199,7 +19199,7 @@ DefineAbility({
   Name="Gore 5 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -19214,7 +19214,7 @@ DefineAbility({
   Name="Gore 5 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -19229,7 +19229,7 @@ DefineAbility({
   Name="Gore 5 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -19244,7 +19244,7 @@ DefineAbility({
   Name="Gore 5 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -19259,7 +19259,7 @@ DefineAbility({
   Name="Gore 6 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -19274,7 +19274,7 @@ DefineAbility({
   Name="Gore 6 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -19289,7 +19289,7 @@ DefineAbility({
   Name="Gore 6 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -19304,7 +19304,7 @@ DefineAbility({
   Name="Gore 6 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -19319,7 +19319,7 @@ DefineAbility({
   Name="Gore 6 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -19334,7 +19334,7 @@ DefineAbility({
   Name="Gore 6 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -19349,7 +19349,7 @@ DefineAbility({
   Name="Gore 6 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -19364,7 +19364,7 @@ DefineAbility({
   Name="Gore 6 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -19379,7 +19379,7 @@ DefineAbility({
   Name="Gore 6 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -19394,7 +19394,7 @@ DefineAbility({
   Name="Gore 7 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -19409,7 +19409,7 @@ DefineAbility({
   Name="Gore 7 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -19424,7 +19424,7 @@ DefineAbility({
   Name="Gore 7 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -19439,7 +19439,7 @@ DefineAbility({
   Name="Gore 7 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -19454,7 +19454,7 @@ DefineAbility({
   Name="Gore 7 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -19469,7 +19469,7 @@ DefineAbility({
   Name="Gore 7 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -19484,7 +19484,7 @@ DefineAbility({
   Name="Gore 7 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -19499,7 +19499,7 @@ DefineAbility({
   Name="Gore 7 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -19514,7 +19514,7 @@ DefineAbility({
   Name="Gore 7 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -19529,7 +19529,7 @@ DefineAbility({
   Name="Pincers 1 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -19544,7 +19544,7 @@ DefineAbility({
   Name="Pincers 1 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -19559,7 +19559,7 @@ DefineAbility({
   Name="Pincers 1 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -19574,7 +19574,7 @@ DefineAbility({
   Name="Pincers 1 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -19589,7 +19589,7 @@ DefineAbility({
   Name="Pincers 1 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -19604,7 +19604,7 @@ DefineAbility({
   Name="Pincers 1 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -19619,7 +19619,7 @@ DefineAbility({
   Name="Pincers 1 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -19634,7 +19634,7 @@ DefineAbility({
   Name="Pincers 1 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -19649,7 +19649,7 @@ DefineAbility({
   Name="Pincers 1 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -19664,7 +19664,7 @@ DefineAbility({
   Name="Pincers 2 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -19679,7 +19679,7 @@ DefineAbility({
   Name="Pincers 2 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -19694,7 +19694,7 @@ DefineAbility({
   Name="Pincers 2 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -19709,7 +19709,7 @@ DefineAbility({
   Name="Pincers 2 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -19724,7 +19724,7 @@ DefineAbility({
   Name="Pincers 2 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -19739,7 +19739,7 @@ DefineAbility({
   Name="Pincers 2 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -19754,7 +19754,7 @@ DefineAbility({
   Name="Pincers 2 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -19769,7 +19769,7 @@ DefineAbility({
   Name="Pincers 2 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -19784,7 +19784,7 @@ DefineAbility({
   Name="Pincers 2 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -19799,7 +19799,7 @@ DefineAbility({
   Name="Pincers 3 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -19814,7 +19814,7 @@ DefineAbility({
   Name="Pincers 3 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -19829,7 +19829,7 @@ DefineAbility({
   Name="Pincers 3 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -19844,7 +19844,7 @@ DefineAbility({
   Name="Pincers 3 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -19859,7 +19859,7 @@ DefineAbility({
   Name="Pincers 3 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -19874,7 +19874,7 @@ DefineAbility({
   Name="Pincers 3 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -19889,7 +19889,7 @@ DefineAbility({
   Name="Pincers 3 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -19904,7 +19904,7 @@ DefineAbility({
   Name="Pincers 3 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -19919,7 +19919,7 @@ DefineAbility({
   Name="Pincers 3 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -19934,7 +19934,7 @@ DefineAbility({
   Name="Pincers 4 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -19949,7 +19949,7 @@ DefineAbility({
   Name="Pincers 4 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -19964,7 +19964,7 @@ DefineAbility({
   Name="Pincers 4 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -19979,7 +19979,7 @@ DefineAbility({
   Name="Pincers 4 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -19994,7 +19994,7 @@ DefineAbility({
   Name="Pincers 4 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -20009,7 +20009,7 @@ DefineAbility({
   Name="Pincers 4 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -20024,7 +20024,7 @@ DefineAbility({
   Name="Pincers 4 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -20039,7 +20039,7 @@ DefineAbility({
   Name="Pincers 4 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -20054,7 +20054,7 @@ DefineAbility({
   Name="Pincers 4 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -20069,7 +20069,7 @@ DefineAbility({
   Name="Pincers 5 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -20084,7 +20084,7 @@ DefineAbility({
   Name="Pincers 5 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -20099,7 +20099,7 @@ DefineAbility({
   Name="Pincers 5 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -20114,7 +20114,7 @@ DefineAbility({
   Name="Pincers 5 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -20129,7 +20129,7 @@ DefineAbility({
   Name="Pincers 5 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -20144,7 +20144,7 @@ DefineAbility({
   Name="Pincers 5 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -20159,7 +20159,7 @@ DefineAbility({
   Name="Pincers 5 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -20174,7 +20174,7 @@ DefineAbility({
   Name="Pincers 5 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -20189,7 +20189,7 @@ DefineAbility({
   Name="Pincers 5 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -20204,7 +20204,7 @@ DefineAbility({
   Name="Pincers 6 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -20219,7 +20219,7 @@ DefineAbility({
   Name="Pincers 6 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -20234,7 +20234,7 @@ DefineAbility({
   Name="Pincers 6 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -20249,7 +20249,7 @@ DefineAbility({
   Name="Pincers 6 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -20264,7 +20264,7 @@ DefineAbility({
   Name="Pincers 6 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -20279,7 +20279,7 @@ DefineAbility({
   Name="Pincers 6 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -20294,7 +20294,7 @@ DefineAbility({
   Name="Pincers 6 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -20309,7 +20309,7 @@ DefineAbility({
   Name="Pincers 6 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -20324,7 +20324,7 @@ DefineAbility({
   Name="Pincers 6 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -20339,7 +20339,7 @@ DefineAbility({
   Name="Pincers 7 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -20354,7 +20354,7 @@ DefineAbility({
   Name="Pincers 7 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -20369,7 +20369,7 @@ DefineAbility({
   Name="Pincers 7 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -20384,7 +20384,7 @@ DefineAbility({
   Name="Pincers 7 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -20399,7 +20399,7 @@ DefineAbility({
   Name="Pincers 7 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -20414,7 +20414,7 @@ DefineAbility({
   Name="Pincers 7 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -20429,7 +20429,7 @@ DefineAbility({
   Name="Pincers 7 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -20444,7 +20444,7 @@ DefineAbility({
   Name="Pincers 7 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -20459,7 +20459,7 @@ DefineAbility({
   Name="Pincers 7 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -20474,7 +20474,7 @@ DefineAbility({
   Name="Tail Slap 1 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -20489,7 +20489,7 @@ DefineAbility({
   Name="Tail Slap 1 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -20504,7 +20504,7 @@ DefineAbility({
   Name="Tail Slap 1 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -20519,7 +20519,7 @@ DefineAbility({
   Name="Tail Slap 1 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -20534,7 +20534,7 @@ DefineAbility({
   Name="Tail Slap 1 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -20549,7 +20549,7 @@ DefineAbility({
   Name="Tail Slap 1 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -20564,7 +20564,7 @@ DefineAbility({
   Name="Tail Slap 1 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -20579,7 +20579,7 @@ DefineAbility({
   Name="Tail Slap 1 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -20594,7 +20594,7 @@ DefineAbility({
   Name="Tail Slap 1 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -20609,7 +20609,7 @@ DefineAbility({
   Name="Tail Slap 2 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -20624,7 +20624,7 @@ DefineAbility({
   Name="Tail Slap 2 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -20639,7 +20639,7 @@ DefineAbility({
   Name="Tail Slap 2 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -20654,7 +20654,7 @@ DefineAbility({
   Name="Tail Slap 2 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -20669,7 +20669,7 @@ DefineAbility({
   Name="Tail Slap 2 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -20684,7 +20684,7 @@ DefineAbility({
   Name="Tail Slap 2 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -20699,7 +20699,7 @@ DefineAbility({
   Name="Tail Slap 2 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -20714,7 +20714,7 @@ DefineAbility({
   Name="Tail Slap 2 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -20729,7 +20729,7 @@ DefineAbility({
   Name="Tail Slap 2 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -20744,7 +20744,7 @@ DefineAbility({
   Name="Tail Slap 3 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -20759,7 +20759,7 @@ DefineAbility({
   Name="Tail Slap 3 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -20774,7 +20774,7 @@ DefineAbility({
   Name="Tail Slap 3 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -20789,7 +20789,7 @@ DefineAbility({
   Name="Tail Slap 3 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -20804,7 +20804,7 @@ DefineAbility({
   Name="Tail Slap 3 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -20819,7 +20819,7 @@ DefineAbility({
   Name="Tail Slap 3 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -20834,7 +20834,7 @@ DefineAbility({
   Name="Tail Slap 3 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -20849,7 +20849,7 @@ DefineAbility({
   Name="Tail Slap 3 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -20864,7 +20864,7 @@ DefineAbility({
   Name="Tail Slap 3 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -20879,7 +20879,7 @@ DefineAbility({
   Name="Tail Slap 4 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -20894,7 +20894,7 @@ DefineAbility({
   Name="Tail Slap 4 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -20909,7 +20909,7 @@ DefineAbility({
   Name="Tail Slap 4 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -20924,7 +20924,7 @@ DefineAbility({
   Name="Tail Slap 4 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -20939,7 +20939,7 @@ DefineAbility({
   Name="Tail Slap 4 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -20954,7 +20954,7 @@ DefineAbility({
   Name="Tail Slap 4 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -20969,7 +20969,7 @@ DefineAbility({
   Name="Tail Slap 4 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -20984,7 +20984,7 @@ DefineAbility({
   Name="Tail Slap 4 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -20999,7 +20999,7 @@ DefineAbility({
   Name="Tail Slap 4 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -21014,7 +21014,7 @@ DefineAbility({
   Name="Tail Slap 5 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -21029,7 +21029,7 @@ DefineAbility({
   Name="Tail Slap 5 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -21044,7 +21044,7 @@ DefineAbility({
   Name="Tail Slap 5 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -21059,7 +21059,7 @@ DefineAbility({
   Name="Tail Slap 5 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -21074,7 +21074,7 @@ DefineAbility({
   Name="Tail Slap 5 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -21089,7 +21089,7 @@ DefineAbility({
   Name="Tail Slap 5 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -21104,7 +21104,7 @@ DefineAbility({
   Name="Tail Slap 5 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -21119,7 +21119,7 @@ DefineAbility({
   Name="Tail Slap 5 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -21134,7 +21134,7 @@ DefineAbility({
   Name="Tail Slap 5 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -21149,7 +21149,7 @@ DefineAbility({
   Name="Tail Slap 6 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -21164,7 +21164,7 @@ DefineAbility({
   Name="Tail Slap 6 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -21179,7 +21179,7 @@ DefineAbility({
   Name="Tail Slap 6 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -21194,7 +21194,7 @@ DefineAbility({
   Name="Tail Slap 6 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -21209,7 +21209,7 @@ DefineAbility({
   Name="Tail Slap 6 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -21224,7 +21224,7 @@ DefineAbility({
   Name="Tail Slap 6 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -21239,7 +21239,7 @@ DefineAbility({
   Name="Tail Slap 6 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -21254,7 +21254,7 @@ DefineAbility({
   Name="Tail Slap 6 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -21269,7 +21269,7 @@ DefineAbility({
   Name="Tail Slap 6 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -21284,7 +21284,7 @@ DefineAbility({
   Name="Tail Slap 7 (Fine)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("F")
     end,
   },
@@ -21299,7 +21299,7 @@ DefineAbility({
   Name="Tail Slap 7 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -21314,7 +21314,7 @@ DefineAbility({
   Name="Tail Slap 7 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -21329,7 +21329,7 @@ DefineAbility({
   Name="Tail Slap 7 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -21344,7 +21344,7 @@ DefineAbility({
   Name="Tail Slap 7 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -21359,7 +21359,7 @@ DefineAbility({
   Name="Tail Slap 7 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -21374,7 +21374,7 @@ DefineAbility({
   Name="Tail Slap 7 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -21389,7 +21389,7 @@ DefineAbility({
   Name="Tail Slap 7 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -21404,7 +21404,7 @@ DefineAbility({
   Name="Tail Slap 7 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -21419,7 +21419,7 @@ DefineAbility({
   Name="Claw 1 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -21434,7 +21434,7 @@ DefineAbility({
   Name="Claw 1 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -21449,7 +21449,7 @@ DefineAbility({
   Name="Claw 1 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -21464,7 +21464,7 @@ DefineAbility({
   Name="Claw 1 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -21479,7 +21479,7 @@ DefineAbility({
   Name="Claw 1 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -21494,7 +21494,7 @@ DefineAbility({
   Name="Claw 1 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -21509,7 +21509,7 @@ DefineAbility({
   Name="Claw 1 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -21524,7 +21524,7 @@ DefineAbility({
   Name="Claw 1 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -21539,7 +21539,7 @@ DefineAbility({
   Name="Claw 2 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -21554,7 +21554,7 @@ DefineAbility({
   Name="Claw 2 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -21569,7 +21569,7 @@ DefineAbility({
   Name="Claw 2 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -21584,7 +21584,7 @@ DefineAbility({
   Name="Claw 2 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -21599,7 +21599,7 @@ DefineAbility({
   Name="Claw 2 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -21614,7 +21614,7 @@ DefineAbility({
   Name="Claw 2 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -21629,7 +21629,7 @@ DefineAbility({
   Name="Claw 2 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -21644,7 +21644,7 @@ DefineAbility({
   Name="Claw 2 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -21659,7 +21659,7 @@ DefineAbility({
   Name="Claw 3 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -21674,7 +21674,7 @@ DefineAbility({
   Name="Claw 3 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -21689,7 +21689,7 @@ DefineAbility({
   Name="Claw 3 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -21704,7 +21704,7 @@ DefineAbility({
   Name="Claw 3 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -21719,7 +21719,7 @@ DefineAbility({
   Name="Claw 3 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -21734,7 +21734,7 @@ DefineAbility({
   Name="Claw 3 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -21749,7 +21749,7 @@ DefineAbility({
   Name="Claw 3 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -21764,7 +21764,7 @@ DefineAbility({
   Name="Claw 3 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -21779,7 +21779,7 @@ DefineAbility({
   Name="Claw 4 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -21794,7 +21794,7 @@ DefineAbility({
   Name="Claw 4 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -21809,7 +21809,7 @@ DefineAbility({
   Name="Claw 4 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -21824,7 +21824,7 @@ DefineAbility({
   Name="Claw 4 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -21839,7 +21839,7 @@ DefineAbility({
   Name="Claw 4 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -21854,7 +21854,7 @@ DefineAbility({
   Name="Claw 4 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -21869,7 +21869,7 @@ DefineAbility({
   Name="Claw 4 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -21884,7 +21884,7 @@ DefineAbility({
   Name="Claw 4 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -21899,7 +21899,7 @@ DefineAbility({
   Name="Claw 5 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -21914,7 +21914,7 @@ DefineAbility({
   Name="Claw 5 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -21929,7 +21929,7 @@ DefineAbility({
   Name="Claw 5 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -21944,7 +21944,7 @@ DefineAbility({
   Name="Claw 5 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -21959,7 +21959,7 @@ DefineAbility({
   Name="Claw 5 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -21974,7 +21974,7 @@ DefineAbility({
   Name="Claw 5 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -21989,7 +21989,7 @@ DefineAbility({
   Name="Claw 5 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -22004,7 +22004,7 @@ DefineAbility({
   Name="Claw 5 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -22019,7 +22019,7 @@ DefineAbility({
   Name="Claw 6 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -22034,7 +22034,7 @@ DefineAbility({
   Name="Claw 6 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -22049,7 +22049,7 @@ DefineAbility({
   Name="Claw 6 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -22064,7 +22064,7 @@ DefineAbility({
   Name="Claw 6 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -22079,7 +22079,7 @@ DefineAbility({
   Name="Claw 6 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -22094,7 +22094,7 @@ DefineAbility({
   Name="Claw 6 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -22109,7 +22109,7 @@ DefineAbility({
   Name="Claw 6 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -22124,7 +22124,7 @@ DefineAbility({
   Name="Claw 6 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -22139,7 +22139,7 @@ DefineAbility({
   Name="Claw 7 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -22154,7 +22154,7 @@ DefineAbility({
   Name="Claw 7 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -22169,7 +22169,7 @@ DefineAbility({
   Name="Claw 7 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -22184,7 +22184,7 @@ DefineAbility({
   Name="Claw 7 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -22199,7 +22199,7 @@ DefineAbility({
   Name="Claw 7 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -22214,7 +22214,7 @@ DefineAbility({
   Name="Claw 7 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -22229,7 +22229,7 @@ DefineAbility({
   Name="Claw 7 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -22244,7 +22244,7 @@ DefineAbility({
   Name="Claw 7 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -22259,7 +22259,7 @@ DefineAbility({
   Name="Slam 1 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -22274,7 +22274,7 @@ DefineAbility({
   Name="Slam 1 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -22289,7 +22289,7 @@ DefineAbility({
   Name="Slam 1 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -22304,7 +22304,7 @@ DefineAbility({
   Name="Slam 1 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -22319,7 +22319,7 @@ DefineAbility({
   Name="Slam 1 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -22334,7 +22334,7 @@ DefineAbility({
   Name="Slam 1 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -22349,7 +22349,7 @@ DefineAbility({
   Name="Slam 1 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -22364,7 +22364,7 @@ DefineAbility({
   Name="Slam 1 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -22379,7 +22379,7 @@ DefineAbility({
   Name="Slam 2 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -22394,7 +22394,7 @@ DefineAbility({
   Name="Slam 2 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -22409,7 +22409,7 @@ DefineAbility({
   Name="Slam 2 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -22424,7 +22424,7 @@ DefineAbility({
   Name="Slam 2 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -22439,7 +22439,7 @@ DefineAbility({
   Name="Slam 2 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -22454,7 +22454,7 @@ DefineAbility({
   Name="Slam 2 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -22469,7 +22469,7 @@ DefineAbility({
   Name="Slam 2 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -22484,7 +22484,7 @@ DefineAbility({
   Name="Slam 2 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -22499,7 +22499,7 @@ DefineAbility({
   Name="Slam 3 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -22514,7 +22514,7 @@ DefineAbility({
   Name="Slam 3 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -22529,7 +22529,7 @@ DefineAbility({
   Name="Slam 3 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -22544,7 +22544,7 @@ DefineAbility({
   Name="Slam 3 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -22559,7 +22559,7 @@ DefineAbility({
   Name="Slam 3 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -22574,7 +22574,7 @@ DefineAbility({
   Name="Slam 3 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -22589,7 +22589,7 @@ DefineAbility({
   Name="Slam 3 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -22604,7 +22604,7 @@ DefineAbility({
   Name="Slam 3 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -22619,7 +22619,7 @@ DefineAbility({
   Name="Slam 4 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -22634,7 +22634,7 @@ DefineAbility({
   Name="Slam 4 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -22649,7 +22649,7 @@ DefineAbility({
   Name="Slam 4 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -22664,7 +22664,7 @@ DefineAbility({
   Name="Slam 4 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -22679,7 +22679,7 @@ DefineAbility({
   Name="Slam 4 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -22694,7 +22694,7 @@ DefineAbility({
   Name="Slam 4 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -22709,7 +22709,7 @@ DefineAbility({
   Name="Slam 4 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -22724,7 +22724,7 @@ DefineAbility({
   Name="Slam 4 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -22739,7 +22739,7 @@ DefineAbility({
   Name="Slam 5 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -22754,7 +22754,7 @@ DefineAbility({
   Name="Slam 5 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -22769,7 +22769,7 @@ DefineAbility({
   Name="Slam 5 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -22784,7 +22784,7 @@ DefineAbility({
   Name="Slam 5 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -22799,7 +22799,7 @@ DefineAbility({
   Name="Slam 5 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -22814,7 +22814,7 @@ DefineAbility({
   Name="Slam 5 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -22829,7 +22829,7 @@ DefineAbility({
   Name="Slam 5 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -22844,7 +22844,7 @@ DefineAbility({
   Name="Slam 5 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -22859,7 +22859,7 @@ DefineAbility({
   Name="Slam 6 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -22874,7 +22874,7 @@ DefineAbility({
   Name="Slam 6 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -22889,7 +22889,7 @@ DefineAbility({
   Name="Slam 6 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -22904,7 +22904,7 @@ DefineAbility({
   Name="Slam 6 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -22919,7 +22919,7 @@ DefineAbility({
   Name="Slam 6 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -22934,7 +22934,7 @@ DefineAbility({
   Name="Slam 6 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -22949,7 +22949,7 @@ DefineAbility({
   Name="Slam 6 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -22964,7 +22964,7 @@ DefineAbility({
   Name="Slam 6 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -22979,7 +22979,7 @@ DefineAbility({
   Name="Slam 7 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -22994,7 +22994,7 @@ DefineAbility({
   Name="Slam 7 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -23009,7 +23009,7 @@ DefineAbility({
   Name="Slam 7 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -23024,7 +23024,7 @@ DefineAbility({
   Name="Slam 7 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -23039,7 +23039,7 @@ DefineAbility({
   Name="Slam 7 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -23054,7 +23054,7 @@ DefineAbility({
   Name="Slam 7 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -23069,7 +23069,7 @@ DefineAbility({
   Name="Slam 7 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -23084,7 +23084,7 @@ DefineAbility({
   Name="Slam 7 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -23099,7 +23099,7 @@ DefineAbility({
   Name="Sting 1 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -23114,7 +23114,7 @@ DefineAbility({
   Name="Sting 1 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -23129,7 +23129,7 @@ DefineAbility({
   Name="Sting 1 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -23144,7 +23144,7 @@ DefineAbility({
   Name="Sting 1 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -23159,7 +23159,7 @@ DefineAbility({
   Name="Sting 1 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -23174,7 +23174,7 @@ DefineAbility({
   Name="Sting 1 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -23189,7 +23189,7 @@ DefineAbility({
   Name="Sting 1 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -23204,7 +23204,7 @@ DefineAbility({
   Name="Sting 1 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -23219,7 +23219,7 @@ DefineAbility({
   Name="Sting 2 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -23234,7 +23234,7 @@ DefineAbility({
   Name="Sting 2 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -23249,7 +23249,7 @@ DefineAbility({
   Name="Sting 2 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -23264,7 +23264,7 @@ DefineAbility({
   Name="Sting 2 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -23279,7 +23279,7 @@ DefineAbility({
   Name="Sting 2 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -23294,7 +23294,7 @@ DefineAbility({
   Name="Sting 2 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -23309,7 +23309,7 @@ DefineAbility({
   Name="Sting 2 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -23324,7 +23324,7 @@ DefineAbility({
   Name="Sting 2 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -23339,7 +23339,7 @@ DefineAbility({
   Name="Sting 3 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -23354,7 +23354,7 @@ DefineAbility({
   Name="Sting 3 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -23369,7 +23369,7 @@ DefineAbility({
   Name="Sting 3 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -23384,7 +23384,7 @@ DefineAbility({
   Name="Sting 3 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -23399,7 +23399,7 @@ DefineAbility({
   Name="Sting 3 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -23414,7 +23414,7 @@ DefineAbility({
   Name="Sting 3 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -23429,7 +23429,7 @@ DefineAbility({
   Name="Sting 3 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -23444,7 +23444,7 @@ DefineAbility({
   Name="Sting 3 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -23459,7 +23459,7 @@ DefineAbility({
   Name="Sting 4 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -23474,7 +23474,7 @@ DefineAbility({
   Name="Sting 4 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -23489,7 +23489,7 @@ DefineAbility({
   Name="Sting 4 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -23504,7 +23504,7 @@ DefineAbility({
   Name="Sting 4 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -23519,7 +23519,7 @@ DefineAbility({
   Name="Sting 4 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -23534,7 +23534,7 @@ DefineAbility({
   Name="Sting 4 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -23549,7 +23549,7 @@ DefineAbility({
   Name="Sting 4 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -23564,7 +23564,7 @@ DefineAbility({
   Name="Sting 4 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -23579,7 +23579,7 @@ DefineAbility({
   Name="Sting 5 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -23594,7 +23594,7 @@ DefineAbility({
   Name="Sting 5 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -23609,7 +23609,7 @@ DefineAbility({
   Name="Sting 5 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -23624,7 +23624,7 @@ DefineAbility({
   Name="Sting 5 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -23639,7 +23639,7 @@ DefineAbility({
   Name="Sting 5 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -23654,7 +23654,7 @@ DefineAbility({
   Name="Sting 5 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -23669,7 +23669,7 @@ DefineAbility({
   Name="Sting 5 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -23684,7 +23684,7 @@ DefineAbility({
   Name="Sting 5 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -23699,7 +23699,7 @@ DefineAbility({
   Name="Sting 6 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -23714,7 +23714,7 @@ DefineAbility({
   Name="Sting 6 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -23729,7 +23729,7 @@ DefineAbility({
   Name="Sting 6 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -23744,7 +23744,7 @@ DefineAbility({
   Name="Sting 6 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -23759,7 +23759,7 @@ DefineAbility({
   Name="Sting 6 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -23774,7 +23774,7 @@ DefineAbility({
   Name="Sting 6 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -23789,7 +23789,7 @@ DefineAbility({
   Name="Sting 6 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -23804,7 +23804,7 @@ DefineAbility({
   Name="Sting 6 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -23819,7 +23819,7 @@ DefineAbility({
   Name="Sting 7 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -23834,7 +23834,7 @@ DefineAbility({
   Name="Sting 7 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -23849,7 +23849,7 @@ DefineAbility({
   Name="Sting 7 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -23864,7 +23864,7 @@ DefineAbility({
   Name="Sting 7 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -23879,7 +23879,7 @@ DefineAbility({
   Name="Sting 7 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -23894,7 +23894,7 @@ DefineAbility({
   Name="Sting 7 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -23909,7 +23909,7 @@ DefineAbility({
   Name="Sting 7 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -23924,7 +23924,7 @@ DefineAbility({
   Name="Sting 7 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -23939,7 +23939,7 @@ DefineAbility({
   Name="Talons 1 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -23954,7 +23954,7 @@ DefineAbility({
   Name="Talons 1 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -23969,7 +23969,7 @@ DefineAbility({
   Name="Talons 1 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -23984,7 +23984,7 @@ DefineAbility({
   Name="Talons 1 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -23999,7 +23999,7 @@ DefineAbility({
   Name="Talons 1 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -24014,7 +24014,7 @@ DefineAbility({
   Name="Talons 1 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -24029,7 +24029,7 @@ DefineAbility({
   Name="Talons 1 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -24044,7 +24044,7 @@ DefineAbility({
   Name="Talons 1 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -24059,7 +24059,7 @@ DefineAbility({
   Name="Talons 2 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -24074,7 +24074,7 @@ DefineAbility({
   Name="Talons 2 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -24089,7 +24089,7 @@ DefineAbility({
   Name="Talons 2 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -24104,7 +24104,7 @@ DefineAbility({
   Name="Talons 2 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -24119,7 +24119,7 @@ DefineAbility({
   Name="Talons 2 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -24134,7 +24134,7 @@ DefineAbility({
   Name="Talons 2 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -24149,7 +24149,7 @@ DefineAbility({
   Name="Talons 2 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -24164,7 +24164,7 @@ DefineAbility({
   Name="Talons 2 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -24179,7 +24179,7 @@ DefineAbility({
   Name="Talons 3 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -24194,7 +24194,7 @@ DefineAbility({
   Name="Talons 3 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -24209,7 +24209,7 @@ DefineAbility({
   Name="Talons 3 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -24224,7 +24224,7 @@ DefineAbility({
   Name="Talons 3 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -24239,7 +24239,7 @@ DefineAbility({
   Name="Talons 3 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -24254,7 +24254,7 @@ DefineAbility({
   Name="Talons 3 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -24269,7 +24269,7 @@ DefineAbility({
   Name="Talons 3 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -24284,7 +24284,7 @@ DefineAbility({
   Name="Talons 3 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -24299,7 +24299,7 @@ DefineAbility({
   Name="Talons 4 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -24314,7 +24314,7 @@ DefineAbility({
   Name="Talons 4 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -24329,7 +24329,7 @@ DefineAbility({
   Name="Talons 4 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -24344,7 +24344,7 @@ DefineAbility({
   Name="Talons 4 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -24359,7 +24359,7 @@ DefineAbility({
   Name="Talons 4 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -24374,7 +24374,7 @@ DefineAbility({
   Name="Talons 4 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -24389,7 +24389,7 @@ DefineAbility({
   Name="Talons 4 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -24404,7 +24404,7 @@ DefineAbility({
   Name="Talons 4 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -24419,7 +24419,7 @@ DefineAbility({
   Name="Talons 5 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -24434,7 +24434,7 @@ DefineAbility({
   Name="Talons 5 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -24449,7 +24449,7 @@ DefineAbility({
   Name="Talons 5 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -24464,7 +24464,7 @@ DefineAbility({
   Name="Talons 5 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -24479,7 +24479,7 @@ DefineAbility({
   Name="Talons 5 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -24494,7 +24494,7 @@ DefineAbility({
   Name="Talons 5 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -24509,7 +24509,7 @@ DefineAbility({
   Name="Talons 5 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -24524,7 +24524,7 @@ DefineAbility({
   Name="Talons 5 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -24539,7 +24539,7 @@ DefineAbility({
   Name="Talons 6 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -24554,7 +24554,7 @@ DefineAbility({
   Name="Talons 6 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -24569,7 +24569,7 @@ DefineAbility({
   Name="Talons 6 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -24584,7 +24584,7 @@ DefineAbility({
   Name="Talons 6 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -24599,7 +24599,7 @@ DefineAbility({
   Name="Talons 6 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -24614,7 +24614,7 @@ DefineAbility({
   Name="Talons 6 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -24629,7 +24629,7 @@ DefineAbility({
   Name="Talons 6 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -24644,7 +24644,7 @@ DefineAbility({
   Name="Talons 6 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -24659,7 +24659,7 @@ DefineAbility({
   Name="Talons 7 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -24674,7 +24674,7 @@ DefineAbility({
   Name="Talons 7 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -24689,7 +24689,7 @@ DefineAbility({
   Name="Talons 7 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -24704,7 +24704,7 @@ DefineAbility({
   Name="Talons 7 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -24719,7 +24719,7 @@ DefineAbility({
   Name="Talons 7 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -24734,7 +24734,7 @@ DefineAbility({
   Name="Talons 7 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -24749,7 +24749,7 @@ DefineAbility({
   Name="Talons 7 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -24764,7 +24764,7 @@ DefineAbility({
   Name="Talons 7 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -24779,7 +24779,7 @@ DefineAbility({
   Name="Hoof 1 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -24794,7 +24794,7 @@ DefineAbility({
   Name="Hoof 1 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -24809,7 +24809,7 @@ DefineAbility({
   Name="Hoof 1 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -24824,7 +24824,7 @@ DefineAbility({
   Name="Hoof 1 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -24839,7 +24839,7 @@ DefineAbility({
   Name="Hoof 1 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -24854,7 +24854,7 @@ DefineAbility({
   Name="Hoof 1 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -24869,7 +24869,7 @@ DefineAbility({
   Name="Hoof 1 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -24884,7 +24884,7 @@ DefineAbility({
   Name="Hoof 1 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -24899,7 +24899,7 @@ DefineAbility({
   Name="Hoof 2 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -24914,7 +24914,7 @@ DefineAbility({
   Name="Hoof 2 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -24929,7 +24929,7 @@ DefineAbility({
   Name="Hoof 2 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -24944,7 +24944,7 @@ DefineAbility({
   Name="Hoof 2 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -24959,7 +24959,7 @@ DefineAbility({
   Name="Hoof 2 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -24974,7 +24974,7 @@ DefineAbility({
   Name="Hoof 2 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -24989,7 +24989,7 @@ DefineAbility({
   Name="Hoof 2 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -25004,7 +25004,7 @@ DefineAbility({
   Name="Hoof 2 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -25019,7 +25019,7 @@ DefineAbility({
   Name="Hoof 3 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -25034,7 +25034,7 @@ DefineAbility({
   Name="Hoof 3 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -25049,7 +25049,7 @@ DefineAbility({
   Name="Hoof 3 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -25064,7 +25064,7 @@ DefineAbility({
   Name="Hoof 3 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -25079,7 +25079,7 @@ DefineAbility({
   Name="Hoof 3 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -25094,7 +25094,7 @@ DefineAbility({
   Name="Hoof 3 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -25109,7 +25109,7 @@ DefineAbility({
   Name="Hoof 3 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -25124,7 +25124,7 @@ DefineAbility({
   Name="Hoof 3 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -25139,7 +25139,7 @@ DefineAbility({
   Name="Hoof 4 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -25154,7 +25154,7 @@ DefineAbility({
   Name="Hoof 4 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -25169,7 +25169,7 @@ DefineAbility({
   Name="Hoof 4 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -25184,7 +25184,7 @@ DefineAbility({
   Name="Hoof 4 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -25199,7 +25199,7 @@ DefineAbility({
   Name="Hoof 4 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -25214,7 +25214,7 @@ DefineAbility({
   Name="Hoof 4 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -25229,7 +25229,7 @@ DefineAbility({
   Name="Hoof 4 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -25244,7 +25244,7 @@ DefineAbility({
   Name="Hoof 4 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -25259,7 +25259,7 @@ DefineAbility({
   Name="Hoof 5 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -25274,7 +25274,7 @@ DefineAbility({
   Name="Hoof 5 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -25289,7 +25289,7 @@ DefineAbility({
   Name="Hoof 5 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -25304,7 +25304,7 @@ DefineAbility({
   Name="Hoof 5 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -25319,7 +25319,7 @@ DefineAbility({
   Name="Hoof 5 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -25334,7 +25334,7 @@ DefineAbility({
   Name="Hoof 5 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -25349,7 +25349,7 @@ DefineAbility({
   Name="Hoof 5 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -25364,7 +25364,7 @@ DefineAbility({
   Name="Hoof 5 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -25379,7 +25379,7 @@ DefineAbility({
   Name="Hoof 6 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -25394,7 +25394,7 @@ DefineAbility({
   Name="Hoof 6 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -25409,7 +25409,7 @@ DefineAbility({
   Name="Hoof 6 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -25424,7 +25424,7 @@ DefineAbility({
   Name="Hoof 6 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -25439,7 +25439,7 @@ DefineAbility({
   Name="Hoof 6 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -25454,7 +25454,7 @@ DefineAbility({
   Name="Hoof 6 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -25469,7 +25469,7 @@ DefineAbility({
   Name="Hoof 6 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -25484,7 +25484,7 @@ DefineAbility({
   Name="Hoof 6 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -25499,7 +25499,7 @@ DefineAbility({
   Name="Hoof 7 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -25514,7 +25514,7 @@ DefineAbility({
   Name="Hoof 7 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -25529,7 +25529,7 @@ DefineAbility({
   Name="Hoof 7 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -25544,7 +25544,7 @@ DefineAbility({
   Name="Hoof 7 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -25559,7 +25559,7 @@ DefineAbility({
   Name="Hoof 7 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -25574,7 +25574,7 @@ DefineAbility({
   Name="Hoof 7 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -25589,7 +25589,7 @@ DefineAbility({
   Name="Hoof 7 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -25604,7 +25604,7 @@ DefineAbility({
   Name="Hoof 7 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -25619,7 +25619,7 @@ DefineAbility({
   Name="Tentacle 1 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -25634,7 +25634,7 @@ DefineAbility({
   Name="Tentacle 1 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -25649,7 +25649,7 @@ DefineAbility({
   Name="Tentacle 1 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -25664,7 +25664,7 @@ DefineAbility({
   Name="Tentacle 1 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -25679,7 +25679,7 @@ DefineAbility({
   Name="Tentacle 1 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -25694,7 +25694,7 @@ DefineAbility({
   Name="Tentacle 1 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -25709,7 +25709,7 @@ DefineAbility({
   Name="Tentacle 1 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -25724,7 +25724,7 @@ DefineAbility({
   Name="Tentacle 1 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -25739,7 +25739,7 @@ DefineAbility({
   Name="Tentacle 2 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -25754,7 +25754,7 @@ DefineAbility({
   Name="Tentacle 2 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -25769,7 +25769,7 @@ DefineAbility({
   Name="Tentacle 2 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -25784,7 +25784,7 @@ DefineAbility({
   Name="Tentacle 2 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -25799,7 +25799,7 @@ DefineAbility({
   Name="Tentacle 2 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -25814,7 +25814,7 @@ DefineAbility({
   Name="Tentacle 2 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -25829,7 +25829,7 @@ DefineAbility({
   Name="Tentacle 2 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -25844,7 +25844,7 @@ DefineAbility({
   Name="Tentacle 2 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -25859,7 +25859,7 @@ DefineAbility({
   Name="Tentacle 3 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -25874,7 +25874,7 @@ DefineAbility({
   Name="Tentacle 3 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -25889,7 +25889,7 @@ DefineAbility({
   Name="Tentacle 3 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -25904,7 +25904,7 @@ DefineAbility({
   Name="Tentacle 3 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -25919,7 +25919,7 @@ DefineAbility({
   Name="Tentacle 3 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -25934,7 +25934,7 @@ DefineAbility({
   Name="Tentacle 3 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -25949,7 +25949,7 @@ DefineAbility({
   Name="Tentacle 3 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -25964,7 +25964,7 @@ DefineAbility({
   Name="Tentacle 3 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -25979,7 +25979,7 @@ DefineAbility({
   Name="Tentacle 4 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -25994,7 +25994,7 @@ DefineAbility({
   Name="Tentacle 4 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -26009,7 +26009,7 @@ DefineAbility({
   Name="Tentacle 4 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -26024,7 +26024,7 @@ DefineAbility({
   Name="Tentacle 4 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -26039,7 +26039,7 @@ DefineAbility({
   Name="Tentacle 4 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -26054,7 +26054,7 @@ DefineAbility({
   Name="Tentacle 4 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -26069,7 +26069,7 @@ DefineAbility({
   Name="Tentacle 4 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -26084,7 +26084,7 @@ DefineAbility({
   Name="Tentacle 4 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -26099,7 +26099,7 @@ DefineAbility({
   Name="Tentacle 5 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -26114,7 +26114,7 @@ DefineAbility({
   Name="Tentacle 5 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -26129,7 +26129,7 @@ DefineAbility({
   Name="Tentacle 5 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -26144,7 +26144,7 @@ DefineAbility({
   Name="Tentacle 5 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -26159,7 +26159,7 @@ DefineAbility({
   Name="Tentacle 5 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -26174,7 +26174,7 @@ DefineAbility({
   Name="Tentacle 5 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -26189,7 +26189,7 @@ DefineAbility({
   Name="Tentacle 5 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -26204,7 +26204,7 @@ DefineAbility({
   Name="Tentacle 5 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -26219,7 +26219,7 @@ DefineAbility({
   Name="Tentacle 6 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -26234,7 +26234,7 @@ DefineAbility({
   Name="Tentacle 6 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -26249,7 +26249,7 @@ DefineAbility({
   Name="Tentacle 6 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -26264,7 +26264,7 @@ DefineAbility({
   Name="Tentacle 6 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -26279,7 +26279,7 @@ DefineAbility({
   Name="Tentacle 6 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -26294,7 +26294,7 @@ DefineAbility({
   Name="Tentacle 6 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -26309,7 +26309,7 @@ DefineAbility({
   Name="Tentacle 6 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -26324,7 +26324,7 @@ DefineAbility({
   Name="Tentacle 6 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -26339,7 +26339,7 @@ DefineAbility({
   Name="Tentacle 7 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -26354,7 +26354,7 @@ DefineAbility({
   Name="Tentacle 7 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -26369,7 +26369,7 @@ DefineAbility({
   Name="Tentacle 7 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -26384,7 +26384,7 @@ DefineAbility({
   Name="Tentacle 7 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -26399,7 +26399,7 @@ DefineAbility({
   Name="Tentacle 7 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -26414,7 +26414,7 @@ DefineAbility({
   Name="Tentacle 7 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -26429,7 +26429,7 @@ DefineAbility({
   Name="Tentacle 7 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -26444,7 +26444,7 @@ DefineAbility({
   Name="Tentacle 7 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -26459,7 +26459,7 @@ DefineAbility({
   Name="Tentacle 8 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -26474,7 +26474,7 @@ DefineAbility({
   Name="Tentacle 8 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -26489,7 +26489,7 @@ DefineAbility({
   Name="Tentacle 8 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -26504,7 +26504,7 @@ DefineAbility({
   Name="Tentacle 8 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -26519,7 +26519,7 @@ DefineAbility({
   Name="Tentacle 8 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -26534,7 +26534,7 @@ DefineAbility({
   Name="Tentacle 8 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -26549,7 +26549,7 @@ DefineAbility({
   Name="Tentacle 8 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -26564,7 +26564,7 @@ DefineAbility({
   Name="Tentacle 8 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -26579,7 +26579,7 @@ DefineAbility({
   Name="Wing 1 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -26594,7 +26594,7 @@ DefineAbility({
   Name="Wing 1 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -26609,7 +26609,7 @@ DefineAbility({
   Name="Wing 1 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -26624,7 +26624,7 @@ DefineAbility({
   Name="Wing 1 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -26639,7 +26639,7 @@ DefineAbility({
   Name="Wing 1 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -26654,7 +26654,7 @@ DefineAbility({
   Name="Wing 1 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -26669,7 +26669,7 @@ DefineAbility({
   Name="Wing 1 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -26684,7 +26684,7 @@ DefineAbility({
   Name="Wing 1 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -26699,7 +26699,7 @@ DefineAbility({
   Name="Wing 2 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -26714,7 +26714,7 @@ DefineAbility({
   Name="Wing 2 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -26729,7 +26729,7 @@ DefineAbility({
   Name="Wing 2 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -26744,7 +26744,7 @@ DefineAbility({
   Name="Wing 2 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -26759,7 +26759,7 @@ DefineAbility({
   Name="Wing 2 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -26774,7 +26774,7 @@ DefineAbility({
   Name="Wing 2 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -26789,7 +26789,7 @@ DefineAbility({
   Name="Wing 2 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -26804,7 +26804,7 @@ DefineAbility({
   Name="Wing 2 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -26819,7 +26819,7 @@ DefineAbility({
   Name="Wing 3 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -26834,7 +26834,7 @@ DefineAbility({
   Name="Wing 3 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -26849,7 +26849,7 @@ DefineAbility({
   Name="Wing 3 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -26864,7 +26864,7 @@ DefineAbility({
   Name="Wing 3 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -26879,7 +26879,7 @@ DefineAbility({
   Name="Wing 3 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -26894,7 +26894,7 @@ DefineAbility({
   Name="Wing 3 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -26909,7 +26909,7 @@ DefineAbility({
   Name="Wing 3 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -26924,7 +26924,7 @@ DefineAbility({
   Name="Wing 3 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -26939,7 +26939,7 @@ DefineAbility({
   Name="Wing 4 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -26954,7 +26954,7 @@ DefineAbility({
   Name="Wing 4 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -26969,7 +26969,7 @@ DefineAbility({
   Name="Wing 4 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -26984,7 +26984,7 @@ DefineAbility({
   Name="Wing 4 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -26999,7 +26999,7 @@ DefineAbility({
   Name="Wing 4 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -27014,7 +27014,7 @@ DefineAbility({
   Name="Wing 4 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -27029,7 +27029,7 @@ DefineAbility({
   Name="Wing 4 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -27044,7 +27044,7 @@ DefineAbility({
   Name="Wing 4 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -27059,7 +27059,7 @@ DefineAbility({
   Name="Wing 5 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -27074,7 +27074,7 @@ DefineAbility({
   Name="Wing 5 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -27089,7 +27089,7 @@ DefineAbility({
   Name="Wing 5 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -27104,7 +27104,7 @@ DefineAbility({
   Name="Wing 5 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -27119,7 +27119,7 @@ DefineAbility({
   Name="Wing 5 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -27134,7 +27134,7 @@ DefineAbility({
   Name="Wing 5 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -27149,7 +27149,7 @@ DefineAbility({
   Name="Wing 5 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -27164,7 +27164,7 @@ DefineAbility({
   Name="Wing 5 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -27179,7 +27179,7 @@ DefineAbility({
   Name="Wing 6 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -27194,7 +27194,7 @@ DefineAbility({
   Name="Wing 6 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -27209,7 +27209,7 @@ DefineAbility({
   Name="Wing 6 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -27224,7 +27224,7 @@ DefineAbility({
   Name="Wing 6 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -27239,7 +27239,7 @@ DefineAbility({
   Name="Wing 6 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -27254,7 +27254,7 @@ DefineAbility({
   Name="Wing 6 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -27269,7 +27269,7 @@ DefineAbility({
   Name="Wing 6 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -27284,7 +27284,7 @@ DefineAbility({
   Name="Wing 6 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -27299,7 +27299,7 @@ DefineAbility({
   Name="Wing 7 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -27314,7 +27314,7 @@ DefineAbility({
   Name="Wing 7 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -27329,7 +27329,7 @@ DefineAbility({
   Name="Wing 7 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -27344,7 +27344,7 @@ DefineAbility({
   Name="Wing 7 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -27359,7 +27359,7 @@ DefineAbility({
   Name="Wing 7 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -27374,7 +27374,7 @@ DefineAbility({
   Name="Wing 7 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -27389,7 +27389,7 @@ DefineAbility({
   Name="Wing 7 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -27404,7 +27404,7 @@ DefineAbility({
   Name="Wing 7 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -27419,7 +27419,7 @@ DefineAbility({
   Name="Tail Sweep (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -27434,7 +27434,7 @@ DefineAbility({
   Name="Tail Sweep (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -27449,7 +27449,7 @@ DefineAbility({
   Name="Tail Sweep (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -27464,7 +27464,7 @@ DefineAbility({
   Name="Tail Sweep (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -27479,7 +27479,7 @@ DefineAbility({
   Name="Tail Sweep (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -27494,7 +27494,7 @@ DefineAbility({
   Name="Tail Sweep (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -27509,7 +27509,7 @@ DefineAbility({
   Name="Tail Sweep (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -27524,7 +27524,7 @@ DefineAbility({
   Name="Tail Sweep (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -27539,7 +27539,7 @@ DefineAbility({
   Name="Crush (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -27554,7 +27554,7 @@ DefineAbility({
   Name="Crush (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -27569,7 +27569,7 @@ DefineAbility({
   Name="Crush (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -27584,7 +27584,7 @@ DefineAbility({
   Name="Crush (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -27599,7 +27599,7 @@ DefineAbility({
   Name="Crush (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -27614,7 +27614,7 @@ DefineAbility({
   Name="Crush (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -27629,7 +27629,7 @@ DefineAbility({
   Name="Crush (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -27644,7 +27644,7 @@ DefineAbility({
   Name="Crush (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -27659,7 +27659,7 @@ DefineAbility({
   Name="Rake 2 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -27674,7 +27674,7 @@ DefineAbility({
   Name="Rake 2 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -27689,7 +27689,7 @@ DefineAbility({
   Name="Rake 2 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -27704,7 +27704,7 @@ DefineAbility({
   Name="Rake 2 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -27719,7 +27719,7 @@ DefineAbility({
   Name="Rake 2 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -27734,7 +27734,7 @@ DefineAbility({
   Name="Rake 2 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -27749,7 +27749,7 @@ DefineAbility({
   Name="Rake 2 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -27764,7 +27764,7 @@ DefineAbility({
   Name="Rake 2 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -27779,7 +27779,7 @@ DefineAbility({
   Name="Hair 1 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -27794,7 +27794,7 @@ DefineAbility({
   Name="Hair 1 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -27809,7 +27809,7 @@ DefineAbility({
   Name="Hair 1 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -27824,7 +27824,7 @@ DefineAbility({
   Name="Hair 1 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -27839,7 +27839,7 @@ DefineAbility({
   Name="Hair 1 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -27854,7 +27854,7 @@ DefineAbility({
   Name="Hair 1 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -27869,7 +27869,7 @@ DefineAbility({
   Name="Hair 1 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -27884,7 +27884,7 @@ DefineAbility({
   Name="Hair 2 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -27899,7 +27899,7 @@ DefineAbility({
   Name="Hair 2 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -27914,7 +27914,7 @@ DefineAbility({
   Name="Hair 2 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -27929,7 +27929,7 @@ DefineAbility({
   Name="Hair 2 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -27944,7 +27944,7 @@ DefineAbility({
   Name="Hair 2 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -27959,7 +27959,7 @@ DefineAbility({
   Name="Hair 2 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -27974,7 +27974,7 @@ DefineAbility({
   Name="Hair 2 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -27989,7 +27989,7 @@ DefineAbility({
   Name="Hair 3 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -28004,7 +28004,7 @@ DefineAbility({
   Name="Hair 3 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -28019,7 +28019,7 @@ DefineAbility({
   Name="Hair 3 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -28034,7 +28034,7 @@ DefineAbility({
   Name="Hair 3 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -28049,7 +28049,7 @@ DefineAbility({
   Name="Hair 3 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -28064,7 +28064,7 @@ DefineAbility({
   Name="Hair 3 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -28079,7 +28079,7 @@ DefineAbility({
   Name="Hair 3 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -28094,7 +28094,7 @@ DefineAbility({
   Name="Hair 4 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -28109,7 +28109,7 @@ DefineAbility({
   Name="Hair 4 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -28124,7 +28124,7 @@ DefineAbility({
   Name="Hair 4 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -28139,7 +28139,7 @@ DefineAbility({
   Name="Hair 4 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -28154,7 +28154,7 @@ DefineAbility({
   Name="Hair 4 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -28169,7 +28169,7 @@ DefineAbility({
   Name="Hair 4 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -28184,7 +28184,7 @@ DefineAbility({
   Name="Hair 4 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -28199,7 +28199,7 @@ DefineAbility({
   Name="Ranged Slam 1 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -28214,7 +28214,7 @@ DefineAbility({
   Name="Ranged Slam 1 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -28229,7 +28229,7 @@ DefineAbility({
   Name="Ranged Slam 1 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -28244,7 +28244,7 @@ DefineAbility({
   Name="Ranged Slam 1 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -28259,7 +28259,7 @@ DefineAbility({
   Name="Ranged Slam 1 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -28274,7 +28274,7 @@ DefineAbility({
   Name="Ranged Slam 1 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -28289,7 +28289,7 @@ DefineAbility({
   Name="Ranged Slam 1 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -28304,7 +28304,7 @@ DefineAbility({
   Name="Ranged Slam 1 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -28319,7 +28319,7 @@ DefineAbility({
   Name="Ranged Slam 2 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -28334,7 +28334,7 @@ DefineAbility({
   Name="Ranged Slam 2 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -28349,7 +28349,7 @@ DefineAbility({
   Name="Ranged Slam 2 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -28364,7 +28364,7 @@ DefineAbility({
   Name="Ranged Slam 2 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -28379,7 +28379,7 @@ DefineAbility({
   Name="Ranged Slam 2 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -28394,7 +28394,7 @@ DefineAbility({
   Name="Ranged Slam 2 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -28409,7 +28409,7 @@ DefineAbility({
   Name="Ranged Slam 2 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -28424,7 +28424,7 @@ DefineAbility({
   Name="Ranged Slam 2 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -28439,7 +28439,7 @@ DefineAbility({
   Name="Ranged Slam 3 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -28454,7 +28454,7 @@ DefineAbility({
   Name="Ranged Slam 3 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -28469,7 +28469,7 @@ DefineAbility({
   Name="Ranged Slam 3 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -28484,7 +28484,7 @@ DefineAbility({
   Name="Ranged Slam 3 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -28499,7 +28499,7 @@ DefineAbility({
   Name="Ranged Slam 3 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -28514,7 +28514,7 @@ DefineAbility({
   Name="Ranged Slam 3 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -28529,7 +28529,7 @@ DefineAbility({
   Name="Ranged Slam 3 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -28544,7 +28544,7 @@ DefineAbility({
   Name="Ranged Slam 3 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -28559,7 +28559,7 @@ DefineAbility({
   Name="Ranged Slam 4 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -28574,7 +28574,7 @@ DefineAbility({
   Name="Ranged Slam 4 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -28589,7 +28589,7 @@ DefineAbility({
   Name="Ranged Slam 4 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -28604,7 +28604,7 @@ DefineAbility({
   Name="Ranged Slam 4 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -28619,7 +28619,7 @@ DefineAbility({
   Name="Ranged Slam 4 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -28634,7 +28634,7 @@ DefineAbility({
   Name="Ranged Slam 4 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -28649,7 +28649,7 @@ DefineAbility({
   Name="Ranged Slam 4 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -28664,7 +28664,7 @@ DefineAbility({
   Name="Ranged Slam 4 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -28679,7 +28679,7 @@ DefineAbility({
   Name="Ranged Slam 5 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -28694,7 +28694,7 @@ DefineAbility({
   Name="Ranged Slam 5 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -28709,7 +28709,7 @@ DefineAbility({
   Name="Ranged Slam 5 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -28724,7 +28724,7 @@ DefineAbility({
   Name="Ranged Slam 5 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -28739,7 +28739,7 @@ DefineAbility({
   Name="Ranged Slam 5 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -28754,7 +28754,7 @@ DefineAbility({
   Name="Ranged Slam 5 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -28769,7 +28769,7 @@ DefineAbility({
   Name="Ranged Slam 5 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -28784,7 +28784,7 @@ DefineAbility({
   Name="Ranged Slam 5 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -28799,7 +28799,7 @@ DefineAbility({
   Name="Ranged Slam 6 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -28814,7 +28814,7 @@ DefineAbility({
   Name="Ranged Slam 6 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -28829,7 +28829,7 @@ DefineAbility({
   Name="Ranged Slam 6 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -28844,7 +28844,7 @@ DefineAbility({
   Name="Ranged Slam 6 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -28859,7 +28859,7 @@ DefineAbility({
   Name="Ranged Slam 6 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -28874,7 +28874,7 @@ DefineAbility({
   Name="Ranged Slam 6 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -28889,7 +28889,7 @@ DefineAbility({
   Name="Ranged Slam 6 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -28904,7 +28904,7 @@ DefineAbility({
   Name="Ranged Slam 6 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -28919,7 +28919,7 @@ DefineAbility({
   Name="Ranged Slam 7 (Diminutive)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("D")
     end,
   },
@@ -28934,7 +28934,7 @@ DefineAbility({
   Name="Ranged Slam 7 (Tiny)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("T")
     end,
   },
@@ -28949,7 +28949,7 @@ DefineAbility({
   Name="Ranged Slam 7 (Small)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("S")
     end,
   },
@@ -28964,7 +28964,7 @@ DefineAbility({
   Name="Ranged Slam 7 (Medium)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("M")
     end,
   },
@@ -28979,7 +28979,7 @@ DefineAbility({
   Name="Ranged Slam 7 (Large)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("L")
     end,
   },
@@ -28994,7 +28994,7 @@ DefineAbility({
   Name="Ranged Slam 7 (Huge)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("H")
     end,
   },
@@ -29009,7 +29009,7 @@ DefineAbility({
   Name="Ranged Slam 7 (Gargantuan)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("G")
     end,
   },
@@ -29024,7 +29024,7 @@ DefineAbility({
   Name="Ranged Slam 7 (Colossal)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.BaseSize == GetSize("C")
     end,
   },
@@ -29068,7 +29068,7 @@ DefineAbility({
         "Dragon ~ Tail Slap",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "L"
         end,
       },
@@ -29080,7 +29080,7 @@ DefineAbility({
         "Dragon ~ Crush",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "H"
         end,
       },
@@ -29092,7 +29092,7 @@ DefineAbility({
         "Dragon ~ Tail Sweep",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "G"
         end,
       },
@@ -29104,10 +29104,10 @@ DefineAbility({
         "Dragon ~ Wing",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "M"
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HasWings"] == 0)
         end,
       },
@@ -29553,7 +29553,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "T" or character.Size >= "L"
         end,
       },
@@ -29565,7 +29565,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "C"
         end,
       },
@@ -29643,7 +29643,7 @@ DefineAbility({
       Formula("1"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -29692,7 +29692,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Crush)" then return true end
@@ -29715,7 +29715,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "G"
         end,
       },
@@ -29734,7 +29734,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "G"
         end,
       },
@@ -29762,7 +29762,7 @@ DefineAbility({
       Formula("TailSweepDC"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -29818,7 +29818,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Tail Sweep)" then return true end
@@ -29841,7 +29841,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "C"
         end,
       },
@@ -29891,7 +29891,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "S"
         end,
       },
@@ -29903,7 +29903,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "S"
         end,
       },
@@ -29915,7 +29915,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "M"
         end,
       },
@@ -29927,7 +29927,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("20"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "M"
         end,
       },
@@ -29939,7 +29939,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "L"
         end,
       },
@@ -29951,7 +29951,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("20"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "L"
         end,
       },
@@ -29963,7 +29963,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "H"
         end,
       },
@@ -29975,7 +29975,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("20"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "H"
         end,
       },
@@ -29987,7 +29987,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "G"
         end,
       },
@@ -29999,7 +29999,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("20"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "G"
         end,
       },
@@ -30011,7 +30011,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "C"
         end,
       },
@@ -30023,7 +30023,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("20"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "C"
         end,
       },
@@ -30154,7 +30154,7 @@ DefineAbility({
         "Damage Reduction / Magic",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableDragonBaseDR"] == 0)
         end,
       },
@@ -30203,7 +30203,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("5*(floor((DragonAgeCategory-3)/2))"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] >= 5)
         end,
       },
@@ -30222,7 +30222,7 @@ DefineAbility({
       Category="MOVEADD",
       Formula=Formula("50"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "S"
         end,
       },
@@ -30234,7 +30234,7 @@ DefineAbility({
       Category="MOVEADD",
       Formula=Formula("50"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "L"
         end,
       },
@@ -30246,7 +30246,7 @@ DefineAbility({
       Category="MOVEADD",
       Formula=Formula("50"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "G"
         end,
       },
@@ -30265,7 +30265,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "L"
         end,
       },
@@ -30277,7 +30277,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size >= "G"
         end,
       },
@@ -30302,7 +30302,7 @@ DefineAbility({
         "Dragon Age (2)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] >= 2)
         end,
       },
@@ -30314,7 +30314,7 @@ DefineAbility({
         "Dragon Age (3)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] >= 3)
         end,
       },
@@ -30326,7 +30326,7 @@ DefineAbility({
         "Dragon Age (4)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] >= 4)
         end,
       },
@@ -30338,7 +30338,7 @@ DefineAbility({
         "Dragon Age (5)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] >= 5)
         end,
       },
@@ -30350,7 +30350,7 @@ DefineAbility({
         "Dragon Age (6)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] >= 6)
         end,
       },
@@ -30362,7 +30362,7 @@ DefineAbility({
         "Dragon Age (7)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] >= 7)
         end,
       },
@@ -30374,7 +30374,7 @@ DefineAbility({
         "Dragon Age (8)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] >= 8)
         end,
       },
@@ -30386,7 +30386,7 @@ DefineAbility({
         "Dragon Age (9)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] >= 9)
         end,
       },
@@ -30398,7 +30398,7 @@ DefineAbility({
         "Dragon Age (10)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] >= 10)
         end,
       },
@@ -30410,7 +30410,7 @@ DefineAbility({
         "Dragon Age (11)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] >= 11)
         end,
       },
@@ -30422,7 +30422,7 @@ DefineAbility({
         "Dragon Age (12)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] >= 12)
         end,
       },
@@ -30433,7 +30433,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Dragon Age Category - Wyrmling",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] == 1)
         end,
       },
@@ -30442,7 +30442,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Dragon Age Category - Very Young",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] == 2)
         end,
       },
@@ -30451,7 +30451,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Dragon Age Category - Young",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] == 3)
         end,
       },
@@ -30460,7 +30460,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Dragon Age Category - Juvenile",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] == 4)
         end,
       },
@@ -30469,7 +30469,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Dragon Age Category - Young Adult",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] == 5)
         end,
       },
@@ -30478,7 +30478,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Dragon Age Category - Adult",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] == 6)
         end,
       },
@@ -30487,7 +30487,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Dragon Age Category - Mature Adult",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] == 7)
         end,
       },
@@ -30496,7 +30496,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Dragon Age Category - Old",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] == 8)
         end,
       },
@@ -30505,7 +30505,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Dragon Age Category - Very Old",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] == 9)
         end,
       },
@@ -30514,7 +30514,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Dragon Age Category - Ancient",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] == 10)
         end,
       },
@@ -30523,7 +30523,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Dragon Age Category - Wyrm",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] == 11)
         end,
       },
@@ -30532,7 +30532,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Dragon Age Category - Great Wyrm",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonAgeCategory"] >= 12)
         end,
       },
@@ -30558,7 +30558,7 @@ ModifyAbility({
         "Fast Healing",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FastHealingRate"] >= 1)
         end,
       },
@@ -30762,7 +30762,7 @@ DefineAbility({
       Formula("BleedDamageDieSize"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -30842,7 +30842,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -30911,7 +30911,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -30980,7 +30980,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -31047,7 +31047,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -31114,7 +31114,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -31181,7 +31181,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -31248,7 +31248,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -31315,7 +31315,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -31384,7 +31384,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -31453,7 +31453,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -31522,7 +31522,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -31591,7 +31591,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -31656,7 +31656,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -31725,7 +31725,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -31794,7 +31794,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -31863,7 +31863,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -31929,7 +31929,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Burn)" then return true end
@@ -31967,7 +31967,7 @@ DefineAbility({
   Description={
     Format="You have the ability to assume the appearance of a specific creature or type of creature (usually a humanoid), but retains most of your own physical qualities. You cannot change shape to a form more than one size category smaller or larger than your original form. This ability functions as a polymorph spell, but you do not adjust your ability scores (although you gain any other abilities of the creature you mimic). Unless otherwise stated, you can remain in an alternate form indefinitely.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -32018,7 +32018,7 @@ DefineAbility({
       Formula("ConstrictBonusDamage"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -32132,7 +32132,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Disease)" then return true end
@@ -32194,7 +32194,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Distraction)" then return true end
@@ -32256,7 +32256,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Distraction)" then return true end
@@ -32315,7 +32315,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Energy Drain)" then return true end
@@ -32425,7 +32425,7 @@ DefineAbility({
         "Maneuverability (Clumsy)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Maneuverability"] <= 1)
         end,
       },
@@ -32437,7 +32437,7 @@ DefineAbility({
         "Maneuverability (Poor)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Maneuverability"] == 2)
         end,
       },
@@ -32449,7 +32449,7 @@ DefineAbility({
         "Maneuverability (Average)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Maneuverability"] == 3)
         end,
       },
@@ -32461,7 +32461,7 @@ DefineAbility({
         "Maneuverability (Good)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Maneuverability"] == 4)
         end,
       },
@@ -32473,7 +32473,7 @@ DefineAbility({
         "Maneuverability (Perfect)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Maneuverability"] >= 5)
         end,
       },
@@ -32484,7 +32484,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Maneuverability (Perfect)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FlightManeuverabilityCategory"] == 5)
         end,
       },
@@ -32493,7 +32493,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Maneuverability (Good)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FlightManeuverabilityCategory"] == 4)
         end,
       },
@@ -32502,7 +32502,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Maneuverability (Average)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FlightManeuverabilityCategory"] == 3)
         end,
       },
@@ -32511,7 +32511,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Maneuverability (Poor)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FlightManeuverabilityCategory"] == 2)
         end,
       },
@@ -32520,7 +32520,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Maneuverability (Clumsy)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FlightManeuverabilityCategory"] <= 1)
         end,
       },
@@ -32721,7 +32721,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Gaze)" then return true end
@@ -32745,7 +32745,7 @@ DefineAbility({
   Description={
     Format="If you hit with the indicated attack (usually a claw or bite attack), you deal normal damage and can attempt to start a grapple as a free action without provoking an attack of opportunity. You have the option to conduct the grapple normally, or simply use the part of your body you used in the grab to hold the opponent. If you choose to do the latter, you takes a -20 penalty on your CMB check to make and maintain the grapple, but do not gain the grappled condition itself. A successful hold does not deal any extra damage unless you also have the constrict special attack. If you do not constrict, each successful grapple check you make during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, you deal constriction damage as well. You receive a +4 bonus on combat maneuver checks made to start and maintain a grapple. Unless otherwise noted, grab can only be used on creatures of a size equal to or smaller than you.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -33502,7 +33502,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F" or character.Size == "D"
     end,
   },
@@ -33702,7 +33702,7 @@ DefineAbility({
       Formula("ParalysisDC"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -33748,7 +33748,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Paralysis)" then return true end
@@ -33776,7 +33776,7 @@ DefineAbility({
       Formula("ParalysisDC"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -33822,7 +33822,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Paralysis)" then return true end
@@ -33881,7 +33881,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Poison)" then return true end
@@ -33940,7 +33940,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Poison)" then return true end
@@ -34421,7 +34421,7 @@ DefineAbility({
       Formula("RendBonusDamage"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -34465,7 +34465,7 @@ DefineAbility({
         "Resistance to Acid ~ Output",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Immunity to Acid" then return true end
@@ -34488,7 +34488,7 @@ DefineAbility({
         "Resistance to Cold ~ Output",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Immunity to Cold" then return true end
@@ -34511,7 +34511,7 @@ DefineAbility({
         "Resistance to Fire ~ Output",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Immunity to Fire" then return true end
@@ -34534,7 +34534,7 @@ DefineAbility({
         "Resistance to Electricity ~ Output",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Immunity to Electricity" then return true end
@@ -34557,7 +34557,7 @@ DefineAbility({
         "Resistance to Sonic ~ Output",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Immunity to Sonic" then return true end
@@ -34850,7 +34850,7 @@ DefineAbility({
         "StenchDuration",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StenchDieSize"] == 0)
         end,
       },
@@ -34864,7 +34864,7 @@ DefineAbility({
         "StenchDieSize",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StenchDieSize"] > 0)
         end,
       },
@@ -34878,7 +34878,7 @@ DefineAbility({
         "StenchDieSizeMinutes",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StenchDieSizeMinutes"] > 0)
         end,
       },
@@ -34899,7 +34899,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Stench)" then return true end
@@ -34931,7 +34931,7 @@ DefineAbility({
       Formula("SwallowWholeHP"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -34981,7 +34981,7 @@ DefineAbility({
       Formula("TelepathyRange"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -35057,7 +35057,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Trample)" then return true end
@@ -35209,7 +35209,7 @@ DefineAbility({
       Formula("WebDC"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -35264,7 +35264,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Web)" then return true end
@@ -35293,7 +35293,7 @@ DefineAbility({
       Formula("WhirlwindDC"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -35343,7 +35343,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Whirlwind)" then return true end
@@ -35567,7 +35567,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+2 Strength ~ Class Level" then return true end
@@ -35595,7 +35595,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+2 Dexterity ~ Class Level" then return true end
@@ -35623,7 +35623,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+2 Constitution ~ Class Level" then return true end
@@ -35651,7 +35651,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+2 Intelligence ~ Class Level" then return true end
@@ -35679,7 +35679,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+2 Wisdom ~ Class Level" then return true end
@@ -35707,7 +35707,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+2 Charisma ~ Class Level" then return true end
@@ -35735,7 +35735,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+4 Strength ~ Class Level" then return true end
@@ -35763,7 +35763,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+4 Dexterity ~ Class Level" then return true end
@@ -35791,7 +35791,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+4 Constitution ~ Class Level" then return true end
@@ -35819,7 +35819,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+4 Intelligence ~ Class Level" then return true end
@@ -35847,7 +35847,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+4 Wisdom ~ Class Level" then return true end
@@ -35875,7 +35875,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+4 Charisma ~ Class Level" then return true end
@@ -35903,7 +35903,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+4 Strength ~ Class Level" then return true end
@@ -35931,7 +35931,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+4 Dexterity ~ Class Level" then return true end
@@ -35959,7 +35959,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+4 Constitution ~ Class Level" then return true end
@@ -35987,7 +35987,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+4 Intelligence ~ Class Level" then return true end
@@ -36015,7 +36015,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+4 Wisdom ~ Class Level" then return true end
@@ -36043,7 +36043,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "+4 Charisma ~ Class Level" then return true end
@@ -36085,7 +36085,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("ClassLevelAdjustmentMinus2", "ClassLevelAdjustmentPlus2", "ClassLevelAdjustmentPlus4") then return true end
@@ -36116,7 +36116,7 @@ ModifyAbility({
         "Aeon Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Aeon") end))
         end,
       },
@@ -36134,7 +36134,7 @@ ModifyAbility({
         "Agathion Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Agathion") end))
         end,
       },
@@ -36152,7 +36152,7 @@ ModifyAbility({
         "Angel ~ Cassisian Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Angel ~ Cassisian") end))
         end,
       },
@@ -36170,7 +36170,7 @@ ModifyAbility({
         "Daemon Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Daemon") end))
         end,
       },
@@ -36188,7 +36188,7 @@ ModifyAbility({
         "Dark Folk Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Dark Folk") end))
         end,
       },
@@ -36206,7 +36206,7 @@ ModifyAbility({
         "Dhampir Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Dhampir") end))
         end,
       },
@@ -36224,7 +36224,7 @@ ModifyAbility({
         "Grippli Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Grippli") end))
         end,
       },
@@ -36242,7 +36242,7 @@ ModifyAbility({
         "Inevitable Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Inevitable") end))
         end,
       },
@@ -36260,7 +36260,7 @@ ModifyAbility({
         "Nightshade Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Nightshade") end))
         end,
       },
@@ -36278,7 +36278,7 @@ ModifyAbility({
         "Protean Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Protean") end))
         end,
       },
@@ -36296,7 +36296,7 @@ ModifyAbility({
         "Protean ~ Voidworm Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Protean ~ Voidworm") end))
         end,
       },
@@ -36314,7 +36314,7 @@ ModifyAbility({
         "Qlippoth Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Qlippoth") end))
         end,
       },
@@ -36332,7 +36332,7 @@ ModifyAbility({
         "Qlippoth ~ Cythnigot Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Qlippoth ~ Cythnigot") end))
         end,
       },
@@ -36871,7 +36871,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -36939,7 +36939,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -37007,7 +37007,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Engulf)" then return true end
@@ -37056,7 +37056,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Entrap)" then return true end
@@ -37125,7 +37125,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Fear)" then return true end
@@ -37622,7 +37622,7 @@ DefineAbility({
         "Ooze Traits Output",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
@@ -37882,10 +37882,10 @@ DefineAbility({
       Formula("TelepathyMilesRange"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["TelepathyMilesRange"] > 1)
       end,
     },
@@ -37899,7 +37899,7 @@ DefineAbility({
         "TelepathyMilesRange",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TelepathyMilesRange"] == 1)
         end,
       },
@@ -37911,7 +37911,7 @@ DefineAbility({
         "TelepathyMilesRange",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TelepathyMilesRange"] > 1)
         end,
       },
@@ -38378,7 +38378,7 @@ DefineAbility({
       Category="HP",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "S"
         end,
       },
@@ -38390,7 +38390,7 @@ DefineAbility({
       Category="HP",
       Formula=Formula("20"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "M"
         end,
       },
@@ -38402,7 +38402,7 @@ DefineAbility({
       Category="HP",
       Formula=Formula("30"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "L"
         end,
       },
@@ -38414,7 +38414,7 @@ DefineAbility({
       Category="HP",
       Formula=Formula("40"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "H"
         end,
       },
@@ -38426,7 +38426,7 @@ DefineAbility({
       Category="HP",
       Formula=Formula("60"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "G"
         end,
       },
@@ -38438,7 +38438,7 @@ DefineAbility({
       Category="HP",
       Formula=Formula("80"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "C"
         end,
       },
@@ -38680,7 +38680,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Poison)" then return true end
@@ -38743,7 +38743,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Disease)" then return true end
@@ -38835,7 +38835,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Poison)" then return true end
@@ -38891,7 +38891,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Confusion)" then return true end
@@ -38973,7 +38973,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Horrific Appearance)" then return true end
@@ -39029,7 +39029,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Spores)" then return true end
@@ -39054,7 +39054,7 @@ DefineAbility({
   Description={
     Format="If you hit with the indicated attack (usually a claw or bite attack), you deal normal damage and can attempt to start a grapple as a free action without provoking an attack of opportunity. You have the option to conduct the grapple normally, or simply use the part of your body you used in the grab to hold the opponent. If you choose to do the latter, you takes a -20 penalty on your CMB check to make and maintain the grapple, but do not gain the grappled condition itself. A successful hold does not deal any extra damage unless you also have the constrict special attack. If you do not constrict, each successful grapple check you make during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, you deal constriction damage as well. You receive a +4 bonus on combat maneuver checks made to start and maintain a grapple. Unless otherwise noted, grab can only be used on creatures of a size equal to or smaller than you.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -39088,7 +39088,7 @@ DefineAbility({
   Description={
     Format="If you hit with the indicated attack (usually a claw or bite attack), you deal normal damage and can attempt to start a grapple as a free action without provoking an attack of opportunity. You have the option to conduct the grapple normally, or simply use the part of your body you used in the grab to hold the opponent. If you choose to do the latter, you takes a -20 penalty on your CMB check to make and maintain the grapple, but do not gain the grappled condition itself. A successful hold does not deal any extra damage unless you also have the constrict special attack. If you do not constrict, each successful grapple check you make during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, you deal constriction damage as well. You receive a +4 bonus on combat maneuver checks made to start and maintain a grapple. Unless otherwise noted, grab can only be used on creatures of a size equal to or smaller than you.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -39122,7 +39122,7 @@ DefineAbility({
   Description={
     Format="If you hit with the indicated attack (usually a claw or bite attack), you deal normal damage and can attempt to start a grapple as a free action without provoking an attack of opportunity. You have the option to conduct the grapple normally, or simply use the part of your body you used in the grab to hold the opponent. If you choose to do the latter, you takes a -20 penalty on your CMB check to make and maintain the grapple, but do not gain the grappled condition itself. A successful hold does not deal any extra damage unless you also have the constrict special attack. If you do not constrict, each successful grapple check you make during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, you deal constriction damage as well. You receive a +4 bonus on combat maneuver checks made to start and maintain a grapple. Unless otherwise noted, grab can only be used on creatures of a size equal to or smaller than you.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -39156,7 +39156,7 @@ DefineAbility({
   Description={
     Format="If you hit with the indicated attack (usually a claw or bite attack), you deal normal damage and can attempt to start a grapple as a free action without provoking an attack of opportunity. You have the option to conduct the grapple normally, or simply use the part of your body you used in the grab to hold the opponent. If you choose to do the latter, you takes a -20 penalty on your CMB check to make and maintain the grapple, but do not gain the grappled condition itself. A successful hold does not deal any extra damage unless you also have the constrict special attack. If you do not constrict, each successful grapple check you make during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, you deal constriction damage as well. You receive a +4 bonus on combat maneuver checks made to start and maintain a grapple. Unless otherwise noted, grab can only be used on creatures of a size equal to or smaller than you.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -39190,7 +39190,7 @@ DefineAbility({
   Description={
     Format="If you hit with the indicated attack (usually a claw or bite attack), you deal normal damage and can attempt to start a grapple as a free action without provoking an attack of opportunity. You have the option to conduct the grapple normally, or simply use the part of your body you used in the grab to hold the opponent. If you choose to do the latter, you takes a -20 penalty on your CMB check to make and maintain the grapple, but do not gain the grappled condition itself. A successful hold does not deal any extra damage unless you also have the constrict special attack. If you do not constrict, each successful grapple check you make during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, you deal constriction damage as well. You receive a +4 bonus on combat maneuver checks made to start and maintain a grapple. Unless otherwise noted, grab can only be used on creatures of a size equal to or smaller than you.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -39224,7 +39224,7 @@ DefineAbility({
   Description={
     Format="If you hit with the indicated attack (usually a claw or bite attack), you deal normal damage and can attempt to start a grapple as a free action without provoking an attack of opportunity. You have the option to conduct the grapple normally, or simply use the part of your body you used in the grab to hold the opponent. If you choose to do the latter, you takes a -20 penalty on your CMB check to make and maintain the grapple, but do not gain the grappled condition itself. A successful hold does not deal any extra damage unless you also have the constrict special attack. If you do not constrict, each successful grapple check you make during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, you deal constriction damage as well. You receive a +4 bonus on combat maneuver checks made to start and maintain a grapple. Unless otherwise noted, grab can only be used on creatures of a size equal to or smaller than you.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -39258,7 +39258,7 @@ DefineAbility({
   Description={
     Format="If you hit with the indicated attack (usually a claw or bite attack), you deal normal damage and can attempt to start a grapple as a free action without provoking an attack of opportunity. You have the option to conduct the grapple normally, or simply use the part of your body you used in the grab to hold the opponent. If you choose to do the latter, you takes a -20 penalty on your CMB check to make and maintain the grapple, but do not gain the grappled condition itself. A successful hold does not deal any extra damage unless you also have the constrict special attack. If you do not constrict, each successful grapple check you make during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, you deal constriction damage as well. You receive a +4 bonus on combat maneuver checks made to start and maintain a grapple. Unless otherwise noted, grab can only be used on creatures of a size equal to or smaller than you.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -39292,7 +39292,7 @@ DefineAbility({
   Description={
     Format="If you hit with the indicated attack (usually a claw or bite attack), you deal normal damage and can attempt to start a grapple as a free action without provoking an attack of opportunity. You have the option to conduct the grapple normally, or simply use the part of your body you used in the grab to hold the opponent. If you choose to do the latter, you takes a -20 penalty on your CMB check to make and maintain the grapple, but do not gain the grappled condition itself. A successful hold does not deal any extra damage unless you also have the constrict special attack. If you do not constrict, each successful grapple check you make during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, you deal constriction damage as well. You receive a +4 bonus on combat maneuver checks made to start and maintain a grapple. Unless otherwise noted, grab can only be used on creatures of a size equal to or smaller than you.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -39326,7 +39326,7 @@ DefineAbility({
   Description={
     Format="If you hit with the indicated attack (usually a claw or bite attack), you deal normal damage and can attempt to start a grapple as a free action without provoking an attack of opportunity. You have the option to conduct the grapple normally, or simply use the part of your body you used in the grab to hold the opponent. If you choose to do the latter, you takes a -20 penalty on your CMB check to make and maintain the grapple, but do not gain the grappled condition itself. A successful hold does not deal any extra damage unless you also have the constrict special attack. If you do not constrict, each successful grapple check you make during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, you deal constriction damage as well. You receive a +4 bonus on combat maneuver checks made to start and maintain a grapple. Unless otherwise noted, grab can only be used on creatures of a size equal to or smaller than you.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -39360,7 +39360,7 @@ DefineAbility({
   Description={
     Format="If you hit with the indicated attack (usually a claw or bite attack), you deal normal damage and can attempt to start a grapple as a free action without provoking an attack of opportunity. You have the option to conduct the grapple normally, or simply use the part of your body you used in the grab to hold the opponent. If you choose to do the latter, you takes a -20 penalty on your CMB check to make and maintain the grapple, but do not gain the grappled condition itself. A successful hold does not deal any extra damage unless you also have the constrict special attack. If you do not constrict, each successful grapple check you make during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, you deal constriction damage as well. You receive a +4 bonus on combat maneuver checks made to start and maintain a grapple. Unless otherwise noted, grab can only be used on creatures of a size equal to or smaller than you.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -39394,7 +39394,7 @@ DefineAbility({
   Description={
     Format="If you hit with the indicated attack (usually a claw or bite attack), you deal normal damage and can attempt to start a grapple as a free action without provoking an attack of opportunity. You have the option to conduct the grapple normally, or simply use the part of your body you used in the grab to hold the opponent. If you choose to do the latter, you takes a -20 penalty on your CMB check to make and maintain the grapple, but do not gain the grappled condition itself. A successful hold does not deal any extra damage unless you also have the constrict special attack. If you do not constrict, each successful grapple check you make during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, you deal constriction damage as well. You receive a +4 bonus on combat maneuver checks made to start and maintain a grapple. Unless otherwise noted, grab can only be used on creatures of a size equal to or smaller than you.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -39428,7 +39428,7 @@ DefineAbility({
   Description={
     Format="If you hit with the indicated attack (usually a claw or bite attack), you deal normal damage and can attempt to start a grapple as a free action without provoking an attack of opportunity. You have the option to conduct the grapple normally, or simply use the part of your body you used in the grab to hold the opponent. If you choose to do the latter, you takes a -20 penalty on your CMB check to make and maintain the grapple, but do not gain the grappled condition itself. A successful hold does not deal any extra damage unless you also have the constrict special attack. If you do not constrict, each successful grapple check you make during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, you deal constriction damage as well. You receive a +4 bonus on combat maneuver checks made to start and maintain a grapple. Unless otherwise noted, grab can only be used on creatures of a size equal to or smaller than you.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -39559,7 +39559,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Numbing Cold)" then return true end
@@ -39843,7 +39843,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Electrical Burst)" then return true end
@@ -39986,7 +39986,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Starlight Blast)" then return true end
@@ -40083,7 +40083,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -40296,7 +40296,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Poison)" then return true end
@@ -40355,7 +40355,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Poison)" then return true end
@@ -40424,7 +40424,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Poison)" then return true end
@@ -40483,7 +40483,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Poison)" then return true end
@@ -40576,7 +40576,7 @@ DefineAbility({
   Description={
     Format="You can Detect Chaos, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated a as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -40605,7 +40605,7 @@ DefineAbility({
   Description={
     Format="You can Detect Evil, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated a as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -40634,7 +40634,7 @@ DefineAbility({
   Description={
     Format="You can Detect Good, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated a as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -40663,7 +40663,7 @@ DefineAbility({
   Description={
     Format="You can Detect Law, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated a as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -40692,7 +40692,7 @@ DefineAbility({
   Description={
     Format="You detect magical auras, as per the spell Detect Magic, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated a as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -40721,7 +40721,7 @@ DefineAbility({
   Description={
     Format="You Detect Poison, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated a as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -40750,7 +40750,7 @@ DefineAbility({
   Description={
     Format="You can Detect Snares and Pits, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated a as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -40779,7 +40779,7 @@ DefineAbility({
   Description={
     Format="You can Detect Thoughts, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated a as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -40808,7 +40808,7 @@ DefineAbility({
   Description={
     Format="You can Discern Lies, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated a as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -40837,7 +40837,7 @@ DefineAbility({
   Description={
     Format="You can Fly, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated a as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -40886,7 +40886,7 @@ DefineAbility({
   Description={
     Format="You have a Holy Aura, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated a as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -40946,7 +40946,7 @@ DefineAbility({
   Description={
     Format="You can See Invisibility, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated a as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -40975,7 +40975,7 @@ DefineAbility({
   Description={
     Format="You can communicate with normal plants and plant creatures, and can ask questions of and receive answers from them, as per the spell Speak with Plants, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41004,7 +41004,7 @@ DefineAbility({
   Description={
     Format="You see all things as they actually are, as per the spell True Seeing, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated a as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41033,7 +41033,7 @@ DefineAbility({
   Description={
     Format="You can speak and understand the language of any intelligent creature, whether it is a racial tongue or a regional dialect, as per the spell Tongues, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41062,7 +41062,7 @@ DefineAbility({
   Description={
     Format="You have an Unholy Aura, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated a as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41122,7 +41122,7 @@ DefineAbility({
   Description={
     Format="You can Water Walk, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated a as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41157,7 +41157,7 @@ DefineAbility({
   Description={
     Format="You can Air Walk, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41184,7 +41184,7 @@ DefineAbility({
   Description={
     Format="You can use Arcane Sight, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41212,7 +41212,7 @@ DefineAbility({
   Description={
     Format="You can use Blink, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41238,7 +41238,7 @@ DefineAbility({
   Description={
     Format="You can use Blur, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41264,7 +41264,7 @@ DefineAbility({
   Description={
     Format="You can use Cloak of Chaos, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41313,7 +41313,7 @@ DefineAbility({
   Description={
     Format="You can use Deathwatch, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41340,7 +41340,7 @@ DefineAbility({
   Description={
     Format="You can use Displacement, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41366,7 +41366,7 @@ DefineAbility({
   Description={
     Format="You can use Entropic Shield, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41392,7 +41392,7 @@ DefineAbility({
   Description={
     Format="You can use Fire Shield, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41418,7 +41418,7 @@ DefineAbility({
   Description={
     Format="You can use the warm version of Fire Shield, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41445,7 +41445,7 @@ DefineAbility({
   Description={
     Format="You can use Floating Disk, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41471,7 +41471,7 @@ DefineAbility({
   Description={
     Format="You can use Foresight, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41528,7 +41528,7 @@ DefineAbility({
   Description={
     Format="You can use Freedom of Movement, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41555,7 +41555,7 @@ DefineAbility({
   Description={
     Format="You can use Hide from Undead, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41582,7 +41582,7 @@ DefineAbility({
   Description={
     Format="You can use Know Direction, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41608,7 +41608,7 @@ DefineAbility({
   Description={
     Format="You can use Mage Armor, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41646,7 +41646,7 @@ DefineAbility({
   Description={
     Format="You can use Magic Circle against Evil, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41679,7 +41679,7 @@ DefineAbility({
   Description={
     Format="You can use Magic Fang, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41727,7 +41727,7 @@ DefineAbility({
   Description={
     Format="You can use Mind Blank, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41759,7 +41759,7 @@ DefineAbility({
   Description={
     Format="You can use Nondetection, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41785,7 +41785,7 @@ DefineAbility({
   Description={
     Format="You can use Pass without Trace, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41811,7 +41811,7 @@ DefineAbility({
   Description={
     Format="You can use Resist Energy, as per the spell, as a constant ability; only one energy type at a time. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41837,7 +41837,7 @@ DefineAbility({
   Description={
     Format="You can use Shield of Law, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41894,7 +41894,7 @@ DefineAbility({
   Description={
     Format="You can use Shillelagh, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41920,7 +41920,7 @@ DefineAbility({
   Description={
     Format="You can use Speak with Animals, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41946,7 +41946,7 @@ DefineAbility({
   Description={
     Format="You can use Spell Turning, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41972,7 +41972,7 @@ DefineAbility({
   Description={
     Format="You can use Spider Climb, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -41998,7 +41998,7 @@ DefineAbility({
   Description={
     Format="You can use Unseen Servant, as per the spell, as a constant ability. Constant spell-like abilities function at all times but can be dispelled. Constant spell-like abilities can be reactivated as a swift action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (IsRuleEnabled("DisplayFullAbility"))
       end,
     },
@@ -42130,7 +42130,7 @@ ModifyAbility({
         "Race Subtype ~ Asura",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Asura") end))
         end,
       },
@@ -42148,7 +42148,7 @@ ModifyAbility({
         "Race Subtype ~ Behemoth",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Behemoth") end))
         end,
       },
@@ -42166,7 +42166,7 @@ ModifyAbility({
         "Race Subtype ~ Clockwork",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Clockwork") end))
         end,
       },
@@ -42184,7 +42184,7 @@ ModifyAbility({
         "Race Subtype ~ Demodand",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Demodand") end))
         end,
       },
@@ -42202,7 +42202,7 @@ ModifyAbility({
         "Race Subtype ~ Div",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Div") end))
         end,
       },
@@ -42220,7 +42220,7 @@ ModifyAbility({
         "Race Subtype ~ Kami",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Kami") end))
         end,
       },
@@ -42238,7 +42238,7 @@ ModifyAbility({
         "Race Subtype ~ Kyton",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Kyton") end))
         end,
       },
@@ -42256,7 +42256,7 @@ ModifyAbility({
         "Race Subtype ~ Leshy",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Leshy") end))
         end,
       },
@@ -42274,7 +42274,7 @@ ModifyAbility({
         "Race Subtype ~ Rakshasa",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.RaceSubTypes, function (type) stringMatch(type, "Rakshasa") end))
         end,
       },
@@ -42294,7 +42294,7 @@ DefineAbility({
         "Traits Output ~ Asura",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
@@ -42339,7 +42339,7 @@ DefineAbility({
         "Traits Output ~ Behemoth",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
@@ -42381,7 +42381,7 @@ DefineAbility({
         "Traits Output ~ Clockwork",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
@@ -42411,7 +42411,7 @@ DefineAbility({
         "Traits Output ~ Demodand",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
@@ -42454,7 +42454,7 @@ DefineAbility({
         "Traits Output ~ Div",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
@@ -42497,7 +42497,7 @@ DefineAbility({
         "Traits Output ~ Kami",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
@@ -42545,7 +42545,7 @@ DefineAbility({
         "Traits Output ~ Kyton",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
@@ -42574,7 +42574,7 @@ DefineAbility({
         "Traits Output ~ Leshy",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
@@ -42606,7 +42606,7 @@ DefineAbility({
         "Traits Output ~ Div",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (IsRuleEnabled("DISPLAYTYPETRAITS"))
         end,
       },
@@ -43118,7 +43118,7 @@ DefineAbility({
   Description={
     Format="Some creatures can exhale a cone, line, or cloud of energy or other magical effects. A breath weapon attack usually deals damage and is often based on some type of energy. Breath weapons allow a Reflex save for half damage (DC 10 + 1/2 breathing creature's racial HD + breathing creature's Con modifier; the exact DC is given in the creature's descriptive text). A creature is immune to its own breath weapon unless otherwise noted. Some breath weapons allow a Fortitude save or a Will save instead of a Reflex save. Each breath weapon also includes notes on how often it can be used, even if this number is limited in times per day.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_BreathWeapon_SpecificDesc"] == 0)
       end,
     },
@@ -43148,7 +43148,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -43176,7 +43176,7 @@ DefineAbility({
   Description={
     Format="A creature with the burn special attack deals fire damage in addition to damage dealt on a successful hit in melee. Those affected by the burn ability must also succeed on a Reflex save or catch fire, taking the listed damage for an additional 1d4 rounds at the start of its turn (DC 10 + 1/2 burning creature's racial HD + burning creature's Con modifier). A burning creature can attempt a new save as a full-round action. Dropping and rolling on the ground grants a +4 bonus on this save. Creatures that hit a burning creature with natural weapons or unarmed attacks take fire damage as though hit by the burning creature and must make a Reflex save to avoid catching on fire (see Pathfinder RPG Core Rulebook, Environmental Rules: Heat Dangers).",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Burn_SpecificDesc"] == 0)
       end,
     },
@@ -43205,7 +43205,7 @@ DefineAbility({
       Name="NaturalAttackBonus",
       FormatString="Slam",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Burn_ApplySlam"] == 1)
         end,
       },
@@ -43226,7 +43226,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Burn)" then return true end
@@ -43260,7 +43260,7 @@ DefineAbility({
   Description={
     Format="A creature with this special quality has the ability to assume the appearance of a specific creature or type of creature (usually a humanoid), but retains most of its own physical qualities. A creature cannot change shape to a form more than one size category smaller or larger than its original form. This ability functions as a polymorph spell, the type of which is listed in the creature's description, but the creature does not adjust its ability scores (although it gains any other abilities of the creature it mimics). Unless otherwise stated, it can remain in an alternate form indefinitely. Some creatures, such as lycanthropes, can transform into unique forms with special modifiers and abilities. These creatures do adjust their ability scores, as noted in their description.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_ChangeShape_SpecificDesc"] == 0)
       end,
     },
@@ -43280,7 +43280,7 @@ DefineAbility({
   Description={
     Format="A creature with this ability causes disease in those it contacts. The effects of the disease, including its save, frequency, and cure, are included in the creature's description. The saving throw to negate the disease is usually a Fort save (DC 10 + 1/2 infecting creature's racial HD + the creature's Con modifier; the exact DC is given in the creature's descriptive text). Disease can be removed through remove disease and similar effects.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Disease_SpecificDesc"] == 0)
       end,
     },
@@ -43300,7 +43300,7 @@ DefineAbility({
       Name="NaturalAttackBonus",
       FormatString="Bite",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Disease_ApplyBite"] == 1)
         end,
       },
@@ -43321,7 +43321,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Disease)" then return true end
@@ -43349,7 +43349,7 @@ DefineAbility({
   Description={
     Format="A creature with this ability causes disease in those it contacts. The effects of the disease, including its save, frequency, and cure, are included in the creature's description. The saving throw to negate the disease is usually a Fort save (DC 10 + 1/2 infecting creature's racial HD + the creature's Con modifier; the exact DC is given in the creature's descriptive text). Disease can be removed through remove disease and similar effects.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Disease_SpecificDesc"] == 0)
       end,
     },
@@ -43379,7 +43379,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Disease)" then return true end
@@ -43407,7 +43407,7 @@ DefineAbility({
   Description={
     Format="A creature with the fast healing special quality regains hit points at an exceptional rate, usually 1 or more hit points per round, as given in the creature's entry. Except where noted here, fast healing is just like natural healing. Fast healing does not restore hit points lost from starvation, thirst, or suffocation, nor does it allow a creature to regrow lost body parts. Unless otherwise stated, it does not allow lost body parts to be reattached. Fast healing continues to function (even at negative hit points) until a creature dies, at which point the effects of fast healing end immediately.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_FastHealing_SpecificDesc"] == 0)
       end,
     },
@@ -43436,7 +43436,7 @@ DefineAbility({
   Description={
     Format="If a creature with this special attack hits with the indicated attack (usually a claw or bite attack), it deals normal damage and attempts to start a grapple as a free action without provoking an attack of opportunity. The creature has the option to conduct the grapple normally, or simply use the part of its body it used in the grab to hold the opponent. If it chooses to do the latter, it takes a -20 penalty on its CMB check to make and maintain the grapple, but does not gain the grappled condition itself. A successful hold does not deal any extra damage unless the creature also has the constrict special attack. If the creature does not constrict, each successful grapple check it makes during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, it deals constriction damage as well (the amount is given in the creature's descriptive text).&nl;Creatures with the grab special attack receive a +4 bonus on combat maneuver checks made to start and maintain a grapple.&nl;Unless otherwise noted, grab can only be used against targets of a size equal to or smaller than the creature with this ability. If the creature can use grab on creatures of other sizes, it is noted in the creature's Special Attacks line.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Grab_SpecificDesc"] == 0)
       end,
     },
@@ -43447,7 +43447,7 @@ DefineAbility({
       Name="NaturalAttackBonus",
       FormatString="Bite",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Grab_ApplyBite"] == 1)
         end,
       },
@@ -43476,7 +43476,7 @@ DefineAbility({
   Description={
     Format="Creatures with light blindness are blinded for 1 round if exposed to bright light, such as sunlight or the daylight spell. Such creatures are dazzled as long as they remain in areas of bright light.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_LightBlindness_SpecificDesc"] == 0)
       end,
     },
@@ -43496,7 +43496,7 @@ DefineAbility({
   Description={
     Format="Creatures with light sensitivity are dazzled in areas of bright sunlight or within the radius of a daylight spell.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_LightSensitivity_SpecificDesc"] == 0)
       end,
     },
@@ -43519,7 +43519,7 @@ DefineAbility({
       Formula("UMR_Paralysis_DC"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Paralysis_SpecificDesc"] == 0)
       end,
     },
@@ -43542,13 +43542,13 @@ DefineAbility({
         "UMR_Paralysis_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDice"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDieSize"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationBonus"] == 1)
         end,
       },
@@ -43561,13 +43561,13 @@ DefineAbility({
         "UMR_Paralysis_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDice"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDieSize"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationBonus"] > 1)
         end,
       },
@@ -43581,13 +43581,13 @@ DefineAbility({
         "UMR_Paralysis_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDice"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDieSize"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationBonus"] == 0)
         end,
       },
@@ -43602,13 +43602,13 @@ DefineAbility({
         "UMR_Paralysis_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDice"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDieSize"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationBonus"] >= 1)
         end,
       },
@@ -43640,7 +43640,7 @@ DefineAbility({
       Formula("UMR_Paralysis_DC"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Paralysis_SpecificDesc"] == 0)
       end,
     },
@@ -43663,13 +43663,13 @@ DefineAbility({
         "UMR_Paralysis_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDice"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDieSize"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationBonus"] == 1)
         end,
       },
@@ -43682,13 +43682,13 @@ DefineAbility({
         "UMR_Paralysis_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDice"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDieSize"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationBonus"] > 1)
         end,
       },
@@ -43702,13 +43702,13 @@ DefineAbility({
         "UMR_Paralysis_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDice"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDieSize"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationBonus"] == 0)
         end,
       },
@@ -43723,13 +43723,13 @@ DefineAbility({
         "UMR_Paralysis_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDice"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationDieSize"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Paralysis_DurationBonus"] >= 1)
         end,
       },
@@ -43758,7 +43758,7 @@ DefineAbility({
   Description={
     Format="A creature with this ability can poison those it attacks. The effects of the poison, including its save, frequency, and cure, are included in the creature's description. The saving throw to resist a poison is usually a Fort save (DC 10 + 1/2 poisoning creature's racial HD + creature's Con modifier; the exact DC is given in the creature's descriptive text). Poisons can be removed through neutralize poison and similar effects.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Poison_SpecificDesc"] == 0)
       end,
     },
@@ -43785,7 +43785,7 @@ DefineAbility({
       Name="NaturalAttackBonus",
       FormatString="Bite",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Poison_ApplyBite"] == 1)
         end,
       },
@@ -43794,7 +43794,7 @@ DefineAbility({
       Name="NaturalAttackBonus",
       FormatString="Claw",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Poison_ApplyClaw"] == 1)
         end,
       },
@@ -43803,7 +43803,7 @@ DefineAbility({
       Name="NaturalAttackBonus",
       FormatString="Sting",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Poison_ApplySting"] == 1)
         end,
       },
@@ -43821,7 +43821,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Poison)" then return true end
@@ -43848,7 +43848,7 @@ DefineAbility({
   Description={
     Format="A creature with this ability can poison those it attacks. The effects of the poison, including its save, frequency, and cure, are included in the creature's description. The saving throw to resist a poison is usually a Fort save (DC 10 + 1/2 poisoning creature's racial HD + creature's Con modifier; the exact DC is given in the creature's descriptive text). Poisons can be removed through neutralize poison and similar effects.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Poison_SpecificDesc"] == 0)
       end,
     },
@@ -43875,7 +43875,7 @@ DefineAbility({
       Name="NaturalAttackBonus",
       FormatString="Bite",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Poison_ApplyBite"] == 1)
         end,
       },
@@ -43884,7 +43884,7 @@ DefineAbility({
       Name="NaturalAttackBonus",
       FormatString="Claw",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Poison_ApplyClaw"] == 1)
         end,
       },
@@ -43893,7 +43893,7 @@ DefineAbility({
       Name="NaturalAttackBonus",
       FormatString="Sting",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Poison_ApplySting"] == 1)
         end,
       },
@@ -43911,7 +43911,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Poison)" then return true end
@@ -43942,7 +43942,7 @@ DefineAbility({
       Formula("UMR_Stench_DC"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Stench_SpecificDesc"] == 0)
       end,
     },
@@ -43966,19 +43966,19 @@ DefineAbility({
         "UMR_Stench_DurationBonus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_Range"] == 30)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDice"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDieSize"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeRounds"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeMinutes"] <= 0)
         end,
       },
@@ -43992,22 +43992,22 @@ DefineAbility({
         "UMR_Stench_DurationDieSize",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_Range"] == 30)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDice"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDieSize"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationBonus"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeRounds"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeMinutes"] <= 0)
         end,
       },
@@ -44022,22 +44022,22 @@ DefineAbility({
         "UMR_Stench_DurationBonus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_Range"] == 30)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDice"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDieSize"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationBonus"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeRounds"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeMinutes"] <= 0)
         end,
       },
@@ -44051,19 +44051,19 @@ DefineAbility({
         "UMR_Stench_DurationBonus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_Range"] ~= 30)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDice"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDieSize"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeRounds"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeMinutes"] <= 0)
         end,
       },
@@ -44078,22 +44078,22 @@ DefineAbility({
         "UMR_Stench_DurationDieSize",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_Range"] ~= 30)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDice"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDieSize"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationBonus"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeRounds"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeMinutes"] <= 0)
         end,
       },
@@ -44109,22 +44109,22 @@ DefineAbility({
         "UMR_Stench_DurationBonus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_Range"] ~= 30)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDice"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDieSize"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationBonus"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeRounds"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeMinutes"] <= 0)
         end,
       },
@@ -44137,19 +44137,19 @@ DefineAbility({
         "UMR_Stench_DurationBonus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_Range"] == 30)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDice"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDieSize"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeRounds"] <= 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeMinutes"] >= 1)
         end,
       },
@@ -44163,22 +44163,22 @@ DefineAbility({
         "UMR_Stench_DurationDieSize",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_Range"] == 30)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDice"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDieSize"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationBonus"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeRounds"] <= 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeMinutes"] >= 1)
         end,
       },
@@ -44193,22 +44193,22 @@ DefineAbility({
         "UMR_Stench_DurationBonus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_Range"] == 30)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDice"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDieSize"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationBonus"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeRounds"] <= 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeMinutes"] >= 1)
         end,
       },
@@ -44222,19 +44222,19 @@ DefineAbility({
         "UMR_Stench_DurationBonus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_Range"] ~= 30)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDice"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDieSize"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeRounds"] <= 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeMinutes"] >= 1)
         end,
       },
@@ -44249,22 +44249,22 @@ DefineAbility({
         "UMR_Stench_DurationDieSize",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_Range"] ~= 30)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDice"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDieSize"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationBonus"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeRounds"] <= 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeMinutes"] >= 1)
         end,
       },
@@ -44280,22 +44280,22 @@ DefineAbility({
         "UMR_Stench_DurationBonus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_Range"] ~= 30)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDice"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationDieSize"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationBonus"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeRounds"] <= 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Stench_DurationTypeMinutes"] >= 1)
         end,
       },
@@ -44332,7 +44332,7 @@ DefineAbility({
   Description={
     Format="The creature can mentally communicate with any other creature within a certain range (specified in the creature's entry, usually 100 feet) that has a language. It is possible to address multiple creatures at once telepathically, although maintaining a telepathic conversation with more than one creature at a time is just as difficult as simultaneously speaking and listening to multiple people at the same time.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Telepathy_SpecificDesc"] == 0)
       end,
     },
@@ -44370,7 +44370,7 @@ DefineAbility({
   Description={
     Format="A creature with the trip special attack can attempt to trip its opponent as a free action without provoking an attack of opportunity if it hits with the specified attack. If the attempt fails, the creature is not tripped in return.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Trip_SpecificDesc"] == 0)
       end,
     },
@@ -44390,7 +44390,7 @@ DefineAbility({
   Description={
     Format="Some creatures can transform themselves into whirlwinds and remain in that form for up to 1 round for every 2 HD they have. If the creature has a fly speed, it can continue to fly at that same speed while in whirlwind form, otherwise it gains a fly speed equal to its base land speed (average maneuverability) while in whirlwind form.&nl;The whirlwind is always 5 feet wide at its base, but its height and width at the top vary from creature to creature (minimum 10 feet high). A whirlwind's width at its peak is always equal to half of its height. The creature controls the exact height, but it must be at least 10 feet high.&nl;The whirlwind form does not provoke attacks of opportunity, even if the creature enters the space another creature occupies. Another creature might be caught in the whirlwind if it touches or enters the whirlwind, or if the whirlwind moves into or through a creature's space. A creature in whirlwind form cannot make its normal attacks and does not threaten the area around it.&nl;Creatures one or more size categories smaller than the whirlwind might take damage when caught in the whirlwind (generally damage equal to the monster's slam attack for a creature of its size) and may be lifted into the air. An affected creature must succeed on a Reflex save (DC 10 + half monster's HD + the monster's Strength modifier) when it comes into contact with the whirlwind or take damage as if it were hit by the whirlwind creature's slam attack. It must also succeed on a second Reflex save or be picked up bodily and held suspended in the powerful winds, automatically taking the indicated damage each round. A creature that can fly is allowed a Reflex save each round to escape the whirlwind. The creature still takes damage but can leave if the save is successful.&nl;Creatures trapped in the whirlwind cannot move except to go where the whirlwind carries them or to escape the whirlwind. Trapped creatures can otherwise act normally, but must succeed on a concentration check (DC 15 + spell level) to cast a spell. Creatures caught in the whirlwind take a -4 penalty to Dexterity and a -2 penalty on attack rolls. The whirlwind can have only as many creatures trapped inside at one time as will fit inside the whirlwind's volume. The whirlwind can eject any carried creatures whenever it wishes as a free action, depositing them in its space.&nl;If the whirlwind's base touches the ground, it creates a swirling cloud of debris. This cloud is centered on the creature and has a diameter equal to half the whirlwind's height. The cloud obscures all vision, including darkvision, beyond 5 feet. Creatures 5 feet away have concealment, while those farther away have total concealment. Those caught in the cloud of debris must succeed on a concentration check (DC 15 + spell level) to cast a spell.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Whirlwind_SpecificDesc"] == 0)
       end,
     },
@@ -44417,7 +44417,7 @@ DefineAbility({
         "UMR_Whirlwind_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Whirlwind_Times"] == 0)
         end,
       },
@@ -44434,7 +44434,7 @@ DefineAbility({
         "UMR_Whirlwind_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Whirlwind_Times"] >= 1)
         end,
       },
@@ -44446,10 +44446,10 @@ DefineAbility({
         "UMR_Whirlwind_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Whirlwind_Times"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_Whirlwind_DamageDice"] == 0)
         end,
       },
@@ -44474,7 +44474,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Whirlwind)" then return true end
@@ -44510,13 +44510,13 @@ ModifyAbility({
         "BreathWeaponRechargeDieType",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponAcid"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponCone"] >= 1)
         end,
       },
@@ -44539,13 +44539,13 @@ ModifyAbility({
         "BreathWeaponRechargeDieType",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponCold"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponCone"] >= 1)
         end,
       },
@@ -44568,13 +44568,13 @@ ModifyAbility({
         "BreathWeaponRechargeDieType",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponFire"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponCone"] >= 1)
         end,
       },
@@ -44597,13 +44597,13 @@ ModifyAbility({
         "BreathWeaponRechargeDieType",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponElectricity"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponCone"] >= 1)
         end,
       },
@@ -44625,13 +44625,13 @@ ModifyAbility({
         "BreathWeaponRechargeRounds",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponAcid"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponCone"] >= 1)
         end,
       },
@@ -44653,13 +44653,13 @@ ModifyAbility({
         "BreathWeaponRechargeRounds",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponCold"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponCone"] >= 1)
         end,
       },
@@ -44681,13 +44681,13 @@ ModifyAbility({
         "BreathWeaponRechargeRounds",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponFire"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponCone"] >= 1)
         end,
       },
@@ -44708,13 +44708,13 @@ ModifyAbility({
         "BrBreathWeaponRechargeRounds",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponElectricity"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponCone"] >= 1)
         end,
       },
@@ -44737,13 +44737,13 @@ ModifyAbility({
         "BreathWeaponRechargeDieType",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponAcid"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponLine"] >= 1)
         end,
       },
@@ -44766,13 +44766,13 @@ ModifyAbility({
         "BreathWeaponRechargeDieType",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponCold"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponLine"] >= 1)
         end,
       },
@@ -44795,13 +44795,13 @@ ModifyAbility({
         "BreathWeaponRechargeDieType",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponFire"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponLine"] >= 1)
         end,
       },
@@ -44824,13 +44824,13 @@ ModifyAbility({
         "BreathWeaponRechargeDieType",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponElectricity"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponLine"] >= 1)
         end,
       },
@@ -44852,13 +44852,13 @@ ModifyAbility({
         "BreathWeaponRechargeRounds",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponAcid"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponLine"] >= 1)
         end,
       },
@@ -44880,13 +44880,13 @@ ModifyAbility({
         "BreathWeaponRechargeRounds",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponCold"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponLine"] >= 1)
         end,
       },
@@ -44908,13 +44908,13 @@ ModifyAbility({
         "BreathWeaponRechargeRounds",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponFire"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponLine"] >= 1)
         end,
       },
@@ -44935,13 +44935,13 @@ ModifyAbility({
         "BrBreathWeaponRechargeRounds",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["bBreathWeaponElectricity"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponRechargeRounds"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BreathWeaponLine"] >= 1)
         end,
       },
@@ -44961,7 +44961,7 @@ DefineAbility({
   Description={
     Format="The creature automatically latches onto its target when it successfully makes the listed attack. The creature is considered grappling, but the target is not. The target can attack or grapple the creature as normal, or break the attach with a successful grapple or Escape Artist check. Most creatures with this ability have a racial bonus to maintain a grapple (listed in its CMB entry).",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Attach_SpecificDesc"] == 0)
       end,
     },
@@ -44980,7 +44980,7 @@ DefineAbility({
   Description={
     Format="When the creature burrows, it can pass through stone, dirt, or almost any other sort of earth except metal as easily as a fish swims through water. If protected against fire damage, it can even glide through lava. Its burrowing leaves behind no tunnel or hole, nor does it create any ripple or other sign of its presence. A move earth spell cast on an area containing the burrowing creature flings it back 30 feet, stunning it for 1 round unless it succeeds on a DC 15 Fortitude save.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_EarthGlide_SpecificDesc"] == 0)
       end,
     },
@@ -45006,7 +45006,7 @@ DefineAbility({
   Description={
     Format="The creature can see perfectly in darkness of any kind, including that created by deeper darkness.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_SeeInDarkness_SpecificDesc"] == 0)
       end,
     },
@@ -45022,7 +45022,7 @@ DefineAbility({
   Visions={
     {
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_SeeInDarkness_Range"] == 0)
         end,
       },
@@ -45032,7 +45032,7 @@ DefineAbility({
     },
     {
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UMR_SeeInDarkness_Range"] >= 0)
         end,
       },
@@ -45058,7 +45058,7 @@ DefineAbility({
       Formula("UMR_DarkvisionEx_Range"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_DarkvisionEx_SpecificDesc"] == 0)
       end,
     },
@@ -45089,7 +45089,7 @@ DefineAbility({
       Formula("UMR_DarkvisionSu_Range"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_DarkvisionSu_SpecificDesc"] == 0)
       end,
     },
@@ -45123,7 +45123,7 @@ DefineAbility({
   Description={
     Format="The creature remains conscious and can continue fighting even if its hit point total is below 0. The creature is still staggered and loses 1 hit point each round. A creature with ferocity still dies when its hit point total reaches a negative amount equal to its Constitution score.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Ferocity_SpecificDesc"] == 0)
       end,
     },

@@ -238,6 +238,7 @@ namespace Primordially.LstToLua
         public static PropertyDefinition Vision = Property.Multiple<VisionDefinition>("VISION", "Visions");
         public static PropertyDefinition CompanionList = Property.Multiple<FollowerType>("COMPANIONLIST", "FollowerTypes");
         public static PropertyDefinition Facts = Property.Dictionary<string>("FACT", "Facts");
+        public static PropertyDefinition FactSets = Property.Dictionary<string>("FACTSET", "FactSets");
         public static PropertyDefinition Types = Property.SeparatedList<string>('.', "TYPE", "Types");
         public static PropertyDefinition Bonuses = Property.Multiple<Bonus>("BONUS", "Bonuses");
         public static PropertyDefinition BonusesForEquipment = Property.Multiple<EquipmentBonus>("BONUS", "Bonuses");

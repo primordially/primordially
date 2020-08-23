@@ -408,6 +408,8 @@ namespace Primordially.LstToLua
                         new CompanionModFileConverter().Convert(inputFileFullPath, outputFile);
                         break;
                     case "DEITY":
+                        new SingleObjectFileConverter<DeityDefinition>().Convert(inputFileFullPath, outputFile);
+                        break;
                     case "BIOSET":
                     case "DATATABLE":
                     case "DYNAMIC":

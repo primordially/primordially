@@ -21,7 +21,7 @@ DefineClass({
         "Aberration Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -40,7 +40,7 @@ DefineClass({
         "Animal Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -59,7 +59,7 @@ DefineClass({
         "Construct Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -81,7 +81,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -108,7 +108,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -120,7 +120,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -132,7 +132,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -144,7 +144,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -160,7 +160,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -187,7 +187,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -199,7 +199,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -211,7 +211,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -223,7 +223,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -239,7 +239,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -260,7 +260,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -272,7 +272,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("MAX(1,2+INT)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end)))
         end,
       },
@@ -284,7 +284,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -296,7 +296,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -308,7 +308,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -337,13 +337,13 @@ DefineClass({
     "Swim",
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Aberration")
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Animal")
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Construct")
     end,
   },
@@ -366,7 +366,7 @@ DefineClass({
           Category="ABILITYPOOL",
           Formula=Formula("-1"),
           Conditions={
-            function (character, item)
+            function (character, item, sources)
               return (any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end))
             end,
           },
@@ -394,7 +394,7 @@ DefineClass({
         "Dragon Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -413,7 +413,7 @@ DefineClass({
         "Fey Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -432,7 +432,7 @@ DefineClass({
         "Humanoid Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -451,7 +451,7 @@ DefineClass({
         "Humanoid Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -470,7 +470,7 @@ DefineClass({
         "Humanoid Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -489,7 +489,7 @@ DefineClass({
         "Magical Beast Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -508,7 +508,7 @@ DefineClass({
         "Monstrous Humanoid Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -527,7 +527,7 @@ DefineClass({
         "Ooze Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -549,7 +549,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -570,7 +570,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -589,7 +589,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -601,7 +601,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -613,7 +613,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -629,7 +629,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -656,7 +656,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -668,7 +668,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -680,7 +680,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -692,7 +692,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -708,7 +708,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -735,7 +735,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -747,7 +747,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -759,7 +759,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -771,7 +771,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -787,7 +787,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -814,7 +814,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -826,7 +826,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -838,7 +838,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -850,7 +850,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -866,7 +866,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -893,7 +893,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -905,7 +905,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -917,7 +917,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -929,7 +929,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -945,7 +945,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -972,7 +972,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -984,7 +984,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -996,7 +996,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1008,7 +1008,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1024,7 +1024,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -1051,7 +1051,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -1063,7 +1063,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1075,7 +1075,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1087,7 +1087,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1103,7 +1103,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -1124,7 +1124,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -1136,7 +1136,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("MAX(1,2+INT)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end)))
         end,
       },
@@ -1148,7 +1148,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1160,7 +1160,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1172,7 +1172,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1255,28 +1255,28 @@ DefineClass({
     "Swim",
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Dragon")
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Fey")
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Humanoid")
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Humanoid")
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Humanoid")
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Magical Beast")
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Monstrous humanoid")
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Ooze")
     end,
   },
@@ -1301,7 +1301,7 @@ DefineClass({
           Category="ABILITYPOOL",
           Formula=Formula("-1"),
           Conditions={
-            function (character, item)
+            function (character, item, sources)
               return (any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end))
             end,
           },
@@ -1329,7 +1329,7 @@ DefineClass({
         "Outsider Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -1351,7 +1351,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -1378,7 +1378,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -1390,7 +1390,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1402,7 +1402,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1414,7 +1414,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1432,7 +1432,7 @@ DefineClass({
     "Stealth",
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Outsider")
     end,
   },
@@ -1481,7 +1481,7 @@ DefineClass({
         "Outsider Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -1503,7 +1503,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -1530,7 +1530,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -1542,7 +1542,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1554,7 +1554,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1566,7 +1566,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1584,7 +1584,7 @@ DefineClass({
     "Stealth",
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Outsider")
     end,
   },
@@ -1633,7 +1633,7 @@ DefineClass({
         "Outsider Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -1655,7 +1655,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -1682,7 +1682,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -1694,7 +1694,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1706,7 +1706,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1718,7 +1718,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1736,7 +1736,7 @@ DefineClass({
     "Stealth",
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Outsider")
     end,
   },
@@ -1784,7 +1784,7 @@ DefineClass({
         "Plant Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -1806,7 +1806,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -1833,7 +1833,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -1845,7 +1845,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("MAX(1,2+INT)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end)))
         end,
       },
@@ -1857,7 +1857,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1869,7 +1869,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1881,7 +1881,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1895,7 +1895,7 @@ DefineClass({
     "Stealth",
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Plant")
     end,
   },
@@ -1913,7 +1913,7 @@ DefineClass({
           Category="ABILITYPOOL",
           Formula=Formula("-1"),
           Conditions={
-            function (character, item)
+            function (character, item, sources)
               return (any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end))
             end,
           },
@@ -1940,7 +1940,7 @@ DefineClass({
         "Undead Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -1962,7 +1962,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -1989,7 +1989,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -2001,7 +2001,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("MAX(1,4+INT)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end)))
         end,
       },
@@ -2013,7 +2013,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -2025,7 +2025,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -2037,7 +2037,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -2059,7 +2059,7 @@ DefineClass({
     "Stealth",
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Undead")
     end,
   },
@@ -2080,7 +2080,7 @@ DefineClass({
           Category="ABILITYPOOL",
           Formula=Formula("-1"),
           Conditions={
-            function (character, item)
+            function (character, item, sources)
               return (any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end))
             end,
           },
@@ -2107,7 +2107,7 @@ DefineClass({
         "Vermin Traits",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoTypeTraits"] == 0)
         end,
       },
@@ -2129,7 +2129,7 @@ DefineClass({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -2156,7 +2156,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -2168,7 +2168,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("MAX(1,2+INT)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end)))
         end,
       },
@@ -2180,7 +2180,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -2192,7 +2192,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -2204,7 +2204,7 @@ DefineClass({
       Category="VAR",
       Formula=Formula("classlevel(\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -2214,7 +2214,7 @@ DefineClass({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Race.IsType("Vermin")
     end,
   },
@@ -2232,7 +2232,7 @@ DefineClass({
           Category="ABILITYPOOL",
           Formula=Formula("-1"),
           Conditions={
-            function (character, item)
+            function (character, item, sources)
               return (any(character.Templates, function (template) return stringMatch(template.Name, "No Intelligence Score") end))
             end,
           },

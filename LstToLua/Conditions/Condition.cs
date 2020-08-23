@@ -205,6 +205,9 @@ namespace Primordially.LstToLua.Conditions
                 case "PRECHARACTERTYPE":
                     result = CharacterTypeCondition.Parse(v, invert);
                     return true;
+                case "PRECAMPAIGN":
+                    result = CampaignCondition.Parse(invert, v);
+                    return true;
 
                 case "PRETYPE":
                     if (isEquipment)
@@ -246,7 +249,7 @@ namespace Primordially.LstToLua.Conditions
 
         public virtual void Dump(LuaTextWriter output)
         {
-            output.WriteStartFunction("character, item");
+            output.WriteStartFunction("character, item, sources");
             output.Write("return ");
             DumpCondition(output);
             output.WriteLine();

@@ -57,7 +57,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Poison)" then return true end
@@ -100,7 +100,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Poison)" then return true end
@@ -156,7 +156,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Poison)" then return true end
@@ -215,7 +215,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Poison)" then return true end

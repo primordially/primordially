@@ -835,7 +835,7 @@ ModifyAbility({
       Formula("UMR_Poison_DC"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Poison_SpecificDesc"] == 1) and (character.Race.Name == "Viper")
       end,
     },
@@ -1058,7 +1058,7 @@ ModifyAbility({
       Formula("UMR_Disease_DC"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Disease_SpecificDesc"] == 1) and (character.Race.Name == "Rat (Dire)")
       end,
     },
@@ -1597,7 +1597,7 @@ DefineAbility({
         "VortexDC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["VortexTimes"] == 0)
         end,
       },
@@ -1614,7 +1614,7 @@ DefineAbility({
         "VortexDC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["VortexTimes"] >= 1)
         end,
       },
@@ -1626,10 +1626,10 @@ DefineAbility({
         "VortexDC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["VortexTimes"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["VortexDamageDice"] == 0)
         end,
       },
@@ -1661,7 +1661,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Vortex)" then return true end
@@ -1970,7 +1970,7 @@ ModifyAbility({
       Formula("UMR_Poison_DC"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Poison_SpecificDesc"] == 1) and (character.Race.Name == "Homunculus")
       end,
     },
@@ -2182,7 +2182,7 @@ ModifyAbility({
       Name="Ability Benefit",
       FormatString="(boar, giant spider, rat, or raven, beast shape I)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Imp_IsConsular"] == 0) and (character.Race.Name == "Devil (Imp)")
         end,
       },
@@ -2197,7 +2197,7 @@ ModifyAbility({
       Name="Ability Benefit",
       FormatString="(boar, giant spider, beast shape I, any Small or Tiny animal, as per beast shape II)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Imp_IsConsular"] == 1) and (character.Race.Name == "Devil (Imp)")
         end,
       },
@@ -2213,7 +2213,7 @@ ModifyAbility({
       Formula("UMR_Poison_DC"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Poison_SpecificDesc"] == 1) and (character.Race.Name == "Devil (Imp)")
       end,
     },
@@ -3334,7 +3334,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -3438,7 +3438,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -3542,7 +3542,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -3646,7 +3646,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -3750,7 +3750,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -3854,7 +3854,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -3958,7 +3958,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -4062,7 +4062,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -4166,7 +4166,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -4270,7 +4270,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Breath Weapon)" then return true end
@@ -4314,7 +4314,7 @@ ModifyAbility({
   Description={
     Format="Works only in gusty and windy areas.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_FastHealing_SpecificDesc"] == 1) and (character.Race.Name == "Mephit (Air)")
       end,
     },
@@ -4326,7 +4326,7 @@ ModifyAbility({
   Description={
     Format="Works only in dusty environments.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_FastHealing_SpecificDesc"] == 1) and (character.Race.Name == "Mephit (Dust)")
       end,
     },
@@ -4338,7 +4338,7 @@ ModifyAbility({
   Description={
     Format="Works only while underground.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_FastHealing_SpecificDesc"] == 1) and (character.Race.Name == "Mephit (Earth)")
       end,
     },
@@ -4350,7 +4350,7 @@ ModifyAbility({
   Description={
     Format="Works only while in contact with fire.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_FastHealing_SpecificDesc"] == 1) and (character.Race.Name == "Mephit (Fire)")
       end,
     },
@@ -4362,7 +4362,7 @@ ModifyAbility({
   Description={
     Format="Works only in areas below freezing.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_FastHealing_SpecificDesc"] == 1) and (character.Race.Name == "Mephit (Ice)")
       end,
     },
@@ -4374,7 +4374,7 @@ ModifyAbility({
   Description={
     Format="Works only in contact with magma or lava.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_FastHealing_SpecificDesc"] == 1) and (character.Race.Name == "Mephit (Magma)")
       end,
     },
@@ -4386,7 +4386,7 @@ ModifyAbility({
   Description={
     Format="Works only in wet or muddy environments.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_FastHealing_SpecificDesc"] == 1) and (character.Race.Name == "Mephit (Ooze)")
       end,
     },
@@ -4398,7 +4398,7 @@ ModifyAbility({
   Description={
     Format="Works only in arid environments.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_FastHealing_SpecificDesc"] == 1) and (character.Race.Name == "Mephit (Salt)")
       end,
     },
@@ -4410,7 +4410,7 @@ ModifyAbility({
   Description={
     Format="Works only in boiling water or steam.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_FastHealing_SpecificDesc"] == 1) and (character.Race.Name == "Mephit (Steam)")
       end,
     },
@@ -4422,7 +4422,7 @@ ModifyAbility({
   Description={
     Format="Works only while the mephit is underwater.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_FastHealing_SpecificDesc"] == 1) and (character.Race.Name == "Mephit (Water)")
       end,
     },
@@ -4754,7 +4754,7 @@ ModifyAbility({
       Formula("UMR_Poison_DC"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Poison_SpecificDesc"] == 1) and (character.Race.Name == "Pseudodragon")
       end,
     },
@@ -4973,7 +4973,7 @@ ModifyAbility({
       Name="Ability Benefit",
       FormatString="(2 of the following forms: bat, Small centipede, toad, or wolf; polymorph)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Race.Name == "Demon (Quasit)")
         end,
       },
@@ -4989,7 +4989,7 @@ ModifyAbility({
       Formula("UMR_Poison_DC"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Poison_SpecificDesc"] == 1) and (character.Race.Name == "Demon (Quasit)")
       end,
     },
@@ -5002,7 +5002,7 @@ DefineAbility({
   Description={
     Format="The creature can mentally communicate with any other creature within a certain range (specified in the creature's entry, usually 100 feet) that has a language. It is possible to address multiple creatures at once telepathically, although maintaining a telepathic conversation with more than one creature at a time is just as difficult as simultaneously speaking and listening to multiple people at the same time.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["UMR_Telepathy_SpecificDesc"] == 0)
       end,
     },

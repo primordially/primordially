@@ -19,10 +19,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Acrobatics") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Acrobatics").ranks >= 1)
         end,
       },
@@ -49,10 +49,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Appraise") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Appraise").ranks >= 1)
         end,
       },
@@ -62,7 +62,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -83,10 +83,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Bluff") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Bluff").ranks >= 1)
         end,
       },
@@ -96,7 +96,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -118,10 +118,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Climb") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Climb").ranks >= 1)
         end,
       },
@@ -136,7 +136,7 @@ DefineSkill({
         Name="Racial",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.HasMovement("Climb", 1))
         end,
       },
@@ -164,10 +164,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Alchemy)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Alchemy)").ranks >= 1)
         end,
       },
@@ -177,7 +177,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -199,7 +199,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsArmor")))
         end,
       },
@@ -221,10 +221,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Armor)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Armor)").ranks >= 1)
         end,
       },
@@ -234,7 +234,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -256,7 +256,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsBaskets")))
         end,
       },
@@ -278,10 +278,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Baskets)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Baskets)").ranks >= 1)
         end,
       },
@@ -291,7 +291,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -313,7 +313,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsBlacksmithing")))
         end,
       },
@@ -335,10 +335,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Blacksmithing)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Blacksmithing)").ranks >= 1)
         end,
       },
@@ -348,7 +348,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -370,7 +370,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsBooks")))
         end,
       },
@@ -392,10 +392,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Books)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Books)").ranks >= 1)
         end,
       },
@@ -405,7 +405,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -427,7 +427,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsBows")))
         end,
       },
@@ -449,10 +449,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Bows)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Bows)").ranks >= 1)
         end,
       },
@@ -462,7 +462,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -484,7 +484,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsCalligraphy")))
         end,
       },
@@ -506,10 +506,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Calligraphy)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Calligraphy)").ranks >= 1)
         end,
       },
@@ -519,7 +519,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -541,7 +541,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsCarpentry")))
         end,
       },
@@ -563,10 +563,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Carpentry)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Carpentry)").ranks >= 1)
         end,
       },
@@ -576,7 +576,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -598,7 +598,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsCloth")))
         end,
       },
@@ -620,10 +620,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Cloth)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Cloth)").ranks >= 1)
         end,
       },
@@ -633,7 +633,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -655,7 +655,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsClothing")))
         end,
       },
@@ -677,10 +677,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Clothing)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Clothing)").ranks >= 1)
         end,
       },
@@ -690,7 +690,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -712,7 +712,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsGemcutting")))
         end,
       },
@@ -734,10 +734,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Gemcutting)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Gemcutting)").ranks >= 1)
         end,
       },
@@ -747,7 +747,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -769,7 +769,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsGlass")))
         end,
       },
@@ -791,10 +791,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Glass)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Glass)").ranks >= 1)
         end,
       },
@@ -804,7 +804,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -826,7 +826,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsJewelry")))
         end,
       },
@@ -848,10 +848,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Jewelry)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Jewelry)").ranks >= 1)
         end,
       },
@@ -861,7 +861,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -883,7 +883,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsLeather")))
         end,
       },
@@ -905,10 +905,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Leather)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Leather)").ranks >= 1)
         end,
       },
@@ -918,7 +918,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -940,7 +940,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsLocks")))
         end,
       },
@@ -962,10 +962,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Locks)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Locks)").ranks >= 1)
         end,
       },
@@ -975,7 +975,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -997,7 +997,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsPaintings")))
         end,
       },
@@ -1019,10 +1019,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Paintings)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Paintings)").ranks >= 1)
         end,
       },
@@ -1032,7 +1032,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1054,7 +1054,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsPottery")))
         end,
       },
@@ -1076,10 +1076,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Pottery)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Pottery)").ranks >= 1)
         end,
       },
@@ -1089,7 +1089,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1111,7 +1111,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsSculptures")))
         end,
       },
@@ -1133,10 +1133,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Sculptures)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Sculptures)").ranks >= 1)
         end,
       },
@@ -1146,7 +1146,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1168,7 +1168,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsShips")))
         end,
       },
@@ -1190,10 +1190,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Ships)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Ships)").ranks >= 1)
         end,
       },
@@ -1203,7 +1203,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1225,7 +1225,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsShoes")))
         end,
       },
@@ -1247,10 +1247,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Shoes)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Shoes)").ranks >= 1)
         end,
       },
@@ -1260,7 +1260,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1282,7 +1282,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsStonemasonry")))
         end,
       },
@@ -1304,10 +1304,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Stonemasonry)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Stonemasonry)").ranks >= 1)
         end,
       },
@@ -1317,7 +1317,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1339,7 +1339,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftTools")))
         end,
       },
@@ -1361,10 +1361,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Traps)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Traps)").ranks >= 1)
         end,
       },
@@ -1374,7 +1374,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1396,7 +1396,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("CraftToolsWeapons")))
         end,
       },
@@ -1418,10 +1418,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Weapons)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Weapons)").ranks >= 1)
         end,
       },
@@ -1431,7 +1431,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1447,7 +1447,7 @@ DefineSkill({
   SourcePage="p.91",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1468,10 +1468,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Diplomacy") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Diplomacy").ranks >= 1)
         end,
       },
@@ -1481,7 +1481,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1503,7 +1503,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("ThiefTools")))
         end,
       },
@@ -1525,10 +1525,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Disable Device") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Disable Device").ranks >= 1)
         end,
       },
@@ -1538,7 +1538,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1560,10 +1560,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Disguise") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Disguise").ranks >= 1)
         end,
       },
@@ -1573,7 +1573,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1595,10 +1595,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Escape Artist") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Escape Artist").ranks >= 1)
         end,
       },
@@ -1626,10 +1626,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Fly") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Fly").ranks >= 1)
         end,
       },
@@ -1657,10 +1657,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Handle Animal") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Handle Animal").ranks >= 1)
         end,
       },
@@ -1670,7 +1670,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1691,10 +1691,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Heal") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Heal").ranks >= 1)
         end,
       },
@@ -1704,7 +1704,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1725,10 +1725,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Intimidate") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Intimidate").ranks >= 1)
         end,
       },
@@ -1755,10 +1755,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Knowledge (Arcana)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Arcana)").ranks >= 1)
         end,
       },
@@ -1768,7 +1768,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1791,10 +1791,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Knowledge (Dungeoneering)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Dungeoneering)").ranks >= 1)
         end,
       },
@@ -1804,7 +1804,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1827,10 +1827,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Knowledge (Engineering)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Engineering)").ranks >= 1)
         end,
       },
@@ -1840,7 +1840,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1863,10 +1863,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Knowledge (Geography)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Geography)").ranks >= 1)
         end,
       },
@@ -1876,7 +1876,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1899,10 +1899,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Knowledge (History)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (History)").ranks >= 1)
         end,
       },
@@ -1912,7 +1912,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1935,10 +1935,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Knowledge (Local)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Local)").ranks >= 1)
         end,
       },
@@ -1948,7 +1948,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -1971,10 +1971,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Knowledge (Nature)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Nature)").ranks >= 1)
         end,
       },
@@ -1984,7 +1984,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2007,10 +2007,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Knowledge (Nobility)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Nobility)").ranks >= 1)
         end,
       },
@@ -2020,7 +2020,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2043,10 +2043,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Knowledge (Planes)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Planes)").ranks >= 1)
         end,
       },
@@ -2056,7 +2056,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2079,10 +2079,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Knowledge (Religion)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Religion)").ranks >= 1)
         end,
       },
@@ -2092,7 +2092,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2108,7 +2108,7 @@ DefineSkill({
   SourcePage="p.100",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["UseUntrainedSkills"] >= 1) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("Bardic Knowledge") then return true end
@@ -2147,10 +2147,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Linguistics") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Linguistics").ranks >= 1)
         end,
       },
@@ -2160,7 +2160,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2181,10 +2181,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Perception") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perception").ranks >= 1)
         end,
       },
@@ -2211,10 +2211,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Perform (Act)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Act)").ranks >= 1)
         end,
       },
@@ -2224,7 +2224,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2247,10 +2247,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Perform (Comedy)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Comedy)").ranks >= 1)
         end,
       },
@@ -2260,7 +2260,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2283,10 +2283,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Perform (Dance)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Dance)").ranks >= 1)
         end,
       },
@@ -2296,7 +2296,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2319,10 +2319,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Perform (Keyboard Instruments)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Keyboard Instruments)").ranks >= 1)
         end,
       },
@@ -2332,7 +2332,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2355,10 +2355,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Perform (Oratory)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Oratory)").ranks >= 1)
         end,
       },
@@ -2368,7 +2368,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2391,10 +2391,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Perform (Percussion Instruments)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Percussion Instruments)").ranks >= 1)
         end,
       },
@@ -2404,7 +2404,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2427,10 +2427,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Perform (Sing)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Sing)").ranks >= 1)
         end,
       },
@@ -2440,7 +2440,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2463,10 +2463,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Perform (String Instruments)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (String Instruments)").ranks >= 1)
         end,
       },
@@ -2476,7 +2476,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2499,10 +2499,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Perform (Wind Instruments)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Wind Instruments)").ranks >= 1)
         end,
       },
@@ -2512,7 +2512,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2528,7 +2528,7 @@ DefineSkill({
   SourcePage="p.102",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2550,10 +2550,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Architect)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Architect)").ranks >= 1)
         end,
       },
@@ -2563,7 +2563,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2586,10 +2586,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Baker)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Baker)").ranks >= 1)
         end,
       },
@@ -2599,7 +2599,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2622,10 +2622,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Barrister)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Barrister)").ranks >= 1)
         end,
       },
@@ -2635,7 +2635,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2658,10 +2658,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Brewer)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Brewer)").ranks >= 1)
         end,
       },
@@ -2671,7 +2671,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2694,10 +2694,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Butcher)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Butcher)").ranks >= 1)
         end,
       },
@@ -2707,7 +2707,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2730,10 +2730,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Clerk)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Clerk)").ranks >= 1)
         end,
       },
@@ -2743,7 +2743,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2766,10 +2766,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Cook)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Cook)").ranks >= 1)
         end,
       },
@@ -2779,7 +2779,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2802,10 +2802,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Courtesan)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Courtesan)").ranks >= 1)
         end,
       },
@@ -2815,7 +2815,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2838,10 +2838,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Driver)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Driver)").ranks >= 1)
         end,
       },
@@ -2851,7 +2851,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2874,10 +2874,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Engineer)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Engineer)").ranks >= 1)
         end,
       },
@@ -2887,7 +2887,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2910,10 +2910,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Farmer)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Farmer)").ranks >= 1)
         end,
       },
@@ -2923,7 +2923,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2946,10 +2946,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Fisherman)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Fisherman)").ranks >= 1)
         end,
       },
@@ -2959,7 +2959,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -2982,10 +2982,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Gambler)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Gambler)").ranks >= 1)
         end,
       },
@@ -2995,7 +2995,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3018,10 +3018,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Gardener)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Gardener)").ranks >= 1)
         end,
       },
@@ -3031,7 +3031,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3054,10 +3054,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Herbalist)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Herbalist)").ranks >= 1)
         end,
       },
@@ -3067,7 +3067,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3090,10 +3090,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Innkeeper)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Innkeeper)").ranks >= 1)
         end,
       },
@@ -3103,7 +3103,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3126,10 +3126,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Librarian)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Librarian)").ranks >= 1)
         end,
       },
@@ -3139,7 +3139,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3162,10 +3162,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Merchant)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Merchant)").ranks >= 1)
         end,
       },
@@ -3175,7 +3175,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3198,10 +3198,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Midwife)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Midwife)").ranks >= 1)
         end,
       },
@@ -3211,7 +3211,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3234,10 +3234,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Miller)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Miller)").ranks >= 1)
         end,
       },
@@ -3247,7 +3247,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3270,10 +3270,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Miner)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Miner)").ranks >= 1)
         end,
       },
@@ -3283,7 +3283,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3306,10 +3306,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Porter)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Porter)").ranks >= 1)
         end,
       },
@@ -3319,7 +3319,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3342,10 +3342,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Sailor)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Sailor)").ranks >= 1)
         end,
       },
@@ -3355,7 +3355,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3378,10 +3378,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Scribe)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Scribe)").ranks >= 1)
         end,
       },
@@ -3391,7 +3391,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3414,10 +3414,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Shepherd)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Shepherd)").ranks >= 1)
         end,
       },
@@ -3427,7 +3427,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3450,10 +3450,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Soldier)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Soldier)").ranks >= 1)
         end,
       },
@@ -3463,7 +3463,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3486,10 +3486,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Soothsayer)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Soothsayer)").ranks >= 1)
         end,
       },
@@ -3499,7 +3499,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3522,10 +3522,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Stable Master)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Stable Master)").ranks >= 1)
         end,
       },
@@ -3535,7 +3535,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3558,10 +3558,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Tanner)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Tanner)").ranks >= 1)
         end,
       },
@@ -3571,7 +3571,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3594,10 +3594,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Trapper)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Trapper)").ranks >= 1)
         end,
       },
@@ -3607,7 +3607,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3630,10 +3630,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Woodcutter)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Woodcutter)").ranks >= 1)
         end,
       },
@@ -3643,7 +3643,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3666,7 +3666,7 @@ DefineSkill({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasItemOfType("Saddle")))
         end,
       },
@@ -3687,10 +3687,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Ride") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Ride").ranks >= 1)
         end,
       },
@@ -3700,7 +3700,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3722,10 +3722,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Sense Motive") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Sense Motive").ranks >= 1)
         end,
       },
@@ -3735,7 +3735,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3758,10 +3758,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Sleight of Hand") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Sleight of Hand").ranks >= 1)
         end,
       },
@@ -3771,7 +3771,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3794,10 +3794,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Spellcraft") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Spellcraft").ranks >= 1)
         end,
       },
@@ -3807,7 +3807,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3829,10 +3829,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Stealth") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Stealth").ranks >= 1)
         end,
       },
@@ -3859,10 +3859,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Survival") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Survival").ranks >= 1)
         end,
       },
@@ -3889,10 +3889,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Swim") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Swim").ranks >= 1)
         end,
       },
@@ -3907,7 +3907,7 @@ DefineSkill({
         Name="Racial",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.HasMovement("Swim", 1))
         end,
       },
@@ -3945,10 +3945,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Use Magic Device") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Use Magic Device").ranks >= 1)
         end,
       },
@@ -3958,7 +3958,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },
@@ -3977,7 +3977,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Acrobatics)" then return true end
@@ -3996,14 +3996,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Acrobatics)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Acrobatics").ranks >= 10)
         end,
       },
@@ -4023,7 +4023,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Appraise)" then return true end
@@ -4042,14 +4042,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Appraise)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Appraise").ranks >= 10)
         end,
       },
@@ -4069,7 +4069,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Bluff)" then return true end
@@ -4088,14 +4088,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Bluff)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Bluff").ranks >= 10)
         end,
       },
@@ -4115,7 +4115,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Climb)" then return true end
@@ -4134,14 +4134,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Climb)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Climb").ranks >= 10)
         end,
       },
@@ -4161,7 +4161,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Alchemy))" then return true end
@@ -4180,14 +4180,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Alchemy))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Alchemy)").ranks >= 10)
         end,
       },
@@ -4207,7 +4207,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Armor))" then return true end
@@ -4226,14 +4226,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Armor))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Armor)").ranks >= 10)
         end,
       },
@@ -4253,7 +4253,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Baskets))" then return true end
@@ -4272,14 +4272,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Baskets))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Baskets)").ranks >= 10)
         end,
       },
@@ -4299,7 +4299,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Books))" then return true end
@@ -4318,14 +4318,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Books))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Books)").ranks >= 10)
         end,
       },
@@ -4345,7 +4345,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Bows))" then return true end
@@ -4364,14 +4364,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Bows))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Bows)").ranks >= 10)
         end,
       },
@@ -4391,7 +4391,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Calligraphy))" then return true end
@@ -4410,14 +4410,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Calligraphy))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Calligraphy)").ranks >= 10)
         end,
       },
@@ -4437,7 +4437,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Carpentry))" then return true end
@@ -4456,14 +4456,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Carpentry))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Carpentry)").ranks >= 10)
         end,
       },
@@ -4483,7 +4483,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Cloth))" then return true end
@@ -4502,14 +4502,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Cloth))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Cloth)").ranks >= 10)
         end,
       },
@@ -4529,7 +4529,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Clothing))" then return true end
@@ -4548,14 +4548,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Clothing))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Clothing)").ranks >= 10)
         end,
       },
@@ -4575,7 +4575,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Glass))" then return true end
@@ -4594,14 +4594,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Glass))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Glass)").ranks >= 10)
         end,
       },
@@ -4621,7 +4621,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Jewelry))" then return true end
@@ -4640,14 +4640,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Jewelry))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Jewelry)").ranks >= 10)
         end,
       },
@@ -4667,7 +4667,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Leather))" then return true end
@@ -4686,14 +4686,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Leather))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Leather)").ranks >= 10)
         end,
       },
@@ -4713,7 +4713,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Locks))" then return true end
@@ -4732,14 +4732,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Locks))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Locks)").ranks >= 10)
         end,
       },
@@ -4759,7 +4759,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Paintings))" then return true end
@@ -4778,14 +4778,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Paintings))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Paintings)").ranks >= 10)
         end,
       },
@@ -4805,7 +4805,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Pottery))" then return true end
@@ -4824,14 +4824,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Pottery))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Pottery)").ranks >= 10)
         end,
       },
@@ -4851,7 +4851,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Sculptures))" then return true end
@@ -4870,14 +4870,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Sculptures))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Sculptures)").ranks >= 10)
         end,
       },
@@ -4897,7 +4897,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Ships))" then return true end
@@ -4916,14 +4916,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Ships))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Ships)").ranks >= 10)
         end,
       },
@@ -4943,7 +4943,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Shoes))" then return true end
@@ -4962,14 +4962,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Shoes))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Shoes)").ranks >= 10)
         end,
       },
@@ -4989,7 +4989,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Stonemasonry))" then return true end
@@ -5008,14 +5008,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Stonemasonry))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Stonemasonry)").ranks >= 10)
         end,
       },
@@ -5035,7 +5035,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Traps))" then return true end
@@ -5054,14 +5054,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Traps))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Traps)").ranks >= 10)
         end,
       },
@@ -5081,7 +5081,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Untrained))" then return true end
@@ -5100,14 +5100,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Untrained))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Untrained)").ranks >= 10)
         end,
       },
@@ -5127,7 +5127,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Weapons))" then return true end
@@ -5146,14 +5146,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Craft (Weapons))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Weapons)").ranks >= 10)
         end,
       },
@@ -5173,7 +5173,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Diplomacy)" then return true end
@@ -5192,14 +5192,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Diplomacy)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Diplomacy").ranks >= 10)
         end,
       },
@@ -5219,7 +5219,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Disable Device)" then return true end
@@ -5238,14 +5238,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Disable Device)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Disable Device").ranks >= 10)
         end,
       },
@@ -5265,7 +5265,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Disguise)" then return true end
@@ -5284,14 +5284,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Disguise)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Disguise").ranks >= 10)
         end,
       },
@@ -5311,7 +5311,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Escape Artist)" then return true end
@@ -5330,14 +5330,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Escape Artist)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Escape Artist").ranks >= 10)
         end,
       },
@@ -5357,7 +5357,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Fly)" then return true end
@@ -5376,14 +5376,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Fly)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Fly").ranks >= 10)
         end,
       },
@@ -5403,7 +5403,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Handle Animal)" then return true end
@@ -5422,14 +5422,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Handle Animal)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Handle Animal").ranks >= 10)
         end,
       },
@@ -5449,7 +5449,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Heal)" then return true end
@@ -5468,14 +5468,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Heal)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Heal").ranks >= 10)
         end,
       },
@@ -5495,7 +5495,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Intimidate)" then return true end
@@ -5514,14 +5514,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Intimidate)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Intimidate").ranks >= 10)
         end,
       },
@@ -5541,7 +5541,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Arcana))" then return true end
@@ -5560,14 +5560,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Arcana))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Arcana)").ranks >= 10)
         end,
       },
@@ -5587,7 +5587,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Dungeoneering))" then return true end
@@ -5606,14 +5606,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Dungeoneering))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Dungeoneering)").ranks >= 10)
         end,
       },
@@ -5633,7 +5633,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Engineering))" then return true end
@@ -5652,14 +5652,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Engineering))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Engineering)").ranks >= 10)
         end,
       },
@@ -5679,7 +5679,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Geography))" then return true end
@@ -5698,14 +5698,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Geography))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Geography)").ranks >= 10)
         end,
       },
@@ -5725,7 +5725,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (History))" then return true end
@@ -5744,14 +5744,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (History))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (History)").ranks >= 10)
         end,
       },
@@ -5771,7 +5771,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Local))" then return true end
@@ -5790,14 +5790,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Local))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Local)").ranks >= 10)
         end,
       },
@@ -5817,7 +5817,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Nature))" then return true end
@@ -5836,14 +5836,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Nature))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Nature)").ranks >= 10)
         end,
       },
@@ -5863,7 +5863,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Nobility))" then return true end
@@ -5882,14 +5882,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Nobility))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Nobility)").ranks >= 10)
         end,
       },
@@ -5909,7 +5909,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Planes))" then return true end
@@ -5928,14 +5928,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Planes))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Planes)").ranks >= 10)
         end,
       },
@@ -5955,7 +5955,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Religion))" then return true end
@@ -5974,14 +5974,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Knowledge (Religion))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Knowledge (Religion)").ranks >= 10)
         end,
       },
@@ -6001,7 +6001,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Linguistics)" then return true end
@@ -6020,14 +6020,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Linguistics)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Linguistics").ranks >= 10)
         end,
       },
@@ -6047,7 +6047,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perception)" then return true end
@@ -6066,14 +6066,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perception)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perception").ranks >= 10)
         end,
       },
@@ -6093,7 +6093,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Act))" then return true end
@@ -6112,14 +6112,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Act))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Act)").ranks >= 10)
         end,
       },
@@ -6139,7 +6139,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Comedy))" then return true end
@@ -6158,14 +6158,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Comedy))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Comedy)").ranks >= 10)
         end,
       },
@@ -6185,7 +6185,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Dance))" then return true end
@@ -6204,14 +6204,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Dance))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Dance)").ranks >= 10)
         end,
       },
@@ -6231,7 +6231,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Keyboard Instruments))" then return true end
@@ -6250,14 +6250,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Keyboard Instruments))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Keyboard Instruments)").ranks >= 10)
         end,
       },
@@ -6277,7 +6277,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Oratory))" then return true end
@@ -6296,14 +6296,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Oratory))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Oratory)").ranks >= 10)
         end,
       },
@@ -6323,7 +6323,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Percussion Instruments))" then return true end
@@ -6342,14 +6342,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Percussion Instruments))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Percussion Instruments)").ranks >= 10)
         end,
       },
@@ -6369,7 +6369,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Sing))" then return true end
@@ -6388,14 +6388,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Sing))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Sing)").ranks >= 10)
         end,
       },
@@ -6415,7 +6415,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (String Instruments))" then return true end
@@ -6434,14 +6434,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (String Instruments))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (String Instruments)").ranks >= 10)
         end,
       },
@@ -6461,7 +6461,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Untrained))" then return true end
@@ -6480,14 +6480,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Untrained))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Untrained)").ranks >= 10)
         end,
       },
@@ -6507,7 +6507,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Wind Instruments))" then return true end
@@ -6526,14 +6526,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Perform (Wind Instruments))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Perform (Wind Instruments)").ranks >= 10)
         end,
       },
@@ -6553,7 +6553,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Architect))" then return true end
@@ -6572,14 +6572,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Architect))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Architect)").ranks >= 10)
         end,
       },
@@ -6599,7 +6599,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Baker))" then return true end
@@ -6618,14 +6618,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Baker))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Baker)").ranks >= 10)
         end,
       },
@@ -6645,7 +6645,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Barrister))" then return true end
@@ -6664,14 +6664,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Barrister))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Barrister)").ranks >= 10)
         end,
       },
@@ -6691,7 +6691,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Brewer))" then return true end
@@ -6710,14 +6710,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Brewer))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Brewer)").ranks >= 10)
         end,
       },
@@ -6737,7 +6737,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Butcher))" then return true end
@@ -6756,14 +6756,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Butcher))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Butcher)").ranks >= 10)
         end,
       },
@@ -6783,7 +6783,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Clerk))" then return true end
@@ -6802,14 +6802,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Clerk))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Clerk)").ranks >= 10)
         end,
       },
@@ -6829,7 +6829,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Cook))" then return true end
@@ -6848,14 +6848,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Cook))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Cook)").ranks >= 10)
         end,
       },
@@ -6875,7 +6875,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Courtesan))" then return true end
@@ -6894,14 +6894,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Courtesan))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Courtesan)").ranks >= 10)
         end,
       },
@@ -6921,7 +6921,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Driver))" then return true end
@@ -6940,14 +6940,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Driver))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Driver)").ranks >= 10)
         end,
       },
@@ -6967,7 +6967,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Engineer))" then return true end
@@ -6986,14 +6986,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Engineer))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Engineer)").ranks >= 10)
         end,
       },
@@ -7013,7 +7013,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Farmer))" then return true end
@@ -7032,14 +7032,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Farmer))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Farmer)").ranks >= 10)
         end,
       },
@@ -7059,7 +7059,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Fisherman))" then return true end
@@ -7078,14 +7078,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Fisherman))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Fisherman)").ranks >= 10)
         end,
       },
@@ -7105,7 +7105,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Gambler))" then return true end
@@ -7124,14 +7124,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Gambler))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Gambler)").ranks >= 10)
         end,
       },
@@ -7151,7 +7151,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Gardener))" then return true end
@@ -7170,14 +7170,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Gardener))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Gardener)").ranks >= 10)
         end,
       },
@@ -7197,7 +7197,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Herbalist))" then return true end
@@ -7216,14 +7216,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Herbalist))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Herbalist)").ranks >= 10)
         end,
       },
@@ -7243,7 +7243,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Innkeeper))" then return true end
@@ -7262,14 +7262,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Innkeeper))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Innkeeper)").ranks >= 10)
         end,
       },
@@ -7289,7 +7289,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Librarian))" then return true end
@@ -7308,14 +7308,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Librarian))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Librarian)").ranks >= 10)
         end,
       },
@@ -7335,7 +7335,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Merchant))" then return true end
@@ -7354,14 +7354,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Merchant))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Merchant)").ranks >= 10)
         end,
       },
@@ -7381,7 +7381,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Midwife))" then return true end
@@ -7400,14 +7400,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Midwife))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Midwife)").ranks >= 10)
         end,
       },
@@ -7427,7 +7427,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Miller))" then return true end
@@ -7446,14 +7446,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Miller))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Miller)").ranks >= 10)
         end,
       },
@@ -7473,7 +7473,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Miner))" then return true end
@@ -7492,14 +7492,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Miner))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Miner)").ranks >= 10)
         end,
       },
@@ -7519,7 +7519,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Porter))" then return true end
@@ -7538,14 +7538,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Porter))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Porter)").ranks >= 10)
         end,
       },
@@ -7565,7 +7565,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Sailor))" then return true end
@@ -7584,14 +7584,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Sailor))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Sailor)").ranks >= 10)
         end,
       },
@@ -7611,7 +7611,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Scribe))" then return true end
@@ -7630,14 +7630,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Scribe))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Scribe)").ranks >= 10)
         end,
       },
@@ -7657,7 +7657,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Shepherd))" then return true end
@@ -7676,14 +7676,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Shepherd))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Shepherd)").ranks >= 10)
         end,
       },
@@ -7703,7 +7703,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Soldier))" then return true end
@@ -7722,14 +7722,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Soldier))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Soldier)").ranks >= 10)
         end,
       },
@@ -7749,7 +7749,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Stable Master))" then return true end
@@ -7768,14 +7768,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Stable Master))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Stable Master)").ranks >= 10)
         end,
       },
@@ -7795,7 +7795,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Tanner))" then return true end
@@ -7814,14 +7814,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Tanner))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Tanner)").ranks >= 10)
         end,
       },
@@ -7841,7 +7841,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Trapper))" then return true end
@@ -7860,14 +7860,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Trapper))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Trapper)").ranks >= 10)
         end,
       },
@@ -7887,7 +7887,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Woodcutter))" then return true end
@@ -7906,14 +7906,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Woodcutter))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Woodcutter)").ranks >= 10)
         end,
       },
@@ -7933,7 +7933,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Ride)" then return true end
@@ -7952,14 +7952,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Ride)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Ride").ranks >= 10)
         end,
       },
@@ -7979,7 +7979,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Sense Motive)" then return true end
@@ -7998,14 +7998,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Sense Motive)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Sense Motive").ranks >= 10)
         end,
       },
@@ -8025,7 +8025,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Sleight of Hand)" then return true end
@@ -8044,14 +8044,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Sleight of Hand)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Sleight of Hand").ranks >= 10)
         end,
       },
@@ -8071,7 +8071,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Spellcraft)" then return true end
@@ -8090,14 +8090,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Spellcraft)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Spellcraft").ranks >= 10)
         end,
       },
@@ -8117,7 +8117,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Stealth)" then return true end
@@ -8136,14 +8136,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Stealth)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Stealth").ranks >= 10)
         end,
       },
@@ -8163,7 +8163,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Survival)" then return true end
@@ -8182,14 +8182,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Survival)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Survival").ranks >= 10)
         end,
       },
@@ -8209,7 +8209,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Swim)" then return true end
@@ -8228,14 +8228,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Swim)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Swim").ranks >= 10)
         end,
       },
@@ -8255,7 +8255,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Use Magic Device)" then return true end
@@ -8274,14 +8274,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Use Magic Device)" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Use Magic Device").ranks >= 10)
         end,
       },
@@ -8297,7 +8297,7 @@ DefineSkill({
   KeyStat="STR",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["UseUntrainedSkills"] >= 1)
     end,
   },
@@ -8308,7 +8308,7 @@ DefineSkill({
   KeyStat="DEX",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["UseUntrainedSkills"] >= 1)
     end,
   },
@@ -8319,7 +8319,7 @@ DefineSkill({
   KeyStat="INT",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["UseUntrainedSkills"] >= 1)
     end,
   },
@@ -8330,7 +8330,7 @@ DefineSkill({
   KeyStat="WIS",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["UseUntrainedSkills"] >= 1)
     end,
   },
@@ -8341,7 +8341,7 @@ DefineSkill({
   KeyStat="CHA",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["UseUntrainedSkills"] >= 1)
     end,
   },
@@ -8351,7 +8351,7 @@ DefineSkill({
   KeyStat="WIS",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["UseUntrainedSkills"] >= 1)
     end,
   },
@@ -8362,10 +8362,10 @@ DefineSkill({
   KeyStat="DEX",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not ((character.Skill("Disable Device").ranks >= 1))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["UseUntrainedSkills"] >= 1)
     end,
   },
@@ -8376,10 +8376,10 @@ DefineSkill({
   KeyStat="CHA",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not ((character.Skill("Handle Animal").ranks >= 1))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["UseUntrainedSkills"] >= 1)
     end,
   },
@@ -8390,10 +8390,10 @@ DefineSkill({
   KeyStat="INT",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not ((character.Skill("Linguistics").ranks >= 1))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["UseUntrainedSkills"] >= 1)
     end,
   },
@@ -8404,10 +8404,10 @@ DefineSkill({
   KeyStat="DEX",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not ((character.Skill("Sleight of Hand").ranks >= 1))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["UseUntrainedSkills"] >= 1)
     end,
   },
@@ -8418,10 +8418,10 @@ DefineSkill({
   KeyStat="INT",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not ((character.Skill("Spellcraft").ranks >= 1))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["UseUntrainedSkills"] >= 1)
     end,
   },
@@ -8432,10 +8432,10 @@ DefineSkill({
   KeyStat="CHA",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not ((character.Skill("Use Magic Device").ranks >= 1))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["UseUntrainedSkills"] >= 1)
     end,
   },

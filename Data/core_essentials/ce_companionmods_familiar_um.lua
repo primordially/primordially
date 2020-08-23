@@ -177,7 +177,7 @@ DefineFollowerBonus({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Familiar (Thrush)")
     end,
   },
