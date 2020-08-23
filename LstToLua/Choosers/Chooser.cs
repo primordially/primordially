@@ -30,6 +30,8 @@ namespace Primordially.LstToLua.Choosers
                     return new UserInputChooser().Process(rest);
                 case "STRING":
                     return new StringChooser().Process(rest);
+                case "ABILITY":
+                    return new AbilityChooser().Process(rest);
                 case "ABILITYSELECTION":
                     return new AbilitySelectionChooser().Process(rest);
                 case "SKILL":
@@ -44,6 +46,8 @@ namespace Primordially.LstToLua.Choosers
                     return new SchoolChooser().Process(rest);
                 case "CLASS":
                     return new ClassChooser().Process(rest);
+                case "DOMAIN":
+                    return new DomainChooser().Process(rest);
                 case "NUMBER":
                     return new NumberChooser().Process(rest);
                 case "TEMPLATE":

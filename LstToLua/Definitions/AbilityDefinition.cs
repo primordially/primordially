@@ -62,7 +62,7 @@ namespace Primordially.LstToLua.Definitions
                 CommonProperties.Kit,
                 CommonProperties.ServesAs,
                 CommonProperties.Facts,
-                CommonProperties.AddedSpellCasterLevels,
+                CommonProperties.Add,
                 CommonProperties.ChangeWeaponProficiency,
                 CommonProperties.DefineStat,
                 CommonProperties.Info,

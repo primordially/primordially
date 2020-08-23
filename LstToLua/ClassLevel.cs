@@ -23,7 +23,7 @@ namespace Primordially.LstToLua
                 CommonProperties.Definitions,
                 CommonProperties.Domains,
                 CommonProperties.Kit,
-                CommonProperties.AddedSpellCasterLevels,
+                CommonProperties.Add,
                 CommonProperties.SpellLevel,
             });
         }

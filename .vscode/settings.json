@@ -2,6 +2,7 @@
   "Lua.diagnostics.globals": [
     "SetDataSetInfo",
     "SetSource",
+    "DefineFunction",
     "DefineClass",
     "DefineAbility",
     "DefineAbilityCategory",
@@ -32,6 +33,8 @@
     "ModifyWeaponProficiency",
     "CopyEquipment",
     "CopyEquipmentModifier",
+    "CopyRace",
+    "ChooseAbility",
     "ChooseAbilitySelection",
     "ChooseSkill",
     "ChooseClass",
@@ -46,11 +49,13 @@
     "ChooseSkillBonus",
     "ChooseNothing",
     "ChooseTemplate",
+    "SetDefaultVariableValue",
     "GetSpellCastingType",
     "IsRuleEnabled",
     "ClassIsType",
     "SpellIsInClassList",
     "ImportFile",
+    "ImportDataSet",
     "HideObjects",
     "AddAvailableCompanions",
     "Formula",
@@ -59,6 +64,7 @@
     "countTrue",
     "stringMatch",
     "any",
-    "filter"
+    "filter",
+    "sum"
   ]
 }

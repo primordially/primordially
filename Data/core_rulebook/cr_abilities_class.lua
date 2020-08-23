@@ -7446,7 +7446,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Rage Power ~ Low-Light Vision" then return true end
         return false
       end) or (character.HasVision("Low-Light Vision"))
@@ -8012,7 +8011,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Rage Power ~ Intimidating Glare" then return true end
         return false
       end)
@@ -9262,7 +9260,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Act" then return true end
             return false
           end)
@@ -9282,7 +9279,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Act" then return true end
             return false
           end)
@@ -9333,7 +9329,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Comedy" then return true end
             return false
           end)
@@ -9353,7 +9348,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Comedy" then return true end
             return false
           end)
@@ -9404,7 +9398,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Dance" then return true end
             return false
           end)
@@ -9424,7 +9417,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Dance" then return true end
             return false
           end)
@@ -9475,7 +9467,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Keyboard Instruments" then return true end
             return false
           end)
@@ -9495,7 +9486,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Keyboard Instruments" then return true end
             return false
           end)
@@ -9546,7 +9536,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Oratory" then return true end
             return false
           end)
@@ -9566,7 +9555,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Oratory" then return true end
             return false
           end)
@@ -9617,7 +9605,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Percussion Instruments" then return true end
             return false
           end)
@@ -9637,7 +9624,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Percussion Instruments" then return true end
             return false
           end)
@@ -9688,7 +9674,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Sing" then return true end
             return false
           end)
@@ -9708,7 +9693,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Sing" then return true end
             return false
           end)
@@ -9759,7 +9743,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ String Instruments" then return true end
             return false
           end)
@@ -9779,7 +9762,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ String Instruments" then return true end
             return false
           end)
@@ -9830,7 +9812,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Wind Instruments" then return true end
             return false
           end)
@@ -9850,7 +9831,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Versatile Performance ~ Wind Instruments" then return true end
             return false
           end)
@@ -10087,7 +10067,6 @@ DefineAbility({
       function (character, item)
         return character.HasAnyAbility(function (ability)
           if ability.Category ~= "Special Ability" then return false end
-          if ability.IsAnyType() then return true end
           if ability.Name == "Cleric ~ Channel Negative Energy" then return true end
           return false
         end)
@@ -10373,7 +10352,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Air)" then return true end
             return false
           end))
@@ -10423,7 +10401,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Animal)" then return true end
             return false
           end))
@@ -10473,7 +10450,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Artifice)" then return true end
             return false
           end))
@@ -10523,7 +10499,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Chaos)" then return true end
             return false
           end))
@@ -10573,7 +10548,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Charm)" then return true end
             return false
           end))
@@ -10623,7 +10597,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Community)" then return true end
             return false
           end))
@@ -10673,7 +10646,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Darkness)" then return true end
             return false
           end))
@@ -10723,7 +10695,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Death)" then return true end
             return false
           end))
@@ -10773,7 +10744,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Destruction)" then return true end
             return false
           end))
@@ -10823,7 +10793,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Earth)" then return true end
             return false
           end))
@@ -10873,7 +10842,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Evil)" then return true end
             return false
           end))
@@ -10923,7 +10891,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Fire)" then return true end
             return false
           end))
@@ -10973,7 +10940,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Glory)" then return true end
             return false
           end))
@@ -11023,7 +10989,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Good)" then return true end
             return false
           end))
@@ -11073,7 +11038,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Healing)" then return true end
             return false
           end))
@@ -11123,7 +11087,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Knowledge)" then return true end
             return false
           end))
@@ -11173,7 +11136,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Law)" then return true end
             return false
           end))
@@ -11223,7 +11185,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Liberation)" then return true end
             return false
           end))
@@ -11273,7 +11234,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Luck)" then return true end
             return false
           end))
@@ -11323,7 +11283,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Madness)" then return true end
             return false
           end))
@@ -11373,7 +11332,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Magic)" then return true end
             return false
           end))
@@ -11423,7 +11381,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Nobility)" then return true end
             return false
           end))
@@ -11473,7 +11430,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Plant)" then return true end
             return false
           end))
@@ -11523,7 +11479,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Protection)" then return true end
             return false
           end))
@@ -11573,7 +11528,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Repose)" then return true end
             return false
           end))
@@ -11623,7 +11577,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Rune)" then return true end
             return false
           end))
@@ -11673,7 +11626,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Strength)" then return true end
             return false
           end))
@@ -11723,7 +11675,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Sun)" then return true end
             return false
           end))
@@ -11773,7 +11724,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Travel)" then return true end
             return false
           end))
@@ -11823,7 +11773,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Trickery)" then return true end
             return false
           end))
@@ -11873,7 +11822,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (War)" then return true end
             return false
           end))
@@ -11923,7 +11871,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Water)" then return true end
             return false
           end))
@@ -11973,7 +11920,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Weather)" then return true end
             return false
           end))
@@ -14054,7 +14000,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Air)" then return true end
             return false
           end))
@@ -14203,7 +14148,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Animal)" then return true end
             return false
           end))
@@ -14355,7 +14299,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Artifice)" then return true end
             return false
           end))
@@ -14504,7 +14447,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Chaos)" then return true end
             return false
           end))
@@ -14658,7 +14600,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Charm)" then return true end
             return false
           end))
@@ -14807,7 +14748,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Community)" then return true end
             return false
           end))
@@ -14963,7 +14903,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Darkness)" then return true end
             return false
           end))
@@ -15112,7 +15051,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Death)" then return true end
             return false
           end))
@@ -15261,7 +15199,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Destruction)" then return true end
             return false
           end))
@@ -15410,7 +15347,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Earth)" then return true end
             return false
           end))
@@ -15559,7 +15495,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Evil)" then return true end
             return false
           end))
@@ -15713,7 +15648,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Fire)" then return true end
             return false
           end))
@@ -15862,7 +15796,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Glory)" then return true end
             return false
           end))
@@ -16018,7 +15951,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Good)" then return true end
             return false
           end))
@@ -16172,7 +16104,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Healing)" then return true end
             return false
           end))
@@ -16321,7 +16252,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Knowledge)" then return true end
             return false
           end))
@@ -16473,7 +16403,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Law)" then return true end
             return false
           end))
@@ -16627,7 +16556,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Liberation)" then return true end
             return false
           end))
@@ -16776,7 +16704,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Luck)" then return true end
             return false
           end))
@@ -16925,7 +16852,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Madness)" then return true end
             return false
           end))
@@ -17074,7 +17000,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Magic)" then return true end
             return false
           end))
@@ -17223,7 +17148,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Nobility)" then return true end
             return false
           end))
@@ -17372,7 +17296,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Plant)" then return true end
             return false
           end))
@@ -17521,7 +17444,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Protection)" then return true end
             return false
           end))
@@ -17687,7 +17609,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Repose)" then return true end
             return false
           end))
@@ -17843,7 +17764,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Rune)" then return true end
             return false
           end))
@@ -17992,7 +17912,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Strength)" then return true end
             return false
           end))
@@ -18141,7 +18060,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Sun)" then return true end
             return false
           end))
@@ -18290,7 +18208,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Travel)" then return true end
             return false
           end))
@@ -18446,7 +18363,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Trickery)" then return true end
             return false
           end))
@@ -18600,7 +18516,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (War)" then return true end
             return false
           end))
@@ -18749,7 +18664,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Water)" then return true end
             return false
           end))
@@ -18898,7 +18812,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "DisableDomainLVL1 (Weather)" then return true end
             return false
           end))
@@ -23814,7 +23727,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Ability Focus (Poison)" then return true end
             return false
           end)
@@ -25271,7 +25183,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 1 Axes" then return true end
             return false
           end)
@@ -25294,7 +25205,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 1 Blades Heavy" then return true end
             return false
           end)
@@ -25317,7 +25227,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 1 Blades Light" then return true end
             return false
           end)
@@ -25340,7 +25249,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 1 Bows" then return true end
             return false
           end)
@@ -25363,7 +25271,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 1 Close" then return true end
             return false
           end)
@@ -25386,7 +25293,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 1 Crossbows" then return true end
             return false
           end)
@@ -25409,7 +25315,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 1 Double" then return true end
             return false
           end)
@@ -25432,7 +25337,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 1 Flails" then return true end
             return false
           end)
@@ -25455,7 +25359,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 1 Hammers" then return true end
             return false
           end)
@@ -25478,7 +25381,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 1 Monk" then return true end
             return false
           end)
@@ -25501,7 +25403,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 1 Natural" then return true end
             return false
           end)
@@ -25524,7 +25425,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 1 Pole Arms" then return true end
             return false
           end)
@@ -25547,7 +25447,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 1 Spears" then return true end
             return false
           end)
@@ -25570,7 +25469,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 1 Thrown" then return true end
             return false
           end)
@@ -25593,7 +25491,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 2 Axes" then return true end
             return false
           end)
@@ -25616,7 +25513,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 2 Blades Heavy" then return true end
             return false
           end)
@@ -25639,7 +25535,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 2 Blades Light" then return true end
             return false
           end)
@@ -25662,7 +25557,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 2 Bows" then return true end
             return false
           end)
@@ -25685,7 +25579,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 2 Close" then return true end
             return false
           end)
@@ -25708,7 +25601,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 2 Crossbows" then return true end
             return false
           end)
@@ -25731,7 +25623,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 2 Double" then return true end
             return false
           end)
@@ -25754,7 +25645,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 2 Flails" then return true end
             return false
           end)
@@ -25777,7 +25667,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 2 Hammers" then return true end
             return false
           end)
@@ -25800,7 +25689,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 2 Monk" then return true end
             return false
           end)
@@ -25823,7 +25711,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 2 Natural" then return true end
             return false
           end)
@@ -25846,7 +25733,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 2 Pole Arms" then return true end
             return false
           end)
@@ -25869,7 +25755,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 2 Spears" then return true end
             return false
           end)
@@ -25892,7 +25777,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 2 Thrown" then return true end
             return false
           end)
@@ -25915,7 +25799,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 3 Axes" then return true end
             return false
           end)
@@ -25938,7 +25821,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 3 Blades Heavy" then return true end
             return false
           end)
@@ -25961,7 +25843,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 3 Blades Light" then return true end
             return false
           end)
@@ -25984,7 +25865,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 3 Bows" then return true end
             return false
           end)
@@ -26007,7 +25887,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 3 Close" then return true end
             return false
           end)
@@ -26030,7 +25909,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 3 Crossbows" then return true end
             return false
           end)
@@ -26053,7 +25931,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 3 Double" then return true end
             return false
           end)
@@ -26076,7 +25953,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 3 Flails" then return true end
             return false
           end)
@@ -26099,7 +25975,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 3 Hammers" then return true end
             return false
           end)
@@ -26122,7 +25997,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 3 Monk" then return true end
             return false
           end)
@@ -26145,7 +26019,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 3 Natural" then return true end
             return false
           end)
@@ -26168,7 +26041,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 3 Pole Arms" then return true end
             return false
           end)
@@ -26191,7 +26063,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 3 Spears" then return true end
             return false
           end)
@@ -26214,7 +26085,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 3 Thrown" then return true end
             return false
           end)
@@ -26237,7 +26107,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 4 Axes" then return true end
             return false
           end)
@@ -26260,7 +26129,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 4 Blades Heavy" then return true end
             return false
           end)
@@ -26283,7 +26151,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 4 Blades Light" then return true end
             return false
           end)
@@ -26306,7 +26173,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 4 Bows" then return true end
             return false
           end)
@@ -26329,7 +26195,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 4 Close" then return true end
             return false
           end)
@@ -26352,7 +26217,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 4 Crossbows" then return true end
             return false
           end)
@@ -26375,7 +26239,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 4 Double" then return true end
             return false
           end)
@@ -26398,7 +26261,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 4 Flails" then return true end
             return false
           end)
@@ -26421,7 +26283,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 4 Hammers" then return true end
             return false
           end)
@@ -26444,7 +26305,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 4 Monk" then return true end
             return false
           end)
@@ -26467,7 +26327,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 4 Natural" then return true end
             return false
           end)
@@ -26490,7 +26349,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 4 Pole Arms" then return true end
             return false
           end)
@@ -26513,7 +26371,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 4 Spears" then return true end
             return false
           end)
@@ -26536,7 +26393,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Training 4 Thrown" then return true end
             return false
           end)
@@ -29170,7 +29026,7 @@ DefineAbility({
     },
   },
   SourcePage="p.59",
-  SpellResistance="DiamondSoul",
+  SpellResistance=Formula("DiamondSoul"),
   Bonuses={
     {
       Category="VAR",
@@ -30797,7 +30653,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Catch Off-Guard" then return true end
         return false
       end))
@@ -30831,7 +30686,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Combat Reflexes" then return true end
         return false
       end))
@@ -30865,7 +30719,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Deflect Arrows" then return true end
         return false
       end))
@@ -30899,7 +30752,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Dodge" then return true end
         return false
       end))
@@ -30933,7 +30785,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Grapple" then return true end
         return false
       end))
@@ -30967,7 +30818,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Scorpion Style" then return true end
         return false
       end))
@@ -31001,7 +30851,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Throw Anything" then return true end
         return false
       end))
@@ -31035,7 +30884,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Gorgon's Fist" then return true end
         return false
       end))
@@ -31069,7 +30917,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Bull Rush" then return true end
         return false
       end))
@@ -31103,7 +30950,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Disarm" then return true end
         return false
       end))
@@ -31137,7 +30983,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Feint" then return true end
         return false
       end))
@@ -31171,7 +31016,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Trip" then return true end
         return false
       end))
@@ -31205,7 +31049,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Mobility" then return true end
         return false
       end))
@@ -31275,7 +31118,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Medusa's Wrath" then return true end
         return false
       end))
@@ -31309,7 +31151,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Snatch Arrows" then return true end
         return false
       end))
@@ -31343,7 +31184,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Spring Attack" then return true end
         return false
       end))
@@ -34919,7 +34759,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Mercy ~ Fatigued" then return true end
         return false
       end)
@@ -34949,7 +34788,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Mercy ~ Shaken" then return true end
         return false
       end)
@@ -34979,7 +34817,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Mercy ~ Sickened" then return true end
         return false
       end)
@@ -36288,7 +36125,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Far Shot" then return true end
         return false
       end))
@@ -36328,7 +36164,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Point-Blank Shot" then return true end
         return false
       end))
@@ -36368,7 +36203,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Precise Shot" then return true end
         return false
       end))
@@ -36408,7 +36242,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Rapid Shot" then return true end
         return false
       end))
@@ -36448,7 +36281,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Precise Shot" then return true end
         return false
       end))
@@ -36488,7 +36320,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Manyshot" then return true end
         return false
       end))
@@ -36528,7 +36359,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Pinpoint Targeting" then return true end
         return false
       end))
@@ -36568,7 +36398,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Shot on the Run" then return true end
         return false
       end))
@@ -36608,7 +36437,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Double Slice" then return true end
         return false
       end))
@@ -36648,7 +36476,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Shield Bash" then return true end
         return false
       end))
@@ -36688,7 +36515,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Quick Draw" then return true end
         return false
       end))
@@ -36728,7 +36554,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Two-Weapon Fighting" then return true end
         return false
       end))
@@ -36768,7 +36593,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Two-Weapon Fighting" then return true end
         return false
       end))
@@ -36808,7 +36632,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Two-Weapon Defense" then return true end
         return false
       end))
@@ -36848,7 +36671,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Greater Two-Weapon Fighting" then return true end
         return false
       end))
@@ -36888,7 +36710,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Two-Weapon Rend" then return true end
         return false
       end))
@@ -38524,7 +38345,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Aberration" then return true end
         return false
       end)
@@ -38558,7 +38378,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Animal" then return true end
         return false
       end)
@@ -38592,7 +38411,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Construct" then return true end
         return false
       end)
@@ -38626,7 +38444,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Dragon" then return true end
         return false
       end)
@@ -38660,7 +38477,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Fey" then return true end
         return false
       end)
@@ -38694,7 +38510,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Humanoid (Aquatic)" then return true end
         return false
       end)
@@ -38728,7 +38543,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Humanoid (Dwarf)" then return true end
         return false
       end)
@@ -38762,7 +38576,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Humanoid (Elf)" then return true end
         return false
       end)
@@ -38796,7 +38609,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Humanoid (Giant)" then return true end
         return false
       end)
@@ -38830,7 +38642,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Humanoid (Gnoll)" then return true end
         return false
       end)
@@ -38864,7 +38675,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Humanoid (Gnome)" then return true end
         return false
       end)
@@ -38898,7 +38708,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Humanoid (Goblinoid)" then return true end
         return false
       end)
@@ -38932,7 +38741,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Humanoid (Halfling)" then return true end
         return false
       end)
@@ -38966,7 +38774,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Humanoid (Human)" then return true end
         return false
       end)
@@ -39000,7 +38807,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Humanoid (Orc)" then return true end
         return false
       end)
@@ -39034,7 +38840,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Humanoid (Reptilian)" then return true end
         return false
       end)
@@ -39068,7 +38873,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Magical Beast" then return true end
         return false
       end)
@@ -39102,7 +38906,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Monstrous Humanoid" then return true end
         return false
       end)
@@ -39136,7 +38939,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Ooze" then return true end
         return false
       end)
@@ -39170,7 +38972,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Outsider (Air)" then return true end
         return false
       end)
@@ -39204,7 +39005,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Outsider (Earth)" then return true end
         return false
       end)
@@ -39238,7 +39038,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Outsider (Fire)" then return true end
         return false
       end)
@@ -39272,7 +39071,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Outsider (Water)" then return true end
         return false
       end)
@@ -39306,7 +39104,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Outsider (Lawful)" then return true end
         return false
       end)
@@ -39340,7 +39137,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Outsider (Chaotic)" then return true end
         return false
       end)
@@ -39374,7 +39170,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Outsider (Good)" then return true end
         return false
       end)
@@ -39408,7 +39203,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Outsider (Evil)" then return true end
         return false
       end)
@@ -39442,7 +39236,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Outsider (Native)" then return true end
         return false
       end)
@@ -39476,7 +39269,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Plant" then return true end
         return false
       end)
@@ -39510,7 +39302,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Undead" then return true end
         return false
       end)
@@ -39544,7 +39335,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Enemy ~ Vermin" then return true end
         return false
       end)
@@ -40080,7 +39870,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Terrain ~ Cold" then return true end
         return false
       end)
@@ -40114,7 +39903,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Terrain ~ Desert" then return true end
         return false
       end)
@@ -40148,7 +39936,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Terrain ~ Forest" then return true end
         return false
       end)
@@ -40182,7 +39969,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Terrain ~ Jungle" then return true end
         return false
       end)
@@ -40216,7 +40002,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Terrain ~ Mountain" then return true end
         return false
       end)
@@ -40250,7 +40035,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Terrain ~ Plains" then return true end
         return false
       end)
@@ -40284,7 +40068,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Terrain ~ Plane" then return true end
         return false
       end)
@@ -40318,7 +40101,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Terrain ~ Swamp" then return true end
         return false
       end)
@@ -40352,7 +40134,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Terrain ~ Underground" then return true end
         return false
       end)
@@ -40386,7 +40167,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Terrain ~ Urban" then return true end
         return false
       end)
@@ -40420,7 +40200,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Favored Terrain ~ Water" then return true end
         return false
       end)
@@ -41218,7 +40997,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Rogue Talent ~ Minor Magic" then return true end
         return false
       end)
@@ -41550,7 +41328,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Rogue Talent ~ Major Magic" then return true end
         return false
       end)
@@ -43243,7 +43020,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Nimble Moves" then return true end
         return false
       end)
@@ -43347,7 +43123,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Arcane Armor Training" then return true end
         return false
       end)
@@ -43358,7 +43133,6 @@ DefineAbility({
     function (character, item)
       return (character.IsProficientWithArmorType("Medium")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Armor Proficiency (Medium)" then return true end
         return false
       end)
@@ -43400,7 +43174,6 @@ DefineAbility({
     function (character, item)
       return (character.IsProficientWithArmorType("Light")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Armor Proficiency (Light)" then return true end
         return false
       end)
@@ -43511,7 +43284,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Spell Focus (Conjuration)" then return true end
         return false
       end)
@@ -43581,7 +43353,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
@@ -43965,7 +43736,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Endurance" then return true end
         return false
       end)
@@ -44165,7 +43935,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Point-Blank Shot" then return true end
         return false
       end)
@@ -44305,7 +44074,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Spell Focus" then return true end
         return false
       end)
@@ -44374,7 +44142,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
@@ -44450,7 +44217,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Combat Expertise" then return true end
         return false
       end)
@@ -44526,7 +44292,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Improved Unarmed Strike" then return true end
         return false
       end)
@@ -44568,7 +44333,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Great Fortitude" then return true end
         return false
       end)
@@ -44638,7 +44402,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Iron Will" then return true end
         return false
       end)
@@ -44677,7 +44440,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
@@ -44722,7 +44484,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
@@ -44962,7 +44723,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Martial Weapon Proficiency Output" then return true end
         return false
       end))
@@ -45032,7 +44792,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Dodge" then return true end
         return false
       end)
@@ -45245,7 +45004,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Point-Blank Shot" then return true end
         return false
       end)
@@ -45349,7 +45107,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Mounted Combat" then return true end
         return false
       end)
@@ -46321,7 +46078,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Dodge" then return true end
         return false
       end)
@@ -52367,7 +52123,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer ~ Standard Bloodline" then return true end
         return false
       end)
@@ -53029,7 +52784,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Aberrant" then return true end
         return false
       end)
@@ -53115,7 +52869,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Aberrant" then return true end
         return false
       end)
@@ -53156,7 +52909,6 @@ DefineAbility({
         function (character, item)
           return not (2 <= character.CountAbilities(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Immunity to Critical Hits" then return true end
             if ability.Name == "Immunity to Sneak Attacks" then return true end
             return false
@@ -53174,7 +52926,6 @@ DefineAbility({
         function (character, item)
           return not (2 <= character.CountAbilities(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Immunity to Critical Hits" then return true end
             if ability.Name == "Immunity to Sneak Attacks" then return true end
             return false
@@ -53212,7 +52963,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Aberrant" then return true end
         return false
       end)
@@ -53242,7 +52992,7 @@ DefineAbility({
     },
   },
   SourcePage="p.72",
-  SpellResistance="Sorcerer_AlienResistance_SR",
+  SpellResistance=Formula("Sorcerer_AlienResistance_SR"),
   Aspects={
     {
       Name="ChildAbility",
@@ -53262,7 +53012,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Aberrant" then return true end
         return false
       end)
@@ -53327,7 +53076,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Aberrant" then return true end
         return false
       end)
@@ -54073,7 +53821,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Abyssal" then return true end
         return false
       end)
@@ -54115,7 +53862,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Immunity to Poison" then return true end
             return false
           end))
@@ -54157,7 +53903,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Abyssal" then return true end
         return false
       end)
@@ -54215,7 +53960,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Abyssal" then return true end
         return false
       end)
@@ -54252,7 +53996,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Abyssal" then return true end
         return false
       end)
@@ -54337,7 +54080,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Abyssal" then return true end
         return false
       end)
@@ -54972,7 +54714,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Arcane" then return true end
         return false
       end)
@@ -55013,7 +54754,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Arcane Bloodline ~ Arcane Apotheosis" then return true end
             return false
           end))
@@ -55030,7 +54770,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Arcane Bloodline ~ Arcane Apotheosis" then return true end
             return false
           end))
@@ -55044,7 +54783,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Arcane Bloodline ~ Arcane Apotheosis" then return true end
             return false
           end))
@@ -55069,7 +54807,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Arcane" then return true end
         return false
       end)
@@ -55125,7 +54862,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Arcane" then return true end
         return false
       end)
@@ -55166,7 +54902,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Arcane" then return true end
         return false
       end)
@@ -55230,7 +54965,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Arcane" then return true end
         return false
       end)
@@ -55275,7 +55009,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Arcane" then return true end
         return false
       end)
@@ -56198,7 +55931,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Celestial" then return true end
         return false
       end)
@@ -56257,7 +55989,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Celestial" then return true end
         return false
       end)
@@ -56285,7 +56016,6 @@ DefineAbility({
       function (character, item)
         return character.HasAnyAbility(function (ability)
           if ability.Category ~= "Special Ability" then return false end
-          if ability.IsAnyType() then return true end
           if ability.Name == "Celestial Bloodline ~ Ascension" then return true end
           return false
         end)
@@ -56304,7 +56034,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Celestial Bloodline ~ Ascension" then return true end
             return false
           end))
@@ -56321,7 +56050,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Celestial Bloodline ~ Ascension" then return true end
             return false
           end))
@@ -56335,7 +56063,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Celestial Bloodline ~ Ascension" then return true end
             return false
           end)
@@ -56349,7 +56076,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Celestial Bloodline ~ Ascension" then return true end
             return false
           end))
@@ -56363,7 +56089,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Celestial Bloodline ~ Ascension" then return true end
             return false
           end)
@@ -56388,7 +56113,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Celestial" then return true end
         return false
       end)
@@ -56452,7 +56176,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Celestial" then return true end
         return false
       end)
@@ -56538,7 +56261,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Celestial" then return true end
         return false
       end)
@@ -57193,7 +56915,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Destined" then return true end
         return false
       end)
@@ -57248,7 +56969,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Destined" then return true end
         return false
       end)
@@ -57317,7 +57037,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Destined" then return true end
         return false
       end)
@@ -57370,7 +57089,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Destined" then return true end
         return false
       end)
@@ -57423,7 +57141,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Destined" then return true end
         return false
       end)
@@ -58280,7 +57997,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Draconic" then return true end
         return false
       end)
@@ -58419,7 +58135,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Draconic" then return true end
         return false
       end)
@@ -58638,7 +58353,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Draconic" then return true end
         return false
       end)
@@ -58687,7 +58401,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Draconic" then return true end
         return false
       end)
@@ -58797,7 +58510,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Draconic" then return true end
         return false
       end)
@@ -60347,7 +60059,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Elemental" then return true end
         return false
       end)
@@ -60457,7 +60168,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Elemental" then return true end
         return false
       end)
@@ -60583,7 +60293,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Elemental" then return true end
         return false
       end)
@@ -60674,7 +60383,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Elemental" then return true end
         return false
       end)
@@ -60774,7 +60482,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Elemental" then return true end
         return false
       end)
@@ -60824,7 +60531,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Sorcerer Elemental Bloodline (Air)" then return true end
             return false
           end)
@@ -60838,7 +60544,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Sorcerer Elemental Bloodline (Air)" then return true end
             return false
           end)
@@ -60878,7 +60583,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Sorcerer Elemental Bloodline (Earth)" then return true end
             return false
           end)
@@ -60892,7 +60596,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Sorcerer Elemental Bloodline (Earth)" then return true end
             return false
           end)
@@ -60932,7 +60635,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Sorcerer Elemental Bloodline (Fire)" then return true end
             return false
           end)
@@ -60946,7 +60648,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Sorcerer Elemental Bloodline (Fire)" then return true end
             return false
           end)
@@ -60986,7 +60687,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Sorcerer Elemental Bloodline (Water)" then return true end
             return false
           end)
@@ -61000,7 +60700,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Sorcerer Elemental Bloodline (Water)" then return true end
             return false
           end)
@@ -61684,7 +61383,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Fey" then return true end
         return false
       end)
@@ -61720,7 +61418,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Fey" then return true end
         return false
       end)
@@ -61777,7 +61474,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Fey" then return true end
         return false
       end)
@@ -61813,7 +61509,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Fey" then return true end
         return false
       end)
@@ -61874,7 +61569,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Fey" then return true end
         return false
       end)
@@ -62553,7 +62247,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Infernal" then return true end
         return false
       end)
@@ -62594,7 +62287,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Immunity to Poison" then return true end
             return false
           end))
@@ -62636,7 +62328,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Infernal" then return true end
         return false
       end)
@@ -62722,7 +62413,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Infernal" then return true end
         return false
       end)
@@ -62767,7 +62457,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Infernal" then return true end
         return false
       end)
@@ -62854,7 +62543,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Infernal" then return true end
         return false
       end)
@@ -63538,7 +63226,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Undead" then return true end
         return false
       end)
@@ -63566,7 +63253,6 @@ DefineAbility({
       function (character, item)
         return not (character.HasAnyAbility(function (ability)
           if ability.Category ~= "Special Ability" then return false end
-          if ability.IsAnyType() then return true end
           if ability.Name == "Undead Bloodline ~ One of Us" then return true end
           return false
         end))
@@ -63611,7 +63297,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Undead" then return true end
         return false
       end)
@@ -63690,7 +63375,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Undead" then return true end
         return false
       end)
@@ -63763,7 +63447,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Undead" then return true end
         return false
       end)
@@ -63818,7 +63501,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Bloodline ~ Undead" then return true end
         return false
       end)
@@ -63942,7 +63624,6 @@ DefineAbility({
       function (character, item)
         return character.HasAnyAbility(function (ability)
           if ability.Category ~= "Special Ability" then return false end
-          if ability.IsAnyType() then return true end
           if ability.Name == "Arcane Bond ~ Familiar" then return true end
           return false
         end)
@@ -65617,7 +65298,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Abjuration School" then return true end
         return false
       end))
@@ -65653,7 +65333,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Conjuration School" then return true end
         return false
       end))
@@ -65689,7 +65368,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Divination School" then return true end
         return false
       end))
@@ -65725,7 +65403,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Enchantment School" then return true end
         return false
       end))
@@ -65761,7 +65438,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Evocation School" then return true end
         return false
       end))
@@ -65797,7 +65473,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Illusion School" then return true end
         return false
       end))
@@ -65833,7 +65508,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Necromancy School" then return true end
         return false
       end))
@@ -65869,7 +65543,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Transmutation School" then return true end
         return false
       end))
@@ -65899,7 +65572,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Abjuration Opposition School" then return true end
             return false
           end))
@@ -65916,7 +65588,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Conjuration Opposition School" then return true end
             return false
           end))
@@ -65933,7 +65604,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Divination Opposition School" then return true end
             return false
           end))
@@ -65950,7 +65620,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Enchantment Opposition School" then return true end
             return false
           end))
@@ -65967,7 +65636,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Evocation Opposition School" then return true end
             return false
           end))
@@ -65984,7 +65652,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Illusion Opposition School" then return true end
             return false
           end))
@@ -66001,7 +65668,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Necromancy Opposition School" then return true end
             return false
           end))
@@ -66018,7 +65684,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Transmutation Opposition School" then return true end
             return false
           end))
@@ -68105,7 +67770,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Focus (Spells (Ray))" then return true end
             return false
           end)
@@ -68129,7 +67793,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Improved Critical (Spells (Ray))" then return true end
             return false
           end)
@@ -69518,7 +69181,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Improved Evasion" then return true end
             return false
           end))
@@ -70015,7 +69677,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Necromancy School ~ Power Over Undead" then return true end
         return false
       end)
@@ -70319,7 +69980,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Focus (Grapple)" then return true end
             return false
           end)
@@ -70336,7 +69996,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Greater Weapon Focus (Grapple)" then return true end
             return false
           end)
@@ -71684,7 +71343,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Dragon Disciple ~ Blood of Dragons" then return true end
         return false
       end)
@@ -71692,7 +71350,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Archetype" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Archetype ~ Crossblooded" then return true end
         return false
       end))
@@ -71791,7 +71448,6 @@ DefineAbility({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Archetype" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Sorcerer Archetype ~ Crossblooded" then return true end
         return false
       end))
@@ -74012,12 +73668,12 @@ ModifyAbility({
 DefineAbility({
   Name="Bard Class",
   Category="Internal",
-  AddedSpellCasterLevels={
-    {
-      ClassNames={
+  Add={
+    AddSpellCasterLevel({
+      Classes={
         "Bard",
       },
-    },
+    }),
   },
   Types={
     "CastingClassSupport",
@@ -74026,12 +73682,12 @@ DefineAbility({
 DefineAbility({
   Name="Cleric Class",
   Category="Internal",
-  AddedSpellCasterLevels={
-    {
-      ClassNames={
+  Add={
+    AddSpellCasterLevel({
+      Classes={
         "Cleric",
       },
-    },
+    }),
   },
   Types={
     "CastingClassSupport",
@@ -74040,12 +73696,12 @@ DefineAbility({
 DefineAbility({
   Name="Sorcerer Class",
   Category="Internal",
-  AddedSpellCasterLevels={
-    {
-      ClassNames={
+  Add={
+    AddSpellCasterLevel({
+      Classes={
         "Sorcerer",
       },
-    },
+    }),
   },
   Types={
     "CastingClassSupport",
@@ -74054,12 +73710,12 @@ DefineAbility({
 DefineAbility({
   Name="Wizard Class",
   Category="Internal",
-  AddedSpellCasterLevels={
-    {
-      ClassNames={
+  Add={
+    AddSpellCasterLevel({
+      Classes={
         "Wizard",
       },
-    },
+    }),
   },
   Types={
     "CastingClassSupport",
@@ -74079,7 +73735,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74096,7 +73751,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74122,7 +73776,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74139,7 +73792,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74165,7 +73817,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74182,7 +73833,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74208,7 +73858,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74225,7 +73874,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74251,7 +73899,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74268,7 +73915,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74294,7 +73940,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74311,7 +73956,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74337,7 +73981,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74354,7 +73997,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74380,7 +74022,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74397,7 +74038,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74423,7 +74063,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74440,7 +74079,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74466,7 +74104,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74483,7 +74120,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74509,7 +74145,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74526,7 +74161,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74552,7 +74186,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74569,7 +74202,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74595,7 +74227,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74612,7 +74243,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74638,7 +74268,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74655,7 +74284,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74681,7 +74309,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74698,7 +74325,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74724,7 +74350,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74741,7 +74366,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74767,7 +74391,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74784,7 +74407,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74810,7 +74432,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74827,7 +74448,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74853,7 +74473,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74870,7 +74489,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74896,7 +74514,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74913,7 +74530,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74939,7 +74555,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74956,7 +74571,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))
@@ -74982,7 +74596,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end)
@@ -74999,7 +74612,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Cleric Class" then return true end
             return false
           end))

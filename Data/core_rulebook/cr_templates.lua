@@ -276,7 +276,6 @@ DefineTemplate({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Channel Positive Energy" then return true end
         return false
       end)
@@ -299,7 +298,6 @@ DefineTemplate({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Channel Negative Energy" then return true end
         return false
       end)
@@ -349,7 +347,6 @@ DefineTemplate({
     function (character, item)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "Animal Tricks and Training" then return true end
         return false
       end))

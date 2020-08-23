@@ -21,6 +21,26 @@ namespace Primordially.LstToLua.FileConverters
                 return;
             }
 
+            if (firstField.TryRemovePrefix("DEFAULTVARIABLEVALUE:", out var defVar))
+            {
+                var (v, value) = defVar.SplitTuple('|');
+                luaWriter.Write($"SetDefaultVariableValue(\"{v.Value}\", \"{value.Value}\")\n");
+                return;
+            }
+
+            if (firstField.StartsWith("FUNCTION:"))
+            {
+                var def = new FunctionDefinition();
+                foreach (var field in line.Fields)
+                {
+                    def.AddField(field);
+                }
+
+                def.Dump(luaWriter);
+                luaWriter.Write("\n");
+                return;
+            }
+
             if (firstField.StartsWith("FACTSETDEF"))
             {
                 // Ignoring this one for now

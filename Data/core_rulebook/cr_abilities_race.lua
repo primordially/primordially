@@ -8264,7 +8264,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Monk ~ Unarmed Damage" then return true end
             return false
           end))

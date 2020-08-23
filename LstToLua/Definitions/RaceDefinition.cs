@@ -10,18 +10,24 @@
             AddPropertyDefinitions(() => new[]
             {
                 Property.SeparatedList<string>('.', "TYPE", "Types"),
+                Property.String("KEY", "Key"),
                 Property.String("SORTKEY", "SortKey"),
                 Property.String("RACETYPE", "RaceType"),
+                Property.String("ROLE", "Role"),
                 Property.SeparatedList<string>('|', "RACESUBTYPE", "RaceSubTypes"),
                 Property.Multiple<Bonus>("BONUS", "Bonuses"),
                 Property.Integer("STARTFEATS", "StartingFeats"),
                 Property.Integer("LEGS", "LegCount"),
                 Property.Integer("HANDS", "HandCount"),
                 Property.Integer("REACH", "Reach"),
-                Property.Integer("CR", "ChallengeRating"),
+                CommonProperties.ChallengeRating,
+                CommonProperties.DamageReduction,
+                CommonProperties.SpellResistance,
+                CommonProperties.Template,
                 CommonProperties.Size,
                 CommonProperties.Kit,
                 CommonProperties.Movement,
+                CommonProperties.Vision,
                 CommonProperties.Facts,
                 CommonProperties.Abilities,
                 CommonProperties.ServesAs,
@@ -29,6 +35,8 @@
                 CommonProperties.Conditions,
                 CommonProperties.Definitions,
                 CommonProperties.NaturalAttacks,
+                CommonProperties.ClassSkills,
+                CommonProperties.Auto,
             });
         }
 

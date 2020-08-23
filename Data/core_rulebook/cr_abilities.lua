@@ -43,7 +43,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Exotic Weapon Proficiency (Sword (Bastard))" then return true end
             return false
           end)
@@ -60,7 +59,6 @@ ModifyAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Exotic Weapon Proficiency (Waraxe (Dwarven))" then return true end
             return false
           end)
@@ -1560,7 +1558,7 @@ DefineAbility({
 DefineAbility({
   Name="Spell Resistance ~ 18",
   Category="Internal",
-  SpellResistance="18",
+  SpellResistance=Formula("18"),
 })
 DefineAbility({
   Name="Base Intelligent Item",
@@ -2169,7 +2167,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ ItemPower_CastZeroAtWill" then return true end
         return false
       end)
@@ -2198,7 +2195,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ ItemPower_CastOneThree" then return true end
         return false
       end)
@@ -2218,7 +2214,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ ItemPower_MagicAura" then return true end
         return false
       end)
@@ -2247,7 +2242,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ ItemPower_CastTwoOne" then return true end
         return false
       end)
@@ -2276,7 +2270,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ ItemPower_FiveSkill" then return true end
         return false
       end)
@@ -2296,7 +2289,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ ItemPower_Move" then return true end
         return false
       end)
@@ -2325,7 +2317,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ ItemPower_CastThreeOne" then return true end
         return false
       end)
@@ -2354,7 +2345,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ ItemPower_CastTwoThree" then return true end
         return false
       end)
@@ -2383,7 +2373,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ ItemPower_TenSkill" then return true end
         return false
       end)
@@ -2403,7 +2392,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ ItemPower_ChangeShape" then return true end
         return false
       end)
@@ -2423,7 +2411,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ ItemPower_Fly" then return true end
         return false
       end)
@@ -2452,7 +2439,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ ItemPower_CastFourOne" then return true end
         return false
       end)
@@ -2472,7 +2458,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ ItemPower_Teleport" then return true end
         return false
       end)
@@ -2501,7 +2486,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ ItemPower_CastThreeThree" then return true end
         return false
       end)
@@ -2530,7 +2514,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ ItemPower_CastFourThree" then return true end
         return false
       end)
@@ -2767,7 +2750,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ PurposePower_CastFourAtWill" then return true end
         return false
       end)
@@ -2797,7 +2779,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ PurposePower_CastFiveAtWill" then return true end
         return false
       end)
@@ -2827,7 +2808,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ PurposePower_CastSixAtWill" then return true end
         return false
       end)
@@ -2857,7 +2837,6 @@ DefineAbility({
     function (character, item)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
-        if ability.IsAnyType() then return true end
         if ability.Name == "EQMOD ~ PurposePower_CastSevenAtWill" then return true end
         return false
       end)
@@ -3408,7 +3387,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Focus (Shieldbash)" then return true end
             return false
           end)
@@ -3425,7 +3403,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Greater Weapon Focus (Shieldbash)" then return true end
             return false
           end)
@@ -3442,7 +3419,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Weapon Specialization (Shieldbash)" then return true end
             return false
           end)
@@ -3459,7 +3435,6 @@ DefineAbility({
         function (character, item)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Greater Weapon Specialization (Shieldbash)" then return true end
             return false
           end)
@@ -3643,7 +3618,6 @@ DefineAbility({
         function (character, item)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
-            if ability.IsAnyType() then return true end
             if ability.Name == "Shield Mastery" then return true end
             if ability.Name == "Shield Master" then return true end
             return false

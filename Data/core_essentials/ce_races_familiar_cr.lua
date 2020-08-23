@@ -1,0 +1,2790 @@
+-- Converted From LST file data\pathfinder\paizo\roleplaying_game\core_essentials\ce_races_familiar_cr.lst
+-- From repository https://github.com/pcgen/pcgen at commit 11ceb52482855f2e5f0f6c108c3dc665b12af237
+SetSource({
+  SourceLong="Bestiary",
+  SourceShort="B1",
+  SourceWeb="http://paizo.com/store/byCompany/p/paizoPublishingLLC/pathfinder/pathfinderRPG/v5748btpy85k5",
+  SourceDate="2009-09",
+})
+DefineRace({
+  Name="Bat",
+  ChallengeRating="1/8",
+  LegCount=2,
+  RaceType="Animal",
+  Reach=0,
+  Size="D",
+  SourcePage="p.131",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Bat",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("-10"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-6"),
+      Variables={
+        "CHA",
+      },
+    },
+  },
+  StartingKitChoices={
+    "Animal ~ Bat",
+  },
+  Types={
+    "Animal",
+  },
+  Facts={
+    BaseSize="D",
+  },
+  Movement={
+    Walk=5,
+    Fly=40,
+  },
+  MonsterClass={
+    Class="Animal",
+    Level=1,
+  },
+})
+DefineRace({
+  Name="Cat",
+  ChallengeRating="1/4",
+  HandCount=3,
+  LegCount=4,
+  RaceType="Animal",
+  Reach=0,
+  Size="T",
+  SourcePage="p.131",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Cat",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-2"),
+      Variables={
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
+    },
+  },
+  StartingKitChoices={
+    "Animal ~ Cat",
+  },
+  Types={
+    "Animal",
+  },
+  Facts={
+    BaseSize="T",
+  },
+  Movement={
+    Walk=30,
+  },
+  MonsterClass={
+    Class="Animal",
+    Level=1,
+  },
+})
+DefineRace({
+  Name="Hawk",
+  ChallengeRating="1/3",
+  LegCount=2,
+  RaceType="Animal",
+  Reach=0,
+  Size="T",
+  SourcePage="p.131",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Hawk",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("6"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CHA",
+      },
+    },
+  },
+  StartingKitChoices={
+    "Animal ~ Hawk",
+  },
+  Types={
+    "Animal",
+  },
+  Facts={
+    BaseSize="T",
+  },
+  Movement={
+    Walk=10,
+    Fly=60,
+  },
+  MonsterClass={
+    Class="Animal",
+    Level=1,
+  },
+})
+DefineRace({
+  Name="Lizard",
+  ChallengeRating="1/6",
+  LegCount=4,
+  RaceType="Animal",
+  Reach=0,
+  Size="T",
+  SourcePage="p.131",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Lizard",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-2"),
+      Variables={
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-9"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
+    },
+  },
+  StartingKitChoices={
+    "Animal ~ Lizard",
+  },
+  Types={
+    "Animal",
+  },
+  Facts={
+    BaseSize="T",
+  },
+  Movement={
+    Walk=20,
+    Climb=20,
+  },
+  MonsterClass={
+    Class="Animal",
+    Level=1,
+  },
+})
+DefineRace({
+  Name="Monkey",
+  ChallengeRating="1/4",
+  LegCount=2,
+  RaceType="Animal",
+  Reach=0,
+  Size="T",
+  SourcePage="p.132",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Monkey",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-6"),
+      Variables={
+        "CHA",
+      },
+    },
+  },
+  StartingKitChoices={
+    "Animal ~ Monkey",
+  },
+  Types={
+    "Animal",
+  },
+  Facts={
+    BaseSize="T",
+  },
+  Movement={
+    Walk=30,
+    Climb=30,
+  },
+  MonsterClass={
+    Class="Animal",
+    Level=1,
+  },
+})
+DefineRace({
+  Name="Owl",
+  ChallengeRating="1/3",
+  LegCount=2,
+  RaceType="Animal",
+  Reach=0,
+  Size="T",
+  SourcePage="p.132",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Owl",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("6"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CHA",
+      },
+    },
+  },
+  StartingKitChoices={
+    "Animal ~ Owl",
+  },
+  Types={
+    "Animal",
+  },
+  Facts={
+    BaseSize="T",
+  },
+  Movement={
+    Walk=10,
+    Fly=60,
+  },
+  MonsterClass={
+    Class="Animal",
+    Level=1,
+  },
+})
+DefineRace({
+  Name="Rat",
+  ChallengeRating="1/4",
+  LegCount=4,
+  RaceType="Animal",
+  Reach=0,
+  Size="T",
+  SourcePage="p.132",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Rat",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
+    },
+  },
+  StartingKitChoices={
+    "Animal ~ Rat",
+  },
+  Types={
+    "Animal",
+  },
+  Facts={
+    BaseSize="T",
+  },
+  Movement={
+    Walk=15,
+    Climb=15,
+    Swim=15,
+  },
+  MonsterClass={
+    Class="Animal",
+    Level=1,
+  },
+})
+DefineRace({
+  Name="Raven",
+  ChallengeRating="1/6",
+  LegCount=2,
+  RaceType="Animal",
+  Reach=0,
+  Size="T",
+  SourcePage="p.133",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Raven",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-2"),
+      Variables={
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CHA",
+      },
+    },
+  },
+  StartingKitChoices={
+    "Animal ~ Raven",
+  },
+  Types={
+    "Animal",
+  },
+  Facts={
+    BaseSize="T",
+  },
+  Movement={
+    Walk=10,
+    Fly=40,
+  },
+  MonsterClass={
+    Class="Animal",
+    Level=1,
+  },
+})
+DefineRace({
+  Name="Toad",
+  ChallengeRating="1/8",
+  LegCount=4,
+  RaceType="Animal",
+  Reach=0,
+  Size="D",
+  SourcePage="p.133",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Toad",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("-9"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-9"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-6"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
+    },
+  },
+  StartingKitChoices={
+    "Animal ~ Toad",
+  },
+  Types={
+    "Animal",
+  },
+  Facts={
+    BaseSize="D",
+  },
+  Movement={
+    Walk=5,
+  },
+  MonsterClass={
+    Class="Animal",
+    Level=1,
+  },
+})
+DefineRace({
+  Name="Viper",
+  ChallengeRating="1/2",
+  LegCount=0,
+  RaceType="Animal",
+  Reach=0,
+  Size="T",
+  SourcePage="p.133",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Viper",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("-6"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("6"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-2"),
+      Variables={
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-9"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "CHA",
+      },
+    },
+  },
+  StartingKitChoices={
+    "Animal ~ Viper",
+  },
+  Types={
+    "Animal",
+  },
+  Facts={
+    BaseSize="T",
+  },
+  Movement={
+    Walk=20,
+    Climb=20,
+    Swim=20,
+  },
+  MonsterClass={
+    Class="Animal",
+    Level=1,
+  },
+})
+DefineRace({
+  Name="Weasel",
+  ChallengeRating="1/2",
+  LegCount=4,
+  RaceType="Animal",
+  Reach=0,
+  Size="T",
+  SourcePage="p.133",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Weasel",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-6"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
+    },
+  },
+  StartingKitChoices={
+    "Animal ~ Weasel",
+  },
+  Types={
+    "Animal",
+  },
+  Facts={
+    BaseSize="T",
+  },
+  Movement={
+    Walk=20,
+    Climb=20,
+  },
+  MonsterClass={
+    Class="Animal",
+    Level=1,
+  },
+})
+CopyRace("Bat", {
+  Name="Bat (Celestial)",
+  DisplayName="Bat",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NG",
+  },
+  Templates={
+    "Celestial Creature",
+  },
+})
+CopyRace("Cat", {
+  Name="Cat (Celestial)",
+  DisplayName="Cat",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NG",
+  },
+  Templates={
+    "Celestial Creature",
+  },
+})
+CopyRace("Hawk", {
+  Name="Hawk (Celestial)",
+  DisplayName="Hawk",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NG",
+  },
+  Templates={
+    "Celestial Creature",
+  },
+})
+CopyRace("Lizard", {
+  Name="Lizard (Celestial)",
+  DisplayName="Lizard",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NG",
+  },
+  Templates={
+    "Celestial Creature",
+  },
+})
+CopyRace("Monkey", {
+  Name="Monkey (Celestial)",
+  DisplayName="Monkey",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NG",
+  },
+  Templates={
+    "Celestial Creature",
+  },
+})
+CopyRace("Owl", {
+  Name="Owl (Celestial)",
+  DisplayName="Owl",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NG",
+  },
+  Templates={
+    "Celestial Creature",
+  },
+})
+CopyRace("Rat", {
+  Name="Rat (Celestial)",
+  DisplayName="Rat",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NG",
+  },
+  Templates={
+    "Celestial Creature",
+  },
+})
+CopyRace("Raven", {
+  Name="Raven (Celestial)",
+  DisplayName="Raven",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NG",
+  },
+  Templates={
+    "Celestial Creature",
+  },
+})
+CopyRace("Toad", {
+  Name="Toad (Celestial)",
+  DisplayName="Toad",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NG",
+  },
+  Templates={
+    "Celestial Creature",
+  },
+})
+CopyRace("Viper", {
+  Name="Viper (Celestial)",
+  DisplayName="Viper",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NG",
+  },
+  Templates={
+    "Celestial Creature",
+  },
+})
+CopyRace("Weasel", {
+  Name="Weasel (Celestial)",
+  DisplayName="Weasel",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NG",
+  },
+  Templates={
+    "Celestial Creature",
+  },
+})
+CopyRace("Bat", {
+  Name="Bat (Fiendish)",
+  DisplayName="Bat",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NE",
+  },
+  Templates={
+    "Fiendish Creature",
+  },
+})
+CopyRace("Cat", {
+  Name="Cat (Fiendish)",
+  DisplayName="Cat",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NE",
+  },
+  Templates={
+    "Fiendish Creature",
+  },
+})
+CopyRace("Hawk", {
+  Name="Hawk (Fiendish)",
+  DisplayName="Hawk",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NE",
+  },
+  Templates={
+    "Fiendish Creature",
+  },
+})
+CopyRace("Lizard", {
+  Name="Lizard (Fiendish)",
+  DisplayName="Lizard",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NE",
+  },
+  Templates={
+    "Fiendish Creature",
+  },
+})
+CopyRace("Monkey", {
+  Name="Monkey (Fiendish)",
+  DisplayName="Monkey",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NE",
+  },
+  Templates={
+    "Fiendish Creature",
+  },
+})
+CopyRace("Owl", {
+  Name="Owl (Fiendish)",
+  DisplayName="Owl",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NE",
+  },
+  Templates={
+    "Fiendish Creature",
+  },
+})
+CopyRace("Rat", {
+  Name="Rat (Fiendish)",
+  DisplayName="Rat",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NE",
+  },
+  Templates={
+    "Fiendish Creature",
+  },
+})
+CopyRace("Raven", {
+  Name="Raven (Fiendish)",
+  DisplayName="Raven",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NE",
+  },
+  Templates={
+    "Fiendish Creature",
+  },
+})
+CopyRace("Toad", {
+  Name="Toad (Fiendish)",
+  DisplayName="Toad",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NE",
+  },
+  Templates={
+    "Fiendish Creature",
+  },
+})
+CopyRace("Viper", {
+  Name="Viper (Fiendish)",
+  DisplayName="Viper",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NE",
+  },
+  Templates={
+    "Fiendish Creature",
+  },
+})
+CopyRace("Weasel", {
+  Name="Weasel (Fiendish)",
+  DisplayName="Weasel",
+  StartingKitCount=1,
+  StartingKitChoices={
+    "NE",
+  },
+  Templates={
+    "Fiendish Creature",
+  },
+})
+DefineRace({
+  Name="Rat, Dire",
+  Key="Rat (Dire)",
+  ChallengeRating="1/3",
+  DisplayName="Dire Rat",
+  LegCount=4,
+  RaceType="Animal",
+  Reach=5,
+  Size="S",
+  SourcePage="p.232",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Dire Rat",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="SKILL",
+      Formula=Formula("DEX-STR"),
+      Variables={
+        "Climb",
+        "Swim",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("6"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "CON",
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-6"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
+    },
+  },
+  StartingKitChoices={
+    "Animal ~ Dire Rat",
+  },
+  Types={
+    "Animal",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=40,
+    Climb=20,
+    Swim=20,
+  },
+  MonsterClass={
+    Class="Animal",
+    Level=1,
+  },
+})
+DefineRace({
+  Name="Elemental, Air (Small)",
+  Key="Elemental (Air/Small)",
+  ChallengeRating="1",
+  DisplayName="Small Air Elemental",
+  HandCount=2,
+  LegCount=0,
+  RaceType="Outsider",
+  Reach=5,
+  Role="Combat",
+  Size="S",
+  SourcePage="p.120",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Elemental (Air)",
+        "Racial Traits ~ Small Air Elemental",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Auran")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "STR",
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("6"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-6"),
+      Variables={
+        "INT",
+      },
+    },
+  },
+  ClassSkills={
+    "Acrobatics",
+    "Escape Artist",
+  },
+  RaceSubTypes={
+    "Air",
+    "Elemental",
+    "Extraplanar",
+  },
+  StartingKitChoices={
+    "Outsider ~ Elemental (Air/Small)",
+  },
+  Types={
+    "Elemental",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Fly=100,
+  },
+  MonsterClass={
+    Class="Outsider (Fort/Ref)",
+    Level=2,
+  },
+})
+DefineRace({
+  Name="Elemental, Earth (Small)",
+  Key="Elemental (Earth/Small)",
+  ChallengeRating="1",
+  DisplayName="Small Earth Elemental",
+  HandCount=2,
+  LegCount=2,
+  RaceType="Outsider",
+  Reach=5,
+  Role="Combat",
+  Size="S",
+  SourcePage="p.122",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Elemental (Earth)",
+        "Racial Traits ~ Small Earth Elemental",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Terran")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("6"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-2"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-6"),
+      Variables={
+        "INT",
+      },
+    },
+  },
+  ClassSkills={
+    "Appraise",
+    "Climb",
+    "Knowledge (Dungeoneering)",
+  },
+  RaceSubTypes={
+    "Earth",
+    "Elemental",
+    "Extraplanar",
+  },
+  StartingKitChoices={
+    "Outsider ~ Elemental (Earth/Small)",
+  },
+  Types={
+    "Elemental",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=20,
+    Burrow=20,
+  },
+  MonsterClass={
+    Class="Outsider (Fort/Will)",
+    Level=2,
+  },
+})
+DefineRace({
+  Name="Elemental, Fire (Small)",
+  Key="Elemental (Fire/Small)",
+  ChallengeRating="1",
+  DisplayName="Small Fire Elemental",
+  HandCount=2,
+  LegCount=2,
+  RaceType="Outsider",
+  Reach=5,
+  Role="Combat",
+  Size="S",
+  SourcePage="p.124",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Elemental (Fire)",
+        "Racial Traits ~ Small Fire Elemental",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Ignan")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-6"),
+      Variables={
+        "INT",
+      },
+    },
+  },
+  ClassSkills={
+    "Acrobatics",
+    "Climb",
+    "Escape Artist",
+    "Intimidate",
+  },
+  RaceSubTypes={
+    "Elemental",
+    "Extraplanar",
+    "Fire",
+  },
+  StartingKitChoices={
+    "Outsider ~ Elemental (Fire/Small)",
+  },
+  Types={
+    "Elemental",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=50,
+  },
+  MonsterClass={
+    Class="Outsider (Fort/Ref)",
+    Level=2,
+  },
+})
+DefineRace({
+  Name="Elemental, Water (Small)",
+  Key="Elemental (Water/Small)",
+  ChallengeRating="1",
+  DisplayName="Small Water Elemental",
+  HandCount=2,
+  LegCount=0,
+  RaceType="Outsider",
+  Reach=5,
+  Role="Combat",
+  Size="S",
+  SourcePage="p.126",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Elemental (Water)",
+        "Racial Traits ~ Small Water Elemental",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Aquan")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-6"),
+      Variables={
+        "INT",
+      },
+    },
+  },
+  ClassSkills={
+    "Acrobatics",
+    "Escape Artist",
+    "Swim",
+  },
+  RaceSubTypes={
+    "Elemental",
+    "Extraplanar",
+    "Water",
+  },
+  StartingKitChoices={
+    "Outsider ~ Elemental (Water/Small)",
+  },
+  Types={
+    "Elemental",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=20,
+    Swim=90,
+  },
+  MonsterClass={
+    Class="Outsider (Fort/Ref)",
+    Level=2,
+  },
+})
+DefineRace({
+  Name="Stirge",
+  ChallengeRating="1/2",
+  LegCount=6,
+  RaceType="Magical Beast",
+  Reach=0,
+  Size="T",
+  SourcePage="p.260",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Stirge",
+      },
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("-8"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("8"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-10"),
+      Variables={
+        "INT",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CHA",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
+    },
+  },
+  NaturalAttacks={
+    {
+      Name="Touch",
+      Types={
+        "Weapon",
+        "Natural",
+        "Weapon Group Natural",
+        "Melee",
+        "Finesseable",
+        "Piercing",
+      },
+      Count="*1",
+      Damage=DiceFormula("Attach"),
+    },
+  },
+  StartingKitChoices={
+    "Magical Beast ~ Stirge",
+  },
+  Types={
+    "Magical Beast",
+  },
+  Facts={
+    BaseSize="T",
+  },
+  Movement={
+    Walk=10,
+    Fly=40,
+  },
+  MonsterClass={
+    Class="Magical Beast",
+    Level=1,
+  },
+})
+DefineRace({
+  Name="Homunculus",
+  ChallengeRating="1",
+  HandCount=2,
+  LegCount=2,
+  RaceType="Construct",
+  Reach=0,
+  Role="Skill",
+  Size="T",
+  SourcePage="p.176",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Homunculus",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Common")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("-2"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "CHA",
+      },
+    },
+  },
+  StartingKitChoices={
+    "Construct ~ Homunculus",
+  },
+  Types={
+    "Cosntruct",
+  },
+  Facts={
+    BaseSize="T",
+  },
+  Movement={
+    Walk=20,
+    Fly=50,
+  },
+  MonsterClass={
+    Class="Construct",
+    Level=2,
+  },
+})
+DefineRace({
+  Name="Devil, Imp",
+  Key="Devil (Imp)",
+  ChallengeRating="2",
+  DamageReduction={
+    Value="5/Good or Silver",
+  },
+  DisplayName="Imp",
+  HandCount=2,
+  LegCount=2,
+  RaceType="Outsider",
+  Reach=0,
+  Role="Skill",
+  Size="T",
+  SourcePage="p.78",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Imp",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Infernal")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("6"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "INT",
+        "WIS",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "CHA",
+      },
+    },
+  },
+  ClassSkills={
+    "Acrobatics",
+    "Knowledge (Arcana)",
+    "Spellcraft",
+  },
+  RaceSubTypes={
+    "Devil",
+    "Evil",
+    "Extraplanar",
+    "Lawful",
+  },
+  StartingKitChoices={
+    "Outsider ~ Imp",
+  },
+  Types={
+    "Outsider",
+  },
+  Facts={
+    BaseSize="T",
+  },
+  Movement={
+    Walk=20,
+    Fly=50,
+  },
+  MonsterClass={
+    Class="Outsider (Ref/Will)",
+    Level=3,
+  },
+})
+DefineRace({
+  Name="Mephit, Air",
+  Key="Mephit (Air)",
+  ChallengeRating="3",
+  DamageReduction={
+    Value="5/Magic",
+  },
+  DisplayName="Air Mephit",
+  HandCount=2,
+  LegCount=2,
+  RaceType="Outsider",
+  Reach=5,
+  Role="Combat",
+  Size="S",
+  SourcePage="p.202",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Mephit (Air)",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Common") or stringMatch(language.Name, "Auran")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "STR",
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+        "CHA",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "INT",
+      },
+    },
+  },
+  RaceSubTypes={
+    "Air",
+  },
+  StartingKitChoices={
+    "Outsider ~ Mephit",
+  },
+  Types={
+    "Outsider",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=30,
+    Fly=60,
+  },
+  MonsterClass={
+    Class="Outsider (Ref/Will)",
+    Level=3,
+  },
+})
+DefineRace({
+  Name="Mephit, Dust",
+  Key="Mephit (Dust)",
+  ChallengeRating="3",
+  DamageReduction={
+    Value="5/Magic",
+  },
+  DisplayName="Dust Mephit",
+  HandCount=2,
+  LegCount=2,
+  RaceType="Outsider",
+  Reach=5,
+  Role="Combat",
+  Size="S",
+  SourcePage="p.202",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Mephit (Dust)",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Common") or stringMatch(language.Name, "Auran")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "STR",
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+        "CHA",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "INT",
+      },
+    },
+  },
+  RaceSubTypes={
+    "Air",
+  },
+  StartingKitChoices={
+    "Outsider ~ Mephit",
+  },
+  Types={
+    "Outsider",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=30,
+    Fly=50,
+  },
+  MonsterClass={
+    Class="Outsider (Ref/Will)",
+    Level=3,
+  },
+})
+DefineRace({
+  Name="Mephit, Earth",
+  Key="Mephit (Earth)",
+  ChallengeRating="3",
+  DamageReduction={
+    Value="5/Magic",
+  },
+  DisplayName="Earth Mephit",
+  HandCount=2,
+  LegCount=2,
+  RaceType="Outsider",
+  Reach=5,
+  Role="Combat",
+  Size="S",
+  SourcePage="p.202",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Mephit (Earth)",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Common") or stringMatch(language.Name, "Terran")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "STR",
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+        "CHA",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "INT",
+      },
+    },
+  },
+  RaceSubTypes={
+    "Earth",
+  },
+  StartingKitChoices={
+    "Outsider ~ Mephit",
+  },
+  Types={
+    "Outsider",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=30,
+    Fly=40,
+  },
+  MonsterClass={
+    Class="Outsider (Ref/Will)",
+    Level=3,
+  },
+})
+DefineRace({
+  Name="Mephit, Fire",
+  Key="Mephit (Fire)",
+  ChallengeRating="3",
+  DamageReduction={
+    Value="5/Magic",
+  },
+  DisplayName="Fire Mephit",
+  HandCount=2,
+  LegCount=2,
+  RaceType="Outsider",
+  Reach=5,
+  Role="Combat",
+  Size="S",
+  SourcePage="p.202",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Mephit (Fire)",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Common") or stringMatch(language.Name, "Ignan")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "STR",
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+        "CHA",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "INT",
+      },
+    },
+  },
+  RaceSubTypes={
+    "Fire",
+  },
+  StartingKitChoices={
+    "Outsider ~ Mephit",
+  },
+  Types={
+    "Outsider",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=30,
+    Fly=40,
+  },
+  MonsterClass={
+    Class="Outsider (Ref/Will)",
+    Level=3,
+  },
+})
+DefineRace({
+  Name="Mephit, Ice",
+  Key="Mephit (Ice)",
+  ChallengeRating="3",
+  DamageReduction={
+    Value="5/Magic",
+  },
+  DisplayName="Ice Mephit",
+  HandCount=2,
+  LegCount=2,
+  RaceType="Outsider",
+  Reach=5,
+  Role="Combat",
+  Size="S",
+  SourcePage="p.202",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Mephit (Ice)",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Common") or stringMatch(language.Name, "Auran")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "STR",
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+        "CHA",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "INT",
+      },
+    },
+  },
+  RaceSubTypes={
+    "Cold",
+  },
+  StartingKitChoices={
+    "Outsider ~ Mephit",
+  },
+  Types={
+    "Outsider",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=30,
+    Fly=40,
+  },
+  MonsterClass={
+    Class="Outsider (Ref/Will)",
+    Level=3,
+  },
+})
+DefineRace({
+  Name="Mephit, Magma",
+  Key="Mephit (Magma)",
+  ChallengeRating="3",
+  DamageReduction={
+    Value="5/Magic",
+  },
+  DisplayName="Magma Mephit",
+  HandCount=2,
+  LegCount=2,
+  RaceType="Outsider",
+  Reach=5,
+  Role="Combat",
+  Size="S",
+  SourcePage="p.202",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Mephit (Magma)",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Common") or stringMatch(language.Name, "Ignan")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "STR",
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+        "CHA",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "INT",
+      },
+    },
+  },
+  RaceSubTypes={
+    "Fire",
+  },
+  StartingKitChoices={
+    "Outsider ~ Mephit",
+  },
+  Types={
+    "Outsider",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=30,
+    Fly=40,
+  },
+  MonsterClass={
+    Class="Outsider (Ref/Will)",
+    Level=3,
+  },
+})
+DefineRace({
+  Name="Mephit, Ooze",
+  Key="Mephit (Ooze)",
+  ChallengeRating="3",
+  DamageReduction={
+    Value="5/Magic",
+  },
+  DisplayName="Ooze Mephit",
+  HandCount=2,
+  LegCount=2,
+  RaceType="Outsider",
+  Reach=5,
+  Role="Combat",
+  Size="S",
+  SourcePage="p.202",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Mephit (Ooze)",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Common") or stringMatch(language.Name, "Aquan")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "STR",
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+        "CHA",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "INT",
+      },
+    },
+  },
+  RaceSubTypes={
+    "Water",
+  },
+  StartingKitChoices={
+    "Outsider ~ Mephit",
+  },
+  Types={
+    "Outsider",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=30,
+    Fly=40,
+    Swim=30,
+  },
+  MonsterClass={
+    Class="Outsider (Ref/Will)",
+    Level=3,
+  },
+})
+DefineRace({
+  Name="Mephit, Salt",
+  Key="Mephit (Salt)",
+  ChallengeRating="3",
+  DamageReduction={
+    Value="5/Magic",
+  },
+  DisplayName="Salt Mephit",
+  HandCount=2,
+  LegCount=2,
+  RaceType="Outsider",
+  Reach=5,
+  Role="Combat",
+  Size="S",
+  SourcePage="p.202",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Mephit (Salt)",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Common") or stringMatch(language.Name, "Terran")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "STR",
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+        "CHA",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "INT",
+      },
+    },
+  },
+  RaceSubTypes={
+    "Earth",
+  },
+  StartingKitChoices={
+    "Outsider ~ Mephit",
+  },
+  Types={
+    "Outsider",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=30,
+    Fly=40,
+  },
+  MonsterClass={
+    Class="Outsider (Ref/Will)",
+    Level=3,
+  },
+})
+DefineRace({
+  Name="Mephit, Steam",
+  Key="Mephit (Steam)",
+  ChallengeRating="3",
+  DamageReduction={
+    Value="5/Magic",
+  },
+  DisplayName="Steam Mephit",
+  HandCount=2,
+  LegCount=2,
+  RaceType="Outsider",
+  Reach=5,
+  Role="Combat",
+  Size="S",
+  SourcePage="p.202",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Mephit (Steam)",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Common") or stringMatch(language.Name, "Ignan")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "STR",
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+        "CHA",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "INT",
+      },
+    },
+  },
+  RaceSubTypes={
+    "Fire",
+  },
+  StartingKitChoices={
+    "Outsider ~ Mephit",
+  },
+  Types={
+    "Outsider",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=30,
+    Fly=40,
+  },
+  MonsterClass={
+    Class="Outsider (Ref/Will)",
+    Level=3,
+  },
+})
+DefineRace({
+  Name="Mephit, Water",
+  Key="Mephit (Water)",
+  ChallengeRating="3",
+  DamageReduction={
+    Value="5/Magic",
+  },
+  DisplayName="Water Mephit",
+  HandCount=2,
+  LegCount=2,
+  RaceType="Outsider",
+  Reach=5,
+  Role="Combat",
+  Size="S",
+  SourcePage="p.202",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Mephit (Water)",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Common") or stringMatch(language.Name, "Aquan")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "STR",
+        "CON",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+        "CHA",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "INT",
+      },
+    },
+  },
+  RaceSubTypes={
+    "Water",
+  },
+  StartingKitChoices={
+    "Outsider ~ Mephit",
+  },
+  Types={
+    "Outsider",
+  },
+  Facts={
+    BaseSize="S",
+  },
+  Movement={
+    Walk=30,
+    Fly=40,
+    Swim=30,
+  },
+  MonsterClass={
+    Class="Outsider (Ref/Will)",
+    Level=3,
+  },
+})
+DefineRace({
+  Name="Pseudodragon",
+  ChallengeRating="1",
+  LegCount=4,
+  RaceType="Dragon",
+  Reach=5,
+  Role="Combat",
+  Size="T",
+  SourcePage="p.229",
+  SpellResistance=Formula("12"),
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Pseudodragon",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Draconic")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("-4"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "CON",
+        "WIS",
+      },
+    },
+    {
+      Category="VAR",
+      Formula=Formula("1"),
+      Type={
+        Name="Base",
+      },
+      Variables={
+        "RaceSizeIsLong",
+      },
+    },
+  },
+  StartingKitChoices={
+    "Dragon ~ Pseudodragon",
+  },
+  Types={
+    "Dragon",
+  },
+  Facts={
+    BaseSize="T",
+  },
+  Movement={
+    Walk=15,
+    Fly=60,
+  },
+  MonsterClass={
+    Class="Dragon",
+    Level=2,
+  },
+})
+DefineRace({
+  Name="Demon, Quasit",
+  Key="Demon (Quasit)",
+  ChallengeRating="2",
+  DamageReduction={
+    Value="5/Cold Iron or Good",
+  },
+  DisplayName="Quasit",
+  HandCount=2,
+  LegCount=2,
+  RaceType="Outsider",
+  Reach=0,
+  Role="Skill",
+  Size="T",
+  SourcePage="p.66",
+  StartingFeats=1,
+  StartingKitCount=1,
+  Abilities={
+    {
+      Category="Internal",
+      Nature="AUTOMATIC",
+      Names={
+        "Racial Traits ~ Quasit",
+      },
+    },
+  },
+  AutomaticLanguages={
+    {
+      Selector=function (language)
+        return stringMatch(language.Name, "Common") or stringMatch(language.Name, "Abyssal")
+      end,
+    },
+  },
+  Bonuses={
+    {
+      Category="STAT",
+      Formula=Formula("-2"),
+      Variables={
+        "STR",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("4"),
+      Variables={
+        "DEX",
+      },
+    },
+    {
+      Category="STAT",
+      Formula=Formula("2"),
+      Variables={
+        "WIS",
+      },
+    },
+  },
+  ClassSkills={
+    "Fly",
+    "Intimidate",
+  },
+  RaceSubTypes={
+    "Chaotic",
+    "Demon",
+    "Evil",
+    "Extraplanar",
+  },
+  StartingKitChoices={
+    "Outsider ~ Quasit",
+  },
+  Types={
+    "Outsider",
+  },
+  Facts={
+    BaseSize="T",
+  },
+  Movement={
+    Walk=20,
+    Fly=50,
+  },
+  MonsterClass={
+    Class="Outsider (Ref/Will)",
+    Level=3,
+  },
+})

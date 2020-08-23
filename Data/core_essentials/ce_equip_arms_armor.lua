@@ -1,0 +1,58 @@
+-- Converted From LST file data\pathfinder\paizo\roleplaying_game\core_essentials\ce_equip_arms_armor.lst
+-- From repository https://github.com/pcgen/pcgen at commit 11ceb52482855f2e5f0f6c108c3dc665b12af237
+SetSource({
+  SourceLong="Bestiary",
+  SourceShort="B1",
+  SourceWeb="http://paizo.com/store/downloads/pathfinder/pathfinderRPG/v5748btpy8auu",
+  SourceDate="2009-10",
+})
+DefineEquipment({
+  Name="Rock (Small)",
+  Attack={
+    CriticalHitMultiplier="x2",
+    CriticalHitRange="1",
+    Damage=DiceFormula("1d8"),
+  },
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Rock",
+  Proficiency="WEAPON|Rock",
+  Range=120,
+  Size="L",
+  SourcePage="p.303",
+  Weight=50,
+  Types={
+    "Weapon",
+    "Simple",
+    "Ranged",
+    "Standard",
+    "Bludgeoning",
+    "Thrown",
+    "Rock",
+  },
+})
+DefineEquipment({
+  Name="Rock (Medium)",
+  Attack={
+    CriticalHitMultiplier="x2",
+    CriticalHitRange="1",
+    Damage=DiceFormula("2d6"),
+  },
+  CanHaveMods=true,
+  Cost=0,
+  DisplayName="Rock",
+  Proficiency="WEAPON|Rock",
+  Range=140,
+  Size="H",
+  SourcePage="p.303",
+  Weight=100,
+  Types={
+    "Weapon",
+    "Simple",
+    "Ranged",
+    "Standard",
+    "Bludgeoning",
+    "Thrown",
+    "Rock",
+  },
+})

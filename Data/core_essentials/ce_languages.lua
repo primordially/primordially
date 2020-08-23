@@ -1,0 +1,195 @@
+-- Converted From LST file data\pathfinder\paizo\roleplaying_game\core_essentials\ce_languages.lst
+-- From repository https://github.com/pcgen/pcgen at commit 11ceb52482855f2e5f0f6c108c3dc665b12af237
+SetSource({
+  SourceLong="Bestiary",
+  SourceShort="B1",
+  SourceWeb="http://paizo.com/store/downloads/pathfinder/pathfinderRPG/v5748btpy8auu",
+  SourceDate="2009-10",
+})
+DefineLanguage({
+  Name="Aboleth",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Boggard",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Cyclops",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Dark Folk",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Drow",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Drow Sign Language",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+    "Secret",
+  },
+})
+DefineLanguage({
+  Name="Pidgin of Giant",
+  Types={
+    "Spoken",
+  },
+})
+DefineLanguage({
+  Name="Sahuagin",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Sphinx",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Tengu",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Treant",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Vegepygmy",
+  Types={
+    "Spoken",
+  },
+})
+DefineLanguage({
+  Name="Worg",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+SetSource({
+  SourceLong="Bestiary 2",
+  SourceShort="B2",
+  SourceWeb="http://paizo.com/store/byCompany/p/paizoPublishingLLC/pathfinder/pathfinderRPG/v5748btpy8ddb",
+  SourceDate="2010-12",
+})
+DefineLanguage({
+  Name="Daemon",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="D'ziriak",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Grippli",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Protean",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Catfolk",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Samsaran",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Strix",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Vanaran",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Vishkanya",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})
+DefineLanguage({
+  Name="Wayang",
+  Types={
+    "Spoken",
+    "Written",
+    "Read",
+  },
+})

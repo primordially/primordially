@@ -102,9 +102,12 @@ namespace Primordially.LstToLua.Conditions
                     output.Write(" then return false end\n");
                 }
 
-                output.Write("if ability.IsAnyType(");
-                output.WriteValues(Types);
-                output.Write(") then return true end\n");
+                if (Types.Any())
+                {
+                    output.Write("if ability.IsAnyType(");
+                    output.WriteValues(Types);
+                    output.Write(") then return true end\n");
+                }
 
                 foreach (var name in Names)
                 {

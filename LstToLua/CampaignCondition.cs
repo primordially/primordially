@@ -28,17 +28,17 @@ namespace Primordially.LstToLua
             var conditions = new List<string>();
             foreach (var part in parts.Skip(1))
             {
-                if (part.StartsWith("BOOKTYPE="))
+                if (part.TryRemovePrefix("BOOKTYPE=", out var bt))
                 {
-                    conditions.Add($"source.IsBookType('{part.Substring("BOOKTYPE=".Length).Value}')");
+                    conditions.Add($"source.IsBookType(\"{bt.Value.Replace("\"", "\\\"")}\")");
                 }
-                else if (part.StartsWith("INCLUDES="))
+                else if (part.TryRemovePrefix("INCLUDES=", out var includes))
                 {
-                    conditions.Add($"source.Includes('{part.Substring("INCLUDES=".Length).Value}')");
+                    conditions.Add($"source.Includes(\"{includes.Value.Replace("\"", "\\\"")}\")");
                 }
-                else if (part.StartsWith("INCLUDESBOOKTYPE="))
+                else if (part.TryRemovePrefix("INCLUDESBOOKTYPE=", out var incbt))
                 {
-                    conditions.Add($"source.IncludesBookType('{part.Substring("INCLUDESBOOKTYPE=".Length).Value}')");
+                    conditions.Add($"source.IncludesBookType(\"{incbt.Value.Replace("\"", "\\\"")}\")");
                 }
                 else
                 {

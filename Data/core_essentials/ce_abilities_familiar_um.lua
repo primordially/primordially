@@ -1,0 +1,214 @@
+-- Converted From LST file data\pathfinder\paizo\roleplaying_game\core_essentials\ce_abilities_familiar_um.lst
+-- From repository https://github.com/pcgen/pcgen at commit 11ceb52482855f2e5f0f6c108c3dc665b12af237
+SetSource({
+  SourceLong="Ultimate Magic",
+  SourceShort="UM",
+  SourceWeb="http://paizo.com/pathfinderRPG/v5748btpy8g7s",
+  SourceDate="2011-05",
+})
+ModifyAbility({
+  Name="Standard Familiar List",
+  Category="Internal",
+  FollowerTypes={
+    {
+      Type="Familiar",
+      IsValidFollower=function (follower)
+        return follower.Name == "Familiar (Blue-Ringed Octopus)" or follower.Name == "Familiar (Centipede (House))" or follower.Name == "Familiar (Crab (Giant King))" or follower.Name == "Familiar (Donkey Rat)" or follower.Name == "Familiar (Fox)" or follower.Name == "Familiar (Goat)" or follower.Name == "Familiar (Hedgehog)" or follower.Name == "Familiar (Pig)" or follower.Name == "Familiar (Scorpion (Greensting))" or follower.Name == "Familiar (Spider (Scarlet))" or follower.Name == "Familiar (Thrush)" or follower.Name == "Familiar (Turtle)"
+      end,
+      FollowerLevelAdjustment=0,
+    },
+  },
+})
+DefineAbility({
+  Name="Familiar Granted Bonus (Blue-Ringed Octopus)",
+  Category="Internal",
+  Bonuses={
+    {
+      Category="SKILL",
+      Formula=Formula("FamiliarGrantedBonus_3"),
+      Type={
+        Name="Familiar",
+      },
+      Variables={
+        "Swim",
+      },
+    },
+  },
+})
+DefineAbility({
+  Name="Familiar Granted Bonus (Donkey Rat)",
+  Category="Internal",
+  Bonuses={
+    {
+      Category="SAVE",
+      Formula=Formula("FamiliarGrantedBonus_2"),
+      Type={
+        Name="Familiar",
+      },
+      Variables={
+        "Fortitude",
+      },
+    },
+  },
+})
+DefineAbility({
+  Name="Familiar Granted Bonus (Fox)",
+  Category="Internal",
+  Bonuses={
+    {
+      Category="SAVE",
+      Formula=Formula("FamiliarGrantedBonus_2"),
+      Type={
+        Name="Familiar",
+      },
+      Variables={
+        "Reflex",
+      },
+    },
+  },
+})
+DefineAbility({
+  Name="Familiar Granted Bonus (Goat)",
+  Category="Internal",
+  Bonuses={
+    {
+      Category="SKILL",
+      Formula=Formula("FamiliarGrantedBonus_3"),
+      Type={
+        Name="Familiar",
+      },
+      Variables={
+        "Survival",
+      },
+    },
+  },
+})
+DefineAbility({
+  Name="Familiar Granted Bonus (Scorpion (Greensting))",
+  Category="Internal",
+  Bonuses={
+    {
+      Category="COMBAT",
+      Formula=Formula("FamiliarGrantedBonus_4"),
+      Type={
+        Name="Familiar",
+      },
+      Variables={
+        "INITIATIVE",
+      },
+    },
+  },
+})
+DefineAbility({
+  Name="Familiar Granted Bonus (Hedgehog)",
+  Category="Internal",
+  Bonuses={
+    {
+      Category="SAVE",
+      Formula=Formula("FamiliarGrantedBonus_2"),
+      Type={
+        Name="Familiar",
+      },
+      Variables={
+        "Will",
+      },
+    },
+  },
+})
+DefineAbility({
+  Name="Familiar Granted Bonus (Centipede (House))",
+  Category="Internal",
+  Bonuses={
+    {
+      Category="SKILL",
+      Formula=Formula("FamiliarGrantedBonus_3"),
+      Type={
+        Name="Familiar",
+      },
+      Variables={
+        "Stealth",
+      },
+    },
+  },
+})
+DefineAbility({
+  Name="Familiar Granted Bonus (Crab (Giant King))",
+  Category="Internal",
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("FamiliarGrantedBonus_2"),
+      Type={
+        Name="Familiar",
+      },
+      Variables={
+        "CMB_Grapple",
+      },
+    },
+  },
+})
+DefineAbility({
+  Name="Familiar Granted Bonus (Pig)",
+  Category="Internal",
+  Bonuses={
+    {
+      Category="SKILL",
+      Formula=Formula("FamiliarGrantedBonus_3"),
+      Type={
+        Name="Familiar",
+      },
+      Variables={
+        "Diplomacy",
+      },
+    },
+  },
+})
+DefineAbility({
+  Name="Familiar Granted Bonus (Spider (Scarlet))",
+  Category="Internal",
+  Bonuses={
+    {
+      Category="SKILL",
+      Formula=Formula("FamiliarGrantedBonus_3"),
+      Type={
+        Name="Familiar",
+      },
+      Variables={
+        "Climb",
+      },
+    },
+  },
+})
+DefineAbility({
+  Name="Familiar Granted Bonus (Thrush)",
+  Category="Internal",
+  Bonuses={
+    {
+      Category="SKILL",
+      Formula=Formula("FamiliarGrantedBonus_3"),
+      Type={
+        Name="Familiar",
+      },
+      Variables={
+        "Diplomacy",
+      },
+    },
+  },
+})
+DefineAbility({
+  Name="Familiar Granted Bonus (Turtle)",
+  Category="Internal",
+  Bonuses={
+    {
+      Category="VAR",
+      Formula=Formula("FamiliarGrantedBonus_1"),
+      Type={
+        Name="Base",
+        Stack=true,
+      },
+      Variables={
+        "AC_Natural_Armor",
+      },
+    },
+  },
+})

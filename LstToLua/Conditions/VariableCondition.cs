@@ -53,7 +53,7 @@ namespace Primordially.LstToLua.Conditions
                 "LTEQ" => "<=",
                 "GT"   => ">",
                 "GTEQ" => ">=",
-                "NEQ"  => "!=",
+                "NEQ"  => "~=",
                 _ => throw new InvalidOperationException($"Unknown PREVAR operation {Op}"),
             };
 
