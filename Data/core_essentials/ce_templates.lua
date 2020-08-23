@@ -10,7 +10,7 @@ DefineTemplate({
   Name="Bite ~ Claw (Fine)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -36,7 +36,7 @@ DefineTemplate({
   Name="Bite ~ Claw (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -76,7 +76,7 @@ DefineTemplate({
   Name="Bite ~ Claw (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -116,7 +116,7 @@ DefineTemplate({
   Name="Bite ~ Claw (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -156,7 +156,7 @@ DefineTemplate({
   Name="Bite ~ Claw (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -196,7 +196,7 @@ DefineTemplate({
   Name="Bite ~ Claw (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -236,7 +236,7 @@ DefineTemplate({
   Name="Bite ~ Claw (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -276,7 +276,7 @@ DefineTemplate({
   Name="Bite ~ Claw (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -316,7 +316,7 @@ DefineTemplate({
   Name="Bite ~ Claw (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -378,7 +378,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -427,7 +427,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -476,7 +476,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -525,7 +525,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -574,7 +574,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -623,7 +623,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -672,7 +672,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -721,7 +721,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -770,7 +770,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -819,7 +819,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -868,7 +868,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -917,7 +917,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -966,7 +966,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -1015,7 +1015,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -1064,7 +1064,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -1113,7 +1113,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -1162,7 +1162,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -1211,7 +1211,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -1260,7 +1260,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -1309,7 +1309,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -1358,7 +1358,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -1407,7 +1407,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -1456,7 +1456,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -1505,7 +1505,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -1554,7 +1554,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -1603,7 +1603,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -1652,7 +1652,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -1701,7 +1701,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -1750,7 +1750,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -1799,7 +1799,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -1848,7 +1848,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -1897,7 +1897,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -1946,7 +1946,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -1995,7 +1995,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -2044,7 +2044,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -2093,7 +2093,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -2142,7 +2142,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -2191,7 +2191,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -2240,7 +2240,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -2289,7 +2289,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -2338,7 +2338,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -2387,7 +2387,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -2436,7 +2436,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -2485,7 +2485,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -2534,7 +2534,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -2583,7 +2583,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -2632,7 +2632,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -2681,7 +2681,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -2730,7 +2730,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -2779,7 +2779,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -2828,7 +2828,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -2877,7 +2877,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -2926,7 +2926,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -2975,7 +2975,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -3024,7 +3024,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -3073,7 +3073,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -3122,7 +3122,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -3171,7 +3171,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -3220,7 +3220,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -3269,7 +3269,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -3318,7 +3318,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -3367,7 +3367,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -3416,7 +3416,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -3465,7 +3465,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -3512,7 +3512,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -3559,7 +3559,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -3606,7 +3606,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -3653,7 +3653,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -3700,7 +3700,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -3747,7 +3747,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -3794,7 +3794,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -3841,7 +3841,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -3888,7 +3888,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -3935,7 +3935,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -3982,7 +3982,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -4029,7 +4029,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -4076,7 +4076,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -4123,7 +4123,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -4170,7 +4170,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -4217,7 +4217,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -4264,7 +4264,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -4311,7 +4311,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -4358,7 +4358,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -4405,7 +4405,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -4452,7 +4452,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -4499,7 +4499,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -4546,7 +4546,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -4593,7 +4593,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -4640,7 +4640,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -4687,7 +4687,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -4734,7 +4734,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -4781,7 +4781,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -4828,7 +4828,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -4875,7 +4875,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -4922,7 +4922,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -4969,7 +4969,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -5016,7 +5016,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -5063,7 +5063,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -5110,7 +5110,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -5157,7 +5157,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -5204,7 +5204,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -5251,7 +5251,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -5298,7 +5298,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -5345,7 +5345,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -5392,7 +5392,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -5439,7 +5439,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -5486,7 +5486,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -5533,7 +5533,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -5580,7 +5580,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -5627,7 +5627,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -5674,7 +5674,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -5721,7 +5721,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -5768,7 +5768,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -5815,7 +5815,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -5862,7 +5862,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -5909,7 +5909,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -5956,7 +5956,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -6003,7 +6003,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -6050,7 +6050,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -6097,7 +6097,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -6144,7 +6144,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -6191,7 +6191,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -6238,7 +6238,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -6285,7 +6285,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -6332,7 +6332,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -6379,7 +6379,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -6404,7 +6404,7 @@ DefineTemplate({
   Name="Pincers 1 (Fine)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -6430,7 +6430,7 @@ DefineTemplate({
   Name="Pincers 1 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -6456,7 +6456,7 @@ DefineTemplate({
   Name="Pincers 1 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -6482,7 +6482,7 @@ DefineTemplate({
   Name="Pincers 1 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -6508,7 +6508,7 @@ DefineTemplate({
   Name="Pincers 1 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -6534,7 +6534,7 @@ DefineTemplate({
   Name="Pincers 1 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -6560,7 +6560,7 @@ DefineTemplate({
   Name="Pincers 1 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -6586,7 +6586,7 @@ DefineTemplate({
   Name="Pincers 1 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -6612,7 +6612,7 @@ DefineTemplate({
   Name="Pincers 1 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -6638,7 +6638,7 @@ DefineTemplate({
   Name="Pincers 2 (Fine)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -6664,7 +6664,7 @@ DefineTemplate({
   Name="Pincers 2 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -6690,7 +6690,7 @@ DefineTemplate({
   Name="Pincers 2 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -6716,7 +6716,7 @@ DefineTemplate({
   Name="Pincers 2 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -6742,7 +6742,7 @@ DefineTemplate({
   Name="Pincers 2 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -6768,7 +6768,7 @@ DefineTemplate({
   Name="Pincers 2 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -6794,7 +6794,7 @@ DefineTemplate({
   Name="Pincers 2 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -6820,7 +6820,7 @@ DefineTemplate({
   Name="Pincers 2 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -6846,7 +6846,7 @@ DefineTemplate({
   Name="Pincers 2 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -6872,7 +6872,7 @@ DefineTemplate({
   Name="Pincers 3 (Fine)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -6898,7 +6898,7 @@ DefineTemplate({
   Name="Pincers 3 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -6924,7 +6924,7 @@ DefineTemplate({
   Name="Pincers 3 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -6950,7 +6950,7 @@ DefineTemplate({
   Name="Pincers 3 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -6976,7 +6976,7 @@ DefineTemplate({
   Name="Pincers 3 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -7002,7 +7002,7 @@ DefineTemplate({
   Name="Pincers 3 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -7028,7 +7028,7 @@ DefineTemplate({
   Name="Pincers 3 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -7054,7 +7054,7 @@ DefineTemplate({
   Name="Pincers 3 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -7080,7 +7080,7 @@ DefineTemplate({
   Name="Pincers 3 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -7106,7 +7106,7 @@ DefineTemplate({
   Name="Pincers 4 (Fine)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -7132,7 +7132,7 @@ DefineTemplate({
   Name="Pincers 4 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -7158,7 +7158,7 @@ DefineTemplate({
   Name="Pincers 4 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -7184,7 +7184,7 @@ DefineTemplate({
   Name="Pincers 4 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -7210,7 +7210,7 @@ DefineTemplate({
   Name="Pincers 4 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -7236,7 +7236,7 @@ DefineTemplate({
   Name="Pincers 4 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -7262,7 +7262,7 @@ DefineTemplate({
   Name="Pincers 4 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -7288,7 +7288,7 @@ DefineTemplate({
   Name="Pincers 4 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -7314,7 +7314,7 @@ DefineTemplate({
   Name="Pincers 4 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -7340,7 +7340,7 @@ DefineTemplate({
   Name="Pincers 5 (Fine)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -7366,7 +7366,7 @@ DefineTemplate({
   Name="Pincers 5 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -7392,7 +7392,7 @@ DefineTemplate({
   Name="Pincers 5 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -7418,7 +7418,7 @@ DefineTemplate({
   Name="Pincers 5 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -7444,7 +7444,7 @@ DefineTemplate({
   Name="Pincers 5 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -7470,7 +7470,7 @@ DefineTemplate({
   Name="Pincers 5 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -7496,7 +7496,7 @@ DefineTemplate({
   Name="Pincers 5 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -7522,7 +7522,7 @@ DefineTemplate({
   Name="Pincers 5 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -7548,7 +7548,7 @@ DefineTemplate({
   Name="Pincers 5 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -7574,7 +7574,7 @@ DefineTemplate({
   Name="Pincers 6 (Fine)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -7600,7 +7600,7 @@ DefineTemplate({
   Name="Pincers 6 (Diminutive)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -7626,7 +7626,7 @@ DefineTemplate({
   Name="Pincers 6 (Tiny)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -7652,7 +7652,7 @@ DefineTemplate({
   Name="Pincers 6 (Small)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -7678,7 +7678,7 @@ DefineTemplate({
   Name="Pincers 6 (Medium)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -7704,7 +7704,7 @@ DefineTemplate({
   Name="Pincers 6 (Large)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -7730,7 +7730,7 @@ DefineTemplate({
   Name="Pincers 6 (Huge)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -7756,7 +7756,7 @@ DefineTemplate({
   Name="Pincers 6 (Gargantuan)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -7782,7 +7782,7 @@ DefineTemplate({
   Name="Pincers 6 (Colossal)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -7808,7 +7808,7 @@ DefineTemplate({
   Name="Pincers 7 (Fine)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -7834,7 +7834,7 @@ DefineTemplate({
   Name="Pincers 7 (Diminutive)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -7860,7 +7860,7 @@ DefineTemplate({
   Name="Pincers 7 (Tiny)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -7886,7 +7886,7 @@ DefineTemplate({
   Name="Pincers 7 (Small)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -7912,7 +7912,7 @@ DefineTemplate({
   Name="Pincers 7 (Medium)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -7938,7 +7938,7 @@ DefineTemplate({
   Name="Pincers 7 (Large)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -7964,7 +7964,7 @@ DefineTemplate({
   Name="Pincers 7 (Huge)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -7990,7 +7990,7 @@ DefineTemplate({
   Name="Pincers 7 (Gargantuan)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -8016,7 +8016,7 @@ DefineTemplate({
   Name="Pincers 7 (Colossal)",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -8042,7 +8042,7 @@ DefineTemplate({
   Name="Tail Slap 1 (Fine)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -8068,7 +8068,7 @@ DefineTemplate({
   Name="Tail Slap 1 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -8094,7 +8094,7 @@ DefineTemplate({
   Name="Tail Slap 1 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -8120,7 +8120,7 @@ DefineTemplate({
   Name="Tail Slap 1 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -8146,7 +8146,7 @@ DefineTemplate({
   Name="Tail Slap 1 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -8172,7 +8172,7 @@ DefineTemplate({
   Name="Tail Slap 1 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -8198,7 +8198,7 @@ DefineTemplate({
   Name="Tail Slap 1 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -8224,7 +8224,7 @@ DefineTemplate({
   Name="Tail Slap 1 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -8250,7 +8250,7 @@ DefineTemplate({
   Name="Tail Slap 1 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -8276,7 +8276,7 @@ DefineTemplate({
   Name="Tail Slap 2 (Fine)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -8302,7 +8302,7 @@ DefineTemplate({
   Name="Tail Slap 2 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -8328,7 +8328,7 @@ DefineTemplate({
   Name="Tail Slap 2 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -8354,7 +8354,7 @@ DefineTemplate({
   Name="Tail Slap 2 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -8380,7 +8380,7 @@ DefineTemplate({
   Name="Tail Slap 2 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -8406,7 +8406,7 @@ DefineTemplate({
   Name="Tail Slap 2 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -8432,7 +8432,7 @@ DefineTemplate({
   Name="Tail Slap 2 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -8458,7 +8458,7 @@ DefineTemplate({
   Name="Tail Slap 2 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -8484,7 +8484,7 @@ DefineTemplate({
   Name="Tail Slap 2 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -8510,7 +8510,7 @@ DefineTemplate({
   Name="Tail Slap 3 (Fine)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -8536,7 +8536,7 @@ DefineTemplate({
   Name="Tail Slap 3 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -8562,7 +8562,7 @@ DefineTemplate({
   Name="Tail Slap 3 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -8588,7 +8588,7 @@ DefineTemplate({
   Name="Tail Slap 3 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -8614,7 +8614,7 @@ DefineTemplate({
   Name="Tail Slap 3 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -8640,7 +8640,7 @@ DefineTemplate({
   Name="Tail Slap 3 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -8666,7 +8666,7 @@ DefineTemplate({
   Name="Tail Slap 3 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -8692,7 +8692,7 @@ DefineTemplate({
   Name="Tail Slap 3 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -8718,7 +8718,7 @@ DefineTemplate({
   Name="Tail Slap 3 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -8744,7 +8744,7 @@ DefineTemplate({
   Name="Tail Slap 4 (Fine)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -8770,7 +8770,7 @@ DefineTemplate({
   Name="Tail Slap 4 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -8796,7 +8796,7 @@ DefineTemplate({
   Name="Tail Slap 4 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -8822,7 +8822,7 @@ DefineTemplate({
   Name="Tail Slap 4 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -8848,7 +8848,7 @@ DefineTemplate({
   Name="Tail Slap 4 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -8874,7 +8874,7 @@ DefineTemplate({
   Name="Tail Slap 4 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -8900,7 +8900,7 @@ DefineTemplate({
   Name="Tail Slap 4 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -8926,7 +8926,7 @@ DefineTemplate({
   Name="Tail Slap 4 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -8952,7 +8952,7 @@ DefineTemplate({
   Name="Tail Slap 4 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -8978,7 +8978,7 @@ DefineTemplate({
   Name="Tail Slap 5 (Fine)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -9004,7 +9004,7 @@ DefineTemplate({
   Name="Tail Slap 5 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -9030,7 +9030,7 @@ DefineTemplate({
   Name="Tail Slap 5 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -9056,7 +9056,7 @@ DefineTemplate({
   Name="Tail Slap 5 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -9082,7 +9082,7 @@ DefineTemplate({
   Name="Tail Slap 5 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -9108,7 +9108,7 @@ DefineTemplate({
   Name="Tail Slap 5 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -9134,7 +9134,7 @@ DefineTemplate({
   Name="Tail Slap 5 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -9160,7 +9160,7 @@ DefineTemplate({
   Name="Tail Slap 5 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -9186,7 +9186,7 @@ DefineTemplate({
   Name="Tail Slap 5 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -9212,7 +9212,7 @@ DefineTemplate({
   Name="Tail Slap 6 (Fine)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -9238,7 +9238,7 @@ DefineTemplate({
   Name="Tail Slap 6 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -9264,7 +9264,7 @@ DefineTemplate({
   Name="Tail Slap 6 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -9290,7 +9290,7 @@ DefineTemplate({
   Name="Tail Slap 6 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -9316,7 +9316,7 @@ DefineTemplate({
   Name="Tail Slap 6 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -9342,7 +9342,7 @@ DefineTemplate({
   Name="Tail Slap 6 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -9368,7 +9368,7 @@ DefineTemplate({
   Name="Tail Slap 6 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -9394,7 +9394,7 @@ DefineTemplate({
   Name="Tail Slap 6 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -9420,7 +9420,7 @@ DefineTemplate({
   Name="Tail Slap 6 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -9446,7 +9446,7 @@ DefineTemplate({
   Name="Tail Slap 7 (Fine)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "F"
     end,
   },
@@ -9472,7 +9472,7 @@ DefineTemplate({
   Name="Tail Slap 7 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -9498,7 +9498,7 @@ DefineTemplate({
   Name="Tail Slap 7 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -9524,7 +9524,7 @@ DefineTemplate({
   Name="Tail Slap 7 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -9550,7 +9550,7 @@ DefineTemplate({
   Name="Tail Slap 7 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -9576,7 +9576,7 @@ DefineTemplate({
   Name="Tail Slap 7 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -9602,7 +9602,7 @@ DefineTemplate({
   Name="Tail Slap 7 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -9628,7 +9628,7 @@ DefineTemplate({
   Name="Tail Slap 7 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -9654,7 +9654,7 @@ DefineTemplate({
   Name="Tail Slap 7 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -9702,7 +9702,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -9750,7 +9750,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -9798,7 +9798,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -9846,7 +9846,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -9894,7 +9894,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -9942,7 +9942,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -9990,7 +9990,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -10038,7 +10038,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -10086,7 +10086,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -10134,7 +10134,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -10182,7 +10182,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -10230,7 +10230,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -10278,7 +10278,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -10326,7 +10326,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -10374,7 +10374,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -10422,7 +10422,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -10470,7 +10470,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -10518,7 +10518,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -10566,7 +10566,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -10614,7 +10614,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -10662,7 +10662,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -10710,7 +10710,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -10758,7 +10758,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -10806,7 +10806,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -10854,7 +10854,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -10902,7 +10902,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -10950,7 +10950,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -10998,7 +10998,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -11046,7 +11046,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -11094,7 +11094,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -11142,7 +11142,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -11190,7 +11190,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -11238,7 +11238,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -11286,7 +11286,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -11334,7 +11334,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -11382,7 +11382,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -11430,7 +11430,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -11478,7 +11478,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -11526,7 +11526,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -11574,7 +11574,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -11622,7 +11622,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -11670,7 +11670,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -11718,7 +11718,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -11766,7 +11766,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -11814,7 +11814,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -11862,7 +11862,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -11910,7 +11910,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -11958,7 +11958,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -12006,7 +12006,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -12054,7 +12054,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -12102,7 +12102,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -12150,7 +12150,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -12198,7 +12198,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -12246,7 +12246,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -12294,7 +12294,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -12342,7 +12342,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -12390,7 +12390,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -12437,7 +12437,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -12484,7 +12484,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -12531,7 +12531,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -12578,7 +12578,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -12625,7 +12625,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -12672,7 +12672,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -12719,7 +12719,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -12766,7 +12766,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -12813,7 +12813,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -12860,7 +12860,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -12907,7 +12907,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -12954,7 +12954,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -13001,7 +13001,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -13048,7 +13048,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -13095,7 +13095,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -13142,7 +13142,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -13189,7 +13189,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -13236,7 +13236,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -13283,7 +13283,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -13330,7 +13330,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -13377,7 +13377,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -13424,7 +13424,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -13471,7 +13471,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -13518,7 +13518,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -13565,7 +13565,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -13612,7 +13612,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -13659,7 +13659,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -13706,7 +13706,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -13753,7 +13753,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -13800,7 +13800,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -13847,7 +13847,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -13894,7 +13894,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -13941,7 +13941,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -13988,7 +13988,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -14035,7 +14035,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -14082,7 +14082,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -14129,7 +14129,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -14176,7 +14176,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -14223,7 +14223,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -14270,7 +14270,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -14317,7 +14317,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -14364,7 +14364,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -14411,7 +14411,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -14458,7 +14458,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -14505,7 +14505,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -14552,7 +14552,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -14599,7 +14599,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -14646,7 +14646,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -14693,7 +14693,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -14740,7 +14740,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -14787,7 +14787,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -14834,7 +14834,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -14881,7 +14881,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -14928,7 +14928,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -14975,7 +14975,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -15022,7 +15022,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -15069,7 +15069,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -15116,7 +15116,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -15163,7 +15163,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -15210,7 +15210,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -15257,7 +15257,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -15304,7 +15304,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -15351,7 +15351,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -15398,7 +15398,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -15445,7 +15445,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -15492,7 +15492,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -15539,7 +15539,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -15586,7 +15586,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -15633,7 +15633,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -15680,7 +15680,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -15727,7 +15727,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -15774,7 +15774,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -15821,7 +15821,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -15868,7 +15868,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -15915,7 +15915,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -15962,7 +15962,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -16009,7 +16009,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -16056,7 +16056,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -16103,7 +16103,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -16150,7 +16150,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -16197,7 +16197,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -16244,7 +16244,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -16291,7 +16291,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -16338,7 +16338,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -16385,7 +16385,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -16432,7 +16432,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -16479,7 +16479,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -16526,7 +16526,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -16573,7 +16573,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -16620,7 +16620,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -16667,7 +16667,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -16714,7 +16714,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -16761,7 +16761,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -16808,7 +16808,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -16855,7 +16855,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -16902,7 +16902,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -16949,7 +16949,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -16996,7 +16996,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -17043,7 +17043,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -17090,7 +17090,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -17137,7 +17137,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -17184,7 +17184,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -17231,7 +17231,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -17278,7 +17278,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -17325,7 +17325,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -17372,7 +17372,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -17419,7 +17419,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -17466,7 +17466,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -17513,7 +17513,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -17560,7 +17560,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -17607,7 +17607,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -17654,7 +17654,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -17701,7 +17701,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -17748,7 +17748,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -17795,7 +17795,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -17842,7 +17842,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -17889,7 +17889,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -17936,7 +17936,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -17983,7 +17983,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -18030,7 +18030,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -18077,7 +18077,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -18124,7 +18124,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -18171,7 +18171,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -18218,7 +18218,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -18265,7 +18265,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -18312,7 +18312,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -18359,7 +18359,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -18406,7 +18406,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -18453,7 +18453,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -18500,7 +18500,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -18547,7 +18547,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -18594,7 +18594,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -18641,7 +18641,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -18688,7 +18688,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -18735,7 +18735,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -18782,7 +18782,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -18829,7 +18829,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -18876,7 +18876,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -18923,7 +18923,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -18970,7 +18970,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -19017,7 +19017,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -19064,7 +19064,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -19111,7 +19111,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -19158,7 +19158,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -19205,7 +19205,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -19252,7 +19252,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -19299,7 +19299,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -19346,7 +19346,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -19393,7 +19393,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -19440,7 +19440,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -19487,7 +19487,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -19534,7 +19534,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -19581,7 +19581,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -19628,7 +19628,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -19675,7 +19675,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -19722,7 +19722,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -19769,7 +19769,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -19816,7 +19816,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -19863,7 +19863,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -19910,7 +19910,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -19957,7 +19957,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -20004,7 +20004,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -20051,7 +20051,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -20098,7 +20098,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -20145,7 +20145,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -20192,7 +20192,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -20239,7 +20239,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -20264,7 +20264,7 @@ DefineTemplate({
   Name="Hoof 1 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -20290,7 +20290,7 @@ DefineTemplate({
   Name="Hoof 1 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -20316,7 +20316,7 @@ DefineTemplate({
   Name="Hoof 1 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -20342,7 +20342,7 @@ DefineTemplate({
   Name="Hoof 1 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -20368,7 +20368,7 @@ DefineTemplate({
   Name="Hoof 1 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -20394,7 +20394,7 @@ DefineTemplate({
   Name="Hoof 1 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -20420,7 +20420,7 @@ DefineTemplate({
   Name="Hoof 1 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -20446,7 +20446,7 @@ DefineTemplate({
   Name="Hoof 1 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -20472,7 +20472,7 @@ DefineTemplate({
   Name="Hoof 2 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -20498,7 +20498,7 @@ DefineTemplate({
   Name="Hoof 2 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -20524,7 +20524,7 @@ DefineTemplate({
   Name="Hoof 2 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -20550,7 +20550,7 @@ DefineTemplate({
   Name="Hoof 2 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -20576,7 +20576,7 @@ DefineTemplate({
   Name="Hoof 2 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -20602,7 +20602,7 @@ DefineTemplate({
   Name="Hoof 2 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -20628,7 +20628,7 @@ DefineTemplate({
   Name="Hoof 2 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -20654,7 +20654,7 @@ DefineTemplate({
   Name="Hoof 2 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -20680,7 +20680,7 @@ DefineTemplate({
   Name="Hoof 3 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -20706,7 +20706,7 @@ DefineTemplate({
   Name="Hoof 3 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -20732,7 +20732,7 @@ DefineTemplate({
   Name="Hoof 3 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -20758,7 +20758,7 @@ DefineTemplate({
   Name="Hoof 3 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -20784,7 +20784,7 @@ DefineTemplate({
   Name="Hoof 3 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -20810,7 +20810,7 @@ DefineTemplate({
   Name="Hoof 3 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -20836,7 +20836,7 @@ DefineTemplate({
   Name="Hoof 3 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -20862,7 +20862,7 @@ DefineTemplate({
   Name="Hoof 3 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -20888,7 +20888,7 @@ DefineTemplate({
   Name="Hoof 4 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -20914,7 +20914,7 @@ DefineTemplate({
   Name="Hoof 4 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -20940,7 +20940,7 @@ DefineTemplate({
   Name="Hoof 4 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -20966,7 +20966,7 @@ DefineTemplate({
   Name="Hoof 4 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -20992,7 +20992,7 @@ DefineTemplate({
   Name="Hoof 4 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -21018,7 +21018,7 @@ DefineTemplate({
   Name="Hoof 4 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -21044,7 +21044,7 @@ DefineTemplate({
   Name="Hoof 4 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -21070,7 +21070,7 @@ DefineTemplate({
   Name="Hoof 4 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -21096,7 +21096,7 @@ DefineTemplate({
   Name="Hoof 5 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -21122,7 +21122,7 @@ DefineTemplate({
   Name="Hoof 5 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -21148,7 +21148,7 @@ DefineTemplate({
   Name="Hoof 5 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -21174,7 +21174,7 @@ DefineTemplate({
   Name="Hoof 5 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -21200,7 +21200,7 @@ DefineTemplate({
   Name="Hoof 5 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -21226,7 +21226,7 @@ DefineTemplate({
   Name="Hoof 5 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -21252,7 +21252,7 @@ DefineTemplate({
   Name="Hoof 5 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -21278,7 +21278,7 @@ DefineTemplate({
   Name="Hoof 5 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -21304,7 +21304,7 @@ DefineTemplate({
   Name="Hoof 6 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -21330,7 +21330,7 @@ DefineTemplate({
   Name="Hoof 6 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -21356,7 +21356,7 @@ DefineTemplate({
   Name="Hoof 6 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -21382,7 +21382,7 @@ DefineTemplate({
   Name="Hoof 6 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -21408,7 +21408,7 @@ DefineTemplate({
   Name="Hoof 6 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -21434,7 +21434,7 @@ DefineTemplate({
   Name="Hoof 6 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -21460,7 +21460,7 @@ DefineTemplate({
   Name="Hoof 6 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -21486,7 +21486,7 @@ DefineTemplate({
   Name="Hoof 6 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -21512,7 +21512,7 @@ DefineTemplate({
   Name="Hoof 7 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -21538,7 +21538,7 @@ DefineTemplate({
   Name="Hoof 7 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -21564,7 +21564,7 @@ DefineTemplate({
   Name="Hoof 7 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -21590,7 +21590,7 @@ DefineTemplate({
   Name="Hoof 7 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -21616,7 +21616,7 @@ DefineTemplate({
   Name="Hoof 7 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -21642,7 +21642,7 @@ DefineTemplate({
   Name="Hoof 7 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -21668,7 +21668,7 @@ DefineTemplate({
   Name="Hoof 7 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -21694,7 +21694,7 @@ DefineTemplate({
   Name="Hoof 7 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -21720,7 +21720,7 @@ DefineTemplate({
   Name="Tentacle 1 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -21746,7 +21746,7 @@ DefineTemplate({
   Name="Tentacle 1 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -21772,7 +21772,7 @@ DefineTemplate({
   Name="Tentacle 1 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -21798,7 +21798,7 @@ DefineTemplate({
   Name="Tentacle 1 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -21824,7 +21824,7 @@ DefineTemplate({
   Name="Tentacle 1 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -21850,7 +21850,7 @@ DefineTemplate({
   Name="Tentacle 1 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -21876,7 +21876,7 @@ DefineTemplate({
   Name="Tentacle 1 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -21902,7 +21902,7 @@ DefineTemplate({
   Name="Tentacle 1 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -21928,7 +21928,7 @@ DefineTemplate({
   Name="Tentacle 2 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -21954,7 +21954,7 @@ DefineTemplate({
   Name="Tentacle 2 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -21980,7 +21980,7 @@ DefineTemplate({
   Name="Tentacle 2 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -22006,7 +22006,7 @@ DefineTemplate({
   Name="Tentacle 2 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -22032,7 +22032,7 @@ DefineTemplate({
   Name="Tentacle 2 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -22058,7 +22058,7 @@ DefineTemplate({
   Name="Tentacle 2 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -22084,7 +22084,7 @@ DefineTemplate({
   Name="Tentacle 2 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -22110,7 +22110,7 @@ DefineTemplate({
   Name="Tentacle 2 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -22136,7 +22136,7 @@ DefineTemplate({
   Name="Tentacle 3 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -22162,7 +22162,7 @@ DefineTemplate({
   Name="Tentacle 3 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -22188,7 +22188,7 @@ DefineTemplate({
   Name="Tentacle 3 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -22214,7 +22214,7 @@ DefineTemplate({
   Name="Tentacle 3 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -22240,7 +22240,7 @@ DefineTemplate({
   Name="Tentacle 3 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -22266,7 +22266,7 @@ DefineTemplate({
   Name="Tentacle 3 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -22292,7 +22292,7 @@ DefineTemplate({
   Name="Tentacle 3 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -22318,7 +22318,7 @@ DefineTemplate({
   Name="Tentacle 3 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -22344,7 +22344,7 @@ DefineTemplate({
   Name="Tentacle 4 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -22370,7 +22370,7 @@ DefineTemplate({
   Name="Tentacle 4 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -22396,7 +22396,7 @@ DefineTemplate({
   Name="Tentacle 4 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -22422,7 +22422,7 @@ DefineTemplate({
   Name="Tentacle 4 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -22448,7 +22448,7 @@ DefineTemplate({
   Name="Tentacle 4 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -22474,7 +22474,7 @@ DefineTemplate({
   Name="Tentacle 4 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -22500,7 +22500,7 @@ DefineTemplate({
   Name="Tentacle 4 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -22526,7 +22526,7 @@ DefineTemplate({
   Name="Tentacle 4 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -22552,7 +22552,7 @@ DefineTemplate({
   Name="Tentacle 5 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -22578,7 +22578,7 @@ DefineTemplate({
   Name="Tentacle 5 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -22604,7 +22604,7 @@ DefineTemplate({
   Name="Tentacle 5 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -22630,7 +22630,7 @@ DefineTemplate({
   Name="Tentacle 5 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -22656,7 +22656,7 @@ DefineTemplate({
   Name="Tentacle 5 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -22682,7 +22682,7 @@ DefineTemplate({
   Name="Tentacle 5 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -22708,7 +22708,7 @@ DefineTemplate({
   Name="Tentacle 5 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -22734,7 +22734,7 @@ DefineTemplate({
   Name="Tentacle 5 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -22760,7 +22760,7 @@ DefineTemplate({
   Name="Tentacle 6 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -22786,7 +22786,7 @@ DefineTemplate({
   Name="Tentacle 6 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -22812,7 +22812,7 @@ DefineTemplate({
   Name="Tentacle 6 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -22838,7 +22838,7 @@ DefineTemplate({
   Name="Tentacle 6 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -22864,7 +22864,7 @@ DefineTemplate({
   Name="Tentacle 6 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -22890,7 +22890,7 @@ DefineTemplate({
   Name="Tentacle 6 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -22916,7 +22916,7 @@ DefineTemplate({
   Name="Tentacle 6 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -22942,7 +22942,7 @@ DefineTemplate({
   Name="Tentacle 6 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -22968,7 +22968,7 @@ DefineTemplate({
   Name="Tentacle 7 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -22994,7 +22994,7 @@ DefineTemplate({
   Name="Tentacle 7 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -23020,7 +23020,7 @@ DefineTemplate({
   Name="Tentacle 7 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -23046,7 +23046,7 @@ DefineTemplate({
   Name="Tentacle 7 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -23072,7 +23072,7 @@ DefineTemplate({
   Name="Tentacle 7 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -23098,7 +23098,7 @@ DefineTemplate({
   Name="Tentacle 7 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -23124,7 +23124,7 @@ DefineTemplate({
   Name="Tentacle 7 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -23150,7 +23150,7 @@ DefineTemplate({
   Name="Tentacle 7 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -23176,7 +23176,7 @@ DefineTemplate({
   Name="Tentacle 8 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -23202,7 +23202,7 @@ DefineTemplate({
   Name="Tentacle 8 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -23228,7 +23228,7 @@ DefineTemplate({
   Name="Tentacle 8 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -23254,7 +23254,7 @@ DefineTemplate({
   Name="Tentacle 8 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -23280,7 +23280,7 @@ DefineTemplate({
   Name="Tentacle 8 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -23306,7 +23306,7 @@ DefineTemplate({
   Name="Tentacle 8 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -23332,7 +23332,7 @@ DefineTemplate({
   Name="Tentacle 8 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -23358,7 +23358,7 @@ DefineTemplate({
   Name="Tentacle 8 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -23384,7 +23384,7 @@ DefineTemplate({
   Name="Wing 1 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -23410,7 +23410,7 @@ DefineTemplate({
   Name="Wing 1 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -23436,7 +23436,7 @@ DefineTemplate({
   Name="Wing 1 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -23462,7 +23462,7 @@ DefineTemplate({
   Name="Wing 1 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -23488,7 +23488,7 @@ DefineTemplate({
   Name="Wing 1 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -23514,7 +23514,7 @@ DefineTemplate({
   Name="Wing 1 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -23540,7 +23540,7 @@ DefineTemplate({
   Name="Wing 1 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -23566,7 +23566,7 @@ DefineTemplate({
   Name="Wing 1 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -23592,7 +23592,7 @@ DefineTemplate({
   Name="Wing 2 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -23618,7 +23618,7 @@ DefineTemplate({
   Name="Wing 2 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -23644,7 +23644,7 @@ DefineTemplate({
   Name="Wing 2 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -23670,7 +23670,7 @@ DefineTemplate({
   Name="Wing 2 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -23696,7 +23696,7 @@ DefineTemplate({
   Name="Wing 2 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -23722,7 +23722,7 @@ DefineTemplate({
   Name="Wing 2 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -23748,7 +23748,7 @@ DefineTemplate({
   Name="Wing 2 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -23774,7 +23774,7 @@ DefineTemplate({
   Name="Wing 2 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -23800,7 +23800,7 @@ DefineTemplate({
   Name="Wing 3 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -23826,7 +23826,7 @@ DefineTemplate({
   Name="Wing 3 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -23852,7 +23852,7 @@ DefineTemplate({
   Name="Wing 3 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -23878,7 +23878,7 @@ DefineTemplate({
   Name="Wing 3 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -23904,7 +23904,7 @@ DefineTemplate({
   Name="Wing 3 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -23930,7 +23930,7 @@ DefineTemplate({
   Name="Wing 3 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -23956,7 +23956,7 @@ DefineTemplate({
   Name="Wing 3 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -23982,7 +23982,7 @@ DefineTemplate({
   Name="Wing 3 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -24008,7 +24008,7 @@ DefineTemplate({
   Name="Wing 4 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -24034,7 +24034,7 @@ DefineTemplate({
   Name="Wing 4 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -24060,7 +24060,7 @@ DefineTemplate({
   Name="Wing 4 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -24086,7 +24086,7 @@ DefineTemplate({
   Name="Wing 4 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -24112,7 +24112,7 @@ DefineTemplate({
   Name="Wing 4 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -24138,7 +24138,7 @@ DefineTemplate({
   Name="Wing 4 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -24164,7 +24164,7 @@ DefineTemplate({
   Name="Wing 4 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -24190,7 +24190,7 @@ DefineTemplate({
   Name="Wing 4 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -24216,7 +24216,7 @@ DefineTemplate({
   Name="Wing 5 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -24242,7 +24242,7 @@ DefineTemplate({
   Name="Wing 5 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -24268,7 +24268,7 @@ DefineTemplate({
   Name="Wing 5 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -24294,7 +24294,7 @@ DefineTemplate({
   Name="Wing 5 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -24320,7 +24320,7 @@ DefineTemplate({
   Name="Wing 5 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -24346,7 +24346,7 @@ DefineTemplate({
   Name="Wing 5 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -24372,7 +24372,7 @@ DefineTemplate({
   Name="Wing 5 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -24398,7 +24398,7 @@ DefineTemplate({
   Name="Wing 5 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -24424,7 +24424,7 @@ DefineTemplate({
   Name="Wing 6 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -24450,7 +24450,7 @@ DefineTemplate({
   Name="Wing 6 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -24476,7 +24476,7 @@ DefineTemplate({
   Name="Wing 6 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -24502,7 +24502,7 @@ DefineTemplate({
   Name="Wing 6 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -24528,7 +24528,7 @@ DefineTemplate({
   Name="Wing 6 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -24554,7 +24554,7 @@ DefineTemplate({
   Name="Wing 6 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -24580,7 +24580,7 @@ DefineTemplate({
   Name="Wing 6 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -24606,7 +24606,7 @@ DefineTemplate({
   Name="Wing 6 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -24632,7 +24632,7 @@ DefineTemplate({
   Name="Wing 7 (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -24658,7 +24658,7 @@ DefineTemplate({
   Name="Wing 7 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -24684,7 +24684,7 @@ DefineTemplate({
   Name="Wing 7 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -24710,7 +24710,7 @@ DefineTemplate({
   Name="Wing 7 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -24736,7 +24736,7 @@ DefineTemplate({
   Name="Wing 7 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -24762,7 +24762,7 @@ DefineTemplate({
   Name="Wing 7 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -24788,7 +24788,7 @@ DefineTemplate({
   Name="Wing 7 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -24814,7 +24814,7 @@ DefineTemplate({
   Name="Wing 7 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -24862,7 +24862,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -24910,7 +24910,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -24958,7 +24958,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -25006,7 +25006,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -25054,7 +25054,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -25102,7 +25102,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -25150,7 +25150,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -25198,7 +25198,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -25224,7 +25224,7 @@ DefineTemplate({
   Name="Hair 1 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -25251,7 +25251,7 @@ DefineTemplate({
   Name="Hair 1 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -25278,7 +25278,7 @@ DefineTemplate({
   Name="Hair 1 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -25305,7 +25305,7 @@ DefineTemplate({
   Name="Hair 1 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -25332,7 +25332,7 @@ DefineTemplate({
   Name="Hair 1 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -25359,7 +25359,7 @@ DefineTemplate({
   Name="Hair 1 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -25386,7 +25386,7 @@ DefineTemplate({
   Name="Hair 1 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -25413,7 +25413,7 @@ DefineTemplate({
   Name="Hair 2 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -25440,7 +25440,7 @@ DefineTemplate({
   Name="Hair 2 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -25467,7 +25467,7 @@ DefineTemplate({
   Name="Hair 2 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -25494,7 +25494,7 @@ DefineTemplate({
   Name="Hair 2 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -25521,7 +25521,7 @@ DefineTemplate({
   Name="Hair 2 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -25548,7 +25548,7 @@ DefineTemplate({
   Name="Hair 2 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -25575,7 +25575,7 @@ DefineTemplate({
   Name="Hair 2 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -25602,7 +25602,7 @@ DefineTemplate({
   Name="Hair 3 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -25629,7 +25629,7 @@ DefineTemplate({
   Name="Hair 3 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -25656,7 +25656,7 @@ DefineTemplate({
   Name="Hair 3 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -25683,7 +25683,7 @@ DefineTemplate({
   Name="Hair 3 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -25710,7 +25710,7 @@ DefineTemplate({
   Name="Hair 3 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -25737,7 +25737,7 @@ DefineTemplate({
   Name="Hair 3 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -25764,7 +25764,7 @@ DefineTemplate({
   Name="Hair 3 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -25791,7 +25791,7 @@ DefineTemplate({
   Name="Hair 4 (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -25818,7 +25818,7 @@ DefineTemplate({
   Name="Hair 4 (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -25845,7 +25845,7 @@ DefineTemplate({
   Name="Hair 4 (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -25872,7 +25872,7 @@ DefineTemplate({
   Name="Hair 4 (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -25899,7 +25899,7 @@ DefineTemplate({
   Name="Hair 4 (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -25926,7 +25926,7 @@ DefineTemplate({
   Name="Hair 4 (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -25953,7 +25953,7 @@ DefineTemplate({
   Name="Hair 4 (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -26002,7 +26002,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -26049,7 +26049,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -26096,7 +26096,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -26143,7 +26143,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -26190,7 +26190,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -26237,7 +26237,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -26284,7 +26284,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -26331,7 +26331,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -26378,7 +26378,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -26425,7 +26425,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -26472,7 +26472,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -26519,7 +26519,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -26566,7 +26566,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -26613,7 +26613,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -26660,7 +26660,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -26707,7 +26707,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -26754,7 +26754,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -26801,7 +26801,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -26848,7 +26848,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -26895,7 +26895,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -26942,7 +26942,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -26989,7 +26989,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -27036,7 +27036,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -27083,7 +27083,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -27130,7 +27130,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -27177,7 +27177,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -27224,7 +27224,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -27271,7 +27271,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -27318,7 +27318,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -27365,7 +27365,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -27412,7 +27412,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -27459,7 +27459,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -27506,7 +27506,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -27553,7 +27553,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -27600,7 +27600,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -27647,7 +27647,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -27694,7 +27694,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -27741,7 +27741,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -27788,7 +27788,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -27835,7 +27835,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -27882,7 +27882,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -27929,7 +27929,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -27976,7 +27976,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -28023,7 +28023,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -28070,7 +28070,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -28117,7 +28117,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -28164,7 +28164,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -28211,7 +28211,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -28258,7 +28258,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -28305,7 +28305,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -28352,7 +28352,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -28399,7 +28399,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -28446,7 +28446,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -28493,7 +28493,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -28540,7 +28540,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -28587,7 +28587,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -28612,7 +28612,7 @@ DefineTemplate({
   Name="Tail Sweep (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -28637,7 +28637,7 @@ DefineTemplate({
   Name="Tail Sweep (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -28662,7 +28662,7 @@ DefineTemplate({
   Name="Tail Sweep (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -28687,7 +28687,7 @@ DefineTemplate({
   Name="Tail Sweep (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -28712,7 +28712,7 @@ DefineTemplate({
   Name="Tail Sweep (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -28737,7 +28737,7 @@ DefineTemplate({
   Name="Tail Sweep (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -28762,7 +28762,7 @@ DefineTemplate({
   Name="Tail Sweep (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -28787,7 +28787,7 @@ DefineTemplate({
   Name="Tail Sweep (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -28812,7 +28812,7 @@ DefineTemplate({
   Name="Crush (Diminutive)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "D"
     end,
   },
@@ -28837,7 +28837,7 @@ DefineTemplate({
   Name="Crush (Tiny)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "T"
     end,
   },
@@ -28862,7 +28862,7 @@ DefineTemplate({
   Name="Crush (Small)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "S"
     end,
   },
@@ -28887,7 +28887,7 @@ DefineTemplate({
   Name="Crush (Medium)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "M"
     end,
   },
@@ -28912,7 +28912,7 @@ DefineTemplate({
   Name="Crush (Large)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "L"
     end,
   },
@@ -28937,7 +28937,7 @@ DefineTemplate({
   Name="Crush (Huge)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "H"
     end,
   },
@@ -28962,7 +28962,7 @@ DefineTemplate({
   Name="Crush (Gargantuan)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "G"
     end,
   },
@@ -28987,7 +28987,7 @@ DefineTemplate({
   Name="Crush (Colossal)",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size == "C"
     end,
   },
@@ -32073,7 +32073,7 @@ DefineTemplate({
       Category="STAT",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Stats["INT"] >= 3)
         end,
       },
@@ -32102,7 +32102,7 @@ DefineTemplate({
   DamageReduction={
     Value="5/Evil",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["CompanionHD"] >= 5) or character.Level >= 5
       end,
     },
@@ -32124,7 +32124,7 @@ DefineTemplate({
       Category="DR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CompanionHD"] >= 11) or character.Level >= 11
         end,
       },
@@ -32136,7 +32136,7 @@ DefineTemplate({
       Category="MISC",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CompanionHD"] >= 5) or character.Level >= 5
         end,
       },
@@ -32167,7 +32167,7 @@ DefineTemplate({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CompanionHD"] >= 5) or character.Level >= 5
         end,
       },
@@ -32179,7 +32179,7 @@ DefineTemplate({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CompanionHD"] >= 11) or character.Level >= 11
         end,
       },
@@ -32207,7 +32207,7 @@ DefineTemplate({
   DamageReduction={
     Value="5/Good",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["CompanionHD"] >= 5) or character.Level >= 5
       end,
     },
@@ -32229,7 +32229,7 @@ DefineTemplate({
       Category="DR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CompanionHD"] >= 11) or character.Level >= 11
         end,
       },
@@ -32241,7 +32241,7 @@ DefineTemplate({
       Category="MISC",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CompanionHD"] >= 5) or character.Level >= 5
         end,
       },
@@ -32271,7 +32271,7 @@ DefineTemplate({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CompanionHD"] >= 5) or character.Level >= 5
         end,
       },
@@ -32283,7 +32283,7 @@ DefineTemplate({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CompanionHD"] >= 11) or character.Level >= 11
         end,
       },
@@ -32321,7 +32321,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size < "C"
     end,
   },
@@ -32439,7 +32439,7 @@ DefineTemplate({
       Category="ABILITYPOOL",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountSpellCastingClasses(1, "Monster"))) >= 1 and ((character.CountSpellCastingClasses(1, "PC"))) >= 1
         end,
       },
@@ -32451,7 +32451,7 @@ DefineTemplate({
       Category="ABILITYPOOL",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountSpellCastingClasses(1, "Monster"))) >= 1 and ((character.CountSpellCastingClasses(1, "PC"))) >= 1
         end,
       },
@@ -32463,7 +32463,7 @@ DefineTemplate({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountSpellCastingClasses(1, "Monster"))) >= 1 and ((character.CountSpellCastingClasses(1, "PC"))) >= 1
         end,
       },
@@ -32522,7 +32522,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Horse)") or (character.Race.Name == "Horse")
     end,
   },
@@ -32557,7 +32557,7 @@ DefineTemplate({
   DamageReduction={
     Value="5/Lawful",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return character.Level >= 5
       end,
     },
@@ -32581,7 +32581,7 @@ DefineTemplate({
       Category="DR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Level >= 11
         end,
       },
@@ -32593,7 +32593,7 @@ DefineTemplate({
       Category="MISC",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Level >= 5
         end,
       },
@@ -32623,7 +32623,7 @@ DefineTemplate({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Level >= 5
         end,
       },
@@ -32635,7 +32635,7 @@ DefineTemplate({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Level >= 11
         end,
       },
@@ -32663,7 +32663,7 @@ DefineTemplate({
   DamageReduction={
     Value="5/Chaotic",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return character.Level >= 5
       end,
     },
@@ -32688,7 +32688,7 @@ DefineTemplate({
       Category="DR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Level >= 11
         end,
       },
@@ -32700,7 +32700,7 @@ DefineTemplate({
       Category="MISC",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Level >= 5
         end,
       },
@@ -32731,7 +32731,7 @@ DefineTemplate({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Level >= 5
         end,
       },
@@ -32743,7 +32743,7 @@ DefineTemplate({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Level >= 11
         end,
       },
@@ -33351,10 +33351,10 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (any(character.Race.RaceTypes, function (type) stringMatch(type, "Animal") end)) or (any(character.Race.Types, function (type) stringMatch(type, "Animal") end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((character.Stats["INT"] >= 3))
     end,
   },
@@ -33395,7 +33395,7 @@ DefineTemplate({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (any(character.Race.RaceTypes, function (type) stringMatch(type, "Vermin") end)) or (any(character.Race.Types, function (type) stringMatch(type, "Vermin") end))
     end,
   },

@@ -909,7 +909,7 @@ DefineRace({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["NotAllowed"] >= 1)
     end,
   },

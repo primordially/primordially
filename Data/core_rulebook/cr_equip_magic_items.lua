@@ -28,10 +28,10 @@ DefineEquipment({
       Category="ITEMCOST",
       Formula=Formula("4000"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.HasModifierType("Amulet of Mighty Fists"))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Amulet of Mighty Fists"))
         end,
       },
@@ -43,10 +43,10 @@ DefineEquipment({
       Category="ITEMCOST",
       Formula=Formula("12000"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.HasModifierType("Amulet of Mighty Fists"))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Amulet of Mighty Fists"))
         end,
       },
@@ -58,10 +58,10 @@ DefineEquipment({
       Category="ITEMCOST",
       Formula=Formula("20000"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.HasModifierType("Amulet of Mighty Fists"))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Amulet of Mighty Fists"))
         end,
       },
@@ -73,10 +73,10 @@ DefineEquipment({
       Category="ITEMCOST",
       Formula=Formula("28000"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.HasModifierType("Amulet of Mighty Fists"))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Amulet of Mighty Fists"))
         end,
       },
@@ -88,10 +88,10 @@ DefineEquipment({
       Category="ITEMCOST",
       Formula=Formula("36000"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.HasModifierType("Amulet of Mighty Fists"))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Amulet of Mighty Fists"))
         end,
       },
@@ -814,7 +814,7 @@ DefineEquipment({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Race.Name == "Dwarf%"))
         end,
       },
@@ -2002,7 +2002,7 @@ DefineEquipment({
         Name="Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.IsProficientWithWeapon("Longbow")))
         end,
       },
@@ -2017,7 +2017,7 @@ DefineEquipment({
         Name="Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.IsProficientWithWeapon("Shortbow")))
         end,
       },
@@ -2032,7 +2032,7 @@ DefineEquipment({
         Name="Competence",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.IsProficientWithWeapon("Longbow"))
         end,
       },
@@ -2047,7 +2047,7 @@ DefineEquipment({
         Name="Competence",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.IsProficientWithWeapon("Longbow"))
         end,
       },
@@ -2062,7 +2062,7 @@ DefineEquipment({
         Name="Competence",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.IsProficientWithWeapon("Shortbow"))
         end,
       },
@@ -2077,7 +2077,7 @@ DefineEquipment({
         Name="Competence",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.IsProficientWithWeapon("Shortbow"))
         end,
       },
@@ -2121,7 +2121,7 @@ DefineEquipment({
         Name="Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.IsProficientWithWeapon("Longbow")))
         end,
       },
@@ -2136,7 +2136,7 @@ DefineEquipment({
         Name="Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.IsProficientWithWeapon("Shortbow")))
         end,
       },
@@ -2151,7 +2151,7 @@ DefineEquipment({
         Name="Competence",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.IsProficientWithWeapon("Longbow"))
         end,
       },
@@ -2166,7 +2166,7 @@ DefineEquipment({
         Name="Competence",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.IsProficientWithWeapon("Shortbow"))
         end,
       },
@@ -6607,7 +6607,7 @@ DefineEquipment({
       TimeUnit="Day",
       CasterLevel="6",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE")
         end,
       },
@@ -6619,7 +6619,7 @@ DefineEquipment({
       TimeUnit="Day",
       CasterLevel="6",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG")
         end,
       },
@@ -6684,7 +6684,7 @@ DefineEquipment({
     {
       Format="Once per week can summon 2d4+1 3rd level human barbarians to fight for the character who summoned them.",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountSpellCastingClasses(1))) >= 1 or (character.Variables["CasterLevel_Highest"] >= 1)
         end,
       },
@@ -6692,7 +6692,7 @@ DefineEquipment({
     {
       Format="Once per week can summon 2d4+1 3rd level human barbarians that attack the character who summoned them.",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountSpellCastingClasses(1))) >= 1 or (character.Variables["CasterLevel_Highest"] >= 1)
         end,
       },
@@ -6727,7 +6727,7 @@ DefineEquipment({
     {
       Format="Once per week can summon 2d4 4th level human barbarians to fight for the character who summoned them.",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "All Martial Weapon Proficiencies" then return true end
@@ -6739,7 +6739,7 @@ DefineEquipment({
     {
       Format="Once per week can summon 2d4 4th level human barbarians that attack the character who summoned them.",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "All Martial Weapon Proficiencies" then return true end
@@ -6778,7 +6778,7 @@ DefineEquipment({
     {
       Format="Once per week can summon 1d4+1 5th level human barbarians to fight for the character who summoned them.",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "All Martial Weapon Proficiencies" then return true end
@@ -6790,7 +6790,7 @@ DefineEquipment({
     {
       Format="Once per week can summon 1d4+1 5th level human barbarians that attack the character who summoned them.",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "All Martial Weapon Proficiencies" then return true end
@@ -8992,7 +8992,7 @@ DefineEquipment({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Cleric ~ Channel Negative Energy" then return true end
@@ -9035,7 +9035,7 @@ DefineEquipment({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Cleric ~ Channel Positive Energy" then return true end
@@ -9051,7 +9051,7 @@ DefineEquipment({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Channel Positive Energy ~ Paladin" then return true end
@@ -9267,7 +9267,7 @@ DefineEquipment({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG"))
         end,
       },
@@ -9279,7 +9279,7 @@ DefineEquipment({
         "Spell Resistance ~ 18",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountArcaneSpellCastingClasses(1))) >= 1 or (character.Variables["Caster_Level_Highest__Arcane"] >= 1)
         end,
       },
@@ -9293,7 +9293,7 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountArcaneSpellCastingClasses(1))) >= 1 or (character.Variables["Caster_Level_Highest__Arcane"] >= 1)
         end,
       },
@@ -9308,7 +9308,7 @@ DefineEquipment({
         Name="Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountArcaneSpellCastingClasses(1))) >= 1 or (character.Variables["Caster_Level_Highest__Arcane"] >= 1)
         end,
       },
@@ -9320,7 +9320,7 @@ DefineEquipment({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG"))
         end,
       },
@@ -9332,7 +9332,7 @@ DefineEquipment({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE")
         end,
       },
@@ -9345,7 +9345,7 @@ DefineEquipment({
     {
       Format="+2 enhancement bonus to overcome spell resistance.",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountArcaneSpellCastingClasses(1))) >= 1 or (character.Variables["Caster_Level_Highest__Arcane"] >= 1)
         end,
       },
@@ -9384,7 +9384,7 @@ DefineEquipment({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("LN") or character.IsAlignment("TN") or character.IsAlignment("CN"))
         end,
       },
@@ -9396,7 +9396,7 @@ DefineEquipment({
         "Spell Resistance ~ 18",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountArcaneSpellCastingClasses(1))) >= 1 or (character.Variables["Caster_Level_Highest__Arcane"] >= 1)
         end,
       },
@@ -9410,7 +9410,7 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountArcaneSpellCastingClasses(1))) >= 1 or (character.Variables["Caster_Level_Highest__Arcane"] >= 1)
         end,
       },
@@ -9425,7 +9425,7 @@ DefineEquipment({
         Name="Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountArcaneSpellCastingClasses(1))) >= 1 or (character.Variables["Caster_Level_Highest__Arcane"] >= 1)
         end,
       },
@@ -9437,7 +9437,7 @@ DefineEquipment({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("LN") or character.IsAlignment("TN") or character.IsAlignment("CN"))
         end,
       },
@@ -9450,7 +9450,7 @@ DefineEquipment({
     {
       Format="+2 enhancement bonus to overcome spell resistance.",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountArcaneSpellCastingClasses(1))) >= 1 or (character.Variables["Caster_Level_Highest__Arcane"] >= 1)
         end,
       },
@@ -9489,7 +9489,7 @@ DefineEquipment({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE"))
         end,
       },
@@ -9501,7 +9501,7 @@ DefineEquipment({
         "Spell Resistance ~ 18",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountArcaneSpellCastingClasses(1))) >= 1 or (character.Variables["Caster_Level_Highest__Arcane"] >= 1)
         end,
       },
@@ -9515,7 +9515,7 @@ DefineEquipment({
         Name="Armor",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountArcaneSpellCastingClasses(1))) >= 1 or (character.Variables["Caster_Level_Highest__Arcane"] >= 1)
         end,
       },
@@ -9530,7 +9530,7 @@ DefineEquipment({
         Name="Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountArcaneSpellCastingClasses(1))) >= 1 or (character.Variables["Caster_Level_Highest__Arcane"] >= 1)
         end,
       },
@@ -9542,7 +9542,7 @@ DefineEquipment({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE"))
         end,
       },
@@ -9554,7 +9554,7 @@ DefineEquipment({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG")
         end,
       },
@@ -9567,7 +9567,7 @@ DefineEquipment({
     {
       Format="+2 enhancement bonus to overcome spell resistance.",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountArcaneSpellCastingClasses(1))) >= 1 or (character.Variables["Caster_Level_Highest__Arcane"] >= 1)
         end,
       },
@@ -9700,7 +9700,7 @@ DefineEquipment({
         "Monk ~ AC Bonus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (((character.GetLevelOfClass("Monk") >= 1)) >= 1)
         end,
       },
@@ -9712,7 +9712,7 @@ DefineEquipment({
         "Monk ~ Unarmed Damage",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (((character.GetLevelOfClass("Monk") >= 1)) >= 1)
         end,
       },
@@ -9737,7 +9737,7 @@ DefineEquipment({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Stunning Fist" then return true end
@@ -55856,7 +55856,7 @@ DefineEquipment({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountSpellCastingClasses(1))) >= 1 or (character.Variables["CasterLevel_Highest"] >= 1)
         end,
       },

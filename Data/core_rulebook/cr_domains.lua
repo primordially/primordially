@@ -20,7 +20,7 @@ DefineDomain({
         "Core Domain ~ Air Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("AirDomainReplacement") then return true end
@@ -31,7 +31,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainAir"] == 1)
     end,
   },
@@ -112,7 +112,7 @@ DefineDomain({
         "Core Domain ~ Animal Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("AnimalDomainReplacement") then return true end
@@ -126,7 +126,7 @@ DefineDomain({
     "Knowledge (Nature)",
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainAnimal"] == 1)
     end,
   },
@@ -207,7 +207,7 @@ DefineDomain({
         "Core Domain ~ Artifice Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("ArtificeDomainReplacement") then return true end
@@ -218,7 +218,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainArtifice"] == 1)
     end,
   },
@@ -299,7 +299,7 @@ DefineDomain({
         "Core Domain ~ Chaos Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("ChaosDomainReplacement") then return true end
@@ -310,10 +310,10 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.IsAlignment("CG") or character.IsAlignment("CN") or character.IsAlignment("CE")
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainChaos"] == 1)
     end,
   },
@@ -394,7 +394,7 @@ DefineDomain({
         "Core Domain ~ Charm Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("CharmDomainReplacement") then return true end
@@ -405,7 +405,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainCharm"] == 1)
     end,
   },
@@ -486,7 +486,7 @@ DefineDomain({
         "Core Domain ~ Community Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("CommunityDomainReplacement") then return true end
@@ -497,7 +497,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainCommunity"] == 1)
     end,
   },
@@ -578,7 +578,7 @@ DefineDomain({
         "Core Domain ~ Darkness Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DarknessDomainReplacement") then return true end
@@ -596,7 +596,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainDarkness"] == 1)
     end,
   },
@@ -677,7 +677,7 @@ DefineDomain({
         "Core Domain ~ Death Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DeathDomainReplacement") then return true end
@@ -688,7 +688,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainDeath"] == 1)
     end,
   },
@@ -820,7 +820,7 @@ DefineDomain({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Diety.Name == "Pharasma")
         end,
       },
@@ -841,7 +841,7 @@ DefineDomain({
         "Core Domain ~ Destruction Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DestructionDomainReplacement") then return true end
@@ -852,7 +852,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainDestruction"] == 1)
     end,
   },
@@ -933,7 +933,7 @@ DefineDomain({
         "Core Domain ~ Earth Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("EarthDomainReplacement") then return true end
@@ -944,7 +944,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainEarth"] == 1)
     end,
   },
@@ -1025,7 +1025,7 @@ DefineDomain({
         "Core Domain ~ Evil Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("EvilDomainReplacement") then return true end
@@ -1036,10 +1036,10 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE")
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainEvil"] == 1)
     end,
   },
@@ -1120,7 +1120,7 @@ DefineDomain({
         "Core Domain ~ Fire Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("FireDomainReplacement") then return true end
@@ -1131,7 +1131,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainFire"] == 1)
     end,
   },
@@ -1212,7 +1212,7 @@ DefineDomain({
         "Core Domain ~ Glory Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("GloryDomainReplacement") then return true end
@@ -1235,7 +1235,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainGlory"] == 1)
     end,
   },
@@ -1316,7 +1316,7 @@ DefineDomain({
         "Core Domain ~ Good Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("GoodDomainReplacement") then return true end
@@ -1327,10 +1327,10 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG")
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainGood"] == 1)
     end,
   },
@@ -1411,7 +1411,7 @@ DefineDomain({
         "Core Domain ~ Healing Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HealingDomainReplacement") then return true end
@@ -1422,7 +1422,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainHealing"] == 1)
     end,
   },
@@ -1503,7 +1503,7 @@ DefineDomain({
         "Core Domain ~ Knowledge Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("KnowledgeDomainReplacement") then return true end
@@ -1517,7 +1517,7 @@ DefineDomain({
     "TYPE=Knowledge",
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainKnowledge"] == 1)
     end,
   },
@@ -1598,7 +1598,7 @@ DefineDomain({
         "Core Domain ~ Law Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("LawDomainReplacement") then return true end
@@ -1609,10 +1609,10 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.IsAlignment("LG") or character.IsAlignment("LN") or character.IsAlignment("LE")
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainLaw"] == 1)
     end,
   },
@@ -1693,7 +1693,7 @@ DefineDomain({
         "Core Domain ~ Liberation Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("LiberationDomainReplacement") then return true end
@@ -1704,7 +1704,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainLiberation"] == 1)
     end,
   },
@@ -1785,7 +1785,7 @@ DefineDomain({
         "Core Domain ~ Luck Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("LuckDomainReplacement") then return true end
@@ -1796,7 +1796,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainLuck"] == 1)
     end,
   },
@@ -1877,7 +1877,7 @@ DefineDomain({
         "Core Domain ~ Madness Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("MadnessDomainReplacement") then return true end
@@ -1888,7 +1888,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainMadness"] == 1)
     end,
   },
@@ -1969,7 +1969,7 @@ DefineDomain({
         "Core Domain ~ Magic Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("MagicDomainReplacement") then return true end
@@ -1980,7 +1980,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainMagic"] == 1)
     end,
   },
@@ -2061,7 +2061,7 @@ DefineDomain({
         "Core Domain ~ Nobility Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("NobilityDomainReplacement") then return true end
@@ -2072,7 +2072,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainNobility"] == 1)
     end,
   },
@@ -2153,7 +2153,7 @@ DefineDomain({
         "Core Domain ~ Plant Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("PlantDomainReplacement") then return true end
@@ -2164,7 +2164,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainPlant"] == 1)
     end,
   },
@@ -2245,7 +2245,7 @@ DefineDomain({
         "Core Domain ~ Protection Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("ProtectionDomainReplacement") then return true end
@@ -2268,7 +2268,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainProtection"] == 1)
     end,
   },
@@ -2349,7 +2349,7 @@ DefineDomain({
         "Core Domain ~ Repose Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("ReposeDomainReplacement") then return true end
@@ -2360,7 +2360,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainRepose"] == 1)
     end,
   },
@@ -2441,7 +2441,7 @@ DefineDomain({
         "Core Domain ~ Rune Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("RuneDomainReplacement") then return true end
@@ -2459,7 +2459,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainRune"] == 1)
     end,
   },
@@ -2540,7 +2540,7 @@ DefineDomain({
         "Core Domain ~ Strength Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("StrengthDomainReplacement") then return true end
@@ -2551,7 +2551,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainStrength"] == 1)
     end,
   },
@@ -2632,7 +2632,7 @@ DefineDomain({
         "Core Domain ~ Sun Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("SunDomainReplacement") then return true end
@@ -2643,7 +2643,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainSun"] == 1)
     end,
   },
@@ -2724,7 +2724,7 @@ DefineDomain({
         "Core Domain ~ Travel Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("TravelDomainReplacement") then return true end
@@ -2744,7 +2744,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainTravel"] == 1)
     end,
   },
@@ -2825,7 +2825,7 @@ DefineDomain({
         "Core Domain ~ Trickery Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("TrickeryDomainReplacement") then return true end
@@ -2841,7 +2841,7 @@ DefineDomain({
     "Stealth",
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainTrickery"] == 1)
     end,
   },
@@ -2922,7 +2922,7 @@ DefineDomain({
         "Core Domain ~ War Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("WarDomainReplacement") then return true end
@@ -2933,7 +2933,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainWar"] == 1)
     end,
   },
@@ -3014,7 +3014,7 @@ DefineDomain({
         "Core Domain ~ Water Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("WaterDomainReplacement") then return true end
@@ -3025,7 +3025,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainWater"] == 1)
     end,
   },
@@ -3106,7 +3106,7 @@ DefineDomain({
         "Core Domain ~ Weather Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("WeatherDomainReplacement") then return true end
@@ -3117,7 +3117,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainWeather"] == 1)
     end,
   },
@@ -3198,7 +3198,7 @@ DefineDomain({
         "Core Domain ~ Death Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DeathDomainReplacement") then return true end
@@ -3209,7 +3209,7 @@ DefineDomain({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DomainNotAllowed"] < 1) or (character.Variables["AllowDomainDeath"] == 1)
     end,
   },
@@ -3274,7 +3274,7 @@ DefineDomain({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Diety.Name == "Pharasma")
         end,
       },
@@ -3284,7 +3284,7 @@ DefineDomain({
 ModifyDomain({
   Name="Air",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Air")) or (character.Variables["AirDomain"] < 1)
     end,
   },
@@ -3292,7 +3292,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Animal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Animal")) or (character.Variables["AnimalDomain"] < 1)
     end,
   },
@@ -3300,7 +3300,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Artifice",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Artifice")) or (character.Variables["ArtificeDomain"] < 1)
     end,
   },
@@ -3308,7 +3308,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Chaos",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Chaos")) or (character.Variables["ChaosDomain"] < 1)
     end,
   },
@@ -3316,7 +3316,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Charm",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Charm")) or (character.Variables["CharmDomain"] < 1)
     end,
   },
@@ -3324,7 +3324,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Community",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Community")) or (character.Variables["CommunityDomain"] < 1)
     end,
   },
@@ -3332,7 +3332,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Darkness",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Darkness")) or (character.Variables["DarknessDomain"] < 1)
     end,
   },
@@ -3340,7 +3340,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Death",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Death")) or (character.Variables["DeathDomain"] < 1)
     end,
   },
@@ -3348,7 +3348,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Destruction",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Destruction")) or (character.Variables["DestructionDomain"] < 1)
     end,
   },
@@ -3356,7 +3356,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Earth",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Earth")) or (character.Variables["EarthDomain"] < 1)
     end,
   },
@@ -3364,7 +3364,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Evil",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Evil")) or (character.Variables["EvilDomain"] < 1)
     end,
   },
@@ -3372,7 +3372,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Fire",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Fire")) or (character.Variables["FireDomain"] < 1)
     end,
   },
@@ -3380,7 +3380,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Glory",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Glory")) or (character.Variables["GloryDomain"] < 1)
     end,
   },
@@ -3388,7 +3388,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Good",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Good")) or (character.Variables["GoodDomain"] < 1)
     end,
   },
@@ -3396,7 +3396,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Healing",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Healing")) or (character.Variables["HealingDomain"] < 1)
     end,
   },
@@ -3404,7 +3404,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Knowledge",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Knowledge")) or (character.Variables["KnowledgeDomain"] < 1)
     end,
   },
@@ -3412,7 +3412,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Law",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Law")) or (character.Variables["LawDomain"] < 1)
     end,
   },
@@ -3420,7 +3420,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Liberation",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Liberation")) or (character.Variables["LiberationDomain"] < 1)
     end,
   },
@@ -3428,7 +3428,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Luck",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Luck")) or (character.Variables["LuckDomain"] < 1)
     end,
   },
@@ -3436,7 +3436,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Madness",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Madness")) or (character.Variables["MadnessDomain"] < 1)
     end,
   },
@@ -3444,7 +3444,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Magic",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Magic")) or (character.Variables["MagicDomain"] < 1)
     end,
   },
@@ -3452,7 +3452,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Nobility",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Nobility")) or (character.Variables["NobilityDomain"] < 1)
     end,
   },
@@ -3460,7 +3460,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Plant",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Plant")) or (character.Variables["PlantDomain"] < 1)
     end,
   },
@@ -3468,7 +3468,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Protection",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Protection")) or (character.Variables["ProtectionDomain"] < 1)
     end,
   },
@@ -3476,7 +3476,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Repose",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Repose")) or (character.Variables["ReposeDomain"] < 1)
     end,
   },
@@ -3484,7 +3484,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Rune",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Rune")) or (character.Variables["RuneDomain"] < 1)
     end,
   },
@@ -3492,7 +3492,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Strength",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Strength")) or (character.Variables["StrengthDomain"] < 1)
     end,
   },
@@ -3500,7 +3500,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Sun",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Sun")) or (character.Variables["SunDomain"] < 1)
     end,
   },
@@ -3508,7 +3508,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Travel",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Travel")) or (character.Variables["TravelDomain"] < 1)
     end,
   },
@@ -3516,7 +3516,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Trickery",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Trickery")) or (character.Variables["TrickeryDomain"] < 1)
     end,
   },
@@ -3524,7 +3524,7 @@ ModifyDomain({
 ModifyDomain({
   Name="War",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("War")) or (character.Variables["WarDomain"] < 1)
     end,
   },
@@ -3532,7 +3532,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Water",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Water")) or (character.Variables["WaterDomain"] < 1)
     end,
   },
@@ -3540,7 +3540,7 @@ ModifyDomain({
 ModifyDomain({
   Name="Weather",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasDomain("Weather")) or (character.Variables["WeatherDomain"] < 1)
     end,
   },

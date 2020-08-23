@@ -14,7 +14,7 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.PcLevel >= 1
         end,
       },
@@ -32,7 +32,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE") or character.Diety.Alignment == "LE" or character.Diety.Alignment == "NE" or character.Diety.Alignment == "CE" and (character.Variables["BypassProhibitSpellAlignment_Restriction"] == 0)
         end,
       },
@@ -50,7 +50,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG") or character.Diety.Alignment == "LG" or character.Diety.Alignment == "NG" or character.Diety.Alignment == "CG" and (character.Variables["BypassProhibitSpellAlignment_Restriction"] == 0)
         end,
       },
@@ -68,7 +68,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("CG") or character.IsAlignment("CN") or character.IsAlignment("CE") or character.Diety.Alignment == "CG" or character.Diety.Alignment == "CN" or character.Diety.Alignment == "CE" and (character.Variables["BypassProhibitSpellAlignment_Restriction"] == 0)
         end,
       },
@@ -86,7 +86,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LG") or character.IsAlignment("LN") or character.IsAlignment("LE") or character.Diety.Alignment == "LG" or character.Diety.Alignment == "LN" or character.Diety.Alignment == "LE" and (character.Variables["BypassProhibitSpellAlignment_Restriction"] == 0)
         end,
       },
@@ -213,7 +213,7 @@ ModifyAbility({
         Name="Bypass",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkAlignment") then return true end
@@ -294,7 +294,7 @@ ModifyAbility({
         "Damage Reduction ~ All",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClassFeatureDR_ALL"] >= 1)
         end,
       },
@@ -312,7 +312,7 @@ ModifyAbility({
         "Damage Reduction ~ Silver",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ClassFeatureDR_Silver"] >= 1)
         end,
       },
@@ -707,7 +707,7 @@ DefineAbility({
         "Barbarian ~ Standard Class",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "CLASS" then return false end
             if ability.IsAnyType("AltBarbarianChoice") then return true end
@@ -748,7 +748,7 @@ DefineAbility({
         "Class Skills ~ Bard",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_ClassSkills"] == 0)
         end,
       },
@@ -785,7 +785,7 @@ DefineAbility({
         "Class Skills ~ Cleric",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Cleric_CF_ClassSkills"] == 0)
         end,
       },
@@ -822,7 +822,7 @@ DefineAbility({
         "Class Skills ~ Druid",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CF_ClassSkills"] == 0)
         end,
       },
@@ -859,7 +859,7 @@ DefineAbility({
         "Class Skills ~ Fighter",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_ClassSkills"] == 0)
         end,
       },
@@ -889,7 +889,7 @@ DefineAbility({
         "Monk ~ Standard Class",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "CLASS" then return false end
             if ability.IsAnyType("AltMonkChoice") then return true end
@@ -937,7 +937,7 @@ DefineAbility({
         "Class Skills ~ Paladin",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_ClassSkills"] == 0)
         end,
       },
@@ -974,7 +974,7 @@ DefineAbility({
         "Class Skills ~ Ranger",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_ClassSkills"] == 0)
         end,
       },
@@ -1011,7 +1011,7 @@ DefineAbility({
         "Class Skills ~ Rogue",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_ClassSkills"] == 0)
         end,
       },
@@ -1023,7 +1023,7 @@ DefineAbility({
         "Rogue ~ Standard Class",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "CLASS" then return false end
             if ability.IsAnyType("AltRogueChoice") then return true end
@@ -1064,7 +1064,7 @@ DefineAbility({
         "Sorcerer ~ Class Skills",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_ClassSkills"] == 0)
         end,
       },
@@ -1384,7 +1384,7 @@ DefineAbility({
         "Class Skills ~ Barbarian",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_ClassSkills"] == 0)
         end,
       },
@@ -1396,7 +1396,7 @@ DefineAbility({
         "Barbarian ~ Standard Class Full",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (((character.GetLevelOfClass("Ex-Barbarian") >= 1)) >= 1) or (character.Variables["Class_BarbarianExClass"] == 0)
         end,
       },
@@ -1408,7 +1408,7 @@ DefineAbility({
         "Barbarian ~ Standard Ex-Class",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.GetLevelOfClass("Ex-Barbarian") >= 1)) >= 1 or (character.Variables["Class_BarbarianExClass"] == 1)
         end,
       },
@@ -1437,7 +1437,7 @@ DefineAbility({
         "Class Skills ~ Monk",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_ClassSkills"] == 0)
         end,
       },
@@ -1452,7 +1452,7 @@ DefineAbility({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateBABProgression"] == 0)
         end,
       },
@@ -1464,7 +1464,7 @@ DefineAbility({
       Category="SAVE",
       Formula=Formula("classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")/2+2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAlternateSaveProgression"] == 0)
         end,
       },
@@ -1478,7 +1478,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalBAB"] == 1)
         end,
       },
@@ -1490,7 +1490,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1502,7 +1502,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1514,7 +1514,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("classlevel(\"Monk\",\"APPLIEDAS=NONEPIC\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseFractionalSave"] == 1)
         end,
       },
@@ -1557,7 +1557,7 @@ ModifyAbility({
         "Barbarian ~ Weapon and Armor Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_Proficiencies"] == 0)
         end,
       },
@@ -1576,7 +1576,7 @@ ModifyAbility({
         "Weapon Prof ~ Simple",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_Weapon_Proficiencies"] == 0)
         end,
       },
@@ -1597,7 +1597,7 @@ ModifyAbility({
         "ArmorProfMedium",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_Armor_Proficiencies"] == 0)
         end,
       },
@@ -1628,10 +1628,10 @@ ModifyAbility({
         "Barbarian ~ Rage",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_Rage"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CFP_Level"] >= 1)
         end,
       },
@@ -1649,10 +1649,10 @@ ModifyAbility({
         "Barbarian ~ Fast Movement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_FastMovement"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CFP_Level"] >= 1)
         end,
       },
@@ -1670,10 +1670,10 @@ ModifyAbility({
         "Barbarian ~ Rage Powers",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_RagePowers"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CFP_Level"] >= 2)
         end,
       },
@@ -1691,10 +1691,10 @@ ModifyAbility({
         "Barbarian ~ Trap Sense",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_TrapSense"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CFP_Level"] >= 3)
         end,
       },
@@ -1712,10 +1712,10 @@ ModifyAbility({
         "Barbarian ~ Damage Reduction",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_DamageReduction"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CFP_Level"] >= 7)
         end,
       },
@@ -1733,10 +1733,10 @@ ModifyAbility({
         "Barbarian ~ Greater Rage",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_GreaterRage"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CFP_Level"] >= 11)
         end,
       },
@@ -1754,10 +1754,10 @@ ModifyAbility({
         "Barbarian ~ Indomitable Will",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_IndomitableWill"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CFP_Level"] >= 14)
         end,
       },
@@ -1775,10 +1775,10 @@ ModifyAbility({
         "Barbarian ~ Tireless Rage",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_TirelessRage"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CFP_Level"] >= 17)
         end,
       },
@@ -1796,10 +1796,10 @@ ModifyAbility({
         "Barbarian ~ Mighty Rage",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_MightyRage"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CFP_Level"] >= 20)
         end,
       },
@@ -1817,7 +1817,7 @@ ModifyAbility({
         "Barbarian ~ Weapon and Armor Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_Proficiencies"] == 0)
         end,
       },
@@ -1836,7 +1836,7 @@ ModifyAbility({
         "Weapon Prof ~ Simple",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_Weapon_Proficiencies"] == 0)
         end,
       },
@@ -1857,7 +1857,7 @@ ModifyAbility({
         "ArmorProfMedium",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_Armor_Proficiencies"] == 0)
         end,
       },
@@ -1875,10 +1875,10 @@ ModifyAbility({
         "Barbarian ~ Fast Movement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_FastMovement"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CFP_Level"] >= 1)
         end,
       },
@@ -1896,10 +1896,10 @@ ModifyAbility({
         "Barbarian ~ Trap Sense",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_TrapSense"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CFP_Level"] >= 3)
         end,
       },
@@ -1917,10 +1917,10 @@ ModifyAbility({
         "Barbarian ~ Damage Reduction",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_DamageReduction"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CFP_Level"] >= 7)
         end,
       },
@@ -1938,10 +1938,10 @@ ModifyAbility({
         "Barbarian ~ Indomitable Will",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_IndomitableWill"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CFP_Level"] >= 14)
         end,
       },
@@ -1959,10 +1959,10 @@ ModifyAbility({
         "Monk ~ Unarmed Strike",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_UnarmedStrike"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 1)
         end,
       },
@@ -1980,10 +1980,10 @@ ModifyAbility({
         "Monk ~ Flurry of Blows",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_FlurryOfBlows"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 1)
         end,
       },
@@ -2001,7 +2001,7 @@ ModifyAbility({
         "Monk ~ Monk Bonus Feat",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 1)
         end,
       },
@@ -2019,10 +2019,10 @@ ModifyAbility({
         "Monk ~ AC Bonus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_ACBonus"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 1)
         end,
       },
@@ -2040,10 +2040,10 @@ ModifyAbility({
         "Monk ~ Stunning Fist",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_StunningFist"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 1)
         end,
       },
@@ -2061,10 +2061,10 @@ ModifyAbility({
         "Monk ~ Evasion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_Evasion"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 2)
         end,
       },
@@ -2082,10 +2082,10 @@ ModifyAbility({
         "Monk ~ Fast Movement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_FastMovement"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 3)
         end,
       },
@@ -2103,10 +2103,10 @@ ModifyAbility({
         "Monk ~ Maneuver Training",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_ManeuverTraining"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 3)
         end,
       },
@@ -2124,10 +2124,10 @@ ModifyAbility({
         "Monk ~ Still Mind",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_StillMind"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 3)
         end,
       },
@@ -2145,10 +2145,10 @@ ModifyAbility({
         "Monk ~ Ki Pool",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_KiPool"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 4)
         end,
       },
@@ -2166,10 +2166,10 @@ ModifyAbility({
         "Monk ~ Slow Fall",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_SlowFall"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 4)
         end,
       },
@@ -2187,10 +2187,10 @@ ModifyAbility({
         "Monk ~ High Jump",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_HighJump"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 5)
         end,
       },
@@ -2208,10 +2208,10 @@ ModifyAbility({
         "Monk ~ Purity of Body",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_PurityOfBody"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 5)
         end,
       },
@@ -2229,10 +2229,10 @@ ModifyAbility({
         "Monk ~ Wholeness of Body",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_WholenessOfBody"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 7)
         end,
       },
@@ -2250,10 +2250,10 @@ ModifyAbility({
         "Monk ~ Improved Evasion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_ImprovedEvasion"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 9)
         end,
       },
@@ -2271,10 +2271,10 @@ ModifyAbility({
         "Monk ~ Diamond Body",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_DiamondBody"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 11)
         end,
       },
@@ -2292,10 +2292,10 @@ ModifyAbility({
         "Monk ~ Abundant Step",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_AbundantStep"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 12)
         end,
       },
@@ -2313,10 +2313,10 @@ ModifyAbility({
         "Monk ~ Diamond Soul",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_DiamondSoul"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 13)
         end,
       },
@@ -2334,10 +2334,10 @@ ModifyAbility({
         "Monk ~ Quivering Palm",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_QuiveringPalm"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 15)
         end,
       },
@@ -2355,10 +2355,10 @@ ModifyAbility({
         "Monk ~ Tongue of the Sun and Moon",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_TongueOfTheSunAndMoon"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 17)
         end,
       },
@@ -2376,10 +2376,10 @@ ModifyAbility({
         "Monk ~ Timeless Body",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_TimelessBody"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 17)
         end,
       },
@@ -2397,10 +2397,10 @@ ModifyAbility({
         "Monk ~ Empty Body",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_EmptyBody"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 19)
         end,
       },
@@ -2418,10 +2418,10 @@ ModifyAbility({
         "Monk ~ Perfect Self",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_PerfectSelf"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CFP_Level"] >= 20)
         end,
       },
@@ -2439,10 +2439,10 @@ ModifyAbility({
         "Rogue ~ Sneak Attack",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_SneakAttack"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CFP_Level"] >= 1)
         end,
       },
@@ -2460,10 +2460,10 @@ ModifyAbility({
         "Rogue ~ Trapfinding",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_Trapfinding"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CFP_Level"] >= 1)
         end,
       },
@@ -2481,10 +2481,10 @@ ModifyAbility({
         "Rogue ~ Evasion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_Evasion"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CFP_Level"] >= 2)
         end,
       },
@@ -2502,10 +2502,10 @@ ModifyAbility({
         "Rogue ~ Rogue Talents",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_RogueTalents"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CFP_Level"] >= 2)
         end,
       },
@@ -2523,10 +2523,10 @@ ModifyAbility({
         "Rogue ~ Trap Sense",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_TrapSense"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CFP_Level"] >= 3)
         end,
       },
@@ -2544,10 +2544,10 @@ ModifyAbility({
         "Rogue ~ Uncanny Dodge Tracker",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_UncannyDodge"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CFP_Level"] >= 4)
         end,
       },
@@ -2565,10 +2565,10 @@ ModifyAbility({
         "Rogue ~ Master Strike",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_MasterStrike"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CFP_Level"] >= 20)
         end,
       },
@@ -2586,10 +2586,10 @@ ModifyAbility({
         "Bard ~ Bardic Knowledge",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_BardicKnowledge"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CFP_Level"] >= 1)
         end,
       },
@@ -2607,10 +2607,10 @@ ModifyAbility({
         "Bard ~ Bardic Countersong",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_CounterSong"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CFP_Level"] >= 1)
         end,
       },
@@ -2628,10 +2628,10 @@ ModifyAbility({
         "Bard ~ Bardic Performance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_BardicPerformance"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CFP_Level"] >= 1)
         end,
       },
@@ -2649,10 +2649,10 @@ ModifyAbility({
         "Bard ~ Armored Casting",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_ArmoredCasting"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CFP_Level"] >= 1)
         end,
       },
@@ -2670,10 +2670,10 @@ ModifyAbility({
         "Bard ~ Cantrips",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_Cantrips"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CFP_Level"] >= 1)
         end,
       },
@@ -2691,10 +2691,10 @@ ModifyAbility({
         "Bard ~ Versatile Performance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_VersatilePerformance"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CFP_Level"] >= 2)
         end,
       },
@@ -2712,10 +2712,10 @@ ModifyAbility({
         "Bard ~ Well-Versed",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_WellVersed"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CFP_Level"] >= 2)
         end,
       },
@@ -2733,10 +2733,10 @@ ModifyAbility({
         "Bard ~ Lore Master",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_LoreMaster"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CFP_Level"] >= 5)
         end,
       },
@@ -2754,10 +2754,10 @@ ModifyAbility({
         "Bard ~ Jack of All Trades",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_JackOfAllTrades"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CFP_Level"] >= 10)
         end,
       },
@@ -2775,7 +2775,7 @@ ModifyAbility({
         "Cleric ~ Weapon and Armor Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Cleric_CFP_Level"] >= 1)
         end,
       },
@@ -2793,7 +2793,7 @@ ModifyAbility({
         "Cleric ~ Aura",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Cleric_CFP_Level"] >= 1)
         end,
       },
@@ -2811,10 +2811,10 @@ ModifyAbility({
         "Cleric ~ Channel Energy",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Cleric_CF_ChannelEnergy"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Cleric_CFP_Level"] >= 1)
         end,
       },
@@ -2832,10 +2832,10 @@ ModifyAbility({
         "Cleric ~ Orisons",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Cleric_CF_Orisons"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Cleric_CFP_Level"] >= 1)
         end,
       },
@@ -2853,10 +2853,10 @@ ModifyAbility({
         "Cleric ~ Spontaneous Casting",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Cleric_CF_SpontaneousCasting"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Cleric_CFP_Level"] >= 1)
         end,
       },
@@ -2874,7 +2874,7 @@ ModifyAbility({
         "Cleric ~ Domains",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Cleric_CFP_Level"] >= 1)
         end,
       },
@@ -2892,7 +2892,7 @@ ModifyAbility({
         "Druid ~ Orisons",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CFP_Level"] >= 1)
         end,
       },
@@ -2910,10 +2910,10 @@ ModifyAbility({
         "Druid ~ Spontaneous Casting",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CF_SpontaneousCasting"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CFP_Level"] >= 1)
         end,
       },
@@ -2931,10 +2931,10 @@ ModifyAbility({
         "Druid ~ Nature Sense",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CF_NatureSense"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CFP_Level"] >= 1)
         end,
       },
@@ -2952,10 +2952,10 @@ ModifyAbility({
         "Druid ~ Wild Empathy",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CF_WildEmpathy"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CFP_Level"] >= 1)
         end,
       },
@@ -2973,10 +2973,10 @@ ModifyAbility({
         "Druid ~ Nature Bond",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CF_NatureBond"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CFP_Level"] >= 1)
         end,
       },
@@ -2994,10 +2994,10 @@ ModifyAbility({
         "Druid ~ Woodland Stride",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CF_WoodlandStride"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CFP_Level"] >= 2)
         end,
       },
@@ -3015,10 +3015,10 @@ ModifyAbility({
         "Druid ~ Trackless Step",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CF_TracklessStep"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CFP_Level"] >= 3)
         end,
       },
@@ -3036,10 +3036,10 @@ ModifyAbility({
         "Druid ~ Wild Shape",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CF_WildShape"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CFP_Level"] >= 4)
         end,
       },
@@ -3057,10 +3057,10 @@ ModifyAbility({
         "Druid ~ Resist Nature's Lure",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CF_ResistNaturesLure"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CFP_Level"] >= 4)
         end,
       },
@@ -3078,10 +3078,10 @@ ModifyAbility({
         "Druid ~ Venom Immunity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CF_VenomImmunity"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CFP_Level"] >= 9)
         end,
       },
@@ -3099,10 +3099,10 @@ ModifyAbility({
         "Druid ~ A Thousand Faces",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CF_AThousandFaces"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CFP_Level"] >= 13)
         end,
       },
@@ -3120,10 +3120,10 @@ ModifyAbility({
         "Druid ~ Timeless Body",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CF_TimelessBody"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CFP_Level"] >= 15)
         end,
       },
@@ -3141,14 +3141,14 @@ ModifyAbility({
         "Weapon and Armor Proficiency ~ Fighter",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterWeaponProficiencies", "FighterArmorProficiencies", "FighterHeavyArmorProficiency", "FighterMediumArmorProficiency", "FighterLightArmorProficiency", "FighterShieldProficiency", "FighterTowerShieldProficiency") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3167,14 +3167,14 @@ ModifyAbility({
         "Weapon Prof ~ Simple",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterWeaponProficiencies") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3192,14 +3192,14 @@ ModifyAbility({
         "Armor Prof ~ Heavy",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterArmorProficiencies", "FighterHeavyArmorProficiency") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3217,14 +3217,14 @@ ModifyAbility({
         "Armor Prof ~ Medium",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterArmorProficiencies", "FighterMediumArmorProficiency") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3242,14 +3242,14 @@ ModifyAbility({
         "Armor Prof ~ Light",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterArmorProficiencies", "FighterLightArmorProficiency") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3267,14 +3267,14 @@ ModifyAbility({
         "Shield Prof",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterArmorProficiencies", "FighterShieldProficiency") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3292,14 +3292,14 @@ ModifyAbility({
         "Shield Prof ~ Tower",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterArmorProficiencies", "FighterTowerShieldProficiency") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3317,7 +3317,7 @@ ModifyAbility({
         "Fighter Level Advanced Feat Tracker",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3335,7 +3335,7 @@ ModifyAbility({
         "Weapon Specialization Qualify",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3353,7 +3353,7 @@ ModifyAbility({
         "Disruptive Qualify",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3371,7 +3371,7 @@ ModifyAbility({
         "Greater Shield Focus Qualify",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3389,7 +3389,7 @@ ModifyAbility({
         "Greater Weapon Focus Qualify",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3407,7 +3407,7 @@ ModifyAbility({
         "Spellbreaker Qualify",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3425,7 +3425,7 @@ ModifyAbility({
         "Greater Weapon Specialization Qualify",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3443,7 +3443,7 @@ ModifyAbility({
         "Penetrating Strike Qualify",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3461,7 +3461,7 @@ ModifyAbility({
         "Critical Mastery Qualify",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3479,7 +3479,7 @@ ModifyAbility({
         "Greater Penetrating Strike Qualify",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3497,7 +3497,7 @@ ModifyAbility({
         Name="Class",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 2)
         end,
       },
@@ -3518,7 +3518,7 @@ ModifyAbility({
         Name="Class",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 3)
         end,
       },
@@ -3539,7 +3539,7 @@ ModifyAbility({
         Name="Class",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 5)
         end,
       },
@@ -3560,7 +3560,7 @@ ModifyAbility({
         Name="Class",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3581,10 +3581,10 @@ ModifyAbility({
         "Fighter ~ Bonus Feats",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_BonusFeats"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 1)
         end,
       },
@@ -3602,10 +3602,10 @@ ModifyAbility({
         "Fighter ~ Bravery",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_Bravery"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 2)
         end,
       },
@@ -3623,10 +3623,10 @@ ModifyAbility({
         "Fighter ~ Armor Training",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_ArmorTraining"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 3)
         end,
       },
@@ -3644,10 +3644,10 @@ ModifyAbility({
         "Fighter ~ Weapon Training",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_WeaponTraining"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 5)
         end,
       },
@@ -3665,10 +3665,10 @@ ModifyAbility({
         "Fighter ~ Armor Mastery",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_ArmorMastery"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 19)
         end,
       },
@@ -3683,13 +3683,13 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterWeaponMastery"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_WeaponMastery"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CFP_Level"] >= 20)
         end,
       },
@@ -3710,14 +3710,14 @@ ModifyAbility({
         "Weapon and Armor Proficiency ~ Paladin",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinWeaponProficiencies", "PaladinArmorProficiency", "PaladinArmorProficiencyHeavy", "PaladinArmorProficiencyLight", "PaladinArmorProficiencyMedium", "PaladinArmorProficiency", "PaladinShieldProf", "PaladinShieldProficiency") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 1)
         end,
       },
@@ -3736,14 +3736,14 @@ ModifyAbility({
         "Weapon Prof ~ Simple",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinWeaponProficiencies") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 1)
         end,
       },
@@ -3761,14 +3761,14 @@ ModifyAbility({
         "Armor Prof ~ Heavy",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinArmorProficiency", "PaladinArmorProficiencyHeavy") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 1)
         end,
       },
@@ -3786,14 +3786,14 @@ ModifyAbility({
         "Armor Prof ~ Light",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinArmorProficiency", "PaladinArmorProficiencyLight") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 1)
         end,
       },
@@ -3811,14 +3811,14 @@ ModifyAbility({
         "Armor Prof ~ Medium",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinArmorProficiency", "PaladinArmorProficiencyMedium") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 1)
         end,
       },
@@ -3836,14 +3836,14 @@ ModifyAbility({
         "Shield Prof",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinArmorProficiency", "PaladinShieldProf", "PaladinShieldProficiency") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 1)
         end,
       },
@@ -3861,10 +3861,10 @@ ModifyAbility({
         "Paladin ~ Aura of Good",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_AuraOfGood"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 1)
         end,
       },
@@ -3882,10 +3882,10 @@ ModifyAbility({
         "Paladin ~ Detect Evil",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_DetectEvil"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 1)
         end,
       },
@@ -3903,10 +3903,10 @@ ModifyAbility({
         "Paladin ~ Smite Evil",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_SmiteEvil"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 1)
         end,
       },
@@ -3924,10 +3924,10 @@ ModifyAbility({
         "Paladin ~ Divine Grace",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_DivineGrace"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 2)
         end,
       },
@@ -3945,10 +3945,10 @@ ModifyAbility({
         "Paladin ~ Lay on Hands",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_LayOnHands"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 2)
         end,
       },
@@ -3966,10 +3966,10 @@ ModifyAbility({
         "Paladin ~ Aura of Courage",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_AuraOfCourage"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 3)
         end,
       },
@@ -3987,10 +3987,10 @@ ModifyAbility({
         "Paladin ~ Divine Health",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_DivineHealth"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 3)
         end,
       },
@@ -4008,10 +4008,10 @@ ModifyAbility({
         "Paladin ~ Mercy",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_Mercy"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 3)
         end,
       },
@@ -4029,10 +4029,10 @@ ModifyAbility({
         "Paladin ~ Channel Positive Energy",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_ChannelPositiveEnergy"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 4)
         end,
       },
@@ -4050,10 +4050,10 @@ ModifyAbility({
         "Paladin ~ Divine Bond",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_DivineBond"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 5)
         end,
       },
@@ -4071,10 +4071,10 @@ ModifyAbility({
         "Paladin ~ Aura of Resolve",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_AuraOfResolve"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 8)
         end,
       },
@@ -4092,10 +4092,10 @@ ModifyAbility({
         "Paladin ~ Aura of Justice",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_AuraOfJustice"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 11)
         end,
       },
@@ -4113,10 +4113,10 @@ ModifyAbility({
         "Paladin ~ Aura of Faith",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_AuraOfFaith"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 14)
         end,
       },
@@ -4134,10 +4134,10 @@ ModifyAbility({
         "Paladin ~ Aura of Righteousness",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_AuraOfRighteousness"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 17)
         end,
       },
@@ -4155,10 +4155,10 @@ ModifyAbility({
         "Paladin ~ Holy Champion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_HolyChampion"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CFP_Level"] >= 20)
         end,
       },
@@ -4176,10 +4176,10 @@ ModifyAbility({
         "Ranger ~ Favored Enemy",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_FavoredEnemy"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 1)
         end,
       },
@@ -4197,10 +4197,10 @@ ModifyAbility({
         "Ranger ~ Favored Terrain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_FavoredTerrain"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 1)
         end,
       },
@@ -4218,10 +4218,10 @@ ModifyAbility({
         "Ranger ~ Track",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_Track"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 1)
         end,
       },
@@ -4239,10 +4239,10 @@ ModifyAbility({
         "Ranger ~ Wild Empathy",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_WildEmpathy"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 1)
         end,
       },
@@ -4260,10 +4260,10 @@ ModifyAbility({
         "Ranger ~ Combat Style Feat",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_CombatStyleFeat"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 2)
         end,
       },
@@ -4281,10 +4281,10 @@ ModifyAbility({
         "Ranger ~ Hunter's Bond",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_HuntersBond"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 4)
         end,
       },
@@ -4302,10 +4302,10 @@ ModifyAbility({
         "Ranger ~ Woodland Stride",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_WoodlandStride"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 7)
         end,
       },
@@ -4323,10 +4323,10 @@ ModifyAbility({
         "Ranger ~ Swift Tracker",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_SwiftTracker"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 8)
         end,
       },
@@ -4344,10 +4344,10 @@ ModifyAbility({
         "Ranger ~ Evasion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_Evasion"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 9)
         end,
       },
@@ -4365,10 +4365,10 @@ ModifyAbility({
         "Ranger ~ Quarry",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_Quarry"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 11)
         end,
       },
@@ -4386,10 +4386,10 @@ ModifyAbility({
         "Ranger ~ Camouflage",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_Camouflage"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 12)
         end,
       },
@@ -4407,10 +4407,10 @@ ModifyAbility({
         "Ranger ~ Improved Evasion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_Evasion"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 16)
         end,
       },
@@ -4428,10 +4428,10 @@ ModifyAbility({
         "Ranger ~ Hide in Plain Sight",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_HideInPlainSight"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 17)
         end,
       },
@@ -4449,10 +4449,10 @@ ModifyAbility({
         "Ranger ~ Improved Quarry",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_Quarry"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 19)
         end,
       },
@@ -4470,10 +4470,10 @@ ModifyAbility({
         "Ranger ~ Master Hunter",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_MasterHunter"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 20)
         end,
       },
@@ -4491,10 +4491,10 @@ ModifyAbility({
         "Endurance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_Endurance"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CFP_Level"] >= 3)
         end,
       },
@@ -4512,10 +4512,10 @@ ModifyAbility({
         "Sorcerer ~ Weapon and Armor Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_WeaponProficiencies"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CFP_Level"] >= 1)
         end,
       },
@@ -4533,10 +4533,10 @@ ModifyAbility({
         "Sorcerer ~ Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_Spells"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CFP_Level"] >= 1)
         end,
       },
@@ -4554,10 +4554,10 @@ ModifyAbility({
         "Sorcerer ~ Standard Bloodline",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_Bloodline"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CFP_Level"] >= 1)
         end,
       },
@@ -4575,10 +4575,10 @@ ModifyAbility({
         "Sorcerer ~ Cantrips",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_Cantrips"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CFP_Level"] >= 1)
         end,
       },
@@ -4596,10 +4596,10 @@ ModifyAbility({
         "Sorcerer ~ Eschew Materials",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_EschewMaterials"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CFP_Level"] >= 1)
         end,
       },
@@ -4617,10 +4617,10 @@ ModifyAbility({
         "Wizard ~ Class Skills",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_ClassSkills"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CFP_Level"] >= 1)
         end,
       },
@@ -4638,10 +4638,10 @@ ModifyAbility({
         "Wizard ~ Weapon and Armor Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_WeaponProficiencies"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CFP_Level"] >= 1)
         end,
       },
@@ -4659,10 +4659,10 @@ ModifyAbility({
         "Wizard ~ Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_Spells"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CFP_Level"] >= 1)
         end,
       },
@@ -4680,10 +4680,10 @@ ModifyAbility({
         "Wizard ~ Bonus Languages",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_BonusLanguages"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CFP_Level"] >= 1)
         end,
       },
@@ -4701,10 +4701,10 @@ ModifyAbility({
         "Wizard ~ Arcane Bond",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_ArcaneBond"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CFP_Level"] >= 1)
         end,
       },
@@ -4722,10 +4722,10 @@ ModifyAbility({
         "Wizard ~ Arcane School",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_ArcaneSchool"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CFP_Level"] >= 1)
         end,
       },
@@ -4743,10 +4743,10 @@ ModifyAbility({
         "Wizard ~ Cantrips",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_Cantrips"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CFP_Level"] >= 1)
         end,
       },
@@ -4764,10 +4764,10 @@ ModifyAbility({
         "Wizard ~ Scribe Scroll",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_ScribeScroll"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CFP_Level"] >= 1)
         end,
       },
@@ -4785,10 +4785,10 @@ ModifyAbility({
         "Wizard ~ Bonus Feats",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_BonusFeats"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CFP_Level"] >= 5)
         end,
       },
@@ -4806,10 +4806,10 @@ ModifyAbility({
         "Wizard ~ Spellbooks",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.PcLevel <= 0 and ((character.GetLevelOfClass("Wizard") >= 1)) >= 1 or not (((character.CountSpellCastingClasses(0, "Base"))) >= 1) and ((character.GetLevelOfClass("Wizard") >= 1)) >= 1 or (character.Variables["Wizard_CF_SpellBook"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CFP_Level"] >= 1)
         end,
       },
@@ -4827,7 +4827,7 @@ ModifyAbility({
         "All Martial Weapon Proficiencies",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneArcher_CFP_Level"] >= 1)
         end,
       },
@@ -4846,7 +4846,7 @@ ModifyAbility({
         "Simple Weapon Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneArcher_CFP_Level"] >= 1)
         end,
       },
@@ -4865,7 +4865,7 @@ ModifyAbility({
         "Armor Proficiency (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneArcher_CFP_Level"] >= 1)
         end,
       },
@@ -4883,7 +4883,7 @@ ModifyAbility({
         "Shield Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneArcher_CFP_Level"] >= 1)
         end,
       },
@@ -4901,7 +4901,7 @@ ModifyAbility({
         "Arcane Archer ~ Enhance Arrow",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneArcher_CFP_Level"] >= 1)
         end,
       },
@@ -4919,7 +4919,7 @@ ModifyAbility({
         "Arcane Archer ~ Imbue Arrow",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneArcher_CFP_Level"] >= 2)
         end,
       },
@@ -4937,7 +4937,7 @@ ModifyAbility({
         "Arcane Archer ~ Seeker Arrow",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneArcher_CFP_Level"] >= 4)
         end,
       },
@@ -4955,7 +4955,7 @@ ModifyAbility({
         "Arcane Archer ~ Phase Arrow",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneArcher_CFP_Level"] >= 6)
         end,
       },
@@ -4973,7 +4973,7 @@ ModifyAbility({
         "Arcane Archer ~ Hail of Arrows",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneArcher_CFP_Level"] >= 8)
         end,
       },
@@ -4991,7 +4991,7 @@ ModifyAbility({
         "Arcane Archer ~ Arrow of Death",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneArcher_CFP_Level"] >= 10)
         end,
       },
@@ -5009,7 +5009,7 @@ ModifyAbility({
         "Arcane Trickster ~ Ranged Legerdemain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneTrickster_CFP_Level"] >= 1)
         end,
       },
@@ -5027,7 +5027,7 @@ ModifyAbility({
         "Arcane Trickster ~ Sneak Attack",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneTrickster_CFP_Level"] >= 2)
         end,
       },
@@ -5045,7 +5045,7 @@ ModifyAbility({
         "Arcane Trickster ~ Impromptu Sneak Attack",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneTrickster_CFP_Level"] >= 3)
         end,
       },
@@ -5063,7 +5063,7 @@ ModifyAbility({
         "Arcane Trickster ~ Tricky Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneTrickster_CFP_Level"] >= 5)
         end,
       },
@@ -5081,7 +5081,7 @@ ModifyAbility({
         "Arcane Trickster ~ Invisible Thief",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneTrickster_CFP_Level"] >= 9)
         end,
       },
@@ -5099,7 +5099,7 @@ ModifyAbility({
         "Arcane Trickster ~ Surprise Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneTrickster_CFP_Level"] >= 10)
         end,
       },
@@ -5117,7 +5117,7 @@ ModifyAbility({
         "Assassin ~ Weapon and Armor Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Assassin_CFP_Level"] >= 1)
         end,
       },
@@ -5137,7 +5137,7 @@ ModifyAbility({
         "Assassin ~ Sneak Attack",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Assassin_CFP_Level"] >= 1)
         end,
       },
@@ -5156,7 +5156,7 @@ ModifyAbility({
         "Assassin ~ Uncanny Dodge",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Assassin_CFP_Level"] >= 2)
         end,
       },
@@ -5175,7 +5175,7 @@ ModifyAbility({
         "Assassin ~ True Death",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Assassin_CFP_Level"] >= 4)
         end,
       },
@@ -5193,7 +5193,7 @@ ModifyAbility({
         "Assassin ~ Quiet Death",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Assassin_CFP_Level"] >= 6)
         end,
       },
@@ -5211,7 +5211,7 @@ ModifyAbility({
         "Assassin ~ Hide in Plain Sight",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Assassin_CFP_Level"] >= 8)
         end,
       },
@@ -5229,7 +5229,7 @@ ModifyAbility({
         "Assassin ~ Swift Death",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Assassin_CFP_Level"] >= 9)
         end,
       },
@@ -5247,7 +5247,7 @@ ModifyAbility({
         "Assassin ~ Angel of Death",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Assassin_CFP_Level"] >= 10)
         end,
       },
@@ -5265,7 +5265,7 @@ ModifyAbility({
         "Dragon Disciple ~ Weapon and Armor Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDisciple_CFP_Level"] >= 1)
         end,
       },
@@ -5283,7 +5283,7 @@ ModifyAbility({
         "Dragon Disciple ~ Spells per Day",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDisciple_CFP_Level"] >= 1)
         end,
       },
@@ -5302,7 +5302,7 @@ ModifyAbility({
         "Dragon Disciple ~ Natural Armor Increase",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDisciple_CFP_Level"] >= 1)
         end,
       },
@@ -5322,7 +5322,7 @@ ModifyAbility({
         "Dragon Disciple ~ Bloodline Feat",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDisciple_CFP_Level"] >= 2)
         end,
       },
@@ -5340,7 +5340,7 @@ ModifyAbility({
         "Dragon Disciple ~ Breath Weapon",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDisciple_CFP_Level"] >= 3)
         end,
       },
@@ -5358,7 +5358,7 @@ ModifyAbility({
         "Dragon Disciple ~ Blindsense",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDisciple_CFP_Level"] >= 5)
         end,
       },
@@ -5376,7 +5376,7 @@ ModifyAbility({
         "Dragon Disciple ~ Dragon Form",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDisciple_CFP_Level"] >= 7)
         end,
       },
@@ -5394,7 +5394,7 @@ ModifyAbility({
         "Dragon Disciple ~ Wings",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDisciple_CFP_Level"] >= 9)
         end,
       },
@@ -5412,7 +5412,7 @@ ModifyAbility({
         "Duelist ~ Weapon and Armor Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Duelist_CFP_Level"] >= 1)
         end,
       },
@@ -5431,7 +5431,7 @@ ModifyAbility({
         "Duelist ~ Precise Strike",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Duelist_CFP_Level"] >= 1)
         end,
       },
@@ -5450,7 +5450,7 @@ ModifyAbility({
         "Duelist ~ Parry",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Duelist_CFP_Level"] >= 2)
         end,
       },
@@ -5468,7 +5468,7 @@ ModifyAbility({
         "Duelist ~ Enhanced Mobility",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Duelist_CFP_Level"] >= 3)
         end,
       },
@@ -5487,7 +5487,7 @@ ModifyAbility({
         "Duelist ~ Grace",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Duelist_CFP_Level"] >= 4)
         end,
       },
@@ -5505,7 +5505,7 @@ ModifyAbility({
         "Duelist ~ Riposte",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Duelist_CFP_Level"] >= 5)
         end,
       },
@@ -5523,7 +5523,7 @@ ModifyAbility({
         "Duelist ~ Acrobatic Charge",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Duelist_CFP_Level"] >= 6)
         end,
       },
@@ -5541,7 +5541,7 @@ ModifyAbility({
         "Duelist ~ Elaborate Defense",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Duelist_CFP_Level"] >= 7)
         end,
       },
@@ -5560,7 +5560,7 @@ ModifyAbility({
         "Duelist ~ No Retreat",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Duelist_CFP_Level"] >= 9)
         end,
       },
@@ -5578,7 +5578,7 @@ ModifyAbility({
         "Duelist ~ Crippling Critical",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Duelist_CFP_Level"] >= 10)
         end,
       },
@@ -5597,7 +5597,7 @@ ModifyAbility({
         "Eldritch Knight ~ Diverse Training",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EldritchKnight_CFP_Level"] >= 1)
         end,
       },
@@ -5615,7 +5615,7 @@ ModifyAbility({
         "Eldritch Knight ~ Spell Critical",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EldritchKnight_CFP_Level"] >= 10)
         end,
       },
@@ -5633,7 +5633,7 @@ ModifyAbility({
         "Loremaster ~ Secret Lore",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Loremaster_CFP_Level"] >= 1)
         end,
       },
@@ -5651,7 +5651,7 @@ ModifyAbility({
         "Loremaster ~ Lore",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Loremaster_CFP_Level"] >= 2)
         end,
       },
@@ -5669,7 +5669,7 @@ ModifyAbility({
         "Loremaster ~ Greater Lore",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Loremaster_CFP_Level"] >= 6)
         end,
       },
@@ -5687,7 +5687,7 @@ ModifyAbility({
         "Loremaster ~ True Lore",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Loremaster_CFP_Level"] >= 10)
         end,
       },
@@ -5705,7 +5705,7 @@ ModifyAbility({
         "Mystic Theurge ~ Combined Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MysticTheurge_CFP_Level"] >= 1)
         end,
       },
@@ -5723,7 +5723,7 @@ ModifyAbility({
         "Mystic Theurge ~ Spell Synthesis",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MysticTheurge_CFP_Level"] >= 10)
         end,
       },
@@ -5743,7 +5743,7 @@ ModifyAbility({
         "Pathfinder Chronicler ~ Master Scribe",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PathfinderChronicler_CFP_Level"] >= 1)
         end,
       },
@@ -5762,7 +5762,7 @@ ModifyAbility({
         "Pathfinder Chronicler ~ Pathfinding",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PathfinderChronicler_CFP_Level"] >= 2)
         end,
       },
@@ -5781,7 +5781,7 @@ ModifyAbility({
         "Pathfinder Chronicler ~ Improved Aid",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PathfinderChronicler_CFP_Level"] >= 3)
         end,
       },
@@ -5799,7 +5799,7 @@ ModifyAbility({
         "Pathfinder Chronicler ~ Epic Tales",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PathfinderChronicler_CFP_Level"] >= 4)
         end,
       },
@@ -5817,7 +5817,7 @@ ModifyAbility({
         "Pathfinder Chronicler ~ Whispering Campaign",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PathfinderChronicler_CFP_Level"] >= 5)
         end,
       },
@@ -5835,7 +5835,7 @@ ModifyAbility({
         "Pathfinder Chronicler ~ Inspire Action",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PathfinderChronicler_CFP_Level"] >= 6)
         end,
       },
@@ -5853,7 +5853,7 @@ ModifyAbility({
         "Pathfinder Chronicler ~ Call down the Legends",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PathfinderChronicler_CFP_Level"] >= 7)
         end,
       },
@@ -5871,7 +5871,7 @@ ModifyAbility({
         "Pathfinder Chronicler ~ Greater Epic Tales",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PathfinderChronicler_CFP_Level"] >= 8)
         end,
       },
@@ -5889,7 +5889,7 @@ ModifyAbility({
         "Pathfinder Chronicler ~ Lay of the Exalted Dead",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PathfinderChronicler_CFP_Level"] >= 10)
         end,
       },
@@ -5907,7 +5907,7 @@ ModifyAbility({
         "Shadowdancer ~ Weapon and Armor Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Shadowdancer_CFP_Level"] >= 1)
         end,
       },
@@ -5925,7 +5925,7 @@ ModifyAbility({
         "Shadowdancer ~ Hide in Plain Sight",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Shadowdancer_CFP_Level"] >= 1)
         end,
       },
@@ -5943,7 +5943,7 @@ ModifyAbility({
         "Shadowdancer ~ Darkvision",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Shadowdancer_CFP_Level"] >= 2)
         end,
       },
@@ -5961,7 +5961,7 @@ ModifyAbility({
         "Shadowdancer ~ Evasion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Shadowdancer_CFP_Level"] >= 2)
         end,
       },
@@ -5979,7 +5979,7 @@ ModifyAbility({
         "Shadowdancer ~ Uncanny Dodge",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Shadowdancer_CFP_Level"] >= 2)
         end,
       },
@@ -5999,7 +5999,7 @@ ModifyAbility({
         "Shadowdancer ~ Summon Shadow",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Shadowdancer_CFP_Level"] >= 3)
         end,
       },
@@ -6018,7 +6018,7 @@ ModifyAbility({
         "Shadowdancer ~ Shadow Jump",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Shadowdancer_CFP_Level"] >= 4)
         end,
       },
@@ -6036,7 +6036,7 @@ ModifyAbility({
         "Shadowdancer ~ Defensive Roll",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Shadowdancer_CFP_Level"] >= 5)
         end,
       },
@@ -6054,7 +6054,7 @@ ModifyAbility({
         "Shadowdancer ~ Slippery Mind",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Shadowdancer_CFP_Level"] >= 7)
         end,
       },
@@ -6072,7 +6072,7 @@ ModifyAbility({
         "Shadowdancer ~ Shadow Power",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Shadowdancer_CFP_Level"] >= 8)
         end,
       },
@@ -6091,7 +6091,7 @@ ModifyAbility({
         "Shadowdancer ~ Shadow Master",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Shadowdancer_CFP_Level"] >= 10)
         end,
       },
@@ -6121,7 +6121,7 @@ DefineAbility({
   Description={
     Format="You are using an alternative raging method.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return character.HasAnyAbility(function (ability)
           if ability.Category ~= "Special Ability" then return false end
           if ability.IsAnyType("RageSelectionAlt") then return true end
@@ -6241,7 +6241,7 @@ DefineAbility({
       Category="MOVEADD",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ENCUMBERANCE"] < 2) and (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
@@ -6569,10 +6569,10 @@ ModifyAbility({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianLVL"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_UncannyDodge"] == 0)
         end,
       },
@@ -6590,10 +6590,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianLVL"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_UncannyDodge"] == 0)
         end,
       },
@@ -6611,10 +6611,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianLVL"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_ImprovedUncannyDodge"] == 0)
         end,
       },
@@ -6632,10 +6632,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianTrapSenseLVL/3"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_TrapSense1"] == 1)
         end,
       },
@@ -6653,10 +6653,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianTrapSenseLVL/3"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_TrapSense2"] == 1)
         end,
       },
@@ -6674,10 +6674,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianTrapSenseLVL/3"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_TrapSense3"] == 1)
         end,
       },
@@ -6695,10 +6695,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianTrapSenseLVL/3"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_TrapSense4"] == 1)
         end,
       },
@@ -6716,10 +6716,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianTrapSenseLVL/3"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_TrapSense5"] == 1)
         end,
       },
@@ -6737,10 +6737,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianTrapSenseLVL/3"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_TrapSense6"] == 1)
         end,
       },
@@ -6758,10 +6758,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["(BarbarianDRLVL-4)/3"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_DamageReduction1"] == 1)
         end,
       },
@@ -6779,10 +6779,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["(BarbarianDRLVL-4)/3"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_DamageReduction2"] == 1)
         end,
       },
@@ -6800,10 +6800,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["(BarbarianDRLVL-4)/3"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_DamageReduction3"] == 1)
         end,
       },
@@ -6821,10 +6821,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["(BarbarianDRLVL-4)/3"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_DamageReduction4"] == 1)
         end,
       },
@@ -6842,10 +6842,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["(BarbarianDRLVL-4)/3"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_DamageReduction5"] == 1)
         end,
       },
@@ -6863,10 +6863,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RagePowersLVL"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_RagePower2"] == 1)
         end,
       },
@@ -6884,10 +6884,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RagePowersLVL"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_RagePower4"] == 1)
         end,
       },
@@ -6905,10 +6905,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RagePowersLVL"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_RagePower6"] == 1)
         end,
       },
@@ -6926,10 +6926,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RagePowersLVL"] >= 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_RagePower8"] == 1)
         end,
       },
@@ -6947,10 +6947,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RagePowersLVL"] >= 10)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_RagePower10"] == 1)
         end,
       },
@@ -6968,10 +6968,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RagePowersLVL"] >= 12)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_RagePower12"] == 1)
         end,
       },
@@ -6989,10 +6989,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RagePowersLVL"] >= 14)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_RagePower14"] == 1)
         end,
       },
@@ -7010,10 +7010,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RagePowersLVL"] >= 16)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_RagePower16"] == 1)
         end,
       },
@@ -7031,10 +7031,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RagePowersLVL"] >= 18)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_RagePower18"] == 1)
         end,
       },
@@ -7052,10 +7052,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RagePowersLVL"] >= 20)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Barbarian_CF_RagePower20"] == 1)
         end,
       },
@@ -7085,7 +7085,7 @@ DefineAbility({
         "Bite",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Raging"] == 1)
         end,
       },
@@ -7102,7 +7102,7 @@ DefineAbility({
       Category="WEAPONPROF=Bite",
       Formula=Formula("-5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Raging"] == 1)
         end,
       },
@@ -7134,7 +7134,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RagePowersPrereqLVL"] >= 8)
     end,
   },
@@ -7161,7 +7161,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RagePowersPrereqLVL"] >= 12)
     end,
   },
@@ -7207,7 +7207,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Raging"] == 1)
         end,
       },
@@ -7217,10 +7217,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RagePowersPrereqLVL"] >= 8)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["IncreasedDRCount"] < 3)
     end,
   },
@@ -7289,7 +7289,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RagePowersPrereqLVL"] >= 8)
     end,
   },
@@ -7369,7 +7369,7 @@ DefineAbility({
   Visions={
     {
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Raging"] == 1)
         end,
       },
@@ -7394,7 +7394,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RagePowersPrereqLVL"] >= 12)
     end,
   },
@@ -7443,7 +7443,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Rage Power ~ Low-Light Vision" then return true end
@@ -7461,7 +7461,7 @@ DefineAbility({
   Visions={
     {
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Raging"] == 1)
         end,
       },
@@ -7571,7 +7571,7 @@ DefineAbility({
       Category="SKILL",
       Formula=Formula("RagingClimberBonus"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Raging"] == 1)
         end,
       },
@@ -7617,7 +7617,7 @@ DefineAbility({
       Category="SITUATION",
       Formula=Formula("RagingLeaperBonus"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Raging"] == 1)
         end,
       },
@@ -7663,7 +7663,7 @@ DefineAbility({
       Category="SKILL",
       Formula=Formula("RagingSwimmerBonus"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Raging"] == 1)
         end,
       },
@@ -7722,7 +7722,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RagePowersPrereqLVL"] >= 4)
     end,
   },
@@ -7952,7 +7952,7 @@ DefineAbility({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Raging"] == 1)
         end,
       },
@@ -7969,7 +7969,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["SwiftFootCount"] < 3)
     end,
   },
@@ -8008,14 +8008,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Rage Power ~ Intimidating Glare" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RagePowersPrereqLVL"] >= 8)
     end,
   },
@@ -8042,7 +8042,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RagePowersPrereqLVL"] >= 8)
     end,
   },
@@ -8122,14 +8122,14 @@ DefineAbility({
         "Bardic Performance ~ Countersong",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardCountersong") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BardicPerformanceLVL"] >= 1)
         end,
       },
@@ -8158,10 +8158,10 @@ DefineAbility({
         "Bardic Performance ~ Distraction",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_BardDistraction"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BardicPerformanceLVL"] >= 1)
         end,
       },
@@ -8173,10 +8173,10 @@ DefineAbility({
         "Bardic Performance ~ Fascinate",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_Fascinate"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BardicPerformanceLVL"] >= 1)
         end,
       },
@@ -8188,10 +8188,10 @@ DefineAbility({
         "Bardic Performance ~ Inspire Courage",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_InspireCourage"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BardicPerformanceLVL"] >= 1)
         end,
       },
@@ -8203,10 +8203,10 @@ DefineAbility({
         "Bardic Performance ~ Inspire Competence",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_InspireCompetence"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BardicPerformanceLVL"] >= 3)
         end,
       },
@@ -8218,10 +8218,10 @@ DefineAbility({
         "Bardic Performance ~ Suggestion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_Suggestion"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BardicPerformanceLVL"] >= 6)
         end,
       },
@@ -8233,10 +8233,10 @@ DefineAbility({
         "Bardic Performance ~ Dirge of Doom",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_DirgeOfDoom"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BardicPerformanceLVL"] >= 8)
         end,
       },
@@ -8248,10 +8248,10 @@ DefineAbility({
         "Bardic Performance ~ Inspire Greatness",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_InspireGreatness"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BardicPerformanceLVL"] >= 9)
         end,
       },
@@ -8263,10 +8263,10 @@ DefineAbility({
         "Bardic Performance ~ Soothing Performance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_SoothingPerformance"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BardicPerformanceLVL"] >= 12)
         end,
       },
@@ -8278,10 +8278,10 @@ DefineAbility({
         "Bardic Performance ~ Frightening Tune",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_FrighteningTune"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BardicPerformanceLVL"] >= 14)
         end,
       },
@@ -8293,10 +8293,10 @@ DefineAbility({
         "Bardic Performance ~ Inspire Heroics",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_InspireHeroics"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BardicPerformanceLVL"] >= 15)
         end,
       },
@@ -8308,10 +8308,10 @@ DefineAbility({
         "Bardic Performance ~ Mass Suggestion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_MassSuggestion"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BardicPerformanceLVL"] >= 18)
         end,
       },
@@ -8323,10 +8323,10 @@ DefineAbility({
         "Bardic Performance ~ Deadly Performance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_DeadlyPerformance"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BardicPerformanceLVL"] >= 20)
         end,
       },
@@ -8473,7 +8473,7 @@ DefineAbility({
   Description={
     Format="You can use any skill, even if the skill normally requires you to be trained. You considers all skills to be class skills. You can take 10 on any skill check, even if it is not normally allowed.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["JackOfAllTradesLVL"] >= 19)
       end,
     },
@@ -8487,7 +8487,7 @@ DefineAbility({
         "Jack of All Trades ~ Class Skills",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["JackOfAllTradesLVL"] >= 16)
         end,
       },
@@ -8529,7 +8529,7 @@ ModifyAbility({
       Formula("BardicPerformanceDuration"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["BardicPerformanceLVL"] < 7)
       end,
     },
@@ -8544,10 +8544,10 @@ ModifyAbility({
       Formula("BardicPerformanceDuration"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["BardicPerformanceLVL"] >= 7)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["BardicPerformanceLVL"] < 13)
       end,
     },
@@ -8562,7 +8562,7 @@ ModifyAbility({
       Formula("BardicPerformanceDuration"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["BardicPerformanceLVL"] >= 13)
       end,
     },
@@ -9004,10 +9004,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BardVersatilePerformanceLVL"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_VersatilePerformance2"] == 1)
         end,
       },
@@ -9025,10 +9025,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["InspireCourageCount"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_InspireCourage1"] == 1)
         end,
       },
@@ -9046,10 +9046,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["InspireCourageCount"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_InspireCourage2"] == 1)
         end,
       },
@@ -9067,10 +9067,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["InspireCourageCount"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_InspireCourage3"] == 1)
         end,
       },
@@ -9088,10 +9088,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["InspireCourageCount"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_InspireCourage4"] == 1)
         end,
       },
@@ -9109,10 +9109,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["InspireCompetenceCount"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_InspireCompetence1"] == 1)
         end,
       },
@@ -9130,10 +9130,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["InspireCompetenceCount"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_InspireCompetence2"] == 1)
         end,
       },
@@ -9151,10 +9151,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["InspireCompetenceCount"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_InspireCompetence3"] == 1)
         end,
       },
@@ -9172,10 +9172,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["InspireCompetenceCount"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_InspireCompetence4"] == 1)
         end,
       },
@@ -9193,10 +9193,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["InspireCompetenceCount"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_InspireCompetence5"] == 1)
         end,
       },
@@ -9214,10 +9214,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["InspireCompetenceCount"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_InspireCompetence6"] == 1)
         end,
       },
@@ -9257,7 +9257,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Act" then return true end
@@ -9276,7 +9276,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Act" then return true end
@@ -9326,7 +9326,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Comedy" then return true end
@@ -9345,7 +9345,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Comedy" then return true end
@@ -9395,7 +9395,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Dance" then return true end
@@ -9414,7 +9414,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Dance" then return true end
@@ -9464,7 +9464,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Keyboard Instruments" then return true end
@@ -9483,7 +9483,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Keyboard Instruments" then return true end
@@ -9533,7 +9533,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Oratory" then return true end
@@ -9552,7 +9552,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Oratory" then return true end
@@ -9602,7 +9602,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Percussion Instruments" then return true end
@@ -9621,7 +9621,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Percussion Instruments" then return true end
@@ -9671,7 +9671,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Sing" then return true end
@@ -9690,7 +9690,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Sing" then return true end
@@ -9740,7 +9740,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ String Instruments" then return true end
@@ -9759,7 +9759,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ String Instruments" then return true end
@@ -9809,7 +9809,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Wind Instruments" then return true end
@@ -9828,7 +9828,7 @@ DefineAbility({
         Name="SkillGranted",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Versatile Performance ~ Wind Instruments" then return true end
@@ -9855,7 +9855,7 @@ DefineAbility({
   Description={
     Format="Weapon and Armor Proficiencies are altered from the base cleric.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return character.HasAnyAbility(function (ability)
           if ability.Category ~= "Archetype" then return false end
           if ability.IsAnyType("ClericArmorProficiency.TYPE.ClericWeaponProficiency") then return true end
@@ -9883,7 +9883,7 @@ DefineAbility({
         "ArmorProfMedium",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("ClericArmorProficiency") then return true end
@@ -9900,7 +9900,7 @@ DefineAbility({
         "Weapon Proficiencies ~ Cleric",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("ClericWeaponProficiency") then return true end
@@ -9919,7 +9919,7 @@ DefineAbility({
         "ArmorProfMedium",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("ClericArmorProficiency") then return true end
@@ -9934,7 +9934,7 @@ DefineAbility({
       DeityWeapons=true,
       Kind="Weapon",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("ClericWeaponProficiency") then return true end
@@ -9965,7 +9965,7 @@ DefineAbility({
         "Aura of Chaos",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Diety.Alignment == "CG" or character.Diety.Alignment == "CN" or character.Diety.Alignment == "CE"
         end,
       },
@@ -9977,7 +9977,7 @@ DefineAbility({
         "Aura of Evil",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Diety.Alignment == "LE" or character.Diety.Alignment == "NE" or character.Diety.Alignment == "CE"
         end,
       },
@@ -9989,7 +9989,7 @@ DefineAbility({
         "Aura of Good",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Diety.Alignment == "LG" or character.Diety.Alignment == "NG" or character.Diety.Alignment == "CG"
         end,
       },
@@ -10001,7 +10001,7 @@ DefineAbility({
         "Aura of Law",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Diety.Alignment == "LG" or character.Diety.Alignment == "LN" or character.Diety.Alignment == "LE"
         end,
       },
@@ -10064,7 +10064,7 @@ DefineAbility({
   Description={
     Format="You can channel stored spell energy into inflict spells that you did not prepare ahead of time. You can \"lose\" any prepared spell that is not an orison or domain spell in order to cast any inflict spell of the same spell level or lower (an inflict spell is any spell with \"Inflict\" in its name).",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return character.HasAnyAbility(function (ability)
           if ability.Category ~= "Special Ability" then return false end
           if ability.Name == "Cleric ~ Channel Negative Energy" then return true end
@@ -10220,10 +10220,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG") or character.IsAlignment("LN") or character.IsAlignment("TN") or character.IsAlignment("CN")
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.Diety.Alignment == "LG" or character.Diety.Alignment == "NG" or character.Diety.Alignment == "CG" or character.Diety.Alignment == "LN" or character.Diety.Alignment == "TN" or character.Diety.Alignment == "CN" or (character.Diety.Name == "None")
     end,
   },
@@ -10319,10 +10319,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.IsAlignment("LN") or character.IsAlignment("TN") or character.IsAlignment("CN") or character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE")
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.Diety.Alignment == "LN" or character.Diety.Alignment == "TN" or character.Diety.Alignment == "CN" or character.Diety.Alignment == "LE" or character.Diety.Alignment == "NE" or character.Diety.Alignment == "CE" or (character.Diety.Name == "None")
     end,
   },
@@ -10349,14 +10349,14 @@ DefineAbility({
         "Domain Power ~ Lightning Arc",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Air)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAirAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -10368,7 +10368,7 @@ DefineAbility({
         "Domain Power ~ Electricity Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAirAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -10398,14 +10398,14 @@ DefineAbility({
         "Domain Power ~ Speak with Animals",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Animal)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAnimalAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -10417,7 +10417,7 @@ DefineAbility({
         "Domain Power ~ Animal Companion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAnimalAbilityTriggerLVL"] >= 4)
         end,
       },
@@ -10447,14 +10447,14 @@ DefineAbility({
         "Domain Power ~ Artificer's Touch",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Artifice)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainArtificeAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -10466,7 +10466,7 @@ DefineAbility({
         "Domain Power ~ Dancing Weapons",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainArtificeAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -10496,14 +10496,14 @@ DefineAbility({
         "Domain Power ~ Touch of Chaos",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Chaos)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainChaosAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -10515,7 +10515,7 @@ DefineAbility({
         "Domain Power ~ Chaos Blade",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainChaosAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -10545,14 +10545,14 @@ DefineAbility({
         "Domain Power ~ Dazing Touch",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Charm)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainCharmAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -10564,7 +10564,7 @@ DefineAbility({
         "Domain Power ~ Charming Smile",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainCharmAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -10594,14 +10594,14 @@ DefineAbility({
         "Domain Power ~ Calming Touch",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Community)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainCommunityAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -10613,7 +10613,7 @@ DefineAbility({
         "Domain Power ~ Unity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainCommunityAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -10643,14 +10643,14 @@ DefineAbility({
         "Domain Power ~ Touch of Darkness",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Darkness)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainDarknessAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -10662,7 +10662,7 @@ DefineAbility({
         "Domain Power ~ Eyes of Darkness",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainDarknessAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -10692,14 +10692,14 @@ DefineAbility({
         "Domain Power ~ Bleeding Touch",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Death)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainDeathAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -10711,7 +10711,7 @@ DefineAbility({
         "Domain Power ~ Death's Embrace",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainDeathAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -10741,14 +10741,14 @@ DefineAbility({
         "Domain Power ~ Destructive Smite",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Destruction)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainDestructionAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -10760,7 +10760,7 @@ DefineAbility({
         "Domain Power ~ Destructive Aura",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainDestructionAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -10790,14 +10790,14 @@ DefineAbility({
         "Domain Power ~ Acid Dart",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Earth)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEarthAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -10809,7 +10809,7 @@ DefineAbility({
         "Domain Power ~ Acid Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEarthAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -10839,14 +10839,14 @@ DefineAbility({
         "Domain Power ~ Touch of Evil",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Evil)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEvilAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -10858,7 +10858,7 @@ DefineAbility({
         "Domain Power ~ Scythe of Evil",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEvilAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -10888,14 +10888,14 @@ DefineAbility({
         "Domain Power ~ Fire Bolt",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Fire)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainFireAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -10907,7 +10907,7 @@ DefineAbility({
         "Domain Power ~ Fire Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainFireAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -10937,14 +10937,14 @@ DefineAbility({
         "Domain Power ~ Touch of Glory",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Glory)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainGloryAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -10956,7 +10956,7 @@ DefineAbility({
         "Domain Power ~ Divine Presence",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainGloryAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -10986,14 +10986,14 @@ DefineAbility({
         "Domain Power ~ Touch of Good",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Good)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainGoodAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11005,7 +11005,7 @@ DefineAbility({
         "Domain Power ~ Holy Lance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainGoodAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -11035,14 +11035,14 @@ DefineAbility({
         "Domain Power ~ Rebuke Death",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Healing)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainHealingAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11054,7 +11054,7 @@ DefineAbility({
         "Domain Power ~ Healer's Blessing",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainHealingAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -11084,14 +11084,14 @@ DefineAbility({
         "Domain Power ~ Lore Keeper",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Knowledge)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainKnowledgeAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11103,7 +11103,7 @@ DefineAbility({
         "Domain Power ~ Remote Viewing",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainKnowledgeAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -11133,14 +11133,14 @@ DefineAbility({
         "Domain Power ~ Touch of Law",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Law)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainLawAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11152,7 +11152,7 @@ DefineAbility({
         "Domain Power ~ Staff of Order",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainLawAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -11182,14 +11182,14 @@ DefineAbility({
         "Domain Power ~ Liberation",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Liberation)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainLiberationAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11201,7 +11201,7 @@ DefineAbility({
         "Domain Power ~ Freedom's Call",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainLiberationAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -11231,14 +11231,14 @@ DefineAbility({
         "Domain Power ~ Bit of Luck",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Luck)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainLuckAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11250,7 +11250,7 @@ DefineAbility({
         "Domain Power ~ Good Fortune",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainLuckAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -11280,14 +11280,14 @@ DefineAbility({
         "Domain Power ~ Vision of Madness",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Madness)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainMadnessAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11299,7 +11299,7 @@ DefineAbility({
         "Domain Power ~ Aura of Madness",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainMadnessAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -11329,14 +11329,14 @@ DefineAbility({
         "Domain Power ~ Hand of the Acolyte",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Magic)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainMagicAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11348,7 +11348,7 @@ DefineAbility({
         "Domain Power ~ Dispelling Touch",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainMagicAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -11378,14 +11378,14 @@ DefineAbility({
         "Domain Power ~ Inspiring Word",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Nobility)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainNobilityAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11397,7 +11397,7 @@ DefineAbility({
         "Domain Power ~ Leadership",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainNobilityAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -11427,14 +11427,14 @@ DefineAbility({
         "Domain Power ~ Wooden Fist",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Plant)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainPlantAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11446,7 +11446,7 @@ DefineAbility({
         "Domain Power ~ Bramble Armor",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainPlantAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -11476,14 +11476,14 @@ DefineAbility({
         "Domain Power ~ Resistant Touch",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Protection)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainProtectionAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11495,7 +11495,7 @@ DefineAbility({
         "Domain Power ~ Aura of Protection",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainProtectionAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -11525,14 +11525,14 @@ DefineAbility({
         "Domain Power ~ Gentle Rest",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Repose)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainReposeAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11544,7 +11544,7 @@ DefineAbility({
         "Domain Power ~ Ward Against Death",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainReposeAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -11574,14 +11574,14 @@ DefineAbility({
         "Domain Power ~ Blast Rune",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Rune)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainRuneAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11593,7 +11593,7 @@ DefineAbility({
         "Domain Power ~ Spell Rune",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainRuneAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -11623,14 +11623,14 @@ DefineAbility({
         "Domain Power ~ Strength Surge",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Strength)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainStrengthAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11642,7 +11642,7 @@ DefineAbility({
         "Domain Power ~ Might of the Gods",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainStrengthAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -11672,14 +11672,14 @@ DefineAbility({
         "Domain Power ~ Sun's Blessing",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Sun)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainSunAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11691,7 +11691,7 @@ DefineAbility({
         "Domain Power ~ Nimbus of Light",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainSunAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -11721,14 +11721,14 @@ DefineAbility({
         "Domain Power ~ Agile Feet",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Travel)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainTravelAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11740,7 +11740,7 @@ DefineAbility({
         "Domain Power ~ Dimensional Hop",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainTravelAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -11770,14 +11770,14 @@ DefineAbility({
         "Domain Power ~ Copycat",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Trickery)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainTrickeryAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11789,7 +11789,7 @@ DefineAbility({
         "Domain Power ~ Master's Illusion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainTrickeryAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -11819,14 +11819,14 @@ DefineAbility({
         "Domain Power ~ Battle Rage",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (War)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWarAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11838,7 +11838,7 @@ DefineAbility({
         "Domain Power ~ Weapon Master",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWarAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -11868,14 +11868,14 @@ DefineAbility({
         "Domain Power ~ Icicle",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Water)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWaterAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11887,7 +11887,7 @@ DefineAbility({
         "Domain Power ~ Cold Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWaterAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -11917,14 +11917,14 @@ DefineAbility({
         "Domain Power ~ Storm Burst",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Weather)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWeatherAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -11936,7 +11936,7 @@ DefineAbility({
         "Domain Power ~ Lightning Lord",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWeatherAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -13997,14 +13997,14 @@ DefineAbility({
         "Domain Power ~ Lightning Arc",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Air)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAirAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -14016,7 +14016,7 @@ DefineAbility({
         "Domain Power ~ Electricity Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAirAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -14145,14 +14145,14 @@ DefineAbility({
         "Domain Power ~ Speak with Animals",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Animal)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAnimalAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -14164,7 +14164,7 @@ DefineAbility({
         "Domain Power ~ Animal Companion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAnimalAbilityTriggerLVL"] >= 4)
         end,
       },
@@ -14296,14 +14296,14 @@ DefineAbility({
         "Domain Power ~ Artificer's Touch",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Artifice)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainArtificeAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -14315,7 +14315,7 @@ DefineAbility({
         "Domain Power ~ Dancing Weapons",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainArtificeAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -14444,14 +14444,14 @@ DefineAbility({
         "Domain Power ~ Touch of Chaos",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Chaos)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainChaosAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -14463,7 +14463,7 @@ DefineAbility({
         "Domain Power ~ Chaos Blade",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainChaosAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -14509,7 +14509,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.IsAlignment("CG") or character.IsAlignment("CN") or character.IsAlignment("CE")
     end,
   },
@@ -14597,14 +14597,14 @@ DefineAbility({
         "Domain Power ~ Dazing Touch",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Charm)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainCharmAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -14616,7 +14616,7 @@ DefineAbility({
         "Domain Power ~ Charming Smile",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainCharmAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -14745,14 +14745,14 @@ DefineAbility({
         "Domain Power ~ Calming Touch",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Community)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainCommunityAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -14764,7 +14764,7 @@ DefineAbility({
         "Domain Power ~ Unity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainCommunityAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -14900,14 +14900,14 @@ DefineAbility({
         "Domain Power ~ Touch of Darkness",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Darkness)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainDarknessAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -14919,7 +14919,7 @@ DefineAbility({
         "Domain Power ~ Eyes of Darkness",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainDarknessAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -15048,14 +15048,14 @@ DefineAbility({
         "Domain Power ~ Bleeding Touch",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Death)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainDeathAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -15067,7 +15067,7 @@ DefineAbility({
         "Domain Power ~ Death's Embrace",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainDeathAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -15196,14 +15196,14 @@ DefineAbility({
         "Domain Power ~ Destructive Smite",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Destruction)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainDestructionAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -15215,7 +15215,7 @@ DefineAbility({
         "Domain Power ~ Destructive Aura",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainDestructionAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -15344,14 +15344,14 @@ DefineAbility({
         "Domain Power ~ Acid Dart",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Earth)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEarthAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -15363,7 +15363,7 @@ DefineAbility({
         "Domain Power ~ Acid Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEarthAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -15492,14 +15492,14 @@ DefineAbility({
         "Domain Power ~ Touch of Evil",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Evil)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEvilAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -15511,7 +15511,7 @@ DefineAbility({
         "Domain Power ~ Scythe of Evil",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEvilAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -15557,7 +15557,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE")
     end,
   },
@@ -15645,14 +15645,14 @@ DefineAbility({
         "Domain Power ~ Fire Bolt",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Fire)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainFireAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -15664,7 +15664,7 @@ DefineAbility({
         "Domain Power ~ Fire Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainFireAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -15793,14 +15793,14 @@ DefineAbility({
         "Domain Power ~ Touch of Glory",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Glory)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainGloryAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -15812,7 +15812,7 @@ DefineAbility({
         "Domain Power ~ Divine Presence",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainGloryAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -15948,14 +15948,14 @@ DefineAbility({
         "Domain Power ~ Touch of Good",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Good)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainGoodAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -15967,7 +15967,7 @@ DefineAbility({
         "Domain Power ~ Holy Lance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainGoodAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -16013,7 +16013,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG")
     end,
   },
@@ -16101,14 +16101,14 @@ DefineAbility({
         "Domain Power ~ Rebuke Death",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Healing)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainHealingAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -16120,7 +16120,7 @@ DefineAbility({
         "Domain Power ~ Healer's Blessing",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainHealingAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -16249,14 +16249,14 @@ DefineAbility({
         "Domain Power ~ Lore Keeper",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Knowledge)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainKnowledgeAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -16268,7 +16268,7 @@ DefineAbility({
         "Domain Power ~ Remote Viewing",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainKnowledgeAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -16400,14 +16400,14 @@ DefineAbility({
         "Domain Power ~ Touch of Law",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Law)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainLawAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -16419,7 +16419,7 @@ DefineAbility({
         "Domain Power ~ Staff of Order",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainLawAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -16465,7 +16465,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.IsAlignment("LG") or character.IsAlignment("LN") or character.IsAlignment("LE")
     end,
   },
@@ -16553,14 +16553,14 @@ DefineAbility({
         "Domain Power ~ Liberation",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Liberation)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainLiberationAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -16572,7 +16572,7 @@ DefineAbility({
         "Domain Power ~ Freedom's Call",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainLiberationAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -16701,14 +16701,14 @@ DefineAbility({
         "Domain Power ~ Bit of Luck",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Luck)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainLuckAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -16720,7 +16720,7 @@ DefineAbility({
         "Domain Power ~ Good Fortune",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainLuckAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -16849,14 +16849,14 @@ DefineAbility({
         "Domain Power ~ Vision of Madness",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Madness)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainMadnessAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -16868,7 +16868,7 @@ DefineAbility({
         "Domain Power ~ Aura of Madness",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainMadnessAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -16997,14 +16997,14 @@ DefineAbility({
         "Domain Power ~ Hand of the Acolyte",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Magic)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainMagicAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -17016,7 +17016,7 @@ DefineAbility({
         "Domain Power ~ Dispelling Touch",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainMagicAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -17145,14 +17145,14 @@ DefineAbility({
         "Domain Power ~ Inspiring Word",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Nobility)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainNobilityAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -17164,7 +17164,7 @@ DefineAbility({
         "Domain Power ~ Leadership",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainNobilityAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -17293,14 +17293,14 @@ DefineAbility({
         "Domain Power ~ Wooden Fist",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Plant)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainPlantAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -17312,7 +17312,7 @@ DefineAbility({
         "Domain Power ~ Bramble Armor",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainPlantAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -17441,14 +17441,14 @@ DefineAbility({
         "Domain Power ~ Resistant Touch",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Protection)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainProtectionAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -17460,7 +17460,7 @@ DefineAbility({
         "Domain Power ~ Aura of Protection",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainProtectionAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -17606,14 +17606,14 @@ DefineAbility({
         "Domain Power ~ Gentle Rest",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Repose)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainReposeAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -17625,7 +17625,7 @@ DefineAbility({
         "Domain Power ~ Ward Against Death",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainReposeAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -17761,14 +17761,14 @@ DefineAbility({
         "Domain Power ~ Blast Rune",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Rune)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainRuneAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -17780,7 +17780,7 @@ DefineAbility({
         "Domain Power ~ Spell Rune",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainRuneAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -17909,14 +17909,14 @@ DefineAbility({
         "Domain Power ~ Strength Surge",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Strength)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainStrengthAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -17928,7 +17928,7 @@ DefineAbility({
         "Domain Power ~ Might of the Gods",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainStrengthAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -18057,14 +18057,14 @@ DefineAbility({
         "Domain Power ~ Sun's Blessing",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Sun)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainSunAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -18076,7 +18076,7 @@ DefineAbility({
         "Domain Power ~ Nimbus of Light",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainSunAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -18205,14 +18205,14 @@ DefineAbility({
         "Domain Power ~ Agile Feet",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Travel)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainTravelAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -18224,7 +18224,7 @@ DefineAbility({
         "Domain Power ~ Dimensional Hop",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainTravelAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -18360,14 +18360,14 @@ DefineAbility({
         "Domain Power ~ Copycat",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Trickery)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainTrickeryAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -18379,7 +18379,7 @@ DefineAbility({
         "Domain Power ~ Master's Illusion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainTrickeryAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -18513,14 +18513,14 @@ DefineAbility({
         "Domain Power ~ Battle Rage",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (War)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWarAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -18532,7 +18532,7 @@ DefineAbility({
         "Domain Power ~ Weapon Master",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWarAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -18661,14 +18661,14 @@ DefineAbility({
         "Domain Power ~ Icicle",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Water)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWaterAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -18680,7 +18680,7 @@ DefineAbility({
         "Domain Power ~ Cold Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWaterAbilityTriggerLVL"] >= 6)
         end,
       },
@@ -18809,14 +18809,14 @@ DefineAbility({
         "Domain Power ~ Storm Burst",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "DisableDomainLVL1 (Weather)" then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWeatherAbilityTriggerLVL"] >= 1)
         end,
       },
@@ -18828,7 +18828,7 @@ DefineAbility({
         "Domain Power ~ Lightning Lord",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWeatherAbilityTriggerLVL"] >= 8)
         end,
       },
@@ -18952,7 +18952,7 @@ DefineAbility({
       Formula("LightningArcTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainAirLVL"] >= 2)
       end,
     },
@@ -19002,7 +19002,7 @@ DefineAbility({
         "Resistance to Electricity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAirLVL"] >= 6)
         end,
       },
@@ -19014,7 +19014,7 @@ DefineAbility({
         "Immunity to Electricity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAirLVL"] >= 20)
         end,
       },
@@ -19035,7 +19035,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAirLVL"] >= 6)
         end,
       },
@@ -19047,7 +19047,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAirLVL"] >= 12)
         end,
       },
@@ -19162,7 +19162,7 @@ DefineAbility({
       Formula("ArtificersTouchTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainArtificeLVL"] < 2)
       end,
     },
@@ -19812,7 +19812,7 @@ DefineAbility({
       Formula("AcidDartTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainEarthLVL"] >= 2)
       end,
     },
@@ -19869,7 +19869,7 @@ DefineAbility({
         "Resistance to Acid",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEarthLVL"] >= 6)
         end,
       },
@@ -19881,7 +19881,7 @@ DefineAbility({
         "Immunity to Acid",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEarthLVL"] >= 20)
         end,
       },
@@ -19902,7 +19902,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEarthLVL"] >= 6)
         end,
       },
@@ -19914,7 +19914,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEarthLVL"] >= 12)
         end,
       },
@@ -20040,7 +20040,7 @@ DefineAbility({
       Formula("FireBoltTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainFireLVL"] >= 2)
       end,
     },
@@ -20097,7 +20097,7 @@ DefineAbility({
         "Resistance to Fire",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainFireLVL"] >= 6)
         end,
       },
@@ -20109,7 +20109,7 @@ DefineAbility({
         "Immunity to Fire",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainFireLVL"] >= 20)
         end,
       },
@@ -20130,7 +20130,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainFireLVL"] >= 6)
         end,
       },
@@ -20142,7 +20142,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainFireLVL"] >= 12)
         end,
       },
@@ -20360,7 +20360,7 @@ DefineAbility({
       Formula("RebukeDeathTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainHealingLVL"] >= 2)
       end,
     },
@@ -21337,7 +21337,7 @@ DefineAbility({
       Formula("BlastRuneTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainRuneLVL"] >= 2)
       end,
     },
@@ -21876,7 +21876,7 @@ DefineAbility({
       Formula("IcicleTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainWaterLVL"] >= 2)
       end,
     },
@@ -21933,7 +21933,7 @@ DefineAbility({
         "Resistance to Cold",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWaterLVL"] >= 6)
         end,
       },
@@ -21945,7 +21945,7 @@ DefineAbility({
         "Immunity to Cold",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWaterLVL"] >= 20)
         end,
       },
@@ -21966,7 +21966,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWaterLVL"] >= 6)
         end,
       },
@@ -21978,7 +21978,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWaterLVL"] >= 12)
         end,
       },
@@ -22006,7 +22006,7 @@ DefineAbility({
       Formula("StormBurstTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainWeatherLVL"] >= 2)
       end,
     },
@@ -22301,7 +22301,7 @@ DefineAbility({
         "Animal Companion ~ Standard Companions",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("NatureBondAnimalCompanion", "NaturesBondAnimalCompanion") then return true end
@@ -22330,7 +22330,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("CompanionMasterLVL_Druid"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CompanionDisable_AnimalCompanion"] == 0)
         end,
       },
@@ -22342,7 +22342,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("DruidLVL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DruidAnimalCompanion") then return true end
@@ -22356,7 +22356,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Druid_CF_AnimalCompanion"] == 0)
     end,
   },
@@ -22380,7 +22380,7 @@ DefineAbility({
         "Companion ~ Animal Companion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CompanionDisable_AnimalCompanion"] == 0)
         end,
       },
@@ -22421,7 +22421,7 @@ DefineAbility({
         "Druid Domain ~ Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("NatureBondDruidDomain", "NaturesBondDruidDomain") then return true end
@@ -22443,7 +22443,7 @@ DefineAbility({
       Category="DOMAIN",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DruidDomainSelection") then return true end
@@ -22471,7 +22471,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Druid_CF_DruidDomain"] == 0)
     end,
   },
@@ -22520,7 +22520,7 @@ DefineAbility({
   },
   SourcePage="p.41",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DruidAirAllowed"] == 1)
     end,
   },
@@ -22601,7 +22601,7 @@ DefineAbility({
   },
   SourcePage="p.41",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DruidAnimalAllowed"] == 1)
     end,
   },
@@ -22682,7 +22682,7 @@ DefineAbility({
   },
   SourcePage="p.43",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DruidEarthAllowed"] == 1)
     end,
   },
@@ -22763,7 +22763,7 @@ DefineAbility({
   },
   SourcePage="p.44",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DruidFireAllowed"] == 1)
     end,
   },
@@ -22844,7 +22844,7 @@ DefineAbility({
   },
   SourcePage="p.46",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DruidPlantAllowed"] == 1)
     end,
   },
@@ -22925,7 +22925,7 @@ DefineAbility({
   },
   SourcePage="p.48",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DruidWaterAllowed"] == 1)
     end,
   },
@@ -23006,7 +23006,7 @@ DefineAbility({
   },
   SourcePage="p.48",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["DruidWeatherAllowed"] == 1)
     end,
   },
@@ -23086,7 +23086,7 @@ DefineAbility({
       Formula("WildShapeDuration"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 9) and (character.Variables["Druid_CF_WildShapeUses20"] == 0)
       end,
     },
@@ -23124,10 +23124,10 @@ ModifyAbility({
   Description={
     Format="You can change into any Small or Medium animal.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 1) and (character.Variables["WildShapeAbilityLevel"] >= 1)
       end,
     },
@@ -23139,10 +23139,10 @@ ModifyAbility({
   Description={
     Format="You can change into any Tiny, Small, Medium or Large animal, or a Small elemental.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0) and (character.Variables["NoElementalShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 2) and (character.Variables["WildShapeAbilityLevel"] >= 2)
       end,
     },
@@ -23154,10 +23154,10 @@ ModifyAbility({
   Description={
     Format="You can change into any Tiny, Small, Medium or Large animal.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0) and (character.Variables["NoElementalShape"] == 1)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 2) and (character.Variables["WildShapeAbilityLevel"] >= 2)
       end,
     },
@@ -23169,10 +23169,10 @@ ModifyAbility({
   Description={
     Format="You can change into a Small elemental.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 1) and (character.Variables["NoElementalShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 2) and (character.Variables["WildShapeAbilityLevel"] >= 2)
       end,
     },
@@ -23184,10 +23184,10 @@ ModifyAbility({
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, a Small or Medium elemental, or a Small or Medium plant creature.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0) and (character.Variables["NoElementalShape"] == 0) and (character.Variables["NoPlantShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 3) and (character.Variables["WildShapeAbilityLevel"] >= 3)
       end,
     },
@@ -23199,10 +23199,10 @@ ModifyAbility({
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, or a Small or Medium elemental.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0) and (character.Variables["NoElementalShape"] == 0) and (character.Variables["NoPlantShape"] == 1)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 3) and (character.Variables["WildShapeAbilityLevel"] >= 3)
       end,
     },
@@ -23214,10 +23214,10 @@ ModifyAbility({
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, or a Small or Medium plant creature.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0) and (character.Variables["NoElementalShape"] == 1) and (character.Variables["NoPlantShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 3) and (character.Variables["WildShapeAbilityLevel"] >= 3)
       end,
     },
@@ -23229,10 +23229,10 @@ ModifyAbility({
   Description={
     Format="You can change into a Small or Medium elemental, or a Small or Medium plant creature.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 1) and (character.Variables["NoElementalShape"] == 0) and (character.Variables["NoPlantShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 3) and (character.Variables["WildShapeAbilityLevel"] >= 3)
       end,
     },
@@ -23244,10 +23244,10 @@ ModifyAbility({
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0) and (character.Variables["NoElementalShape"] == 1) and (character.Variables["NoPlantShape"] == 1)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 3) and (character.Variables["WildShapeAbilityLevel"] >= 3)
       end,
     },
@@ -23259,10 +23259,10 @@ ModifyAbility({
   Description={
     Format="You can change into a Small or Medium elemental.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 1) and (character.Variables["NoElementalShape"] == 0) and (character.Variables["NoPlantShape"] == 1)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 3) and (character.Variables["WildShapeAbilityLevel"] >= 3)
       end,
     },
@@ -23274,10 +23274,10 @@ ModifyAbility({
   Description={
     Format="You can change into a Small or Medium plant creature.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 1) and (character.Variables["NoElementalShape"] == 1) and (character.Variables["NoPlantShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 3) and (character.Variables["WildShapeAbilityLevel"] >= 3)
       end,
     },
@@ -23289,10 +23289,10 @@ ModifyAbility({
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, a Small, Medium or Large elemental, or a Small, Medium or Large plant creature.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0) and (character.Variables["NoElementalShape"] == 0) and (character.Variables["NoPlantShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 4) and (character.Variables["WildShapeAbilityLevel"] >= 4)
       end,
     },
@@ -23304,10 +23304,10 @@ ModifyAbility({
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, or a Small, Medium or Large elemental.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0) and (character.Variables["NoElementalShape"] == 0) and (character.Variables["NoPlantShape"] == 1)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 4) and (character.Variables["WildShapeAbilityLevel"] >= 4)
       end,
     },
@@ -23319,10 +23319,10 @@ ModifyAbility({
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, or a Small, Medium or Large plant creature.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0) and (character.Variables["NoElementalShape"] == 1) and (character.Variables["NoPlantShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 4) and (character.Variables["WildShapeAbilityLevel"] >= 4)
       end,
     },
@@ -23334,10 +23334,10 @@ ModifyAbility({
   Description={
     Format="You can change into a Small, Medium or Large elemental, or a Small, Medium or Large plant creature.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 1) and (character.Variables["NoElementalShape"] == 0) and (character.Variables["NoPlantShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 4) and (character.Variables["WildShapeAbilityLevel"] >= 4)
       end,
     },
@@ -23349,10 +23349,10 @@ ModifyAbility({
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0) and (character.Variables["NoElementalShape"] == 1) and (character.Variables["NoPlantShape"] == 1)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 4) and (character.Variables["WildShapeAbilityLevel"] >= 4)
       end,
     },
@@ -23364,10 +23364,10 @@ ModifyAbility({
   Description={
     Format="You can change into a Small, Medium or Large elemental.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 1) and (character.Variables["NoElementalShape"] == 0) and (character.Variables["NoPlantShape"] == 1)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 4) and (character.Variables["WildShapeAbilityLevel"] >= 4)
       end,
     },
@@ -23379,10 +23379,10 @@ ModifyAbility({
   Description={
     Format="You can change into a Small, Medium or Large plant creature.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 1) and (character.Variables["NoElementalShape"] == 1) and (character.Variables["NoPlantShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 4) and (character.Variables["WildShapeAbilityLevel"] >= 4)
       end,
     },
@@ -23394,10 +23394,10 @@ ModifyAbility({
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, a Small, Medium, Large or Huge elemental, or a Small, Medium, Large or Huge plant creature.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0) and (character.Variables["NoElementalShape"] == 0) and (character.Variables["NoPlantShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 5) and (character.Variables["WildShapeAbilityLevel"] >= 5)
       end,
     },
@@ -23409,10 +23409,10 @@ ModifyAbility({
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, or a Small, Medium, Large or Huge elemental.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0) and (character.Variables["NoElementalShape"] == 0) and (character.Variables["NoPlantShape"] == 1)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 5) and (character.Variables["WildShapeAbilityLevel"] >= 5)
       end,
     },
@@ -23424,10 +23424,10 @@ ModifyAbility({
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal, or a Small, Medium, Large or Huge plant creature.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0) and (character.Variables["NoElementalShape"] == 1) and (character.Variables["NoPlantShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 5) and (character.Variables["WildShapeAbilityLevel"] >= 5)
       end,
     },
@@ -23439,10 +23439,10 @@ ModifyAbility({
   Description={
     Format="You can change into a Small, Medium, Large or Huge elemental, or a Small, Medium, Large or Huge plant creature.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 1) and (character.Variables["NoElementalShape"] == 0) and (character.Variables["NoPlantShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 5) and (character.Variables["WildShapeAbilityLevel"] >= 5)
       end,
     },
@@ -23454,10 +23454,10 @@ ModifyAbility({
   Description={
     Format="You can change into any Diminutive, Tiny, Small, Medium, Large or Huge animal.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0) and (character.Variables["NoElementalShape"] == 1) and (character.Variables["NoPlantShape"] == 1)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 5) and (character.Variables["WildShapeAbilityLevel"] >= 5)
       end,
     },
@@ -23469,10 +23469,10 @@ ModifyAbility({
   Description={
     Format="You can change into a Small, Medium, Large or Huge elemental.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 1) and (character.Variables["NoElementalShape"] == 0) and (character.Variables["NoPlantShape"] == 1)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 5) and (character.Variables["WildShapeAbilityLevel"] >= 5)
       end,
     },
@@ -23484,10 +23484,10 @@ ModifyAbility({
   Description={
     Format="You can change into a Small, Medium, Large or Huge plant creature.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 1) and (character.Variables["NoElementalShape"] == 1) and (character.Variables["NoPlantShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 5) and (character.Variables["WildShapeAbilityLevel"] >= 5)
       end,
     },
@@ -23499,10 +23499,10 @@ ModifyAbility({
   Description={
     Format="When changing into an animal, this functions as Beast Shape I",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 1) and (character.Variables["WildShapeAbilityLevel"] >= 1)
       end,
     },
@@ -23514,10 +23514,10 @@ ModifyAbility({
   Description={
     Format="When changing into an animal, this functions as Beast Shape II",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 2) and (character.Variables["WildShapeAbilityLevel"] >= 2)
       end,
     },
@@ -23529,10 +23529,10 @@ ModifyAbility({
   Description={
     Format="When changing into an animal, this functions as Beast Shape III",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoAnimalShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 3) and (character.Variables["WildShapeAbilityLevel"] >= 3)
       end,
     },
@@ -23544,10 +23544,10 @@ ModifyAbility({
   Description={
     Format="When changing into a plant, this functions as Plant Shape I",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoPlantShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 3) and (character.Variables["WildShapeAbilityLevel"] >= 3)
       end,
     },
@@ -23559,10 +23559,10 @@ ModifyAbility({
   Description={
     Format="When changing into a plant, this functions as Plant Shape II",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoPlantShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 4) and (character.Variables["WildShapeAbilityLevel"] >= 4)
       end,
     },
@@ -23574,10 +23574,10 @@ ModifyAbility({
   Description={
     Format="When changing into a plant, this functions as Plant Shape III",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoPlantShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 5) and (character.Variables["WildShapeAbilityLevel"] >= 5)
       end,
     },
@@ -23589,10 +23589,10 @@ ModifyAbility({
   Description={
     Format="When changing into an elemental, this functions as Elemental Body I",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoElementalShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 2) and (character.Variables["WildShapeAbilityLevel"] >= 2)
       end,
     },
@@ -23604,10 +23604,10 @@ ModifyAbility({
   Description={
     Format="When changing into an elemental, this functions as Elemental Body II",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoElementalShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 3) and (character.Variables["WildShapeAbilityLevel"] >= 3)
       end,
     },
@@ -23619,10 +23619,10 @@ ModifyAbility({
   Description={
     Format="When changing into an elemental, this functions as Elemental Body III",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoElementalShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] == 4) and (character.Variables["WildShapeAbilityLevel"] >= 4)
       end,
     },
@@ -23634,10 +23634,10 @@ ModifyAbility({
   Description={
     Format="When changing into an elemental, this functions as Elemental Body IV",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NoElementalShape"] == 0)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WildShapeProgression"] >= 5) and (character.Variables["WildShapeAbilityLevel"] >= 5)
       end,
     },
@@ -23724,7 +23724,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Ability Focus (Poison)" then return true end
@@ -23860,7 +23860,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DruidWildShape"] >= 4) and (character.Variables["Druid_CF_WildShapeOptions4"] == 1)
         end,
       },
@@ -23878,7 +23878,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DruidWildShape"] >= 6) and (character.Variables["Druid_CF_WildShapeOptions6"] == 1)
         end,
       },
@@ -23896,7 +23896,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DruidWildShape"] >= 8) and (character.Variables["Druid_CF_WildShapeOptions8"] == 1)
         end,
       },
@@ -23914,7 +23914,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DruidWildShape"] >= 10) and (character.Variables["Druid_CF_WildShapeOptions10"] == 1)
         end,
       },
@@ -23932,7 +23932,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DruidWildShape"] >= 12) and (character.Variables["Druid_CF_WildShapeOptions12"] == 1)
         end,
       },
@@ -23950,7 +23950,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DruidWildShape"] >= 4) and (character.Variables["Druid_CF_WildShapeUses4"] == 1)
         end,
       },
@@ -23968,7 +23968,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DruidWildShape"] >= 6) and (character.Variables["Druid_CF_WildShapeUses6"] == 1)
         end,
       },
@@ -23986,7 +23986,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DruidWildShape"] >= 8) and (character.Variables["Druid_CF_WildShapeUses8"] == 1)
         end,
       },
@@ -24004,7 +24004,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DruidWildShape"] >= 10) and (character.Variables["Druid_CF_WildShapeUses10"] == 1)
         end,
       },
@@ -24022,7 +24022,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DruidWildShape"] >= 12) and (character.Variables["Druid_CF_WildShapeUses12"] == 1)
         end,
       },
@@ -24040,7 +24040,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DruidWildShape"] >= 14) and (character.Variables["Druid_CF_WildShapeUses14"] == 1)
         end,
       },
@@ -24058,7 +24058,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DruidWildShape"] >= 16) and (character.Variables["Druid_CF_WildShapeUses16"] == 1)
         end,
       },
@@ -24076,7 +24076,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DruidWildShape"] >= 18) and (character.Variables["Druid_CF_WildShapeUses18"] == 1)
         end,
       },
@@ -24094,7 +24094,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DruidWildShape"] >= 20) and (character.Variables["Druid_CF_WildShapeUses20"] == 1)
         end,
       },
@@ -24140,7 +24140,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WeaponSpecQualifyLVL"] >= 4)
         end,
       },
@@ -24164,7 +24164,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisruptiveQualifyLVL"] >= 6)
         end,
       },
@@ -24188,7 +24188,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GreatShieldFocusQualifyLVL"] >= 8)
         end,
       },
@@ -24212,7 +24212,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GreatWeapFocusQualifyLVL"] >= 8)
         end,
       },
@@ -24236,7 +24236,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SpellbreakerQualifyLVL"] >= 6)
         end,
       },
@@ -24260,7 +24260,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GreatWeapSpecQualifyLVL"] >= 12)
         end,
       },
@@ -24284,7 +24284,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PenetratingStrikeQualifyLVL"] >= 12)
         end,
       },
@@ -24308,7 +24308,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CriticalMasteryQualifyLVL"] >= 14)
         end,
       },
@@ -24332,7 +24332,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GreatPenetratingStrikeQualifyLVL"] >= 16)
         end,
       },
@@ -24402,7 +24402,7 @@ DefineAbility({
         "Armor Training ~ Heavy Armor",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArmorTrainingLVL"] >= 7)
         end,
       },
@@ -24413,7 +24413,7 @@ DefineAbility({
       Category="MISC",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.HasEquipped(function (item) return item.IsType("Armor") end)) and (character.Variables["ArmorTrainingTier"] >= 1)
         end,
       },
@@ -24425,7 +24425,7 @@ DefineAbility({
       Category="MISC",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.HasEquipped(function (item) return item.IsType("Armor") end)) and (character.Variables["ArmorTrainingTier"] >= 2)
         end,
       },
@@ -24437,7 +24437,7 @@ DefineAbility({
       Category="MISC",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.HasEquipped(function (item) return item.IsType("Armor") end)) and (character.Variables["ArmorTrainingTier"] >= 3)
         end,
       },
@@ -24449,7 +24449,7 @@ DefineAbility({
       Category="MISC",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.HasEquipped(function (item) return item.IsType("Armor") end)) and (character.Variables["ArmorTrainingTier"] >= 4)
         end,
       },
@@ -24461,7 +24461,7 @@ DefineAbility({
       Category="MISC",
       Formula=Formula("ArmorTrainingTier"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.HasEquipped(function (item) return item.IsType("Armor") end))
         end,
       },
@@ -24512,7 +24512,7 @@ DefineAbility({
   DamageReduction={
     Value="5/-",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.HasEquipped(function (item) return item.IsType("Armor") end)) or (character.HasEquipped(function (item) return item.IsType("Shield") end))
       end,
     },
@@ -24593,10 +24593,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_ArmorTraining1"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.HasEquipped(function (item) return item.IsType("Armor") end)) and (character.Variables["ArmorTraining"] >= 1)
         end,
       },
@@ -24614,10 +24614,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_ArmorTraining2"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.HasEquipped(function (item) return item.IsType("Armor") end)) and (character.Variables["ArmorTraining"] >= 2)
         end,
       },
@@ -24635,10 +24635,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_ArmorTraining3"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.HasEquipped(function (item) return item.IsType("Armor") end)) and (character.Variables["ArmorTraining"] >= 3)
         end,
       },
@@ -24656,10 +24656,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_ArmorTraining4"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.HasEquipped(function (item) return item.IsType("Armor") end)) and (character.Variables["ArmorTraining"] >= 4)
         end,
       },
@@ -24677,10 +24677,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterLvl"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_BonusFeat1"] == 1)
         end,
       },
@@ -24698,10 +24698,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterLvl"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_BonusFeat2"] == 1)
         end,
       },
@@ -24719,10 +24719,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterLvl"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_BonusFeat4"] == 1)
         end,
       },
@@ -24740,10 +24740,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterLvl"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_BonusFeat6"] == 1)
         end,
       },
@@ -24761,10 +24761,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterLvl"] >= 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_BonusFeat8"] == 1)
         end,
       },
@@ -24782,10 +24782,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterLvl"] >= 10)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_BonusFeat10"] == 1)
         end,
       },
@@ -24803,10 +24803,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterLvl"] >= 12)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_BonusFeat12"] == 1)
         end,
       },
@@ -24824,10 +24824,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterLvl"] >= 14)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_BonusFeat14"] == 1)
         end,
       },
@@ -24845,10 +24845,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterLvl"] >= 16)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_BonusFeat16"] == 1)
         end,
       },
@@ -24866,10 +24866,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterLvl"] >= 18)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_BonusFeat18"] == 1)
         end,
       },
@@ -24887,10 +24887,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterLvl"] >= 20)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_BonusFeat20"] == 1)
         end,
       },
@@ -24908,10 +24908,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_WeaponTraining1"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterWeaponTrainingLVL"] >= 5)
         end,
       },
@@ -24929,10 +24929,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_WeaponTraining2"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterWeaponTrainingLVL"] >= 9)
         end,
       },
@@ -24950,10 +24950,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_WeaponTraining3"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterWeaponTrainingLVL"] >= 13)
         end,
       },
@@ -24971,10 +24971,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_WeaponTraining4"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterWeaponTrainingLVL"] >= 17)
         end,
       },
@@ -24994,7 +24994,7 @@ DefineAbility({
       Formula("WeaponTrainingThrown"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["WeaponTrainingThrown"] > 0)
       end,
     },
@@ -25006,7 +25006,7 @@ DefineAbility({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterWeaponTrainingLVL"] >= 5)
         end,
       },
@@ -25018,7 +25018,7 @@ DefineAbility({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterWeaponTrainingLVL"] >= 9)
         end,
       },
@@ -25030,7 +25030,7 @@ DefineAbility({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterWeaponTrainingLVL"] >= 13)
         end,
       },
@@ -25042,7 +25042,7 @@ DefineAbility({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FighterWeaponTrainingLVL"] >= 17)
         end,
       },
@@ -25180,7 +25180,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 1 Axes" then return true end
@@ -25202,7 +25202,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 1 Blades Heavy" then return true end
@@ -25224,7 +25224,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 1 Blades Light" then return true end
@@ -25246,7 +25246,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 1 Bows" then return true end
@@ -25268,7 +25268,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 1 Close" then return true end
@@ -25290,7 +25290,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 1 Crossbows" then return true end
@@ -25312,7 +25312,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 1 Double" then return true end
@@ -25334,7 +25334,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 1 Flails" then return true end
@@ -25356,7 +25356,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 1 Hammers" then return true end
@@ -25378,7 +25378,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 1 Monk" then return true end
@@ -25400,7 +25400,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 1 Natural" then return true end
@@ -25422,7 +25422,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 1 Pole Arms" then return true end
@@ -25444,7 +25444,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 1 Spears" then return true end
@@ -25466,7 +25466,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierOne"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 1 Thrown" then return true end
@@ -25488,7 +25488,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 2 Axes" then return true end
@@ -25510,7 +25510,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 2 Blades Heavy" then return true end
@@ -25532,7 +25532,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 2 Blades Light" then return true end
@@ -25554,7 +25554,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 2 Bows" then return true end
@@ -25576,7 +25576,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 2 Close" then return true end
@@ -25598,7 +25598,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 2 Crossbows" then return true end
@@ -25620,7 +25620,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 2 Double" then return true end
@@ -25642,7 +25642,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 2 Flails" then return true end
@@ -25664,7 +25664,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 2 Hammers" then return true end
@@ -25686,7 +25686,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 2 Monk" then return true end
@@ -25708,7 +25708,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 2 Natural" then return true end
@@ -25730,7 +25730,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 2 Pole Arms" then return true end
@@ -25752,7 +25752,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 2 Spears" then return true end
@@ -25774,7 +25774,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierTwo"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 2 Thrown" then return true end
@@ -25796,7 +25796,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 3 Axes" then return true end
@@ -25818,7 +25818,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 3 Blades Heavy" then return true end
@@ -25840,7 +25840,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 3 Blades Light" then return true end
@@ -25862,7 +25862,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 3 Bows" then return true end
@@ -25884,7 +25884,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 3 Close" then return true end
@@ -25906,7 +25906,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 3 Crossbows" then return true end
@@ -25928,7 +25928,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 3 Double" then return true end
@@ -25950,7 +25950,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 3 Flails" then return true end
@@ -25972,7 +25972,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 3 Hammers" then return true end
@@ -25994,7 +25994,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 3 Monk" then return true end
@@ -26016,7 +26016,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 3 Natural" then return true end
@@ -26038,7 +26038,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 3 Pole Arms" then return true end
@@ -26060,7 +26060,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 3 Spears" then return true end
@@ -26082,7 +26082,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierThree"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 3 Thrown" then return true end
@@ -26104,7 +26104,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 4 Axes" then return true end
@@ -26126,7 +26126,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 4 Blades Heavy" then return true end
@@ -26148,7 +26148,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 4 Blades Light" then return true end
@@ -26170,7 +26170,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 4 Bows" then return true end
@@ -26192,7 +26192,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 4 Close" then return true end
@@ -26214,7 +26214,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 4 Crossbows" then return true end
@@ -26236,7 +26236,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 4 Double" then return true end
@@ -26258,7 +26258,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 4 Flails" then return true end
@@ -26280,7 +26280,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 4 Hammers" then return true end
@@ -26302,7 +26302,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 4 Monk" then return true end
@@ -26324,7 +26324,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 4 Natural" then return true end
@@ -26346,7 +26346,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 4 Pole Arms" then return true end
@@ -26368,7 +26368,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 4 Spears" then return true end
@@ -26390,7 +26390,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("WeaponTrainingTierFour"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Weapon Training 4 Thrown" then return true end
@@ -26425,7 +26425,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingAxes") then return true end
@@ -26461,7 +26461,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingBladesHeavy") then return true end
@@ -26497,7 +26497,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingBladesLight") then return true end
@@ -26533,7 +26533,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingBows") then return true end
@@ -26580,7 +26580,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingClose") then return true end
@@ -26616,7 +26616,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingCrossbows") then return true end
@@ -26652,7 +26652,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingDouble") then return true end
@@ -26688,7 +26688,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingFlails") then return true end
@@ -26724,7 +26724,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingHammers") then return true end
@@ -26760,7 +26760,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingMonk") then return true end
@@ -26807,7 +26807,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingNatural") then return true end
@@ -26843,7 +26843,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingPoleArms") then return true end
@@ -26879,7 +26879,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingSpears") then return true end
@@ -26915,7 +26915,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingThrown") then return true end
@@ -26951,7 +26951,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingAxes") then return true end
@@ -26987,7 +26987,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingBladesHeavy") then return true end
@@ -27023,7 +27023,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingBladesLight") then return true end
@@ -27059,7 +27059,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingBows") then return true end
@@ -27106,7 +27106,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingClose") then return true end
@@ -27142,7 +27142,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingCrossbows") then return true end
@@ -27178,7 +27178,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingDouble") then return true end
@@ -27214,7 +27214,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingFlails") then return true end
@@ -27250,7 +27250,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingHammers") then return true end
@@ -27286,7 +27286,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingMonk") then return true end
@@ -27333,7 +27333,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingNatural") then return true end
@@ -27369,7 +27369,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingPoleArms") then return true end
@@ -27405,7 +27405,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingSpears") then return true end
@@ -27441,7 +27441,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingThrown") then return true end
@@ -27477,7 +27477,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingAxes") then return true end
@@ -27513,7 +27513,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingBladesHeavy") then return true end
@@ -27549,7 +27549,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingBladesLight") then return true end
@@ -27585,7 +27585,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingBows") then return true end
@@ -27632,7 +27632,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingClose") then return true end
@@ -27668,7 +27668,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingCrossbows") then return true end
@@ -27704,7 +27704,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingDouble") then return true end
@@ -27740,7 +27740,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingFlails") then return true end
@@ -27776,7 +27776,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingHammers") then return true end
@@ -27812,7 +27812,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingMonk") then return true end
@@ -27859,7 +27859,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingNatural") then return true end
@@ -27895,7 +27895,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingPoleArms") then return true end
@@ -27931,7 +27931,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingSpears") then return true end
@@ -27967,7 +27967,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingThrown") then return true end
@@ -28003,7 +28003,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingAxes") then return true end
@@ -28039,7 +28039,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingBladesHeavy") then return true end
@@ -28075,7 +28075,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingBladesLight") then return true end
@@ -28111,7 +28111,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingBows") then return true end
@@ -28158,7 +28158,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingClose") then return true end
@@ -28194,7 +28194,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingCrossbows") then return true end
@@ -28230,7 +28230,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingDouble") then return true end
@@ -28266,7 +28266,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingFlails") then return true end
@@ -28302,7 +28302,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingHammers") then return true end
@@ -28338,7 +28338,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingMonk") then return true end
@@ -28385,7 +28385,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingNatural") then return true end
@@ -28421,7 +28421,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingPoleArms") then return true end
@@ -28457,7 +28457,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingSpears") then return true end
@@ -28493,7 +28493,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("WeaponTrainingThrown") then return true end
@@ -28571,7 +28571,7 @@ DefineAbility({
       Category="COMBAT",
       Formula=Formula("MonkACBonus"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ENCUMBERANCE"] == 0) and (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED]\")"] == 0) and (character.Variables["var(\"COUNT[EQTYPE.SHIELD.EQUIPPED]\")"] == 0)
         end,
       },
@@ -28597,7 +28597,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("MonkACBonus"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ENCUMBERANCE"] == 0) and (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED]\")"] == 0) and (character.Variables["var(\"COUNT[EQTYPE.SHIELD.EQUIPPED]\")"] == 0)
         end,
       },
@@ -28609,7 +28609,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("max(WIS,0)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkLVL"] >= 1)
         end,
       },
@@ -28697,7 +28697,7 @@ DefineAbility({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ENCUMBERANCE"] == 0) and (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED]\")"] == 0)
         end,
       },
@@ -29239,10 +29239,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkLVL"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_SlowFall10"] == 1)
         end,
       },
@@ -29260,10 +29260,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkLVL"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_SlowFall20"] == 1)
         end,
       },
@@ -29281,10 +29281,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkLVL"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_SlowFall30"] == 1)
         end,
       },
@@ -29302,10 +29302,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkLVL"] >= 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_SlowFall40"] == 1)
         end,
       },
@@ -29323,10 +29323,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkLVL"] >= 10)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_SlowFall50"] == 1)
         end,
       },
@@ -29344,10 +29344,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkLVL"] >= 12)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_SlowFall60"] == 1)
         end,
       },
@@ -29365,10 +29365,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkLVL"] >= 14)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_SlowFall70"] == 1)
         end,
       },
@@ -29386,10 +29386,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkLVL"] >= 16)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_SlowFall80"] == 1)
         end,
       },
@@ -29407,10 +29407,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkLVL"] >= 18)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_SlowFall90"] == 1)
         end,
       },
@@ -29695,7 +29695,7 @@ DefineAbility({
         "Ki Stat Choice ~ Wisdom",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["KiPool"] == 1) and (character.Variables["KiPoolWis"] == 1)
         end,
       },
@@ -29707,7 +29707,7 @@ DefineAbility({
         "Ki Stat Choice ~ Charisma",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["KiPool"] == 1) and (character.Variables["KiPoolCha"] == 1)
         end,
       },
@@ -29719,7 +29719,7 @@ DefineAbility({
         "Ki Stat Choice ~ Intelligence",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["KiPool"] == 1) and (character.Variables["KiPoolInt"] == 1)
         end,
       },
@@ -29730,7 +29730,7 @@ DefineAbility({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["KiPool"] >= 2)
         end,
       },
@@ -29764,7 +29764,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["KiPoolWis"] > 0)
     end,
   },
@@ -29785,7 +29785,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["KiPoolCha"] > 0)
     end,
   },
@@ -29806,7 +29806,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["KiPoolInt"] > 0)
     end,
   },
@@ -29820,10 +29820,10 @@ ModifyAbility({
   Description={
     Format="You can make a flurry of blows as a full-attack action. When doing so, you may make one additional attack, taking a -2 penalty on all of your attacks, as if using the Two-Weapon Fighting feat. These attacks can be any combination of unarmed strikes and attacks with a monk speciak weapon (you do not need to use two weapons to utlilize this ability). For the purpose of these attacks, your base attack bonus is equal to your monk level. For all other purposes, such as qualifying for a feat or a prestige class, you use your normal base attack bonus.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["FlurryLVL"] >= 1)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["FlurryLVL"] < 8)
       end,
     },
@@ -29835,10 +29835,10 @@ ModifyAbility({
   Description={
     Format="You can make a flurry of blows as a full-attack action. When doing so, you may make two additional attacks using any combination of unarmed strikes or attack with a special monk weapon (kama, nunchaku, quarterstaff, sai, shuriken, and siangham) as if using the Two-Weapon Fighting and Improved Two-Weapon Fighting feats. For the purpose of these attacks, your base attack bonus is equal to your monk level. For all other purposes, such as qualifying for a feat or a prestige class, you use your normal base attack bonus.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["FlurryLVL"] >= 8)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["FlurryLVL"] < 15)
       end,
     },
@@ -29850,7 +29850,7 @@ ModifyAbility({
   Description={
     Format="You can make a flurry of blows as a full-attack action. When doing so, you may make three additional attacks using any combination of unarmed strikes or attack with a special monk weapon (kama, nunchaku, quarterstaff, sai, shuriken, and siangham) as if using the Two-Weapon Fighting, Improved Two-Weapon Fighting, and Greater Two-Weapon Fighting feats. For the purpose of these attacks, your base attack bonus is equal to your monk level. For all other purposes, such as qualifying for a feat or a prestige class, you use your normal base attack bonus.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["FlurryLVL"] >= 15)
       end,
     },
@@ -29862,10 +29862,10 @@ ModifyAbility({
   Description={
     Format="You gain Stunning Fist as a bonus feat. You can choose to make the target of your Stunning Fist fatigued. This condition replaces stunning the target for 1 round, and a successful saving throw still negates the effect. You must choose which condition will apply before the attack roll is made. These effects do not stack with themselves, but additional hits do increase the duration.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["StunningFistMonkLVL"] >= 4)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["StunningFistMonkLVL"] < 8)
       end,
     },
@@ -29877,10 +29877,10 @@ ModifyAbility({
   Description={
     Format="You gain Stunning Fist as a bonus feat. You can choose to make the target of your Stunning Fist fatigued, or sickened for 1 minute. This condition replaces stunning the target for 1 round, and a successful saving throw still negates the effect. You must choose which condition will apply before the attack roll is made. These effects do not stack with themselves, but additional hits do increase the duration.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["StunningFistMonkLVL"] >= 8)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["StunningFistMonkLVL"] < 12)
       end,
     },
@@ -29892,10 +29892,10 @@ ModifyAbility({
   Description={
     Format="You gain Stunning Fist as a bonus feat. You can choose to make the target of your Stunning Fist fatigued, sickened for 1 minute, or staggered for 1d6+1 rounds. This condition replaces stunning the target for 1 round, and a successful saving throw still negates the effect. You must choose which condition will apply before the attack roll is made. These effects do not stack with themselves, but additional hits do increase the duration.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["StunningFistMonkLVL"] >= 12)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["StunningFistMonkLVL"] < 16)
       end,
     },
@@ -29907,10 +29907,10 @@ ModifyAbility({
   Description={
     Format="You gain Stunning Fist as a bonus feat. You can choose to make the target of your Stunning Fist fatigued, sickened for 1 minute, staggered for 1d6+1 rounds, or permanently blinded or deafened. This condition replaces stunning the target for 1 round, and a successful saving throw still negates the effect. You must choose which condition will apply before the attack roll is made. These effects do not stack with themselves, but additional hits do increase the duration.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["MonkStunningFistLVL"] >= 16)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["StunningFistMonkLVL"] < 20)
       end,
     },
@@ -29922,7 +29922,7 @@ ModifyAbility({
   Description={
     Format="You gain Stunning Fist as a bonus feat. You can choose to make the target of your Stunning Fist fatigued, sickened for 1 minute, staggered for 1d6+1 rounds, permanently blinded or deafened, or paralyzed for 1d6+1 rounds. This condition replaces stunning the target for 1 round, and a successful saving throw still negates the effect. You must choose which condition will apply before the attack roll is made. These effects do not stack with themselves, but additional hits do increase the duration.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["StunningFistMonkLVL"] >= 20)
       end,
     },
@@ -29940,7 +29940,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_KiPoolAbilities1"] == 0)
         end,
       },
@@ -29958,10 +29958,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["KiPoolLVL"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_KiPoolAbilities7"] == 0)
         end,
       },
@@ -29979,10 +29979,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["KiPoolLVL"] >= 10)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_KiPoolAbilities10"] == 0)
         end,
       },
@@ -30000,10 +30000,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["KiPoolLVL"] >= 16)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_KiPoolAbilities16"] == 0)
         end,
       },
@@ -30022,7 +30022,7 @@ ModifyAbility({
       Formula("KiPoints"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["KiPoolProgression"] == 1)
       end,
     },
@@ -30037,7 +30037,7 @@ ModifyAbility({
       Formula("KiPoints"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["KiPoolProgression"] == 2)
       end,
     },
@@ -30052,7 +30052,7 @@ ModifyAbility({
       Formula("KiPoints"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["KiPoolProgression"] == 3)
       end,
     },
@@ -30067,7 +30067,7 @@ ModifyAbility({
       Formula("KiPoints"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["KiPoolProgression"] == 4)
       end,
     },
@@ -30082,7 +30082,7 @@ ModifyAbility({
       Formula("SlowFall"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["SlowFallLVL"] < 20)
       end,
     },
@@ -30094,7 +30094,7 @@ ModifyAbility({
   Description={
     Format="You can use a nearby wall to slow your descent and fall any distance without harm.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["SlowFallLVL"] == 20)
       end,
     },
@@ -30111,7 +30111,7 @@ ModifyAbility({
         "Monk Bonus Feat ~ Default",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_BonusFeats"] == 0)
         end,
       },
@@ -30139,10 +30139,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatCount"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_BonusFeat1"] == 1)
         end,
       },
@@ -30160,10 +30160,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatCount"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_BonusFeat2"] == 1)
         end,
       },
@@ -30181,10 +30181,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatCount"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_BonusFeat6"] == 1)
         end,
       },
@@ -30202,10 +30202,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatCount"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_BonusFeat10"] == 1)
         end,
       },
@@ -30223,10 +30223,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatCount"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_BonusFeat14"] == 1)
         end,
       },
@@ -30244,10 +30244,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatCount"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_BonusFeat18"] == 1)
         end,
       },
@@ -30337,7 +30337,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 1)
         end,
       },
@@ -30355,7 +30355,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 1)
         end,
       },
@@ -30373,7 +30373,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 1)
         end,
       },
@@ -30391,7 +30391,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 1)
         end,
       },
@@ -30409,7 +30409,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 1)
         end,
       },
@@ -30427,7 +30427,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 1)
         end,
       },
@@ -30445,7 +30445,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 1)
         end,
       },
@@ -30463,7 +30463,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 6)
         end,
       },
@@ -30481,7 +30481,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 6)
         end,
       },
@@ -30499,7 +30499,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 6)
         end,
       },
@@ -30517,7 +30517,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 6)
         end,
       },
@@ -30535,7 +30535,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 6)
         end,
       },
@@ -30553,7 +30553,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 6)
         end,
       },
@@ -30571,7 +30571,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 10)
         end,
       },
@@ -30589,7 +30589,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 10)
         end,
       },
@@ -30607,7 +30607,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 10)
         end,
       },
@@ -30625,7 +30625,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkBonusFeatLVL"] >= 10)
         end,
       },
@@ -30650,17 +30650,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Catch Off-Guard" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_CatchOffGuard"] >= 1)
     end,
   },
@@ -30683,17 +30683,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Combat Reflexes" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_CombatReflexes"] >= 1)
     end,
   },
@@ -30716,17 +30716,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Deflect Arrows" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_DeflectArrows"] >= 1)
     end,
   },
@@ -30749,17 +30749,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Dodge" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_Dodge"] >= 1)
     end,
   },
@@ -30782,17 +30782,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Improved Grapple" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_ImprovedGrapple"] >= 1)
     end,
   },
@@ -30815,17 +30815,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Scorpion Style" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_ScorpionStyle"] >= 1)
     end,
   },
@@ -30848,17 +30848,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Throw Anything" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_ThrowAnything"] >= 1)
     end,
   },
@@ -30881,17 +30881,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Gorgon's Fist" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 6)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_GorgonsFist"] >= 1)
     end,
   },
@@ -30914,17 +30914,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Improved Bull Rush" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 6)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_ImprovedBullRush"] >= 1)
     end,
   },
@@ -30947,17 +30947,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Improved Disarm" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 6)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_ImprovedDisarm"] >= 1)
     end,
   },
@@ -30980,17 +30980,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Improved Feint" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 6)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_ImprovedFeint"] >= 1)
     end,
   },
@@ -31013,17 +31013,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Improved Trip" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 6)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_ImprovedTrip"] >= 1)
     end,
   },
@@ -31046,17 +31046,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Mobility" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 6)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_Mobility"] >= 1)
     end,
   },
@@ -31089,10 +31089,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 10)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_ImprovedCritical"] >= 1)
     end,
   },
@@ -31115,17 +31115,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Medusa's Wrath" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 10)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_MedusasWrath"] >= 1)
     end,
   },
@@ -31148,17 +31148,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Snatch Arrows" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 10)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_SnatchArrows"] >= 1)
     end,
   },
@@ -31181,17 +31181,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Spring Attack" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeatLVL"] >= 10)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MonkBonusFeat_SpringAttack"] >= 1)
     end,
   },
@@ -31210,7 +31210,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 1",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkUnarmedDamageProgression"] == 0)
         end,
       },
@@ -31222,7 +31222,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 4",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkUnarmedDamageProgression"] == 1)
         end,
       },
@@ -31234,7 +31234,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 8",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkUnarmedDamageProgression"] == 2)
         end,
       },
@@ -31246,7 +31246,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 12",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkUnarmedDamageProgression"] == 3)
         end,
       },
@@ -31258,7 +31258,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 16",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkUnarmedDamageProgression"] == 4)
         end,
       },
@@ -31270,7 +31270,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MonkUnarmedDamageProgression"] == 5)
         end,
       },
@@ -31295,7 +31295,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("F")
         end,
       },
@@ -31307,7 +31307,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("D")
         end,
       },
@@ -31319,7 +31319,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("3"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("T")
         end,
       },
@@ -31331,7 +31331,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("S")
         end,
       },
@@ -31343,7 +31343,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("M")
         end,
       },
@@ -31355,7 +31355,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("6"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("L")
         end,
       },
@@ -31367,7 +31367,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("7"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("H")
         end,
       },
@@ -31379,7 +31379,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("G")
         end,
       },
@@ -31391,7 +31391,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("9"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.BaseSize == GetSize("C")
         end,
       },
@@ -31412,7 +31412,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 1 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] <= 1)
         end,
       },
@@ -31424,7 +31424,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 1 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 2)
         end,
       },
@@ -31436,7 +31436,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 1 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 3)
         end,
       },
@@ -31448,7 +31448,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 1 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 4)
         end,
       },
@@ -31460,7 +31460,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 1 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 5)
         end,
       },
@@ -31472,7 +31472,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 1 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 6)
         end,
       },
@@ -31484,7 +31484,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 1 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 7)
         end,
       },
@@ -31496,7 +31496,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 1 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 8)
         end,
       },
@@ -31508,7 +31508,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 1 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] >= 9)
         end,
       },
@@ -31526,7 +31526,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 4 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] <= 1)
         end,
       },
@@ -31538,7 +31538,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 4 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 2)
         end,
       },
@@ -31550,7 +31550,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 4 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 3)
         end,
       },
@@ -31562,7 +31562,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 4 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 4)
         end,
       },
@@ -31574,7 +31574,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 4 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 5)
         end,
       },
@@ -31586,7 +31586,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 4 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 6)
         end,
       },
@@ -31598,7 +31598,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 4 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 7)
         end,
       },
@@ -31610,7 +31610,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 4 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 8)
         end,
       },
@@ -31622,7 +31622,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 4 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] >= 9)
         end,
       },
@@ -31640,7 +31640,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 8 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] <= 1)
         end,
       },
@@ -31652,7 +31652,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 8 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 2)
         end,
       },
@@ -31664,7 +31664,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 8 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 3)
         end,
       },
@@ -31676,7 +31676,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 8 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 4)
         end,
       },
@@ -31688,7 +31688,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 8 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 5)
         end,
       },
@@ -31700,7 +31700,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 8 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 6)
         end,
       },
@@ -31712,7 +31712,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 8 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 7)
         end,
       },
@@ -31724,7 +31724,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 8 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 8)
         end,
       },
@@ -31736,7 +31736,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 8 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] >= 9)
         end,
       },
@@ -31754,7 +31754,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 12 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] <= 1)
         end,
       },
@@ -31766,7 +31766,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 12 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 2)
         end,
       },
@@ -31778,7 +31778,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 12 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 3)
         end,
       },
@@ -31790,7 +31790,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 12 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 4)
         end,
       },
@@ -31802,7 +31802,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 12 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 5)
         end,
       },
@@ -31814,7 +31814,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 12 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 6)
         end,
       },
@@ -31826,7 +31826,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 12 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 7)
         end,
       },
@@ -31838,7 +31838,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 12 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 8)
         end,
       },
@@ -31850,7 +31850,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 12 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] >= 9)
         end,
       },
@@ -31868,7 +31868,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 16 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] <= 1)
         end,
       },
@@ -31880,7 +31880,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 16 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 2)
         end,
       },
@@ -31892,7 +31892,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 16 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 3)
         end,
       },
@@ -31904,7 +31904,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 16 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 4)
         end,
       },
@@ -31916,7 +31916,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 16 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 5)
         end,
       },
@@ -31928,7 +31928,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 16 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 6)
         end,
       },
@@ -31940,7 +31940,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 16 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 7)
         end,
       },
@@ -31952,7 +31952,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 16 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 8)
         end,
       },
@@ -31964,7 +31964,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 16 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] >= 9)
         end,
       },
@@ -31982,7 +31982,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 20 (Fine)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] <= 1)
         end,
       },
@@ -31994,7 +31994,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 20 (Diminutive)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 2)
         end,
       },
@@ -32006,7 +32006,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 20 (Tiny)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 3)
         end,
       },
@@ -32018,7 +32018,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 20 (Small)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 4)
         end,
       },
@@ -32030,7 +32030,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 20 (Medium)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 5)
         end,
       },
@@ -32042,7 +32042,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 20 (Large)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 6)
         end,
       },
@@ -32054,7 +32054,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 20 (Huge)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 7)
         end,
       },
@@ -32066,7 +32066,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 20 (Gargantuan)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] == 8)
         end,
       },
@@ -32078,7 +32078,7 @@ DefineAbility({
         "Monk Unarmed Damage LVL 20 (Colossal)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UDAMAttackSize"] >= 9)
         end,
       },
@@ -34086,10 +34086,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Mercies"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_Mercy3"] == 1)
         end,
       },
@@ -34107,10 +34107,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Mercies"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_Mercy6"] == 1)
         end,
       },
@@ -34128,10 +34128,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Mercies"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_Mercy9"] == 1)
         end,
       },
@@ -34149,10 +34149,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Mercies"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_Mercy12"] == 1)
         end,
       },
@@ -34170,10 +34170,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Mercies"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_Mercy15"] == 1)
         end,
       },
@@ -34191,10 +34191,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Mercies"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_Mercy18"] == 1)
         end,
       },
@@ -34365,7 +34365,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Paladin_CF_BondedWeapon"] == 0)
     end,
   },
@@ -34393,14 +34393,14 @@ DefineAbility({
         "Special Mount ~ Standard Choices",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.IsAnyType("SpecialMountAlternate") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("Special Mount") then return true end
@@ -34416,7 +34416,7 @@ DefineAbility({
         "Companion ~ Special Mount",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CompanionDisable_PaladinMount"] == 0)
         end,
       },
@@ -34461,7 +34461,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("CompanionMasterLVL_Paladin"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CompanionDisable_PaladinMount"] == 0)
         end,
       },
@@ -34478,7 +34478,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Paladin_CF_BondedMount"] == 0)
     end,
   },
@@ -34538,10 +34538,10 @@ ModifyAbility({
       Formula("SpecialMountSpellLevel"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DivineBondLVL"] >= 5)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DivineBondLVL"] < 11)
       end,
     },
@@ -34557,10 +34557,10 @@ ModifyAbility({
       Formula("SpecialMountSpellLevel"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DivineBondLVL"] >= 11)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DivineBondLVL"] < 15)
       end,
     },
@@ -34577,10 +34577,10 @@ ModifyAbility({
       Formula("SpecialMountSpellLevel"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DivineBondLVL"] >= 11)
       end,
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DivineBondLVL"] < 15)
       end,
     },
@@ -34596,7 +34596,7 @@ DefineAbility({
   DisplayName="Mercy (Fatigued)",
   SourcePage="p.61",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MercyLVL"] >= 3)
     end,
   },
@@ -34618,7 +34618,7 @@ DefineAbility({
   DisplayName="Mercy (Shaken)",
   SourcePage="p.61",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MercyLVL"] >= 3)
     end,
   },
@@ -34640,7 +34640,7 @@ DefineAbility({
   DisplayName="Mercy (Sickened)",
   SourcePage="p.61",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MercyLVL"] >= 3)
     end,
   },
@@ -34662,7 +34662,7 @@ DefineAbility({
   DisplayName="Mercy (Dazed)",
   SourcePage="p.61",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MercyLVL"] >= 6)
     end,
   },
@@ -34687,7 +34687,7 @@ DefineAbility({
   DisplayName="Mercy (Diseased)",
   SourcePage="p.61",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MercyLVL"] >= 6)
     end,
   },
@@ -34709,7 +34709,7 @@ DefineAbility({
   DisplayName="Mercy (Staggered)",
   SourcePage="p.61",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MercyLVL"] >= 6)
     end,
   },
@@ -34734,7 +34734,7 @@ DefineAbility({
   DisplayName="Mercy (Cursed)",
   SourcePage="p.61",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MercyLVL"] >= 9)
     end,
   },
@@ -34756,14 +34756,14 @@ DefineAbility({
   DisplayName="Mercy (Exhausted)",
   SourcePage="p.61",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Mercy ~ Fatigued" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MercyLVL"] >= 9)
     end,
   },
@@ -34785,14 +34785,14 @@ DefineAbility({
   DisplayName="Mercy (Frightened)",
   SourcePage="p.61",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Mercy ~ Shaken" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MercyLVL"] >= 9)
     end,
   },
@@ -34814,14 +34814,14 @@ DefineAbility({
   DisplayName="Mercy (Nauseated)",
   SourcePage="p.61",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Mercy ~ Sickened" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MercyLVL"] >= 9)
     end,
   },
@@ -34846,7 +34846,7 @@ DefineAbility({
   DisplayName="Mercy (Poisoned)",
   SourcePage="p.61",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MercyLVL"] >= 9)
     end,
   },
@@ -34868,7 +34868,7 @@ DefineAbility({
   DisplayName="Mercy (Blinded)",
   SourcePage="p.61",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MercyLVL"] >= 12)
     end,
   },
@@ -34890,7 +34890,7 @@ DefineAbility({
   DisplayName="Mercy (Deafened)",
   SourcePage="p.61",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MercyLVL"] >= 12)
     end,
   },
@@ -34912,7 +34912,7 @@ DefineAbility({
   DisplayName="Mercy (Paralyzed)",
   SourcePage="p.61",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MercyLVL"] >= 12)
     end,
   },
@@ -34934,7 +34934,7 @@ DefineAbility({
   DisplayName="Mercy (Stunned)",
   SourcePage="p.61",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["MercyLVL"] >= 12)
     end,
   },
@@ -35325,7 +35325,7 @@ DefineAbility({
   Description={
     Format="This is not Allowed with the Archetype you selected.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return character.HasAnyAbility(function (ability)
           if ability.Category ~= "Archetype" then return false end
           if ability.IsAnyType("RangerAnimalCompanion") then return true end
@@ -35343,7 +35343,7 @@ DefineAbility({
         "Companion ~ Animal Companion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CompanionDisable_AnimalCompanion"] == 0)
         end,
       },
@@ -35361,7 +35361,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("CompanionMasterLVL_Ranger"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CompanionDisable_AnimalCompanion"] == 0)
         end,
       },
@@ -35378,7 +35378,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Archetype" then return false end
         if ability.IsAnyType("RangerAnimalCompanion") then return true end
@@ -35394,7 +35394,7 @@ DefineAbility({
       end,
       FollowerLevelAdjustment=0,
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerAnimalCompanion") then return true end
@@ -35594,10 +35594,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangerLVL"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_CombatStyleFeat2"] == 1)
         end,
       },
@@ -35615,10 +35615,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangerLVL"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_CombatStyleFeat6"] == 1)
         end,
       },
@@ -35636,10 +35636,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangerLVL"] >= 10)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_CombatStyleFeat10"] == 1)
         end,
       },
@@ -35657,10 +35657,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangerLVL"] >= 14)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_CombatStyleFeat14"] == 1)
         end,
       },
@@ -35678,10 +35678,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangerLVL"] >= 18)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_CombatStyleFeat18"] == 1)
         end,
       },
@@ -35699,10 +35699,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangerFavoredEnemyCount"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_FavoredEnemy1"] == 1)
         end,
       },
@@ -35714,10 +35714,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FavoredEnemyBonusCount"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_FavoredEnemy1"] == 1)
         end,
       },
@@ -35735,10 +35735,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangerFavoredEnemyCount"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_FavoredEnemy2"] == 1)
         end,
       },
@@ -35750,10 +35750,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FavoredEnemyBonusCount"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_FavoredEnemy2"] == 1)
         end,
       },
@@ -35771,10 +35771,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangerFavoredEnemyCount"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_FavoredEnemy3"] == 1)
         end,
       },
@@ -35786,10 +35786,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FavoredEnemyBonusCount"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_FavoredEnemy3"] == 1)
         end,
       },
@@ -35807,10 +35807,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangerFavoredEnemyCount"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_FavoredEnemy4"] == 1)
         end,
       },
@@ -35822,10 +35822,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FavoredEnemyBonusCount"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_FavoredEnemy4"] == 1)
         end,
       },
@@ -35843,10 +35843,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangerFavoredEnemyCount"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_FavoredEnemy5"] == 1)
         end,
       },
@@ -35858,10 +35858,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FavoredEnemyBonusCount"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_FavoredEnemy5"] == 1)
         end,
       },
@@ -35910,7 +35910,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CombatStyleLVL"] >= 6)
         end,
       },
@@ -35922,7 +35922,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CombatStyleLVL"] >= 6)
         end,
       },
@@ -35934,7 +35934,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CombatStyleLVL"] >= 10)
         end,
       },
@@ -35946,7 +35946,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CombatStyleLVL"] >= 10)
         end,
       },
@@ -36000,7 +36000,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CombatStyleLVL"] >= 6)
         end,
       },
@@ -36012,7 +36012,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CombatStyleLVL"] >= 6)
         end,
       },
@@ -36024,7 +36024,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CombatStyleLVL"] >= 10)
         end,
       },
@@ -36036,7 +36036,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["CombatStyleLVL"] >= 10)
         end,
       },
@@ -36062,7 +36062,7 @@ ModifyAbility({
         "Ranger Archetype Support",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerArchetype") then return true end
@@ -36084,14 +36084,14 @@ DefineAbility({
         "Ranger ~ Evasion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerEvasion") then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RangerLvl"] >= 16)
         end,
       },
@@ -36115,21 +36115,21 @@ DefineAbility({
         "Far Shot",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Far Shot" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Far_Shot"] >= 1)
     end,
   },
@@ -36154,21 +36154,21 @@ DefineAbility({
         "Point-Blank Shot",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Point-Blank Shot" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Point_Blank_Shot"] >= 1)
     end,
   },
@@ -36193,21 +36193,21 @@ DefineAbility({
         "Precise Shot",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Precise Shot" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Precise_Shot"] >= 1)
     end,
   },
@@ -36232,21 +36232,21 @@ DefineAbility({
         "Rapid Shot",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Rapid Shot" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Rapid_Shot"] >= 1)
     end,
   },
@@ -36271,21 +36271,21 @@ DefineAbility({
         "Improved Precise Shot",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Improved Precise Shot" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Improved_Precise_Shot"] >= 1)
     end,
   },
@@ -36310,21 +36310,21 @@ DefineAbility({
         "Manyshot",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Manyshot" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Manyshot"] >= 1)
     end,
   },
@@ -36349,21 +36349,21 @@ DefineAbility({
         "Pinpoint Targeting",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Pinpoint Targeting" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Pinpoint_Targeting"] >= 1)
     end,
   },
@@ -36388,21 +36388,21 @@ DefineAbility({
         "Shot on the Run",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Shot on the Run" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Shot_on_the_Run"] >= 1)
     end,
   },
@@ -36427,21 +36427,21 @@ DefineAbility({
         "Double Slice",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Double Slice" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Double_Slice"] >= 1)
     end,
   },
@@ -36466,21 +36466,21 @@ DefineAbility({
         "Improved Shield Bash",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Improved Shield Bash" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Improved_Shield_Bash"] >= 1)
     end,
   },
@@ -36505,21 +36505,21 @@ DefineAbility({
         "Quick Draw",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Quick Draw" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Quick_Draw"] >= 1)
     end,
   },
@@ -36544,21 +36544,21 @@ DefineAbility({
         "Two-Weapon Fighting",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Two-Weapon Fighting" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Two_Weapon_Fighting"] >= 1)
     end,
   },
@@ -36583,21 +36583,21 @@ DefineAbility({
         "Improved Two-Weapon Fighting",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Improved Two-Weapon Fighting" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Improved_Two_Weapon_Fighting"] >= 1)
     end,
   },
@@ -36622,21 +36622,21 @@ DefineAbility({
         "Two-Weapon Defense",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Two-Weapon Defense" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Two_Weapon_Defense"] >= 1)
     end,
   },
@@ -36661,21 +36661,21 @@ DefineAbility({
         "Greater Two-Weapon Fighting",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Greater Two-Weapon Fighting" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Greater_Two_Weapon_Fighting"] >= 1)
     end,
   },
@@ -36700,21 +36700,21 @@ DefineAbility({
         "Two-Weapon Rend",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["var(\"COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]\")"] < 1)
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Two-Weapon Rend" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Ranger_Combat_Style_Feat_Two_Weapon_Rend"] >= 1)
     end,
   },
@@ -38342,7 +38342,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Aberration" then return true end
@@ -38375,7 +38375,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Animal" then return true end
@@ -38408,7 +38408,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Construct" then return true end
@@ -38441,7 +38441,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Dragon" then return true end
@@ -38474,7 +38474,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Fey" then return true end
@@ -38507,7 +38507,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Humanoid (Aquatic)" then return true end
@@ -38540,7 +38540,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Humanoid (Dwarf)" then return true end
@@ -38573,7 +38573,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Humanoid (Elf)" then return true end
@@ -38606,7 +38606,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Humanoid (Giant)" then return true end
@@ -38639,7 +38639,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Humanoid (Gnoll)" then return true end
@@ -38672,7 +38672,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Humanoid (Gnome)" then return true end
@@ -38705,7 +38705,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Humanoid (Goblinoid)" then return true end
@@ -38738,7 +38738,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Humanoid (Halfling)" then return true end
@@ -38771,7 +38771,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Humanoid (Human)" then return true end
@@ -38804,7 +38804,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Humanoid (Orc)" then return true end
@@ -38837,7 +38837,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Humanoid (Reptilian)" then return true end
@@ -38870,7 +38870,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Magical Beast" then return true end
@@ -38903,7 +38903,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Monstrous Humanoid" then return true end
@@ -38936,7 +38936,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Ooze" then return true end
@@ -38969,7 +38969,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Outsider (Air)" then return true end
@@ -39002,7 +39002,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Outsider (Earth)" then return true end
@@ -39035,7 +39035,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Outsider (Fire)" then return true end
@@ -39068,7 +39068,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Outsider (Water)" then return true end
@@ -39101,7 +39101,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Outsider (Lawful)" then return true end
@@ -39134,7 +39134,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Outsider (Chaotic)" then return true end
@@ -39167,7 +39167,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Outsider (Good)" then return true end
@@ -39200,7 +39200,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Outsider (Evil)" then return true end
@@ -39233,7 +39233,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Outsider (Native)" then return true end
@@ -39266,7 +39266,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Plant" then return true end
@@ -39299,7 +39299,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Undead" then return true end
@@ -39332,7 +39332,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Enemy ~ Vermin" then return true end
@@ -39867,7 +39867,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Terrain ~ Cold" then return true end
@@ -39900,7 +39900,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Terrain ~ Desert" then return true end
@@ -39933,7 +39933,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Terrain ~ Forest" then return true end
@@ -39966,7 +39966,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Terrain ~ Jungle" then return true end
@@ -39999,7 +39999,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Terrain ~ Mountain" then return true end
@@ -40032,7 +40032,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Terrain ~ Plains" then return true end
@@ -40065,7 +40065,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Terrain ~ Plane" then return true end
@@ -40098,7 +40098,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Terrain ~ Swamp" then return true end
@@ -40131,7 +40131,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Terrain ~ Underground" then return true end
@@ -40164,7 +40164,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Terrain ~ Urban" then return true end
@@ -40197,7 +40197,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Favored Terrain ~ Water" then return true end
@@ -40453,7 +40453,7 @@ ModifyAbility({
         "Rogue Archetype Support",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueArchetype") then return true end
@@ -40484,14 +40484,14 @@ DefineAbility({
         "Rogue ~ Sneak Attack",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueSneakAttack") then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueLvl"] >= 3)
         end,
       },
@@ -40503,14 +40503,14 @@ DefineAbility({
         "Uncanny Dodge ~ Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueUncannyDodge", "RogueImprovedUncannyDodge") then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueLvl"] >= 8)
         end,
       },
@@ -40521,10 +40521,10 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueLvl"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueSneakAttack") then return true end
@@ -40540,10 +40540,10 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueLvl"] >= 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueUncannyDodge", "RogueImprovedUncannyDodge") then return true end
@@ -40576,10 +40576,10 @@ ModifyAbility({
         Replace=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueLVL"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_UncannyDodge"] == 0)
         end,
       },
@@ -40597,10 +40597,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueLVL"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_UncannyDodge"] == 0)
         end,
       },
@@ -40618,10 +40618,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueLVL"] >= 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_ImprovedUncannyDodge"] == 0)
         end,
       },
@@ -40639,10 +40639,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueTalentLVL"] >= 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_RogueTalent2"] == 1)
         end,
       },
@@ -40660,10 +40660,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueTalentLVL"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_RogueTalent4"] == 1)
         end,
       },
@@ -40681,10 +40681,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueTalentLVL"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_RogueTalent6"] == 1)
         end,
       },
@@ -40702,10 +40702,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueTalentLVL"] >= 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_RogueTalent8"] == 1)
         end,
       },
@@ -40723,10 +40723,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueTalentLVL"] >= 10)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_RogueTalent10"] == 1)
         end,
       },
@@ -40744,10 +40744,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueTalentLVL"] >= 12)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_RogueTalent12"] == 1)
         end,
       },
@@ -40765,10 +40765,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueTalentLVL"] >= 14)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_RogueTalent14"] == 1)
         end,
       },
@@ -40786,10 +40786,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueTalentLVL"] >= 16)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_RogueTalent16"] == 1)
         end,
       },
@@ -40807,10 +40807,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueTalentLVL"] >= 18)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_RogueTalent18"] == 1)
         end,
       },
@@ -40828,10 +40828,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RogueTalentLVL"] >= 20)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Rogue_CF_RogueTalent20"] == 1)
         end,
       },
@@ -40907,7 +40907,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["CombatTrickTaken"] < "CombatTrickAllowed")
     end,
   },
@@ -40994,14 +40994,14 @@ DefineAbility({
   },
   SourcePage="p.68",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Rogue Talent ~ Minor Magic" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Stats["INT"] >= 11)
     end,
   },
@@ -41042,7 +41042,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Stats["INT"] >= 10)
     end,
   },
@@ -41248,10 +41248,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RogueTalentLVL"] >= 10)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RogueTalentTaken"] >= 4)
     end,
   },
@@ -41272,7 +41272,7 @@ DefineAbility({
   },
   SourcePage="p.69",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RogueTalentLVL"] >= 10)
     end,
   },
@@ -41293,7 +41293,7 @@ DefineAbility({
   },
   SourcePage="p.69",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RogueTalentLVL"] >= 10)
     end,
   },
@@ -41325,14 +41325,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Rogue Talent ~ Major Magic" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RogueTalentLVL"] >= 10)
     end,
   },
@@ -41362,7 +41362,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RogueTalentLVL"] >= 10)
     end,
   },
@@ -41382,7 +41382,7 @@ DefineAbility({
   },
   SourcePage="p.70",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RogueTalentLVL"] >= 10)
     end,
   },
@@ -41410,7 +41410,7 @@ DefineAbility({
   SourcePage="p.70",
   Stackable=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RogueTalentLVL"] >= 10)
     end,
   },
@@ -41430,7 +41430,7 @@ DefineAbility({
       Formula("SlipperymindTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["SlipperymindTimes"] >= 1)
       end,
     },
@@ -41456,7 +41456,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RogueTalentLVL"] >= 10)
     end,
   },
@@ -41485,7 +41485,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["RogueTalentLVL"] >= 10)
     end,
   },
@@ -41779,10 +41779,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineFeatProgression"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineFeat7"] == 1)
         end,
       },
@@ -41800,10 +41800,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineFeatProgression"] >= 13)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineFeat13"] == 1)
         end,
       },
@@ -41821,10 +41821,10 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineFeatProgression"] >= 19)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineFeat19"] == 1)
         end,
       },
@@ -43017,17 +43017,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Nimble Moves" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_DEX"] >= 15) or (character.Variables["FeatDexRequirement"] >= 15)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_AcrobaticSteps"] >= 1)
     end,
   },
@@ -43058,7 +43058,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_AgileManeuvers"] >= 1)
     end,
   },
@@ -43089,7 +43089,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_Alertness"] >= 1)
     end,
   },
@@ -43120,24 +43120,24 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Arcane Armor Training" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return ((character.CountSpellCastingClasses(7))) >= 1 or (character.Variables["CasterLevel_Highest"] >= 7)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.IsProficientWithArmorType("Medium")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Armor Proficiency (Medium)" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ArcaneArmorMastery"] >= 1)
     end,
   },
@@ -43168,17 +43168,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return ((character.CountSpellCastingClasses(3))) >= 1 or (character.Variables["CasterLevel_Highest"] >= 3)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.IsProficientWithArmorType("Light")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Armor Proficiency (Light)" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ArcaneArmorTraining"] >= 1)
     end,
   },
@@ -43212,14 +43212,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return ((character.CountArcaneSpellCastingClasses(1))) >= 1 or (character.Variables["Caster_Level_Highest__Arcane"] >= 1) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("SpellLike") then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ArcaneStrike"] >= 1)
     end,
   },
@@ -43250,7 +43250,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_LightArmorProficiency"] >= 1)
     end,
   },
@@ -43281,14 +43281,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Spell Focus (Conjuration)" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_AugmentSummoning"] >= 1)
     end,
   },
@@ -43319,7 +43319,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_BlindFight"] >= 1)
     end,
   },
@@ -43350,20 +43350,20 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.TotalAttackBonus >= 1
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_Cleave"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_STR"] >= 13)
     end,
   },
@@ -43394,7 +43394,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_CombatCasting"] >= 1)
     end,
   },
@@ -43429,10 +43429,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_INT"] >= 13) or (character.Variables["CombatFeatIntRequirement"] >= 13)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_CombatExpertise"] >= 1)
     end,
   },
@@ -43466,7 +43466,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_CombatReflexes"] >= 1)
     end,
   },
@@ -43497,10 +43497,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return ((character.CountSpellCastingClasses(9))) >= 1 or (character.Variables["CasterLevel_Highest"] >= 9)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_CraftRod"] >= 1)
     end,
   },
@@ -43531,10 +43531,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return ((character.CountSpellCastingClasses(11))) >= 1 or (character.Variables["CasterLevel_Highest"] >= 11)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_CraftStaff"] >= 1)
     end,
   },
@@ -43565,10 +43565,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return ((character.CountSpellCastingClasses(3))) >= 1 or (character.Variables["CasterLevel_Highest"] >= 3) or (character.Variables["MasterCraftsmanRanks"] >= 3)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_CraftWondrousItem"] >= 1)
     end,
   },
@@ -43603,13 +43603,13 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_DEX"] >= 13) or (character.Variables["FeatDexRequirement"] >= 13)
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.TotalAttackBonus >= 1
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_DeadlyAim"] >= 1)
     end,
   },
@@ -43640,7 +43640,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_Deceitful"] >= 1)
     end,
   },
@@ -43671,7 +43671,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_DefensiveCombatTraining"] >= 1)
     end,
   },
@@ -43702,7 +43702,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_DeftHands"] >= 1)
     end,
   },
@@ -43733,14 +43733,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Endurance" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_Diehard"] >= 1)
     end,
   },
@@ -43771,10 +43771,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_DEX"] >= 13) or (character.Variables["FeatDexRequirement"] >= 13)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_Dodge"] >= 1)
     end,
   },
@@ -43805,7 +43805,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_EmpowerSpell"] >= 1)
     end,
   },
@@ -43839,7 +43839,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_Endurance"] >= 1)
     end,
   },
@@ -43870,7 +43870,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_EnlargeSpell"] >= 1)
     end,
   },
@@ -43901,7 +43901,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ExtendSpell"] >= 1)
     end,
   },
@@ -43932,14 +43932,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Point-Blank Shot" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_FarShot"] >= 1)
     end,
   },
@@ -43975,7 +43975,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_Fleet"] >= 1)
     end,
   },
@@ -44006,10 +44006,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return ((character.CountSpellCastingClasses(7))) >= 1 or (character.Variables["CasterLevel_Highest"] >= 7)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ForgeRing"] >= 1)
     end,
   },
@@ -44040,7 +44040,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_GreatFortitude"] >= 1)
     end,
   },
@@ -44071,14 +44071,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Spell Focus" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_GreaterSpellFocusEnchantment"] >= 1)
     end,
   },
@@ -44108,7 +44108,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_HeightenSpell"] >= 1)
     end,
   },
@@ -44139,20 +44139,20 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.TotalAttackBonus >= 1
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ImprovedBullRush"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_STR"] >= 13)
     end,
   },
@@ -44183,7 +44183,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ImprovedCounterspell"] >= 1)
     end,
   },
@@ -44214,17 +44214,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Combat Expertise" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_INT"] >= 13) or (character.Variables["CombatFeatIntRequirement"] >= 13)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ImprovedDisarm"] >= 1)
     end,
   },
@@ -44255,10 +44255,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_INT"] >= 13) or (character.Variables["CombatFeatIntRequirement"] >= 13)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ImprovedFeint"] >= 1)
     end,
   },
@@ -44289,17 +44289,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Improved Unarmed Strike" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_DEX"] >= 13) or (character.Variables["FeatDexRequirement"] >= 13)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ImprovedGrapple"] >= 1)
     end,
   },
@@ -44330,14 +44330,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Great Fortitude" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ImprovedGreatFortitude"] >= 1)
     end,
   },
@@ -44368,7 +44368,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ImprovedInitiative"] >= 1)
     end,
   },
@@ -44399,14 +44399,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Iron Will" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ImprovedIronWill"] >= 1)
     end,
   },
@@ -44437,20 +44437,20 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.TotalAttackBonus >= 1
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ImprovedOverrun"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_STR"] >= 13)
     end,
   },
@@ -44481,20 +44481,20 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.TotalAttackBonus >= 1
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ImprovedSunder"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_STR"] >= 13)
     end,
   },
@@ -44525,7 +44525,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ImprovedUnarmedStrike"] >= 1)
     end,
   },
@@ -44556,7 +44556,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_IntimidatingProwess"] >= 1)
     end,
   },
@@ -44587,7 +44587,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_IronWill"] >= 1)
     end,
   },
@@ -44618,10 +44618,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Level >= 7
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_Leadership"] >= 1)
     end,
   },
@@ -44652,7 +44652,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_LightningReflexes"] >= 1)
     end,
   },
@@ -44683,7 +44683,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_MagicalAptitude"] >= 1)
     end,
   },
@@ -44720,14 +44720,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Martial Weapon Proficiency Output" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_MartialWeaponProficiency"] >= 1)
     end,
   },
@@ -44758,7 +44758,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_MaximizeSpell"] >= 1)
     end,
   },
@@ -44789,17 +44789,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Dodge" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_DEX"] >= 13) or (character.Variables["FeatDexRequirement"] >= 13)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_Mobility"] >= 1)
     end,
   },
@@ -44830,10 +44830,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Skill("Ride").ranks >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_MountedCombat"] >= 1)
     end,
   },
@@ -44864,10 +44864,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_DEX"] >= 13) or (character.Variables["FeatDexRequirement"] >= 13)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_NimbleMoves"] >= 1)
     end,
   },
@@ -44898,7 +44898,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_Persuasive"] >= 1)
     end,
   },
@@ -44929,7 +44929,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_PointBlankShot"] >= 1)
     end,
   },
@@ -44964,13 +44964,13 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.TotalAttackBonus >= 1
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_PowerAttack"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_STR"] >= 13)
     end,
   },
@@ -45001,14 +45001,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Point-Blank Shot" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_PreciseShot"] >= 1)
     end,
   },
@@ -45039,10 +45039,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.TotalAttackBonus >= 1
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_QuickDraw"] >= 1)
     end,
   },
@@ -45073,7 +45073,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_QuickenSpell"] >= 1)
     end,
   },
@@ -45104,17 +45104,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Mounted Combat" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Skill("Ride").ranks >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_RideByAttack"] >= 1)
     end,
   },
@@ -45145,10 +45145,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return ((character.CountSpellCastingClasses(1))) >= 1 or (character.Variables["CasterLevel_Highest"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_ScribeScroll"] >= 1)
     end,
   },
@@ -45179,7 +45179,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SilentSpell"] >= 1)
     end,
   },
@@ -45210,7 +45210,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusAcrobatics"] >= 1)
     end,
   },
@@ -45241,7 +45241,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusBluff"] >= 1)
     end,
   },
@@ -45279,7 +45279,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusCraft"] >= 1)
     end,
   },
@@ -45310,7 +45310,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusFly"] >= 1)
     end,
   },
@@ -45341,7 +45341,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusIntimidate"] >= 1)
     end,
   },
@@ -45372,7 +45372,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusKnowledgeArcana"] >= 1)
     end,
   },
@@ -45403,7 +45403,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusKnowledgeDungeoneering"] >= 1)
     end,
   },
@@ -45434,7 +45434,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusKnowledgeEngineering"] >= 1)
     end,
   },
@@ -45465,7 +45465,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusKnowledgeHistory"] >= 1)
     end,
   },
@@ -45496,7 +45496,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusKnowledgeNature"] >= 1)
     end,
   },
@@ -45527,7 +45527,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusKnowledgePlanes"] >= 1)
     end,
   },
@@ -45558,7 +45558,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusKnowledgeReligion"] >= 1)
     end,
   },
@@ -45589,7 +45589,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusPerception"] >= 1)
     end,
   },
@@ -45627,7 +45627,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusPerform"] >= 1)
     end,
   },
@@ -45658,7 +45658,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusSenseMotive"] >= 1)
     end,
   },
@@ -45689,7 +45689,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusStealth"] >= 1)
     end,
   },
@@ -45720,7 +45720,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SkillFocusSwim"] >= 1)
     end,
   },
@@ -45751,7 +45751,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SpellFocus"] >= 1)
     end,
   },
@@ -45782,7 +45782,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SpellFocusEnchantment"] >= 1)
     end,
   },
@@ -45813,7 +45813,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SpellFocusNecromancy"] >= 1)
     end,
   },
@@ -45844,7 +45844,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_SpellPenetration"] >= 1)
     end,
   },
@@ -45875,7 +45875,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_Stealthy"] >= 1)
     end,
   },
@@ -45906,7 +45906,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_StillSpell"] >= 1)
     end,
   },
@@ -45941,14 +45941,14 @@ DefineAbility({
     {
       FormatString="You gain +1 hit points whenever you gain a Hit Die (such as when you gain a level).",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HitDie >= 3
         end,
       },
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_Toughness"] >= 1)
     end,
   },
@@ -45979,7 +45979,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_WeaponFinesse"] >= 1)
     end,
   },
@@ -46010,10 +46010,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.TotalAttackBonus >= 1
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_WeaponFocus"] >= 1)
     end,
   },
@@ -46044,7 +46044,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_WidenSpell"] >= 1)
     end,
   },
@@ -46075,20 +46075,20 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Dodge" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_DEX"] >= 15) or (character.Variables["FeatDexRequirement"] >= 15)
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.TotalAttackBonus >= 6
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BloodlineFeat_WindStance"] >= 1)
     end,
   },
@@ -46101,10 +46101,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Alarm",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Alarm_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -46131,10 +46131,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Animate Dead",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_AnimateDead_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -46161,10 +46161,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Animate Objects",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_AnimateObjects_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -46191,10 +46191,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Animate Plants",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_AnimatePlants_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -46221,10 +46221,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Astral Projection",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_AstralProjection_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -46251,10 +46251,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Augury",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Augury_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -46281,10 +46281,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Banishment",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Banishment_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -46311,10 +46311,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Barkskin",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Barkskin_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -46341,10 +46341,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Beast Shape IV",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_BeastShapeIV_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -46371,10 +46371,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Bestow Curse",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_BestowCurse_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -46401,10 +46401,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Black Tentacles",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_BlackTentacles_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -46431,10 +46431,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Bless",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Bless_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -46461,10 +46461,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Blight",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Blight_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -46491,10 +46491,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Blink",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Blink_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -46521,10 +46521,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Blur",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Blur_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -46551,10 +46551,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Break Enchantment",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_BreakEnchantment_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -46581,10 +46581,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Bull's Strength",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_BullsStrength_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -46611,10 +46611,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Burning Hands",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_BurningHands_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -46641,10 +46641,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Burning Hands (Acid)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_BurningHandsAcid_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -46671,10 +46671,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Burning Hands (Cold)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_BurningHandsCold_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -46701,10 +46701,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Burning Hands (Electricity)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_BurningHandsElectricity_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -46731,10 +46731,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Cause Fear",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_CauseFear_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -46761,10 +46761,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Chain Lightning",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ChainLightning_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -46791,10 +46791,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Charm Monster",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_CharmMonster_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -46821,10 +46821,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Chill Touch",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ChillTouch_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -46851,10 +46851,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Circle of Death",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_CircleofDeath_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -46881,10 +46881,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Cloudkill",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Cloudkill_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -46911,10 +46911,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Command (Greater)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_CommandGreater_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -46941,10 +46941,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Command Plants",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_CommandPlants_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -46971,10 +46971,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Cone of Cold",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ConeofCold_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -47001,10 +47001,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Confusion",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Confusion_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -47031,10 +47031,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Confusion (Lesser)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ConfusionLesser_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -47061,10 +47061,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Contagion",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Contagion_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -47091,10 +47091,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Control Undead",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ControlUndead_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -47121,10 +47121,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Control Water",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ControlWater_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -47151,10 +47151,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Control Weather",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ControlWeather_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -47181,10 +47181,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Darkvision",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Darkvision_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -47211,10 +47211,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Deep Slumber",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_DeepSlumber_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -47241,10 +47241,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Deeper Darkness",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_DeeperDarkness_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -47271,10 +47271,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Delay Poison",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_DelayPoison_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -47301,10 +47301,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Delayed Blast Fireball",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_DelayedBlastFireball_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -47331,10 +47331,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Dimension Door",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_DimensionDoor_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -47361,10 +47361,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Dimensional Lock",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_DimensionalLock_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -47391,10 +47391,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Disguise Self",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_DisguiseSelf_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -47421,10 +47421,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Disintegrate",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Disintegrate_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -47451,10 +47451,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Dismissal",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Dismissal_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -47481,10 +47481,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Dispel Magic",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_DispelMagic_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -47511,10 +47511,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Dispel Magic (Greater)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_DispelMagicGreater_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -47541,10 +47541,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Divination",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Divination_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -47571,10 +47571,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Dominate Monster",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_DominateMonster_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -47601,10 +47601,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Dominate Person",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_DominatePerson_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -47631,10 +47631,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Dream",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Dream_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -47661,10 +47661,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Eagle's Splendor",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_EaglesSplendor_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -47691,10 +47691,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Earthquake",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Earthquake_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -47721,10 +47721,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Elemental Body I",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ElementalBodyI_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -47751,10 +47751,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Elemental Body II",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ElementalBodyII_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -47781,10 +47781,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Elemental Body III",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ElementalBodyIII_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -47811,10 +47811,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Elemental Body IV",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ElementalBodyIV_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -47841,10 +47841,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Elemental Swarm",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ElementalSwarm_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -47871,10 +47871,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Endure Elements",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_EndureElements_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -47901,10 +47901,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Energy Drain",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_EnergyDrain_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -47931,10 +47931,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Enlarge Person",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_EnlargePerson_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -47961,10 +47961,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Entangle",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Entangle_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -47991,10 +47991,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Entropic Shield",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_EntropicShield_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -48021,10 +48021,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Ethereal Jaunt",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_EtherealJaunt_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -48051,10 +48051,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Etherealness",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Etherealness_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -48081,10 +48081,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Explosive Runes",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ExplosiveRunes_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -48111,10 +48111,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Eyebite",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Eyebite_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -48141,10 +48141,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Fabricate",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Fabricate_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -48171,10 +48171,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ False Life",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_FalseLife_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -48201,10 +48201,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Fear",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Fear_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -48231,10 +48231,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Feeblemind",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Feeblemind_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -48261,10 +48261,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Finger of Death",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_FingerofDeath_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -48291,10 +48291,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Fire Shield (warm)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_FireShieldwarm_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -48321,10 +48321,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Fireball",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Fireball_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -48351,10 +48351,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Flame Strike",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_FlameStrike_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -48381,10 +48381,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Fly",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Fly_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -48411,10 +48411,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Foresight",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Foresight_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -48441,10 +48441,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Form of the Dragon I",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_FormoftheDragonI_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -48471,10 +48471,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Form of the Dragon II",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_FormoftheDragonII_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -48501,10 +48501,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Form of the Dragon III",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_FormoftheDragonIII_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -48531,10 +48531,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Freedom of Movement",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_FreedomofMovement_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -48561,10 +48561,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Gaseous Form",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_GaseousForm_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -48591,10 +48591,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Gate",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Gate_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -48621,10 +48621,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Giant Form I",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_GiantFormI_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -48651,10 +48651,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Giant Form II",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_GiantFormII_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -48681,10 +48681,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Glitterdust",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Glitterdust_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -48711,10 +48711,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Guards and Wards",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_GuardsandWards_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -48741,10 +48741,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Gust of Wind",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_GustofWind_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -48771,10 +48771,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Heroism",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Heroism_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -48801,10 +48801,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Heroism (Greater)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_HeroismGreater_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -48831,10 +48831,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Hideous Laughter",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_HideousLaughter_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -48861,10 +48861,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Hold Monster",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_HoldMonster_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -48891,10 +48891,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Horrid Wilting",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_HorridWilting_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -48921,10 +48921,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Hypnotism",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Hypnotism_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -48951,10 +48951,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Identify",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Identify_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -48981,10 +48981,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Imprisonment",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Imprisonment_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -49011,10 +49011,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Insanity",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Insanity_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -49041,10 +49041,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Insect Plague",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_InsectPlague_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -49071,10 +49071,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Invisibility",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Invisibility_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -49101,10 +49101,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Iron Body",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_IronBody_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -49131,10 +49131,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Irresistible Dance",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_IrresistibleDance_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -49161,10 +49161,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Lightning Bolt",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_LightningBolt_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -49191,10 +49191,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Mage Armor",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_MageArmor_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -49221,10 +49221,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Magic Circle against Evil",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_MagicCircleagainstEvil_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -49251,10 +49251,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Magic Vestment",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_MagicVestment_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -49281,10 +49281,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Magic Weapon",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_MagicWeapon_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -49311,10 +49311,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Magic Weapon (Greater)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_MagicWeaponGreater_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -49341,10 +49341,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Major Creation",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_MajorCreation_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -49371,10 +49371,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Make Whole",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_MakeWhole_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -49401,10 +49401,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Meteor Swarm",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_MeteorSwarm_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -49431,10 +49431,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Mind Blank",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_MindBlank_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -49461,10 +49461,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Minor Creation",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_MinorCreation_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -49491,10 +49491,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Mislead",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Mislead_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -49521,10 +49521,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Moment of Prescience",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_MomentofPrescience_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -49551,10 +49551,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Move Earth",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_MoveEarth_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -49581,10 +49581,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Obscuring Mist",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ObscuringMist_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -49611,10 +49611,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Overland Flight",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_OverlandFlight_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -49641,10 +49641,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Persistent Image",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_PersistentImage_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -49671,10 +49671,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Phase Door",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_PhaseDoor_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -49701,10 +49701,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Planar Binding",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_PlanarBinding_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -49731,10 +49731,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Planar Binding (Devils and Fiendish Creatures Only)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_PlanarBindingDevilsAndFiendishCreaturesOnly_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -49761,10 +49761,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Planar Binding (Greater)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_PlanarBindingGreater_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -49791,10 +49791,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Plane Shift",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_PlaneShift_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -49821,10 +49821,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Plant Shape III",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_PlantShapeIII_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -49851,10 +49851,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Poison",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Poison_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -49881,10 +49881,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Polar Ray",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_PolarRay_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -49911,10 +49911,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Polymorph Any Object",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_PolymorphAnyObject_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -49941,10 +49941,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Polymorph (Greater)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_PolymorphGreater_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -49971,10 +49971,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Power Word Blind",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_PowerWordBlind_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -50001,10 +50001,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Power Word Stun",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_PowerWordStun_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -50031,10 +50031,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Protection from Energy",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ProtectionfromEnergy_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -50061,10 +50061,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Protection from Good",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ProtectionfromGood_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -50091,10 +50091,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Prying Eyes (Greater)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_PryingEyesGreater_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -50121,10 +50121,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Rage",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Rage_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -50151,10 +50151,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Ray of Enfeeblement",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_RayofEnfeeblement_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -50181,10 +50181,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Ray of Exhaustion",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_RayofExhaustion_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -50211,10 +50211,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Remove Curse",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_RemoveCurse_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -50241,10 +50241,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Repel Metal or Stone",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_RepelMetalorStone_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -50271,10 +50271,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Repulsion",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Repulsion_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -50301,10 +50301,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Resist Energy",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ResistEnergy_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -50331,10 +50331,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Reverse Gravity",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ReverseGravity_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -50361,10 +50361,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Scorching Ray",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ScorchingRay_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -50391,10 +50391,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Scorching Ray (Acid)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ScorchingRayAcid_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -50421,10 +50421,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Scorching Ray (Cold)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ScorchingRayCold_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -50451,10 +50451,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Scorching Ray (Electricity)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ScorchingRayElectricity_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -50481,10 +50481,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ See Invisibility",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_SeeInvisibility_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -50511,10 +50511,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Shades",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Shades_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -50541,10 +50541,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Shadow Conjuration",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ShadowConjuration_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -50571,10 +50571,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Shadow Evocation",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ShadowEvocation_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -50601,10 +50601,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Shadow Evocation (Greater)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ShadowEvocationGreater_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -50631,10 +50631,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Shadow Walk",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ShadowWalk_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -50661,10 +50661,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Shambler",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Shambler_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -50691,10 +50691,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Shapechange",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Shapechange_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -50721,10 +50721,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Shocking Grasp",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ShockingGrasp_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -50751,10 +50751,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Shout",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Shout_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -50781,10 +50781,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Shout (Greater)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ShoutGreater_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -50811,10 +50811,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Shrink Item",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_ShrinkItem_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -50841,10 +50841,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Sleep",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Sleep_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -50871,10 +50871,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Soul Bind",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_SoulBind_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -50901,10 +50901,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Speak with Plants",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_SpeakwithPlants_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -50931,10 +50931,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Spell Resistance",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_SpellResistance_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -50961,10 +50961,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Spell Turning",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_SpellTurning_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -50991,10 +50991,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Spike Stones",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_SpikeStones_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -51021,10 +51021,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Stone Tell",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_StoneTell_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -51051,10 +51051,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Stoneskin",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Stoneskin_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -51081,10 +51081,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Storm of Vengeance",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_StormofVengeance_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -51111,10 +51111,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Suggestion",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Suggestion_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -51141,10 +51141,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Suggestion (Mass)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_SuggestionMass_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -51171,10 +51171,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Summon Monster IX",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_SummonMonsterIX_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -51201,10 +51201,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Summon Monster VII",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_SummonMonsterVII_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -51231,10 +51231,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Summon Monster VIII (Elementals Only)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_SummonMonsterVIIIElementalsOnly_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -51261,10 +51261,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Sunburst",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Sunburst_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -51291,10 +51291,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Teleport (Greater)",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_TeleportGreater_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -51321,10 +51321,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Tongues",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Tongues_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -51351,10 +51351,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L2 ~ Touch of Idiocy",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_TouchofIdiocy_L2"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 5)
     end,
   },
@@ -51381,10 +51381,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Transformation",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Transformation_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -51411,10 +51411,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Transmute Rock to Mud",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_TransmuteRocktoMud_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -51441,10 +51441,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Transport via Plants",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_TransportviaPlants_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -51471,10 +51471,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Trap the Soul",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_TraptheSoul_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -51501,10 +51501,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Tree Stride",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_TreeStride_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -51531,10 +51531,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ True Seeing",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_TrueSeeing_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -51561,10 +51561,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ True Strike",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_TrueStrike_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -51591,10 +51591,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Undeath to Death",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_UndeathToDeath_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -51621,10 +51621,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Unholy Aura",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_UnholyAura_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -51651,10 +51651,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Unseen Servant",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_UnseenServant_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -51681,10 +51681,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L3 ~ Vampiric Touch",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_VampiricTouch_L3"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 7)
     end,
   },
@@ -51711,10 +51711,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Veil",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Veil_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -51741,10 +51741,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L1 ~ Ventriloquism",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Ventriloquism_L1"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 3)
     end,
   },
@@ -51771,10 +51771,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Vision",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Vision_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -51801,10 +51801,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Wail of the Banshee",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_WailoftheBanshee_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -51831,10 +51831,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Wall of Fire",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_WallofFire_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -51861,10 +51861,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L4 ~ Wall of Ice",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_WallOfIce_L4"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 9)
     end,
   },
@@ -51891,10 +51891,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L6 ~ Wall of Iron",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_WallofIron_L6"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 13)
     end,
   },
@@ -51921,10 +51921,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Wall of Stone",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_WallofStone_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -51951,10 +51951,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Wall Of Thorns",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_WallOfThorns_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -51981,10 +51981,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L7 ~ Waves of Exhaustion",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_WavesofExhaustion_L7"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 15)
     end,
   },
@@ -52011,10 +52011,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L5 ~ Waves Of Fatigue",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_WavesOfFatigue_L5"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 11)
     end,
   },
@@ -52041,10 +52041,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L8 ~ Whirlwind",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Whirlwind_L8"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 17)
     end,
   },
@@ -52071,10 +52071,10 @@ DefineAbility({
   Key="Sorcerer Bonus Spell L9 ~ Wish",
   Category="Internal",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_BonusSpell_Wish_L9"] >= 1)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 19)
     end,
   },
@@ -52120,7 +52120,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer ~ Standard Bloodline" then return true end
@@ -52139,7 +52139,7 @@ DefineAbility({
   Description={
     Format="There is a taint in your blood, one that is alien and bizarre. You tend to think in odd ways, approaching problems from an angle that most would not expect. Over time, this taint manifests itself in your physical form.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["Sorcerer_Aberrant_Description"] == 0)
       end,
     },
@@ -52153,7 +52153,7 @@ DefineAbility({
         "Knowledge (Dungeoneering)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Aberrant_BloodlineClassSkill1"] >= 1)
         end,
       },
@@ -52165,7 +52165,7 @@ DefineAbility({
         "Aberrant Bloodline ~ Bloodline Arcana",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Aberrant_BloodlineArcana1"] >= 1)
         end,
       },
@@ -52177,7 +52177,7 @@ DefineAbility({
         "Aberrant Bloodline ~ Bonus Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Aberrant_BloodlineSpells1"] >= 1)
         end,
       },
@@ -52189,7 +52189,7 @@ DefineAbility({
         "Aberrant Bloodline ~ Bloodline Powers",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Aberrant_BloodlinePowers"] >= 1)
         end,
       },
@@ -52201,7 +52201,7 @@ DefineAbility({
         "Aberrant Bloodline ~ Power LVL 01",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Aberrant_BloodlinePower1"] >= 1)
         end,
       },
@@ -52213,7 +52213,7 @@ DefineAbility({
         "Aberrant Bloodline ~ Power LVL 03",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Aberrant_BloodlinePower3"] >= 1)
         end,
       },
@@ -52225,7 +52225,7 @@ DefineAbility({
         "Aberrant Bloodline ~ Power LVL 09",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Aberrant_BloodlinePower9"] >= 1)
         end,
       },
@@ -52237,7 +52237,7 @@ DefineAbility({
         "Aberrant Bloodline ~ Power LVL 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Aberrant_BloodlinePower15"] >= 1)
         end,
       },
@@ -52249,7 +52249,7 @@ DefineAbility({
         "Aberrant Bloodline ~ Power LVL 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Aberrant_BloodlinePower20"] >= 1)
         end,
       },
@@ -52504,10 +52504,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell1"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 3)
         end,
       },
@@ -52524,10 +52524,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell2"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 5)
         end,
       },
@@ -52544,10 +52544,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell3"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 7)
         end,
       },
@@ -52564,10 +52564,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell4"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 9)
         end,
       },
@@ -52584,10 +52584,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell5"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 11)
         end,
       },
@@ -52604,10 +52604,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell6"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 13)
         end,
       },
@@ -52624,10 +52624,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell7"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 15)
         end,
       },
@@ -52644,10 +52644,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell8"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 17)
         end,
       },
@@ -52664,10 +52664,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell9"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 19)
         end,
       },
@@ -52737,7 +52737,7 @@ DefineAbility({
         "Sorcerer_Aberrant_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_AcidicRay_DamageBonus"] <= 0)
         end,
       },
@@ -52750,7 +52750,7 @@ DefineAbility({
         "Sorcerer_Aberrant_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_AcidicRay_DamageBonus"] > 0)
         end,
       },
@@ -52781,14 +52781,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Aberrant" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Aberrant_BloodlineProgressionLVL"] >= 1)
     end,
   },
@@ -52844,7 +52844,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Aberrant_BloodlinePower3LVL"] >= 11)
         end,
       },
@@ -52856,7 +52856,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Aberrant_BloodlinePower3LVL"] >= 17)
         end,
       },
@@ -52866,14 +52866,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Aberrant" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Aberrant_BloodlineProgressionLVL"] >= 3)
     end,
   },
@@ -52906,7 +52906,7 @@ DefineAbility({
         "Sorcerer_UnusualAnatomy_PercentChance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (2 <= character.CountAbilities(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Immunity to Critical Hits" then return true end
@@ -52923,7 +52923,7 @@ DefineAbility({
         "Sorcerer_UnusualAnatomy_PercentChance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (2 <= character.CountAbilities(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Immunity to Critical Hits" then return true end
@@ -52950,7 +52950,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("25"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Aberrant_BloodlinePower9LVL"] >= 13)
         end,
       },
@@ -52960,14 +52960,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Aberrant" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Aberrant_BloodlineProgressionLVL"] >= 9)
     end,
   },
@@ -53009,14 +53009,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Aberrant" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Aberrant_BloodlineProgressionLVL"] >= 15)
     end,
   },
@@ -53073,14 +53073,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Aberrant" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Aberrant_BloodlineProgressionLVL"] >= 20)
     end,
   },
@@ -53101,7 +53101,7 @@ DefineAbility({
   Description={
     Format="Generations ago, a demon spread its filth into your heritage. While it does not manifest in all of your kin, for you it is particularly strong. You might sometimes have urges to chaos or evil, but your destiny (and alignment) is up to you.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["Sorcerer_Abyssal_Description"] == 0)
       end,
     },
@@ -53115,7 +53115,7 @@ DefineAbility({
         "Knowledge (Planes)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlineClassSkill1"] >= 1)
         end,
       },
@@ -53127,7 +53127,7 @@ DefineAbility({
         "Abyssal Bloodline ~ Bloodline Arcana",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlineArcana1"] >= 1)
         end,
       },
@@ -53139,7 +53139,7 @@ DefineAbility({
         "Abyssal Bloodline ~ Bonus Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlineSpells1"] >= 1)
         end,
       },
@@ -53151,7 +53151,7 @@ DefineAbility({
         "Abyssal Bloodline ~ Bloodline Powers",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePowers"] >= 1)
         end,
       },
@@ -53163,7 +53163,7 @@ DefineAbility({
         "Abyssal Bloodline ~ Power LVL 01",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePower1"] >= 1)
         end,
       },
@@ -53175,7 +53175,7 @@ DefineAbility({
         "Abyssal Bloodline ~ Power LVL 03",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePower3"] >= 1)
         end,
       },
@@ -53187,7 +53187,7 @@ DefineAbility({
         "Abyssal Bloodline ~ Power LVL 09",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePower9"] >= 1)
         end,
       },
@@ -53199,7 +53199,7 @@ DefineAbility({
         "Abyssal Bloodline ~ Power LVL 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePower15"] >= 1)
         end,
       },
@@ -53211,7 +53211,7 @@ DefineAbility({
         "Abyssal Bloodline ~ Power LVL 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePower20"] >= 1)
         end,
       },
@@ -53465,10 +53465,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell1"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 3)
         end,
       },
@@ -53485,10 +53485,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell2"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 5)
         end,
       },
@@ -53505,10 +53505,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell3"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 7)
         end,
       },
@@ -53525,10 +53525,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell4"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 9)
         end,
       },
@@ -53545,10 +53545,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell5"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 11)
         end,
       },
@@ -53565,10 +53565,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell6"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 13)
         end,
       },
@@ -53585,10 +53585,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell7"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 15)
         end,
       },
@@ -53605,10 +53605,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell8"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 17)
         end,
       },
@@ -53625,10 +53625,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell9"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 19)
         end,
       },
@@ -53722,7 +53722,7 @@ DefineAbility({
         "Sorcerer_Abyssal_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePower1LVL"] < 5)
         end,
       },
@@ -53735,10 +53735,10 @@ DefineAbility({
         "Sorcerer_Abyssal_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePower1LVL"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePower1LVL"] < 7)
         end,
       },
@@ -53751,10 +53751,10 @@ DefineAbility({
         "Sorcerer_Abyssal_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePower1LVL"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePower1LVL"] < 11)
         end,
       },
@@ -53767,7 +53767,7 @@ DefineAbility({
         "Sorcerer_Abyssal_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlineProgressionLVL"] >= 11)
         end,
       },
@@ -53796,7 +53796,7 @@ DefineAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePower1LVL"] >= 7)
         end,
       },
@@ -53808,7 +53808,7 @@ DefineAbility({
       Category="WEAPONPROF=Claw",
       Formula=Formula("Sorcerer_GenericClaws_SizeBonus"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Abyssal_BloodlinePower1LVL"] >= 7)
         end,
       },
@@ -53818,14 +53818,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Abyssal" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Abyssal_BloodlineProgressionLVL"] >= 1)
     end,
   },
@@ -53859,7 +53859,7 @@ DefineAbility({
         "Sorcerer_AbyssalDemonResistances_SaveBonus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Immunity to Poison" then return true end
@@ -53900,14 +53900,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Abyssal" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Abyssal_BloodlineProgressionLVL"] >= 3)
     end,
   },
@@ -53957,14 +53957,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Abyssal" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Abyssal_BloodlineProgressionLVL"] >= 9)
     end,
   },
@@ -53993,14 +53993,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Abyssal" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Abyssal_BloodlineProgressionLVL"] >= 15)
     end,
   },
@@ -54077,14 +54077,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Abyssal" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Abyssal_BloodlineProgressionLVL"] >= 20)
     end,
   },
@@ -54114,7 +54114,7 @@ DefineAbility({
         "Arcane Bloodline ~ Bloodline Arcana",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Arcane_BloodlineArcana1"] >= 1)
         end,
       },
@@ -54126,7 +54126,7 @@ DefineAbility({
         "Arcane Bloodline ~ Bonus Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Arcane_BloodlineSpells1"] >= 1)
         end,
       },
@@ -54138,7 +54138,7 @@ DefineAbility({
         "Arcane Bloodline ~ Bloodline Powers",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Arcane_BloodlinePowers"] >= 1)
         end,
       },
@@ -54150,7 +54150,7 @@ DefineAbility({
         "Arcane Bloodline ~ Power LVL 01",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Arcane_BloodlinePower1"] >= 1)
         end,
       },
@@ -54162,7 +54162,7 @@ DefineAbility({
         "Arcane Bloodline ~ Power LVL 03",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Arcane_BloodlinePower3"] >= 1)
         end,
       },
@@ -54174,7 +54174,7 @@ DefineAbility({
         "Arcane Bloodline ~ Power LVL 09",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Arcane_BloodlinePower9"] >= 1)
         end,
       },
@@ -54186,7 +54186,7 @@ DefineAbility({
         "Arcane Bloodline ~ Power LVL 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Arcane_BloodlinePower15"] >= 1)
         end,
       },
@@ -54198,7 +54198,7 @@ DefineAbility({
         "Arcane Bloodline ~ Power LVL 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Arcane_BloodlinePower20"] >= 1)
         end,
       },
@@ -54215,10 +54215,10 @@ DefineAbility({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Arcane_BloodlineClassSkill1"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Arcane_Description"] == 0)
         end,
       },
@@ -54467,10 +54467,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell1"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 3)
         end,
       },
@@ -54487,10 +54487,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell2"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 5)
         end,
       },
@@ -54507,10 +54507,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell3"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 7)
         end,
       },
@@ -54527,10 +54527,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell4"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 9)
         end,
       },
@@ -54547,10 +54547,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell5"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 11)
         end,
       },
@@ -54567,10 +54567,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell6"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 13)
         end,
       },
@@ -54587,10 +54587,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell7"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 15)
         end,
       },
@@ -54607,10 +54607,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell8"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 17)
         end,
       },
@@ -54627,10 +54627,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell9"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 19)
         end,
       },
@@ -54711,14 +54711,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Arcane" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Arcane_BloodlineProgressionLVL"] >= 1)
     end,
   },
@@ -54751,7 +54751,7 @@ DefineAbility({
         "Sorcerer_ArcaneMetamagicAdept_Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Arcane Bloodline ~ Arcane Apotheosis" then return true end
@@ -54767,7 +54767,7 @@ DefineAbility({
         "Sorcerer_ArcaneMetamagicAdept_Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Arcane Bloodline ~ Arcane Apotheosis" then return true end
@@ -54780,7 +54780,7 @@ DefineAbility({
       Name="CheckType",
       FormatString="Uses per Day",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Arcane Bloodline ~ Arcane Apotheosis" then return true end
@@ -54804,14 +54804,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Arcane" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Arcane_BloodlineProgressionLVL"] >= 3)
     end,
   },
@@ -54859,14 +54859,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Arcane" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Arcane_BloodlineProgressionLVL"] >= 9)
     end,
   },
@@ -54899,14 +54899,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Arcane" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Arcane_BloodlineProgressionLVL"] >= 15)
     end,
   },
@@ -54962,14 +54962,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Arcane" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Arcane_BloodlineProgressionLVL"] >= 15)
     end,
   },
@@ -55006,14 +55006,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Arcane" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Arcane_BloodlineProgressionLVL"] >= 20)
     end,
   },
@@ -55068,7 +55068,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 4)
     end,
   },
@@ -55095,7 +55095,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 6)
     end,
   },
@@ -55122,7 +55122,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 8)
     end,
   },
@@ -55149,7 +55149,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 10)
     end,
   },
@@ -55176,7 +55176,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 12)
     end,
   },
@@ -55203,7 +55203,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 14)
     end,
   },
@@ -55230,7 +55230,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 16)
     end,
   },
@@ -55257,7 +55257,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BloodlineCasterLVL"] >= 18)
     end,
   },
@@ -55272,7 +55272,7 @@ DefineAbility({
   Description={
     Format="Your bloodline is blessed by a celestial power, either from a celestial ancestor or through divine intervention. Although this power drives you along the path of good, your fate (and alignment) is your own to determine.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["Sorcerer_Celestial_Description"] == 0)
       end,
     },
@@ -55286,7 +55286,7 @@ DefineAbility({
         "Heal",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Celestial_BloodlineClassSkill1"] >= 1)
         end,
       },
@@ -55298,7 +55298,7 @@ DefineAbility({
         "Celestial Bloodline ~ Bloodline Arcana",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Celestial_BloodlineArcana1"] >= 1)
         end,
       },
@@ -55310,7 +55310,7 @@ DefineAbility({
         "Celestial Bloodline ~ Bonus Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Celestial_BloodlineSpells1"] >= 1)
         end,
       },
@@ -55322,7 +55322,7 @@ DefineAbility({
         "Celestial Bloodline ~ Bloodline Powers",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Celestial_BloodlinePowers"] >= 1)
         end,
       },
@@ -55334,7 +55334,7 @@ DefineAbility({
         "Celestial Bloodline ~ Power LVL 01",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Celestial_BloodlinePower1"] >= 1)
         end,
       },
@@ -55346,7 +55346,7 @@ DefineAbility({
         "Celestial Bloodline ~ Power LVL 03",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Celestial_BloodlinePower3"] >= 1)
         end,
       },
@@ -55358,7 +55358,7 @@ DefineAbility({
         "Celestial Bloodline ~ Power LVL 09",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Celestial_BloodlinePower9"] >= 1)
         end,
       },
@@ -55370,7 +55370,7 @@ DefineAbility({
         "Celestial Bloodline ~ Power LVL 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Celestial_BloodlinePower15"] >= 1)
         end,
       },
@@ -55382,7 +55382,7 @@ DefineAbility({
         "Celestial Bloodline ~ Power LVL 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Celestial_BloodlinePower20"] >= 1)
         end,
       },
@@ -55636,10 +55636,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell1"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 3)
         end,
       },
@@ -55656,10 +55656,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell2"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 5)
         end,
       },
@@ -55676,10 +55676,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell3"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 7)
         end,
       },
@@ -55696,10 +55696,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell4"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 9)
         end,
       },
@@ -55716,10 +55716,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell5"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 11)
         end,
       },
@@ -55736,10 +55736,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell6"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 13)
         end,
       },
@@ -55756,10 +55756,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell7"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 15)
         end,
       },
@@ -55776,10 +55776,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell8"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 17)
         end,
       },
@@ -55796,10 +55796,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell9"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 19)
         end,
       },
@@ -55884,7 +55884,7 @@ DefineAbility({
         "Sorcerer_Celestial_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CelestialHeaventlyFire_DamageBonus"] <= 0)
         end,
       },
@@ -55897,7 +55897,7 @@ DefineAbility({
         "Sorcerer_Celestial_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CelestialHeaventlyFire_DamageBonus"] > 0)
         end,
       },
@@ -55928,14 +55928,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Celestial" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Celestial_BloodlineProgressionLVL"] >= 1)
     end,
   },
@@ -55986,14 +55986,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Celestial" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Celestial_BloodlineProgressionLVL"] >= 3)
     end,
   },
@@ -56013,7 +56013,7 @@ DefineAbility({
   Description={
     Format="You can sprout feathery wings and fly with a speed of 60 feet and good maneuverability.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return character.HasAnyAbility(function (ability)
           if ability.Category ~= "Special Ability" then return false end
           if ability.Name == "Celestial Bloodline ~ Ascension" then return true end
@@ -56031,7 +56031,7 @@ DefineAbility({
         "Sorcerer_CelestialWingsOfHeaven_TimeMinutes",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Celestial Bloodline ~ Ascension" then return true end
@@ -56047,7 +56047,7 @@ DefineAbility({
         "Sorcerer_CelestialWingsOfHeaven_TimeMinutes",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Celestial Bloodline ~ Ascension" then return true end
@@ -56060,7 +56060,7 @@ DefineAbility({
       Name="CheckCount",
       FormatString="0",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Celestial Bloodline ~ Ascension" then return true end
@@ -56073,7 +56073,7 @@ DefineAbility({
       Name="CheckType",
       FormatString="Minutes per Day",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Celestial Bloodline ~ Ascension" then return true end
@@ -56086,7 +56086,7 @@ DefineAbility({
       Name="CheckType",
       FormatString="At Will",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Celestial Bloodline ~ Ascension" then return true end
@@ -56110,14 +56110,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Celestial" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Celestial_BloodlineProgressionLVL"] >= 9)
     end,
   },
@@ -56173,14 +56173,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Celestial" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Celestial_BloodlineProgressionLVL"] >= 15)
     end,
   },
@@ -56258,14 +56258,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Celestial" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Celestial_BloodlineProgressionLVL"] >= 20)
     end,
   },
@@ -56289,7 +56289,7 @@ DefineAbility({
   Description={
     Format="Your family is destined for greatness in some way. Your birth could have been foretold in prophecy, or perhaps it occurred during an especially auspicious event, such as a solar eclipse. Regardless of your bloodline's origin, you have a great future ahead.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["Sorcerer_Destined_Description"] == 0)
       end,
     },
@@ -56303,7 +56303,7 @@ DefineAbility({
         "Knowledge (History)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Destined_BloodlineClassSkill1"] >= 1)
         end,
       },
@@ -56315,7 +56315,7 @@ DefineAbility({
         "Destined Bloodline ~ Bloodline Arcana",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Destined_BloodlineArcana1"] >= 1)
         end,
       },
@@ -56327,7 +56327,7 @@ DefineAbility({
         "Destined Bloodline ~ Bonus Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Destined_BloodlineSpells1"] >= 1)
         end,
       },
@@ -56339,7 +56339,7 @@ DefineAbility({
         "Destined Bloodline ~ Bloodline Powers",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Destined_BloodlinePowers"] >= 1)
         end,
       },
@@ -56351,7 +56351,7 @@ DefineAbility({
         "Destined Bloodline ~ Power LVL 01",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Destined_BloodlinePower1"] >= 1)
         end,
       },
@@ -56363,7 +56363,7 @@ DefineAbility({
         "Destined Bloodline ~ Power LVL 03",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Destined_BloodlinePower3"] >= 1)
         end,
       },
@@ -56375,7 +56375,7 @@ DefineAbility({
         "Destined Bloodline ~ Power LVL 09",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Destined_BloodlinePower9"] >= 1)
         end,
       },
@@ -56387,7 +56387,7 @@ DefineAbility({
         "Destined Bloodline ~ Power LVL 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Destined_BloodlinePower15"] >= 1)
         end,
       },
@@ -56399,7 +56399,7 @@ DefineAbility({
         "Destined Bloodline ~ Power LVL 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Destined_BloodlinePower20"] >= 1)
         end,
       },
@@ -56653,10 +56653,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell1"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 3)
         end,
       },
@@ -56673,10 +56673,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell2"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 5)
         end,
       },
@@ -56693,10 +56693,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell3"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 7)
         end,
       },
@@ -56713,10 +56713,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell4"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 9)
         end,
       },
@@ -56733,10 +56733,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell5"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 11)
         end,
       },
@@ -56753,10 +56753,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell6"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 13)
         end,
       },
@@ -56773,10 +56773,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell7"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 15)
         end,
       },
@@ -56793,10 +56793,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell8"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 17)
         end,
       },
@@ -56813,10 +56813,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell9"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 19)
         end,
       },
@@ -56912,14 +56912,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Destined" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Destined_BloodlineProgressionLVL"] >= 1)
     end,
   },
@@ -56966,14 +56966,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Destined" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Destined_BloodlineProgressionLVL"] >= 3)
     end,
   },
@@ -56994,7 +56994,7 @@ DefineAbility({
   Description={
     Format="You can use this ability twice per day.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["Sorcerer_DestinedItWasMeantToBe_Times"] > 1)
       end,
     },
@@ -57034,14 +57034,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Destined" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Destined_BloodlineProgressionLVL"] >= 9)
     end,
   },
@@ -57086,14 +57086,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Destined" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Destined_BloodlineProgressionLVL"] >= 15)
     end,
   },
@@ -57138,14 +57138,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Destined" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Destined_BloodlineProgressionLVL"] >= 20)
     end,
   },
@@ -57166,7 +57166,7 @@ DefineAbility({
   Description={
     Format="At some point in your family's history, a dragon interbred with your bloodline, and now its ancient power flows through your veins.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["Sorcerer_Draconic_Description"] == 0)
       end,
     },
@@ -57180,7 +57180,7 @@ DefineAbility({
         "Perception",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlineClassSkill1"] >= 1)
         end,
       },
@@ -57192,7 +57192,7 @@ DefineAbility({
         "Draconic Bloodline ~ Bloodline Arcana",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlineArcana1"] >= 1)
         end,
       },
@@ -57204,7 +57204,7 @@ DefineAbility({
         "Draconic Bloodline ~ Bonus Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlineSpells1"] >= 1)
         end,
       },
@@ -57216,7 +57216,7 @@ DefineAbility({
         "Draconic Bloodline ~ Bloodline Powers",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlinePowers"] >= 1)
         end,
       },
@@ -57228,7 +57228,7 @@ DefineAbility({
         "Draconic Bloodline ~ Power LVL 01",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower1"] >= 1)
         end,
       },
@@ -57240,7 +57240,7 @@ DefineAbility({
         "Draconic Bloodline ~ Power LVL 03",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower3"] >= 1)
         end,
       },
@@ -57252,7 +57252,7 @@ DefineAbility({
         "Draconic Bloodline ~ Power LVL 09",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower9"] >= 1)
         end,
       },
@@ -57264,7 +57264,7 @@ DefineAbility({
         "Draconic Bloodline ~ Power LVL 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower15"] >= 1)
         end,
       },
@@ -57276,7 +57276,7 @@ DefineAbility({
         "Draconic Bloodline ~ Power LVL 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower20"] >= 1)
         end,
       },
@@ -57537,10 +57537,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell1"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 3)
         end,
       },
@@ -57561,10 +57561,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell2"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 5)
         end,
       },
@@ -57585,10 +57585,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell3"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 7)
         end,
       },
@@ -57609,10 +57609,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell4"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 9)
         end,
       },
@@ -57633,10 +57633,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell5"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 11)
         end,
       },
@@ -57657,10 +57657,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell6"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 13)
         end,
       },
@@ -57681,10 +57681,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell7"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 15)
         end,
       },
@@ -57705,10 +57705,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell8"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 17)
         end,
       },
@@ -57729,10 +57729,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell9"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 19)
         end,
       },
@@ -57759,7 +57759,7 @@ DefineAbility({
       Name="Ability Benefit",
       FormatString="(acid spells deal +1 damage per die)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Acid"] >= 1)
         end,
       },
@@ -57768,7 +57768,7 @@ DefineAbility({
       Name="Ability Benefit",
       FormatString="(cold spells deal +1 damage per die)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Cold"] >= 1)
         end,
       },
@@ -57777,7 +57777,7 @@ DefineAbility({
       Name="Ability Benefit",
       FormatString="(electricity spells deal +1 damage per die)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Electricity"] >= 1)
         end,
       },
@@ -57786,7 +57786,7 @@ DefineAbility({
       Name="Ability Benefit",
       FormatString="(fire spells deal +1 damage per die)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Fire"] >= 1)
         end,
       },
@@ -57847,7 +57847,7 @@ DefineAbility({
         "Sorcerer_Draconic_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower1LVL"] < 5)
         end,
       },
@@ -57860,10 +57860,10 @@ DefineAbility({
         "Sorcerer_Draconic_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower1LVL"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower1LVL"] < 7)
         end,
       },
@@ -57876,10 +57876,10 @@ DefineAbility({
         "Sorcerer_Draconic_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower1LVL"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower1LVL"] < 11)
         end,
       },
@@ -57892,10 +57892,10 @@ DefineAbility({
         "Sorcerer_Draconic_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Acid"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlineProgressionLVL"] >= 11)
         end,
       },
@@ -57908,10 +57908,10 @@ DefineAbility({
         "Sorcerer_Draconic_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Cold"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlineProgressionLVL"] >= 11)
         end,
       },
@@ -57924,10 +57924,10 @@ DefineAbility({
         "Sorcerer_Draconic_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Electricity"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlineProgressionLVL"] >= 11)
         end,
       },
@@ -57940,10 +57940,10 @@ DefineAbility({
         "Sorcerer_Draconic_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Fire"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlineProgressionLVL"] >= 11)
         end,
       },
@@ -57972,7 +57972,7 @@ DefineAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower1LVL"] >= 7)
         end,
       },
@@ -57984,7 +57984,7 @@ DefineAbility({
       Category="WEAPONPROF=Claw",
       Formula=Formula("Sorcerer_GenericClaws_SizeBonus"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower1LVL"] >= 7)
         end,
       },
@@ -57994,14 +57994,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Draconic" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Draconic_BloodlineProgressionLVL"] >= 1)
     end,
   },
@@ -58062,7 +58062,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower3LVL"] >= 15)
         end,
       },
@@ -58077,7 +58077,7 @@ DefineAbility({
         Name="Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Acid"] >= 1)
         end,
       },
@@ -58092,7 +58092,7 @@ DefineAbility({
         Name="Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Electricity"] >= 1)
         end,
       },
@@ -58107,7 +58107,7 @@ DefineAbility({
         Name="Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Fire"] >= 1)
         end,
       },
@@ -58122,7 +58122,7 @@ DefineAbility({
         Name="Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Cold"] >= 1)
         end,
       },
@@ -58132,14 +58132,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Draconic" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Draconic_BloodlineProgressionLVL"] >= 3)
     end,
   },
@@ -58162,7 +58162,7 @@ DefineAbility({
       Formula("Sorcerer_DraconicBreathWeapon_Times"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["Sorcerer_DraconicBreathWeapon_Times"] >= 4)
       end,
     },
@@ -58178,10 +58178,10 @@ DefineAbility({
         "Sorcerer_DraconicBreathWeapon_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBreathWeapon_Line"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Acid"] >= 1)
         end,
       },
@@ -58195,10 +58195,10 @@ DefineAbility({
         "Sorcerer_DraconicBreathWeapon_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBreathWeapon_Line"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Cold"] >= 1)
         end,
       },
@@ -58212,10 +58212,10 @@ DefineAbility({
         "Sorcerer_DraconicBreathWeapon_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBreathWeapon_Line"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Electricity"] >= 1)
         end,
       },
@@ -58229,10 +58229,10 @@ DefineAbility({
         "Sorcerer_DraconicBreathWeapon_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBreathWeapon_Line"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Fire"] >= 1)
         end,
       },
@@ -58246,10 +58246,10 @@ DefineAbility({
         "Sorcerer_DraconicBreathWeapon_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBreathWeapon_Cone"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Acid"] >= 1)
         end,
       },
@@ -58263,10 +58263,10 @@ DefineAbility({
         "Sorcerer_DraconicBreathWeapon_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBreathWeapon_Cone"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Cold"] >= 1)
         end,
       },
@@ -58280,10 +58280,10 @@ DefineAbility({
         "Sorcerer_DraconicBreathWeapon_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBreathWeapon_Cone"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Electricity"] >= 1)
         end,
       },
@@ -58297,10 +58297,10 @@ DefineAbility({
         "Sorcerer_DraconicBreathWeapon_DC",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBreathWeapon_Cone"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Fire"] >= 1)
         end,
       },
@@ -58340,7 +58340,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("max(floor((Sorcerer_Draconic_BloodlinePower9LVL-11)/3),1)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlinePower9LVL"] >= 9)
         end,
       },
@@ -58350,14 +58350,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Draconic" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Draconic_BloodlineProgressionLVL"] >= 9)
     end,
   },
@@ -58398,14 +58398,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Draconic" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Draconic_BloodlineProgressionLVL"] >= 15)
     end,
   },
@@ -58446,7 +58446,7 @@ DefineAbility({
         "Immunity to Cold",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Cold"] >= 1)
         end,
       },
@@ -58458,7 +58458,7 @@ DefineAbility({
         "Immunity to Fire",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Fire"] >= 1)
         end,
       },
@@ -58470,7 +58470,7 @@ DefineAbility({
         "Immunity to Acid",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Acid"] >= 1)
         end,
       },
@@ -58482,7 +58482,7 @@ DefineAbility({
         "Immunity to Electricity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicDamageType_Electricity"] >= 1)
         end,
       },
@@ -58507,14 +58507,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Draconic" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Draconic_BloodlineProgressionLVL"] >= 20)
     end,
   },
@@ -58580,7 +58580,7 @@ ModifyAbility({
       Name="NAME",
       FormatString="Draconic Bloodline (Black)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Black"] == 1)
         end,
       },
@@ -58589,7 +58589,7 @@ ModifyAbility({
       Name="Bloodline",
       FormatString="Draconic (Black)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Black"] == 1)
         end,
       },
@@ -58638,7 +58638,7 @@ ModifyAbility({
       Name="NAME",
       FormatString="Draconic Bloodline (Blue)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Blue"] == 1)
         end,
       },
@@ -58647,7 +58647,7 @@ ModifyAbility({
       Name="Bloodline",
       FormatString="Draconic (Blue)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Blue"] == 1)
         end,
       },
@@ -58696,7 +58696,7 @@ ModifyAbility({
       Name="NAME",
       FormatString="Draconic Bloodline (Green)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Green"] == 1)
         end,
       },
@@ -58705,7 +58705,7 @@ ModifyAbility({
       Name="Bloodline",
       FormatString="Draconic (Green)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Green"] == 1)
         end,
       },
@@ -58754,7 +58754,7 @@ ModifyAbility({
       Name="NAME",
       FormatString="Draconic Bloodline (Red)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Red"] == 1)
         end,
       },
@@ -58763,7 +58763,7 @@ ModifyAbility({
       Name="Bloodline",
       FormatString="Draconic (Red)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Red"] == 1)
         end,
       },
@@ -58812,7 +58812,7 @@ ModifyAbility({
       Name="NAME",
       FormatString="Draconic Bloodline (White)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_White"] == 1)
         end,
       },
@@ -58821,7 +58821,7 @@ ModifyAbility({
       Name="Bloodline",
       FormatString="Draconic (White)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_White"] == 1)
         end,
       },
@@ -58870,7 +58870,7 @@ ModifyAbility({
       Name="NAME",
       FormatString="Draconic Bloodline (Brass)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Brass"] == 1)
         end,
       },
@@ -58879,7 +58879,7 @@ ModifyAbility({
       Name="Bloodline",
       FormatString="Draconic (Brass)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Brass"] == 1)
         end,
       },
@@ -58928,7 +58928,7 @@ ModifyAbility({
       Name="NAME",
       FormatString="Draconic Bloodline (Bronze)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Bronze"] == 1)
         end,
       },
@@ -58937,7 +58937,7 @@ ModifyAbility({
       Name="Bloodline",
       FormatString="Draconic (Bronze)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Bronze"] == 1)
         end,
       },
@@ -58986,7 +58986,7 @@ ModifyAbility({
       Name="NAME",
       FormatString="Draconic Bloodline (Copper)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Copper"] == 1)
         end,
       },
@@ -58995,7 +58995,7 @@ ModifyAbility({
       Name="Bloodline",
       FormatString="Draconic (Copper)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Copper"] == 1)
         end,
       },
@@ -59044,7 +59044,7 @@ ModifyAbility({
       Name="NAME",
       FormatString="Draconic Bloodline (Gold)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Gold"] == 1)
         end,
       },
@@ -59053,7 +59053,7 @@ ModifyAbility({
       Name="Bloodline",
       FormatString="Draconic (Gold)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Gold"] == 1)
         end,
       },
@@ -59102,7 +59102,7 @@ ModifyAbility({
       Name="NAME",
       FormatString="Draconic Bloodline (Silver)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Silver"] == 1)
         end,
       },
@@ -59111,7 +59111,7 @@ ModifyAbility({
       Name="Bloodline",
       FormatString="Draconic (Silver)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_DraconicBloodlineChoice_Silver"] == 1)
         end,
       },
@@ -59125,7 +59125,7 @@ DefineAbility({
   Description={
     Format="The power of the elements resides in you, and at times you can hardly control its fury. This influence comes from an elemental outsider in your family history or a time when you or your relatives were exposed to a powerful elemental force.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["Sorcerer_Elemental_Description"] == 0)
       end,
     },
@@ -59139,7 +59139,7 @@ DefineAbility({
         "Knowledge (Planes)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Elemental_BloodlineClassSkill1"] >= 1)
         end,
       },
@@ -59151,7 +59151,7 @@ DefineAbility({
         "Elemental Bloodline ~ Bloodline Arcana",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Elemental_BloodlineArcana1"] >= 1)
         end,
       },
@@ -59163,7 +59163,7 @@ DefineAbility({
         "Elemental Bloodline ~ Bonus Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Elemental_BloodlineSpells1"] >= 1)
         end,
       },
@@ -59175,7 +59175,7 @@ DefineAbility({
         "Elemental Bloodline ~ Bloodline Powers",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Elemental_BloodlinePowers"] >= 1)
         end,
       },
@@ -59187,7 +59187,7 @@ DefineAbility({
         "Elemental Bloodline ~ Power LVL 01",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Elemental_BloodlinePower1"] >= 1)
         end,
       },
@@ -59199,7 +59199,7 @@ DefineAbility({
         "Elemental Bloodline ~ Power LVL 03",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Elemental_BloodlinePower3"] >= 1)
         end,
       },
@@ -59211,7 +59211,7 @@ DefineAbility({
         "Elemental Bloodline ~ Power LVL 09",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Elemental_BloodlinePower9"] >= 1)
         end,
       },
@@ -59223,7 +59223,7 @@ DefineAbility({
         "Elemental Bloodline ~ Power LVL 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Elemental_BloodlinePower15"] >= 1)
         end,
       },
@@ -59235,7 +59235,7 @@ DefineAbility({
         "Elemental Bloodline ~ Power LVL 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Elemental_BloodlinePower20"] >= 1)
         end,
       },
@@ -59496,13 +59496,13 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell1"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
         end,
       },
@@ -59519,13 +59519,13 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell1"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Earth"] >= 1)
         end,
       },
@@ -59542,13 +59542,13 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell1"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Water"] >= 1)
         end,
       },
@@ -59565,13 +59565,13 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell1"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Air"] >= 1)
         end,
       },
@@ -59588,13 +59588,13 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell2"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
         end,
       },
@@ -59611,13 +59611,13 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell2"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Earth"] >= 1)
         end,
       },
@@ -59634,13 +59634,13 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell2"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Water"] >= 1)
         end,
       },
@@ -59657,13 +59657,13 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell2"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Air"] >= 1)
         end,
       },
@@ -59680,10 +59680,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell3"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 7)
         end,
       },
@@ -59700,10 +59700,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell4"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 9)
         end,
       },
@@ -59720,10 +59720,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell5"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 11)
         end,
       },
@@ -59740,10 +59740,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell6"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 13)
         end,
       },
@@ -59760,10 +59760,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell7"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 15)
         end,
       },
@@ -59780,10 +59780,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell8"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 17)
         end,
       },
@@ -59800,10 +59800,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell9"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 19)
         end,
       },
@@ -59820,7 +59820,7 @@ DefineAbility({
   Description={
     Format="fire.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
       end,
     },
@@ -59831,7 +59831,7 @@ DefineAbility({
       Name="Ability Benefit",
       FormatString="(change energy damage spells to acid)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Earth"] >= 1)
         end,
       },
@@ -59840,7 +59840,7 @@ DefineAbility({
       Name="Ability Benefit",
       FormatString="(change energy damage spells to cold)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Water"] >= 1)
         end,
       },
@@ -59849,7 +59849,7 @@ DefineAbility({
       Name="Ability Benefit",
       FormatString="(change energy damage spells to electricity)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Air"] >= 1)
         end,
       },
@@ -59858,7 +59858,7 @@ DefineAbility({
       Name="Ability Benefit",
       FormatString="(change energy damage spells to fire)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
         end,
       },
@@ -59910,10 +59910,10 @@ DefineAbility({
         "Sorcerer_Elemental_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalElementalRay_DamageBonus"] <= 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Earth"] >= 1)
         end,
       },
@@ -59926,10 +59926,10 @@ DefineAbility({
         "Sorcerer_Elemental_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalElementalRay_DamageBonus"] <= 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Water"] >= 1)
         end,
       },
@@ -59942,10 +59942,10 @@ DefineAbility({
         "Sorcerer_Elemental_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalElementalRay_DamageBonus"] <= 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Air"] >= 1)
         end,
       },
@@ -59958,10 +59958,10 @@ DefineAbility({
         "Sorcerer_Elemental_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalElementalRay_DamageBonus"] <= 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
         end,
       },
@@ -59974,10 +59974,10 @@ DefineAbility({
         "Sorcerer_Elemental_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalElementalRay_DamageBonus"] > 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Earth"] >= 1)
         end,
       },
@@ -59990,10 +59990,10 @@ DefineAbility({
         "Sorcerer_Elemental_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalElementalRay_DamageBonus"] > 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Water"] >= 1)
         end,
       },
@@ -60006,10 +60006,10 @@ DefineAbility({
         "Sorcerer_Elemental_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalElementalRay_DamageBonus"] > 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Air"] >= 1)
         end,
       },
@@ -60022,10 +60022,10 @@ DefineAbility({
         "Sorcerer_Elemental_BloodlinePower1Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalElementalRay_DamageBonus"] > 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
         end,
       },
@@ -60056,14 +60056,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Elemental" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Elemental_BloodlineProgressionLVL"] >= 1)
     end,
   },
@@ -60083,7 +60083,7 @@ DefineAbility({
   Description={
     Format="fire.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
       end,
     },
@@ -60110,7 +60110,7 @@ DefineAbility({
         Name="Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Earth"] >= 1)
         end,
       },
@@ -60125,7 +60125,7 @@ DefineAbility({
         Name="Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Water"] >= 1)
         end,
       },
@@ -60140,7 +60140,7 @@ DefineAbility({
         Name="Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Air"] >= 1)
         end,
       },
@@ -60155,7 +60155,7 @@ DefineAbility({
         Name="Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
         end,
       },
@@ -60165,14 +60165,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Elemental" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Elemental_BloodlineProgressionLVL"] >= 3)
     end,
   },
@@ -60203,7 +60203,7 @@ DefineAbility({
         "Sorcerer_ElementalElementalBlast_Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Earth"] >= 1)
         end,
       },
@@ -60217,7 +60217,7 @@ DefineAbility({
         "Sorcerer_ElementalElementalBlast_Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Water"] >= 1)
         end,
       },
@@ -60231,7 +60231,7 @@ DefineAbility({
         "Sorcerer_ElementalElementalBlast_Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Air"] >= 1)
         end,
       },
@@ -60245,7 +60245,7 @@ DefineAbility({
         "Sorcerer_ElementalElementalBlast_Times",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
         end,
       },
@@ -60290,14 +60290,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Elemental" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Elemental_BloodlineProgressionLVL"] >= 9)
     end,
   },
@@ -60317,7 +60317,7 @@ DefineAbility({
   Description={
     Format="You gain a swim speed of 60 feet.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["Sorcerer_ElementalBloodlineChoice_Water"] >= 1)
       end,
     },
@@ -60331,7 +60331,7 @@ DefineAbility({
         "Elemental Bloodline ~ Elemental Movement (Air)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Air"] >= 1)
         end,
       },
@@ -60343,7 +60343,7 @@ DefineAbility({
         "Elemental Bloodline ~ Elemental Movement (Earth)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Earth"] >= 1)
         end,
       },
@@ -60355,7 +60355,7 @@ DefineAbility({
         "Elemental Bloodline ~ Elemental Movement (Fire)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
         end,
       },
@@ -60367,7 +60367,7 @@ DefineAbility({
         "Elemental Bloodline ~ Elemental Movement (Water)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Water"] >= 1)
         end,
       },
@@ -60380,14 +60380,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Elemental" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Elemental_BloodlineProgressionLVL"] >= 15)
     end,
   },
@@ -60408,7 +60408,7 @@ DefineAbility({
   Description={
     Format="fire.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
       end,
     },
@@ -60430,7 +60430,7 @@ DefineAbility({
         "Immunity to Acid",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Earth"] >= 1)
         end,
       },
@@ -60442,7 +60442,7 @@ DefineAbility({
         "Immunity to Cold",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Water"] >= 1)
         end,
       },
@@ -60454,7 +60454,7 @@ DefineAbility({
         "Immunity to Electricity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Air"] >= 1)
         end,
       },
@@ -60466,7 +60466,7 @@ DefineAbility({
         "Immunity to Fire",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_ElementalBloodlineChoice_Fire"] >= 1)
         end,
       },
@@ -60479,14 +60479,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Elemental" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Elemental_BloodlineProgressionLVL"] >= 20)
     end,
   },
@@ -60528,7 +60528,7 @@ ModifyAbility({
       Name="NAME",
       FormatString="Elemental Bloodline (Air)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Sorcerer Elemental Bloodline (Air)" then return true end
@@ -60541,7 +60541,7 @@ ModifyAbility({
       Name="Bloodline",
       FormatString="Elemental (Air)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Sorcerer Elemental Bloodline (Air)" then return true end
@@ -60580,7 +60580,7 @@ ModifyAbility({
       Name="NAME",
       FormatString="Elemental Bloodline (Earth)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Sorcerer Elemental Bloodline (Earth)" then return true end
@@ -60593,7 +60593,7 @@ ModifyAbility({
       Name="Bloodline",
       FormatString="Elemental (Earth)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Sorcerer Elemental Bloodline (Earth)" then return true end
@@ -60632,7 +60632,7 @@ ModifyAbility({
       Name="NAME",
       FormatString="Elemental Bloodline (Fire)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Sorcerer Elemental Bloodline (Fire)" then return true end
@@ -60645,7 +60645,7 @@ ModifyAbility({
       Name="Bloodline",
       FormatString="Elemental (Fire)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Sorcerer Elemental Bloodline (Fire)" then return true end
@@ -60684,7 +60684,7 @@ ModifyAbility({
       Name="NAME",
       FormatString="Elemental Bloodline (Water)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Sorcerer Elemental Bloodline (Water)" then return true end
@@ -60697,7 +60697,7 @@ ModifyAbility({
       Name="Bloodline",
       FormatString="Elemental (Water)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Sorcerer Elemental Bloodline (Water)" then return true end
@@ -60765,7 +60765,7 @@ DefineAbility({
   Description={
     Format="The capricious nature of the fey runs in your family due to some intermingling of fey blood or magic. You are more emotional than most, prone to bouts of joy and rage.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["Sorcerer_Fey_Description"] == 0)
       end,
     },
@@ -60779,7 +60779,7 @@ DefineAbility({
         "Knowledge (Nature)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Fey_BloodlineClassSkill1"] >= 1)
         end,
       },
@@ -60791,7 +60791,7 @@ DefineAbility({
         "Fey Bloodline ~ Bloodline Arcana",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Fey_BloodlineArcana1"] >= 1)
         end,
       },
@@ -60803,7 +60803,7 @@ DefineAbility({
         "Fey Bloodline ~ Bonus Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Fey_BloodlineSpells1"] >= 1)
         end,
       },
@@ -60815,7 +60815,7 @@ DefineAbility({
         "Fey Bloodline ~ Bloodline Powers",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Fey_BloodlinePowers"] >= 1)
         end,
       },
@@ -60827,7 +60827,7 @@ DefineAbility({
         "Fey Bloodline ~ Power LVL 01",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Fey_BloodlinePower1"] >= 1)
         end,
       },
@@ -60839,7 +60839,7 @@ DefineAbility({
         "Fey Bloodline ~ Power LVL 03",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Fey_BloodlinePower3"] >= 1)
         end,
       },
@@ -60851,7 +60851,7 @@ DefineAbility({
         "Fey Bloodline ~ Power LVL 09",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Fey_BloodlinePower9"] >= 1)
         end,
       },
@@ -60863,7 +60863,7 @@ DefineAbility({
         "Fey Bloodline ~ Power LVL 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Fey_BloodlinePower15"] >= 1)
         end,
       },
@@ -60875,7 +60875,7 @@ DefineAbility({
         "Fey Bloodline ~ Power LVL 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Fey_BloodlinePower20"] >= 1)
         end,
       },
@@ -61129,10 +61129,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell1"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 3)
         end,
       },
@@ -61149,10 +61149,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell2"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 5)
         end,
       },
@@ -61169,10 +61169,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell3"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 7)
         end,
       },
@@ -61189,10 +61189,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell4"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 9)
         end,
       },
@@ -61209,10 +61209,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell5"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 11)
         end,
       },
@@ -61229,10 +61229,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell6"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 13)
         end,
       },
@@ -61249,10 +61249,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell7"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 15)
         end,
       },
@@ -61269,10 +61269,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell8"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 17)
         end,
       },
@@ -61289,10 +61289,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell9"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 19)
         end,
       },
@@ -61380,14 +61380,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Fey" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Fey_BloodlineProgressionLVL"] >= 1)
     end,
   },
@@ -61415,14 +61415,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Fey" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Fey_BloodlineProgressionLVL"] >= 3)
     end,
   },
@@ -61471,14 +61471,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Fey" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Fey_BloodlineProgressionLVL"] >= 9)
     end,
   },
@@ -61506,14 +61506,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Fey" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Fey_BloodlineProgressionLVL"] >= 15)
     end,
   },
@@ -61566,14 +61566,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Fey" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Fey_BloodlineProgressionLVL"] >= 20)
     end,
   },
@@ -61604,7 +61604,7 @@ DefineAbility({
   Description={
     Format="Somewhere in your family's history, a relative made a deal with a devil, and that pact has influenced your family line ever since. In you, it manifests in direct and obvious ways, granting you powers and abilities. While your fate is still your own, you can't help but wonder if your ultimate reward is bound to the Pit.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["Sorcerer_Infernal_Description"] == 0)
       end,
     },
@@ -61618,7 +61618,7 @@ DefineAbility({
         "Diplomacy",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Infernal_BloodlineClassSkill1"] >= 1)
         end,
       },
@@ -61630,7 +61630,7 @@ DefineAbility({
         "Infernal Bloodline ~ Bloodline Arcana",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Infernal_BloodlineArcana1"] >= 1)
         end,
       },
@@ -61642,7 +61642,7 @@ DefineAbility({
         "Infernal Bloodline ~ Bonus Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Infernal_BloodlineSpells1"] >= 1)
         end,
       },
@@ -61654,7 +61654,7 @@ DefineAbility({
         "Infernal Bloodline ~ Bloodline Powers",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Infernal_BloodlinePowers"] >= 1)
         end,
       },
@@ -61666,7 +61666,7 @@ DefineAbility({
         "Infernal Bloodline ~ Power LVL 01",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Infernal_BloodlinePower1"] >= 1)
         end,
       },
@@ -61678,7 +61678,7 @@ DefineAbility({
         "Infernal Bloodline ~ Power LVL 03",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Infernal_BloodlinePower3"] >= 1)
         end,
       },
@@ -61690,7 +61690,7 @@ DefineAbility({
         "Infernal Bloodline ~ Power LVL 09",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Infernal_BloodlinePower9"] >= 1)
         end,
       },
@@ -61702,7 +61702,7 @@ DefineAbility({
         "Infernal Bloodline ~ Power LVL 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Infernal_BloodlinePower15"] >= 1)
         end,
       },
@@ -61714,7 +61714,7 @@ DefineAbility({
         "Infernal Bloodline ~ Power LVL 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Infernal_BloodlinePower20"] >= 1)
         end,
       },
@@ -61968,10 +61968,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell1"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 3)
         end,
       },
@@ -61988,10 +61988,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell2"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 5)
         end,
       },
@@ -62008,10 +62008,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell3"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 7)
         end,
       },
@@ -62028,10 +62028,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell4"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 9)
         end,
       },
@@ -62048,10 +62048,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell5"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 11)
         end,
       },
@@ -62068,10 +62068,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell6"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 13)
         end,
       },
@@ -62088,10 +62088,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell7"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 15)
         end,
       },
@@ -62108,10 +62108,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell8"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 17)
         end,
       },
@@ -62128,10 +62128,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell9"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 19)
         end,
       },
@@ -62201,7 +62201,7 @@ DefineAbility({
         "Sorcerer_InfernalCorruptingTouch_Duration",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_InfernalCorruptingTouch_Duration"] <= 1)
         end,
       },
@@ -62213,7 +62213,7 @@ DefineAbility({
         "Sorcerer_InfernalCorruptingTouch_Duration",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_InfernalCorruptingTouch_Duration"] > 1)
         end,
       },
@@ -62244,14 +62244,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Infernal" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Infernal_BloodlineProgressionLVL"] >= 1)
     end,
   },
@@ -62284,7 +62284,7 @@ DefineAbility({
         "Sorcerer_InfernalInfernalResistances_SaveBonus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Immunity to Poison" then return true end
@@ -62325,14 +62325,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Infernal" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Infernal_BloodlineProgressionLVL"] >= 3)
     end,
   },
@@ -62410,14 +62410,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Infernal" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Infernal_BloodlineProgressionLVL"] >= 9)
     end,
   },
@@ -62454,14 +62454,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Infernal" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Infernal_BloodlineProgressionLVL"] >= 15)
     end,
   },
@@ -62540,14 +62540,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Infernal" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Infernal_BloodlineProgressionLVL"] >= 20)
     end,
   },
@@ -62575,7 +62575,7 @@ DefineAbility({
   Description={
     Format="The taint of the grave runs through your family. Perhaps one of your ancestors became a powerful lich or vampire, or maybe you were born dead before suddenly returning to life. Either way, the forces of death move through you and touch your every action.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["Sorcerer_Undead_Description"] == 0)
       end,
     },
@@ -62589,7 +62589,7 @@ DefineAbility({
         "Knowledge (Religion)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Undead_BloodlineClassSkill1"] >= 1)
         end,
       },
@@ -62601,7 +62601,7 @@ DefineAbility({
         "Undead Bloodline ~ Bloodline Arcana",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Undead_BloodlineArcana1"] >= 1)
         end,
       },
@@ -62613,7 +62613,7 @@ DefineAbility({
         "Undead Bloodline ~ Bonus Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Undead_BloodlineSpells1"] >= 1)
         end,
       },
@@ -62625,7 +62625,7 @@ DefineAbility({
         "Undead Bloodline ~ Bloodline Powers",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Undead_BloodlinePowers"] >= 1)
         end,
       },
@@ -62637,7 +62637,7 @@ DefineAbility({
         "Undead Bloodline ~ Power LVL 01",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Undead_BloodlinePower1"] >= 1)
         end,
       },
@@ -62649,7 +62649,7 @@ DefineAbility({
         "Undead Bloodline ~ Power LVL 03",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Undead_BloodlinePower3"] >= 1)
         end,
       },
@@ -62661,7 +62661,7 @@ DefineAbility({
         "Undead Bloodline ~ Power LVL 09",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Undead_BloodlinePower9"] >= 1)
         end,
       },
@@ -62673,7 +62673,7 @@ DefineAbility({
         "Undead Bloodline ~ Power LVL 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Undead_BloodlinePower15"] >= 1)
         end,
       },
@@ -62685,7 +62685,7 @@ DefineAbility({
         "Undead Bloodline ~ Power LVL 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Undead_BloodlinePower20"] >= 1)
         end,
       },
@@ -62939,10 +62939,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell1"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 3)
         end,
       },
@@ -62959,10 +62959,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell2"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 5)
         end,
       },
@@ -62979,10 +62979,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell3"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 7)
         end,
       },
@@ -62999,10 +62999,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell4"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 9)
         end,
       },
@@ -63019,10 +63019,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell5"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 11)
         end,
       },
@@ -63039,10 +63039,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell6"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 13)
         end,
       },
@@ -63059,10 +63059,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell7"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 15)
         end,
       },
@@ -63079,10 +63079,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell8"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 17)
         end,
       },
@@ -63099,10 +63099,10 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_CF_BloodlineSpell9"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BloodlineCasterLVL"] >= 19)
         end,
       },
@@ -63173,7 +63173,7 @@ DefineAbility({
         "Sorcerer_UndeadGraveTouch_Duration",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_UndeadGraveTouch_Duration"] <= 1)
         end,
       },
@@ -63185,7 +63185,7 @@ DefineAbility({
         "Sorcerer_UndeadGraveTouch_Duration",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_UndeadGraveTouch_Duration"] > 1)
         end,
       },
@@ -63223,14 +63223,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Undead" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Undead_BloodlineProgressionLVL"] >= 1)
     end,
   },
@@ -63250,7 +63250,7 @@ DefineAbility({
   DamageReduction={
     Value="Sorcerer_UndeadDeathsGift_DR/Lethal",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return not (character.HasAnyAbility(function (ability)
           if ability.Category ~= "Special Ability" then return false end
           if ability.Name == "Undead Bloodline ~ One of Us" then return true end
@@ -63294,14 +63294,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Undead" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Undead_BloodlineProgressionLVL"] >= 3)
     end,
   },
@@ -63372,14 +63372,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Undead" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Undead_BloodlineProgressionLVL"] >= 9)
     end,
   },
@@ -63444,14 +63444,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Undead" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Undead_BloodlineProgressionLVL"] >= 15)
     end,
   },
@@ -63498,14 +63498,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Sorcerer Bloodline ~ Undead" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Sorcerer_Undead_BloodlineProgressionLVL"] >= 20)
     end,
   },
@@ -63621,7 +63621,7 @@ DefineAbility({
   Description={
     Format="(You have selected to establish a powerful arcane bond with a creature.)",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return character.HasAnyAbility(function (ability)
           if ability.Category ~= "Special Ability" then return false end
           if ability.Name == "Arcane Bond ~ Familiar" then return true end
@@ -63694,7 +63694,7 @@ DefineAbility({
         "Wizard Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["OppositionalSchool"] == 0)
         end,
       },
@@ -63810,7 +63810,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_Familiar"] == 0)
     end,
   },
@@ -63836,7 +63836,7 @@ DefineAbility({
   DisplayName="Arcane Bond (Object)",
   SourcePage="p.78",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_BondedObject"] == 0)
     end,
   },
@@ -63856,10 +63856,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WizardLvl"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_BonusFeat5"] == 1)
         end,
       },
@@ -63877,10 +63877,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WizardLvl"] >= 10)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_BonusFeat10"] == 1)
         end,
       },
@@ -63898,10 +63898,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WizardLvl"] >= 15)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_BonusFeat15"] == 1)
         end,
       },
@@ -63919,10 +63919,10 @@ ModifyAbility({
       Category="ABILITYPOOL",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WizardLvl"] >= 20)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_BonusFeat20"] == 1)
         end,
       },
@@ -63990,13 +63990,13 @@ DefineAbility({
         "Abjuration School ~ Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_Resistance"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AbjurationProgressionSchoolLVL"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AbjurationProgressionSchoolLVL"] < 20)
         end,
       },
@@ -64008,10 +64008,10 @@ DefineAbility({
         "Abjuration School ~ Protective Ward",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_ProtectiveWard"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AbjurationProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -64023,10 +64023,10 @@ DefineAbility({
         "Abjuration School ~ Energy Absorption",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_EnergyAbsorption"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AbjurationProgressionSchoolLVL"] >= 6)
         end,
       },
@@ -64147,10 +64147,10 @@ DefineAbility({
         "Conjuration School ~ Summoner's Charm",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_SummonersCharm"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ConjurationProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -64162,10 +64162,10 @@ DefineAbility({
         "Conjuration School ~ Acid Dart",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_AcidDart"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ConjurationProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -64177,10 +64177,10 @@ DefineAbility({
         "Conjuration School ~ Dimensional Steps",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_DimensionalSteps"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ConjurationProgressionSchoolLVL"] >= 8)
         end,
       },
@@ -64301,10 +64301,10 @@ DefineAbility({
         "Divination School ~ Forwarned",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_Forwarned"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DivinationProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -64316,10 +64316,10 @@ DefineAbility({
         "Divination School ~ Diviner's Fortune",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_DivinersFortune"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DivinationProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -64331,10 +64331,10 @@ DefineAbility({
         "Divination School ~ Scrying Adept",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_ScryingAdept"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DivinationProgressionSchoolLVL"] >= 8)
         end,
       },
@@ -64455,10 +64455,10 @@ DefineAbility({
         "Enchantment School ~ Enchanting Smile",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_EnchantingSmile"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EnchantmentProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -64470,10 +64470,10 @@ DefineAbility({
         "Enchantment School ~ Dazing Touch",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_DazingTouch"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EnchantmentProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -64485,10 +64485,10 @@ DefineAbility({
         "Enchantment School ~ Aura of Despair",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_AuraOfDespair"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EnchantmentProgressionSchoolLVL"] >= 8)
         end,
       },
@@ -64609,10 +64609,10 @@ DefineAbility({
         "Evocation School ~ Intense Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_IntenseSpells"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EvocationProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -64624,10 +64624,10 @@ DefineAbility({
         "Evocation School ~ Force Missile",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_ForceMissile"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EvocationProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -64639,10 +64639,10 @@ DefineAbility({
         "Evocation School ~ Elemental Wall",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_ElementalWall"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EvocationProgressionSchoolLVL"] >= 8)
         end,
       },
@@ -64763,10 +64763,10 @@ DefineAbility({
         "Illusion School ~ Extended Illusion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_ExtendedIllusion"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IllusionProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -64778,10 +64778,10 @@ DefineAbility({
         "Illusion School ~ Blinding Ray",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_BlindingRay"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IllusionProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -64793,10 +64793,10 @@ DefineAbility({
         "Illusion School ~ Invisibility Field",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_InvisibilityField"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IllusionProgressionSchoolLVL"] >= 8)
         end,
       },
@@ -64917,10 +64917,10 @@ DefineAbility({
         "Necromancy School ~ Power Over Undead",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_PowerOverUndead"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NecromancyProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -64932,10 +64932,10 @@ DefineAbility({
         "Necromancy School ~ Grave Touch",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_GraveTouch"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NecromancyProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -64947,10 +64947,10 @@ DefineAbility({
         "Necromancy School ~ Life Sight",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_LifeSight"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NecromancyProgressionSchoolLVL"] >= 8)
         end,
       },
@@ -65071,10 +65071,10 @@ DefineAbility({
         "Transmutation School ~ Physical Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_PhysicalEnhancement"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TransmutationProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -65086,10 +65086,10 @@ DefineAbility({
         "Transmutation School ~ Telekinetic Fist",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_TelekineticFist"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TransmutationProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -65101,10 +65101,10 @@ DefineAbility({
         "Transmutation School ~ Change Shape",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_ChangeShape"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TransmutationProgressionSchoolLVL"] >= 8)
         end,
       },
@@ -65225,10 +65225,10 @@ DefineAbility({
         "Universal School ~ Hand of the Apprentice",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_HandOfTheApprentice"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UniversalProgressionSchoolLVL"] >= 1)
         end,
       },
@@ -65240,10 +65240,10 @@ DefineAbility({
         "Universal School ~ Metamagic Mastery",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Wizard_CF_MetamagicMastery"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UniversalProgressionSchoolLVL"] >= 8)
         end,
       },
@@ -65295,14 +65295,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Abjuration School" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_AbjurationOppositionSchool"] == 0)
     end,
   },
@@ -65330,14 +65330,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Conjuration School" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_ConjurationOppositionSchool"] == 0)
     end,
   },
@@ -65365,14 +65365,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Divination School" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_DivinationOppositionSchool"] == 0)
     end,
   },
@@ -65400,14 +65400,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Enchantment School" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_EnchantmentOppositionSchool"] == 0)
     end,
   },
@@ -65435,14 +65435,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Evocation School" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_EvocationOppositionSchool"] == 0)
     end,
   },
@@ -65470,14 +65470,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Illusion School" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_IllusionOppositionSchool"] == 0)
     end,
   },
@@ -65505,14 +65505,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Necromancy School" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_NecromancyOppositionSchool"] == 0)
     end,
   },
@@ -65540,14 +65540,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Transmutation School" then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_TransmutationOppositionSchool"] == 0)
     end,
   },
@@ -65569,7 +65569,7 @@ DefineAbility({
         "Abjuration Wizard Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Abjuration Opposition School" then return true end
@@ -65585,7 +65585,7 @@ DefineAbility({
         "Conjuration Wizard Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Conjuration Opposition School" then return true end
@@ -65601,7 +65601,7 @@ DefineAbility({
         "Divination Wizard Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Divination Opposition School" then return true end
@@ -65617,7 +65617,7 @@ DefineAbility({
         "Enchantment Wizard Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Enchantment Opposition School" then return true end
@@ -65633,7 +65633,7 @@ DefineAbility({
         "Evocation Wizard Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Evocation Opposition School" then return true end
@@ -65649,7 +65649,7 @@ DefineAbility({
         "Illusion Wizard Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Illusion Opposition School" then return true end
@@ -65665,7 +65665,7 @@ DefineAbility({
         "Necromancy Wizard Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Necromancy Opposition School" then return true end
@@ -65681,7 +65681,7 @@ DefineAbility({
         "Transmutation Wizard Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Transmutation Opposition School" then return true end
@@ -65879,7 +65879,7 @@ DefineAbility({
   Description={
     Format="You gain immunity to an energy type of your choice, chosen when you prepare spells. This immunity can be changed each day.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["AbjurationProgressionSchoolLVL"] >= 20)
       end,
     },
@@ -65893,7 +65893,7 @@ DefineAbility({
         "AbjurationResistanceBonus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AbjurationProgressionSchoolLVL"] < 20)
         end,
       },
@@ -65902,7 +65902,7 @@ DefineAbility({
       Name="Ability Benefit",
       FormatString="Immunity",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AbjurationProgressionSchoolLVL"] >= 20)
         end,
       },
@@ -65920,7 +65920,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AbjurationProgressionSchoolLVL"] >= 11)
         end,
       },
@@ -66045,7 +66045,7 @@ DefineAbility({
   Description={
     Format="You can change the duration of all Summon Monster spells to permanent. You can have no more than one Summon Monster spell made permanent in this way at one time. If you designate another Summon Monster spell as permanent, the previous spell immediately ends.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["ConjurationProgressionSchoolLVL"] >= 20)
       end,
     },
@@ -66164,7 +66164,7 @@ DefineAbility({
   Description={
     Format="Anytime you roll initiative, assume the roll resulted in a natural 20.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DivinationProgressionSchoolLVL"] >= 20)
       end,
     },
@@ -66266,7 +66266,7 @@ DefineAbility({
   Description={
     Format="Whenever you succeed at a saving throw against a spell of the enchantment school, that spell is reflected back at its caster, as per Spell Turning.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["EnchantmentProgressionSchoolLVL"] >= 20)
       end,
     },
@@ -66398,7 +66398,7 @@ DefineAbility({
   Description={
     Format="Whenever you cast an evocation spell you can roll twice to penetrate a creature's spell resistance and take the better result.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["EvocationProgressionSchoolLVL"] >= 20)
       end,
     },
@@ -66519,7 +66519,7 @@ DefineAbility({
   Description={
     Format="You can make one illusion spell with a duration of \"Concentration\" become permanent. You can have no more than one illusion made permanent in this way at one time. If you designate another illusion as permanent, the previous permanent illusion ends.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["IllusionProgressionSchoolLVL"] >= 20)
       end,
     },
@@ -66791,7 +66791,7 @@ DefineAbility({
   Description={
     Format="Undead cannot add their channel resistance to the save against your Command Undead ability.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["PowerOverUndeadLVL"] >= 20)
       end,
     },
@@ -66841,7 +66841,7 @@ DefineAbility({
   Description={
     Format="Undead cannot add their channel resistance to the save against your Turn ability.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["PowerOverUndeadLVL"] >= 20)
       end,
     },
@@ -66888,7 +66888,7 @@ DefineAbility({
       Formula("TransmutationPhysicalEnhancementBonus"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["TransmutationProgressionSchoolLVL"] == 20)
       end,
     },
@@ -66917,7 +66917,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TransmutationProgressionSchoolLVL"] >= 20)
         end,
       },
@@ -67066,7 +67066,7 @@ DefineAbility({
   Description={
     Format="This ability otherwise functions like Beast Shape III or elemental body II.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["TransmutationProgressionSchoolLVL"] >= 12)
       end,
     },
@@ -67185,7 +67185,7 @@ ModifyAbility({
   Name="Abjuration School ~ Resistance",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67194,7 +67194,7 @@ ModifyAbility({
   Name="Abjuration School ~ Protective Ward",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67203,7 +67203,7 @@ ModifyAbility({
   Name="Conjuration School ~ Summoner's Charm",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67212,7 +67212,7 @@ ModifyAbility({
   Name="Conjuration School ~ Acid Dart",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67221,7 +67221,7 @@ ModifyAbility({
   Name="Divination School ~ Forwarned",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67230,7 +67230,7 @@ ModifyAbility({
   Name="Divination School ~ Diviner's Fortune",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67239,7 +67239,7 @@ ModifyAbility({
   Name="Enchantment School ~ Enchanting Smile",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67248,7 +67248,7 @@ ModifyAbility({
   Name="Enchantment School ~ Dazing Touch",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67257,7 +67257,7 @@ ModifyAbility({
   Name="Evocation School ~ Intense Spells",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67266,7 +67266,7 @@ ModifyAbility({
   Name="Evocation School ~ Force Missile",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67275,7 +67275,7 @@ ModifyAbility({
   Name="Illusion School ~ Extended Illusion",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67284,7 +67284,7 @@ ModifyAbility({
   Name="Illusion School ~ Blinding Ray",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67293,7 +67293,7 @@ ModifyAbility({
   Name="Necromancy School ~ Power Over Undead",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67302,7 +67302,7 @@ ModifyAbility({
   Name="Necromancy School ~ Grave Touch",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67311,7 +67311,7 @@ ModifyAbility({
   Name="Transmutation School ~ Physical Enhancement",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67320,7 +67320,7 @@ ModifyAbility({
   Name="Transmutation School ~ Telekinetic Fist",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67329,7 +67329,7 @@ ModifyAbility({
   Name="Universal School ~ Hand of the Apprentice",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower1"] < 1)
     end,
   },
@@ -67338,7 +67338,7 @@ ModifyAbility({
   Name="Abjuration School ~ Energy Absorption",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower8"] < 1)
     end,
   },
@@ -67347,7 +67347,7 @@ ModifyAbility({
   Name="Conjuration School ~ Dimensional Steps",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower8"] < 1)
     end,
   },
@@ -67356,7 +67356,7 @@ ModifyAbility({
   Name="Divination School ~ Scrying Adept",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower8"] < 1)
     end,
   },
@@ -67365,7 +67365,7 @@ ModifyAbility({
   Name="Enchantment School ~ Aura of Despair",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower8"] < 1)
     end,
   },
@@ -67374,7 +67374,7 @@ ModifyAbility({
   Name="Evocation School ~ Elemental Wall",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower8"] < 1)
     end,
   },
@@ -67383,7 +67383,7 @@ ModifyAbility({
   Name="Illusion School ~ Invisibility Field",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower8"] < 1)
     end,
   },
@@ -67392,7 +67392,7 @@ ModifyAbility({
   Name="Necromancy School ~ Life Sight",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower8"] < 1)
     end,
   },
@@ -67401,7 +67401,7 @@ ModifyAbility({
   Name="Transmutation School ~ Change Shape",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower8"] < 1)
     end,
   },
@@ -67410,7 +67410,7 @@ ModifyAbility({
   Name="Universal School ~ Metamagic Mastery",
   Category="Special Ability",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["Wizard_CF_SchoolPower8"] < 1)
     end,
   },
@@ -67525,7 +67525,7 @@ ModifyAbility({
         "Equipment ~ Heavy Armor Grants Gauntlet",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.HasEquipped(function (item) return item.IsType("ArmorProfHeavy") end))
         end,
       },
@@ -67663,10 +67663,10 @@ ModifyAbility({
         "Touch Attack (Ray)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountSpellCastingClasses(1))) >= 1 or (character.Variables["CasterLevel_Highest"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.SpellCount("Ray", 1)) >= 1
         end,
       },
@@ -67678,7 +67678,7 @@ ModifyAbility({
         "Weapon Prof ~ Auto",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.CountSpellCastingClasses(1, "PC"))) >= 1
         end,
       },
@@ -67690,7 +67690,7 @@ ModifyAbility({
         "Uncanny Dodge ~ Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UncannyDodgeLVL"] >= 1)
         end,
       },
@@ -67767,7 +67767,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Weapon Focus (Spells (Ray))" then return true end
@@ -67790,7 +67790,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Improved Critical (Spells (Ray))" then return true end
@@ -67813,7 +67813,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "F"
         end,
       },
@@ -67825,7 +67825,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "D"
         end,
       },
@@ -67837,7 +67837,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "T"
         end,
       },
@@ -67849,7 +67849,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "S"
         end,
       },
@@ -67861,7 +67861,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("0"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "M"
         end,
       },
@@ -67873,7 +67873,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "L"
         end,
       },
@@ -67885,7 +67885,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "H"
         end,
       },
@@ -67897,7 +67897,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "G"
         end,
       },
@@ -67909,7 +67909,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("-8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "C"
         end,
       },
@@ -68001,7 +68001,7 @@ DefineAbility({
     {
       Kind="Weapon",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardWeaponProficiencies") then return true end
@@ -68338,7 +68338,7 @@ DefineAbility({
         "Shield Prof",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardArmorProficiencies") then return true end
@@ -68352,7 +68352,7 @@ DefineAbility({
     {
       Kind="Weapon",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardWeaponProficiencies") then return true end
@@ -68401,7 +68401,7 @@ DefineAbility({
         "ArmorProfMedium",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidArmorProficiencies") then return true end
@@ -68457,7 +68457,7 @@ DefineAbility({
         "Armor Prof ~ Heavy",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_HeavyArmorProficiency"] == 0)
         end,
       },
@@ -68469,7 +68469,7 @@ DefineAbility({
         "Armor Prof ~ Medium",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_MediumArmorProficiency"] == 0)
         end,
       },
@@ -68481,7 +68481,7 @@ DefineAbility({
         "Armor Prof ~ Light",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_LightArmorProficiency"] == 0)
         end,
       },
@@ -68493,7 +68493,7 @@ DefineAbility({
         "Shield Prof",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_ShieldProficiency"] == 0)
         end,
       },
@@ -68505,7 +68505,7 @@ DefineAbility({
         "Shield Prof ~ Tower",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_TowerShieldProficiency"] == 0)
         end,
       },
@@ -68517,7 +68517,7 @@ DefineAbility({
         "Weapon Prof ~ Martial",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Fighter_CF_Proficiencies"] == 0)
         end,
       },
@@ -68600,7 +68600,7 @@ DefineAbility({
         "Weapon Prof ~ Simple",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_WeaponProficiencySimple"] == 0)
         end,
       },
@@ -68612,7 +68612,7 @@ DefineAbility({
         "Weapon Prof ~ Martial",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_WeaponProficiencyMartial"] == 0)
         end,
       },
@@ -68624,7 +68624,7 @@ DefineAbility({
         "Armor Prof ~ Heavy",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_ArmorProficiencyHeavy"] == 0)
         end,
       },
@@ -68636,7 +68636,7 @@ DefineAbility({
         "Armor Prof ~ Light",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_ArmorProficiencyLight"] == 0)
         end,
       },
@@ -68648,7 +68648,7 @@ DefineAbility({
         "Armor Prof ~ Medium",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_ArmorProficiencyMedium"] == 0)
         end,
       },
@@ -68660,7 +68660,7 @@ DefineAbility({
         "Shield Prof",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_ShieldProficiency"] == 0)
         end,
       },
@@ -68695,7 +68695,7 @@ DefineAbility({
         "Weapon Prof ~ Martial",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerArmorProficiencies", "RangerWeaponProficiency") then return true end
@@ -68711,7 +68711,7 @@ DefineAbility({
         "Armor Prof ~ Light",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerArmorProficiencies", "RangerLightArmorProficiency") then return true end
@@ -68727,7 +68727,7 @@ DefineAbility({
         "Armor Prof ~ Medium",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerArmorProficiencies", "RangerMediumArmorProficiency") then return true end
@@ -68743,7 +68743,7 @@ DefineAbility({
         "Shield Prof",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerArmorProficiencies", "RangerShieldProficiency") then return true end
@@ -68782,7 +68782,7 @@ DefineAbility({
         "Weapon Proficiencies ~ Rogue",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueWeaponProficiencies") then return true end
@@ -68798,7 +68798,7 @@ DefineAbility({
         "Armor Prof ~ Light",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueLightArmor", "RogueArmorProficiencies") then return true end
@@ -69078,7 +69078,7 @@ DefineAbility({
         "Retain Dex To AC ~ Flat-footed",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UncannyDodgeLVL"] >= 1)
         end,
       },
@@ -69090,7 +69090,7 @@ DefineAbility({
         "Uncanny Dodge",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UncannyDodgeLVL"] >= 1)
         end,
       },
@@ -69102,7 +69102,7 @@ DefineAbility({
         "Improved Uncanny Dodge",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UncannyDodgeLVL"] >= 2)
         end,
       },
@@ -69178,7 +69178,7 @@ DefineAbility({
         "Evasion Output",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Improved Evasion" then return true end
@@ -69444,7 +69444,7 @@ DefineAbility({
       Formula("SlipperymindTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["SlipperymindTimes"] >= 1)
       end,
     },
@@ -69461,7 +69461,7 @@ DefineAbility({
   Description={
     Format="You project an overwhelming chaotic aura.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["AuraChaosLVL"] >= 11)
       end,
     },
@@ -69490,7 +69490,7 @@ DefineAbility({
   Description={
     Format="You project an overwhelming evil aura.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["AuraEvilLVL"] >= 11)
       end,
     },
@@ -69519,7 +69519,7 @@ DefineAbility({
   Description={
     Format="You project an overwhelming good aura.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["AuraGoodLVL"] >= 11)
       end,
     },
@@ -69548,7 +69548,7 @@ DefineAbility({
   Description={
     Format="You project an overwhelming lawful aura.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["AuraLawLVL"] >= 11)
       end,
     },
@@ -69632,7 +69632,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return ((character.GetLevelOfClass("Cleric") >= 1)) >= 1
     end,
   },
@@ -69653,7 +69653,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return ((character.GetLevelOfClass("Paladin") >= 4)) >= 1
     end,
   },
@@ -69674,7 +69674,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Necromancy School ~ Power Over Undead" then return true end
@@ -69727,7 +69727,7 @@ ModifyAbility({
         Name="Stat",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size > "T"
         end,
       },
@@ -69742,10 +69742,10 @@ ModifyAbility({
         Name="Stat",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size <= "T"
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableCMDDex"] == 0)
         end,
       },
@@ -69760,10 +69760,10 @@ ModifyAbility({
         Name="Stat",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size <= "T"
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseCHAForCMDStat"] == 1)
         end,
       },
@@ -69801,7 +69801,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "F"
         end,
       },
@@ -69813,7 +69813,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "D"
         end,
       },
@@ -69825,7 +69825,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "T"
         end,
       },
@@ -69837,7 +69837,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "S"
         end,
       },
@@ -69849,7 +69849,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "L"
         end,
       },
@@ -69861,7 +69861,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "H"
         end,
       },
@@ -69873,7 +69873,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "G"
         end,
       },
@@ -69885,7 +69885,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("8"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "C"
         end,
       },
@@ -69977,7 +69977,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Weapon Focus (Grapple)" then return true end
@@ -69993,7 +69993,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Greater Weapon Focus (Grapple)" then return true end
@@ -70069,7 +70069,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("(LEGS-2)*2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["LEGS"] >= 2)
         end,
       },
@@ -70088,7 +70088,7 @@ DefineAbility({
       Category="SPELLCAST",
       Formula=Formula("-3"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.GetLevelOfClass("Wizard") >= 1)) >= 1
         end,
       },
@@ -70100,7 +70100,7 @@ DefineAbility({
       Category="SPELLCAST",
       Formula=Formula("-1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.GetLevelOfClass("Wizard") >= 2)) >= 1
         end,
       },
@@ -70420,7 +70420,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("3"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneTricksterLVL"] >= 5)
         end,
       },
@@ -70432,7 +70432,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneTricksterLVL"] >= 7)
         end,
       },
@@ -70444,7 +70444,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ArcaneTricksterLVL"] >= 9)
         end,
       },
@@ -70781,7 +70781,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AssassinLVL"] >= 2)
         end,
       },
@@ -70793,7 +70793,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AssassinLVL"] >= 5)
         end,
       },
@@ -70887,7 +70887,7 @@ DefineAbility({
       Category="ABILITYPOOL",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HasSorcererBloodline"] == 0)
         end,
       },
@@ -70948,7 +70948,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDiscipleLVL"] >= 1)
         end,
       },
@@ -70960,7 +70960,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDiscipleLVL"] >= 4)
         end,
       },
@@ -70972,7 +70972,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDiscipleLVL"] >= 7)
         end,
       },
@@ -71001,7 +71001,7 @@ DefineAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDiscipleLVL"] >= 2)
         end,
       },
@@ -71013,7 +71013,7 @@ DefineAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDiscipleLVL"] >= 4)
         end,
       },
@@ -71025,7 +71025,7 @@ DefineAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDiscipleLVL"] >= 6)
         end,
       },
@@ -71037,7 +71037,7 @@ DefineAbility({
       Category="STAT",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDiscipleLVL"] >= 8)
         end,
       },
@@ -71066,7 +71066,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("(DragonDiscipleLVL+1)/3"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Blood of Dragons Bloodline" then return false end
             if ability.IsAnyType("SorcererBloodlineChoice") then return true end
@@ -71135,7 +71135,7 @@ DefineAbility({
         "Draconic Bloodline ~ Breath Weapon",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Blood of Dragons Bloodline" then return false end
             if ability.IsAnyType("SorcererBloodlineChoice") then return true end
@@ -71150,7 +71150,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDiscipleLVL"] >= 3)
         end,
       },
@@ -71183,7 +71183,7 @@ DefineAbility({
   Visions={
     {
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.GetLevelOfClass("Dragon Disciple") >= 10)) >= 1
         end,
       },
@@ -71193,7 +71193,7 @@ DefineAbility({
     },
     {
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (((character.GetLevelOfClass("Dragon Disciple") >= 10)) >= 1)
         end,
       },
@@ -71235,10 +71235,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="DragonFormCL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDiscipleLVL"] >= 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDiscipleLVL"] < 10)
         end,
       },
@@ -71250,7 +71250,7 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="DragonFormCL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DragonDiscipleLVL"] >= 10)
         end,
       },
@@ -71292,7 +71292,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("30"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Sorcerer_Draconic_BloodlineProgressionLVL"] >= 15)
         end,
       },
@@ -71340,14 +71340,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Dragon Disciple ~ Blood of Dragons" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Archetype" then return false end
         if ability.Name == "Sorcerer Archetype ~ Crossblooded" then return true end
@@ -71445,7 +71445,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Archetype" then return false end
         if ability.Name == "Sorcerer Archetype ~ Crossblooded" then return true end
@@ -71511,7 +71511,7 @@ DefineAbility({
         Name="Dodge",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasEquipped(function (item) return stringMatch(item.Name, "ARMORTYPE=Medium") end)) or (character.HasEquipped(function (item) return stringMatch(item.Name, "ARMORTYPE=Heavy") end)) or (character.HasEquipped(function (item) return item.IsType("Shield") end))) and (character.HasEquipped(function (item) return item.IsType("Melee") end))
         end,
       },
@@ -71856,10 +71856,10 @@ DefineAbility({
         "Deflect Arrows",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.HasEquipped(function (item) return item.IsType("Piercing") end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.HasEquipped(function (item) return item.WieldCategory == "Light" end)) or (character.HasEquipped(function (item) return item.WieldCategory == "OneHanded" end))
         end,
       },
@@ -71906,7 +71906,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EldritchKnightLVL"] >= 1)
         end,
       },
@@ -71918,7 +71918,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EldritchKnightLVL"] >= 5)
         end,
       },
@@ -71930,7 +71930,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EldritchKnightLVL"] >= 9)
         end,
       },
@@ -72189,7 +72189,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["LoremasterSecretsLVL"] >= 1)
     end,
   },
@@ -72216,7 +72216,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["LoremasterSecretsLVL"] >= 2)
     end,
   },
@@ -72243,7 +72243,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["LoremasterSecretsLVL"] >= 3)
     end,
   },
@@ -72270,7 +72270,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["LoremasterSecretsLVL"] >= 4)
     end,
   },
@@ -72297,7 +72297,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["LoremasterSecretsLVL"] >= 5)
     end,
   },
@@ -72324,7 +72324,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["LoremasterSecretsLVL"] >= 6)
     end,
   },
@@ -72354,7 +72354,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["LoremasterSecretsLVL"] >= 7)
     end,
   },
@@ -72381,7 +72381,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["LoremasterSecretsLVL"] >= 8)
     end,
   },
@@ -72415,7 +72415,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["LoremasterSecretsLVL"] >= 9)
     end,
   },
@@ -72449,7 +72449,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["LoremasterSecretsLVL"] >= 10)
     end,
   },
@@ -72655,7 +72655,7 @@ DefineAbility({
   Description={
     Format="As a special use of bardic music, a 6th level Pathfinder chronicler can exhort any one ally within hearing to a sudden surge of action, allowing her ally to immediately take an extra move action. This does not count against the ally's number of actions on his own turn.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["InspireActionBonus"] == 0)
       end,
     },
@@ -72666,7 +72666,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PathfinderChroniclerLVL"] >= 9)
         end,
       },
@@ -72956,7 +72956,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("20"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShadowdancerLVL"] >= 4)
         end,
       },
@@ -72968,7 +72968,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("20"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShadowdancerLVL"] >= 6)
         end,
       },
@@ -72980,7 +72980,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("40"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShadowdancerLVL"] >= 8)
         end,
       },
@@ -72992,7 +72992,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("80"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShadowdancerLVL"] >= 10)
         end,
       },
@@ -73155,14 +73155,14 @@ DefineAbility({
         "Barbarian ~ Weapon and Armor Proficiency",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianArmorProficiencies") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianWeaponProficiencies") then return true end
@@ -73179,7 +73179,7 @@ DefineAbility({
         "Weapon Prof ~ Simple",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianWeaponProficiencies") then return true end
@@ -73198,7 +73198,7 @@ DefineAbility({
         "ArmorProfMedium",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianArmorProficiencies") then return true end
@@ -73214,14 +73214,14 @@ DefineAbility({
         "Barbarian ~ Rage",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianRage") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianLVL"] >= 1)
         end,
       },
@@ -73233,14 +73233,14 @@ DefineAbility({
         "Barbarian ~ Fast Movement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianFastMovement") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianLVL"] >= 1)
         end,
       },
@@ -73252,14 +73252,14 @@ DefineAbility({
         "Barbarian ~ Rage Powers",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianRagePowers") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianLVL"] >= 2)
         end,
       },
@@ -73271,7 +73271,7 @@ DefineAbility({
         "Barbarian ~ Uncanny Dodge Tracker",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianLVL"] >= 2)
         end,
       },
@@ -73283,14 +73283,14 @@ DefineAbility({
         "Barbarian ~ Trap Sense",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianTrapSense") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianLVL"] >= 3)
         end,
       },
@@ -73302,14 +73302,14 @@ DefineAbility({
         "Barbarian ~ Damage Reduction",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianDamageReduction") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianLVL"] >= 7)
         end,
       },
@@ -73321,14 +73321,14 @@ DefineAbility({
         "Barbarian ~ Greater Rage",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianGreaterRage") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianLVL"] >= 11)
         end,
       },
@@ -73340,14 +73340,14 @@ DefineAbility({
         "Barbarian ~ Indomitable Will",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianIndomitableWill") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianLVL"] >= 14)
         end,
       },
@@ -73359,14 +73359,14 @@ DefineAbility({
         "Barbarian ~ Tireless Rage",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianTirelessRage") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianLVL"] >= 17)
         end,
       },
@@ -73378,14 +73378,14 @@ DefineAbility({
         "Barbarian ~ Mighty Rage",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianMightyRage") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["BarbarianLVL"] >= 20)
         end,
       },
@@ -73406,7 +73406,7 @@ ModifyAbility({
         "Air Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AirDomainAllowed"] == 1)
         end,
       },
@@ -73418,7 +73418,7 @@ ModifyAbility({
         "Animal Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AnimalDomainAllowed"] == 1)
         end,
       },
@@ -73430,7 +73430,7 @@ ModifyAbility({
         "Chaos Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ChaosDomainAllowed"] == 1)
         end,
       },
@@ -73442,7 +73442,7 @@ ModifyAbility({
         "Death Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DeathDomainAllowed"] == 1)
         end,
       },
@@ -73454,7 +73454,7 @@ ModifyAbility({
         "Destruction Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DestructionDomainAllowed"] == 1)
         end,
       },
@@ -73466,7 +73466,7 @@ ModifyAbility({
         "Earth Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EarthDomainAllowed"] == 1)
         end,
       },
@@ -73478,7 +73478,7 @@ ModifyAbility({
         "Evil Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EvilDomainAllowed"] == 1)
         end,
       },
@@ -73490,7 +73490,7 @@ ModifyAbility({
         "Fire Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FireDomainAllowed"] == 1)
         end,
       },
@@ -73502,7 +73502,7 @@ ModifyAbility({
         "Good Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoodDomainAllowed"] == 1)
         end,
       },
@@ -73514,7 +73514,7 @@ ModifyAbility({
         "Healing Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HealingDomainAllowed"] == 1)
         end,
       },
@@ -73526,7 +73526,7 @@ ModifyAbility({
         "Law Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["LawDomainAllowed"] == 1)
         end,
       },
@@ -73538,7 +73538,7 @@ ModifyAbility({
         "Luck Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["LuckDomainAllowed"] == 1)
         end,
       },
@@ -73550,7 +73550,7 @@ ModifyAbility({
         "Knowledge Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["KnowledgeDomainAllowed"] == 1)
         end,
       },
@@ -73562,7 +73562,7 @@ ModifyAbility({
         "Magic Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MagicDomainAllowed"] == 1)
         end,
       },
@@ -73574,7 +73574,7 @@ ModifyAbility({
         "Plant Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PlantDomainAllowed"] == 1)
         end,
       },
@@ -73586,7 +73586,7 @@ ModifyAbility({
         "Protection Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ProtectionDomainAllowed"] == 1)
         end,
       },
@@ -73598,7 +73598,7 @@ ModifyAbility({
         "Strength Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StrengthDomainAllowed"] == 1)
         end,
       },
@@ -73610,7 +73610,7 @@ ModifyAbility({
         "Sun Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SunDomainAllowed"] == 1)
         end,
       },
@@ -73622,7 +73622,7 @@ ModifyAbility({
         "Travel Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TravelDomainAllowed"] == 1)
         end,
       },
@@ -73634,7 +73634,7 @@ ModifyAbility({
         "Trickery Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TrickeryDomainAllowed"] == 1)
         end,
       },
@@ -73646,7 +73646,7 @@ ModifyAbility({
         "War Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WarDomainAllowed"] == 1)
         end,
       },
@@ -73658,7 +73658,7 @@ ModifyAbility({
         "Water Domain",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WaterDomainAllowed"] == 1)
         end,
       },
@@ -73732,7 +73732,7 @@ DefineAbility({
         "Cleric Domain ~ Air",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -73748,7 +73748,7 @@ DefineAbility({
         "Sorcerer Domain ~ Air",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -73773,7 +73773,7 @@ DefineAbility({
         "Cleric Domain ~ Animal",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -73789,7 +73789,7 @@ DefineAbility({
         "Sorcerer Domain ~ Animal",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -73814,7 +73814,7 @@ DefineAbility({
         "Cleric Domain ~ Chaos",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -73830,7 +73830,7 @@ DefineAbility({
         "Sorcerer Domain ~ Chaos",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -73855,7 +73855,7 @@ DefineAbility({
         "Cleric Domain ~ Death",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -73871,7 +73871,7 @@ DefineAbility({
         "Sorcerer Domain ~ Death",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -73896,7 +73896,7 @@ DefineAbility({
         "Cleric Domain ~ Destruction",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -73912,7 +73912,7 @@ DefineAbility({
         "Sorcerer Domain ~ Destruction",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -73937,7 +73937,7 @@ DefineAbility({
         "Cleric Domain ~ Earth",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -73953,7 +73953,7 @@ DefineAbility({
         "Sorcerer Domain ~ Earth",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -73978,7 +73978,7 @@ DefineAbility({
         "Cleric Domain ~ Evil",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -73994,7 +73994,7 @@ DefineAbility({
         "Sorcerer Domain ~ Evil",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74019,7 +74019,7 @@ DefineAbility({
         "Cleric Domain ~ Fire",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74035,7 +74035,7 @@ DefineAbility({
         "Sorcerer Domain ~ Fire",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74060,7 +74060,7 @@ DefineAbility({
         "Cleric Domain ~ Good",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74076,7 +74076,7 @@ DefineAbility({
         "Sorcerer Domain ~ Good",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74101,7 +74101,7 @@ DefineAbility({
         "Cleric Domain ~ Healing",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74117,7 +74117,7 @@ DefineAbility({
         "Sorcerer Domain ~ Healing",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74142,7 +74142,7 @@ DefineAbility({
         "Cleric Domain ~ Law",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74158,7 +74158,7 @@ DefineAbility({
         "Sorcerer Domain ~ Law",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74183,7 +74183,7 @@ DefineAbility({
         "Cleric Domain ~ Luck",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74199,7 +74199,7 @@ DefineAbility({
         "Sorcerer Domain ~ Luck",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74224,7 +74224,7 @@ DefineAbility({
         "Cleric Domain ~ Knowledge",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74240,7 +74240,7 @@ DefineAbility({
         "Sorcerer Domain ~ Knowledge",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74265,7 +74265,7 @@ DefineAbility({
         "Cleric Domain ~ Magic",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74281,7 +74281,7 @@ DefineAbility({
         "Sorcerer Domain ~ Magic",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74306,7 +74306,7 @@ DefineAbility({
         "Cleric Domain ~ Plant",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74322,7 +74322,7 @@ DefineAbility({
         "Sorcerer Domain ~ Plant",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74347,7 +74347,7 @@ DefineAbility({
         "Cleric Domain ~ Protection",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74363,7 +74363,7 @@ DefineAbility({
         "Sorcerer Domain ~ Protection",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74388,7 +74388,7 @@ DefineAbility({
         "Cleric Domain ~ Strength",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74404,7 +74404,7 @@ DefineAbility({
         "Sorcerer Domain ~ Strength",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74429,7 +74429,7 @@ DefineAbility({
         "Cleric Domain ~ Sun",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74445,7 +74445,7 @@ DefineAbility({
         "Sorcerer Domain ~ Sun",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74470,7 +74470,7 @@ DefineAbility({
         "Cleric Domain ~ Travel",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74486,7 +74486,7 @@ DefineAbility({
         "Sorcerer Domain ~ Travel",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74511,7 +74511,7 @@ DefineAbility({
         "Cleric Domain ~ Trickery",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74527,7 +74527,7 @@ DefineAbility({
         "Sorcerer Domain ~ Trickery",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74552,7 +74552,7 @@ DefineAbility({
         "Cleric Domain ~ War",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74568,7 +74568,7 @@ DefineAbility({
         "Sorcerer Domain ~ War",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74593,7 +74593,7 @@ DefineAbility({
         "Cleric Domain ~ Water",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74609,7 +74609,7 @@ DefineAbility({
         "Sorcerer Domain ~ Water",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.Name == "Cleric Class" then return true end
@@ -74687,7 +74687,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AirDomainAllowed"] == 1)
         end,
       },
@@ -74758,7 +74758,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AnimalDomainAllowed"] == 1)
         end,
       },
@@ -74829,7 +74829,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ChaosDomainAllowed"] == 1)
         end,
       },
@@ -74900,7 +74900,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DeathDomainAllowed"] == 1)
         end,
       },
@@ -74971,7 +74971,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DestructionDomainAllowed"] == 1)
         end,
       },
@@ -75042,7 +75042,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EarthDomainAllowed"] == 1)
         end,
       },
@@ -75113,7 +75113,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EvilDomainAllowed"] == 1)
         end,
       },
@@ -75184,7 +75184,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FireDomainAllowed"] == 1)
         end,
       },
@@ -75255,7 +75255,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoodDomainAllowed"] == 1)
         end,
       },
@@ -75326,7 +75326,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HealingDomainAllowed"] == 1)
         end,
       },
@@ -75397,7 +75397,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["LawDomainAllowed"] == 1)
         end,
       },
@@ -75468,7 +75468,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["LuckDomainAllowed"] == 1)
         end,
       },
@@ -75539,7 +75539,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["KnowledgeDomainAllowed"] == 1)
         end,
       },
@@ -75610,7 +75610,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MagicDomainAllowed"] == 1)
         end,
       },
@@ -75681,7 +75681,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PlantDomainAllowed"] == 1)
         end,
       },
@@ -75752,7 +75752,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ProtectionDomainAllowed"] == 1)
         end,
       },
@@ -75823,7 +75823,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StrengthDomainAllowed"] == 1)
         end,
       },
@@ -75894,7 +75894,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SunDomainAllowed"] == 1)
         end,
       },
@@ -75965,7 +75965,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TravelDomainAllowed"] == 1)
         end,
       },
@@ -76036,7 +76036,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TrickeryDomainAllowed"] == 1)
         end,
       },
@@ -76107,7 +76107,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WarDomainAllowed"] == 1)
         end,
       },
@@ -76178,7 +76178,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WaterDomainAllowed"] == 1)
         end,
       },
@@ -76249,7 +76249,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AirDomainAllowed"] == 1)
         end,
       },
@@ -76320,7 +76320,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AnimalDomainAllowed"] == 1)
         end,
       },
@@ -76391,7 +76391,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ChaosDomainAllowed"] == 1)
         end,
       },
@@ -76462,7 +76462,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DeathDomainAllowed"] == 1)
         end,
       },
@@ -76533,7 +76533,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DestructionDomainAllowed"] == 1)
         end,
       },
@@ -76604,7 +76604,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EarthDomainAllowed"] == 1)
         end,
       },
@@ -76675,7 +76675,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["EvilDomainAllowed"] == 1)
         end,
       },
@@ -76746,7 +76746,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FireDomainAllowed"] == 1)
         end,
       },
@@ -76817,7 +76817,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["GoodDomainAllowed"] == 1)
         end,
       },
@@ -76888,7 +76888,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HealingDomainAllowed"] == 1)
         end,
       },
@@ -76959,7 +76959,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["LawDomainAllowed"] == 1)
         end,
       },
@@ -77030,7 +77030,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["LuckDomainAllowed"] == 1)
         end,
       },
@@ -77101,7 +77101,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["KnowledgeDomainAllowed"] == 1)
         end,
       },
@@ -77172,7 +77172,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MagicDomainAllowed"] == 1)
         end,
       },
@@ -77243,7 +77243,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["PlantDomainAllowed"] == 1)
         end,
       },
@@ -77314,7 +77314,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ProtectionDomainAllowed"] == 1)
         end,
       },
@@ -77385,7 +77385,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StrengthDomainAllowed"] == 1)
         end,
       },
@@ -77456,7 +77456,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SunDomainAllowed"] == 1)
         end,
       },
@@ -77527,7 +77527,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TravelDomainAllowed"] == 1)
         end,
       },
@@ -77598,7 +77598,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TrickeryDomainAllowed"] == 1)
         end,
       },
@@ -77669,7 +77669,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WarDomainAllowed"] == 1)
         end,
       },
@@ -77740,7 +77740,7 @@ DefineAbility({
         },
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["WaterDomainAllowed"] == 1)
         end,
       },
@@ -77768,7 +77768,7 @@ ModifyAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Default_SLA_LVL"] == 0)
         end,
       },
@@ -77830,10 +77830,10 @@ DefineAbility({
       DC="Acid_Splash_DC",
       CasterLevel="Acid_Splash_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellAcid_Splash"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Acid_Splash_Times"] >= 1)
         end,
       },
@@ -77846,10 +77846,10 @@ DefineAbility({
       DC="Acid_Splash_DC",
       CasterLevel="Acid_Splash_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellAcid_Splash"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Acid_Splash_Times"] <= 0)
         end,
       },
@@ -77905,10 +77905,10 @@ DefineAbility({
       DC="Arcane_Mark_DC",
       CasterLevel="Arcane_Mark_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellArcane_Mark"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Arcane_Mark_Times"] >= 1)
         end,
       },
@@ -77921,10 +77921,10 @@ DefineAbility({
       DC="Arcane_Mark_DC",
       CasterLevel="Arcane_Mark_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellArcane_Mark"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Arcane_Mark_Times"] <= 0)
         end,
       },
@@ -77980,10 +77980,10 @@ DefineAbility({
       DC="Bleed_DC",
       CasterLevel="Bleed_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellBleed"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bleed_Times"] >= 1)
         end,
       },
@@ -77996,10 +77996,10 @@ DefineAbility({
       DC="Bleed_DC",
       CasterLevel="Bleed_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellBleed"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bleed_Times"] <= 0)
         end,
       },
@@ -78055,10 +78055,10 @@ DefineAbility({
       DC="Create_Water_DC",
       CasterLevel="Create_Water_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellCreate_Water"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Create_Water_Times"] >= 1)
         end,
       },
@@ -78071,10 +78071,10 @@ DefineAbility({
       DC="Create_Water_DC",
       CasterLevel="Create_Water_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellCreate_Water"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Create_Water_Times"] <= 0)
         end,
       },
@@ -78130,10 +78130,10 @@ DefineAbility({
       DC="Dancing_Lights_DC",
       CasterLevel="Dancing_Lights_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDancing_Lights"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Dancing_Lights_Times"] >= 1)
         end,
       },
@@ -78146,10 +78146,10 @@ DefineAbility({
       DC="Dancing_Lights_DC",
       CasterLevel="Dancing_Lights_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDancing_Lights"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Dancing_Lights_Times"] <= 0)
         end,
       },
@@ -78205,10 +78205,10 @@ DefineAbility({
       DC="Daze_DC",
       CasterLevel="Daze_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDaze"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Daze_Times"] >= 1)
         end,
       },
@@ -78221,10 +78221,10 @@ DefineAbility({
       DC="Daze_DC",
       CasterLevel="Daze_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDaze"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Daze_Times"] <= 0)
         end,
       },
@@ -78280,10 +78280,10 @@ DefineAbility({
       DC="Detect_Magic_DC",
       CasterLevel="Detect_Magic_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDetect_Magic"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Detect_Magic_Times"] >= 1)
         end,
       },
@@ -78296,10 +78296,10 @@ DefineAbility({
       DC="Detect_Magic_DC",
       CasterLevel="Detect_Magic_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDetect_Magic"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Detect_Magic_Times"] <= 0)
         end,
       },
@@ -78355,10 +78355,10 @@ DefineAbility({
       DC="Detect_Poison_DC",
       CasterLevel="Detect_Poison_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDetect_Poison"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Detect_Poison_Times"] >= 1)
         end,
       },
@@ -78371,10 +78371,10 @@ DefineAbility({
       DC="Detect_Poison_DC",
       CasterLevel="Detect_Poison_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDetect_Poison"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Detect_Poison_Times"] <= 0)
         end,
       },
@@ -78430,10 +78430,10 @@ DefineAbility({
       DC="Disrupt_Undead_DC",
       CasterLevel="Disrupt_Undead_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDisrupt_Undead"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Disrupt_Undead_Times"] >= 1)
         end,
       },
@@ -78446,10 +78446,10 @@ DefineAbility({
       DC="Disrupt_Undead_DC",
       CasterLevel="Disrupt_Undead_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDisrupt_Undead"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Disrupt_Undead_Times"] <= 0)
         end,
       },
@@ -78505,10 +78505,10 @@ DefineAbility({
       DC="Flare_DC",
       CasterLevel="Flare_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellFlare"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Flare_Times"] >= 1)
         end,
       },
@@ -78521,10 +78521,10 @@ DefineAbility({
       DC="Flare_DC",
       CasterLevel="Flare_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellFlare"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Flare_Times"] <= 0)
         end,
       },
@@ -78580,10 +78580,10 @@ DefineAbility({
       DC="Ghost_Sound_DC",
       CasterLevel="Ghost_Sound_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellGhost_Sound"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ghost_Sound_Times"] >= 1)
         end,
       },
@@ -78596,10 +78596,10 @@ DefineAbility({
       DC="Ghost_Sound_DC",
       CasterLevel="Ghost_Sound_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellGhost_Sound"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ghost_Sound_Times"] <= 0)
         end,
       },
@@ -78655,10 +78655,10 @@ DefineAbility({
       DC="Guidance_DC",
       CasterLevel="Guidance_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellGuidance"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Guidance_Times"] >= 1)
         end,
       },
@@ -78671,10 +78671,10 @@ DefineAbility({
       DC="Guidance_DC",
       CasterLevel="Guidance_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellGuidance"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Guidance_Times"] <= 0)
         end,
       },
@@ -78730,10 +78730,10 @@ DefineAbility({
       DC="Know_Direction_DC",
       CasterLevel="Know_Direction_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellKnow_Direction"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Know_Direction_Times"] >= 1)
         end,
       },
@@ -78746,10 +78746,10 @@ DefineAbility({
       DC="Know_Direction_DC",
       CasterLevel="Know_Direction_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellKnow_Direction"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Know_Direction_Times"] <= 0)
         end,
       },
@@ -78805,10 +78805,10 @@ DefineAbility({
       DC="Light_DC",
       CasterLevel="Light_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellLight"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Light_Times"] >= 1)
         end,
       },
@@ -78821,10 +78821,10 @@ DefineAbility({
       DC="Light_DC",
       CasterLevel="Light_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellLight"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Light_Times"] <= 0)
         end,
       },
@@ -78880,10 +78880,10 @@ DefineAbility({
       DC="Lullaby_DC",
       CasterLevel="Lullaby_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellLullaby"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Lullaby_Times"] >= 1)
         end,
       },
@@ -78896,10 +78896,10 @@ DefineAbility({
       DC="Lullaby_DC",
       CasterLevel="Lullaby_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellLullaby"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Lullaby_Times"] <= 0)
         end,
       },
@@ -78955,10 +78955,10 @@ DefineAbility({
       DC="Mage_Hand_DC",
       CasterLevel="Mage_Hand_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellMage_Hand"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Mage_Hand_Times"] >= 1)
         end,
       },
@@ -78971,10 +78971,10 @@ DefineAbility({
       DC="Mage_Hand_DC",
       CasterLevel="Mage_Hand_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellMage_Hand"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Mage_Hand_Times"] <= 0)
         end,
       },
@@ -79030,10 +79030,10 @@ DefineAbility({
       DC="Mending_DC",
       CasterLevel="Mending_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellMending"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Mending_Times"] >= 1)
         end,
       },
@@ -79046,10 +79046,10 @@ DefineAbility({
       DC="Mending_DC",
       CasterLevel="Mending_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellMending"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Mending_Times"] <= 0)
         end,
       },
@@ -79105,10 +79105,10 @@ DefineAbility({
       DC="Message_DC",
       CasterLevel="Message_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellMessage"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Message_Times"] >= 1)
         end,
       },
@@ -79121,10 +79121,10 @@ DefineAbility({
       DC="Message_DC",
       CasterLevel="Message_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellMessage"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Message_Times"] <= 0)
         end,
       },
@@ -79180,10 +79180,10 @@ DefineAbility({
       DC="Open/Close_DC",
       CasterLevel="Open_Close_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellOpen_Close"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Open_Close_Times"] >= 1)
         end,
       },
@@ -79196,10 +79196,10 @@ DefineAbility({
       DC="Open/Close_DC",
       CasterLevel="Open_Close_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellOpen_Close"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Open_Close_Times"] <= 0)
         end,
       },
@@ -79255,10 +79255,10 @@ DefineAbility({
       DC="Prestidigitation_DC",
       CasterLevel="Prestidigitation_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellPrestidigitation"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Prestidigitation_Times"] >= 1)
         end,
       },
@@ -79271,10 +79271,10 @@ DefineAbility({
       DC="Prestidigitation_DC",
       CasterLevel="Prestidigitation_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellPrestidigitation"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Prestidigitation_Times"] <= 0)
         end,
       },
@@ -79330,10 +79330,10 @@ DefineAbility({
       DC="Purify_Food_and_Drink_DC",
       CasterLevel="Purify_Food_and_Drink_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellPurify_Food_and_Drink"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Purify_Food_and_Drink_Times"] >= 1)
         end,
       },
@@ -79346,10 +79346,10 @@ DefineAbility({
       DC="Purify_Food_and_Drink_DC",
       CasterLevel="Purify_Food_and_Drink_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellPurify_Food_and_Drink"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Purify_Food_and_Drink_Times"] <= 0)
         end,
       },
@@ -79405,10 +79405,10 @@ DefineAbility({
       DC="Ray_of_Frost_DC",
       CasterLevel="Ray_of_Frost_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellRay_of_Frost"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ray_of_Frost_Times"] >= 1)
         end,
       },
@@ -79421,10 +79421,10 @@ DefineAbility({
       DC="Ray_of_Frost_DC",
       CasterLevel="Ray_of_Frost_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellRay_of_Frost"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ray_of_Frost_Times"] <= 0)
         end,
       },
@@ -79480,10 +79480,10 @@ DefineAbility({
       DC="Read_Magic_DC",
       CasterLevel="Read_Magic_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellRead_Magic"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Read_Magic_Times"] >= 1)
         end,
       },
@@ -79496,10 +79496,10 @@ DefineAbility({
       DC="Read_Magic_DC",
       CasterLevel="Read_Magic_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellRead_Magic"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Read_Magic_Times"] <= 0)
         end,
       },
@@ -79555,10 +79555,10 @@ DefineAbility({
       DC="Resistance_DC",
       CasterLevel="Resistance_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellResistance_"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Resistance_Times"] >= 1)
         end,
       },
@@ -79571,10 +79571,10 @@ DefineAbility({
       DC="Resistance_DC",
       CasterLevel="Resistance_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellResistance"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Resistance_Times"] <= 0)
         end,
       },
@@ -79630,10 +79630,10 @@ DefineAbility({
       DC="Stabilize_DC",
       CasterLevel="Stabilize_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellStabilize"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Stabilize_Times"] >= 1)
         end,
       },
@@ -79646,10 +79646,10 @@ DefineAbility({
       DC="Stabilize_DC",
       CasterLevel="Stabilize_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellStabilize"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Stabilize_Times"] <= 0)
         end,
       },
@@ -79705,10 +79705,10 @@ DefineAbility({
       DC="Summon_Instrument_DC",
       CasterLevel="Summon_Instrument_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellSummon_Instrument"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Summon_Instrument_Times"] >= 1)
         end,
       },
@@ -79721,10 +79721,10 @@ DefineAbility({
       DC="Summon_Instrument_DC",
       CasterLevel="Summon_Instrument_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellSummon_Instrument"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Summon_Instrument_Times"] <= 0)
         end,
       },
@@ -79780,10 +79780,10 @@ DefineAbility({
       DC="Touch_of_Fatigue_DC",
       CasterLevel="Touch_of_Fatigue_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellTouch_of_Fatigue"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Touch_of_Fatigue_Times"] >= 1)
         end,
       },
@@ -79796,10 +79796,10 @@ DefineAbility({
       DC="Touch_of_Fatigue_DC",
       CasterLevel="Touch_of_Fatigue_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellTouch_of_Fatigue"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Touch_of_Fatigue_Times"] <= 0)
         end,
       },
@@ -79855,10 +79855,10 @@ DefineAbility({
       DC="Virtue_DC",
       CasterLevel="Virtue_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellVirtue"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Virtue_Times"] >= 1)
         end,
       },
@@ -79871,10 +79871,10 @@ DefineAbility({
       DC="Virtue_DC",
       CasterLevel="Virtue_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellVirtue"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Virtue_Times"] <= 0)
         end,
       },
@@ -80467,10 +80467,10 @@ DefineAbility({
       DC="Calm_Animals_DC",
       CasterLevel="Calm_Animals_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellCalm_Animals"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Calm_Animals_Times"] >= 1)
         end,
       },
@@ -80483,10 +80483,10 @@ DefineAbility({
       DC="Calm_Animals_DC",
       CasterLevel="Calm_Animals_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellCalm_Animals"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Calm_Animals_Times"] <= 0)
         end,
       },
@@ -80542,10 +80542,10 @@ DefineAbility({
       DC="Charm_Animal_DC",
       CasterLevel="Charm_Animal_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellCharm_Animal"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Charm_Animal_Times"] >= 1)
         end,
       },
@@ -80558,10 +80558,10 @@ DefineAbility({
       DC="Charm_Animal_DC",
       CasterLevel="Charm_Animal_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellCharm_Animal"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Charm_Animal_Times"] <= 0)
         end,
       },
@@ -80617,10 +80617,10 @@ DefineAbility({
       DC="Cure_Light_Wounds_DC",
       CasterLevel="Cure_Light_Wounds_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellCure_Light_Wounds"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Cure_Light_Wounds_Times"] >= 1)
         end,
       },
@@ -80633,10 +80633,10 @@ DefineAbility({
       DC="Cure_Light_Wounds_DC",
       CasterLevel="Cure_Light_Wounds_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellCure_Light_Wounds"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Cure_Light_Wounds_Times"] <= 0)
         end,
       },
@@ -80692,10 +80692,10 @@ DefineAbility({
       DC="Detect_Animals_or_Plants_DC",
       CasterLevel="Detect_Animals_or_Plants_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDetect_Animals_or_Plants"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Detect_Animals_or_Plants_Times"] >= 1)
         end,
       },
@@ -80708,10 +80708,10 @@ DefineAbility({
       DC="Detect_Animals_or_Plants_DC",
       CasterLevel="Detect_Animals_or_Plants_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDetect_Animals_or_Plants"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Detect_Animals_or_Plants_Times"] <= 0)
         end,
       },
@@ -80767,10 +80767,10 @@ DefineAbility({
       DC="Detect_Snares_and_Pits_DC",
       CasterLevel="Detect_Snares_and_Pits_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDetect_Snares_and_Pits"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Detect_Snares_and_Pits_Times"] >= 1)
         end,
       },
@@ -80783,10 +80783,10 @@ DefineAbility({
       DC="Detect_Snares_and_Pits_DC",
       CasterLevel="Detect_Snares_and_Pits_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDetect_Snares_and_Pits"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Detect_Snares_and_Pits_Times"] <= 0)
         end,
       },
@@ -80842,10 +80842,10 @@ DefineAbility({
       DC="Endure_Elements_DC",
       CasterLevel="Endure_Elements_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellEndure_Elements"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Endure_Elements_Times"] >= 1)
         end,
       },
@@ -80858,10 +80858,10 @@ DefineAbility({
       DC="Endure_Elements_DC",
       CasterLevel="Endure_Elements_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellEndure_Elements"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Endure_Elements_Times"] <= 0)
         end,
       },
@@ -80917,10 +80917,10 @@ DefineAbility({
       DC="Entangle_DC",
       CasterLevel="Entangle_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellEntangle"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Entangle_Times"] >= 1)
         end,
       },
@@ -80933,10 +80933,10 @@ DefineAbility({
       DC="Entangle_DC",
       CasterLevel="Entangle_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellEntangle"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Entangle_Times"] <= 0)
         end,
       },
@@ -80992,10 +80992,10 @@ DefineAbility({
       DC="Faerie_Fire_DC",
       CasterLevel="Faerie_Fire_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellFaerie_Fire"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Faerie_Fire_Times"] >= 1)
         end,
       },
@@ -81008,10 +81008,10 @@ DefineAbility({
       DC="Faerie_Fire_DC",
       CasterLevel="Faerie_Fire_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellFaerie_Fire"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Faerie_Fire_Times"] <= 0)
         end,
       },
@@ -81067,10 +81067,10 @@ DefineAbility({
       DC="Goodberry_DC",
       CasterLevel="Goodberry_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellGoodberry"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Goodberry_Times"] >= 1)
         end,
       },
@@ -81083,10 +81083,10 @@ DefineAbility({
       DC="Goodberry_DC",
       CasterLevel="Goodberry_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellGoodberry"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Goodberry_Times"] <= 0)
         end,
       },
@@ -81142,10 +81142,10 @@ DefineAbility({
       DC="Hide_from_Animals_DC",
       CasterLevel="Hide_from_Animals_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellHide_from_Animals"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Hide_from_Animals_Times"] >= 1)
         end,
       },
@@ -81158,10 +81158,10 @@ DefineAbility({
       DC="Hide_from_Animals_DC",
       CasterLevel="Hide_from_Animals_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellHide_from_Animals"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Hide_from_Animals_Times"] <= 0)
         end,
       },
@@ -81217,10 +81217,10 @@ DefineAbility({
       DC="Jump_DC",
       CasterLevel="Jump_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellJump"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Jump_Times"] >= 1)
         end,
       },
@@ -81233,10 +81233,10 @@ DefineAbility({
       DC="Jump_DC",
       CasterLevel="Jump_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellJump"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Jump_Times"] <= 0)
         end,
       },
@@ -81292,10 +81292,10 @@ DefineAbility({
       DC="Longstrider_DC",
       CasterLevel="Longstrider_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellLongstrider"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Longstrider_Times"] >= 1)
         end,
       },
@@ -81308,10 +81308,10 @@ DefineAbility({
       DC="Longstrider_DC",
       CasterLevel="Longstrider_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellLongstrider"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Longstrider_Times"] <= 0)
         end,
       },
@@ -81367,10 +81367,10 @@ DefineAbility({
       DC="Magic_Fang_DC",
       CasterLevel="Magic_Fang_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellMagic_Fang"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Magic_Fang_Times"] >= 1)
         end,
       },
@@ -81383,10 +81383,10 @@ DefineAbility({
       DC="Magic_Fang_DC",
       CasterLevel="Magic_Fang_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellMagic_Fang"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Magic_Fang_Times"] <= 0)
         end,
       },
@@ -81442,10 +81442,10 @@ DefineAbility({
       DC="Magic_Stone_DC",
       CasterLevel="Magic_Stone_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellMagic_Stone"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Magic_Stone_Times"] >= 1)
         end,
       },
@@ -81458,10 +81458,10 @@ DefineAbility({
       DC="Magic_Stone_DC",
       CasterLevel="Magic_Stone_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellMagic_Stone"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Magic_Stone_Times"] <= 0)
         end,
       },
@@ -81517,10 +81517,10 @@ DefineAbility({
       DC="Obscuring_Mist_DC",
       CasterLevel="Obscuring_Mist_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellObscuring_Mist"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Obscuring_Mist_Times"] >= 1)
         end,
       },
@@ -81533,10 +81533,10 @@ DefineAbility({
       DC="Obscuring_Mist_DC",
       CasterLevel="Obscuring_Mist_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellObscuring_Mist"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Obscuring_Mist_Times"] <= 0)
         end,
       },
@@ -81592,10 +81592,10 @@ DefineAbility({
       DC="Pass_without_Trace_DC",
       CasterLevel="Pass_without_Trace_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellPass_without_Trace"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Pass_without_Trace_Times"] >= 1)
         end,
       },
@@ -81608,10 +81608,10 @@ DefineAbility({
       DC="Pass_without_Trace_DC",
       CasterLevel="Pass_without_Trace_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellPass_without_Trace"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Pass_without_Trace_Times"] <= 0)
         end,
       },
@@ -81667,10 +81667,10 @@ DefineAbility({
       DC="Produce_Flame_DC",
       CasterLevel="Produce_Flame_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellProduce_Flame"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Produce_Flame_Times"] >= 1)
         end,
       },
@@ -81683,10 +81683,10 @@ DefineAbility({
       DC="Produce_Flame_DC",
       CasterLevel="Produce_Flame_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellProduce_Flame"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Produce_Flame_Times"] <= 0)
         end,
       },
@@ -81742,10 +81742,10 @@ DefineAbility({
       DC="Shillelagh_DC",
       CasterLevel="Shillelagh_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellShillelagh"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Shillelagh_Times"] >= 1)
         end,
       },
@@ -81758,10 +81758,10 @@ DefineAbility({
       DC="Shillelagh_DC",
       CasterLevel="Shillelagh_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellShillelagh"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Shillelagh_Times"] <= 0)
         end,
       },
@@ -81817,10 +81817,10 @@ DefineAbility({
       DC="Speak_with_Animals_DC",
       CasterLevel="Speak_with_Animals_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellSpeak_with_Animals"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Speak_with_Animals_Times"] >= 1)
         end,
       },
@@ -81833,10 +81833,10 @@ DefineAbility({
       DC="Speak_with_Animals_DC",
       CasterLevel="Speak_with_Animals_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellSpeak_with_Animals"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Speak_with_Animals_Times"] <= 0)
         end,
       },
@@ -81892,10 +81892,10 @@ DefineAbility({
       DC="Summon_Natures_Ally_I_DC",
       CasterLevel="Summon_Natures_Ally_I_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellSummon_Natures_Ally_I"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Summon_Natures_Ally_I_Times"] >= 1)
         end,
       },
@@ -81908,10 +81908,10 @@ DefineAbility({
       DC="Summon_Natures_Ally_I_DC",
       CasterLevel="Summon_Natures_Ally_I_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellSummon_Natures_Ally_I"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Summon_Natures_Ally_I_Times"] <= 0)
         end,
       },
@@ -81967,10 +81967,10 @@ DefineAbility({
       DC="Darkness_DC",
       CasterLevel="Darkness_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDarkness"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Darkness_Times"] >= 1)
         end,
       },
@@ -81983,10 +81983,10 @@ DefineAbility({
       DC="Darkness_DC",
       CasterLevel="Darkness_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDarkness"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Darkness_Times"] <= 0)
         end,
       },
@@ -82042,10 +82042,10 @@ DefineAbility({
       DC="Deeper_Darkness_DC",
       CasterLevel="Deeper_Darkness_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDeeper Darkness"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Deeper_Darkness_Times"] >= 1)
         end,
       },
@@ -82058,10 +82058,10 @@ DefineAbility({
       DC="Deeper_Darkness_DC",
       CasterLevel="Deeper_Darkness_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDeeper Darkness"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Deeper_Darkness_Times"] <= 0)
         end,
       },
@@ -82117,10 +82117,10 @@ DefineAbility({
       DC="Levitate_DC",
       CasterLevel="Levitate_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellLevitate"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Levitate_Times"] >= 1)
         end,
       },
@@ -82133,10 +82133,10 @@ DefineAbility({
       DC="Levitate_DC",
       CasterLevel="Levitate_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellLevitate"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Levitate_Times"] <= 0)
         end,
       },
@@ -82192,10 +82192,10 @@ DefineAbility({
       DC="Detect_Magic_DC",
       CasterLevel="Detect_Magic_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDetect Magic"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Detect_Magic_Times"] >= 1)
         end,
       },
@@ -82208,10 +82208,10 @@ DefineAbility({
       DC="Detect_Magic_DC",
       CasterLevel="Detect_Magic_LVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDetect Magic"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Detect_Magic_Times"] <= 0)
         end,
       },
@@ -82597,7 +82597,7 @@ DefineAbility({
       Formula("LightningArcTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainAirLVL"] >= 2)
       end,
     },
@@ -82646,7 +82646,7 @@ DefineAbility({
         "Resistance to Electricity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAirLVL"] >= 6)
         end,
       },
@@ -82658,7 +82658,7 @@ DefineAbility({
         "Immunity to Electricity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAirLVL"] >= 20)
         end,
       },
@@ -82679,7 +82679,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAirLVL"] >= 6)
         end,
       },
@@ -82691,7 +82691,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainAirLVL"] >= 12)
         end,
       },
@@ -82803,7 +82803,7 @@ DefineAbility({
       Formula("ArtificersTouchTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainArtificeLVL"] < 2)
       end,
     },
@@ -83439,7 +83439,7 @@ DefineAbility({
       Formula("AcidDartTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainEarthLVL"] >= 2)
       end,
     },
@@ -83495,7 +83495,7 @@ DefineAbility({
         "Resistance to Acid",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEarthLVL"] >= 6)
         end,
       },
@@ -83507,7 +83507,7 @@ DefineAbility({
         "Immunity to Acid",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEarthLVL"] >= 20)
         end,
       },
@@ -83528,7 +83528,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEarthLVL"] >= 6)
         end,
       },
@@ -83540,7 +83540,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainEarthLVL"] >= 12)
         end,
       },
@@ -83663,7 +83663,7 @@ DefineAbility({
       Formula("FireBoltTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainFireLVL"] >= 2)
       end,
     },
@@ -83719,7 +83719,7 @@ DefineAbility({
         "Resistance to Fire",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainFireLVL"] >= 6)
         end,
       },
@@ -83731,7 +83731,7 @@ DefineAbility({
         "Immunity to Fire",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainFireLVL"] >= 20)
         end,
       },
@@ -83752,7 +83752,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainFireLVL"] >= 6)
         end,
       },
@@ -83764,7 +83764,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainFireLVL"] >= 12)
         end,
       },
@@ -83977,7 +83977,7 @@ DefineAbility({
       Formula("RebukeDeathTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainHealingLVL"] >= 2)
       end,
     },
@@ -84932,7 +84932,7 @@ DefineAbility({
       Formula("BlastRuneTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainRuneLVL"] >= 2)
       end,
     },
@@ -85459,7 +85459,7 @@ DefineAbility({
       Formula("IcicleTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainWaterLVL"] >= 2)
       end,
     },
@@ -85515,7 +85515,7 @@ DefineAbility({
         "Resistance to Cold",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWaterLVL"] >= 6)
         end,
       },
@@ -85527,7 +85527,7 @@ DefineAbility({
         "Immunity to Cold",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWaterLVL"] >= 20)
         end,
       },
@@ -85548,7 +85548,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWaterLVL"] >= 6)
         end,
       },
@@ -85560,7 +85560,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("10"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DomainWaterLVL"] >= 12)
         end,
       },
@@ -85587,7 +85587,7 @@ DefineAbility({
       Formula("StormBurstTimes"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["DomainWeatherLVL"] >= 2)
       end,
     },

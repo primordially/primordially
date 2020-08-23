@@ -3035,7 +3035,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -3093,7 +3093,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -3131,7 +3131,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -3169,7 +3169,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -3207,7 +3207,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -3245,7 +3245,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -3283,7 +3283,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -3321,7 +3321,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -3359,7 +3359,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -3397,7 +3397,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -3435,7 +3435,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -3473,7 +3473,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -3511,7 +3511,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -3549,7 +3549,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -3587,7 +3587,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -3625,7 +3625,7 @@ DefineEquipment({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },

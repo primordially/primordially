@@ -1,20 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Primordially.LstToLua
+namespace Primordially.LstToLua.Conditions
 {
-    internal class CampaignCondition : IDumpable
+    internal class CampaignCondition : BooleanMultiCondition
     {
-        public CampaignCondition(bool invert, int count, List<string> conditions)
+        public CampaignCondition(bool inverted, int count, List<string> conditions) : base(false, count, conditions)
         {
-            Invert = invert;
-            Count = count;
-            Conditions = conditions;
+            InvertCampaignCondition = inverted;
         }
 
-        public bool Invert { get; }
-        public int Count { get; set; }
-        public List<string> Conditions { get; }
+        public bool InvertCampaignCondition { get; }
 
         public static CampaignCondition Parse(bool invert, TextSpan value)
         {
@@ -42,33 +38,34 @@ namespace Primordially.LstToLua
                 }
                 else
                 {
-                    conditions.Add($"source.Name == \"{part.Value.Replace("\"", "\\\"")}\"");
+                    bool invertName = part.TryRemovePrefixSuffix("[", "]", out var name);
+                    conditions.Add($"source.Name {(invertName ? "~=" : "==")} \"{name.Value.Replace("\"", "\\\"")}\"");
+                    if (invertName)
+                    {
+                        // for some reason we have to do this
+                        // it makes no sense and isn't documented, but this is how it works
+                        // every inverted condition increases the required count by 1
+                        count++;
+                    }
                 }
             }
 
             return new CampaignCondition(invert, count, conditions);
         }
 
-        public void Dump(LuaTextWriter output)
+        public override void DumpCondition(LuaTextWriter output)
         {
+            if (InvertCampaignCondition)
+            {
+                output.Write("not ");
+            }
+            output.Write("any(sources, ");
             output.WriteStartFunction("source");
-            output.Write("local count = 0\n");
-            foreach (var condition in Conditions)
-            {
-                output.Write($"if {condition} then\n");
-                output.Write("  count = count + 1\n");
-                output.Write("end\n");
-            }
-
-            if (Invert)
-            {
-                output.Write($"return count < {Count}\n");
-            }
-            else
-            {
-                output.Write($"return count >= {Count}\n");
-            }
+            output.Write("return ");
+            base.DumpCondition(output);
+            output.Write("\n");
             output.WriteEndFunction();
+            output.Write(")");
         }
     }
 }

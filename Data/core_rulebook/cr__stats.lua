@@ -23,7 +23,7 @@ DefineStat({
         Name="Ability",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableToHitMeleeStr"] == 0)
         end,
       },
@@ -105,7 +105,7 @@ DefineStat({
         Name="Racial",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("Racial Vision") then return true end
@@ -161,7 +161,7 @@ DefineStat({
         Name="Ability",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableToHitRangedDex"] == 0)
         end,
       },
@@ -186,7 +186,7 @@ DefineStat({
         Name="Ability",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ACStatNotDex"] == 0)
         end,
       },
@@ -232,7 +232,7 @@ DefineStat({
       Category="VAR",
       Formula=Formula("1000"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ENCUMBERANCE"] == 0)
         end,
       },
@@ -244,7 +244,7 @@ DefineStat({
       Category="VAR",
       Formula=Formula("3"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ENCUMBERANCE"] == 1)
         end,
       },
@@ -256,7 +256,7 @@ DefineStat({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ENCUMBERANCE"] == 2)
         end,
       },
@@ -312,7 +312,7 @@ DefineStat({
       Category="HP",
       Formula=Formula("CON"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (IsRuleEnabled("DAMAGE_HP"))
         end,
       },
@@ -341,7 +341,7 @@ DefineStat({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (IsRuleEnabled("DAMAGE_VW"))
         end,
       },
@@ -353,7 +353,7 @@ DefineStat({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (IsRuleEnabled("USE_CMB"))
         end,
       },
@@ -520,7 +520,7 @@ DefineStat({
         Name="Ability",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ACStatIsCha"] == 1)
         end,
       },

@@ -11,7 +11,7 @@ ModifyAbility({
         "Dwarf ~ Ability Scores",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Dwarf_ReplaceAbilityScores"] == 0)
         end,
       },
@@ -29,7 +29,7 @@ ModifyAbility({
         "Dwarf ~ Size",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Dwarf_ReplaceSize"] == 0)
         end,
       },
@@ -47,7 +47,7 @@ ModifyAbility({
         "Dwarf ~ Speed",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Dwarf_ReplaceSpeed"] == 0)
         end,
       },
@@ -65,7 +65,7 @@ ModifyAbility({
         "Dwarf ~ Vision",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Dwarf_ReplaceVision"] == 0)
         end,
       },
@@ -83,7 +83,7 @@ ModifyAbility({
         "Dwarf ~ Defensive Training",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Dwarf_ReplaceDefensiveTraining"] == 0)
         end,
       },
@@ -101,7 +101,7 @@ ModifyAbility({
         "Dwarf ~ Greed",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Dwarf_ReplaceGreed"] == 0)
         end,
       },
@@ -119,7 +119,7 @@ ModifyAbility({
         "Dwarf ~ Hatred",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Dwarf_ReplaceHatred"] == 0)
         end,
       },
@@ -137,7 +137,7 @@ ModifyAbility({
         "Dwarf ~ Hardy",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Dwarf_ReplaceHardy"] == 0)
         end,
       },
@@ -155,7 +155,7 @@ ModifyAbility({
         "Dwarf ~ Stability",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Dwarf_ReplaceStability"] == 0)
         end,
       },
@@ -173,7 +173,7 @@ ModifyAbility({
         "Dwarf ~ Stonecunning",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Dwarf_ReplaceStonecunning"] == 0)
         end,
       },
@@ -191,7 +191,7 @@ ModifyAbility({
         "Dwarf ~ Weapon Familiarity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Dwarf_ReplaceWeaponFamiliarity"] == 0)
         end,
       },
@@ -209,7 +209,7 @@ ModifyAbility({
         "Dwarf ~ Languages",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Dwarf_ReplaceLanguages"] == 0)
         end,
       },
@@ -227,7 +227,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DwarfDefensiveTraining") then return true end
@@ -252,7 +252,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DwarfGreed") then return true end
@@ -277,7 +277,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DwarfHatred") then return true end
@@ -302,7 +302,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DwarfHardy") then return true end
@@ -327,7 +327,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DwarfStability") then return true end
@@ -352,7 +352,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DwarfStonecunning") then return true end
@@ -377,7 +377,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DwarfSteady") then return true end
@@ -402,7 +402,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DwarfWeaponFamiliarity") then return true end
@@ -427,7 +427,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DwarfRacialVision") then return true end
@@ -452,7 +452,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("DwarfLanguage") then return true end
@@ -477,7 +477,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Dwarf_ReplaceAbilityScores"] == "true"
         end,
       },
@@ -498,7 +498,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Dwarf_ReplaceSize"] == "true"
         end,
       },
@@ -519,7 +519,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Dwarf_ReplaceSpeed"] == "True"
         end,
       },
@@ -540,7 +540,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Dwarf_ReplaceVision"] == "True"
         end,
       },
@@ -561,7 +561,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Dwarf_ReplaceDefensiveTraining"] == "True"
         end,
       },
@@ -582,7 +582,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Dwarf_ReplaceGreed"] == "True"
         end,
       },
@@ -603,7 +603,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Dwarf_ReplaceHatred"] == "True"
         end,
       },
@@ -624,7 +624,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Dwarf_ReplaceHardy"] == "True"
         end,
       },
@@ -645,7 +645,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Dwarf_ReplaceStability"] == "True"
         end,
       },
@@ -666,7 +666,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Dwarf_ReplaceStonecunning"] == "True"
         end,
       },
@@ -687,7 +687,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Dwarf_ReplaceWeaponFamiliarity"] == "True"
         end,
       },
@@ -708,7 +708,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Dwarf_ReplaceLanguages"] == "True"
         end,
       },
@@ -729,7 +729,7 @@ ModifyAbility({
         "Elf ~ Ability Scores",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Elf_ReplaceAbilityScores"] == 0)
         end,
       },
@@ -747,7 +747,7 @@ ModifyAbility({
         "Elf ~ Size",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Elf_ReplaceSize"] == 0)
         end,
       },
@@ -765,7 +765,7 @@ ModifyAbility({
         "Elf ~ Speed",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Elf_ReplaceSpeed"] == 0)
         end,
       },
@@ -783,7 +783,7 @@ ModifyAbility({
         "Elf ~ Vision",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Elf_ReplaceVision"] == 0)
         end,
       },
@@ -801,7 +801,7 @@ ModifyAbility({
         "Elf ~ Elven Immunities",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Elf_ReplaceElvenImmunities"] == 0)
         end,
       },
@@ -819,7 +819,7 @@ ModifyAbility({
         "Elf ~ Elven Magic",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Elf_ReplaceElvenMagic"] == 0)
         end,
       },
@@ -837,7 +837,7 @@ ModifyAbility({
         "Elf ~ Keen Senses",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Elf_ReplaceKeenSenses"] == 0)
         end,
       },
@@ -855,7 +855,7 @@ ModifyAbility({
         "Elf ~ Weapon Familiarity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Elf_ReplaceWeaponFamiliarity"] == 0)
         end,
       },
@@ -873,7 +873,7 @@ ModifyAbility({
         "Elf ~ Languages",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Elf_ReplaceLanguages"] == 0)
         end,
       },
@@ -891,7 +891,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("ElfRacialVision") then return true end
@@ -916,7 +916,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("ElfImmunities") then return true end
@@ -941,7 +941,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("ElfMagic") then return true end
@@ -966,7 +966,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("ElfSenses", "ElfKeenSenses") then return true end
@@ -991,7 +991,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("ElfWeaponFamiliarity") then return true end
@@ -1016,7 +1016,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("ElfRacialLanguage") then return true end
@@ -1041,7 +1041,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Elf_ReplaceAbilityScores"] == "true"
         end,
       },
@@ -1062,7 +1062,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Elf_ReplaceSize"] == "true"
         end,
       },
@@ -1083,7 +1083,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Elf_ReplaceSpeed"] == "true"
         end,
       },
@@ -1104,7 +1104,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Elf_ReplaceVision"] == "true"
         end,
       },
@@ -1125,7 +1125,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Elf_ReplaceElvenImmunities"] == "true"
         end,
       },
@@ -1146,7 +1146,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Elf_ReplaceElvenMagic"] == "true"
         end,
       },
@@ -1167,7 +1167,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Elf_ReplaceKeenSenses"] == "true"
         end,
       },
@@ -1188,7 +1188,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Elf_ReplaceWeaponFamiliarity"] == "true"
         end,
       },
@@ -1209,7 +1209,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Elf_ReplaceLanguages"] == "true"
         end,
       },
@@ -1230,7 +1230,7 @@ ModifyAbility({
         "Gnome ~ Ability Scores",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Gnome_ReplaceAbilityScores"] == 0)
         end,
       },
@@ -1248,7 +1248,7 @@ ModifyAbility({
         "Gnome ~ Size",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Gnome_ReplaceSize"] == 0)
         end,
       },
@@ -1266,7 +1266,7 @@ ModifyAbility({
         "Gnome ~ Speed",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Gnome_ReplaceSpeed"] == 0)
         end,
       },
@@ -1284,7 +1284,7 @@ ModifyAbility({
         "Gnome ~ Vision",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Gnome_ReplaceVision"] == 0)
         end,
       },
@@ -1302,7 +1302,7 @@ ModifyAbility({
         "Gnome ~ Defensive Training",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Gnome_ReplaceDefensiveTraining"] == 0)
         end,
       },
@@ -1320,7 +1320,7 @@ ModifyAbility({
         "Gnome ~ Gnome Magic",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Gnome_ReplaceGnomeMagic"] == 0)
         end,
       },
@@ -1338,7 +1338,7 @@ ModifyAbility({
         "Gnome ~ Hatred",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Gnome_ReplaceHatred"] == 0)
         end,
       },
@@ -1356,7 +1356,7 @@ ModifyAbility({
         "Gnome ~ Illusion Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Gnome_ReplaceIllusionResistance"] == 0)
         end,
       },
@@ -1374,7 +1374,7 @@ ModifyAbility({
         "Gnome ~ Keen Senses",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Gnome_ReplaceKeenSenses"] == 0)
         end,
       },
@@ -1392,7 +1392,7 @@ ModifyAbility({
         "Gnome ~ Obsessive",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Gnome_ReplaceObsessive"] == 0)
         end,
       },
@@ -1410,7 +1410,7 @@ ModifyAbility({
         "Gnome ~ Weapon Familiarity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Gnome_ReplaceWeaponFamiliarity"] == 0)
         end,
       },
@@ -1428,7 +1428,7 @@ ModifyAbility({
         "Gnome ~ Languages",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Gnome_ReplaceLanguages"] == 0)
         end,
       },
@@ -1446,7 +1446,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("GnomeRacialVision") then return true end
@@ -1471,7 +1471,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("GnomeDefensiveTraining") then return true end
@@ -1496,7 +1496,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("GnomeMagic") then return true end
@@ -1521,7 +1521,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("GnomeHatred") then return true end
@@ -1546,7 +1546,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("GnomeIllusionResistance") then return true end
@@ -1571,7 +1571,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("GnomeSenses") then return true end
@@ -1596,7 +1596,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("GnomeObsessive") then return true end
@@ -1621,7 +1621,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("GnomeWeaponFamiliarity") then return true end
@@ -1646,7 +1646,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("GnomeRacialLanguage") then return true end
@@ -1671,7 +1671,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Gnome_ReplaceAbilityScores"] == "true"
         end,
       },
@@ -1692,7 +1692,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Gnome_ReplaceSize"] == "true"
         end,
       },
@@ -1713,7 +1713,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Gnome_ReplaceSpeed"] == "true"
         end,
       },
@@ -1734,7 +1734,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Gnome_ReplaceVision"] == "true"
         end,
       },
@@ -1755,7 +1755,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Gnome_ReplaceDefensiveTraining"] == "true"
         end,
       },
@@ -1776,7 +1776,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Gnome_ReplaceGnomeMagic"] == "true"
         end,
       },
@@ -1797,7 +1797,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Gnome_ReplaceHatred"] == "true"
         end,
       },
@@ -1818,7 +1818,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Gnome_ReplaceIllusionResistance"] == "true"
         end,
       },
@@ -1839,7 +1839,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Gnome_ReplaceKeenSenses"] == "true"
         end,
       },
@@ -1860,7 +1860,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Gnome_ReplaceObsessive"] == "true"
         end,
       },
@@ -1881,7 +1881,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Gnome_ReplaceWeaponFamiliarity"] == "true"
         end,
       },
@@ -1902,7 +1902,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Gnome_ReplaceLanguages"] == "true"
         end,
       },
@@ -1923,7 +1923,7 @@ ModifyAbility({
         "Half-Elf ~ Ability Scores",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfElf_ReplaceAbilityScores"] == 0)
         end,
       },
@@ -1941,7 +1941,7 @@ ModifyAbility({
         "Half-Elf ~ Size",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfElf_ReplaceSize"] == 0)
         end,
       },
@@ -1959,7 +1959,7 @@ ModifyAbility({
         "Half-Elf ~ Speed",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfElf_ReplaceSpeed"] == 0)
         end,
       },
@@ -1977,7 +1977,7 @@ ModifyAbility({
         "Half-Elf ~ Vision",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfElf_ReplaceVision"] == 0)
         end,
       },
@@ -1995,7 +1995,7 @@ ModifyAbility({
         "Half-Elf ~ Adaptability",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfElf_ReplaceAdaptability"] == 0)
         end,
       },
@@ -2013,7 +2013,7 @@ ModifyAbility({
         "Half-Elf ~ Elf Blood",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfElf_ReplaceElfBlood"] == 0)
         end,
       },
@@ -2031,7 +2031,7 @@ ModifyAbility({
         "Half-Elf ~ Elven Immunities",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfElf_ReplaceElvenImmunities"] == 0)
         end,
       },
@@ -2049,7 +2049,7 @@ ModifyAbility({
         "Half-Elf ~ Keen Senses",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfElf_ReplaceKeenSenses"] == 0)
         end,
       },
@@ -2067,7 +2067,7 @@ ModifyAbility({
         "Half-Elf ~ Multitalented",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfElf_ReplaceMultitalented"] == 0)
         end,
       },
@@ -2085,7 +2085,7 @@ ModifyAbility({
         "Half-Elf ~ Languages",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfElf_ReplaceLanguages"] == 0)
         end,
       },
@@ -2103,7 +2103,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalfElfRacialVision") then return true end
@@ -2128,7 +2128,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalfElfAdaptability") then return true end
@@ -2153,7 +2153,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalfElfImmunities") then return true end
@@ -2178,7 +2178,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalfElfSenses") then return true end
@@ -2203,7 +2203,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalfElfMultitalented") then return true end
@@ -2228,7 +2228,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalfElfRacialLanguage") then return true end
@@ -2253,7 +2253,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfElf_ReplaceAbilityScores"] == "true"
         end,
       },
@@ -2274,7 +2274,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfElf_ReplaceSize"] == "true"
         end,
       },
@@ -2295,7 +2295,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfElf_ReplaceSpeed"] == "true"
         end,
       },
@@ -2316,7 +2316,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfElf_ReplaceVision"] == "true"
         end,
       },
@@ -2337,7 +2337,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfElf_ReplaceAdaptability"] == "true"
         end,
       },
@@ -2358,7 +2358,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfElf_ReplaceElfBlood"] == "true"
         end,
       },
@@ -2379,7 +2379,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfElf_ReplaceElvenImmunities"] == "true"
         end,
       },
@@ -2400,7 +2400,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfElf_ReplaceKeenSenses"] == "true"
         end,
       },
@@ -2421,7 +2421,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfElf_ReplaceMultitalented"] == "true"
         end,
       },
@@ -2442,7 +2442,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfElf_ReplaceLanguages"] == "true"
         end,
       },
@@ -2463,7 +2463,7 @@ ModifyAbility({
         "Half-Orc ~ Ability Scores",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfOrc_ReplaceAbilityScores"] == 0)
         end,
       },
@@ -2481,7 +2481,7 @@ ModifyAbility({
         "Half-Orc ~ Size",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfOrc_ReplaceSize"] == 0)
         end,
       },
@@ -2499,7 +2499,7 @@ ModifyAbility({
         "Half-Orc ~ Speed",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfOrc_ReplaceSpeed"] == 0)
         end,
       },
@@ -2517,7 +2517,7 @@ ModifyAbility({
         "Half-Orc ~ Vision",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfOrc_ReplaceVision"] == 0)
         end,
       },
@@ -2535,7 +2535,7 @@ ModifyAbility({
         "Half-Orc ~ Intimidating",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfOrc_ReplaceIntimidating"] == 0)
         end,
       },
@@ -2553,7 +2553,7 @@ ModifyAbility({
         "Half-Orc ~ Orc Blood",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfOrc_ReplaceOrcBlood"] == 0)
         end,
       },
@@ -2571,7 +2571,7 @@ ModifyAbility({
         "Half-Orc ~ Orc Ferocity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfOrc_ReplaceOrcFerocity"] == 0)
         end,
       },
@@ -2589,7 +2589,7 @@ ModifyAbility({
         "Half-Orc ~ Weapon Familiarity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfOrc_ReplaceWeaponFamiliarity"] == 0)
         end,
       },
@@ -2607,7 +2607,7 @@ ModifyAbility({
         "Half-Orc ~ Languages",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["HalfOrc_ReplaceLanguages"] == 0)
         end,
       },
@@ -2625,7 +2625,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalfOrcRacialVision") then return true end
@@ -2650,7 +2650,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalfOrcIntimidating") then return true end
@@ -2675,7 +2675,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalfOrcFerocity") then return true end
@@ -2700,7 +2700,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalfOrcWeaponFamiliarity") then return true end
@@ -2725,7 +2725,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalfOrcRacialLanguage") then return true end
@@ -2750,7 +2750,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfOrc_ReplaceAbilityScores"] == "true"
         end,
       },
@@ -2771,7 +2771,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfOrc_ReplaceSize"] == "true"
         end,
       },
@@ -2792,7 +2792,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfOrc_ReplaceSpeed"] == "true"
         end,
       },
@@ -2813,7 +2813,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfOrc_ReplaceVision"] == "true"
         end,
       },
@@ -2834,7 +2834,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfOrc_ReplaceIntimidating"] == "true"
         end,
       },
@@ -2855,7 +2855,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfOrc_ReplaceOrcBlood"] == "true"
         end,
       },
@@ -2876,7 +2876,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfOrc_ReplaceOrcFerocity"] == "true"
         end,
       },
@@ -2897,7 +2897,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfOrc_ReplaceWeaponFamiliarity"] == "true"
         end,
       },
@@ -2918,7 +2918,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["HalfOrc_ReplaceLanguages"] == "true"
         end,
       },
@@ -2939,7 +2939,7 @@ ModifyAbility({
         "Halfling ~ Ability Scores",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Halfling_ReplaceAbilityScores"] == 0)
         end,
       },
@@ -2957,7 +2957,7 @@ ModifyAbility({
         "Halfling ~ Size",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Halfling_ReplaceSize"] == 0)
         end,
       },
@@ -2975,7 +2975,7 @@ ModifyAbility({
         "Halfling ~ Speed",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Halfling_ReplaceSpeed"] == 0)
         end,
       },
@@ -2993,7 +2993,7 @@ ModifyAbility({
         "Halfling ~ Fearless",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Halfling_ReplaceFearless"] == 0)
         end,
       },
@@ -3011,7 +3011,7 @@ ModifyAbility({
         "Halfling ~ Halfling Luck",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Halfling_ReplaceHalflingLuck"] == 0)
         end,
       },
@@ -3029,7 +3029,7 @@ ModifyAbility({
         "Halfling ~ Keen Senses",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Halfling_ReplaceKeenSenses"] == 0)
         end,
       },
@@ -3047,7 +3047,7 @@ ModifyAbility({
         "Halfling ~ Sure-Footed",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Halfling_ReplaceSureFooted"] == 0)
         end,
       },
@@ -3065,7 +3065,7 @@ ModifyAbility({
         "Halfling ~ Weapon Familiarity",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Halfling_ReplaceWeaponFamiliarity"] == 0)
         end,
       },
@@ -3083,7 +3083,7 @@ ModifyAbility({
         "Halfling ~ Languages",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Halfling_ReplaceLanguages"] == 0)
         end,
       },
@@ -3101,7 +3101,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalflingFearless") then return true end
@@ -3126,7 +3126,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalflingLuck") then return true end
@@ -3151,7 +3151,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalflingKeenSenses") then return true end
@@ -3176,7 +3176,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalflingSureFooted") then return true end
@@ -3201,7 +3201,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalflingWeaponFamiliarity") then return true end
@@ -3226,7 +3226,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HalflingRacialLanguage") then return true end
@@ -3251,7 +3251,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Halfling_ReplaceAbilityScores"] == "true"
         end,
       },
@@ -3272,7 +3272,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Halfling_ReplaceSize"] == "true"
         end,
       },
@@ -3293,7 +3293,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Halfling_ReplaceSpeed"] == "true"
         end,
       },
@@ -3314,7 +3314,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Halfling_ReplaceFearless"] == "true"
         end,
       },
@@ -3335,7 +3335,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Halfling_ReplaceHalflingLuck"] == "true"
         end,
       },
@@ -3356,7 +3356,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Halfling_ReplaceKeenSenses"] == "true"
         end,
       },
@@ -3377,7 +3377,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Halfling_ReplaceSureFooted"] == "true"
         end,
       },
@@ -3398,7 +3398,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Halfling_ReplaceWeaponFamiliarity"] == "true"
         end,
       },
@@ -3419,7 +3419,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Halfling_ReplaceLanguages"] == "true"
         end,
       },
@@ -3440,7 +3440,7 @@ ModifyAbility({
         "Human ~ Ability Scores",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Human_ReplaceAbilityScores"] == 0)
         end,
       },
@@ -3458,7 +3458,7 @@ ModifyAbility({
         "Human ~ Size",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Human_ReplaceSize"] == 0)
         end,
       },
@@ -3476,7 +3476,7 @@ ModifyAbility({
         "Human ~ Speed",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Human_ReplaceSpeed"] == 0)
         end,
       },
@@ -3494,7 +3494,7 @@ ModifyAbility({
         "Human ~ Bonus Feat",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Human_ReplaceBonusFeat"] == 0)
         end,
       },
@@ -3512,7 +3512,7 @@ ModifyAbility({
         "Human ~ Skilled",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Human_ReplaceSkilled"] == 0)
         end,
       },
@@ -3530,7 +3530,7 @@ ModifyAbility({
         "Human ~ Languages",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Human_ReplaceLanguages"] == 0)
         end,
       },
@@ -3548,7 +3548,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HumanBonusFeat") then return true end
@@ -3573,7 +3573,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HumanSkilled") then return true end
@@ -3598,7 +3598,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.IsAnyType("HumanRacialLanguage") then return true end
@@ -3623,7 +3623,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Human_ReplaceAbilityScores"] == "true"
         end,
       },
@@ -3644,7 +3644,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Human_ReplaceSize"] == "true"
         end,
       },
@@ -3665,7 +3665,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Human_ReplaceSpeed"] == "true"
         end,
       },
@@ -3686,7 +3686,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Human_ReplaceBonusFeat"] == "true"
         end,
       },
@@ -3707,7 +3707,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Human_ReplaceSkilled"] == "true"
         end,
       },
@@ -3728,7 +3728,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Human_ReplaceLanguages"] == "true"
         end,
       },
@@ -3893,7 +3893,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_Proficiencies"] == "True"
         end,
       },
@@ -3914,7 +3914,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_WeaponProficiencies"] == "True"
         end,
       },
@@ -3935,7 +3935,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_ArmorProficiencies"] == "True"
         end,
       },
@@ -3956,7 +3956,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_Rage"] == "True"
         end,
       },
@@ -3977,7 +3977,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_FastMovement"] == "True"
         end,
       },
@@ -3998,7 +3998,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_RagePowers"] == "True"
         end,
       },
@@ -4019,7 +4019,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_RagePower2"] == "True"
         end,
       },
@@ -4040,7 +4040,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_RagePower4"] == "True"
         end,
       },
@@ -4061,7 +4061,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_RagePower6"] == "True"
         end,
       },
@@ -4082,7 +4082,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_RagePower8"] == "True"
         end,
       },
@@ -4103,7 +4103,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_RagePower10"] == "True"
         end,
       },
@@ -4124,7 +4124,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_RagePower12"] == "True"
         end,
       },
@@ -4145,7 +4145,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_RagePower14"] == "True"
         end,
       },
@@ -4166,7 +4166,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_RagePower16"] == "True"
         end,
       },
@@ -4187,7 +4187,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_RagePower18"] == "True"
         end,
       },
@@ -4208,7 +4208,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_RagePower20"] == "True"
         end,
       },
@@ -4229,7 +4229,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_TrapSense"] == "True"
         end,
       },
@@ -4250,7 +4250,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_TrapSense1"] == "True"
         end,
       },
@@ -4271,7 +4271,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_TrapSense2"] == "True"
         end,
       },
@@ -4292,7 +4292,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_TrapSense3"] == "True"
         end,
       },
@@ -4313,7 +4313,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_TrapSense4"] == "True"
         end,
       },
@@ -4334,7 +4334,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_TrapSense5"] == "True"
         end,
       },
@@ -4355,7 +4355,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_TrapSense6"] == "True"
         end,
       },
@@ -4376,7 +4376,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_DamageReduction"] == "True"
         end,
       },
@@ -4397,7 +4397,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_DamageReduction1"] == "True"
         end,
       },
@@ -4418,7 +4418,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_DamageReduction2"] == "True"
         end,
       },
@@ -4439,7 +4439,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_DamageReduction3"] == "True"
         end,
       },
@@ -4460,7 +4460,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_DamageReduction4"] == "True"
         end,
       },
@@ -4481,7 +4481,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_DamageReduction5"] == "True"
         end,
       },
@@ -4502,7 +4502,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_GreaterRage"] == "True"
         end,
       },
@@ -4523,7 +4523,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_IndomitableWill"] == "True"
         end,
       },
@@ -4544,7 +4544,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_TirelessRage"] == "True"
         end,
       },
@@ -4565,7 +4565,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_MightyRage"] == "True"
         end,
       },
@@ -4586,7 +4586,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_UncannyDodge"] == "True"
         end,
       },
@@ -4607,7 +4607,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_ImprovedUncannyDodge"] == "TRUE"
         end,
       },
@@ -4628,7 +4628,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_ClassSkills"] == "True"
         end,
       },
@@ -4649,7 +4649,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_WeaponProficiencies"] == "True"
         end,
       },
@@ -4670,7 +4670,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Barbarian_CF_ArmorProficiencies"] == "True"
         end,
       },
@@ -4691,7 +4691,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianArmorProficiencies", "BarbarianWeaponProficiencies") then return true end
@@ -4716,7 +4716,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianRage") then return true end
@@ -4741,7 +4741,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianFastMovement") then return true end
@@ -4766,7 +4766,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianRagePowers") then return true end
@@ -4791,7 +4791,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianRagePower2") then return true end
@@ -4816,7 +4816,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianRagePower4") then return true end
@@ -4841,7 +4841,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianRagePower6") then return true end
@@ -4866,7 +4866,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianRagePower8") then return true end
@@ -4891,7 +4891,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianRagePower10") then return true end
@@ -4916,7 +4916,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianRagePower12") then return true end
@@ -4941,7 +4941,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianRagePower14") then return true end
@@ -4966,7 +4966,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianRagePower16") then return true end
@@ -4991,7 +4991,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianRagePower18") then return true end
@@ -5016,7 +5016,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianRagePower20") then return true end
@@ -5041,7 +5041,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianTrapSense") then return true end
@@ -5066,7 +5066,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianTrapSense1") then return true end
@@ -5091,7 +5091,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianTrapSense2") then return true end
@@ -5116,7 +5116,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianTrapSense3") then return true end
@@ -5141,7 +5141,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianTrapSense4") then return true end
@@ -5166,7 +5166,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianTrapSense5") then return true end
@@ -5191,7 +5191,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianTrapSense6") then return true end
@@ -5216,7 +5216,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianDamageReduction") then return true end
@@ -5241,7 +5241,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianDamageReduction1") then return true end
@@ -5266,7 +5266,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianDamageReduction2") then return true end
@@ -5291,7 +5291,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianDamageReduction3") then return true end
@@ -5316,7 +5316,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianDamageReduction4") then return true end
@@ -5341,7 +5341,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianDamageReduction5") then return true end
@@ -5366,7 +5366,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianGreaterRage") then return true end
@@ -5391,7 +5391,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianIndomitableWill") then return true end
@@ -5416,7 +5416,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianTirelessRage") then return true end
@@ -5441,7 +5441,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianMightyRage") then return true end
@@ -5466,7 +5466,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianUncannyDodge") then return true end
@@ -5491,7 +5491,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianImprovedUncannyDodge") then return true end
@@ -5516,7 +5516,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianClassSkills") then return true end
@@ -5538,7 +5538,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianWeaponProficiencies") then return true end
@@ -5560,7 +5560,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BarbarianArmorProficiencies") then return true end
@@ -5585,7 +5585,7 @@ ModifyAbility({
         "Weapon and Armor Proficiency ~ Bard",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Bard_CF_Proficiencies"] == 0)
         end,
       },
@@ -5604,7 +5604,7 @@ ModifyAbility({
         "Weapon Proficiencies ~ Bard",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardWeaponProficiencies") then return true end
@@ -5627,7 +5627,7 @@ ModifyAbility({
         "Shield Prof",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardArmorProficiencies") then return true end
@@ -5785,7 +5785,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_BardicKnowledge"] == "True"
         end,
       },
@@ -5806,7 +5806,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_CounterSong"] == "True"
         end,
       },
@@ -5827,7 +5827,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_BardicPerformance"] == "True"
         end,
       },
@@ -5848,7 +5848,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_ArmoredCasting"] == "True"
         end,
       },
@@ -5869,7 +5869,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_Cantrips"] == "True"
         end,
       },
@@ -5890,7 +5890,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_VersatilePerformance"] == "True"
         end,
       },
@@ -5911,7 +5911,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_WellVersed"] == "True"
         end,
       },
@@ -5932,7 +5932,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_LoreMaster"] == "True"
         end,
       },
@@ -5953,7 +5953,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_JackOfAllTrades"] == "True"
         end,
       },
@@ -5974,7 +5974,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_ClassSkills"] == "True"
         end,
       },
@@ -5995,7 +5995,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_Proficiencies"] == "True"
         end,
       },
@@ -6016,7 +6016,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_BardDistraction"] == "True"
         end,
       },
@@ -6037,7 +6037,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_Fascinate"] == "True"
         end,
       },
@@ -6058,7 +6058,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_InspireCourage"] == "True"
         end,
       },
@@ -6079,7 +6079,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_InspireCompetence"] == "True"
         end,
       },
@@ -6100,7 +6100,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_Suggestion"] == "True"
         end,
       },
@@ -6121,7 +6121,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_DirgeOfDoom"] == "True"
         end,
       },
@@ -6142,7 +6142,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_InspireGreatness"] == "True"
         end,
       },
@@ -6163,7 +6163,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_SoothingPerformance"] == "True"
         end,
       },
@@ -6184,7 +6184,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_FrighteningTune"] == "True"
         end,
       },
@@ -6205,7 +6205,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_InspireHeroics"] == "True"
         end,
       },
@@ -6226,7 +6226,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_MassSuggestion"] == "True"
         end,
       },
@@ -6247,7 +6247,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_DeadlyPerformance"] == "True"
         end,
       },
@@ -6268,7 +6268,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_InspireCourage1"] == "True"
         end,
       },
@@ -6289,7 +6289,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_InspireCourage2"] == "True"
         end,
       },
@@ -6310,7 +6310,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_InspireCourage3"] == "True"
         end,
       },
@@ -6331,7 +6331,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_InspireCourage4"] == "True"
         end,
       },
@@ -6352,7 +6352,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_InspireCompetence1"] == "True"
         end,
       },
@@ -6373,7 +6373,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_InspireCompetence2"] == "True"
         end,
       },
@@ -6394,7 +6394,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_InspireCompetence3"] == "True"
         end,
       },
@@ -6415,7 +6415,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_InspireCompetence4"] == "True"
         end,
       },
@@ -6436,7 +6436,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_InspireCompetence5"] == "True"
         end,
       },
@@ -6457,7 +6457,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Bard_CF_InspireCompetence6"] == "True"
         end,
       },
@@ -6478,7 +6478,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardBardicKnowledge") then return true end
@@ -6503,7 +6503,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardCounterSong") then return true end
@@ -6528,7 +6528,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardDistraction") then return true end
@@ -6553,7 +6553,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardBardicPerformance") then return true end
@@ -6578,7 +6578,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardArmoredCasting") then return true end
@@ -6603,7 +6603,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardCantrips") then return true end
@@ -6628,7 +6628,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardVersatilePerformance") then return true end
@@ -6653,7 +6653,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardWellVersed") then return true end
@@ -6678,7 +6678,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardLoreMaster") then return true end
@@ -6703,7 +6703,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardJackOfAllTrades") then return true end
@@ -6728,7 +6728,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardClassSkills") then return true end
@@ -6753,7 +6753,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("BardArmorProficiencies", "BardWeaponProficiencies") then return true end
@@ -6866,7 +6866,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_Proficiencies"] == "True"
         end,
       },
@@ -6887,7 +6887,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_ArmorProficiencies"] == "True"
         end,
       },
@@ -6908,7 +6908,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_WeaponProficiencies"] == "True"
         end,
       },
@@ -6929,7 +6929,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy"] == "True"
         end,
       },
@@ -6950,7 +6950,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_Orisons"] == "True"
         end,
       },
@@ -6971,7 +6971,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_SpontaneousCasting"] == "True"
         end,
       },
@@ -6992,7 +6992,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_Domains"] == "True"
         end,
       },
@@ -7013,7 +7013,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_ArmorProficiency"] == "True"
         end,
       },
@@ -7034,7 +7034,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_WeaponProficiency"] == "True"
         end,
       },
@@ -7055,7 +7055,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_ClassSkills"] == "True"
         end,
       },
@@ -7076,7 +7076,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_SkillRanks"] == "True"
         end,
       },
@@ -7097,7 +7097,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_Spellcasting"] == "True"
         end,
       },
@@ -7118,7 +7118,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy1"] == "True"
         end,
       },
@@ -7139,7 +7139,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy2"] == "True"
         end,
       },
@@ -7160,7 +7160,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy3"] == "True"
         end,
       },
@@ -7181,7 +7181,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy4"] == "True"
         end,
       },
@@ -7202,7 +7202,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy5"] == "True"
         end,
       },
@@ -7223,7 +7223,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy6"] == "True"
         end,
       },
@@ -7244,7 +7244,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy7"] == "True"
         end,
       },
@@ -7265,7 +7265,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy8"] == "True"
         end,
       },
@@ -7286,7 +7286,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy9"] == "True"
         end,
       },
@@ -7307,7 +7307,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Cleric_CF_ChannelEnergy10"] == "True"
         end,
       },
@@ -7328,7 +7328,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("ClericChannelEnergy") then return true end
@@ -7353,7 +7353,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("ClericOrisons") then return true end
@@ -7378,7 +7378,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("ClericSpontaneousCasting") then return true end
@@ -7403,14 +7403,14 @@ ModifyAbility({
         "Weapon and Armor Proficiency ~ Druid",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidArmorProficiencies") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidWeaponProficiencies") then return true end
@@ -7435,14 +7435,14 @@ ModifyAbility({
         "ArmorProfMedium",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidArmorProficiencies") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CF_ArmorProficiencies"] == 0)
         end,
       },
@@ -7460,14 +7460,14 @@ ModifyAbility({
         "Weapon Proficiencies ~ Druid",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidWeaponProficiencies") then return true end
             return false
           end))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Druid_CF_WeaponProficiencies"] == 0)
         end,
       },
@@ -7605,7 +7605,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_ArmorProficiencies"] == "True"
         end,
       },
@@ -7626,7 +7626,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WeaponProficiencies"] == "True"
         end,
       },
@@ -7647,7 +7647,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_SpontaneousCasting"] == "True"
         end,
       },
@@ -7668,7 +7668,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_NatureSense"] == "True"
         end,
       },
@@ -7689,7 +7689,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WildEmpathy"] == "True"
         end,
       },
@@ -7710,7 +7710,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WoodlandStride"] == "True"
         end,
       },
@@ -7731,7 +7731,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_TracklessStep"] == "True"
         end,
       },
@@ -7752,7 +7752,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WildShape"] == "True"
         end,
       },
@@ -7773,7 +7773,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_ResistNaturesLure"] == "True"
         end,
       },
@@ -7794,7 +7794,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_VenomImmunity"] == "True"
         end,
       },
@@ -7815,7 +7815,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_AThousandFaces"] == "True"
         end,
       },
@@ -7836,7 +7836,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_TimelessBody"] == "True"
         end,
       },
@@ -7857,7 +7857,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_NatureBond"] == "True"
         end,
       },
@@ -7878,7 +7878,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_ClassSkills"] == "True"
         end,
       },
@@ -7899,7 +7899,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WildShapeUses4"] == "True"
         end,
       },
@@ -7920,7 +7920,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WildShapeUses8"] == "True"
         end,
       },
@@ -7941,7 +7941,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WildShapeUses10"] == "True"
         end,
       },
@@ -7962,7 +7962,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WildShapeUses12"] == "True"
         end,
       },
@@ -7983,7 +7983,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WildShapeUses14"] == "True"
         end,
       },
@@ -8004,7 +8004,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WildShapeUses16"] == "True"
         end,
       },
@@ -8025,7 +8025,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WildShapeUses18"] == "True"
         end,
       },
@@ -8046,7 +8046,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WildShapeUses20"] == "True"
         end,
       },
@@ -8067,7 +8067,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WildShapeOptions4"] == "True"
         end,
       },
@@ -8088,7 +8088,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WildShapeOptions6"] == "True"
         end,
       },
@@ -8109,7 +8109,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WildShapeOptions8"] == "True"
         end,
       },
@@ -8130,7 +8130,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WildShapeOptions10"] == "True"
         end,
       },
@@ -8151,7 +8151,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_WildShapeOptions12"] == "True"
         end,
       },
@@ -8172,7 +8172,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_DruidDomain"] == "True"
         end,
       },
@@ -8193,7 +8193,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_AnimalCompanion"] == "True"
         end,
       },
@@ -8214,7 +8214,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidSpontaneousCasting") then return true end
@@ -8239,7 +8239,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidNatureSense") then return true end
@@ -8264,7 +8264,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidWildEmpathy") then return true end
@@ -8289,7 +8289,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidWoodlandStride") then return true end
@@ -8314,7 +8314,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidTracklessStep") then return true end
@@ -8339,7 +8339,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidWildShape") then return true end
@@ -8364,7 +8364,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidResistNaturesLure") then return true end
@@ -8389,7 +8389,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidVenomImmunity") then return true end
@@ -8414,7 +8414,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidAThousandFaces") then return true end
@@ -8439,7 +8439,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidTimelessBody") then return true end
@@ -8464,7 +8464,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Druid_CF_ClassSkills"] == "True"
         end,
       },
@@ -8485,7 +8485,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidWildShape6") then return true end
@@ -8510,7 +8510,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("DruidWildShape8") then return true end
@@ -8664,7 +8664,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_TowerShieldProficiency"] == "true"
         end,
       },
@@ -8682,7 +8682,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_ArmorProficiencies"] == "true"
         end,
       },
@@ -8700,7 +8700,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_Proficiencies"] == "true"
         end,
       },
@@ -8718,7 +8718,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_LightArmorProficiency"] == "true"
         end,
       },
@@ -8736,7 +8736,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_MediumArmorProficiency"] == "true"
         end,
       },
@@ -8754,7 +8754,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_HeavyArmorProficiency"] == "true"
         end,
       },
@@ -8772,7 +8772,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_ShieldProficiency"] == "true"
         end,
       },
@@ -8793,7 +8793,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_ClassSkills"] == "True"
         end,
       },
@@ -8814,7 +8814,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_BonusFeats"] == "True"
         end,
       },
@@ -8835,7 +8835,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_Bravery"] == "True"
         end,
       },
@@ -8856,7 +8856,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_ArmorTraining"] == "True"
         end,
       },
@@ -8877,7 +8877,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_WeaponTraining"] == "True"
         end,
       },
@@ -8898,7 +8898,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_WeaponTraining1"] == "True"
         end,
       },
@@ -8919,7 +8919,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_WeaponTraining2"] == "True"
         end,
       },
@@ -8940,7 +8940,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_WeaponTraining3"] == "True"
         end,
       },
@@ -8961,7 +8961,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_WeaponTraining4"] == "True"
         end,
       },
@@ -8982,7 +8982,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_ArmorMastery"] == "True"
         end,
       },
@@ -9003,7 +9003,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_WeaponMastery"] == "True"
         end,
       },
@@ -9024,7 +9024,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_ArmorTraining1"] == "True"
         end,
       },
@@ -9045,7 +9045,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_ArmorTraining2"] == "True"
         end,
       },
@@ -9066,7 +9066,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_ArmorTraining3"] == "True"
         end,
       },
@@ -9087,7 +9087,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_ArmorTraining4"] == "True"
         end,
       },
@@ -9108,7 +9108,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_BonusFeat1"] == "True"
         end,
       },
@@ -9129,7 +9129,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_BonusFeat2"] == "True"
         end,
       },
@@ -9150,7 +9150,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_BonusFeat4"] == "True"
         end,
       },
@@ -9171,7 +9171,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_BonusFeat6"] == "True"
         end,
       },
@@ -9192,7 +9192,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_BonusFeat8"] == "True"
         end,
       },
@@ -9213,7 +9213,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_BonusFeat10"] == "True"
         end,
       },
@@ -9234,7 +9234,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_BonusFeat12"] == "True"
         end,
       },
@@ -9255,7 +9255,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_BonusFeat14"] == "True"
         end,
       },
@@ -9276,7 +9276,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_BonusFeat16"] == "True"
         end,
       },
@@ -9297,7 +9297,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_BonusFeat18"] == "True"
         end,
       },
@@ -9318,7 +9318,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Fighter_CF_BonusFeat20"] == "True"
         end,
       },
@@ -9339,7 +9339,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterBonusFeats") then return true end
@@ -9364,7 +9364,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterBravery") then return true end
@@ -9389,7 +9389,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterArmorTraining_ALL") then return true end
@@ -9414,7 +9414,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterWeaponTraining_ALL") then return true end
@@ -9439,7 +9439,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterArmorMastery") then return true end
@@ -9464,7 +9464,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterWeaponMastery") then return true end
@@ -9489,7 +9489,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterArmorTraining1") then return true end
@@ -9514,7 +9514,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterArmorTraining2") then return true end
@@ -9539,7 +9539,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterArmorTraining3") then return true end
@@ -9564,7 +9564,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterArmorTraining4") then return true end
@@ -9589,7 +9589,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterBonusFeat1") then return true end
@@ -9614,7 +9614,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterBonusFeat2") then return true end
@@ -9639,7 +9639,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterBonusFeat4") then return true end
@@ -9664,7 +9664,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterBonusFeat6") then return true end
@@ -9689,7 +9689,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterBonusFeat8") then return true end
@@ -9714,7 +9714,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterBonusFeat10") then return true end
@@ -9739,7 +9739,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterBonusFeat12") then return true end
@@ -9764,7 +9764,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterBonusFeat14") then return true end
@@ -9789,7 +9789,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterBonusFeat16") then return true end
@@ -9814,7 +9814,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterBonusFeat18") then return true end
@@ -9839,7 +9839,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("FighterBonusFeat20") then return true end
@@ -10044,7 +10044,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_KiPoolAbilities1"] == "True"
         end,
       },
@@ -10065,7 +10065,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_KiPoolAbilities7"] == "True"
         end,
       },
@@ -10086,7 +10086,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_KiPoolAbilities10"] == "True"
         end,
       },
@@ -10107,7 +10107,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_KiPoolAbilities16"] == "True"
         end,
       },
@@ -10128,7 +10128,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_SlowFall10"] == "True"
         end,
       },
@@ -10149,7 +10149,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_SlowFall20"] == "True"
         end,
       },
@@ -10170,7 +10170,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_SlowFall30"] == "True"
         end,
       },
@@ -10191,7 +10191,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_SlowFall40"] == "True"
         end,
       },
@@ -10212,7 +10212,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_SlowFall50"] == "True"
         end,
       },
@@ -10233,7 +10233,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_SlowFall60"] == "True"
         end,
       },
@@ -10254,7 +10254,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_SlowFall70"] == "True"
         end,
       },
@@ -10275,7 +10275,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_SlowFall80"] == "True"
         end,
       },
@@ -10296,7 +10296,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_SlowFall90"] == "True"
         end,
       },
@@ -10317,7 +10317,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_WeaponProficiencies"] == "True"
         end,
       },
@@ -10338,7 +10338,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_BonusFeat18"] == "True"
         end,
       },
@@ -10359,7 +10359,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_BonusFeat10"] == "True"
         end,
       },
@@ -10380,7 +10380,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_BonusFeat6"] == "True"
         end,
       },
@@ -10401,7 +10401,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_BonusFeat2"] == "True"
         end,
       },
@@ -10422,7 +10422,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_BonusFeat1"] == "True"
         end,
       },
@@ -10443,7 +10443,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_Alignment"] == "True"
         end,
       },
@@ -10468,7 +10468,7 @@ ModifyAbility({
         "Weapon and Armor Proficiency ~ Monk",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_Proficiencies"] == 0)
         end,
       },
@@ -10486,7 +10486,7 @@ ModifyAbility({
         "Weapon Proficiencies ~ Monk",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Monk_CF_Proficiencies"] == 0)
         end,
       },
@@ -10504,7 +10504,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_UnarmedStrike"] == "True"
         end,
       },
@@ -10525,7 +10525,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_FlurryOfBlows"] == "True"
         end,
       },
@@ -10546,7 +10546,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_BonusFeats"] == "True"
         end,
       },
@@ -10567,7 +10567,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_ACBonus"] == "True"
         end,
       },
@@ -10588,7 +10588,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_StunningFist"] == "True"
         end,
       },
@@ -10609,7 +10609,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_Evasion"] == "True"
         end,
       },
@@ -10630,7 +10630,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_FastMovement"] == "True"
         end,
       },
@@ -10651,7 +10651,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_ManeuverTraining"] == "True"
         end,
       },
@@ -10672,7 +10672,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_StillMind"] == "True"
         end,
       },
@@ -10693,7 +10693,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_KiPool"] == "True"
         end,
       },
@@ -10714,7 +10714,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_SlowFall"] == "True"
         end,
       },
@@ -10735,7 +10735,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_HighJump"] == "True"
         end,
       },
@@ -10756,7 +10756,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_PurityOfBody"] == "True"
         end,
       },
@@ -10777,7 +10777,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_WholenessOfBody"] == "True"
         end,
       },
@@ -10798,7 +10798,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_ImprovedEvasion"] == "True"
         end,
       },
@@ -10819,7 +10819,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_DiamondBody"] == "True"
         end,
       },
@@ -10840,7 +10840,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_AbundantStep"] == "True"
         end,
       },
@@ -10861,7 +10861,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_DiamondSoul"] == "True"
         end,
       },
@@ -10882,7 +10882,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_QuiveringPalm"] == "True"
         end,
       },
@@ -10903,7 +10903,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_TongueOfTheSunAndMoon"] == "True"
         end,
       },
@@ -10924,7 +10924,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_TimelessBody"] == "True"
         end,
       },
@@ -10945,7 +10945,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_EmptyBody"] == "True"
         end,
       },
@@ -10966,7 +10966,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_PerfectSelf"] == "True"
         end,
       },
@@ -10987,7 +10987,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_ClassSkills"] == "True"
         end,
       },
@@ -11008,7 +11008,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Monk_CF_Proficiencies"] == "True"
         end,
       },
@@ -11029,7 +11029,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkFlurryOfBlows") then return true end
@@ -11054,7 +11054,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkBonusFeats") then return true end
@@ -11079,7 +11079,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkACBonus") then return true end
@@ -11104,7 +11104,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkStunningFist") then return true end
@@ -11129,7 +11129,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkEvasion") then return true end
@@ -11154,7 +11154,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkFastMovement") then return true end
@@ -11179,7 +11179,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkManeuverTraining") then return true end
@@ -11204,7 +11204,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkStillMind") then return true end
@@ -11229,7 +11229,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkKiPool") then return true end
@@ -11254,7 +11254,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkSlowFall") then return true end
@@ -11279,7 +11279,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkHighJump") then return true end
@@ -11304,7 +11304,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkPurityOfBody") then return true end
@@ -11329,7 +11329,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkWholenessOfBody") then return true end
@@ -11354,7 +11354,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkImprovedEvasion") then return true end
@@ -11379,7 +11379,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkDiamondBody") then return true end
@@ -11404,7 +11404,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkAbundantStep") then return true end
@@ -11429,7 +11429,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkDiamondSoul") then return true end
@@ -11454,7 +11454,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkQuiveringPalm") then return true end
@@ -11479,7 +11479,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkTongueOfTheSunAndMoon") then return true end
@@ -11504,7 +11504,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkTimelessBody") then return true end
@@ -11529,7 +11529,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkEmptyBody") then return true end
@@ -11554,7 +11554,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkPerfectSelf") then return true end
@@ -11579,7 +11579,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkClassSkills") then return true end
@@ -11604,7 +11604,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("MonkWeaponProficiencies") then return true end
@@ -11809,7 +11809,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_ClassSkills"] == "True"
         end,
       },
@@ -11830,7 +11830,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_WeaponProficiencies"] == "True"
         end,
       },
@@ -11851,7 +11851,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_WeaponProficiencies"] >= 1)
         end,
       },
@@ -11873,7 +11873,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_WeaponProficiencySimple"] == "True"
         end,
       },
@@ -11894,7 +11894,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_WeaponProficiencyMartial"] == "True"
         end,
       },
@@ -11915,7 +11915,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_ArmorProficiencies"] == "True"
         end,
       },
@@ -11936,7 +11936,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Paladin_CF_ArmorProficiencies"] >= 1)
         end,
       },
@@ -11959,7 +11959,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_ArmorProficiencyHeavy"] == "True"
         end,
       },
@@ -11980,7 +11980,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_ArmorProficiencyMedium"] == "True"
         end,
       },
@@ -12001,7 +12001,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_ArmorProficiencyLight"] == "True"
         end,
       },
@@ -12022,7 +12022,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_ShieldProficiency"] == "True"
         end,
       },
@@ -12043,7 +12043,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_AuraOfGood"] == "True"
         end,
       },
@@ -12064,7 +12064,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_DetectEvil"] == "True"
         end,
       },
@@ -12085,7 +12085,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_SmiteEvil"] == "True"
         end,
       },
@@ -12106,7 +12106,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_DivineGrace"] == "True"
         end,
       },
@@ -12127,7 +12127,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_LayOnHands"] == "True"
         end,
       },
@@ -12148,7 +12148,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_AuraOfCourage"] == "True"
         end,
       },
@@ -12169,7 +12169,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_DivineHealth"] == "True"
         end,
       },
@@ -12190,7 +12190,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_Mercy"] == "True"
         end,
       },
@@ -12211,7 +12211,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_Mercy3"] == "True"
         end,
       },
@@ -12232,7 +12232,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_Mercy6"] == "True"
         end,
       },
@@ -12253,7 +12253,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_Mercy9"] == "True"
         end,
       },
@@ -12274,7 +12274,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_Mercy12"] == "True"
         end,
       },
@@ -12295,7 +12295,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_Mercy15"] == "True"
         end,
       },
@@ -12316,7 +12316,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_Mercy18"] == "True"
         end,
       },
@@ -12337,7 +12337,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_ChannelPositiveEnergy"] == "True"
         end,
       },
@@ -12358,7 +12358,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_Spells"] == "True"
         end,
       },
@@ -12379,7 +12379,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_DivineBond"] == "True"
         end,
       },
@@ -12400,7 +12400,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_BondedMount"] == "True"
         end,
       },
@@ -12421,7 +12421,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_BondedWeapon"] == "True"
         end,
       },
@@ -12442,7 +12442,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_AuraOfResolve"] == "True"
         end,
       },
@@ -12463,7 +12463,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_AuraOfJustice"] == "True"
         end,
       },
@@ -12484,7 +12484,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_AuraOfFaith"] == "True"
         end,
       },
@@ -12505,7 +12505,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_AuraOfRighteousness"] == "True"
         end,
       },
@@ -12526,7 +12526,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_HolyChampion"] == "True"
         end,
       },
@@ -12547,7 +12547,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Paladin_CF_CodeOfConduct"] == "True"
         end,
       },
@@ -12568,7 +12568,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinAuraOfGood") then return true end
@@ -12593,7 +12593,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinDetectEvil") then return true end
@@ -12618,7 +12618,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinSmiteEvil") then return true end
@@ -12643,7 +12643,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinDivineGrace") then return true end
@@ -12668,7 +12668,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinLayOnHands") then return true end
@@ -12693,7 +12693,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinAuraOfCourage") then return true end
@@ -12718,7 +12718,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinDivineHealth") then return true end
@@ -12743,7 +12743,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinMercy") then return true end
@@ -12768,7 +12768,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinChannelPositiveEnergy") then return true end
@@ -12793,7 +12793,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinDivineBond") then return true end
@@ -12818,7 +12818,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinAuraOfResolve") then return true end
@@ -12843,7 +12843,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinAuraOfJustice") then return true end
@@ -12868,7 +12868,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinAuraOfFaith") then return true end
@@ -12893,7 +12893,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinAuraOfRighteousness") then return true end
@@ -12918,7 +12918,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("PaladinHolyChampion") then return true end
@@ -12943,7 +12943,7 @@ ModifyAbility({
         "Weapon and Armor Proficiency ~ Ranger",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_Proficiencies"] == 0)
         end,
       },
@@ -12962,7 +12962,7 @@ ModifyAbility({
         "Weapon Prof ~ Simple",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_WeaponProficiencies"] == 0)
         end,
       },
@@ -12980,7 +12980,7 @@ ModifyAbility({
         "Armor Prof ~ Light",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_LightArmorProficiency"] == 0)
         end,
       },
@@ -12998,7 +12998,7 @@ ModifyAbility({
         "Armor Prof ~ Medium",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_MediumArmorProficiency"] == 0)
         end,
       },
@@ -13016,7 +13016,7 @@ ModifyAbility({
         "Shield Prof",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Ranger_CF_ShieldProficiency"] == 0)
         end,
       },
@@ -13170,7 +13170,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_Proficiencies"] == "True"
         end,
       },
@@ -13191,7 +13191,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_WeaponProficiencies"] == "True"
         end,
       },
@@ -13212,7 +13212,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_LightArmorProficiency"] == "True"
         end,
       },
@@ -13233,7 +13233,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_MediumArmorProficiency"] == "True"
         end,
       },
@@ -13254,7 +13254,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_ShieldProficiency"] == "True"
         end,
       },
@@ -13275,7 +13275,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_ClassSkills"] == "True"
         end,
       },
@@ -13296,7 +13296,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_ImprovedEvasion"] == "True"
         end,
       },
@@ -13317,7 +13317,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_ImprovedQuarry"] == "True"
         end,
       },
@@ -13338,7 +13338,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_CombatStyleFeat2"] == "True"
         end,
       },
@@ -13359,7 +13359,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_CombatStyleFeat6"] == "True"
         end,
       },
@@ -13380,7 +13380,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_CombatStyleFeat10"] == "True"
         end,
       },
@@ -13401,7 +13401,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_CombatStyleFeat14"] == "True"
         end,
       },
@@ -13422,7 +13422,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_CombatStyleFeat18"] == "True"
         end,
       },
@@ -13443,7 +13443,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_FavoredEnemy1"] == "True"
         end,
       },
@@ -13464,7 +13464,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_FavoredEnemy2"] == "True"
         end,
       },
@@ -13485,7 +13485,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_FavoredEnemy3"] == "True"
         end,
       },
@@ -13506,7 +13506,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_FavoredEnemy4"] == "True"
         end,
       },
@@ -13527,7 +13527,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_AnimalCompanion"] == "True"
         end,
       },
@@ -13548,7 +13548,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_HuntersBond"] == "True"
         end,
       },
@@ -13569,7 +13569,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_FavoredEnemy"] == "True"
         end,
       },
@@ -13590,7 +13590,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_FavoredTerrain"] == "True"
         end,
       },
@@ -13611,7 +13611,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_Track"] == "True"
         end,
       },
@@ -13632,7 +13632,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_WildEmpathy"] == "True"
         end,
       },
@@ -13653,7 +13653,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_CombatStyleFeat"] == "True"
         end,
       },
@@ -13674,7 +13674,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_WoodlandStride"] == "True"
         end,
       },
@@ -13695,7 +13695,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_SwiftTracker"] == "True"
         end,
       },
@@ -13716,7 +13716,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_Evasion"] == "True"
         end,
       },
@@ -13737,7 +13737,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_Quarry"] == "True"
         end,
       },
@@ -13758,7 +13758,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_Camouflage"] == "True"
         end,
       },
@@ -13779,7 +13779,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_Evasion"] == "True"
         end,
       },
@@ -13800,7 +13800,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_HideInPlainSight"] == "True"
         end,
       },
@@ -13821,7 +13821,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_Quarry"] == "True"
         end,
       },
@@ -13842,7 +13842,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_MasterHunter"] == "True"
         end,
       },
@@ -13863,7 +13863,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Ranger_CF_Endurance"] == "True"
         end,
       },
@@ -13884,7 +13884,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerHuntersBond") then return true end
@@ -13909,7 +13909,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerFavoredEnemy") then return true end
@@ -13934,7 +13934,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerFavoredTerrain") then return true end
@@ -13959,7 +13959,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerTrack") then return true end
@@ -13984,7 +13984,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerWildEmpathy") then return true end
@@ -14009,7 +14009,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerCombatStyle") then return true end
@@ -14034,7 +14034,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerWoodlandStride") then return true end
@@ -14059,7 +14059,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerSwiftTracker") then return true end
@@ -14084,7 +14084,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerEvasion") then return true end
@@ -14109,7 +14109,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerQuarry") then return true end
@@ -14134,7 +14134,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerCamoflage", "RangerCamouflage") then return true end
@@ -14159,7 +14159,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerEvasion") then return true end
@@ -14184,7 +14184,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerHideInPlainSight") then return true end
@@ -14209,7 +14209,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerQuarry") then return true end
@@ -14234,7 +14234,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerMasterHunter") then return true end
@@ -14259,7 +14259,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerEndurance") then return true end
@@ -14284,7 +14284,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerCombatStyleFeat2") then return true end
@@ -14309,7 +14309,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerCombatStyleFeat6") then return true end
@@ -14334,7 +14334,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerCombatStyleFeat10") then return true end
@@ -14359,7 +14359,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerCombatStyleFeat14") then return true end
@@ -14384,7 +14384,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerCombatStyleFeat18") then return true end
@@ -14409,7 +14409,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerFavoredEnemy1") then return true end
@@ -14434,7 +14434,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerFavoredEnemy2") then return true end
@@ -14459,7 +14459,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerFavoredEnemy3") then return true end
@@ -14484,7 +14484,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RangerFavoredEnemy4") then return true end
@@ -14661,7 +14661,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_TrapSense1"] == "True"
         end,
       },
@@ -14682,7 +14682,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_TrapSense2"] == "True"
         end,
       },
@@ -14703,7 +14703,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_TrapSense3"] == "True"
         end,
       },
@@ -14724,7 +14724,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_TrapSense4"] == "True"
         end,
       },
@@ -14745,7 +14745,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_TrapSense5"] == "True"
         end,
       },
@@ -14766,7 +14766,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_TrapSense6"] == "True"
         end,
       },
@@ -14787,7 +14787,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_AdvancedTalents"] == "True"
         end,
       },
@@ -14808,7 +14808,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_RogueTalent2"] == "True"
         end,
       },
@@ -14829,7 +14829,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_RogueTalent4"] == "True"
         end,
       },
@@ -14850,7 +14850,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_RogueTalent6"] == "True"
         end,
       },
@@ -14871,7 +14871,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_RogueTalent8"] == "True"
         end,
       },
@@ -14892,7 +14892,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_RogueTalent10"] == "True"
         end,
       },
@@ -14913,7 +14913,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_RogueTalent12"] == "True"
         end,
       },
@@ -14934,7 +14934,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_RogueTalent14"] == "True"
         end,
       },
@@ -14955,7 +14955,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_RogueTalent16"] == "True"
         end,
       },
@@ -14976,7 +14976,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_RogueTalent18"] == "True"
         end,
       },
@@ -14997,7 +14997,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_RogueTalent20"] == "True"
         end,
       },
@@ -15018,7 +15018,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_SneakAttack1"] == "True"
         end,
       },
@@ -15039,7 +15039,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_SneakAttack3"] == "True"
         end,
       },
@@ -15060,7 +15060,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_SneakAttack5"] == "True"
         end,
       },
@@ -15081,7 +15081,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_SneakAttack7"] == "True"
         end,
       },
@@ -15102,7 +15102,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_SneakAttack9"] == "True"
         end,
       },
@@ -15123,7 +15123,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_SneakAttack11"] == "True"
         end,
       },
@@ -15144,7 +15144,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_SneakAttack13"] == "True"
         end,
       },
@@ -15165,7 +15165,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_SneakAttack15"] == "True"
         end,
       },
@@ -15186,7 +15186,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_SneakAttack17"] == "True"
         end,
       },
@@ -15207,7 +15207,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_SneakAttack19"] == "True"
         end,
       },
@@ -15228,7 +15228,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_UncannyDodge"] == "True"
         end,
       },
@@ -15249,7 +15249,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_ImprovedUncannyDodge"] == "True"
         end,
       },
@@ -15270,7 +15270,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_SneakAttack"] == "True"
         end,
       },
@@ -15291,7 +15291,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_Trapfinding"] == "True"
         end,
       },
@@ -15312,7 +15312,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_Evasion"] == "True"
         end,
       },
@@ -15333,7 +15333,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_RogueTalents"] == "True"
         end,
       },
@@ -15354,7 +15354,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_TrapSense"] == "True"
         end,
       },
@@ -15375,7 +15375,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_MasterStrike"] == "True"
         end,
       },
@@ -15396,7 +15396,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_ClassSkills"] == "True"
         end,
       },
@@ -15417,7 +15417,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_WeaponProficiencies"] == "True"
         end,
       },
@@ -15438,7 +15438,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Rogue_CF_ArmorProficiencies"] == "True"
         end,
       },
@@ -15459,7 +15459,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueUncannyDodge") then return true end
@@ -15484,7 +15484,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueImprovedUncannyDodge") then return true end
@@ -15509,7 +15509,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueSneakAttack") then return true end
@@ -15534,7 +15534,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueTrapfinding") then return true end
@@ -15559,7 +15559,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueEvasion") then return true end
@@ -15584,7 +15584,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueTalents") then return true end
@@ -15609,7 +15609,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueTrapSense") then return true end
@@ -15634,7 +15634,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueMasterStrike") then return true end
@@ -15659,7 +15659,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueTalent2") then return true end
@@ -15684,7 +15684,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueTalent4") then return true end
@@ -15709,7 +15709,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueTalent6") then return true end
@@ -15734,7 +15734,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueTalent8") then return true end
@@ -15759,7 +15759,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueTalent10") then return true end
@@ -15784,7 +15784,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueTalent12") then return true end
@@ -15809,7 +15809,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueTalent14") then return true end
@@ -15834,7 +15834,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueTalent16") then return true end
@@ -15859,7 +15859,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueTalent18") then return true end
@@ -15884,7 +15884,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("RogueTalent20") then return true end
@@ -16009,7 +16009,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_ClassSkills"] == "True"
         end,
       },
@@ -16030,7 +16030,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineArcana"] == "True"
         end,
       },
@@ -16051,7 +16051,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlinePowers"] == "True"
         end,
       },
@@ -16072,7 +16072,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlinePower1"] == "True"
         end,
       },
@@ -16093,7 +16093,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlinePower3"] == "True"
         end,
       },
@@ -16114,7 +16114,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlinePower9"] == "True"
         end,
       },
@@ -16135,7 +16135,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlinePower15"] == "True"
         end,
       },
@@ -16156,7 +16156,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlinePower20"] == "True"
         end,
       },
@@ -16177,7 +16177,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineFeats"] == "True"
         end,
       },
@@ -16198,7 +16198,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_WeaponProficiencies"] == "True"
         end,
       },
@@ -16219,7 +16219,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_EschewMaterials"] == "True"
         end,
       },
@@ -16240,7 +16240,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpells"] == "True"
         end,
       },
@@ -16261,7 +16261,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell1"] == "True"
         end,
       },
@@ -16282,7 +16282,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell2"] == "True"
         end,
       },
@@ -16303,7 +16303,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell3"] == "True"
         end,
       },
@@ -16324,7 +16324,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell4"] == "True"
         end,
       },
@@ -16345,7 +16345,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell5"] == "True"
         end,
       },
@@ -16366,7 +16366,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell6"] == "True"
         end,
       },
@@ -16387,7 +16387,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell7"] == "True"
         end,
       },
@@ -16408,7 +16408,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell8"] == "True"
         end,
       },
@@ -16429,7 +16429,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineSpell9"] == "True"
         end,
       },
@@ -16450,7 +16450,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_Bloodline"] == "True"
         end,
       },
@@ -16471,7 +16471,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_BloodlineClassSkill"] == "True"
         end,
       },
@@ -16492,7 +16492,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_Spells"] == "True"
         end,
       },
@@ -16513,7 +16513,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Sorcerer_CF_Cantrips"] == "True"
         end,
       },
@@ -16534,7 +16534,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("SorcererWeaponProficiencies") then return true end
@@ -16559,7 +16559,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("SorcererEschewMaterials") then return true end
@@ -16648,7 +16648,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_ClassSkills"] == "True"
         end,
       },
@@ -16669,7 +16669,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_ArcaneSchool"] == "True"
         end,
       },
@@ -16690,7 +16690,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_WeaponProficiencies"] == "True"
         end,
       },
@@ -16711,7 +16711,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_Spells"] == "True"
         end,
       },
@@ -16732,7 +16732,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_BonusLanguages"] == "True"
         end,
       },
@@ -16753,7 +16753,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_ScribeScroll"] == "True"
         end,
       },
@@ -16774,7 +16774,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_ArcaneBond"] == "True"
         end,
       },
@@ -16795,7 +16795,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_Cantrips"] == "True"
         end,
       },
@@ -16816,7 +16816,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_BonusFeats"] == "True"
         end,
       },
@@ -16837,7 +16837,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_SpellBook"] == "True"
         end,
       },
@@ -16858,7 +16858,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_Familiar"] == "True"
         end,
       },
@@ -16879,7 +16879,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_BondedObject"] == "True"
         end,
       },
@@ -16900,7 +16900,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_BonusFeat5"] == "True"
         end,
       },
@@ -16921,7 +16921,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_BonusFeat10"] == "True"
         end,
       },
@@ -16942,7 +16942,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_BonusFeat15"] == "True"
         end,
       },
@@ -16963,7 +16963,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_BonusFeat20"] == "True"
         end,
       },
@@ -16984,7 +16984,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("WizardArcaneSchool") then return true end
@@ -17009,7 +17009,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("WizardWeaponProficiencies") then return true end
@@ -17034,7 +17034,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("WizardScribeScroll") then return true end
@@ -17059,7 +17059,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("WizardArcaneBond") then return true end
@@ -17084,7 +17084,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("WizardCantrips") then return true end
@@ -17109,7 +17109,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("WizardBonusFeats") then return true end
@@ -17134,7 +17134,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("WizardSpellBook") then return true end
@@ -17159,7 +17159,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("WizardBonusFeat5") then return true end
@@ -17184,7 +17184,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("WizardBonusFeat10") then return true end
@@ -17209,7 +17209,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("WizardBonusFeat15") then return true end
@@ -17234,7 +17234,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("WizardBonusFeat20") then return true end
@@ -17259,7 +17259,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_AbjurationOppositionSchool"] == "True"
         end,
       },
@@ -17280,7 +17280,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_ConjurationOppositionSchool"] == "True"
         end,
       },
@@ -17301,7 +17301,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_DivinationOppositionSchool"] == "True"
         end,
       },
@@ -17322,7 +17322,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_EnchantmentOppositionSchool"] == "True"
         end,
       },
@@ -17343,7 +17343,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_EvocationOppositionSchool"] == "True"
         end,
       },
@@ -17364,7 +17364,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_IllusionOppositionSchool"] == "True"
         end,
       },
@@ -17385,7 +17385,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_NecromancyOppositionSchool"] == "True"
         end,
       },
@@ -17406,7 +17406,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_TransmutationOppositionSchool"] == "True"
         end,
       },
@@ -17427,7 +17427,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_SchoolPower1"] == "True"
         end,
       },
@@ -17448,7 +17448,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_SchoolPower8"] == "True"
         end,
       },
@@ -17469,7 +17469,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_AcidDart"] == "True"
         end,
       },
@@ -17490,7 +17490,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_AuraOfDespair"] == "True"
         end,
       },
@@ -17511,7 +17511,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_BlindingRay"] == "True"
         end,
       },
@@ -17532,7 +17532,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_ChangeShape"] == "True"
         end,
       },
@@ -17553,7 +17553,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_DazingTouch"] == "True"
         end,
       },
@@ -17574,7 +17574,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_DimensionalSteps"] == "True"
         end,
       },
@@ -17595,7 +17595,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_DivinersFortune"] == "True"
         end,
       },
@@ -17616,7 +17616,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_ElementalWall"] == "True"
         end,
       },
@@ -17637,7 +17637,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_EnchantingSmile"] == "True"
         end,
       },
@@ -17658,7 +17658,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_EnergyAbsorption"] == "True"
         end,
       },
@@ -17679,7 +17679,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_ExtendedIllusion"] == "True"
         end,
       },
@@ -17700,7 +17700,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_ForceMissile"] == "True"
         end,
       },
@@ -17721,7 +17721,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_Forwarned"] == "True"
         end,
       },
@@ -17742,7 +17742,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_GraveTouch"] == "True"
         end,
       },
@@ -17763,7 +17763,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_HandOfTheApprentice"] == "True"
         end,
       },
@@ -17784,7 +17784,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_IntenseSpells"] == "True"
         end,
       },
@@ -17805,7 +17805,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_InvisibilityField"] == "True"
         end,
       },
@@ -17826,7 +17826,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_LifeSight"] == "True"
         end,
       },
@@ -17847,7 +17847,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_MetamagicMastery"] == "True"
         end,
       },
@@ -17868,7 +17868,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_PhysicalEnhancement"] == "True"
         end,
       },
@@ -17889,7 +17889,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_PowerOverUndead"] == "True"
         end,
       },
@@ -17910,7 +17910,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_ProtectiveWard"] == "True"
         end,
       },
@@ -17931,7 +17931,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_Resistance"] == "True"
         end,
       },
@@ -17952,7 +17952,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_ScryingAdept"] == "True"
         end,
       },
@@ -17973,7 +17973,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_SummonersCharm"] == "True"
         end,
       },
@@ -17994,7 +17994,7 @@ ModifyAbility({
         Name="Boolean",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Facts["ABILITY"]["Wizard_CF_TelekineticFist"] == "True"
         end,
       },

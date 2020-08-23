@@ -52,7 +52,7 @@ ModifyAbility({
         "Age",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAgeRules"] == 1)
         end,
       },
@@ -66,7 +66,7 @@ ModifyAbility({
         Name="Bool",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.IsType("PC")) or (character.IsType("NPC"))
         end,
       },
@@ -84,7 +84,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.IsAgeSetOrOlder("Youth"))
         end,
       },
@@ -96,7 +96,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.IsAgeSetOrOlder("Adult"))
         end,
       },
@@ -108,7 +108,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.IsAgeSetOrOlder("Middle-Aged"))
         end,
       },
@@ -120,7 +120,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.IsAgeSetOrOlder("Old"))
         end,
       },
@@ -132,7 +132,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.IsAgeSetOrOlder("Venerable"))
         end,
       },
@@ -153,7 +153,7 @@ ModifyAbility({
         "Age ~ Youth",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AgeProgression"] == 1)
         end,
       },
@@ -171,7 +171,7 @@ ModifyAbility({
         "Age ~ Adult",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AgeProgression"] == 2)
         end,
       },
@@ -189,7 +189,7 @@ ModifyAbility({
         "Age ~ Middle-Aged",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AgeProgression"] == 3)
         end,
       },
@@ -207,7 +207,7 @@ ModifyAbility({
         "Age ~ Old",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AgeProgression"] == 4)
         end,
       },
@@ -225,7 +225,7 @@ ModifyAbility({
         "Age ~ Venerable",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AgeProgression"] == 5)
         end,
       },
@@ -240,7 +240,7 @@ DefineAbility({
       Category="STAT",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAgeRulesNegateAgePenalties"] == 0)
         end,
       },
@@ -277,7 +277,7 @@ DefineAbility({
         Name="Age",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAgeRulesNegateAgePenalties"] == 0)
         end,
       },
@@ -312,7 +312,7 @@ DefineAbility({
         Name="Age",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAgeRulesNegateAgePenalties"] == 0)
         end,
       },
@@ -347,7 +347,7 @@ DefineAbility({
         Name="Age",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["UseAgeRulesNegateAgePenalties"] == 0)
         end,
       },
@@ -423,10 +423,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="DetectMagicLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDetectMagic"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DetectMagicTimes"] >= 1)
         end,
       },
@@ -438,10 +438,10 @@ DefineAbility({
       TimeUnit="Constant",
       CasterLevel="DetectMagicLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDetectMagic"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DetectMagicTimes"] <= 0)
         end,
       },
@@ -465,10 +465,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="FeatherFallLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellFeatherFall"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FeatherFallTimes"] >= 1)
         end,
       },
@@ -480,10 +480,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="FeatherFallLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellFeatherFall"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FeatherFallTimes"] <= 0)
         end,
       },
@@ -507,10 +507,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="LevitateLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellLevitate"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["LevitateTimes"] >= 1)
         end,
       },
@@ -522,10 +522,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="LevitateLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellLevitate"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["LevitateTimes"] <= 0)
         end,
       },
@@ -549,10 +549,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="FaerieFireLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellFaerieFire"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FaerieFireTimes"] >= 1)
         end,
       },
@@ -564,10 +564,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="FaerieFireLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellFaerieFire"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FaerieFireTimes"] <= 0)
         end,
       },
@@ -591,10 +591,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="DarknessLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDarkness"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DarknessTimes"] >= 1)
         end,
       },
@@ -606,10 +606,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="DarknessLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDarkness"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DarknessTimes"] <= 0)
         end,
       },
@@ -633,10 +633,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="DeeperDarknessLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDeeperDarkness"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DeeperDarknessTimes"] >= 1)
         end,
       },
@@ -648,10 +648,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="DeeperDarknessLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDeeperDarkness"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DeeperDarknessTimes"] <= 0)
         end,
       },
@@ -675,10 +675,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="DancingLightsLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDancingLights"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DancingLightsTimes"] >= 1)
         end,
       },
@@ -690,10 +690,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="DancingLightsLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDancingLights"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DancingLightsTimes"] <= 0)
         end,
       },
@@ -717,10 +717,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="SpiderClimbLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellSpiderClimb"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SpiderClimbTimes"] >= 1)
         end,
       },
@@ -732,10 +732,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="SpiderClimbLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellSpiderClimb"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SpiderClimbTimes"] <= 0)
         end,
       },
@@ -759,10 +759,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="DispelMagicLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDispelMagic"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DispelMagicTimes"] >= 1)
         end,
       },
@@ -774,10 +774,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="DispelMagicLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDispelMagic"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DispelMagicTimes"] <= 0)
         end,
       },
@@ -801,10 +801,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="DivineFavorLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDivineFavor"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DivineFavorTimes"] >= 1)
         end,
       },
@@ -816,10 +816,10 @@ DefineAbility({
       TimeUnit="Day",
       CasterLevel="DivineFavorLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellDivineFavor"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DivineFavorTimes"] <= 0)
         end,
       },
@@ -844,10 +844,10 @@ DefineAbility({
       DC="13+CHA",
       CasterLevel="SuggestionLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellSuggestion"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SuggestionTimes"] >= 1)
         end,
       },
@@ -860,10 +860,10 @@ DefineAbility({
       DC="13+CHA",
       CasterLevel="SuggestionLVL",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableSpellSuggestion"] == 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SuggestionTimes"] <= 0)
         end,
       },
@@ -3236,7 +3236,7 @@ ModifyAbility({
         "Limbs",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceArms"] >= 1) or (character.Variables["RaceLegs"] >= 1)
         end,
       },
@@ -3258,7 +3258,7 @@ ModifyAbility({
         "Arms ~ 1",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceArms"] == 1)
         end,
       },
@@ -3276,7 +3276,7 @@ ModifyAbility({
         "Arms ~ 2",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceArms"] == 2)
         end,
       },
@@ -3294,7 +3294,7 @@ ModifyAbility({
         "Arms ~ 3",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceArms"] == 3)
         end,
       },
@@ -3312,7 +3312,7 @@ ModifyAbility({
         "Arms ~ 4",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceArms"] == 4)
         end,
       },
@@ -3330,7 +3330,7 @@ ModifyAbility({
         "Arms ~ 5",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceArms"] == 5)
         end,
       },
@@ -3348,7 +3348,7 @@ ModifyAbility({
         "Arms ~ 6",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceArms"] == 6)
         end,
       },
@@ -3366,7 +3366,7 @@ ModifyAbility({
         "Arms ~ 7",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceArms"] == 7)
         end,
       },
@@ -3384,7 +3384,7 @@ ModifyAbility({
         "Arms ~ 8",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceArms"] == 8)
         end,
       },
@@ -3402,7 +3402,7 @@ ModifyAbility({
         "Arms ~ 9",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceArms"] == 9)
         end,
       },
@@ -3420,7 +3420,7 @@ ModifyAbility({
         "Arms ~ 10",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceArms"] == 10)
         end,
       },
@@ -3438,7 +3438,7 @@ ModifyAbility({
         "Legs ~ 1",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 1)
         end,
       },
@@ -3456,7 +3456,7 @@ ModifyAbility({
         "Legs ~ 2",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 2)
         end,
       },
@@ -3474,7 +3474,7 @@ ModifyAbility({
         "Legs ~ 3",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 3)
         end,
       },
@@ -3492,7 +3492,7 @@ ModifyAbility({
         "Legs ~ 4",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 4)
         end,
       },
@@ -3510,7 +3510,7 @@ ModifyAbility({
         "Legs ~ 5",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 5)
         end,
       },
@@ -3528,7 +3528,7 @@ ModifyAbility({
         "Legs ~ 6",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 6)
         end,
       },
@@ -3546,7 +3546,7 @@ ModifyAbility({
         "Legs ~ 7",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 7)
         end,
       },
@@ -3564,7 +3564,7 @@ ModifyAbility({
         "Legs ~ 8",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 8)
         end,
       },
@@ -3582,7 +3582,7 @@ ModifyAbility({
         "Legs ~ 9",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 9)
         end,
       },
@@ -3600,7 +3600,7 @@ ModifyAbility({
         "Legs ~ 10",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 10)
         end,
       },
@@ -3618,7 +3618,7 @@ ModifyAbility({
         "Legs ~ 11",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 11)
         end,
       },
@@ -3636,7 +3636,7 @@ ModifyAbility({
         "Legs ~ 12",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 12)
         end,
       },
@@ -3654,7 +3654,7 @@ ModifyAbility({
         "Legs ~ 13",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 13)
         end,
       },
@@ -3672,7 +3672,7 @@ ModifyAbility({
         "Legs ~ 14",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 14)
         end,
       },
@@ -3690,7 +3690,7 @@ ModifyAbility({
         "Legs ~ 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 15)
         end,
       },
@@ -3708,7 +3708,7 @@ ModifyAbility({
         "Legs ~ 16",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 16)
         end,
       },
@@ -3726,7 +3726,7 @@ ModifyAbility({
         "Legs ~ 17",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 17)
         end,
       },
@@ -3744,7 +3744,7 @@ ModifyAbility({
         "Legs ~ 18",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 18)
         end,
       },
@@ -3762,7 +3762,7 @@ ModifyAbility({
         "Legs ~ 19",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 19)
         end,
       },
@@ -3780,7 +3780,7 @@ ModifyAbility({
         "Legs ~ 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 20)
         end,
       },
@@ -3798,7 +3798,7 @@ ModifyAbility({
         "Legs ~ 21",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 21)
         end,
       },
@@ -3816,7 +3816,7 @@ ModifyAbility({
         "Legs ~ 22",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 22)
         end,
       },
@@ -3834,7 +3834,7 @@ ModifyAbility({
         "Legs ~ 23",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 23)
         end,
       },
@@ -3852,7 +3852,7 @@ ModifyAbility({
         "Legs ~ 24",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 24)
         end,
       },
@@ -3870,7 +3870,7 @@ ModifyAbility({
         "Legs ~ 25",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 25)
         end,
       },
@@ -3888,7 +3888,7 @@ ModifyAbility({
         "Legs ~ 26",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 26)
         end,
       },
@@ -3906,7 +3906,7 @@ ModifyAbility({
         "Legs ~ 27",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 27)
         end,
       },
@@ -3924,7 +3924,7 @@ ModifyAbility({
         "Legs ~ 28",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["RaceLegs"] == 28)
         end,
       },
@@ -5139,7 +5139,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] == 5)
         end,
       },
@@ -5160,10 +5160,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] >= 10)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] <= 15)
         end,
       },
@@ -5184,7 +5184,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] == 20)
         end,
       },
@@ -5205,10 +5205,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] >= 25)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] <= 30)
         end,
       },
@@ -5229,7 +5229,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] == 35)
         end,
       },
@@ -5250,10 +5250,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] >= 40)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] <= 45)
         end,
       },
@@ -5274,7 +5274,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] == 50)
         end,
       },
@@ -5295,10 +5295,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] <= 60)
         end,
       },
@@ -5319,7 +5319,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] == 65)
         end,
       },
@@ -5340,10 +5340,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] >= 70)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] <= 75)
         end,
       },
@@ -5364,7 +5364,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] == 80)
         end,
       },
@@ -5385,10 +5385,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] >= 85)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] <= 90)
         end,
       },
@@ -5409,7 +5409,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] == 95)
         end,
       },
@@ -5430,10 +5430,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] >= 100)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] <= 105)
         end,
       },
@@ -5454,7 +5454,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] == 110)
         end,
       },
@@ -5475,10 +5475,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] >= 115)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Walk"] <= 120)
         end,
       },
@@ -5512,7 +5512,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] == 5)
         end,
       },
@@ -5533,10 +5533,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] >= 10)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] <= 15)
         end,
       },
@@ -5557,7 +5557,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] == 20)
         end,
       },
@@ -5578,10 +5578,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] >= 25)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] <= 30)
         end,
       },
@@ -5602,7 +5602,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] == 35)
         end,
       },
@@ -5623,10 +5623,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] >= 40)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] <= 45)
         end,
       },
@@ -5647,7 +5647,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] == 50)
         end,
       },
@@ -5668,10 +5668,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] <= 60)
         end,
       },
@@ -5692,7 +5692,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] == 65)
         end,
       },
@@ -5713,10 +5713,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] >= 70)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] <= 75)
         end,
       },
@@ -5737,7 +5737,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] == 80)
         end,
       },
@@ -5758,10 +5758,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] >= 85)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] <= 90)
         end,
       },
@@ -5782,7 +5782,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] == 95)
         end,
       },
@@ -5803,10 +5803,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] >= 100)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] <= 105)
         end,
       },
@@ -5827,7 +5827,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] == 110)
         end,
       },
@@ -5848,10 +5848,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] >= 115)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Climb"] <= 120)
         end,
       },
@@ -5885,7 +5885,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] == 5)
         end,
       },
@@ -5906,10 +5906,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] >= 10)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] <= 15)
         end,
       },
@@ -5930,7 +5930,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] == 20)
         end,
       },
@@ -5951,10 +5951,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] >= 25)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] <= 30)
         end,
       },
@@ -5975,7 +5975,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] == 35)
         end,
       },
@@ -5996,10 +5996,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] >= 40)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] <= 45)
         end,
       },
@@ -6020,7 +6020,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] == 50)
         end,
       },
@@ -6041,10 +6041,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] <= 60)
         end,
       },
@@ -6065,7 +6065,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] == 65)
         end,
       },
@@ -6086,10 +6086,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] >= 70)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] <= 75)
         end,
       },
@@ -6110,7 +6110,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] == 80)
         end,
       },
@@ -6131,10 +6131,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] >= 85)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] <= 90)
         end,
       },
@@ -6155,7 +6155,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] == 95)
         end,
       },
@@ -6176,10 +6176,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] >= 100)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] <= 105)
         end,
       },
@@ -6200,7 +6200,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] == 110)
         end,
       },
@@ -6221,10 +6221,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] >= 115)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Fly"] <= 120)
         end,
       },
@@ -6258,7 +6258,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] == 5)
         end,
       },
@@ -6279,10 +6279,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] >= 10)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] <= 15)
         end,
       },
@@ -6303,7 +6303,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] == 20)
         end,
       },
@@ -6324,10 +6324,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] >= 25)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] <= 30)
         end,
       },
@@ -6348,7 +6348,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] == 35)
         end,
       },
@@ -6369,10 +6369,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] >= 40)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] <= 45)
         end,
       },
@@ -6393,7 +6393,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] == 50)
         end,
       },
@@ -6414,10 +6414,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] <= 60)
         end,
       },
@@ -6438,7 +6438,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] == 65)
         end,
       },
@@ -6459,10 +6459,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] >= 70)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] <= 75)
         end,
       },
@@ -6483,7 +6483,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] == 80)
         end,
       },
@@ -6504,10 +6504,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] >= 85)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] <= 90)
         end,
       },
@@ -6528,7 +6528,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] == 95)
         end,
       },
@@ -6549,10 +6549,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] >= 100)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] <= 105)
         end,
       },
@@ -6573,7 +6573,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] == 110)
         end,
       },
@@ -6594,10 +6594,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] >= 115)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Burrow"] <= 120)
         end,
       },
@@ -6631,7 +6631,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] == 5)
         end,
       },
@@ -6652,10 +6652,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] >= 10)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] <= 15)
         end,
       },
@@ -6676,7 +6676,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] == 20)
         end,
       },
@@ -6697,10 +6697,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] >= 25)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] <= 30)
         end,
       },
@@ -6721,7 +6721,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] == 35)
         end,
       },
@@ -6742,10 +6742,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] >= 40)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] <= 45)
         end,
       },
@@ -6766,7 +6766,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] == 50)
         end,
       },
@@ -6787,10 +6787,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] <= 60)
         end,
       },
@@ -6811,7 +6811,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] == 65)
         end,
       },
@@ -6832,10 +6832,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] >= 70)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] <= 75)
         end,
       },
@@ -6856,7 +6856,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] == 80)
         end,
       },
@@ -6877,10 +6877,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] >= 85)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] <= 90)
         end,
       },
@@ -6901,7 +6901,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] == 95)
         end,
       },
@@ -6922,10 +6922,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] >= 100)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] <= 105)
         end,
       },
@@ -6946,7 +6946,7 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] == 110)
         end,
       },
@@ -6967,10 +6967,10 @@ ModifyAbility({
         Name="Modified",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] >= 115)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ReducedSpeedFormula_Swim"] <= 120)
         end,
       },
@@ -7130,7 +7130,7 @@ ModifyAbility({
         "Walk ~ 05",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 5)
         end,
       },
@@ -7148,7 +7148,7 @@ ModifyAbility({
         "Walk ~ 10",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 10)
         end,
       },
@@ -7166,7 +7166,7 @@ ModifyAbility({
         "Walk ~ 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 15)
         end,
       },
@@ -7184,7 +7184,7 @@ ModifyAbility({
         "Walk ~ 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 20)
         end,
       },
@@ -7202,7 +7202,7 @@ ModifyAbility({
         "Walk ~ 25",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 25)
         end,
       },
@@ -7220,7 +7220,7 @@ ModifyAbility({
         "Walk ~ 30",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 30)
         end,
       },
@@ -7238,7 +7238,7 @@ ModifyAbility({
         "Walk ~ 35",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 35)
         end,
       },
@@ -7256,7 +7256,7 @@ ModifyAbility({
         "Walk ~ 40",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 40)
         end,
       },
@@ -7274,7 +7274,7 @@ ModifyAbility({
         "Walk ~ 45",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 45)
         end,
       },
@@ -7292,7 +7292,7 @@ ModifyAbility({
         "Walk ~ 50",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 50)
         end,
       },
@@ -7310,7 +7310,7 @@ ModifyAbility({
         "Walk ~ 55",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 55)
         end,
       },
@@ -7328,7 +7328,7 @@ ModifyAbility({
         "Walk ~ 60",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 60)
         end,
       },
@@ -7346,7 +7346,7 @@ ModifyAbility({
         "Walk ~ 65",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 65)
         end,
       },
@@ -7364,7 +7364,7 @@ ModifyAbility({
         "Walk ~ 70",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 70)
         end,
       },
@@ -7382,7 +7382,7 @@ ModifyAbility({
         "Walk ~ 75",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 75)
         end,
       },
@@ -7400,7 +7400,7 @@ ModifyAbility({
         "Walk ~ 80",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 80)
         end,
       },
@@ -7418,7 +7418,7 @@ ModifyAbility({
         "Walk ~ 85",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 85)
         end,
       },
@@ -7436,7 +7436,7 @@ ModifyAbility({
         "Walk ~ 90",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 90)
         end,
       },
@@ -7454,7 +7454,7 @@ ModifyAbility({
         "Walk ~ 95",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 95)
         end,
       },
@@ -7472,7 +7472,7 @@ ModifyAbility({
         "Walk ~ 100",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 100)
         end,
       },
@@ -7490,7 +7490,7 @@ ModifyAbility({
         "Walk ~ 105",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 105)
         end,
       },
@@ -7508,7 +7508,7 @@ ModifyAbility({
         "Walk ~ 110",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 110)
         end,
       },
@@ -7526,7 +7526,7 @@ ModifyAbility({
         "Walk ~ 115",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 115)
         end,
       },
@@ -7544,7 +7544,7 @@ ModifyAbility({
         "Walk ~ 120",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Walk"] == 120)
         end,
       },
@@ -7562,7 +7562,7 @@ ModifyAbility({
         "Swim ~ 05",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 5)
         end,
       },
@@ -7580,7 +7580,7 @@ ModifyAbility({
         "Swim ~ 10",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 10)
         end,
       },
@@ -7598,7 +7598,7 @@ ModifyAbility({
         "Swim ~ 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 15)
         end,
       },
@@ -7616,7 +7616,7 @@ ModifyAbility({
         "Swim ~ 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 20)
         end,
       },
@@ -7634,7 +7634,7 @@ ModifyAbility({
         "Swim ~ 25",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 25)
         end,
       },
@@ -7652,7 +7652,7 @@ ModifyAbility({
         "Swim ~ 30",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 30)
         end,
       },
@@ -7670,7 +7670,7 @@ ModifyAbility({
         "Swim ~ 35",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 35)
         end,
       },
@@ -7688,7 +7688,7 @@ ModifyAbility({
         "Swim ~ 40",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 40)
         end,
       },
@@ -7706,7 +7706,7 @@ ModifyAbility({
         "Swim ~ 45",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 45)
         end,
       },
@@ -7724,7 +7724,7 @@ ModifyAbility({
         "Swim ~ 50",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 50)
         end,
       },
@@ -7742,7 +7742,7 @@ ModifyAbility({
         "Swim ~ 55",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 55)
         end,
       },
@@ -7760,7 +7760,7 @@ ModifyAbility({
         "Swim ~ 60",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 60)
         end,
       },
@@ -7778,7 +7778,7 @@ ModifyAbility({
         "Swim ~ 65",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 65)
         end,
       },
@@ -7796,7 +7796,7 @@ ModifyAbility({
         "Swim ~ 70",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 70)
         end,
       },
@@ -7814,7 +7814,7 @@ ModifyAbility({
         "Swim ~ 75",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 75)
         end,
       },
@@ -7832,7 +7832,7 @@ ModifyAbility({
         "Swim ~ 80",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 80)
         end,
       },
@@ -7850,7 +7850,7 @@ ModifyAbility({
         "Swim ~ 85",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 85)
         end,
       },
@@ -7868,7 +7868,7 @@ ModifyAbility({
         "Swim ~ 90",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 90)
         end,
       },
@@ -7886,7 +7886,7 @@ ModifyAbility({
         "Swim ~ 95",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 95)
         end,
       },
@@ -7904,7 +7904,7 @@ ModifyAbility({
         "Swim ~ 100",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 100)
         end,
       },
@@ -7922,7 +7922,7 @@ ModifyAbility({
         "Swim ~ 105",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 105)
         end,
       },
@@ -7940,7 +7940,7 @@ ModifyAbility({
         "Swim ~ 110",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 110)
         end,
       },
@@ -7958,7 +7958,7 @@ ModifyAbility({
         "Swim ~ 115",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 115)
         end,
       },
@@ -7976,7 +7976,7 @@ ModifyAbility({
         "Swim ~ 120",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Swim"] == 120)
         end,
       },
@@ -7994,7 +7994,7 @@ ModifyAbility({
         "Climb ~ 05",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 5)
         end,
       },
@@ -8012,7 +8012,7 @@ ModifyAbility({
         "Climb ~ 10",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 10)
         end,
       },
@@ -8030,7 +8030,7 @@ ModifyAbility({
         "Climb ~ 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 15)
         end,
       },
@@ -8048,7 +8048,7 @@ ModifyAbility({
         "Climb ~ 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 20)
         end,
       },
@@ -8066,7 +8066,7 @@ ModifyAbility({
         "Climb ~ 25",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 25)
         end,
       },
@@ -8084,7 +8084,7 @@ ModifyAbility({
         "Climb ~ 30",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 30)
         end,
       },
@@ -8102,7 +8102,7 @@ ModifyAbility({
         "Climb ~ 35",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 35)
         end,
       },
@@ -8120,7 +8120,7 @@ ModifyAbility({
         "Climb ~ 40",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 40)
         end,
       },
@@ -8138,7 +8138,7 @@ ModifyAbility({
         "Climb ~ 45",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 45)
         end,
       },
@@ -8156,7 +8156,7 @@ ModifyAbility({
         "Climb ~ 50",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 50)
         end,
       },
@@ -8174,7 +8174,7 @@ ModifyAbility({
         "Climb ~ 55",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 55)
         end,
       },
@@ -8192,7 +8192,7 @@ ModifyAbility({
         "Climb ~ 60",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 60)
         end,
       },
@@ -8210,7 +8210,7 @@ ModifyAbility({
         "Climb ~ 65",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 65)
         end,
       },
@@ -8228,7 +8228,7 @@ ModifyAbility({
         "Climb ~ 70",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 70)
         end,
       },
@@ -8246,7 +8246,7 @@ ModifyAbility({
         "Climb ~ 75",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 75)
         end,
       },
@@ -8264,7 +8264,7 @@ ModifyAbility({
         "Climb ~ 80",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 80)
         end,
       },
@@ -8282,7 +8282,7 @@ ModifyAbility({
         "Climb ~ 85",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 85)
         end,
       },
@@ -8300,7 +8300,7 @@ ModifyAbility({
         "Climb ~ 90",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 90)
         end,
       },
@@ -8318,7 +8318,7 @@ ModifyAbility({
         "Climb ~ 95",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 95)
         end,
       },
@@ -8336,7 +8336,7 @@ ModifyAbility({
         "Climb ~ 100",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 100)
         end,
       },
@@ -8354,7 +8354,7 @@ ModifyAbility({
         "Climb ~ 105",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 105)
         end,
       },
@@ -8372,7 +8372,7 @@ ModifyAbility({
         "Climb ~ 110",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 110)
         end,
       },
@@ -8390,7 +8390,7 @@ ModifyAbility({
         "Climb ~ 115",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 115)
         end,
       },
@@ -8408,7 +8408,7 @@ ModifyAbility({
         "Climb ~ 120",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Climb"] == 120)
         end,
       },
@@ -8426,7 +8426,7 @@ ModifyAbility({
         "Burrow ~ 05",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 5)
         end,
       },
@@ -8444,7 +8444,7 @@ ModifyAbility({
         "Burrow ~ 10",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 10)
         end,
       },
@@ -8462,7 +8462,7 @@ ModifyAbility({
         "Burrow ~ 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 15)
         end,
       },
@@ -8480,7 +8480,7 @@ ModifyAbility({
         "Burrow ~ 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 20)
         end,
       },
@@ -8498,7 +8498,7 @@ ModifyAbility({
         "Burrow ~ 25",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 25)
         end,
       },
@@ -8516,7 +8516,7 @@ ModifyAbility({
         "Burrow ~ 30",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 30)
         end,
       },
@@ -8534,7 +8534,7 @@ ModifyAbility({
         "Burrow ~ 35",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 35)
         end,
       },
@@ -8552,7 +8552,7 @@ ModifyAbility({
         "Burrow ~ 40",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 40)
         end,
       },
@@ -8570,7 +8570,7 @@ ModifyAbility({
         "Burrow ~ 45",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 45)
         end,
       },
@@ -8588,7 +8588,7 @@ ModifyAbility({
         "Burrow ~ 50",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 50)
         end,
       },
@@ -8606,7 +8606,7 @@ ModifyAbility({
         "Burrow ~ 55",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 55)
         end,
       },
@@ -8624,7 +8624,7 @@ ModifyAbility({
         "Burrow ~ 60",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 60)
         end,
       },
@@ -8642,7 +8642,7 @@ ModifyAbility({
         "Burrow ~ 65",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 65)
         end,
       },
@@ -8660,7 +8660,7 @@ ModifyAbility({
         "Burrow ~ 70",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 70)
         end,
       },
@@ -8678,7 +8678,7 @@ ModifyAbility({
         "Burrow ~ 75",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 75)
         end,
       },
@@ -8696,7 +8696,7 @@ ModifyAbility({
         "Burrow ~ 80",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 80)
         end,
       },
@@ -8714,7 +8714,7 @@ ModifyAbility({
         "Burrow ~ 85",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 85)
         end,
       },
@@ -8732,7 +8732,7 @@ ModifyAbility({
         "Burrow ~ 90",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 90)
         end,
       },
@@ -8750,7 +8750,7 @@ ModifyAbility({
         "Burrow ~ 95",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 95)
         end,
       },
@@ -8768,7 +8768,7 @@ ModifyAbility({
         "Burrow ~ 100",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 100)
         end,
       },
@@ -8786,7 +8786,7 @@ ModifyAbility({
         "Burrow ~ 105",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 105)
         end,
       },
@@ -8804,7 +8804,7 @@ ModifyAbility({
         "Burrow ~ 110",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 110)
         end,
       },
@@ -8822,7 +8822,7 @@ ModifyAbility({
         "Burrow ~ 115",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 115)
         end,
       },
@@ -8840,7 +8840,7 @@ ModifyAbility({
         "Burrow ~ 120",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Burrow"] == 120)
         end,
       },
@@ -8858,7 +8858,7 @@ ModifyAbility({
         "Fly ~ 05",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 5)
         end,
       },
@@ -8876,7 +8876,7 @@ ModifyAbility({
         "Fly ~ 10",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 10)
         end,
       },
@@ -8894,7 +8894,7 @@ ModifyAbility({
         "Fly ~ 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 15)
         end,
       },
@@ -8912,7 +8912,7 @@ ModifyAbility({
         "Fly ~ 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 20)
         end,
       },
@@ -8930,7 +8930,7 @@ ModifyAbility({
         "Fly ~ 25",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 25)
         end,
       },
@@ -8948,7 +8948,7 @@ ModifyAbility({
         "Fly ~ 30",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 30)
         end,
       },
@@ -8966,7 +8966,7 @@ ModifyAbility({
         "Fly ~ 35",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 35)
         end,
       },
@@ -8984,7 +8984,7 @@ ModifyAbility({
         "Fly ~ 40",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 40)
         end,
       },
@@ -9002,7 +9002,7 @@ ModifyAbility({
         "Fly ~ 45",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 45)
         end,
       },
@@ -9020,7 +9020,7 @@ ModifyAbility({
         "Fly ~ 50",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 50)
         end,
       },
@@ -9038,7 +9038,7 @@ ModifyAbility({
         "Fly ~ 55",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 55)
         end,
       },
@@ -9056,7 +9056,7 @@ ModifyAbility({
         "Fly ~ 60",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 60)
         end,
       },
@@ -9074,7 +9074,7 @@ ModifyAbility({
         "Fly ~ 65",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 65)
         end,
       },
@@ -9092,7 +9092,7 @@ ModifyAbility({
         "Fly ~ 70",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 70)
         end,
       },
@@ -9110,7 +9110,7 @@ ModifyAbility({
         "Fly ~ 75",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 75)
         end,
       },
@@ -9128,7 +9128,7 @@ ModifyAbility({
         "Fly ~ 80",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 80)
         end,
       },
@@ -9146,7 +9146,7 @@ ModifyAbility({
         "Fly ~ 85",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 85)
         end,
       },
@@ -9164,7 +9164,7 @@ ModifyAbility({
         "Fly ~ 90",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 90)
         end,
       },
@@ -9182,7 +9182,7 @@ ModifyAbility({
         "Fly ~ 95",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 95)
         end,
       },
@@ -9200,7 +9200,7 @@ ModifyAbility({
         "Fly ~ 100",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 100)
         end,
       },
@@ -9218,7 +9218,7 @@ ModifyAbility({
         "Fly ~ 105",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 105)
         end,
       },
@@ -9236,7 +9236,7 @@ ModifyAbility({
         "Fly ~ 110",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 110)
         end,
       },
@@ -9254,7 +9254,7 @@ ModifyAbility({
         "Fly ~ 115",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 115)
         end,
       },
@@ -9272,7 +9272,7 @@ ModifyAbility({
         "Fly ~ 120",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TotalSpeed_Fly"] == 120)
         end,
       },
@@ -9393,7 +9393,7 @@ DefineAbility({
   SortKey="1",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Fine"] == "true"
     end,
   },
@@ -9410,7 +9410,7 @@ DefineAbility({
   SortKey="2",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Diminutive"] == "true"
     end,
   },
@@ -9427,7 +9427,7 @@ DefineAbility({
   SortKey="3",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Tiny"] == "true"
     end,
   },
@@ -9444,7 +9444,7 @@ DefineAbility({
   SortKey="4",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Small"] == "true"
     end,
   },
@@ -9461,7 +9461,7 @@ DefineAbility({
   SortKey="5",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Medium"] == "true"
     end,
   },
@@ -9478,7 +9478,7 @@ DefineAbility({
   SortKey="6",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Large"] == "true"
     end,
   },
@@ -9495,7 +9495,7 @@ DefineAbility({
   SortKey="7",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Huge"] == "true"
     end,
   },
@@ -9512,7 +9512,7 @@ DefineAbility({
   SortKey="8",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Gargantuan"] == "true"
     end,
   },
@@ -9529,7 +9529,7 @@ DefineAbility({
   SortKey="9",
   Category="Racial Size",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Facts["ABILITY"]["RaceSizeAllowed_Colossal"] == "true"
     end,
   },
@@ -9591,10 +9591,10 @@ ModifyAbility({
         "Poison",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_Poison"] == 0))
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_Poison"] == "SaveBonus_vs_Spells"))
         end,
       },
@@ -9612,10 +9612,10 @@ ModifyAbility({
         "Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_Spells"] == 0))
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_Poison"] == "SaveBonus_vs_Spells"))
         end,
       },
@@ -9633,13 +9633,13 @@ ModifyAbility({
         "Poison and Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_Poison"] == 0))
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_Spells"] == 0))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SaveBonus_vs_Poison"] == "SaveBonus_vs_Spells")
         end,
       },
@@ -9657,7 +9657,7 @@ ModifyAbility({
         "Enchantments",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_Enchantments"] == 0))
         end,
       },
@@ -9675,7 +9675,7 @@ ModifyAbility({
         "Illusions",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_Illusions"] == 0))
         end,
       },
@@ -9693,7 +9693,7 @@ ModifyAbility({
         "Fear",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_Fear"] == 0))
         end,
       },
@@ -9711,7 +9711,7 @@ ModifyAbility({
         "Slipping and Falling",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_Slipping"] == 0))
         end,
       },
@@ -9729,7 +9729,7 @@ ModifyAbility({
         "Climate (Cold)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FortSave_vs_ColdClimate"] >= 1)
         end,
       },
@@ -9747,7 +9747,7 @@ ModifyAbility({
         "Climate (Hot)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FortSave_vs_HotClimate"] >= 1)
         end,
       },
@@ -9765,7 +9765,7 @@ ModifyAbility({
         "Swarms and Vermin",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["FortSave_vs_SwarmsAndVermin"] >= 1)
         end,
       },
@@ -9783,7 +9783,7 @@ ModifyAbility({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_NegativeLevels"] == 0))
         end,
       },
@@ -9801,7 +9801,7 @@ ModifyAbility({
         "Traps (Underground)",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_TrapsUnderground"] == 0))
         end,
       },
@@ -9819,7 +9819,7 @@ ModifyAbility({
         "Psychic Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_PsychicSpells"] == 0))
         end,
       },
@@ -9837,7 +9837,7 @@ ModifyAbility({
         "Sanity Damage",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_SanityDamage"] == 0))
         end,
       },
@@ -9855,7 +9855,7 @@ ModifyAbility({
         "Mind-Affecting",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_MindAffecting"] == 0))
         end,
       },
@@ -9873,7 +9873,7 @@ ModifyAbility({
         "Divine Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["SaveBonus_vs_DivineSpells"] == 0))
         end,
       },
@@ -9956,7 +9956,7 @@ DefineAbility({
         "SaveBonus_vs_Fear",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SaveBonus_vs_Fear"] >= 1)
         end,
       },
@@ -9968,7 +9968,7 @@ DefineAbility({
         "SaveBonus_vs_Fear",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["SaveBonus_vs_Fear"] < 0)
         end,
       },
@@ -10116,7 +10116,7 @@ ModifyAbility({
         "No Intelligence Score",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NoIntelligenceSetTrue"] == 1)
         end,
       },

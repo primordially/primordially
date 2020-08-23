@@ -17,7 +17,7 @@ ModifyAbility({
         "Temp Bonus ~ Enlarge Person",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ActivateEnlargePerson"] == 1)
         end,
       },
@@ -29,7 +29,7 @@ ModifyAbility({
         "Temp Bonus ~ Reduce Person",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ActivateReducePerson"] == 1)
         end,
       },
@@ -40,7 +40,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Exotic Weapon Proficiency (Sword (Bastard))" then return true end
@@ -56,7 +56,7 @@ ModifyAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Exotic Weapon Proficiency (Waraxe (Dwarven))" then return true end
@@ -88,7 +88,7 @@ ModifyAbility({
         "Aspect Combat Bonus ~ Encumbrance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["Encumbrance"] >= 1)
         end,
       },
@@ -137,7 +137,7 @@ DefineAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.IsAgeSetOrOlder("Middle-Aged"))
         end,
       },
@@ -152,7 +152,7 @@ DefineAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.IsAgeSetOrOlder("Old"))
         end,
       },
@@ -167,7 +167,7 @@ DefineAbility({
         Name="Base",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.IsAgeSetOrOlder("Venerable"))
         end,
       },
@@ -1055,7 +1055,7 @@ ModifyAbility({
         "Temp_Bonus_Aspect_Tracker",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ActivateTempBonus"] >= 1)
         end,
       },
@@ -1067,7 +1067,7 @@ ModifyAbility({
         "Temp Bonus ~ Stoneskin",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["StoneskinActivate"] >= 1)
         end,
       },
@@ -1085,7 +1085,7 @@ DefineAbility({
         "Paladin ~ Smite Evil",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AuraOfJusticeActivate"] == 1)
         end,
       },
@@ -1097,7 +1097,7 @@ DefineAbility({
         "Temp Bonus ~ Bless Weapon",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["TempBonus_BlessWeapon"] == 1)
         end,
       },
@@ -1111,7 +1111,7 @@ DefineAbility({
         "InspireCourageBonus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["InspireCourageBonus"] >= 1)
         end,
       },
@@ -1120,7 +1120,7 @@ DefineAbility({
       Name="SaveBonus",
       FormatString="Aura of courage&colon; +4 morale bonus on saving throws against fear effects.",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AuraOfCourageActivate"] == 1)
         end,
       },
@@ -1129,7 +1129,7 @@ DefineAbility({
       Name="SaveBonus",
       FormatString="Aura of Resolve&colon; +4 morale bonus on saving throws against charm effects.",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AuraOfResolveActivate"] == 1)
         end,
       },
@@ -1138,7 +1138,7 @@ DefineAbility({
       Name="SaveBonus",
       FormatString="Aura of Righteousness&colon; +4 morale bonus on saving throws against compulsion effects.",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["AuraOfRighteousnessActivate"] == 1)
         end,
       },
@@ -1173,7 +1173,7 @@ DefineAbility({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LG") or character.IsAlignment("LN") or character.IsAlignment("LE")
         end,
       },
@@ -1200,7 +1200,7 @@ DefineAbility({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("CG") or character.IsAlignment("CN") or character.IsAlignment("CE")
         end,
       },
@@ -1337,7 +1337,7 @@ DefineAbility({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE")
         end,
       },
@@ -1490,7 +1490,7 @@ DefineAbility({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG")
         end,
       },
@@ -1571,7 +1571,7 @@ DefineAbility({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NegLevels"] >= 1)
         end,
       },
@@ -1877,7 +1877,7 @@ DefineAbility({
   Key="Intelligent Item ~ Align (CG)",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentAlignment") then return true end
@@ -1895,7 +1895,7 @@ DefineAbility({
   Key="Intelligent Item ~ Align (CN)",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentAlignment") then return true end
@@ -1913,7 +1913,7 @@ DefineAbility({
   Key="Intelligent Item ~ Align (CE)",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentAlignment") then return true end
@@ -1931,7 +1931,7 @@ DefineAbility({
   Key="Intelligent Item ~ Align (NE)",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentAlignment") then return true end
@@ -1949,7 +1949,7 @@ DefineAbility({
   Key="Intelligent Item ~ Align (LE)",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentAlignment") then return true end
@@ -1967,7 +1967,7 @@ DefineAbility({
   Key="Intelligent Item ~ Align (LG)",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentAlignment") then return true end
@@ -1985,7 +1985,7 @@ DefineAbility({
   Key="Intelligent Item ~ Align (LN)",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentAlignment") then return true end
@@ -2003,7 +2003,7 @@ DefineAbility({
   Key="Intelligent Item ~ Align (NG)",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentAlignment") then return true end
@@ -2021,7 +2021,7 @@ DefineAbility({
   Key="Intelligent Item ~ Align (TN)",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentAlignment") then return true end
@@ -2164,7 +2164,7 @@ DefineAbility({
   Selections=Formula("1"),
   Stackable=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ ItemPower_CastZeroAtWill" then return true end
@@ -2192,7 +2192,7 @@ DefineAbility({
   Selections=Formula("1"),
   Stackable=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ ItemPower_CastOneThree" then return true end
@@ -2211,7 +2211,7 @@ DefineAbility({
   Key="Item Power ~ Magic Aura",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ ItemPower_MagicAura" then return true end
@@ -2239,7 +2239,7 @@ DefineAbility({
   Selections=Formula("1"),
   Stackable=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ ItemPower_CastTwoOne" then return true end
@@ -2267,7 +2267,7 @@ DefineAbility({
   Selections=Formula("1"),
   Stackable=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ ItemPower_FiveSkill" then return true end
@@ -2286,7 +2286,7 @@ DefineAbility({
   Key="Item Power ~ Move",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ ItemPower_Move" then return true end
@@ -2314,7 +2314,7 @@ DefineAbility({
   Selections=Formula("1"),
   Stackable=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ ItemPower_CastThreeOne" then return true end
@@ -2342,7 +2342,7 @@ DefineAbility({
   Selections=Formula("1"),
   Stackable=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ ItemPower_CastTwoThree" then return true end
@@ -2370,7 +2370,7 @@ DefineAbility({
   Selections=Formula("1"),
   Stackable=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ ItemPower_TenSkill" then return true end
@@ -2389,7 +2389,7 @@ DefineAbility({
   Key="Item Power ~ Change Shape",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ ItemPower_ChangeShape" then return true end
@@ -2408,7 +2408,7 @@ DefineAbility({
   Key="Item Power ~ Fly",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ ItemPower_Fly" then return true end
@@ -2436,7 +2436,7 @@ DefineAbility({
   Selections=Formula("1"),
   Stackable=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ ItemPower_CastFourOne" then return true end
@@ -2455,7 +2455,7 @@ DefineAbility({
   Key="Item Power ~ Teleport",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ ItemPower_Teleport" then return true end
@@ -2483,7 +2483,7 @@ DefineAbility({
   Selections=Formula("1"),
   Stackable=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ ItemPower_CastThreeThree" then return true end
@@ -2511,7 +2511,7 @@ DefineAbility({
   Selections=Formula("1"),
   Stackable=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ ItemPower_CastFourThree" then return true end
@@ -2530,7 +2530,7 @@ DefineAbility({
   Key="Purpose ~ Slay Align",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentPurpose") then return true end
@@ -2548,7 +2548,7 @@ DefineAbility({
   Key="Purpose ~ Slay Arcane",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentPurpose") then return true end
@@ -2566,7 +2566,7 @@ DefineAbility({
   Key="Purpose ~ Slay Divine",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentPurpose") then return true end
@@ -2584,7 +2584,7 @@ DefineAbility({
   Key="Purpose ~ Slay NonCasters",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentPurpose") then return true end
@@ -2602,7 +2602,7 @@ DefineAbility({
   Key="Purpose ~ Slay Creature Type",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentPurpose") then return true end
@@ -2620,7 +2620,7 @@ DefineAbility({
   Key="Purpose ~ Slay Race or Kind",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentPurpose") then return true end
@@ -2638,7 +2638,7 @@ DefineAbility({
   Key="Purpose ~ Defend Race or Kind",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentPurpose") then return true end
@@ -2656,7 +2656,7 @@ DefineAbility({
   Key="Purpose ~ Slay Deity Servant",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentPurpose") then return true end
@@ -2674,7 +2674,7 @@ DefineAbility({
   Key="Purpose ~ Defend Deity Servant",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentPurpose") then return true end
@@ -2692,7 +2692,7 @@ DefineAbility({
   Key="Purpose ~ Slay All",
   Category="Intelligent Item",
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.IsAnyType("IntelligentPurpose") then return true end
@@ -2747,7 +2747,7 @@ DefineAbility({
   Selections=Formula("1"),
   Stackable=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ PurposePower_CastFourAtWill" then return true end
@@ -2776,7 +2776,7 @@ DefineAbility({
   Selections=Formula("1"),
   Stackable=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ PurposePower_CastFiveAtWill" then return true end
@@ -2805,7 +2805,7 @@ DefineAbility({
   Selections=Formula("1"),
   Stackable=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ PurposePower_CastSixAtWill" then return true end
@@ -2834,7 +2834,7 @@ DefineAbility({
   Selections=Formula("1"),
   Stackable=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Intelligent Item" then return false end
         if ability.Name == "EQMOD ~ PurposePower_CastSevenAtWill" then return true end
@@ -3285,7 +3285,7 @@ DefineAbility({
       Formula("NegLevels"),
     },
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NegLevels"] > 1)
       end,
     },
@@ -3384,7 +3384,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Weapon Focus (Shieldbash)" then return true end
@@ -3400,7 +3400,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Greater Weapon Focus (Shieldbash)" then return true end
@@ -3416,7 +3416,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Weapon Specialization (Shieldbash)" then return true end
@@ -3432,7 +3432,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Greater Weapon Specialization (Shieldbash)" then return true end
@@ -3448,7 +3448,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.TotalAttackBonus >= 6
         end,
       },
@@ -3460,7 +3460,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.TotalAttackBonus >= 11
         end,
       },
@@ -3472,7 +3472,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.TotalAttackBonus >= 16
         end,
       },
@@ -3493,7 +3493,7 @@ ModifyAbility({
       Name="NaturalAttackName",
       FormatString="Shield Bash (Light)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.HasEquipped(function (item) return item.IsType("Shield") end)) or (character.HasEquipped(function (item) return item.IsType("Light") end))
         end,
       },
@@ -3502,7 +3502,7 @@ ModifyAbility({
       Name="NaturalAttackName",
       FormatString="Shield Bash (Heavy)",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.HasEquipped(function (item) return item.IsType("Shield") end)) or (character.HasEquipped(function (item) return item.IsType("Heavy") end))
         end,
       },
@@ -3514,7 +3514,7 @@ ModifyAbility({
         "ShieldBashAttackTotal",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["InterativeAttack"] == 1)
         end,
       },
@@ -3527,7 +3527,7 @@ ModifyAbility({
         "ShieldBashAttackTotal-5",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["InterativeAttack"] == 2)
         end,
       },
@@ -3541,7 +3541,7 @@ ModifyAbility({
         "ShieldBashAttackTotal-10",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["InterativeAttack"] == 3)
         end,
       },
@@ -3556,7 +3556,7 @@ ModifyAbility({
         "ShieldBashAttackTotal-15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["InterativeAttack"] == 4)
         end,
       },
@@ -3615,7 +3615,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("-4"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Shield Mastery" then return true end
@@ -3641,7 +3641,7 @@ ModifyAbility({
         Name="ShieldSize",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "M" and (character.HasEquipped(function (item) return item.IsType("Shield") end)) or (character.HasEquipped(function (item) return item.IsType("Light") end))
         end,
       },
@@ -3656,7 +3656,7 @@ ModifyAbility({
         Name="ShieldSize",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "M" and (character.HasEquipped(function (item) return item.IsType("Shield") end)) or (character.HasEquipped(function (item) return item.IsType("Heavy") end))
         end,
       },
@@ -3677,7 +3677,7 @@ ModifyAbility({
         Name="ShieldSize",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "S" and (character.HasEquipped(function (item) return item.IsType("Shield") end)) or (character.HasEquipped(function (item) return item.IsType("Light") end))
         end,
       },
@@ -3692,7 +3692,7 @@ ModifyAbility({
         Name="ShieldSize",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.Size == "S" and (character.HasEquipped(function (item) return item.IsType("Shield") end)) or (character.HasEquipped(function (item) return item.IsType("Heavy") end))
         end,
       },
@@ -3713,7 +3713,7 @@ ModifyAbility({
         "Shield Bash 1d1",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShieldBashingDieSizeStep"] == 1)
         end,
       },
@@ -3731,7 +3731,7 @@ ModifyAbility({
         "Shield Bash 1d2",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShieldBashingDieSizeStep"] == 2)
         end,
       },
@@ -3749,7 +3749,7 @@ ModifyAbility({
         "Shield Bash 1d3",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShieldBashingDieSizeStep"] == 3)
         end,
       },
@@ -3767,7 +3767,7 @@ ModifyAbility({
         "Shield Bash 1d4",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShieldBashingDieSizeStep"] == 4)
         end,
       },
@@ -3785,7 +3785,7 @@ ModifyAbility({
         "Shield Bash 1d6",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShieldBashingDieSizeStep"] == 5)
         end,
       },
@@ -3803,7 +3803,7 @@ ModifyAbility({
         "Shield Bash 1d8",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShieldBashingDieSizeStep"] == 6)
         end,
       },
@@ -3821,7 +3821,7 @@ ModifyAbility({
         "Shield Bash 2d6",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShieldBashingDieSizeStep"] == 7)
         end,
       },
@@ -3839,7 +3839,7 @@ ModifyAbility({
         "Shield Bash 3d6",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShieldBashingDieSizeStep"] == 8)
         end,
       },
@@ -3857,7 +3857,7 @@ ModifyAbility({
         "Shield Bash 4d6",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShieldBashingDieSizeStep"] == 9)
         end,
       },
@@ -3875,7 +3875,7 @@ ModifyAbility({
         "Shield Bash 6d6",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShieldBashingDieSizeStep"] == 10)
         end,
       },
@@ -3893,7 +3893,7 @@ ModifyAbility({
         "Shield Bash 8d6",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShieldBashingDieSizeStep"] == 11)
         end,
       },
@@ -3911,7 +3911,7 @@ ModifyAbility({
         "Shield Bash 12d6",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["ShieldBashingDieSizeStep"] == 12)
         end,
       },

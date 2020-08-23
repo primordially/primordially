@@ -34,6 +34,19 @@ namespace Primordially.LstToLua
             set => Set(nameof(Key), value);
         }
 
+        public override void AddField(TextSpan field)
+        {
+            if (field.StartsWith("NAMEISPI:") || field.StartsWith("DESCISPI:"))
+            {
+                // These fields are unimportant for us because our product
+                // satisfies the requirements for the Community Use license
+                // specified here https://paizo.com/community/communityuse
+                // see the README for more details
+                return;
+            }
+            base.AddField(field);
+        }
+
         public override void Dump(LuaTextWriter output)
         {
             var key = Key ?? Name;

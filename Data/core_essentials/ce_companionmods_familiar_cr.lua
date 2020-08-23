@@ -70,7 +70,7 @@ DefineFollowerBonus({
         "Familiar ~ Augmented Animal",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (any(character.Race.Types, function (type) stringMatch(type, "Animal") end))
         end,
       },
@@ -94,7 +94,7 @@ DefineFollowerBonus({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Raven")
     end,
   },

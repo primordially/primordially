@@ -33,10 +33,10 @@ DefineAbility({
         "Lock Int ~ 1",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -48,10 +48,10 @@ DefineAbility({
         "Lock Int ~ 2",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 2)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -63,10 +63,10 @@ DefineAbility({
         "Lock Int ~ 6",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -78,10 +78,10 @@ DefineAbility({
         "Lock Int ~ 7",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 7)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -93,10 +93,10 @@ DefineAbility({
         "Lock Int ~ 8",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 8)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -108,10 +108,10 @@ DefineAbility({
         "Lock Int ~ 9",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -123,10 +123,10 @@ DefineAbility({
         "Lock Int ~ 10",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 10)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -138,10 +138,10 @@ DefineAbility({
         "Lock Int ~ 11",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 11)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -153,10 +153,10 @@ DefineAbility({
         "Lock Int ~ 12",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 12)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -168,10 +168,10 @@ DefineAbility({
         "Lock Int ~ 13",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 13)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -183,10 +183,10 @@ DefineAbility({
         "Lock Int ~ 14",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 14)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -198,10 +198,10 @@ DefineAbility({
         "Lock Int ~ 15",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 15)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -213,10 +213,10 @@ DefineAbility({
         "Lock Int ~ 16",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 16)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -228,10 +228,10 @@ DefineAbility({
         "Lock Int ~ 17",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 17)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -243,10 +243,10 @@ DefineAbility({
         "Lock Int ~ 18",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 18)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -258,10 +258,10 @@ DefineAbility({
         "Lock Int ~ 19",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 19)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -273,10 +273,10 @@ DefineAbility({
         "Lock Int ~ 20",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 20)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -288,10 +288,10 @@ DefineAbility({
         "Lock Int ~ 21",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 21)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -303,10 +303,10 @@ DefineAbility({
         "Lock Int ~ 22",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 22)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -318,10 +318,10 @@ DefineAbility({
         "Lock Int ~ 23",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 23)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -333,10 +333,10 @@ DefineAbility({
         "Lock Int ~ 24",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 24)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -348,10 +348,10 @@ DefineAbility({
         "Lock Int ~ 25",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 25)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -363,10 +363,10 @@ DefineAbility({
         "Lock Int ~ 26",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 26)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -378,10 +378,10 @@ DefineAbility({
         "Lock Int ~ 27",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 27)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -393,10 +393,10 @@ DefineAbility({
         "Lock Int ~ 28",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 28)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -408,10 +408,10 @@ DefineAbility({
         "Lock Int ~ 29",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 29)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -423,10 +423,10 @@ DefineAbility({
         "Lock Int ~ 30",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligenceLockNumber"] == 30)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableIntLock"] < 1)
         end,
       },
@@ -437,7 +437,7 @@ DefineAbility({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["INTSCORE"] > "IntelligenceLockNumber")
         end,
       },
@@ -689,10 +689,10 @@ DefineAbility({
         "Animal Companion ~ Bonus Tricks",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_BonusTricks") then return true end
@@ -708,10 +708,10 @@ DefineAbility({
         "Animal Companion ~ Link",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionLink") then return true end
@@ -727,10 +727,10 @@ DefineAbility({
         "Animal Companion ~ Share Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionShareSpells") then return true end
@@ -746,10 +746,10 @@ DefineAbility({
         "Animal Companion ~ Ability Score Increase",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 5)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_AbilityScoreIncrease") then return true end
@@ -765,10 +765,10 @@ DefineAbility({
         "Animal Companion ~ Devotion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionDevotion") then return true end
@@ -784,10 +784,10 @@ DefineAbility({
         "Animal Companion ~ Multiattack",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionMultiattack") then return true end
@@ -803,10 +803,10 @@ DefineAbility({
         "Animal Companion ~ Evasion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionEvasion") then return true end
@@ -822,10 +822,10 @@ DefineAbility({
         "Animal Companion ~ Improved Evasion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 16)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionImprovedEvasion") then return true end
@@ -841,10 +841,10 @@ DefineAbility({
         "Animal Companion ~ Spell Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 15)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_SpellResistance") then return true end
@@ -881,10 +881,10 @@ DefineAbility({
         "Animal Companion ~ Bonus Tricks",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_BonusTricks") then return true end
@@ -900,10 +900,10 @@ DefineAbility({
         "Animal Companion ~ Link",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionLink") then return true end
@@ -919,10 +919,10 @@ DefineAbility({
         "Animal Companion ~ Share Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionShareSpells") then return true end
@@ -938,10 +938,10 @@ DefineAbility({
         "Animal Companion ~ Ability Score Increase",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 4)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_AbilityScoreIncrease") then return true end
@@ -957,10 +957,10 @@ DefineAbility({
         "Animal Companion ~ Devotion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 6)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionDevotion") then return true end
@@ -976,10 +976,10 @@ DefineAbility({
         "Animal Companion ~ Multiattack",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 9)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionMultiattack") then return true end
@@ -995,10 +995,10 @@ DefineAbility({
         "Animal Companion ~ Evasion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 3)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionEvasion") then return true end
@@ -1014,10 +1014,10 @@ DefineAbility({
         "Animal Companion ~ Improved Evasion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 16)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionImprovedEvasion") then return true end
@@ -1033,10 +1033,10 @@ DefineAbility({
         "Animal Companion ~ Spell Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["MasterLevel"] >= 15)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_SpellResistance") then return true end
@@ -1167,7 +1167,7 @@ DefineAbility({
         "Multiattack",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] >= 3)
         end,
       },
@@ -1178,7 +1178,7 @@ DefineAbility({
       Name="CombatBonus",
       FormatString="Companion gets a second attack with their primary attack at -5",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] <= 3)
         end,
       },
@@ -1298,7 +1298,7 @@ ModifyAbility({
   Description={
     Format="You gain a second attack with one of your natural weapons at -5.",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return (character.Variables["NaturalAttacks"] < 3)
       end,
     },
@@ -1316,7 +1316,7 @@ DefineAbility({
         "Animal Companion ~ Bonus Tricks",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_BonusTricks") then return true end
@@ -1339,7 +1339,7 @@ DefineAbility({
         "Animal Companion ~ Link",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionLink") then return true end
@@ -1362,7 +1362,7 @@ DefineAbility({
         "Animal Companion ~ Share Spells",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionShareSpells") then return true end
@@ -1385,7 +1385,7 @@ DefineAbility({
         "Animal Companion ~ Ability Score Increase",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_AbilityScoreIncrease") then return true end
@@ -1408,7 +1408,7 @@ DefineAbility({
         "Animal Companion ~ Devotion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionDevotion") then return true end
@@ -1431,7 +1431,7 @@ DefineAbility({
         "Animal Companion ~ Multiattack",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionMultiattack") then return true end
@@ -1454,7 +1454,7 @@ DefineAbility({
         "Animal Companion ~ Evasion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionEvasion") then return true end
@@ -1477,7 +1477,7 @@ DefineAbility({
         "Animal Companion ~ Improved Evasion",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_CompanionImprovedEvasion") then return true end
@@ -1500,7 +1500,7 @@ DefineAbility({
         "Animal Companion ~ Spell Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_SpellResistanceAC") then return true end
@@ -1523,7 +1523,7 @@ DefineAbility({
         "Animal Companion ~ Spell Resistance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Archetype" then return false end
             if ability.IsAnyType("CF_SpellResistanceSM") then return true end
@@ -1570,7 +1570,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Archetype" then return false end
         if ability.IsAnyType("CF_CompanionAdvancement") then return true end
@@ -1597,7 +1597,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Archetype" then return false end
         if ability.IsAnyType("CF_CompanionAdvancement") then return true end
@@ -1624,7 +1624,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Ape)")
     end,
   },
@@ -1647,7 +1647,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Badger (Wolverine))")
     end,
   },
@@ -1670,7 +1670,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Bear)")
     end,
   },
@@ -1697,7 +1697,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Bird (Eagle))") or (character.Race.Name == "Companion (Bird (Hawk))") or (character.Race.Name == "Companion (Bird (Owl))")
     end,
   },
@@ -1729,7 +1729,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Boar)")
     end,
   },
@@ -1756,7 +1756,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Camel)")
     end,
   },
@@ -1788,7 +1788,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Cat (Small (Cheetah)))")
     end,
   },
@@ -1820,7 +1820,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Cat (Small (Leopard)))")
     end,
   },
@@ -1855,7 +1855,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Crocodile (Alligator))")
     end,
   },
@@ -1889,7 +1889,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Dog)")
     end,
   },
@@ -1925,7 +1925,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Horse)")
     end,
   },
@@ -1961,7 +1961,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Pony)")
     end,
   },
@@ -1993,7 +1993,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Shark)")
     end,
   },
@@ -2036,7 +2036,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Snake (Constrictor))")
     end,
   },
@@ -2059,7 +2059,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Snake (Viper))")
     end,
   },
@@ -2095,7 +2095,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Dire Rat)")
     end,
   },
@@ -2128,7 +2128,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Cat (Big (Lion)))")
     end,
   },
@@ -2161,7 +2161,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Cat (Big (Tiger)))")
     end,
   },
@@ -2211,7 +2211,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Dinosaur (Deinonychus))")
     end,
   },
@@ -2261,7 +2261,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Dinosaur (Velociraptor))")
     end,
   },
@@ -2284,7 +2284,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Wolf)")
     end,
   },
@@ -2332,7 +2332,7 @@ DefineAbility({
   Description={
     Format="Animal will attack all creatures",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return character.HasAnyAbility(function (ability)
           if ability.Category ~= "Special Ability" then return false end
           if ability.Name == "Animal Trick ~ Attack II" then return true end
@@ -2347,7 +2347,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Attack I",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Animal Trick ~ Attack II" then return true end
@@ -2360,7 +2360,7 @@ DefineAbility({
       Name="NAME",
       FormatString="Attack II",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Special Ability" then return false end
             if ability.Name == "Animal Trick ~ Attack II" then return true end
@@ -2383,7 +2383,7 @@ DefineAbility({
   },
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Animal Trick ~ Attack" then return true end
@@ -2565,14 +2565,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("AnimalTraining") then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Stats["INT"] >= 2)
     end,
   },
@@ -2606,7 +2606,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("AnimalTraining") then return true end
@@ -2645,14 +2645,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("AnimalTraining") then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Stats["INT"] >= 2)
     end,
   },
@@ -2685,7 +2685,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("AnimalTraining") then return true end
@@ -2726,14 +2726,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("AnimalTraining") then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Stats["INT"] >= 2)
     end,
   },
@@ -2769,14 +2769,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("AnimalTraining") then return true end
         return false
       end))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Stats["INT"] >= 2)
     end,
   },
@@ -2810,7 +2810,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not (character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.IsAnyType("AnimalTraining") then return true end
@@ -3019,7 +3019,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Stats["INT"] >= 3)
     end,
   },
@@ -3186,7 +3186,7 @@ DefineAbility({
       Category="WEAPONPROF=Tail Slap",
       Formula=Formula("-5"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.IsAnyType("NaturalAttackPrimary") then return true end
@@ -3206,7 +3206,7 @@ DefineAbility({
       Category="WEAPONPROF=Tail Slap",
       Formula=Formula("floor(STR/2)-STR"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "Internal" then return false end
             if ability.IsAnyType("NaturalAttackPrimary") then return true end
@@ -3226,10 +3226,10 @@ DefineAbility({
       Category="WEAPONPROF=Tail Slap",
       Formula=Formula("max(floor(STR/2),0)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["NaturalAttacks"] == 1)
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((character.Variables["UseWeaponsWithNaturalAttacks"] == 1))
         end,
       },
@@ -3324,7 +3324,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Dinosaur (Allosaurus))")
     end,
   },
@@ -3374,7 +3374,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Dinosaur (Parasaurolophus))")
     end,
   },
@@ -3417,7 +3417,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Dinosaur (Tylosaurus))")
     end,
   },
@@ -3451,7 +3451,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Gar)")
     end,
   },
@@ -3522,7 +3522,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Herd Animal (Ram))")
     end,
   },
@@ -3536,7 +3536,7 @@ DefineAbility({
   Category="Special Ability",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Hippopotamus)")
     end,
   },
@@ -3553,7 +3553,7 @@ DefineAbility({
   Category="Special Ability",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Megafauna (Arsinoitherium))")
     end,
   },
@@ -3570,7 +3570,7 @@ DefineAbility({
   Category="Special Ability",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Megafauna (Gylptodon))")
     end,
   },
@@ -3658,7 +3658,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Megafauna (Megaloceros))")
     end,
   },
@@ -3715,7 +3715,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Megafauna (Megatherium))")
     end,
   },
@@ -3739,7 +3739,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Primate (Baboon))")
     end,
   },
@@ -3762,7 +3762,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Ray (Manta))")
     end,
   },
@@ -3803,7 +3803,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Ray (Stingray))")
     end,
   },
@@ -3842,7 +3842,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Race.Name == "Companion (Turtle (Giant Snapping))")
     end,
   },
@@ -3966,7 +3966,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.IsProficientWithArmorType("Light")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Armor Proficiency (Light)" then return true end
@@ -3996,7 +3996,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.IsProficientWithArmorType("Medium")) or character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Armor Proficiency (Medium)" then return true end
@@ -4113,7 +4113,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_DEX"] >= 13)
     end,
   },
@@ -4181,17 +4181,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Stats["STR"] >= 13)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["(CL=Companion)"] >= 3)
     end,
   },
@@ -4245,10 +4245,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Stats["CON"] >= 13)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BONUS.COMBAT.AC.NaturalArmor"] >= 1)
     end,
   },
@@ -4282,10 +4282,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.TotalAttackBonus >= 4
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.IsProficientWithWeaponType("Natural"))
     end,
   },
@@ -4311,17 +4311,17 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Power Attack" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Stats["STR"] >= 13)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["(CL=Companion)"] >= 3)
     end,
   },
@@ -4410,14 +4410,14 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Dodge" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_DEX"] >= 13) or (character.Variables["FeatDexRequirement"] >= 13)
     end,
   },
@@ -4447,10 +4447,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Stats["STR"] >= 13)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["(CL=Companion)"] >= 3)
     end,
   },
@@ -4525,7 +4525,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Dodge" then return true end
@@ -4533,10 +4533,10 @@ DefineAbility({
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_DEX"] >= 13) or (character.Variables["FeatDexRequirement"] >= 13)
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.TotalAttackBonus >= 4
     end,
   },
@@ -4572,7 +4572,7 @@ DefineAbility({
   Description={
     Format="You gain +1 hit points whenever you gain a Hit Die (such as when you gain a level).",
     Conditions={
-      function (character, item)
+      function (character, item, sources)
         return character.HitDie >= 3
       end,
     },
@@ -4632,7 +4632,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["(CL=Companion)"] >= 3)
     end,
   },
@@ -4663,7 +4663,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["INTSCORE"] >= 3)
     end,
   },

@@ -46,19 +46,15 @@ ImportFile("ce_abilities_familiar_apg.lua", {
   Excludes={
   },
   Conditions={
-    function (source)
-      local count = 0
-      if source.Includes("Advanced Player's Guide") then
-        count = count + 1
-      end
-      return count >= 1
+    function (character, item, sources)
+      return any(sources, function (source)
+        return (source.Includes("Advanced Player's Guide"))
+      end)
     end,
-    function (source)
-      local count = 0
-      if source.Includes("Ultimate Magic") then
-        count = count + 1
-      end
-      return count < 1
+    function (character, item, sources)
+      return not any(sources, function (source)
+        return (source.Includes("Ultimate Magic"))
+      end)
     end,
   },
 })
@@ -70,12 +66,10 @@ ImportFile("ce_abilities_familiar_race_um.lua", {
   Excludes={
   },
   Conditions={
-    function (source)
-      local count = 0
-      if source.Includes("Ultimate Magic") then
-        count = count + 1
-      end
-      return count >= 1
+    function (character, item, sources)
+      return any(sources, function (source)
+        return (source.Includes("Ultimate Magic"))
+      end)
     end,
   },
 })
@@ -85,12 +79,10 @@ ImportFile("ce_abilities_familiar_um.lua", {
   Excludes={
   },
   Conditions={
-    function (source)
-      local count = 0
-      if source.Includes("Ultimate Magic") then
-        count = count + 1
-      end
-      return count >= 1
+    function (character, item, sources)
+      return any(sources, function (source)
+        return (source.Includes("Ultimate Magic"))
+      end)
     end,
   },
 })
@@ -101,19 +93,15 @@ ImportFile("ce_companionmods_familiar_apg.lua", {
   Excludes={
   },
   Conditions={
-    function (source)
-      local count = 0
-      if source.Includes("Advanced Player's Guide") then
-        count = count + 1
-      end
-      return count >= 1
+    function (character, item, sources)
+      return any(sources, function (source)
+        return (source.Includes("Advanced Player's Guide"))
+      end)
     end,
-    function (source)
-      local count = 0
-      if source.Includes("Ultimate Magic") then
-        count = count + 1
-      end
-      return count < 1
+    function (character, item, sources)
+      return not any(sources, function (source)
+        return (source.Includes("Ultimate Magic"))
+      end)
     end,
   },
 })
@@ -124,12 +112,10 @@ ImportFile("ce_companionmods_familiar_um.lua", {
   Excludes={
   },
   Conditions={
-    function (source)
-      local count = 0
-      if source.Includes("Ultimate Magic") then
-        count = count + 1
-      end
-      return count >= 1
+    function (character, item, sources)
+      return any(sources, function (source)
+        return (source.Includes("Ultimate Magic"))
+      end)
     end,
   },
 })
@@ -140,12 +126,10 @@ ImportFile("ce_kits_familiar_um.lua", {
   Excludes={
   },
   Conditions={
-    function (source)
-      local count = 0
-      if source.Includes("Ultimate Magic") then
-        count = count + 1
-      end
-      return count >= 1
+    function (character, item, sources)
+      return any(sources, function (source)
+        return (source.Includes("Ultimate Magic"))
+      end)
     end,
   },
 })
@@ -155,12 +139,10 @@ ImportFile("ce_races_familiar_apg.lua", {
   Excludes={
   },
   Conditions={
-    function (source)
-      local count = 0
-      if source.Includes("Advanced Player's Guide") then
-        count = count + 1
-      end
-      return count >= 1
+    function (character, item, sources)
+      return any(sources, function (source)
+        return (source.Includes("Advanced Player's Guide"))
+      end)
     end,
   },
 })
@@ -171,12 +153,10 @@ ImportFile("ce_races_familiar_um.lua", {
   Excludes={
   },
   Conditions={
-    function (source)
-      local count = 0
-      if source.Includes("Ultimate Magic") then
-        count = count + 1
-      end
-      return count >= 1
+    function (character, item, sources)
+      return any(sources, function (source)
+        return (source.Includes("Ultimate Magic"))
+      end)
     end,
   },
 })

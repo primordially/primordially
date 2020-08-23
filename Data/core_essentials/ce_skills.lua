@@ -7,14 +7,14 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Act" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -32,14 +32,14 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Act" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -57,14 +57,14 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Comedy" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -82,14 +82,14 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Comedy" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -107,14 +107,14 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Dance" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -132,14 +132,14 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Dance" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -157,14 +157,14 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Keyboard Instruments" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -182,14 +182,14 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Keyboard Instruments" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -207,7 +207,7 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Oratory" then return true end
@@ -215,7 +215,7 @@ DefineSkill({
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -233,7 +233,7 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Oratory" then return true end
@@ -241,7 +241,7 @@ DefineSkill({
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -259,7 +259,7 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Percussion Instruments" then return true end
@@ -267,7 +267,7 @@ DefineSkill({
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -285,7 +285,7 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Percussion Instruments" then return true end
@@ -293,7 +293,7 @@ DefineSkill({
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -311,7 +311,7 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Sing" then return true end
@@ -319,7 +319,7 @@ DefineSkill({
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -337,7 +337,7 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Sing" then return true end
@@ -345,7 +345,7 @@ DefineSkill({
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -363,7 +363,7 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ String Instruments" then return true end
@@ -371,7 +371,7 @@ DefineSkill({
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -389,7 +389,7 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ String Instruments" then return true end
@@ -397,7 +397,7 @@ DefineSkill({
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -415,7 +415,7 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Wind Instruments" then return true end
@@ -423,7 +423,7 @@ DefineSkill({
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -441,7 +441,7 @@ DefineSkill({
   UseUntrained=true,
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Versatile Performance ~ Wind Instruments" then return true end
@@ -449,7 +449,7 @@ DefineSkill({
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -465,14 +465,14 @@ DefineSkill({
   KeyStat="DEX",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Special Ability" then return false end
         if ability.Name == "Mount ~ Samurai" then return true end
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (IsRuleEnabled("DISPLAYSKILLUSE"))
     end,
   },
@@ -538,10 +538,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Profession (Fortune-teller)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Fortune-teller)").ranks >= 1)
         end,
       },
@@ -565,7 +565,7 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Fortune-teller))" then return true end
@@ -584,14 +584,14 @@ ModifySkill({
         Name="SkillFocus",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.HasAnyAbility(function (ability)
             if ability.Category ~= "FEAT" then return false end
             if ability.Name == "Skill Focus (Profession (Fortune-teller))" then return true end
             return false
           end)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Profession (Fortune-teller)").ranks >= 10)
         end,
       },
@@ -616,10 +616,10 @@ DefineSkill({
         Name="ClassSkill",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return ((character.IsClassSkill("Craft (Clockwork)") and 1 or 0)) >= 1
         end,
-        function (character, item)
+        function (character, item, sources)
           return (character.Skill("Craft (Clockwork)").ranks >= 1)
         end,
       },
@@ -629,7 +629,7 @@ DefineSkill({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["AnimalCompanionSkill"] < 1)
     end,
   },

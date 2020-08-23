@@ -13,13 +13,13 @@ DefineEquipmentModifier({
   NameModifier="NOTHING",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Material ~ Cloth")) or not ((item.HasModifierType("Mundane")))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Metal")) or (item.IsType("Wooden")))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Artisan")) or (item.IsType("Spell Component")))
     end,
   },
@@ -45,13 +45,13 @@ DefineEquipmentModifier({
   NameModifier="NOTHING",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Material ~ Leather")) or not ((item.HasModifierType("Mundane")))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Metal")) or (item.IsType("Wooden")))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Artisan")) or (item.IsType("Spell Component")))
     end,
   },
@@ -74,13 +74,13 @@ DefineEquipmentModifier({
   NameModifier="NOTHING",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Material ~ Rope")) or not ((item.HasModifierType("Mundane")))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Metal")) or (item.IsType("Wooden")))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Artisan")) or (item.IsType("Spell Component")))
     end,
   },
@@ -103,13 +103,13 @@ DefineEquipmentModifier({
   NameModifier="NOTHING",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Material ~ Steel")) or not ((item.HasModifierType("Mundane")))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Wooden")))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Artisan")) or (item.IsType("Spell Component")))
     end,
   },
@@ -136,13 +136,13 @@ DefineEquipmentModifier({
   NameModifier="NOTHING",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Material ~ Wood")) or not ((item.HasModifierType("Mundane")))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Metal")))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Artisan")) or (item.IsType("Spell Component")))
     end,
   },
@@ -175,7 +175,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("300"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -195,13 +195,13 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Weapon"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Shield")))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Masterwork")) or (item.IsType("Mithral")) or (item.IsType("Adamantine")) or (item.IsType("Darkwood")))
     end,
   },
@@ -226,7 +226,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("6"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("AMMUNITION"))
         end,
       },
@@ -246,10 +246,10 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Ammunition"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Masterwork")) or (item.IsType("Mithral")) or (item.IsType("Adamantine")) or (item.IsType("Darkwood")))
     end,
   },
@@ -284,7 +284,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("ARMOR"))
         end,
       },
@@ -296,7 +296,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SHIELD"))
         end,
       },
@@ -306,10 +306,10 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Masterwork")) or (item.IsType("Mithral")) or (item.IsType("Adamantine")) or (item.IsType("Darkwood")))
     end,
   },
@@ -335,7 +335,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("20"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("THIEF"))
         end,
       },
@@ -347,7 +347,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("45"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("INSTRUMENT"))
         end,
       },
@@ -357,10 +357,10 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Masterwork")) or (item.IsType("Mithral")) or (item.IsType("Adamantine")) or (item.IsType("Darkwood")))
     end,
   },
@@ -381,10 +381,10 @@ DefineEquipmentModifier({
   SourcePage="p.160",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Amulet")) or (item.IsType("Ring")) or (item.IsType("Staff")) or (item.IsType("Wand"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Masterwork")) or (item.IsType("Mithral")) or (item.IsType("Adamantine")) or (item.IsType("Darkwood")))
     end,
   },
@@ -407,7 +407,7 @@ DefineEquipmentModifier({
   SourcePage="p.78",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Amulet")) or (item.IsType("Ring")) or (item.IsType("Staff")) or (item.IsType("Wand")) or (item.IsType("Masterwork")) or (item.IsType("Mithral")) or (item.IsType("Adamantine")) or (item.IsType("Darkwood")) and (item.IsType("Weapon"))
     end,
   },
@@ -437,7 +437,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("-294"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("MASTERWORK"))
         end,
       },
@@ -449,7 +449,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("-2646"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("ADAMANTINE"))
         end,
       },
@@ -461,7 +461,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("-18"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SILVER"))
         end,
       },
@@ -473,7 +473,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("319"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("MITHRAL"))
         end,
       },
@@ -485,10 +485,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("-1960"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WeaponEnhancement"))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("COLDIRON"))
         end,
       },
@@ -500,7 +500,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("-1960"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("PLUS1"))
         end,
       },
@@ -512,7 +512,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("-7840"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("PLUS2"))
         end,
       },
@@ -524,7 +524,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("-17640"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("PLUS3"))
         end,
       },
@@ -536,7 +536,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("-31360"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("PLUS4"))
         end,
       },
@@ -548,7 +548,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("-49000"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("PLUS5"))
         end,
       },
@@ -574,10 +574,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("75*%CHOICE"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["%CHOICE"] > 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SHORTBOW"))
         end,
       },
@@ -589,10 +589,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("100*%CHOICE"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["%CHOICE"] > 0)
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("LONGBOW"))
         end,
       },
@@ -604,7 +604,7 @@ DefineEquipmentModifier({
       Category="WEAPON",
       Formula=Formula("-2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["%CHOICE"] > "STR")
         end,
       },
@@ -624,7 +624,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Composite")) and (item.IsType("Bow"))
     end,
   },
@@ -806,7 +806,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Shield")) or (item.IsType("Armor"))
     end,
   },
@@ -853,7 +853,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Shield")) or (item.IsType("Armor"))
     end,
   },
@@ -949,7 +949,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("-BASECOST*.25"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -970,7 +970,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Weapon"))
     end,
   },
@@ -1000,7 +1000,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("-BASECOST*.25"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("ARMOR"))
         end,
       },
@@ -1010,7 +1010,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Armor"))
     end,
   },
@@ -1040,7 +1040,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("-BASECOST*.25"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SHIELD"))
         end,
       },
@@ -1050,7 +1050,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Shield"))
     end,
   },
@@ -1080,7 +1080,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("-BASECOST*.25"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("TOOLS"))
         end,
       },
@@ -1090,7 +1090,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools"))
     end,
   },
@@ -1120,7 +1120,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("-BASECOST*.25"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WAND"))
         end,
       },
@@ -1132,7 +1132,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("-BASECOST*.25"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("STAFF"))
         end,
       },
@@ -1142,7 +1142,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Wand")) or (item.IsType("Staff"))
     end,
   },
@@ -1169,7 +1169,7 @@ DefineEquipmentModifier({
   SourcePage="p.161",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Holy Symbol"))
     end,
   },
@@ -1198,7 +1198,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Holy Symbol"))
     end,
   },
@@ -1225,7 +1225,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1235,7 +1235,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1265,7 +1265,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1275,7 +1275,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1305,7 +1305,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1315,7 +1315,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1345,7 +1345,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1355,7 +1355,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1385,7 +1385,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1395,7 +1395,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1425,7 +1425,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1435,7 +1435,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1465,7 +1465,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1475,7 +1475,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1505,7 +1505,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1515,7 +1515,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1545,7 +1545,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1555,7 +1555,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1585,7 +1585,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1595,7 +1595,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1625,7 +1625,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1635,7 +1635,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1665,7 +1665,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1675,7 +1675,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1705,7 +1705,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1715,7 +1715,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1745,7 +1745,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1755,7 +1755,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1785,7 +1785,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1795,7 +1795,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1825,7 +1825,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1835,7 +1835,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1865,7 +1865,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1875,7 +1875,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1905,7 +1905,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1915,7 +1915,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1945,7 +1945,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1955,7 +1955,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -1985,7 +1985,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -1995,7 +1995,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -2025,7 +2025,7 @@ DefineEquipmentModifier({
         Name="Circumstance",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Masterwork"))
         end,
       },
@@ -2035,7 +2035,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Tools")) and (item.IsType("Artisan"))
     end,
   },
@@ -2059,7 +2059,7 @@ DefineEquipmentModifier({
   SourcePage="p.154",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Metal"))
     end,
   },
@@ -2117,7 +2117,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Metal")) and (item.IsType("Light"))
     end,
   },
@@ -2179,7 +2179,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Metal")) and (item.IsType("Medium"))
     end,
   },
@@ -2241,7 +2241,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Metal")) and (item.IsType("Heavy"))
     end,
   },
@@ -2290,7 +2290,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Metal"))
     end,
   },
@@ -2373,10 +2373,10 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Light"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Metal"))
     end,
   },
@@ -2467,10 +2467,10 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Medium"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Metal"))
     end,
   },
@@ -2561,10 +2561,10 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Heavy"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Metal"))
     end,
   },
@@ -2651,7 +2651,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Metal"))
     end,
   },
@@ -2706,7 +2706,7 @@ DefineEquipmentModifier({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -2721,7 +2721,7 @@ DefineEquipmentModifier({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("AMMUNITION"))
         end,
       },
@@ -2731,7 +2731,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Metal"))
     end,
   },
@@ -2797,7 +2797,7 @@ DefineEquipmentModifier({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SHIELD"))
         end,
       },
@@ -2809,7 +2809,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("6"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("AMMUNITION"))
         end,
       },
@@ -2821,10 +2821,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("300"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.IsType("Shield")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -2836,7 +2836,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SHIELD"))
         end,
       },
@@ -2851,10 +2851,10 @@ DefineEquipmentModifier({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
-        function (character, item)
+        function (character, item, sources)
           return not ((item.IsType("Shield")))
         end,
       },
@@ -2864,7 +2864,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Wooden"))
     end,
   },
@@ -2963,10 +2963,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("(BASECOST)"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.IsType("Double")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -2978,10 +2978,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("(BASECOST)/2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Double"))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -2993,7 +2993,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("40"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Enhancement")) and (item.IsType("AMMUNITION"))
         end,
       },
@@ -3005,7 +3005,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("2000"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Enhancement")) and (item.IsType("WEAPON"))
         end,
       },
@@ -3015,10 +3015,10 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Metal"))
     end,
   },
@@ -3055,7 +3055,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("2"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("AMMUNITION"))
         end,
       },
@@ -3067,10 +3067,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("20"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.WieldCategory == "LIGHT") and not ((item.IsType("Double")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -3082,10 +3082,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("90"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.WieldCategory == "ONEHANDED") and not ((item.IsType("Double")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -3097,10 +3097,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("180"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.WieldCategory == "TWOHANDED") and not ((item.IsType("Double")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -3112,10 +3112,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("90"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("Double"))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -3131,7 +3131,7 @@ DefineEquipmentModifier({
         Stack=true,
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("PIERCING")) or (item.IsType("SLASHING"))
         end,
       },
@@ -3141,13 +3141,13 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Metal"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Mithral")) or (item.IsType("Adamantine")) or (item.IsType("ColdIron")) or (item.IsType("Silver")))
     end,
   },
@@ -3546,7 +3546,7 @@ DefineEquipmentModifier({
   SourcePage="p.550",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -3588,7 +3588,7 @@ DefineEquipmentModifier({
   SourcePage="p.550",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -3640,7 +3640,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -3696,7 +3696,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -3747,7 +3747,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -3803,7 +3803,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -3859,7 +3859,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -3915,7 +3915,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -3971,7 +3971,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4027,7 +4027,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4083,7 +4083,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4139,7 +4139,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4197,7 +4197,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4255,7 +4255,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4313,7 +4313,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4371,7 +4371,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4429,7 +4429,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4487,7 +4487,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4543,7 +4543,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4588,7 +4588,7 @@ DefineEquipmentModifier({
   SpellResistance=Formula("%CHOICE"),
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4689,7 +4689,7 @@ DefineEquipmentModifier({
   SourcePage="p.550",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4731,7 +4731,7 @@ DefineEquipmentModifier({
   SourcePage="p.550",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4773,7 +4773,7 @@ DefineEquipmentModifier({
   SourcePage="p.550",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4815,7 +4815,7 @@ DefineEquipmentModifier({
   SourcePage="p.550",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4857,7 +4857,7 @@ DefineEquipmentModifier({
   SourcePage="p.550",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Enhancement")) or (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) or (item.IsType("WeaponEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Weapon")) or (item.IsType("Belt")) or (item.IsType("Body")) or (item.IsType("Chest")) or (item.IsType("Eyes")) or (item.IsType("Feet")) or (item.IsType("Hands")) or (item.IsType("Head")) or (item.IsType("Headband")) or (item.IsType("Neck")) or (item.IsType("Ring")) or (item.IsType("Shoulders")) or (item.IsType("Wrist")) or (item.IsType("Instrument")) or (item.IsType("Staff")) or (item.IsType("Rod"))
     end,
   },
@@ -4968,10 +4968,10 @@ DefineEquipmentModifier({
   SourcePage="p.490",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Scroll"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Divine")))
     end,
   },
@@ -4999,10 +4999,10 @@ DefineEquipmentModifier({
   SourcePage="p.490",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Scroll"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Arcane")))
     end,
   },
@@ -5160,7 +5160,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -5172,10 +5172,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("300"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -5196,10 +5196,10 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Weapon"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Ammunition")))
     end,
   },
@@ -5234,7 +5234,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -5246,10 +5246,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("300"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -5270,10 +5270,10 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Weapon"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Ammunition")))
     end,
   },
@@ -5308,7 +5308,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -5320,10 +5320,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("300"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -5344,10 +5344,10 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Weapon"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Ammunition")))
     end,
   },
@@ -5382,7 +5382,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -5394,10 +5394,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("300"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -5418,10 +5418,10 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Weapon"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Ammunition")))
     end,
   },
@@ -5456,7 +5456,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("2000*HEADPLUSTOTAL*HEADPLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -5468,10 +5468,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("300"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("WEAPON"))
         end,
       },
@@ -5492,10 +5492,10 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Weapon"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Ammunition")))
     end,
   },
@@ -5530,7 +5530,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("AMMUNITION"))
         end,
       },
@@ -5542,10 +5542,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("6"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("AMMUNITION"))
         end,
       },
@@ -5566,7 +5566,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Ammunition"))
     end,
   },
@@ -5601,7 +5601,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("AMMUNITION"))
         end,
       },
@@ -5613,10 +5613,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("6"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("AMMUNITION"))
         end,
       },
@@ -5637,7 +5637,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Ammunition"))
     end,
   },
@@ -5672,7 +5672,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("AMMUNITION"))
         end,
       },
@@ -5684,10 +5684,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("6"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("AMMUNITION"))
         end,
       },
@@ -5708,7 +5708,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Ammunition"))
     end,
   },
@@ -5743,7 +5743,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("AMMUNITION"))
         end,
       },
@@ -5755,10 +5755,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("6"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("AMMUNITION"))
         end,
       },
@@ -5779,7 +5779,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Ammunition"))
     end,
   },
@@ -5814,7 +5814,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("40*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("AMMUNITION"))
         end,
       },
@@ -5826,10 +5826,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("6"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("AMMUNITION"))
         end,
       },
@@ -5850,7 +5850,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Ammunition"))
     end,
   },
@@ -5887,7 +5887,7 @@ DefineEquipmentModifier({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LG") or character.IsAlignment("LN") or character.IsAlignment("LE")
         end,
       },
@@ -5898,7 +5898,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LG") or character.IsAlignment("LN") or character.IsAlignment("LE")
         end,
       },
@@ -5908,7 +5908,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -5938,7 +5938,7 @@ DefineEquipmentModifier({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("CG") or character.IsAlignment("CN") or character.IsAlignment("CE")
         end,
       },
@@ -5949,7 +5949,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("CG") or character.IsAlignment("CN") or character.IsAlignment("CE")
         end,
       },
@@ -5959,7 +5959,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -5985,7 +5985,7 @@ DefineEquipmentModifier({
   SourcePage="p.469",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -6008,7 +6008,7 @@ DefineEquipmentModifier({
   SourcePage="p.470",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -6032,7 +6032,7 @@ DefineEquipmentModifier({
   SourcePage="p.346",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) and (item.IsType("Melee"))
     end,
   },
@@ -6055,7 +6055,7 @@ DefineEquipmentModifier({
   SourcePage="p.347",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) and (item.IsType("Melee"))
     end,
   },
@@ -6078,7 +6078,7 @@ DefineEquipmentModifier({
   SourcePage="p.347",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) and (item.IsType("Bludgeoning"))
     end,
   },
@@ -6111,7 +6111,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) and (item.IsType("Ranged"))
     end,
   },
@@ -6134,7 +6134,7 @@ DefineEquipmentModifier({
   SourcePage="p.347",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -6157,7 +6157,7 @@ DefineEquipmentModifier({
   SourcePage="p.347",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -6183,7 +6183,7 @@ DefineEquipmentModifier({
   SourcePage="p.347",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -6206,7 +6206,7 @@ DefineEquipmentModifier({
   SourcePage="p.347",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -6236,7 +6236,7 @@ DefineEquipmentModifier({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE")
         end,
       },
@@ -6247,7 +6247,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE")
         end,
       },
@@ -6257,7 +6257,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -6280,7 +6280,7 @@ DefineEquipmentModifier({
   SourcePage="p.347",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -6318,7 +6318,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) and (item.IsType("Piercing")) or (item.IsType("Slashing"))
     end,
   },
@@ -6342,7 +6342,7 @@ DefineEquipmentModifier({
   SourcePage="p.347",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) and (item.IsType("Melee"))
     end,
   },
@@ -6365,7 +6365,7 @@ DefineEquipmentModifier({
   SourcePage="p.348",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -6388,7 +6388,7 @@ DefineEquipmentModifier({
   SourcePage="p.348",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) and (item.IsType("Melee"))
     end,
   },
@@ -6412,7 +6412,7 @@ DefineEquipmentModifier({
   SourcePage="p.348",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) and (item.IsType("Thrown"))
     end,
   },
@@ -6435,10 +6435,10 @@ DefineEquipmentModifier({
   SourcePage="p.348",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) and (item.IsType("Ranged"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Thrown")))
     end,
   },
@@ -6461,7 +6461,7 @@ DefineEquipmentModifier({
   SourcePage="p.348",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -6484,7 +6484,7 @@ DefineEquipmentModifier({
   SourcePage="p.348",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -6519,7 +6519,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon"))
     end,
   },
@@ -6541,7 +6541,7 @@ DefineEquipmentModifier({
   SourcePage="p.348",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) and (item.IsType("Melee"))
     end,
   },
@@ -6564,7 +6564,7 @@ DefineEquipmentModifier({
   SourcePage="p.349",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -6600,7 +6600,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) and (item.IsType("Melee"))
     end,
   },
@@ -6634,7 +6634,7 @@ DefineEquipmentModifier({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG")
         end,
       },
@@ -6645,7 +6645,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG")
         end,
       },
@@ -6655,7 +6655,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -6678,7 +6678,7 @@ DefineEquipmentModifier({
   SourcePage="p.349",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) and (item.IsType("Melee"))
     end,
   },
@@ -6701,7 +6701,7 @@ DefineEquipmentModifier({
   SourcePage="p.349",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) and (item.IsType("Melee")) and (item.IsType("Slashing"))
     end,
   },
@@ -6725,7 +6725,7 @@ DefineEquipmentModifier({
   SourcePage="p.349",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("WeaponEnhancement")) and (item.IsType("Weapon")) or (item.IsType("Ammunition"))
     end,
   },
@@ -6768,7 +6768,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -6804,7 +6804,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -6840,7 +6840,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -6876,7 +6876,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -6912,7 +6912,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -6943,7 +6943,7 @@ DefineEquipmentModifier({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LG") or character.IsAlignment("LN") or character.IsAlignment("LE")
         end,
       },
@@ -6961,7 +6961,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LG") or character.IsAlignment("LN") or character.IsAlignment("LE")
         end,
       },
@@ -6971,7 +6971,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7001,7 +7001,7 @@ DefineEquipmentModifier({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("CG") or character.IsAlignment("CN") or character.IsAlignment("CE")
         end,
       },
@@ -7019,7 +7019,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("CG") or character.IsAlignment("CN") or character.IsAlignment("CE")
         end,
       },
@@ -7029,7 +7029,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7064,7 +7064,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7096,7 +7096,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7128,7 +7128,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7160,7 +7160,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7192,7 +7192,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7224,7 +7224,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7259,7 +7259,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7291,7 +7291,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7321,7 +7321,7 @@ DefineEquipmentModifier({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE")
         end,
       },
@@ -7339,7 +7339,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LE") or character.IsAlignment("NE") or character.IsAlignment("CE")
         end,
       },
@@ -7349,7 +7349,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7381,7 +7381,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7416,7 +7416,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7448,7 +7448,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7480,7 +7480,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7512,7 +7512,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7544,7 +7544,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7579,7 +7579,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7611,7 +7611,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7643,7 +7643,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7676,7 +7676,7 @@ DefineEquipmentModifier({
         "Negative Levels",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG")
         end,
       },
@@ -7694,7 +7694,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return character.IsAlignment("LG") or character.IsAlignment("NG") or character.IsAlignment("CG")
         end,
       },
@@ -7704,7 +7704,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7736,7 +7736,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7768,7 +7768,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Special Ability ~ Amulet of Mighty Fists Base"))
     end,
   },
@@ -7798,7 +7798,7 @@ DefineEquipmentModifier({
         Name="ArmorEnhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -7813,7 +7813,7 @@ DefineEquipmentModifier({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
       },
@@ -7825,7 +7825,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("ARMOR"))
         end,
       },
@@ -7837,10 +7837,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("ARMOR"))
         end,
       },
@@ -7850,7 +7850,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Armor"))
     end,
   },
@@ -7888,7 +7888,7 @@ DefineEquipmentModifier({
         Name="ArmorEnhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -7903,7 +7903,7 @@ DefineEquipmentModifier({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
       },
@@ -7915,7 +7915,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("ARMOR"))
         end,
       },
@@ -7927,10 +7927,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("ARMOR"))
         end,
       },
@@ -7940,7 +7940,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Armor"))
     end,
   },
@@ -7978,7 +7978,7 @@ DefineEquipmentModifier({
         Name="ArmorEnhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -7993,7 +7993,7 @@ DefineEquipmentModifier({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
       },
@@ -8005,7 +8005,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("ARMOR"))
         end,
       },
@@ -8017,10 +8017,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("ARMOR"))
         end,
       },
@@ -8030,7 +8030,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Armor"))
     end,
   },
@@ -8068,7 +8068,7 @@ DefineEquipmentModifier({
         Name="ArmorEnhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -8083,7 +8083,7 @@ DefineEquipmentModifier({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
       },
@@ -8095,7 +8095,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("ARMOR"))
         end,
       },
@@ -8107,10 +8107,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("ARMOR"))
         end,
       },
@@ -8120,7 +8120,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Armor"))
     end,
   },
@@ -8158,7 +8158,7 @@ DefineEquipmentModifier({
         Name="ArmorEnhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableArmorBonus"] == 0)
         end,
       },
@@ -8173,7 +8173,7 @@ DefineEquipmentModifier({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
       },
@@ -8185,7 +8185,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("ARMOR"))
         end,
       },
@@ -8197,10 +8197,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("ARMOR"))
         end,
       },
@@ -8210,7 +8210,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Armor"))
     end,
   },
@@ -8248,7 +8248,7 @@ DefineEquipmentModifier({
         Name="ShieldEnhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableShieldBonus"] == 0)
         end,
       },
@@ -8263,7 +8263,7 @@ DefineEquipmentModifier({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
       },
@@ -8275,7 +8275,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SHIELD"))
         end,
       },
@@ -8287,10 +8287,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SHIELD"))
         end,
       },
@@ -8300,7 +8300,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Shield"))
     end,
   },
@@ -8338,7 +8338,7 @@ DefineEquipmentModifier({
         Name="ShieldEnhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableShieldBonus"] == 0)
         end,
       },
@@ -8353,7 +8353,7 @@ DefineEquipmentModifier({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
       },
@@ -8365,7 +8365,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SHIELD"))
         end,
       },
@@ -8377,10 +8377,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SHIELD"))
         end,
       },
@@ -8390,7 +8390,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Shield"))
     end,
   },
@@ -8428,7 +8428,7 @@ DefineEquipmentModifier({
         Name="ShieldEnhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableShieldBonus"] == 0)
         end,
       },
@@ -8443,7 +8443,7 @@ DefineEquipmentModifier({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
       },
@@ -8455,7 +8455,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SHIELD"))
         end,
       },
@@ -8467,10 +8467,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SHIELD"))
         end,
       },
@@ -8480,7 +8480,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Shield"))
     end,
   },
@@ -8518,7 +8518,7 @@ DefineEquipmentModifier({
         Name="ShieldEnhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableShieldBonus"] == 0)
         end,
       },
@@ -8533,7 +8533,7 @@ DefineEquipmentModifier({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
       },
@@ -8545,7 +8545,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SHIELD"))
         end,
       },
@@ -8557,10 +8557,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SHIELD"))
         end,
       },
@@ -8570,7 +8570,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Shield"))
     end,
   },
@@ -8608,7 +8608,7 @@ DefineEquipmentModifier({
         Name="ShieldEnhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["DisableShieldBonus"] == 0)
         end,
       },
@@ -8623,7 +8623,7 @@ DefineEquipmentModifier({
         Name="Enhancement",
       },
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
       },
@@ -8635,7 +8635,7 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("1000*PLUSTOTAL*PLUSTOTAL"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SHIELD"))
         end,
       },
@@ -8647,10 +8647,10 @@ DefineEquipmentModifier({
       Category="ITEMCOST",
       Formula=Formula("150"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((item.HasModifierType("MASTERWORKQUALITY")))
         end,
-        function (character, item)
+        function (character, item, sources)
           return (item.IsType("SHIELD"))
         end,
       },
@@ -8660,7 +8660,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Shield"))
     end,
   },
@@ -8699,7 +8699,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ShieldEnhancement")) and (item.IsType("Shield"))
     end,
   },
@@ -8721,7 +8721,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ShieldEnhancement")) and (item.IsType("Shield"))
     end,
   },
@@ -8752,7 +8752,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ShieldEnhancement")) and (item.IsType("Shield"))
     end,
   },
@@ -8790,7 +8790,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ShieldEnhancement")) and (item.IsType("Heavy"))
     end,
   },
@@ -8833,7 +8833,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ShieldEnhancement")) and (item.IsType("Light"))
     end,
   },
@@ -8860,7 +8860,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ShieldEnhancement")) and (item.IsType("Shield"))
     end,
   },
@@ -8882,7 +8882,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -8905,7 +8905,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -8928,7 +8928,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -8951,7 +8951,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -8974,7 +8974,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -8997,7 +8997,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -9020,7 +9020,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -9043,7 +9043,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -9066,7 +9066,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -9089,7 +9089,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -9112,7 +9112,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -9135,7 +9135,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -9158,7 +9158,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -9181,7 +9181,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -9204,7 +9204,7 @@ DefineEquipmentModifier({
   SourcePage="p.462",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -9227,7 +9227,7 @@ DefineEquipmentModifier({
   SourcePage="p.463",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) and (item.IsType("Armor"))
     end,
   },
@@ -9259,7 +9259,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Bracer"))
     end,
   },
@@ -9298,7 +9298,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Bracer"))
     end,
   },
@@ -9337,7 +9337,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Bracer"))
     end,
   },
@@ -9366,7 +9366,7 @@ DefineEquipmentModifier({
   SourcePage="p.463",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield")) or (item.IsType("Bracer"))
     end,
   },
@@ -9391,7 +9391,7 @@ DefineEquipmentModifier({
   SourcePage="p.463",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) and (item.IsType("Armor"))
     end,
   },
@@ -9416,7 +9416,7 @@ DefineEquipmentModifier({
   SourcePage="p.464",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) and (item.IsType("Armor")) or (item.IsType("Bracer"))
     end,
   },
@@ -9440,7 +9440,7 @@ DefineEquipmentModifier({
   SourcePage="p.464",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ShieldEnhancement")) and (item.IsType("Shield"))
     end,
   },
@@ -9474,7 +9474,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) and (item.IsType("Armor"))
     end,
   },
@@ -9508,7 +9508,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) and (item.IsType("Armor"))
     end,
   },
@@ -9542,7 +9542,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) and (item.IsType("Armor"))
     end,
   },
@@ -9576,7 +9576,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) and (item.IsType("Armor"))
     end,
   },
@@ -9610,7 +9610,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) and (item.IsType("Armor"))
     end,
   },
@@ -9644,7 +9644,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) and (item.IsType("Armor"))
     end,
   },
@@ -9667,7 +9667,7 @@ DefineEquipmentModifier({
   SpellResistance=Formula("13"),
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) and (item.IsType("Armor")) or (item.IsType("Bracer"))
     end,
   },
@@ -9692,7 +9692,7 @@ DefineEquipmentModifier({
   SpellResistance=Formula("15"),
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) and (item.IsType("Armor")) or (item.IsType("Bracer"))
     end,
   },
@@ -9717,7 +9717,7 @@ DefineEquipmentModifier({
   SpellResistance=Formula("17"),
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) and (item.IsType("Armor")) or (item.IsType("Bracer"))
     end,
   },
@@ -9742,7 +9742,7 @@ DefineEquipmentModifier({
   SpellResistance=Formula("19"),
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) and (item.IsType("Armor")) or (item.IsType("Bracer"))
     end,
   },
@@ -9766,7 +9766,7 @@ DefineEquipmentModifier({
   SourcePage="p.464",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) or (item.IsType("ShieldEnhancement")) and (item.IsType("Armor")) or (item.IsType("Shield"))
     end,
   },
@@ -9789,7 +9789,7 @@ DefineEquipmentModifier({
   SourcePage="p.464",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ArmorEnhancement")) and (item.IsType("Armor")) or (item.IsType("Bracer"))
     end,
   },
@@ -9813,7 +9813,7 @@ DefineEquipmentModifier({
   SourcePage="p.464",
   Visible=true,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ShieldEnhancement")) and (item.IsType("Shield"))
     end,
   },
@@ -9853,7 +9853,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligentItemEgo"] >= 20)
         end,
       },
@@ -9865,7 +9865,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligentItemEgo"] >= 30)
         end,
       },
@@ -9877,7 +9877,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligentItemEgo"] <= 19)
         end,
       },
@@ -9889,7 +9889,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligentItemEgo"] <= 29)
         end,
       },
@@ -9901,7 +9901,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return (character.Variables["IntelligentItemEgo"] >= 30)
         end,
       },
@@ -9946,7 +9946,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Magic"))
     end,
   },
@@ -9963,7 +9963,7 @@ DefineEquipmentModifier({
     {
       Format="Empathy allows the item to encourage or discourage certain actions by communicating emotions and urges. It does not allow for verbal communication.",
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not ((character.HasEquipped(function (item) return stringMatch(item.Name, "EQMOD=Intelligent Item ~ Communication / Speech") end)) or (character.HasEquipped(function (item) return stringMatch(item.Name, "EQMOD=Intelligent Item ~ Communication / Telepathy") end)))
         end,
       },
@@ -9990,7 +9990,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -10025,7 +10025,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10085,7 +10085,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10138,7 +10138,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10198,7 +10198,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10251,7 +10251,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10311,7 +10311,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10364,7 +10364,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10424,7 +10424,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10477,7 +10477,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10537,7 +10537,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10583,7 +10583,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10636,7 +10636,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10689,7 +10689,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10742,7 +10742,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10795,7 +10795,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10848,7 +10848,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10901,7 +10901,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -10954,7 +10954,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11007,7 +11007,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11060,7 +11060,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11106,7 +11106,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11159,7 +11159,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11212,7 +11212,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11265,7 +11265,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11318,7 +11318,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11371,7 +11371,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11424,7 +11424,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11477,7 +11477,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11530,7 +11530,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11583,7 +11583,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11620,7 +11620,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11651,7 +11651,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11682,7 +11682,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11711,7 +11711,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11740,7 +11740,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11774,7 +11774,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11808,7 +11808,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11839,7 +11839,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11874,7 +11874,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("CG"))
         end,
       },
@@ -11884,7 +11884,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11927,7 +11927,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("CG") or character.IsAlignment("CE") or character.IsAlignment("CN"))
         end,
       },
@@ -11937,7 +11937,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -11980,7 +11980,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("CE"))
         end,
       },
@@ -11990,7 +11990,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -12033,7 +12033,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("NE") or character.IsAlignment("NG") or character.IsAlignment("TN"))
         end,
       },
@@ -12043,7 +12043,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -12086,7 +12086,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("LE"))
         end,
       },
@@ -12096,7 +12096,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -12139,7 +12139,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("LG"))
         end,
       },
@@ -12149,7 +12149,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -12192,7 +12192,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("LN") or character.IsAlignment("LG") or character.IsAlignment("LE"))
         end,
       },
@@ -12202,7 +12202,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -12245,7 +12245,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("NG"))
         end,
       },
@@ -12255,7 +12255,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -12298,7 +12298,7 @@ DefineEquipmentModifier({
       Category="VAR",
       Formula=Formula("1+var(\"IntItemNegativeLevel\")"),
       Conditions={
-        function (character, item)
+        function (character, item, sources)
           return not (character.IsAlignment("TN"))
         end,
       },
@@ -12308,7 +12308,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base"))
     end,
   },
@@ -12352,7 +12352,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -12391,7 +12391,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -12430,7 +12430,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -12469,7 +12469,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -12508,7 +12508,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -12547,7 +12547,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -12586,7 +12586,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -12625,7 +12625,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -12668,7 +12668,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -12704,7 +12704,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -12747,7 +12747,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -12783,7 +12783,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -12826,7 +12826,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -12866,7 +12866,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -12906,7 +12906,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("ItemAlign"))
     end,
   },
@@ -12939,7 +12939,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose"))
     end,
   },
@@ -12975,7 +12975,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose"))
     end,
   },
@@ -13011,7 +13011,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose"))
     end,
   },
@@ -13047,7 +13047,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose"))
     end,
   },
@@ -13083,7 +13083,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose"))
     end,
   },
@@ -13119,7 +13119,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose"))
     end,
   },
@@ -13155,7 +13155,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose"))
     end,
   },
@@ -13191,7 +13191,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose"))
     end,
   },
@@ -13227,7 +13227,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose"))
     end,
   },
@@ -13263,7 +13263,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose"))
     end,
   },
@@ -13297,7 +13297,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose")) and (item.IsType("DedicatedPurpose"))
     end,
   },
@@ -13333,7 +13333,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose")) and (item.IsType("DedicatedPurpose"))
     end,
   },
@@ -13387,7 +13387,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose")) and (item.IsType("DedicatedPurpose"))
     end,
   },
@@ -13423,7 +13423,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose")) and (item.IsType("DedicatedPurpose"))
     end,
   },
@@ -13462,7 +13462,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose")) and (item.IsType("DedicatedPurpose"))
     end,
   },
@@ -13501,7 +13501,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose")) and (item.IsType("DedicatedPurpose"))
     end,
   },
@@ -13535,7 +13535,7 @@ DefineEquipmentModifier({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.HasModifier("Intelligent Item ~ Base")) and (item.HasModifier("Intelligent Item ~ Purpose")) and (item.IsType("DedicatedPurpose"))
     end,
   },
@@ -14027,7 +14027,7 @@ DefineEquipmentModifier({
   Key="SCROLL_DIVINE",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Divine")) or (item.IsType("Arcane")))
     end,
   },
@@ -14043,7 +14043,7 @@ DefineEquipmentModifier({
   Key="SCROLL_ARCANE",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Divine")) or (item.IsType("Arcane")))
     end,
   },
@@ -14059,10 +14059,10 @@ DefineEquipmentModifier({
   Key="SCROLL_MINOR",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Arcane")) or (item.IsType("Divine"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Minor")) or (item.IsType("Medium")) or (item.IsType("Major")))
     end,
   },
@@ -14078,10 +14078,10 @@ DefineEquipmentModifier({
   Key="SCROLL_MEDIUM",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Arcane")) or (item.IsType("Divine"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Minor")) or (item.IsType("Medium")) or (item.IsType("Major")))
     end,
   },
@@ -14097,10 +14097,10 @@ DefineEquipmentModifier({
   Key="SCROLL_MAJOR",
   Visible=false,
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (item.IsType("Arcane")) or (item.IsType("Divine"))
     end,
-    function (character, item)
+    function (character, item, sources)
       return not ((item.IsType("Minor")) or (item.IsType("Medium")) or (item.IsType("Major")))
     end,
   },

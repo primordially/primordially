@@ -26,7 +26,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HasAnyAbility(function (ability)
         if ability.Category ~= "Ability Focus" then return false end
         if ability.IsAnyType("Ability Focus") then return true end
@@ -51,7 +51,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Power Attack" then return true end
@@ -59,10 +59,10 @@ DefineAbility({
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return character.Size >= "L"
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Stats["STR"] >= 25)
     end,
   },
@@ -84,7 +84,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return 2 <= character.CountAbilities(function (ability)
         if ability.Category ~= "FEAT" then return false end
         if ability.Name == "Craft Magic Arms and Armor" then return true end
@@ -92,7 +92,7 @@ DefineAbility({
         return false
       end)
     end,
-    function (character, item)
+    function (character, item, sources)
       return ((character.CountSpellCastingClasses(5))) >= 1 or (character.Variables["CasterLevel_Highest"] >= 5)
     end,
   },
@@ -163,7 +163,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasMovement("Fly", 1))
     end,
   },
@@ -184,7 +184,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasMovement("Fly", 1))
     end,
   },
@@ -223,10 +223,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.Stats["CON"] >= 13)
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["BONUS.COMBAT.AC.NaturalArmor"] >= 1)
     end,
   },
@@ -262,10 +262,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.TotalAttackBonus >= 4
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.IsProficientWithWeaponType("Natural"))
     end,
   },
@@ -296,7 +296,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return 3 <= sum((character.IsProficientWithWeaponType("Natural") and 1 or 0))
     end,
   },
@@ -334,10 +334,10 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.HandCount >= 3
     end,
-    function (character, item)
+    function (character, item, sources)
       return (character.Variables["PreStatScore_DEX"] >= 13) or (character.Variables["FeatDexRequirement"] >= 13)
     end,
   },
@@ -409,7 +409,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return character.Size >= "H"
     end,
   },
@@ -430,7 +430,7 @@ DefineAbility({
     },
   },
   Conditions={
-    function (character, item)
+    function (character, item, sources)
       return (character.HasMovement("Fly", 1))
     end,
   },
