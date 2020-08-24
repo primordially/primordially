@@ -19,10 +19,11 @@ DefineTemplate({
   SourcePage="p.82",
   Visible=false,
   Add={
-    AddLanguage({
+    {
+      Kind="Language",
       Types={
         "Spoken",
       },
-    }),
+    },
   },
 })

@@ -73669,11 +73669,12 @@ DefineAbility({
   Name="Bard Class",
   Category="Internal",
   Add={
-    AddSpellCasterLevel({
+    {
+      Kind="SpellCasterLevel",
       Classes={
         "Bard",
       },
-    }),
+    },
   },
   Types={
     "CastingClassSupport",
@@ -73683,11 +73684,12 @@ DefineAbility({
   Name="Cleric Class",
   Category="Internal",
   Add={
-    AddSpellCasterLevel({
+    {
+      Kind="SpellCasterLevel",
       Classes={
         "Cleric",
       },
-    }),
+    },
   },
   Types={
     "CastingClassSupport",
@@ -73697,11 +73699,12 @@ DefineAbility({
   Name="Sorcerer Class",
   Category="Internal",
   Add={
-    AddSpellCasterLevel({
+    {
+      Kind="SpellCasterLevel",
       Classes={
         "Sorcerer",
       },
-    }),
+    },
   },
   Types={
     "CastingClassSupport",
@@ -73711,11 +73714,12 @@ DefineAbility({
   Name="Wizard Class",
   Category="Internal",
   Add={
-    AddSpellCasterLevel({
+    {
+      Kind="SpellCasterLevel",
       Classes={
         "Wizard",
       },
-    }),
+    },
   },
   Types={
     "CastingClassSupport",

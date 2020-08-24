@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Primordially.LstToLua.Adds
+﻿namespace Primordially.LstToLua.Adds
 {
     abstract class Adder : LuaObject
     {
         public abstract string Kind { get; }
 
-        public override void Dump(LuaTextWriter output)
+        protected override void DumpMembers(LuaTextWriter output)
         {
-            output.Write($"Add{Kind}(");
-            base.Dump(output);
-            output.Write(")");
+            output.WriteProperty("Kind", Kind);
+            base.DumpMembers(output);
         }
 
         public static Adder Parse(TextSpan value)
