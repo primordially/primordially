@@ -57,8 +57,7 @@ SetDataSetInfo({
     },
   },
 })
-ImportDataSet("@/homebrew/conversion_support/conversion_support.pcc.lua")
-ImportDataSet("@/pathfinder/paizo/roleplaying_game/core_essentials/_core_essentials.pcc.lua")
+ImportDataSet("@/core_essentials/_core_essentials.pcc.lua")
 ImportFile("cr__align.lua")
 ImportFile("cr__datacontrols.lua")
 ImportFile("cr__saves.lua")
